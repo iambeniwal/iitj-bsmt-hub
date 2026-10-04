@@ -1,0 +1,795 @@
+/* ===================================================================
+   BSMT Study Hub — router and views.
+
+   One static page. Content comes from content/program.js (dates,
+   grading) and content/semN/<slug>.js (notes, questions, traps,
+   definitions); progress comes from assets/store.js. Hash routes:
+
+     #/                         home
+     #/c/<slug>?tab=…&u=…       a course: topics · notes · traps · exams
+     #/practice?<filters>       untimed or paced drill
+     #/mock?c=<slug>&a=<id>     a full timed paper, marked at the end
+     #/cards?c=<slug>&deck=…    flashcards with spaced repetition
+     #/bank?<filters>           every question, searchable
+     #/mistakes                 what you keep getting wrong
+     #/data                     backup, restore, reset
+
+   <filters> for practice and bank: c (course) · t (topic) · u (unit)
+   · s (new | mistakes | flagged | right) · q (text search)
+   =================================================================== */
+(function () {
+"use strict";
+
+const H = window.HUB, store = H.store, M = H.program.marking;
+const app = document.getElementById("app");
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const $ = (s, r) => (r || app).querySelector(s);
+const $$ = (s, r) => [...(r || app).querySelectorAll(s)];
+const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const plural = (n, w, p) => `${n} ${n === 1 ? w : (p || w + "s")}`;
+const stripTags = s => String(s).replace(/<[^>]+>/g, "").replace(/&amp;/g, "&");
+
+/* ---------------- content index ---------------- */
+const SEMS = H.semesters;
+const META = {};                                 // slug -> registry entry (+ sem)
+SEMS.forEach(s => s.courses.forEach(c => { META[c.slug] = Object.assign({ sem: s.n }, c); }));
+const SLUGS = Object.keys(META).filter(s => H.courses[s]);
+const QS = [], QBY = {};
+const CARDS = [], CBY = {};
+SLUGS.forEach(slug => {
+  const C = H.courses[slug];
+  C.unitOf = {}; C.topics.forEach(t => { C.unitOf[t.name] = t.unit; });
+  C.questions.forEach(q => { q.course = slug; QS.push(q); QBY[q.id] = q; });
+  C.traps.forEach(t => CARDS.push({ id: t.id, course: slug, kind: "trap", t }));
+  C.defs.forEach(d => CARDS.push({ id: d.id, course: slug, kind: "def", d }));
+});
+CARDS.forEach(c => { CBY[c.id] = c; });
+
+const unitTitle = (slug, uid) => { const u = H.courses[slug].units.find(x => x.id === uid); return u ? stripTags(u.title) : uid; };
+
+/* ---------------- time ---------------- */
+const IST = { timeZone: "Asia/Kolkata" };
+const fmtDate = iso => new Date(iso).toLocaleDateString("en-GB", Object.assign({ weekday: "short", day: "numeric", month: "short" }, IST));
+const fmtTime = iso => new Date(iso).toLocaleTimeString("en-GB", Object.assign({ hour: "numeric", minute: "2-digit", hour12: true }, IST)).replace(/\s?([ap])m/i, (_, p) => " " + p.toUpperCase() + "M");
+const fmtDay = ts => new Date(ts).toLocaleDateString("en-GB", Object.assign({ day: "numeric", month: "short" }, IST));
+function until(a) {
+  if (!a.start) return { state: "tba", text: "date TBA" };
+  const now = Date.now(), s = +new Date(a.start), e = +new Date(a.end || a.start);
+  if (now >= e) return { state: "past", text: "done" };
+  if (now >= s) return { state: "live", text: "live now" };
+  const d = s - now, days = Math.floor(d / 864e5), hrs = Math.floor(d / 36e5) % 24, min = Math.floor(d / 6e4) % 60;
+  return { state: days === 0 ? "today" : days <= 7 ? "soon" : "later",
+    text: days > 0 ? `${days}d ${hrs}h` : hrs > 0 ? `${hrs}h ${min}m` : `${min}m` };
+}
+const ivlText = d => d < 1 ? "10 min" : d < 30 ? `${Math.round(d)} d` : `${Math.round(d / 30)} mo`;
+const secsPerQ = a => a && a.durationMin && a.questions ? Math.max(5, Math.round(a.durationMin * 60 / a.questions)) : 20;
+const lastTimed = slug => [...META[slug].assessments].reverse().find(a => a.durationMin) || null;
+function nextAssessment(slug) {
+  return META[slug].assessments.find(a => a.start && until(a).state !== "past")
+      || META[slug].assessments.find(a => a.status === "tba") || null;
+}
+
+/* ---------------- selection ---------------- */
+function select(p) {
+  const text = (p.q || "").trim().toLowerCase();
+  return QS.filter(q =>
+    (!p.c || q.course === p.c) &&
+    (!p.t || q.topic === p.t) &&
+    (!p.u || H.courses[q.course].unitOf[q.topic] === p.u) &&
+    (!p.s || (p.s === "flagged" ? store.flagged(q.id)
+            : p.s === "mistakes" ? store.isMistake(q.id)
+            : p.s === "official" ? q.o
+            : store.status(q.id) === p.s)) &&
+    (!text || (q.q + " " + q.c.join(" ") + " " + q.w).toLowerCase().includes(text)));
+}
+const allMistakes = () => QS.filter(q => store.isMistake(q.id));
+const dueCards = slug => CARDS.filter(c => (!slug || c.course === slug) && store.isDue(c.id));
+const newCards = slug => CARDS.filter(c => (!slug || c.course === slug) && !store.card(c.id));
+
+/* ---------------- routing ---------------- */
+function parse() {
+  const h = location.hash.replace(/^#\/?/, "");
+  const [path, qs] = h.split("?");
+  const parts = path.split("/").filter(Boolean);
+  const p = {}; new URLSearchParams(qs || "").forEach((v, k) => { p[k] = v; });
+  return { parts, p };
+}
+const link = (route, p) => {
+  const qs = new URLSearchParams(Object.entries(p || {}).filter(([, v]) => v !== "" && v != null)).toString();
+  return "#/" + route + (qs ? "?" + qs : "");
+};
+let cleanup = null;
+function route() {
+  if (cleanup) { cleanup(); cleanup = null; }
+  const { parts, p } = parse();
+  const view = parts[0] || "";
+  window.scrollTo(0, 0);
+  if (view === "c" && H.courses[parts[1]]) courseView(parts[1], p);
+  else if (view === "practice") practiceView(p);
+  else if (view === "mock") mockView(p);
+  else if (view === "cards") cardsView(p);
+  else if (view === "bank") bankView(p);
+  else if (view === "mistakes") mistakesView();
+  else if (view === "data") dataView();
+  else homeView();
+  paintTopnav(view);
+}
+window.addEventListener("hashchange", route);
+
+/* ---------------- shell ---------------- */
+const TOP = [["", "Home"], ["mistakes", "Mistakes"], ["cards", "Flashcards"], ["bank", "Bank"], ["data", "My data"]];
+function paintTopnav(view) {
+  const el = document.getElementById("topnav");
+  const m = allMistakes().length, d = dueCards().length;
+  const badge = { mistakes: m, cards: d };
+  el.innerHTML = `<div class="topbar">
+    <a class="brand" href="#/">BSMT<span>Hub</span></a>
+    <div class="navrow">${TOP.map(([r, l]) => `<a href="#/${r}"${(view === r || (view === "c" && r === "")) ? ' aria-current="true"' : ""}>${l}${badge[r] ? `<i>${badge[r]}</i>` : ""}</a>`).join("")}</div>
+  </div>`;
+}
+const footer = () => `<footer>
+  <p class="credit">Compiled by <strong>Rahul Beniwal</strong> ·
+    <a href="https://www.linkedin.com/in/iambeniwal/" target="_blank" rel="noopener noreferrer">LinkedIn</a> ·
+    <a href="https://github.com/iambeniwal/iitj-bsmt-hub" target="_blank" rel="noopener noreferrer">Source</a></p>
+  <p>Student-made study aid, not official IIT Jodhpur or Masai School course material. Exam facts come from each course's
+    official LMS announcement; always confirm against the LMS, which is authoritative.</p>
+  <p class="licence">Notes and questions licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC&nbsp;BY-NC-SA&nbsp;4.0</a>; site code under MIT.
+    Underlying course material remains the property of IIT Jodhpur and the respective faculty and is <strong>not</strong> licensed here.
+    Not affiliated with or endorsed by IIT Jodhpur or Masai School. Your progress is stored only in this browser.
+    The hosted site counts page visits with Google&nbsp;Analytics; offline copies do not report at all.</p>
+</footer>`;
+const bar = (pct, cls) => `<span class="meter${cls ? " " + cls : ""}"><span style="width:${pct}%"></span></span>`;
+
+/* =================================================================
+   HOME
+   ================================================================= */
+function homeView() {
+  const upcoming = [];
+  SLUGS.forEach(slug => META[slug].assessments.forEach(a => {
+    const u = until(a);
+    if (a.start && u.state !== "past") upcoming.push({ slug, a, u });
+  }));
+  upcoming.sort((x, y) => new Date(x.a.start) - new Date(y.a.start));
+  const recent = [];
+  SLUGS.forEach(slug => META[slug].assessments.forEach(a => { if (a.start && until(a).state === "past") recent.push({ slug, a }); }));
+  recent.sort((x, y) => new Date(y.a.start) - new Date(x.a.start));
+  const tbaCount = SLUGS.filter(s => META[s].assessments.some(a => a.status === "tba" && a.id !== "end")).length;
+
+  const mis = allMistakes(), due = dueCards(), fresh = newCards();
+  const answered = store.answeredCount();
+
+  app.innerHTML = `
+  <header class="hub-mast">
+    <div class="eyebrow">IIT Jodhpur · ${esc(H.program.name)} · Batch ${esc(H.program.batch)}</div>
+    <h1>Study Hub</h1>
+    <p class="sub">Notes, a ${QS.length}-question bank, flashcards and timed mock papers for every course, plus a record of
+      what you keep getting wrong. Nothing to sign up for. Your progress stays in this browser.</p>
+  </header>
+
+  <section class="tight">
+    <div class="sechead"><h2>Next up</h2></div>
+    ${upcoming.length ? `<div class="nextlist">${upcoming.slice(0, 4).map(({ slug, a, u }) => `
+      <a class="nextrow" href="#/c/${slug}?tab=exams">
+        <span class="pill ${u.state === "live" || u.state === "today" ? "today" : u.state}">${esc(u.state === "live" ? "Live now" : u.state === "today" ? "Today" : u.text)}</span>
+        <b>${esc(META[slug].name)} · ${esc(a.name)}</b>
+        <span class="when">${fmtDate(a.start)} · ${fmtTime(a.start)} IST · ${a.questions} Q · ${a.durationMin} min</span>
+      </a>`).join("")}</div>`
+    : `<div class="empty"><b>No dates announced yet.</b> All six Quiz 1 papers are done${recent.length ? ` (the last was ${esc(META[recent[0].slug].name)} on ${fmtDate(recent[0].a.start)})` : ""}.
+       Quiz 2 dates for ${tbaCount} courses will appear here once the LMS publishes them. A quiet week is a good time to clear your mistakes and start the flashcard habit.</div>`}
+  </section>
+
+  <section class="tight">
+    <div class="tiles">
+      <a class="tile${mis.length ? " warn" : ""}" href="#/mistakes"><span class="k">Mistakes to fix</span><span class="v">${mis.length}</span>
+        <span class="s">${mis.length ? "each one clears after two correct answers in a row" : "none yet; they collect as you practise"}</span></a>
+      <a class="tile" href="#/cards"><span class="k">Flashcards due</span><span class="v">${due.length}</span>
+        <span class="s">${due.length ? "review these first" : `${fresh.length} cards not started yet`}</span></a>
+      <a class="tile" href="#/bank"><span class="k">Questions answered</span><span class="v">${answered}<small> / ${QS.length}</small></span>
+        <span class="s">across ${SLUGS.length} courses</span></a>
+    </div>
+  </section>
+
+  ${SEMS.map(sem => `<section class="tight">
+    <div class="sechead"><h2>${esc(sem.label)}</h2><span class="tag">${esc(sem.term)}</span></div>
+    <div class="courses">${sem.courses.filter(c => H.courses[c.slug]).map(c => {
+      const ids = H.courses[c.slug].questions.map(q => q.id), m = store.mastery(ids);
+      const n = nextAssessment(c.slug), u = n ? until(n) : null;
+      return `<a class="course" href="#/c/${c.slug}">
+        <div class="course-top"><span class="pill later">${esc(c.short)}</span>
+          ${n ? `<span class="pill ${u.state === "tba" ? "past" : u.state === "today" || u.state === "live" ? "today" : u.state}">${esc(n.name)} · ${esc(u.text)}</span>` : ""}</div>
+        <h3>${esc(c.name)}</h3>
+        <p class="course-when">${esc(c.lecturer)}<br><span style="color:var(--ink-3)">${c.grading.quizPct}% a quiz · best ${c.grading.bestOf} of ${c.grading.quizzes} · end-term ${c.grading.finalPct}%</span></p>
+        <div class="mrow">${bar(m.pct)}<span>${m.right}/${m.total}</span></div>
+        <div class="course-foot"><span>${ids.length} Q · ${m.mistakes ? `<b style="color:var(--bad)">${m.mistakes} to fix</b>` : `${m.seen} answered`}</span><span class="go">Open →</span></div>
+      </a>`;
+    }).join("")}</div>
+  </section>`).join("")}
+
+  <div class="hubnote"><b>How quizzes are marked.</b> ${esc(M.note)}. A blind guess between four options is worth +0.06; rule out
+    one option and it rises to +0.17. Every course counts its <strong>best 2 of 3</strong> quizzes. Foundations of Computing quizzes
+    are worth 15% each; the other five are worth 20%. The end-term is worth 60% everywhere, and Foundations of Computing's is pen and paper, including writing Python by hand.</div>
+  ${footer()}`;
+}
+
+/* =================================================================
+   COURSE
+   ================================================================= */
+function courseView(slug, p) {
+  const C = H.courses[slug], R = META[slug];
+  const tab = p.tab || "topics";
+  const ids = C.questions.map(q => q.id), m = store.mastery(ids);
+  const n = nextAssessment(slug), nu = n ? until(n) : null;
+  const due = dueCards(slug).length;
+  const tabs = [["topics", "Topics & practice"], ["notes", "Notes"], ["traps", `Traps · ${C.traps.length}`], ["exams", "Assessments"]];
+
+  app.innerHTML = `
+  <header class="mast">
+    <a class="backlink" href="#/">← All courses</a>
+    <div class="eyebrow">Semester ${R.sem} · ${esc(R.short)} · ${esc(R.lecturer)}</div>
+    <h1>${esc(R.name)}</h1>
+    <dl class="strip">
+      <div class="cell"><dt>Mastery</dt><dd>${m.pct}%<small>${m.right} of ${m.total} right on last try</small></dd></div>
+      <div class="cell${m.mistakes ? " hot" : ""}"><dt>Mistakes</dt><dd>${m.mistakes}<small>to clear</small></dd></div>
+      <div class="cell"><dt>Cards due</dt><dd>${due}<small>${C.traps.length + C.defs.length} in the deck</small></dd></div>
+      <div class="cell hot"><dt>Next</dt><dd>${n ? esc(n.name) : "—"}<small>${n ? (n.start ? fmtDate(n.start) + " · " + nu.text : "date not announced") : ""}</small></dd></div>
+      <div class="cell"><dt>Weighting</dt><dd>${R.grading.quizPct}%<small>a quiz · best ${R.grading.bestOf} of ${R.grading.quizzes}</small></dd></div>
+    </dl>
+  </header>
+  <nav><div class="navrow">${tabs.map(([k, l]) => `<a href="${link("c/" + slug, { tab: k })}"${k === tab ? ' aria-current="true"' : ""}>${l}</a>`).join("")}</div></nav>
+  <div id="pane"></div>
+  ${footer()}`;
+
+  const pane = $("#pane");
+  if (tab === "notes") return courseNotes(C, pane, p.u);
+  if (tab === "traps") {
+    pane.innerHTML = `<section><div class="sechead"><h2>The traps</h2><span class="tag">high-yield</span></div>
+      <p class="lede">${C.traps.length} distinctions that question writers like to test, because the wrong answer is so tempting. They are also in the flashcard deck.</p>
+      <div class="grid2">${C.traps.map(t => `<div class="trap"><h4>${esc(t.h)}</h4><p>${esc(t.p)}</p><div class="fix">→ ${esc(t.f)}</div></div>`).join("")}</div></section>`;
+    return;
+  }
+  if (tab === "exams") return courseExams(slug, pane);
+
+  /* topics & practice */
+  const nNew = ids.filter(id => store.status(id) === "new").length;
+  const nFlag = ids.filter(id => store.flagged(id)).length;
+  const nOff = C.questions.filter(q => q.o).length;
+  pane.innerHTML = `<section>
+    <div class="actions">
+      <a class="btn" href="${link("practice", { c: slug })}">Practise all ${ids.length}</a>
+      ${m.mistakes ? `<a class="btn warn" href="${link("practice", { c: slug, s: "mistakes" })}">Fix ${plural(m.mistakes, "mistake")}</a>` : ""}
+      ${nNew ? `<a class="btn ghost" href="${link("practice", { c: slug, s: "new" })}">Only unseen · ${nNew}</a>` : ""}
+      ${nFlag ? `<a class="btn ghost" href="${link("practice", { c: slug, s: "flagged" })}">Flagged · ${nFlag}</a>` : ""}
+      ${nOff ? `<a class="btn ghost" href="${link("practice", { c: slug, s: "official" })}">From the course deck · ${nOff}</a>` : ""}
+      <a class="btn ghost" href="${link("cards", { c: slug })}">Flashcards</a>
+    </div>
+    <div class="topiclist">${C.units.map(u => {
+      const ts = C.topics.filter(t => t.unit === u.id);
+      if (!ts.length) return "";
+      return `<div class="unit"><div class="unithead"><h3>${u.title}</h3><a href="${link("c/" + slug, { tab: "notes", u: u.id })}">Notes →</a></div>
+        ${ts.map(t => {
+          const tid = C.questions.filter(q => q.topic === t.name).map(q => q.id), tm = store.mastery(tid);
+          return `<div class="trow">
+            <span class="tname">${esc(t.name)}<em>${tid.length} Q${tm.mistakes ? ` · <b>${tm.mistakes} to fix</b>` : tm.seen ? ` · ${tm.seen} answered` : ""}</em></span>
+            ${bar(tm.pct, tm.mistakes ? "warn" : "")}<span class="pct">${tm.seen ? tm.pct + "%" : "—"}</span>
+            <a class="btn ghost sm" href="${link("practice", { c: slug, t: t.name })}">Practise</a>
+          </div>`;
+        }).join("")}</div>`;
+    }).join("")}</div>
+  </section>`;
+}
+
+function courseNotes(C, pane, focus) {
+  const b = C.briefs.q1 || {};
+  pane.innerHTML = `
+    <div class="unitjump">${C.units.map(u => `<a href="#u-${u.id}" data-u="${u.id}">${stripTags(u.title)}</a>`).join("")}</div>
+    ${C.units.map(u => `<section id="u-${u.id}">
+      <div class="sechead"><h2>${u.title}</h2><span class="tag">${esc(u.tag)}</span></div>
+      <p class="lede">${u.lede}</p>
+      ${u.topics.map((it, i) => `<details class="topic"${i === 0 || u.id === focus ? " open" : ""}><summary>${esc(stripTags(it.t))}<span class="src">${esc(it.src)}</span></summary><div class="tbody">${it.h}</div></details>`).join("")}
+      <div class="practise-unit"><a class="btn ghost sm" href="${link("practice", { c: C.slug, u: u.id })}">Practise this unit · ${C.questions.filter(q => C.unitOf[q.topic] === u.id).length} Q</a></div>
+    </section>`).join("")}
+    <section><div class="sechead"><h2>Lectures</h2><span class="tag">${C.lectures.length} so far</span></div>
+      <div class="card">${C.lectures.map(([n, t, s, k]) => `<div class="lec"><span class="n">${String(n).padStart(2, "0")}</span><span class="t">${esc(t)}<em>${esc(s)}</em></span><span class="w ${k}">${k === "live" ? "live" : "rec"}</span></div>`).join("")}</div>
+      <p class="srcnote">${C.sources}</p>
+    </section>`;
+  $$(".unitjump a", pane).forEach(a => a.addEventListener("click", e => {
+    e.preventDefault();
+    const t = document.getElementById("u-" + a.dataset.u);
+    if (t) t.scrollIntoView({ behavior: "smooth", block: "start" });
+  }));
+  if (focus) { const t = document.getElementById("u-" + focus); if (t) setTimeout(() => t.scrollIntoView({ block: "start" }), 0); }
+}
+
+function courseExams(slug, pane) {
+  const C = H.courses[slug], R = META[slug], g = R.grading;
+  pane.innerHTML = `<section>
+    <div class="sechead"><h2>How this course is graded</h2></div>
+    <div class="gradebar">
+      <span style="flex:${g.quizPct * g.bestOf}" class="q">Quizzes ${g.quizPct * g.bestOf}%<small>best ${g.bestOf} of ${g.quizzes} × ${g.quizPct}%</small></span>
+      ${g.participationPct ? `<span style="flex:${g.participationPct}" class="p">${g.participationPct}%<small>participation</small></span>` : ""}
+      <span style="flex:${g.finalPct}" class="f">End-term ${g.finalPct}%<small>${esc(g.finalNote || "major exam")}</small></span>
+    </div>
+    <p class="lede" style="margin-top:12px">A missed quiz counts as a zero, so it uses up your one dropped score. Marking on every quiz: ${esc(M.note)}.</p>
+  </section>
+  ${R.assessments.map(a => {
+    const u = until(a), b = C.briefs[a.id], mocks = store.mocks(slug, a.id);
+    return `<section>
+      <div class="sechead"><h2>${esc(a.name)}</h2><span class="tag">${a.status === "tba" ? "date TBA" : u.state === "past" ? "done" : u.text}</span></div>
+      ${a.status === "tba" ? `<p class="lede">Not announced yet. When the official LMS announcement goes up, its date, length, question count and syllabus will be added here and the mock paper will follow them.</p>
+        <div class="actions"><a class="btn ghost" href="${link("mock", { c: slug, a: a.id })}">Sit a practice paper on everything so far</a></div>` : `
+      <dl class="strip">
+        <div class="cell"><dt>Date</dt><dd>${fmtDate(a.start)}<small>${fmtTime(a.start)} IST · join from ${fmtTime(a.join)}</small></dd></div>
+        <div class="cell"><dt>Paper</dt><dd>${a.questions} Q<small>${esc(a.types)} · ${a.marks} marks</small></dd></div>
+        <div class="cell"><dt>Time</dt><dd>${a.durationMin} min<small>${secsPerQ(a)} sec a question</small></dd></div>
+        <div class="cell"><dt>Syllabus</dt><dd>${esc(b && b.scopeShort || "—")}<small>${esc(a.scopeText)}</small></dd></div>
+      </dl>
+      <div class="actions" style="margin-top:16px"><a class="btn" href="${link("mock", { c: slug, a: a.id })}">Sit a mock · ${a.questions} Q in ${a.durationMin} min</a></div>
+      ${mocks.length ? `<div class="mockhist"><h4>Your mock papers</h4>${mocks.slice(-5).reverse().map(mk => `<div><span>${fmtDay(mk.at)}</span><b>${mk.score} / ${mk.max}</b><span>${mk.right} right · ${mk.wrong} wrong · ${mk.blank} blank</span></div>`).join("")}</div>` : ""}
+      ${b ? `<details class="topic brief"><summary>The ${esc(a.name)} brief<span class="src">${esc(b.tag)}</span></summary><div class="tbody"><p class="lede">${b.lede}</p>${b.html}
+        ${b.weights ? `<h4>Where the marks probably sat</h4><p style="font-size:13.5px;color:var(--ink-3)">Estimated from lecture time, not official.</p>${(() => { const mx = Math.max(...b.weights.map(w => w[1])); return b.weights.map(([l, v]) => `<div class="wbar"><span class="lab">${esc(l)}</span><span class="track"><span class="fill" style="width:${v * 100 / mx}%"></span></span><span class="num">~${v}%</span></div>`).join(""); })()}` : ""}
+      </div></details>` : ""}`}
+    </section>`;
+  }).join("")}`;
+}
+
+/* =================================================================
+   PRACTICE — one question at a time, answer revealed immediately
+   ================================================================= */
+function describe(p) {
+  const bits = [];
+  if (p.c) bits.push(META[p.c].name); else bits.push("All courses");
+  if (p.u) bits.push(unitTitle(p.c, p.u));
+  if (p.t) bits.push(p.t);
+  if (p.s) bits.push({ mistakes: "your mistakes", new: "unseen only", flagged: "flagged", right: "already right", official: "from the course deck" }[p.s] || p.s);
+  if (p.q) bits.push(`“${p.q}”`);
+  return bits.join(" · ");
+}
+
+function practiceView(p) {
+  const pool0 = select(p);
+  const slug = p.c || null;
+  const pace = slug ? secsPerQ(lastTimed(slug)) : 20;
+  let pool = [], idx = 0, right = 0, answered = 0, pacer = false, timer = null, left = pace, missed = {}, missedIds = [];
+
+  app.innerHTML = `
+  <header class="mast slim">
+    <a class="backlink" href="${slug ? "#/c/" + slug : "#/bank"}">← ${slug ? esc(META[slug].name) : "Question bank"}</a>
+    <div class="eyebrow">Practice</div>
+    <h1>${esc(describe(p))}</h1>
+  </header>
+  <section class="tight">
+    ${pool0.length ? `<div class="drillbar">
+      <button class="btn ghost" id="pacer" aria-pressed="false">Pacer: off</button>
+      <button class="btn ghost" id="restart">Shuffle &amp; restart</button>
+      <span class="score" id="score">0 / 0</span>
+    </div>
+    <div class="card" id="qcard"></div>
+    <p class="hint">Keys: <kbd>1</kbd>–<kbd>4</kbd> to answer, <kbd>Enter</kbd> for next, <kbd>F</kbd> to flag.</p>`
+    : `<div class="empty"><b>Nothing to practise here.</b> ${p.s === "mistakes" ? "You have no open mistakes in this set. Good." : "No questions match this filter."}
+       <div class="actions" style="margin-top:12px"><a class="btn ghost" href="${slug ? "#/c/" + slug : "#/"}">Back</a></div></div>`}
+  </section>`;
+  if (!pool0.length) return;
+
+  const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
+  cleanup = () => { stop(); document.removeEventListener("keydown", onKey); };
+
+  function build() { pool = shuffle(pool0.slice()); idx = 0; right = 0; answered = 0; missed = {}; missedIds = []; render(); }
+  function paintClock() { const c = $("#clock"); if (!c) return; c.textContent = left + "s"; c.classList.toggle("low", left <= Math.ceil(pace / 4)); }
+  function startTimer() {
+    stop(); if (!pacer) return;
+    left = pace; paintClock();
+    timer = setInterval(() => { left--; paintClock(); if (left <= 0) { stop(); reveal(pool[idx], [], true); } }, 1000);
+  }
+  let state = "q", picked = new Set();
+  function render() {
+    stop();
+    if (idx >= pool.length) return done();
+    const q = pool[idx]; state = "q"; picked = new Set();
+    $("#qcard").innerHTML = `
+      <div class="qmeta">
+        <span class="qnum">Q${idx + 1} / ${pool.length}</span>
+        ${p.c ? "" : `<span class="qtopic">${esc(META[q.course].short)}</span>`}
+        <span class="qtopic${q.o ? " official" : ""}">${q.o ? "from deck" : esc(q.topic)}</span>
+        ${q.multi ? '<span class="qtopic">select all that apply</span>' : ""}
+        ${store.isMistake(q.id) ? '<span class="qtopic bad">mistake</span>' : ""}
+        <button class="flag${store.flagged(q.id) ? " on" : ""}" id="flag" title="Flag for later (F)" aria-pressed="${store.flagged(q.id)}">⚑</button>
+        ${pacer ? `<span class="clock" id="clock">${pace}s</span>` : ""}
+      </div>
+      <p class="qtext">${esc(q.q)}</p>
+      <div class="opts">${q.c.map((c, i) => `<button class="opt" data-i="${i}"><span class="k">${"ABCDEF"[i]}</span><span>${esc(c)}</span></button>`).join("")}</div>
+      ${q.multi ? '<div style="margin-top:10px"><button class="btn ghost" id="submulti">Submit answer</button></div>' : ""}
+      <div id="after"></div>`;
+    $("#score").textContent = `${right} / ${answered}`;
+    $$(".opt").forEach(b => b.addEventListener("click", () => choose(+b.dataset.i)));
+    const sm = $("#submulti"); if (sm) sm.addEventListener("click", () => reveal(q, [...picked], false));
+    $("#flag").addEventListener("click", flag);
+    startTimer();
+  }
+  function choose(i) {
+    const q = pool[idx]; if (state !== "q" || i >= q.c.length) return;
+    if (!q.multi) return reveal(q, [i], false);
+    const b = $(`.opt[data-i="${i}"]`);
+    if (picked.has(i)) { picked.delete(i); b.classList.remove("picked"); } else { picked.add(i); b.classList.add("picked"); }
+  }
+  function flag() { const q = pool[idx]; const on = store.toggleFlag(q.id); const f = $("#flag"); if (f) { f.classList.toggle("on", on); f.setAttribute("aria-pressed", on); } }
+  function reveal(q, chosen, timedOut) {
+    stop(); state = "a";
+    const ok = chosen.length === q.a.length && chosen.every(i => q.a.includes(i));
+    answered++; if (ok) right++; else { missed[q.topic] = (missed[q.topic] || 0) + 1; missedIds.push(q.id); }
+    store.record(q.id, ok, "practice");
+    $$(".opt").forEach(b => {
+      const i = +b.dataset.i; b.disabled = true; b.classList.remove("picked");
+      if (q.a.includes(i)) b.classList.add("right"); else if (chosen.includes(i)) b.classList.add("wrong");
+    });
+    const sm = $("#submulti"); if (sm) sm.remove();
+    const still = store.isMistake(q.id);
+    $("#after").innerHTML = `<div class="why"><b>${timedOut ? "Out of time." : ok ? "Correct." : "Not quite."}</b> ${esc(q.w)}</div>
+      ${ok && still ? `<p class="hint" style="margin-top:8px">One more correct answer on a later run clears this from your mistakes.</p>` : ""}
+      <div style="margin-top:14px"><button class="btn" id="next">${idx + 1 >= pool.length ? "See results" : "Next question"}</button></div>`;
+    $("#score").textContent = `${right} / ${answered}`;
+    const n = $("#next"); n.addEventListener("click", () => { idx++; render(); }); n.focus();
+  }
+  function done() {
+    const pct = answered ? Math.round(right * 100 / answered) : 0;
+    const weak = Object.entries(missed).sort((a, b) => b[1] - a[1]);
+    $("#qcard").innerHTML = `<div class="donecard">
+      <div class="big">${right} / ${answered}</div>
+      <p>${pct}%: ${pct >= 85 ? "solid on this set." : pct >= 65 ? "getting there. Tighten the weak topics below." : "read the notes for the topics below, then run it again."}</p>
+      ${weak.length ? `<div class="weak"><h4>Missed by topic</h4>${weak.map(([t, n]) => {
+        const c = pool.find(q => q.topic === t).course, u = H.courses[c].unitOf[t];
+        return `<div><span>${esc(t)}</span><span><a href="${link("c/" + c, { tab: "notes", u })}">notes</a> · <b>${n}</b></span></div>`; }).join("")}</div>` : ""}
+      <div class="actions center" style="margin-top:20px">
+        ${missedIds.length ? `<a class="btn warn" href="${link("practice", Object.assign({}, p, { s: "mistakes" }))}">Retry what I missed</a>` : ""}
+        <button class="btn ghost" id="again">Run it again</button></div>
+    </div>`;
+    $("#again").addEventListener("click", build);
+  }
+  function onKey(e) {
+    if (e.target.closest("input,textarea,select") || e.metaKey || e.ctrlKey || e.altKey) return;
+    const k = e.key.toLowerCase();
+    if (state === "q" && "1234".includes(k) && k) { e.preventDefault(); choose(+k - 1); }
+    else if (state === "q" && "abcd".includes(k) && k.length === 1) { e.preventDefault(); choose("abcd".indexOf(k)); }
+    else if (k === "f") flag();
+    else if (k === "enter" && state === "q" && pool[idx] && pool[idx].multi) { e.preventDefault(); reveal(pool[idx], [...picked], false); }
+  }
+  document.addEventListener("keydown", onKey);
+
+  $("#restart").addEventListener("click", build);
+  $("#pacer").addEventListener("click", () => {
+    pacer = !pacer;
+    const b = $("#pacer"); b.textContent = "Pacer: " + (pacer ? `on · ${pace}s` : "off"); b.setAttribute("aria-pressed", String(pacer));
+    if (state === "q") render();
+  });
+  build();
+}
+
+/* =================================================================
+   MOCK — a real-length paper, timed as a whole, marked at the end
+   ================================================================= */
+function mockView(p) {
+  const slug = p.c, C = H.courses[slug];
+  if (!C) { location.hash = "#/"; return; }
+  const R = META[slug];
+  const a = R.assessments.find(x => x.id === p.a) || lastTimed(slug);
+  const ref = a.durationMin ? a : lastTimed(slug);         // a TBA quiz borrows the last known format
+  const N = Math.min(ref.questions, C.questions.length), secs = ref.durationMin * 60;
+
+  app.innerHTML = `
+  <header class="mast slim">
+    <a class="backlink" href="${link("c/" + slug, { tab: "exams" })}">← ${esc(R.name)}</a>
+    <div class="eyebrow">Mock paper · ${esc(a.name)}${a.status === "tba" ? " (format assumed from " + esc(ref.name) + ")" : ""}</div>
+    <h1>${N} questions · ${ref.durationMin} minutes</h1>
+    <p class="sub">Drawn at random from the ${C.questions.length}-question bank. Marked like the real thing, ${esc(M.note)}.
+      You won't see any answers until you submit.</p>
+  </header>
+  <section class="tight" id="mock">
+    <div class="empty"><b>Ready when you are.</b> The clock starts when you press Start and runs for the whole paper, at about
+      ${Math.round(secs / N)} seconds a question. Leaving a question blank costs nothing; a wrong answer costs a quarter mark.
+      <div class="actions" style="margin-top:14px"><button class="btn" id="start">Start the paper</button></div></div>
+  </section>`;
+
+  let paper, picks, cur = 0, left = secs, timer = null, t0 = 0, finished = false;
+  const opened = new Set();               // a blank only counts as a miss if you actually read the question
+  const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
+  const guard = e => { if (!finished) { e.preventDefault(); e.returnValue = ""; } };
+  cleanup = () => { stop(); window.removeEventListener("beforeunload", guard); document.removeEventListener("keydown", onKey); };
+
+  $("#start").addEventListener("click", () => {
+    paper = shuffle(C.questions.slice()).slice(0, N);
+    picks = paper.map(() => new Set());
+    t0 = Date.now(); left = secs;
+    window.addEventListener("beforeunload", guard);
+    document.addEventListener("keydown", onKey);
+    $("#mock").innerHTML = `<div class="mockbar"><span class="clock big" id="mclock"></span><span class="score" id="mcount"></span>
+      <button class="btn" id="submit">Submit paper</button></div>
+      <div class="mockgrid" id="grid"></div><div class="card" id="mq"></div>`;
+    $("#submit").addEventListener("click", () => {
+      const blanks = picks.filter(s => !s.size).length;
+      if (blanks && !confirm(`${plural(blanks, "question")} still blank. Submit anyway?`)) return;
+      finish();
+    });
+    timer = setInterval(tick, 1000); tick();
+    show(0);
+  });
+  function tick() {
+    left = Math.max(0, secs - Math.floor((Date.now() - t0) / 1000));
+    const c = $("#mclock"); if (!c) return;
+    c.textContent = `${Math.floor(left / 60)}:${String(left % 60).padStart(2, "0")}`;
+    c.classList.toggle("low", left <= 60);
+    if (left <= 0) finish();
+  }
+  function paintGrid() {
+    $("#grid").innerHTML = paper.map((q, i) => `<button data-i="${i}" class="${picks[i].size ? "done" : ""}${i === cur ? " cur" : ""}">${i + 1}</button>`).join("");
+    $$("#grid button").forEach(b => b.addEventListener("click", () => show(+b.dataset.i)));
+    $("#mcount").textContent = `${picks.filter(s => s.size).length} / ${N} answered`;
+  }
+  function show(i) {
+    cur = i; opened.add(i); const q = paper[i];
+    $("#mq").innerHTML = `<div class="qmeta"><span class="qnum">Q${i + 1} / ${N}</span>${q.multi ? '<span class="qtopic">select all that apply</span>' : ""}</div>
+      <p class="qtext">${esc(q.q)}</p>
+      <div class="opts">${q.c.map((c, k) => `<button class="opt${picks[i].has(k) ? " picked" : ""}" data-k="${k}"><span class="k">${"ABCDEF"[k]}</span><span>${esc(c)}</span></button>`).join("")}</div>
+      <div class="actions" style="margin-top:14px">
+        <button class="btn ghost" id="prev"${i === 0 ? " disabled" : ""}>← Previous</button>
+        <button class="btn ghost" id="clear"${picks[i].size ? "" : " disabled"}>Clear answer</button>
+        <button class="btn" id="nxt">${i + 1 < N ? "Next →" : "Review grid"}</button></div>`;
+    $$("#mq .opt").forEach(b => b.addEventListener("click", () => pick(+b.dataset.k)));
+    $("#prev").addEventListener("click", () => show(cur - 1));
+    $("#clear").addEventListener("click", () => { picks[cur].clear(); show(cur); });
+    $("#nxt").addEventListener("click", () => cur + 1 < N ? show(cur + 1) : $("#grid").scrollIntoView({ behavior: "smooth" }));
+    paintGrid();
+  }
+  function pick(k) {
+    const q = paper[cur];
+    if (k >= q.c.length) return;
+    if (q.multi) { picks[cur].has(k) ? picks[cur].delete(k) : picks[cur].add(k); }
+    else { picks[cur].clear(); picks[cur].add(k); }
+    show(cur);
+  }
+  function onKey(e) {
+    if (finished || e.metaKey || e.ctrlKey || e.altKey) return;
+    const k = e.key.toLowerCase();
+    if ("1234".includes(k) && k.length === 1) { e.preventDefault(); pick(+k - 1); }
+    else if (k === "arrowright" && cur + 1 < N) show(cur + 1);
+    else if (k === "arrowleft" && cur > 0) show(cur - 1);
+  }
+  function finish() {
+    if (finished) return; finished = true; cleanup();
+    let r = 0, w = 0, b = 0;
+    const res = paper.map((q, i) => {
+      const ch = [...picks[i]];
+      if (!ch.length) { b++; if (opened.has(i)) store.record(q.id, false, "mock"); return "blank"; }
+      const ok = ch.length === q.a.length && ch.every(x => q.a.includes(x));
+      ok ? r++ : w++; store.record(q.id, ok, "mock");
+      return ok ? "right" : "wrong";
+    });
+    const score = r * M.correct + w * M.incorrect;
+    const used = Math.min(secs, Math.round((Date.now() - t0) / 1000));
+    store.addMock({ c: slug, a: a.id, at: Date.now(), n: N, right: r, wrong: w, blank: b, score, max: N, secs: used,
+      ids: paper.map(q => q.id), picks: picks.map(s => [...s]) });
+    const byTopic = {};
+    paper.forEach((q, i) => { if (res[i] !== "right") byTopic[q.topic] = (byTopic[q.topic] || 0) + 1; });
+    const weak = Object.entries(byTopic).sort((x, y) => y[1] - x[1]);
+    $("#mock").innerHTML = `
+      <div class="card donecard">
+        <div class="big">${score} <small>/ ${N}</small></div>
+        <p>${Math.round(score * 100 / N)}% · ${r} right, ${w} wrong (−${w * 0.25}), ${b} blank · ${Math.floor(used / 60)}m ${used % 60}s used</p>
+        ${a.status !== "tba" && R.grading.quizPct ? `<p class="hint">As a real ${esc(a.name)} that would be worth <b>${(score / N * R.grading.quizPct).toFixed(2)}</b> of ${R.grading.quizPct} course points.</p>` : ""}
+      </div>
+      <h3 class="subhead">Every question, at a glance</h3>
+      <div class="mockgrid result" id="rgrid">${paper.map((q, i) => `<button data-i="${i}" class="${res[i]}">${i + 1}</button>`).join("")}</div>
+      <p class="hint"><span class="key right"></span> right <span class="key wrong"></span> wrong <span class="key blank"></span> blank</p>
+      ${weak.length ? `<div class="weak left"><h4>Lost marks by topic</h4>${weak.map(([t, n]) => `<div><span>${esc(t)}</span><span><a href="${link("practice", { c: slug, t })}">practise</a> · <a href="${link("c/" + slug, { tab: "notes", u: C.unitOf[t] })}">notes</a> · <b>${n}</b></span></div>`).join("")}</div>` : ""}
+      <div class="actions" style="margin:18px 0">
+        ${w + b ? `<a class="btn warn" href="${link("practice", { c: slug, s: "mistakes" })}">Drill my ${esc(R.short)} mistakes</a>` : ""}
+        <a class="btn ghost" href="${link("mock", { c: slug, a: a.id })}">New paper</a>
+        <label class="toggle"><input type="checkbox" id="onlywrong" checked> Show only wrong &amp; blank</label></div>
+      <div id="review">${paper.map((q, i) => `<div class="card rv ${res[i]}" id="mq-${i}">
+        <div class="qmeta"><span class="qnum">Q${i + 1}</span><span class="qtopic">${esc(q.topic)}</span><span class="qtopic ${res[i] === "right" ? "good" : "bad"}">${res[i]}</span></div>
+        <p class="qtext">${esc(q.q)}</p>
+        <div class="opts">${q.c.map((c, k) => `<div class="opt${q.a.includes(k) ? " right" : picks[i].has(k) ? " wrong" : ""}"><span class="k">${"ABCDEF"[k]}</span><span>${esc(c)}</span></div>`).join("")}</div>
+        <div class="why">${esc(q.w)}</div></div>`).join("")}</div>`;
+    const filt = () => $$("#review .rv.right").forEach(el => { el.hidden = $("#onlywrong").checked; });
+    $("#onlywrong").addEventListener("change", filt); filt();
+    $$("#rgrid button").forEach(bt => bt.addEventListener("click", () => {
+      const el = document.getElementById("mq-" + bt.dataset.i);
+      el.hidden = false;
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }));
+    paintTopnav("mock");
+  }
+}
+
+/* =================================================================
+   FLASHCARDS — traps and definitions, spaced repetition
+   ================================================================= */
+function cardsView(p) {
+  const slug = p.c || "";
+  const NEW_PER_SESSION = 15;
+  const scope = CARDS.filter(c => !slug || c.course === slug);
+  const due = shuffle(scope.filter(c => store.isDue(c.id)));
+  const fresh = scope.filter(c => !store.card(c.id));
+  let queue = due.concat(fresh.slice(0, NEW_PER_SESSION)), done = 0, again = 0;
+
+  app.innerHTML = `
+  <header class="mast slim">
+    <a class="backlink" href="${slug ? "#/c/" + slug : "#/"}">← ${slug ? esc(META[slug].name) : "Home"}</a>
+    <div class="eyebrow">Flashcards · active recall</div>
+    <h1>${slug ? esc(META[slug].name) : "All courses"}</h1>
+    <div class="drillbar" style="margin-top:14px">
+      <select id="deck" aria-label="Course">${["", ...SLUGS].map(s => `<option value="${s}"${s === slug ? " selected" : ""}>${s ? esc(META[s].name) : "All courses"} · ${CARDS.filter(c => !s || c.course === s).length} cards</option>`).join("")}</select>
+      <span class="score" id="cstat"></span>
+    </div>
+  </header>
+  <section class="tight"><div id="cardbox"></div>
+    <p class="hint">Try to say the answer out loud before you flip the card. Rate yourself honestly, because the rating decides when you see it again.
+      Keys: <kbd>Space</kbd> to flip, <kbd>1</kbd> Again · <kbd>2</kbd> Hard · <kbd>3</kbd> Good · <kbd>4</kbd> Easy.</p></section>`;
+  $("#deck").addEventListener("change", e => { location.hash = link("cards", { c: e.target.value }); });
+
+  let flipped = false;
+  function stat() { $("#cstat").textContent = `${done} reviewed · ${queue.length} left${again ? ` · ${again} to repeat` : ""}`; }
+  function render() {
+    stat(); flipped = false;
+    const box = $("#cardbox");
+    if (!queue.length) {
+      const nextDue = scope.map(c => store.card(c.id)).filter(Boolean).map(c => c.due).filter(d => d > Date.now()).sort((a, b) => a - b)[0];
+      box.innerHTML = `<div class="empty"><b>${done ? "Session done." : "Nothing due right now."}</b>
+        ${done ? `You reviewed ${plural(done, "card")}.` : ""} ${nextDue ? `The next card is due ${new Date(nextDue).toLocaleString("en-GB", Object.assign({ weekday: "short", hour: "numeric", minute: "2-digit" }, IST))}.` : ""}
+        ${scope.filter(c => !store.card(c.id)).length ? `<div class="actions" style="margin-top:12px"><button class="btn" id="more">Learn ${Math.min(NEW_PER_SESSION, scope.filter(c => !store.card(c.id)).length)} new cards</button></div>` : ""}</div>`;
+      const m = $("#more"); if (m) m.addEventListener("click", () => { queue = shuffle(scope.filter(c => !store.card(c.id))).slice(0, NEW_PER_SESSION); render(); });
+      return;
+    }
+    const c = queue[0], isNew = !store.card(c.id);
+    const front = c.kind === "trap"
+      ? `<div class="ckind">Trap · ${esc(META[c.course].short)}</div><div class="cfront">${esc(c.t.h)}</div><div class="cprompt">Why is this a trap? Say the reason in a sentence before you flip.</div>`
+      : `<div class="ckind">Definition · ${esc(META[c.course].short)} · ${esc(unitTitle(c.course, c.d.unit))}</div><div class="cfront">${esc(c.d.topic)}</div><div class="cprompt">State the key definition${c.d.term && c.d.term !== c.d.topic ? `: <b>${esc(c.d.term)}</b>` : ""}</div>`;
+    const back = c.kind === "trap"
+      ? `<p>${esc(c.t.p)}</p><div class="fix">→ ${esc(c.t.f)}</div>`
+      : `<div class="def">${c.d.html}</div><p class="hint"><a href="${link("c/" + c.course, { tab: "notes", u: c.d.unit })}">Open the notes</a></p>`;
+    box.innerHTML = `<div class="fcard${isNew ? " new" : ""}">${isNew ? '<span class="newtag">new</span>' : ""}${front}
+      <div class="cback" hidden>${back}</div>
+      <div class="actions center" id="cact"><button class="btn" id="flip">Show answer</button></div></div>`;
+    $("#flip").addEventListener("click", flip);
+  }
+  function flip() {
+    if (flipped || !queue.length) return; flipped = true;
+    const c = queue[0];
+    $(".cback").hidden = false;
+    $("#cact").innerHTML = ["Again", "Hard", "Good", "Easy"].map((l, g) =>
+      `<button class="btn ${g === 0 ? "warn" : g === 2 ? "" : "ghost"} grade" data-g="${g}">${l}<small>${ivlText(store.preview(c.id, g))}</small></button>`).join("");
+    $$(".grade").forEach(b => b.addEventListener("click", () => rate(+b.dataset.g)));
+  }
+  function rate(g) {
+    if (!flipped) return;
+    const c = queue.shift();
+    store.review(c.id, g); done++;
+    if (g === 0) { queue.splice(Math.min(queue.length, 4), 0, c); again++; }
+    render(); paintTopnav("cards");
+  }
+  function onKey(e) {
+    if (e.target.closest("input,textarea,select") || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.key === " " || e.key === "Enter") { if (!flipped) { e.preventDefault(); flip(); } }
+    else if (flipped && "1234".includes(e.key) && e.key.length === 1) rate(+e.key - 1);
+  }
+  document.addEventListener("keydown", onKey);
+  cleanup = () => document.removeEventListener("keydown", onKey);
+  render();
+}
+
+/* =================================================================
+   QUESTION BANK — every question in every course
+   ================================================================= */
+function bankView(p) {
+  const PAGE = 40;
+  app.innerHTML = `
+  <header class="mast slim">
+    <div class="eyebrow">Master question bank</div>
+    <h1>${QS.length} questions, ${SLUGS.length} courses</h1>
+    <div class="filters">
+      <input id="fq" type="search" placeholder="Search questions, options, explanations" value="${esc(p.q || "")}" aria-label="Search">
+      <select id="fc" aria-label="Course"><option value="">All courses</option>${SLUGS.map(s => `<option value="${s}"${s === p.c ? " selected" : ""}>${esc(META[s].name)}</option>`).join("")}</select>
+      <select id="ft" aria-label="Topic"></select>
+      <select id="fs" aria-label="Status">${[["", "Any status"], ["new", "Unseen"], ["mistakes", "My mistakes"], ["right", "Right last time"], ["flagged", "Flagged"], ["official", "From a course deck"]].map(([v, l]) => `<option value="${v}"${v === (p.s || "") ? " selected" : ""}>${l}</option>`).join("")}</select>
+    </div>
+  </header>
+  <section class="tight"><div class="drillbar"><span id="count" class="score" style="margin-left:0"></span><a class="btn" id="go">Practise these</a></div><div id="list"></div></section>`;
+
+  let shown = PAGE;
+  function topics() {
+    const c = $("#fc").value;
+    const ts = c ? H.courses[c].topics.map(t => t.name) : [];
+    $("#ft").innerHTML = `<option value="">${c ? "All topics" : "Pick a course for topics"}</option>` + ts.map(t => `<option${t === p.t ? " selected" : ""}>${esc(t)}</option>`).join("");
+    $("#ft").disabled = !c;
+  }
+  function params() { return { c: $("#fc").value, t: $("#fc").value ? $("#ft").value : "", s: $("#fs").value, q: $("#fq").value.trim() }; }
+  function paint() {
+    const f = params(), rows = select(f);
+    history.replaceState(null, "", link("bank", f));
+    $("#count").textContent = `${rows.length} match${rows.length === 1 ? "" : "es"}`;
+    const go = $("#go"); go.href = link("practice", f); go.classList.toggle("disabledlink", !rows.length);
+    $("#list").innerHTML = rows.slice(0, shown).map(q => {
+      const st = store.status(q.id);
+      return `<details class="qrow ${st}"><summary><span class="qid">${q.id}</span><span class="qtopic">${esc(META[q.course].short)} · ${esc(q.topic)}</span>${st !== "new" ? `<span class="st ${st}">${st === "mistake" ? "mistake" : st}</span>` : ""}${store.flagged(q.id) ? '<span class="st flag">⚑</span>' : ""}<span class="qq">${esc(q.q)}</span></summary>
+        <div class="qans"><ol type="A">${q.c.map((c, i) => `<li class="${q.a.includes(i) ? "right" : ""}">${esc(c)}</li>`).join("")}</ol><div class="why">${esc(q.w)}</div></div></details>`;
+    }).join("") + (rows.length > shown ? `<div class="actions center" style="margin-top:14px"><button class="btn ghost" id="more">Show ${Math.min(PAGE, rows.length - shown)} more</button></div>` : "")
+      + (!rows.length ? `<div class="empty">No questions match.</div>` : "");
+    const m = $("#more"); if (m) m.addEventListener("click", () => { shown += PAGE; paint(); });
+  }
+  let deb;
+  $("#fq").addEventListener("input", () => { clearTimeout(deb); deb = setTimeout(() => { shown = PAGE; paint(); }, 150); });
+  $("#fc").addEventListener("change", () => { p.t = ""; topics(); shown = PAGE; paint(); });
+  $("#ft").addEventListener("change", () => { shown = PAGE; paint(); });
+  $("#fs").addEventListener("change", () => { shown = PAGE; paint(); });
+  topics(); paint();
+}
+
+/* =================================================================
+   MISTAKES
+   ================================================================= */
+function mistakesView() {
+  const mis = allMistakes();
+  const groups = {};
+  mis.forEach(q => { ((groups[q.course] = groups[q.course] || {})[q.topic] = (groups[q.course][q.topic] || [])).push(q); });
+  app.innerHTML = `
+  <header class="mast slim">
+    <div class="eyebrow">Mistake revision</div>
+    <h1>${mis.length ? plural(mis.length, "question") + " to fix" : "No open mistakes"}</h1>
+    <p class="sub">Every question you get wrong in practice or in a mock lands here, and so does a mock question you read but left blank. It stays until you answer it correctly
+      <b>twice in a row</b>, so a lucky guess doesn't clear it. Topics where mistakes pile up link straight to their notes.</p>
+    ${mis.length ? `<div class="actions" style="margin-top:16px"><a class="btn warn" href="${link("practice", { s: "mistakes" })}">Drill all ${mis.length}</a></div>` : ""}
+  </header>
+  ${mis.length ? Object.entries(groups).map(([slug, tps]) => {
+    const n = Object.values(tps).reduce((s, a) => s + a.length, 0);
+    return `<section class="tight">
+      <div class="sechead"><h2>${esc(META[slug].name)}</h2><span class="tag">${n} to fix</span>
+        <a class="btn warn sm" style="margin-left:auto" href="${link("practice", { c: slug, s: "mistakes" })}">Drill these ${n}</a></div>
+      ${Object.entries(tps).sort((a, b) => b[1].length - a[1].length).map(([t, qs]) => `<div class="trow">
+        <span class="tname">${esc(t)}<em>${qs.length} of ${H.courses[slug].questions.filter(q => q.topic === t).length} questions in this topic</em></span>
+        <a class="btn ghost sm" href="${link("c/" + slug, { tab: "notes", u: H.courses[slug].unitOf[t] })}">Notes</a>
+        <a class="btn warn sm" href="${link("practice", { c: slug, t, s: "mistakes" })}">Drill ${qs.length}</a></div>`).join("")}
+    </section>`;
+  }).join("") : `<section class="tight"><div class="empty">${store.answeredCount() ? "Everything you've missed so far has been cleared. Good work." : "Nothing here yet. Start with a topic drill or a mock paper, and any question you miss will collect here."}
+    <div class="actions" style="margin-top:12px"><a class="btn" href="#/">Pick a course</a></div></div></section>`}
+  ${footer()}`;
+}
+
+/* =================================================================
+   MY DATA
+   ================================================================= */
+function dataView() {
+  app.innerHTML = `
+  <header class="mast slim"><div class="eyebrow">My data</div><h1>Your progress lives in this browser</h1>
+    <p class="sub">There are no accounts. Your attempts, mistakes, flags, flashcard schedule and mock scores are saved on this device, in this
+      browser, and nowhere else. Clearing your browser data wipes them, and they don't follow you to your phone. Export a backup
+      file to keep them safe or to move them to another device.</p></header>
+  <section class="tight">
+    ${store.persists ? "" : `<div class="empty warnbox"><b>Saving isn't working in this browser</b> (private mode, or storage is blocked). Progress lasts only until you close the tab.</div>`}
+    <div class="grid2">
+      <div class="card"><h3 class="subhead" style="margin-top:0">Back up</h3><p class="hint">Downloads a small .json file with everything above.</p>
+        <div class="actions" style="margin-top:10px"><button class="btn" id="exp">Export backup</button></div></div>
+      <div class="card"><h3 class="subhead" style="margin-top:0">Restore</h3><p class="hint">Replaces this browser's progress with the file's contents.</p>
+        <div class="actions" style="margin-top:10px"><label class="btn ghost">Import backup<input type="file" id="imp" accept="application/json,.json" hidden></label></div></div>
+    </div>
+    <div class="card" style="margin-top:14px"><h3 class="subhead" style="margin-top:0">Start over</h3><p class="hint">Deletes all progress in this browser. Can't be undone unless you exported a backup first.</p>
+      <div class="actions" style="margin-top:10px"><button class="btn warn" id="rst">Reset everything</button></div></div>
+    <p class="hint" id="msg" style="margin-top:14px"></p>
+  </section>${footer()}`;
+  $("#exp").addEventListener("click", () => {
+    const blob = new Blob([store.exportJSON()], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `bsmt-hub-backup-${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  });
+  $("#imp").addEventListener("change", e => {
+    const f = e.target.files[0]; if (!f) return;
+    f.text().then(t => { store.importJSON(t); $("#msg").textContent = "Restored."; paintTopnav("data"); })
+      .catch(err => { $("#msg").textContent = "That file couldn't be read: " + err.message; });
+  });
+  $("#rst").addEventListener("click", () => {
+    if (confirm("Delete all progress in this browser?")) { store.reset(); $("#msg").textContent = "Reset done."; paintTopnav("data"); }
+  });
+}
+
+route();
+})();
