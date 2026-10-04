@@ -153,6 +153,9 @@ const footer = () => `<footer>
 /* "← Home / Course" on every page but home */
 const crumbs = (...trail) => `<div class="crumbs"><a class="backlink" href="#/">← Home</a>${
   trail.map(([href, label]) => `<span>/</span><a class="backlink" href="${href}">${esc(label)}</a>`).join("")}</div>`;
+const LBL = { new: "new", started: "just started", weak: "weak", shaky: "shaky", strong: "strong" };
+const lbl = t => `<span class="lbl ${t.label}">${LBL[t.label]}</span>`;
+const pctOf = t => Math.round(t.acc * 100);
 const bar = (pct, cls) => `<span class="meter${cls ? " " + cls : ""}"><span style="width:${pct}%"></span></span>`;
 
 /* =================================================================
@@ -173,13 +176,46 @@ function homeView() {
   const mis = allMistakes(), due = dueCards(), fresh = newCards();
   const answered = store.answeredCount();
 
+  /* Today: a smart session, aimed at the next quiz if one is under two weeks away */
+  const A = H.adapt;
+  const soon = upcoming.find(x => new Date(x.a.start) - Date.now() < 14 * 864e5);
+  const focus = soon ? soon.slug : "";
+  const plan = A.smartPick({ c: focus, n: 20 });
+  const weak = A.weakSpots("", 4);
+  const started = A.hasHistory();
+
   app.innerHTML = `
   <header class="hub-mast">
     <div class="eyebrow">IIT Jodhpur · ${esc(H.program.name)} · Batch ${esc(H.program.batch)}</div>
     <h1>Study Hub</h1>
-    <p class="sub">Notes, a ${QS.length}-question bank, flashcards and timed mock papers for every course, plus a record of
+    <p class="sub">Notes, a ${QS.length.toLocaleString("en-IN")}-question bank, flashcards and timed mock papers for every course, plus a record of
       what you keep getting wrong. Nothing to sign up for. Your progress stays in this browser.</p>
   </header>
+
+  <section class="tight">
+    <div class="sechead"><h2>Today</h2>${soon ? `<span class="tag">${esc(META[focus].short)} ${esc(soon.a.name)} in ${esc(soon.u.text)}</span>` : ""}</div>
+    <div class="today">
+      <a class="plan" href="${link("practice", { mode: "smart", c: focus })}">
+        <span class="k">Smart session${focus ? " · " + esc(META[focus].name) : " · all courses"}</span>
+        <span class="v">${plan.qs.length} questions</span>
+        <span class="s">${started ? esc(A.describeMix(plan.mix)) : "A spread of new questions across every topic, to find your level. It adapts from your first answer."}</span>
+        <span class="go">Start →</span>
+      </a>
+      <div class="weakbox">
+        <h4>Your weak spots</h4>
+        ${weak.length ? weak.map(t => `<div class="wrow">
+            <span class="tname">${esc(t.topic)}<em>${esc(META[t.slug].short)} · ${pctOf(t)}% recently${t.mistakes ? ` · ${t.mistakes} to fix` : ""}</em></span>
+            ${lbl(t)}
+            <a class="btn ghost sm" href="${link("practice", { c: t.slug, t: t.topic })}">Drill</a></div>`).join("")
+          : `<p class="hint">${started ? "Nothing weak yet. Keep answering and any topic under 80% will show up here." : "Answer a few questions and the topics you struggle with will show up here."}</p>`}
+      </div>
+    </div>
+    <details class="how"><summary>How a smart session picks questions</summary>
+      <p>Your open mistakes come first, then questions you got right a while ago and are due a check (after 1, 3, 7, 16 and 35 days),
+      then questions you haven't seen, starting with your weakest topics. No single topic takes more than about a third of a session.
+      A topic is <b>weak</b> under 60% right on your recent answers, <b>shaky</b> under 80%, and <b>strong</b> from 80%.
+      All of it is worked out from what you've answered in this browser.</p></details>
+  </section>
 
   <section class="tight">
     <div class="sechead"><h2>Next up</h2></div>
@@ -199,7 +235,7 @@ function homeView() {
         <span class="s">${mis.length ? "each one clears after two correct answers in a row" : "none yet; they collect as you practise"}</span></a>
       <a class="tile" href="#/cards"><span class="k">Flashcards due</span><span class="v">${due.length}</span>
         <span class="s">${due.length ? "review these first" : `${fresh.length} cards not started yet`}</span></a>
-      <a class="tile" href="#/bank"><span class="k">Questions answered</span><span class="v">${answered}<small> / ${QS.length}</small></span>
+      <a class="tile" href="#/bank"><span class="k">Questions answered</span><span class="v">${answered.toLocaleString("en-IN")}<small> / ${QS.length.toLocaleString("en-IN")}</small></span>
         <span class="s">across ${SLUGS.length} courses</span></a>
     </div>
   </section>
@@ -270,21 +306,25 @@ function courseView(slug, p) {
   const nOff = C.questions.filter(q => q.o).length;
   pane.innerHTML = `<section>
     <div class="actions">
-      <a class="btn" href="${link("practice", { c: slug })}">Practise all ${ids.length}</a>
+      <a class="btn" href="${link("practice", { mode: "smart", c: slug })}">Smart session · 20</a>
+      <a class="btn ghost" href="${link("practice", { c: slug })}">Practise all ${ids.length}</a>
       ${m.mistakes ? `<a class="btn warn" href="${link("practice", { c: slug, s: "mistakes" })}">Fix ${plural(m.mistakes, "mistake")}</a>` : ""}
       ${nNew ? `<a class="btn ghost" href="${link("practice", { c: slug, s: "new" })}">Only unseen · ${nNew}</a>` : ""}
       ${nFlag ? `<a class="btn ghost" href="${link("practice", { c: slug, s: "flagged" })}">Flagged · ${nFlag}</a>` : ""}
       ${nOff ? `<a class="btn ghost" href="${link("practice", { c: slug, s: "official" })}">From the course deck · ${nOff}</a>` : ""}
       <a class="btn ghost" href="${link("cards", { c: slug })}">Flashcards</a>
     </div>
+    ${(() => { const w = H.adapt.weakSpots(slug, 3); return w.length ? `<div class="weakline"><b>Weak spots:</b> ${w.map(t =>
+      `<a href="${link("practice", { c: slug, t: t.topic })}">${esc(t.topic)} <span>${pctOf(t)}%</span></a>`).join("")}</div>` : ""; })()}
     <div class="topiclist">${C.units.map(u => {
       const ts = C.topics.filter(t => t.unit === u.id);
       if (!ts.length) return "";
       return `<div class="unit"><div class="unithead"><h3>${u.title}</h3><a href="${link("c/" + slug, { tab: "notes", u: u.id })}">Notes →</a></div>
         ${ts.map(t => {
           const tid = C.questions.filter(q => q.topic === t.name).map(q => q.id), tm = store.mastery(tid);
+          const ts = H.adapt.topicStats(slug, t.name);
           return `<div class="trow">
-            <span class="tname">${esc(t.name)}<em>${tid.length} Q${tm.mistakes ? ` · <b>${tm.mistakes} to fix</b>` : tm.seen ? ` · ${tm.seen} answered` : ""}</em></span>
+            <span class="tname">${esc(t.name)} ${ts.label !== "new" ? lbl(ts) : ""}<em>${tid.length} Q${tm.mistakes ? ` · <b>${tm.mistakes} to fix</b>` : tm.seen ? ` · ${tm.seen} answered` : ""}</em></span>
             ${bar(tm.pct, tm.mistakes ? "warn" : "")}<span class="pct">${tm.seen ? tm.pct + "%" : "—"}</span>
             <a class="btn ghost sm" href="${link("practice", { c: slug, t: t.name })}">Practise</a>
           </div>`;
@@ -339,7 +379,7 @@ function courseExams(slug, pane) {
         <div class="cell"><dt>Syllabus</dt><dd>${esc(b && b.scopeShort || "—")}<small>${esc(a.scopeText)}</small></dd></div>
       </dl>
       <div class="actions" style="margin-top:16px"><a class="btn" href="${link("mock", { c: slug, a: a.id })}">Sit a mock · ${a.questions} Q in ${a.durationMin} min</a></div>
-      ${mocks.length ? `<div class="mockhist"><h4>Your mock papers</h4>${mocks.slice(-5).reverse().map(mk => `<div><span>${fmtDay(mk.at)}</span><b>${mk.score} / ${mk.max}</b><span>${mk.right} right · ${mk.wrong} wrong · ${mk.blank} blank</span></div>`).join("")}</div>` : ""}
+      ${mocks.length ? `<div class="mockhist"><h4>Your mock papers</h4>${mocks.slice(-5).reverse().map(mk => `<div><span>${fmtDay(mk.at)}</span><b>${mk.score} / ${mk.max}</b><span>${mk.right} right · ${mk.wrong} wrong · ${mk.blank} blank${mk.lean ? " · weak-topic paper" : ""}</span></div>`).join("")}</div>` : ""}
       ${b ? `<details class="topic brief"><summary>The ${esc(a.name)} brief<span class="src">${esc(b.tag)}</span></summary><div class="tbody"><p class="lede">${b.lede}</p>${b.html}
         ${b.weights ? `<h4>Where the marks probably sat</h4><p style="font-size:13.5px;color:var(--ink-3)">Estimated from lecture time, not official.</p>${(() => { const mx = Math.max(...b.weights.map(w => w[1])); return b.weights.map(([l, v]) => `<div class="wbar"><span class="lab">${esc(l)}</span><span class="track"><span class="fill" style="width:${v * 100 / mx}%"></span></span><span class="num">~${v}%</span></div>`).join(""); })()}` : ""}
       </div></details>` : ""}`}
@@ -357,11 +397,15 @@ function describe(p) {
   if (p.t) bits.push(p.t);
   if (p.s) bits.push({ mistakes: "your mistakes", new: "unseen only", flagged: "flagged", right: "already right", official: "from the course deck" }[p.s] || p.s);
   if (p.q) bits.push(`“${p.q}”`);
+  if (p.mode === "smart") bits.unshift("Smart session");
   return bits.join(" · ");
 }
 
 function practiceView(p) {
-  const pool0 = select(p);
+  const smart = p.mode === "smart";
+  const source = () => smart ? H.adapt.smartPick({ c: p.c, n: +p.n || 20 }) : { qs: select(p) };
+  let pick = source();
+  let pool0 = pick.qs;
   const slug = p.c || null;
   const pace = slug ? secsPerQ(lastTimed(slug)) : 20;
   let pool = [], idx = 0, right = 0, answered = 0, pacer = false, timer = null, left = pace, missed = {}, missedIds = [];
@@ -371,11 +415,12 @@ function practiceView(p) {
     ${slug ? crumbs(["#/c/" + slug, META[slug].name]) : crumbs(["#/bank", "Bank"])}
     <div class="eyebrow">Practice</div>
     <h1>${esc(describe(p))}</h1>
+    ${smart && pick.qs.length ? `<p class="sub" id="mix">Picked for you: ${esc(H.adapt.describeMix(pick.mix))}.</p>` : ""}
   </header>
   <section class="tight">
     ${pool0.length ? `<div class="drillbar">
       <button class="btn ghost" id="pacer" aria-pressed="false">Pacer: off</button>
-      <button class="btn ghost" id="restart">Shuffle &amp; restart</button>
+      <button class="btn ghost" id="restart">${smart ? "New session" : "Shuffle &amp; restart"}</button>
       <span class="score" id="score">0 / 0</span>
     </div>
     <div class="card" id="qcard"></div>
@@ -388,7 +433,11 @@ function practiceView(p) {
   const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
   cleanup = () => { stop(); document.removeEventListener("keydown", onKey); };
 
-  function build() { pool = shuffle(pool0.slice()); idx = 0; right = 0; answered = 0; missed = {}; missedIds = []; render(); }
+  let built = false;
+  function build() {
+    if (smart && built) { pick = source(); pool0 = pick.qs; const m = $("#mix"); if (m) m.textContent = `Picked for you: ${H.adapt.describeMix(pick.mix)}.`; }
+    built = true;
+    pool = shuffle(pool0.slice()); idx = 0; right = 0; answered = 0; missed = {}; missedIds = []; render(); }
   function paintClock() { const c = $("#clock"); if (!c) return; c.textContent = left + "s"; c.classList.toggle("low", left <= Math.ceil(pace / 4)); }
   function startTimer() {
     stop(); if (!pacer) return;
@@ -500,6 +549,7 @@ function mockView(p) {
   <section class="tight" id="mock">
     <div class="empty"><b>Ready when you are.</b> The clock starts when you press Start and runs for the whole paper, at about
       ${Math.round(secs / N)} seconds a question. Leaving a question blank costs nothing; a wrong answer costs a quarter mark.
+      ${H.adapt.hasHistory(slug) ? `<label class="toggle" style="margin:14px 0 0;display:flex"><input type="checkbox" id="lean"> Lean the paper toward my weak topics and open mistakes</label>` : ""}
       <div class="actions" style="margin-top:14px"><button class="btn" id="start">Start the paper</button></div></div>
   </section>`;
 
@@ -509,8 +559,10 @@ function mockView(p) {
   const guard = e => { if (!finished) { e.preventDefault(); e.returnValue = ""; } };
   cleanup = () => { stop(); window.removeEventListener("beforeunload", guard); document.removeEventListener("keydown", onKey); };
 
+  let lean = false;
   $("#start").addEventListener("click", () => {
-    paper = shuffle(C.questions.slice()).slice(0, N);
+    lean = !!($("#lean") && $("#lean").checked);
+    paper = shuffle(lean ? H.adapt.weightedPaper(slug, N) : C.questions.slice()).slice(0, N);
     picks = paper.map(() => new Set());
     orders = paper.map(optionOrder);
     t0 = Date.now(); left = secs;
@@ -580,7 +632,7 @@ function mockView(p) {
     });
     const score = r * M.correct + w * M.incorrect;
     const used = Math.min(secs, Math.round((Date.now() - t0) / 1000));
-    store.addMock({ c: slug, a: a.id, at: Date.now(), n: N, right: r, wrong: w, blank: b, score, max: N, secs: used,
+    store.addMock({ c: slug, a: a.id, at: Date.now(), lean, n: N, right: r, wrong: w, blank: b, score, max: N, secs: used,
       ids: paper.map(q => q.id), picks: picks.map(s => [...s]) });
     const byTopic = {};
     paper.forEach((q, i) => { if (res[i] !== "right") byTopic[q.topic] = (byTopic[q.topic] || 0) + 1; });
@@ -700,7 +752,7 @@ function bankView(p) {
   <header class="mast slim">
     ${crumbs()}
     <div class="eyebrow">Master question bank</div>
-    <h1>${QS.length} questions, ${SLUGS.length} courses</h1>
+    <h1>${QS.length.toLocaleString("en-IN")} questions, ${SLUGS.length} courses</h1>
     <div class="filters">
       <input id="fq" type="search" placeholder="Search questions, options, explanations" value="${esc(p.q || "")}" aria-label="Search">
       <select id="fc" aria-label="Course"><option value="">All courses</option>${SLUGS.map(s => `<option value="${s}"${s === p.c ? " selected" : ""}>${esc(META[s].name)}</option>`).join("")}</select>

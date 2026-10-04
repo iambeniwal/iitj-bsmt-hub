@@ -10,6 +10,37 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [1.2.0] — 2026-10-04
+
+### Added
+- **Smart sessions**: 20 questions chosen for you, from the home page or any course page.
+  They come in order of need:
+  1. your open mistakes, oldest first (up to half the session)
+  2. questions you got right a while ago that are due a check (up to 30%)
+  3. questions you haven't seen, rotating through topics with the weakest first
+  4. refreshers, to fill any gap
+
+  No topic takes more than about a third of a session. A brand-new student gets one
+  question from each of 20 different topics, to find their level.
+- **Spaced review for questions**, not just flashcards. A question you've answered right
+  comes back after 1, 3, 7, 16, then 35 days of consecutive correct answers. Nothing new is
+  stored: review dates are worked out from the attempt history the hub already keeps.
+- **Topic strength labels** on every topic: *just started*, *weak* (under 60% right on
+  recent answers, or a quarter of the topic is open mistakes), *shaky* (under 80%) and
+  *strong*. Accuracy is smoothed, so one lucky answer doesn't count as mastery.
+- **Today** on the home page: a smart session and your four weakest topics, each with a
+  Drill button. Once a quiz is less than two weeks away, the session focuses on that
+  course.
+- **Weak spots** strip on each course's *Topics & practice* tab.
+- **Mock papers that lean toward your weak topics**: an optional switch before you start.
+  Questions from weak topics and open mistakes are more likely to appear, but the paper
+  still covers the course. The mock history marks these as *weak-topic paper*.
+- `assets/adapt.js`: the rules behind all of the above, with the thresholds written out
+  at the top of the file.
+
+### Changed
+- Question counts on the home page and in the bank use thousands separators.
+
 ## [1.1.0] — 2026-10-04
 
 ### Fixed

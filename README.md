@@ -24,6 +24,7 @@ Built around what classmates asked for after Quiz 1:
 | Master question bank | *Bank*: all questions in every course, searchable and filterable, any result set drillable |
 | Common confusions / traps | Course → *Traps*, and in the flashcard deck |
 | Timed mock tests | Course → *Assessments* → *Sit a mock*: a full-length paper on the real clock, marked at the end with −0.25 negative marking, plus a colour-coded result grid |
+| Practice that adapts to you | *Today* on the home page and *Smart session* on each course: mistakes, due reviews and weakest topics first; every topic labelled weak, shaky or strong |
 | Mistake revision | *Mistakes*: every question you miss stays here until you answer it correctly **twice in a row** |
 
 There are no accounts yet. Progress is stored in the browser (`localStorage`) and never
@@ -115,6 +116,9 @@ python3 tools/build-offline.py
 
 Full history in [`CHANGELOG.md`](CHANGELOG.md). Most recent:
 
+- **[1.2.0] — 2026-10-04**: adaptive practice. Smart sessions pick your mistakes, due
+  reviews and weakest topics first. Topics are labelled weak, shaky or strong, the home page
+  has a *Today* plan, and mock papers can lean toward your weak topics.
 - **[1.1.0] — 2026-10-04**: answer options shuffle on every showing, which fixes the 76%-on-B
   bias inherited from the Quiz 1 site. Adds a Home link on every page and removes backup and
   restore from *My data*.
