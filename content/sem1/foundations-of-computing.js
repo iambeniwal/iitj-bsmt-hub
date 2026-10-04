@@ -915,6 +915,7 @@ HUB.addCourse({
    "id": "foc-q0021",
    "topic": "Data & DIKW",
    "q": "Which DIKW level answers the question 'why'?",
+   "keep": true,
    "c": [
     "Data",
     "Information",
@@ -1009,6 +1010,7 @@ HUB.addCourse({
    "id": "foc-q0027",
    "topic": "DIKW ladder",
    "q": "Which rung? — A log line reading: user 88213, event PAUSE, content 5512, timecode 00:42:15.",
+   "keep": true,
    "c": [
     "Data",
     "Information",
@@ -1024,6 +1026,7 @@ HUB.addCourse({
    "id": "foc-q0028",
    "topic": "DIKW ladder",
    "q": "Which rung? — 3.2 million viewers paused at exactly 00:42:15.",
+   "keep": true,
    "c": [
     "Data",
     "Information",
@@ -1039,6 +1042,7 @@ HUB.addCourse({
    "id": "foc-q0029",
    "topic": "DIKW ladder",
    "q": "Which rung? — Cross-referencing the pause spike against the script shows the scene introduces a subplot with no setup, and that is what drives the drop-off.",
+   "keep": true,
    "c": [
     "Data",
     "Information",
@@ -1054,6 +1058,7 @@ HUB.addCourse({
    "id": "foc-q0030",
    "topic": "DIKW ladder",
    "q": "Which rung? — Re-edit the pacing of future releases and show returning viewers a contextual recap.",
+   "keep": true,
    "c": [
     "Data",
     "Information",
@@ -1078,7 +1083,7 @@ HUB.addCourse({
    "a": [
     1
    ],
-   "w": "All four rungs are on offer here, which is the whole difficulty. Option 1 is Information (a count), option 3 is Data, option 4 is Wisdom (an action). Knowledge explains why."
+   "w": "All four rungs are on offer here, which is the whole difficulty. Millions pausing at the same second is Information (a count), the raw timecode of each pause is Data, and choosing which re-edit to commission is Wisdom (an action). Knowledge explains why."
   },
   {
    "id": "foc-q0032",
@@ -1093,20 +1098,21 @@ HUB.addCourse({
    "a": [
     1
    ],
-   "w": "Wisdom is judgement under uncertainty. Option 1 describes Knowledge and is by far the most common wrong answer; options 3 and 4 are Information and Data."
+   "w": "Wisdom is judgement under uncertainty. “Accumulated information interpreted through pattern recognition” describes Knowledge and is by far the most common wrong answer; adding units, context and a time window is Information, and raw sensor or log output is Data."
   },
   {
    "id": "foc-q0033",
    "topic": "DIKW ladder",
    "q": "“The accumulation of information over time, interpreted through pattern recognition” describes which rung?",
+   "keep": true,
    "c": [
+    "Data",
     "Information",
     "Knowledge",
-    "Wisdom",
-    "Data"
+    "Wisdom"
    ],
    "a": [
-    1
+    2
    ],
    "w": "Knowledge. Drill this one in both directions: once you can name it as Knowledge on sight, you stop picking it when a question asks about Wisdom."
   },
@@ -1144,6 +1150,7 @@ HUB.addCourse({
    "id": "foc-q0036",
    "topic": "DIKW ladder",
    "q": "Which rung? — Applicants from postal codes X, Y and Z default at 3.4 times the rate of others, confirmed in the data.",
+   "keep": true,
    "c": [
     "Data",
     "Information",
@@ -1159,6 +1166,7 @@ HUB.addCourse({
    "id": "foc-q0037",
    "topic": "DIKW ladder",
    "q": "Which rung? — Those areas have lower incomes, weaker infrastructure and less formal employment, so the default rate reflects structural disadvantage.",
+   "keep": true,
    "c": [
     "Data",
     "Information",
@@ -1189,14 +1197,15 @@ HUB.addCourse({
    "id": "foc-q0039",
    "topic": "DIKW ladder",
    "q": "At which rung do cost, risk and ethics first enter?",
+   "keep": true,
    "c": [
+    "Data",
     "Information",
     "Knowledge",
-    "Wisdom",
-    "Data"
+    "Wisdom"
    ],
    "a": [
-    2
+    3
    ],
    "w": "Data, Information and Knowledge are all descriptive. Wisdom is the only rung that weighs what should be done."
   },
@@ -1855,7 +1864,7 @@ HUB.addCourse({
    "a": [
     1
    ],
-   "w": "Line by line, at runtime, with partial output even when errors exist. That last option describes a compiler."
+   "w": "Line by line, at runtime, with partial output even when errors exist. Translating everything first and producing no output when any error exists describes a compiler."
   },
   {
    "id": "foc-q0083",

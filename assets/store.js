@@ -3,7 +3,7 @@
 
    Nothing is sent anywhere. No accounts, no server: the hub is a
    static site, and a student's attempts, mistakes and flashcard
-   schedule never leave their device unless they export them.
+   schedule never leave their device. Clearing browser data erases them.
 
    Keyed by permanent content IDs (foc-q0012, ebh-t0003 …), which is
    why those IDs must never be renumbered — a renumber would silently
@@ -115,15 +115,7 @@ const store = {
   addMock(m) { S.mocks.push(m); if (S.mocks.length > 60) S.mocks.shift(); save(); },
   mocks(slug, aid) { return S.mocks.filter(m => (!slug || m.c === slug) && (!aid || m.a === aid)); },
 
-  /* ---------- backup ---------- */
-  exportJSON() { return JSON.stringify(Object.assign({ exported: new Date().toISOString() }, S)); },
-  importJSON(text) {
-    const s = JSON.parse(text);
-    if (!s || typeof s !== "object" || !s.att) throw new Error("Not a hub backup file");
-    S = Object.assign(blank(), s);
-    delete S.exported;
-    save();
-  },
+  /* ---------- start over ---------- */
   reset() { S = blank(); save(); }
 };
 

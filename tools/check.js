@@ -5,7 +5,10 @@
    Fails on anything that would corrupt a student's saved progress or
    break a page: duplicate or malformed IDs, an ID missing from
    ids.lock, an answer index out of range, a topic with no notes unit,
-   a course in the registry with no content file (or vice versa).
+   a course in the registry with no content file (or vice versa), an
+   explanation that names an option by position (options are shuffled),
+   or a course where the right answer would still land on one position
+   far too often after shuffling.
 
    --lock   append any new IDs to ids.lock (do this when adding content)
    =================================================================== */
@@ -18,6 +21,8 @@ vm.createContext(ctx);
 const run = f => vm.runInContext(fs.readFileSync(path.join(ROOT, f), "utf8"), ctx, { filename: f });
 
 const errors = [], warns = [];
+const TAIL = /^(both|neither|either|all (three|four|of the above|the above)|none( of the above)?)\b/i;   // same as app.js
+const POSREF = /\boptions? ?[1-6A-F]\b|\b(first|second|third|fourth|last|final) (option|answer|choice)|\bthat last option/i;
 const err = m => errors.push(m), warn = m => warns.push(m);
 
 run("content/program.js");
@@ -57,7 +62,22 @@ for (const [slug, C] of Object.entries(H.courses)) {
     if (q.a.length > 1 && !q.multi) err(`${q.id}: several answers but not marked multi`);
     if (!q.w) warn(`${q.id}: no explanation`);
     if (/&[a-z]+;/.test(q.q + q.c.join("") + q.w)) err(`${q.id}: HTML entity in plain-text field (write the character itself)`);
+    if (!q.keep && POSREF.test(q.w)) err(`${q.id}: explanation refers to an option by position, but options are shuffled — name the option's content instead`);
   });
+
+  /* Where the answer lands once the app has shuffled: options shuffle
+     uniformly, except "Both"/"Neither"-style options (pinned last) and
+     q.keep questions (shown as written). Mirrors optionOrder() in app.js. */
+  const pos = [0, 0, 0, 0, 0, 0]; let single = 0;
+  C.questions.filter(q => !q.multi).forEach(q => {
+    single++;
+    const a = q.a[0];
+    if (q.keep) { pos[a]++; return; }
+    const idx = q.c.map((_, i) => i), tail = idx.filter(i => TAIL.test(q.c[i].trim())), head = idx.filter(i => !tail.includes(i));
+    if (tail.includes(a)) pos[head.length + tail.indexOf(a)]++;
+    else head.forEach((_, p) => { pos[p] += 1 / head.length; });
+  });
+  pos.forEach((n, p) => { if (single && n / single > 0.4) warn(`${slug}: ${Math.round(n * 100 / single)}% of answers would show in position ${"ABCDEF"[p]}`); });
   C.traps.forEach(t => id(t, "t"));
   C.defs.forEach(d => { id(d, "d"); if (!unitIds.has(d.unit)) err(`${d.id}: missing unit ${d.unit}`); });
 }

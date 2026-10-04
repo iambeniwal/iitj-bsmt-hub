@@ -12,7 +12,7 @@
      #/cards?c=<slug>&deck=…    flashcards with spaced repetition
      #/bank?<filters>           every question, searchable
      #/mistakes                 what you keep getting wrong
-     #/data                     backup, restore, reset
+     #/data                     what is stored, and a reset
 
    <filters> for practice and bank: c (course) · t (topic) · u (unit)
    · s (new | mistakes | flagged | right) · q (text search)
@@ -26,6 +26,18 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "
 const $ = (s, r) => (r || app).querySelector(s);
 const $$ = (s, r) => [...(r || app).querySelectorAll(s)];
 const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+/* Options are shuffled every time a question is shown, so the position of
+   the right answer carries no signal. (Imported Quiz 1 content had 76% of
+   its answers on B.) Options that refer to the others, such as "Both" or
+   "All three", stay at the end; q.keep freezes an order that is itself the
+   point, like the Data → Information → Knowledge → Wisdom ladder. */
+const TAIL = /^(both|neither|either|all (three|four|of the above|the above)|none( of the above)?)\b/i;
+function optionOrder(q) {
+  const idx = q.c.map((_, i) => i);
+  if (q.keep) return idx;
+  const tail = idx.filter(i => TAIL.test(q.c[i].trim()));
+  return shuffle(idx.filter(i => !tail.includes(i))).concat(tail);
+}
 const plural = (n, w, p) => `${n} ${n === 1 ? w : (p || w + "s")}`;
 const stripTags = s => String(s).replace(/<[^>]+>/g, "").replace(/&amp;/g, "&");
 
@@ -138,6 +150,9 @@ const footer = () => `<footer>
     Not affiliated with or endorsed by IIT Jodhpur or Masai School. Your progress is stored only in this browser.
     The hosted site counts page visits with Google&nbsp;Analytics; offline copies do not report at all.</p>
 </footer>`;
+/* "← Home / Course" on every page but home */
+const crumbs = (...trail) => `<div class="crumbs"><a class="backlink" href="#/">← Home</a>${
+  trail.map(([href, label]) => `<span>/</span><a class="backlink" href="${href}">${esc(label)}</a>`).join("")}</div>`;
 const bar = (pct, cls) => `<span class="meter${cls ? " " + cls : ""}"><span style="width:${pct}%"></span></span>`;
 
 /* =================================================================
@@ -224,7 +239,7 @@ function courseView(slug, p) {
 
   app.innerHTML = `
   <header class="mast">
-    <a class="backlink" href="#/">← All courses</a>
+    ${crumbs()}
     <div class="eyebrow">Semester ${R.sem} · ${esc(R.short)} · ${esc(R.lecturer)}</div>
     <h1>${esc(R.name)}</h1>
     <dl class="strip">
@@ -353,7 +368,7 @@ function practiceView(p) {
 
   app.innerHTML = `
   <header class="mast slim">
-    <a class="backlink" href="${slug ? "#/c/" + slug : "#/bank"}">← ${slug ? esc(META[slug].name) : "Question bank"}</a>
+    ${slug ? crumbs(["#/c/" + slug, META[slug].name]) : crumbs(["#/bank", "Bank"])}
     <div class="eyebrow">Practice</div>
     <h1>${esc(describe(p))}</h1>
   </header>
@@ -380,11 +395,11 @@ function practiceView(p) {
     left = pace; paintClock();
     timer = setInterval(() => { left--; paintClock(); if (left <= 0) { stop(); reveal(pool[idx], [], true); } }, 1000);
   }
-  let state = "q", picked = new Set();
+  let state = "q", picked = new Set(), order = [];
   function render() {
     stop();
     if (idx >= pool.length) return done();
-    const q = pool[idx]; state = "q"; picked = new Set();
+    const q = pool[idx]; state = "q"; picked = new Set(); order = optionOrder(q);
     $("#qcard").innerHTML = `
       <div class="qmeta">
         <span class="qnum">Q${idx + 1} / ${pool.length}</span>
@@ -396,7 +411,7 @@ function practiceView(p) {
         ${pacer ? `<span class="clock" id="clock">${pace}s</span>` : ""}
       </div>
       <p class="qtext">${esc(q.q)}</p>
-      <div class="opts">${q.c.map((c, i) => `<button class="opt" data-i="${i}"><span class="k">${"ABCDEF"[i]}</span><span>${esc(c)}</span></button>`).join("")}</div>
+      <div class="opts">${order.map((i, pos) => `<button class="opt" data-i="${i}"><span class="k">${"ABCDEF"[pos]}</span><span>${esc(q.c[i])}</span></button>`).join("")}</div>
       ${q.multi ? '<div style="margin-top:10px"><button class="btn ghost" id="submulti">Submit answer</button></div>' : ""}
       <div id="after"></div>`;
     $("#score").textContent = `${right} / ${answered}`;
@@ -447,8 +462,8 @@ function practiceView(p) {
   function onKey(e) {
     if (e.target.closest("input,textarea,select") || e.metaKey || e.ctrlKey || e.altKey) return;
     const k = e.key.toLowerCase();
-    if (state === "q" && "1234".includes(k) && k) { e.preventDefault(); choose(+k - 1); }
-    else if (state === "q" && "abcd".includes(k) && k.length === 1) { e.preventDefault(); choose("abcd".indexOf(k)); }
+    const pos = k.length === 1 ? "1234".indexOf(k) >= 0 ? "1234".indexOf(k) : "abcd".indexOf(k) : -1;
+    if (state === "q" && pos >= 0 && pos < order.length) { e.preventDefault(); choose(order[pos]); }
     else if (k === "f") flag();
     else if (k === "enter" && state === "q" && pool[idx] && pool[idx].multi) { e.preventDefault(); reveal(pool[idx], [...picked], false); }
   }
@@ -476,7 +491,7 @@ function mockView(p) {
 
   app.innerHTML = `
   <header class="mast slim">
-    <a class="backlink" href="${link("c/" + slug, { tab: "exams" })}">← ${esc(R.name)}</a>
+    ${crumbs([link("c/" + slug, { tab: "exams" }), R.name])}
     <div class="eyebrow">Mock paper · ${esc(a.name)}${a.status === "tba" ? " (format assumed from " + esc(ref.name) + ")" : ""}</div>
     <h1>${N} questions · ${ref.durationMin} minutes</h1>
     <p class="sub">Drawn at random from the ${C.questions.length}-question bank. Marked like the real thing, ${esc(M.note)}.
@@ -488,7 +503,7 @@ function mockView(p) {
       <div class="actions" style="margin-top:14px"><button class="btn" id="start">Start the paper</button></div></div>
   </section>`;
 
-  let paper, picks, cur = 0, left = secs, timer = null, t0 = 0, finished = false;
+  let paper, picks, orders, cur = 0, left = secs, timer = null, t0 = 0, finished = false;
   const opened = new Set();               // a blank only counts as a miss if you actually read the question
   const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
   const guard = e => { if (!finished) { e.preventDefault(); e.returnValue = ""; } };
@@ -497,6 +512,7 @@ function mockView(p) {
   $("#start").addEventListener("click", () => {
     paper = shuffle(C.questions.slice()).slice(0, N);
     picks = paper.map(() => new Set());
+    orders = paper.map(optionOrder);
     t0 = Date.now(); left = secs;
     window.addEventListener("beforeunload", guard);
     document.addEventListener("keydown", onKey);
@@ -527,7 +543,7 @@ function mockView(p) {
     cur = i; opened.add(i); const q = paper[i];
     $("#mq").innerHTML = `<div class="qmeta"><span class="qnum">Q${i + 1} / ${N}</span>${q.multi ? '<span class="qtopic">select all that apply</span>' : ""}</div>
       <p class="qtext">${esc(q.q)}</p>
-      <div class="opts">${q.c.map((c, k) => `<button class="opt${picks[i].has(k) ? " picked" : ""}" data-k="${k}"><span class="k">${"ABCDEF"[k]}</span><span>${esc(c)}</span></button>`).join("")}</div>
+      <div class="opts">${orders[i].map((k, pos) => `<button class="opt${picks[i].has(k) ? " picked" : ""}" data-k="${k}"><span class="k">${"ABCDEF"[pos]}</span><span>${esc(q.c[k])}</span></button>`).join("")}</div>
       <div class="actions" style="margin-top:14px">
         <button class="btn ghost" id="prev"${i === 0 ? " disabled" : ""}>← Previous</button>
         <button class="btn ghost" id="clear"${picks[i].size ? "" : " disabled"}>Clear answer</button>
@@ -548,7 +564,7 @@ function mockView(p) {
   function onKey(e) {
     if (finished || e.metaKey || e.ctrlKey || e.altKey) return;
     const k = e.key.toLowerCase();
-    if ("1234".includes(k) && k.length === 1) { e.preventDefault(); pick(+k - 1); }
+    if ("1234".includes(k) && k.length === 1 && +k <= orders[cur].length) { e.preventDefault(); pick(orders[cur][+k - 1]); }
     else if (k === "arrowright" && cur + 1 < N) show(cur + 1);
     else if (k === "arrowleft" && cur > 0) show(cur - 1);
   }
@@ -586,7 +602,7 @@ function mockView(p) {
       <div id="review">${paper.map((q, i) => `<div class="card rv ${res[i]}" id="mq-${i}">
         <div class="qmeta"><span class="qnum">Q${i + 1}</span><span class="qtopic">${esc(q.topic)}</span><span class="qtopic ${res[i] === "right" ? "good" : "bad"}">${res[i]}</span></div>
         <p class="qtext">${esc(q.q)}</p>
-        <div class="opts">${q.c.map((c, k) => `<div class="opt${q.a.includes(k) ? " right" : picks[i].has(k) ? " wrong" : ""}"><span class="k">${"ABCDEF"[k]}</span><span>${esc(c)}</span></div>`).join("")}</div>
+        <div class="opts">${orders[i].map((k, pos) => `<div class="opt${q.a.includes(k) ? " right" : picks[i].has(k) ? " wrong" : ""}"><span class="k">${"ABCDEF"[pos]}</span><span>${esc(q.c[k])}</span></div>`).join("")}</div>
         <div class="why">${esc(q.w)}</div></div>`).join("")}</div>`;
     const filt = () => $$("#review .rv.right").forEach(el => { el.hidden = $("#onlywrong").checked; });
     $("#onlywrong").addEventListener("change", filt); filt();
@@ -612,7 +628,7 @@ function cardsView(p) {
 
   app.innerHTML = `
   <header class="mast slim">
-    <a class="backlink" href="${slug ? "#/c/" + slug : "#/"}">← ${slug ? esc(META[slug].name) : "Home"}</a>
+    ${slug ? crumbs(["#/c/" + slug, META[slug].name]) : crumbs()}
     <div class="eyebrow">Flashcards · active recall</div>
     <h1>${slug ? esc(META[slug].name) : "All courses"}</h1>
     <div class="drillbar" style="margin-top:14px">
@@ -682,6 +698,7 @@ function bankView(p) {
   const PAGE = 40;
   app.innerHTML = `
   <header class="mast slim">
+    ${crumbs()}
     <div class="eyebrow">Master question bank</div>
     <h1>${QS.length} questions, ${SLUGS.length} courses</h1>
     <div class="filters">
@@ -709,7 +726,7 @@ function bankView(p) {
     $("#list").innerHTML = rows.slice(0, shown).map(q => {
       const st = store.status(q.id);
       return `<details class="qrow ${st}"><summary><span class="qid">${q.id}</span><span class="qtopic">${esc(META[q.course].short)} · ${esc(q.topic)}</span>${st !== "new" ? `<span class="st ${st}">${st === "mistake" ? "mistake" : st}</span>` : ""}${store.flagged(q.id) ? '<span class="st flag">⚑</span>' : ""}<span class="qq">${esc(q.q)}</span></summary>
-        <div class="qans"><ol type="A">${q.c.map((c, i) => `<li class="${q.a.includes(i) ? "right" : ""}">${esc(c)}</li>`).join("")}</ol><div class="why">${esc(q.w)}</div></div></details>`;
+        <div class="qans"><ul>${q.c.map((c, i) => `<li class="${q.a.includes(i) ? "right" : ""}">${esc(c)}</li>`).join("")}</ul><div class="why">${esc(q.w)}</div></div></details>`;
     }).join("") + (rows.length > shown ? `<div class="actions center" style="margin-top:14px"><button class="btn ghost" id="more">Show ${Math.min(PAGE, rows.length - shown)} more</button></div>` : "")
       + (!rows.length ? `<div class="empty">No questions match.</div>` : "");
     const m = $("#more"); if (m) m.addEventListener("click", () => { shown += PAGE; paint(); });
@@ -731,6 +748,7 @@ function mistakesView() {
   mis.forEach(q => { ((groups[q.course] = groups[q.course] || {})[q.topic] = (groups[q.course][q.topic] || [])).push(q); });
   app.innerHTML = `
   <header class="mast slim">
+    ${crumbs()}
     <div class="eyebrow">Mistake revision</div>
     <h1>${mis.length ? plural(mis.length, "question") + " to fix" : "No open mistakes"}</h1>
     <p class="sub">Every question you get wrong in practice or in a mock lands here, and so does a mock question you read but left blank. It stays until you answer it correctly
@@ -757,37 +775,18 @@ function mistakesView() {
    ================================================================= */
 function dataView() {
   app.innerHTML = `
-  <header class="mast slim"><div class="eyebrow">My data</div><h1>Your progress lives in this browser</h1>
-    <p class="sub">There are no accounts. Your attempts, mistakes, flags, flashcard schedule and mock scores are saved on this device, in this
-      browser, and nowhere else. Clearing your browser data wipes them, and they don't follow you to your phone. Export a backup
-      file to keep them safe or to move them to another device.</p></header>
+  <header class="mast slim">${crumbs()}<div class="eyebrow">My data</div><h1>Your progress lives in this browser</h1>
+    <p class="sub">There are no accounts. Your attempts, mistakes, flags, flashcard schedule and mock scores are saved on this device,
+      in this browser, and nowhere else. They don't follow you to another device, and <strong>clearing your browser data deletes them
+      for good</strong>.</p></header>
   <section class="tight">
     ${store.persists ? "" : `<div class="empty warnbox"><b>Saving isn't working in this browser</b> (private mode, or storage is blocked). Progress lasts only until you close the tab.</div>`}
-    <div class="grid2">
-      <div class="card"><h3 class="subhead" style="margin-top:0">Back up</h3><p class="hint">Downloads a small .json file with everything above.</p>
-        <div class="actions" style="margin-top:10px"><button class="btn" id="exp">Export backup</button></div></div>
-      <div class="card"><h3 class="subhead" style="margin-top:0">Restore</h3><p class="hint">Replaces this browser's progress with the file's contents.</p>
-        <div class="actions" style="margin-top:10px"><label class="btn ghost">Import backup<input type="file" id="imp" accept="application/json,.json" hidden></label></div></div>
-    </div>
-    <div class="card" style="margin-top:14px"><h3 class="subhead" style="margin-top:0">Start over</h3><p class="hint">Deletes all progress in this browser. Can't be undone unless you exported a backup first.</p>
+    <div class="card"><h3 class="subhead" style="margin-top:0">Start over</h3><p class="hint">Deletes all progress in this browser. This can't be undone.</p>
       <div class="actions" style="margin-top:10px"><button class="btn warn" id="rst">Reset everything</button></div></div>
     <p class="hint" id="msg" style="margin-top:14px"></p>
   </section>${footer()}`;
-  $("#exp").addEventListener("click", () => {
-    const blob = new Blob([store.exportJSON()], { type: "application/json" });
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    a.download = `bsmt-hub-backup-${new Date().toISOString().slice(0, 10)}.json`;
-    document.body.appendChild(a); a.click(); a.remove();
-    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
-  });
-  $("#imp").addEventListener("change", e => {
-    const f = e.target.files[0]; if (!f) return;
-    f.text().then(t => { store.importJSON(t); $("#msg").textContent = "Restored."; paintTopnav("data"); })
-      .catch(err => { $("#msg").textContent = "That file couldn't be read: " + err.message; });
-  });
   $("#rst").addEventListener("click", () => {
-    if (confirm("Delete all progress in this browser?")) { store.reset(); $("#msg").textContent = "Reset done."; paintTopnav("data"); }
+    if (confirm("Delete all progress in this browser? This can't be undone.")) { store.reset(); $("#msg").textContent = "Reset done."; paintTopnav("data"); }
   });
 }
 

@@ -10,6 +10,42 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [1.1.0] — 2026-10-04
+
+### Fixed
+- **76% of correct answers were option B.** This came over from the Quiz 1 site: of the 532
+  single-answer questions, 405 had the answer in second place, against 30 for A, 84 for C
+  and 13 for D. Picking B every time would have scored about 71% on a full practice run
+  with no knowledge at all, which made both your scores and the mastery bars mean much
+  less than they appeared to. **Options are now shuffled every time a question is shown**,
+  in practice and in mock papers. A mock keeps one order per question for the whole paper
+  and its review. Tested by answering all 570 questions with the same letter: always-A now
+  scores 26% and always-B scores 22%, which is chance level.
+  - Options that refer to the others ("Both", "Neither", "Either", "All three") stay at
+    the end, where exams put them.
+  - The nine Data / Information / Knowledge / Wisdom questions always show the rungs in
+    ladder order, because that order is what they teach. Two of them (foc-q0033,
+    foc-q0039) had been written in a different order and were reordered. Their answers
+    are unchanged.
+  - Three explanations named options by position ("Option 1 describes Knowledge…", "That
+    last option describes a compiler") and would have been wrong after shuffling. They now
+    name the option's content (foc-q0031, foc-q0032, foc-q0082).
+  - The question bank lists options without letters, so the stored order can't read as a
+    pattern either.
+
+### Added
+- **A Home link on every page.** Pages inside a course show the trail as well
+  (`← Home / Foundations of Computing`).
+- **Two new checker rules** in `tools/check.js`: it fails on an explanation that refers to
+  an option by position, and warns if any course's answers would still land on one
+  position more than 40% of the time after shuffling.
+- `keep: true` on a question shows its options exactly as written.
+
+### Removed
+- **Backup and restore on *My data*.** Progress is browser-only until sign-in arrives, and
+  the page now says plainly that clearing browser data deletes it. *Reset everything*
+  stays.
+
 ## [1.0.0] — 2026-10-04
 
 ### Added
@@ -36,7 +72,7 @@ History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 - **Assessments tab** per course: the grading split as a bar, every quiz and the
   end-term with its status, the Quiz 1 brief, and your mock-paper history.
 - **My data**: progress lives only in the browser. Export and import a backup file to
-  keep it safe or to move it between devices.
+  keep it safe or to move it between devices. *(Removed in 1.1.0.)*
 - **Permanent IDs** for every question (`foc-q0001`), trap (`foc-t0001`) and definition
   (`foc-d0001`), recorded in the append-only `ids.lock`. Saved progress is keyed by them.
 - **`tools/check.js`**, a content checker that fails on duplicate, malformed or unlocked

@@ -26,9 +26,15 @@ Built around what classmates asked for after Quiz 1:
 | Timed mock tests | Course → *Assessments* → *Sit a mock*: a full-length paper on the real clock, marked at the end with −0.25 negative marking, plus a colour-coded result grid |
 | Mistake revision | *Mistakes*: every question you miss stays here until you answer it correctly **twice in a row** |
 
-There are no accounts. Progress is stored in the browser (`localStorage`) and never leaves
-the device. *My data* exports and restores a backup file, which is also how you move
-progress between a laptop and a phone.
+There are no accounts yet. Progress is stored in the browser (`localStorage`) and never
+leaves the device. It doesn't follow you to another device, and clearing browser data
+deletes it. Sign-in with an `@iitj.ac.in` Google account, with progress saved to a
+database, is planned for v2.0.
+
+**Answer options are shuffled every time a question is shown**, so the position of the
+right answer tells you nothing. The content imported from the Quiz 1 site had 76% of its
+answers on option B. Options that refer to the others ("Both", "Neither", "All three")
+stay at the end, and a question marked `keep` is shown exactly as written.
 
 ## Layout
 
@@ -80,8 +86,9 @@ Every question, trap and definition has a permanent ID (`foc-q0012`, `ebh-t0003`
   q:"Question text",        // plain text: write “ ” — → as characters, not HTML entities
   c:["A","B","C","D"],
   a:[1],                    // indices into c
-  w:"Why this is the answer.",
+  w:"Why this is the answer.",   // name options by content, never "option 2": options are shuffled
   o:true,                   // optional: taken from the course's own slides
+  keep:true,                // optional: show options in the written order (e.g. the DIKW ladder)
   multi:true }              // optional: more than one correct answer
 ```
 
@@ -108,6 +115,9 @@ python3 tools/build-offline.py
 
 Full history in [`CHANGELOG.md`](CHANGELOG.md). Most recent:
 
+- **[1.1.0] — 2026-10-04**: answer options shuffle on every showing, which fixes the 76%-on-B
+  bias inherited from the Quiz 1 site. Adds a Home link on every page and removes backup and
+  restore from *My data*.
 - **[1.0.0] — 2026-10-04**: first release. Imports all six Semester 1 courses (570
   questions) from the Quiz 1 repo with permanent IDs, and adds topic practice, flashcards,
   the question bank, mock papers and mistake revision.
