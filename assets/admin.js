@@ -6,7 +6,7 @@
    checks is_admin() in the database, so a student who opens #/admin
    gets nothing back.
 
-   Tabs: overview · cohort weak spots · students · requests · announcements · quiz dates
+   Tabs: overview · cohort weak spots · students · requests · announcements · quiz dates · AI test
    =================================================================== */
 (function () {
 "use strict";
@@ -15,7 +15,7 @@ const H = window.HUB, CL = H.cloud;
 if (!H.ui || !CL) return;
 const { esc, crumbs, link, fmtDate, fmtTime, fmtDay, plural, META, SLUGS, QBY, $, $$ } = H.ui;
 const app = document.getElementById("app");
-const TABS = [["overview", "Overview"], ["weak", "Cohort weak spots"], ["students", "Students"], ["requests", "Requests"], ["news", "Announcements"], ["dates", "Quiz dates"]];
+const TABS = [["overview", "Overview"], ["weak", "Cohort weak spots"], ["students", "Students"], ["requests", "Requests"], ["news", "Announcements"], ["dates", "Quiz dates"], ["aitest", "AI test"]];
 const REQ = { access: "See what's held", correct: "Correct something", delete: "Delete data", grievance: "Complaint", other: "Other" };
 
 /* IST <-> <input type="datetime-local"> */
@@ -34,7 +34,7 @@ H.views.admin = function (p) {
     <nav><div class="navrow">${TABS.map(([k, l]) => `<a href="${link("admin", { tab: k })}"${k === tab ? ' aria-current="true"' : ""}>${l}</a>`).join("")}</div></nav>
     <section class="tight" id="pane"><p class="hint">Loading…</p></section>`;
   const pane = $("#pane");
-  ({ overview, weak, students, requests, news, dates })[tab](pane, p);
+  ({ overview, weak, students, requests, news, dates, aitest })[tab](pane, p);
 };
 
 /* ---------------- overview ---------------- */
@@ -139,6 +139,229 @@ async function requests(pane) {
       requests(pane);
     }));
   } catch (e) { fail(pane, e); }
+}
+
+/* ---------------- AI model test (specs/ai-beta.md §6) ----------------
+   Four models write the same questions from the same notes; Claude Opus 5
+   answers every one blind as referee; the admin then blind-reviews a
+   sample. Runs through the ai-pilot Edge Function, which holds the keys. */
+const PILOT = {
+  models: [["opus", "Claude Opus 5"], ["sonnet", "Claude Sonnet 5"], ["gemini-pro", "Gemini 3.1 Pro"], ["gemini-flash", "Gemini 3.8 Flash"]],
+  units: [
+    ["foundations-of-computing", "ifs"], ["foundations-of-computing", "dicts"],
+    ["economic-business-history", "labour"], ["economic-business-history", "systems"],
+    ["algorithmic-thinking-in-business", "graphs"], ["algorithmic-thinking-in-business", "hashing"],
+    ["financial-accounting", "income-statement"], ["financial-accounting", "adjusting"],
+    ["statistics-for-managers", "sampling"], ["statistics-for-managers", "dists"],
+    ["principles-of-marketing", "cb"], ["principles-of-marketing", "strategy"]
+  ],
+  perUnit: 5, perModelReview: 20
+};
+const RULE = { maxWrongKeys: 0, maxAmbiguousRate: 0.1, maxRefereeReject: 0.15 };
+const pilotRun = () => { try { return localStorage.getItem("bsmt-hub:pilot-run") || ""; } catch (e) { return ""; } };
+const invoke = async body => {
+  const { data, error } = await CL.sb.functions.invoke("ai-pilot", { body });
+  if (error) {
+    let msg = error.message;
+    try { const j = await error.context.json(); msg = j.error || msg; } catch (e) {}
+    throw new Error(msg);
+  }
+  return data;
+};
+const usd = n => "$" + Number(n).toFixed(n < 1 ? 3 : 2);
+
+async function aitest(pane, p) {
+  const run = pilotRun();
+  pane.innerHTML = `<p class="lede">The model test: ${PILOT.models.length} models write ${PILOT.perUnit} questions each from the same
+    ${PILOT.units.length} notes units, and Claude Opus 5 answers every question blind as referee. Then you review
+    ${PILOT.perModelReview * PILOT.models.length} of them without knowing which model wrote which.</p>
+    <div class="drillbar">
+      <a class="btn ${!p.view || p.view === "run" ? "" : "ghost"} sm" href="${link("admin", { tab: "aitest" })}">Run &amp; results</a>
+      <a class="btn ${p.view === "review" ? "" : "ghost"} sm" href="${link("admin", { tab: "aitest", view: "review" })}">Blind review</a>
+      <a class="btn ${p.view === "verdict" ? "" : "ghost"} sm" href="${link("admin", { tab: "aitest", view: "verdict" })}">Verdict</a>
+      <span class="score">${run ? "Run " + esc(run) : "No run yet"}</span>
+    </div><div id="ait"></div>`;
+  const el = $("#ait");
+  if (p.view === "review") return pilotReview(el, run);
+  if (p.view === "verdict") return pilotVerdict(el, run);
+  return pilotRunView(el, run);
+}
+
+async function pilotLoad(run) {
+  const [calls, items, reviews] = await Promise.all([
+    CL.table("ai_pilot_calls").select("*").eq("run", run),
+    CL.table("ai_pilot_items").select("*").eq("run", run).order("id"),
+    CL.table("ai_pilot_reviews").select("*, ai_pilot_items!inner(run)").eq("ai_pilot_items.run", run).order("pos")
+  ]);
+  for (const r of [calls, items, reviews]) if (r.error) throw r.error;
+  return { calls: calls.data, items: items.data, reviews: reviews.data };
+}
+
+function pilotStats(calls, items, model, course) {
+  const its = items.filter(i => i.model === model && (!course || i.course === course));
+  const gen = calls.filter(c => c.role === "generate" && c.model === model && (!course || c.course === course));
+  const fmt = its.filter(i => i.checks.format_ok), judged = fmt.filter(i => i.referee);
+  const genCost = gen.reduce((s, c) => s + Number(c.cost_usd), 0);
+  return {
+    n: its.length, calls: gen.length, failed: gen.filter(c => !c.ok).length,
+    formatOk: fmt.length, quote: its.filter(i => i.checks.quote_found).length, dup: its.filter(i => i.checks.near_duplicate_of).length,
+    judged: judged.length, agree: judged.filter(i => i.referee.agrees).length, ambiguous: judged.filter(i => i.referee.ambiguous).length,
+    genCost, ms: gen.filter(c => c.ok).reduce((s, c) => s + c.ms, 0) / Math.max(1, gen.filter(c => c.ok).length)
+  };
+}
+const pct = (a, b) => b ? Math.round(a * 100 / b) + "%" : "—";
+
+async function pilotRunView(el, run) {
+  let data = { calls: [], items: [], reviews: [] };
+  if (run) { try { data = await pilotLoad(run); } catch (e) { return fail(el, e); } }
+  const done = new Set(data.calls.filter(c => c.role === "generate" && c.ok).map(c => c.model + "|" + c.course + "|" + c.unit));
+  const total = PILOT.models.length * PILOT.units.length;
+  const spent = data.calls.reduce((s, c) => s + Number(c.cost_usd), 0);
+  const refSpent = data.calls.filter(c => c.role === "referee").reduce((s, c) => s + Number(c.cost_usd), 0);
+  el.innerHTML = `<div class="card">
+      <h3 class="subhead" style="margin-top:0">${run ? `${done.size} of ${total} batches done` : "Ready to run"}</h3>
+      <p class="hint">Spent so far ${usd(spent)} (referee ${usd(refSpent)}). Each provider stops itself at $9 for a run, under your $10 limits.
+        Expected total: roughly $6–8 at Anthropic and $1–2 at Google.</p>
+      <div class="actions" style="margin-top:10px">
+        <button class="btn" id="go">${run && done.size ? (done.size < total ? "Resume the test" : "Run finished") : "Start the test"}</button>
+        ${run ? `<button class="btn ghost sm" id="fresh">Start a fresh run</button>` : ""}
+        <button class="btn ghost sm" id="prev">Preview one unit's notes (free)</button>
+      </div>
+      <pre id="log" class="pilotlog" hidden></pre></div>
+    ${data.items.length ? `<h3 class="subhead">Automatic results</h3><div class="scroller"><table><thead><tr>
+      <th>Model</th><th>Questions</th><th>Format OK</th><th>Quote found in notes</th><th>Near-duplicate</th>
+      <th>Referee agrees</th><th>Referee: ambiguous</th><th>Cost to write</th><th>Per 10 Q</th><th>Avg time</th></tr></thead><tbody>
+      ${PILOT.models.map(([k, name]) => { const s = pilotStats(data.calls, data.items, k);
+        return `<tr><td><b>${name}</b>${s.failed ? ` <span class="lbl weak">${s.failed} failed</span>` : ""}</td><td>${s.n}</td><td>${pct(s.formatOk, s.n)}</td><td>${pct(s.quote, s.n)}</td>
+          <td>${pct(s.dup, s.n)}</td><td>${pct(s.agree, s.judged)}</td><td>${pct(s.ambiguous, s.judged)}</td>
+          <td>${usd(s.genCost)}</td><td>${s.n ? usd(s.genCost / s.n * 10) : "—"}</td><td>${(s.ms / 1000).toFixed(0)}s</td></tr>`; }).join("")}
+      </tbody></table></div>
+      <p class="hint" style="margin-top:8px">Opus is also the referee, so "Referee agrees" may flatter Opus slightly. That's the fixed-referee trade-off we accepted; your blind review is the check on it.</p>` : ""}`;
+
+  $("#prev").addEventListener("click", async () => {
+    const log = $("#log"); log.hidden = false; log.textContent = "Loading…";
+    try { const r = await invoke({ action: "preview", run: "preview", course: PILOT.units[0][0], unit: PILOT.units[0][1] });
+      log.textContent = `${r.title}: ${r.chars} characters of notes, ${r.bank} existing bank questions.\n\n${r.text}`; }
+    catch (e) { log.textContent = "Couldn't preview: " + e.message; }
+  });
+  const fresh = $("#fresh");
+  if (fresh) fresh.addEventListener("click", () => { if (confirm("Start a new run? The old run's results stay in the database.")) { try { localStorage.removeItem("bsmt-hub:pilot-run"); } catch (e) {} pilotRunView(el, ""); } });
+  $("#go").addEventListener("click", async () => {
+    let r = run;
+    if (!r) { r = "pilot-" + new Date().toISOString().slice(0, 16).replace(/[-:T]/g, "").toLowerCase(); try { localStorage.setItem("bsmt-hub:pilot-run", r); } catch (e) {} }
+    const go = $("#go"); go.disabled = true; go.textContent = "Running… keep this tab open";
+    const log = $("#log"); log.hidden = false; log.textContent = "";
+    const say = t => { log.textContent += t + "\n"; log.scrollTop = log.scrollHeight; };
+    // one queue per provider, so Anthropic and Google run side by side
+    const jobs = PILOT.models.flatMap(([k]) => PILOT.units.map(([c, u]) => ({ k, c, u })))
+      .filter(j => !done.has(j.k + "|" + j.c + "|" + j.u));
+    const lanes = { anthropic: jobs.filter(j => j.k === "opus" || j.k === "sonnet"), google: jobs.filter(j => j.k.startsWith("gemini")) };
+    let stop = false;
+    const lane = async list => {
+      for (const j of list) {
+        if (stop) return;
+        const tag = `${j.k.padEnd(12)} ${META[j.c].short} · ${j.u}`;
+        try {
+          const g = await invoke({ action: "generate", run: r, model: j.k, course: j.c, unit: j.u, n: PILOT.perUnit });
+          if (!g.ok) { say(`✗ ${tag}: ${g.error}`); continue; }
+          say(`✓ ${tag}: ${g.count} questions, ${usd(g.cost_usd)}, ${(g.ms / 1000).toFixed(0)}s`);
+          const f = await invoke({ action: "referee", run: r, ids: g.ids });
+          say(f.ok ? `  referee judged ${f.judged}, ${usd(f.cost_usd)}` : `  ✗ referee: ${f.error}`);
+        } catch (e) {
+          say(`✗ ${tag}: ${e.message}`);
+          if (/spend cap|admin only/.test(e.message)) { stop = true; say("Stopped."); }
+        }
+      }
+    };
+    await Promise.all([lane(lanes.anthropic), lane(lanes.google)]);
+    say("Done.");
+    setTimeout(() => pilotRunView(el, r), 800);
+  });
+}
+
+/* the blind sample: per model, spread across courses, from questions a student would actually see */
+async function pilotBuildSample(run, items) {
+  const courses = [...new Set(PILOT.units.map(u => u[0]))];
+  const picks = [];
+  PILOT.models.forEach(([k]) => {
+    const base = Math.floor(PILOT.perModelReview / courses.length), extra = PILOT.perModelReview % courses.length;
+    courses.forEach((c, ci) => {
+      const pool = items.filter(i => i.model === k && i.course === c && i.checks.format_ok && i.referee && i.referee.agrees)
+        .sort(() => Math.random() - 0.5);
+      picks.push(...pool.slice(0, base + (ci < extra ? 1 : 0)));
+    });
+  });
+  const order = picks.map(i => i.id).sort(() => Math.random() - 0.5);
+  const { error } = await CL.table("ai_pilot_reviews").insert(order.map((id, pos) => ({ item_id: id, pos })));
+  if (error) throw error;
+}
+
+async function pilotReview(el, run) {
+  if (!run) { el.innerHTML = `<div class="empty">Run the test first.</div>`; return; }
+  let data;
+  try { data = await pilotLoad(run); } catch (e) { return fail(el, e); }
+  if (!data.reviews.length) {
+    el.innerHTML = `<div class="empty"><b>No review sample yet.</b> It takes up to ${PILOT.perModelReview} questions per model, spread across the six courses,
+      from the questions that passed the automatic checks and the referee: the ones a student would actually see. Model names are hidden and the order is shuffled.
+      <div class="actions" style="margin-top:12px"><button class="btn" id="mk">Build the review sample</button></div></div>`;
+    $("#mk").addEventListener("click", async () => { try { await pilotBuildSample(run, data.items); pilotReview(el, run); } catch (e) { fail(el, e); } });
+    return;
+  }
+  const byId = Object.fromEntries(data.items.map(i => [i.id, i]));
+  const todo = data.reviews.filter(r => r.reviewed_at == null);
+  if (!todo.length) { el.innerHTML = `<div class="empty"><b>All ${data.reviews.length} reviewed.</b> Thank you. <a href="${link("admin", { tab: "aitest", view: "verdict" })}">See the verdict →</a></div>`; return; }
+  const r = todo[0], it = byId[r.item_id], q = it.item;
+  const n = data.reviews.length - todo.length + 1;
+  el.innerHTML = `<div class="card">
+    <div class="qmeta"><span class="qnum">${n} / ${data.reviews.length}</span><span class="qtopic">${esc(META[it.course].short)} · ${esc(it.unit)}</span><span class="qtopic">${esc(q.kind)}</span></div>
+    <p class="qtext">${esc(q.question)}</p>
+    <div class="opts">${q.options.map((o, k) => `<div class="opt${k === q.answer_index ? " right" : ""}"><span class="k">${"ABCD"[k]}</span><span>${esc(o)}${k === q.answer_index ? " <b>(the key)</b>" : ""}</span></div>`).join("")}</div>
+    <div class="why"><b>Explanation:</b> ${esc(q.explanation)}<br><b>Quoted from the notes:</b> “${esc(q.source_quote)}”${it.checks.quote_found ? "" : " <i>(not found word-for-word in the notes)</i>"}</div>
+    <form id="rv" class="aform" style="margin-top:14px">
+      <div class="row">
+        <label>Is the key correct?<select name="key_ok" required><option value="">—</option><option value="true">Yes</option><option value="false">No</option></select></label>
+        <label>Only one defensible answer?<select name="single" required><option value="">—</option><option value="true">Yes</option><option value="false">No</option></select></label>
+        <label>Grounded in the notes?<select name="grounded" required><option value="">—</option><option value="true">Yes</option><option value="false">No</option></select></label>
+        <label>Wrong options tempting?<select name="distractors" required><option value="">—</option><option value="3">3: tempting</option><option value="2">2: some</option><option value="1">1: obvious</option></select></label>
+      </div>
+      <label>Note (optional)<input name="note" maxlength="1000"></label>
+      <div class="actions"><button class="btn" type="submit">Save &amp; next</button><a class="btn ghost sm" href="${link("c/" + it.course, { tab: "notes", u: it.unit })}" target="_blank">Open the notes</a><span class="hint amsg"></span></div>
+    </form></div>`;
+  $("#rv").addEventListener("submit", async e => {
+    e.preventDefault();
+    const f = new FormData(e.target);
+    const { error } = await CL.table("ai_pilot_reviews").update({ key_ok: f.get("key_ok") === "true", single: f.get("single") === "true",
+      grounded: f.get("grounded") === "true", distractors: +f.get("distractors"), note: f.get("note") || null, reviewed_at: new Date().toISOString() }).eq("item_id", r.item_id);
+    if (error) { e.target.querySelector(".amsg").textContent = error.message; return; }
+    pilotReview(el, run);
+  });
+}
+
+async function pilotVerdict(el, run) {
+  if (!run) { el.innerHTML = `<div class="empty">Run the test first.</div>`; return; }
+  let data;
+  try { data = await pilotLoad(run); } catch (e) { return fail(el, e); }
+  const byId = Object.fromEntries(data.items.map(i => [i.id, i]));
+  const done = data.reviews.filter(r => r.reviewed_at);
+  const courses = [...new Set(PILOT.units.map(u => u[0]))];
+  const cell = (k, c) => {
+    const s = pilotStats(data.calls, data.items, k, c);
+    const rv = done.filter(r => byId[r.item_id].model === k && byId[r.item_id].course === c);
+    const wrong = rv.filter(r => !r.key_ok).length, amb = rv.filter(r => !r.single).length;
+    const reject = s.judged ? 1 - s.agree / s.judged : 1;
+    const pass = rv.length > 0 && wrong <= RULE.maxWrongKeys && amb / rv.length <= RULE.maxAmbiguousRate && reject < RULE.maxRefereeReject;
+    return { pass, wrong, amb, n: rv.length, reject, cost10: s.n ? s.genCost / s.n * 10 : Infinity };
+  };
+  el.innerHTML = `<p class="lede">The rule we fixed before the results: a model qualifies for a course if your sample has no wrong keys, at most 1 in 10 ambiguous,
+    and the referee rejected under 15% of its questions. Among qualifying models, the cheapest wins. ${done.length < data.reviews.length ? `<b>${data.reviews.length - done.length} reviews still to do</b>, so this is provisional.` : ""}</p>
+    <div class="scroller"><table><thead><tr><th>Course</th>${PILOT.models.map(([, n]) => `<th>${n}</th>`).join("")}<th>Pick</th></tr></thead><tbody>
+    ${courses.map(c => { const cells = PILOT.models.map(([k]) => [k, cell(k, c)]);
+      const ok = cells.filter(([, x]) => x.pass).sort((a, b) => a[1].cost10 - b[1].cost10);
+      return `<tr><td><b>${esc(META[c].short)}</b></td>${cells.map(([, x]) => `<td><span class="lbl ${x.pass ? "strong" : "weak"}">${x.pass ? "pass" : "fail"}</span><br>
+        <span class="hint">${x.n} reviewed · ${x.wrong} wrong key · ${x.amb} ambiguous · referee rejected ${Math.round(x.reject * 100)}% · ${isFinite(x.cost10) ? usd(x.cost10) : "—"}/10Q</span></td>`).join("")}
+        <td><b>${ok.length ? PILOT.models.find(m => m[0] === ok[0][0])[1] : "none qualifies"}</b></td></tr>`; }).join("")}
+    </tbody></table></div>
+    ${done.some(r => r.note) ? `<h3 class="subhead">Your notes</h3>${done.filter(r => r.note).map(r => `<p class="hint">· ${esc(META[byId[r.item_id].course].short)} (${esc(byId[r.item_id].model)}): ${esc(r.note)}</p>`).join("")}` : ""}`;
 }
 
 /* ---------------- announcements ---------------- */

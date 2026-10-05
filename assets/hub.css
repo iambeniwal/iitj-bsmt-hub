@@ -584,3 +584,5 @@ td .qid{font-family:var(--mono);font-size:11px;color:var(--blue);text-decoration
 .rq{border-top:1px dotted var(--rule-2);padding:10px 0}
 .rq p{font-size:14.5px;color:var(--ink-2);white-space:pre-wrap}
 .rq .why{margin-top:8px}
+/* admin: AI test log */
+.pilotlog{margin-top:12px;max-height:260px;overflow:auto;font-size:12px;white-space:pre-wrap}
