@@ -68,8 +68,42 @@ follows. Change a decision here first, then in code.
 - **Passing rule, fixed before results:** for each course, a model qualifies if its sample
   has 0 wrong keys, at most 1 in 10 ambiguous, and under 15% rejected by the referee. Use
   **the cheapest qualifying model per course**.
-- The provider and model are **swappable per course from Admin**. Which model re-solves
-  during the beta is decided after the test.
+- The provider and model are **swappable per course from Admin**.
+
+### Result (5 October 2026)
+
+- **Two runs**, 480 questions in all, 0 failed calls. Total cost $14.56: Anthropic $10.95
+  (including the referee), Google $2.85, OpenAI $0.76.
+- **The human blind review was replaced by an independent AI reviewer**, OpenAI
+  `gpt-6.1-sol` (not a contestant), because judging Quiz 2 material needs someone who
+  already knows it. It used the same rubric and notes, blind to which model wrote what, with
+  a reason for every verdict. Both runs' samples were reviewed: 160 questions, 6–8 per
+  course and model. As a cross-check, every calculation key in run 2's sample was verified
+  independently by running the code and redoing the arithmetic: 30/30 correct.
+- **Wrong keys: one flagged in 160** (Gemini Pro, hashing). On inspection the key is
+  defensible ("a deliberately slow password hash makes lookups severely delayed"), so the
+  flag is the reviewer being strict. Referee agreement across all 480 was about 99%.
+- **Verdict by the fixed rule, both runs combined.** Not overridden, even where Claude
+  would have judged a borderline "ambiguous" differently. Overriding the independent
+  reviewer would bring back the bias it was there to remove.
+
+  | Course | Writer | Notes |
+  |---|---|---|
+  | FoC, EBH, ATB, SfM | **Gemini 3.8 Flash** | passes; about $0.04–0.09 per 10 Q |
+  | FA | **Claude Sonnet 5** | Flash 1 ambiguous in 6 (deferrals vs accruals, borderline) |
+  | PoM | **Claude Sonnet 5** | Flash 1 ambiguous in 6 (overlapping journey capabilities, fair) |
+
+- **Referees: a different provider from the writer**, so their errors are less correlated.
+  **Claude Sonnet 5** referees the Flash courses; **Gemini 3.1 Pro** referees FA and PoM
+  (Sonnet shouldn't check its own questions). About ₹10 per batch of 10 for the Flash
+  courses and ₹19 for FA and PoM, writing plus checking.
+- **Watch in the beta:** Gemini 3.8 Flash's price doubles on 1 January 2027 (still the
+  cheapest); Gemini 3.1 Pro is a preview model. Admin can switch any course's models if
+  report rates disagree with this verdict.
+- **Carry into the beta:** models re-use the notes' worked examples (four variants of the
+  metro-fare problem in one sample), so near-duplicate checks must also run within each
+  student's own pool. Explanations can be wrong even when the key is right: one cited two
+  laptops the question never mentioned. Only student reports catch that.
 
 ## 7. Knowledge base
 
