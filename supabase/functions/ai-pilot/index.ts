@@ -65,7 +65,14 @@ async function loadCourse(slug: string): Promise<Course> {
 }
 
 const ENT: Record<string, string> = { amp: "&", lt: "<", gt: ">", quot: '"', nbsp: " ", mdash: "—", ndash: "–", rarr: "→", larr: "←", times: "×", minus: "−", middot: "·", hellip: "…", ldquo: "“", rdquo: "”", lsquo: "‘", rsquo: "’" };
+const decode = (s: string) => s.replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n)).replace(/&([a-z]+);/g, (m, n) => ENT[n] ?? m);
 function htmlToText(h: string): string {
+  // code blocks keep their whitespace exactly: in Python the indentation is the meaning
+  const pres: string[] = [];
+  h = h.replace(/<pre[^>]*>([\s\S]*?)<\/pre>/gi, (_, body: string) => {
+    pres.push(decode(body.replace(/<br\s*\/?>/gi, "\n").replace(/<[^>]+>/g, "")).replace(/^\n+|\s+$/g, ""));
+    return `\n\u0000${pres.length - 1}\u0000\n`;
+  });
   return h
     .replace(/<(svg|script|style)[\s\S]*?<\/\1>/gi, " ")
     .replace(/<br\s*\/?>/gi, "\n")
@@ -77,6 +84,7 @@ function htmlToText(h: string): string {
     .replace(/&([a-z]+);/g, (m, n) => ENT[n] ?? m)
     .replace(/[ \t]+/g, " ")
     .replace(/\n\s*\n+/g, "\n")
+    .replace(/\u0000(\d+)\u0000/g, (_, i) => "```\n" + pres[+i] + "\n```")
     .trim();
 }
 function unitNotes(c: Course, unitId: string) {
