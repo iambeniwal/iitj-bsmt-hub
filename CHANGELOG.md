@@ -10,6 +10,34 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.2.3] — 2026-10-05
+
+### Added
+- **The lecture attachments the 2.2.0 import missed.** That import read each lecture's
+  transcript and notes, but not its separate attachments list or every linked file. Now
+  added from the source material:
+  - **Economic & Business History, Lectures 17–19 (slide decks).** Names, statutes and dates the
+    transcripts garbled or missed (Francis Place, the 1426 and 1542 acts in the 1824 repeal,
+    Jamestown 1607, the East India Company's 1600 charter), plus 11 questions. Where a slide
+    and the spoken lecture differ, both are shown: phase two is 1824–1830s on the slides and
+    1824–1830 in speech. The repealed laws span 520 years, not "roughly 500".
+  - **Algorithmic Thinking, Live Lecture 4 deck ("Trees and Graphs").** Why BFS gives the
+    fewest hops, why a stack- or queue-based traversal must skip visited vertices on a
+    graph with cycles, the subtree-and-height diagram, and 4 questions.
+  - **Statistics, Lecture 20: the lecturer's Chapter 7 practice questions,** all 12 solved in
+    a new topic, plus 8 new MCQs in the same style. **Lecture 16:** the official Go Bananas case
+    sheet. Every figure already in the hub matched it, and the full case details and the
+    exact answer to report question 3 (at or below about 5.42%) are now added.
+  - **Principles of Marketing, Lectures 20–21: the two McKinsey readings,** with their figures,
+    a refrigerator-journey diagram and 10 questions.
+
+### Fixed
+- **The Lecture 20 reading was described as the wrong article.** The hub summarised
+  McKinsey's original 2009 consumer-decision-journey article. The lecture links the 2015
+  update by Edelman and Singer. The four-phase model is now credited to the 2009 article
+  (Court, Elzinga, Mulder, Vetvik), and the 2015 argument is added: brands can shape the
+  journey and compress it straight to loyalty, through four capabilities.
+
 ## [2.2.2] — 2026-10-05
 
 ### Fixed

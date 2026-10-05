@@ -370,7 +370,7 @@ HUB.addCourse({
     {
      "t": "When buyers skip, reverse and loop",
      "src": "L#20",
-     "h": "<div class=\"def\">The five stages are <b>linear in theory</b>, and as theory he called that correct. In day-to-day buying, people <b>skip</b> stages, <b>reverse</b> to earlier ones and <b>loop</b> back when new information or feedback arrives.</div><div class=\"scroller\"><table><thead><tr><th>Pattern</th><th>His example</th><th>What happened to the stages</th></tr></thead><tbody><tr><td><strong>Skip</strong></td><td>His mother rings: pick up ketchup on the way home</td><td>No need recognition and no search: he was told exactly what to buy. At most a quick look at the shelf, then purchase. Post-purchase: convenient enough</td></tr><tr><td><strong>Skip three</strong></td><td>Walking past a Zara at 70% off before Diwali and buying a blazer</td><td>No need, no search, no real comparison: <strong>straight to purchase</strong>. Post-purchase guilt follows (“will it even fit next season?”)</td></tr><tr><td><strong>Reverse</strong></td><td>The shampoo again</td><td>While evaluating, he hears L’Oréal’s own stores give 20% off and goes <strong>back to search</strong>. There a long-time user says it did nothing for her hair. Is a ₹3,000 shampoo needed when a ₹300 one cleans the scalp? That is <strong>back to need recognition</strong></td></tr><tr><td><strong>Loop</strong></td><td>Any of the above</td><td>New information, changed circumstances or others’ feedback send the buyer round again</td></tr></tbody></table></div><div class=\"def\"><b>From the lecture (L#20):</b> consumer decision making “theoretically follows a linear path”, but whether real journeys are linear is the debate. He set a 15-minute reading on it, McKinsey’s <em>The new consumer decision journey</em>, and asked students to decide for themselves: linear or non-linear?</div><details><summary>The reading in brief (summary of the article, not lecture content)</summary><p>The McKinsey article (Court and colleagues, 2009) replaces the narrowing funnel with a <strong>circular journey</strong>. A buyer starts with an initial consideration set and keeps adding as well as dropping brands during <strong>active evaluation</strong>. The buyer then chooses at the <strong>moment of purchase</strong>. The <strong>post-purchase experience</strong> shapes the next decision, and when it is good it can form a loyalty loop that skips straight back to the same brand. Link: <code>mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-new-consumer-decision-journey</code></p></details><!--viz:pom-skip-reverse-paths--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three rows of stages. The ketchup errand skips need and search. The discounted blazer skips need, search and evaluation and ends in post-purchase guilt. The shampoo journey goes from evaluation back to search and then back to need.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Three journeys that break the straight line</div><p style=\"font-size:13.5px;margin:10px 0 4px\"><b>Ketchup errand</b> · <span style=\"color:var(--ink-2)\">someone else recognised the need</span></p><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;font-size:14px\"><div style=\"padding:7px 11px;border:1px dashed var(--rule-2);border-radius:4px;background:var(--surface-2);color:var(--ink-3)\"><s>Need</s></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px dashed var(--rule-2);border-radius:4px;background:var(--surface-2);color:var(--ink-3)\"><s>Search</s></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Evaluate</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Purchase</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Post-purchase</div></div><p style=\"font-size:13.5px;margin:10px 0 4px\"><b>70%-off blazer</b> · <span style=\"color:var(--ink-2)\">straight to purchase</span></p><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;font-size:14px\"><div style=\"padding:7px 11px;border:1px dashed var(--rule-2);border-radius:4px;background:var(--surface-2);color:var(--ink-3)\"><s>Need</s></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px dashed var(--rule-2);border-radius:4px;background:var(--surface-2);color:var(--ink-3)\"><s>Search</s></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px dashed var(--rule-2);border-radius:4px;background:var(--surface-2);color:var(--ink-3)\"><s>Evaluate</s></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Purchase</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">Post-purchase</div></div><p style=\"font-size:13.5px;margin:10px 0 4px\"><b>Shampoo, second time</b> · <span style=\"color:var(--ink-2)\">goes backwards</span></p><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Need</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Search</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Evaluate</b></div><span style=\"color:var(--clay)\">↩</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">Search<br><span style=\"color:var(--ink-2);font-size:13px\">store offers 20% off</span></div><span style=\"color:var(--clay)\">↩</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">Need?<br><span style=\"color:var(--ink-2);font-size:13px\">“do I need a ₹3,000 shampoo?”</span></div></div><p style=\"font-size:13.5px;color:var(--ink-2);margin:8px 0 0\">Struck-through = skipped · ↩ = going back to an earlier stage.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Linear in theory; in real purchases stages get skipped or revisited.</figcaption></figure><!--/viz:pom-skip-reverse-paths-->"
+     "h": "<div class=\"def\">The five stages are <b>linear in theory</b>, and as theory he called that correct. In day-to-day buying, people <b>skip</b> stages, <b>reverse</b> to earlier ones and <b>loop</b> back when new information or feedback arrives.</div><div class=\"scroller\"><table><thead><tr><th>Pattern</th><th>His example</th><th>What happened to the stages</th></tr></thead><tbody><tr><td><strong>Skip</strong></td><td>His mother rings: pick up ketchup on the way home</td><td>No need recognition and no search: he was told exactly what to buy. At most a quick look at the shelf, then purchase. Post-purchase: convenient enough</td></tr><tr><td><strong>Skip three</strong></td><td>Walking past a Zara at 70% off before Diwali and buying a blazer</td><td>No need, no search, no real comparison: <strong>straight to purchase</strong>. Post-purchase guilt follows (“will it even fit next season?”)</td></tr><tr><td><strong>Reverse</strong></td><td>The shampoo again</td><td>While evaluating, he hears L’Oréal’s own stores give 20% off and goes <strong>back to search</strong>. There a long-time user says it did nothing for her hair. Is a ₹3,000 shampoo needed when a ₹300 one cleans the scalp? That is <strong>back to need recognition</strong></td></tr><tr><td><strong>Loop</strong></td><td>Any of the above</td><td>New information, changed circumstances or others’ feedback send the buyer round again</td></tr></tbody></table></div><div class=\"def\"><b>From the lecture (L#20):</b> consumer decision making “theoretically follows a linear path”, but whether real journeys are linear is the debate. He set a 15-minute reading on it, McKinsey’s <em>The new consumer decision journey</em>, and asked students to decide for themselves: linear or non-linear?</div><details><summary>The reading in brief (from the article itself, not lecture content)</summary><p>The link opens David Edelman and Marc Singer, <em>The new consumer decision journey</em> (McKinsey, October 2015). It <strong>updates</strong> an earlier McKinsey article: David Court, Dave Elzinga, Susan Mulder and Ole Jørgen Vetvik, <em>The consumer decision journey</em> (2009). <em>Corrected 5 Oct 2026: this box used to present the 2009 article as the reading.</em></p><p><strong>The 2009 model, which the 2015 article recaps:</strong> the narrowing funnel gives way to a <strong>circular journey</strong>. A buyer starts with an initial consideration set and keeps adding as well as dropping brands during <strong>active evaluation</strong>. The buyer then chooses at the <strong>moment of purchase</strong>. The <strong>post-purchase experience</strong> shapes the next decision, and when it is good it can form a <strong>loyalty loop</strong> that skips straight back to the same brand.</p><p><strong>What the 2015 reading adds:</strong> brands need not just react to that journey. They can <strong>shape</strong> it, compressing or even removing consideration and evaluation so the customer goes straight to the loyalty phase. Details below, under “The linked reading: shaping the journey (2015)”.</p><p>Link: <code>mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-new-consumer-decision-journey</code></p></details><!--viz:pom-skip-reverse-paths--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three rows of stages. The ketchup errand skips need and search. The discounted blazer skips need, search and evaluation and ends in post-purchase guilt. The shampoo journey goes from evaluation back to search and then back to need.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Three journeys that break the straight line</div><p style=\"font-size:13.5px;margin:10px 0 4px\"><b>Ketchup errand</b> · <span style=\"color:var(--ink-2)\">someone else recognised the need</span></p><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;font-size:14px\"><div style=\"padding:7px 11px;border:1px dashed var(--rule-2);border-radius:4px;background:var(--surface-2);color:var(--ink-3)\"><s>Need</s></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px dashed var(--rule-2);border-radius:4px;background:var(--surface-2);color:var(--ink-3)\"><s>Search</s></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Evaluate</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Purchase</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Post-purchase</div></div><p style=\"font-size:13.5px;margin:10px 0 4px\"><b>70%-off blazer</b> · <span style=\"color:var(--ink-2)\">straight to purchase</span></p><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;font-size:14px\"><div style=\"padding:7px 11px;border:1px dashed var(--rule-2);border-radius:4px;background:var(--surface-2);color:var(--ink-3)\"><s>Need</s></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px dashed var(--rule-2);border-radius:4px;background:var(--surface-2);color:var(--ink-3)\"><s>Search</s></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px dashed var(--rule-2);border-radius:4px;background:var(--surface-2);color:var(--ink-3)\"><s>Evaluate</s></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Purchase</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">Post-purchase</div></div><p style=\"font-size:13.5px;margin:10px 0 4px\"><b>Shampoo, second time</b> · <span style=\"color:var(--ink-2)\">goes backwards</span></p><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Need</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Search</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Evaluate</b></div><span style=\"color:var(--clay)\">↩</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">Search<br><span style=\"color:var(--ink-2);font-size:13px\">store offers 20% off</span></div><span style=\"color:var(--clay)\">↩</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">Need?<br><span style=\"color:var(--ink-2);font-size:13px\">“do I need a ₹3,000 shampoo?”</span></div></div><p style=\"font-size:13.5px;color:var(--ink-2);margin:8px 0 0\">Struck-through = skipped · ↩ = going back to an earlier stage.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Linear in theory; in real purchases stages get skipped or revisited.</figcaption></figure><!--/viz:pom-skip-reverse-paths--><h4>The linked reading: shaping the journey (2015)</h4><p><strong>Source:</strong> Edelman and Singer, <em>The new consumer decision journey</em>, McKinsey, 1 Oct 2015 (the Lecture 20 link; summary in our own words). It draws on the authors’ work advising 50+ companies, research on 200+ and conversations with 100+ digital leaders. A fuller version appeared in <em>Harvard Business Review</em> as “Competing on customer journeys” (2015).</p><p><strong>The argument.</strong> Comparison sites, reviews and ad-blockers handed power to consumers. The update says brands can take the initiative back by <strong>designing</strong> the journey instead of chasing it. Done well, a firm can <strong>compress, or even eliminate, the consideration and evaluation phases</strong> and move the customer straight into the <strong>loyalty phase</strong>. The authors see the journey itself becoming the main source of competitive advantage.</p><div class=\"scroller\"><table><thead><tr><th>Capability</th><th>What it does</th><th>The article’s example</th></tr></thead><tbody><tr><td><strong>Automation</strong></td><td>Streamlines or removes manual steps</td><td>Deposit a cheque by photographing it in the bank’s app</td></tr><tr><td><strong>Proactive personalisation</strong></td><td>Uses past or outside data to tailor the experience instantly</td><td>Put a valued traveller straight on the upgrade list</td></tr><tr><td><strong>Contextual interaction</strong></td><td>Uses where the customer is in the journey to serve the next step</td><td>Show a recent order’s status on the home page; a hotel app that works as the room key</td></tr><tr><td><strong>Journey innovation</strong></td><td>Extends the journey into new services and value</td><td>An airline app that books a taxi for when you land</td></tr></tbody></table></div><p><strong>Evidence cited:</strong> in an Association of National Advertisers survey, top-performing marketers were more likely than others to understand the whole journey (20% vs 6%), to have processes that feed customer insight back into marketing (30% vs 11%) and to value automation (30% vs 11%).</p><div class=\"def\"><b>What a manager should do:</b> treat key journeys like <b>products</b>: actively manage, measure and keep improving each one. Automate the tedious steps, personalise from data, serve the next step in context, and look for services that extend the journey. The goal is a journey good enough that the customer stops shopping around.</div><p><strong>Linking it to the lecture’s question (linear or non-linear?):</strong> neither McKinsey article supports the straight funnel. 2009 describes a circular journey; 2015 adds that a firm can engineer a shortcut through it. That is different from the skipping in this topic: the ketchup errand and the discounted blazer are shortcuts the <em>buyer</em> takes, while a compressed journey is one the <em>company</em> designs (a remembered one-tap reorder, say). The L#21 point that an outstanding experience becomes the trigger for buying directly next time is the loyalty loop seen from the buyer’s side.</p>"
     },
     {
      "t": "The messy middle: exploring and evaluating in a loop",
@@ -380,7 +380,7 @@ HUB.addCourse({
     {
      "t": "Marketing works at every stage, not just the till",
      "src": "L#21",
-     "h": "<div class=\"def\"><b>His key takeaway:</b> marketing does <b>not</b> happen only at the point of sale, and the salesperson is not the only place it happens. It can influence <b>almost every point</b> in the consumer’s decision journey.</div><div class=\"scroller\"><table><thead><tr><th>Stage</th><th>How marketing can tip it</th></tr></thead><tbody><tr><td><strong>Trigger / need</strong></td><td>A discount, a celebrity endorsement, an event</td></tr><tr><td><strong>Search</strong></td><td>Finding out that the product you use is the best-selling one in the market</td></tr><tr><td><strong>Evaluate</strong></td><td>Realising your shampoo beats every option you compared</td></tr><tr><td><strong>Buy</strong></td><td>The point of transaction, but only one of the touchpoints</td></tr><tr><td><strong>Post-buy</strong></td><td>Recall, reviews, star ratings. An outstanding experience becomes the <strong>trigger for the next purchase</strong>: next time the buyer goes straight to buying</td></tr></tbody></table></div><p><strong>Trigger as a stage:</strong> some literature adds a trigger before need recognition: <strong>trigger → need → search → evaluate → buy → post-buy</strong>. He said including it is optional, but either way treat the trigger as an important element.</p><p><strong>Reading set:</strong> McKinsey, <em>Marketing consumer durables in India: a journey into the minds of digital-age consumers</em> (15 minutes in the lecture). Link: <code>mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/marketing-consumer-durables-in-india-a-journey-into-the-minds-of-digital-age-consumers</code></p>"
+     "h": "<div class=\"def\"><b>His key takeaway:</b> marketing does <b>not</b> happen only at the point of sale, and the salesperson is not the only place it happens. It can influence <b>almost every point</b> in the consumer’s decision journey.</div><div class=\"scroller\"><table><thead><tr><th>Stage</th><th>How marketing can tip it</th></tr></thead><tbody><tr><td><strong>Trigger / need</strong></td><td>A discount, a celebrity endorsement, an event</td></tr><tr><td><strong>Search</strong></td><td>Finding out that the product you use is the best-selling one in the market</td></tr><tr><td><strong>Evaluate</strong></td><td>Realising your shampoo beats every option you compared</td></tr><tr><td><strong>Buy</strong></td><td>The point of transaction, but only one of the touchpoints</td></tr><tr><td><strong>Post-buy</strong></td><td>Recall, reviews, star ratings. An outstanding experience becomes the <strong>trigger for the next purchase</strong>: next time the buyer goes straight to buying</td></tr></tbody></table></div><p><strong>Trigger as a stage:</strong> some literature adds a trigger before need recognition: <strong>trigger → need → search → evaluate → buy → post-buy</strong>. He said including it is optional, but either way treat the trigger as an important element.</p><p><strong>Reading set:</strong> McKinsey, <em>Marketing consumer durables in India: a journey into the minds of digital-age consumers</em> (15 minutes in the lecture). Link: <code>mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/marketing-consumer-durables-in-india-a-journey-into-the-minds-of-digital-age-consumers</code></p><h4>The linked reading: consumer durables in India (2019)</h4><p><strong>Source:</strong> Agarwal, Brar, Elzinga and Tyagi, <em>Marketing consumer durables in India: a journey into the minds of digital-age consumers</em>, McKinsey, 30 July 2019 (the Lecture 21 link; summary in our own words). The non-linear decision journey was tested with 100,000+ consumers in 450+ Indian cities across 30 brands; the article reports on <strong>refrigerators</strong>.</p><div class=\"def\"><b>The decisive battleground is the initial consideration set (ICS)</b>, the brands a buyer has in mind before searching. <b>70–75% of final purchases</b> went to ICS brands, more than twice the rate for brands considered only later.</div><div class=\"def\"><b>Customer Growth Indicator (CGI)</b> = % of consumers who initially consider a brand ÷ the brand’s market share by actual sales. In most categories CGI explained <b>60–80% of the variation in sales growth</b> between brands: a strong place in the ICS goes with winning share.</div><div class=\"scroller\"><table><thead><tr><th>Finding (refrigerators)</th><th>Key figure</th><th>So what</th></tr></thead><tbody><tr><td><strong>Six consumer segments</strong> with different journeys (e.g. “status leaders”, “tech masters”)</td><td>6 clusters</td><td>Plan journeys per segment, not one average buyer</td></tr><tr><td><strong>Replacement</strong> triggers most purchases</td><td>~70%</td><td>Triggers differ by age and geography</td></tr><tr><td><strong>Loyalty is not guaranteed</strong>: none of the five durables categories studied was loyalty-driven</td><td>20% rebuy without looking at others; half of the other 80% still pick the incumbent (~60% in all)</td><td>Repurchase incentives work, but buying loyalty with outsized spend is risky</td></tr><tr><td><strong>Retail dominates</strong> active evaluation</td><td>~75% visit a brand store (EBO) or multibrand outlet (MBO); two EBOs on average</td><td>Demos and touch-and-feel matter</td></tr><tr><td><strong>Attackers can win at the point of sale</strong></td><td>25% switch brand there</td><td>Brand, price, warranty, features, after-sales service, offers, availability and reviews persuade in store</td></tr><tr><td><strong>Influencers act at every stage</strong></td><td>Up to 80% would consider a new brand on a key influencer’s word</td><td>Family and friends sway evaluation; retailers, salespeople and online reviews drive switching. Status leaders lean on family and friends, tech masters on online reviews</td></tr></tbody></table></div><div class=\"def\"><b>What a manager should do (the article’s recommendations):</b> invest to get into the <b>initial consideration set</b>; build consideration by creating awareness through major media and social, then a website that turns awareness into real consideration; and plan “non-working” spend (the people and technology that create and manage content) across <b>paid, owned and earned</b> media.</div><p><strong>Link to the lecture:</strong> this is the lecture’s takeaway with numbers attached. Marketing works before search starts (the ICS), during evaluation (the store visit), at the till (a quarter switch there) and after purchase (loyalty has to be earned again each time). The replacement trigger is the lecture’s trigger stage at work.</p><!--viz:pom-india-fridge-journey--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Five stacked stages of a refrigerator purchase from McKinsey's 2019 India study: trigger, about 70% replacement; initial consideration, 70 to 75% of purchases go to brands already considered; active evaluation, about 75% visit a brand or multibrand store; moment of purchase, 25% switch brand; next purchase, only 20% rebuy without looking at others and incumbents win about 60%.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">A refrigerator purchase in India, stage by stage</div><div style=\"display:flex;flex-direction:column;gap:4px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Trigger</b> · <b style=\"font-family:var(--mono)\">~70%</b> <span style=\"color:var(--ink-2)\">of purchases start with replacing an old fridge</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1.2\">↓</div><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Initial consideration</b> · <b style=\"font-family:var(--mono)\">70–75%</b> <span style=\"color:var(--ink-2)\">of purchases go to brands already in the set</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1.2\">↓</div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Active evaluation</b> · <b style=\"font-family:var(--mono)\">~75%</b> <span style=\"color:var(--ink-2)\">visit a brand store or multibrand outlet (two brand stores on average)</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1.2\">↓</div><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>Moment of purchase</b> · <b style=\"font-family:var(--mono)\">25%</b> <span style=\"color:var(--ink-2)\">switch brand at the point of sale</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1.2\">↓</div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Next purchase</b> · <b style=\"font-family:var(--mono)\">20%</b> <span style=\"color:var(--ink-2)\">rebuy their brand without looking at others; incumbents still win ~60%</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The biggest lever acts before search begins (the initial consideration set); the store is the second.</figcaption></figure><!--/viz:pom-india-fridge-journey-->"
     },
     {
      "t": "The integrated consumer behaviour framework",
@@ -1034,6 +1034,34 @@ HUB.addCourse({
    "p": "Only the tip (about 10%) is conscious. The preconscious (recallable on a cue) and the unconscious (deep desires, dreams) make up the rest. That is why buyers often can't explain their own choices.",
    "f": "10 above, 90 below",
    "lec": 23
+  },
+  {
+   "id": "pom-t0079",
+   "h": "The Lecture 20 reading is the 2015 update, not the 2009 original",
+   "p": "Court, Elzinga, Mulder and Vetvik (2009) introduced the circular journey: initial consideration, active evaluation, moment of purchase, post-purchase and the loyalty loop. The linked article, Edelman and Singer (2015), recaps that model and adds that brands can shape the journey with four capabilities.",
+   "f": "2009 loop, 2015 shaping",
+   "lec": 20
+  },
+  {
+   "id": "pom-t0080",
+   "h": "A compressed journey is designed by the firm; a skipped stage is the buyer's own shortcut",
+   "p": "In the lecture, buyers skip stages themselves (the ketchup errand, the 70%-off blazer). In the 2015 reading, the company engineers the shortcut, using automation and personalisation so that consideration and evaluation shrink or vanish and the customer lands in the loyalty phase.",
+   "f": "firm compresses, buyer skips",
+   "lec": 20
+  },
+  {
+   "id": "pom-t0081",
+   "h": "“Not loyalty-driven” does not mean incumbents lose most buyers",
+   "p": "In the India refrigerator data only 20% rebought their brand without considering others, but half of the other 80% still chose the incumbent, so incumbents win about 60%. The lesson is that loyalty has to be re-earned, not that it is worthless; the article warns only against buying it with outsized spend.",
+   "f": "20% blind, ~60% overall",
+   "lec": 21
+  },
+  {
+   "id": "pom-t0082",
+   "h": "CGI is initial consideration ÷ market share, not share ÷ consideration",
+   "p": "A brand considered by 30% of buyers with a 15% share has a CGI of 2.0: its consideration runs ahead of its sales, which in the study goes with growth. Dividing the other way round gives 0.5 and the opposite reading.",
+   "f": "consideration over share",
+   "lec": 21
   }
  ],
  "defs": [
@@ -1718,6 +1746,38 @@ HUB.addCourse({
    "term": "Motivators",
    "html": "<b>Motivators</b> (job satisfiers): achievement, recognition, responsibility and growth. Their presence creates satisfaction and motivation.",
    "lec": 23
+  },
+  {
+   "id": "pom-d0088",
+   "unit": "cb",
+   "topic": "When buyers skip, reverse and loop",
+   "term": "Loyalty loop",
+   "html": "<b>Loyalty loop</b> (Court, Elzinga, Mulder and Vetvik, McKinsey 2009): after a good post-purchase experience, the buyer's next purchase goes straight back to the same brand, skipping consideration and evaluation.",
+   "lec": 20
+  },
+  {
+   "id": "pom-d0089",
+   "unit": "cb",
+   "topic": "When buyers skip, reverse and loop",
+   "term": "Four journey capabilities",
+   "html": "<b>Four journey capabilities</b> (Edelman and Singer, McKinsey 2015): <b>automation</b> (remove manual steps), <b>proactive personalisation</b> (tailor instantly from past or outside data), <b>contextual interaction</b> (serve the next step based on where the customer is in the journey) and <b>journey innovation</b> (extend the journey into new services).",
+   "lec": 20
+  },
+  {
+   "id": "pom-d0090",
+   "unit": "cb",
+   "topic": "Marketing works at every stage, not just the till",
+   "term": "Initial consideration set (ICS)",
+   "html": "<b>Initial consideration set (ICS)</b>: the brands a buyer has in mind when the journey starts, before searching. In McKinsey's 2019 India durables study, 70–75% of purchases went to ICS brands.",
+   "lec": 21
+  },
+  {
+   "id": "pom-d0091",
+   "unit": "cb",
+   "topic": "Marketing works at every stage, not just the till",
+   "term": "Customer Growth Indicator (CGI)",
+   "html": "<b>Customer Growth Indicator (CGI)</b> = % of consumers who initially consider a brand ÷ the brand's market share by sales (McKinsey, 2019). It explained 60–80% of the variation in sales growth between brands in most categories.",
+   "lec": 21
   }
  ],
  "questions": [
@@ -5906,6 +5966,182 @@ HUB.addCourse({
    "w": "He opened with “why do we do what we do?”: the five stages describe the journey, and the theories of motivation explain what starts it. That links to the drive in Lecture 21's framework.",
    "lec": 23,
    "lv": "analyse"
+  },
+  {
+   "id": "pom-q0255",
+   "topic": "Consumer decision journey",
+   "q": "An insurer's app lets a policyholder file a car-damage claim by uploading three photos, with no form to fill and no office to visit. In Edelman and Singer's 2015 McKinsey article, which journey capability is this?",
+   "c": [
+    "Proactive personalisation",
+    "Contextual interaction",
+    "Automation",
+    "Journey innovation"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Automation streamlines or removes manual steps; the article's own example is depositing a cheque by photographing it in a banking app. Proactive personalisation would tailor the offer from the customer's data, and journey innovation would add a new service beyond the claim itself; neither happens here.",
+   "lec": 20,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0256",
+   "topic": "Consumer decision journey",
+   "q": "Which of these are contextual interaction, as Edelman and Singer (2015) use the term? (Select all)",
+   "c": [
+    "A food-delivery app opens on the live status of the order you placed ten minutes ago",
+    "A fashion site gives a frequent buyer early access to a sale, chosen from her past purchases",
+    "A cinema app puts your ticket's QR code on its home screen when you reach the theatre on show day",
+    "A train-booking app offers to book a hotel and a cab at your destination"
+   ],
+   "a": [
+    0,
+    2
+   ],
+   "w": "Contextual interaction uses where the customer is in the journey to serve the next step; the article's examples are a recent order's status on the home page and a hotel app that works as the room key. Early access chosen from purchase history is proactive personalisation (tailoring from data). Adding a hotel and a cab to a train booking extends the journey into new services, which is journey innovation.",
+   "lec": 20,
+   "lv": "apply",
+   "multi": true
+  },
+  {
+   "id": "pom-q0257",
+   "topic": "Consumer decision journey",
+   "q": "According to McKinsey's 2015 update on the consumer decision journey, what can a company that shapes the journey well achieve?",
+   "c": [
+    "Bring back the linear funnel, since buyers again start from a fixed set of brands",
+    "Compress or even eliminate the consideration and evaluation phases, moving the customer straight into the loyalty phase",
+    "Drop post-purchase service, because digital tools make loyalty automatic",
+    "Win only at the moment of purchase, since consumers now control everything before it"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Edelman and Singer argue that brands can now actively shape journeys rather than only react, and that done well this compresses or removes consideration and evaluation and moves the customer into the loyalty phase. The funnel is what the 2009 article had already replaced, and since loyalty is the goal, dropping post-purchase care works against it.",
+   "lec": 20,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0258",
+   "topic": "Consumer decision journey",
+   "q": "Which pairings of McKinsey article and idea are correct? (Select all)",
+   "c": [
+    "Court, Elzinga, Mulder and Vetvik (2009): buyers add and drop brands during active evaluation, and a good post-purchase experience can create a loyalty loop",
+    "Edelman and Singer (2015): automation, proactive personalisation, contextual interaction and journey innovation",
+    "Court, Elzinga, Mulder and Vetvik (2009): firms should manage journeys like products using four digital capabilities",
+    "Edelman and Singer (2015): the narrowing funnel is still the best description of how people buy"
+   ],
+   "a": [
+    0,
+    1
+   ],
+   "w": "The 2009 article introduced the circular journey: initial consideration, active evaluation (brands added as well as dropped), moment of purchase, post-purchase experience and the loyalty loop. The 2015 update, the article linked from Lecture 20, adds the four capabilities and the idea of managing journeys like products. Neither article defends the narrowing funnel; the 2009 one replaced it.",
+   "lec": 20,
+   "lv": "recall",
+   "multi": true
+  },
+  {
+   "id": "pom-q0259",
+   "topic": "Consumer decision journey",
+   "q": "A pet-food brand wants its repeat buyers to stop comparing brands every month. Which move best follows the advice in McKinsey's 2015 article on the new consumer decision journey?",
+   "c": [
+    "Spend more on awareness advertising to get into more initial consideration sets",
+    "Offer the deepest discount in the category at the point of sale",
+    "Cut post-purchase customer service, since satisfied buyers return anyway",
+    "Build one-tap reordering in its app that remembers each pet's food, pack size and usual delivery day"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The article's aim is to compress consideration and evaluation and take the customer straight to loyalty, using capabilities such as automation and proactive personalisation; a remembered one-tap reorder does exactly that. Awareness advertising works on initial consideration, which these buyers are already past. A point-of-sale discount competes inside the very evaluation the brand wants its buyers to skip.",
+   "lec": 20,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0260",
+   "topic": "Consumer decision journey",
+   "q": "In McKinsey's 2019 study of Indian consumer durables, roughly what share of final purchases went to brands that were in the buyer's initial consideration set?",
+   "c": [
+    "About 70–75%",
+    "About 25%",
+    "About 20%",
+    "About 60%"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Agarwal and colleagues found that 70–75% of purchases came from brands in the initial consideration set, more than twice the rate for brands considered only later. 20% is the share who rebought their current brand without considering others, 25% the share who switched brand at the point of sale, and about 60% the share incumbents win overall.",
+   "lec": 21,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0261",
+   "topic": "Consumer decision journey",
+   "q": "Using the Customer Growth Indicator from McKinsey's 2019 India study, compare two refrigerator brands. Brand P: 36% of buyers consider it at the start of their journey; market share 18%. Brand Q: 24% consider it at the start; market share 24%. Which is better placed to grow?",
+   "c": [
+    "Brand Q, because its larger market share shows stronger loyalty",
+    "Brand P, because its CGI is 2.0 against Q's 1.0",
+    "Brand Q, because a CGI of 1.0 is the ideal balance",
+    "Brand P, because its CGI is 0.5, lower than Q's"
+   ],
+   "a": [
+    1
+   ],
+   "w": "CGI = % of consumers who initially consider the brand ÷ its market share by sales: 36 ÷ 18 = 2.0 for P and 24 ÷ 24 = 1.0 for Q. The study found CGI explains 60–80% of the variation in sales growth between brands in most categories, so P's consideration running ahead of its share points to growth. A CGI of 0.5 comes from dividing the wrong way round.",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0262",
+   "topic": "Consumer decision journey",
+   "q": "A little-known refrigerator brand wants to take share in India. Which moves are supported by McKinsey's 2019 consumer durables study? (Select all)",
+   "c": [
+    "Train and support salespeople in multibrand outlets, since about a quarter of buyers switch brand at the point of sale",
+    "Build awareness through major media and social, then use its website to turn that awareness into real consideration",
+    "Close its retail presence and sell only online, since evaluation has moved to the internet",
+    "Ignore households replacing an old fridge, since replacement buyers simply rebuy the brand they own"
+   ],
+   "a": [
+    0,
+    1
+   ],
+   "w": "The study found 25% switch brand at the point of sale, where retailers and salespeople sway them, and it recommends building consideration through awareness plus a website that creates real consideration. Retail still dominates evaluation (about 75% visit a brand store or multibrand outlet). About 70% of purchases are replacements and only 20% of buyers rebuy their current brand without looking at others, so replacement buyers are very much in play.",
+   "lec": 21,
+   "lv": "apply",
+   "multi": true
+  },
+  {
+   "id": "pom-q0263",
+   "topic": "Consumer decision journey",
+   "q": "A market-leading refrigerator brand reads in McKinsey's 2019 India study that loyalty is not guaranteed, and plans to double its spending on loyalty discounts. Which reading of the study is right?",
+   "c": [
+    "Incumbents lose about 80% of repeat buyers, so heavy loyalty spending is essential",
+    "Loyalty offers have no effect on durables, so the money is wasted",
+    "Refrigerator buying is loyalty-driven, so no extra spend is needed",
+    "Incumbents still win about 60% of purchases and repurchase incentives work, but buying loyalty with disproportionate spend is risky"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Only 20% rebought their brand without considering others, but half of the remaining 80% still chose the incumbent, so incumbents win about 60%. The article says repurchase incentives work while warning against buying loyalty with outsized spend. The 80% are buyers who looked at other brands, not buyers who left, and none of the durables categories studied was found to be loyalty-driven.",
+   "lec": 21,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0264",
+   "topic": "Consumer decision journey",
+   "q": "McKinsey's 2019 study splits Indian refrigerator buyers into six segments. A brand is targeting the segment the study calls “tech masters”. Which influence should it prioritise?",
+   "c": [
+    "Online reviews",
+    "Family and friends",
+    "Television advertising",
+    "Newspaper inserts"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The study found that influence differs by segment: tech masters lean most on online reviews, while status leaders lean on family and friends. Mass-media advertising is not what the study names as this segment's main influence.",
+   "lec": 21,
+   "lv": "apply"
   }
  ],
  "briefs": {
@@ -5966,6 +6202,8 @@ HUB.addCourse({
   "lec-19",
   "lec-20",
   "lec-21",
-  "lec-23"
+  "lec-23",
+  "lec-20s",
+  "lec-21s"
  ]
 });

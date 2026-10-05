@@ -391,7 +391,7 @@ HUB.addCourse({
     {
      "t": "Case: Go Bananas — setting a shutdown rule",
      "src": "L#16",
-     "h": "<div class=\"card\"><b>The set-up, in brief.</b> A cereal maker (renamed GIG, Great Indian Grains, in the lecture) launches a rice-flake cereal with banana-flavoured marshmallows. Each box should carry between 50 g and 75 g of marshmallows. When the filling process works properly, 8% of boxes still fall outside that range. Each week a random sample of 25 boxes is weighed; if 5 or more are out of spec, production stops for inspection.</div>\n<p style=\"font-size:14.5px\"><strong>Why binomial:</strong> each sampled box is in or out of spec (two outcomes), the 8% chance is the same for every box, boxes are independent, and the number of trials is fixed at 25. So X = boxes out of spec ~ binomial(n = 25, p = 0.08), with a mean of np = 2 per sample.</p>\n<h4>Question 1: how often does a healthy line get stopped?</h4>\n<p style=\"font-size:14.5px\">P(X ≥ 5) = P(5) + P(6) + … + P(25) = 1 − P(X ≤ 4) = <strong>0.0451</strong>. About 4.5% of weeks, the line is stopped although nothing is wrong: a false alarm.</p>\n<h4>Question 2: loosen the rule until false alarms are 1% or less</h4>\n<p style=\"font-size:14.5px\">First decide the direction: to stop less often, the rule must demand <strong>more</strong> failures. ≥ 4 boxes gives 13.5%, ≥ 5 gives 4.5%, ≥ 6 gives 1.2% (still above 1%), ≥ 7 gives <strong>0.28%</strong>. So the rule becomes 7 or more. The catch: the line keeps running even when 7 of 25 boxes (28%) are out of spec, which can hurt the brand.</p>\n<h4>Question 3: keep the 5-box rule and improve the process instead</h4>\n<p style=\"font-size:14.5px\">Change p and recompute P(X ≥ 5): 9% → 6.9%, 8% → 4.5%, 7% → 2.7%, 6% → 1.5%, 5% → <strong>0.72%</strong>. The defect rate must come down to about 5% (strictly, somewhere between 5% and 6%; 5% is the safe answer).</p>\n<p style=\"font-size:14.5px\">His analogy: if 10% of students fail at a 40% pass mark, you can lower the pass mark (relax the rule) or teach better (improve the process). The second is the lasting fix. And no process is 100% error-free, so the goal is a small false-alarm rate, not zero.</p><!--viz:sfm-l16-shutdown-tail--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Bar chart of the binomial distribution with n = 25 and p = 0.08: P(0) = 0.12, P(1) = 0.27, P(2) = 0.28, P(3) = 0.19, P(4) = 0.09, P(5) = 0.03, and tiny bars beyond. The bars from 5 upward are shaded; together they give P(X ≥ 5) = 0.045.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">How often a healthy line trips the 5-box rule</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 222\" role=\"img\" aria-label=\"Bar chart of the binomial distribution with n = 25 and p = 0.08: P(0) = 0.12, P(1) = 0.27, P(2) = 0.28, P(3) = 0.19, P(4) = 0.09, P(5) = 0.03, and tiny bars beyond. The bars from 5 upward are shaded; together they give P(X ≥ 5) = 0.045.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M22,170 L420,170\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><rect x=\"28\" y=\"116.1\" width=\"24\" height=\"53.9\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"40\" y=\"110.1\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">.12</text><text x=\"40\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><rect x=\"64\" y=\"52.9\" width=\"24\" height=\"117.1\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"76\" y=\"46.9\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">.27</text><text x=\"76\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">1</text><rect x=\"100\" y=\"47.8\" width=\"24\" height=\"122.2\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"112\" y=\"41.8\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">.28</text><text x=\"112\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">2</text><rect x=\"136\" y=\"88.5\" width=\"24\" height=\"81.5\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"148\" y=\"82.5\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">.19</text><text x=\"148\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">3</text><rect x=\"172\" y=\"131\" width=\"24\" height=\"39\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"184\" y=\"125\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">.09</text><text x=\"184\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">4</text><rect x=\"208\" y=\"155.8\" width=\"24\" height=\"14.2\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"220\" y=\"149.8\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">.03</text><text x=\"220\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">5</text><rect x=\"244\" y=\"165.9\" width=\"24\" height=\"4.1\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"256\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">6</text><rect x=\"280\" y=\"169\" width=\"24\" height=\"1\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"292\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">7</text><text x=\"328\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">8</text><text x=\"364\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">9</text><text x=\"400\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">10</text><text x=\"310\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--clay);font-size:13px\">shut down if x ≥ 5</text><text x=\"310\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">P(X ≥ 5) = 0.045</text><text x=\"220\" y=\"210\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">boxes out of spec in a weekly sample of 25</text><text x=\"20\" y=\"24\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px\">n = 25, p = 0.08</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Even with the process working properly, about 4.5% of weekly samples land in the shaded tail and stop the line.</figcaption></figure><!--/viz:sfm-l16-shutdown-tail--><!--viz:sfm-l16-two-levers--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two-lever table. Raising the shutdown rule from 4 to 7 boxes at an 8% defect rate cuts false halts from 13.5% to 0.28%. Keeping the 5-box rule and cutting the defect rate from 8% to 4% cuts them from 4.5% to 0.28%; 5% gives 0.72%.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Two ways to get false halts under 1%</div><div class=\"scroller\"><table><thead><tr><th>Halt rule</th><th>False halts</th><th>Defect rate</th><th>False halts</th></tr></thead><tbody><tr><td>≥ 4 boxes</td><td>13.5%</td><td>8%</td><td>4.5%</td></tr><tr><td>≥ 5 boxes</td><td>4.5%</td><td>7%</td><td>2.7%</td></tr><tr><td>≥ 6 boxes</td><td>1.2%</td><td>6%</td><td>1.5%</td></tr><tr><td>≥ 7 boxes</td><td style=\"background:var(--good-soft)\">0.28%</td><td>5%</td><td style=\"background:var(--good-soft)\">0.72%</td></tr><tr><td></td><td></td><td>4%</td><td style=\"background:var(--good-soft)\">0.28%</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Left: loosen the rule at an 8% defect rate. Right: keep the 5-box rule and cut defects. Both reach the 1% goal (green); the lecture prefers fixing the process.</figcaption></figure><!--/viz:sfm-l16-two-levers-->"
+     "h": "<div class=\"card\"><b>The set-up, in brief.</b> A cereal maker (renamed GIG, Great Indian Grains, in the lecture) launches a rice-flake cereal with banana-flavoured marshmallows. Each box should carry between 50 g and 75 g of marshmallows. When the filling process works properly, 8% of boxes still fall outside that range. Each week a random sample of 25 boxes is weighed; if 5 or more are out of spec, production stops for inspection.</div>\n<p style=\"font-size:14.5px\"><strong>Why binomial:</strong> each sampled box is in or out of spec (two outcomes), the 8% chance is the same for every box, boxes are independent, and the number of trials is fixed at 25. So X = boxes out of spec ~ binomial(n = 25, p = 0.08), with a mean of np = 2 per sample.</p>\n<h4>Question 1: how often does a healthy line get stopped?</h4>\n<p style=\"font-size:14.5px\">P(X ≥ 5) = P(5) + P(6) + … + P(25) = 1 − P(X ≤ 4) = <strong>0.0451</strong>. About 4.5% of weeks, the line is stopped although nothing is wrong: a false alarm.</p>\n<h4>Question 2: loosen the rule until false alarms are 1% or less</h4>\n<p style=\"font-size:14.5px\">First decide the direction: to stop less often, the rule must demand <strong>more</strong> failures. ≥ 4 boxes gives 13.5%, ≥ 5 gives 4.5%, ≥ 6 gives 1.2% (still above 1%), ≥ 7 gives <strong>0.28%</strong>. So the rule becomes 7 or more. The catch: the line keeps running even when 7 of 25 boxes (28%) are out of spec, which can hurt the brand.</p>\n<h4>Question 3: keep the 5-box rule and improve the process instead</h4>\n<p style=\"font-size:14.5px\">Change p and recompute P(X ≥ 5): 9% → 6.9%, 8% → 4.5%, 7% → 2.7%, 6% → 1.5%, 5% → <strong>0.72%</strong>. The defect rate must come down to about 5% (strictly, somewhere between 5% and 6%; 5% is the safe answer).</p>\n<p style=\"font-size:14.5px\">His analogy: if 10% of students fail at a 40% pass mark, you can lower the pass mark (relax the rule) or teach better (improve the process). The second is the lasting fix. And no process is 100% error-free, so the goal is a small false-alarm rate, not zero.</p><!--viz:sfm-l16-shutdown-tail--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Bar chart of the binomial distribution with n = 25 and p = 0.08: P(0) = 0.12, P(1) = 0.27, P(2) = 0.28, P(3) = 0.19, P(4) = 0.09, P(5) = 0.03, and tiny bars beyond. The bars from 5 upward are shaded; together they give P(X ≥ 5) = 0.045.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">How often a healthy line trips the 5-box rule</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 222\" role=\"img\" aria-label=\"Bar chart of the binomial distribution with n = 25 and p = 0.08: P(0) = 0.12, P(1) = 0.27, P(2) = 0.28, P(3) = 0.19, P(4) = 0.09, P(5) = 0.03, and tiny bars beyond. The bars from 5 upward are shaded; together they give P(X ≥ 5) = 0.045.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M22,170 L420,170\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><rect x=\"28\" y=\"116.1\" width=\"24\" height=\"53.9\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"40\" y=\"110.1\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">.12</text><text x=\"40\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><rect x=\"64\" y=\"52.9\" width=\"24\" height=\"117.1\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"76\" y=\"46.9\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">.27</text><text x=\"76\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">1</text><rect x=\"100\" y=\"47.8\" width=\"24\" height=\"122.2\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"112\" y=\"41.8\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">.28</text><text x=\"112\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">2</text><rect x=\"136\" y=\"88.5\" width=\"24\" height=\"81.5\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"148\" y=\"82.5\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">.19</text><text x=\"148\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">3</text><rect x=\"172\" y=\"131\" width=\"24\" height=\"39\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"184\" y=\"125\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">.09</text><text x=\"184\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">4</text><rect x=\"208\" y=\"155.8\" width=\"24\" height=\"14.2\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"220\" y=\"149.8\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">.03</text><text x=\"220\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">5</text><rect x=\"244\" y=\"165.9\" width=\"24\" height=\"4.1\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"256\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">6</text><rect x=\"280\" y=\"169\" width=\"24\" height=\"1\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"292\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">7</text><text x=\"328\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">8</text><text x=\"364\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">9</text><text x=\"400\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">10</text><text x=\"310\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--clay);font-size:13px\">shut down if x ≥ 5</text><text x=\"310\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">P(X ≥ 5) = 0.045</text><text x=\"220\" y=\"210\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">boxes out of spec in a weekly sample of 25</text><text x=\"20\" y=\"24\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px\">n = 25, p = 0.08</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Even with the process working properly, about 4.5% of weekly samples land in the shaded tail and stop the line.</figcaption></figure><!--/viz:sfm-l16-shutdown-tail--><!--viz:sfm-l16-two-levers--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two-lever table. Raising the shutdown rule from 4 to 7 boxes at an 8% defect rate cuts false halts from 13.5% to 0.28%. Keeping the 5-box rule and cutting the defect rate from 8% to 4% cuts them from 4.5% to 0.28%; 5% gives 0.72%.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Two ways to get false halts under 1%</div><div class=\"scroller\"><table><thead><tr><th>Halt rule</th><th>False halts</th><th>Defect rate</th><th>False halts</th></tr></thead><tbody><tr><td>≥ 4 boxes</td><td>13.5%</td><td>8%</td><td>4.5%</td></tr><tr><td>≥ 5 boxes</td><td>4.5%</td><td>7%</td><td>2.7%</td></tr><tr><td>≥ 6 boxes</td><td>1.2%</td><td>6%</td><td>1.5%</td></tr><tr><td>≥ 7 boxes</td><td style=\"background:var(--good-soft)\">0.28%</td><td>5%</td><td style=\"background:var(--good-soft)\">0.72%</td></tr><tr><td></td><td></td><td>4%</td><td style=\"background:var(--good-soft)\">0.28%</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Left: loosen the rule at an 8% defect rate. Right: keep the 5-box rule and cut defects. Both reach the 1% goal (green); the lecture prefers fixing the process.</figcaption></figure><!--/viz:sfm-l16-two-levers--><h4>From the case sheet (attachment to L#15 and L#16)</h4>\n<p style=\"font-size:14.5px\">The sheet the lecturer shared is the course's own Indian version of the case. Details the notes above leave out: the cereal is sold in <strong>16-ounce boxes</strong> while the marshmallow limits are in grams (50 g to 75 g); the weekly 25-box check is proposed by <strong>Priya Sharma, Vice President of Production</strong>, whose team designed the line to run at 8% out of spec; and the 5-box shutdown rule is a management decision taken \"after much debate\". All the figures in the notes above match the sheet.</p>\n<div class=\"scroller\"><table><thead><tr><th>The report asks</th><th>Answer</th></tr></thead><tbody>\n<tr><td>1. P(shutdown) on a properly working line, and a comment on the 5-box policy</td><td>P(X ≥ 5) = 0.0451, plus a comment (see below)</td></tr>\n<tr><td>2. How many failing boxes should trigger a shutdown so a healthy line stops no more than 1% of the time?</td><td>7 or more (0.28%); 6 or more gives 1.23%, just over the goal</td></tr>\n<tr><td>3. Keeping the 5-box rule, to what level must the out-of-spec percentage fall for P(X ≥ 5) ≤ 0.01?</td><td>About <strong>5.4% or lower</strong>; the lecture rounds this to 5%</td></tr>\n</tbody></table></div>\n<h4>Question 3, exactly</h4>\n<p style=\"font-size:14.5px\">Solving P(X ≥ 5) = 0.01 for n = 25 gives p ≈ <strong>0.0542</strong>. Any defect rate at or below about 5.4% meets the goal. 5.5% does not: it gives P(X ≥ 5) = 0.0106, just above 1%. So \"somewhere between 5% and 6%\" means the lower part of that range, and the lecture's 5% (P = 0.0072) is the safe round answer.</p>\n<h4>Commenting on the policy (our own check, not worked in the lecture)</h4>\n<ul>\n<li><strong>Cost of false alarms:</strong> 0.0451 a week over 52 weeks is about <strong>2.3 needless shutdowns a year</strong> on a line that is working properly. With the 7-box rule it is about 0.14 a year, roughly one every seven years.</li>\n<li><strong>The other side of the rule:</strong> a rule must also catch a line that has really gone wrong. If the line slips to 20% out of spec, the 5-box rule stops it in 58% of weekly samples; the 7-box rule in only 22%. That is the number behind the lecture's warning that loosening the rule puts the brand at risk, and why improving the process (lower p, same rule) is the better fix.</li>\n</ul>"
     },
     {
      "t": "Building a probability table in Excel",
@@ -475,6 +475,11 @@ HUB.addCourse({
      "t": "Convenience and judgement sampling",
      "src": "L#20",
      "h": "<p style=\"font-size:14.5px\">These are <strong>non-probability</strong> methods: elements enter the sample without known probabilities of selection.</p>\n<div class=\"scroller\"><table><thead><tr><th></th><th>Convenience</th><th>Judgement</th></tr></thead><tbody>\n<tr><td>Who is chosen</td><td>whoever is easiest to reach</td><td>the elements an expert believes are most representative</td></tr>\n<tr><td>Examples</td><td>a professor's student volunteers; asking a friend about a restaurant; researchers surveying firms where they know people</td><td>a reporter interviewing three or four senators to gauge the Senate; a teacher choosing students to represent the class at an Olympiad; studio experts 'reflecting' public opinion</td></tr>\n<tr><td>Advantage</td><td>easy, quick data collection</td><td>easy, quick selection</td></tr>\n<tr><td>Disadvantage</td><td>no way to tell how representative the sample is</td><td>only as good as the selector's judgement; open to bias and misjudgement</td></tr>\n</tbody></table></div>\n<p style=\"font-size:14.5px\">Convenience sampling is used when access to the population is very limited: listing every organisation and getting into a random selection of them is close to impossible, so much organisational research relies on it. But the friend who loved a restaurant may have had a special birthday treatment; their view is not the average diner's.</p>\n<p style=\"font-size:14.5px\"><strong>The lecture's recommendation:</strong> use a probability method (simple random, stratified, cluster or systematic) whenever possible. Only then do formulas tell you how close the sample result is likely to be to the population value. The goodness of a convenience or judgement sample cannot be evaluated.</p>\n<h4>His closing checks</h4>\n<ul>\n<li>Convenience sampling is a <strong>non-probability</strong> method.</li>\n<li>As the sample size grows, the <strong>standard error of the mean falls</strong> (σ/√n). The population's mean and standard deviation are fixed and do not change.</li>\n<li>In point estimation, <strong>sample</strong> data estimate a <strong>population</strong> parameter. If you had the population data, you would not need to estimate.</li>\n</ul>\n<div class=\"def\"><b>From the lecture (L#20):</b> the numerical side of stratified (and other) designs is left to a later research-methods course; here, know what each method is, its advantages and disadvantages, and when to use it. A short case-based question and practice questions follow this lecture.</div><!--viz:sfm-l20-probability-tree--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Tree of sampling methods. Probability methods: simple random, stratified random, cluster and systematic, where each element's chance of selection is known and accuracy can be evaluated. Non-probability methods: convenience and judgement, where it is unknown and accuracy cannot be evaluated.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Which sampling methods let you judge the result?</div><div style=\"font-size:14px\"><div style=\"text-align:center;margin-bottom:6px\"><span style=\"display:inline-block;padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Sampling methods</b></span></div><div style=\"display:grid;grid-template-columns:1fr 1fr;gap:8px\"><div style=\"padding:10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Probability</b><div style=\"margin-top:6px;padding:6px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Simple random</div><div style=\"margin-top:6px;padding:6px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Stratified random</div><div style=\"margin-top:6px;padding:6px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Cluster</div><div style=\"margin-top:6px;padding:6px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Systematic</div><div style=\"margin-top:8px;font-size:13px;color:var(--ink-2)\">chance of selection known → accuracy can be evaluated</div></div><div style=\"padding:10px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>Non-probability</b><div style=\"margin-top:6px;padding:6px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Convenience</div><div style=\"margin-top:6px;padding:6px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Judgement</div><div style=\"margin-top:8px;font-size:13px;color:var(--ink-2)\">chance of selection unknown → accuracy cannot be evaluated</div></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The lecture's advice: use a probability method whenever you can, because only then can the closeness of the result be assessed.</figcaption></figure><!--/viz:sfm-l20-probability-tree-->"
+    },
+    {
+     "t": "Practice questions from the lecturer (L#20)",
+     "src": "L#20",
+     "h": "<p style=\"font-size:14.5px\">The lecturer's own practice set for Chapter 7, shared after L#20 (12 questions). Each one is restated in our words below with a full worked solution; the numbers are the sheet's. The mix is typical of his style: point estimates from raw counts, standard errors, the n ≥ 30 and np ≥ 5 checks, the finite population correction, a ‘within ±k of μ’ probability, one reverse problem, a sample-size calculation and naming the sampling method.</p><div class=\"def\"><b>Notation on the sheet:</b> in its sample-proportion question the sheet prints <b>p</b> where it means the <b>sample proportion</b> p̂ (the textbook writes p̄). ‘The expected value of p’ there means E(p̂), which equals the population p.</div><details><summary>Q1 · Point estimates of proportions (three answer options)</summary><p style=\"font-size:14.5px\">150 people answer a survey question: 75 say Yes, 55 say No and 20 have no opinion. Estimate the population proportions answering Yes and No.</p><ol><li>The sample size is all 150 respondents, including the 20 with no opinion.</li><li>p̂(Yes) = 75/150 = 0.50.</li><li>p̂(No) = 55/150 = 0.367.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Yes ≈ 0.50; No ≈ 0.367. (Dividing by 130, the Yes + No total, would be wrong: no-opinion answers are part of the sample.)</p></details><details><summary>Q2 · Point estimates of a mean and standard deviation</summary><p style=\"font-size:14.5px\">Six months of unit sales: 95, 98, 92, 85, 105, 89. Estimate the population mean and standard deviation of monthly units sold. (The sheet's table row is headed ‘Unsold Units’ while the question asks about units sold; the arithmetic is the same either way.)</p><ol><li>x̄ = (95 + 98 + 92 + 85 + 105 + 89)/6 = 564/6 = 94.</li><li>Deviations from 94: 1, 4, −2, −9, 11, −5. Squares: 1, 16, 4, 81, 121, 25; sum = 248.</li><li>s² = 248/(6 − 1) = 49.6, so s = √49.6 = 7.04. Use n − 1 because this is a sample (Excel STDEV.S).</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Mean ≈ 94 units a month; standard deviation ≈ 7.04 units. (Dividing by n gives 6.43, the population formula, which is not the point estimate.)</p></details><details><summary>Q3 · Sampled population and estimates from a survey</summary><p style=\"font-size:14.5px\">A 2012 US survey asked 426 adults aged 50 and over how important various issues were to their vote. 350 called Social Security and Medicare ‘very important’, 74% said so of education, and 354 said so of job growth. Name the sampled population and estimate the three quantities.</p><ol><li>Sampled population: US adults aged 50 and older (the group the 426 were drawn from).</li><li>Social Security and Medicare: p̂ = 350/426 = 0.822.</li><li>Education: the number of respondents = 0.74 × 426 = 315.24 ≈ 315.</li><li>Job growth: p̂ = 354/426 = 0.831.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Sampled population = US adults 50+; 0.822; about 315 respondents; 0.831.</p></details><details><summary>Q4 · Sampling distribution of the sample proportion</summary><p style=\"font-size:14.5px\">A sample of 100 is drawn from a population with p = 0.40. Give E(p̂), the standard error of p̂, the sampling distribution and what it shows.</p><ol><li>E(p̂) = p = 0.40 (p̂ is unbiased).</li><li>σ<sub>p̂</sub> = √[p(1 − p)/n] = √(0.40 × 0.60/100) = √0.0024 = 0.049.</li><li>Normal check: np = 40 and n(1 − p) = 60, both ≥ 5, so p̂ is approximately normal with mean 0.40 and standard error 0.049.</li><li>Meaning: it is the probability distribution of all the p̂ values that samples of 100 could give. About 95% of them would fall within 0.40 ± 1.96 × 0.049, i.e. 0.304 to 0.496.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> E(p̂) = 0.40; σ<sub>p̂</sub> = 0.049; approximately normal, N(0.40, 0.049); it shows how p̂ varies from sample to sample.</p></details><details><summary>Q5 · When is x̄ approximately normal?</summary><p style=\"font-size:14.5px\">Decide whether the sampling distribution of x̄ is approximately normal: (a) normal population, n = 12; (b) highly right-skewed population, n = 12; (c) highly right-skewed population, n = 45; (d) explain the role of the central limit theorem.</p><ol><li>(a) Yes. A normal population gives a normal x̄ for any sample size.</li><li>(b) No. n = 12 is too small for the CLT to overcome strong skew.</li><li>(c) Yes by the usual n ≥ 30 rule, so this is the expected answer. But note the lecture's caution that a highly skewed population may need about 50: n = 45 is close to that, so the approximation is reasonable rather than excellent.</li><li>(d) The CLT says that for large n the distribution of x̄ is close to normal whatever the population's shape, so the population's shape matters only when n is small.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) yes; (b) no; (c) yes, approximately (n ≥ 30), with the ‘about 50 for heavy skew’ caution; (d) as above.</p></details><details><summary>Q6 · Probability that x̄ is within ±5 and ±10 of μ</summary><p style=\"font-size:14.5px\">Population μ = 200, σ = 50; a sample of 100 is taken. Find P(x̄ within ±5 of μ) and P(x̄ within ±10 of μ).</p><ol><li>σ<sub>x̄</sub> = 50/√100 = 5 (the population size is not given, so treat it as infinite).</li><li>±5: z = 5/5 = 1. P(−1 ≤ Z ≤ 1) = 0.8413 − 0.1587 = 0.6826.</li><li>±10: z = 10/5 = 2. P(−2 ≤ Z ≤ 2) = 0.9772 − 0.0228 = 0.9544.</li><li>Excel check: <code>=NORM.DIST(205,200,5,TRUE)-NORM.DIST(195,200,5,TRUE)</code> = 0.6827.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> ≈ 0.683 for ±5 and ≈ 0.954 for ±10.</p></details><details><summary>Q7 · Working backwards to μ and σ</summary><p style=\"font-size:14.5px\">Samples of 30 products are weighed and x̄ is recorded. Over a long period 5% of the x̄ values exceed 2.1 lb and 5% fall below 1.9 lb. Find the population mean and standard deviation.</p><ol><li>The cut-offs are symmetric, so the centre of the sampling distribution is μ = (1.9 + 2.1)/2 = 2.0 lb.</li><li>5% in the upper tail means 2.1 is z = 1.645 standard errors above μ: 0.1 = 1.645 × σ<sub>x̄</sub>, so σ<sub>x̄</sub> = 0.1/1.645 = 0.0608.</li><li>σ<sub>x̄</sub> = σ/√n, so σ = 0.0608 × √30 = 0.333 lb.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> μ = 2.0 lb; σ ≈ 0.33 lb. (Stopping at 0.0608 gives the standard error, not the population σ.)</p></details><details><summary>Q8 · Standard error for n = 36 and n = 144</summary><p style=\"font-size:14.5px\">σ = 72. Find the standard error of x̄ for samples of 36 and of 144, compare them and say what the comparison shows.</p><ol><li>n = 36: σ<sub>x̄</sub> = 72/√36 = 72/6 = 12.</li><li>n = 144: σ<sub>x̄</sub> = 72/√144 = 72/12 = 6.</li><li>Four times the sample size halves the standard error, because n sits under a square root.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 12 and 6. A larger sample makes x̄ less variable, but with diminishing returns: halving the error costs four times the sample.</p></details><details><summary>Q9 · Can p̂ be treated as normal? Four cases</summary><p style=\"font-size:14.5px\">Check np and n(1 − p) for: A (p = 0.02, n = 100), B (p = 0.10, n = 60), C (p = 0.50, n = 8), D (p = 0.80, n = 25).</p><ol><li>Condition: np ≥ 5 and n(1 − p) ≥ 5.</li><li>A: np = 2, n(1 − p) = 98. Fails (np &lt; 5).</li><li>B: np = 6, n(1 − p) = 54. Passes.</li><li>C: np = 4, n(1 − p) = 4. Fails on both.</li><li>D: np = 20, n(1 − p) = 5. Passes, exactly on the boundary (‘at least 5’ includes 5).</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Normal approximation suitable for B and D; not for A or C.</p></details><details><summary>Q10 · When to use the finite population correction</summary><p style=\"font-size:14.5px\">σ = 30 and n = 48 in both cases. Case A: N = 1,200. Case B: N = 600. Find n/N, decide on the correction, and find each standard error.</p><ol><li>Case A: n/N = 48/1,200 = 0.04 &lt; 0.05, so no correction: σ<sub>x̄</sub> = 30/√48 = 4.33.</li><li>Case B: n/N = 48/600 = 0.08 ≥ 0.05, so apply it: √[(600 − 48)/(600 − 1)] = √(552/599) = 0.960.</li><li>Case B: σ<sub>x̄</sub> = 0.960 × 4.33 = 4.16.</li><li>Why they differ: in B the sample is a larger share of the population, so there is less room for sample means to vary.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> n/N = 0.04 and 0.08; correction only for B; σ<sub>x̄</sub> ≈ 4.33 (A) and ≈ 4.16 (B).</p></details><details><summary>Q11 · Minimum sample size for a target standard error of p̂</summary><p style=\"font-size:14.5px\">p is believed to be 0.25. How large must the sample be for the standard error of p̂ to be no more than 0.05?</p><ol><li>σ<sub>p̂</sub> = √[p(1 − p)/n].</li><li>Require √(0.25 × 0.75/n) ≤ 0.05, i.e. 0.1875/n ≤ 0.0025, so n ≥ 0.1875/0.0025 = 75.</li><li>Here 75 is a whole number. If the result were, say, 74.2, you would round <strong>up</strong> to 75: rounding down gives a standard error slightly above the target.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> n = 75. Always round a required sample size up.</p></details><details><summary>Q12 · Name the sampling method</summary><p style=\"font-size:14.5px\">Identify the method: (a) five city blocks chosen at random, every household on them interviewed; (b) students split into undergraduates and postgraduates, a random sample taken from each; (c) shoppers who happen to be outside a mall and willing to talk; (d) 20 companies an industry expert considers representative; (e) a random start in a list of 5,000 customers, then every 50th.</p><ol><li>(a) Cluster sampling: random clusters, everyone inside them.</li><li>(b) Stratified random sampling: every group sampled randomly.</li><li>(c) Convenience sampling.</li><li>(d) Judgement sampling.</li><li>(e) Systematic sampling (k = 50, so the sample has 100 customers).</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Cluster; stratified; convenience; judgement; systematic.</p></details>"
     },
     {
      "t": "Textbook: Sampling and Sampling Distributions",
@@ -1256,6 +1261,55 @@ HUB.addCourse({
    "h": "A larger sample changes the standard error, not the population",
    "p": "Increasing n lowers σ/√n. The population mean and standard deviation are fixed facts about the population and do not move.",
    "f": "only the SE moves",
+   "lec": 20
+  },
+  {
+   "id": "sfm-t0107",
+   "h": "'Between 5% and 6%' does not mean 5.5% is good enough",
+   "p": "With the 5-box rule, P(X ≥ 5) reaches 1% at a defect rate of about 5.4%. At 5.5% it is 1.06%, which misses the goal. Quote 'about 5.4% or lower' (or the lecture's safe 5%).",
+   "f": "break-even ≈ 5.4%",
+   "lec": 16
+  },
+  {
+   "id": "sfm-t0108",
+   "h": "The 1% goal limits false alarms, not missed problems",
+   "p": "'Shut down no more than 1% of the time when the process is working properly' is P(shutdown | line healthy). It says nothing about how often a faulty line is missed; a looser rule lowers the first and raises the second.",
+   "f": "1% = healthy-line halts",
+   "lec": 16
+  },
+  {
+   "id": "sfm-t0109",
+   "h": "On the L#20 practice sheet, 'p' in the proportion question means the sample proportion",
+   "p": "The sheet asks for 'the expected value of p' and 'the standard error of p'; read p̂ (p̂). E(p̂) = p = 0.40 and σp̂ = √[p(1 − p)/n]. The population p itself is a fixed number with no standard error.",
+   "f": "sheet's p = p̂",
+   "lec": 20
+  },
+  {
+   "id": "sfm-t0110",
+   "h": "n(1 − p) = 5 exactly passes the normal check",
+   "p": "The condition is np ≥ 5 and n(1 − p) ≥ 5. p = 0.80, n = 25 gives n(1 − p) = 5, which qualifies; a value of 4.9 would not.",
+   "f": "at least 5 includes 5",
+   "lec": 20
+  },
+  {
+   "id": "sfm-t0111",
+   "h": "A required sample size is always rounded up",
+   "p": "If the formula gives n = 233.3, use 234. Rounding down to 233 leaves the standard error (or margin) just above the target.",
+   "f": "sample size: round up",
+   "lec": 20
+  },
+  {
+   "id": "sfm-t0112",
+   "h": "In a reverse problem, σx̄ is not the answer for σ",
+   "p": "Tail cut-offs on x̄ give the standard error (e.g. 0.1/1.645 = 0.0608). The population σ is σx̄ × √n (0.0608 × √30 = 0.333).",
+   "f": "σ = σx̄ × √n",
+   "lec": 20
+  },
+  {
+   "id": "sfm-t0113",
+   "h": "Skewed population, n = 45: the n ≥ 30 rule says yes, but heavy skew asks for more",
+   "p": "The expected answer is 'approximately normal' because n ≥ 30. The lecture also warns that a highly skewed population may need about 50, so 45 is acceptable but not comfortable.",
+   "f": "30 usual, 50 if skewed",
    "lec": 20
   }
  ],
@@ -2105,6 +2159,14 @@ HUB.addCourse({
    "topic": "Convenience and judgement sampling",
    "term": "Probability sampling method",
    "html": "<b>Probability sampling method</b>: one in which each element's chance of selection is known (simple random, stratified, cluster, systematic), so the closeness of the results to the population can be evaluated.",
+   "lec": 20
+  },
+  {
+   "id": "sfm-d0108",
+   "unit": "sampling",
+   "topic": "Practice questions from the lecturer (L#20)",
+   "term": "Sampling fraction",
+   "html": "<b>Sampling fraction</b> = n/N, the share of a finite population that is in the sample. If it is 0.05 or more, multiply σ/√n by the finite population correction √[(N − n)/(N − 1)].",
    "lec": 20
   }
  ],
@@ -7991,6 +8053,210 @@ HUB.addCourse({
    "w": "Probability methods allow the closeness of results to be assessed with formulas; non-probability methods do not, whatever the sample size.",
    "lec": 20,
    "lv": "recall"
+  },
+  {
+   "id": "sfm-q0357",
+   "topic": "Applying distributions",
+   "q": "Go Bananas keeps its rule (shut down if 5 or more of 25 boxes are out of spec). Which of these out-of-spec rates is the highest that keeps false shutdowns at or below 1%?",
+   "c": [
+    "5.5%",
+    "6%",
+    "5%",
+    "4%"
+   ],
+   "a": [
+    2
+   ],
+   "w": "P(X ≥ 5) is 0.0072 at 5%, 0.0106 at 5.5% and 0.0150 at 6%. The exact break-even is about 5.4%, so 5.5% just misses; 4% (0.0028) meets the goal but asks for more improvement than needed.",
+   "lec": 16,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0358",
+   "topic": "Applying distributions",
+   "q": "A healthy Go Bananas line is stopped in 4.51% of weekly samples under the 5-box rule. Roughly how many needless shutdowns is that over a 52-week year?",
+   "c": [
+    "About 2.3",
+    "About 4.5",
+    "About 0.45",
+    "About 23"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Expected shutdowns = 52 × 0.0451 ≈ 2.3 a year. 4.5 confuses the percentage with a count; 23 would need a 45% weekly rate.",
+   "lec": 16,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0359",
+   "topic": "Applying distributions",
+   "q": "Suppose the Go Bananas line really does go wrong and 20% of boxes fall out of spec. In a weekly sample of 25, how likely is each rule to stop it?",
+   "c": [
+    "Both rules stop it about 99% of the time",
+    "5-box rule about 22%, 7-box rule about 58%",
+    "Both rules stop it about 1% of the time",
+    "5-box rule about 58%, 7-box rule about 22%"
+   ],
+   "a": [
+    3
+   ],
+   "w": "With p = 0.20, P(X ≥ 5) = 0.579 and P(X ≥ 7) = 0.220. Loosening the rule to 7 cuts false alarms but also lets a badly faulty line run in most weeks, which is why the lecture prefers improving the process.",
+   "lec": 16,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0360",
+   "topic": "Applying distributions",
+   "q": "Management wants to shut down Go Bananas production no more than 1% of the time when the process is working properly. Which probability does this goal limit?",
+   "c": [
+    "P(the line is faulty, given that it was shut down)",
+    "P(a single box is out of spec)",
+    "P(shutdown, given that the line is working properly)",
+    "P(no shutdown, given that the line is faulty)"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The goal is about false alarms: shutdowns of a healthy line, P(X ≥ 5 | p = 0.08). The chance of missing a faulty line is a different conditional probability that the case does not set a limit on.",
+   "lec": 16,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0361",
+   "topic": "Sampling distributions",
+   "q": "240 hotel guests answer a feedback question: 132 say Yes, 84 say No and 24 are undecided. What is the point estimate of the proportion of all guests who would say No?",
+   "c": [
+    "0.389",
+    "0.55",
+    "0.35",
+    "0.10"
+   ],
+   "a": [
+    2
+   ],
+   "w": "p̂ = 84/240 = 0.35: the undecided guests are still part of the sample. 0.389 divides by Yes + No only (216); 0.55 is the Yes proportion.",
+   "lec": 20,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0362",
+   "topic": "Sampling distributions",
+   "q": "A shop's sales over five weeks are 42, 47, 51, 38 and 52 units. What is the point estimate of the population standard deviation of weekly sales?",
+   "c": [
+    "5.96 units",
+    "5.33 units",
+    "35.5 units",
+    "28.4 units"
+   ],
+   "a": [
+    0
+   ],
+   "w": "x̄ = 46; squared deviations sum to 142; s = √(142/4) = 5.96. 5.33 divides by n = 5 (the population formula); 35.5 and 28.4 are the variances, not standard deviations.",
+   "lec": 20,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0363",
+   "topic": "Sampling distributions",
+   "q": "A dairy weighs random samples of 36 packets. Over many weeks, 2.5% of the sample means are above 505 g and 2.5% are below 495 g. What is the standard deviation of individual packet weights?",
+   "c": [
+    "2.55 g",
+    "15.3 g",
+    "18.2 g",
+    "5.0 g"
+   ],
+   "a": [
+    1
+   ],
+   "w": "μ = 500 and 505 is 1.96 standard errors above it, so σx̄ = 5/1.96 = 2.55 g. Then σ = 2.55 × √36 = 15.3 g. 2.55 g stops at the standard error; 18.2 g wrongly uses z = 1.645, which belongs to a 5% tail.",
+   "lec": 20,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0364",
+   "topic": "Sampling distributions",
+   "q": "In which case can the sampling distribution of p̂ NOT be treated as approximately normal?",
+   "c": [
+    "p = 0.95, n = 100",
+    "p = 0.50, n = 12",
+    "p = 0.20, n = 40",
+    "p = 0.05, n = 80"
+   ],
+   "a": [
+    3
+   ],
+   "w": "p = 0.05, n = 80 gives np = 4, below 5. p = 0.95, n = 100 gives n(1 − p) = 5 exactly, which passes because the rule is 'at least 5'; the other two give 6 and 6, and 8 and 32.",
+   "lec": 20,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0365",
+   "topic": "Sampling distributions",
+   "q": "A pollster expects about 30% support for a proposal and wants the standard error of p̂ to be at most 0.03. What is the smallest sample size?",
+   "c": [
+    "233",
+    "234",
+    "700",
+    "24"
+   ],
+   "a": [
+    1
+   ],
+   "w": "n ≥ p(1 − p)/SE² = 0.21/0.0009 = 233.3, which must be rounded up to 234; 233 leaves the standard error slightly above 0.03. 700 divides by 0.03 instead of 0.03².",
+   "lec": 20,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0366",
+   "topic": "Sampling distributions",
+   "q": "σ = 24 and a sample of 60 is taken from each of two populations: A has N = 1,500 and B has N = 900. Using the lecture's n/N rule, what are the standard errors of x̄?",
+   "c": [
+    "A ≈ 3.10 and B ≈ 3.10",
+    "A ≈ 2.99 and B ≈ 3.10",
+    "A ≈ 3.04 and B ≈ 2.99",
+    "A ≈ 3.10 and B ≈ 2.99"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A: n/N = 0.04 < 0.05, so σ/√n = 24/√60 = 3.10. B: n/N = 0.067, so apply √(840/899) = 0.967, giving 2.99. Applying the correction to A as well gives 3.04; ignoring it for B gives 3.10.",
+   "lec": 20,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0367",
+   "topic": "Sampling distributions",
+   "q": "For which situation is it NOT reasonable to assume that x̄ is approximately normally distributed?",
+   "c": [
+    "A normally distributed population, n = 10",
+    "A strongly skewed population, n = 12",
+    "A strongly skewed population, n = 60",
+    "A population of unknown shape, n = 40"
+   ],
+   "a": [
+    1
+   ],
+   "w": "With strong skew and only 12 observations the CLT has not taken hold. A normal population gives a normal x̄ for any n, and n = 40 or 60 is enough under the n ≥ 30 rule (60 also clears the 'about 50 for heavy skew' caution).",
+   "lec": 20,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0368",
+   "topic": "Sampling distributions",
+   "q": "A sample of 200 is drawn from a population with p = 0.30. What are the expected value and the standard error of the sample proportion?",
+   "c": [
+    "0.30 and 0.0324",
+    "60 and 6.48",
+    "0.30 and 0.458",
+    "0.30 and 0.00105"
+   ],
+   "a": [
+    0
+   ],
+   "w": "E(p̂) = p = 0.30 and σp̂ = √(0.30 × 0.70/200) = 0.0324. 60 and 6.48 are the mean and standard deviation of the count of successes, not the proportion; 0.00105 is the variance; 0.458 forgets to divide by n.",
+   "lec": 20,
+   "lv": "apply"
   }
  ],
  "briefs": {
@@ -8056,6 +8322,8 @@ HUB.addCourse({
   "lec-17",
   "lec-18",
   "lec-19",
-  "lec-20"
+  "lec-20",
+  "lec-16s",
+  "lec-20s"
  ]
 });
