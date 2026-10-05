@@ -10,6 +10,20 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.2.2] — 2026-10-05
+
+### Fixed
+- **One format for lecture labels.** Foundations of Computing wrote lectures as `L16`, and
+  every other course (and all new lectures) as `L#17`. All 285 labels now use `L#N`, the
+  LMS's own numbering. History's labels put the slide deck's number first (`Lec 2 · L#3`);
+  the LMS number now leads (`L#3 · deck Lec 2`).
+- **Stale Quiz 1 hints removed from labels and unit summaries:** "most recent material",
+  "newest material", "NOT on the official list", "end of the official list", and the Quiz 1
+  predictions ("very likely tested", "near-certain exam material", "highest-yield",
+  "high-probability MCQ"). The disputed
+  Statistics scope note ("this section exists in case he is right") now says the
+  distributions are core course material for later quizzes and the final.
+
 ## [2.2.1] — 2026-10-05
 
 ### Fixed

@@ -88,6 +88,14 @@ wasn't in Quiz 1. Expect it in later quizzes and the final."* Scope facts go in 
 assessment's brief, in `program.js` and the course's `briefs`, not in topic titles, labels or
 flashcards, because those outlive the quiz.
 
+### Source labels
+
+Every notes topic shows its source at the right of its title. Lectures are written **`L#N`**,
+the LMS's own lecture number (`#17` on the LMS is `L#17` here), joined with ` · `:
+`L#2 · L#4 · slides 21–24`. Deck numbering goes after it (`L#3 · deck Lec 2`).
+Textbook blocks use the book and chapter (`Anderson 14e ch3`). Labels describe where
+material comes from, never how likely it is to be tested or how recent it is.
+
 ### Permanent IDs: the one rule that matters
 
 Every question, trap and definition has a permanent ID (`foc-q0012`, `ebh-t0003`,
