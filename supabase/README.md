@@ -5,8 +5,10 @@ needs is in `migrations/`. Apply each file once, in order.
 
 ## First-time setup
 
-1. **Run the migration.** Supabase dashboard → **SQL Editor** → **New query** → paste
-   `migrations/20261005000000_v2_core.sql` → **Run**. You should see "Success. No rows returned".
+1. **Run the migrations, oldest first.** Supabase dashboard → **SQL Editor** → **New query** →
+   paste a file → **Run**. You should see "Success. No rows returned". Then the next file.
+   - `migrations/20261005000000_v2_core.sql`: accounts, progress, announcements, admin
+   - `migrations/20261005120000_privacy_requests.sql`: privacy requests
 2. **Switch on the sign-up gate.** **Authentication → Hooks** → **Before User Created** →
    type *Postgres* → schema `public`, function `hook_before_user_created` → enable. This stops
    any non-`@iitj.ac.in` account from being created. (Row-level security already locks such

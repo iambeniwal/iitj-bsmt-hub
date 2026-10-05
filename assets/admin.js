@@ -6,7 +6,7 @@
    checks is_admin() in the database, so a student who opens #/admin
    gets nothing back.
 
-   Tabs: overview · cohort weak spots · students · announcements · quiz dates
+   Tabs: overview · cohort weak spots · students · requests · announcements · quiz dates
    =================================================================== */
 (function () {
 "use strict";
@@ -15,7 +15,8 @@ const H = window.HUB, CL = H.cloud;
 if (!H.ui || !CL) return;
 const { esc, crumbs, link, fmtDate, fmtTime, fmtDay, plural, META, SLUGS, QBY, $, $$ } = H.ui;
 const app = document.getElementById("app");
-const TABS = [["overview", "Overview"], ["weak", "Cohort weak spots"], ["students", "Students"], ["news", "Announcements"], ["dates", "Quiz dates"]];
+const TABS = [["overview", "Overview"], ["weak", "Cohort weak spots"], ["students", "Students"], ["requests", "Requests"], ["news", "Announcements"], ["dates", "Quiz dates"]];
+const REQ = { access: "See what's held", correct: "Correct something", delete: "Delete data", grievance: "Complaint", other: "Other" };
 
 /* IST <-> <input type="datetime-local"> */
 const toLocal = iso => iso ? new Date(iso).toLocaleString("sv-SE", { timeZone: "Asia/Kolkata" }).replace(" ", "T").slice(0, 16) : "";
@@ -33,7 +34,7 @@ H.views.admin = function (p) {
     <nav><div class="navrow">${TABS.map(([k, l]) => `<a href="${link("admin", { tab: k })}"${k === tab ? ' aria-current="true"' : ""}>${l}</a>`).join("")}</div></nav>
     <section class="tight" id="pane"><p class="hint">Loading…</p></section>`;
   const pane = $("#pane");
-  ({ overview, weak, students, news, dates })[tab](pane, p);
+  ({ overview, weak, students, requests, news, dates })[tab](pane, p);
 };
 
 /* ---------------- overview ---------------- */
@@ -46,6 +47,7 @@ async function overview(pane) {
       ${tile("Active today", o.active_1d, `${o.active_7d} in the last 7 days`)}
       ${tile("Answers this week", o.attempts_7d, `${Number(o.attempts_all).toLocaleString("en-IN")} all time`)}
       ${tile("Mock papers this week", o.mocks_7d, "full timed papers")}
+      <a class="tile${o.requests_open ? " warn" : ""}" href="${link("admin", { tab: "requests" })}"><span class="k">Open privacy requests</span><span class="v">${o.requests_open || 0}</span><span class="s">reply within ${H.program.replyDays} days</span></a>
     </div>
     <p class="hint" style="margin-top:14px">Guests aren't counted: their progress never leaves their browser. Page views for everyone are in Google Analytics.</p>`;
   } catch (e) { fail(pane, e); }
@@ -97,6 +99,44 @@ async function students(pane) {
     $$("[data-del]", pane).forEach(b => b.addEventListener("click", async () => {
       if (prompt(`Type ${b.dataset.email} to delete this account and all its data for good:`) !== b.dataset.email) return;
       try { await CL.rpc("admin_delete_user", { target: b.dataset.del }); students(pane); } catch (e) { alert(e.message); }
+    }));
+  } catch (e) { fail(pane, e); }
+}
+
+/* ---------------- privacy requests ---------------- */
+async function requests(pane) {
+  try {
+    const { data, error } = await CL.table("privacy_requests").select("*").order("created_at", { ascending: false });
+    if (error) throw error;
+    const open = data.filter(r => r.status === "received" || r.status === "in_progress");
+    const due = r => Date.parse(r.created_at) + H.program.replyDays * 864e5;
+    const row = r => {
+      const late = (r.status === "received" || r.status === "in_progress") && Date.now() > due(r);
+      return `<form class="card aform rqa" data-id="${r.id}" style="margin-bottom:10px">
+        <div class="qmeta"><span class="qtopic">${esc(REQ[r.kind])}</span><span class="qnum">${fmtDate(r.created_at)} ${fmtTime(r.created_at)}</span>
+          <span class="hint">${esc(r.email)}${r.user_id ? "" : " · account deleted"}</span>
+          ${late ? '<span class="lbl weak">overdue</span>' : r.status === "received" || r.status === "in_progress" ? `<span class="hint">reply by ${fmtDay(due(r))}</span>` : ""}</div>
+        <p style="white-space:pre-wrap">${esc(r.message)}</p>
+        <div class="row">
+          <label style="flex:0 1 180px">Status<select name="status">${["received", "in_progress", "resolved", "declined"].map(s => `<option value="${s}"${r.status === s ? " selected" : ""}>${s.replace("_", " ")}</option>`).join("")}</select></label>
+          <label style="flex:3">Reply (the student sees this)<textarea name="response" rows="2" maxlength="4000">${esc(r.response || "")}</textarea></label>
+        </div>
+        <div class="actions"><button class="btn sm" type="submit">Save</button><span class="hint amsg"></span></div>
+      </form>`;
+    };
+    pane.innerHTML = `<p class="lede">Privacy requests from signed-in students: access, correction, deletion and complaints. Reply within
+      ${H.program.replyDays} days, as the privacy notice promises.${H.program.requestForm ? " Requests from people who can't sign in arrive through the Google Form instead." : ""}</p>
+      <h3 class="subhead">Open · ${open.length}</h3>${open.length ? open.map(row).join("") : `<div class="empty">Nothing waiting.</div>`}
+      ${data.length > open.length ? `<h3 class="subhead">Closed</h3>${data.filter(r => !open.includes(r)).map(row).join("")}` : ""}`;
+    $$("form.rqa", pane).forEach(form => form.addEventListener("submit", async e => {
+      e.preventDefault();
+      const f = new FormData(form);
+      if ((f.get("status") === "resolved" || f.get("status") === "declined") && !String(f.get("response")).trim()) {
+        form.querySelector(".amsg").textContent = "Write a reply before closing it: the student only sees what you write here."; return;
+      }
+      const r = await CL.table("privacy_requests").update({ status: f.get("status"), response: String(f.get("response")).trim() || null }).eq("id", form.dataset.id);
+      if (r.error) { form.querySelector(".amsg").textContent = r.error.message; return; }
+      requests(pane);
     }));
   } catch (e) { fail(pane, e); }
 }

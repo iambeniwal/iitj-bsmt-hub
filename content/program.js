@@ -17,6 +17,11 @@ HUB.program = {
   name: "B.S. in Management & Technology",
   institute: "IIT Jodhpur",
   batch: "382",
+  /* Privacy requests: signed-in students use the form on their account
+     page. This Google Form is the route for anyone who can't sign in.
+     Empty = not set up yet, and the notice says so. */
+  requestForm: "https://forms.gle/ixeDDj4dPVuFRyaz7",
+  replyDays: 7,
   marking: { correct: 1, incorrect: -0.25, blank: 0,
     note: "+1 correct · −0.25 wrong · 0 blank" }
 };

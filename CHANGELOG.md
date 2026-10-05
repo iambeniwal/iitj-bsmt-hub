@@ -10,6 +10,29 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.1.0] — 2026-10-05
+
+### Added
+- **Privacy requests, without a published email address.** Signed-in students file one
+  from **Account → Privacy request**: see what's held, correct it, delete it, or make a
+  complaint. They see its status and the reply on the same page. It lands in a new
+  **Admin → Requests** tab, which flags anything older than the promised reply window
+  (`replyDays` in `content/program.js`, 7 days) and won't let a request be closed without
+  a reply. The overview counts open requests.
+  - The database stamps each request with the sender's own account and email, whatever
+    the page sends, and an admin can't rewrite what the student wrote.
+  - Suspended students can still file. A grievance route has to stay open to exactly the
+    people most likely to have a grievance.
+  - Requests are kept as a record of how each was handled, even after the account is
+    deleted, and the privacy notice says so. At most five open per student.
+- **A route for people who can't sign in**: `requestForm` in `content/program.js` holds a
+  Google Form link. Until it's set, the notice points to LinkedIn.
+- The privacy notice gains **How to make a request**, and states the reply window.
+- `supabase/migrations/20261005120000_privacy_requests.sql`, and 12 more checks in
+  `npm run test:db` (54 in all). One of them caught a real bug before release: the
+  safeguard that stops an admin rewriting a request had also stopped account deletion from
+  clearing the request's link to the deleted account.
+
 ## [2.0.0] — 2026-10-05
 
 ### Added

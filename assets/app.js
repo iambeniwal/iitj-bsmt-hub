@@ -872,6 +872,18 @@ function mistakesView() {
   ${footer()}`;
 }
 
+/* privacy requests (assets/admin.js has the other side) */
+const REQ = { access: "See what's held about me", correct: "Correct something", delete: "Delete my data", grievance: "Make a complaint", other: "Something else" };
+const REQSTATE = { received: ["Received", "soon"], in_progress: ["In progress", "later"], resolved: ["Resolved", "ready"], declined: ["Declined", "past"] };
+async function loadRequests() {
+  const el = $("#rqlist"); if (!el) return;
+  const { data, error } = await CL.table("privacy_requests").select("*").order("created_at", { ascending: false });
+  if (error) { el.innerHTML = `<p class="hint">Couldn't load your requests: ${esc(error.message)}</p>`; return; }
+  el.innerHTML = data.length ? `<h4 class="rqh">Your requests</h4>` + data.map(r => `<div class="rq">
+      <div class="qmeta"><span class="pill ${REQSTATE[r.status][1]}">${REQSTATE[r.status][0]}</span><span class="qnum">${fmtDay(r.created_at)}</span><span class="qtopic">${esc(REQ[r.kind])}</span></div>
+      <p>${esc(r.message)}</p>${r.response ? `<div class="why"><b>Reply${r.resolved_at ? " · " + fmtDay(r.resolved_at) : ""}:</b> ${annBody(r.response)}</div>` : ""}</div>`).join("") : "";
+}
+
 /* =================================================================
    MY DATA / ACCOUNT
    ================================================================= */
@@ -896,6 +908,7 @@ function dataView() {
           <p class="hint">Only <b>@iitj.ac.in</b> accounts can sign in. Anything you've done as a guest moves into your account the first time you sign in.</p>
           <div class="actions" style="margin-top:12px"><button class="btn" id="gsi"${CL.status === "signing-in" ? " disabled" : ""}>${CL.status === "signing-in" ? "Opening Google…" : "Continue with Google"}</button></div>
           <p class="hint" style="margin-top:10px">By signing in you agree to the <a href="#/privacy">privacy notice</a>: your name, IITJ email and your answers are stored so the hub can track your progress. You can delete all of it at any time.</p>
+          <p class="hint">Need something done about your data but can't sign in? See <a href="#/privacy">How to make a request</a>.</p>
         </div>${reset}<p class="hint" id="msg" style="margin-top:14px"></p></section>${footer()}`;
     $("#gsi").addEventListener("click", () => CL.signIn());
   } else {
@@ -910,10 +923,27 @@ function dataView() {
           <div class="actions" style="margin-top:12px"><button class="btn ghost" id="out">Sign out</button></div>
           <p class="hint" style="margin-top:8px">Signing out also removes the copy kept in this browser, so nothing is left behind on a shared computer.</p></div>
         ${reset}
+        <div class="card" style="margin-top:14px" id="preq"><h3 class="subhead" style="margin-top:0">Privacy request</h3>
+          <p class="hint">Ask what's held about you, ask for a correction or deletion, or make a complaint. Rahul replies here within ${H.program.replyDays} days.</p>
+          <form id="rqf" class="aform" style="margin-top:10px">
+            <label>What do you need?<select name="kind">${Object.entries(REQ).map(([k, l]) => `<option value="${k}">${l}</option>`).join("")}</select></label>
+            <label>Details<textarea name="message" rows="3" maxlength="4000" required placeholder="What would you like done?"></textarea></label>
+            <div class="actions"><button class="btn sm" type="submit">Send request</button><span class="hint" id="rqmsg"></span></div>
+          </form>
+          <div id="rqlist"></div></div>
         <div class="card" style="margin-top:14px"><h3 class="subhead" style="margin-top:0">Delete my account</h3>
           <p class="hint">Permanently deletes your account and every answer, flashcard and mock paper stored with it. This can't be undone. See the <a href="#/privacy">privacy notice</a>.</p>
           <div class="actions" style="margin-top:10px"><button class="btn warn" id="del">Delete my account and data</button></div></div>
         <p class="hint" id="msg" style="margin-top:14px"></p></section>${footer()}`;
+    loadRequests();
+    $("#rqf").addEventListener("submit", async e => {
+      e.preventDefault();
+      const f = new FormData(e.target), msg = $("#rqmsg");
+      const r = await CL.table("privacy_requests").insert({ kind: f.get("kind"), message: String(f.get("message")).trim() });
+      if (r.error) { msg.textContent = r.error.message; return; }
+      e.target.reset(); msg.textContent = "Sent. You'll see the reply below.";
+      loadRequests();
+    });
     $("#out").addEventListener("click", async () => {
       if (CL.pending() && !confirm(`${plural(CL.pending(), "change")} haven't uploaded yet (you seem to be offline). Sign out anyway and lose them?`)) return;
       await CL.signOut();
@@ -955,15 +985,16 @@ function privacyView() {
     <section class="tight prose">
       <h3>Who is responsible</h3>
       <p>The BSMT Study Hub is run by Rahul Beniwal, a student on IIT Jodhpur's B.S. in Management &amp; Technology, as a personal project. It is not
-        run by, or affiliated with, IIT Jodhpur or Masai School. For anything about your data, message Rahul on
-        <a href="https://www.linkedin.com/in/iambeniwal/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+        run by, or affiliated with, IIT Jodhpur or Masai School. For anything about your data, use one of the routes under
+        <a href="#/privacy" data-jump="rights">How to make a request</a> below.</p>
       <h3>As a guest</h3>
       <p>Nothing about you leaves your device. Your progress is kept in your browser's local storage, and clearing your browser data deletes it.</p>
       <h3>If you sign in</h3>
       <p>Signing in with your @iitj.ac.in Google account stores:</p>
       <ul>
         <li>your <b>name and IITJ email address</b>, as Google provides them;</li>
-        <li>your <b>study activity</b>: each answer (which question, right or wrong, when), your flashcard schedule, flagged questions, mock-paper scores, and which announcements you've read.</li>
+        <li>your <b>study activity</b>: each answer (which question, right or wrong, when), your flashcard schedule, flagged questions, mock-paper scores, and which announcements you've read;</li>
+        <li>any <b>privacy request</b> you file, and the reply to it.</li>
       </ul>
       <p>That's all. The hub doesn't see your Google password, your contacts, your other email, or anything else in your Google account.</p>
       <h3>Why</h3>
@@ -975,13 +1006,23 @@ function privacyView() {
         student list and progress data in order to manage the hub.</p>
       <h3>How long, and how to delete it</h3>
       <p>Until you delete it. <b>Account → Delete my account and data</b> erases your account and everything stored with it, immediately and permanently.
-        <b>Reset everything</b> keeps the account but erases its progress.</p>
+        <b>Reset everything</b> keeps the account but erases its progress. Privacy requests are the one exception: each is kept, with the
+        email it came from, as a record of how it was handled, even after the account is deleted.</p>
       <h3>Your rights</h3>
-      <p>You can ask what's held about you, ask for it to be corrected or erased, withdraw your consent by deleting your account, and raise a
-        grievance by messaging Rahul at the link above. If that doesn't resolve it, you can complain to the Data Protection Board of India.</p>
+      <p>You can ask what's held about you, ask for it to be corrected or erased, withdraw your consent by deleting your account, and make a
+        complaint. If a complaint isn't resolved to your satisfaction, you can take it to the Data Protection Board of India.</p>
+      <h3 id="rights">How to make a request</h3>
+      <ul>
+        <li><b>If you can sign in:</b> open <a href="#/data">Account</a> and use <b>Privacy request</b>. You'll see its status and the reply there.</li>
+        <li><b>If you can't sign in</b> (no account, or it's suspended or deleted): ${H.program.requestForm
+          ? `use the <a href="${esc(H.program.requestForm)}" target="_blank" rel="noopener noreferrer">privacy request form</a>. It's a Google Form, so Google handles what you type into it.`
+          : `the public request form is being set up. Until then, message Rahul Beniwal on <a href="https://www.linkedin.com/in/iambeniwal/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.`}</li>
+      </ul>
+      <p>Every request gets a reply within <b>${H.program.replyDays} days</b>.</p>
       <h3>Analytics</h3>
       <p>The hosted site counts page visits with Google Analytics. It isn't linked to your account and receives no names, emails or answers.</p>
     </section>${footer()}`;
+  $$("[data-jump]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); document.getElementById(a.dataset.jump).scrollIntoView({ behavior: "smooth" }); }));
 }
 
 /* helpers shared with admin.js */

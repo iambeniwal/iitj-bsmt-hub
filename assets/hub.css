@@ -579,3 +579,8 @@ div.opt{cursor:default}
 .aform .row > label{flex:1 1 150px}
 tr.muted td{opacity:.6}
 td .qid{font-family:var(--mono);font-size:11px;color:var(--blue);text-decoration:none}
+/* privacy requests */
+.rqh{font-family:var(--display);font-size:14px;margin:16px 0 6px}
+.rq{border-top:1px dotted var(--rule-2);padding:10px 0}
+.rq p{font-size:14.5px;color:var(--ink-2);white-space:pre-wrap}
+.rq .why{margin-top:8px}

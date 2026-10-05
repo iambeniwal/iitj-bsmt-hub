@@ -129,6 +129,8 @@ python3 tools/build-offline.py
 
 Full history in [`CHANGELOG.md`](CHANGELOG.md). Most recent:
 
+- **[2.1.0] — 2026-10-05**: privacy requests. Students file them from their account page and
+  you answer in Admin → Requests, so no email address has to be published.
 - **[2.0.0] — 2026-10-05**: sign in with an `@iitj.ac.in` Google account to keep progress
   across devices (guest mode still works). Adds announcements, an admin panel with cohort
   weak spots and quiz dates, and a privacy notice with account deletion.

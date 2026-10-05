@@ -107,6 +107,24 @@ r = await as("bob", "insert into public.attempts (qid, ok) values ('ebh-q0006', 
 r = await as("rahul", `select public.admin_set_suspended('${users.rahul.id}', true)`); check("admin cannot suspend self", !!r.error, r.error);
 await as("rahul", `select public.admin_set_suspended('${users.bob.id}', false)`);
 
+// privacy requests
+r = await as("alice", `insert into public.privacy_requests (kind, message, email, status, response) values ('access', 'What do you hold about me?', 'spoof@evil.com', 'resolved', 'fake reply') returning email, status, response`);
+check("alice files a request; email/status/reply are stamped, not taken from her", !r.error && r.rows[0].email === "alice@iitj.ac.in" && r.rows[0].status === "received" && r.rows[0].response === null, JSON.stringify(r.rows?.[0] || r.error));
+r = await as("bob", "select * from public.privacy_requests"); check("bob can't see alice's request", !r.error && r.rows.length === 0);
+r = await as("alice", "update public.privacy_requests set status = 'resolved'"); check("alice can't change her request's status", !r.error && (await db.query("select status from public.privacy_requests")).rows[0].status === "received");
+r = await as("alice", "delete from public.privacy_requests"); check("alice can't delete requests", !!r.error || (await db.query("select count(*)::int n from public.privacy_requests")).rows[0].n === 1, r.error);
+r = await as("eve", "insert into public.privacy_requests (kind, message) values ('other', 'hi')"); check("gmail account can't file", !!r.error, r.error);
+r = await as("anon", "select * from public.privacy_requests"); check("anon can't read requests", !!r.error, r.error);
+await as("rahul", `select public.admin_set_suspended('${users.bob.id}', true)`);
+r = await as("bob", "insert into public.privacy_requests (kind, message) values ('grievance', 'Why was I suspended?')"); check("suspended bob can still file a grievance", !r.error, r.error);
+await as("rahul", `select public.admin_set_suspended('${users.bob.id}', false)`);
+r = await as("rahul", "update public.privacy_requests set status = 'resolved', response = 'Here is your data.', message = 'tampered' where email = 'alice@iitj.ac.in' returning status, resolved_at, message");
+check("admin resolves; resolved_at set; message can't be rewritten", !r.error && r.rows[0].resolved_at && r.rows[0].message === "What do you hold about me?", JSON.stringify(r.rows?.[0] || r.error));
+r = await as("alice", "select status, response from public.privacy_requests"); check("alice sees the reply", !r.error && r.rows[0].response === "Here is your data.");
+r = await as("rahul", "select public.admin_overview() o"); check("overview counts open requests", !r.error && r.rows[0].o.requests_open === 1, JSON.stringify(r.rows?.[0]?.o?.requests_open));
+for (let i = 0; i < 5; i++) await as("alice", "insert into public.privacy_requests (kind, message) values ('other', 'x')");
+r = await as("alice", "insert into public.privacy_requests (kind, message) values ('other', 'sixth')"); check("a 6th open request is refused", !!r.error, r.error);
+
 // read receipts
 r = await as("alice", "insert into public.announcement_reads (announcement_id) select id from public.announcements limit 1"); check("alice marks announcement read", !r.error, r.error);
 
@@ -114,6 +132,8 @@ r = await as("alice", "insert into public.announcement_reads (announcement_id) s
 r = await as("bob", "select public.delete_my_account()"); check("bob deletes his account", !r.error, r.error);
 const left = (await db.query(`select (select count(*) from public.attempts where user_id='${users.bob.id}')::int a, (select count(*) from public.profiles where id='${users.bob.id}')::int p`)).rows[0];
 check("bob's rows are gone", left.a === 0 && left.p === 0, JSON.stringify(left));
+r = (await db.query("select user_id, email from public.privacy_requests where email = 'bob@iitj.ac.in'")).rows;
+check("bob's grievance record survives his account deletion", r.length === 1 && r[0].user_id === null, JSON.stringify(r));
 r = await as("alice", `select public.admin_delete_user('${users.rahul.id}')`); check("student cannot delete others", !!r.error, r.error);
 
 console.log(`\n${results.filter(Boolean).length}/${results.length} passed`);
