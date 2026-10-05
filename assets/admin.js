@@ -309,10 +309,20 @@ async function pilotReview(el, run) {
   }
   const byId = Object.fromEntries(data.items.map(i => [i.id, i]));
   const todo = data.reviews.filter(r => r.reviewed_at == null);
-  if (!todo.length) { el.innerHTML = `<div class="empty"><b>All ${data.reviews.length} reviewed.</b> Thank you. <a href="${link("admin", { tab: "aitest", view: "verdict" })}">See the verdict →</a></div>`; return; }
+  if (!todo.length) {
+    const who = [...new Set(data.reviews.map(r => r.reviewer))].map(w => w === "human" ? "you" : w.replace("openai:", "OpenAI ")).join(" and ");
+    el.innerHTML = `<div class="empty"><b>All ${data.reviews.length} reviewed</b> by ${esc(who)}. <a href="${link("admin", { tab: "aitest", view: "verdict" })}">See the verdict →</a></div>`; return;
+  }
   const r = todo[0], it = byId[r.item_id], q = it.item;
   const n = data.reviews.length - todo.length + 1;
-  el.innerHTML = `<div class="card">
+  const offerAI = todo.length === data.reviews.length;
+  el.innerHTML = `${offerAI ? `<div class="card signcard" style="margin-bottom:14px">
+      <h3 class="subhead" style="margin-top:0">Don't know the material yet? Let an independent reviewer do it</h3>
+      <p class="hint">OpenAI's gpt-6.1-sol, which isn't one of the four contestants, grades all ${data.reviews.length} questions against the same notes and the same four
+        questions, blind to which model wrote them, and gives a plain-English reason for every verdict. About $0.70 on your OpenAI key.</p>
+      <div class="actions" style="margin-top:10px"><button class="btn" id="aiRev">Have OpenAI review all ${data.reviews.length}</button></div>
+      <pre id="revlog" class="pilotlog" hidden></pre></div>` : ""}
+    <div class="card">
     <div class="qmeta"><span class="qnum">${n} / ${data.reviews.length}</span><span class="qtopic">${esc(META[it.course].short)} · ${esc(it.unit)}</span><span class="qtopic">${esc(q.kind)}</span></div>
     <p class="qtext">${esc(q.question)}</p>
     <div class="opts">${q.options.map((o, k) => `<div class="opt${k === q.answer_index ? " right" : ""}"><span class="k">${"ABCD"[k]}</span><span>${esc(o)}${k === q.answer_index ? " <b>(the key)</b>" : ""}</span></div>`).join("")}</div>
@@ -327,6 +337,25 @@ async function pilotReview(el, run) {
       <label>Note (optional)<input name="note" maxlength="1000"></label>
       <div class="actions"><button class="btn" type="submit">Save &amp; next</button><a class="btn ghost sm" href="${link("c/" + it.course, { tab: "notes", u: it.unit })}" target="_blank">Open the notes</a><span class="hint amsg"></span></div>
     </form></div>`;
+  const aiRev = $("#aiRev");
+  if (aiRev) aiRev.addEventListener("click", async () => {
+    aiRev.disabled = true; aiRev.textContent = "Reviewing… keep this tab open";
+    const log = $("#revlog"); log.hidden = false;
+    const say = t => { log.textContent += t + "\n"; log.scrollTop = log.scrollHeight; };
+    // one call per notes unit, mixing all four models' questions so the reviewer can't group by author
+    const groups = {};
+    todo.forEach(rv => { const i = byId[rv.item_id]; (groups[i.course + "|" + i.unit] = groups[i.course + "|" + i.unit] || []).push(i.id); });
+    for (const [key, ids] of Object.entries(groups)) {
+      for (let k = 0; k < ids.length; k += 10) {
+        try {
+          const res = await invoke({ action: "review", run, ids: ids.slice(k, k + 10) });
+          say(res.ok ? `✓ ${key.split("|")[1]}: ${res.reviewed} reviewed, ${usd(res.cost_usd)}, ${(res.ms / 1000).toFixed(0)}s` : `✗ ${key}: ${res.error}`);
+        } catch (e) { say(`✗ ${key}: ${e.message}`); if (/spend cap|admin only/.test(e.message)) return; }
+      }
+    }
+    say("Done.");
+    setTimeout(() => pilotReview(el, run), 800);
+  });
   $("#rv").addEventListener("submit", async e => {
     e.preventDefault();
     const f = new FormData(e.target);
@@ -361,7 +390,13 @@ async function pilotVerdict(el, run) {
         <span class="hint">${x.n} reviewed · ${x.wrong} wrong key · ${x.amb} ambiguous · referee rejected ${Math.round(x.reject * 100)}% · ${isFinite(x.cost10) ? usd(x.cost10) : "—"}/10Q</span></td>`).join("")}
         <td><b>${ok.length ? PILOT.models.find(m => m[0] === ok[0][0])[1] : "none qualifies"}</b></td></tr>`; }).join("")}
     </tbody></table></div>
-    ${done.some(r => r.note) ? `<h3 class="subhead">Your notes</h3>${done.filter(r => r.note).map(r => `<p class="hint">· ${esc(META[byId[r.item_id].course].short)} (${esc(byId[r.item_id].model)}): ${esc(r.note)}</p>`).join("")}` : ""}`;
+    <p class="hint" style="margin-top:8px">Reviewed by ${esc([...new Set(done.map(r => r.reviewer))].map(w => w === "human" ? "you" : w.replace("openai:", "OpenAI ")).join(" and ") || "nobody yet")}.</p>
+    ${done.some(r => !r.key_ok || !r.single) ? `<h3 class="subhead">Every question that failed, and why</h3>${done.filter(r => !r.key_ok || !r.single).map(r => { const it = byId[r.item_id];
+      return `<div class="card" style="margin-bottom:8px"><div class="qmeta"><span class="qtopic">${esc(META[it.course].short)} · ${esc(it.unit)}</span><span class="qtopic">${esc(PILOT.models.find(m => m[0] === it.model)[1])}</span>
+        ${!r.key_ok ? '<span class="lbl weak">wrong key</span>' : ""}${!r.single ? '<span class="lbl shaky">ambiguous</span>' : ""}</div>
+        <p style="font-size:14.5px"><b>${esc(it.item.question)}</b></p>
+        <p class="hint">${it.item.options.map((o, k) => `${"ABCD"[k]}${k === it.item.answer_index ? " (key)" : ""}${r.reasons && r.reasons.correct_index === k ? " (reviewer's answer)" : ""}: ${esc(o)}`).join(" · ")}</p>
+        <p class="hint" style="margin-top:6px">${esc(!r.key_ok ? (r.reasons ? r.reasons.key : r.note || "") : (r.reasons ? r.reasons.single : r.note || ""))}</p></div>`; }).join("")}` : ""}`;
 }
 
 /* ---------------- announcements ---------------- */

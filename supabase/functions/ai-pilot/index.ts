@@ -7,6 +7,10 @@
 // POST { action: "referee", run, ids: [...] }
 //   The fixed referee (Claude Opus 5) answers those questions blind,
 //   without seeing the key, from the same notes.
+// POST { action: "review", run, ids: [...] }
+//   The independent reviewer (OpenAI gpt-6.1-sol, not a contestant)
+//   grades sampled questions against the notes on the human rubric,
+//   blind to which model wrote them, with a reason for each verdict.
 //
 // The provider keys live only in this function's secrets
 // (ANTHROPIC_API_KEY, GEMINI_API_KEY); the browser never sees them.
@@ -28,17 +32,20 @@ const PUBLISHABLE_KEY = "sb_publishable_6D3-SW5iw-YDoeWmkvPaag_c5Y150nq";   // p
 
 /* USD per million tokens, checked 5 Oct 2026 (Anthropic and Google price pages).
    Gemini 3.8 Flash is a promotional rate until 31 Dec 2026; it doubles after. */
-const MODELS: Record<string, { provider: "anthropic" | "google"; id: string; price: [number, number] }> = {
+type Provider = "anthropic" | "google" | "openai";
+const MODELS: Record<string, { provider: Provider; id: string; price: [number, number] }> = {
   "opus":         { provider: "anthropic", id: "claude-opus-5",          price: [5, 25] },
   "sonnet":       { provider: "anthropic", id: "claude-sonnet-5",        price: [2, 10] },
   "gemini-pro":   { provider: "google",    id: "gemini-3.1-pro-preview", price: [2, 12] },
   "gemini-flash": { provider: "google",    id: "gemini-3.8-flash",       price: [0.75, 3.75] },
+  "gpt-sol":      { provider: "openai",    id: "gpt-6.1-sol",            price: [2, 10] },     // reviewer only
 };
+const REVIEWER = "gpt-sol";
 const REFEREE = "opus";
 const COURSES = ["foundations-of-computing", "economic-business-history", "algorithmic-thinking-in-business",
   "financial-accounting", "statistics-for-managers", "principles-of-marketing"];
 /* stop well before the $10 provider limits, so a test never fails half-way on a hard cap */
-const RUN_CAP_USD = { anthropic: 9, google: 9 };
+const RUN_CAP_USD: Record<Provider, number> = { anthropic: 9, google: 9, openai: 9 };
 
 const CORS = {
   "Access-Control-Allow-Origin": "*",
@@ -126,6 +133,18 @@ const refUser = (notes: string, qs: { question: string; options: string[] }[]) =
   `<notes>\n${notes}\n</notes>\n\n` + qs.map((q, i) =>
     `Question ${i}: ${q.question}\n${q.options.map((o, k) => `  [${k}] ${o}`).join("\n")}`).join("\n\n");
 
+const revSystem = `You are reviewing multiple-choice practice questions for first-semester students before they are used. You are given the course notes, then each question with its intended answer (the key) and its explanation. Students lose 0.25 marks for a wrong answer, so judge strictly.
+For each question decide, using only the notes and sound subject knowledge:
+- key_ok: is the key actually correct? For calculations and code, work the answer out yourself before deciding.
+- single: is exactly one option defensible? false if another option could reasonably be argued correct, or if the question is unclear enough to make it a guess.
+- grounded: does the notes text support the question and its key?
+- distractors: how tempting are the wrong options to a student who half-knows the topic? 3 = genuinely tempting, 2 = some are, 1 = obvious.
+Give a short plain-English reason for each judgement that a non-expert can follow. If the key is wrong, give the index of the option that is correct (otherwise -1).`;
+
+const revUser = (notes: string, qs: { question: string; options: string[]; answer_index: number; explanation: string }[]) =>
+  `<notes>\n${notes}\n</notes>\n\n` + qs.map((q, i) =>
+    `Question ${i}: ${q.question}\n${q.options.map((o, k) => `  [${k}] ${o}`).join("\n")}\nKey: [${q.answer_index}]\nExplanation given: ${q.explanation}`).join("\n\n");
+
 /* ---------------- output schemas ---------------- */
 const GenSchema = z.object({ questions: z.array(z.object({
   question: z.string(), options: z.array(z.string()), answer_index: z.number().int(),
@@ -135,6 +154,19 @@ const RefSchema = z.object({ answers: z.array(z.object({
   index: z.number().int(), choice: z.number().int(), confidence: z.enum(["high", "medium", "low"]),
   ambiguous: z.boolean(), note: z.string(),
 })) });
+const RevSchema = z.object({ reviews: z.array(z.object({
+  index: z.number().int(), key_ok: z.boolean(), key_reason: z.string(), correct_index: z.number().int(),
+  single: z.boolean(), single_reason: z.string(), grounded: z.boolean(), grounded_reason: z.string(),
+  distractors: z.number().int(), distractors_reason: z.string(),
+})) });
+/* OpenAI strict mode: every property required, no extras */
+const str = { type: "string" }, int = { type: "integer" }, bool = { type: "boolean" };
+const REV_JSON = { type: "object", additionalProperties: false, required: ["reviews"], properties: { reviews: { type: "array", items: {
+  type: "object", additionalProperties: false,
+  required: ["index", "key_ok", "key_reason", "correct_index", "single", "single_reason", "grounded", "grounded_reason", "distractors", "distractors_reason"],
+  properties: { index: int, key_ok: bool, key_reason: str, correct_index: int, single: bool, single_reason: str,
+    grounded: bool, grounded_reason: str, distractors: { type: "integer", enum: [1, 2, 3] }, distractors_reason: str },
+} } } };
 /* the same shapes as plain JSON Schema, for Gemini's responseJsonSchema */
 const GEN_JSON = { type: "object", properties: { questions: { type: "array", items: { type: "object", properties: {
   question: { type: "string" }, options: { type: "array", items: { type: "string" } }, answer_index: { type: "integer" },
@@ -182,6 +214,30 @@ async function callGemini<T>(model: string, system: string, user: string, schema
   const u = body.usageMetadata ?? {};
   return { data: parsed.data, ms: Date.now() - t0, input: u.promptTokenCount ?? 0,
     output: (u.candidatesTokenCount ?? 0) + (u.thoughtsTokenCount ?? 0) };   // thinking is billed as output
+}
+
+async function callOpenAI<T>(model: string, system: string, user: string, schema: z.ZodType<T>, jsonSchema: unknown): Promise<Out<T>> {
+  const t0 = Date.now();
+  const res = await fetch("https://api.openai.com/v1/responses", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${Deno.env.get("OPENAI_API_KEY") ?? ""}` },
+    body: JSON.stringify({
+      model, reasoning: { effort: "high" }, max_output_tokens: 32000,
+      input: [{ role: "system", content: system }, { role: "user", content: user }],
+      text: { format: { type: "json_schema", name: "review", strict: true, schema: jsonSchema } },
+    }),
+    signal: AbortSignal.timeout(140_000),
+  });
+  const body = await res.json();
+  if (!res.ok) throw new Error(`openai ${res.status}: ${body?.error?.message ?? "error"}`);
+  if (body.status !== "completed") throw new Error(`openai ${body.status}: ${body.incomplete_details?.reason ?? ""}`);
+  const parts = (body.output ?? []).filter((o: { type: string }) => o.type === "message").flatMap((o: { content: { type: string; text?: string }[] }) => o.content);
+  if (parts.some((c: { type: string }) => c.type === "refusal")) throw new Error("openai refused");
+  const text = parts.filter((c: { type: string }) => c.type === "output_text").map((c: { text: string }) => c.text).join("");
+  const parsed = schema.safeParse(JSON.parse(text));
+  if (!parsed.success) throw new Error("output did not match the schema");
+  const u = body.usage ?? {};
+  return { data: parsed.data, ms: Date.now() - t0, input: u.input_tokens ?? 0, output: u.output_tokens ?? 0 };   // output includes reasoning
 }
 
 /* ---------------- automatic checks ---------------- */
@@ -238,7 +294,7 @@ Deno.serve(async (req) => {
   if (!/^[a-z0-9-]{3,40}$/.test(run)) return json({ error: "bad run id" }, 400);
 
   // the spend guard: total for this run, per provider, from our own call log
-  const spent = async (provider: "anthropic" | "google") => {
+  const spent = async (provider: Provider) => {
     const names = Object.entries(MODELS).filter(([, m]) => m.provider === provider).map(([k]) => k);
     const { data } = await db.from("ai_pilot_calls").select("cost_usd").eq("run", run).in("model", names);
     return (data ?? []).reduce((s, r) => s + Number(r.cost_usd), 0);
@@ -304,6 +360,41 @@ Deno.serve(async (req) => {
         if (upErr) throw upErr;
       }
       return json({ ok: true, judged: out.data.answers.length, cost_usd: costOf(REFEREE, out.input, out.output), ms: out.ms });
+    }
+
+    if (body.action === "review") {
+      const ids = (Array.isArray(body.ids) ? body.ids : []).map(Number).filter(Number.isFinite).slice(0, 10);
+      if (!ids.length) return json({ error: "no ids" }, 400);
+      if (await spent("openai") >= RUN_CAP_USD.openai) return json({ error: "spend cap reached for openai" }, 429);
+      const { data: items, error } = await db.from("ai_pilot_items").select("id, course, unit, item").in("id", ids).eq("run", run).order("id");
+      if (error) throw error;
+      if (!items.length) return json({ error: "no such items" }, 404);
+      const { course, unit } = items[0];
+      if (items.some((i) => i.course !== course || i.unit !== unit)) return json({ error: "one unit per review call" }, 400);
+      const notes = unitNotes(await loadCourse(course), unit);
+      const qs = items.map((i) => i.item as { question: string; options: string[]; answer_index: number; explanation: string });
+      let out: Out<z.infer<typeof RevSchema>>;
+      try {
+        out = await callOpenAI(MODELS[REVIEWER].id, revSystem, revUser(notes.text, qs), RevSchema, REV_JSON);
+      } catch (e) {
+        await logCall({ run, model: REVIEWER, role: "review", course, unit, ok: false, error: String((e as Error).message ?? e).slice(0, 500) });
+        return json({ ok: false, error: String((e as Error).message ?? e) });
+      }
+      await logCall({ run, model: REVIEWER, role: "review", course, unit, ok: true,
+        input_tokens: out.input, output_tokens: out.output, cost_usd: costOf(REVIEWER, out.input, out.output), ms: out.ms });
+      let saved = 0;
+      for (const r of out.data.reviews) {
+        const it = items[r.index];
+        if (!it) continue;
+        const { error: upErr } = await db.from("ai_pilot_reviews").update({
+          key_ok: r.key_ok, single: r.single, grounded: r.grounded, distractors: Math.min(3, Math.max(1, r.distractors)),
+          note: r.key_ok && r.single ? null : (r.key_ok ? r.single_reason : r.key_reason).slice(0, 1000),
+          reasons: { key: r.key_reason, single: r.single_reason, grounded: r.grounded_reason, distractors: r.distractors_reason, correct_index: r.correct_index },
+          reviewer: "openai:" + MODELS[REVIEWER].id, reviewed_at: new Date().toISOString(),
+        }).eq("item_id", it.id);
+        if (upErr) throw upErr; else saved++;
+      }
+      return json({ ok: true, reviewed: saved, cost_usd: costOf(REVIEWER, out.input, out.output), ms: out.ms });
     }
 
     if (body.action === "recheck") {   // re-run the automatic checks on stored items; no AI calls, no cost
