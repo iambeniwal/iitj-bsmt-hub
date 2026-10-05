@@ -1,9 +1,11 @@
 /* ===================================================================
-   Progress store — everything personal lives here, in this browser.
+   Progress store — the one place progress is read and written.
 
-   Nothing is sent anywhere. No accounts, no server: the hub is a
-   static site, and a student's attempts, mistakes and flashcard
-   schedule never leave their device. Clearing browser data erases them.
+   Guest mode: everything lives in this browser under "bsmt-hub:v1" and
+   nowhere else; clearing browser data erases it.
+   Signed in: the store switches to a per-account key
+   ("bsmt-hub:u:<user id>") and assets/cloud.js mirrors every change to
+   the database. The rest of the app never knows which mode it is in.
 
    Keyed by permanent content IDs (foc-q0012, ebh-t0003 …), which is
    why those IDs must never be renumbered — a renumber would silently
@@ -11,38 +13,41 @@
 
    Shape (localStorage "bsmt-hub:v1"):
      att   { qid: [[ts, ok, mode], …] }   last 12 attempts per question
-     cards { cardId: {due, ivl, ef, reps, lapses} }
+     cards { cardId: {due, ivl, ef, reps, lapses, upd} }
      flags { qid: 1 }
      mocks [{c, a, at, n, right, wrong, blank, score, max, secs, ids, picks}]
    =================================================================== */
 (function () {
 "use strict";
 
-const KEY = "bsmt-hub:v1";
+const GUEST = "bsmt-hub:v1";
 const DAY = 864e5;
 const blank = () => ({ v: 1, att: {}, cards: {}, flags: {}, mocks: [] });
 
-function read() {
+function read(key) {
   try {
-    const raw = localStorage.getItem(KEY);
+    const raw = localStorage.getItem(key);
     if (!raw) return blank();
-    const s = JSON.parse(raw);
-    return Object.assign(blank(), s);
+    return Object.assign(blank(), JSON.parse(raw));
   } catch (e) { return blank(); }
 }
 
-let S = read();
+let KEY = GUEST;
+let S = read(KEY);
 let persistOk = true;
 let timer = null;
-function save() {
-  clearTimeout(timer);
-  timer = setTimeout(() => {
-    try { localStorage.setItem(KEY, JSON.stringify(S)); persistOk = true; }
-    catch (e) { persistOk = false; }
-  }, 120);
+function write() {
+  clearTimeout(timer); timer = null;
+  try { localStorage.setItem(KEY, JSON.stringify(S)); persistOk = true; }
+  catch (e) { persistOk = false; }
 }
+function save() { clearTimeout(timer); timer = setTimeout(write, 120); }
 // a second tab may have written since we loaded
-window.addEventListener("storage", e => { if (e.key === KEY) S = read(); });
+window.addEventListener("storage", e => { if (e.key === KEY) S = read(KEY); });
+
+/* change events, for cloud sync */
+const listeners = [];
+const emit = ev => listeners.forEach(fn => { try { fn(ev); } catch (e) { console.error(e); } });
 
 const store = {
   get persists() { return persistOk; },
@@ -50,9 +55,11 @@ const store = {
   /* ---------- question attempts ---------- */
   record(qid, ok, mode) {
     const a = S.att[qid] || (S.att[qid] = []);
-    a.push([Date.now(), ok ? 1 : 0, mode || "practice"]);
+    const rec = [Date.now(), ok ? 1 : 0, mode || "practice"];
+    a.push(rec);
     if (a.length > 12) a.splice(0, a.length - 12);
     save();
+    emit({ t: "att", qid, at: rec[0], ok: !!ok, mode: rec[2] });
   },
   attempts(qid) { return S.att[qid] || []; },
 
@@ -94,6 +101,7 @@ const store = {
   toggleFlag(qid) {
     if (S.flags[qid]) delete S.flags[qid]; else S.flags[qid] = 1;
     save();
+    emit({ t: "flag", qid, on: !!S.flags[qid] });
     return !!S.flags[qid];
   },
 
@@ -108,15 +116,26 @@ const store = {
   review(id, grade) {
     S.cards[id] = schedule(S.cards[id], grade);
     save();
+    emit({ t: "card", id, c: S.cards[id] });
     return S.cards[id];
   },
 
   /* ---------- mock papers ---------- */
-  addMock(m) { S.mocks.push(m); if (S.mocks.length > 60) S.mocks.shift(); save(); },
+  addMock(m) { S.mocks.push(m); if (S.mocks.length > 60) S.mocks.shift(); save(); emit({ t: "mock", m }); },
   mocks(slug, aid) { return S.mocks.filter(m => (!slug || m.c === slug) && (!aid || m.a === aid)); },
 
   /* ---------- start over ---------- */
-  reset() { S = blank(); save(); }
+  reset() { S = blank(); save(); emit({ t: "reset" }); },
+
+  /* ---------- plumbing for cloud.js ---------- */
+  on(fn) { listeners.push(fn); },
+  get key() { return KEY; },
+  guestKey: GUEST,
+  use(key) { if (timer) write(); KEY = key; S = read(KEY); },   // switch guest <-> account
+  peek(key) { return read(key); },                              // read another key without switching
+  drop(key) { try { localStorage.removeItem(key); } catch (e) {} },
+  snapshot() { return JSON.parse(JSON.stringify(S)); },
+  replace(state) { S = Object.assign(blank(), state); write(); }
 };
 
 function schedule(prev, grade) {
@@ -126,6 +145,7 @@ function schedule(prev, grade) {
     c.reps = 0; c.lapses++; c.ef = Math.max(1.3, c.ef - 0.2);
     c.ivl = 0;
     c.due = Date.now() + 10 * 60e3;
+    c.upd = Date.now();
     return c;
   }
   if (grade === 1) { ivl = c.reps === 0 ? 1 : Math.max(1, c.ivl * 1.2); c.ef = Math.max(1.3, c.ef - 0.15); }
@@ -134,6 +154,7 @@ function schedule(prev, grade) {
   c.reps++;
   c.ivl = Math.round(ivl * 10) / 10;
   c.due = Date.now() + c.ivl * DAY;
+  c.upd = Date.now();
   return c;
 }
 

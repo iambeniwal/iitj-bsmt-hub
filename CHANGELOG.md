@@ -10,6 +10,50 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.0.0] — 2026-10-05
+
+### Added
+- **Sign in with Google, `@iitj.ac.in` accounts only.** Guest mode is unchanged and still
+  needs nothing. Signing in saves progress (every answer, flag, flashcard review and mock
+  paper) to your account, so it follows you between laptop and phone. The domain rule is
+  enforced by the database itself, by a sign-up hook and by row-level security, not just by
+  the page.
+- **Guest progress moves into your account** the first time you sign in, and the page
+  says how much came over. After that, a merge keeps the account, this browser and the
+  database in step: nothing doubles up, and a flashcard keeps its most recent review.
+- **Offline-safe sync.** Changes queue in the browser and upload in batches. If you're
+  offline they wait and retry, and the account page shows how many are pending.
+- **Updates**: announcements from the admin, readable by guests too. Pinned and new ones
+  show at the top of the home page, and course-specific ones on that course's page, with
+  an unread count in the top bar.
+- **Admin panel** (`#/admin`, admin accounts only):
+  - overview numbers
+  - **cohort weak spots**: the topics and questions the whole batch gets wrong most, over
+    7, 30 or 90 days
+  - the student list, with suspend, restore and delete
+  - an announcement editor with scheduling, expiry and pinning
+  - **quiz dates**: set a quiz's date, length and syllabus as soon as the LMS announces it,
+    and countdowns and mock papers follow with no code change
+- **Privacy notice** (`#/privacy`): what is stored, why, who can see it, and how to delete
+  it, written with India's DPDP Act, 2023 in mind.
+- **Delete my account and data** on the account page. It erases the account and every row
+  stored with it, immediately. **Reset everything** also clears the account's copy when
+  you're signed in.
+- **Signing out removes this browser's copy** of the account, so nothing is left on a
+  shared computer.
+- `supabase/migrations/`: the schema, with row-level security on every table.
+  `supabase/README.md` covers the one-time setup.
+- **Tests:** `npm run test:db` applies the migration to an in-memory Postgres and tries 42
+  access paths as a guest, two students, a non-IITJ Google account and an admin.
+  `npm run test:merge` runs 14 checks on the sync merge.
+- A **keep-alive GitHub Action** that makes one small read every three days, so the free
+  Supabase project never pauses.
+
+### Changed
+- The top bar has **Sign in** (or your initial, with a sync dot) in place of *My data*. The
+  offline copy has no sign-in and keeps *My data*.
+- The bank's search also matches a question ID exactly (for example `foc-q0012`).
+
 ## [1.2.0] — 2026-10-04
 
 ### Added

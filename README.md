@@ -27,10 +27,12 @@ Built around what classmates asked for after Quiz 1:
 | Practice that adapts to you | *Today* on the home page and *Smart session* on each course: mistakes, due reviews and weakest topics first; every topic labelled weak, shaky or strong |
 | Mistake revision | *Mistakes*: every question you miss stays here until you answer it correctly **twice in a row** |
 
-There are no accounts yet. Progress is stored in the browser (`localStorage`) and never
-leaves the device. It doesn't follow you to another device, and clearing browser data
-deletes it. Sign-in with an `@iitj.ac.in` Google account, with progress saved to a
-database, is planned for v2.0.
+**Guest or signed in.** As a guest, progress is stored in the browser (`localStorage`) and
+never leaves the device, and clearing browser data deletes it. Signing in with an
+`@iitj.ac.in` Google account saves progress to a Supabase database, so it follows you between
+devices; guest progress moves into the account the first time. Row-level security means each
+student can read only their own rows. See [`supabase/README.md`](supabase/README.md) and the
+in-app privacy notice.
 
 **Answer options are shuffled every time a question is shown**, so the position of the
 right answer tells you nothing. The content imported from the Quiz 1 site had 76% of its
@@ -44,6 +46,10 @@ index.html                  the whole app: one page, hash-routed
 assets/
   app.js                    router and every view
   store.js                  progress: attempts, mistakes, flags, flashcard schedule, mocks
+  adapt.js                  smart sessions, topic strength, spaced question review
+  cloud.js                  sign-in, sync outbox, announcements, quiz-date overrides
+  merge.js                  account + browser + guest merge (pure, tested)
+  admin.js                  the admin panel
   hub.css                   design tokens and components
   analytics.js              GA4 page views, hosted site only
 content/
@@ -53,6 +59,13 @@ tools/
   check.js                  content checker, run before every commit
   build-offline.py          flatten everything into one shareable .html
   migrate-quiz1.js          the one-off import from the Quiz 1 repo (provenance only)
+  test-db.mjs               row-level security tests on an in-memory Postgres (npm run test:db)
+  test-merge.js             sync merge tests (npm run test:merge)
+supabase/
+  migrations/               the database schema, applied in order
+  README.md                 one-time setup and the security model
+.github/workflows/
+  keepalive.yml             stops the free Supabase project pausing
 ids.lock                    every ID ever issued, append-only
 ```
 
@@ -116,6 +129,9 @@ python3 tools/build-offline.py
 
 Full history in [`CHANGELOG.md`](CHANGELOG.md). Most recent:
 
+- **[2.0.0] — 2026-10-05**: sign in with an `@iitj.ac.in` Google account to keep progress
+  across devices (guest mode still works). Adds announcements, an admin panel with cohort
+  weak spots and quiz dates, and a privacy notice with account deletion.
 - **[1.2.0] — 2026-10-04**: adaptive practice. Smart sessions pick your mistakes, due
   reviews and weakest topics first. Topics are labelled weak, shaky or strong, the home page
   has a *Today* plan, and mock papers can lean toward your weak topics.

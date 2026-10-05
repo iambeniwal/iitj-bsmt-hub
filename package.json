@@ -1,0 +1,14 @@
+{
+  "name": "iitj-bsmt-hub",
+  "private": true,
+  "description": "Dev tooling only. The site itself has no build step and no dependencies.",
+  "scripts": {
+    "check": "node tools/check.js",
+    "test:merge": "node tools/test-merge.js",
+    "test:db": "node tools/test-db.mjs",
+    "test": "node tools/check.js && node tools/test-merge.js && node tools/test-db.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8"
+  }
+}

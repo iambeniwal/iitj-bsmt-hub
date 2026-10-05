@@ -92,7 +92,7 @@ function select(p) {
             : p.s === "mistakes" ? store.isMistake(q.id)
             : p.s === "official" ? q.o
             : store.status(q.id) === p.s)) &&
-    (!text || (q.q + " " + q.c.join(" ") + " " + q.w).toLowerCase().includes(text)));
+    (!text || q.id === text || (q.q + " " + q.c.join(" ") + " " + q.w).toLowerCase().includes(text)));
 }
 const allMistakes = () => QS.filter(q => store.isMistake(q.id));
 const dueCards = slug => CARDS.filter(c => (!slug || c.course === slug) && store.isDue(c.id));
@@ -111,11 +111,13 @@ const link = (route, p) => {
   return "#/" + route + (qs ? "?" + qs : "");
 };
 let cleanup = null;
-function route() {
+const CL = H.cloud || { available: false, onChange() {}, isAdmin: () => false, unread: () => [], announcements: [] };
+H.views = H.views || {};                         // extra views registered by other files (admin.js)
+function route(keepScroll) {
   if (cleanup) { cleanup(); cleanup = null; }
   const { parts, p } = parse();
   const view = parts[0] || "";
-  window.scrollTo(0, 0);
+  const y = window.scrollY;
   if (view === "c" && H.courses[parts[1]]) courseView(parts[1], p);
   else if (view === "practice") practiceView(p);
   else if (view === "mock") mockView(p);
@@ -123,20 +125,51 @@ function route() {
   else if (view === "bank") bankView(p);
   else if (view === "mistakes") mistakesView();
   else if (view === "data") dataView();
+  else if (view === "news") newsView();
+  else if (view === "privacy") privacyView();
+  else if (H.views[view]) H.views[view](p, parts);
   else homeView();
   paintTopnav(view);
+  paintFlash();
+  window.scrollTo(0, keepScroll ? y : 0);
 }
-window.addEventListener("hashchange", route);
+window.addEventListener("hashchange", () => route());
+
+/* sign-in, sync and announcements arrive after the first render: redraw
+   pages that only display things, never one mid-practice or mid-mock */
+const REDRAW = new Set(["", "c", "mistakes", "data", "news", "bank", "privacy", "cards", "admin"]);
+CL.onChange(what => {
+  const v = parse().parts[0] || "";
+  if (REDRAW.has(v) && !(v === "admin" && what === "public") && !(v === "cards" && what !== "auth")) route(true);
+  else { paintTopnav(v); paintFlash(); }
+});
+
+/* one-line messages from sign-in: errors, and "your guest progress moved" */
+function paintFlash() {
+  const old = document.getElementById("flash"); if (old) old.remove();
+  const msg = CL.error || CL.note;
+  if (!msg) return;
+  app.insertAdjacentHTML("afterbegin", `<div id="flash" class="flash${CL.error ? " bad" : ""}"><span>${esc(msg)}</span><button aria-label="Dismiss">×</button></div>`);
+  document.querySelector("#flash button").addEventListener("click", () => CL.dismiss());
+}
 
 /* ---------------- shell ---------------- */
-const TOP = [["", "Home"], ["mistakes", "Mistakes"], ["cards", "Flashcards"], ["bank", "Bank"], ["data", "My data"]];
 function paintTopnav(view) {
   const el = document.getElementById("topnav");
-  const m = allMistakes().length, d = dueCards().length;
-  const badge = { mistakes: m, cards: d };
+  const badge = { mistakes: allMistakes().length, cards: dueCards().length, news: CL.unread().length };
+  const top = [["", "Home"], ["mistakes", "Mistakes"], ["cards", "Flashcards"], ["bank", "Bank"]];
+  if (CL.announcements.length) top.push(["news", "Updates"]);
+  if (CL.isAdmin()) top.push(["admin", "Admin"]);
+  if (!CL.available) top.push(["data", "My data"]);
+  const u = CL.user, nm = u && ((u.user_metadata && (u.user_metadata.full_name || u.user_metadata.name)) || u.email);
+  const acct = !CL.available ? ""
+    : u ? `<a class="acct${view === "data" ? " on" : ""}" href="#/data" title="${esc(u.email)} · ${CL.status === "offline" ? "not synced yet" : "synced"}">
+        <span class="av">${esc((nm || "?").trim()[0].toUpperCase())}</span><span class="dot ${CL.status === "offline" ? "off" : CL.status === "synced" ? "ok" : "busy"}"></span></a>`
+    : `<a class="btn sm signin" href="#/data">Sign in</a>`;
   el.innerHTML = `<div class="topbar">
     <a class="brand" href="#/">BSMT<span>Hub</span></a>
-    <div class="navrow">${TOP.map(([r, l]) => `<a href="#/${r}"${(view === r || (view === "c" && r === "")) ? ' aria-current="true"' : ""}>${l}${badge[r] ? `<i>${badge[r]}</i>` : ""}</a>`).join("")}</div>
+    <div class="navrow">${top.map(([r, l]) => `<a href="#/${r}"${(view === r || (view === "c" && r === "")) ? ' aria-current="true"' : ""}>${l}${badge[r] ? `<i>${badge[r]}</i>` : ""}</a>`).join("")}</div>
+    ${acct}
   </div>`;
 }
 const footer = () => `<footer>
@@ -147,8 +180,9 @@ const footer = () => `<footer>
     official LMS announcement; always confirm against the LMS, which is authoritative.</p>
   <p class="licence">Notes and questions licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC&nbsp;BY-NC-SA&nbsp;4.0</a>; site code under MIT.
     Underlying course material remains the property of IIT Jodhpur and the respective faculty and is <strong>not</strong> licensed here.
-    Not affiliated with or endorsed by IIT Jodhpur or Masai School. Your progress is stored only in this browser.
-    The hosted site counts page visits with Google&nbsp;Analytics; offline copies do not report at all.</p>
+    Not affiliated with or endorsed by IIT Jodhpur or Masai School.
+    ${CL.user ? "Your progress is saved to your account." : "As a guest, your progress is stored only in this browser."}
+    <a href="#/privacy">Privacy notice</a>. The hosted site counts page visits with Google&nbsp;Analytics; offline copies do not report at all.</p>
 </footer>`;
 /* "← Home / Course" on every page but home */
 const crumbs = (...trail) => `<div class="crumbs"><a class="backlink" href="#/">← Home</a>${
@@ -157,6 +191,20 @@ const LBL = { new: "new", started: "just started", weak: "weak", shaky: "shaky",
 const lbl = t => `<span class="lbl ${t.label}">${LBL[t.label]}</span>`;
 const pctOf = t => Math.round(t.acc * 100);
 const bar = (pct, cls) => `<span class="meter${cls ? " " + cls : ""}"><span style="width:${pct}%"></span></span>`;
+
+/* announcements: plain text from the database, escaped, with links and line breaks */
+const annBody = t => esc(t).replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>').replace(/\n/g, "<br>");
+const annDate = a => fmtDate(a.published_at);
+/* the strip at the top of home and course pages: pinned, plus anything unread from the last fortnight */
+function annStrip(course) {
+  const unread = new Set(CL.unread().map(a => a.id)), fresh = Date.now() - 14 * 864e5;
+  const list = CL.announcements.filter(a => (course ? a.course === course : !a.course || unread.has(a.id))
+    && (a.pinned || (unread.has(a.id) && Date.parse(a.published_at) > fresh))).slice(0, 3);
+  if (!list.length) return "";
+  return `<div class="annstrip">${list.map(a => `<a class="annbar${unread.has(a.id) ? " unread" : ""}" href="#/news">
+    <span class="pill ${a.pinned ? "today" : "soon"}">${a.pinned ? "Pinned" : "New"}</span>
+    <b>${esc(a.title)}</b><span class="when">${annDate(a)}${a.course && META[a.course] ? " · " + esc(META[a.course].short) : ""}</span></a>`).join("")}</div>`;
+}
 
 /* =================================================================
    HOME
@@ -189,8 +237,9 @@ function homeView() {
     <div class="eyebrow">IIT Jodhpur · ${esc(H.program.name)} · Batch ${esc(H.program.batch)}</div>
     <h1>Study Hub</h1>
     <p class="sub">Notes, a ${QS.length.toLocaleString("en-IN")}-question bank, flashcards and timed mock papers for every course, plus a record of
-      what you keep getting wrong. Nothing to sign up for. Your progress stays in this browser.</p>
+      what you keep getting wrong. ${CL.user ? "Your progress is saved to your account." : CL.available ? "Use it as a guest, or sign in with your IITJ Google account to keep your progress safe." : "Your progress stays in this browser."}</p>
   </header>
+  ${annStrip()}
 
   <section class="tight">
     <div class="sechead"><h2>Today</h2>${soon ? `<span class="tag">${esc(META[focus].short)} ${esc(soon.a.name)} in ${esc(soon.u.text)}</span>` : ""}</div>
@@ -286,6 +335,7 @@ function courseView(slug, p) {
       <div class="cell"><dt>Weighting</dt><dd>${R.grading.quizPct}%<small>a quiz · best ${R.grading.bestOf} of ${R.grading.quizzes}</small></dd></div>
     </dl>
   </header>
+  ${annStrip(slug)}
   <nav><div class="navrow">${tabs.map(([k, l]) => `<a href="${link("c/" + slug, { tab: k })}"${k === tab ? ' aria-current="true"' : ""}>${l}</a>`).join("")}</div></nav>
   <div id="pane"></div>
   ${footer()}`;
@@ -823,24 +873,120 @@ function mistakesView() {
 }
 
 /* =================================================================
-   MY DATA
+   MY DATA / ACCOUNT
    ================================================================= */
 function dataView() {
-  app.innerHTML = `
-  <header class="mast slim">${crumbs()}<div class="eyebrow">My data</div><h1>Your progress lives in this browser</h1>
-    <p class="sub">There are no accounts. Your attempts, mistakes, flags, flashcard schedule and mock scores are saved on this device,
-      in this browser, and nowhere else. They don't follow you to another device, and <strong>clearing your browser data deletes them
-      for good</strong>.</p></header>
-  <section class="tight">
-    ${store.persists ? "" : `<div class="empty warnbox"><b>Saving isn't working in this browser</b> (private mode, or storage is blocked). Progress lasts only until you close the tab.</div>`}
-    <div class="card"><h3 class="subhead" style="margin-top:0">Start over</h3><p class="hint">Deletes all progress in this browser. This can't be undone.</p>
-      <div class="actions" style="margin-top:10px"><button class="btn warn" id="rst">Reset everything</button></div></div>
-    <p class="hint" id="msg" style="margin-top:14px"></p>
-  </section>${footer()}`;
+  const reset = `<div class="card" style="margin-top:14px"><h3 class="subhead" style="margin-top:0">Start over</h3>
+      <p class="hint">${CL.user ? "Deletes all your progress, in this browser and in your account." : "Deletes all progress in this browser."} This can't be undone.</p>
+      <div class="actions" style="margin-top:10px"><button class="btn warn" id="rst">Reset everything</button></div></div>`;
+  const storageWarn = store.persists ? "" : `<div class="empty warnbox"><b>Saving isn't working in this browser</b> (private mode, or storage is blocked). Progress lasts only until you close the tab.</div>`;
+
+  if (!CL.available) {
+    app.innerHTML = `<header class="mast slim">${crumbs()}<div class="eyebrow">My data</div><h1>Your progress lives in this browser</h1>
+      <p class="sub">This copy of the hub works offline, so there is no sign-in. Your attempts, mistakes, flags, flashcard schedule and mock scores
+        are saved in this browser and nowhere else, and <strong>clearing your browser data deletes them for good</strong>.</p></header>
+      <section class="tight">${storageWarn}${reset}<p class="hint" id="msg" style="margin-top:14px"></p></section>${footer()}`;
+  } else if (!CL.user) {
+    app.innerHTML = `<header class="mast slim">${crumbs()}<div class="eyebrow">Account</div><h1>You're using the hub as a guest</h1>
+      <p class="sub">Guest progress is saved in this browser only. It doesn't follow you to your phone, and <strong>clearing your browser data deletes it
+        for good</strong>. Sign in to keep it safe in your account, on every device.</p></header>
+      <section class="tight">${storageWarn}
+        <div class="card signcard">
+          <h3 class="subhead" style="margin-top:0">Sign in with your IITJ Google account</h3>
+          <p class="hint">Only <b>@iitj.ac.in</b> accounts can sign in. Anything you've done as a guest moves into your account the first time you sign in.</p>
+          <div class="actions" style="margin-top:12px"><button class="btn" id="gsi"${CL.status === "signing-in" ? " disabled" : ""}>${CL.status === "signing-in" ? "Opening Google…" : "Continue with Google"}</button></div>
+          <p class="hint" style="margin-top:10px">By signing in you agree to the <a href="#/privacy">privacy notice</a>: your name, IITJ email and your answers are stored so the hub can track your progress. You can delete all of it at any time.</p>
+        </div>${reset}<p class="hint" id="msg" style="margin-top:14px"></p></section>${footer()}`;
+    $("#gsi").addEventListener("click", () => CL.signIn());
+  } else {
+    const u = CL.user, md = u.user_metadata || {}, pend = CL.pending();
+    const st = { synced: "Synced", syncing: "Syncing…", offline: "Offline — changes are saved here and will sync when you're back online" }[CL.status] || CL.status;
+    app.innerHTML = `<header class="mast slim">${crumbs()}<div class="eyebrow">Account</div><h1>${esc(md.full_name || md.name || u.email)}</h1>
+      <p class="sub">${esc(u.email)}${CL.isAdmin() ? ' · <b>admin</b>' : ""}</p></header>
+      <section class="tight">${storageWarn}
+        <div class="card"><h3 class="subhead" style="margin-top:0">Your progress</h3>
+          <p><span class="dot ${CL.status === "offline" ? "off" : CL.status === "synced" ? "ok" : "busy"}"></span> ${esc(st)}${pend ? ` · ${plural(pend, "change")} waiting to upload` : ""}</p>
+          <p class="hint" style="margin-top:6px">Every answer, flag, flashcard review and mock paper is saved to your account, so it's there on any device you sign in on.</p>
+          <div class="actions" style="margin-top:12px"><button class="btn ghost" id="out">Sign out</button></div>
+          <p class="hint" style="margin-top:8px">Signing out also removes the copy kept in this browser, so nothing is left behind on a shared computer.</p></div>
+        ${reset}
+        <div class="card" style="margin-top:14px"><h3 class="subhead" style="margin-top:0">Delete my account</h3>
+          <p class="hint">Permanently deletes your account and every answer, flashcard and mock paper stored with it. This can't be undone. See the <a href="#/privacy">privacy notice</a>.</p>
+          <div class="actions" style="margin-top:10px"><button class="btn warn" id="del">Delete my account and data</button></div></div>
+        <p class="hint" id="msg" style="margin-top:14px"></p></section>${footer()}`;
+    $("#out").addEventListener("click", async () => {
+      if (CL.pending() && !confirm(`${plural(CL.pending(), "change")} haven't uploaded yet (you seem to be offline). Sign out anyway and lose them?`)) return;
+      await CL.signOut();
+    });
+    $("#del").addEventListener("click", async () => {
+      if (!confirm("Delete your account and all of its progress? This can't be undone.")) return;
+      try { await CL.deleteAccount(); } catch (e) { $("#msg").textContent = "Couldn't delete the account: " + e.message; }
+    });
+  }
   $("#rst").addEventListener("click", () => {
-    if (confirm("Delete all progress in this browser? This can't be undone.")) { store.reset(); $("#msg").textContent = "Reset done."; paintTopnav("data"); }
+    if (confirm(CL.user ? "Delete all your progress, here and in your account? This can't be undone." : "Delete all progress in this browser? This can't be undone.")) {
+      store.reset(); $("#msg").textContent = "Reset done."; paintTopnav("data");
+    }
   });
 }
 
-route();
+/* =================================================================
+   UPDATES (announcements)
+   ================================================================= */
+function newsView() {
+  const unread = new Set(CL.unread().map(a => a.id));
+  const list = CL.announcements;
+  app.innerHTML = `<header class="mast slim">${crumbs()}<div class="eyebrow">Updates</div><h1>Announcements</h1>
+    <p class="sub">News about quizzes, new material and the hub itself. Always check the LMS too: it is the official source.</p></header>
+    <section class="tight">${list.length ? list.map(a => `<article class="ann${unread.has(a.id) ? " unread" : ""}${a.pinned ? " pinned" : ""}">
+      <div class="qmeta">${a.pinned ? '<span class="pill today">Pinned</span>' : ""}${unread.has(a.id) ? '<span class="pill soon">New</span>' : ""}
+        <span class="qnum">${annDate(a)}</span>${a.course && META[a.course] ? `<span class="qtopic">${esc(META[a.course].name)}</span>` : ""}</div>
+      <h3>${esc(a.title)}</h3>${a.body ? `<p>${annBody(a.body)}</p>` : ""}</article>`).join("")
+    : `<div class="empty">No announcements yet.</div>`}</section>${footer()}`;
+  if (unread.size) setTimeout(() => CL.markRead([...unread]), 1200);
+}
+
+/* =================================================================
+   PRIVACY NOTICE
+   ================================================================= */
+function privacyView() {
+  app.innerHTML = `<header class="mast slim">${crumbs()}<div class="eyebrow">Privacy notice</div><h1>What the hub stores, and why</h1>
+    <p class="sub">Last updated 5 October 2026. Written with India's Digital Personal Data Protection Act, 2023 in mind.</p></header>
+    <section class="tight prose">
+      <h3>Who is responsible</h3>
+      <p>The BSMT Study Hub is run by Rahul Beniwal, a student on IIT Jodhpur's B.S. in Management &amp; Technology, as a personal project. It is not
+        run by, or affiliated with, IIT Jodhpur or Masai School. For anything about your data, message Rahul on
+        <a href="https://www.linkedin.com/in/iambeniwal/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+      <h3>As a guest</h3>
+      <p>Nothing about you leaves your device. Your progress is kept in your browser's local storage, and clearing your browser data deletes it.</p>
+      <h3>If you sign in</h3>
+      <p>Signing in with your @iitj.ac.in Google account stores:</p>
+      <ul>
+        <li>your <b>name and IITJ email address</b>, as Google provides them;</li>
+        <li>your <b>study activity</b>: each answer (which question, right or wrong, when), your flashcard schedule, flagged questions, mock-paper scores, and which announcements you've read.</li>
+      </ul>
+      <p>That's all. The hub doesn't see your Google password, your contacts, your other email, or anything else in your Google account.</p>
+      <h3>Why</h3>
+      <p>Only to run the hub for you: to keep your progress across devices, to work out your weak topics, and to pick what you should practise next.
+        The admin (Rahul) can also see <b>totals across all students</b>, such as which questions the batch gets wrong most often, so that
+        new notes and questions go where they're needed. Your data is never sold, shared with IIT Jodhpur, Masai School or anyone else, or used for advertising.</p>
+      <h3>Where it's kept</h3>
+      <p>In a database run by Supabase, on servers in Mumbai, India. Only you can read your own progress; the database itself enforces that. The admin can see the
+        student list and progress data in order to manage the hub.</p>
+      <h3>How long, and how to delete it</h3>
+      <p>Until you delete it. <b>Account → Delete my account and data</b> erases your account and everything stored with it, immediately and permanently.
+        <b>Reset everything</b> keeps the account but erases its progress.</p>
+      <h3>Your rights</h3>
+      <p>You can ask what's held about you, ask for it to be corrected or erased, withdraw your consent by deleting your account, and raise a
+        grievance by messaging Rahul at the link above. If that doesn't resolve it, you can complain to the Data Protection Board of India.</p>
+      <h3>Analytics</h3>
+      <p>The hosted site counts page visits with Google Analytics. It isn't linked to your account and receives no names, emails or answers.</p>
+    </section>${footer()}`;
+}
+
+/* helpers shared with admin.js */
+H.ui = { esc, crumbs, footer, link, fmtDate, fmtTime, fmtDay, plural, stripTags, META, SLUGS, QBY, route, $, $$ };
+
+if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", () => route());
+else route();
 })();
