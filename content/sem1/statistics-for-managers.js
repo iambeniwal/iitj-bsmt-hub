@@ -328,7 +328,7 @@ HUB.addCourse({
    "id": "prob2",
    "title": "Probability laws &amp; Bayes",
    "tag": "Topic 7 · Lecture 9 · end of the official list",
-   "lede": "The formulas. Addition law, conditional probability, multiplication law, independence and Bayes — the last topic on the official syllabus.",
+   "lede": "The formulas. Addition law, conditional probability, multiplication law, independence and Bayes — the last topic on the Quiz 1 syllabus.",
    "topics": [
     {
      "t": "The laws",

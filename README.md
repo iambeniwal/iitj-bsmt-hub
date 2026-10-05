@@ -79,6 +79,15 @@ notes that explain it.
 Each one is a date, a format and a scope. A new quiz date means editing one line, not
 rewriting a course file.
 
+### Scope belongs to an assessment, never to the course
+
+This hub is for the whole programme (quizzes, end-terms and the learning itself), so content
+is never labelled "not examinable", "out of syllabus" or "skip". When something is outside a
+particular paper, name the paper and give the reason: *"Taught after the Quiz 1 cut-off, so it
+wasn't in Quiz 1. Expect it in later quizzes and the final."* Scope facts go in that
+assessment's brief, in `program.js` and the course's `briefs`, not in topic titles, labels or
+flashcards, because those outlive the quiz.
+
 ### Permanent IDs: the one rule that matters
 
 Every question, trap and definition has a permanent ID (`foc-q0012`, `ebh-t0003`,

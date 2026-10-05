@@ -10,6 +10,23 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.2.1] — 2026-10-05
+
+### Fixed
+- **Course material was labelled "not examinable" when it only missed Quiz 1.** Three notes
+  topics carried quiz-era tags that read as if they were outside the course: Foundations of
+  Computing's *Copying lists, and tuples* ("L16 · out of syllabus"), and History's *The water
+  frame and the factory* and *Steam and Manchester*. Their banners even said "revise this
+  last, or not at all". They now say which lecture taught them, that it came after the
+  Quiz 1 cut-off, and that they are core material to expect in later quizzes and the final.
+  The same fix applies to:
+  - three flashcards (foc-d0016, foc-d0047, ebh-d0020) that showed "NOT EXAMINABLE" on the card;
+  - History's "Modules 4 and 5 … do not revise them", which now says they come later in the
+    semester, and flashcard ebh-d0004, which now lists the course's five modules;
+  - the Quiz 1 briefs, which now say "was not in Quiz 1" in the past tense.
+
+  The README now has the rule: scope belongs to an assessment, never to the course.
+
 ## [2.2.0] — 2026-10-05
 
 ### Fixed
