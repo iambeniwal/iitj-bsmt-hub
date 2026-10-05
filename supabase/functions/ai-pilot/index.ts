@@ -185,7 +185,13 @@ async function callGemini<T>(model: string, system: string, user: string, schema
 }
 
 /* ---------------- automatic checks ---------------- */
-const POSREF = /\boptions? ?[1-6A-D]\b|\b(first|second|third|fourth|last) (option|answer|choice)|\b(all|none) of the above\b/i;
+/* Positional wording breaks once options are shuffled. "the second option" always
+   counts; "option C" / "option 4" count only when C or 4 isn't simply the start of an
+   option's own text: "the option 4.47 is the SD" names an option by its value, and
+   "option C Q" in a graph question is a node, not a letter. (v1 of this check flagged
+   both; see checks.v1 on items scored before 5 Oct 22:00 IST.) */
+const ORDINAL = /\b(first|second|third|fourth|last) (option|answer|choice)\b|\b(all|none) of the above\b/i;
+const LETTERED = /\boptions? \(?([A-D]|[1-6])\)?(?![\w.])/g;
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 const words = (s: string) => new Set(norm(s).split(" ").filter((w) => w.length > 2));
 function jaccard(a: Set<string>, b: Set<string>) {
@@ -196,10 +202,14 @@ type Item = z.infer<typeof GenSchema>["questions"][number];
 function checkItem(q: Item, notes: string, bank: string[]) {
   const problems: string[] = [];
   if (q.options.length !== 4) problems.push(`${q.options.length} options`);
-  if (new Set(q.options.map(norm)).size !== q.options.length) problems.push("duplicate options");
+  // exact comparison: in code questions case and punctuation are the whole point (RAVI vs ravi, [] vs ())
+  // (whitespace too: printed output with \n\t differs from the same words with a space)
+  if (new Set(q.options.map((o) => o.trim())).size !== q.options.length) problems.push("duplicate options");
   if (q.options.some((o) => !o.trim())) problems.push("empty option");
   if (!(q.answer_index >= 0 && q.answer_index < q.options.length)) problems.push("answer index out of range");
-  if (POSREF.test(q.question + " " + q.explanation + " " + q.options.join(" "))) problems.push("positional or all/none-of-the-above wording");
+  const prose = q.question + " " + q.explanation;
+  const lettered = [...prose.matchAll(LETTERED)].some((m) => !q.options.some((o) => o.trim().startsWith(m[1])));
+  if (ORDINAL.test(prose + " " + q.options.join(" ")) || lettered) problems.push("positional or all/none-of-the-above wording");
   if (q.question.length < 15 || q.question.length > 500) problems.push("question length");
   if (q.options.some((o) => o.length > 220)) problems.push("option too long");
   if (q.explanation.split(/\s+/).length > 90) problems.push("explanation too long");
@@ -294,6 +304,21 @@ Deno.serve(async (req) => {
         if (upErr) throw upErr;
       }
       return json({ ok: true, judged: out.data.answers.length, cost_usd: costOf(REFEREE, out.input, out.output), ms: out.ms });
+    }
+
+    if (body.action === "recheck") {   // re-run the automatic checks on stored items; no AI calls, no cost
+      const { data: items, error } = await db.from("ai_pilot_items").select("id, course, unit, item, checks").eq("run", run);
+      if (error) throw error;
+      let changed = 0;
+      for (const it of items) {
+        const notes = unitNotes(await loadCourse(it.course), it.unit);
+        const fresh = checkItem(it.item, notes.text, notes.bank);
+        const v1 = it.checks.v1 ?? { format_ok: it.checks.format_ok, problems: it.checks.problems };
+        if (fresh.format_ok !== it.checks.format_ok || JSON.stringify(fresh.problems) !== JSON.stringify(it.checks.problems)) changed++;
+        const { error: upErr } = await db.from("ai_pilot_items").update({ checks: { ...fresh, v1 } }).eq("id", it.id);
+        if (upErr) throw upErr;
+      }
+      return json({ ok: true, items: items.length, changed });
     }
 
     if (body.action === "preview") {   // the exact notes text a unit sends, for checking; costs nothing
