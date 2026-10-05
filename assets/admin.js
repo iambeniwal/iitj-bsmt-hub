@@ -86,6 +86,10 @@ async function students(pane) {
   try {
     const rows = await CL.rpc("admin_students");
     pane.innerHTML = `<p class="lede">${plural(rows.length, "student")} signed in so far.</p>
+      <details class="card linkbox aform"><summary><b>Sign-in link</b> for a student whose Google sign-in is blocked</summary>
+        <p class="hint">Makes a link that signs one @iitj.ac.in account in, creating the account if needed. No email is sent: pass it on yourself, only to that student. It works once and expires after an hour.</p>
+        <div class="row"><input id="sl-email" type="email" placeholder="b26xxx0000@iitj.ac.in" autocomplete="off"><input id="sl-name" placeholder="Name (new accounts only)" autocomplete="off"><button class="btn sm" id="sl-go">Make link</button></div>
+        <div id="sl-out"></div></details>
       <div class="scroller"><table><thead><tr><th>Student</th><th>Joined</th><th>Last seen</th><th>Answers</th><th></th></tr></thead><tbody>
       ${rows.map(r => `<tr${r.suspended ? ' class="muted"' : ""}><td><b>${esc(r.name || "—")}</b>${r.role === "admin" ? ' <span class="lbl strong">admin</span>' : ""}${r.suspended ? ' <span class="lbl weak">suspended</span>' : ""}<br><span class="hint">${esc(r.email)}</span></td>
         <td>${fmtDay(r.created_at)}</td><td>${fmtDay(r.last_seen)}</td><td>${Number(r.attempts).toLocaleString("en-IN")}</td>
@@ -93,6 +97,16 @@ async function students(pane) {
           <button class="btn warn sm" data-del="${r.id}" data-email="${esc(r.email)}">Delete</button>`}</td></tr>`).join("")}
       </tbody></table></div>
       <p class="hint" style="margin-top:10px">Suspending blocks reading and writing progress until restored. Deleting removes the account and all its data permanently.</p>`;
+    $("#sl-go", pane).addEventListener("click", async () => {
+      const out = $("#sl-out", pane), email = $("#sl-email", pane).value.trim();
+      out.textContent = "Making the link…";
+      const { data, error } = await CL.sb.functions.invoke("signin-link", { body: { email, name: $("#sl-name", pane).value } });
+      const msg = data && data.error || error && (await error.context?.json?.().catch(() => null))?.error || error && error.message;
+      if (msg) { out.innerHTML = `<p class="hint bad">${esc(msg)}</p>`; return; }
+      out.innerHTML = `<p class="hint">${data.created ? "New account created for" : "Link for"} <b>${esc(email)}</b>. Works once, within an hour:</p>
+        <div class="row"><input readonly value="${esc(data.link)}"><button class="btn sm" id="sl-copy">Copy</button></div>`;
+      $("#sl-copy", pane).addEventListener("click", e => { navigator.clipboard.writeText(data.link); e.target.textContent = "Copied"; });
+    });
     $$("[data-sus]", pane).forEach(b => b.addEventListener("click", async () => {
       try { await CL.rpc("admin_set_suspended", { target: b.dataset.sus, value: b.dataset.v === "true" }); students(pane); } catch (e) { alert(e.message); }
     }));

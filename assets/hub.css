@@ -577,6 +577,12 @@ div.opt{cursor:default}
 .aform input:not([type=checkbox]),.aform textarea,.aform select{font-family:var(--body);font-size:14.5px;padding:8px 10px;border-radius:3px;border:1px solid var(--rule-2);background:var(--surface);color:var(--ink);width:100%}
 .aform .row{display:flex;flex-wrap:wrap;gap:10px}
 .aform .row > label{flex:1 1 150px}
+.linkbox{margin:0 0 14px;padding:12px 14px}
+.linkbox summary{cursor:pointer;font-size:14.5px;color:var(--ink-2)}
+.linkbox[open] summary{margin-bottom:8px}
+.linkbox .row > input{flex:1 1 200px;width:auto}
+.linkbox .row{align-items:center;margin-top:8px}
+.hint.bad{color:var(--bad)}
 tr.muted td{opacity:.6}
 td .qid{font-family:var(--mono);font-size:11px;color:var(--blue);text-decoration:none}
 /* privacy requests */

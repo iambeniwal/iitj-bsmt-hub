@@ -115,6 +115,23 @@ cloud.signIn = async function () {
   history.replaceState(null, "", location.pathname + "#/");
 })();
 
+/* a one-time sign-in link from Admin → Students, for a student whose
+   Google sign-in is blocked: ?signin=<token hash>&kind=<type> */
+(async function linkSignIn() {
+  const q = new URLSearchParams(location.search), th = q.get("signin");
+  if (!th) return;
+  history.replaceState(null, "", location.pathname + "#/");
+  const { data } = await sb.auth.getSession();
+  if (data.session) { cloud.note = "You're already signed in on this browser, so the sign-in link wasn't used."; changed("auth"); return; }
+  cloud.status = "signing-in"; changed("auth");
+  const { error } = await sb.auth.verifyOtp({ token_hash: th, type: q.get("kind") || "magiclink" });
+  if (error) {
+    cloud.status = "guest";
+    cloud.error = "That sign-in link didn't work (" + error.message + "). Each link works once and expires after an hour, so ask for a new one.";
+    changed("auth");
+  }
+})();
+
 async function onSession(session) {
   const email = (session.user.email || "").toLowerCase();
   if (!email.endsWith("@" + CFG.domain)) {
