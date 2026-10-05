@@ -20,7 +20,7 @@ Built around what classmates asked for after Quiz 1:
 | Asked for | Where it lives |
 |---|---|
 | Topic-wise practice | Course → *Topics & practice*: every topic has its own drill, with a mastery bar |
-| Flashcards (active recall) | *Flashcards*: every trap and key definition (214 cards), on a spaced-repetition schedule |
+| Flashcards (active recall) | *Flashcards*: every trap and key definition (742 cards), on a spaced-repetition schedule |
 | Master question bank | *Bank*: all questions in every course, searchable and filterable, any result set drillable |
 | Common confusions / traps | Course → *Traps*, and in the flashcard deck |
 | Timed mock tests | Course → *Assessments* → *Sit a mock*: a full-length paper on the real clock, marked at the end with −0.25 negative marking, plus a colour-coded result grid |
@@ -129,6 +129,10 @@ python3 tools/build-offline.py
 
 Full history in [`CHANGELOG.md`](CHANGELOG.md). Most recent:
 
+- **[2.2.0] — 2026-10-05**: the 35 lectures released since Quiz 1 (563 questions, with exam hints
+  from the lecturers), textbook notes for what has been taught so far, and 284 diagrams
+  across the notes. Also fixes the `print` naming rule and a z-score example, and adds a
+  copyright note for the textbook material.
 - **[2.1.0] — 2026-10-05**: privacy requests. Students file them from their account page and
   you answer in Admin → Requests, so no email address has to be published.
 - **[2.0.0] — 2026-10-05**: sign in with an `@iitj.ac.in` Google account to keep progress
@@ -149,3 +153,8 @@ Full history in [`CHANGELOG.md`](CHANGELOG.md). Most recent:
 Three licences for three kinds of material: code under MIT, original notes and questions
 under CC BY-NC-SA 4.0, and the underlying course material, which is not licensed here at
 all. See [`LICENSE`](LICENSE).
+
+Textbook-based notes are written in our own words and cite the book and chapter; they don't
+reproduce the books and aren't a substitute for them. **Rights holders** (IIT Jodhpur, faculty,
+textbook authors or publishers) who want anything changed or removed can message
+[Rahul on LinkedIn](https://www.linkedin.com/in/iambeniwal/), and it will be taken down promptly.

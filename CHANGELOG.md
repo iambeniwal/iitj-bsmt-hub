@@ -10,6 +10,94 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.2.0] — 2026-10-05
+
+### Fixed
+- **Reusing `print` as a variable name is not an error.** The Foundations of Computing
+  notes (*Variables and naming rules*) listed `print` with the keywords under "Rules —
+  breaking these is an error". That was wrong. A **keyword** (`if`, `while`, `True`…) as a
+  name is a SyntaxError. A **built-in** name like `print` is legal: `print = 5` runs, but
+  the next `print("hi")` then fails with a TypeError, because 5 is not callable. Built-ins
+  now sit under the style guidelines, with that explanation. No question depended on the
+  old wording.
+- **A z-score example didn't add up.** *Shape, z-scores and the two rules* (Statistics) and
+  question sfm-q0046 said a rent of 70 with mean 50 and SD 50 gives z = −1. It gives
+  z = (70 − 50) / 50 = **+0.4**. The example now uses mean 120 (z = (70 − 120) / 50 = −1),
+  which keeps its point: two values on different scales sit at the same place. The
+  question keeps its ID and answer.
+
+- **"Trees and graphs are not examinable" was only true for Quiz 1.** Algorithmic Thinking
+  trap atb-t0001 said so without qualification. It now says Quiz 1 stopped at linear
+  structures, and that trees, graphs, hashing and blockchain (Lectures 12–20) should be
+  expected from Quiz 2 on.
+### Added
+- **35 new lectures**, taken from the LMS on 5 October 2026: every lecture released since the
+  Quiz 1 cut-offs, up to 4 October. They add 563 questions, 173 traps, 164 flashcard
+  definitions, 93 notes topics and 77 diagrams. Each lecture appears in its course's
+  lecture list, and new questions carry `lec: <number>`.
+
+  | Course | Lectures | New questions | What they cover |
+  |---|---|---|---|
+  | Foundations of Computing | 17–21 | 77 | if statements (3 parts), Live Lecture 4, dictionaries part 1 |
+  | Algorithmic Thinking | 12, 14–20 | 141 | trees, tree types, graphs, traversals, hashing, blockchain |
+  | Economic & Business History | 17–21 | 84 | labour movements, colonies & mercantilism, Chartism, economic systems |
+  | Financial Accounting | 16–21 | 90 | matching, adjusting entries, trading account, P&L account |
+  | Statistics for Managers | 14–20 | 113 | continuous distributions, two applied cases, sampling distributions, CLT |
+  | Principles of Marketing | 19–21, 23 | 58 | consumer decision making, decision journey, motivation theories |
+
+  Exam hints the lecturers gave are kept in "From the lecture" boxes: what the final will
+  look like, what "will be asked", and what is out of scope. Where a lecturer misspoke
+  (an elif chain described backwards) or a slide or LMS summary had a wrong figure, the
+  notes give the correct version and a trap explains the slip. Where the lecture and the
+  textbook disagree, a trap says which to use.
+- **Principles of Marketing quiz rule:** multiple-correct questions are marked all-or-nothing,
+  with no partial marks (LMS announcement, 4 October). The Quiz 1 details now say so. The
+  hub's own practice and mocks already mark these questions the same way.
+- **207 diagrams in the notes**, across all six courses: flowcharts, decision trees,
+  timelines, matrices (BCG, Ansoff, golden rules), trace tables (loops, binary search,
+  stacks and queues), T-accounts, and computed charts (the normal curve, distribution
+  shapes, Big-O growth, sampling distributions). 120 sit in the lecture notes, inside the
+  topic they explain. 87 are in the *From the textbook* blocks.
+
+  | Course | Diagrams |
+  |---|---|
+  | Foundations of Computing | 31 |
+  | Algorithmic Thinking | 37 |
+  | Economic & Business History | 33 |
+  | Financial Accounting | 29 |
+  | Statistics for Managers | 40 |
+  | Principles of Marketing | 37 |
+
+  Each one teaches a single idea, and its caption says what to notice. They use only the
+  site's colour tokens, so they follow light and dark mode. On a phone they reflow, or
+  scroll inside their own box. They work offline and need no new files. Every number,
+  trace and code output in them was computed or run, not drawn by eye. Where the lecture
+  and a book disagree on a date, the diagram shows both.
+- **Textbook material for what has been taught so far.** It covers every lecture released
+  on the LMS up to 4 October 2026, built from each course's prescribed or reference book:
+  714 new questions, 220 traps, 308 flashcard definitions, plus chapter notes, case
+  summaries, worked problems and "book vs lecture" notes. Units with new material are
+  tagged *From the textbook*. Each block and question names its book and chapter (for
+  example, `bk: "Anderson 14e ch3"`).
+
+  | Course | Book chapters (taught so far) | New questions |
+  |---|---|---|
+  | Foundations of Computing | Python Crash Course ch 1–5 (to if statements) | 100 |
+  | Algorithmic Thinking | Subero ch 1–6 and 12 (linear structures, trees, hashing, graphs, search) | 143 |
+  | Economic & Business History | Allen *VSI* ch 3; Leigh intro + ch 1, 2, 4 | 104 |
+  | Financial Accounting | Anthony, Hawkins & Merchant 13e ch 1–4 (to accruals, trading and P&L) | 94 |
+  | Statistics for Managers | Anderson et al. 14e ch 1–7 (to sampling distributions) | 156 |
+  | Principles of Marketing | Kotler & Armstrong 17e ch 1–3, 5, 7 (to consumer behaviour) | 117 |
+
+  Textbook material arrives only once its topic has been lectured, so nothing here is
+  ahead of the course. Dictionary nesting, while loops, sorting, pathfinding, inventory
+  methods, Module 4 history and products/pricing will be added as those lectures are
+  released. Where a book disagrees with what was taught (a date, a definition, a
+  framework), the notes say so, and **the lecture or the official announcement wins for
+  the quiz**.
+- **Copyright note** in `README.md` and `LICENSE`: textbook notes are original wording
+  and don't reproduce the books. Rights holders have a takedown contact.
+
 ## [2.1.0] — 2026-10-05
 
 ### Added

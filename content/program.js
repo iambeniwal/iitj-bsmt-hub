@@ -108,7 +108,7 @@ HUB.semesters = [
       assessments: [
         { id: "q1", name: "Quiz 1", status: "done",
           start: "2026-10-04T13:00:00+05:30", end: "2026-10-04T13:30:00+05:30", join: "2026-10-04T12:45:00+05:30",
-          durationMin: 30, questions: 20, marks: 20, types: "MCQ",
+          durationMin: 30, questions: 20, marks: 20, types: "MCQ, incl. multiple-correct (all-or-nothing: no partial marks)",
           scope: "all", scopeText: "All topics covered to 27 September 2026" },
         { id: "q2", name: "Quiz 2", status: "tba" },
         { id: "q3", name: "Quiz 3", status: "tba" },
