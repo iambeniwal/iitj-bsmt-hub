@@ -592,3 +592,12 @@ td .qid{font-family:var(--mono);font-size:11px;color:var(--blue);text-decoration
 .rq .why{margin-top:8px}
 /* admin: AI test log */
 .pilotlog{margin-top:12px;max-height:260px;overflow:auto;font-size:12px;white-space:pre-wrap}
+/* search pages (tools/build-seo.js): course overviews, and the home overview shown until the app loads */
+.seo .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.seo .cta .btn,.seo-links a{text-decoration:none}
+.seo-units{padding-left:22px;display:grid;gap:14px;max-width:72ch}
+.seo-units h3{font-size:17px;font-weight:700}
+.seo-units p{color:var(--ink-2);font-size:15px;margin-top:3px}
+.seo-links{list-style:none;padding:0;display:grid;gap:8px}
+.seo-links a{font-family:var(--display);font-weight:700;color:var(--blue)}
+.seo-links span{color:var(--ink-3);font-size:13.5px;margin-left:6px}

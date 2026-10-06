@@ -178,6 +178,7 @@ const footer = () => `<footer>
     <a href="https://github.com/iambeniwal/iitj-bsmt-hub" target="_blank" rel="noopener noreferrer">Source</a></p>
   <p>Student-made study aid, not official IIT Jodhpur or Masai School course material. Exam facts come from each course's
     official LMS announcement; always confirm against the LMS, which is authoritative.</p>
+  <p class="seo-foot">Course overviews: ${SLUGS.map(s => `<a href="c/${s}/">${esc(META[s].short)}</a>`).join(" · ")}</p>
   <p class="licence">Notes and questions licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC&nbsp;BY-NC-SA&nbsp;4.0</a>; site code under MIT.
     Underlying course material remains the property of IIT Jodhpur and the respective faculty and is <strong>not</strong> licensed here.
     Not affiliated with or endorsed by IIT Jodhpur or Masai School.

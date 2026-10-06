@@ -10,6 +10,8 @@
    or a course where the right answer would still land on one position
    far too often after shuffling.
 
+   Also warns when the search pages (tools/build-seo.js) are out of date.
+
    --lock   append any new IDs to ids.lock (do this when adding content)
    =================================================================== */
 "use strict";
@@ -91,6 +93,11 @@ if (fresh.length) {
 }
 
 const nq = Object.values(H.courses).reduce((s, c) => s + c.questions.length, 0);
+/* the search pages are built from content: flag them when content has moved on */
+try {
+  const stale = require("./build-seo.js").stale();
+  if (stale.length) warn(`search pages out of date (${stale.join(", ")}): run node tools/build-seo.js`);
+} catch (e) { warn("search pages couldn't be checked: " + e.message); }
 warns.forEach(w => console.log("warn  " + w));
 errors.forEach(e => console.log("ERROR " + e));
 console.log(`${Object.keys(H.courses).length} courses · ${nq} questions · ${seen.size} IDs · ${errors.length} errors · ${warns.length} warnings`);

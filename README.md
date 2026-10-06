@@ -57,6 +57,7 @@ content/
   sem1/<course-slug>.js     one file per course: notes, topics, questions, traps, definitions
 tools/
   check.js                  content checker, run before every commit
+  build-seo.js              course pages (c/<slug>/), sitemap.xml and the home overview for search engines
   build-offline.py          flatten everything into one shareable .html
   migrate-quiz1.js          the one-off import from the Quiz 1 repo (provenance only)
   test-db.mjs               row-level security tests on an in-memory Postgres (npm run test:db)
@@ -108,6 +109,7 @@ Every question, trap and definition has a permanent ID (`foc-q0012`, `ebh-t0003`
 
 `node tools/check.js` fails on duplicate or malformed IDs and on new IDs not yet in
 `ids.lock`. When new content is final, run `node tools/check.js --lock`.
+After any content change, run `node tools/build-seo.js` so the search pages match.
 
 ### A question
 
@@ -129,6 +131,7 @@ Every question, trap and definition has a permanent ID (`foc-q0012`, `ebh-t0003`
 2. Write `content/semN/<slug>.js` calling `HUB.addCourse({...})` with a new 2–3 letter `code`.
 3. Add its `<script>` tag to `index.html`.
 4. `node tools/check.js --lock`.
+5. `node tools/build-seo.js` to add its page for search engines (check.js warns until you do).
 
 ## Running it
 
