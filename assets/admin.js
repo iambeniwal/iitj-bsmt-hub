@@ -62,7 +62,9 @@ async function overview(pane) {
 async function weak(pane, p) {
   const days = +p.days || 30;
   try {
-    const rows = await CL.rpc("admin_question_stats", { since: new Date(Date.now() - days * 864e5).toISOString() });
+    const since = new Date(Date.now() - days * 864e5).toISOString();
+    const [rows, reach] = await Promise.all([CL.rpc("admin_question_stats", { since }),
+      CL.rpc("admin_question_reach", { since }).catch(() => null)]);   // null until the ai_beta migration has run
     const topics = {}, qs = [];
     rows.forEach(r => {
       const q = QBY[r.qid]; if (!q) return;                     // retired or unknown id
@@ -70,6 +72,12 @@ async function weak(pane, p) {
       t.att += +r.attempts; t.wrong += +r.wrong; t.students = Math.max(t.students, +r.students);
       qs.push({ q, att: +r.attempts, wrong: +r.wrong, students: +r.students });
     });
+    // different students across all of a topic's questions (not the largest single-question count)
+    if (reach) {
+      const who = {};
+      reach.forEach(r => { const q = QBY[r.qid]; if (q) (who[q.course + "|" + q.topic] = who[q.course + "|" + q.topic] || new Set()).add(r.user_id); });
+      Object.entries(topics).forEach(([k, t]) => { t.students = who[k] ? who[k].size : t.students; });
+    }
     const tl = Object.values(topics).filter(t => t.att >= 10).sort((a, b) => b.wrong / b.att - a.wrong / a.att);
     const ql = qs.filter(x => x.att >= 5).sort((a, b) => b.wrong / b.att - a.wrong / a.att).slice(0, 20);
     const pct = (w, a) => Math.round(w * 100 / a) + "%";

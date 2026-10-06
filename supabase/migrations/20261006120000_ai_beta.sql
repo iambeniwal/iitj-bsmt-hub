@@ -483,3 +483,19 @@ begin
 end $$;
 revoke execute on function public.admin_overview() from public, anon;
 grant execute on function public.admin_overview() to authenticated;
+
+-- ---------------------------------------------------------------------
+-- 9. Admin → Cohort weak spots: who answered what, so a topic's student
+--    count is the number of different students across all its questions
+--    (admin_question_stats counts per question, and the panel was showing
+--    the largest single-question count as the topic's).
+-- ---------------------------------------------------------------------
+create function public.admin_question_reach(since timestamptz default now() - interval '30 days')
+returns table (qid text, user_id uuid)
+language plpgsql stable security definer set search_path = '' as $$
+begin
+  if not public.is_admin() then raise exception 'not allowed'; end if;
+  return query select distinct a.qid, a.user_id from public.attempts a where a.at >= since;
+end $$;
+revoke execute on function public.admin_question_reach(timestamptz) from public, anon;
+grant execute on function public.admin_question_reach(timestamptz) to authenticated;

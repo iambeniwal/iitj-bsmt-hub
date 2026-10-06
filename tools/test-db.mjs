@@ -92,6 +92,8 @@ r = await db.query(`select public.hook_before_user_created('{"user":{"email":"x@
 // --- admin
 r = await as("rahul", "select public.admin_overview() o"); check("admin overview", !r.error && r.rows[0].o.students === 4, JSON.stringify(r.rows?.[0]?.o || r.error));
 r = await as("rahul", "select * from public.admin_question_stats()"); check("admin question stats", !r.error && r.rows.length === 3, `${r.rows?.length} qids`);
+r = await as("rahul", "select * from public.admin_question_reach()"); check("admin sees who answered what", !r.error && r.rows.length === 3, r.error);
+r = await as("alice", "select * from public.admin_question_reach()"); check("a student can't", !!r.error, r.error);
 r = await as("rahul", "select * from public.admin_students()"); check("admin student list", !r.error && r.rows.length === 4);
 r = await as("rahul", "select count(*)::int n from public.attempts"); check("admin reads all attempts", !r.error && r.rows[0].n === 3);
 r = await as("rahul", "insert into public.announcements (title, body, pinned) values ('Quiz 2 dates are out', 'See the LMS.', true)"); check("admin posts announcement", !r.error, r.error);
