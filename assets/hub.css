@@ -624,3 +624,9 @@ td .qid{font-family:var(--mono);font-size:11px;color:var(--blue);text-decoration
 .lesson pre.code{white-space:pre;overflow-x:auto;font-family:var(--mono);font-size:13px;padding:10px 12px;background:var(--surface-2);border-radius:4px;margin:6px 0 10px}
 .lcheck{margin-top:12px;padding-top:12px;border-top:1px dotted var(--rule-2)}
 .lcheck .qtext{font-weight:600;margin-bottom:8px}
+/* admin: review queue */
+.rv .qtext{font-weight:600;margin:6px 0}
+.rvopts{list-style:none;padding:0;display:grid;gap:4px;font-size:14.5px}
+.rvopts li{padding:5px 10px;border:1px solid var(--rule);border-radius:3px}
+.rvopts li.right{background:var(--good-soft);border-color:var(--good)}
+.rvreasons{margin:12px 0 10px;padding-left:20px;font-size:14px;color:var(--ink-2);display:grid;gap:4px}

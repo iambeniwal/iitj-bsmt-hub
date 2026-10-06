@@ -6,7 +6,8 @@
    checks is_admin() in the database, so a student who opens #/admin
    gets nothing back.
 
-   Tabs: overview · cohort weak spots · students · requests · announcements · quiz dates · AI test
+   Tabs: overview · cohort weak spots · students · requests · announcements · quiz dates ·
+         AI beta and review (assets/admin-ai.js) · AI test
    =================================================================== */
 (function () {
 "use strict";
@@ -15,7 +16,7 @@ const H = window.HUB, CL = H.cloud;
 if (!H.ui || !CL) return;
 const { esc, crumbs, link, fmtDate, fmtTime, fmtDay, plural, META, SLUGS, QBY, $, $$ } = H.ui;
 const app = document.getElementById("app");
-const TABS = [["overview", "Overview"], ["weak", "Cohort weak spots"], ["students", "Students"], ["requests", "Requests"], ["news", "Announcements"], ["dates", "Quiz dates"], ["aitest", "AI test"]];
+const TABS = [["overview", "Overview"], ["weak", "Cohort weak spots"], ["students", "Students"], ["requests", "Requests"], ["news", "Announcements"], ["dates", "Quiz dates"], ["aibeta", "AI beta"], ["review", "Review"], ["aitest", "AI test"]];
 const REQ = { access: "See what's held", correct: "Correct something", delete: "Delete data", grievance: "Complaint", other: "Other" };
 
 /* IST <-> <input type="datetime-local"> */
@@ -34,7 +35,9 @@ H.views.admin = function (p) {
     <nav><div class="navrow">${TABS.map(([k, l]) => `<a href="${link("admin", { tab: k })}"${k === tab ? ' aria-current="true"' : ""}>${l}</a>`).join("")}</div></nav>
     <section class="tight" id="pane"><p class="hint">Loading…</p></section>`;
   const pane = $("#pane");
-  ({ overview, weak, students, requests, news, dates, aitest })[tab](pane, p);
+  // AI beta and Review live in admin-ai.js
+  const views = Object.assign({ overview, weak, students, requests, news, dates, aitest }, H.adminTabs || {});
+  (views[tab] || overview)(pane, p);
 };
 
 /* ---------------- overview ---------------- */
@@ -48,6 +51,8 @@ async function overview(pane) {
       ${tile("Answers this week", o.attempts_7d, `${Number(o.attempts_all).toLocaleString("en-IN")} all time`)}
       ${tile("Mock papers this week", o.mocks_7d, "full timed papers")}
       <a class="tile${o.requests_open ? " warn" : ""}" href="${link("admin", { tab: "requests" })}"><span class="k">Open privacy requests</span><span class="v">${o.requests_open || 0}</span><span class="s">reply within ${H.program.replyDays} days</span></a>
+      ${o.ai_approved !== undefined ? `<a class="tile" href="${link("admin", { tab: "aibeta" })}"><span class="k">AI beta</span><span class="v">${o.ai_approved}</span><span class="s">members · ${o.ai_waitlist} waiting · ₹${Number(o.ai_spent_today).toLocaleString("en-IN", { maximumFractionDigits: 2 })} today</span></a>
+      <a class="tile${o.reports_open ? " warn" : ""}" href="${link("admin", { tab: "review" })}"><span class="k">Open reports</span><span class="v">${o.reports_open}</span><span class="s">question problems to review</span></a>` : ""}
     </div>
     <p class="hint" style="margin-top:14px">Guests aren't counted: their progress never leaves their browser. Page views for everyone are in Google Analytics.</p>`;
   } catch (e) { fail(pane, e); }

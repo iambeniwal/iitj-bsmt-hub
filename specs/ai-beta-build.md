@@ -68,11 +68,12 @@ they land.
      labelled and fill the "new" slots in smart sessions.
    - [x] Report a problem on every question; hide a reported AI question for its reporter.
    - [x] Privacy notice: an "AI features" section naming Anthropic and Google.
-4. **Admin**
-   - [ ] Beta members: approve and remove, capped at 50.
-   - [ ] AI settings: switch, budget, limits, models per course.
-   - [ ] Review queue: withdraw, fix, dismiss, promote (promote gives a bank ID through a
+4. **Admin** (`assets/admin-ai.js`: tabs AI beta and Review, plus overview tiles): built and checked in the
+   local preview against fake data. Re-check and lesson pre-generation are buttons on the AI beta tab.
+   - [x] Beta members: approve and remove, capped at 50.
+   - [x] AI settings: switch, budget, limits, models per course.
+   - [x] Review queue: withdraw, fix, dismiss, promote (promote gives a bank ID through a
      content commit).
-   - [ ] Usage: cost per active student per day, the heaviest users, report rate by model.
+   - [x] Usage: cost per active student per day, the heaviest users, report rate by model.
 5. **Close-out tooling**
    - [ ] The willingness-to-pay survey (3 questions) and the beta report.
