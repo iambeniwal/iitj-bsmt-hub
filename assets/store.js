@@ -62,6 +62,9 @@ const store = {
     emit({ t: "att", qid, at: rec[0], ok: !!ok, mode: rec[2] });
   },
   attempts(qid) { return S.att[qid] || []; },
+  /* an AI question that left your pool (reported or withdrawn): its answers stop
+     counting. The server has already removed its copy, so nothing is emitted. */
+  forget(qid) { delete S.att[qid]; delete S.flags[qid]; save(); },
 
   /* A question is a mistake from the first time you miss it until you
      have answered it correctly twice in a row since that miss. */
@@ -94,7 +97,7 @@ const store = {
     return { total: qids.length, seen, right, mistakes,
       pct: qids.length ? Math.round(right * 100 / qids.length) : 0 };
   },
-  answeredCount() { return Object.keys(S.att).length; },
+  answeredCount() { return Object.keys(S.att).filter(id => !id.startsWith("ai-")).length; },   // bank questions
 
   /* ---------- flags ---------- */
   flagged(qid) { return !!S.flags[qid]; },

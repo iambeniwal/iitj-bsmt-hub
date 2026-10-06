@@ -28,6 +28,10 @@ const STEPS = [0, 1, 3, 7, 16, 35];               // days, by correct streak
 
 const QS = [];
 Object.entries(H.courses).forEach(([slug, C]) => C.questions.forEach(q => { q.course = slug; QS.push(q); }));
+/* the student's own AI-written questions (assets/ai.js) count toward topic strength and
+   smart sessions, but never toward mock papers, which stay bank-only */
+const AIQ = () => (H.ai ? H.ai.questions() : []);
+const ALL = () => AIQ().length ? QS.concat(AIQ()) : QS;
 
 /* ---------- one question ---------- */
 function qstate(q, now) {
@@ -43,7 +47,7 @@ function qstate(q, now) {
 
 /* ---------- one topic ---------- */
 function topicStats(slug, topic) {
-  const qs = H.courses[slug].questions.filter(q => q.topic === topic);
+  const qs = H.courses[slug].questions.filter(q => q.topic === topic).concat(AIQ().filter(q => q.course === slug && q.topic === topic));
   let seen = 0, right = 0, tries = 0, mistakes = 0;
   for (const q of qs) {
     const a = store.attempts(q.id);
@@ -83,7 +87,7 @@ function weakSpots(slug, n) {
    still have candidates.                                            */
 function smartPick(opts) {
   const n = opts.n || 20, now = Date.now();
-  const pool = QS.filter(q => !opts.c || q.course === opts.c);
+  const pool = ALL().filter(q => !opts.c || q.course === opts.c);
   const tAcc = {};
   topics(opts.c).forEach(t => { tAcc[t.slug + "|" + t.topic] = t.seen ? t.acc : 0.5; });
   const jit = () => Math.random() * 0.5;
@@ -93,7 +97,8 @@ function smartPick(opts) {
     const s = qstate(q, now);
     if (s.mistake) B.mistake.push({ q, k: (now - s.last) / DAY + jit() });
     else if (s.due) B.review.push({ q, k: s.overdue + jit() });
-    else if (!s.seen) B.fresh.push({ q, k: (1 - tAcc[q.course + "|" + q.topic]) + jit() });
+    // AI questions fill a topic's new slots once its unseen bank questions run out
+    else if (!s.seen) B.fresh.push({ q, k: (1 - tAcc[q.course + "|" + q.topic]) + jit() - (q.ai ? 1 : 0) });
     else B.rest.push({ q, k: -((STEPS[Math.min(s.streak, 5)] * DAY - (now - s.last)) / DAY) + jit() });
   });
   Object.values(B).forEach(list => list.sort((a, b) => b.k - a.k));
@@ -151,7 +156,7 @@ function weightedPaper(slug, n) {
   return out;
 }
 
-const hasHistory = slug => QS.some(q => (!slug || q.course === slug) && store.attempts(q.id).length);
+const hasHistory = slug => ALL().some(q => (!slug || q.course === slug) && store.attempts(q.id).length);
 
 H.adapt = { topicStats, topics, weakSpots, smartPick, describeMix, weightedPaper, hasHistory, qstate };
 })();

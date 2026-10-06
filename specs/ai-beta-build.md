@@ -60,12 +60,14 @@ they land.
      the ones that fail.
    - [x] `pregenerate`: shared lessons for every topic in the next quiz's scope, a few per call (admin button).
    - [ ] Run `pregenerate` automatically the day before each quiz (a scheduled job; needs a shared secret).
-3. **Client**
-   - [ ] Account → Join the AI beta (the four-line notice) and the waiting-list status.
-   - [ ] On each topic: "More questions (AI)" and "Explain this further". AI questions are
+3. **Client** (`assets/ai.js`, plus small hooks in app.js, adapt.js and store.js): built and checked in
+   the local preview with a simulated member (no provider calls). AI questions join practice, mistakes, topic
+   strength and smart sessions (after the topic's unseen bank questions), never mock papers or the bank list.
+   - [x] Account → Join the AI beta (the four-line notice) and the waiting-list status.
+   - [x] On each topic: "More questions (AI)" and "Explain this further". AI questions are
      labelled and fill the "new" slots in smart sessions.
-   - [ ] Report a problem on every question; hide a reported AI question for its reporter.
-   - [ ] Privacy notice: an "AI features" section naming Anthropic and Google.
+   - [x] Report a problem on every question; hide a reported AI question for its reporter.
+   - [x] Privacy notice: an "AI features" section naming Anthropic and Google.
 4. **Admin**
    - [ ] Beta members: approve and remove, capped at 50.
    - [ ] AI settings: switch, budget, limits, models per course.

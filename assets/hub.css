@@ -601,3 +601,26 @@ td .qid{font-family:var(--mono);font-size:11px;color:var(--blue);text-decoration
 .seo-links{list-style:none;padding:0;display:grid;gap:8px}
 .seo-links a{font-family:var(--display);font-weight:700;color:var(--blue)}
 .seo-links span{color:var(--ink-3);font-size:13.5px;margin-left:6px}
+/* AI beta (assets/ai.js) */
+.qtopic.ai{background:var(--blue-soft);color:var(--blue)}
+.qtopic.review,.st.review{background:var(--clay-soft);color:var(--clay)}
+.why{white-space:pre-line}
+.nextrow{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:14px}
+.linkbtn{background:none;border:0;padding:0;font:inherit;font-size:13px;color:var(--ink-3);text-decoration:underline;cursor:pointer}
+.linkbtn:hover{color:var(--ink)}
+.qrep{margin-top:8px}
+.reportbox{flex-basis:100%;margin-top:4px;padding:12px 14px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);display:grid;gap:6px;font-size:14px}
+.reportbox label{display:flex;gap:8px;align-items:center;color:var(--ink-2)}
+.reportbox textarea{font-family:var(--body);font-size:14px;padding:7px 9px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);color:var(--ink);width:100%}
+.reportbox .actions{margin-top:4px}
+.aibtn{border-color:var(--blue);color:var(--blue)}
+#aibeta .notice{border:1px solid var(--rule-2);border-radius:4px;padding:14px 16px;background:var(--surface)}
+#aibeta .notice ol{padding-left:20px;margin:8px 0 12px;color:var(--ink-2);font-size:14.5px;display:grid;gap:6px}
+#aibeta .notice .toggle{display:flex;gap:8px;align-items:center;font-size:14.5px}
+.lesson{margin-top:16px;border:1px solid var(--rule);border-radius:4px;padding:16px 18px;background:var(--surface);max-width:72ch}
+.lesson .lhead{display:flex;gap:10px;align-items:center;margin-bottom:6px}
+.lesson h3{font-size:16px;font-weight:700;margin:16px 0 6px}
+.lesson p{color:var(--ink-2);margin:0 0 8px;font-size:15.5px}
+.lesson pre.code{white-space:pre;overflow-x:auto;font-family:var(--mono);font-size:13px;padding:10px 12px;background:var(--surface-2);border-radius:4px;margin:6px 0 10px}
+.lcheck{margin-top:12px;padding-top:12px;border-top:1px dotted var(--rule-2)}
+.lcheck .qtext{font-weight:600;margin-bottom:8px}

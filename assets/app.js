@@ -82,19 +82,23 @@ function nextAssessment(slug) {
 }
 
 /* ---------------- selection ---------------- */
-function select(p) {
+/* the student's own AI-written questions (assets/ai.js) join practice and mistakes,
+   not the bank listing or mock papers */
+const AIQ = () => (H.ai ? H.ai.questions() : []);
+function select(p, bankOnly) {
   const text = (p.q || "").trim().toLowerCase();
-  return QS.filter(q =>
+  return (bankOnly ? QS : QS.concat(AIQ())).filter(q =>
     (!p.c || q.course === p.c) &&
     (!p.t || q.topic === p.t) &&
     (!p.u || H.courses[q.course].unitOf[q.topic] === p.u) &&
     (!p.s || (p.s === "flagged" ? store.flagged(q.id)
             : p.s === "mistakes" ? store.isMistake(q.id)
             : p.s === "official" ? q.o
+            : p.s === "ai" ? q.ai
             : store.status(q.id) === p.s)) &&
     (!text || q.id === text || (q.q + " " + q.c.join(" ") + " " + q.w).toLowerCase().includes(text)));
 }
-const allMistakes = () => QS.filter(q => store.isMistake(q.id));
+const allMistakes = () => QS.concat(AIQ()).filter(q => store.isMistake(q.id));
 const dueCards = slug => CARDS.filter(c => (!slug || c.course === slug) && store.isDue(c.id));
 const newCards = slug => CARDS.filter(c => (!slug || c.course === slug) && !store.card(c.id));
 
@@ -137,11 +141,16 @@ window.addEventListener("hashchange", () => route());
 
 /* sign-in, sync and announcements arrive after the first render: redraw
    pages that only display things, never one mid-practice or mid-mock */
-const REDRAW = new Set(["", "c", "mistakes", "data", "news", "bank", "privacy", "cards", "admin"]);
+const REDRAW = new Set(["", "c", "mistakes", "data", "news", "bank", "privacy", "cards", "admin", "ai"]);
 CL.onChange(what => {
   const v = parse().parts[0] || "";
   if (REDRAW.has(v) && !(v === "admin" && what === "public") && !(v === "cards" && what !== "auth")) route(true);
   else { paintTopnav(v); paintFlash(); }
+});
+/* the AI beta's own data (your pool, your beta status, "Under review" labels) arrives the same way */
+if (H.ai) H.ai.onChange(what => {
+  const v = parse().parts[0] || "";
+  if (["c", "mistakes", "data", "ai"].includes(v) || (v === "bank" && what === "review")) route(true);
 });
 
 /* one-line messages from sign-in: errors, and "your guest progress moved" */
@@ -378,6 +387,7 @@ function courseView(slug, p) {
             <span class="tname">${esc(t.name)} ${ts.label !== "new" ? lbl(ts) : ""}<em>${tid.length} Q${tm.mistakes ? ` · <b>${tm.mistakes} to fix</b>` : tm.seen ? ` · ${tm.seen} answered` : ""}</em></span>
             ${bar(tm.pct, tm.mistakes ? "warn" : "")}<span class="pct">${tm.seen ? tm.pct + "%" : "—"}</span>
             <a class="btn ghost sm" href="${link("practice", { c: slug, t: t.name })}">Practise</a>
+            ${H.ai && H.ai.status ? `<a class="btn ghost sm aibtn" href="${link("ai", { c: slug, t: t.name })}" title="New questions and lessons on this topic, written by AI (beta)">AI${(() => { const n = AIQ().filter(q => q.course === slug && q.topic === t.name).length; return n ? ` · ${n}` : ""; })()}</a>` : ""}
           </div>`;
         }).join("")}</div>`;
     }).join("")}</div>
@@ -446,7 +456,7 @@ function describe(p) {
   if (p.c) bits.push(META[p.c].name); else bits.push("All courses");
   if (p.u) bits.push(unitTitle(p.c, p.u));
   if (p.t) bits.push(p.t);
-  if (p.s) bits.push({ mistakes: "your mistakes", new: "unseen only", flagged: "flagged", right: "already right", official: "from the course deck" }[p.s] || p.s);
+  if (p.s) bits.push({ mistakes: "your mistakes", new: "unseen only", flagged: "flagged", right: "already right", official: "from the course deck", ai: "AI-written" }[p.s] || p.s);
   if (p.q) bits.push(`“${p.q}”`);
   if (p.mode === "smart") bits.unshift("Smart session");
   return bits.join(" · ");
@@ -505,6 +515,8 @@ function practiceView(p) {
         <span class="qnum">Q${idx + 1} / ${pool.length}</span>
         ${p.c ? "" : `<span class="qtopic">${esc(META[q.course].short)}</span>`}
         <span class="qtopic${q.o ? " official" : ""}">${q.o ? "from deck" : esc(q.topic)}</span>
+        ${q.ai ? '<span class="qtopic ai" title="Written by AI for you, and checked by a second AI. It can still be wrong.">AI-written</span>' : ""}
+        ${H.ai && H.ai.review.has(q.id) ? '<span class="qtopic review" title="Several students reported this question. It is being checked.">under review</span>' : ""}
         ${q.multi ? '<span class="qtopic">select all that apply</span>' : ""}
         ${store.isMistake(q.id) ? '<span class="qtopic bad">mistake</span>' : ""}
         <button class="flag${store.flagged(q.id) ? " on" : ""}" id="flag" title="Flag for later (F)" aria-pressed="${store.flagged(q.id)}">⚑</button>
@@ -540,7 +552,8 @@ function practiceView(p) {
     const still = store.isMistake(q.id);
     $("#after").innerHTML = `<div class="why"><b>${timedOut ? "Out of time." : ok ? "Correct." : "Not quite."}</b> ${esc(q.w)}</div>
       ${ok && still ? `<p class="hint" style="margin-top:8px">One more correct answer on a later run clears this from your mistakes.</p>` : ""}
-      <div style="margin-top:14px"><button class="btn" id="next">${idx + 1 >= pool.length ? "See results" : "Next question"}</button></div>`;
+      <div class="nextrow"><button class="btn" id="next">${idx + 1 >= pool.length ? "See results" : "Next question"}</button>${H.ai ? H.ai.reportButton(q) : ""}</div>`;
+    if (H.ai) H.ai.wireReports($("#after"), () => q);
     $("#score").textContent = `${right} / ${answered}`;
     const n = $("#next"); n.addEventListener("click", () => { idx++; render(); }); n.focus();
   }
@@ -822,17 +835,18 @@ function bankView(p) {
   }
   function params() { return { c: $("#fc").value, t: $("#fc").value ? $("#ft").value : "", s: $("#fs").value, q: $("#fq").value.trim() }; }
   function paint() {
-    const f = params(), rows = select(f);
+    const f = params(), rows = select(f, true);
     history.replaceState(null, "", link("bank", f));
     $("#count").textContent = `${rows.length} match${rows.length === 1 ? "" : "es"}`;
     const go = $("#go"); go.href = link("practice", f); go.classList.toggle("disabledlink", !rows.length);
     $("#list").innerHTML = rows.slice(0, shown).map(q => {
       const st = store.status(q.id);
-      return `<details class="qrow ${st}"><summary><span class="qid">${q.id}</span><span class="qtopic">${esc(META[q.course].short)} · ${esc(q.topic)}</span>${st !== "new" ? `<span class="st ${st}">${st === "mistake" ? "mistake" : st}</span>` : ""}${store.flagged(q.id) ? '<span class="st flag">⚑</span>' : ""}<span class="qq">${esc(q.q)}</span></summary>
-        <div class="qans"><ul>${q.c.map((c, i) => `<li class="${q.a.includes(i) ? "right" : ""}">${esc(c)}</li>`).join("")}</ul><div class="why">${esc(q.w)}</div></div></details>`;
+      return `<details class="qrow ${st}"><summary><span class="qid">${q.id}</span><span class="qtopic">${esc(META[q.course].short)} · ${esc(q.topic)}</span>${st !== "new" ? `<span class="st ${st}">${st === "mistake" ? "mistake" : st}</span>` : ""}${store.flagged(q.id) ? '<span class="st flag">⚑</span>' : ""}${H.ai && H.ai.review.has(q.id) ? '<span class="st review">under review</span>' : ""}<span class="qq">${esc(q.q)}</span></summary>
+        <div class="qans"><ul>${q.c.map((c, i) => `<li class="${q.a.includes(i) ? "right" : ""}">${esc(c)}</li>`).join("")}</ul><div class="why">${esc(q.w)}</div>${H.ai ? `<div class="qrep">${H.ai.reportButton(q)}</div>` : ""}</div></details>`;
     }).join("") + (rows.length > shown ? `<div class="actions center" style="margin-top:14px"><button class="btn ghost" id="more">Show ${Math.min(PAGE, rows.length - shown)} more</button></div>` : "")
       + (!rows.length ? `<div class="empty">No questions match.</div>` : "");
     const m = $("#more"); if (m) m.addEventListener("click", () => { shown += PAGE; paint(); });
+    if (H.ai) H.ai.wireReports($("#list"), id => QBY[id]);
   }
   let deb;
   $("#fq").addEventListener("input", () => { clearTimeout(deb); deb = setTimeout(() => { shown = PAGE; paint(); }, 150); });
@@ -923,6 +937,7 @@ function dataView() {
           <p class="hint" style="margin-top:6px">Every answer, flag, flashcard review and mock paper is saved to your account, so it's there on any device you sign in on.</p>
           <div class="actions" style="margin-top:12px"><button class="btn ghost" id="out">Sign out</button></div>
           <p class="hint" style="margin-top:8px">Signing out also removes the copy kept in this browser, so nothing is left behind on a shared computer.</p></div>
+        ${H.ai ? H.ai.accountCard() : ""}
         ${reset}
         <div class="card" style="margin-top:14px" id="preq"><h3 class="subhead" style="margin-top:0">Privacy request</h3>
           <p class="hint">Ask what's held about you, ask for a correction or deletion, or make a complaint. Rahul replies here within ${H.program.replyDays} days.</p>
@@ -937,6 +952,7 @@ function dataView() {
           <div class="actions" style="margin-top:10px"><button class="btn warn" id="del">Delete my account and data</button></div></div>
         <p class="hint" id="msg" style="margin-top:14px"></p></section>${footer()}`;
     loadRequests();
+    if (H.ai) H.ai.mountAccount($("#aibeta"));
     $("#rqf").addEventListener("submit", async e => {
       e.preventDefault();
       const f = new FormData(e.target), msg = $("#rqmsg");
@@ -982,7 +998,7 @@ function newsView() {
    ================================================================= */
 function privacyView() {
   app.innerHTML = `<header class="mast slim">${crumbs()}<div class="eyebrow">Privacy notice</div><h1>What the hub stores, and why</h1>
-    <p class="sub">Last updated 5 October 2026. Written with India's Digital Personal Data Protection Act, 2023 in mind.</p></header>
+    <p class="sub">Last updated 6 October 2026. Written with India's Digital Personal Data Protection Act, 2023 in mind.</p></header>
     <section class="tight prose">
       <h3>Who is responsible</h3>
       <p>The BSMT Study Hub is run by Rahul Beniwal, a student on IIT Jodhpur's B.S. in Management &amp; Technology, as a personal project. It is not
@@ -1020,6 +1036,20 @@ function privacyView() {
           : `the public request form is being set up. Until then, message Rahul Beniwal on <a href="https://www.linkedin.com/in/iambeniwal/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.`}</li>
       </ul>
       <p>Every request gets a reply within <b>${H.program.replyDays} days</b>.</p>
+      <h3>AI features (beta)</h3>
+      <p>The AI features are optional and only for students who join the AI beta from their account page. When you use them:</p>
+      <ul>
+        <li><b>What's sent</b> to the AI provider: the course notes for the topic, the topic and course name, and, only for
+          <b>“I keep mixing this up”</b>, the text of the questions you got wrong on that topic. <b>Never</b> your name, email or account ID;
+          each request carries a random reference instead.</li>
+        <li><b>Who it goes to:</b> Anthropic (Claude) or Google (Gemini), depending on the course, on their paid API services, whose terms say
+          they don't use API data to train their models. Your request may be processed outside India.</li>
+        <li><b>What's stored here:</b> the questions and lessons written for you, any reports you file, and one usage record per request
+          (what was asked for, which model, how much text went in and out, and what it cost). The prompts themselves are not stored.</li>
+        <li><b>Why:</b> to give you the questions and lessons, and to work out what the AI costs per student before it becomes a paid add-on.</li>
+      </ul>
+      <p>Leaving the beta stops all of this. Deleting your account deletes your AI questions, lessons and reports with it; usage records
+        stay only as anonymous totals.</p>
       <h3>Analytics</h3>
       <p>The hosted site counts page visits with Google Analytics. It isn't linked to your account and receives no names, emails or answers.</p>
     </section>${footer()}`;
