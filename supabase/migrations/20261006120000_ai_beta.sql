@@ -159,7 +159,7 @@ create table public.ai_questions (
   course       text not null,
   unit         text not null,
   topic        text not null,
-  item         jsonb not null,             -- {q, o: [...], a, w, multi?, cite}: the bank's question shape
+  item         jsonb not null,             -- {q, c: [options], a: [index], w, cite, kind}: the bank's question shape
   fingerprint  text not null,              -- hash of the unit's notes it was written from
   writer       text not null,              -- model keys from ai_settings.models
   referee      text not null,

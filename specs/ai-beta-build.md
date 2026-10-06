@@ -43,20 +43,23 @@ they land.
    - [x] Widen `attempts.qid` to accept `ai-…` ids. Withdrawing a question deletes its
      attempts.
    - [x] Extend the RLS tests in `tools/test-db.mjs`.
-2. **Edge Function `ai`** (separate from `ai-pilot`)
-   - [ ] Gate: signed in, `is_member`, approved beta member, not suspended, AI on, under
+2. **Edge Function `ai`** (separate from `ai-pilot`): written and deployed. `deno run -A tools/test-ai.ts` checks
+   the notes, quiz windows and format checks without spending. Not yet exercised end to end: that needs the
+   migration run and an admin session (the first real batch is the test).
+   - [x] Gate: signed in, `is_member`, approved beta member, not suspended, AI on, under
      the daily budget and the student's own limits, not inside a quiz window for that
      course.
-   - [ ] `generate`: 10 questions on the student's weakest topic in a unit. Writer and
+   - [x] `generate`: 10 questions on the student's weakest topic in a unit. Writer and
      referee per course from `ai_settings`. Run format checks, near-duplicate checks
      against the bank **and the student's own pool**, and the blind re-solve; keep only
      passes.
-   - [ ] `lesson`: shared simpler/example (cached by unit fingerprint) and personal
+   - [x] `lesson`: shared simpler/example (cached by unit fingerprint) and personal
      confusion (uses the student's wrong answers; never name or email).
-   - [ ] Refusal fallbacks on for Claude calls, which they weren't in the test.
-   - [ ] `recheck`: when a unit's fingerprint changes, re-solve its AI questions; withdraw
+   - [x] Refusal fallbacks on for Claude calls, which they weren't in the test.
+   - [x] `recheck`: when a unit's fingerprint changes, re-solve its AI questions; withdraw
      the ones that fail.
-   - [ ] `pregenerate`: the day before a quiz, shared lessons for every unit in scope.
+   - [x] `pregenerate`: shared lessons for every topic in the next quiz's scope, a few per call (admin button).
+   - [ ] Run `pregenerate` automatically the day before each quiz (a scheduled job; needs a shared secret).
 3. **Client**
    - [ ] Account → Join the AI beta (the four-line notice) and the waiting-list status.
    - [ ] On each topic: "More questions (AI)" and "Explain this further". AI questions are
