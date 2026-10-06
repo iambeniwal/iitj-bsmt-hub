@@ -234,6 +234,18 @@ r = await as("rahul", "update public.ai_settings set enabled = true, daily_budge
 r = await as("alice", "select public.ai_beta_leave()"); check("alice leaves the beta", !r.error && (await db.query("select status from public.ai_beta_members where user_id = $1", [users.alice.id])).rows[0].status === "left");
 r = await as("rahul", `select public.admin_ai_member_set('${users.carol.id}', 'approved')`); check("can't approve someone who never joined", !!r.error, r.error);
 
+// --- analytics (Admin → Overview → Activity, Admin → Students → a student)
+await svc(`update public.attempts set at = now() - interval '10 days' where user_id = $1 and qid = 'foc-q0001'`, [users.alice.id]);
+r = await as("rahul", `select public.admin_student_detail('${users.alice.id}') d`);
+check("admin opens one student's detail", !r.error && r.rows[0].d.profile.email === "alice@iitj.ac.in" && r.rows[0].d.totals.answers >= 2 && r.rows[0].d.questions.length >= 2 && r.rows[0].d.mocks.length === 1, r.error || JSON.stringify(r.rows[0].d.totals));
+r = await as("alice", `select public.admin_student_detail('${users.bob.id}')`); check("a student can't open anyone's detail", !!r.error, r.error);
+r = await as("rahul", "select public.admin_cohort(30) c");
+const co = r.rows?.[0]?.c;
+check("cohort: 30 days, quiet days included", !r.error && co.daily.length === 30 && co.weekly.length === 8, r.error || `${co?.daily?.length} days`);
+check("cohort: answers add up", !r.error && co.daily.reduce((s, d) => s + d.answers, 0) === (await db.query("select count(*)::int n from public.attempts where at > now() - interval '30 days'")).rows[0].n);
+check("cohort: retention counts alice (first answer 10 days ago, back since)", !r.error && co.retention.eligible === 1 && co.retention.after_week === 1, JSON.stringify(co?.retention));
+r = await as("bob", "select public.admin_cohort()"); check("a student can't read the cohort", !!r.error, r.error);
+
 // deletion
 r = await as("bob", "select public.delete_my_account()"); check("bob deletes his account", !r.error, r.error);
 const left = (await db.query(`select (select count(*) from public.attempts where user_id='${users.bob.id}')::int a, (select count(*) from public.profiles where id='${users.bob.id}')::int p`)).rows[0];

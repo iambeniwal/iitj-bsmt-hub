@@ -15,6 +15,7 @@ img{max-width:100%}
   --rule:#D5DCE9;
   --rule-2:#C2CCDE;
   --blue:#2F5FD0;
+  --chart:#2F5FD0;                /* single-series bars; checked against --surface */
   --blue-soft:#E4EBFB;
   --clay:#C4661F;
   --clay-soft:#FBEADB;
@@ -38,6 +39,7 @@ img{max-width:100%}
     --rule:#2A3550;
     --rule-2:#3A4866;
     --blue:#7FA3F5;
+    --chart:#6A8EEA;
     --blue-soft:#1C2B4D;
     --clay:#E49151;
     --clay-soft:#3A2818;
@@ -58,6 +60,7 @@ img{max-width:100%}
   --rule:#2A3550;
   --rule-2:#3A4866;
   --blue:#7FA3F5;
+  --chart:#6A8EEA;
   --blue-soft:#1C2B4D;
   --clay:#E49151;
   --clay-soft:#3A2818;
@@ -630,3 +633,23 @@ td .qid{font-family:var(--mono);font-size:11px;color:var(--blue);text-decoration
 .rvopts li{padding:5px 10px;border:1px solid var(--rule);border-radius:3px}
 .rvopts li.right{background:var(--good-soft);border-color:var(--good)}
 .rvreasons{margin:12px 0 10px;padding-left:20px;font-size:14px;color:var(--ink-2);display:grid;gap:4px}
+/* admin analytics charts (assets/admin-stats.js) */
+.stlink{color:inherit;text-decoration:none}
+.stlink:hover b{text-decoration:underline}
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:14px}
+.chart{position:relative;margin:0;background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:14px 16px 10px}
+.chart figcaption{font-size:14.5px;margin-bottom:10px}
+.chart figcaption b{font-family:var(--display)}
+.chart .plot{display:grid;grid-template-columns:auto 1fr;gap:8px;height:140px}
+.chart .yaxis{display:flex;flex-direction:column;justify-content:space-between;font-family:var(--mono);font-size:10.5px;color:var(--ink-3);text-align:right;transform:translateY(-5px)}
+.chart .yaxis span:last-child{transform:translateY(10px)}
+.chart .cols{display:flex;align-items:flex-end;height:100%;border-bottom:1px solid var(--rule-2);background:linear-gradient(var(--rule) 1px,transparent 1px) 0 0/100% 100% no-repeat}
+.chart .col{flex:1;height:100%;display:flex;align-items:flex-end;padding:0 1px;outline:none}
+.chart .bar{width:100%;background:var(--chart);border-radius:4px 4px 0 0}
+.chart .col.on .bar,.chart .col:focus-visible .bar{filter:brightness(1.15)}
+.chart .col:focus-visible{box-shadow:inset 0 0 0 2px var(--blue)}
+.chart .xlabels{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin:5px 0 0 32px}
+.chart .ctip{position:absolute;transform:translate(-50%,-100%);background:var(--ink);color:var(--paper);font-size:12.5px;line-height:1.35;padding:6px 9px;border-radius:4px;pointer-events:none;white-space:nowrap;z-index:2}
+.chart .ctable{margin-top:8px;font-size:13px}
+.chart .ctable summary{cursor:pointer;color:var(--ink-3)}
+.chart .ctable .scroller{max-height:220px;overflow:auto;margin-top:6px}

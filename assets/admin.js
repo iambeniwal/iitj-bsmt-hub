@@ -54,7 +54,9 @@ async function overview(pane) {
       ${o.ai_approved !== undefined ? `<a class="tile" href="${link("admin", { tab: "aibeta" })}"><span class="k">AI beta</span><span class="v">${o.ai_approved}</span><span class="s">members · ${o.ai_waitlist} waiting · ₹${Number(o.ai_spent_today).toLocaleString("en-IN", { maximumFractionDigits: 2 })} today</span></a>
       <a class="tile${o.reports_open ? " warn" : ""}" href="${link("admin", { tab: "review" })}"><span class="k">Open reports</span><span class="v">${o.reports_open}</span><span class="s">question problems to review</span></a>` : ""}
     </div>
-    <p class="hint" style="margin-top:14px">Guests aren't counted: their progress never leaves their browser. Page views for everyone are in Google Analytics.</p>`;
+    <p class="hint" style="margin-top:14px">Guests aren't counted: their progress never leaves their browser. Page views for everyone are in Google Analytics.</p>
+    <div id="activity"></div>`;
+    if (H.adminStats) H.adminStats.activity($("#activity", pane));        // assets/admin-stats.js
   } catch (e) { fail(pane, e); }
 }
 
@@ -95,7 +97,8 @@ async function weak(pane, p) {
 }
 
 /* ---------------- students ---------------- */
-async function students(pane) {
+async function students(pane, p) {
+  if (p && p.u && H.adminStats) return H.adminStats.student(pane, p.u);   // one student: assets/admin-stats.js
   try {
     const rows = await CL.rpc("admin_students");
     pane.innerHTML = `<p class="lede">${plural(rows.length, "student")} signed in so far.</p>
@@ -104,7 +107,7 @@ async function students(pane) {
         <div class="row"><input id="sl-email" type="email" placeholder="b26xxx0000@iitj.ac.in" autocomplete="off"><input id="sl-name" placeholder="Name (new accounts only)" autocomplete="off"><button class="btn sm" id="sl-go">Make link</button></div>
         <div id="sl-out"></div></details>
       <div class="scroller"><table><thead><tr><th>Student</th><th>Joined</th><th>Last seen</th><th>Answers</th><th></th></tr></thead><tbody>
-      ${rows.map(r => `<tr${r.suspended ? ' class="muted"' : ""}><td><b>${esc(r.name || "—")}</b>${r.role === "admin" ? ' <span class="lbl strong">admin</span>' : ""}${r.suspended ? ' <span class="lbl weak">suspended</span>' : ""}<br><span class="hint">${esc(r.email)}</span></td>
+      ${rows.map(r => `<tr${r.suspended ? ' class="muted"' : ""}><td><a class="stlink" href="${link("admin", { tab: "students", u: r.id })}"><b>${esc(r.name || "—")}</b></a>${r.role === "admin" ? ' <span class="lbl strong">admin</span>' : ""}${r.suspended ? ' <span class="lbl weak">suspended</span>' : ""}<br><span class="hint">${esc(r.email)}</span></td>
         <td>${fmtDay(r.created_at)}</td><td>${fmtDay(r.last_seen)}</td><td>${Number(r.attempts).toLocaleString("en-IN")}</td>
         <td>${r.id === CL.user.id ? "" : `<button class="btn ghost sm" data-sus="${r.id}" data-v="${!r.suspended}">${r.suspended ? "Restore" : "Suspend"}</button>
           <button class="btn warn sm" data-del="${r.id}" data-email="${esc(r.email)}">Delete</button>`}</td></tr>`).join("")}
