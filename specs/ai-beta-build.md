@@ -23,22 +23,26 @@ they land.
 
 ## Build order
 
-1. **Schema (migration `…_ai_beta.sql`)**
-   - [ ] `ai_settings`: one row holding the on/off switch, the daily ₹ budget, per-student
+1. **Schema (migration `20261006120000_ai_beta.sql`)**: written and tested (108/108); waiting for Rahul to run it in the SQL Editor.
+   Also added: `ai_requests` (one row per student action; limits count these), `ai_status()` for the client,
+   `questions_under_review()` (public), and `admin_report_resolve` (withdraw / fix / dismiss / promote).
+   Answers to an AI question are dropped silently unless it is live in the student's own pool, so stale
+   syncs can't bring them back.
+   - [x] `ai_settings`: one row holding the on/off switch, the daily ₹ budget, per-student
      limits, quiz-eve multiplier, and per-course writer and referee model.
-   - [ ] `ai_beta_members` (user, status waitlist/approved/left, joined_at, approved_at,
+   - [x] `ai_beta_members` (user, status waitlist/approved/left, joined_at, approved_at,
      notice_version) and an admin approve function.
-   - [ ] `ai_questions` (id `ai-<code>-<random>`, user, course, unit, topic, item jsonb,
+   - [x] `ai_questions` (id `ai-<code>-<random>`, user, course, unit, topic, item jsonb,
      source fingerprint, writer/referee models, status live/withdrawn/rechecking,
      created_at).
-   - [ ] `ai_lessons` (shared: course, unit, kind simpler/example, fingerprint; personal:
+   - [x] `ai_lessons` (shared: course, unit, kind simpler/example, fingerprint; personal:
      user, kind confusion).
-   - [ ] `ai_usage` (one row per call: user, feature, model, role, tokens, ₹/$ cost, ok).
-   - [ ] `reports` (question id, which can be bank or AI; user; reason; note; status) and a
+   - [x] `ai_usage` (one row per call: user, feature, model, role, tokens, ₹/$ cost, ok).
+   - [x] `reports` (question id, which can be bank or AI; user; reason; note; status) and a
      limit of 20 per user per day.
-   - [ ] Widen `attempts.qid` to accept `ai-…` ids. Withdrawing a question deletes its
+   - [x] Widen `attempts.qid` to accept `ai-…` ids. Withdrawing a question deletes its
      attempts.
-   - [ ] Extend the RLS tests in `tools/test-db.mjs`.
+   - [x] Extend the RLS tests in `tools/test-db.mjs`.
 2. **Edge Function `ai`** (separate from `ai-pilot`)
    - [ ] Gate: signed in, `is_member`, approved beta member, not suspended, AI on, under
      the daily budget and the student's own limits, not inside a quiz window for that
