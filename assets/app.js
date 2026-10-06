@@ -135,6 +135,7 @@ function route(keepScroll) {
   else homeView();
   paintTopnav(view);
   paintFlash();
+  paintFooter();
   window.scrollTo(0, keepScroll ? y : 0);
 }
 window.addEventListener("hashchange", () => route());
@@ -145,7 +146,7 @@ const REDRAW = new Set(["", "c", "mistakes", "data", "news", "bank", "privacy", 
 CL.onChange(what => {
   const v = parse().parts[0] || "";
   if (REDRAW.has(v) && !(v === "admin" && what === "public") && !(v === "cards" && what !== "auth")) route(true);
-  else { paintTopnav(v); paintFlash(); }
+  else { paintTopnav(v); paintFlash(); paintFooter(); }
 });
 /* the AI beta's own data (your pool, your beta status, "Under review" labels) arrives the same way */
 if (H.ai) H.ai.onChange(what => {
@@ -187,6 +188,9 @@ const footer = () => `<footer>
     <a href="https://github.com/iambeniwal/iitj-bsmt-hub" target="_blank" rel="noopener noreferrer">Source</a></p>
   <p>Student-made study aid, not official IIT Jodhpur or Masai School course material. Exam facts come from each course's
     official LMS announcement; always confirm against the LMS, which is authoritative.</p>
+  <p class="contact">Something wrong, a question, or a request about your data? ${CL.user ? `Use <a href="#/data">Account → Privacy request</a>, or the` : "Use the"}
+    ${H.program.requestForm ? `<a href="${esc(H.program.requestForm)}" target="_blank" rel="noopener noreferrer">contact form</a>` : `<a href="https://www.linkedin.com/in/iambeniwal/" target="_blank" rel="noopener noreferrer">LinkedIn</a>`}.
+    Every message gets a reply within ${H.program.replyDays} days. To flag a mistake in a question, use <b>Report a problem</b> under it.</p>
   <p class="seo-foot">Course overviews: ${SLUGS.map(s => `<a href="c/${s}/">${esc(META[s].short)}</a>`).join(" · ")}</p>
   <p class="licence">Notes and questions licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC&nbsp;BY-NC-SA&nbsp;4.0</a>; site code under MIT.
     Underlying course material remains the property of IIT Jodhpur and the respective faculty and is <strong>not</strong> licensed here.
@@ -194,6 +198,9 @@ const footer = () => `<footer>
     ${CL.user ? "Your progress is saved to your account." : "As a guest, your progress is stored only in this browser."}
     <a href="#/privacy">Privacy notice</a>. The hosted site counts page visits with Google&nbsp;Analytics; offline copies do not report at all.</p>
 </footer>`;
+/* the footer lives outside #app, so every page has it, including the ones that
+   take over the screen (practice, mocks, flashcards, bank, admin) */
+function paintFooter() { const el = document.getElementById("sitefoot"); if (el) el.innerHTML = footer(); }
 /* "← Home / Course" on every page but home */
 const crumbs = (...trail) => `<div class="crumbs"><a class="backlink" href="#/">← Home</a>${
   trail.map(([href, label]) => `<span>/</span><a class="backlink" href="${href}">${esc(label)}</a>`).join("")}</div>`;
@@ -317,8 +324,7 @@ function homeView() {
 
   <div class="hubnote"><b>How quizzes are marked.</b> ${esc(M.note)}. A blind guess between four options is worth +0.06; rule out
     one option and it rises to +0.17. Every course counts its <strong>best 2 of 3</strong> quizzes. Foundations of Computing quizzes
-    are worth 15% each; the other five are worth 20%. The end-term is worth 60% everywhere, and Foundations of Computing's is pen and paper, including writing Python by hand.</div>
-  ${footer()}`;
+    are worth 15% each; the other five are worth 20%. The end-term is worth 60% everywhere, and Foundations of Computing's is pen and paper, including writing Python by hand.</div>`;
 }
 
 /* =================================================================
@@ -347,8 +353,7 @@ function courseView(slug, p) {
   </header>
   ${annStrip(slug)}
   <nav><div class="navrow">${tabs.map(([k, l]) => `<a href="${link("c/" + slug, { tab: k })}"${k === tab ? ' aria-current="true"' : ""}>${l}</a>`).join("")}</div></nav>
-  <div id="pane"></div>
-  ${footer()}`;
+  <div id="pane"></div>`;
 
   const pane = $("#pane");
   if (tab === "notes") return courseNotes(C, pane, p.u);
@@ -883,8 +888,7 @@ function mistakesView() {
         <a class="btn warn sm" href="${link("practice", { c: slug, t, s: "mistakes" })}">Drill ${qs.length}</a></div>`).join("")}
     </section>`;
   }).join("") : `<section class="tight"><div class="empty">${store.answeredCount() ? "Everything you've missed so far has been cleared. Good work." : "Nothing here yet. Start with a topic drill or a mock paper, and any question you miss will collect here."}
-    <div class="actions" style="margin-top:12px"><a class="btn" href="#/">Pick a course</a></div></div></section>`}
-  ${footer()}`;
+    <div class="actions" style="margin-top:12px"><a class="btn" href="#/">Pick a course</a></div></div></section>`}`;
 }
 
 /* privacy requests (assets/admin.js has the other side) */
@@ -912,7 +916,7 @@ function dataView() {
     app.innerHTML = `<header class="mast slim">${crumbs()}<div class="eyebrow">My data</div><h1>Your progress lives in this browser</h1>
       <p class="sub">This copy of the hub works offline, so there is no sign-in. Your attempts, mistakes, flags, flashcard schedule and mock scores
         are saved in this browser and nowhere else, and <strong>clearing your browser data deletes them for good</strong>.</p></header>
-      <section class="tight">${storageWarn}${reset}<p class="hint" id="msg" style="margin-top:14px"></p></section>${footer()}`;
+      <section class="tight">${storageWarn}${reset}<p class="hint" id="msg" style="margin-top:14px"></p></section>`;
   } else if (!CL.user) {
     app.innerHTML = `<header class="mast slim">${crumbs()}<div class="eyebrow">Account</div><h1>You're using the hub as a guest</h1>
       <p class="sub">Guest progress is saved in this browser only. It doesn't follow you to your phone, and <strong>clearing your browser data deletes it
@@ -924,7 +928,7 @@ function dataView() {
           <div class="actions" style="margin-top:12px"><button class="btn" id="gsi"${CL.status === "signing-in" ? " disabled" : ""}>${CL.status === "signing-in" ? "Opening Google…" : "Continue with Google"}</button></div>
           <p class="hint" style="margin-top:10px">By signing in you agree to the <a href="#/privacy">privacy notice</a>: your name, IITJ email and your answers are stored so the hub can track your progress. You can delete all of it at any time.</p>
           <p class="hint">Need something done about your data but can't sign in? See <a href="#/privacy">How to make a request</a>.</p>
-        </div>${reset}<p class="hint" id="msg" style="margin-top:14px"></p></section>${footer()}`;
+        </div>${reset}<p class="hint" id="msg" style="margin-top:14px"></p></section>`;
     $("#gsi").addEventListener("click", () => CL.signIn());
   } else {
     const u = CL.user, md = u.user_metadata || {}, pend = CL.pending();
@@ -950,7 +954,7 @@ function dataView() {
         <div class="card" style="margin-top:14px"><h3 class="subhead" style="margin-top:0">Delete my account</h3>
           <p class="hint">Permanently deletes your account and every answer, flashcard and mock paper stored with it. This can't be undone. See the <a href="#/privacy">privacy notice</a>.</p>
           <div class="actions" style="margin-top:10px"><button class="btn warn" id="del">Delete my account and data</button></div></div>
-        <p class="hint" id="msg" style="margin-top:14px"></p></section>${footer()}`;
+        <p class="hint" id="msg" style="margin-top:14px"></p></section>`;
     loadRequests();
     if (H.ai) H.ai.mountAccount($("#aibeta"));
     $("#rqf").addEventListener("submit", async e => {
@@ -989,7 +993,7 @@ function newsView() {
       <div class="qmeta">${a.pinned ? '<span class="pill today">Pinned</span>' : ""}${unread.has(a.id) ? '<span class="pill soon">New</span>' : ""}
         <span class="qnum">${annDate(a)}</span>${a.course && META[a.course] ? `<span class="qtopic">${esc(META[a.course].name)}</span>` : ""}</div>
       <h3>${esc(a.title)}</h3>${a.body ? `<p>${annBody(a.body)}</p>` : ""}</article>`).join("")
-    : `<div class="empty">No announcements yet.</div>`}</section>${footer()}`;
+    : `<div class="empty">No announcements yet.</div>`}</section>`;
   if (unread.size) setTimeout(() => CL.markRead([...unread]), 1200);
 }
 
@@ -1052,7 +1056,7 @@ function privacyView() {
         stay only as anonymous totals.</p>
       <h3>Analytics</h3>
       <p>The hosted site counts page visits with Google Analytics. It isn't linked to your account and receives no names, emails or answers.</p>
-    </section>${footer()}`;
+    </section>`;
   $$("[data-jump]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); document.getElementById(a.dataset.jump).scrollIntoView({ behavior: "smooth" }); }));
 }
 

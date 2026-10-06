@@ -120,6 +120,8 @@ ${all.filter(o => o !== k).map(o => `      <li><a href="../${o.r.slug}/">${esc(o
   <footer>
     <p>Student-made study aid, not official IIT Jodhpur or Masai School course material, and not affiliated with or endorsed by
       either. Exam facts come from each course's official LMS announcement; always confirm against the LMS.</p>
+    ${P.requestForm ? `<p>Something wrong, a question, or a request about your data? Use the <a href="${esc(P.requestForm)}" rel="noopener">contact form</a>;
+      every message gets a reply within ${P.replyDays} days.</p>` : ""}
     <p class="licence">Notes and questions licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener">CC&nbsp;BY-NC-SA&nbsp;4.0</a>.
       Underlying course material remains the property of IIT Jodhpur and the respective faculty and is not licensed here.
       <a href="../../#/privacy">Privacy notice</a>.</p>

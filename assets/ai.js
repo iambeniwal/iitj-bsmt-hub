@@ -297,8 +297,7 @@ H.views.ai = function (p) {
     </div>
     ${ai.approved() ? `<p class="hint">${wrongs.length ? `“I keep mixing this up” sends the text of the questions you got wrong (never your name or email). ${Math.max(0, lessonsLeft)} left today.` : "“I keep mixing this up” works from your wrong answers on this topic, so it opens once you've missed one."}</p>` : ""}
     <div id="lesson"></div>
-  </section>` : ""}
-  ${U.footer()}`;
+  </section>` : ""}`;
 
   const more = app.querySelector("#more");
   if (more) more.addEventListener("click", async () => {
