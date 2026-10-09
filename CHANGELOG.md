@@ -10,6 +10,25 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.2.4] — 2026-10-09
+
+### Added
+- **Statistics: the lecturer's practice sets for Chapters 2–6, solved.** Dr. Srivastava shared
+  practice questions for Chapters 2–8 on 9 October. Each of Chapters 2–6 now has a topic called
+  "Practice questions from the lecturer: Chapter N", with every sheet question restated and
+  solved step by step (84 in all; the numbers are the sheet's, so you can check your own
+  working). Each one starts with a checklist of what the sheet expects you to be able to do,
+  and notes where the sheet is ambiguous, for example which quartile method to use and whether
+  "late" counts from the quoted time. **68 new MCQs** in the same style use new numbers, along
+  with 28 traps and 7 flashcards. Every answer was re-solved independently before release.
+  Chapter 7's sheet was already in the hub (Lecture 20). Chapter 8 (interval estimation) will
+  be added once it has been lectured.
+
+### Fixed
+- **Statistics, Chapter 5: the hub told you to focus on binomial and Poisson only.** The
+  lecturer's practice set gives 5 of its 15 questions to the hypergeometric, bivariate
+  covariance and portfolio return and risk. The advice now says to practise those too.
+
 ## [2.2.3] — 2026-10-05
 
 ### Added

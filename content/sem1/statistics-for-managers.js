@@ -221,6 +221,11 @@ HUB.addCourse({
      "h": "\n  <p style=\"font-size:15px\"><strong>Cross-tabulation</strong> summarises two variables at once, in rows and columns. It works for any combination — categorical with categorical, categorical with quantitative, or quantitative with quantitative.</p>\n  <div class=\"warnbox\"><b>Row vs column percentages.</b> If you sum <em>across</em> rows, you must interpret row-wise. If you sum <em>down</em> columns, interpret column-wise. Mismatching the direction of calculation and interpretation produces wrong conclusions.</div>\n  <div class=\"def\"><b>Simpson's paradox:</b> a conclusion drawn from <b>aggregate</b> data can <b>completely reverse</b> when the data is broken into subgroups.</div>\n  <h4>Scatter diagrams and trend lines</h4>\n  <p style=\"font-size:14.5px\">Two quantitative variables plotted against each other; the <strong>trend line</strong> shows the general direction.</p>\n  <p style=\"font-size:14.5px\"><strong>Positive:</strong> both rise together, slope positive — interceptions vs points scored. <strong>Negative:</strong> y falls as x rises, slope negative — price vs quantity demanded. <strong>None:</strong> slope zero.</p>\n  <p style=\"font-size:14.5px\">A <strong>side-by-side bar chart</strong> compares categories in clusters. A <strong>stacked bar chart</strong> shows proportions inside a total — and with percentage frequencies every bar is the same height, which makes proportions easy to compare.</p><!--viz:sfm-simpson-couriers--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Courier A is on time 90% on city routes and 60% on rural routes, beating Courier B's 85% and 50%, yet overall A is 66% and B is 78%.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Simpson's paradox in one table</div><div class=\"scroller\"><table><thead><tr><th>On time</th><th>City routes</th><th>Rural routes</th><th>All routes</th></tr></thead><tbody><tr><td><b>Courier A</b></td><td style=\"font-family:var(--mono);background:var(--good-soft)\">45/50 = 90%</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">120/200 = 60%</td><td style=\"font-family:var(--mono);background:var(--surface)\">165/250 = 66%</td></tr><tr><td><b>Courier B</b></td><td style=\"font-family:var(--mono);background:var(--surface)\">170/200 = 85%</td><td style=\"font-family:var(--mono);background:var(--surface)\">25/50 = 50%</td><td style=\"font-family:var(--mono);background:var(--clay-soft)\">195/250 = 78%</td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\">The hidden variable is route type: 200 of A's 250 deliveries are rural (hard); 200 of B's are city (easy).</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">A wins inside every subgroup but loses in total, because the two couriers carry very different route mixes.</figcaption></figure><!--/viz:sfm-simpson-couriers-->"
     },
     {
+     "t": "Practice questions from the lecturer: Chapter 2",
+     "src": "L#4",
+     "h": "<p style=\"font-size:14.5px\">The lecturer's own practice set for Chapter 2 (Descriptive Statistics: Tabular and Graphical Displays), shared by Dr. Srivastava through an LMS announcement on 9 Oct 2026 (15 questions). Each one is restated in our words below with a full worked solution; the numbers are the sheet's. The mix drills the whole chapter: frequency, relative and percent frequency tables for categorical data, pie-chart angles, grouped frequency distributions with given class limits, cumulative distributions, dot plots, stem-and-leaf displays (including a leaf unit of 10), row percentages in a crosstabulation, a scatter diagram, and a Simpson's paradox case.</p><h4>What this sheet tells you to be able to do</h4><ul><li>Turn raw counts into frequency, relative frequency (÷ n) and percent frequency (× 100) tables, and fill a missing class from the fact that relative frequencies sum to 1.</li><li>Convert a share into a pie-chart angle (relative frequency × 360°), counting every response, including ‘no opinion’, in n.</li><li>Sort raw numbers into given classes without double-counting a value that sits on a class limit.</li><li>Build cumulative frequency and cumulative relative frequency columns and read ‘x or less’ and ‘at least x’ answers from them.</li><li>Draw (or describe) a bar chart, pie chart, dot plot, histogram, stem-and-leaf display, side-by-side and stacked bar chart, and scatter diagram.</li><li>Compute row percentages and say what they show about the relationship between two categorical variables.</li><li>Spot Simpson's paradox: a comparison that reverses when subgroup tables are added together.</li></ul><div class=\"def\"><b>Where the sheet leaves a choice to you:</b><ul><li><b>Q7</b> asks for a frequency distribution but gives no classes. We use five classes of width 2 starting at 6.0 (6.0–7.9, …, 14.0–15.9), the textbook's choice for this data. Any sensible set of 5–7 equal classes is acceptable if every value lands in exactly one class.</li><li><b>Q9</b> (leaf unit 10) has four-digit numbers, so one digit must be dropped. The textbook drops it (truncates: 1,478 → 147 → stem 14, leaf 7). Rounding (1,478 → 148) changes seven of the sixteen leaves. Both are seen; truncation is the textbook convention, so use it and say so.</li><li><b>Q11</b> says ‘classes starting at 10 and ending at 30 in increments of 2’. Two players score exactly 14.0 and 18.0, so write the classes as 10.0–11.9, 12.0–13.9, …, 28.0–29.9: a value on a limit goes in the class it starts. The 24.0–25.9 class is empty; keep it in the table (a histogram shows the gap).</li><li><b>Q6</b> asks for a histogram from whole-number classes 10–19, 20–29, …; the bars touch (the lecture's rule), so draw them from 10 to 60 with no gaps.</li></ul></div><details><summary>Q1 · Frequency and relative frequency, three answers</summary><p style=\"font-size:14.5px\">120 people answer a question with options A, B or C: 60 choose A, 24 choose B and 36 choose C. Give the frequency and relative frequency distributions.</p><ol><li>n = 60 + 24 + 36 = 120.</li><li>Relative frequency = frequency ÷ 120.</li></ol><div class=\"scroller\"><table><tr><th>Answer</th><th>Frequency</th><th>Relative frequency</th></tr><tr><td>A</td><td>60</td><td>0.50</td></tr><tr><td>B</td><td>24</td><td>0.20</td></tr><tr><td>C</td><td>36</td><td>0.30</td></tr><tr><td>Total</td><td>120</td><td>1.00</td></tr></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> Frequencies 60, 24, 36; relative frequencies 0.50, 0.20, 0.30 (they sum to 1).</p></details><details><summary>Q2 · Filling in a partial relative frequency table</summary><p style=\"font-size:14.5px\">Four classes: A has relative frequency 0.22, B 0.18, C 0.40 and D is missing. (a) Find D's relative frequency. (b) With n = 200, find D's frequency. (c) Give the frequency distribution and (d) the percent frequency distribution.</p><ol><li>(a) Relative frequencies sum to 1: D = 1 − (0.22 + 0.18 + 0.40) = 1 − 0.80 = 0.20.</li><li>(b) Frequency = relative frequency × n = 0.20 × 200 = 40.</li><li>(c), (d) Multiply each relative frequency by 200 for counts and by 100 for percents.</li></ol><div class=\"scroller\"><table><tr><th>Class</th><th>Relative frequency</th><th>Frequency</th><th>Percent</th></tr><tr><td>A</td><td>0.22</td><td>44</td><td>22%</td></tr><tr><td>B</td><td>0.18</td><td>36</td><td>18%</td></tr><tr><td>C</td><td>0.40</td><td>80</td><td>40%</td></tr><tr><td>D</td><td>0.20</td><td>40</td><td>20%</td></tr><tr><td>Total</td><td>1.00</td><td>200</td><td>100%</td></tr></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> D = 0.20, so 40 observations; frequencies 44, 36, 80, 40; percents 22, 18, 40, 20.</p></details><details><summary>Q3 · Pie-chart angles with a ‘no opinion’ group</summary><p style=\"font-size:14.5px\">A questionnaire gets 58 Yes, 42 No and 20 no-opinion answers. (a) How many degrees for the Yes slice? (b) For the No slice? (c) Draw a pie chart and (d) a bar chart.</p><ol><li>n = 58 + 42 + 20 = 120. The no-opinion answers are part of n.</li><li>(a) Yes: 58/120 = 0.4833; 0.4833 × 360° = 174°.</li><li>(b) No: 42/120 = 0.35; 0.35 × 360° = 126°.</li><li>No opinion: 20/120 × 360° = 60°. Check: 174 + 126 + 60 = 360°.</li><li>(c) Pie: three slices of 174°, 126° and 60° (48.3%, 35%, 16.7%).</li><li>(d) Bar chart: categories Yes, No, No opinion on the horizontal axis, separated bars of height 58, 42 and 20.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 174° for Yes and 126° for No. (Dividing by 100, the Yes + No total, would give 208.8° and 151.2°, which with the 60° slice adds to more than 360°.)</p></details><details><summary>Q4 · Favourite TV show for 50 viewers</summary><p style=\"font-size:14.5px\">50 viewers each name their favourite of five syndicated TV shows: Wheel of Fortune (WoF), Two and a Half Men (THM), Jeopardy (Jep), Judge Judy (JJ) and the Oprah Winfrey Show (OWS). The 50 responses are listed on the sheet. (a) Categorical or quantitative? (b) Frequency and percent frequency distributions. (c) Bar and pie charts. (d) Which show is most popular, and which second?</p><ol><li>(a) Categorical: each response is a label (a show name), not a measured number.</li><li>(b) Tally the 50 labels; the counts add to 50, which checks the tally.</li><li>(c) Bar chart: five separated bars, best sorted tallest first (13, 12, 10, 8, 7). Pie slices = percent × 3.6°: 93.6°, 86.4°, 72°, 57.6°, 50.4°.</li></ol><div class=\"scroller\"><table><tr><th>Show</th><th>Frequency</th><th>Percent frequency</th><th>Pie angle</th></tr><tr><td>WoF</td><td>13</td><td>26%</td><td>93.6°</td></tr><tr><td>THM</td><td>12</td><td>24%</td><td>86.4°</td></tr><tr><td>Jep</td><td>10</td><td>20%</td><td>72.0°</td></tr><tr><td>JJ</td><td>8</td><td>16%</td><td>57.6°</td></tr><tr><td>OWS</td><td>7</td><td>14%</td><td>50.4°</td></tr><tr><td>Total</td><td>50</td><td>100%</td><td>360°</td></tr></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) Categorical. (d) Wheel of Fortune is first (26%) and Two and a Half Men second (24%). The two are only one viewer apart, so with a sample of 50 the ranking of the top two is not firm.</p></details><details><summary>Q5 · Grouped frequency distribution with given classes</summary><p style=\"font-size:14.5px\">40 whole-number values (from 12 to 26) are listed on the sheet. (a) Build a frequency distribution with classes 12–14, 15–17, 18–20, 21–23, 24–26. (b) Add relative and percent frequency columns.</p><ol><li>Each class holds three whole numbers (width 3); every value from 12 to 26 fits exactly one class.</li><li>Tally the 40 values into the classes; the counts must add to 40.</li><li>Relative frequency = count ÷ 40; percent = relative × 100.</li></ol><div class=\"scroller\"><table><tr><th>Class</th><th>Frequency</th><th>Relative frequency</th><th>Percent</th></tr><tr><td>12–14</td><td>2</td><td>0.050</td><td>5.0%</td></tr><tr><td>15–17</td><td>8</td><td>0.200</td><td>20.0%</td></tr><tr><td>18–20</td><td>11</td><td>0.275</td><td>27.5%</td></tr><tr><td>21–23</td><td>10</td><td>0.250</td><td>25.0%</td></tr><tr><td>24–26</td><td>9</td><td>0.225</td><td>22.5%</td></tr><tr><td>Total</td><td>40</td><td>1.000</td><td>100%</td></tr></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> Frequencies 2, 8, 11, 10, 9; relative 0.050, 0.200, 0.275, 0.250, 0.225.</p></details><details><summary>Q6 · Cumulative distributions and a histogram</summary><p style=\"font-size:14.5px\">Classes 10–19, 20–29, 30–39, 40–49, 50–59 have frequencies 10, 14, 17, 7, 2. Build the cumulative frequency and cumulative relative frequency distributions, and draw a histogram.</p><ol><li>n = 10 + 14 + 17 + 7 + 2 = 50.</li><li>Cumulative frequency: keep a running total. Cumulative relative frequency: divide each running total by 50.</li></ol><div class=\"scroller\"><table><tr><th>Class</th><th>Frequency</th><th>Cumulative frequency</th><th>Cumulative relative frequency</th></tr><tr><td>10–19</td><td>10</td><td>10</td><td>0.20</td></tr><tr><td>20–29</td><td>14</td><td>24</td><td>0.48</td></tr><tr><td>30–39</td><td>17</td><td>41</td><td>0.82</td></tr><tr><td>40–49</td><td>7</td><td>48</td><td>0.96</td></tr><tr><td>50–59</td><td>2</td><td>50</td><td>1.00</td></tr></table></div><p style=\"font-size:14.5px\">Histogram: classes on the horizontal axis from 10 to 60, touching bars of height 10, 14, 17, 7, 2. It peaks in 30–39 and has a longer tail to the right, so it is mildly right-skewed.</p><p style=\"font-size:14.5px\"><strong>Answer:</strong> Cumulative frequencies 10, 24, 41, 48, 50; cumulative relative 0.20, 0.48, 0.82, 0.96, 1.00. The last entry is always n (or 1.00), a built-in check.</p></details><details><summary>Q7 · Dot plot and frequency distribution for 20 decimal values</summary><p style=\"font-size:14.5px\">20 values recorded to one decimal place (from 6.0 to 15.8) are listed on the sheet. (a) Draw a dot plot. (b) Build a frequency distribution and (c) a percent frequency distribution.</p><ol><li>(a) Dot plot: a number line from about 6 to 16, one dot per value. Dots stack three high at 10.0 and at 11.5, two high at 12.2; the rest are single. The cluster is around 10–12.</li><li>(b) No classes are given (see the note above). Range = 15.8 − 6.0 = 9.8; five classes need width 9.8/5 ≈ 2, so use 6.0–7.9, 8.0–9.9, 10.0–11.9, 12.0–13.9, 14.0–15.9.</li><li>(c) Percent = count ÷ 20 × 100.</li></ol><div class=\"scroller\"><table><tr><th>Class</th><th>Frequency</th><th>Percent frequency</th></tr><tr><td>6.0–7.9</td><td>4</td><td>20%</td></tr><tr><td>8.0–9.9</td><td>2</td><td>10%</td></tr><tr><td>10.0–11.9</td><td>8</td><td>40%</td></tr><tr><td>12.0–13.9</td><td>3</td><td>15%</td></tr><tr><td>14.0–15.9</td><td>3</td><td>15%</td></tr><tr><td>Total</td><td>20</td><td>100%</td></tr></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> Frequencies 4, 2, 8, 3, 3 (20%, 10%, 40%, 15%, 15%) with these classes; the 10.0–11.9 class holds the most values.</p></details><details><summary>Q8 · Stem-and-leaf display for decimal data</summary><p style=\"font-size:14.5px\">Build a stem-and-leaf display for the 14 values on the sheet (from 6.3 to 11.3, one decimal place).</p><ol><li>Stem = the whole-number part; leaf = the tenths digit (leaf unit 0.1).</li><li>Sort the values, then write each leaf against its stem in increasing order.</li></ol><div class=\"scroller\"><table><tr><th>Stem</th><th>Leaves</th></tr><tr><td>6</td><td>3</td></tr><tr><td>7</td><td>5 5 7</td></tr><tr><td>8</td><td>1 3 4 8</td></tr><tr><td>9</td><td>3 6</td></tr><tr><td>10</td><td>0 4 5</td></tr><tr><td>11</td><td>3</td></tr></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> Stems 6 to 11 with leaves as shown (14 leaves in all; 8 | 1 3 4 8 means 8.1, 8.3, 8.4, 8.8). Most values lie between 7.5 and 10.5; the shape is roughly symmetric.</p></details><details><summary>Q9 · Stem-and-leaf display with a leaf unit of 10</summary><p style=\"font-size:14.5px\">Build a stem-and-leaf display, leaf unit 10, for the 16 four-digit values on the sheet (from 1,161 to 1,730).</p><ol><li>Leaf unit 10 means the leaf is the tens digit and the units digit is dropped: 1,161 → 116 → stem 11, leaf 6.</li><li>Stems run from 11 to 17 (the hundreds); write the leaves in order.</li><li>Check: 16 leaves for 16 values.</li></ol><div class=\"scroller\"><table><tr><th>Stem</th><th>Leaves (truncated, textbook)</th><th>Leaves if you round</th></tr><tr><td>11</td><td>6</td><td>6</td></tr><tr><td>12</td><td>0 2</td><td>1 2</td></tr><tr><td>13</td><td>0 6 7</td><td>0 6 8</td></tr><tr><td>14</td><td>2 2 7</td><td>2 3 8</td></tr><tr><td>15</td><td>5</td><td>6</td></tr><tr><td>16</td><td>0 2 8</td><td>0 2 9</td></tr><tr><td>17</td><td>0 2 3</td><td>1 2 3</td></tr></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> Stems 11–17 with leaves 6 | 0 2 | 0 6 7 | 2 2 7 | 5 | 0 2 8 | 0 2 3. Read 14 | 7 as about 1,470. The values are spread fairly evenly from about 1,160 to 1,730.</p></details><details><summary>Q10 · Emergency waiting times: all four distributions</summary><p style=\"font-size:14.5px\">20 patient waiting times (whole minutes, 2 to 21) are listed on the sheet. Using classes 0–4, 5–9, 10–14, …, give (a) frequency, (b) relative frequency, (c) cumulative frequency and (d) cumulative relative frequency distributions. (e) What proportion waited 9 minutes or less?</p><div class=\"scroller\"><table><tr><th>Minutes</th><th>Frequency</th><th>Relative</th><th>Cumulative</th><th>Cumulative relative</th></tr><tr><td>0–4</td><td>4</td><td>0.20</td><td>4</td><td>0.20</td></tr><tr><td>5–9</td><td>8</td><td>0.40</td><td>12</td><td>0.60</td></tr><tr><td>10–14</td><td>5</td><td>0.25</td><td>17</td><td>0.85</td></tr><tr><td>15–19</td><td>2</td><td>0.10</td><td>19</td><td>0.95</td></tr><tr><td>20–24</td><td>1</td><td>0.05</td><td>20</td><td>1.00</td></tr><tr><td>Total</td><td>20</td><td>1.00</td><td></td><td></td></tr></table></div><ol><li>(e) ‘9 minutes or less’ means every class up to and including 5–9: the cumulative relative frequency of that class, 0.60.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (e) 0.60, i.e. 12 of the 20 patients. (0.40 is the 5–9 class alone and misses the 4 patients who waited 0–4 minutes.)</p></details><details><summary>Q11 · Points per game for 50 top basketball players</summary><p style=\"font-size:14.5px\">The average points per game of 50 top-rated professional basketball players are listed on the sheet (11.7 to 28.8). Using classes of width 2 from 10 to 30: (a) frequency, (b) relative frequency and (c) cumulative percent frequency distributions; (d) a histogram; (e) is the distribution skewed? (f) What percentage averaged at least 20 points?</p><div class=\"scroller\"><table><tr><th>PPG</th><th>Frequency</th><th>Relative</th><th>Cumulative %</th></tr><tr><td>10.0–11.9</td><td>1</td><td>0.02</td><td>2%</td></tr><tr><td>12.0–13.9</td><td>3</td><td>0.06</td><td>8%</td></tr><tr><td>14.0–15.9</td><td>7</td><td>0.14</td><td>22%</td></tr><tr><td>16.0–17.9</td><td>19</td><td>0.38</td><td>60%</td></tr><tr><td>18.0–19.9</td><td>9</td><td>0.18</td><td>78%</td></tr><tr><td>20.0–21.9</td><td>4</td><td>0.08</td><td>86%</td></tr><tr><td>22.0–23.9</td><td>2</td><td>0.04</td><td>90%</td></tr><tr><td>24.0–25.9</td><td>0</td><td>0.00</td><td>90%</td></tr><tr><td>26.0–27.9</td><td>3</td><td>0.06</td><td>96%</td></tr><tr><td>28.0–29.9</td><td>2</td><td>0.04</td><td>100%</td></tr><tr><td>Total</td><td>50</td><td>1.00</td><td></td></tr></table></div><ol><li>(d) Histogram: ten touching bars from 10 to 30 with these heights; a tall peak at 16–18, an empty 24–26 bar, then two short bars at 26–30.</li><li>(e) Yes, skewed right: most players sit between 14 and 20, and a few stars stretch a long tail to the right. (The mean, 18.3, is above the median, 17.4, as it is for right-skewed data.)</li><li>(f) ‘At least 20’ = 100% − cumulative % up to 19.9 = 100% − 78% = 22% (4 + 2 + 0 + 3 + 2 = 11 players).</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Frequencies 1, 3, 7, 19, 9, 4, 2, 0, 3, 2; skewed right; 22% averaged at least 20 points per game.</p></details><details><summary>Q12 · Side-by-side bar chart and the relationship between x and y</summary><p style=\"font-size:14.5px\">x takes values A, B, C, D and y takes values I or II. The counts are: A 143 (I) and 857 (II); B 200 and 800; C 321 and 679; D 420 and 580. (a) Draw a side-by-side bar chart with x on the horizontal axis. (b) Comment on the relationship.</p><ol><li>(a) Four clusters (A, B, C, D), each with two bars: I bars of 143, 200, 321, 420 (rising) and II bars of 857, 800, 679, 580 (falling).</li><li>(b) Every row totals 1,000, so the counts are easy to turn into row percentages: share of I = 14.3%, 20.0%, 32.1%, 42.0% for A to D.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> There is a relationship: as x moves from A to D, the share of y = I rises steadily (14.3% → 42.0%) and the share of II falls. If x and y were unrelated, every row would show roughly the same split.</p></details><details><summary>Q13 · Row percentages and a stacked percent bar chart</summary><p style=\"font-size:14.5px\">Crosstabulation of x (Low, Medium, High) against y (Yes, No): Low 20 Yes, 10 No (30); Medium 15, 35 (50); High 20, 5 (25); totals 55 Yes, 50 No, 105 overall. (a) Compute the row percentages. (b) Draw a stacked percent frequency bar chart with x on the horizontal axis.</p><ol><li>Row percentage = cell ÷ its row total × 100.</li></ol><div class=\"scroller\"><table><tr><th>x</th><th>Yes</th><th>No</th><th>Total</th></tr><tr><td>Low</td><td>20/30 = 66.7%</td><td>33.3%</td><td>100%</td></tr><tr><td>Medium</td><td>15/50 = 30.0%</td><td>70.0%</td><td>100%</td></tr><tr><td>High</td><td>20/25 = 80.0%</td><td>20.0%</td><td>100%</td></tr></table></div><ol><li>(b) Three bars (Low, Medium, High), each 100% tall, split into a Yes segment of 66.7%, 30% and 80% and a No segment for the rest.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Low 66.7/33.3, Medium 30/70, High 80/20. Medium is the odd one out with a far lower Yes share. Dividing 20 by 55 (the Yes column total) gives a column percentage, which answers a different question: ‘of the Yes answers, what share were Low?’</p></details><details><summary>Q14 · Scatter diagram of speed and fuel efficiency</summary><p style=\"font-size:14.5px\">Ten midsize cars: driving speed (mph) 30, 50, 40, 55, 30, 25, 60, 25, 50, 55 and fuel efficiency (mpg) 28, 25, 25, 23, 30, 32, 21, 35, 26, 25 (paired in order). (a) Draw a scatter diagram with speed on the horizontal axis. (b) Comment on the relationship.</p><ol><li>(a) Plot the ten points (30, 28), (50, 25), (40, 25), (55, 23), (30, 30), (25, 32), (60, 21), (25, 35), (50, 26), (55, 25). The points fall from top left to bottom right.</li><li>(b) A trendline would slope downward: higher speeds go with lower fuel efficiency. (With the L#7 formula the correlation is about −0.91, a strong negative relationship.)</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> A negative relationship: within this range, the faster the car is driven, the fewer miles it gets per gallon. Ten cars show association, not proof that speed causes the drop.</p></details><details><summary>Q15 · Choosing between two players: Simpson's paradox</summary><p style=\"font-size:14.5px\">A university has one scholarship left and two equally skilled players, Fealey and Janson; it will go to the better batting average (hits ÷ at-bats, three decimals). Fealey: junior year 15 hits in 40 at-bats, senior year 75 in 250. Janson: junior 70 in 200, senior 35 in 120. (a) Compare the two players year by year. (b) Combine both years into one table and compare. (c) Are the two recommendations consistent? Explain.</p><div class=\"scroller\"><table><tr><th></th><th>Fealey</th><th>Janson</th><th>Higher</th></tr><tr><td>Junior</td><td>15/40 = .375</td><td>70/200 = .350</td><td>Fealey</td></tr><tr><td>Senior</td><td>75/250 = .300</td><td>35/120 = .292</td><td>Fealey</td></tr><tr><td>Combined</td><td>90/290 = .310</td><td>105/320 = .328</td><td>Janson</td></tr></table></div><ol><li>(a) Fealey is ahead in both years, so year by year she gets the scholarship.</li><li>(b) Combined table: Fealey 90 hits, 200 no-hits, 290 at-bats; Janson 105 hits, 215 no-hits, 320 at-bats. Combined, Janson is ahead (.328 against .310).</li><li>(c) The two views disagree: this is Simpson's paradox. The hidden variable is the year. Both players hit worse as seniors (.300 and .292 against .375 and .350), and 250 of Fealey's 290 at-bats (86%) came in her weaker senior year, while only 120 of Janson's 320 (37.5%) did. Janson's combined average is pulled up by her large junior-year sample, not by better hitting.</li><li>The combined average is a weighted average of the yearly ones, weighted by at-bats. That is why .310 is not (.375 + .300)/2 = .338.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) Fealey; (b) Janson; (c) not consistent, because of Simpson's paradox. The fair comparison is like with like, year by year, so the scholarship should go to Fealey: she out-hit Janson in each year.</p></details>"
+    },
+    {
      "t": "Textbook: Descriptive Statistics: Tabular and Graphical Displays",
      "src": "Anderson 14e ch2",
      "h": "<p>Raw data are hard to read, so this chapter shows how to condense them into tables and charts that reveal patterns. For one categorical variable it uses frequency, relative frequency and percent frequency distributions with bar and pie charts; for one quantitative variable it adds the rules for choosing classes, plus dot plots, histograms, cumulative distributions and stem-and-leaf displays. For two variables it builds crosstabulations with row and column percentages, warns that aggregated tables can reverse the conclusion of their parts (Simpson's paradox), and introduces scatter diagrams, trendlines, side-by-side and stacked bar charts. It ends with guidelines for clear graphics, choosing a display by purpose, and data dashboards that track key performance indicators. For a manager, the right display is often the fastest route from a spreadsheet to a decision.</p><!--viz:sfm-frequency-to-pie--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Frequency table for 40 coffee orders: Latte 14, Cappuccino 10, Espresso 8, Mocha 5, Tea 3, with relative frequency, percent and pie angle (126, 90, 72, 45 and 27 degrees).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">From counts to relative frequency to pie angles</div><div class=\"scroller\"><table><thead><tr><th>Order</th><th>Frequency</th><th>Relative</th><th>Percent</th><th>Pie angle</th></tr></thead><tbody><tr><td>Latte</td><td style=\"font-family:var(--mono)\">14</td><td style=\"font-family:var(--mono)\">0.350</td><td style=\"font-family:var(--mono)\">35.0%</td><td style=\"font-family:var(--mono)\">126°</td></tr><tr><td>Cappuccino</td><td style=\"font-family:var(--mono)\">10</td><td style=\"font-family:var(--mono)\">0.250</td><td style=\"font-family:var(--mono)\">25.0%</td><td style=\"font-family:var(--mono)\">90°</td></tr><tr><td>Espresso</td><td style=\"font-family:var(--mono)\">8</td><td style=\"font-family:var(--mono)\">0.200</td><td style=\"font-family:var(--mono)\">20.0%</td><td style=\"font-family:var(--mono)\">72°</td></tr><tr><td>Mocha</td><td style=\"font-family:var(--mono)\">5</td><td style=\"font-family:var(--mono)\">0.125</td><td style=\"font-family:var(--mono)\">12.5%</td><td style=\"font-family:var(--mono)\">45°</td></tr><tr><td>Tea</td><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono)\">0.075</td><td style=\"font-family:var(--mono)\">7.5%</td><td style=\"font-family:var(--mono)\">27°</td></tr><tr style=\"background:var(--blue-soft)\"><td><b>Total</b></td><td style=\"font-family:var(--mono)\">40</td><td style=\"font-family:var(--mono)\">1.000</td><td style=\"font-family:var(--mono)\">100%</td><td style=\"font-family:var(--mono)\">360°</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Divide by n for relative frequency, then multiply by 360° for the pie slice; the totals check your work (1, 100%, 360°).</figcaption></figure><!--/viz:sfm-frequency-to-pie--><!--viz:sfm-ogive--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Ogive of 35 delivery times in classes 10–15, 15–20, 20–25, 25–30, 30–35 minutes with frequencies 4, 9, 12, 7, 3. Cumulative percentages 11.4, 37.1, 71.4, 91.4, 100.0. Reading across from 50% gives about 21.9 minutes.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The ogive: cumulative percent, read sideways</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 240\" role=\"img\" aria-label=\"Ogive of 35 delivery times in classes 10–15, 15–20, 20–25, 25–30, 30–35 minutes with frequencies 4, 9, 12, 7, 3. Cumulative percentages 11.4, 37.1, 71.4, 91.4, 100.0. Reading across from 50% gives about 21.9 minutes.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M52,170 L420,170\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M52,170 L52,22\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"44\" y=\"174\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">0</text><text x=\"44\" y=\"139\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">25</text><path d=\"M52,135 L420,135\" style=\"stroke:var(--rule);stroke-width:1;fill:none\"/><text x=\"44\" y=\"104\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">50</text><path d=\"M52,100 L420,100\" style=\"stroke:var(--rule);stroke-width:1;fill:none\"/><text x=\"44\" y=\"69\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">75</text><path d=\"M52,65 L420,65\" style=\"stroke:var(--rule);stroke-width:1;fill:none\"/><text x=\"44\" y=\"34\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">100</text><path d=\"M52,30 L420,30\" style=\"stroke:var(--rule);stroke-width:1;fill:none\"/><path d=\"M60,170 L60,175\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"60\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">10</text><path d=\"M128,170 L128,175\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"128\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">15</text><path d=\"M196,170 L196,175\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"196\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">20</text><path d=\"M264,170 L264,175\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"264\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">25</text><path d=\"M332,170 L332,175\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"332\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">30</text><path d=\"M400,170 L400,175\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"400\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">35</text><path d=\"M52,100 L221.5,100\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none;stroke-dasharray:4 4\"/><path d=\"M221.5,100 L221.5,170\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none;stroke-dasharray:4 4\"/><path d=\"M60,170 L128,154 L196,118 L264,70 L332,42 L400,30\" style=\"fill:none;stroke:var(--blue);stroke-width:2\"/><circle cx=\"60\" cy=\"170\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"128\" cy=\"154\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"196\" cy=\"118\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"264\" cy=\"70\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"332\" cy=\"42\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"400\" cy=\"30\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><text x=\"60\" y=\"208\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px\">0%</text><text x=\"128\" y=\"208\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px\">11.4%</text><text x=\"196\" y=\"208\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px\">37.1%</text><text x=\"264\" y=\"208\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px\">71.4%</text><text x=\"332\" y=\"208\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px\">91.4%</text><text x=\"400\" y=\"208\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px\">100.0%</text><text x=\"227.5\" y=\"162\" style=\"fill:var(--clay);font-size:13px;font-weight:700\">≈ 21.9</text><text x=\"236\" y=\"230\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">delivery time, minutes (upper class limit)</text><text x=\"60\" y=\"20\" style=\"fill:var(--ink-3);font-size:13px\">cumulative %</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Plot each cumulative % at the class's upper limit; the line always ends at 100%, and reading across from 50% estimates the median.</figcaption></figure><!--/viz:sfm-ogive--><!--viz:sfm-stem-leaf--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Stem-and-leaf display of 21 test scores from 41 to 93. Stems 4 to 9 hold 2, 4, 6, 5, 3 and 1 leaves; the 60s row is the longest.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Stem-and-leaf: a histogram that keeps every value</div><div style=\"font-family:var(--mono);font-size:15px;line-height:1.7;display:inline-block;padding:6px 12px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><div style=\"white-space:pre\">4 │ 1 7</div><div style=\"white-space:pre\">5 │ 2 5 5 8</div><div style=\"background:var(--blue-soft);white-space:pre\">6 │ 1 3 3 4 7 9</div><div style=\"white-space:pre\">7 │ 0 2 2 5 8</div><div style=\"white-space:pre\">8 │ 1 4 6</div><div style=\"white-space:pre\">9 │ 3</div></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\">21 test scores · stem = tens digit, leaf = units digit · 6 │ 1 3 3 4 7 9 means 61, 63, 63, 64, 67, 69</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Turn it sideways and the leaf rows are histogram bars, yet every original score can still be read back.</figcaption></figure><!--/viz:sfm-stem-leaf--><p><strong>Frequency, relative and percent frequency distributions</strong> — A frequency distribution counts the observations in each of several non-overlapping classes. Dividing each count by n gives the relative frequency; multiplying that by 100 gives the percent frequency. Frequencies sum to n, relative frequencies to 1.00 and percents to 100, apart from rounding.<br><span style=\"font-family:var(--mono)\">Relative frequency of a class = frequency of the class ÷ n</span><br><em>e.g.</em> 13 of 50 purchases were Pepsi: relative frequency 0.26, percent frequency 26%.</p><p><strong>Bar charts and pie charts</strong> — A bar chart puts category labels on one axis and frequency (or relative or percent frequency) on the other, with separated bars because categories are distinct; sorting bars from tallest to shortest makes rankings obvious. A pie chart splits a circle in proportion to relative frequencies. The book notes that many visualisation experts avoid pie charts because people judge areas poorly, and that a bar chart is usually the better choice. Classes with roughly 5% or less are often merged into an 'Other' class.<br><span style=\"font-family:var(--mono)\">Pie sector angle = relative frequency × 360°</span><br><em>e.g.</em> Relative frequency 0.38 gives a 136.8° sector.</p><p><strong>Choosing classes for quantitative data</strong> — Three decisions: the number of classes (generally 5 to 20, fewer for small data sets), a common class width, and class limits so each value falls in exactly one class. More classes means narrower width, so the two choices go together, and the final choice is a judgement made by trial and error. No single frequency distribution is 'the' correct one.<br><span style=\"font-family:var(--mono)\">Approximate class width = (largest value − smallest value) ÷ number of classes</span><br><em>e.g.</em> Audit times from 12 to 33 days with 5 classes: (33 − 12)/5 = 4.2, rounded up to 5 days.</p><p><strong>Class limits, midpoints and open-end classes</strong> — The lower class limit is the smallest value a class can hold and the upper limit the largest. Class width is the gap between successive lower limits. The class midpoint is halfway between a class's lower and upper limits. Limits follow the precision of the data (10.0–14.9 for data in tenths), and an open-end class such as '35 or more' can absorb a few extreme values.<br><span style=\"font-family:var(--mono)\">Class midpoint = (lower limit + upper limit) ÷ 2</span><br><em>e.g.</em> Classes 10–14, 15–19 have width 5 and midpoints 12 and 17.</p><p><strong>Dot plot</strong> — Each data value is a dot above a horizontal axis covering the range of the data; repeated values stack. It shows every value and is handy for comparing the distributions of two or more variables.</p><p><strong>Histogram and the shape of a distribution</strong> — A histogram draws a rectangle over each class with height equal to its frequency (or relative or percent frequency); adjacent rectangles touch to show that all values across the range are possible. Its main use is to show shape: skewed left (long left tail, e.g. exam scores), symmetric (heights, SAT scores) or skewed right (long right tail, e.g. house prices, salaries, purchase amounts, which are common in business data).</p><p><strong>Cumulative distributions</strong> — A cumulative frequency distribution gives the number of values less than or equal to each class's upper limit; cumulative relative and percent versions divide by n or convert to percentages. The last entry always equals n, 1.00 or 100%.<br><em>e.g.</em> Audit-time frequencies 4, 8, 5, 2, 1 give cumulative frequencies 4, 12, 17, 19, 20.</p><p><strong>Stem-and-leaf display</strong> — Leading digits form the stem to the left of a line; the last digit of each value is a leaf to the right. It shows rank order and shape at once, is easy to build by hand, and unlike a histogram keeps the actual values. A stretched display uses two stems per leading digit (leaves 0–4 and 5–9). A stated leaf unit (100, 10, 1, 0.1 …) tells you how to scale the digits back to approximate data values.</p><p><strong>Crosstabulation with row and column percentages</strong> — A crosstabulation counts observations for every combination of the classes of two variables; either variable may be categorical or quantitative, but a quantitative variable must first be grouped into classes. The margins give each variable's own frequency distribution; the value of the table lies in the interior cells, which show the relationship. Row percentages divide each cell by its row total; column percentages by its column total, and they answer different questions.</p><p><strong>Simpson's paradox and the hidden variable</strong> — Conclusions drawn from separate crosstabulations can reverse when the tables are added together into one aggregate table. The cause is a hidden variable that is spread unevenly across the groups being compared. Before concluding from aggregated data, check whether a subgroup breakdown tells a different story.<br><em>e.g.</em> The book's two judges: one has the higher overall upheld rate, yet the other has the higher rate in each court, because the first heard far more cases in the court where reversals are common.</p><p><strong>Scatter diagram and trendline</strong> — A scatter diagram plots two quantitative variables against each other, one on each axis. A trendline approximates the relationship: upward for a positive relationship, downward for a negative one, and no pattern when there is no apparent relationship. With time on the horizontal axis it becomes a time series plot.</p><p><strong>Side-by-side and stacked bar charts</strong> — Both extend the bar chart to two variables. A side-by-side bar chart places a group of bars for each category so values can be compared within and across groups. A stacked bar chart splits each bar into coloured segments; when built from column percentages every bar reaches 100%, which makes the composition easy to compare, though it can also show raw frequencies.</p><p><strong>Effective graphical displays and choosing one</strong> — Give a clear title, keep it simple (no 3-D when 2-D will do), label axes with units, use distinct colours and place any legend near the data. Choose by purpose: distribution (bar, pie, dot plot, histogram, stem-and-leaf), comparison (side-by-side and stacked bar charts) or relationship (scatter diagram and trendline).</p><p><strong>Data dashboards and KPIs</strong> — A data dashboard gathers visual displays together so managers can monitor key performance indicators (inventory on hand, daily sales, on-time delivery rate) at a glance, at operational, tactical or strategic level. Good dashboards inform rather than overwhelm: little scrolling, sparing colour, no needless 3-D, borders between charts.</p><p><strong>Building these displays in Excel</strong> — The book's Excel appendix uses Recommended Charts, which builds a bar chart and its frequency table (as a PivotTable) in one step for categorical data; a PivotTable/PivotChart to produce a grouped frequency distribution and histogram together; the Data Analysis ToolPak Histogram tool (needs a bin range, and the gap width set to 0% for a true histogram); and the built-in Statistic Chart histogram, which picks its own bins. PivotTables also build crosstabulations.</p><div class=\"card\"><strong>Case: Colgate-Palmolive detergent density</strong> <em>(Statistics in Practice: Colgate-Palmolive Company)</em><p>Cartons are filled by weight, so overly dense powder makes a full carton look underfilled. The company samples powder density regularly and summarises the readings in a frequency distribution and histogram so operators can see whether densities stay below the upper specification limit and act if they drift upward.</p><p><em>Lesson:</em> Frequency distributions and histograms as everyday quality-control tools.</p><p><em>Think:</em> Looking at a histogram of densities, what pattern would tell operators to take corrective action even before any carton breaches the limit?</p></div><div class=\"card\"><strong>Case: Two judges and Simpson's paradox</strong> <em>(Section 2.3: Judges Luckett and Kendall appeal verdicts)</em><p>Combined across both courts, one judge has the higher share of verdicts upheld on appeal. Split by court, the other judge has the higher upheld rate in each court. The reversal arises because the judges heard very different mixes of cases from the court where reversals are frequent.</p><p><em>Lesson:</em> Aggregated crosstabulations can hide a variable that reverses the conclusion.</p><p><em>Think:</em> Which variable is hidden in the aggregated table, and which view, aggregated or by court, should be used to compare the judges?</p></div><div class=\"card\"><strong>Case: Cincinnati Zoo dashboards</strong> <em>(Section 2.5: Data Visualization in Practice, Cincinnati Zoo and Botanical Garden)</em><p>The zoo built real-time dashboards, including a tablet version for managers on the grounds, tracking sales by location, visitor movement, customer spending and attendance against weather. Managers use them for staffing, stocking and advertising decisions, and the system is credited with higher revenue and lower marketing costs.</p><p><em>Lesson:</em> Dashboards turn many KPIs into quick operational decisions.</p><p><em>Think:</em> Name two KPIs a zoo manager would want on a phone-sized dashboard and the chart type you would use for each.</p></div><div class=\"card\"><strong>Case: Pelican Stores promotion</strong> <em>(Case Problem 1: Pelican Stores)</em><p>A women's apparel chain mails discount coupons to customers of its sister stores and records 100 credit-card transactions on one promotion day, noting customer type (promotional or regular), items, net sales, payment method, gender, marital status and age. Management wants tabular and graphical summaries to understand its customers and judge the promotion.</p><p><em>Lesson:</em> Choosing the right table or chart for each variable type, and crosstabulating customer type against other variables.</p><p><em>Think:</em> Which two-variable display would best show whether promotional customers spend more per transaction than regular ones?</p></div><details><summary>Worked problem: Building a frequency distribution for delivery times</summary><p>A Bengaluru cloud kitchen records 24 delivery times (minutes): 18, 22, 25, 31, 27, 19, 35, 42, 23, 28, 26, 33, 21, 29, 38, 24, 30, 27, 46, 25, 32, 20, 28, 36. Using 5 classes, build the frequency, relative frequency and cumulative frequency distributions and give the class midpoints. What share of deliveries took 35 minutes or less?</p><ol><li>Smallest value 18, largest 46. Approximate width = (46 − 18) ÷ 5 = 5.6, rounded up to 6 minutes.</li><li>Start at 18: classes 18–23, 24–29, 30–35, 36–41, 42–47 (each value fits exactly one class).</li><li>Count: 18–23 → 6; 24–29 → 9; 30–35 → 5; 36–41 → 2; 42–47 → 2. Total 24.</li><li>Relative frequencies (÷ 24): 0.250, 0.375, 0.208, 0.083, 0.083 (sum 1.00 allowing for rounding).</li><li>Cumulative frequencies: 6, 15, 20, 22, 24.</li><li>Midpoints: (18 + 23)/2 = 20.5, then 26.5, 32.5, 38.5, 44.5.</li><li>Deliveries ≤ 35 minutes = cumulative frequency of the 30–35 class = 20, so 20/24 = 0.833.</li></ol><p><strong>Answer:</strong> Frequencies 6, 9, 5, 2, 2; cumulative 6, 15, 20, 22, 24; about 83.3% of deliveries took 35 minutes or less. The long right tail (42 and 46 minutes) suggests mild right skew.</p></details><details><summary>Worked problem: Relative frequencies and pie-chart angles</summary><p>A Lucknow kirana store logs the app used for 80 UPI payments in a day: PhonePe 36, Google Pay 28, Paytm 10, others 6. Find each relative frequency, percent frequency and pie-chart sector angle, and say which chart the textbook would prefer for presenting this.</p><ol><li>Relative frequency = count ÷ 80: PhonePe 0.450, Google Pay 0.350, Paytm 0.125, others 0.075 (sum 1.000).</li><li>Percent frequency: 45%, 35%, 12.5%, 7.5%.</li><li>Sector angle = relative frequency × 360°: 0.450 × 360 = 162°; 0.350 × 360 = 126°; 0.125 × 360 = 45°; 0.075 × 360 = 27°. Check: 162 + 126 + 45 + 27 = 360°.</li><li>The book prefers a sorted bar chart (PhonePe, Google Pay, Paytm, others) because differences in bar length are easier to judge than differences in sector area.</li></ol><p><strong>Answer:</strong> Angles 162°, 126°, 45° and 27°; a sorted bar chart is the clearer display.</p></details><details><summary>Worked problem: Spotting Simpson's paradox in sales conversion</summary><p>Two sales executives each worked 200 leads. Asha: SME leads 40 converted out of 50, enterprise leads 30 out of 150. Bhavin: SME leads 120 out of 160, enterprise leads 5 out of 40. Who has the better overall conversion rate, and who is better within each segment? Explain any contradiction.</p><ol><li>Asha overall: (40 + 30)/200 = 70/200 = 35%.</li><li>Bhavin overall: (120 + 5)/200 = 125/200 = 62.5%. Aggregated, Bhavin looks far better.</li><li>SME segment: Asha 40/50 = 80%; Bhavin 120/160 = 75%. Asha is better.</li><li>Enterprise segment: Asha 30/150 = 20%; Bhavin 5/40 = 12.5%. Asha is better again.</li><li>The hidden variable is lead type: enterprise leads convert far less often, and Asha was given 150 of them against Bhavin's 40. Aggregation mixes skill with lead mix.</li></ol><p><strong>Answer:</strong> Bhavin wins on the aggregate (62.5% vs 35%), but Asha converts better in both segments (80% vs 75%, 20% vs 12.5%). This is Simpson's paradox; judge performance segment by segment.</p></details><div class=\"def\"><b>Book vs lecture — Pie charts.</b> Book: Treats the pie chart as a legitimate display for relative or percent frequencies but says many visualisation experts advise against it; a bar chart (ideally sorted) is usually superior, and 3-D pies add nothing. Lecture: Presents the pie chart alongside the bar chart as a standard categorical display, with the sector-angle formula and a rule of thumb to keep it to about 5–6 categories. <b>No conflict on the formula (relative frequency × 360°). If a question asks which display is better for comparing shares, answer with the book: the bar chart.</b></div><div class=\"def\"><b>Book vs lecture — Gaps in histograms.</b> Book: The usual convention is that histogram rectangles touch, because continuous data can take any value between classes; for discrete quantitative data that take only whole numbers, a separation between bars is also appropriate. Lecture: States that histograms have no gaps because the data are continuous, and contrasts this with bar charts, which have gaps. <b>For a quiz question on histogram versus bar chart, use the lecture's rule (no gaps in a histogram). Know the book's exception for discrete counts in case an analyse-level question raises it.</b></div>"
@@ -270,6 +275,11 @@ HUB.addCourse({
      "t": "Outliers, five-number summary and box plots",
      "src": "L#6 · L#7",
      "h": "\n  <div class=\"def\">An <b>outlier</b> is an unusually small or large value. The z-score test: <b>|z| &gt; 3</b> flags one — more than three standard deviations from the mean.</div>\n  <p style=\"font-size:14.5px\"><strong>Three causes:</strong> incorrectly <em>recorded</em> data · incorrectly <em>included</em> data · correctly recorded, genuinely exceptional values.</p>\n  <h4>The five-number summary</h4>\n  <p style=\"font-size:15px\"><strong>Minimum · Q1 · Median (Q2) · Q3 · Maximum</strong></p>\n  <h4>Box plot construction, and the other outlier rule</h4>\n  <ul>\n   <li>The <strong>box</strong> runs from <strong>Q1 to Q3</strong> — the middle 50%.</li>\n   <li>A line inside marks the <strong>median</strong>.</li>\n   <li><strong>Lower limit = Q1 − 1.5 × IQR</strong>. <strong>Upper limit = Q3 + 1.5 × IQR</strong>. Anything beyond is an outlier.</li>\n   <li><strong>Whiskers</strong> extend to the most extreme values <em>inside</em> those limits — not to the outliers.</li>\n  </ul>\n  <p style=\"font-size:14.5px\"><strong>His worked example:</strong> Q1 = 545, Q3 = 625, so <strong>IQR = 80</strong>. Lower limit = 545 − 120 = <strong>425</strong>; upper limit = 625 + 120 = <strong>745</strong>.</p>\n  <div class=\"warnbox\"><b>Two different outlier rules, both examinable:</b> the <b>z-score</b> rule (|z| &gt; 3) and the <b>box plot</b> rule (beyond Q1 − 1.5 IQR or Q3 + 1.5 IQR). Do not mix up the multipliers — 3 for z, 1.5 for IQR.</div><!--viz:sfm-boxplot-anatomy--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Box plot of 15 call times: 4, 6, 7, 7, 8, 9, 10, 11, 12, 12, 13, 14, 15, 17, 31 minutes. Q1 = 7, median = 11, Q3 = 14, IQR = 7; fences at −3.5 and 24.5; whiskers stop at 4 and 17; 31 is an outlier.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Reading a box plot</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 190\" role=\"img\" aria-label=\"Box plot of 15 call times in minutes (4, 6, 7, 7, 8, 9, 10, 11, 12, 12, 13, 14, 15, 17, 31). Box from Q1 = 7 to Q3 = 14 with median 11, whiskers to 4 and 17, upper fence 24.5, and 31 plotted as an outlier.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><rect x=\"106\" y=\"76\" width=\"76\" height=\"28\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><path d=\"M149.4,76 L149.4,104\" style=\"stroke:var(--ink);stroke-width:2;fill:none\"/><path d=\"M73.4,90 L106,90\" style=\"stroke:var(--ink-2);stroke-width:1.5;fill:none\"/><path d=\"M182,90 L214.6,90\" style=\"stroke:var(--ink-2);stroke-width:1.5;fill:none\"/><path d=\"M73.4,82 L73.4,98\" style=\"stroke:var(--ink-2);stroke-width:1.5;fill:none\"/><path d=\"M214.6,82 L214.6,98\" style=\"stroke:var(--ink-2);stroke-width:1.5;fill:none\"/><path d=\"M296,66 L296,152\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none;stroke-dasharray:4 4\"/><circle cx=\"366.6\" cy=\"90\" r=\"5\" style=\"fill:none;stroke:var(--bad);stroke-width:2\"/><text x=\"106\" y=\"60\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-weight:700\">Q1 7</text><path d=\"M106,68 L106,74\" style=\"stroke:var(--rule-2);stroke-width:1;fill:none\"/><text x=\"182\" y=\"60\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-weight:700\">Q3 14</text><path d=\"M182,68 L182,74\" style=\"stroke:var(--rule-2);stroke-width:1;fill:none\"/><text x=\"149.4\" y=\"34\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">median 11</text><path d=\"M149.4,42 L149.4,74\" style=\"stroke:var(--rule-2);stroke-width:1;fill:none\"/><text x=\"296\" y=\"34\" text-anchor=\"middle\" style=\"fill:var(--clay);font-size:13px\">Q3 + 1.5 × IQR = 24.5</text><text x=\"366.6\" y=\"60\" text-anchor=\"middle\" style=\"fill:var(--bad);font-size:13px;font-weight:700\">outlier 31</text><text x=\"144\" y=\"124\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px;font-weight:700\">IQR = 7</text><text x=\"73.4\" y=\"124\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">4</text><text x=\"214.6\" y=\"124\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">17</text><path d=\"M22,152 L418,152\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M30,152 L30,157\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"30\" y=\"172\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><path d=\"M84.3,152 L84.3,157\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"84.3\" y=\"172\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">5</text><path d=\"M138.6,152 L138.6,157\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"138.6\" y=\"172\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">10</text><path d=\"M192.9,152 L192.9,157\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"192.9\" y=\"172\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">15</text><path d=\"M247.1,152 L247.1,157\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"247.1\" y=\"172\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">20</text><path d=\"M301.4,152 L301.4,157\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"301.4\" y=\"172\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">25</text><path d=\"M355.7,152 L355.7,157\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"355.7\" y=\"172\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">30</text><path d=\"M410,152 L410,157\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"410\" y=\"172\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">35</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Whiskers stop at the last value inside the fences, not at the fence; anything beyond is plotted on its own.</figcaption></figure><!--/viz:sfm-boxplot-anatomy-->"
+    },
+    {
+     "t": "Practice questions from the lecturer: Chapter 3",
+     "src": "L#6",
+     "h": "<p style=\"font-size:14.5px\">The lecturer's own practice set for Chapter 3 (Descriptive Statistics: Numerical Measures), shared by Dr. Srivastava through an LMS announcement on 9 October 2026. It has 24 numericals, the largest of his chapter sets and the one closest to Quiz 1. Each question is restated in our words below with a full worked solution; the numbers are the sheet's. The mix drills the whole chapter: the five averages and a trimmed mean, percentiles and quartiles by the textbook's (n + 1) method, range, IQR, sample and population variance, the coefficient of variation, skewness from mean versus median, z-scores, Chebyshev and the empirical rule, both outlier rules, the box plot, and covariance and correlation from raw data.</p><p style=\"font-size:14.5px\"><strong>What this sheet tells you to be able to do</strong></p><ul><li>Find the mean, median and mode of a small data set, and a weighted mean and a geometric mean.</li><li>Trim a set percentage from <em>each</em> end and average what is left.</li><li>Locate any percentile with L = (p/100)(n + 1) and interpolate when L is not a whole number; read off Q1, Q2 and Q3.</li><li>Compute range, IQR, sample variance (n − 1) and population variance (N), their square roots, and the CV.</li><li>Name the skew from mean versus median.</li><li>Turn a value into a z-score, and use Chebyshev (any shape, ‘at least’) or the empirical rule (bell shape) to get percentages, including one-tail ones.</li><li>Test for outliers both ways: |z| &gt; 3, and beyond Q1 − 1.5 × IQR or Q3 + 1.5 × IQR; give the five-number summary for a box plot.</li><li>Compute s<sub>xy</sub>, s<sub>x</sub>, s<sub>y</sub> and r by hand and interpret r without claiming causation.</li></ul><div class=\"def\"><b>Which quartile method?</b> The sheet asks for ‘the textbook's percentile method’. That is the method taught in L#5: L<sub>p</sub> = (p/100)(n + 1), then interpolate. Every answer below uses it. Two other methods give different numbers for small even-sized data sets and will appear as wrong options: taking the median of each half, and Excel's QUARTILE.INC / PERCENTILE.INC (the textbook's method is QUARTILE.EXC / PERCENTILE.EXC, or R's quantile(x, type = 6)).</div><div class=\"scroller\"><table><thead><tr><th>Sheet question</th><th>(n + 1), use this</th><th>Median of halves</th><th>Excel .INC</th></tr></thead><tbody><tr><td>Q4: 80th percentile</td><td><strong>36.4</strong></td><td>—</td><td>34</td></tr><tr><td>Q7: Q1, Q3, IQR</td><td><strong>10.5, 19.25, 8.75</strong></td><td>11, 18.5, 7.5</td><td>11.5, 17.75, 6.25</td></tr><tr><td>Q14: Q1, Q3, upper limit</td><td><strong>14.5, 22.5, 34.5</strong></td><td>15, 22, 32.5</td><td>15.25, 21.5, 30.875</td></tr><tr><td>Q15: Q1, Q3</td><td><strong>17.25, 30.5</strong></td><td>18, 30</td><td>18.5, 29.25</td></tr><tr><td>Q22: Q1, Q3, IQR</td><td><strong>3,475, 4,025, 550</strong></td><td>3,500, 4,000, 500</td><td>3,525, 3,975, 450</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The outlier verdicts (Q14, Q16, Q22) come out the same under all three methods; only the numbers change. In Q5 (n = 11) the (n + 1) locations are whole numbers, so the halves method agrees with it.</p><div class=\"def\"><b>Where the sheet is loose:</b> (1) Q21(c) asks for ‘standard deviation’ without saying sample or population; the 10 cases were randomly selected, so they are a sample and s (n − 1) is used. (2) Q21(d) ‘exceeding the 10-minute target’ means strictly more than 10, so the call that took exactly 10 minutes does not count. (3) Q23(b) asks for the share below 66 ‘using the empirical rule’; z = 2 there, so the answer is about 97.5%, not 95% (the normal table gives 97.72%). (4) Q19 hands you s<sub>xy</sub> = 24.5, s<sub>x</sub> = 2.3875 and s<sub>y</sub> = 10.3682; we checked all three against the Q18 data and they are correct. (5) Q2 is priced in dollars; the method is the same in rupees.</div><h4>Location</h4><details><summary>Q1 · Mean, median and mode of seven shifts</summary><p style=\"font-size:14.5px\">A machine's output over seven shifts was 18, 22, 15, 20, 22, 17 and 25 units. Find the mean, median and mode.</p><ol><li>Mean = (18 + 22 + 15 + 20 + 22 + 17 + 25)/7 = 139/7 = 19.86 units.</li><li>Sort first: 15, 17, 18, 20, 22, 22, 25. With n = 7 (odd) the median is the 4th value: 20 units.</li><li>Mode: 22 appears twice, every other value once, so the mode is 22 units.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Mean ≈ 19.86, median = 20, mode = 22 units. (Reading the 4th value of the <em>unsorted</em> list would wrongly give 20 by luck here; always sort first.)</p></details><details><summary>Q2 · Weighted average purchase price</summary><p style=\"font-size:14.5px\">A firm buys one raw material from four suppliers: 1,200 kg at $2.80, 800 kg at $3.20, 1,500 kg at $3.00 and 500 kg at $3.50 per kg. Find the average price paid per kg.</p><ol><li>Weights = quantities, because each kilogram counts once.</li><li>Σwx = 1,200(2.80) + 800(3.20) + 1,500(3.00) + 500(3.50) = 3,360 + 2,560 + 4,500 + 1,750 = $12,170.</li><li>Σw = 1,200 + 800 + 1,500 + 500 = 4,000 kg.</li><li>Weighted mean = 12,170/4,000 = $3.0425 per kg.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> About $3.04 per kg. The simple mean of the four prices, $3.125, overstates it because the largest lot (1,500 kg) was bought at a low price and the dearest one was the smallest.</p></details><details><summary>Q3 · Geometric mean of growth factors</summary><p style=\"font-size:14.5px\">An investment's growth factors over four years were 1.10, 0.95, 1.20 and 1.05. Find the geometric mean growth factor and the average annual growth rate.</p><ol><li>Product = 1.10 × 0.95 × 1.20 × 1.05 = 1.3167 (the money grew 31.67% over four years).</li><li>Geometric mean = 1.3167^(1/4) = 1.0712.</li><li>Average annual growth rate = 1.0712 − 1 = 0.0712 = 7.12% a year.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Growth factor ≈ 1.0712; rate ≈ 7.12% a year. The arithmetic mean of the factors, 1.075 (7.5%), would overstate the compound growth: 1.075⁴ = 1.335, not 1.317.</p></details><details><summary>Q6 · 10% trimmed mean</summary><p style=\"font-size:14.5px\">Ten jobs took 12, 15, 18, 20, 22, 25, 27, 30, 32 and 35 minutes. Find the 10% trimmed mean.</p><ol><li>A 10% trimmed mean removes 10% of the values from <em>each</em> end: 0.10 × 10 = 1 value at the bottom and 1 at the top.</li><li>Drop 12 and 35. The remaining eight values sum to 15 + 18 + 20 + 22 + 25 + 27 + 30 + 32 = 189.</li><li>Trimmed mean = 189/8 = 23.625 minutes.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 23.625 minutes. The ordinary mean is 23.6, almost the same, because these data have no extreme values; trimming matters when there are outliers.</p></details><h4>Percentiles &amp; quartiles</h4><details><summary>Q4 · 80th percentile by the textbook's method</summary><p style=\"font-size:14.5px\">Eleven delivery times (minutes), already sorted: 14, 17, 19, 21, 23, 26, 28, 31, 34, 38, 42. Find the 80th percentile with the textbook's method.</p><ol><li>Location L = (80/100)(11 + 1) = 0.8 × 12 = 9.6.</li><li>9.6 is a position: between the 9th value (34) and the 10th (38).</li><li>Interpolate: 34 + 0.6 × (38 − 34) = 34 + 2.4 = 36.4.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 36.4 minutes. (Excel's PERCENTILE.INC gives 34; PERCENTILE.EXC gives 36.4, matching the book.)</p></details><details><summary>Q5 · Quartiles of the same data</summary><p style=\"font-size:14.5px\">Same eleven delivery times. Find Q1, Q2 and Q3.</p><ol><li>Q1: L = 0.25 × 12 = 3, a whole number, so Q1 is the 3rd value: 19.</li><li>Q2: L = 0.50 × 12 = 6, so Q2 = the 6th value = 26 (the median, as it must be).</li><li>Q3: L = 0.75 × 12 = 9, so Q3 = the 9th value = 34.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Q1 = 19, Q2 = 26, Q3 = 34 minutes, so IQR = 15. With n + 1 = 12 every quartile location is a whole number and no interpolation is needed.</p></details><details><summary>Q15 · Five-number summary</summary><p style=\"font-size:14.5px\">Ten delivery times (minutes): 12, 15, 18, 20, 21, 24, 27, 30, 32, 35. Give the five-number summary.</p><ol><li>Minimum = 12, maximum = 35.</li><li>Q1: L = 0.25 × 11 = 2.75 → 15 + 0.75 × (18 − 15) = 17.25.</li><li>Median: L = 0.50 × 11 = 5.5 → (21 + 24)/2 = 22.5.</li><li>Q3: L = 0.75 × 11 = 8.25 → 30 + 0.25 × (32 − 30) = 30.5.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 12, 17.25, 22.5, 30.5, 35 (minimum, Q1, median, Q3, maximum).</p></details><h4>Spread</h4><details><summary>Q7 · Range, IQR, sample variance and standard deviation</summary><p style=\"font-size:14.5px\">Weekly complaints at a service centre over eight weeks: 8, 10, 12, 12, 15, 17, 20, 21. Find the range, IQR, sample variance and sample standard deviation.</p><ol><li>Range = 21 − 8 = 13.</li><li>Q1: L = 0.25 × 9 = 2.25 → 10 + 0.25 × (12 − 10) = 10.5. Q3: L = 0.75 × 9 = 6.75 → 17 + 0.75 × (20 − 17) = 19.25. IQR = 19.25 − 10.5 = 8.75.</li><li>Mean = 115/8 = 14.375.</li><li>Σ(x − x̄)² = 153.875. Quick check with the shortcut: Σx² − n x̄² = 1,807 − 8 × 14.375² = 1,807 − 1,653.125 = 153.875.</li><li>s² = 153.875/(8 − 1) = 21.98; s = √21.98 = 4.69.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Range 13; IQR 8.75; s² ≈ 21.98; s ≈ 4.69 complaints. (Dividing by n = 8 gives 19.23, the population variance.)</p></details><details><summary>Q8 · Coefficient of variation for two machines</summary><p style=\"font-size:14.5px\">Machine A: mean 50.83 units, standard deviation 2.48. Machine B: mean 83.33 units, standard deviation 9.91. Compare their relative variability.</p><ol><li>CV = s/x̄. A: 2.48/50.83 = 0.0488, i.e. 4.88%.</li><li>B: 9.91/83.33 = 0.1189, i.e. 11.89%.</li><li>B's spread is a much larger share of its mean.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> CV(A) ≈ 4.88%, CV(B) ≈ 11.89%: Machine B has the greater relative variability, so A is the more consistent. (The lecture writes CV as a ratio, 0.049 and 0.119; the textbook as a percentage. Same comparison.)</p></details><details><summary>Q17 · Population versus sample variance</summary><p style=\"font-size:14.5px\">A whole population has five values: 4, 6, 8, 10, 12. Find μ, σ², σ, and the variance if the same five values were a sample.</p><ol><li>μ = 40/5 = 8.</li><li>Deviations: −4, −2, 0, 2, 4. Squares: 16, 4, 0, 4, 16; Σ = 40.</li><li>σ² = 40/N = 40/5 = 8; σ = √8 = 2.83.</li><li>As a sample: s² = 40/(n − 1) = 40/4 = 10 (s = 3.16).</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> μ = 8, σ² = 8, σ ≈ 2.83, s² = 10. Same data, same Σ(x − x̄)²; only the denominator changes, and the sample version is always the larger.</p></details><details><summary>Q21 · Help-desk dashboard against a 10-minute target</summary><p style=\"font-size:14.5px\">A help desk aims to resolve calls within 10 minutes. Ten randomly chosen calls took 6, 8, 5, 12, 9, 15, 7, 10, 4 and 14 minutes. Find the mean, median, standard deviation and the percentage over target, then comment.</p><ol><li>Mean = 90/10 = 9 minutes.</li><li>Sorted: 4, 5, 6, 7, 8, 9, 10, 12, 14, 15. Median = (8 + 9)/2 = 8.5 minutes.</li><li>Squared deviations from 9: 25, 16, 9, 4, 1, 0, 1, 9, 25, 36; Σ = 126. These are a sample, so s² = 126/9 = 14 and s = 3.74 minutes (the population formula would give 3.55).</li><li>Over target: 12, 14 and 15, i.e. 3 of 10 = 30%. The call of exactly 10 minutes meets the target.</li><li>Comment: the typical call (mean 9, median 8.5) beats the target, but the spread is large (s ≈ 3.74, CV ≈ 42%) and almost a third of calls overrun, up to 15 minutes. The problem is consistency, not the average; the manager should look at what the long calls have in common.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Mean 9; median 8.5; s ≈ 3.74; 30% over target; average fine, variability the concern.</p></details><details><summary>Q22 · Salaries of ten new hires: the full workout</summary><p style=\"font-size:14.5px\">Monthly salaries of 10 new hires: 3,200, 3,400, 3,500, 3,600, 3,700, 3,800, 3,900, 4,000, 4,100, 7,000. Find the mean, median, Q1, Q3, IQR, sample standard deviation and CV; test 7,000 with the IQR rule; and say whether the mean or median better describes a typical salary.</p><ol><li>Mean = 40,200/10 = 4,020.</li><li>Median = (3,700 + 3,800)/2 = 3,750.</li><li>Q1: L = 0.25 × 11 = 2.75 → 3,400 + 0.75 × 100 = 3,475. Q3: L = 8.25 → 4,000 + 0.25 × 100 = 4,025.</li><li>IQR = 4,025 − 3,475 = 550.</li><li>Σ(x − x̄)² = 10,556,000 (7,000 alone contributes 2,980² = 8,880,400). s² = 10,556,000/9 = 1,172,889; s = 1,083.0.</li><li>CV = 1,083.0/4,020 = 0.269 = 26.9%.</li><li>Limits: 3,475 − 1.5 × 550 = 2,650 and 4,025 + 1.5 × 550 = 4,850. 7,000 &gt; 4,850, so it is an outlier.</li><li>Note: z = (7,000 − 4,020)/1,083 = 2.75, so the |z| &gt; 3 rule would <em>not</em> flag it. The outlier inflates s, which is why the IQR rule is the safer test here. The sheet asks for the IQR rule.</li><li>Typical salary: the median. One salary of 7,000 pulls the mean above eight of the ten salaries; without it the mean would be 3,689.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Mean 4,020; median 3,750; Q1 3,475; Q3 4,025; IQR 550; s ≈ 1,083; CV ≈ 26.9%; 7,000 is an outlier; report the median.</p></details><h4>Shape, z-scores &amp; outliers</h4><details><summary>Q9 · Skew from mean and median</summary><p style=\"font-size:14.5px\">Salary summaries: Company A mean ₹52,000, median ₹52,000; Company B mean ₹68,000, median ₹55,000; Company C mean ₹48,000, median ₹54,000. Describe each distribution's likely shape.</p><ol><li>A: mean = median → roughly symmetric.</li><li>B: mean &gt; median by ₹13,000 → positively (right) skewed; a few high salaries pull the mean up.</li><li>C: mean &lt; median → negatively (left) skewed; a few low salaries pull the mean down.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> A symmetric; B right-skewed; C left-skewed. For B and C the median is the better ‘typical salary’.</p></details><details><summary>Q10 · Three z-scores</summary><p style=\"font-size:14.5px\">Delivery times have mean 72 minutes and standard deviation 6. Find the z-scores of 60, 78 and 84 minutes.</p><ol><li>z = (x − mean)/s.</li><li>60: (60 − 72)/6 = −2. 78: (78 − 72)/6 = +1. 84: (84 − 72)/6 = +2.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> −2, +1 and +2: two standard deviations faster than average, one slower, two slower.</p></details><details><summary>Q11 · Chebyshev's theorem, whole and fractional k</summary><p style=\"font-size:14.5px\">Processing times have mean 70 minutes and standard deviation 5; the shape is not given. At least what percentage of jobs take between (a) 60 and 80 minutes, (b) 58 and 82 minutes?</p><ol><li>(a) k = (80 − 70)/5 = 2. At least 1 − 1/2² = 0.75 → 75%.</li><li>(b) k = (82 − 70)/5 = 2.4. At least 1 − 1/2.4² = 1 − 1/5.76 = 0.826 → 82.6%.</li><li>The shape is unknown, so the empirical rule cannot be used; Chebyshev works for any shape and any k &gt; 1.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> At least 75% and at least 82.6%.</p></details><details><summary>Q12 · Empirical rule bands</summary><p style=\"font-size:14.5px\">Package weights are bell-shaped with mean 16 oz and standard deviation 0.25 oz. Estimate the percentage between (a) 15.75 and 16.25, (b) 15.50 and 16.50, (c) 15.25 and 16.75 oz.</p><ol><li>(a) ±0.25 = ±1 standard deviation → about 68%.</li><li>(b) ±0.50 = ±2 standard deviations → about 95%.</li><li>(c) ±0.75 = ±3 standard deviations → about 99.7%.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> About 68%, 95% and 99.7%.</p></details><details><summary>Q13 · Outlier test with z</summary><p style=\"font-size:14.5px\">Response times have mean 53.7 minutes and standard deviation 10.52. One employee took 80 minutes. Is it an outlier if |z| &gt; 3 is the rule?</p><ol><li>z = (80 − 53.7)/10.52 = 26.3/10.52 = 2.5.</li><li>|2.5| is not greater than 3.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Not an outlier: it is unusually slow (2.5 standard deviations above the mean) but inside the rule's limit.</p></details><details><summary>Q14 · Outlier test with the IQR</summary><p style=\"font-size:14.5px\">Ten months of sales: 11, 13, 15, 16, 17, 18, 20, 22, 24, 40. Is 40 an outlier by the IQR rule?</p><ol><li>Q1: L = 0.25 × 11 = 2.75 → 13 + 0.75 × (15 − 13) = 14.5.</li><li>Q3: L = 8.25 → 22 + 0.25 × (24 − 22) = 22.5. IQR = 8.</li><li>Upper limit = 22.5 + 1.5 × 8 = 34.5; lower limit = 14.5 − 12 = 2.5.</li><li>40 &gt; 34.5.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Yes, 40 is an outlier (it lies above 34.5). Nothing falls below 2.5.</p></details><details><summary>Q16 · Box plot and its outlier limits</summary><p style=\"font-size:14.5px\">Using Q15's data (12, 15, 18, 20, 21, 24, 27, 30, 32, 35), set out what a box plot needs and find the outlier limits.</p><ol><li>From Q15: Q1 = 17.25, median = 22.5, Q3 = 30.5. IQR = 30.5 − 17.25 = 13.25.</li><li>1.5 × IQR = 19.875. Lower limit = 17.25 − 19.875 = −2.625. Upper limit = 30.5 + 19.875 = 50.375.</li><li>No value is below −2.625 or above 50.375, so there are no outliers. A negative lower limit for times is fine; it just means a low outlier is impossible.</li><li>The plot: a box from 17.25 to 30.5 with a line at 22.5; whiskers to the smallest and largest data values, 12 and 35 (not to the limits). The median sits a little left of the box's centre (23.875), a hint of right skew in the middle half; the two whiskers are similar in length (5.25 and 4.5).</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Box 17.25 to 30.5, median 22.5, whiskers 12 to 35; limits −2.625 and 50.375; no outliers.</p></details><details><summary>Q23 · z-score, then the empirical rule for one tail</summary><p style=\"font-size:14.5px\">Delivery times are approximately normal with μ = 50 and σ = 8 minutes. One delivery took 66 minutes. Find its z-score, and use the empirical rule to estimate the percentages of deliveries below and above 66 minutes.</p><ol><li>z = (66 − 50)/8 = 2.</li><li>Empirical rule: about 95% lie within ±2σ, i.e. between 34 and 66 minutes. The other 5% split evenly: 2.5% below 34 and 2.5% above 66.</li><li>Below 66 = 2.5% + 95% = 97.5%. Above 66 = 2.5%.</li><li>Table check: P(Z ≤ 2.00) = 0.9772, so 97.72% below and 2.28% above. Use these if a question asks for the normal table rather than the empirical rule.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> z = 2; about 97.5% below 66 minutes and 2.5% above. (95% is the share <em>within</em> ±2σ, not below +2σ.)</p></details><h4>Association</h4><details><summary>Q18 · Sample covariance: TV ads and sales</summary><p style=\"font-size:14.5px\">Five weeks of data: TV ads X = 2, 4, 5, 7, 8; sales Y = 20, 25, 30, 40, 45. Find the sample covariance.</p><ol><li>x̄ = 26/5 = 5.2; ȳ = 160/5 = 32.</li><li>x − x̄: −3.2, −1.2, −0.2, 1.8, 2.8. y − ȳ: −12, −7, −2, 8, 13.</li><li>Products: 38.4, 8.4, 0.4, 14.4, 36.4; Σ = 98.</li><li>s<sub>xy</sub> = 98/(5 − 1) = 24.5.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> s<sub>xy</sub> = 24.5 (ads × sales units). Positive: weeks with more ads had higher sales. Dividing by n gives 19.6, the population covariance.</p></details><details><summary>Q19 · Correlation from the given summaries</summary><p style=\"font-size:14.5px\">Same data. The sheet supplies s<sub>xy</sub> = 24.5, s<sub>x</sub> = 2.3875 and s<sub>y</sub> = 10.3682. Find r.</p><ol><li>Check the givens: Σ(x − x̄)² = 22.8, so s<sub>x</sub> = √(22.8/4) = √5.7 = 2.3875 ✓. Σ(y − ȳ)² = 430, so s<sub>y</sub> = √(430/4) = √107.5 = 10.3682 ✓. s<sub>xy</sub> = 24.5 ✓ (Q18).</li><li>r = s<sub>xy</sub>/(s<sub>x</sub> × s<sub>y</sub>) = 24.5/(2.3875 × 10.3682) = 24.5/24.754 = 0.990.</li><li>Shortcut without the s values: r = Σ(x − x̄)(y − ȳ)/√[Σ(x − x̄)² × Σ(y − ȳ)²] = 98/√(22.8 × 430) = 98/99.02 = 0.990.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> r ≈ 0.99: a very strong positive linear association between ads and sales.</p></details><details><summary>Q20 · A negative correlation</summary><p style=\"font-size:14.5px\">Machine hours X = 1, 2, 3, 4, 5, 6 and defects Y = 30, 27, 25, 21, 20, 17. Find r and interpret it.</p><ol><li>x̄ = 21/6 = 3.5; ȳ = 140/6 = 23.33 (a repeating decimal, so the shortcut sums are easier).</li><li>Σ(x − x̄)(y − ȳ) = Σxy − n x̄ ȳ = 445 − 6 × 3.5 × 23.333 = 445 − 490 = −45.</li><li>Σ(x − x̄)² = 17.5. Σ(y − ȳ)² = Σy² − n ȳ² = 3,384 − 3,266.67 = 117.33.</li><li>s<sub>xy</sub> = −45/5 = −9; s<sub>x</sub> = √(17.5/5) = 1.871; s<sub>y</sub> = √(117.33/5) = 4.844.</li><li>r = −9/(1.871 × 4.844) = −9/9.063 = −0.993.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> r ≈ −0.99: a very strong negative linear association; defects fall steadily as machine hours rise. It is an association across six observations, not proof that the hours cause fewer defects.</p></details><details><summary>Q24 · Training hours and productivity: the complete problem</summary><p style=\"font-size:14.5px\">Training hours X = 10, 20, 30, 40, 50, 60; productivity Y = 15, 22, 29, 35, 44, 50. Find x̄, ȳ, s<sub>xy</sub>, s<sub>x</sub>, s<sub>y</sub> and r, and interpret.</p><ol><li>x̄ = 210/6 = 35; ȳ = 195/6 = 32.5.</li><li>x − x̄: −25, −15, −5, 5, 15, 25. y − ȳ: −17.5, −10.5, −3.5, 2.5, 11.5, 17.5.</li><li>Products: 437.5, 157.5, 17.5, 12.5, 172.5, 437.5; Σ = 1,235. s<sub>xy</sub> = 1,235/5 = 247.</li><li>Σ(x − x̄)² = 1,750, so s<sub>x</sub> = √350 = 18.71. Σ(y − ȳ)² = 873.5, so s<sub>y</sub> = √174.7 = 13.22.</li><li>r = 247/(18.71 × 13.22) = 247/247.27 = 0.999.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> x̄ = 35, ȳ = 32.5, s<sub>xy</sub> = 247, s<sub>x</sub> ≈ 18.71, s<sub>y</sub> ≈ 13.22, r ≈ 0.999: an almost perfect positive linear association. More training goes with higher productivity in these six employees, but correlation is not causation (keener employees may both train more and work harder), and six points are few.</p></details>"
     },
     {
      "t": "Textbook: Descriptive Statistics: Numerical Measures",
@@ -341,6 +351,11 @@ HUB.addCourse({
      "h": "\n  <div class=\"def\"><b>Prior</b> probabilities come from history or initial knowledge. New information arrives. <b>Posterior</b> probabilities are the revised estimates that combine the two.</div>\n  <p style=\"font-size:15px\"><strong>P(A<sub>i</sub>|B) = [P(A<sub>i</sub>) × P(B|A<sub>i</sub>)] / Σ[P(A<sub>j</sub>) × P(B|A<sub>j</sub>)]</strong></p>\n  <p style=\"font-size:14.5px\">It applies when the events A<sub>i</sub> are <strong>mutually exclusive</strong> and together make up the <strong>whole sample space</strong>.</p>\n  <h4>The shopping centre zoning case — worth knowing the numbers</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Step</th><th>Value</th></tr></thead><tbody>\n   <tr><td>Prior: approval</td><td><strong>0.70</strong></td></tr>\n   <tr><td>Prior: rejection</td><td><strong>0.30</strong></td></tr>\n   <tr><td>P(negative recommendation | approval)</td><td>0.20</td></tr>\n   <tr><td>P(negative recommendation | rejection)</td><td>0.90</td></tr>\n   <tr><td>Joint: approval &amp; negative</td><td>0.70 × 0.20 = <strong>0.14</strong></td></tr>\n   <tr><td>Joint: rejection &amp; negative</td><td>0.30 × 0.90 = <strong>0.27</strong></td></tr>\n   <tr><td><strong>Posterior P(approval | negative)</strong></td><td>0.14 / (0.14 + 0.27) = <strong>0.34</strong></td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\">The owner revises the chance of approval from <strong>70% down to 34%</strong> — which changes the decision entirely.</p>\n  <h4>The tabular method</h4>\n  <p style=\"font-size:14.5px\">List the mutually exclusive events → priors → conditionals → <strong>multiply</strong> for joints → <strong>sum</strong> the joints → <strong>divide</strong> each joint by that sum.</p><!--viz:sfm-bayes-tree--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Probability tree. Supplier S1 provides 60% of parts with a 3% defect rate; S2 provides 40% with an 8% defect rate. Joint probabilities: 0.018 and 0.032 defective. P(defective) = 0.05, so P(S2 given defective) = 0.64.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Bayes on a tree: from prior to posterior</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 272\" role=\"img\" aria-label=\"Probability tree. Supplier S1 provides 60% of parts with a 3% defect rate; S2 provides 40% with an 8% defect rate. Joint probabilities: 0.018 and 0.032 defective. P(defective) = 0.05, so P(S2 given defective) = 0.64.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><rect x=\"10\" y=\"105\" width=\"50\" height=\"26\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"35\" y=\"123\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13.5px\">Part</text><path d=\"M60,118 L126,64\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><text x=\"93\" y=\"64.1\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">0.60</text><rect x=\"126\" y=\"51\" width=\"52\" height=\"26\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"152\" y=\"69\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13.5px\">S1</text><path d=\"M60,118 L126,172\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><text x=\"93\" y=\"176.9\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">0.40</text><rect x=\"126\" y=\"159\" width=\"52\" height=\"26\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"152\" y=\"177\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13.5px\">S2</text><path d=\"M178,64 L250,34\" style=\"stroke:var(--blue);stroke-width:2;fill:none\"/><text x=\"214\" y=\"30.4\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px;font-family:var(--mono)\">0.03</text><rect x=\"250\" y=\"21\" width=\"84\" height=\"26\" rx=\"4\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"292\" y=\"39\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13.5px\">defective</text><text x=\"344\" y=\"39\" style=\"fill:var(--blue);font-size:13.5px;font-weight:700;font-family:var(--mono)\">0.018</text><path d=\"M178,64 L250,94\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><text x=\"214\" y=\"102.6\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">0.97</text><rect x=\"250\" y=\"81\" width=\"84\" height=\"26\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"292\" y=\"99\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13.5px\">OK</text><text x=\"344\" y=\"99\" style=\"fill:var(--ink-2);font-size:13.5px;font-family:var(--mono)\">0.582</text><path d=\"M178,172 L250,144\" style=\"stroke:var(--blue);stroke-width:2;fill:none\"/><text x=\"214\" y=\"140\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px;font-family:var(--mono)\">0.08</text><rect x=\"250\" y=\"131\" width=\"84\" height=\"26\" rx=\"4\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"292\" y=\"149\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13.5px\">defective</text><text x=\"344\" y=\"149\" style=\"fill:var(--blue);font-size:13.5px;font-weight:700;font-family:var(--mono)\">0.032</text><path d=\"M178,172 L250,204\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><text x=\"214\" y=\"212.2\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">0.92</text><rect x=\"250\" y=\"191\" width=\"84\" height=\"26\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"292\" y=\"209\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13.5px\">OK</text><text x=\"344\" y=\"209\" style=\"fill:var(--ink-2);font-size:13.5px;font-family:var(--mono)\">0.368</text><text x=\"344\" y=\"14\" style=\"fill:var(--ink-3);font-size:13px\">joint</text><text x=\"20\" y=\"240\" style=\"fill:var(--ink);font-size:13.5px\">P(defective) = 0.018 + 0.032 = 0.050</text><text x=\"20\" y=\"262\" style=\"fill:var(--blue);font-size:13.5px;font-weight:700\">P(S2 | defective) = 0.032 ÷ 0.050 = 0.64</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">S2 supplies only 40% of parts but 64% of the defectives: multiply along each branch, add the joints you care about, divide.</figcaption></figure><!--/viz:sfm-bayes-tree-->"
     },
     {
+     "t": "Practice questions from the lecturer: Chapter 4",
+     "src": "L#9",
+     "h": "<p style=\"font-size:14.5px\">The lecturer's own practice set for Chapter 4 (Introduction to Probability), shared by Dr. Srivastava through an LMS announcement on 9 Oct 2026: 15 questions, each restated in our words below with a full worked solution. The numbers are the sheet's, so you can check your own working against it. The mix drills the counting rule, the classical and relative-frequency methods, checking that an assignment is valid, events and complements, the addition law, mutually exclusive versus independent events, conditional probability and the multiplication law, three Bayes' theorem problems and one contingency table. It covers both L#7 (experiments, counting, assigning probabilities) and L#9 (the laws and Bayes).</p><p style=\"font-size:14.5px\"><strong>What this sheet tells you to be able to do:</strong></p><ul><li>Count the outcomes of a multi-step experiment with the counting rule (N₁ × N₂ × …), including the 36 ordered outcomes of two dice.</li><li>Assign probabilities by the classical method (equally likely outcomes) and the relative-frequency method (count ÷ total).</li><li>Check that an assignment is valid: every value between 0 and 1, and the values sum to 1.</li><li>List the sample points in an event and add up their probabilities.</li><li>Use the addition law, with and without the overlap, and the complement for ‘neither’ and ‘at least one’.</li><li>Tell mutually exclusive events (P(A ∩ B) = 0) from independent ones (P(A ∩ B) = P(A)P(B)).</li><li>Turn ‘among those who…’ into a conditional probability and multiply to get a joint probability.</li><li>Run the Bayes tabular method: prior × likelihood = joint, sum the joints, divide to get each posterior.</li><li>Read conditional probabilities off a contingency table, choosing the right denominator.</li></ul><div class=\"def\"><b>Reading the sheet:</b> three small points. (1) Q4 can only be judged on the numbers: the four values pass both rules, provided the four outcomes are the complete list and cannot happen together. (2) Q12 gives on-time rates; for the late-flight part, take each airline's late rate as 1 − its on-time rate (a flight is either on time or late). (3) In Q13, 0.22% is 0.0022, not 0.022; the wrong conversion changes the answer from about 0.69 to about 0.19.</div><details><summary>Q1 · Counting rule for a three-step process</summary><p style=\"font-size:14.5px\">An online order goes through three steps: one of 4 customer types, then one of 3 delivery priorities, then one of 2 payment methods. How many different experimental outcomes are there?</p><ol><li>Each outcome is one choice at every step, so use the counting rule: multiply the number of options at each step.</li><li>4 × 3 × 2 = 24.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 24 outcomes. (Adding, 4 + 3 + 2 = 9, counts options, not outcomes.)</p></details><details><summary>Q2 · Classical probability with one die</summary><p style=\"font-size:14.5px\">A fair die is rolled once. Find the probability of (a) a 4, (b) an even number, (c) a number greater than 4.</p><ol><li>Six equally likely outcomes {1, 2, 3, 4, 5, 6}, so each has probability 1/6 (classical method).</li><li>(a) {4}: 1/6 ≈ 0.167.</li><li>(b) {2, 4, 6}: 3/6 = 0.5.</li><li>(c) ‘Greater than 4’ is strict, so {5, 6}: 2/6 = 1/3 ≈ 0.333.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 1/6, 1/2 and 1/3.</p></details><details><summary>Q3 · Relative-frequency probabilities</summary><p style=\"font-size:14.5px\">A support team logged 200 customer contacts: 80 by phone, 70 by email and 50 by chat. Estimate the probability of each contact method.</p><ol><li>Relative frequency = count ÷ total observations.</li><li>Phone 80/200 = 0.40; email 70/200 = 0.35; chat 50/200 = 0.25.</li><li>Check: 0.40 + 0.35 + 0.25 = 1.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> P(phone) = 0.40, P(email) = 0.35, P(chat) = 0.25.</p></details><details><summary>Q4 · Is the assignment valid?</summary><p style=\"font-size:14.5px\">A manager gives four project outcomes the probabilities 0.20, 0.35, 0.30 and 0.15. Is this a valid assignment?</p><ol><li>Rule 1: each probability lies between 0 and 1. All four do.</li><li>Rule 2: the probabilities of all the outcomes sum to 1. 0.20 + 0.35 + 0.30 + 0.15 = 1.00.</li><li>Both rules hold. (They are probably subjective probabilities; that is allowed as long as the rules hold.)</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Yes, the assignment is valid.</p></details><details><summary>Q5 · Listing the sample points of an event</summary><p style=\"font-size:14.5px\">A project has nine equally likely (design months, construction months) outcomes: (2,6), (2,7), (2,8), (3,6), (3,7), (3,8), (4,6), (4,7), (4,8). C is the event that the whole project takes 10 months or less. List C and find P(C).</p><ol><li>Add each pair: 8, 9, 10, 9, 10, 11, 10, 11, 12.</li><li>‘10 or less’ includes 10, so C = {(2,6), (2,7), (2,8), (3,6), (3,7), (4,6)}: six sample points.</li><li>Each point has probability 1/9, and an event's probability is the sum over its points: P(C) = 6/9.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> C has 6 sample points; P(C) = 2/3 ≈ 0.667.</p></details><details><summary>Q6 · Addition law for mutually exclusive events</summary><p style=\"font-size:14.5px\">A and B are mutually exclusive, with P(A) = 0.28 and P(B) = 0.47. Find P(A ∪ B).</p><ol><li>Mutually exclusive means no common sample points, so P(A ∩ B) = 0.</li><li>P(A ∪ B) = 0.28 + 0.47 − 0 = 0.75.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 0.75. (Subtracting 0.28 × 0.47 = 0.1316 would treat the events as independent, which mutually exclusive events with non-zero probabilities never are.)</p></details><details><summary>Q7 · Two dice: ordered outcomes</summary><p style=\"font-size:14.5px\">Two fair dice are rolled. Find (a) the number of ordered outcomes, (b) P(sum = 7), (c) P(sum ≥ 9).</p><ol><li>(a) 6 × 6 = 36 ordered outcomes, all equally likely. (3,4) and (4,3) are different outcomes.</li><li>(b) Sum 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1), so 6/36 = 1/6 ≈ 0.167.</li><li>(c) Sum 9: 4 ways; sum 10: 3; sum 11: 2; sum 12: 1. Total 10, so 10/36 = 5/18 ≈ 0.278.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 36; 1/6; 5/18 ≈ 0.278. (Treating the 11 possible sums as equally likely gives wrong answers such as 1/11 for a 7.)</p></details><details><summary>Q8 · Addition law and complement from survey counts</summary><p style=\"font-size:14.5px\">Of 1,000 surveyed customers, 420 bought product X, 300 bought product Y and 120 bought both. Find (a) P(X ∪ Y), (b) P(X but not Y), (c) P(neither).</p><ol><li>P(X) = 0.42, P(Y) = 0.30, P(X ∩ Y) = 0.12.</li><li>(a) P(X ∪ Y) = 0.42 + 0.30 − 0.12 = 0.60.</li><li>(b) X but not Y = X ∩ Y′: P(X) − P(X ∩ Y) = 0.42 − 0.12 = 0.30.</li><li>(c) Neither = the complement of the union: 1 − 0.60 = 0.40.</li></ol><p style=\"font-size:14.5px\">The full two-way table makes every part a single lookup:</p><div class=\"scroller\"><table><thead><tr><th></th><th>Bought Y</th><th>Not Y</th><th>Total</th></tr></thead><tbody><tr><td><strong>Bought X</strong></td><td>120</td><td>300</td><td>420</td></tr><tr><td><strong>Not X</strong></td><td>180</td><td>400</td><td>580</td></tr><tr><td><strong>Total</strong></td><td>300</td><td>700</td><td>1,000</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> 0.60; 0.30; 0.40.</p></details><details><summary>Q9 · Multiplication law</summary><p style=\"font-size:14.5px\">82% of households take a newspaper's daily edition. Of the daily subscribers, 70% also take the Sunday edition. Find the probability that a household takes both.</p><ol><li>‘Of the daily subscribers, 70%…’ is a conditional probability: P(S | D) = 0.70. P(D) = 0.82.</li><li>Multiplication law: P(D ∩ S) = P(D) × P(S | D) = 0.82 × 0.70 = 0.574.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 0.574. (0.70 is not the answer: it describes only the daily subscribers.)</p></details><details><summary>Q10 · Independent events</summary><p style=\"font-size:14.5px\">Two investments succeed independently with P(A) = 0.65 and P(B) = 0.75. Find (a) P(both succeed), (b) P(at least one succeeds), (c) P(both fail).</p><ol><li>(a) Independent, so P(A ∩ B) = 0.65 × 0.75 = 0.4875.</li><li>(c) P(A′) = 0.35 and P(B′) = 0.25, so P(both fail) = 0.35 × 0.25 = 0.0875.</li><li>(b) ‘At least one’ is the complement of ‘both fail’: 1 − 0.0875 = 0.9125. Check with the addition law: 0.65 + 0.75 − 0.4875 = 0.9125.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 0.4875; 0.9125; 0.0875. (1 − 0.4875 = 0.5125 is ‘not both succeed’, not ‘at least one’.)</p></details><details><summary>Q11 · Bayes: which supplier made the defective chip?</summary><p style=\"font-size:14.5px\">Suppliers A, B and C provide 50%, 30% and 20% of a company's chips; their defect rates are 1%, 4% and 8%. A chip is found to be defective (event B below). Find the probability it came from each supplier.</p><ol><li>Priors are the supply shares; likelihoods are the defect rates.</li><li>Joint = prior × likelihood: 0.005, 0.012, 0.016.</li><li>P(defective) = 0.005 + 0.012 + 0.016 = 0.033.</li><li>Posterior = joint ÷ 0.033.</li></ol><div class=\"scroller\"><table><thead><tr><th>Event Aᵢ</th><th>Prior P(Aᵢ)</th><th>Likelihood P(B | Aᵢ)</th><th>Joint P(Aᵢ ∩ B)</th><th>Posterior P(Aᵢ | B)</th></tr></thead><tbody><tr><td>Supplier A</td><td>0.50</td><td>0.01</td><td>0.005</td><td>0.1515</td></tr><tr><td>Supplier B</td><td>0.30</td><td>0.04</td><td>0.012</td><td>0.3636</td></tr><tr><td>Supplier C</td><td>0.20</td><td>0.08</td><td>0.016</td><td>0.4848</td></tr><tr><td><strong>Total</strong></td><td>1.00</td><td></td><td><strong>0.033</strong></td><td>1.0000 (0.9999 after rounding)</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> A ≈ 0.152, B ≈ 0.364, C ≈ 0.485. C supplies only 20% of chips but almost half of the defectives.</p></details><details><summary>Q12 · Bayes with two kinds of new information: on time and late</summary><p style=\"font-size:14.5px\">Three airlines (call them 1, 2 and 3) fly 25%, 35% and 40% of the flights. Their on-time rates are 78%, 72% and 88%. Find (a) the overall probability that a flight is on time, (b) each airline's probability given that a flight was on time, (c) the most likely airline given that a flight was late.</p><ol><li>(a) Overall P(on time) = sum of the joints in the first table = 0.195 + 0.252 + 0.352 = 0.799.</li><li>(b) Divide each joint by 0.799: 0.244, 0.315, 0.441.</li><li>(c) Late rates are 1 − on-time: 0.22, 0.28, 0.12. Joints 0.055, 0.098, 0.048; P(late) = 0.201 (= 1 − 0.799, a useful check). Posteriors 0.274, 0.488, 0.239.</li><li>Airline 2 has the largest late joint (0.098), so it is the most likely airline for a late flight. Note that Airline 1 (25% of flights) beats Airline 3 (40% of flights) here because its late rate is so much higher: you need both the share and the rate.</li></ol><p style=\"font-size:14.5px\"><strong>Given on time</strong></p><div class=\"scroller\"><table><thead><tr><th>Event Aᵢ</th><th>Prior P(Aᵢ)</th><th>Likelihood P(B | Aᵢ)</th><th>Joint P(Aᵢ ∩ B)</th><th>Posterior P(Aᵢ | B)</th></tr></thead><tbody><tr><td>Airline 1</td><td>0.25</td><td>0.78</td><td>0.195</td><td>0.2441</td></tr><tr><td>Airline 2</td><td>0.35</td><td>0.72</td><td>0.252</td><td>0.3154</td></tr><tr><td>Airline 3</td><td>0.40</td><td>0.88</td><td>0.352</td><td>0.4406</td></tr><tr><td><strong>Total</strong></td><td>1.00</td><td></td><td><strong>0.799</strong></td><td>1.0000 (1.0001 after rounding)</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Given late</strong></p><div class=\"scroller\"><table><thead><tr><th>Event Aᵢ</th><th>Prior P(Aᵢ)</th><th>Likelihood P(B | Aᵢ)</th><th>Joint P(Aᵢ ∩ B)</th><th>Posterior P(Aᵢ | B)</th></tr></thead><tbody><tr><td>Airline 1</td><td>0.25</td><td>0.22</td><td>0.055</td><td>0.2736</td></tr><tr><td>Airline 2</td><td>0.35</td><td>0.28</td><td>0.098</td><td>0.4876</td></tr><tr><td>Airline 3</td><td>0.40</td><td>0.12</td><td>0.048</td><td>0.2388</td></tr><tr><td><strong>Total</strong></td><td>1.00</td><td></td><td><strong>0.201</strong></td><td>1.0000</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) 0.799; (b) 0.244, 0.315, 0.441; (c) Airline 2, with posterior ≈ 0.488.</p></details><details><summary>Q13 · Bayes: is the email spam?</summary><p style=\"font-size:14.5px\">A filter assumes 10% of incoming emails are spam. The word ‘today!’ appears in 4.5% of spam emails and in 0.22% of legitimate ones. An email contains ‘today!’. What is the probability it is spam?</p><ol><li>Priors: P(spam) = 0.10, P(not spam) = 0.90.</li><li>Likelihoods: P(word | spam) = 0.045, P(word | not spam) = 0.0022.</li><li>Joints: 0.10 × 0.045 = 0.0045 and 0.90 × 0.0022 = 0.00198. P(word) = 0.00648.</li><li>P(spam | word) = 0.0045 ÷ 0.00648 = 0.694.</li></ol><div class=\"scroller\"><table><thead><tr><th>Event Aᵢ</th><th>Prior P(Aᵢ)</th><th>Likelihood P(B | Aᵢ)</th><th>Joint P(Aᵢ ∩ B)</th><th>Posterior P(Aᵢ | B)</th></tr></thead><tbody><tr><td>Spam</td><td>0.10</td><td>0.045</td><td>0.00450</td><td>0.6944</td></tr><tr><td>Not spam</td><td>0.90</td><td>0.0022</td><td>0.00198</td><td>0.3056</td></tr><tr><td><strong>Total</strong></td><td>1.00</td><td></td><td><strong>0.00648</strong></td><td>1.0000</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> ≈ 0.694. One word lifts the spam probability from 10% to about 69%.</p></details><details><summary>Q14 · An event of equally likely outcomes</summary><p style=\"font-size:14.5px\">An experiment has five equally likely outcomes E1 to E5. A = {E1, E3, E5}. Find P(A).</p><ol><li>Each outcome has probability 1/5 = 0.2 (classical method).</li><li>P(A) = sum over its sample points = 0.2 + 0.2 + 0.2 = 0.6.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> P(A) = 3/5 = 0.6.</p></details><details><summary>Q15 · Conditional probability from a contingency table</summary><p style=\"font-size:14.5px\">An MBA programme's applicants by undergraduate field and study mode: Business 352 full-time and 150 part-time; Engineering 197 and 161; Other 251 and 194. Find (a) the total number of applicants, (b) P(Engineering | full-time), (c) P(full-time | Business).</p><ol><li>Build the table with row and column totals (below).</li><li>(a) 352 + 150 + 197 + 161 + 251 + 194 = 1,305.</li><li>(b) The condition is full-time, so the denominator is the full-time total: 197/800 = 0.246. Same through the joint-probability route: (197/1,305) ÷ (800/1,305) = 0.1510 ÷ 0.6130 = 0.246.</li><li>(c) The condition is Business, so divide by the Business row total: 352/502 = 0.701.</li></ol><div class=\"scroller\"><table><thead><tr><th>Undergraduate field</th><th>Full-time</th><th>Part-time</th><th>Total</th></tr></thead><tbody><tr><td>Business</td><td>352</td><td>150</td><td>502</td></tr><tr><td>Engineering</td><td>197</td><td>161</td><td>358</td></tr><tr><td>Other</td><td>251</td><td>194</td><td>445</td></tr><tr><td><strong>Total</strong></td><td><strong>800</strong></td><td><strong>505</strong></td><td><strong>1,305</strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> 1,305 applicants; P(Engineering | full-time) ≈ 0.246; P(full-time | Business) ≈ 0.701. (197/358 = 0.550 would be P(full-time | Engineering), the reverse.)</p></details>"
+    },
+    {
      "t": "Textbook: Introduction to Probability",
      "src": "Anderson 14e ch4",
      "h": "<!--viz:sfm-joint-table--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Joint probability table of shift by quality: Day and Defect 0.04, Day and OK 0.66, Night and Defect 0.06, Night and OK 0.24. Marginals: Day 0.70, Night 0.30, Defect 0.10, OK 0.90.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Conditional probability from a joint table</div><div class=\"scroller\"><table><thead><tr><th>Shift</th><th>Defect</th><th>OK</th><th>Total</th></tr></thead><tbody><tr><td>Day</td><td style=\"font-family:var(--mono)\">0.04</td><td style=\"font-family:var(--mono)\">0.66</td><td style=\"font-family:var(--mono)\">0.70</td></tr><tr><td>Night</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">0.06</td><td style=\"font-family:var(--mono)\">0.24</td><td style=\"font-family:var(--mono);background:var(--clay-soft)\">0.30</td></tr><tr><td><b>Total</b></td><td style=\"font-family:var(--mono)\">0.10</td><td style=\"font-family:var(--mono)\">0.90</td><td style=\"font-family:var(--mono)\">1.00</td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\">P(Defect | Night) = <span style=\"padding:1px 5px;background:var(--blue-soft)\">0.06</span> ÷ <span style=\"padding:1px 5px;background:var(--clay-soft)\">0.30</span> = <b>0.20</b> · P(Defect | Day) = 0.04 ÷ 0.70 = 0.057</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Conditioning on Night shrinks the sample space to the Night row: 0.06 ÷ 0.30 = 0.20. Since P(Defect) × P(Night) = 0.03 ≠ 0.06, shift and defects are not independent.</figcaption></figure><!--/viz:sfm-joint-table--><!--viz:sfm-exclusive-vs-independent--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison of mutually exclusive and independent events on meaning, joint probability, the effect of knowing B, the Venn picture and an example.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Mutually exclusive is not independent</div><div class=\"scroller\"><table><thead><tr><th></th><th>Mutually exclusive</th><th>Independent</th></tr></thead><tbody><tr><td>Meaning</td><td>cannot happen together</td><td>one tells you nothing about the other</td></tr><tr><td>P(A ∩ B)</td><td style=\"font-family:var(--mono);background:var(--clay-soft)\">0</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">P(A) × P(B)</td></tr><tr><td>If B happens</td><td style=\"font-family:var(--mono)\">P(A | B) = 0</td><td style=\"font-family:var(--mono)\">P(A | B) = P(A)</td></tr><tr><td>Venn picture</td><td>circles apart</td><td>circles overlap (by exactly P(A)P(B))</td></tr><tr><td>Example</td><td>one card is a heart and a spade</td><td>two separate coin tosses both heads</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">If A and B both have positive probability and are mutually exclusive, knowing B happened tells you A did not: that is dependence.</figcaption></figure><!--/viz:sfm-exclusive-vs-independent--><p><strong>Complement rule</strong> — The complement of A (written Aᶜ in the book) is every sample point not in A. Since either A or its complement must occur, their probabilities add to 1, which is often the quickest route to 'at least one' probabilities.<br><span style=\"font-family:var(--mono)\">P(A) = 1 − P(Aᶜ)</span><br><em>e.g.</em> If 80% of sales calls end without a sale, P(sale) = 0.20.</p><p><strong>Union, intersection and the addition law</strong> — The union A ∪ B holds the sample points in A, B or both; the intersection A ∩ B holds those in both. The addition law gives the probability of the union and subtracts the intersection, which would otherwise be counted twice. Venn diagrams show these sets inside a rectangle representing the sample space.<br><span style=\"font-family:var(--mono)\">P(A ∪ B) = P(A) + P(B) − P(A ∩ B)</span><br><em>e.g.</em> Late 0.10, defective 0.12, both 0.04: P(late or defective) = 0.18.</p><p><strong>Mutually exclusive events</strong> — Events with no sample points in common: if one occurs the other cannot, so P(A ∩ B) = 0 and the addition law reduces to P(A) + P(B). An event and its complement are always mutually exclusive.<br><span style=\"font-family:var(--mono)\">P(A ∪ B) = P(A) + P(B) when A ∩ B is empty</span></p><p><strong>Conditional probability and joint probability tables</strong> — P(A | B) is the probability of A once we know B has occurred: the joint probability divided by the probability of the conditioning event. A joint probability table holds joint probabilities (intersections) in its body and marginal probabilities (each event alone) in its margins; marginals are row or column sums of joints.<br><span style=\"font-family:var(--mono)\">P(A | B) = P(A ∩ B) / P(B)</span><br><em>e.g.</em> Promotion data: P(promoted | man) = 0.24/0.80 = 0.30 against P(promoted | woman) = 0.03/0.20 = 0.15.</p><p><strong>Independent events</strong> — A and B are independent when knowing one occurred does not change the probability of the other: P(A | B) = P(A), equivalently P(B | A) = P(B), equivalently P(A ∩ B) = P(A)P(B). Otherwise they are dependent. Mutually exclusive events with non-zero probabilities are always dependent.</p><p><strong>Multiplication law</strong> — Gives the probability of an intersection from a marginal and a conditional probability. For independent events it reduces to multiplying the two probabilities.<br><span style=\"font-family:var(--mono)\">P(A ∩ B) = P(B)P(A | B) = P(A)P(B | A); independent: P(A ∩ B) = P(A)P(B)</span><br><em>e.g.</em> 84% of households have broadband and 75% of those also take cable TV: P(both) = 0.84 × 0.75 = 0.63.</p><p><strong>Bayes' theorem: prior to posterior</strong> — Start with prior probabilities for mutually exclusive, collectively exhaustive events A₁ … Aₙ, observe new information B, and compute posterior probabilities P(Aᵢ | B). The denominator is P(B), the sum of all the joint probabilities. Priors are often subjective; Bayes is widely used in decision analysis.<br><span style=\"font-family:var(--mono)\">P(Aᵢ | B) = P(Aᵢ)P(B | Aᵢ) / [P(A₁)P(B | A₁) + … + P(Aₙ)P(B | Aₙ)]</span><br><em>e.g.</em> Two suppliers with priors 0.65 and 0.35 and defect rates 2% and 5%: a bad part came from supplier 2 with posterior probability 0.5738.</p><p><strong>Probability trees and the tabular method for Bayes</strong> — In a probability tree the first-stage branches carry the priors and the second-stage branches the conditionals; multiplying along a path gives a joint probability. The tabular method lists events, priors and conditionals, multiplies to get joints, sums the joints to get P(B), and divides each joint by that sum to get the posteriors.</p>"
@@ -409,9 +424,19 @@ HUB.addCourse({
      "h": "<h4>Exact or cumulative? Read the wording</h4>\n<div class=\"scroller\"><table><thead><tr><th>Wording</th><th>Excel (discrete)</th><th>McNeil, μ = 6.8</th></tr></thead><tbody>\n<tr><td>exactly x</td><td><code>POISSON.DIST(x, μ, FALSE)</code>, the mass at x</td><td>exactly 2 arrive: 0.0258</td></tr>\n<tr><td>x or fewer, up to x</td><td><code>POISSON.DIST(x, μ, TRUE)</code>, the cumulative</td><td>2 or fewer: 0.0011 + 0.0076 + 0.0258 = 0.0344</td></tr>\n<tr><td>more than x, at least x + 1</td><td><code>1 − POISSON.DIST(x, μ, TRUE)</code></td><td>more than 10: 0.0849</td></tr>\n</tbody></table></div>\n<p style=\"font-size:14.5px\">With 8 salespeople, the chance that <strong>exactly</strong> two customers cannot be served (exactly 10 arrive) is the mass P(X = 10) = 0.0649; the chance of <strong>up to</strong> 10 arriving is the cumulative 0.9151.</p>\n<h4>Continuous distributions have no mass function</h4>\n<p style=\"font-size:14.5px\">His analogy: you can ask for one biscuit from a packet, but not for \"one cake\" out of a whole cake. A continuous variable has no separate pieces, so the probability of one exact value is zero and only cumulative areas make sense. Excel will still return a number for <code>NORM.DIST(10, 10, 10, FALSE)</code> (0.0399), but it is the height of the curve, not a probability; <code>NORM.DIST(10, 10, 10, TRUE)</code> = 0.5 is.</p>\n<p style=\"font-size:14.5px\"><strong>MBA salaries revisited</strong> (μ = $40,000, σ = $5,000): P(at least 30,000) = 1 − NORM.DIST(30000, 40000, 5000, TRUE) = 1 − 0.0228 = 0.977; P(34,000 to 46,000) = 0.8849 − 0.1151 = 0.770. He advises <strong>computing z and using NORM.S.DIST</strong> rather than the NORM.DIST shortcut: z = −1.2 says at once that 34,000 is 1.2 standard deviations below the mean, which a raw value does not.</p>\n<div class=\"def\"><b>From the lecture (L#18), exam hints:</b> the quiz is all objective multiple-choice questions, with no long numericals; if you follow the concepts it should be doable. Of the three quizzes, the best two count. Practice questions are on the LMS module; for more, use the textbook's exercises and solved examples. The recorded sessions plus the slides should be enough for the quizzes and the exams.</div>"
     },
     {
+     "t": "Practice questions from the lecturer: Chapter 5",
+     "src": "L#11",
+     "h": "<p style=\"font-size:14.5px\">The lecturer's own practice set for Chapter 5 (Discrete Probability Distributions), shared by Dr. Srivastava through an LMS announcement on 9 Oct 2026: 15 questions, six on methods and nine applications. Each is restated in our words below with a full worked solution; the numbers are the sheet's, so you can check your own working against it. The mix drills checking a distribution and finding its expected value and variance, the discrete uniform, the binomial (exact, ‘at least’, mean and variance), the Poisson (including rescaling μ to a different interval), the hypergeometric for draws without replacement, a covariance from a joint distribution, and two portfolio questions.</p><h4>What this sheet tells you to be able to do</h4><ul><li>Fill in a missing probability so that Σf(x) = 1, and find E(X), Var(X) and σ from a table.</li><li>Use f(x) = 1/n for a discrete uniform variable, with the probability-weighted (not n − 1) variance.</li><li>Compute an exact binomial probability, an ‘at least’ probability through the complement, and the mean np and variance np(1 − p).</li><li>Rescale the Poisson mean to the interval in the question (down or up), then find exact and ‘no more than’ probabilities.</li><li>Spot sampling without replacement from a small population and use the hypergeometric formula instead of the binomial.</li><li>Find the covariance of two returns from a joint (bivariate) distribution.</li><li>Find a portfolio's expected return and its standard deviation, keeping percent and decimal units consistent.</li></ul><div class=\"def\"><b>Coverage signal:</b> the hub's textbook notes rank the hypergeometric and the bivariate/portfolio sections as lower priority, because the recorded Lectures 10–11 covered random variables, the binomial and the Poisson. This sheet gives them 5 of its 15 questions (Q6, Q8, Q9, Q12, Q15), so practise those calculations too. The binomial and Poisson are still the core.</div><div class=\"def\"><b>Units on the sheet (Q8 and Q15):</b> Q8's returns are in percent, so its covariance comes out in %² (−135.34; with returns as decimals it would be −0.0135). Q15 gives the standard deviations in percent (10% and 6%) but the covariance as a decimal (0.0024). These agree only if you write the SDs as decimals (0.10 and 0.06), or the covariance in %² (24). Read that way, the correlation is 0.0024/(0.10 × 0.06) = 0.40, a sensible value, so that is the intended reading. Putting 10, 6 and 0.0024 into one formula mixes units and gives 7.23% instead of the correct 7.89%.</div><h4>Methods (Q1–Q6)</h4><details><summary>Q1 · Finding a missing probability</summary><p style=\"font-size:14.5px\">X takes the values 0, 1, 2, 3 and 4 with probabilities 0.10, 0.20, 0.30, 0.25 and an unknown p. What must p be for this to be a valid distribution?</p><ol><li>A valid discrete distribution needs every f(x) ≥ 0 and Σf(x) = 1.</li><li>The known probabilities add to 0.10 + 0.20 + 0.30 + 0.25 = 0.85.</li><li>So p = 1 − 0.85 = 0.15, which is not negative, so both conditions hold.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> p = 0.15.</p></details><details><summary>Q2 · Expected value and variance from a table</summary><p style=\"font-size:14.5px\">X takes the values 1, 2, 3 and 4 with probabilities 0.15, 0.25, 0.35 and 0.25. Find E(X) and Var(X).</p><ol><li>E(X) = Σx·f(x) = 1(0.15) + 2(0.25) + 3(0.35) + 4(0.25) = 0.15 + 0.50 + 1.05 + 1.00 = 2.70.</li><li>Var(X) = Σ(x − μ)²·f(x): the table below adds the weighted squared deviations to 1.01.</li><li>Shortcut check: E(X²) = 1(0.15) + 4(0.25) + 9(0.35) + 16(0.25) = 8.30, and Var(X) = 8.30 − 2.70² = 8.30 − 7.29 = 1.01.</li></ol><div class=\"scroller\"><table><tr><th>x</th><th>f(x)</th><th>x − μ</th><th>(x − μ)²</th><th>(x − μ)²·f(x)</th></tr><tr><td>1</td><td>0.15</td><td>−1.7</td><td>2.89</td><td>0.4335</td></tr><tr><td>2</td><td>0.25</td><td>−0.7</td><td>0.49</td><td>0.1225</td></tr><tr><td>3</td><td>0.35</td><td>0.3</td><td>0.09</td><td>0.0315</td></tr><tr><td>4</td><td>0.25</td><td>1.3</td><td>1.69</td><td>0.4225</td></tr><tr><td colspan=\"4\"><strong>Total</strong></td><td><strong>1.0100</strong></td></tr></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> E(X) = 2.7; Var(X) = 1.01 (σ ≈ 1.005). Stopping at 8.30 forgets to subtract μ².</p></details><details><summary>Q3 · A fair die as a discrete uniform variable</summary><p style=\"font-size:14.5px\">A fair die is rolled once and X is the number on top. Using the discrete uniform probability function, find E(X) and the standard deviation of X.</p><ol><li>Discrete uniform: f(x) = 1/n = 1/6 for x = 1, 2, …, 6.</li><li>E(X) = (1 + 2 + 3 + 4 + 5 + 6)/6 = 21/6 = 3.5, a value the die can never show.</li><li>E(X²) = (1 + 4 + 9 + 16 + 25 + 36)/6 = 91/6 = 15.167, so Var(X) = 15.167 − 3.5² = 15.167 − 12.25 = 2.917 (exactly 35/12).</li><li>σ = √2.917 = 1.708.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> E(X) = 3.5; σ ≈ 1.71. Every face is weighted by its probability 1/6. Dividing the squared deviations by 5, as if the six faces were a sample, gives 1.87, which is wrong for a probability distribution.</p></details><details><summary>Q4 · Binomial: exactly 3 successes</summary><p style=\"font-size:14.5px\">A binomial experiment has n = 8 trials and p = 0.30. Find P(exactly 3 successes).</p><ol><li>f(x) = C(n, x) · pˣ · (1 − p)ⁿ⁻ˣ with C(8, 3) = 8!/(3!·5!) = 56.</li><li>0.30³ = 0.027 and 0.70⁵ = 0.16807.</li><li>P(X = 3) = 56 × 0.027 × 0.16807 = 0.2541.</li><li>Excel check: <code>=BINOM.DIST(3,8,0.3,FALSE)</code> = 0.2541.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> ≈ 0.2541. Leaving out the C(8, 3) term gives 0.0045, the probability of one particular order of successes.</p></details><details><summary>Q5 · Poisson: exactly 2 in an hour</summary><p style=\"font-size:14.5px\">Occurrences follow a Poisson distribution with a mean of 4 an hour. Find P(exactly 2 in one hour).</p><ol><li>The interval asked about is the interval given, so μ = 4 with no rescaling.</li><li>f(x) = μˣe^(−μ)/x!, so P(X = 2) = 4² × e⁻⁴ / 2! = 16 × 0.018316 / 2 = 0.1465.</li><li>Excel check: <code>=POISSON.DIST(2,4,FALSE)</code> = 0.1465.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> ≈ 0.1465.</p></details><details><summary>Q6 · Hypergeometric: 1 success in 3 draws from 12</summary><p style=\"font-size:14.5px\">A population of 12 items has 4 successes. Three items are drawn without replacement. Find P(exactly 1 success).</p><ol><li>Drawing without replacement from a small population changes the success chance after each draw, so the trials are not independent: hypergeometric, not binomial.</li><li>f(x) = C(r, x) · C(N − r, n − x) / C(N, n) with N = 12, r = 4, n = 3, x = 1.</li><li>C(4, 1) = 4 ways to pick the success; C(8, 2) = 28 ways to pick the two failures; C(12, 3) = 220 possible samples.</li><li>P(X = 1) = 4 × 28 / 220 = 112/220 = 0.5091.</li><li>Excel check: <code>=HYPGEOM.DIST(1,3,4,12,FALSE)</code> = 0.5091 (arguments: successes in sample, sample size, successes in population, population size, cumulative).</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> ≈ 0.5091. A binomial with p = 4/12 would give 0.4444, which is wrong because the draws are not independent.</p></details><h4>Applications (Q7–Q15)</h4><details><summary>Q7 · Expected number of buyers in an hour</summary><p style=\"font-size:14.5px\">The number of customers who buy something in an hour at a shop has f(0) = 0.10, f(1) = 0.25, f(2) = 0.35, f(3) = 0.20, f(4) = 0.10. Find the expected number of buyers.</p><ol><li>Check validity: all probabilities are non-negative and they add to 1.</li><li>E(X) = 0(0.10) + 1(0.25) + 2(0.35) + 3(0.20) + 4(0.10) = 0 + 0.25 + 0.70 + 0.60 + 0.40 = 1.95.</li><li>This is the same distribution as the scooter-sales worked problem in the hub's textbook notes, which goes on to σ ≈ 1.12.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 1.95 buyers an hour: a long-run average, not a count you will see in any single hour.</p></details><details><summary>Q8 · Covariance of stock and bond returns</summary><p style=\"font-size:14.5px\">Four economic scenarios have probabilities and fund returns (in %) as below. Find the covariance between the stock fund's return X and the bond fund's return Y.</p><div class=\"scroller\"><table><tr><th>Scenario</th><th>f(x, y)</th><th>Stock X (%)</th><th>Bond Y (%)</th></tr><tr><td>Recession</td><td>0.10</td><td>−40</td><td>30</td></tr><tr><td>Weak growth</td><td>0.25</td><td>5</td><td>5</td></tr><tr><td>Stable growth</td><td>0.50</td><td>15</td><td>4</td></tr><tr><td>Strong growth</td><td>0.15</td><td>30</td><td>2</td></tr></table></div><p style=\"font-size:14.5px\">Find the two means first, then the probability-weighted products.</p><ol><li>μx = 0.10(−40) + 0.25(5) + 0.50(15) + 0.15(30) = −4 + 1.25 + 7.5 + 4.5 = 9.25%.</li><li>μy = 0.10(30) + 0.25(5) + 0.50(4) + 0.15(2) = 3 + 1.25 + 2 + 0.3 = 6.55%.</li><li>σxy = Σ(x − μx)(y − μy)·f(x, y): the table below gives the weighted products, which add to −135.34.</li><li>Shortcut check: E(XY) = 0.10(−1,200) + 0.25(25) + 0.50(60) + 0.15(60) = −74.75, and σxy = E(XY) − μxμy = −74.75 − 9.25 × 6.55 = −135.34.</li><li>The textbook's route (in the hub's textbook notes) gives the same: Var(X) = 328.19, Var(Y) = 61.95 and Var(X + Y) = 119.46, so σxy = (119.46 − 328.19 − 61.95)/2 = −135.34.</li><li>To read the size, turn it into a correlation: ρ = −135.34/(18.12 × 7.87) = −0.95.</li></ol><div class=\"scroller\"><table><tr><th>Scenario</th><th>x − μx</th><th>y − μy</th><th>product × f(x, y)</th></tr><tr><td>Recession</td><td>−49.25</td><td>23.45</td><td>−115.4913</td></tr><tr><td>Weak growth</td><td>−4.25</td><td>−1.55</td><td>1.6469</td></tr><tr><td>Stable growth</td><td>5.75</td><td>−2.55</td><td>−7.3313</td></tr><tr><td>Strong growth</td><td>20.75</td><td>−4.55</td><td>−14.1619</td></tr><tr><td colspan=\"3\"><strong>Total</strong></td><td><strong>−135.34</strong></td></tr></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> σxy ≈ −135.3 (in %²). The bond fund does well exactly when the stock fund does badly. There is no n − 1 here: the scenario probabilities are the weights, unlike the sample covariance from L#7.</p></details><details><summary>Q9 · Expected return of a 60/40 portfolio</summary><p style=\"font-size:14.5px\">60% of a portfolio is in a stock fund with expected return 12% and 40% in a bond fund with expected return 5%. Find the portfolio's expected return.</p><ol><li>E(aX + bY) = aE(X) + bE(Y).</li><li>E = 0.60 × 12% + 0.40 × 5% = 7.2% + 2.0% = 9.2%.</li><li>The 12% and 5% are not Q8's means (9.25% and 6.55%), so treat Q9 as a standalone question.</li><li>Going further with Q8's two funds in a 60/40 mix: E = 0.6(9.25) + 0.4(6.55) = 8.17%, and SD = √[0.36(328.19) + 0.16(61.95) + 2(0.6)(0.4)(−135.34)] = √63.10 = 7.94%, against 18.1% for the stock fund alone. The negative covariance is what cuts the risk.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 9.2%.</p></details><details><summary>Q10 · Binomial: at least 4 buyers out of 10</summary><p style=\"font-size:14.5px\">30% of the people who walk into a clothing shop buy something. Ten customers come in and decide independently. Find P(at least 4 buy).</p><ol><li>Binomial with n = 10, p = 0.30. ‘At least 4’ is 4, 5, …, 10, seven terms, so use the complement: P(X ≥ 4) = 1 − P(X ≤ 3).</li><li>P(0) = 0.0282, P(1) = 0.1211, P(2) = 0.2335, P(3) = 0.2668; P(X ≤ 3) = 0.6496.</li><li>P(X ≥ 4) = 1 − 0.6496 = 0.3504.</li><li>Excel check: <code>=1-BINOM.DIST(3,10,0.3,TRUE)</code> = 0.3504.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> ≈ 0.3504. Using 1 − P(X ≤ 4) = 0.1503 instead gives P(X ≥ 5): the value 4 itself belongs to ‘at least 4’.</p></details><details><summary>Q11 · Poisson rescaled down: at most 2 calls in 30 minutes</summary><p style=\"font-size:14.5px\">A service desk gets an average of 6 calls an hour, following a Poisson distribution. Find P(no more than 2 calls in a 30-minute period).</p><ol><li>Rescale first: 6 an hour means μ = 3 for 30 minutes.</li><li>P(0) = e⁻³ = 0.0498; P(1) = 3e⁻³ = 0.1494; P(2) = 3²e⁻³/2! = 0.2240.</li><li>‘No more than 2’ includes 2: P(X ≤ 2) = 0.0498 + 0.1494 + 0.2240 = 0.4232.</li><li>Excel check: <code>=POISSON.DIST(2,3,TRUE)</code> = 0.4232.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> ≈ 0.4232. Forgetting to rescale (μ = 6) gives 0.0620.</p></details><details><summary>Q12 · Hypergeometric: 1 defective in a sample of 5</summary><p style=\"font-size:14.5px\">An inspector takes 5 items, without replacement, from a shipment of 20 that contains 3 defectives. Find P(exactly 1 defective in the sample).</p><ol><li>N = 20, r = 3, n = 5, x = 1; without replacement from a small lot, so hypergeometric.</li><li>C(3, 1) = 3; C(17, 4) = 2,380; C(20, 5) = 15,504.</li><li>P(X = 1) = 3 × 2,380 / 15,504 = 7,140/15,504 = 0.4605.</li><li>Excel check: <code>=HYPGEOM.DIST(1,5,3,20,FALSE)</code> = 0.4605.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> ≈ 0.4605. The binomial with p = 3/20 gives 0.3915; it is a poor stand-in because the sample is a quarter of the lot.</p></details><details><summary>Q13 · Binomial mean and variance</summary><p style=\"font-size:14.5px\">A binomial experiment has n = 12 and p = 0.40. Find the expected number of successes and its variance.</p><ol><li>E(X) = np = 12 × 0.40 = 4.8.</li><li>Var(X) = np(1 − p) = 12 × 0.40 × 0.60 = 2.88, so σ = √2.88 = 1.70.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> E(X) = 4.8; Var(X) = 2.88. Note that 2.88 is the variance; the standard deviation is 1.70.</p></details><details><summary>Q14 · Poisson rescaled up: exactly 5 patients in an hour</summary><p style=\"font-size:14.5px\">An emergency department receives an average of 3 patients every 20 minutes (Poisson). Find P(exactly 5 arrive in one hour).</p><ol><li>Rescale first: an hour is three 20-minute blocks, so μ = 3 × 3 = 9.</li><li>P(X = 5) = 9⁵ × e⁻⁹ / 5! = 59,049 × 0.00012341 / 120 = 0.0607.</li><li>Excel check: <code>=POISSON.DIST(5,9,FALSE)</code> = 0.0607.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> ≈ 0.0607. Using μ = 3 gives 0.1008, which is the chance of 5 arrivals in 20 minutes, not in an hour.</p></details><details><summary>Q15 · Standard deviation of a 70/30 portfolio</summary><p style=\"font-size:14.5px\">A portfolio is 70% asset A and 30% asset B. The SDs of their returns are 10% and 6%, and the covariance of the returns is 0.0024. Find the portfolio's standard deviation.</p><ol><li>Put everything in decimals (see the units box above): σA = 0.10, σB = 0.06, σAB = 0.0024.</li><li>Var(p) = a²σA² + b²σB² + 2abσAB = 0.49(0.01) + 0.09(0.0036) + 2(0.7)(0.3)(0.0024).</li><li>= 0.0049 + 0.000324 + 0.001008 = 0.006232.</li><li>σp = √0.006232 = 0.0789, i.e. 7.89%.</li><li>Same answer in percent units: 49 + 3.24 + 0.42 × 24 = 62.32 %², and √62.32 = 7.89%.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> ≈ 7.89%. The weighted average of the SDs (0.7 × 10 + 0.3 × 6 = 8.8%) is wrong: it holds only if the correlation is +1. Here ρ = 0.40, so diversification brings the SD below 8.8%.</p></details>"
+    },
+    {
+     "t": "Practice questions from the lecturer: Chapter 6",
+     "src": "L#14",
+     "h": "<p style=\"font-size:14.5px\">The lecturer's own practice set for Chapter 6, continuous probability distributions, shared by Dr. Srivastava through an LMS announcement on 9 Oct 2026 (15 questions). Each one is restated in our words below with a full worked solution; the numbers are the sheet's, so you can check your own working against it. The mix: uniform areas, means and variances (Q1–Q4), the standard normal table forwards and backwards (Q5–Q7), normal probabilities and cut-offs in context (Q8–Q10), the normal approximation to the binomial with the continuity correction (Q11–Q12) and exponential waiting times, including turning a Poisson rate into a mean gap (Q13–Q15).</p><h4>What this sheet tells you to be able to do</h4><ul><li>Draw a uniform density, find its height 1/(b − a), and get any probability as width × height; know that P(x = a) = 0.</li><li>Compute E(x) = (a + b)/2 and Var(x) = (b − a)²/12.</li><li>Read the cumulative z table for left areas, right areas (1 minus), areas between two values and areas from 0 to z.</li><li>Run the table backwards: from an area to z, then x = μ + zσ for a cut-off such as ‘the top 3%’.</li><li>Turn a normal probability into an expected count (probability × group size).</li><li>Check np ≥ 5 and n(1 − p) ≥ 5, then approximate a binomial with μ = np, σ = √[np(1 − p)] and the ±0.5 continuity correction.</li><li>Use P(x ≤ x₀) = 1 − e^(−x₀/μ) for the exponential, and convert a Poisson rate per hour into a mean gap in the unit asked.</li></ul><div class=\"def\"><b>Read before you start: three points about the sheet.</b><ul><li><b>Q12(b) breaks the approximation rule.</b> With n = 100 and p = 0.97, np = 97 but n(1 − p) = 3, below 5. The sheet still asks for the normal approximation, so do it as asked (0.9292), but know that the check fails and the exact binomial answer is 0.9192. In a quiz, ‘is the normal approximation appropriate here?’ would be answered <em>no</em>.</li><li><b>Q7(b) gives an area between 0 and z.</b> The course's table (and Excel) gives cumulative areas P(Z ≤ z), so add 0.5 first: 0.4750 + 0.5 = 0.9750, z = 1.96. Older ‘half’ tables list 0-to-z areas directly; same answer, different lookup.</li><li><b>Rounding z.</b> The answers below round z to two decimals before the table lookup, as the lecture does; where the unrounded value changes the third decimal, both are shown. Halfway values (0.625, 0.875, 1.125) are rounded up in size.</li></ul></div><details><summary>Q1 · Uniform between 1.0 and 1.5</summary><p style=\"font-size:14.5px\">x is uniformly distributed between 1.0 and 1.5. (a) Describe the graph of its density. (b) Find P(x = 1.25). (c) Find P(1.0 ≤ x ≤ 1.25). (d) Find P(1.20 &lt; x &lt; 1.5).</p><ol><li>Height: f(x) = 1/(1.5 − 1.0) = 2 for 1.0 ≤ x ≤ 1.5, and 0 elsewhere.</li><li>(a) The graph is a flat rectangle: a horizontal line at height 2 from x = 1.0 to x = 1.5. Area = 0.5 × 2 = 1. A height of 2 is fine, because a density is not a probability.</li><li>(b) A single value has no width, so P(x = 1.25) = 0.</li><li>(c) Width × height = (1.25 − 1.0) × 2 = 0.50.</li><li>(d) (1.5 − 1.20) × 2 = 0.60. Strict &lt; or ≤ makes no difference for a continuous variable.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (b) 0; (c) 0.50; (d) 0.60.</p></details><details><summary>Q2 · Uniform between 10 and 20: probabilities, mean and variance</summary><p style=\"font-size:14.5px\">x is uniformly distributed between 10 and 20. (a) Describe the density graph. Find (b) P(x &lt; 15), (c) P(12 ≤ x ≤ 18), (d) E(x) and (e) Var(x).</p><ol><li>f(x) = 1/(20 − 10) = 0.1 for 10 ≤ x ≤ 20. (a) A rectangle of height 0.1 from 10 to 20.</li><li>(b) P(x &lt; 15) = (15 − 10) × 0.1 = 0.50.</li><li>(c) P(12 ≤ x ≤ 18) = (18 − 12) × 0.1 = 0.60.</li><li>(d) E(x) = (10 + 20)/2 = 15.</li><li>(e) Var(x) = (20 − 10)²/12 = 100/12 = 8.33, so σ = √8.33 = 2.89.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 0.50; 0.60; E(x) = 15; Var(x) = 8.33.</p></details><details><summary>Q3 · Flight time: ‘late’ is measured from the quoted time</summary><p style=\"font-size:14.5px\">An airline's timetable says a route takes 2 hours 5 minutes. Actual flight times are believed to be uniform between 2 hours and 2 hours 20 minutes. (a) Describe the density graph. (b) What is the probability that a flight is no more than 5 minutes late? (c) More than 10 minutes late? (d) What is the expected flight time?</p><ol><li>Work in minutes: x is uniform on 120 to 140, so f(x) = 1/20 = 0.05. (a) A rectangle of height 0.05 from 120 to 140.</li><li>‘Late’ is measured from the quoted 125 minutes, not from 120.</li><li>(b) No more than 5 minutes late means x ≤ 130 (early flights count too): (130 − 120) × 0.05 = 0.50.</li><li>(c) More than 10 minutes late means x &gt; 135: (140 − 135) × 0.05 = 0.25.</li><li>(d) E(x) = (120 + 140)/2 = 130 minutes = 2 hours 10 minutes.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 0.50; 0.25; 2 h 10 min. (Measuring lateness from 120 minutes gives 0.25 and 0.50, the two answers swapped.)</p></details><details><summary>Q4 · Battery life uniform between 8.5 and 12 hours</summary><p style=\"font-size:14.5px\">A tablet's battery life is uniform between 8.5 and 12 hours. (a) Write the density function. Find the probability that battery life is (b) 10 hours or less, (c) at least 11 hours, (d) between 9.5 and 11.5 hours. (e) Out of 100 tablets, how many should last at least 9 hours?</p><ol><li>(a) f(x) = 1/(12 − 8.5) = 1/3.5 = 0.2857 for 8.5 ≤ x ≤ 12, and 0 elsewhere.</li><li>(b) P(x ≤ 10) = (10 − 8.5)/3.5 = 1.5/3.5 = 0.4286.</li><li>(c) P(x ≥ 11) = (12 − 11)/3.5 = 0.2857.</li><li>(d) P(9.5 ≤ x ≤ 11.5) = 2/3.5 = 0.5714.</li><li>(e) P(x ≥ 9) = 3/3.5 = 0.8571; expected count = 100 × 0.8571 = 85.7, about 86 tablets.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> f(x) = 1/3.5 on [8.5, 12]; 0.4286; 0.2857; 0.5714; about 86.</p></details><details><summary>Q5 · Normal with μ = 50, σ = 5: within 1σ and 2σ</summary><p style=\"font-size:14.5px\">x is normal with μ = 50 and σ = 5. (a) Sketch the curve, marking 35, 40, 45, 50, 55, 60 and 65. Find (b) P(45 ≤ x ≤ 55) and (c) P(40 ≤ x ≤ 60).</p><ol><li>(a) A symmetric bell peaking at 50. The marks are μ ± 1σ (45, 55), μ ± 2σ (40, 60) and μ ± 3σ (35, 65); the curve is close to the axis at 35 and 65 but never touches it.</li><li>(b) 45 and 55 give z = −1 and 1: 0.8413 − 0.1587 = 0.6826.</li><li>(c) 40 and 60 give z = −2 and 2: 0.9772 − 0.0228 = 0.9544.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 0.6826 and 0.9544, the lecture's 68.26% and 95.44%.</p></details><details><summary>Q6 · Six standard normal areas</summary><p style=\"font-size:14.5px\">z is standard normal. Find (a) P(0 ≤ z ≤ 0.83), (b) P(−1.57 ≤ z ≤ 0), (c) P(z &gt; 0.44), (d) P(z ≥ −0.23), (e) P(z &lt; 1.20), (f) P(z ≤ −0.71).</p><div class=\"scroller\"><table><tr><th>Part</th><th>Area wanted</th><th>Working with the cumulative table</th><th>Answer</th></tr><tr><td>a</td><td>P(0 ≤ z ≤ 0.83)</td><td>0.7967 − 0.5000</td><td>0.2967</td></tr><tr><td>b</td><td>P(−1.57 ≤ z ≤ 0)</td><td>0.5000 − 0.0582</td><td>0.4418</td></tr><tr><td>c</td><td>P(z &gt; 0.44)</td><td>1 − 0.6700</td><td>0.3300</td></tr><tr><td>d</td><td>P(z ≥ −0.23)</td><td>1 − 0.4090</td><td>0.5910</td></tr><tr><td>e</td><td>P(z &lt; 1.20)</td><td>table value</td><td>0.8849</td></tr><tr><td>f</td><td>P(z ≤ −0.71)</td><td>table value</td><td>0.2389</td></tr></table></div><ol><li>The table gives P(Z ≤ z). Left areas are read directly; right areas are 1 minus the table value; an area from 0 is the table value minus 0.5 (or 0.5 minus it).</li><li>Sanity check (d): the region is everything to the right of a point left of the mean, so the answer must exceed 0.5. It does: 0.5910.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 0.2967; 0.4418; 0.3300; 0.5910; 0.8849; 0.2389.</p></details><details><summary>Q7 · From an area back to z</summary><p style=\"font-size:14.5px\">z is standard normal. Find z when (a) the area to its left is 0.9750, (b) the area between 0 and z is 0.4750, (c) the area to its left is 0.7291, (d) the area to its right is 0.1314, (e) the area to its left is 0.6700, (f) the area to its right is 0.3300.</p><div class=\"scroller\"><table><tr><th>Part</th><th>Given</th><th>Left (cumulative) area to look up</th><th>z</th></tr><tr><td>a</td><td>left of z = 0.9750</td><td>0.9750</td><td>1.96</td></tr><tr><td>b</td><td>between 0 and z = 0.4750</td><td>0.5 + 0.4750 = 0.9750</td><td>1.96</td></tr><tr><td>c</td><td>left of z = 0.7291</td><td>0.7291</td><td>0.61</td></tr><tr><td>d</td><td>right of z = 0.1314</td><td>1 − 0.1314 = 0.8686</td><td>1.12</td></tr><tr><td>e</td><td>left of z = 0.6700</td><td>0.6700</td><td>0.44</td></tr><tr><td>f</td><td>right of z = 0.3300</td><td>1 − 0.3300 = 0.6700</td><td>0.44</td></tr></table></div><ol><li>Convert every given area into a left area, then find it in the body of the table and read off z.</li><li>All six areas appear exactly in the table, so no interpolation is needed.</li><li>(b): assuming z is positive (an area from 0 is usually quoted that way). (e) and (f) describe the same point, so they give the same z.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 1.96; 1.96; 0.61; 1.12; 0.44; 0.44. Excel: <code>=NORM.S.INV(0.8686)</code> = 1.12.</p></details><details><summary>Q8 · Airfares: three probabilities and a top-3% cut-off</summary><p style=\"font-size:14.5px\">Domestic airfares on a network average $385 and are normal with σ = $110. Find the probability that a fare is (a) $550 or more, (b) $250 or less, (c) between $300 and $500. (d) Above what fare do the most expensive 3% of fares lie?</p><ol><li>(a) z = (550 − 385)/110 = 1.50. P(x ≥ 550) = 1 − 0.9332 = 0.0668.</li><li>(b) z = (250 − 385)/110 = −1.227, rounded to −1.23. P(x ≤ 250) = 0.1093. (The unrounded z gives 0.1099; both round to 0.11.)</li><li>(c) z₁ = (300 − 385)/110 = −0.77 and z₂ = (500 − 385)/110 = 1.05. P = 0.8531 − 0.2206 = 0.6325 (exact 0.6323).</li><li>(d) The top 3% is a right tail, so the left area is 0.97. The table has 0.9699 at z = 1.88 and 0.9706 at 1.89; 0.9699 is closer, so z = 1.88.</li><li>x = μ + zσ = 385 + 1.88 × 110 = 591.80. Excel: <code>=NORM.INV(0.97,385,110)</code> = 591.89.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 0.0668; 0.1093; 0.6325; the top 3% of fares are about $592 or more.</p></details><details><summary>Q9 · Upper 2% of test scores</summary><p style=\"font-size:14.5px\">To join a high-IQ society, a person must score in the top 2% of the population. Scores are normal with mean 100 and standard deviation 15. What score is needed?</p><ol><li>Top 2% means a left area of 0.98.</li><li>The table has 0.9798 at z = 2.05 and 0.9803 at 2.06; 0.9798 is closer, so z = 2.05.</li><li>x = 100 + 2.05 × 15 = 130.75. (NORM.INV(0.98,100,15) = 130.81.)</li><li>Using 1.96 or 1.645 here is wrong: those belong to 2.5% and 5% tails.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> A score of about 131 or higher.</p></details><details><summary>Q10 · Exam completion time: probabilities and an expected count</summary><p style=\"font-size:14.5px\">Time to finish an exam is normal with mean 80 minutes and standard deviation 10 minutes. (a) What is the probability of finishing in one hour or less? (b) In more than 60 but less than 75 minutes? (c) If 60 students sit a 90-minute exam, how many are expected not to finish?</p><ol><li>(a) 60 minutes: z = (60 − 80)/10 = −2.00. P = 0.0228.</li><li>(b) z = −2.00 and (75 − 80)/10 = −0.50. P = 0.3085 − 0.0228 = 0.2857.</li><li>(c) Not finishing means x &gt; 90: z = 1.00, P = 1 − 0.8413 = 0.1587.</li><li>Expected number = 60 × 0.1587 = 9.52.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 0.0228; 0.2857; about 9.5, so roughly 10 students.</p></details><details><summary>Q11 · Normal approximation to a binomial with n = 100, p = 0.20</summary><p style=\"font-size:14.5px\">A binomial distribution has n = 100 and p = 0.20. (a) Find its mean and standard deviation. (b) Can the normal approximation be used? (c) Find P(exactly 24 successes), (d) P(18 to 22 successes), (e) P(15 or fewer).</p><ol><li>(a) μ = np = 20; σ = √(100 × 0.20 × 0.80) = √16 = 4.</li><li>(b) np = 20 and n(1 − p) = 80, both at least 5, so yes.</li><li>(c) ‘Exactly 24’ becomes 23.5 ≤ x ≤ 24.5: z = 0.875 → 0.88 and z = 1.125 → 1.13. P = 0.8708 − 0.8106 = 0.0602. (Exact binomial: 0.0577.)</li><li>(d) ‘18 to 22’ includes both ends, so use 17.5 ≤ x ≤ 22.5: z = ±0.625 → ±0.63. P = 0.7357 − 0.2643 = 0.4714. (Unrounded z gives 0.4680; exact binomial 0.4677.)</li><li>(e) ‘15 or fewer’ includes 15, so use x ≤ 15.5: z = −1.125 → −1.13. P = 0.1292. (Exact binomial: 0.1285.)</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> μ = 20, σ = 4; yes; ≈ 0.0602; ≈ 0.4714; ≈ 0.1292.</p></details><details><summary>Q12 · 97% agreement: exact binomial, then the normal approximation</summary><p style=\"font-size:14.5px\">A survey found that 97% of adults think texting while driving should be illegal. (a) For 10 adults, use the binomial formula to find P(at least 8 agree). (b) For 100 adults, use the normal approximation to find P(at least 95 agree). (c) What is the advantage of the normal approximation when n is large? (d) For large n, would statistical software use the binomial formula or the normal approximation?</p><ol><li>(a) P(8) + P(9) + P(10) = 0.0317 + 0.2281 + 0.7374 = 0.9972.</li><li>(b) μ = 97; σ = √(100 × 0.97 × 0.03) = √2.91 = 1.706. ‘At least 95’ includes 95, so use x ≥ 94.5: z = (94.5 − 97)/1.706 = −1.47. P = 1 − 0.0708 = 0.9292.</li><li>Check: n(1 − p) = 3, below 5, so the approximation is not really justified. The exact value, 1 − <code>BINOM.DIST(94,100,0.97,TRUE)</code>, is 0.9192: the normal curve overstates it by 0.01.</li><li>(c) By hand, an exact ‘at least’ or ‘at most’ probability for large n means adding many terms, each with large factorials. The normal approximation needs one or two table lookups.</li><li>(d) The exact binomial. A computer adds hundreds of terms instantly, so there is no reason to accept approximation error; the normal shortcut is for hand work.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 0.9972; ≈ 0.9292 (exact 0.9192; the n(1 − p) ≥ 5 check fails); saves computation; software uses the exact binomial.</p></details><details><summary>Q13 · Exponential with mean 8</summary><p style=\"font-size:14.5px\">x has density f(x) = (1/8)e^(−x/8) for x ≥ 0. Find (a) P(x ≤ 6), (b) P(x ≤ 4), (c) P(x ≥ 6), (d) P(4 ≤ x ≤ 6).</p><ol><li>This is exponential with μ = 8, so P(x ≤ x₀) = 1 − e^(−x₀/8).</li><li>(a) 1 − e^(−0.75) = 1 − 0.4724 = 0.5276.</li><li>(b) 1 − e^(−0.5) = 1 − 0.6065 = 0.3935.</li><li>(c) P(x ≥ 6) = e^(−0.75) = 0.4724.</li><li>(d) 0.5276 − 0.3935 = 0.1341.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 0.5276; 0.3935; 0.4724; 0.1341.</p></details><details><summary>Q14 · Gaps between vehicles, mean 12 seconds</summary><p style=\"font-size:14.5px\">The time between vehicles reaching a junction is exponential with mean 12 seconds. (a) Sketch the density. Find the probability that the gap is (b) 12 seconds or less, (c) 6 seconds or less, (d) 30 seconds or more.</p><ol><li>(a) f(x) = (1/12)e^(−x/12). The curve starts at its highest point, 1/12 = 0.083, at x = 0 and falls steadily (to 0.031 at 12 s), with a long right tail.</li><li>(b) 1 − e^(−12/12) = 1 − 0.3679 = 0.6321. Note that P(x ≤ μ) is 0.632, not 0.5.</li><li>(c) 1 − e^(−0.5) = 0.3935.</li><li>(d) e^(−30/12) = e^(−2.5) = 0.0821.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 0.6321; 0.3935; 0.0821.</p></details><details><summary>Q15 · Emergency calls: from a Poisson rate to an exponential gap</summary><p style=\"font-size:14.5px\">A city fire service's emergency line receives calls at a mean rate of 1.6 an hour, and the number of calls per hour is Poisson. (a) What is the mean time between calls, in minutes? (b) Write the density of the time between calls. Find the probability that the gap between calls is (c) less than one hour, (d) 30 minutes or more, (e) more than 5 but less than 20 minutes.</p><ol><li>(a) Mean gap = 1/1.6 hour = 0.625 hour = 0.625 × 60 = 37.5 minutes.</li><li>(b) f(x) = (1/37.5)e^(−x/37.5) for x ≥ 0, x in minutes.</li><li>(c) P(x &lt; 60) = 1 − e^(−60/37.5) = 1 − e^(−1.6) = 1 − 0.2019 = 0.7981. Excel: <code>=EXPON.DIST(60,1/37.5,TRUE)</code>.</li><li>(d) P(x ≥ 30) = e^(−30/37.5) = e^(−0.8) = 0.4493.</li><li>(e) P(5 &lt; x &lt; 20) = e^(−5/37.5) − e^(−20/37.5) = 0.8752 − 0.5866 = 0.2886.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 37.5 minutes; f(x) = (1/37.5)e^(−x/37.5); 0.7981; 0.4493; 0.2886.</p></details>"
+    },
+    {
      "t": "Textbook: Discrete Probability Distributions",
      "src": "Anderson 14e ch5",
-     "h": "<p>A random variable turns each outcome of an experiment into a number, and its probability distribution says how likely each number is. The chapter builds discrete distributions two ways: as tables (from classical, subjective or relative-frequency probabilities — the last giving an empirical distribution) and as formulas (discrete uniform, binomial, Poisson, hypergeometric). Expected value and variance summarise any distribution, and the binomial and Poisson come with shortcut formulas for both. The binomial counts successes in a fixed number of independent, identical trials; the Poisson counts occurrences in an interval of time or space. For a manager these models turn vague questions — how many sales, how many arrivals, how many defects — into probabilities that can be planned against.</p><!--viz:sfm-binomial-p-shapes--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three binomial distributions with n = 10. p = 0.2 peaks at x = 2 (0.302) with a right tail; p = 0.5 is symmetric about 5 (0.246); p = 0.8 is the mirror image, peaking at 8.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">How p shapes the binomial (n = 10)</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 200\" role=\"img\" aria-label=\"Three binomial distributions with n = 10. p = 0.2 peaks at x = 2 (0.302) with a right tail; p = 0.5 is symmetric about 5 (0.246); p = 0.8 is the mirror image, peaking at 8.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><rect x=\"15\" y=\"115.4\" width=\"9.6\" height=\"34.6\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"26.6\" y=\"63.4\" width=\"9.6\" height=\"86.6\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"38.3\" y=\"52.6\" width=\"9.6\" height=\"97.4\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"49.9\" y=\"85.1\" width=\"9.6\" height=\"64.9\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"61.5\" y=\"121.6\" width=\"9.6\" height=\"28.4\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"73.2\" y=\"141.5\" width=\"9.6\" height=\"8.5\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"84.8\" y=\"148.2\" width=\"9.6\" height=\"1.8\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"96.5\" y=\"149.7\" width=\"9.6\" height=\"0.3\" style=\"fill:var(--blue);stroke:none\"/><path d=\"M12,150 L144,150\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"19.8\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><text x=\"78\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">5</text><text x=\"136.2\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">10</text><text x=\"78\" y=\"26\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">p = 0.2</text><text x=\"78\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">right-skewed</text><rect x=\"157\" y=\"149.7\" width=\"9.6\" height=\"0.3\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"168.6\" y=\"146.8\" width=\"9.6\" height=\"3.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"180.3\" y=\"135.8\" width=\"9.6\" height=\"14.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"191.9\" y=\"112.2\" width=\"9.6\" height=\"37.8\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"203.5\" y=\"83.8\" width=\"9.6\" height=\"66.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"215.2\" y=\"70.6\" width=\"9.6\" height=\"79.4\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"226.8\" y=\"83.8\" width=\"9.6\" height=\"66.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"238.5\" y=\"112.2\" width=\"9.6\" height=\"37.8\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"250.1\" y=\"135.8\" width=\"9.6\" height=\"14.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"261.7\" y=\"146.8\" width=\"9.6\" height=\"3.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"273.4\" y=\"149.7\" width=\"9.6\" height=\"0.3\" style=\"fill:var(--blue);stroke:none\"/><path d=\"M154,150 L286,150\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"161.8\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><text x=\"220\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">5</text><text x=\"278.2\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">10</text><text x=\"220\" y=\"26\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">p = 0.5</text><text x=\"220\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">symmetric</text><rect x=\"333.9\" y=\"149.7\" width=\"9.6\" height=\"0.3\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"345.5\" y=\"148.2\" width=\"9.6\" height=\"1.8\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"357.2\" y=\"141.5\" width=\"9.6\" height=\"8.5\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"368.8\" y=\"121.6\" width=\"9.6\" height=\"28.4\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"380.5\" y=\"85.1\" width=\"9.6\" height=\"64.9\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"392.1\" y=\"52.6\" width=\"9.6\" height=\"97.4\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"403.7\" y=\"63.4\" width=\"9.6\" height=\"86.6\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"415.4\" y=\"115.4\" width=\"9.6\" height=\"34.6\" style=\"fill:var(--blue);stroke:none\"/><path d=\"M296,150 L428,150\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"303.8\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><text x=\"362\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">5</text><text x=\"420.2\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">10</text><text x=\"362\" y=\"26\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">p = 0.8</text><text x=\"362\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">left-skewed</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The peak sits near np (2, 5, 8); the distribution is symmetric only at p = 0.5, and flipping p to 1 − p mirrors it.</figcaption></figure><!--/viz:sfm-binomial-p-shapes--><!--viz:sfm-binomial-cumulative--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Binomial bars for n = 8, p = 0.25. The bars for x = 0, 1, 2 (0.1001, 0.2670, 0.3115) are shaded; together P(X ≤ 2) = 0.6785, so P(X ≥ 3) = 0.3215.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">'At most' means add the bars; 'at least' means 1 minus</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 232\" role=\"img\" aria-label=\"Binomial bars for n = 8, p = 0.25. The bars for x = 0, 1, 2 (0.1001, 0.2670, 0.3115) are shaded; together P(X ≤ 2) = 0.6785, so P(X ≥ 3) = 0.3215.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M26,160 L420,160\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><rect x=\"37\" y=\"125.6\" width=\"30\" height=\"34.4\" style=\"fill:var(--blue);stroke:none\"/><text x=\"52\" y=\"117.6\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px\">0.1001</text><text x=\"52\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><rect x=\"81\" y=\"68.2\" width=\"30\" height=\"91.8\" style=\"fill:var(--blue);stroke:none\"/><text x=\"96\" y=\"60.2\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px\">0.2670</text><text x=\"96\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">1</text><rect x=\"125\" y=\"52.9\" width=\"30\" height=\"107.1\" style=\"fill:var(--blue);stroke:none\"/><text x=\"140\" y=\"44.9\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px\">0.3115</text><text x=\"140\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">2</text><rect x=\"169\" y=\"88.6\" width=\"30\" height=\"71.4\" style=\"fill:var(--surface-2);stroke:var(--ink-3);stroke-width:1.5\"/><text x=\"184\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">3</text><rect x=\"213\" y=\"130.3\" width=\"30\" height=\"29.7\" style=\"fill:var(--surface-2);stroke:var(--ink-3);stroke-width:1.5\"/><text x=\"228\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">4</text><rect x=\"257\" y=\"152.1\" width=\"30\" height=\"7.9\" style=\"fill:var(--surface-2);stroke:var(--ink-3);stroke-width:1.5\"/><text x=\"272\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">5</text><rect x=\"301\" y=\"158.7\" width=\"30\" height=\"1.3\" style=\"fill:var(--surface-2);stroke:var(--ink-3);stroke-width:1.5\"/><text x=\"316\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">6</text><rect x=\"345\" y=\"159.9\" width=\"30\" height=\"0.1\" style=\"fill:var(--surface-2);stroke:var(--ink-3);stroke-width:1.5\"/><text x=\"360\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">7</text><rect x=\"389\" y=\"160\" width=\"30\" height=\"0\" style=\"fill:var(--surface-2);stroke:var(--ink-3);stroke-width:1.5\"/><text x=\"404\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">8</text><text x=\"20\" y=\"200\" style=\"fill:var(--blue);font-size:13.5px;font-weight:700\">P(X ≤ 2) = f(0) + f(1) + f(2) = 0.6785</text><text x=\"20\" y=\"222\" style=\"fill:var(--ink);font-size:13.5px\">P(X ≥ 3) = 1 − 0.6785 = 0.3215</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">In Excel, BINOM.DIST(2, 8, 0.25, TRUE) returns the shaded total; for 'at least 3' take 1 minus it rather than adding six bars.</figcaption></figure><!--/viz:sfm-binomial-cumulative--><!--viz:sfm-poisson-shapes--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three Poisson distributions. μ = 1 is tallest at 0 and 1 (0.368) with a long right tail; μ = 3 peaks at 2 and 3 (0.224); μ = 7 is wider and nearly symmetric, peaking at 6 and 7 (0.149).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">As μ grows the Poisson spreads and evens out</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 200\" role=\"img\" aria-label=\"Three Poisson distributions. μ = 1 is tallest at 0 and 1 (0.368) with a long right tail; μ = 3 peaks at 2 and 3 (0.224); μ = 7 is wider and nearly symmetric, peaking at 6 and 7 (0.149).\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><rect x=\"15\" y=\"53.2\" width=\"6.5\" height=\"96.8\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"23.5\" y=\"53.2\" width=\"6.5\" height=\"96.8\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"32.1\" y=\"101.6\" width=\"6.5\" height=\"48.4\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"40.6\" y=\"133.9\" width=\"6.5\" height=\"16.1\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"49.1\" y=\"146\" width=\"6.5\" height=\"4\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"57.7\" y=\"149.2\" width=\"6.5\" height=\"0.8\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"66.2\" y=\"149.9\" width=\"6.5\" height=\"0.1\" style=\"fill:var(--blue);stroke:none\"/><path d=\"M12,150 L144,150\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"18.3\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><text x=\"78\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">7</text><text x=\"137.7\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">14</text><text x=\"78\" y=\"26\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">μ = 1</text><text x=\"78\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">strong right skew</text><rect x=\"157\" y=\"136.9\" width=\"6.5\" height=\"13.1\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"165.5\" y=\"110.7\" width=\"6.5\" height=\"39.3\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"174.1\" y=\"91\" width=\"6.5\" height=\"59\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"182.6\" y=\"91\" width=\"6.5\" height=\"59\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"191.1\" y=\"105.8\" width=\"6.5\" height=\"44.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"199.7\" y=\"123.5\" width=\"6.5\" height=\"26.5\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"208.2\" y=\"136.7\" width=\"6.5\" height=\"13.3\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"216.7\" y=\"144.3\" width=\"6.5\" height=\"5.7\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"225.3\" y=\"147.9\" width=\"6.5\" height=\"2.1\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"233.8\" y=\"149.3\" width=\"6.5\" height=\"0.7\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"242.3\" y=\"149.8\" width=\"6.5\" height=\"0.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"250.9\" y=\"149.9\" width=\"6.5\" height=\"0.1\" style=\"fill:var(--blue);stroke:none\"/><path d=\"M154,150 L286,150\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"160.3\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><text x=\"220\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">7</text><text x=\"279.7\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">14</text><text x=\"220\" y=\"26\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">μ = 3</text><text x=\"220\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">milder skew</text><rect x=\"299\" y=\"149.8\" width=\"6.5\" height=\"0.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"307.5\" y=\"148.3\" width=\"6.5\" height=\"1.7\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"316.1\" y=\"144.1\" width=\"6.5\" height=\"5.9\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"324.6\" y=\"136.3\" width=\"6.5\" height=\"13.7\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"333.1\" y=\"126\" width=\"6.5\" height=\"24\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"341.7\" y=\"116.4\" width=\"6.5\" height=\"33.6\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"350.2\" y=\"110.8\" width=\"6.5\" height=\"39.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"358.7\" y=\"110.8\" width=\"6.5\" height=\"39.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"367.3\" y=\"115.7\" width=\"6.5\" height=\"34.3\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"375.8\" y=\"123.3\" width=\"6.5\" height=\"26.7\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"384.3\" y=\"131.3\" width=\"6.5\" height=\"18.7\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"392.9\" y=\"138.1\" width=\"6.5\" height=\"11.9\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"401.4\" y=\"143.1\" width=\"6.5\" height=\"6.9\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"409.9\" y=\"146.3\" width=\"6.5\" height=\"3.7\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"418.5\" y=\"148.1\" width=\"6.5\" height=\"1.9\" style=\"fill:var(--blue);stroke:none\"/><path d=\"M296,150 L428,150\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"302.3\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><text x=\"362\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">7</text><text x=\"421.7\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">14</text><text x=\"362\" y=\"26\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">μ = 7</text><text x=\"362\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">near symmetric</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Mean and variance are both μ, so a bigger μ moves the peak right and widens it at the same time (σ = √μ).</figcaption></figure><!--/viz:sfm-poisson-shapes--><p><strong>Random variable: discrete or continuous</strong> — A random variable attaches a number to every experimental outcome; even yes/no outcomes can be coded (1 = recalled the ad, 0 = did not). It is discrete if its values can be listed — a finite list or an endless sequence 0, 1, 2, … — and continuous if it can take any value in an interval. Quick test: if every point on the line segment between two possible values is also possible, the variable is continuous.<br><em>e.g.</em> Number of loan applications approved today is discrete; time to approve one application is continuous.</p><p><strong>Probability function and its two conditions</strong> — For a discrete random variable, the probability function f(x) gives the probability of each value. Any valid f(x) must be non-negative for every x and must sum to exactly 1 across all values. Once f(x) is known, probabilities of events such as 'three or more' are found by adding the relevant f(x) values.<br><span style=\"font-family:var(--mono)\">f(x) ≥ 0 for all x;  Σ f(x) = 1</span></p><p><strong>Building a tabular distribution</strong> — The classical method applies when values are equally likely, the subjective method uses an expert's judgement, and the relative-frequency method uses historical counts. Relative frequencies from a large data set give an empirical discrete distribution — increasingly common with scanner, card and app data. The discrete uniform distribution is the simplest formula-based case: every one of n values has probability 1/n.<br><span style=\"font-family:var(--mono)\">Discrete uniform: f(x) = 1/n</span></p><p><strong>Expected value</strong> — The expected value is a probability-weighted average of the values of x and measures the centre of the distribution. It is a long-run average, not a prediction for any single trial, and need not be a value x can actually take. Multiplying by the number of periods turns it into a forecast total.<br><span style=\"font-family:var(--mono)\">E(x) = μ = Σ x·f(x)</span><br><em>e.g.</em> If E(x) = 1.95 scooters a day, a 30-day month is forecast at 30 × 1.95 = 58.5 scooters.</p><p><strong>Variance and standard deviation of a random variable</strong> — Variance is the probability-weighted average of squared deviations from μ; the standard deviation is its positive square root and is in the same units as x, which is why it is easier to interpret. An algebraically equivalent shortcut is E(x²) − μ², handy on a calculator.<br><span style=\"font-family:var(--mono)\">Var(x) = σ² = Σ (x − μ)²·f(x) = Σ x²f(x) − μ²;  σ = √σ²</span></p><p><strong>The binomial experiment</strong> — Four properties: (1) a fixed number n of identical trials; (2) two outcomes per trial, success or failure; (3) the success probability p stays the same on every trial — the stationarity assumption; (4) trials are independent. Properties 2–4 alone describe a Bernoulli process; adding a fixed n makes it a binomial experiment. Stationarity and independence are different: a tiring salesperson whose success rate drops breaks stationarity even if customers decide independently.</p><p><strong>Binomial probability function</strong> — Every particular sequence with x successes and n − x failures has probability pˣ(1 − p)ⁿ⁻ˣ, and the combination term counts how many such sequences exist. Multiplying the two gives the probability of exactly x successes. For 'at least one' it is quicker to compute 1 − f(0).<br><span style=\"font-family:var(--mono)\">f(x) = [n! / (x!(n − x)!)] · pˣ · (1 − p)ⁿ⁻ˣ,  x = 0, 1, …, n</span></p><p><strong>Binomial mean, variance and tables</strong> — For a binomial variable the general formulas collapse to np and np(1 − p). Tables list f(x) for chosen n and p; if a table stops at p = 0.50, find P(x successes) with p &gt; 0.5 by looking up n − x successes at probability 1 − p. With a cumulative table, an individual probability is a difference: f(x) = P(≤ x) − P(≤ x − 1).<br><span style=\"font-family:var(--mono)\">E(x) = np;  Var(x) = np(1 − p)</span><br><em>e.g.</em> 1000 shoppers with p = 0.3: expect 300 buyers, σ = √210 = 14.49.</p><p><strong>Poisson distribution</strong> — Models the number of occurrences in an interval of time or space when any two intervals of equal length carry the same probability of an occurrence and occurrences in separate intervals are independent. There is no upper limit on x. Its only parameter is μ, the mean number of occurrences in the interval — which must first be rescaled to the interval asked about.<br><span style=\"font-family:var(--mono)\">f(x) = μˣ e^(−μ) / x!,  x = 0, 1, 2, …</span><br><em>e.g.</em> 12 ATM customers an hour → μ = 2 for a 10-minute window.</p><p><strong>Poisson mean equals variance</strong> — A Poisson variable has variance equal to its mean, so its standard deviation is √μ. This is a quick check on whether count data might be Poisson: if the observed variance is far from the mean, the model is doubtful.<br><span style=\"font-family:var(--mono)\">E(x) = Var(x) = μ;  σ = √μ</span></p><p><strong>Hypergeometric distribution (lower priority)</strong> — Used when n items are drawn without replacement from a small population of N items, r of which are successes. Because each draw changes what remains, trials are not independent and the success probability changes — so the binomial does not apply. When N is large relative to n, the hypergeometric is well approximated by a binomial with p = r/N.<br><span style=\"font-family:var(--mono)\">f(x) = [C(r, x) · C(N − r, n − x)] / C(N, n);  E(x) = n(r/N);  Var(x) = n(r/N)(1 − r/N)(N − n)/(N − 1)</span></p><p><strong>Excel functions for discrete distributions</strong> — BINOM.DIST(x, n, p, cumulative), POISSON.DIST(x, mean, cumulative) and HYPGEOM.DIST compute these probabilities. The last argument FALSE returns P(exactly x); TRUE returns the cumulative P(x or fewer).<br><em>e.g.</em> =BINOM.DIST(4,10,0.3,FALSE) returns 0.2001.</p><div class=\"card\"><strong>Case: Voter waiting times</strong> <em>(Statistics in Practice: Voter Waiting Times in Elections)</em><p>Researchers modelling queues at US polling stations found that voter arrivals per minute follow a Poisson distribution. Feeding the Poisson arrival probabilities into queueing models let them estimate waiting times and recommend how many voting machines each location needs.</p><p><em>Lesson:</em> Poisson models counts of arrivals per interval; those probabilities feed capacity decisions.</p><p><em>Think:</em> If a booth averages 2 arrivals a minute, what is the mean number of arrivals in 5 minutes, and what are the variance and standard deviation of that count?</p></div><div class=\"card\"><strong>Case: Go Bananas! shutdown rule</strong> <em>(Case Problem 1: Go Bananas! Breakfast Cereal)</em><p>A cereal maker samples a fixed number of boxes each week and counts those whose marshmallow content falls outside the acceptable range. Production stops if too many fail. With a known failure rate when the process works, the binomial distribution shows how often a healthy line would be shut down needlessly.</p><p><em>Lesson:</em> Binomial probabilities let managers set a decision threshold that controls false alarms.</p><p><em>Think:</em> Raising the shutdown threshold from 5 failures to 6 does what to the chance of stopping a healthy line, and what is the cost of that change?</p></div><details><summary>Worked problem: Expected daily sales and spread</summary><p>A two-wheeler showroom in Jaipur records daily scooter sales x with f(0) = 0.10, f(1) = 0.25, f(2) = 0.35, f(3) = 0.20, f(4) = 0.10. Find the expected sales per day, the standard deviation, and P(3 or more sales).</p><ol><li>Check validity: all f(x) ≥ 0 and 0.10 + 0.25 + 0.35 + 0.20 + 0.10 = 1.</li><li>E(x) = 0(0.10) + 1(0.25) + 2(0.35) + 3(0.20) + 4(0.10) = 0 + 0.25 + 0.70 + 0.60 + 0.40 = 1.95.</li><li>E(x²) = 0 + 1(0.25) + 4(0.35) + 9(0.20) + 16(0.10) = 0.25 + 1.40 + 1.80 + 1.60 = 5.05.</li><li>Var(x) = E(x²) − μ² = 5.05 − 1.95² = 5.05 − 3.8025 = 1.2475; σ = √1.2475 = 1.117.</li><li>P(x ≥ 3) = f(3) + f(4) = 0.20 + 0.10 = 0.30.</li></ol><p><strong>Answer:</strong> E(x) = 1.95 scooters a day; σ ≈ 1.12 scooters; P(3 or more) = 0.30.</p></details><details><summary>Worked problem: Cold-call conversions (binomial)</summary><p>At a Bengaluru insurance call centre 20% of cold calls convert, independently. An agent makes 8 calls. Find P(exactly 2 conversions), P(at least 1 conversion), and the mean and standard deviation of conversions.</p><ol><li>Check the four properties: n = 8 fixed trials, convert/not, p = 0.20 constant, independent calls — binomial.</li><li>P(x = 2) = [8!/(2!6!)] (0.2)² (0.8)⁶ = 28 × 0.04 × 0.262144 = 0.2936.</li><li>P(x = 0) = (0.8)⁸ = 0.1678, so P(x ≥ 1) = 1 − 0.1678 = 0.8322.</li><li>E(x) = np = 8 × 0.2 = 1.6; Var(x) = np(1 − p) = 8 × 0.2 × 0.8 = 1.28; σ = √1.28 = 1.131.</li></ol><p><strong>Answer:</strong> P(2) ≈ 0.2936; P(at least 1) ≈ 0.8322; mean 1.6 conversions, σ ≈ 1.13.</p></details><details><summary>Worked problem: ATM arrivals (Poisson with rescaling)</summary><p>A Pune bank ATM averages 12 customers an hour, with arrivals meeting the Poisson conditions. Find P(exactly 2 customers in a 10-minute window), P(no customer in 10 minutes), and P(at least 3 customers in 15 minutes).</p><ol><li>Rescale: 12 per hour = 0.2 per minute, so μ = 2 for 10 minutes and μ = 3 for 15 minutes.</li><li>P(x = 2 | μ = 2) = 2² e⁻² / 2! = 4 × 0.135335 / 2 = 0.2707.</li><li>P(x = 0 | μ = 2) = e⁻² = 0.1353.</li><li>P(x ≤ 2 | μ = 3) = e⁻³(1 + 3 + 9/2) = 0.049787 × 8.5 = 0.4232.</li><li>P(x ≥ 3 | μ = 3) = 1 − 0.4232 = 0.5768.</li></ol><p><strong>Answer:</strong> P(2 in 10 min) ≈ 0.2707; P(none in 10 min) ≈ 0.1353; P(at least 3 in 15 min) ≈ 0.5768.</p></details><div class=\"def\"><b>Book vs lecture — Software for distribution probabilities.</b> Book: Shows JMP and Excel only: BINOM.DIST, POISSON.DIST and HYPGEOM.DIST, last argument FALSE for P(x = k), TRUE for P(x ≤ k). Lecture: The course teaches Excel and R (Live Lecture 1). In R the same probabilities come from dbinom/pbinom and dpois/ppois (d = exactly, p = cumulative). <b>Know the Excel argument order (x, n, p, cumulative) for the quiz; if an R question appears, d… is the exact probability and p… is cumulative ≤ x.</b></div><div class=\"def\"><b>Book vs lecture — Notation for the probability function.</b> Book: Lower-case x for the random variable and f(x) for its probability; requires f(x) ≥ 0 and Σf(x) = 1. Lecture: The hub notes write E(X), P(x) ≥ 0 and Σf(x) = 1, mixing capital X and P(x) with f(x). <b>Same mathematics. Read X/x and P(x)/f(x) as interchangeable in quiz options.</b></div><div class=\"def\"><b>Book vs lecture — Coverage of hypergeometric and bivariate distributions.</b> Book: Sections 5.4 (bivariate distributions, covariance, portfolios) and 5.7 (hypergeometric) are full sections. Lecture: The lecture record for Lectures 10–11 covers random variables, expected value, binomial and Poisson only; the official outline names binomial and Poisson. <b>Prioritise binomial and Poisson. Know only the headline ideas of the hypergeometric and portfolio variance.</b></div>"
+     "h": "<p>A random variable turns each outcome of an experiment into a number, and its probability distribution says how likely each number is. The chapter builds discrete distributions two ways: as tables (from classical, subjective or relative-frequency probabilities — the last giving an empirical distribution) and as formulas (discrete uniform, binomial, Poisson, hypergeometric). Expected value and variance summarise any distribution, and the binomial and Poisson come with shortcut formulas for both. The binomial counts successes in a fixed number of independent, identical trials; the Poisson counts occurrences in an interval of time or space. For a manager these models turn vague questions — how many sales, how many arrivals, how many defects — into probabilities that can be planned against.</p><!--viz:sfm-binomial-p-shapes--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three binomial distributions with n = 10. p = 0.2 peaks at x = 2 (0.302) with a right tail; p = 0.5 is symmetric about 5 (0.246); p = 0.8 is the mirror image, peaking at 8.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">How p shapes the binomial (n = 10)</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 200\" role=\"img\" aria-label=\"Three binomial distributions with n = 10. p = 0.2 peaks at x = 2 (0.302) with a right tail; p = 0.5 is symmetric about 5 (0.246); p = 0.8 is the mirror image, peaking at 8.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><rect x=\"15\" y=\"115.4\" width=\"9.6\" height=\"34.6\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"26.6\" y=\"63.4\" width=\"9.6\" height=\"86.6\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"38.3\" y=\"52.6\" width=\"9.6\" height=\"97.4\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"49.9\" y=\"85.1\" width=\"9.6\" height=\"64.9\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"61.5\" y=\"121.6\" width=\"9.6\" height=\"28.4\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"73.2\" y=\"141.5\" width=\"9.6\" height=\"8.5\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"84.8\" y=\"148.2\" width=\"9.6\" height=\"1.8\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"96.5\" y=\"149.7\" width=\"9.6\" height=\"0.3\" style=\"fill:var(--blue);stroke:none\"/><path d=\"M12,150 L144,150\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"19.8\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><text x=\"78\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">5</text><text x=\"136.2\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">10</text><text x=\"78\" y=\"26\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">p = 0.2</text><text x=\"78\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">right-skewed</text><rect x=\"157\" y=\"149.7\" width=\"9.6\" height=\"0.3\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"168.6\" y=\"146.8\" width=\"9.6\" height=\"3.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"180.3\" y=\"135.8\" width=\"9.6\" height=\"14.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"191.9\" y=\"112.2\" width=\"9.6\" height=\"37.8\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"203.5\" y=\"83.8\" width=\"9.6\" height=\"66.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"215.2\" y=\"70.6\" width=\"9.6\" height=\"79.4\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"226.8\" y=\"83.8\" width=\"9.6\" height=\"66.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"238.5\" y=\"112.2\" width=\"9.6\" height=\"37.8\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"250.1\" y=\"135.8\" width=\"9.6\" height=\"14.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"261.7\" y=\"146.8\" width=\"9.6\" height=\"3.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"273.4\" y=\"149.7\" width=\"9.6\" height=\"0.3\" style=\"fill:var(--blue);stroke:none\"/><path d=\"M154,150 L286,150\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"161.8\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><text x=\"220\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">5</text><text x=\"278.2\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">10</text><text x=\"220\" y=\"26\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">p = 0.5</text><text x=\"220\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">symmetric</text><rect x=\"333.9\" y=\"149.7\" width=\"9.6\" height=\"0.3\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"345.5\" y=\"148.2\" width=\"9.6\" height=\"1.8\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"357.2\" y=\"141.5\" width=\"9.6\" height=\"8.5\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"368.8\" y=\"121.6\" width=\"9.6\" height=\"28.4\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"380.5\" y=\"85.1\" width=\"9.6\" height=\"64.9\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"392.1\" y=\"52.6\" width=\"9.6\" height=\"97.4\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"403.7\" y=\"63.4\" width=\"9.6\" height=\"86.6\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"415.4\" y=\"115.4\" width=\"9.6\" height=\"34.6\" style=\"fill:var(--blue);stroke:none\"/><path d=\"M296,150 L428,150\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"303.8\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><text x=\"362\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">5</text><text x=\"420.2\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">10</text><text x=\"362\" y=\"26\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">p = 0.8</text><text x=\"362\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">left-skewed</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The peak sits near np (2, 5, 8); the distribution is symmetric only at p = 0.5, and flipping p to 1 − p mirrors it.</figcaption></figure><!--/viz:sfm-binomial-p-shapes--><!--viz:sfm-binomial-cumulative--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Binomial bars for n = 8, p = 0.25. The bars for x = 0, 1, 2 (0.1001, 0.2670, 0.3115) are shaded; together P(X ≤ 2) = 0.6785, so P(X ≥ 3) = 0.3215.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">'At most' means add the bars; 'at least' means 1 minus</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 232\" role=\"img\" aria-label=\"Binomial bars for n = 8, p = 0.25. The bars for x = 0, 1, 2 (0.1001, 0.2670, 0.3115) are shaded; together P(X ≤ 2) = 0.6785, so P(X ≥ 3) = 0.3215.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M26,160 L420,160\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><rect x=\"37\" y=\"125.6\" width=\"30\" height=\"34.4\" style=\"fill:var(--blue);stroke:none\"/><text x=\"52\" y=\"117.6\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px\">0.1001</text><text x=\"52\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><rect x=\"81\" y=\"68.2\" width=\"30\" height=\"91.8\" style=\"fill:var(--blue);stroke:none\"/><text x=\"96\" y=\"60.2\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px\">0.2670</text><text x=\"96\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">1</text><rect x=\"125\" y=\"52.9\" width=\"30\" height=\"107.1\" style=\"fill:var(--blue);stroke:none\"/><text x=\"140\" y=\"44.9\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px\">0.3115</text><text x=\"140\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">2</text><rect x=\"169\" y=\"88.6\" width=\"30\" height=\"71.4\" style=\"fill:var(--surface-2);stroke:var(--ink-3);stroke-width:1.5\"/><text x=\"184\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">3</text><rect x=\"213\" y=\"130.3\" width=\"30\" height=\"29.7\" style=\"fill:var(--surface-2);stroke:var(--ink-3);stroke-width:1.5\"/><text x=\"228\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">4</text><rect x=\"257\" y=\"152.1\" width=\"30\" height=\"7.9\" style=\"fill:var(--surface-2);stroke:var(--ink-3);stroke-width:1.5\"/><text x=\"272\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">5</text><rect x=\"301\" y=\"158.7\" width=\"30\" height=\"1.3\" style=\"fill:var(--surface-2);stroke:var(--ink-3);stroke-width:1.5\"/><text x=\"316\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">6</text><rect x=\"345\" y=\"159.9\" width=\"30\" height=\"0.1\" style=\"fill:var(--surface-2);stroke:var(--ink-3);stroke-width:1.5\"/><text x=\"360\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">7</text><rect x=\"389\" y=\"160\" width=\"30\" height=\"0\" style=\"fill:var(--surface-2);stroke:var(--ink-3);stroke-width:1.5\"/><text x=\"404\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">8</text><text x=\"20\" y=\"200\" style=\"fill:var(--blue);font-size:13.5px;font-weight:700\">P(X ≤ 2) = f(0) + f(1) + f(2) = 0.6785</text><text x=\"20\" y=\"222\" style=\"fill:var(--ink);font-size:13.5px\">P(X ≥ 3) = 1 − 0.6785 = 0.3215</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">In Excel, BINOM.DIST(2, 8, 0.25, TRUE) returns the shaded total; for 'at least 3' take 1 minus it rather than adding six bars.</figcaption></figure><!--/viz:sfm-binomial-cumulative--><!--viz:sfm-poisson-shapes--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three Poisson distributions. μ = 1 is tallest at 0 and 1 (0.368) with a long right tail; μ = 3 peaks at 2 and 3 (0.224); μ = 7 is wider and nearly symmetric, peaking at 6 and 7 (0.149).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">As μ grows the Poisson spreads and evens out</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 200\" role=\"img\" aria-label=\"Three Poisson distributions. μ = 1 is tallest at 0 and 1 (0.368) with a long right tail; μ = 3 peaks at 2 and 3 (0.224); μ = 7 is wider and nearly symmetric, peaking at 6 and 7 (0.149).\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><rect x=\"15\" y=\"53.2\" width=\"6.5\" height=\"96.8\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"23.5\" y=\"53.2\" width=\"6.5\" height=\"96.8\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"32.1\" y=\"101.6\" width=\"6.5\" height=\"48.4\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"40.6\" y=\"133.9\" width=\"6.5\" height=\"16.1\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"49.1\" y=\"146\" width=\"6.5\" height=\"4\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"57.7\" y=\"149.2\" width=\"6.5\" height=\"0.8\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"66.2\" y=\"149.9\" width=\"6.5\" height=\"0.1\" style=\"fill:var(--blue);stroke:none\"/><path d=\"M12,150 L144,150\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"18.3\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><text x=\"78\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">7</text><text x=\"137.7\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">14</text><text x=\"78\" y=\"26\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">μ = 1</text><text x=\"78\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">strong right skew</text><rect x=\"157\" y=\"136.9\" width=\"6.5\" height=\"13.1\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"165.5\" y=\"110.7\" width=\"6.5\" height=\"39.3\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"174.1\" y=\"91\" width=\"6.5\" height=\"59\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"182.6\" y=\"91\" width=\"6.5\" height=\"59\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"191.1\" y=\"105.8\" width=\"6.5\" height=\"44.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"199.7\" y=\"123.5\" width=\"6.5\" height=\"26.5\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"208.2\" y=\"136.7\" width=\"6.5\" height=\"13.3\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"216.7\" y=\"144.3\" width=\"6.5\" height=\"5.7\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"225.3\" y=\"147.9\" width=\"6.5\" height=\"2.1\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"233.8\" y=\"149.3\" width=\"6.5\" height=\"0.7\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"242.3\" y=\"149.8\" width=\"6.5\" height=\"0.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"250.9\" y=\"149.9\" width=\"6.5\" height=\"0.1\" style=\"fill:var(--blue);stroke:none\"/><path d=\"M154,150 L286,150\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"160.3\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><text x=\"220\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">7</text><text x=\"279.7\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">14</text><text x=\"220\" y=\"26\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">μ = 3</text><text x=\"220\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">milder skew</text><rect x=\"299\" y=\"149.8\" width=\"6.5\" height=\"0.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"307.5\" y=\"148.3\" width=\"6.5\" height=\"1.7\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"316.1\" y=\"144.1\" width=\"6.5\" height=\"5.9\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"324.6\" y=\"136.3\" width=\"6.5\" height=\"13.7\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"333.1\" y=\"126\" width=\"6.5\" height=\"24\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"341.7\" y=\"116.4\" width=\"6.5\" height=\"33.6\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"350.2\" y=\"110.8\" width=\"6.5\" height=\"39.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"358.7\" y=\"110.8\" width=\"6.5\" height=\"39.2\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"367.3\" y=\"115.7\" width=\"6.5\" height=\"34.3\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"375.8\" y=\"123.3\" width=\"6.5\" height=\"26.7\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"384.3\" y=\"131.3\" width=\"6.5\" height=\"18.7\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"392.9\" y=\"138.1\" width=\"6.5\" height=\"11.9\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"401.4\" y=\"143.1\" width=\"6.5\" height=\"6.9\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"409.9\" y=\"146.3\" width=\"6.5\" height=\"3.7\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"418.5\" y=\"148.1\" width=\"6.5\" height=\"1.9\" style=\"fill:var(--blue);stroke:none\"/><path d=\"M296,150 L428,150\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"302.3\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><text x=\"362\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">7</text><text x=\"421.7\" y=\"167\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">14</text><text x=\"362\" y=\"26\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">μ = 7</text><text x=\"362\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">near symmetric</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Mean and variance are both μ, so a bigger μ moves the peak right and widens it at the same time (σ = √μ).</figcaption></figure><!--/viz:sfm-poisson-shapes--><p><strong>Random variable: discrete or continuous</strong> — A random variable attaches a number to every experimental outcome; even yes/no outcomes can be coded (1 = recalled the ad, 0 = did not). It is discrete if its values can be listed — a finite list or an endless sequence 0, 1, 2, … — and continuous if it can take any value in an interval. Quick test: if every point on the line segment between two possible values is also possible, the variable is continuous.<br><em>e.g.</em> Number of loan applications approved today is discrete; time to approve one application is continuous.</p><p><strong>Probability function and its two conditions</strong> — For a discrete random variable, the probability function f(x) gives the probability of each value. Any valid f(x) must be non-negative for every x and must sum to exactly 1 across all values. Once f(x) is known, probabilities of events such as 'three or more' are found by adding the relevant f(x) values.<br><span style=\"font-family:var(--mono)\">f(x) ≥ 0 for all x;  Σ f(x) = 1</span></p><p><strong>Building a tabular distribution</strong> — The classical method applies when values are equally likely, the subjective method uses an expert's judgement, and the relative-frequency method uses historical counts. Relative frequencies from a large data set give an empirical discrete distribution — increasingly common with scanner, card and app data. The discrete uniform distribution is the simplest formula-based case: every one of n values has probability 1/n.<br><span style=\"font-family:var(--mono)\">Discrete uniform: f(x) = 1/n</span></p><p><strong>Expected value</strong> — The expected value is a probability-weighted average of the values of x and measures the centre of the distribution. It is a long-run average, not a prediction for any single trial, and need not be a value x can actually take. Multiplying by the number of periods turns it into a forecast total.<br><span style=\"font-family:var(--mono)\">E(x) = μ = Σ x·f(x)</span><br><em>e.g.</em> If E(x) = 1.95 scooters a day, a 30-day month is forecast at 30 × 1.95 = 58.5 scooters.</p><p><strong>Variance and standard deviation of a random variable</strong> — Variance is the probability-weighted average of squared deviations from μ; the standard deviation is its positive square root and is in the same units as x, which is why it is easier to interpret. An algebraically equivalent shortcut is E(x²) − μ², handy on a calculator.<br><span style=\"font-family:var(--mono)\">Var(x) = σ² = Σ (x − μ)²·f(x) = Σ x²f(x) − μ²;  σ = √σ²</span></p><p><strong>The binomial experiment</strong> — Four properties: (1) a fixed number n of identical trials; (2) two outcomes per trial, success or failure; (3) the success probability p stays the same on every trial — the stationarity assumption; (4) trials are independent. Properties 2–4 alone describe a Bernoulli process; adding a fixed n makes it a binomial experiment. Stationarity and independence are different: a tiring salesperson whose success rate drops breaks stationarity even if customers decide independently.</p><p><strong>Binomial probability function</strong> — Every particular sequence with x successes and n − x failures has probability pˣ(1 − p)ⁿ⁻ˣ, and the combination term counts how many such sequences exist. Multiplying the two gives the probability of exactly x successes. For 'at least one' it is quicker to compute 1 − f(0).<br><span style=\"font-family:var(--mono)\">f(x) = [n! / (x!(n − x)!)] · pˣ · (1 − p)ⁿ⁻ˣ,  x = 0, 1, …, n</span></p><p><strong>Binomial mean, variance and tables</strong> — For a binomial variable the general formulas collapse to np and np(1 − p). Tables list f(x) for chosen n and p; if a table stops at p = 0.50, find P(x successes) with p &gt; 0.5 by looking up n − x successes at probability 1 − p. With a cumulative table, an individual probability is a difference: f(x) = P(≤ x) − P(≤ x − 1).<br><span style=\"font-family:var(--mono)\">E(x) = np;  Var(x) = np(1 − p)</span><br><em>e.g.</em> 1000 shoppers with p = 0.3: expect 300 buyers, σ = √210 = 14.49.</p><p><strong>Poisson distribution</strong> — Models the number of occurrences in an interval of time or space when any two intervals of equal length carry the same probability of an occurrence and occurrences in separate intervals are independent. There is no upper limit on x. Its only parameter is μ, the mean number of occurrences in the interval — which must first be rescaled to the interval asked about.<br><span style=\"font-family:var(--mono)\">f(x) = μˣ e^(−μ) / x!,  x = 0, 1, 2, …</span><br><em>e.g.</em> 12 ATM customers an hour → μ = 2 for a 10-minute window.</p><p><strong>Poisson mean equals variance</strong> — A Poisson variable has variance equal to its mean, so its standard deviation is √μ. This is a quick check on whether count data might be Poisson: if the observed variance is far from the mean, the model is doubtful.<br><span style=\"font-family:var(--mono)\">E(x) = Var(x) = μ;  σ = √μ</span></p><p><strong>Hypergeometric distribution (lower priority)</strong> — Used when n items are drawn without replacement from a small population of N items, r of which are successes. Because each draw changes what remains, trials are not independent and the success probability changes — so the binomial does not apply. When N is large relative to n, the hypergeometric is well approximated by a binomial with p = r/N.<br><span style=\"font-family:var(--mono)\">f(x) = [C(r, x) · C(N − r, n − x)] / C(N, n);  E(x) = n(r/N);  Var(x) = n(r/N)(1 − r/N)(N − n)/(N − 1)</span></p><p><strong>Excel functions for discrete distributions</strong> — BINOM.DIST(x, n, p, cumulative), POISSON.DIST(x, mean, cumulative) and HYPGEOM.DIST compute these probabilities. The last argument FALSE returns P(exactly x); TRUE returns the cumulative P(x or fewer).<br><em>e.g.</em> =BINOM.DIST(4,10,0.3,FALSE) returns 0.2001.</p><div class=\"card\"><strong>Case: Voter waiting times</strong> <em>(Statistics in Practice: Voter Waiting Times in Elections)</em><p>Researchers modelling queues at US polling stations found that voter arrivals per minute follow a Poisson distribution. Feeding the Poisson arrival probabilities into queueing models let them estimate waiting times and recommend how many voting machines each location needs.</p><p><em>Lesson:</em> Poisson models counts of arrivals per interval; those probabilities feed capacity decisions.</p><p><em>Think:</em> If a booth averages 2 arrivals a minute, what is the mean number of arrivals in 5 minutes, and what are the variance and standard deviation of that count?</p></div><div class=\"card\"><strong>Case: Go Bananas! shutdown rule</strong> <em>(Case Problem 1: Go Bananas! Breakfast Cereal)</em><p>A cereal maker samples a fixed number of boxes each week and counts those whose marshmallow content falls outside the acceptable range. Production stops if too many fail. With a known failure rate when the process works, the binomial distribution shows how often a healthy line would be shut down needlessly.</p><p><em>Lesson:</em> Binomial probabilities let managers set a decision threshold that controls false alarms.</p><p><em>Think:</em> Raising the shutdown threshold from 5 failures to 6 does what to the chance of stopping a healthy line, and what is the cost of that change?</p></div><details><summary>Worked problem: Expected daily sales and spread</summary><p>A two-wheeler showroom in Jaipur records daily scooter sales x with f(0) = 0.10, f(1) = 0.25, f(2) = 0.35, f(3) = 0.20, f(4) = 0.10. Find the expected sales per day, the standard deviation, and P(3 or more sales).</p><ol><li>Check validity: all f(x) ≥ 0 and 0.10 + 0.25 + 0.35 + 0.20 + 0.10 = 1.</li><li>E(x) = 0(0.10) + 1(0.25) + 2(0.35) + 3(0.20) + 4(0.10) = 0 + 0.25 + 0.70 + 0.60 + 0.40 = 1.95.</li><li>E(x²) = 0 + 1(0.25) + 4(0.35) + 9(0.20) + 16(0.10) = 0.25 + 1.40 + 1.80 + 1.60 = 5.05.</li><li>Var(x) = E(x²) − μ² = 5.05 − 1.95² = 5.05 − 3.8025 = 1.2475; σ = √1.2475 = 1.117.</li><li>P(x ≥ 3) = f(3) + f(4) = 0.20 + 0.10 = 0.30.</li></ol><p><strong>Answer:</strong> E(x) = 1.95 scooters a day; σ ≈ 1.12 scooters; P(3 or more) = 0.30.</p></details><details><summary>Worked problem: Cold-call conversions (binomial)</summary><p>At a Bengaluru insurance call centre 20% of cold calls convert, independently. An agent makes 8 calls. Find P(exactly 2 conversions), P(at least 1 conversion), and the mean and standard deviation of conversions.</p><ol><li>Check the four properties: n = 8 fixed trials, convert/not, p = 0.20 constant, independent calls — binomial.</li><li>P(x = 2) = [8!/(2!6!)] (0.2)² (0.8)⁶ = 28 × 0.04 × 0.262144 = 0.2936.</li><li>P(x = 0) = (0.8)⁸ = 0.1678, so P(x ≥ 1) = 1 − 0.1678 = 0.8322.</li><li>E(x) = np = 8 × 0.2 = 1.6; Var(x) = np(1 − p) = 8 × 0.2 × 0.8 = 1.28; σ = √1.28 = 1.131.</li></ol><p><strong>Answer:</strong> P(2) ≈ 0.2936; P(at least 1) ≈ 0.8322; mean 1.6 conversions, σ ≈ 1.13.</p></details><details><summary>Worked problem: ATM arrivals (Poisson with rescaling)</summary><p>A Pune bank ATM averages 12 customers an hour, with arrivals meeting the Poisson conditions. Find P(exactly 2 customers in a 10-minute window), P(no customer in 10 minutes), and P(at least 3 customers in 15 minutes).</p><ol><li>Rescale: 12 per hour = 0.2 per minute, so μ = 2 for 10 minutes and μ = 3 for 15 minutes.</li><li>P(x = 2 | μ = 2) = 2² e⁻² / 2! = 4 × 0.135335 / 2 = 0.2707.</li><li>P(x = 0 | μ = 2) = e⁻² = 0.1353.</li><li>P(x ≤ 2 | μ = 3) = e⁻³(1 + 3 + 9/2) = 0.049787 × 8.5 = 0.4232.</li><li>P(x ≥ 3 | μ = 3) = 1 − 0.4232 = 0.5768.</li></ol><p><strong>Answer:</strong> P(2 in 10 min) ≈ 0.2707; P(none in 10 min) ≈ 0.1353; P(at least 3 in 15 min) ≈ 0.5768.</p></details><div class=\"def\"><b>Book vs lecture — Software for distribution probabilities.</b> Book: Shows JMP and Excel only: BINOM.DIST, POISSON.DIST and HYPGEOM.DIST, last argument FALSE for P(x = k), TRUE for P(x ≤ k). Lecture: The course teaches Excel and R (Live Lecture 1). In R the same probabilities come from dbinom/pbinom and dpois/ppois (d = exactly, p = cumulative). <b>Know the Excel argument order (x, n, p, cumulative) for the quiz; if an R question appears, d… is the exact probability and p… is cumulative ≤ x.</b></div><div class=\"def\"><b>Book vs lecture — Notation for the probability function.</b> Book: Lower-case x for the random variable and f(x) for its probability; requires f(x) ≥ 0 and Σf(x) = 1. Lecture: The hub notes write E(X), P(x) ≥ 0 and Σf(x) = 1, mixing capital X and P(x) with f(x). <b>Same mathematics. Read X/x and P(x)/f(x) as interchangeable in quiz options.</b></div><div class=\"def\"><b>Book vs lecture — Coverage of hypergeometric and bivariate distributions.</b> Book: Sections 5.4 (bivariate distributions, covariance, portfolios) and 5.7 (hypergeometric) are full sections. Lecture: The lecture record for Lectures 10–11 covers random variables, expected value, binomial and Poisson only; the official outline names binomial and Poisson. <b>Binomial and Poisson come first, but don't skip the rest: the lecturer's Chapter 5 practice set (9 Oct 2026) gives 5 of its 15 questions to the hypergeometric, bivariate covariance and portfolio return/standard deviation. Practise those calculations too.</b></div>"
     },
     {
      "t": "Textbook: Continuous Probability Distributions",
@@ -1311,6 +1336,202 @@ HUB.addCourse({
    "p": "The expected answer is 'approximately normal' because n ≥ 30. The lecture also warns that a highly skewed population may need about 50, so 45 is acceptable but not comfortable.",
    "f": "30 usual, 50 if skewed",
    "lec": 20
+  },
+  {
+   "id": "sfm-t0114",
+   "h": "Pie angles: divide by every response, then multiply by 360",
+   "p": "With 58 Yes, 42 No and 20 no opinion, the Yes slice is 58/120 × 360° = 174°. Dividing by 100 (Yes + No only) gives 208.8°, and the three slices then add to more than 360°. Multiplying the share by 100 gives a percentage (48.3%), not an angle.",
+   "f": "angle = (count ÷ all n) × 360°",
+   "lec": 4
+  },
+  {
+   "id": "sfm-t0115",
+   "h": "A value on a class limit belongs to exactly one class",
+   "p": "With PPG classes of width 2, a player on 18.0 goes in 18.0–19.9, not 16.0–17.9 as well. Write limits as 16.0–17.9, 18.0–19.9 so no value can sit in two classes; the counts must still add to n.",
+   "f": "each value in exactly one class",
+   "lec": 4
+  },
+  {
+   "id": "sfm-t0116",
+   "h": "‘9 or less’ is a cumulative figure, ‘at least 20’ is its complement",
+   "p": "‘9 minutes or less’ is the cumulative relative frequency up to the 5–9 class (0.60), not the 5–9 class alone (0.40). ‘At least 20 points’ is 100% minus the cumulative % up to 19.9 (100% − 78% = 22%), not the 20.0–21.9 class alone (8%).",
+   "f": "≤ x: cumulative; ≥ x: 1 − cumulative below x",
+   "lec": 4
+  },
+  {
+   "id": "sfm-t0117",
+   "h": "Leaf unit 10 drops the units digit",
+   "p": "With a leaf unit of 10, 1,478 is shown as 14 | 7 (it stands for about 1,470). Writing 14 | 78 uses a leaf unit of 1 with two-digit leaves, which is not allowed. The textbook truncates; if you round instead (14 | 8), say so.",
+   "f": "leaf = one digit only",
+   "lec": 4
+  },
+  {
+   "id": "sfm-t0118",
+   "h": "Row percentages divide by the row total",
+   "p": "In Q13, the share of Low answers that are Yes is 20/30 = 66.7%. 20/55 = 36.4% divides by the Yes column total and answers a different question (what share of Yes answers came from Low). Match the direction you divide to the question you interpret.",
+   "f": "row % → read along the row",
+   "lec": 4
+  },
+  {
+   "id": "sfm-t0119",
+   "h": "A combined rate is not the average of the subgroup rates, and it can reverse them",
+   "p": "Fealey hits .375 and .300 in her two years but .310 combined, not .338, because 250 of her 290 at-bats came in the weaker year. Weighting by unequal group sizes can make the player who is better in every year look worse in total (Simpson's paradox). Compare like with like before deciding.",
+   "f": "check the subgroups before trusting the total",
+   "lec": 4
+  },
+  {
+   "id": "sfm-t0120",
+   "h": "A percentile location such as 9.6 is a position, not the answer",
+   "p": "L = (p/100)(n + 1) says where to look in the sorted data. For the sheet's 80th percentile of 11 delivery times, L = 9.6: take the 9th value (34) plus 0.6 of the gap to the 10th (38), giving 36.4 minutes.",
+   "f": "L is a position; interpolate",
+   "lec": 6
+  },
+  {
+   "id": "sfm-t0121",
+   "h": "Quartiles from the 'median of each half' shortcut are not the lecture's method",
+   "p": "For 8, 10, 12, 12, 15, 17, 20, 21 the halves give Q1 = 11 and Q3 = 18.5 (IQR 7.5); Excel's QUARTILE.INC gives 11.5 and 17.75. The (n + 1) method taught in L#5 gives 10.5 and 19.25 (IQR 8.75). Expect the other answers among the wrong options.",
+   "f": "quartiles: (n + 1), then interpolate",
+   "lec": 6
+  },
+  {
+   "id": "sfm-t0122",
+   "h": "Exceeding a 10-minute target does not include a call of exactly 10 minutes",
+   "p": "In the sheet's help-desk question the times above 10 are 12, 14 and 15: 3 of 10 = 30%. Counting the 10-minute call gives 40%, which answers a different question ('10 minutes or more').",
+   "f": "exceeds = strictly above",
+   "lec": 6
+  },
+  {
+   "id": "sfm-t0123",
+   "h": "Below z = 2 is about 97.5% by the empirical rule, not 95%",
+   "p": "95% is the share within ±2σ. The 5% outside splits into 2.5% per tail, so 97.5% lies below μ + 2σ and 2.5% above. The normal table gives 97.72% and 2.28%; use the empirical figures when the question names the empirical rule.",
+   "f": "95 inside, 2.5 each tail",
+   "lec": 6
+  },
+  {
+   "id": "sfm-t0124",
+   "h": "A negative lower limit in a box plot is not an error",
+   "p": "For the sheet's delivery times the lower limit is 17.25 − 1.5 × 13.25 = −2.625. Times cannot be negative, so there simply cannot be a low outlier. The whisker still ends at the smallest data value, 12, not at the limit.",
+   "f": "limit ≠ whisker end",
+   "lec": 6
+  },
+  {
+   "id": "sfm-t0125",
+   "h": "A trimmed-mean percentage comes off each end",
+   "p": "A 10% trimmed mean of 10 values drops 1 value at the bottom and 1 at the top (2 in all), not 10% split across both ends. On the sheet that leaves eight values and 189/8 = 23.625 minutes.",
+   "f": "x% off each end",
+   "lec": 6
+  },
+  {
+   "id": "sfm-t0126",
+   "h": "The most likely source of a late flight comes from the joint probabilities, not the late rates",
+   "p": "On the Chapter 4 sheet, late rates 0.22, 0.28, 0.12 with shares 0.25, 0.35, 0.40 give joints 0.055, 0.098, 0.048, so Airline 2 (posterior 0.488). Airline 1 beats the bigger Airline 3 only because its rate is much higher. With shares 50/30/20 and late rates 6/9/12%, the lowest-rate courier is the most likely source.",
+   "f": "weigh the rate by the share",
+   "lec": 9
+  },
+  {
+   "id": "sfm-t0127",
+   "h": "‘Of the daily subscribers, 70% also take Sunday’ is a conditional probability, not the joint",
+   "p": "P(Sunday | daily) = 0.70. The probability of both is 0.82 × 0.70 = 0.574. Answering 0.70 describes only the daily subscribers, not all households.",
+   "f": "‘of those’ = given",
+   "lec": 9
+  },
+  {
+   "id": "sfm-t0128",
+   "h": "Two dice have 36 equally likely ordered outcomes, not 11 equally likely sums",
+   "p": "(3,4) and (4,3) are different outcomes. P(sum = 7) = 6/36 = 1/6, while P(sum = 12) = 1/36. Treating the sums 2 to 12 as equally likely gives 1/11 for every sum, which is wrong.",
+   "f": "count ordered pairs",
+   "lec": 9
+  },
+  {
+   "id": "sfm-t0129",
+   "h": "‘X but not Y’ subtracts the overlap, not the whole of Y",
+   "p": "P(X ∩ Y′) = P(X) − P(X ∩ Y) = 0.42 − 0.12 = 0.30 on the sheet. P(X) − P(Y) = 0.12 has no meaning, because many Y buyers never bought X.",
+   "f": "P(X) − P(X ∩ Y)",
+   "lec": 9
+  },
+  {
+   "id": "sfm-t0130",
+   "h": "In P(A | B), the denominator is the total for B, the event after the bar",
+   "p": "P(Engineering | full-time) = 197/800 = 0.246, using the full-time total. 197/358 = 0.550 is the reverse, P(full-time | Engineering), and 197/1,305 = 0.151 is the joint probability.",
+   "f": "denominator = the given",
+   "lec": 9
+  },
+  {
+   "id": "sfm-t0131",
+   "h": "0.22% is 0.0022: convert small percentages carefully in Bayes",
+   "p": "With the spam likelihood 0.045 and 0.0022 for legitimate mail, P(spam | word) = 0.0045/(0.0045 + 0.00198) = 0.694. Writing 0.022 instead gives 0.0045/(0.0045 + 0.0198) = 0.185.",
+   "f": "% ÷ 100, every time",
+   "lec": 9
+  },
+  {
+   "id": "sfm-t0132",
+   "h": "‘At least 4’ is 1 − P(X ≤ 3), not 1 − P(X ≤ 4)",
+   "p": "In the sheet's Q10 (n = 10, p = 0.30), 1 − P(X ≤ 3) = 0.3504. Subtracting P(X ≤ 4) gives 0.1503, which is P(X ≥ 5). The value named in ‘at least k’ is part of the event, so the complement stops at k − 1.",
+   "f": "at least k → 1 − P(≤ k − 1)",
+   "lec": 11
+  },
+  {
+   "id": "sfm-t0133",
+   "h": "Portfolio SD: put the SDs and the covariance in the same units",
+   "p": "The sheet's Q15 gives SDs as 10% and 6% but the covariance as 0.0024 (a decimal). Use 0.10, 0.06 and 0.0024 (or 10, 6 and 24 in %²): the SD is 7.89%. Mixing 10, 6 and 0.0024 gives 7.23%. Check: ρ = σxy/(σxσy) should land between −1 and +1.",
+   "f": "decimals with decimals",
+   "lec": 11
+  },
+  {
+   "id": "sfm-t0134",
+   "h": "A portfolio's SD is not the weighted average of the two SDs",
+   "p": "Expected returns combine as a weighted average; risk does not. In Q15 the weighted average of the SDs is 8.8%, but the true SD is 7.89% because the correlation (0.40) is below +1. Only perfectly correlated assets give the weighted average.",
+   "f": "returns average, risk doesn't",
+   "lec": 11
+  },
+  {
+   "id": "sfm-t0135",
+   "h": "The covariance of a probability distribution has no n − 1",
+   "p": "The L#7 sample covariance divides by n − 1. For a joint probability distribution (the sheet's Q8) each product of deviations is weighted by its probability f(x, y) and simply summed: −135.34 for the stock and bond funds.",
+   "f": "probabilities are the weights",
+   "lec": 11
+  },
+  {
+   "id": "sfm-t0136",
+   "h": "E(X²) is not the variance until you subtract μ²",
+   "p": "In the sheet's Q2, Σx²f(x) = 8.30, but Var(X) = 8.30 − 2.70² = 1.01. Quoting 8.30, or its root, as the spread is a common slip with the shortcut formula.",
+   "f": "Var = E(X²) − μ²",
+   "lec": 11
+  },
+  {
+   "id": "sfm-t0137",
+   "h": "In a uniform timetable question, ‘late’ is measured from the quoted time, not from the start of the range",
+   "p": "Flight times uniform on 120–140 minutes with a quoted 125: ‘no more than 5 minutes late’ is x ≤ 130 (0.50), and ‘more than 10 minutes late’ is x > 135 (0.25). Counting from 120 swaps the two answers.",
+   "f": "late = after the quoted time",
+   "lec": 14
+  },
+  {
+   "id": "sfm-t0138",
+   "h": "An area between 0 and z is not a cumulative area: add 0.5 before using the table",
+   "p": "The course table gives P(Z ≤ z). An area of 0.4750 between 0 and z means a left area of 0.9750, so z = 1.96. Looking up 0.4750 directly gives about −0.06.",
+   "f": "0-to-z area + 0.5",
+   "lec": 14
+  },
+  {
+   "id": "sfm-t0139",
+   "h": "A Poisson rate must be inverted, and put in the asked unit, before it is an exponential mean",
+   "p": "1.6 calls an hour means a mean gap of 1/1.6 = 0.625 hour = 37.5 minutes, so P(gap < 60 min) = 1 − e^(−60/37.5). Using 1.6 or 0.625 as a mean in minutes gives nonsense.",
+   "f": "rate λ → mean 1/λ",
+   "lec": 14
+  },
+  {
+   "id": "sfm-t0140",
+   "h": "Before a normal approximation, check n(1 − p) as well as np",
+   "p": "With n = 100 and p = 0.97, np = 97 looks safe but n(1 − p) = 3 fails. The approximation gives 0.9292 for P(at least 95) while the exact binomial is 0.9192.",
+   "f": "both np and n(1 − p) ≥ 5",
+   "lec": 14
+  },
+  {
+   "id": "sfm-t0141",
+   "h": "With the normal approximation, ‘exactly k’ is not zero",
+   "p": "The count is discrete, so ‘exactly 24’ becomes the strip 23.5 to 24.5 under the normal curve (≈ 0.0602 for n = 100, p = 0.20). The ‘single point = 0’ rule is for genuinely continuous variables.",
+   "f": "exactly k → k ± 0.5",
+   "lec": 14
   }
  ],
  "defs": [
@@ -2168,6 +2389,62 @@ HUB.addCourse({
    "term": "Sampling fraction",
    "html": "<b>Sampling fraction</b> = n/N, the share of a finite population that is in the sample. If it is 0.05 or more, multiply σ/√n by the finite population correction √[(N − n)/(N − 1)].",
    "lec": 20
+  },
+  {
+   "id": "sfm-d0109",
+   "unit": "summarise",
+   "topic": "Practice questions from the lecturer: Chapter 2",
+   "term": "Row percentage",
+   "html": "<b>Row percentage</b> = cell count ÷ its row total × 100. Each row then sums to 100%, so rows of different sizes can be compared; read the result along the row.",
+   "lec": 4
+  },
+  {
+   "id": "sfm-d0110",
+   "unit": "summarise",
+   "topic": "Practice questions from the lecturer: Chapter 2",
+   "term": "Side-by-side bar chart",
+   "html": "<b>Side-by-side bar chart</b>: one cluster of bars for each category of one variable, with a bar for each category of the second variable inside the cluster. Used to compare the second variable across the groups of the first.",
+   "lec": 4
+  },
+  {
+   "id": "sfm-d0111",
+   "unit": "location",
+   "topic": "Percentiles and quartiles",
+   "term": "Interpolating a percentile",
+   "html": "<b>Interpolating a percentile</b>: when L = (p/100)(n + 1) is not a whole number, take the value at the whole-number part of L and add the decimal part times the gap to the next value. L = 9.6 in 14, 17, …, 34, 38, 42 gives 34 + 0.6 × (38 − 34) = 36.4.",
+   "lec": 6
+  },
+  {
+   "id": "sfm-d0112",
+   "unit": "prob2",
+   "topic": "Practice questions from the lecturer: Chapter 4",
+   "term": "Law of total probability",
+   "html": "<b>Law of total probability</b>: if A₁ … Aₙ are mutually exclusive and together cover the sample space, P(B) = P(A₁)P(B | A₁) + … + P(Aₙ)P(B | Aₙ). It is the sum of the joint column in a Bayes table and the denominator of Bayes' theorem (e.g. P(on time) = 0.799 on the Chapter 4 sheet).",
+   "lec": 9
+  },
+  {
+   "id": "sfm-d0113",
+   "unit": "dists",
+   "topic": "Practice questions from the lecturer: Chapter 5",
+   "term": "Covariance of two random variables",
+   "html": "<b>Covariance of two random variables</b> (from a joint distribution): σxy = Σ(x − μx)(y − μy)·f(x, y) = E(XY) − μxμy. Each product is weighted by the scenario's probability; there is no n − 1.",
+   "lec": 11
+  },
+  {
+   "id": "sfm-d0114",
+   "unit": "dists",
+   "topic": "Practice questions from the lecturer: Chapter 5",
+   "term": "Portfolio variance",
+   "html": "<b>Portfolio variance</b> for weights a and b: Var(aX + bY) = a²σx² + b²σy² + 2abσxy. Its square root is the portfolio SD, which is below the weighted average of the two SDs unless the correlation is +1.",
+   "lec": 11
+  },
+  {
+   "id": "sfm-d0115",
+   "unit": "dists",
+   "topic": "Practice questions from the lecturer: Chapter 6",
+   "term": "Mean time between occurrences",
+   "html": "<b>Mean time between occurrences</b> = 1/λ when a Poisson process averages λ occurrences per unit of time. It is the μ of the matching exponential distribution: 1.6 calls an hour gives a mean gap of 37.5 minutes.",
+   "lec": 14
   }
  ],
  "questions": [
@@ -8257,6 +8534,1162 @@ HUB.addCourse({
    "w": "E(p̂) = p = 0.30 and σp̂ = √(0.30 × 0.70/200) = 0.0324. 60 and 6.48 are the mean and standard deviation of the count of successes, not the proportion; 0.00105 is the variance; 0.458 forgets to divide by n.",
    "lec": 20,
    "lv": "apply"
+  },
+  {
+   "id": "sfm-q0369",
+   "topic": "Summarising",
+   "q": "A relative frequency table has classes A (0.12), B (0.33), C (0.27) and D, whose value has been torn off. The sample size is 250. How many observations are in class D?",
+   "c": [
+    "0.28",
+    "28",
+    "70",
+    "180"
+   ],
+   "a": [
+    2
+   ],
+   "w": "D's relative frequency = 1 − (0.12 + 0.33 + 0.27) = 0.28, and frequency = 0.28 × 250 = 70. 0.28 is D's relative frequency, not its count; 180 = 0.72 × 250 is the count of the other three classes together.",
+   "lec": 4,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0370",
+   "topic": "Summarising",
+   "q": "150 students answer whether the canteen should open earlier: 66 agree, 54 disagree and 30 are not sure. In a pie chart of all three answers, how many degrees is the ‘agree’ slice?",
+   "c": [
+    "198°",
+    "158.4°",
+    "44°",
+    "66°"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Agree share = 66/150 = 0.44, and 0.44 × 360° = 158.4°. 198° divides by 120 (agree + disagree), leaving out the 30 not-sure students who are part of the sample; 44 is the percentage, not the angle.",
+   "lec": 4,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0371",
+   "topic": "Summarising",
+   "q": "Daily parcel counts at a Pune locker for 15 days are 12, 15, 19, 20, 14, 17, 22, 19, 24, 16, 21, 15, 10, 18, 23. Using classes 10–14, 15–19, 20–24, what is the frequency of the 15–19 class?",
+   "c": [
+    "3",
+    "5",
+    "8",
+    "7"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Count every value from 15 to 19 inclusive: 15, 19, 17, 19, 16, 15, 18 = 7. Both class limits belong to the class. 3 leaves out the values on the limits (15 and 19); 8 wrongly pulls in 20, which starts the next class.",
+   "lec": 4,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0372",
+   "topic": "Summarising",
+   "q": "Waiting times at a Jaipur passport help desk (n = 40): 0–9 min: 6, 10–19 min: 15, 20–29 min: 11, 30–39 min: 5, 40–49 min: 3. What proportion of visitors waited at least 20 minutes?",
+   "c": [
+    "0.275",
+    "0.525",
+    "0.475",
+    "0.80"
+   ],
+   "a": [
+    2
+   ],
+   "w": "At least 20 = the 20–29, 30–39 and 40–49 classes: (11 + 5 + 3)/40 = 19/40 = 0.475, or 1 − (6 + 15)/40. 0.275 counts only the 20–29 class; 0.525 is the share below 20, the complement of what was asked.",
+   "lec": 4,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0373",
+   "topic": "Summarising",
+   "q": "Monthly electricity bills (₹) are shown in a stem-and-leaf display with a leaf unit of 10 and stems in hundreds of rupees. Where does a bill of ₹3,462 go?",
+   "c": [
+    "Stem 34, leaf 6",
+    "Stem 3, leaf 4",
+    "Stem 346, leaf 2",
+    "Stem 34, leaf 62"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Leaf unit 10: drop the units digit (3,462 → 346), so the stem is 34 and the single leaf is the tens digit, 6. Stem 346, leaf 2 would be a leaf unit of 1; a leaf of 62 has two digits, which a stem-and-leaf display never uses.",
+   "lec": 4,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0374",
+   "topic": "Summarising",
+   "q": "A stem-and-leaf display of tea-estate rainfall (cm, leaf unit 0.1) reads: 4 | 2 6; 5 | 0 3 3 8; 6 | 1 4 7; 7 | 5. What percentage of the readings are 6.0 cm or more?",
+   "c": [
+    "30%",
+    "60%",
+    "50%",
+    "40%"
+   ],
+   "a": [
+    3
+   ],
+   "w": "There are 10 leaves. Readings of 6.0 or more are 6.1, 6.4, 6.7 and 7.5: 4 of 10 = 40%. 30% counts only the 6 row and forgets 7.5; 60% is the share below 6.0.",
+   "lec": 4,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0375",
+   "topic": "Summarising",
+   "q": "A broadband firm crosstabulates region against whether customers renewed: North 48 renewed, 12 did not (60); South 27 renewed, 63 did not (90); West 30 renewed, 20 did not (50). Renewed total = 105. What percentage of South customers renewed?",
+   "c": [
+    "25.7%",
+    "30%",
+    "13.5%",
+    "45%"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A row percentage divides by the row total: 27/90 = 30%. 25.7% = 27/105 divides by the renewed column total, which answers ‘what share of renewals came from the South’; 13.5% divides by the grand total of 200.",
+   "lec": 4,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0376",
+   "topic": "Summarising",
+   "q": "An online grocer tracks repeat purchases by discount offered: no discount, 120 repeat buyers out of 600; 5% discount, 90 out of 300; 10% discount, 50 out of 100. What does the table show?",
+   "c": [
+    "Repeat buying falls as the discount rises, since no-discount customers made the most repeat purchases",
+    "There is no relationship, because every group has some repeat buyers",
+    "The groups cannot be compared because their totals differ",
+    "The repeat-purchase rate rises with the discount: 20%, 30%, 50%"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Row percentages make the unequal groups comparable: 120/600 = 20%, 90/300 = 30%, 50/100 = 50%, rising with the discount. The ‘most repeat buyers’ reading compares raw counts from groups of very different sizes, which is exactly what row percentages fix.",
+   "lec": 4,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0377",
+   "topic": "Summarising",
+   "q": "A frequency distribution of monthly SIP amounts has class frequencies 3, 12, 18, 9, 4, 2, 1, 1 from the lowest class to the highest. How is the distribution best described?",
+   "c": [
+    "Skewed right",
+    "Skewed left",
+    "Symmetric",
+    "Uniform"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The peak is in the third class and the frequencies trail off slowly towards the higher classes: a long right tail, so skewed right. ‘Skewed left’ is the common mix-up of naming the skew after the side where the peak sits; skew is named after the long tail.",
+   "lec": 4,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0378",
+   "topic": "Summarising",
+   "q": "For an e-scooter, test rides give average speed (km/h) and range (km): (20, 62), (25, 58), (30, 55), (35, 50), (40, 44), (45, 41). In a scatter diagram with speed on the horizontal axis, what would a trendline show?",
+   "c": [
+    "An upward slope: a positive relationship",
+    "A downward slope: a negative relationship",
+    "A flat line: no relationship",
+    "Nothing, because a trendline needs categorical data"
+   ],
+   "a": [
+    1
+   ],
+   "w": "As speed rises from 20 to 45 km/h, range falls from 62 to 41 km, so the points run from top left to bottom right and the trendline slopes down. A positive relationship would need both variables to rise together.",
+   "lec": 4,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0379",
+   "topic": "Summarising",
+   "q": "Two kabaddi raiders: Raider R succeeds on 30 of 50 raids in the league stage and 40 of 100 in the playoffs; Raider S succeeds on 90 of 160 league raids and 7 of 20 playoff raids. Which statement is correct?",
+   "c": [
+    "S has the higher rate in both stages and overall",
+    "R's overall rate is 50%, the average of 60% and 40%, so R is ahead overall too",
+    "R is ahead in each stage (60% vs 56.3%, 40% vs 35%), but S is ahead overall (53.9% vs 46.7%)",
+    "Since S has the higher overall rate, S must be ahead in at least one stage"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Overall, R = 70/150 = 46.7% and S = 97/180 = 53.9%, yet R wins both stages: Simpson's paradox, because most of R's raids came in the harder playoffs. Averaging 60% and 40% ignores the unequal raid counts; and the last statement is exactly the intuition the paradox breaks.",
+   "lec": 4,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0380",
+   "topic": "Summarising",
+   "q": "In a pie chart of 200 survey responses, the ‘very satisfied’ slice is 81°. How many respondents were very satisfied?",
+   "c": [
+    "45",
+    "81",
+    "22.5",
+    "40"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Relative frequency = 81/360 = 0.225, and 0.225 × 200 = 45 respondents. 22.5 is the percentage, not the count; 81 treats the angle itself as a count.",
+   "lec": 4,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0381",
+   "topic": "Summarising",
+   "q": "Points-per-game data are grouped into classes of width 2 starting at 10 (10.0–11.9, 12.0–13.9, …). A player averaged exactly 18.0 points. Which class does he go in?",
+   "c": [
+    "16.0–17.9",
+    "Both 16.0–17.9 and 18.0–19.9",
+    "18.0–19.9",
+    "Neither; boundary values are left out"
+   ],
+   "a": [
+    2
+   ],
+   "w": "18.0 is the lower limit of 18.0–19.9, so it goes there and only there; classes must be mutually exclusive and cover every value. Counting it in both classes double-counts it, and the frequencies would then add to more than n.",
+   "lec": 4,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0382",
+   "topic": "Location",
+   "q": "A kirana store's sales on 13 days (₹ thousand), sorted: 18, 21, 23, 26, 27, 29, 31, 34, 36, 38, 41, 45, 50. Using the textbook's percentile method, what is the 30th percentile?",
+   "c": [
+    "26.6",
+    "26.2",
+    "25.7",
+    "4.2"
+   ],
+   "a": [
+    1
+   ],
+   "w": "L = (30/100)(13 + 1) = 4.2, so take the 4th value (26) plus 0.2 of the gap to the 5th (27): 26.2. 26.6 is Excel's PERCENTILE.INC answer (its location is 1 + 0.30 × 12 = 4.6); 25.7 uses np = 3.9 instead of (n + 1); 4.2 is the position, not the value.",
+   "lec": 6,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0383",
+   "topic": "Location",
+   "q": "Patients at a clinic waited 4, 9, 11, 12, 14, 15, 16, 18, 22 and 49 minutes. What is the 20% trimmed mean?",
+   "c": [
+    "14.63 minutes",
+    "17.0 minutes",
+    "14.33 minutes",
+    "12.38 minutes"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A 20% trimmed mean removes 20% of the values from each end: 0.20 × 10 = 2 at the bottom (4, 9) and 2 at the top (22, 49). The six left sum to 86, and 86/6 = 14.33. 14.63 drops only one value from each end (a 10% trimmed mean); 17.0 is the untrimmed mean, dragged up by 49; 12.38 trims only the top two.",
+   "lec": 6,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0384",
+   "topic": "Spread & shape",
+   "q": "A store's weekly product returns over eight weeks, sorted: 5, 7, 8, 10, 13, 15, 18, 24. Using the textbook's quartile method, what is the interquartile range?",
+   "c": [
+    "8",
+    "9",
+    "19",
+    "10"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Q1: L = 0.25 × 9 = 2.25 → 7 + 0.25 × (8 − 7) = 7.25. Q3: L = 0.75 × 9 = 6.75 → 15 + 0.75 × (18 − 15) = 17.25. IQR = 17.25 − 7.25 = 10. 9 comes from the medians of the two halves (7.5 and 16.5) and 8 from Excel's QUARTILE.INC (7.75 and 15.75), neither of which is the (n + 1) method; 19 is the range.",
+   "lec": 6,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0385",
+   "topic": "Spread & shape",
+   "q": "Ten households' monthly electricity bills (₹ hundred), sorted: 8, 14, 15, 17, 18, 19, 21, 22, 24, 37. Using the textbook's quartiles and the box-plot rule, which statement is correct?",
+   "c": [
+    "The upper limit is 34.125, so 37 is an outlier",
+    "The upper limit is 45.75, so 37 is not an outlier",
+    "The upper limit is 30.25, so 37 is an outlier",
+    "37 cannot be an outlier because the maximum is part of the five-number summary"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Q1: L = 2.75 → 14 + 0.75 × 1 = 14.75. Q3: L = 8.25 → 22 + 0.25 × 2 = 22.5. IQR = 7.75, so the upper limit is 22.5 + 1.5 × 7.75 = 34.125 and 37 lies above it (the lower limit, 3.125, clears 8). 45.75 uses a multiplier of 3, which belongs to the z-score rule; 30.25 uses 1 × IQR. The maximum stays in the five-number summary even when it is an outlier; the whisker then stops at 24.",
+   "lec": 6,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0386",
+   "topic": "Spread & shape",
+   "q": "Six values have a variance of 15 when they are treated as a whole population. What is their variance if the same six values are treated as a sample?",
+   "c": [
+    "12.5",
+    "15",
+    "18",
+    "3.87"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Both versions share Σ(x − x̄)² = 15 × 6 = 90. A sample divides by n − 1 = 5, so s² = 90/5 = 18; the sample variance is always the larger. 12.5 scales by 5/6, the wrong way round; 15 ignores the change of denominator; 3.87 is √15, a standard deviation.",
+   "lec": 6,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0387",
+   "topic": "Spread & shape",
+   "q": "A wholesaler's daily rice sales average 400 kg with standard deviation 60 kg; daily cooking-oil sales average 120 litres with standard deviation 24 litres. Which product's sales vary more relative to their size?",
+   "c": [
+    "Rice, because its standard deviation (60) is larger",
+    "Oil: CV 20% against 15% for rice",
+    "They cannot be compared because the units differ",
+    "Rice: CV 6.67 against 5.0 for oil"
+   ],
+   "a": [
+    1
+   ],
+   "w": "CV = s/x̄: rice 60/400 = 0.15 (15%), oil 24/120 = 0.20 (20%), so oil is relatively more variable. Comparing raw standard deviations ignores the different means and units, which is exactly the problem the CV solves; 6.67 and 5.0 are x̄/s, upside down.",
+   "lec": 6,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0388",
+   "topic": "Spread & shape",
+   "q": "Waiting times at a bank branch have mean 50 minutes and standard deviation 4 minutes; their distribution's shape is unknown. At least what percentage of customers wait between 41 and 59 minutes?",
+   "c": [
+    "75.0%",
+    "80.2%",
+    "95%",
+    "55.6%"
+   ],
+   "a": [
+    1
+   ],
+   "w": "k = (59 − 50)/4 = 2.25, so at least 1 − 1/2.25² = 1 − 1/5.0625 = 0.802, i.e. 80.2%. 75% rounds k down to 2; 95% is the empirical rule, which needs a bell shape the question does not give; 55.6% uses 1 − 1/k instead of 1 − 1/k².",
+   "lec": 6,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0389",
+   "topic": "Spread & shape",
+   "q": "Marks in an entrance test are bell-shaped with mean 60 and standard deviation 8. Using the empirical rule, roughly what percentage of candidates score above 76?",
+   "c": [
+    "5%",
+    "97.5%",
+    "16%",
+    "2.5%"
+   ],
+   "a": [
+    3
+   ],
+   "w": "z = (76 − 60)/8 = 2. About 95% lie within ±2 standard deviations (44 to 76); the 5% outside splits equally, so about 2.5% score above 76. 5% forgets to halve; 97.5% is the share below 76; 16% is the tail beyond one standard deviation. (The normal table gives 2.28%, which the empirical rule rounds to 2.5%.)",
+   "lec": 6,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0390",
+   "topic": "Spread & shape",
+   "q": "A bottling line's daily output is bell-shaped with mean 1,200 bottles and standard deviation 50. Using the empirical rule, roughly what percentage of days produce between 1,150 and 1,300 bottles?",
+   "c": [
+    "81.5%",
+    "95%",
+    "68%",
+    "47.5%"
+   ],
+   "a": [
+    0
+   ],
+   "w": "1,150 is one standard deviation below the mean and 1,300 two above. Half of 68% (34%) lies between −1 and 0, and half of 95% (47.5%) between 0 and +2: 34% + 47.5% = 81.5%. 95% and 68% each use a symmetric band for an interval that is not symmetric; 47.5% counts only the part above the mean.",
+   "lec": 6,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0391",
+   "topic": "Spread & shape",
+   "q": "In a district, farm incomes have mean ₹1.6 lakh and median ₹2.1 lakh. Which description fits best?",
+   "c": [
+    "Skewed right: a few very high incomes pull the mean up",
+    "Roughly symmetric, because the two figures are close",
+    "Skewed left: a few very low incomes pull the mean below the median",
+    "Skewed left, so the median lies below the mean"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Mean below median signals negative (left) skew: a tail of very low incomes drags the mean down. Right skew would put the mean above the median. 'Median below the mean' describes right skew, so it contradicts its own label; and a ₹0.5 lakh gap is too large to call symmetric.",
+   "lec": 6,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0392",
+   "topic": "Spread & shape",
+   "q": "A parcel's delivery time has a z-score of −1.5 within its courier's data. Which statement is correct?",
+   "c": [
+    "It took 1.5 minutes less than the average",
+    "It was 1.5 standard deviations quicker than the mean delivery time",
+    "It is an outlier, because its z-score is negative",
+    "It was 15% quicker than the average"
+   ],
+   "a": [
+    1
+   ],
+   "w": "z counts standard deviations from the mean, and a negative sign means below the mean, i.e. quicker. It is not in minutes or percent; converting needs s and x̄. An outlier needs |z| > 3; the sign only gives the direction.",
+   "lec": 6,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0393",
+   "topic": "Association",
+   "q": "A café's digital ad spend X (₹ thousand) over five months was 1, 2, 3, 4, 5, and its sales Y (₹ lakh) were 8, 11, 10, 15, 16. What is the sample covariance?",
+   "c": [
+    "4.0",
+    "20",
+    "0.93",
+    "5.0"
+   ],
+   "a": [
+    3
+   ],
+   "w": "x̄ = 3 and ȳ = 12. Deviation products: (−2)(−4) = 8, (−1)(−1) = 1, 0 × (−2) = 0, 1 × 3 = 3, 2 × 4 = 8; sum = 20. s_xy = 20/(5 − 1) = 5.0. 4.0 divides by n (the population covariance); 20 is the sum before dividing; 0.93 is the correlation coefficient.",
+   "lec": 6,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0394",
+   "topic": "Association",
+   "q": "Across 12 retail outlets, the sample covariance between distance from the city centre (km) and weekly footfall (hundreds) is −18, with s_x = 3 km and s_y = 7.5 hundred. What is r, and what does it say?",
+   "c": [
+    "−0.80: a strong negative linear association",
+    "−0.036: almost no association",
+    "+0.80: correlation is reported without its sign",
+    "−2.40: a very strong negative association"
+   ],
+   "a": [
+    0
+   ],
+   "w": "r = s_xy/(s_x × s_y) = −18/(3 × 7.5) = −18/22.5 = −0.80: outlets farther out tend to have lower footfall, quite consistently. −0.036 divides by the variances (9 × 56.25) instead of the standard deviations; −2.40 divides by s_y only and is impossible, since r always lies between −1 and +1; the sign carries the direction and must be kept.",
+   "lec": 6,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0395",
+   "topic": "Association",
+   "q": "Across six employees, r = 0.99 between hours of training and productivity score. Which conclusion is justified?",
+   "c": [
+    "Training causes productivity to rise",
+    "Productivity rises by 0.99 points for each extra training hour",
+    "There is a very strong positive linear association, though this alone does not show training causes the rise",
+    "99% of employees became more productive after training"
+   ],
+   "a": [
+    2
+   ],
+   "w": "r near +1 means the points lie close to an upward-sloping line. It measures association only: keener employees may both seek more training and work harder, so causation does not follow. r is not a slope (points per hour needs regression) and not a percentage of people.",
+   "lec": 6,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0396",
+   "topic": "Probability I",
+   "q": "A food-delivery app's checkout has three steps: pick one of 5 restaurants in the area, one of 4 delivery slots and one of 3 payment modes. How many different checkout outcomes are possible?",
+   "c": [
+    "12",
+    "60",
+    "20",
+    "10"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Counting rule: multiply the options at each step, 5 × 4 × 3 = 60. 12 adds the options instead of multiplying; 20 forgets the payment step; 10 is ⁵C₃, a combination formula that does not fit a multi-step experiment.",
+   "lec": 9,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0397",
+   "topic": "Probability I",
+   "q": "Two fair dice are rolled. What is the probability that the sum is 10 or more?",
+   "c": [
+    "1/6",
+    "3/11",
+    "4/21",
+    "1/9"
+   ],
+   "a": [
+    0
+   ],
+   "w": "There are 36 equally likely ordered outcomes, and six of them give 10 or more: (4,6), (6,4), (5,5), (5,6), (6,5), (6,6). 6/36 = 1/6. 3/11 treats the eleven possible sums as equally likely, which they are not; 4/21 counts unordered pairs (4 favourable out of 21), and 1/9 puts those same 4 unordered pairs over 36 ordered outcomes; both miss that (4,6) and (6,4) are different outcomes.",
+   "lec": 9,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0398",
+   "topic": "Probability I",
+   "q": "A bank branch logged 250 loan applications last quarter: 95 home loans, 80 vehicle loans and 75 personal loans. Using relative frequency, what is the probability that the next application is NOT a home loan?",
+   "c": [
+    "0.38",
+    "0.32",
+    "0.30",
+    "0.62"
+   ],
+   "a": [
+    3
+   ],
+   "w": "P(home) = 95/250 = 0.38, so by the complement P(not home) = 1 − 0.38 = 0.62 (equivalently (80 + 75)/250). 0.38 answers the opposite question; 0.32 and 0.30 are the vehicle and personal shares alone.",
+   "lec": 9,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0399",
+   "topic": "Probability II",
+   "q": "A single die is rolled. Which pair of events is mutually exclusive?",
+   "c": [
+    "‘An even number’ and ‘greater than 4’",
+    "‘An odd number’ and ‘less than 3’",
+    "‘A 6’ and ‘an odd number’",
+    "‘Greater than 3’ and ‘an even number’"
+   ],
+   "a": [
+    2
+   ],
+   "w": "6 is even, so ‘a 6’ and ‘odd’ share no sample point and cannot happen together. The other pairs overlap: even and greater than 4 share 6; odd and less than 3 share 1; greater than 3 and even share 4 and 6.",
+   "lec": 9,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0400",
+   "topic": "Probability II",
+   "q": "Of 600 commuters surveyed, 330 use the metro, 210 use the bus and 90 use both. What is the probability that a commuter uses neither?",
+   "c": [
+    "0.25",
+    "0.10",
+    "0.75",
+    "0.15"
+   ],
+   "a": [
+    0
+   ],
+   "w": "P(metro ∪ bus) = (330 + 210 − 90)/600 = 0.75, so P(neither) = 1 − 0.75 = 0.25. 0.10 comes from 1 − (330 + 210)/600, which counts the 90 who use both twice; 0.75 is the union itself; 0.15 is P(both).",
+   "lec": 9,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0401",
+   "topic": "Probability II",
+   "q": "Of 500 cinema-goers, 260 bought snacks, 180 bought drinks and 70 bought both. What is the probability that a cinema-goer bought snacks but not drinks?",
+   "c": [
+    "0.52",
+    "0.16",
+    "0.38",
+    "0.74"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Snacks but not drinks = P(snacks) − P(both) = (260 − 70)/500 = 0.38. 0.16 subtracts the whole drinks total, (260 − 180)/500, which mixes up ‘not drinks’ with ‘minus drinks’; 0.52 is all snack buyers, including those who also bought drinks; 0.74 is the union.",
+   "lec": 9,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0402",
+   "topic": "Probability II",
+   "q": "Events A and B are mutually exclusive, with P(A) = 0.30 and P(B) = 0.50. Which statement is correct?",
+   "c": [
+    "P(A ∪ B) = 0.65, and A and B are independent",
+    "P(A ∪ B) = 0.80, and A and B are independent",
+    "P(A ∪ B) = 0.65, and A and B are not independent",
+    "P(A ∪ B) = 0.80, and A and B are not independent"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Mutually exclusive means P(A ∩ B) = 0, so P(A ∪ B) = 0.30 + 0.50 = 0.80. Independence would need P(A ∩ B) = 0.30 × 0.50 = 0.15, not 0, so they are dependent: if A happens, B cannot. 0.65 subtracts 0.15, wrongly treating the events as independent.",
+   "lec": 9,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0403",
+   "topic": "Probability II",
+   "q": "At a gym, 60% of members are on the annual plan, and 15% of all members are on the annual plan AND buy personal training. What is the probability that an annual-plan member buys personal training?",
+   "c": [
+    "0.09",
+    "0.25",
+    "0.15",
+    "0.45"
+   ],
+   "a": [
+    1
+   ],
+   "w": "P(PT | annual) = P(annual ∩ PT) ÷ P(annual) = 0.15/0.60 = 0.25. 0.09 multiplies 0.15 × 0.60 instead of dividing; 0.15 is the joint probability, which describes all members, not just annual-plan ones; 0.45 subtracts.",
+   "lec": 9,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0404",
+   "topic": "Probability II",
+   "q": "A firm bids for two contracts that are decided independently. It wins the first with probability 0.40 and the second with probability 0.60. What is the probability that it wins exactly one?",
+   "c": [
+    "0.76",
+    "0.24",
+    "0.52",
+    "1.00"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Exactly one = (win first, lose second) + (lose first, win second) = 0.40 × 0.40 + 0.60 × 0.60 = 0.16 + 0.36 = 0.52. 0.76 is ‘at least one’ (1 − 0.60 × 0.40), which also includes winning both; 0.24 is winning both; 1.00 just adds the two probabilities.",
+   "lec": 9,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0405",
+   "topic": "Probability II",
+   "q": "A pharma company buys vials from three suppliers: S1 supplies 45%, S2 35% and S3 20%. Their defect rates are 2%, 3% and 6%. A vial is found defective. What is the probability that it came from S3?",
+   "c": [
+    "0.20",
+    "0.545",
+    "0.012",
+    "0.381"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Joints (prior × defect rate): 0.009, 0.0105, 0.012; their sum P(defective) = 0.0315. P(S3 | defective) = 0.012/0.0315 = 0.381. 0.20 is the prior, before the defect is known; 0.545 divides the defect rates by their sum, 0.06/0.11, ignoring the supply shares; 0.012 is the joint, not yet divided by P(defective).",
+   "lec": 9,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0406",
+   "topic": "Probability II",
+   "q": "Three couriers carry 50%, 30% and 20% of a shop's parcels, and their late-delivery rates are 6%, 9% and 12%. A parcel arrives late. Which courier most probably carried it?",
+   "c": [
+    "Courier 3, because its late rate (12%) is the highest",
+    "Courier 1, with a posterior of about 0.37",
+    "Courier 2, with a posterior of about 0.33",
+    "All three are equally likely"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Compare joints, not rates: 0.50 × 0.06 = 0.030, 0.30 × 0.09 = 0.027, 0.20 × 0.12 = 0.024. P(late) = 0.081, so the posteriors are 0.370, 0.333 and 0.296, and Courier 1 is the most likely. Courier 3 has the highest late rate but carries so few parcels that it produces the fewest late ones. The posteriors are close but not equal.",
+   "lec": 9,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0407",
+   "topic": "Probability II",
+   "q": "A coaching institute runs three batches holding 40%, 35% and 25% of its students. The pass rates are 60%, 70% and 80%. What is the probability that a randomly chosen student passes?",
+   "c": [
+    "0.685",
+    "0.700",
+    "0.800",
+    "0.240"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Total probability: 0.40 × 0.60 + 0.35 × 0.70 + 0.25 × 0.80 = 0.24 + 0.245 + 0.20 = 0.685. 0.700 is the simple average of the three pass rates, which ignores that the batches are different sizes; 0.240 is just the first batch's joint.",
+   "lec": 9,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0408",
+   "topic": "Probability II",
+   "q": "A company's 400 employees by department and preferred work mode: Sales 90 hybrid and 60 office; Tech 140 hybrid and 30 office; Operations 30 hybrid and 50 office. What is P(Tech | prefers hybrid)?",
+   "c": [
+    "0.538",
+    "0.824",
+    "0.350",
+    "0.425"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The condition is ‘prefers hybrid’, so divide by the hybrid total, 90 + 140 + 30 = 260: 140/260 = 0.538. 0.824 = 140/170 is the reverse, P(hybrid | Tech); 0.350 = 140/400 is the joint P(Tech ∩ hybrid); 0.425 is P(Tech) alone.",
+   "lec": 9,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0409",
+   "topic": "Probability II",
+   "q": "A and B are independent events. Which expression gives the probability that at least one of them occurs?",
+   "c": [
+    "1 − P(A)P(B)",
+    "P(A) + P(B)",
+    "P(A)P(B)",
+    "1 − P(A′)P(B′)"
+   ],
+   "a": [
+    3
+   ],
+   "w": "‘At least one’ is the complement of ‘neither’, and for independent events P(neither) = P(A′)P(B′). 1 − P(A)P(B) is the probability that they do not BOTH occur, a different event; P(A) + P(B) double-counts the overlap and can exceed 1; P(A)P(B) is ‘both’.",
+   "lec": 9,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0410",
+   "topic": "Distributions",
+   "q": "Daily orders X at a small Indore bakery's catering desk take the values 0, 1, 2 and 3 with probabilities 0.20, 0.35, k and 0.15. What is E(X)?",
+   "c": [
+    "1.50",
+    "0.80",
+    "1.40",
+    "0.30"
+   ],
+   "a": [
+    2
+   ],
+   "w": "k = 1 − (0.20 + 0.35 + 0.15) = 0.30, so E(X) = 0(0.20) + 1(0.35) + 2(0.30) + 3(0.15) = 1.40. 1.50 is the plain average of the four values, ignoring the probabilities; 0.80 leaves out the term for x = 2 because k was never found; 0.30 is k itself.",
+   "lec": 11,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0411",
+   "topic": "Distributions",
+   "q": "X takes the values 1, 2, 3 and 4 with probabilities 0.10, 0.30, 0.40 and 0.20, so E(X) = 2.7. What is Var(X)?",
+   "c": [
+    "8.10",
+    "0.81",
+    "0.90",
+    "1.29"
+   ],
+   "a": [
+    1
+   ],
+   "w": "E(X²) = 1(0.10) + 4(0.30) + 9(0.40) + 16(0.20) = 8.10, and Var(X) = 8.10 − 2.7² = 0.81. 8.10 forgets to subtract μ²; 0.90 is the standard deviation; 1.29 averages the squared deviations equally instead of weighting them by f(x).",
+   "lec": 11,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0412",
+   "topic": "Distributions",
+   "q": "A lucky-draw token is picked at random from tokens numbered 1 to 10, each equally likely. What is the standard deviation of the number drawn?",
+   "c": [
+    "3.03",
+    "8.25",
+    "0.10",
+    "2.87"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Discrete uniform with f(x) = 1/10: E(X) = 5.5 and Var(X) = Σ(x − 5.5)²/10 = 8.25, so σ = √8.25 = 2.87. 3.03 divides by n − 1 = 9 as if the ten values were a sample, but this is a probability distribution; 8.25 is the variance; 0.10 is f(x).",
+   "lec": 11,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0413",
+   "topic": "Applying distributions",
+   "q": "20% of visitors to a Jaipur handicrafts stall buy something, independently of each other. Of the next 12 visitors, what is the probability that at least 3 buy?",
+   "c": [
+    "0.4417",
+    "0.2054",
+    "0.2362",
+    "0.5583"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Binomial, n = 12, p = 0.20: P(X ≥ 3) = 1 − P(X ≤ 2) = 1 − 0.5583 = 0.4417. 0.2054 is 1 − P(X ≤ 3), which is P(X ≥ 4) because it drops x = 3; 0.2362 is P(exactly 3); 0.5583 is P(at most 2), the complement itself.",
+   "lec": 11,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0414",
+   "topic": "Distributions",
+   "q": "A Lucknow lender approves 35% of loan applications, independently. Of 10 applications received today, what is the probability that exactly 4 are approved?",
+   "c": [
+    "0.0011",
+    "0.0689",
+    "0.2377",
+    "0.7515"
+   ],
+   "a": [
+    2
+   ],
+   "w": "P(X = 4) = C(10, 4)(0.35)⁴(0.65)⁶ = 210 × 0.015006 × 0.075419 = 0.2377. 0.0011 leaves out C(10, 4), so it is the chance of one particular order only; 0.0689 swaps p and 1 − p; 0.7515 is the cumulative P(X ≤ 4), the TRUE version in BINOM.DIST.",
+   "lec": 11,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0415",
+   "topic": "Distributions",
+   "q": "A binomial random variable has mean 6 and variance 4.2. What are n and p?",
+   "c": [
+    "n = 20, p = 0.70",
+    "n = 15, p = 0.40",
+    "n = 60, p = 0.10",
+    "n = 20, p = 0.30"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Variance ÷ mean = np(1 − p) ÷ np = 1 − p = 4.2/6 = 0.70, so p = 0.30 and n = 6/0.30 = 20. n = 20, p = 0.70 takes the ratio as p itself, which gives a mean of 14; the other two pairs do have mean 6 but variances 3.6 and 5.4.",
+   "lec": 11,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0416",
+   "topic": "Applying distributions",
+   "q": "A Bengaluru cloud kitchen receives an average of 8 orders an hour, following a Poisson distribution. What is the probability of at most 1 order in a 15-minute window?",
+   "c": [
+    "0.2707",
+    "0.4060",
+    "0.0030",
+    "0.5940"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Rescale first: μ = 8 × 15/60 = 2. P(X ≤ 1) = e⁻²(1 + 2) = 0.1353 × 3 = 0.4060. 0.2707 is P(exactly 1), which leaves out x = 0; 0.0030 uses the hourly μ = 8 without rescaling; 0.5940 is P(2 or more), the complement.",
+   "lec": 11,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0417",
+   "topic": "Applying distributions",
+   "q": "Trucks reach a toll-plaza lane at an average of 2 every 10 minutes (Poisson). What is the probability that exactly 5 trucks arrive in half an hour?",
+   "c": [
+    "0.0361",
+    "0.1083",
+    "0.0127",
+    "0.1606"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Half an hour holds three 10-minute blocks, so μ = 6 and P(X = 5) = 6⁵e⁻⁶/5! = 0.1606. 0.0361 keeps μ = 2, which is the chance of 5 in ten minutes; 0.1083 triples that probability instead of rescaling the mean; 0.0127 uses μ = 12, the hourly rate.",
+   "lec": 11,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0418",
+   "topic": "Distributions",
+   "q": "A rack of 15 laptops at a Nehru Place shop includes 4 refurbished ones. A buyer picks 3 at random, without replacement. What is the probability that exactly 2 are refurbished?",
+   "c": [
+    "0.1564",
+    "0.1451",
+    "0.0132",
+    "0.4835"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Hypergeometric: C(4, 2) × C(11, 1) / C(15, 3) = 6 × 11 / 455 = 0.1451. 0.1564 treats the picks as binomial with p = 4/15, but each pick changes what is left; 0.0132 forgets the C(11, 1) ways to pick the non-refurbished laptop; 0.4835 is P(exactly 1).",
+   "lec": 11,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0419",
+   "topic": "Applying distributions",
+   "q": "Three scenarios for next year have probabilities 0.3, 0.5 and 0.2. An equity fund returns −10%, 8% and 20% in them; a gold fund returns 12%, 2% and 4%. Expected returns are 5% and 5.4%. What is the covariance of the two returns (in %²)?",
+   "c": [
+    "−12.0",
+    "−65.1",
+    "−39.0",
+    "−43.4"
+   ],
+   "a": [
+    2
+   ],
+   "w": "σxy = Σ(x − μx)(y − μy)f = 0.3(−15)(6.6) + 0.5(3)(−3.4) + 0.2(15)(−1.4) = −29.7 − 5.1 − 4.2 = −39.0; check: E(XY) − μxμy = −12 − 27 = −39. −12.0 is E(XY) without subtracting μxμy; −65.1 ignores the probabilities and divides by n − 1 like a sample; −43.4 weights the three scenarios equally.",
+   "lec": 11,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0420",
+   "topic": "Applying distributions",
+   "q": "A portfolio is 60% in an equity fund (SD of return 20%) and 40% in a debt fund (SD 8%). The covariance of their returns is −0.0032. What is the portfolio's standard deviation?",
+   "c": [
+    "11.8%",
+    "15.2%",
+    "12.4%",
+    "13.0%"
+   ],
+   "a": [
+    0
+   ],
+   "w": "In decimals: Var = 0.36(0.04) + 0.16(0.0064) + 2(0.6)(0.4)(−0.0032) = 0.0144 + 0.001024 − 0.001536 = 0.013888, so SD = 0.118 = 11.8%. 15.2% is the weighted average of the SDs, true only when the correlation is +1; 12.4% leaves out the covariance term; 13.0% adds it with the wrong sign.",
+   "lec": 11,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0421",
+   "topic": "Applying distributions",
+   "q": "A portfolio is split 50/50 between two assets whose returns have SDs of 15% and 9%. When is the portfolio's SD exactly 12%, the weighted average of the two?",
+   "c": [
+    "When the correlation between the returns is −1",
+    "When the returns are independent",
+    "When the correlation between the returns is +1",
+    "Never: a portfolio's SD is always below the weighted average"
+   ],
+   "a": [
+    2
+   ],
+   "w": "With ρ = +1 the covariance is σ₁σ₂, the variance becomes (0.5 × 15 + 0.5 × 9)², and the SD is exactly 12%. Independence (ρ = 0) gives a smaller SD, about 8.7%, and ρ = −1 gives the smallest, 3%. ‘Never’ is wrong because perfect positive correlation removes all diversification benefit.",
+   "lec": 11,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0422",
+   "topic": "Applying distributions",
+   "q": "A question gives two assets' SDs as 12% and 5% and their covariance as 0.0018. What should you do before using the portfolio-variance formula?",
+   "c": [
+    "Write the SDs as 0.12 and 0.05 (or the covariance as 18 in %²)",
+    "Use 12, 5 and 0.0018 exactly as given",
+    "Divide the covariance by 100 so it matches the SDs",
+    "Drop the covariance, since it is tiny next to the variances"
+   ],
+   "a": [
+    0
+   ],
+   "w": "All three inputs must share units. As decimals the correlation is 0.0018/(0.12 × 0.05) = 0.30, a sensible value, which confirms that reading. Using 12, 5 and 0.0018 together mixes %² with decimals, so the covariance term all but vanishes; dividing by 100 makes the mismatch worse.",
+   "lec": 11,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0423",
+   "topic": "Applying distributions",
+   "q": "For the covariance of two returns from a joint probability distribution, as in the sheet's stock-and-bond question, what weights each product of deviations (x − μx)(y − μy)?",
+   "c": [
+    "1/(n − 1), as for a sample covariance",
+    "1/n, where n is the number of scenarios",
+    "The portfolio weights of the two funds",
+    "The joint probability f(x, y) of that scenario"
+   ],
+   "a": [
+    3
+   ],
+   "w": "σxy = Σ(x − μx)(y − μy)·f(x, y): each scenario counts in proportion to its probability. The 1/(n − 1) divisor belongs to the sample covariance from data (L#7), not to a probability model; 1/n would treat unlikely and likely scenarios alike.",
+   "lec": 11,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0424",
+   "topic": "Distributions",
+   "q": "A bus timetable says a Jaipur–Ajmer trip takes 45 minutes. Actual trip times are uniform between 40 and 60 minutes. What is the probability that a trip is more than 10 minutes late?",
+   "c": [
+    "0.50",
+    "0.17",
+    "0.25",
+    "0.75"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Late is measured from the timetabled 45 minutes, so ‘more than 10 minutes late’ means x > 55: (60 − 55)/20 = 0.25. 0.50 measures the 10 minutes from the start of the range (x > 50); 0.75 is the complement P(x ≤ 55); 0.17 is 10/60, which is not an area under this density.",
+   "lec": 14,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0425",
+   "topic": "Distributions",
+   "q": "A phone's battery life is uniform between 18 and 26 hours. In a batch of 400 phones, how many would you expect to last at least 20 hours?",
+   "c": [
+    "100",
+    "300",
+    "308",
+    "133"
+   ],
+   "a": [
+    1
+   ],
+   "w": "P(x ≥ 20) = (26 − 20)/(26 − 18) = 6/8 = 0.75, and 0.75 × 400 = 300. 100 is the number lasting less than 20 hours; 308 uses 20/26: it starts the range at 0 and takes the wrong tail; 133 divides the 6-hour width by 18 instead of by the 8-hour range.",
+   "lec": 14,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0426",
+   "topic": "Distributions",
+   "q": "Daily tips at a café counter are uniform between ₹200 and ₹500. What is the variance of daily tips?",
+   "c": [
+    "25",
+    "86.6",
+    "40,833",
+    "7,500"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Var(x) = (b − a)²/12 = 300²/12 = 7,500 (in ₹²). 86.6 is the standard deviation, √7,500, not the variance; 25 forgets to square the range; 40,833 squares the sum (a + b) instead of the difference.",
+   "lec": 14,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0427",
+   "topic": "Distributions",
+   "q": "A machine fills bottles with a volume that is uniform between 495 ml and 505 ml. What is the probability that a bottle holds exactly 500 ml?",
+   "c": [
+    "0",
+    "0.10",
+    "0.50",
+    "1/11"
+   ],
+   "a": [
+    0
+   ],
+   "w": "For a continuous variable a single value has zero width, so its area, and its probability, is 0. 0.10 is the height of the density, 1/(505 − 495), which is not a probability; 0.50 is P(x ≤ 500); 1/11 treats volume as one of 11 whole-ml values.",
+   "lec": 14,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0428",
+   "topic": "Distributions",
+   "q": "For a standard normal z, the area between 0 and a positive z is 0.4505. Using the cumulative table, what is z?",
+   "c": [
+    "−0.12",
+    "0.12",
+    "1.65",
+    "0.45"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The left area is 0.5 + 0.4505 = 0.9505, which the table gives at z = 1.65. −0.12 comes from looking up 0.4505 directly as if it were a left area; 0.12 treats it as a right-tail area; 0.45 confuses the area with z.",
+   "lec": 14,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0429",
+   "topic": "Applying distributions",
+   "q": "Time to finish an entrance test is normal with μ = 110 minutes and σ = 15 minutes. 150 candidates sit it and the hall closes after 2 hours. About how many candidates are expected NOT to finish?",
+   "c": [
+    "About 112",
+    "About 73",
+    "About 75",
+    "About 38"
+   ],
+   "a": [
+    3
+   ],
+   "w": "2 hours = 120 minutes; z = (120 − 110)/15 = 0.67 and P(Z ≤ 0.67) = 0.7486, so P(x > 120) = 0.2514 and 0.2514 × 150 = 37.7 ≈ 38. 112 is the number expected to finish; 73 divides by the variance 225 instead of by σ; 75 assumes half fail, which would be true only if the hall closed at the mean, 110 minutes.",
+   "lec": 14,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0430",
+   "topic": "Applying distributions",
+   "q": "Scores in a scholarship test are normal with μ = 62 and σ = 9. The top 4% win the scholarship. Rounding z to two decimals, what is the minimum winning score?",
+   "c": [
+    "46.25",
+    "77.75",
+    "80.45",
+    "63.75"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Top 4% means a left area of 0.96; the nearest table value is 0.9599 at z = 1.75, so x = 62 + 1.75 × 9 = 77.75 (NORM.INV gives 77.76). 80.45 splits the 4% over two tails and uses z = 2.05; 46.25 is the bottom-4% cut-off; 63.75 forgets to multiply z by σ.",
+   "lec": 14,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0431",
+   "topic": "Distributions",
+   "q": "40% of a shopping app's buyers pay by UPI. For 150 buyers, use the normal approximation to estimate P(exactly 60 pay by UPI).",
+   "c": [
+    "0.0638",
+    "0",
+    "0.5319",
+    "0.5000"
+   ],
+   "a": [
+    0
+   ],
+   "w": "np = 60 and n(1 − p) = 90, so the approximation is fine: μ = 60, σ = √(150 × 0.4 × 0.6) = 6. ‘Exactly 60’ becomes the strip 59.5 to 60.5: z = ±0.08, so 0.5319 − 0.4681 = 0.0638 (unrounded z and the exact binomial both give 0.066). 0 forgets that the continuity correction turns one count into an interval of width 1; 0.5319 is P(x ≤ 60.5), a cumulative area; 0.5000 is P(x ≤ 60) without the correction.",
+   "lec": 14,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0432",
+   "topic": "Distributions",
+   "q": "12% of cash-on-delivery orders are returned. Out of 250 such orders, use the normal approximation with the continuity correction to find P(at most 25 are returned).",
+   "c": [
+    "0.1423",
+    "0.1660",
+    "0.8106",
+    "0.1894"
+   ],
+   "a": [
+    3
+   ],
+   "w": "μ = 30 and σ = √(250 × 0.12 × 0.88) = 5.14. ‘At most 25’ includes 25, so use x ≤ 25.5: z = −0.88, table value 0.1894 (exact binomial 0.192). 0.1660 skips the continuity correction (z = −0.97); 0.1423 corrects in the wrong direction (24.5, which drops 25); 0.8106 is the complement, P(more than 25).",
+   "lec": 14,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0433",
+   "topic": "Distributions",
+   "q": "In which case should you NOT use the normal approximation to the binomial?",
+   "c": [
+    "n = 50, p = 0.10",
+    "n = 200, p = 0.98",
+    "n = 30, p = 0.50",
+    "n = 400, p = 0.02"
+   ],
+   "a": [
+    1
+   ],
+   "w": "n = 200, p = 0.98 gives np = 196 but n(1 − p) = 4, below 5, and both checks must pass. n = 50, p = 0.10 gives np = 5 exactly, which passes because the rule is ‘at least 5’; the others give 15 and 15, and 8 and 392. A large n is not enough when p is close to 0 or 1.",
+   "lec": 14,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0434",
+   "topic": "Applying distributions",
+   "q": "An ATM is used by 4 customers an hour on average, and arrivals follow a Poisson distribution. What is the probability that more than 30 minutes pass between two customers?",
+   "c": [
+    "0.8647",
+    "0.0006",
+    "0.1353",
+    "0.8825"
+   ],
+   "a": [
+    2
+   ],
+   "w": "4 an hour means a mean gap of 60/4 = 15 minutes, so P(x > 30) = e^(−30/15) = e^(−2) = 0.1353. 0.8647 is 1 − e^(−2), the chance the gap is at most 30 minutes; 0.0006 uses the rate 4 as if it were the mean gap in minutes (e^(−30/4)); 0.8825 treats 4 as the mean gap in hours.",
+   "lec": 14,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0435",
+   "topic": "Distributions",
+   "q": "Service time at a help desk is exponential with a mean of 15 minutes. What is P(6 ≤ service time ≤ 18 minutes)?",
+   "c": [
+    "0.3691",
+    "0.6988",
+    "0.8000",
+    "0.3297"
+   ],
+   "a": [
+    0
+   ],
+   "w": "P = e^(−6/15) − e^(−18/15) = 0.6703 − 0.3012 = 0.3691. 0.6988 is P(x ≤ 18), ignoring the lower limit; 0.3297 is P(x ≤ 6) alone; 0.8000 = (18 − 6)/15 treats the exponential as if it were uniform.",
+   "lec": 14,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0436",
+   "topic": "Distributions",
+   "q": "For a binomial with a very large n, statistical software usually computes probabilities with the exact binomial formula rather than the normal approximation. Why?",
+   "c": [
+    "The normal approximation is only allowed when n is below 30",
+    "The binomial formula grows more accurate as n grows, while the normal approximation grows less accurate",
+    "A computer can add thousands of binomial terms almost instantly, so there is no reason to accept approximation error",
+    "Software cannot apply the continuity correction"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The normal approximation exists to save hand work; a computer does the exact sum quickly, so it reports the exact answer. The tempting ‘accuracy changes with n’ option is backwards: the binomial formula is exact at every n, and the normal approximation actually gets better as n grows. There is no ‘n below 30’ rule for it.",
+   "lec": 14,
+   "lv": "recall"
   }
  ],
  "briefs": {
@@ -8324,6 +9757,11 @@ HUB.addCourse({
   "lec-19",
   "lec-20",
   "lec-16s",
-  "lec-20s"
+  "lec-20s",
+  "lec-04s",
+  "lec-06s",
+  "lec-09s",
+  "lec-11s",
+  "lec-14s"
  ]
 });
