@@ -139,6 +139,18 @@ HUB.addCourse({
    "Week 8 — Theories of Motivation",
    "Freud, Maslow, Herzberg: why the journey begins",
    "rec"
+  ],
+  [
+   24,
+   "Week 8 — Perception",
+   "Meaning over stimulus, perceptual product categories",
+   "rec"
+  ],
+  [
+   25,
+   "Week 8 — Live Lecture 8",
+   "Sensory thresholds and Gestalt principles of perception",
+   "live"
   ]
  ],
  "units": [
@@ -334,8 +346,8 @@ HUB.addCourse({
   {
    "id": "cb",
    "title": "Consumer behaviour",
-   "tag": "Lectures 18–21, 23",
-   "lede": "Why people buy and how they decide: heuristics and nudges, the five decision stages and the messy middle, the need → drive → behaviour framework, and the three theories of motivation.",
+   "tag": "Lectures 18–21, 23–25",
+   "lede": "Why people buy and how they decide: heuristics and nudges, the five decision stages and the messy middle, the need → drive → behaviour framework, the three theories of motivation, and perception, from meaning and perceptual categories to thresholds and the Gestalt principles.",
    "topics": [
     {
      "t": "Why people buy, and the three eras",
@@ -406,6 +418,31 @@ HUB.addCourse({
      "t": "Herzberg: hygiene factors and motivators",
      "src": "L#23",
      "h": "<div class=\"def\"><b>Herzberg’s two-factor theory:</b> two separate sets of factors. <b>Hygiene factors</b> (job dissatisfiers) cause dissatisfaction when absent, but their presence only removes it. <b>Motivators</b> (job satisfiers) create satisfaction and motivation when present. The idea began with workers in office settings and was later carried over to everyday life.</div><p><strong>The free chai rule:</strong> free chai in the office does not make anyone love their job, but take it away and people rebel.</p><div class=\"scroller\"><table><thead><tr><th>Hygiene factors (dissatisfiers)</th><th>Motivators (satisfiers)</th></tr></thead><tbody><tr><td>Salary</td><td>Achievement</td></tr><tr><td>Working conditions</td><td>Recognition</td></tr><tr><td>Company policies</td><td>Responsibility</td></tr><tr><td>Supervisor (how good or bad)</td><td>Growth</td></tr></tbody></table></div><p><strong>Two levers:</strong> improving <strong>motivators</strong> increases satisfaction; improving <strong>hygiene factors</strong> decreases dissatisfaction. Fixing hygiene alone gets you to neutral, not to motivated.</p><div class=\"card\"><strong>Carrying it into marketing</strong> <em>(Kotler &amp; Keller, his reference text)</em><p>The same logic applies to buyers. A seller must first avoid <b>dissatisfiers</b>, such as a poor manual or a weak service policy. These won’t sell a product, but they can easily unsell it. Avoiding them is not enough, though: the seller must also find and supply the <b>satisfiers</b> that actually make people buy.</p></div><!--viz:pom-herzberg-three-offices--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three cards. An office with late salary and no chai makes staff angry. One with salary, chai and decent conditions leaves them neutral. Adding meaningful work and recognition makes them motivated.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Three offices, three moods</div><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px\"><div style=\"padding:10px;border-radius:4px;border:1px solid var(--bad);background:var(--bad-soft)\"><div style=\"font-size:13px;color:var(--ink-2)\">Salary late, chai taken away</div><div style=\"font-family:var(--display);font-weight:700;font-size:17px;margin:4px 0\">Angry</div><div style=\"font-size:13px;color:var(--ink-2)\">hygiene missing → dissatisfaction</div></div><div style=\"padding:10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><div style=\"font-size:13px;color:var(--ink-2)\">Salary on time, chai, decent AC</div><div style=\"font-family:var(--display);font-weight:700;font-size:17px;margin:4px 0\">Neutral</div><div style=\"font-size:13px;color:var(--ink-2)\">hygiene met → no dissatisfaction, no motivation</div></div><div style=\"padding:10px;border-radius:4px;border:1px solid var(--good);background:var(--good-soft)\"><div style=\"font-size:13px;color:var(--ink-2)\">All that + a meaningful project + the boss gives credit</div><div style=\"font-family:var(--display);font-weight:700;font-size:17px;margin:4px 0\">Motivated</div><div style=\"font-size:13px;color:var(--ink-2)\">motivators present → satisfaction</div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Hygiene factors can only take you from angry to neutral; motivators take you from neutral to motivated.</figcaption></figure><!--/viz:pom-herzberg-three-offices-->"
+    },
+    {
+     "t": "Perception: how buyers see the world",
+     "src": "L#24",
+     "h": "<div class=\"def\"><b>Perception</b> is how a person sees and interprets the world around them. After motivation (Lecture 23), it is the next factor he named as shaping the decision “to a great extent”, and firms lean on it when they design and launch a product or a product line. Perception does not come from the object alone: marketers add <b>external cues</b> (stimuli) that steer it.</div><h4>One picture, two readings</h4><ul><li><strong>Young lady or old lady?</strong> One drawing holds both. Which one you see depends on which line you read as the nose and which as the chin.</li><li><strong>Duck or rabbit?</strong> Read left to right, it is a duck; right to left, a rabbit. Then he added <strong>carrots</strong>, and almost everyone saw a rabbit. One added element changed everyone’s perception. That is what marketers do, and the “carrot” could just as well be a price discount.</li></ul><h4>One model, three brand names</h4><p>He showed a model and asked which brand she was endorsing. Guesses were all over the place until he named the brand:</p><div class=\"scroller\"><table><thead><tr><th>Brand named</th><th>What viewers then assumed she was selling</th></tr></thead><tbody><tr><td><strong>Nykaa</strong></td><td>Cosmetics and personal care: a lip shade, foundation, a face serum</td></tr><tr><td><strong>Fabindia</strong></td><td>Clothing or accessories: the top, the earrings</td></tr><tr><td><strong>LabelLife</strong></td><td>Fashion clothing. He described it as a label founded by three celebrities that offers celebrity-style products at affordable prices</td></tr></tbody></table></div><p>The picture never changed; only the name did. Each brand’s app and ads had already built a notion in the viewer’s mind, and the name called it up.</p><h4>Four characteristics of perception (the lecture’s list)</h4><ul><li><strong>Selective:</strong> you pick up what suits your needs, background and way of thinking.</li><li><strong>Subjective:</strong> the same thing can mean one thing to you and the opposite to someone else.</li><li><strong>Constructive:</strong> given half the information, you complete it yourself. Told only “LabelLife”, you build “so it must be clothing”.</li><li><strong>Abstract:</strong> meanings are not standard across people, and a perception can rest on thoughts rather than on any value the product delivers.</li></ul><h4>Perception without experience</h4><p>Ask a class about BMW, Mercedes or Audi and most say great quality, build and performance, though few have ever owned or driven one. The view comes from what people say, what they have read and what has been shown to them. Buyers collect information about a product and interpret it into a meaningful image, whether or not they have used it.</p><div class=\"def\"><b>Seeing is believing, and believing is seeing.</b> What you already believe shapes what you see. If you believe “expensive means good”, an expensive product looks good to you before you have tried it.</div><div class=\"card\"><strong>Keep two lists apart</strong><p>The textbook block of this unit (Kotler &amp; Armstrong) describes perception as selecting, organising and interpreting information through <b>selective attention, selective distortion and selective retention</b>. The lecture’s four characteristics (selective, subjective, constructive, abstract) are a different list. Answer with the list the question names.</p></div><!--viz:pom-perception-four-traits--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Four cards for the lecture's characteristics of perception, selective, subjective, constructive and abstract, each with the clue that identifies it in a question and an example.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Spotting the four characteristics</div><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px\"><div style=\"padding:10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><div style=\"font-family:var(--display);font-weight:700;font-size:16px\">Selective</div><div style=\"font-size:13px;color:var(--ink-2);margin:4px 0\">Clue: the buyer notices only what fits their needs and background</div><div style=\"font-size:13px;color:var(--ink-3)\">e.g. a shopper who wants a laptop starts seeing laptop ads everywhere</div></div><div style=\"padding:10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><div style=\"font-family:var(--display);font-weight:700;font-size:16px\">Subjective</div><div style=\"font-size:13px;color:var(--ink-2);margin:4px 0\">Clue: two people read the same thing in opposite ways</div><div style=\"font-size:13px;color:var(--ink-3)\">e.g. one viewer finds an ad moving, another finds it manipulative</div></div><div style=\"padding:10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><div style=\"font-family:var(--display);font-weight:700;font-size:16px\">Constructive</div><div style=\"font-size:13px;color:var(--ink-2);margin:4px 0\">Clue: partial information, and the buyer fills in the rest</div><div style=\"font-size:13px;color:var(--ink-3)\">e.g. told only “Fabindia”, you assume clothing or accessories</div></div><div style=\"padding:10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><div style=\"font-family:var(--display);font-weight:700;font-size:16px\">Abstract</div><div style=\"font-size:13px;color:var(--ink-2);margin:4px 0\">Clue: the meaning rests on thoughts, not on value delivered</div><div style=\"font-size:13px;color:var(--ink-3)\">e.g. one buyer prizes the ₹2,700 almonds, another the ₹550 pack</div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Filling a gap is constructive; two opposite readings is subjective.</figcaption></figure><!--/viz:pom-perception-four-traits-->"
+    },
+    {
+     "t": "Meaning over stimulus: packaging and price as cues",
+     "src": "L#24",
+     "h": "<div class=\"def\"><b>The marketer’s fundamental:</b> marketing rarely changes the <b>physical stimulus</b> alone. It changes the <b>meaning attached</b> to the stimulus, and that meaning forms the buyer’s perception.</div><h4>The almonds exercise</h4><p>Your parents send you to the supermarket for a kilo of almonds. Four packs sit on the shelf, and at first you are told they all cost about the same (around ₹1,000), so price can’t decide.</p><div class=\"scroller\"><table><thead><tr><th>Pack</th><th>What students typically said</th><th>Score out of 10</th></tr></thead><tbody><tr><td><strong>A</strong> (Solimo, Amazon’s in-house brand)</td><td>Packaging looks fine, the almonds are visible, a known name</td><td>about 6.5</td></tr><tr><td><strong>B</strong></td><td>Looks like a packet of wafers; “California” on the pack is its one plus</td><td>about 4, the least preferred</td></tr><tr><td><strong>C</strong> (transparent)</td><td>I can see exactly what I’m buying</td><td>about 6</td></tr><tr><td><strong>D</strong> (premium pack)</td><td>Great packaging, “California almonds”, an eye-catching brown; gluten-free, high fibre, cholesterol-free, antioxidants; a reusable zip-lock</td><td>about 9, the clear favourite</td></tr></tbody></table></div><p>Then the prices: <b>A ₹1,000, B ₹800, C ₹550, D ₹2,700.</b> Most students moved to a cheaper pack, above all the ₹550 one. Buyers with high purchasing power stayed with D, and for them the high price <em>strengthened</em> the perception: if it is expensive, it must be good.</p><div class=\"warnbox\"><b>What was really going on.</b> You don’t eat the packaging. The almonds come from a similar source, and the four packs differ mainly in polishing, size and packaging. Most of D’s health claims are true of almost all almonds. A purely rational buyer might pick the transparent pack, because it shows what you will eat. Buyers still attach meaning to the packaging, firms charge a premium for it, and price itself works as a cue.</div><h4>Ketchup and the blind taste test</h4><p>Two ketchup bottles: one a known brand saying “fresh tomato”, the other all red, with real-looking tomatoes and “chef special”. Each pulls a different set of buyers, so <strong>one size does not fit all</strong>. That is why many brands sell near-identical products in the same line: each conveys a different meaning. In a blind taste test most people find little difference. He plans the same test with Coke and Pepsi at the campus immersion, since without the bottle most people can’t tell which is which.</p><p><strong>The chain:</strong> packaging communicates a meaning → the meaning shapes perception → perception shapes the choice.</p><!--viz:pom-meaning-over-stimulus--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: a physical stimulus (much the same almonds) plus cues such as packaging, brand, claims and price produces an attached meaning, which forms perception and then the choice.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Same almonds, different meaning</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Physical stimulus</b><br><span style=\"color:var(--ink-2);font-size:13px\">much the same almonds</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">+ cues<br><span style=\"color:var(--ink-2);font-size:13px\">packaging, brand, claims, price</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Meaning attached</b><br><span style=\"color:var(--ink-2);font-size:13px\">“superior, healthy, worth it”</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Perception</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Choice<br><span style=\"color:var(--ink-2);font-size:13px\">the ₹2,700 pack, or the ₹550 one</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The product barely changes; the cues change the meaning, and the meaning drives the choice.</figcaption></figure><!--/viz:pom-meaning-over-stimulus-->"
+    },
+    {
+     "t": "Perceptual product categories",
+     "src": "L#24",
+     "h": "<div class=\"def\">By <b>default</b>, consumers store information as <b>product categories</b>: “toothpaste”, “cars”. By <b>design</b>, marketers create <b>perceptual product categories</b> in the buyer’s mind: categories built on what the product means for a particular need, such as “toothpaste for sensitive teeth”.</div><h4>“All we see are cars”</h4><p>Shown a picture of vehicles for a few seconds, almost everyone writes “cars”. The picture held a bus, a hatchback, a sedan, a truck, an ambulance and a fire truck. Storing everything under one broad label is the problem marketers try to solve through perception.</p><h4>Four toothpastes, four perceptions</h4><div class=\"scroller\"><table><thead><tr><th>Brand</th><th>Product category</th><th>Perceptual product category</th></tr></thead><tbody><tr><td><strong>Sensodyne</strong></td><td>Toothpaste</td><td>For sensitive teeth</td></tr><tr><td><strong>Colgate Total</strong></td><td>Toothpaste</td><td>All-round protection: teeth, enamel, oral hygiene</td></tr><tr><td><strong>Closeup</strong></td><td>Toothpaste</td><td>For freshness</td></tr><tr><td><strong>Colgate Visible White</strong></td><td>Toothpaste</td><td>For whiter teeth (heavy tea or coffee drinkers, smokers)</td></tr></tbody></table></div><p>Someone with sensitive teeth doesn’t want Closeup or Colgate Total; their problem is different, so their perception of “a toothpaste” is different. Marketers design their campaigns, collateral and the product itself so that buyers file it under a perceptual category.</p><div class=\"warnbox\"><b>Without perceptual categories, every product looks the same.</b> The buyer then takes the cheapest, the one within reach or the first one seen, with no preference, because “it’s toothpaste at the end of the day”.</div><h4>Case: Horlicks</h4><p>Horlicks began in India as one product. Needs differ with age, life stage and phase of life, so it added variants, each a perceptual product category:</p><ul><li><strong>Horlicks Growth+</strong>: children’s growth and development</li><li><strong>Horlicks Lite</strong>: less sugar, for health-conscious buyers</li><li><strong>Junior Horlicks</strong>: younger children</li><li><strong>Mother’s Horlicks</strong>: the nutritional needs of expectant and new mothers</li><li><strong>Women’s Horlicks</strong>: women whose nutritional needs change from their thirties on</li></ul><p>A 45-year-old woman picks Women’s Horlicks over the regular pack because it meets her needs; a parent picks a children’s variant for a 12-year-old. This is the segmentation, targeting and positioning logic from earlier in the course. Selling one product to everyone is far harder than selling five products that each suit someone, so the chances of selling more rise.</p><div class=\"def\"><b>From the lecture (L#24):</b> he called perception “very important, very crucial” to decision making, because marketers play on it to create different perceptual product categories and reach a wider audience. No Quiz 2 details were given. Next up: <b>attitude and personality</b>, which close the consumer behaviour module, and then <b>brand</b> as a concept.</div><!--viz:pom-toothpaste-perceptual-categories--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Tree: the product category toothpaste splits into four perceptual product categories: Sensodyne for sensitive teeth, Colgate Total for all-round protection, Closeup for freshness, Colgate Visible White for whiter teeth.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One product category, four perceptual ones</div><div style=\"font-size:14px\"><div style=\"text-align:center\"><div style=\"display:inline-block;padding:7px 14px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2)\"><b>Toothpaste</b><br><span style=\"color:var(--ink-2);font-size:13px\">product category: how buyers file it by default</span></div></div><div style=\"text-align:center;color:var(--ink-3);margin:4px 0\">↓ marketers split it, by design ↓</div><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px\"><div style=\"padding:9px 10px;border-radius:4px;border:1px solid var(--blue);background:var(--blue-soft)\"><div style=\"font-weight:700;font-size:14px\">Sensodyne</div><div style=\"font-size:13px;color:var(--ink-2);margin-top:3px\">for sensitive teeth</div></div><div style=\"padding:9px 10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><div style=\"font-weight:700;font-size:14px\">Colgate Total</div><div style=\"font-size:13px;color:var(--ink-2);margin-top:3px\">all-round protection</div></div><div style=\"padding:9px 10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><div style=\"font-weight:700;font-size:14px\">Closeup</div><div style=\"font-size:13px;color:var(--ink-2);margin-top:3px\">for freshness</div></div><div style=\"padding:9px 10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><div style=\"font-weight:700;font-size:14px\">Colgate Visible White</div><div style=\"font-size:13px;color:var(--ink-2);margin-top:3px\">for whiter teeth</div></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Buyers file “toothpaste” by default; each brand works to be filed under a need instead.</figcaption></figure><!--/viz:pom-toothpaste-perceptual-categories-->"
+    },
+    {
+     "t": "From stimulus to perception: thresholds and stages",
+     "src": "L#25",
+     "h": "<div class=\"def\">A live session run by the teaching assistants, as the lecturer could not attend. It picked up from Lecture 24: perception is what people think in their minds. It is subjective, it can change, and it has biases a marketer can use. First impressions count (“first impression is the last impression”).</div><p>Before anything can be perceived it has to reach the senses. A <strong>sensory stimulus</strong> is any input through sight, sound, smell, touch or taste: an ad you see, the aroma as you walk into a café, the feel of a fabric.</p><div class=\"scroller\"><table><thead><tr><th>Concept</th><th>Meaning</th><th>The session’s example</th></tr></thead><tbody><tr><td><strong>Absolute threshold</strong></td><td>The minimum level a stimulus must reach to be noticed at all; the first bar a marketer must clear to get attention</td><td>A lit candle in a dark room</td></tr><tr><td><strong>Differential threshold</strong> (just noticeable difference)</td><td>The smallest change between two stimuli that a person can detect</td><td>Add two grains of rice to a handful and you feel nothing; add a couple of pinches and you feel the extra weight</td></tr><tr><td><strong>Subliminal perception</strong> (as presented)</td><td>Presented as the ad that engages more of the senses and so feels more appealing</td><td>A drink poured over ice cubes beats a plain shot of the bottle</td></tr></tbody></table></div><div class=\"warnbox\"><b>Check the term “subliminal”.</b> In the standard sense, including Kotler &amp; Armstrong in this unit’s textbook block, <b>subliminal</b> means a stimulus <b>below the threshold of conscious awareness</b>, one the viewer does not consciously notice. The book reports little evidence that subliminal advertising has strong effects. The pour-over-ice ad is better read as a vivid, multi-sensory stimulus that clears the absolute threshold and grabs attention. If a question defines the term, use the standard meaning.</div><h4>From sensation to response</h4><p>Once the senses register the stimulus (<strong>sensation</strong>), the session listed four stages of perception: <strong>exposure → attention → interpretation → organisation</strong>. The outcome is a <strong>response</strong>: a purchase, or an intention to purchase. The ad, the product and the message all have to be designed to get through every step.</p><div class=\"card\"><strong>Two orders in circulation</strong><p>The textbook definition in this unit says people <b>select, organise and interpret</b> information, which puts organising before interpreting. The session put interpretation first. Both versions begin with exposure and attention.</p></div><!--viz:pom-stimulus-to-response--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: a sensory stimulus clears the absolute and differential thresholds, becomes a sensation, then passes through exposure, attention, interpretation and organisation to a response, a purchase or an intent to purchase.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">From stimulus to response</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Sensory stimulus</b><br><span style=\"color:var(--ink-2);font-size:13px\">sight, sound, smell, touch, taste</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Clears the thresholds<br><span style=\"color:var(--ink-2);font-size:13px\">absolute, differential</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Sensation</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Exposure</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Attention</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Interpretation</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Organisation</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Response</b><br><span style=\"color:var(--ink-2);font-size:13px\">purchase or intent to purchase</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">An ad that never clears the absolute threshold never reaches exposure, let alone a purchase.</figcaption></figure><!--/viz:pom-stimulus-to-response-->"
+    },
+    {
+     "t": "Gestalt principles: how the brain organises what it sees",
+     "src": "L#25",
+     "h": "<div class=\"def\"><b>Gestalt principles</b> explain how the brain organises scattered visual cues into a meaningful whole. The brain does not record an image the way a camera does. It groups cues into patterns, <b>predicts what it expects to see from past experience</b>, and when the prediction fails, settles on the <b>closest match</b>.</div><p><strong>The opening test:</strong> a slide of broken, Pac-Man-like shapes. Students reported a triangle, a square or a star, and one saw a three-quarter circle. No triangle or square was drawn; the brain built them from the gaps. Well-organised interfaces such as Pinterest or Myntra use the same tendency to make navigation, and so conversion, easy.</p><div class=\"scroller\"><table><thead><tr><th>Principle</th><th>What the brain does</th><th>Examples from the session</th></tr></thead><tbody><tr><td><strong>Figure and ground</strong></td><td>Separates the object (figure, foreground) from its background (ground, negative space)</td><td>Apple’s iPod ads: dark silhouettes, with the white earphones and player standing out. A Sensodyne ad of white teeth on black, brand name at the bottom. A white fork whose negative space reads as wine bottles. A <em>Peter and the Wolf</em> cover where the background draws the figure</td></tr><tr><td><strong>Continuity</strong></td><td>Sees elements on a line or curve as related, and keeps following a path even where lines cross</td><td>A highlighted route on a map versus a list of ten places. Arrows on roads. An Amazon book listing read in a natural order: the book, then price, delivery and rating. Cars24’s page: brand logos, then online evaluation → car inspection → best price</td></tr><tr><td><strong>Grouping and similarity</strong></td><td>Treats items that look alike (colour, shape, size, style) as one group</td><td>Red and blue pencils sorted without being asked. A school uniform. Website menus under category headings. Myntra offer cards that share one layout. A clothes shop with separate sections</td></tr><tr><td><strong>Proximity</strong></td><td>Treats items close together as a group, and a gap as a boundary, whatever their colour</td><td>A notice board with exam, holiday and sports notices spaced apart. Product cards separated by spacing. A row of Zara shoes, each with its price beside it</td></tr><tr><td><strong>Closure</strong></td><td>Fills in missing parts to complete a familiar pattern from memory</td><td>A bowler hat and a moustache read as Charlie Chaplin. Heinz tomato slices arranged as a ketchup bottle. Kia Sonet’s “coming soon” silhouette. A wine bottle against a same-colour background. A Scotch bottle drawn only by light</td></tr></tbody></table></div><h4>What each principle does for the buyer</h4><ul><li><strong>Figure and ground</strong> creates a focal point. On a crowded shelf, the product that stands out (because you need it, know it, or it is flashy) gets picked up and its label read. That raises engagement; it does not guarantee a purchase.</li><li><strong>Continuity</strong> sets the order you look in. You feel you are browsing at will, but the page decides the sequence.</li><li><strong>Grouping</strong> runs <em>unification → focal point of attention → response → likelihood of purchase</em>: you go straight to the shirts and skip the shoes. A tidy layout eases the journey, but the buyer still decides.</li><li><strong>Proximity</strong> gives a frame of reference. An instant camera shown with alternatives just below it sets up a <em>reverse loop</em>: you compare each alternative back against your first pick until you settle.</li><li><strong>Closure</strong> keeps people engaged. A partial image, such as a car’s outline, builds suspense and keeps the audience hooked without giving everything away.</li></ul><div class=\"card\"><strong>Anchoring rides on proximity</strong><p>Show the original price (1,000) next to the offer price (600) and the first number becomes a <b>reference point</b>. The <b>anchoring effect</b> is a separate idea: an initial piece of information that sways later judgement. Without the original price there is nothing to compare against. Proximity puts the two numbers side by side; anchoring does the persuading.</p></div><p><strong>Where Gestalt is used:</strong> packaging and advertising, user experience, physical store layouts, website and mobile-app design (logo placement, the spacing of icons), and digital and print media. <strong>Link to Lecture 24:</strong> closure is the visual form of <em>constructive</em> perception, filling in what is missing.</p><div class=\"def\"><b>From the lecture (L#25):</b> no Quiz 2 details were given. The task set for the next session: find real advertisements and designs, beyond the ones shown, that use each of the five principles, and analyse them from a marketer’s point of view. A regular doubt-clearing session followed.</div><!--viz:pom-gestalt-four-panels--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Four small drawings. Proximity: identical dots split into two groups by a gap. Similarity: evenly spaced dots read as columns because alternate columns are filled. Closure: three cut circles make a triangle that is not drawn. Continuity: two crossing lines, each followed along its own path.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Four Gestalt principles, drawn</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 260\" role=\"img\" aria-label=\"Four panels: proximity, where a gap splits identical dots into two groups; similarity, where colour turns evenly spaced dots into columns; closure, where three cut circles suggest a triangle; continuity, where two crossing lines are each followed along their own path.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><rect x=\"10\" y=\"10\" width=\"205\" height=\"112\" rx=\"4\" style=\"fill:none;stroke:var(--rule-2);stroke-width:1.5\"/><rect x=\"225\" y=\"10\" width=\"205\" height=\"112\" rx=\"4\" style=\"fill:none;stroke:var(--rule-2);stroke-width:1.5\"/><rect x=\"10\" y=\"134\" width=\"205\" height=\"116\" rx=\"4\" style=\"fill:none;stroke:var(--rule-2);stroke-width:1.5\"/><rect x=\"225\" y=\"134\" width=\"205\" height=\"116\" rx=\"4\" style=\"fill:none;stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"20\" y=\"32\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Proximity</text><text x=\"20\" y=\"48\" style=\"fill:var(--ink-3);font-size:13px\">a gap makes 2 groups</text><circle cx=\"36\" cy=\"70\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"36\" cy=\"88\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"36\" cy=\"106\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"54\" cy=\"70\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"54\" cy=\"88\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"54\" cy=\"106\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"72\" cy=\"70\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"72\" cy=\"88\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"72\" cy=\"106\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"138\" cy=\"70\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"138\" cy=\"88\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"138\" cy=\"106\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"156\" cy=\"70\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"156\" cy=\"88\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"156\" cy=\"106\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"174\" cy=\"70\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"174\" cy=\"88\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"174\" cy=\"106\" r=\"6\" style=\"fill:var(--ink-3)\"/><text x=\"235\" y=\"32\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Similarity</text><text x=\"235\" y=\"48\" style=\"fill:var(--ink-3);font-size:13px\">look-alikes make columns</text><circle cx=\"258\" cy=\"70\" r=\"6\" style=\"fill:var(--blue)\"/><circle cx=\"258\" cy=\"88\" r=\"6\" style=\"fill:var(--blue)\"/><circle cx=\"258\" cy=\"106\" r=\"6\" style=\"fill:var(--blue)\"/><circle cx=\"292\" cy=\"70\" r=\"6\" style=\"fill:none;stroke:var(--ink-3);stroke-width:1.5\"/><circle cx=\"292\" cy=\"88\" r=\"6\" style=\"fill:none;stroke:var(--ink-3);stroke-width:1.5\"/><circle cx=\"292\" cy=\"106\" r=\"6\" style=\"fill:none;stroke:var(--ink-3);stroke-width:1.5\"/><circle cx=\"326\" cy=\"70\" r=\"6\" style=\"fill:var(--blue)\"/><circle cx=\"326\" cy=\"88\" r=\"6\" style=\"fill:var(--blue)\"/><circle cx=\"326\" cy=\"106\" r=\"6\" style=\"fill:var(--blue)\"/><circle cx=\"360\" cy=\"70\" r=\"6\" style=\"fill:none;stroke:var(--ink-3);stroke-width:1.5\"/><circle cx=\"360\" cy=\"88\" r=\"6\" style=\"fill:none;stroke:var(--ink-3);stroke-width:1.5\"/><circle cx=\"360\" cy=\"106\" r=\"6\" style=\"fill:none;stroke:var(--ink-3);stroke-width:1.5\"/><circle cx=\"394\" cy=\"70\" r=\"6\" style=\"fill:var(--blue)\"/><circle cx=\"394\" cy=\"88\" r=\"6\" style=\"fill:var(--blue)\"/><circle cx=\"394\" cy=\"106\" r=\"6\" style=\"fill:var(--blue)\"/><text x=\"20\" y=\"156\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Closure</text><text x=\"20\" y=\"172\" style=\"fill:var(--ink-3);font-size:13px\">a triangle</text><text x=\"20\" y=\"188\" style=\"fill:var(--ink-3);font-size:13px\">nobody drew</text><path d=\"M150,176 L144,186.4 A12,12 0 1 1 156,186.4 Z\" style=\"fill:var(--ink-2);stroke:none\"/><path d=\"M118,230 L130,230.1 A12,12 0 1 1 124.1,219.7 Z\" style=\"fill:var(--ink-2);stroke:none\"/><path d=\"M182,230 L175.9,219.7 A12,12 0 1 1 170,230.1 Z\" style=\"fill:var(--ink-2);stroke:none\"/><text x=\"235\" y=\"156\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Continuity</text><text x=\"320\" y=\"156\" style=\"fill:var(--ink-3);font-size:13px\">the eye keeps</text><text x=\"320\" y=\"172\" style=\"fill:var(--ink-3);font-size:13px\">to its line</text><path d=\"M240,236 L418,184\" style=\"fill:none;stroke:var(--blue);stroke-width:2\"/><path d=\"M240,190 C300,190 350,248 418,236\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Distance, look-alikes, gaps and paths: the brain organises the cues before you decide anything.</figcaption></figure><!--/viz:pom-gestalt-four-panels-->"
     },
     {
      "t": "Textbook: Consumer Markets and Buyer Behavior",
@@ -508,6 +545,10 @@ HUB.addCourse({
   },
   {
    "name": "Motivation",
+   "unit": "cb"
+  },
+  {
+   "name": "Perception",
    "unit": "cb"
   }
  ],
@@ -1062,6 +1103,76 @@ HUB.addCourse({
    "p": "A brand considered by 30% of buyers with a 15% share has a CGI of 2.0: its consideration runs ahead of its sales, which in the study goes with growth. Dividing the other way round gives 0.5 and the opposite reading.",
    "f": "consideration over share",
    "lec": 21
+  },
+  {
+   "id": "pom-t0083",
+   "h": "Marketing rarely changes the product; it changes the meaning attached to it",
+   "p": "The four almond packs held much the same almonds, differing mainly in polishing, size and packaging, yet scores ran from about 4 to about 9 at the same price. The packaging changed the meaning, not the nuts.",
+   "f": "same almonds, new meaning",
+   "lec": 24
+  },
+  {
+   "id": "pom-t0084",
+   "h": "The lecture's four characteristics are not Kotler's three selective processes",
+   "p": "The lecture lists selective, subjective, constructive and abstract. Kotler & Armstrong (in the textbook block) list selective attention, selective distortion and selective retention. Only “selective” appears in both, so don't mix the lists.",
+   "f": "four traits ≠ three selectives",
+   "lec": 24
+  },
+  {
+   "id": "pom-t0085",
+   "h": "Product categories are the default; perceptual product categories are by design",
+   "p": "Consumers file things as “toothpaste” or “cars” on their own. Marketers build categories like “toothpaste for sensitive teeth”. Swapping the two is the easiest mistake on this topic.",
+   "f": "default = product, design = perceptual",
+   "lec": 24
+  },
+  {
+   "id": "pom-t0086",
+   "h": "A high price doesn't only push buyers away; it can strengthen the perception",
+   "p": "Once prices showed, most students left the ₹2,700 almonds for cheaper packs. Buyers who could afford it stayed, and for them the price itself said “this must be good”. Price is a perceptual cue, not just a cost.",
+   "f": "pricey reads as good",
+   "lec": 24
+  },
+  {
+   "id": "pom-t0087",
+   "h": "Filling in missing information is constructive, not subjective",
+   "p": "Told only the brand name, viewers completed the picture (“Fabindia, so clothing”): that is constructive. Subjective is when the same thing means different things to different people.",
+   "f": "half the facts, you build the rest",
+   "lec": 24
+  },
+  {
+   "id": "pom-t0088",
+   "h": "Subliminal means below conscious awareness, not “more appealing to the senses”",
+   "p": "The live session used “subliminal perception” for a vivid drink-pouring ad that engages the senses. In the standard sense (Kotler & Armstrong in the textbook block) a subliminal stimulus sits below the threshold of conscious awareness, and the book finds little evidence of its power. A vivid ad is noticed consciously: it is about clearing the absolute threshold and winning attention.",
+   "f": "subliminal = below awareness",
+   "lec": 25
+  },
+  {
+   "id": "pom-t0089",
+   "h": "Like products shelved together is grouping and similarity, not continuity",
+   "p": "One presenter filed shampoos-together, soaps-together under continuity, but the session's own summary and store-layout use case put it under grouping. Continuity is the eye following a line or a sequence (a route, a page that leads from product to price to rating).",
+   "f": "alike → grouped; path → continuity",
+   "lec": 25
+  },
+  {
+   "id": "pom-t0090",
+   "h": "In proximity, the gap decides the group, not the colour",
+   "p": "Dots of mixed colours with a wide gap still read as two groups. That is proximity. Grouping by colour, shape or style is similarity. If a question stresses spacing, answer proximity.",
+   "f": "space beats colour",
+   "lec": 25
+  },
+  {
+   "id": "pom-t0091",
+   "h": "Anchoring is its own concept; proximity only sets it up",
+   "p": "Placing the original price beside the offer price uses proximity, but the persuasion comes from the anchoring effect: the first number becomes the reference point. The session said the two go hand in hand, not that they are the same thing.",
+   "f": "proximity places, anchor persuades",
+   "lec": 25
+  },
+  {
+   "id": "pom-t0092",
+   "h": "Standing out on the shelf earns engagement, not a guaranteed sale",
+   "p": "Figure and ground and tidy grouping raise the chance that a shopper picks the product up and reads the label. The session stressed this does not guarantee a purchase: budget and the buyer's own decision still intervene.",
+   "f": "noticed ≠ bought",
+   "lec": 25
   }
  ],
  "defs": [
@@ -1778,6 +1889,126 @@ HUB.addCourse({
    "term": "Customer Growth Indicator (CGI)",
    "html": "<b>Customer Growth Indicator (CGI)</b> = % of consumers who initially consider a brand ÷ the brand's market share by sales (McKinsey, 2019). It explained 60–80% of the variation in sales growth between brands in most categories.",
    "lec": 21
+  },
+  {
+   "id": "pom-d0092",
+   "unit": "cb",
+   "topic": "Perceptual product categories",
+   "term": "Perceptual product category",
+   "html": "<b>Perceptual product category</b>: a category the buyer forms around a need or benefit, such as “toothpaste for sensitive teeth”. Marketers create it <b>by design</b> so their product is not seen as interchangeable.",
+   "lec": 24
+  },
+  {
+   "id": "pom-d0093",
+   "unit": "cb",
+   "topic": "Perceptual product categories",
+   "term": "Product category (default storage)",
+   "html": "<b>Product category</b>: the broad label consumers store information under <b>by default</b>, such as “toothpaste” or “cars”. Left there, all brands look alike and buyers choose on price or convenience.",
+   "lec": 24
+  },
+  {
+   "id": "pom-d0094",
+   "unit": "cb",
+   "topic": "Meaning over stimulus: packaging and price as cues",
+   "term": "Physical stimulus vs meaning attached",
+   "html": "Marketing rarely changes the <b>physical stimulus</b> alone; it changes the <b>meaning attached</b> to it (through packaging, brand, claims and price), and the meaning forms the buyer's perception.",
+   "lec": 24
+  },
+  {
+   "id": "pom-d0095",
+   "unit": "cb",
+   "topic": "Perception: how buyers see the world",
+   "term": "Selective perception (lecture)",
+   "html": "<b>Selective</b>: a buyer picks up only what suits their needs, background and way of thinking. One of the lecture's four characteristics of perception.",
+   "lec": 24
+  },
+  {
+   "id": "pom-d0096",
+   "unit": "cb",
+   "topic": "Perception: how buyers see the world",
+   "term": "Subjective perception",
+   "html": "<b>Subjective</b>: the same product, image or message can mean one thing to one person and the opposite to another.",
+   "lec": 24
+  },
+  {
+   "id": "pom-d0097",
+   "unit": "cb",
+   "topic": "Perception: how buyers see the world",
+   "term": "Constructive perception",
+   "html": "<b>Constructive</b>: given partial information, the buyer completes it from what they already know or believe, as when a brand name alone suggests the product.",
+   "lec": 24
+  },
+  {
+   "id": "pom-d0098",
+   "unit": "cb",
+   "topic": "Perception: how buyers see the world",
+   "term": "Abstract perception",
+   "html": "<b>Abstract</b>: perceptions are not standard across people and can rest on thoughts rather than on any value the product actually delivers.",
+   "lec": 24
+  },
+  {
+   "id": "pom-d0099",
+   "unit": "cb",
+   "topic": "From stimulus to perception: thresholds and stages",
+   "term": "Absolute threshold",
+   "html": "<b>Absolute threshold</b>: the minimum level a stimulus must reach before a person notices it at all, like a lit candle in a dark room. The first bar an ad must clear.",
+   "lec": 25
+  },
+  {
+   "id": "pom-d0100",
+   "unit": "cb",
+   "topic": "From stimulus to perception: thresholds and stages",
+   "term": "Differential threshold",
+   "html": "<b>Differential threshold</b> (<b>just noticeable difference</b>): the smallest change between two stimuli that a person can detect. Two extra grains of rice go unnoticed; two pinches do not.",
+   "lec": 25
+  },
+  {
+   "id": "pom-d0101",
+   "unit": "cb",
+   "topic": "Gestalt principles: how the brain organises what it sees",
+   "term": "Figure and ground",
+   "html": "<b>Figure and ground</b>: the brain separates an object (the <b>figure</b>, foreground) from its background (the <b>ground</b>, negative space). Ads use contrast to make the product the focal point.",
+   "lec": 25
+  },
+  {
+   "id": "pom-d0102",
+   "unit": "cb",
+   "topic": "Gestalt principles: how the brain organises what it sees",
+   "term": "Continuity",
+   "html": "<b>Continuity</b>: elements on a line or curve are seen as related, and the eye keeps following a path even where lines cross. Pages use it to set the order in which you look.",
+   "lec": 25
+  },
+  {
+   "id": "pom-d0103",
+   "unit": "cb",
+   "topic": "Gestalt principles: how the brain organises what it sees",
+   "term": "Grouping and similarity",
+   "html": "<b>Grouping and similarity</b>: items that look alike (colour, shape, size, style) are seen as one group, like offer cards that share a layout or a shop's separate sections.",
+   "lec": 25
+  },
+  {
+   "id": "pom-d0104",
+   "unit": "cb",
+   "topic": "Gestalt principles: how the brain organises what it sees",
+   "term": "Proximity",
+   "html": "<b>Proximity</b>: items placed close together are seen as a group and a gap reads as a boundary, whatever their colour. It also gives the buyer a frame of reference for comparing.",
+   "lec": 25
+  },
+  {
+   "id": "pom-d0105",
+   "unit": "cb",
+   "topic": "Gestalt principles: how the brain organises what it sees",
+   "term": "Closure",
+   "html": "<b>Closure</b>: the brain fills in missing parts to complete a familiar pattern from memory, as in a car's “coming soon” silhouette or tomato slices that form a ketchup bottle.",
+   "lec": 25
+  },
+  {
+   "id": "pom-d0106",
+   "unit": "cb",
+   "topic": "Gestalt principles: how the brain organises what it sees",
+   "term": "Anchoring effect",
+   "html": "<b>Anchoring effect</b>: an initial piece of information (such as the original price shown beside the offer price) becomes the reference point that sways later judgement.",
+   "lec": 25
   }
  ],
  "questions": [
@@ -6142,6 +6373,525 @@ HUB.addCourse({
    "w": "The study found that influence differs by segment: tech masters lean most on online reviews, while status leaders lean on family and friends. Mass-media advertising is not what the study names as this segment's main influence.",
    "lec": 21,
    "lv": "apply"
+  },
+  {
+   "id": "pom-q0265",
+   "topic": "Perception",
+   "q": "Which of these are characteristics of perception as listed in Lecture 24? (Select all)",
+   "c": [
+    "Selective",
+    "Objective",
+    "Constructive",
+    "Abstract"
+   ],
+   "a": [
+    0,
+    2,
+    3
+   ],
+   "w": "The lecture's four are selective, subjective, constructive and abstract. Perception is the opposite of objective: the same image or product means different things to different people.",
+   "lec": 24,
+   "lv": "recall",
+   "multi": true
+  },
+  {
+   "id": "pom-q0266",
+   "topic": "Perception",
+   "q": "Told only that a model is endorsing Fabindia, a viewer decides she must be advertising a top or a pair of earrings. Which characteristic of perception is at work?",
+   "c": [
+    "Subjective",
+    "Abstract",
+    "Constructive",
+    "Selective"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Given partial information (just the brand), the viewer completes the picture from what they already associate with Fabindia. That is constructive perception. Subjective would mean two people reading the same thing differently, which this case doesn't show.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0267",
+   "topic": "Perception",
+   "q": "The same festive ad moves one viewer to tears and strikes her flatmate as manipulative. Which characteristic of perception does this show most directly?",
+   "c": [
+    "Subjective: the same stimulus means different things to different people",
+    "Constructive: the viewer completes missing information",
+    "Selective retention: the viewer forgets the ad",
+    "Physical stimulus: the ad itself was different for each viewer"
+   ],
+   "a": [
+    0
+   ],
+   "w": "One ad, two opposite readings, is the lecture's subjective characteristic. Nothing is missing for anyone to fill in (constructive), and both viewers saw exactly the same ad.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0268",
+   "topic": "Perception",
+   "q": "In the duck/rabbit exercise, adding carrots made almost everyone see a rabbit. What do the carrots stand for in marketing?",
+   "c": [
+    "A change to the physical product itself",
+    "An external cue, such as a price discount, that steers perception the way the marketer wants",
+    "A hygiene factor that prevents dissatisfaction",
+    "Proof that perception cannot be changed"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He said marketers give buyers external cues or stimuli, and a carrot could just as well be a price discount. The drawing itself didn't change; one added element changed how everyone read it.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0269",
+   "topic": "Perception",
+   "q": "Complete the lecture's principle: marketing rarely changes the physical stimulus alone; it mostly changes…",
+   "c": [
+    "the price of the stimulus",
+    "the buyer's underlying motivation",
+    "the distribution channel",
+    "the meaning attached to the stimulus"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The fundamental he stated: marketers often don't need to change the physical product much, because changing the meaning attached to it is what forms the perception.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0270",
+   "topic": "Perception",
+   "q": "At equal prices, most students chose the premium almond pack (zip-lock, “California almonds”, health claims) and scored it about 9 out of 10. Why, according to the lecture?",
+   "c": [
+    "Its almonds were of a clearly better variety",
+    "It was the only pack that showed the almonds",
+    "Its packaging communicated benefits, so buyers attached a meaning of superior quality to almonds that were much the same",
+    "It was the cheapest of the four"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The almonds come from a similar source, and most of the health claims are true of nearly all almonds. The packaging created the meaning. It was the transparent pack that showed the almonds, and at that stage all four cost the same.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0271",
+   "topic": "Perception",
+   "q": "When prices were revealed (₹550 to ₹2,700), a high-earning shopper still chose the ₹2,700 almonds. How did the lecture explain this?",
+   "c": [
+    "The high price strengthened her perception that the product is good: if it is expensive, it must be good",
+    "The cheaper packs must have been out of stock",
+    "Expensive packs always win, whatever the buyer's income",
+    "Her choice shows that packaging has no effect on perception"
+   ],
+   "a": [
+    0
+   ],
+   "w": "For buyers who can afford it, price further enhances the perception: “seeing is believing, believing is seeing”. Expensive packs don't always win: most students switched to cheaper packs once prices showed.",
+   "lec": 24,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0272",
+   "topic": "Perception",
+   "q": "Most of a class rates BMW, Mercedes and Audi highly for quality and performance, though few have owned or driven one. What does the lecture say explains this?",
+   "c": [
+    "First-hand experience of the cars",
+    "A perception built from what others say, what they have read and what marketers show them",
+    "Herzberg's motivators at work",
+    "Selective retention of test-drive memories"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He used this example to show perception forms even without using the product: buyers collect information and interpret it into a meaningful image. The students had no test drives to remember.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0273",
+   "topic": "Perception",
+   "q": "“Believing is seeing”, in the lecture's sense, means:",
+   "c": [
+    "Buyers trust only products they have seen in a store",
+    "Seeing a product proves its quality",
+    "Advertising must always show the product in use",
+    "What a buyer already believes, such as “expensive means good”, shapes how a product looks to them before they use it"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He turned the old saying round: beliefs shape what we see. A buyer who believes expensive means good sees an expensive product as good without trying it.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0274",
+   "topic": "Perception",
+   "q": "By default consumers store information as ___; by design marketers create ___.",
+   "c": [
+    "product categories; perceptual product categories",
+    "perceptual product categories; product categories",
+    "brands; product categories",
+    "needs; motivators"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Consumers file things broadly (“toothpaste”, “cars”) on their own. Marketers build need-based categories (“toothpaste for sensitive teeth”) through their products and campaigns. The reversed pair is the common slip.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0275",
+   "topic": "Perception",
+   "q": "A heavy coffee drinker who smokes is worried about yellowing teeth. Which perceptual product category from the lecture is she shopping in?",
+   "c": [
+    "Toothpaste for sensitive teeth (Sensodyne)",
+    "Toothpaste for freshness (Closeup)",
+    "Toothpaste for whiter teeth (Colgate Visible White)",
+    "Toothpaste for all-round protection (Colgate Total)"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He placed Colgate Visible White in the whiter-teeth category, aimed at heavy tea or coffee drinkers and smokers. Freshness is about breath, not tooth shade.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0276",
+   "topic": "Perception",
+   "q": "A new toothpaste brand runs ads that say only “a great toothpaste”. Using the lecture's reasoning, what risk does it face?",
+   "c": [
+    "Buyers will see it as interchangeable with every other toothpaste and choose on price, reach or whichever they see first",
+    "Buyers will become loyal to it at once",
+    "Buyers will file it under a perceptual product category on their own",
+    "Rivals will be forced to cut their prices"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Without a perceptual product category, all products look similar, and the buyer takes the cheapest, nearest or first one with no preference. Buyers file things as broad product categories by default, so they won't create the need-based category for the brand.",
+   "lec": 24,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0277",
+   "topic": "Perception",
+   "q": "Why did Horlicks add Growth+, Lite, Junior, Mother's and Women's variants to its original drink?",
+   "c": [
+    "To cut production costs through a single formula",
+    "To replace the original Horlicks, which had stopped selling",
+    "To make price comparisons with rivals harder",
+    "To create perceptual product categories for different ages, life stages and needs, and so reach a wider audience"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Each variant speaks to a different need (growth, less sugar, pregnancy, women's changing nutrition), so buyers see a product made for them. He linked this to segmentation, targeting and positioning: several products that each suit someone sell more than one product aimed at everyone.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0278",
+   "topic": "Perception",
+   "q": "Which of these create a perceptual product category? (Select all)",
+   "c": [
+    "A lower-sugar variant of a malt drink for health-conscious buyers",
+    "Cutting the price of the regular pack by 10%",
+    "A toothpaste positioned only for sensitive teeth",
+    "A nutrition drink made and marketed for expectant mothers"
+   ],
+   "a": [
+    0,
+    2,
+    3
+   ],
+   "w": "A lower-sugar variant, a sensitive-teeth toothpaste and a drink for expectant mothers each tie the product to a specific need (the Horlicks Lite, Sensodyne and Mother's Horlicks pattern). A price cut changes what the product costs, not the need it is filed under.",
+   "lec": 24,
+   "lv": "apply",
+   "multi": true
+  },
+  {
+   "id": "pom-q0279",
+   "topic": "Perception",
+   "q": "Shown a picture of a bus, a hatchback, a sedan, a truck, an ambulance and a fire truck, nearly everyone wrote “cars”. What point did the lecturer draw?",
+   "c": [
+    "People cannot tell vehicles apart",
+    "Perception is objective, so everyone saw the same thing",
+    "By default, consumers store information under broad product categories, which marketers then try to split into perceptual ones",
+    "Buyers always prefer whatever they saw first"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He used the picture to show default storage: one broad label for very different things. That is the problem perceptual product categories solve.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0280",
+   "topic": "Perception",
+   "q": "In a blind taste test of two colas, most people can't tell which brand they are drinking, yet they hold strong brand preferences. What explains this, in the lecture's terms?",
+   "c": [
+    "The colas must differ greatly in taste",
+    "Packaging and brand communicate a meaning; the meaning shapes perception; perception shapes the choice",
+    "Taste is the only cue buyers rely on",
+    "Preferences come from Herzberg's hygiene factors"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Without the bottle the drinks taste much the same, so the preference must come from the meaning the packaging and brand carry. If taste were the only cue, the blind test would reveal the preference.",
+   "lec": 24,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0281",
+   "topic": "Perception",
+   "q": "Two ketchups: one a known brand saying “fresh tomato”, the other bright red with visible tomatoes and “chef special”. Shoppers split between them. What lesson did the lecture draw?",
+   "c": [
+    "The bright-red bottle is objectively better",
+    "Known brands always win",
+    "Shoppers are really choosing on taste",
+    "One size doesn't fit all: each pack conveys a different meaning that attracts a different set of buyers"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He said each bottle influences a different set of consumers through perception, which is why so many brands sell near-identical products in the same line. A blind taste test would show little difference, so taste isn't the deciding factor.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0282",
+   "topic": "Perception",
+   "q": "At equal prices, which almond pack did the lecturer suggest a purely rational buyer might favour, and why?",
+   "c": [
+    "The premium pack, because its health claims are unique to it",
+    "The transparent pack, because it shows what you will actually eat",
+    "The wafer-style pack, because it says “California”",
+    "Any pack, because rational buyers never compare almonds"
+   ],
+   "a": [
+    1
+   ],
+   "w": "His point: you don't eat the packaging, so a rational buyer would value seeing the product. The premium pack's claims (fibre, antioxidants) are true of almost all almonds.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0283",
+   "topic": "Perception",
+   "q": "A lit candle is noticed instantly in a dark room. Which concept did the live session use this to illustrate?",
+   "c": [
+    "Differential threshold",
+    "Absolute threshold",
+    "Closure",
+    "Selective retention"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The candle shows the absolute threshold: the minimum level a stimulus must reach to be noticed at all. The differential threshold is about noticing a change between two stimuli, such as extra grains of rice.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0284",
+   "topic": "Perception",
+   "q": "A biscuit maker trims a pack from 100 g to 97 g and is betting that shoppers won't notice. Which concept tells it how small the change must be to stay unnoticed?",
+   "c": [
+    "Absolute threshold",
+    "Figure and ground",
+    "Differential threshold (the just noticeable difference)",
+    "Anchoring effect"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The differential threshold is the smallest change a person can detect, like the session's grains of rice: a few go unnoticed, a pinch is felt. The absolute threshold is about noticing a stimulus at all, not a change in it.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0285",
+   "topic": "Perception",
+   "q": "In the standard sense used by Kotler & Armstrong, subliminal advertising means:",
+   "c": [
+    "Messages pitched below the threshold of conscious awareness",
+    "An ad that engages several senses at once",
+    "An ad that uses negative space",
+    "Any ad repeated often enough to be remembered"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Subliminal means below conscious awareness, and the textbook finds little evidence that it has strong effects. The live session used the word for a vivid drink-pouring ad, but that ad is consciously noticed: it is about attention, not subliminal perception.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0286",
+   "topic": "Perception",
+   "q": "An ad shows dancers as solid dark silhouettes against a bright backdrop, with only the white earphones and player left visible. Which Gestalt principle is it using?",
+   "c": [
+    "Closure",
+    "Proximity",
+    "Continuity",
+    "Figure and ground"
+   ],
+   "a": [
+    3
+   ],
+   "w": "This is the session's Apple iPod example: contrast between the figure (white product) and the ground pulls the eye to the product. Closure would need a missing part for the viewer to complete; here the product is shown in full.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0287",
+   "topic": "Perception",
+   "q": "Before launch, a carmaker releases only the dark outline of its new SUV with the words “coming soon”. Viewers mentally complete the car and stay curious. Which principle is at work?",
+   "c": [
+    "Closure",
+    "Similarity",
+    "Proximity",
+    "Differential threshold"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Closure is the brain filling in missing parts from memory, as in the session's Kia Sonet silhouette. The partial image builds suspense and keeps the audience hooked.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0288",
+   "topic": "Perception",
+   "q": "An app shows every promotional offer as a card with the same layout: image, short description, discount. Shoppers instantly read them as one kind of information. Which principle?",
+   "c": [
+    "Continuity",
+    "Grouping and similarity",
+    "Figure and ground",
+    "Absolute threshold"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Items that look alike are seen as one group, so a repeated layout tells the shopper “these are all offers” without relearning the format each time (the session's Myntra example). Continuity is about following a line or sequence, not about items looking alike.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0289",
+   "topic": "Perception",
+   "q": "A shoe listing shows “₹1,000” struck through right beside “₹600”, and the offer feels like a bargain. Which pair of ideas did the session say work together here?",
+   "c": [
+    "Closure and continuity",
+    "Figure and ground and closure",
+    "Proximity and the anchoring effect",
+    "Similarity and the absolute threshold"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Proximity places the original price next to the offer price; the anchoring effect makes the first number the reference point that judges the second. Without the original price there is nothing to compare against.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0290",
+   "topic": "Perception",
+   "q": "A used-car site shows brand logos first, then three steps in a row: online evaluation → car inspection → best price. The layout leads the visitor's eye through the decision in that order. Which principle?",
+   "c": [
+    "Proximity",
+    "Closure",
+    "Figure and ground",
+    "Continuity"
+   ],
+   "a": [
+    3
+   ],
+   "w": "This is the session's Cars24 example of continuity: the page sets a visual path that matches the natural flow of the decision. Proximity would be about items grouped by spacing, not about the order the eye follows.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0291",
+   "topic": "Perception",
+   "q": "Eight dots of mixed colours sit in a row, with a wide gap after the fourth. Viewers see two groups of four. Which principle explains this?",
+   "c": [
+    "Similarity: colour decides the groups",
+    "Proximity: the spacing decides the groups, whatever the colours",
+    "Continuity: the dots form a line",
+    "Closure: the brain fills the gap"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The session's dot figures showed that the gap, not the colour, decides the grouping. Similarity would group by colour, but here the colours are mixed within each group.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0292",
+   "topic": "Perception",
+   "q": "Which of these are Gestalt principles covered in the live session? (Select all)",
+   "c": [
+    "Figure and ground",
+    "Selective distortion",
+    "Closure",
+    "Proximity"
+   ],
+   "a": [
+    0,
+    2,
+    3
+   ],
+   "w": "The session covered figure and ground, continuity, grouping and similarity, proximity and closure. Selective distortion is one of Kotler & Armstrong's selective processes of perception, not a Gestalt principle.",
+   "lec": 25,
+   "lv": "recall",
+   "multi": true
+  },
+  {
+   "id": "pom-q0293",
+   "topic": "Perception",
+   "q": "Shown broken, Pac-Man-like shapes, most students reported a triangle or a square, though neither was drawn. What does Gestalt theory say is happening?",
+   "c": [
+    "The eye records the image exactly, as a camera does",
+    "Students were guessing at random",
+    "The brain organises incomplete cues into a whole pattern, predicting from past experience",
+    "The shapes were below the absolute threshold"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Gestalt says the brain does not process images like a camera: it groups cues into patterns and predicts what it expects from past experience. Had the shapes been below the absolute threshold, nobody would have noticed them at all.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0294",
+   "topic": "Perception",
+   "q": "A supermarket keeps all shampoos in one aisle and all soaps in another. Going by the session's summary of the principles and their use in store layouts, which principle does this arrangement chiefly use?",
+   "c": [
+    "Closure",
+    "Figure and ground",
+    "Differential threshold",
+    "Grouping and similarity"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Similar products placed together are seen as one group, which makes comparing and choosing easy; the session's summary listed store layouts under grouping. Figure and ground is about one product standing out from its background, not about putting like items together.",
+   "lec": 25,
+   "lv": "analyse"
   }
  ],
  "briefs": {
@@ -6149,7 +6899,7 @@ HUB.addCourse({
    "scopeShort": "All to 27 Sep",
    "tag": "from the official LMS announcement",
    "lede": "Dr. Kapoor never announced this quiz in any lecture — no date, format or scope. Everything below comes from the official LMS announcement, which is the only source for it.",
-   "html": "\n    <div class=\"grid2\">\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Confirmed on the official announcement</h4>\n        <div class=\"scroller\"><table><tbody>\n          <tr><td><strong>Date</strong></td><td>Sunday 4 October</td></tr>\n          <tr><td><strong>Window</strong></td><td>1:00–1:30 PM IST · join from <strong>12:45 PM</strong></td></tr>\n          <tr><td><strong>Questions</strong></td><td><strong>20</strong>, for <strong>20 marks</strong> — the shortest of your six papers</td></tr>\n          <tr><td><strong>Type</strong></td><td>MCQ</td></tr>\n          <tr><td><strong>Weight</strong></td><td>20% · best 2 of 3 · 40% of the course total</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--bad);background:var(--bad-soft)\">\n          <b>Negative marking.</b> +1 correct, <strong>−0.25 for a wrong answer</strong>, 0 if left blank.\n        </div>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Scope</h4>\n        <p style=\"font-size:14.5px\">The announcement states it plainly: <strong>&ldquo;All the topics covered till 27 September 2026.&rdquo;</strong></p>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--good);background:var(--good-soft)\">\n          <b>No syllabus document, and no exclusions.</b> Unlike your other five courses, this announcement attaches no lecture list — so assume <strong>everything released</strong>, including the Week 6 consumer behaviour lecture of 22 September, is fair game.\n        </div>\n        <p style=\"font-size:14.5px;margin-top:11px\">The arc: what marketing is → need/want/demand → perceived value → exchange → satisfaction and loyalty → <strong>STP</strong> → POPs and PODs → consumer behaviour.</p>\n        <p style=\"font-size:13.5px;color:var(--ink-3);margin-top:11px\">He also mentioned a group marketing plan (20 marks) and optional B-school competitions (20 marks) as separate components, and a 60-mark final exam.</p>\n      </div>\n    </div>\n\n    <div class=\"card\" style=\"margin-top:14px;border-left:3px solid var(--clay)\">\n      <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">90 seconds a question — by far your most generous paper</h4>\n      <p style=\"font-size:14.5px;color:var(--ink-2)\">20 questions in 30 minutes. Compare that with 20 seconds a question in Foundations of Computing. You have time to read every stem properly and think — use it.</p>\n      <div class=\"scroller\" style=\"margin-top:11px\"><table><thead><tr><th>Situation</th><th>Expected value</th><th>Do</th></tr></thead><tbody>\n        <tr><td>You know it</td><td><strong>+1.00</strong></td><td>Answer</td></tr>\n        <tr><td>Rule out two of four</td><td><strong>+0.38</strong></td><td>Answer</td></tr>\n        <tr><td>Rule out one of four</td><td><strong>+0.17</strong></td><td>Answer</td></tr>\n        <tr><td>Blind guess</td><td><strong>+0.06</strong></td><td>Answer, but it gains almost nothing</td></tr>\n      </tbody></table></div>\n      <ul style=\"margin:11px 0 0;padding-left:19px;font-size:14.5px;line-height:1.7\">\n        <li><strong>Only 20 questions means each is worth 5% of the paper.</strong> One careless error costs more here than anywhere else — and with negative marking, a wrong answer swings you 1.25 marks against a blank.</li>\n        <li><strong>This course is lists and examples.</strong> Eight demand states, five need types, ten marketable entities, five segmentation bases, SAFE. Learn the brand example and the term comes with it.</li>\n        <li><strong>The confusable pairs are where the marks go:</strong> psychographic versus behavioural, exchange versus transaction, satisfaction versus loyalty, POP versus POD, heuristic versus nudge.</li>\n      </ul>\n    </div>",
+   "html": "\n    <div class=\"grid2\">\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Confirmed on the official announcement</h4>\n        <div class=\"scroller\"><table><tbody>\n          <tr><td><strong>Date</strong></td><td>Sunday 4 October</td></tr>\n          <tr><td><strong>Window</strong></td><td>1:00–1:30 PM IST · join from <strong>12:45 PM</strong></td></tr>\n          <tr><td><strong>Questions</strong></td><td><strong>20</strong>, for <strong>20 marks</strong> — the shortest of your six papers</td></tr>\n          <tr><td><strong>Type</strong></td><td>MCQ</td></tr>\n          <tr><td><strong>Weight</strong></td><td>30% of the course: the higher of your two quiz scores counts (rule from 14 Oct; at Quiz 1 it was 20%, best 2 of 3)</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--bad);background:var(--bad-soft)\">\n          <b>Negative marking.</b> +1 correct, <strong>−0.25 for a wrong answer</strong>, 0 if left blank.\n        </div>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Scope</h4>\n        <p style=\"font-size:14.5px\">The announcement states it plainly: <strong>&ldquo;All the topics covered till 27 September 2026.&rdquo;</strong></p>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--good);background:var(--good-soft)\">\n          <b>No syllabus document, and no exclusions.</b> Unlike your other five courses, this announcement attaches no lecture list — so assume <strong>everything released</strong>, including the Week 6 consumer behaviour lecture of 22 September, is fair game.\n        </div>\n        <p style=\"font-size:14.5px;margin-top:11px\">The arc: what marketing is → need/want/demand → perceived value → exchange → satisfaction and loyalty → <strong>STP</strong> → POPs and PODs → consumer behaviour.</p>\n        <p style=\"font-size:13.5px;color:var(--ink-3);margin-top:11px\">He also mentioned a group marketing plan (20 marks) and optional B-school competitions (20 marks) as separate components, and a 60-mark final exam.</p>\n      </div>\n    </div>\n\n    <div class=\"card\" style=\"margin-top:14px;border-left:3px solid var(--clay)\">\n      <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">90 seconds a question — by far your most generous paper</h4>\n      <p style=\"font-size:14.5px;color:var(--ink-2)\">20 questions in 30 minutes. Compare that with 20 seconds a question in Foundations of Computing. You have time to read every stem properly and think — use it.</p>\n      <div class=\"scroller\" style=\"margin-top:11px\"><table><thead><tr><th>Situation</th><th>Expected value</th><th>Do</th></tr></thead><tbody>\n        <tr><td>You know it</td><td><strong>+1.00</strong></td><td>Answer</td></tr>\n        <tr><td>Rule out two of four</td><td><strong>+0.38</strong></td><td>Answer</td></tr>\n        <tr><td>Rule out one of four</td><td><strong>+0.17</strong></td><td>Answer</td></tr>\n        <tr><td>Blind guess</td><td><strong>+0.06</strong></td><td>Answer, but it gains almost nothing</td></tr>\n      </tbody></table></div>\n      <ul style=\"margin:11px 0 0;padding-left:19px;font-size:14.5px;line-height:1.7\">\n        <li><strong>Only 20 questions means each is worth 5% of the paper.</strong> One careless error costs more here than anywhere else — and with negative marking, a wrong answer swings you 1.25 marks against a blank.</li>\n        <li><strong>This course is lists and examples.</strong> Eight demand states, five need types, ten marketable entities, five segmentation bases, SAFE. Learn the brand example and the term comes with it.</li>\n        <li><strong>The confusable pairs are where the marks go:</strong> psychographic versus behavioural, exchange versus transaction, satisfaction versus loyalty, POP versus POD, heuristic versus nudge.</li>\n      </ul>\n    </div>",
    "mapLede": "Eighteen lectures from Dr. Anuj Pal Kapoor. With no exclusions stated, treat all of them as in scope.",
    "syllabusNote": "",
    "drillLede": "Questions written from the lectures and transcripts. There is no official practice set for this course. With 90 seconds a question in the real paper, the pacer here is gentler than your other sheets.",
@@ -6204,6 +6954,8 @@ HUB.addCourse({
   "lec-21",
   "lec-23",
   "lec-20s",
-  "lec-21s"
+  "lec-21s",
+  "lec-24",
+  "lec-25"
  ]
 });

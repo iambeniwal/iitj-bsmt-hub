@@ -133,6 +133,24 @@ HUB.addCourse({
    "Week 8 — P&L Account",
    "Closing entries, retained earnings, statement links",
    "rec"
+  ],
+  [
+   22,
+   "Week 9 — Balance Sheet",
+   "Liquidity vs permanency order, assets and liabilities",
+   "rec"
+  ],
+  [
+   23,
+   "Week 9 — Cash flow Part 1",
+   "Why it exists, cash equivalents, three activities",
+   "rec"
+  ],
+  [
+   24,
+   "Week 8 — Live Lecture 5",
+   "Sorting accounts into statements, Vogue final accounts",
+   "live"
   ]
  ],
  "units": [
@@ -348,9 +366,24 @@ HUB.addCourse({
   {
    "id": "balance-sheet",
    "title": "Balance sheet: recognition &amp; classification",
-   "tag": "From the textbook",
-   "lede": "",
+   "tag": "Lectures 22, 24 · + textbook",
+   "lede": "The photograph of the business on one date: what it owns and owes, classified as current or long-term, and arranged in liquidity or permanency order.",
    "topics": [
+    {
+     "t": "The balance sheet — features and formats",
+     "src": "L#22",
+     "h": "<div class=\"def\">A <b>balance sheet</b> is a statement of the <b>assets and liabilities</b> of a firm <b>as at</b> a stated date. \"As at\" is the key phrase: it is a <b>point-in-time</b> picture, true on that date and not beyond it.</div><p style=\"font-size:14.5px\"><strong>Why only one date?</strong> A single transaction changes it. If part of the stock is sold on 1 April, stock falls, cash rises, and capital rises or falls by the profit or loss on that sale. The balance sheet of 31 March no longer describes the firm on 1 April.</p><h4>Three features she stressed</h4><ol><li><strong>Prepared on a particular date</strong>, so it is valid only for that date.</li><li><strong>Prepared after the profit and loss account.</strong> Net profit (or loss) has to be added to (or taken from) capital first, so the balance sheet cannot be finished without it. The profit and loss account (with the trading account) and the balance sheet together are the <strong>final accounts</strong> or final statements.</li><li><strong>The two sides must agree.</strong> Capital is the difference between assets and liabilities, and the capital account works its figure out independently. If the totals differ, there is an error somewhere in preparing the statements.</li></ol><h4>Two orders of marshalling</h4><p style=\"font-size:14.5px\"><strong>Liquidity order:</strong> the items most easily turned into cash come first. Assets start with cash in hand and cash at bank and end with plant, machinery, land and building; liabilities start with those payable soonest (bills payable, trade creditors) and end with reserves and surplus, and capital. <strong>Permanency order</strong> is the mirror image: land and building first and cash in hand last; capital and reserves first and bills payable last. The figure below sets them side by side.</p><h4>Two layouts</h4><p style=\"font-size:14.5px\">In class she used the <strong>T-form (horizontal)</strong> balance sheet: <strong>liabilities and capital on the left, assets on the right</strong>. You will also meet the <strong>vertical</strong> balance sheet, which lists assets first and then liabilities and capital beneath them in one column. She asked you to be familiar with both. (Anthony and most US statements put assets on the left of a horizontal layout; for this course, follow the lecture.)</p><h4>Profit and loss account vs balance sheet</h4><div class=\"scroller\"><table><thead><tr><th></th><th>Profit and loss account</th><th>Balance sheet</th></tr></thead><tbody><tr><td><strong>Shows</strong></td><td>Profit or loss <strong>for a period</strong> (usually the accounting year)</td><td>Financial position <strong>at a date</strong></td></tr><tr><td><strong>Items</strong></td><td>Revenue-nature items (incomes, expenses)</td><td>Capital-nature items (assets, liabilities, capital)</td></tr><tr><td><strong>Accounts afterwards</strong></td><td><strong>Closed</strong>: their balances are transferred to P&amp;L</td><td><strong>Not closed</strong>: balances are carried forward to next year</td></tr><tr><td><strong>Common ground</strong></td><td>Prepared from the trial balance</td><td>Prepared from the trial balance</td></tr></tbody></table></div><div class=\"def\"><b>From the lecture (L#22):</b> She set the P&amp;L-vs-balance-sheet comparison as a five-minute exercise and asked you to find more differences in the textbook. She also said you should be able to explain <b>why</b> the balance sheet can only be prepared after the profit and loss account, using the way the statements link (Lecture 21).</div><!--viz:fa-bs-two-orders--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table comparing the two orders. Liquidity order lists cash first and land and building last among assets, and bills payable first and capital last among liabilities. Permanency order reverses both lists.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Liquidity order and permanency order are mirror images</div><div class=\"scroller\"><table><thead><tr><th></th><th>Liquidity order</th><th>Permanency order</th></tr></thead><tbody><tr><td><strong>Assets: first</strong></td><td style=\"background:var(--blue-soft)\">Cash in hand, cash at bank</td><td style=\"background:var(--clay-soft)\">Land and building, plant and machinery</td></tr><tr><td><strong>then</strong></td><td>Investments, bills receivable, trade receivables, stock</td><td>Furniture and fixtures, stock, receivables, investments</td></tr><tr><td><strong>Assets: last</strong></td><td style=\"background:var(--clay-soft)\">Plant and machinery, land and building</td><td style=\"background:var(--blue-soft)\">Cash at bank, cash in hand</td></tr><tr><td><strong>Liabilities: first</strong></td><td style=\"background:var(--blue-soft)\">Bills payable, trade creditors</td><td style=\"background:var(--clay-soft)\">Capital, reserves and surplus</td></tr><tr><td><strong>then</strong></td><td>Short-term loans, long-term loans</td><td>Long-term loans, short-term loans</td></tr><tr><td><strong>Liabilities: last</strong></td><td style=\"background:var(--clay-soft)\">Reserves and surplus, capital</td><td style=\"background:var(--blue-soft)\">Trade creditors, bills payable</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Liquidity asks how soon an item becomes cash; permanency asks how long it stays in the business.</figcaption></figure><!--/viz:fa-bs-two-orders-->"
+    },
+    {
+     "t": "Assets and liabilities — types and worked balance sheets",
+     "src": "L#22",
+     "h": "<h4>Liabilities</h4><p style=\"font-size:14.5px\">A liability is a <strong>claim against the assets</strong> of the firm: in plain terms, what the firm owes. The American Accounting Association's definition, in short: creditors' claims on the enterprise, arising from past activities, to be settled by paying out or using up the firm's resources.</p><div class=\"scroller\"><table><thead><tr><th>Type</th><th>Test</th><th>Examples from the lecture</th></tr></thead><tbody><tr><td><strong>Current liabilities</strong></td><td>Payable within <strong>one year</strong> of the balance-sheet date, whether paid from existing current assets or by taking on new current liabilities</td><td>Bills payable, trade creditors; outstanding expenses (service received, not yet paid); bank overdraft and short-term loans; advances received for goods or services to be supplied later</td></tr><tr><td><strong>Long-term (fixed) liabilities</strong></td><td>Not due within one year, so they need no current assets for payment</td><td>She left the examples to you: long-term loans and debentures are the usual ones</td></tr></tbody></table></div><h4>Assets</h4><p style=\"font-size:14.5px\">An asset is anything the firm owns, anything that belongs to the business. The lecture uses <strong>three</strong> classes:</p><div class=\"scroller\"><table><thead><tr><th>Type</th><th>Meaning</th><th>Examples</th></tr></thead><tbody><tr><td><strong>Current assets</strong></td><td>Meant to be turned into cash or used up quickly, generally within one year</td><td>Cash in hand, cash at bank, trade receivables, inventory (stock)</td></tr><tr><td><strong>Fixed (long-term) assets</strong></td><td>Meant to be used by the firm over a long period</td><td>Machinery, buildings, land; a new office the firm builds</td></tr><tr><td><strong>Intangible assets</strong></td><td>No physical existence: cannot be touched</td><td>Trade rights, patents, copyrights</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The Anthony block in this unit adds the textbook refinement: current means within one year <strong>or the operating cycle, whichever is longer</strong>. The lecture states one year.</p><h4>Her two worked balance sheets</h4><ul><li><strong>ABC Ltd</strong> (the second problem of Lecture 21, gross profit ₹3,403, net profit ₹628). Assets picked from the trial balance: cash in hand, petty cash, bills receivable, debtors, closing stock <strong>₹3,700</strong>, plant and machinery, furniture. Liabilities: bills payable, creditors, bank overdraft, and capital <strong>plus the net profit of ₹628</strong>. Both sides total <strong>₹16,177</strong>. (Closing stock comes from the adjustment, not from the trial balance list.)</li><li><strong>Dyal Brothers</strong>, year ended 31 March 2020, a ten-minute class exercise in <strong>permanency order</strong>: land and building, furniture, inventories, trade receivables and advances paid to suppliers on the asset side; on the other side capital ₹7,00,000 <strong>+ net profit ₹1,00,000 − drawings ₹60,000 = ₹7,40,000</strong>, then the other liabilities. The two totals agree (the grand total is not clear in the recording).</li></ul><p style=\"font-size:14.5px\">A complete example with our own figures, in the T-form and permanency order, is in the figure below. Current assets total ₹2,00,000 and current liabilities ₹1,10,000.</p><h4>The accounting cycle, complete</h4><p style=\"font-size:14.5px\">Journalise → post to the ledger → trial balance (arithmetical check) → trading and profit and loss account (the income statement) → <strong>balance sheet</strong>. Preparing the balance sheet is the <strong>last step</strong> of the cycle. (The adjusting entries of Lectures 17 and 19 sit between the trial balance and the final accounts.)</p><!--viz:fa-bs-meera-traders--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Horizontal balance sheet of Meera Traders as at 31 March 2026. Left side: capital 4,00,000 plus net profit 90,000 less drawings 30,000 gives 4,60,000, then long-term loan 1,50,000, bank overdraft 25,000, trade creditors 60,000, bills payable 15,000 and outstanding expenses 10,000. Right side: land and building 3,00,000, plant and machinery 1,50,000, furniture 40,000, patents 30,000, closing stock 85,000, trade debtors 70,000, bills receivable 20,000, cash at bank 18,000, cash in hand 7,000. Both sides total 7,20,000.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">A balance sheet in T-form, permanency order: totals ₹7,20,000</div><div style=\"font-size:13px\"><div style=\"display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:4px;gap:8px\"><span style=\"color:var(--ink-3)\">Liabilities</span><b style=\"text-align:center\">Meera Traders · Balance Sheet as at 31 March 2026</b><span style=\"color:var(--ink-3)\">Assets</span></div><div style=\"display:grid;grid-template-columns:1fr 1fr\"><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span>Capital (opening)</span><span style=\"font-family:var(--mono);white-space:nowrap\">4,00,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Land and building</span><span style=\"font-family:var(--mono);white-space:nowrap\">3,00,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span>Add: Net profit</span><span style=\"font-family:var(--mono);white-space:nowrap\">90,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Plant and machinery</span><span style=\"font-family:var(--mono);white-space:nowrap\">1,50,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span>Less: Drawings</span><span style=\"font-family:var(--mono);white-space:nowrap\">(30,000)</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Furniture</span><span style=\"font-family:var(--mono);white-space:nowrap\">40,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink);background:var(--good-soft)\"><span>Capital (closing)</span><span style=\"font-family:var(--mono);white-space:nowrap\">4,60,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px;background:var(--blue-soft)\"><span>Patents</span><span style=\"font-family:var(--mono);white-space:nowrap\">30,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span>Long-term loan</span><span style=\"font-family:var(--mono);white-space:nowrap\">1,50,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Closing stock</span><span style=\"font-family:var(--mono);white-space:nowrap\">85,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span>Bank overdraft</span><span style=\"font-family:var(--mono);white-space:nowrap\">25,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Trade debtors</span><span style=\"font-family:var(--mono);white-space:nowrap\">70,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span>Trade creditors</span><span style=\"font-family:var(--mono);white-space:nowrap\">60,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Bills receivable</span><span style=\"font-family:var(--mono);white-space:nowrap\">20,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span>Bills payable</span><span style=\"font-family:var(--mono);white-space:nowrap\">15,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Cash at bank</span><span style=\"font-family:var(--mono);white-space:nowrap\">18,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span>Outstanding expenses</span><span style=\"font-family:var(--mono);white-space:nowrap\">10,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Cash in hand</span><span style=\"font-family:var(--mono);white-space:nowrap\">7,000</span></div><div style=\"display:flex;justify-content:flex-end;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span style=\"font-family:var(--mono);white-space:nowrap;border-top:1px solid var(--ink-2);border-bottom:3px double var(--ink-2);padding:1px 0\">7,20,000</span></div><div style=\"display:flex;justify-content:flex-end;padding:4px 0 4px 8px\"><span style=\"font-family:var(--mono);white-space:nowrap;border-top:1px solid var(--ink-2);border-bottom:3px double var(--ink-2);padding:1px 0\">7,20,000</span></div></div></div><p style=\"font-size:13px;color:var(--ink-2);margin-top:6px\">Only the closing capital of ₹4,60,000 counts in the left-hand total: 4,60,000 + 1,50,000 + 25,000 + 60,000 + 15,000 + 10,000 = 7,20,000.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Net profit joins capital and drawings leave it before the left side is totalled; skip that and the sheet will not balance.</figcaption></figure><!--/viz:fa-bs-meera-traders-->"
+    },
+    {
+     "t": "Live Lecture 5 — Vogue Company's final statements",
+     "src": "L#24",
+     "h": "<p style=\"font-size:14.5px\">The worksheet she shared carries Vogue Company (Lecture 19) from its adjusted trial balance into the three statements. Vogue started in June, so there are no opening retained earnings.</p><h4>1 · Income statement for the month ended 30 June</h4><div class=\"scroller\"><table><thead><tr><th></th><th>₹</th></tr></thead><tbody><tr><td>Revenue from services</td><td>15,600</td></tr><tr><td>Rent expense</td><td>1,500</td></tr><tr><td>Telephone expense</td><td>200</td></tr><tr><td>Salaries expense</td><td>1,300</td></tr><tr><td>Electricity expense</td><td>150</td></tr><tr><td>Office supplies expense</td><td>2,600</td></tr><tr><td>Insurance expense</td><td>60</td></tr><tr><td>Depreciation expense</td><td>50</td></tr><tr><td>Total expenses</td><td>5,860</td></tr><tr><td><strong>Net profit</strong></td><td><strong>9,740</strong></td></tr></tbody></table></div><h4>2 · Statement of retained earnings</h4><p style=\"font-size:14.5px\">Opening 0 + net profit 9,740 − dividends 2,200 = <strong>₹7,540</strong>. She stressed that this figure must be carried into the balance sheet, beside share capital; without it the balance sheet will not agree.</p><h4>3 · Balance sheet as at 30 June</h4><p style=\"font-size:14.5px\">No one gave the total in class. Worked through, the assets come to <strong>₹61,140</strong>; liabilities ₹3,600 (trade payables, unearned revenue, salaries payable) and equity ₹57,540 (share capital 50,000 + retained earnings 7,540) also total <strong>₹61,140</strong>. The figure below sets it out in the T-form of Lecture 22.</p><p style=\"font-size:14.5px\"><strong>Why your worksheet shows ₹61,190:</strong> in the worksheet's balance-sheet columns equipment is listed at ₹3,000 (debit) and accumulated depreciation ₹50 as a credit, so each column totals ₹61,190. In the formal statement the ₹50 is deducted from equipment, so both sides total ₹61,140. Both agree; they differ only in where the ₹50 sits.</p><!--viz:fa-vogue-balance-sheet--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Vogue Company balance sheet as at 30 June in T-form. Liabilities side: trade payables 2,500, unearned revenue 600, salaries payable 500, share capital 50,000 and retained earnings 7,540 (net profit 9,740 less dividends 2,200). Assets side: equipment 3,000 less accumulated depreciation 50 gives 2,950, office supplies 2,900, trade receivables 7,000, unbilled revenue 700, prepaid insurance 660 and cash 46,930. Both sides total 61,140.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Vogue Company's balance sheet: both sides ₹61,140</div><p style=\"font-size:13px;color:var(--ink-2);margin:0 0 8px\">Net profit 9,740 − dividends 2,200 = retained earnings <b>7,540</b>, carried to the left side.</p><div style=\"font-size:13px\"><div style=\"display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:4px;gap:8px\"><span style=\"color:var(--ink-3)\">Liabilities</span><b style=\"text-align:center\">Vogue Company · Balance Sheet as at 30 June</b><span style=\"color:var(--ink-3)\">Assets</span></div><div style=\"display:grid;grid-template-columns:1fr 1fr\"><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span>Trade payables</span><span style=\"font-family:var(--mono);white-space:nowrap\">2,500</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Equipment 3,000 less acc. dep. 50</span><span style=\"font-family:var(--mono);white-space:nowrap\">2,950</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span>Unearned revenue</span><span style=\"font-family:var(--mono);white-space:nowrap\">600</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Office supplies</span><span style=\"font-family:var(--mono);white-space:nowrap\">2,900</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span>Salaries payable</span><span style=\"font-family:var(--mono);white-space:nowrap\">500</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Trade receivables</span><span style=\"font-family:var(--mono);white-space:nowrap\">7,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span>Share capital</span><span style=\"font-family:var(--mono);white-space:nowrap\">50,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Unbilled revenue</span><span style=\"font-family:var(--mono);white-space:nowrap\">700</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink);background:var(--good-soft)\"><span>Retained earnings</span><span style=\"font-family:var(--mono);white-space:nowrap\">7,540</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Prepaid insurance</span><span style=\"font-family:var(--mono);white-space:nowrap\">660</span></div><div style=\"padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Cash</span><span style=\"font-family:var(--mono);white-space:nowrap\">46,930</span></div><div style=\"display:flex;justify-content:flex-end;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span style=\"font-family:var(--mono);white-space:nowrap;border-top:1px solid var(--ink-2);border-bottom:3px double var(--ink-2);padding:1px 0\">61,140</span></div><div style=\"display:flex;justify-content:flex-end;padding:4px 0 4px 8px\"><span style=\"font-family:var(--mono);white-space:nowrap;border-top:1px solid var(--ink-2);border-bottom:3px double var(--ink-2);padding:1px 0\">61,140</span></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Retained earnings of ₹7,540 are the link: leave them out and the left side falls ₹7,540 short.</figcaption></figure><!--/viz:fa-vogue-balance-sheet-->"
+    },
     {
      "t": "Textbook: Basic Accounting Concepts: The Balance Sheet",
      "src": "Anthony 13e ch2",
@@ -361,7 +394,7 @@ HUB.addCourse({
   {
    "id": "income-statement",
    "title": "Income statement &amp; accrual accounting",
-   "tag": "Lectures 16, 18, 20, 21 · Anthony ch3",
+   "tag": "Lectures 16, 18, 20, 21, 24 · Anthony ch3",
    "lede": "How profit is measured: the accrual basis and matching, then the trading and profit and loss account that turn them into gross and net profit.",
    "topics": [
     {
@@ -410,6 +443,11 @@ HUB.addCourse({
      "h": "<div class=\"def\">The <b>statement of retained earnings</b> (also called retained surplus or accumulated earnings) shows how much of net income a company has kept after paying dividends. <b>Opening retained earnings + net income (or − net loss) − dividends = closing retained earnings.</b></div><p style=\"font-size:14.5px\"><strong>Worked:</strong> company ABC starts the year with retained earnings of ₹5,00,000, earns net income of ₹1,00,000 and pays dividends of ₹50,000. Closing retained earnings = 5,00,000 + 1,00,000 − 50,000 = <strong>₹5,50,000</strong>.</p><p style=\"font-size:14.5px\">Like every statement it starts with a heading (entity, statement, period). It is often printed as the second half of the income statement, after net income. It shows whether a company is reinvesting its profits or distributing them.</p><h4>How the statements link</h4><ol><li>The income statement is prepared first; its <strong>net income</strong> goes into the statement of retained earnings.</li><li>The <strong>closing retained earnings</strong> go into the balance sheet, in equity, beside share capital.</li><li>The <strong>cash</strong> on the balance sheet is what the cash flow statement explains.</li></ol><p style=\"font-size:14.5px\">Next in the course: the balance sheet, then the cash flow statement. For a sole trader (Lectures 20–21 problems) net profit is added to <strong>capital</strong>; the retained-earnings statement is the company version of the same step.</p><!--viz:fa-statements-link--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow from the income statement (net income 1,00,000) to the statement of retained earnings (5,00,000 plus 1,00,000 minus 50,000 dividends equals 5,50,000), to equity in the balance sheet, to the cash flow statement.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Net income travels from statement to statement</div><div style=\"font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Income statement</b><br><span style=\"color:var(--ink-2);font-size:13px\">bottom line: net income ₹1,00,000</span></div><div style=\"color:var(--ink-3);padding:3px 0 3px 14px\">↓</div><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Statement of retained earnings</b><br><span style=\"color:var(--ink-2);font-size:13px\">opening 5,00,000 + net income 1,00,000 − dividends 50,000</span><br><b style=\"font-family:var(--mono)\">= closing ₹5,50,000</b></div><div style=\"color:var(--ink-3);padding:3px 0 3px 14px\">↓</div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Balance sheet</b><br><span style=\"color:var(--ink-2);font-size:13px\">equity = share capital + retained earnings ₹5,50,000</span></div><div style=\"color:var(--ink-3);padding:3px 0 3px 14px\">↓</div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Cash flow statement</b><br><span style=\"color:var(--ink-2);font-size:13px\">explains the cash balance shown on the balance sheet</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each statement hands one figure to the next: net income, then retained earnings, then cash.</figcaption></figure><!--/viz:fa-statements-link-->"
     },
     {
+     "t": "Live Lecture 5 — sorting accounts into the final statements",
+     "src": "L#24",
+     "h": "<p style=\"font-size:14.5px\"><strong>Her opening case:</strong> a friend runs a premium dry-fruit gift-box business from Jodhpur. Diwali sales came to about ₹8 lakh, and on 31 March her bank balance was far smaller (about ₹1 lakh, as we heard it). Did she make ₹8 lakh or ₹1 lakh? <strong>Neither.</strong> Sales are not profit: the dry fruit, boxes and ribbons still have to be paid for. The bank balance is not profit either: a delivery van may be bought but unpaid, and some customers have not yet paid (trade receivables). <strong>Cash is not profit.</strong> Her question splits into two: the result over the period (the \"video\", trading and P&amp;L) and the position on 31 March (the \"photograph\", balance sheet).</p><h4>The sorting rule</h4><p style=\"font-size:14.5px\">Once the adjusted trial balance is ready, \"the hard part is done\": what remains is <strong>sorting</strong> each account into its statement.</p><ul><li><strong>Revenue or expense nature</strong> (something that <em>happened during the year</em>) → trading and profit and loss account. Buying and selling goods (sales, purchases, opening stock, wages) → <strong>trading</strong>; running the business and other incomes (rent paid, interest received) → <strong>P&amp;L</strong>.</li><li><strong>Asset, liability or capital</strong> (something that <em>still exists on the last day</em>) → <strong>balance sheet</strong>.</li><li><strong>Dividends, opening retained earnings and the net profit</strong> → <strong>statement of retained earnings</strong>, which she also called the statement of changes in equity.</li><li><strong>Closing stock</strong> goes to <strong>both</strong>: the credit side of the trading account and the asset side of the balance sheet. It is usually given outside the trial balance, because it is counted on the last day.</li></ul><h4>Her practice set, question 1: statement and normal balance</h4><div class=\"scroller\"><table><thead><tr><th>Account</th><th>Goes to</th><th>Normal balance</th></tr></thead><tbody><tr><td>Cash</td><td>Balance sheet (asset)</td><td>Debit</td></tr><tr><td>Sales revenue</td><td>Profit and loss (income)</td><td>Credit</td></tr><tr><td>Prepaid rent</td><td>Balance sheet (asset)</td><td>Debit</td></tr><tr><td>Dividends</td><td><strong>Retained earnings statement</strong></td><td>Debit</td></tr><tr><td>Accumulated depreciation</td><td>Balance sheet (contra-asset)</td><td><strong>Credit</strong></td></tr><tr><td>Salaries payable</td><td>Balance sheet (liability)</td><td>Credit</td></tr><tr><td>Unearned revenue</td><td>Balance sheet (liability)</td><td>Credit</td></tr><tr><td>Depreciation expense</td><td>Profit and loss (expense)</td><td>Debit</td></tr><tr><td>Common stock (= share capital)</td><td>Balance sheet (capital)</td><td>Credit</td></tr><tr><td>Notes payable</td><td>Balance sheet (liability)</td><td>Credit</td></tr><tr><td>Interest revenue</td><td>Profit and loss (income)</td><td>Credit</td></tr><tr><td>Supplies</td><td><strong>Balance sheet</strong> (asset: stock of supplies)</td><td>Debit</td></tr><tr><td>Supplies expense</td><td><strong>Profit and loss</strong> (supplies used up)</td><td>Debit</td></tr><tr><td>Retained earnings, opening</td><td><strong>Retained earnings statement</strong></td><td>Credit</td></tr><tr><td>Accounts receivable</td><td>Balance sheet (asset)</td><td>Debit</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Normal balances come from <strong>Assets + Expenses (+ Dividends) = Liabilities + Capital + Revenue</strong>: left-hand items are debits, right-hand items credits (Lecture 19).</p><h4>Three things to say more carefully than in class</h4><ul><li><strong>Dividends are not an expense.</strong> In class they were called \"a kind of expense\". They do have a debit balance, but they are a distribution of profit to owners: they go to the retained earnings statement, never to the P&amp;L account.</li><li><strong>Accumulated depreciation</strong> has a credit balance and sits in the credit column of the worksheet's balance-sheet columns. In a formal balance sheet it is shown as a <strong>deduction from the asset</strong> (equipment 3,000 − 50 = 2,950), not as a liability.</li><li><strong>Unbilled revenue</strong> is revenue <strong>earned</strong> for which no invoice has been issued yet: an asset with a debit balance. (Prepaid insurance, which she compared it with, is also an asset, but for a different reason: an expense paid in advance.)</li></ul><h4>Valuing closing stock: lower of cost and net realisable value</h4><div class=\"def\"><b>AS 2 (Valuation of Inventories)</b> requires closing stock at <b>cost or net realisable value, whichever is lower</b>. <b>Net realisable value</b> = the price the goods are expected to fetch <b>minus the costs needed to sell them</b> (transport, advertising and the like). The rule comes from the <b>convention of conservatism</b>: provide for expected losses now, but do not count profits until they are earned.</div><p style=\"font-size:14.5px\"><strong>Worked (our figures):</strong> stock cost ₹50,000; it can be sold for ₹56,000 but only after spending ₹9,000 on transport and promotion. NRV = 56,000 − 9,000 = ₹47,000, which is below cost, so closing stock is valued at <strong>₹47,000</strong>. If NRV had been ₹60,000 it would stay at cost, ₹50,000: the expected profit is not taken early. (The Lecture 18 note says \"cost or market price\"; this is the precise form.)</p><h4>Gross profit in one picture</h4><p style=\"font-size:14.5px\">A vegetable seller buys potatoes at the mandi for ₹20 a kg and sells them at your gate for ₹30. The ₹10 a kg is <strong>gross profit</strong>, from buying and selling alone. He does not take it all home: the cart, fuel and travel come out of it, and what is left could be zero or less. A gross profit that is tiny or negative means the business is broken at its core, which is why managers watch it closely.</p><h4>Revision drills</h4><p style=\"font-size:14.5px\">She reworked the four step-by-step trading examples of Lecture 18, the missing closing-stock problem of Lecture 20 (closing stock ₹30,000, gross profit ₹55,000) and the ABC Traders account (gross profit ₹4,20,000); the answers are in those notes. One slide gave the third example's gross profit as ₹10,000; the working (net sales 50,000 − cost of goods sold 30,000) gives <strong>₹20,000</strong>. She also warned that textbook problems often use a January–December year, while India's financial year runs April–March.</p><div class=\"def\"><b>From the lecture (L#24):</b> When a question asks for final accounts, the <b>first step is always to classify</b> every account: which statement it goes to and what its normal balance is. A mistake here makes everything after it collapse. A question may give the adjusted trial balance as amounts only, with no debit and credit columns, so you must know the normal balances yourself. Accounting carries its own checks: if the balance sheet agrees, the work is very likely right. She shared a practice set (questions 1 and 2 done in class, the rest for self-practice) and urged solving along in class.</div><!--viz:fa-final-accounts-sorting--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow from the adjusted trial balance to three statements: revenues and expenses to the trading and profit and loss account, opening retained earnings, net profit and dividends to the retained earnings statement, and assets, contra-assets, liabilities and capital to the balance sheet. Closing stock goes both to the trading account and to the balance sheet.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Sorting the adjusted trial balance into three statements</div><div style=\"font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Adjusted trial balance</b><br><span style=\"color:var(--ink-2);font-size:13px\">every account with its balance; the hard part is already done</span></div><div style=\"color:var(--ink-3);padding:3px 0 3px 14px\">↓</div><div style=\"display:flex;flex-wrap:wrap;gap:6px\"><div style=\"flex:1 1 150px;padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Trading and P&amp;L</b><br><span style=\"color:var(--ink-2);font-size:13px\">revenues and expenses: what happened during the year</span></div><div style=\"flex:1 1 150px;padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Retained earnings statement</b><br><span style=\"color:var(--ink-2);font-size:13px\">opening retained earnings, net profit, dividends</span></div><div style=\"flex:1 1 150px;padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Balance sheet</b><br><span style=\"color:var(--ink-2);font-size:13px\">assets (and contra-assets), liabilities, capital: what still exists on the last day</span></div></div><div style=\"margin-top:8px;padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--clay-soft)\"><b>Closing stock</b> goes to two places: the credit side of the trading account and the asset side of the balance sheet.</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Happened during the year goes to P&amp;L; still exists on the last day goes to the balance sheet; dividends go to retained earnings.</figcaption></figure><!--/viz:fa-final-accounts-sorting-->"
+    },
+    {
      "t": "Textbook: Basic Accounting Concepts: The Income Statement",
      "src": "Anthony 13e ch3",
      "h": "<!--viz:fa-atc-revenue-cash--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three cases of cash timing: advance before delivery is a liability that becomes sales at delivery; cash at delivery is a cash sale; cash after delivery clears a debtor created at delivery. Sales is credited at delivery every time.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Revenue waits for delivery; cash can come any time</div><div class=\"scroller\"><table><thead><tr><th>Cash arrives</th><th>Entry when cash comes</th><th>Entry at delivery (revenue)</th></tr></thead><tbody><tr><td><b>Before</b> delivery</td><td>Cash A/c Dr<br><span style='padding-left:16px'>To Advance from Customer A/c</span><br><span style='color:var(--ink-3);font-size:13px'>a liability until delivered</span></td><td style=\"background:var(--blue-soft)\">Advance from Customer A/c Dr<br><span style='padding-left:16px'>To Sales A/c</span></td></tr><tr><td><b>At</b> delivery</td><td style=\"color:var(--ink-3)\">same entry →</td><td style=\"background:var(--blue-soft)\">Cash A/c Dr<br><span style='padding-left:16px'>To Sales A/c</span></td></tr><tr><td><b>After</b> delivery</td><td>Cash A/c Dr<br><span style='padding-left:16px'>To Debtor A/c</span><br><span style='color:var(--ink-3);font-size:13px'>clears the receivable</span></td><td style=\"background:var(--blue-soft)\">Debtor A/c Dr<br><span style='padding-left:16px'>To Sales A/c</span></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Whatever the cash date, Sales is credited at delivery. Entries shown the Indian way.</figcaption></figure><!--/viz:fa-atc-revenue-cash--><!--viz:fa-atc-expense-timing--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Four patterns of expenditure against use, with examples: spent and used now is an expense; spent earlier and used now turns an opening asset into expense; spent now and used later is a closing asset; used now and paid later is an expense plus a liability.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Four timings of spending and using</div><div class=\"scroller\"><table><thead><tr><th>Pattern</th><th>Example (FY 2025-26)</th><th>This year's books</th></tr></thead><tbody><tr><td>Spent this year, used this year</td><td>Electricity for the year, paid</td><td style=\"background:var(--blue-soft)\">expense</td></tr><tr><td>Spent earlier, used this year</td><td>Opening stock sold; insurance prepaid last March</td><td style=\"background:var(--blue-soft)\">opening asset → expense</td></tr><tr><td>Spent this year, used later</td><td>Closing stock; rent paid for next April</td><td style=\"background:var(--good-soft)\">closing asset</td></tr><tr><td>Used this year, paid later</td><td>March wages paid in April</td><td style=\"background:var(--clay-soft)\">expense + outstanding liability</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Expense follows use, not payment: rows 2 and 4 are this year's expense though no cash moved this year.</figcaption></figure><!--/viz:fa-atc-expense-timing--><!--viz:fa-atc-income-statement--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Income statement in US layout from gross sales 520 lakh down to net income 60 lakh, through net sales 500, gross margin 200, operating income 90 and income before tax 80, with the Indian name for each line.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The income statement line by line</div><p style=\"margin:0 0 8px\"><span style=\"font-size:12.5px;padding:1px 6px;border-radius:3px;background:var(--clay-soft)\">US practice (Anthony)</span></p><div class=\"scroller\"><table><thead><tr><th>Line</th><th>₹ lakh</th><th>Indian usage</th></tr></thead><tbody><tr><td>Gross sales</td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">520</td><td></td></tr><tr><td>− returns, allowances, discounts</td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">20</td><td></td></tr><tr><td><b>= Net sales</b></td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">500</td><td>revenue from operations</td></tr><tr><td>− cost of sales</td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">300</td><td>cost of goods sold (Trading A/c)</td></tr><tr><td><b>= Gross margin</b></td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap;background:var(--blue-soft)\">200</td><td>gross profit</td></tr><tr><td>− R&amp;D and SG&amp;A</td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">110</td><td>indirect expenses (P&amp;L A/c)</td></tr><tr><td><b>= Operating income</b></td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">90</td><td>operating profit</td></tr><tr><td>− interest expense</td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">10</td><td>finance costs</td></tr><tr><td><b>= Income before tax</b></td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">80</td><td>profit before tax</td></tr><tr><td>− tax provision (25%)</td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">20</td><td>tax expense</td></tr><tr><td><b>= Net income</b></td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap;background:var(--good-soft)\">60</td><td>profit for the year</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Schedule III classifies expenses by nature, so Indian statements often skip the gross-profit line; use the Indian names in answers.</figcaption></figure><!--/viz:fa-atc-income-statement--><p><strong>Revenue and expense as changes in retained earnings</strong> — A revenue is an increase in retained earnings from the entity's operations and an expense is a decrease. Net income is their difference, so income is never a synonym for revenue. Saying a company had income of ₹1 crore when it had revenue of ₹1 crore gives a badly wrong picture of its size.<br><span style=\"font-family:var(--mono)\">Net income = Revenues − Expenses</span></p><p><strong>Income is not an increase in cash</strong> — Borrowing raises cash but not income; buying stock swaps one asset for another; a sale raises cash by the selling price but income only by the margin. Income measures how much better off the owners are, and cash movements may have no link to that.</p><p><strong>When revenue is recognised</strong> — Revenue from goods is recognised in the period of delivery, and revenue from services in the period they are performed. Cash may come earlier (precollected or unearned revenue, a liability), at the same time, or later (accounts receivable, or accrued revenue such as interest earned but not received, both assets).</p><p><strong>Cost, expenditure, expense, disbursement</strong> — Cost is the money measure of resources used for a purpose. An expenditure is the decrease in an asset or increase in a liability when a cost is incurred. An expense is cost belonging to the current period. A disbursement is any cash payment, including loan repayments and dividends, which are not expenses.<br><em>e.g.</em> Stock received in August on credit (expenditure), paid in September (disbursement), sold in November (expense).</p><p><strong>Three tests for expense recognition</strong> — A cost is an expense of the period if (1) it is directly matched with the period's revenue, (2) it relates to the period's activities even though it cannot be traced to particular sales (a period cost, such as office salaries) or (3) it cannot be linked to the benefits of any future period, such as training, fire losses or obsolete stock. Otherwise it is an asset.</p><p><strong>Four expenditure–expense timing patterns</strong> — (1) Spent and used this year: expense now. (2) Spent earlier and used this year: opening assets such as inventory, prepaid items and plant become expenses. (3) Spent this year and used later: closing assets. (4) Used this year and paid later: accrued liabilities such as wages and interest payable.</p><p><strong>Gains and losses</strong> — Increases in retained earnings from outside normal sales (selling securities above cost) are gains; decreases outside operations (fire, theft, selling securities below cost) are losses. In practice they are treated much like revenues and expenses. Dividends are the one common reduction in retained earnings that is not an expense.</p><p><strong>Structure of the income statement</strong> — Gross sales less returns and allowances and less sales (cash) discounts give net sales. Cost of sales is deducted to give gross margin, then R&amp;D and selling, general and administrative expenses to give operating income. Other revenues and expenses (interest, royalties) give income before tax, then the tax provision gives net income and earnings per share. Sales taxes collected, freight billed at cost and trade discounts are not revenue.</p><p><strong>Articulation and income-statement percentages</strong> — Net income and dividends explain the change in retained earnings between two balance sheets, so the statements articulate. Analysts express each line as a percentage of net sales, chiefly the gross margin percentage and the profit margin.<br><span style=\"font-family:var(--mono)\">Gross margin % = Gross margin ÷ Net sales; Profit margin = Net income ÷ Net sales</span></p><p><strong>Accrual vs cash basis and other incomes</strong> — Accrual accounting, built on realisation and matching, is the only basis GAAP permits. Cash-basis accounting records sales when cash is received and costs when paid, and in practice is a modified mixture. Taxable income follows tax law (often faster depreciation). Economic income is the change in the firm's value and is not feasible to measure. Pro forma earnings leave out one-off charges that are often not one-off.</p>"
@@ -446,6 +484,29 @@ HUB.addCourse({
      "t": "Textbook: Accounting Records and Systems",
      "src": "Anthony 13e ch4",
      "h": "<!--viz:fa-atc-cycle--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow of Anthony's six steps: analyse (judgement), journalise, post, then a trial balance check, adjust (judgement), an adjusted trial balance, close and prepare statements, cycling to the next period.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Anthony's six-step cycle: where judgement enters</div><p style=\"margin:0 0 8px\"><span style=\"font-size:12.5px;padding:1px 6px;border-radius:3px;background:var(--clay-soft)\">US practice (Anthony)</span></p><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>1</b> Analyse<br><span style=\"color:var(--ink-2);font-size:13px\">judgement</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>2</b> Journalise</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>3</b> Post</div><span style=\"color:var(--ink-3)\">→</span><span style=\"font-size:13px;color:var(--ink-3);border:1px dashed var(--rule-2);border-radius:4px;padding:4px 7px\">trial balance</span><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>4</b> Adjust<br><span style=\"color:var(--ink-2);font-size:13px\">judgement</span></div><span style=\"color:var(--ink-3)\">→</span><span style=\"font-size:13px;color:var(--ink-3);border:1px dashed var(--rule-2);border-radius:4px;padding:4px 7px\">adjusted trial balance</span><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>5</b> Close</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>6</b> Prepare statements</div></div><div style=\"font-size:14px;color:var(--ink-3);margin-top:6px\">↺ closing balances open the next period</div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only steps 1 and 4 need judgement. The lecture numbers the trial balance as step three; Anthony does not number it.</figcaption></figure><!--/viz:fa-atc-cycle--><!--viz:fa-atc-closing--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Sales of 9,00,000 and expenses of 5,00,000, 2,00,000 and 1,00,000 are closed into Income Summary (the profit and loss account), whose net profit of 1,00,000 is transferred to retained earnings or the sole trader's capital account.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Closing entries: temporary accounts empty into Income Summary</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14px\"><div style=\"display:flex;flex-direction:column;gap:6px\"><div style=\"padding:7px 11px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\">Sales <span style=\"font-family:var(--mono)\">9,00,000</span></div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Cost of goods sold <span style=\"font-family:var(--mono)\">5,00,000</span></div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Wages <span style=\"font-family:var(--mono)\">2,00,000</span></div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Rent <span style=\"font-family:var(--mono)\">1,00,000</span></div></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Income Summary</b><br><span style=\"color:var(--ink-2);font-size:13px\">Indian: Profit &amp; Loss A/c</span><br><span style=\"color:var(--ink-2);font-size:13px\">9,00,000 − 8,00,000 = net profit 1,00,000</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Retained earnings</b><br><span style=\"color:var(--ink-2);font-size:13px\">Indian sole trader: Capital A/c</span><br><span style=\"color:var(--ink-2);font-size:13px\">+ 1,00,000</span></div></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\">After closing, every revenue and expense account shows nil; only balance-sheet accounts stay open.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Temporary accounts reset to zero each year; the profit they produced moves into owners' equity.</figcaption></figure><!--/viz:fa-atc-closing--><!--viz:fa-atc-contra-asset--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison for a van costing 6,00,000 depreciated 1,20,000 a year: after two years the contra-asset method keeps the van at 6,00,000 with accumulated depreciation of 2,40,000, while the direct method reduces the van account itself to 3,60,000. Both show 3,60,000 net.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Depreciation: contra-asset vs direct method</div><p style=\"font-size:14px;margin:0 0 8px\">Delivery van, cost ₹6,00,000, life 5 years, no scrap: ₹1,20,000 a year. Position after 2 years:</p><div class=\"scroller\"><table><thead><tr><th></th><th>Contra-asset (Anthony)</th><th>Direct method (Indian textbooks)</th></tr></thead><tbody><tr><td>Yearly entry</td><td>Depreciation A/c Dr<br><span style='padding-left:16px'>To Accumulated Depreciation A/c</span></td><td>Depreciation A/c Dr<br><span style='padding-left:16px'>To Van A/c</span></td></tr><tr><td>Van A/c balance</td><td><span style=\"font-family:var(--mono)\">6,00,000</span></td><td><span style=\"font-family:var(--mono)\">3,60,000</span></td></tr><tr><td>Shown on the balance sheet</td><td style=\"background:var(--blue-soft)\">Van at cost 6,00,000<br>less acc. depn 2,40,000<br>= <b>3,60,000</b></td><td>Van <b>3,60,000</b></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Same net book value; the contra-asset (provision) method keeps the original cost visible.</figcaption></figure><!--/viz:fa-atc-contra-asset--><p><strong>Permanent vs temporary accounts</strong> — Balance-sheet accounts are permanent (Anthony also calls them real): they are balanced at period end and their balances carry forward. Revenue and expense accounts are temporary subdivisions of retained earnings, used to sort income-statement items as you go; they are closed to zero at period end.</p><p><strong>Anthony's six-step accounting cycle</strong> — (1) Analyse transactions (judgement), (2) journalise original entries (mechanical), (3) post to ledger accounts (mechanical), (4) decide, journalise and post adjusting entries (judgement), (5) journalise and post closing entries (mechanical), (6) prepare the statements. A trial balance is taken after posting and again after adjusting, but Anthony does not number it as a step. Closing balances become next period's opening balances.</p><p><strong>Adjusting entries for continuous transactions</strong> — Items like fuel, insurance and rent are used up continuously, so instead of daily entries one adjusting entry at period end splits the cost between asset and expense. The purchase can first be recorded either as an asset (adjust out the amount used) or as an expense (adjust out the amount left). Both give the same closing figures, but the adjusting entry is different.</p><p><strong>Four types of adjusting entry</strong> — (1) Recorded costs to be apportioned (prepaid insurance → insurance expense). (2) Unrecorded expenses (wages earned, not yet paid → accrued wages). (3) Recorded revenues to be apportioned (rent received → part moved to unearned rent). (4) Unrecorded revenues (interest earned, not received → accrued interest receivable).</p><p><strong>Depreciation and contra-asset accounts</strong> — Depreciation expense is debited and accumulated depreciation, a contra-asset account, is credited, so that both original cost and depreciation to date can be disclosed. The allowance for doubtful accounts works the same way against receivables, through bad debt expense.<br><span style=\"font-family:var(--mono)\">Net book value = Cost − Accumulated depreciation</span></p><p><strong>Closing entries and Income Summary</strong> — Each revenue account is debited and each expense account credited for its balance, with the other side going to Income Summary (also called Profit and Loss). After the tax adjustment, the net credit (profit) or debit (loss) in Income Summary is closed to retained earnings. Only permanent accounts remain open.</p>"
+    }
+   ]
+  },
+  {
+   "id": "cash-flow",
+   "title": "Cash flow statement",
+   "tag": "Lecture 23",
+   "lede": "The fourth statement: where the cash came from and where it went, sorted into operating, investing and financing activities.",
+   "topics": [
+    {
+     "t": "Why a cash flow statement, and what counts as cash",
+     "src": "L#23",
+     "h": "<p style=\"font-size:14.5px\">The cash flow statement is the <strong>fourth</strong> statement, after the income statement, the balance sheet and the statement of retained earnings. It answers one question: <strong>where did the cash actually come from, and where did it go?</strong></p><h4>What the other three statements leave unanswered</h4><div class=\"scroller\"><table><thead><tr><th>Statement</th><th>Shows</th><th>Does not show</th></tr></thead><tbody><tr><td>Balance sheet (two years compared)</td><td>That plant and machinery rose, say by ₹50 lakh</td><td>How it was paid for: in cash or on credit, from profits, a loan or new shares</td></tr><tr><td>Income statement</td><td>Net income, on the accrual basis</td><td>How much cash the operations actually generated</td></tr><tr><td>Statement of retained earnings</td><td>Dividends <strong>declared</strong></td><td>Whether those dividends were actually <strong>paid</strong> in cash during the year</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Her opening puzzle: an airline (Cathay Pacific) bought new assets worth about HK$9.2 billion in a year in which it reported a loss of about HK$8.6 billion. Nothing in the first three statements explains where that money came from; the cash flow statement does.</p><h4>Who it helps, and how</h4><ul><li><strong>Predicting future cash flows</strong>: investors and creditors judge their amount, timing and uncertainty.</li><li><strong>Ability to pay</strong>: whether the firm can pay salaries, settle debts and pay declared dividends on time, which employees, creditors and shareholders care about.</li><li><strong>Checking reported profit</strong>: accrual profit rests on estimates, so some users distrust it; cash is the more honest figure. The gap between net income and operating cash helps them judge how reliable the income number is.</li><li><strong>Explaining the balance sheet</strong>: the investing and financing sections show why assets and liabilities changed during the period.</li></ul><h4>What \"cash\" means: AS 3</h4><div class=\"def\">Under <b>AS 3</b> (Cash Flow Statements, issued by the Council of the ICAI), <b>cash</b> = cash in hand + demand deposits with banks. <b>Cash equivalents</b> are short-term, highly liquid investments that are (1) <b>readily convertible</b> into known amounts of cash and (2) subject to an <b>insignificant risk of change in value</b>. In practice that means a short maturity, about <b>three months or less</b> from the date of acquisition.</div><p style=\"font-size:14.5px\"><strong>Examples:</strong> a bank deposit with a short maturity; securities maturing within three months; preference shares bought shortly before their redemption date. Ordinary equity shares do not qualify, because their price can move. <strong>Why hold them?</strong> So that idle cash earns something while it can still be turned back into cash at short notice.</p><div class=\"def\"><b>From the lecture (L#23):</b> She set three questions you should be able to answer by the end of the topic: why a cash flow statement exists when three statements already do; how to classify a cash transaction as operating, investing or financing; and why net income and net cash from operations are almost never the same. She also assigned a pre-read case to come back to once the cash flow topic is finished, and flagged cash equivalents as the idea that confuses most students.</div>"
+    },
+    {
+     "t": "Operating, investing and financing activities",
+     "src": "L#23",
+     "h": "<p style=\"font-size:14.5px\">Cash flows are first split into <strong>inflows</strong> (cash increases) and <strong>outflows</strong> (cash decreases). The more important split is by the activity that caused them:</p><div class=\"scroller\"><table><thead><tr><th>Activity</th><th>What it covers</th><th>Inflows</th><th>Outflows</th></tr></thead><tbody><tr><td><strong>Operating</strong></td><td>The principal revenue-producing activities. For a garment maker: buying cloth, manufacturing, selling garments</td><td>Cash from customers for goods or services; royalties, fees, commission</td><td>Payments to suppliers, wages and salaries, taxes, insurance premiums</td></tr><tr><td><strong>Investing</strong></td><td>Buying and selling long-term assets and investments; lending money and collecting it back</td><td>Sale of fixed assets and intangibles; sale of shares or debt of other firms; repayment of loans made to others</td><td>Purchase of fixed assets (including intangibles and capitalised R&amp;D); purchase of shares, warrants or debt of other firms; loans and advances to third parties</td></tr><tr><td><strong>Financing</strong></td><td>Changes in the size and make-up of the owners' capital and borrowings</td><td>Issue of equity or preference shares; issue of debentures, bonds, loans, short-term borrowings</td><td>Repayment of borrowings; dividends on equity and preference shares</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Why operating cash matters:</strong> it is the key indicator of <strong>internal solvency</strong>, the extent to which operations alone have produced enough cash to keep the business running, repay loans, pay dividends and make new investments <strong>without external finance</strong>.</p><h4>Same transaction, different firm</h4><p style=\"font-size:14.5px\">Lending is <strong>investing</strong> for a manufacturer but <strong>operating</strong> for a bank or other financial enterprise, because lending is its principal business.</p><h4>Interest and dividends: read this before you answer</h4><p style=\"font-size:14.5px\">Her slides list interest received and dividends received under <strong>both</strong> operating and investing inflows, and interest paid under both operating and financing outflows. Lists like these come from US practice (and Ind AS 7 allows some choice). <strong>AS 3</strong>, which she cited for the definition of cash, gives a clear rule that depends on the kind of enterprise; the figure below sets it out. Taxes on income are <strong>operating</strong> unless they can be specifically tied to an investing or financing transaction.</p><h4>Non-cash transactions are left out</h4><p style=\"font-size:14.5px\">Converting debentures or loans into equity shares changes the capital structure but moves no cash, so it does <strong>not</strong> appear in the cash flow statement (AS 3 asks for it to be disclosed elsewhere in the financial statements).</p><div class=\"def\"><b>From the lecture (L#23):</b> She ended with three multiple-choice checks: converting debt to equity is not shown (non-cash); buying bonds issued by another company is investing; and of income tax, collections from customers, payments to suppliers, office and selling expenses and dividends, only the <b>dividend payment</b> is not operating. She also asked you to study the slide tables of operating, investing and financing examples closely, so that you can classify items quickly when solving problems.</div><!--viz:fa-cf-three-activities--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of the three activities with examples. Operating: customers paying in; suppliers, wages and taxes paid out. Investing: sale of a machine or repayment of a loan made in; purchase of land, a patent or another firm's bonds out. Financing: issue of shares or debentures and borrowing in; loan repayment and dividends out. A debt-to-equity conversion is not shown because no cash moves.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Every cash flow belongs to one of three activities</div><div class=\"scroller\"><table><thead><tr><th>Activity</th><th>Cash in (examples)</th><th>Cash out (examples)</th></tr></thead><tbody><tr><td><b>Operating</b><br><span style=\"color:var(--ink-2);font-size:13px\">main revenue activity</span></td><td>Customers pay for goods and services</td><td>Suppliers, wages, taxes</td></tr><tr><td><b>Investing</b><br><span style=\"color:var(--ink-2);font-size:13px\">long-term assets, lending</span></td><td>Sale of a machine; a loan to others repaid</td><td>Buy land, a patent, another firm's bonds</td></tr><tr><td><b>Financing</b><br><span style=\"color:var(--ink-2);font-size:13px\">owners and lenders</span></td><td>Issue shares or debentures; borrow</td><td>Repay a loan; pay dividends</td></tr><tr><td><span style=\"color:var(--ink-3)\">Not shown</span></td><td><span style=\"color:var(--ink-3)\">Debt converted into shares: no cash moves</span></td><td><span style=\"color:var(--ink-3)\">—</span></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Ask what the cash was for: running the business, buying long-term assets, or dealing with owners and lenders.</figcaption></figure><!--/viz:fa-cf-three-activities--><!--viz:fa-cf-interest-dividends--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table under AS 3. For ordinary enterprises, interest and dividends received are investing, interest and dividends paid are financing, and loans given are investing. For a financial enterprise, interest received, dividends received, interest paid and loans given are operating, while dividends paid remain financing.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Interest and dividends under AS 3: it depends on the enterprise</div><div class=\"scroller\"><table><thead><tr><th>Cash flow</th><th>Other enterprises (trader, manufacturer)</th><th>Financial enterprise (e.g. a bank)</th></tr></thead><tbody><tr><td>Interest received</td><td style=\"background:var(--clay-soft)\">Investing</td><td style=\"background:var(--blue-soft)\">Operating</td></tr><tr><td>Dividends received</td><td style=\"background:var(--clay-soft)\">Investing</td><td style=\"background:var(--blue-soft)\">Operating</td></tr><tr><td>Interest paid</td><td style=\"background:var(--good-soft)\">Financing</td><td style=\"background:var(--blue-soft)\">Operating</td></tr><tr><td>Dividends paid</td><td style=\"background:var(--good-soft)\">Financing</td><td style=\"background:var(--good-soft)\">Financing</td></tr><tr><td>Loans given to others</td><td style=\"background:var(--clay-soft)\">Investing</td><td style=\"background:var(--blue-soft)\">Operating</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Dividends paid are financing for everyone; for a bank, interest and lending are its everyday operations.</figcaption></figure><!--/viz:fa-cf-interest-dividends-->"
+    },
+    {
+     "t": "Why net income and operating cash differ",
+     "src": "L#23",
+     "h": "<p style=\"font-size:14.5px\">Companies' own annual reports show large gaps between net income and net cash from operating activities, in both directions: for some firms profit far exceeds operating cash, for others operating cash exceeds profit. She gave four reasons.</p><div class=\"scroller\"><table><thead><tr><th>Reason</th><th>Effect on operating cash compared with net income</th></tr></thead><tbody><tr><td><strong>Accrual vs cash basis</strong>: revenue is recorded when earned and expenses when incurred, whenever cash moves</td><td>Operating cash counts only the cash that actually came in and went out</td></tr><tr><td><strong>Non-cash expenses</strong>: depreciation and amortisation lower profit but use no cash this period</td><td><strong>Added back</strong> to net income</td></tr><tr><td><strong>Working capital</strong>: a rise in accounts receivable (sales on credit, cash not yet collected)</td><td>Operating cash <strong>lower</strong> than net income</td></tr><tr><td><strong>Working capital</strong>: a rise in accounts payable (expenses incurred, bills not yet paid)</td><td>Operating cash <strong>higher</strong> than net income</td></tr><tr><td><strong>Non-operating items</strong>: a gain or loss on selling a long-term asset is inside net income</td><td>Taken out of operating; the whole sale proceeds are an <strong>investing</strong> inflow</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Putting the reasons into numbers (our example):</strong> net profit ₹5,00,000; depreciation ₹80,000; trade receivables up ₹60,000; trade payables up ₹25,000; a machine with a book value of ₹1,00,000 sold for ₹1,15,000, a gain of ₹15,000. Cash from operations = 5,00,000 + 80,000 − 60,000 + 25,000 − 15,000 = <strong>₹5,30,000</strong>. The ₹1,15,000 received for the machine goes in investing activities. The full format of the statement is for the next part of the topic.</p><!--viz:fa-cf-profit-to-cash--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace table starting from net profit of 5,00,000: add depreciation 80,000 to reach 5,80,000, subtract the 60,000 rise in receivables to reach 5,20,000, add the 25,000 rise in payables to reach 5,45,000, subtract the 15,000 gain on sale of a machine to reach operating cash of 5,30,000. The 1,15,000 sale proceeds go to investing activities.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">From net profit ₹5,00,000 to operating cash ₹5,30,000</div><div class=\"scroller\"><table><thead><tr><th>Step</th><th>Item</th><th>Change ₹</th><th>Running total ₹</th></tr></thead><tbody><tr><td>1</td><td>Net profit</td><td style=\"font-family:var(--mono)\">5,00,000</td><td style=\"font-family:var(--mono)\">5,00,000</td></tr><tr><td>2</td><td>Depreciation (non-cash expense)</td><td style=\"font-family:var(--mono)\">+80,000</td><td style=\"font-family:var(--mono)\">5,80,000</td></tr><tr><td>3</td><td>Increase in trade receivables</td><td style=\"font-family:var(--mono)\">−60,000</td><td style=\"font-family:var(--mono)\">5,20,000</td></tr><tr><td>4</td><td>Increase in trade payables</td><td style=\"font-family:var(--mono)\">+25,000</td><td style=\"font-family:var(--mono)\">5,45,000</td></tr><tr style=\"background:var(--blue-soft)\"><td>5</td><td>Gain on sale of machine</td><td style=\"font-family:var(--mono)\">−15,000</td><td style=\"font-family:var(--mono)\">5,30,000</td></tr></tbody></table></div><p style=\"font-size:13px;color:var(--ink-2);margin-top:6px\">Investing activities, separately: sale of machine +1,15,000.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each line undoes one way in which accrual profit and cash part company.</figcaption></figure><!--/viz:fa-cf-profit-to-cash-->"
     }
    ]
   }
@@ -502,6 +563,10 @@ HUB.addCourse({
   {
    "name": "Profit & loss account",
    "unit": "income-statement"
+  },
+  {
+   "name": "Cash flow statement",
+   "unit": "cash-flow"
   }
  ],
  "traps": [
@@ -1048,6 +1113,111 @@ HUB.addCourse({
    "p": "Anthony closes revenues and expenses to Income Summary (which he says is also called Profit and Loss), then to retained earnings. The lecture closes them to the P&L account, then to capital. Use P&L and Capital in the quiz.",
    "f": "Income Summary = P&L",
    "lec": 21
+  },
+  {
+   "id": "fa-t0082",
+   "h": "In the lecture's T-form balance sheet, liabilities and capital are on the left and assets on the right",
+   "p": "This is the traditional Indian horizontal layout. Anthony and most US statements put assets on the left, and a ledger puts debits on the left; neither is the lecture's balance-sheet layout. The vertical format avoids the question by listing assets first.",
+   "f": "liabilities left, assets right",
+   "lec": 22
+  },
+  {
+   "id": "fa-t0083",
+   "h": "Bank overdraft is a current liability, not an asset",
+   "p": "An overdraft is money owed to the bank, repayable on demand. Only a positive bank balance (cash at bank) is an asset.",
+   "f": "overdraft is owed",
+   "lec": 22
+  },
+  {
+   "id": "fa-t0084",
+   "h": "An advance received from a customer is a current liability; an advance paid to a supplier is a current asset",
+   "p": "Cash received for goods still to be supplied is an obligation to deliver. In the Dyal Brothers balance sheet, advances given to suppliers sat on the asset side.",
+   "f": "received owes, paid owns",
+   "lec": 22
+  },
+  {
+   "id": "fa-t0085",
+   "h": "The balance sheet will not balance until net profit is added to capital and drawings are deducted",
+   "p": "Net profit comes from the P&L account, which is why the balance sheet is prepared second. Dyal Brothers: 7,00,000 + 1,00,000 − 60,000 = ₹7,40,000.",
+   "f": "profit in, drawings out",
+   "lec": 22
+  },
+  {
+   "id": "fa-t0086",
+   "h": "The lecture's current test is one year; Anthony's is one year or the operating cycle, whichever is longer",
+   "p": "Quote the lecture's one-year rule in the quiz. Anthony's longer operating-cycle test is why a distiller's ageing stock is still current; it refines the rule rather than contradicting it.",
+   "f": "one year, unless the cycle is longer",
+   "lec": 22
+  },
+  {
+   "id": "fa-t0087",
+   "h": "Dividends paid are a financing outflow, never operating",
+   "p": "Paying owners a return on their capital is a financing activity for every kind of enterprise. Her closing MCQ asked which of five items was not operating; the answer was the dividend payment.",
+   "f": "owners are financing",
+   "lec": 23
+  },
+  {
+   "id": "fa-t0088",
+   "h": "Converting debt into equity does not appear in the cash flow statement",
+   "p": "It changes the capital structure but no cash moves. Choosing \"financing\" because shares and loans are involved is the classic slip.",
+   "f": "no cash, no line",
+   "lec": 23
+  },
+  {
+   "id": "fa-t0089",
+   "h": "Interest and dividends received are investing for a trader or manufacturer, operating for a bank (AS 3)",
+   "p": "Her slide lists show them under more than one heading. AS 3 decides by enterprise type: for others, interest and dividends received are investing and interest paid is financing; for a financial enterprise, interest paid and received and dividends received are operating.",
+   "f": "who is lending?",
+   "lec": 23
+  },
+  {
+   "id": "fa-t0090",
+   "h": "A rise in receivables pulls operating cash below profit; a rise in payables pushes it above",
+   "p": "Credit sales count in profit before the cash arrives. Unpaid expenses reduce profit before the cash leaves.",
+   "f": "receivables wait, payables keep",
+   "lec": 23
+  },
+  {
+   "id": "fa-t0091",
+   "h": "On selling a fixed asset, the whole proceeds are investing; the gain is not operating cash",
+   "p": "A machine with a book value of ₹1,00,000 sold for ₹1,15,000 gives an investing inflow of ₹1,15,000. The ₹15,000 gain sits inside net profit, so it is taken out of operating cash to avoid counting it twice.",
+   "f": "proceeds invest, gain removed",
+   "lec": 23
+  },
+  {
+   "id": "fa-t0092",
+   "h": "Equity shares are not cash equivalents, however easy they are to sell",
+   "p": "A cash equivalent must carry an insignificant risk of change in value. Share prices move; a deposit or bill maturing within about three months does not.",
+   "f": "liquid is not enough",
+   "lec": 23
+  },
+  {
+   "id": "fa-t0093",
+   "h": "Live Lecture 5 called dividends \"a kind of expense\"; they are not",
+   "p": "They have a debit balance because they reduce equity, but they are a distribution of profit. They go to the retained earnings statement, never to the P&L account, so they do not reduce net profit (Vogue: net profit ₹9,740 before the ₹2,200 dividend).",
+   "f": "debit, but not an expense",
+   "lec": 24
+  },
+  {
+   "id": "fa-t0094",
+   "h": "Supplies and supplies expense go to different statements",
+   "p": "Supplies still on hand are an asset in the balance sheet; supplies used up are an expense in the P&L. In her practice set the two sat side by side to catch this.",
+   "f": "on the shelf vs used up",
+   "lec": 24
+  },
+  {
+   "id": "fa-t0095",
+   "h": "Closing stock is valued at the lower of cost and net realisable value, and NRV is after selling costs",
+   "p": "NRV is not simply the market price: deduct the costs of selling. Stock costing ₹50,000 that sells for ₹56,000 after ₹9,000 of selling costs is valued at ₹47,000 (AS 2, conservatism).",
+   "f": "price less selling costs",
+   "lec": 24
+  },
+  {
+   "id": "fa-t0096",
+   "h": "Accumulated depreciation is a credit in the worksheet, but a deduction from the asset in the balance sheet",
+   "p": "Vogue's worksheet balance-sheet columns total ₹61,190 because the ₹50 is listed as a credit; the formal balance sheet nets it off equipment and totals ₹61,140. It is never a liability.",
+   "f": "net it off the asset",
+   "lec": 24
   }
  ],
  "defs": [
@@ -1747,6 +1917,142 @@ HUB.addCourse({
    "term": "Discount allowed",
    "html": "<b>Discount allowed</b>: a cash discount given to customers for prompt payment. An expense, debited to P&L. Discount received from suppliers is an income, credited.",
    "lec": 21
+  },
+  {
+   "id": "fa-d0090",
+   "unit": "balance-sheet",
+   "topic": "Balance sheet",
+   "term": "Balance sheet",
+   "html": "<b>Balance sheet</b>: a statement of the assets and liabilities (with capital) of a firm as at a particular date. A point-in-time picture, prepared after the profit and loss account; its two sides must agree.",
+   "lec": 22
+  },
+  {
+   "id": "fa-d0091",
+   "unit": "balance-sheet",
+   "topic": "Balance sheet",
+   "term": "Liquidity order",
+   "html": "<b>Liquidity order</b>: items arranged by how quickly they turn into cash or fall due. Cash in hand first among assets; bills payable and creditors first among liabilities; capital last.",
+   "lec": 22
+  },
+  {
+   "id": "fa-d0092",
+   "unit": "balance-sheet",
+   "topic": "Balance sheet",
+   "term": "Permanency order",
+   "html": "<b>Permanency order</b>: the reverse of liquidity order. Land, building and machinery first, cash last; capital and reserves first, current liabilities last.",
+   "lec": 22
+  },
+  {
+   "id": "fa-d0093",
+   "unit": "balance-sheet",
+   "topic": "Balance sheet",
+   "term": "Current liabilities",
+   "html": "<b>Current liabilities</b>: obligations payable within one year of the balance-sheet date, e.g. bills payable, trade creditors, outstanding expenses, bank overdraft, advances received from customers.",
+   "lec": 22
+  },
+  {
+   "id": "fa-d0094",
+   "unit": "balance-sheet",
+   "topic": "Balance sheet",
+   "term": "Long-term (fixed) liabilities",
+   "html": "<b>Long-term liabilities</b>: obligations not due within one year, so they do not call on current assets for payment, e.g. long-term loans and debentures.",
+   "lec": 22
+  },
+  {
+   "id": "fa-d0095",
+   "unit": "balance-sheet",
+   "topic": "Balance sheet",
+   "term": "Intangible assets",
+   "html": "<b>Intangible assets</b>: assets with no physical existence, such as trade rights, patents and copyrights. The lecture's third class of asset, beside current and fixed.",
+   "lec": 22
+  },
+  {
+   "id": "fa-d0096",
+   "unit": "balance-sheet",
+   "topic": "Balance sheet",
+   "term": "Final accounts",
+   "html": "<b>Final accounts</b> (final statements): the trading and profit and loss account and the balance sheet, prepared from the trial balance at the end of the period.",
+   "lec": 22
+  },
+  {
+   "id": "fa-d0097",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Cash flow statement",
+   "html": "<b>Cash flow statement</b>: the statement of cash receipts and payments for a period, classified into operating, investing and financing activities. It explains the change in cash and cash equivalents.",
+   "lec": 23
+  },
+  {
+   "id": "fa-d0098",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Cash (AS 3)",
+   "html": "<b>Cash</b> (AS 3): cash in hand plus demand deposits with banks.",
+   "lec": 23
+  },
+  {
+   "id": "fa-d0099",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Cash equivalents",
+   "html": "<b>Cash equivalents</b>: short-term, highly liquid investments, readily convertible into known amounts of cash, with an insignificant risk of change in value; usually maturing within about three months of acquisition.",
+   "lec": 23
+  },
+  {
+   "id": "fa-d0100",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Operating activities",
+   "html": "<b>Operating activities</b>: the principal revenue-producing activities of an enterprise, such as receipts from customers and payments to suppliers and employees.",
+   "lec": 23
+  },
+  {
+   "id": "fa-d0101",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Investing activities",
+   "html": "<b>Investing activities</b>: acquiring and disposing of long-term assets and investments, and making and recovering loans to others (for a non-financial enterprise).",
+   "lec": 23
+  },
+  {
+   "id": "fa-d0102",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Financing activities",
+   "html": "<b>Financing activities</b>: activities that change the size and composition of owners' capital and borrowings: issuing shares or debentures, borrowing, repaying loans, paying dividends.",
+   "lec": 23
+  },
+  {
+   "id": "fa-d0103",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Non-cash transaction",
+   "html": "<b>Non-cash transaction</b>: an investing or financing transaction that moves no cash, such as converting debt into equity. Left out of the cash flow statement and disclosed elsewhere.",
+   "lec": 23
+  },
+  {
+   "id": "fa-d0104",
+   "unit": "income-statement",
+   "topic": "Trading account",
+   "term": "Net realisable value",
+   "html": "<b>Net realisable value</b>: the expected selling price of goods minus the costs needed to sell them. Under AS 2, closing stock is valued at cost or NRV, whichever is lower.",
+   "lec": 24
+  },
+  {
+   "id": "fa-d0105",
+   "unit": "income-statement",
+   "topic": "Income statement & accruals",
+   "term": "Statement of changes in equity",
+   "html": "<b>Statement of changes in equity</b>: the name she also used for the statement of retained earnings, which takes opening retained earnings, adds net profit and deducts dividends.",
+   "lec": 24
+  },
+  {
+   "id": "fa-d0106",
+   "unit": "balance-sheet",
+   "topic": "Balance sheet",
+   "term": "Supplies vs supplies expense",
+   "html": "<b>Supplies</b> is an asset (the stock of supplies still on hand) and goes to the balance sheet. <b>Supplies expense</b> is the part used up in the period and goes to the profit and loss account.",
+   "lec": 24
   }
  ],
  "questions": [
@@ -6091,6 +6397,803 @@ HUB.addCourse({
    "w": "Equity grows by the profit kept, not the profit earned: dividends distributed to shareholders are subtracted. Net income is not cash, and neither are retained earnings.",
    "lec": 21,
    "lv": "analyse"
+  },
+  {
+   "id": "fa-q0266",
+   "topic": "Balance sheet",
+   "q": "A balance sheet is headed \"as at 31 March 2026\". What does \"as at\" tell the reader?",
+   "c": [
+    "The figures are totals for the year ended on that date",
+    "The position shown is true on that date only",
+    "The statement is provisional until audited",
+    "The figures are averages over the year"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A balance sheet is a point-in-time statement; one more transaction changes it. Totals for a period describe the profit and loss account, which is headed \"for the year ended\".",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0267",
+   "topic": "Balance sheet",
+   "q": "On the asset side of a balance sheet in liquidity order, which item comes first?",
+   "c": [
+    "Land and building",
+    "Trade receivables",
+    "Cash in hand",
+    "Stock"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Liquidity order starts with the most liquid asset, cash in hand. Land and building comes first only in permanency order.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0268",
+   "topic": "Balance sheet",
+   "q": "In a balance sheet prepared in permanency order, the first item on the liabilities side is:",
+   "c": [
+    "Capital",
+    "Bills payable",
+    "Bank overdraft",
+    "Trade creditors"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Permanency order starts with the most permanent claim, the owners' capital (then reserves and surplus). Bills payable and creditors come first in liquidity order.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0269",
+   "topic": "Balance sheet",
+   "q": "A trader receives ₹40,000 from a customer for goods to be delivered next month. On today's balance sheet the ₹40,000 is:",
+   "c": [
+    "Income in the P&L account",
+    "A current asset",
+    "Part of capital",
+    "A current liability"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Cash received in advance creates an obligation to supply the goods within the year, so it is a current liability. It becomes revenue only when the goods are delivered.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0270",
+   "topic": "Balance sheet",
+   "q": "Which of these is a current liability?",
+   "c": [
+    "Outstanding salaries",
+    "Prepaid insurance",
+    "Bills receivable",
+    "Debentures repayable in eight years"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Outstanding salaries are services already received but not yet paid, due within the year. Prepaid insurance and bills receivable are current assets; eight-year debentures are long-term.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0271",
+   "topic": "Balance sheet",
+   "q": "A firm's bank account is overdrawn by ₹25,000 at year end. In the balance sheet this is shown as:",
+   "c": [
+    "A current asset, cash at bank, of −₹25,000",
+    "A current liability of ₹25,000",
+    "A deduction from capital",
+    "A long-term liability"
+   ],
+   "a": [
+    1
+   ],
+   "w": "An overdraft is a short-term amount owed to the bank, so it is a current liability. It is never shown as a negative asset.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0272",
+   "topic": "Balance sheet",
+   "q": "Which item is an intangible asset in the lecture's classification?",
+   "c": [
+    "Furniture",
+    "Stock of finished goods",
+    "Patent",
+    "Land"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Intangible assets have no physical existence: patents, copyrights, trade rights. Furniture and land are fixed assets; stock is a current asset.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0273",
+   "topic": "Balance sheet",
+   "q": "Which statement about the P&L account and the balance sheet is correct?",
+   "c": [
+    "Both show results for a period",
+    "The balance sheet accounts are closed at year end; P&L balances are carried forward",
+    "The P&L account holds capital-nature items",
+    "Both are prepared from the trial balance"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Both are drawn from the trial balance. Everything else is reversed: P&L accounts are closed and hold revenue-nature items for a period; balance-sheet balances are carried forward.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0274",
+   "topic": "Balance sheet",
+   "q": "Why must the profit and loss account be prepared before the balance sheet?",
+   "c": [
+    "The balance sheet needs the closing cash figure from the P&L",
+    "Net profit or loss must be added to or deducted from capital before the balance sheet can balance",
+    "The P&L account lists the fixed assets",
+    "Accounting standards require statements in alphabetical order"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The profit or loss is the link: it changes capital, which sits on the balance sheet. The P&L account does not contain cash or fixed-asset balances.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0275",
+   "topic": "Balance sheet",
+   "q": "A student's balance sheet shows liabilities and capital of ₹5,62,000 and assets of ₹5,47,000. The most reasonable conclusion is:",
+   "c": [
+    "There is an error somewhere in preparing the statements",
+    "The firm has made a net loss of ₹15,000",
+    "The firm has ₹15,000 of hidden reserves",
+    "Nothing: the two sides need not agree"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Capital equals assets minus liabilities, so the sides must agree; a difference means a mistake. A net loss would already be inside the capital figure, not left as a gap.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0276",
+   "topic": "Balance sheet",
+   "q": "Meera Traders' balance sheet shows closing stock ₹85,000, trade debtors ₹70,000, bills receivable ₹20,000, cash at bank ₹18,000, cash in hand ₹7,000, furniture ₹40,000 and patents ₹30,000. Total current assets are:",
+   "c": [
+    "₹2,70,000",
+    "₹1,93,000",
+    "₹2,00,000",
+    "₹2,40,000"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Current: 85,000 + 70,000 + 20,000 + 18,000 + 7,000 = ₹2,00,000. Furniture is a fixed asset and patents intangible; adding both gives ₹2,70,000. ₹1,93,000 leaves out cash in hand.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0277",
+   "topic": "Balance sheet",
+   "q": "A sole trader's balance sheet totals ₹7,20,000. Outside liabilities (loans, overdraft, creditors, bills payable, outstanding expenses) total ₹2,60,000. Net profit for the year was ₹90,000 and drawings ₹30,000. What was the opening capital?",
+   "c": [
+    "₹4,60,000",
+    "₹4,00,000",
+    "₹5,20,000",
+    "₹3,40,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Closing capital = 7,20,000 − 2,60,000 = 4,60,000. Opening = 4,60,000 − 90,000 + 30,000 = ₹4,00,000. ₹4,60,000 is the closing figure; ₹3,40,000 adds the drawings the wrong way.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0278",
+   "topic": "Balance sheet",
+   "q": "On 1 April a trader sells for ₹25,000 cash goods that cost ₹20,000. How does the balance sheet change?",
+   "c": [
+    "Stock falls ₹20,000, cash rises ₹25,000, capital rises ₹5,000",
+    "Cash rises ₹25,000 and capital rises ₹25,000",
+    "Stock falls ₹25,000 and cash rises ₹25,000",
+    "Nothing changes until the year-end balance sheet is drawn up"
+   ],
+   "a": [
+    0
+   ],
+   "w": "One transaction alters three items: stock leaves at cost, cash comes in at the price, and the ₹5,000 profit raises capital. This is why a balance sheet is true only on its date.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0279",
+   "topic": "Balance sheet",
+   "q": "In the horizontal (T-form) balance sheet used in the lecture, assets appear:",
+   "c": [
+    "On the left, like debits in a ledger",
+    "Above the liabilities in one column",
+    "On the right, with liabilities and capital on the left",
+    "On whichever side has the larger total"
+   ],
+   "a": [
+    2
+   ],
+   "w": "She drew liabilities and capital on the left and assets on the right, the Indian horizontal layout. Assets on the left is the US (and Anthony's) convention; one column is the vertical format.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0280",
+   "topic": "Balance sheet",
+   "q": "A five-year term loan taken this year, with nothing repayable in the next twelve months, is classified as:",
+   "c": [
+    "A current liability",
+    "Capital",
+    "A fixed asset",
+    "A long-term liability"
+   ],
+   "a": [
+    3
+   ],
+   "w": "It is not due within one year, so it needs no current assets for payment: a long-term (fixed) liability. The loan money received is an asset, but the obligation is a liability.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0281",
+   "topic": "Balance sheet",
+   "q": "In the lecture's accounting cycle, which step comes last?",
+   "c": [
+    "Preparing the trial balance",
+    "Posting to the ledger",
+    "Preparing the trading and profit and loss account",
+    "Preparing the balance sheet"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Journal, ledger, trial balance, trading and P&L, then the balance sheet, which she called the last step of the cycle.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0282",
+   "topic": "Balance sheet",
+   "q": "Dyal Brothers' trial balance shows an advance of ₹15,000 paid to a supplier for goods not yet received. In its balance sheet this is:",
+   "c": [
+    "A current asset",
+    "A current liability",
+    "An expense in the P&L account",
+    "A deduction from purchases"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Money paid in advance gives the firm a right to receive goods, so it is a current asset; it sat on the asset side of her Dyal Brothers solution. An advance received would be the liability.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0283",
+   "topic": "Cash flow statement",
+   "q": "While preparing a cash flow statement you find that ₹20 lakh of debentures were converted into equity shares. How is this shown?",
+   "c": [
+    "As a financing inflow of ₹20 lakh",
+    "As an investing activity",
+    "It is not shown, because no cash changed hands",
+    "As a financing outflow of ₹20 lakh"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A conversion only reshapes the capital structure; no cash moves, so it is left out of the statement (and disclosed elsewhere). Calling it financing because shares and debentures are involved is the tempting mistake.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0284",
+   "topic": "Cash flow statement",
+   "q": "Which of these is a cash flow from investing activities?",
+   "c": [
+    "Income tax paid to the government",
+    "Dividend paid to shareholders",
+    "Cash paid to buy bonds issued by another company",
+    "Payment made to trade payables"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Buying another company's bonds is an investment. Tax and payments to suppliers are operating; dividends paid are financing.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0285",
+   "topic": "Cash flow statement",
+   "q": "A garment manufacturer makes the following cash payments. Which one is NOT an operating cash flow?",
+   "c": [
+    "Income tax",
+    "Office and selling expenses",
+    "Payments to cloth suppliers",
+    "Dividend to its shareholders"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Dividends are a return to owners, a financing outflow. Tax, office and selling costs and supplier payments all belong to day-to-day operations.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0286",
+   "topic": "Cash flow statement",
+   "q": "Under AS 3, cash consists of:",
+   "c": [
+    "Cash in hand only",
+    "Cash in hand and demand deposits with banks",
+    "All current assets that can be sold within a year",
+    "Cash in hand, bank deposits and listed shares"
+   ],
+   "a": [
+    1
+   ],
+   "w": "AS 3 defines cash as cash in hand plus demand deposits with banks. Short-term liquid investments are cash equivalents, a separate idea; listed shares are neither.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0287",
+   "topic": "Cash flow statement",
+   "q": "Which pair of conditions must an investment meet to count as a cash equivalent?",
+   "c": [
+    "Listed on a stock exchange, and paying regular dividends",
+    "Held for more than a year, and earning interest",
+    "Shown as a current asset, and bought for cash",
+    "Readily convertible into known amounts of cash, and an insignificant risk of change in value"
+   ],
+   "a": [
+    3
+   ],
+   "w": "These are the two tests she stressed, which in practice means a short maturity of about three months or less. A current asset bought for cash, such as stock, can still fail both tests.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0288",
+   "topic": "Cash flow statement",
+   "q": "On 1 March a company makes these purchases. Which one is a cash equivalent?",
+   "c": [
+    "Equity shares of a listed company",
+    "A 60-day fixed deposit with a bank",
+    "A five-year government bond",
+    "Stock of raw materials"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A deposit maturing in 60 days is readily convertible with little risk of change in value. Equity shares fail the value-risk test however liquid they are; a five-year bond is far from maturity.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0289",
+   "topic": "Cash flow statement",
+   "q": "Why do firms hold cash equivalents instead of keeping all their spare money as cash?",
+   "c": [
+    "So that idle money earns a return while it can still be turned into cash quickly",
+    "Because AS 3 limits the cash a firm may hold",
+    "To keep the money out of the cash flow statement",
+    "To raise net profit by revaluing them each year"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Cash earns nothing; a short deposit or bill earns something and can be cashed at short notice. Cash equivalents are counted with cash in the statement, not hidden from it.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0290",
+   "topic": "Cash flow statement",
+   "q": "Net profit includes a depreciation charge of ₹80,000. When working out cash from operations, the ₹80,000 is:",
+   "c": [
+    "Deducted again, because it is an expense",
+    "Shown as an investing outflow",
+    "Added back, because it reduced profit without any cash leaving",
+    "Ignored, because it never entered net profit"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Depreciation lowered profit, but no cash was paid for it this year; adding it back restores the cash figure. The cash outflow happened when the asset was bought, under investing.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0291",
+   "topic": "Cash flow statement",
+   "q": "During the year a company's trade receivables rise by ₹60,000, and nothing else changes. Compared with net profit, its cash from operations is:",
+   "c": [
+    "₹60,000 higher",
+    "₹60,000 lower",
+    "The same, because credit sales are revenue too",
+    "₹1,20,000 lower"
+   ],
+   "a": [
+    1
+   ],
+   "w": "₹60,000 of sales went into profit but the cash has not been collected yet, so operating cash is ₹60,000 lower. Credit sales are revenue, which is exactly why profit runs ahead of cash.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0292",
+   "topic": "Cash flow statement",
+   "q": "A company's trade payables rise by ₹25,000 during the year, with nothing else changing. Its cash from operations compared with net profit is:",
+   "c": [
+    "₹25,000 lower",
+    "The same",
+    "₹50,000 higher",
+    "₹25,000 higher"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Expenses of ₹25,000 have reduced profit, but the bills are unpaid, so the cash is still in the firm: operating cash is ₹25,000 higher.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0293",
+   "topic": "Cash flow statement",
+   "q": "Net profit ₹5,00,000; depreciation ₹80,000; trade receivables up ₹60,000; trade payables up ₹25,000; gain on sale of a machine ₹15,000. Cash from operating activities is:",
+   "c": [
+    "₹5,45,000",
+    "₹5,30,000",
+    "₹5,60,000",
+    "₹6,00,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "5,00,000 + 80,000 − 60,000 + 25,000 − 15,000 = ₹5,30,000. ₹5,45,000 leaves the gain in; ₹5,60,000 adds it; ₹6,00,000 reverses the receivables and payables adjustments.",
+   "lec": 23,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0294",
+   "topic": "Cash flow statement",
+   "q": "A machine with a book value of ₹1,00,000 is sold for ₹1,15,000 cash. How does this appear in the cash flow statement?",
+   "c": [
+    "₹15,000 as an operating inflow only",
+    "₹1,15,000 as an operating inflow",
+    "₹1,00,000 as investing and ₹15,000 as operating",
+    "₹1,15,000 as an investing inflow, with the ₹15,000 gain taken out of operating cash"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The entire proceeds are cash from disposing of a long-term asset: investing. The gain is already inside net profit, so it is removed from the operating section to avoid counting it twice.",
+   "lec": 23,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0295",
+   "topic": "Cash flow statement",
+   "q": "A company issues debentures and receives ₹50 lakh. This is:",
+   "c": [
+    "A financing inflow",
+    "An investing inflow",
+    "An operating inflow",
+    "Not a cash flow"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Borrowing from lenders changes the firm's borrowings, a financing activity. It would be investing only for a firm buying someone else's debentures.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0296",
+   "topic": "Cash flow statement",
+   "q": "Under AS 3, interest received by a trading company on a loan it has given is classified as:",
+   "c": [
+    "Operating",
+    "Financing",
+    "Investing",
+    "Not shown, because interest is an income item"
+   ],
+   "a": [
+    2
+   ],
+   "w": "For enterprises other than financial ones, AS 3 puts interest and dividends received under investing. Her slide lists also show interest under operating; that treatment applies to financial enterprises such as banks.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0297",
+   "topic": "Cash flow statement",
+   "q": "A bank lends ₹50 lakh to a customer. In the bank's own cash flow statement, this is:",
+   "c": [
+    "An investing outflow",
+    "A financing outflow",
+    "An operating outflow",
+    "Not shown, as the loan is an asset"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Lending is a bank's principal revenue-producing activity, so it is operating. The same loan made by a manufacturer would be investing.",
+   "lec": 23,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0298",
+   "topic": "Cash flow statement",
+   "q": "Income tax paid by a trading company, not linked to any particular investing or financing deal, is classified as:",
+   "c": [
+    "Financing",
+    "Investing",
+    "Not shown",
+    "Operating"
+   ],
+   "a": [
+    3
+   ],
+   "w": "AS 3 treats taxes on income as operating unless they can be specifically identified with an investing or financing transaction.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0299",
+   "topic": "Cash flow statement",
+   "q": "Cash from operating activities is called a key indicator of a firm's internal solvency. What does that mean?",
+   "c": [
+    "How far operations alone have produced enough cash to keep running, repay loans, pay dividends and invest without outside finance",
+    "Whether total assets exceed total liabilities",
+    "How much profit the firm made on the accrual basis",
+    "How much the firm can borrow from banks"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The test is self-sufficiency: cash generated by the business itself. Assets exceeding liabilities is a balance-sheet idea, and accrual profit is what the operating cash figure is compared with.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0300",
+   "topic": "Cash flow statement",
+   "q": "A company declares a final dividend of ₹10 lakh. The statement of retained earnings shows it. What can a reader still not tell from that statement?",
+   "c": [
+    "Whether the dividend was actually paid in cash during the year",
+    "Whether retained earnings fell",
+    "Who the shareholders are",
+    "Whether the company made a profit"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Retained earnings show the dividend declared; only the cash flow statement shows whether it was paid in the period. The fall in retained earnings and the profit are both visible.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0301",
+   "topic": "Cash flow statement",
+   "q": "Why do many readers compare net income with net cash from operating activities?",
+   "c": [
+    "To check that the two are always equal",
+    "To judge how far the accrual-based profit, which rests on estimates, is backed by cash",
+    "To find the closing stock figure",
+    "To calculate the dividend that must be paid"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Accrual profit needs estimates, so users test it against cash, which she called the more honest figure. The two are almost never equal.",
+   "lec": 23,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0302",
+   "topic": "Income statement & accruals",
+   "q": "When the adjusted trial balance is sorted into statements, which account goes to the statement of retained earnings?",
+   "c": [
+    "Dividends",
+    "Share capital",
+    "Unearned revenue",
+    "Interest revenue"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Dividends, together with opening retained earnings and net profit, belong to the retained earnings statement. Share capital and unearned revenue go to the balance sheet; interest revenue to the P&L.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0303",
+   "topic": "Balance sheet",
+   "q": "An adjusted trial balance shows Office supplies ₹2,900 and Office supplies expense ₹2,600. Where do they go?",
+   "c": [
+    "Both to the profit and loss account",
+    "Supplies to the balance sheet as an asset; supplies expense to the P&L",
+    "Both to the balance sheet",
+    "Supplies to the P&L; supplies expense to the balance sheet"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Supplies on hand still exist on the last day, so they are an asset; the expense is what was used up during the period. Similar names, different statements.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0304",
+   "topic": "Balance sheet",
+   "q": "Vogue Company earns a net profit of ₹9,740 in its first month and pays dividends of ₹2,200. Share capital is ₹50,000. Total equity in its balance sheet is:",
+   "c": [
+    "₹59,740",
+    "₹52,200",
+    "₹57,540",
+    "₹7,540"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Retained earnings = 0 + 9,740 − 2,200 = 7,540; equity = 50,000 + 7,540 = ₹57,540. ₹59,740 forgets the dividend; ₹7,540 leaves out share capital.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0305",
+   "topic": "Balance sheet",
+   "q": "Vogue's assets are: equipment ₹3,000 less accumulated depreciation ₹50, office supplies ₹2,900, trade receivables ₹7,000, unbilled revenue ₹700, prepaid insurance ₹660 and cash ₹46,930. Total assets in the balance sheet are:",
+   "c": [
+    "₹61,190",
+    "₹60,440",
+    "₹58,190",
+    "₹61,140"
+   ],
+   "a": [
+    3
+   ],
+   "w": "2,950 + 2,900 + 7,000 + 700 + 660 + 46,930 = ₹61,140. ₹61,190 ignores the depreciation; ₹60,440 leaves out unbilled revenue; ₹58,190 counts only the current assets.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0306",
+   "topic": "Balance sheet",
+   "q": "Vogue's worksheet balance-sheet columns total ₹61,190 on each side, but its formal balance sheet totals ₹61,140. Why?",
+   "c": [
+    "The worksheet contains a ₹50 error",
+    "Depreciation expense has been counted twice",
+    "Dividends of ₹50 are left out of the balance sheet",
+    "Accumulated depreciation of ₹50 is a credit entry in the worksheet but is deducted from equipment in the balance sheet"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Both are correct. Listing the contra-asset as a credit adds ₹50 to each column; netting it off equipment removes it from both sides. Depreciation expense belongs to the P&L columns, not these.",
+   "lec": 24,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0307",
+   "topic": "Trading account",
+   "q": "Closing stock cost ₹50,000. It can be sold for ₹56,000, but only after spending ₹9,000 on transport and promotion. At what value is it shown?",
+   "c": [
+    "₹50,000",
+    "₹47,000",
+    "₹56,000",
+    "₹41,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "NRV = 56,000 − 9,000 = 47,000, which is below cost, so AS 2 requires ₹47,000. ₹50,000 ignores the selling costs; ₹41,000 deducts them from cost instead of from the selling price.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0308",
+   "topic": "Profit & loss account",
+   "q": "True or false: dividends are an expense, so they are debited to the profit and loss account.",
+   "c": [
+    "True",
+    "False"
+   ],
+   "a": [
+    1
+   ],
+   "w": "False. Dividends have a debit balance but are a distribution of profit to owners. They go to the retained earnings statement and do not reduce net profit.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0309",
+   "topic": "Trading account",
+   "q": "A vegetable seller buys 50 kg of potatoes at ₹20 a kg and sells them all at ₹30 a kg. He also pays ₹300 to hire the handcart he sells from. His gross profit is:",
+   "c": [
+    "₹500",
+    "₹200",
+    "₹1,500",
+    "₹800"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Gross profit comes from buying and selling alone: 50 × (30 − 20) = ₹500. The cart hire is a running cost that comes out of gross profit later, leaving ₹200 net; ₹1,500 is the sales figure.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0310",
+   "topic": "Balance sheet",
+   "q": "Using the lecture's sorting rule, which of these goes to the balance sheet?",
+   "c": [
+    "Opening stock",
+    "Rent paid",
+    "Bank loan",
+    "Interest received"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A bank loan still exists on the last day, a liability. Rent paid and interest received happened during the year (P&L); opening stock goes to the debit side of the trading account.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0311",
+   "topic": "Balance sheet",
+   "q": "Vogue has finished a design for a client but has not yet sent the invoice for ₹700. In the final accounts this unbilled revenue is:",
+   "c": [
+    "An asset in the balance sheet, with a debit balance",
+    "A liability in the balance sheet, with a credit balance",
+    "An expense in the P&L account",
+    "Left out until the invoice is sent"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The revenue is earned, so it is recognised, and the right to bill is an asset (debit). Unearned revenue, cash received before the work, would be the liability.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0312",
+   "topic": "Income statement & accruals",
+   "q": "A gift-box business had Diwali sales of ₹8 lakh and a bank balance of ₹1 lakh on 31 March. What was its profit for the year?",
+   "c": [
+    "₹8 lakh, its sales",
+    "₹1 lakh, its bank balance",
+    "₹7 lakh, the difference",
+    "It cannot be read from either figure; it needs the trading and P&L account"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Sales ignore what the goods and other costs cost; the bank balance ignores unpaid bills and customers who have not paid. Profit for the period comes from the trading and P&L account; the position on 31 March from the balance sheet.",
+   "lec": 24,
+   "lv": "analyse"
   }
  ],
  "briefs": {
@@ -6098,7 +7201,7 @@ HUB.addCourse({
    "scopeShort": "Lectures 1–15",
    "tag": "from the official LMS announcement",
    "lede": "Figures below are from the official Quiz 1 announcement and its attached syllabus document. Dr. Yadav gave the date in Live Lecture 3 but said she had not yet decided the marks — the announcement has since settled them.",
-   "html": "\n    <div class=\"grid2\">\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Confirmed on the official announcement</h4>\n        <div class=\"scroller\"><table><tbody>\n          <tr><td><strong>Date</strong></td><td>Saturday 3 October</td></tr>\n          <tr><td><strong>Window</strong></td><td>5:30–6:00 PM IST · join from <strong>5:15 PM</strong></td></tr>\n          <tr><td><strong>Questions</strong></td><td><strong>40</strong>, for <strong>40 marks</strong></td></tr>\n          <tr><td><strong>Type</strong></td><td><strong>MCQ and True/False</strong> — the only paper of the six with True/False</td></tr>\n          <tr><td><strong>Weight</strong></td><td>20% · best 2 of 3 · 40% of the course total</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--bad);background:var(--bad-soft)\">\n          <b>Negative marking.</b> +1 correct, <strong>−0.25 for a wrong answer</strong>, 0 if left blank. This matters more here than elsewhere, because a True/False guess is a coin flip — see below.\n        </div>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Syllabus</h4>\n        <p style=\"font-size:14.5px\">The official syllabus document lists lectures <strong>#1 to #15</strong>, ending at <strong>Week 6 — Trial Balance Part 2</strong>. That matches what she said in Live Lecture 3: <em>&ldquo;whatever has been covered in the week previous to that&hellip; except what you cover in that particular week.&rdquo;</em></p>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--good);background:var(--good-soft)\">\n          <b>#16 Matching Concept was not in Quiz 1, and so is <b>#19 Live Lecture 4</b> (26 September). The list stops at Trial Balance Part 2.\n        </div>\n        <p style=\"font-size:14.5px;margin-top:11px\">So the arc is: what accounting is → users and regulators → the eight concepts and four conventions → the accounting equation → journal → ledger → <strong>trial balance</strong>. Financial statements themselves are not yet in scope.</p>\n        <p style=\"font-size:13.5px;color:var(--ink-3);margin-top:11px\">She also warned there is <strong>no retake</strong> if you miss it — though best-2-of-3 still applies across the semester.</p>\n      </div>\n    </div>\n\n    <div class=\"card\" style=\"margin-top:14px;border-left:3px solid var(--clay)\">\n      <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">45 seconds a question — and be careful with True/False</h4>\n      <p style=\"font-size:14.5px;color:var(--ink-2)\">40 questions in 30 minutes is the most generous pace of your six papers. Use it: this is the one where reading the stem properly pays.</p>\n      <div class=\"scroller\" style=\"margin-top:11px\"><table><thead><tr><th>Situation</th><th>Expected value</th><th>Do</th></tr></thead><tbody>\n        <tr><td>You know it</td><td><strong>+1.00</strong></td><td>Answer</td></tr>\n        <tr><td>Four-option MCQ, rule out two</td><td><strong>+0.38</strong></td><td>Answer</td></tr>\n        <tr><td>Four-option MCQ, rule out one</td><td><strong>+0.17</strong></td><td>Answer</td></tr>\n        <tr><td><strong>True/False coin flip</strong></td><td><strong>+0.38</strong></td><td>Answer — a 50/50 is worth far more than a 4-way guess</td></tr>\n        <tr><td>Blind four-option guess</td><td><strong>+0.06</strong></td><td>Answer, but it gains almost nothing</td></tr>\n      </tbody></table></div>\n      <ul style=\"margin:11px 0 0;padding-left:19px;font-size:14.5px;line-height:1.7\">\n        <li><strong>Never leave a True/False blank.</strong> Even a pure guess is worth +0.38 — the best odds on the paper.</li>\n        <li><strong>Concepts and conventions are the biggest block.</strong> Twelve named principles, each with one giveaway example. Learn the example and the name comes with it.</li>\n        <li><strong>Know which side each account sits on.</strong> A large share of accounting MCQs reduce to debit-or-credit.</li>\n      </ul>\n    </div>",
+   "html": "\n    <div class=\"grid2\">\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Confirmed on the official announcement</h4>\n        <div class=\"scroller\"><table><tbody>\n          <tr><td><strong>Date</strong></td><td>Saturday 3 October</td></tr>\n          <tr><td><strong>Window</strong></td><td>5:30–6:00 PM IST · join from <strong>5:15 PM</strong></td></tr>\n          <tr><td><strong>Questions</strong></td><td><strong>40</strong>, for <strong>40 marks</strong></td></tr>\n          <tr><td><strong>Type</strong></td><td><strong>MCQ and True/False</strong> — the only paper of the six with True/False</td></tr>\n          <tr><td><strong>Weight</strong></td><td>30% of the course: the higher of your two quiz scores counts (rule from 14 Oct; at Quiz 1 it was 20%, best 2 of 3)</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--bad);background:var(--bad-soft)\">\n          <b>Negative marking.</b> +1 correct, <strong>−0.25 for a wrong answer</strong>, 0 if left blank. This matters more here than elsewhere, because a True/False guess is a coin flip — see below.\n        </div>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Syllabus</h4>\n        <p style=\"font-size:14.5px\">The official syllabus document lists lectures <strong>#1 to #15</strong>, ending at <strong>Week 6 — Trial Balance Part 2</strong>. That matches what she said in Live Lecture 3: <em>&ldquo;whatever has been covered in the week previous to that&hellip; except what you cover in that particular week.&rdquo;</em></p>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--good);background:var(--good-soft)\">\n          <b>#16 Matching Concept was not in Quiz 1, and so is <b>#19 Live Lecture 4</b> (26 September). The list stops at Trial Balance Part 2.\n        </div>\n        <p style=\"font-size:14.5px;margin-top:11px\">So the arc is: what accounting is → users and regulators → the eight concepts and four conventions → the accounting equation → journal → ledger → <strong>trial balance</strong>. Financial statements themselves are not yet in scope.</p>\n        <p style=\"font-size:13.5px;color:var(--ink-3);margin-top:11px\">She also warned there is <strong>no retake</strong> if you miss it — though best-2-of-3 still applies across the semester.</p>\n      </div>\n    </div>\n\n    <div class=\"card\" style=\"margin-top:14px;border-left:3px solid var(--clay)\">\n      <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">45 seconds a question — and be careful with True/False</h4>\n      <p style=\"font-size:14.5px;color:var(--ink-2)\">40 questions in 30 minutes is the most generous pace of your six papers. Use it: this is the one where reading the stem properly pays.</p>\n      <div class=\"scroller\" style=\"margin-top:11px\"><table><thead><tr><th>Situation</th><th>Expected value</th><th>Do</th></tr></thead><tbody>\n        <tr><td>You know it</td><td><strong>+1.00</strong></td><td>Answer</td></tr>\n        <tr><td>Four-option MCQ, rule out two</td><td><strong>+0.38</strong></td><td>Answer</td></tr>\n        <tr><td>Four-option MCQ, rule out one</td><td><strong>+0.17</strong></td><td>Answer</td></tr>\n        <tr><td><strong>True/False coin flip</strong></td><td><strong>+0.38</strong></td><td>Answer — a 50/50 is worth far more than a 4-way guess</td></tr>\n        <tr><td>Blind four-option guess</td><td><strong>+0.06</strong></td><td>Answer, but it gains almost nothing</td></tr>\n      </tbody></table></div>\n      <ul style=\"margin:11px 0 0;padding-left:19px;font-size:14.5px;line-height:1.7\">\n        <li><strong>Never leave a True/False blank.</strong> Even a pure guess is worth +0.38 — the best odds on the paper.</li>\n        <li><strong>Concepts and conventions are the biggest block.</strong> Twelve named principles, each with one giveaway example. Learn the example and the name comes with it.</li>\n        <li><strong>Know which side each account sits on.</strong> A large share of accounting MCQs reduce to debit-or-credit.</li>\n      </ul>\n    </div>",
    "mapLede": "Fifteen examinable lectures from Dr. Manisha Yadav. Lectures #16 and #19 appear on the LMS but fall outside this quiz.",
    "syllabusNote": "",
    "drillLede": "Questions written from the lectures and transcripts. There is no official practice set for this course. Turn the pacer on to rehearse the 45-second tempo.",
@@ -6144,6 +7247,9 @@ HUB.addCourse({
   "lec-18",
   "lec-19",
   "lec-20",
-  "lec-21"
+  "lec-21",
+  "lec-22",
+  "lec-23",
+  "lec-24"
  ]
 });

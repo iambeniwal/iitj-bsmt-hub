@@ -127,6 +127,18 @@ HUB.addCourse({
    "Week 8 — Blockchain: Concluding Non-linear Structures",
    "Hash-linked blocks, Merkle trees, consensus, uses",
    "rec"
+  ],
+  [
+   21,
+   "Week 9 — Algorithmic Complexity",
+   "Growth rate, cases, Big O of operations",
+   "rec"
+  ],
+  [
+   22,
+   "Week 9 — Search Algorithms",
+   "Linear, binary, jump, exponential, hash search",
+   "rec"
   ]
  ],
  "units": [
@@ -317,9 +329,24 @@ HUB.addCourse({
   {
    "id": "complexity",
    "title": "Algorithm analysis &amp; Big O",
-   "tag": "From the textbook",
-   "lede": "",
+   "tag": "Lecture 21 · Module 4 · + textbook",
+   "lede": "How fast the work grows as the data grows: best, worst and average cases, the Big O classes from O(1) to O(2ⁿ), and the cost of every operation on the structures you already know.",
    "topics": [
+    {
+     "t": "Algorithmic complexity and the three cases",
+     "src": "L#21",
+     "h": "\n  <div class=\"def\"><b>Algorithmic complexity</b> describes how much time an algorithm needs <b>as the size of the input grows</b>. It is about the <b>growth rate</b>, not the exact running time in seconds or hours: what happens when an array of 100 elements becomes one of 10 lakh?</div>\n  <p style=\"font-size:14.5px\">He held this topic back until Module 4 (search) because Modules 4 and 5 (sorting) offer several algorithms for the same job, and complexity is how you decide which is more efficient. Efficiency can mean time or space, but storage is cheap per unit these days, so the course focuses on <strong>time complexity</strong>. Users type the first few letters of a station or product and expect suggestions at once; a company that saves space but lets its site lag will lose customers.</p>\n  <h4>Why a manager cares, not only the programmer</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Criterion</th><th>The question it asks</th></tr></thead><tbody>\n   <tr><td><strong>Feasibility</strong></td><td>Is it possible at all?</td></tr>\n   <tr><td><strong>Cost</strong></td><td>What will it cost, mainly in computing resources?</td></tr>\n   <tr><td><strong>Speed</strong></td><td>How quickly can it deliver the result?</td></tr>\n   <tr><td><strong>Scalability</strong></td><td>Can it cope as the data grows? Excel is fine for 100 customers; at 10 lakh customers it is not</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\">Two algorithms can solve the same business problem with very different demands on time and space, and that difference shows up in cost and in customer experience.</p>\n  <h4>Best, worst and average case</h4>\n  <p style=\"font-size:14.5px\">An algorithm is a general solution, and how much work it does depends on where the answer happens to be. Searching for a friend's house, you might find it at the first door or only at the very last.</p>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>Best case:</strong> the answer is reached with the least work</li>\n   <li><strong>Worst case:</strong> the most work is needed</li>\n   <li><strong>Average case:</strong> the typical amount of work, somewhere in between</li>\n  </ul>\n  <p style=\"font-size:14.5px\"><strong>His housing-society exercise.</strong> A society of 24 numbered houses has a single entrance, gate A. The houses right by the gate (3 and 4 in his plan) need the least walking, so they are the best case. The two farthest from the gate (19 and 24) are the worst case. <strong>Every house in between</strong> counts as the average case, not just a middle band. This still does not say what happens when the society grows into a large multi-tower complex. That question is what Big O answers.</p>\n  <div class=\"def\"><b>From the lecture (L#21):</b> three in-class exercises: (1) pick the best-, worst- and average-case houses; (2) put house-search situations in order of increasing complexity; (3) give the Big O of push, pop and search on a stack and of enqueue, dequeue and search on a queue. He said <b>Big O is the only notation this course needs</b> (others exist), and that you <b>do not need the mathematics</b> behind it, but you should be able to reason out an operation's complexity from how it works.</div>"
+    },
+    {
+     "t": "Big O growth classes, as the lecture taught them",
+     "src": "L#21",
+     "h": "\n  <div class=\"def\"><b>Big O</b> (O for <b>order</b>, as in order of magnitude) states how the work an algorithm needs grows as the input grows: if the input increases, in what proportion does the time requirement increase? It is written O(…), e.g. O(1) or O(n), and every algorithm has its own.</div>\n  <div class=\"scroller\"><table><thead><tr><th>Class</th><th>Growth</th><th>His explanation</th><th>Steps at n = 16</th></tr></thead><tbody>\n   <tr><td><strong>O(1)</strong> constant</td><td>None</td><td>Same effort whatever the size: you go straight to the answer</td><td style=\"font-family:var(--mono)\">1</td></tr>\n   <tr><td><strong>O(log n)</strong> logarithmic</td><td>Very slow</td><td>Divide the problem and ignore the part that cannot hold the answer, as when you open a dictionary in the middle and know which way to turn</td><td style=\"font-family:var(--mono)\">4</td></tr>\n   <tr><td><strong>O(n)</strong> linear</td><td>In step with n</td><td>Double the input, double the time; four times the input, four times the time</td><td style=\"font-family:var(--mono)\">16</td></tr>\n   <tr><td><strong>O(n log n)</strong></td><td>A little faster than n</td><td>Grows faster than O(n), so the algorithm is slower, but still manageable</td><td style=\"font-family:var(--mono)\">64</td></tr>\n   <tr><td><strong>O(n²)</strong> quadratic</td><td>Rapid</td><td>Input 2 → effort 4, input 5 → effort 25. Typical when each new input is compared with every earlier input (to check it is unique, say)</td><td style=\"font-family:var(--mono)\">256</td></tr>\n   <tr><td><strong>O(2ⁿ)</strong> exponential</td><td>Explosive</td><td>Every decision has two options, so a decision tree doubles its paths at each level</td><td style=\"font-family:var(--mono)\">65,536</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:13.5px;color:var(--ink-3)\">His chart marked n = 16 with a dashed line; the last column gives the step counts each class implies there. O(n³) and beyond are even more resource-hungry, and some problems cannot be solved at all.</p>\n  <h4>Fast and slow: say which one you mean</h4>\n  <p style=\"font-size:14.5px\">He warned against mixing two ways of talking. A <strong>fast algorithm</strong> has <strong>low complexity</strong>: its work <strong>grows slowly</strong>. A <strong>slow algorithm</strong> has <strong>high complexity</strong>: its work <strong>grows fast</strong>. So O(n²) has a faster growth rate than O(n), which makes it the slower algorithm.</p>\n  <h4>The chessboard legend</h4>\n  <p style=\"font-size:14.5px\">The inventor of chess asks a delighted king for rice: one grain on the first square, then more on each square after, either squaring the square's number or, in the better-known version, <strong>doubling</strong> it each time (1, 2, 4, 8…). The king thinks it a trifle; over 64 squares the numbers become astronomical. The lesson: an algorithm that runs happily on small inputs can become unmanageable once the input is big.</p>\n  <h4>House search, ranked by complexity</h4>\n  <p style=\"font-size:14.5px\">His second exercise mapped ways of finding a friend's home (no shared map pin) onto Big O, roughly, since the exact class always depends on the actual algorithm:</p>\n  <div class=\"scroller\"><table><thead><tr><th>Situation</th><th>Roughly like</th></tr></thead><tbody>\n   <tr><td>You have the exact map address</td><td><strong>O(1)</strong>: go straight there</td></tr>\n   <tr><td>A flat such as D-321 in a complex of 2,000 flats split into named towers</td><td><strong>O(log n)</strong>: go to tower D and ignore the others</td></tr>\n   <tr><td>A numbered colony of 20 independent houses</td><td><strong>O(n)</strong>: the bigger the colony, the more houses to check</td></tr>\n   <tr><td>No number, only \"behind X, near Y\", in a locality you know</td><td><strong>O(n log n)</strong>: you still have to ask around</td></tr>\n   <tr><td>Only the name of a small village</td><td>Much harder: door to door</td></tr>\n   <tr><td>Only the name of a city</td><td>Hardest; for ordinary effort, practically unsolvable</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:13.5px;color:var(--ink-3)\">The rows here are sorted by growth rate. In his walk-through he took the 20-house colony (O(n)) before the tower complex (O(log n)), but O(log n) is the less complex of the two.</p>\n  <h4>What business can live with</h4>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>O(1)</strong> is ideal but rare: you seldom know the exact location in advance, so some search is usually needed</li>\n   <li><strong>O(log n)</strong> and <strong>O(n)</strong> are what business is typically happy with. O(log n) is faster, but only some problems allow you to keep dividing them; O(n log n) is still worth a try</li>\n   <li><strong>O(n²), O(n³), O(2ⁿ)</strong> need too much time and space as input grows; avoid them unless there is no other option</li>\n  </ul>\n  <div class=\"def\">When the exact algorithm is too complex, businesses use a <b>heuristic</b>: a <b>rule of thumb</b> that gives a good-enough answer close to the best, though not necessarily the best. He called it the \"chalega\" answer: it works.</div><!--viz:atb-house-search-ladder--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A ladder of six house-search situations from O(1) with an exact map address, through O(log n) for a tower-coded flat, O(n) for a numbered colony and O(n log n) for a landmark address, down to a village name and a city name only, the hardest.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Finding a friend's home, from easiest to hardest</div><div style=\"display:flex;flex-direction:column;gap:4px;font-size:14px;max-width:440px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--good);background:var(--good-soft)\"><b style=\"font-family:var(--mono);min-width:92px\">O(1)</b><span style=\"color:var(--ink-2)\">exact map address</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1\">↓</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--blue);background:var(--blue-soft)\"><b style=\"font-family:var(--mono);min-width:92px\">O(log n)</b><span style=\"color:var(--ink-2)\">flat D-321: tower D only</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1\">↓</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><b style=\"font-family:var(--mono);min-width:92px\">O(n)</b><span style=\"color:var(--ink-2)\">20-house numbered colony</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1\">↓</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><b style=\"font-family:var(--mono);min-width:92px\">O(n log n)</b><span style=\"color:var(--ink-2)\">“behind X, near Y”</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1\">↓</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--clay);background:var(--clay-soft)\"><b style=\"font-family:var(--mono);min-width:92px\">much worse</b><span style=\"color:var(--ink-2)\">only the village name</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1\">↓</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--bad);background:var(--bad-soft)\"><b style=\"font-family:var(--mono);min-width:92px\">hardest</b><span style=\"color:var(--ink-2)\">only the city name</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The less you can rule out at each step, the faster the work grows.</figcaption></figure><!--/viz:atb-house-search-ladder--><!--viz:atb-doubling-decision-tree--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Binary decision tree with four levels. The number of possible paths doubles at every level: 1, 2, 4, 8.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Why two options per decision gives O(2ⁿ)</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 276\" role=\"img\" aria-label=\"A decision tree where every node has two branches: one start node, then 2, 4 and 8 nodes on the next three levels. One path is highlighted.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M270.0,45 L200.0,83\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M270.0,45 L340.0,83\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M200.0,105 L165.0,143\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M200.0,105 L235.0,143\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M340.0,105 L305.0,143\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M340.0,105 L375.0,143\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M165.0,165 L147.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M165.0,165 L182.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M235.0,165 L217.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M235.0,165 L252.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M305.0,165 L287.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M305.0,165 L322.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M375.0,165 L357.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M375.0,165 L392.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M270.0,45 L340.0,83\" style=\"stroke:var(--blue);stroke-width:2;fill:none\"/><path d=\"M340.0,105 L305.0,143\" style=\"stroke:var(--blue);stroke-width:2;fill:none\"/><path d=\"M305.0,165 L322.5,203\" style=\"stroke:var(--blue);stroke-width:2;fill:none\"/><circle cx=\"270.0\" cy=\"34\" r=\"11\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><circle cx=\"200.0\" cy=\"94\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"340.0\" cy=\"94\" r=\"11\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><circle cx=\"165.0\" cy=\"154\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"235.0\" cy=\"154\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"305.0\" cy=\"154\" r=\"11\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><circle cx=\"375.0\" cy=\"154\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"147.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"182.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"217.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"252.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"287.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"322.5\" cy=\"214\" r=\"11\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><circle cx=\"357.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"392.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"14\" y=\"39\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">start</text><text x=\"14\" y=\"99\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">2 paths</text><text x=\"14\" y=\"159\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">4 paths</text><text x=\"14\" y=\"219\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">8 paths</text><text x=\"220\" y=\"262\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:15px\">20 decisions → 1,048,576 paths</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each extra decision doubles the paths, so the work explodes even for modest n.</figcaption></figure><!--/viz:atb-doubling-decision-tree-->"
+    },
+    {
+     "t": "Big O of data-structure operations",
+     "src": "L#21",
+     "h": "\n  <p style=\"font-size:14.5px\">He recapped the operations from Modules 2 and 3 and gave each a Big O. The logic is always the same: if the location is fixed or known, the work does not grow with the size of the structure; if you first have to search, it does.</p>\n  <div class=\"def\"><b>O(1) does not mean one operation.</b> It means the number of operations stays the same whatever the size. Adding a song to the end of a playlist takes the same few pointer changes whether the playlist has 4 songs or 4,000.</div>\n  <div class=\"scroller\"><table><thead><tr><th>Structure</th><th>Operation</th><th>Big O</th><th>Why</th></tr></thead><tbody>\n   <tr><td rowspan=\"5\"><strong>Array</strong></td><td>Read, update or delete <strong>by index</strong></td><td><strong>O(1)</strong></td><td>Go straight to the position, whatever the length</td></tr>\n   <tr><td>Search; update or delete <strong>by searching</strong></td><td><strong>O(n)</strong></td><td>Check items one by one; the bigger the array, the longer it takes</td></tr>\n   <tr><td>Insert <strong>at the end</strong></td><td><strong>O(1)</strong></td><td>Nothing has to move</td></tr>\n   <tr><td>Insert <strong>at the beginning</strong></td><td><strong>O(n)</strong></td><td>Every element shifts one place first</td></tr>\n   <tr><td>Insert <strong>in the middle</strong></td><td><strong>O(n)</strong></td><td>Every later element shifts; the number of moves grows with the size</td></tr>\n   <tr><td rowspan=\"2\"><strong>Linked list</strong></td><td>Add <strong>at the end</strong></td><td><strong>O(1)</strong></td><td>The last node points to null; link the new node to it</td></tr>\n   <tr><td>Add <strong>anywhere else</strong> (\"after song 2\")</td><td><strong>O(n)</strong></td><td>You must first search for the spot, which may be near the end</td></tr>\n   <tr><td rowspan=\"2\"><strong>Stack</strong></td><td>Push, pop</td><td><strong>O(1)</strong></td><td>Always at the top: the location is fixed</td></tr>\n   <tr><td>Search</td><td><strong>O(n)</strong></td><td>Pop items one by one until you reach the one you want, like toys piled in a sack</td></tr>\n   <tr><td rowspan=\"2\"><strong>Queue</strong></td><td>Enqueue (rear), dequeue (front)</td><td><strong>O(1)</strong></td><td>Both locations are fixed</td></tr>\n   <tr><td>Search</td><td><strong>O(n)</strong></td><td>Dequeue items until you reach the one you want</td></tr>\n   <tr><td rowspan=\"2\"><strong>Tree</strong></td><td>Traverse or search a <strong>general tree</strong></td><td><strong>O(n)</strong></td><td>No order to exploit, so every node may be visited</td></tr>\n   <tr><td>Search a <strong>binary search tree</strong></td><td><strong>O(log n)</strong></td><td>Smaller values sit left, larger right, so each comparison discards one whole side</td></tr>\n   <tr><td><strong>Graph</strong></td><td>Traverse or search (BFS, DFS)</td><td><strong>O(V + E)</strong></td><td>Potentially every vertex and every edge is visited</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\"><strong>His BST example:</strong> searching for 60 in a tree rooted at 50, you go right (60 &gt; 50) and never look at the left subtree; at 70 you go left (60 &lt; 70) and drop the right side. Each level halves the problem, like the multi-tower housing complex. With thousands or lakhs of nodes, as in social-media data, the saving is huge.</p>\n  <p style=\"font-size:14.5px\"><strong>Traversal is search.</strong> Traversing a tree or graph is usually done to find something, which is why BFS and DFS carry the word \"search\". For a graph G = (V, E), the work is in the order of the vertices <strong>plus</strong> the edges, not either one alone.</p>\n  <p style=\"font-size:13.5px;color:var(--ink-3)\">Two refinements from outside this lecture. The O(1) for adding to the end of a linked list assumes you can reach the last node directly (a tail pointer); otherwise you walk the list first. And BST search is O(log n) only while the tree is balanced: Lecture 22 shows that a lopsided BST degrades to O(n).</p><!--viz:atb-ops-big-o-grid--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of data structures. Operations at a fixed or known position (array index, insert at the end, push, pop, enqueue, dequeue, add at the end of a linked list) are O(1). Operations that need a search first are O(n), except binary search tree search at O(log n) and graph traversal at O(V + E).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Known position vs search first, across the structures</div><div class=\"scroller\"><table><thead><tr><th>Structure</th><th>Fixed or known position</th><th>Have to search first</th></tr></thead><tbody><tr><td><b>Array</b></td><td style=\"background:var(--good-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(1)</b> index, insert at end</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(n)</b> search, insert at start or middle</td></tr><tr><td><b>Linked list</b></td><td style=\"background:var(--good-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(1)</b> add at end</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(n)</b> add anywhere else</td></tr><tr><td><b>Stack</b></td><td style=\"background:var(--good-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(1)</b> push, pop</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(n)</b> search</td></tr><tr><td><b>Queue</b></td><td style=\"background:var(--good-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(1)</b> enqueue, dequeue</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(n)</b> search</td></tr><tr><td><b>BST</b></td><td style=\"background:var(--surface)\">—</td><td style=\"background:var(--blue-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(log n)</b> one side discarded per level</td></tr><tr><td><b>General tree</b></td><td style=\"background:var(--surface)\">—</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(n)</b> every node</td></tr><tr><td><b>Graph</b></td><td style=\"background:var(--surface)\">—</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(V + E)</b> every vertex and edge</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">If the position is fixed or known, the cost does not grow; once you have to search, it does.</figcaption></figure><!--/viz:atb-ops-big-o-grid-->"
+    },
     {
      "t": "Textbook: Intro to DSA, Types, and Big O",
      "src": "Codeless DSA ch1",
@@ -462,9 +489,29 @@ HUB.addCourse({
   {
    "id": "searching",
    "title": "Searching algorithms",
-   "tag": "From the textbook",
-   "lede": "",
+   "tag": "Lecture 22 · Module 4 · + textbook",
+   "lede": "Five ways to find something: linear, binary, jump, exponential and hash-based search, what each needs from the data, what each costs, and which business case suits which.",
    "topics": [
+    {
+     "t": "Linear search, binary search and BSTs",
+     "src": "L#22",
+     "h": "\n  <p style=\"font-size:14.5px\">The previous lecture looked at search inside particular data structures. This one covers five search strategies that stand on their own: <strong>linear, binary, jump, exponential and hash-based</strong> search.</p>\n  <div class=\"def\"><b>Positions start at 1 in this lecture.</b> Programming languages usually number from 0, but he counted from 1 so that the jump and middle-position calculations come out cleanly, without adding or subtracting 1 each time. The traces below do the same.</div>\n  <h4>Linear search</h4>\n  <p style=\"font-size:14.5px\">Compare the search term with the first element; if it does not match, move to the next, and stop at the first match, returning its position. The data <strong>may or may not be sorted</strong>: the method is the same either way. In his example the target sat at position 6, so it took six comparisons.</p>\n  <ul style=\"font-size:14.5px\">\n   <li>Complexity <strong>O(n)</strong>: a lucky search finds the target first, but it may equally be last, so the effort grows in step with the size</li>\n   <li>It works the same way on a <strong>linked list</strong> (start at the head), a <strong>general tree</strong> with no order, and a <strong>graph</strong> searched with DFS or BFS, all O(n)</li>\n   <li>Fine for 10 or even 1,000 items, and simple to write. For a million records it is far too slow: imagine IRCTC checking every station in India one by one during Tatkal booking</li>\n  </ul>\n  <h4>Binary search</h4>\n  <p style=\"font-size:14.5px\">Binary search <strong>always needs the list sorted</strong> in increasing order. Start at the middle: if it matches, stop; if the middle value is smaller than the target, continue in the right half; if larger, in the left half. Each time you jump to the <strong>middle of what is left</strong>, never step by step. In his seven-element example the target was found in <strong>two</strong> comparisons, against six for linear search. Because one half is discarded at every step, it is <strong>O(log n)</strong>.</p>\n  <p style=\"font-size:13.5px;color:var(--ink-3)\">With 7 elements, 7 ÷ 2 = 3.5. Whether the middle is taken as position 3 or 4 depends on the implementation; he went to the higher one, 4. A question should tell you which rule to use.</p>\n  <h4>Binary search vs binary search tree</h4>\n  <p style=\"font-size:14.5px\">\"Binary\" just means two choices: 0 and 1, true and false, left and right. The two ideas share that principle but are different things.</p>\n  <div class=\"scroller\"><table><thead><tr><th></th><th>Binary search</th><th>Binary search tree (BST)</th></tr></thead><tbody>\n   <tr><td><strong>What it is</strong></td><td>An <strong>algorithm</strong></td><td>A <strong>data structure</strong></td></tr>\n   <tr><td><strong>Order comes from</strong></td><td>You must <strong>sort the list first</strong></td><td>Its own structure: each value is placed left (smaller) or right (larger) as it is inserted</td></tr>\n   <tr><td><strong>Applies to</strong></td><td>Any sorted list: wider use</td><td>That tree; it lets you do a binary search as you traverse it</td></tr>\n   <tr><td><strong>Complexity</strong></td><td><strong>Always O(log n)</strong></td><td><strong>O(log n) if balanced</strong>; up to <strong>O(n)</strong> if unbalanced</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\"><strong>Why a BST can be O(n).</strong> The shape depends on the order in which values arrive. If they arrive already in increasing order, each goes to the right of the last, and the tree becomes a chain that behaves like a <strong>linked list</strong>: every node must be checked. So a tree called a binary search tree is not automatically O(log n).</p>"
+    },
+    {
+     "t": "Jump search and exponential search",
+     "src": "L#22",
+     "h": "\n  <h4>Jump search</h4>\n  <div class=\"def\"><b>Jump search</b> works on a <b>sorted</b> list. It jumps ahead a <b>fixed</b> number of positions at a time until it passes the search term, steps back to the previous jump point, and then does a <b>linear search forward</b> from there.</div>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>Jump size:</strong> the usual rule of thumb is <strong>√n</strong>: 100 elements → jumps of 10; 25 → 5; his 9-element example → 3</li>\n   <li><strong>His example:</strong> looking for a value at position 8 of 9, he checked positions 3 and 6 (both smaller), then 9 (larger), went back to 6, and stepped forward: 7, then 8, found</li>\n   <li>The forward linear search is the usual implementation; going backwards from the overshoot is logically possible too</li>\n   <li><strong>Complexity O(√n):</strong> the list is cut into √n blocks of √n elements (100 elements → ten blocks, 1–10, 11–20, …), so there are about √n jumps plus at most one block to scan</li>\n   <li>Binary search makes very big jumps; jump search starts from the beginning with fixed, modest ones, which suits some situations better. It is fine while the list is a manageable size</li>\n  </ul>\n  <h4>Exponential search</h4>\n  <div class=\"def\"><b>Exponential search</b> works on a <b>sorted</b> list. It checks positions <b>1, 2, 4, 8, 16…</b>, doubling the jump each time, until it passes the search term, then runs a <b>binary search</b> on the range between the last two positions checked.</div>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>The difference from jump search:</strong> jumps that <strong>grow</strong> instead of a fixed size, and a <strong>binary</strong> search inside the range instead of a linear one. On a long list the final range can run to thousands or lakhs of elements, and a linear scan there would be slow</li>\n   <li><strong>His example:</strong> searching for the value at position 7, he checked positions 1, 2, 4 (all smaller) and 8 (larger), so the target lay between 4 and 8; the middle, 6, was smaller, and between 6 and 8 the next middle, 7, was the target</li>\n   <li><strong>Complexity O(log n):</strong> the doubling jumps and the binary search both cut the problem down repeatedly</li>\n   <li><strong>Where it fits:</strong> very large data that keeps growing. UPI adds millions of transactions an hour, each with a unique UTR number; even binary or jump search would need many jumps there</li>\n  </ul><!--viz:atb-jump-search-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Sixteen sorted values at positions 1 to 16. Jump search with jump size 4 checks positions 4, 8 and 12; 88 at position 12 overshoots 81, so it returns to position 8 and checks 9, 10 and 11, finding 81 at position 11.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Jump search for 81, jump size 4</div><div style=\"display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:3px;margin-bottom:10px;max-width:440px\"><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">1</div>11</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">2</div>18</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">3</div>24</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">4</div>31</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">5</div>39</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">6</div>46</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">7</div>52</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">8</div>60</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">9</div>67</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">10</div>73</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">11</div>81</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">12</div>88</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">13</div>94</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">14</div>99</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">15</div>105</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">16</div>112</div></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-bottom:8px;font-family:var(--mono)\">positions 1–16 · target 81 · jump = √16 = 4</p><div class=\"scroller\"><table><thead><tr><th>#</th><th>Pos.</th><th>Value</th><th>Decision</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono)\">31</td><td>jump: 31 &lt; 81, jump on</td></tr><tr><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono)\">8</td><td style=\"font-family:var(--mono)\">60</td><td>jump: 60 &lt; 81, jump on</td></tr><tr><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono);background:var(--clay-soft)\">12</td><td style=\"font-family:var(--mono);background:var(--clay-soft)\">88</td><td style=\"background:var(--clay-soft)\">jump: 88 &gt; 81, back to 8</td></tr><tr><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono)\">9</td><td style=\"font-family:var(--mono)\">67</td><td>linear: not it</td></tr><tr><td style=\"font-family:var(--mono)\">5</td><td style=\"font-family:var(--mono)\">10</td><td style=\"font-family:var(--mono)\">73</td><td>linear: not it</td></tr><tr><td style=\"font-family:var(--mono)\">6</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">11</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">81</td><td style=\"background:var(--good-soft)\">linear: found</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Fixed jumps find the block; a short linear scan finishes the job: six comparisons here.</figcaption></figure><!--/viz:atb-jump-search-trace--><!--viz:atb-exponential-search-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Exponential search on the same sixteen values checks positions 1, 2, 4, 8 and 16; 112 at position 16 overshoots 94, so binary search runs on positions 8 to 16, checking 12, 14 and 13, and finds 94 at position 13.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Exponential search for 94: double, then halve</div><p style=\"font-size:13.5px;color:var(--ink-2);margin-bottom:8px;font-family:var(--mono)\">same 16 values · target 94 · middle = (low + high) ÷ 2, rounded down</p><div class=\"scroller\"><table><thead><tr><th>#</th><th>Pos.</th><th>Value</th><th>Decision</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono)\">11</td><td>double: 11 &lt; 94</td></tr><tr><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono)\">18</td><td>double: 18 &lt; 94</td></tr><tr><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono)\">31</td><td>double: 31 &lt; 94</td></tr><tr><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono)\">8</td><td style=\"font-family:var(--mono)\">60</td><td>double: 60 &lt; 94</td></tr><tr><td style=\"font-family:var(--mono)\">5</td><td style=\"font-family:var(--mono);background:var(--clay-soft)\">16</td><td style=\"font-family:var(--mono);background:var(--clay-soft)\">112</td><td style=\"background:var(--clay-soft)\">112 &gt; 94: binary search 8–16</td></tr><tr><td style=\"font-family:var(--mono)\">6</td><td style=\"font-family:var(--mono)\">12</td><td style=\"font-family:var(--mono)\">88</td><td>binary: 88 &lt; 94, go right</td></tr><tr><td style=\"font-family:var(--mono)\">7</td><td style=\"font-family:var(--mono)\">14</td><td style=\"font-family:var(--mono)\">99</td><td>binary: 99 &gt; 94, go left</td></tr><tr><td style=\"font-family:var(--mono)\">8</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">13</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">94</td><td style=\"background:var(--good-soft)\">binary: found</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The doubling jumps find the range quickly; binary search, not a linear scan, finishes inside it.</figcaption></figure><!--/viz:atb-exponential-search-trace-->"
+    },
+    {
+     "t": "Hash-based search",
+     "src": "L#22",
+     "h": "\n  <p style=\"font-size:14.5px\">Recall Lecture 19: a hash function turns a key into an index. For the calculations he used <strong>mod 10</strong>, whose remainder gives indexes 0 to 9 (real hash functions are far more complex). Keys are stored at their index in the order they arrive. When two keys share an index (a <strong>collision</strong>), <strong>chaining</strong> links the newcomer after the keys already there, like a linked list. In his table, 100, 120, 110 and 150 all chained at index 0; 104 and 124 at index 4; 118 and 108 at index 8. This is the simple hashing used for indexing, not the cryptographic hashing of blockchains.</p>\n  <h4>Searching</h4>\n  <ol style=\"font-size:14.5px\">\n   <li>Calculate the search term's hash, its index</li>\n   <li>Go straight to that index; no other index needs checking</li>\n   <li>If several keys are chained there, compare along the chain one by one</li>\n   <li>If the index is empty, or the chain ends without a match, the result is <strong>not found</strong>. That is a valid result</li>\n  </ol>\n  <p style=\"font-size:14.5px\">In his table, 105 hashes to 5, where nothing is stored: not found at once. 110 hashes to 0: compare 100, then 120, then 110: found on the third comparison.</p>\n  <h4>Complexity depends on the data</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Situation</th><th>Big O</th><th>Why</th></tr></thead><tbody>\n   <tr><td><strong>Average case</strong>: a good hash function, few collisions</td><td><strong>O(1)</strong></td><td>A fixed number of steps whatever the database size. Not necessarily one step</td></tr>\n   <tr><td><strong>Worst case</strong>: every key lands on one index</td><td><strong>O(n)</strong></td><td>One long chain, searched one by one like a linked list</td></tr>\n   <tr><td>Keys that use only a few indexes, e.g. multiples of 5 under mod 10</td><td>About n/2 per chain, still <strong>O(n)</strong></td><td>Only indexes 0 and 5 are ever used, so two long chains</td></tr>\n   <tr><td>Chains organised as balanced trees</td><td>O(log n) within the chain</td><td>He mentioned it, but did not go into how it is done</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\">Hash search is very fast when the keys spread evenly across all the indexes, which is why databases build <strong>indexes</strong>. It does <strong>not need sorted data</strong>.</p>\n  <p style=\"font-size:13.5px;color:var(--ink-3)\">He wrote the multiples-of-5 case as \"O(n/2)\". In Big O constant factors are dropped, so n/2 grows in the same order as n: it is O(n).</p>"
+    },
+    {
+     "t": "Choosing a search algorithm",
+     "src": "L#22",
+     "h": "\n  <p style=\"font-size:14.5px\">Any of these algorithms can work in many situations: linear search works anywhere, and anything that works on sorted data can be used once the data is sorted. The choice is about efficiency. <strong>Binary, jump and exponential search need sorted data; linear and hash search do not.</strong></p>\n  <h4>His five use cases</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Find…</th><th>His answer</th><th>His reasoning</th></tr></thead><tbody>\n   <tr><td>A guest in today's hotel check-in register</td><td><strong>Linear</strong></td><td>No inherent order: read the register top to bottom, page by page</td></tr>\n   <tr><td>A product in a catalogue sorted by <strong>category</strong></td><td><strong>Jump</strong></td><td>The order is by category, not by number, so he preferred fixed jumps to less-than/greater-than halving</td></tr>\n   <tr><td>A student's record by roll number in the institute ERP</td><td><strong>Hash</strong></td><td>Databases create indexes for quick access, and searching through them is hash search</td></tr>\n   <tr><td>A product in a catalogue sorted by <strong>price</strong></td><td><strong>Binary</strong></td><td>Numeric order lets you compare and discard half</td></tr>\n   <tr><td>A transaction in a fast-growing financial monitoring system</td><td><strong>Exponential</strong></td><td>The size is unknown, very large and growing all the time</td></tr>\n  </tbody></table></div>\n  <div class=\"def\"><b>From the lecture (L#22):</b> the in-class exercise was these five use cases. He said they need assumptions, so he did not expect everyone to get every answer, and he gave the answers under the most common assumptions. For hash search, he said it is enough to understand that its cost varies with the keys and how they spread across the indexes; he did not go into balanced-tree chains.</div>\n  <h4>Real search is bigger than this</h4>\n  <p style=\"font-size:14.5px\">These are the basics. Search is a large business in its own right: Google began with a more efficient search based on its <strong>PageRank</strong> algorithm, and e-commerce suggestions as you type draw on machine-learning and deep-learning models, such as recommender systems.</p><!--viz:atb-five-searches-compare--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table comparing linear, binary, jump, exponential and hash search: how each moves through the data, its Big O, and whether it needs sorted data.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The five search strategies side by side</div><div class=\"scroller\"><table><thead><tr><th>Search</th><th>Big O</th><th>Sorted?</th></tr></thead><tbody><tr><td><b>Linear</b><br><span style=\"font-size:13px;color:var(--ink-2)\">one by one</span></td><td style=\"font-family:var(--mono);white-space:nowrap\">O(n)</td><td>No</td></tr><tr><td><b>Binary</b><br><span style=\"font-size:13px;color:var(--ink-2)\">halve, then halve again</span></td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--blue-soft)\">O(log n)</td><td>Yes</td></tr><tr><td><b>Jump</b><br><span style=\"font-size:13px;color:var(--ink-2)\">√n jumps, then linear</span></td><td style=\"font-family:var(--mono);white-space:nowrap\">O(√n)</td><td>Yes</td></tr><tr><td><b>Exponential</b><br><span style=\"font-size:13px;color:var(--ink-2)\">1, 2, 4, 8…, then binary</span></td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--blue-soft)\">O(log n)</td><td>Yes</td></tr><tr><td><b>Hash</b><br><span style=\"font-size:13px;color:var(--ink-2)\">compute index, walk chain</span></td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--good-soft)\">O(1) avg<br>O(n) worst</td><td>No</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Three of the five need sorted data; hash search is fastest on average but depends on how evenly the keys spread.</figcaption></figure><!--/viz:atb-five-searches-compare-->"
+    },
     {
      "t": "Textbook: Linear and Binary Search",
      "src": "Codeless DSA ch6",
@@ -1310,6 +1357,90 @@ HUB.addCourse({
    "p": "With cycles, a vertex can be pushed or enqueued twice before it is visited. The slides' four steps do not say what to do with the second copy. Discard it when it comes off the stack or queue, or mark vertices when you push them.",
    "f": "visited? discard",
    "lec": 18
+  },
+  {
+   "id": "atb-t0111",
+   "h": "A fast algorithm is one whose work grows slowly",
+   "p": "Fast and slow can describe the algorithm or its growth rate, and they point opposite ways. Low complexity means slow growth and a fast algorithm; O(n²) grows faster than O(n), so it is the slower algorithm.",
+   "f": "fast algo = slow growth",
+   "lec": 21
+  },
+  {
+   "id": "atb-t0112",
+   "h": "O(1) means a constant number of steps, not one step",
+   "p": "Adding a song to the end of a playlist takes several pointer changes, but the same few whether the list has 4 songs or 4,000. That is O(1).",
+   "f": "constant, not one",
+   "lec": 21
+  },
+  {
+   "id": "atb-t0113",
+   "h": "O(n log n) grows faster than O(n)",
+   "p": "It sits between O(n) and O(n²): O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ). At n = 16 it means 64 steps against 16 for O(n). Some summaries of this lecture place it ahead of O(n); that order is wrong.",
+   "f": "n log n is after n",
+   "lec": 21
+  },
+  {
+   "id": "atb-t0114",
+   "h": "Only inserting at the end of an array is O(1)",
+   "p": "Inserting at the beginning or in the middle makes every later element shift, so the work grows with the array: O(n). Reading, updating or deleting by a known index stays O(1).",
+   "f": "end only is O(1)",
+   "lec": 21
+  },
+  {
+   "id": "atb-t0115",
+   "h": "Push, pop, enqueue and dequeue are O(1), but searching a stack or queue is O(n)",
+   "p": "The operations work at a fixed spot (top, front, rear). To find a particular item you must pop or dequeue items one by one until it appears.",
+   "f": "fixed spot vs search",
+   "lec": 21
+  },
+  {
+   "id": "atb-t0116",
+   "h": "Graph traversal is O(V + E), not O(V) or O(E)",
+   "p": "BFS and DFS may touch every vertex and every edge, so the work is in the order of the two added together.",
+   "f": "vertices plus edges",
+   "lec": 21
+  },
+  {
+   "id": "atb-t0117",
+   "h": "Binary search and a binary search tree are different things",
+   "p": "Binary search is an algorithm that works on any sorted list and is always O(log n). A BST is a data structure; its search is O(log n) only when balanced and O(n) when it degenerates into a chain.",
+   "f": "algorithm vs structure",
+   "lec": 22
+  },
+  {
+   "id": "atb-t0118",
+   "h": "Jump search scans linearly inside the block; exponential search uses binary search inside the range",
+   "p": "Both jump ahead and then finish locally. Jump search uses fixed √n jumps and a forward linear scan; exponential search doubles its jumps and finishes with binary search.",
+   "f": "jump → linear, exp → binary",
+   "lec": 22
+  },
+  {
+   "id": "atb-t0119",
+   "h": "Exponential search is O(log n), not O(2ⁿ)",
+   "p": "The name refers to the doubling jump sizes (1, 2, 4, 8…). Doubling reaches any position in about log₂ n jumps, and the binary search after it is O(log n) too.",
+   "f": "doubling jumps, log time",
+   "lec": 22
+  },
+  {
+   "id": "atb-t0120",
+   "h": "Hash search is O(1) on average, not always",
+   "p": "With few collisions it takes a fixed number of steps whatever the size, which is not necessarily one step. If the keys pile onto one index, the chain is searched like a linked list: O(n).",
+   "f": "average O(1), worst O(n)",
+   "lec": 22
+  },
+  {
+   "id": "atb-t0121",
+   "h": "O(n/2) is still O(n)",
+   "p": "Multiples of 5 under mod 10 use only indexes 0 and 5, so each chain holds about half the keys. Big O drops constant factors: work proportional to n/2 grows in the order of n.",
+   "f": "drop the constant",
+   "lec": 22
+  },
+  {
+   "id": "atb-t0122",
+   "h": "This lecture numbers positions from 1",
+   "p": "He started at 1 to keep the √n jumps and middle positions clean. Programming languages usually start at 0, so check which convention a question uses before you count.",
+   "f": "count from 1 here",
+   "lec": 22
   }
  ],
  "defs": [
@@ -2135,6 +2266,102 @@ HUB.addCourse({
    "term": "Subtree",
    "html": "A <b>subtree</b> is a child of some node together with everything below it. Each child of the root heads one subtree, and the deepest of them sets the tree's height (L#18 slides).",
    "lec": 18
+  },
+  {
+   "id": "atb-d0105",
+   "unit": "complexity",
+   "topic": "Algorithmic complexity and the three cases",
+   "term": "Algorithmic complexity",
+   "html": "<b>Algorithmic complexity</b> describes how much time an algorithm needs <b>as the input size grows</b>: the growth rate, not the exact time in seconds.",
+   "lec": 21
+  },
+  {
+   "id": "atb-d0106",
+   "unit": "complexity",
+   "topic": "Algorithmic complexity and the three cases",
+   "term": "Best, worst and average case",
+   "html": "The <b>best case</b> is the input that needs the least work, the <b>worst case</b> the most, and the <b>average case</b> the typical work in between.",
+   "lec": 21
+  },
+  {
+   "id": "atb-d0107",
+   "unit": "complexity",
+   "topic": "Algorithmic complexity and the three cases",
+   "term": "Scalability",
+   "html": "<b>Scalability</b> is whether a system can still cope as its data or input grows, e.g. from 100 customers to 10 lakh.",
+   "lec": 21
+  },
+  {
+   "id": "atb-d0108",
+   "unit": "complexity",
+   "topic": "Big O of data-structure operations",
+   "term": "O(1) constant time",
+   "html": "<b>O(1)</b> means the number of operations stays the <b>same whatever the input size</b>. It does not mean exactly one operation.",
+   "lec": 21
+  },
+  {
+   "id": "atb-d0109",
+   "unit": "complexity",
+   "topic": "Big O of data-structure operations",
+   "term": "O(V + E)",
+   "html": "<b>O(V + E)</b> is the complexity of traversing or searching a graph (BFS or DFS): the work grows with the number of <b>vertices plus edges</b>.",
+   "lec": 21
+  },
+  {
+   "id": "atb-d0110",
+   "unit": "complexity",
+   "topic": "Big O growth classes, as the lecture taught them",
+   "term": "Heuristic",
+   "html": "A <b>heuristic</b> is a <b>rule of thumb</b> that gives a good-enough answer, near the best but not guaranteed to be the best, when the exact algorithm is too complex (O(n²), O(2ⁿ)…).",
+   "lec": 21
+  },
+  {
+   "id": "atb-d0111",
+   "unit": "searching",
+   "topic": "Jump search and exponential search",
+   "term": "Jump search",
+   "html": "<b>Jump search</b> checks a sorted list in fixed jumps, usually <b>√n</b> positions, until it passes the target, steps back one jump and searches <b>linearly forward</b>. O(√n).",
+   "lec": 22
+  },
+  {
+   "id": "atb-d0112",
+   "unit": "searching",
+   "topic": "Jump search and exponential search",
+   "term": "Exponential search",
+   "html": "<b>Exponential search</b> checks positions <b>1, 2, 4, 8…</b> of a sorted list until it passes the target, then runs a <b>binary search</b> in that range. O(log n); suits very large, growing data.",
+   "lec": 22
+  },
+  {
+   "id": "atb-d0113",
+   "unit": "searching",
+   "topic": "Hash-based search",
+   "term": "Hash-based search",
+   "html": "<b>Hash-based search</b> computes the search term's hash to get its index, goes straight there and walks any chain. <b>O(1)</b> on average, <b>O(n)</b> in the worst case; no sorting needed.",
+   "lec": 22
+  },
+  {
+   "id": "atb-d0114",
+   "unit": "searching",
+   "topic": "Linear search, binary search and BSTs",
+   "term": "Binary search vs binary search tree",
+   "html": "<b>Binary search</b> is an <b>algorithm</b> for any sorted list, always O(log n). A <b>binary search tree</b> is a <b>data structure</b> whose shape keeps the order: O(log n) if balanced, O(n) if not.",
+   "lec": 22
+  },
+  {
+   "id": "atb-d0115",
+   "unit": "searching",
+   "topic": "Linear search, binary search and BSTs",
+   "term": "Unbalanced BST",
+   "html": "An <b>unbalanced BST</b> leans to one side, e.g. when values are inserted in increasing order, and behaves like a <b>linked list</b>, so searching it is <b>O(n)</b>.",
+   "lec": 22
+  },
+  {
+   "id": "atb-d0116",
+   "unit": "searching",
+   "topic": "Hash-based search",
+   "term": "Not found",
+   "html": "<b>Not found</b> (nil) is a valid search result: the algorithm has checked every place the item could be and it is not there.",
+   "lec": 22
   }
  ],
  "questions": [
@@ -8154,6 +8381,669 @@ HUB.addCourse({
    "w": "Connected means every vertex can be reached from every other by some path, short or long, so distance alone never disconnects a graph (Ahmedabad–Silchar by road is far apart but connected). Direction and weight are separate properties. If there were any edge between them, even a weak one, they would be connected.",
    "lec": 18,
    "lv": "apply"
+  },
+  {
+   "id": "atb-q0363",
+   "topic": "Complexity",
+   "q": "What does algorithmic complexity, as taught in this course, focus on?",
+   "c": [
+    "The exact running time in seconds on a given computer",
+    "How the work an algorithm needs grows as the input size grows",
+    "The number of lines of code in the program",
+    "The price of the hardware the algorithm runs on"
+   ],
+   "a": [
+    1
+   ],
+   "w": "It is about growth rate and scalability: what happens when 100 elements become 10 lakh. Exact seconds depend on the machine and are not what Big O describes.",
+   "lec": 21,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0364",
+   "topic": "Complexity",
+   "q": "Why did the lecture concentrate on time complexity rather than space complexity?",
+   "c": [
+    "Space complexity cannot be measured",
+    "Big O applies only to time",
+    "Storage is cheap per unit today, and users expect instant results, so delays cost customers",
+    "Time and space complexity are always equal"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Hardware storage is not costly per unit, but a slow site loses users who expect suggestions as they type. Space complexity still exists; it simply mattered less for his purpose.",
+   "lec": 21,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0365",
+   "topic": "Complexity",
+   "q": "A clerk searches a shelf of files one by one for a client's folder and finds it about halfway along. In complexity terms, this search was:",
+   "c": [
+    "The best case",
+    "The worst case",
+    "Proof that the search is O(1)",
+    "An average case"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The best case would be the first folder and the worst the last (or missing). Anything in between counts as the average case, just as every house between the nearest and farthest counted in his housing-society exercise.",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0366",
+   "topic": "Complexity",
+   "q": "A colleague says an algorithm is “fast”. In the lecture's terms, what does that say about its complexity?",
+   "c": [
+    "Its complexity is low: the work grows slowly as the input grows",
+    "Its complexity is high: the work grows quickly",
+    "It always finishes in one step",
+    "It uses very little memory"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Fast algorithm means low complexity and a slow growth rate. Mixing up ‘fast growth’ with ‘fast algorithm’ is the confusion he warned about.",
+   "lec": 21,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0367",
+   "topic": "Complexity",
+   "q": "For an input of size n = 16, which complexity class implies 256 steps?",
+   "c": [
+    "O(n log n)",
+    "O(2ⁿ)",
+    "O(n²)",
+    "O(n)"
+   ],
+   "a": [
+    2
+   ],
+   "w": "16 × 16 = 256. O(n log n) gives 16 × 4 = 64, O(n) gives 16, and O(2ⁿ) gives 65,536.",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0368",
+   "topic": "Complexity",
+   "q": "A system checks each new customer record against every record entered before it, to catch duplicates. How many comparisons does it make for 10 records, and how does the work grow?",
+   "c": [
+    "10 comparisons; O(n)",
+    "45 comparisons; O(n²)",
+    "100 comparisons; O(n²)",
+    "45 comparisons; O(n)"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Record 2 is compared with 1 earlier record, record 3 with 2, and so on: 0 + 1 + … + 9 = 45. Comparing each new input with all earlier ones is his example of O(n²). The answer is not exactly n² = 100, but it grows in that order.",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0369",
+   "topic": "Complexity",
+   "q": "What picture did the lecture use to explain why some algorithms are O(2ⁿ)?",
+   "c": [
+    "A dictionary opened in the middle",
+    "A queue at a ticket counter",
+    "A playlist with songs added at the end",
+    "A decision tree in which every decision has two options, so the paths double at each level"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Two options per decision means 2, 4, 8… paths as the tree deepens. The dictionary illustrates O(log n), the opposite: it discards half at each step.",
+   "lec": 21,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0370",
+   "topic": "Complexity",
+   "q": "In the doubling version of the chessboard legend (1 grain on the first square, 2 on the second, 4 on the third, and so on), how many grains go on the 11th square?",
+   "c": [
+    "1,024",
+    "2,048",
+    "121",
+    "22"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Square k holds 2^(k − 1) grains, so square 11 holds 2¹⁰ = 1,024. 2,048 is 2¹¹ (one doubling too many), and 121 is 11² from the squaring version. Doubling is exponential growth.",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0371",
+   "topic": "Complexity",
+   "q": "Which complexity class grows faster than O(n) but slower than O(n²)?",
+   "c": [
+    "O(log n)",
+    "O(1)",
+    "O(2ⁿ)",
+    "O(n log n)"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The order is O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ). O(log n) grows more slowly than O(n), not faster.",
+   "lec": 21,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0372",
+   "topic": "Complexity",
+   "q": "A new value is inserted at the 3rd position of an array that holds 10 values. How many existing values must shift, and what is the complexity of inserting at a position like this?",
+   "c": [
+    "3 values; O(n)",
+    "1 value; O(1)",
+    "8 values; O(n)",
+    "8 values; O(1)"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Values in positions 3 to 10, eight of them, each move one place. The number of moves grows with the array, so it is O(n). Only inserting at the end avoids shifting and is O(1).",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0373",
+   "topic": "Complexity",
+   "q": "A manager asks to delete “the record for customer Mehta” from an unsorted array, position unknown. What is the complexity?",
+   "c": [
+    "O(1), because deleting a slot is instant",
+    "O(n), because the record must be found first by checking items one by one",
+    "O(log n), because half the array can be ignored",
+    "O(n²), because every element must be compared with every other"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Delete by index is O(1), but delete by search inherits the search's O(n). An unsorted array gives no basis for discarding half of it.",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0374",
+   "topic": "Complexity",
+   "q": "Adding a song to the end of a playlist stored as a linked list is O(1). What does O(1) mean here?",
+   "c": [
+    "The same set of operations is needed whether the playlist has 4 songs or 4,000",
+    "Exactly one operation is performed",
+    "The playlist can hold only one song",
+    "It takes one second"
+   ],
+   "a": [
+    0
+   ],
+   "w": "O(1) means constant: the work does not grow with the size. Linking a new node involves several steps, but always the same ones.",
+   "lec": 21,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0375",
+   "topic": "Complexity",
+   "q": "A stack holds 12 trays. The tray you need is 5th from the top. How many trays must be popped off before it reaches the top, and what is the complexity of searching a stack?",
+   "c": [
+    "5 pops; O(1)",
+    "1 pop; O(1)",
+    "12 pops; O(n²)",
+    "4 pops; O(n)"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The four trays above it come off first. You cannot jump into a stack, so searching means popping until the item appears: the work grows with the stack's size, O(n). Push and pop themselves are O(1).",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0376",
+   "topic": "Complexity",
+   "q": "Which pair of queue operations are both O(1)?",
+   "c": [
+    "Enqueue and search",
+    "Enqueue and dequeue",
+    "Dequeue and search",
+    "Search and sorting the queue"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Enqueue always happens at the rear and dequeue at the front, both fixed spots. Searching means dequeuing until you find the item, which is O(n).",
+   "lec": 21,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0377",
+   "topic": "Complexity",
+   "q": "A delivery network is modelled as a graph with 7 vertices and 10 edges. Using O(V + E), the traversal work is proportional to:",
+   "c": [
+    "7",
+    "10",
+    "17",
+    "70"
+   ],
+   "a": [
+    2
+   ],
+   "w": "BFS or DFS may visit every vertex and every edge, so the work grows with V + E = 7 + 10 = 17. Multiplying (70) is not the rule.",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0378",
+   "topic": "Complexity",
+   "q": "Two trees each hold 1,023 values: a general tree with no ordering, and a balanced binary search tree with 10 levels. At most how many nodes does a search check in each?",
+   "c": [
+    "1,023 in the general tree and 10 in the BST",
+    "10 in the general tree and 1,023 in the BST",
+    "512 in both",
+    "1,023 in both"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A general tree has no order to exploit, so every node may be visited: O(n). In the BST each comparison sends you down one side, one node per level, so at most 10 checks: O(log n).",
+   "lec": 21,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0379",
+   "topic": "Complexity",
+   "q": "A logistics firm finds that the exact algorithm for its delivery routes is O(2ⁿ), and it has 60 stops a day. Following the lecture, what is the sensible response?",
+   "c": [
+    "Run the exact algorithm overnight",
+    "Assume the problem is O(1) for small n",
+    "Use a heuristic: a rule of thumb that gives a good-enough route, if not the best one",
+    "Reduce the stops to one per day"
+   ],
+   "a": [
+    2
+   ],
+   "w": "With exponential growth, 60 decisions are far beyond reach, whatever the hardware. He said businesses then use heuristics, accepting a near-best answer that works.",
+   "lec": 21,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0380",
+   "topic": "Complexity",
+   "q": "A shop that kept 100 customers in Excel now has 10 lakh, and the spreadsheet can no longer cope. Which of the lecture's criteria for judging a technology solution does this show?",
+   "c": [
+    "Feasibility",
+    "Scalability",
+    "Cost",
+    "Speed"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Scalability asks whether a system still works as the data grows. He used exactly this Excel example. Feasibility asks whether the solution is possible at all.",
+   "lec": 21,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0381",
+   "topic": "Complexity",
+   "q": "In the lecture's house-search exercise, which situation did he liken to O(log n)?",
+   "c": [
+    "A flat in a large complex of named towers, where the flat code tells you which tower to go to",
+    "A numbered colony of 20 houses",
+    "An address given only as “behind X, near Y”",
+    "Knowing only the name of the city"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The tower code lets you ignore every other tower and keep narrowing down, as in a dictionary search. The numbered colony was his O(n) and the landmark address his O(n log n).",
+   "lec": 21,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0382",
+   "topic": "Searching",
+   "q": "Which two of the lecture's five search strategies do not need the data to be sorted?",
+   "c": [
+    "Binary search and jump search",
+    "Linear search and hash-based search",
+    "Jump search and exponential search",
+    "Binary search and hash-based search"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Linear search checks items one by one in any order, and hash search computes where to look. Binary, jump and exponential search all rely on sorted order to decide which way to go.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0383",
+   "topic": "Searching",
+   "q": "What is the key difference between binary search and a binary search tree?",
+   "c": [
+    "Binary search is an algorithm for any sorted list; a BST is a data structure whose shape keeps values in order",
+    "They are two names for the same thing",
+    "A BST must be sorted before use; binary search sorts the list itself",
+    "Binary search works only on trees; a BST works on arrays"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The same halving principle, but one is an algorithm and the other a structure. You sort a list before binary search; a BST keeps its order through where each value is inserted.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0384",
+   "topic": "Searching",
+   "q": "Values 10, 20, 30, 40, 50 are inserted, in that order, into an empty binary search tree. What is the complexity of searching such a tree?",
+   "c": [
+    "O(1), since the values are sorted",
+    "O(log n), since every BST halves the problem",
+    "O(n), since every value goes to the right and the tree behaves like a linked list",
+    "O(n²), since every node is compared with every other"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Increasing input makes each value the right child of the previous one: a single chain. Finding 50 takes 5 comparisons, and the work grows with n. O(log n) holds only for a balanced BST.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0385",
+   "topic": "Searching",
+   "q": "Using the usual rule of thumb, what jump size would jump search use on a sorted list of 64 elements?",
+   "c": [
+    "32",
+    "6",
+    "16",
+    "8"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The jump size is √n, and √64 = 8, giving eight blocks of eight. 6 is log₂ 64, which belongs to binary search, and 32 is n/2.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0386",
+   "topic": "Searching",
+   "q": "Jump search (positions numbered from 1, jump size 4) looks for 81 in the sorted list [11, 18, 24, 31, 39, 46, 52, 60, 67, 73, 81, 88, 94, 99, 105, 112]. Which values are compared, in order?",
+   "c": [
+    "31, 60, 88, 81",
+    "31, 60, 67, 73, 81",
+    "31, 60, 88, 67, 73, 81",
+    "60, 88, 73, 81"
+   ],
+   "a": [
+    2
+   ],
+   "w": "It checks positions 4, 8 and 12 (31, 60, 88). 88 passes 81, so it steps back to position 8 and searches forward: 67, 73, 81. Stopping at 60 without the overshoot misses how jump search learns it has gone too far.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0387",
+   "topic": "Searching",
+   "q": "In exponential search, which positions are checked before the binary search begins?",
+   "c": [
+    "Positions 1, 2, 4, 8, 16… until the value there passes the search term",
+    "Every √n-th position",
+    "Only the middle position",
+    "Positions 1, 2, 3, 4… one by one"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The jump doubles each time. Fixed √n jumps are jump search, and checking the middle first is binary search.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0388",
+   "topic": "Searching",
+   "q": "Exponential search (positions numbered from 1) looks for 94 in the sorted list [11, 18, 24, 31, 39, 46, 52, 60, 67, 73, 81, 88, 94, 99, 105, 112]. Between which positions does it run the binary search?",
+   "c": [
+    "Positions 1 and 16",
+    "Positions 12 and 16",
+    "Positions 4 and 8",
+    "Positions 8 and 16"
+   ],
+   "a": [
+    3
+   ],
+   "w": "It checks positions 1, 2, 4, 8 (values up to 60, all below 94) and 16 (112, above 94). The target must lie between the last two positions checked, 8 and 16, and binary search there finds it at 13.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0389",
+   "topic": "Searching",
+   "q": "A huge sorted list has its target at position 300. Exponential search checks positions 1, 2, 4, 8 and onwards. Which position first takes it past the target, and what happens next?",
+   "c": [
+    "Position 512; binary search between positions 256 and 512",
+    "Position 300; found directly",
+    "Position 320; linear search back to 300",
+    "Position 1,024; binary search between 512 and 1,024"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Doubling gives …, 128, 256, 512. Position 256 comes before the target, and 512 is the first past it, so binary search runs on 256 to 512. It took only ten jumps to get there.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0390",
+   "topic": "Searching",
+   "q": "Which pairing of search strategy and complexity is right?",
+   "c": [
+    "Jump search O(log n); exponential search O(√n)",
+    "Jump search O(√n); exponential search O(2ⁿ)",
+    "Jump search O(√n); exponential search O(log n)",
+    "Jump search O(n²); exponential search O(log n)"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Jump search splits the list into √n blocks; exponential search doubles its jumps, then binary-searches, and both stages are logarithmic. ‘Exponential’ describes the jump sizes, not an O(2ⁿ) cost.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0391",
+   "topic": "Searching",
+   "q": "A sorted catalogue holds 10 lakh (1,000,000) items. Roughly how many comparisons might jump search need in the worst case?",
+   "c": [
+    "About 20",
+    "About 5 lakh",
+    "About 10 lakh",
+    "About 2,000"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The jump size is √1,000,000 = 1,000: up to about 1,000 jumps, then up to 999 steps inside the block, so about 2,000. That is far better than linear search's 10 lakh, but binary search needs only about 20.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0392",
+   "topic": "Searching",
+   "q": "A hash table uses mod 10 with chaining. Keys arrived in the order 230, 47, 85, 310, 67, 112, 150, 92, 57. How many comparisons does a hash search make to find 150?",
+   "c": [
+    "1",
+    "3",
+    "7",
+    "9"
+   ],
+   "a": [
+    1
+   ],
+   "w": "150 mod 10 = 0, and index 0 holds the chain 230 → 310 → 150, so the third comparison finds it. The other indexes are never checked; scanning all nine keys would be linear search.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0393",
+   "topic": "Searching",
+   "q": "For the same mod-10 table (230, 47, 85, 310, 67, 112, 150, 92, 57), what does a hash search for 63 do?",
+   "c": [
+    "Finds 63 at index 3",
+    "Checks all nine keys, then reports not found",
+    "Looks at index 3, finds it empty, and reports not found",
+    "Looks at index 6, because 63 starts with 6"
+   ],
+   "a": [
+    2
+   ],
+   "w": "63 mod 10 = 3, and nothing hashed to 3, so the answer ‘not found’ comes straight away. Not found is a valid result, and no other index can hold 63.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0394",
+   "topic": "Searching",
+   "q": "Hash search is O(1) on average. What does that mean?",
+   "c": [
+    "Every search takes exactly one comparison",
+    "With few collisions, a search takes a fixed number of steps however big the database grows",
+    "The table can hold only one key per index",
+    "The data must be sorted first"
+   ],
+   "a": [
+    1
+   ],
+   "w": "O(1) is constant, not one. Even with a short chain to walk, the step count does not grow with the database, provided the hash function spreads keys evenly.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0395",
+   "topic": "Searching",
+   "q": "A company's keys are all multiples of 5, split roughly evenly between those ending in 0 and those ending in 5, and stored in a mod-10 hash table with chaining. How does search cost grow with n keys?",
+   "c": [
+    "O(1), because hashing always jumps straight to the index",
+    "O(n/2), a class faster than O(n)",
+    "O(log n), because the table is split in two",
+    "O(n), because the two chains each hold about n/2 keys and n/2 grows in proportion to n"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Only indexes 0 and 5 are used, so each chain holds about half the keys. He wrote this as n/2, but Big O drops constant factors, so it is O(n), the same class as one long chain.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0396",
+   "topic": "Searching",
+   "q": "In the lecture's use-case exercise, which search did he recommend for finding a guest in today's hotel check-in register?",
+   "c": [
+    "Linear search",
+    "Binary search",
+    "Hash-based search",
+    "Exponential search"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A handwritten register has no useful order, so you read it top to bottom, page by page. Binary search would need the names sorted.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0397",
+   "topic": "Searching",
+   "q": "Following the lecture, which search fits looking up a student's record by roll number in the institute's ERP database?",
+   "c": [
+    "Linear search",
+    "Hash-based search, because databases build indexes for quick access",
+    "Jump search",
+    "Exponential search"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He tied database indexes to hash search: compute where the record should be and go there, O(1) on average. Scanning every record would be linear search.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0398",
+   "topic": "Searching",
+   "q": "Following the lecture, which search fits a product catalogue sorted by price?",
+   "c": [
+    "Hash-based search",
+    "Linear search",
+    "Binary search, because the numeric order lets you compare and discard half",
+    "Exponential search"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Prices are numbers in sorted order, so a less-than/greater-than comparison at the middle discards half each time. He picked jump search for the catalogue sorted by category instead.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0399",
+   "topic": "Searching",
+   "q": "Which search did the lecture recommend for finding a transaction in a financial monitoring system that grows very fast, whose size cannot be known in advance?",
+   "c": [
+    "Linear search",
+    "Jump search with a jump size fixed today",
+    "Exponential search",
+    "Hash search with a single chain"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Exponential search does not need a fixed size: its doubling jumps reach any position in about log₂ n steps, and binary search finishes the job. A jump size of √n chosen today is wrong tomorrow.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0400",
+   "topic": "Searching",
+   "q": "Why did the lecturer number positions from 1 instead of 0 in this lecture?",
+   "c": [
+    "Because search algorithms cannot handle position 0",
+    "To make the jump-size and middle-position calculations easier, without adding or subtracting 1",
+    "Because Python starts counting at 1",
+    "Because hash indexes always start at 1"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Programming languages usually start at 0. He switched to 1 only so the worked calculations come out cleanly, and his mod-10 hash indexes still run from 0 to 9.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0401",
+   "topic": "Searching",
+   "q": "On the 15-element sorted list [11, 18, 24, 31, 39, 46, 52, 60, 67, 73, 81, 88, 94, 99, 105] (positions 1–15), which needs fewer comparisons to find 24: linear search or binary search with middle = (low + high) ÷ 2?",
+   "c": [
+    "Binary search, because it is always faster",
+    "Both need the same number",
+    "Binary search, with 2 comparisons",
+    "Linear search, with 3 comparisons against binary search's 4"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Linear search finds 24 on its third comparison. Binary search checks 60, 31, 18 and then 24: four. O(log n) describes how the work grows on large lists, not a win on every small search.",
+   "lec": 22,
+   "lv": "analyse"
   }
  ],
  "briefs": {
@@ -8161,7 +9051,7 @@ HUB.addCourse({
    "scopeShort": "Modules 1–2",
    "tag": "from the official LMS announcement",
    "lede": "Figures below are from the official Quiz 1 announcement and its attached syllabus document. Dr. Saxena also gave the scope directly in Live Lecture 3, and the two agree.",
-   "html": "\n    <div class=\"grid2\">\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Confirmed on the official announcement</h4>\n        <div class=\"scroller\"><table><tbody>\n          <tr><td><strong>Date</strong></td><td>Saturday 3 October</td></tr>\n          <tr><td><strong>Window</strong></td><td>4:45–5:05 PM IST · join from <strong>4:30 PM</strong></td></tr>\n          <tr><td><strong>Questions</strong></td><td><strong>40</strong>, for <strong>40 marks</strong></td></tr>\n          <tr><td><strong>Type</strong></td><td>MCQ</td></tr>\n          <tr><td><strong>Weight</strong></td><td>20% · best 2 of 3 · 40% of the course total</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--bad);background:var(--bad-soft)\">\n          <b>Negative marking.</b> +1 correct, <strong>−0.25 for a wrong answer</strong>, 0 if left blank.\n        </div>\n        <p style=\"font-size:13.5px;color:var(--ink-3);margin-top:11px\">In Live Lecture 3 he described the format more loosely as &ldquo;MCQ, short answer, true/false or matching&rdquo;. The announcement says MCQ.</p>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Scope — narrower than you might assume</h4>\n        <p style=\"font-size:14.5px\">He said it plainly: <em>&ldquo;the quiz will only be on the fundamentals, so module one and module two, which is linear data structures&hellip; whatever videos are released next, for example tree, that will not be part of the quiz.&rdquo;</em> The official syllabus document agrees — it lists <strong>#1 to #11 plus Live Lecture 3</strong>, and stops.</p>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--good);background:var(--good-soft)\">\n          <b>Trees and graphs were not in Quiz 1.</b> Lectures #12 (Trees — Fundamentals), #14 (Tree Types) and #15 (Graphs) were not in Quiz 1, even though #12 was released before the cut-off date. Trees and graphs are non-linear structures, and the paper is linear structures only.\n        </div>\n        <p style=\"font-size:14.5px;margin-top:11px\">So: algorithm basics, pseudocode, the nine properties, three algorithm types, and then <strong>arrays, linked lists, stacks and queues</strong>.</p>\n      </div>\n    </div>\n\n    <div class=\"card\" style=\"margin-top:14px;border-left:3px solid var(--clay)\">\n      <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">The two constraints: 30 seconds, and −0.25</h4>\n      <p style=\"font-size:14.5px;color:var(--ink-2)\">40 questions in 20 minutes is <strong>30 seconds each</strong> — more breathing room than most of your other papers, but still recall-paced.</p>\n      <div class=\"scroller\" style=\"margin-top:11px\"><table><thead><tr><th>Situation</th><th>Expected value</th><th>Do</th></tr></thead><tbody>\n        <tr><td>You know it</td><td><strong>+1.00</strong></td><td>Answer</td></tr>\n        <tr><td>Rule out two of four</td><td><strong>+0.38</strong></td><td>Answer — clearly worth it</td></tr>\n        <tr><td>Rule out one of four</td><td><strong>+0.17</strong></td><td>Answer</td></tr>\n        <tr><td>Blind guess</td><td><strong>+0.06</strong></td><td>Answer, but it gains you next to nothing</td></tr>\n        <tr><td>Leave blank</td><td><strong>0.00</strong></td><td>Only if genuinely lost</td></tr>\n      </tbody></table></div>\n      <ul style=\"margin:11px 0 0;padding-left:19px;font-size:14.5px;line-height:1.7\">\n        <li><strong>Most of this paper is contrast pairs.</strong> LIFO vs FIFO, array vs linked list, static vs dynamic, overflow vs underflow, greedy vs dynamic programming. Learn them as pairs and the distractors give themselves away.</li>\n        <li><strong>The properties are the other half.</strong> Nine of them, each with a memorable failing example. If you can name the failure, you can name the property.</li>\n      </ul>\n    </div>",
+   "html": "\n    <div class=\"grid2\">\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Confirmed on the official announcement</h4>\n        <div class=\"scroller\"><table><tbody>\n          <tr><td><strong>Date</strong></td><td>Saturday 3 October</td></tr>\n          <tr><td><strong>Window</strong></td><td>4:45–5:05 PM IST · join from <strong>4:30 PM</strong></td></tr>\n          <tr><td><strong>Questions</strong></td><td><strong>40</strong>, for <strong>40 marks</strong></td></tr>\n          <tr><td><strong>Type</strong></td><td>MCQ</td></tr>\n          <tr><td><strong>Weight</strong></td><td>30% of the course: the higher of your two quiz scores counts (rule from 14 Oct; at Quiz 1 it was 20%, best 2 of 3)</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--bad);background:var(--bad-soft)\">\n          <b>Negative marking.</b> +1 correct, <strong>−0.25 for a wrong answer</strong>, 0 if left blank.\n        </div>\n        <p style=\"font-size:13.5px;color:var(--ink-3);margin-top:11px\">In Live Lecture 3 he described the format more loosely as &ldquo;MCQ, short answer, true/false or matching&rdquo;. The announcement says MCQ.</p>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Scope — narrower than you might assume</h4>\n        <p style=\"font-size:14.5px\">He said it plainly: <em>&ldquo;the quiz will only be on the fundamentals, so module one and module two, which is linear data structures&hellip; whatever videos are released next, for example tree, that will not be part of the quiz.&rdquo;</em> The official syllabus document agrees — it lists <strong>#1 to #11 plus Live Lecture 3</strong>, and stops.</p>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--good);background:var(--good-soft)\">\n          <b>Trees and graphs were not in Quiz 1.</b> Lectures #12 (Trees — Fundamentals), #14 (Tree Types) and #15 (Graphs) were not in Quiz 1, even though #12 was released before the cut-off date. Trees and graphs are non-linear structures, and the paper is linear structures only.\n        </div>\n        <p style=\"font-size:14.5px;margin-top:11px\">So: algorithm basics, pseudocode, the nine properties, three algorithm types, and then <strong>arrays, linked lists, stacks and queues</strong>.</p>\n      </div>\n    </div>\n\n    <div class=\"card\" style=\"margin-top:14px;border-left:3px solid var(--clay)\">\n      <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">The two constraints: 30 seconds, and −0.25</h4>\n      <p style=\"font-size:14.5px;color:var(--ink-2)\">40 questions in 20 minutes is <strong>30 seconds each</strong> — more breathing room than most of your other papers, but still recall-paced.</p>\n      <div class=\"scroller\" style=\"margin-top:11px\"><table><thead><tr><th>Situation</th><th>Expected value</th><th>Do</th></tr></thead><tbody>\n        <tr><td>You know it</td><td><strong>+1.00</strong></td><td>Answer</td></tr>\n        <tr><td>Rule out two of four</td><td><strong>+0.38</strong></td><td>Answer — clearly worth it</td></tr>\n        <tr><td>Rule out one of four</td><td><strong>+0.17</strong></td><td>Answer</td></tr>\n        <tr><td>Blind guess</td><td><strong>+0.06</strong></td><td>Answer, but it gains you next to nothing</td></tr>\n        <tr><td>Leave blank</td><td><strong>0.00</strong></td><td>Only if genuinely lost</td></tr>\n      </tbody></table></div>\n      <ul style=\"margin:11px 0 0;padding-left:19px;font-size:14.5px;line-height:1.7\">\n        <li><strong>Most of this paper is contrast pairs.</strong> LIFO vs FIFO, array vs linked list, static vs dynamic, overflow vs underflow, greedy vs dynamic programming. Learn them as pairs and the distractors give themselves away.</li>\n        <li><strong>The properties are the other half.</strong> Nine of them, each with a memorable failing example. If you can name the failure, you can name the property.</li>\n      </ul>\n    </div>",
    "mapLede": "Twelve examinable lectures from Dr. Deepak Kumar Saxena, taught no-code — the logic, not the syntax. Lectures #12, #14 and #15 are shown on the LMS but are outside this quiz.",
    "syllabusNote": "",
    "drillLede": "Questions written from the lectures and transcripts. There is no official practice set for this course. Turn the pacer on to rehearse the real 30-second tempo.",
@@ -8217,6 +9107,8 @@ HUB.addCourse({
   "lec-18",
   "lec-19",
   "lec-20",
-  "lec-18s"
+  "lec-18s",
+  "lec-21",
+  "lec-22"
  ]
 });

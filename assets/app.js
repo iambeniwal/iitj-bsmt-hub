@@ -39,6 +39,8 @@ function optionOrder(q) {
   return shuffle(idx.filter(i => !tail.includes(i))).concat(tail);
 }
 const plural = (n, w, p) => `${n} ${n === 1 ? w : (p || w + "s")}`;
+/* "the higher of 2 quizzes" (best 1 of n) or "best 2 of 3" */
+const quizRule = g => g.bestOf === 1 ? `the higher of ${g.quizzes} quizzes` : `best ${g.bestOf} of ${g.quizzes}`;
 const stripTags = s => String(s).replace(/<[^>]+>/g, "").replace(/&amp;/g, "&");
 
 /* ---------------- content index ---------------- */
@@ -315,7 +317,7 @@ function homeView() {
         <div class="course-top"><span class="pill later">${esc(c.short)}</span>
           ${n ? `<span class="pill ${u.state === "tba" ? "past" : u.state === "today" || u.state === "live" ? "today" : u.state}">${esc(n.name)} · ${esc(u.text)}</span>` : ""}</div>
         <h3>${esc(c.name)}</h3>
-        <p class="course-when">${esc(c.lecturer)}<br><span style="color:var(--ink-3)">${c.grading.quizPct}% a quiz · best ${c.grading.bestOf} of ${c.grading.quizzes} · end-term ${c.grading.finalPct}%</span></p>
+        <p class="course-when">${esc(c.lecturer)}<br><span style="color:var(--ink-3)">quiz ${c.grading.quizPct * c.grading.bestOf}% (${quizRule(c.grading)}) · end-term ${c.grading.finalPct}%</span></p>
         <div class="mrow">${bar(m.pct)}<span>${m.right}/${m.total}</span></div>
         <div class="course-foot"><span>${ids.length} Q · ${m.mistakes ? `<b style="color:var(--bad)">${m.mistakes} to fix</b>` : `${m.seen} answered`}</span><span class="go">Open →</span></div>
       </a>`;
@@ -323,8 +325,8 @@ function homeView() {
   </section>`).join("")}
 
   <div class="hubnote"><b>How quizzes are marked.</b> ${esc(M.note)}. A blind guess between four options is worth +0.06; rule out
-    one option and it rises to +0.17. Every course counts its <strong>best 2 of 3</strong> quizzes. Foundations of Computing quizzes
-    are worth 15% each; the other five are worth 20%. The end-term is worth 60% everywhere, and Foundations of Computing's is pen and paper, including writing Python by hand.</div>`;
+    one option and it rises to +0.17. Since 14 October every course is graded the same way: <strong>two quizzes, and only the higher score counts</strong>,
+    for 30%; the offline end-term exam is 70%. Foundations of Computing's end-term is pen and paper, including writing Python by hand.</div>`;
 }
 
 /* =================================================================
@@ -348,7 +350,7 @@ function courseView(slug, p) {
       <div class="cell${m.mistakes ? " hot" : ""}"><dt>Mistakes</dt><dd>${m.mistakes}<small>to clear</small></dd></div>
       <div class="cell"><dt>Cards due</dt><dd>${due}<small>${C.traps.length + C.defs.length} in the deck</small></dd></div>
       <div class="cell hot"><dt>Next</dt><dd>${n ? esc(n.name) : "—"}<small>${n ? (n.start ? fmtDate(n.start) + " · " + nu.text : "date not announced") : ""}</small></dd></div>
-      <div class="cell"><dt>Weighting</dt><dd>${R.grading.quizPct}%<small>a quiz · best ${R.grading.bestOf} of ${R.grading.quizzes}</small></dd></div>
+      <div class="cell"><dt>Weighting</dt><dd>${R.grading.quizPct * R.grading.bestOf}%<small>quizzes · ${quizRule(R.grading)}</small></dd></div>
     </dl>
   </header>
   ${annStrip(slug)}
@@ -426,11 +428,11 @@ function courseExams(slug, pane) {
   pane.innerHTML = `<section>
     <div class="sechead"><h2>How this course is graded</h2></div>
     <div class="gradebar">
-      <span style="flex:${g.quizPct * g.bestOf}" class="q">Quizzes ${g.quizPct * g.bestOf}%<small>best ${g.bestOf} of ${g.quizzes} × ${g.quizPct}%</small></span>
+      <span style="flex:${g.quizPct * g.bestOf}" class="q">Quizzes ${g.quizPct * g.bestOf}%<small>${quizRule(g)}${g.bestOf > 1 ? ` × ${g.quizPct}%` : ""}</small></span>
       ${g.participationPct ? `<span style="flex:${g.participationPct}" class="p">${g.participationPct}%<small>participation</small></span>` : ""}
       <span style="flex:${g.finalPct}" class="f">End-term ${g.finalPct}%<small>${esc(g.finalNote || "major exam")}</small></span>
     </div>
-    <p class="lede" style="margin-top:12px">A missed quiz counts as a zero, so it uses up your one dropped score. Marking on every quiz: ${esc(M.note)}.</p>
+    <p class="lede" style="margin-top:12px">A missed quiz counts as a zero${g.bestOf === 1 ? ", so the other quiz is the one that counts" : ", so it uses up your one dropped score"}. Marking on every quiz: ${esc(M.note)}.</p>
   </section>
   ${R.assessments.map(a => {
     const u = until(a), b = C.briefs[a.id], mocks = store.mocks(slug, a.id);

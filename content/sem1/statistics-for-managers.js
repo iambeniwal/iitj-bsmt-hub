@@ -127,6 +127,18 @@ HUB.addCourse({
    "Week 8 — Sampling and Sampling Distributions 3",
    "Stratified, cluster, systematic, convenience, judgement sampling",
    "rec"
+  ],
+  [
+   21,
+   "Week 9 — Case: Sampling and Sampling Distributions",
+   "Marion Dairies yogurt ratings, worked in Excel",
+   "rec"
+  ],
+  [
+   22,
+   "Week 9 — Interval Estimation 1",
+   "Margin of error, z-intervals with σ known",
+   "rec"
   ]
  ],
  "units": [
@@ -448,8 +460,8 @@ HUB.addCourse({
   {
    "id": "sampling",
    "title": "Sampling &amp; sampling distributions",
-   "tag": "Lectures 17, 19–20 · + textbook",
-   "lede": "Why a small sample can stand in for a whole population, how far x̄ and p̂ typically wander from μ and p, and which sampling method to use when a simple random sample is not possible.",
+   "tag": "Lectures 17, 19–21 · + textbook",
+   "lede": "Why a small sample can stand in for a whole population, how far x̄ and p̂ typically wander from μ and p, which sampling method to use when a simple random sample is not possible, and how to turn a business question into a probability for x̄.",
    "topics": [
     {
      "t": "Why we sample",
@@ -507,9 +519,42 @@ HUB.addCourse({
      "h": "<p style=\"font-size:14.5px\">The lecturer's own practice set for Chapter 7, shared after L#20 (12 questions). Each one is restated in our words below with a full worked solution; the numbers are the sheet's. The mix is typical of his style: point estimates from raw counts, standard errors, the n ≥ 30 and np ≥ 5 checks, the finite population correction, a ‘within ±k of μ’ probability, one reverse problem, a sample-size calculation and naming the sampling method.</p><div class=\"def\"><b>Notation on the sheet:</b> in its sample-proportion question the sheet prints <b>p</b> where it means the <b>sample proportion</b> p̂ (the textbook writes p̄). ‘The expected value of p’ there means E(p̂), which equals the population p.</div><details><summary>Q1 · Point estimates of proportions (three answer options)</summary><p style=\"font-size:14.5px\">150 people answer a survey question: 75 say Yes, 55 say No and 20 have no opinion. Estimate the population proportions answering Yes and No.</p><ol><li>The sample size is all 150 respondents, including the 20 with no opinion.</li><li>p̂(Yes) = 75/150 = 0.50.</li><li>p̂(No) = 55/150 = 0.367.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Yes ≈ 0.50; No ≈ 0.367. (Dividing by 130, the Yes + No total, would be wrong: no-opinion answers are part of the sample.)</p></details><details><summary>Q2 · Point estimates of a mean and standard deviation</summary><p style=\"font-size:14.5px\">Six months of unit sales: 95, 98, 92, 85, 105, 89. Estimate the population mean and standard deviation of monthly units sold. (The sheet's table row is headed ‘Unsold Units’ while the question asks about units sold; the arithmetic is the same either way.)</p><ol><li>x̄ = (95 + 98 + 92 + 85 + 105 + 89)/6 = 564/6 = 94.</li><li>Deviations from 94: 1, 4, −2, −9, 11, −5. Squares: 1, 16, 4, 81, 121, 25; sum = 248.</li><li>s² = 248/(6 − 1) = 49.6, so s = √49.6 = 7.04. Use n − 1 because this is a sample (Excel STDEV.S).</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Mean ≈ 94 units a month; standard deviation ≈ 7.04 units. (Dividing by n gives 6.43, the population formula, which is not the point estimate.)</p></details><details><summary>Q3 · Sampled population and estimates from a survey</summary><p style=\"font-size:14.5px\">A 2012 US survey asked 426 adults aged 50 and over how important various issues were to their vote. 350 called Social Security and Medicare ‘very important’, 74% said so of education, and 354 said so of job growth. Name the sampled population and estimate the three quantities.</p><ol><li>Sampled population: US adults aged 50 and older (the group the 426 were drawn from).</li><li>Social Security and Medicare: p̂ = 350/426 = 0.822.</li><li>Education: the number of respondents = 0.74 × 426 = 315.24 ≈ 315.</li><li>Job growth: p̂ = 354/426 = 0.831.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Sampled population = US adults 50+; 0.822; about 315 respondents; 0.831.</p></details><details><summary>Q4 · Sampling distribution of the sample proportion</summary><p style=\"font-size:14.5px\">A sample of 100 is drawn from a population with p = 0.40. Give E(p̂), the standard error of p̂, the sampling distribution and what it shows.</p><ol><li>E(p̂) = p = 0.40 (p̂ is unbiased).</li><li>σ<sub>p̂</sub> = √[p(1 − p)/n] = √(0.40 × 0.60/100) = √0.0024 = 0.049.</li><li>Normal check: np = 40 and n(1 − p) = 60, both ≥ 5, so p̂ is approximately normal with mean 0.40 and standard error 0.049.</li><li>Meaning: it is the probability distribution of all the p̂ values that samples of 100 could give. About 95% of them would fall within 0.40 ± 1.96 × 0.049, i.e. 0.304 to 0.496.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> E(p̂) = 0.40; σ<sub>p̂</sub> = 0.049; approximately normal, N(0.40, 0.049); it shows how p̂ varies from sample to sample.</p></details><details><summary>Q5 · When is x̄ approximately normal?</summary><p style=\"font-size:14.5px\">Decide whether the sampling distribution of x̄ is approximately normal: (a) normal population, n = 12; (b) highly right-skewed population, n = 12; (c) highly right-skewed population, n = 45; (d) explain the role of the central limit theorem.</p><ol><li>(a) Yes. A normal population gives a normal x̄ for any sample size.</li><li>(b) No. n = 12 is too small for the CLT to overcome strong skew.</li><li>(c) Yes by the usual n ≥ 30 rule, so this is the expected answer. But note the lecture's caution that a highly skewed population may need about 50: n = 45 is close to that, so the approximation is reasonable rather than excellent.</li><li>(d) The CLT says that for large n the distribution of x̄ is close to normal whatever the population's shape, so the population's shape matters only when n is small.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) yes; (b) no; (c) yes, approximately (n ≥ 30), with the ‘about 50 for heavy skew’ caution; (d) as above.</p></details><details><summary>Q6 · Probability that x̄ is within ±5 and ±10 of μ</summary><p style=\"font-size:14.5px\">Population μ = 200, σ = 50; a sample of 100 is taken. Find P(x̄ within ±5 of μ) and P(x̄ within ±10 of μ).</p><ol><li>σ<sub>x̄</sub> = 50/√100 = 5 (the population size is not given, so treat it as infinite).</li><li>±5: z = 5/5 = 1. P(−1 ≤ Z ≤ 1) = 0.8413 − 0.1587 = 0.6826.</li><li>±10: z = 10/5 = 2. P(−2 ≤ Z ≤ 2) = 0.9772 − 0.0228 = 0.9544.</li><li>Excel check: <code>=NORM.DIST(205,200,5,TRUE)-NORM.DIST(195,200,5,TRUE)</code> = 0.6827.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> ≈ 0.683 for ±5 and ≈ 0.954 for ±10.</p></details><details><summary>Q7 · Working backwards to μ and σ</summary><p style=\"font-size:14.5px\">Samples of 30 products are weighed and x̄ is recorded. Over a long period 5% of the x̄ values exceed 2.1 lb and 5% fall below 1.9 lb. Find the population mean and standard deviation.</p><ol><li>The cut-offs are symmetric, so the centre of the sampling distribution is μ = (1.9 + 2.1)/2 = 2.0 lb.</li><li>5% in the upper tail means 2.1 is z = 1.645 standard errors above μ: 0.1 = 1.645 × σ<sub>x̄</sub>, so σ<sub>x̄</sub> = 0.1/1.645 = 0.0608.</li><li>σ<sub>x̄</sub> = σ/√n, so σ = 0.0608 × √30 = 0.333 lb.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> μ = 2.0 lb; σ ≈ 0.33 lb. (Stopping at 0.0608 gives the standard error, not the population σ.)</p></details><details><summary>Q8 · Standard error for n = 36 and n = 144</summary><p style=\"font-size:14.5px\">σ = 72. Find the standard error of x̄ for samples of 36 and of 144, compare them and say what the comparison shows.</p><ol><li>n = 36: σ<sub>x̄</sub> = 72/√36 = 72/6 = 12.</li><li>n = 144: σ<sub>x̄</sub> = 72/√144 = 72/12 = 6.</li><li>Four times the sample size halves the standard error, because n sits under a square root.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 12 and 6. A larger sample makes x̄ less variable, but with diminishing returns: halving the error costs four times the sample.</p></details><details><summary>Q9 · Can p̂ be treated as normal? Four cases</summary><p style=\"font-size:14.5px\">Check np and n(1 − p) for: A (p = 0.02, n = 100), B (p = 0.10, n = 60), C (p = 0.50, n = 8), D (p = 0.80, n = 25).</p><ol><li>Condition: np ≥ 5 and n(1 − p) ≥ 5.</li><li>A: np = 2, n(1 − p) = 98. Fails (np &lt; 5).</li><li>B: np = 6, n(1 − p) = 54. Passes.</li><li>C: np = 4, n(1 − p) = 4. Fails on both.</li><li>D: np = 20, n(1 − p) = 5. Passes, exactly on the boundary (‘at least 5’ includes 5).</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Normal approximation suitable for B and D; not for A or C.</p></details><details><summary>Q10 · When to use the finite population correction</summary><p style=\"font-size:14.5px\">σ = 30 and n = 48 in both cases. Case A: N = 1,200. Case B: N = 600. Find n/N, decide on the correction, and find each standard error.</p><ol><li>Case A: n/N = 48/1,200 = 0.04 &lt; 0.05, so no correction: σ<sub>x̄</sub> = 30/√48 = 4.33.</li><li>Case B: n/N = 48/600 = 0.08 ≥ 0.05, so apply it: √[(600 − 48)/(600 − 1)] = √(552/599) = 0.960.</li><li>Case B: σ<sub>x̄</sub> = 0.960 × 4.33 = 4.16.</li><li>Why they differ: in B the sample is a larger share of the population, so there is less room for sample means to vary.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> n/N = 0.04 and 0.08; correction only for B; σ<sub>x̄</sub> ≈ 4.33 (A) and ≈ 4.16 (B).</p></details><details><summary>Q11 · Minimum sample size for a target standard error of p̂</summary><p style=\"font-size:14.5px\">p is believed to be 0.25. How large must the sample be for the standard error of p̂ to be no more than 0.05?</p><ol><li>σ<sub>p̂</sub> = √[p(1 − p)/n].</li><li>Require √(0.25 × 0.75/n) ≤ 0.05, i.e. 0.1875/n ≤ 0.0025, so n ≥ 0.1875/0.0025 = 75.</li><li>Here 75 is a whole number. If the result were, say, 74.2, you would round <strong>up</strong> to 75: rounding down gives a standard error slightly above the target.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> n = 75. Always round a required sample size up.</p></details><details><summary>Q12 · Name the sampling method</summary><p style=\"font-size:14.5px\">Identify the method: (a) five city blocks chosen at random, every household on them interviewed; (b) students split into undergraduates and postgraduates, a random sample taken from each; (c) shoppers who happen to be outside a mall and willing to talk; (d) 20 companies an industry expert considers representative; (e) a random start in a list of 5,000 customers, then every 50th.</p><ol><li>(a) Cluster sampling: random clusters, everyone inside them.</li><li>(b) Stratified random sampling: every group sampled randomly.</li><li>(c) Convenience sampling.</li><li>(d) Judgement sampling.</li><li>(e) Systematic sampling (k = 50, so the sample has 100 customers).</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> Cluster; stratified; convenience; judgement; systematic.</p></details>"
     },
     {
+     "t": "Case: Marion Dairies (BlueGurt and StrawGurt)",
+     "src": "L#21",
+     "h": "<p style=\"font-size:14.5px\">Marion Dairies entered a mature yogurt market cautiously, with a single blueberry flavour called <strong>BlueGurt</strong>, and it sold better than expected. Consumer ratings on a 0–100 scale have a mean of <strong>80</strong> and a standard deviation of <strong>25</strong>, which the case treats as the population values μ and σ. Past experience says a customer who rates a product <strong>above 75</strong> will consider buying it.</p>\n<p style=\"font-size:14.5px\">Encouraged, the marketing department wants to extend the line with a strawberry flavour, <strong>StrawGurt</strong>. Senior managers are wary of <strong>cannibalisation</strong>: if StrawGurt mainly wins customers who would have bought BlueGurt anyway, sales just move from one product to the other and the total market share does not grow. StrawGurt is only worth launching if it appeals to people who do <em>not</em> like BlueGurt.</p>\n<p style=\"font-size:14.5px\"><strong>The proposed test:</strong> give both yogurts to a simple random sample of 50 customers and have each rate both on the 100-point scale. If the sample's mean rating for BlueGurt is <strong>75 or less</strong>, marketing will treat the sample as suitable for judging whether StrawGurt appeals to customers who do not like BlueGurt. So the question is: how likely is a random panel of 50 to produce x̄ ≤ 75?</p>\n<div class=\"scroller\"><table><thead><tr><th>Given</th><th>Value</th></tr></thead><tbody>\n<tr><td>Population mean rating μ</td><td>80</td></tr>\n<tr><td>Population standard deviation σ</td><td>25</td></tr>\n<tr><td>Sample size n</td><td>50 (later 150)</td></tr>\n<tr><td>Cut-off for the sample mean</td><td>x̄ ≤ 75</td></tr>\n</tbody></table></div>\n<h4>Part 1: P(x̄ ≤ 75) for a panel of 50</h4>\n<ol>\n<li>The customer base is large, so no finite population correction: σ<sub>x̄</sub> = σ/√n = 25/√50 = <strong>3.5355</strong>.</li>\n<li>n = 50 ≥ 30, so by the central limit theorem x̄ is approximately normal, even though individual ratings, capped at 100, cannot be.</li>\n<li>z = (75 − 80)/3.5355 = <strong>−1.414</strong>.</li>\n<li>P(x̄ ≤ 75) = P(Z ≤ −1.414) = <strong>0.0786</strong>, about 7.9%.</li>\n</ol>\n<p style=\"font-size:14.5px\">The lecture's 0.0786 comes from Excel with the unrounded z. Rounding to z = −1.41 for the printed table gives 0.0793; either is accepted as the same answer.</p>\n<h4>Part 2: the panel grows to 150</h4>\n<p style=\"font-size:14.5px\">σ<sub>x̄</sub> = 25/√150 = 2.0412, z = (75 − 80)/2.0412 = −2.449, and P(x̄ ≤ 75) = <strong>0.0072</strong>, under 1%. The reason is the one from L#19: a bigger sample has a smaller standard error, so sample means cluster more tightly around μ = 80. A mean of 75 is 1.41 standard errors below μ with 50 customers but 2.45 with 150, so it becomes much rarer.</p>\n<h4>Reading the numbers</h4>\n<ul>\n<li><strong>It is about the panel's mean, not about individual customers.</strong> 0.0786 is the chance that 50 randomly chosen customers <em>average</em> 75 or less. It is not the share of customers who rate BlueGurt 75 or less: single ratings spread with σ = 25, about seven times the standard error, so far more than 7.9% of individuals sit at or below 75. (The LMS auto-summary words this loosely; the calculation does not support that reading.)</li>\n<li><strong>For the decision:</strong> because most customers like BlueGurt (mean 80), a random panel will rarely meet the ‘mean ≤ 75’ trigger: about 1 chance in 13 with 50 customers and under 1 in 100 with 150. Enlarging the panel makes the trigger rarer, not easier to reach.</li>\n<li>The business lesson in the lecture: statistics gives a data-based footing for the launch decision, and larger samples give estimates that sit closer to the true mean.</li>\n</ul><!--viz:sfm-l21-marion-tail--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two normal curves for the sample mean rating, both centred at 80. The curve for samples of 50 has standard error 3.54 and 0.0786 of its area at or below 75; the narrower, taller curve for samples of 150 has standard error 2.04 and only 0.0072 at or below 75.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Why a bigger panel rarely averages 75 or less</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 214\" role=\"img\" aria-label=\"Two sampling distributions of the mean rating, both centred at 80: a wider one for samples of 50 and a narrower, taller one for samples of 150. The area at or below 75 is 0.0786 for n = 50 and 0.0072 for n = 150.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M20.0,170 L20.0,170.0 L22.5,170.0 L25.0,170.0 L27.5,170.0 L30.0,170.0 L32.5,170.0 L35.0,170.0 L37.5,170.0 L40.0,170.0 L42.5,170.0 L45.0,170.0 L47.5,170.0 L50.0,170.0 L52.5,169.9 L55.0,169.9 L57.5,169.9 L60.0,169.9 L62.5,169.9 L65.0,169.8 L67.5,169.8 L70.0,169.8 L72.5,169.7 L75.0,169.6 L77.5,169.6 L80.0,169.5 L82.5,169.4 L85.0,169.3 L87.5,169.1 L90.0,169.0 L92.5,168.8 L95.0,168.6 L97.5,168.3 L100.0,168.0 L102.5,167.7 L105.0,167.3 L107.5,166.9 L110.0,166.5 L112.5,165.9 L115.0,165.3 L117.5,164.7 L120.0,163.9 L122.5,163.1 L125.0,162.2 L127.5,161.2 L130.0,160.1 L132.5,158.9 L135.0,157.6 L137.5,156.3 L140.0,154.7 L142.5,153.1 L145.0,151.4 L147.5,149.6 L150.0,147.6 L152.5,145.5 L155.0,143.4 L157.5,141.1 L157.5,170 Z\" style=\"fill:var(--blue-soft);stroke:none\"/><path d=\"M20.0,170 L20.0,170.0 L22.5,170.0 L25.0,170.0 L27.5,170.0 L30.0,170.0 L32.5,170.0 L35.0,170.0 L37.5,170.0 L40.0,170.0 L42.5,170.0 L45.0,170.0 L47.5,170.0 L50.0,170.0 L52.5,170.0 L55.0,170.0 L57.5,170.0 L60.0,170.0 L62.5,170.0 L65.0,170.0 L67.5,170.0 L70.0,170.0 L72.5,170.0 L75.0,170.0 L77.5,170.0 L80.0,170.0 L82.5,170.0 L85.0,170.0 L87.5,170.0 L90.0,170.0 L92.5,170.0 L95.0,170.0 L97.5,170.0 L100.0,170.0 L102.5,170.0 L105.0,170.0 L107.5,170.0 L110.0,170.0 L112.5,170.0 L115.0,170.0 L117.5,170.0 L120.0,169.9 L122.5,169.9 L125.0,169.9 L127.5,169.8 L130.0,169.7 L132.5,169.6 L135.0,169.5 L137.5,169.3 L140.0,169.0 L142.5,168.7 L145.0,168.2 L147.5,167.6 L150.0,166.8 L152.5,165.9 L155.0,164.7 L157.5,163.2 L157.5,170 Z\" style=\"fill:var(--clay);opacity:.45;stroke:none\"/><path d=\"M20.0,170.0 L25.0,170.0 L30.0,170.0 L35.0,170.0 L40.0,170.0 L45.0,170.0 L50.0,170.0 L55.0,169.9 L60.0,169.9 L65.0,169.8 L70.0,169.8 L75.0,169.6 L80.0,169.5 L85.0,169.3 L90.0,169.0 L95.0,168.6 L100.0,168.0 L105.0,167.3 L110.0,166.5 L115.0,165.3 L120.0,163.9 L125.0,162.2 L130.0,160.1 L135.0,157.6 L140.0,154.7 L145.0,151.4 L150.0,147.6 L155.0,143.4 L160.0,138.8 L165.0,133.8 L170.0,128.6 L175.0,123.2 L180.0,117.9 L185.0,112.6 L190.0,107.6 L195.0,103.1 L200.0,99.1 L205.0,95.9 L210.0,93.5 L215.0,92.0 L220.0,91.5 L225.0,92.0 L230.0,93.5 L235.0,95.9 L240.0,99.1 L245.0,103.1 L250.0,107.6 L255.0,112.6 L260.0,117.9 L265.0,123.2 L270.0,128.6 L275.0,133.8 L280.0,138.8 L285.0,143.4 L290.0,147.6 L295.0,151.4 L300.0,154.7 L305.0,157.6 L310.0,160.1 L315.0,162.2 L320.0,163.9 L325.0,165.3 L330.0,166.5 L335.0,167.3 L340.0,168.0 L345.0,168.6 L350.0,169.0 L355.0,169.3 L360.0,169.5 L365.0,169.6 L370.0,169.8 L375.0,169.8 L380.0,169.9 L385.0,169.9 L390.0,170.0 L395.0,170.0 L400.0,170.0 L405.0,170.0 L410.0,170.0 L415.0,170.0 L420.0,170.0\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><path d=\"M20.0,170.0 L25.0,170.0 L30.0,170.0 L35.0,170.0 L40.0,170.0 L45.0,170.0 L50.0,170.0 L55.0,170.0 L60.0,170.0 L65.0,170.0 L70.0,170.0 L75.0,170.0 L80.0,170.0 L85.0,170.0 L90.0,170.0 L95.0,170.0 L100.0,170.0 L105.0,170.0 L110.0,170.0 L115.0,170.0 L120.0,169.9 L125.0,169.9 L130.0,169.7 L135.0,169.5 L140.0,169.0 L145.0,168.2 L150.0,166.8 L155.0,164.7 L160.0,161.4 L165.0,156.7 L170.0,150.1 L175.0,141.3 L180.0,130.2 L185.0,116.9 L190.0,101.9 L195.0,85.8 L200.0,70.0 L205.0,55.6 L210.0,44.1 L215.0,36.6 L220.0,34.0 L225.0,36.6 L230.0,44.1 L235.0,55.6 L240.0,70.0 L245.0,85.8 L250.0,101.9 L255.0,116.9 L260.0,130.2 L265.0,141.3 L270.0,150.1 L275.0,156.7 L280.0,161.4 L285.0,164.7 L290.0,166.8 L295.0,168.2 L300.0,169.0 L305.0,169.5 L310.0,169.7 L315.0,169.9 L320.0,169.9 L325.0,170.0 L330.0,170.0 L335.0,170.0 L340.0,170.0 L345.0,170.0 L350.0,170.0 L355.0,170.0 L360.0,170.0 L365.0,170.0 L370.0,170.0 L375.0,170.0 L380.0,170.0 L385.0,170.0 L390.0,170.0 L395.0,170.0 L400.0,170.0 L405.0,170.0 L410.0,170.0 L415.0,170.0 L420.0,170.0\" style=\"fill:none;stroke:var(--clay);stroke-width:2\"/><path d=\"M14,170 L426,170\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M95.0,170 L95.0,175\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"95.0\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">70</text><path d=\"M157.5,170 L157.5,175\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"157.5\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">75</text><path d=\"M220.0,170 L220.0,175\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"220.0\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">80</text><path d=\"M282.5,170 L282.5,175\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"282.5\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">85</text><path d=\"M345.0,170 L345.0,175\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"345.0\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">90</text><path d=\"M157.5,170 L157.5,74\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none;stroke-dasharray:4 3\"/><text x=\"220\" y=\"208\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">mean rating x̄ of the sample</text><text x=\"24\" y=\"40\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">P(x̄ ≤ 75)</text><text x=\"24\" y=\"60\" style=\"fill:var(--ink-2);font-size:13px\">n = 50: 0.0786</text><text x=\"24\" y=\"78\" style=\"fill:var(--clay);font-size:13px\">n = 150: 0.0072</text><path d=\"M70,88 L135.0,151.6\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M276,40 L294,40\" style=\"stroke:var(--ink);stroke-width:2;fill:none\"/><text x=\"300\" y=\"44\" style=\"fill:var(--ink-2);font-size:13px\">n = 50 · σx̄ 3.54</text><path d=\"M276,60 L294,60\" style=\"stroke:var(--clay);stroke-width:2;fill:none\"/><text x=\"300\" y=\"64\" style=\"fill:var(--ink-2);font-size:13px\">n = 150 · σx̄ 2.04</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Same population, same cut-off: tripling n squeezes x̄ towards 80, and the tail below 75 almost vanishes.</figcaption></figure><!--/viz:sfm-l21-marion-tail-->"
+    },
+    {
+     "t": "The Marion Dairies sheet in Excel",
+     "src": "L#21",
+     "h": "<p style=\"font-size:14.5px\">The lecturer builds the case as a small, reusable sheet. The rule: <strong>type each given once, in its own cell, and build every result from cell references</strong>. Then changing n from 50 to 150 (or 500) updates every result at once; if 80, 25 and 50 were typed into the formulas, each cell would need editing by hand.</p>\n<div class=\"scroller\"><table><thead><tr><th>Cell</th><th>Holds</th><th>Entry</th></tr></thead><tbody>\n<tr><td>B1</td><td>μ (given)</td><td>80</td></tr>\n<tr><td>B2</td><td>σ (given)</td><td>25</td></tr>\n<tr><td>B3</td><td>n (given)</td><td>50</td></tr>\n<tr><td>B4</td><td>x (given)</td><td>75</td></tr>\n<tr><td>standard error</td><td>σ/√n</td><td><code>=B2/SQRT(B3)</code> → 3.5355</td></tr>\n<tr><td>z</td><td>(x − μ)/σ<sub>x̄</sub></td><td><code>=(B4-B1)/</code>(standard-error cell) → −1.4142</td></tr>\n<tr><td>P(x̄ ≤ 75)</td><td>cumulative area</td><td><code>=NORM.S.DIST(z, TRUE)</code>, or directly <code>=NORM.DIST(75, 80, 25/SQRT(50), TRUE)</code> → 0.0786</td></tr>\n</tbody></table></div>\n<ul>\n<li><strong>Brackets:</strong> write <code>=(B4-B1)/…</code>. Without the brackets Excel divides only μ by the standard error before subtracting.</li>\n<li><strong>TRUE, not FALSE:</strong> the last argument of NORM.DIST must be TRUE to get an area. FALSE returns the height of the density curve, which is not a probability for a continuous variable.</li>\n<li>Mark the given cells in one colour and the calculated cells in another, so the sheet's logic is visible.</li>\n</ul>\n<h4>Extending the case: a range for x̄</h4>\n<p style=\"font-size:14.5px\">With n back at 50, what is P(75 ≤ x̄ ≤ 85), the chance the panel's mean lands within ±5 of μ? Put x1 = 75 and x2 = 85 in adjacent cells, compute z1 and z2 with one formula dragged down, then subtract the two cumulative areas.</p>\n<ol>\n<li>Before dragging, lock μ and the standard error with <strong>F4</strong> (for example <code>=(B4-$B$1)/$B$6</code>, with x1 in B4 and the standard error in B6) so only the x reference moves.</li>\n<li>z1 = −1.414 and z2 = +1.414: symmetric, because the range is symmetric about μ.</li>\n<li>Net probability = P(x̄ ≤ 85) − P(x̄ ≤ 75) = 0.9214 − 0.0786 = <strong>0.8427</strong>, about 84%.</li>\n</ol>\n<p style=\"font-size:14.5px\"><strong>Three levers</strong> then show up in the what-if table below. A <strong>larger sample</strong> raises the probability for a range around μ (n = 100 gives 0.9545). A <strong>wider</strong> raises it (lower limit 70 gives 0.9190; upper limit 100 gives 0.9214, effectively P(x̄ ≥ 75)). A <strong>narrower</strong> lowers it (75 to 78 gives 0.2072; 75 to 80 gives 0.4214, which is 0.5 − 0.0786).</p>\n<div class=\"def\"><b>From the lecture (L#21):</b> practise a few problems on this pattern, from the set to be shared and from the textbook. The same sheet leads into the next chapter: instead of fixing the range and finding the probability, fix the probability (such as 95%) and find the range. That is the confidence interval.</div><!--viz:sfm-l21-what-if-table--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of probabilities for the sample mean rating with mean 80 and standard deviation 25 (standard error 3.536 for n = 50). At or below 75: 0.0786 for n = 50 and 0.0072 for n = 150. Between 75 and 85: 0.8427 for n = 50 and 0.9545 for n = 100. Wider ranges 70 to 85 and 75 to 100 give 0.9190 and 0.9214; narrower ranges 75 to 80 and 75 to 78 give 0.4214 and 0.2072.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The lecture's what-if experiments (μ = 80, σ = 25)</div><div class=\"scroller\"><table><thead><tr><th>x̄ range</th><th>n</th><th>P</th><th>Lever</th></tr></thead><tbody><tr><td>≤ 75</td><td style=\"font-family:var(--mono)\">50</td><td style=\"font-family:var(--mono)\">0.0786</td><td>base</td></tr><tr><td>≤ 75</td><td style=\"font-family:var(--mono)\">150</td><td style=\"font-family:var(--mono)\">0.0072</td><td style=\"background:var(--blue-soft)\">larger n</td></tr><tr><td>75 to 85</td><td style=\"font-family:var(--mono)\">50</td><td style=\"font-family:var(--mono)\">0.8427</td><td>base</td></tr><tr><td>75 to 85</td><td style=\"font-family:var(--mono)\">100</td><td style=\"font-family:var(--mono)\">0.9545</td><td style=\"background:var(--blue-soft)\">larger n</td></tr><tr><td>70 to 85</td><td style=\"font-family:var(--mono)\">50</td><td style=\"font-family:var(--mono)\">0.9190</td><td style=\"background:var(--good-soft)\">wider</td></tr><tr><td>75 to 100</td><td style=\"font-family:var(--mono)\">50</td><td style=\"font-family:var(--mono)\">0.9214</td><td style=\"background:var(--good-soft)\">wider</td></tr><tr><td>75 to 80</td><td style=\"font-family:var(--mono)\">50</td><td style=\"font-family:var(--mono)\">0.4214</td><td style=\"background:var(--clay-soft)\">narrower</td></tr><tr><td>75 to 78</td><td style=\"font-family:var(--mono)\">50</td><td style=\"font-family:var(--mono)\">0.2072</td><td style=\"background:var(--clay-soft)\">narrower</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">A larger n moves area from the tails into the middle; widening a range adds area and narrowing it takes area away.</figcaption></figure><!--/viz:sfm-l21-what-if-table-->"
+    },
+    {
      "t": "Textbook: Sampling and Sampling Distributions",
      "src": "Anderson 14e ch7",
      "h": "<!--viz:sfm-standard-error-narrowing--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Sampling distributions of the sample mean for a population with mean 50 and standard deviation 12, at n = 4, 16 and 64. The standard errors are 6, 3 and 1.5, so each curve is twice as tall and half as wide as the last.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Bigger samples pin x̄ closer to μ</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 232\" role=\"img\" aria-label=\"Sampling distributions of the sample mean for a population with mean 50 and standard deviation 12, at n = 4, 16 and 64. The standard errors are 6, 3 and 1.5, so each curve is twice as tall and half as wide as the last.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M20,179.9 L24.2,179.8 L28.3,179.8 L32.5,179.7 L36.7,179.7 L40.8,179.6 L45,179.5 L49.2,179.4 L53.3,179.3 L57.5,179.1 L61.7,178.9 L65.8,178.7 L70,178.5 L74.2,178.2 L78.3,177.8 L82.5,177.5 L86.7,177 L90.8,176.6 L95,176 L99.2,175.4 L103.3,174.7 L107.5,174 L111.7,173.1 L115.8,172.2 L120,171.3 L124.2,170.2 L128.3,169.1 L132.5,167.9 L136.7,166.7 L140.8,165.3 L145,164 L149.2,162.6 L153.3,161.1 L157.5,159.7 L161.7,158.2 L165.8,156.7 L170,155.3 L174.2,153.9 L178.3,152.5 L182.5,151.2 L186.7,150 L190.8,148.9 L195,147.9 L199.2,147 L203.3,146.3 L207.5,145.8 L211.7,145.3 L215.8,145.1 L220,145 L224.2,145.1 L228.3,145.3 L232.5,145.8 L236.7,146.3 L240.8,147 L245,147.9 L249.2,148.9 L253.3,150 L257.5,151.2 L261.7,152.5 L265.8,153.9 L270,155.3 L274.2,156.7 L278.3,158.2 L282.5,159.7 L286.7,161.1 L290.8,162.6 L295,164 L299.2,165.3 L303.3,166.7 L307.5,167.9 L311.7,169.1 L315.8,170.2 L320,171.3 L324.2,172.2 L328.3,173.1 L332.5,174 L336.7,174.7 L340.8,175.4 L345,176 L349.2,176.6 L353.3,177 L357.5,177.5 L361.7,177.8 L365.8,178.2 L370,178.5 L374.2,178.7 L378.3,178.9 L382.5,179.1 L386.7,179.3 L390.8,179.4 L395,179.5 L399.2,179.6 L403.3,179.7 L407.5,179.7 L411.7,179.8 L415.8,179.8 L420,179.9\" style=\"fill:none;stroke:var(--ink-3);stroke-width:2\"/><path d=\"M20,180 L24.2,180 L28.3,180 L32.5,180 L36.7,180 L40.8,180 L45,180 L49.2,180 L53.3,180 L57.5,180 L61.7,180 L65.8,180 L70,180 L74.2,180 L78.3,180 L82.5,180 L86.7,180 L90.8,180 L95,180 L99.2,180 L103.3,180 L107.5,179.9 L111.7,179.9 L115.8,179.8 L120,179.7 L124.2,179.6 L128.3,179.3 L132.5,179 L136.7,178.5 L140.8,177.8 L145,176.9 L149.2,175.7 L153.3,174.1 L157.5,172 L161.7,169.4 L165.8,166.3 L170,162.5 L174.2,158.2 L178.3,153.3 L182.5,148 L186.7,142.2 L190.8,136.4 L195,130.5 L199.2,125 L203.3,120 L207.5,115.8 L211.7,112.6 L215.8,110.7 L220,110 L224.2,110.7 L228.3,112.6 L232.5,115.8 L236.7,120 L240.8,125 L245,130.5 L249.2,136.4 L253.3,142.2 L257.5,148 L261.7,153.3 L265.8,158.2 L270,162.5 L274.2,166.3 L278.3,169.4 L282.5,172 L286.7,174.1 L290.8,175.7 L295,176.9 L299.2,177.8 L303.3,178.5 L307.5,179 L311.7,179.3 L315.8,179.6 L320,179.7 L324.2,179.8 L328.3,179.9 L332.5,179.9 L336.7,180 L340.8,180 L345,180 L349.2,180 L353.3,180 L357.5,180 L361.7,180 L365.8,180 L370,180 L374.2,180 L378.3,180 L382.5,180 L386.7,180 L390.8,180 L395,180 L399.2,180 L403.3,180 L407.5,180 L411.7,180 L415.8,180 L420,180\" style=\"fill:none;stroke:var(--clay);stroke-width:2\"/><path d=\"M20,180 L24.2,180 L28.3,180 L32.5,180 L36.7,180 L40.8,180 L45,180 L49.2,180 L53.3,180 L57.5,180 L61.7,180 L65.8,180 L70,180 L74.2,180 L78.3,180 L82.5,180 L86.7,180 L90.8,180 L95,180 L99.2,180 L103.3,180 L107.5,180 L111.7,180 L115.8,180 L120,180 L124.2,180 L128.3,180 L132.5,180 L136.7,180 L140.8,180 L145,180 L149.2,180 L153.3,180 L157.5,180 L161.7,179.9 L165.8,179.8 L170,179.5 L174.2,178.7 L178.3,177 L182.5,173.8 L186.7,168.1 L190.8,158.9 L195,145.1 L199.2,126.6 L203.3,104.5 L207.5,81.1 L211.7,60 L215.8,45.3 L220,40 L224.2,45.3 L228.3,60 L232.5,81.1 L236.7,104.5 L240.8,126.6 L245,145.1 L249.2,158.9 L253.3,168.1 L257.5,173.8 L261.7,177 L265.8,178.7 L270,179.5 L274.2,179.8 L278.3,179.9 L282.5,180 L286.7,180 L290.8,180 L295,180 L299.2,180 L303.3,180 L307.5,180 L311.7,180 L315.8,180 L320,180 L324.2,180 L328.3,180 L332.5,180 L336.7,180 L340.8,180 L345,180 L349.2,180 L353.3,180 L357.5,180 L361.7,180 L365.8,180 L370,180 L374.2,180 L378.3,180 L382.5,180 L386.7,180 L390.8,180 L395,180 L399.2,180 L403.3,180 L407.5,180 L411.7,180 L415.8,180 L420,180\" style=\"fill:none;stroke:var(--blue);stroke-width:2\"/><path d=\"M12,180 L428,180\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M20,180 L20,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"20\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">30</text><path d=\"M120,180 L120,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"120\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">40</text><path d=\"M220,180 L220,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"220\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">50</text><path d=\"M320,180 L320,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"320\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">60</text><path d=\"M420,180 L420,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"420\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">70</text><text x=\"245\" y=\"50\" style=\"fill:var(--blue);font-size:13.5px;font-weight:700\">n = 64 · SE 1.5</text><text x=\"280\" y=\"122\" style=\"fill:var(--clay);font-size:13.5px;font-weight:700\">n = 16 · SE 3</text><text x=\"325\" y=\"152\" style=\"fill:var(--ink-2);font-size:13.5px;font-weight:700\">n = 4 · SE 6</text><text x=\"20\" y=\"24\" style=\"fill:var(--ink-2);font-size:13px\">σ = 12 · SE = σ / √n</text><text x=\"220\" y=\"224\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">possible values of x̄ (μ = 50)</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Quadrupling n halves the standard error: precision grows with √n, so doubling precision costs four times the sample.</figcaption></figure><!--/viz:sfm-standard-error-narrowing--><!--viz:sfm-clt-skewed-population--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A right-skewed exponential population with mean 10 (dashed) and the exact sampling distributions of x̄ for n = 5 and n = 30. By n = 30 the curve is a near-symmetric bell centred on 10 with standard error 1.83.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The central limit theorem from a skewed population</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 232\" role=\"img\" aria-label=\"A right-skewed exponential population with mean 10 (dashed) and the exact sampling distributions of x̄ for n = 5 and n = 30. By n = 30 the curve is a near-symmetric bell centred on 10 with standard error 1.83.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M30,116.8 L33.8,118.7 L37.6,120.5 L41.4,122.2 L45.1,123.9 L48.9,125.6 L52.7,127.2 L56.5,128.8 L60.3,130.3 L64,131.7 L67.8,133.2 L71.6,134.6 L75.4,135.9 L79.2,137.2 L82.9,138.5 L86.7,139.7 L90.5,140.9 L94.3,142 L98.1,143.2 L101.8,144.3 L105.6,145.3 L109.4,146.3 L113.2,147.3 L116.9,148.3 L120.7,149.2 L124.5,150.1 L128.3,151 L132.1,151.9 L135.8,152.7 L139.6,153.5 L143.4,154.3 L147.2,155.1 L151,155.8 L154.7,156.5 L158.5,157.2 L162.3,157.9 L166.1,158.5 L169.9,159.2 L173.6,159.8 L177.4,160.4 L181.2,161 L185,161.5 L188.8,162.1 L192.5,162.6 L196.3,163.1 L200.1,163.6 L203.9,164.1 L207.7,164.6 L211.4,165 L215.2,165.5 L219,165.9 L222.8,166.3 L226.6,166.7 L230.3,167.1 L234.1,167.5 L237.9,167.9 L241.7,168.2 L245.5,168.6 L249.2,168.9 L253,169.2 L256.8,169.6 L260.6,169.9 L264.4,170.2 L268.1,170.4 L271.9,170.7 L275.7,171 L279.5,171.3 L283.3,171.5 L287,171.8 L290.8,172 L294.6,172.3 L298.4,172.5 L302.2,172.7 L305.9,172.9 L309.7,173.1 L313.5,173.3 L317.3,173.5 L321.1,173.7 L324.8,173.9 L328.6,174.1 L332.4,174.3 L336.2,174.4 L340,174.6 L343.7,174.8 L347.5,174.9 L351.3,175.1 L355.1,175.2 L358.9,175.4 L362.6,175.5 L366.4,175.6 L370.2,175.8 L374,175.9 L377.8,176 L381.5,176.1 L385.3,176.2 L389.1,176.3 L392.9,176.5 L396.7,176.6 L400.4,176.7 L404.2,176.8 L408,176.9\" style=\"fill:none;stroke:var(--clay);stroke-width:2;stroke-dasharray:5 4\"/><path d=\"M30,180 L33.8,180 L37.6,179.9 L41.4,179.7 L45.1,179.1 L48.9,178 L52.7,176.5 L56.5,174.4 L60.3,171.8 L64,168.6 L67.8,165.1 L71.6,161.2 L75.4,157.1 L79.2,152.9 L82.9,148.6 L86.7,144.4 L90.5,140.3 L94.3,136.5 L98.1,133 L101.8,129.7 L105.6,126.9 L109.4,124.4 L113.2,122.4 L116.9,120.8 L120.7,119.6 L124.5,118.7 L128.3,118.3 L132.1,118.3 L135.8,118.5 L139.6,119.1 L143.4,120 L147.2,121.1 L151,122.5 L154.7,124 L158.5,125.7 L162.3,127.5 L166.1,129.4 L169.9,131.4 L173.6,133.5 L177.4,135.6 L181.2,137.7 L185,139.8 L188.8,141.9 L192.5,144 L196.3,146 L200.1,148 L203.9,149.9 L207.7,151.8 L211.4,153.6 L215.2,155.3 L219,157 L222.8,158.5 L226.6,160 L230.3,161.4 L234.1,162.8 L237.9,164.1 L241.7,165.3 L245.5,166.4 L249.2,167.4 L253,168.4 L256.8,169.3 L260.6,170.2 L264.4,171 L268.1,171.7 L271.9,172.4 L275.7,173.1 L279.5,173.7 L283.3,174.2 L287,174.7 L290.8,175.2 L294.6,175.6 L298.4,176 L302.2,176.3 L305.9,176.7 L309.7,177 L313.5,177.3 L317.3,177.5 L321.1,177.7 L324.8,178 L328.6,178.1 L332.4,178.3 L336.2,178.5 L340,178.6 L343.7,178.8 L347.5,178.9 L351.3,179 L355.1,179.1 L358.9,179.2 L362.6,179.3 L366.4,179.3 L370.2,179.4 L374,179.5 L377.8,179.5 L381.5,179.6 L385.3,179.6 L389.1,179.6 L392.9,179.7 L396.7,179.7 L400.4,179.7 L404.2,179.8 L408,179.8\" style=\"fill:none;stroke:var(--ink-2);stroke-width:2\"/><path d=\"M30,180 L33.8,180 L37.6,180 L41.4,180 L45.1,180 L48.9,180 L52.7,180 L56.5,180 L60.3,180 L64,180 L67.8,180 L71.6,180 L75.4,180 L79.2,180 L82.9,179.9 L86.7,179.8 L90.5,179.5 L94.3,178.9 L98.1,177.6 L101.8,175.4 L105.6,171.7 L109.4,166.2 L113.2,158.3 L116.9,148 L120.7,135.3 L124.5,120.7 L128.3,104.8 L132.1,88.6 L135.8,73.4 L139.6,60 L143.4,49.7 L147.2,42.9 L151,40 L154.7,41.1 L158.5,45.8 L162.3,53.5 L166.1,63.6 L169.9,75.2 L173.6,87.7 L177.4,100.3 L181.2,112.5 L185,123.8 L188.8,134.1 L192.5,143 L196.3,150.7 L200.1,157.2 L203.9,162.4 L207.7,166.7 L211.4,170 L215.2,172.6 L219,174.6 L222.8,176.1 L226.6,177.2 L230.3,178 L234.1,178.6 L237.9,179.1 L241.7,179.3 L245.5,179.6 L249.2,179.7 L253,179.8 L256.8,179.9 L260.6,179.9 L264.4,179.9 L268.1,180 L271.9,180 L275.7,180 L279.5,180 L283.3,180 L287,180 L290.8,180 L294.6,180 L298.4,180 L302.2,180 L305.9,180 L309.7,180 L313.5,180 L317.3,180 L321.1,180 L324.8,180 L328.6,180 L332.4,180 L336.2,180 L340,180 L343.7,180 L347.5,180 L351.3,180 L355.1,180 L358.9,180 L362.6,180 L366.4,180 L370.2,180 L374,180 L377.8,180 L381.5,180 L385.3,180 L389.1,180 L392.9,180 L396.7,180 L400.4,180 L404.2,180 L408,180\" style=\"fill:none;stroke:var(--blue);stroke-width:2.5\"/><path d=\"M30,180 L30,116.8\" style=\"stroke:var(--clay);stroke-width:2;fill:none;stroke-dasharray:5 4\"/><path d=\"M18,180 L420,180\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M30,180 L30,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"30\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><path d=\"M156,180 L156,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"156\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">μ = 10</text><path d=\"M282,180 L282,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"282\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">20</text><path d=\"M408,180 L408,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"408\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">30</text><path d=\"M234,24 L258,24\" style=\"stroke:var(--clay);stroke-width:2;fill:none;stroke-dasharray:5 4\"/><text x=\"264\" y=\"28\" style=\"fill:var(--ink-2);font-size:13px\">population (one value)</text><path d=\"M234,46 L258,46\" style=\"stroke:var(--ink-2);stroke-width:2;fill:none\"/><text x=\"264\" y=\"50\" style=\"fill:var(--ink-2);font-size:13px\">x̄ with n = 5</text><path d=\"M234,68 L258,68\" style=\"stroke:var(--blue);stroke-width:2.5;fill:none\"/><text x=\"264\" y=\"72\" style=\"fill:var(--ink-2);font-size:13px\">x̄ with n = 30</text><text x=\"220\" y=\"224\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">waiting time, minutes (exponential population)</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The population never changes shape, but the distribution of x̄ becomes bell-shaped as n grows; n ≥ 30 is the usual rule of thumb.</figcaption></figure><!--/viz:sfm-clt-skewed-population--><!--viz:sfm-sampling-methods--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of six sampling methods. Simple random, stratified, cluster and systematic sampling are probability methods; convenience and judgement sampling are not.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Sampling methods at a glance</div><div class=\"scroller\"><table><thead><tr><th>Method</th><th>How the sample is chosen</th><th>Probability?</th></tr></thead><tbody><tr><td><b>Simple random</b></td><td>every sample of size n equally likely</td><td style=\"background:var(--good-soft)\">yes</td></tr><tr><td><b>Stratified</b></td><td>split into similar groups, sample each</td><td style=\"background:var(--good-soft)\">yes</td></tr><tr><td><b>Cluster</b></td><td>pick whole groups at random, survey all in them</td><td style=\"background:var(--good-soft)\">yes</td></tr><tr><td><b>Systematic</b></td><td>random start, then every k-th element</td><td style=\"background:var(--good-soft)\">yes</td></tr><tr><td><b>Convenience</b></td><td>whoever is easy to reach</td><td style=\"background:var(--bad-soft)\">no</td></tr><tr><td><b>Judgement</b></td><td>an expert picks typical elements</td><td style=\"background:var(--bad-soft)\">no</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only probability samples support standard errors and confidence statements; convenience and judgement samples can be biased in unknown ways.</figcaption></figure><!--/viz:sfm-sampling-methods--><p><strong>Sampled population, target population and frame</strong> — The target population is the one you want conclusions about; the sampled population is the one the sample actually comes from; the frame is the list of elements the sample is drawn from. Inferences are only as good as the match between sampled and target populations — a survey run on one unusual day can describe a very different crowd.<br><em>e.g.</em> Sampling only weekday-morning mall visitors to learn about all city shoppers mismatches the two populations.</p><p><strong>Simple random sample and random sample</strong> — From a finite population of size N, a simple random sample of size n is one where every possible sample of n has the same chance of selection, usually drawn without replacement using random numbers. From an infinite or ongoing process (a production line, arriving customers) no frame exists, so a random sample instead requires that each element comes from the same population and is selected independently.<br><span style=\"font-family:var(--mono)\">Number of possible simple random samples = N! / [n!(N − n)!]</span></p><p><strong>Point estimation</strong> — A point estimator is the sample statistic used to estimate a parameter: x̄ for μ, s for σ, p̄ for p. The number it produces from a particular sample is the point estimate. Different samples give different point estimates, so some estimation error is always expected.<br><em>e.g.</em> x̄ = ₹71,814 from 30 managers is a point estimate of the mean salary μ.</p><p><strong>Sampling distribution</strong> — Because x̄ and p̄ change from sample to sample, each is a random variable whose probability distribution — over all possible samples of size n — is its sampling distribution. In practice only one sample is taken; the sampling distribution is what tells us how far that one estimate is likely to be from the parameter.</p><p><strong>Expected value and standard error of x̄</strong> — The mean of all possible sample means equals μ, so x̄ is unbiased. Its standard deviation, the standard error of the mean, shrinks with the square root of n. For a finite population with n/N &gt; 0.05, multiply by the finite population correction factor; when n/N ≤ 0.05 the factor is close to 1 and is ignored.<br><span style=\"font-family:var(--mono)\">E(x̄) = μ;  σx̄ = σ/√n;  finite: σx̄ = √[(N − n)/(N − 1)] · σ/√n</span><br><em>e.g.</em> σ = ₹4000, n = 30: σx̄ = 4000/√30 = ₹730.3.</p><p><strong>Shape of the sampling distribution of x̄ and the CLT</strong> — If the population is normal, x̄ is normal for any n. If not, the Central Limit Theorem says the sampling distribution of x̄ approaches normal as n grows. In practice n ≥ 30 is usually enough; highly skewed populations or outliers may need n ≥ 50.<br><span style=\"font-family:var(--mono)\">For large n: x̄ ≈ Normal(μ, σ/√n)</span></p><p><strong>Using the sampling distribution of x̄</strong> — To find the probability that x̄ falls within a margin of μ, standardise with the standard error, not σ: z = (x̄ − μ)/σx̄. Larger samples give a smaller standard error and a higher probability of landing close to μ.<br><span style=\"font-family:var(--mono)\">z = (x̄ − μ) / (σ/√n)</span><br><em>e.g.</em> EAI: within ±$500 is 0.5034 with n = 30 but 0.7888 with n = 100.</p><p><strong>Sampling distribution of p̄</strong> — The sample proportion p̄ = x/n is unbiased for p. Its standard error is √[p(1 − p)/n], with the same finite-population correction rule. Because x is binomial, p̄ is approximately normal whenever np ≥ 5 and n(1 − p) ≥ 5.<br><span style=\"font-family:var(--mono)\">E(p̄) = p;  σp̄ = √[p(1 − p)/n]</span></p><p><strong>Properties of good point estimators</strong> — Unbiased: the estimator's expected value equals the parameter (x̄, p̄ and s² are unbiased — the reason s² divides by n − 1). Relative efficiency: of two unbiased estimators, prefer the one with the smaller standard error. Consistency: estimates get closer to the parameter as n increases.<br><span style=\"font-family:var(--mono)\">Unbiased if E(θ̂) = θ</span><br><em>e.g.</em> For a normal population the median's standard error is about 25% larger than the mean's, so the mean is more efficient.</p><p><strong>Other probability sampling methods</strong> — Stratified random sampling splits the population into strata whose members are alike, then samples each stratum — precise with a smaller total n. Cluster sampling splits it into clusters that each look like a mini-population, then samples whole clusters — cheaper fieldwork but usually a larger n. Systematic sampling picks a random start among the first N/n elements and then every (N/n)-th element.</p><p><strong>Non-probability sampling</strong> — Convenience sampling takes whoever is easy to reach; judgement sampling lets an expert choose 'representative' elements. Both can be quick and cheap, but since selection probabilities are unknown, no statistical statement about the quality of the results is possible.</p><p><strong>Sampling error versus nonsampling error</strong> — Sampling error is the random gap between a sample and its population; it shrinks as n grows. Nonsampling error comes from everything else — coverage error (wrong population for the research question), nonresponse error (some groups under- or over-represented), and measurement error (ambiguous or leading questions, poor recall). A huge sample does nothing to fix nonsampling error.</p><p><strong>Big data and standard errors</strong> — Big data sets can be tall (very many observations) or wide (very many variables). With tall data, standard errors become tiny: multiplying n by 100 divides the standard error by 10. That makes estimates very precise — but only about the population the data really came from.</p>"
+    }
+   ]
+  },
+  {
+   "id": "estimation",
+   "title": "Confidence intervals &amp; sample size",
+   "tag": "Lecture 22",
+   "lede": "From a single best guess to a range: how wide to make an interval for a chosen confidence level, and what makes it narrower.",
+   "topics": [
+    {
+     "t": "Why interval estimation: Sahyadri Retail Mart",
+     "src": "L#22",
+     "h": "<p style=\"font-size:14.5px\"><strong>Sahyadri Retail Mart</strong>, a made-up chain, runs 1,000 supermarkets across western and southern India. It must track how its costs change year on year, especially for personal-care and beauty stock. Doing that exactly would mean physically checking every item in every store to build an aggregate cost index.</p>\n<div class=\"scroller\"><table><thead><tr><th></th><th>Census of all 1,000 stores</th><th>Random sample of 50 stores</th></tr></thead><tbody>\n<tr><td>Money</td><td>huge travel and audit bills</td><td>about 5% of the census cost (50 of 1,000 stores)</td></tr>\n<tr><td>Time</td><td>could take months</td><td>far shorter</td></tr>\n<tr><td>People</td><td>thousands of staff</td><td>a small team</td></tr>\n<tr><td>Store operations</td><td>severe disruption, like stores that shut for two or three days for the March stock audit</td><td>little interference</td></tr>\n<tr><td>Certainty</td><td>the only route to 100%</td><td>a stated level of confidence</td></tr>\n</tbody></table></div>\n<p style=\"font-size:14.5px\">Just as one teaspoon tells you whether the whole pot of rice is cooked, a random sample of 50 stores can capture the chain's geographic and operational variety. The lecturer calls the path from population (1,000 stores) to random sample (50) to sample statistic to estimate the <strong>funnel of inference</strong>.</p>\n<h4>Why a point estimate is not enough</h4>\n<p style=\"font-size:14.5px\">The 50 stores give a cost index of <strong>1.015</strong>, a 1.5% rise. That is the best single guess, but another random 50 might give 1.013, 1.016 or 1.014. Should 1.015 be taken as the truth? A point estimate says nothing about how far it might be from the population value.</p>\n<p style=\"font-size:14.5px\">An <strong>interval estimate</strong> adds that information: for example, ‘we are 95% confident the true index lies between about 1.009 and 1.021’, a cost rise of 0.9% to 2.1%. That is 1.015 ± 0.006. The truth could still lie outside; only a census gives 100% certainty. If the range is too wide for the decision, take a bigger sample: moving from 50 to 200 stores narrows it. (With σ unchanged, four times the sample halves the margin, because √4 = 2.) Whether the extra precision is worth the extra cost is a business decision.</p>\n<h4>What is new compared with chapter 7</h4>\n<div class=\"scroller\"><table><thead><tr><th></th><th>Chapter 7 (L#19–21)</th><th>Interval estimation (L#22 on)</th></tr></thead><tbody>\n<tr><td>You are given</td><td>a range, a to b</td><td>a probability, such as 95%</td></tr>\n<tr><td>You find</td><td>the probability that x̄ lies in it</td><td>the range around x̄ that carries that probability</td></tr>\n<tr><td>Tools</td><td colspan=\"2\">the same: x̄, σ<sub>x̄</sub> = σ/√n, the standard normal table</td></tr>\n</tbody></table></div>\n<p style=\"font-size:14.5px\">The chapter's plan, as set out in the lecture: (1) interval estimates when σ is known, (2) when σ is unknown, (3) choosing the sample size, (4) the population proportion, with practice questions for each.</p>"
+    },
+    {
+     "t": "Margin of error and the interval for μ (σ known)",
+     "src": "L#22",
+     "h": "<div class=\"def\"><b>Interval estimate</b> = point estimate ± margin of error. For a population mean: x̄ ± margin of error.</div>\n<p style=\"font-size:14.5px\">The <strong>margin of error</strong> is the amount added to and subtracted from the point estimate. It tells you how close the estimate is likely to be to the parameter. With σ known:</p>\n<div class=\"def\"><b>σ known:</b> x̄ ± z<sub>α/2</sub> × σ<sub>x̄</sub>, with σ<sub>x̄</sub> = σ/√n. The margin of error is z<sub>α/2</sub> × σ/√n.</div>\n<ul>\n<li>The margin of error falls as n rises, because σ/√n falls.</li>\n<li>If n = N (a census), the finite population correction √[(N − n)/(N − 1)] is 0, so the margin of error is 0: nothing is left to estimate.</li>\n<li><strong>Standard error rule (from L#19):</strong> use σ/√n when the population is infinite or n/N &lt; 0.05; multiply by √[(N − n)/(N − 1)] when n/N &gt; 0.05. In this lecture the spoken rule came out the other way round, and the LMS summary repeats the slip; L#19's rule is the correct one.</li>\n</ul>\n<div class=\"scroller\"><table><thead><tr><th></th><th>Population (parameter)</th><th>Sample (statistic)</th></tr></thead><tbody>\n<tr><td>Letters</td><td>Greek</td><td>Latin</td></tr>\n<tr><td>Mean</td><td>μ</td><td>x̄</td></tr>\n<tr><td>Standard deviation</td><td>σ</td><td>s</td></tr>\n</tbody></table></div>\n<p style=\"font-size:14.5px\"><strong>When is σ ‘known’?</strong> Never exactly, but often well enough: from good historical data (last year's σ, if nothing major has changed) or from manufacturing specifications, where a machine's limits fix the spread of what it produces. When no such figure exists, the sample standard deviation s is used instead; that is the next part of the chapter.</p>\n<h4>Reading the probability statement</h4>\n<p style=\"font-size:14.5px\">The textbook-style sentence is: <em>there is a 1 − α probability that the value of x̄ will provide a margin of error of z<sub>α/2</sub>σ<sub>x̄</sub> or less.</em> Taken apart:</p>\n<ol>\n<li><strong>α</strong> is the probability of error, between 0 and 1. With α = 0.10 there is a 0.90 probability of being within the margin.</li>\n<li>The error can go either way: x̄ can land above μ or below it. The sampling distribution is normal (n ≥ 30, by the CLT) and so symmetric, so α is split equally: <strong>α/2 in each tail</strong>.</li>\n<li><strong>z<sub>α/2</sub></strong> is the z with α/2 of the area to its right, so you look up a cumulative area of <strong>1 − α/2</strong> in the table.</li>\n<li>Multiply by σ<sub>x̄</sub> for the margin of error, then add and subtract it from x̄.</li>\n</ol>\n<div class=\"scroller\"><table><thead><tr><th>Confidence</th><th>Alpha</th><th>Each tail</th><th>Look up</th><th>z value</th></tr></thead><tbody>\n<tr><td>90%</td><td>0.10</td><td>0.05</td><td>0.95</td><td>1.645</td></tr>\n<tr><td>95%</td><td>0.05</td><td>0.025</td><td>0.975</td><td>1.960</td></tr>\n<tr><td>99%</td><td>0.01</td><td>0.005</td><td>0.995</td><td>2.576</td></tr>\n</tbody></table></div>\n<p style=\"font-size:14.5px\"><strong>What ‘90% confidence’ means:</strong> of all the intervals built as x̄ ± 1.645σ<sub>x̄</sub> from repeated samples, 90% contain μ. So we say we are 90% confident that this interval contains μ. The level written as a decimal, 0.90, is the <strong>confidence coefficient</strong>.</p>\n<div class=\"def\"><b>From the lecture (L#22):</b> the three z values 1.645, 1.960 and 2.576 can be found in Excel or the table, and with practice you will know them, but they will generally be given in any case. Practice questions follow at the end of the chapter.</div><!--viz:sfm-l22-alpha-tails--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Standard normal curve with the central 0.90 shaded between z = −1.645 and z = +1.645, and 0.05 in each tail. The table is read at a cumulative area of 0.95 to find 1.645.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Where z for a 90% interval comes from</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 214\" role=\"img\" aria-label=\"Standard normal curve for a 90% confidence interval: the central area 0.90 lies between z = −1.645 and z = +1.645, with 0.05 in each tail. The table is read at cumulative area 0.95.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M123.2,160 L123.2,128.0 L126.2,125.2 L129.1,122.4 L132.1,119.4 L135.0,116.3 L137.9,113.1 L140.9,109.8 L143.8,106.4 L146.8,102.9 L149.7,99.3 L152.6,95.6 L155.6,91.9 L158.5,88.2 L161.5,84.4 L164.4,80.7 L167.4,76.9 L170.3,73.2 L173.2,69.6 L176.2,66.0 L179.1,62.6 L182.1,59.3 L185.0,56.1 L187.9,53.1 L190.9,50.3 L193.8,47.7 L196.8,45.3 L199.7,43.2 L202.6,41.3 L205.6,39.7 L208.5,38.3 L211.5,37.3 L214.4,36.6 L217.4,36.1 L220.3,36.0 L223.2,36.2 L226.2,36.7 L229.1,37.5 L232.1,38.6 L235.0,40.0 L237.9,41.6 L240.9,43.6 L243.8,45.8 L246.8,48.2 L249.7,50.8 L252.6,53.7 L255.6,56.7 L258.5,59.9 L261.5,63.3 L264.4,66.8 L267.4,70.3 L270.3,74.0 L273.2,77.7 L276.2,81.4 L279.1,85.2 L282.1,88.9 L285.0,92.7 L287.9,96.4 L290.9,100.0 L293.8,103.6 L296.8,107.1 L299.7,110.5 L302.6,113.8 L305.6,117.0 L308.5,120.0 L311.5,123.0 L314.4,125.8 L316.8,160 Z\" style=\"fill:var(--blue-soft);stroke:none\"/><path d=\"M20.0,160 L20.0,159.6 L22.9,159.5 L25.9,159.5 L28.8,159.4 L31.8,159.3 L34.7,159.1 L37.6,159.0 L40.6,158.8 L43.5,158.6 L46.5,158.4 L49.4,158.1 L52.4,157.9 L55.3,157.5 L58.2,157.2 L61.2,156.8 L64.1,156.3 L67.1,155.8 L70.0,155.2 L72.9,154.6 L75.9,153.8 L78.8,153.0 L81.8,152.2 L84.7,151.2 L87.6,150.1 L90.6,149.0 L93.5,147.7 L96.5,146.3 L99.4,144.8 L102.4,143.2 L105.3,141.5 L108.2,139.6 L111.2,137.6 L114.1,135.5 L117.1,133.2 L120.0,130.8 L122.9,128.2 L123.2,160 Z\" style=\"fill:var(--clay-soft);stroke:none\"/><path d=\"M316.8,160 L316.8,128.0 L319.7,130.5 L322.6,132.9 L325.6,135.2 L328.5,137.4 L331.5,139.4 L334.4,141.3 L337.4,143.0 L340.3,144.7 L343.2,146.2 L346.2,147.6 L349.1,148.9 L352.1,150.0 L355.0,151.1 L357.9,152.1 L360.9,153.0 L363.8,153.8 L366.8,154.5 L369.7,155.1 L372.6,155.7 L375.6,156.2 L378.5,156.7 L381.5,157.1 L384.4,157.5 L387.4,157.8 L390.3,158.1 L393.2,158.4 L396.2,158.6 L399.1,158.8 L402.1,159.0 L405.0,159.1 L407.9,159.2 L410.9,159.4 L413.8,159.5 L416.8,159.5 L419.7,159.6 L420.0,160 Z\" style=\"fill:var(--clay-soft);stroke:none\"/><path d=\"M20.0,159.6 L22.9,159.5 L25.9,159.5 L28.8,159.4 L31.8,159.3 L34.7,159.1 L37.6,159.0 L40.6,158.8 L43.5,158.6 L46.5,158.4 L49.4,158.1 L52.4,157.9 L55.3,157.5 L58.2,157.2 L61.2,156.8 L64.1,156.3 L67.1,155.8 L70.0,155.2 L72.9,154.6 L75.9,153.8 L78.8,153.0 L81.8,152.2 L84.7,151.2 L87.6,150.1 L90.6,149.0 L93.5,147.7 L96.5,146.3 L99.4,144.8 L102.4,143.2 L105.3,141.5 L108.2,139.6 L111.2,137.6 L114.1,135.5 L117.1,133.2 L120.0,130.8 L122.9,128.2 L125.9,125.5 L128.8,122.7 L131.8,119.7 L134.7,116.7 L137.6,113.5 L140.6,110.1 L143.5,106.7 L146.5,103.2 L149.4,99.6 L152.4,96.0 L155.3,92.3 L158.2,88.5 L161.2,84.8 L164.1,81.0 L167.1,77.3 L170.0,73.6 L172.9,70.0 L175.9,66.4 L178.8,62.9 L181.8,59.6 L184.7,56.4 L187.6,53.4 L190.6,50.6 L193.5,47.9 L196.5,45.5 L199.4,43.4 L202.4,41.5 L205.3,39.8 L208.2,38.5 L211.2,37.4 L214.1,36.6 L217.1,36.2 L220.0,36.0 L222.9,36.2 L225.9,36.6 L228.8,37.4 L231.8,38.5 L234.7,39.8 L237.6,41.5 L240.6,43.4 L243.5,45.5 L246.5,47.9 L249.4,50.6 L252.4,53.4 L255.3,56.4 L258.2,59.6 L261.2,62.9 L264.1,66.4 L267.1,70.0 L270.0,73.6 L272.9,77.3 L275.9,81.0 L278.8,84.8 L281.8,88.5 L284.7,92.3 L287.6,96.0 L290.6,99.6 L293.5,103.2 L296.5,106.7 L299.4,110.1 L302.4,113.5 L305.3,116.7 L308.2,119.7 L311.2,122.7 L314.1,125.5 L317.1,128.2 L320.0,130.8 L322.9,133.2 L325.9,135.5 L328.8,137.6 L331.8,139.6 L334.7,141.5 L337.6,143.2 L340.6,144.8 L343.5,146.3 L346.5,147.7 L349.4,149.0 L352.4,150.1 L355.3,151.2 L358.2,152.2 L361.2,153.0 L364.1,153.8 L367.1,154.6 L370.0,155.2 L372.9,155.8 L375.9,156.3 L378.8,156.8 L381.8,157.2 L384.7,157.5 L387.6,157.9 L390.6,158.1 L393.5,158.4 L396.5,158.6 L399.4,158.8 L402.4,159.0 L405.3,159.1 L408.2,159.3 L411.2,159.4 L414.1,159.5 L417.1,159.5 L420.0,159.6\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><path d=\"M14,160 L426,160\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M123.2,160 L123.2,165\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"123.2\" y=\"180\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">−1.645</text><path d=\"M220.0,160 L220.0,165\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"220.0\" y=\"180\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><path d=\"M316.8,160 L316.8,165\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"316.8\" y=\"180\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">+1.645</text><text x=\"220.0\" y=\"112\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:17px;font-weight:700\">0.90</text><text x=\"220.0\" y=\"131\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">1 − α</text><text x=\"58.2\" y=\"92\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">α/2 = 0.05</text><path d=\"M58.2,100 L96.5,138.3\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><text x=\"381.8\" y=\"92\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">α/2 = 0.05</text><path d=\"M381.8,100 L343.5,138.3\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><text x=\"220.0\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">table lookup: area 0.95 to the left of +1.645</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">α is split between the two tails, so a 90% interval is read at 0.95, not 0.90.</figcaption></figure><!--/viz:sfm-l22-alpha-tails--><!--viz:sfm-l22-interval-steps--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: choose the confidence level, find alpha and split it between the tails, look up 1 minus alpha over 2 to get z, compute the standard error, multiply for the margin of error, then add and subtract it from the sample mean.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Six steps to an interval for μ with σ known</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>1</b> confidence C</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>2</b> α = 1 − C, split α/2 per tail</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>3</b> look up 1 − α/2 → z<sub>α/2</sub></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>4</b> σ<sub>x̄</sub> = σ/√n (correct it if n/N &gt; 0.05)</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>5</b> margin = z<sub>α/2</sub> × σ<sub>x̄</sub></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>6</b> x̄ ± margin</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Steps 3 and 4 are where marks go: the lookup area is 1 − α/2, and the margin uses σ/√n, not σ.</figcaption></figure><!--/viz:sfm-l22-interval-steps-->"
+    },
+    {
+     "t": "Discount Sounds: 90%, 95% and 99% intervals",
+     "src": "L#22",
+     "h": "<p style=\"font-size:14.5px\"><strong>Discount Sounds</strong> has 260 retail outlets and is judging a site for a new one, partly on the mean annual income of people in the new marketing area. A sample of <strong>n = 36</strong> gives <strong>x̄ = $41,100</strong>. From earlier studies σ = <strong>$4,500</strong>, and the income population is not believed to be highly skewed. Build a 95% interval for μ.</p>\n<ol>\n<li>C = 0.95, so α = 0.05 and α/2 = 0.025. Table lookup at 0.975: z<sub>0.025</sub> = 1.960.</li>\n<li>The population of residents is effectively infinite, so σ<sub>x̄</sub> = 4,500/√36 = <strong>750</strong>.</li>\n<li>Margin of error = 1.960 × 750 = <strong>1,470</strong>.</li>\n<li>Interval: 41,100 ± 1,470, so <strong>$39,630 to $42,570</strong>. We are 95% confident it contains the mean income of the area.</li>\n</ol>\n<div class=\"scroller\"><table><thead><tr><th>Confidence</th><th>z value</th><th>Margin of error</th><th>Interval</th><th>Width</th></tr></thead><tbody>\n<tr><td>90%</td><td>1.645</td><td>1,234</td><td>39,866 to 42,334</td><td>2,468</td></tr>\n<tr><td>95%</td><td>1.960</td><td>1,470</td><td>39,630 to 42,570</td><td>2,940</td></tr>\n<tr><td>99%</td><td>2.576</td><td>1,932</td><td>39,168 to 43,032</td><td>3,864</td></tr>\n</tbody></table></div>\n<p style=\"font-size:14.5px\">Only z changes; x̄ and σ<sub>x̄</sub> stay the same. <strong>More confidence costs a wider interval.</strong> The lecturer's analogy: to be surer of reaching the railway station in time, you leave a bigger margin; if arriving on time 90% of the time is good enough, a smaller margin will do. Statistics puts a number on that trade-off. With the confidence level fixed, the only way to narrow the interval is a larger sample.</p>\n<h4>Is the sample big enough for this interval?</h4>\n<ul>\n<li><strong>n ≥ 30</strong> is adequate in most applications (central limit theorem).</li>\n<li><strong>Highly skewed</strong> population or outliers (incomes in a very unequal economy): take a larger sample, <strong>50 or more</strong>.</li>\n<li>Not normal but roughly <strong>symmetric</strong>: as few as about <strong>15</strong> can do.</li>\n<li>Believed to be approximately <strong>normal</strong>: even fewer than 15 is acceptable.</li>\n<li>With <strong>50 or more</strong>, the method can be used in practically any situation.</li>\n</ul>\n<p style=\"font-size:14.5px\">That is why the case states that incomes in the area are not highly skewed: with n = 36, the normal-based interval is then reasonable.</p><!--viz:sfm-l22-discount-sounds-intervals--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three horizontal intervals centred on a sample mean of 41,100 dollars: 90% from 39,866 to 42,334 (plus or minus 1,234), 95% from 39,630 to 42,570 (plus or minus 1,470), and 99% from 39,168 to 43,032 (plus or minus 1,932).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Discount Sounds: the price of more confidence</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 210\" role=\"img\" aria-label=\"Three interval estimates of mean annual income around the sample mean of 41,100 dollars: 90% from 39,866 to 42,334, 95% from 39,630 to 42,570, and 99% from 39,168 to 43,032. The higher the confidence, the longer the interval.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><text x=\"14\" y=\"57\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">90%</text><path d=\"M143.4,52 L336.6,52\" style=\"stroke:var(--ink-2);stroke-width:6;fill:none\"/><text x=\"143.4\" y=\"41\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">39,866</text><text x=\"336.6\" y=\"41\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">42,334</text><text x=\"288.3\" y=\"73\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">± 1,234</text><text x=\"14\" y=\"107\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">95%</text><path d=\"M125.0,102 L355.0,102\" style=\"stroke:var(--blue);stroke-width:6;fill:none\"/><text x=\"125.0\" y=\"91\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">39,630</text><text x=\"355.0\" y=\"91\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">42,570</text><text x=\"297.5\" y=\"123\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">± 1,470</text><text x=\"14\" y=\"157\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">99%</text><path d=\"M88.8,152 L391.2,152\" style=\"stroke:var(--ink-2);stroke-width:6;fill:none\"/><text x=\"88.8\" y=\"141\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">39,168</text><text x=\"391.2\" y=\"141\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">43,032</text><text x=\"315.6\" y=\"173\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">± 1,932</text><path d=\"M240.0,34 L240.0,168\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none;stroke-dasharray:4 3\"/><text x=\"240.0\" y=\"186\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">x̄ = 41,100</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Same sample, same standard error of 750: only z changes, and each step up in confidence stretches the interval.</figcaption></figure><!--/viz:sfm-l22-discount-sounds-intervals-->"
     }
    ]
   }
@@ -566,6 +611,10 @@ HUB.addCourse({
   {
    "name": "Applying distributions",
    "unit": "dists"
+  },
+  {
+   "name": "Interval estimation",
+   "unit": "estimation"
   }
  ],
  "traps": [
@@ -1532,6 +1581,69 @@ HUB.addCourse({
    "p": "The count is discrete, so ‘exactly 24’ becomes the strip 23.5 to 24.5 under the normal curve (≈ 0.0602 for n = 100, p = 0.20). The ‘single point = 0’ rule is for genuinely continuous variables.",
    "f": "exactly k → k ± 0.5",
    "lec": 14
+  },
+  {
+   "id": "sfm-t0142",
+   "h": "P(x̄ ≤ 75) is about a panel's mean, not the share of customers",
+   "p": "0.0786 is the chance that 50 random customers average 75 or less. Individual ratings spread with σ = 25, about seven times the standard error, so many more than 7.9% of single customers rate BlueGurt at or below 75.",
+   "f": "mean of 50, not one customer",
+   "lec": 21
+  },
+  {
+   "id": "sfm-t0143",
+   "h": "For a sample mean, divide by σ/√n, not by σ",
+   "p": "z = (75 − 80)/25 = −0.2 gives 0.42, the answer for one customer. For the mean of 50 use 25/√50 = 3.54: z = −1.41 and P = 0.0786.",
+   "f": "means use the standard error",
+   "lec": 21
+  },
+  {
+   "id": "sfm-t0144",
+   "h": "For a continuous variable, NORM.DIST(…, FALSE) is not a probability",
+   "p": "FALSE returns the height of the density curve at x. Areas, and so probabilities, need TRUE. As the lecturer put it, FALSE belongs with probability mass functions (discrete distributions such as BINOM.DIST), not continuous ones.",
+   "f": "areas need TRUE",
+   "lec": 21
+  },
+  {
+   "id": "sfm-t0145",
+   "h": "A larger sample shrinks the tails but enlarges the middle",
+   "p": "Going from 50 to 150 customers cuts P(x̄ ≤ 75) from 0.0786 to 0.0072 but lifts P(75 ≤ x̄ ≤ 85) from 0.8427 to 0.9857. Both happen because x̄ clusters closer to μ. Don't answer ‘probability goes up’ or ‘down’ without asking which region.",
+   "f": "tails shrink, middle grows",
+   "lec": 21
+  },
+  {
+   "id": "sfm-t0146",
+   "h": "For a 90% interval, look up 0.95 (= 1 − α/2), not 0.90",
+   "p": "α = 0.10 is split, 0.05 in each tail, so z has 0.95 of the area to its left: 1.645. Looking up 0.90 gives 1.282, which leaves the whole 10% in one tail.",
+   "f": "90% → look up 0.95",
+   "lec": 22
+  },
+  {
+   "id": "sfm-t0147",
+   "h": "The finite population correction is for n/N ABOVE 0.05",
+   "p": "In L#22 the rule came out reversed in speech, and the LMS summary repeats it. L#19's rule stands: σ/√n when n/N < 0.05 or the population is infinite; multiply by √[(N − n)/(N − 1)] when n/N > 0.05.",
+   "f": "large share of N → correct",
+   "lec": 22
+  },
+  {
+   "id": "sfm-t0148",
+   "h": "The margin of error multiplies the standard error, not σ",
+   "p": "Discount Sounds: 1.96 × 750 = 1,470. Using 1.96 × 4,500 = 8,820 gives an interval six times too wide, the width for one person's income rather than for a mean of 36.",
+   "f": "z × σ/√n",
+   "lec": 22
+  },
+  {
+   "id": "sfm-t0149",
+   "h": "The width of an interval is twice the margin of error",
+   "p": "Discount Sounds at 99%: margin ±1,932, so the width (upper minus lower limit) is 3,864. A question about the ‘width’ or ‘range’ wants the whole span.",
+   "f": "width = 2 × margin",
+   "lec": 22
+  },
+  {
+   "id": "sfm-t0150",
+   "h": "Four times the sample halves the margin; doubling does not",
+   "p": "The margin is proportional to 1/√n. Going from 50 to 200 stores halves it; doubling n only multiplies it by 1/√2 = 0.707, a cut of about 29%.",
+   "f": "4 × n, ½ margin",
+   "lec": 22
   }
  ],
  "defs": [
@@ -2445,6 +2557,78 @@ HUB.addCourse({
    "term": "Mean time between occurrences",
    "html": "<b>Mean time between occurrences</b> = 1/λ when a Poisson process averages λ occurrences per unit of time. It is the μ of the matching exponential distribution: 1.6 calls an hour gives a mean gap of 37.5 minutes.",
    "lec": 14
+  },
+  {
+   "id": "sfm-d0116",
+   "unit": "sampling",
+   "topic": "Case: Marion Dairies (BlueGurt and StrawGurt)",
+   "term": "Cannibalisation",
+   "html": "<b>Cannibalisation</b>: a new product's sales come mainly from the firm's own existing product rather than from new customers, so total market share does not grow.",
+   "lec": 21
+  },
+  {
+   "id": "sfm-d0117",
+   "unit": "sampling",
+   "topic": "Case: Marion Dairies (BlueGurt and StrawGurt)",
+   "term": "Product-line extension",
+   "html": "<b>Product-line extension</b>: adding a new variant (such as a second flavour) to an existing product line, ideally to reach customers the first variant does not.",
+   "lec": 21
+  },
+  {
+   "id": "sfm-d0118",
+   "unit": "sampling",
+   "topic": "The Marion Dairies sheet in Excel",
+   "term": "What-if analysis (spreadsheet)",
+   "html": "<b>What-if analysis</b>: changing one input cell (n, a limit, σ) in a sheet built from cell references and watching every dependent result update.",
+   "lec": 21
+  },
+  {
+   "id": "sfm-d0119",
+   "unit": "sampling",
+   "topic": "The Marion Dairies sheet in Excel",
+   "term": "Probability that x̄ falls in a range (Excel)",
+   "html": "<b>P(a ≤ x̄ ≤ b)</b> = NORM.DIST(b, μ, σ/√n, TRUE) − NORM.DIST(a, μ, σ/√n, TRUE): the larger cumulative area minus the smaller.",
+   "lec": 21
+  },
+  {
+   "id": "sfm-d0120",
+   "unit": "estimation",
+   "topic": "Why interval estimation: Sahyadri Retail Mart",
+   "term": "Funnel of inference",
+   "html": "<b>Funnel of inference</b>: the path from a whole population (1,000 stores) to a random sample (50), to a sample statistic, to an estimate of the population parameter.",
+   "lec": 22
+  },
+  {
+   "id": "sfm-d0121",
+   "unit": "estimation",
+   "topic": "Margin of error and the interval for μ (σ known)",
+   "term": "Interval estimate of μ (σ known)",
+   "html": "<b>Interval estimate of μ, σ known</b>: x̄ ± zα/2 × σ/√n. The part after ± is the margin of error.",
+   "lec": 22
+  },
+  {
+   "id": "sfm-d0122",
+   "unit": "estimation",
+   "topic": "Margin of error and the interval for μ (σ known)",
+   "term": "Alpha (α) in an interval estimate",
+   "html": "<b>α</b>: the probability that the interval method misses μ; the confidence level is 1 − α. It is split equally, α/2 in each tail.",
+   "lec": 22
+  },
+  {
+   "id": "sfm-d0123",
+   "unit": "estimation",
+   "topic": "Margin of error and the interval for μ (σ known)",
+   "term": "zα/2",
+   "html": "<b>zα/2</b>: the standard normal value with area α/2 to its right (cumulative area 1 − α/2): 1.645 for 90%, 1.960 for 95%, 2.576 for 99%.",
+   "lec": 22
+  },
+  {
+   "id": "sfm-d0124",
+   "unit": "estimation",
+   "topic": "Margin of error and the interval for μ (σ known)",
+   "term": "Confidence coefficient",
+   "html": "<b>Confidence coefficient</b>: the confidence level written as a decimal, such as 0.90 for a 90% interval.",
+   "lec": 22
   }
  ],
  "questions": [
@@ -9690,6 +9874,567 @@ HUB.addCourse({
    "w": "The normal approximation exists to save hand work; a computer does the exact sum quickly, so it reports the exact answer. The tempting ‘accuracy changes with n’ option is backwards: the binomial formula is exact at every n, and the normal approximation actually gets better as n grows. There is no ‘n below 30’ rule for it.",
    "lec": 14,
    "lv": "recall"
+  },
+  {
+   "id": "sfm-q0437",
+   "topic": "Sampling distributions",
+   "q": "Marion Dairies: BlueGurt ratings have μ = 80 and σ = 25. What is the standard error of the mean rating for random samples of 50 customers?",
+   "c": [
+    "0.50",
+    "3.54",
+    "25",
+    "0.71"
+   ],
+   "a": [
+    1
+   ],
+   "w": "σx̄ = σ/√n = 25/√50 = 3.54. 0.50 divides σ by n instead of √n, 0.71 is √(25/50), and 25 is the spread of individual ratings, not of sample means.",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0438",
+   "topic": "Sampling distributions",
+   "q": "For a random sample of 50 Marion Dairies customers (μ = 80, σ = 25), what is the probability that the sample's mean BlueGurt rating is 75 or less?",
+   "c": [
+    "0.4207",
+    "0.9214",
+    "0.0786",
+    "0.0072"
+   ],
+   "a": [
+    2
+   ],
+   "w": "z = (75 − 80)/(25/√50) = −1.414, and P(Z ≤ −1.414) = 0.0786. 0.4207 comes from dividing by σ = 25 (z = −0.2), which treats one customer rather than the mean of 50; 0.9214 is the complement P(x̄ > 75); 0.0072 is the answer for n = 150.",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0439",
+   "topic": "Sampling distributions",
+   "q": "Marion Dairies' marketing department enlarges the panel to 150 customers (μ = 80, σ = 25). What is P(x̄ ≤ 75) now?",
+   "c": [
+    "About 0.007",
+    "About 0.079",
+    "About 0.026",
+    "About 0.023"
+   ],
+   "a": [
+    0
+   ],
+   "w": "σx̄ = 25/√150 = 2.041, z = −5/2.041 = −2.45, P = 0.0072. 0.026 divides the n = 50 answer by 3, but probabilities do not scale with n; 0.023 is the answer for n = 100 (z = −2).",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0440",
+   "topic": "Sampling distributions",
+   "q": "Why does P(x̄ ≤ 75) fall from 0.0786 to 0.0072 when the Marion Dairies panel grows from 50 to 150 customers?",
+   "c": [
+    "A larger sample lowers the population mean rating",
+    "The standard error shrinks, so sample means cluster more tightly around 80 and 75 lies further out in standard-error units",
+    "A larger sample makes individual ratings less variable",
+    "The finite population correction applies once n exceeds 100"
+   ],
+   "a": [
+    1
+   ],
+   "w": "σx̄ falls from 3.54 to 2.04, so 75 moves from 1.41 to 2.45 standard errors below μ. μ and σ are properties of the population and do not change with n.",
+   "lec": 21,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0441",
+   "topic": "Sampling distributions",
+   "q": "For Marion Dairies, P(x̄ ≤ 75) = 0.0786 with n = 50. What does 0.0786 describe?",
+   "c": [
+    "The share of all customers who rate BlueGurt 75 or less",
+    "The probability that StrawGurt will succeed",
+    "The probability that one customer picked at random rates BlueGurt exactly 75",
+    "The probability that a random panel of 50 customers produces a mean rating of 75 or less"
+   ],
+   "a": [
+    3
+   ],
+   "w": "It is a statement about the sampling distribution of x̄, the panel's average. The share of individual customers at or below 75 is far larger, because single ratings spread with σ = 25, not 3.54. A single exact value of a continuous variable has probability zero.",
+   "lec": 21,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0442",
+   "topic": "Sampling distributions",
+   "q": "In the Marion Dairies case, what are senior managers worried about when the marketing department proposes StrawGurt?",
+   "c": [
+    "Cannibalisation: StrawGurt sales coming mainly from customers who would otherwise buy BlueGurt",
+    "Sampling error in the taste test",
+    "Having to apply a finite population correction",
+    "Customers rating StrawGurt above 75"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The aim is to grow total market share by reaching customers who do not like BlueGurt. If StrawGurt simply takes BlueGurt's buyers, the firm cannibalises its own sales.",
+   "lec": 21,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0443",
+   "topic": "Sampling distributions",
+   "q": "Why does the lecture type μ, σ, n and x once in their own cells and build every formula from cell references?",
+   "c": [
+    "Excel cannot calculate with typed numbers",
+    "NORM.DIST accepts only cell references",
+    "Changing one input, such as n from 50 to 150, then updates every result automatically",
+    "It removes the need for brackets in formulas"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A sheet built from references is dynamic: one edit to n re-computes the standard error, z and the probability. Hard-typed numbers would have to be changed cell by cell.",
+   "lec": 21,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0444",
+   "topic": "Sampling distributions",
+   "q": "With μ = 80, σ = 25 and n = 50, which Excel formula returns P(x̄ ≤ 75)?",
+   "c": [
+    "=NORM.DIST(75, 80, 25, TRUE)",
+    "=NORM.DIST(75, 80, 25/SQRT(50), FALSE)",
+    "=1 - NORM.DIST(75, 80, 25/SQRT(50), TRUE)",
+    "=NORM.DIST(75, 80, 25/SQRT(50), TRUE)"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The standard deviation argument must be the standard error 25/√50, and TRUE gives the cumulative area (0.0786). Using 25 answers for one customer, FALSE returns a curve height, and 1 − … gives P(x̄ > 75).",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0445",
+   "topic": "Sampling distributions",
+   "q": "In the sheet, x1 is in B4 and x2 in B5 directly below it; μ is in B1 and the standard error in B6. The z formula for x1 is =(B4-B1)/B6. How should it be written before dragging it down to get z for x2?",
+   "c": [
+    "=(B4-$B$1)/$B$6",
+    "=($B$4-$B$1)/$B$6",
+    "=(B4-B1)/B6, unchanged",
+    "=($B$4-B1)/B6"
+   ],
+   "a": [
+    0
+   ],
+   "w": "μ and the standard error are the same for both rows, so lock them with $ (F4) and let the x reference move from B4 to B5. Unlocked, B1 and B6 would slide to B2 and B7; locking B4 would compute z1 again.",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0446",
+   "topic": "Sampling distributions",
+   "q": "Marion Dairies, n = 50 (μ = 80, σ = 25): what is P(75 ≤ x̄ ≤ 85)?",
+   "c": [
+    "0.1573",
+    "0.8427",
+    "0.9214",
+    "0.4214"
+   ],
+   "a": [
+    1
+   ],
+   "w": "z = ±5/3.5355 = ±1.414, so P = 0.9214 − 0.0786 = 0.8427. 0.1573 is the two tails outside the range, 0.9214 is P(x̄ ≥ 75) alone, and 0.4214 covers only 75 to 80.",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0447",
+   "topic": "Sampling distributions",
+   "q": "Keeping the range 75 to 85 (μ = 80, σ = 25), the panel is doubled from 50 to 100 customers. What is P(75 ≤ x̄ ≤ 85) now?",
+   "c": [
+    "0.8427",
+    "0.6827",
+    "0.9545",
+    "0.9973"
+   ],
+   "a": [
+    2
+   ],
+   "w": "σx̄ = 25/√100 = 2.5, so z = ±2 and P = 0.9545. 0.8427 is the old n = 50 answer; 0.6827 and 0.9973 are the areas within ±1 and ±3 standard errors.",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0448",
+   "topic": "Sampling distributions",
+   "q": "The panel is stuck at 50 customers (μ = 80, σ = 25). Which change to the range raises the probability that x̄ falls inside it, compared with 75 to 85?",
+   "c": [
+    "Moving the upper limit from 85 down to 80",
+    "Moving the lower limit from 75 up to 78",
+    "Moving the lower limit from 75 down to 70",
+    "Shifting both limits up by 5, to 80 and 90"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Widening the range adds area: 70 to 85 gives 0.9190 against 0.8427. Moving a limit towards μ narrows it (75 to 80 gives 0.4214), and shifting the range off-centre to 80–90 drops it to about 0.498.",
+   "lec": 21,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0449",
+   "topic": "Sampling distributions",
+   "q": "Marion Dairies, n = 50 (μ = 80, σ = 25): what is P(75 ≤ x̄ ≤ 80)?",
+   "c": [
+    "0.4214",
+    "0.5000",
+    "0.0786",
+    "0.8427"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Half the curve lies below μ = 80, and 0.0786 of it lies below 75, so P = 0.5 − 0.0786 = 0.4214. 0.5 forgets to remove the tail; 0.8427 is the symmetric range 75 to 85.",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0450",
+   "topic": "Sampling distributions",
+   "q": "Marion Dairies' ratings are capped at 100, and a normal curve with mean 80 and σ = 25 would put about 21% of ratings above 100, so individual ratings are not normal. Why can the normal still be used for x̄?",
+   "c": [
+    "Ratings are whole numbers, so the normal is exact",
+    "n = 50 is at least 30, so by the central limit theorem x̄ is approximately normal whatever the shape of the ratings",
+    "Because σ is known",
+    "Because P(x̄ ≤ 75) is small"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The CLT concerns the distribution of the sample mean: with n ≥ 30 it is close to normal even for a skewed or bounded population. Knowing σ fixes the standard error but does not make anything normal.",
+   "lec": 21,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0451",
+   "topic": "Sampling distributions",
+   "q": "A café chain's satisfaction scores have μ = 72 and σ = 18. For a random sample of 36 customers, what is P(x̄ ≤ 69)?",
+   "c": [
+    "0.4338",
+    "0.8413",
+    "0.3413",
+    "0.1587"
+   ],
+   "a": [
+    3
+   ],
+   "w": "σx̄ = 18/√36 = 3, z = (69 − 72)/3 = −1, and P(Z ≤ −1) = 0.1587. 0.4338 divides by σ = 18 instead of the standard error; 0.8413 is the complement; 0.3413 is the area between 0 and z, not the cumulative area.",
+   "lec": 21,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0452",
+   "topic": "Interval estimation",
+   "q": "Sahyadri Retail Mart samples 50 of its 1,000 stores instead of auditing every one. Roughly what share of the full-census cost does the lecture put on this?",
+   "c": [
+    "50%",
+    "20%",
+    "5%",
+    "0.5%"
+   ],
+   "a": [
+    2
+   ],
+   "w": "50 of 1,000 stores is 5% of the work, so roughly 5% of the travel and audit cost, before counting the time saved and the disruption avoided. 0.5% would be 5 stores.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0453",
+   "topic": "Interval estimation",
+   "q": "A random sample of stores gives a year-on-year cost index of 1.015 for personal-care stock. What does this point estimate say?",
+   "c": [
+    "Costs rose by about 1.5% year on year",
+    "Costs rose by about 15%",
+    "Costs rose by 1.015%",
+    "Costs fell by about 1.5%"
+   ],
+   "a": [
+    0
+   ],
+   "w": "An index of 1.015 means this year's cost is 1.015 times last year's, a 1.5% rise. Reading it as a 1.015% rise, as the LMS summary does, confuses the index with the percentage change.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0454",
+   "topic": "Interval estimation",
+   "q": "Sahyadri's 95% interval for the cost index runs from 1.009 to 1.021. What are the point estimate and the margin of error?",
+   "c": [
+    "1.009 and 0.012",
+    "1.021 and 0.006",
+    "1.015 and 0.012",
+    "1.015 and 0.006"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The point estimate is the midpoint, (1.009 + 1.021)/2 = 1.015, and the margin is half the width, 0.012/2 = 0.006. 0.012 is the full width.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0455",
+   "topic": "Interval estimation",
+   "q": "What does interval estimation do that the chapter 7 probability questions did not?",
+   "c": [
+    "It finds the probability that x̄ falls between two given limits",
+    "It fixes a probability, such as 95%, and finds the range around the estimate that carries it",
+    "It replaces the standard error with σ",
+    "It works only when a census is available"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Chapter 7 gave a range and asked for its probability. Interval estimation reverses this: fix the probability, find the range. The formulas (x̄, σ/√n, z) are the same.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0456",
+   "topic": "Interval estimation",
+   "q": "Why does the margin of error become zero when the ‘sample’ is the entire population?",
+   "c": [
+    "Because zα/2 becomes zero",
+    "Because σ becomes zero",
+    "Because α becomes 1",
+    "Because the finite population correction √[(N − n)/(N − 1)] is zero when n = N, so the standard error is zero"
+   ],
+   "a": [
+    3
+   ],
+   "w": "With n = N every possible sample is the population itself, so x̄ = μ and there is no sampling error. The confidence level, and so z, does not change; σ is a property of the population and stays the same.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0457",
+   "topic": "Interval estimation",
+   "q": "According to the lecture, when can the population standard deviation σ reasonably be treated as known before sampling?",
+   "c": [
+    "Whenever the sample has at least 30 items",
+    "Never; σ always has to come from the sample",
+    "When good historical data or a machine's specifications pin it down",
+    "Whenever the sample mean is known"
+   ],
+   "a": [
+    2
+   ],
+   "w": "σ is rarely known exactly, but last year's figure (if little has changed) or manufacturing tolerances often give a good value. Without one, the sample standard deviation s is used, which is the next part of the chapter.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0458",
+   "topic": "Interval estimation",
+   "q": "A sample of 80 is drawn from 1,000 customer accounts, and σ is known. How should σx̄ be computed for the interval estimate?",
+   "c": [
+    "σ/√n, because n is at least 30",
+    "σ/√n × √[(N − n)/(N − 1)], because n/N = 0.08 is above 0.05",
+    "σ/n, because the population is finite",
+    "σ × √[(N − n)/(N − 1)], without dividing by √n"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The sample is 8% of the population, above the 5% cut-off from L#19, so the finite population correction is applied. n ≥ 30 is the rule for normality of x̄, not for the correction. (The spoken rule in L#22 came out reversed; L#19's is correct.)",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0459",
+   "topic": "Interval estimation",
+   "q": "For a 98% confidence interval with σ known, what are α/2 and zα/2?",
+   "c": [
+    "α/2 = 0.02 and z = 2.054",
+    "α/2 = 0.01 and z = 2.576",
+    "α/2 = 0.02 and z = 1.960",
+    "α/2 = 0.01 and z = 2.326"
+   ],
+   "a": [
+    3
+   ],
+   "w": "α = 0.02, so α/2 = 0.01 and the lookup area is 0.99, giving z = 2.326. 2.054 uses the whole α in one tail (cumulative 0.98); 2.576 is the 99% value.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0460",
+   "topic": "Interval estimation",
+   "q": "To find zα/2 for a 90% confidence interval from a cumulative standard normal table, which area do you look up?",
+   "c": [
+    "0.90",
+    "0.10",
+    "0.95",
+    "0.80"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The 10% error is split, 0.05 in each tail, so zα/2 has 0.95 of the area to its left: z = 1.645. Looking up 0.90 gives 1.282, which puts all 10% in one tail.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0461",
+   "topic": "Interval estimation",
+   "q": "Discount Sounds: n = 36, x̄ = $41,100 and σ = $4,500. What is the margin of error at 95% confidence?",
+   "c": [
+    "$750",
+    "$1,470",
+    "$8,820",
+    "$1,234"
+   ],
+   "a": [
+    1
+   ],
+   "w": "σx̄ = 4,500/√36 = 750, and 1.960 × 750 = 1,470. $8,820 multiplies z by σ instead of the standard error; $750 is the standard error alone; $1,234 is the 90% margin.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0462",
+   "topic": "Interval estimation",
+   "q": "With the same Discount Sounds data (n = 36, x̄ = $41,100, σ = $4,500), what is the 90% confidence interval for the mean annual income?",
+   "c": [
+    "$39,866 to $42,334",
+    "$39,630 to $42,570",
+    "$40,350 to $41,850",
+    "$39,168 to $43,032"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Margin = 1.645 × 750 = 1,234, so 41,100 ± 1,234. $39,630 to $42,570 is the 95% interval and $39,168 to $43,032 the 99% one; $40,350 to $41,850 adds only one standard error.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0463",
+   "topic": "Interval estimation",
+   "q": "How wide (upper limit minus lower limit) is the 99% Discount Sounds interval (n = 36, σ = $4,500)?",
+   "c": [
+    "$1,932",
+    "$2,940",
+    "$4,500",
+    "$3,864"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Margin = 2.576 × 750 = 1,932, and the width is twice that: 3,864. $1,932 is only the margin; $2,940 is the 95% width.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0464",
+   "topic": "Interval estimation",
+   "q": "With α = 0.10, which statement says the same as ‘there is a 1 − α probability that x̄ will provide a margin of error of zα/2·σx̄ or less’?",
+   "c": [
+    "P(x̄ ≤ μ + 1.645σx̄) = 0.90",
+    "P(|x̄ − μ| ≤ 1.645σ) = 0.90",
+    "P(|x̄ − μ| ≤ 1.645σx̄) = 0.90",
+    "P(|x̄ − μ| ≤ 1.282σx̄) = 0.90"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The margin is two-sided: x̄ lies within 1.645 standard errors of μ with probability 0.90. The one-sided P(x̄ ≤ μ + 1.645σx̄) is 0.95; 1.282 is the one-tailed 90% value; σ in place of σx̄ describes single values, not means.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0465",
+   "topic": "Interval estimation",
+   "q": "A manager wants a narrower interval for mean income without dropping below 95% confidence. What must change?",
+   "c": [
+    "Use z = 1.645 instead of 1.960",
+    "Report only the point estimate",
+    "Use σ in place of σ/√n",
+    "Take a larger sample"
+   ],
+   "a": [
+    3
+   ],
+   "w": "At a fixed confidence level z is fixed, so only σ/√n can shrink, and that needs a larger n. Using 1.645 quietly lowers the confidence to 90%.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0466",
+   "topic": "Interval estimation",
+   "q": "Sahyadri moves from 50 to 200 sampled stores, with σ and the confidence level unchanged. What happens to the margin of error?",
+   "c": [
+    "It halves",
+    "It falls to a quarter",
+    "It falls by about 29%",
+    "It stays the same; only the confidence level affects it"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The margin is proportional to 1/√n, and √(200/50) = 2, so it halves. A quarter would need 16 times the sample; a 29% cut is what doubling n gives.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0467",
+   "topic": "Interval estimation",
+   "q": "According to the lecture, a fairly small sample of about 15 can be enough for this interval when the population is:",
+   "c": [
+    "Highly skewed, like incomes in a very unequal economy",
+    "Full of outliers",
+    "Not normal but roughly symmetric",
+    "Of completely unknown shape"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Symmetric populations need only small samples (and approximately normal ones even fewer). Highly skewed populations or outliers call for 50 or more; 50 or more works in practically any situation.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0468",
+   "topic": "Interval estimation",
+   "q": "Why is α split into two equal halves, one in each tail, for an interval estimate?",
+   "c": [
+    "The estimate can miss μ on either side, and the normal sampling distribution is symmetric",
+    "Tables list only half of the curve",
+    "Because the sample size is even",
+    "Because α is always 0.05"
+   ],
+   "a": [
+    0
+   ],
+   "w": "x̄ can fall above or below μ, and with a symmetric (normal) sampling distribution both errors are equally likely, so each tail gets α/2.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0469",
+   "topic": "Interval estimation",
+   "q": "From a population of 500 invoices, a random sample of 100 gives x̄ = ₹1,200, and σ = ₹150 is known. What is the 95% confidence interval for μ?",
+   "c": [
+    "₹1,170.6 to ₹1,229.4",
+    "₹1,173.7 to ₹1,226.3",
+    "₹1,186.6 to ₹1,213.4",
+    "₹906 to ₹1,494"
+   ],
+   "a": [
+    1
+   ],
+   "w": "n/N = 0.20 > 0.05, so σx̄ = (150/√100) × √(400/499) = 15 × 0.8953 = 13.43. Margin = 1.96 × 13.43 = 26.3, so ₹1,173.7 to ₹1,226.3. ₹1,170.6 to ₹1,229.4 skips the correction; ₹1,186.6 to ₹1,213.4 adds one standard error only; ₹906 to ₹1,494 uses σ.",
+   "lec": 22,
+   "lv": "apply"
   }
  ],
  "briefs": {
@@ -9697,7 +10442,7 @@ HUB.addCourse({
    "scopeShort": "Topics 1–7",
    "tag": "from the official LMS announcement",
    "lede": "Figures below are from the official Quiz 1 announcement. The scope, however, is the one genuine disagreement across your six courses — read the syllabus box carefully.",
-   "html": "\n    <div class=\"grid2\">\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Confirmed on the official announcement</h4>\n        <div class=\"scroller\"><table><tbody>\n          <tr><td><strong>Date</strong></td><td>Sunday 4 October</td></tr>\n          <tr><td><strong>Window</strong></td><td>12:15–12:35 PM IST · join from <strong>12:00 PM</strong></td></tr>\n          <tr><td><strong>Questions</strong></td><td><strong>40</strong>, for <strong>40 marks</strong></td></tr>\n          <tr><td><strong>Type</strong></td><td>MCQ — he said &ldquo;objective only, no subjective questions&rdquo;</td></tr>\n          <tr><td><strong>Weight</strong></td><td>20% · best 2 of 3 · 40% of the course total</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--bad);background:var(--bad-soft)\">\n          <b>Negative marking.</b> +1 correct, <strong>−0.25 for a wrong answer</strong>, 0 if left blank.\n        </div>\n        <div class=\"warnbox\" style=\"margin-top:10px;border-left-color:var(--good);background:var(--good-soft)\">\n          <b>A calculator is allowed.</b> He confirmed this in Live Lecture 3. It is the only one of your six papers where he said so — bring one.\n        </div>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Scope — the two sources disagree</h4>\n        <p style=\"font-size:14.5px\">This is the one course where the official document and the lecturer do not line up, and the gap is large.</p>\n        <div class=\"scroller\" style=\"margin-top:9px\"><table><thead><tr><th>Source</th><th>Says the scope is</th></tr></thead><tbody>\n          <tr><td><strong>Official syllabus document</strong><br><span style=\"color:var(--ink-3);font-size:13px\">attached to the announcement</span></td><td><strong>Topics 1–7 only:</strong> Data and Statistics 1–2, Descriptive Statistics 1–3, Introduction to Probability 1–2. It stops there.</td></tr>\n          <tr><td><strong>Dr. Srivastav, Live Lecture 3</strong></td><td>&ldquo;<strong>till chapter 6</strong> or continuous probability distribution&rdquo; — which would add discrete and continuous distributions.</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px\">\n          <b>How this sheet handles it.</b> Topics 1–7 are covered in full — treat them as certain. The distributions section is included and <strong>labelled &ldquo;NOT on the official list&rdquo;</strong>. If you are short of time, do topics 1–7 properly first, then skim distributions for the headline formulas.\n        </div>\n      </div>\n    </div>\n\n    <div class=\"card\" style=\"margin-top:14px;border-left:3px solid var(--clay)\">\n      <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">30 seconds a question, with formulas to recall</h4>\n      <p style=\"font-size:14.5px;color:var(--ink-2)\">40 questions in 20 minutes. This is the most formula-dense of your six papers, so recall speed matters more than calculation speed — even with a calculator.</p>\n      <div class=\"scroller\" style=\"margin-top:11px\"><table><thead><tr><th>Situation</th><th>Expected value</th><th>Do</th></tr></thead><tbody>\n        <tr><td>You know it</td><td><strong>+1.00</strong></td><td>Answer</td></tr>\n        <tr><td>Rule out two of four</td><td><strong>+0.38</strong></td><td>Answer</td></tr>\n        <tr><td>Rule out one of four</td><td><strong>+0.17</strong></td><td>Answer</td></tr>\n        <tr><td>Blind guess</td><td><strong>+0.06</strong></td><td>Answer, but it gains almost nothing</td></tr>\n      </tbody></table></div>\n      <ul style=\"margin:11px 0 0;padding-left:19px;font-size:14.5px;line-height:1.7\">\n        <li><strong>The formulas are the paper.</strong> IQR, sample variance with n−1, CV, z, Chebyshev's 1−1/z&sup2;, the addition law, conditional probability, Bayes. Know them cold.</li>\n        <li><strong>Watch the two outlier rules.</strong> |z| &gt; 3 and Q1 − 1.5·IQR. Swapping the 3 and the 1.5 is the single easiest mark to drop.</li>\n        <li><strong>Scales of measurement come up constantly.</strong> Roll numbers are nominal; Celsius is interval.</li>\n      </ul>\n    </div>",
+   "html": "\n    <div class=\"grid2\">\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Confirmed on the official announcement</h4>\n        <div class=\"scroller\"><table><tbody>\n          <tr><td><strong>Date</strong></td><td>Sunday 4 October</td></tr>\n          <tr><td><strong>Window</strong></td><td>12:15–12:35 PM IST · join from <strong>12:00 PM</strong></td></tr>\n          <tr><td><strong>Questions</strong></td><td><strong>40</strong>, for <strong>40 marks</strong></td></tr>\n          <tr><td><strong>Type</strong></td><td>MCQ — he said &ldquo;objective only, no subjective questions&rdquo;</td></tr>\n          <tr><td><strong>Weight</strong></td><td>30% of the course: the higher of your two quiz scores counts (rule from 14 Oct; at Quiz 1 it was 20%, best 2 of 3)</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--bad);background:var(--bad-soft)\">\n          <b>Negative marking.</b> +1 correct, <strong>−0.25 for a wrong answer</strong>, 0 if left blank.\n        </div>\n        <div class=\"warnbox\" style=\"margin-top:10px;border-left-color:var(--good);background:var(--good-soft)\">\n          <b>A calculator is allowed.</b> He confirmed this in Live Lecture 3. It is the only one of your six papers where he said so — bring one.\n        </div>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Scope — the two sources disagree</h4>\n        <p style=\"font-size:14.5px\">This is the one course where the official document and the lecturer do not line up, and the gap is large.</p>\n        <div class=\"scroller\" style=\"margin-top:9px\"><table><thead><tr><th>Source</th><th>Says the scope is</th></tr></thead><tbody>\n          <tr><td><strong>Official syllabus document</strong><br><span style=\"color:var(--ink-3);font-size:13px\">attached to the announcement</span></td><td><strong>Topics 1–7 only:</strong> Data and Statistics 1–2, Descriptive Statistics 1–3, Introduction to Probability 1–2. It stops there.</td></tr>\n          <tr><td><strong>Dr. Srivastav, Live Lecture 3</strong></td><td>&ldquo;<strong>till chapter 6</strong> or continuous probability distribution&rdquo; — which would add discrete and continuous distributions.</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px\">\n          <b>How this sheet handles it.</b> Topics 1–7 are covered in full — treat them as certain. The distributions section is included and <strong>labelled &ldquo;NOT on the official list&rdquo;</strong>. If you are short of time, do topics 1–7 properly first, then skim distributions for the headline formulas.\n        </div>\n      </div>\n    </div>\n\n    <div class=\"card\" style=\"margin-top:14px;border-left:3px solid var(--clay)\">\n      <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">30 seconds a question, with formulas to recall</h4>\n      <p style=\"font-size:14.5px;color:var(--ink-2)\">40 questions in 20 minutes. This is the most formula-dense of your six papers, so recall speed matters more than calculation speed — even with a calculator.</p>\n      <div class=\"scroller\" style=\"margin-top:11px\"><table><thead><tr><th>Situation</th><th>Expected value</th><th>Do</th></tr></thead><tbody>\n        <tr><td>You know it</td><td><strong>+1.00</strong></td><td>Answer</td></tr>\n        <tr><td>Rule out two of four</td><td><strong>+0.38</strong></td><td>Answer</td></tr>\n        <tr><td>Rule out one of four</td><td><strong>+0.17</strong></td><td>Answer</td></tr>\n        <tr><td>Blind guess</td><td><strong>+0.06</strong></td><td>Answer, but it gains almost nothing</td></tr>\n      </tbody></table></div>\n      <ul style=\"margin:11px 0 0;padding-left:19px;font-size:14.5px;line-height:1.7\">\n        <li><strong>The formulas are the paper.</strong> IQR, sample variance with n−1, CV, z, Chebyshev's 1−1/z&sup2;, the addition law, conditional probability, Bayes. Know them cold.</li>\n        <li><strong>Watch the two outlier rules.</strong> |z| &gt; 3 and Q1 − 1.5·IQR. Swapping the 3 and the 1.5 is the single easiest mark to drop.</li>\n        <li><strong>Scales of measurement come up constantly.</strong> Roll numbers are nominal; Celsius is interval.</li>\n      </ul>\n    </div>",
    "mapLede": "Thirteen lectures from Dr. Deepak Srivastav. Topics 1–7 are the official scope; lectures #10–#12 are the disputed tail.",
    "syllabusNote": "",
    "drillLede": "Questions written from the lectures and transcripts. There is no official practice set. Questions tagged <em>Distributions</em> cover the disputed material — filter them out if you want to drill only the certain scope.",
@@ -9762,6 +10507,8 @@ HUB.addCourse({
   "lec-06s",
   "lec-09s",
   "lec-11s",
-  "lec-14s"
+  "lec-14s",
+  "lec-21",
+  "lec-22"
  ]
 });

@@ -133,6 +133,18 @@ HUB.addCourse({
    "Week 8 — Python: Dictionaries Part 1",
    "Key-value pairs: access, add, modify, delete",
    "rec"
+  ],
+  [
+   22,
+   "Week 9 — Python: Dictionaries Part 2",
+   "Looping: items(), keys(), sorted(), values(), set()",
+   "rec"
+  ],
+  [
+   23,
+   "Week 9 — Python: Dictionaries Part 3",
+   "Nesting: dictionaries in lists, lists, dictionaries",
+   "rec"
   ]
  ],
  "units": [
@@ -441,8 +453,8 @@ HUB.addCourse({
   {
    "id": "dicts",
    "title": "Dictionaries &amp; nesting",
-   "tag": "Lecture 21",
-   "lede": "Key-value pairs: the structure for connecting pieces of information. Part 1 covers creating, reading, adding, changing and deleting pairs.",
+   "tag": "Lectures 21–23",
+   "lede": "Key-value pairs: the structure for connecting pieces of information. Part 1 creates, reads, changes and deletes pairs; part 2 loops through them; part 3 nests dictionaries and lists inside each other.",
    "topics": [
     {
      "t": "Working with dictionaries",
@@ -453,6 +465,31 @@ HUB.addCourse({
      "t": "A dictionary of similar objects",
      "src": "L#21",
      "h": "\n<p style=\"font-size:14.5px\">The alien dictionary holds many kinds of information about <em>one</em> object. A dictionary can also hold <em>one</em> kind of information about <em>many</em> objects, such as the results of a poll:</p>\n<pre>favorite_languages = {\n    'jen': 'python',\n    'sarah': 'c',\n    'edward': 'ruby',\n    'phil': 'python',\n    }\nprint(\"Sarah's favorite language is \" +\n    favorite_languages['sarah'].title() +\n    \".\")\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Sarah's favorite language is C.</span></pre>\n<ul>\n<li>A long dictionary can be split over lines: open the brace, press Enter, put one pair per line with a comma after each, close the brace on its own line.</li>\n<li>A long <code>print</code> can be split after a <code>+</code> too. Python keeps reading until the opening parenthesis is matched by its closing one, the same way it reads to the closing brace of a dictionary.</li>\n<li>Keys must be different from each other; values can repeat (jen and phil both chose python).</li>\n</ul>\n<div class=\"card\"><b>Practice set from the lecture.</b> (1) <b>Person:</b> store first_name, last_name, age and city for someone you know and print each. (2) <b>Favourite numbers:</b> five names as keys, a favourite number for each; he suggested polling real friends, which makes it <em>primary data</em> (L5). (3) <b>Glossary:</b> five programming words you have learnt (append, insert…) as keys and their meanings as values; print each word and meaning neatly, using <code>\\n</code> for a blank line between entries.</div>\n<pre>glossary = {\n    'append': 'adds an item to the end of a list',\n    'insert': 'adds an item at a chosen position in a list',\n    }\nprint(\"append:\\n\\t\" + glossary['append'] + \"\\n\")\nprint(\"insert:\\n\\t\" + glossary['insert'])\n<span class=\"c\"># prints:</span>\n<span class=\"o\">append:</span>\n<span class=\"o\">\tadds an item to the end of a list</span>\n<span class=\"o\"></span>\n<span class=\"o\">insert:</span>\n<span class=\"o\">\tadds an item at a chosen position in a list</span></pre>\n"
+    },
+    {
+     "t": "Looping through key-value pairs and keys",
+     "src": "L#22",
+     "h": "\n<p style=\"font-size:14.5px\">Part 2 of the dictionaries chapter is <strong>looping through a dictionary</strong>. One dictionary may hold a handful of pairs or millions of them, so printing each value with its own line of code stops working quickly. Python gives four ways to loop, and this lecture covered each one:</p>\n<ol>\n<li>through every <b>key-value pair</b> with <code>items()</code></li>\n<li>through the <b>keys</b> with <code>keys()</code> (or the dictionary on its own)</li>\n<li>through the keys <b>in order</b> with <code>sorted()</code></li>\n<li>through the <b>values</b> with <code>values()</code>, and the <b>unique</b> values with <code>set()</code></li>\n</ol>\n<h4>Without a loop: one print per value</h4>\n<pre>user_0 = {\n    'username': 'efermi',\n    'first': 'enrico',\n    'last': 'fermi',\n    }\nprint(user_0['username'])\nprint(user_0['first'])\nprint(user_0['last'])\n<span class=\"c\"># prints:</span>\n<span class=\"o\">efermi</span>\n<span class=\"o\">enrico</span>\n<span class=\"o\">fermi</span></pre>\n<p style=\"font-size:14.5px\">Three pairs, three print statements. A loop does the same job in two lines however many pairs there are.</p>\n<h4>1 · Looping through all key-value pairs: items()</h4>\n<pre>user_0 = {\n    'username': 'efermi',\n    'first': 'enrico',\n    'last': 'fermi',\n    }\nfor key, value in user_0.items():\n    print(\"\\nKey: \" + key)\n    print(\"Value: \" + value)\n<span class=\"c\"># prints:</span>\n<span class=\"o\"></span>\n<span class=\"o\">Key: username</span>\n<span class=\"o\">Value: efermi</span>\n<span class=\"o\"></span>\n<span class=\"o\">Key: first</span>\n<span class=\"o\">Value: enrico</span>\n<span class=\"o\"></span>\n<span class=\"o\">Key: last</span>\n<span class=\"o\">Value: fermi</span></pre>\n<div class=\"def\">In <code>for key, value in user_0.items():</code> the <b>items()</b> method hands the loop one pair per pass: the <b>key</b> goes into the first variable and its <b>value</b> into the second. Until now a for loop had one variable; this one has <b>two</b>, separated by a comma.</div>\n<ul>\n<li><code>key</code> and <code>value</code> are <b>not keywords</b>, just variable names. Pick names that describe the data.</li>\n<li><code>for</code> and <code>in</code> are the keywords; <code>items()</code> is called on the dictionary's name.</li>\n<li>The <code>\\n</code> at the start of the first print puts a blank line before each pair.</li>\n</ul>\n<p style=\"font-size:14.5px\">In the poll from L#21 every key is a person and every value is a language, so he named the variables <code>name</code> and <code>language</code>:</p>\n<pre>favorite_languages = {\n    'jen': 'python',\n    'sarah': 'c',\n    'edward': 'ruby',\n    'phil': 'python',\n    }\nfor name, language in favorite_languages.items():\n    print(name.title() + \"'s favorite language is \" +\n        language.title() + \".\")\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Jen's favorite language is Python.</span>\n<span class=\"o\">Sarah's favorite language is C.</span>\n<span class=\"o\">Edward's favorite language is Ruby.</span>\n<span class=\"o\">Phil's favorite language is Python.</span></pre>\n<p style=\"font-size:14.5px\">Pass 1 puts <code>'jen'</code> in <code>name</code> and <code>'python'</code> in <code>language</code>; pass 2 takes Sarah's pair, and so on until Phil. One print statement produces all four sentences.</p>\n<h4>2 · Looping through all the keys: keys()</h4>\n<pre>favorite_languages = {\n    'jen': 'python',\n    'sarah': 'c',\n    'edward': 'ruby',\n    'phil': 'python',\n    }\nfor name in favorite_languages.keys():\n    print(name.title())\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Jen</span>\n<span class=\"o\">Sarah</span>\n<span class=\"o\">Edward</span>\n<span class=\"o\">Phil</span></pre>\n<p style=\"font-size:14.5px\">Use <code>keys()</code> when you don't need the values. It is also <strong>optional</strong>: looping over a dictionary goes through its keys by default, so this loop prints exactly the same four names:</p>\n<pre>favorite_languages = {\n    'jen': 'python',\n    'sarah': 'c',\n    'edward': 'ruby',\n    'phil': 'python',\n    }\nfor name in favorite_languages:\n    print(name.title())\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Jen</span>\n<span class=\"o\">Sarah</span>\n<span class=\"o\">Edward</span>\n<span class=\"o\">Phil</span></pre>\n<p style=\"font-size:14.5px\">Writing <code>.keys()</code> anyway can make the code easier to read.</p>\n<h4>Using the current key inside the loop</h4>\n<p style=\"font-size:14.5px\">Inside a keys loop, <code>favorite_languages[name]</code> fetches the value for whichever key the loop is on. Here a <em>list</em> of friends and the <em>dictionary</em> work together: every name is printed, and friends also get a message about their language.</p>\n<pre>favorite_languages = {\n    'jen': 'python',\n    'sarah': 'c',\n    'edward': 'ruby',\n    'phil': 'python',\n    }\nfriends = ['phil', 'sarah']\nfor name in favorite_languages.keys():\n    print(name.title())\n    if name in friends:\n        print(\"  Hi \" + name.title() +\n            \", I see your favorite language is \" +\n            favorite_languages[name].title() + \"!\")\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Jen</span>\n<span class=\"o\">Sarah</span>\n<span class=\"o\">  Hi Sarah, I see your favorite language is C!</span>\n<span class=\"o\">Edward</span>\n<span class=\"o\">Phil</span>\n<span class=\"o\">  Hi Phil, I see your favorite language is Python!</span></pre>\n<p style=\"font-size:14.5px\">For Jen, <code>'jen' in friends</code> is False, so only her name prints. For Sarah it is True and the message follows. The messages come out in the <em>dictionary's</em> order (Sarah before Phil), not the order of the friends list.</p>\n<h4>Checking whether someone was polled</h4>\n<pre>favorite_languages = {\n    'jen': 'python',\n    'sarah': 'c',\n    'edward': 'ruby',\n    'phil': 'python',\n    }\nif 'erin' not in favorite_languages.keys():\n    print(\"Erin, please take our poll!\")\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Erin, please take our poll!</span></pre>\n<p style=\"font-size:14.5px\"><code>not in</code> is True because Erin is not a key, so the message prints. Test <code>'jen'</code> instead and nothing prints at all: the test is False and there is no else block.</p>\n<p style=\"font-size:14.5px\">He said <code>keys()</code> returns a list of the keys. In today's Python, <code>print(favorite_languages.keys())</code> shows <code>dict_keys(['jen', 'sarah', 'edward', 'phil'])</code>: a list-like view that works with <code>for</code>, <code>in</code> and <code>sorted()</code> just as a list would. <code>values()</code> gives a <code>dict_values</code> view in the same way.</p>\n<!--viz:foc-dict-items-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace of a for loop over favorite_languages.items(): on each of four passes the key goes into name and the value into language, and one sentence is printed for Jen, Sarah, Edward and Phil.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">What items() hands the loop on each pass</div><p style=\"margin:0 0 8px;font-family:var(--mono);font-size:13.5px\">for name, language in favorite_languages.items():</p><div class=\"scroller\"><table><thead><tr><th>Pass</th><th>name</th><th>language</th><th>Printed</th></tr></thead><tbody><tr><td>1</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">'jen'</td><td style=\"font-family:var(--mono)\">'python'</td><td>Jen's favorite language is Python.</td></tr><tr><td>2</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">'sarah'</td><td style=\"font-family:var(--mono)\">'c'</td><td>Sarah's favorite language is C.</td></tr><tr><td>3</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">'edward'</td><td style=\"font-family:var(--mono)\">'ruby'</td><td>Edward's favorite language is Ruby.</td></tr><tr><td>4</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">'phil'</td><td style=\"font-family:var(--mono)\">'python'</td><td>Phil's favorite language is Python.</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Two loop variables, one pair per pass: the key fills the first, its value the second.</figcaption></figure><!--/viz:foc-dict-items-trace-->"
+    },
+    {
+     "t": "Keys in order, values and set()",
+     "src": "L#22",
+     "h": "\n<h4>3 · Looping through the keys in order: sorted()</h4>\n<p style=\"font-size:14.5px\">A dictionary keeps each key tied to its value, but you may want to show the keys in a particular order. Wrap <code>sorted()</code> around <code>keys()</code>:</p>\n<pre>favorite_languages = {\n    'jen': 'python',\n    'sarah': 'c',\n    'edward': 'ruby',\n    'phil': 'python',\n    }\nfor name in sorted(favorite_languages.keys()):\n    print(name.title() + \", thank you for taking the poll.\")\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Edward, thank you for taking the poll.</span>\n<span class=\"o\">Jen, thank you for taking the poll.</span>\n<span class=\"o\">Phil, thank you for taking the poll.</span>\n<span class=\"o\">Sarah, thank you for taking the poll.</span></pre>\n<div class=\"def\"><b>sorted(favorite_languages.keys())</b> lists all the keys, sorts that list alphabetically, and the loop runs through the sorted copy. The dictionary itself is <b>not</b> changed.</div>\n<p style=\"font-size:14.5px\">Edward is the third pair in the dictionary but comes first alphabetically, so he is thanked first. This is the same <code>sorted()</code> from L#12: a sorted copy, with the original left alone.</p>\n<h4>4 · Looping through all the values: values()</h4>\n<p style=\"font-size:14.5px\">To list only the languages, without the names, use <code>values()</code>. For this demo he added a fifth respondent to the poll:</p>\n<pre>favorite_languages = {\n    'jen': 'python',\n    'sarah': 'c',\n    'edward': 'ruby',\n    'phil': 'python',\n    'aman': 'c',\n    }\nprint(\"The following languages have been mentioned:\")\nfor language in favorite_languages.values():\n    print(language.title())\n<span class=\"c\"># prints:</span>\n<span class=\"o\">The following languages have been mentioned:</span>\n<span class=\"o\">Python</span>\n<span class=\"o\">C</span>\n<span class=\"o\">Ruby</span>\n<span class=\"o\">Python</span>\n<span class=\"o\">C</span></pre>\n<p style=\"font-size:14.5px\">No square-bracket lookup is needed: <code>values()</code> hands each value straight to the loop. But it takes every value, <strong>repeats included</strong>. With five people that is fine; with 500 or 5,000 respondents the list would repeat Python, C and Java over and over.</p>\n<h4>Only the unique values: set()</h4>\n<div class=\"def\">A <b>set</b> is like a list except that <b>each item in it must be unique</b>. <code>set(favorite_languages.values())</code> collects the values and keeps each one only once.</div>\n<pre>favorite_languages = {\n    'jen': 'python',\n    'sarah': 'c',\n    'edward': 'ruby',\n    'phil': 'python',\n    'aman': 'c',\n    }\nfor language in set(favorite_languages.values()):\n    print(language.title())\n<span class=\"c\"># prints (the order varies):</span>\n<span class=\"o\">C</span>\n<span class=\"o\">Ruby</span>\n<span class=\"o\">Python</span></pre>\n<p style=\"font-size:14.5px\">Each language now appears once. A set keeps <strong>no fixed order</strong>: his Colab run gave C, Ruby, Python, and running the same code again can give another order. If the order matters, sort the set: <code>sorted(set(favorite_languages.values()))</code> gives <code>['c', 'python', 'ruby']</code> every time.</p>\n<div class=\"card\"><b>Practice set from the lecture</b> (he gave 20 minutes). (1) <b>Glossary 2:</b> rewrite the L#21 glossary of five programming words as a loop over <code>items()</code>, then add five more terms; the loop should print the new ones with no other change. (2) <b>Rivers:</b> a dictionary of three rivers and the country each runs through (<code>'nile': 'egypt'</code>); print a sentence about each (<em>The Nile runs through Egypt.</em>), then loop again to print just the rivers, and again for just the countries. (3) <b>Polling:</b> make a list of people who should take the favourite-languages poll, some already in the dictionary and some not; loop through the list and thank those who have responded and invite the rest.</div>\n<pre>rivers = {'nile': 'egypt', 'ganga': 'india', 'amazon': 'brazil'}\nfor river, country in rivers.items():\n    print(\"The \" + river.title() + \" runs through \" + country.title() + \".\")\nfor river in rivers.keys():\n    print(river.title())\nfor country in rivers.values():\n    print(country.title())\n<span class=\"c\"># prints:</span>\n<span class=\"o\">The Nile runs through Egypt.</span>\n<span class=\"o\">The Ganga runs through India.</span>\n<span class=\"o\">The Amazon runs through Brazil.</span>\n<span class=\"o\">Nile</span>\n<span class=\"o\">Ganga</span>\n<span class=\"o\">Amazon</span>\n<span class=\"o\">Egypt</span>\n<span class=\"o\">India</span>\n<span class=\"o\">Brazil</span></pre>\n<!--viz:foc-dict-loop-forms--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison of six for-loop headers over a five-person poll: items gives key-value pairs, keys and the bare dictionary give keys, sorted keys gives them alphabetically, values gives all five values with repeats, and set of values gives each language once in no fixed order.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Five loop headers, five different results</div><p style=\"margin:0 0 8px;font-size:13.5px;color:var(--ink-2)\">Poll: jen python, sarah c, edward ruby, phil python, aman c</p><div class=\"scroller\"><table><thead><tr><th>Loop header</th><th>Each pass gets</th><th>Result</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">for k, v in d.items():</td><td>a key and its value</td><td>5 pairs</td></tr><tr><td style=\"font-family:var(--mono)\">for k in d.keys():</td><td>a key</td><td>jen, sarah, edward, phil, aman</td></tr><tr><td style=\"font-family:var(--mono)\">for k in d:</td><td>a key (the default)</td><td>same as keys()</td></tr><tr><td style=\"font-family:var(--mono)\">for k in sorted(d.keys()):</td><td>a key, A to Z</td><td>aman, edward, jen, phil, sarah</td></tr><tr><td style=\"font-family:var(--mono)\">for v in d.values():</td><td>a value</td><td style=\"background:var(--clay-soft)\">python, c, ruby, python, c (repeats)</td></tr><tr><td style=\"font-family:var(--mono)\">for v in set(d.values()):</td><td>a value, once</td><td style=\"background:var(--good-soft)\">c, python, ruby in some order</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Pick the header by what the loop needs: pairs, keys, keys in order, values, or unique values.</figcaption></figure><!--/viz:foc-dict-loop-forms-->"
+    },
+    {
+     "t": "A list of dictionaries",
+     "src": "L#23",
+     "h": "\n<p style=\"font-size:14.5px\">The last part of the dictionaries chapter is <strong>nesting</strong>: storing one structure inside another. He covered three kinds:</p>\n<ol>\n<li>a <b>list of dictionaries</b> (many dictionaries in one list)</li>\n<li>a <b>list in a dictionary</b> (a list as the value of a key)</li>\n<li>a <b>dictionary in a dictionary</b> (a dictionary as the value of a key)</li>\n</ol>\n<div class=\"def\"><b>Nesting</b> means putting a set of dictionaries in a list, a list of items in a dictionary, or a dictionary inside another dictionary. A <b>for loop inside another for loop</b> is the related idea of a <b>nested loop</b>, which is how nested data usually gets read.</div>\n<h4>Several aliens: dictionaries packed into a list</h4>\n<p style=\"font-size:14.5px\"><code>alien_0</code> from L#21 describes one alien and has no room for a second. A game needs a whole fleet, so make one dictionary per alien and store the dictionaries in a list:</p>\n<pre>alien_0 = {'color': 'green', 'points': 5}\nalien_1 = {'color': 'yellow', 'points': 10}\nalien_2 = {'color': 'red', 'points': 15}\n\naliens = [alien_0, alien_1, alien_2]\n\nfor alien in aliens:\n    print(alien)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">{'color': 'green', 'points': 5}</span>\n<span class=\"o\">{'color': 'yellow', 'points': 10}</span>\n<span class=\"o\">{'color': 'red', 'points': 15}</span></pre>\n<p style=\"font-size:14.5px\">The square brackets make <code>aliens</code> a list; its items are the names of the three dictionaries. The loop variable <code>alien</code> holds one whole dictionary per pass.</p>\n<h4>Generating a fleet automatically</h4>\n<p style=\"font-size:14.5px\">Typing 30 dictionaries by hand is impractical. Start with an empty list and let a loop build them:</p>\n<pre>aliens = []\n\n# Make 30 green aliens\nfor alien_number in range(30):\n    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}\n    aliens.append(new_alien)\n\n# Show the first five\nfor alien in aliens[:5]:\n    print(alien)\nprint(\"...\")\n\nprint(\"Total number of aliens: \" + str(len(aliens)))\n<span class=\"c\"># prints:</span>\n<span class=\"o\">{'color': 'green', 'points': 5, 'speed': 'slow'}</span>\n<span class=\"o\">{'color': 'green', 'points': 5, 'speed': 'slow'}</span>\n<span class=\"o\">{'color': 'green', 'points': 5, 'speed': 'slow'}</span>\n<span class=\"o\">{'color': 'green', 'points': 5, 'speed': 'slow'}</span>\n<span class=\"o\">{'color': 'green', 'points': 5, 'speed': 'slow'}</span>\n<span class=\"o\">...</span>\n<span class=\"o\">Total number of aliens: 30</span></pre>\n<ul>\n<li><code>range(30)</code> makes the loop run 30 times; each pass builds a fresh <code>new_alien</code> dictionary and <code>append()</code> adds it to the end of the list.</li>\n<li><code>aliens[:5]</code> is a slice (L#15): positions 0 to 4. Change it to <code>aliens[:]</code> and all 30 print.</li>\n<li><code>len(aliens)</code> is an int, so it needs <code>str()</code> before it can be joined to the text.</li>\n</ul>\n<h4>Changing some of the aliens: a for loop with an if</h4>\n<p style=\"font-size:14.5px\">As the game goes on, some aliens change colour and speed up. He built 15 green and 15 yellow aliens, then used a loop over a slice with an <code>if</code> to change only the ones that match:</p>\n<pre>aliens = []\n\n# 15 green aliens, then 15 yellow ones\nfor alien_number in range(0, 15):\n    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}\n    aliens.append(new_alien)\nfor alien_number in range(0, 15):\n    new_alien = {'color': 'yellow', 'points': 10, 'speed': 'medium'}\n    aliens.append(new_alien)\n\n# The first three green aliens become yellow\nfor alien in aliens[0:3]:\n    if alien['color'] == 'green':\n        alien['color'] = 'yellow'\n        alien['speed'] = 'medium'\n        alien['points'] = 10\n\n# The first three yellow aliens (positions 15-17) become red\nfor alien in aliens[15:18]:\n    if alien['color'] == 'yellow':\n        alien['color'] = 'red'\n        alien['speed'] = 'fast'\n        alien['points'] = 15\n\nfor alien in aliens[0:20]:\n    print(alien)\n<span class=\"c\"># prints (positions 0 to 19):</span>\n<span class=\"o\">{'color': 'yellow', 'points': 10, 'speed': 'medium'}</span>\n<span class=\"o\">{'color': 'yellow', 'points': 10, 'speed': 'medium'}</span>\n<span class=\"o\">{'color': 'yellow', 'points': 10, 'speed': 'medium'}</span>\n<span class=\"o\">{'color': 'green', 'points': 5, 'speed': 'slow'}</span>\n<span class=\"o\">...  (positions 4 to 13: the same green alien)</span>\n<span class=\"o\">{'color': 'green', 'points': 5, 'speed': 'slow'}</span>\n<span class=\"o\">{'color': 'red', 'points': 15, 'speed': 'fast'}</span>\n<span class=\"o\">{'color': 'red', 'points': 15, 'speed': 'fast'}</span>\n<span class=\"o\">{'color': 'red', 'points': 15, 'speed': 'fast'}</span>\n<span class=\"o\">{'color': 'yellow', 'points': 10, 'speed': 'medium'}</span>\n<span class=\"o\">{'color': 'yellow', 'points': 10, 'speed': 'medium'}</span></pre>\n<ul>\n<li>Both building loops say <code>range(0, 15)</code>. The numbers only count the passes; they don't pick positions. <code>append()</code> always adds to the end, so the yellow aliens land at positions 15 to 29.</li>\n<li><code>aliens[0:3]</code> means positions 0, 1 and 2, not 3 (he asked anyone unsure to revise slicing). <code>aliens[15:18]</code> is 15, 16 and 17.</li>\n<li>The slice is a new list, but the items in it are the <b>same dictionaries</b>, not copies, so changing <code>alien['color']</code> inside the loop changes the fleet itself.</li>\n<li>Result: 3 yellow, then 12 green, then 3 red, then 12 yellow.</li>\n</ul>\n<!--viz:foc-nesting-three-shapes--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three panels: a list called aliens holding three alien dictionaries; a pizza dictionary whose toppings value is a list; and a users dictionary whose values are dictionaries of first, last and location.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Three ways to nest</div><div style=\"display:flex;flex-wrap:wrap;gap:10px;font-size:14px\"><div style=\"flex:1 1 220px;padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><div style=\"color:var(--ink-3);font-size:12.5px;margin-bottom:4px\">1 · List of dictionaries</div><b>aliens</b> <span style=\"font-family:var(--mono);font-size:13px\">= [</span><br><span style=\"display:inline-block;margin:3px 2px;padding:4px 8px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono);font-size:13px\">{'color': 'green'}</span><span style=\"display:inline-block;margin:3px 2px;padding:4px 8px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono);font-size:13px\">{'color': 'yellow'}</span><span style=\"display:inline-block;margin:3px 2px;padding:4px 8px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono);font-size:13px\">{'color': 'red'}</span><span style=\"font-family:var(--mono);font-size:13px\">]</span><div style=\"color:var(--ink-2);font-size:13px;margin-top:6px\">many similar objects; read with <span style=\"font-family:var(--mono)\">aliens[1]['color']</span></div></div><div style=\"flex:1 1 220px;padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><div style=\"color:var(--ink-3);font-size:12.5px;margin-bottom:4px\">2 · List in a dictionary</div><b>pizza</b> <span style=\"font-family:var(--mono);font-size:13px\">= {'crust': 'thick', 'toppings':</span><br><span style=\"display:inline-block;margin:3px 2px;padding:4px 8px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft);font-family:var(--mono);font-size:13px\">['mushrooms', 'extra cheese']</span><span style=\"font-family:var(--mono);font-size:13px\">}</span><div style=\"color:var(--ink-2);font-size:13px;margin-top:6px\">one key, several values; loop over <span style=\"font-family:var(--mono)\">pizza['toppings']</span></div></div><div style=\"flex:1 1 220px;padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><div style=\"color:var(--ink-3);font-size:12.5px;margin-bottom:4px\">3 · Dictionary in a dictionary</div><b>users</b> <span style=\"font-family:var(--mono);font-size:13px\">= {'aeinstein':</span><br><span style=\"display:inline-block;margin:3px 2px;padding:4px 8px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono);font-size:13px\">{'first': 'albert', …}</span><span style=\"font-family:var(--mono);font-size:13px\">, 'mcurie':</span><span style=\"display:inline-block;margin:3px 2px;padding:4px 8px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono);font-size:13px\">{'first': 'marie', …}</span><span style=\"font-family:var(--mono);font-size:13px\">}</span><div style=\"color:var(--ink-2);font-size:13px;margin-top:6px\">details per username; read with <span style=\"font-family:var(--mono)\">users['mcurie']['last']</span></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Ask what sits inside what: dictionaries in a list, a list in a dictionary, or dictionaries in a dictionary.</figcaption></figure><!--/viz:foc-nesting-three-shapes--><!--viz:foc-alien-fleet-strip--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Thirty numbered cells for positions 0 to 29: positions 0 to 2 are yellow, 3 to 14 green, 15 to 17 red and 18 to 29 yellow, after the slices aliens[0:3] and aliens[15:18] were changed.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The 30-alien fleet after the two change loops</div><div style=\"font-size:13px\"><div style=\"display:flex;flex-wrap:wrap;gap:3px;max-width:420px;font-family:var(--mono)\"><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--clay-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">0</span><br><b>Y</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--clay-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">1</span><br><b>Y</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--clay-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">2</span><br><b>Y</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--good-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">3</span><br><b>G</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--good-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">4</span><br><b>G</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--good-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">5</span><br><b>G</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--good-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">6</span><br><b>G</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--good-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">7</span><br><b>G</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--good-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">8</span><br><b>G</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--good-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">9</span><br><b>G</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--good-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">10</span><br><b>G</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--good-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">11</span><br><b>G</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--good-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">12</span><br><b>G</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--good-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">13</span><br><b>G</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--good-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">14</span><br><b>G</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--bad-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">15</span><br><b>R</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--bad-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">16</span><br><b>R</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--bad-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">17</span><br><b>R</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--clay-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">18</span><br><b>Y</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--clay-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">19</span><br><b>Y</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--clay-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">20</span><br><b>Y</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--clay-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">21</span><br><b>Y</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--clay-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">22</span><br><b>Y</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--clay-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">23</span><br><b>Y</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--clay-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">24</span><br><b>Y</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--clay-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">25</span><br><b>Y</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--clay-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">26</span><br><b>Y</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--clay-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">27</span><br><b>Y</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--clay-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">28</span><br><b>Y</b></div><div style=\"width:30px;text-align:center;padding:2px 0;background:var(--clay-soft)\"><span style=\"font-size:12px;color:var(--ink-3)\">29</span><br><b>Y</b></div></div><div style=\"display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:8px;color:var(--ink-2)\"><span><b>Y</b> yellow · 10 points · medium</span><span><b>G</b> green · 5 points · slow</span><span><b>R</b> red · 15 points · fast</span></div><div style=\"margin-top:6px;color:var(--ink-3);font-family:var(--mono);font-size:12.5px\">aliens[0:3]: green → yellow · aliens[15:18]: yellow → red</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only the sliced positions changed, and they changed in the fleet itself, because a slice holds the same dictionaries.</figcaption></figure><!--/viz:foc-alien-fleet-strip-->"
+    },
+    {
+     "t": "A list in a dictionary",
+     "src": "L#23",
+     "h": "\n<p style=\"font-size:14.5px\">Turn it round: instead of dictionaries in a list, put a list in a dictionary. A pizza order has one crust but several toppings, so the value of <code>'toppings'</code> is a whole list:</p>\n<pre># Store information about a pizza being ordered\npizza = {\n    'crust': 'thick',\n    'toppings': ['mushrooms', 'extra cheese'],\n    }\n\n# Summarise the order\nprint(\"You ordered a \" + pizza['crust'] + \"-crust pizza \" +\n    \"with the following toppings:\")\nfor topping in pizza['toppings']:\n    print(\"\\t\" + topping)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">You ordered a thick-crust pizza with the following toppings:</span>\n<span class=\"o\">\tmushrooms</span>\n<span class=\"o\">\textra cheese</span></pre>\n<div class=\"def\"><b>pizza['toppings']</b> returns the <b>whole list</b> <code>['mushrooms', 'extra cheese']</code>, not a single value. To use the items one by one, loop over it: <code>for topping in pizza['toppings']:</code></div>\n<p style=\"font-size:14.5px\">Nest a list in a dictionary whenever <strong>one key needs more than one value</strong>.</p>\n<h4>The poll again, with more than one language each</h4>\n<p style=\"font-size:14.5px\">In L#21 and L#22 each person had exactly one favourite language. If people may pick several, store each answer as a list, even when it has only one item (Sarah's <code>['c']</code>). Reading it needs a <strong>nested for loop</strong>:</p>\n<pre>favorite_languages = {\n    'jen': ['python', 'ruby'],\n    'sarah': ['c'],\n    'edward': ['ruby', 'go'],\n    'phil': ['python', 'haskell'],\n    }\n\nfor name, languages in favorite_languages.items():\n    print(\"\\n\" + name.title() + \"'s favorite languages are:\")\n    for language in languages:\n        print(\"\\t\" + language.title())\n<span class=\"c\"># prints:</span>\n<span class=\"o\"></span>\n<span class=\"o\">Jen's favorite languages are:</span>\n<span class=\"o\">\tPython</span>\n<span class=\"o\">\tRuby</span>\n<span class=\"o\"></span>\n<span class=\"o\">Sarah's favorite languages are:</span>\n<span class=\"o\">\tC</span>\n<span class=\"o\"></span>\n<span class=\"o\">Edward's favorite languages are:</span>\n<span class=\"o\">\tRuby</span>\n<span class=\"o\">\tGo</span>\n<span class=\"o\"></span>\n<span class=\"o\">Phil's favorite languages are:</span>\n<span class=\"o\">\tPython</span>\n<span class=\"o\">\tHaskell</span></pre>\n<ul>\n<li>The outer loop uses <code>items()</code>: <code>name</code> gets the key and <code>languages</code> gets that person's <b>list</b>.</li>\n<li>Because <code>languages</code> is itself a list, the inner loop <code>for language in languages:</code> can run through it.</li>\n<li>The inner loop is indented under the outer one, so it runs completely for every person: once for Sarah, twice for everyone else.</li>\n</ul>\n"
+    },
+    {
+     "t": "A dictionary in a dictionary",
+     "src": "L#23",
+     "h": "\n<p style=\"font-size:14.5px\">A website has many users, each with a username. Use the usernames as keys, and store each user's details in a dictionary as the value:</p>\n<pre>users = {\n    'aeinstein': {\n        'first': 'albert',\n        'last': 'einstein',\n        'location': 'princeton',\n        },\n    'mcurie': {\n        'first': 'marie',\n        'last': 'curie',\n        'location': 'paris',\n        },\n    }\n\nfor username, user_info in users.items():\n    print(\"\\nUsername: \" + username)\n    full_name = user_info['first'] + \" \" + user_info['last']\n    location = user_info['location']\n\n    print(\"\\tFull name: \" + full_name.title())\n    print(\"\\tLocation: \" + location.title())\n<span class=\"c\"># prints:</span>\n<span class=\"o\"></span>\n<span class=\"o\">Username: aeinstein</span>\n<span class=\"o\">\tFull name: Albert Einstein</span>\n<span class=\"o\">\tLocation: Princeton</span>\n<span class=\"o\"></span>\n<span class=\"o\">Username: mcurie</span>\n<span class=\"o\">\tFull name: Marie Curie</span>\n<span class=\"o\">\tLocation: Paris</span></pre>\n<div class=\"def\">In <code>for username, user_info in users.items():</code> the key (<code>'aeinstein'</code>) goes into <b>username</b> and its value, the <b>inner dictionary</b>, goes into <b>user_info</b>. So <b>user_info is itself a dictionary</b>, and <code>user_info['first']</code>, <code>user_info['last']</code> and <code>user_info['location']</code> read from it.</div>\n<ul>\n<li>The outer dictionary <code>users</code> has <b>two</b> key-value pairs. Each whole inner dictionary is one value.</li>\n<li>Outside a loop, reach an inner value with two lookups in a row: <code>users['mcurie']['location']</code> gives <code>'paris'</code>. <code>users['location']</code> is a KeyError, because <code>'location'</code> is a key of the inner dictionaries only.</li>\n<li>Give every inner dictionary the same keys (first, last, location). The loop then works the same way for every user.</li>\n</ul>\n<h4>The chapter in one list</h4>\n<ul>\n<li>Define a dictionary; read, add, change and delete pairs (L#21).</li>\n<li>Loop through its pairs, keys, sorted keys and values (L#22).</li>\n<li>Nest dictionaries in a list, lists in a dictionary, and a dictionary in a dictionary (L#23).</li>\n</ul>\n<p style=\"font-size:14.5px\">Next chapter: <code>while</code> loops and taking input from the user, so programs can respond to what people type.</p>\n<div class=\"card\"><b>Practice set from the lecture</b> (20 minutes). (1) <b>Pets:</b> one dictionary per pet, holding the kind of animal and the owner's name; store them in a list called <code>pets</code>, then loop through it and print everything about each pet. (2) <b>Favourite places:</b> a dictionary <code>favorite_places</code> with three people as keys and one to three favourite places for each (a list as the value); asking friends makes it primary data. Print each name and their places. (3) <b>Cities:</b> a dictionary <code>cities</code> with three city names as keys; each value is a dictionary with <code>country</code>, <code>population</code> and <code>fact</code>. Print each city and everything stored about it.</div>\n<pre>cities = {\n    'jodhpur': {'country': 'india', 'fact': 'known as the blue city'},\n    'kochi': {'country': 'india', 'fact': 'a major port on the arabian sea'},\n    }\nfor city, info in cities.items():\n    print(city.title() + \" (\" + info['country'].title() + \"): \" + info['fact'])\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Jodhpur (India): known as the blue city</span>\n<span class=\"o\">Kochi (India): a major port on the arabian sea</span></pre>\n<!--viz:foc-nested-dict-lookup--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow from the users dictionary, through the key mcurie to Marie Curie's inner dictionary, then through the key location to the value paris.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Two lookups reach an inner value</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">users</span></div><span style=\"color:var(--ink-3)\">→ <span style=\"font-family:var(--mono)\">['mcurie']</span> →</span><div style=\"padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono);font-size:13px\">{'first': 'marie', 'last': 'curie', 'location': 'paris'}</span></div><span style=\"color:var(--ink-3)\">→ <span style=\"font-family:var(--mono)\">['location']</span> →</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b style=\"font-family:var(--mono)\">'paris'</b></div></div><p style=\"margin:10px 0 0;font-size:13.5px;color:var(--ink-2)\">In the loop, <span style=\"font-family:var(--mono)\">user_info</span> already holds the middle box, so one lookup is enough: <span style=\"font-family:var(--mono)\">user_info['location']</span>.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The first key picks the inner dictionary; the second key picks the value inside it.</figcaption></figure><!--/viz:foc-nested-dict-lookup-->"
     }
    ]
   }
@@ -996,6 +1033,76 @@ HUB.addCourse({
    "p": "Keys are unique. {'a': 1, 'a': 2} becomes {'a': 2}: the second value overwrites the first, so you get one pair, not two.",
    "f": "one key, one value",
    "lec": 21
+  },
+  {
+   "id": "foc-t0074",
+   "h": "Two loop variables need .items()",
+   "p": "for name, language in favorite_languages: gives the loop only keys, and Python cannot split 'jen' into two variables, so it raises a ValueError. Write favorite_languages.items().",
+   "f": "two variables → .items()",
+   "lec": 22
+  },
+  {
+   "id": "foc-t0075",
+   "h": "key and value are just variable names",
+   "p": "In for key, value in d.items(): only for and in are keywords. for name, language in d.items(): works the same way and reads better.",
+   "f": "rename them freely",
+   "lec": 22
+  },
+  {
+   "id": "foc-t0076",
+   "h": "The loop follows the dictionary's order, not the other list's",
+   "p": "Checking each key against friends = ['phil', 'sarah'] greets Sarah first, because she comes before Phil in the dictionary. The friends list only answers yes or no.",
+   "f": "order comes from the dict",
+   "lec": 22
+  },
+  {
+   "id": "foc-t0077",
+   "h": "sorted() does not reorder the dictionary",
+   "p": "for name in sorted(d.keys()): loops through a sorted copy of the keys. Print d afterwards and the pairs are in their original order.",
+   "f": "sorted copy, same dict",
+   "lec": 22
+  },
+  {
+   "id": "foc-t0078",
+   "h": "values() repeats; set() doesn't, but has no fixed order",
+   "p": "values() returns every value, so a 5-person poll gives 5 languages even with only 3 different ones. set() keeps each once, in an order that can change between runs; use sorted(set(...)) for a fixed order.",
+   "f": "set: unique, unordered",
+   "lec": 22
+  },
+  {
+   "id": "foc-t0079",
+   "h": "range() counts passes; append() decides the position",
+   "p": "Two loops that both say range(0, 15) give 30 aliens at positions 0 to 29, not two sets at 0 to 14. append() always adds to the end of the list.",
+   "f": "append = end of list",
+   "lec": 23
+  },
+  {
+   "id": "foc-t0080",
+   "h": "Changing a dictionary through a slice changes the original list",
+   "p": "aliens[0:3] is a new list, but it holds the same three dictionaries. alien['color'] = 'yellow' inside the loop is visible in aliens afterwards.",
+   "f": "slice of dicts: same dicts",
+   "lec": 23
+  },
+  {
+   "id": "foc-t0081",
+   "h": "A list value can't be joined to a string with +",
+   "p": "When the value is ['python', 'ruby'], name + ': ' + languages raises a TypeError. Loop over the list and print each item, as the inner loop does.",
+   "f": "list value → loop it",
+   "lec": 23
+  },
+  {
+   "id": "foc-t0082",
+   "h": "Indentation decides which loop a line belongs to",
+   "p": "A print indented under the inner loop runs once per language; one indented only under the outer loop runs once per person; an unindented one runs once at the end.",
+   "f": "indent = which loop",
+   "lec": 23
+  },
+  {
+   "id": "foc-t0083",
+   "h": "An inner key needs the outer key first",
+   "p": "users['location'] is a KeyError: users only has username keys. Write users['mcurie']['location'], or user_info['location'] inside the items() loop.",
+   "f": "outer key, then inner key",
+   "lec": 23
   }
  ],
  "defs": [
@@ -1606,6 +1713,94 @@ HUB.addCourse({
    "term": "Dictionary of similar objects",
    "html": "<b>Dictionary of similar objects</b>: one kind of information about many things, such as each person's favourite language in a poll.",
    "lec": 21
+  },
+  {
+   "id": "foc-d0079",
+   "unit": "dicts",
+   "topic": "Looping through key-value pairs and keys",
+   "term": "items()",
+   "html": "<b>items()</b>: gives a dictionary's key-value pairs to a loop. In <b>for key, value in d.items():</b> each pass puts a key in the first variable and its value in the second.",
+   "lec": 22
+  },
+  {
+   "id": "foc-d0080",
+   "unit": "dicts",
+   "topic": "Looping through key-value pairs and keys",
+   "term": "keys()",
+   "html": "<b>keys()</b>: gives only the keys. <b>for name in d.keys():</b> loops through them; <b>'erin' not in d.keys()</b> checks whether a key is missing.",
+   "lec": 22
+  },
+  {
+   "id": "foc-d0081",
+   "unit": "dicts",
+   "topic": "Looping through key-value pairs and keys",
+   "term": "Looping over a dictionary (default)",
+   "html": "<b>for name in d:</b> loops through the <b>keys</b>, exactly like <b>for name in d.keys():</b>. Writing keys() is optional.",
+   "lec": 22
+  },
+  {
+   "id": "foc-d0082",
+   "unit": "dicts",
+   "topic": "Keys in order, values and set()",
+   "term": "sorted() with keys()",
+   "html": "<b>sorted(d.keys())</b>: a sorted copy of the keys (alphabetical for strings) for the loop to run through. The dictionary itself is not changed.",
+   "lec": 22
+  },
+  {
+   "id": "foc-d0083",
+   "unit": "dicts",
+   "topic": "Keys in order, values and set()",
+   "term": "values()",
+   "html": "<b>values()</b>: gives only the values, with no keys and <b>with repeats</b>: two people who chose python give python twice.",
+   "lec": 22
+  },
+  {
+   "id": "foc-d0084",
+   "unit": "dicts",
+   "topic": "Keys in order, values and set()",
+   "term": "set",
+   "html": "<b>set</b>: like a list, but every item must be <b>unique</b>. <b>set(d.values())</b> keeps each value once. A set has no fixed order.",
+   "lec": 22
+  },
+  {
+   "id": "foc-d0085",
+   "unit": "dicts",
+   "topic": "A list of dictionaries",
+   "term": "Nesting",
+   "html": "<b>Nesting</b>: storing one structure in another: dictionaries in a list, a list in a dictionary, or a dictionary in a dictionary.",
+   "lec": 23
+  },
+  {
+   "id": "foc-d0086",
+   "unit": "dicts",
+   "topic": "A list of dictionaries",
+   "term": "List of dictionaries",
+   "html": "<b>List of dictionaries</b>: one dictionary per object, all kept in a list, such as a fleet of aliens. Often built with a loop and <b>append()</b>.",
+   "lec": 23
+  },
+  {
+   "id": "foc-d0087",
+   "unit": "dicts",
+   "topic": "A list in a dictionary",
+   "term": "List in a dictionary",
+   "html": "<b>List in a dictionary</b>: a list as a key's value, used when <b>one key needs several values</b> (a pizza's toppings, a person's favourite languages).",
+   "lec": 23
+  },
+  {
+   "id": "foc-d0088",
+   "unit": "dicts",
+   "topic": "A dictionary in a dictionary",
+   "term": "Dictionary in a dictionary",
+   "html": "<b>Dictionary in a dictionary</b>: a dictionary as a key's value, such as each username pointing to that user's first, last and location. Read with two keys: <b>users['mcurie']['last']</b>.",
+   "lec": 23
+  },
+  {
+   "id": "foc-d0089",
+   "unit": "dicts",
+   "topic": "A list in a dictionary",
+   "term": "Nested loop",
+   "html": "<b>Nested loop</b>: a for loop indented inside another. The inner loop runs completely on every pass of the outer one, for example once per language for each person.",
+   "lec": 23
   }
  ],
  "questions": [
@@ -6451,6 +6646,667 @@ HUB.addCourse({
    "w": "He said any object you can create in Python can be a value, including lists and other dictionaries, which leads to nesting later in the chapter.",
    "lec": 21,
    "lv": "recall"
+  },
+  {
+   "id": "foc-q0297",
+   "topic": "Dictionaries",
+   "q": "In for key, value in user_0.items():, what does items() give the loop on each pass?",
+   "c": [
+    "Only the keys, one at a time",
+    "Only the values, one at a time",
+    "One key and its value, which go into key and value",
+    "The whole dictionary at once"
+   ],
+   "a": [
+    2
+   ],
+   "w": "items() returns the key-value pairs, and the two loop variables receive the key and the value of one pair per pass. keys() and values() are the methods that give only one side.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0298",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nmarks = {'maths': 78, 'english': 85}\nfor subject, score in marks.items():\n    print(subject.title() + \": \" + str(score))",
+   "c": [
+    "Maths: 78 / English: 85",
+    "maths: 78 / english: 85",
+    "Maths: 78",
+    "TypeError, because score is an int"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Each pass takes one pair, so two lines print, in the dictionary's order. title() capitalises the subject, and str() turns the int score into text before +, so there is no TypeError.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0299",
+   "topic": "Dictionaries",
+   "q": "In for key, value in user_0.items():, key and value are Python keywords that must be spelt exactly that way.",
+   "c": [
+    "True",
+    "False"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Only for and in are keywords here. key and value are ordinary variable names; the lecture renamed them name and language for the poll.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0300",
+   "topic": "Dictionaries",
+   "q": "Which header can replace the first line of this loop without changing what it prints?\n\nfor name in favorite_languages.keys():\n    print(name.title())",
+   "c": [
+    "for name in favorite_languages.values():",
+    "for name in favorite_languages.items():",
+    "for name in favorite_languages[0]:",
+    "for name in favorite_languages:"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Looping over a dictionary goes through its keys by default, so keys() is optional. values() would print the languages, items() gives pairs (a tuple has no title()), and [0] looks for a key 0 that doesn't exist.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0301",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nhomes = {'asha': 'pune', 'ravi': 'delhi', 'meera': 'goa'}\nfriends = ['meera', 'asha']\nfor name in homes:\n    if name in friends:\n        print(\"Hi \" + name.title())",
+   "c": [
+    "Hi Meera / Hi Asha",
+    "Hi Asha / Hi Meera",
+    "Hi Asha / Hi Ravi / Hi Meera",
+    "Hi Ravi"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The loop runs in the dictionary's order (asha, ravi, meera); ravi fails the in test. The friends list only answers yes or no, so its order (meera first) doesn't matter.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0302",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nfavorite_languages = {'jen': 'python', 'sarah': 'c', 'edward': 'ruby', 'phil': 'python'}\nif 'jen' not in favorite_languages.keys():\n    print(\"Jen, please take our poll!\")\nprint(\"Done\")",
+   "c": [
+    "Done",
+    "Jen, please take our poll! / Done",
+    "Jen, please take our poll!",
+    "KeyError"
+   ],
+   "a": [
+    0
+   ],
+   "w": "jen is a key, so not in gives False and the indented print is skipped. There is no else, so the only output is the unindented Done. Checking membership with in or not in never raises a KeyError.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0303",
+   "topic": "Dictionaries",
+   "q": "A poll is stored as favorite_languages = {'jen': 'python', 'sarah': 'c'}. Which test is True only if somebody chose ruby?",
+   "c": [
+    "'ruby' in favorite_languages",
+    "'ruby' in favorite_languages.keys()",
+    "favorite_languages['ruby']",
+    "'ruby' in favorite_languages.values()"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The languages are the values, so check values(). in on the dictionary itself, or on keys(), checks the names; favorite_languages['ruby'] looks ruby up as a key and raises a KeyError.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0304",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\ncapitals = {'kerala': 'thiruvananthapuram', 'assam': 'dispur', 'goa': 'panaji', 'bihar': 'patna'}\nfor state in sorted(capitals.keys()):\n    print(state.title())",
+   "c": [
+    "Kerala / Assam / Goa / Bihar",
+    "Dispur / Panaji / Patna / Thiruvananthapuram",
+    "Assam / Bihar / Goa / Kerala",
+    "Kerala / Goa / Bihar / Assam"
+   ],
+   "a": [
+    2
+   ],
+   "w": "sorted() puts the keys in alphabetical order before the loop starts. The capitals are values, so they are not printed; the dictionary's own order is the one sorted() replaces.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0305",
+   "topic": "Dictionaries",
+   "q": "What does the last line print?\n\nscores = {'tara': 61, 'neel': 74, 'bina': 58}\nfor name in sorted(scores.keys()):\n    print(name)\nprint(scores)",
+   "c": [
+    "{'tara': 61, 'neel': 74, 'bina': 58}",
+    "{'bina': 58, 'neel': 74, 'tara': 61}",
+    "['bina', 'neel', 'tara']",
+    "{'neel': 74, 'bina': 58, 'tara': 61}"
+   ],
+   "a": [
+    0
+   ],
+   "w": "sorted() works on a copy of the keys. The loop prints bina, neel, tara, but the dictionary itself keeps the order the pairs were added in.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0306",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nvotes = {'riya': 'tea', 'dev': 'coffee', 'sam': 'tea', 'ira': 'tea', 'om': 'coffee'}\ncount = 0\nfor drink in votes.values():\n    count = count + 1\nprint(count)",
+   "c": [
+    "2",
+    "5",
+    "3",
+    "0"
+   ],
+   "a": [
+    1
+   ],
+   "w": "values() hands over every value, repeats included, so the loop runs once per person: 5 times. Only set(votes.values()) would cut it to the 2 different drinks.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0307",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nvotes = {'riya': 'tea', 'dev': 'coffee', 'sam': 'tea', 'ira': 'lassi', 'om': 'coffee'}\nprint(sorted(set(votes.values())))",
+   "c": [
+    "['tea', 'coffee', 'tea', 'lassi', 'coffee']",
+    "['dev', 'ira', 'om', 'riya', 'sam']",
+    "['coffee', 'lassi', 'tea']",
+    "['tea', 'coffee', 'lassi']"
+   ],
+   "a": [
+    2
+   ],
+   "w": "set() keeps each drink once, and sorted() turns the set into an alphabetical list. Unsorted, the order of a set is not fixed; the keys (names) are not involved at all.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0308",
+   "topic": "Dictionaries",
+   "q": "How did the lecture describe a set?",
+   "c": [
+    "A dictionary that has keys but no values",
+    "A list that is always sorted",
+    "A list that cannot be changed",
+    "Like a list, except that each item in it must be unique"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He used set() to remove repeated languages from values(): a set keeps one copy of each item. It is not sorted (its order isn't fixed), and a list that cannot change is a tuple (L#16).",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0309",
+   "topic": "Dictionaries",
+   "q": "Run twice on Colab, this loop printed C, Ruby, Python the first time. Which statement about the second run is correct?\n\nfor language in set(favorite_languages.values()):\n    print(language.title())",
+   "c": [
+    "It prints the same three languages once each, possibly in a different order",
+    "It must print C, Ruby, Python again in that order",
+    "It prints them in alphabetical order",
+    "It prints them in the order they were added to the dictionary"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A set guarantees uniqueness, not order, and the order of a set of strings can change from one run to the next. Wrap it in sorted() if you need a fixed order.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0310",
+   "topic": "Dictionaries",
+   "q": "What happens when this runs?\n\nfavorite_languages = {'jen': 'python', 'sarah': 'c'}\nfor name, language in favorite_languages:\n    print(name + \": \" + language)",
+   "c": [
+    "It prints jen: python / sarah: c",
+    "It prints jen / sarah",
+    "ValueError",
+    "KeyError"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Without .items() the loop receives only the keys, and Python can't unpack the string 'jen' into two variables, so it raises a ValueError (too many values to unpack). Add .items() to get pairs.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0311",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nstock = {'pens': 40, 'files': 12}\nfor item in stock:\n    print(item + \" = \" + str(stock[item]))",
+   "c": [
+    "pens / files",
+    "pens = 40 / files = 12",
+    "40 = pens / 12 = files",
+    "TypeError"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The loop gives each key, and stock[item] looks up the value for the key the loop is on. str() converts the number, so the join works.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0312",
+   "topic": "Dictionaries",
+   "q": "For the rivers exercise, rivers = {'nile': 'egypt', 'ganga': 'india', 'amazon': 'brazil'}. Which header completes this loop so that it prints The Nile runs through Egypt. and a matching sentence for each river?\n\n(missing line)\n    print(\"The \" + river.title() + \" runs through \" + country.title() + \".\")",
+   "c": [
+    "for river, country in rivers.values():",
+    "for river, country in rivers.keys():",
+    "for river, country in rivers:",
+    "for river, country in rivers.items():"
+   ],
+   "a": [
+    3
+   ],
+   "w": "items() is the only one that supplies a river (key) and its country (value) on each pass. values(), keys() and the bare dictionary each give one string per pass, which Python cannot split into two variables, so they raise a ValueError.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0313",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nfees = {'hostel': 30000, 'mess': 18000, 'library': 2000}\ntotal = 0\nfor amount in fees.values():\n    total = total + amount\nprint(total)",
+   "c": [
+    "3",
+    "30000",
+    "50000",
+    "TypeError"
+   ],
+   "a": [
+    2
+   ],
+   "w": "values() hands each fee to the loop, and the running total adds them: 30000 + 18000 + 2000 = 50000. Counting the passes would give 3.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0314",
+   "topic": "Dictionaries",
+   "q": "Which function did the lecture wrap around favorite_languages.keys() to loop through the names in alphabetical order?",
+   "c": [
+    "set()",
+    "sorted()",
+    "values()",
+    "items()"
+   ],
+   "a": [
+    1
+   ],
+   "w": "sorted() returns the keys as a sorted list for the loop. set() removes repeats but keeps no order; values() and items() give values and pairs.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0315",
+   "topic": "Dictionaries",
+   "q": "When is keys() the right choice, according to the lecture?",
+   "c": [
+    "When the loop needs only the keys, not the values",
+    "When the loop must change the values",
+    "When the loop needs both the key and the value",
+    "When the keys have to be unique"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He introduced keys() for loops that don't need to work with the values. A loop that needs both uses items(); keys are always unique anyway.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0316",
+   "topic": "Dictionaries",
+   "q": "Which of these is an example of nesting, as the lecture used the word?",
+   "c": [
+    "Giving a dictionary more than three key-value pairs",
+    "Sorting a dictionary's keys with sorted()",
+    "Storing several alien dictionaries inside one list",
+    "Deleting a key-value pair with del"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Nesting is putting one structure inside another: dictionaries in a list, a list in a dictionary, or a dictionary in a dictionary. A big flat dictionary, sorting and deleting don't put any structure inside another.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0317",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nalien_0 = {'color': 'green', 'points': 5}\nalien_1 = {'color': 'yellow', 'points': 10}\nalien_2 = {'color': 'red', 'points': 15}\naliens = [alien_0, alien_1, alien_2]\nprint(aliens[1]['points'])",
+   "c": [
+    "10",
+    "5",
+    "15",
+    "KeyError"
+   ],
+   "a": [
+    0
+   ],
+   "w": "aliens[1] is the second item in the list, alien_1, and ['points'] then reads its value, 10. List positions start at 0, so aliens[1] is not alien_0.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0318",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\naliens = []\nfor alien_number in range(12):\n    new_alien = {'color': 'green', 'points': 5}\n    aliens.append(new_alien)\nfor alien in aliens[:3]:\n    print(alien['color'])\nprint(\"Total: \" + str(len(aliens)))",
+   "c": [
+    "green / green / green / Total: 3",
+    "green / green / green / green / Total: 12",
+    "green / Total: 12",
+    "green / green / green / Total: 12"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The first loop runs 12 times and appends 12 dictionaries. The slice [:3] prints only the first three, but len() counts the whole list.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0319",
+   "topic": "Dictionaries",
+   "q": "What happens when this runs?\n\naliens = [{'color': 'green'}, {'color': 'red'}]\nprint(\"Total number of aliens: \" + len(aliens))",
+   "c": [
+    "It prints Total number of aliens: 2",
+    "TypeError",
+    "KeyError",
+    "It prints Total number of aliens: len(aliens)"
+   ],
+   "a": [
+    1
+   ],
+   "w": "len() returns the int 2, and + can't join a str and an int. The lecture wrapped it in str(): str(len(aliens)).",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0320",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\naliens = []\nfor n in range(0, 4):\n    aliens.append({'color': 'green'})\nfor n in range(0, 4):\n    aliens.append({'color': 'yellow'})\nprint(aliens[5]['color'])",
+   "c": [
+    "green",
+    "IndexError, because range(0, 4) only reaches position 3",
+    "yellow",
+    "KeyError"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Each range(0, 4) just makes its loop run 4 times. append() adds to the end, so the list holds 8 dictionaries: green at 0 to 3, yellow at 4 to 7. Position 5 is yellow.",
+   "lec": 23,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0321",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\naliens = [{'color': 'green'}, {'color': 'green'}, {'color': 'green'}]\nfor alien in aliens[0:2]:\n    alien['color'] = 'yellow'\nprint(aliens[0]['color'] + \" \" + aliens[2]['color'])",
+   "c": [
+    "yellow green",
+    "green green",
+    "yellow yellow",
+    "green yellow"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The slice is a new list, but it holds the same dictionaries, so the change reaches aliens. Only positions 0 and 1 are in the slice; position 2 stays green.",
+   "lec": 23,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0322",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\naliens = []\nfor n in range(5):\n    aliens.append({'color': 'green'})\nfor alien in aliens[0:3]:\n    if alien['color'] == 'green':\n        alien['color'] = 'yellow'\nfor alien in aliens[1:3]:\n    if alien['color'] == 'yellow':\n        alien['color'] = 'red'\nfor alien in aliens:\n    print(alien['color'])",
+   "c": [
+    "red / red / red / green / green",
+    "yellow / red / red / green / green",
+    "yellow / yellow / yellow / green / green",
+    "yellow / red / red / red / green"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Positions 0, 1 and 2 turn yellow; then positions 1 and 2 (the slice [1:3]) are yellow, so they turn red. Position 0 stays yellow and 3 and 4 were never touched.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0323",
+   "topic": "Dictionaries",
+   "q": "In the lecture's code, which positions of the list does the slice aliens[0:3] cover?",
+   "c": [
+    "0, 1, 2 and 3",
+    "1, 2 and 3",
+    "Only 3",
+    "0, 1 and 2"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A slice stops just before its second number, so [0:3] is three items: 0, 1 and 2. He told anyone expecting position 3 to revise the slicing lecture (L#15).",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0324",
+   "topic": "Dictionaries",
+   "q": "In the fleet code, what does range(30) in for alien_number in range(30): decide?",
+   "c": [
+    "The points each alien is worth",
+    "The position in the list where each alien is stored",
+    "How many times the loop runs, and so how many aliens are made",
+    "The number of keys in each alien dictionary"
+   ],
+   "a": [
+    2
+   ],
+   "w": "range(30) gives the loop 30 passes; each pass makes one dictionary and append() puts it at the end of the list. The keys and points come from the dictionary written inside the loop.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0325",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\npizza = {'crust': 'thin', 'toppings': ['onion', 'paneer', 'corn']}\nprint(pizza['toppings'])",
+   "c": [
+    "['onion', 'paneer', 'corn']",
+    "onion",
+    "onion paneer corn",
+    "toppings"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The value stored under 'toppings' is a whole list, so the lookup returns the list. To print the toppings one per line, loop over pizza['toppings'].",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0326",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\npizza = {'crust': 'thin', 'toppings': ['onion', 'paneer', 'corn']}\nprint(len(pizza['toppings']))\nprint(len(pizza))",
+   "c": [
+    "3 / 4",
+    "2 / 3",
+    "3 / 3",
+    "3 / 2"
+   ],
+   "a": [
+    3
+   ],
+   "w": "pizza['toppings'] is a list of 3 items. The dictionary itself has only 2 keys, crust and toppings: the list counts as one value.",
+   "lec": 23,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0327",
+   "topic": "Dictionaries",
+   "q": "According to the lecture, when should a dictionary's value be a list?",
+   "c": [
+    "When the keys need to be kept in order",
+    "When one key needs more than one value",
+    "When every value is a number",
+    "When the dictionary has more than ten keys"
+   ],
+   "a": [
+    1
+   ],
+   "w": "His examples were a pizza with several toppings and poll answers with several favourite languages per person: one key, many values.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0328",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nfavorite_languages = {\n    'jen': ['python', 'ruby'],\n    'sarah': ['c'],\n    'edward': ['ruby', 'go'],\n    }\ncount = 0\nfor name, languages in favorite_languages.items():\n    for language in languages:\n        count = count + 1\nprint(count)",
+   "c": [
+    "3",
+    "6",
+    "5",
+    "2"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The inner loop runs once per language in each person's list: 2 + 1 + 2 = 5. Counting people would give 3.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0329",
+   "topic": "Dictionaries",
+   "q": "What happens when this runs?\n\nfavorite_languages = {'jen': ['python', 'ruby']}\nfor name, languages in favorite_languages.items():\n    print(name + \": \" + languages)",
+   "c": [
+    "TypeError",
+    "It prints jen: python, ruby",
+    "It prints jen: ['python', 'ruby']",
+    "ValueError"
+   ],
+   "a": [
+    0
+   ],
+   "w": "languages holds the list ['python', 'ruby'], and + can only join a string to a string. Loop over languages and print each one instead.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0330",
+   "topic": "Dictionaries",
+   "q": "In for username, user_info in users.items():, where users maps each username to a dictionary of first, last and location, what is user_info?",
+   "c": [
+    "The username string",
+    "A list of all the usernames",
+    "The value of the key first",
+    "The inner dictionary for the current user"
+   ],
+   "a": [
+    3
+   ],
+   "w": "items() puts the key in the first variable (username) and the value in the second. Here the value is a whole dictionary, which is why user_info['first'] works.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0331",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nusers = {\n    'rsharma': {'first': 'rohit', 'last': 'sharma', 'location': 'mumbai'},\n    'pkaur': {'first': 'preet', 'last': 'kaur', 'location': 'amritsar'},\n    }\nfor username, user_info in users.items():\n    full_name = user_info['first'] + \" \" + user_info['last']\n    print(full_name.title() + \", \" + user_info['location'].title())",
+   "c": [
+    "Rsharma, Mumbai / Pkaur, Amritsar",
+    "Rohit Sharma, Mumbai / Preet Kaur, Amritsar",
+    "Rohit Sharma, Mumbai",
+    "rohit sharma, mumbai / preet kaur, amritsar"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Each pass reads first, last and location from that user's inner dictionary; title() capitalises each word. The usernames are never printed.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0332",
+   "topic": "Dictionaries",
+   "q": "What happens when this runs?\n\nusers = {'aeinstein': {'first': 'albert', 'location': 'princeton'}}\nprint(users['location'])",
+   "c": [
+    "It prints princeton",
+    "It prints {'location': 'princeton'}",
+    "KeyError",
+    "NameError"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The outer dictionary's only key is 'aeinstein'; 'location' belongs to the inner dictionary. Use users['aeinstein']['location'].",
+   "lec": 23,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0333",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\ncities = {\n    'jodhpur': {'state': 'rajasthan', 'fact': 'blue city'},\n    'kochi': {'state': 'kerala', 'fact': 'port city'},\n    }\nprint(cities['kochi']['fact'].title())",
+   "c": [
+    "Port City",
+    "Blue City",
+    "Kerala",
+    "port city"
+   ],
+   "a": [
+    0
+   ],
+   "w": "['kochi'] picks Kochi's inner dictionary and ['fact'] picks 'port city' from it; title() then capitalises both words.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0334",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nmenu = {'chai': ['small', 'large'], 'coffee': ['large']}\nfor drink, sizes in menu.items():\n    print(drink + \":\")\n    for size in sizes:\n        print(\"- \" + size)\nprint(\"end\")",
+   "c": [
+    "chai: / coffee: / - small / - large / - large / end",
+    "chai: / - small / - large / end / coffee: / - large / end",
+    "chai: / - small / coffee: / - large / end",
+    "chai: / - small / - large / coffee: / - large / end"
+   ],
+   "a": [
+    3
+   ],
+   "w": "For each drink the outer loop prints its name, then the inner loop prints every size in that drink's list. end is not indented, so it prints once, after both loops finish.",
+   "lec": 23,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0335",
+   "topic": "Dictionaries",
+   "q": "A site must look up any member's first name, last name and city straight from their username. Which structure from the lecture fits?",
+   "c": [
+    "A list of usernames",
+    "A dictionary with usernames as keys and a dictionary of details as each value",
+    "A single dictionary with the keys first, last and city",
+    "A list with one long string per member"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A dictionary in a dictionary lets users['username'] jump to that member's details. One flat dictionary holds only one member, and a list would have to be searched.",
+   "lec": 23,
+   "lv": "analyse"
   }
  ],
  "briefs": {
@@ -6458,7 +7314,7 @@ HUB.addCourse({
    "scopeShort": "Lectures 1–15",
    "tag": "from the official LMS announcement",
    "lede": "Every figure below is from the official Quiz 1 announcement on the LMS and the syllabus document attached to it — not from lecture audio. Where Dr. Pathak said something different in class, the announcement wins.",
-   "html": "<div class=\"grid2\">\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Confirmed on the official announcement</h4>\n        <div class=\"scroller\"><table><tbody>\n          <tr><td><strong>Date</strong></td><td>Saturday 26 September</td></tr>\n          <tr><td><strong>Window</strong></td><td>5:00–5:20 PM IST · join from <strong>4:45 PM</strong></td></tr>\n          <tr><td><strong>Questions</strong></td><td><strong>60</strong>, for <strong>60 marks</strong></td></tr>\n          <tr><td><strong>Type</strong></td><td>MCQ</td></tr>\n          <tr><td><strong>Weight</strong></td><td>15% · best 2 of 3 quizzes</td></tr>\n          <tr><td><strong>Score release</strong></td><td>By Mon 28 September, 5:00 PM (tentative)</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--bad);background:var(--bad-soft)\">\n          <b>Negative marking.</b> +1 correct, <strong>−0.25 for a wrong answer</strong>, 0 if left blank. This is on the official announcement and was <em>not</em> mentioned in any lecture.\n        </div>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Syllabus — settled</h4>\n        <p style=\"font-size:14.5px\">The announcement attaches an official syllabus document listing the examinable lectures explicitly. It stops at <strong>Week 6 — Working with Lists Part 2</strong>.</p>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--good);background:var(--good-soft)\">\n          <b>Lecture #16 was not in Quiz 1.</b> <em>Working with Lists Part 3</em> — copying lists and tuples — was not in Quiz 1. It is still on this page, clearly marked, because it is ten minutes of material and it makes Part 2 easier to hold on to.\n        </div>\n        <div class=\"warnbox\" style=\"margin-top:10px;border-left-color:var(--good);background:var(--good-soft)\">\n          <b>Also out.</b> The shared deck runs on to <code>if</code> statements, dictionaries, <code>while</code> loops and functions. None of it has been lectured. Don't revise it.\n        </div>\n        <p style=\"font-size:13.5px;color:var(--ink-3);margin-top:11px\">In Live Lecture 3 Dr. Pathak said &ldquo;8am&rdquo; and described the scope more loosely. The announcement and its syllabus document supersede both.</p>\n      </div>\n    </div>\n\n    <div class=\"card\" style=\"margin-top:14px;border-left:3px solid var(--clay)\">\n      <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">The two constraints: 20 seconds, and −0.25</h4>\n      <p style=\"font-size:14.5px;color:var(--ink-2)\">60 questions in 20 minutes is pure recall — there is no time to derive anything. And now a wrong answer costs you, which changes what to do with the ones you don't know.</p>\n      <div class=\"scroller\" style=\"margin-top:11px\"><table><thead><tr><th>Situation</th><th>Expected value</th><th>Do</th></tr></thead><tbody>\n        <tr><td>You know it</td><td><strong>+1.00</strong></td><td>Answer</td></tr>\n        <tr><td>You can rule out two of four</td><td><strong>+0.38</strong></td><td>Answer — clearly worth it</td></tr>\n        <tr><td>You can rule out one of four</td><td><strong>+0.17</strong></td><td>Answer</td></tr>\n        <tr><td>Blind guess between four</td><td><strong>+0.06</strong></td><td>Answer, but it gains you next to nothing</td></tr>\n        <tr><td>Leave it blank</td><td><strong>0.00</strong></td><td>Only if you are genuinely lost</td></tr>\n      </tbody></table></div>\n      <ul style=\"margin:11px 0 0;padding-left:19px;font-size:14.5px;line-height:1.7\">\n        <li><strong>Eliminate before you guess.</strong> Ruling out one option nearly triples the value of a guess; ruling out two makes it six times better. Blind guessing is close to worthless.</li>\n        <li><strong>Never re-read a question.</strong> If it isn't there in ~15 seconds, eliminate what you can, commit, move.</li>\n        <li><strong>Drill recognition, not understanding.</strong> Definitions, the four classification schemes, and which Python method does what.</li>\n      </ul>\n    </div>",
+   "html": "<div class=\"grid2\">\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Confirmed on the official announcement</h4>\n        <div class=\"scroller\"><table><tbody>\n          <tr><td><strong>Date</strong></td><td>Saturday 26 September</td></tr>\n          <tr><td><strong>Window</strong></td><td>5:00–5:20 PM IST · join from <strong>4:45 PM</strong></td></tr>\n          <tr><td><strong>Questions</strong></td><td><strong>60</strong>, for <strong>60 marks</strong></td></tr>\n          <tr><td><strong>Type</strong></td><td>MCQ</td></tr>\n          <tr><td><strong>Weight</strong></td><td>30% of the course: the higher of your two quiz scores counts (rule from 14 Oct; at Quiz 1 it was 15%, best 2 of 3, plus 10% participation)</td></tr>\n          <tr><td><strong>Score release</strong></td><td>By Mon 28 September, 5:00 PM (tentative)</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--bad);background:var(--bad-soft)\">\n          <b>Negative marking.</b> +1 correct, <strong>−0.25 for a wrong answer</strong>, 0 if left blank. This is on the official announcement and was <em>not</em> mentioned in any lecture.\n        </div>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Syllabus — settled</h4>\n        <p style=\"font-size:14.5px\">The announcement attaches an official syllabus document listing the examinable lectures explicitly. It stops at <strong>Week 6 — Working with Lists Part 2</strong>.</p>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--good);background:var(--good-soft)\">\n          <b>Lecture #16 was not in Quiz 1.</b> <em>Working with Lists Part 3</em> — copying lists and tuples — was not in Quiz 1. It is still on this page, clearly marked, because it is ten minutes of material and it makes Part 2 easier to hold on to.\n        </div>\n        <div class=\"warnbox\" style=\"margin-top:10px;border-left-color:var(--good);background:var(--good-soft)\">\n          <b>Also out.</b> The shared deck runs on to <code>if</code> statements, dictionaries, <code>while</code> loops and functions. None of it has been lectured. Don't revise it.\n        </div>\n        <p style=\"font-size:13.5px;color:var(--ink-3);margin-top:11px\">In Live Lecture 3 Dr. Pathak said &ldquo;8am&rdquo; and described the scope more loosely. The announcement and its syllabus document supersede both.</p>\n      </div>\n    </div>\n\n    <div class=\"card\" style=\"margin-top:14px;border-left:3px solid var(--clay)\">\n      <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">The two constraints: 20 seconds, and −0.25</h4>\n      <p style=\"font-size:14.5px;color:var(--ink-2)\">60 questions in 20 minutes is pure recall — there is no time to derive anything. And now a wrong answer costs you, which changes what to do with the ones you don't know.</p>\n      <div class=\"scroller\" style=\"margin-top:11px\"><table><thead><tr><th>Situation</th><th>Expected value</th><th>Do</th></tr></thead><tbody>\n        <tr><td>You know it</td><td><strong>+1.00</strong></td><td>Answer</td></tr>\n        <tr><td>You can rule out two of four</td><td><strong>+0.38</strong></td><td>Answer — clearly worth it</td></tr>\n        <tr><td>You can rule out one of four</td><td><strong>+0.17</strong></td><td>Answer</td></tr>\n        <tr><td>Blind guess between four</td><td><strong>+0.06</strong></td><td>Answer, but it gains you next to nothing</td></tr>\n        <tr><td>Leave it blank</td><td><strong>0.00</strong></td><td>Only if you are genuinely lost</td></tr>\n      </tbody></table></div>\n      <ul style=\"margin:11px 0 0;padding-left:19px;font-size:14.5px;line-height:1.7\">\n        <li><strong>Eliminate before you guess.</strong> Ruling out one option nearly triples the value of a guess; ruling out two makes it six times better. Blind guessing is close to worthless.</li>\n        <li><strong>Never re-read a question.</strong> If it isn't there in ~15 seconds, eliminate what you can, commit, move.</li>\n        <li><strong>Drill recognition, not understanding.</strong> Definitions, the four classification schemes, and which Python method does what.</li>\n      </ul>\n    </div>",
    "mapLede": "All 16 lectures in scope. The three live sessions largely re-teach the recorded ones, which is a useful signal: material repeated across both is what he thinks matters.",
    "syllabusNote": "everything to 20 Sep",
    "drillLede": "Nine of these are the actual “Test your knowledge” questions from the course deck — marked <span style=\"font-family:var(--mono);font-size:11px;background:var(--clay-soft);color:var(--clay);padding:1px 7px;border-radius:99px\">FROM DECK</span>. The rest are written from the lectures. Turn the pacer on to rehearse the real 20-second clock.",
@@ -6508,6 +7364,8 @@ HUB.addCourse({
   "lec-18",
   "lec-19",
   "lec-20",
-  "lec-21"
+  "lec-21",
+  "lec-22",
+  "lec-23"
  ]
 });

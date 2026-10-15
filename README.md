@@ -149,6 +149,9 @@ python3 tools/build-offline.py
 
 Full history in [`CHANGELOG.md`](CHANGELOG.md). Most recent:
 
+- **[2.3.0] — 2026-10-15**: the new grading rule for every course (two quizzes, the higher
+  counts, 30%; offline exam 70%; no Quiz 3), and the 13 lectures released 9–13 October
+  (228 questions; 2,180 in all).
 - **[2.2.0] — 2026-10-05**: the 35 lectures released since Quiz 1 (563 questions, with exam hints
   from the lecturers), textbook notes for what has been taught so far, and 284 diagrams
   across the notes. Also fixes the `print` naming rule and a z-score example, and adds a

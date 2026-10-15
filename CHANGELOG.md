@@ -10,6 +10,45 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.3.0] — 2026-10-15
+
+### Changed
+- **Grading: the hub now follows the new rule for every course.** The LMS announcement of
+  14 October ("Update: New Grading Structure for All Courses") replaced the per-course
+  weightings. Every course now has **two quizzes, and only the higher score counts, for 30%**;
+  the **offline end-term exam is 70%**. There is no Quiz 3 and no participation component. The
+  course cards, each course's weighting box and grading bar, the Quiz 1 briefs and the note
+  on the home page now say so, and Quiz 3 is gone from every course's assessments.
+
+### Fixed
+- **Economic & Business History: the flashcard "Quizzes here are 20%, not 15%" was out of
+  date.** It taught the old weighting (20% a quiz, best 2 of 3). It now teaches the new rule.
+  It keeps its ID, so your review history for it carries over.
+
+### Added
+- **The 13 lectures released 9–13 October**, as notes, diagrams, traps, flashcards and
+  **228 new questions** (2,180 in all). None of them had slides or attachments on the LMS, so
+  each was built from its transcript and the LMS summary; where those garbled a name or a
+  number, it was checked or left out, and where the lecturer misspoke the notes say so.
+  - **Foundations of Computing, L#22–23:** looping through dictionaries (items, keys, sorted,
+    values, set) and nesting (dictionaries in lists, lists and dictionaries in dictionaries).
+    Every code example was run. 39 questions.
+  - **Algorithmic Thinking, L#21–22:** algorithmic complexity (best/worst/average case, growth
+    classes, the Big O of stack, queue and linked-list operations) and search algorithms
+    (linear, binary, jump, exponential, hash) with his five use cases. 39 questions.
+  - **Economic & Business History, L#22–23:** the three economic systems' pros and cons and
+    industrial social life (closing Module 3), then Module 4 opens with the evolution of
+    management thought: rule of thumb, division of labour and Taylor. Two new units. 40 questions.
+  - **Financial Accounting, L#22–24:** the balance sheet (liquidity vs permanency order, both
+    layouts), the cash flow statement (cash equivalents and the three activities, under AS 3,
+    in a new unit), and Live Lecture 5's final-accounts session, including closing stock at the
+    lower of cost and net realisable value. 47 questions.
+  - **Statistics for Managers, L#21–22:** the Marion Dairies sampling case in Excel, and interval
+    estimation with σ known (margin of error, 90/95/99% intervals), in a new unit. 33 questions.
+  - **Principles of Marketing, L#24–25:** perception (its four characteristics, meaning over
+    stimulus, perceptual product categories) and the live session on sensory thresholds and
+    Gestalt principles. 30 questions, three of them multiple-correct like the real quiz.
+
 ## [2.2.4] — 2026-10-09
 
 ### Added

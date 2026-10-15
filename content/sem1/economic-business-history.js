@@ -133,6 +133,18 @@ HUB.addCourse({
    "Week 8 — Economic Systems from the Industrial Revolution",
    "Capitalism, socialism, communism and why",
    "rec"
+  ],
+  [
+   22,
+   "Week 9 — Impact on Social and Cultural Life",
+   "Systems' pros and cons; industrial social life",
+   "rec"
+  ],
+  [
+   23,
+   "Week 9 — Evolution of Management Thought & Practices",
+   "Rule of thumb, division of labour, Taylor",
+   "rec"
   ]
  ],
  "units": [
@@ -455,8 +467,8 @@ HUB.addCourse({
   {
    "id": "systems",
    "title": "Capitalism, socialism &amp; communism",
-   "tag": "Lecture 21 · Module 3",
-   "lede": "The capstone of Module 3: why capitalism rose, and why socialism and communism rose against it. Learn the definitions word for word and the order.",
+   "tag": "Lectures 21–22 · Module 3",
+   "lede": "The capstone of Module 3: why capitalism rose, why socialism and communism rose against it, and what each does well and badly. Learn the definitions word for word, the order, and the pros and cons.",
    "topics": [
     {
      "t": "Capitalism and why it rose",
@@ -477,6 +489,62 @@ HUB.addCourse({
      "t": "Mixed economies, and the pros-and-cons question",
      "src": "L#21",
      "h": "\n<div class=\"def\">No economy today is <b>purely</b> capitalist, socialist or communist. Real economies are <b>mixtures</b>: private ownership, some public ownership, government regulation and safety nets, community initiatives, and democratic participation alongside markets.</div>\n<div class=\"def\"><b>From the lecture (L#21):</b> he set the class a question and said it would be discussed in the <b>next class</b>: <b>what are the pros and cons of capitalism, socialism and communism</b>, and <b>which sectors fit which system</b> better (for example, where decentralised, community control makes sense). Prepare an answer for each system, with a sector example.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">How to prepare (beyond the lecture): for each system, take one strength and one weakness from this unit's own material — capitalism's efficiency argument against the conditions that produced the labour movement; socialism's labour-safety laws against its dependence on the state; communism's equality against the fact that the stateless stage has never been reached.</p>\n"
+    },
+    {
+     "t": "Pros, cons and sector fit of the three systems",
+     "src": "L#22",
+     "h": "\n<div class=\"def\"><b>From the lecture (L#22):</b> this is his answer to the question he set at the end of L#21: the <b>pros and cons of capitalism, socialism and communism</b>, and <b>which sectors suit which system</b>. He judged each system <b>as if it stood alone</b>, not in the mixed form real economies take. Learn three pros and the cons for each system, plus the sector-fit rule.</div>\n<h4>How the three systems run (recap)</h4>\n<div class=\"scroller\"><table><thead><tr><th>System</th><th>Who owns</th><th>How prices and output are set</th><th>Core goal</th></tr></thead><tbody><tr><td><strong>Capitalism</strong></td><td>Private individuals and corporations</td><td><strong>Supply and demand</strong> in the market</td><td>Individual profit and growth</td></tr><tr><td><strong>Socialism</strong></td><td>The state or the public (collective ownership), with some room for private firms</td><td>A <strong>mix of government planning and markets</strong></td><td>Social cohesion and equity</td></tr><tr><td><strong>Communism</strong></td><td>Collective control at a <strong>very local</strong> level</td><td><strong>Decentralised</strong> decisions</td><td>A classless, stateless, egalitarian society</td></tr></tbody></table></div>\n<h4>Capitalism</h4>\n<ul>\n <li><strong>Pro: drives innovation.</strong> Individuals own the output of their own effort, so they have an incentive to innovate, make things cheaper and solve consumers' problems. The end point he named is the <strong>welfare of society</strong>.</li>\n <li><strong>Pro: economic freedom.</strong> Two sides: <strong>consumer choice</strong> (his example: shelves full of biscuit brands and varieties) and the <strong>freedom to start a business</strong> around a new idea.</li>\n <li><strong>Pro: high growth potential.</strong> GDP growth of <strong>7–8%</strong> is possible, especially in developing economies; developed economies grow more slowly.</li>\n <li><strong>Con: wealth inequality.</strong> Growth does not reach everyone equally, and wages of lower-income groups may not rise. In a pure system you buy everything in the market — food, healthcare, schooling — so too little income means going without.</li>\n <li><strong>Con: market failure.</strong> Capitalism assumes consumers have <strong>choice, complete information and negotiating power</strong>. A patient admitted to hospital has little information and no bargaining power; parents facing rising <strong>school fees</strong> are in the same position. Producers then become stronger than consumers and can set the price, and the market fails.</li>\n <li><strong>Con: environmental degradation.</strong> Air, water and noise pollution, worst in towns along industrial belts and production hubs.</li>\n</ul>\n<h4>Socialism</h4>\n<p style=\"font-size:14.5px\">It arose as a <strong>reaction to capitalism's weaknesses</strong>. Why government can do better in sectors like health and education: it has <strong>more negotiating power</strong>, can <strong>demand information</strong> from firms, and can <strong>run its own schools and hospitals</strong>. He named IITs, IIMs, AIIMS and Kendriya Vidyalayas as public institutions that became benchmarks.</p>\n<ul>\n <li><strong>Pro: a guaranteed safety net.</strong> Healthcare and education are assured, so falling ill does not mean being left to die.</li>\n <li><strong>Pro: public interest as the focus</strong>, not private gain, and a degree of <strong>economic stability</strong>.</li>\n <li><strong>Pro: potential to reduce inequality</strong>, for example through <strong>minimum wages</strong> for unskilled, semi-skilled and skilled work. In India they are set by the central government and, mostly, by state governments. His example: if the minimum is <strong>₹200 a day</strong>, no employer may pay less.</li>\n <li><strong>Con: a higher tax burden.</strong> Services and the people who run them are paid for by taxing the population.</li>\n <li><strong>Con: slow action and inefficiency.</strong> Bureaucracy moves slowly, which can mean slower growth: India grew only about <strong>2–3%</strong> a year before 1991.</li>\n <li><strong>Con: some loss of personal freedom</strong>, in some sectors, as control shifts from the individual to the government or the collective.</li>\n</ul>\n<h4>Communism</h4>\n<ul>\n <li><strong>Pro: a classless society</strong>, with no higher-, middle- or lower-income groups, because everyone receives an equal income.</li>\n <li><strong>Pro: full employment</strong> and resources aligned to need.</li>\n <li><strong>Pro: local involvement in decisions.</strong> Villages and towns take part, carrying development to the last village; especially valuable for <strong>managing the environment</strong>.</li>\n <li><strong>Con: severe shortages</strong>, where capitalism tends to produce surpluses.</li>\n <li><strong>Con: loss of personal freedom.</strong></li>\n</ul>\n<h4>Which sectors suit which system</h4>\n<div class=\"def\">The rule: where consumers have <b>power and information</b>, the <b>free market</b> fits. Where they lack power or information, as in <b>healthcare and education</b>, some <b>government control or regulation</b> (socialism) fits better. <b>Local, community decision-making</b> (the communist strength) suits managing local resources and the environment.</div>\n<!--viz:ebh-systems-pros-cons--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of the pros, cons and best-fit sectors of capitalism, socialism and communism, as the lecture judged each system standing alone.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Each system's pros, cons and best-fit sectors</div><div class=\"scroller\"><table><thead><tr><th></th><th>Capitalism</th><th>Socialism</th><th>Communism</th></tr></thead><tbody><tr><td>Pros</td><td style=\"background:var(--good-soft)\">Innovation · economic freedom · high growth (7–8%)</td><td style=\"background:var(--good-soft)\">Safety net · public interest · less inequality (minimum wages)</td><td style=\"background:var(--good-soft)\">Classless · full employment · local decision-making</td></tr><tr><td>Cons</td><td style=\"background:var(--bad-soft)\">Wealth inequality · market failure · pollution</td><td style=\"background:var(--bad-soft)\">Higher taxes · slow and inefficient (pre-1991 India: 2–3%) · less freedom</td><td style=\"background:var(--bad-soft)\">Severe shortages · less freedom</td></tr><tr><td>Best fit</td><td style=\"background:var(--blue-soft)\">Sectors where consumers have power and information</td><td style=\"background:var(--blue-soft)\">Healthcare and education, where consumers lack both</td><td style=\"background:var(--blue-soft)\">Local resources and the environment</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The sector decides the system: who has the information and the bargaining power?</figcaption></figure><!--/viz:ebh-systems-pros-cons-->"
+    }
+   ]
+  },
+  {
+   "id": "society",
+   "title": "Social &amp; cultural life in the Industrial Revolution",
+   "tag": "Lecture 22 · Module 3",
+   "lede": "How industry remade everyday life: bigger cities, work split from family, a new middle class, science and reason, social novels, individualism and standard time.",
+   "topics": [
+    {
+     "t": "Cities, family and the three classes",
+     "src": "L#22",
+     "h": "\n<div class=\"def\">The <b>last topic of Module 3</b>: how the Industrial Revolution changed the <b>social and cultural life</b> of people, mainly in <b>Western Europe and the US</b>, where its impact was strongest. Social life changed in three ways: <b>urbanisation</b>, <b>work separated from family</b>, and <b>new social classes</b>.</div>\n<h4>1. Urbanisation</h4>\n<div class=\"scroller\"><table><thead><tr><th>City</th><th>Growth (lecture)</th></tr></thead><tbody><tr><td><strong>Manchester</strong></td><td><strong>20,000</strong> in the 1760s → <strong>more than 300,000</strong> by the 1850s (L#16)</td></tr><tr><td><strong>London</strong></td><td><strong>1.1 million</strong> in <strong>1801</strong> → <strong>4.7 million</strong></td></tr></tbody></table></div>\n<p style=\"font-size:14.5px\">Mass migration into the cities brought overcrowding, poor sanitation and bad housing.</p>\n<div class=\"warnbox\"><b>Two numbers to handle with care.</b> (1) He called Manchester's rise \"13 or 14 times\"; 20,000 to 300,000 is <b>15-fold</b>, as L#16 gave it (1771 → 1851). (2) He gave no year for London's 4.7 million. London reached that size around <b>1881</b> (it was about 2.7 million in 1851), so don't pin 4.7 million to the mid-century.</div>\n<h4>2. Work separated from family</h4>\n<ul>\n <li>Work no longer revolved around the household; it moved into the factory.</li>\n <li>Life split into <strong>two spheres</strong>: <strong>work life</strong> and <strong>family life</strong>.</li>\n <li>Family members might work in <strong>different factories</strong> or <strong>different shifts</strong>, or one might not work at all, so <strong>family structure changed</strong>.</li>\n <li>With <strong>10–12-hour days</strong> and poor conditions there was <strong>no work–life balance</strong>.</li>\n</ul>\n<h4>3. New social classes</h4>\n<div class=\"scroller\"><table><thead><tr><th>Class</th><th>Who</th></tr></thead><tbody><tr><td><strong>Bourgeoisie</strong></td><td>Owners of the means of production: factories, tools, land, services</td></tr><tr><td><strong>Proletariat</strong></td><td>Factory-floor workers on 10–12-hour days at minimal wages</td></tr><tr><td><strong>Middle class</strong> (the new class)</td><td><strong>Small</strong> factory owners, <strong>merchants and retailers</strong>, <strong>professionals</strong> such as engineers and managers, and <strong>skilled workers</strong> such as carpenters</td></tr></tbody></table></div>\n<p style=\"font-size:14.5px\">This is the third class that L#21 mentioned and left for later. Big factory owners belong with the industrialists, not the middle class.</p>\n<h4>The middle class and culture</h4>\n<p style=\"font-size:14.5px\">The new middle class was <strong>educated and literate</strong>, and its tastes in <strong>theatre, leisure, fashion and the arts</strong> differed from the working class's. Its demand drove the growth of new <strong>theatre, literature, fashion and art</strong>. Working-class theatre and literature did not disappear; the middle class added a second culture alongside it.</p>\n"
+    },
+    {
+     "t": "Science, reason and social awareness",
+     "src": "L#22",
+     "h": "\n<h4>A scientific revolution alongside the industrial one</h4>\n<p style=\"font-size:14.5px\">The big change in cultural life was a belief that <strong>human beings could improve society through knowledge, invention and hard work</strong>, with <strong>science at the centre</strong>. Science explains the natural world, and its knowledge can be <strong>applied to practical life</strong>: the flying shuttle, the spinning jenny and the steam engine were applied physics, chemistry and engineering, and medicine advanced too.</p>\n<p style=\"font-size:14.5px\">In Western Europe this meant <strong>reason, observation, experimentation and evidence</strong> began to count for more than <strong>tradition and ritual</strong>.</p>\n<ul>\n <li><strong>Charles Darwin</strong>, <em>On the Origin of Species</em>: built on <strong>observation</strong> of birds on an island. Living beings are shaped by, and adapt to, their environment.</li>\n <li><strong>Immanuel Kant</strong>: \"have courage to use your own understanding\". \"Own\" puts the <strong>individual</strong> at the centre; \"understanding\" means reasoning from evidence.</li>\n</ul>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: the <em>Origin</em> was published in 1859, and Darwin's island observations were made in the Galápagos. Kant's phrase comes from his 1784 essay answering \"What is Enlightenment?\".</p>\n<div class=\"warnbox\"><b>Dating.</b> The lecture presents the scientific revolution as running <b>alongside</b> the Industrial Revolution. Historians usually date the Scientific Revolution to the <b>16th–17th centuries</b> (Copernicus to Newton), with Kant's Enlightenment in the 18th; the hub's textbook notes (Allen) treat it as a backdrop to industry. Learn what the lecture stressed: reason, observation, experimentation and evidence.</div>\n<h4>New social awareness</h4>\n<p style=\"font-size:14.5px\">Newspapers, books, novels and public campaigns took up <strong>poverty, overcrowded housing, poor sanitation and working conditions</strong>, especially the conditions of <strong>women and children</strong>. This writing became part of cultural life itself: culture now discussed the ills of society, not only traditions and rituals.</p>\n<ul>\n <li>His example: <strong>Charles Dickens, <em>Hard Times</em></strong>, about an industrial town whose brick would have been red if smoke and ash had let it. (Context: published in 1854; the town is the fictional Coketown.)</li>\n <li>He suggested such literature probably helped push reforms such as the <strong>Factory Act 1833</strong> and the <strong>Ten Hours Act 1847</strong> (L#20).</li>\n</ul>\n<!--viz:ebh-culture-to-reform-chain--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Vertical chain: factories and cities create an educated middle class; its tastes create demand for theatre, literature and the arts; novels, newspapers and campaigns expose social ills; public pressure helps bring the Factory Act 1833 and the Ten Hours Act 1847.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">From a new middle class to reform laws</div><div style=\"display:flex;flex-direction:column;gap:4px;font-size:14px;max-width:460px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Factories and cities</b> create a new <b>educated middle class</b></div><div style=\"color:var(--ink-3);font-size:13px;padding:1px 0 1px 14px\">↓ literate, with its own tastes</div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Demand for new <b>theatre, literature, fashion and arts</b></div><div style=\"color:var(--ink-3);font-size:13px;padding:1px 0 1px 14px\">↓ science and reason: society can be improved</div><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Novels, newspapers and campaigns</b> expose poverty, slums and factory conditions<br><span style=\"color:var(--ink-2);font-size:13px\">e.g. Dickens, Hard Times</span></div><div style=\"color:var(--ink-3);font-size:13px;padding:1px 0 1px 14px\">↓ public pressure, the lecture suggests</div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Reform laws</b>: Factory Act 1833, Ten Hours Act 1847</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Culture was not only entertainment: social novels and newspapers fed the reform movement.</figcaption></figure><!--/viz:ebh-culture-to-reform-chain-->"
+    },
+    {
+     "t": "Women, individualism and standard time",
+     "src": "L#22",
+     "h": "\n<h4>The changing role of women</h4>\n<p style=\"font-size:14.5px\">Women moved <strong>out of the household</strong> into factory work. Their conditions were very bad, but society changed with them, and this fed the <strong>20th-century movements for women's voting rights</strong>, especially in developed countries.</p>\n<h4>Faith in technology</h4>\n<p style=\"font-size:14.5px\">Closely tied to the rise of science: confidence that invention would solve problems.</p>\n<h4>The rise of individualism</h4>\n<ul>\n <li>The <strong>individual</strong>, separate from the community, the family and other social institutions, became the centre of things (Kant's \"your own understanding\").</li>\n <li>It brought <strong>individual freedom, personal ambition, private property and economic opportunity</strong>: you can start your own business or make your own inventions.</li>\n <li>Seen through a <strong>market lens</strong>, the individual becomes a <strong>consumer</strong>.</li>\n <li>The individual is <strong>empowered only with information and rights</strong>, which depends on institutions and a <strong>transparent policy environment</strong>. Its downsides are the cons of capitalism.</li>\n</ul>\n<h4>Standard time (mentioned briefly)</h4>\n<p style=\"font-size:14.5px\">Railways ran long distances through cities that each kept their <strong>own local time</strong>, which made timetables very hard for train operators. Time was therefore <strong>standardised</strong> at the national and then the global level; India today runs <strong>5½ hours ahead of GMT</strong>. He linked the idea that \"time is money\" to this: time can only be money once it is standard.</p>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: British railways moved to a single \"railway time\" based on London (Greenwich) in the 1840s, and Greenwich became the world's prime meridian in 1884. The phrase \"time is money\" itself is older (Benjamin Franklin, 1748).</p>\n<div class=\"def\"><b>From the lecture (L#22):</b> this lecture <b>closes Module 3</b> (the Industrial Revolution). <b>Modules 4 and 5</b> turn to <b>business history</b>, with the focus on the <b>Indian context</b> rather than the global one.</div>\n"
+    }
+   ]
+  },
+  {
+   "id": "mgmt",
+   "title": "Evolution of management thought",
+   "tag": "Lecture 23 · Module 4",
+   "lede": "How management became a science: from rule of thumb to Smith's division of labour (1776) and Taylor's scientific management (1898–1901), and what it cost workers.",
+   "topics": [
+    {
+     "t": "From rule of thumb to a science of management",
+     "src": "L#23",
+     "h": "\n<div class=\"def\">Module 4 opens <b>business history</b> with the <b>evolution of management thought and practices</b>, from the <b>1800s to 1950</b> (later ideas appear only as examples). The question it answers: <b>how did management turn from an unstructured art into a rigorous science?</b></div>\n<p style=\"font-size:14.5px\">It follows on from L#22, where science became the way to solve problems: here, systematic and scientific thinking enters management. He warned that this also changed, and in fact <strong>worsened</strong>, the relationship between owners or supervisors and workers.</p>\n<h4>Before: management by rule of thumb</h4>\n<ul>\n <li>Goods were made by <strong>skilled artisans</strong> in <strong>small workshops</strong> of about <strong>5–10 people</strong>.</li>\n <li><strong>Rule of thumb</strong>: no standard rules. The manager went by <strong>intuition and personal experience</strong>, or by guesswork and trial and error.</li>\n <li>No standard rules for <strong>hiring and firing</strong>, or for measuring the productivity of a <strong>worker, a machine or the factory</strong>.</li>\n <li>His example: a manager with 20 years' experience may \"know\" a skilled worker makes 10 pieces an hour. A manager without that experience has no benchmark at all.</li>\n</ul>\n<h4>After: thousands of unskilled workers under one roof</h4>\n<p style=\"font-size:14.5px\">Industrial factories packed <strong>thousands of unskilled workers</strong> into single massive buildings: Manchester's Cottonopolis (L#16), and in the US the <strong>Amoskeag Manufacturing Company</strong> of <strong>Manchester, New Hampshire</strong>, which at one point in the early 20th century employed about <strong>17,000 workers</strong>. Even spread over 20–30 sites, that is hundreds of workers at each, far harder to manage than 5–10.</p>\n<div class=\"def\"><b>Fair day's work</b>: the <b>minimum</b> output a worker should produce when working properly, with proper rest and following the rules set by owners and managers. The idea assumes the worker's <b>welfare</b> is also being looked after.</div>\n<p style=\"font-size:14.5px\">Owners had <strong>no standard way to measure a fair day's work</strong>. So productivity had to be <strong>standardised and benchmarked</strong>: if the standard is 100 pieces and a worker or machine makes 80 or 90, you ask why. That need brought the principles of science into management: <strong>scientific management</strong>.</p>\n<!--viz:ebh-rule-of-thumb-vs-scientific--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two-column comparison of rule-of-thumb management and scientific management by setting, source of standards, hiring, judging performance and who decides the method.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Rule of thumb vs scientific management</div><div class=\"scroller\"><table><thead><tr><th></th><th>Rule of thumb</th><th>Scientific management</th></tr></thead><tbody><tr><td>Setting</td><td>Workshop of 5–10 skilled artisans</td><td>Factory of hundreds or thousands of unskilled workers</td></tr><tr><td>Standards come from</td><td>The manager's intuition and experience</td><td style=\"background:var(--blue-soft)\">Objective data: time and motion studies</td></tr><tr><td>Hiring</td><td>Favouritism, nepotism, who you know</td><td style=\"background:var(--blue-soft)\">Matching the job's needs to the worker's abilities</td></tr><tr><td>Judging performance</td><td>Subjective; differs by manager</td><td>Against a benchmark time or output</td></tr><tr><td>Who decides the method</td><td>Left to the worker or manager to judge</td><td style=\"background:var(--clay-soft)\">Planned by managers; workers carry it out</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Scientific management replaced judgement with measurement, and moved the planning to managers.</figcaption></figure><!--/viz:ebh-rule-of-thumb-vs-scientific-->"
+    },
+    {
+     "t": "Division of labour: Adam Smith (1776)",
+     "src": "L#23",
+     "h": "\n<div class=\"def\"><b>Division of labour</b>: dividing a <b>complex production process</b> into <b>distinct, smaller tasks</b>, each assigned to a <b>specific worker or group of workers</b>.</div>\n<ul>\n <li>Set out by <strong>Adam Smith</strong> in <em>The Wealth of Nations</em>, <strong>1776</strong>, in the middle of the British Industrial Revolution (1760s–1850s).</li>\n <li>Taylor later built on it, so it is the base of <strong>Taylorism</strong>. It is found in <strong>services</strong> as well as factories.</li>\n <li>His pen example: the tip, the body parts, the refill and the button are each made by one worker or group sitting together, then brought to one place for <strong>assembly</strong>.</li>\n</ul>\n<h4>The pin factory</h4>\n<p style=\"font-size:14.5px\">One worker doing <strong>every step</strong> (drawing out, straightening, cutting and pointing the wire, grinding the top, attaching the head) could make about <strong>one pin a day</strong>. With the job broken into <strong>18 distinct operations</strong>, one per worker, output rose to <strong>thousands of pins a day</strong>. Smith based this on a factory he had observed.</p>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">The hub's textbook notes (Leigh ch4) give Smith's own figure: about 4,800 pins per worker per day.</p>\n<h4>The three pillars</h4>\n<div class=\"scroller\"><table><thead><tr><th>Pillar</th><th>How it works</th></tr></thead><tbody><tr><td><strong>1. Specialisation</strong></td><td>Focusing on one task, the worker learns the task and the <strong>peculiarities of the machine</strong> (like knowing your own vehicle's sounds). An <strong>unskilled worker becomes skilled</strong> at that task, and speed rises, say from 5–10 pieces an hour to 20, 30, 40</td></tr><tr><td><strong>2. Efficiency</strong></td><td><strong>Saves time</strong>: no switching between tools, machines or workstations (no stopping to change a lathe's tool)</td></tr><tr><td><strong>3. Mass production</strong></td><td>Combined with <strong>machinery</strong>, factories make goods <strong>much faster</strong> and at <strong>much lower cost</strong>, and can organise thousands of workers</td></tr></tbody></table></div>\n<p style=\"font-size:14.5px\">He presented division of labour as the <strong>first principle of the classical approach</strong> to management (scientific management); the second is Taylor's <strong>one best way</strong>. Division of labour has downsides too; they appear in the criticisms of scientific management.</p>\n"
+    },
+    {
+     "t": "Taylor and scientific management",
+     "src": "L#23",
+     "h": "\n<p style=\"font-size:14.5px\"><strong>Frederick Winslow Taylor</strong>, an American, late 19th century: the <strong>one best way</strong> to perform any task. Division of labour splits the process into tasks; Taylor <strong>standardises each task</strong>: the <strong>tool</strong>, the <strong>method</strong>, the <strong>hand and body motions</strong> and the <strong>time</strong> it should take a physically healthy worker. Applying science to management in this way makes him the <strong>father of scientific management</strong>; the system is also called <strong>Taylorism</strong>.</p>\n<p style=\"font-size:14.5px\">Standards also give a basis for <strong>assessing performance</strong>. If the benchmark is 8–10 minutes, a worker taking 12–13 minutes is studied for unnecessary motions; one taking under 8 is studied to learn the faster method.</p>\n<h4>Taylor's foundational principles: the lecture taught the first two</h4>\n<div class=\"scroller\"><table><thead><tr><th>Principle</th><th>What it means</th></tr></thead><tbody><tr><td><strong>1. A rule of science for each aspect of a job</strong></td><td>Standards come from <strong>objective data gathered by research</strong>: <strong>time and motion studies</strong>. A <strong>stopwatch</strong> breaks the worker's movements into seconds and minutes, and <strong>unnecessary motions are eliminated</strong>. He linked these to today's ergonomic studies</td></tr><tr><td><strong>2. Scientific selection of workers</strong></td><td>Hire by matching the <strong>job description</strong> to the worker's <strong>abilities and skills</strong> (a loading job needs a physically fit worker), not by <strong>favouritism or nepotism</strong></td></tr></tbody></table></div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Taylor had four principles. The other two, which the lecture only touched on, are cooperation between management and workers and an equal division of work and responsibility between them. He set them out in <em>The Principles of Scientific Management</em> (1911).</p>\n<h4>The pig-iron experiment: Bethlehem Steel, Pennsylvania, 1898–1901</h4>\n<ul>\n <li>The task: loading blocks of <strong>pig iron</strong> onto rail cars, done by a gang of <strong>70–80 workers</strong>.</li>\n <li>Taylor picked a <strong>physically fit, highly motivated</strong> labourer, called <strong>\"Schmidt\"</strong> in his writings; his real name was <strong>Henry Noll</strong>.</li>\n <li>He was told exactly what to do and when: pick up a pig and walk, sit down and rest, walk again.</li>\n <li>Result: about <strong>47.5 tons</strong> loaded a day, against an average of <strong>12.5 tons</strong>.</li>\n <li>The gain: objective numbers replaced subjective judgements about whether a worker was known to you, obedient, or a relative.</li>\n</ul>\n<div class=\"warnbox\"><b>\"400%\".</b> The lecture called this \"almost four times\", a \"400% increase\". In fact 47.5 ÷ 12.5 = <b>3.8 times</b>, which is a rise of <b>280%</b>. Remember: nearly four times as much.</div>\n<h4>Why the US</h4>\n<p style=\"font-size:14.5px\">Smith's idea came from <strong>Britain in the 18th century</strong>; time and motion study came from the <strong>US in the late 19th</strong>. The centre of industrialisation was <strong>shifting from the UK to the US</strong>, a rise that the <strong>First World War</strong> later accelerated.</p>\n<!--viz:ebh-management-thought-timeline--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Timeline: artisan workshops before the 1760s; the British Industrial Revolution 1760s–1850s; Smith's division of labour 1776; the US as the centre of industrialisation in the late 1800s; the pig-iron experiment 1898–1901; Amoskeag's 17,000 workers in the early 1900s; Taylor's book 1911; later HR theories up to 1950.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Management thought, 1760s to 1950</div><div style=\"border-left:2px solid var(--rule-2);margin-left:6px;padding-left:16px;font-size:14px\"><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">Pre-1760s</b> · Small workshops of skilled artisans; rule of thumb</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1760s–1850s</b> · Industrial Revolution in Britain: thousands per factory</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1776</b> · <b>Adam Smith</b>, The Wealth of Nations: division of labour, the pin factory</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">Late 1800s</b> · The US becomes the centre of industrialisation; Taylor's one best way</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1898–1901</b> · <b>Pig-iron experiment</b>, Bethlehem Steel: 12.5 → 47.5 tons a day</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">Early 1900s</b> · Amoskeag, Manchester (New Hampshire): about 17,000 workers</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1911</b> · <span style=\"color:var(--ink-3)\">Context: Taylor publishes The Principles of Scientific Management</span></div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--clay)\"></span><b style=\"font-family:var(--mono)\">To 1950</b> · Later theories, such as HR management (next lecture)</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Smith (Britain, 1776) divided the work; Taylor (US, 1898–1901) standardised each piece of it.</figcaption></figure><!--/viz:ebh-management-thought-timeline--><!--viz:ebh-pig-iron-tons--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Bar comparison: an average of 12.5 tons of pig iron loaded per worker per day before, against 47.5 tons for Schmidt following Taylor's instructions, a 3.8-fold increase.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The pig-iron experiment in tons per day</div><div style=\"font-size:14px;max-width:440px\"><div style=\"margin-bottom:10px\"><div style=\"font-size:13px;color:var(--ink-2);margin-bottom:3px\">Average loaded per worker per day, before</div><div style=\"display:flex;align-items:center;gap:8px\"><div style=\"flex:0 0 auto;width:20.5%;max-width:78%;height:22px;border-radius:3px;background:var(--clay-soft);border:1px solid var(--clay)\"></div><b style=\"font-family:var(--mono);font-size:14px\">12.5 t</b></div></div><div style=\"margin-bottom:10px\"><div style=\"font-size:13px;color:var(--ink-2);margin-bottom:3px\">Schmidt (Henry Noll), following Taylor's instructions</div><div style=\"display:flex;align-items:center;gap:8px\"><div style=\"flex:0 0 auto;width:78%;max-width:78%;height:22px;border-radius:3px;background:var(--blue-soft);border:1px solid var(--blue)\"></div><b style=\"font-family:var(--mono);font-size:14px\">47.5 t</b></div></div><div style=\"font-size:13px;color:var(--ink-3)\">47.5 ÷ 12.5 = <b style=\"font-family:var(--mono)\">3.8×</b> · a rise of 280%</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Nearly four times as much, which is a 280% rise rather than the 400% the lecture said.</figcaption></figure><!--/viz:ebh-pig-iron-tons-->"
+    },
+    {
+     "t": "Criticisms of scientific management",
+     "src": "L#23",
+     "h": "\n<div class=\"scroller\"><table><thead><tr><th>Criticism</th><th>What went wrong</th></tr></thead><tbody><tr><td><strong>1. Mechanistic view of humans</strong></td><td>Workers treated as <strong>extensions of machines</strong> (move, stop, move). Their <strong>social needs</strong>, workplace relationships and <strong>emotional well-being</strong> were ignored. It assumed workers are motivated <strong>only by money</strong> (pay more for hitting the benchmark), not by a good supervisor or good co-workers. Worse still in services, where people are more involved</td></tr><tr><td><strong>2. Monotony and alienation</strong></td><td>The <strong>same task all day</strong>, 8–10 hours, made work incredibly boring</td></tr><tr><td><strong>3. Exploitation</strong></td><td>Managers used Taylor's time studies to <strong>raise production quotas</strong> while <strong>wages did not rise at the same rate</strong>: more work for relatively less pay</td></tr><tr><td><strong>4. Loss of autonomy</strong></td><td>With a standard method and time, the worker <strong>could not innovate</strong>. <strong>Planning was separated from doing</strong>: managers planned, workers carried out the plan</td></tr></tbody></table></div>\n<p style=\"font-size:14.5px\">The result: efficiency and productivity rose, but <strong>relations between management and workers deteriorated</strong>, including Taylor's own relations with the workers where he worked.</p>\n<div class=\"def\"><b>From the lecture (L#23):</b> the period for management thought is <b>1800s–1950</b>. Of Taylor's four principles, he taught only the <b>first two</b>, as the ones that matter \"in our context\". This lecture takes management thought to the <b>early 1900s</b>; the <b>next lecture</b> covers the theories that followed, such as how <b>HR management</b> arose.</div>\n"
     }
    ]
   }
@@ -545,14 +613,26 @@ HUB.addCourse({
   {
    "name": "Economic systems",
    "unit": "systems"
+  },
+  {
+   "name": "Social & cultural change",
+   "unit": "society"
+  },
+  {
+   "name": "Management thought",
+   "unit": "mgmt"
+  },
+  {
+   "name": "Scientific management",
+   "unit": "mgmt"
   }
  ],
  "traps": [
   {
    "id": "ebh-t0001",
-   "h": "Quizzes here are 20%, not 15%",
-   "p": "Economic & Business History: 3 quizzes at 20% each, best 2 of 3 = 40%, major exam 60%, no participation component. Foundations of Computing is the 15% one.",
-   "f": "20% a quiz, 40% total"
+   "h": "Only your better quiz counts, for 30%",
+   "p": "Since 14 Oct 2026 every course is graded the same way: two quizzes, and only the higher score counts, for 30% of the course; the offline end-term exam is 70%. There is no Quiz 3 and no participation component. (At Quiz 1 it was 20% a quiz, best 2 of 3.)",
+   "f": "Higher of 2 quizzes = 30% · exam 70%"
   },
   {
    "id": "ebh-t0002",
@@ -1092,6 +1172,83 @@ HUB.addCourse({
    "p": "The L#19 slides say England's efforts at overseas settlement began in the 16th century and add \"(1500s)\". Lasting colonies (Jamestown, 1607) and the East India Company charter (1600) came at the start of the 17th century.",
    "f": "century = hundreds + 1",
    "lec": 19
+  },
+  {
+   "id": "ebh-t0082",
+   "h": "Market failure here means consumers lack information or bargaining power, not a stock-market crash",
+   "p": "The lecture's examples are a patient in hospital and parents facing school fees: with no information and no negotiating power, producers set the price.",
+   "f": "no info, no power → failure",
+   "lec": 22
+  },
+  {
+   "id": "ebh-t0083",
+   "h": "Slow growth is socialism's con; shortages are communism's",
+   "p": "Pre-1991 India's 2–3% growth illustrates socialism's slowness and inefficiency. Severe shortages are the con he gave for communism; inequality and pollution are capitalism's.",
+   "f": "slow = socialist, short = communist",
+   "lec": 22
+  },
+  {
+   "id": "ebh-t0084",
+   "h": "The pros and cons assume each system stands alone",
+   "p": "He judged pure systems on purpose. Real economies mix them, which is why government regulation softens capitalism's inequality everywhere.",
+   "f": "pure systems only",
+   "lec": 22
+  },
+  {
+   "id": "ebh-t0085",
+   "h": "The middle class is the new third class, not another name for the bourgeoisie",
+   "p": "Bourgeoisie = owners of the means of production. The middle class = small owners, merchants, professionals such as engineers and managers, and skilled workers.",
+   "f": "owners ≠ middle class",
+   "lec": 22
+  },
+  {
+   "id": "ebh-t0086",
+   "h": "Manchester grew about 15-fold, though this lecture said 13–14",
+   "p": "20,000 (1760s/1771) to about 300,000 (1850s/1851) is 300,000 ÷ 20,000 = 15. Use the L#16 figures.",
+   "f": "20k → 300k = 15×",
+   "lec": 22
+  },
+  {
+   "id": "ebh-t0087",
+   "h": "Division of labour is Adam Smith's (1776), not Taylor's",
+   "p": "Smith divided the work into tasks; Taylor, over a century later, standardised how each task is done (the one best way) and built on Smith.",
+   "f": "Smith divides, Taylor standardises",
+   "lec": 23
+  },
+  {
+   "id": "ebh-t0088",
+   "h": "A fair day's work is a minimum, not the most a worker can manage",
+   "p": "It is the least that should be produced when working properly with proper rest and set rules, and it assumes the worker's welfare is cared for.",
+   "f": "minimum, with welfare",
+   "lec": 23
+  },
+  {
+   "id": "ebh-t0089",
+   "h": "12.5 to 47.5 tons is 3.8 times, a 280% rise, although the lecture said 400%",
+   "p": "47.5 ÷ 12.5 = 3.8. 'Nearly four times as much' is right; a 400% increase would mean five times as much.",
+   "f": "3.8×, not +400%",
+   "lec": 23
+  },
+  {
+   "id": "ebh-t0090",
+   "h": "'Schmidt' was a pseudonym; the worker was Henry Noll",
+   "p": "Taylor called the pig-iron handler Schmidt in his writings. He was picked for being physically fit and highly motivated, not as a typical worker.",
+   "f": "Schmidt = Henry Noll",
+   "lec": 23
+  },
+  {
+   "id": "ebh-t0091",
+   "h": "Smith's idea is British and 18th-century; Taylor's is American and late 19th-century",
+   "p": "The Wealth of Nations is from 1776, in the middle of the British Industrial Revolution. The pig-iron experiment ran at Bethlehem Steel, Pennsylvania, in 1898–1901, as the US became the centre of industry.",
+   "f": "UK 1776 → US 1898",
+   "lec": 23
+  },
+  {
+   "id": "ebh-t0092",
+   "h": "Separating planning from doing is a criticism, not one of the pillars",
+   "p": "The pillars of division of labour are specialisation, efficiency and mass production. Planning by managers and execution by workers is the loss-of-autonomy criticism of scientific management.",
+   "f": "plan ≠ do → no autonomy",
+   "lec": 23
   }
  ],
  "defs": [
@@ -1802,6 +1959,110 @@ HUB.addCourse({
    "term": "Bourgeoisie and proletariat",
    "html": "<b>Bourgeoisie</b>: owners of the means of production. <b>Proletariat</b>: the propertyless working class. Marx and Engels' two classes of capitalism.",
    "lec": 21
+  },
+  {
+   "id": "ebh-d0092",
+   "unit": "systems",
+   "topic": "Pros, cons and sector fit of the three systems",
+   "term": "Market failure",
+   "html": "<b>Market failure</b> (lecture's sense): when consumers lack information or negotiating power, as in hospitals or school fees, producers can set prices and the market stops working for consumers.",
+   "lec": 22
+  },
+  {
+   "id": "ebh-d0093",
+   "unit": "systems",
+   "topic": "Pros, cons and sector fit of the three systems",
+   "term": "Safety net",
+   "html": "<b>Safety net</b>: guaranteed access to essentials such as healthcare and education, so citizens are protected from severe deprivation; the first pro of socialism in the lecture.",
+   "lec": 22
+  },
+  {
+   "id": "ebh-d0094",
+   "unit": "society",
+   "topic": "Cities, family and the three classes",
+   "term": "Middle class (industrial)",
+   "html": "<b>Middle class</b>: the new class of the Industrial Revolution: small factory owners, merchants and retailers, professionals (engineers, managers) and skilled workers. Educated, with its own cultural tastes.",
+   "lec": 22
+  },
+  {
+   "id": "ebh-d0095",
+   "unit": "society",
+   "topic": "Cities, family and the three classes",
+   "term": "Separation of work and family",
+   "html": "<b>Separation of work and family</b>: work moved from the household to the factory, splitting life into work life and family life and changing family structure.",
+   "lec": 22
+  },
+  {
+   "id": "ebh-d0096",
+   "unit": "society",
+   "topic": "Women, individualism and standard time",
+   "term": "Individualism",
+   "html": "<b>Individualism</b>: putting the individual, apart from community and family, at the centre: individual freedom, personal ambition, private property and economic opportunity.",
+   "lec": 22
+  },
+  {
+   "id": "ebh-d0097",
+   "unit": "society",
+   "topic": "Women, individualism and standard time",
+   "term": "Standard time",
+   "html": "<b>Standard time</b>: one official time across a country (and time zones worldwide) in place of each city's local time, driven by long-distance railways. India is GMT + 5½ hours.",
+   "lec": 22
+  },
+  {
+   "id": "ebh-d0098",
+   "unit": "mgmt",
+   "topic": "From rule of thumb to a science of management",
+   "term": "Rule of thumb",
+   "html": "<b>Rule of thumb</b>: managing without standard rules, by the manager's intuition, personal experience, guesswork and trial and error; the pre-industrial norm.",
+   "lec": 23
+  },
+  {
+   "id": "ebh-d0099",
+   "unit": "mgmt",
+   "topic": "From rule of thumb to a science of management",
+   "term": "Fair day's work",
+   "html": "<b>Fair day's work</b>: the minimum output a worker should produce when working properly, with proper rest and set rules, assuming the worker's welfare is looked after.",
+   "lec": 23
+  },
+  {
+   "id": "ebh-d0100",
+   "unit": "mgmt",
+   "topic": "Division of labour: Adam Smith (1776)",
+   "term": "Division of labour",
+   "html": "<b>Division of labour</b>: dividing a complex production process into distinct smaller tasks, each assigned to a specific worker or group (Adam Smith, 1776).",
+   "lec": 23
+  },
+  {
+   "id": "ebh-d0101",
+   "unit": "mgmt",
+   "topic": "Taylor and scientific management",
+   "term": "Scientific management",
+   "html": "<b>Scientific management</b> (Taylorism): applying the principles of science to management, standardising each task's tools, method, motions and time. Taylor is its father.",
+   "lec": 23
+  },
+  {
+   "id": "ebh-d0102",
+   "unit": "mgmt",
+   "topic": "Taylor and scientific management",
+   "term": "One best way",
+   "html": "<b>One best way</b>: Taylor's idea that every task has a single most efficient method, which should be found by study and made the standard.",
+   "lec": 23
+  },
+  {
+   "id": "ebh-d0103",
+   "unit": "mgmt",
+   "topic": "Taylor and scientific management",
+   "term": "Time and motion study",
+   "html": "<b>Time and motion study</b>: timing a worker's movements with a stopwatch in seconds and minutes and removing unnecessary motions, to set a benchmark for the task.",
+   "lec": 23
+  },
+  {
+   "id": "ebh-d0104",
+   "unit": "mgmt",
+   "topic": "Taylor and scientific management",
+   "term": "Scientific selection of workers",
+   "html": "<b>Scientific selection</b>: Taylor's second principle: hire by matching the job's requirements to the worker's abilities and skills, not by favouritism or nepotism.",
+   "lec": 23
   }
  ],
  "questions": [
@@ -7170,6 +7431,686 @@ HUB.addCourse({
    "w": "Refined: the cloth is finished, for example with colours and patterns (L#19 slides and recording). Carding prepares raw fibre before spinning, so it comes first, not last. Smelting belongs to iron, not textiles.",
    "lec": 19,
    "lv": "recall"
+  },
+  {
+   "id": "ebh-q0330",
+   "topic": "Economic systems",
+   "q": "Which of these did the lecture give as a pro of capitalism?",
+   "c": [
+    "A guaranteed safety net in healthcare and education",
+    "A classless society with equal incomes",
+    "It drives innovation, because individuals benefit from what they produce",
+    "Full employment for all citizens"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Individual incentives drive innovation. The safety net is socialism's pro; equal incomes and full employment are communism's.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0331",
+   "topic": "Economic systems",
+   "q": "Why did the lecture treat a hospital stay as an example of market failure?",
+   "c": [
+    "Patients lack information and negotiating power, so providers can set the price",
+    "Too many hospitals compete, so prices fall below cost",
+    "The government fixes every hospital price",
+    "Hospitals have no costs to recover"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Capitalism assumes informed consumers with bargaining power. A patient has neither, so the producer becomes stronger and the market fails. Competition driving prices down is the opposite of what he described.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0332",
+   "topic": "Economic systems",
+   "q": "A state government sets a minimum wage of ₹200 a day for unskilled work. Which pro of socialism does this illustrate?",
+   "c": [
+    "Driving innovation",
+    "Local involvement in decision-making",
+    "High growth potential",
+    "Reducing inequality"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Regulating wages lifts the floor for the lowest earners, reducing inequality. Innovation and high growth are capitalism's pros; local decision-making is communism's.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0333",
+   "topic": "Economic systems",
+   "q": "Which con of socialism did the lecture illustrate with India's 2–3% growth before 1991?",
+   "c": [
+    "Severe shortages of goods",
+    "Slow, bureaucratic action and inefficiency",
+    "Environmental degradation",
+    "Wealth inequality"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Slow government action breeds inefficiency and slower growth. Severe shortages are the con he gave for communism; pollution and inequality are capitalism's.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0334",
+   "topic": "Economic systems",
+   "q": "Which pair did the lecture give as cons of communism?",
+   "c": [
+    "Wealth inequality and environmental degradation",
+    "Higher taxes and slow decision-making",
+    "Severe shortages and loss of personal freedom",
+    "Too much consumer choice and high growth"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Shortages (where capitalism produces surpluses) and loss of freedom. Inequality and pollution are capitalism's cons; taxes and slowness are socialism's.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0335",
+   "topic": "Economic systems",
+   "q": "Using the lecture's sector-fit rule, which system suits a sector where buyers are well informed and can bargain hard?",
+   "c": [
+    "The free market (capitalism)",
+    "Socialism, with government control of prices",
+    "Communism, run by village councils",
+    "A state monopoly with fixed output"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Where consumers have power and information, the market works. Government control is the remedy for sectors where consumers lack both, such as healthcare and education.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0336",
+   "topic": "Economic systems",
+   "q": "A district wants villages to decide together how to protect a shared forest and water supply. Which system's strength, in the lecture's terms, does this draw on?",
+   "c": [
+    "Capitalism's economic freedom",
+    "Socialism's higher tax base",
+    "Capitalism's high growth potential",
+    "Communism's local involvement in decision-making"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He singled out decentralised, village- and town-level decisions as communism's strength, especially for managing the environment.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0337",
+   "topic": "Economic systems",
+   "q": "According to the lecture, why can a government do better than the market at controlling school fees?",
+   "c": [
+    "Schools cost the government nothing to run",
+    "It has more negotiating power, can demand information from schools and can run its own schools",
+    "Parents always have complete information about schools",
+    "Private schools are banned under socialism"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Government has the bargaining power and access to information that individual parents lack, and it can set up its own institutions (he named Kendriya Vidyalayas). Parents lacking information is the problem, not the remedy.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0338",
+   "topic": "Economic systems",
+   "q": "Which core goal did the lecture attach to socialism?",
+   "c": [
+    "Individual profit and growth",
+    "A classless, stateless, egalitarian society",
+    "Social cohesion and equity",
+    "Maximum exports"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Social cohesion and equity. Individual profit and growth is capitalism's goal; a classless, stateless society is communism's.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0339",
+   "topic": "Social & cultural change",
+   "q": "According to the lecture, what was London's population in 1801?",
+   "c": [
+    "About 4.7 million",
+    "About 1.1 million",
+    "About 300,000",
+    "About 20,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "1.1 million in 1801, rising later to 4.7 million. 20,000 and 300,000 are Manchester's figures for the 1760s and the 1850s.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0340",
+   "topic": "Social & cultural change",
+   "q": "Manchester grew from about 20,000 people in the 1760s to about 300,000 in the 1850s. By what factor is that?",
+   "c": [
+    "About 1.5 times",
+    "About 30 times",
+    "About 150 times",
+    "About 15 times"
+   ],
+   "a": [
+    3
+   ],
+   "w": "300,000 ÷ 20,000 = 15. The lecture said '13 or 14 times', but the arithmetic, and L#16, give 15.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0341",
+   "topic": "Social & cultural change",
+   "q": "How did factory work change family life, according to the lecture?",
+   "c": [
+    "Work moved out of the household, splitting life into work life and family life",
+    "Families began working together at home more than before",
+    "Working hours fell, leaving more time for family",
+    "Families were legally required to work in the same factory"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Work was delinked from the family: members worked in different factories or shifts, and family structure changed. Working together at home describes the earlier putting-out system, not the factory age.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0342",
+   "topic": "Social & cultural change",
+   "q": "Which group belonged to the new middle class that the lecture described?",
+   "c": [
+    "Large factory owners",
+    "Unskilled workers on the factory floor",
+    "Engineers, managers, merchants and skilled workers",
+    "Feudal lords and landed aristocrats"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Professionals, merchants, small owners and skilled workers. Large factory owners are the bourgeoisie, and unskilled factory workers are the proletariat.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0343",
+   "topic": "Social & cultural change",
+   "q": "Why did the new middle class matter for cultural life?",
+   "c": [
+    "It ended working-class theatre and literature",
+    "Being educated and literate, with its own tastes, it created demand for new theatre, literature, fashion and arts",
+    "It banned the arts as a waste of working time",
+    "It owned all the newspapers"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Its education and distinct preferences drove new cultural forms. He stressed that working-class theatre and literature carried on alongside.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0344",
+   "topic": "Social & cultural change",
+   "q": "Which way of knowing did the lecture say gained ground during this period?",
+   "c": [
+    "Reason, observation, experimentation and evidence",
+    "Tradition and ritual",
+    "Guild secrets passed from master to apprentice",
+    "Royal decree"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Science moved to the centre: knowledge was to rest on observation, experiment and evidence rather than on tradition and ritual.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0345",
+   "topic": "Social & cultural change",
+   "q": "Who said 'have courage to use your own understanding', and what does the lecture take from it?",
+   "c": [
+    "Charles Darwin; living beings adapt to their environment",
+    "Adam Smith; free markets lead to welfare",
+    "Karl Marx; class struggle is inevitable",
+    "Immanuel Kant; the individual's own reasoning, grounded in evidence"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Immanuel Kant. The lecture reads 'own' as the individual and 'understanding' as reason, which links to the rise of individualism. Darwin is the lecture's example of observation.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0346",
+   "topic": "Social & cultural change",
+   "q": "In the lecture, what does Charles Darwin's work illustrate?",
+   "c": [
+    "That knowledge of the natural world can be built from careful observation",
+    "That machines replace skilled workers",
+    "That novels pushed Parliament to pass laws",
+    "That cities grew because of railways"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Darwin built his ideas on observing birds on an island: science as observation and evidence. Novels pushing reform is the Dickens example.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0347",
+   "topic": "Social & cultural change",
+   "q": "The lecture cites Dickens's Hard Times. What role did it give literature of this kind?",
+   "c": [
+    "It entertained readers but had no social effect",
+    "It was written to promote the factory owners",
+    "It exposed conditions in industrial towns and probably helped push reforms such as the Factory Act 1833 and the Ten Hours Act 1847",
+    "It caused the Industrial Revolution"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Novels, newspapers and campaigns spread awareness of poverty, slums and working conditions, which, he suggested, fed the reforms of 1833 and 1847.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0348",
+   "topic": "Social & cultural change",
+   "q": "Why did railways push countries to standardise time?",
+   "c": [
+    "Factories wanted longer shifts",
+    "Trains ran long distances through cities that each kept their own local time, making timetables unworkable",
+    "Clocks had not been invented before the railways",
+    "Parliament wanted to tax time"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Each city kept its own time, which was a serious problem for train operators. Clocks long predated railways; what was missing was a common standard.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0349",
+   "topic": "Social & cultural change",
+   "q": "According to the lecture, when is an individual actually empowered, as a citizen or as a consumer?",
+   "c": [
+    "Whenever private property exists",
+    "Only when the government owns all businesses",
+    "Only when communities decide on their behalf",
+    "When they have information and rights, through a transparent policy environment"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Individualism needs information and rights, which depend on institutions and transparency. Private property alone does not supply them.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0350",
+   "topic": "Management thought",
+   "q": "A workshop foreman with 25 years' experience sets each worker's target because he 'just knows' what a good worker makes. Which approach to management is this?",
+   "c": [
+    "Scientific management",
+    "Division of labour",
+    "Rule of thumb",
+    "Time and motion study"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Targets from intuition and personal experience, with no standard rules, are management by rule of thumb. Scientific management would set the target from measured, objective data.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0351",
+   "topic": "Management thought",
+   "q": "Why did the factory age force management to change, according to the lecture?",
+   "c": [
+    "Artisans demanded written contracts",
+    "Machines needed no supervision",
+    "Thousands of unskilled workers in one place, with no standard way to measure a fair day's work",
+    "Governments banned small workshops"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A workshop of 5–10 artisans can be run on experience; hundreds or thousands of unskilled workers cannot. Without a standard for a fair day's work, productivity had to be measured and benchmarked.",
+   "lec": 23,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0352",
+   "topic": "Management thought",
+   "q": "The Amoskeag Manufacturing Company of Manchester, New Hampshire, is the lecture's example of a giant workforce. About how many workers did it employ at one point?",
+   "c": [
+    "About 17,000",
+    "About 1,700",
+    "About 170,000",
+    "About 75"
+   ],
+   "a": [
+    0
+   ],
+   "w": "About 17,000, in the early 20th century. Around 75 (the lecture said 70–80) was the size of the pig-iron gang at Bethlehem Steel.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0353",
+   "topic": "Management thought",
+   "q": "Which best describes a 'fair day's work' as the lecture explained it?",
+   "c": [
+    "The most a worker can physically produce in a day",
+    "The daily wage agreed by a trade union",
+    "The output of the fastest worker in the factory",
+    "The minimum output expected when working properly, with proper rest and set rules"
+   ],
+   "a": [
+    3
+   ],
+   "w": "It is a minimum under proper conditions, and assumes the worker's welfare is cared for. Taking the fastest worker's output as the standard confuses it with a maximum.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0354",
+   "topic": "Management thought",
+   "q": "Which is the lecture's definition of division of labour?",
+   "c": [
+    "Dividing a complex production process into distinct smaller tasks, each assigned to a specific worker or group",
+    "Dividing profits equally between owners and workers",
+    "Separating skilled workers from unskilled workers in different factories",
+    "Dividing a country's economy into agriculture, industry and services"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Breaking one complex process into smaller tasks, one per worker or group. Splitting skilled from unskilled is the New Model Union split of L#20, not this.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0355",
+   "topic": "Management thought",
+   "q": "In which year did Adam Smith set out the division of labour in The Wealth of Nations?",
+   "c": [
+    "1848",
+    "1776",
+    "1911",
+    "1898"
+   ],
+   "a": [
+    1
+   ],
+   "w": "1776, in the middle of the British Industrial Revolution. 1898 is the start of Taylor's pig-iron experiment and 1911 is his book; 1848 is the Communist Manifesto.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0356",
+   "topic": "Management thought",
+   "q": "Into how many distinct operations was pin-making divided in Smith's example?",
+   "c": [
+    "5",
+    "10",
+    "18",
+    "48"
+   ],
+   "a": [
+    2
+   ],
+   "w": "18 operations, one per worker, lifting output from about one pin a day to thousands.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0357",
+   "topic": "Management thought",
+   "q": "A worker who once switched between grinding and shaping, changing the lathe tool each time, now does only grinding. Which pillar of division of labour does the time saved show?",
+   "c": [
+    "Specialisation",
+    "Mass production",
+    "Scientific selection",
+    "Efficiency"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Efficiency is about the time saved by not switching tools, machines or workstations. Specialisation is about growing skill at one task; the two are easy to confuse.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0358",
+   "topic": "Management thought",
+   "q": "After months on one machine, a once-unskilled worker knows its quirks and doubles their output. Which pillar of division of labour is this?",
+   "c": [
+    "Specialisation",
+    "Efficiency",
+    "Mass production",
+    "Rule of thumb"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Focusing on one task and one machine turns an unskilled worker into a skilled one for that task. Efficiency is the separate point about no time lost switching tools.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0359",
+   "topic": "Management thought",
+   "q": "According to the lecture, what turns division of labour into mass production?",
+   "c": [
+    "Paying every worker the same wage",
+    "Combining it with machinery, so goods are made much faster at much lower cost",
+    "Letting each worker choose their own method",
+    "Reducing the number of workers in each factory"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Division of labour plus machinery gives speed and low cost. Letting workers choose their own method is closer to the rule-of-thumb world it replaced.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0360",
+   "topic": "Scientific management",
+   "q": "Who is called the father of scientific management?",
+   "c": [
+    "Adam Smith",
+    "Henry Noll",
+    "Robert Owen",
+    "Frederick Winslow Taylor"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Taylor, an American, in the late 19th century. Smith supplied the division of labour he built on; Henry Noll was the worker in his pig-iron experiment.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0361",
+   "topic": "Scientific management",
+   "q": "What did Taylor add to Smith's division of labour?",
+   "c": [
+    "The idea of splitting work into smaller tasks",
+    "Standardising how each task is done (tools, method, motions and time): the one best way",
+    "Collective ownership of factories",
+    "Assembling products in one place"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Smith had already split the work into tasks. Taylor standardised each task, which is why division of labour is the base of Taylorism rather than Taylor's own idea.",
+   "lec": 23,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0362",
+   "topic": "Scientific management",
+   "q": "What happens in a time and motion study?",
+   "c": [
+    "Workers vote on how long a task should take",
+    "Managers estimate the time from experience",
+    "Machines are timed but workers are not",
+    "A stopwatch breaks the worker's movements into seconds and minutes, and unnecessary motions are removed"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Objective data gathered by stopwatch, then unnecessary motions are eliminated. Estimating from experience is the rule of thumb it replaced.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0363",
+   "topic": "Scientific management",
+   "q": "A steel plant stops hiring loaders on the supervisor's recommendation and instead tests applicants' strength against what the job demands. Which of Taylor's principles is it applying?",
+   "c": [
+    "A rule of science for each aspect of the job",
+    "Division of labour",
+    "Scientific selection of workers",
+    "The fair day's work"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Matching the job's requirements to the worker's abilities, rather than favouritism or nepotism, is his second principle. The first principle is about standardising how the task itself is done.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0364",
+   "topic": "Scientific management",
+   "q": "In the pig-iron experiment, loading rose from an average of 12.5 tons a day to 47.5 tons. How many times as much is that?",
+   "c": [
+    "About 2.5 times",
+    "About 3.8 times",
+    "About 5 times",
+    "About 35 times"
+   ],
+   "a": [
+    1
+   ],
+   "w": "47.5 ÷ 12.5 = 3.8: nearly four times as much, a 280% rise. The lecture called it a 400% increase, but 400% more would be five times as much.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0365",
+   "topic": "Scientific management",
+   "q": "Where and when did Taylor run the pig-iron experiment?",
+   "c": [
+    "Cromford Mill, Derbyshire, in 1771",
+    "Manchester, England, in the 1830s",
+    "Bethlehem Steel, Pennsylvania, 1898–1901",
+    "Amoskeag, New Hampshire, in 1776"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Bethlehem Steel in Pennsylvania, 1898–1901, as the US was becoming the centre of industry. Cromford was Arkwright's mill (L#15).",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0366",
+   "topic": "Scientific management",
+   "q": "The standard time for a task is 8–10 minutes. A worker regularly takes 13. What does scientific management prescribe?",
+   "c": [
+    "Study the worker's movements to find and remove unnecessary motions",
+    "Leave the worker alone, since the standard is only a guess",
+    "Raise the standard to 13 minutes for everyone",
+    "Ask the worker to design a new standard"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Anyone outside the benchmark becomes a case for study; too slow means looking for wasted motions. Treating the standard as a guess is the rule-of-thumb mindset.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0367",
+   "topic": "Scientific management",
+   "q": "Managers used Taylor's time studies to raise production quotas while wages rose more slowly. Which criticism is this?",
+   "c": [
+    "Monotony and alienation",
+    "Exploitation",
+    "Loss of autonomy",
+    "Market failure"
+   ],
+   "a": [
+    1
+   ],
+   "w": "More output for relatively less pay is exploitation. Monotony is about boredom from repeating one task all day.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0368",
+   "topic": "Scientific management",
+   "q": "'Planning was separated from doing.' Which criticism of scientific management does this describe?",
+   "c": [
+    "Mechanistic view of humans",
+    "Exploitation",
+    "Monotony and alienation",
+    "Loss of autonomy, since workers could no longer innovate in their own work"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Managers plan and workers carry out a fixed method, so workers lose the freedom to improve how they work. The mechanistic criticism is about treating workers as machine parts and assuming only money motivates them.",
+   "lec": 23,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0369",
+   "topic": "Scientific management",
+   "q": "What assumption about motivation does the lecture criticise in scientific management?",
+   "c": [
+    "That workers are motivated only by money",
+    "That workers are motivated mainly by good co-workers",
+    "That workers are motivated by job security above all",
+    "That workers need no motivation at all"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Pay for hitting the benchmark was assumed to be enough; good supervisors, co-workers and emotional well-being were ignored.",
+   "lec": 23,
+   "lv": "recall"
   }
  ],
  "briefs": {
@@ -7177,7 +8118,7 @@ HUB.addCourse({
    "scopeShort": "Lectures 1–14",
    "tag": "from the official LMS announcement",
    "lede": "Every figure below is from the official Quiz 1 announcement on the LMS and the syllabus document attached to it. Dr. Kanchan was deliberately vague about the question count in class; the announcement is not.",
-   "html": "<div class=\"grid2\">\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Confirmed on the official announcement</h4>\n        <div class=\"scroller\"><table><tbody>\n          <tr><td><strong>Date</strong></td><td>Sunday 27 September</td></tr>\n          <tr><td><strong>Window</strong></td><td>12:15–12:30 PM IST · join from <strong>12:00 PM</strong></td></tr>\n          <tr><td><strong>Questions</strong></td><td><strong>40</strong>, for <strong>40 marks</strong></td></tr>\n          <tr><td><strong>Type</strong></td><td>MCQ</td></tr>\n          <tr><td><strong>Weight</strong></td><td>20% · best 2 of 3 · 40% of the course total</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--bad);background:var(--bad-soft)\">\n          <b>Negative marking.</b> +1 correct, <strong>−0.25 for a wrong answer</strong>, 0 if left blank.\n        </div>\n        <p style=\"font-size:13.5px;color:var(--ink-3);margin-top:11px\">In Live Lecture 3 Dr. Kanchan said &ldquo;40 to 50, can reach 60, there's no fixed number&rdquo;. The announcement settles it at <strong>40</strong>.</p>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Syllabus — settled</h4>\n        <p style=\"font-size:14.5px\">The announcement attaches an official syllabus document listing the examinable lectures. It runs <strong>#1 to #14</strong> and stops at <strong>Live Lecture 3</strong>.</p>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--good);background:var(--good-soft)\">\n          <b>#15 and #16 were not in Quiz 1.</b> <em>Rise of Factories</em> (water frame, Arkwright) and <em>Steam Engine</em> (Watt, Manchester) were not in Quiz 1. This confirms the narrow reading of his &ldquo;till lecture 10&rdquo; — those two sections stay on this page, marked, but revise them last.\n        </div>\n        <p style=\"font-size:14.5px;margin-top:11px\">So the real scope is <strong>Module 1, Module 2, and Module 3 up to <em>Beginning of Machines Usage</em></strong> — the flying shuttle and spinning jenny, but not what came after.</p>\n      </div>\n    </div>\n\n    <div class=\"card\" style=\"margin-top:14px;border-left:3px solid var(--clay)\">\n      <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">The two constraints: 22 seconds, and −0.25</h4>\n      <p style=\"font-size:14.5px;color:var(--ink-2)\">40 questions in 15 minutes is <strong>22 seconds each</strong>. This is a dates-and-names paper — there is no time to reason, and a wrong answer now costs you a quarter mark.</p>\n      <div class=\"scroller\" style=\"margin-top:11px\"><table><thead><tr><th>Situation</th><th>Expected value</th><th>Do</th></tr></thead><tbody>\n        <tr><td>You know it</td><td><strong>+1.00</strong></td><td>Answer</td></tr>\n        <tr><td>You can rule out two of four</td><td><strong>+0.38</strong></td><td>Answer — clearly worth it</td></tr>\n        <tr><td>You can rule out one of four</td><td><strong>+0.17</strong></td><td>Answer</td></tr>\n        <tr><td>Blind guess between four</td><td><strong>+0.06</strong></td><td>Answer, but it gains you next to nothing</td></tr>\n        <tr><td>Leave it blank</td><td><strong>0.00</strong></td><td>Only if you are genuinely lost</td></tr>\n      </tbody></table></div>\n      <ul style=\"margin:11px 0 0;padding-left:19px;font-size:14.5px;line-height:1.7\">\n        <li><strong>The dates are the paper.</strong> Kay 1733, Hargreaves 1764, Midland Revolt 1607, Henry II 1155, Jethro Tull 1701, License Raj 1948–1991, Bajaj 1945/1960/1971.</li>\n        <li><strong>Eliminate before you guess.</strong> With four options, ruling out one nearly triples what a guess is worth.</li>\n        <li>He confirmed in class that <strong>some questions have more than one correct answer</strong>, even though the announcement just says MCQ.</li>\n      </ul>\n    </div>",
+   "html": "<div class=\"grid2\">\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Confirmed on the official announcement</h4>\n        <div class=\"scroller\"><table><tbody>\n          <tr><td><strong>Date</strong></td><td>Sunday 27 September</td></tr>\n          <tr><td><strong>Window</strong></td><td>12:15–12:30 PM IST · join from <strong>12:00 PM</strong></td></tr>\n          <tr><td><strong>Questions</strong></td><td><strong>40</strong>, for <strong>40 marks</strong></td></tr>\n          <tr><td><strong>Type</strong></td><td>MCQ</td></tr>\n          <tr><td><strong>Weight</strong></td><td>30% of the course: the higher of your two quiz scores counts (rule from 14 Oct; at Quiz 1 it was 20%, best 2 of 3)</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--bad);background:var(--bad-soft)\">\n          <b>Negative marking.</b> +1 correct, <strong>−0.25 for a wrong answer</strong>, 0 if left blank.\n        </div>\n        <p style=\"font-size:13.5px;color:var(--ink-3);margin-top:11px\">In Live Lecture 3 Dr. Kanchan said &ldquo;40 to 50, can reach 60, there's no fixed number&rdquo;. The announcement settles it at <strong>40</strong>.</p>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Syllabus — settled</h4>\n        <p style=\"font-size:14.5px\">The announcement attaches an official syllabus document listing the examinable lectures. It runs <strong>#1 to #14</strong> and stops at <strong>Live Lecture 3</strong>.</p>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--good);background:var(--good-soft)\">\n          <b>#15 and #16 were not in Quiz 1.</b> <em>Rise of Factories</em> (water frame, Arkwright) and <em>Steam Engine</em> (Watt, Manchester) were not in Quiz 1. This confirms the narrow reading of his &ldquo;till lecture 10&rdquo; — those two sections stay on this page, marked, but revise them last.\n        </div>\n        <p style=\"font-size:14.5px;margin-top:11px\">So the real scope is <strong>Module 1, Module 2, and Module 3 up to <em>Beginning of Machines Usage</em></strong> — the flying shuttle and spinning jenny, but not what came after.</p>\n      </div>\n    </div>\n\n    <div class=\"card\" style=\"margin-top:14px;border-left:3px solid var(--clay)\">\n      <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">The two constraints: 22 seconds, and −0.25</h4>\n      <p style=\"font-size:14.5px;color:var(--ink-2)\">40 questions in 15 minutes is <strong>22 seconds each</strong>. This is a dates-and-names paper — there is no time to reason, and a wrong answer now costs you a quarter mark.</p>\n      <div class=\"scroller\" style=\"margin-top:11px\"><table><thead><tr><th>Situation</th><th>Expected value</th><th>Do</th></tr></thead><tbody>\n        <tr><td>You know it</td><td><strong>+1.00</strong></td><td>Answer</td></tr>\n        <tr><td>You can rule out two of four</td><td><strong>+0.38</strong></td><td>Answer — clearly worth it</td></tr>\n        <tr><td>You can rule out one of four</td><td><strong>+0.17</strong></td><td>Answer</td></tr>\n        <tr><td>Blind guess between four</td><td><strong>+0.06</strong></td><td>Answer, but it gains you next to nothing</td></tr>\n        <tr><td>Leave it blank</td><td><strong>0.00</strong></td><td>Only if you are genuinely lost</td></tr>\n      </tbody></table></div>\n      <ul style=\"margin:11px 0 0;padding-left:19px;font-size:14.5px;line-height:1.7\">\n        <li><strong>The dates are the paper.</strong> Kay 1733, Hargreaves 1764, Midland Revolt 1607, Henry II 1155, Jethro Tull 1701, License Raj 1948–1991, Bajaj 1945/1960/1971.</li>\n        <li><strong>Eliminate before you guess.</strong> With four options, ruling out one nearly triples what a guess is worth.</li>\n        <li>He confirmed in class that <strong>some questions have more than one correct answer</strong>, even though the announcement just says MCQ.</li>\n      </ul>\n    </div>",
    "mapLede": "All 16 lectures, taught by Dr. Manu Kanchan. The three live sessions revise the recorded ones, so anything repeated in both is worth twice the attention.",
    "syllabusNote": "Modules 1–3",
    "drillLede": "Questions written from the lectures, the transcripts and the decks. There is no official practice set for this course — unlike Foundations of Computing, the decks carry no &ldquo;test your knowledge&rdquo; slides. Turn the pacer on to rehearse the real tempo.",
@@ -7230,6 +8171,8 @@ HUB.addCourse({
   "lec-21",
   "lec-17s",
   "lec-18s",
-  "lec-19s"
+  "lec-19s",
+  "lec-22",
+  "lec-23"
  ]
 });
