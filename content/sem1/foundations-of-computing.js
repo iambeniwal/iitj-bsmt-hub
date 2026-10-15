@@ -490,6 +490,11 @@ HUB.addCourse({
      "t": "A dictionary in a dictionary",
      "src": "L#23",
      "h": "\n<p style=\"font-size:14.5px\">A website has many users, each with a username. Use the usernames as keys, and store each user's details in a dictionary as the value:</p>\n<pre>users = {\n    'aeinstein': {\n        'first': 'albert',\n        'last': 'einstein',\n        'location': 'princeton',\n        },\n    'mcurie': {\n        'first': 'marie',\n        'last': 'curie',\n        'location': 'paris',\n        },\n    }\n\nfor username, user_info in users.items():\n    print(\"\\nUsername: \" + username)\n    full_name = user_info['first'] + \" \" + user_info['last']\n    location = user_info['location']\n\n    print(\"\\tFull name: \" + full_name.title())\n    print(\"\\tLocation: \" + location.title())\n<span class=\"c\"># prints:</span>\n<span class=\"o\"></span>\n<span class=\"o\">Username: aeinstein</span>\n<span class=\"o\">\tFull name: Albert Einstein</span>\n<span class=\"o\">\tLocation: Princeton</span>\n<span class=\"o\"></span>\n<span class=\"o\">Username: mcurie</span>\n<span class=\"o\">\tFull name: Marie Curie</span>\n<span class=\"o\">\tLocation: Paris</span></pre>\n<div class=\"def\">In <code>for username, user_info in users.items():</code> the key (<code>'aeinstein'</code>) goes into <b>username</b> and its value, the <b>inner dictionary</b>, goes into <b>user_info</b>. So <b>user_info is itself a dictionary</b>, and <code>user_info['first']</code>, <code>user_info['last']</code> and <code>user_info['location']</code> read from it.</div>\n<ul>\n<li>The outer dictionary <code>users</code> has <b>two</b> key-value pairs. Each whole inner dictionary is one value.</li>\n<li>Outside a loop, reach an inner value with two lookups in a row: <code>users['mcurie']['location']</code> gives <code>'paris'</code>. <code>users['location']</code> is a KeyError, because <code>'location'</code> is a key of the inner dictionaries only.</li>\n<li>Give every inner dictionary the same keys (first, last, location). The loop then works the same way for every user.</li>\n</ul>\n<h4>The chapter in one list</h4>\n<ul>\n<li>Define a dictionary; read, add, change and delete pairs (L#21).</li>\n<li>Loop through its pairs, keys, sorted keys and values (L#22).</li>\n<li>Nest dictionaries in a list, lists in a dictionary, and a dictionary in a dictionary (L#23).</li>\n</ul>\n<p style=\"font-size:14.5px\">Next chapter: <code>while</code> loops and taking input from the user, so programs can respond to what people type.</p>\n<div class=\"card\"><b>Practice set from the lecture</b> (20 minutes). (1) <b>Pets:</b> one dictionary per pet, holding the kind of animal and the owner's name; store them in a list called <code>pets</code>, then loop through it and print everything about each pet. (2) <b>Favourite places:</b> a dictionary <code>favorite_places</code> with three people as keys and one to three favourite places for each (a list as the value); asking friends makes it primary data. Print each name and their places. (3) <b>Cities:</b> a dictionary <code>cities</code> with three city names as keys; each value is a dictionary with <code>country</code>, <code>population</code> and <code>fact</code>. Print each city and everything stored about it.</div>\n<pre>cities = {\n    'jodhpur': {'country': 'india', 'fact': 'known as the blue city'},\n    'kochi': {'country': 'india', 'fact': 'a major port on the arabian sea'},\n    }\nfor city, info in cities.items():\n    print(city.title() + \" (\" + info['country'].title() + \"): \" + info['fact'])\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Jodhpur (India): known as the blue city</span>\n<span class=\"o\">Kochi (India): a major port on the arabian sea</span></pre>\n<!--viz:foc-nested-dict-lookup--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow from the users dictionary, through the key mcurie to Marie Curie's inner dictionary, then through the key location to the value paris.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Two lookups reach an inner value</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">users</span></div><span style=\"color:var(--ink-3)\">→ <span style=\"font-family:var(--mono)\">['mcurie']</span> →</span><div style=\"padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono);font-size:13px\">{'first': 'marie', 'last': 'curie', 'location': 'paris'}</span></div><span style=\"color:var(--ink-3)\">→ <span style=\"font-family:var(--mono)\">['location']</span> →</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b style=\"font-family:var(--mono)\">'paris'</b></div></div><p style=\"margin:10px 0 0;font-size:13.5px;color:var(--ink-2)\">In the loop, <span style=\"font-family:var(--mono)\">user_info</span> already holds the middle box, so one lookup is enough: <span style=\"font-family:var(--mono)\">user_info['location']</span>.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The first key picks the inner dictionary; the second key picks the value inside it.</figcaption></figure><!--/viz:foc-nested-dict-lookup-->"
+    },
+    {
+     "t": "Textbook: Dictionaries",
+     "src": "Python Crash Course ch6",
+     "h": "<p>A dictionary stores key-value pairs: each key is linked to a value, and you look the value up by key, not by position. The chapter shows how to create a dictionary with braces, read values with dict[key], add or change pairs by assigning to a key, start from an empty {} and fill it, and delete a pair with del. It contrasts two uses: many facts about one thing (an alien's colour, points and position) and one fact about many things (each person's favourite language). Loops can run over items() (key and value together), keys() (also the default) or values(), with sorted() to order the keys and set() to drop duplicate values. Finally it nests structures: a list of dictionaries, a list inside a dictionary, and a dictionary of dictionaries, while warning against nesting too deeply.</p><!--viz:foc-pcc1-upgrade-turns--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Five green aliens, of which only the first three are ever changed; a loop over the first three turns green ones yellow (10 points) and, through elif, yellow ones red (15 points). After run 1 the first three are yellow and the total is 40; after run 2 they are red and the total is 55; run 3 changes nothing.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The if-elif upgrade loop, one turn at a time</div><pre style=\"margin:0 0 8px;font-size:13px\"># fleet: 5 green aliens, 5 points each\nfor a in fleet[0:3]:\n    if a['color'] == 'green':\n        a['color'] = 'yellow'; a['points'] = 10\n    elif a['color'] == 'yellow':\n        a['color'] = 'red'; a['points'] = 15</pre><div class=\"scroller\"><table><thead><tr><th>Run</th><th>fleet[0:3]</th><th>Fleet points</th><th>Why</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">start</td><td style=\"font-family:var(--mono)\">green ×3</td><td style=\"font-family:var(--mono)\">25</td><td>not run yet</td></tr><tr><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">yellow ×3</td><td style=\"font-family:var(--mono)\">40</td><td>if matches; elif skipped</td></tr><tr><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">red ×3</td><td style=\"font-family:var(--mono)\">55</td><td>if fails; elif matches</td></tr><tr><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono)\">red ×3</td><td style=\"font-family:var(--mono)\">55</td><td>neither matches</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">elif lets an alien move only one step per run; it takes two runs to go from green to red, and red aliens match neither test.</figcaption></figure><!--/viz:foc-pcc1-upgrade-turns--><!--viz:foc-pcc1-fresh-vs-shared-dict--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two box-and-pointer diagrams of a three-item list. When the dictionary is created inside the loop, each slot points to its own dictionary and changing aliens[0] leaves aliens[2] green. When one dictionary is created before the loop, all three slots point to it, so aliens[2] turns red too.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">A fresh dictionary each pass vs one shared dictionary</div><p style=\"font-size:13.5px;margin:0 0 6px\">Each box is one <span style=\"font-family:var(--mono)\">{'color': …}</span> dictionary. Both versions append three times, then run <span style=\"font-family:var(--mono)\">aliens[0]['color'] = 'red'</span></p><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 318\" role=\"img\" aria-label=\"Top: three list slots each point to their own dictionary, so changing slot 0 leaves slot 2 green. Bottom: three slots all point to one dictionary, so changing slot 0 makes slot 2 red too.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><text x=\"14\" y=\"22\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Built inside the loop: three dictionaries</text><text x=\"14\" y=\"60\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">aliens</text><rect x=\"70\" y=\"40\" width=\"40\" height=\"30\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"90\" y=\"60\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px;font-family:var(--mono)\">0</text><rect x=\"110\" y=\"40\" width=\"40\" height=\"30\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"130\" y=\"60\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px;font-family:var(--mono)\">1</text><rect x=\"150\" y=\"40\" width=\"40\" height=\"30\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"170\" y=\"60\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px;font-family:var(--mono)\">2</text><text x=\"206\" y=\"60\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">aliens[2]['color'] → green</text><path d=\"M90,70 L77.8,102.5\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M75,110 L73.6,100.9 L82,104.1 Z\" style=\"fill:var(--ink-3)\"/><rect x=\"20\" y=\"110\" width=\"110\" height=\"30\" rx=\"4\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"75\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">'red'</text><path d=\"M130,70 L212.7,106.8\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M220,110 L210.9,110.9 L214.5,102.6 Z\" style=\"fill:var(--ink-3)\"/><rect x=\"165\" y=\"110\" width=\"110\" height=\"30\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"220\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">'green'</text><path d=\"M170,70 L357.2,108.4\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M365,110 L356.3,112.8 L358.1,104 Z\" style=\"fill:var(--ink-3)\"/><rect x=\"310\" y=\"110\" width=\"110\" height=\"30\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"365\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">'green'</text><path d=\"M14,158 L426,158\" style=\"stroke:var(--rule);stroke-width:1.5;fill:none\"/><text x=\"14\" y=\"186\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Built once, before the loop: one dictionary</text><text x=\"14\" y=\"224\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">aliens</text><rect x=\"70\" y=\"204\" width=\"40\" height=\"30\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"90\" y=\"224\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px;font-family:var(--mono)\">0</text><rect x=\"110\" y=\"204\" width=\"40\" height=\"30\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"130\" y=\"224\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px;font-family:var(--mono)\">1</text><rect x=\"150\" y=\"204\" width=\"40\" height=\"30\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"170\" y=\"224\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px;font-family:var(--mono)\">2</text><text x=\"206\" y=\"224\" style=\"fill:var(--clay);font-size:13px;font-family:var(--mono);font-weight:700\">aliens[2]['color'] → red</text><path d=\"M90,234 L188.5,271.2\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none\"/><path d=\"M196,274 L186.9,275.4 L190.1,267 Z\" style=\"fill:var(--clay)\"/><path d=\"M130,234 L212.7,270.8\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none\"/><path d=\"M220,274 L210.9,274.9 L214.5,266.6 Z\" style=\"fill:var(--clay)\"/><path d=\"M170,234 L237,270.2\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none\"/><path d=\"M244,274 L234.8,274.2 L239.1,266.2 Z\" style=\"fill:var(--clay)\"/><rect x=\"165\" y=\"274\" width=\"110\" height=\"30\" rx=\"4\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"220\" y=\"294\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">'red'</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Create the dictionary inside the loop so each item is a separate object; appending the same one three times gives three names for one dictionary.</figcaption></figure><!--/viz:foc-pcc1-fresh-vs-shared-dict--><!--viz:foc-pcc1-choose-structure--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A two-by-two grid. One thing with one fact: a plain variable. One thing with several facts: one dictionary such as alien_0. Many things with one fact each: a dictionary of similar objects such as the poll, with a list as the value when someone has several answers. Many things with several facts each: nest, as a list of dictionaries or a dictionary of dictionaries.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Which structure fits the data?</div><div style=\"display:grid;grid-template-columns:auto 1fr 1fr;gap:4px;font-size:14px;min-width:0\"><div></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center\">One fact about each</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center\">Several facts about each</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;writing-mode:vertical-rl;transform:rotate(180deg);text-align:center\">One thing</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>A plain variable</b><br><span style=\"color:var(--ink-2);font-size:13px\">no dictionary needed</span><br><span style=\"font-family:var(--mono);font-size:12.5px\">city = 'jodhpur'</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--blue-soft)\"><b>One dictionary</b><br><span style=\"color:var(--ink-2);font-size:13px\">keys name the facts</span><br><span style=\"font-family:var(--mono);font-size:12.5px\">alien_0 = {'color': …, 'points': …}</span></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;writing-mode:vertical-rl;transform:rotate(180deg);text-align:center\">Many things</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--blue-soft)\"><b>A dictionary of similar objects</b><br><span style=\"color:var(--ink-2);font-size:13px\">one key per thing; a list as the value if someone has several answers</span><br><span style=\"font-family:var(--mono);font-size:12.5px\">langs = {'jen': 'python', …}</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--clay-soft)\"><b>Nest them</b><br><span style=\"color:var(--ink-2);font-size:13px\">a list of dictionaries, or a dictionary of dictionaries when each thing has a unique key</span><br><span style=\"font-family:var(--mono);font-size:12.5px\">users['mcurie']['location']</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Count the things and the facts about each; that tells you whether to use one dictionary, a dictionary of similar objects, or nesting.</figcaption></figure><!--/viz:foc-pcc1-choose-structure--><p><strong>Key-value pair</strong> — A dictionary is a collection of key-value pairs inside braces {}. A colon links each key to its value, and commas separate the pairs. A value can be anything: a number, a string, a list, even another dictionary.<br><em>e.g.</em> student = {'name': 'asha', 'cgpa': 8.7}</p><p><strong>Accessing a value</strong> — Put the key in square brackets after the dictionary's name: student['name']. You look things up by key, not by numeric position. Asking for a key that doesn't exist stops the program with KeyError; this edition's chapter doesn't show it, but L#23 does (users['location']).</p><p><strong>Adding and modifying pairs</strong> — The same syntax adds or modifies: d[key] = value creates the pair if the key is new and replaces the value if the key already exists. Dictionaries are dynamic: they grow as you assign new keys.</p><p><strong>Starting from an empty dictionary</strong> — Begin with d = {} and assign pairs one line at a time. This is the usual pattern when data comes from users or is generated by a loop.</p><p><strong>Removing a pair with del</strong> — del d[key] removes the key and its value permanently; the rest of the dictionary is untouched.</p><p><strong>One object vs many similar objects</strong> — A dictionary can describe one thing in detail (an alien's colour, points and position) or store the same kind of fact for many things (each poll respondent's language). In the second case, choose loop variable names that match what the keys and values mean.</p><p><strong>Multi-line dictionary style</strong> — For long dictionaries, press Enter after the opening brace, indent each pair four spaces, end each pair with a comma (including the last), and put the closing brace on its own line. Long print calls can be split across lines with + at the line ends.</p><p><strong>Looping with items()</strong> — for key, value in d.items(): unpacks each pair into two variables. Use descriptive names (for name, language in …) to make the loop body readable.</p><p><strong>Looping over keys</strong> — for k in d.keys(): visits each key. Looping over a dictionary directly (for k in d:) does the same, since keys are the default. Inside the loop, d[k] fetches the matching value. key in d (or in d.keys()) checks whether a key exists. The book and L#22 both say keys() returns a list; in Python 3 it is a list-like dict_keys view.</p><p><strong>sorted() keys and values()</strong> — for k in sorted(d.keys()): visits keys in alphabetical order without changing the dictionary. for v in d.values(): visits only the values, repeats included.</p><p><strong>set() to remove duplicates</strong> — Wrapping a collection in set() keeps one copy of each distinct item, e.g. set(d.values()) lists each language once. A set has no guaranteed order.</p><p><strong>List of dictionaries</strong> — Each dictionary describes one object; the list holds many of them. A loop with range() can generate many dictionaries and append them, and a loop over a slice plus an if can update just some of them. Create the dictionary inside the loop so each item is a separate object. Give every dictionary in the list the same keys so one loop can handle them all.</p><p><strong>List inside a dictionary</strong> — Use a list as a value when one key needs several values, such as a pizza's toppings or a person's several favourite languages. Loop over d[key] to process the list, nesting a for inside the dictionary loop if needed.</p><p><strong>Dictionary of dictionaries</strong> — Unique keys (such as usernames) map to inner dictionaries of details. Use two lookups to read: users['asha']['city']. Keep the inner dictionaries' structure identical, and avoid nesting much deeper than this; there's usually a simpler design.</p><div class=\"card\"><strong>Case: The alien fleet</strong> <em>(alien.py and aliens.py, sections 'A Simple Dictionary' to 'A List of Dictionaries')</em><p>A game alien is modelled as a dictionary of colour, points, position and speed; its movement depends on looking up its speed. A fleet of thirty identical aliens is then generated in a loop as a list of dictionaries, and the first few are upgraded by looping over a slice with an if test.</p><p><em>Lesson:</em> Dictionaries model one object's attributes; a list of identically structured dictionaries models many objects.</p><p><em>Think:</em> Write the loop that turns every yellow alien among the first five into a red one worth 15 points.</p></div><div class=\"card\"><strong>Case: The favourite-languages poll</strong> <em>(favorite_languages.py, sections 'A Dictionary of Similar Objects' to 'A List in a Dictionary')</em><p>Poll answers map each person to a language. The book loops over pairs, keys only, sorted keys and values, uses set() to list each language once, invites missing names to respond, and finally lets each person store a list of several languages.</p><p><em>Lesson:</em> The right loop (items, keys, values, sorted, set) depends on which part of the data you need.</p><p><em>Think:</em> Given the poll dictionary, how would you print each distinct language once, in alphabetical order?</p></div><details><summary>Worked problem: Count grades in a class</summary><p>grades = {'asha': 'A', 'ben': 'B', 'chen': 'A', 'dev': 'C'}. Write code that counts how many students got an A and prints: A grades: 2</p><ol><li>count = 0.</li><li>Loop over just the values: for g in grades.values():</li><li>if g == 'A': count = count + 1.</li><li>After the loop: print(\"A grades: \" + str(count)).</li></ol><p><strong>Answer:</strong> A grades: 2</p></details><details><summary>Worked problem: Build and update a stock dictionary</summary><p>Start with stock = {}. Add 'pen' with 10 and 'ink' with 4, sell 3 pens, remove 'ink' entirely, then print stock.</p><ol><li>stock['pen'] = 10 and stock['ink'] = 4 (new keys are created).</li><li>stock['pen'] = stock['pen'] - 3 (existing key is overwritten with 7).</li><li>del stock['ink'].</li><li>print(stock).</li></ol><p><strong>Answer:</strong> {'pen': 7}</p></details><div class=\"def\"><b>Book vs lecture — Dictionary order.</b> Book: Says pairs come back in no particular order and shows printed dictionaries and loops scrambled. Lecture: L#21's Colab output keeps pairs in the order they were added (e.g. x_position and y_position appear after color and points), and the hub's L#21 notes and trap say the textbook statement is out of date. L#22 adds that a set has no fixed order. <b>The lecture wins: for 'what does this print' questions assume insertion order (Python 3.7+). Use sorted() when alphabetical order is needed, and expect a set's order to vary.</b></div><div class=\"def\"><b>Book vs lecture — What keys() returns.</b> Book: Says keys() returns a list of all the keys. Lecture: L#22 says the same (keys() returns a list of the keys); the hub's L#22 note adds that today's Python shows dict_keys([...]). <b>Book and lecture agree, so in a theory answer 'a list of the keys' matches the lecturer. In code output it is a dict_keys view (verified on Python 3): it loops, sorts and answers in like a list but can't be indexed.</b></div><div class=\"def\"><b>Book vs lecture — Upgrading part of the fleet.</b> Book: Makes 30 green aliens, then one loop over aliens[0:3] with if green → yellow and elif yellow → red, so each run moves an alien one step. Lecture: L#23 makes 15 green then 15 yellow aliens and uses two separate loops on different slices: aliens[0:3] green → yellow and aliens[15:18] yellow → red (result: 3 yellow, 12 green, 3 red, 12 yellow). <b>Both are correct Python; practise the lecture's version for the quiz. Know the difference: the book's elif moves an alien one step per run, while the lecture's two loops change different aliens.</b></div><div class=\"def\"><b>Book vs lecture — KeyError.</b> Book: This edition's chapter never shows reading a missing key. Lecture: L#23 shows users['location'] raising KeyError, because location is only a key of the inner dictionaries. <b>No conflict; the lecture adds it. Reading a missing key raises KeyError; assigning to one creates it.</b></div>"
     }
    ]
   }
@@ -1103,6 +1108,62 @@ HUB.addCourse({
    "p": "users['location'] is a KeyError: users only has username keys. Write users['mcurie']['location'], or user_info['location'] inside the items() loop.",
    "f": "outer key, then inner key",
    "lec": 23
+  },
+  {
+   "id": "foc-t0084",
+   "h": "Assigning to a key adds OR overwrites",
+   "p": "d['a'] = 2 creates the key if it is new, and silently replaces the old value if it exists. Unlike a list index, there is no 'out of range' when assigning.",
+   "f": "new key adds, old key replaces",
+   "bk": "Python Crash Course ch6"
+  },
+  {
+   "id": "foc-t0085",
+   "h": "Dictionaries are looked up by key, not position",
+   "p": "d[0] means 'the value for the key 0', not 'the first pair'. If 0 isn't a key you get KeyError.",
+   "f": "keys, not indexes",
+   "bk": "Python Crash Course ch6"
+  },
+  {
+   "id": "foc-t0086",
+   "h": "in checks keys, not values",
+   "p": "'python' in favorite_languages is False when 'python' is only a value. To test values, use 'python' in favorite_languages.values().",
+   "f": "in d → keys only",
+   "bk": "Python Crash Course ch6"
+  },
+  {
+   "id": "foc-t0087",
+   "h": "Looping over a dictionary gives keys",
+   "p": "for x in d: puts each KEY in x, the same as d.keys(). To get both, loop over d.items() with two variables.",
+   "f": "default = keys",
+   "bk": "Python Crash Course ch6"
+  },
+  {
+   "id": "foc-t0088",
+   "h": "keys() is not quite a list",
+   "p": "The book and L#22 describe keys() as returning a list, and for looping, in and sorted() it behaves like one. In Python 3 it is a dict_keys view: d.keys()[0] raises TypeError. Write list(d.keys())[0] if you need a position.",
+   "f": "view, not list",
+   "bk": "Python Crash Course ch6"
+  },
+  {
+   "id": "foc-t0089",
+   "h": "An if-elif upgrade moves each alien one step per pass",
+   "p": "In the book's loop (green → yellow, elif yellow → red), a green alien becomes yellow and the elif is skipped in that same pass. It takes a second run to reach red, and a red alien matches neither test.",
+   "f": "elif: one step per pass",
+   "bk": "Python Crash Course ch6"
+  },
+  {
+   "id": "foc-t0090",
+   "h": "Assigning an inner key needs the outer key to exist",
+   "p": "users['k2']['city'] = 'goa' first reads users['k2']; if 'k2' isn't a key, that read raises KeyError before anything is assigned. Create the inner dictionary first: users['k2'] = {'city': 'goa'}.",
+   "f": "outer must exist first",
+   "bk": "Python Crash Course ch6"
+  },
+  {
+   "id": "foc-t0091",
+   "h": "One dictionary appended three times is still one dictionary",
+   "p": "If new_alien = {...} sits before the loop, append() stores the same dictionary three times, so changing aliens[0] changes them all. Build the dictionary inside the loop, as the book and L#23 do.",
+   "f": "build it inside the loop",
+   "bk": "Python Crash Course ch6"
   }
  ],
  "defs": [
@@ -1801,6 +1862,62 @@ HUB.addCourse({
    "term": "Nested loop",
    "html": "<b>Nested loop</b>: a for loop indented inside another. The inner loop runs completely on every pass of the outer one, for example once per language for each person.",
    "lec": 23
+  },
+  {
+   "id": "foc-d0090",
+   "unit": "dicts",
+   "topic": "Dictionaries",
+   "term": "Dictionary",
+   "html": "A <b>dictionary</b> is a collection of <b>key-value pairs</b> in braces <b>{}</b>; each key is linked to a value you look up by that key.",
+   "bk": "Python Crash Course ch6"
+  },
+  {
+   "id": "foc-d0091",
+   "unit": "dicts",
+   "topic": "Dictionaries",
+   "term": "Key-value pair",
+   "html": "A <b>key-value pair</b> is a key and its associated value, written <b>key: value</b>. Giving the key returns the value.",
+   "bk": "Python Crash Course ch6"
+  },
+  {
+   "id": "foc-d0092",
+   "unit": "dicts",
+   "topic": "Dictionaries",
+   "term": "KeyError",
+   "html": "<b>KeyError</b>: you asked a dictionary for a key it doesn't contain, e.g. users['location'] when location is only an inner key (L#23). Reading a missing key fails; assigning to one creates it.",
+   "bk": "Python Crash Course ch6"
+  },
+  {
+   "id": "foc-d0093",
+   "unit": "dicts",
+   "topic": "Dictionaries",
+   "term": "in with a dictionary",
+   "html": "<b>key in d</b> tests the <b>keys</b> only. To test values, write <b>value in d.values()</b>.",
+   "bk": "Python Crash Course ch6"
+  },
+  {
+   "id": "foc-d0094",
+   "unit": "dicts",
+   "topic": "Dictionaries",
+   "term": "dict_keys view",
+   "html": "<b>d.keys()</b> returns a <b>dict_keys</b> view in Python 3 (and <b>d.values()</b> a dict_values view): it loops, sorts and answers <b>in</b> like a list, but can't be indexed. Wrap it in <b>list()</b> to index it.",
+   "bk": "Python Crash Course ch6"
+  },
+  {
+   "id": "foc-d0095",
+   "unit": "dicts",
+   "topic": "Dictionaries",
+   "term": "Trailing comma",
+   "html": "A <b>trailing comma</b> after the last pair of a multi-line dictionary is legal and does nothing; the book recommends it so the next pair can be added on a new line.",
+   "bk": "Python Crash Course ch6"
+  },
+  {
+   "id": "foc-d0096",
+   "unit": "dicts",
+   "topic": "Dictionaries",
+   "term": "Separate objects",
+   "html": "Each time <b>{…}</b> runs, Python makes a <b>new dictionary</b>. Built inside a loop, the appended dictionaries are <b>separate objects</b> you can change one at a time.",
+   "bk": "Python Crash Course ch6"
   }
  ],
  "questions": [
@@ -7307,6 +7424,363 @@ HUB.addCourse({
    "w": "A dictionary in a dictionary lets users['username'] jump to that member's details. One flat dictionary holds only one member, and a list would have to be searched.",
    "lec": 23,
    "lv": "analyse"
+  },
+  {
+   "id": "foc-q0336",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\ninventory = {'rice': 5, 'dal': 2}\ninventory['dal'] = 4\ninventory['oil'] = 1\ninventory['rice'] = inventory['rice'] - 5\nprint(len(inventory))",
+   "c": [
+    "4",
+    "2",
+    "3",
+    "5"
+   ],
+   "a": [
+    2
+   ],
+   "w": "'oil' is a new key, so it is added; 'dal' already exists, so its value is replaced, not added again. Setting rice to 0 changes the value but keeps the pair (only del removes one). So 3 pairs. 4 would count dal twice; 2 would treat a zero value as deleted.",
+   "bk": "Python Crash Course ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0337",
+   "topic": "Dictionaries",
+   "q": "Which line correctly gets Sarah's language from langs = {'jen': 'python', 'sarah': 'c'}?",
+   "c": [
+    "langs[1]",
+    "langs('sarah')",
+    "langs['sarah']",
+    "langs.sarah"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Values are looked up by key in square brackets. langs[1] treats it like a list (and would raise KeyError, since 1 isn't a key); round brackets would try to call the dictionary; dot access isn't how dictionary keys work.",
+   "bk": "Python Crash Course ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0338",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nmenu = {'tea': 20, 'coffee': 30}\ndel menu['tea']\nmenu['tea'] = 25\nprint(menu)",
+   "c": [
+    "{'tea': 25, 'coffee': 30}",
+    "{'coffee': 30, 'tea': 25}",
+    "{'coffee': 30}",
+    "KeyError: 'tea'"
+   ],
+   "a": [
+    1
+   ],
+   "w": "del removes the pair for good. The next line assigns to a key that no longer exists, so a brand-new pair is created, and in Python 3.7+ (Colab) new pairs go at the end. It isn't a KeyError: only reading a missing key fails, not assigning to it.",
+   "bk": "Python Crash Course ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0339",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nstock = {'pen': 10, 'ink': 4}\nfor pair in stock.items():\n    print(pair)",
+   "c": [
+    "pen then ink",
+    "('pen', 10) then ('ink', 4)",
+    "10 then 4",
+    "ValueError: too many values to unpack"
+   ],
+   "a": [
+    1
+   ],
+   "w": "items() hands the loop one (key, value) pair per pass. With two loop variables the pair is unpacked (L#22); with one, the variable holds the whole pair, printed as a tuple. Only a bare dictionary loop gives just the keys.",
+   "bk": "Python Crash Course ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0340",
+   "topic": "Dictionaries",
+   "q": "d = {'jen': 'python', 'sarah': 'c'}. What are 'python' in d and 'jen' in d?",
+   "c": [
+    "True, True",
+    "True, False",
+    "False, False",
+    "False, True"
+   ],
+   "a": [
+    3
+   ],
+   "w": "in on a dictionary checks KEYS only. 'python' is a value, not a key, so it's False; 'jen' is a key, so it's True. Use 'python' in d.values() to check values.",
+   "bk": "Python Crash Course ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0341",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nprint(sorted({'zoya': 3, 'amit': 1, 'kiran': 2}))",
+   "c": [
+    "['amit', 'kiran', 'zoya']",
+    "[1, 2, 3]",
+    "['zoya', 'amit', 'kiran']",
+    "{'amit': 1, 'kiran': 2, 'zoya': 3}"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A dictionary on its own stands for its keys, so sorted() sorts the keys and returns a new list. It does not sort the values, and it never returns a dictionary.",
+   "bk": "Python Crash Course ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0342",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nhostel = {'asha': 'b1', 'ravi': 'b2', 'meera': 'b1', 'om': 'b3', 'tara': 'b2', 'dev': 'b1'}\nprint(len(hostel), len(set(hostel.values())))",
+   "c": [
+    "6 6",
+    "3 6",
+    "12 3",
+    "6 3"
+   ],
+   "a": [
+    3
+   ],
+   "w": "len() of a dictionary counts its pairs: 6. The values repeat (b1 three times, b2 twice), and set() keeps each once: b1, b2, b3, so 3. 12 would count keys and values separately.",
+   "bk": "Python Crash Course ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0343",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\norder = {'size': 'large', 'toppings': ['onion', 'capsicum', 'corn']}\nprint(order['toppings'][-1].title())",
+   "c": [
+    "Onion",
+    "Corn",
+    "['onion', 'capsicum', 'corn']",
+    "KeyError: -1"
+   ],
+   "a": [
+    1
+   ],
+   "w": "order['toppings'] gives the list, and [-1] then picks its last item (negative indexes from the lists chapter), so 'corn', which title() capitalises. There's no KeyError: the dictionary lookup uses 'toppings'; -1 indexes the list. Onion would be index 0.",
+   "bk": "Python Crash Course ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0344",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nusers = {\n    'r1': {'city': 'pune', 'age': 20},\n    'k2': {'city': 'goa', 'age': 22},\n    }\nfor name, info in users.items():\n    info['age'] = info['age'] + 1\nprint(users['r1']['age'])",
+   "c": [
+    "20",
+    "22",
+    "KeyError: 'age'",
+    "21"
+   ],
+   "a": [
+    3
+   ],
+   "w": "On each pass info is the inner dictionary itself, not a copy, so info['age'] + 1 is written back into users. r1 goes from 20 to 21. 20 would mean the loop changed copies; there's no KeyError because 'age' is read from the inner dictionary.",
+   "bk": "Python Crash Course ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0345",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\naliens = []\nnew_alien = {'color': 'green', 'points': 5}\nfor n in range(3):\n    aliens.append(new_alien)\naliens[0]['color'] = 'red'\nprint(aliens[2]['color'])",
+   "c": [
+    "green",
+    "red",
+    "IndexError",
+    "yellow"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The dictionary is made once, before the loop, so append() stores the same dictionary three times. Changing it through aliens[0] changes what aliens[2] shows. The book builds new_alien inside the loop, so each alien is a separate object; then the answer would be green.",
+   "bk": "Python Crash Course ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0346",
+   "topic": "Dictionaries",
+   "q": "What happens here?\n\nd = {'a': 1}\nprint(d['b'])",
+   "c": [
+    "It prints None",
+    "It prints 0",
+    "It adds 'b' with no value",
+    "KeyError: 'b'"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Reading a key that doesn't exist raises KeyError; L#23 shows the same error with users['location']. Only ASSIGNING to a missing key creates it. A dictionary never hands back None or 0 for a missing key.",
+   "bk": "Python Crash Course ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0347",
+   "topic": "Dictionaries",
+   "q": "Which loop prints every student and each of their clubs, given clubs = {'asha': ['chess', 'music'], 'ravi': ['drama']}?",
+   "c": [
+    "for name in clubs:\n    print(name + clubs)",
+    "for club in clubs.values():\n    print(name)",
+    "for name, club_list in clubs.items():\n    print(name)\n    for club in club_list:\n        print(club)",
+    "for name, club in clubs:\n    print(name, club)"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Each value is a list, so an inner for loop walks through it. The loop over clubs.values() uses name, which is never set in that loop. The for name, club in clubs loop forgets .items(), so it tries to unpack each key string and fails.",
+   "bk": "Python Crash Course ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0348",
+   "topic": "Dictionaries",
+   "q": "Which statement about dictionary order is correct in the Python used on Colab today?",
+   "c": [
+    "Order is random every run, as the book says",
+    "Dictionaries are always sorted by key",
+    "Dictionaries keep the order in which keys were inserted (Python 3.7+)",
+    "Dictionaries are always sorted by value"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The book was written for older Python 3, where order wasn't guaranteed; L#21's Colab output keeps insertion order, and for the quiz the lecture wins. Dictionaries are not auto-sorted; use sorted(d.keys()) for alphabetical order.",
+   "bk": "Python Crash Course ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0349",
+   "topic": "Dictionaries",
+   "q": "Why does the book recommend that every dictionary in a list (or every inner dictionary) have the same keys?",
+   "c": [
+    "Python raises an error if they differ",
+    "So one loop can process each dictionary the same way without special cases",
+    "Because dictionaries in a list must be sorted",
+    "Because keys must be unique across the whole list"
+   ],
+   "a": [
+    1
+   ],
+   "w": "It's a design convenience, not a rule Python enforces: identical structure means the same code works for every item. Different keys in different dictionaries are legal but complicate the loop.",
+   "bk": "Python Crash Course ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0350",
+   "topic": "Dictionaries",
+   "q": "attendance = {'meena': 'present', 'kabir': 'absent'}. Which line prints Ravi is not on the register. only if Ravi has no entry?",
+   "c": [
+    "if 'ravi' not in attendance.values():\n    print(\"Ravi is not on the register.\")",
+    "if attendance['ravi'] == None:\n    print(\"Ravi is not on the register.\")",
+    "if 'ravi' not in attendance:\n    print(\"Ravi is not on the register.\")",
+    "if not attendance.items('ravi'):\n    print(\"Ravi is not on the register.\")"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Names are KEYS, so test membership with not in attendance (or not in attendance.keys()). The values() version checks 'present' and 'absent', so it prints even when Ravi is registered. attendance['ravi'] raises KeyError before any comparison, and items() takes no argument.",
+   "bk": "Python Crash Course ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0351",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nfavorite = {'jen': ['python'], 'sarah': ['c']}\nfavorite['sarah'].append('go')\nfavorite['om'] = ['rust']\nprint(favorite['sarah'], len(favorite))",
+   "c": [
+    "['c', 'go'] 3",
+    "['c', 'go'] 2",
+    "['go'] 3",
+    "['c'] 3"
+   ],
+   "a": [
+    0
+   ],
+   "w": "favorite['sarah'] is a list, so append() adds 'go' to the end of it and keeps 'c'. Assigning to the new key 'om' adds a third pair. 2 forgets that new pair; ['go'] would mean append() replaced the list, which it never does.",
+   "bk": "Python Crash Course ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0352",
+   "topic": "Dictionaries",
+   "q": "The book's multi-line style puts a comma after the last pair too:\n\ncodes = {\n    'del': 'delhi',\n    'bom': 'mumbai',\n    }\n\nWhat does Python do with that final comma?",
+   "c": [
+    "Raises a SyntaxError",
+    "Adds an empty third pair",
+    "Turns the dictionary into a tuple",
+    "Nothing: a trailing comma is allowed"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A comma after the last pair is legal and changes nothing; the dictionary has two pairs. The book recommends it so the next pair can be added on a new line without editing the previous one.",
+   "bk": "Python Crash Course ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0353",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nusers = {'r1': {'city': 'pune'}}\nusers['k2']['city'] = 'goa'\nprint(users)",
+   "c": [
+    "{'r1': {'city': 'pune'}, 'k2': {'city': 'goa'}}",
+    "{'r1': {'city': 'pune'}, 'k2': 'goa'}",
+    "KeyError: 'k2'",
+    "{'r1': {'city': 'goa'}}"
+   ],
+   "a": [
+    2
+   ],
+   "w": "To assign to ['city'], Python must first READ users['k2'] to find the inner dictionary, and reading a missing key raises KeyError. Assignment creates only the last key in the chain. Create the inner dictionary first: users['k2'] = {'city': 'goa'}.",
+   "bk": "Python Crash Course ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0354",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\naliens = [{'color': 'green'}, {'color': 'green'}]\nfor alien in aliens:\n    if alien['color'] == 'green':\n        alien['color'] = 'yellow'\n    elif alien['color'] == 'yellow':\n        alien['color'] = 'red'\nprint(aliens[0]['color'])",
+   "c": [
+    "yellow",
+    "green",
+    "red",
+    "KeyError: 'color'"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The if matches, so the alien becomes yellow and the elif is skipped for that pass; elif is only checked when the if was False. Reaching red needs a second run of the loop, as in the book's upgrade code.",
+   "bk": "Python Crash Course ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0355",
+   "topic": "Dictionaries",
+   "q": "What does the book advise when you find yourself nesting lists and dictionaries much deeper than a dictionary of dictionaries?",
+   "c": [
+    "Look for a simpler way to structure the data",
+    "Convert every inner list to a tuple",
+    "Always use a list of lists instead",
+    "Sort the outer dictionary first"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The book warns against deep nesting: if you need many levels, a simpler design probably exists. Tuples, lists of lists and sorting don't address the complexity.",
+   "bk": "Python Crash Course ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0356",
+   "topic": "Dictionaries",
+   "q": "On Colab, what does this print?\n\nd = {'jen': 'python', 'sarah': 'c'}\nprint(d.keys())",
+   "c": [
+    "dict_keys(['jen', 'sarah'])",
+    "['jen', 'sarah']",
+    "('jen', 'sarah')",
+    "{'jen', 'sarah'}"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The book and L#22 call it a list, and it does loop and sort like one, but Python 3 returns a dict_keys view and prints it with that label. list(d.keys()) would print the plain list.",
+   "bk": "Python Crash Course ch6",
+   "lv": "recall"
   }
  ],
  "briefs": {
@@ -7366,6 +7840,7 @@ HUB.addCourse({
   "lec-20",
   "lec-21",
   "lec-22",
-  "lec-23"
+  "lec-23",
+  "pcc1-ch06"
  ]
 });

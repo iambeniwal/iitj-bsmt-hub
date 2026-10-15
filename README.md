@@ -149,6 +149,8 @@ python3 tools/build-offline.py
 
 Full history in [`CHANGELOG.md`](CHANGELOG.md). Most recent:
 
+- **[2.3.1] — 2026-10-15**: Statistics Chapter 8 (the lecturer's practice set and the textbook) and
+  the Python textbook's Dictionaries chapter (62 questions; 2,242 in all).
 - **[2.3.0] — 2026-10-15**: the new grading rule for every course (two quizzes, the higher
   counts, 30%; offline exam 70%; no Quiz 3), and the 13 lectures released 9–13 October
   (228 questions; 2,180 in all).

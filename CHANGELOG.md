@@ -10,6 +10,21 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.3.1] — 2026-10-15
+
+### Added
+- **Statistics: interval estimation from the textbook and the lecturer's practice set.** Now
+  that Lecture 22 has started the topic, the Chapter 8 material is in the new "Confidence
+  intervals & sample size" unit: the lecturer's Chapter 8 practice sheet, restated and solved
+  (20 questions), and the textbook chapter's notes with three diagrams (21 questions). L#22
+  taught part 1 of the topic's four (σ known); questions on σ unknown, sample size and
+  proportions are labelled with the part they belong to. For 98% the hub uses z = 2.326, as
+  L#22 gives z to three decimals, and shows the 2.33 answer alongside.
+- **Foundations of Computing: the textbook's Dictionaries chapter** (21 questions, three
+  diagrams), now that the lectures have covered it, written so it doesn't repeat Lectures 21–23.
+  Where the book and the lecture differ (dictionary order, what `keys()` returns) the notes
+  say which to follow.
+
 ## [2.3.0] — 2026-10-15
 
 ### Changed

@@ -555,6 +555,16 @@ HUB.addCourse({
      "t": "Discount Sounds: 90%, 95% and 99% intervals",
      "src": "L#22",
      "h": "<p style=\"font-size:14.5px\"><strong>Discount Sounds</strong> has 260 retail outlets and is judging a site for a new one, partly on the mean annual income of people in the new marketing area. A sample of <strong>n = 36</strong> gives <strong>x̄ = $41,100</strong>. From earlier studies σ = <strong>$4,500</strong>, and the income population is not believed to be highly skewed. Build a 95% interval for μ.</p>\n<ol>\n<li>C = 0.95, so α = 0.05 and α/2 = 0.025. Table lookup at 0.975: z<sub>0.025</sub> = 1.960.</li>\n<li>The population of residents is effectively infinite, so σ<sub>x̄</sub> = 4,500/√36 = <strong>750</strong>.</li>\n<li>Margin of error = 1.960 × 750 = <strong>1,470</strong>.</li>\n<li>Interval: 41,100 ± 1,470, so <strong>$39,630 to $42,570</strong>. We are 95% confident it contains the mean income of the area.</li>\n</ol>\n<div class=\"scroller\"><table><thead><tr><th>Confidence</th><th>z value</th><th>Margin of error</th><th>Interval</th><th>Width</th></tr></thead><tbody>\n<tr><td>90%</td><td>1.645</td><td>1,234</td><td>39,866 to 42,334</td><td>2,468</td></tr>\n<tr><td>95%</td><td>1.960</td><td>1,470</td><td>39,630 to 42,570</td><td>2,940</td></tr>\n<tr><td>99%</td><td>2.576</td><td>1,932</td><td>39,168 to 43,032</td><td>3,864</td></tr>\n</tbody></table></div>\n<p style=\"font-size:14.5px\">Only z changes; x̄ and σ<sub>x̄</sub> stay the same. <strong>More confidence costs a wider interval.</strong> The lecturer's analogy: to be surer of reaching the railway station in time, you leave a bigger margin; if arriving on time 90% of the time is good enough, a smaller margin will do. Statistics puts a number on that trade-off. With the confidence level fixed, the only way to narrow the interval is a larger sample.</p>\n<h4>Is the sample big enough for this interval?</h4>\n<ul>\n<li><strong>n ≥ 30</strong> is adequate in most applications (central limit theorem).</li>\n<li><strong>Highly skewed</strong> population or outliers (incomes in a very unequal economy): take a larger sample, <strong>50 or more</strong>.</li>\n<li>Not normal but roughly <strong>symmetric</strong>: as few as about <strong>15</strong> can do.</li>\n<li>Believed to be approximately <strong>normal</strong>: even fewer than 15 is acceptable.</li>\n<li>With <strong>50 or more</strong>, the method can be used in practically any situation.</li>\n</ul>\n<p style=\"font-size:14.5px\">That is why the case states that incomes in the area are not highly skewed: with n = 36, the normal-based interval is then reasonable.</p><!--viz:sfm-l22-discount-sounds-intervals--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three horizontal intervals centred on a sample mean of 41,100 dollars: 90% from 39,866 to 42,334 (plus or minus 1,234), 95% from 39,630 to 42,570 (plus or minus 1,470), and 99% from 39,168 to 43,032 (plus or minus 1,932).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Discount Sounds: the price of more confidence</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 210\" role=\"img\" aria-label=\"Three interval estimates of mean annual income around the sample mean of 41,100 dollars: 90% from 39,866 to 42,334, 95% from 39,630 to 42,570, and 99% from 39,168 to 43,032. The higher the confidence, the longer the interval.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><text x=\"14\" y=\"57\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">90%</text><path d=\"M143.4,52 L336.6,52\" style=\"stroke:var(--ink-2);stroke-width:6;fill:none\"/><text x=\"143.4\" y=\"41\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">39,866</text><text x=\"336.6\" y=\"41\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">42,334</text><text x=\"288.3\" y=\"73\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">± 1,234</text><text x=\"14\" y=\"107\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">95%</text><path d=\"M125.0,102 L355.0,102\" style=\"stroke:var(--blue);stroke-width:6;fill:none\"/><text x=\"125.0\" y=\"91\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">39,630</text><text x=\"355.0\" y=\"91\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">42,570</text><text x=\"297.5\" y=\"123\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">± 1,470</text><text x=\"14\" y=\"157\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">99%</text><path d=\"M88.8,152 L391.2,152\" style=\"stroke:var(--ink-2);stroke-width:6;fill:none\"/><text x=\"88.8\" y=\"141\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">39,168</text><text x=\"391.2\" y=\"141\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">43,032</text><text x=\"315.6\" y=\"173\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">± 1,932</text><path d=\"M240.0,34 L240.0,168\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none;stroke-dasharray:4 3\"/><text x=\"240.0\" y=\"186\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">x̄ = 41,100</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Same sample, same standard error of 750: only z changes, and each step up in confidence stretches the interval.</figcaption></figure><!--/viz:sfm-l22-discount-sounds-intervals-->"
+    },
+    {
+     "t": "Practice questions from the lecturer: Chapter 8",
+     "src": "L#22",
+     "h": "<p style=\"font-size:14.5px\">The lecturer's own practice set for Chapter 8, Interval Estimation, shared by Dr. Srivastava through an LMS announcement on 9 Oct 2026: 20 questions, 10 objective (Part A) and 10 numerical (Part B). Each one is restated in our words below with a full worked solution; the numbers are the sheet's. L#22 taught the first part of the chapter, the interval for μ when σ is known. In L#22's plan the topic has four parts: (1) σ known, (2) σ unknown, (3) choosing the sample size, (4) the population proportion. The sheet covers all four, so every question below is labelled with its part. For parts 2–4 the working follows the textbook's method; check it against those lectures when they come.</p><div class=\"scroller\"><table><thead><tr><th>Part of the topic</th><th>Lectured</th><th>On this sheet</th></tr></thead><tbody><tr><td>1 · Mean, σ known (z)</td><td>L#22</td><td>Part A Q1, 2, 4, 5, 6, 10 · Numerical 1</td></tr><tr><td>2 · Mean, σ unknown (t, n − 1 df)</td><td>after L#22</td><td>Part A Q3, 7 · Numericals 2, 3, 4</td></tr><tr><td>3 · Sample size for a mean</td><td>after L#22</td><td>Numericals 5, 6</td></tr><tr><td>4 · Proportion: interval, and its sample size (with part 3)</td><td>after L#22</td><td>Part A Q8, 9 · Numericals 7, 8, 9, 10</td></tr></tbody></table></div><h4>What this sheet tells you to be able to do</h4><ul><li>Pick the right critical value: z when σ is known (and for proportions), t with n − 1 degrees of freedom when only s is available.</li><li>Find the margin of error first, then write the interval as point estimate ± margin.</li><li>Build an interval for a proportion from a count (p̂ = x/n) and see how it widens from 95% to 99%.</li><li>Work out the sample size for a target margin, for a mean and for a proportion, and always round <strong>up</strong>.</li><li>Use p* = 0.50 when there is no planning value for a proportion.</li><li>Read an interval: a claimed value outside it ‘appears to differ’; a value inside it is plausible.</li></ul><div class=\"def\"><b>The toolkit for the whole chapter.</b> E is the desired margin of error. Only the first row has been lectured so far (L#22).</div><div class=\"scroller\"><table><thead><tr><th>Case</th><th>Interval or sample size</th><th>Critical value</th><th>Part</th></tr></thead><tbody><tr><td>Mean, σ known</td><td>x̄ ± z<sub>α/2</sub> σ/√n</td><td>z</td><td>1 (L#22)</td></tr><tr><td>Mean, σ unknown</td><td>x̄ ± t<sub>α/2</sub> s/√n</td><td>t with n − 1 df</td><td>2</td></tr><tr><td>Sample size, mean</td><td>n = (z<sub>α/2</sub> σ/E)²</td><td>z, σ = planning value</td><td>3</td></tr><tr><td>Proportion</td><td>p̂ ± z<sub>α/2</sub> √[p̂(1 − p̂)/n]</td><td>z</td><td>4</td></tr><tr><td>Sample size, proportion</td><td>n = z<sub>α/2</sub>² p*(1 − p*)/E²</td><td>z, p* = planning value (0.50 if none)</td><td>3–4</td></tr></tbody></table></div><div class=\"scroller\"><table><thead><tr><th>Confidence</th><th>α/2 in each tail</th><th>Look up left area</th><th>z<sub>α/2</sub></th></tr></thead><tbody><tr><td>90%</td><td>0.05</td><td>0.95</td><td>1.645</td></tr><tr><td>95%</td><td>0.025</td><td>0.975</td><td>1.960</td></tr><tr><td>98%</td><td>0.01</td><td>0.99</td><td>2.326 (two-decimal table: 2.33)</td></tr><tr><td>99%</td><td>0.005</td><td>0.995</td><td>2.576 (two-decimal table: 2.57 or 2.58)</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Look up the left area 1 − α/2 in the same z table the hub uses (L#14). L#22 quotes these values to three decimals and says they will generally be given in the paper. Excel: <code>=NORM.S.INV(0.975)</code> = 1.960 and <code>=T.INV.2T(0.05, 63)</code> = 1.998, the two-tailed t value for 95% with 63 df.</p><div class=\"def\"><b>Issues on the sheet:</b><ul><li><b>z or t with a big sample?</b> Part A asks which distribution to use when σ is unknown ‘and the sample is small’ (answer: t), but Numericals 2 and 3 give only s, with n = 64 and n = 80. L#22 used z throughout because σ was known; σ unknown is part 2 of the topic and has not been lectured yet. The textbook uses t whenever σ is unknown, whatever n; an older shortcut switches to z for n ≥ 30. Both answers are shown; use t unless the part 2 lecture says otherwise. The difference is in the second decimal.</li><li><b>98% critical value:</b> L#22 gives z to three decimals (1.645, 1.960, 2.576), and the three-decimal value for 98% is 2.326, the same figure as the ∞ row of the textbook's t table. A two-decimal z table gives 2.33. The answers below use 2.326 and show 2.33 alongside: Numerical 5 comes out at 37 either way, while Numerical 10 moves by a few units.</li><li><b>Numerical 3(c)</b> asks for a total spend but the sheet never gives how many people are in the population. The method is shown with N left as a letter.</li><li><b>Numerical 4</b> refers to a dataset of 60 games that the sheet does not include, so no numbers can be computed. Only the method is shown.</li><li>The sheet prints an answer only for Part A Q10. The other nine are answered below.</li></ul></div><details><summary>Part A · the 10 objective questions, answered</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>What it asks</th><th>Answer</th><th>Part</th></tr></thead><tbody><tr><td>1</td><td>What a confidence interval is for</td><td>Estimating a population parameter (a range of plausible values for μ or p)</td><td>1</td></tr><tr><td>2</td><td>Distribution when σ is known</td><td>Standard normal (z)</td><td>1</td></tr><tr><td>3</td><td>Distribution when σ is unknown and n is small</td><td>t</td><td>2</td></tr><tr><td>4</td><td>Margin of error for μ, σ known</td><td>z<sub>α/2</sub> × σ/√n</td><td>1</td></tr><tr><td>5</td><td>Larger n, everything else fixed</td><td>Margin of error decreases (it shrinks with √n)</td><td>1</td></tr><tr><td>6</td><td>z for 95%</td><td>1.960</td><td>1</td></tr><tr><td>7</td><td>Degrees of freedom for t</td><td>n − 1</td><td>2</td></tr><tr><td>8</td><td>Point estimator of p</td><td>p̂</td><td>4</td></tr><tr><td>9</td><td>Planning value of p with no prior information</td><td>p = 0.50 (it gives the largest p(1 − p), so the safest n)</td><td>3–4</td></tr><tr><td>10</td><td>90% → 99% with the same n</td><td>Wider (the sheet's own answer, B)</td><td>1</td></tr></tbody></table></div><p style=\"font-size:14.5px\">All ten are also in the question bank, reworded. The trap in Q9: 0.25 is the value of p(1 − p) at p = 0.50, not the planning value of p.</p></details><details><summary>Numerical 1 · Interval for a mean, σ known (part 1, L#22)</summary><p style=\"font-size:14.5px\">A sample of 54 discount brokers charges a mean of $33.77 for a particular 100-share trade. The population standard deviation is known to be $15. Find (a) the 95% margin of error and (b) the 95% confidence interval for the mean charge.</p><ol><li>σ is known, so use z, exactly as in L#22: z<sub>.025</sub> = 1.960.</li><li>Standard error: σ/√n = 15/√54 = 15/7.348 = 2.041.</li><li>(a) Margin of error = 1.96 × 2.041 = 4.00.</li><li>(b) 33.77 ± 4.00 → $29.77 to $37.77.</li><li>Excel: <code>=CONFIDENCE.NORM(0.05, 15, 54)</code> returns the margin, 4.0008.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) ≈ $4.00; (b) $29.77 to $37.77.</p></details><details><summary>Numerical 2 · Interval for a mean from s, and comparing with an old figure (part 2: σ unknown)</summary><p style=\"font-size:14.5px\">64 families visiting a tourist destination spend a mean of $252.45 a day, with sample standard deviation $74.50. (a) Find the 95% confidence interval for the mean daily spend. (b) Does the population mean appear to differ from an earlier reported mean of $215.60?</p><ol><li>Only s is known, so the textbook uses t with n − 1 = 63 df: t<sub>.025</sub> = 1.998. (σ unknown is part 2 of the topic, after L#22.)</li><li>Standard error: s/√n = 74.50/8 = 9.3125.</li><li>Margin = 1.998 × 9.3125 = 18.61.</li><li>(a) 252.45 ± 18.61 → $233.84 to $271.06.</li><li>(b) $215.60 is below the lower limit, so it is not a plausible value for the current mean: spending appears to have risen.</li><li>With z = 1.96 instead (the n ≥ 30 shortcut): margin 18.25, interval $234.20 to $270.70. The conclusion in (b) is the same.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) ≈ $233.84 to $271.06 (t) [z: $234.20 to $270.70]; (b) yes, it appears to differ: $215.60 lies outside the interval.</p></details><details><summary>Numerical 3 · Margin, interval, a total, and skew (part 2: σ unknown)</summary><p style=\"font-size:14.5px\">A sample of 80 people aged 50 and over spends a mean of $1,873 a year on restaurant and take-away food, with s = $550. Find (a) the 95% margin of error, (b) the 95% interval for the mean, (c) an estimate of the total spent by everyone in this age group, and (d) whether the median is likely above or below $1,873 if spending is skewed to the right.</p><ol><li>Only s is known: t with 79 df, t<sub>.025</sub> = 1.990. Standard error = 550/√80 = 61.49.</li><li>(a) Margin = 1.990 × 61.49 = 122.40.</li><li>(b) 1,873 ± 122.40 → $1,750.60 to $1,995.40. (With z = 1.96: margin 120.52, interval $1,752.48 to $1,993.52.)</li><li>(c) Total = N × x̄ = N × $1,873, where N is the number of people aged 50+. The sheet does not give N. An interval for the total is N × ($1,750.60 to $1,995.40): for every million people, about $1.87 billion, between $1.75 and $2.00 billion.</li><li>(d) Right skew means a few very large spenders pull the mean up, so the median is <strong>less</strong> than the mean of $1,873.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) ≈ $122.40; (b) ≈ $1,750.60 to $1,995.40; (c) N × $1,873 (N not given on the sheet); (d) less than $1,873.</p></details><details><summary>Numerical 4 · Interval from raw data, dataset not on the sheet (part 2: σ unknown)</summary><p style=\"font-size:14.5px\">A sample of 60 professional American-football games records the minutes players spend standing around between plays. Find (a) the sample mean, (b) the sample standard deviation and (c) the 95% interval for the mean. <em>The sheet refers to a data file that it does not include, so only the method can be given.</em></p><ol><li>(a) x̄ = Σx/60. In Excel: <code>=AVERAGE(range)</code>.</li><li>(b) s = √[Σ(x − x̄)²/(60 − 1)]: divide by n − 1 = 59, because this is a sample. Excel: <code>=STDEV.S(range)</code>.</li><li>(c) σ is unknown, so use t with 59 df: t<sub>.025</sub> = 2.001. Interval: x̄ ± 2.001 × s/√60 = x̄ ± 0.2583 s.</li><li>Excel shortcut for the margin: <code>=CONFIDENCE.T(0.05, s, 60)</code>.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> x̄ ± 2.001 s/√60 once x̄ and s are calculated from the data file (ask for it on the LMS if you want to check numbers).</p></details><details><summary>Numerical 5 · Sample size for a mean at 98% (part 3)</summary><p style=\"font-size:14.5px\">A car model's fuel economy is to be estimated to within ±1 mile per gallon at 98% confidence. The population standard deviation is 2.6 mpg. How many cars should be tested?</p><ol><li>98% leaves 0.01 in each tail, so look up a left area of 0.99: z<sub>.01</sub> = 2.326 (two-decimal table: 2.33).</li><li>n = (z σ/E)² = (2.326 × 2.6/1)² = (6.048)² = 36.57.</li><li>Round <strong>up</strong> to 37. (With 2.33: (6.058)² = 36.70, still 37.)</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 37 cars.</p></details><details><summary>Numerical 6 · Sample size for a mean at 95% and 99% (part 3)</summary><p style=\"font-size:14.5px\">A medical centre wants to estimate the mean time a staff member spends with each patient to within ±2 minutes, using a planning value of σ = 8 minutes. Find the sample size at (a) 95% and (b) 99% confidence.</p><ol><li>(a) n = (1.96 × 8/2)² = (7.84)² = 61.47 → round up to <strong>62</strong>.</li><li>(b) n = (2.576 × 8/2)² = (10.304)² = 106.17 → round up to <strong>107</strong>. (2.58 gives 106.50, still 107.)</li><li>More confidence at the same margin needs a bigger sample: here about 73% more.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) 62; (b) 107.</p></details><details><summary>Numerical 7 · Interval for a proportion at 95% and 99% (part 4)</summary><p style=\"font-size:14.5px\">47% of a sample of 450 college students work to pay their fees and living costs. Give (a) the 95% and (b) the 99% confidence interval for the population proportion, and (c) say what happens to the margin of error as confidence rises.</p><ol><li>p̂ = 0.47. Standard error = √(0.47 × 0.53/450) = √0.000554 = 0.02353.</li><li>(a) Margin = 1.96 × 0.02353 = 0.0461 → 0.4239 to 0.5161.</li><li>(b) Margin = 2.576 × 0.02353 = 0.0606 → 0.4094 to 0.5306.</li><li>(c) The margin grows from 0.046 to 0.061 (by the ratio 2.576/1.96 = 1.31): to be more confident of capturing p, the interval must be wider.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) ≈ 0.424 to 0.516; (b) ≈ 0.409 to 0.531; (c) the margin of error increases, so the interval widens.</p></details><details><summary>Numerical 8 · Point estimate, margin and interval for a proportion (part 4)</summary><p style=\"font-size:14.5px\">Of 369 working parents surveyed, 200 say work leaves them too little time with their children. Find (a) the point estimate of the population proportion, (b) the 95% margin of error and (c) the 95% interval.</p><ol><li>(a) p̂ = 200/369 = 0.5420.</li><li>(b) Standard error = √(0.542 × 0.458/369) = 0.02594; margin = 1.96 × 0.02594 = 0.0508.</li><li>(c) 0.5420 ± 0.0508 → 0.4912 to 0.5928.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) ≈ 0.542; (b) ≈ 0.0508; (c) ≈ 0.491 to 0.593. The interval dips just below 0.50, so the data do not quite establish a majority at 95%.</p></details><details><summary>Numerical 9 · Sample size for a proportion, then the interval (parts 3–4)</summary><p style=\"font-size:14.5px\">A preliminary estimate says 30% of adults smoke. (a) What sample size gives a margin of error of 0.02 at 95% confidence? (b) If that sample contains 520 smokers, what is the point estimate? (c) Give the 95% interval.</p><ol><li>(a) n = 1.96² × 0.30 × 0.70/0.02² = 3.8416 × 0.21/0.0004 = 2,016.84 → round up to <strong>2,017</strong>.</li><li>(b) p̂ = 520/2,017 = 0.2578.</li><li>(c) The interval uses p̂, not the planning value: standard error = √(0.2578 × 0.7422/2,017) = 0.00974; margin = 1.96 × 0.00974 = 0.0191.</li><li>0.2578 ± 0.0191 → 0.2387 to 0.2769. The margin came out slightly below the 0.02 target because p̂ ended up further from 0.50 than the planning value.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) 2,017; (b) ≈ 0.258; (c) ≈ 0.239 to 0.277.</p></details><details><summary>Numerical 10 · Sample size for a proportion at 98%, with and without a planning value (parts 3–4)</summary><p style=\"font-size:14.5px\">A card company wants the proportion of card holders who carry a balance at month-end to within ±0.03 at 98% confidence. Find the sample size (a) if about 70% are expected to carry a balance and (b) if there is no planning value.</p><ol><li>z<sub>.01</sub> = 2.326 (left area 0.99; a two-decimal table gives 2.33).</li><li>(a) n = 2.326² × 0.70 × 0.30/0.03² = 5.4103 × 0.21/0.0009 = 1,262.40 → <strong>1,263</strong>.</li><li>(b) Use p* = 0.50: n = 5.4103 × 0.25/0.0009 = 1,502.85 → <strong>1,503</strong>.</li><li>With the table's 2.33: (a) 5.4289 × 0.21/0.0009 = 1,266.74 → 1,267 and (b) 5.4289 × 0.25/0.0009 = 1,508.03 → 1,509; round up even though that decimal is only .03. Full-precision <code>=NORM.S.INV(0.99)</code> = 2.32635 gives 1,263 and 1,504. L#22 says z values will generally be given: use the one in the question and write it down so the marker can follow.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) 1,263; (b) 1,503 with z = 2.326 (1,267 and 1,509 with 2.33). p* = 0.50 always needs the larger sample.</p></details>"
+    },
+    {
+     "t": "Textbook: Interval Estimation",
+     "src": "Anderson 14e ch8",
+     "h": "<p>A point estimate alone says nothing about its accuracy, so the chapter wraps it in an interval: point estimate ± margin of error. When σ is known from history, the margin of error uses z (section 8.1, the part L#22 lectured). When σ has to be estimated by s from the same sample, which is the usual case, it uses the t distribution with n − 1 degrees of freedom (part 2 of the topic). Higher confidence widens an interval and a larger sample narrows it, which gives formulas for the sample size needed to hit a target margin of error (part 3). Proportions use z with the standard error √[p̄(1 − p̄)/n] (part 4). For managers, the interval is the honest way to report a survey or audit figure, and the sample-size formula sets a study budget before any data are collected.</p><!--viz:sfm-ch8-which-interval--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Four rows. A mean with σ known uses x-bar plus or minus z times sigma over root n, as taught in L#22 (part 1 of the topic). A mean with σ unknown uses x-bar plus or minus t times s over root n with n minus 1 degrees of freedom (part 2). A proportion uses p-bar plus or minus z times the square root of p-bar times one minus p-bar over n, once both counts are at least 5 (part 4). Before sampling, the sample size comes from the target margin and a planning value, rounded up (parts 3 and 4).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Which interval, which critical value?</div><div style=\"font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Mean μ</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">σ known (records, specs)</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">x̄ ± z<sub>α/2</sub> σ/√n</div><span style=\"color:var(--ink-3);font-size:13px\">part 1 · L#22</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Mean μ</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">σ unknown, use s</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">x̄ ± t<sub>α/2</sub> s/√n, df = n − 1</div><span style=\"color:var(--ink-3);font-size:13px\">part 2</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Proportion p</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">np̄ and n(1 − p̄) ≥ 5</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">p̄ ± z<sub>α/2</sub> √[p̄(1 − p̄)/n]</div><span style=\"color:var(--ink-3);font-size:13px\">part 4</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Before sampling</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">target margin E, planning σ* or p*</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">n = (z σ*/E)² or z² p*(1 − p*)/E², round up</div><span style=\"color:var(--ink-3);font-size:13px\">parts 3–4</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only the σ-unknown mean uses t; proportions and sample sizes always use z.</figcaption></figure><!--/viz:sfm-ch8-which-interval--><!--viz:sfm-ch8-t-to-z--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Line chart of the 95% two-sided t critical value against degrees of freedom on a log scale: 2.776 at 4 df, 2.262 at 9, 2.045 at 29 and 1.998 at 63, flattening onto a dashed line at the z value 1.960.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">σ unknown: the t value shrinks toward z</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 228\" role=\"img\" aria-label=\"Line chart: the 95% t critical value falls from 2.776 at 4 degrees of freedom to 2.262 at 9, 2.045 at 29 and 1.998 at 63, approaching the z value 1.960 as the degrees of freedom grow.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M66.9,186 L410,186\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M66.9,155.7 L410,155.7\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none;stroke-dasharray:5 4\"/><text x=\"66.9\" y=\"174\" text-anchor=\"start\" style=\"fill:var(--clay);font-size:13px\">z = 1.960 (df → ∞)</text><path d=\"M72.9,49.6 L94.5,76.3 L112.2,92.4 L127.1,103.1 L140.0,110.7 L151.4,116.4 L161.6,120.8 L179.3,127.3 L200.9,133.4 L228.8,139.3 L250.4,142.8 L264.7,144.6 L282.9,146.6 L307.3,148.7 L339.9,150.7 L363.0,151.8 L384.6,152.6 L402.2,153.1\" style=\"stroke:var(--ink);stroke-width:2;fill:none\"/><circle cx=\"72.9\" cy=\"49.6\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><text x=\"82.9\" y=\"47.6\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">2.776</text><circle cx=\"151.4\" cy=\"116.4\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><text x=\"159.4\" y=\"108.4\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">2.262</text><circle cx=\"264.7\" cy=\"144.6\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><text x=\"260.7\" y=\"127.6\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">2.045</text><circle cx=\"339.9\" cy=\"150.7\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><text x=\"339.9\" y=\"136.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">1.998</text><path d=\"M94.5,186 L94.5,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"94.5\" y=\"204\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">5</text><path d=\"M161.6,186 L161.6,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"161.6\" y=\"204\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">10</text><path d=\"M268.0,186 L268.0,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"268.0\" y=\"204\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">30</text><path d=\"M384.6,186 L384.6,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"384.6\" y=\"204\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">100</text><text x=\"235\" y=\"220\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">degrees of freedom, n − 1 (log scale)</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Small samples pay for estimating σ with a bigger multiplier; by about 60 df t and z differ only in the second decimal.</figcaption></figure><!--/viz:sfm-ch8-t-to-z--><!--viz:sfm-ch8-planning-p--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Curve of p* times (1 − p*) rising from 0 to a peak of 0.25 at p* = 0.50 and falling back to 0. For a 95% margin of ±0.03 the required sample is 1,068 at p* = 0.50, 897 at 0.30 or 0.70, and 683 at 0.20.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Why p* = 0.50 is the safe planning value</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 214\" role=\"img\" aria-label=\"Curve of p-star times one minus p-star for p-star from 0 to 1. It peaks at 0.25 when p-star is 0.50, giving the largest sample, 1,068, for a 95% margin of 0.03; p-star 0.30 or 0.70 gives 897 and 0.20 gives 683.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M50,180 L410,180\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M50,40 L230,40\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none;stroke-dasharray:4 3\"/><text x=\"44\" y=\"44\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">0.25</text><path d=\"M50,180 L57.2,169.0 L64.4,158.5 L71.6,148.4 L78.8,138.8 L86,129.6 L93.2,120.9 L100.4,112.6 L107.6,104.7 L114.8,97.3 L122,90.4 L129.2,83.9 L136.4,77.9 L143.6,72.3 L150.8,67.1 L158,62.4 L165.2,58.1 L172.4,54.3 L179.6,51.0 L186.8,48.1 L194,45.6 L201.2,43.6 L208.4,42.0 L215.6,40.9 L222.8,40.2 L230,40 L237.2,40.2 L244.4,40.9 L251.6,42.0 L258.8,43.6 L266,45.6 L273.2,48.1 L280.4,51.0 L287.6,54.3 L294.8,58.1 L302,62.4 L309.2,67.1 L316.4,72.3 L323.6,77.9 L330.8,83.9 L338,90.4 L345.2,97.3 L352.4,104.7 L359.6,112.6 L366.8,120.9 L374,129.6 L381.2,138.8 L388.4,148.4 L395.6,158.5 L402.8,169.0 L410,180\" style=\"stroke:var(--ink);stroke-width:2;fill:none\"/><circle cx=\"230\" cy=\"40\" r=\"4.5\" style=\"fill:var(--blue);stroke:none\"/><text x=\"230\" y=\"26\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">p* = 0.50: n = 1,068</text><circle cx=\"302\" cy=\"62.4\" r=\"4.5\" style=\"fill:var(--ink-3);stroke:none\"/><text x=\"230\" y=\"90\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">0.30 or 0.70: n = 897</text><circle cx=\"122\" cy=\"90.4\" r=\"4.5\" style=\"fill:var(--ink-3);stroke:none\"/><text x=\"112\" y=\"84.4\" text-anchor=\"end\" style=\"fill:var(--ink-2);font-size:13px\">0.20: n = 683</text><circle cx=\"158\" cy=\"62.4\" r=\"4.5\" style=\"fill:var(--ink-3);stroke:none\"/><path d=\"M50,180 L50,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"50\" y=\"199\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><path d=\"M230,180 L230,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"230\" y=\"199\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0.5</text><path d=\"M410,180 L410,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"410\" y=\"199\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">1</text><text x=\"146\" y=\"199\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">planning value p*</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">n is proportional to p*(1 − p*), so 0.50 gives the biggest sample: big enough whatever p turns out to be.</figcaption></figure><!--/viz:sfm-ch8-planning-p--><p><strong>Interval estimate and margin of error</strong> — Every interval estimate in the chapter has the form point estimate ± margin of error. The margin of error is a critical value (z or t) times a standard error, so it grows with confidence and variability and shrinks with sample size.<br><span style=\"font-family:var(--mono)\">x̄ ± margin of error;  p̄ ± margin of error</span></p><p><strong>Confidence level, confidence coefficient and α</strong> — A 95% confidence level means the procedure produces intervals that capture the parameter 95% of the time; the confidence coefficient is 0.95 and α = 0.05 is split as α/2 in each tail. Key critical values: 90% → z = 1.645, 95% → 1.96, 99% → 2.576.<br><span style=\"font-family:var(--mono)\">Confidence coefficient = 1 − α;  critical value z_(α/2)</span></p><p><strong>Interpreting a confidence interval</strong> — The 95% describes the method: about 95 of every 100 intervals built this way would contain μ. Any one computed interval either contains μ or it does not; the book's wording is that we are '95% confident' the interval includes μ.<br><em>e.g.</em> Lloyd's: 82 ± 3.92 gives $78.08 to $85.92 at 95% confidence.</p><p><strong>Part 1 · Interval for μ: σ known (L#22)</strong> — Used when a reliable σ is available before sampling — from long historical records or an in-control process. It is exact for a normal population and approximate otherwise; n ≥ 30 is usually adequate, and as small as 15 for roughly symmetric populations. With σ known, the margin of error is the same for every sample of size n.<br><span style=\"font-family:var(--mono)\">x̄ ± z_(α/2) · σ/√n</span></p><p><strong>Part 2 · σ unknown: the t distribution</strong> — A family of bell-shaped distributions centred on 0, one for each number of degrees of freedom. It has heavier tails than z, so its critical values are larger, but it approaches the standard normal as degrees of freedom increase; beyond about 100 df the z value is a good approximation. Degrees of freedom are n − 1 because the deviations (xᵢ − x̄) must sum to zero, leaving only n − 1 of them free.<br><em>e.g.</em> t.025 = 2.262 for 9 df, 2.000 for 60 df, 1.96 for ∞.</p><p><strong>Part 2 · σ unknown: the interval for μ</strong> — When s estimates σ from the same sample, replace z with t on n − 1 degrees of freedom. The margin of error now varies from sample to sample because s does. n ≥ 30 is usually enough; use n ≥ 50 for highly skewed or outlier-prone populations; small samples need a roughly normal population.<br><span style=\"font-family:var(--mono)\">x̄ ± t_(α/2, n−1) · s/√n</span><br><em>e.g.</em> n = 70, x̄ = $9312, s = $4007, t = 1.995 → $8357 to $10,267.</p><p><strong>Part 4 · Interval for a population proportion</strong> — Because p is unknown, its estimate p̄ is used inside the standard error. The normal approximation needs np̄ and n(1 − p̄) large enough (at least 5), which survey sample sizes almost always satisfy. The book writes the sample proportion as p̄; the lectures and the rest of the hub write p̂.<br><span style=\"font-family:var(--mono)\">p̄ ± z_(α/2) · √[p̄(1 − p̄)/n]</span><br><em>e.g.</em> 396 of 900 golfers satisfied: 0.44 ± 0.0324.</p><p><strong>Part 3 · Sample size for estimating μ</strong> — Set the desired margin of error E equal to z·σ/√n and solve for n. Always round up. σ needs a planning value: a previous study's s, a pilot sample, or a judgement such as range ÷ 4.<br><span style=\"font-family:var(--mono)\">n = (z_(α/2))² σ² / E²</span><br><em>e.g.</em> σ = 9.65, E = 2, 95%: n = 89.43 → 90.</p><p><strong>Parts 3–4 · Sample size for estimating p</strong> — Same logic with a planning value p* for the unknown proportion: a previous sample, a pilot, a judgement, or 0.50. Because p*(1 − p*) is largest at 0.50, using 0.50 gives the biggest, safest sample size.<br><span style=\"font-family:var(--mono)\">n = (z_(α/2))² p*(1 − p*) / E²</span><br><em>e.g.</em> E = 0.025, 95%: p* = 0.44 gives 1515; p* = 0.50 gives 1537.</p><p><strong>What controls the width of an interval</strong> — Width rises with the confidence level (bigger critical value) and with variability (σ or s), and falls with √n. To halve the margin of error at the same confidence you need four times the sample.</p><p><strong>Big data and confidence intervals</strong> — With millions of observations the margin of error becomes tiny, so intervals become extremely narrow. Precision is not the same as accuracy: a narrow interval is still wrong if the sample suffers nonsampling error, and a statistically clear difference may have no practical significance for the business.</p><p><strong>Excel for interval estimates</strong> — CONFIDENCE.NORM(alpha, σ, n) returns the margin of error for the σ-known case (not the interval). For σ unknown, the Descriptive Statistics tool's 'Confidence Level for Mean' row gives the t-based margin of error. Excel has no built-in proportion interval; the book builds a template with COUNTA and COUNTIF.<br><em>e.g.</em> =CONFIDENCE.NORM(.05,20,100) returns 3.92.</p><div class=\"card\"><strong>Case: LIFO index by sample</strong> <em>(Statistics in Practice: Food Lion)</em><p>A large US supermarket chain values inventory using LIFO and needs a price index for each of its inventory pools. Counting every store would be too slow and costly, so it takes year-end physical counts in a random sample of stores and reports each index with a 95% margin of error, judged precise enough for tax accounting.</p><p><em>Lesson:</em> A sample estimate plus margin of error replaces an expensive census.</p><p><em>Think:</em> If the chain doubled the number of sampled stores, roughly what would happen to the margin of error, and is that worth the extra counting cost?</p></div><div class=\"card\"><strong>Case: Subscriber profile for advertisers</strong> <em>(Case Problem 1: Young Professional Magazine)</em><p>A magazine for early-career professionals surveys its subscribers to show advertisers who they are: age, income, investments, broadband access, children and buying plans. The analyst must summarise the data and give confidence intervals for key means and proportions, then judge which advertisers the magazine suits.</p><p><em>Lesson:</em> Interval estimates for both means and proportions support a marketing decision.</p><p><em>Think:</em> Which interval — for mean household income or for the proportion with broadband at home — would an online broker care about more, and why does each need a different formula?</p></div><details><summary>Worked problem: Part 1 · Average bill, σ known</summary><p>A Kochi restaurant chain knows from years of data that bill amounts have σ = ₹240. A random sample of 64 bills this month gives x̄ = ₹1,150. Build a 95% confidence interval for the mean bill.</p><ol><li>σ known → z interval; 95% → z.025 = 1.96.</li><li>Standard error σ/√n = 240/8 = 30.</li><li>Margin of error = 1.96 × 30 = ₹58.8.</li><li>Interval: 1,150 ± 58.8 = ₹1,091.2 to ₹1,208.8.</li></ol><p><strong>Answer:</strong> 95% CI: ₹1,091.2 to ₹1,208.8 (margin of error ₹58.8).</p></details><details><summary>Worked problem: Part 2 · Rider distance, σ unknown (t)</summary><p>A delivery firm samples 16 riders' daily distance: x̄ = 84 km, s = 12 km. Distances look roughly normal. Build a 95% confidence interval for the mean daily distance.</p><ol><li>σ unknown → t interval with n − 1 = 15 df; t.025 = 2.131.</li><li>Standard error s/√n = 12/4 = 3.</li><li>Margin of error = 2.131 × 3 = 6.39 km.</li><li>Interval: 84 ± 6.39 = 77.6 km to 90.4 km.</li></ol><p><strong>Answer:</strong> 95% CI: about 77.6 km to 90.4 km.</p></details><details><summary>Worked problem: Part 4 · Metro use proportion</summary><p>In a survey of 900 Mumbai commuters, 351 use the metro at least weekly. Build a 95% confidence interval for the population proportion.</p><ol><li>p̄ = 351/900 = 0.39; np̄ = 351 and n(1 − p̄) = 549, so the normal approximation holds.</li><li>Standard error √(0.39 × 0.61 / 900) = 0.01626.</li><li>Margin of error = 1.96 × 0.01626 = 0.0319.</li><li>Interval: 0.39 ± 0.0319 = 0.358 to 0.422.</li></ol><p><strong>Answer:</strong> 95% CI: about 35.8% to 42.2% of commuters.</p></details><details><summary>Worked problem: Parts 3–4 · How big a sample?</summary><p>(a) A bank wants the mean monthly card spend within ±₹50 at 95% confidence; a pilot gives s = ₹300. (b) It also wants the share of customers using UPI on their card within ±3 percentage points at 95% and at 99%, with no prior estimate.</p><ol><li>(a) n = (1.96)² × 300² / 50² = 3.8416 × 90,000 / 2,500 = 138.3 → round up to 139.</li><li>(b) No prior → p* = 0.50. At 95%: n = (1.96)² × 0.25 / 0.03² = 1,067.1 → 1,068.</li><li>At 99% (z = 2.576): n = 2.576² × 0.25 / 0.0009 = 1,843.3 → 1,844.</li></ol><p><strong>Answer:</strong> (a) 139 customers. (b) 1,068 at 95%; 1,844 at 99%.</p></details><div class=\"def\"><b>Book vs lecture — Finite population correction.</b> Book: Chapter 8's interval formulas use σ/√n (or s/√n) throughout and never apply a finite population correction; its examples all sample a tiny share of a large population. Lecture: The hub follows L#19: use σ/√n when the population is infinite or n/N &lt; 0.05, and multiply by √[(N − n)/(N − 1)] when n/N &gt; 0.05. In L#22 the spoken rule came out the other way round, and the LMS summary repeats the slip; L#22's own example treats the population as infinite. <b>Apply the correction when the sample is more than 5% of a finite population, as L#19 taught. The book never meets that case, so the two only differ in questions that give N.</b></div><div class=\"def\"><b>Book vs lecture — What '90% confidence' means.</b> Book: 90% of the intervals built this way from repeated samples contain μ; any one computed interval either contains μ or it does not. Lecture: L#22's summary says the same (90% of all intervals x̄ ± 1.645σx̄ contain μ), but the spoken explanation once said 'all the intervals' contain the mean and also spoke of the sample lying in the range 95% of the time. <b>Use the repeated-sampling wording. The interval is about μ, not about where single values or later sample means fall.</b></div><div class=\"def\"><b>Book vs lecture — σ unknown with a large sample.</b> Book: Uses t with n − 1 degrees of freedom whenever s replaces σ, at any n; z is only a convenient approximation beyond about 100 df. Lecture: Not lectured yet: L#22 covered only σ known and named σ unknown as part 2 of the topic. The lecturer's Chapter 8 sheet says t is for σ unknown 'and the sample is small', yet its numericals give only s with n = 64 and n = 80. <b>Use t with n − 1 df and show it; z gives nearly the same interval for n above about 60. Re-check when part 2 is lectured.</b></div><div class=\"def\"><b>Book vs lecture — Software for interval estimates.</b> Book: Excel CONFIDENCE.NORM for the σ-known margin of error, the Descriptive Statistics tool for the t-based margin, and a hand-built template for proportions (plus JMP). Lecture: L#22: the z values 1.645, 1.960 and 2.576 come from the table or Excel and will generally be given. L#21 built cell-referenced Excel sheets with NORM.DIST; CONFIDENCE.NORM has not been shown yet. The course also uses R, where qnorm and qt give critical values. <b>Learn the formulas first; tool output gives only a margin of error or an interval. Expect the critical value to be given, and write down the one you use.</b></div><div class=\"def\"><b>Book vs lecture — Notation for the sample proportion.</b> Book: Writes the sample proportion as p̄. Lecture: The lectures and the hub write p̂ (L#19, L#20). <b>Same quantity, x/n. Read p̄ in this chapter as p̂.</b></div>"
     }
    ]
   }
@@ -614,6 +624,10 @@ HUB.addCourse({
   },
   {
    "name": "Interval estimation",
+   "unit": "estimation"
+  },
+  {
+   "name": "Interval estimation with σ unknown (t)",
    "unit": "estimation"
   }
  ],
@@ -1644,6 +1658,83 @@ HUB.addCourse({
    "p": "The margin is proportional to 1/√n. Going from 50 to 200 stores halves it; doubling n only multiplies it by 1/√2 = 0.707, a cut of about 29%.",
    "f": "4 × n, ½ margin",
    "lec": 22
+  },
+  {
+   "id": "sfm-t0151",
+   "h": "Only s is given? The textbook uses t with n − 1 df, even when n is 64 or 80",
+   "p": "σ unknown is part 2 of the topic, after L#22. The textbook uses t whenever σ is unknown: for n = 64, t (63 df) = 1.998, not 1.96, so the margin is 18.61, not 18.25. The z shortcut for n ≥ 30 gives nearly the same interval, but t is the method to show.",
+   "f": "σ unknown → t, df = n − 1",
+   "lec": 22
+  },
+  {
+   "id": "sfm-t0152",
+   "h": "At 98%, z = 2.326 (2.33 in a two-decimal table), and the choice can move a sample size",
+   "p": "Numerical 10(b): 2.326 gives 1,502.85 → 1,503, while 2.33 gives 1,508.03 → 1,509. L#22 quotes z to three decimals and says z values will generally be given: use the one given and write it in your working.",
+   "f": "write down your z",
+   "lec": 22
+  },
+  {
+   "id": "sfm-t0153",
+   "h": "The interval uses p̂; the sample-size formula uses p*",
+   "p": "After the survey, the standard error is √[p̂(1 − p̂)/n] with the sample's own p̂ (520/2,017 = 0.258), not the planning value 0.30. p* (or 0.50) is only for choosing n beforehand.",
+   "f": "before: p*, after: p̂",
+   "lec": 22
+  },
+  {
+   "id": "sfm-t0154",
+   "h": "More confidence makes the interval wider, not narrower",
+   "p": "Raising confidence from 95% to 99% raises z from 1.960 to 2.576, so the margin grows by about 31% at the same n. Only a larger sample makes an interval both narrower and as confident.",
+   "f": "more sure = wider",
+   "lec": 22
+  },
+  {
+   "id": "sfm-t0155",
+   "h": "For a population total, multiply both limits of the mean's interval by N",
+   "p": "2,000 flats, mean bill interval ₹2,232.40 to ₹2,467.60: the total runs from ₹44,64,800 to ₹49,35,200. Multiplying only x̄ by N and keeping the per-flat margin of ±₹117.60 gives a range 2,000 times too narrow.",
+   "f": "total = N × both limits",
+   "lec": 22
+  },
+  {
+   "id": "sfm-t0156",
+   "h": "With a small sample and σ unknown, t still needs a roughly normal population",
+   "p": "t allows for the extra uncertainty of using s in place of σ; it does nothing about skew. Twelve values from a heavily skewed population give an unreliable interval with t or z. Take a larger sample instead (50 or more if the skew is strong).",
+   "f": "t fixes s, not skew",
+   "bk": "Anderson 14e ch8"
+  },
+  {
+   "id": "sfm-t0157",
+   "h": "95% confidence describes the method, not one interval",
+   "p": "Once computed, a specific interval either contains μ or it doesn't. '95%' is the long-run share of such intervals that capture μ.",
+   "f": "the method is 95%",
+   "bk": "Anderson 14e ch8"
+  },
+  {
+   "id": "sfm-t0158",
+   "h": "A very narrow interval from a huge sample can still be wrong",
+   "p": "Millions of records shrink sampling error almost to nothing, but a biased frame or bad measurement (nonsampling error) is untouched, and a difference the interval picks up may be too small to matter to the business.",
+   "f": "precise is not accurate",
+   "bk": "Anderson 14e ch8"
+  },
+  {
+   "id": "sfm-t0159",
+   "h": "With no information, use p* = 0.50: it gives the largest n",
+   "p": "p*(1 − p*) peaks at 0.25 when p* = 0.5, so the resulting sample is big enough whatever the true p.",
+   "f": "0.5 is the safe guess",
+   "bk": "Anderson 14e ch8"
+  },
+  {
+   "id": "sfm-t0160",
+   "h": "CONFIDENCE.NORM returns the margin of error, not the interval",
+   "p": "Add it to and subtract it from x̄ yourself. Its first argument is α (0.05), not the confidence level (0.95).",
+   "f": "Excel gives ± only",
+   "bk": "Anderson 14e ch8"
+  },
+  {
+   "id": "sfm-t0161",
+   "h": "A t interval for μ has n − 1 degrees of freedom, not n",
+   "p": "For n = 10 the 95% value is t = 2.262 on 9 df; 2.228 is the 10-df value, slightly too small. One degree of freedom goes on measuring the deviations around x̄.",
+   "f": "df = n − 1",
+   "bk": "Anderson 14e ch8"
   }
  ],
  "defs": [
@@ -2629,6 +2720,86 @@ HUB.addCourse({
    "term": "Confidence coefficient",
    "html": "<b>Confidence coefficient</b>: the confidence level written as a decimal, such as 0.90 for a 90% interval.",
    "lec": 22
+  },
+  {
+   "id": "sfm-d0125",
+   "unit": "estimation",
+   "topic": "Practice questions from the lecturer: Chapter 8",
+   "term": "Interval estimate of a population total",
+   "html": "<b>Interval estimate of a population total</b> = N × (interval for the mean): multiply both limits by the population size N. The point estimate of the total is N × x̄.",
+   "lec": 22
+  },
+  {
+   "id": "sfm-d0126",
+   "unit": "estimation",
+   "topic": "Interval estimation",
+   "term": "Interval estimate",
+   "html": "An <b>interval estimate</b> (confidence interval) is a range, <b>point estimate ± margin of error</b>, believed to contain the population parameter.",
+   "bk": "Anderson 14e ch8"
+  },
+  {
+   "id": "sfm-d0127",
+   "unit": "estimation",
+   "topic": "Interval estimation",
+   "term": "Margin of error",
+   "html": "The <b>margin of error</b> is the ± amount added to and subtracted from a point estimate — a critical value times a standard error.",
+   "bk": "Anderson 14e ch8"
+  },
+  {
+   "id": "sfm-d0128",
+   "unit": "estimation",
+   "topic": "Interval estimation",
+   "term": "Confidence level",
+   "html": "The <b>confidence level</b> (e.g. 95%) is the percentage of intervals, built by the same procedure over repeated samples, that would contain the parameter.",
+   "bk": "Anderson 14e ch8"
+  },
+  {
+   "id": "sfm-d0129",
+   "unit": "estimation",
+   "topic": "Interval estimation",
+   "term": "σ known",
+   "html": "The <b>σ known</b> case: a good value of the population standard deviation is available before sampling (from history or other information), so z is used.",
+   "bk": "Anderson 14e ch8"
+  },
+  {
+   "id": "sfm-d0130",
+   "unit": "estimation",
+   "topic": "Interval estimation with σ unknown (t)",
+   "term": "σ unknown",
+   "html": "The <b>σ unknown</b> case — the more common one: the sample standard deviation s estimates σ, so the t distribution is used.",
+   "bk": "Anderson 14e ch8"
+  },
+  {
+   "id": "sfm-d0131",
+   "unit": "estimation",
+   "topic": "Interval estimation with σ unknown (t)",
+   "term": "t distribution",
+   "html": "The <b>t distribution</b> is a family of symmetric, bell-shaped distributions with heavier tails than z, indexed by <b>degrees of freedom</b>; it approaches z as df grow.",
+   "bk": "Anderson 14e ch8"
+  },
+  {
+   "id": "sfm-d0132",
+   "unit": "estimation",
+   "topic": "Interval estimation with σ unknown (t)",
+   "term": "Degrees of freedom",
+   "html": "<b>Degrees of freedom</b> are the parameter of a t distribution; for an interval estimate of a mean they equal <b>n − 1</b>.",
+   "bk": "Anderson 14e ch8"
+  },
+  {
+   "id": "sfm-d0133",
+   "unit": "estimation",
+   "topic": "Interval estimation",
+   "term": "Planning value",
+   "html": "A <b>planning value</b> is a preliminary estimate of σ or p (σ*, p*) used to compute the required sample size before the data are collected.",
+   "bk": "Anderson 14e ch8"
+  },
+  {
+   "id": "sfm-d0134",
+   "unit": "estimation",
+   "topic": "Interval estimation",
+   "term": "Practical significance",
+   "html": "<b>Practical significance</b> is whether a statistical result is large enough to matter for real business decisions.",
+   "bk": "Anderson 14e ch8"
   }
  ],
  "questions": [
@@ -10435,6 +10606,703 @@ HUB.addCourse({
    "w": "n/N = 0.20 > 0.05, so σx̄ = (150/√100) × √(400/499) = 15 × 0.8953 = 13.43. Margin = 1.96 × 13.43 = 26.3, so ₹1,173.7 to ₹1,226.3. ₹1,170.6 to ₹1,229.4 skips the correction; ₹1,186.6 to ₹1,213.4 adds one standard error only; ₹906 to ₹1,494 uses σ.",
    "lec": 22,
    "lv": "apply"
+  },
+  {
+   "id": "sfm-q0470",
+   "topic": "Interval estimation",
+   "q": "What is a confidence interval used for?",
+   "c": [
+    "To check whether the sample comes from a normal population",
+    "To give a range of plausible values for a population parameter such as μ or p",
+    "To calculate the sample variance",
+    "To work out the size of the population"
+   ],
+   "a": [
+    1
+   ],
+   "w": "An interval estimate places a population parameter (μ, p) inside a range built from sample data: point estimate ± margin of error. It does not test normality, and it needs the population size only for the finite population correction, never to find it.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0471",
+   "topic": "Interval estimation",
+   "q": "When the population standard deviation σ is known, the critical value in a confidence interval for μ comes from which distribution?",
+   "c": [
+    "The t distribution",
+    "The F distribution",
+    "The standard normal (z) distribution",
+    "The chi-square distribution"
+   ],
+   "a": [
+    2
+   ],
+   "w": "With σ known, x̄ ± z(α/2)σ/√n uses the standard normal. The t distribution is for the case where σ is unknown and s replaces it; F and chi-square belong to variance comparisons.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0472",
+   "topic": "Interval estimation with σ unknown (t)",
+   "q": "σ is unknown and only 12 observations from a roughly normal population are available. Which distribution supplies the critical value for an interval for μ?",
+   "c": [
+    "The t distribution with 11 degrees of freedom",
+    "The standard normal (z) distribution",
+    "The binomial distribution",
+    "The F distribution"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Replacing σ with s adds uncertainty, which the t distribution allows for with n − 1 = 11 df. z would understate the margin of error for so small a sample; the binomial is for counts of successes.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0473",
+   "topic": "Interval estimation",
+   "q": "Which expression is the margin of error for estimating μ when σ is known?",
+   "c": [
+    "z(α/2) × σ × √n",
+    "σ/n",
+    "z(α/2)/(σ√n)",
+    "z(α/2) × σ/√n"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Margin = critical value × standard error, and the standard error of x̄ is σ/√n. Multiplying by √n would make the margin grow with the sample size, which is backwards; σ/n has the wrong root and no critical value.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0474",
+   "topic": "Interval estimation",
+   "q": "A researcher increases the sample size and changes nothing else (same σ, same confidence level). What happens to the margin of error?",
+   "c": [
+    "It increases",
+    "It decreases",
+    "It stays the same",
+    "It becomes zero"
+   ],
+   "a": [
+    1
+   ],
+   "w": "n sits under a square root in the denominator of z(α/2)σ/√n, so a larger n gives a smaller margin (four times the sample halves it). It never reaches zero for a finite sample.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0475",
+   "topic": "Interval estimation",
+   "q": "Which z value is used for a 95% confidence interval?",
+   "c": [
+    "1.28",
+    "1.645",
+    "1.96",
+    "2.576"
+   ],
+   "a": [
+    2
+   ],
+   "w": "95% leaves 0.025 in each tail, so look up a left area of 0.975: z = 1.960, one of the three values L#22 says will generally be given. 1.645 is the 90% value (0.05 per tail), 2.576 is 99% and 1.28 is 80%.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0476",
+   "topic": "Interval estimation with σ unknown (t)",
+   "q": "An interval for μ uses the t distribution with a sample of n observations. How many degrees of freedom does t have?",
+   "c": [
+    "n",
+    "n + 1",
+    "2n",
+    "n − 1"
+   ],
+   "a": [
+    3
+   ],
+   "w": "One degree of freedom is used up estimating the mean before s can be computed, the same reason s divides by n − 1. Using n slightly understates the critical value.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0477",
+   "topic": "Interval estimation",
+   "q": "Which sample statistic is the point estimator of a population proportion p?",
+   "c": [
+    "p̂, the sample proportion",
+    "x̄, the sample mean",
+    "s, the sample standard deviation",
+    "σ, the population standard deviation"
+   ],
+   "a": [
+    0
+   ],
+   "w": "p̂ = x/n estimates p (the textbook writes p̄). x̄ estimates μ and s estimates σ; σ is a parameter, not a sample statistic.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0478",
+   "topic": "Interval estimation",
+   "q": "Nothing is known about a population proportion in advance. What planning value of p should be used to find the sample size for a given margin of error?",
+   "c": [
+    "p = 0",
+    "p = 0.25",
+    "p = 0.50",
+    "p = 1"
+   ],
+   "a": [
+    2
+   ],
+   "w": "p(1 − p) is largest at p = 0.50, so this gives the biggest, safest sample. 0.25 is tempting because it is the value of p(1 − p) at p = 0.50, not the value of p. p = 0 or 1 would give n = 0.",
+   "lec": 22,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0479",
+   "topic": "Interval estimation",
+   "q": "With the sample size unchanged, the confidence level is raised from 90% to 99%. What happens to the confidence interval?",
+   "c": [
+    "It becomes narrower",
+    "It becomes wider",
+    "It stays the same width",
+    "Its width becomes zero"
+   ],
+   "a": [
+    1
+   ],
+   "w": "z rises from 1.645 to 2.576, so the margin of error grows by about 57%. Narrower is the common mistake of equating ‘more confident’ with ‘more precise’: at a fixed n you buy confidence with width.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0480",
+   "topic": "Interval estimation",
+   "q": "A dairy weighs a random sample of 49 butter packs: mean 502 g. From past records σ = 7 g. What is the 95% confidence interval for the mean weight of all packs?",
+   "c": [
+    "500.04 g to 503.96 g",
+    "500.36 g to 503.64 g",
+    "488.28 g to 515.72 g",
+    "501.72 g to 502.28 g"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Standard error = 7/√49 = 1 g; margin = 1.96 × 1 = 1.96 g; 502 ± 1.96. 500.36 to 503.64 uses 1.645, the 90% value. 488.28 to 515.72 uses σ instead of σ/√n, and 501.72 to 502.28 divides σ by n instead of √n.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0481",
+   "topic": "Interval estimation with σ unknown (t)",
+   "q": "A franchise opens 9 new outlets. First-month sales average ₹45 lakh with sample standard deviation ₹6 lakh; sales are roughly normal. What is the 95% confidence interval for mean first-month sales?",
+   "c": [
+    "₹41.08 lakh to ₹48.92 lakh",
+    "₹40.48 lakh to ₹49.52 lakh",
+    "₹31.16 lakh to ₹58.84 lakh",
+    "₹40.39 lakh to ₹49.61 lakh"
+   ],
+   "a": [
+    3
+   ],
+   "w": "σ is unknown and n is small, so use t with 8 df: 2.306. Standard error = 6/√9 = 2; margin = 4.61. ₹41.08 to ₹48.92 lakh uses z = 1.96, which is too narrow here; ₹40.48 to ₹49.52 lakh uses 9 df (2.262); ₹31.16 to ₹58.84 lakh multiplies s, not s/√n.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0482",
+   "topic": "Interval estimation",
+   "q": "A café chain wants to estimate the mean bill to within ±₹20 at 95% confidence. A pilot suggests σ ≈ ₹150. How many bills should it sample?",
+   "c": [
+    "216",
+    "153",
+    "217",
+    "15"
+   ],
+   "a": [
+    2
+   ],
+   "w": "n = (1.96 × 150/20)² = 14.7² = 216.09, rounded up to 217 so the margin is no more than ₹20. 216 rounds down and misses the target slightly; 153 uses 1.645 (90%); 15 forgets to square.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0483",
+   "topic": "Interval estimation",
+   "q": "In a survey of 600 UPI users, 222 have used a credit line through UPI. What is the 90% confidence interval for the proportion of all UPI users who have?",
+   "c": [
+    "0.331 to 0.409",
+    "0.338 to 0.402",
+    "0.350 to 0.390",
+    "0.319 to 0.421"
+   ],
+   "a": [
+    1
+   ],
+   "w": "p̂ = 222/600 = 0.37; standard error = √(0.37 × 0.63/600) = 0.0197; margin = 1.645 × 0.0197 = 0.032. 0.331 to 0.409 uses 1.96 (95%); 0.319 to 0.421 uses 2.576 (99%); 0.350 to 0.390 adds only one standard error, with no critical value.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0484",
+   "topic": "Interval estimation",
+   "q": "A student council wants to estimate the share of students who back a new attendance rule to within ±3 percentage points at 90% confidence, with no earlier estimate of the share. What sample size is needed?",
+   "c": [
+    "751",
+    "1,068",
+    "564",
+    "752"
+   ],
+   "a": [
+    3
+   ],
+   "w": "With no planning value use p* = 0.50: n = 1.645² × 0.25/0.03² = 751.7, rounded up to 752. 751 rounds down; 1,068 is the 95% answer; 564 uses p* = 0.25, mixing up p with p(1 − p).",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0485",
+   "topic": "Interval estimation",
+   "q": "A survey of 100 customers gives a 95% margin of error of ±₹12 for the mean order value. Keeping the same confidence level and σ, roughly how many customers are needed for a margin of ±₹4?",
+   "c": [
+    "900",
+    "300",
+    "173",
+    "2,700"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The margin is proportional to 1/√n. To cut it to a third, √n must triple, so n grows by 3² = 9: 100 × 9 = 900. 300 assumes the margin falls in proportion to n; 173 multiplies n by √3.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0486",
+   "topic": "Interval estimation with σ unknown (t)",
+   "q": "36 stores of a retail chain average weekly sales of ₹84,000 with s = ₹9,000. Last year's mean was ₹80,000. Using a 95% confidence interval, does mean weekly sales appear to have changed?",
+   "c": [
+    "No: the interval ₹65,729 to ₹1,02,271 contains ₹80,000",
+    "Yes: ₹84,000 is above ₹80,000, so no interval is needed",
+    "Yes: the interval ₹80,955 to ₹87,045 does not contain ₹80,000",
+    "No: a confidence interval cannot be compared with an earlier figure"
+   ],
+   "a": [
+    2
+   ],
+   "w": "t with 35 df = 2.030; standard error = 9,000/√36 = 1,500; margin = 3,045, so the interval is ₹80,955 to ₹87,045 and ₹80,000 lies below it. (z = 1.96 gives ₹81,060 to ₹86,940, the same verdict.) ₹65,729 to ₹1,02,271 uses s instead of s/√n; comparing 84,000 with 80,000 alone ignores sampling error.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0487",
+   "topic": "Interval estimation",
+   "q": "A society of 2,000 flats samples 64 of them: mean monthly electricity bill ₹2,350. Past records put σ at ₹480. What is the 95% confidence interval for the total monthly bill of all 2,000 flats?",
+   "c": [
+    "₹46,99,882 to ₹47,00,118",
+    "₹1,42,874 to ₹1,57,926",
+    "₹28,18,400 to ₹65,81,600",
+    "₹44,64,800 to ₹49,35,200"
+   ],
+   "a": [
+    3
+   ],
+   "w": "n/N = 0.032 < 0.05, so no correction. Mean: 2,350 ± 1.96 × 480/8 = 2,350 ± 117.60. Total: multiply both limits by N = 2,000. ₹46,99,882 to ₹47,00,118 scales the point estimate but not the margin; ₹1,42,874 to ₹1,57,926 multiplies by n = 64; ₹28,18,400 to ₹65,81,600 uses σ instead of σ/√n.",
+   "lec": 22,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0488",
+   "topic": "Interval estimation",
+   "q": "A report gives a 95% confidence interval of ₹412 to ₹468 for mean weekly spend on snacks, built from 64 students with σ known. What value of σ was used?",
+   "c": [
+    "₹14.3",
+    "₹114.3",
+    "₹228.6",
+    "₹136.2"
+   ],
+   "a": [
+    1
+   ],
+   "w": "x̄ = 440 and the margin is half the width, 28. 28 = 1.96 × σ/8, so σ = 28 × 8/1.96 = ₹114.3. ₹14.3 stops at the standard error (28/1.96); ₹228.6 uses the full width 56 as the margin; ₹136.2 uses 1.645.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0489",
+   "topic": "Interval estimation",
+   "q": "A D2C brand asks 1,000 customers which pack design they prefer; 52% choose the new one. Can the brand claim, at 95% confidence, that a majority of all customers prefer the new design?",
+   "c": [
+    "No: the interval 0.489 to 0.551 includes 0.50",
+    "Yes: the interval 0.504 to 0.536 lies entirely above 0.50",
+    "Yes: 52% is more than 50%",
+    "Cannot say: an interval tells you nothing about a claimed value of p"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Standard error = √(0.52 × 0.48/1,000) = 0.0158; margin = 1.96 × 0.0158 = 0.031, giving 0.489 to 0.551. Because 0.50 is inside, a majority is plausible but not established. 0.504 to 0.536 adds only one standard error and leaves out the 1.96.",
+   "lec": 22,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0490",
+   "topic": "Interval estimation",
+   "q": "Every interval estimate in this chapter has the general form:",
+   "c": [
+    "Parameter ± standard deviation",
+    "Margin of error ± point estimate",
+    "Point estimate ± sample size",
+    "Point estimate ± margin of error"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The interval is centred on the point estimate (x̄ or p̄), and the margin of error — a critical value times a standard error — is added and subtracted.",
+   "bk": "Anderson 14e ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0491",
+   "topic": "Interval estimation",
+   "q": "With σ known, which of these has NO effect on the width of a confidence interval for μ?",
+   "c": [
+    "The confidence level",
+    "The sample mean x̄",
+    "The population standard deviation σ",
+    "The sample size n"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The width is 2 × z(α/2) × σ/√n: it depends on the confidence level (through z), on σ and on n. x̄ only fixes where the interval is centred, so a higher or lower sample mean shifts it without stretching it.",
+   "bk": "Anderson 14e ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0492",
+   "topic": "Interval estimation",
+   "q": "A 95% confidence interval for μ, with σ = ₹12 known, has a margin of error of ₹2.94. How many observations were in the sample?",
+   "c": [
+    "8",
+    "64",
+    "16",
+    "45"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Solve 2.94 = 1.96 × 12/√n: √n = 1.96 × 12/2.94 = 8, so n = 64. 8 stops at √n; 16 treats 2.94 as the full width instead of the margin; 45 uses 1.645, the 90% value.",
+   "bk": "Anderson 14e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0493",
+   "topic": "Interval estimation",
+   "q": "A 95% confidence interval for mean delivery time is 28 to 34 minutes. Which interpretation matches the textbook?",
+   "c": [
+    "There is a 95% probability that μ lies between 28 and 34 minutes",
+    "95% of individual deliveries take 28 to 34 minutes",
+    "95% of sample means will fall between 28 and 34 minutes",
+    "Intervals built this way capture μ 95% of the time, so we are 95% confident this one does"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The 95% belongs to the procedure. The interval is about the mean, not individual deliveries; and μ is fixed, so this particular interval either contains it or not.",
+   "bk": "Anderson 14e ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0494",
+   "topic": "Interval estimation",
+   "q": "A survey team expects next year's population standard deviation to be twice this year's. To keep the same margin of error at the same confidence level, the sample must be:",
+   "c": [
+    "Twice as large",
+    "Four times as large",
+    "The same size, because the confidence level has not changed",
+    "Half as large"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The margin is z × σ/√n. Doubling σ doubles it, and only a √n twice as large brings it back, so n must be 2² = 4 times as large. 'Twice as large' forgets that n sits under a square root.",
+   "bk": "Anderson 14e ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0495",
+   "topic": "Interval estimation with σ unknown (t)",
+   "q": "Compared with the standard normal distribution, a t distribution with few degrees of freedom:",
+   "c": [
+    "Has a mean greater than zero",
+    "Is skewed to the right",
+    "Has thinner tails and smaller critical values",
+    "Has heavier tails, larger critical values, and moves toward z as df grow"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The t is symmetric about 0 with more spread in the tails, so t critical values exceed z values. As degrees of freedom increase it converges to the standard normal.",
+   "bk": "Anderson 14e ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0496",
+   "topic": "Interval estimation with σ unknown (t)",
+   "q": "A sample of n = 10 is used to build a 95% interval for μ with σ unknown. Which critical value is correct?",
+   "c": [
+    "1.96",
+    "2.228",
+    "2.262",
+    "1.833"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Use t.025 with n − 1 = 9 df: 2.262. 2.228 is for 10 df (using n instead of n − 1); 1.833 is t.05 for 9 df (a 90% value); 1.96 is z.",
+   "bk": "Anderson 14e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0497",
+   "topic": "Interval estimation with σ unknown (t)",
+   "q": "A sample of 16 gives x̄ = 20 and s = 4 from a roughly normal population. What is the 95% confidence interval for μ?",
+   "c": [
+    "17.87 to 22.13",
+    "18.04 to 21.96",
+    "12.00 to 28.00",
+    "18.36 to 21.64"
+   ],
+   "a": [
+    0
+   ],
+   "w": "t.025 with 15 df = 2.131; margin = 2.131 × 4/4 = 2.131; interval 17.87 to 22.13. 18.04–21.96 wrongly uses z = 1.96; 12–28 forgets √n.",
+   "bk": "Anderson 14e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0498",
+   "topic": "Interval estimation with σ unknown (t)",
+   "q": "A sample of 70 households gives s = ₹4,007 and σ is unknown. According to the textbook, how should the 95% interval be built?",
+   "c": [
+    "Use z = 1.96 because n ≥ 30",
+    "Use t with 70 degrees of freedom",
+    "Use t with 69 degrees of freedom",
+    "Use z, because s becomes σ when n is large"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Whenever s estimates σ, the book uses t with n − 1 = 69 df (t.025 = 1.995). The z value only serves as an approximation above about 100 df; n ≥ 30 is about the shape of the sampling distribution, not about z versus t.",
+   "bk": "Anderson 14e ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0499",
+   "topic": "Interval estimation with σ unknown (t)",
+   "q": "Why does a t interval for μ use n − 1 degrees of freedom?",
+   "c": [
+    "Because one observation is always set aside as a check",
+    "Because t tables start at one degree of freedom",
+    "Because the n deviations from x̄ must sum to zero, so only n − 1 of them are free to vary",
+    "Because the population size N is unknown"
+   ],
+   "a": [
+    2
+   ],
+   "w": "s is built from the deviations (xᵢ − x̄), and those always add up to zero: once n − 1 are known, the last is fixed. Nothing is set aside, and N plays no part in the degrees of freedom.",
+   "bk": "Anderson 14e ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0500",
+   "topic": "Interval estimation",
+   "q": "A 95% interval for mean waiting time has a margin of error of ±6 minutes. Using the same sample and the same σ, what is the 99% margin of error?",
+   "c": [
+    "±6.25 minutes",
+    "±7.89 minutes",
+    "±4.57 minutes",
+    "±9.40 minutes"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Only z changes: 6 × 2.576/1.96 = 7.89. ±6.25 scales by 99/95, which is not how z grows; ±4.57 turns the ratio upside down and narrows the interval; ±9.40 takes 1.645 as the 95% value.",
+   "bk": "Anderson 14e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0501",
+   "topic": "Interval estimation",
+   "q": "Of 400 shoppers sampled, 100 redeemed a discount coupon. Which interval estimates the population proportion at 95% confidence?",
+   "c": [
+    "0.2076 to 0.2924",
+    "0.2144 to 0.2856",
+    "0.1500 to 0.3500",
+    "0.2457 to 0.2543"
+   ],
+   "a": [
+    0
+   ],
+   "w": "p̄ = 0.25; standard error √(0.25 × 0.75/400) = 0.02165; margin = 1.96 × 0.02165 = 0.0424. 0.2144–0.2856 uses 1.645 (a 90% interval).",
+   "bk": "Anderson 14e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0502",
+   "topic": "Interval estimation",
+   "q": "Why does the confidence interval for a proportion use p̄ in its standard error?",
+   "c": [
+    "Because p̄ is always equal to p",
+    "Because the formula requires the sample size, not p",
+    "Because p is unknown — it is the very thing being estimated",
+    "Because p̄ makes the interval narrower"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The true standard error √[p(1 − p)/n] contains p, which is unknown, so the sample proportion is substituted. It is not exact, which is why large samples are needed.",
+   "bk": "Anderson 14e ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0503",
+   "topic": "Interval estimation",
+   "q": "An HR team wants mean training cost within ±₹5 at 95% confidence, with a planning σ of ₹40. What sample size is needed?",
+   "c": [
+    "16",
+    "245",
+    "62",
+    "246"
+   ],
+   "a": [
+    3
+   ],
+   "w": "n = (1.96 × 40/5)² = 15.68² = 245.86, rounded UP to 246. 245 rounds down and would miss the target; 16 forgets to square.",
+   "bk": "Anderson 14e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0504",
+   "topic": "Interval estimation",
+   "q": "No prior data exist, but managers believe starting salaries for a role range from about ₹30,000 to ₹70,000. What planning value for σ does the textbook's rough rule suggest?",
+   "c": [
+    "₹10,000",
+    "₹20,000",
+    "₹40,000",
+    "₹50,000"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The book suggests range ÷ 4 as a rough planning value: (70,000 − 30,000)/4 = ₹10,000. ₹40,000 is the range itself; ₹50,000 is the midpoint.",
+   "bk": "Anderson 14e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0505",
+   "topic": "Interval estimation",
+   "q": "With no prior information, what sample size gives a ±4 percentage point margin of error for a proportion at 95% confidence?",
+   "c": [
+    "600",
+    "601",
+    "385",
+    "1,068"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Use p* = 0.5: n = 1.96² × 0.25 / 0.04² = 600.25, rounded up to 601. 1,068 is the answer for ±3 points.",
+   "bk": "Anderson 14e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0506",
+   "topic": "Interval estimation",
+   "q": "Why do survey planners use p* = 0.50 when they have no idea of the true proportion?",
+   "c": [
+    "Because most proportions are close to 0.50",
+    "Because the normal approximation requires p = 0.50",
+    "Because it gives the smallest sample size",
+    "Because p*(1 − p*) is largest at 0.50, so the sample size is big enough whatever p turns out to be"
+   ],
+   "a": [
+    3
+   ],
+   "w": "p*(1 − p*) peaks at 0.25 when p* = 0.5, so the resulting n is the largest — and therefore safe. It is a cautious choice, not a claim about the true p.",
+   "bk": "Anderson 14e ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0507",
+   "topic": "Interval estimation",
+   "q": "A previous survey found 20% of customers churn within a year. Using it as the planning value, what sample size gives ±0.04 at 95% confidence?",
+   "c": [
+    "385",
+    "384",
+    "601",
+    "246"
+   ],
+   "a": [
+    0
+   ],
+   "w": "n = 1.96² × 0.2 × 0.8 / 0.04² = 384.16, rounded up to 385. Using 0.5 instead would give 601 — the prior estimate saves over 200 interviews.",
+   "bk": "Anderson 14e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0508",
+   "topic": "Interval estimation",
+   "q": "In Excel, what does =CONFIDENCE.NORM(0.05, 20, 100) return?",
+   "c": [
+    "The lower limit of the 95% interval",
+    "The z value 1.96",
+    "The 95% margin of error, 3.92",
+    "The probability that μ lies in the interval"
+   ],
+   "a": [
+    2
+   ],
+   "w": "CONFIDENCE.NORM(alpha, σ, n) returns z_(α/2) × σ/√n = 1.96 × 2 = 3.92 — the margin of error only. You add and subtract it from x̄ yourself.",
+   "bk": "Anderson 14e ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0509",
+   "topic": "Interval estimation",
+   "q": "A website uses a sample of 1,000,000 visits to estimate mean session time as 84.1 ± 0.04 seconds. Last year's mean was 84 seconds. What should management conclude first?",
+   "c": [
+    "The 0.1-second change is statistically clear, but they should check for nonsampling error and whether 0.1 seconds matters in practice",
+    "The change is important because the interval is so narrow",
+    "The interval is wrong because it is too narrow",
+    "Nothing — a sample this large cannot have any error"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A huge n makes sampling error tiny, so 84 lies outside the interval. But precision says nothing about nonsampling error, and a 0.1-second change may have no practical significance for advertisers.",
+   "bk": "Anderson 14e ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0510",
+   "topic": "Interval estimation with σ unknown (t)",
+   "q": "Why does the margin of error vary from sample to sample in the σ-unknown case but not in the σ-known case (for a fixed n)?",
+   "c": [
+    "Because t changes with each sample",
+    "Because s changes from sample to sample, while σ is fixed",
+    "Because x̄ appears in the margin of error",
+    "Because n − 1 changes with each sample"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The σ-unknown margin t·s/√n contains s, which differs between samples. With σ known, z·σ/√n is a constant for a given n and confidence level.",
+   "bk": "Anderson 14e ch8",
+   "lv": "analyse"
   }
  ],
  "briefs": {
@@ -10509,6 +11377,8 @@ HUB.addCourse({
   "lec-11s",
   "lec-14s",
   "lec-21",
-  "lec-22"
+  "lec-22",
+  "lec-22s",
+  "sbe14-ch08"
  ]
 });
