@@ -145,6 +145,24 @@ HUB.addCourse({
    "Week 9 — Python: Dictionaries Part 3",
    "Nesting: dictionaries in lists, lists, dictionaries",
    "rec"
+  ],
+  [
+   24,
+   "Week 9 — Live Lecture 5",
+   "Student-records drill, exam format, Quiz 2 news",
+   "live"
+  ],
+  [
+   25,
+   "Week 10 — Python: User Input & While Loops Part 1",
+   "input(), int(), modulo, while loops, quit values",
+   "rec"
+  ],
+  [
+   26,
+   "Week 10 — Python: User Input & While Loops Part 2",
+   "Flags, break, continue; while with lists, dictionaries",
+   "rec"
   ]
  ],
  "units": [
@@ -314,7 +332,7 @@ HUB.addCourse({
   {
    "id": "python",
    "title": "Python basics",
-   "tag": "Lectures 7, 8, 10, 14, 19",
+   "tag": "Lectures 7, 8, 10, 14, 19, 24",
    "lede": "Variables, strings, numbers, comments and Colab. Syntax questions here are the easiest marks on the paper.",
    "topics": [
     {
@@ -343,6 +361,11 @@ HUB.addCourse({
      "h": "\n<div class=\"def\"><b>From the lecture (L19): the final exam.</b> The final has Python questions you <b>write with pen and paper</b>, of the same kind as the in-class exercises. He said they are not complex enough for syntax to trip you up: <b>syntax is not what's being tested; how you use the functions and keywords is</b>. About the seven-step list exercise below he said he will ask \"such type of questions\" in the final. Quiz 1 scores: he hadn't received them either; ask your Masai point of contact.</div>\n<h4>Why learn this when an LLM can write code?</h4>\n<p style=\"font-size:14.5px\">He encourages using LLMs, but compares it to a class-4 child asking why learn the alphabet if an LLM writes essays. Without the basics you can't write a good prompt, can't tell whether the output is what you wanted, and can't make a small change yourself without regenerating the whole program. The goal is to be able to <em>read</em> a program: how input comes in, how it is processed, how output is shown.</p>\n<h4>Read the traceback</h4>\n<p style=\"font-size:14.5px\">When code fails, Python prints a <strong>traceback</strong>, a plain-English error report. His advice: read every line of it. A misspelt variable gives a <code>NameError</code>:</p>\n<pre>message = \"Hello Python world!\"\nprint(mesage)\n<span class=\"c\"># last line of the traceback:</span>\n<span class=\"o\">NameError: name 'mesage' is not defined. Did you mean: 'message'?</span></pre>\n<h4>Function or method?</h4>\n<p style=\"font-size:14.5px\">He uses the two words interchangeably in this course. Rule of thumb: <strong>a name followed by parentheses is a function</strong> (<code>print()</code>, <code>str()</code>, <code>name.title()</code>). Strictly, \"method\" is used for functions that belong to a class or module, called with a dot. <code>del</code> has no parentheses: it is a statement.</p>\n<h4>Exercise: fix a message in one line</h4>\n<p style=\"font-size:14.5px\">Strip the extra spaces, join the pieces with <code>+</code>, and apply title case, all inside one <code>print</code>:</p>\n<pre>language = \"  python  \"\nstatus = \"is fun\"\nprint((\"error: \" + language.strip() + \" \" + status + \"!\").title())\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Error: Python Is Fun!</span></pre>\n<p style=\"font-size:14.5px\"><code>strip()</code> removes spaces at both ends, <code>rstrip()</code> only on the right, <code>lstrip()</code> only on the left. <code>.title()</code> on the whole string capitalises <em>every</em> word, including <em>Is</em>.</p>\n<h4>Numbers: powers and order of operations</h4>\n<pre>print(2 ** 8)\nprint(3 ** 3)\nprint(10 ** 6)\nprint(3 * 4 + 2)\nprint((2 + 3) * 4)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">256</span>\n<span class=\"o\">27</span>\n<span class=\"o\">1000000</span>\n<span class=\"o\">14</span>\n<span class=\"o\">20</span></pre>\n<p style=\"font-size:14.5px\"><code>**</code> is \"to the power of\". BODMAS applies: multiplication before addition unless brackets say otherwise.</p>\n<h4>Floats: formatting the display</h4>\n<p style=\"font-size:14.5px\">Float results can carry many decimal places (and tiny representation errors such as <code>0.30000000000000004</code>). He showed how to fix the number of decimals when displaying a value, with a format specifier in curly braces:</p>\n<pre>num1 = 5.6789\nnum2 = 3.4567\nresult = num1 * num2\nprint(result)\nprint(\"{:.3f}\".format(result))\nprint(f\"{result:.3f}\")\n<span class=\"c\"># prints:</span>\n<span class=\"o\">19.63025363</span>\n<span class=\"o\">19.630</span>\n<span class=\"o\">19.630</span></pre>\n<p style=\"font-size:14.5px\"><code>.3f</code> means three digits after the decimal point. The last two lines are two spellings of the same format; formatting changes only how the number is shown, not the value stored in <code>result</code>.</p>\n<h4>Exercise: is 0.1 + 0.2 equal to 0.3?</h4>\n<pre>x = 0.1\ny = 0.2\nz = 0.3\nequal_check = (x + y == z)\nprint(\"Is x + y equal to z?\", equal_check)\nprint(x + y)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Is x + y equal to z? False</span>\n<span class=\"o\">0.30000000000000004</span></pre>\n<p style=\"font-size:14.5px\">The sum is stored as 0.30000000000000004 because of how computers hold decimals in binary, so <code>==</code> gives <code>False</code>. The second part asked for \"x to the power 2 plus y to the power 2 divided by z\" to five decimal places, and the wording can be read two ways:</p>\n<pre>x, y, z = 0.1, 0.2, 0.3\nprint(\"{:.5f}\".format((x**2 + y**2) / z))\nprint(\"{:.5f}\".format(x**2 + y**2 / z))\n<span class=\"c\"># prints:</span>\n<span class=\"o\">0.16667</span>\n<span class=\"o\">0.14333</span></pre>\n<p style=\"font-size:14.5px\">Division happens before addition, so without brackets only <code>y**2</code> is divided by <code>z</code>. If you mean the whole sum, write the brackets.</p>\n<h4>TypeError: the message depends on what comes first</h4>\n<pre>age = 23\nprint(\"Happy \" + age + \"rd Birthday!\")\n<span class=\"c\"># error:</span>\n<span class=\"o\">TypeError: can only concatenate str (not \"int\") to str</span></pre>\n<pre>age = 23\nprint(age + \" Happy\")\n<span class=\"c\"># error:</span>\n<span class=\"o\">TypeError: unsupported operand type(s) for +: 'int' and 'str'</span></pre>\n<p style=\"font-size:14.5px\">Both are TypeErrors, but when the string comes first Python assumes you meant concatenation; when the number comes first it assumes addition. The fix is the same: <code>\"Happy \" + str(age) + \"rd Birthday!\"</code>.</p>\n<h4>Comments</h4>\n<p style=\"font-size:14.5px\">On a five-line script comments look unnecessary. On 10,000 to 15,000 lines written by someone else they decide whether the code can be understood and debugged at all. He said firms such as Google, Microsoft and Siemens have written rules for how comments must be written. A good comment says what the code is supposed to do and how it does it.</p>\n"
     },
     {
+     "t": "Live Lecture 5: Quiz 2, the final and what's next",
+     "src": "L#24",
+     "h": "\n<div class=\"def\"><b>From the lecture (L#24): Quiz 2.</b> There will be <b>one more quiz</b>, at the end of October, and <b>no third quiz</b>. The LMS has since confirmed it: <b>Saturday 31 October, 60 MCQs in 20 minutes</b>, covering everything taught up to 25 October. That includes user input and while loops (L#25–26).</div>\n<div class=\"def\"><b>From the lecture (L#24): the final exam.</b> The Python part tests <b>reading code</b>, not syntax. Expect three kinds of question: (1) code you must give the output of, and the code may contain an error, such as an indentation error, in which case the answer is that it gives no output and why; (2) short code written with pen and paper, marked on the logic rather than strict syntax (his example: a task that needs a nested function, a function defined inside another function); (3) one- or two-word answers. He plans <b>no descriptive questions on the Python part</b>; a few may come from the first part of the course (types of data and the four pillars: data, algorithms, hardware, software).</div>\n<div class=\"def\"><b>From the lecture (L#24): assignments.</b> None yet. Once functions and other harder topics are done he'll set assignments in which you submit the code <b>and</b> a plain-English explanation of what it does, since generating the code alone proves nothing.</div>\n<h4>What comes next</h4>\n<p style=\"font-size:14.5px\">After user input and while loops, two chapters remain: <b>functions</b> and <b>classes</b>. His Colab notebooks for both were attached to this lecture's notes, but neither topic was taught in the session. The functions notebook covers defining a function, parameters and arguments (positional, keyword, default values), return values, passing lists, arbitrary numbers of arguments and storing functions in modules. The classes notebook builds a Dog class and a Car class (<code>__init__()</code>, <code>self</code>, instances, attributes and methods), then inheritance, and importing classes from modules. They'll be added here once they're lectured. He also said tuples come back in those two chapters.</p>\n<p style=\"font-size:14.5px\">The next live session is planned as exercises on everything so far, from lists through if statements.</p>\n"
+    },
+    {
      "t": "Textbook: Getting Started",
      "src": "Python Crash Course ch1",
      "h": "<p>The chapter gets a working Python 3 environment onto Linux, macOS or Windows and runs a one-line Hello World program as a smoke test: if that works, any program should. It separates two ways of running code: typing snippets at the interactive &gt;&gt;&gt; prompt, and saving a .py file in a text editor and running the whole file. It shows how to run a saved program from a terminal with cd plus python filename.py, and how to read a failure: Python's traceback, and the reminder that one wrong capital, quote, colon or bracket stops a program. For this course the practical takeaway is the vocabulary (interpreter, prompt, script, traceback, cross-platform), since lectures use Colab rather than a local install.</p><!--viz:foc-pcc1-session-vs-script--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two panels: at the &gt;&gt;&gt; prompt both 2 + 3 and print show a result; the same two lines saved in hello.py print only hi.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The &gt;&gt;&gt; prompt vs a .py file</div><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);padding:10px 12px\"><div style=\"font-weight:700;margin-bottom:6px\">Interactive session</div><div style=\"color:var(--ink-2);font-size:13px;margin-bottom:6px\">each line runs when you press Enter; nothing is saved</div><pre style=\"margin:0;font-size:13px\">&gt;&gt;&gt; 2 + 3\n<span class=\"o\">5</span>\n&gt;&gt;&gt; print(\"hi\")\n<span class=\"o\">hi</span></pre></div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);padding:10px 12px\"><div style=\"font-weight:700;margin-bottom:6px\">Script file hello.py</div><div style=\"color:var(--ink-2);font-size:13px;margin-bottom:6px\">saved; the whole file runs top to bottom</div><pre style=\"margin:0;font-size:13px\">2 + 3\nprint(\"hi\")</pre><div style=\"font-size:13px;color:var(--ink-3);margin:6px 0 4px\">output</div><pre style=\"margin:0;font-size:13px\"><span class=\"o\">hi</span></pre></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">A bare expression echoes only at the &gt;&gt;&gt; prompt; in a script, only print() shows anything.</figcaption></figure><!--/viz:foc-pcc1-session-vs-script--><!--viz:foc-pcc1-traceback--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A traceback from a two-line script that misspells a variable, with the file and line number, the failing line with carets, and the NameError message labelled.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Reading a traceback</div><p style=\"font-size:13.5px;margin:0 0 6px\">greet.py: <span style=\"font-family:var(--mono)\">name = \"Asha\"</span> then <span style=\"font-family:var(--mono)\">print(nmae)</span></p><pre style=\"margin:0;font-size:13px\">Traceback (most recent call last):\n  File \".../greet.py\", <b>line 2</b>, in &lt;module&gt;   <span style=\"color:var(--blue)\">①</span>\n    print(nmae)   <span style=\"color:var(--blue)\">②</span>\n          ^^^^\n<span class=\"o\">NameError: name 'nmae' is not defined</span>   <span style=\"color:var(--blue)\">③</span></pre><div style=\"font-size:13.5px;margin-top:8px;display:grid;gap:3px\"><div><b style=\"color:var(--blue)\">①</b> where: the file and the line number</div><div><b style=\"color:var(--blue)\">②</b> the line that failed; the carets point at the culprit</div><div><b style=\"color:var(--blue)\">③</b> what went wrong: error type, then a message. Read this first.</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Read a traceback bottom-up: the last line says what, the File line says where. Wording varies a little between Python versions.</figcaption></figure><!--/viz:foc-pcc1-traceback--><p><strong>Interactive interpreter (terminal session)</strong> — Typing python3 in a terminal starts an interactive session marked by the &gt;&gt;&gt; prompt. Each line you type is run at once and its result is shown straight away, which makes it ideal for trying out a single idea. You leave with exit() (or Ctrl-D on Linux/macOS, Ctrl-Z then Enter on Windows).<br><em>e.g.</em> &gt;&gt;&gt; 2 + 3 shows 5 immediately.</p><p><strong>Script file (.py)</strong> — Real programs are saved as files ending in .py and run as a whole. The extension tells the editor the file holds Python, so it can colour the syntax and knows how to run it. In a script, a bare expression such as 2 + 3 is evaluated but nothing appears unless you print it.<br><em>e.g.</em> hello_world.py containing print(\"Hello Python world!\")</p><p><strong>Hello World as a smoke test</strong> — Printing a single greeting is the traditional first program. Its real job is to prove the toolchain works end to end: if one print call runs, the interpreter, editor and file setup are all correct.</p><p><strong>Exact syntax and the traceback</strong> — Python expects precise syntax: print must be lowercase, quotes and brackets must pair up, and a missing colon can stop a program. When something serious goes wrong Python prints a traceback, a report that points to the file, line and kind of error. Read it from the bottom line up.<br><em>e.g.</em> Print(\"Hi\") ends with NameError: name 'Print' is not defined.</p><p><strong>Cross-platform language</strong> — Python runs on all the major operating systems, so a program written on one machine runs on any other with Python installed. Only the installation and setup steps differ between Windows, macOS and Linux.</p><p><strong>Python 2 versus Python 3 (background)</strong> — The book was written while both versions were in use and tells readers to prefer Python 3. Python 2 is now retired; everything in this course is Python 3. The visible difference you may meet in old code is print written without parentheses, which is a SyntaxError in Python 3.</p><div class=\"def\"><b>Book vs lecture — Where you write and run Python.</b> Book: Install Python 3 locally, add it to PATH on Windows, write code in a text editor (Geany or Sublime Text) and run .py files or the &gt;&gt;&gt; terminal session. Lecture: The course uses Google Colab: zero setup, runs in the browser, code runs cell by cell, and notebooks are saved as .ipynb in Google Drive. <b>For quizzes, answer setup questions with the Colab facts from the lecture. Keep from the book only the general ideas (interpreter prompt, .py scripts, tracebacks).</b></div><div class=\"def\"><b>Book vs lecture — Editor vs IDE.</b> Book: Calls Geany and Sublime Text simple text editors that also run your code. Lecture: Separates a source code editor (writing and editing only) from an IDE (editor + runner + debugger), and lists Colab as an IDE. <b>If asked to classify a tool, use the lecture's editor vs IDE split. Don't infer from the book that any editor that runs code is 'just an editor'.</b></div>"
@@ -357,7 +380,7 @@ HUB.addCourse({
   {
    "id": "lists",
    "title": "Lists, slicing &amp; tuples",
-   "tag": "Lectures 11–13, 15, 16, 19",
+   "tag": "Lectures 11–13, 15, 16, 19, 24",
    "lede": "The largest Python block, and the base that dictionaries, loops and functions build on.",
    "topics": [
     {
@@ -399,6 +422,11 @@ HUB.addCourse({
      "t": "Live Lecture 4: list operations worked through",
      "src": "L#19",
      "h": "\n<h4>Which bracket makes what</h4>\n<div class=\"scroller\"><table><thead><tr><th>After <code>=</code> you open…</th><th>Python makes a…</th><th>Empty one</th></tr></thead><tbody>\n<tr><td>square brackets <code>[ ]</code></td><td>list</td><td><code>bicycles = []</code></td></tr>\n<tr><td>curly braces <code>{ }</code></td><td>dictionary (L21)</td><td><code>alien = {}</code></td></tr>\n<tr><td>parentheses <code>( )</code></td><td>tuple</td><td><code>dims = ()</code></td></tr>\n</tbody></table></div>\n<h4>Assigning to an index replaces; it does not insert</h4>\n<pre>motorcycles = ['honda', 'yamaha', 'suzuki']\nmotorcycles[0] = 'ducati'\nprint(motorcycles)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">['ducati', 'yamaha', 'suzuki']</span></pre>\n<p style=\"font-size:14.5px\">He asked the class what this gives, and the trap is to expect Ducati to be added in front. Position 0 now <em>points to</em> a different value, so Honda is gone. To add without losing anything, use <code>append()</code> (end) or <code>insert()</code> (any position).</p>\n<h4>The insert poll</h4>\n<pre>motorcycles = ['honda', 'yamaha', 'suzuki']\nmotorcycles.insert(1, 'ducati')\nprint(motorcycles)\nmotorcycles = ['honda', 'yamaha', 'suzuki']\nmotorcycles.insert(0, 'ducati')\nprint(motorcycles)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">['honda', 'ducati', 'yamaha', 'suzuki']</span>\n<span class=\"o\">['ducati', 'honda', 'yamaha', 'suzuki']</span></pre>\n<p style=\"font-size:14.5px\">To put Ducati <em>first</em> you need index 0, because indexes start at 0. Several students answered 1 in class.</p>\n<h4>del vs pop: do you still need the value?</h4>\n<pre>motorcycles = ['honda', 'yamaha', 'suzuki']\nfirst_owned = motorcycles.pop(1)\nprint(motorcycles)\nprint(\"The first motorcycle I owned was a \" + first_owned.title() + \".\")\n<span class=\"c\"># prints:</span>\n<span class=\"o\">['honda', 'suzuki']</span>\n<span class=\"o\">The first motorcycle I owned was a Yamaha.</span></pre>\n<p style=\"font-size:14.5px\"><code>del</code> deletes and keeps nothing. <code>pop()</code> removes the last item (or the one at the index you give) and hands it back so you can store it.</p>\n<h4>Removing every copy of a value</h4>\n<p style=\"font-size:14.5px\"><code>remove()</code> deletes only the <strong>first</strong> occurrence. To remove all five Rahuls from a class list of 800, he said you need a loop. Be careful which loop: removing items from a list <em>while a for loop walks over that same list</em> makes it skip the item that slides into the gap:</p>\n<pre>names = ['rahul', 'rahul', 'amit']\nfor name in names:\n    if name == 'rahul':\n        names.remove(name)\nprint(names)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">['rahul', 'amit']</span></pre>\n<p style=\"font-size:14.5px\">One Rahul survives. A safe version repeats <code>remove()</code> for as long as the value is still there:</p>\n<pre>names = ['rahul', 'rahul', 'amit']\nwhile 'rahul' in names:\n    names.remove('rahul')\nprint(names)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">['amit']</span></pre>\n<h4>Exercise: the seven-step shipment list</h4>\n<p style=\"font-size:14.5px\">His exam-style exercise, solved and run. Each step changes the list the next step works on:</p>\n<pre>starting_inventory = ['router', 'switch', 'firewall', 'server', 'cable']\nstarting_inventory.remove('server')            # 1 faulty server out\nstarting_inventory.insert(0, 'fiber optic')    # 2 new item at the very front\nstarting_inventory[-1] = 'usb hub'             # 3 replace the last item\nallocated_device = starting_inventory.pop(1)   # 4 pop the second item\nstarting_inventory.append('rack mount')        # 5 add to the end\ndel starting_inventory[2]                      # 6 delete index 2\nprint(starting_inventory)                      # 7 verify\nprint(allocated_device)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">['fiber optic', 'switch', 'usb hub', 'rack mount']</span>\n<span class=\"o\">router</span></pre>\n<p style=\"font-size:14.5px\">Step 4 pops <code>'router'</code>, not <code>'switch'</code>: after step 2 put fiber optic at the front, every item moved one place right, so the second item is now the router.</p>\n<!--viz:foc-inventory-steps--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace of the seven-step inventory exercise showing the list after remove, insert at 0, replacing the last item, pop(1) which returns router, append and del at index 2.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The shipment list, step by step</div><div class=\"scroller\"><table><thead><tr><th>Step</th><th>Operation</th><th>List afterwards</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">0</td><td style=\"font-family:var(--mono)\">start</td><td style=\"font-family:var(--mono)\">router, switch, firewall, server, cable</td></tr><tr><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono)\">remove('server')</td><td style=\"font-family:var(--mono)\">router, switch, firewall, cable</td></tr><tr><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono)\">insert(0, 'fiber optic')</td><td style=\"font-family:var(--mono)\">fiber optic, router, switch, firewall, cable</td></tr><tr><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono)\">[-1] = 'usb hub'</td><td style=\"font-family:var(--mono)\">fiber optic, router, switch, firewall, usb hub</td></tr><tr><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono)\">pop(1)</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">fiber optic, switch, firewall, usb hub · returns router</td></tr><tr><td style=\"font-family:var(--mono)\">5</td><td style=\"font-family:var(--mono)\">append('rack mount')</td><td style=\"font-family:var(--mono)\">fiber optic, switch, firewall, usb hub, rack mount</td></tr><tr><td style=\"font-family:var(--mono)\">6</td><td style=\"font-family:var(--mono)\">del [2]</td><td style=\"font-family:var(--mono)\">fiber optic, switch, usb hub, rack mount</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each step works on the list the previous step left, so positions keep shifting.</figcaption></figure><!--/viz:foc-inventory-steps-->"
+    },
+    {
+     "t": "Live Lecture 5: the student-records exercise",
+     "src": "L#24",
+     "h": "\n<p style=\"font-size:14.5px\">Live Lecture 5 (17 Oct) revised the lists and if-statement chapters (L#11–18) by walking through the recorded-lecture code again, plus <strong>one new exercise</strong> that wasn't in the recordings. His point all session: an LLM can write this solution in seconds, so the skill he's after is reading it line by line and saying what each line does.</p>\n<h4>The problem</h4>\n<p style=\"font-size:14.5px\">Each student record is itself a list: a name, then a list of three subject scores. A list whose items are lists is a <b>nested list</b> (a list of lists). Do four things, in this order:</p>\n<ol>\n<li><b>Remove underperformers:</b> anyone whose average score is below 60.</li>\n<li><b>Reward top scorers:</b> if a student's highest single score is 90 or more, add <code>(Distinction)</code> to the name.</li>\n<li><b>Priority enrolment:</b> a new student, Zara (85, 92, 78), goes at the <em>front</em> of the list.</li>\n<li><b>Display:</b> sort by name and print each name with the average.</li>\n</ol>\n<p style=\"font-size:14.5px\">His hints: use the list methods from earlier lectures (append, insert, remove, sort, pop, del), cope with an empty list, and get the average right.</p>\n<h4>One version of the solution, run</h4>\n<pre>student_records = [\n    ['Alice', [75, 88, 92]],\n    ['Bob', [65, 70, 72]],\n    ['Charlie', [88, 90, 95]],\n    ['David', [78, 82, 85]],\n    ['Eve', [45, 50, 55]],\n]\nif not student_records:\n    print(\"No student records to process.\")\n\n# 1. Remove underperformers (average below 60)\neligible_students = []\nfor record in student_records:\n    name, scores = record\n    average_score = sum(scores) / len(scores)\n    if average_score &gt;= 60:\n        eligible_students.append(record)\nstudent_records = eligible_students\n\n# 2. Reward top scorers (any one score of 90 or more)\nfor i in range(len(student_records)):\n    name, scores = student_records[i]\n    if max(scores) &gt;= 90:\n        student_records[i][0] = name + \" (Distinction)\"\n\n# 3. Priority enrolment: Zara goes to the front\nnew_student = ['Zara', [85, 92, 78]]\nstudent_records.insert(0, new_student)\n\n# 4. Sort by name and display\nstudent_records.sort(key=lambda x: x[0])\nfor record in student_records:\n    name, scores = record\n    average_score = sum(scores) / len(scores)\n    print(f\"Student: {name}, Average Score: {average_score:.1f}\")\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Student: Alice (Distinction), Average Score: 85.0</span>\n<span class=\"o\">Student: Bob, Average Score: 69.0</span>\n<span class=\"o\">Student: Charlie (Distinction), Average Score: 91.0</span>\n<span class=\"o\">Student: David, Average Score: 81.7</span>\n<span class=\"o\">Student: Zara, Average Score: 85.0</span></pre>\n<h4>Reading it line by line</h4>\n<p style=\"font-size:14.5px\">These are the questions he put to the class in the chat:</p>\n<ul>\n<li><code>name, scores = record</code>: on the first pass <code>record</code> is <code>['Alice', [75, 88, 92]]</code>. It holds two items, so Python puts the first in <code>name</code> and the second in <code>scores</code>. <code>name</code> is a string; <b><code>scores</code> is a whole list</b>. You don't have to tell Python that: it follows from what the record holds.</li>\n<li><code>sum(scores) / len(scores)</code>: (75 + 88 + 92) / 3 = 85.0. <code>len()</code> is 3, even though the indexes run 0 to 2.</li>\n<li><b>Why a new list?</b> Removing items from a list while a for loop walks over it makes the loop skip the item that slides into the gap (L#19). So the keepers are collected in <code>eligible_students</code> and the old name is then pointed at the new list.</li>\n<li><code>for i in range(len(student_records))</code>: Eve is gone by now, so the list has 4 records and <code>i</code> takes 0, 1, 2, 3: <b>four passes</b>, not five. The index lets the code change <code>student_records[i][0]</code>, the name, in place.</li>\n<li><code>max(scores) &gt;= 90</code>: Alice (92) and Charlie (95) get the distinction. Bob and David have nothing of 90 or above.</li>\n<li><code>insert(0, new_student)</code>, not <code>append()</code>: append always adds at the end and doesn't ask where. insert asks for the position, and 0 is the front.</li>\n<li><code>sort(key=lambda x: x[0])</code>: <code>x</code> stands for one record and <code>x[0]</code> is its name, so the records are ordered by name, not by scores. He described it as checking the first letter; Python actually compares the whole name, letter by letter, as in any string sort. <code>lambda</code> hasn't been taught yet: for now, read the line as \"sort by item 0 of each record\".</li>\n<li><code>{average_score:.1f}</code> is the one-decimal format from L#19, which is why David's 81.666… prints as 81.7.</li>\n</ul>\n<div class=\"def\">Two results that are easy to get wrong: <b>Zara has a 92 but no (Distinction)</b>, because she joins in step 3, after step 2 has already run. And she was inserted at the <b>front</b>, but the sort in step 4 moves her to the <b>end</b>.</div>\n<h4>= versus [:], again</h4>\n<p style=\"font-size:14.5px\">He used the solution to go back over copying (L#16). <code>student_records = eligible_students</code> copies the <em>address</em>, not the contents: both names now point at the same block of memory, so a change made through one shows through the other. <code>eligible_students[:]</code> builds a separate list in a new block. He called this the idea of <b>pointers</b>, which belongs to data structures.</p>\n<pre>a = [['Alice', [75, 88, 92]]]\nb = a          # second name, same list\nc = a[:]       # new outer list\nb.append(['Zara', [85, 92, 78]])\nprint(len(a), len(b), len(c))\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2 2 1</span></pre>\n<p style=\"font-size:14.5px\"><code>b</code> is the same list as <code>a</code>, so the append shows through both; <code>c</code> was copied before the append and still has one record. The LMS's AI summary labels these two lines \"shallow copy\" and \"deep copy\". Neither label fits: <code>=</code> makes no copy at all, and <code>[:]</code> copies only the outer list, so for nested records the inner score lists are still shared.</p>\n<h4>Why slicing matters later</h4>\n<p style=\"font-size:14.5px\">In machine learning a large data set is split into a part for training a model and a part for testing it. With 5,000 records, <code>data[:4000]</code> takes the first 4,000 and <code>data[4000:]</code> the remaining 1,000. He said you'll meet this in later BSMT courses.</p>\n<h4>New points from the recap</h4>\n<ul>\n<li>Python marks a block with a <b>colon</b> and <b>indentation</b>. Java and C use curly braces, and in very large programs a misplaced brace is a classic cause of scope bugs, one reason Python did without them. Forget the colon and you get <em>expected ':'</em>; indent a line that needs none and you get <em>unexpected indent</em>.</li>\n<li>Python's loops are <code>for</code> and <code>while</code>. A student asked about <b>do-while</b>: that exists in languages such as C and Java, but Python has no do-while statement. The <code>while True:</code> + <code>break</code> pattern (L#26) does the same job.</li>\n<li>Comparisons are case-sensitive: <code>'Audi' == 'audi'</code> is False. Change one side to match: <code>car.lower() == 'audi'</code> or <code>car.upper() == 'AUDI'</code>. The method is <code>upper()</code>, not <code>uppercase()</code>.</li>\n<li><code>and</code> and <code>or</code> work like the AND and OR logic gates: <code>and</code> is True only when both tests are True; <code>or</code> is False only when both are False.</li>\n</ul>\n<!--viz:foc-student-records-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace table of the five original student records: each one's average, whether it is kept (Eve, average 50, is removed) and its highest score, with Alice and Charlie gaining a distinction.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">What steps 1 and 2 do to each record</div><div class=\"scroller\"><table><thead><tr><th>Record</th><th>Average</th><th>Step 1: ≥ 60?</th><th>max</th><th>Step 2: max ≥ 90?</th></tr></thead><tbody><tr><td>Alice</td><td style=\"font-family:var(--mono)\">85.0</td><td style=\"background:var(--good-soft)\">kept</td><td style=\"font-family:var(--mono)\">92</td><td style=\"background:var(--blue-soft)\">+ (Distinction)</td></tr><tr><td>Bob</td><td style=\"font-family:var(--mono)\">69.0</td><td style=\"background:var(--good-soft)\">kept</td><td style=\"font-family:var(--mono)\">72</td><td>no</td></tr><tr><td>Charlie</td><td style=\"font-family:var(--mono)\">91.0</td><td style=\"background:var(--good-soft)\">kept</td><td style=\"font-family:var(--mono)\">95</td><td style=\"background:var(--blue-soft)\">+ (Distinction)</td></tr><tr><td>David</td><td style=\"font-family:var(--mono)\">81.7</td><td style=\"background:var(--good-soft)\">kept</td><td style=\"font-family:var(--mono)\">85</td><td>no</td></tr><tr><td>Eve</td><td style=\"font-family:var(--mono)\">50.0</td><td style=\"background:var(--bad-soft)\">removed</td><td style=\"font-family:var(--mono)\">55</td><td style=\"color:var(--ink-3)\">(already gone)</td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\">Zara (85, 92, 78) is inserted in step 3, after this table, so she never gets the distinction.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The filter uses the average; the distinction uses the single highest score.</figcaption></figure><!--/viz:foc-student-records-trace-->"
     },
     {
      "t": "Textbook: Introducing Lists",
@@ -497,6 +525,44 @@ HUB.addCourse({
      "h": "<p>A dictionary stores key-value pairs: each key is linked to a value, and you look the value up by key, not by position. The chapter shows how to create a dictionary with braces, read values with dict[key], add or change pairs by assigning to a key, start from an empty {} and fill it, and delete a pair with del. It contrasts two uses: many facts about one thing (an alien's colour, points and position) and one fact about many things (each person's favourite language). Loops can run over items() (key and value together), keys() (also the default) or values(), with sorted() to order the keys and set() to drop duplicate values. Finally it nests structures: a list of dictionaries, a list inside a dictionary, and a dictionary of dictionaries, while warning against nesting too deeply.</p><!--viz:foc-pcc1-upgrade-turns--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Five green aliens, of which only the first three are ever changed; a loop over the first three turns green ones yellow (10 points) and, through elif, yellow ones red (15 points). After run 1 the first three are yellow and the total is 40; after run 2 they are red and the total is 55; run 3 changes nothing.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The if-elif upgrade loop, one turn at a time</div><pre style=\"margin:0 0 8px;font-size:13px\"># fleet: 5 green aliens, 5 points each\nfor a in fleet[0:3]:\n    if a['color'] == 'green':\n        a['color'] = 'yellow'; a['points'] = 10\n    elif a['color'] == 'yellow':\n        a['color'] = 'red'; a['points'] = 15</pre><div class=\"scroller\"><table><thead><tr><th>Run</th><th>fleet[0:3]</th><th>Fleet points</th><th>Why</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">start</td><td style=\"font-family:var(--mono)\">green ×3</td><td style=\"font-family:var(--mono)\">25</td><td>not run yet</td></tr><tr><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">yellow ×3</td><td style=\"font-family:var(--mono)\">40</td><td>if matches; elif skipped</td></tr><tr><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">red ×3</td><td style=\"font-family:var(--mono)\">55</td><td>if fails; elif matches</td></tr><tr><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono)\">red ×3</td><td style=\"font-family:var(--mono)\">55</td><td>neither matches</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">elif lets an alien move only one step per run; it takes two runs to go from green to red, and red aliens match neither test.</figcaption></figure><!--/viz:foc-pcc1-upgrade-turns--><!--viz:foc-pcc1-fresh-vs-shared-dict--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two box-and-pointer diagrams of a three-item list. When the dictionary is created inside the loop, each slot points to its own dictionary and changing aliens[0] leaves aliens[2] green. When one dictionary is created before the loop, all three slots point to it, so aliens[2] turns red too.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">A fresh dictionary each pass vs one shared dictionary</div><p style=\"font-size:13.5px;margin:0 0 6px\">Each box is one <span style=\"font-family:var(--mono)\">{'color': …}</span> dictionary. Both versions append three times, then run <span style=\"font-family:var(--mono)\">aliens[0]['color'] = 'red'</span></p><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 318\" role=\"img\" aria-label=\"Top: three list slots each point to their own dictionary, so changing slot 0 leaves slot 2 green. Bottom: three slots all point to one dictionary, so changing slot 0 makes slot 2 red too.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><text x=\"14\" y=\"22\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Built inside the loop: three dictionaries</text><text x=\"14\" y=\"60\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">aliens</text><rect x=\"70\" y=\"40\" width=\"40\" height=\"30\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"90\" y=\"60\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px;font-family:var(--mono)\">0</text><rect x=\"110\" y=\"40\" width=\"40\" height=\"30\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"130\" y=\"60\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px;font-family:var(--mono)\">1</text><rect x=\"150\" y=\"40\" width=\"40\" height=\"30\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"170\" y=\"60\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px;font-family:var(--mono)\">2</text><text x=\"206\" y=\"60\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">aliens[2]['color'] → green</text><path d=\"M90,70 L77.8,102.5\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M75,110 L73.6,100.9 L82,104.1 Z\" style=\"fill:var(--ink-3)\"/><rect x=\"20\" y=\"110\" width=\"110\" height=\"30\" rx=\"4\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"75\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">'red'</text><path d=\"M130,70 L212.7,106.8\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M220,110 L210.9,110.9 L214.5,102.6 Z\" style=\"fill:var(--ink-3)\"/><rect x=\"165\" y=\"110\" width=\"110\" height=\"30\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"220\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">'green'</text><path d=\"M170,70 L357.2,108.4\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M365,110 L356.3,112.8 L358.1,104 Z\" style=\"fill:var(--ink-3)\"/><rect x=\"310\" y=\"110\" width=\"110\" height=\"30\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"365\" y=\"130\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">'green'</text><path d=\"M14,158 L426,158\" style=\"stroke:var(--rule);stroke-width:1.5;fill:none\"/><text x=\"14\" y=\"186\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Built once, before the loop: one dictionary</text><text x=\"14\" y=\"224\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">aliens</text><rect x=\"70\" y=\"204\" width=\"40\" height=\"30\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"90\" y=\"224\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px;font-family:var(--mono)\">0</text><rect x=\"110\" y=\"204\" width=\"40\" height=\"30\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"130\" y=\"224\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px;font-family:var(--mono)\">1</text><rect x=\"150\" y=\"204\" width=\"40\" height=\"30\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"170\" y=\"224\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px;font-family:var(--mono)\">2</text><text x=\"206\" y=\"224\" style=\"fill:var(--clay);font-size:13px;font-family:var(--mono);font-weight:700\">aliens[2]['color'] → red</text><path d=\"M90,234 L188.5,271.2\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none\"/><path d=\"M196,274 L186.9,275.4 L190.1,267 Z\" style=\"fill:var(--clay)\"/><path d=\"M130,234 L212.7,270.8\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none\"/><path d=\"M220,274 L210.9,274.9 L214.5,266.6 Z\" style=\"fill:var(--clay)\"/><path d=\"M170,234 L237,270.2\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none\"/><path d=\"M244,274 L234.8,274.2 L239.1,266.2 Z\" style=\"fill:var(--clay)\"/><rect x=\"165\" y=\"274\" width=\"110\" height=\"30\" rx=\"4\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"220\" y=\"294\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">'red'</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Create the dictionary inside the loop so each item is a separate object; appending the same one three times gives three names for one dictionary.</figcaption></figure><!--/viz:foc-pcc1-fresh-vs-shared-dict--><!--viz:foc-pcc1-choose-structure--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A two-by-two grid. One thing with one fact: a plain variable. One thing with several facts: one dictionary such as alien_0. Many things with one fact each: a dictionary of similar objects such as the poll, with a list as the value when someone has several answers. Many things with several facts each: nest, as a list of dictionaries or a dictionary of dictionaries.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Which structure fits the data?</div><div style=\"display:grid;grid-template-columns:auto 1fr 1fr;gap:4px;font-size:14px;min-width:0\"><div></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center\">One fact about each</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center\">Several facts about each</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;writing-mode:vertical-rl;transform:rotate(180deg);text-align:center\">One thing</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>A plain variable</b><br><span style=\"color:var(--ink-2);font-size:13px\">no dictionary needed</span><br><span style=\"font-family:var(--mono);font-size:12.5px\">city = 'jodhpur'</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--blue-soft)\"><b>One dictionary</b><br><span style=\"color:var(--ink-2);font-size:13px\">keys name the facts</span><br><span style=\"font-family:var(--mono);font-size:12.5px\">alien_0 = {'color': …, 'points': …}</span></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;writing-mode:vertical-rl;transform:rotate(180deg);text-align:center\">Many things</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--blue-soft)\"><b>A dictionary of similar objects</b><br><span style=\"color:var(--ink-2);font-size:13px\">one key per thing; a list as the value if someone has several answers</span><br><span style=\"font-family:var(--mono);font-size:12.5px\">langs = {'jen': 'python', …}</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--clay-soft)\"><b>Nest them</b><br><span style=\"color:var(--ink-2);font-size:13px\">a list of dictionaries, or a dictionary of dictionaries when each thing has a unique key</span><br><span style=\"font-family:var(--mono);font-size:12.5px\">users['mcurie']['location']</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Count the things and the facts about each; that tells you whether to use one dictionary, a dictionary of similar objects, or nesting.</figcaption></figure><!--/viz:foc-pcc1-choose-structure--><p><strong>Key-value pair</strong> — A dictionary is a collection of key-value pairs inside braces {}. A colon links each key to its value, and commas separate the pairs. A value can be anything: a number, a string, a list, even another dictionary.<br><em>e.g.</em> student = {'name': 'asha', 'cgpa': 8.7}</p><p><strong>Accessing a value</strong> — Put the key in square brackets after the dictionary's name: student['name']. You look things up by key, not by numeric position. Asking for a key that doesn't exist stops the program with KeyError; this edition's chapter doesn't show it, but L#23 does (users['location']).</p><p><strong>Adding and modifying pairs</strong> — The same syntax adds or modifies: d[key] = value creates the pair if the key is new and replaces the value if the key already exists. Dictionaries are dynamic: they grow as you assign new keys.</p><p><strong>Starting from an empty dictionary</strong> — Begin with d = {} and assign pairs one line at a time. This is the usual pattern when data comes from users or is generated by a loop.</p><p><strong>Removing a pair with del</strong> — del d[key] removes the key and its value permanently; the rest of the dictionary is untouched.</p><p><strong>One object vs many similar objects</strong> — A dictionary can describe one thing in detail (an alien's colour, points and position) or store the same kind of fact for many things (each poll respondent's language). In the second case, choose loop variable names that match what the keys and values mean.</p><p><strong>Multi-line dictionary style</strong> — For long dictionaries, press Enter after the opening brace, indent each pair four spaces, end each pair with a comma (including the last), and put the closing brace on its own line. Long print calls can be split across lines with + at the line ends.</p><p><strong>Looping with items()</strong> — for key, value in d.items(): unpacks each pair into two variables. Use descriptive names (for name, language in …) to make the loop body readable.</p><p><strong>Looping over keys</strong> — for k in d.keys(): visits each key. Looping over a dictionary directly (for k in d:) does the same, since keys are the default. Inside the loop, d[k] fetches the matching value. key in d (or in d.keys()) checks whether a key exists. The book and L#22 both say keys() returns a list; in Python 3 it is a list-like dict_keys view.</p><p><strong>sorted() keys and values()</strong> — for k in sorted(d.keys()): visits keys in alphabetical order without changing the dictionary. for v in d.values(): visits only the values, repeats included.</p><p><strong>set() to remove duplicates</strong> — Wrapping a collection in set() keeps one copy of each distinct item, e.g. set(d.values()) lists each language once. A set has no guaranteed order.</p><p><strong>List of dictionaries</strong> — Each dictionary describes one object; the list holds many of them. A loop with range() can generate many dictionaries and append them, and a loop over a slice plus an if can update just some of them. Create the dictionary inside the loop so each item is a separate object. Give every dictionary in the list the same keys so one loop can handle them all.</p><p><strong>List inside a dictionary</strong> — Use a list as a value when one key needs several values, such as a pizza's toppings or a person's several favourite languages. Loop over d[key] to process the list, nesting a for inside the dictionary loop if needed.</p><p><strong>Dictionary of dictionaries</strong> — Unique keys (such as usernames) map to inner dictionaries of details. Use two lookups to read: users['asha']['city']. Keep the inner dictionaries' structure identical, and avoid nesting much deeper than this; there's usually a simpler design.</p><div class=\"card\"><strong>Case: The alien fleet</strong> <em>(alien.py and aliens.py, sections 'A Simple Dictionary' to 'A List of Dictionaries')</em><p>A game alien is modelled as a dictionary of colour, points, position and speed; its movement depends on looking up its speed. A fleet of thirty identical aliens is then generated in a loop as a list of dictionaries, and the first few are upgraded by looping over a slice with an if test.</p><p><em>Lesson:</em> Dictionaries model one object's attributes; a list of identically structured dictionaries models many objects.</p><p><em>Think:</em> Write the loop that turns every yellow alien among the first five into a red one worth 15 points.</p></div><div class=\"card\"><strong>Case: The favourite-languages poll</strong> <em>(favorite_languages.py, sections 'A Dictionary of Similar Objects' to 'A List in a Dictionary')</em><p>Poll answers map each person to a language. The book loops over pairs, keys only, sorted keys and values, uses set() to list each language once, invites missing names to respond, and finally lets each person store a list of several languages.</p><p><em>Lesson:</em> The right loop (items, keys, values, sorted, set) depends on which part of the data you need.</p><p><em>Think:</em> Given the poll dictionary, how would you print each distinct language once, in alphabetical order?</p></div><details><summary>Worked problem: Count grades in a class</summary><p>grades = {'asha': 'A', 'ben': 'B', 'chen': 'A', 'dev': 'C'}. Write code that counts how many students got an A and prints: A grades: 2</p><ol><li>count = 0.</li><li>Loop over just the values: for g in grades.values():</li><li>if g == 'A': count = count + 1.</li><li>After the loop: print(\"A grades: \" + str(count)).</li></ol><p><strong>Answer:</strong> A grades: 2</p></details><details><summary>Worked problem: Build and update a stock dictionary</summary><p>Start with stock = {}. Add 'pen' with 10 and 'ink' with 4, sell 3 pens, remove 'ink' entirely, then print stock.</p><ol><li>stock['pen'] = 10 and stock['ink'] = 4 (new keys are created).</li><li>stock['pen'] = stock['pen'] - 3 (existing key is overwritten with 7).</li><li>del stock['ink'].</li><li>print(stock).</li></ol><p><strong>Answer:</strong> {'pen': 7}</p></details><div class=\"def\"><b>Book vs lecture — Dictionary order.</b> Book: Says pairs come back in no particular order and shows printed dictionaries and loops scrambled. Lecture: L#21's Colab output keeps pairs in the order they were added (e.g. x_position and y_position appear after color and points), and the hub's L#21 notes and trap say the textbook statement is out of date. L#22 adds that a set has no fixed order. <b>The lecture wins: for 'what does this print' questions assume insertion order (Python 3.7+). Use sorted() when alphabetical order is needed, and expect a set's order to vary.</b></div><div class=\"def\"><b>Book vs lecture — What keys() returns.</b> Book: Says keys() returns a list of all the keys. Lecture: L#22 says the same (keys() returns a list of the keys); the hub's L#22 note adds that today's Python shows dict_keys([...]). <b>Book and lecture agree, so in a theory answer 'a list of the keys' matches the lecturer. In code output it is a dict_keys view (verified on Python 3): it loops, sorts and answers in like a list but can't be indexed.</b></div><div class=\"def\"><b>Book vs lecture — Upgrading part of the fleet.</b> Book: Makes 30 green aliens, then one loop over aliens[0:3] with if green → yellow and elif yellow → red, so each run moves an alien one step. Lecture: L#23 makes 15 green then 15 yellow aliens and uses two separate loops on different slices: aliens[0:3] green → yellow and aliens[15:18] yellow → red (result: 3 yellow, 12 green, 3 red, 12 yellow). <b>Both are correct Python; practise the lecture's version for the quiz. Know the difference: the book's elif moves an alien one step per run, while the lecture's two loops change different aliens.</b></div><div class=\"def\"><b>Book vs lecture — KeyError.</b> Book: This edition's chapter never shows reading a missing key. Lecture: L#23 shows users['location'] raising KeyError, because location is only a key of the inner dictionaries. <b>No conflict; the lecture adds it. Reading a missing key raises KeyError; assigning to one creates it.</b></div>"
     }
    ]
+  },
+  {
+   "id": "loops",
+   "title": "User input &amp; while loops",
+   "tag": "Lectures 25–26",
+   "lede": "Programs that listen to the user and loops that run until a condition fails. Part 1 covers input(), int(), % and the while loop; part 2 adds flags, break, continue, infinite loops, and while loops that move list items and fill dictionaries.",
+   "topics": [
+    {
+     "t": "How input() works",
+     "src": "L#25",
+     "h": "\n<p style=\"font-size:14.5px\">A new chapter, <strong>User Input and while Loops</strong>, in three parts: how <code>input()</code> works, introducing <code>while</code> loops, and while loops with lists and dictionaries (L#26). Most programs solve a user's problem, so they need information from the user first: to say whether someone can vote, the program has to know their age.</p>\n<h4>input(): pause, prompt, wait, store</h4>\n<p style=\"font-size:14.5px\"><code>input()</code> <b>pauses</b> the program, shows a message, and <b>waits</b> for the user to type something and press Enter. Whatever was typed is returned, so you store it in a variable. The one argument it takes is the <b>prompt</b>, the string shown to the user. In Colab the cell keeps running, with an empty box for the answer, until you press Enter.</p>\n<pre>message = input(\"Tell me something, and I will repeat it back to you: \")\nprint(message)\n<span class=\"c\"># run (the user types Hi Foundations of Computing):</span>\n<span class=\"o\">Tell me something, and I will repeat it back to you: Hi Foundations of Computing</span>\n<span class=\"o\">Hi Foundations of Computing</span></pre>\n<h4>Writing clear prompts</h4>\n<p style=\"font-size:14.5px\">Every prompt should tell the user exactly what to enter, so there is no doubt about what is being asked. A short prompt can go straight into the brackets; a longer one can be built in a variable and passed in by name:</p>\n<pre>prompt = \"If you tell us who you are, we can personalize the messages you see.\"\nprompt += \"\\nWhat is your first name? \"\n\nname = input(prompt)\nprint(\"\\nHello, \" + name + \"!\")\n<span class=\"c\"># run (the user types Tom):</span>\n<span class=\"o\">If you tell us who you are, we can personalize the messages you see.</span>\n<span class=\"o\">What is your first name? Tom</span>\n<span class=\"o\"></span>\n<span class=\"o\">Hello, Tom!</span></pre>\n<ul>\n<li><code>prompt += \"…\"</code> means <code>prompt = prompt + \"…\"</code>: the second string is joined on to the end of the first. With <code>\\n</code> at its start, it shows on a new line.</li>\n<li>Here the <b>name of the variable</b> goes into <code>input()</code>, not the text itself. Both ways work.</li>\n<li>Ending the prompt with a space keeps the user's answer from touching the question.</li>\n</ul>\n<h4>input() always gives you a string</h4>\n<p style=\"font-size:14.5px\">Python treats everything the user types as text, digits included. In Colab, typing the variable's name on its own line shows <code>'45'</code> with quotes: the quotes mark a string. Comparing that string with a number fails:</p>\n<pre>age = input(\"How old are you? \")\nprint(age &gt;= 18)\n<span class=\"c\"># run (the user types 45):</span>\n<span class=\"o\">How old are you? 45</span>\n<span class=\"c\"># error:</span>\n<span class=\"o\">TypeError: '&gt;=' not supported between instances of 'str' and 'int'</span></pre>\n<p style=\"font-size:14.5px\"><code>&gt;=</code> can't compare a string with an integer. The fix is <code>int()</code>, which turns a string of digits into an integer:</p>\n<pre>age = input(\"How old are you? \")\nage = int(age)\nprint(age &gt;= 18)\n<span class=\"c\"># run (the user types 45):</span>\n<span class=\"o\">How old are you? 45</span>\n<span class=\"o\">True</span></pre>\n<p style=\"font-size:14.5px\">Type 16 instead and it prints <code>False</code>. The ride example uses the converted number in an if-else:</p>\n<pre>height = input(\"How tall are you, in inches? \")\nheight = int(height)\n\nif height &gt;= 36:\n    print(\"\\nYou're tall enough to ride!\")\nelse:\n    print(\"\\nYou'll be able to ride when you're a little older.\")\n<span class=\"c\"># run (the user types 35):</span>\n<span class=\"o\">How tall are you, in inches? 35</span>\n<span class=\"o\"></span>\n<span class=\"o\">You'll be able to ride when you're a little older.</span></pre>\n<div class=\"def\"><b>Rule:</b> before any calculation or comparison with what the user typed, convert it with <b>int()</b>. A common one-line form is <code>age = int(input(\"How old are you? \"))</code>.</div>\n<h4>When int() can't convert: ValueError</h4>\n<p style=\"font-size:14.5px\"><code>int()</code> only accepts a whole number. Typing a decimal stops the program:</p>\n<pre>number = input(\"Enter a number: \")\nnumber = int(number)\n<span class=\"c\"># run (the user types 23.67):</span>\n<span class=\"o\">Enter a number: 23.67</span>\n<span class=\"c\"># error:</span>\n<span class=\"o\">ValueError: invalid literal for int() with base 10: '23.67'</span></pre>\n<p style=\"font-size:14.5px\">\"Base 10\" just means ordinary decimal digits. He said handling bad input like this comes in a later session.</p>\n<h4>The modulo operator %</h4>\n<p style=\"font-size:14.5px\"><code>%</code> divides one number by another and returns the <b>remainder</b>; <code>/</code> returns the quotient.</p>\n<pre>print(4 % 3)\nprint(4 / 3)\nprint(8 % 2)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">1</span>\n<span class=\"o\">1.3333333333333333</span>\n<span class=\"o\">0</span></pre>\n<p style=\"font-size:14.5px\">A remainder of 0 means the first number divides exactly. He linked this to the odd-or-even program from the algorithms lectures:</p>\n<pre>number = input(\"Enter a number, and I'll tell you if it's even or odd: \")\nnumber = int(number)\n\nif number % 2 == 0:\n    print(\"\\nThe number \" + str(number) + \" is even.\")\nelse:\n    print(\"\\nThe number \" + str(number) + \" is odd.\")\n<span class=\"c\"># run (the user types 42):</span>\n<span class=\"o\">Enter a number, and I'll tell you if it's even or odd: 42</span>\n<span class=\"o\"></span>\n<span class=\"o\">The number 42 is even.</span></pre>\n<div class=\"card\"><b>Practice set from the lecture</b> (15 minutes). (1) <b>Rental car:</b> ask what kind of rental car the user wants and reply with a message such as \"Let me see if I can find you a Subaru.\" (2) <b>Restaurant seating:</b> ask how many people are in the dinner group; more than 8 must wait for a table, otherwise the table is ready. (3) <b>Multiples of ten:</b> ask for a number and report whether it is a multiple of 10.</div>\n<pre>party = int(input(\"How many people are in your dinner group? \"))\nif party &gt; 8:\n    print(\"You'll have to wait for a table.\")\nelse:\n    print(\"Your table is ready.\")\n<span class=\"c\"># run (the user types 8):</span>\n<span class=\"o\">How many people are in your dinner group? 8</span>\n<span class=\"o\">Your table is ready.</span></pre>\n<pre>number = int(input(\"Give me a number: \"))\nif number % 10 == 0:\n    print(str(number) + \" is a multiple of 10.\")\nelse:\n    print(str(number) + \" is not a multiple of 10.\")\n<span class=\"c\"># run (the user types 250):</span>\n<span class=\"o\">Give me a number: 250</span>\n<span class=\"o\">250 is a multiple of 10.</span></pre>\n<p style=\"font-size:14.5px\">Exactly 8 people get a table: the test is <code>&gt; 8</code>, not <code>&gt;= 8</code>.</p>\n<!--viz:foc-input-int-flow--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: the user types 45, input returns the string '45', int converts it to the number 45, and 45 &gt;= 18 is True. Skipping int gives a TypeError; typing 23.67 makes int raise a ValueError.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">From what the user types to a number you can use</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">user types <b style=\"font-family:var(--mono)\">45</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">input()</span> returns <b style=\"font-family:var(--mono)\">'45'</b> (a str)</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><span style=\"font-family:var(--mono)\">int('45')</span> → <b style=\"font-family:var(--mono)\">45</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">45 &gt;= 18</span> → True</div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">skip <span style=\"font-family:var(--mono)\">int()</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--bad);border-radius:4px;background:var(--bad-soft)\"><span style=\"font-family:var(--mono)\">'45' &gt;= 18</span> → TypeError</div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">user types <b style=\"font-family:var(--mono)\">23.67</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--bad);border-radius:4px;background:var(--bad-soft)\"><span style=\"font-family:var(--mono)\">int('23.67')</span> → ValueError</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">input() always hands back text; int() is the step that makes it a number, and it accepts whole numbers only.</figcaption></figure><!--/viz:foc-input-int-flow-->"
+    },
+    {
+     "t": "Introducing while loops",
+     "src": "L#25",
+     "h": "\n<p style=\"font-size:14.5px\">A <code>for</code> loop runs once for each item in a collection: the range or list fixes how many passes there will be. A <code>while</code> loop runs <b>as long as a condition stays True</b>, checking it before every pass. Both of these print 1 to 5:</p>\n<pre>for current_number in range(1, 6):\n    print(current_number)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">1</span>\n<span class=\"o\">2</span>\n<span class=\"o\">3</span>\n<span class=\"o\">4</span>\n<span class=\"o\">5</span></pre>\n<pre>current_number = 1\nwhile current_number &lt;= 5:\n    print(current_number)\n    current_number += 1\n<span class=\"c\"># prints:</span>\n<span class=\"o\">1</span>\n<span class=\"o\">2</span>\n<span class=\"o\">3</span>\n<span class=\"o\">4</span>\n<span class=\"o\">5</span></pre>\n<p style=\"font-size:14.5px\">He named the three parts the while version needs:</p>\n<ol>\n<li><b>Initialise</b> the variable before the loop: <code>current_number = 1</code>. The for version doesn't need this line, because range() supplies each value; delete it from the while version and the first check fails with a NameError.</li>\n<li>The <b>condition</b> after <code>while</code>: <code>current_number &lt;= 5</code>. The loop keeps going while it is True.</li>\n<li>The <b>update</b> inside the loop: <code>current_number += 1</code>, short for <code>current_number = current_number + 1</code>. Without it the condition never changes (an infinite loop, L#26).</li>\n</ol>\n<p style=\"font-size:14.5px\">The last check is the one that fails: after 5 is printed the variable becomes 6, <code>6 &lt;= 5</code> is False, and the loop ends. Afterwards <code>current_number</code> is 6, not 5.</p>\n<h4>Letting the user choose when to quit</h4>\n<p style=\"font-size:14.5px\">Put the program inside a while loop and keep going until the user types a <b>quit value</b>:</p>\n<pre>prompt = \"\\nTell me something, and I will repeat it back to you:\"\nprompt += \"\\nEnter 'quit' to end the program. \"\n\nmessage = \"\"\nwhile message != 'quit':\n    message = input(prompt)\n    print(message)\n<span class=\"c\"># run (the user types hi, then quit):</span>\n<span class=\"o\"></span>\n<span class=\"o\">Tell me something, and I will repeat it back to you:</span>\n<span class=\"o\">Enter 'quit' to end the program. hi</span>\n<span class=\"o\">hi</span>\n<span class=\"o\"></span>\n<span class=\"o\">Tell me something, and I will repeat it back to you:</span>\n<span class=\"o\">Enter 'quit' to end the program. quit</span>\n<span class=\"o\">quit</span></pre>\n<ul>\n<li><code>message = \"\"</code> gives the variable a starting value, an empty string, so the first check <code>\"\" != 'quit'</code> can run, and is True.</li>\n<li>When the user types <code>quit</code>, it is printed first; only then does the next check, <code>'quit' != 'quit'</code>, come out False and end the loop.</li>\n</ul>\n<p style=\"font-size:14.5px\">Printing the word <em>quit</em> as if it were a message is a small flaw. One if test fixes it:</p>\n<pre>prompt = \"\\nTell me something, and I will repeat it back to you:\"\nprompt += \"\\nEnter 'quit' to end the program. \"\n\nmessage = \"\"\nwhile message != 'quit':\n    message = input(prompt)\n\n    if message != 'quit':\n        print(message)\n<span class=\"c\"># run (the user types hi, then how, then quit):</span>\n<span class=\"o\"></span>\n<span class=\"o\">Tell me something, and I will repeat it back to you:</span>\n<span class=\"o\">Enter 'quit' to end the program. hi</span>\n<span class=\"o\">hi</span>\n<span class=\"o\"></span>\n<span class=\"o\">Tell me something, and I will repeat it back to you:</span>\n<span class=\"o\">Enter 'quit' to end the program. how</span>\n<span class=\"o\">how</span>\n<span class=\"o\"></span>\n<span class=\"o\">Tell me something, and I will repeat it back to you:</span>\n<span class=\"o\">Enter 'quit' to end the program. quit</span></pre>\n<p style=\"font-size:14.5px\">The comparison is case-sensitive: typing <code>Quit</code> doesn't end this loop. Next lecture: flags, <code>break</code>, <code>continue</code> and infinite loops.</p>\n<!--viz:foc-while-count-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace of a while loop counting from 1: the checks 1 to 5 are True and print the number, then the variable becomes 6, the check 6 &lt;= 5 is False and the loop ends.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The counting while loop, check by check</div><p style=\"margin:0 0 8px;font-family:var(--mono);font-size:13.5px\">current_number = 1 · while current_number &lt;= 5: print · += 1</p><div class=\"scroller\"><table><thead><tr><th>current_number</th><th>Check</th><th>Result</th><th>Printed</th><th>Update</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono)\">1 &lt;= 5</td><td style=\"background:var(--good-soft)\">True</td><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono)\">1 → 2</td></tr><tr><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono)\">2 &lt;= 5</td><td style=\"background:var(--good-soft)\">True</td><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono)\">2 → 3</td></tr><tr><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono)\">3 &lt;= 5</td><td style=\"background:var(--good-soft)\">True</td><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono)\">3 → 4</td></tr><tr><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono)\">4 &lt;= 5</td><td style=\"background:var(--good-soft)\">True</td><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono)\">4 → 5</td></tr><tr><td style=\"font-family:var(--mono)\">5</td><td style=\"font-family:var(--mono)\">5 &lt;= 5</td><td style=\"background:var(--good-soft)\">True</td><td style=\"font-family:var(--mono)\">5</td><td style=\"font-family:var(--mono)\">5 → 6</td></tr><tr><td style=\"font-family:var(--mono)\">6</td><td style=\"font-family:var(--mono)\">6 &lt;= 5</td><td style=\"background:var(--bad-soft)\">False</td><td style=\"color:var(--ink-3)\">nothing</td><td style=\"color:var(--ink-3)\">loop ends</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Six checks for five prints: the loop ends on the check that fails, leaving the variable at 6.</figcaption></figure><!--/viz:foc-while-count-trace-->"
+    },
+    {
+     "t": "Flags, break and continue",
+     "src": "L#26",
+     "h": "\n<p style=\"font-size:14.5px\">Part 2 finishes the chapter: three ways to control a while loop, how to avoid loops that never end, and while loops that change lists and fill dictionaries.</p>\n<h4>Using a flag</h4>\n<p style=\"font-size:14.5px\">In a game where you shoot alien ships, many different events can end the game: the player runs out of ships, time runs out, or every city they were defending is destroyed. Testing all of those in one <code>while</code> line gets messy. Instead, keep one variable that says whether the program is still active. A variable like this is a <b>flag</b>: it usually holds <code>True</code> or <code>False</code>, acts as a signal to the program, and any event that should stop the program sets it to <code>False</code>.</p>\n<pre>prompt = \"\\nTell me something, and I will repeat it back to you:\"\nprompt += \"\\nEnter 'quit' to end the program. \"\n\nactive = True\nwhile active:\n    message = input(prompt)\n\n    if message == 'quit':\n        active = False\n    else:\n        print(message)\n<span class=\"c\"># run (the user types hi, then quit):</span>\n<span class=\"o\"></span>\n<span class=\"o\">Tell me something, and I will repeat it back to you:</span>\n<span class=\"o\">Enter 'quit' to end the program. hi</span>\n<span class=\"o\">hi</span>\n<span class=\"o\"></span>\n<span class=\"o\">Tell me something, and I will repeat it back to you:</span>\n<span class=\"o\">Enter 'quit' to end the program. quit</span></pre>\n<ul>\n<li><code>while active:</code> reads as <code>while True:</code> for as long as the flag is True; the while line now checks only one thing.</li>\n<li>Setting <code>active = False</code> doesn't jump out at once: the rest of that pass finishes, and the loop ends at the next check.</li>\n<li>In a game, each losing event sets the same flag to False; then a game-over message can be shown and the player offered another round.</li>\n</ul>\n<h4>Using break to exit a loop</h4>\n<p style=\"font-size:14.5px\"><code>break</code> leaves the loop <b>immediately</b>, skipping whatever is left of the loop body and ignoring the loop's condition. A loop that starts <code>while True:</code> runs forever unless it reaches a break:</p>\n<pre>prompt = \"\\nPlease enter the name of a city you have visited:\"\nprompt += \"\\n(Enter 'quit' when you are finished.) \"\n\nwhile True:\n    city = input(prompt)\n\n    if city == 'quit':\n        break\n    else:\n        print(\"I'd love to go to \" + city.title() + \"!\")\n<span class=\"c\"># run (the user types tokyo, then paris, then quit):</span>\n<span class=\"o\"></span>\n<span class=\"o\">Please enter the name of a city you have visited:</span>\n<span class=\"o\">(Enter 'quit' when you are finished.) tokyo</span>\n<span class=\"o\">I'd love to go to Tokyo!</span>\n<span class=\"o\"></span>\n<span class=\"o\">Please enter the name of a city you have visited:</span>\n<span class=\"o\">(Enter 'quit' when you are finished.) paris</span>\n<span class=\"o\">I'd love to go to Paris!</span>\n<span class=\"o\"></span>\n<span class=\"o\">Please enter the name of a city you have visited:</span>\n<span class=\"o\">(Enter 'quit' when you are finished.) quit</span></pre>\n<p style=\"font-size:14.5px\">After the break, Python carries on with the first line after the loop. <b>break works in any Python loop</b>, including a <code>for</code> loop working through a list or dictionary:</p>\n<pre>for n in [3, 8, 5, 12, 7]:\n    if n &gt; 10:\n        break\n    print(n)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">3</span>\n<span class=\"o\">8</span>\n<span class=\"o\">5</span></pre>\n<h4>Using continue in a loop</h4>\n<p style=\"font-size:14.5px\"><code>continue</code> skips the rest of the current pass and goes straight back to the loop's condition. The loop itself carries on. Counting from 1 to 10 but printing only the odd numbers:</p>\n<pre>current_number = 0\nwhile current_number &lt; 10:\n    current_number += 1\n    if current_number % 2 == 0:\n        continue\n\n    print(current_number)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">1</span>\n<span class=\"o\">3</span>\n<span class=\"o\">5</span>\n<span class=\"o\">7</span>\n<span class=\"o\">9</span></pre>\n<p style=\"font-size:14.5px\">For an even number the remainder is 0, so <code>continue</code> sends Python back to the check before it reaches <code>print()</code>. The update <code>+= 1</code> comes <em>before</em> the continue, so the number still moves on.</p>\n<div class=\"card\"><b>Practice set from the lecture</b> (15 minutes). (1) <b>Pizza toppings:</b> a while loop asks for toppings until the user types a quit value, saying each one will be added. (2) <b>Movie tickets:</b> under 3 is free; 3 to 12 pays one price, over 12 a higher one; ask ages in a loop and report each ticket's cost. (3) Write versions of (1) or (2) that stop the loop in each of three ways: a conditional test in the while line, an <b>active</b> flag, and a <b>break</b> on the quit value. (4) Write a loop that never ends, run it, and stop it.</div>\n<!--viz:foc-while-controls-compare--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison of four loop controls: the while condition and a flag both let the current pass finish and end the loop at the next check; break skips the rest and ends the loop; continue skips the rest but the loop carries on.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Four ways to steer a while loop</div><div class=\"scroller\"><table><thead><tr><th>Tool</th><th>What it does</th><th>Rest of this pass?</th><th>Loop afterwards</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">while x &lt;= 5:</td><td>condition checked before every pass</td><td>runs</td><td>ends when the check is False</td></tr><tr><td style=\"font-family:var(--mono)\">active = False</td><td>a flag the while line tests</td><td>runs</td><td>ends at the next check</td></tr><tr><td style=\"font-family:var(--mono)\">break</td><td>jumps out at once</td><td style=\"background:var(--bad-soft)\">skipped</td><td>ended; next line after the loop</td></tr><tr><td style=\"font-family:var(--mono)\">continue</td><td>jumps back to the check</td><td style=\"background:var(--bad-soft)\">skipped</td><td style=\"background:var(--good-soft)\">carries on</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only continue keeps the loop going; break is the only one that stops it mid-pass.</figcaption></figure><!--/viz:foc-while-controls-compare-->"
+    },
+    {
+     "t": "Avoiding infinite loops",
+     "src": "L#26",
+     "h": "\n<p style=\"font-size:14.5px\">Every while loop needs a way to stop. A <code>while True:</code> loop with no break, and no flag that can turn it False, never ends; nor does a counting loop whose update line is missing:</p>\n<pre>x = 1\nwhile x &lt;= 5:\n    print(x)\n<span class=\"c\"># x += 1 is missing, so x stays 1:</span>\n<span class=\"o\">1</span>\n<span class=\"o\">1</span>\n<span class=\"o\">1</span>\n<span class=\"o\">… (forever)</span></pre>\n<p style=\"font-size:14.5px\">An indentation slip does the same thing: if <code>x += 1</code> is written at the left margin, it sits <em>after</em> the loop and is never reached. Every programmer writes an infinite loop now and then, especially when the exit condition is subtle. In Colab, stop it with the stop button on the running cell (he called it the pause button); in a terminal, close the window. Then check the condition and the update line.</p>\n"
+    },
+    {
+     "t": "while loops with lists and dictionaries",
+     "src": "L#26",
+     "h": "\n<p style=\"font-size:14.5px\">A for loop is good for walking through a list, but you shouldn't change a list inside a for loop over it: Python loses track of the items. To change a list while working through it, use a while loop. Lists and dictionaries then let you collect and organise large amounts of input.</p>\n<h4>Moving items from one list to another</h4>\n<p style=\"font-size:14.5px\">A website has newly registered users who still need checking. Verify each one and move them to a list of confirmed users:</p>\n<pre># Start with users who need to be verified,\n# and an empty list to hold confirmed users.\nunconfirmed_users = ['alice', 'brian', 'candace']\nconfirmed_users = []\n\n# Verify each user until there are no more unconfirmed users.\nwhile unconfirmed_users:\n    current_user = unconfirmed_users.pop()\n\n    print(\"Verifying user: \" + current_user.title())\n    confirmed_users.append(current_user)\n\n# Display all confirmed users.\nprint(\"\\nThe following users have been confirmed:\")\nfor confirmed_user in confirmed_users:\n    print(confirmed_user.title())\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Verifying user: Candace</span>\n<span class=\"o\">Verifying user: Brian</span>\n<span class=\"o\">Verifying user: Alice</span>\n<span class=\"o\"></span>\n<span class=\"o\">The following users have been confirmed:</span>\n<span class=\"o\">Candace</span>\n<span class=\"o\">Brian</span>\n<span class=\"o\">Alice</span></pre>\n<ul>\n<li><code>while unconfirmed_users:</code> is True while the list has anything in it and False once it is <b>empty</b>, so the loop stops by itself after the last user.</li>\n<li><code>pop()</code> with no index takes the <b>last</b> item (he called it the top of the stack), so Candace is verified first and the confirmed list ends up in reverse order.</li>\n<li>Once the while loop is done, an ordinary for loop prints the result.</li>\n</ul>\n<h4>Removing all instances of a value</h4>\n<p style=\"font-size:14.5px\"><code>remove()</code> deletes only the first match. To delete a value that appears many times, perhaps in a list of 1,000 or 2,000 items, repeat it for as long as the value is still there:</p>\n<pre>pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']\nprint(pets)\n\nwhile 'cat' in pets:\n    pets.remove('cat')\n\nprint(pets)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']</span>\n<span class=\"o\">['dog', 'dog', 'goldfish', 'rabbit']</span></pre>\n<div class=\"def\">How many passes? In the lecture he said the loop runs seven times, once per item. It actually runs <b>three times, once per 'cat'</b>: each pass checks <code>'cat' in pets</code> and removes one cat, and after the third removal the check is False. The result is the same, <code>['dog', 'dog', 'goldfish', 'rabbit']</code>.</div>\n<h4>Filling a dictionary with user input</h4>\n<p style=\"font-size:14.5px\">A poll: each pass asks for a name and an answer, and the dictionary links each answer to the person who gave it. A flag decides whether another person gets a turn:</p>\n<pre>responses = {}\n\n# Set a flag to indicate that polling is active.\npolling_active = True\n\nwhile polling_active:\n    # Prompt for the person's name and response.\n    name = input(\"\\nWhat is your name? \")\n    response = input(\"Which mountain would you like to climb someday? \")\n\n    # Store the response in the dictionary.\n    responses[name] = response\n\n    # Find out if anyone else is going to take the poll.\n    repeat = input(\"Would you like to let another person respond? (yes/ no) \")\n    if repeat == 'no':\n        polling_active = False\n\n# Polling is complete. Show the results.\nprint(\"\\n--- Poll Results ---\")\nfor name, response in responses.items():\n    print(name + \" would like to climb \" + response + \".\")\n<span class=\"c\"># run (the user types Tom, then Everest, then yes, then Alice, then Fuji, then no):</span>\n<span class=\"o\"></span>\n<span class=\"o\">What is your name? Tom</span>\n<span class=\"o\">Which mountain would you like to climb someday? Everest</span>\n<span class=\"o\">Would you like to let another person respond? (yes/ no) yes</span>\n<span class=\"o\"></span>\n<span class=\"o\">What is your name? Alice</span>\n<span class=\"o\">Which mountain would you like to climb someday? Fuji</span>\n<span class=\"o\">Would you like to let another person respond? (yes/ no) no</span>\n<span class=\"o\"></span>\n<span class=\"o\">--- Poll Results ---</span>\n<span class=\"o\">Tom would like to climb Everest.</span>\n<span class=\"o\">Alice would like to climb Fuji.</span></pre>\n<ul>\n<li><code>responses[name] = response</code> is the add-a-pair line from L#21: the name is the key, the mountain is the value. If he didn't follow it, he said, revise the dictionaries lectures.</li>\n<li>If the same name answers twice, the second answer replaces the first, because keys are unique.</li>\n<li>Typing anything other than <code>no</code>, even <code>No</code>, keeps the poll going.</li>\n</ul>\n<div class=\"card\"><b>Practice set from the lecture</b> (15 minutes). (1) <b>Deli:</b> a list <code>sandwich_orders</code> and an empty <code>finished_sandwiches</code>; loop through the orders, print a message such as \"I made your tuna sandwich\" for each, move it to the finished list, then list everything that was made. (2) <b>No pastrami:</b> make sure 'pastrami' is in the orders at least three times, announce that the deli has run out, and use a while loop to remove every pastrami before making the rest. (3) <b>Dream vacation:</b> poll users with a prompt such as \"If you could visit one place in the world, where would you go?\" and print the results.</div>\n<pre>sandwich_orders = ['tuna', 'pastrami', 'veg', 'pastrami', 'club', 'pastrami']\nfinished_sandwiches = []\n\nprint(\"The deli has run out of pastrami.\")\nwhile 'pastrami' in sandwich_orders:\n    sandwich_orders.remove('pastrami')\n\nwhile sandwich_orders:\n    sandwich = sandwich_orders.pop()\n    print(\"I made your \" + sandwich + \" sandwich.\")\n    finished_sandwiches.append(sandwich)\n\nprint(finished_sandwiches)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">The deli has run out of pastrami.</span>\n<span class=\"o\">I made your club sandwich.</span>\n<span class=\"o\">I made your veg sandwich.</span>\n<span class=\"o\">I made your tuna sandwich.</span>\n<span class=\"o\">['club', 'veg', 'tuna']</span></pre>\n<h4>The chapter in one list</h4>\n<ul>\n<li>Take text and numbers from the user with <code>input()</code> and <code>int()</code> (L#25).</li>\n<li>Run a program for as long as the user wants with a while loop and a quit value (L#25).</li>\n<li>Control the loop with a flag, <code>break</code> and <code>continue</code>, and avoid infinite loops (L#26).</li>\n<li>Move items between lists, remove every copy of a value, and fill a dictionary from input (L#26).</li>\n</ul>\n<p style=\"font-size:14.5px\">Next chapter: <b>functions</b>, which split a program into small parts with one job each, can be called as often as needed, and can be stored in separate files.</p>\n<!--viz:foc-move-users-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace of the user-verification loop: pass 1 pops candace, pass 2 brian, pass 3 alice; then the unconfirmed list is empty, the check is False and the loop ends with confirmed holding candace, brian, alice.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Moving users with while and pop()</div><p style=\"margin:0 0 8px;font-family:var(--mono);font-size:13.5px\">while unconfirmed_users: current_user = unconfirmed_users.pop()</p><div class=\"scroller\"><table><thead><tr><th>Pass</th><th>List non-empty?</th><th>pop()</th><th>unconfirmed</th><th>confirmed</th></tr></thead><tbody><tr><td>1</td><td style=\"font-family:var(--mono)\">True</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">'candace'</td><td style=\"font-family:var(--mono)\">['alice', 'brian']</td><td style=\"font-family:var(--mono)\">['candace']</td></tr><tr><td>2</td><td style=\"font-family:var(--mono)\">True</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">'brian'</td><td style=\"font-family:var(--mono)\">['alice']</td><td style=\"font-family:var(--mono)\">['candace', 'brian']</td></tr><tr><td>3</td><td style=\"font-family:var(--mono)\">True</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">'alice'</td><td style=\"font-family:var(--mono)\">[]</td><td style=\"font-family:var(--mono)\">['candace', 'brian', 'alice']</td></tr><tr><td>4</td><td style=\"font-family:var(--mono);background:var(--bad-soft)\">False</td><td style=\"color:var(--ink-3)\">loop ends</td><td style=\"font-family:var(--mono)\">[]</td><td style=\"font-family:var(--mono)\">['candace', 'brian', 'alice']</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">pop() takes from the end, so the confirmed list comes out reversed; the empty list ends the loop.</figcaption></figure><!--/viz:foc-move-users-trace-->"
+    },
+    {
+     "t": "Textbook: User Input and while Loops",
+     "src": "Python Crash Course ch7",
+     "h": "<p>input() pauses the program, shows a prompt and returns whatever the user types, always as a string. Numbers therefore have to be converted with int() before any arithmetic or comparison. The modulo operator % gives a remainder, which is the standard even/odd and divisibility test. A while loop repeats as long as its condition stays True. The chapter shows four ways to stop one: a condition such as message != 'quit', a True/False flag that any part of the loop can switch off, break to leave immediately, and continue to skip to the next pass. Every while loop needs something that eventually makes it stop. Finally, while loops are the safe way to change a list as you work through it: moving items from one list to another with pop(), removing every copy of a value with remove() in a loop, and filling a dictionary from repeated user input.</p><!--viz:foc-pcc1-modulo-cycle--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A table for n from 12 to 17. Each is written as 4 times a whole number plus a remainder: 12 is 4 × 3 + 0, 13 is 4 × 3 + 1, up to 17 as 4 × 4 + 1. The n % 4 column reads 0, 1, 2, 3, 0, 1, with the zeros at 12 and 16 highlighted; the n % 2 column alternates 0 (even) and 1 (odd).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">What % keeps: the remainder, in a repeating cycle</div><p style=\"font-size:13.5px;margin:0 0 6px\">Split each number into whole fours plus what is left over. <span style=\"font-family:var(--mono)\">n % 4</span> is the left-over part.</p><div class=\"scroller\"><table><thead><tr><th>n</th><th>Written as</th><th style=\"white-space:nowrap\">n % 4</th><th style=\"white-space:nowrap\">n % 2</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">12</td><td style=\"font-family:var(--mono);white-space:nowrap\">4×3 + 0</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">0</td><td style=\"font-family:var(--mono);white-space:nowrap\">0 even</td></tr><tr><td style=\"font-family:var(--mono)\">13</td><td style=\"font-family:var(--mono);white-space:nowrap\">4×3 + 1</td><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono);white-space:nowrap\">1 odd</td></tr><tr><td style=\"font-family:var(--mono)\">14</td><td style=\"font-family:var(--mono);white-space:nowrap\">4×3 + 2</td><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono);white-space:nowrap\">0 even</td></tr><tr><td style=\"font-family:var(--mono)\">15</td><td style=\"font-family:var(--mono);white-space:nowrap\">4×3 + 3</td><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono);white-space:nowrap\">1 odd</td></tr><tr><td style=\"font-family:var(--mono)\">16</td><td style=\"font-family:var(--mono);white-space:nowrap\">4×4 + 0</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">0</td><td style=\"font-family:var(--mono);white-space:nowrap\">0 even</td></tr><tr><td style=\"font-family:var(--mono)\">17</td><td style=\"font-family:var(--mono);white-space:nowrap\">4×4 + 1</td><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono);white-space:nowrap\">1 odd</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The remainder runs 0, 1, 2, 3 and starts again; a 0 means the number divides exactly, which is all that n % 2 == 0 (even) tests.</figcaption></figure><!--/viz:foc-pcc1-modulo-cycle--><!--viz:foc-pcc1-remove-all-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A trace of while 'cat' in pets: pets.remove('cat') on a five-item list holding three cats. Checks 1 to 3 are True and each removes the first cat still in the list (at index 0, then 1, then 2), leaving ['dog', 'cat', 'rat', 'cat'], then ['dog', 'rat', 'cat'], then ['dog', 'rat']. Check 4 is False and the loop ends.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Removing every copy: one pass per cat</div><pre style=\"margin:0 0 8px;font-size:13px\">pets = ['cat', 'dog', 'cat', 'rat', 'cat']\nwhile 'cat' in pets:\n    pets.remove('cat')</pre><div class=\"scroller\"><table><thead><tr><th>Check: 'cat' in pets?</th><th>Removes the cat at</th><th>pets afterwards</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono);white-space:nowrap\">1: True</td><td style=\"font-family:var(--mono);background:var(--blue-soft);white-space:nowrap\">index 0</td><td style=\"font-family:var(--mono)\">['dog', 'cat', 'rat', 'cat']</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">2: True</td><td style=\"font-family:var(--mono);background:var(--blue-soft);white-space:nowrap\">index 1</td><td style=\"font-family:var(--mono)\">['dog', 'rat', 'cat']</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">3: True</td><td style=\"font-family:var(--mono);background:var(--blue-soft);white-space:nowrap\">index 2</td><td style=\"font-family:var(--mono)\">['dog', 'rat']</td></tr><tr><td style=\"font-family:var(--mono);background:var(--bad-soft);white-space:nowrap\">4: False</td><td style=\"color:var(--ink-3)\">loop ends</td><td style=\"font-family:var(--mono)\">['dog', 'rat']</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The body runs once per copy removed (three times), not once per item (five); remove() always takes the first match, so the list shrinks from the front.</figcaption></figure><!--/viz:foc-pcc1-remove-all-trace--><!--viz:foc-pcc1-continue-placement--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two versions of the same loop side by side. In the first, c += 1 comes before the if c == 3: continue test, so the loop prints 1, 2, 4, 5 and ends. In the second, c += 1 comes after the continue, so once c is 3 the continue repeats without ever changing c: it prints 1, 2, 3 and then runs forever without printing.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Where the update goes when a loop uses continue</div><div style=\"display:flex;flex-wrap:wrap;gap:8px;font-size:14px\"><div style=\"flex:1 1 220px;min-width:0;padding:10px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\"><b>Update first (the book's way)</b><pre style=\"margin:6px 0;font-size:13px\">c = 0\nwhile c &lt; 5:\n    c += 1\n    if c == 3:\n        continue\n    print(c)</pre><div style=\"font-size:13.5px\"><span style=\"color:var(--ink-3)\">prints</span> <span style=\"font-family:var(--mono)\">1 2 4 5</span></div><div style=\"font-size:13px;color:var(--ink-2);margin-top:4px\">c moves on before the skip, so the loop still reaches 5 and ends.</div></div><div style=\"flex:1 1 220px;min-width:0;padding:10px;border:1px solid var(--bad);border-radius:4px;background:var(--bad-soft)\"><b>Update after continue</b><pre style=\"margin:6px 0;font-size:13px\">c = 0\nwhile c &lt; 5:\n    if c == 3:\n        continue\n    c += 1\n    print(c)</pre><div style=\"font-size:13.5px\"><span style=\"color:var(--ink-3)\">prints</span> <span style=\"font-family:var(--mono)\">1 2 3 … then nothing, for ever</span></div><div style=\"font-size:13px;color:var(--ink-2);margin-top:4px\">at c = 3, continue jumps back before c += 1, so c stays 3 and the check never fails.</div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">continue skips everything below it, including an update; put the line that moves the loop on above any continue.</figcaption></figure><!--/viz:foc-pcc1-continue-placement--><p><strong>input() and prompts</strong> — input(prompt) shows the prompt, waits for the user to press Enter and returns the text they typed. End the prompt with a space so the answer doesn't run into it. A long prompt can be built in a variable with +=.<br><em>e.g.</em> name = input(\"Your name: \")</p><p><strong>input() always returns a string</strong> — Even if the user types 21, the value is the string '21'. Comparing it with a number (age &gt;= 18) raises TypeError, and + joins it as text instead of adding. Convert first: age = int(age).</p><p><strong>+= shorthand</strong> — x += 1 means x = x + 1. For strings it appends: prompt += \"more text\" adds to the end of the existing string.</p><p><strong>Modulo %</strong> — a % b gives the remainder after dividing a by b, not how many times b fits. A remainder of 0 means a is divisible by b, so n % 2 == 0 tests for an even number.<br><em>e.g.</em> 17 % 5 → 2; 20 % 4 → 0</p><p><strong>while loop</strong> — while condition: repeats its indented block as long as the condition is True, checking it before every pass. Use it when you don't know in advance how many passes you need. A for loop, by contrast, runs once per item of a collection.</p><p><strong>Quit value with an initial value</strong> — while message != 'quit': lets the user decide when to stop. message must be given a starting value (e.g. \"\") before the loop, or the first check fails. Add an if inside so the quit word isn't processed like real input.</p><p><strong>Flag</strong> — A flag is a True/False variable (active = True) that the while line checks. Any number of events inside the loop can set it to False, so the while condition stays simple even when there are many ways to finish.</p><p><strong>break</strong> — break leaves the loop immediately, skipping the rest of the block. It is typically paired with while True:, which would otherwise never end. break works in for loops too.</p><p><strong>continue</strong> — continue skips the rest of the current pass and goes back to the loop's condition check. Anything that must happen every pass, such as incrementing a counter, has to come before the continue.</p><p><strong>Infinite loops</strong> — If nothing inside the loop can make the condition False or reach a break, it runs forever, e.g. forgetting x += 1. The book stops it with Ctrl-C or by closing the terminal; in Colab, press the stop button on the running cell (L#26). Test every loop with the value that should end it.</p><p><strong>Don't modify a list inside a for loop</strong> — The book warns that changing a list while a for loop is walking through it confuses Python's tracking of the items. Use a while loop instead when items are being removed or moved.</p><p><strong>Moving items between lists</strong> — while source: keeps going until the list is empty. Each pass, pop() takes an item from the end and append() adds it to the target, so the target list ends up in reverse order of the source.</p><p><strong>Removing all copies of a value</strong> — remove() deletes only the first match, so while 'cat' in pets: pets.remove('cat') repeats until none are left.</p><p><strong>Filling a dictionary from input</strong> — Each pass asks for a name and a response, stores responses[name] = response, then asks whether to continue. Answering 'no' turns the flag off, and a final loop over items() prints the results.</p><div class=\"card\"><strong>Case: Verifying new users</strong> <em>(confirmed_users.py, section 'Moving Items from One List to Another')</em><p>A website holds unconfirmed sign-ups in one list. A while loop runs until that list is empty, popping each user, printing a verification message and appending them to a confirmed list, which is then printed. Because pop() takes from the end, the last sign-up is verified first.</p><p><em>Lesson:</em> Use a while loop (not a for loop) when a list shrinks as you process it.</p><p><em>Think:</em> How would you change the code so users are verified in sign-up order?</p></div><div class=\"card\"><strong>Case: The mountain poll</strong> <em>(mountain_poll.py, section 'Filling a Dictionary with User Input')</em><p>A polling program loops while a flag is on, asking each participant for their name and a mountain they'd like to climb and storing them as a key-value pair. After each response it asks whether someone else wants to answer; 'no' switches the flag off and the results are printed from the dictionary.</p><p><em>Lesson:</em> Flags plus dictionaries let a loop collect an open-ended amount of structured input.</p><p><em>Think:</em> In what order does Python 3.7 or later print the poll results, and why does the book's sample run show them differently?</p></div><details><summary>Worked problem: Rest day every seventh day</summary><p>A training plan makes every seventh day a rest day. Ask for a day number and print whether it is a rest day or a training day. Trace it for inputs of 28 and 30.</p><ol><li>day = int(input(\"Day number: \")) turns the typed '28' into the integer 28.</li><li>if day % 7 == 0: print(\"Day \" + str(day) + \": rest\")</li><li>else: print(\"Day \" + str(day) + \": train\")</li><li>28 % 7 is 0 (28 = 7 × 4), so the if branch runs. 30 % 7 is 2 (30 = 7 × 4 + 2), so the else branch runs.</li></ol><p><strong>Answer:</strong> Day 28: rest · Day 30: train</p></details><details><summary>Worked problem: Running total until a limit</summary><p>Add 1, 2, 3, … until the total first exceeds 10, using while True and break. What are the last number added and the total?</p><ol><li>total = 0, i = 1.</li><li>while True: total += i; if total &gt; 10: break; i += 1.</li><li>Totals after each pass: 1, 3, 6, 10, 15.</li><li>15 &gt; 10 when i = 5, so break runs before i is increased again.</li></ol><p><strong>Answer:</strong> i = 5, total = 15</p></details><div class=\"def\"><b>Book vs lecture — Running input() programs.</b> Book: Warns that Sublime Text can't run programs that use input(), so they must be run from a terminal. Lecture: L#25 runs everything in Google Colab: the cell keeps running and shows a box for the answer until Enter is pressed. <b>No conflict for the quiz; the book's Sublime workaround doesn't apply in Colab.</b></div><div class=\"def\"><b>Book vs lecture — Stopping an infinite loop.</b> Book: Press Ctrl-C or close the terminal window (or the editor, in Sublime Text). Lecture: L#26: press the stop button on the running cell in Colab (he called it the pause button); in a terminal, close the window. <b>Both are right for their tool. Use the lecture's Colab stop button in class, and know that Ctrl-C does the same job in a terminal.</b></div><div class=\"def\"><b>Book vs lecture — The TypeError message.</b> Book: Shows age &gt;= 18 failing with TypeError: unorderable types: str() &gt;= int(), from an older Python 3. Lecture: L#25 shows TypeError: '&gt;=' not supported between instances of 'str' and 'int', which is what Python 3 prints today. <b>Same error type and the same cause. Expect the lecture's wording in any 'what happens' question.</b></div><div class=\"def\"><b>Book vs lecture — int() with a decimal.</b> Book: Only converts whole numbers such as '21' and never shows a failed conversion. Lecture: L#25 shows int('23.67') raising ValueError: invalid literal for int() with base 10, and says handling bad input comes later. <b>No conflict; the lecture adds it. int() won't take a decimal string, so the answer is ValueError, not 23 or 24.</b></div><div class=\"def\"><b>Book vs lecture — Poll results order.</b> Book: The sample run of the mountain poll prints the second participant before the first. Lecture: L#26's run prints Tom, then Alice, in the order they answered (verified on Python 3: dictionaries keep insertion order). <b>The lecture wins: from Python 3.7, results print in the order they were entered. The book's output comes from an older Python.</b></div><div class=\"def\"><b>Book vs lecture — Passes of the remove-all loop.</b> Book: while 'cat' in pets: removes one 'cat' per pass until none is left. Lecture: L#26 said the loop runs seven times, once per item; the lec-26 notes and trap correct this to three, once per 'cat'. <b>Here the book is right: count one pass per copy removed. The final list, ['dog', 'dog', 'goldfish', 'rabbit'], is the same either way.</b></div><div class=\"def\"><b>Book vs lecture — Setting a flag to False.</b> Book: Says that once active is set to False, the while loop stops. Lecture: L#26's notes add that the rest of the current pass still runs; the loop ends at the next check of while active. <b>Use the lecture's precise version. It only matters when lines come after the flag change in the same pass, and then they do run.</b></div><div class=\"def\"><b>Book vs lecture — Python's loop statements.</b> Book: Introduces while as the loop to use when the number of passes isn't known; for and while are the only loops it shows. Lecture: L#24 mentioned a do-while loop; the lec-24 trap corrects it, since Python has only for and while. <b>Python has no do-while. The book's while True: with a break inside does the same job.</b></div>"
+    }
+   ]
   }
  ],
  "topics": [
@@ -543,6 +609,10 @@ HUB.addCourse({
   {
    "name": "Dictionaries",
    "unit": "dicts"
+  },
+  {
+   "name": "Input & while loops",
+   "unit": "loops"
   }
  ],
  "traps": [
@@ -1164,6 +1234,146 @@ HUB.addCourse({
    "p": "If new_alien = {...} sits before the loop, append() stores the same dictionary three times, so changing aliens[0] changes them all. Build the dictionary inside the loop, as the book and L#23 do.",
    "f": "build it inside the loop",
    "bk": "Python Crash Course ch6"
+  },
+  {
+   "id": "foc-t0092",
+   "h": "Steps run in order: Zara joins after the distinction step, so she gets none",
+   "p": "The distinction loop ran in step 2, before Zara was inserted in step 3, so her 92 was never checked. Ask what the list looks like at the moment each step runs.",
+   "f": "order of steps matters",
+   "lec": 24
+  },
+  {
+   "id": "foc-t0093",
+   "h": "key=lambda x: x[0] sorts by the whole name, not just its first letter",
+   "p": "x[0] is the record's first item, the name, and names are compared letter by letter like any strings: Aaron sorts before Ava. The lecture described it as checking the first letter.",
+   "f": "x[0] = the name",
+   "lec": 24
+  },
+  {
+   "id": "foc-t0094",
+   "h": "In name, scores = record, scores is a list, not a number",
+   "p": "record is ['Alice', [75, 88, 92]], so scores receives the whole inner list. That's why sum(scores), len(scores) and max(scores) work on it.",
+   "f": "second item → scores",
+   "lec": 24
+  },
+  {
+   "id": "foc-t0095",
+   "h": "Python has no do-while loop",
+   "p": "Python's loop statements are for and while. do-while belongs to languages such as C and Java; in Python, while True with a break inside does the same job.",
+   "f": "Python: for + while",
+   "lec": 24
+  },
+  {
+   "id": "foc-t0096",
+   "h": "'45' >= 18 is a TypeError, not True",
+   "p": "input() returned the string '45', and >= can't compare a str with an int. Convert first: age = int(age).",
+   "f": "str vs int: convert first",
+   "lec": 25
+  },
+  {
+   "id": "foc-t0097",
+   "h": "int() won't take a decimal: int('23.67') is a ValueError",
+   "p": "int() converts only strings of whole-number digits. It doesn't round or cut off; it stops the program with a ValueError.",
+   "f": "int() = whole numbers only",
+   "lec": 25
+  },
+  {
+   "id": "foc-t0098",
+   "h": "A for loop over range() needs no starting line; a while loop does",
+   "p": "range() supplies each value to a for loop. A while loop checks its variable before the first pass, so without current_number = 1 it fails with a NameError.",
+   "f": "while: initialise first",
+   "lec": 25
+  },
+  {
+   "id": "foc-t0099",
+   "h": "A counting while loop leaves its variable one past the limit",
+   "p": "while n <= 5 stops only when n is 6, so after the loop n is 6, not 5. Six checks happen for five passes.",
+   "f": "ends on the failed check",
+   "lec": 25
+  },
+  {
+   "id": "foc-t0100",
+   "h": "while 'cat' in pets runs once per cat, not once per item",
+   "p": "Each pass removes one 'cat', and the loop stops when none is left: 3 passes for 3 cats in a 7-item list. The lecture said seven times; the result, ['dog', 'dog', 'goldfish', 'rabbit'], is the same either way.",
+   "f": "one pass per match",
+   "lec": 26
+  },
+  {
+   "id": "foc-t0101",
+   "h": "Setting the flag to False doesn't stop the loop mid-pass",
+   "p": "The rest of the current pass still runs, and the loop ends at the next check of while active. Only break leaves at once.",
+   "f": "flag: finish the pass",
+   "lec": 26
+  },
+  {
+   "id": "foc-t0102",
+   "h": "break isn't only for while True: it also ends a for loop",
+   "p": "break leaves any Python loop. In a for loop over a list, the items after the break are never reached.",
+   "f": "break: any loop",
+   "lec": 26
+  },
+  {
+   "id": "foc-t0103",
+   "h": "An empty list counts as False",
+   "p": "while unconfirmed_users: keeps going while the list has items and stops once it is empty, so no counter is needed.",
+   "f": "empty list = False",
+   "lec": 26
+  },
+  {
+   "id": "foc-t0104",
+   "h": "A repeated name overwrites the earlier answer in a poll",
+   "p": "responses[name] = response adds a pair, but if the name is already a key it replaces that key's value. Dictionary keys are unique.",
+   "f": "same key → replaced",
+   "lec": 26
+  },
+  {
+   "id": "foc-t0105",
+   "h": "% is the remainder, not the quotient",
+   "p": "17 % 5 is 2 (what is left over), not 3 (how many fives fit). 3 % 7 is 3, because 7 doesn't fit at all.",
+   "f": "% = leftover",
+   "bk": "Python Crash Course ch7"
+  },
+  {
+   "id": "foc-t0106",
+   "h": "break leaves the loop; continue only skips this pass",
+   "p": "After break, the loop is over. After continue, the loop checks its condition and carries on with the next pass.",
+   "f": "break exits, continue skips",
+   "bk": "Python Crash Course ch7"
+  },
+  {
+   "id": "foc-t0107",
+   "h": "Update the counter before continue",
+   "p": "If the increment comes after a continue, the skipped passes never increment and the loop can run forever. The book increments at the top of the loop for this reason.",
+   "f": "count first, then continue",
+   "bk": "Python Crash Course ch7"
+  },
+  {
+   "id": "foc-t0108",
+   "h": "The quit word gets echoed unless you test for it",
+   "p": "With while message != 'quit': message = input(); print(message), typing quit still prints quit before the loop ends, because the condition is only checked at the top of the next pass.",
+   "f": "check is at the top",
+   "bk": "Python Crash Course ch7"
+  },
+  {
+   "id": "foc-t0109",
+   "h": "pop()-and-append reverses the order",
+   "p": "Moving items with while src: dst.append(src.pop()) takes them from the end, so ['a', 'b', 'c'] arrives as ['c', 'b', 'a'].",
+   "f": "pop takes the last",
+   "bk": "Python Crash Course ch7"
+  },
+  {
+   "id": "foc-t0110",
+   "h": "remove() once ≠ remove all",
+   "p": "pets.remove('cat') deletes only the first 'cat'. To delete every copy: while 'cat' in pets: pets.remove('cat').",
+   "f": "while in → remove",
+   "bk": "Python Crash Course ch7"
+  },
+  {
+   "id": "foc-t0111",
+   "h": "% on a string from input() is not the remainder",
+   "p": "If number = input() and the user types 42, number % 2 raises TypeError: not all arguments converted during string formatting. On a string, % means text formatting, not division. Convert with int() first.",
+   "f": "str % → formatting",
+   "bk": "Python Crash Course ch7"
   }
  ],
  "defs": [
@@ -1918,6 +2128,150 @@ HUB.addCourse({
    "term": "Separate objects",
    "html": "Each time <b>{…}</b> runs, Python makes a <b>new dictionary</b>. Built inside a loop, the appended dictionaries are <b>separate objects</b> you can change one at a time.",
    "bk": "Python Crash Course ch6"
+  },
+  {
+   "id": "foc-d0097",
+   "unit": "lists",
+   "topic": "Live Lecture 5: the student-records exercise",
+   "term": "Nested list",
+   "html": "<b>Nested list</b> (list of lists): a list whose items are themselves lists, such as student records of the form [name, [score, score, score]].",
+   "lec": 24
+  },
+  {
+   "id": "foc-d0098",
+   "unit": "lists",
+   "topic": "Live Lecture 5: the student-records exercise",
+   "term": "Unpacking a record",
+   "html": "<b>name, scores = record</b>: when record holds two items, the first goes into <b>name</b> and the second into <b>scores</b>. If the second item is a list, scores is that whole list.",
+   "lec": 24
+  },
+  {
+   "id": "foc-d0099",
+   "unit": "lists",
+   "topic": "Live Lecture 5: the student-records exercise",
+   "term": "sort(key=lambda x: x[0])",
+   "html": "<b>sort(key=lambda x: x[0])</b>: sorts a list of records by each record's item 0 (here, the name) instead of comparing whole records. lambda itself comes later in the course.",
+   "lec": 24
+  },
+  {
+   "id": "foc-d0100",
+   "unit": "lists",
+   "topic": "Live Lecture 5: the student-records exercise",
+   "term": "Pointer (reference)",
+   "html": "<b>Pointer</b>: what a list variable really holds, the address of the list in memory. After <b>b = a</b> both names point at one list; <b>a[:]</b> makes a new one.",
+   "lec": 24
+  },
+  {
+   "id": "foc-d0101",
+   "unit": "loops",
+   "topic": "How input() works",
+   "term": "input()",
+   "html": "<b>input(prompt)</b>: pauses the program, shows the prompt and waits for the user to press Enter, then returns what was typed <b>as a string</b>.",
+   "lec": 25
+  },
+  {
+   "id": "foc-d0102",
+   "unit": "loops",
+   "topic": "How input() works",
+   "term": "Prompt",
+   "html": "<b>Prompt</b>: the one string argument of input(), telling the user what to enter. A long one can be built in a variable with <b>+=</b> and passed in by name.",
+   "lec": 25
+  },
+  {
+   "id": "foc-d0103",
+   "unit": "loops",
+   "topic": "How input() works",
+   "term": "int()",
+   "html": "<b>int()</b>: turns a string of digits such as '45' into the integer 45, so it can be compared or used in arithmetic. A decimal such as '23.67' raises a <b>ValueError</b>.",
+   "lec": 25
+  },
+  {
+   "id": "foc-d0104",
+   "unit": "loops",
+   "topic": "How input() works",
+   "term": "Modulo operator %",
+   "html": "<b>%</b> (modulo): divides and returns the <b>remainder</b>. 4 % 3 is 1 and 8 % 2 is 0; n % 2 == 0 means n is even.",
+   "lec": 25
+  },
+  {
+   "id": "foc-d0105",
+   "unit": "loops",
+   "topic": "Introducing while loops",
+   "term": "while loop",
+   "html": "<b>while loop</b>: repeats its block as long as its condition is True, checking before every pass. Needs an initial value, a condition and an update.",
+   "lec": 25
+  },
+  {
+   "id": "foc-d0106",
+   "unit": "loops",
+   "topic": "Introducing while loops",
+   "term": "+= operator",
+   "html": "<b>x += 1</b> is shorthand for <b>x = x + 1</b>. On strings it joins text on to the end, as in prompt += \"\\nWhat is your name? \".",
+   "lec": 25
+  },
+  {
+   "id": "foc-d0107",
+   "unit": "loops",
+   "topic": "Introducing while loops",
+   "term": "Quit value",
+   "html": "<b>Quit value</b>: a word such as 'quit' that the user types to end a while loop, as in <b>while message != 'quit':</b>.",
+   "lec": 25
+  },
+  {
+   "id": "foc-d0108",
+   "unit": "loops",
+   "topic": "Flags, break and continue",
+   "term": "Flag",
+   "html": "<b>Flag</b>: a variable, usually True or False, that signals whether a program should keep running, as in <b>while active:</b>. Any stopping event sets it to False.",
+   "lec": 26
+  },
+  {
+   "id": "foc-d0109",
+   "unit": "loops",
+   "topic": "Flags, break and continue",
+   "term": "break",
+   "html": "<b>break</b>: leaves the loop immediately, skipping the rest of the body; Python goes on with the first line after the loop. Works in while and for loops.",
+   "lec": 26
+  },
+  {
+   "id": "foc-d0110",
+   "unit": "loops",
+   "topic": "Flags, break and continue",
+   "term": "continue",
+   "html": "<b>continue</b>: skips the rest of the current pass and goes back to the loop's condition. The loop itself carries on.",
+   "lec": 26
+  },
+  {
+   "id": "foc-d0111",
+   "unit": "loops",
+   "topic": "Flags, break and continue",
+   "term": "while True:",
+   "html": "<b>while True:</b>: a loop whose condition never fails, so it runs until a <b>break</b> inside it is reached.",
+   "lec": 26
+  },
+  {
+   "id": "foc-d0112",
+   "unit": "loops",
+   "topic": "Avoiding infinite loops",
+   "term": "Infinite loop",
+   "html": "<b>Infinite loop</b>: a loop that never ends because nothing makes its condition False (a missing update, an unchanging flag, no break). Stop it with Colab's stop button.",
+   "lec": 26
+  },
+  {
+   "id": "foc-d0113",
+   "unit": "loops",
+   "topic": "while loops with lists and dictionaries",
+   "term": "while list:",
+   "html": "<b>while unconfirmed_users:</b>: a list as the condition is True while it has items and False once empty, so popping one item per pass empties it and ends the loop.",
+   "lec": 26
+  },
+  {
+   "id": "foc-d0114",
+   "unit": "loops",
+   "topic": "Input & while loops",
+   "term": "while value in list:",
+   "html": "<b>while 'cat' in pets:</b> uses a membership test as the loop condition: the loop repeats while the value is still in the list. Paired with <b>remove()</b>, which deletes one copy per pass, it clears every copy.",
+   "bk": "Python Crash Course ch7"
   }
  ],
  "questions": [
@@ -7781,6 +8135,1077 @@ HUB.addCourse({
    "w": "The book and L#22 call it a list, and it does loop and sort like one, but Python 3 returns a dict_keys view and prints it with that label. list(d.keys()) would print the plain list.",
    "bk": "Python Crash Course ch6",
    "lv": "recall"
+  },
+  {
+   "id": "foc-q0357",
+   "topic": "Lists & tuples",
+   "q": "What does this print?\n\nname, scores = ['Bob', [65, 70, 72]]\nprint(scores[1])",
+   "c": [
+    "70",
+    "65",
+    "[65, 70, 72]",
+    "IndexError"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The record has two items, so name gets 'Bob' and scores gets the whole list [65, 70, 72]. Index 1 of that list is 70. 65 is index 0, and [65, 70, 72] is what scores holds, not scores[1].",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0358",
+   "topic": "Lists & tuples",
+   "q": "What does this print?\n\nscores = [78, 82, 85]\naverage_score = sum(scores) / len(scores)\nprint(f\"{average_score:.1f}\")",
+   "c": [
+    "81.6",
+    "245.0",
+    "81.66",
+    "81.7"
+   ],
+   "a": [
+    3
+   ],
+   "w": "sum is 245 and len is 3, so the average is 81.666…. The format :.1f keeps one decimal and rounds, giving 81.7; it doesn't cut off to 81.6.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0359",
+   "topic": "Lists & tuples",
+   "q": "In the live solution, Eve has already been removed, so student_records holds 4 records. How does this loop run?\n\nfor i in range(len(student_records)):",
+   "c": [
+    "5 times, with i = 0 to 4",
+    "4 times, with i = 0, 1, 2, 3",
+    "4 times, with i = 1, 2, 3, 4",
+    "3 times, because the last index is 3"
+   ],
+   "a": [
+    1
+   ],
+   "w": "len() is 4 and range(4) gives 0, 1, 2, 3: four passes, starting from 0. Five would be right only if Eve were still in the list; 1 to 4 forgets that range starts at 0.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0360",
+   "topic": "Lists & tuples",
+   "q": "In the live solution, Zara (85, 92, 78) ends up without “(Distinction)”, although she has a 92. Why?",
+   "c": [
+    "She was inserted in step 3, after the distinction step had already run",
+    "max() can't read a record added with insert()",
+    "The distinction needs an average of 90 or more, not one score",
+    "insert(0, …) stores her scores as text, so the comparison fails"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Each step works on the list as it is at that moment. The distinction loop ran in step 2, before Zara existed. The rule is about the single highest score, so with a 92 she would have qualified had she been added first.",
+   "lec": 24,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0361",
+   "topic": "Lists & tuples",
+   "q": "Where does Zara end up?\n\nrecs = [['Ravi', [70, 71, 72]], ['Anu', [80, 81, 82]]]\nrecs.insert(0, ['Zara', [85, 92, 78]])\nrecs.sort(key=lambda x: x[0])\nprint([r[0] for r in recs])",
+   "c": [
+    "['Zara', 'Anu', 'Ravi']",
+    "['Zara', 'Ravi', 'Anu']",
+    "['Anu', 'Ravi', 'Zara']",
+    "['Anu', 'Zara', 'Ravi']"
+   ],
+   "a": [
+    2
+   ],
+   "w": "insert(0, …) puts her first, but sort() then reorders every record by its name (item 0), and Z comes last. Anyone who stops reading at the insert picks Zara first.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0362",
+   "topic": "Lists & tuples",
+   "q": "Bilal and Chitra both average below 60. What does this print?\n\nrecords = [['Asha', [80, 85, 90]], ['Bilal', [40, 45, 50]],\n           ['Chitra', [50, 55, 52]], ['Dev', [70, 75, 72]]]\nfor r in records:\n    if sum(r[1]) / len(r[1]) < 60:\n        records.remove(r)\nprint([r[0] for r in records])",
+   "c": [
+    "['Asha', 'Dev']",
+    "['Asha', 'Chitra', 'Dev']",
+    "['Asha', 'Bilal', 'Dev']",
+    "['Chitra', 'Dev']"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Removing Bilal while the for loop walks the same list slides Chitra into his place, and the loop moves on to the next position, so Chitra is never checked. That's why the live solution built a separate eligible_students list instead.",
+   "lec": 24,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0363",
+   "topic": "Lists & tuples",
+   "q": "What does this print?\n\neligible = [['Alice', [75, 88, 92]]]\nrecords = eligible\nrecords.insert(0, ['Zara', [85, 92, 78]])\nprint(len(eligible))",
+   "c": [
+    "1",
+    "0",
+    "2",
+    "TypeError"
+   ],
+   "a": [
+    2
+   ],
+   "w": "records = eligible doesn't copy the list; both names point at the same block of memory. Inserting through records therefore changes eligible too, which now has 2 records. Only eligible[:] would have made a separate list.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0364",
+   "topic": "Lists & tuples",
+   "q": "In student_records.sort(key=lambda x: x[0]), what are the records sorted by?",
+   "c": [
+    "Each record's first score",
+    "Each record's first item, the student's name",
+    "Only the first letter of each name; the rest of the name is ignored",
+    "The positions the records had before sorting"
+   ],
+   "a": [
+    1
+   ],
+   "w": "x is one record such as ['Alice', [75, 88, 92]], and x[0] is its first item, the name. The names are compared as whole strings, letter by letter, so Aaron comes before Ava; it isn't only the first letter.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0365",
+   "topic": "Lists & tuples",
+   "q": "A data set is split for machine learning, as in the live lecture's slicing example. What does this print?\n\ndata = list(range(5000))\ntrain = data[:4000]\ntest = data[4000:]\nprint(len(train), len(test))",
+   "c": [
+    "4000 999",
+    "3999 1001",
+    "4001 999",
+    "4000 1000"
+   ],
+   "a": [
+    3
+   ],
+   "w": "data[:4000] takes indexes 0 to 3999, which is 4000 items; data[4000:] takes index 4000 to the end, the other 1000. The stop index is left out of the first slice and is where the second begins, so nothing is lost or counted twice.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0366",
+   "topic": "if statements",
+   "q": "What does this print?\n\ncar = 'Audi'\nprint(car.upper() == 'AUDI', car == 'audi')",
+   "c": [
+    "True False",
+    "False False",
+    "True True",
+    "False True"
+   ],
+   "a": [
+    0
+   ],
+   "w": "upper() turns 'Audi' into 'AUDI', which matches, so the first test is True. The second compares 'Audi' with 'audi' as they are, and comparisons are case-sensitive, so it's False.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0367",
+   "topic": "Python basics",
+   "q": "Which loop statements does Python itself provide?",
+   "c": [
+    "for, while and do-while",
+    "while and do-while only",
+    "for and while",
+    "for only; while is a function"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Python has for and while. do-while exists in languages such as C and Java, but not in Python; a while True loop with break does the same job. A student asked about it in the live session.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0368",
+   "topic": "Python basics",
+   "q": "For the Python part of the final exam, which kind of question did he say he plans NOT to set?",
+   "c": [
+    "Predicting the output of a given piece of code",
+    "Spotting an error, such as an indentation error, in given code",
+    "One- or two-word answers",
+    "Long descriptive written answers"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He listed output prediction (where the code may contain an error), short pen-and-paper code and one- or two-word answers. Descriptive questions may come only from the first part of the course, such as types of data and the four pillars.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0369",
+   "topic": "Input & while loops",
+   "q": "What does Python do when it reaches a line containing input(\"Your name? \")?",
+   "c": [
+    "Shows the prompt and carries on without waiting",
+    "Pauses, shows the prompt and waits until the user presses Enter",
+    "Reads the last value the program printed",
+    "Asks for a number and stores it as an int"
+   ],
+   "a": [
+    1
+   ],
+   "w": "input() pauses the program, displays its prompt and waits; whatever is typed before Enter is returned as a string. It never converts to int by itself, and it doesn't skip ahead.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0370",
+   "topic": "Input & while loops",
+   "q": "In Colab, after age = input(\"How old are you? \") and typing 45, the cell shows the value of age as '45'. What do the quotes tell you?",
+   "c": [
+    "age holds a string, not a number",
+    "45 is stored as a decimal",
+    "The value was rounded",
+    "The user typed the quotes as well"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Quotes mark a str. input() returns text even when the user types only digits; to compare or calculate with it you need int(age).",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0371",
+   "topic": "Input & while loops",
+   "q": "The user types 72. What happens?\n\nmarks = input(\"Marks out of 100: \")\nprint(marks >= 40)",
+   "c": [
+    "It prints True",
+    "It prints False",
+    "TypeError: >= can't compare a str with an int",
+    "ValueError, because 72 isn't a valid input"
+   ],
+   "a": [
+    2
+   ],
+   "w": "marks holds the string '72', and >= isn't supported between a str and an int, so Python raises a TypeError. It would print True only after marks = int(marks).",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0372",
+   "topic": "Input & while loops",
+   "q": "The user types 21. What does the last line print?\n\nn = input(\"Number: \")\nprint(n * 2)",
+   "c": [
+    "42",
+    "2121",
+    "TypeError",
+    "21 21"
+   ],
+   "a": [
+    1
+   ],
+   "w": "n is the string '21', and a string times 2 is the string repeated: '2121'. There's no error, which makes this mistake easy to miss; int(n) * 2 would give 42.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0373",
+   "topic": "Input & while loops",
+   "q": "The user types 23.67. What happens?\n\nprice = int(input(\"Price: \"))",
+   "c": [
+    "price becomes 23",
+    "price becomes 24",
+    "TypeError",
+    "ValueError: invalid literal for int()"
+   ],
+   "a": [
+    3
+   ],
+   "w": "int() accepts only a string of whole-number digits, so '23.67' raises a ValueError. It doesn't round or cut off the decimals, and the type (str) is acceptable to int(), so it isn't a TypeError.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0374",
+   "topic": "Input & while loops",
+   "q": "The user types 36. What is printed after the prompt?\n\nheight = int(input(\"How tall are you, in inches? \"))\nif height >= 36:\n    print(\"Tall enough to ride!\")\nelse:\n    print(\"Ride when you're a little older.\")",
+   "c": [
+    "Tall enough to ride!",
+    "Ride when you're a little older.",
+    "Both messages",
+    "Nothing, because 36 is a string"
+   ],
+   "a": [
+    0
+   ],
+   "w": "int() turns '36' into 36, and 36 >= 36 is True, so the if block runs. >= includes the boundary; only > would send 36 to the else block.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0375",
+   "topic": "Input & while loops",
+   "q": "How does the prompt appear to the user?\n\nprompt = \"Delivery address needed.\"\nprompt += \"\\nPIN code? \"\npin = input(prompt)",
+   "c": [
+    "On one line: Delivery address needed. PIN code?",
+    "Only PIN code? is shown, because += replaces the first string",
+    "On two lines: the note, then PIN code? with the answer typed after it",
+    "Python raises an error, because input() needs the text itself, not a variable"
+   ],
+   "a": [
+    2
+   ],
+   "w": "+= joins the second string on to the end of the first, and its \\n starts a new line, so the prompt shows on two lines. Passing a variable to input() is fine; += doesn't overwrite.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0376",
+   "topic": "Input & while loops",
+   "q": "What does this print?\n\nprint(4 % 3)\nprint(4 / 3)",
+   "c": [
+    "1.3333333333333333 then 1",
+    "1 then 1.3333333333333333",
+    "1 then 1",
+    "0 then 1.3333333333333333"
+   ],
+   "a": [
+    1
+   ],
+   "w": "% gives the remainder of 4 divided by 3, which is 1; / gives the quotient, 1.3333333333333333. Mixing the two up reverses the lines.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0377",
+   "topic": "Input & while loops",
+   "q": "The user types 8. What is printed after the prompt?\n\nparty = int(input(\"How many people are in your dinner group? \"))\nif party > 8:\n    print(\"You'll have to wait for a table.\")\nelse:\n    print(\"Your table is ready.\")",
+   "c": [
+    "You'll have to wait for a table.",
+    "Both messages",
+    "Nothing",
+    "Your table is ready."
+   ],
+   "a": [
+    3
+   ],
+   "w": "8 > 8 is False, so the else block runs and the table is ready. Only groups of 9 or more wait; that would need >= 8 to include 8.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0378",
+   "topic": "Input & while loops",
+   "q": "What decides how many times a while loop runs?",
+   "c": [
+    "The length of the range written after while",
+    "A count fixed when the loop starts",
+    "Whether its condition is still True each time it is checked",
+    "The number of indented lines in its body"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A while loop checks its condition before every pass and stops the first time it is False, so the number of passes depends on what happens inside. A for loop is the one whose passes are fixed by a range or list.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0379",
+   "topic": "Input & while loops",
+   "q": "Which line is shorthand for current_number = current_number + 1?",
+   "c": [
+    "current_number += 1",
+    "current_number == current_number + 1",
+    "current_number =+ 1",
+    "current_number + 1 = current_number"
+   ],
+   "a": [
+    0
+   ],
+   "w": "+= adds to the variable and stores the result back in it. == only compares, and =+ 1 is read as = +1, which just sets the variable to 1.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0380",
+   "topic": "Input & while loops",
+   "q": "What does this print?\n\nx = 3\nwhile x < 12:\n    x += 4\nprint(x)",
+   "c": [
+    "11",
+    "12",
+    "7",
+    "15"
+   ],
+   "a": [
+    3
+   ],
+   "w": "x goes 3 → 7 → 11 → 15. At 11 the check 11 < 12 is still True, so 4 more is added; 15 < 12 is False and the loop ends. 11 is the last value that passed the check, not the final value.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0381",
+   "topic": "Input & while loops",
+   "q": "What does this print?\n\ncurrent_number = 1\nwhile current_number <= 5:\n    current_number += 1\nprint(current_number)",
+   "c": [
+    "5",
+    "6",
+    "1",
+    "4"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The loop keeps adding while the value is 5 or less, so 5 becomes 6, and only then is 6 <= 5 False. The variable is left one past the limit.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0382",
+   "topic": "Input & while loops",
+   "q": "A student copies the lecture's while loop but leaves out current_number = 1, so the program starts like this. What happens?\n\nwhile current_number <= 5:\n    print(current_number)\n    current_number += 1",
+   "c": [
+    "It prints 1 to 5 anyway, as the for version does",
+    "It prints 0 to 5",
+    "NameError, because current_number has no value at the first check",
+    "It runs forever"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A while loop needs its variable initialised before the first check. The for version can drop that line because range(1, 6) supplies each value; the while version can't.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0383",
+   "topic": "Input & while loops",
+   "q": "The user types ok, then Quit, then quit. Which lines are printed (ignoring the prompts)?\n\nmessage = \"\"\nwhile message != 'quit':\n    message = input(\"> \")\n    if message != 'quit':\n        print(message)",
+   "c": [
+    "ok only",
+    "ok, then Quit",
+    "ok, Quit, then quit",
+    "Nothing; the loop ends at Quit"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Comparisons are case-sensitive, so 'Quit' != 'quit' is True: it is printed and the loop goes on. Only the lowercase quit fails both tests, so it isn't printed and the loop ends.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0384",
+   "topic": "Input & while loops",
+   "q": "What does this print?\n\nmessage = \"quit\"\nwhile message != \"quit\":\n    print(\"inside\")\nprint(\"done\")",
+   "c": [
+    "inside, then done",
+    "inside, forever",
+    "Nothing",
+    "done"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The condition is checked before the first pass, and 'quit' != 'quit' is already False, so the body never runs. That's why the lecture starts message as an empty string.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0385",
+   "topic": "Input & while loops",
+   "q": "What does this print?\n\ntotal = 0\nn = 1\nwhile n <= 4:\n    total += n\n    n += 1\nprint(total, n)",
+   "c": [
+    "10 5",
+    "10 4",
+    "6 4",
+    "15 5"
+   ],
+   "a": [
+    0
+   ],
+   "w": "total collects 1 + 2 + 3 + 4 = 10. n is increased after each addition, so it ends at 5, the value that fails n <= 4.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0386",
+   "topic": "Input & while loops",
+   "q": "In the lecture's sense, what is a flag?",
+   "c": [
+    "A variable, usually True or False, that tells the program whether to keep running",
+    "A comment that marks where a loop begins",
+    "An error message Python shows when a loop never ends",
+    "The quit word the user types"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A flag is a variable acting as a signal: while it is True the loop runs, and any stopping event sets it to False. The quit word is just one event that can change it.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0387",
+   "topic": "Input & while loops",
+   "q": "Why did he recommend a flag for a game that should end when the player runs out of ships, runs out of time, or loses every city?",
+   "c": [
+    "A flag makes the loop run faster",
+    "Python allows only one condition in a while line",
+    "Each of the many ending events can set one flag to False, so the while line checks a single thing",
+    "A flag stops the loop in the middle of a pass"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Python could test several conditions in the while line, but with many ending events that gets messy. With a flag, each event just sets active = False. A flag doesn't stop a pass midway; that's break.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0388",
+   "topic": "Input & while loops",
+   "q": "What does this print?\n\nactive = True\ncount = 0\nwhile active:\n    count += 1\n    if count == 3:\n        active = False\n    print(count)",
+   "c": [
+    "1 2 3",
+    "1 2",
+    "1 2 3 4",
+    "3"
+   ],
+   "a": [
+    0
+   ],
+   "w": "When count reaches 3 the flag is set to False, but the rest of that pass still runs, so 3 is printed. The loop ends at the next check of while active.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0389",
+   "topic": "Input & while loops",
+   "q": "The user would type jaipur, then quit, then goa. What does the program print besides the prompts?\n\nwhile True:\n    city = input(\"City (or quit): \")\n    if city == 'quit':\n        break\n    print(\"I'd love to go to \" + city.title() + \"!\")",
+   "c": [
+    "I'd love to go to Jaipur! only",
+    "I'd love to go to Jaipur! then I'd love to go to Goa!",
+    "Nothing, because while True never starts",
+    "It keeps asking forever"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Jaipur is printed; then quit reaches break, which leaves the loop at once, so goa is never even asked for. while True only ends through that break.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0390",
+   "topic": "Input & while loops",
+   "q": "What does this print?\n\nfor n in [3, 8, 5, 12, 7]:\n    if n > 10:\n        break\n    print(n)",
+   "c": [
+    "3 8 5 7",
+    "3 8 5 12",
+    "3 8 5",
+    "SyntaxError: break only works in while loops"
+   ],
+   "a": [
+    2
+   ],
+   "w": "break works in for loops too. At 12 the test is True and break ends the whole loop, so 7 is never reached. Skipping only 12 would be what continue does.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0391",
+   "topic": "Input & while loops",
+   "q": "What does this print?\n\nn = 0\nwhile n < 6:\n    n += 1\n    if n == 4:\n        continue\n    print(n)",
+   "c": [
+    "1 2 3",
+    "1 2 3 4 5 6",
+    "1 2 3 5 6",
+    "1 2 3 5"
+   ],
+   "a": [
+    2
+   ],
+   "w": "continue skips only the print for 4 and goes back to the check; the loop carries on to 5 and 6. Stopping at 3 is what break would do.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0392",
+   "topic": "Input & while loops",
+   "q": "What does this print?\n\nn = 0\nwhile n < 6:\n    n += 1\n    if n == 4:\n        break\n    print(n)",
+   "c": [
+    "1 2 3",
+    "1 2 3 4",
+    "1 2 3 5 6",
+    "4"
+   ],
+   "a": [
+    0
+   ],
+   "w": "At 4, break leaves the loop before the print, so only 1, 2 and 3 appear. Nothing after the break in that pass runs.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0393",
+   "topic": "Input & while loops",
+   "q": "What does the lecture's continue example print?\n\ncurrent_number = 0\nwhile current_number < 10:\n    current_number += 1\n    if current_number % 2 == 0:\n        continue\n    print(current_number)",
+   "c": [
+    "2 4 6 8 10",
+    "0 2 4 6 8",
+    "1 3 5 7",
+    "1 3 5 7 9"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Even numbers leave remainder 0, so continue skips their print; the odd numbers 1 to 9 get through. The update comes before continue, so 10 is reached and skipped too.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0394",
+   "topic": "Input & while loops",
+   "q": "This was meant to print 1 to 5. What actually happens?\n\nx = 1\nwhile x <= 5:\n    print(x)\nx += 1",
+   "c": [
+    "It prints 1 to 5",
+    "It prints 1 forever",
+    "It prints nothing",
+    "IndentationError"
+   ],
+   "a": [
+    1
+   ],
+   "w": "x += 1 is at the left margin, so it's after the loop, not inside it. x stays 1, the condition stays True, and 1 prints without end. The indentation is legal, so there's no error to warn you.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0395",
+   "topic": "Input & while loops",
+   "q": "A while loop in Google Colab won't stop printing. What did the lecture say to do?",
+   "c": [
+    "Wait; Colab ends any loop after a minute",
+    "Type quit into the output area",
+    "Restart the computer",
+    "Press the stop (pause) button on the running cell, then fix the loop"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Colab keeps running the cell until you interrupt it with the cell's stop button; in a terminal you close the window. Then check the condition and the update line.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0396",
+   "topic": "Input & while loops",
+   "q": "What does this print?\n\nqueue = ['ravi', 'meena', 'arjun']\ndone = []\nwhile queue:\n    done.append(queue.pop())\nprint(done)",
+   "c": [
+    "['ravi', 'meena', 'arjun']",
+    "['arjun', 'meena', 'ravi']",
+    "['arjun']",
+    "[]"
+   ],
+   "a": [
+    1
+   ],
+   "w": "pop() with no index takes the last item, so arjun moves first and the order is reversed. The loop runs until queue is empty, so all three move.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0397",
+   "topic": "Input & while loops",
+   "q": "When does the loop while unconfirmed_users: stop?",
+   "c": [
+    "After a fixed three passes",
+    "When the list becomes empty, because an empty list counts as False",
+    "When pop() raises an error",
+    "Never: a list is always True"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A list used as a condition is True while it has items and False when it is empty. Each pass pops one user, so the loop stops after the last one, without ever calling pop() on an empty list.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0398",
+   "topic": "Input & while loops",
+   "q": "How many times does the body of this loop run?\n\npets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']\npasses = 0\nwhile 'cat' in pets:\n    pets.remove('cat')\n    passes += 1\nprint(passes)",
+   "c": [
+    "7, once per item",
+    "1",
+    "4",
+    "3, once per 'cat'"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Each pass removes one 'cat', and the check fails once none is left: three passes. The lecture described it as running seven times, once per item, but that isn't what happens.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0399",
+   "topic": "Input & while loops",
+   "q": "The users enter, in order: asha, goa, yes, ravi, leh, yes, asha, ooty, no. What is printed at the end?\n\nresponses = {}\nactive = True\nwhile active:\n    name = input(\"Name? \")\n    place = input(\"Dream place? \")\n    responses[name] = place\n    if input(\"Another? \") == 'no':\n        active = False\nprint(responses)",
+   "c": [
+    "{'asha': 'goa', 'ravi': 'leh', 'asha': 'ooty'}",
+    "{'asha': 'goa', 'ravi': 'leh'}",
+    "{'asha': 'ooty', 'ravi': 'leh'}",
+    "{'ravi': 'leh', 'asha': 'ooty'}"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Keys are unique, so asha's later answer, ooty, replaces goa. The key keeps its original place, so asha still comes first.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0400",
+   "topic": "Input & while loops",
+   "q": "What does this print?\n\norders = ['tuna', 'pastrami', 'veg', 'pastrami', 'club', 'pastrami']\nfinished = []\nwhile 'pastrami' in orders:\n    orders.remove('pastrami')\nwhile orders:\n    finished.append(orders.pop())\nprint(finished)",
+   "c": [
+    "['tuna', 'veg', 'club']",
+    "['club', 'veg', 'tuna']",
+    "['club', 'pastrami', 'veg', 'tuna']",
+    "['tuna', 'pastrami', 'veg', 'club']"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The first loop removes all three pastramis, leaving tuna, veg, club. The second pops from the end, so finished fills in reverse: club, veg, tuna.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0401",
+   "topic": "Input & while loops",
+   "q": "Which of these does NOT end a while loop by itself?",
+   "c": [
+    "A condition in the while line that becomes False",
+    "Setting an active flag to False",
+    "A break statement",
+    "A continue statement"
+   ],
+   "a": [
+    3
+   ],
+   "w": "continue only skips the rest of the current pass and goes back to the check; the loop carries on. The other three are the three ways of stopping a loop that the lecture's exercise asked you to try.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0402",
+   "topic": "Input & while loops",
+   "q": "What does print(17 % 5, 20 % 4, 3 % 7) output?",
+   "c": [
+    "3 5 0",
+    "2 0 0",
+    "2 0 3",
+    "3 0 3"
+   ],
+   "a": [
+    2
+   ],
+   "w": "% gives the remainder: 17 = 3×5 + 2 → 2; 20 = 5×4 + 0 → 0; 3 = 0×7 + 3 → 3. Answering 3 for the first confuses remainder with quotient, and 0 for the last forgets that 7 doesn't fit into 3 at all.",
+   "bk": "Python Crash Course ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0403",
+   "topic": "Input & while loops",
+   "q": "Which condition is True exactly when number is a multiple of 10?",
+   "c": [
+    "number / 10 == 0",
+    "number % 10 == 10",
+    "number / 10 == 1",
+    "number % 10 == 0"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A multiple of 10 leaves no remainder, so number % 10 is 0. A remainder is always smaller than the divisor, so % 10 can never be 10. The / tests are True only for 0 and for 10 respectively.",
+   "bk": "Python Crash Course ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0404",
+   "topic": "Input & while loops",
+   "q": "How many numbers does this print?\n\nx = 1\nwhile x < 5:\n    print(x)\n    x += 1",
+   "c": [
+    "4: the numbers 1 to 4",
+    "5: the numbers 1 to 5",
+    "5: the numbers 0 to 4",
+    "None, because the loop never stops"
+   ],
+   "a": [
+    0
+   ],
+   "w": "< 5 excludes 5: after 4 is printed x becomes 5, and 5 < 5 is False. Counting 1 to 5 needs <= 5, as in the book's counting loop. x += 1 is there, so the loop does end.",
+   "bk": "Python Crash Course ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0405",
+   "topic": "Input & while loops",
+   "q": "What happens when this runs?\n\nc = 0\nwhile c < 5:\n    if c == 2:\n        continue\n    print(c)\n    c += 1",
+   "c": [
+    "It prints 0 1 3 4",
+    "It prints 0 and 1, then keeps running forever without printing",
+    "It prints 0 1 2 3 4",
+    "It prints 0 and 1, then the loop ends"
+   ],
+   "a": [
+    1
+   ],
+   "w": "When c is 2, continue jumps back to the check before c += 1 is reached, so c stays 2 and the same skip repeats for ever. The book increments at the top of the loop, before any continue, for exactly this reason. Expecting the loop to end treats continue as break.",
+   "bk": "Python Crash Course ch7",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0406",
+   "topic": "Input & while loops",
+   "q": "What does this print?\n\nsignups = ['asha', 'bilal', 'chitra']\nconfirmed = []\nwhile signups:\n    confirmed.append(signups.pop(0))\nprint(confirmed)",
+   "c": [
+    "['chitra', 'bilal', 'asha']",
+    "[]",
+    "IndexError: pop from empty list",
+    "['asha', 'bilal', 'chitra']"
+   ],
+   "a": [
+    3
+   ],
+   "w": "pop(0) takes the first item each time, so users move across in sign-up order. The book's version uses pop() with no index, which takes the last item and reverses the list. The loop stops as soon as signups is empty, so pop() is never called on an empty list.",
+   "bk": "Python Crash Course ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0407",
+   "topic": "Input & while loops",
+   "q": "What happens when this runs?\n\npets = ['cat', 'dog', 'cat']\nwhile 'cat' in pets:\n    pets.remove('dog')\nprint(pets)",
+   "c": [
+    "It prints ['dog']",
+    "It prints ['cat', 'cat']",
+    "ValueError: list.remove(x): x not in list",
+    "It runs forever"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The first pass removes the only 'dog'. 'cat' is still in the list, so the loop runs again and remove('dog') fails, because remove() raises ValueError when the value is missing. The loop condition and the value removed must match, as in while 'cat' in pets: pets.remove('cat').",
+   "bk": "Python Crash Course ch7",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0408",
+   "topic": "Input & while loops",
+   "q": "The user types 5, then 7, then done. What happens?\n\ntotal = 0\nentry = \"\"\nwhile entry != 'done':\n    entry = input(\"Score (or done): \")\n    total += int(entry)\nprint(total)",
+   "c": [
+    "It prints 12",
+    "It prints 0",
+    "ValueError: invalid literal for int() with base 10: 'done'",
+    "It runs forever"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The while line is checked only at the top of each pass, so after done is typed the rest of that pass still runs, and int('done') fails before the loop can stop. It's the same reason the book's parrot echoes quit: test for the quit value inside the loop (if entry != 'done':) before using it.",
+   "bk": "Python Crash Course ch7",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0409",
+   "topic": "Input & while loops",
+   "q": "According to the book, why use a while loop rather than a for loop when removing items from a list as you process it?",
+   "c": [
+    "for loops can't call pop()",
+    "while loops are always faster",
+    "Changing a list inside a for loop over that list makes it hard for Python to keep track of the items",
+    "for loops only work with range()"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Modifying the list you're iterating over with for confuses which item comes next, so items get skipped. for loops can call pop() and loop over any list, so those options are false.",
+   "bk": "Python Crash Course ch7",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0410",
+   "topic": "Input & while loops",
+   "q": "A program needs the user's height as a number so that it can test height >= 120. Which line reads it correctly?",
+   "c": [
+    "height = int(input(\"Height in cm: \"))",
+    "height = input(int(\"Height in cm: \"))",
+    "height = int(\"Height in cm: \")",
+    "height = input(\"Height in cm: \")"
+   ],
+   "a": [
+    0
+   ],
+   "w": "input() runs first and returns the typed text, then int() converts it. Calling int() on the prompt text itself raises ValueError before anything is asked. Plain input() leaves a string, so the >= test raises TypeError.",
+   "bk": "Python Crash Course ch7",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0411",
+   "topic": "Input & while loops",
+   "q": "The users type meera, kedarkantha, yes, john, triund, no. In what order are the results printed (Python 3.7 or later)?\n\nresponses = {}\nactive = True\nwhile active:\n    name = input(\"Name? \")\n    trek = input(\"Trek? \")\n    responses[name] = trek\n    if input(\"Another? (yes/no) \") == 'no':\n        active = False\nfor name, trek in responses.items():\n    print(name + \": \" + trek)",
+   "c": [
+    "meera: kedarkantha, then john: triund",
+    "john: triund, then meera: kedarkantha",
+    "john: triund only",
+    "It varies from run to run"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Since Python 3.7 a dictionary keeps the order in which pairs were added, so meera comes first, as in L#26's poll output. The book's sample run lists the later participant first because it was printed by an older Python, where order wasn't guaranteed.",
+   "bk": "Python Crash Course ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0412",
+   "topic": "Input & while loops",
+   "q": "The user types 7. What happens on the last line?\n\nnumber = int(input(\"Pick a number: \"))\nprint(\"You picked \" + number)",
+   "c": [
+    "It prints You picked 7",
+    "TypeError: can only concatenate str (not \"int\") to str",
+    "ValueError: invalid literal for int()",
+    "It prints You picked 7.0"
+   ],
+   "a": [
+    1
+   ],
+   "w": "int() made number an integer, and + can't join a string and an integer. The book's even-or-odd program writes str(number) for this reason. The ValueError would need non-digits to be typed.",
+   "bk": "Python Crash Course ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0413",
+   "topic": "Input & while loops",
+   "q": "What does this print?\n\nlives = 3\nturns = 0\nactive = True\nwhile active:\n    turns += 1\n    lives -= 1\n    if lives == 0:\n        active = False\n    elif turns == 5:\n        active = False\nprint(turns, lives)",
+   "c": [
+    "5 -2",
+    "4 -1",
+    "2 1",
+    "3 0"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Either event can switch the flag off, and whichever happens first wins. lives reaches 0 on turn 3, so active becomes False and the loop ends before turn 5. This is the book's point about flags: more stopping events are just more tests inside the loop.",
+   "bk": "Python Crash Course ch7",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0414",
+   "topic": "Input & while loops",
+   "q": "The user types ravi, then presses Enter without typing anything, then would type meena. What does this print?\n\nnames = []\nwhile True:\n    name = input(\"Name (blank to stop): \")\n    if name == \"\":\n        break\n    names.append(name)\nprint(names)",
+   "c": [
+    "['ravi']",
+    "['ravi', 'meena']",
+    "['ravi', '', 'meena']",
+    "['ravi', '']"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Pressing Enter on its own makes input() return the empty string, which is the quit value here. break leaves before append() runs, so the blank isn't stored, and meena is never asked for.",
+   "bk": "Python Crash Course ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0415",
+   "topic": "Input & while loops",
+   "q": "What does this print?\n\nx = 0\nif x < 3:\n    x += 1\ny = 0\nwhile y < 3:\n    y += 1\nprint(x, y)",
+   "c": [
+    "3 3",
+    "1 1",
+    "3 1",
+    "1 3"
+   ],
+   "a": [
+    3
+   ],
+   "w": "An if tests its condition once, so x is increased once, to 1. A while loop goes back to its condition after every pass, so y keeps increasing until y < 3 is False, at 3. Swapping if for while is what turns a one-off test into a loop.",
+   "bk": "Python Crash Course ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0416",
+   "topic": "Input & while loops",
+   "q": "Which task calls for a while loop rather than a for loop?",
+   "c": [
+    "Printing every name in a list of 30 students",
+    "Adding up the numbers 1 to 100",
+    "Asking for a PIN again and again until the user types the right one",
+    "Printing each key of a dictionary"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A while loop fits when you can't know in advance how many passes are needed; the user might get the PIN right first time or on the tenth try. The other tasks walk through a known collection or range, which is what a for loop does.",
+   "bk": "Python Crash Course ch7",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0417",
+   "topic": "Input & while loops",
+   "q": "The user types 42. What happens?\n\nnumber = input(\"Enter a number: \")\nif number % 2 == 0:\n    print(\"even\")",
+   "c": [
+    "It prints even",
+    "Nothing is printed, because 42 % 2 is 1",
+    "ValueError: invalid literal for int()",
+    "TypeError: not all arguments converted during string formatting"
+   ],
+   "a": [
+    3
+   ],
+   "w": "number is the string '42', and on a string % means text formatting, not remainder, so Python raises a TypeError. No int() is called, so there is no ValueError. Fix: number = int(number) first.",
+   "bk": "Python Crash Course ch7",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0418",
+   "topic": "Input & while loops",
+   "q": "The user types 3, 12, 13, then quit. What is printed (ignoring the prompts)?\n\nwhile True:\n    age = input(\"Age (or quit): \")\n    if age == 'quit':\n        break\n    age = int(age)\n    if age < 3:\n        print(\"free\")\n    elif age <= 12:\n        print(\"₹150\")\n    else:\n        print(\"₹250\")",
+   "c": [
+    "free ₹150 ₹250",
+    "₹150 ₹150 ₹250",
+    "₹150 ₹250 ₹250",
+    "free ₹150 ₹150"
+   ],
+   "a": [
+    1
+   ],
+   "w": "3 is not < 3, so it pays ₹150; 12 is still <= 12, so ₹150; 13 is over 12, so ₹250. Each age is converted with int() before the tests, and the quit check comes first because int('quit') would raise ValueError.",
+   "bk": "Python Crash Course ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0419",
+   "topic": "Input & while loops",
+   "q": "The book's poll uses a flag called polling_active instead of active. What difference does the name make?",
+   "c": [
+    "polling_active is a keyword that ends a loop by itself",
+    "None: a flag is an ordinary variable, so any valid name works",
+    "The while line only accepts a variable called active",
+    "Flags must be written in capitals, such as POLLING_ACTIVE"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A flag is just a variable holding True or False; the book says you can call it anything. A descriptive name such as polling_active simply makes the code easier to read. Python has no keyword of that name.",
+   "bk": "Python Crash Course ch7",
+   "lv": "recall"
   }
  ],
  "briefs": {
@@ -7826,6 +9251,12 @@ HUB.addCourse({
      5
     ]
    ]
+  },
+  "q2": {
+   "scopeShort": "Everything to 25 Oct",
+   "tag": "from the official LMS announcement",
+   "lede": "Every figure below is from the official Quiz 2 announcement on the LMS (19 October 2026). What Dr. Pathak said in Live Lecture 5 is marked as his.",
+   "html": "<div class=\"grid2\">\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Confirmed on the official announcement</h4>\n        <div class=\"scroller\"><table><tbody>\n          <tr><td><strong>Date</strong></td><td>Saturday 31 October</td></tr>\n          <tr><td><strong>Window</strong></td><td>4:45–5:05 PM IST · join from <strong>4:30 PM</strong> (15 minutes for proctoring setup; the quiz itself starts and ends on time)</td></tr>\n          <tr><td><strong>Questions</strong></td><td><strong>60</strong>, for <strong>60 marks</strong>, in 20 minutes: about 20 seconds a question</td></tr>\n          <tr><td><strong>Type</strong></td><td>MCQ</td></tr>\n          <tr><td><strong>Weight</strong></td><td>30% of the course. Only the higher of your two quiz scores counts; a missed quiz scores zero</td></tr>\n          <tr><td><strong>Score release</strong></td><td>By Sat 7 November, 5:00 PM (tentative)</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--bad);background:var(--bad-soft)\">\n          <b>Negative marking.</b> +1 correct, <strong>−0.25 for a wrong answer</strong>, 0 if left blank, the same as Quiz 1.\n        </div>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Syllabus</h4>\n        <p style=\"font-size:14.5px\">The announcement says <strong>“all the topics covered till 25th October 2026”</strong>. That means everything from Lecture 1, Quiz 1's material included, up to the lectures released by 25 October.</p>\n        <p style=\"font-size:14.5px;margin-top:8px\">New since Quiz 1:</p>\n        <ul style=\"font-size:14.5px\">\n          <li>Copying lists and tuples (L#16, which wasn't in Quiz 1)</li>\n          <li>If statements (L#17–20)</li>\n          <li>Dictionaries: key-value pairs, looping, nesting (L#21–23)</li>\n          <li>User input and while loops (L#25–26)</li>\n          <li>Anything released on 24–25 October, which the hub adds as soon as it is on the LMS</li>\n        </ul>\n        <div class=\"def\" style=\"margin-top:10px\"><b>From the lecture (L#24):</b> Dr. Pathak said there is one more quiz, at the end of October, and no third quiz.</div>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Before the day</h4>\n        <ul style=\"font-size:14.5px\">\n          <li>Do the <strong>demo evaluation</strong> on the LMS first. Students who skip it get no extra time for setup failures.</li>\n          <li>Dual-device proctoring: a <strong>personal</strong> laptop or desktop (company devices often block proctoring), the latest <strong>Google Chrome</strong>, webcam and microphone on, and a charged phone as the second camera.</li>\n          <li>A stable connection, a well-lit quiet room, and the charger plugged in.</li>\n          <li><strong>Show your rough sheets to the camera</strong> before and after the attempt.</li>\n          <li>A Zoom helpdesk runs 4:30–5:05 PM on the day, for technical problems only; the link is in the LMS announcement.</li>\n        </ul>\n      </div>\n    </div>"
   }
  },
  "bookPacks": [
@@ -7841,6 +9272,10 @@ HUB.addCourse({
   "lec-21",
   "lec-22",
   "lec-23",
-  "pcc1-ch06"
+  "pcc1-ch06",
+  "lec-24",
+  "lec-25",
+  "lec-26",
+  "pcc1-ch07"
  ]
 });

@@ -151,6 +151,18 @@ HUB.addCourse({
    "Week 8 — Live Lecture 5",
    "Sorting accounts into statements, Vogue final accounts",
    "live"
+  ],
+  [
+   25,
+   "Week 10 — Cash flow Part 2",
+   "Format, direct and indirect methods, classification drills",
+   "rec"
+  ],
+  [
+   26,
+   "Week 10 — Cash flow Part 3",
+   "Compass Company case: all three activities",
+   "rec"
   ]
  ],
  "units": [
@@ -490,8 +502,8 @@ HUB.addCourse({
   {
    "id": "cash-flow",
    "title": "Cash flow statement",
-   "tag": "Lecture 23",
-   "lede": "The fourth statement: where the cash came from and where it went, sorted into operating, investing and financing activities.",
+   "tag": "Lectures 23, 25–26",
+   "lede": "The fourth statement: where the cash came from and where it went, how to work out operating cash by the direct and indirect methods, and a full case (Compass Company) reconciled to the balance sheet.",
    "topics": [
     {
      "t": "Why a cash flow statement, and what counts as cash",
@@ -507,6 +519,36 @@ HUB.addCourse({
      "t": "Why net income and operating cash differ",
      "src": "L#23",
      "h": "<p style=\"font-size:14.5px\">Companies' own annual reports show large gaps between net income and net cash from operating activities, in both directions: for some firms profit far exceeds operating cash, for others operating cash exceeds profit. She gave four reasons.</p><div class=\"scroller\"><table><thead><tr><th>Reason</th><th>Effect on operating cash compared with net income</th></tr></thead><tbody><tr><td><strong>Accrual vs cash basis</strong>: revenue is recorded when earned and expenses when incurred, whenever cash moves</td><td>Operating cash counts only the cash that actually came in and went out</td></tr><tr><td><strong>Non-cash expenses</strong>: depreciation and amortisation lower profit but use no cash this period</td><td><strong>Added back</strong> to net income</td></tr><tr><td><strong>Working capital</strong>: a rise in accounts receivable (sales on credit, cash not yet collected)</td><td>Operating cash <strong>lower</strong> than net income</td></tr><tr><td><strong>Working capital</strong>: a rise in accounts payable (expenses incurred, bills not yet paid)</td><td>Operating cash <strong>higher</strong> than net income</td></tr><tr><td><strong>Non-operating items</strong>: a gain or loss on selling a long-term asset is inside net income</td><td>Taken out of operating; the whole sale proceeds are an <strong>investing</strong> inflow</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Putting the reasons into numbers (our example):</strong> net profit ₹5,00,000; depreciation ₹80,000; trade receivables up ₹60,000; trade payables up ₹25,000; a machine with a book value of ₹1,00,000 sold for ₹1,15,000, a gain of ₹15,000. Cash from operations = 5,00,000 + 80,000 − 60,000 + 25,000 − 15,000 = <strong>₹5,30,000</strong>. The ₹1,15,000 received for the machine goes in investing activities. The full format of the statement is for the next part of the topic.</p><!--viz:fa-cf-profit-to-cash--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace table starting from net profit of 5,00,000: add depreciation 80,000 to reach 5,80,000, subtract the 60,000 rise in receivables to reach 5,20,000, add the 25,000 rise in payables to reach 5,45,000, subtract the 15,000 gain on sale of a machine to reach operating cash of 5,30,000. The 1,15,000 sale proceeds go to investing activities.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">From net profit ₹5,00,000 to operating cash ₹5,30,000</div><div class=\"scroller\"><table><thead><tr><th>Step</th><th>Item</th><th>Change ₹</th><th>Running total ₹</th></tr></thead><tbody><tr><td>1</td><td>Net profit</td><td style=\"font-family:var(--mono)\">5,00,000</td><td style=\"font-family:var(--mono)\">5,00,000</td></tr><tr><td>2</td><td>Depreciation (non-cash expense)</td><td style=\"font-family:var(--mono)\">+80,000</td><td style=\"font-family:var(--mono)\">5,80,000</td></tr><tr><td>3</td><td>Increase in trade receivables</td><td style=\"font-family:var(--mono)\">−60,000</td><td style=\"font-family:var(--mono)\">5,20,000</td></tr><tr><td>4</td><td>Increase in trade payables</td><td style=\"font-family:var(--mono)\">+25,000</td><td style=\"font-family:var(--mono)\">5,45,000</td></tr><tr style=\"background:var(--blue-soft)\"><td>5</td><td>Gain on sale of machine</td><td style=\"font-family:var(--mono)\">−15,000</td><td style=\"font-family:var(--mono)\">5,30,000</td></tr></tbody></table></div><p style=\"font-size:13px;color:var(--ink-2);margin-top:6px\">Investing activities, separately: sale of machine +1,15,000.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each line undoes one way in which accrual profit and cash part company.</figcaption></figure><!--/viz:fa-cf-profit-to-cash-->"
+    },
+    {
+     "t": "Format of the statement, and the direct method",
+     "src": "L#25",
+     "h": "<p style=\"font-size:14.5px\">The statement always has the same shape. The heading names the company, the statement and the period it covers. Then come three sections, each listing its own inflows and outflows and ending in one net figure: <strong>net cash from operating activities</strong>, <strong>from investing activities</strong> and <strong>from financing activities</strong>.</p><p style=\"font-size:14.5px\">Add the three net figures and you get the <strong>net increase (or decrease) in cash</strong> for the period. Add the cash held at the start of the period and you get the cash at the end. That closing figure must agree exactly with <strong>cash and cash equivalents</strong> on the balance sheet. She called this the built-in check on the accuracy of the statement.</p><h4>Two ways to work out operating cash</h4><div class=\"scroller\"><table><thead><tr><th></th><th>Direct method</th><th>Indirect method</th></tr></thead><tbody><tr><td><strong>Starts with</strong></td><td>Gross cash receipts and gross cash payments</td><td>Net profit or loss from the income statement</td></tr><tr><td><strong>Figures come from</strong></td><td>The accounting records, e.g. an analysis of the cash book: cash from trade receivables, payments to trade payables, cash expenses</td><td>The income statement plus the changes in balance-sheet items between two dates</td></tr><tr><td><strong>Strength</strong></td><td>Shows actual receipts and payments, which helps in <strong>estimating future cash flows</strong></td><td>Explains why profit and operating cash differ; the method <strong>most annual reports use</strong></td></tr><tr><td><strong>Investing and financing</strong></td><td colspan=\"2\">Prepared the same way under both: only the operating section differs</td></tr></tbody></table></div><p style=\"font-size:14.5px\">AS 3 allows either method for operating activities and encourages the direct one, for the same reason she gave: it shows information about receipts and payments that the indirect method does not.</p><h4>Direct method: the format</h4><ul><li><strong>Cash receipts</strong>: cash sales, cash collected from customers (trade receivables), commission and fees → total cash receipts</li><li><strong>Less cash payments</strong>: to suppliers (cash purchases of goods and payments to trade payables), to employees, for other operating expenses such as office and selling costs, and income tax → total cash paid</li><li><strong>= Net cash from operating activities</strong></li></ul><p style=\"font-size:14.5px\"><strong>Her cash-account drill.</strong> When all you are given is a summary of the cash account, only the direct method is possible. Pick out the operating items. Here the operating receipts (cash sales, collections from trade receivables, trading commission) totalled 3,65,000 and the operating payments (cash purchases, payments to trade payables, office and selling expenses, income tax) 3,82,000, so net cash from operating activities was <strong>negative: (17,000)</strong>. Receipts and payments for fixed assets, investments, loans or shares in the same cash account belong to the other two sections.</p><p style=\"font-size:14.5px\"><strong>What a negative operating figure says.</strong> The core business used more cash than it brought in, so the gap had to come from opening cash, from selling assets or from new finance. A single year can be explained by building up stock or slow collections; several years in a row is a warning about the operations themselves.</p><div class=\"def\"><b>From the lecture (L#25):</b> The indirect method is the one you will meet in company annual reports, she said, while the direct method is simpler and more useful for estimating future cash flows. Always tie the closing cash back to cash and cash equivalents on the balance sheet. She ended by asking you to read up on what a negative operating cash flow tells you about a company.</div><!--viz:fa-cf-statement-shape--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: operating plus 2,25,000, investing minus 1,60,000 and financing minus 40,000 add to a net increase in cash of 25,000; adding opening cash of 35,000 gives closing cash of 60,000, which must equal cash and cash equivalents on the balance sheet.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">How the three sections add up to the balance-sheet cash</div><div style=\"font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;gap:8px\"><div style=\"flex:1 1 120px;padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Operating</b><br><span style=\"color:var(--ink-2);font-size:13px;font-family:var(--mono)\">+2,25,000</span></div><div style=\"flex:1 1 120px;padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Investing</b><br><span style=\"color:var(--ink-2);font-size:13px;font-family:var(--mono)\">(1,60,000)</span></div><div style=\"flex:1 1 120px;padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Financing</b><br><span style=\"color:var(--ink-2);font-size:13px;font-family:var(--mono)\">(40,000)</span></div></div><div style=\"color:var(--ink-3);padding:3px 0 3px 14px\">↓ add the three</div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Net increase in cash</b> <span style=\"font-family:var(--mono)\">25,000</span></div><div style=\"color:var(--ink-3);padding:3px 0 3px 14px\">↓ + cash at the beginning of the period <span style=\"font-family:var(--mono)\">35,000</span></div><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Cash at the end of the period</b> <span style=\"font-family:var(--mono)\">60,000</span><br><span style=\"color:var(--ink-2);font-size:13px\">must equal cash and cash equivalents on the closing balance sheet</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">If the closing figure does not match the balance sheet, something in the statement is wrong.</figcaption></figure><!--/viz:fa-cf-statement-shape-->"
+    },
+    {
+     "t": "The indirect method: from net profit to operating cash",
+     "src": "L#25",
+     "h": "<p style=\"font-size:14.5px\">Start with net profit (or loss) and undo everything in it that is not an operating cash flow. She grouped the adjustments in three:</p><div class=\"scroller\"><table><thead><tr><th>Group</th><th>Examples</th><th>Treatment</th></tr></thead><tbody><tr><td><strong>1. Non-cash and non-operating charges</strong></td><td>Depreciation, amortisation of patents, goodwill written off; loss on disposal of plant assets; provision for taxation</td><td><strong>Add back</strong>: they lowered profit but took no operating cash this period</td></tr><tr><td><strong>2. Non-cash and non-operating income</strong></td><td>Gain (profit) on disposal of plant assets</td><td><strong>Deduct</strong>: it raised profit, but the sale proceeds are investing cash</td></tr><tr><td><strong>3. Working capital changes</strong></td><td>Inventory, trade receivables, prepaid expenses, trade payables, outstanding expenses</td><td>Rise in a current asset: deduct. Fall: add. Rise in a current liability: add. Fall: deduct</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The figure after groups 1 and 2 is <strong>net profit after adjustment for non-cash items</strong>; after group 3 it is <strong>cash from operating activities</strong>.</p><h4>Why the working capital signs work</h4><ul><li><strong>Receivables up</strong>: sales were counted in profit but the cash has not come in, so deduct.</li><li><strong>Inventory up</strong>: cash went into stock that has not yet been charged as cost of goods sold, so deduct.</li><li><strong>Payables up</strong>: purchases or expenses were charged but not yet paid, so the cash is still in the firm: add.</li><li><strong>Payables down</strong>: the firm paid off more than it charged this year, so deduct.</li></ul><div class=\"def\"><b>Operating items only.</b> In passing she gave buying machinery and borrowing as examples of changes in current assets and current liabilities. Keep those out of the working capital adjustment: machinery is an investing outflow and borrowing (even short-term) is a financing inflow. The adjustment covers the trade items that arise from running the business.</div><p style=\"font-size:14.5px\"><strong>Provision for taxation.</strong> Her format starts from net profit and adds back the provision for taxation. That turns the figure back into profit before tax; the tax actually paid in cash is then shown as a separate operating outflow. Part 3 makes this explicit by starting at profit before tax.</p><h4>Her walkthrough: Jaws Photo Plus</h4><p style=\"font-size:14.5px\">Net income 73,000; depreciation 7,000 added back; gain on disposal of a plant asset 2,500 deducted; accounts receivable up from 17,000 to 21,000, so 4,000 deducted; accounts payable down from 6,000 to 2,200, so 3,800 <strong>deducted</strong>. The adjustments total (3,300), and net cash from operating activities is <strong>69,700</strong> (her slide was in dollars). The fall in payables has to be deducted: only then do the figures reach 69,700.</p><p style=\"font-size:14.5px\">The figure below works a longer example of our own that also uses the tax add-back.</p><!--viz:fa-cf-wc-signs--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two-by-two grid. An increase in a current asset is deducted and a decrease is added. An increase in a current liability is added and a decrease is deducted.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Working capital changes: add or deduct?</div><div style=\"display:grid;grid-template-columns:auto 1fr 1fr;gap:4px;font-size:14px;min-width:0\"><div></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center\">Increase</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center\">Decrease</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;writing-mode:vertical-rl;transform:rotate(180deg);text-align:center\">Current assets</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--bad-soft)\"><b>Deduct</b><br><span style=\"color:var(--ink-2);font-size:13px\">receivables up: sales not yet collected; stock up: cash tied in goods</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--good-soft)\"><b>Add</b><br><span style=\"color:var(--ink-2);font-size:13px\">customers paid old bills; stock sold off</span></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;writing-mode:vertical-rl;transform:rotate(180deg);text-align:center\">Current liabilities</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--good-soft)\"><b>Add</b><br><span style=\"color:var(--ink-2);font-size:13px\">payables up: expenses charged, cash not yet paid</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--bad-soft)\"><b>Deduct</b><br><span style=\"color:var(--ink-2);font-size:13px\">payables down: suppliers paid more than this year's charge</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Assets and liabilities move in opposite directions: one diagonal adds, the other deducts.</figcaption></figure><!--/viz:fa-cf-wc-signs--><!--viz:fa-cf-sutlej-indirect--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace table: net profit after tax 2,10,000, plus provision for tax 90,000 gives 3,00,000; plus depreciation 40,000 and loss on furniture 6,000 gives 3,46,000; minus gain on land 20,000 gives 3,26,000; minus inventory rise 25,000 and plus receivables fall 12,000 gives 3,13,000; minus prepaid rise 3,000, minus payables fall 9,000, plus outstanding expenses rise 4,000 gives 3,05,000; minus tax paid 80,000 gives net operating cash of 2,25,000.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Sutlej Traders: net profit ₹2,10,000 to operating cash ₹2,25,000</div><div class=\"scroller\"><table><thead><tr><th>Step</th><th>Item</th><th>₹</th><th>Running ₹</th></tr></thead><tbody><tr><td>1</td><td>Net profit after tax</td><td style=\"font-family:var(--mono)\">2,10,000</td><td style=\"font-family:var(--mono)\">2,10,000</td></tr><tr><td>2</td><td>Add provision for taxation</td><td style=\"font-family:var(--mono)\">+90,000</td><td style=\"font-family:var(--mono)\">3,00,000</td></tr><tr><td>3</td><td>Add depreciation; add loss on sale of furniture</td><td style=\"font-family:var(--mono)\">+40,000 +6,000</td><td style=\"font-family:var(--mono)\">3,46,000</td></tr><tr><td>4</td><td>Deduct gain on sale of land</td><td style=\"font-family:var(--mono)\">−20,000</td><td style=\"font-family:var(--mono)\">3,26,000</td></tr><tr><td>5</td><td>Inventory up; receivables down</td><td style=\"font-family:var(--mono)\">−25,000 +12,000</td><td style=\"font-family:var(--mono)\">3,13,000</td></tr><tr><td>6</td><td>Prepaid up; trade payables down; outstanding expenses up</td><td style=\"font-family:var(--mono)\">−3,000 −9,000 +4,000</td><td style=\"font-family:var(--mono)\">3,05,000</td></tr><tr style=\"background:var(--blue-soft)\"><td>7</td><td>Deduct income tax actually paid</td><td style=\"font-family:var(--mono)\">−80,000</td><td style=\"font-family:var(--mono)\">2,25,000</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The tax charged is added back and the tax paid deducted; the land and furniture proceeds go to investing.</figcaption></figure><!--/viz:fa-cf-sutlej-indirect-->"
+    },
+    {
+     "t": "Classifying transactions: the Lecture 25 drills",
+     "src": "L#25",
+     "h": "<p style=\"font-size:14.5px\">Two classification drills, both answered in class.</p><h4>Huna Limited: five transactions in its first week</h4><div class=\"scroller\"><table><thead><tr><th>Transaction</th><th>Activity</th></tr></thead><tbody><tr><td>Issued ordinary shares for cash</td><td>Financing</td></tr><tr><td>Borrowed from a bank on a five-year note at 8% interest</td><td>Financing</td></tr><tr><td>Bought two semi-trailer trucks for cash</td><td>Investing</td></tr><tr><td>Paid employees their salaries and wages</td><td>Operating</td></tr><tr><td>Collected cash for services performed</td><td>Operating</td></tr></tbody></table></div><h4>Intelligent Limited: a non-financial company's bank entries</h4><div class=\"scroller\"><table><thead><tr><th>Entry</th><th>Activity</th><th>Why</th></tr></thead><tbody><tr><td>Loans and advances to <strong>suppliers</strong> and to <strong>employees</strong>, and interest earned on them</td><td>Operating</td><td>Part of buying goods and paying staff, the everyday business</td></tr><tr><td>Loans and advances to a <strong>subsidiary</strong>, and interest earned on them</td><td>Investing</td><td>Lending to another enterprise is an investment</td></tr><tr><td>Investment in the subsidiary, and dividend received from it</td><td>Investing</td><td>Return on an investment</td></tr><tr><td>Dividend paid for the year</td><td>Financing</td><td>Return to the company's own owners</td></tr><tr><td>Tax deducted at source (TDS) on interest earned on investments</td><td>Investing</td><td>The tax follows the income it was deducted from</td></tr><tr><td>TDS on interest earned on advances to suppliers</td><td>Operating</td><td>Same rule: that interest is operating</td></tr><tr><td>Insurance claim received for fixed assets lost in a fire</td><td>Investing</td><td>An extraordinary item, shown under its own heading; it replaces a fixed asset</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Two refinements to Part 1.</strong> Lecture 23 put loans to third parties under investing. For a non-financial company, advances to suppliers and employees are the exception: they belong to its trade, so they are operating. And taxes, which AS 3 treats as operating by default, go with the investing or financing item when they can be tied to it, as TDS on investment interest can. AS 3 also asks for the cash flows of extraordinary items to be classified by their nature and disclosed separately.</p><div class=\"def\"><b>From the lecture (L#25):</b> She gave seven minutes for the Huna Limited classification and said that if any item still confuses you, go back to the activity lists from Lecture 23 before you attempt it again. The Intelligent Limited drill was set as yours to solve before she gave the answers.</div>"
+    },
+    {
+     "t": "The indirect method in full: three adjustments and tax paid",
+     "src": "L#26",
+     "h": "<p style=\"font-size:14.5px\">Part 3 turns the indirect method into a full format. Net profit is on the accrual basis; the three adjustments convert it into cash from operations.</p><div class=\"scroller\"><table><thead><tr><th>Adjustment</th><th>Items</th><th>Treatment and reason</th></tr></thead><tbody><tr><td><strong>1. Non-cash items</strong></td><td>Depreciation; bad debt expense</td><td><strong>Add back</strong>. Depreciation spreads the cost of an asset already paid for; a bad debt charge is a loss on a sale, not a payment</td></tr><tr><td><strong>2. Non-operating items</strong></td><td>Gain or loss on sale of equipment or investments; interest income, dividend income; interest expense</td><td>Gains and interest or dividend income: <strong>deduct</strong> (they belong to investing). Losses: <strong>add back</strong>. Interest expense: <strong>add back</strong> (it is a cost of financing)</td></tr><tr><td><strong>3. Working capital</strong></td><td>Inventory, trade receivables, prepaid expenses, trade payables</td><td>These create the timing gap between recording and paying. Rise in a current asset: deduct. Rise in a current liability: add (and the reverse)</td></tr></tbody></table></div><p style=\"font-size:14.5px\">For a non-financial company this matches AS 3: interest and dividends received are investing, interest paid is financing, so they are taken out of operating profit and shown in those sections instead.</p><h4>The format, in order</h4><ol><li><strong>Profit before tax</strong>, from the statement of profit and loss</li><li>± non-cash and non-operating items = <strong>operating profit before working capital changes</strong></li><li>± working capital changes = <strong>cash generated from operations</strong></li><li>− income tax paid = <strong>net cash flow from operating activities</strong></li></ol><p style=\"font-size:14.5px\">Deductions are written in brackets. The heading names the company, the statement, the method and the period.</p><div class=\"def\"><b>Income tax paid</b> = tax expense + opening tax payable − closing tax payable. A fall in the tax liability means more cash was paid than this year's charge; a rise means less.</div><h4>Her drill: Ajay Company</h4><div class=\"scroller\"><table><thead><tr><th>Step</th><th>₹</th></tr></thead><tbody><tr><td>Profit before tax</td><td style=\"font-family:var(--mono)\">4,32,000</td></tr><tr><td>Add depreciation; deduct gain on sale of investments</td><td style=\"font-family:var(--mono)\">+49,000 (8,000)</td></tr><tr><td><strong>Operating profit before working capital changes</strong></td><td style=\"font-family:var(--mono)\">4,73,000</td></tr><tr><td>Inventory down 72,000 → 59,000; receivables up 61,000 → 94,000</td><td style=\"font-family:var(--mono)\">+13,000 (33,000)</td></tr><tr><td>Prepaid expenses up; trade payables up</td><td style=\"font-family:var(--mono)\">(11,000) +4,000</td></tr><tr><td><strong>Cash generated from operations</strong></td><td style=\"font-family:var(--mono)\">4,46,000</td></tr><tr><td>Income tax paid: 92,000 + 19,000 − 13,000</td><td style=\"font-family:var(--mono)\">(98,000)</td></tr><tr><td><strong>Net cash flow from operating activities</strong></td><td style=\"font-family:var(--mono)\">3,48,000</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The gain on investments is not stated on its own in the recording; 8,000 is the figure that makes her subtotal of 4,73,000 work.</p><div class=\"def\"><b>From the lecture (L#26):</b> Understand why each adjustment has its sign rather than memorising the table, she said. The operating section takes most of the effort; investing and financing are a few clear transactions. She closed with four quick checks: why depreciation is added back; what a rise in trade receivables does to operating cash; net profit plus depreciation with no other adjustments; and the adjustment when receivables rise over the year.</div>"
+    },
+    {
+     "t": "Compass Company: operating cash flow step by step",
+     "src": "L#26",
+     "h": "<p style=\"font-size:14.5px\">The case she worked through is <strong>Compass Company</strong>, from R. Narayanaswamy, <em>Financial Accounting: A Managerial Perspective</em> (6th edition): balance sheets at 31 March 20X4 and 20X5, a statement of profit and loss, notes and eleven transactions. Work it from the book; below are the method and the key figures, in ₹.</p><h4>The three adjustments</h4><ul><li><strong>Start</strong>: profit before tax ₹70,000 (profit after tax ₹43,000 + tax expense ₹27,000).</li><li><strong>Non-cash items</strong>: add depreciation ₹98,000 and bad debt expense ₹12,000.</li><li><strong>Non-operating items</strong>: deduct the gain on sale of equipment (₹6,000) and interest income (₹7,000); add back the loss on sale of investments (₹9,000) and finance costs (₹22,000). Operating profit before working capital changes: <strong>₹1,98,000</strong>.</li><li><strong>Working capital</strong>: inventory up (₹58,000); trade receivables (₹44,000); prepaid expenses down +₹2,000; trade payables down (₹14,000). Cash generated from operations: <strong>₹84,000</strong>.</li><li><strong>Tax paid</strong> = 27,000 + 20,000 opening liability − 35,000 closing liability = <strong>₹12,000</strong>. Net cash flow from operating activities: <strong>₹72,000</strong>.</li></ul><h4>Why receivables are ₹44,000, not ₹32,000</h4><p style=\"font-size:14.5px\">Net receivables (after the allowance for bad debts) rose by ₹32,000. Because the bad debt expense of ₹12,000 has been added back, the receivables change must be measured <strong>before</strong> the allowance: gross receivables rose by ₹34,000 and another ₹10,000 was written off, ₹44,000 in all. The other route gives the same answer: do not add back the bad debts and deduct the ₹32,000 rise in net receivables (+12,000 − 44,000 = −32,000). Mixing the two, adding back ₹12,000 and deducting only ₹32,000, overstates operating cash by ₹12,000.</p><details><summary>Cross-check by the direct method</summary><p style=\"font-size:14.5px\">Cash from customers = opening gross receivables 1,00,000 + sales 9,25,000 − written off 10,000 − closing gross receivables 1,34,000 = ₹8,81,000. Paid to suppliers = cost of goods sold 6,69,000 + rise in inventory 58,000 + fall in trade payables 14,000 = ₹7,41,000. Selling and administrative expenses paid = 58,000 − fall in prepaid 2,000 = ₹56,000. Tax ₹12,000. Net: 8,81,000 − 7,41,000 − 56,000 − 12,000 = <strong>₹72,000</strong>, the same as the indirect method.</p></details><p style=\"font-size:14.5px\">In the recording she once says that an increase in current assets is “added”; her worked figures deduct it, which is the rule.</p><!--viz:fa-cf-compass-operating--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace: profit before tax 70,000; add non-cash items 1,10,000 to reach 1,80,000; net non-operating adjustments plus 18,000 give operating profit before working capital changes of 1,98,000; working capital changes minus 1,14,000 give cash generated from operations of 84,000; minus tax paid 12,000 gives net operating cash of 72,000.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Compass Company: profit before tax ₹70,000 to operating cash ₹72,000</div><div class=\"scroller\"><table><thead><tr><th>Step</th><th>Adjustment</th><th>₹</th><th>Subtotal ₹</th></tr></thead><tbody><tr><td>1</td><td>Profit before tax</td><td style=\"font-family:var(--mono)\">70,000</td><td style=\"font-family:var(--mono)\">70,000</td></tr><tr><td>2</td><td>Non-cash: depreciation, bad debts</td><td style=\"font-family:var(--mono)\">+1,10,000</td><td style=\"font-family:var(--mono)\">1,80,000</td></tr><tr><td>3</td><td>Non-operating: −gain 6,000 +loss 9,000 +interest paid 22,000 −interest earned 7,000</td><td style=\"font-family:var(--mono)\">+18,000</td><td style=\"font-family:var(--mono)\">1,98,000</td></tr><tr><td>4</td><td>Working capital: inventory, receivables, prepaid, payables</td><td style=\"font-family:var(--mono)\">−1,14,000</td><td style=\"font-family:var(--mono)\">84,000</td></tr><tr style=\"background:var(--blue-soft)\"><td>5</td><td>Income tax paid</td><td style=\"font-family:var(--mono)\">−12,000</td><td style=\"font-family:var(--mono)\">72,000</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Working capital swallowed more than half of the operating profit before working capital changes.</figcaption></figure><!--/viz:fa-cf-compass-operating-->"
+    },
+    {
+     "t": "Compass Company: investing, financing and the fall in cash",
+     "src": "L#26",
+     "h": "<p style=\"font-size:14.5px\">Investing and financing come from the transaction information and the changes in the balance-sheet accounts. Only transactions that move cash appear.</p><h4>Investing activities</h4><div class=\"scroller\"><table><thead><tr><th>Item</th><th>₹</th></tr></thead><tbody><tr><td>Equipment bought for cash</td><td style=\"font-family:var(--mono)\">(1,73,000)</td></tr><tr><td>Equipment sold: cost 67,000, accumulated depreciation 51,000, book value 16,000, so a gain of 6,000</td><td style=\"font-family:var(--mono)\">22,000</td></tr><tr><td>Investments bought</td><td style=\"font-family:var(--mono)\">(26,000)</td></tr><tr><td>Investments sold: cost 51,000, so a loss of 9,000</td><td style=\"font-family:var(--mono)\">42,000</td></tr><tr><td>Interest received</td><td style=\"font-family:var(--mono)\">7,000</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Net cash used in investing activities</strong></td><td style=\"font-family:var(--mono)\">(1,28,000)</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The equipment bought <strong>on credit</strong> (₹49,000) is left out: it explains the rise in bills payable, not any cash. The proceeds (₹22,000 and ₹42,000) are the investing figures; the gain and loss were already removed from operating profit.</p><p style=\"font-size:14.5px\"><strong>Roll-forward checks:</strong> gross block 8,18,000 + 1,73,000 + 49,000 − 67,000 = 9,73,000; accumulated depreciation 5,05,000 + 98,000 − 51,000 = 5,52,000; investments 1,42,000 + 26,000 − 51,000 = 1,17,000. All agree with the closing balance sheet.</p><h4>Financing activities</h4><div class=\"scroller\"><table><thead><tr><th>Item</th><th>₹</th></tr></thead><tbody><tr><td>Shares issued at par for cash</td><td style=\"font-family:var(--mono)\">1,00,000</td></tr><tr><td>Dividends paid</td><td style=\"font-family:var(--mono)\">(25,000)</td></tr><tr><td>Debentures redeemed</td><td style=\"font-family:var(--mono)\">(27,000)</td></tr><tr><td>Current loan repaid</td><td style=\"font-family:var(--mono)\">(1,000)</td></tr><tr><td>Interest paid (the whole finance cost)</td><td style=\"font-family:var(--mono)\">(22,000)</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Net cash from financing activities</strong></td><td style=\"font-family:var(--mono)\">25,000</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The ₹50,000 of debentures <strong>converted into equity shares</strong> is left out: no cash moved. That is why share capital rose by ₹1,50,000 while only ₹1,00,000 came in as cash, and why non-current borrowings fell by ₹77,000 while only ₹27,000 was paid out.</p><h4>The reconciliation</h4><p style=\"font-size:14.5px\">72,000 − 1,28,000 + 25,000 = <strong>(31,000)</strong>. Opening cash ₹51,000 − 31,000 = ₹20,000, exactly the closing cash and cash equivalents. <strong>Reading it:</strong> operations generated cash, but only enough for a little over half (56%) of the net investment; the rest came from new shares and from running down the cash balance.</p><div class=\"def\"><b>From the lecture (L#26):</b> Not every transaction affects the cash flow statement, she warned: in Compass Company the equipment bought on credit and the conversion of debentures into shares both stay out. Interest and dividends received are investing; interest and dividends paid are financing. Keep that distinction straight.</div><!--viz:fa-cf-compass-reconcile--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: operating plus 72,000, investing minus 1,28,000 and financing plus 25,000 give a net decrease in cash of 31,000; opening cash 51,000 less 31,000 gives closing cash 20,000, matching the balance sheet. Two non-cash transactions, equipment on credit 49,000 and debentures converted 50,000, are left out.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Compass Company: why cash fell by ₹31,000</div><div style=\"font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;gap:8px\"><div style=\"flex:1 1 120px;padding:7px 11px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\"><b>Operating</b><br><span style=\"font-family:var(--mono)\">+72,000</span></div><div style=\"flex:1 1 120px;padding:7px 11px;border:1px solid var(--bad);border-radius:4px;background:var(--bad-soft)\"><b>Investing</b><br><span style=\"font-family:var(--mono)\">(1,28,000)</span></div><div style=\"flex:1 1 120px;padding:7px 11px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\"><b>Financing</b><br><span style=\"font-family:var(--mono)\">+25,000</span></div></div><div style=\"color:var(--ink-3);padding:3px 0 3px 14px\">↓ net change</div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Net decrease in cash</b> <span style=\"font-family:var(--mono)\">(31,000)</span></div><div style=\"color:var(--ink-3);padding:3px 0 3px 14px\">↓ opening cash <span style=\"font-family:var(--mono)\">51,000</span></div><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Closing cash</b> <span style=\"font-family:var(--mono)\">20,000</span><br><span style=\"color:var(--ink-2);font-size:13px\">= cash and cash equivalents, 31 March 20X5</span></div><p style=\"font-size:13px;color:var(--ink-2);margin-top:6px\">Left out: equipment on credit 49,000 · debentures converted 50,000</p></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Operations and new shares together could not cover the investment, so the cash balance made up the gap.</figcaption></figure><!--/viz:fa-cf-compass-reconcile-->"
     }
    ]
   }
@@ -1218,6 +1260,76 @@ HUB.addCourse({
    "p": "Vogue's worksheet balance-sheet columns total ₹61,190 because the ₹50 is listed as a credit; the formal balance sheet nets it off equipment and totals ₹61,140. It is never a liability.",
    "f": "net it off the asset",
    "lec": 24
+  },
+  {
+   "id": "fa-t0097",
+   "h": "A fall in trade payables is deducted, not added",
+   "p": "Paying suppliers more than this year's charge takes cash out. In the Jaws Photo Plus walkthrough, payables fell by 3,800 and the answer of 69,700 is reached only by deducting it.",
+   "f": "payables down, cash down",
+   "lec": 25
+  },
+  {
+   "id": "fa-t0098",
+   "h": "Advances to suppliers and employees are operating for a non-financial company",
+   "p": "Lecture 23 put loans to others under investing, but advances to suppliers and staff are part of the trade, so they and their interest are operating. A loan to a subsidiary is investing.",
+   "f": "trade advance = operating",
+   "lec": 25
+  },
+  {
+   "id": "fa-t0099",
+   "h": "An insurance claim for a fixed asset lost in a fire is investing, not operating income",
+   "p": "It replaces a long-term asset. It is an extraordinary item, so it is shown separately, under investing.",
+   "f": "asset lost, investing in",
+   "lec": 25
+  },
+  {
+   "id": "fa-t0100",
+   "h": "Working capital adjustments cover operating items only",
+   "p": "Buying machinery is investing and a short-term bank loan is financing, even though both touch current balances. Only trade items such as receivables, stock, prepaid and outstanding expenses and trade payables are adjusted.",
+   "f": "trade items only",
+   "lec": 25
+  },
+  {
+   "id": "fa-t0101",
+   "h": "Tax deducted at source follows the income it came from",
+   "p": "TDS on interest from investments is investing; TDS on interest from advances to suppliers is operating. Tax is operating by default only when it cannot be tied to an investing or financing item.",
+   "f": "tax follows its income",
+   "lec": 25
+  },
+  {
+   "id": "fa-t0102",
+   "h": "Interest expense is added back in operating and shown as a financing outflow (non-financial firm, AS 3)",
+   "p": "It was deducted in arriving at profit, but it is a cost of financing. Leaving it inside operating cash and also showing it under financing counts it twice; leaving it only in operating misclassifies it.",
+   "f": "interest paid → financing",
+   "lec": 26
+  },
+  {
+   "id": "fa-t0103",
+   "h": "Tax paid is not the tax expense",
+   "p": "Cash paid = expense + opening liability − closing liability. In Compass Company the expense was ₹27,000 but only ₹12,000 was paid, because the liability rose from ₹20,000 to ₹35,000.",
+   "f": "expense ± liability change",
+   "lec": 26
+  },
+  {
+   "id": "fa-t0104",
+   "h": "If bad debts are added back, measure receivables before the allowance",
+   "p": "Either add back the bad debt expense and use the change in gross receivables plus write-offs, or skip the add-back and use the change in net receivables. Compass Company gives ₹72,000 either way; mixing the routes counts the bad debts twice.",
+   "f": "pick one route",
+   "lec": 26
+  },
+  {
+   "id": "fa-t0105",
+   "h": "The investing inflow on a sale is the proceeds, not the book value or the gain",
+   "p": "Compass sold equipment with a book value of ₹16,000 for ₹22,000. Investing shows ₹22,000; the ₹6,000 gain is deducted from operating profit so that it is not counted twice.",
+   "f": "proceeds in, gain out",
+   "lec": 26
+  },
+  {
+   "id": "fa-t0106",
+   "h": "Credit purchases of assets and debt-to-equity conversions stay out of the statement",
+   "p": "Compass bought ₹49,000 of equipment on credit and converted ₹50,000 of debentures into shares. Neither moved cash, so balance-sheet changes overstate the cash flows: share capital rose ₹1,50,000 but only ₹1,00,000 was cash.",
+   "f": "balance change ≠ cash",
+   "lec": 26
   }
  ],
  "defs": [
@@ -2053,6 +2165,94 @@ HUB.addCourse({
    "term": "Supplies vs supplies expense",
    "html": "<b>Supplies</b> is an asset (the stock of supplies still on hand) and goes to the balance sheet. <b>Supplies expense</b> is the part used up in the period and goes to the profit and loss account.",
    "lec": 24
+  },
+  {
+   "id": "fa-d0107",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Direct method",
+   "html": "<b>Direct method</b>: works out operating cash flow from the gross cash receipts (from customers, commissions) and gross cash payments (to suppliers, employees, for expenses and tax).",
+   "lec": 25
+  },
+  {
+   "id": "fa-d0108",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Indirect method",
+   "html": "<b>Indirect method</b>: works out operating cash flow by starting from net profit and adjusting it for non-cash items, non-operating items and changes in working capital.",
+   "lec": 25
+  },
+  {
+   "id": "fa-d0109",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Net increase or decrease in cash",
+   "html": "<b>Net increase or decrease in cash</b>: the total of net cash from operating, investing and financing activities. Opening cash plus this figure equals closing cash, which must match the balance sheet.",
+   "lec": 25
+  },
+  {
+   "id": "fa-d0110",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Working capital adjustment",
+   "html": "<b>Working capital adjustment</b>: in the indirect method, the correction for changes in operating current assets and liabilities. A rise in a current asset is deducted; a rise in a current liability is added.",
+   "lec": 25
+  },
+  {
+   "id": "fa-d0111",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Non-cash expense",
+   "html": "<b>Non-cash expense</b>: an expense that reduces profit without any cash leaving in that period, such as depreciation, amortisation or goodwill written off. Added back in the indirect method.",
+   "lec": 25
+  },
+  {
+   "id": "fa-d0112",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Negative operating cash flow",
+   "html": "<b>Negative operating cash flow</b>: the core business paid out more cash than it took in during the period, so the shortfall had to come from opening cash, investing inflows or new finance.",
+   "lec": 25
+  },
+  {
+   "id": "fa-d0113",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Operating profit before working capital changes",
+   "html": "<b>Operating profit before working capital changes</b>: profit before tax after adding back non-cash items and removing non-operating items, before adjusting for changes in inventory, receivables, prepaid expenses and payables.",
+   "lec": 26
+  },
+  {
+   "id": "fa-d0114",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Cash generated from operations",
+   "html": "<b>Cash generated from operations</b>: operating profit before working capital changes, adjusted for working capital changes. Deducting income tax paid from it gives net cash flow from operating activities.",
+   "lec": 26
+  },
+  {
+   "id": "fa-d0115",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Income tax paid",
+   "html": "<b>Income tax paid</b> (cash flow): tax expense + opening tax payable − closing tax payable. An operating outflow unless the tax can be tied to an investing or financing item.",
+   "lec": 26
+  },
+  {
+   "id": "fa-d0116",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Non-operating items",
+   "html": "<b>Non-operating items</b> (indirect method): items inside profit whose cash belongs to investing or financing: gains and losses on selling assets or investments, interest and dividend income, interest expense.",
+   "lec": 26
+  },
+  {
+   "id": "fa-d0117",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Book value of an asset sold",
+   "html": "<b>Book value</b> of an asset sold: its cost minus accumulated depreciation. Sale proceeds above it give a gain, below it a loss; the proceeds themselves are the investing inflow.",
+   "lec": 26
   }
  ],
  "questions": [
@@ -7194,6 +7394,618 @@ HUB.addCourse({
    "w": "Sales ignore what the goods and other costs cost; the bank balance ignores unpaid bills and customers who have not paid. Profit for the period comes from the trading and P&L account; the position on 31 March from the balance sheet.",
    "lec": 24,
    "lv": "analyse"
+  },
+  {
+   "id": "fa-q0313",
+   "topic": "Cash flow statement",
+   "q": "After preparing a cash flow statement, which figure must the cash at the end of the period agree with?",
+   "c": [
+    "Net profit for the year",
+    "Retained earnings on the balance sheet",
+    "Cash and cash equivalents on the balance sheet",
+    "Total current assets"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Opening cash plus the net change from the three activities gives closing cash, which must equal cash and cash equivalents on the balance sheet. Net profit is where the indirect method starts, not where the statement ends.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0314",
+   "topic": "Cash flow statement",
+   "q": "Opening cash is ₹25,000. Net cash from operating activities is ₹1,40,000, from investing activities (₹1,10,000) and from financing activities (₹35,000). What is the closing cash?",
+   "c": [
+    "₹20,000",
+    "−₹5,000",
+    "₹90,000",
+    "₹3,10,000"
+   ],
+   "a": [
+    0
+   ],
+   "w": "25,000 + 1,40,000 − 1,10,000 − 35,000 = ₹20,000. −₹5,000 is the net change alone, without the opening cash; ₹90,000 treats the financing outflow as an inflow.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0315",
+   "topic": "Cash flow statement",
+   "q": "What does the direct method of computing operating cash flow start from?",
+   "c": [
+    "Net profit from the income statement",
+    "Gross cash receipts and gross cash payments",
+    "The change in total current assets",
+    "Closing cash on the balance sheet"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The direct method lists the actual cash received from customers and paid to suppliers, employees and the government. Starting from net profit is the indirect method.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0316",
+   "topic": "Cash flow statement",
+   "q": "When you read the cash flow statement in an Indian company's annual report, how is the operating section most likely to have been prepared?",
+   "c": [
+    "By the direct method, because it is simpler",
+    "By the direct method, because AS 3 does not allow the other",
+    "As a list of cash-book entries for the year",
+    "By the indirect method"
+   ],
+   "a": [
+    3
+   ],
+   "w": "She stressed that the indirect method is the more popular one in practice. AS 3 allows both (it encourages the direct method), so simplicity has not made the direct method the usual choice.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0317",
+   "topic": "Cash flow statement",
+   "q": "Which advantage did the lecture give for the direct method?",
+   "c": [
+    "It is the only method AS 3 permits",
+    "It removes the need for investing and financing sections",
+    "It starts from audited profit",
+    "Its information is useful for estimating future cash flows"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Showing actual receipts and payments helps users estimate future cash flows, which the indirect method does not show. Starting from profit describes the indirect method, and both methods still need the other two sections.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0318",
+   "topic": "Cash flow statement",
+   "q": "From a cash account: cash sales ₹1,40,000; collections from trade receivables ₹2,10,000; trading commission received ₹10,000; cash purchases of goods ₹80,000; paid to trade payables ₹1,90,000; office and selling expenses ₹55,000; income tax ₹20,000; purchase of machinery ₹50,000. Net cash from operating activities (direct method) is:",
+   "c": [
+    "₹15,000",
+    "−₹35,000",
+    "₹35,000",
+    "₹3,60,000"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Operating receipts 3,60,000 − operating payments 3,45,000 = ₹15,000. The machinery is an investing outflow; including it gives −₹35,000. ₹35,000 forgets the income tax, which is operating.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0319",
+   "topic": "Cash flow statement",
+   "q": "A company's trade payables fall from ₹50,000 to ₹38,000 during the year. In the indirect method, this change is:",
+   "c": [
+    "Added, ₹12,000",
+    "Ignored, because payables are a liability",
+    "Deducted, ₹12,000",
+    "Shown under financing activities"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Payables fell because suppliers were paid more than this year's purchases, so cash went out: deduct ₹12,000. Adding it is the classic sign slip; trade payables are operating, not financing.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0320",
+   "topic": "Cash flow statement",
+   "q": "Net income ₹2,40,000; depreciation ₹30,000; gain on disposal of plant ₹8,000; accounts receivable up ₹15,000; accounts payable down ₹6,000. Net cash from operating activities (indirect method) is:",
+   "c": [
+    "₹2,53,000",
+    "₹2,41,000",
+    "₹2,57,000",
+    "₹2,62,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "2,40,000 + 30,000 − 8,000 − 15,000 − 6,000 = ₹2,41,000. ₹2,53,000 adds the fall in payables instead of deducting it; ₹2,57,000 adds the gain; ₹2,62,000 skips the working capital changes.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0321",
+   "topic": "Cash flow statement",
+   "q": "Net profit includes a loss of ₹9,000 on the disposal of an old machine. Under the indirect method, the loss is:",
+   "c": [
+    "Deducted, because it is a loss",
+    "Shown as an operating outflow of ₹9,000",
+    "Ignored, because no cash was received",
+    "Added back to net profit"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The loss lowered profit but is not an operating cash flow; the cash from the sale goes to investing. So it is added back, the mirror image of deducting a gain.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0322",
+   "topic": "Cash flow statement",
+   "q": "Inventory falls from ₹90,000 to ₹75,000 during the year. In the indirect method, the change is:",
+   "c": [
+    "Added, ₹15,000",
+    "Deducted, ₹15,000",
+    "Shown under investing activities",
+    "Ignored, because stock is not cash"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A fall in a current asset means stock was turned into sales without being replaced, releasing cash: add ₹15,000. Deducting applies when stock rises.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0323",
+   "topic": "Cash flow statement",
+   "q": "Her indirect-method format starts from net profit and adds back the provision for taxation. Why is that correct?",
+   "c": [
+    "Tax is a financing cash flow",
+    "The provision is not cash; the tax actually paid is shown separately as an operating outflow",
+    "Tax is never paid in cash",
+    "AS 3 requires tax to be left out of the statement"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Adding the provision back returns to profit before tax; the cash paid to the government is then deducted as an operating outflow. Tax is operating, not financing, and it certainly appears in the statement.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0324",
+   "topic": "Cash flow statement",
+   "q": "A logistics company pays cash for two new delivery trucks. This is a cash flow from:",
+   "c": [
+    "Operating activities",
+    "Investing activities",
+    "Financing activities",
+    "None of the three, as the trucks are assets"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Buying long-term assets is investing, as in the Huna Limited drill. The trucks will be used in operations, but buying them is not an operating cash flow.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0325",
+   "topic": "Cash flow statement",
+   "q": "Intelligent Limited, a non-financial company, gives an advance to one of its raw-material suppliers and earns interest on it. Under the lecture's solution, the advance and the interest are:",
+   "c": [
+    "Investing, because they are loans",
+    "Financing, because interest is involved",
+    "Not shown, because the advance will be adjusted against purchases",
+    "Operating"
+   ],
+   "a": [
+    3
+   ],
+   "w": "An advance to a supplier is part of buying goods, the company's trade, so it and its interest are operating. Calling it investing because it is a loan applies to loans to a subsidiary or other outsiders.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0326",
+   "topic": "Cash flow statement",
+   "q": "A manufacturing company lends ₹40 lakh to its subsidiary. In its cash flow statement this is:",
+   "c": [
+    "An investing outflow",
+    "An operating outflow",
+    "A financing outflow",
+    "Not shown"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Lending to another enterprise is an investment for a non-financial company. It would be operating only for a bank, whose business is lending.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0327",
+   "topic": "Cash flow statement",
+   "q": "A non-financial company's bank shows tax deducted at source on interest it earned on its investments. Where does this TDS go?",
+   "c": [
+    "Operating, because all taxes are operating",
+    "Financing",
+    "Investing, along with the interest it was deducted from",
+    "Not shown, because it is a tax credit"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Tax is operating unless it can be tied to an investing or financing item. This TDS clearly belongs to investment interest, which is investing for a non-financial company.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0328",
+   "topic": "Cash flow statement",
+   "q": "A factory receives an insurance claim for machinery destroyed in a fire. In the cash flow statement this is:",
+   "c": [
+    "Operating, as other income",
+    "Investing, shown separately as an extraordinary item",
+    "Financing",
+    "Not shown, because it is compensation"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The claim replaces a fixed asset, so it is an investing inflow, and as an extraordinary item it is disclosed under its own heading. Treating it as other income in operating is the tempting slip.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0329",
+   "topic": "Cash flow statement",
+   "q": "A company reports negative net cash from operating activities for the year. What does this tell you?",
+   "c": [
+    "It made a net loss",
+    "Its investing activities were too large",
+    "It must have issued shares",
+    "Its core operations used more cash than they generated, so the gap came from cash reserves, asset sales or finance"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Negative operating cash means operations did not pay for themselves in cash that year. A profitable firm can still show it, so a loss does not follow, and the shortfall could be met in several ways.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0330",
+   "topic": "Cash flow statement",
+   "q": "A firm earns net profit of ₹50,000 with depreciation of ₹10,000. Trade receivables rise by ₹70,000 and inventory by ₹20,000; nothing else changes. Its net cash from operating activities is:",
+   "c": [
+    "₹50,000",
+    "₹1,50,000",
+    "−₹30,000",
+    "₹60,000"
+   ],
+   "a": [
+    2
+   ],
+   "w": "50,000 + 10,000 − 70,000 − 20,000 = −₹30,000. A profitable firm can have negative operating cash when sales are on credit and stock is building up. ₹1,50,000 adds the increases instead of deducting them.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0331",
+   "topic": "Cash flow statement",
+   "q": "In the indirect method, why is the bad debt expense for the year added back to profit?",
+   "c": [
+    "Because bad debts are an investing loss",
+    "Because the charge reduced profit but no cash was paid out for it",
+    "Because the customers will pay later after all",
+    "Because AS 3 treats bad debts as financing"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A bad debt charge records a sale that will not be collected; no cash leaves the business. It is added back for the same reason as depreciation. Nothing suggests the customers will pay.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0332",
+   "topic": "Cash flow statement",
+   "q": "A manufacturing company's profit before tax is after charging interest of ₹22,000 on its loans, all paid during the year. Under AS 3, how does the interest appear in its cash flow statement?",
+   "c": [
+    "Deducted again in operating activities",
+    "Left inside operating profit, with nothing in financing",
+    "As an investing outflow",
+    "Added back in operating activities and shown as a financing outflow of ₹22,000"
+   ],
+   "a": [
+    3
+   ],
+   "w": "For a non-financial company interest paid is a financing cash flow, so it is removed from operating profit (added back) and shown under financing. Leaving it inside operating would misclassify it.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0333",
+   "topic": "Cash flow statement",
+   "q": "A trading company's profit includes interest income of ₹4,000 on a fixed deposit, all received. Under the indirect method and AS 3, the interest is:",
+   "c": [
+    "Deducted from profit in operating activities and shown as an investing inflow",
+    "Left in operating cash flow",
+    "Added back to profit and shown under financing",
+    "Ignored, because the deposit is a cash equivalent"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Interest received by a non-financial company is investing, so it is taken out of operating profit and shown under investing. Leaving it in operating is the treatment only a bank would use.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0334",
+   "topic": "Cash flow statement",
+   "q": "Investments that cost ₹80,000 are sold for ₹65,000. How does this sale affect the indirect-method cash flow statement?",
+   "c": [
+    "Deduct ₹15,000 in operating; investing inflow ₹80,000",
+    "Operating inflow ₹65,000",
+    "Add back ₹15,000 loss in operating; investing inflow ₹65,000",
+    "Investing outflow ₹15,000 only"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The ₹15,000 loss lowered profit but is not an operating cash flow, so it is added back. The cash actually received, ₹65,000, is the investing inflow; the original cost is not a cash figure this year.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0335",
+   "topic": "Cash flow statement",
+   "q": "Equipment that cost ₹1,20,000, with accumulated depreciation of ₹90,000, is sold for ₹45,000 cash. What is the investing inflow?",
+   "c": [
+    "₹30,000",
+    "₹45,000",
+    "₹15,000",
+    "₹75,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The investing inflow is the cash received, ₹45,000. ₹30,000 is the book value and ₹15,000 the gain, which is deducted from operating profit instead.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0336",
+   "topic": "Cash flow statement",
+   "q": "Income tax expense is ₹60,000. The income tax payable was ₹18,000 at the start of the year and ₹25,000 at the end. How much income tax was paid?",
+   "c": [
+    "₹60,000",
+    "₹67,000",
+    "₹53,000",
+    "₹43,000"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Tax paid = 60,000 + 18,000 − 25,000 = ₹53,000. The liability rose, so less than the expense was paid. ₹67,000 reverses the opening and closing balances.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0337",
+   "topic": "Cash flow statement",
+   "q": "Prepaid expenses rise from ₹4,000 to ₹9,000 during the year. In the indirect method this is:",
+   "c": [
+    "Deducted, ₹5,000",
+    "Added, ₹5,000",
+    "Shown under investing",
+    "Ignored, because prepaid expenses are not cash"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A rise in prepaid expenses means cash was paid in advance for costs not yet charged against profit, so deduct ₹5,000. Like any current asset, a rise is deducted.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0338",
+   "topic": "Cash flow statement",
+   "q": "Trade receivables were ₹80,000 at the beginning of the year and ₹95,000 at the end. Under the indirect method, the adjustment is:",
+   "c": [
+    "Add ₹15,000",
+    "Add ₹95,000",
+    "Deduct ₹95,000",
+    "Deduct ₹15,000"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Only the change counts. ₹15,000 of this year's sales is still uncollected, so it is deducted. Using a closing balance in place of the change is the slip.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0339",
+   "topic": "Cash flow statement",
+   "q": "A company buys machinery worth ₹49,000 on credit, giving the supplier a bill payable. How does it appear in the cash flow statement for that year?",
+   "c": [
+    "Investing outflow of ₹49,000",
+    "It does not appear, because no cash moved",
+    "Financing inflow of ₹49,000",
+    "Operating outflow of ₹49,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "No cash changed hands, so the transaction stays out of the statement, as in Compass Company. The cash outflow will appear when the bill is paid.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0340",
+   "topic": "Cash flow statement",
+   "q": "In the format she used for the indirect method, which order of subtotals is correct?",
+   "c": [
+    "Profit before tax → operating profit before working capital changes → cash generated from operations → net cash flow from operating activities",
+    "Profit before tax → cash generated from operations → operating profit before working capital changes → net cash flow from operating activities",
+    "Net cash flow from operating activities → cash generated from operations → profit before tax",
+    "Profit after tax → net cash flow from operating activities → cash generated from operations"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Non-cash and non-operating items come first, then working capital, then income tax paid. Cash generated from operations is the figure before tax is deducted.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0341",
+   "topic": "Cash flow statement",
+   "q": "Profit before tax ₹1,50,000; depreciation ₹40,000; interest expense ₹10,000; interest income ₹4,000; gain on sale of a machine ₹6,000; inventory up ₹20,000; trade receivables down ₹8,000; trade payables up ₹5,000; income tax paid ₹30,000. Net cash flow from operating activities is:",
+   "c": [
+    "₹1,83,000",
+    "₹1,43,000",
+    "₹1,53,000",
+    "₹1,67,000"
+   ],
+   "a": [
+    2
+   ],
+   "w": "1,50,000 + 40,000 + 10,000 − 4,000 − 6,000 = 1,90,000; − 20,000 + 8,000 + 5,000 = 1,83,000; − 30,000 = ₹1,53,000. ₹1,83,000 stops before tax paid; ₹1,43,000 does not add back the interest expense; ₹1,67,000 reverses the working capital signs.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0342",
+   "topic": "Cash flow statement",
+   "q": "During the year a company buys machinery for ₹2,00,000 cash, sells an old machine for ₹30,000, buys investments for ₹50,000, sells investments for ₹70,000, receives interest of ₹5,000 and buys more machinery for ₹40,000 on credit. Net cash from investing activities is:",
+   "c": [
+    "−₹1,85,000",
+    "−₹1,50,000",
+    "−₹2,45,000",
+    "−₹1,45,000"
+   ],
+   "a": [
+    3
+   ],
+   "w": "−2,00,000 + 30,000 − 50,000 + 70,000 + 5,000 = −₹1,45,000. The credit purchase moves no cash; including it gives −₹1,85,000. Leaving out the interest received gives −₹1,50,000.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0343",
+   "topic": "Cash flow statement",
+   "q": "A company issues shares for ₹2,00,000 cash, converts ₹1,00,000 of debentures into equity shares, pays dividends of ₹40,000, repays a loan of ₹60,000 and pays interest of ₹15,000. It is a manufacturer. Net cash from financing activities is:",
+   "c": [
+    "₹1,85,000",
+    "₹85,000",
+    "₹1,00,000",
+    "−₹15,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "2,00,000 − 40,000 − 60,000 − 15,000 = ₹85,000. The conversion moves no cash; counting it as an inflow gives ₹1,85,000. Leaving out the interest paid gives ₹1,00,000.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0344",
+   "topic": "Cash flow statement",
+   "q": "Cash falls from ₹60,000 to ₹25,000 during the year. Net cash from operating activities is ₹1,10,000 and from financing activities (₹15,000). What must net cash from investing activities be?",
+   "c": [
+    "−₹1,30,000",
+    "−₹1,60,000",
+    "₹1,30,000",
+    "−₹35,000"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The net change is −35,000 = 1,10,000 + investing − 15,000, so investing = −₹1,30,000. −₹35,000 is the total change, not the investing figure; −₹1,60,000 treats the financing outflow as an inflow.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0345",
+   "topic": "Cash flow statement",
+   "q": "Net profit ₹1,00,000. Bad debt expense of ₹5,000 was charged by raising the allowance; nothing was written off. Gross trade receivables rose by ₹20,000, so net receivables rose by ₹15,000. Ignoring everything else, operating cash is:",
+   "c": [
+    "₹1,05,000",
+    "₹90,000",
+    "₹80,000",
+    "₹85,000"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Add back 5,000 and deduct the gross rise of 20,000, or skip the add-back and deduct the net rise of 15,000: ₹85,000 either way. ₹90,000 adds back the bad debts and also uses the net figure, counting them twice.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0346",
+   "topic": "Cash flow statement",
+   "q": "In Compass Company, operations generated ₹72,000 of cash, yet cash fell by ₹31,000. What does the statement show was the main reason?",
+   "c": [
+    "Dividends paid exceeded profit",
+    "The company made a loss",
+    "Net investing outflow of ₹1,28,000 exceeded operating and financing cash combined",
+    "Tax paid was larger than the tax expense"
+   ],
+   "a": [
+    2
+   ],
+   "w": "72,000 + 25,000 = 97,000 came in, against 1,28,000 spent on net investment, a gap of 31,000. The company was profitable, dividends were only 25,000 and tax paid (12,000) was below the expense (27,000).",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0347",
+   "topic": "Cash flow statement",
+   "q": "Which of these changes is NOT one of the working capital adjustments in the operating section?",
+   "c": [
+    "A rise in inventory",
+    "Repayment of part of a short-term bank loan",
+    "A fall in prepaid expenses",
+    "A fall in trade payables"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Borrowings, even current ones, are financing; Compass's ₹1,000 repayment of a current loan sits under financing. Inventory, prepaid expenses and trade payables are operating working capital.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0348",
+   "topic": "Cash flow statement",
+   "q": "Share capital rises from ₹5,00,000 to ₹8,00,000 during the year. ₹1,00,000 of the rise came from converting debentures into shares; the rest was issued for cash. What is the financing inflow from the share issue?",
+   "c": [
+    "₹3,00,000",
+    "₹4,00,000",
+    "₹1,00,000",
+    "₹2,00,000"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The ₹3,00,000 rise includes a ₹1,00,000 conversion that moved no cash, so the cash issue is ₹2,00,000. Reading the balance-sheet change as cash is the slip Compass Company warns against.",
+   "lec": 26,
+   "lv": "apply"
   }
  ],
  "briefs": {
@@ -7250,6 +8062,8 @@ HUB.addCourse({
   "lec-21",
   "lec-22",
   "lec-23",
-  "lec-24"
+  "lec-24",
+  "lec-25",
+  "lec-26"
  ]
 });

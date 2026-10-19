@@ -10,6 +10,47 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.4.0] — 2026-10-19
+
+### Added
+- **Foundations of Computing: Quiz 2 is on Saturday 31 October**, 4:45–5:05 PM IST (join from
+  4:30), 60 MCQs for 60 marks in 20 minutes, covering everything taught up to 25 October. The
+  course's Quiz 2 countdown and mock paper now follow it, and a new **Quiz 2 brief** gives the
+  official facts, the syllabus and what has been taught since Quiz 1, and the proctoring checklist
+  (do the demo evaluation, use a personal laptop, Chrome and a phone as the second camera, and
+  show your rough sheets to the camera).
+- **14 lectures released 17–18 October**, as notes, diagrams, traps, flashcards and new questions:
+  - **Foundations of Computing:** Live Lecture 5 (a student-records drill, and the format of the
+    Python part of the final exam) and User Input & While Loops Parts 1–2, in a new unit.
+  - **Algorithmic Thinking:** Live Lecture 5 (tree types, hashing, blockchain), Network Search
+    (Dijkstra) and Bubble Sort, in a new Sorting unit.
+  - **Economic & Business History:** Live Lecture 5 (the Sadler Report, the 1842 Mines Act,
+    state-led capitalism), Fayol and administrative management, and the Rise of Large
+    Corporations, in a new unit.
+  - **Financial Accounting:** Cash Flow Parts 2 and 3, including the full Compass Company case
+    worked through all three activities and reconciled to the fall in cash.
+  - **Statistics for Managers:** Live Lecture 5 (the class sampling experiment) and Interval
+    Estimation 2 (t intervals with σ unknown, and sample size).
+  - **Principles of Marketing:** Live Lecture 9 on cognitive biases (anchoring, bandwagon,
+    scarcity, endowment).
+- **Principles of Marketing: the three HBR pre-readings** shared on 15 October (The Elements of
+  Value; Offer a Community, Not Rewards; Psychographics), summarised in our own words beside the
+  lectures they extend (customer value, loyalty, segmentation), with questions.
+- **Textbook chapters now lectured:** Python Crash Course ch. 7 (input and while loops),
+  Codeless Data Structures ch. 7–8 (sorting, graph search), and Leigh ch. 6 (the modern factory,
+  Ford, Woolworth). Where a book and a lecture differ, the notes say which to follow.
+- **Lecturers' Quiz 2 hints** are in each course's notes, in "From the lecture" boxes: Algorithmic
+  Thinking's lecturer said 31 October, History's said probably 1 November, and Statistics' said
+  it runs to Chapter 8. Those dates stay "TBA" in the hub until the LMS announces them.
+
+### Changed
+- **Statistics, Chapter 8 practice set:** σ unknown and sample size were labelled "after L#22";
+  Lecture 24 has now taught them, so the labels and two items say so. One worked answer's
+  rounding is corrected (1.990 × 61.49 = 122.37; the limits use Excel's unrounded t).
+
+**Not in yet:** Statistics Lecture 25 and Marketing Lectures 26–27 have no transcript on the LMS
+yet; they will be added when the LMS posts them.
+
 ## [2.3.1] — 2026-10-15
 
 ### Added

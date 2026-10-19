@@ -145,6 +145,24 @@ HUB.addCourse({
    "Week 9 — Evolution of Management Thought & Practices",
    "Rule of thumb, division of labour, Taylor",
    "rec"
+  ],
+  [
+   24,
+   "Week 9 — Live Lecture 5",
+   "Sadler, Mines Act 1842, state-led capitalism",
+   "live"
+  ],
+  [
+   25,
+   "Week 10 — Fayol and Administrative Management",
+   "Six activities, five functions, 14 principles",
+   "rec"
+  ],
+  [
+   26,
+   "Week 10 — Rise of Large Corporations",
+   "Railroads, mass production, joint stock, integration",
+   "rec"
   ]
  ],
  "units": [
@@ -390,6 +408,11 @@ HUB.addCourse({
      "t": "Textbook: The Industrial Revolution and the Wealth of Nations",
      "src": "Leigh ch4",
      "h": "<!--viz:ebh-pin-factory--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two panels: one worker alone makes about one pin a day; ten specialised workers make 4,800 pins each per day, 48,000 together.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Smith's pin factory</div><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:6px;font-size:14px\"><div style=\"padding:10px 12px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--display);font-size:22px\">≈1</span> pin a day<br><span style=\"color:var(--ink-2);font-size:13px\">one worker doing every step alone</span></div><div style=\"padding:10px 12px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><span style=\"font-family:var(--display);font-size:22px\">4,800</span> pins per person a day<br><span style=\"color:var(--ink-2);font-size:13px\">ten workers, each on part of the process: 48,000 in all</span></div></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\">Same people, same tools: dividing the task multiplies output per worker about 4,800 times.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Specialisation, not new machines, is the source of Smith's productivity gain.</figcaption></figure><!--/viz:ebh-pin-factory--><p><strong>Adam Smith: division of labour</strong> — The Wealth of Nations (9 March 1776) opens with a pin factory: one worker alone might make one pin a day, but ten workers each specialising in steps could make about 4,800 pins per person per day. Specialisation multiplies productivity.</p><p><strong>Adam Smith: self-interest and markets — and their limits</strong> — We get dinner from the butcher, brewer and baker because of their self-interest, not their kindness: markets coordinate self-interested actions into social benefit. But Smith worried about monopolies, collusion among people of the same trade, and business influence over politics.</p><p><strong>Utilitarianism and marginal utility</strong> — Bentham (1776): judge outcomes by the greatest happiness of the greatest number. Jevons formalised diminishing marginal utility — each extra unit adds less satisfaction — which explains a taste for variety and supports progressive taxation, since a rupee means more to a labourer than to a billionaire.</p><p><strong>Mill: Homo economicus and opportunity cost</strong> — John Stuart Mill modelled people as wellbeing maximisers and helped introduce opportunity cost: the value of the next-best alternative given up — e.g. lost salary while studying full-time for an MBA.</p><p><strong>Bastiat and the lump-of-labour fallacy</strong> — Bastiat's mock petition from candle-makers asked for curtains to be closed against the sun's 'unfair competition'. His point: the costs of blocking technology are unseen. The lump-of-labour fallacy wrongly assumes a fixed amount of work; lower productivity actually reduces incomes and spending.</p><p><strong>Concentrated losers, diffuse winners: the Corn Laws</strong> — A few producers who lose heavily from imports lobby harder than the many consumers who each gain a little. Britain's 1815 grain tariff made its wheat twice the Dutch price. David Ricardo, stockbroker turned MP, campaigned against it and developed comparative advantage.</p><p><strong>War finance and the gold standard</strong> — Britain had a gold standard from 1717. To fund the wars of 1792–1815 it printed banknotes, suspended convertibility into gold, and prices rose 59% in three years — earning the Bank of England the nickname 'the Old Lady'.</p>"
+    },
+    {
+     "t": "Textbook: Economic Models and the Modern Factory",
+     "src": "Leigh ch6",
+     "h": "<!--viz:ebh-marshallian-cross--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Price on the vertical axis, quantity on the horizontal. Demand slopes down from upper left, supply slopes up from lower left, and they cross at the equilibrium, marked P* on the price axis and Q* on the quantity axis.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Marshall's scissors: supply meets demand</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 232\" role=\"img\" aria-label=\"Supply and demand diagram: an upward-sloping supply line and a downward-sloping demand line cross at the equilibrium price P* and quantity Q*.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M60,200 L420,200\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M420,195 L428,200 L420,205 Z\" style=\"fill:var(--rule-2)\"/><path d=\"M60,200 L60,20\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M55,20 L60,12 L65,20 Z\" style=\"fill:var(--rule-2)\"/><path d=\"M60,120 L240,120 M240,120 L240,200\" style=\"stroke:var(--ink-3);stroke-width:1.5;stroke-dasharray:4 4;fill:none\"/><path d=\"M90,50 L390,190\" style=\"stroke:var(--clay);stroke-width:2;fill:none\"/><path d=\"M90,190 L390,50\" style=\"stroke:var(--ink);stroke-width:2;fill:none\"/><circle cx=\"240\" cy=\"120\" r=\"5\" style=\"fill:var(--blue);stroke:none\"/><text x=\"100\" y=\"42\" text-anchor=\"start\" style=\"fill:var(--clay);font-size:14px;font-weight:700\">Demand</text><text x=\"388\" y=\"38\" text-anchor=\"end\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Supply</text><text x=\"278\" y=\"125\" text-anchor=\"start\" style=\"fill:var(--blue);font-size:14px;font-weight:700\">Equilibrium</text><text x=\"52\" y=\"125\" text-anchor=\"end\" style=\"fill:var(--ink-2);font-size:14px\">P*</text><text x=\"240\" y=\"218\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:14px\">Q*</text><text x=\"52\" y=\"30\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">Price</text><text x=\"428\" y=\"218\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">Quantity</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Like the two blades of a pair of scissors, neither curve sets the price alone: it is where they cross.</figcaption></figure><!--/viz:ebh-marshallian-cross--><p><strong>Marshall's supply and demand</strong> — Marshall (Principles of Economics, 1890) compared supply and demand to the blades of a pair of scissors. Supply slopes upward (higher prices draw in more producers); demand slopes downward (diminishing marginal utility). Where they cross is the equilibrium price at which the quantity sellers offer equals the quantity buyers want — the 'Marshallian Cross'.</p><p><strong>Fixed vs variable costs</strong> — Fixed costs (land, buildings) must be covered in the long run or the firm closes; in the short run prices respond mainly to variable costs (labour, raw materials). A change in input prices therefore feeds into output prices faster than a change in machinery costs.</p><p><strong>Marshall's method</strong> — Use mathematics as shorthand, translate into plain English, illustrate with real examples, then 'burn the mathematics'. His diagrams-and-examples style still shapes economics teaching. 'Economics' comes from the Greek oikonomia, household management.</p><p><strong>Why central banks exist</strong> — Commercial banks borrow short (deposits) and lend long (loans), so even a sound bank fails if every depositor demands cash at once. A central bank that guarantees deposits prevents runs, often without spending anything, because the guarantee itself stops the panic. Financial stability is a public good.</p><p><strong>Creation of the Federal Reserve</strong> — In the 1907 panic J.P. Morgan locked leading bankers in his mansion until they pledged support for failing banks. In 1910 bankers met secretly on Jekyll Island, posing as duck hunters, to draft a central bank; the Federal Reserve, with twelve regional banks, was created in 1913 so the USA would not depend on private financiers in a crisis.</p><p><strong>The economics of the First World War</strong> — Commercial ties did not prevent war — Lloyd's of London insured most German shipping in 1914. Compared with the Central powers, the Allies had roughly five times the people, eleven times the land and three times the income; the war lasted four years and killed about 20 million, but the larger economy won.</p><p><strong>Russia after 1917</strong> — The revolution promised peace, land and bread but brought six years of civil war; average incomes halved and about 13 million died prematurely. Lenin abolished private land ownership and banned selling or renting land, a ban that lasted until 1990.</p><p><strong>Tragedy of the commons</strong> — When a resource is open to all, each user gains from adding one more cow or boat while the cost falls on everyone — a negative externality — so the resource is over-used (Newfoundland cod fell to 1% of historic levels in 1985–95). Ostrom showed communities can avoid it when locals make and enforce the rules, disputes are easy to resolve and first sanctions are modest.</p>"
     }
    ]
   },
@@ -448,6 +471,11 @@ HUB.addCourse({
      "t": "Chartism and the New Model Unions",
      "src": "L#20",
      "h": "\n<h4>Chartism, 1838–1848</h4>\n<p style=\"font-size:14.5px\">Workers realised that the laws regulating their lives were <strong>made in Parliament</strong>, so they wanted a say there. The Chartists demanded <strong>political democracy</strong>:</p>\n<ul>\n <li><strong>Votes for all men</strong> — men only, not women;</li>\n <li>a <strong>secret ballot</strong>;</li>\n <li><strong>no property qualification for MPs</strong>, so that workers could stand. (India today has no such rule, only age limits.)</li>\n</ul>\n<p style=\"font-size:14.5px\">Its demands <strong>did not succeed in its lifetime</strong>, but it linked the <strong>economic</strong> labour movement with <strong>political action</strong>, taking activism beyond wages and hours to democratic rights.</p>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: the People's Charter of 1838 had six points (also payment of MPs, equal constituencies and annual parliaments). The lecture named three; learn those three.</p>\n<h4>The New Model Unions, 1850s: a split</h4>\n<ul>\n <li><strong>Skilled</strong> workers organised separately: engineers, machinists, carpenters, bricklayers, smiths, millwrights and pattern makers.</li>\n <li>They preferred <strong>negotiation over strikes</strong>.</li>\n <li>Example: the <strong>Amalgamated Society of Engineers</strong>, formed in the 1850s (1851).</li>\n <li>Result: a <strong>division between skilled and unskilled</strong> workers. He saw in it an early move towards what later became <strong>white-collar</strong> work, while noting that these trades were still tied to the production floor.</li>\n</ul>\n<div class=\"def\"><b>Still missing in 1850:</b> despite the Factory Acts, unions could <b>still only bargain on wages and hours</b> — not on hiring and firing or machine use. Full legal recognition came only with the new Act of <b>1871</b>.</div>\n"
+    },
+    {
+     "t": "Live Lecture 5: the Sadler Report and the Mines Act 1842",
+     "src": "L#24",
+     "h": "\n<div class=\"def\"><b>From the lecture (L#24, Live Lecture 5, 18 October):</b> <b>Quiz 2</b> will <b>most likely be on Sunday 1 November</b>; he said he would confirm within a day or two, and the Masai team will announce it. The syllabus is <b>his lectures 11 to 20</b>, the recorded lectures released after Quiz 1, <b>plus the two live sessions</b> given since then. In LMS numbers that is <b>#15–18, #20–23 and #25–26</b>, with the live sessions <b>#19</b> and <b>#24</b> (our mapping of his own lecture numbers). The pattern will be the <b>same as Quiz 1</b>. He also said the next live session, on 1 November, will take up management thought.</div>\n<p style=\"font-size:14.5px\">This session revised the labour movement (L#17–20), the three economic systems (L#21–22) and social life (L#22). Below is only what was <strong>new</strong>; the rest is in the earlier notes.</p>\n<h4>Why the national unions published journals</h4>\n<ul>\n <li><strong>Political action</strong>, in his sense, meant workers <strong>organising into unions and associations</strong> to put their demands and their view of society forward. It did <strong>not</strong> mean contesting elections.</li>\n <li>Unions such as the NAPL (1830) ran a <strong>journal</strong> to tell the wider world, not only their members but also the <strong>middle class, factory owners and the government</strong>, what was happening to workers and in their trades.</li>\n <li>That record became <strong>evidence</strong>: sympathetic MPs carried it into debates in Parliament on working hours and child labour.</li>\n <li>The failures of the NAPL and the GNCTU taught one lesson: workers could not bargain one by one with an owner or the government. They had to bargain <strong>united, through unions</strong>. He added that miners, textile, steel and shipbuilding workers each had their own conditions, or \"material realities\", which is why one national union split apart.</li>\n</ul>\n<h4>The Sadler Report behind the Factory Act 1833</h4>\n<ul>\n <li><strong>Michael Sadler</strong>, an MP, headed the parliamentary committee on factory children's labour (<strong>1832–33</strong> in the lecture), whose findings are known as the <strong>Sadler Report</strong>.</li>\n <li>Children came before the committee and <strong>testified</strong> about their hours, conditions, clothes, food and wages.</li>\n <li>It led to the <strong>Factory Act 1833</strong> (no children under nine in textile mills; capped hours for older children), passed in the same years as the NAPL (1830) and the GNCTU (1834).</li>\n <li>He said Sadler had earlier worked on administering the <strong>Poor Laws</strong> and saw in this the root of his sympathy for workers. The Poor Laws gave relief to people too poor to feed themselves; they dated from the <strong>1600s</strong> and stayed in force into the early 1900s, when, from about <strong>1906</strong>, Britain began welfare reforms such as minimum wages and state health provision.</li>\n</ul>\n<h4>The Mines and Collieries Act 1842: Lord Ashley's drawings</h4>\n<ul>\n <li><strong>Lord Ashley</strong>'s mines inquiry did something new: it <strong>commissioned artists</strong> to make detailed drawings of <strong>children and women</strong> hauling heavy coal tubs, like horses, through <strong>low, damp, hot</strong> mine shafts. Earlier inquiries relied only on testimony, and there were no cameras.</li>\n <li>His aim was to shock <strong>Victorian morality</strong>: in the heat, women often worked with little or no clothing, alongside men.</li>\n <li>Why owners employed women and children: <strong>lower wages</strong>, and smaller bodies that fitted the low seams. He drew a parallel with today's textile industry in India, Pakistan, Vietnam and the Philippines, where many workers are women.</li>\n <li>The Act of 1842 <strong>banned women and girls from all underground work</strong> and <strong>banned boys under 10</strong> from working underground. Enforcement was often weak, but the law still mattered: with the 1833 and 1842 Acts, the idea that <strong>child labour could be illegal</strong> came into being.</li>\n</ul>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Lord Ashley was Anthony Ashley-Cooper, later the 7th Earl of Shaftesbury, the leading parliamentary voice for factory and mines reform.</p>\n<div class=\"warnbox\"><b>Boys under 10.</b> Once, in passing, he said the 1842 Act banned boys \"under the age of 18\". Everywhere else he said 10, which is correct. Under nine is the age in the Factory Act 1833 for textile mills.</div>\n<h4>After the three Acts</h4>\n<ul>\n <li>None of the 1833, 1842 or 1847 Acts said anything about <strong>unions</strong>. From 1825 to the 1850s unions could still bargain only on wages and hours, not on machines, workloads or hiring and firing; the <strong>1871</strong> Act gave them more power (L#20).</li>\n <li>Workers also fought for <strong>democratic rights</strong>: the vote was at first limited to property owners. <strong>Working-class men</strong> won it first, so they could elect MPs to push reforms; <strong>women</strong> won it much later.</li>\n</ul>\n<h4>Background he added</h4>\n<ul>\n <li><strong>Why Britain:</strong> high labour costs gave owners an incentive to invent machines that cut the cost of production.</li>\n <li><strong>Empire:</strong> in the 1820s the East India Company was expanding in India even as its powers were being cut back. India became a major source of raw material: in his figure, <strong>15–20%</strong> of India's exports were <strong>raw cotton</strong> for British mills, landing at Liverpool for Manchester, alongside cotton from the United States.</li>\n</ul>\n<div class=\"warnbox\"><b>East coast, not west.</b> He said the 13 American colonies were on the \"western coast\". They were on the <b>Atlantic (east) coast</b>. Independence was declared on <b>4 July 1776</b>, as he said.</div>\n<!--viz:ebh-three-acts-1833-1847--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table comparing the Factory Act 1833 (textile mills, no children under nine, Sadler's testimony), the Mines and Collieries Act 1842 (mines, no women or girls underground and no boys under ten, Lord Ashley's drawings) and the Ten Hours Act 1847 (all sectors, ten hours for women and teenagers, Corn Law politics).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Three legislative wins, three sectors</div><div class=\"scroller\"><table><thead><tr><th>Act</th><th>Sector</th><th>Who it protected</th><th>What moved Parliament</th></tr></thead><tbody><tr><td><b style=\"font-family:var(--mono)\">1833</b> Factory Act</td><td>Textile mills</td><td>No children under 9; capped hours for older children</td><td>Children's testimony to Sadler's committee</td></tr><tr><td style=\"background:var(--blue-soft)\"><b style=\"font-family:var(--mono)\">1842</b> Mines and Collieries Act</td><td style=\"background:var(--blue-soft)\">Mines</td><td style=\"background:var(--blue-soft)\">No women or girls underground; no boys under 10</td><td style=\"background:var(--blue-soft)\">Lord Ashley's commissioned drawings</td></tr><tr><td><b style=\"font-family:var(--mono)\">1847</b> Ten Hours Act</td><td>All sectors</td><td>10-hour day for women and teenagers</td><td>Landowners' revenge for the Corn Law repeal (1846)</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The first two Acts covered one sector each; the 1847 Act was the first to reach every sector.</figcaption></figure><!--/viz:ebh-three-acts-1833-1847-->"
     }
    ]
   },
@@ -494,6 +522,11 @@ HUB.addCourse({
      "t": "Pros, cons and sector fit of the three systems",
      "src": "L#22",
      "h": "\n<div class=\"def\"><b>From the lecture (L#22):</b> this is his answer to the question he set at the end of L#21: the <b>pros and cons of capitalism, socialism and communism</b>, and <b>which sectors suit which system</b>. He judged each system <b>as if it stood alone</b>, not in the mixed form real economies take. Learn three pros and the cons for each system, plus the sector-fit rule.</div>\n<h4>How the three systems run (recap)</h4>\n<div class=\"scroller\"><table><thead><tr><th>System</th><th>Who owns</th><th>How prices and output are set</th><th>Core goal</th></tr></thead><tbody><tr><td><strong>Capitalism</strong></td><td>Private individuals and corporations</td><td><strong>Supply and demand</strong> in the market</td><td>Individual profit and growth</td></tr><tr><td><strong>Socialism</strong></td><td>The state or the public (collective ownership), with some room for private firms</td><td>A <strong>mix of government planning and markets</strong></td><td>Social cohesion and equity</td></tr><tr><td><strong>Communism</strong></td><td>Collective control at a <strong>very local</strong> level</td><td><strong>Decentralised</strong> decisions</td><td>A classless, stateless, egalitarian society</td></tr></tbody></table></div>\n<h4>Capitalism</h4>\n<ul>\n <li><strong>Pro: drives innovation.</strong> Individuals own the output of their own effort, so they have an incentive to innovate, make things cheaper and solve consumers' problems. The end point he named is the <strong>welfare of society</strong>.</li>\n <li><strong>Pro: economic freedom.</strong> Two sides: <strong>consumer choice</strong> (his example: shelves full of biscuit brands and varieties) and the <strong>freedom to start a business</strong> around a new idea.</li>\n <li><strong>Pro: high growth potential.</strong> GDP growth of <strong>7–8%</strong> is possible, especially in developing economies; developed economies grow more slowly.</li>\n <li><strong>Con: wealth inequality.</strong> Growth does not reach everyone equally, and wages of lower-income groups may not rise. In a pure system you buy everything in the market — food, healthcare, schooling — so too little income means going without.</li>\n <li><strong>Con: market failure.</strong> Capitalism assumes consumers have <strong>choice, complete information and negotiating power</strong>. A patient admitted to hospital has little information and no bargaining power; parents facing rising <strong>school fees</strong> are in the same position. Producers then become stronger than consumers and can set the price, and the market fails.</li>\n <li><strong>Con: environmental degradation.</strong> Air, water and noise pollution, worst in towns along industrial belts and production hubs.</li>\n</ul>\n<h4>Socialism</h4>\n<p style=\"font-size:14.5px\">It arose as a <strong>reaction to capitalism's weaknesses</strong>. Why government can do better in sectors like health and education: it has <strong>more negotiating power</strong>, can <strong>demand information</strong> from firms, and can <strong>run its own schools and hospitals</strong>. He named IITs, IIMs, AIIMS and Kendriya Vidyalayas as public institutions that became benchmarks.</p>\n<ul>\n <li><strong>Pro: a guaranteed safety net.</strong> Healthcare and education are assured, so falling ill does not mean being left to die.</li>\n <li><strong>Pro: public interest as the focus</strong>, not private gain, and a degree of <strong>economic stability</strong>.</li>\n <li><strong>Pro: potential to reduce inequality</strong>, for example through <strong>minimum wages</strong> for unskilled, semi-skilled and skilled work. In India they are set by the central government and, mostly, by state governments. His example: if the minimum is <strong>₹200 a day</strong>, no employer may pay less.</li>\n <li><strong>Con: a higher tax burden.</strong> Services and the people who run them are paid for by taxing the population.</li>\n <li><strong>Con: slow action and inefficiency.</strong> Bureaucracy moves slowly, which can mean slower growth: India grew only about <strong>2–3%</strong> a year before 1991.</li>\n <li><strong>Con: some loss of personal freedom</strong>, in some sectors, as control shifts from the individual to the government or the collective.</li>\n</ul>\n<h4>Communism</h4>\n<ul>\n <li><strong>Pro: a classless society</strong>, with no higher-, middle- or lower-income groups, because everyone receives an equal income.</li>\n <li><strong>Pro: full employment</strong> and resources aligned to need.</li>\n <li><strong>Pro: local involvement in decisions.</strong> Villages and towns take part, carrying development to the last village; especially valuable for <strong>managing the environment</strong>.</li>\n <li><strong>Con: severe shortages</strong>, where capitalism tends to produce surpluses.</li>\n <li><strong>Con: loss of personal freedom.</strong></li>\n</ul>\n<h4>Which sectors suit which system</h4>\n<div class=\"def\">The rule: where consumers have <b>power and information</b>, the <b>free market</b> fits. Where they lack power or information, as in <b>healthcare and education</b>, some <b>government control or regulation</b> (socialism) fits better. <b>Local, community decision-making</b> (the communist strength) suits managing local resources and the environment.</div>\n<!--viz:ebh-systems-pros-cons--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of the pros, cons and best-fit sectors of capitalism, socialism and communism, as the lecture judged each system standing alone.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Each system's pros, cons and best-fit sectors</div><div class=\"scroller\"><table><thead><tr><th></th><th>Capitalism</th><th>Socialism</th><th>Communism</th></tr></thead><tbody><tr><td>Pros</td><td style=\"background:var(--good-soft)\">Innovation · economic freedom · high growth (7–8%)</td><td style=\"background:var(--good-soft)\">Safety net · public interest · less inequality (minimum wages)</td><td style=\"background:var(--good-soft)\">Classless · full employment · local decision-making</td></tr><tr><td>Cons</td><td style=\"background:var(--bad-soft)\">Wealth inequality · market failure · pollution</td><td style=\"background:var(--bad-soft)\">Higher taxes · slow and inefficient (pre-1991 India: 2–3%) · less freedom</td><td style=\"background:var(--bad-soft)\">Severe shortages · less freedom</td></tr><tr><td>Best fit</td><td style=\"background:var(--blue-soft)\">Sectors where consumers have power and information</td><td style=\"background:var(--blue-soft)\">Healthcare and education, where consumers lack both</td><td style=\"background:var(--blue-soft)\">Local resources and the environment</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The sector decides the system: who has the information and the bargaining power?</figcaption></figure><!--/viz:ebh-systems-pros-cons-->"
+    },
+    {
+     "t": "Live Lecture 5: state-led capitalism and the innovation debate",
+     "src": "L#24",
+     "h": "\n<h4>Four reasons capitalism rose (live version)</h4>\n<p style=\"font-size:14.5px\">L#21 gave three reasons. Live, he spoke of four: <strong>expensive technology</strong> no artisan could afford; the <strong>big textile mills</strong>, equally out of an artisan's reach; <strong>developments in transport</strong> (and in science and technology behind them); and the <strong>free-market doctrine</strong> from Adam Smith, that rational individuals in free markets produce the welfare of society. That doctrine ties capitalism to the <strong>rise of individualism</strong> (L#22).</p>\n<h4>A third class in the middle</h4>\n<p style=\"font-size:14.5px\">Besides the <strong>bourgeoisie</strong> (owners of the means of production) and the <strong>proletariat</strong> (the working class), he described a third class: a <strong>managerial class</strong> in highly paid jobs. They still work for the owners, but are well off. He said this group is often called the <strong>petty bourgeoisie</strong>. They may organise like workers: his example was a union of <strong>IT professionals</strong> that raises working-hours issues. That is still separate from the classic working-class movement.</p>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: in Marx's usage the petty (petite) bourgeoisie means small proprietors such as shopkeepers and artisans. Salaried managers are more often called the \"new middle class\".</p>\n<h4>Ideal communism versus the popular image</h4>\n<ul>\n <li>Popular culture pictures communism as <strong>highly centralised</strong>. Ideal communism would be <strong>decentralised</strong>, with no central body over factories or government. Small communities would act as <strong>caretakers</strong> of the means of production rather than owners. This ideal has never existed in practice.</li>\n <li>A student argued that hierarchies such as <strong>patriarchy</strong> are by-products of capitalism and would vanish under communism. His reply: patriarchy is a <strong>socio-cultural system</strong>; capitalism and communism are <strong>economic</strong> (and partly political) systems. The two are closely linked, but the distinction matters, and this course deals with the economic systems.</li>\n</ul>\n<h4>China: state-led capitalism</h4>\n<div class=\"def\"><b>State-led capitalism</b>: the government keeps control of the economy but follows <b>capitalist principles</b> to create as much wealth as possible. The profit belongs to the <b>state</b>, not to individuals. (\"State\" here means the government.)</div>\n<ul>\n <li>China's ruling party calls itself communist, but he asked whether China is really a communist society. He said it is more often called <strong>state-led capitalism</strong>.</li>\n <li>It is <strong>not quite socialism</strong>: the state does not generally set production quotas, and its aim is growth in wealth.</li>\n <li>It inherits the problems of <strong>both</strong> government (slowness, control) and capitalism. Inequality may be less severe, because the state can spread the profit through welfare schemes, healthcare and infrastructure.</li>\n <li>By contrast, in <strong>socialism</strong> the government owns the output, sets prices and decides how much to produce, through quotas and licences. The <strong>License Raj</strong> (L#5) is the Indian example. Governments tend to act more slowly than markets.</li>\n</ul>\n<h4>\"Does capitalism really drive innovation?\"</h4>\n<p style=\"font-size:14.5px\">A student asked how capitalism can be said to drive innovation when it rewards only ideas that earn private profit. His answer:</p>\n<ul>\n <li>It depends on how innovation is defined. Management literature often defines it as <strong>something new that solves an existing problem</strong>; whether it is <strong>accessible</strong> to everyone is often treated as secondary.</li>\n <li>The student's point still stands: privately owned innovation may reach only a few. That ties it to <strong>wealth inequality</strong>, and it is one reason <strong>governments intervene</strong>, so that no country runs a pure system.</li>\n <li>His Indian healthcare examples: <strong>CGHS</strong>, <strong>price controls</strong> on medicines, <strong>Ayushman Bharat</strong> insurance, and <strong>generic drugs</strong> through <strong>Jan Aushadhi</strong>. Government pharmacies (Jan Aushadhi, AMRIT) run alongside private ones, which is a mixed system in miniature.</li>\n <li>He gave the <strong>2008 crisis</strong> again as the example of market failure.</li>\n</ul>\n<div class=\"def\"><b>From the lecture (L#24):</b> this session <b>concludes Module 3</b>, the Industrial Revolution and the labour movement, which he called <b>one of the biggest modules</b> of the course. He did not revise the management lectures (L#23 onwards), because the next recorded lectures go deeper into them.</div>\n<!--viz:ebh-state-led-capitalism--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table comparing socialism, state-led capitalism and ideal communism by who controls, goal, how output is set, who gets the profit and the lecture's example: India before 1991, China, and never achieved.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Where state-led capitalism sits</div><div class=\"scroller\"><table><thead><tr><th></th><th>Socialism</th><th>State-led capitalism</th><th>Ideal communism</th></tr></thead><tbody><tr><td>Who controls</td><td>The government owns and regulates the means of production</td><td style=\"background:var(--blue-soft)\">The government, which keeps control</td><td>Small communities, as caretakers</td></tr><tr><td>Goal</td><td>Public interest and equity</td><td style=\"background:var(--blue-soft)\">Generate as much wealth as possible</td><td>A classless, stateless society</td></tr><tr><td>How output is set</td><td>Government prices and quotas (License Raj)</td><td>Mostly capitalist methods; generally no quotas</td><td>Decentralised local decisions</td></tr><tr><td>Who gets the profit</td><td>The state</td><td style=\"background:var(--blue-soft)\">The state, which can redistribute it</td><td>Shared by everyone</td></tr><tr><td>Example he gave</td><td>India before 1991</td><td>China</td><td style=\"background:var(--clay-soft)\">Never achieved in practice</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">State-led capitalism keeps the state in control but chases wealth by capitalist methods.</figcaption></figure><!--/viz:ebh-state-led-capitalism-->"
     }
    ]
   },
@@ -523,8 +556,8 @@ HUB.addCourse({
   {
    "id": "mgmt",
    "title": "Evolution of management thought",
-   "tag": "Lecture 23 · Module 4",
-   "lede": "How management became a science: from rule of thumb to Smith's division of labour (1776) and Taylor's scientific management (1898–1901), and what it cost workers.",
+   "tag": "Lectures 23, 25 · Module 4",
+   "lede": "How management became a science: Smith's division of labour (1776), Taylor's scientific management on the shop floor (1898–1901), and Fayol's top-down administrative management (1916).",
    "topics": [
     {
      "t": "From rule of thumb to a science of management",
@@ -545,6 +578,59 @@ HUB.addCourse({
      "t": "Criticisms of scientific management",
      "src": "L#23",
      "h": "\n<div class=\"scroller\"><table><thead><tr><th>Criticism</th><th>What went wrong</th></tr></thead><tbody><tr><td><strong>1. Mechanistic view of humans</strong></td><td>Workers treated as <strong>extensions of machines</strong> (move, stop, move). Their <strong>social needs</strong>, workplace relationships and <strong>emotional well-being</strong> were ignored. It assumed workers are motivated <strong>only by money</strong> (pay more for hitting the benchmark), not by a good supervisor or good co-workers. Worse still in services, where people are more involved</td></tr><tr><td><strong>2. Monotony and alienation</strong></td><td>The <strong>same task all day</strong>, 8–10 hours, made work incredibly boring</td></tr><tr><td><strong>3. Exploitation</strong></td><td>Managers used Taylor's time studies to <strong>raise production quotas</strong> while <strong>wages did not rise at the same rate</strong>: more work for relatively less pay</td></tr><tr><td><strong>4. Loss of autonomy</strong></td><td>With a standard method and time, the worker <strong>could not innovate</strong>. <strong>Planning was separated from doing</strong>: managers planned, workers carried out the plan</td></tr></tbody></table></div>\n<p style=\"font-size:14.5px\">The result: efficiency and productivity rose, but <strong>relations between management and workers deteriorated</strong>, including Taylor's own relations with the workers where he worked.</p>\n<div class=\"def\"><b>From the lecture (L#23):</b> the period for management thought is <b>1800s–1950</b>. Of Taylor's four principles, he taught only the <b>first two</b>, as the ones that matter \"in our context\". This lecture takes management thought to the <b>early 1900s</b>; the <b>next lecture</b> covers the theories that followed, such as how <b>HR management</b> arose.</div>\n"
+    },
+    {
+     "t": "Fayol and administrative management",
+     "src": "L#25",
+     "h": "\n<div class=\"def\">Module 4 continues with the <b>second major figure</b> in management thought, <b>Henri Fayol</b>. Taylor (L#23) looked at the <b>factory floor, from the bottom</b>. Fayol asked who looks after the <b>whole</b> factory, and how: his view is <b>from the top</b>. His framework is called <b>Fayolism</b>, or <b>administrative management</b>.</div>\n<h4>Taylor's four principles, completed</h4>\n<p style=\"font-size:14.5px\">L#23 taught Taylor's first two principles. This lecture added the other two:</p>\n<div class=\"scroller\"><table><thead><tr><th>Principle</th><th>In short</th></tr></thead><tbody><tr><td><strong>1</strong></td><td>Develop a <strong>rule of science for each aspect of a job</strong> (time and motion studies, the pig-iron experiment; he also mentioned Taylor's different shovels)</td></tr><tr><td><strong>2</strong></td><td><strong>Scientifically select and train</strong> each worker, matching the job profile to the worker's skills: where HR begins</td></tr><tr><td><strong>3</strong></td><td><strong>Management and the workforce should work together</strong>: the relationship between owners and managers at the top and workers on the ground</td></tr><tr><td><strong>4</strong></td><td><strong>Divide work and responsibility equally</strong> between management and workers</td></tr></tbody></table></div>\n<p style=\"font-size:14.5px\">All four aim at <strong>efficiency on the factory floor</strong> and nothing beyond it. The drawbacks (L#23) still apply: the worker treated as a machine, and planning kept away from the people who do the work.</p>\n<h4>Who Fayol was</h4>\n<ul>\n <li>A <strong>French</strong> engineer who became a <strong>senior executive</strong>: from the <strong>1880s</strong> he was the head (CEO) of a <strong>mining company in France</strong>.</li>\n <li>Taylor, also an engineer, worked in the <strong>US</strong> on the shop floor of a steel plant. The two worked <strong>in parallel</strong>, at about the same time, in different places: Taylor in America, Fayol in Europe.</li>\n <li>Fayol wrote his theory up in <strong>1916</strong>.</li>\n</ul>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Fayol (1841–1925) became managing director of the Commentry-Fourchambault mining and metals company in 1888. His 1916 book is Administration industrielle et générale, translated into English as General and Industrial Management.</p>\n<h4>The six industrial and business activities</h4>\n<p style=\"font-size:14.5px\">Much of running a factory happens <strong>outside</strong> the factory: hiring, buying raw material, raising money, marketing. Fayol classified everything a business must do into six activities, which still map onto the main domains of management.</p>\n<div class=\"scroller\"><table><thead><tr><th>Activity</th><th>What it covers</th><th>Today's domain</th></tr></thead><tbody><tr><td><strong>1. Technical</strong></td><td>Production, manufacturing, adaptation; factory layout</td><td>Operations. <strong>Taylor's work falls here</strong></td></tr><tr><td><strong>2. Commercial</strong></td><td>Buying, selling and exchange: procuring raw material as well as selling finished goods</td><td>Marketing, advertising, procurement</td></tr><tr><td><strong>3. Financial</strong></td><td>Finding capital (bank, friends, partners) and using it optimally</td><td>Finance (a CFO)</td></tr><tr><td><strong>4. Security</strong></td><td>Protecting property and the people employed: guards, security posts, a boundary wall</td><td>Security (a CSO)</td></tr><tr><td><strong>5. Accounting</strong></td><td>Stock-taking, balance sheets, costs, revenue and profit, statistics</td><td>Accounting</td></tr><tr><td><strong>6. Managerial</strong></td><td><strong>Oversees and coordinates</strong> the other five; the focus of Fayol's theory</td><td>General management</td></tr></tbody></table></div>\n<ul>\n <li>The activities are <strong>interconnected, not mutually exclusive</strong>. His example, <strong>inventory</strong>: the technical side asks at what quantity to reorder (the economic order quantity); the accounting side asks what holding that stock costs.</li>\n <li>New areas have appeared since <strong>1916</strong>, so some activities may fit none of the six, or several at once. The list is still a good starting point.</li>\n</ul>\n<div class=\"warnbox\"><b>Six activities, not five.</b> He sometimes called them \"five functions\", meaning the first five, which the sixth (managerial) coordinates. Keep the words apart: Fayol has <b>six activities</b> of a business and <b>five functions</b> of management (next topic).</div>\n"
+    },
+    {
+     "t": "Fayol's five functions of management",
+     "src": "L#25",
+     "h": "\n<p style=\"font-size:14.5px\">The sixth activity, managerial, is expanded into the <strong>five functions of management</strong>. They apply <strong>inside every activity</strong>: the technical, commercial, financial, security and accounting sides each need planning, organising and the rest. That is why managerial is the activity that oversees the other five.</p>\n<div class=\"def\"><b>Five functions of management</b> (Fayol): <b>P</b>lanning, <b>O</b>rganising, <b>C</b>ommanding, <b>C</b>oordinating, <b>C</b>ontrolling, remembered as <b>POCCC</b> (\"POC triple C\").</div>\n<div class=\"scroller\"><table><thead><tr><th>Function</th><th>What it means</th><th>His example</th></tr></thead><tbody><tr><td><strong>1. Planning</strong></td><td>Looking ahead and charting a course of action for the next 6 months, 1 year, 2 years</td><td>A new plant: where, which workers, which raw material, and first how much money (₹1 crore? ₹2 crore?) and from which source, such as a bank loan and its conditions</td></tr><tr><td><strong>2. Organising</strong></td><td>Providing the material and human resources the plan needs, and defining roles</td><td>Arranging the machines, materials and people, and each person's role</td></tr><tr><td><strong>3. Commanding</strong></td><td>Guiding, leading and supervising the staff</td><td>HR and other policies, rules, <strong>KPIs</strong> to measure performance</td></tr><tr><td><strong>4. Coordinating</strong></td><td>Bringing activities, departments and sub-activities into harmony</td><td>Making the people within and across departments work together</td></tr><tr><td><strong>5. Controlling</strong></td><td>Verifying that everything happens in conformity with the adopted plan, policies and rules</td><td>Checking actual results against the plan</td></tr></tbody></table></div>\n<p style=\"font-size:14.5px\">The flow is not strictly linear: some organising starts during planning, such as gathering what a bank needs before it will lend. Read simply, though, it runs from planning to controlling.</p>\n<div class=\"warnbox\"><b>POCCC, no T.</b> The lecture's auto-summary spells the acronym \"POTCC\". There is no T: the five are planning, organising, commanding, coordinating and controlling. He also said a \"P.O.\" on his slide title was a typo to ignore.</div>\n<p style=\"font-size:14.5px\">He went through the functions quickly because they are covered in detail in an <strong>introduction to management</strong> course.</p>\n<!--viz:ebh-fayolism-three-tiers--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three stacked boxes: six industrial and business activities, of which the managerial one works through the five functions of management (planning, organising, commanding, coordinating, controlling), which are carried out according to the 14 principles of management. Together they are Fayolism.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Fayolism in three tiers</div><div style=\"display:flex;flex-direction:column;gap:6px;font-size:14px;max-width:440px\"><div style=\"padding:9px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>6 industrial and business activities</b><br><span style=\"color:var(--ink-2);font-size:13px\">technical · commercial · financial · security · accounting · <b>managerial</b></span></div><span style=\"color:var(--ink-3);padding-left:14px\">↓ the managerial activity works through</span><div style=\"padding:9px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>5 functions of management (POCCC)</b><br><span style=\"color:var(--ink-2);font-size:13px\">planning · organising · commanding · coordinating · controlling</span></div><span style=\"color:var(--ink-3);padding-left:14px\">↓ carried out according to</span><div style=\"padding:9px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>14 principles of management</b><br><span style=\"color:var(--ink-2);font-size:13px\">division of work … unity of command … teamwork</span></div><span style=\"color:var(--ink-3);padding-left:14px\">= <b>Fayolism</b> (administrative management)</span></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Activities say what a business does, functions say what managing is, principles say how to do it.</figcaption></figure><!--/viz:ebh-fayolism-three-tiers-->"
+    },
+    {
+     "t": "Fayol's 14 principles, and Taylor vs Fayol",
+     "src": "L#25",
+     "h": "\n<p style=\"font-size:14.5px\">The <strong>14 principles</strong> say <strong>how</strong> the management functions should be carried out. Several existed before Fayol: the first is Adam Smith's division of labour, renamed.</p>\n<div class=\"scroller\"><table><thead><tr><th>#</th><th>Principle</th><th>Meaning</th></tr></thead><tbody><tr><td>1</td><td><strong>Division of work</strong></td><td>Specialise, so each worker gains skill and efficiency (Smith's division of labour)</td></tr><tr><td>2</td><td><strong>Authority and responsibility</strong></td><td>Managers can give orders and must also own the results</td></tr><tr><td>3</td><td><strong>Discipline</strong></td><td>Employees obey and respect the rules set by management</td></tr><tr><td>4</td><td><strong>Unity of command</strong></td><td>Each employee takes orders from <strong>one supervisor only</strong></td></tr><tr><td>5</td><td><strong>Unity of direction</strong></td><td>One plan of action, one direction for the organisation</td></tr><tr><td>6</td><td><strong>Subordination of individual interest</strong></td><td>Personal goals must be in line with the organisation's, which come first</td></tr><tr><td>7</td><td><strong>Remuneration</strong></td><td>Workers are paid a fair wage for their services</td></tr><tr><td>8</td><td><strong>Centralisation</strong></td><td>How far decisions are concentrated at the top depends on the business</td></tr><tr><td>9</td><td><strong>Scalar chain</strong></td><td>A clear line of authority from the top to the bottom</td></tr><tr><td>10</td><td><strong>Order</strong></td><td>A place for everything and everything in its place</td></tr><tr><td>11</td><td><strong>Equity</strong></td><td>Fair treatment of all staff</td></tr><tr><td>12</td><td><strong>Stability of tenure</strong></td><td>High staff turnover is inefficient</td></tr><tr><td>13</td><td><strong>Initiative</strong></td><td>Employees take initiative to achieve the organisation's goals</td></tr><tr><td>14</td><td><strong>Teamwork</strong></td><td>Unity among staff, so personal interest does not overpower the organisation's</td></tr></tbody></table></div>\n<ul>\n <li>He grouped the first five under <strong>work structure</strong> (1–2, linked to organisation structure) and <strong>discipline and order</strong> (3–5), and 6–8 under <strong>people and priorities</strong>.</li>\n <li>The common thread: the principles centre on the <strong>organisation's goals</strong>, which are paramount over individual interests.</li>\n</ul>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Fayol's own name for the 14th principle is esprit de corps (team spirit); the lecture teaches it as teamwork.</p>\n<h4>Unity of command: where Fayol breaks with Taylor</h4>\n<p style=\"font-size:14.5px\">Taylor had each worker report to <strong>eight foremen</strong> (the lecture also said \"seven to eight\"), each in charge of one aspect of the work. Fayol rejected this: <strong>one boss per worker</strong>. With several supervisors, one may give an order that contradicts another's.</p>\n<div class=\"warnbox\"><b>Did Taylor ignore pay?</b> He said Taylor \"had not talked about salary at all\", whereas Fayol made remuneration a principle. But L#23 taught that scientific management assumed workers are motivated by money, paying more for hitting the benchmark, and Taylor did tie pay to output (his differential piece rate). Safe version: <b>fair remuneration as a principle of management</b> is Fayol's.</div>\n<div class=\"def\"><b>From the lecture (L#25):</b> he singled out <b>discipline</b> and especially <b>unity of command</b> as the principles that matter when <b>comparing Fayol with Taylor</b>. He did not explain the <b>scalar chain</b> (\"you may look at it\"). He said Taylor's principles are, in a way, a <b>subset</b> of Fayol's, since they fall under the technical activity. He mentioned that later approaches, such as <b>HR management</b>, will <b>not</b> be taken further in this course (other courses cover them), even though L#23 had pointed to them; the next lectures move to other parts of business history, 1800s–1950.</div>\n<!--viz:ebh-taylor-vs-fayol--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison table of Taylorism and Fayolism by who and where, viewpoint, focus, command structure, reach, and how the two relate.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Taylorism vs Fayolism</div><div class=\"scroller\"><table><thead><tr><th></th><th>Taylorism</th><th>Fayolism</th></tr></thead><tbody><tr><td>Who, where</td><td>Frederick Taylor, engineer, US, late 1800s</td><td>Henri Fayol, engineer and CEO, France, from the 1880s (written up 1916)</td></tr><tr><td>Viewpoint</td><td>Bottom-up: the shop floor and the worker</td><td style=\"background:var(--blue-soft)\">Top-down: the whole organisation</td></tr><tr><td>Focus</td><td>Productivity and efficiency of tasks</td><td>Overall administration through systematic principles</td></tr><tr><td>Command</td><td style=\"background:var(--clay-soft)\">Eight foremen per worker</td><td style=\"background:var(--blue-soft)\">One supervisor per worker (unity of command)</td></tr><tr><td>Reach</td><td>Specialised: production</td><td>Universal: every activity and type of organisation</td></tr><tr><td>Relation</td><td>Falls under Fayol's technical activity</td><td>Contains Taylor's work as a subset</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Same era, opposite ends of the firm: Taylor from the shop floor up, Fayol from the top down.</figcaption></figure><!--/viz:ebh-taylor-vs-fayol--><!--viz:ebh-unity-of-command--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two panels: under Taylor's functional foremanship one worker receives orders from eight foremen (route clerk, instruction card clerk, time and cost clerk, disciplinarian, gang boss, speed boss, repair boss, inspector); under Fayol's unity of command one worker receives orders from one supervisor.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Eight foremen or one boss</div><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;font-size:14px\"><div style=\"padding:10px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>Taylor: eight foremen</b><div style=\"display:flex;flex-wrap:wrap;gap:4px;margin:8px 0;font-size:12.5px\"><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\">route clerk</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\">instruction card</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\">time and cost</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\">disciplinarian</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\">gang boss</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\">speed boss</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\">repair boss</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\">inspector</span></div><div style=\"color:var(--ink-3)\">↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓</div><div style=\"margin-top:4px;padding:6px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);display:inline-block\"><b>One worker</b></div><div style=\"margin-top:6px;color:var(--ink-2);font-size:13px\">Orders can contradict each other</div></div><div style=\"padding:10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Fayol: unity of command</b><div style=\"margin:8px 0;padding:6px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);display:inline-block\">One supervisor</div><div style=\"color:var(--ink-3)\">↓</div><div style=\"margin-top:4px;padding:6px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);display:inline-block\"><b>One worker</b></div><div style=\"margin-top:6px;color:var(--ink-2);font-size:13px\">Orders come from one source only</div></div></div><div style=\"margin-top:8px;font-size:12.5px;color:var(--ink-3)\">The eight titles are Taylor's own (context beyond the lecture, which gave only the number).</div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Unity of command removes the risk of one foreman's order contradicting another's.</figcaption></figure><!--/viz:ebh-unity-of-command-->"
+    },
+    {
+     "t": "Textbook: Economic Models and the Modern Factory",
+     "src": "Leigh ch6",
+     "h": "<!--viz:ebh-leigh-business-milestones--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Timeline: Taylor's pig-iron experiment 1898–1901 (L#23), Martin proposes Ford's assembly line 1908, Selfridges opens 1909, Woolworth floats with 596 stores 1912, Ford's moving line runs 1913 (highlighted as the lecture's 1910s), war in 1914, Fayol writes up his theory 1916 (L#25).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Leigh's business milestones between Taylor and Fayol</div><div style=\"border-left:2px solid var(--rule-2);margin-left:6px;padding-left:16px;font-size:14px\"><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1898–1901</b> · <span style=\"color:var(--ink-3)\">Lecture:</span> Taylor's pig-iron experiment standardises tasks (L#23)</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1908</b> · Peter Martin proposes an assembly line at Ford</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1909</b> · Selfridges opens in London: shopping as an experience</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1912</b> · Woolworth floats on the stock market with 596 stores</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1913</b> · Ford's moving line runs at Highland Park: <b>the lecture's \"1910s\"</b> <span style=\"color:var(--ink-3)\">(context)</span></div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1914</b> · War breaks out; most world trade and migration stops</div><div style=\"position:relative\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1916</b> · <span style=\"color:var(--ink-3)\">Lecture:</span> Fayol writes up administrative management (L#25)</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Ford's line sits between the lecture's two thinkers; 1908 is the proposal and 1913 the line itself.</figcaption></figure><!--/viz:ebh-leigh-business-milestones--><p><strong>Specialisation behind the car</strong> — Leigh says the car's evolution owed much to specialisation: on the line, as in the slaughterhouse, each worker repeats one standard task. This chapter names neither Smith nor Taylor; the lecture's chain supplies the link, from Smith's division of labour (1776) through Taylor's standardised tasks (1898–1901) to Ford's 84 steps (L#23, L#26).</p>"
+    }
+   ]
+  },
+  {
+   "id": "corp",
+   "title": "Rise of large corporations",
+   "tag": "Lecture 26 · Module 4",
+   "lede": "Why small family shops gave way to giant firms: faster transport and communication, mass production, the joint-stock company with limited liability, and buying up rivals and suppliers.",
+   "topics": [
+    {
+     "t": "From family shops to large corporations: railroads, telegraph and standard time",
+     "src": "L#26",
+     "h": "\n<div class=\"def\">The question of this lecture: how did <b>small shops</b> owned by individuals, families and artisans turn into <b>big companies</b>, or <b>large corporations</b>? He gave <b>four factors</b>: (1) <b>railroad and telegraph networks</b>, (2) the <b>rise of mass production</b>, (3) the <b>invention of the modern corporation</b>, and (4) <b>consolidation and monopolies</b>. Each connects back to the management thought of L#23 and L#25.</div>\n<ul>\n <li>The lecture builds on the big factories of the Industrial Revolution, around which whole towns were organised. His Indian examples were <strong>Bhilai, Rourkela, Bokaro</strong> (each built around a steel plant) and <strong>Tatanagar</strong> (Jamshedpur).</li>\n <li><strong>Company and corporation</strong> are used <strong>interchangeably</strong> in this course. The legal difference is left to the <strong>legal aspects of business</strong> course.</li>\n</ul>\n<h4>Factor 1: railroad and telegraph networks</h4>\n<p style=\"font-size:14.5px\">When travel and communication became <strong>easy, fast, accessible and convenient</strong>, bigger corporations became possible. Three effects:</p>\n<div class=\"scroller\"><table><thead><tr><th>Effect</th><th>How it helped big business</th></tr></thead><tbody><tr><td><strong>1. Distance collapsed</strong></td><td>Railroads and ships, and later air travel, did not shorten the kilometres but the <strong>time</strong>: 20 days became 2 days. Raw material reached the factory faster, and finished goods reached other cities, countries and continents. Manchester's mills needed rail because raw cotton landed at the port of <strong>Liverpool</strong></td></tr><tr><td><strong>2. Faster communication</strong></td><td>If a ship broke down or a rail line failed, the <strong>telegraph</strong> reported it at once and the repair came sooner, so factories could run <strong>all day, all week, all year</strong> with a steady flow of material and goods</td></tr><tr><td><strong>3. Standard time zones (from 1883)</strong></td><td>Before railways each town set its clocks by the <strong>sun</strong> (noon when the sun is overhead), so one train's timetable read differently in each city. Standard zones fixed one time across a region; India today runs on one zone, <strong>IST</strong></td></tr></tbody></table></div>\n<p style=\"font-size:14.5px\">Global firms needed all three. His example was one of the first corporations, the <strong>East India Company</strong>: headquarters in London, operations in India, raw materials and goods moving both ways. Today's equivalents are Amazon, Flipkart or McDonald's.</p>\n<div class=\"warnbox\"><b>Standard time: 1883 and the 1840s.</b> 1883 is when the railways of the <b>United States and Canada</b> adopted standard time zones, and it is the lecture's date for the start of time-zone standardisation. Britain's railways had already moved to a single \"railway time\" in the <b>1840s</b> (L#22 notes), and in <b>1884</b> Greenwich became the world's prime meridian. He said each country usually had a single zone, with big countries perhaps having two or three; the US system of 1883 had <b>four</b>.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: the East India Company was chartered in 1600, long before railways. The telegraph and steamship reached India only in the Company's last decades; it was dissolved in 1874. The Liverpool and Manchester Railway opened in 1830.</p>\n<!--viz:ebh-four-factors-corporations--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Four boxes, railroads and telegraph, mass production, the modern corporation, and consolidation, each with its sub-points, leading together to large corporations between the 1800s and 1950.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Four factors behind the large corporation</div><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:6px;font-size:14px\"><div style=\"padding:9px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>1 · Railroads and telegraph</b><br><span style=\"color:var(--ink-2);font-size:13px\">distance collapses · faster repairs · standard time from 1883</span></div><div style=\"padding:9px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>2 · Mass production</b><br><span style=\"color:var(--ink-2);font-size:13px\">mechanised factories · division of labour · Ford's 84 steps</span></div><div style=\"padding:9px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>3 · The modern corporation</b><br><span style=\"color:var(--ink-2);font-size:13px\">joint stock · perpetual existence · limited liability · professional managers</span></div><div style=\"padding:9px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>4 · Consolidation</b><br><span style=\"color:var(--ink-2);font-size:13px\">horizontal and vertical integration</span></div></div><div style=\"text-align:center;color:var(--ink-3);margin:6px 0\">↓ together</div><div style=\"padding:9px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-size:14px;text-align:center\"><b>Large corporations</b>, 1800s–1950</div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Infrastructure, production, legal form and acquisitions each made firms bigger; together they made giants.</figcaption></figure><!--/viz:ebh-four-factors-corporations-->"
+    },
+    {
+     "t": "Mass production and Ford's assembly line",
+     "src": "L#26",
+     "h": "\n<h4>Factor 2: the rise of mass production</h4>\n<ul>\n <li>Production shifted from <strong>artisan workshops</strong> to <strong>heavily mechanised factories</strong>. One company owning two, three or five such factories became huge, both in workers and in money earned.</li>\n <li>The enabling innovations were in <strong>energy</strong> (the water frame, then the steam engine) and in <strong>iron and steel</strong> production, which almost everything needed, steam engines included.</li>\n <li><strong>Division of labour</strong> (Smith, Taylor, Fayol) raised the efficiency of the production process, and mass production took it to an <strong>extreme</strong>.</li>\n</ul>\n<h4>Ford's assembly line</h4>\n<ul>\n <li>The <strong>Ford Motor Company</strong> broke car assembly into <strong>84 distinct, highly repetitive steps</strong>, in the <strong>1910s</strong>.</li>\n <li>Each step was <strong>standardised</strong>, so any worker could learn it quickly. Workers became <strong>replaceable</strong>: if one could not work, another took the place and output stayed the same.</li>\n <li>This came straight after Taylor's time and motion studies and the <strong>pig-iron experiment (1898–1901)</strong>: the idea that any task can be standardised and split into small repetitive steps.</li>\n <li>The money logic, in his hypothetical: from <strong>one car a day</strong> to <strong>50–60 a day</strong>. At 50 a day for 30 days, that is <strong>1,500 cars a month</strong>, all owned and sold by the company. The earnings fund new plants, if demand is there, and the company grows into a large corporation.</li>\n</ul>\n<div class=\"warnbox\"><b>Ford's dates.</b> He placed the assembly line in \"the 1910s, 1920s\", and once in \"the 1920s and 1930s\". The moving assembly line began at Ford's Highland Park plant in <b>1913</b>. Use <b>1910s</b>, just after Taylor. The cars-a-day figures were his illustration, not Ford's real output.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: the moving line cut the time to assemble a Model T chassis from more than 12 hours to about an hour and a half. This is the same Ford that began shutting its factories at weekends in 1926 (L#7).</p>\n"
+    },
+    {
+     "t": "The modern corporation: joint stock, limited liability, professional managers",
+     "src": "L#26",
+     "h": "\n<h4>Factor 3: the invention of the modern corporation</h4>\n<p style=\"font-size:14.5px\">A company is not a living being, but the law recognises it as a <strong>legal entity</strong> that can own property and take or give loans. Railroads and massive factories needed far <strong>more capital</strong> than any individual or family had, and that is why the <strong>joint-stock corporation</strong> arose.</p>\n<div class=\"def\"><b>Joint-stock corporation</b>: a company whose ownership is divided into <b>shares</b> that many investors can buy and sell. The money they pay becomes the company's capital for growth.</div>\n<ul>\n <li><strong>Shares = ownership.</strong> Divide 100% of the ownership into 1,000 shares: 100 shares are 10% of the company, 10 shares 1%. Shares change hands on exchanges such as the BSE and NSE in India, or NASDAQ in the US.</li>\n <li><strong>Raising capital.</strong> His example: of 1,000 shares, 800 are offered to the public at ₹50 each, which raises 800 × ₹50 = <strong>₹40,000</strong>. Prices then move with demand and supply.</li>\n <li><strong>Perpetual existence.</strong> A family shop usually ended when its owner died. Where shares can be transferred, the company <strong>carries on</strong>, which is why corporations can last 100, 150 or 200 years. (Some corporations restrict transfers.)</li>\n</ul>\n<div class=\"def\"><b>Limited liability</b>: if the company goes bankrupt, its creditors <b>cannot touch the investors' personal assets</b>. An investor who put in ₹1 lakh can lose at most that ₹1 lakh, not the company's unpaid debts. The company is separate from its owners.</div>\n<p style=\"font-size:14.5px\">Before limited liability, when a <strong>partnership</strong> went bankrupt, creditors could go after the investors' <strong>home, savings and land</strong>. That made investing dangerous; limited liability made it safe enough to attract large numbers of investors.</p>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: in Britain, general limited liability for registered companies came with the Limited Liability Act 1855 and the Joint Stock Companies Act 1856.</p>\n<h4>The managerial revolution</h4>\n<ul>\n <li>Big corporations hired <strong>specialised managers</strong> for each function: <strong>HR, marketing, purchasing</strong> raw material, <strong>selling</strong> finished goods and so on.</li>\n <li>This links more to <strong>Fayol</strong> (functions run from the top) than to Taylor, though Taylor's <strong>scientific hiring</strong> is there too: hiring managers for their skills rather than through nepotism or favouritism.</li>\n <li>He also linked it to <strong>Max Weber</strong> and <strong>bureaucratic management</strong>, a theory he said a future lecture may take up.</li>\n</ul>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Max Weber (1864–1920) was a German sociologist whose account of bureaucracy describes rule-based administration by trained officials in a fixed hierarchy.</p>\n<!--viz:ebh-joint-stock-arithmetic--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Worked table: 1,000 shares make each share 0.1% of the company, so 10 shares are 1% and 100 shares 10%; selling 800 shares at ₹50 raises ₹40,000; under limited liability an investor's worst case is losing what was invested.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The lecture's share arithmetic</div><div class=\"scroller\"><table><thead><tr><th>Step</th><th>Working</th><th>Result</th></tr></thead><tbody><tr><td>Divide the ownership</td><td style=\"font-family:var(--mono)\">100% ÷ 1,000 shares</td><td style=\"font-family:var(--mono)\">0.1% per share</td></tr><tr><td>Hold 10 shares</td><td style=\"font-family:var(--mono)\">10 × 0.1%</td><td style=\"font-family:var(--mono)\">1%</td></tr><tr><td>Hold 100 shares</td><td style=\"font-family:var(--mono)\">100 × 0.1%</td><td style=\"font-family:var(--mono)\">10%</td></tr><tr><td>Sell 800 shares at ₹50</td><td style=\"font-family:var(--mono)\">800 × ₹50</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">₹40,000 of capital</td></tr><tr><td>Investor's worst case</td><td>Company bankrupt; limited liability</td><td style=\"background:var(--good-soft)\">loses only what was invested</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Shares spread both the ownership and the risk; limited liability caps the risk at the stake.</figcaption></figure><!--/viz:ebh-joint-stock-arithmetic-->"
+    },
+    {
+     "t": "Consolidation: horizontal and vertical integration",
+     "src": "L#26",
+     "h": "\n<h4>Factor 4: consolidation and monopolies</h4>\n<p style=\"font-size:14.5px\">Companies also grew by <strong>buying other companies</strong>, crushing rivals and gaining control of a market.</p>\n<div class=\"scroller\"><table><thead><tr><th></th><th>Horizontal integration</th><th>Vertical integration</th></tr></thead><tbody><tr><td>What is bought</td><td>A <strong>competitor</strong> in the same market</td><td>A <strong>supplier</strong> or a <strong>distributor</strong> (or retailer)</td></tr><tr><td>Aim</td><td>Remove rivals, dominate the market</td><td>Control every step of a product's life, from <strong>raw material extraction to final retail sale</strong></td></tr><tr><td>His examples</td><td>Facebook buying <strong>WhatsApp</strong>; Jio and <strong>Hotstar</strong> becoming JioHotstar</td><td><strong>Netflix</strong> (a distributor) buying a film production company: his hypothetical</td></tr></tbody></table></div>\n<div class=\"warnbox\"><b>Two of the examples, precisely.</b> JioHotstar was not a simple purchase: Reliance's and Disney's Indian media businesses merged (completed in 2024), bringing JioCinema and Disney+ Hotstar together in 2025. It is still horizontal, since two rivals in one market became one. Facebook bought WhatsApp in 2014. Netflix already makes its own originals; treat his Netflix case as an illustration of the idea.</div>\n<h4>How it all ties back to management thought</h4>\n<ul>\n <li><strong>Mass production</strong> rests on <strong>division of labour</strong> (Smith) and <strong>standardised tasks</strong> (Taylor), and Ford's line is the extreme case.</li>\n <li>Running a big corporation needs Fayol's <strong>top-down administration</strong> and specialised managers, and Weber's <strong>bureaucracy</strong>.</li>\n</ul>\n<div class=\"def\"><b>From the lecture (L#26):</b> this is \"lecture 20\" in his numbering, the last recorded lecture he named for <b>Quiz 2</b> (his lectures 11–20; see L#24). He went over consolidation and monopolies <b>only briefly</b>, because the <b>strategy courses</b> of later semesters cover them. The lecture keeps to business history from the <b>1800s to 1950</b>; the next lectures take up other topics of Module 4.</div>\n<!--viz:ebh-horizontal-vertical--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Vertical integration shown as a firm buying its raw-material supplier, distributor and retailer along the chain; horizontal integration shown as a firm buying a rival in the same market, such as Facebook and WhatsApp.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Horizontal vs vertical integration</div><div style=\"font-size:14px\"><div style=\"font-size:12.5px;color:var(--ink-3);margin-bottom:4px\">Vertical: buy along the chain</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">Raw material supplier</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Your firm</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">Distributor</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">Retailer</div></div><div style=\"font-size:12.5px;color:var(--ink-3);margin:12px 0 4px\">Horizontal: buy alongside</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Your firm</b></div><span style=\"color:var(--ink-3)\">+</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">Rival in the same market</div><span style=\"color:var(--ink-3)\">=</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">One bigger firm<br><span style=\"color:var(--ink-2);font-size:13px\">Facebook + WhatsApp</span></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Vertical buys up and down the chain; horizontal buys sideways, at the same stage.</figcaption></figure><!--/viz:ebh-horizontal-vertical-->"
+    },
+    {
+     "t": "Textbook: Economic Models and the Modern Factory",
+     "src": "Leigh ch6",
+     "h": "<p>Around 1900 Alfred Marshall's Principles of Economics (1890) gave economics its familiar tools: supply and demand as two blades of a pair of scissors meeting at the equilibrium price, and the distinction between fixed and variable costs. After J.P. Morgan personally halted the 1907 banking panic, bankers secretly designed what became the Federal Reserve (1913); central banks stabilise systems in which banks borrow short and lend long, mainly by guaranteeing deposits. Business was reinvented: Ford's assembly line (proposed in 1908 after a slaughterhouse visit; the moving line ran from 1913) brought the car to the parts; Selfridges made shopping an experience; Woolworth's chain used buying power to pile goods high and sell them cheap. Faster steamships fuelled mass migration until the First World War, which the Allies — with far more people, land and income — won at a cost of about 20 million lives, while Russia's 1917 revolution brought civil war and famine. A box explains the tragedy of the commons and Ostrom's evidence that communities can avoid it.</p><!--viz:ebh-car-to-the-parts--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A Chicago slaughterhouse, where carcasses moved past workers each making one cut, inspires Ford in 1908. Below, two panels: with the car standing still, parts and workers come to it; on the assembly line the car moves past stationary workers, each repeating one task.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The flip: the car moves, the workers stay</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Chicago slaughterhouse</b><br><span style=\"color:var(--ink-2);font-size:13px\">carcass moves · one cut per worker</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>1908</b> · Peter Martin borrows it for Ford</div></div><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:6px;font-size:14px\"><div style=\"padding:10px 12px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><div style=\"font-size:12.5px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px\">The other way round</div><b>The car stands still</b><br><span style=\"color:var(--ink-2);font-size:13px\">parts and workers are brought to it</span></div><div style=\"padding:10px 12px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><div style=\"font-size:12.5px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px\">Assembly line</div><b>The car moves to the parts</b><br><span style=\"color:var(--ink-2);font-size:13px\">each worker stays put and repeats one standard task · cars come off so fast that only quick-drying black paint keeps up</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Leigh's point is the reversed flow; the lecture's 84 steps (L#26) describe how finely the work was split.</figcaption></figure><!--/viz:ebh-car-to-the-parts--><!--viz:ebh-selfridges-vs-woolworth--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table comparing Selfridges (London, 1909, competing on the shopping experience) with Woolworth (US five-and-dime chain of 596 stores in 1912, competing on price through buying power), with a note on who gains and loses from Woolworth's model.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Two ways to build a big retailer</div><div class=\"scroller\"><table><thead><tr><th></th><th>Selfridges</th><th>Woolworth</th></tr></thead><tbody><tr><td>Where, when</td><td>Oxford Street, London, 1909</td><td>US five-and-dime stores; 596 of them when it floated in 1912</td></tr><tr><td>Competes on</td><td style=\"background:var(--blue-soft)\"><b>Experience</b></td><td style=\"background:var(--clay-soft)\"><b>Price</b></td></tr><tr><td>How</td><td>goods you can handle · specialist staff · perfume by the entrance · shoppers called guests</td><td>goods at five or ten cents · a chain big enough to push suppliers' prices down</td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\">Woolworth's heirs, in Leigh's list, include Walmart, Tesco and Aldi: lower prices for shoppers and better returns for shareholders, while suppliers and small independent shops are squeezed.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Scale, not just a new factory, made Woolworth big: size became bargaining power over suppliers.</figcaption></figure><!--/viz:ebh-selfridges-vs-woolworth--><p><strong>The assembly line</strong> — In 1908 Ford executive Peter Martin proposed an assembly line, inspired by a Chicago slaughterhouse where carcasses moved past workers each making one cut. Moving the car towards the parts, rather than bringing the parts to the car, made production so fast that colour choice was dropped: black paint dried fastest. Leigh's 1908 is the proposal; Ford's moving line ran from 1913, the lecture's 1910s.</p><p><strong>Retail innovation: experience vs price</strong> — Selfridges (London, 1909) made shopping enjoyable — goods customers could handle, specialist staff, perfume at the entrance, customers called 'guests', 'the customer is always right'. Woolworth's five-and-dime chain (596 stores when it floated in 1912) used scale to squeeze suppliers and cut prices, the model of Walmart, Tesco and Aldi. The float also gave Woolworth outside shareholders, the joint-stock route to capital in L#26.</p><p><strong>Mass migration</strong> — Steel-hulled, coal-powered ships cut the Liverpool–New York crossing from 53 days (1850s) to 8 (1910s), and passports were rarely needed. These are the faster ships behind the first of L#26's four factors. Leigh stresses migrants add supply (workers, ideas) as well as demand.</p><div class=\"card\"><strong>Case: Ford's assembly line</strong> <em>(Ch. 6, Ford Motor Company, from 1908)</em><p>A Ford executive, inspired by a slaughterhouse's moving line of carcasses, proposed moving cars past specialised workers. Output rose so fast that the firm stopped offering colours and painted every car black, the quickest-drying paint.</p><p><em>Lesson:</em> Division of labour applied to moving production — the heart of mass production.</p><p><em>Think:</em> What trade-off did Ford make between variety and cost, and why did it pay?</p></div><div class=\"card\"><strong>Case: Woolworth's five-and-dime chain</strong> <em>(Ch. 6, Frank Woolworth's stores)</em><p>Woolworth's low-price stores grew into a nationwide chain listed on the stock market. Its size gave it the buying power to extract lower prices from suppliers, a strategy today's supermarket giants still use, benefiting shoppers and shareholders but squeezing suppliers and small shops.</p><p><em>Lesson:</em> Scale creates bargaining power — a feature of the rise of large corporations.</p><p><em>Think:</em> Who gains and who loses when a large retail chain uses its buying power?</p></div><details><summary>Worked problem: Short-run pricing with fixed and variable costs</summary><p>A textile unit has fixed costs of ₹6 lakh a month (rent, machine loans) and variable costs of ₹150 per metre. A buyer offers ₹180 a metre for 10,000 metres this month, when the unit would otherwise sit idle. Should it accept?</p><ol><li>Revenue = 10,000 × ₹180 = ₹18 lakh.</li><li>Extra (variable) cost = 10,000 × ₹150 = ₹15 lakh.</li><li>Fixed costs of ₹6 lakh are paid either way, so they do not change the decision.</li><li>Contribution = ₹18 lakh − ₹15 lakh = ₹3 lakh toward fixed costs.</li></ol><p><strong>Answer:</strong> Accept: the order covers variable cost and adds ₹3 lakh toward fixed costs. In the long run, though, prices must cover all costs or the firm closes — Marshall's distinction.</p></details><div class=\"def\"><b>Book vs lecture — When Ford's assembly line began.</b> Book: Leigh dates it to 1908, when Ford executive Peter Martin proposed it after visiting a Chicago slaughterhouse. Lecture: L#26 put Ford's line in 'the 1910s, 1920s' and once in 'the 1920s and 1930s'. The moving line ran at Ford's Highland Park plant from 1913. <b>Answer the 1910s in the quiz (1913 if a year is asked). 1908 is the year the idea was proposed; the 1920s–30s was a slip.</b></div><div class=\"def\"><b>Book vs lecture — What made the assembly line new.</b> Book: The radical step was flipping the flow: the car moved towards the parts, and each worker made one standard contribution, as slaughterhouse workers each made one cut. Lecture: L#26 stressed breaking car assembly into 84 standardised, repetitive steps, so that workers became replaceable: division of labour taken to an extreme, straight after Taylor's time and motion studies. <b>Two views of one line, not a conflict. For quiz questions on Ford use the lecture's 84 steps, standardisation and replaceable workers; the moving car and the slaughterhouse origin are the book's extra context.</b></div><div class=\"def\"><b>Book vs lecture — Who gets the credit for the line.</b> Book: Leigh credits the car's evolution to specialisation and names neither Adam Smith, Taylor nor Fayol in this chapter. Lecture: L#23 and L#26 trace the line to Smith's division of labour (1776) and Taylor's standardised tasks (1898–1901); L#25 and L#26 tie running a big firm to Fayol's top-down management. <b>Use the lecture's chain, Smith, then Taylor, then Ford, in Module 4 answers. This chapter alone won't give it.</b></div><div class=\"def\"><b>Book vs lecture — How much faster ships got.</b> Book: Migrant ships from Liverpool to New York took 53 days in the 1850s and 8 days by the 1910s, thanks to steel hulls and coal engines. Lecture: L#26 said railroads and ships cut journeys from '20 days' to '2 days', a round illustration of distance collapsing (his first factor). <b>The lecture's 20 to 2 is an illustration, not a measured route. If a question quotes Leigh's Liverpool–New York route, it is 53 to 8 days.</b></div><div class=\"def\"><b>Book vs lecture — Why firms grew so large.</b> Book: Leigh's business examples are Ford's line and retail chains whose size gave buying power over suppliers (Woolworth had 596 stores when it floated in 1912). Lecture: L#26 gave four factors: railroad and telegraph networks, mass production, the joint-stock corporation, and horizontal and vertical integration. Retail chains were not among his examples. <b>Learn the lecture's four factors. Woolworth's float is an example of the joint-stock factor; its supplier squeeze is scale, not integration, because it did not buy its suppliers.</b></div>"
     }
    ]
   }
@@ -625,6 +711,14 @@ HUB.addCourse({
   {
    "name": "Scientific management",
    "unit": "mgmt"
+  },
+  {
+   "name": "Administrative management",
+   "unit": "mgmt"
+  },
+  {
+   "name": "Large corporations",
+   "unit": "corp"
   }
  ],
  "traps": [
@@ -1249,6 +1343,167 @@ HUB.addCourse({
    "p": "The pillars of division of labour are specialisation, efficiency and mass production. Planning by managers and execution by workers is the loss-of-autonomy criticism of scientific management.",
    "f": "plan ≠ do → no autonomy",
    "lec": 23
+  },
+  {
+   "id": "ebh-t0093",
+   "h": "The 1842 Mines Act banned boys under 10, not under 9 or 18",
+   "p": "Under nine is the textile-mill age in the Factory Act 1833. He once said 18 in passing; elsewhere, and correctly, 10. Women and girls were banned underground at any age.",
+   "f": "textiles 9, mines 10",
+   "lec": 24
+  },
+  {
+   "id": "ebh-t0094",
+   "h": "The Ten Hours Act 1847 was the first of the three to reach every sector",
+   "p": "The Factory Act 1833 covered textile mills and the 1842 Act covered mines. The 1847 Act set 10 hours for women and teenagers in all industries.",
+   "f": "1833 mills, 1842 mines, 1847 all",
+   "lec": 24
+  },
+  {
+   "id": "ebh-t0095",
+   "h": "China calls itself communist, but the lecture describes it as state-led capitalism",
+   "p": "The state keeps control while following capitalist principles to create wealth, and owns the profit. That is neither pure communism nor quota-setting socialism.",
+   "f": "China = state-led capitalism",
+   "lec": 24
+  },
+  {
+   "id": "ebh-t0096",
+   "h": "Ideal communism is decentralised, not centralised",
+   "p": "The centralised picture comes from popular culture and from regimes that never reached the ideal. In theory, small communities decide and act as caretakers of the means of production.",
+   "f": "ideal = local, not central",
+   "lec": 24
+  },
+  {
+   "id": "ebh-t0097",
+   "h": "The 13 American colonies were on the east coast, not the west",
+   "p": "He said 'western coast'; they lay along the Atlantic. The independence date he gave, 4 July 1776, is right.",
+   "f": "13 colonies = Atlantic",
+   "lec": 24
+  },
+  {
+   "id": "ebh-t0098",
+   "h": "Fayol is French and looks from the top; Taylor is American and looks from the shop floor",
+   "p": "Both were engineers working at about the same time. Fayol ran a French mining company from the 1880s and wrote up his theory in 1916; Taylor's experiments were on a US factory floor.",
+   "f": "Fayol top-down, Taylor bottom-up",
+   "lec": 25
+  },
+  {
+   "id": "ebh-t0099",
+   "h": "Fayol has six activities but five functions",
+   "p": "Activities (technical, commercial, financial, security, accounting, managerial) describe what a business does. Functions (planning, organising, commanding, coordinating, controlling) describe what managing is. The lecture sometimes said 'five' for the activities.",
+   "f": "6 activities, 5 functions",
+   "lec": 25
+  },
+  {
+   "id": "ebh-t0100",
+   "h": "Unity of command is not unity of direction",
+   "p": "Unity of command: one boss for each employee. Unity of direction: one plan for the organisation. A worker with eight foremen breaks unity of command.",
+   "f": "command = one boss; direction = one plan",
+   "lec": 25
+  },
+  {
+   "id": "ebh-t0101",
+   "h": "Taylor's shop-floor work sits inside Fayol's technical activity, not the managerial one",
+   "p": "Time and motion study and the pig-iron experiment concern production, which is the technical activity. The managerial activity coordinates all five others.",
+   "f": "Taylor ⊂ technical",
+   "lec": 25
+  },
+  {
+   "id": "ebh-t0102",
+   "h": "The acronym is POCCC; there is no T",
+   "p": "Planning, organising, commanding, coordinating, controlling. The lecture's auto-summary wrote 'POTCC'; staffing, too, is not one of Fayol's five.",
+   "f": "P-O-C-C-C",
+   "lec": 25
+  },
+  {
+   "id": "ebh-t0103",
+   "h": "Standard time zones date from 1883, and a big country can have several",
+   "p": "1883 is when North American railways adopted standard zones; the US had four. Britain had a single railway time from the 1840s and Greenwich became the prime meridian in 1884.",
+   "f": "1883 zones, 1884 Greenwich",
+   "lec": 26
+  },
+  {
+   "id": "ebh-t0104",
+   "h": "Ford's assembly line is from the 1910s, not the 1920s–30s",
+   "p": "The moving line began at Highland Park in 1913, soon after Taylor's pig-iron experiment (1898–1901). The lecture once said the 1920s and 1930s.",
+   "f": "Ford line 1913",
+   "lec": 26
+  },
+  {
+   "id": "ebh-t0105",
+   "h": "84 steps is Ford's car; 18 operations is Smith's pin",
+   "p": "Ford broke car assembly into 84 repetitive steps. Smith's pin factory divided pin-making into 18 operations (L#23).",
+   "f": "pin 18, car 84",
+   "lec": 26
+  },
+  {
+   "id": "ebh-t0106",
+   "h": "Limited liability protects the investor, not the company's creditors",
+   "p": "The company still owes its debts; creditors simply cannot pursue the investors' homes, savings or land. The investor's loss is capped at the amount invested.",
+   "f": "lose the stake, keep the house",
+   "lec": 26
+  },
+  {
+   "id": "ebh-t0107",
+   "h": "Horizontal buys a rival; vertical buys a supplier or distributor",
+   "p": "Facebook and WhatsApp, two messaging apps, is horizontal. A steel maker buying iron-ore mines or a dealer chain is vertical.",
+   "f": "sideways vs along the chain",
+   "lec": 26
+  },
+  {
+   "id": "ebh-t0108",
+   "h": "Company and corporation are used interchangeably in this course",
+   "p": "He said the two differ in law, but the difference belongs to the legal aspects of business course, not this one.",
+   "f": "company = corporation (here)",
+   "lec": 26
+  },
+  {
+   "id": "ebh-t0109",
+   "h": "The assembly line moved the car to the parts",
+   "p": "The radical step was reversing the flow: the product travelled past stationary workers each doing one task, an idea taken from a Chicago slaughterhouse.",
+   "f": "Car moves, worker stays",
+   "bk": "Leigh ch6"
+  },
+  {
+   "id": "ebh-t0110",
+   "h": "Leigh's 1908 is when the assembly line was proposed, not when it ran",
+   "p": "Peter Martin put the idea forward in 1908. Ford's moving line began at Highland Park in 1913, which is why the lecture says the 1910s. Answer 1910s in the quiz.",
+   "f": "Proposed 1908, running 1913",
+   "bk": "Leigh ch6"
+  },
+  {
+   "id": "ebh-t0111",
+   "h": "Woolworth squeezed its suppliers; it did not buy them",
+   "p": "Woolworth used the size of its chain to bargain suppliers' prices down. Vertical integration (L#26) means owning the supplier or distributor, which Leigh does not describe.",
+   "f": "Bargain is not buy",
+   "bk": "Leigh ch6"
+  },
+  {
+   "id": "ebh-t0112",
+   "h": "Deposit guarantees usually cost nothing to honour",
+   "p": "Once depositors know their money is safe, they stop rushing to withdraw, so the guarantee prevents the run rather than paying for it.",
+   "f": "Guarantee stops the panic",
+   "bk": "Leigh ch6"
+  },
+  {
+   "id": "ebh-t0113",
+   "h": "Close trade ties did not prevent the First World War",
+   "p": "In 1914 Lloyd's of London insured most of Germany's shipping, yet Europe went to war. The side with the bigger economy eventually won.",
+   "f": "Trade ties ≠ peace",
+   "bk": "Leigh ch6"
+  },
+  {
+   "id": "ebh-t0114",
+   "h": "The tragedy of the commons is not inevitable",
+   "p": "Ostrom found communities in Nepal, Kenya and Indonesia managing shared resources well when locals set and enforced the rules.",
+   "f": "Ostrom: commons can work",
+   "bk": "Leigh ch6"
+  },
+  {
+   "id": "ebh-t0115",
+   "h": "Demand slopes down because of diminishing marginal utility",
+   "p": "The more of something consumers have, the less they will pay for one more unit. Supply slopes up because higher prices draw more producers in.",
+   "f": "Demand down, supply up",
+   "bk": "Leigh ch6"
   }
  ],
  "defs": [
@@ -2063,6 +2318,254 @@ HUB.addCourse({
    "term": "Scientific selection of workers",
    "html": "<b>Scientific selection</b>: Taylor's second principle: hire by matching the job's requirements to the worker's abilities and skills, not by favouritism or nepotism.",
    "lec": 23
+  },
+  {
+   "id": "ebh-d0105",
+   "unit": "labour",
+   "topic": "Live Lecture 5: the Sadler Report and the Mines Act 1842",
+   "term": "Mines and Collieries Act 1842",
+   "html": "<b>Mines and Collieries Act 1842</b>: banned women and girls from all underground work and boys under 10 from working underground; prompted by Lord Ashley's illustrated inquiry.",
+   "lec": 24
+  },
+  {
+   "id": "ebh-d0106",
+   "unit": "labour",
+   "topic": "Live Lecture 5: the Sadler Report and the Mines Act 1842",
+   "term": "Sadler Report",
+   "html": "<b>Sadler Report</b>: the findings of MP Michael Sadler's committee on factory children's labour, built on children's own testimony; it led to the Factory Act 1833.",
+   "lec": 24
+  },
+  {
+   "id": "ebh-d0107",
+   "unit": "labour",
+   "topic": "Live Lecture 5: the Sadler Report and the Mines Act 1842",
+   "term": "Political action (labour movement)",
+   "html": "<b>Political action</b>, in the lecture's sense: workers organising into unions and associations to press their demands on society and Parliament, as distinct from contesting elections.",
+   "lec": 24
+  },
+  {
+   "id": "ebh-d0108",
+   "unit": "labour",
+   "topic": "Live Lecture 5: the Sadler Report and the Mines Act 1842",
+   "term": "Poor Laws",
+   "html": "<b>Poor Laws</b>: English laws from the 1600s giving relief to people too poor to sustain themselves; in force until welfare reforms began in the early 1900s.",
+   "lec": 24
+  },
+  {
+   "id": "ebh-d0109",
+   "unit": "systems",
+   "topic": "Live Lecture 5: state-led capitalism and the innovation debate",
+   "term": "State-led capitalism",
+   "html": "<b>State-led capitalism</b>: the government keeps control but uses capitalist principles to create as much wealth as possible, and the profit belongs to the state. His example: China.",
+   "lec": 24
+  },
+  {
+   "id": "ebh-d0110",
+   "unit": "mgmt",
+   "topic": "Fayol and administrative management",
+   "term": "Fayolism (administrative management)",
+   "html": "<b>Fayolism</b> (administrative management): Henri Fayol's top-down framework for running a whole organisation: six business activities, five functions of management and 14 principles.",
+   "lec": 25
+  },
+  {
+   "id": "ebh-d0111",
+   "unit": "mgmt",
+   "topic": "Fayol and administrative management",
+   "term": "Fayol's six business activities",
+   "html": "<b>Six industrial and business activities</b>: technical, commercial, financial, security, accounting, and managerial, which oversees and coordinates the other five.",
+   "lec": 25
+  },
+  {
+   "id": "ebh-d0112",
+   "unit": "mgmt",
+   "topic": "Fayol's five functions of management",
+   "term": "Five functions of management",
+   "html": "<b>Five functions of management</b> (Fayol, POCCC): planning, organising, commanding, coordinating and controlling.",
+   "lec": 25
+  },
+  {
+   "id": "ebh-d0113",
+   "unit": "mgmt",
+   "topic": "Fayol's five functions of management",
+   "term": "Controlling",
+   "html": "<b>Controlling</b>: Fayol's fifth function: verifying that everything happens in line with the adopted plan, policies and rules.",
+   "lec": 25
+  },
+  {
+   "id": "ebh-d0114",
+   "unit": "mgmt",
+   "topic": "Fayol's 14 principles, and Taylor vs Fayol",
+   "term": "Unity of command",
+   "html": "<b>Unity of command</b>: Fayol's principle that each employee receives orders from one supervisor only, in contrast to Taylor's eight foremen.",
+   "lec": 25
+  },
+  {
+   "id": "ebh-d0115",
+   "unit": "mgmt",
+   "topic": "Fayol's 14 principles, and Taylor vs Fayol",
+   "term": "Unity of direction",
+   "html": "<b>Unity of direction</b>: Fayol's principle that the organisation follows a single plan of action, so it does not pull in two directions.",
+   "lec": 25
+  },
+  {
+   "id": "ebh-d0116",
+   "unit": "mgmt",
+   "topic": "Fayol's 14 principles, and Taylor vs Fayol",
+   "term": "Subordination of individual interest",
+   "html": "<b>Subordination of individual interest</b>: personal goals must align with the organisation's goals, which take priority.",
+   "lec": 25
+  },
+  {
+   "id": "ebh-d0117",
+   "unit": "mgmt",
+   "topic": "Fayol's 14 principles, and Taylor vs Fayol",
+   "term": "Scalar chain",
+   "html": "<b>Scalar chain</b>: Fayol's ninth principle: a clear line of authority running from the top of the organisation to the bottom.",
+   "lec": 25
+  },
+  {
+   "id": "ebh-d0118",
+   "unit": "corp",
+   "topic": "The modern corporation: joint stock, limited liability, professional managers",
+   "term": "Joint-stock corporation",
+   "html": "<b>Joint-stock corporation</b>: a company whose ownership is divided into shares that many investors buy and trade, giving it capital no single family could supply.",
+   "lec": 26
+  },
+  {
+   "id": "ebh-d0119",
+   "unit": "corp",
+   "topic": "The modern corporation: joint stock, limited liability, professional managers",
+   "term": "Limited liability",
+   "html": "<b>Limited liability</b>: if the company fails, creditors cannot seize investors' personal assets; each investor can lose at most what they put in.",
+   "lec": 26
+  },
+  {
+   "id": "ebh-d0120",
+   "unit": "corp",
+   "topic": "The modern corporation: joint stock, limited liability, professional managers",
+   "term": "Perpetual existence",
+   "html": "<b>Perpetual existence</b>: because shares can be transferred, a corporation carries on after its owners die, unlike a family shop.",
+   "lec": 26
+  },
+  {
+   "id": "ebh-d0121",
+   "unit": "corp",
+   "topic": "The modern corporation: joint stock, limited liability, professional managers",
+   "term": "Managerial revolution",
+   "html": "<b>Managerial revolution</b>: large corporations hiring specialised, professional managers for each function (HR, marketing, purchasing, sales) instead of relying on family.",
+   "lec": 26
+  },
+  {
+   "id": "ebh-d0122",
+   "unit": "corp",
+   "topic": "Consolidation: horizontal and vertical integration",
+   "term": "Horizontal integration",
+   "html": "<b>Horizontal integration</b>: buying or merging with a competitor in the same market, such as Facebook buying WhatsApp.",
+   "lec": 26
+  },
+  {
+   "id": "ebh-d0123",
+   "unit": "corp",
+   "topic": "Consolidation: horizontal and vertical integration",
+   "term": "Vertical integration",
+   "html": "<b>Vertical integration</b>: buying suppliers or distributors to control every step from raw material to final retail sale.",
+   "lec": 26
+  },
+  {
+   "id": "ebh-d0124",
+   "unit": "corp",
+   "topic": "From family shops to large corporations: railroads, telegraph and standard time",
+   "term": "Standard time zones",
+   "html": "<b>Standard time zones</b>: one agreed clock time across a region instead of local sun time in each town; forced by railway timetables, from 1883 in the lecture.",
+   "lec": 26
+  },
+  {
+   "id": "ebh-d0125",
+   "unit": "corp",
+   "topic": "Mass production and Ford's assembly line",
+   "term": "Assembly line",
+   "html": "<b>Assembly line</b>: production split into short, standardised, repetitive steps done in sequence; Ford divided car assembly into 84 steps in the 1910s.",
+   "lec": 26
+  },
+  {
+   "id": "ebh-d0126",
+   "unit": "ideas",
+   "topic": "Economic ideas",
+   "term": "Marshallian Cross",
+   "html": "<b>Marshallian Cross</b>: the supply-and-demand diagram, price on one axis and quantity on the other, named after Marshall because his 1890 account of it was the fullest. Its crossing point is the equilibrium.",
+   "bk": "Leigh ch6"
+  },
+  {
+   "id": "ebh-d0127",
+   "unit": "ideas",
+   "topic": "Economic ideas",
+   "term": "Fixed costs",
+   "html": "<b>Fixed costs</b>: costs that do not vary with output in the short run, such as land and buildings.",
+   "bk": "Leigh ch6"
+  },
+  {
+   "id": "ebh-d0128",
+   "unit": "ideas",
+   "topic": "Economic ideas",
+   "term": "Variable costs",
+   "html": "<b>Variable costs</b>: costs that rise and fall with output, such as labour and raw materials; they drive short-run pricing.",
+   "bk": "Leigh ch6"
+  },
+  {
+   "id": "ebh-d0129",
+   "unit": "ideas",
+   "topic": "Economic ideas",
+   "term": "Bank run",
+   "html": "<b>Bank run</b>: depositors rushing to withdraw at once; because banks <b>borrow short and lend long</b>, even sound banks can run out of cash.",
+   "bk": "Leigh ch6"
+  },
+  {
+   "id": "ebh-d0130",
+   "unit": "ideas",
+   "topic": "Economic ideas",
+   "term": "Public good",
+   "html": "<b>Public good</b>: a benefit available to everyone and not reduced by how many enjoy it — e.g. financial stability.",
+   "bk": "Leigh ch6"
+  },
+  {
+   "id": "ebh-d0131",
+   "unit": "ideas",
+   "topic": "Economic ideas",
+   "term": "Federal Reserve",
+   "html": "<b>Federal Reserve</b>: the US central bank, set up in <b>1913</b> with twelve regional banks able to issue currency, after the 1907 panic left the country relying on private bankers such as J.P. Morgan.",
+   "bk": "Leigh ch6"
+  },
+  {
+   "id": "ebh-d0132",
+   "unit": "corp",
+   "topic": "Large corporations",
+   "term": "Buying power",
+   "html": "<b>Buying power</b>: the leverage a very large buyer, such as a chain of hundreds of stores, has to push its suppliers' prices down. Woolworth is Leigh's example.",
+   "bk": "Leigh ch6"
+  },
+  {
+   "id": "ebh-d0133",
+   "unit": "corp",
+   "topic": "Large corporations",
+   "term": "Five-and-dime store",
+   "html": "<b>Five-and-dime store</b>: an American low-price shop whose goods cost five or ten cents; Woolworth built a national chain of them.",
+   "bk": "Leigh ch6"
+  },
+  {
+   "id": "ebh-d0134",
+   "unit": "ideas",
+   "topic": "Economic ideas",
+   "term": "Negative externality",
+   "html": "<b>Negative externality</b>: a cost imposed on others that is not reflected in the market price — the cause of the tragedy of the commons.",
+   "bk": "Leigh ch6"
+  },
+  {
+   "id": "ebh-d0135",
+   "unit": "ideas",
+   "topic": "Economic ideas",
+   "term": "Tragedy of the commons",
+   "html": "<b>Tragedy of the commons</b>: over-use of a shared resource because each user gains privately while the cost is spread across all users.",
+   "bk": "Leigh ch6"
   }
  ],
  "questions": [
@@ -8111,6 +8614,1230 @@ HUB.addCourse({
    "w": "Pay for hitting the benchmark was assumed to be enough; good supervisors, co-workers and emotional well-being were ignored.",
    "lec": 23,
    "lv": "recall"
+  },
+  {
+   "id": "ebh-q0370",
+   "topic": "Labour dates & laws",
+   "q": "The Mines and Collieries Act of 1842 banned boys below what age from working underground?",
+   "c": [
+    "9",
+    "10",
+    "13",
+    "18"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Under 10, along with all women and girls. Under nine is the textile-mill age in the Factory Act 1833; the 18 he once said in passing was a slip.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0371",
+   "topic": "Labour dates & laws",
+   "q": "Which group did the Mines and Collieries Act of 1842 ban from underground work altogether, whatever their age?",
+   "c": [
+    "Women and girls",
+    "Irish migrant workers",
+    "Union members",
+    "Men over 60"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Women and girls were barred from all underground work; boys were barred only below the age of 10. Adult men were not restricted.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0372",
+   "topic": "Labour movement",
+   "q": "What was new about the way Lord Ashley's 1842 inquiry into the mines made its case?",
+   "c": [
+    "It relied only on figures supplied by mine owners",
+    "It was the first inquiry to hear children's testimony",
+    "It used photographs taken underground",
+    "It commissioned artists to draw women and children hauling coal tubs in the mines"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The drawings let readers see the conditions and challenged Victorian morality. There were no cameras for this, and hearing children's testimony was already the method of Sadler's committee before 1833.",
+   "lec": 24,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0373",
+   "topic": "Labour dates & laws",
+   "q": "Whose parliamentary committee gathered the children's testimony that led to the Factory Act 1833?",
+   "c": [
+    "Lord Ashley's",
+    "Robert Owen's",
+    "Michael Sadler's",
+    "John Doherty's"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Michael Sadler MP headed it, hence the Sadler Report. Lord Ashley led the 1842 mines inquiry; Owen backed the GNCTU and Doherty founded the NAPL.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0374",
+   "topic": "Labour dates & laws",
+   "q": "Which of these Acts limited working hours across all industries rather than in one sector?",
+   "c": [
+    "Factory Act 1833",
+    "Mines and Collieries Act 1842",
+    "Ten Hours Act 1847",
+    "Public Health Act 1848"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The 1847 Act set 10 hours for women and teenagers in every sector. The 1833 Act covered textile mills and the 1842 Act mines; the 1848 Act dealt with living conditions, not hours.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0375",
+   "topic": "Labour movement",
+   "q": "Why, according to Live Lecture 5, did early national unions such as the NAPL publish their own journals?",
+   "c": [
+    "To sell advertising and fund strike pay",
+    "To tell society at large, including owners and the government, about workers' conditions, building a record later used in Parliament",
+    "To print wage rates fixed by the government",
+    "To recruit factory owners as members"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The journals documented conditions for the middle class, owners, the government and non-member workers, and that record became evidence for sympathetic MPs. Wages were not fixed by the government at the time.",
+   "lec": 24,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0376",
+   "topic": "Labour movement",
+   "q": "In Live Lecture 5, what did 'political action' by workers in the 1830s mean?",
+   "c": [
+    "Standing as candidates in parliamentary elections",
+    "Armed uprisings against the government",
+    "Voting for pro-labour MPs",
+    "Organising into unions and associations to press their demands on society and Parliament"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He stressed that it meant organising, not elections; most workers could not even vote then, since the vote was limited to property owners.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0377",
+   "topic": "Economic systems",
+   "q": "How did he characterise China's economic system?",
+   "c": [
+    "Pure communism: a classless, stateless society",
+    "Socialism, with production quotas set for every firm",
+    "Free-market capitalism with no state control",
+    "State-led capitalism: the government keeps control but follows capitalist principles to create wealth"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The state stays in control and owns the profit while using capitalist methods to grow. He said it does not generally set production quotas, which is what separates it from socialism.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0378",
+   "topic": "Economic systems",
+   "q": "Which statement about ideal communism matches the lecture?",
+   "c": [
+    "It would be highly decentralised, unlike the centralised image in popular culture",
+    "It puts all decisions in a central planning bureau",
+    "It is another name for state-led capitalism",
+    "It needs a single national owner for all factories"
+   ],
+   "a": [
+    0
+   ],
+   "w": "In theory small communities decide and act as caretakers of the means of production. The centralised image comes from popular culture, and the ideal has never been reached.",
+   "lec": 24,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0379",
+   "topic": "Economic systems",
+   "q": "A student argued that patriarchy is a by-product of capitalism and would vanish under communism. What distinction did he draw in reply?",
+   "c": [
+    "Patriarchy is an economic system and communism a cultural one",
+    "Patriarchy is a socio-cultural system, while capitalism and communism are economic systems: closely linked but distinct",
+    "Communism and patriarchy are the same system",
+    "Capitalism has no connection with social hierarchy"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He granted the strong links but kept the categories apart, and said this course deals with the economic systems. Calling patriarchy economic reverses his distinction.",
+   "lec": 24,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0380",
+   "topic": "Economic systems",
+   "q": "Which is an Indian example he gave of government intervention to make healthcare accessible?",
+   "c": [
+    "Jan Aushadhi pharmacies selling generic medicines",
+    "The Scooters Control Order",
+    "The Combinations of Workmen Act",
+    "Deregulated drug prices"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He also named CGHS, price controls and Ayushman Bharat. The Scooters Control Order belongs to the License Raj in industry, not healthcare.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0381",
+   "topic": "Economic systems",
+   "q": "A student asked how capitalism can drive innovation when it rewards only ideas that earn private profit. How did he answer?",
+   "c": [
+    "Innovation counts only if it is free to everyone",
+    "The student was simply wrong, since markets always make innovation accessible",
+    "Innovation is often defined as something new that solves a problem, accessible or not; but the concern is real, links to inequality and is one reason governments intervene",
+    "Real innovation happens only under socialism"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He separated the definition (newness that solves a problem) from access, then agreed that privately owned innovation can reach few people, which is why no country runs pure capitalism.",
+   "lec": 24,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0382",
+   "topic": "Administrative management",
+   "q": "Who was Henri Fayol?",
+   "c": [
+    "An American engineer who ran the pig-iron experiment at Bethlehem Steel",
+    "A French mining engineer who ran a mining company from the 1880s and theorised management from the top",
+    "A German sociologist who described bureaucracy",
+    "A Scottish economist who described the pin factory"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Fayol was French and a senior executive, so he saw the whole firm. The pig-iron experiment was Taylor's, bureaucracy was Weber's and the pin factory was Smith's.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0383",
+   "topic": "Administrative management",
+   "q": "In which year did Fayol set out his theory of administration in writing?",
+   "c": [
+    "1776",
+    "1898",
+    "1911",
+    "1916"
+   ],
+   "a": [
+    3
+   ],
+   "w": "1916. 1911 is Taylor's The Principles of Scientific Management, 1898 the start of the pig-iron experiment and 1776 Smith's Wealth of Nations.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0384",
+   "topic": "Administrative management",
+   "q": "What is the key difference in viewpoint between Taylor and Fayol?",
+   "c": [
+    "Taylor looked from the shop floor up at tasks and workers; Fayol looked from the top down at the whole organisation",
+    "Taylor studied banks; Fayol studied factories",
+    "Taylor rejected science; Fayol embraced it",
+    "Taylor worked in France; Fayol in the United States"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Taylor's view came from the factory floor, Fayol's from the CEO's chair. The countries are the other way round: Taylor in the US, Fayol in France.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0385",
+   "topic": "Administrative management",
+   "q": "Which of these is not one of Fayol's six industrial and business activities?",
+   "c": [
+    "Security",
+    "Accounting",
+    "Human relations",
+    "Commercial"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The six are technical, commercial, financial, security, accounting and managerial. A human-relations approach came later, and the lecture said this course will not go into it.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0386",
+   "topic": "Administrative management",
+   "q": "A firm's team negotiates with suppliers for a scarce raw material and runs the advertising for its finished goods. Under which of Fayol's activities does this fall?",
+   "c": [
+    "Technical",
+    "Commercial",
+    "Financial",
+    "Managerial"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Commercial covers buying, selling and exchange, so procurement as well as marketing and advertising. Technical is production itself.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0387",
+   "topic": "Administrative management",
+   "q": "A factory builds a boundary wall, sets up security posts and hires guards to protect its plant and staff. Which of Fayol's activities is this?",
+   "c": [
+    "Security",
+    "Accounting",
+    "Technical",
+    "Commercial"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Security protects property and the people employed. None of the other three is about protection.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0388",
+   "topic": "Administrative management",
+   "q": "Under which of Fayol's six activities does Taylor's work (time and motion study, the pig-iron experiment) fall?",
+   "c": [
+    "Managerial",
+    "Accounting",
+    "Security",
+    "Technical"
+   ],
+   "a": [
+    3
+   ],
+   "w": "It is about production on the factory floor, which is the technical activity. The managerial activity coordinates all the others, which is why Taylor's work is a subset of Fayol's framework rather than the other way round.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0389",
+   "topic": "Administrative management",
+   "q": "A company planning a new plant arranges a ₹2 crore bank loan and decides how to use the money best. Which of Fayol's activities is this?",
+   "c": [
+    "Commercial",
+    "Financial",
+    "Accounting",
+    "Technical"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Financial means finding capital and using it optimally. Accounting records stock, costs and profit after the event.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0390",
+   "topic": "Administrative management",
+   "q": "What is the role of the managerial activity in Fayol's list?",
+   "c": [
+    "Keeping stock records and balance sheets",
+    "Buying raw materials",
+    "Overseeing and coordinating the other five activities",
+    "Producing and adapting goods"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Managerial oversees and coordinates technical, commercial, financial, security and accounting. Stock records belong to accounting and buying to commercial.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0391",
+   "topic": "Administrative management",
+   "q": "Inventory appears both in Fayol's technical activity (when to reorder) and in his accounting activity (what holding stock costs). What point did the lecture make with this?",
+   "c": [
+    "The six activities overlap and depend on each other; they are not mutually exclusive",
+    "Inventory should be dropped from the list",
+    "Accounting decisions always override technical ones",
+    "Only the managerial activity deals with inventory"
+   ],
+   "a": [
+    0
+   ],
+   "w": "One issue can sit in two activities with different emphasis. The lecture also noted that areas which emerged after 1916 may fit several activities or none.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0392",
+   "topic": "Administrative management",
+   "q": "Which of these is not one of Fayol's five functions of management?",
+   "c": [
+    "Commanding",
+    "Staffing",
+    "Coordinating",
+    "Controlling"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Fayol's five are planning, organising, commanding, coordinating and controlling (POCCC). Staffing belongs to later lists of management functions.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0393",
+   "topic": "Administrative management",
+   "q": "A manager draws up HR policies, sets KPIs to measure each worker, and guides and supervises the staff. Which of Fayol's functions is this?",
+   "c": [
+    "Planning",
+    "Organising",
+    "Commanding",
+    "Controlling"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Commanding is guiding, leading and supervising staff, including the policies and KPIs for doing so. Controlling checks results against the plan afterwards.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0394",
+   "topic": "Administrative management",
+   "q": "At the end of the year a manager checks whether everything happened in line with the adopted plan, policies and rules. Which of Fayol's functions is this?",
+   "c": [
+    "Coordinating",
+    "Commanding",
+    "Organising",
+    "Controlling"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Verifying conformity with the plan is controlling. Coordinating is about getting activities and departments to work in harmony while the work is going on.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0395",
+   "topic": "Administrative management",
+   "q": "Having planned a new product line, a manager arranges the machines, materials and people it needs and defines each person's role. Which of Fayol's functions is this?",
+   "c": [
+    "Organising",
+    "Planning",
+    "Controlling",
+    "Coordinating"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Organising provides the material and human resources the plan needs and defines roles. The planning was already done.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0396",
+   "topic": "Administrative management",
+   "q": "A worker takes orders from a speed boss, a repair boss and an inspector, and their orders sometimes clash. Which of Fayol's principles does this break?",
+   "c": [
+    "Unity of direction",
+    "Scalar chain",
+    "Unity of command",
+    "Centralisation"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Unity of command says one supervisor per employee; Taylor's functional foremen break it. Unity of direction is about one plan for the organisation, not one boss for a worker.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0397",
+   "topic": "Administrative management",
+   "q": "Two departments of one firm follow conflicting plans: one is expanding into a market the other is leaving. Which of Fayol's principles is broken?",
+   "c": [
+    "Unity of command",
+    "Equity",
+    "Remuneration",
+    "Unity of direction"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The organisation should follow a single plan and direction. Unity of command concerns how many bosses an employee has.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0398",
+   "topic": "Administrative management",
+   "q": "A firm loses a third of its staff every year and is always training newcomers. Which of Fayol's principles is it failing?",
+   "c": [
+    "Stability of tenure",
+    "Initiative",
+    "Order",
+    "Discipline"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Stability of tenure: high staff turnover is inefficient. Discipline is about obeying the rules, not staying in the job.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0399",
+   "topic": "Administrative management",
+   "q": "What does Fayol's principle of subordination of individual interest mean?",
+   "c": [
+    "Workers must be paid less than managers",
+    "Managers must obey workers' committees",
+    "Individuals should work alone rather than in teams",
+    "Personal goals must align with, and give way to, the organisation's goals"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The organisation's goals come first, and personal goals should be in line with them. Pay is the separate principle of remuneration.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0400",
+   "topic": "Scientific management",
+   "q": "Besides a rule of science for each job and the scientific selection of workers, what were Taylor's third and fourth principles?",
+   "c": [
+    "Unity of command and a scalar chain",
+    "Piece-rate wages and longer hours",
+    "Cooperation between management and workers, and an equal division of work and responsibility between them",
+    "Workers planning their own methods, and managers doing the physical work"
+   ],
+   "a": [
+    2
+   ],
+   "w": "L#25 completed the four. Unity of command and the scalar chain are Fayol's principles, not Taylor's.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0401",
+   "topic": "Administrative management",
+   "q": "Why does the lecture call Fayol's framework universally applicable but Taylor's specialised?",
+   "c": [
+    "Fayol's functions and principles apply to every activity and type of organisation, while Taylor's methods target shop-floor productivity",
+    "Fayol wrote in English and Taylor did not",
+    "Taylor's ideas were banned outside the US",
+    "Fayol studied only mining firms"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Fayol aimed to improve overall administration, so his principles reach every department and kind of organisation. Taylor aimed to raise efficiency on the factory floor.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0402",
+   "topic": "Large corporations",
+   "q": "Which of these is not one of the four factors the lecture gave for the rise of large corporations?",
+   "c": [
+    "Railroad and telegraph networks",
+    "The rise of mass production",
+    "The revival of craft guilds",
+    "Consolidation and monopolies"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The four are transport and communication networks, mass production, the modern corporation, and consolidation. Guilds belong to the pre-industrial economy of Module 2 and had declined long before.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0403",
+   "topic": "Large corporations",
+   "q": "From which year does the lecture date the standardisation of time zones?",
+   "c": [
+    "1776",
+    "1883",
+    "1913",
+    "1947"
+   ],
+   "a": [
+    1
+   ],
+   "w": "1883, when North American railways adopted standard zones. 1913 is Ford's moving assembly line and 1776 Smith's Wealth of Nations.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0404",
+   "topic": "Large corporations",
+   "q": "Why did railways make standard time necessary?",
+   "c": [
+    "Each town set its clocks by the sun, so one train's timetable read differently in each city",
+    "Trains could run only in daylight",
+    "Governments taxed rail travel by the hour",
+    "Mechanical clocks had not yet been invented"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Local sun time differed from town to town, so long-distance timetables were confusing until one standard time applied across a region. Clocks existed; they just disagreed.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0405",
+   "topic": "Large corporations",
+   "q": "Why did railways matter so much for Manchester's cotton mills?",
+   "c": [
+    "Manchester grew its own cotton",
+    "Raw cotton arrived at the port of Liverpool and had to be carried to the mills",
+    "The mills exported their cloth by air",
+    "Railways removed the need for raw cotton"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Much of the raw cotton came from abroad and landed at Liverpool, so the Liverpool–Manchester distance had to be covered quickly. Manchester did not grow cotton.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0406",
+   "topic": "Large corporations",
+   "q": "A ship breaks down and a rail line is cut on a factory's supply route. How did the telegraph help large firms in cases like this?",
+   "c": [
+    "It carried the raw material instead",
+    "It replaced the railway altogether",
+    "It set a standard time for repairs",
+    "It let the problem be reported and fixed quickly, so the factory could keep running through the year"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Fast communication meant disruptions were reported and repaired sooner, keeping raw material and goods flowing continuously. The telegraph carried messages, not goods.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0407",
+   "topic": "Large corporations",
+   "q": "Into how many distinct, repetitive steps did Ford's assembly line break car assembly?",
+   "c": [
+    "18",
+    "8",
+    "48",
+    "84"
+   ],
+   "a": [
+    3
+   ],
+   "w": "84 steps. Eighteen is the number of operations in Smith's pin factory (L#23).",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0408",
+   "topic": "Large corporations",
+   "q": "Why did Ford's standardised, repetitive steps make workers replaceable?",
+   "c": [
+    "Any worker could learn a step quickly, so output stayed the same when one worker was replaced",
+    "Workers were paid by the hour",
+    "Machines did all the work",
+    "Unions agreed to rotate workers"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A short, standard step needs little skill, so another worker can take over without lowering efficiency. People still did the steps; machines had not replaced them.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0409",
+   "topic": "Large corporations",
+   "q": "In the lecture's hypothetical, a plant makes 50 cars a day and runs 30 days a month without a break. How many cars does it make in a month?",
+   "c": [
+    "150",
+    "500",
+    "1,500",
+    "15,000"
+   ],
+   "a": [
+    2
+   ],
+   "w": "50 × 30 = 1,500. He used it to show how output, owned and sold by the company, turns into the money that builds more plants.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0410",
+   "topic": "Large corporations",
+   "q": "A company divides its ownership into 1,000 shares and sells 800 of them to the public at ₹50 each. How much capital does it raise?",
+   "c": [
+    "₹4,000",
+    "₹40,000",
+    "₹50,000",
+    "₹4,00,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "800 × ₹50 = ₹40,000. ₹50,000 would be all 1,000 shares sold, but 200 were kept back.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0411",
+   "topic": "Large corporations",
+   "q": "A company's ownership is divided into 1,000 shares. What share of the company do 25 shares give?",
+   "c": [
+    "2.5%",
+    "0.25%",
+    "25%",
+    "40%"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Each share is 0.1%, so 25 shares are 2.5%. On the same basis the lecture's 100 shares are 10% and 10 shares 1%.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0412",
+   "topic": "Large corporations",
+   "q": "Why did joint-stock corporations arise, according to the lecture?",
+   "c": [
+    "Kings banned family businesses",
+    "Workers demanded a share of ownership",
+    "Railroads and massive factories needed more capital than any individual or family had",
+    "Banks refused to lend to anyone"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Pooling many investors' money through shares made huge projects possible. The motive was capital, not a demand from workers.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0413",
+   "topic": "Large corporations",
+   "q": "A family shop usually closed when its owner died. Why does a corporation not have to?",
+   "c": [
+    "The government takes it over",
+    "Its shares can be transferred, so the company carries on whoever holds them",
+    "It must close but may reopen under a new name",
+    "Corporations cannot have individual owners"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Ownership passes with the shares, so the company outlives any one owner; some firms last 100–200 years. Individuals can and do own shares.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0414",
+   "topic": "Large corporations",
+   "q": "An investor put ₹1 lakh into a limited company that goes bankrupt owing its bank ₹10 crore. What can the investor lose?",
+   "c": [
+    "Up to ₹10 crore",
+    "Her house and savings, if the bank asks",
+    "Nothing at all, not even the ₹1 lakh",
+    "At most the ₹1 lakh she invested"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Limited liability caps her loss at her investment; creditors cannot reach her personal assets. She does not keep the ₹1 lakh, though: that stake can be lost.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0415",
+   "topic": "Large corporations",
+   "q": "Before limited liability, what could happen to investors when a partnership went bankrupt?",
+   "c": [
+    "Creditors could pursue their homes, savings and land",
+    "The government repaid the debts",
+    "Their liability ended with the amount invested",
+    "The workers took over the business"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Unlimited liability made investing dangerous, because creditors could take personal assets. Liability ending with the amount invested is what limited liability later introduced.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0416",
+   "topic": "Large corporations",
+   "q": "What did the lecture mean by the managerial revolution?",
+   "c": [
+    "Workers electing their own managers",
+    "Large corporations hiring specialised managers for functions such as HR, marketing, purchasing and sales",
+    "Managers buying out the owners",
+    "Replacing managers with machines"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Big firms needed professional managers for each function, hired for their skills. He linked it to Fayol, to Taylor's scientific hiring and to Weber's bureaucracy.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0417",
+   "topic": "Large corporations",
+   "q": "Which thinker did the lecture link with bureaucratic management and the managerial revolution?",
+   "c": [
+    "Adam Smith",
+    "Frederick Taylor",
+    "Henri Fayol",
+    "Max Weber"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Max Weber, the German sociologist. Fayol is linked to the managerial revolution too, but through administrative management, not bureaucracy.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0418",
+   "topic": "Large corporations",
+   "q": "Facebook's purchase of WhatsApp, a rival messaging app, is an example of what?",
+   "c": [
+    "Vertical integration",
+    "Limited liability",
+    "Horizontal integration",
+    "Division of labour"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Buying a competitor in the same market is horizontal integration. Vertical would mean buying a supplier or distributor.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0419",
+   "topic": "Large corporations",
+   "q": "A steel company buys the iron-ore mines that supply it and a chain of dealers that sells its products. What is this?",
+   "c": [
+    "Vertical integration",
+    "Horizontal integration",
+    "A joint-stock flotation",
+    "Unity of direction"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Owning steps up and down the chain, from raw material to sale, is vertical integration. Horizontal would mean buying another steel maker.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0420",
+   "topic": "Large corporations",
+   "q": "Which link between management thought and the rise of large corporations does the lecture draw?",
+   "c": [
+    "Fayol invented the assembly line",
+    "Weber designed Ford's factories",
+    "Taylor opposed mass production",
+    "Ford's assembly line took division of labour and Taylor's standardised tasks to an extreme"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Smith's division of labour and Taylor's standardisation fed mass production, and Ford's 84 steps were the extreme case. Fayol's link is to administration, not the assembly line.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0421",
+   "topic": "Economic ideas",
+   "q": "Alfred Marshall compared supply and demand to:",
+   "c": [
+    "Two sides of a coin",
+    "The hands of a clock",
+    "A see-saw",
+    "The blades of a pair of scissors"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Neither blade alone cuts: price is set by both together. His 1890 Principles of Economics made the 'Marshallian Cross' the standard diagram.",
+   "bk": "Leigh ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0422",
+   "topic": "Economic ideas",
+   "q": "Why does the demand curve slope downward, according to Leigh's account of Marshall?",
+   "c": [
+    "Because producers make more when prices rise",
+    "Because of diminishing marginal utility: the more consumers have, the less they will pay for an extra unit",
+    "Because of fixed costs",
+    "Because governments cap prices"
+   ],
+   "a": [
+    1
+   ],
+   "w": "'Producers make more when prices rise' explains the upward-sloping supply curve, not demand.",
+   "bk": "Leigh ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0423",
+   "topic": "Economic ideas",
+   "q": "A drought raises the cost of water used in cotton processing. According to Marshall's distinction, how quickly will cotton prices respond compared with a rise in machinery costs?",
+   "c": [
+    "Faster, because water is a variable cost that drives short-run prices",
+    "Slower, because water is a fixed cost",
+    "At the same speed",
+    "Not at all"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Variable costs (labour, materials) feed through quickly; fixed costs such as machinery matter mainly for long-run survival.",
+   "bk": "Leigh ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0424",
+   "topic": "Economic ideas",
+   "q": "In a mandi, at ₹40 a kilo, onion sellers offer 900 tonnes but buyers want 1,300 tonnes. What does Marshall's supply-and-demand model predict?",
+   "c": [
+    "Nothing changes, since ₹40 is already the equilibrium",
+    "The price falls, because buyers want more than is offered",
+    "The price rises towards the level at which the quantity offered equals the quantity wanted",
+    "Sellers offer less as the price rises"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Equilibrium is where the curves cross, and at ₹40 there is a shortage of 400 tonnes. A higher price draws in more supply and trims demand until the two match. Sellers offer more, not less, as the price rises, because supply slopes up.",
+   "bk": "Leigh ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0425",
+   "topic": "Economic ideas",
+   "q": "The word 'economics' comes from the Ancient Greek oikonomia, meaning roughly:",
+   "c": [
+    "Market exchange",
+    "Study of money",
+    "Household management",
+    "State treasury"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Leigh notes it is surprising that a full account of supply and demand came only around 1900, despite ancient markets and mathematics.",
+   "bk": "Leigh ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0426",
+   "topic": "Economic ideas",
+   "q": "Why are even well-managed commercial banks vulnerable to runs?",
+   "c": [
+    "They hold all deposits in gold",
+    "They charge no interest",
+    "They are owned by the government",
+    "They borrow short-term (deposits) and lend long-term, so they cannot repay everyone at once"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Maturity mismatch is inherent to banking. A central bank's deposit guarantee prevents the panic.",
+   "bk": "Leigh ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0427",
+   "topic": "Economic ideas",
+   "q": "A rumour spreads that a cooperative bank is failing, but the central bank announces it guarantees all deposits. Depositors stop queuing and the bank survives without the central bank paying anything. Why?",
+   "c": [
+    "The bank secretly received a loan",
+    "The guarantee removed the reason to panic, so the run stopped before money was needed",
+    "Depositors were legally barred from withdrawing",
+    "Interest rates were raised"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Leigh: typically not a cent changes hands. Stability is a public good that benefits everyone.",
+   "bk": "Leigh ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0428",
+   "topic": "Economic ideas",
+   "q": "In which year was the US Federal Reserve created?",
+   "c": [
+    "1907",
+    "1910",
+    "1913",
+    "1929"
+   ],
+   "a": [
+    2
+   ],
+   "w": "1907 was the panic J.P. Morgan stemmed; 1910 the secret Jekyll Island meeting; 1913 the Fed's creation with twelve regional banks.",
+   "bk": "Leigh ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0429",
+   "topic": "Economic ideas",
+   "q": "Which of these was founded in the 1600s, making it older than the US Federal Reserve by about two centuries?",
+   "c": [
+    "The Bank of England",
+    "The Reserve Bank of India",
+    "The European Central Bank",
+    "The World Bank"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Leigh lists the Bank of Amsterdam, Stockholm's central bank and the Bank of England, all 17th-century. The Fed was not the first central bank.",
+   "bk": "Leigh ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0430",
+   "topic": "Economic ideas",
+   "q": "The First World War lasted four years and killed about 20 million people, yet Leigh says its outcome was predictable. Why?",
+   "c": [
+    "Trade ties between the combatants made a long war impossible",
+    "The Central powers had the larger navy",
+    "Russia's revolution handed victory to Germany",
+    "The Allies had a far larger economic base: about five times the people, eleven times the land and three times the income"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Leigh blames the war's length on inept generals and stubborn political leaders, but the side with the bigger economy won. Trade ties did not prevent the war: in 1914 Lloyd's of London insured most German shipping.",
+   "bk": "Leigh ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0431",
+   "topic": "Economic ideas",
+   "q": "After the 1917 Russian revolution, what land policy did Lenin's regime adopt?",
+   "c": [
+    "It abolished private land ownership and banned selling or renting land, a ban lasting until 1990",
+    "It gave peasants freehold title they could sell",
+    "It introduced a land tax like Meiji Japan",
+    "It restored the nobility's estates"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Promised 'peace, land and bread', Russians got six years of civil war, halved incomes and about 13 million premature deaths.",
+   "bk": "Leigh ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0432",
+   "topic": "Economic ideas",
+   "q": "Fishers in a shared lake each add one more net, knowing over-fishing will deplete stocks. Using Leigh's box, what best explains their behaviour and a possible fix?",
+   "c": [
+    "Diminishing marginal utility; fix by raising prices",
+    "A negative externality creating a tragedy of the commons; fix by locally made and enforced rules, as Ostrom documented",
+    "Comparative advantage; fix by trade",
+    "Limited liability; fix by incorporation"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Each fisher gains privately while the cost of depletion falls on all. Ostrom found success where locals made the rules, enforced them, and used modest sanctions at first.",
+   "bk": "Leigh ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0433",
+   "topic": "Large corporations",
+   "q": "Where did Ford executive Peter Martin get the idea for the assembly line?",
+   "c": [
+    "A textile mill in Manchester",
+    "A railway workshop",
+    "A Japanese shipyard",
+    "A Chicago slaughterhouse where carcasses moved past workers each making one cut"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The 'disassembly line' inspired an assembly line: move the product past specialised workers.",
+   "bk": "Leigh ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0434",
+   "topic": "Large corporations",
+   "q": "Leigh dates Ford's assembly line to 1908, while the lecture (L#26) places it in the 1910s. How do the two fit together?",
+   "c": [
+    "1908 is when executive Peter Martin proposed it; Ford's moving line ran from 1913",
+    "Leigh is right and the lecture has the decade wrong",
+    "1908 is when Ford stopped offering a choice of colours",
+    "The lecture means a second Ford line built in the 1920s"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Leigh gives the year the idea was put forward after the slaughterhouse visit. The moving line began at Highland Park in 1913, the lecture's 1910s, so answer 1910s in the quiz. The colour choice went only once the line was running.",
+   "bk": "Leigh ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0435",
+   "topic": "Large corporations",
+   "q": "Why did Ford stop letting customers choose the colour of their cars?",
+   "c": [
+    "Customers preferred black",
+    "Coloured paint was banned",
+    "Cars came off the line so fast that only quick-drying black paint kept up",
+    "Black paint was cheapest to import"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Speed of the line set the constraint — a trade-off of variety for low cost typical of mass production.",
+   "bk": "Leigh ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0436",
+   "topic": "Large corporations",
+   "q": "A Tiruppur garment unit used to keep each shirt on one table while tailors walked over with collars, sleeves and buttons. Now each shirt rides a conveyor past tailors who stay in place, each adding one part. Which feature of Ford's assembly line, as Leigh describes it, has the unit copied?",
+   "c": [
+    "Painting every product the same colour",
+    "Moving the product to the workers and parts, instead of bringing them to the product",
+    "Splitting the work into exactly 84 steps",
+    "Selling the product through its own chain of stores"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Leigh calls the flip radical: the car travelled towards the parts. The 84 steps are the lecture's count for Ford's car (L#26), not the feature the unit copied, and the single paint colour was a side effect of the line's speed.",
+   "bk": "Leigh ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0437",
+   "topic": "Management thought",
+   "q": "Leigh traces Ford's assembly line to a Chicago slaughterhouse where carcasses moved past workers who each sliced off one standard cut. Which principle do the two share?",
+   "c": [
+    "Limited liability",
+    "Unity of command",
+    "Specialisation: each worker repeats one standard task",
+    "Vertical integration"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Leigh says the car's evolution owed much to specialisation. Unity of command (Fayol, L#25) means one boss per worker, and vertical integration (L#26) means owning suppliers or distributors; neither describes how the work was split.",
+   "bk": "Leigh ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0438",
+   "topic": "Large corporations",
+   "q": "What was distinctive about Harry Selfridge's London department store, opened in 1909?",
+   "c": [
+    "It made shopping enjoyable: goods customers could handle, specialist staff, customers treated as 'guests'",
+    "It sold everything for five or ten cents",
+    "It sold only by mail order",
+    "It was owned by its workers"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Selfridge competed on experience; Woolworth's five-and-dime stores competed on price.",
+   "bk": "Leigh ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0439",
+   "topic": "Large corporations",
+   "q": "A national supermarket chain with 3,000 outlets negotiates much lower prices from biscuit makers than a single kirana store can. Which historical retailer pioneered this approach, and who loses from it?",
+   "c": [
+    "Selfridges; shoppers",
+    "Ford; workers",
+    "Woolworth; suppliers and independent retailers",
+    "The East India Company; shareholders"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Woolworth used its large network's buying power ('pile 'em high, sell 'em cheap'). Consumers and shareholders gain; suppliers and small shops are squeezed.",
+   "bk": "Leigh ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0440",
+   "topic": "Large corporations",
+   "q": "Woolworth floated on the stock market in 1912 with 596 stores. Which of the lecture's four factors behind large corporations (L#26) does the float illustrate?",
+   "c": [
+    "Railroad and telegraph networks",
+    "The joint-stock corporation: raising capital by selling shares to the public",
+    "Mass production",
+    "Vertical integration"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Floating means selling shares to outside investors, the joint-stock route to capital no family could supply. Woolworth's bargaining with suppliers used the chain's size; it did not buy them, so it was not vertical integration.",
+   "bk": "Leigh ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0441",
+   "topic": "Large corporations",
+   "q": "Between the 1850s and the 1910s, how did the sailing time from Liverpool to New York change?",
+   "c": [
+    "From 8 days to 53 days",
+    "From 20 days to 15 days",
+    "It did not change",
+    "From 53 days to 8 days"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Steel hulls and coal engines made mass migration feasible. The lecture's '20 days became 2 days' (L#26) was a round illustration; Leigh's figures are for this route.",
+   "bk": "Leigh ch6",
+   "lv": "recall"
   }
  ],
  "briefs": {
@@ -8173,6 +9900,10 @@ HUB.addCourse({
   "lec-18s",
   "lec-19s",
   "lec-22",
-  "lec-23"
+  "lec-23",
+  "lec-24",
+  "lec-25",
+  "lec-26",
+  "shoe-ch06"
  ]
 });

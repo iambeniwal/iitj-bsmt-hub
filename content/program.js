@@ -44,7 +44,11 @@ HUB.semesters = [
           start: "2026-09-26T17:00:00+05:30", end: "2026-09-26T17:20:00+05:30", join: "2026-09-26T16:45:00+05:30",
           durationMin: 20, questions: 60, marks: 60, types: "MCQ",
           scope: "all", scopeText: "Lectures 1–15, to Working with Lists Part 2" },
-        { id: "q2", name: "Quiz 2", status: "tba" },
+        /* Quiz 2 facts: LMS announcement 18992 (19 Oct 2026), "Quiz 2 | Foundations of Computing" */
+        { id: "q2", name: "Quiz 2", status: "upcoming",
+          start: "2026-10-31T16:45:00+05:30", end: "2026-10-31T17:05:00+05:30", join: "2026-10-31T16:30:00+05:30",
+          durationMin: 20, questions: 60, marks: 60, types: "MCQ",
+          scope: "all", scopeText: "Everything taught up to 25 October 2026" },
         { id: "end", name: "End-term exam", status: "tba" }
       ]
     },

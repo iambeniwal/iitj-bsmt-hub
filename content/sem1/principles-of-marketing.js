@@ -151,6 +151,12 @@ HUB.addCourse({
    "Week 8 — Live Lecture 8",
    "Sensory thresholds and Gestalt principles of perception",
    "live"
+  ],
+  [
+   28,
+   "Week 9 — Live Lecture 9",
+   "Cognitive biases: anchoring, bandwagon, scarcity, endowment",
+   "live"
   ]
  ],
  "units": [
@@ -217,6 +223,11 @@ HUB.addCourse({
      "h": "\n  <div class=\"def\"><b>Customer perceived value = benefits − costs.</b> It is a calculation in the consumer's mind, and it is <b>subjective and contextual</b> — not the printed price.</div>\n  <h4>The chai illustration</h4>\n  <p style=\"font-size:14.5px\"><strong>₹20</strong> roadside — casual. <strong>₹250</strong> café — a business meeting, where ambience manages impressions. <strong>₹500</strong> airport — when there is no alternative. <strong>Same product, three different values.</strong></p>\n  <h4>The four benefits</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Benefit</th><th>Means</th><th>Its limit</th></tr></thead><tbody>\n   <tr><td><strong>Psychological</strong></td><td>The core functional advantage — a jacket keeping you warm</td><td>Capped by how warm a jacket can be</td></tr>\n   <tr><td><strong>Functional</strong></td><td>Practical features — pockets, hood, wind resistance</td><td>Design limits, and <strong>cognitive overload</strong> from too many features</td></tr>\n   <tr><td><strong>Economic</strong></td><td>Monetary value and savings</td><td>Cannot be cut indefinitely without losses</td></tr>\n   <tr><td><strong>Extended psychological</strong></td><td>How <strong>others perceive you</strong> for owning it — status and image</td><td><strong>No inherent limit</strong> — which is why brands invest here</td></tr>\n  </tbody></table></div>\n  <h4>The costs — wider than price</h4>\n  <p style=\"font-size:14.5px\"><strong>Direct:</strong> the price paid. <strong>Abstract:</strong> time, effort and energy, psychological stress (worrying about parking and traffic), and disposal or after-sales considerations.</p>\n  <p style=\"font-size:14.5px\">Ordering ice cream on an app may cost <em>more money</em> but <strong>less abstract cost</strong> — no travel, no parking — and so deliver more perceived value.</p>\n  <div class=\"warnbox\"><b>Two levers, and one trap.</b> Organisations raise value by <b>increasing benefits</b> or <b>reducing costs</b>. The trap: <b>more features does not mean more value</b> — past a point it is cognitive overload.</div>\n  <p style=\"font-size:14.5px\"><strong>Denim ladder:</strong> generic ₹1,000–1,500 · Levi's ₹3,900–5,900 · Armani ₹25,000–50,000. Physically similar; the gap is <strong>extended psychological benefit</strong>.</p>\n  <div class=\"def\"><b>Features vs benefits.</b> A feature is what the product <em>has</em> — memory foam. A benefit is <b>why you should care</b> — better sleep. Effective marketing communicates <b>benefits</b>.</div><!--viz:pom-perceived-value--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Equation layout: four benefits (psychological, functional, economic, extended psychological) minus direct and abstract costs equals perceived value, which is subjective and contextual.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Customer perceived value</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);flex:1 1 150px\"><b>Benefits</b><div style=\"color:var(--ink-2);font-size:13px;margin-top:4px\">Psychological (the core job: warmth)<br>Functional (pockets, hood)<br>Economic (savings)<br><b style=\"color:var(--blue)\">Extended psychological (status) · no inherent limit</b></div></div><span style=\"font-family:var(--display);font-size:22px;color:var(--ink-3)\">−</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);flex:1 1 150px\"><b>Costs</b><div style=\"color:var(--ink-2);font-size:13px;margin-top:4px\"><b>Direct:</b> the price<br><b>Abstract:</b> time, effort and energy, stress, disposal and after-sales</div></div><span style=\"font-family:var(--display);font-size:22px;color:var(--ink-3)\">=</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);flex:1 1 150px\"><b>Perceived value</b><div style=\"color:var(--ink-2);font-size:13px;margin-top:4px\">calculated in the customer's mind<br>subjective and contextual: ₹20, ₹250 or ₹500 for the same chai</div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Two levers: raise benefits or cut costs, and abstract costs count as much as price.</figcaption></figure><!--/viz:pom-perceived-value-->"
     },
     {
+     "t": "Reading: The Elements of Value (HBR, 2016)",
+     "src": "L#5",
+     "h": "<div class=\"def\"><b>Source:</b> Eric Almquist, John Senior and Nicolas Bloch (Bain &amp; Company), <em>The Elements of Value</em>, Harvard Business Review, September 2016. Summary in our own words.</div><p><strong>Where it comes from:</strong> one of three Harvard readings Dr. Kapoor shared on the LMS on 15 Oct 2026 (“Pre-Reading Materials for Harvard Article”, for an earlier lecture the notice did not name). We file it under Lecture 5 because it is about the <strong>benefits side</strong> of customer perceived value.</p><h4>The argument</h4><p>A buyer sets the value they perceive in an offer against its price. Firms pour effort into the price side, because it is a handful of numbers and the tools for it are mature. The value side is harder: it is personal and partly emotional. The authors claim value can still be broken into <strong>30 universal “elements of value”</strong>, sorted into four tiers, and that the right mix of elements brings stronger loyalty and faster growth.</p><div class=\"scroller\"><table><thead><tr><th>Tier</th><th>Elements (the article’s names)</th><th>Examples it gives</th></tr></thead><tbody><tr><td><strong>Social impact</strong> (1)</td><td>self-transcendence</td><td>TOMS gives a pair of shoes to someone in need for every pair sold</td></tr><tr><td><strong>Life changing</strong> (5)</td><td>provides hope, self-actualization, motivation, heirloom, affiliation/belonging</td><td>Fitbit (motivation); a Leica camera owner’s pride (self-actualization)</td></tr><tr><td><strong>Emotional</strong> (10)</td><td>reduces anxiety, rewards me, nostalgia, design/aesthetics, badge value, wellness, therapeutic value, fun/entertainment, attractiveness, provides access</td><td>Netflix strong on therapeutic value and nostalgia</td></tr><tr><td><strong>Functional</strong> (14)</td><td>saves time, simplifies, makes money, reduces risk, organizes, integrates, connects, reduces effort, avoids hassles, reduces cost, quality, variety, sensory appeal, informs</td><td>The Container Store and TurboTax (organizes); a “convenient” bank = saves time, avoids hassles, simplifies, reduces effort</td></tr></tbody></table></div><p><strong>Roots:</strong> the model extends <strong>Maslow’s hierarchy of needs</strong> (1943) to people as consumers (see Lecture 23). Like Maslow’s pyramid, which later writers drew and Maslow himself treated less rigidly, it is a <em>practical</em> model, not a perfect theory: the most powerful elements sit at the top, but a firm must deliver at least some functional ones to reach them.</p><h4>The evidence</h4><ul><li>Built from decades of Bain consumer research, much of it <strong>laddering</strong> interviews that keep asking why a stated preference matters.</li><li>Tested in a survey of <strong>10,000+ US consumers</strong> rating nearly <strong>50 US companies</strong> on each element (0–10), compared with each firm’s <strong>Net Promoter Score</strong> and revenue growth.</li><li>Firms rated high (8+) on <strong>four or more</strong> elements had about <strong>3×</strong> the NPS of firms with one high score and about 20× that of firms with none, and about <strong>4×</strong> their recent revenue growth.</li><li>More is better, but no one delivers all 30: even <strong>Apple</strong> was high on only 11. Elements must be chosen strategically.</li></ul><h4>Three patterns</h4><ul><li><strong>Quality comes first.</strong> Across industries it moves advocacy most, and nothing else compensates for a serious shortfall. After quality, the key elements depend on the industry: sensory appeal in food and drink, provides access and heirloom in consumer banking.</li><li><strong>Digital firms look like more value,</strong> mainly on saves time and avoids hassles (Zappos, Netflix).</li><li><strong>Stores still win on emotion.</strong> Omnichannel retailers were twice as likely as online-only ones to score high on badge value, attractiveness and affiliation/belonging, and firms strong on emotional elements tended to have higher NPS than those strong only on functional ones.</li></ul><div class=\"card\"><strong>Case: Amazon Prime</strong><p>Prime began (2005) with two functional elements, reduces cost and saves time, through flat-fee two-day shipping at $79 a year. Amazon then added streaming (provides access, fun/entertainment) and photo storage (reduces risk). Each addition pulled in new members, and the extra value let it raise the fee to $99 in 2015.</p></div><h4>Putting the elements to work</h4><ul><li><strong>Fix before you add:</strong> find the elements that matter most in your industry and where you trail rivals. A large bank good on saves time and avoids hassles but weak on quality worked on fraud protection and its app first.</li><li><strong>Add what fits:</strong> a new element makes sense when current capabilities can deliver it at reasonable cost and it suits the brand. Backup software firms added cloud storage (reduces risk, provides access).</li><li><strong>A worked process:</strong> one financial firm went through structured listening, idea sessions, customer-centred prototypes and then choice modelling, narrowing 12 account concepts to 4 and launching 2. They were built on reduces cost, makes money and reduces anxiety, for customers living from one pay cheque to the next.</li><li><strong>Three uses:</strong> new-product development, pricing (add value before raising price) and customer segmentation (find what each segment values). Someone in the firm should own value.</li><li>Which elements matter varies with industry, culture and demographics: a subsistence farmer cares about reduces risk and makes money, not nostalgia.</li></ul><h4>What it adds to Lecture 5</h4><p>Lecture 5 defined perceived value as <strong>benefits − costs</strong> and listed four benefits. The article turns the benefits side into a 30-item checklist. A rough mapping (ours, not the lecturer’s or the authors’): the <strong>economic</strong> benefit ≈ reduces cost, makes money; the <strong>functional</strong> benefit ≈ the functional tier; the <strong>extended psychological</strong> benefit (how others see you) ≈ badge value, attractiveness, affiliation/belonging. Lecture 5’s warning that more features need not mean more value fits too: elements are kinds of value, not features, and the authors themselves say not to chase all 30.</p><div class=\"def\"><b>Using it in an exam answer:</b> (1) state perceived value as benefits − costs; (2) name the four tiers and pick two or three elements, from different tiers, that fit the case; (3) check quality first; (4) show how adding elements can justify a higher price (Amazon Prime). Credit it as Almquist, Senior and Bloch, HBR 2016.</div><!--viz:pom-elements-of-value-tiers--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Four stacked tiers widening towards the base: social impact with 1 element (self-transcendence), life changing with 5, emotional with 10, and functional with 14 at the base, highlighted.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Four tiers of value, from base to top</div><div style=\"display:flex;flex-direction:column;align-items:center;gap:4px;font-size:14px;text-align:center\"><div style=\"width:40%;min-width:170px;box-sizing:border-box;padding:6px 8px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Social impact</b> · 1<br><span style=\"color:var(--ink-2);font-size:13px\">self-transcendence</span></div><div style=\"width:60%;min-width:200px;box-sizing:border-box;padding:6px 8px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Life changing</b> · 5<br><span style=\"color:var(--ink-2);font-size:13px\">e.g. motivation, heirloom, affiliation/belonging</span></div><div style=\"width:80%;min-width:230px;box-sizing:border-box;padding:6px 8px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Emotional</b> · 10<br><span style=\"color:var(--ink-2);font-size:13px\">e.g. reduces anxiety, badge value, nostalgia</span></div><div style=\"width:100%;min-width:260px;box-sizing:border-box;padding:6px 8px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Functional</b> · 14<br><span style=\"color:var(--ink-2);font-size:13px\">e.g. quality, saves time, reduces cost, organizes</span></div></div><p style=\"font-size:13.5px;color:var(--ink-2);margin:8px 0 0\">More powerful towards the top; some functional value must be in place first. Counts add to 30.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Climb from the base: quality and other functional elements first, higher tiers for the strongest loyalty.</figcaption></figure><!--/viz:pom-elements-of-value-tiers-->"
+    },
+    {
      "t": "Textbook: Marketing: Creating Customer Value and Engagement",
      "src": "Kotler & Armstrong 17e ch1",
      "h": "<p><strong>Customer-perceived value and satisfaction</strong> — Customer-perceived value is the customer's own evaluation of all benefits minus all costs of an offer, judged against competing offers — and it is perception, not an objective calculation. Satisfaction is how perceived performance compares with expectations: below means dissatisfied, equal means satisfied, above means delighted. Firms should set expectations carefully: too low attracts few buyers, too high disappoints.<br><em>e.g.</em> An expensive concert piano can be 'great value' to its owner because the experience outweighs the price.</p>"
@@ -268,6 +279,11 @@ HUB.addCourse({
      "h": "\n  <div class=\"def\"><b>Satisfaction is transaction-based</b> — it compares <b>expectation</b> against <b>perceived performance</b> on a single occasion. <b>Loyalty is repeated satisfaction over time</b>, sustained when better alternatives exist.</div>\n  <h4>The two students — identical service, opposite ratings</h4>\n  <div class=\"scroller\"><table><thead><tr><th></th><th>Student 1</th><th>Student 2</th></tr></thead><tbody>\n   <tr><td><strong>Expected</strong></td><td>25 minutes, from past fast orders</td><td>45–50 minutes, because of heavy rain</td></tr>\n   <tr><td><strong>Received</strong></td><td colspan=\"2\"><strong>34 minutes, warm food, intact packaging, no cutlery — for both</strong></td></tr>\n   <tr><td><strong>Rated</strong></td><td><strong>2 stars</strong>, likely to switch app</td><td><strong>5 stars</strong>, likely to become loyal</td></tr>\n  </tbody></table></div>\n  <div class=\"warnbox\"><b>The point:</b> satisfaction is not objective performance. It is performance <em>relative to the expectation the consumer already held</em> — and context sets that expectation.</div>\n  <ul>\n   <li><strong>Asymmetric impact:</strong> failing to meet expectations hurts <strong>more</strong> than exceeding them helps.</li>\n   <li>There is an <strong>upper limit</strong> too — pizza delivered in 10 minutes can make people doubt it is genuine.</li>\n   <li><strong>A satisfied customer is not automatically loyal.</strong> Someone very happy with Zomato may still switch to Swiggy for a 50% discount. Loyalty is choosing you <em>despite</em> alternatives.</li>\n   <li>Loyalty cannot be bought with rewards alone — without consistent satisfaction, no reward scheme creates it.</li>\n  </ul>\n  <h4>The loyalty economics — memorise these numbers</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Metric</th><th>Figure</th></tr></thead><tbody>\n   <tr><td>Conversion rate, <strong>loyal</strong> customers</td><td><strong>60–70%</strong></td></tr>\n   <tr><td>Conversion rate, <strong>new</strong> customers</td><td><strong>5–8%</strong></td></tr>\n   <tr><td>A <strong>5%</strong> rise in retention raises profit by</td><td><strong>20–90%</strong></td></tr>\n   <tr><td>Cost of acquiring a new customer vs retaining one</td><td><strong>5× more</strong> — $100 against roughly $20</td></tr>\n   <tr><td>Repeat customers within two years spend</td><td>More than <strong>twice</strong> their original outlay</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\"><strong>AirPods vs Bose:</strong> Bose had better audio, but Apple won on <strong>ecosystem integration</strong>, design, and the flexibility of a single earbud. Satisfaction depends on expectation versus perceived performance, <strong>not on technical quality alone</strong>.</p><!--viz:pom-expectation-line--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Number line of delivery minutes: actual 34. Student 1 expected 25 (late, 2 stars); Student 2 expected 45–50 (early, 5 stars).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Same delivery, opposite ratings</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 208\" role=\"img\" aria-label=\"Timeline in minutes. Delivery took 34 minutes. Student 1 expected 25, so it was 9 minutes late and rated 2 stars; Student 2 expected 45 to 50, so it was 11 to 16 minutes early and rated 5 stars.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\">\n<path d=\"M30,100 L408,100\" fill=\"none\" style=\"stroke:var(--rule-2);stroke-width:1.5\"/>\n<path d=\"M30,100 L30,106\" fill=\"none\" style=\"stroke:var(--rule-2);stroke-width:1.5\"/>\n<text x=\"30\" y=\"121\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text>\n<path d=\"M124.5,100 L124.5,106\" fill=\"none\" style=\"stroke:var(--rule-2);stroke-width:1.5\"/>\n<text x=\"124.5\" y=\"121\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">15</text>\n<path d=\"M219,100 L219,106\" fill=\"none\" style=\"stroke:var(--rule-2);stroke-width:1.5\"/>\n<text x=\"219\" y=\"121\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">30</text>\n<path d=\"M313.5,100 L313.5,106\" fill=\"none\" style=\"stroke:var(--rule-2);stroke-width:1.5\"/>\n<text x=\"313.5\" y=\"121\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">45</text>\n<path d=\"M408,100 L408,106\" fill=\"none\" style=\"stroke:var(--rule-2);stroke-width:1.5\"/>\n<text x=\"408\" y=\"121\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">60 min</text>\n<rect x=\"313.5\" y=\"93\" width=\"31.5\" height=\"14\" style=\"fill:var(--good-soft);stroke:var(--good);stroke-width:1.5\"/>\n<path d=\"M244.2,52 L244.2,100\" fill=\"none\" style=\"stroke:var(--blue);stroke-width:2\"/>\n<circle cx=\"244.2\" cy=\"100\" r=\"5\" style=\"fill:var(--blue)\"/>\n<text x=\"244.2\" y=\"42\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:14px;font-weight:700\">Delivered in 34 min</text>\n<path d=\"M187.5,100 L187.5,136\" fill=\"none\" style=\"stroke:var(--bad);stroke-width:1.5\"/>\n<circle cx=\"187.5\" cy=\"100\" r=\"4\" style=\"fill:var(--bad)\"/>\n<text x=\"187.5\" y=\"152\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">Student 1</text>\n<text x=\"187.5\" y=\"169\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">expected 25</text>\n<path d=\"M329.25,107 L329.25,136\" fill=\"none\" style=\"stroke:var(--good);stroke-width:1.5\"/>\n<text x=\"329.25\" y=\"152\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">Student 2</text>\n<text x=\"329.25\" y=\"169\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">expected 45–50</text>\n<text x=\"187.5\" y=\"194\" text-anchor=\"middle\" style=\"fill:var(--bad);font-size:14px;font-weight:700\">9 min late → 2★</text>\n<text x=\"329.25\" y=\"194\" text-anchor=\"middle\" style=\"fill:var(--good);font-size:14px;font-weight:700\">11–16 min early → 5★</text>\n</svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Satisfaction = performance measured against the expectation, not performance alone.</figcaption></figure><!--/viz:pom-expectation-line-->"
     },
     {
+     "t": "Reading: community, not rewards (HBR, 2021)",
+     "src": "L#9",
+     "h": "<div class=\"def\"><b>Source:</b> Ana Andjelic, <em>Want More Loyal Customers? Offer a Community, Not Rewards</em>, HBR.org, 9 February 2021. Summary in our own words.</div><p><strong>Where it comes from:</strong> one of three Harvard readings Dr. Kapoor shared on the LMS on 15 Oct 2026 (“Pre-Reading Materials for Harvard Article”, for an earlier lecture the notice did not name). We file it under Lecture 9 because it argues about where <strong>loyalty</strong> comes from.</p><h4>The argument</h4><p>Most loyalty programmes, she says, are not about loyalty at all: they are economic transactions. Points for following a brand or posting a review are a kind of <strong>bribe</strong>, and they draw the customers least attached to the brand, those who come for the reward. <strong>Real loyalty is emotional and not fully rational</strong>: it is the feeling of belonging to a select group. People enjoy being in a club and dislike being left out. Sneaker fans queue all night for a release for standing among their peers, not to resell; gym members keep paying for clubs they barely use because leaving a community is hard.</p><p>She sees membership replacing <strong>conspicuous consumption</strong> (buying so others admire you) with investing in yourself: access, belonging, taste, experience, privacy, knowledge, self-actualisation. In what she calls the <strong>aspiration economy</strong>, buyers act as fans, hobbyists, collectors, influencers and environmentalists, and good membership strategies trade on their social and cultural capital.</p><p><strong>Not only for luxury.</strong> At the top end, Moët &amp; Chandon’s Château de Saran admits guests by invitation only, and Prada hand-picks its private club. But any brand can gather people around a hobby (coffee, running, self-care), a cause (gender equality, sustainability) or an aesthetic, and customers already do it themselves in buy-sell-trade groups and YouTube circles. Her keywords are <strong>identity and belonging</strong>, not necessarily prestige and exclusivity.</p><div class=\"scroller\"><table><thead><tr><th>Hallmark</th><th>What it means</th><th>Her examples</th></tr></thead><tbody><tr><td><strong>Membership is micro</strong></td><td>Serve a narrow sub-segment and overdeliver, so the group stays meaningful as it grows; suits brands whose products are easily commoditised</td><td>Uniqlo’s designer and artist collaborations; IKEA furniture for gamers; Adidas Creators Club</td></tr><tr><td><strong>Membership is myth-making</strong></td><td>Give the brand a story or legend that turns an ordinary product into an aspiration</td><td>Häagen-Dazs, a meaningless European-sounding name for an ice cream founded in the Bronx; Amex’s rumoured invitation-only card made real as the Black Card (1999)</td></tr><tr><td><strong>Membership is meet-ups</strong></td><td>Connect members with each other, online or in person; such groups get stickier over time</td><td>Poshmark’s local seller events; Fitbit members coaching each other; Lively’s get-togethers for women</td></tr><tr><td><strong>Membership is maintenance</strong></td><td>Keep up a steady stream of touchpoints; people prefer small, frequent gains to large, rare ones</td><td>Yoox Net-a-Porter doubled its personal-shopping team to 200+: stylists on call, previews, custom items, designer talks</td></tr></tbody></table></div><p>Her verdict: programmes that pay people to buy more are <strong>lazy</strong>; lasting affinity comes from community.</p><h4>What it adds to Lecture 9</h4><p>Lecture 9 said a satisfied customer is not automatically loyal (happy with Zomato, still off to Swiggy for 50% off) and that rewards alone cannot buy loyalty. Andjelic explains why: rewards attract exactly the deal-seekers who leave for the next deal, while belonging gives a reason to stay that a rival’s discount cannot match. It also links to <strong>affiliation/belonging</strong>, a life-changing element in the Elements of Value reading, and to the Lecture 28 Starbucks example, where being called by name makes you feel included.</p><div class=\"card\"><strong>Weigh the evidence</strong><p>This is a short opinion piece by a brand-strategy executive, built on examples. Unlike the Bain article it reports no survey of its own, so cite it as an argument, not as measured proof.</p></div><div class=\"def\"><b>Using it in an exam answer:</b> when asked how to build loyalty beyond satisfaction, contrast a points programme (transaction, attracts switchers) with a membership community (identity, belonging), then apply one or two of the four hallmarks to the case. Credit it as Andjelic, HBR.org 2021.</div><!--viz:pom-rewards-vs-community--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison table. Points and rewards trade on an economic transaction, attract reward-seekers, award points for follows or reviews, and lose the customer to a bigger offer. A membership community trades on identity and belonging, attracts fans and hobbyists, uses meet-ups, drops and steady perks, and is hard to leave.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Points programme or membership community?</div><div class=\"scroller\"><table><thead><tr><th></th><th>Points and rewards</th><th>Membership community</th></tr></thead><tbody><tr><td>Trades on</td><td style=\"background:var(--clay-soft)\">an economic transaction</td><td style=\"background:var(--blue-soft)\">identity and belonging</td></tr><tr><td>Attracts</td><td>reward-seekers, the least loyal</td><td>fans, hobbyists, collectors</td></tr><tr><td>Typical move</td><td>points for a follow or a review</td><td>meet-ups, drops, early access, steady perks</td></tr><tr><td>When a rival offers more</td><td>the customer leaves</td><td>leaving means leaving the group</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Andjelic's point: a reward can be outbid; belonging is much harder to copy.</figcaption></figure><!--/viz:pom-rewards-vs-community-->"
+    },
+    {
      "t": "Textbook: Marketing: Creating Customer Value and Engagement",
      "src": "Kotler & Armstrong 17e ch1",
      "h": "<!--viz:pom-k-relationship-groups--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two-by-two grid of potential profitability against projected loyalty: butterflies (profitable, not loyal), true friends (profitable, loyal), strangers (neither), barnacles (loyal, unprofitable).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Customer relationship groups</div><div style=\"display:grid;grid-template-columns:auto 1fr 1fr;gap:4px;font-size:14px\"><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center\"></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center\">Not loyal (short-term)</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center\">Loyal (long-term)</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center;writing-mode:vertical-rl;transform:rotate(180deg)\">High profit</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Butterflies</b><br><span style=\"color:var(--ink-2);font-size:13px\">profitable but passing · enjoy them while they last</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--blue-soft)\"><b>True friends</b><br><span style=\"color:var(--ink-2);font-size:13px\">profitable and loyal · invest continuously</span></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center;writing-mode:vertical-rl;transform:rotate(180deg)\">Low profit</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Strangers</b><br><span style=\"color:var(--ink-2);font-size:13px\">neither · don't invest</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--clay-soft)\"><b>Barnacles</b><br><span style=\"color:var(--ink-2);font-size:13px\">loyal but unprofitable · make them pay, or let go</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Loyalty alone is not the goal: barnacles are loyal and still lose you money.</figcaption></figure><!--/viz:pom-k-relationship-groups--><p><strong>Relationship levels, tools and engagement</strong> — Firms with many low-margin customers build basic relationships through brand advertising and social media; firms with few high-margin customers build full partnerships. Loyalty and frequency programmes add bonds. Customer-engagement marketing makes the brand part of customers' conversations and lives, and consumer-generated marketing lets customers shape brand content — with the risk that a campaign is hijacked.<br><em>e.g.</em> A detergent maker advertises to millions of homes but works side by side with each large retail chain.</p><p><strong>Customer lifetime value, share of customer and customer equity</strong> — Customer lifetime value is the whole stream of purchases a customer would make over a lifetime of patronage. Share of customer is the portion of a customer's spending in your categories that you win, grown through cross-selling and up-selling. Customer equity is the combined lifetime value of all current and potential customers — a forward-looking measure, whereas sales and market share look backwards.<br><span style=\"font-family:var(--mono)\">Lifetime revenue ≈ spend per period × periods per year × years retained</span><br><em>e.g.</em> ₹1,500 a week × 50 weeks × 10 years = ₹7,50,000 of revenue walks out with one unhappy shopper.</p><p><strong>Customer relationship groups</strong> — Customers can be grouped by potential profitability and projected loyalty. Strangers (low profit, low loyalty): do not invest. Butterflies (profitable, not loyal): enjoy the transactions while they last. True friends (profitable and loyal): invest continuously. Barnacles (loyal but unprofitable): try to make them profitable, and if that fails, let them go.<br><em>e.g.</em> A small account holder who visits the branch weekly but never keeps a balance is a barnacle.</p>"
@@ -289,6 +305,11 @@ HUB.addCourse({
      "t": "The five bases of segmentation",
      "src": "L#11 · L#12 · know one example each",
      "h": "\n  <div class=\"scroller\"><table><thead><tr><th>Basis</th><th>Divides by</th><th>His worked example</th></tr></thead><tbody>\n   <tr><td><strong>Geographic</strong></td><td>Location and climate</td><td><strong>Zudio/Zodio (Tata)</strong> — winter layers in Delhi, monsoon-friendly in Mumbai, casual streetwear in Bangalore</td></tr>\n   <tr><td><strong>Demographic</strong></td><td>Measurable traits — age, gender, income, education</td><td><strong>Bajaj Pulsar</strong> — males 17–24, &ldquo;Definitely Male&rdquo; · <strong>L'Oréal</strong> face cream at 20+, 30+, 40+</td></tr>\n   <tr><td><strong>Psychographic</strong></td><td><strong>How people think</strong> — lifestyle, values, attitudes</td><td><strong>Nike</strong> — fitness-focused, sport aspirers, style and status (Air Jordan), sustainability conscious (Move to Zero)</td></tr>\n   <tr><td><strong>Behavioural</strong></td><td><strong>How people act</strong> — usage rate, mode of usage, purchase frequency, pack size, promotional sensitivity</td><td><strong>Surf Excel</strong> — heavy users, machine-wash users, occasional users, value seekers</td></tr>\n   <tr><td><strong>Benefit-based</strong></td><td><strong>What people want from it</strong></td><td><strong>Colgate</strong> — Strong Teeth, Max Fresh, Visible White, Sensitive, Total</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\"><strong>L'Oréal's trick:</strong> the three age variants are <strong>70–80% identical in ingredients</strong>. What differs is the <em>benefit communicated</em> — and the brand ambassador changes over time to stay relatable.</p>\n  <p style=\"font-size:14.5px\"><strong>Surf Excel's payoff:</strong> without segmentation roughly <strong>25%</strong> of potential consumers would buy; with behavioural segmentation the company can reach up to <strong>75%</strong>.</p>\n  <div class=\"warnbox\"><b>Psychographic vs behavioural is the pair most often confused.</b> Psychographic is how someone <em>thinks</em> — values, lifestyle, attitude. Behavioural is what they <em>do</em> — how often they buy, what pack size, whether discounts move them.</div>\n  <p style=\"font-size:14.5px;color:var(--ink-2)\">Among the 15 psychographic segments he listed: fitness oriented, sustainability conscious, tech enthusiasts, minimalists, status conscious, experience seekers, food explorers, convenience seekers, value-conscious, socially connected, adventure oriented, productivity focused.</p><!--viz:pom-five-bases--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Tree: segmentation bases branch into geographic, demographic, psychographic, behavioural and benefit-based, each with its question and a brand example. Psychographic and behavioural are marked as the confusable pair.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The lecture's five bases</div><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-size:14px;text-align:center;margin-bottom:6px\"><b>Bases of segmentation</b></div><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:6px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><div style=\"font-size:12.5px;color:var(--ink-3)\">where they are</div><b>Geographic</b><br><span style=\"color:var(--ink-2);font-size:13px\">location, climate</span><div style=\"font-size:13px;margin-top:4px\">Zudio: layers in Delhi, monsoon wear in Mumbai</div></div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><div style=\"font-size:12.5px;color:var(--ink-3)\">who they are</div><b>Demographic</b><br><span style=\"color:var(--ink-2);font-size:13px\">age, gender, income</span><div style=\"font-size:13px;margin-top:4px\">Bajaj Pulsar: males 17–24</div></div><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><div style=\"font-size:12.5px;color:var(--ink-3)\">how they think</div><b>Psychographic</b><br><span style=\"color:var(--ink-2);font-size:13px\">lifestyle, values</span><div style=\"font-size:13px;margin-top:4px\">Nike: fitness, status, sustainability</div></div><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><div style=\"font-size:12.5px;color:var(--ink-3)\">how they act</div><b>Behavioural</b><br><span style=\"color:var(--ink-2);font-size:13px\">usage rate, pack size, discounts</span><div style=\"font-size:13px;margin-top:4px\">Surf Excel: heavy vs occasional users</div></div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><div style=\"font-size:12.5px;color:var(--ink-3)\">what they want</div><b>Benefit-based</b><br><span style=\"color:var(--ink-2);font-size:13px\">benefit sought</span><div style=\"font-size:13px;margin-top:4px\">Colgate: Sensitive, Max Fresh, Visible White</div></div></div><p style=\"font-size:13.5px;color:var(--ink-2);margin:8px 0 0\">Clay pair = the one most often confused: <b>think</b> vs <b>do</b>. Kotler &amp; Armstrong fold benefits into behavioural (four bases); the lecture keeps five.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each base answers a different question about the customer.</figcaption></figure><!--/viz:pom-five-bases-->"
+    },
+    {
+     "t": "Reading: psychographics alongside demographics (HBR, 2016)",
+     "src": "L#11",
+     "h": "<div class=\"def\"><b>Source:</b> Alexandra Samuel, <em>Psychographics Are Just as Important for Marketers as Demographics</em>, HBR.org, 11 March 2016. Summary in our own words.</div><p><strong>Where it comes from:</strong> one of three Harvard readings Dr. Kapoor shared on the LMS on 15 Oct 2026 (“Pre-Reading Materials for Harvard Article”, for an earlier lecture the notice did not name). We file it under Lecture 11 because that lecture introduced psychographic segmentation.</p><h4>The argument</h4><p>Marketers are used to <strong>demographics</strong>: cutting a market by age, gender, ethnicity and similar broad variables. <strong>Psychographics</strong> measure customers’ <strong>attitudes and interests</strong> instead of supposedly objective traits, and they <strong>complement</strong> demographics rather than replace them. They used to be hard to collect and hard to act on. The internet changed that in three ways:</p><ol><li>it made psychographics more <strong>actionable</strong>;</li><li>it made psychographic differences more <strong>important</strong>;</li><li>it made psychographic insight easier to <strong>access</strong>.</li></ol><h4>Case: the family tech market</h4><p>Income and children’s ages make some difference to what families buy, but <strong>why</strong> they buy depends far more on the parents’ attitudes. From her data on 10,000 North American parents:</p><div class=\"scroller\"><table><thead><tr><th>Parent type</th><th>Attitude</th><th>What they look for</th></tr></thead><tbody><tr><td><strong>Enablers</strong></td><td>Trust children to make their own tech choices</td><td>Fun and entertainment value</td></tr><tr><td><strong>Limiters</strong></td><td>Keep screen time down</td><td>Software and devices that build literacy, maths and academic skills</td></tr><tr><td>Parents who actively guide (not named in this article)</td><td>Encourage and steer their children’s tech use</td><td>A balance of fun and learning, and ways to play together as a family</td></tr></tbody></table></div><h4>How the internet makes it actionable</h4><ul><li><strong>Keyword targeting:</strong> one message for a programming game to parents searching for kids’ programming, another to parents searching for fun video games.</li><li><strong>Interest targeting:</strong> social ads aimed at people who liked particular pages or listed particular interests; different hashtags, posts or even accounts for different groups.</li><li><strong>Research tools:</strong> online customer communities (her parent data came from two), social media analytics and sentiment analysis, and monitoring of organic conversations to spot new clusters.</li></ul><h4>Tribes and conflict</h4><p>Online, people find like-minded others anywhere, so these <strong>tribes</strong> sharpen psychographic identities, and people come to identify more with communities of interest or values than with where they live or their demographic group. Online debate is also polarised. That is an opportunity (arguments between pro-screen and anti-screen parents first pointed her to the segments) and a risk: a campaign praising a device’s play value pleases one group and repels another. Psychographic data is the map for steering through such divides. At best it shapes the <strong>products and services</strong> themselves, not only the messages.</p><h4>What it adds to Lecture 11</h4><p>Lecture 11 defined the psychographic base as <strong>how people think</strong> (lifestyle, values, attitudes), with Nike’s fitness, status and sustainability segments, and warned that age alone is not a useful segment. Samuel gives a worked case of exactly that: same demographics, different attitudes, different purchases. She also shows how to <strong>reach</strong> such segments online, through behaviour signals such as searches, likes and hashtags. The segment is still defined by the attitude; the online behaviour is how you find it. Her “tribes” are the communities that the Andjelic reading (filed under Lecture 9) asks brands to organise.</p><div class=\"def\"><b>Using it in an exam answer:</b> when asked why psychographics matter, define them (attitudes and interests), say they complement demographics, give the three internet shifts, and illustrate with enablers vs limiters. For a targeting question, name the online signal (keyword, interest, hashtag) used to reach the segment. Credit it as Samuel, HBR.org 2016.</div>"
     },
     {
      "t": "Textbook: Company and Marketing Strategy: Partnering to Build Customer Engagement, Value, and Relationships",
@@ -346,8 +367,8 @@ HUB.addCourse({
   {
    "id": "cb",
    "title": "Consumer behaviour",
-   "tag": "Lectures 18–21, 23–25",
-   "lede": "Why people buy and how they decide: heuristics and nudges, the five decision stages and the messy middle, the need → drive → behaviour framework, the three theories of motivation, and perception, from meaning and perceptual categories to thresholds and the Gestalt principles.",
+   "tag": "Lectures 18–21, 23–25, 28",
+   "lede": "Why people buy and how they decide: heuristics and nudges, the five decision stages and the messy middle, the need → drive → behaviour framework, the three theories of motivation, perception from meaning to the Gestalt principles, and the cognitive biases that skew judgement.",
    "topics": [
     {
      "t": "Why people buy, and the three eras",
@@ -443,6 +464,16 @@ HUB.addCourse({
      "t": "Gestalt principles: how the brain organises what it sees",
      "src": "L#25",
      "h": "<div class=\"def\"><b>Gestalt principles</b> explain how the brain organises scattered visual cues into a meaningful whole. The brain does not record an image the way a camera does. It groups cues into patterns, <b>predicts what it expects to see from past experience</b>, and when the prediction fails, settles on the <b>closest match</b>.</div><p><strong>The opening test:</strong> a slide of broken, Pac-Man-like shapes. Students reported a triangle, a square or a star, and one saw a three-quarter circle. No triangle or square was drawn; the brain built them from the gaps. Well-organised interfaces such as Pinterest or Myntra use the same tendency to make navigation, and so conversion, easy.</p><div class=\"scroller\"><table><thead><tr><th>Principle</th><th>What the brain does</th><th>Examples from the session</th></tr></thead><tbody><tr><td><strong>Figure and ground</strong></td><td>Separates the object (figure, foreground) from its background (ground, negative space)</td><td>Apple’s iPod ads: dark silhouettes, with the white earphones and player standing out. A Sensodyne ad of white teeth on black, brand name at the bottom. A white fork whose negative space reads as wine bottles. A <em>Peter and the Wolf</em> cover where the background draws the figure</td></tr><tr><td><strong>Continuity</strong></td><td>Sees elements on a line or curve as related, and keeps following a path even where lines cross</td><td>A highlighted route on a map versus a list of ten places. Arrows on roads. An Amazon book listing read in a natural order: the book, then price, delivery and rating. Cars24’s page: brand logos, then online evaluation → car inspection → best price</td></tr><tr><td><strong>Grouping and similarity</strong></td><td>Treats items that look alike (colour, shape, size, style) as one group</td><td>Red and blue pencils sorted without being asked. A school uniform. Website menus under category headings. Myntra offer cards that share one layout. A clothes shop with separate sections</td></tr><tr><td><strong>Proximity</strong></td><td>Treats items close together as a group, and a gap as a boundary, whatever their colour</td><td>A notice board with exam, holiday and sports notices spaced apart. Product cards separated by spacing. A row of Zara shoes, each with its price beside it</td></tr><tr><td><strong>Closure</strong></td><td>Fills in missing parts to complete a familiar pattern from memory</td><td>A bowler hat and a moustache read as Charlie Chaplin. Heinz tomato slices arranged as a ketchup bottle. Kia Sonet’s “coming soon” silhouette. A wine bottle against a same-colour background. A Scotch bottle drawn only by light</td></tr></tbody></table></div><h4>What each principle does for the buyer</h4><ul><li><strong>Figure and ground</strong> creates a focal point. On a crowded shelf, the product that stands out (because you need it, know it, or it is flashy) gets picked up and its label read. That raises engagement; it does not guarantee a purchase.</li><li><strong>Continuity</strong> sets the order you look in. You feel you are browsing at will, but the page decides the sequence.</li><li><strong>Grouping</strong> runs <em>unification → focal point of attention → response → likelihood of purchase</em>: you go straight to the shirts and skip the shoes. A tidy layout eases the journey, but the buyer still decides.</li><li><strong>Proximity</strong> gives a frame of reference. An instant camera shown with alternatives just below it sets up a <em>reverse loop</em>: you compare each alternative back against your first pick until you settle.</li><li><strong>Closure</strong> keeps people engaged. A partial image, such as a car’s outline, builds suspense and keeps the audience hooked without giving everything away.</li></ul><div class=\"card\"><strong>Anchoring rides on proximity</strong><p>Show the original price (1,000) next to the offer price (600) and the first number becomes a <b>reference point</b>. The <b>anchoring effect</b> is a separate idea: an initial piece of information that sways later judgement. Without the original price there is nothing to compare against. Proximity puts the two numbers side by side; anchoring does the persuading.</p></div><p><strong>Where Gestalt is used:</strong> packaging and advertising, user experience, physical store layouts, website and mobile-app design (logo placement, the spacing of icons), and digital and print media. <strong>Link to Lecture 24:</strong> closure is the visual form of <em>constructive</em> perception, filling in what is missing.</p><div class=\"def\"><b>From the lecture (L#25):</b> no Quiz 2 details were given. The task set for the next session: find real advertisements and designs, beyond the ones shown, that use each of the five principles, and analyse them from a marketer’s point of view. A regular doubt-clearing session followed.</div><!--viz:pom-gestalt-four-panels--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Four small drawings. Proximity: identical dots split into two groups by a gap. Similarity: evenly spaced dots read as columns because alternate columns are filled. Closure: three cut circles make a triangle that is not drawn. Continuity: two crossing lines, each followed along its own path.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Four Gestalt principles, drawn</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 260\" role=\"img\" aria-label=\"Four panels: proximity, where a gap splits identical dots into two groups; similarity, where colour turns evenly spaced dots into columns; closure, where three cut circles suggest a triangle; continuity, where two crossing lines are each followed along their own path.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><rect x=\"10\" y=\"10\" width=\"205\" height=\"112\" rx=\"4\" style=\"fill:none;stroke:var(--rule-2);stroke-width:1.5\"/><rect x=\"225\" y=\"10\" width=\"205\" height=\"112\" rx=\"4\" style=\"fill:none;stroke:var(--rule-2);stroke-width:1.5\"/><rect x=\"10\" y=\"134\" width=\"205\" height=\"116\" rx=\"4\" style=\"fill:none;stroke:var(--rule-2);stroke-width:1.5\"/><rect x=\"225\" y=\"134\" width=\"205\" height=\"116\" rx=\"4\" style=\"fill:none;stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"20\" y=\"32\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Proximity</text><text x=\"20\" y=\"48\" style=\"fill:var(--ink-3);font-size:13px\">a gap makes 2 groups</text><circle cx=\"36\" cy=\"70\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"36\" cy=\"88\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"36\" cy=\"106\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"54\" cy=\"70\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"54\" cy=\"88\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"54\" cy=\"106\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"72\" cy=\"70\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"72\" cy=\"88\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"72\" cy=\"106\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"138\" cy=\"70\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"138\" cy=\"88\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"138\" cy=\"106\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"156\" cy=\"70\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"156\" cy=\"88\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"156\" cy=\"106\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"174\" cy=\"70\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"174\" cy=\"88\" r=\"6\" style=\"fill:var(--ink-3)\"/><circle cx=\"174\" cy=\"106\" r=\"6\" style=\"fill:var(--ink-3)\"/><text x=\"235\" y=\"32\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Similarity</text><text x=\"235\" y=\"48\" style=\"fill:var(--ink-3);font-size:13px\">look-alikes make columns</text><circle cx=\"258\" cy=\"70\" r=\"6\" style=\"fill:var(--blue)\"/><circle cx=\"258\" cy=\"88\" r=\"6\" style=\"fill:var(--blue)\"/><circle cx=\"258\" cy=\"106\" r=\"6\" style=\"fill:var(--blue)\"/><circle cx=\"292\" cy=\"70\" r=\"6\" style=\"fill:none;stroke:var(--ink-3);stroke-width:1.5\"/><circle cx=\"292\" cy=\"88\" r=\"6\" style=\"fill:none;stroke:var(--ink-3);stroke-width:1.5\"/><circle cx=\"292\" cy=\"106\" r=\"6\" style=\"fill:none;stroke:var(--ink-3);stroke-width:1.5\"/><circle cx=\"326\" cy=\"70\" r=\"6\" style=\"fill:var(--blue)\"/><circle cx=\"326\" cy=\"88\" r=\"6\" style=\"fill:var(--blue)\"/><circle cx=\"326\" cy=\"106\" r=\"6\" style=\"fill:var(--blue)\"/><circle cx=\"360\" cy=\"70\" r=\"6\" style=\"fill:none;stroke:var(--ink-3);stroke-width:1.5\"/><circle cx=\"360\" cy=\"88\" r=\"6\" style=\"fill:none;stroke:var(--ink-3);stroke-width:1.5\"/><circle cx=\"360\" cy=\"106\" r=\"6\" style=\"fill:none;stroke:var(--ink-3);stroke-width:1.5\"/><circle cx=\"394\" cy=\"70\" r=\"6\" style=\"fill:var(--blue)\"/><circle cx=\"394\" cy=\"88\" r=\"6\" style=\"fill:var(--blue)\"/><circle cx=\"394\" cy=\"106\" r=\"6\" style=\"fill:var(--blue)\"/><text x=\"20\" y=\"156\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Closure</text><text x=\"20\" y=\"172\" style=\"fill:var(--ink-3);font-size:13px\">a triangle</text><text x=\"20\" y=\"188\" style=\"fill:var(--ink-3);font-size:13px\">nobody drew</text><path d=\"M150,176 L144,186.4 A12,12 0 1 1 156,186.4 Z\" style=\"fill:var(--ink-2);stroke:none\"/><path d=\"M118,230 L130,230.1 A12,12 0 1 1 124.1,219.7 Z\" style=\"fill:var(--ink-2);stroke:none\"/><path d=\"M182,230 L175.9,219.7 A12,12 0 1 1 170,230.1 Z\" style=\"fill:var(--ink-2);stroke:none\"/><text x=\"235\" y=\"156\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Continuity</text><text x=\"320\" y=\"156\" style=\"fill:var(--ink-3);font-size:13px\">the eye keeps</text><text x=\"320\" y=\"172\" style=\"fill:var(--ink-3);font-size:13px\">to its line</text><path d=\"M240,236 L418,184\" style=\"fill:none;stroke:var(--blue);stroke-width:2\"/><path d=\"M240,190 C300,190 350,248 418,236\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Distance, look-alikes, gaps and paths: the brain organises the cues before you decide anything.</figcaption></figure><!--/viz:pom-gestalt-four-panels-->"
+    },
+    {
+     "t": "Cognitive biases: conscious and unconscious",
+     "src": "L#28",
+     "h": "<div class=\"def\">A <b>cognitive bias</b> is a subconscious error in thinking that leads a person to misread or misrepresent information from the world around them. In buying it shows up as a <b>judgement error</b> in choices and preferences. Dr. Kapoor tied it back to Lectures 18 and 19: biases ride on the same <b>mental shortcuts (heuristics)</b> that make decisions quick.</div><p>Back after missing Lecture 25 (the TAs ran it), he used this live session for a new topic rather than revision. He split biases into two kinds.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Conscious biases</th><th>Unconscious (cognitive) biases</th></tr></thead><tbody><tr><td><strong>Also called</strong></td><td>Intentional biases</td><td>Cognitive biases; unintentional</td></tr><tr><td><strong>Where they come from</strong></td><td>Social conditioning: how parents, friends and society think, and how we were brought up</td><td>How the brain processes information at an unconscious level, and how marketers want us to respond</td></tr><tr><td><strong>Classic form</strong></td><td><strong>Stereotypes</strong></td><td>Anchoring, bandwagon, scarcity and endowment (this session); four more to come</td></tr><tr><td><strong>The session’s example</strong></td><td>The United Colors of Benetton “unity” ad</td><td>Phone listings, Zoom plans, Goa resorts, the H&amp;M cart, a phone resale exercise, Starbucks</td></tr></tbody></table></div><h4>Case: Benetton’s unity ad</h4><p>Benetton ran a campaign on the theme of unity. One ad showed two men together, and many viewers read the lighter-skinned man as a police officer and the darker-skinned man as a criminal in custody. Critics said it showed the opposite of unity, and the ad was withdrawn. His point: the concept was fine, but viewers brought a <strong>stereotype</strong> learnt from childhood (the monster in a bedtime threat, the cartoon villain, is almost always drawn dark). That is a <strong>conscious bias</strong>, built by conditioning, not a cognitive one.</p><div class=\"card\"><strong>Heuristic, bias, nudge: one cue, three names</strong><p>Our synthesis of Lectures 18, 19 and 28. A <b>heuristic</b> is the shortcut the buyer uses (a rating, “few pieces left”). A <b>cognitive bias</b> is the systematic judgement error that shortcut can produce (the bandwagon effect, the scarcity effect). A <b>nudge</b> is the choice architecture a marketer designs to set it off. Lecture 19 filed scarcity labels and review counts as heuristics; Lecture 28 names the biases behind them.</p></div><h4>Two questions from the chat</h4><ul><li><strong>Is anchoring good for the consumer?</strong> Not always. A deal can be real value, but it can also sell you something you did not need, much as tasty food makes you eat more than is good for you.</li><li><strong>Every buyer notices a discount, so why call it a bias?</strong> Two reasons. It can trigger a purchase the buyer would not otherwise have made, with no need behind it. And from a competitor’s side, the same product at a rival goes unbought because the buyer is pulled towards the brand showing the discount. Whether a bias helps or harms depends on whose view you take: a new buyer, a repeat buyer or a competitor. “Marketing is always in shades of grey.”</li></ul><p><strong>Still to come:</strong> the <strong>pratfall</strong>, <strong>halo</strong>, <strong>decoy</strong> and <strong>framing</strong> effects, in the next class or a TA session. He also promised to share a full list of biases.</p><div class=\"def\"><b>From the lecture (L#28):</b> asked about the next quiz, he said it would be “next to next week”, that is, about two weeks after this 18 Oct session. Details will come at least a week before, and whatever has been covered by then will be in it. Until the LMS announcement, treat cognitive biases as part of Quiz 2.</div>"
+    },
+    {
+     "t": "Four biases in buying: anchoring, bandwagon, scarcity, endowment",
+     "src": "L#28",
+     "h": "<p>Each bias below came with a live exercise in the chat. The table is the summary; the notes after it hold what is new.</p><div class=\"scroller\"><table><thead><tr><th>Bias</th><th>What happens in the buyer’s mind</th><th>Session examples</th><th>What the firm gains</th></tr></thead><tbody><tr><td><strong>Anchoring bias</strong></td><td>Attention locks onto one element, or a few, and everything else is shut out; the buyer moves on to the next stage on that basis</td><td>A phone listing (“Renewed”, the price cut, rating, free delivery date); Zoom’s “Save 16%” on annual billing</td><td>Faster decisions; a customer locked in for a year</td></tr><tr><td><strong>Bandwagon effect</strong></td><td>A choice seems more valuable when it matches the trend or pleases the peer group: if others do it, it must be good</td><td>A course platform counting how many people are learning today; the two Goa resorts’ review counts</td><td>Credibility from numbers</td></tr><tr><td><strong>Scarcity effect</strong></td><td>Learning that a product is about to run out raises its value and the willingness to buy now</td><td>“Only 6 rooms left at this price”, “Only 3 rooms left”; H&amp;M’s “few pieces left”</td><td>Speeds up the decision, cuts comparison</td></tr><tr><td><strong>Endowment effect</strong></td><td>We value what we own far more than an identical thing we do not own</td><td>Selling vs buying a used smartphone; Starbucks calling out your name</td><td>Attachment, loyalty</td></tr></tbody></table></div><h4>Anchoring: what grabs you, and what it hides</h4><p>Shown a phone listing, students named different anchors: “Renewed”, storage, rating, the struck-through price, free delivery by a date. Any of them counts. What makes it anchoring is that the one element <strong>grabs attention and excludes the rest</strong>, and it moves you to the next step (finding out more), not necessarily to a purchase.</p><p><strong>Zoom’s plan page:</strong> about 1,300 a month per licence billed monthly against about 1,100 billed annually, flagged “Save 16%”. The saving is small, but the flag anchors the choice. The firm gains far more: a 12-month customer who will take add-ons, absorb price changes and find it hard to switch overnight. You can cancel in theory; in practice few do.</p><div class=\"card\"><strong>Two definitions of anchoring in this course</strong><p><b>L#25 (TAs):</b> the anchoring effect is an initial piece of information, such as the original price beside the offer price, that becomes the reference point for later judgement. This is the standard behavioural-science sense. <b>L#28 (Dr. Kapoor):</b> anchoring bias is attention fixed on one element, or a few, to the exclusion of everything else. The two overlap: a struck-through price is both a reference point and an attention-grabber. In an answer, give the lecture’s wording and add the reference-point idea.</p></div><h4>Bandwagon: theory and practice</h4><p>He re-ran the Goa exercise from Lecture 19 with the numbers on screen: Caravela with 1,157 reviews rated 8.5, Kenilworth next door with 281 reviews rated 8.1, price and location held equal. <strong>In theory</strong>, the bandwagon effect says the crowd’s choice carries more value, so Caravela wins: a happening place, and everyone rates it well. <strong>In practice</strong>, many people pick Kenilworth precisely because fewer people go: a calm breakfast, an empty pool, time with family. He called that <strong>still a bandwagon effect</strong>: the number of people still drives the judgement, only now a smaller number signals <strong>exclusivity</strong>. Anyone who chose on ratings and reviews alone “fell for” the bandwagon.</p><h4>Scarcity: when it works and when it doesn’t</h4><p>His flow: the buyer takes in the information and assesses it (cognition). If it signals <strong>scarcity</strong>, willingness to purchase rises at once. If it signals <strong>abundance</strong>, the buyer compares other elements first (price, promotion, functional utility, reviews) across platforms, online and offline, and may or may not buy. He abbreviated willingness to purchase as WTP; elsewhere WTP usually stands for willingness to <em>pay</em>, the highest price a buyer accepts.</p><ul><li><strong>Fixation matters.</strong> “Only 3 rooms left” at a Goa hotel bites when you have settled on Goa for New Year. If you are still choosing between Goa and Kerala, the message has little force, because you have an alternative.</li><li><strong>The H&amp;M cart, revisited.</strong> Two T-shirts carried the price call-out (an anchor) and two the “few pieces left” tag (scarcity). After four to five hours the tagged pair were gone and the other two now showed only a couple of pieces left: buy before you lose these too. Leave the cart for a day and all four were back in stock. (Lecture 19 put the first sell-out at about half an hour.)</li><li><strong>His caution:</strong> firms use this mostly on <strong>low-involvement</strong> products. Do not try waiting it out on seats, hotel rooms, train or flight tickets: those really do run out.</li></ul><h4>Endowment: the resale exercise</h4><p>Students priced their own phones for sale with a selling tagline, then imagined buying the same phone, with that tagline, from someone else. The seller writes the best adjectives because it is <em>their</em> phone; the buyer sees a second-hand phone and doubts its speed, camera and battery. In class the buying price usually comes in about <strong>50% below</strong> the selling price: offer a phone at 20,000 and buyers say 10,000 to 12,000. Ownership carries emotion, so the owner values it more.</p><p><strong>Starbucks</strong> asks your name and calls it out with your order. Hearing your name among strangers creates a small sense of <strong>ownership</strong>, so the drink and the visit feel worth more. He counted it as one small, unconscious reason for loyalty, alongside taste, ambience and the overall experience; a student added that it makes you feel included.</p><!--viz:pom-scarcity-flow--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: information about a product is assessed. If it signals scarcity, willingness to purchase rises immediately. If it signals abundance, the buyer compares price, promotion, utility and reviews across platforms and perhaps buys. A note says scarcity weakens when alternatives remain.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Scarcity or abundance: two routes to a decision</div><div style=\"display:flex;flex-direction:column;gap:4px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Information</b> about the product <span style=\"color:var(--ink-3)\">→</span> <b>assessment</b> <span style=\"color:var(--ink-2)\">(cognition)</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1.2\">↓</div><div style=\"display:flex;flex-wrap:wrap;gap:6px 10px\"><div style=\"flex:1 1 200px;padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>Signals scarcity</b><br><span style=\"color:var(--ink-2);font-size:13px\">“only 3 rooms left”, “few pieces left”</span><div style=\"margin-top:6px\"><span style=\"color:var(--ink-3)\">→</span> willingness to purchase rises <b>now</b></div></div><div style=\"flex:1 1 200px;padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Signals abundance</b><br><span style=\"color:var(--ink-2);font-size:13px\">plenty in stock, many sellers</span><div style=\"margin-top:6px\"><span style=\"color:var(--ink-3)\">→</span> compare price, promotion, utility, reviews across platforms <span style=\"color:var(--ink-3)\">→</span> perhaps buy</div></div></div><div style=\"padding:7px 11px;border:1px dashed var(--rule-2);border-radius:4px;color:var(--ink-2);font-size:13px\">Scarcity weakens when the buyer still has alternatives (Goa or Kerala?) and is used mostly on low-involvement products.</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Scarcity skips the comparison step; abundance sends the buyer shopping around.</figcaption></figure><!--/viz:pom-scarcity-flow--><!--viz:pom-endowment-gap--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two bars for the same smartphone: as owner the student asks 20,000; as a buyer of the same phone the student offers about 10,000, roughly half.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The same phone, priced by its owner and by a buyer</div><div style=\"display:grid;grid-template-columns:auto 1fr;gap:8px 10px;align-items:center;font-size:14px\"><div><b>As owner</b><br><span style=\"color:var(--ink-2);font-size:13px\">“my phone, best adjectives”</span></div><div><div style=\"width:100%;box-sizing:border-box;padding:5px 8px;font-family:var(--mono);font-size:13px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">asks 20,000</div></div><div><b>As buyer</b><br><span style=\"color:var(--ink-2);font-size:13px\">“second-hand: battery? camera?”</span></div><div><div style=\"width:50%;box-sizing:border-box;padding:5px 8px;font-family:var(--mono);font-size:13px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">offers ~10,000</div></div></div><p style=\"font-size:13.5px;color:var(--ink-2);margin:8px 0 0\">The class exercise usually shows a drop of about 50% between the selling and the buying price.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Owning it is what adds the value: the endowment effect.</figcaption></figure><!--/viz:pom-endowment-gap-->"
     },
     {
      "t": "Textbook: Consumer Markets and Buyer Behavior",
@@ -549,6 +580,10 @@ HUB.addCourse({
   },
   {
    "name": "Perception",
+   "unit": "cb"
+  },
+  {
+   "name": "Cognitive biases",
    "unit": "cb"
   }
  ],
@@ -1173,6 +1208,83 @@ HUB.addCourse({
    "p": "Figure and ground and tidy grouping raise the chance that a shopper picks the product up and reads the label. The session stressed this does not guarantee a purchase: budget and the buyer's own decision still intervene.",
    "f": "noticed ≠ bought",
    "lec": 25
+  },
+  {
+   "id": "pom-t0093",
+   "h": "The four tiers of the Elements of Value are not Lecture 5's four benefits",
+   "p": "Lecture 5 listed psychological, functional, economic and extended psychological benefits. The HBR pyramid sorts 30 elements into functional, emotional, life changing and social impact. Only the word functional is shared, so match the list to the source the question names.",
+   "f": "lecture 4 benefits ≠ Bain 4 tiers",
+   "lec": 5
+  },
+  {
+   "id": "pom-t0094",
+   "h": "No element of value makes up for poor quality",
+   "p": "In the Bain survey quality had the biggest effect on advocacy in every industry, and a serious quality gap could not be offset by any other element. A firm weak on quality should fix it before adding new elements.",
+   "f": "quality first, extras later",
+   "lec": 5
+  },
+  {
+   "id": "pom-t0095",
+   "h": "Andjelic's keywords are identity and belonging, not prestige and exclusivity",
+   "p": "Her luxury examples (Moët's invitation-only château, Prada's hand-picked club) are exclusive, but she says the point is identity and belonging, which any brand can build around a hobby, a cause or an aesthetic.",
+   "f": "belonging beats prestige",
+   "lec": 9
+  },
+  {
+   "id": "pom-t0096",
+   "h": "Points for actions buy a transaction, not loyalty",
+   "p": "Points for following or reviewing attract the customers least invested in the brand, who leave for the next better offer. That fits Lecture 9: satisfaction and rewards alone do not create loyalty, and a community gives a reason to stay.",
+   "f": "rewards can be outbid",
+   "lec": 9
+  },
+  {
+   "id": "pom-t0097",
+   "h": "Psychographics complement demographics; they do not replace them",
+   "p": "Samuel's title says psychographics are just as important, not more important. In her family-tech case income and children's age still made some difference; attitudes explained why families bought.",
+   "f": "as well as, not instead of",
+   "lec": 11
+  },
+  {
+   "id": "pom-t0098",
+   "h": "A search term is the targeting signal; the psychographic segment is the attitude behind it",
+   "p": "Samuel reaches attitude-based segments through searches, likes and hashtags. Those are online behaviours, but the segment (enabler, limiter) is defined by how parents think, so it stays psychographic in Lecture 11's terms.",
+   "f": "find by behaviour, define by attitude",
+   "lec": 11
+  },
+  {
+   "id": "pom-t0099",
+   "h": "A stereotype is a conscious bias, not a cognitive one",
+   "p": "Lecture 28 split biases in two. Stereotypes come from social conditioning (family, friends, society), so he called them conscious or intentional biases, as in the Benetton unity ad. Cognitive biases (anchoring, bandwagon, scarcity, endowment) are unconscious judgement errors.",
+   "f": "conditioned = conscious",
+   "lec": 28
+  },
+  {
+   "id": "pom-t0100",
+   "h": "Picking the resort with fewer reviews is still a bandwagon effect",
+   "p": "In theory the bandwagon effect favours what most people choose. In Lecture 28's Goa example, buyers who pick the less-reviewed resort for its calm are still judging by how many people go; a small number now signals exclusivity. The number of people drives the choice either way.",
+   "f": "few can be a bandwagon too",
+   "lec": 28
+  },
+  {
+   "id": "pom-t0101",
+   "h": "Scarcity loses its pull when the buyer still has alternatives",
+   "p": "“Only 3 rooms left” works on someone set on Goa. A traveller still choosing between Goa and Kerala has another option, so the message barely moves them. Dr. Kapoor also said firms use scarcity mostly on low-involvement products.",
+   "f": "fixated → scarcity bites",
+   "lec": 28
+  },
+  {
+   "id": "pom-t0102",
+   "h": "Anchoring has two definitions in this course",
+   "p": "Lecture 25 (the TAs) defined the anchoring effect as an initial figure, like the original price beside the offer price, that becomes the reference point. Lecture 28 defined anchoring bias as attention fixed on one element to the exclusion of the rest. Give the lecturer's wording and add the reference-point idea.",
+   "f": "reference point + attention",
+   "lec": 28
+  },
+  {
+   "id": "pom-t0103",
+   "h": "In Lecture 28's scarcity flow, WTP meant willingness to purchase",
+   "p": "He wrote WTP for willingness to purchase. In pricing, WTP normally means willingness to pay, the highest price a buyer will accept. Read the abbreviation from its context.",
+   "f": "WTP: purchase here, pay elsewhere",
+   "lec": 28
   }
  ],
  "defs": [
@@ -2009,6 +2121,102 @@ HUB.addCourse({
    "term": "Anchoring effect",
    "html": "<b>Anchoring effect</b>: an initial piece of information (such as the original price shown beside the offer price) becomes the reference point that sways later judgement.",
    "lec": 25
+  },
+  {
+   "id": "pom-d0107",
+   "unit": "value",
+   "topic": "Reading: The Elements of Value (HBR, 2016)",
+   "term": "Elements of value",
+   "html": "<b>Elements of value</b> (Almquist, Senior and Bloch, HBR 2016): 30 basic kinds of value a product can deliver, in four tiers: <b>functional</b> (14), <b>emotional</b> (10), <b>life changing</b> (5) and <b>social impact</b> (1, self-transcendence).",
+   "lec": 5
+  },
+  {
+   "id": "pom-d0108",
+   "unit": "value",
+   "topic": "Reading: The Elements of Value (HBR, 2016)",
+   "term": "Laddering",
+   "html": "<b>Laddering</b>: an interview technique that keeps asking why a stated preference matters, to reach the deeper value behind it. Bain built the elements of value largely from such interviews.",
+   "lec": 5
+  },
+  {
+   "id": "pom-d0109",
+   "unit": "chain",
+   "topic": "Reading: community, not rewards (HBR, 2021)",
+   "term": "Four hallmarks of membership",
+   "html": "<b>Four hallmarks of membership</b> (Andjelic, HBR.org 2021): <b>micro</b> (serve a narrow sub-segment), <b>myth-making</b> (give the brand a legend), <b>meet-ups</b> (connect members with each other) and <b>maintenance</b> (small, steady touchpoints).",
+   "lec": 9
+  },
+  {
+   "id": "pom-d0110",
+   "unit": "chain",
+   "topic": "Reading: community, not rewards (HBR, 2021)",
+   "term": "Conspicuous consumption",
+   "html": "<b>Conspicuous consumption</b>: buying things mainly to win other people’s admiration. Andjelic sees membership replacing it with investing in yourself: access, belonging, taste, experience, knowledge.",
+   "lec": 9
+  },
+  {
+   "id": "pom-d0111",
+   "unit": "seg",
+   "topic": "Reading: psychographics alongside demographics (HBR, 2016)",
+   "term": "Psychographics (Samuel)",
+   "html": "<b>Psychographics</b> (Samuel, HBR.org 2016): measures of customers' <b>attitudes and interests</b>, rather than objective traits such as age or income. They <b>complement</b> demographics.",
+   "lec": 11
+  },
+  {
+   "id": "pom-d0112",
+   "unit": "seg",
+   "topic": "Reading: psychographics alongside demographics (HBR, 2016)",
+   "term": "Enablers and limiters",
+   "html": "<b>Enablers and limiters</b> (Samuel): parents who trust children to choose their own tech and buy for fun (<b>enablers</b>), versus parents who keep screen time down and buy for learning (<b>limiters</b>).",
+   "lec": 11
+  },
+  {
+   "id": "pom-d0113",
+   "unit": "cb",
+   "topic": "Cognitive biases: conscious and unconscious",
+   "term": "Cognitive bias",
+   "html": "<b>Cognitive bias</b> (L#28): a subconscious error in thinking that leads a person to misread or misrepresent information, producing judgement errors in choices. Biases ride on mental shortcuts (heuristics).",
+   "lec": 28
+  },
+  {
+   "id": "pom-d0114",
+   "unit": "cb",
+   "topic": "Cognitive biases: conscious and unconscious",
+   "term": "Conscious bias",
+   "html": "<b>Conscious (intentional) bias</b> (L#28): a bias built by social conditioning, from family, friends and society. Its classic form is the <b>stereotype</b>, as in the reaction to Benetton’s unity ad.",
+   "lec": 28
+  },
+  {
+   "id": "pom-d0115",
+   "unit": "cb",
+   "topic": "Four biases in buying: anchoring, bandwagon, scarcity, endowment",
+   "term": "Anchoring bias",
+   "html": "<b>Anchoring bias</b> (L#28): attention locks onto one element of an offer, or a few (price cut, rating, “Save 16%”), excluding everything else, and the decision moves on from there. Compare L#25’s anchoring effect: an initial figure used as the reference point.",
+   "lec": 28
+  },
+  {
+   "id": "pom-d0116",
+   "unit": "cb",
+   "topic": "Four biases in buying: anchoring, bandwagon, scarcity, endowment",
+   "term": "Bandwagon effect",
+   "html": "<b>Bandwagon effect</b>: a choice seems more valuable when it follows the trend or pleases the peer group (“if others do it, it must be good”). In L#28, a small number of users can also drive it, by signalling exclusivity.",
+   "lec": 28
+  },
+  {
+   "id": "pom-d0117",
+   "unit": "cb",
+   "topic": "Four biases in buying: anchoring, bandwagon, scarcity, endowment",
+   "term": "Scarcity effect",
+   "html": "<b>Scarcity effect</b>: when buyers learn a product is limited or about to run out, they value it more and are readier to buy at once; when it seems abundant, they compare first. Weaker when alternatives remain.",
+   "lec": 28
+  },
+  {
+   "id": "pom-d0118",
+   "unit": "cb",
+   "topic": "Four biases in buying: anchoring, bandwagon, scarcity, endowment",
+   "term": "Endowment effect",
+   "html": "<b>Endowment effect</b>: people value something they own more than an identical thing they don’t. In the L#28 phone exercise, buying prices came in about 50% below selling prices.",
+   "lec": 28
   }
  ],
  "questions": [
@@ -6892,6 +7100,610 @@ HUB.addCourse({
    "w": "Similar products placed together are seen as one group, which makes comparing and choosing easy; the session's summary listed store layouts under grouping. Figure and ground is about one product standing out from its background, not about putting like items together.",
    "lec": 25,
    "lv": "analyse"
+  },
+  {
+   "id": "pom-q0295",
+   "topic": "Perceived value",
+   "q": "Into which four categories do Almquist, Senior and Bloch sort their 30 elements of value?",
+   "c": [
+    "Functional, emotional, life changing and social impact",
+    "Psychological, functional, economic and extended psychological",
+    "Physiological, safety, esteem and self-actualisation",
+    "Functional, economic, social and environmental"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The pyramid's tiers are functional (14 elements), emotional (10), life changing (5) and social impact (1). Psychological, functional, economic and extended psychological are Lecture 5's four benefits, and physiological to self-actualisation are Maslow's levels, which the model builds on but does not copy.",
+   "lec": 5,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0296",
+   "topic": "Perceived value",
+   "q": "In the Bain survey behind The Elements of Value, which element affected customer advocacy most across industries, so that no other element could make up for a serious shortfall in it?",
+   "c": [
+    "Saves time",
+    "Badge value",
+    "Quality",
+    "Reduces cost"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Perceived quality mattered most everywhere, and a firm must reach a minimum level on it before other elements count. Saves time is where digital firms shine, and badge value is an emotional element where stores do well, but neither offsets poor quality.",
+   "lec": 5,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0297",
+   "topic": "Perceived value",
+   "q": "A schoolbag brand gives a bag to a child in need for every bag it sells. Which element of value is it mainly adding?",
+   "c": [
+    "Badge value",
+    "Affiliation/belonging",
+    "Reduces cost",
+    "Self-transcendence"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Helping others through the purchase is self-transcendence, the one social-impact element, as with TOMS's one-for-one shoes. Badge value is an emotional element about the status a product signals to others, and affiliation/belonging is about joining a group, not giving to people outside it.",
+   "lec": 5,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0298",
+   "topic": "Perceived value",
+   "q": "Which of these are functional elements in the Elements of Value pyramid? (Select all)",
+   "c": [
+    "Saves time",
+    "Organizes",
+    "Badge value",
+    "Motivation"
+   ],
+   "a": [
+    0,
+    1
+   ],
+   "w": "Saves time and organizes are both in the functional tier (The Container Store and TurboTax were the organizes examples). Badge value sits in the emotional tier, and motivation, the Fitbit example, is life changing.",
+   "lec": 5,
+   "lv": "recall",
+   "multi": true
+  },
+  {
+   "id": "pom-q0299",
+   "topic": "Perceived value",
+   "q": "A private bank scores well on saves time and avoids hassles but poorly on quality. What do Almquist, Senior and Bloch advise it to do first?",
+   "c": [
+    "Add life-changing elements such as heirloom to leap ahead of rivals",
+    "Cut fees, since reduces cost matters in every industry",
+    "Improve quality, because a firm that trails on its industry's crucial elements should fix them before adding new ones",
+    "Advertise its speed harder, since digital-style convenience is what wins"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The article says to strengthen the crucial elements where you trail before adding others, and its own bank example worked on fraud protection and its app to lift quality. Adding heirloom on top of weak quality ignores the finding that nothing makes up for a quality shortfall.",
+   "lec": 5,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0300",
+   "topic": "Perceived value",
+   "q": "A grocery-delivery membership in India wants to raise its annual fee. Which plan follows the article's Amazon Prime example?",
+   "c": [
+    "Raise the fee and change nothing else, since price is the quickest lever",
+    "Add elements such as provides access (a streaming tie-up) and reduces risk, so that more value supports a higher fee",
+    "Cut the fee to grow share, since reduces cost is the most important element",
+    "Drop free delivery so that members think less about what they pay"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Prime began with reduces cost and saves time, then added streaming (provides access, fun/entertainment) and photo storage (reduces risk); the added value let Amazon raise the fee from $79 to $99. The article warns that a price rise alone changes the value equation against the buyer, and quality, not reduces cost, was the most important element.",
+   "lec": 5,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0301",
+   "topic": "Perceived value",
+   "q": "What did the Bain survey conclude about delivering many elements of value?",
+   "c": [
+    "A firm should aim to deliver all 30 elements",
+    "Only elements at the top of the pyramid are linked to loyalty",
+    "The number of elements has no link with revenue growth",
+    "Scoring high on more elements goes with more loyalty and faster growth, but elements must be chosen strategically; even Apple scored high on only 11"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Firms high on four or more elements had about three times the NPS and four times the revenue growth of firms with one. Yet the authors call delivering all 30 unrealistic, and quality, a functional element, mattered most, so top-tier elements are not the only ones that count.",
+   "lec": 5,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0302",
+   "topic": "Perceived value",
+   "q": "Lecture 5 defined customer perceived value as benefits minus costs. On which side does The Elements of Value ask managers to put more effort, and why?",
+   "c": [
+    "The benefits side, because firms have concentrated on price, the easier side to manage",
+    "The cost side, because pricing tools are still crude",
+    "Abstract costs only, because time and effort matter more than money",
+    "Competitors' prices, because value is always relative"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The authors say marketers have focused on price because it is a small set of numbers with mature tools, while the value side is harder and less managed. They do not call pricing tools crude, and although saves time and reduces effort are elements, the article is about the whole benefits side, not abstract costs alone.",
+   "lec": 5,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0303",
+   "topic": "Value chain",
+   "q": "What is Ana Andjelic's central argument in her 2021 HBR article on loyalty?",
+   "c": [
+    "Points and rewards buy transactions, not loyalty; real loyalty comes from community and a sense of belonging",
+    "Rewards create loyalty as long as the points are generous enough",
+    "Loyalty programmes work only for luxury brands",
+    "Loyalty is rational, so the best programme simply offers the lowest price"
+   ],
+   "a": [
+    0
+   ],
+   "w": "She calls most loyalty programmes economic transactions and says true loyalty is emotional, the feeling of belonging to a group. She uses luxury examples but says any brand can build such a community, and she rejects the idea that loyalty is rational.",
+   "lec": 9,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0304",
+   "topic": "Value chain",
+   "q": "A cosmetics brand gives points to anyone who follows it on Instagram or posts a product review. According to Andjelic, whom does this mostly attract?",
+   "c": [
+    "Its most devoted, high-value fans",
+    "People mainly after the reward, who are the least loyal and least valuable customers",
+    "Opinion leaders who will grow its community",
+    "First-time buyers who become loyal members once they redeem"
+   ],
+   "a": [
+    1
+   ],
+   "w": "She describes points for follows and reviews as a kind of bribery that draws the audience least invested in the brand. Devoted fans stay for belonging, not points, which is her whole case for community over rewards.",
+   "lec": 9,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0305",
+   "topic": "Value chain",
+   "q": "A running-shoe brand hosts Sunday group runs where members pace and coach one another. Which of Andjelic's hallmarks of membership is this?",
+   "c": [
+    "Membership is micro",
+    "Membership is myth-making",
+    "Membership is maintenance",
+    "Membership is meet-ups"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Meet-ups connect members with each other, online or in person, like Fitbit members coaching each other or Poshmark's seller events. Maintenance is about a steady stream of brand touchpoints, and micro is about serving a narrow sub-segment.",
+   "lec": 9,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0306",
+   "topic": "Value chain",
+   "q": "A basic-T-shirt brand makes small limited collaborations with streetwear artists for its trend-conscious buyers and overdelivers for that group. Which hallmark does this match?",
+   "c": [
+    "Membership is maintenance",
+    "Membership is micro",
+    "Membership is meet-ups",
+    "Membership is myth-making"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Micro membership focuses on a specific sub-segment and overdelivers for it, which she says suits brands with easily commoditised products; her example is Uniqlo's collaborations. Myth-making would need a story or legend around the brand, and there are no member gatherings here.",
+   "lec": 9,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0307",
+   "topic": "Value chain",
+   "q": "A fashion app replaces one big year-end reward with small weekly touches: early previews, a stylist on call and invitations to designer talks. Which hallmark is it applying, and why does Andjelic say it works?",
+   "c": [
+    "Maintenance, because people prefer small repeated gains to big infrequent ones",
+    "Myth-making, because previews build a legend around the brand",
+    "Micro, because the perks target a narrow sub-segment",
+    "Meet-ups, because talks bring members together"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Maintenance means a steady stream of touchpoints, backed by research that buyers prefer small, frequent gains; her example is Yoox Net-a-Porter's expanded personal-shopping team. The talks involve the brand speaking to members rather than members connecting, and nothing here is a legend or a narrow sub-segment.",
+   "lec": 9,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0308",
+   "topic": "Value chain",
+   "q": "Which of these does Andjelic give as examples of membership as myth-making? (Select all)",
+   "c": [
+    "Häagen-Dazs, a made-up European-sounding name for an ice cream founded in the Bronx",
+    "American Express turning the rumoured invitation-only Centurion card into a real Black Card",
+    "Poshmark's local events where sellers swap tips",
+    "Yoox Net-a-Porter doubling its personal-shopping team"
+   ],
+   "a": [
+    0,
+    1
+   ],
+   "w": "Myth-making gives a brand a story: the invented name gave Häagen-Dazs an old-world aura, and Amex made an urban legend real. Poshmark's events are meet-ups, and the personal-shopping team is maintenance.",
+   "lec": 9,
+   "lv": "recall",
+   "multi": true
+  },
+  {
+   "id": "pom-q0309",
+   "topic": "Value chain",
+   "q": "According to Andjelic, what are the keywords of a successful membership strategy?",
+   "c": [
+    "Prestige and exclusivity",
+    "Points and discounts",
+    "Identity and belonging",
+    "Scale and reach"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Her two keywords are identity and belonging; prestige and exclusivity, she says, are optional. Her invitation-only luxury examples make prestige tempting, but she stresses that any brand can build belonging around a hobby, cause or aesthetic. Points and discounts are what she argues against.",
+   "lec": 9,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0310",
+   "topic": "Value chain",
+   "q": "Diners who are happy with a food app still leave for a rival's 50% discount, the Lecture 9 problem. Which response best follows Andjelic's article?",
+   "c": [
+    "Match the discount and add double points on every order",
+    "Run one large cashback reward at the end of the year",
+    "Stop all perks, since satisfied customers come back anyway",
+    "Build a club for a food-loving sub-segment, with chef meet-ups, early access to new restaurants and small regular perks"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A community built on belonging gives customers a reason to stay that a rival's discount cannot outbid, and it uses her hallmarks (micro, meet-ups, maintenance). More points or a big annual reward keep competing on the very transaction that loses customers, and Lecture 9 already showed satisfaction alone does not hold them.",
+   "lec": 9,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0311",
+   "topic": "Segmentation",
+   "q": "How does Alexandra Samuel's 2016 HBR article position psychographics relative to demographics?",
+   "c": [
+    "As a replacement, since demographics no longer predict buying",
+    "As a complement: attitudes and interests add insight that age, gender and similar variables miss",
+    "As a kind of behavioural data, measured from purchase frequency",
+    "As useful mainly for luxury products"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Samuel defines psychographics as customers' attitudes and interests and says they complement what demographics tell you; even in her case, income and children's age still made some difference. Purchase frequency is behavioural segmentation, the base Lecture 11 warned is most often confused with psychographic.",
+   "lec": 11,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0312",
+   "topic": "Segmentation",
+   "q": "According to Samuel, how has the internet changed psychographics for marketers? (Select all)",
+   "c": [
+    "It made psychographics more actionable",
+    "It made psychographic differences more important",
+    "It made psychographic insight easier to access",
+    "It made demographics irrelevant to targeting"
+   ],
+   "a": [
+    0,
+    1,
+    2
+   ],
+   "w": "Her three shifts are that psychographics became more actionable, psychographic differences became more important, and insight became easier to reach. She never calls demographics irrelevant; her whole framing is that the two work together.",
+   "lec": 11,
+   "lv": "recall",
+   "multi": true
+  },
+  {
+   "id": "pom-q0313",
+   "topic": "Segmentation",
+   "q": "A mother caps her son's screen time and buys only maths and reading apps. In Samuel's family-tech research, she is:",
+   "c": [
+    "An enabler",
+    "A demographic segment defined by income",
+    "A limiter",
+    "A heavy user in behavioural terms"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Limiters focus on minimising screen time and favour products that build literacy, maths and academic skills. Enablers trust children to choose and look for fun and entertainment. Her point is that this attitude, not income, explains the purchase.",
+   "lec": 11,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0314",
+   "topic": "Segmentation",
+   "q": "A coding-toy maker shows one ad to parents searching for “kids programming” and another to parents searching for “fun video games for kids”. What is it doing, in Samuel's terms?",
+   "c": [
+    "Turning psychographic insight into action through keyword targeting",
+    "Segmenting by geography",
+    "Using demographics, since both groups are parents",
+    "Creating scarcity to speed up the purchase"
+   ],
+   "a": [
+    0
+   ],
+   "w": "This is her own example of smarter keyword targeting: the search term reveals what the parent cares about, so each group gets the message that fits its attitude. Both groups share the same demographic (parents), which is exactly why demographics alone could not split them.",
+   "lec": 11,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0315",
+   "topic": "Segmentation",
+   "q": "In that coding-toy campaign the segments rest on parents' attitudes to technology, but they are reached through what parents type into a search box. Using Lecture 11's distinction, how is this best described?",
+   "c": [
+    "Behavioural segmentation, because searching is an action",
+    "Psychographic segments (attitudes), reached through an online behaviour used as the targeting signal",
+    "Geographic segmentation, because search results vary by location",
+    "Demographic segmentation, because every target is a parent"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Lecture 11 put it as psychographic = how people think, behavioural = what they do. The groups are defined by attitude (enabler or limiter), so they are psychographic; the search is only the signal used to find them. Calling it behavioural confuses the signal with the segment.",
+   "lec": 11,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0316",
+   "topic": "Segmentation",
+   "q": "Online arguments between pro-screen and anti-screen parents are heated. Why does Samuel say psychographic data matters most in such a market?",
+   "c": [
+    "Because polarised buyers stop buying, so firms should leave the market",
+    "Because conflict makes demographic data more accurate",
+    "Because one neutral message will then work for everyone",
+    "Because a message such as praising a device's play value delights some parents and repels others, so the data shows whom to tell what"
+   ],
+   "a": [
+    3
+   ],
+   "w": "She calls psychographic data a roadmap through such divides: the same pitch wins one group and loses another. She also sees the conflict as useful, since it revealed the segments, so leaving the market is the opposite of her advice, and no single message suits both sides.",
+   "lec": 11,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0317",
+   "topic": "Segmentation",
+   "q": "What does Samuel say online “tribes” of like-minded people do to psychographic differences?",
+   "c": [
+    "They consolidate them, so people identify more with communities of interest or values than with their location or demographic group",
+    "They erase them, because everyone sees the same content",
+    "They matter only for teenagers",
+    "They remove the need for market research"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Because people can find like-minded others anywhere, online tribes deepen psychographic identities and make them stronger than geographic or demographic ties. She recommends more research through online communities, not less.",
+   "lec": 11,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0318",
+   "topic": "Cognitive biases",
+   "q": "How did Dr. Kapoor define a cognitive bias in Lecture 28?",
+   "c": [
+    "A stereotype learnt from family, friends and society",
+    "A subconscious error in thinking that makes a person misread information and so misjudge a choice",
+    "A piece of choice architecture a marketer designs to steer a buyer",
+    "A weighted score a buyer computes when comparing brands"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A cognitive bias is an unconscious error in thinking that leads to judgement errors. A stereotype is the classic conscious bias, built by social conditioning, which he set apart from cognitive biases. Choice architecture is a nudge, the marketer's tool, not the buyer's error.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0319",
+   "topic": "Cognitive biases",
+   "q": "An ad meant to celebrate unity is withdrawn after many viewers read the darker-skinned man in it as a criminal and the lighter-skinned man as a police officer. In Lecture 28's terms, what drove that reading?",
+   "c": [
+    "The anchoring bias",
+    "Closure, the Gestalt principle",
+    "A conscious bias: a stereotype from social conditioning",
+    "The bandwagon effect"
+   ],
+   "a": [
+    2
+   ],
+   "w": "This is the Benetton example. Viewers applied a stereotype learnt through conditioning, which the lecture classes as a conscious (intentional) bias. Closure is tempting because viewers 'completed' a story, but closure is about filling in missing visual parts of a familiar shape, not about who is cast as the villain.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0320",
+   "topic": "Cognitive biases",
+   "q": "Scrolling a phone listing, Meera spots the word “Renewed”, stops reading the specifications and opens the seller's page to learn more. Which bias is at work, as Lecture 28 defined it?",
+   "c": [
+    "Anchoring bias",
+    "Endowment effect",
+    "Scarcity effect",
+    "Bandwagon effect"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Anchoring bias is attention fixed on one element that shuts out the rest and moves the buyer to the next step, which need not be a purchase. Nothing here is running out (scarcity), she does not own the phone (endowment), and no crowd is involved (bandwagon).",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0321",
+   "topic": "Cognitive biases",
+   "q": "A video-calling service flags “Save 16%” on its annual plan against monthly billing. According to Lecture 28, what does the firm gain most from customers who switch?",
+   "c": [
+    "A customer locked in for 12 months, open to add-ons and less likely to leave when prices change",
+    "A large immediate profit, because annual customers pay more in total",
+    "A scarcity signal that the annual plan is about to be withdrawn",
+    "Nothing much, since customers can cancel an annual plan at any time"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He said the saving is small but the firm has hooked you for a year: add-ons get accepted, price changes are hard to escape, and few people switch platforms overnight. Annual customers pay less per month, not more. Cancelling is possible in theory, but he noted it rarely happens.",
+   "lec": 28,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0322",
+   "topic": "Cognitive biases",
+   "q": "A recipe app shows “14,200 people cooked this dish this week” above every recipe. Which bias is it using?",
+   "c": [
+    "Endowment effect",
+    "Bandwagon effect",
+    "Scarcity effect",
+    "Conscious bias"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The bandwagon effect makes a choice seem more valuable because many others are making it; the lecture's version was a course platform counting today's learners. Scarcity would say the recipe or an ingredient is running out, and endowment needs ownership.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0323",
+   "topic": "Cognitive biases",
+   "q": "Two equal resorts sit side by side: one with 1,157 reviews rated 8.5, the other with 281 reviews rated 8.1. A family picks the second because fewer guests means a quieter pool. How did Dr. Kapoor classify this choice in Lecture 28?",
+   "c": [
+    "As the endowment effect, since the family imagines the pool as its own",
+    "As proof that the family was free of bias, because it ignored the higher rating",
+    "As anchoring on price, since price is what families watch most",
+    "As still a bandwagon effect: the number of guests drives the choice, and a smaller number signals exclusivity"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He contrasted theory (more people, more value) with practice (fewer people can signal exclusivity) and said both are bandwagon effects, because the head-count still decides. Price was held equal in the exercise, so it cannot be the anchor, and choosing on reviews at all means the family relied on the bias rather than escaping it.",
+   "lec": 28,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0324",
+   "topic": "Cognitive biases",
+   "q": "In Lecture 28's flow for the scarcity effect, what does a buyer do when the information signals that the product is available in abundance?",
+   "c": [
+    "Buys at once, because abundance proves the product is popular",
+    "Drops the product, because plentiful goods are seen as low quality",
+    "Compares other elements first, such as price, promotion, utility and reviews across platforms, and then may buy",
+    "Waits for a scarcity message before considering it"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Scarcity raises the willingness to purchase straight away. Abundance sends the buyer into comparison (price, promotion, functional utility, reviews, online and offline), after which a purchase may or may not follow. Abundance is not read as popularity or as low quality in his flow.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0325",
+   "topic": "Cognitive biases",
+   "q": "Kabir has not decided between Goa and Kerala for New Year when a Goa hotel page shows “Only 3 rooms left at this price”. What does Lecture 28 predict?",
+   "c": [
+    "The message has little effect, because he still has another destination to choose",
+    "He will book at once, since scarcity always speeds up decisions",
+    "He will now value the hotel less, because scarcity signals poor quality",
+    "The endowment effect takes over, because he imagines himself at the hotel"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Dr. Kapoor said scarcity becomes paramount only once the buyer is fixated on a place; with an alternative still open, it barely matters. The claim that scarcity 'always' speeds decisions is exactly what his Goa-or-Kerala example rules out. Endowment needs a sense of ownership, which a hotel page alone does not give.",
+   "lec": 28,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0326",
+   "topic": "Cognitive biases",
+   "q": "Arjun lists his own phone for resale at ₹20,000. Asked what he would pay for an identical used phone from a stranger, he says ₹10,000. Which effect explains the gap?",
+   "c": [
+    "Bandwagon effect",
+    "Anchoring bias",
+    "Scarcity effect",
+    "Endowment effect"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The endowment effect: people value what they own more than an identical item they don't, and the class exercise usually shows a drop of about 50% between selling and buying prices. Anchoring is tempting because ₹20,000 is a number on show, but here the gap comes from ownership, not from a figure fixing his attention.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0327",
+   "topic": "Cognitive biases",
+   "q": "A juice bar asks each customer's name and calls it out when the drink is ready. Which bias did Lecture 28 use this practice (from Starbucks) to illustrate?",
+   "c": [
+    "Scarcity effect",
+    "Bandwagon effect",
+    "Endowment effect",
+    "Conscious bias"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He read the Starbucks name call-out as the endowment effect: your name attached to the order creates a sense of ownership, so the product feels worth more and loyalty grows. Bandwagon would need the crowd's choice to matter, and nothing is running out.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0328",
+   "topic": "Cognitive biases",
+   "q": "In the H&M cart Dr. Kapoor showed, two T-shirts carried a price call-out and the other two were tagged “few pieces left”. Which biases does that cart use? (Select all)",
+   "c": [
+    "Anchoring bias",
+    "Scarcity effect",
+    "Endowment effect",
+    "Bandwagon effect"
+   ],
+   "a": [
+    0,
+    1
+   ],
+   "w": "He called the price call-out an anchoring bias, because it grabs attention, and the “few pieces left” tag the scarcity effect, because it says buy now or lose it. Nothing in the cart signals what other shoppers are doing (bandwagon), and the shopper does not yet own the shirts (endowment).",
+   "lec": 28,
+   "lv": "apply",
+   "multi": true
+  },
+  {
+   "id": "pom-q0329",
+   "topic": "Cognitive biases",
+   "q": "A student argues that a discount cannot be a bias, since every buyer notices it. Which reply matches Dr. Kapoor's answer in Lecture 28?",
+   "c": [
+    "Discounts are biases only when they are fake",
+    "It is a bias because it can trigger a purchase the buyer had no need for, and because it pulls buyers to the discounting brand over an identical rival",
+    "It is a bias because biases always harm the consumer",
+    "It is a bias only for repeat customers, who notice discounts less"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He gave both reasons: the discount can prompt an unneeded purchase at an unconscious level, and competitively it biases the buyer towards one brand over a rival offering the same thing. He said biases are not always harmful (a deal can be real value), so 'always harm' is wrong.",
+   "lec": 28,
+   "lv": "analyse"
   }
  ],
  "briefs": {
@@ -6956,6 +7768,10 @@ HUB.addCourse({
   "lec-20s",
   "lec-21s",
   "lec-24",
-  "lec-25"
+  "lec-25",
+  "lec-05s",
+  "lec-09s",
+  "lec-11s",
+  "lec-28"
  ]
 });

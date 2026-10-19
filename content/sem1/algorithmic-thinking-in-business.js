@@ -139,6 +139,24 @@ HUB.addCourse({
    "Week 9 — Search Algorithms",
    "Linear, binary, jump, exponential, hash search",
    "rec"
+  ],
+  [
+   23,
+   "Week 9 — Live Lecture 5",
+   "Tree types, hashing, blockchain + Quiz 2 brief",
+   "live"
+  ],
+  [
+   24,
+   "Week 10 — Network Search",
+   "Traversals as search, Dijkstra, other path algorithms",
+   "rec"
+  ],
+  [
+   25,
+   "Week 10 — Bubble Sort",
+   "Sorting, bubble sort passes, O(n²)",
+   "rec"
   ]
  ],
  "units": [
@@ -236,6 +254,11 @@ HUB.addCourse({
      "t": "Textbook: Intro to DSA, Types, and Big O",
      "src": "Codeless DSA ch1",
      "h": "<p><strong>Three algorithm design approaches</strong> — Divide and conquer splits a big problem into smaller ones and combines their results. Greedy takes the best-looking choice at each moment, whether or not it is best overall. Dynamic programming considers several sub-solutions, stores them and reuses them, weighing future implications against past results. The book's shorthand: greedy approximates, dynamic optimises.<br><em>e.g.</em> Nearest-next-city routing for a sales rep is greedy; storing the best cost to every intermediate depot and reusing it is dynamic programming.</p>"
+    },
+    {
+     "t": "Textbook: Sorting Algorithms",
+     "src": "Codeless DSA ch7",
+     "h": "<p><strong>Sorting and divide and conquer</strong> — Not covered in L#25, which said the other sorts follow in later lectures. Merge sort and quick sort are the standard examples of divide and conquer, the Module 1 approach: break the problem into smaller pieces, solve each, and combine. Their O(n log n) speed comes from that halving.<br><em>e.g.</em> Matches the lecture's audit example: split by region, process separately, combine.</p>"
     }
    ]
   },
@@ -356,6 +379,11 @@ HUB.addCourse({
      "t": "Textbook: Linear and Binary Search",
      "src": "Codeless DSA ch6",
      "h": "<p><strong>Linearity</strong> — Something is linear when its graph is a straight line: double the input, double the output. A linear algorithm's running time rises in direct proportion to the input size.<br><em>e.g.</em> Checking 2,000 invoices one by one takes about twice as long as checking 1,000.</p><p><strong>Exponents and logarithms</strong> — An exponent raises a base to a power; a logarithm is its inverse — it asks what power the base must be raised to. In search analysis the base is usually 2, so log₂ n counts how many times n can be halved before reaching 1.<br><span style=\"font-family:var(--mono)\">2ˣ = n  ⇔  x = log₂ n</span><br><em>e.g.</em> 2¹⁰ = 1,024, so log₂ 1,024 = 10.</p>"
+    },
+    {
+     "t": "Textbook: Sorting Algorithms",
+     "src": "Codeless DSA ch7",
+     "h": "<p><strong>Bubble sort's cost</strong> — Covered in L#25. The book states O(n²) and calls bubble sort too slow for most real work. L#25 showed where the n² comes from: each pass makes one comparison fewer, so the total is n(n − 1) ÷ 2, and Big O drops the ½ and the lower-order term.<br><span style=\"font-family:var(--mono)\">(n − 1) + (n − 2) + … + 1 = n(n − 1) ÷ 2 → O(n²)</span></p><p><strong>O(n²) vs O(n log n) in practice</strong> — Not covered in L#25 as a comparison of sorts, though O(n log n) is one of L#21's growth classes. For small lists any sort will do. As lists grow the gap is enormous: for 10,000 items, n² is 10 crore steps while n log₂ n is about 1.3 lakh, roughly 750 times less work.<br><span style=\"font-family:var(--mono)\">n² ÷ (n log₂ n) = n ÷ log₂ n</span><br><em>e.g.</em> A nightly sort of 50 lakh transactions is practical only with an O(n log n) method.</p>"
     }
    ]
   },
@@ -375,13 +403,13 @@ HUB.addCourse({
   {
    "id": "trees",
    "title": "Trees",
-   "tag": "Lectures 12, 14, 18 · Module 3 · + textbook",
+   "tag": "Lectures 12, 14, 18, 23 · Module 3 · + textbook",
    "lede": "The first non-linear structure. Vocabulary, depth and height, four traversals, then six named types of tree — the lecture's definitions win over the textbook block below.",
    "topics": [
     {
      "t": "Trees — the vocabulary",
-     "src": "L#12 · L#18",
-     "h": "\n  <div class=\"def\">A <b>tree</b> arranges elements <b>hierarchically</b> rather than in sequence. In a linear structure the next element is always fixed (next index, next link, next pop, next dequeue); in a <b>non-linear</b> structure there can be <b>several paths</b> onward from an element. Trees are the first non-linear structure of Module 3.</div>\n  <div class=\"scroller\"><table><thead><tr><th>Term</th><th>Meaning in the lecture</th></tr></thead><tbody>\n   <tr><td><strong>Node</strong></td><td>Each unit or element of the tree</td></tr>\n   <tr><td><strong>Root node</strong></td><td>The first element, drawn at the top. It has no parent</td></tr>\n   <tr><td><strong>Parent / child</strong></td><td>A node hanging below another is its <strong>child</strong>; the node above is its <strong>parent</strong>. A parent can have many children</td></tr>\n   <tr><td><strong>Leaf</strong></td><td>A node with <strong>no children</strong> — the end of any pathway, at whatever level it sits</td></tr>\n   <tr><td><strong>Edge</strong></td><td>The line connecting a parent to a child. Not \"the end of something\" — the end nodes are leaves</td></tr>\n   <tr><td><strong>Subtree</strong></td><td>Any section that hangs below a node. Zoom in on a big branch of a real tree and it looks like a small tree</td></tr>\n  </tbody></table></div>\n  <div class=\"warnbox\"><b>The one rule that makes it a tree.</b> A node can have many children, but <strong>a child can have only one parent</strong>. Draw two parents joined to the same child and it is no longer a tree — that structure is a <strong>graph</strong> (Lecture 15).</div>\n  <h4>Why the tree is drawn upside down</h4>\n  <p style=\"font-size:14.5px\">He linked it to the inverted tree of the Bhagavad Gita: the roots at the top are the source, and the branches below are what grows from it. In memory there is no \"top\" or \"bottom\" — only memory cells; up and down are how we draw it.</p>\n  <h4>His family-tree exercise</h4>\n  <p style=\"font-size:14.5px\">Grandfather (<strong>GF</strong>) is the root with three children: sons <strong>SA</strong> and <strong>SB</strong> and a daughter <strong>D</strong>. SA has a daughter <strong>D1</strong>; D has two sons <strong>S1</strong> and <strong>S2</strong>; SB has no children. Leaves: <strong>D1, SB, S1, S2</strong> — SB is a leaf one level higher than the others, simply because nothing hangs below him.</p>\n  <h4>Where simple trees are used</h4>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>Folder structure</strong> — BS program → Semester 1…8 → six courses → Presentations, Assignments. A subfolder belongs to only one folder</li>\n   <li><strong>Corporate hierarchy</strong> — CEO → managers → team leaders → workers</li>\n   <li><strong>Library classification</strong> — language → genre → sub-genre → author → title</li>\n   <li><strong>Biological classification</strong> — animal → vertebrate → mammal → dog</li>\n   <li><strong>Family tree</strong> — only if you follow <strong>one side</strong> (e.g. the father's side, as in many patrilineal societies); both sides would give a child two parents</li>\n  </ul>\n  <h4>Live Lecture 4 additions</h4>\n  <div class=\"def\"><b>From the lecture (L#18):</b> asked in the chat, he confirmed that <b>trees and graphs were not in Quiz 1</b> — that quiz covered algorithms and linear data structures up to stacks and queues, as MCQs with one correct answer. Module 3 (trees, graphs, hashing) is new material for later assessments.</div>\n  <p style=\"font-size:14.5px\"><strong>Linear vs non-linear, as a life choice.</strong> Taking one person's advice and following it step by step is linear: one path. Comparing at every stage — online or offline, which institute, BS in Management and Technology or BS in AI and Data Science — is non-linear: several options at each node, and you pick one.</p>\n  <p style=\"font-size:14.5px\"><strong>Biology as a near-perfect tree.</strong> Classification runs kingdom → phylum → class → order → family → genus → species, and each species sits under one group. It follows genetic and evolutionary properties rather than everyday habit: a tomato is cooked as a vegetable but is biologically a fruit, and a penguin is a bird even though it does not fly.</p><h4>From the L#18 slides</h4><p style=\"font-size:14.5px\">The deck starts from a family: you could store every relative in an <strong>array</strong>, but an array only lists them. It cannot show who depends on whom. A tree keeps the same people and adds that <strong>hierarchy</strong>. The use-case slide words two of the L#12 examples a little differently: folders as Semester 1 → Algorithmic Thinking → Presentations, and book classification as genre → author → book title.</p>"
+     "src": "L#12 · L#18 · L#23",
+     "h": "\n  <div class=\"def\">A <b>tree</b> arranges elements <b>hierarchically</b> rather than in sequence. In a linear structure the next element is always fixed (next index, next link, next pop, next dequeue); in a <b>non-linear</b> structure there can be <b>several paths</b> onward from an element. Trees are the first non-linear structure of Module 3.</div>\n  <div class=\"scroller\"><table><thead><tr><th>Term</th><th>Meaning in the lecture</th></tr></thead><tbody>\n   <tr><td><strong>Node</strong></td><td>Each unit or element of the tree</td></tr>\n   <tr><td><strong>Root node</strong></td><td>The first element, drawn at the top. It has no parent</td></tr>\n   <tr><td><strong>Parent / child</strong></td><td>A node hanging below another is its <strong>child</strong>; the node above is its <strong>parent</strong>. A parent can have many children</td></tr>\n   <tr><td><strong>Leaf</strong></td><td>A node with <strong>no children</strong> — the end of any pathway, at whatever level it sits</td></tr>\n   <tr><td><strong>Edge</strong></td><td>The line connecting a parent to a child. Not \"the end of something\" — the end nodes are leaves</td></tr>\n   <tr><td><strong>Subtree</strong></td><td>Any section that hangs below a node. Zoom in on a big branch of a real tree and it looks like a small tree</td></tr>\n  </tbody></table></div>\n  <div class=\"warnbox\"><b>The one rule that makes it a tree.</b> A node can have many children, but <strong>a child can have only one parent</strong>. Draw two parents joined to the same child and it is no longer a tree — that structure is a <strong>graph</strong> (Lecture 15).</div>\n  <h4>Why the tree is drawn upside down</h4>\n  <p style=\"font-size:14.5px\">He linked it to the inverted tree of the Bhagavad Gita: the roots at the top are the source, and the branches below are what grows from it. In memory there is no \"top\" or \"bottom\" — only memory cells; up and down are how we draw it.</p>\n  <h4>His family-tree exercise</h4>\n  <p style=\"font-size:14.5px\">Grandfather (<strong>GF</strong>) is the root with three children: sons <strong>SA</strong> and <strong>SB</strong> and a daughter <strong>D</strong>. SA has a daughter <strong>D1</strong>; D has two sons <strong>S1</strong> and <strong>S2</strong>; SB has no children. Leaves: <strong>D1, SB, S1, S2</strong> — SB is a leaf one level higher than the others, simply because nothing hangs below him.</p>\n  <h4>Where simple trees are used</h4>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>Folder structure</strong> — BS program → Semester 1…8 → six courses → Presentations, Assignments. A subfolder belongs to only one folder</li>\n   <li><strong>Corporate hierarchy</strong> — CEO → managers → team leaders → workers</li>\n   <li><strong>Library classification</strong> — language → genre → sub-genre → author → title</li>\n   <li><strong>Biological classification</strong> — animal → vertebrate → mammal → dog</li>\n   <li><strong>Family tree</strong> — only if you follow <strong>one side</strong> (e.g. the father's side, as in many patrilineal societies); both sides would give a child two parents</li>\n  </ul>\n  <h4>Live Lecture 4 additions</h4>\n  <div class=\"def\"><b>From the lecture (L#18):</b> asked in the chat, he confirmed that <b>trees and graphs were not in Quiz 1</b> — that quiz covered algorithms and linear data structures up to stacks and queues, as MCQs with one correct answer. Module 3 (trees, graphs, hashing) is new material for later assessments.</div>\n  <p style=\"font-size:14.5px\"><strong>Linear vs non-linear, as a life choice.</strong> Taking one person's advice and following it step by step is linear: one path. Comparing at every stage — online or offline, which institute, BS in Management and Technology or BS in AI and Data Science — is non-linear: several options at each node, and you pick one.</p>\n  <p style=\"font-size:14.5px\"><strong>Biology as a near-perfect tree.</strong> Classification runs kingdom → phylum → class → order → family → genus → species, and each species sits under one group. It follows genetic and evolutionary properties rather than everyday habit: a tomato is cooked as a vegetable but is biologically a fruit, and a penguin is a bird even though it does not fly.</p><h4>From the L#18 slides</h4><p style=\"font-size:14.5px\">The deck starts from a family: you could store every relative in an <strong>array</strong>, but an array only lists them. It cannot show who depends on whom. A tree keeps the same people and adds that <strong>hierarchy</strong>. The use-case slide words two of the L#12 examples a little differently: folders as Semester 1 → Algorithmic Thinking → Presentations, and book classification as genre → author → book title.</p><h4>Live Lecture 5 additions</h4><div class=\"def\"><b>From the lecture (L#23): Quiz 2.</b> Saturday <b>31 October</b>; the time will be announced separately, and he said a formal LMS announcement would follow. There will be <b>two quizzes, not three</b> as first planned, and the <b>better of your two quiz scores</b> counts. So you must sit at least one: if you missed Quiz 1, Quiz 2 is your only quiz score; if you sat it, Quiz 2 can only help. <b>Scope:</b> everything taught after the linear data structures up to this lecture, which he summed up as the complete <b>non-linear data structures, blockchain included</b>; Quiz 1 material is not repeated (he confirmed this in the chat). <b>Format:</b> MCQ, or at most very short answers such as true/false. A doubt-clearing session is planned for the week before. The <b>semester exam covers the whole course</b>.</div><p style=\"font-size:13.5px;color:var(--ink-3)\">He did not say whether the Module 4 lectures already released by then (complexity, L#21, and search, L#22) count for Quiz 2; in the same lecture he spoke of searching and sorting as coming next. Check the LMS announcement.</p><p style=\"font-size:14.5px\"><strong>The root is defined by having no parent, not by where it is drawn.</strong> Rotate a tree diagram by 90° and the root sits at the left instead of the top. It is still the root: the one node with no parent.</p><p style=\"font-size:14.5px\"><strong>An organisation chart close to home.</strong> IIT Jodhpur runs director → deans → associate deans and heads of department → faculty and staff, and each programme has a programme director. Besides showing a general tree, he turned it into advice: take any issue to your programme director first, and escalate to the associate dean of executive education (who handles the off-campus programmes) only if it isn't resolved.</p>"
     },
     {
      "t": "Depth and height",
@@ -395,18 +423,18 @@ HUB.addCourse({
     },
     {
      "t": "Six types of tree",
-     "src": "L#14",
-     "h": "\n  <p style=\"font-size:14.5px\">Most tree types evolved to meet computer-science needs. He covered six, each a narrower version of the one before it, and said these are <strong>sufficient for this course</strong>.</p>\n  <div class=\"scroller\"><table><thead><tr><th>Type</th><th>Children per node</th><th>Do the values matter?</th><th>Applications he named</th></tr></thead><tbody>\n   <tr><td><strong>General tree</strong></td><td>Any number — no minimum, no maximum</td><td>No</td><td>Folder structure · one-side family tree · organisation structure · biological taxonomy</td></tr>\n   <tr><td><strong>Binary tree</strong></td><td><strong>At most two</strong>: 0, 1 or 2</td><td>No</td><td><strong>Knockout tournaments</strong> (World Cup quarter-finals → semis → final) · yes/no <strong>decision trees and flowcharts</strong> (the tea and ATM examples)</td></tr>\n   <tr><td><strong>Complete binary tree</strong></td><td>Exactly two on every level <strong>except the last</strong>; the last level is filled <strong>left to right</strong></td><td>No — structure only</td><td>The shape a heap must have</td></tr>\n   <tr><td><strong>Binary search tree (BST)</strong></td><td>At most two</td><td><strong>Yes</strong>: left subtree &lt; parent &lt; right subtree</td><td>Dictionary search · database look-ups such as student IDs</td></tr>\n   <tr><td><strong>AVL tree</strong></td><td>At most two</td><td>Yes (it is a BST)</td><td>In-memory indexing in databases · library catalogues</td></tr>\n   <tr><td><strong>Heap</strong></td><td>Complete binary tree</td><td>Yes, parent against children only</td><td><strong>Priority queues</strong></td></tr>\n  </tbody></table></div>\n  <h4>Binary: \"at most\" two</h4>\n  <p style=\"font-size:14.5px\">The maximum is fixed, the minimum is not. Remove a leaf and it is still binary; give any node a third child and it stops being binary. Even a flowchart with <strong>no decision at all</strong> (a single path) is a binary tree, because one child is within \"at most two\". A decision with <strong>three</strong> possible outcomes is not.</p>\n  <h4>Complete binary tree: full, then left to right</h4>\n  <p style=\"font-size:14.5px\">Every node above the last level has <strong>exactly two</strong> children. On the last level gaps are allowed only on the <strong>right</strong>: a node with one child must have its <strong>left</strong> child, and all left positions are filled before any to their right. Add a right child somewhere while a left position before it is empty, and it is no longer complete.</p>\n  <div class=\"def\"><b>From the lecture (L#14):</b> his \"which tree is this?\" exercises ask for the <b>most specific</b> category. Every tree is a general tree, so \"general tree\" is only right when a node has three or more children; a full-shaped binary tree should be called a <b>complete binary tree</b>.</div><!--viz:atb-tree-type-picker--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Decision list: more than two children means general tree; otherwise binary, then complete binary if full except a left-filled last level, BST if left smaller and right larger, AVL if also balanced, heap if complete with parent at least (or at most) its children.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Naming a tree: the most specific category</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Does any node have <b>more than two</b> children?</div><span style=\"color:var(--ink-3)\">yes →</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>General tree</b></div></div><p style=\"font-size:13px;color:var(--ink-3);margin:0 0 8px\">no → it is a <b>binary tree</b>; keep narrowing</p><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Full on every level except the last, last level filled <b>left to right</b>?</div><span style=\"color:var(--ink-3)\">yes →</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Complete binary tree</b></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Left subtree <b>&lt;</b> node <b>&lt;</b> right subtree, at every node?</div><span style=\"color:var(--ink-3)\">yes →</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>BST</b></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">A BST whose subtrees differ in height by <b>at most 1</b> at every node?</div><span style=\"color:var(--ink-3)\">yes →</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>AVL tree</b></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Complete, and every parent <b>≥</b> (or <b>≤</b>) its children?</div><span style=\"color:var(--ink-3)\">yes →</span><div style=\"padding:7px 11px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\"><b>Max (min) heap</b></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Shape questions (children, completeness) and value questions (BST, heap) are separate tests.</figcaption></figure><!--/viz:atb-tree-type-picker-->"
+     "src": "L#14 · L#23",
+     "h": "\n  <p style=\"font-size:14.5px\">Most tree types evolved to meet computer-science needs. He covered six, each a narrower version of the one before it, and said these are <strong>sufficient for this course</strong>.</p>\n  <div class=\"scroller\"><table><thead><tr><th>Type</th><th>Children per node</th><th>Do the values matter?</th><th>Applications he named</th></tr></thead><tbody>\n   <tr><td><strong>General tree</strong></td><td>Any number — no minimum, no maximum</td><td>No</td><td>Folder structure · one-side family tree · organisation structure · biological taxonomy</td></tr>\n   <tr><td><strong>Binary tree</strong></td><td><strong>At most two</strong>: 0, 1 or 2</td><td>No</td><td><strong>Knockout tournaments</strong> (World Cup quarter-finals → semis → final) · yes/no <strong>decision trees and flowcharts</strong> (the tea and ATM examples)</td></tr>\n   <tr><td><strong>Complete binary tree</strong></td><td>Exactly two on every level <strong>except the last</strong>; the last level is filled <strong>left to right</strong></td><td>No — structure only</td><td>The shape a heap must have</td></tr>\n   <tr><td><strong>Binary search tree (BST)</strong></td><td>At most two</td><td><strong>Yes</strong>: left subtree &lt; parent &lt; right subtree</td><td>Dictionary search · database look-ups such as student IDs</td></tr>\n   <tr><td><strong>AVL tree</strong></td><td>At most two</td><td>Yes (it is a BST)</td><td>In-memory indexing in databases · library catalogues</td></tr>\n   <tr><td><strong>Heap</strong></td><td>Complete binary tree</td><td>Yes, parent against children only</td><td><strong>Priority queues</strong></td></tr>\n  </tbody></table></div>\n  <h4>Binary: \"at most\" two</h4>\n  <p style=\"font-size:14.5px\">The maximum is fixed, the minimum is not. Remove a leaf and it is still binary; give any node a third child and it stops being binary. Even a flowchart with <strong>no decision at all</strong> (a single path) is a binary tree, because one child is within \"at most two\". A decision with <strong>three</strong> possible outcomes is not.</p>\n  <h4>Complete binary tree: full, then left to right</h4>\n  <p style=\"font-size:14.5px\">Every node above the last level has <strong>exactly two</strong> children. On the last level gaps are allowed only on the <strong>right</strong>: a node with one child must have its <strong>left</strong> child, and all left positions are filled before any to their right. Add a right child somewhere while a left position before it is empty, and it is no longer complete.</p>\n  <div class=\"def\"><b>From the lecture (L#14):</b> his \"which tree is this?\" exercises ask for the <b>most specific</b> category. Every tree is a general tree, so \"general tree\" is only right when a node has three or more children; a full-shaped binary tree should be called a <b>complete binary tree</b>.</div><!--viz:atb-tree-type-picker--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Decision list: more than two children means general tree; otherwise binary, then complete binary if full except a left-filled last level, BST if left smaller and right larger, AVL if also balanced, heap if complete with parent at least (or at most) its children.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Naming a tree: the most specific category</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Does any node have <b>more than two</b> children?</div><span style=\"color:var(--ink-3)\">yes →</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>General tree</b></div></div><p style=\"font-size:13px;color:var(--ink-3);margin:0 0 8px\">no → it is a <b>binary tree</b>; keep narrowing</p><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Full on every level except the last, last level filled <b>left to right</b>?</div><span style=\"color:var(--ink-3)\">yes →</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Complete binary tree</b></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Left subtree <b>&lt;</b> node <b>&lt;</b> right subtree, at every node?</div><span style=\"color:var(--ink-3)\">yes →</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>BST</b></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">A BST whose subtrees differ in height by <b>at most 1</b> at every node?</div><span style=\"color:var(--ink-3)\">yes →</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>AVL tree</b></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Complete, and every parent <b>≥</b> (or <b>≤</b>) its children?</div><span style=\"color:var(--ink-3)\">yes →</span><div style=\"padding:7px 11px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\"><b>Max (min) heap</b></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Shape questions (children, completeness) and value questions (BST, heap) are separate tests.</figcaption></figure><!--/viz:atb-tree-type-picker--><h4>Live Lecture 5 additions</h4><ul style=\"font-size:14.5px\"><li><strong>Which sports are binary trees?</strong> Individual sports with a knockout draw, such as tennis or badminton, are binary from the first round: two players per match, the winner moves up a level. Football and cricket World Cups begin with a <strong>league (group) stage</strong>, which is not a tree; only the knockout rounds that follow (pre-quarter-finals onwards) form a binary tree</li><li><strong>Decision trees.</strong> A yes/no question at each step gives two branches, so a flowchart such as “are the marks 60% or more? yes → first class; no → not first class” is a binary tree. He noted that decision trees return in operations research and machine learning</li><li><strong>Complete binary tree, in the L#23 slide’s words:</strong> every level except possibly the last is full, and on the last level a node with a single child should be the rightmost one. That is the same rule as above: a gap may only sit at the right-hand end. The slide’s tree A → P (X, Y), R (Z) is complete; if P had only X while R still had Z, the gap would be in the middle of the last level and the tree would not be complete</li></ul>"
     },
     {
      "t": "Binary search trees and AVL balancing",
-     "src": "L#14",
-     "h": "\n  <div class=\"def\">A <b>binary search tree (BST)</b> is a binary tree in which every value in a node's <b>left subtree is smaller</b> than the node and every value in its <b>right subtree is larger</b> — at the root and at every subtree.</div>\n  <p style=\"font-size:14.5px\">His example: 50 at the root, 30 (with 20 and 40) on the left, 70 (with 60 and 80) on the right. Check the rule at 50, then again at 30 and at 70.</p>\n  <h4>Where the smallest and largest values are</h4>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>Minimum:</strong> keep going <strong>left</strong> from the root until there is no left child</li>\n   <li><strong>Maximum:</strong> keep going <strong>right</strong> until there is no right child. If that node has only a <em>left</em> child, stop there — going left would only find smaller values (remove 80 from his tree and the maximum is 70)</li>\n  </ul>\n  <h4>Why it is fast, and where it is used</h4>\n  <p style=\"font-size:14.5px\">Each comparison sends you left or right, so the whole other subtree is skipped. A paper <strong>dictionary</strong> works the same way: open near L, land on M, flip back, land on K, flip forward. Databases use the idea for <strong>student IDs</strong> that follow a template (B26 + department code + serial number) instead of scanning records one by one.</p>\n  <div class=\"warnbox\"><b>The weakness: sorted input.</b> Roll numbers 001, 002, 003… each go to the right of the last one, so the tree becomes a long chain — <strong>increasing order leans right, decreasing order leans left</strong>. The tree is <strong>unbalanced</strong> and searching becomes sequential, like a linked list or array.</div>\n  <h4>AVL trees: self-balancing BSTs</h4>\n  <div class=\"def\">An <b>AVL tree</b> is a BST that keeps itself balanced: for <b>every node</b>, the heights of its left and right subtrees may differ by <b>at most one</b>. When an insertion breaks this, the tree performs a <b>rotation</b>.</div>\n  <p style=\"font-size:14.5px\">His picture of a rotation: balls on a string hanging from a nail. Hang the string from the middle ball instead, and the first ball drops down to one side. In the tree, the <strong>middle node is pulled up</strong> and its neighbours rearranged, without breaking the BST rule. With the same increasing values 20, 30, 50, 70, 80 that made a chain, the AVL tree rotates twice and ends with 30 at the root, 20 on the left, and 70 (holding 50 and 80) on the right — fewer hops for every search.</p>\n  <p style=\"font-size:14.5px\"><strong>Uses:</strong> <strong>in-memory indexing</strong> in databases, and <strong>library catalogues</strong>, where a new sub-discipline (computer science → IT → AI…) gets a number slotted between existing ones instead of reorganising the whole catalogue. The name comes from its inventors; he said you do not need to know them.</p><!--viz:atb-avl-rotation--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison of a chain-shaped plain BST and a balanced AVL tree built from 20, 30, 50, 70, 80, with a table of the two rotations: 30 pulled up after inserting 50, and 70 pulled up after inserting 80.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Same increasing values: plain BST vs AVL</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 250\" role=\"img\" aria-label=\"Left: the values 20, 30, 50, 70, 80 inserted into a plain BST form a chain leaning right. Right: the same values in an AVL tree, with 30 at the root, 20 left, 70 right holding 50 and 80.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M30,32 L72,72\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M72,72 L114,112\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M114,112 L156,152\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M156,152 L198,192\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><circle cx=\"30\" cy=\"32\" r=\"16\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"30\" y=\"36.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">20</text><circle cx=\"72\" cy=\"72\" r=\"16\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"72\" y=\"76.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">30</text><circle cx=\"114\" cy=\"112\" r=\"16\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"114\" y=\"116.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">50</text><circle cx=\"156\" cy=\"152\" r=\"16\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"156\" y=\"156.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">70</text><circle cx=\"198\" cy=\"192\" r=\"16\" style=\"fill:var(--bad-soft);stroke:var(--bad);stroke-width:1.5\"/><text x=\"198\" y=\"196.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">80</text><path d=\"M318,52 L268,120\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M318,52 L368,120\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M368,120 L326,188\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M368,120 L410,188\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><circle cx=\"318\" cy=\"52\" r=\"16\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"318\" y=\"56.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">30</text><circle cx=\"268\" cy=\"120\" r=\"16\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"268\" y=\"124.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">20</text><circle cx=\"368\" cy=\"120\" r=\"16\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"368\" y=\"124.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">70</text><circle cx=\"326\" cy=\"188\" r=\"16\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"326\" y=\"192.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">50</text><circle cx=\"410\" cy=\"188\" r=\"16\" style=\"fill:var(--good-soft);stroke:var(--good);stroke-width:1.5\"/><text x=\"410\" y=\"192.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">80</text><text x=\"112\" y=\"236\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">plain BST: 80 is 4 edges down</text><text x=\"336\" y=\"236\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">AVL: 80 is 2 edges down</text></svg></div><div class=\"scroller\"><table><thead><tr><th>Insert</th><th>What happens</th><th>Tree after</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">20</td><td>first node</td><td style=\"font-family:var(--mono)\">20</td></tr><tr><td style=\"font-family:var(--mono)\">30</td><td>goes right; sides differ by 1</td><td style=\"font-family:var(--mono)\">20 (–, 30)</td></tr><tr><td style=\"font-family:var(--mono)\">50</td><td style=\"background:var(--bad-soft)\">right side 2 deeper → pull 30 up</td><td style=\"font-family:var(--mono)\">30 (20, 50)</td></tr><tr><td style=\"font-family:var(--mono)\">70</td><td>goes right of 50; differ by 1</td><td style=\"font-family:var(--mono)\">30 (20, 50 (–, 70))</td></tr><tr><td style=\"font-family:var(--mono)\">80</td><td style=\"background:var(--bad-soft)\">unbalanced at 50 → pull 70 up</td><td style=\"font-family:var(--mono)\">30 (20, 70 (50, 80))</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each rotation lifts the middle of three nodes in a row; the BST order is never broken.</figcaption></figure><!--/viz:atb-avl-rotation-->"
+     "src": "L#14 · L#23",
+     "h": "\n  <div class=\"def\">A <b>binary search tree (BST)</b> is a binary tree in which every value in a node's <b>left subtree is smaller</b> than the node and every value in its <b>right subtree is larger</b> — at the root and at every subtree.</div>\n  <p style=\"font-size:14.5px\">His example: 50 at the root, 30 (with 20 and 40) on the left, 70 (with 60 and 80) on the right. Check the rule at 50, then again at 30 and at 70.</p>\n  <h4>Where the smallest and largest values are</h4>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>Minimum:</strong> keep going <strong>left</strong> from the root until there is no left child</li>\n   <li><strong>Maximum:</strong> keep going <strong>right</strong> until there is no right child. If that node has only a <em>left</em> child, stop there — going left would only find smaller values (remove 80 from his tree and the maximum is 70)</li>\n  </ul>\n  <h4>Why it is fast, and where it is used</h4>\n  <p style=\"font-size:14.5px\">Each comparison sends you left or right, so the whole other subtree is skipped. A paper <strong>dictionary</strong> works the same way: open near L, land on M, flip back, land on K, flip forward. Databases use the idea for <strong>student IDs</strong> that follow a template (B26 + department code + serial number) instead of scanning records one by one.</p>\n  <div class=\"warnbox\"><b>The weakness: sorted input.</b> Roll numbers 001, 002, 003… each go to the right of the last one, so the tree becomes a long chain — <strong>increasing order leans right, decreasing order leans left</strong>. The tree is <strong>unbalanced</strong> and searching becomes sequential, like a linked list or array.</div>\n  <h4>AVL trees: self-balancing BSTs</h4>\n  <div class=\"def\">An <b>AVL tree</b> is a BST that keeps itself balanced: for <b>every node</b>, the heights of its left and right subtrees may differ by <b>at most one</b>. When an insertion breaks this, the tree performs a <b>rotation</b>.</div>\n  <p style=\"font-size:14.5px\">His picture of a rotation: balls on a string hanging from a nail. Hang the string from the middle ball instead, and the first ball drops down to one side. In the tree, the <strong>middle node is pulled up</strong> and its neighbours rearranged, without breaking the BST rule. With the same increasing values 20, 30, 50, 70, 80 that made a chain, the AVL tree rotates twice and ends with 30 at the root, 20 on the left, and 70 (holding 50 and 80) on the right — fewer hops for every search.</p>\n  <p style=\"font-size:14.5px\"><strong>Uses:</strong> <strong>in-memory indexing</strong> in databases, and <strong>library catalogues</strong>, where a new sub-discipline (computer science → IT → AI…) gets a number slotted between existing ones instead of reorganising the whole catalogue. The name comes from its inventors; he said you do not need to know them.</p><!--viz:atb-avl-rotation--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison of a chain-shaped plain BST and a balanced AVL tree built from 20, 30, 50, 70, 80, with a table of the two rotations: 30 pulled up after inserting 50, and 70 pulled up after inserting 80.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Same increasing values: plain BST vs AVL</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 250\" role=\"img\" aria-label=\"Left: the values 20, 30, 50, 70, 80 inserted into a plain BST form a chain leaning right. Right: the same values in an AVL tree, with 30 at the root, 20 left, 70 right holding 50 and 80.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M30,32 L72,72\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M72,72 L114,112\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M114,112 L156,152\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M156,152 L198,192\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><circle cx=\"30\" cy=\"32\" r=\"16\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"30\" y=\"36.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">20</text><circle cx=\"72\" cy=\"72\" r=\"16\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"72\" y=\"76.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">30</text><circle cx=\"114\" cy=\"112\" r=\"16\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"114\" y=\"116.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">50</text><circle cx=\"156\" cy=\"152\" r=\"16\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"156\" y=\"156.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">70</text><circle cx=\"198\" cy=\"192\" r=\"16\" style=\"fill:var(--bad-soft);stroke:var(--bad);stroke-width:1.5\"/><text x=\"198\" y=\"196.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">80</text><path d=\"M318,52 L268,120\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M318,52 L368,120\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M368,120 L326,188\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M368,120 L410,188\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><circle cx=\"318\" cy=\"52\" r=\"16\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"318\" y=\"56.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">30</text><circle cx=\"268\" cy=\"120\" r=\"16\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"268\" y=\"124.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">20</text><circle cx=\"368\" cy=\"120\" r=\"16\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"368\" y=\"124.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">70</text><circle cx=\"326\" cy=\"188\" r=\"16\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"326\" y=\"192.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">50</text><circle cx=\"410\" cy=\"188\" r=\"16\" style=\"fill:var(--good-soft);stroke:var(--good);stroke-width:1.5\"/><text x=\"410\" y=\"192.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">80</text><text x=\"112\" y=\"236\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">plain BST: 80 is 4 edges down</text><text x=\"336\" y=\"236\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">AVL: 80 is 2 edges down</text></svg></div><div class=\"scroller\"><table><thead><tr><th>Insert</th><th>What happens</th><th>Tree after</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">20</td><td>first node</td><td style=\"font-family:var(--mono)\">20</td></tr><tr><td style=\"font-family:var(--mono)\">30</td><td>goes right; sides differ by 1</td><td style=\"font-family:var(--mono)\">20 (–, 30)</td></tr><tr><td style=\"font-family:var(--mono)\">50</td><td style=\"background:var(--bad-soft)\">right side 2 deeper → pull 30 up</td><td style=\"font-family:var(--mono)\">30 (20, 50)</td></tr><tr><td style=\"font-family:var(--mono)\">70</td><td>goes right of 50; differ by 1</td><td style=\"font-family:var(--mono)\">30 (20, 50 (–, 70))</td></tr><tr><td style=\"font-family:var(--mono)\">80</td><td style=\"background:var(--bad-soft)\">unbalanced at 50 → pull 70 up</td><td style=\"font-family:var(--mono)\">30 (20, 70 (50, 80))</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each rotation lifts the middle of three nodes in a row; the BST order is never broken.</figcaption></figure><!--/viz:atb-avl-rotation--><h4>Live Lecture 5 additions</h4><p style=\"font-size:14.5px\"><strong>Equal values.</strong> The L#23 slide states the rule strictly: left-subtree values are less than the parent, right-subtree values more. Asked in class where a value <em>equal</em> to the parent goes, he said it depends on the implementation, but typically it goes to the <strong>right</strong>: under a 40, a new 35 goes left and a new 40 goes right. In practice, then, left &lt; parent ≤ right. If a question doesn’t fix the convention, state the one you use.</p><p style=\"font-size:14.5px\"><strong>Who needs an AVL tree?</strong> He called it a very specialised tree, used mainly at operating-system level and for in-memory indexing; everyday business applications seldom build one themselves. The rotation is a way to picture the rebalancing; in code it is a few lines. In the library-catalogue example each subject has a class number (he recalled 658 for management), and a new sub-field gets a decimal number under its parent subject, so the catalogue grows without being reorganised.</p>"
     },
     {
      "t": "Heaps and priority queues",
-     "src": "L#14",
-     "h": "\n  <div class=\"def\">A <b>heap</b> is a <b>complete binary tree</b> with an ordering rule between each <b>parent and its children</b>. It is <b>not</b> a binary search tree: nothing requires left to be smaller than right.</div>\n  <div class=\"scroller\"><table><thead><tr><th></th><th>Max heap</th><th>Min heap</th></tr></thead><tbody>\n   <tr><td><strong>Rule at every node</strong></td><td>Parent <strong>≥</strong> each child</td><td>Parent <strong>≤</strong> each child</td></tr>\n   <tr><td><strong>Root holds</strong></td><td>The largest value</td><td>The smallest value</td></tr>\n   <tr><td><strong>Equal values</strong></td><td>Allowed (≥)</td><td>Allowed (≤): his min heap had a 25 under a 25</td></tr>\n   <tr><td><strong>Priority queue use</strong></td><td>Higher number = served first</td><td>Priority 1 served before 2, then 3…</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\">On every insertion the values are rearranged so the tree stays complete and the heap rule holds — just as an AVL tree rearranges itself to stay balanced.</p>\n  <h4>Back to priority queues (Lecture 11)</h4>\n  <p style=\"font-size:14.5px\">The priority queue from Module 2 — the accident victim seen before the patient with a headache, system tasks before your music or game — is <strong>typically implemented with a heap</strong>.</p>\n  <h4>His BST-or-heap exercise</h4>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>65 → 60 (55, 63), 70 (67, 75)</strong> is a <strong>BST</strong>: at every node, left is smaller and right is larger</li>\n   <li><strong>65 → 60 (45, 53), 55 (49, 52)</strong> is a <strong>max heap</strong>: every parent is larger than its children, even though the right child 55 is smaller than the left child 60</li>\n  </ul><!--viz:atb-bst-vs-heap--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Left tree is a BST rooted at 65 with children 60 and 70; right tree is a max heap rooted at 65 with children 60 and 55, whose right child is smaller than its left.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">BST or heap? Same shape, different rule</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 240\" role=\"img\" aria-label=\"Two complete binary trees. Left, a BST: 65 with 60 (55, 63) and 70 (67, 75). Right, a max heap: 65 with 60 (45, 53) and 55 (49, 52).\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M108,44 L56,110\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M108,44 L160,110\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M56,110 L30,178\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M56,110 L82,178\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M160,110 L134,178\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M160,110 L186,178\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><circle cx=\"108\" cy=\"44\" r=\"17\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"108\" y=\"49\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">65</text><circle cx=\"56\" cy=\"110\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"56\" y=\"115\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">60</text><circle cx=\"160\" cy=\"110\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"160\" y=\"115\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">70</text><circle cx=\"30\" cy=\"178\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"30\" y=\"183\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">55</text><circle cx=\"82\" cy=\"178\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"82\" y=\"183\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">63</text><circle cx=\"134\" cy=\"178\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"134\" y=\"183\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">67</text><circle cx=\"186\" cy=\"178\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"186\" y=\"183\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">75</text><path d=\"M332,44 L280,110\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M332,44 L384,110\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M280,110 L254,178\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M280,110 L306,178\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M384,110 L358,178\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M384,110 L410,178\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><circle cx=\"332\" cy=\"44\" r=\"17\" style=\"fill:var(--good-soft);stroke:var(--good);stroke-width:1.5\"/><text x=\"332\" y=\"49\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">65</text><circle cx=\"280\" cy=\"110\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"280\" y=\"115\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">60</text><circle cx=\"384\" cy=\"110\" r=\"17\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"384\" y=\"115\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">55</text><circle cx=\"254\" cy=\"178\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"254\" y=\"183\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">45</text><circle cx=\"306\" cy=\"178\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"306\" y=\"183\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">53</text><circle cx=\"358\" cy=\"178\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"358\" y=\"183\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">49</text><circle cx=\"410\" cy=\"178\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"410\" y=\"183\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">52</text><text x=\"108\" y=\"226\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">BST: left &lt; parent &lt; right</text><text x=\"332\" y=\"226\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">max heap: parent ≥ children</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">A heap only compares parent with child, so its right child (55) may be smaller than its left (60).</figcaption></figure><!--/viz:atb-bst-vs-heap-->"
+     "src": "L#14 · L#23",
+     "h": "\n  <div class=\"def\">A <b>heap</b> is a <b>complete binary tree</b> with an ordering rule between each <b>parent and its children</b>. It is <b>not</b> a binary search tree: nothing requires left to be smaller than right.</div>\n  <div class=\"scroller\"><table><thead><tr><th></th><th>Max heap</th><th>Min heap</th></tr></thead><tbody>\n   <tr><td><strong>Rule at every node</strong></td><td>Parent <strong>≥</strong> each child</td><td>Parent <strong>≤</strong> each child</td></tr>\n   <tr><td><strong>Root holds</strong></td><td>The largest value</td><td>The smallest value</td></tr>\n   <tr><td><strong>Equal values</strong></td><td>Allowed (≥)</td><td>Allowed (≤): his min heap had a 25 under a 25</td></tr>\n   <tr><td><strong>Priority queue use</strong></td><td>Higher number = served first</td><td>Priority 1 served before 2, then 3…</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\">On every insertion the values are rearranged so the tree stays complete and the heap rule holds — just as an AVL tree rearranges itself to stay balanced.</p>\n  <h4>Back to priority queues (Lecture 11)</h4>\n  <p style=\"font-size:14.5px\">The priority queue from Module 2 — the accident victim seen before the patient with a headache, system tasks before your music or game — is <strong>typically implemented with a heap</strong>.</p>\n  <h4>His BST-or-heap exercise</h4>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>65 → 60 (55, 63), 70 (67, 75)</strong> is a <strong>BST</strong>: at every node, left is smaller and right is larger</li>\n   <li><strong>65 → 60 (45, 53), 55 (49, 52)</strong> is a <strong>max heap</strong>: every parent is larger than its children, even though the right child 55 is smaller than the left child 60</li>\n  </ul><!--viz:atb-bst-vs-heap--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Left tree is a BST rooted at 65 with children 60 and 70; right tree is a max heap rooted at 65 with children 60 and 55, whose right child is smaller than its left.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">BST or heap? Same shape, different rule</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 240\" role=\"img\" aria-label=\"Two complete binary trees. Left, a BST: 65 with 60 (55, 63) and 70 (67, 75). Right, a max heap: 65 with 60 (45, 53) and 55 (49, 52).\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M108,44 L56,110\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M108,44 L160,110\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M56,110 L30,178\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M56,110 L82,178\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M160,110 L134,178\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M160,110 L186,178\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><circle cx=\"108\" cy=\"44\" r=\"17\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"108\" y=\"49\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">65</text><circle cx=\"56\" cy=\"110\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"56\" y=\"115\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">60</text><circle cx=\"160\" cy=\"110\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"160\" y=\"115\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">70</text><circle cx=\"30\" cy=\"178\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"30\" y=\"183\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">55</text><circle cx=\"82\" cy=\"178\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"82\" y=\"183\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">63</text><circle cx=\"134\" cy=\"178\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"134\" y=\"183\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">67</text><circle cx=\"186\" cy=\"178\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"186\" y=\"183\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">75</text><path d=\"M332,44 L280,110\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M332,44 L384,110\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M280,110 L254,178\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M280,110 L306,178\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M384,110 L358,178\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M384,110 L410,178\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><circle cx=\"332\" cy=\"44\" r=\"17\" style=\"fill:var(--good-soft);stroke:var(--good);stroke-width:1.5\"/><text x=\"332\" y=\"49\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">65</text><circle cx=\"280\" cy=\"110\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"280\" y=\"115\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">60</text><circle cx=\"384\" cy=\"110\" r=\"17\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"384\" y=\"115\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">55</text><circle cx=\"254\" cy=\"178\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"254\" y=\"183\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">45</text><circle cx=\"306\" cy=\"178\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"306\" y=\"183\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">53</text><circle cx=\"358\" cy=\"178\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"358\" y=\"183\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">49</text><circle cx=\"410\" cy=\"178\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"410\" y=\"183\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">52</text><text x=\"108\" y=\"226\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">BST: left &lt; parent &lt; right</text><text x=\"332\" y=\"226\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">max heap: parent ≥ children</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">A heap only compares parent with child, so its right child (55) may be smaller than its left (60).</figcaption></figure><!--/viz:atb-bst-vs-heap--><h4>Live Lecture 5 additions</h4><p style=\"font-size:14.5px\"><strong>A check on the L#23 slides.</strong> Both heap pictures, a max heap 80 → 70, 60 with 45 and 55 under the 60, and a min heap 20 → 30, 25 with 25 and 45 under the right-hand 25, satisfy the ordering rule. But each hangs both children under the <strong>right</strong> node while the left node has none, so the last level is not filled from the left. A heap must be a complete binary tree: when you draw one, fill the left node’s children first (see the figure).</p><p style=\"font-size:14.5px\"><strong>A min heap from everyday life.</strong> Take knowledge of the latest technology across generations: in general each generation knows more of it than the one before, so at every link the parent is at or below the child, and the oldest generation, at the root, knows least. That is the min-heap rule, parent ≤ child. There are exceptions; the analogy is about the rule.</p><p style=\"font-size:14.5px\"><strong>The numbering decides the heap.</strong> If priority 1 is the most urgent, the smallest number must come out first: a min heap. If 10 is the most urgent, use a max heap.</p><!--viz:atb-heap-shape-check--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Left: the slide’s min heap, 20 with children 30 and 25, and 25 and 45 under the right-hand 25 while 30 has none. Right: the same five values as a complete min heap, 20 with children 25 and 30, and 25 and 45 under the left-hand 25.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The slide’s min heap, and the same values as a complete tree</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 240\" role=\"img\" aria-label=\"Two min heaps holding 20, 30, 25, 25 and 45. Left, as on the slide, the bottom two values hang under the right child. Right, the complete arrangement, with them under the left child.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><text x=\"110\" y=\"24\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">As drawn on the slide</text><text x=\"330\" y=\"24\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">Complete: fill the left first</text><path d=\"M220,40 L220,205\" style=\"stroke:var(--rule);stroke-width:1.5;fill:none;stroke-dasharray:4 4\"/><path d=\"M110,79 L60,105\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M110,79 L160,105\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M160,139 L130,165\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M160,139 L190,165\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M330,79 L280,105\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M330,79 L380,105\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M280,139 L250,165\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M280,139 L310,165\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><circle cx=\"110\" cy=\"62\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"110\" y=\"67\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-family:var(--mono)\">20</text><circle cx=\"60\" cy=\"122\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"60\" y=\"127\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-family:var(--mono)\">30</text><circle cx=\"160\" cy=\"122\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"160\" y=\"127\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-family:var(--mono)\">25</text><circle cx=\"130\" cy=\"182\" r=\"17\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"130\" y=\"187\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-family:var(--mono)\">25</text><circle cx=\"190\" cy=\"182\" r=\"17\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"190\" y=\"187\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-family:var(--mono)\">45</text><circle cx=\"330\" cy=\"62\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"330\" y=\"67\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-family:var(--mono)\">20</text><circle cx=\"280\" cy=\"122\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"280\" y=\"127\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-family:var(--mono)\">25</text><circle cx=\"380\" cy=\"122\" r=\"17\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"380\" y=\"127\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-family:var(--mono)\">30</text><circle cx=\"250\" cy=\"182\" r=\"17\" style=\"fill:var(--good-soft);stroke:var(--good);stroke-width:1.5\"/><text x=\"250\" y=\"187\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-family:var(--mono)\">25</text><circle cx=\"310\" cy=\"182\" r=\"17\" style=\"fill:var(--good-soft);stroke:var(--good);stroke-width:1.5\"/><text x=\"310\" y=\"187\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-family:var(--mono)\">45</text><text x=\"110\" y=\"228\" text-anchor=\"middle\" style=\"fill:var(--bad);font-size:13px\">order OK · not complete</text><text x=\"330\" y=\"228\" text-anchor=\"middle\" style=\"fill:var(--good);font-size:13px\">order OK · complete</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Parent ≤ child holds in both; only the right-hand tree also has the complete shape a heap needs.</figcaption></figure><!--/viz:atb-heap-shape-check-->"
     },
     {
      "t": "Textbook: Tree Data Structures",
@@ -418,23 +446,23 @@ HUB.addCourse({
   {
    "id": "hashing",
    "title": "Hashing &amp; hash tables",
-   "tag": "Lecture 19 · Module 3 · + textbook",
+   "tag": "Lectures 19, 23 · Module 3 · + textbook",
    "lede": "Fixed-length outputs: mod as a simple hash, hash tables with chaining for fast look-up, and the stricter rules hashing must meet for passwords and integrity checks.",
    "topics": [
     {
      "t": "Hash functions and mod",
-     "src": "L#19",
-     "h": "\n  <p style=\"font-size:14.5px\">Hashing is the <strong>last non-linear data structure</strong> of the module. Older textbooks barely mention it; newer ones do, because it has become so important.</p>\n  <h4>From functions to hash functions</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Function</th><th>Example</th><th>Output length</th></tr></thead><tbody>\n   <tr><td><strong>square(x)</strong></td><td>2 → 4 · 10 → 100</td><td><strong>Varies</strong> with the input</td></tr>\n   <tr><td><strong>uppercase(s)</strong></td><td>abc → ABC</td><td>Fixed, but <strong>set by the input</strong>: 5 characters in, 5 out</td></tr>\n   <tr><td><strong>hash(s)</strong></td><td>3 characters or 100 characters in</td><td><strong>Always the same fixed length</strong>, whatever the input</td></tr>\n  </tbody></table></div>\n  <div class=\"def\">A <b>hash function</b> applies (usually complex) mathematical operations to an input and always returns a <b>fixed-length output</b>, mostly <b>alphanumeric</b>. That output is also called a <b>digest</b> or <b>message digest</b>. A series of characters given as input is a <b>string</b>.</div>\n  <h4>mod: the one operation he explained</h4>\n  <div class=\"def\"><b>number mod X</b> divides the number by X and returns the <b>remainder</b>. Some textbooks write it as <b>%</b>.</div>\n  <div class=\"scroller\"><table><thead><tr><th>Calculation</th><th>Working</th><th>Result</th></tr></thead><tbody>\n   <tr><td style=\"font-family:var(--mono)\">101 mod 10</td><td>10 × 10 = 100, remainder 1</td><td style=\"font-family:var(--mono)\">1</td></tr>\n   <tr><td style=\"font-family:var(--mono)\">27 mod 5</td><td>5 × 5 = 25, remainder 2</td><td style=\"font-family:var(--mono)\">2</td></tr>\n   <tr><td style=\"font-family:var(--mono)\">25 mod 5</td><td>divides exactly</td><td style=\"font-family:var(--mono)\">0 (some algorithms use X instead; zero is \"tricky business\")</td></tr>\n  </tbody></table></div>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>Choosing X:</strong> X = the number of unique hash values you want. mod 10 gives 10 values, <strong>0 to 9</strong>; mod 100 gives 100</li>\n   <li><strong>mod 10 picks the last digit</strong> of a number, and mod 100 the last two — this is how a system extracts digits from a number it stores as one value</li>\n  </ul>\n  <p style=\"font-size:14.5px\"><strong>His exercise (mod 10):</strong> 115 → 5 · 118 → 8 · 125 → 5 · 167 → 7 · 188 → 8. Two pairs land on the same value (115 and 125, 118 and 188) — a <strong>hash collision</strong>. With only 10 values, collisions are unavoidable once you store more than 10 numbers.</p>"
+     "src": "L#19 · L#23",
+     "h": "\n  <p style=\"font-size:14.5px\">Hashing is the <strong>last non-linear data structure</strong> of the module. Older textbooks barely mention it; newer ones do, because it has become so important.</p>\n  <h4>From functions to hash functions</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Function</th><th>Example</th><th>Output length</th></tr></thead><tbody>\n   <tr><td><strong>square(x)</strong></td><td>2 → 4 · 10 → 100</td><td><strong>Varies</strong> with the input</td></tr>\n   <tr><td><strong>uppercase(s)</strong></td><td>abc → ABC</td><td>Fixed, but <strong>set by the input</strong>: 5 characters in, 5 out</td></tr>\n   <tr><td><strong>hash(s)</strong></td><td>3 characters or 100 characters in</td><td><strong>Always the same fixed length</strong>, whatever the input</td></tr>\n  </tbody></table></div>\n  <div class=\"def\">A <b>hash function</b> applies (usually complex) mathematical operations to an input and always returns a <b>fixed-length output</b>, mostly <b>alphanumeric</b>. That output is also called a <b>digest</b> or <b>message digest</b>. A series of characters given as input is a <b>string</b>.</div>\n  <h4>mod: the one operation he explained</h4>\n  <div class=\"def\"><b>number mod X</b> divides the number by X and returns the <b>remainder</b>. Some textbooks write it as <b>%</b>.</div>\n  <div class=\"scroller\"><table><thead><tr><th>Calculation</th><th>Working</th><th>Result</th></tr></thead><tbody>\n   <tr><td style=\"font-family:var(--mono)\">101 mod 10</td><td>10 × 10 = 100, remainder 1</td><td style=\"font-family:var(--mono)\">1</td></tr>\n   <tr><td style=\"font-family:var(--mono)\">27 mod 5</td><td>5 × 5 = 25, remainder 2</td><td style=\"font-family:var(--mono)\">2</td></tr>\n   <tr><td style=\"font-family:var(--mono)\">25 mod 5</td><td>divides exactly</td><td style=\"font-family:var(--mono)\">0 (some algorithms use X instead; zero is \"tricky business\")</td></tr>\n  </tbody></table></div>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>Choosing X:</strong> X = the number of unique hash values you want. mod 10 gives 10 values, <strong>0 to 9</strong>; mod 100 gives 100</li>\n   <li><strong>mod 10 picks the last digit</strong> of a number, and mod 100 the last two — this is how a system extracts digits from a number it stores as one value</li>\n  </ul>\n  <p style=\"font-size:14.5px\"><strong>His exercise (mod 10):</strong> 115 → 5 · 118 → 8 · 125 → 5 · 167 → 7 · 188 → 8. Two pairs land on the same value (115 and 125, 118 and 188) — a <strong>hash collision</strong>. With only 10 values, collisions are unavoidable once you store more than 10 numbers.</p><h4>Live Lecture 5 additions</h4><ul style=\"font-size:14.5px\"><li><strong>Fixed length, illustrated.</strong> Suppose every output must be exactly three digits. Returns of 3%, 50% and 100% are then written 003, 050 and 100: the values differ, the length never does. Real hash functions get their fixed length from heavy mathematics, not padding, and that mathematics is what makes them impossible to run backwards; the padding only shows what “fixed length” means</li><li><strong>mod, not mode.</strong> mod (modulo, the remainder) has nothing to do with the mode of mean, median and mode</li><li><strong>Buckets.</strong> mod X always gives one of X values, 0 to X − 1 (mod 5 gives 0 to 4). To spread data across 15 buckets, use mod 15</li></ul>"
     },
     {
      "t": "Hash tables, collisions and chaining",
-     "src": "L#19",
-     "h": "\n  <div class=\"def\">A <b>hash table</b> stores <b>key–value pairs</b> — technically <b>index–key–value</b>. The <b>key</b> uniquely identifies a record (a roll number), the <b>value</b> is the data linked to it (name, programme, date of birth…), and the <b>index</b> is the key's <b>hash value</b>, pointing to where the search should start.</div>\n  <p style=\"font-size:14.5px\"><strong>His roll-number example.</strong> IIT Jodhpur roll numbers start with B, M or P (bachelor's, master's, PhD), then two digits for the year (B26…), then a department code (SME, ME, ELE…), then a serial number; PhD numbers add a digit for the July or January intake. Lengths vary, and students who joined in different years sit in different memory locations, so searching record by record is slow. With mod 10 on the serial, every roll number ending in 2 starts its search at index 2.</p>\n  <h4>Collisions and chaining</h4>\n  <div class=\"def\">A <b>hash collision</b> happens when the hash function gives the <b>same hash for two different inputs</b> — B26SME001 and B26SME011 both map to 1 under mod 10. <b>Hash chaining</b> resolves it with a <b>linked list</b>: the new record is linked after the last record already chained at that index.</div>\n  <p style=\"font-size:14.5px\">Other collision-resolution methods exist, but he said knowing chaining is <strong>sufficient for this first-year course</strong>.</p>\n  <h4>What makes a good hash function for indexing</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Property</th><th>Why</th></tr></thead><tbody>\n   <tr><td><strong>Fast to calculate</strong></td><td>If computing the index is slow, the search is slow</td></tr>\n   <tr><td><strong>Consistent</strong></td><td>The same key always gives the same index — which is why mathematical functions are used</td></tr>\n   <tr><td><strong>Even distribution</strong></td><td>Keys should spread across all positions. Hashing words by their <strong>first letter</strong> is skewed: far more words start with A, P or R than with Q or X</td></tr>\n   <tr><td><strong>Fewer collisions</strong></td><td>Some are inevitable. But a unique index for every key defeats the purpose — you would search the index just as you search the keys</td></tr>\n   <tr><td><strong>Effective use of the key</strong></td><td>Use the information in the key so that the search is efficient</td></tr>\n  </tbody></table></div><!--viz:atb-rollno-chaining--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Index column 0 to 4 with linked chains of roll numbers: three at index 1, two at index 2, one at index 4, none at 0 and 3.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Roll numbers hashed with mod 10, collisions chained</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 236\" role=\"img\" aria-label=\"Hash table indexes 0 to 4. Index 1 chains B26SME001, B26SME011 and B26SME021; index 2 chains M24ME012 and B25SME022; index 4 holds P25ELE004; indexes 0 and 3 are empty.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><rect x=\"10\" y=\"14\" width=\"36\" height=\"28\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"28\" y=\"33\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">0</text><text x=\"64\" y=\"33\" text-anchor=\"start\" style=\"fill:var(--ink-3);font-size:13px\">empty</text><rect x=\"10\" y=\"54\" width=\"36\" height=\"28\" rx=\"4\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"28\" y=\"73\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">1</text><path d=\"M46,68 L60,68\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M66,68 L60,71 L60,65 Z\" style=\"fill:var(--ink-3);stroke:none\"/><rect x=\"66\" y=\"54\" width=\"84\" height=\"28\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"108\" y=\"73\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">B26SME001</text><path d=\"M150,68 L164,68\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M170,68 L164,71 L164,65 Z\" style=\"fill:var(--ink-3);stroke:none\"/><rect x=\"170\" y=\"54\" width=\"84\" height=\"28\" rx=\"4\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"212\" y=\"73\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">B26SME011</text><path d=\"M254,68 L268,68\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M274,68 L268,71 L268,65 Z\" style=\"fill:var(--ink-3);stroke:none\"/><rect x=\"274\" y=\"54\" width=\"84\" height=\"28\" rx=\"4\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"316\" y=\"73\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">B26SME021</text><rect x=\"10\" y=\"94\" width=\"36\" height=\"28\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"28\" y=\"113\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">2</text><path d=\"M46,108 L60,108\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M66,108 L60,111 L60,105 Z\" style=\"fill:var(--ink-3);stroke:none\"/><rect x=\"66\" y=\"94\" width=\"84\" height=\"28\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"108\" y=\"113\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">M24ME012</text><path d=\"M150,108 L164,108\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M170,108 L164,111 L164,105 Z\" style=\"fill:var(--ink-3);stroke:none\"/><rect x=\"170\" y=\"94\" width=\"84\" height=\"28\" rx=\"4\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"212\" y=\"113\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">B25SME022</text><rect x=\"10\" y=\"134\" width=\"36\" height=\"28\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"28\" y=\"153\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">3</text><text x=\"64\" y=\"153\" text-anchor=\"start\" style=\"fill:var(--ink-3);font-size:13px\">empty</text><rect x=\"10\" y=\"174\" width=\"36\" height=\"28\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"28\" y=\"193\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">4</text><path d=\"M46,188 L60,188\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M66,188 L60,191 L60,185 Z\" style=\"fill:var(--ink-3);stroke:none\"/><rect x=\"66\" y=\"174\" width=\"84\" height=\"28\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"108\" y=\"193\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">P25ELE004</text><text x=\"10\" y=\"224\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px\">index = serial number mod 10 (its last digit)</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Collisions (shaded) are linked after the last record at their index; a search starts at the index and walks its chain.</figcaption></figure><!--/viz:atb-rollno-chaining-->"
+     "src": "L#19 · L#23",
+     "h": "\n  <div class=\"def\">A <b>hash table</b> stores <b>key–value pairs</b> — technically <b>index–key–value</b>. The <b>key</b> uniquely identifies a record (a roll number), the <b>value</b> is the data linked to it (name, programme, date of birth…), and the <b>index</b> is the key's <b>hash value</b>, pointing to where the search should start.</div>\n  <p style=\"font-size:14.5px\"><strong>His roll-number example.</strong> IIT Jodhpur roll numbers start with B, M or P (bachelor's, master's, PhD), then two digits for the year (B26…), then a department code (SME, ME, ELE…), then a serial number; PhD numbers add a digit for the July or January intake. Lengths vary, and students who joined in different years sit in different memory locations, so searching record by record is slow. With mod 10 on the serial, every roll number ending in 2 starts its search at index 2.</p>\n  <h4>Collisions and chaining</h4>\n  <div class=\"def\">A <b>hash collision</b> happens when the hash function gives the <b>same hash for two different inputs</b> — B26SME001 and B26SME011 both map to 1 under mod 10. <b>Hash chaining</b> resolves it with a <b>linked list</b>: the new record is linked after the last record already chained at that index.</div>\n  <p style=\"font-size:14.5px\">Other collision-resolution methods exist, but he said knowing chaining is <strong>sufficient for this first-year course</strong>.</p>\n  <h4>What makes a good hash function for indexing</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Property</th><th>Why</th></tr></thead><tbody>\n   <tr><td><strong>Fast to calculate</strong></td><td>If computing the index is slow, the search is slow</td></tr>\n   <tr><td><strong>Consistent</strong></td><td>The same key always gives the same index — which is why mathematical functions are used</td></tr>\n   <tr><td><strong>Even distribution</strong></td><td>Keys should spread across all positions. Hashing words by their <strong>first letter</strong> is skewed: far more words start with A, P or R than with Q or X</td></tr>\n   <tr><td><strong>Fewer collisions</strong></td><td>Some are inevitable. But a unique index for every key defeats the purpose — you would search the index just as you search the keys</td></tr>\n   <tr><td><strong>Effective use of the key</strong></td><td>Use the information in the key so that the search is efficient</td></tr>\n  </tbody></table></div><!--viz:atb-rollno-chaining--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Index column 0 to 4 with linked chains of roll numbers: three at index 1, two at index 2, one at index 4, none at 0 and 3.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Roll numbers hashed with mod 10, collisions chained</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 236\" role=\"img\" aria-label=\"Hash table indexes 0 to 4. Index 1 chains B26SME001, B26SME011 and B26SME021; index 2 chains M24ME012 and B25SME022; index 4 holds P25ELE004; indexes 0 and 3 are empty.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><rect x=\"10\" y=\"14\" width=\"36\" height=\"28\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"28\" y=\"33\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">0</text><text x=\"64\" y=\"33\" text-anchor=\"start\" style=\"fill:var(--ink-3);font-size:13px\">empty</text><rect x=\"10\" y=\"54\" width=\"36\" height=\"28\" rx=\"4\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"28\" y=\"73\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">1</text><path d=\"M46,68 L60,68\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M66,68 L60,71 L60,65 Z\" style=\"fill:var(--ink-3);stroke:none\"/><rect x=\"66\" y=\"54\" width=\"84\" height=\"28\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"108\" y=\"73\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">B26SME001</text><path d=\"M150,68 L164,68\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M170,68 L164,71 L164,65 Z\" style=\"fill:var(--ink-3);stroke:none\"/><rect x=\"170\" y=\"54\" width=\"84\" height=\"28\" rx=\"4\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"212\" y=\"73\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">B26SME011</text><path d=\"M254,68 L268,68\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M274,68 L268,71 L268,65 Z\" style=\"fill:var(--ink-3);stroke:none\"/><rect x=\"274\" y=\"54\" width=\"84\" height=\"28\" rx=\"4\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"316\" y=\"73\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">B26SME021</text><rect x=\"10\" y=\"94\" width=\"36\" height=\"28\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"28\" y=\"113\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">2</text><path d=\"M46,108 L60,108\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M66,108 L60,111 L60,105 Z\" style=\"fill:var(--ink-3);stroke:none\"/><rect x=\"66\" y=\"94\" width=\"84\" height=\"28\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"108\" y=\"113\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">M24ME012</text><path d=\"M150,108 L164,108\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M170,108 L164,111 L164,105 Z\" style=\"fill:var(--ink-3);stroke:none\"/><rect x=\"170\" y=\"94\" width=\"84\" height=\"28\" rx=\"4\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"212\" y=\"113\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">B25SME022</text><rect x=\"10\" y=\"134\" width=\"36\" height=\"28\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"28\" y=\"153\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">3</text><text x=\"64\" y=\"153\" text-anchor=\"start\" style=\"fill:var(--ink-3);font-size:13px\">empty</text><rect x=\"10\" y=\"174\" width=\"36\" height=\"28\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"28\" y=\"193\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">4</text><path d=\"M46,188 L60,188\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M66,188 L60,191 L60,185 Z\" style=\"fill:var(--ink-3);stroke:none\"/><rect x=\"66\" y=\"174\" width=\"84\" height=\"28\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"108\" y=\"193\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">P25ELE004</text><text x=\"10\" y=\"224\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px\">index = serial number mod 10 (its last digit)</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Collisions (shaded) are linked after the last record at their index; a search starts at the index and walks its chain.</figcaption></figure><!--/viz:atb-rollno-chaining--><h4>Live Lecture 5 additions</h4><ul style=\"font-size:14.5px\"><li><strong>Is an Excel sheet a hash table?</strong> No (a question from the chat). A spreadsheet stores rows one after another. An ordinary database table is not a hash table by default either: it gains a hashed index when you create one (in SQL, a create-index command), and the database then calculates and maintains that index for you</li><li><strong>Other bucket rules.</strong> Instead of the last digit, roll numbers could be bucketed by branch code, putting every SME student in one bucket. The last-digit rule is only a teaching example: it ignores most of the key, whereas a real system’s hash uses the whole key</li><li><strong>Collisions come easily with a simple function.</strong> Under mod 10, the numbers 9, 39, 109 and 3009 all give 9. For indexing that is acceptable, because an index only needs buckets; for security, two inputs sharing a hash is exactly what must not happen</li><li><strong>The slide’s chain.</strong> At index 2: M24SME012 → P25SME002 → B26SME112, each newcomer linked after the last; index 4 holds M25SME044 alone. Chaining makes that one bucket slower to search, but the search still skips every other bucket</li></ul>"
     },
     {
      "t": "Hashing for security: passwords and integrity",
-     "src": "L#19",
-     "h": "\n  <h4>The extra properties security needs</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Property</th><th>Meaning</th></tr></thead><tbody>\n   <tr><td><strong>Deterministic</strong></td><td>The same input always produces the same hash</td></tr>\n   <tr><td><strong>Fixed-length output</strong></td><td>As for every hash function</td></tr>\n   <tr><td><strong>One-way</strong></td><td>From the hash you cannot recalculate the original input</td></tr>\n   <tr><td><strong>Avalanche effect</strong></td><td>Changing even one digit of the input gives a <strong>completely different</strong> hash, so similar hashes cannot be used to guess the input</td></tr>\n   <tr><td><strong>Collision resistance</strong></td><td>Ideally every unique input gets its own hash — no collisions</td></tr>\n   <tr><td><strong>Computing speed — depends on the use</strong></td><td><strong>Fast</strong> for integrity checks; <strong>deliberately slow</strong> for passwords, so cracking them is slow and difficult; <strong>very fast</strong> for indexing</td></tr>\n  </tbody></table></div>\n  <div class=\"card\" style=\"font-size:13.5px\"><b>Avalanche effect, for real.</b> Using SHA-256, a widely used hash function (not one named in the lecture), changing one digit gives an unrelated output of the same 64-character length:<br><span style=\"font-family:var(--mono)\">\"Pay Rs 5000 to Asha\" → 907344c2693fbb88…<br>\"Pay Rs 6000 to Asha\" → 5854ea3dd2324057…</span></div>\n  <h4>Password storage</h4>\n  <ul style=\"font-size:14.5px\">\n   <li>Your IITJ ERP account, your bank, your UPI app: the user ID may be stored as it is, but the <strong>password never is</strong>. The system stores the <strong>hash</strong> of the password</li>\n   <li>At login, the typed password is hashed and the result is compared with the stored hash. An extra space, or a capital letter where there should be a small one, gives a different hash and an \"incorrect password\"</li>\n   <li>That is why \"forgot password\" lets you <strong>reset</strong> but nobody can <strong>tell</strong> you your password: the system does not have it, and the hash is one-way</li>\n  </ul>\n  <h4>Integrity checks</h4>\n  <p style=\"font-size:14.5px\">To check that a file sent (say over WhatsApp) has not been tampered with or corrupted: the sender's system calculates a hash of the data, packs <strong>data + hash</strong> together and sends the package. The receiver separates the two, <strong>recalculates</strong> the hash from the data it received, and compares it with the hash that came with it. Same → integrity intact. Different → the file is deemed corrupted and is ignored or not opened.</p>\n  <div class=\"def\"><b>His summary (L#19):</b> indexing uses <b>simpler</b> hash functions and can live with collisions, resolved by chaining; cybersecurity uses <b>complex</b> hash functions that deliberately avoid collisions — quick for integrity checks, slow for passwords.</div><!--viz:atb-hash-by-use--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table comparing hash requirements for indexing, password storage and integrity checks: speed, collisions, kind of function and example.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One idea, three sets of requirements</div><div class=\"scroller\"><table><thead><tr><th></th><th>Indexing</th><th>Password storage</th><th>Integrity check</th></tr></thead><tbody><tr><td><b>Speed</b></td><td>Very fast</td><td style=\"background:var(--clay-soft)\"><b>Deliberately slow</b></td><td>Fast</td></tr><tr><td><b>Collisions</b></td><td>Tolerated, resolved by chaining</td><td>Must be avoided</td><td>Must be avoided</td></tr><tr><td><b>Kind of function</b></td><td>Simple (e.g. mod 10)</td><td>Complex</td><td>Complex</td></tr><tr><td><b>His example</b></td><td>Roll-number search</td><td>ERP, bank, UPI logins</td><td>A file sent over WhatsApp</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Speed is a virtue everywhere except passwords, where a slow hash slows down anyone trying to crack them.</figcaption></figure><!--/viz:atb-hash-by-use--><!--viz:atb-integrity-check--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: the sender hashes the file and sends file plus hash; the receiver unpacks, recalculates the hash from the file and compares it with the received hash. Same means intact, different means corrupted.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">How an integrity check works</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Original file</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">hash calculated</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">package: <b>file + hash</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">received and unpacked</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>recalculate</b> hash from file</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">compare with received hash</div></div><div style=\"display:flex;flex-wrap:wrap;gap:6px 8px;font-size:14px;margin-top:8px\"><div style=\"padding:7px 11px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\"><b>same</b> → integrity intact</div><div style=\"padding:7px 11px;border:1px solid var(--bad);border-radius:4px;background:var(--bad-soft)\"><b>different</b> → deemed corrupted, not opened</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The receiver never trusts the file alone: it recomputes the hash and checks it against the one that travelled with it.</figcaption></figure><!--/viz:atb-integrity-check-->"
+     "src": "L#19 · L#23",
+     "h": "\n  <h4>The extra properties security needs</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Property</th><th>Meaning</th></tr></thead><tbody>\n   <tr><td><strong>Deterministic</strong></td><td>The same input always produces the same hash</td></tr>\n   <tr><td><strong>Fixed-length output</strong></td><td>As for every hash function</td></tr>\n   <tr><td><strong>One-way</strong></td><td>From the hash you cannot recalculate the original input</td></tr>\n   <tr><td><strong>Avalanche effect</strong></td><td>Changing even one digit of the input gives a <strong>completely different</strong> hash, so similar hashes cannot be used to guess the input</td></tr>\n   <tr><td><strong>Collision resistance</strong></td><td>Ideally every unique input gets its own hash — no collisions</td></tr>\n   <tr><td><strong>Computing speed — depends on the use</strong></td><td><strong>Fast</strong> for integrity checks; <strong>deliberately slow</strong> for passwords, so cracking them is slow and difficult; <strong>very fast</strong> for indexing</td></tr>\n  </tbody></table></div>\n  <div class=\"card\" style=\"font-size:13.5px\"><b>Avalanche effect, for real.</b> Using SHA-256, a widely used hash function (not one named in the lecture), changing one digit gives an unrelated output of the same 64-character length:<br><span style=\"font-family:var(--mono)\">\"Pay Rs 5000 to Asha\" → 907344c2693fbb88…<br>\"Pay Rs 6000 to Asha\" → 5854ea3dd2324057…</span></div>\n  <h4>Password storage</h4>\n  <ul style=\"font-size:14.5px\">\n   <li>Your IITJ ERP account, your bank, your UPI app: the user ID may be stored as it is, but the <strong>password never is</strong>. The system stores the <strong>hash</strong> of the password</li>\n   <li>At login, the typed password is hashed and the result is compared with the stored hash. An extra space, or a capital letter where there should be a small one, gives a different hash and an \"incorrect password\"</li>\n   <li>That is why \"forgot password\" lets you <strong>reset</strong> but nobody can <strong>tell</strong> you your password: the system does not have it, and the hash is one-way</li>\n  </ul>\n  <h4>Integrity checks</h4>\n  <p style=\"font-size:14.5px\">To check that a file sent (say over WhatsApp) has not been tampered with or corrupted: the sender's system calculates a hash of the data, packs <strong>data + hash</strong> together and sends the package. The receiver separates the two, <strong>recalculates</strong> the hash from the data it received, and compares it with the hash that came with it. Same → integrity intact. Different → the file is deemed corrupted and is ignored or not opened.</p>\n  <div class=\"def\"><b>His summary (L#19):</b> indexing uses <b>simpler</b> hash functions and can live with collisions, resolved by chaining; cybersecurity uses <b>complex</b> hash functions that deliberately avoid collisions — quick for integrity checks, slow for passwords.</div><!--viz:atb-hash-by-use--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table comparing hash requirements for indexing, password storage and integrity checks: speed, collisions, kind of function and example.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One idea, three sets of requirements</div><div class=\"scroller\"><table><thead><tr><th></th><th>Indexing</th><th>Password storage</th><th>Integrity check</th></tr></thead><tbody><tr><td><b>Speed</b></td><td>Very fast</td><td style=\"background:var(--clay-soft)\"><b>Deliberately slow</b></td><td>Fast</td></tr><tr><td><b>Collisions</b></td><td>Tolerated, resolved by chaining</td><td>Must be avoided</td><td>Must be avoided</td></tr><tr><td><b>Kind of function</b></td><td>Simple (e.g. mod 10)</td><td>Complex</td><td>Complex</td></tr><tr><td><b>His example</b></td><td>Roll-number search</td><td>ERP, bank, UPI logins</td><td>A file sent over WhatsApp</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Speed is a virtue everywhere except passwords, where a slow hash slows down anyone trying to crack them.</figcaption></figure><!--/viz:atb-hash-by-use--><!--viz:atb-integrity-check--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: the sender hashes the file and sends file plus hash; the receiver unpacks, recalculates the hash from the file and compares it with the received hash. Same means intact, different means corrupted.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">How an integrity check works</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Original file</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">hash calculated</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">package: <b>file + hash</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">received and unpacked</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>recalculate</b> hash from file</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">compare with received hash</div></div><div style=\"display:flex;flex-wrap:wrap;gap:6px 8px;font-size:14px;margin-top:8px\"><div style=\"padding:7px 11px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\"><b>same</b> → integrity intact</div><div style=\"padding:7px 11px;border:1px solid var(--bad);border-radius:4px;background:var(--bad-soft)\"><b>different</b> → deemed corrupted, not opened</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The receiver never trusts the file alone: it recomputes the hash and checks it against the one that travelled with it.</figcaption></figure><!--/viz:atb-integrity-check--><h4>Live Lecture 5 additions</h4><p style=\"font-size:14.5px\"><strong>Hashing is not encryption.</strong> An integrity check tells you whether a message was <strong>changed</strong>; it does not stop anyone <strong>reading</strong> it on the way. Keeping the content unintelligible to an interceptor is the job of <strong>encryption</strong>. The two are often used together, and hashing can be one element inside an encryption scheme, but they answer different questions: hashing, “was it tampered with?”; encryption, “can an outsider make sense of it?”</p><p style=\"font-size:14.5px\"><strong>His delivery analogy.</strong> E-commerce firms tell you not to accept a phone whose package seal is broken. An integrity check does the same for data: if the recalculated hash doesn’t match, the whole packet is discarded.</p>"
     },
     {
      "t": "Textbook: Hash Data Structures",
@@ -489,8 +517,8 @@ HUB.addCourse({
   {
    "id": "searching",
    "title": "Searching algorithms",
-   "tag": "Lecture 22 · Module 4 · + textbook",
-   "lede": "Five ways to find something: linear, binary, jump, exponential and hash-based search, what each needs from the data, what each costs, and which business case suits which.",
+   "tag": "Lectures 22, 24 · Module 4 · + textbook",
+   "lede": "Finding things: linear, binary, jump, exponential and hash search in lists (L#22), then search across networks, where the question becomes the cheapest path: Dijkstra’s algorithm and its relatives (L#24).",
    "topics": [
     {
      "t": "Linear search, binary search and BSTs",
@@ -513,32 +541,80 @@ HUB.addCourse({
      "h": "\n  <p style=\"font-size:14.5px\">Any of these algorithms can work in many situations: linear search works anywhere, and anything that works on sorted data can be used once the data is sorted. The choice is about efficiency. <strong>Binary, jump and exponential search need sorted data; linear and hash search do not.</strong></p>\n  <h4>His five use cases</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Find…</th><th>His answer</th><th>His reasoning</th></tr></thead><tbody>\n   <tr><td>A guest in today's hotel check-in register</td><td><strong>Linear</strong></td><td>No inherent order: read the register top to bottom, page by page</td></tr>\n   <tr><td>A product in a catalogue sorted by <strong>category</strong></td><td><strong>Jump</strong></td><td>The order is by category, not by number, so he preferred fixed jumps to less-than/greater-than halving</td></tr>\n   <tr><td>A student's record by roll number in the institute ERP</td><td><strong>Hash</strong></td><td>Databases create indexes for quick access, and searching through them is hash search</td></tr>\n   <tr><td>A product in a catalogue sorted by <strong>price</strong></td><td><strong>Binary</strong></td><td>Numeric order lets you compare and discard half</td></tr>\n   <tr><td>A transaction in a fast-growing financial monitoring system</td><td><strong>Exponential</strong></td><td>The size is unknown, very large and growing all the time</td></tr>\n  </tbody></table></div>\n  <div class=\"def\"><b>From the lecture (L#22):</b> the in-class exercise was these five use cases. He said they need assumptions, so he did not expect everyone to get every answer, and he gave the answers under the most common assumptions. For hash search, he said it is enough to understand that its cost varies with the keys and how they spread across the indexes; he did not go into balanced-tree chains.</div>\n  <h4>Real search is bigger than this</h4>\n  <p style=\"font-size:14.5px\">These are the basics. Search is a large business in its own right: Google began with a more efficient search based on its <strong>PageRank</strong> algorithm, and e-commerce suggestions as you type draw on machine-learning and deep-learning models, such as recommender systems.</p><!--viz:atb-five-searches-compare--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table comparing linear, binary, jump, exponential and hash search: how each moves through the data, its Big O, and whether it needs sorted data.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The five search strategies side by side</div><div class=\"scroller\"><table><thead><tr><th>Search</th><th>Big O</th><th>Sorted?</th></tr></thead><tbody><tr><td><b>Linear</b><br><span style=\"font-size:13px;color:var(--ink-2)\">one by one</span></td><td style=\"font-family:var(--mono);white-space:nowrap\">O(n)</td><td>No</td></tr><tr><td><b>Binary</b><br><span style=\"font-size:13px;color:var(--ink-2)\">halve, then halve again</span></td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--blue-soft)\">O(log n)</td><td>Yes</td></tr><tr><td><b>Jump</b><br><span style=\"font-size:13px;color:var(--ink-2)\">√n jumps, then linear</span></td><td style=\"font-family:var(--mono);white-space:nowrap\">O(√n)</td><td>Yes</td></tr><tr><td><b>Exponential</b><br><span style=\"font-size:13px;color:var(--ink-2)\">1, 2, 4, 8…, then binary</span></td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--blue-soft)\">O(log n)</td><td>Yes</td></tr><tr><td><b>Hash</b><br><span style=\"font-size:13px;color:var(--ink-2)\">compute index, walk chain</span></td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--good-soft)\">O(1) avg<br>O(n) worst</td><td>No</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Three of the five need sorted data; hash search is fastest on average but depends on how evenly the keys spread.</figcaption></figure><!--/viz:atb-five-searches-compare-->"
     },
     {
+     "t": "Network search: traversals as search",
+     "src": "L#24",
+     "h": "<p style=\"font-size:14.5px\">The last topic of Module 4 takes search beyond lists into <strong>networks</strong>: nodes joined by edges, usually drawn as a graph and sometimes as a tree. Searching a network often means finding a <strong>path</strong> between two nodes, not just finding one element.</p><h4>Traversals are already searches</h4><p style=\"font-size:14.5px\">Visiting a node means reading its data, so every Module 3 traversal is also a search: pre-order (root, left, right), in-order (left, root, right) and post-order (left, right, root) on trees; level-order, which is breadth-first, on trees; and DFS and BFS on graphs.</p><h4>DFS and BFS from a different start</h4><p style=\"font-size:14.5px\">To show that any vertex can be the start, he reran both on the Lecture 17 graph (edges A–P, A–Q, P–X, X–S, S–C, Q–Y, Y–R, R–B) from <strong>Y</strong> instead of A, taking R before Q:</p><div class=\"scroller\"><table><thead><tr><th>Traversal</th><th>Visit order from Y</th><th>What happens</th></tr></thead><tbody><tr><td><strong>DFS</strong> (stack)</td><td><span style=\"font-family:var(--mono)\">Y R B · Q A P X S C</span></td><td>Down one branch to its end (B), back to Y, then down the other branch to its end</td></tr><tr><td><strong>BFS</strong> (queue)</td><td><span style=\"font-family:var(--mono)\">Y · R Q · B A · P · X · S · C</span></td><td>By hops: R and Q at 1, B and A at 2, then one node per level out to C at 6 hops</td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-3)\">Taking Q before R is just as valid (DFS: Y Q A P X S C · R B); the L#17 notes explain the choice.</p><h4>What each one is for in a network</h4><ul style=\"font-size:14.5px\"><li><strong>DFS: mapping the topology.</strong> When new computers join a campus network, a traversal that runs to the last leaf of every branch, and runs again when nodes are added (at the edge or in the middle), keeps the map current. He said either traversal could be used, but DFS is the more useful here</li><li><strong>BFS: levels.</strong> Levels count hops, not where nodes sit on the page. A network built in tiers, such as clients → intermediate servers → main server, is understood level by level</li></ul><p style=\"font-size:14.5px\"><strong>Exploring vs going somewhere.</strong> In a new city you first roam around to get your bearings: that is DFS or BFS. Once you know the city, trips are targeted (groceries for home, the cinema): you know the source and the destination and want the best route between them. That is the <strong>shortest-path</strong> problem, and most business uses of network search look like it.</p>"
+    },
+    {
+     "t": "Shortest paths and Dijkstra’s algorithm",
+     "src": "L#24",
+     "h": "<h4>“Shortest” means lowest cost</h4><p style=\"font-size:14.5px\">Two nodes can be joined by many paths, and “shortest” means the lowest total <strong>cost</strong>, whatever the edge weights stand for:</p><ul style=\"font-size:14.5px\"><li><strong>Distance</strong> in kilometres</li><li><strong>Time</strong>: a map may suggest a longer route on a main road or a ring road because it is quicker than a short one through congested streets. On a two-wheeler the side streets may suit you; in a car, the main road</li><li><strong>Money</strong>: choosing “avoid tolls” makes toll charges the cost</li><li><strong>A combination</strong>, with constraints: an office cab must pick up everyone on its list and still cover the least distance</li></ul><h4>Dijkstra’s algorithm</h4><p style=\"font-size:14.5px\">Named after the Dutch computer scientist Edsger Dijkstra (he gave “dike-stra” as the nearest English pronunciation). It works on a <strong>weighted graph</strong> under two assumptions: every edge has a cost, and <strong>no cost is negative</strong>.</p><ol style=\"font-size:14.5px\"><li>Give the start node distance <strong>0</strong> and every other node <strong>∞</strong></li><li>Pick the <strong>unvisited node with the smallest known distance</strong></li><li>For each of its neighbours, check whether going through this node is cheaper than the distance known so far; if it is, <strong>update</strong> it</li><li><strong>Mark</strong> the node visited: its distance is now final</li><li>Repeat until every node is visited, or until the one destination you need is final</li></ol><p style=\"font-size:14.5px\"><strong>His first example</strong> (start A; A–B 4, A–C 2, C–B 1, C–D 5, B–D 3). From A: C = 2, B = 4. C is smaller, so visit it: B through C costs 2 + 1 = 3, better than 4, so update; D through C costs 2 + 5 = 7. Visit B (3): D through B costs 3 + 3 = 6, better than 7. Final: <strong>C 2 (A→C), B 3 (A→C→B), D 6 (A→C→B→D)</strong>. The direct edge A→B is not the cheapest route: think of a direct road that must loop round a hill, while the road through the next town is shorter.</p><p style=\"font-size:14.5px\"><strong>His 12-minute exercise</strong> (five nodes, start A) is in the two figures. Answer: C 2, D 3, B 5 and E 5, with E reached by <strong>A→C→D→E</strong>, skipping B.</p><p style=\"font-size:13.5px;color:var(--ink-3)\">Edge costs as read from his narration: A–B 6, A–C 2, C–B 3, C–D 1, B–D 2, B–E 5, D–E 2. In his walk-through he finalised B (5) before D (3). The final distances are the same, but the rule takes the smallest unvisited distance next, so D (3) comes before B (5), as in the trace.</p><h4>What one run gives you</h4><ul style=\"font-size:14.5px\"><li><strong>One source, every destination.</strong> The cheapest path from the chosen start to each other node, not between every pair. Change the start and every number changes: run it again</li><li><strong>Only one destination?</strong> Stop as soon as that node is visited; its distance is final and the rest need not be computed</li><li><strong>Every pair?</strong> In theory you could run Dijkstra from every node, but there are algorithms built for that (next topic)</li></ul><h4>Spoke-and-hub: where Dijkstra fits</h4><p style=\"font-size:14.5px\">A courier company does not link every city to every other city. It picks <strong>hubs</strong> and attaches nearby towns to them as <strong>spokes</strong>. A parcel booked in Jodhpur for Sonipat goes Jodhpur → Jaipur (the Rajasthan hub) → Delhi (hub) → Sonipat. Each hub runs Dijkstra once from itself to learn its cheapest routes to the other hubs, then sends each parcel to the hub serving its destination.</p><div class=\"def\"><b>From the lecture (L#24):</b> for this course, <b>focus on Dijkstra’s algorithm</b>; the in-lecture exercise was the five-node trace. For the other network algorithms, he said it is enough to know that they exist and which situation each one suits.</div><!--viz:atb-dijkstra-exercise-graph--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Five nodes. Edge costs: A–B 6, A–C 2, C–B 3, C–D 1, B–D 2, B–E 5, D–E 2. Highlighted cheapest routes from A: A–C, C–B, C–D and D–E. Final costs from A: C 2, D 3, B 5, E 5.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">His five-node exercise: cheapest costs from A</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 262\" role=\"img\" aria-label=\"Weighted graph of five nodes A to E with edge costs; the cheapest routes from A, along edges A–C, C–B, C–D and D–E, are highlighted, with final costs C 2, D 3, B 5, E 5.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M50,135 L200,62\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M50,135 L200,210\" style=\"stroke:var(--blue);stroke-width:2.5;fill:none\"/><path d=\"M200,210 L200,62\" style=\"stroke:var(--blue);stroke-width:2.5;fill:none\"/><path d=\"M200,210 L330,210\" style=\"stroke:var(--blue);stroke-width:2.5;fill:none\"/><path d=\"M200,62 L330,210\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M200,62 L395,100\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M330,210 L395,100\" style=\"stroke:var(--blue);stroke-width:2.5;fill:none\"/><text x=\"117\" y=\"89\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">6</text><text x=\"114\" y=\"193\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">2</text><text x=\"188\" y=\"141\" text-anchor=\"end\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">3</text><text x=\"279\" y=\"129\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">2</text><text x=\"265\" y=\"231\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">1</text><text x=\"300\" y=\"70\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">5</text><text x=\"378\" y=\"165\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">2</text><circle cx=\"50\" cy=\"135\" r=\"18\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"50\" y=\"140\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">A</text><circle cx=\"200\" cy=\"62\" r=\"18\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"200\" y=\"67\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">B</text><circle cx=\"200\" cy=\"210\" r=\"18\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"200\" y=\"215\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">C</text><circle cx=\"330\" cy=\"210\" r=\"18\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"330\" y=\"215\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">D</text><circle cx=\"395\" cy=\"100\" r=\"18\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"395\" y=\"105\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">E</text><text x=\"50\" y=\"175\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:14px;font-weight:700;font-family:var(--mono)\">= 0</text><text x=\"200\" y=\"34\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:14px;font-weight:700;font-family:var(--mono)\">= 5</text><text x=\"200\" y=\"249\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:14px;font-weight:700;font-family:var(--mono)\">= 2</text><text x=\"330\" y=\"249\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:14px;font-weight:700;font-family:var(--mono)\">= 3</text><text x=\"395\" y=\"70\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:14px;font-weight:700;font-family:var(--mono)\">= 5</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The direct edges A–B (6) and B–E (5) are never used: going through C and D is cheaper.</figcaption></figure><!--/viz:atb-dijkstra-exercise-graph--><!--viz:atb-dijkstra-exercise-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace table. Visit A: B 6, C 2. Visit C: B improves to 5, D becomes 3. Visit D: E becomes 5, B stays 5. Visit B: E via B would be 10, so it stays 5. Visit E: done.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Dijkstra from A, one visit at a time</div><p style=\"font-size:13.5px;color:var(--ink-2);margin-bottom:8px;font-family:var(--mono)\">start A · costs A–B 6, A–C 2, C–B 3, C–D 1, B–D 2, B–E 5, D–E 2</p><div class=\"scroller\"><table><thead><tr><th>#</th><th>Visit (final)</th><th>Check its neighbours</th><th>Still open</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">0</td><td style=\"font-family:var(--mono)\">—</td><td>A = 0, everything else ∞</td><td style=\"font-family:var(--mono)\">B ∞ · C ∞ · D ∞ · E ∞</td></tr><tr><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">A = 0</td><td>B: 0 + 6 = 6 · C: 0 + 2 = 2</td><td style=\"font-family:var(--mono)\">B 6 · C 2 · D ∞ · E ∞</td></tr><tr><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">C = 2</td><td>B: 2 + 3 = 5 &lt; 6, update · D: 2 + 1 = 3</td><td style=\"font-family:var(--mono)\">B 5 · D 3 · E ∞</td></tr><tr><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">D = 3</td><td>E: 3 + 2 = 5 · B: 3 + 2 = 5, no better</td><td style=\"font-family:var(--mono)\">B 5 · E 5</td></tr><tr><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">B = 5</td><td>E: 5 + 5 = 10 &gt; 5, keep 5</td><td style=\"font-family:var(--mono)\">E 5</td></tr><tr><td style=\"font-family:var(--mono)\">5</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">E = 5</td><td>all nodes visited</td><td style=\"font-family:var(--mono)\">—</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Always visit the smallest open distance next: D (3) is finalised before B (5).</figcaption></figure><!--/viz:atb-dijkstra-exercise-trace-->"
+    },
+    {
+     "t": "Other network search algorithms",
+     "src": "L#24",
+     "h": "<p style=\"font-size:14.5px\">Network search is big enough for a semester-long course of its own. Most real systems already run some variant or mix of these algorithms: when Zomato or Swiggy assigns a rider, the allocation itself rests on shortest-path calculations. For a techno-managerial role the skill is knowing which algorithm fits which question.</p><div class=\"scroller\"><table><thead><tr><th>Algorithm</th><th>What it does</th><th>His example</th></tr></thead><tbody><tr><td><strong>A*</strong> (A-star)</td><td>Adds a heuristic, a sense of direction, to the actual cost so far</td><td>GPS navigation: by road from Jodhpur to Coimbatore you head south at once, never north first</td></tr><tr><td><strong>Uniform cost search</strong></td><td>Explores the lowest-cost path first</td><td>A route that avoids tolls</td></tr><tr><td><strong>Bidirectional search</strong></td><td>Searches from the source and the destination at the same time</td><td>Useful because, as with Dijkstra, results depend on where you start</td></tr><tr><td><strong>Floyd–Warshall</strong></td><td>Shortest paths between <strong>every pair</strong> of nodes</td><td>Computer networks, electricity grids</td></tr><tr><td><strong>Bellman–Ford</strong></td><td>Shortest paths even when some edge costs are <strong>negative</strong></td><td>Network cost analysis, for computer or road networks</td></tr><tr><td><strong>Prim’s</strong> and <strong>Kruskal’s</strong></td><td>Connect <strong>all</strong> nodes at the minimum <strong>total</strong> cost</td><td>A telecom operator that must reach every customer in its licence area</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>A route vs a whole network.</strong> Shortest-path algorithms find the cheapest route between nodes; a traveller need not visit every city. Prim’s and Kruskal’s answer a different question, the cheapest way to connect <em>every</em> node, because a telecom network has no choice but to serve everyone.</p><p style=\"font-size:13.5px;color:var(--ink-3)\">He grouped the other algorithms with Dijkstra as needing zero or positive costs and named Bellman–Ford for negative ones. Floyd–Warshall can in fact handle negative costs too, as long as the graph has no negative cycle; for the course, Bellman–Ford is the lecture’s answer for negative costs.</p>"
+    },
+    {
      "t": "Textbook: Linear and Binary Search",
      "src": "Codeless DSA ch6",
      "h": "<!--viz:atb-binary-halving--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three rows of the sorted list 5 to 75. Look 1: whole list, middle index 5 holds 33, less than 67, keep the right half. Look 2: indices 6 to 10, middle 8 holds 52, keep the right. Look 3: indices 9 to 10, middle 9 holds 67, found.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Binary search throws away half each look</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 212\" role=\"img\" aria-label=\"Binary search for 67 in eleven sorted values. Look 1 checks index 5 (33), look 2 checks index 8 (52), look 3 checks index 9 and finds 67. Discarded cells are greyed out each time.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\">\n<g style=\"font-size:13px;font-family:var(--mono);fill:var(--ink-3)\"><text x=\"82.5\" y=\"18\" text-anchor=\"middle\">0</text><text x=\"115.5\" y=\"18\" text-anchor=\"middle\">1</text><text x=\"148.5\" y=\"18\" text-anchor=\"middle\">2</text><text x=\"181.5\" y=\"18\" text-anchor=\"middle\">3</text><text x=\"214.5\" y=\"18\" text-anchor=\"middle\">4</text><text x=\"247.5\" y=\"18\" text-anchor=\"middle\">5</text><text x=\"280.5\" y=\"18\" text-anchor=\"middle\">6</text><text x=\"313.5\" y=\"18\" text-anchor=\"middle\">7</text><text x=\"346.5\" y=\"18\" text-anchor=\"middle\">8</text><text x=\"379.5\" y=\"18\" text-anchor=\"middle\">9</text><text x=\"412.5\" y=\"18\" text-anchor=\"middle\">10</text></g>\n<text x=\"14\" y=\"48\" style=\"fill:var(--ink-2);font-size:13px;font-weight:700\">look 1</text>\n<rect x=\"66\" y=\"28\" width=\"363\" height=\"30\" style=\"fill:var(--surface-2);stroke:none\"/>\n<rect x=\"66\" y=\"28\" width=\"363\" height=\"30\" style=\"fill:var(--surface);stroke:none\"/>\n<path d=\"M99,28 L99,58 M132,28 L132,58 M165,28 L165,58 M198,28 L198,58 M231,28 L231,58 M264,28 L264,58 M297,28 L297,58 M330,28 L330,58 M363,28 L363,58 M396,28 L396,58\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/>\n<rect x=\"66\" y=\"28\" width=\"363\" height=\"30\" rx=\"0\" style=\"fill:none;stroke:var(--rule-2);stroke-width:1.5\"/>\n<rect x=\"231\" y=\"28\" width=\"33\" height=\"30\" rx=\"0\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:2\"/>\n<g style=\"font-size:13px;font-family:var(--mono);fill:var(--ink)\"><text x=\"82.5\" y=\"48\" text-anchor=\"middle\">5</text><text x=\"115.5\" y=\"48\" text-anchor=\"middle\">9</text><text x=\"148.5\" y=\"48\" text-anchor=\"middle\">14</text><text x=\"181.5\" y=\"48\" text-anchor=\"middle\">21</text><text x=\"214.5\" y=\"48\" text-anchor=\"middle\">28</text><text x=\"280.5\" y=\"48\" text-anchor=\"middle\">40</text><text x=\"313.5\" y=\"48\" text-anchor=\"middle\">46</text><text x=\"346.5\" y=\"48\" text-anchor=\"middle\">52</text><text x=\"379.5\" y=\"48\" text-anchor=\"middle\">67</text><text x=\"412.5\" y=\"48\" text-anchor=\"middle\">75</text></g>\n<g style=\"font-size:13px;font-family:var(--mono);fill:var(--ink-3)\"></g>\n<g style=\"font-size:13px;font-family:var(--mono);fill:var(--ink);font-weight:700\"><text x=\"247.5\" y=\"48\" text-anchor=\"middle\">33</text></g>\n<text x=\"66\" y=\"76\" style=\"fill:var(--ink-2);font-size:13px\">33 &lt; 67: keep right half, low = 6</text>\n<text x=\"14\" y=\"110\" style=\"fill:var(--ink-2);font-size:13px;font-weight:700\">look 2</text>\n<rect x=\"66\" y=\"90\" width=\"363\" height=\"30\" style=\"fill:var(--surface-2);stroke:none\"/>\n<rect x=\"264\" y=\"90\" width=\"165\" height=\"30\" style=\"fill:var(--surface);stroke:none\"/>\n<path d=\"M99,90 L99,120 M132,90 L132,120 M165,90 L165,120 M198,90 L198,120 M231,90 L231,120 M264,90 L264,120 M297,90 L297,120 M330,90 L330,120 M363,90 L363,120 M396,90 L396,120\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/>\n<rect x=\"66\" y=\"90\" width=\"363\" height=\"30\" rx=\"0\" style=\"fill:none;stroke:var(--rule-2);stroke-width:1.5\"/>\n<rect x=\"330\" y=\"90\" width=\"33\" height=\"30\" rx=\"0\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:2\"/>\n<g style=\"font-size:13px;font-family:var(--mono);fill:var(--ink)\"><text x=\"280.5\" y=\"110\" text-anchor=\"middle\">40</text><text x=\"313.5\" y=\"110\" text-anchor=\"middle\">46</text><text x=\"379.5\" y=\"110\" text-anchor=\"middle\">67</text><text x=\"412.5\" y=\"110\" text-anchor=\"middle\">75</text></g>\n<g style=\"font-size:13px;font-family:var(--mono);fill:var(--ink-3)\"><text x=\"82.5\" y=\"110\" text-anchor=\"middle\">5</text><text x=\"115.5\" y=\"110\" text-anchor=\"middle\">9</text><text x=\"148.5\" y=\"110\" text-anchor=\"middle\">14</text><text x=\"181.5\" y=\"110\" text-anchor=\"middle\">21</text><text x=\"214.5\" y=\"110\" text-anchor=\"middle\">28</text><text x=\"247.5\" y=\"110\" text-anchor=\"middle\">33</text></g>\n<g style=\"font-size:13px;font-family:var(--mono);fill:var(--ink);font-weight:700\"><text x=\"346.5\" y=\"110\" text-anchor=\"middle\">52</text></g>\n<text x=\"66\" y=\"138\" style=\"fill:var(--ink-2);font-size:13px\">52 &lt; 67: keep right half, low = 9</text>\n<text x=\"14\" y=\"172\" style=\"fill:var(--ink-2);font-size:13px;font-weight:700\">look 3</text>\n<rect x=\"66\" y=\"152\" width=\"363\" height=\"30\" style=\"fill:var(--surface-2);stroke:none\"/>\n<rect x=\"363\" y=\"152\" width=\"66\" height=\"30\" style=\"fill:var(--surface);stroke:none\"/>\n<path d=\"M99,152 L99,182 M132,152 L132,182 M165,152 L165,182 M198,152 L198,182 M231,152 L231,182 M264,152 L264,182 M297,152 L297,182 M330,152 L330,182 M363,152 L363,182 M396,152 L396,182\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/>\n<rect x=\"66\" y=\"152\" width=\"363\" height=\"30\" rx=\"0\" style=\"fill:none;stroke:var(--rule-2);stroke-width:1.5\"/>\n<rect x=\"363\" y=\"152\" width=\"33\" height=\"30\" rx=\"0\" style=\"fill:var(--good-soft);stroke:var(--good);stroke-width:2\"/>\n<g style=\"font-size:13px;font-family:var(--mono);fill:var(--ink)\"><text x=\"412.5\" y=\"172\" text-anchor=\"middle\">75</text></g>\n<g style=\"font-size:13px;font-family:var(--mono);fill:var(--ink-3)\"><text x=\"82.5\" y=\"172\" text-anchor=\"middle\">5</text><text x=\"115.5\" y=\"172\" text-anchor=\"middle\">9</text><text x=\"148.5\" y=\"172\" text-anchor=\"middle\">14</text><text x=\"181.5\" y=\"172\" text-anchor=\"middle\">21</text><text x=\"214.5\" y=\"172\" text-anchor=\"middle\">28</text><text x=\"247.5\" y=\"172\" text-anchor=\"middle\">33</text><text x=\"280.5\" y=\"172\" text-anchor=\"middle\">40</text><text x=\"313.5\" y=\"172\" text-anchor=\"middle\">46</text><text x=\"346.5\" y=\"172\" text-anchor=\"middle\">52</text></g>\n<g style=\"font-size:13px;font-family:var(--mono);fill:var(--ink);font-weight:700\"><text x=\"379.5\" y=\"172\" text-anchor=\"middle\">67</text></g>\n<text x=\"66\" y=\"200\" style=\"fill:var(--good);font-size:13px\">67 = 67: found at index 9</text>\n</svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Eleven items, three looks; linear search would have needed ten. The greyed cells are never checked again.</figcaption></figure><!--/viz:atb-binary-halving--><!--viz:atb-search-scaling--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table: for 10, 100, 1,000, 1 lakh and 1 crore records, linear search needs up to 10, 100, 1,000, 1 lakh and 1 crore comparisons, binary search up to 4, 7, 10, 17 and 24.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Worst-case comparisons as the data grows</div><div class=\"scroller\"><table><thead><tr><th>Records n</th><th>Linear search (worst)</th><th>Binary search (worst)</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">10</td><td style=\"font-family:var(--mono);background:var(--bad-soft)\">10</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">4</td></tr><tr><td style=\"font-family:var(--mono)\">100</td><td style=\"font-family:var(--mono);background:var(--bad-soft)\">100</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">7</td></tr><tr><td style=\"font-family:var(--mono)\">1,000</td><td style=\"font-family:var(--mono);background:var(--bad-soft)\">1,000</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">10</td></tr><tr><td style=\"font-family:var(--mono)\">1,00,000 (1 lakh)</td><td style=\"font-family:var(--mono);background:var(--bad-soft)\">1,00,000</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">17</td></tr><tr><td style=\"font-family:var(--mono)\">1,00,00,000 (1 crore)</td><td style=\"font-family:var(--mono);background:var(--bad-soft)\">1,00,00,000</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">24</td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-2);margin:8px 0 0\">Binary worst case = <span style=\"font-family:var(--mono)\">⌊log₂ n⌋ + 1</span> comparisons; the list must be sorted.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Multiply the data by 10 and linear search does 10 times the work; binary search adds only 3 or 4 comparisons.</figcaption></figure><!--/viz:atb-search-scaling--><!--viz:atb-unsorted-fails--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace of binary search for 25 in the unsorted list 40, 15, 70, 25, 90: it checks 70, discards the right half, checks 40, discards again, and reports not found although 25 is at index 3.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Binary search on unsorted data gives a wrong answer</div><p style=\"font-size:13.5px;color:var(--ink-2);margin:0 0 8px\"><span style=\"font-family:var(--mono)\">a = [40, 15, 70, 25, 90]</span> (not sorted) · target 25 · <span style=\"font-family:var(--mono)\">mid = (low + high) // 2</span></p><div class=\"scroller\"><table><thead><tr><th>Look</th><th>low, high</th><th>mid</th><th>a[mid]</th><th>Decision</th></tr></thead><tbody><tr><td>1</td><td style=\"font-family:var(--mono)\"><span style=\"font-family:var(--mono)\">0, 4</span></td><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono)\">70</td><td>25 &lt; 70 → keep left: high = 1</td></tr><tr><td>2</td><td style=\"font-family:var(--mono)\"><span style=\"font-family:var(--mono)\">0, 1</span></td><td style=\"font-family:var(--mono)\">0</td><td style=\"font-family:var(--mono)\">40</td><td>25 &lt; 40 → keep left: high = −1</td></tr><tr><td>3</td><td>—</td><td>—</td><td>—</td><td style=\"background:var(--bad-soft)\">low &gt; high → “not found”, yet 25 sits at index 3</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Discarding a half is only safe when the data is sorted; otherwise use linear search or sort first.</figcaption></figure><!--/viz:atb-unsorted-fails--><p><strong>Linear search</strong> — Linear search compares the target with each element in turn from the start, returning the position when it matches. It works on any type of data and does not need the data sorted, but in the worst case it must look at every element: O(n).<br><em>e.g.</em> Scanning an unsorted list of 500 vendor names for 'Shree Packaging'.</p><p><strong>Lucky hits do not change the complexity</strong> — If the target happens to be first, linear search finishes immediately, which can fool a tester into thinking it is O(1). Swap the item to the end and it must scan everything again. The algorithm is still linear: its cost depends on where the item sits, and the worst case grows with n.<br><em>e.g.</em> A demo that always searches for the first SKU in the file looks instant; production searches will not.</p><p><strong>Binary search</strong> — Binary search works on sorted data. It compares the target with the middle element; if the middle is smaller, everything up to and including it is discarded, if larger, everything from it onward is discarded, and the process repeats on the remaining half until the target is found or nothing is left.<br><em>e.g.</em> Finding cheque number 40 in a sorted bundle by opening at the middle and discarding the wrong half each time.</p><p><strong>Why binary search is O(log n)</strong> — Each comparison halves the remaining list, so the number of comparisons is about the number of halvings needed to get down to one item — log₂ n. Doubling the list adds only one comparison. The book ranks this as second only to constant time.<br><span style=\"font-family:var(--mono)\">worst-case comparisons ≈ ⌊log₂ n⌋ + 1</span><br><em>e.g.</em> A sorted list of 10 lakh records needs at most 20 comparisons; linear search could need 10 lakh.</p><p><strong>The sorting precondition</strong> — Binary search's only caveat — and it is a big one — is that the data must already be sorted. On unsorted data, discarding half the list can throw away the very item you are looking for.<br><em>e.g.</em> Binary search on a customer list in sign-up order can wrongly report that an existing customer is missing.</p><p><strong>Choosing between linear and binary search</strong> — For small lists the difference is negligible and linear search's simplicity and lack of preconditions win. As data grows into lakhs and crores of records, the gap becomes enormous, and keeping data sorted to enable binary search pays off.<br><em>e.g.</em> A 30-row supplier sheet: linear search is fine. A 1-crore account master queried constantly: binary search (or an index) is essential.</p>"
+    },
+    {
+     "t": "Textbook: Searching Algorithms",
+     "src": "Codeless DSA ch8",
+     "h": "<p>Despite its title, this chapter searches graphs, not lists: it is the network search of Lecture 24, not the list searches of Lecture 22. Breadth-first search explores outward layer by layer, so it tells whether two nodes are connected and finds the route with the fewest edges. Dijkstra's algorithm handles weighted graphs: it starts the source at 0 and every other node at infinity, then repeatedly settles the cheapest unsettled node and updates its neighbours, giving the lowest-cost route to every node, provided no cost is negative; Bellman-Ford handles negative costs. A* adds an estimate of the remaining distance to the cost so far, so it heads for one goal with far less exploration. L#24 taught the same Dijkstra procedure and named the others; where the book overstates (A* always optimal, Dijkstra trying every path), the notes correct it.</p><!--viz:atb-dijkstra-negative-edge--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Directed costs S to A 2, S to B 4, B to A minus 3. Dijkstra settles S, then A at cost 2, then B at 4; the cheaper route to A through B (cost 1) arrives after A is final, so Dijkstra reports 2 while the true cheapest is 1, which Bellman-Ford finds.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Why a negative cost breaks Dijkstra</div><p style=\"font-size:14px;margin:0 0 8px\">One-way costs: <span style=\"font-family:var(--mono)\">S → A 2 · S → B 4 · B → A −3</span> (the −3 is a rebate leg).</p><div class=\"scroller\"><table><thead><tr><th>Step</th><th>Dijkstra settles</th><th>What happens</th></tr></thead><tbody><tr><td>1</td><td style=\"font-family:var(--mono)\">S (0)</td><td>A = 2, B = 4</td></tr><tr><td>2</td><td style=\"font-family:var(--mono)\">A (2)</td><td>A is now final; its cost is never revisited</td></tr><tr><td>3</td><td style=\"font-family:var(--mono)\">B (4)</td><td style=\"background:var(--bad-soft)\">B → A would give 4 − 3 = 1, but A is already settled</td></tr><tr><td>Result</td><td style=\"font-family:var(--mono);background:var(--bad-soft)\">A = 2</td><td style=\"background:var(--good-soft)\">True cheapest is S → B → A = 1, which Bellman-Ford finds</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Dijkstra treats a settled node as final, which is only safe when no later edge can lower a cost.</figcaption></figure><!--/viz:atb-dijkstra-negative-edge--><!--viz:atb-astar-overestimate--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace of A* from S to G with one-way costs S to A 1, A to G 5, S to B 2, B to G 2 and estimates h(A) 1, h(B) 10, h(G) 0. A* expands S, then A (f 2), then reaches G at cost 6 before B (f 12) is expanded. With h(B) at 2 or less, B's f of 4 comes first and A* finds the cost-4 route through B.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">When A*'s estimate overshoots</div><p style=\"font-size:14px;margin:0 0 8px\">One-way costs: <span style=\"font-family:var(--mono)\">S → A 1 · A → G 5 · S → B 2 · B → G 2</span>. Estimates: <span style=\"font-family:var(--mono)\">h(A) 1 · h(B) 10 · h(G) 0</span>. B is really only 2 from G.</p><div class=\"scroller\"><table><thead><tr><th>Step</th><th>Expand</th><th>Open list, f = g + h</th></tr></thead><tbody><tr><td>1</td><td style=\"font-family:var(--mono)\">S</td><td><span style=\"font-family:var(--mono)\">A 1+1 = 2 · B 2+10 = 12</span><br><span style=\"font-size:12.5px;color:var(--ink-2)\">A looks far better</span></td></tr><tr><td>2</td><td style=\"font-family:var(--mono)\">A (2)</td><td><span style=\"font-family:var(--mono)\">G 6+0 = 6 · B 12</span><br><span style=\"font-size:12.5px;color:var(--ink-2)\">G joins the list through A</span></td></tr><tr><td>3</td><td style=\"font-family:var(--mono);background:var(--bad-soft)\">G (6)</td><td style=\"background:var(--bad-soft)\"><span style=\"font-family:var(--mono)\">B 12</span><br><span style=\"font-size:12.5px;color:var(--ink-2)\">goal reached at cost 6; B is never expanded</span></td></tr><tr><td>Fix</td><td style=\"font-family:var(--mono)\">h(B) ≤ 2</td><td style=\"background:var(--good-soft)\"><span style=\"font-family:var(--mono)\">B 2+2 = 4 before G 6</span><br><span style=\"font-size:12.5px;color:var(--ink-2)\">A* finds S → B → G, cost 4</span></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">An estimate that overstates the distance left can hide the cheapest route, which is why the book's 'always shortest' claim needs the never-overestimate condition.</figcaption></figure><!--/viz:atb-astar-overestimate--><!--viz:atb-astar-vs-dijkstra-pick--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three candidates with cost so far g and estimated cost to goal h: X 5 and 6 (f 11), Y 7 and 2 (f 9), Z 3 and 9 (f 12). Dijkstra's ranking by g alone picks Z; A*'s ranking by f = g + h picks Y.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Which candidate gets expanded next?</div><p style=\"font-size:14px;margin:0 0 8px\"><span style=\"font-family:var(--mono)\">g</span> = cost so far · <span style=\"font-family:var(--mono)\">h</span> = estimated cost still to go</p><div class=\"scroller\"><table><thead><tr><th>Node</th><th><span style=\"text-transform:none\">g</span></th><th><span style=\"text-transform:none\">h</span></th><th><span style=\"text-transform:none\">f = g + h</span></th></tr></thead><tbody><tr><td>X</td><td style=\"font-family:var(--mono)\">5</td><td style=\"font-family:var(--mono)\">6</td><td style=\"font-family:var(--mono)\">11</td></tr><tr><td>Y</td><td style=\"font-family:var(--mono)\">7</td><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">9</td></tr><tr><td>Z</td><td style=\"font-family:var(--mono);background:var(--clay-soft)\">3</td><td style=\"font-family:var(--mono)\">9</td><td style=\"font-family:var(--mono)\">12</td></tr></tbody></table></div><p style=\"font-size:13.5px;margin:8px 0 0;color:var(--ink-2)\"><span style=\"padding:1px 6px;border-radius:3px;background:var(--clay-soft)\">lowest g</span> is what Dijkstra ranks by: Z. <span style=\"padding:1px 6px;border-radius:3px;background:var(--blue-soft)\">lowest f</span> is what A* ranks by: Y.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Ranked by cost so far alone, the search heads for Z, which looks farthest from the goal. Adding the estimate points A* at Y.</figcaption></figure><!--/viz:atb-astar-vs-dijkstra-pick--><!--viz:atb-graph-search-picker--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Decision flow: if edges carry no costs, use BFS for fewest hops; if any cost is negative, use Bellman-Ford; with non-negative costs, use Dijkstra for cheapest routes to every node, or A* for one goal when an estimate of the remaining distance is available. A footnote adds the lecture's Floyd–Warshall for every pair and Prim's or Kruskal's for linking every node.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Choosing a graph search</div><div style=\"display:flex;flex-direction:column;gap:8px;font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding-bottom:8px;border-bottom:1px solid var(--rule)\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Do the edges carry costs?</div><span style=\"color:var(--ink-3)\">no →</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>BFS</b>: fewest hops (queue, L#17)</div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding-bottom:8px;border-bottom:1px solid var(--rule)\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Costs: is any of them negative?</div><span style=\"color:var(--ink-3)\">yes →</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Bellman-Ford</b></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding-bottom:8px;border-bottom:1px solid var(--rule)\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">All costs ≥ 0: cheapest route to <b>every</b> node?</div><span style=\"color:var(--ink-3)\">yes →</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Dijkstra</b></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">All costs ≥ 0: one goal, and an estimate of the distance left?</div><span style=\"color:var(--ink-3)\">yes →</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>A*</b>: f = g + h</div></div><div style=\"font-size:13px;color:var(--ink-3);padding-top:4px\">L#24 also named: shortest routes between <b>every pair</b> of nodes → Floyd–Warshall · linking <b>every</b> node at least total cost → Prim's or Kruskal's.</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Ask what the edges mean first, then what you need: every destination or one goal.</figcaption></figure><!--/viz:atb-graph-search-picker--><p><strong>Breadth-first search (BFS)</strong> — BFS visits every node one edge from the start, then every node two edges away, and so on, layer by layer. It answers whether a path exists between two nodes and finds the path with the fewest edges. The book does not say how it is built; L#17 taught it on a queue, with DFS on a stack, and L#24 used BFS to read a network level by level.<br><em>e.g.</em> Finding the fewest introductions needed to reach a prospective client through your professional network.</p><p><strong>Layers and fewest-edge paths</strong> — Layer 0 is the start; layer k holds the nodes first reached after k edges. A node is first reached at its smallest possible layer, so its layer number is the minimum number of edges from the start (L#18's minimum degree of separation). That is the cheapest route only when every edge costs the same.<br><em>e.g.</em> A rider's route with the fewest stops is not necessarily the one with the shortest travel time.</p><p><strong>Dijkstra's algorithm</strong> — Dijkstra's algorithm finds the lowest-cost path from a start node to every other node in a weighted graph whose edge costs are not negative. It sets the start to 0 and all others to infinity, makes the cheapest unsettled node current, lowers each neighbour's cost if the route through the current node is cheaper, settles the current node, and repeats. The book runs it until every node is settled; L#24 added that you may stop once the one destination you need is settled.<br><em>e.g.</em> Cheapest trucking cost from a central warehouse to every store in the network.</p><p><strong>Dijkstra as an uninformed search</strong> — Dijkstra's algorithm is an uninformed (blind) search: it has no information about where the goal lies, so it expands outward by cost in every direction and may examine much of the graph. It does not try every possible path, though: each node is settled once, in order of cost. It is still widely used in map and navigation software.<br><em>e.g.</em> Finding the cheapest route to one customer may also settle hundreds of junctions in the opposite direction.</p><p><strong>Bellman-Ford and negative costs</strong> — Dijkstra's algorithm needs every edge cost to be zero or positive, because a node it has settled is never revisited. The Bellman-Ford algorithm also finds lowest-cost paths in weighted graphs and still works when some edges have negative costs. It is slower than Dijkstra's, so it is the tool for negative costs rather than a general upgrade.<br><em>e.g.</em> A route containing a rebate or cashback leg, modelled as a negative cost, needs Bellman-Ford.</p><p><strong>Greedy vs heuristic pathfinding</strong> — A greedy method builds a solution step by step, always taking the option that helps most right now; the book classes Dijkstra's choice of the cheapest node as greedy. A heuristic uses a rule of thumb or estimate to reach a good-enough answer that is not guaranteed to be the best, which is how L#21 defined it too.<br><em>e.g.</em> Always taking the cheapest next leg (greedy) vs aiming roughly toward the destination using straight-line distance (heuristic).</p><p><strong>A* search</strong> — A* blends Dijkstra's cost so far with best-first search's estimate of the cost still to go. For each candidate it adds the two and expands the lowest total, marking it explored. Because the estimate steers it toward the goal, it usually explores far fewer nodes than Dijkstra. It is certain to return the cheapest route only if the estimate never overestimates the true remaining cost.<br><span style=\"font-family:var(--mono)\">f = g (cost so far) + h (estimated cost to goal)</span><br><em>e.g.</em> A delivery app using straight-line distance to the customer as h; a road is never shorter than the straight line, so h never overestimates.</p><p><strong>Matching the search to the question</strong> — Use BFS when every hop counts equally and you want the fewest hops or simply whether a connection exists. Use Dijkstra when edges have non-negative costs and you want the cheapest routes from one source to all nodes. Use Bellman-Ford when some costs are negative. Use A* when you want one source-to-goal route quickly and have a sensible estimate of the remaining distance. L#24 also named Floyd–Warshall for every pair of nodes and Prim's and Kruskal's for linking every node at least total cost; the book does not cover them.<br><em>e.g.</em> Network reachability → BFS; toll-cost routing to all depots → Dijkstra; one customer delivery on a city map → A*.</p><div class=\"card\"><strong>Case: Navigation apps and network packets</strong> <em>(Chapter 8, Dijkstra's Algorithm: opening motivation)</em><p>The book frames shortest-path search through everyday systems: a navigation app choosing the fastest route, and real-time video data choosing a fast path across a network. Modelled as weighted graphs, both become shortest-path problems that Dijkstra's algorithm and its successors solve.</p><p><em>Lesson:</em> Routing problems become tractable once framed as weighted graphs.</p><p><em>Think:</em> For a food-delivery platform, what would the nodes, edges and costs be — and when might the cheapest-cost route differ from the fewest-turns route?</p></div><details><summary>Worked problem: Breadth-first layers</summary><p>A referral network: A links to B, C, D; B links to E, F; C links to G; D links to H; E links to I (all links two-way). Run BFS from A, visiting neighbours alphabetically. Give the visiting order, each node's layer, and the fewest edges from A to I.</p><ol><li>Layer 0: A.</li><li>Layer 1 (neighbours of A): B, C, D.</li><li>Layer 2 (new neighbours of B, C, D in order): E, F (from B), G (from C), H (from D).</li><li>Layer 3 (new neighbours of E): I.</li><li>Visiting order: A, B, C, D, E, F, G, H, I.</li></ol><p><strong>Answer:</strong> Order A, B, C, D, E, F, G, H, I; I is in layer 3, so the fewest-edge path A → B → E → I has 3 edges.</p></details><details><summary>Worked problem: Dijkstra by hand</summary><p>Depots S, A, B, C, D with two-way road costs (₹ hundreds): S–A 4, S–B 1, B–A 2, A–C 1, B–C 5, C–D 3. Find the cheapest cost from S to every depot.</p><ol><li>Start: S = 0; A, B, C, D = ∞.</li><li>Current S: update A = 4, B = 1. Settle S.</li><li>Cheapest unsettled is B (1): via B, A = 1 + 2 = 3 (better than 4); C = 1 + 5 = 6. Settle B.</li><li>Cheapest unsettled is A (3): via A, C = 3 + 1 = 4 (better than 6). Settle A.</li><li>Cheapest unsettled is C (4): via C, D = 4 + 3 = 7. Settle C, then D (7).</li></ol><p><strong>Answer:</strong> S 0, B 1, A 3, C 4 (S → B → A → C), D 7 (S → B → A → C → D). Settling order: S, B, A, C, D.</p></details><details><summary>Worked problem: Which node does each search expand?</summary><p>From the current position, three candidate points have cost-so-far g and estimated cost-to-goal h: X (g 5, h 6), Y (g 7, h 2), Z (g 3, h 9). Which does A* expand next, and which would Dijkstra's ordering pick?</p><ol><li>A* totals f = g + h: X = 11, Y = 9, Z = 12.</li><li>A* expands the lowest f: Y.</li><li>Dijkstra ranks by g only: Z (3) is lowest.</li></ol><p><strong>Answer:</strong> A* expands Y (f = 9); Dijkstra would expand Z (g = 3), even though Z is estimated to be farthest from the goal.</p></details><div class=\"def\"><b>Book vs lecture — What the chapter and L#24 cover.</b> Book: Graph search only: BFS, Dijkstra's algorithm, Bellman-Ford and A*. Lecture: L#24 recapped DFS and BFS as searches, taught Dijkstra in depth, and named A*, uniform cost search, bidirectional search, Floyd–Warshall, Bellman–Ford, Prim's and Kruskal's, each with its use. He said to focus on Dijkstra and, for the others, to know what each is for. <b>Expect Dijkstra traces; for A* and Bellman-Ford the one-line uses are what he asked for. Uniform cost, bidirectional, Floyd–Warshall, Prim's and Kruskal's are only in the lecture notes.</b></div><div class=\"def\"><b>Book vs lecture — BFS: how it runs and what it is for.</b> Book: Describes BFS layer by layer but never says what drives it, and says it finds the shortest path. Lecture: L#17 taught BFS on a queue (FIFO) and DFS on a stack (LIFO). L#24 used BFS to read a network level by level (levels count hops) and called DFS the more useful one for mapping a network's topology. <b>The lecture wins: answer with the queue, and describe BFS's result as the fewest hops.</b></div><div class=\"def\"><b>Book vs lecture — What 'shortest' means.</b> Book: Uses 'shortest path' for both BFS and Dijkstra's algorithm. Lecture: L#24: shortest means the lowest total cost, where cost may be distance, time, money such as tolls, or a combination. <b>Say 'fewest hops' for BFS and 'lowest total cost' for Dijkstra. The two agree only when every edge costs the same.</b></div><div class=\"def\"><b>Book vs lecture — Running Dijkstra.</b> Book: Starts the source at 0 and the rest at infinity, then keeps taking the cheapest node until the last point is reached. Lecture: L#24 taught the same steps, and added that one run gives cheapest paths from its own start only, and that you may stop once the single destination you need is settled. In his exercise walk-through he finalised B (5) before D (3). <b>Follow the rule in any trace: the smallest unsettled distance goes next, so D (3) before B (5). The final distances are the same either way.</b></div><div class=\"def\"><b>Book vs lecture — Negative costs, and Floyd–Warshall.</b> Book: Dijkstra fails with negative edges; Bellman-Ford works with them and is presented as an improvement on Dijkstra. Floyd–Warshall is not mentioned. Lecture: L#24 named Bellman–Ford as the algorithm for negative costs, and grouped the others, Floyd–Warshall included, with Dijkstra as needing zero or positive costs. <b>For 'which algorithm handles negative costs', answer Bellman-Ford: the book and the lecture agree. Its gain is coping with negatives, not speed (it is slower). Floyd–Warshall in fact also works with negative costs as long as there is no negative cycle, so don't claim it cannot.</b></div><div class=\"def\"><b>Book vs lecture — Is greedy always suboptimal?.</b> Book: Calls Dijkstra's algorithm greedy, says greedy methods judge one step at a time without seeing the whole problem, yet presents Dijkstra as finding shortest paths. Lecture: L#5 and L#8: greedy takes the best option right now, locally optimal but not necessarily globally optimal. <b>Use the lecture's definition. 'Not necessarily' leaves room for exact greedy methods: Dijkstra's, with non-negative costs, is one.</b></div><div class=\"def\"><b>Book vs lecture — Are heuristics probabilistic?.</b> Book: Describes heuristic algorithms as probabilistic by nature, giving approximate solutions. Lecture: L#21: a heuristic is a rule of thumb giving a good-enough answer, not guaranteed to be the best. L#24 described A*'s heuristic as a sense of direction: driving from Jodhpur to Coimbatore you head south at once. <b>The lecture wins. A heuristic need not involve chance; A*'s estimate is usually a plain distance.</b></div><div class=\"def\"><b>Book vs lecture — A*'s guarantee.</b> Book: Says that even if the algorithm fails you are still guaranteed the shortest path with A*. Lecture: L#24 presented A* as direction-guided search used in GPS navigation and made no claim that it always finds the cheapest route. <b>A* is certain to return the cheapest route only if its estimate never overestimates the true remaining cost. Do not repeat the book's unconditional claim.</b></div><div class=\"def\"><b>Book vs lecture — Does Dijkstra try every path?.</b> Book: Contrasts A* with Dijkstra's algorithm, 'which takes every possible path'. Lecture: L#24's procedure visits each node once, smallest distance first, and marks it final. <b>Dijkstra is blind about direction, not a check of every path: each node is settled once, in order of cost.</b></div>"
     }
    ]
   },
   {
    "id": "blockchain",
    "title": "Blockchain",
-   "tag": "Lecture 20 · Module 3 finale",
+   "tag": "Lectures 20, 23 · Module 3 finale",
    "lede": "Where the module's structures meet: linked-list-style blocks joined by hashes, a Merkle tree per block, and a network of nodes that out-votes tampering.",
    "topics": [
     {
      "t": "Blocks, hashes and the chain",
-     "src": "L#20",
-     "h": "\n  <div class=\"def\">A <b>blockchain</b> stores data in <b>blocks</b>, always adding a new block to the <b>end</b>, and links each block to the previous one by storing the previous block's <b>hash</b>. It borrows ideas from linked lists, hashing, trees and graphs — but he stressed it is <b>much more</b> than any one of them, not a direct implementation.</div>\n  <h4>The two ideas it builds on</h4>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>Linked list</strong> (Lecture 7): starts at a head node, each node points to the <strong>memory address</strong> of the next — like a music playlist</li>\n   <li><strong>Cryptographic hash</strong> (Lecture 19): variable-length input, fixed-length output that is <strong>collision-free</strong> (unique input → unique output) and <strong>cannot be reversed</strong>; change one bit and the output changes completely</li>\n  </ul>\n  <h4>Inside one block</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Part</th><th>Holds</th></tr></thead><tbody>\n   <tr><td><strong>Header</strong></td><td>Hash of the <strong>previous</strong> block · hash of <strong>this</strong> block · the <strong>Merkle root</strong> (next topic)</td></tr>\n   <tr><td><strong>Transactions</strong></td><td>The operations being recorded, in time order — deposits, withdrawals, UPI payments</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\"><strong>The bank-passbook analogy.</strong> A passbook lists transactions one after another and never edits an old line: if ₹10,000 was deposited and ₹5,000 withdrawn, both entries stay and the balance is updated. When the pages run out, you get a new passbook. Likewise a block holds a set number of transactions (grouped by timestamp), then a new block is added; old blocks are never edited or deleted.</p>\n  <h4>Building the chain</h4>\n  <ul style=\"font-size:14.5px\">\n   <li>The first block is the <strong>genesis block</strong> — the blockchain's head node. Its previous-hash field is <strong>null</strong>: not zero, not blank, but an explicit \"points nowhere\"</li>\n   <li>Block 2 stores its own hash H2 and the previous hash H1; block 3 stores H3 and H2; and so on</li>\n   <li>Blocks are <strong>stored forwards</strong> from the genesis block but <strong>read backwards</strong>, starting from the newest block and following the previous-hash links</li>\n  </ul>\n  <h4>What tampering does</h4>\n  <p style=\"font-size:14.5px\">Change any transaction in block 2 and its hash is no longer H2 — call it H2'. Block 3 still says \"my previous block is H2\", and no such block exists: <strong>the chain is broken</strong>, so tampering is detected and the faulty block can be pinpointed. But detection is only step one. Someone could rebuild the block with a fresh hash, so blockchain adds two more safeguards: the Merkle tree and decentralisation.</p><!--viz:atb-blockchain-links--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two rows of three blocks. In the intact chain each block's previous-hash field matches the block before it. After block 2 is edited its hash changes to H2' and block 3's previous hash, H2, no longer matches any block.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Blocks linked by hashes, and what an edit breaks</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 286\" role=\"img\" aria-label=\"Top row: genesis block with previous hash null and own hash H1, block 2 with H1 and H2, block 3 with H2 and H3, each pointing back. Bottom row: block 2 edited so its hash becomes H2', and block 3's link to H2 is broken.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><text x=\"12\" y=\"16\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px\">Intact: each block stores the previous block's hash</text><rect x=\"12\" y=\"26\" width=\"120\" height=\"92\" rx=\"4\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"72\" y=\"46\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">Genesis</text><text x=\"72\" y=\"68\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">prev: null</text><text x=\"72\" y=\"88\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">own: H1</text><text x=\"72\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">transactions</text><rect x=\"160\" y=\"26\" width=\"120\" height=\"92\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"220\" y=\"46\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">Block 2</text><text x=\"220\" y=\"68\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">prev: H1</text><text x=\"220\" y=\"88\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">own: H2</text><text x=\"220\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">transactions</text><rect x=\"308\" y=\"26\" width=\"120\" height=\"92\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"368\" y=\"46\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">Block 3</text><text x=\"368\" y=\"68\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">prev: H2</text><text x=\"368\" y=\"88\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">own: H3</text><text x=\"368\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">transactions</text><path d=\"M160,72 L139,72\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M132,72 L139,68.5 L139,75.5 Z\" style=\"fill:var(--ink-3);stroke:none\"/><path d=\"M308,72 L287,72\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M280,72 L287,68.5 L287,75.5 Z\" style=\"fill:var(--ink-3);stroke:none\"/><text x=\"12\" y=\"148\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px\">Tampered: block 2 edited, so its hash changes</text><rect x=\"12\" y=\"158\" width=\"120\" height=\"92\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"72\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">Genesis</text><text x=\"72\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">prev: null</text><text x=\"72\" y=\"220\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">own: H1</text><text x=\"72\" y=\"240\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">transactions</text><rect x=\"160\" y=\"158\" width=\"120\" height=\"92\" rx=\"4\" style=\"fill:var(--bad-soft);stroke:var(--bad);stroke-width:1.5\"/><text x=\"220\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">Block 2 (edited)</text><text x=\"220\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">prev: H1</text><text x=\"220\" y=\"220\" text-anchor=\"middle\" style=\"fill:var(--bad);font-size:13px;font-family:var(--mono)\">own: H2'</text><text x=\"220\" y=\"240\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">transactions</text><rect x=\"308\" y=\"158\" width=\"120\" height=\"92\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"368\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">Block 3</text><text x=\"368\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--bad);font-size:13px;font-family:var(--mono)\">prev: H2</text><text x=\"368\" y=\"220\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">own: H3</text><text x=\"368\" y=\"240\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">transactions</text><path d=\"M160,204 L139,204\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M132,204 L139,200.5 L139,207.5 Z\" style=\"fill:var(--ink-3);stroke:none\"/><path d=\"M308,204 L288,204\" style=\"stroke:var(--bad);stroke-width:2;fill:none;stroke-dasharray:5 4\"/><text x=\"220\" y=\"272\" text-anchor=\"middle\" style=\"fill:var(--bad);font-size:13px\">block 3 points to H2, but no block has H2 any more</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The arrows point backwards: a blockchain is read from the newest block to the genesis block.</figcaption></figure><!--/viz:atb-blockchain-links--><!--viz:atb-list-vs-blockchain--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table comparing a linked list and a blockchain on how elements link, reading direction, where new elements go, where they are stored, and the first element.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Linked list vs blockchain</div><div class=\"scroller\"><table><thead><tr><th></th><th>Linked list</th><th>Blockchain</th></tr></thead><tbody><tr><td><b>Link</b></td><td>Pointer to the <b>next</b> node's memory address</td><td><b>Hash</b> of the <b>previous</b> block</td></tr><tr><td><b>Reading</b></td><td>Forwards from the head node</td><td><b>Backwards</b> from the newest block</td></tr><tr><td><b>Adding</b></td><td>Anywhere, even mid-list (a playlist)</td><td><b>Only at the end</b></td></tr><tr><td><b>Stored on</b></td><td>Typically one computer</td><td style=\"background:var(--blue-soft)\"><b>Many nodes</b> of a network</td></tr><tr><td><b>First element</b></td><td>Head node</td><td>Genesis block (previous hash = null)</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Decentralised storage is the biggest difference: it is what turns tamper detection into tamper resistance.</figcaption></figure><!--/viz:atb-list-vs-blockchain-->"
+     "src": "L#20 · L#23",
+     "h": "\n  <div class=\"def\">A <b>blockchain</b> stores data in <b>blocks</b>, always adding a new block to the <b>end</b>, and links each block to the previous one by storing the previous block's <b>hash</b>. It borrows ideas from linked lists, hashing, trees and graphs — but he stressed it is <b>much more</b> than any one of them, not a direct implementation.</div>\n  <h4>The two ideas it builds on</h4>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>Linked list</strong> (Lecture 7): starts at a head node, each node points to the <strong>memory address</strong> of the next — like a music playlist</li>\n   <li><strong>Cryptographic hash</strong> (Lecture 19): variable-length input, fixed-length output that is <strong>collision-free</strong> (unique input → unique output) and <strong>cannot be reversed</strong>; change one bit and the output changes completely</li>\n  </ul>\n  <h4>Inside one block</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Part</th><th>Holds</th></tr></thead><tbody>\n   <tr><td><strong>Header</strong></td><td>Hash of the <strong>previous</strong> block · hash of <strong>this</strong> block · the <strong>Merkle root</strong> (next topic)</td></tr>\n   <tr><td><strong>Transactions</strong></td><td>The operations being recorded, in time order — deposits, withdrawals, UPI payments</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\"><strong>The bank-passbook analogy.</strong> A passbook lists transactions one after another and never edits an old line: if ₹10,000 was deposited and ₹5,000 withdrawn, both entries stay and the balance is updated. When the pages run out, you get a new passbook. Likewise a block holds a set number of transactions (grouped by timestamp), then a new block is added; old blocks are never edited or deleted.</p>\n  <h4>Building the chain</h4>\n  <ul style=\"font-size:14.5px\">\n   <li>The first block is the <strong>genesis block</strong> — the blockchain's head node. Its previous-hash field is <strong>null</strong>: not zero, not blank, but an explicit \"points nowhere\"</li>\n   <li>Block 2 stores its own hash H2 and the previous hash H1; block 3 stores H3 and H2; and so on</li>\n   <li>Blocks are <strong>stored forwards</strong> from the genesis block but <strong>read backwards</strong>, starting from the newest block and following the previous-hash links</li>\n  </ul>\n  <h4>What tampering does</h4>\n  <p style=\"font-size:14.5px\">Change any transaction in block 2 and its hash is no longer H2 — call it H2'. Block 3 still says \"my previous block is H2\", and no such block exists: <strong>the chain is broken</strong>, so tampering is detected and the faulty block can be pinpointed. But detection is only step one. Someone could rebuild the block with a fresh hash, so blockchain adds two more safeguards: the Merkle tree and decentralisation.</p><!--viz:atb-blockchain-links--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two rows of three blocks. In the intact chain each block's previous-hash field matches the block before it. After block 2 is edited its hash changes to H2' and block 3's previous hash, H2, no longer matches any block.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Blocks linked by hashes, and what an edit breaks</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 286\" role=\"img\" aria-label=\"Top row: genesis block with previous hash null and own hash H1, block 2 with H1 and H2, block 3 with H2 and H3, each pointing back. Bottom row: block 2 edited so its hash becomes H2', and block 3's link to H2 is broken.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><text x=\"12\" y=\"16\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px\">Intact: each block stores the previous block's hash</text><rect x=\"12\" y=\"26\" width=\"120\" height=\"92\" rx=\"4\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"72\" y=\"46\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">Genesis</text><text x=\"72\" y=\"68\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">prev: null</text><text x=\"72\" y=\"88\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">own: H1</text><text x=\"72\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">transactions</text><rect x=\"160\" y=\"26\" width=\"120\" height=\"92\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"220\" y=\"46\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">Block 2</text><text x=\"220\" y=\"68\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">prev: H1</text><text x=\"220\" y=\"88\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">own: H2</text><text x=\"220\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">transactions</text><rect x=\"308\" y=\"26\" width=\"120\" height=\"92\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"368\" y=\"46\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">Block 3</text><text x=\"368\" y=\"68\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">prev: H2</text><text x=\"368\" y=\"88\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">own: H3</text><text x=\"368\" y=\"108\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">transactions</text><path d=\"M160,72 L139,72\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M132,72 L139,68.5 L139,75.5 Z\" style=\"fill:var(--ink-3);stroke:none\"/><path d=\"M308,72 L287,72\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M280,72 L287,68.5 L287,75.5 Z\" style=\"fill:var(--ink-3);stroke:none\"/><text x=\"12\" y=\"148\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px\">Tampered: block 2 edited, so its hash changes</text><rect x=\"12\" y=\"158\" width=\"120\" height=\"92\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"72\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">Genesis</text><text x=\"72\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">prev: null</text><text x=\"72\" y=\"220\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">own: H1</text><text x=\"72\" y=\"240\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">transactions</text><rect x=\"160\" y=\"158\" width=\"120\" height=\"92\" rx=\"4\" style=\"fill:var(--bad-soft);stroke:var(--bad);stroke-width:1.5\"/><text x=\"220\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">Block 2 (edited)</text><text x=\"220\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">prev: H1</text><text x=\"220\" y=\"220\" text-anchor=\"middle\" style=\"fill:var(--bad);font-size:13px;font-family:var(--mono)\">own: H2'</text><text x=\"220\" y=\"240\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">transactions</text><rect x=\"308\" y=\"158\" width=\"120\" height=\"92\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"368\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">Block 3</text><text x=\"368\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--bad);font-size:13px;font-family:var(--mono)\">prev: H2</text><text x=\"368\" y=\"220\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">own: H3</text><text x=\"368\" y=\"240\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">transactions</text><path d=\"M160,204 L139,204\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M132,204 L139,200.5 L139,207.5 Z\" style=\"fill:var(--ink-3);stroke:none\"/><path d=\"M308,204 L288,204\" style=\"stroke:var(--bad);stroke-width:2;fill:none;stroke-dasharray:5 4\"/><text x=\"220\" y=\"272\" text-anchor=\"middle\" style=\"fill:var(--bad);font-size:13px\">block 3 points to H2, but no block has H2 any more</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The arrows point backwards: a blockchain is read from the newest block to the genesis block.</figcaption></figure><!--/viz:atb-blockchain-links--><!--viz:atb-list-vs-blockchain--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table comparing a linked list and a blockchain on how elements link, reading direction, where new elements go, where they are stored, and the first element.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Linked list vs blockchain</div><div class=\"scroller\"><table><thead><tr><th></th><th>Linked list</th><th>Blockchain</th></tr></thead><tbody><tr><td><b>Link</b></td><td>Pointer to the <b>next</b> node's memory address</td><td><b>Hash</b> of the <b>previous</b> block</td></tr><tr><td><b>Reading</b></td><td>Forwards from the head node</td><td><b>Backwards</b> from the newest block</td></tr><tr><td><b>Adding</b></td><td>Anywhere, even mid-list (a playlist)</td><td><b>Only at the end</b></td></tr><tr><td><b>Stored on</b></td><td>Typically one computer</td><td style=\"background:var(--blue-soft)\"><b>Many nodes</b> of a network</td></tr><tr><td><b>First element</b></td><td>Head node</td><td>Genesis block (previous hash = null)</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Decentralised storage is the biggest difference: it is what turns tamper detection into tamper resistance.</figcaption></figure><!--/viz:atb-list-vs-blockchain--><h4>Live Lecture 5 additions</h4><p style=\"font-size:14.5px\"><strong>Add, never edit.</strong> In a conventional records system a mistake can be corrected in place: a grade on a transcript can be changed with the right approvals. A blockchain never edits or deletes a block; a correction is a new transaction in a new block. Banks already work this way for failed payments: if a UPI payment fails after your account was debited, the bank doesn’t delete the debit, it adds a reversal entry that returns the money. Every step stays traceable.</p>"
     },
     {
      "t": "Merkle trees and decentralisation",
-     "src": "L#20",
-     "h": "\n  <h4>The Merkle tree: protecting the transactions</h4>\n  <div class=\"def\">A <b>Merkle tree</b> hashes every transaction (H1…H6), then hashes groups of those hashes, and repeats until one hash remains: the <b>Merkle root</b>, stored in the block header.</div>\n  <ul style=\"font-size:14.5px\">\n   <li>His example grouped six transaction hashes in <strong>threes</strong> (H1–H3 and H4–H6) — a general tree. Some blockchain protocols insist on a <strong>binary</strong> tree (pairs); others accept a general tree</li>\n   <li>Change transaction 5 and H5 changes, so H456 changes, so the <strong>root</strong> changes. Recompute the tree from the block's transactions, compare with the stored root, and any edit shows</li>\n   <li>The block stores the <strong>transactions as well as</strong> the root, because a hash is one-way: the root alone could never give the transactions back</li>\n  </ul>\n  <h4>Decentralisation: copies everywhere</h4>\n  <p style=\"font-size:14.5px\">A linked list typically lives on one computer. A blockchain's blocks are stored on many <strong>nodes of a network</strong>, several nodes holding copies of each block. His analogy: classmates copy an assignment and one person makes an error; you compare notebooks and trust the answer most of them agree on. If one node's copy of a block disagrees with the copies that agree with each other, it is discarded — and no data is lost, because the block lives elsewhere too.</p>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>Consensus mechanism:</strong> the protocol nodes use to agree on which copy is authentic (the details are beyond this course)</li>\n   <li><strong>To succeed, an attacker</strong> would need to change at least <strong>51% of the copies</strong> of a block, all at the same moment, because everything is timestamped to the millisecond. That is why blockchains are considered <strong>practically</strong> tamper-proof</li>\n  </ul>\n  <div class=\"scroller\"><table><thead><tr><th>Who may join</th><th>How</th></tr></thead><tbody>\n   <tr><td><strong>Permissioned blockchain</strong></td><td>Run by an organisation, which designates the systems that act as nodes</td></tr>\n   <tr><td><strong>Public blockchain</strong> (Bitcoin, many cryptocurrencies)</td><td>Any node can join if it follows the protocol — for example by <strong>proof of work</strong> (solving computational problems) or <strong>proof of stake</strong></td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:13.5px;color:var(--ink-3)\">He described proof of stake as providing resources such as storage or processing capability. In standard usage, proof of stake means locking up (\"staking\") some of the network's own tokens as a guarantee of good behaviour.</p>\n  <h4>Where trees and graphs come in, and what a node does</h4>\n  <p style=\"font-size:14.5px\"><strong>Trees</strong> appear as Merkle trees. <strong>Graphs</strong> appear in the network: graph-traversal algorithms can check whether a node is part of the blockchain network. A blockchain node <strong>follows the protocol</strong>, <strong>connects</strong> to other nodes, uses cryptographic <strong>keys and hashes</strong> for identity, <strong>validates</strong> blocks, <strong>stores</strong> valid blocks, and <strong>broadcasts</strong> valid blocks and transactions so every node keeps the same copy.</p><!--viz:atb-merkle-tree--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Merkle tree with transactions at the bottom, their hashes above, two group hashes H123 and H456, and the Merkle root at the top. Editing T5 changes H5, H456 and the root.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">A Merkle tree over six transactions</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 256\" role=\"img\" aria-label=\"Six transactions T1 to T6 are hashed to H1 to H6. H1 to H3 are hashed together into H123 and H4 to H6 into H456; those two are hashed into the Merkle root. The path from T5 up to the root is highlighted.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M45,196 L45,166\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M45,140 L115,106\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M115,196 L115,166\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M115,140 L115,106\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M185,196 L185,166\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M185,140 L115,106\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M255,196 L255,166\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M255,140 L325,106\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M325,196 L325,166\" style=\"stroke:var(--bad);stroke-width:2;fill:none\"/><path d=\"M325,140 L325,106\" style=\"stroke:var(--bad);stroke-width:2;fill:none\"/><path d=\"M395,196 L395,166\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M395,140 L325,106\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M115,80 L220,52\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M325,80 L220,52\" style=\"stroke:var(--bad);stroke-width:2;fill:none\"/><rect x=\"23\" y=\"196\" width=\"44\" height=\"26\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"45\" y=\"213.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">T1</text><rect x=\"21\" y=\"140\" width=\"48\" height=\"26\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"45\" y=\"157.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">H1</text><rect x=\"93\" y=\"196\" width=\"44\" height=\"26\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"115\" y=\"213.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">T2</text><rect x=\"91\" y=\"140\" width=\"48\" height=\"26\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"115\" y=\"157.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">H2</text><rect x=\"163\" y=\"196\" width=\"44\" height=\"26\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"185\" y=\"213.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">T3</text><rect x=\"161\" y=\"140\" width=\"48\" height=\"26\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"185\" y=\"157.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">H3</text><rect x=\"233\" y=\"196\" width=\"44\" height=\"26\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"255\" y=\"213.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">T4</text><rect x=\"231\" y=\"140\" width=\"48\" height=\"26\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"255\" y=\"157.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">H4</text><rect x=\"303\" y=\"196\" width=\"44\" height=\"26\" rx=\"4\" style=\"fill:var(--bad-soft);stroke:var(--bad);stroke-width:1.5\"/><text x=\"325\" y=\"213.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">T5</text><rect x=\"301\" y=\"140\" width=\"48\" height=\"26\" rx=\"4\" style=\"fill:var(--bad-soft);stroke:var(--bad);stroke-width:1.5\"/><text x=\"325\" y=\"157.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">H5</text><rect x=\"373\" y=\"196\" width=\"44\" height=\"26\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"395\" y=\"213.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">T6</text><rect x=\"371\" y=\"140\" width=\"48\" height=\"26\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"395\" y=\"157.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">H6</text><rect x=\"83\" y=\"80\" width=\"64\" height=\"26\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"115\" y=\"97.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">H123</text><rect x=\"293\" y=\"80\" width=\"64\" height=\"26\" rx=\"4\" style=\"fill:var(--bad-soft);stroke:var(--bad);stroke-width:1.5\"/><text x=\"325\" y=\"97.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">H456</text><rect x=\"160\" y=\"26\" width=\"120\" height=\"26\" rx=\"4\" style=\"fill:var(--bad-soft);stroke:var(--bad);stroke-width:1.5\"/><text x=\"220\" y=\"43.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">Merkle root</text><text x=\"220\" y=\"16\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">stored in the block header</text><text x=\"220\" y=\"244\" text-anchor=\"middle\" style=\"fill:var(--bad);font-size:13px\">edit T5: H5, H456 and the root all change</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">One edited transaction changes every hash on its path to the root, so comparing roots exposes it.</figcaption></figure><!--/viz:atb-merkle-tree-->"
+     "src": "L#20 · L#23",
+     "h": "\n  <h4>The Merkle tree: protecting the transactions</h4>\n  <div class=\"def\">A <b>Merkle tree</b> hashes every transaction (H1…H6), then hashes groups of those hashes, and repeats until one hash remains: the <b>Merkle root</b>, stored in the block header.</div>\n  <ul style=\"font-size:14.5px\">\n   <li>His example grouped six transaction hashes in <strong>threes</strong> (H1–H3 and H4–H6) — a general tree. Some blockchain protocols insist on a <strong>binary</strong> tree (pairs); others accept a general tree</li>\n   <li>Change transaction 5 and H5 changes, so H456 changes, so the <strong>root</strong> changes. Recompute the tree from the block's transactions, compare with the stored root, and any edit shows</li>\n   <li>The block stores the <strong>transactions as well as</strong> the root, because a hash is one-way: the root alone could never give the transactions back</li>\n  </ul>\n  <h4>Decentralisation: copies everywhere</h4>\n  <p style=\"font-size:14.5px\">A linked list typically lives on one computer. A blockchain's blocks are stored on many <strong>nodes of a network</strong>, several nodes holding copies of each block. His analogy: classmates copy an assignment and one person makes an error; you compare notebooks and trust the answer most of them agree on. If one node's copy of a block disagrees with the copies that agree with each other, it is discarded — and no data is lost, because the block lives elsewhere too.</p>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>Consensus mechanism:</strong> the protocol nodes use to agree on which copy is authentic (the details are beyond this course)</li>\n   <li><strong>To succeed, an attacker</strong> would need to change at least <strong>51% of the copies</strong> of a block, all at the same moment, because everything is timestamped to the millisecond. That is why blockchains are considered <strong>practically</strong> tamper-proof</li>\n  </ul>\n  <div class=\"scroller\"><table><thead><tr><th>Who may join</th><th>How</th></tr></thead><tbody>\n   <tr><td><strong>Permissioned blockchain</strong></td><td>Run by an organisation, which designates the systems that act as nodes</td></tr>\n   <tr><td><strong>Public blockchain</strong> (Bitcoin, many cryptocurrencies)</td><td>Any node can join if it follows the protocol — for example by <strong>proof of work</strong> (solving computational problems) or <strong>proof of stake</strong></td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:13.5px;color:var(--ink-3)\">He described proof of stake as providing resources such as storage or processing capability. In standard usage, proof of stake means locking up (\"staking\") some of the network's own tokens as a guarantee of good behaviour.</p>\n  <h4>Where trees and graphs come in, and what a node does</h4>\n  <p style=\"font-size:14.5px\"><strong>Trees</strong> appear as Merkle trees. <strong>Graphs</strong> appear in the network: graph-traversal algorithms can check whether a node is part of the blockchain network. A blockchain node <strong>follows the protocol</strong>, <strong>connects</strong> to other nodes, uses cryptographic <strong>keys and hashes</strong> for identity, <strong>validates</strong> blocks, <strong>stores</strong> valid blocks, and <strong>broadcasts</strong> valid blocks and transactions so every node keeps the same copy.</p><!--viz:atb-merkle-tree--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Merkle tree with transactions at the bottom, their hashes above, two group hashes H123 and H456, and the Merkle root at the top. Editing T5 changes H5, H456 and the root.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">A Merkle tree over six transactions</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 256\" role=\"img\" aria-label=\"Six transactions T1 to T6 are hashed to H1 to H6. H1 to H3 are hashed together into H123 and H4 to H6 into H456; those two are hashed into the Merkle root. The path from T5 up to the root is highlighted.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M45,196 L45,166\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M45,140 L115,106\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M115,196 L115,166\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M115,140 L115,106\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M185,196 L185,166\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M185,140 L115,106\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M255,196 L255,166\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M255,140 L325,106\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M325,196 L325,166\" style=\"stroke:var(--bad);stroke-width:2;fill:none\"/><path d=\"M325,140 L325,106\" style=\"stroke:var(--bad);stroke-width:2;fill:none\"/><path d=\"M395,196 L395,166\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M395,140 L325,106\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M115,80 L220,52\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M325,80 L220,52\" style=\"stroke:var(--bad);stroke-width:2;fill:none\"/><rect x=\"23\" y=\"196\" width=\"44\" height=\"26\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"45\" y=\"213.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">T1</text><rect x=\"21\" y=\"140\" width=\"48\" height=\"26\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"45\" y=\"157.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">H1</text><rect x=\"93\" y=\"196\" width=\"44\" height=\"26\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"115\" y=\"213.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">T2</text><rect x=\"91\" y=\"140\" width=\"48\" height=\"26\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"115\" y=\"157.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">H2</text><rect x=\"163\" y=\"196\" width=\"44\" height=\"26\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"185\" y=\"213.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">T3</text><rect x=\"161\" y=\"140\" width=\"48\" height=\"26\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"185\" y=\"157.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">H3</text><rect x=\"233\" y=\"196\" width=\"44\" height=\"26\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"255\" y=\"213.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">T4</text><rect x=\"231\" y=\"140\" width=\"48\" height=\"26\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"255\" y=\"157.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">H4</text><rect x=\"303\" y=\"196\" width=\"44\" height=\"26\" rx=\"4\" style=\"fill:var(--bad-soft);stroke:var(--bad);stroke-width:1.5\"/><text x=\"325\" y=\"213.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">T5</text><rect x=\"301\" y=\"140\" width=\"48\" height=\"26\" rx=\"4\" style=\"fill:var(--bad-soft);stroke:var(--bad);stroke-width:1.5\"/><text x=\"325\" y=\"157.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">H5</text><rect x=\"373\" y=\"196\" width=\"44\" height=\"26\" rx=\"4\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"395\" y=\"213.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">T6</text><rect x=\"371\" y=\"140\" width=\"48\" height=\"26\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"395\" y=\"157.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">H6</text><rect x=\"83\" y=\"80\" width=\"64\" height=\"26\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"115\" y=\"97.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">H123</text><rect x=\"293\" y=\"80\" width=\"64\" height=\"26\" rx=\"4\" style=\"fill:var(--bad-soft);stroke:var(--bad);stroke-width:1.5\"/><text x=\"325\" y=\"97.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">H456</text><rect x=\"160\" y=\"26\" width=\"120\" height=\"26\" rx=\"4\" style=\"fill:var(--bad-soft);stroke:var(--bad);stroke-width:1.5\"/><text x=\"220\" y=\"43.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">Merkle root</text><text x=\"220\" y=\"16\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">stored in the block header</text><text x=\"220\" y=\"244\" text-anchor=\"middle\" style=\"fill:var(--bad);font-size:13px\">edit T5: H5, H456 and the root all change</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">One edited transaction changes every hash on its path to the root, so comparing roots exposes it.</figcaption></figure><!--/viz:atb-merkle-tree--><h4>Live Lecture 5 additions</h4><ul style=\"font-size:14.5px\"><li><strong>Two layers of protection in a block.</strong> The block’s own hash exposes any change to the block; the Merkle root pins down the individual transactions. Change one transaction and its hash, the group hash above it and the root all change, so the block is rejected</li><li><strong>The 51% attack.</strong> To tamper successfully you would have to take over at least 51% of the nodes at the same moment and make the identical change on all of them: possible in theory, impractical given the resources it needs. (L#20 put it as 51% of the copies of a block; in L#23’s picture every node keeps the same full copy, so the two come to the same thing.)</li><li><strong>The storage cost.</strong> Asked in the chat whether keeping every block on many nodes needs huge storage, he agreed: it does, and it is a major reason blockchain is expensive</li><li><strong>Why Bitcoin mining got harder.</strong> Mining is proof of work: nodes race to solve a problem, and the first to solve it broadcasts the solution. He linked the rising difficulty to the fixed total supply of bitcoins and their rising value: about 15 years ago a laptop could mine, while today it takes a data centre</li></ul>"
     },
     {
      "t": "Blockchain applications and limits",
-     "src": "L#20",
-     "h": "\n  <div class=\"scroller\"><table><thead><tr><th>Application</th><th>What he said</th></tr></thead><tbody>\n   <tr><td><strong>Cryptocurrencies</strong> (Bitcoin and others)</td><td>The best-known use. Technically <strong>not currencies</strong>: a currency is issued by a central bank (in India, the Reserve Bank of India, which now also issues digital currency). Cryptos are <strong>tokens</strong> stored on a blockchain network, whose value rests on the community's agreement</td></tr>\n   <tr><td><strong>Smart contracts</strong></td><td>The contract's conditions are built in and the relevant clause executes when its condition is met — e.g. a penalty if a construction project runs six months late. Stored on a blockchain, it cannot easily be altered, which saves heavy legal fees for drafting, evaluating and enforcing contracts</td></tr>\n   <tr><td><strong>Revenue records</strong></td><td>Land registries in some Indian states are on blockchain</td></tr>\n   <tr><td><strong>Health records</strong></td><td>India's National Health Mission envisages electronic health records, as in many European countries; on a blockchain, past data cannot be altered — new entries are added as new transactions</td></tr>\n   <tr><td><strong>Supply chain</strong></td><td>Named among the other applications</td></tr>\n  </tbody></table></div>\n  <h4>The manager's question: is it worth it?</h4>\n  <p style=\"font-size:14.5px\">Cryptocurrencies and smart contracts usually run on public blockchains. Revenue and health records need a blockchain run by an organisation, and <strong>implementation is costly</strong>, so most are still <strong>pilots</strong>. A robust technology is not automatically a good investment: if it does not deliver enough return or benefit, it will not be adopted. Smart contracts save lawyers' fees; a tamper-proof land register must justify its cost. Blockchain will spread widely only when implementation costs fall.</p>"
+     "src": "L#20 · L#23",
+     "h": "\n  <div class=\"scroller\"><table><thead><tr><th>Application</th><th>What he said</th></tr></thead><tbody>\n   <tr><td><strong>Cryptocurrencies</strong> (Bitcoin and others)</td><td>The best-known use. Technically <strong>not currencies</strong>: a currency is issued by a central bank (in India, the Reserve Bank of India, which now also issues digital currency). Cryptos are <strong>tokens</strong> stored on a blockchain network, whose value rests on the community's agreement</td></tr>\n   <tr><td><strong>Smart contracts</strong></td><td>The contract's conditions are built in and the relevant clause executes when its condition is met — e.g. a penalty if a construction project runs six months late. Stored on a blockchain, it cannot easily be altered, which saves heavy legal fees for drafting, evaluating and enforcing contracts</td></tr>\n   <tr><td><strong>Revenue records</strong></td><td>Land registries in some Indian states are on blockchain</td></tr>\n   <tr><td><strong>Health records</strong></td><td>India's National Health Mission envisages electronic health records, as in many European countries; on a blockchain, past data cannot be altered — new entries are added as new transactions</td></tr>\n   <tr><td><strong>Supply chain</strong></td><td>Named among the other applications</td></tr>\n  </tbody></table></div>\n  <h4>The manager's question: is it worth it?</h4>\n  <p style=\"font-size:14.5px\">Cryptocurrencies and smart contracts usually run on public blockchains. Revenue and health records need a blockchain run by an organisation, and <strong>implementation is costly</strong>, so most are still <strong>pilots</strong>. A robust technology is not automatically a good investment: if it does not deliver enough return or benefit, it will not be adopted. Smart contracts save lawyers' fees; a tamper-proof land register must justify its cost. Blockchain will spread widely only when implementation costs fall.</p><h4>Live Lecture 5 additions</h4><ul style=\"font-size:14.5px\"><li><strong>Public vs enterprise blockchain.</strong> Bitcoin runs on a public blockchain that anyone with processing power can join. An organisation can instead run an <strong>enterprise</strong> (private) blockchain across its own servers in several locations; IBM has offered such solutions, but they are so costly that few organisations have adopted them</li><li><strong>Cost decides, again.</strong> He recalled that around 2018 a Government of India committee weighed blockchain against the existing security and encryption, already strong, and judged blockchain not worth the cost. Andhra Pradesh and Telangana piloted it for revenue (land) records and Estonia for health records, but cost has kept such projects small</li><li><strong>Smart contracts</strong> are the second most popular use after cryptocurrency: a paper contract can be altered, while on a blockchain every change is recorded permanently</li></ul>"
+    }
+   ]
+  },
+  {
+   "id": "sorting",
+   "title": "Sorting algorithms",
+   "tag": "Lecture 25 · Module 5",
+   "lede": "Putting data in order so it can be searched, shown and reported: bubble sort first, with its passes, swaps and O(n²) cost; the other sorts follow in later lectures.",
+   "topics": [
+    {
+     "t": "What sorting is for",
+     "src": "L#25",
+     "h": "<p style=\"font-size:14.5px\">Module 5, the last, is about sorting. <strong>Sorting</strong> arranges elements in a specific order, ascending or descending, by some parameter: marks, names (alphabetical order), price, quality, travel time, or a platform’s own measure of “relevance”. The parameter may change; what makes it sorting is that the result follows one definite order.</p><ul style=\"font-size:14.5px\"><li><strong>Sorting serves searching.</strong> Binary, jump and exponential search (L#22) all assume sorted data, so efficient search usually needs a sort first. That is why algorithms courses teach the two together</li><li><strong>Sorting serves people.</strong> E-commerce results arrive sorted by relevance, and you can re-sort by price, low to high or high to low, or filter by rating; flight results can be sorted by fare or by travel time</li><li><strong>Sorting serves reporting.</strong> To award grades he sorts marks from highest to lowest, which makes the A and A− cut-offs easy to see. He then enters the grades on the ERP, where students appear in roll-number order: the same data sorted two ways for two jobs</li></ul><p style=\"font-size:14.5px\"><strong>Industry builds its own variants.</strong> Part of Google’s early lead came from <strong>PageRank</strong>, named after co-founder Larry Page, not after web pages. Earlier search engines ranked pages roughly by counting the search terms in them; PageRank’s ranking made the results far more relevant, and he described it as basically a sorting algorithm. (L#22 mentioned it as a search innovation: ranking the results is the sorting step of search.)</p><p style=\"font-size:14.5px\">The course covers the basic algorithms, since industrial ones are variants of them: bubble sort in this lecture, the others in the lectures that follow.</p>"
+    },
+    {
+     "t": "Bubble sort: passes and swaps",
+     "src": "L#25",
+     "h": "<div class=\"def\"><b>Bubble sort</b> repeatedly compares <b>adjacent</b> elements and <b>swaps</b> them when they are in the wrong order. Like air bubbles rising through water, values drift one way and the rest the other, until every element sits in its place.</div><h4>The classic method: largest to the end</h4><ol style=\"font-size:14.5px\"><li>Start at the first element and compare it with the next one</li><li>If the first is larger, swap them</li><li>Move one place on and compare the next pair, all the way to the end of the list. One full sweep is a <strong>pass</strong> (a round)</li><li>After pass 1 the <strong>largest</strong> value is in its final place at the end; after pass 2 the two largest are; and so on</li><li>Each pass can stop <strong>one comparison earlier</strong> than the one before, because the end of the list is already sorted</li></ol><p style=\"font-size:14.5px\"><strong>His example: [10, 5, 8, 4, 3, 2].</strong> He put the largest value first so you can watch it travel: in pass 1 it is swapped past every other element (see the figure). Values in bold are in their final places.</p><div class=\"scroller\"><table><thead><tr><th>Pass</th><th>List after the pass</th><th>Comparisons</th><th>Swaps</th></tr></thead><tbody><tr><td>1</td><td style=\"font-family:var(--mono)\">5 8 4 3 2 <b>10</b></td><td>5</td><td>5</td></tr><tr><td>2</td><td style=\"font-family:var(--mono)\">5 4 3 2 <b>8</b> <b>10</b></td><td>4</td><td>3</td></tr><tr><td>3</td><td style=\"font-family:var(--mono)\">4 3 2 <b>5</b> <b>8</b> <b>10</b></td><td>3</td><td>3</td></tr><tr><td>4</td><td style=\"font-family:var(--mono)\">3 2 <b>4</b> <b>5</b> <b>8</b> <b>10</b></td><td>2</td><td>2</td></tr><tr><td>5</td><td style=\"font-family:var(--mono)\"><b>2</b> <b>3</b> <b>4</b> <b>5</b> <b>8</b> <b>10</b></td><td>1</td><td>1</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Six elements, <strong>five passes</strong>, 15 comparisons, 14 swaps. In pass 2 the first comparison, 5 and 8, needs no swap: compare and move on.</p><div class=\"def\"><b>How many passes?</b> He said the number of passes equals the number of elements, n. His own six-element list was sorted after five passes, and he counted five. Once n − 1 values are in place the last one has nowhere else to go, so <b>n − 1 passes</b> are enough. In a written answer, show the passes that change something; there is no need for an empty sixth.</div><h4>His exercise: two passes on names</h4><p style=\"font-size:14.5px\">Sorting works on anything that can be compared. His list had seven names with first letters M, R, S, L, A, B, N (Mohan, Ram, Sham, Lakshman, Arjun, Bheem and a seventh starting with N), compared by first letter, A lowest and Z highest. Pass 1: M–R and R–S stay as they are; then S is swapped past L, A, B and N, so Sham reaches the end. Pass 2: R is swapped past L, A, B and N, so Ram sits just before Sham. After two passes: M L A B N R S, with the two “largest” names in place.</p><div class=\"def\"><b>From the lecture (L#25):</b> in a <b>quiz</b> you may work a sort out in your head; in the <b>final exam</b> you must <b>show each step</b>, so practise writing out every pass.</div><h4>The alternative method: smallest to the front</h4><p style=\"font-size:14.5px\">Start from the <strong>end</strong> of the list and compare each element with the one <strong>before</strong> it; if the later one is smaller, swap. After pass 1 the <strong>smallest</strong> value is at the front, and each later pass stops one place earlier. He deliberately put the smallest value, 2, last in the same list so that it travels the whole way:</p><div class=\"scroller\"><table><thead><tr><th>Pass</th><th>List after the pass</th><th>Swaps</th></tr></thead><tbody><tr><td>1</td><td style=\"font-family:var(--mono)\"><b>2</b> 10 5 8 4 3</td><td>5</td></tr><tr><td>2</td><td style=\"font-family:var(--mono)\"><b>2</b> <b>3</b> 10 5 8 4</td><td>4</td></tr><tr><td>3</td><td style=\"font-family:var(--mono)\"><b>2</b> <b>3</b> <b>4</b> 10 5 8</td><td>3</td></tr><tr><td>4</td><td style=\"font-family:var(--mono)\"><b>2</b> <b>3</b> <b>4</b> <b>5</b> 10 8</td><td>1</td></tr><tr><td>5</td><td style=\"font-family:var(--mono)\"><b>2</b> <b>3</b> <b>4</b> <b>5</b> <b>8</b> <b>10</b></td><td>1</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Both methods are bubble sort and give the same sorted list. Most computer-science textbooks show the classic version; some use the alternative, and he believed the course’s recommended textbook was one of them. It is: the textbook’s bubble sort compares from the right-hand end. Sort order is whatever the user needs: some shoppers sort prices from high to low to see the top of the range first.</p><!--viz:atb-bubble-pass1-steps--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace of the first pass of bubble sort on 10, 5, 8, 4, 3, 2. The value 10 is compared with 5, 8, 4, 3 and 2 in turn and swapped each time, ending at the right: 5, 8, 4, 3, 2, 10.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Pass 1, one comparison at a time</div><p style=\"font-size:13.5px;color:var(--ink-2);margin-bottom:8px;font-family:var(--mono)\">pass 1 of [10, 5, 8, 4, 3, 2] · classic method, left to right</p><div class=\"scroller\"><table><thead><tr><th>#</th><th>Compare</th><th>Action</th><th>List after</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono)\">10 vs 5</td><td>10 &gt; 5: swap</td><td style=\"font-family:var(--mono)\">5 <b style=\"color:var(--blue)\">10</b> 8 4 3 2</td></tr><tr><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono)\">10 vs 8</td><td>10 &gt; 8: swap</td><td style=\"font-family:var(--mono)\">5 8 <b style=\"color:var(--blue)\">10</b> 4 3 2</td></tr><tr><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono)\">10 vs 4</td><td>10 &gt; 4: swap</td><td style=\"font-family:var(--mono)\">5 8 4 <b style=\"color:var(--blue)\">10</b> 3 2</td></tr><tr><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono)\">10 vs 3</td><td>10 &gt; 3: swap</td><td style=\"font-family:var(--mono)\">5 8 4 3 <b style=\"color:var(--blue)\">10</b> 2</td></tr><tr><td style=\"font-family:var(--mono)\">5</td><td style=\"font-family:var(--mono)\">10 vs 2</td><td>10 &gt; 2: swap</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">5 8 4 3 2 <b style=\"color:var(--blue)\">10</b></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Five comparisons, five swaps: the largest value bubbles all the way to the end in one pass.</figcaption></figure><!--/viz:atb-bubble-pass1-steps-->"
+    },
+    {
+     "t": "Bubble sort’s O(n²) complexity",
+     "src": "L#25",
+     "h": "<p style=\"font-size:14.5px\">Big O asks how the work grows as the list grows (L#21). Count the comparisons: each pass makes one fewer than the pass before, down to a single comparison in the last pass.</p><p style=\"font-size:14.5px\"><span style=\"font-family:var(--mono)\">(n − 1) + (n − 2) + … + 2 + 1 = n(n − 1) ÷ 2 = ½n² − ½n</span></p><p style=\"font-size:14.5px\">The sum’s formula is a standard result from mathematics; he said you do not need its derivation. The two Big O rules finish the job: drop the <strong>lower-order term</strong> (−½n is small beside ½n²) and drop the <strong>constant multiplier</strong> (½). What remains: <strong>O(n²)</strong>.</p><div class=\"def\"><b>n or n − 1 comparisons in pass 1?</b> His complexity slide starts the count at n comparisons in pass 1. For six elements he actually made five, and pointed this out himself: a list of n elements has only n − 1 adjacent pairs. The formula n(n − 1) ÷ 2 is the sum that starts at n − 1, and for n = 6 it gives 15, matching his example. He added that for large lists the difference doesn’t matter, because Big O is about the growth rate, not the exact count.</div><h4>Why O(n²) hurts</h4><div class=\"scroller\"><table><thead><tr><th>n</th><th>Comparisons, n(n − 1) ÷ 2</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">6</td><td style=\"font-family:var(--mono)\">15</td></tr><tr><td style=\"font-family:var(--mono)\">10</td><td style=\"font-family:var(--mono)\">45</td></tr><tr><td style=\"font-family:var(--mono)\">1,000</td><td style=\"font-family:var(--mono)\">4,99,500</td></tr><tr><td style=\"font-family:var(--mono)\">2,000</td><td style=\"font-family:var(--mono)\">19,99,000 (about 4 times as many)</td></tr><tr><td style=\"font-family:var(--mono)\">10,000</td><td style=\"font-family:var(--mono)\">4,99,95,000 (about 5 crore)</td></tr></tbody></table></div><p style=\"font-size:14.5px\">His own illustration used n² directly: 5² = 25 but 6² = 36; 10² = 100 but 11² = 121. Each extra element adds a whole extra round of work, and with lakhs of customer records that becomes unworkable. Had the algorithm been O(n), one extra record would hardly matter.</p><p style=\"font-size:14.5px\">So bubble sort is <strong>logically simple</strong>, which is why textbooks start with it, and acceptable for a small list, but <strong>unsuitable for large lists and business use</strong>. Its space needs are modest; time is the problem. Its idea of successive comparisons does reappear inside other algorithms.</p><!--viz:atb-bubble-comparison-staircase--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A staircase of boxes: pass 1 has 5 comparisons, pass 2 has 4, then 3, 2 and 1, for a total of 15, which equals 6 times 5 divided by 2.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Comparisons per pass for six elements</div><div style=\"font-size:14px\"><div style=\"display:flex;align-items:center;gap:8px;margin-bottom:5px\"><span style=\"width:52px;color:var(--ink-3);font-size:13px\">Pass 1</span><span style=\"display:flex\"><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span></span><span style=\"font-family:var(--mono);color:var(--ink-2)\">5</span></div><div style=\"display:flex;align-items:center;gap:8px;margin-bottom:5px\"><span style=\"width:52px;color:var(--ink-3);font-size:13px\">Pass 2</span><span style=\"display:flex\"><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span></span><span style=\"font-family:var(--mono);color:var(--ink-2)\">4</span></div><div style=\"display:flex;align-items:center;gap:8px;margin-bottom:5px\"><span style=\"width:52px;color:var(--ink-3);font-size:13px\">Pass 3</span><span style=\"display:flex\"><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span></span><span style=\"font-family:var(--mono);color:var(--ink-2)\">3</span></div><div style=\"display:flex;align-items:center;gap:8px;margin-bottom:5px\"><span style=\"width:52px;color:var(--ink-3);font-size:13px\">Pass 4</span><span style=\"display:flex\"><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span></span><span style=\"font-family:var(--mono);color:var(--ink-2)\">2</span></div><div style=\"display:flex;align-items:center;gap:8px;margin-bottom:5px\"><span style=\"width:52px;color:var(--ink-3);font-size:13px\">Pass 5</span><span style=\"display:flex\"><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span></span><span style=\"font-family:var(--mono);color:var(--ink-2)\">1</span></div><p style=\"margin-top:8px;font-family:var(--mono);color:var(--ink)\">5 + 4 + 3 + 2 + 1 = <b>15</b> = 6 × 5 ÷ 2</p><p style=\"font-size:13.5px;color:var(--ink-3)\">For n elements: (n − 1) + … + 1 = n(n − 1) ÷ 2, about half of an n × n square → O(n²)</p></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The staircase is half a square, which is why the total grows like n².</figcaption></figure><!--/viz:atb-bubble-comparison-staircase-->"
+    },
+    {
+     "t": "Textbook: Sorting Algorithms",
+     "src": "Codeless DSA ch7",
+     "h": "<p>Sorting arranges data by category or into an order, and many other tasks depend on it: binary search needs sorted input, databases present ordered results, and duplicates become easy to spot once identical items sit side by side. The chapter walks through five sorts. Bubble sort, the one L#25 taught, repeatedly compares and swaps neighbours; the book runs it from the right-hand end, the lecture's alternative method. Selection sort repeatedly finds the smallest remaining item and swaps it into place, and insertion sort grows a sorted section by slotting each new item into position; like bubble sort both are O(n²) and suit only small lists. Merge sort and quick sort use divide and conquer and typically run in O(n log n). For a manager, that gap is the difference between a nightly batch that finishes and one that does not.</p><!--viz:atb-five-sorts-compare--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison table of five sorts. Bubble sort, taught in L#25, compares and swaps neighbours, O(n squared). Selection sort swaps the smallest remaining value to the front, O(n squared). Insertion sort slides each next item into a sorted section, O(n squared) worst case. Merge sort halves and merges, O(n log n). Quick sort partitions around a pivot, O(n log n) typically and O(n squared) in the worst case.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The chapter's five sorts at a glance</div><div class=\"scroller\"><table><thead><tr><th>Sort</th><th>The repeated move</th><th>Time</th></tr></thead><tbody><tr><td style=\"background:var(--blue-soft)\"><b>Bubble</b> (L#25)</td><td>Compare neighbours, swap if out of order</td><td><span style=\"white-space:nowrap;font-family:var(--mono)\">O(n²)</span></td></tr><tr><td><b>Selection</b></td><td>Find the smallest remaining value, swap it to the front of the unsorted part</td><td><span style=\"white-space:nowrap;font-family:var(--mono)\">O(n²)</span></td></tr><tr><td><b>Insertion</b></td><td>Take the next item, slide it left into the sorted section</td><td><span style=\"white-space:nowrap;font-family:var(--mono)\">O(n²)</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">worst case</span></td></tr><tr><td><b>Merge</b></td><td>Halve down to single items, merge back in order</td><td><span style=\"white-space:nowrap;font-family:var(--mono)\">O(n log n)</span></td></tr><tr><td><b>Quick</b></td><td>Partition around a pivot, then sort each side</td><td><span style=\"white-space:nowrap;font-family:var(--mono)\">O(n log n)</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">typical; worst O(n²)</span></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only bubble sort had been lectured by L#25. The three simple sorts share O(n²); the two divide-and-conquer sorts reach O(n log n).</figcaption></figure><!--/viz:atb-five-sorts-compare--><!--viz:atb-selection-vs-insertion--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace of selection sort and insertion sort on 33, 8, 26, 41, 14, 19. Selection sort swaps the smallest remaining value to the front each step: 8, then 14, then 19, then 26, and at step 5 finds 33 already in place. Insertion sort grows a sorted front section: 8 slides past 33, 26 slides past 33, 41 stays, 14 slides past three items, 19 slides past three items. Both end with 8, 14, 19, 26, 33, 41.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Selection vs insertion on the same list</div><p style=\"font-size:14px;margin:0 0 8px\">Start: <span style=\"font-family:var(--mono)\">33 8 26 41 14 19</span>. Shaded = the part already in order.</p><div class=\"scroller\"><table><thead><tr><th>Step</th><th>Selection sort</th><th>Insertion sort</th></tr></thead><tbody><tr><td>1</td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8</span> 33 26 41 14 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">swap 8 ↔ 33</span></td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 33</span> 26 41 14 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">8 slides past 33</span></td></tr><tr><td>2</td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14</span> 26 41 33 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">swap 14 ↔ 33</span></td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 26 33</span> 41 14 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">26 slides past 33</span></td></tr><tr><td>3</td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14 19</span> 41 33 26</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">swap 19 ↔ 26</span></td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 26 33 41</span> 14 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">41 stays</span></td></tr><tr><td>4</td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14 19 26</span> 33 41</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">swap 26 ↔ 41</span></td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14 26 33 41</span> 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">14 slides past 26, 33, 41</span></td></tr><tr><td>5</td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14 19 26 33 41</span></span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">33 already in place</span></td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14 19 26 33 41</span></span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">19 slides past 26, 33, 41</span></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Selection sort's front part is final from the first step; insertion sort's front part is only in order among itself until the last item is placed.</figcaption></figure><!--/viz:atb-selection-vs-insertion--><!--viz:atb-merge-sort-levels--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Merge sort on 36, 15, 52, 9, 27, 44, 3, 18. Three levels of splitting reach eight single items. Three levels of merging give 15 36, 9 52, 27 44, 3 18; then 9 15 36 52 and 3 18 27 44; then the sorted list 3, 9, 15, 18, 27, 36, 44, 52.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Merge sort: split down, merge up</div><div style=\"display:flex;flex-direction:column;gap:8px;font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Start</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">36 15 52 9 27 44 3 18</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Split 1</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">36 15 52 9</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">27 44 3 18</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Split 2</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">36 15</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">52 9</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">27 44</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">3 18</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Split 3</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">36</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">15</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">52</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">9</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">27</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">44</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">3</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">18</span></div><div style=\"border-top:1px solid var(--rule);margin:2px 0\"></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Merge 1</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">15 36</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">9 52</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">27 44</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">3 18</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Merge 2</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">9 15 36 52</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">3 18 27 44</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Merge 3</span><span style=\"padding:3px 6px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono)\">3 9 15 18 27 36 44 52</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Eight items need three levels each way (log₂ 8 = 3), and every level handles all eight items: n log n.</figcaption></figure><!--/viz:atb-merge-sort-levels--><!--viz:atb-quick-sort-partition--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Quick sort partition of 22, 42, 31, 14, 39, 12, 41 around the pivot 31. The left marker stops at 42 and the right marker at 12, and they swap; then the left marker stops at 31 and the right at 14, and they swap; the markers cross. Result: 22, 12, 14 on the left, all smaller than 31; 31 in its final place; 39, 42, 41 on the right, all larger.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One quick-sort partition, pivot 31</div><div style=\"display:flex;flex-direction:column;gap:8px;font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Start</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">22</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">42</span><span style=\"padding:3px 6px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono)\">31</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">14</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">39</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">12</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">41</span></div><div style=\"font-size:13.5px;color:var(--ink-2)\">The left marker stops at a value ≥ 31, the right marker at a value &lt; 31, and they swap:</div><ol style=\"margin:0;padding-left:20px;font-size:13.5px;color:var(--ink-2)\"><li>left stops at 42, right stops at 12: swap → <span style=\"font-family:var(--mono)\">22 12 31 14 39 42 41</span></li><li>left stops at 31, right stops at 14: swap → <span style=\"font-family:var(--mono)\">22 12 14 31 39 42 41</span></li><li>the markers cross: the partition is done</li></ol><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">After</span><span style=\"padding:4px 8px;border:1px solid var(--rule-2);border-radius:4px;background:var(--good-soft);font-family:var(--mono)\">22 12 14</span><span style=\"padding:3px 6px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono)\">31</span><span style=\"padding:4px 8px;border:1px solid var(--rule-2);border-radius:4px;background:var(--clay-soft);font-family:var(--mono)\">39 42 41</span></div><div style=\"font-size:13px;color:var(--ink-3)\">Smaller than 31 · pivot in its final place · larger than 31. Next, each side is partitioned the same way.</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">After one partition the pivot is final but neither side is sorted yet: quick sort now repeats the same step on each side.</figcaption></figure><!--/viz:atb-quick-sort-partition--><p><strong>What sorting is for</strong> — Covered in L#25. The book lets sorting mean grouping by category as well as putting items in order; L#25 defined it as one definite order, ascending or descending, by a chosen parameter. Either way it pays off later: binary search needs sorted input, database queries return ordered results, and duplicates sit side by side once the data is sorted.<br><em>e.g.</em> Sorting 50,000 client records by PAN puts any duplicate PANs next to each other.</p><p><strong>Bubble sort, the book's way</strong> — Covered in L#25. Bubble sort compares neighbouring pairs and swaps any that are out of order. The book starts at the right-hand end and works left, so each pass carries the smallest remaining value to the front. L#25 taught the classic left-to-right version, which carries the largest to the end, and showed the book's direction as the alternative method. Both give the same sorted list.<br><em>e.g.</em> [18, 27, 6, 33, 12] → after one right-to-left pass [6, 18, 27, 12, 33].</p><p><strong>When bubble sort can stop</strong> — Covered in L#25. L#25 counted passes: n − 1 of them always suffice. The book simply repeats passes until the list is sorted, and a pass with no swaps proves it, because every neighbouring pair is then in order. A version that checks for this can stop early on a list that is already nearly in order.<br><em>e.g.</em> [18, 27, 6, 33, 12] is in order after pass 2; pass 3 makes no swaps, so the sort stops after 3 passes instead of 4.</p><p><strong>Selection sort</strong> — Not covered in L#25, which said the other sorts follow in later lectures. Selection sort uses a linear search to find the smallest remaining value and swaps it with the leftmost unsorted position, then repeats on the rest. A loop inside a loop gives O(n²), but it makes at most one swap per pass. The book rates it slightly better than bubble sort and fine for small arrays.<br><em>e.g.</em> [33, 8, 26, 41, 14, 19] → first pass swaps 8 to the front: [8, 33, 26, 41, 14, 19].</p><p><strong>Insertion sort</strong> — Not covered in L#25, which said the other sorts follow in later lectures. Insertion sort treats the leftmost item as a sorted section, then takes each next item and slides it left past larger items until it sits in the right place. It never hunts for the smallest remaining value, so it stops early when an item is already close to its place; the book calls it more efficient than selection sort, though its worst case is still O(n²).<br><em>e.g.</em> Arranging cheques in hand: pick up each new one and slide it into place among those already ordered.</p><p><strong>Merge sort</strong> — Not covered in L#25, which said the other sorts follow in later lectures. Merge sort halves the list again and again until every piece holds one item, then merges pieces back together pairwise, each merge producing an ordered list, until one sorted list remains. It is usually written recursively and runs in O(n log n): about log₂ n levels of halving, with all n items handled at each level.<br><em>e.g.</em> Each regional office sorts its own sales file; head office merges the sorted files into one ranked list.</p><p><strong>Quick sort</strong> — Not covered in L#25, which said the other sorts follow in later lectures. Quick sort picks a pivot (often at random). Markers move in from both ends, swapping items so that values smaller than the pivot gather on the left and larger ones on the right. Each side is then sorted the same way, recursively. The book gives O(n log n); that is its typical behaviour, and poor pivots can make it quadratic.<br><em>e.g.</em> Splitting loan files into 'below ₹5 lakh' and 'above ₹5 lakh', then splitting each pile again.</p><div class=\"card\"><strong>Case: The book's merge-sort walkthrough</strong> <em>(Chapter 7, Merge Sort: the seven-number example)</em><p>The book splits a seven-number list into halves, then quarters, then single items, and rebuilds it by merging pairs into ordered lists, then those into larger ordered lists, until one sorted list remains. It links the speed to the number of halving levels.</p><p><em>Lesson:</em> Divide and conquer turns a quadratic job into an n log n one.</p><p><em>Think:</em> How does the national-sales-report example from the lectures map onto merge sort's split and merge phases?</p></div><details><summary>Worked problem: Bubble sort the book's way, with an early stop</summary><p>Sort [18, 27, 6, 33, 12] with the book's bubble sort: start at the right-hand end, compare each item with the one before it, swap if the later one is smaller, and stop after a pass with no swaps.</p><ol><li>Pass 1: (33, 12) swap → (6, 12) keep → (27, 6) swap → (18, 6) swap → [6, 18, 27, 12, 33]; 4 comparisons, 3 swaps; 6 is in place.</li><li>Pass 2: (12, 33) keep → (27, 12) swap → (18, 12) swap → [6, 12, 18, 27, 33]; 3 comparisons, 2 swaps.</li><li>Pass 3: (27, 33) keep → (18, 27) keep; 2 comparisons, no swaps, so the list is sorted and the sort stops.</li></ol><p><strong>Answer:</strong> [6, 12, 18, 27, 33] after 3 passes, 9 comparisons and 5 swaps. Without the check, the full n − 1 = 4 passes would make 10 comparisons.</p></details><details><summary>Worked problem: Merge sort trace</summary><p>Merge-sort the eight weekly order counts [41, 7, 33, 19, 2, 58, 24, 12].</p><ol><li>Split: [41, 7, 33, 19] and [2, 58, 24, 12].</li><li>Split: [41, 7] [33, 19] [2, 58] [24, 12], then single items.</li><li>Merge pairs: [7, 41] [19, 33] [2, 58] [12, 24].</li><li>Merge again: [7, 19, 33, 41] and [2, 12, 24, 58].</li><li>Final merge: [2, 7, 12, 19, 24, 33, 41, 58].</li></ol><p><strong>Answer:</strong> [2, 7, 12, 19, 24, 33, 41, 58] — three levels of splitting for eight items (log₂ 8 = 3).</p></details><details><summary>Worked problem: How much does the algorithm choice matter?</summary><p>An HR system must sort 10,000 employee records. Compare the approximate work of an O(n²) sort and an O(n log₂ n) sort.</p><ol><li>n² = 10,000 × 10,000 = 100,000,000 (10 crore) steps.</li><li>log₂ 10,000 ≈ 13.3, so n log₂ n ≈ 10,000 × 13.3 ≈ 133,000 steps.</li><li>Ratio ≈ 100,000,000 ÷ 133,000 ≈ 750.</li></ol><p><strong>Answer:</strong> The O(n log n) sort does roughly 750 times less work; the gap widens as n grows.</p></details><div class=\"def\"><b>Book vs lecture — Direction of bubble sort.</b> Book: Starts at the right-hand end and swaps leftwards, so each pass moves the smallest value to the front. Lecture: L#25 taught the classic left-to-right method, which moves the largest value to the end, and showed working from the end as the alternative method, which he believed the course textbook used. It does. <b>Both are bubble sort and give the same final order. Follow the direction a question states; if none is stated, use the classic left-to-right method from L#25.</b></div><div class=\"def\"><b>Book vs lecture — How many passes.</b> Book: Repeats passes until the array is sorted, without counting them. Lecture: L#25 said the number of passes equals the number of elements, n, but his six-element example was sorted after five passes, and he counted five. <b>n − 1 passes always suffice. A version that stops after a pass with no swaps can finish sooner. In the final exam show every pass (L#25).</b></div><div class=\"def\"><b>Book vs lecture — Comparisons per pass and the O(n²) count.</b> Book: States O(n²) with no count of comparisons. Lecture: L#25: each pass makes one comparison fewer, so the total is n(n − 1) ÷ 2. His slide began the count at n in pass 1, though his own example made n − 1 (five for six elements). <b>Use n − 1 comparisons in pass 1 and n(n − 1) ÷ 2 in all. The complexity is O(n²) either way.</b></div><div class=\"def\"><b>Book vs lecture — What sorting is.</b> Book: Arranging data in a particular way, either by category (similar properties) or in an order or sequence. Lecture: L#25: arranging elements in one specific order, ascending or descending, by a chosen parameter such as marks, name, price or relevance. <b>Give the lecture's definition. The book's grouping by category is a looser, everyday sense of the word.</b></div><div class=\"def\"><b>Book vs lecture — The other four sorts.</b> Book: Covers selection, insertion, merge and quick sort after bubble sort. Lecture: L#25 taught bubble sort only and said the other sorts follow in the lectures after it. <b>Learn them from this chapter for now; when those lectures are released, check them against these notes, and the lecture wins where they differ.</b></div><div class=\"def\"><b>Book vs lecture — Quick sort time complexity.</b> Book: Gives quick sort a time complexity of n log n with no caveat. Lecture: Not covered by L#25. <b>Say O(n log n) on average or typically; poor pivot choices can degrade it to O(n²) in the worst case. Merge sort is O(n log n) even in the worst case.</b></div><div class=\"def\"><b>Book vs lecture — Divide and conquer examples.</b> Book: Introduces divide and conquer as the halving method behind merge sort and quick sort. Lecture: Divide and conquer was taught in Module 1 with business examples (regional audits, national sales report) rather than sorting. <b>No conflict: merge sort is the standard computing example of the same idea. If a quiz asks which approach merge sort uses, answer divide and conquer.</b></div>"
     }
    ]
   }
@@ -607,6 +683,14 @@ HUB.addCourse({
   {
    "name": "Blockchain",
    "unit": "blockchain"
+  },
+  {
+   "name": "Sorting",
+   "unit": "sorting"
+  },
+  {
+   "name": "Graph search & shortest paths",
+   "unit": "searching"
   }
  ],
  "traps": [
@@ -1441,6 +1525,216 @@ HUB.addCourse({
    "p": "He started at 1 to keep the √n jumps and middle positions clean. Programming languages usually start at 0, so check which convention a question uses before you count.",
    "f": "count from 1 here",
    "lec": 22
+  },
+  {
+   "id": "atb-t0123",
+   "h": "A bubble pass with no swaps means the list is sorted; a selection pass with no swap does not",
+   "p": "If bubble sort swaps nothing, every neighbouring pair is in order, so the sort can stop. A selection pass with no swap only means the next smallest value was already in place; the rest may still be jumbled.",
+   "f": "no swaps → done (bubble only)",
+   "bk": "Codeless DSA ch7"
+  },
+  {
+   "id": "atb-t0124",
+   "h": "Bubble, selection and insertion sort are all O(n²)",
+   "p": "Insertion sort is usually faster in practice and selection beats bubble slightly, but all three share the quadratic worst case.",
+   "f": "three simple sorts, n²",
+   "bk": "Codeless DSA ch7"
+  },
+  {
+   "id": "atb-t0125",
+   "h": "Insertion sort does not hunt for the smallest value",
+   "p": "Selection sort scans the whole unsorted part for its minimum on every pass; insertion sort takes the next item as it comes and slides it left into the sorted section. A snapshot with the minimum swapped to the front points to selection sort.",
+   "f": "selection finds, insertion slides",
+   "bk": "Codeless DSA ch7"
+  },
+  {
+   "id": "atb-t0126",
+   "h": "Merge and quick sort are divide and conquer, not greedy",
+   "p": "They split the problem, solve the parts and combine. Greedy takes the best local choice at each step.",
+   "f": "halve and combine",
+   "bk": "Codeless DSA ch7"
+  },
+  {
+   "id": "atb-t0127",
+   "h": "One quick-sort partition does not sort the list",
+   "p": "It only guarantees smaller values on one side of the pivot and larger ones on the other. Each side still has to be sorted.",
+   "f": "partitioned ≠ sorted",
+   "bk": "Codeless DSA ch7"
+  },
+  {
+   "id": "atb-t0128",
+   "h": "Quick sort's O(n log n) is typical, not guaranteed",
+   "p": "The book quotes only n log n. Repeatedly poor pivots can make it quadratic in the worst case.",
+   "f": "bad pivots, slow sort",
+   "bk": "Codeless DSA ch7"
+  },
+  {
+   "id": "atb-t0129",
+   "h": "Merge sort's levels grow as log n, not n",
+   "p": "Halving 8 items takes 3 levels, 16 items 4, and 10 lakh items only about 20. Each level handles all n items, which is where n log n comes from.",
+   "f": "levels = log₂ n",
+   "bk": "Codeless DSA ch7"
+  },
+  {
+   "id": "atb-t0130",
+   "h": "BFS finds the fewest edges, not the lowest total cost",
+   "p": "On a weighted graph a route with more edges can be cheaper. BFS's fewest-hop route is also the cheapest only when every edge costs the same; otherwise use Dijkstra.",
+   "f": "hops ≠ cost",
+   "bk": "Codeless DSA ch8"
+  },
+  {
+   "id": "atb-t0131",
+   "h": "A settled node is final, so one negative cost can leave Dijkstra wrong",
+   "p": "Dijkstra never revisits a settled node. With one-way costs S → A 2, S → B 4, B → A −3 it fixes A at 2 before it looks at B, although S → B → A costs 1. Bellman-Ford finds the 1.",
+   "f": "settled = never revisited",
+   "bk": "Codeless DSA ch8"
+  },
+  {
+   "id": "atb-t0132",
+   "h": "Dijkstra starts the source at 0 and everything else at infinity",
+   "p": "Infinity means no route is known yet. Costs only fall as cheaper routes are found.",
+   "f": "0 and ∞",
+   "bk": "Codeless DSA ch8"
+  },
+  {
+   "id": "atb-t0133",
+   "h": "A* ranks by cost so far plus estimate, not either one alone",
+   "p": "Dijkstra ranks only by cost so far; best-first search ranks only by the estimate. A* adds them: f = g + h.",
+   "f": "f = g + h",
+   "bk": "Codeless DSA ch8"
+  },
+  {
+   "id": "atb-t0134",
+   "h": "A* is not guaranteed the shortest path whatever its estimate",
+   "p": "The book says A* always finds the shortest path. That holds only if the estimate never overestimates the true remaining cost; an estimate that overshoots can return a costlier route.",
+   "f": "estimate must not overshoot",
+   "bk": "Codeless DSA ch8"
+  },
+  {
+   "id": "atb-t0135",
+   "h": "Dijkstra is blind, but it does not try every path",
+   "p": "It has no sense of where the goal is, so it may explore much of the graph; that is what A* improves on. Yet it settles each node only once, in order of cost, rather than listing every possible path.",
+   "f": "blind, not exhaustive",
+   "bk": "Codeless DSA ch8"
+  },
+  {
+   "id": "atb-t0136",
+   "h": "Bellman-Ford is not a faster Dijkstra",
+   "p": "The book calls it an improvement, but its gain is coping with negative costs. It is slower, so Dijkstra stays the choice when every cost is zero or more.",
+   "f": "negatives, not speed",
+   "bk": "Codeless DSA ch8"
+  },
+  {
+   "id": "atb-t0137",
+   "h": "Greedy is not guaranteed optimal, but it can be",
+   "p": "L#5: greedy is locally optimal, not necessarily globally. Dijkstra is greedy (it always settles the cheapest node next), yet with non-negative costs its answers are the true cheapest routes.",
+   "f": "greedy can be exact",
+   "bk": "Codeless DSA ch8"
+  },
+  {
+   "id": "atb-t0138",
+   "h": "The heap drawings on the L#23 slides fill the right child first; a real heap fills from the left",
+   "p": "Their parent–child order is correct, but both put the last level under the right node while the left node has none. A heap must be a complete binary tree, so the last level fills left to right.",
+   "f": "heap: left before right",
+   "lec": 23
+  },
+  {
+   "id": "atb-t0139",
+   "h": "In a typical BST implementation a value equal to the parent goes right",
+   "p": "The slide says left < parent < right. Asked about equal values, he said it depends on the implementation but typically goes right: left < parent ≤ right. State your convention if the question doesn’t.",
+   "f": "equal → right",
+   "lec": 23
+  },
+  {
+   "id": "atb-t0140",
+   "h": "An integrity hash detects tampering; it does not hide the message",
+   "p": "If the data is changed, the recalculated hash won’t match. But the content travels readable; keeping it unintelligible to an interceptor needs encryption. The two are often used together.",
+   "f": "hash detects, encryption hides",
+   "lec": 23
+  },
+  {
+   "id": "atb-t0141",
+   "h": "A spreadsheet is not a hash table",
+   "p": "Excel stores rows in sequence. Even a database table only gets a hashed index when one is created on it, after which the database maintains the index.",
+   "f": "rows in order ≠ hash index",
+   "lec": 23
+  },
+  {
+   "id": "atb-t0142",
+   "h": "“Shortest” means lowest cost, not fewest kilometres",
+   "p": "The edge weights can stand for time, toll money or a mix. A longer ring road can be the shortest path when the cost is travel time.",
+   "f": "shortest = cheapest",
+   "lec": 24
+  },
+  {
+   "id": "atb-t0143",
+   "h": "One Dijkstra run gives cheapest paths from its start node only",
+   "p": "It is single-source: change the start and every distance changes, so run it again. Distances between other pairs cannot be read off or subtracted from one run.",
+   "f": "new start, new run",
+   "lec": 24
+  },
+  {
+   "id": "atb-t0144",
+   "h": "The direct edge is not always the cheapest path",
+   "p": "In his first example A→B costs 4 directly but 3 through C (2 + 1). Dijkstra checks every route through visited nodes before a distance becomes final.",
+   "f": "direct ≠ cheapest",
+   "lec": 24
+  },
+  {
+   "id": "atb-t0145",
+   "h": "Dijkstra always visits the smallest open distance next",
+   "p": "In his exercise walk-through B (5) was finalised before D (3). The answers agreed, but the rule takes D first; in a trace question, follow the rule.",
+   "f": "smallest first, then final",
+   "lec": 24
+  },
+  {
+   "id": "atb-t0146",
+   "h": "Dijkstra needs costs of zero or more; Bellman–Ford handles negative ones",
+   "p": "A negative edge (a rebate, say) can make a distance Dijkstra has already finalised wrong. Of the lecture’s algorithms, Bellman–Ford is the one for negative costs.",
+   "f": "negative → Bellman–Ford",
+   "lec": 24
+  },
+  {
+   "id": "atb-t0147",
+   "h": "Prim’s and Kruskal’s connect a whole network; they don’t find a route",
+   "p": "Shortest-path algorithms minimise one route’s cost. Prim’s and Kruskal’s minimise the total cost of linking every node, as a telecom operator covering its licence area must.",
+   "f": "route vs whole network",
+   "lec": 24
+  },
+  {
+   "id": "atb-t0148",
+   "h": "n − 1 passes sort n elements, although the lecture said n",
+   "p": "He said passes equal the number of elements, but his six-element example was sorted after five passes. Once n − 1 values are placed, the last is already in place.",
+   "f": "6 elements → 5 passes",
+   "lec": 25
+  },
+  {
+   "id": "atb-t0149",
+   "h": "Pass 1 makes n − 1 comparisons, not n",
+   "p": "A list of n elements has n − 1 adjacent pairs. His slide wrote n, but he made five comparisons on six elements, and n(n − 1) ÷ 2 is the sum that starts at n − 1.",
+   "f": "n items, n − 1 pairs",
+   "lec": 25
+  },
+  {
+   "id": "atb-t0150",
+   "h": "After pass k only k values are guaranteed in place",
+   "p": "In the classic method the k largest values are fixed at the end; the rest may still be out of order. The list is sorted only when all the passes are done.",
+   "f": "one pass, one value",
+   "lec": 25
+  },
+  {
+   "id": "atb-t0151",
+   "h": "The right-to-left variant fixes the smallest value first",
+   "p": "Working from the end and comparing with the previous element carries the smallest value to the front. Both are bubble sort; the course textbook uses this one.",
+   "f": "from the end → smallest first",
+   "lec": 25
+  },
+  {
+   "id": "atb-t0152",
+   "h": "O(n²) does not mean exactly n² comparisons",
+   "p": "Bubble sort makes n(n − 1) ÷ 2, about half of n². Big O drops the ½ and the lower-order term and keeps only the growth rate.",
+   "f": "½n² − ½n → O(n²)",
+   "lec": 25
   }
  ],
  "defs": [
@@ -2362,6 +2656,238 @@ HUB.addCourse({
    "term": "Not found",
    "html": "<b>Not found</b> (nil) is a valid search result: the algorithm has checked every place the item could be and it is not there.",
    "lec": 22
+  },
+  {
+   "id": "atb-d0117",
+   "unit": "sorting",
+   "topic": "Sorting",
+   "term": "Selection sort",
+   "html": "<b>Selection sort</b>: repeatedly find the smallest remaining value (by linear search) and swap it into the leftmost unsorted position. At most one swap per pass. <b>O(n²)</b>.",
+   "bk": "Codeless DSA ch7"
+  },
+  {
+   "id": "atb-d0118",
+   "unit": "sorting",
+   "topic": "Sorting",
+   "term": "Insertion sort",
+   "html": "<b>Insertion sort</b>: take each item in turn and slide it left into its correct place within the already-sorted section. Worst case <b>O(n²)</b>.",
+   "bk": "Codeless DSA ch7"
+  },
+  {
+   "id": "atb-d0119",
+   "unit": "sorting",
+   "topic": "Sorting",
+   "term": "Merge sort",
+   "html": "<b>Merge sort</b>: halve the list down to single items, then merge the pieces back in order. Divide and conquer, <b>O(n log n)</b>.",
+   "bk": "Codeless DSA ch7"
+  },
+  {
+   "id": "atb-d0120",
+   "unit": "sorting",
+   "topic": "Sorting",
+   "term": "Quick sort",
+   "html": "<b>Quick sort</b>: choose a <b>pivot</b>, move smaller values to its left and larger ones to its right, then sort each side the same way. Typically <b>O(n log n)</b>.",
+   "bk": "Codeless DSA ch7"
+  },
+  {
+   "id": "atb-d0121",
+   "unit": "sorting",
+   "topic": "Sorting",
+   "term": "Pivot",
+   "html": "<b>Pivot</b>: the value quick sort divides around, often picked at random. After a partition it sits between the smaller and the larger values.",
+   "bk": "Codeless DSA ch7"
+  },
+  {
+   "id": "atb-d0122",
+   "unit": "sorting",
+   "topic": "Sorting",
+   "term": "Partition (quick sort)",
+   "html": "<b>Partition</b>: one quick-sort step that rearranges a list so everything smaller than the pivot is on one side and everything larger on the other. The sides are not yet sorted.",
+   "bk": "Codeless DSA ch7"
+  },
+  {
+   "id": "atb-d0123",
+   "unit": "sorting",
+   "topic": "Sorting",
+   "term": "Merge (merge sort)",
+   "html": "<b>Merge</b>: combine two sorted lists into one by repeatedly comparing their front items and taking the smaller.",
+   "bk": "Codeless DSA ch7"
+  },
+  {
+   "id": "atb-d0124",
+   "unit": "searching",
+   "topic": "Graph search & shortest paths",
+   "term": "Uninformed search",
+   "html": "<b>Uninformed search</b>: a search with no information about where the goal lies, so it may explore widely, as Dijkstra's algorithm does.",
+   "bk": "Codeless DSA ch8"
+  },
+  {
+   "id": "atb-d0125",
+   "unit": "searching",
+   "topic": "Graph search & shortest paths",
+   "term": "Best-first search",
+   "html": "<b>Best-first search</b>: expands the candidate that an <b>estimate</b> says is closest to the goal. A* combines this estimate with Dijkstra's cost so far.",
+   "bk": "Codeless DSA ch8"
+  },
+  {
+   "id": "atb-d0126",
+   "unit": "searching",
+   "topic": "Graph search & shortest paths",
+   "term": "A* score (f = g + h)",
+   "html": "<b>A* score</b>: <b>f = g + h</b>, the cost so far (g) plus the estimated cost still to go (h). A* always expands the candidate with the lowest f.",
+   "bk": "Codeless DSA ch8"
+  },
+  {
+   "id": "atb-d0127",
+   "unit": "searching",
+   "topic": "Graph search & shortest paths",
+   "term": "Cost (edge weight)",
+   "html": "<b>Cost</b>: the book's name for an edge weight in Dijkstra's algorithm, such as distance, time or money. It must not be negative.",
+   "bk": "Codeless DSA ch8"
+  },
+  {
+   "id": "atb-d0128",
+   "unit": "searching",
+   "topic": "Graph search & shortest paths",
+   "term": "Settled node",
+   "html": "<b>Settled node</b>: a node whose cheapest cost Dijkstra has fixed as final. It is never revisited, which is safe only when no cost is negative.",
+   "bk": "Codeless DSA ch8"
+  },
+  {
+   "id": "atb-d0129",
+   "unit": "searching",
+   "topic": "Graph search & shortest paths",
+   "term": "Admissible estimate",
+   "html": "<b>Admissible estimate</b>: an A* estimate h that <b>never exceeds</b> the true remaining cost, e.g. straight-line distance on roads. Only then is A* certain to return the cheapest route.",
+   "bk": "Codeless DSA ch8"
+  },
+  {
+   "id": "atb-d0130",
+   "unit": "searching",
+   "topic": "Graph search & shortest paths",
+   "term": "BFS layer",
+   "html": "<b>BFS layer</b>: layer k holds the nodes BFS first reaches k edges from the start, so a node's layer is its <b>fewest edges</b> from the start.",
+   "bk": "Codeless DSA ch8"
+  },
+  {
+   "id": "atb-d0131",
+   "unit": "types",
+   "topic": "Algorithm types",
+   "term": "Greedy algorithm",
+   "html": "<b>Greedy algorithm</b>: builds a solution one step at a time, always taking the option that is best <b>right now</b>. Locally optimal, not necessarily globally (L#5).",
+   "bk": "Codeless DSA ch8"
+  },
+  {
+   "id": "atb-d0132",
+   "unit": "blockchain",
+   "topic": "Merkle trees and decentralisation",
+   "term": "51% attack",
+   "html": "A <b>51% attack</b> tampers with a blockchain by taking over at least <b>51% of its nodes</b> at the same moment and making the same change on all of them. Possible in theory, impractical because of the resources it needs.",
+   "lec": 23
+  },
+  {
+   "id": "atb-d0133",
+   "unit": "blockchain",
+   "topic": "Blockchain applications and limits",
+   "term": "Enterprise blockchain",
+   "html": "An <b>enterprise blockchain</b> is a private blockchain an organisation runs on its own servers in several locations (IBM has offered such solutions). Fewer nodes than a public blockchain, but still <b>costly</b>, so rarely adopted.",
+   "lec": 23
+  },
+  {
+   "id": "atb-d0134",
+   "unit": "searching",
+   "topic": "Shortest paths and Dijkstra’s algorithm",
+   "term": "Shortest path problem",
+   "html": "The <b>shortest path problem</b> asks for the route between nodes with the lowest total <b>cost</b>, where cost may be distance, time, money (tolls) or a combination.",
+   "lec": 24
+  },
+  {
+   "id": "atb-d0135",
+   "unit": "searching",
+   "topic": "Shortest paths and Dijkstra’s algorithm",
+   "term": "Dijkstra’s algorithm",
+   "html": "<b>Dijkstra’s algorithm</b> finds the cheapest path from <b>one start node to every other node</b> of a weighted graph with <b>non-negative</b> costs: start at 0 and ∞, repeatedly visit the smallest unvisited distance, update its neighbours, mark it final.",
+   "lec": 24
+  },
+  {
+   "id": "atb-d0136",
+   "unit": "searching",
+   "topic": "Shortest paths and Dijkstra’s algorithm",
+   "term": "Spoke-and-hub model",
+   "html": "In a <b>spoke-and-hub model</b> a network links a few <b>hubs</b> to one another and attaches nearby towns to each hub as <b>spokes</b>, instead of linking every city to every other. Couriers route Jodhpur → Jaipur → Delhi → Sonipat.",
+   "lec": 24
+  },
+  {
+   "id": "atb-d0137",
+   "unit": "searching",
+   "topic": "Other network search algorithms",
+   "term": "A* search",
+   "html": "<b>A*</b> adds a <b>heuristic</b>, a sense of the right direction, to the actual cost so far, so it heads towards the destination. Widely used in GPS navigation.",
+   "lec": 24
+  },
+  {
+   "id": "atb-d0138",
+   "unit": "searching",
+   "topic": "Other network search algorithms",
+   "term": "Floyd–Warshall algorithm",
+   "html": "<b>Floyd–Warshall</b> finds the shortest paths between <b>every pair</b> of nodes, e.g. for computer networks or electricity grids.",
+   "lec": 24
+  },
+  {
+   "id": "atb-d0139",
+   "unit": "searching",
+   "topic": "Other network search algorithms",
+   "term": "Bellman–Ford algorithm",
+   "html": "<b>Bellman–Ford</b> finds shortest paths even when some edge costs are <b>negative</b>, which Dijkstra cannot handle.",
+   "lec": 24
+  },
+  {
+   "id": "atb-d0140",
+   "unit": "searching",
+   "topic": "Other network search algorithms",
+   "term": "Prim’s and Kruskal’s algorithms",
+   "html": "<b>Prim’s</b> and <b>Kruskal’s</b> algorithms connect <b>all</b> the nodes of a network at the minimum <b>total</b> cost, as a telecom operator must; they do not find a route between two nodes.",
+   "lec": 24
+  },
+  {
+   "id": "atb-d0141",
+   "unit": "sorting",
+   "topic": "What sorting is for",
+   "term": "Sorting",
+   "html": "<b>Sorting</b> arranges elements in a specific order, <b>ascending</b> or <b>descending</b>, by a chosen parameter such as marks, name, price or relevance.",
+   "lec": 25
+  },
+  {
+   "id": "atb-d0142",
+   "unit": "sorting",
+   "topic": "Bubble sort: passes and swaps",
+   "term": "Bubble sort",
+   "html": "<b>Bubble sort</b> repeatedly compares <b>adjacent</b> elements and swaps any pair in the wrong order. Each pass puts one more value in its final place. <b>O(n²)</b>.",
+   "lec": 25
+  },
+  {
+   "id": "atb-d0143",
+   "unit": "sorting",
+   "topic": "Bubble sort: passes and swaps",
+   "term": "Pass (sorting)",
+   "html": "A <b>pass</b> is one full sweep of comparisons through the unsorted part of the list (a “round”). In bubble sort each pass fixes one value, so n − 1 passes sort n elements.",
+   "lec": 25
+  },
+  {
+   "id": "atb-d0144",
+   "unit": "sorting",
+   "topic": "Bubble sort: passes and swaps",
+   "term": "Swap",
+   "html": "A <b>swap</b> exchanges the positions of two elements. Bubble sort swaps a compared pair only when it is in the wrong order; otherwise it just moves on.",
+   "lec": 25
+  },
+  {
+   "id": "atb-d0145",
+   "unit": "sorting",
+   "topic": "Bubble sort: passes and swaps",
+   "term": "Alternative bubble sort",
+   "html": "The <b>alternative bubble sort</b> works from the <b>end</b> of the list, comparing each element with the one before it, so each pass moves the <b>smallest</b> remaining value to the front.",
+   "lec": 25
   }
  ],
  "questions": [
@@ -9044,6 +9570,1519 @@ HUB.addCourse({
    "w": "Linear search finds 24 on its third comparison. Binary search checks 60, 31, 18 and then 24: four. O(log n) describes how the work grows on large lists, not a win on every small search.",
    "lec": 22,
    "lv": "analyse"
+  },
+  {
+   "id": "atb-q0402",
+   "topic": "Sorting",
+   "q": "Which of these is NOT a reason given in the book for sorting data?",
+   "c": [
+    "Binary search requires sorted input",
+    "Duplicates become easy to spot",
+    "Sorted data takes less memory",
+    "Database queries often need ordered results"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Sorting rearranges the same data; it does not shrink it. The other three are the book's motivations.",
+   "bk": "Codeless DSA ch7",
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0403",
+   "topic": "Sorting",
+   "q": "A CA firm suspects duplicate PAN entries among 50,000 client records. How does sorting by PAN help?",
+   "c": [
+    "It deletes duplicates automatically",
+    "It encrypts the PANs",
+    "It converts the list into a hash table",
+    "Identical PANs end up next to each other, so one pass through the sorted list finds them"
+   ],
+   "a": [
+    3
+   ],
+   "w": "After sorting, duplicates are adjacent, so a single comparison of neighbours exposes them. Sorting does not delete anything by itself.",
+   "bk": "Codeless DSA ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0404",
+   "topic": "Sorting",
+   "q": "One pass of a sort turns [7, 3, 9, 1, 5] into [1, 3, 9, 7, 5]. Which sort was it?",
+   "c": [
+    "Bubble sort, left to right",
+    "Selection sort",
+    "Insertion sort",
+    "Bubble sort, from the right-hand end"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Only 1 and 7 traded places: selection sort found the minimum, 1, and swapped it with the first item. A left-to-right bubble pass gives [3, 7, 1, 5, 9]; the book's right-to-left pass also brings 1 to the front but drags it past each neighbour, giving [1, 7, 3, 9, 5]; insertion sort's first step only places 3, giving [3, 7, 9, 1, 5].",
+   "bk": "Codeless DSA ch7",
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0405",
+   "topic": "Sorting",
+   "q": "A bubble sort that stops after the first pass with no swaps (left to right, swapping when the left value is larger) runs on [4, 1, 2, 3, 5, 6]. How many passes does it make?",
+   "c": [
+    "1",
+    "5",
+    "6",
+    "2"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Pass 1 carries 4 to its place and leaves [1, 2, 3, 4, 5, 6], but the sort only knows the list is in order when pass 2 makes no swaps, so it stops after 2 passes. Five is the fixed n − 1 count without the check.",
+   "bk": "Codeless DSA ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0406",
+   "topic": "Sorting",
+   "q": "Selection sort is applied to [29, 11, 47, 5, 38, 20]. What does the list look like after the first pass?",
+   "c": [
+    "[5, 29, 11, 47, 38, 20]",
+    "[11, 29, 47, 5, 38, 20]",
+    "[5, 11, 47, 29, 38, 20]",
+    "[5, 11, 20, 29, 38, 47]"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The smallest value, 5, is swapped with the first item, 29; everything else stays put. Shifting all items right is insertion behaviour, and the fully sorted list needs more passes.",
+   "bk": "Codeless DSA ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0407",
+   "topic": "Sorting",
+   "q": "Continuing selection sort on [5, 11, 47, 29, 38, 20], what does the second pass do?",
+   "c": [
+    "Swaps 11 and 20",
+    "Leaves the list unchanged, because 11 is already the smallest remaining value",
+    "Swaps 47 and 20",
+    "Moves 47 to the end"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The second pass looks for the smallest of positions 2–6, which is 11, already in position 2. Swapping 47 and 20 is what the third pass does.",
+   "bk": "Codeless DSA ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0408",
+   "topic": "Sorting",
+   "q": "According to the book, why is selection sort O(n²)?",
+   "c": [
+    "It halves the list recursively",
+    "It uses a hash function",
+    "It chooses a random pivot",
+    "It runs a linear search for the minimum inside an outer loop over every position"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Two nested loops — one over positions, one linear search for the minimum — give n × n. Halving gives log n behaviour.",
+   "bk": "Codeless DSA ch7",
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0409",
+   "topic": "Sorting",
+   "q": "A warehouse robot sorts 40 pallets in a row by weight. Each swap of two pallets is slow and costly, while comparing two weights is cheap. Why does selection sort suit this better than bubble sort?",
+   "c": [
+    "Selection sort makes far fewer comparisons",
+    "Selection sort runs in O(n log n)",
+    "Selection sort makes at most one swap per pass, so at most 39 swaps, while bubble sort can need up to 780",
+    "Selection sort never swaps"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Each selection pass finds the lightest remaining pallet and makes one swap, so at most n − 1 = 39. Bubble sort swaps every out-of-order neighbouring pair, up to 40 × 39 ÷ 2 = 780 swaps. Both make 780 comparisons when bubble sort runs all its passes, and both are O(n²).",
+   "bk": "Codeless DSA ch7",
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0410",
+   "topic": "Sorting",
+   "q": "Insertion sort is processing [31, 12, 45, 7, 26]. After 7 has been inserted into place (the first four items handled), what is the list?",
+   "c": [
+    "[7, 12, 31, 45, 26]",
+    "[7, 31, 12, 45, 26]",
+    "[12, 31, 45, 7, 26]",
+    "[7, 12, 26, 31, 45]"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Sorted section [12, 31, 45]; 7 shifts left past all three to the front, and 26 is untouched yet. [7, 31, 12, …] is selection sort's swap; [7, 12, 26, 31, 45] is the fully sorted list.",
+   "bk": "Codeless DSA ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0411",
+   "topic": "Sorting",
+   "q": "Why does the book rate insertion sort as more efficient than selection sort, despite both having an O(n²) worst case?",
+   "c": [
+    "Insertion sort is O(n log n)",
+    "Insertion sort does not need to scan every remaining item to find the smallest",
+    "Insertion sort uses divide and conquer",
+    "Selection sort cannot handle duplicates"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Selection sort always scans the whole unsorted part; insertion sort stops as soon as the item reaches its place. Both are still quadratic in the worst case, so calling insertion sort O(n log n) is wrong.",
+   "bk": "Codeless DSA ch7",
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0412",
+   "topic": "Sorting",
+   "q": "A price list [12, 18, 25, 31, 40, 47] is already sorted, and a new price, 44, is added at the end. Which of the chapter's sorts does the least work to restore the order?",
+   "c": [
+    "Selection sort, because it finds the smallest value first",
+    "Insertion sort: each old item needs one comparison, then 44 slides one place left past 47",
+    "Merge sort, because it is O(n log n)",
+    "Quick sort, because it partitions around a pivot"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Insertion sort compares each item once with its left neighbour and moves on, and 44 needs one shift: 7 comparisons in all. Selection sort still scans the whole unsorted part on every pass (21 comparisons), and merge sort splits and re-merges the whole list. O(n log n) wins on big, jumbled lists, not on one that is nearly sorted.",
+   "bk": "Codeless DSA ch7",
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0413",
+   "topic": "Sorting",
+   "q": "Merge sort is applied to [41, 7, 33, 19, 2, 58, 24, 12]. Which two lists are merged in the final step?",
+   "c": [
+    "[41, 7, 33, 19] and [2, 58, 24, 12]",
+    "[7, 41] and [2, 12, 19, 24, 33, 58]",
+    "[2, 7, 12, 19] and [24, 33, 41, 58]",
+    "[7, 19, 33, 41] and [2, 12, 24, 58]"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Each half is sorted before the last merge: [7, 19, 33, 41] and [2, 12, 24, 58]. [41, 7, 33, 19] and [2, 58, 24, 12] are the unsorted halves after the first split; [2, 7, 12, 19] and [24, 33, 41, 58] would require knowing the final order in advance.",
+   "bk": "Codeless DSA ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0414",
+   "topic": "Sorting",
+   "q": "Merge sort merges the sorted lists [5, 18, 26, 40] and [9, 11, 30, 52] by repeatedly comparing their front items and taking the smaller. Which value is placed third?",
+   "c": [
+    "11",
+    "9",
+    "18",
+    "26"
+   ],
+   "a": [
+    0
+   ],
+   "w": "5 beats 9; then 9 beats 18; then 11 beats 18. So the merged list starts 5, 9, 11, 18. 18 is fourth, and 26 is only third in its own list, not in the merged one.",
+   "bk": "Codeless DSA ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0415",
+   "topic": "Algorithm types",
+   "q": "Merge sort and quick sort are examples of which algorithm design approach from Module 1?",
+   "c": [
+    "Greedy",
+    "Dynamic programming",
+    "Divide and conquer",
+    "Linear search"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Both split the data into smaller parts, sort them and combine. Greedy would make a locally best choice at each step without splitting the problem.",
+   "bk": "Codeless DSA ch7",
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0416",
+   "topic": "Sorting",
+   "q": "What gives merge sort its O(n log n) time complexity?",
+   "c": [
+    "Repeated halving produces about log n levels, and each level handles all n items",
+    "It compares every pair of items once",
+    "It finds the minimum by linear search n times",
+    "It uses a hash table"
+   ],
+   "a": [
+    0
+   ],
+   "w": "log n levels × n work per level. Comparing every pair is the n² pattern of the simple sorts.",
+   "bk": "Codeless DSA ch7",
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0417",
+   "topic": "Sorting",
+   "q": "How many levels of halving does merge sort need to break 16 items down to single items?",
+   "c": [
+    "16",
+    "8",
+    "4",
+    "15"
+   ],
+   "a": [
+    2
+   ],
+   "w": "16 → 8 → 4 → 2 → 1 is four halvings: log₂ 16 = 4. Each level handles all 16 items, which is where n log n comes from. Fifteen counts the individual split operations, not the levels.",
+   "bk": "Codeless DSA ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0418",
+   "topic": "Sorting",
+   "q": "In quick sort, what is the pivot?",
+   "c": [
+    "The first item, which is always left in place",
+    "The middle position, which is always swapped to the end",
+    "A chosen value around which smaller items are moved left and larger items right",
+    "The item with the highest key in a heap"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The pivot is the dividing value, often picked at random. A heap's root is unrelated to quick sort.",
+   "bk": "Codeless DSA ch7",
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0419",
+   "topic": "Sorting",
+   "q": "Quick sort partitions [45, 12, 30, 8, 51, 22] around the pivot 30. Which arrangement is a valid result of that single partition step?",
+   "c": [
+    "[12, 45, 8, 30, 22, 51]",
+    "[22, 12, 8, 30, 51, 45]",
+    "[51, 45, 30, 22, 12, 8]",
+    "[30, 8, 12, 22, 45, 51]"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Everything left of 30 is smaller (22, 12, 8) and everything right is larger (51, 45); the sides need not be sorted yet. [12, 45, 8, 30, 22, 51] has 45 left of the pivot; [30, 8, 12, 22, 45, 51] puts smaller values on the right.",
+   "bk": "Codeless DSA ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0420",
+   "topic": "Sorting",
+   "q": "Quick sort partitions [38, 14, 25, 41, 7, 30, 19] around the pivot 25 and gets [19, 14, 7, 25, 41, 30, 38]. What does it do next?",
+   "c": [
+    "Sorts [19, 14, 7] and [41, 30, 38] the same way, leaving 25 where it is",
+    "Stops, because the pivot is in place",
+    "Merges [19, 14, 7] and [41, 30, 38] into one list",
+    "Partitions the whole list again around a new pivot"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The pivot is now in its final place, but neither side is sorted yet, so quick sort repeats the partition on each side until every piece has one item. Merging the two sides is merge sort's step, not quick sort's.",
+   "bk": "Codeless DSA ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0421",
+   "topic": "Complexity",
+   "q": "Roughly how much less work does an O(n log₂ n) sort do than an O(n²) sort on 10,000 records?",
+   "c": [
+    "About 2 times less",
+    "About 75 times less",
+    "About 10,000 times less",
+    "About 750 times less"
+   ],
+   "a": [
+    3
+   ],
+   "w": "n² = 10 crore; n log₂ n ≈ 10,000 × 13.3 ≈ 1.33 lakh; the ratio is about 750. 10,000 would ignore the log factor.",
+   "bk": "Codeless DSA ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0422",
+   "topic": "Sorting",
+   "q": "A bank's batch job must sort 50 lakh transactions every night within a fixed window. Which of the chapter's sorts fits best, and why?",
+   "c": [
+    "Merge sort, because its O(n log n) time scales to millions of records",
+    "Insertion sort, because the book calls it more efficient than selection sort",
+    "Selection sort, because the book calls it slightly better than bubble sort",
+    "Any of them, because they all have the same complexity"
+   ],
+   "a": [
+    0
+   ],
+   "w": "At 50 lakh records, a quadratic sort needs on the order of 10¹³ steps; n log n needs about 10⁸. Insertion and selection sort beat bubble sort on small lists but are still O(n²), so they cannot keep to the window.",
+   "bk": "Codeless DSA ch7",
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0423",
+   "topic": "Sorting",
+   "q": "A team lead sorts a list of 12 project deadlines once a week. A developer insists on implementing merge sort instead of selection sort. What is the best assessment?",
+   "c": [
+    "Essential — selection sort fails on small lists",
+    "For a dozen items the difference is negligible; the book notes selection sort performs well on small arrays",
+    "Merge sort is slower than selection sort at every size",
+    "Selection sort cannot sort dates"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Complexity differences matter at scale. For 12 items any method is instant, and simplicity can win. Selection sort works fine on small lists, so calling merge sort essential here is wrong.",
+   "bk": "Codeless DSA ch7",
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0424",
+   "topic": "Graph search & shortest paths",
+   "q": "BFS from A on a referral network (two-way links A–B, A–C, A–D, B–E, B–F, C–G, D–H, E–I) first reaches H in layer 2, A being layer 0. What does that layer number tell you?",
+   "c": [
+    "H can be reached from A in 2 edges, and no path from A to H has fewer",
+    "H is the second node BFS visits",
+    "H has exactly 2 neighbours",
+    "The cheapest route to H costs 2, whatever the link costs"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A node is first reached at its smallest possible layer, so layer 2 means the fewest edges from A is 2 (A → D → H). H is actually the eighth node visited. The layer counts hops, not cost: with weighted links the cheapest route could use more edges.",
+   "bk": "Codeless DSA ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0425",
+   "topic": "Graph search & shortest paths",
+   "q": "On the same referral network (A–B, A–C, A–D, B–E, B–F, C–G, D–H, E–I), BFS starts at A and takes neighbours in alphabetical order. In what order are the nodes visited?",
+   "c": [
+    "A, B, E, I, F, C, G, D, H",
+    "A, B, C, D, E, F, G, H, I",
+    "A, D, H, C, G, B, F, E, I",
+    "A, B, C, D, I, E, F, G, H"
+   ],
+   "a": [
+    1
+   ],
+   "w": "BFS finishes each layer before the next: A; then B, C, D; then E, F, G, H; then I. The order A, B, E, I, F, … runs down one branch to its end first, which is how DFS moves, not BFS.",
+   "bk": "Codeless DSA ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0426",
+   "topic": "Graph search & shortest paths",
+   "q": "Every road in a small delivery network costs the same, ₹100. Which algorithm's route is then guaranteed to be as cheap as the one Dijkstra's algorithm finds?",
+   "c": [
+    "None, because only Dijkstra handles costs",
+    "Breadth-first search, because with equal costs the fewest edges also means the lowest total",
+    "Depth-first search, because it reaches the goal first",
+    "Binary search on the list of roads"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Total cost = number of edges × ₹100, so the fewest-edge route BFS finds is also the cheapest. DFS gives no fewest-edge promise: its route can be the long way round.",
+   "bk": "Codeless DSA ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0427",
+   "topic": "Graph search & shortest paths",
+   "q": "Dijkstra's algorithm requires the graph to have:",
+   "c": [
+    "No weights at all",
+    "Only negative weights",
+    "Exactly one path between any two nodes",
+    "Weights (costs) that are not negative"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Dijkstra works on weighted graphs whose costs are zero or positive. Negative costs call for Bellman-Ford.",
+   "bk": "Codeless DSA ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0428",
+   "topic": "Graph search & shortest paths",
+   "q": "When Dijkstra's algorithm starts from depot S, what values does it assign?",
+   "c": [
+    "S = 0 and every other depot = infinity",
+    "Every depot = 0",
+    "S = infinity and every other depot = 0",
+    "Every depot = its number of neighbours"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The start costs nothing to reach; every other depot is unknown, shown as infinity until a route is found. Reversing them is the trap.",
+   "bk": "Codeless DSA ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0429",
+   "topic": "Graph search & shortest paths",
+   "q": "Dijkstra's algorithm, on a network whose costs are all zero or more, settles depot C at cost 4. Could a route found later make C cheaper?",
+   "c": [
+    "Yes, if a later route has more edges",
+    "Yes, so Dijkstra re-checks every settled node at the end",
+    "No: every route still open already costs at least 4, and adding a non-negative leg cannot bring it below 4",
+    "No, because Dijkstra stops as soon as any node is settled"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Dijkstra settles the cheapest unsettled node, so every other open route already costs at least 4, and non-negative legs only add to that. That is why a settled cost is final and never re-checked. With a negative leg the argument fails, which is the Bellman-Ford case.",
+   "bk": "Codeless DSA ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0430",
+   "topic": "Graph search & shortest paths",
+   "q": "Depots have two-way road costs S–A 4, S–B 1, B–A 2, A–C 1, B–C 5, C–D 3, so the cheapest S-to-D cost is 7, via S → B → A → C → D. The road A–C then closes. What is the new cheapest cost from S to D?",
+   "c": [
+    "7, as before",
+    "14, via S → A → B → C → D",
+    "8, via S → A → C → D",
+    "9, via S → B → C → D"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Without A–C, C can be reached only from B: 1 + 5 = 6, then C–D 3 gives 9. Staying at 7 forgets that the old route used A–C; 8 still uses the closed road; 14 detours through A for nothing. A change to one edge means running Dijkstra again.",
+   "bk": "Codeless DSA ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0431",
+   "topic": "Graph search & shortest paths",
+   "q": "On that depot graph, BFS from S reaches C in 2 edges (S → A → C or S → B → C), while Dijkstra's algorithm returns S → B → A → C. Why do they differ?",
+   "c": [
+    "BFS minimises the number of edges; Dijkstra minimises total cost",
+    "BFS is faulty on graphs with cycles",
+    "Dijkstra always prefers longer routes",
+    "BFS can only search trees"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Different objectives: hop count vs summed cost. Neither is faulty; choose by whether the edge costs matter.",
+   "bk": "Codeless DSA ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0432",
+   "topic": "Graph search & shortest paths",
+   "q": "A payments-routing graph includes some legs with cashback, modelled as negative costs. Which algorithm from the chapter should be used?",
+   "c": [
+    "Dijkstra's algorithm",
+    "Bellman-Ford",
+    "Breadth-first search",
+    "Binary search"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Bellman-Ford works with negative edge costs; Dijkstra's algorithm does not. BFS ignores costs entirely.",
+   "bk": "Codeless DSA ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0433",
+   "topic": "Graph search & shortest paths",
+   "q": "One-way costs are S → A 2, S → B 4 and B → A −3 (a rebate). Dijkstra's algorithm settles A at 2 before it processes B. What is the true cheapest cost from S to A?",
+   "c": [
+    "2, via S → A",
+    "−3, via B → A",
+    "4, via S → B",
+    "1, via S → B → A"
+   ],
+   "a": [
+    3
+   ],
+   "w": "4 − 3 = 1 beats the direct 2. Dijkstra reports 2 because A was already settled when the rebate leg turned up; −3 is only the last leg, not a route from S.",
+   "bk": "Codeless DSA ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0434",
+   "topic": "Graph search & shortest paths",
+   "q": "What limitation of Dijkstra's algorithm does the book highlight?",
+   "c": [
+    "It cannot handle weighted graphs",
+    "It only works on trees",
+    "It is an uninformed (blind) search, so it can use a lot of time and resources",
+    "It never finds the shortest path"
+   ],
+   "a": [
+    2
+   ],
+   "w": "It has no information about where the goal is, so it explores broadly. It does find the cheapest paths when costs are non-negative, and it is designed for weighted graphs.",
+   "bk": "Codeless DSA ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0435",
+   "topic": "Algorithm types",
+   "q": "Why does the book classify Dijkstra's algorithm as greedy?",
+   "c": [
+    "It uses past data to forecast",
+    "It splits the graph in half",
+    "It guesses randomly",
+    "At each step it takes the node with the lowest current cost, the most immediate benefit"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Greedy means taking the locally best option now. Splitting is divide and conquer; deciding from past data is the lecture's cue for dynamic programming.",
+   "bk": "Codeless DSA ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0436",
+   "topic": "Algorithm types",
+   "q": "The lecture says a greedy method is locally optimal but not necessarily globally optimal. What is true of Dijkstra's algorithm, a greedy method, on a graph whose costs are all zero or positive?",
+   "c": [
+    "Its routes are only approximately cheapest, as with any greedy method",
+    "Its greedy choices still give the true cheapest routes",
+    "It must be followed by dynamic programming to correct its answers",
+    "It is optimal only on unweighted graphs"
+   ],
+   "a": [
+    1
+   ],
+   "w": "\"Not necessarily optimal\" does not mean \"never optimal\". Some greedy methods are exact, and Dijkstra's is one when no cost is negative.",
+   "bk": "Codeless DSA ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0437",
+   "topic": "Graph search & shortest paths",
+   "q": "The book calls heuristic algorithms probabilistic. Which description of a heuristic matches L#21, the version to use in the quiz?",
+   "c": [
+    "A method that depends on random chance",
+    "A method that checks every possible answer",
+    "A rule of thumb that gives a good-enough answer, not guaranteed to be the best",
+    "A method that works only on sorted data"
+   ],
+   "a": [
+    2
+   ],
+   "w": "L#21: a rule of thumb used when the exact algorithm is too complex, giving a good-enough answer. A* is heuristic, but its estimate is usually a plain distance, with no randomness. Checking everything is exhaustive search, the opposite.",
+   "bk": "Codeless DSA ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0438",
+   "topic": "Graph search & shortest paths",
+   "q": "A* compares three candidates with cost so far g and estimated cost to goal h: X (g 5, h 6), Y (g 7, h 2), Z (g 3, h 9). Which does it expand next?",
+   "c": [
+    "X",
+    "Z",
+    "Y",
+    "All three at once"
+   ],
+   "a": [
+    2
+   ],
+   "w": "f = g + h gives X 11, Y 9, Z 12, so Y. Picking Z uses g alone, which is Dijkstra's ranking.",
+   "bk": "Codeless DSA ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0439",
+   "topic": "Graph search & shortest paths",
+   "q": "For the same candidates (X: g 5, h 6; Y: g 7, h 2; Z: g 3, h 9), which would Dijkstra's ordering choose, and why does that matter?",
+   "c": [
+    "Z, because it ranks only by cost so far, so it may wander away from the goal",
+    "Y, because Dijkstra also uses the estimate",
+    "X, because it is in the middle",
+    "None, because Dijkstra cannot compare costs"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Dijkstra has no estimate h, so the lowest g (Z = 3) wins even though Z looks farthest from the goal. That blindness is what A* fixes.",
+   "bk": "Codeless DSA ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0440",
+   "topic": "Graph search & shortest paths",
+   "q": "Which two ideas does A* combine, according to the book?",
+   "c": [
+    "Bubble sort and binary search",
+    "Dijkstra's cost so far and best-first search's estimate of the remaining cost",
+    "Hashing and chaining",
+    "Breadth-first search and Bellman-Ford"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A* blends Dijkstra's approach with best-first search. The other pairs come from different chapters and problems.",
+   "bk": "Codeless DSA ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0441",
+   "topic": "Graph search & shortest paths",
+   "q": "The book says A* is always guaranteed to find the shortest path. When is that actually true?",
+   "c": [
+    "Always, whatever estimate it uses",
+    "Only on graphs without cycles",
+    "Only if its estimate never overestimates the true remaining cost",
+    "Only if every edge has the same cost"
+   ],
+   "a": [
+    2
+   ],
+   "w": "An estimate that never overshoots keeps A* from skipping a cheaper route. With an overestimating estimate A* can stop at a costlier route, so the book's unconditional claim is too strong.",
+   "bk": "Codeless DSA ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0442",
+   "topic": "Graph search & shortest paths",
+   "q": "One-way costs: S → A 1, A → G 5, S → B 2, B → G 2. A* searches from S to G with the estimates h(A) = 1, h(B) = 10 and h(G) = 0. Which route does it return?",
+   "c": [
+    "S → B → G, cost 4, the cheapest",
+    "S → B → G, cost 12",
+    "No route, because h(B) is too large",
+    "S → A → G, cost 6, although S → B → G costs only 4"
+   ],
+   "a": [
+    3
+   ],
+   "w": "After S, A has f = 1 + 1 = 2 and B has f = 2 + 10 = 12. Expanding A puts G on the list at f = 6 + 0 = 6, which beats B's 12, so A* stops with cost 6. B's true remaining cost is 2, so h(B) = 10 overestimates, and that hides the cheaper route. With h(B) at 2 or less, A* returns the cost-4 route.",
+   "bk": "Codeless DSA ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0443",
+   "topic": "Graph search & shortest paths",
+   "q": "A retail chain needs the cheapest trucking route from its central warehouse to each of its 300 stores, with every road cost positive. An analyst proposes running A* 300 times, once per store. What is the better plan?",
+   "c": [
+    "Run A* 300 times, because A* is always faster than Dijkstra",
+    "Run BFS once, because it ignores costs",
+    "Run Dijkstra's algorithm once from the warehouse: one run gives the cheapest route to every store",
+    "Run Bellman-Ford, because 300 stores is too many for Dijkstra"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Dijkstra finds the lowest-cost route from one source to every node in a single run. A* is built for one goal, so it would repeat most of the work 300 times. BFS ignores the costs, and Bellman-Ford is for negative costs, not for size.",
+   "bk": "Codeless DSA ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0444",
+   "topic": "Trees",
+   "q": "In Live Lecture 5, what did he give as the syllabus for Quiz 2 on 31 October?",
+   "c": [
+    "The non-linear data structures taught after Quiz 1, blockchain included, without Quiz 1’s linear structures",
+    "The whole course from Lecture 1, since the better of the two quiz scores counts",
+    "Only blockchain, the topic that ended the module",
+    "The linear data structures again, plus trees"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He defined it as everything covered after the linear data structures up to that lecture, in other words the complete non-linear structures including blockchain, and confirmed that Quiz 1 material is not repeated. The whole course is the semester exam’s scope, not Quiz 2’s.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0445",
+   "topic": "Trees",
+   "q": "A student missed Quiz 1 through illness. Under the rules announced in Live Lecture 5, what follows?",
+   "c": [
+    "A Quiz 3 will be held for anyone who missed a quiz",
+    "Her quiz component is the average of a zero and Quiz 2, so Quiz 2 cannot fully make up for it",
+    "Her semester-exam mark is used in place of the quiz",
+    "She must sit Quiz 2: there are only two quizzes, the better score counts, and Quiz 2 is the only quiz score she can have"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The planned third quiz was dropped, and the higher of the two quiz scores counts, which is why he told anyone who missed Quiz 1 to be sure to attend Quiz 2. Averaging with a zero would only happen under an averaging rule, which he did not use.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0446",
+   "topic": "Trees",
+   "q": "A tree diagram is rotated 90° so that node K appears at the far left with every other node to its right. K has no parent. Which statement is correct?",
+   "c": [
+    "The tree has no root, because no node is at the top",
+    "The root is whichever node is drawn highest on the page",
+    "K is the root: the root is the node with no parent, wherever it is drawn",
+    "K is a leaf, because it sits at one end of the drawing"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He made the point that a drawing’s orientation doesn’t matter: the root is the origin, the node with no parent. A leaf is a node with no children, and K has children.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0447",
+   "topic": "Trees",
+   "q": "Which of these tournaments forms a binary tree from its very first match, in the live lecture’s terms?",
+   "c": [
+    "A football World Cup, from its group stage onwards",
+    "A singles tennis draw in which every match is a knockout",
+    "A cricket World Cup’s group stage",
+    "A league in which every team plays every other team"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Individual knockout sports put two players in each match and send the winner up a level, so the whole draw is binary. Football and cricket World Cups begin with a league stage, which is not a tree; only their knockout rounds are binary.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0448",
+   "topic": "Trees",
+   "q": "A BST already contains 40. Another 40 is inserted. Where did the live lecture say a typical implementation places it?",
+   "c": [
+    "In the left subtree of the existing 40",
+    "In the right subtree of the existing 40",
+    "Nowhere: a BST cannot hold a repeated value",
+    "At the root, replacing the old 40"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The slide states left < parent < right, but asked about equal values he said it depends on the implementation and typically goes right (a 35 would go left). So in practice left < parent ≤ right; if a question doesn’t fix the convention, state yours.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0449",
+   "topic": "Trees",
+   "q": "A slide shows a min heap: 20 at the root with children 30 (left) and 25 (right), and 25 and 45 as the children of the right-hand 25; the 30 has no children. What is wrong with it as a heap?",
+   "c": [
+    "The order: a 25 sits below another 25",
+    "The shape: a heap must be a complete binary tree, so the last level should fill from the left",
+    "Nothing: any binary tree with parent ≤ child is a heap",
+    "The order: the 30 on the left is larger than the 25 on the right"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Every parent is ≤ its children, equal values are allowed, and a heap never compares left with right, so the order is fine. But the last level hangs under the right child while the left has none, which breaks the complete shape a heap requires.",
+   "lec": 23,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0450",
+   "topic": "Hashing",
+   "q": "To show what fixed-length output means, the live lecture made every output exactly three digits. Under that rule, how is a 7% return written?",
+   "c": [
+    "7",
+    "700",
+    "007",
+    "0.07"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Pad on the left so the length is always three: 3% → 003, 50% → 050, 100% → 100. Writing 700 changes the value. Real hash functions reach a fixed length through mathematics, not padding; this only illustrates the idea.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0451",
+   "topic": "Hashing",
+   "q": "A colleague says the marks spreadsheet for this course is a hash table because any student’s row can be looked up. What did the live lecture say?",
+   "c": [
+    "True: any table with a key column is a hash table",
+    "True, as long as roll numbers are in the first column",
+    "Not so: a spreadsheet stores rows in sequence, and even a database table gets a hash index only when one is created on it",
+    "Not so: a hash table must be stored on several nodes of a network"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Answering this exact question from the chat, he said no: Excel stores data sequentially. In a database you create an index (in SQL, a create-index command) and the system calculates and maintains it. Storage across nodes describes a blockchain, not a hash table.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0452",
+   "topic": "Hashing",
+   "q": "A firm sends contract files with an attached hash so that the receiver can run an integrity check. A rival intercepts a file on the way. What does the hash protect against?",
+   "c": [
+    "Nothing: hashes only matter for stored passwords",
+    "Both reading and changing the file, because the hash is one-way",
+    "Reading the file, but not changing it",
+    "Changes going unnoticed, but not reading: keeping the content secret needs encryption"
+   ],
+   "a": [
+    3
+   ],
+   "w": "If the file is altered, the receiver’s recalculated hash won’t match and the file is discarded. But the content travels readable; making it unintelligible to an interceptor is encryption’s job, and the two are often used together.",
+   "lec": 23,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0453",
+   "topic": "Blockchain",
+   "q": "A UPI payment of ₹1,200 fails after the money has left your account. The bank adds a reversal entry crediting ₹1,200 instead of deleting the debit. Which blockchain principle does this mirror?",
+   "c": [
+    "Each block stores the hash of the next block",
+    "The Merkle root replaces the individual transactions",
+    "A change needs the approval of 51% of the banks",
+    "Records are only ever added: a correction is a new entry, and nothing is deleted"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He used the reversal to show the add-only idea: a blockchain never edits or deletes a block; it adds a new transaction, so every step stays traceable. Blocks store the previous block’s hash, not the next one’s.",
+   "lec": 23,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0454",
+   "topic": "Blockchain",
+   "q": "According to the live lecture, what has mainly held back enterprise and government blockchains, such as the state revenue-record pilots?",
+   "c": [
+    "They can store nothing except cryptocurrency",
+    "They can be tampered with once 10% of the nodes are hacked",
+    "Cost: every block is stored on many nodes, and existing security is often strong enough",
+    "Indian law forbids keeping records on a blockchain"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He stressed the expense, including the storage of every block on many nodes, and recalled a Government of India committee (around 2018) that judged blockchain not worth it beside existing security. Tampering needs 51% of the nodes, not 10%.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0455",
+   "topic": "Blockchain",
+   "q": "Why did he say Bitcoin mining, once possible on a laptop, now needs data centres?",
+   "c": [
+    "The proof-of-work problems have become far more complex over time",
+    "Bitcoin moved from a public to an enterprise blockchain",
+    "Every block must now be kept on one central server",
+    "Mining now means deleting old blocks to free up space"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Mining is proof of work. He linked the rising difficulty to the fixed total supply of bitcoins and their rising value, so solving the problem now takes far more processing. Bitcoin is still public and decentralised, and blocks are never deleted.",
+   "lec": 23,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0456",
+   "topic": "Graph search & shortest paths",
+   "q": "Why did the lecture describe tree and graph traversals as a form of search?",
+   "c": [
+    "Visiting a node reads its data, so the traversal path is also a search path",
+    "Traversals sort the nodes, which makes binary search possible",
+    "Only level-order traversal reads node data",
+    "Every traversal finds the shortest path between two nodes"
+   ],
+   "a": [
+    0
+   ],
+   "w": "When you traverse, you read each node as you visit it, so pre-, in-, post- and level-order, DFS and BFS are all ways of searching. Finding the cheapest path is a separate problem, which is what Dijkstra solves.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0457",
+   "topic": "Graph search & shortest paths",
+   "q": "On the Lecture 17 graph (edges A–P, A–Q, P–X, X–S, S–C, Q–Y, Y–R, R–B), DFS starts at Y and takes R before Q. What is the visit order?",
+   "c": [
+    "Y, R, Q, B, A, P, X, S, C",
+    "Y, R, B, A, Q, P, X, S, C",
+    "Y, R, B, Q, A, P, X, S, C",
+    "Y, Q, R, A, B, P, X, S, C"
+   ],
+   "a": [
+    2
+   ],
+   "w": "DFS goes as deep as possible first: Y → R → B, a dead end, then back to Y and down the other branch, Q → A → P → X → S → C. Y, R, Q, B, A… visits level by level, which is BFS.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0458",
+   "topic": "Graph search & shortest paths",
+   "q": "On the same graph (edges A–P, A–Q, P–X, X–S, S–C, Q–Y, Y–R, R–B), BFS starts at Y. How many hops from Y is C?",
+   "c": [
+    "4",
+    "2",
+    "8",
+    "6"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Levels from Y: R and Q at 1, B and A at 2, P at 3, X at 4, S at 5, C at 6. Four is C’s distance from A, the start used in Lecture 17; levels depend on the start vertex.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0459",
+   "topic": "Graph search & shortest paths",
+   "q": "Which traversal did he call the more useful for keeping a campus network’s map up to date as new computers are added?",
+   "c": [
+    "BFS, because only BFS can discover new nodes",
+    "DFS, which follows each branch to its last leaf and can do so again when nodes are added",
+    "Dijkstra’s algorithm, because the new links have costs",
+    "Binary search, because node addresses are sorted"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He said either traversal could be used, but DFS is more useful for the complete topology: it runs each branch to its end and repeats as new nodes appear. BFS suits questions about levels, and Dijkstra is for cheapest paths once the map is known.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0460",
+   "topic": "Graph search & shortest paths",
+   "q": "In a shortest-path problem, what does “shortest” mean, according to the lecture?",
+   "c": [
+    "The lowest total cost, where cost may be distance, time, money such as tolls, or a combination",
+    "Always the fewest kilometres",
+    "Always the fewest edges between the two nodes",
+    "The route passing through the most hubs"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The edge weights carry whatever is being minimised. Fewest edges is what BFS measures, and fewest kilometres is only one possible cost.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0461",
+   "topic": "Graph search & shortest paths",
+   "q": "A map app suggests a route around the city on a ring road that is 9 km longer than the route through the centre. Why can this still be the shortest path?",
+   "c": [
+    "Map apps always prefer the longest route",
+    "Dijkstra’s algorithm cannot handle routes through a city centre",
+    "The cost being minimised is travel time, and the ring road avoids the traffic",
+    "A ring road has fewer nodes, and fewest nodes is always shortest"
+   ],
+   "a": [
+    2
+   ],
+   "w": "His example: a longer main road or ring road is often quicker than short, congested streets, so when the cost is time it wins. Fewer nodes is a hop count, not the cost.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0462",
+   "topic": "Graph search & shortest paths",
+   "q": "Dijkstra runs from S on a network with two-way costs S–P 7, S–Q 3, Q–P 2, Q–R 8, P–R 4, P–T 9, R–T 2. After S and then Q have been visited, what is P’s tentative distance?",
+   "c": [
+    "7",
+    "2",
+    "5",
+    "9"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Visiting S sets P = 7 and Q = 3. Visiting Q (the smaller) checks P through Q: 3 + 2 = 5, better than 7, so P is updated to 5. Two is the cost of the edge Q–P alone, not the distance from S.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0463",
+   "topic": "Graph search & shortest paths",
+   "q": "On the same network (S–P 7, S–Q 3, Q–P 2, Q–R 8, P–R 4, P–T 9, R–T 2), what is the cheapest cost from S to T, and by which route?",
+   "c": [
+    "14, by S → Q → P → T",
+    "11, by S → Q → P → R → T",
+    "13, by S → Q → R → T",
+    "16, by S → P → T"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Dijkstra visits S, Q (3), P (5), R (9), then T at 9 + 2 = 11. S → Q → P → T costs 3 + 2 + 9 = 14 and S → P → T 7 + 9 = 16: the routes with fewer edges are dearer.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0464",
+   "topic": "Graph search & shortest paths",
+   "q": "In his five-node exercise (A–B 6, A–C 2, C–B 3, C–D 1, B–D 2, B–E 5, D–E 2; start A), which route does Dijkstra give from A to E?",
+   "c": [
+    "A → B → E, cost 11",
+    "A → C → B → E, cost 10",
+    "A → C → B → D → E, cost 9",
+    "A → C → D → E, cost 5"
+   ],
+   "a": [
+    3
+   ],
+   "w": "C = 2, D = 2 + 1 = 3, and E through D = 3 + 2 = 5, which beats every route through B. The answer skips B, as he pointed out.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0465",
+   "topic": "Graph search & shortest paths",
+   "q": "In the same exercise (A–B 6, A–C 2, C–B 3, C–D 1, B–D 2, B–E 5, D–E 2), A and C have been visited, leaving B at 5 and D at 3. Which node does Dijkstra visit next?",
+   "c": [
+    "B, because it was reached first",
+    "B, because it has more edges",
+    "Both at once, since they are neighbours",
+    "D, because the next node is always the unvisited one with the smallest distance"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The rule picks the smallest open distance, D (3). His walk-through finalised B first; the end results happened to agree, but a trace should follow the rule.",
+   "lec": 24,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0466",
+   "topic": "Graph search & shortest paths",
+   "q": "A planner runs Dijkstra from A on his exercise (A–B 6, A–C 2, C–B 3, C–D 1, B–D 2, B–E 5, D–E 2) and gets B = 5 and E = 5. She concludes the cheapest route from B to E costs 5 − 5 = 0. What should she do?",
+   "c": [
+    "Nothing: distances from one start can be subtracted",
+    "Run Dijkstra again with B as the start: one run gives cheapest paths from its own start only (B to E really costs 4, via D)",
+    "Add them instead, giving 5 + 5 = 10",
+    "Use the direct edge B–E, since a direct edge is always cheapest"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Dijkstra is single-source; results change with the start node. From B, the route B → D → E costs 2 + 2 = 4, cheaper than the direct edge B–E at 5.",
+   "lec": 24,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0467",
+   "topic": "Graph search & shortest paths",
+   "q": "A courier needs only the cheapest route from Jaipur to Surat, on a map of 200 cities. What may it do when running Dijkstra from Jaipur?",
+   "c": [
+    "Stop as soon as Surat is visited, since its distance is then final",
+    "Finish all 200 cities first, or Surat’s distance may still change",
+    "Run it from every city and take the smallest answer",
+    "Use the direct Jaipur–Surat road, if there is one"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He said that when you want one destination you stop as soon as its shortest distance is known. A visited node’s distance cannot change, because every other open node is at least as far.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0468",
+   "topic": "Graph search & shortest paths",
+   "q": "Why do courier companies use a spoke-and-hub model, in the lecture’s account?",
+   "c": [
+    "Dijkstra’s algorithm can only run on a tree",
+    "Parcels must travel through the cities in alphabetical order",
+    "Every town becomes a hub so that all routes are direct",
+    "Linking every city to every other is impractical, so hubs are linked by cheapest routes and nearby towns attach to their hub"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A Jodhpur parcel for Sonipat goes via the Jaipur and Delhi hubs. Each hub runs Dijkstra from itself to its fellow hubs, keeping the network small.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0469",
+   "topic": "Graph search & shortest paths",
+   "q": "A route planner for a drive from Jodhpur to Coimbatore never explores roads heading north. Which algorithm’s idea is this?",
+   "c": [
+    "Bellman–Ford, which allows negative costs",
+    "Prim’s, which connects every node",
+    "A*, which adds a heuristic sense of direction to the cost so far",
+    "BFS, which explores level by level"
+   ],
+   "a": [
+    2
+   ],
+   "w": "His example: by road you know to head south at once. A* combines the actual cost with that sense of direction, which is why GPS navigation uses it widely.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0470",
+   "topic": "Graph search & shortest paths",
+   "q": "A telecom operator must connect every tower in its licence area with the least total cable cost. Which algorithm did the lecture match to this?",
+   "c": [
+    "Prim’s or Kruskal’s algorithm",
+    "Dijkstra’s algorithm from the head office",
+    "Bidirectional search",
+    "A*"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The operator must serve everyone, so the goal is the cheapest network linking all nodes, not the cheapest route between two. That is Prim’s or Kruskal’s; Dijkstra minimises paths from one start.",
+   "lec": 24,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0471",
+   "topic": "Graph search & shortest paths",
+   "q": "Which pairing of need and algorithm matches the lecture?",
+   "c": [
+    "Cheapest routes from one depot to all others, with some negative costs: Dijkstra",
+    "Shortest routes between every pair of substations in a power grid: Floyd–Warshall",
+    "Linking all towers at least total cost: A*",
+    "Cheapest routes from one city to all others: Prim’s"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Floyd–Warshall is the all-pairs algorithm he named for grids and computer networks. Negative costs call for Bellman–Ford, linking every node for Prim’s or Kruskal’s, and one source to all for Dijkstra.",
+   "lec": 24,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0472",
+   "topic": "Graph search & shortest paths",
+   "q": "What does bidirectional search do?",
+   "c": [
+    "Searches every pair of nodes in both directions",
+    "Runs DFS and then BFS on the same graph",
+    "Searches from the source and from the destination at the same time",
+    "Allows a path to use each edge in both directions"
+   ],
+   "a": [
+    2
+   ],
+   "w": "It runs from both ends simultaneously. He linked its usefulness to the fact that, as with Dijkstra, results depend on the starting node. Every pair is Floyd–Warshall’s job.",
+   "lec": 24,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0473",
+   "topic": "Sorting",
+   "q": "In the lecture’s terms, what is sorting?",
+   "c": [
+    "Removing duplicate elements before a search",
+    "Arranging elements in a specific order, ascending or descending, by a chosen parameter such as marks, name or price",
+    "Grouping elements into buckets with a hash function",
+    "Finding the position of one element in a list"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Sorting puts the whole list in an order, by whatever parameter matters. Finding one element is searching, and buckets come from hashing.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0474",
+   "topic": "Sorting",
+   "q": "Why did the lecture say searching and sorting are taught together?",
+   "c": [
+    "Sorting a list also finds every element in it",
+    "Bubble sort is a form of binary search",
+    "Searching works only on numbers, sorting only on text",
+    "Most efficient search algorithms, such as binary, jump and exponential search, assume the data is already sorted"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He linked the modules: to make searching efficient you usually need sorted data first, and search results are also presented sorted.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0475",
+   "topic": "Sorting",
+   "q": "The classic bubble sort (left to right, swap when the left value is larger) runs one pass over [14, 9, 21, 6, 17, 3]. What is the list after pass 1?",
+   "c": [
+    "[9, 14, 6, 17, 3, 21]",
+    "[9, 14, 21, 6, 17, 3]",
+    "[3, 6, 9, 14, 17, 21]",
+    "[9, 6, 14, 3, 17, 21]"
+   ],
+   "a": [
+    0
+   ],
+   "w": "14 and 9 swap; 14 and 21 stay; then 21 is swapped past 6, 17 and 3 to the end. [9, 14, 21, 6, 17, 3] is the list after the first comparison only, and [9, 6, 14, 3, 17, 21] is after pass 2.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0476",
+   "topic": "Sorting",
+   "q": "In that first pass over [14, 9, 21, 6, 17, 3], how many swaps are made?",
+   "c": [
+    "5",
+    "3",
+    "4",
+    "6"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Five comparisons, but 14 and 21 are already in order, so only four swap: 14/9, then 21 with 6, 17 and 3. Six is impossible: a six-element list has only five adjacent pairs.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0477",
+   "topic": "Sorting",
+   "q": "Continuing the classic method, what is [9, 14, 6, 17, 3, 21] after pass 2?",
+   "c": [
+    "[6, 9, 3, 14, 17, 21]",
+    "[9, 14, 6, 17, 3, 21]",
+    "[9, 6, 14, 3, 17, 21]",
+    "[6, 3, 9, 14, 17, 21]"
+   ],
+   "a": [
+    2
+   ],
+   "w": "9/14 stay, 14 and 6 swap, 14/17 stay, 17 and 3 swap; 21 is not compared again. Now 17 and 21 are in place. [6, 9, 3, 14, 17, 21] is after pass 3.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0478",
+   "topic": "Sorting",
+   "q": "Bubble sort is run on a list of 7 elements, with each pass stopping one comparison earlier than the last. How many comparisons does pass 3 make?",
+   "c": [
+    "4",
+    "7",
+    "5",
+    "6"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Pass 1 makes 6 (seven elements, six adjacent pairs), pass 2 makes 5, pass 3 makes 4. Seven would count elements, not pairs.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0479",
+   "topic": "Sorting",
+   "q": "How many comparisons in total does bubble sort make on 8 elements, each pass stopping one comparison earlier?",
+   "c": [
+    "64",
+    "36",
+    "56",
+    "28"
+   ],
+   "a": [
+    3
+   ],
+   "w": "7 + 6 + 5 + 4 + 3 + 2 + 1 = 28 = 8 × 7 ÷ 2. 64 is n², which Big O approximates but is not the count; 36 wrongly starts the sum at 8.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0480",
+   "topic": "Sorting",
+   "q": "The alternative bubble sort (from the end, compare each element with the one before, swap if the later one is smaller) runs one pass over [12, 4, 15, 9, 2, 7]. What is the result?",
+   "c": [
+    "[4, 12, 9, 2, 7, 15]",
+    "[2, 12, 4, 15, 9, 7]",
+    "[12, 4, 15, 2, 9, 7]",
+    "[2, 4, 7, 9, 12, 15]"
+   ],
+   "a": [
+    1
+   ],
+   "w": "7 and 2 stay; then 2 is swapped leftwards past 9, 15, 4 and 12 to the front. [4, 12, 9, 2, 7, 15] is what the classic left-to-right pass would give, carrying 15 to the end.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0481",
+   "topic": "Sorting",
+   "q": "After three passes of the alternative (right-to-left) bubble sort on a 9-element list, what is guaranteed?",
+   "c": [
+    "The three smallest values fill the first three positions, in order",
+    "The three largest values fill the last three positions",
+    "The list is sorted at both ends, three values each",
+    "Nothing, until the final pass"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Each right-to-left pass carries the smallest remaining value to the front. The largest-to-the-end guarantee belongs to the classic method; neither guarantees both ends.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0482",
+   "topic": "Sorting",
+   "q": "Classic bubble sort runs one pass over the names [Kavya, Esha, Rohan, Ankit, Meera], in alphabetical order (A lowest). What is the list after pass 1?",
+   "c": [
+    "[Ankit, Esha, Kavya, Meera, Rohan]",
+    "[Esha, Kavya, Rohan, Ankit, Meera]",
+    "[Esha, Ankit, Kavya, Meera, Rohan]",
+    "[Esha, Kavya, Ankit, Meera, Rohan]"
+   ],
+   "a": [
+    3
+   ],
+   "w": "K and E swap; K and R stay; R is swapped past A and M to the end. The fully sorted list needs more passes; [Esha, Ankit, …] is after pass 2.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0483",
+   "topic": "Sorting",
+   "q": "Bubble sort makes ½n² − ½n comparisons. Why is its complexity written O(n²)?",
+   "c": [
+    "It makes exactly n² comparisons",
+    "It always makes n passes with n swaps each",
+    "Big O drops the lower-order term (−½n) and the constant multiplier (½)",
+    "½n² − ½n is rounded to the nearest square number"
+   ],
+   "a": [
+    2
+   ],
+   "w": "These are the two Big O rules he applied: discard smaller terms, then numerical multipliers. The actual count is about half of n².",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0484",
+   "topic": "Sorting",
+   "q": "A list grows from 1,000 to 2,000 records. Roughly how does bubble sort’s number of comparisons change?",
+   "c": [
+    "It doubles",
+    "It roughly quadruples, from about 5 lakh to about 20 lakh",
+    "It rises by about 1,000",
+    "It rises about eight times"
+   ],
+   "a": [
+    1
+   ],
+   "w": "n(n − 1) ÷ 2 goes from 4,99,500 to 19,99,000, about 4 times: doubling n multiplies n² by 4. Doubling would be O(n) behaviour.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0485",
+   "topic": "Sorting",
+   "q": "In the lecture’s own example, after how many passes of the classic method was [10, 5, 8, 4, 3, 2] fully sorted?",
+   "c": [
+    "5",
+    "6",
+    "4",
+    "15"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He said the passes needed equal the number of elements, but his six-element list was sorted after pass 5 and he counted five. After n − 1 passes the last value is already in place. 15 is the number of comparisons.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0486",
+   "topic": "Sorting",
+   "q": "The classic method as taught runs on the already-sorted list [2, 5, 8, 11]. What does pass 1 do?",
+   "c": [
+    "Makes no comparisons, since the list is sorted",
+    "Makes 3 comparisons and 3 swaps",
+    "Makes 4 comparisons and no swaps",
+    "Makes 3 comparisons and no swaps"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Every adjacent pair is compared (four elements, three pairs), but none is out of order, so nothing is swapped. The method as taught has no check that skips a sorted list.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0487",
+   "topic": "Sorting",
+   "q": "An e-commerce site must re-sort 20 lakh products by price whenever a shopper changes the sort order. A developer proposes bubble sort because it is easy to write. What is the lecture’s view?",
+   "c": [
+    "Suitable: bubble sort is O(n), so it scales",
+    "Suitable, provided it runs from the right-hand end",
+    "Unsuitable: its O(n²) work grows far too fast at that size, though it is fine for small lists",
+    "Unsuitable, because bubble sort cannot sort in descending order"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He called bubble sort logically simple but unsuitable for large lists and business use. Running from the other end changes the method, not the complexity, and it can sort in either order.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0488",
+   "topic": "Sorting",
+   "q": "What did the lecture say about bubble sort questions in the final exam, compared with quizzes?",
+   "c": [
+    "Only the final sorted list is needed in both",
+    "In the final exam you must show every step; in a quiz, working it out in your head is fine",
+    "Bubble sort will appear only in quizzes",
+    "Only the number of passes is needed in the final exam"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Introducing the names exercise, he said that doing it in your head is fine for quizzes, but the final exam needs each step shown, so practise writing out the passes.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0489",
+   "topic": "Sorting",
+   "q": "A professor sorts marks from highest to lowest to set grade cut-offs, then enters the grades on the ERP, which lists students by roll number. What does this illustrate?",
+   "c": [
+    "The same data can be sorted by different parameters for different jobs",
+    "Bubble sort can only sort numbers",
+    "Sorting matters only before a binary search",
+    "A list can be sorted only once"
+   ],
+   "a": [
+    0
+   ],
+   "w": "His example: descending marks make grading decisions intuitive, while the ERP wants roll-number order. The parameter changes; sorting is still sorting.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0490",
+   "topic": "Sorting",
+   "q": "In the classic method, what happens in each pass that lets the next pass make one comparison fewer?",
+   "c": [
+    "The smallest value moves to the front",
+    "Half of the list is discarded, as in binary search",
+    "The list is split into halves that are later merged",
+    "The largest unsorted value reaches its final place at the end, so that position need not be compared again"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Each left-to-right pass carries the largest remaining value to the end. Smallest-to-the-front is the alternative method; halving belongs to binary search.",
+   "lec": 25,
+   "lv": "recall"
   }
  ],
  "briefs": {
@@ -9109,6 +11148,11 @@ HUB.addCourse({
   "lec-20",
   "lec-18s",
   "lec-21",
-  "lec-22"
+  "lec-22",
+  "cdsa-ch07",
+  "cdsa-ch08",
+  "lec-23",
+  "lec-24",
+  "lec-25"
  ]
 });
