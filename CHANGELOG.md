@@ -10,6 +10,24 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.5.0] — 2026-10-30
+
+### Added
+- **Statistics for Managers: Interval Estimation 3 (proportions and their sample size), the
+  Metropolitan Research case, and Hypothesis Testing 1** (L#25–27), in a new Hypothesis testing
+  unit; plus **the lecturer's Chapter 9 practice set (29 October), all 20 problems solved** and
+  checked, with new MCQs. Where the LMS summary or the lecture slipped (a sample size of 1,843 that
+  should round up to 1,844; a standard deviation of 24,849 that the data give as 24,899; a hypothesis
+  written backwards), the notes say so.
+- **Principles of Marketing: Kotler & Armstrong's product chapter**, now that L#29–30 have taught it,
+  with notes on where the book and the lecture count product levels and the product mix differently.
+
+### Changed
+- **Statistics, Chapter 8 material:** proportions (part 4) was labelled "still to be lectured";
+  Lecture 25 has now taught it, so the labels say so.
+
+With this release every lecture on the LMS up to 26 October is in the hub.
+
 ## [2.4.3] — 2026-10-30
 
 ### Added

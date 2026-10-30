@@ -151,6 +151,24 @@ HUB.addCourse({
    "Week 10 — Interval Estimation 2",
    "σ unknown: t intervals; sample size for μ",
    "rec"
+  ],
+  [
+   25,
+   "Week 10 — Interval Estimation 3",
+   "Proportions: interval and sample size; practice",
+   "rec"
+  ],
+  [
+   26,
+   "Week 11 — Case: Interval Estimation",
+   "Metropolitan Research transmission failures, in Excel",
+   "rec"
+  ],
+  [
+   27,
+   "Week 11 — Hypothesis Testing 1",
+   "H₀ and Hₐ, three forms, Type I and II errors",
+   "rec"
   ]
  ],
  "units": [
@@ -555,8 +573,8 @@ HUB.addCourse({
   {
    "id": "estimation",
    "title": "Confidence intervals &amp; sample size",
-   "tag": "Lectures 22, 24 · + textbook",
-   "lede": "From a single best guess to a range: how wide to make an interval for a chosen confidence level, whether to use z or t, what makes it narrower, and how big a sample a target margin needs.",
+   "tag": "Lectures 22, 24–26 · + textbook",
+   "lede": "From a single best guess to a range: how wide to make an interval for a mean or a proportion at a chosen confidence level, whether to use z or t, what makes it narrower, and how big a sample a target margin needs.",
    "topics": [
     {
      "t": "Why interval estimation: Sahyadri Retail Mart",
@@ -576,7 +594,7 @@ HUB.addCourse({
     {
      "t": "Practice questions from the lecturer: Chapter 8",
      "src": "L#22",
-     "h": "<p style=\"font-size:14.5px\">The lecturer's own practice set for Chapter 8, Interval Estimation, shared by Dr. Srivastava through an LMS announcement on 9 Oct 2026: 20 questions, 10 objective (Part A) and 10 numerical (Part B). Each one is restated in our words below with a full worked solution; the numbers are the sheet's. L#22 taught the first part of the chapter, the interval for μ when σ is known, and L#24 taught parts 2 and 3. In L#22's plan the topic has four parts: (1) σ known, (2) σ unknown, (3) choosing the sample size, (4) the population proportion. The sheet covers all four, so every question below is labelled with its part. The answers for parts 2 and 3 have been checked against L#24 and stand: t with n − 1 df when only s is known, and z with a planning value in the sample-size formula. Part 4 is still to be lectured, so its working follows the textbook's method; check it against that lecture when it comes.</p><div class=\"scroller\"><table><thead><tr><th>Part of the topic</th><th>Lectured</th><th>On this sheet</th></tr></thead><tbody><tr><td>1 · Mean, σ known (z)</td><td>L#22</td><td>Part A Q1, 2, 4, 5, 6, 10 · Numerical 1</td></tr><tr><td>2 · Mean, σ unknown (t, n − 1 df)</td><td>L#24</td><td>Part A Q3, 7 · Numericals 2, 3, 4</td></tr><tr><td>3 · Sample size for a mean</td><td>L#24</td><td>Numericals 5, 6</td></tr><tr><td>4 · Proportion: interval, and its sample size (with part 3)</td><td>after L#22</td><td>Part A Q8, 9 · Numericals 7, 8, 9, 10</td></tr></tbody></table></div><h4>What this sheet tells you to be able to do</h4><ul><li>Pick the right critical value: z when σ is known (and for proportions), t with n − 1 degrees of freedom when only s is available.</li><li>Find the margin of error first, then write the interval as point estimate ± margin.</li><li>Build an interval for a proportion from a count (p̂ = x/n) and see how it widens from 95% to 99%.</li><li>Work out the sample size for a target margin, for a mean and for a proportion, and always round <strong>up</strong>.</li><li>Use p* = 0.50 when there is no planning value for a proportion.</li><li>Read an interval: a claimed value outside it ‘appears to differ’; a value inside it is plausible.</li></ul><div class=\"def\"><b>The toolkit for the whole chapter.</b> E is the desired margin of error. The first row was lectured in L#22 and the next two in L#24; the proportion rows are still to come.</div><div class=\"scroller\"><table><thead><tr><th>Case</th><th>Interval or sample size</th><th>Critical value</th><th>Part</th></tr></thead><tbody><tr><td>Mean, σ known</td><td>x̄ ± z<sub>α/2</sub> σ/√n</td><td>z</td><td>1 (L#22)</td></tr><tr><td>Mean, σ unknown</td><td>x̄ ± t<sub>α/2</sub> s/√n</td><td>t with n − 1 df</td><td>2 (L#24)</td></tr><tr><td>Sample size, mean</td><td>n = (z<sub>α/2</sub> σ/E)²</td><td>z, σ = planning value</td><td>3 (L#24)</td></tr><tr><td>Proportion</td><td>p̂ ± z<sub>α/2</sub> √[p̂(1 − p̂)/n]</td><td>z</td><td>4</td></tr><tr><td>Sample size, proportion</td><td>n = z<sub>α/2</sub>² p*(1 − p*)/E²</td><td>z, p* = planning value (0.50 if none)</td><td>3–4</td></tr></tbody></table></div><div class=\"scroller\"><table><thead><tr><th>Confidence</th><th>α/2 in each tail</th><th>Look up left area</th><th>z<sub>α/2</sub></th></tr></thead><tbody><tr><td>90%</td><td>0.05</td><td>0.95</td><td>1.645</td></tr><tr><td>95%</td><td>0.025</td><td>0.975</td><td>1.960</td></tr><tr><td>98%</td><td>0.01</td><td>0.99</td><td>2.326 (two-decimal table: 2.33)</td></tr><tr><td>99%</td><td>0.005</td><td>0.995</td><td>2.576 (two-decimal table: 2.57 or 2.58)</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Look up the left area 1 − α/2 in the same z table the hub uses (L#14). L#22 quotes these values to three decimals and says they will generally be given in the paper. Excel: <code>=NORM.S.INV(0.975)</code> = 1.960 and <code>=T.INV.2T(0.05, 63)</code> = 1.998, the two-tailed t value for 95% with 63 df.</p><div class=\"def\"><b>Issues on the sheet:</b><ul><li><b>z or t with a big sample? Settled by L#24: t.</b> Part A asks which distribution to use when σ is unknown ‘and the sample is small’ (answer: t), but Numericals 2 and 3 give only s, with n = 64 and n = 80. L#22 used z throughout because σ was known. L#24, the part 2 lecture, makes the choice on whether σ is known, not on n: with only s given, use t with n − 1 df (63 and 79 df here), as the textbook does. Only past 100 df does the table's ∞ row, z, take over. An older shortcut switches to z for n ≥ 30; its answers are still shown alongside, and the difference is in the second decimal.</li><li><b>98% critical value:</b> L#22 gives z to three decimals (1.645, 1.960, 2.576), and the three-decimal value for 98% is 2.326, the same figure as the ∞ row of the textbook's t table. A two-decimal z table gives 2.33. The answers below use 2.326 and show 2.33 alongside: Numerical 5 comes out at 37 either way, while Numerical 10 moves by a few units.</li><li><b>Numerical 3(c)</b> asks for a total spend but the sheet never gives how many people are in the population. The method is shown with N left as a letter.</li><li><b>Numerical 4</b> refers to a dataset of 60 games that the sheet does not include, so no numbers can be computed. Only the method is shown.</li><li>The sheet prints an answer only for Part A Q10. The other nine are answered below.</li></ul></div><details><summary>Part A · the 10 objective questions, answered</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>What it asks</th><th>Answer</th><th>Part</th></tr></thead><tbody><tr><td>1</td><td>What a confidence interval is for</td><td>Estimating a population parameter (a range of plausible values for μ or p)</td><td>1</td></tr><tr><td>2</td><td>Distribution when σ is known</td><td>Standard normal (z)</td><td>1</td></tr><tr><td>3</td><td>Distribution when σ is unknown and n is small</td><td>t</td><td>2</td></tr><tr><td>4</td><td>Margin of error for μ, σ known</td><td>z<sub>α/2</sub> × σ/√n</td><td>1</td></tr><tr><td>5</td><td>Larger n, everything else fixed</td><td>Margin of error decreases (it shrinks with √n)</td><td>1</td></tr><tr><td>6</td><td>z for 95%</td><td>1.960</td><td>1</td></tr><tr><td>7</td><td>Degrees of freedom for t</td><td>n − 1</td><td>2</td></tr><tr><td>8</td><td>Point estimator of p</td><td>p̂</td><td>4</td></tr><tr><td>9</td><td>Planning value of p with no prior information</td><td>p = 0.50 (it gives the largest p(1 − p), so the safest n)</td><td>3–4</td></tr><tr><td>10</td><td>90% → 99% with the same n</td><td>Wider (the sheet's own answer, B)</td><td>1</td></tr></tbody></table></div><p style=\"font-size:14.5px\">All ten are also in the question bank, reworded. The trap in Q9: 0.25 is the value of p(1 − p) at p = 0.50, not the planning value of p.</p></details><details><summary>Numerical 1 · Interval for a mean, σ known (part 1, L#22)</summary><p style=\"font-size:14.5px\">A sample of 54 discount brokers charges a mean of $33.77 for a particular 100-share trade. The population standard deviation is known to be $15. Find (a) the 95% margin of error and (b) the 95% confidence interval for the mean charge.</p><ol><li>σ is known, so use z, exactly as in L#22: z<sub>.025</sub> = 1.960.</li><li>Standard error: σ/√n = 15/√54 = 15/7.348 = 2.041.</li><li>(a) Margin of error = 1.96 × 2.041 = 4.00.</li><li>(b) 33.77 ± 4.00 → $29.77 to $37.77.</li><li>Excel: <code>=CONFIDENCE.NORM(0.05, 15, 54)</code> returns the margin, 4.0008.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) ≈ $4.00; (b) $29.77 to $37.77.</p></details><details><summary>Numerical 2 · Interval for a mean from s, and comparing with an old figure (part 2: σ unknown, L#24)</summary><p style=\"font-size:14.5px\">64 families visiting a tourist destination spend a mean of $252.45 a day, with sample standard deviation $74.50. (a) Find the 95% confidence interval for the mean daily spend. (b) Does the population mean appear to differ from an earlier reported mean of $215.60?</p><ol><li>Only s is known, so use t with n − 1 = 63 df, as L#24 teaches and the textbook does: t<sub>.025</sub> = 1.998. (σ unknown is part 2 of the topic, taught in L#24; n = 64 does not change the choice.)</li><li>Standard error: s/√n = 74.50/8 = 9.3125.</li><li>Margin = 1.998 × 9.3125 = 18.61.</li><li>(a) 252.45 ± 18.61 → $233.84 to $271.06.</li><li>(b) $215.60 is below the lower limit, so it is not a plausible value for the current mean: spending appears to have risen.</li><li>With z = 1.96 instead (the older n ≥ 30 shortcut, which L#24 does not use): margin 18.25, interval $234.20 to $270.70. The conclusion in (b) is the same.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) ≈ $233.84 to $271.06 (t) [z: $234.20 to $270.70]; (b) yes, it appears to differ: $215.60 lies outside the interval.</p></details><details><summary>Numerical 3 · Margin, interval, a total, and skew (part 2: σ unknown, L#24)</summary><p style=\"font-size:14.5px\">A sample of 80 people aged 50 and over spends a mean of $1,873 a year on restaurant and take-away food, with s = $550. Find (a) the 95% margin of error, (b) the 95% interval for the mean, (c) an estimate of the total spent by everyone in this age group, and (d) whether the median is likely above or below $1,873 if spending is skewed to the right.</p><ol><li>Only s is known: t with 79 df, t<sub>.025</sub> = 1.990. Standard error = 550/√80 = 61.49.</li><li>(a) Margin = 1.990 × 61.49 = 122.37; Excel's unrounded t (1.9905) gives 122.40, which the limits below use.</li><li>(b) 1,873 ± 122.40 → $1,750.60 to $1,995.40. (With z = 1.96: margin 120.52, interval $1,752.48 to $1,993.52.)</li><li>(c) Total = N × x̄ = N × $1,873, where N is the number of people aged 50+. The sheet does not give N. An interval for the total is N × ($1,750.60 to $1,995.40): for every million people, about $1.87 billion, between $1.75 and $2.00 billion.</li><li>(d) Right skew means a few very large spenders pull the mean up, so the median is <strong>less</strong> than the mean of $1,873.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) ≈ $122.40; (b) ≈ $1,750.60 to $1,995.40; (c) N × $1,873 (N not given on the sheet); (d) less than $1,873.</p></details><details><summary>Numerical 4 · Interval from raw data, dataset not on the sheet (part 2: σ unknown, L#24)</summary><p style=\"font-size:14.5px\">A sample of 60 professional American-football games records the minutes players spend standing around between plays. Find (a) the sample mean, (b) the sample standard deviation and (c) the 95% interval for the mean. <em>The sheet refers to a data file that it does not include, so only the method can be given.</em></p><ol><li>(a) x̄ = Σx/60. In Excel: <code>=AVERAGE(range)</code>.</li><li>(b) s = √[Σ(x − x̄)²/(60 − 1)]: divide by n − 1 = 59, because this is a sample. Excel: <code>=STDEV.S(range)</code>.</li><li>(c) σ is unknown, so use t with 59 df: t<sub>.025</sub> = 2.001. Interval: x̄ ± 2.001 × s/√60 = x̄ ± 0.2583 s.</li><li>Excel shortcut for the margin: <code>=CONFIDENCE.T(0.05, s, 60)</code>.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> x̄ ± 2.001 s/√60 once x̄ and s are calculated from the data file (ask for it on the LMS if you want to check numbers).</p></details><details><summary>Numerical 5 · Sample size for a mean at 98% (part 3, L#24)</summary><p style=\"font-size:14.5px\">A car model's fuel economy is to be estimated to within ±1 mile per gallon at 98% confidence. The population standard deviation is 2.6 mpg. How many cars should be tested?</p><ol><li>98% leaves 0.01 in each tail, so look up a left area of 0.99: z<sub>.01</sub> = 2.326 (two-decimal table: 2.33).</li><li>n = (z σ/E)² = (2.326 × 2.6/1)² = (6.048)² = 36.57.</li><li>Round <strong>up</strong> to 37. (With 2.33: (6.058)² = 36.70, still 37.)</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 37 cars.</p></details><details><summary>Numerical 6 · Sample size for a mean at 95% and 99% (part 3, L#24)</summary><p style=\"font-size:14.5px\">A medical centre wants to estimate the mean time a staff member spends with each patient to within ±2 minutes, using a planning value of σ = 8 minutes. Find the sample size at (a) 95% and (b) 99% confidence.</p><ol><li>(a) n = (1.96 × 8/2)² = (7.84)² = 61.47 → round up to <strong>62</strong>.</li><li>(b) n = (2.576 × 8/2)² = (10.304)² = 106.17 → round up to <strong>107</strong>. (2.58 gives 106.50, still 107.)</li><li>More confidence at the same margin needs a bigger sample: here about 73% more.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) 62; (b) 107.</p></details><details><summary>Numerical 7 · Interval for a proportion at 95% and 99% (part 4)</summary><p style=\"font-size:14.5px\">47% of a sample of 450 college students work to pay their fees and living costs. Give (a) the 95% and (b) the 99% confidence interval for the population proportion, and (c) say what happens to the margin of error as confidence rises.</p><ol><li>p̂ = 0.47. Standard error = √(0.47 × 0.53/450) = √0.000554 = 0.02353.</li><li>(a) Margin = 1.96 × 0.02353 = 0.0461 → 0.4239 to 0.5161.</li><li>(b) Margin = 2.576 × 0.02353 = 0.0606 → 0.4094 to 0.5306.</li><li>(c) The margin grows from 0.046 to 0.061 (by the ratio 2.576/1.96 = 1.31): to be more confident of capturing p, the interval must be wider.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) ≈ 0.424 to 0.516; (b) ≈ 0.409 to 0.531; (c) the margin of error increases, so the interval widens.</p></details><details><summary>Numerical 8 · Point estimate, margin and interval for a proportion (part 4)</summary><p style=\"font-size:14.5px\">Of 369 working parents surveyed, 200 say work leaves them too little time with their children. Find (a) the point estimate of the population proportion, (b) the 95% margin of error and (c) the 95% interval.</p><ol><li>(a) p̂ = 200/369 = 0.5420.</li><li>(b) Standard error = √(0.542 × 0.458/369) = 0.02594; margin = 1.96 × 0.02594 = 0.0508.</li><li>(c) 0.5420 ± 0.0508 → 0.4912 to 0.5928.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) ≈ 0.542; (b) ≈ 0.0508; (c) ≈ 0.491 to 0.593. The interval dips just below 0.50, so the data do not quite establish a majority at 95%.</p></details><details><summary>Numerical 9 · Sample size for a proportion, then the interval (parts 3–4)</summary><p style=\"font-size:14.5px\">A preliminary estimate says 30% of adults smoke. (a) What sample size gives a margin of error of 0.02 at 95% confidence? (b) If that sample contains 520 smokers, what is the point estimate? (c) Give the 95% interval.</p><ol><li>(a) n = 1.96² × 0.30 × 0.70/0.02² = 3.8416 × 0.21/0.0004 = 2,016.84 → round up to <strong>2,017</strong>.</li><li>(b) p̂ = 520/2,017 = 0.2578.</li><li>(c) The interval uses p̂, not the planning value: standard error = √(0.2578 × 0.7422/2,017) = 0.00974; margin = 1.96 × 0.00974 = 0.0191.</li><li>0.2578 ± 0.0191 → 0.2387 to 0.2769. The margin came out slightly below the 0.02 target because p̂ ended up further from 0.50 than the planning value.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) 2,017; (b) ≈ 0.258; (c) ≈ 0.239 to 0.277.</p></details><details><summary>Numerical 10 · Sample size for a proportion at 98%, with and without a planning value (parts 3–4)</summary><p style=\"font-size:14.5px\">A card company wants the proportion of card holders who carry a balance at month-end to within ±0.03 at 98% confidence. Find the sample size (a) if about 70% are expected to carry a balance and (b) if there is no planning value.</p><ol><li>z<sub>.01</sub> = 2.326 (left area 0.99; a two-decimal table gives 2.33).</li><li>(a) n = 2.326² × 0.70 × 0.30/0.03² = 5.4103 × 0.21/0.0009 = 1,262.40 → <strong>1,263</strong>.</li><li>(b) Use p* = 0.50: n = 5.4103 × 0.25/0.0009 = 1,502.85 → <strong>1,503</strong>.</li><li>With the table's 2.33: (a) 5.4289 × 0.21/0.0009 = 1,266.74 → 1,267 and (b) 5.4289 × 0.25/0.0009 = 1,508.03 → 1,509; round up even though that decimal is only .03. Full-precision <code>=NORM.S.INV(0.99)</code> = 2.32635 gives 1,263 and 1,504. L#22 says z values will generally be given: use the one in the question and write it down so the marker can follow.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) 1,263; (b) 1,503 with z = 2.326 (1,267 and 1,509 with 2.33). p* = 0.50 always needs the larger sample.</p></details>"
+     "h": "<p style=\"font-size:14.5px\">The lecturer's own practice set for Chapter 8, Interval Estimation, shared by Dr. Srivastava through an LMS announcement on 9 Oct 2026: 20 questions, 10 objective (Part A) and 10 numerical (Part B). Each one is restated in our words below with a full worked solution; the numbers are the sheet's. L#22 taught the first part of the chapter, the interval for μ when σ is known, L#24 taught parts 2 and 3, and L#25 taught part 4, the proportion. In L#22's plan the topic has four parts: (1) σ known, (2) σ unknown, (3) choosing the sample size, (4) the population proportion. The sheet covers all four, so every question below is labelled with its part. The answers for parts 2 and 3 have been checked against L#24 and stand: t with n − 1 df when only s is known, and z with a planning value in the sample-size formula. The answers for part 4 have been checked against L#25 and stand: p̂ ± z<sub>α/2</sub> √[p̂(1 − p̂)/n] once the counts of successes and failures are both at least 5, and n = z<sub>α/2</sub>² p*(1 − p*)/E² with a planning value (0.50 if there is none), always rounded up.</p><div class=\"scroller\"><table><thead><tr><th>Part of the topic</th><th>Lectured</th><th>On this sheet</th></tr></thead><tbody><tr><td>1 · Mean, σ known (z)</td><td>L#22</td><td>Part A Q1, 2, 4, 5, 6, 10 · Numerical 1</td></tr><tr><td>2 · Mean, σ unknown (t, n − 1 df)</td><td>L#24</td><td>Part A Q3, 7 · Numericals 2, 3, 4</td></tr><tr><td>3 · Sample size for a mean</td><td>L#24</td><td>Numericals 5, 6</td></tr><tr><td>4 · Proportion: interval, and its sample size (with part 3)</td><td>L#25</td><td>Part A Q8, 9 · Numericals 7, 8, 9, 10</td></tr></tbody></table></div><h4>What this sheet tells you to be able to do</h4><ul><li>Pick the right critical value: z when σ is known (and for proportions), t with n − 1 degrees of freedom when only s is available.</li><li>Find the margin of error first, then write the interval as point estimate ± margin.</li><li>Build an interval for a proportion from a count (p̂ = x/n) and see how it widens from 95% to 99%.</li><li>Work out the sample size for a target margin, for a mean and for a proportion, and always round <strong>up</strong>.</li><li>Use p* = 0.50 when there is no planning value for a proportion.</li><li>Read an interval: a claimed value outside it ‘appears to differ’; a value inside it is plausible.</li></ul><div class=\"def\"><b>The toolkit for the whole chapter.</b> E is the desired margin of error. The first row was lectured in L#22, the next two in L#24 and the two proportion rows in L#25.</div><div class=\"scroller\"><table><thead><tr><th>Case</th><th>Interval or sample size</th><th>Critical value</th><th>Part</th></tr></thead><tbody><tr><td>Mean, σ known</td><td>x̄ ± z<sub>α/2</sub> σ/√n</td><td>z</td><td>1 (L#22)</td></tr><tr><td>Mean, σ unknown</td><td>x̄ ± t<sub>α/2</sub> s/√n</td><td>t with n − 1 df</td><td>2 (L#24)</td></tr><tr><td>Sample size, mean</td><td>n = (z<sub>α/2</sub> σ/E)²</td><td>z, σ = planning value</td><td>3 (L#24)</td></tr><tr><td>Proportion</td><td>p̂ ± z<sub>α/2</sub> √[p̂(1 − p̂)/n]</td><td>z</td><td>4 (L#25)</td></tr><tr><td>Sample size, proportion</td><td>n = z<sub>α/2</sub>² p*(1 − p*)/E²</td><td>z, p* = planning value (0.50 if none)</td><td>3–4 (L#25)</td></tr></tbody></table></div><div class=\"scroller\"><table><thead><tr><th>Confidence</th><th>α/2 in each tail</th><th>Look up left area</th><th>z<sub>α/2</sub></th></tr></thead><tbody><tr><td>90%</td><td>0.05</td><td>0.95</td><td>1.645</td></tr><tr><td>95%</td><td>0.025</td><td>0.975</td><td>1.960</td></tr><tr><td>98%</td><td>0.01</td><td>0.99</td><td>2.326 (two-decimal table: 2.33)</td></tr><tr><td>99%</td><td>0.005</td><td>0.995</td><td>2.576 (two-decimal table: 2.57 or 2.58)</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Look up the left area 1 − α/2 in the same z table the hub uses (L#14). L#22 quotes these values to three decimals and says they will generally be given in the paper. Excel: <code>=NORM.S.INV(0.975)</code> = 1.960 and <code>=T.INV.2T(0.05, 63)</code> = 1.998, the two-tailed t value for 95% with 63 df.</p><div class=\"def\"><b>Issues on the sheet:</b><ul><li><b>z or t with a big sample? Settled by L#24: t.</b> Part A asks which distribution to use when σ is unknown ‘and the sample is small’ (answer: t), but Numericals 2 and 3 give only s, with n = 64 and n = 80. L#22 used z throughout because σ was known. L#24, the part 2 lecture, makes the choice on whether σ is known, not on n: with only s given, use t with n − 1 df (63 and 79 df here), as the textbook does. Only past 100 df does the table's ∞ row, z, take over. An older shortcut switches to z for n ≥ 30; its answers are still shown alongside, and the difference is in the second decimal.</li><li><b>98% critical value:</b> L#22 gives z to three decimals (1.645, 1.960, 2.576), and the three-decimal value for 98% is 2.326, the same figure as the ∞ row of the textbook's t table. A two-decimal z table gives 2.33. The answers below use 2.326 and show 2.33 alongside: Numerical 5 comes out at 37 either way, while Numerical 10 moves by a few units.</li><li><b>Numerical 3(c)</b> asks for a total spend but the sheet never gives how many people are in the population. The method is shown with N left as a letter.</li><li><b>Numerical 4</b> refers to a dataset of 60 games that the sheet does not include, so no numbers can be computed. Only the method is shown.</li><li>The sheet prints an answer only for Part A Q10. The other nine are answered below.</li></ul></div><details><summary>Part A · the 10 objective questions, answered</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>What it asks</th><th>Answer</th><th>Part</th></tr></thead><tbody><tr><td>1</td><td>What a confidence interval is for</td><td>Estimating a population parameter (a range of plausible values for μ or p)</td><td>1</td></tr><tr><td>2</td><td>Distribution when σ is known</td><td>Standard normal (z)</td><td>1</td></tr><tr><td>3</td><td>Distribution when σ is unknown and n is small</td><td>t</td><td>2</td></tr><tr><td>4</td><td>Margin of error for μ, σ known</td><td>z<sub>α/2</sub> × σ/√n</td><td>1</td></tr><tr><td>5</td><td>Larger n, everything else fixed</td><td>Margin of error decreases (it shrinks with √n)</td><td>1</td></tr><tr><td>6</td><td>z for 95%</td><td>1.960</td><td>1</td></tr><tr><td>7</td><td>Degrees of freedom for t</td><td>n − 1</td><td>2</td></tr><tr><td>8</td><td>Point estimator of p</td><td>p̂</td><td>4</td></tr><tr><td>9</td><td>Planning value of p with no prior information</td><td>p = 0.50 (it gives the largest p(1 − p), so the safest n)</td><td>3–4</td></tr><tr><td>10</td><td>90% → 99% with the same n</td><td>Wider (the sheet's own answer, B)</td><td>1</td></tr></tbody></table></div><p style=\"font-size:14.5px\">All ten are also in the question bank, reworded. The trap in Q9: 0.25 is the value of p(1 − p) at p = 0.50, not the planning value of p.</p></details><details><summary>Numerical 1 · Interval for a mean, σ known (part 1, L#22)</summary><p style=\"font-size:14.5px\">A sample of 54 discount brokers charges a mean of $33.77 for a particular 100-share trade. The population standard deviation is known to be $15. Find (a) the 95% margin of error and (b) the 95% confidence interval for the mean charge.</p><ol><li>σ is known, so use z, exactly as in L#22: z<sub>.025</sub> = 1.960.</li><li>Standard error: σ/√n = 15/√54 = 15/7.348 = 2.041.</li><li>(a) Margin of error = 1.96 × 2.041 = 4.00.</li><li>(b) 33.77 ± 4.00 → $29.77 to $37.77.</li><li>Excel: <code>=CONFIDENCE.NORM(0.05, 15, 54)</code> returns the margin, 4.0008.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) ≈ $4.00; (b) $29.77 to $37.77.</p></details><details><summary>Numerical 2 · Interval for a mean from s, and comparing with an old figure (part 2: σ unknown, L#24)</summary><p style=\"font-size:14.5px\">64 families visiting a tourist destination spend a mean of $252.45 a day, with sample standard deviation $74.50. (a) Find the 95% confidence interval for the mean daily spend. (b) Does the population mean appear to differ from an earlier reported mean of $215.60?</p><ol><li>Only s is known, so use t with n − 1 = 63 df, as L#24 teaches and the textbook does: t<sub>.025</sub> = 1.998. (σ unknown is part 2 of the topic, taught in L#24; n = 64 does not change the choice.)</li><li>Standard error: s/√n = 74.50/8 = 9.3125.</li><li>Margin = 1.998 × 9.3125 = 18.61.</li><li>(a) 252.45 ± 18.61 → $233.84 to $271.06.</li><li>(b) $215.60 is below the lower limit, so it is not a plausible value for the current mean: spending appears to have risen.</li><li>With z = 1.96 instead (the older n ≥ 30 shortcut, which L#24 does not use): margin 18.25, interval $234.20 to $270.70. The conclusion in (b) is the same.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) ≈ $233.84 to $271.06 (t) [z: $234.20 to $270.70]; (b) yes, it appears to differ: $215.60 lies outside the interval.</p></details><details><summary>Numerical 3 · Margin, interval, a total, and skew (part 2: σ unknown, L#24)</summary><p style=\"font-size:14.5px\">A sample of 80 people aged 50 and over spends a mean of $1,873 a year on restaurant and take-away food, with s = $550. Find (a) the 95% margin of error, (b) the 95% interval for the mean, (c) an estimate of the total spent by everyone in this age group, and (d) whether the median is likely above or below $1,873 if spending is skewed to the right.</p><ol><li>Only s is known: t with 79 df, t<sub>.025</sub> = 1.990. Standard error = 550/√80 = 61.49.</li><li>(a) Margin = 1.990 × 61.49 = 122.37; Excel's unrounded t (1.9905) gives 122.40, which the limits below use.</li><li>(b) 1,873 ± 122.40 → $1,750.60 to $1,995.40. (With z = 1.96: margin 120.52, interval $1,752.48 to $1,993.52.)</li><li>(c) Total = N × x̄ = N × $1,873, where N is the number of people aged 50+. The sheet does not give N. An interval for the total is N × ($1,750.60 to $1,995.40): for every million people, about $1.87 billion, between $1.75 and $2.00 billion.</li><li>(d) Right skew means a few very large spenders pull the mean up, so the median is <strong>less</strong> than the mean of $1,873.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) ≈ $122.40; (b) ≈ $1,750.60 to $1,995.40; (c) N × $1,873 (N not given on the sheet); (d) less than $1,873.</p></details><details><summary>Numerical 4 · Interval from raw data, dataset not on the sheet (part 2: σ unknown, L#24)</summary><p style=\"font-size:14.5px\">A sample of 60 professional American-football games records the minutes players spend standing around between plays. Find (a) the sample mean, (b) the sample standard deviation and (c) the 95% interval for the mean. <em>The sheet refers to a data file that it does not include, so only the method can be given.</em></p><ol><li>(a) x̄ = Σx/60. In Excel: <code>=AVERAGE(range)</code>.</li><li>(b) s = √[Σ(x − x̄)²/(60 − 1)]: divide by n − 1 = 59, because this is a sample. Excel: <code>=STDEV.S(range)</code>.</li><li>(c) σ is unknown, so use t with 59 df: t<sub>.025</sub> = 2.001. Interval: x̄ ± 2.001 × s/√60 = x̄ ± 0.2583 s.</li><li>Excel shortcut for the margin: <code>=CONFIDENCE.T(0.05, s, 60)</code>.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> x̄ ± 2.001 s/√60 once x̄ and s are calculated from the data file (ask for it on the LMS if you want to check numbers).</p></details><details><summary>Numerical 5 · Sample size for a mean at 98% (part 3, L#24)</summary><p style=\"font-size:14.5px\">A car model's fuel economy is to be estimated to within ±1 mile per gallon at 98% confidence. The population standard deviation is 2.6 mpg. How many cars should be tested?</p><ol><li>98% leaves 0.01 in each tail, so look up a left area of 0.99: z<sub>.01</sub> = 2.326 (two-decimal table: 2.33).</li><li>n = (z σ/E)² = (2.326 × 2.6/1)² = (6.048)² = 36.57.</li><li>Round <strong>up</strong> to 37. (With 2.33: (6.058)² = 36.70, still 37.)</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> 37 cars.</p></details><details><summary>Numerical 6 · Sample size for a mean at 95% and 99% (part 3, L#24)</summary><p style=\"font-size:14.5px\">A medical centre wants to estimate the mean time a staff member spends with each patient to within ±2 minutes, using a planning value of σ = 8 minutes. Find the sample size at (a) 95% and (b) 99% confidence.</p><ol><li>(a) n = (1.96 × 8/2)² = (7.84)² = 61.47 → round up to <strong>62</strong>.</li><li>(b) n = (2.576 × 8/2)² = (10.304)² = 106.17 → round up to <strong>107</strong>. (2.58 gives 106.50, still 107.)</li><li>More confidence at the same margin needs a bigger sample: here about 73% more.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) 62; (b) 107.</p></details><details><summary>Numerical 7 · Interval for a proportion at 95% and 99% (part 4, L#25)</summary><p style=\"font-size:14.5px\">47% of a sample of 450 college students work to pay their fees and living costs. Give (a) the 95% and (b) the 99% confidence interval for the population proportion, and (c) say what happens to the margin of error as confidence rises.</p><ol><li>p̂ = 0.47. Check first, as L#25 does: np̂ = 211.5 and n(1 − p̂) = 238.5, both at least 5, so z can be used.</li><li>Standard error = √(0.47 × 0.53/450) = √0.000554 = 0.02353.</li><li>(a) Margin = 1.96 × 0.02353 = 0.0461 → 0.4239 to 0.5161.</li><li>(b) Margin = 2.576 × 0.02353 = 0.0606 → 0.4094 to 0.5306.</li><li>(c) The margin grows from 0.046 to 0.061 (by the ratio 2.576/1.96 = 1.31): to be more confident of capturing p, the interval must be wider.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) ≈ 0.424 to 0.516; (b) ≈ 0.409 to 0.531; (c) the margin of error increases, so the interval widens.</p></details><details><summary>Numerical 8 · Point estimate, margin and interval for a proportion (part 4, L#25)</summary><p style=\"font-size:14.5px\">Of 369 working parents surveyed, 200 say work leaves them too little time with their children. Find (a) the point estimate of the population proportion, (b) the 95% margin of error and (c) the 95% interval.</p><ol><li>(a) p̂ = 200/369 = 0.5420. Check (L#25): 200 yes and 169 no, both at least 5.</li><li>(b) Standard error = √(0.542 × 0.458/369) = 0.02594; margin = 1.96 × 0.02594 = 0.0508.</li><li>(c) 0.5420 ± 0.0508 → 0.4912 to 0.5928.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) ≈ 0.542; (b) ≈ 0.0508; (c) ≈ 0.491 to 0.593. The interval dips just below 0.50, so the data do not quite establish a majority at 95%.</p></details><details><summary>Numerical 9 · Sample size for a proportion, then the interval (parts 3–4, L#25)</summary><p style=\"font-size:14.5px\">A preliminary estimate says 30% of adults smoke. (a) What sample size gives a margin of error of 0.02 at 95% confidence? (b) If that sample contains 520 smokers, what is the point estimate? (c) Give the 95% interval.</p><ol><li>(a) n = 1.96² × 0.30 × 0.70/0.02² = 3.8416 × 0.21/0.0004 = 2,016.84 → round up to <strong>2,017</strong>.</li><li>(b) p̂ = 520/2,017 = 0.2578.</li><li>(c) The interval uses p̂, not the planning value: standard error = √(0.2578 × 0.7422/2,017) = 0.00974; margin = 1.96 × 0.00974 = 0.0191.</li><li>0.2578 ± 0.0191 → 0.2387 to 0.2769. The margin came out slightly below the 0.02 target because p̂ ended up further from 0.50 than the planning value.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) 2,017; (b) ≈ 0.258; (c) ≈ 0.239 to 0.277.</p></details><details><summary>Numerical 10 · Sample size for a proportion at 98%, with and without a planning value (parts 3–4, L#25)</summary><p style=\"font-size:14.5px\">A card company wants the proportion of card holders who carry a balance at month-end to within ±0.03 at 98% confidence. Find the sample size (a) if about 70% are expected to carry a balance and (b) if there is no planning value.</p><ol><li>z<sub>.01</sub> = 2.326 (left area 0.99; a two-decimal table gives 2.33).</li><li>(a) n = 2.326² × 0.70 × 0.30/0.03² = 5.4103 × 0.21/0.0009 = 1,262.40 → <strong>1,263</strong>.</li><li>(b) Use p* = 0.50: n = 5.4103 × 0.25/0.0009 = 1,502.85 → <strong>1,503</strong>.</li><li>With the table's 2.33: (a) 5.4289 × 0.21/0.0009 = 1,266.74 → 1,267 and (b) 5.4289 × 0.25/0.0009 = 1,508.03 → 1,509; round up even though that decimal is only .03. Full-precision <code>=NORM.S.INV(0.99)</code> = 2.32635 gives 1,263 and 1,504. L#22 says z values will generally be given: use the one in the question and write it down so the marker can follow.</li></ol><p style=\"font-size:14.5px\"><strong>Answer:</strong> (a) 1,263; (b) 1,503 with z = 2.326 (1,267 and 1,509 with 2.33). p* = 0.50 always needs the larger sample.</p></details>"
     },
     {
      "t": "σ unknown: the t distribution",
@@ -594,9 +612,62 @@ HUB.addCourse({
      "h": "<p style=\"font-size:14.5px\">So far n was given and the margin of error came out of it. Now flip the question: the manager decides the largest error she can live with, E, and asks how big the sample must be. Start from E = z<sub>α/2</sub> × σ/√n, square both sides and solve for n:</p>\n<div class=\"def\"><b>Sample size for a mean:</b> n = (z<sub>α/2</sub> × σ / E)² = z<sub>α/2</sub>² σ² / E². The lecture also writes the σ-unknown version, n = (t<sub>α/2</sub> × s / E)². <b>Always round up.</b></div>\n<p style=\"font-size:14.5px\"><strong>Discount Sounds again.</strong> Management wants a 95% chance that the sample mean income is within <strong>$500</strong> of the true mean, and σ = $4,500 from the earlier study. n = (1.96 × 4,500/500)² = 17.64² = <strong>311.17</strong>, so <strong>312</strong> people. Why not 311? With 311 the margin would be 1.96 × 4,500/√311 = $500.14, just over the limit; 312 gives $499.33. Rounding up keeps the error within the target, so even 311.01 would become 312.</p>\n<h4>Where does σ come from before you sample?</h4>\n<p style=\"font-size:14.5px\">The formula needs a value for σ before any data exist. If it is unknown, use a <strong>planning value</strong>:</p>\n<ul>\n<li>run a <strong>pilot study</strong> on a small sample and use its s;</li>\n<li>borrow s from a <strong>previous study</strong> of a similar population;</li>\n<li>use <strong>judgement</strong>: someone who knows the area may know incomes run from about ₹10 lakh to ₹20 lakh, or roughly what spread rents in a posh locality have.</li>\n</ul>\n<p style=\"font-size:14.5px\"><strong>A practical note on the t version.</strong> t needs n − 1 degrees of freedom, and n is the very thing you are solving for. The lecture's own example therefore uses z with a planning value, as the textbook does; the lecturer's practice set (numericals 5 and 6) is solved the same way. Use z unless a question hands you a t value.</p><!--viz:sfm-l24-sample-size-table--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Sample sizes for Discount Sounds with sigma 4,500 dollars: 90% confidence and E of 500 needs 220; 95% and 500 needs 312 (the lecture's answer); 99% and 500 needs 538; 95% and E of 250 needs 1,245.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Discount Sounds: how n responds to confidence and E</div><div class=\"scroller\"><table><thead><tr><th>Confidence</th><th>E</th><th>Exact n</th><th>Sample</th></tr></thead><tbody><tr><td>90% (z 1.645)</td><td>$500</td><td style=\"font-family:var(--mono)\">219.19</td><td>220</td></tr><tr><td>95% (z 1.960)</td><td>$500</td><td style=\"font-family:var(--mono)\">311.17</td><td style=\"background:var(--blue-soft)\"><b>312</b></td></tr><tr><td>99% (z 2.576)</td><td>$500</td><td style=\"font-family:var(--mono)\">537.50</td><td>538</td></tr><tr><td>95% (z 1.960)</td><td>$250</td><td style=\"font-family:var(--mono)\">1,244.68</td><td>1,245</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Every result is rounded up; halving E roughly quadruples n, and moving from 95% to 99% adds about 70%. Only the 95%, $500 row is the lecture's; the rest are ours.</figcaption></figure><!--/viz:sfm-l24-sample-size-table-->"
     },
     {
+     "t": "Interval for a proportion: the PSI poll",
+     "src": "L#25",
+     "h": "<p style=\"font-size:14.5px\">The fourth and last part of interval estimation in L#22's plan. The variable is now a yes/no attribute (trained or not, wants housing or not, favours a candidate or not), and the parameter is the population proportion p. The structure is the one used for μ: <strong>point estimate ± margin of error</strong>, with p̂ in place of x̄.</p><div class=\"def\"><b>Interval estimate of a population proportion:</b> p̂ ± z<sub>α/2</sub> √[p̂(1 − p̂)/n], where p̂ is the sample proportion, 1 − α the confidence coefficient and z<sub>α/2</sub> the z value with area α/2 in the upper tail. The square root is the standard error of p̂, with p̂ standing in for the unknown p.</div><h4>Check first: can the normal curve be used?</h4><p style=\"font-size:14.5px\">The sampling distribution of p̂ (L#19) is approximately normal when <strong>np ≥ 5 and n(1 − p) ≥ 5</strong>: enough ‘yes’ and enough ‘no’ answers in the sample. The lecture makes this the first step, before any z value is looked up. With p unknown, the check is run with p̂: the counts of successes and failures in the sample must both be at least 5.</p><h4>Worked example: the PSI telephone poll</h4><p style=\"font-size:14.5px\">A political polling organisation (PSI) phones registered voters and asks whom they would vote for if the election were held that day. In a sample of <strong>500</strong>, <strong>220</strong> favour candidate C. Build a 95% interval for the proportion of all registered voters who favour C.</p><ol><li>p̂ = 220/500 = <strong>0.44</strong>. Check: np̂ = 220 and n(1 − p̂) = 280, both well above 5.</li><li>95%: α = 0.05, α/2 = 0.025, so z<sub>0.025</sub> = 1.96.</li><li>Standard error: √(0.44 × 0.56/500) = √0.0004928 = <strong>0.0222</strong>.</li><li>Margin of error: 1.96 × 0.0222 = <strong>0.0435</strong>, that is ±4.35 percentage points.</li><li>Interval: 0.44 ± 0.0435 → <strong>0.3965 to 0.4835</strong>.</li></ol><p style=\"font-size:14.5px\"><strong>Reading it:</strong> PSI is 95% confident that between 39.65% and 48.35% of <em>all</em> registered voters favour C. The lecture's point about why pollsters publish a range rather than one number: a single figure will almost surely be wrong, while a range has a stated chance of containing the true share. In a two-candidate race the whole interval sits below 50%, so on this evidence C is behind; with several candidates, 40–48% could still win. A larger sample would give the same confidence with a narrower range.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Mean, σ known (L#22)</th><th>Proportion (L#25)</th></tr></thead><tbody><tr><td>Point estimate</td><td>x̄</td><td>p̂ = x/n</td></tr><tr><td>Standard error</td><td>σ/√n</td><td>√[p̂(1 − p̂)/n]</td></tr><tr><td>Critical value</td><td>z<sub>α/2</sub></td><td>z<sub>α/2</sub> (never t)</td></tr><tr><td>Check before using z</td><td>n ≥ 30, or a normal population</td><td>np ≥ 5 and n(1 − p) ≥ 5</td></tr><tr><td>Margin in the PSI / Discount Sounds examples</td><td>± $1,470 at 95%</td><td>± 0.0435 at 95%</td></tr></tbody></table></div><div class=\"def\"><b>From the lecture (L#25):</b> the np ≥ 5 and n(1 − p) ≥ 5 check is “a basic check which we need to do” before approximating by the normal: state it in your working.</div><!--viz:sfm-l25-proportion-flow--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two rows of steps. 220 of 500 voters favour C, so p-hat is 0.44; the check gives 220 and 280, both at least 5. Standard error is the square root of 0.44 times 0.56 over 500, 0.0222; the margin is 1.96 times that, 0.0435; the interval is 0.3965 to 0.4835.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The PSI interval, step by step</div><div style=\"font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Count</b>: 220 of n = 500 favour C</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">p̂ = 220/500 = <b>0.44</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Check: np̂ = 220 ≥ 5, n(1 − p̂) = 280 ≥ 5</div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">SE = √(0.44 × 0.56 / 500) = 0.0222</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">E = 1.96 × 0.0222 = <b>0.0435</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>0.3965 to 0.4835</b><br><span style=\"color:var(--ink-2);font-size:13px\">39.65% to 48.35% of all registered voters</span></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Run the np ≥ 5 check before anything else; the margin 0.0435 is in proportion units, ±4.35 percentage points.</figcaption></figure><!--/viz:sfm-l25-proportion-flow-->"
+    },
+    {
+     "t": "Sample size for a proportion",
+     "src": "L#25",
+     "h": "<p style=\"font-size:14.5px\">Turn the question round, as L#24 did for the mean: fix the margin of error E and the confidence level, and solve for n.</p><div class=\"def\"><b>Sample size for a proportion:</b> n = (z<sub>α/2</sub>)² p*(1 − p*) / E², always rounded <b>up</b>. p* is a <b>planning value</b> for the proportion.</div><p style=\"font-size:14.5px\"><strong>Why a planning value?</strong> p̂ only exists once the sample has been taken, and the sample size is the thing being decided. So something has to stand in for it beforehand. L#25 lists four sources, in order:</p><ol><li>the sample proportion from a <strong>previous sample</strong> of the same or similar units;</li><li>the proportion from a <strong>preliminary (pilot) sample</strong>;</li><li><strong>judgement</strong> or a best guess (“I think about 40% will vote for her”);</li><li>if none of these is available, <strong>p* = 0.50</strong>.</li></ol><h4>Worked example: PSI wants ±0.03 at 99%</h4><p style=\"font-size:14.5px\">PSI now wants a 0.99 probability that its sample proportion falls within ±0.03 of the true proportion. The earlier poll gave 0.44, so use it as p*.</p><ol><li>99%: α = 0.01, α/2 = 0.005, z<sub>0.005</sub> = 2.576.</li><li>n = 2.576² × 0.44 × 0.56 / 0.03² = 6.6358 × 0.2464 / 0.0009 = 1,816.7 → <strong>1,817</strong> voters.</li><li>With no earlier poll, p* = 0.50: n = 6.6358 × 0.25 / 0.0009 = 1,843.3 → <strong>1,844</strong>.</li></ol><p style=\"font-size:14.5px\">Going from ±0.0435 at 95% to ±0.03 at 99% more than triples the sample, from 500 to 1,817.</p><div class=\"def\"><b>Check the rounding:</b> the recording gives 1,843 for p* = 0.50. The exact value is 1,843.27 (or 1,843.03 with Excel's unrounded z), and a sample size is always rounded up, so the answer is <b>1,844</b>. With 1,843 voters the margin would be 2.576 × √(0.25/1,843) = 0.030002, a hair over the target. The 1,817 for p* = 0.44 is right.</div><h4>Why 0.50 gives the largest sample</h4><p style=\"font-size:14.5px\">The lecturer showed this in Excel by recomputing n for p* = 0.01, 0.1, 0.2, 0.3, 0.4, 0.5 and 0.6. The term p*(1 − p*) is largest at 0.50 (0.25) and shrinks either side, so n is largest there. It is also <strong>symmetric</strong>: 0.4 and 0.6 give the same p*(1 − p*) = 0.24 and so the same n, because p and 1 − p simply swap places. Using 0.50 when you know nothing keeps you on the safe side: the sample can only be bigger than needed, never too small.</p><div class=\"scroller\"><table><thead><tr><th>p*</th><th>p*(1 − p*)</th><th>n for ±0.03 at 99%</th></tr></thead><tbody><tr><td>0.10 or 0.90</td><td>0.09</td><td>664</td></tr><tr><td>0.20 or 0.80</td><td>0.16</td><td>1,180</td></tr><tr><td>0.30 or 0.70</td><td>0.21</td><td>1,549</td></tr><tr><td>0.40 or 0.60</td><td>0.24</td><td>1,770</td></tr><tr><td>0.44 (PSI's earlier poll)</td><td>0.2464</td><td>1,817</td></tr><tr><td>0.50</td><td>0.25</td><td style=\"background:var(--blue-soft)\"><b>1,844</b></td></tr></tbody></table></div><div class=\"def\"><b>From the lecture (L#25):</b> if you have no estimate at all, use p* = 0.5, because it “provides the greatest possible sample size” and keeps you on the safer side.</div><!--viz:sfm-l25-n-vs-planning-p--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Curve of the sample size needed for a 99% interval with margin 0.03 against the planning value p-star. It is zero at 0 and 1, rises symmetrically and peaks at 1,844 when p-star is 0.5. At 0.44 it is 1,817; at 0.4 and 0.6 it is 1,770.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">How the sample size depends on p*</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 236\" role=\"img\" aria-label=\"Curve of the sample size needed for a 99% interval with margin 0.03 against the planning value p-star. It is zero at 0 and 1, rises symmetrically and peaks at 1,844 when p-star is 0.5. At 0.44 it is 1,817; at 0.4 and 0.6 it is 1,770.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M56,148.5 L416,148.5\" style=\"stroke:var(--rule);stroke-width:1;fill:none\"/><text x=\"50\" y=\"152.5\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">500</text><path d=\"M56,111 L416,111\" style=\"stroke:var(--rule);stroke-width:1;fill:none\"/><text x=\"50\" y=\"115\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">1,000</text><path d=\"M56,73.5 L416,73.5\" style=\"stroke:var(--rule);stroke-width:1;fill:none\"/><text x=\"50\" y=\"77.5\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">1,500</text><path d=\"M56,186 L416,186\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M56,186 L56,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"56\" y=\"205\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><path d=\"M128,186 L128,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"128\" y=\"205\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0.2</text><path d=\"M200,186 L200,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"200\" y=\"205\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0.4</text><path d=\"M272,186 L272,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"272\" y=\"205\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0.6</text><path d=\"M344,186 L344,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"344\" y=\"205\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0.8</text><path d=\"M416,186 L416,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"416\" y=\"205\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">1</text><text x=\"236\" y=\"228\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">planning value p*</text><path d=\"M56,186 L60.5,179.2 L65,172.5 L69.5,166 L74,159.7 L78.5,153.6 L83,147.6 L87.5,141.8 L92,136.2 L96.5,130.8 L101,125.5 L105.5,120.4 L110,115.5 L114.5,110.7 L119,106.2 L123.5,101.8 L128,97.5 L132.5,93.5 L137,89.6 L141.5,85.9 L146,82.3 L150.5,78.9 L155,75.7 L159.5,72.7 L164,69.9 L168.5,67.2 L173,64.7 L177.5,62.4 L182,60.2 L186.5,58.2 L191,56.4 L195.5,54.8 L200,53.3 L204.5,52 L209,50.9 L213.5,49.9 L218,49.1 L222.5,48.5 L227,48.1 L231.5,47.8 L236,47.8 L240.5,47.8 L245,48.1 L249.5,48.5 L254,49.1 L258.5,49.9 L263,50.9 L267.5,52 L272,53.3 L276.5,54.8 L281,56.4 L285.5,58.2 L290,60.2 L294.5,62.4 L299,64.7 L303.5,67.2 L308,69.9 L312.5,72.7 L317,75.7 L321.5,78.9 L326,82.3 L330.5,85.9 L335,89.6 L339.5,93.5 L344,97.5 L348.5,101.8 L353,106.2 L357.5,110.7 L362,115.5 L366.5,120.4 L371,125.5 L375.5,130.8 L380,136.2 L384.5,141.8 L389,147.6 L393.5,153.6 L398,159.7 L402.5,166 L407,172.5 L411.5,179.2 L416,186\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><circle cx=\"236\" cy=\"47.8\" r=\"4.5\" style=\"fill:var(--blue);stroke:none\"/><text x=\"240\" y=\"35.8\" text-anchor=\"start\" style=\"fill:var(--blue);font-size:14px;font-weight:700\">0.5: 1,844 (largest)</text><circle cx=\"214.4\" cy=\"49.7\" r=\"4\" style=\"fill:var(--clay);stroke:none\"/><path d=\"M214.4,54.7 L214.4,88\" style=\"stroke:var(--ink-3);stroke-width:1;fill:none\"/><text x=\"230.4\" y=\"100\" text-anchor=\"end\" style=\"fill:var(--clay);font-size:13px;font-weight:700\">0.44: 1,817</text><circle cx=\"200\" cy=\"53.3\" r=\"3.5\" style=\"fill:var(--surface);stroke:var(--ink-2);stroke-width:1.5\"/><circle cx=\"272\" cy=\"53.3\" r=\"3.5\" style=\"fill:var(--surface);stroke:var(--ink-2);stroke-width:1.5\"/><text x=\"236\" y=\"135\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">open dots: 0.4 and 0.6, both 1,770</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The curve peaks at p* = 0.50 and is symmetric about it, so 0.50 is the safe choice when nothing is known.</figcaption></figure><!--/viz:sfm-l25-n-vs-planning-p-->"
+    },
+    {
+     "t": "L#25 practice problems: z and t in Excel",
+     "src": "L#25",
+     "h": "<p style=\"font-size:14.5px\">The second half of L#25 is a set of practice problems covering both cases, σ known and σ unknown, worked in Excel. The lecturer said more practice problems will follow. Answers below are recomputed; where the recording rounded differently, both are shown.</p><details><summary>Problem 1 · σ known: standard error, margin and interval</summary><p style=\"font-size:14.5px\">A simple random sample of 40 items has x̄ = 25; the population standard deviation is σ = 5. (The lecturer flagged a labelling slip on the slide: 5 is the population value, σ.) Find the standard error, the 95% margin of error and the interval.</p><ol><li>Standard error σ/√n = 5/√40 = <strong>0.791</strong>.</li><li>z<sub>0.025</sub> = 1.96 (Excel <code>=NORM.S.INV(0.025)</code> gives −1.96; drop the sign for the margin).</li><li>Margin = 1.96 × 0.791 = <strong>1.55</strong>.</li><li>Interval: 25 ± 1.55 → <strong>23.45 to 26.55</strong>. (The recording reads the upper limit as 26.5.)</li></ol></details><details><summary>Problem 2 · σ known: what doubling n does</summary><p style=\"font-size:14.5px\">A sample of 60 items has x̄ = 80, with σ = 15. Find the 95% interval; then repeat with n = 120.</p><ol><li>n = 60: margin = 1.96 × 15/√60 = <strong>3.80</strong> → <strong>76.20 to 83.80</strong>.</li><li>n = 120: margin = 1.96 × 15/√120 = <strong>2.68</strong> → <strong>77.32 to 82.68</strong>.</li><li>Doubling n divides the margin by √2 (3.80/2.68 = 1.414). It does not halve it: to halve the margin you need four times the sample.</li></ol><p style=\"font-size:14.5px\"><strong>Excel shortcut:</strong> <code>=CONFIDENCE.NORM(0.05, 15, 60)</code> returns the margin, 3.795. Its first argument is α itself, not α/2. The lecturer's advice: use it only to <em>check</em> an answer, because it skips the steps you are expected to show; work from z<sub>α/2</sub> × σ/√n.</p></details><details><summary>Problem 3 · Reading t values in Excel</summary><p style=\"font-size:14.5px\">σ unknown, so the critical value comes from t. Excel's <code>T.INV(probability, df)</code> returns the t value with that much area to its <strong>left</strong>.</p><div class=\"scroller\"><table><thead><tr><th>Asked for</th><th>Excel</th><th>Result</th></tr></thead><tbody><tr><td>Upper-tail area 0.025, 12 df</td><td><code>=T.INV(0.975, 12)</code></td><td><b>2.179</b></td></tr><tr><td>(same, typed with 0.025)</td><td><code>=T.INV(0.025, 12)</code></td><td>−2.179: the lower-tail value; by symmetry the upper one is +2.179</td></tr><tr><td>Lower-tail area 0.05, 50 df</td><td><code>=T.INV(0.05, 50)</code></td><td><b>−1.676</b></td></tr><tr><td>Central 90% area, 25 df</td><td><code>=T.INV(0.05, 25)</code> and symmetry, or <code>=T.INV.2T(0.10, 25)</code></td><td><b>±1.708</b> (the recording rounds to 1.7 and 1.71)</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><code>T.INV.2T</code> takes the <em>total</em> two-tail area α (0.10 here), not α/2. The lecturer's advice: if you sketch the curve and shade the area you want, you will pick the right function and sign every time.</p></details><details><summary>Problem 4 · σ unknown: a 90% t interval</summary><p style=\"font-size:14.5px\">A simple random sample of n = 54 gives x̄ = 22.5 and s = 4.4. Build a 90% interval for μ.</p><ol><li>σ unknown: x̄ ± t<sub>α/2</sub> s/√n with df = 53.</li><li>t<sub>0.05</sub> at 53 df = 1.674. Standard error = 4.4/√54 = 0.599.</li><li>Margin = 1.674 × 0.599 = <strong>1.00</strong> → <strong>21.50 to 23.50</strong>.</li><li>Dragging the same formula to other confidence levels: 95% gives t = 2.006 and margin 1.20; 99% gives t = 2.672 and margin 1.60. More confidence, wider interval.</li></ol><p style=\"font-size:14.5px\">In the spreadsheet the lecturer fixed the cells for x̄, s, n and df with <code>$</code> so that only the α/2 cell changed when the formula was dragged.</p></details>"
+    },
+    {
+     "t": "Case: Metropolitan Research — transmission failures",
+     "src": "L#26",
+     "h": "<p style=\"font-size:14.5px\">A recorded case lecture applying chapters 3 and 8 together. <strong>Metropolitan Research</strong>, a consumer-research firm, found in a satisfaction survey that owners of one manufacturer's full-sized car were complaining about <strong>early transmission failures</strong>. To look into it, the firm took the records of <strong>50 actual transmission repairs</strong> from a repair firm in the Detroit area: for each car, the miles driven when the transmission failed. (The case is the textbook's end-of-chapter case for interval estimation; the data are in the case PDF on the LMS. The recording sometimes says kilometres: the figures are miles.) The managerial report asks five questions.</p><h4>1 · Describe the data</h4><div class=\"scroller\"><table><thead><tr><th>Statistic</th><th>Value (miles)</th><th>What it says</th></tr></thead><tbody><tr><td>Mean</td><td>73,340</td><td>the average car in the sample failed at about 73,000 miles</td></tr><tr><td>Median</td><td>72,705 (the lecture rounds to 72,700)</td><td>25 cars failed below it and 25 above</td></tr><tr><td>Mode</td><td>none</td><td>no two cars failed at exactly the same mileage; there is no single ‘failure point’</td></tr><tr><td>Standard deviation</td><td>24,899</td><td>large: failures are spread very widely</td></tr><tr><td>Skewness</td><td>+0.26</td><td>close to 0: roughly symmetric, a slight right tail</td></tr><tr><td>Range</td><td>25,066 to 138,114</td><td>from barely 25,000 to almost 140,000 miles</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Mean and median almost coincide, which fits the near-zero skewness. The standard deviation, about a third of the mean, is the striking number.</p><h4>2 · A 95% interval for the mean miles to failure</h4><ol><li>σ is unknown, so the interval is x̄ ± t<sub>0.025</sub> s/√n with 49 df (L#24).</li><li>Standard error: 24,899/√50 = <strong>3,521</strong>.</li><li>t<sub>0.025</sub> at 49 df = 2.010. Margin = 2.010 × 3,521 = <strong>7,076</strong>. This is exactly the ‘Confidence Level(95.0%)’ row of Excel's Descriptive Statistics output, which the lecture adds to and subtracts from the mean.</li><li>Interval: 73,340 ± 7,076 → <strong>66,264 to 80,416 miles</strong>.</li></ol><p style=\"font-size:14.5px\"><strong>Managerial reading:</strong> we are 95% confident that the <em>mean</em> mileage at failure, over all cars of this kind whose transmission failed, lies between about 66,000 and 80,000 miles. The population is cars <em>with</em> a failure, because the records come from a repair shop; the interval says nothing about how many cars fail. (In the recording the interval is once described as covering ‘95% of the failures’. It does not: it covers the mean. See the next part.)</p><h4>3 · Do the data back the complaints about early failures?</h4><p style=\"font-size:14.5px\">Sorting the data shows <strong>19 of the 50 cars failed below 66,264 miles</strong>, the bottom of the interval, and 18 above 80,416; only 13 lie inside it. Seven failed before 40,000 miles. For the owners of those cars, the failure came very early, whatever the average says. A manager has to plan for the spread, not just the mean: warranty terms, parts stock and the brand's reputation are driven by the early failures.</p><div class=\"def\"><b>Watch the logic here.</b> The lecture concludes that so many cars outside the interval mean the sample should be enlarged so the margin of error falls. A larger sample does narrow the interval for the <b>mean</b>, but individual cars do not crowd into it: their spread is measured by s (about 24,900 miles), which a bigger sample estimates more precisely but does not reduce. With a narrower interval, even more cars would fall outside it. The early failures are evidence about the <b>distribution</b> of failure mileage, and they stand whatever n is.</div><h4>4 · How many records for a ±5,000-mile margin?</h4><ol><li>Use the sample's s = 24,899 as the planning value of σ: this sample of 50 acts as the pilot study L#24 described. (The LMS summary prints 24,849; the data give 24,899, the value that produces the lecture's 95.26.)</li><li>n = (1.96 × 24,899 / 5,000)² = 9.76² = <strong>95.26</strong> → <strong>96</strong> records.</li><li>The lecturer suggests going to about 100, to make the use of z safer. There is a sound reason: once the new data are in, the interval will use t, and with 96 records t (95 df) = 1.985 gives a margin of about 5,045 miles, just over the target. 98 records is the smallest number that keeps a t-based margin under 5,000 (if s stays near 24,900), and 100 gives about 4,940. Either way, roughly twice the current 50.</li></ol><div class=\"def\"><b>From the lecture (L#26):</b> why the sample-size formula uses z rather than t is held over for the live class, and he said it is also a check on who has watched the recordings beforehand. (L#24's answer: t needs n − 1 degrees of freedom, and n is the unknown, so the planning formula uses z.)</div><h4>5 · What else to collect</h4><p style=\"font-size:14.5px\">Mileage alone cannot explain the failures. The lecture splits the extra information into two sides:</p><div class=\"scroller\"><table><thead><tr><th>Supply side (the maker)</th><th>Demand side (the owner and conditions)</th></tr></thead><tbody><tr><td>a defective production batch</td><td>driving habits and technique</td></tr><tr><td>faulty materials or a supplier's parts</td><td>road type, off-road use, city or highway</td></tr><tr><td>a particular plant or machine</td><td>climate and wet conditions, maintenance history</td></tr></tbody></table></div><p style=\"font-size:14.5px\">With several variables recorded for each car, later techniques such as regression can show which factors drive early failure. The case is a preview of that multi-variable analysis.</p><!--viz:sfm-l26-failures-vs-interval--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Dot plot of the 50 sampled mileages at transmission failure, from about 25,000 to 138,000 miles. A narrow shaded band marks the 95% interval for the mean, 66,264 to 80,416 miles. 19 cars failed below the band, 13 inside it and 18 above it.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Fifty failures against the interval for their mean</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 210\" role=\"img\" aria-label=\"Dot plot of the 50 sampled mileages at transmission failure, from about 25,000 to 138,000 miles. A narrow shaded band marks the 95% interval for the mean, 66,264 to 80,416 miles. 19 cars failed below the band, 13 inside it and 18 above it.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M176.5,158 L176.5,40 L221.3,40 L221.3,158 Z\" style=\"fill:var(--blue-soft);stroke:none\"/><path d=\"M198.9,44 L198.9,158\" style=\"stroke:var(--blue);stroke-width:1.5;fill:none;stroke-dasharray:3 3\"/><circle cx=\"49.8\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"65.6\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"73.5\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"73.5\" cy=\"136\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"81.5\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"89.4\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"89.4\" cy=\"136\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"97.3\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"136.9\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"136.9\" cy=\"136\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"152.7\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"152.7\" cy=\"136\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"152.7\" cy=\"127\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"160.6\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"168.5\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"168.5\" cy=\"136\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"168.5\" cy=\"127\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"168.5\" cy=\"118\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"176.5\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"176.5\" cy=\"136\" r=\"3.6\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"176.5\" cy=\"127\" r=\"3.6\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"184.4\" cy=\"145\" r=\"3.6\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"184.4\" cy=\"136\" r=\"3.6\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"184.4\" cy=\"127\" r=\"3.6\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"192.3\" cy=\"145\" r=\"3.6\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"200.2\" cy=\"145\" r=\"3.6\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"200.2\" cy=\"136\" r=\"3.6\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"200.2\" cy=\"127\" r=\"3.6\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"208.1\" cy=\"145\" r=\"3.6\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"208.1\" cy=\"136\" r=\"3.6\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"216\" cy=\"145\" r=\"3.6\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"216\" cy=\"136\" r=\"3.6\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"224\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"239.8\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"239.8\" cy=\"136\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"239.8\" cy=\"127\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"239.8\" cy=\"118\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"239.8\" cy=\"109\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"247.7\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"247.7\" cy=\"136\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"247.7\" cy=\"127\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"263.5\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"263.5\" cy=\"136\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"271.5\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"287.3\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"334.8\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"334.8\" cy=\"136\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"342.7\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"350.6\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><circle cx=\"406\" cy=\"145\" r=\"3.6\" style=\"fill:var(--ink-2);stroke:none\"/><path d=\"M30,158 L410,158\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M30,158 L30,163\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"30\" y=\"177\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">20k</text><path d=\"M93.3,158 L93.3,163\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"93.3\" y=\"177\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">40k</text><path d=\"M156.7,158 L156.7,163\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"156.7\" y=\"177\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">60k</text><path d=\"M220,158 L220,163\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"220\" y=\"177\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">80k</text><path d=\"M283.3,158 L283.3,163\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"283.3\" y=\"177\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">100k</text><path d=\"M346.7,158 L346.7,163\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"346.7\" y=\"177\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">120k</text><path d=\"M410,158 L410,163\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"410\" y=\"177\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">140k</text><text x=\"220\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">miles driven at transmission failure (50 cars)</text><text x=\"168.5\" y=\"30\" text-anchor=\"end\" style=\"fill:var(--ink-2);font-size:13px;font-weight:700\">19 below</text><text x=\"198.9\" y=\"30\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px;font-weight:700\">13 in</text><text x=\"229.3\" y=\"30\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px;font-weight:700\">18 above</text><text x=\"229.3\" y=\"62\" text-anchor=\"start\" style=\"fill:var(--ink-3);font-size:13px\">band = 95% interval</text><text x=\"229.3\" y=\"78\" text-anchor=\"start\" style=\"fill:var(--ink-3);font-size:13px\">for the mean</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The interval locates the mean; 37 of the 50 cars lie outside it, and a bigger sample would make the band narrower, not fuller.</figcaption></figure><!--/viz:sfm-l26-failures-vs-interval-->"
+    },
+    {
+     "t": "The Metropolitan Research sheet in Excel",
+     "src": "L#26",
+     "h": "<p style=\"font-size:14.5px\">How the case was worked in Excel during L#26.</p><ol><li><strong>Turn on the Analysis ToolPak</strong> if the Data tab has no Data Analysis button: File → Options → Add-ins → Manage Excel Add-ins → Go → tick Analysis ToolPak. (Menus differ slightly between versions.)</li><li>Data → Data Analysis → <strong>Descriptive Statistics</strong>. Input range: the mileage column. Tick <em>Labels in first row</em> if the heading is included, <em>Summary statistics</em>, and <em>Confidence Level for Mean</em> at 95%. Send the output to a new worksheet.</li><li>Read the output: mean, standard error, median, mode, standard deviation, variance, kurtosis, skewness, range, and the ‘Confidence Level(95.0%)’ row, which is the <strong>t-based margin of error</strong> (7,076), not the interval.</li><li><strong>No mode:</strong> Excel shows #N/A when no value repeats. The lecturer checked this with Home → Conditional Formatting → Highlight Cells Rules → Duplicate Values, then typed in a repeated value to show that a mode appears as soon as one value occurs twice.</li><li><strong>Histogram:</strong> either count the cars in your own mileage bins, or select the column and use Insert → Histogram, which picks the bins for you.</li><li><strong>Sample size:</strong> z from <code>=NORM.S.INV(0.975)</code> = 1.96, then <code>=(z*s/5000)^2</code> = 95.26, rounded up.</li></ol><div class=\"scroller\"><table><thead><tr><th>Miles at failure</th><th>Cars</th></tr></thead><tbody><tr><td>20,000–39,999</td><td>7</td></tr><tr><td>40,000–59,999</td><td>6</td></tr><tr><td>60,000–79,999</td><td>19</td></tr><tr><td>80,000–99,999</td><td>12</td></tr><tr><td>100,000–119,999</td><td>4</td></tr><tr><td>120,000–139,999</td><td>2</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Bins of 20,000 miles (our own choice): the bulk of the failures sit between 60,000 and 100,000, with a cluster of early ones in the 20,000s and 30,000s and a thin tail beyond 100,000.</p><p style=\"font-size:14.5px\"><strong>z or t?</strong> Excel's 7,076 uses t with 49 df (2.010). With z = 1.96 the margin would be 6,902 and the interval 66,439 to 80,242. L#24's rule applies: σ is unknown, so t is the method; the difference here is small.</p>"
+    },
+    {
      "t": "Textbook: Interval Estimation",
      "src": "Anderson 14e ch8",
-     "h": "<p>A point estimate alone says nothing about its accuracy, so the chapter wraps it in an interval: point estimate ± margin of error. When σ is known from history, the margin of error uses z (section 8.1, the part L#22 lectured). When σ has to be estimated by s from the same sample, which is the usual case, it uses the t distribution with n − 1 degrees of freedom (part 2 of the topic, taught in L#24). Higher confidence widens an interval and a larger sample narrows it, which gives formulas for the sample size needed to hit a target margin of error (part 3; L#24 taught it for a mean). Proportions use z with the standard error √[p̄(1 − p̄)/n] (part 4). For managers, the interval is the honest way to report a survey or audit figure, and the sample-size formula sets a study budget before any data are collected.</p><!--viz:sfm-ch8-which-interval--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Four rows. A mean with σ known uses x-bar plus or minus z times sigma over root n, as taught in L#22 (part 1 of the topic). A mean with σ unknown uses x-bar plus or minus t times s over root n with n minus 1 degrees of freedom (part 2, taught in L#24). A proportion uses p-bar plus or minus z times the square root of p-bar times one minus p-bar over n, once both counts are at least 5 (part 4). Before sampling, the sample size comes from the target margin and a planning value, rounded up (parts 3 and 4).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Which interval, which critical value?</div><div style=\"font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Mean μ</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">σ known (records, specs)</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">x̄ ± z<sub>α/2</sub> σ/√n</div><span style=\"color:var(--ink-3);font-size:13px\">part 1 · L#22</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Mean μ</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">σ unknown, use s</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">x̄ ± t<sub>α/2</sub> s/√n, df = n − 1</div><span style=\"color:var(--ink-3);font-size:13px\">part 2 · L#24</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Proportion p</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">np̄ and n(1 − p̄) ≥ 5</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">p̄ ± z<sub>α/2</sub> √[p̄(1 − p̄)/n]</div><span style=\"color:var(--ink-3);font-size:13px\">part 4</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Before sampling</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">target margin E, planning σ* or p*</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">n = (z σ*/E)² or z² p*(1 − p*)/E², round up</div><span style=\"color:var(--ink-3);font-size:13px\">parts 3–4</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only the σ-unknown mean uses t; proportions and sample sizes always use z.</figcaption></figure><!--/viz:sfm-ch8-which-interval--><!--viz:sfm-ch8-t-to-z--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Line chart of the 95% two-sided t critical value against degrees of freedom on a log scale: 2.776 at 4 df, 2.262 at 9, 2.045 at 29 and 1.998 at 63, flattening onto a dashed line at the z value 1.960.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">σ unknown: the t value shrinks toward z</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 228\" role=\"img\" aria-label=\"Line chart: the 95% t critical value falls from 2.776 at 4 degrees of freedom to 2.262 at 9, 2.045 at 29 and 1.998 at 63, approaching the z value 1.960 as the degrees of freedom grow.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M66.9,186 L410,186\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M66.9,155.7 L410,155.7\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none;stroke-dasharray:5 4\"/><text x=\"66.9\" y=\"174\" text-anchor=\"start\" style=\"fill:var(--clay);font-size:13px\">z = 1.960 (df → ∞)</text><path d=\"M72.9,49.6 L94.5,76.3 L112.2,92.4 L127.1,103.1 L140.0,110.7 L151.4,116.4 L161.6,120.8 L179.3,127.3 L200.9,133.4 L228.8,139.3 L250.4,142.8 L264.7,144.6 L282.9,146.6 L307.3,148.7 L339.9,150.7 L363.0,151.8 L384.6,152.6 L402.2,153.1\" style=\"stroke:var(--ink);stroke-width:2;fill:none\"/><circle cx=\"72.9\" cy=\"49.6\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><text x=\"82.9\" y=\"47.6\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">2.776</text><circle cx=\"151.4\" cy=\"116.4\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><text x=\"159.4\" y=\"108.4\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">2.262</text><circle cx=\"264.7\" cy=\"144.6\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><text x=\"260.7\" y=\"127.6\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">2.045</text><circle cx=\"339.9\" cy=\"150.7\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><text x=\"339.9\" y=\"136.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">1.998</text><path d=\"M94.5,186 L94.5,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"94.5\" y=\"204\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">5</text><path d=\"M161.6,186 L161.6,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"161.6\" y=\"204\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">10</text><path d=\"M268.0,186 L268.0,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"268.0\" y=\"204\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">30</text><path d=\"M384.6,186 L384.6,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"384.6\" y=\"204\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">100</text><text x=\"235\" y=\"220\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">degrees of freedom, n − 1 (log scale)</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Small samples pay for estimating σ with a bigger multiplier; by about 60 df t and z differ only in the second decimal.</figcaption></figure><!--/viz:sfm-ch8-t-to-z--><!--viz:sfm-ch8-planning-p--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Curve of p* times (1 − p*) rising from 0 to a peak of 0.25 at p* = 0.50 and falling back to 0. For a 95% margin of ±0.03 the required sample is 1,068 at p* = 0.50, 897 at 0.30 or 0.70, and 683 at 0.20.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Why p* = 0.50 is the safe planning value</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 214\" role=\"img\" aria-label=\"Curve of p-star times one minus p-star for p-star from 0 to 1. It peaks at 0.25 when p-star is 0.50, giving the largest sample, 1,068, for a 95% margin of 0.03; p-star 0.30 or 0.70 gives 897 and 0.20 gives 683.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M50,180 L410,180\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M50,40 L230,40\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none;stroke-dasharray:4 3\"/><text x=\"44\" y=\"44\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">0.25</text><path d=\"M50,180 L57.2,169.0 L64.4,158.5 L71.6,148.4 L78.8,138.8 L86,129.6 L93.2,120.9 L100.4,112.6 L107.6,104.7 L114.8,97.3 L122,90.4 L129.2,83.9 L136.4,77.9 L143.6,72.3 L150.8,67.1 L158,62.4 L165.2,58.1 L172.4,54.3 L179.6,51.0 L186.8,48.1 L194,45.6 L201.2,43.6 L208.4,42.0 L215.6,40.9 L222.8,40.2 L230,40 L237.2,40.2 L244.4,40.9 L251.6,42.0 L258.8,43.6 L266,45.6 L273.2,48.1 L280.4,51.0 L287.6,54.3 L294.8,58.1 L302,62.4 L309.2,67.1 L316.4,72.3 L323.6,77.9 L330.8,83.9 L338,90.4 L345.2,97.3 L352.4,104.7 L359.6,112.6 L366.8,120.9 L374,129.6 L381.2,138.8 L388.4,148.4 L395.6,158.5 L402.8,169.0 L410,180\" style=\"stroke:var(--ink);stroke-width:2;fill:none\"/><circle cx=\"230\" cy=\"40\" r=\"4.5\" style=\"fill:var(--blue);stroke:none\"/><text x=\"230\" y=\"26\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">p* = 0.50: n = 1,068</text><circle cx=\"302\" cy=\"62.4\" r=\"4.5\" style=\"fill:var(--ink-3);stroke:none\"/><text x=\"230\" y=\"90\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">0.30 or 0.70: n = 897</text><circle cx=\"122\" cy=\"90.4\" r=\"4.5\" style=\"fill:var(--ink-3);stroke:none\"/><text x=\"112\" y=\"84.4\" text-anchor=\"end\" style=\"fill:var(--ink-2);font-size:13px\">0.20: n = 683</text><circle cx=\"158\" cy=\"62.4\" r=\"4.5\" style=\"fill:var(--ink-3);stroke:none\"/><path d=\"M50,180 L50,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"50\" y=\"199\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><path d=\"M230,180 L230,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"230\" y=\"199\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0.5</text><path d=\"M410,180 L410,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"410\" y=\"199\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">1</text><text x=\"146\" y=\"199\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">planning value p*</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">n is proportional to p*(1 − p*), so 0.50 gives the biggest sample: big enough whatever p turns out to be.</figcaption></figure><!--/viz:sfm-ch8-planning-p--><p><strong>Interval estimate and margin of error</strong> — Every interval estimate in the chapter has the form point estimate ± margin of error. The margin of error is a critical value (z or t) times a standard error, so it grows with confidence and variability and shrinks with sample size.<br><span style=\"font-family:var(--mono)\">x̄ ± margin of error;  p̄ ± margin of error</span></p><p><strong>Confidence level, confidence coefficient and α</strong> — A 95% confidence level means the procedure produces intervals that capture the parameter 95% of the time; the confidence coefficient is 0.95 and α = 0.05 is split as α/2 in each tail. Key critical values: 90% → z = 1.645, 95% → 1.96, 99% → 2.576.<br><span style=\"font-family:var(--mono)\">Confidence coefficient = 1 − α;  critical value z_(α/2)</span></p><p><strong>Interpreting a confidence interval</strong> — The 95% describes the method: about 95 of every 100 intervals built this way would contain μ. Any one computed interval either contains μ or it does not; the book's wording is that we are '95% confident' the interval includes μ.<br><em>e.g.</em> Lloyd's: 82 ± 3.92 gives $78.08 to $85.92 at 95% confidence.</p><p><strong>Part 1 · Interval for μ: σ known (L#22)</strong> — Used when a reliable σ is available before sampling — from long historical records or an in-control process. It is exact for a normal population and approximate otherwise; n ≥ 30 is usually adequate, and as small as 15 for roughly symmetric populations. With σ known, the margin of error is the same for every sample of size n.<br><span style=\"font-family:var(--mono)\">x̄ ± z_(α/2) · σ/√n</span></p><p><strong>Part 2 · σ unknown: the t distribution (L#24)</strong> — A family of bell-shaped distributions centred on 0, one for each number of degrees of freedom. It has heavier tails than z, so its critical values are larger, but it approaches the standard normal as degrees of freedom increase; beyond about 100 df the z value is a good approximation. Degrees of freedom are n − 1 because the deviations (xᵢ − x̄) must sum to zero, leaving only n − 1 of them free.<br><em>e.g.</em> t.025 = 2.262 for 9 df, 2.000 for 60 df, 1.96 for ∞.</p><p><strong>Part 2 · σ unknown: the interval for μ (L#24)</strong> — When s estimates σ from the same sample, replace z with t on n − 1 degrees of freedom. The margin of error now varies from sample to sample because s does. n ≥ 30 is usually enough; use n ≥ 50 for highly skewed or outlier-prone populations; small samples need a roughly normal population.<br><span style=\"font-family:var(--mono)\">x̄ ± t_(α/2, n−1) · s/√n</span><br><em>e.g.</em> n = 70, x̄ = $9312, s = $4007, t = 1.995 → $8357 to $10,267.</p><p><strong>Part 4 · Interval for a population proportion</strong> — Because p is unknown, its estimate p̄ is used inside the standard error. The normal approximation needs np̄ and n(1 − p̄) large enough (at least 5), which survey sample sizes almost always satisfy. The book writes the sample proportion as p̄; the lectures and the rest of the hub write p̂.<br><span style=\"font-family:var(--mono)\">p̄ ± z_(α/2) · √[p̄(1 − p̄)/n]</span><br><em>e.g.</em> 396 of 900 golfers satisfied: 0.44 ± 0.0324.</p><p><strong>Part 3 · Sample size for estimating μ (L#24)</strong> — Set the desired margin of error E equal to z·σ/√n and solve for n. Always round up. σ needs a planning value: a previous study's s, a pilot sample, or a judgement such as range ÷ 4.<br><span style=\"font-family:var(--mono)\">n = (z_(α/2))² σ² / E²</span><br><em>e.g.</em> σ = 9.65, E = 2, 95%: n = 89.43 → 90.</p><p><strong>Parts 3–4 · Sample size for estimating p</strong> — Same logic with a planning value p* for the unknown proportion: a previous sample, a pilot, a judgement, or 0.50. Because p*(1 − p*) is largest at 0.50, using 0.50 gives the biggest, safest sample size.<br><span style=\"font-family:var(--mono)\">n = (z_(α/2))² p*(1 − p*) / E²</span><br><em>e.g.</em> E = 0.025, 95%: p* = 0.44 gives 1515; p* = 0.50 gives 1537.</p><p><strong>What controls the width of an interval</strong> — Width rises with the confidence level (bigger critical value) and with variability (σ or s), and falls with √n. To halve the margin of error at the same confidence you need four times the sample.</p><p><strong>Big data and confidence intervals</strong> — With millions of observations the margin of error becomes tiny, so intervals become extremely narrow. Precision is not the same as accuracy: a narrow interval is still wrong if the sample suffers nonsampling error, and a statistically clear difference may have no practical significance for the business.</p><p><strong>Excel for interval estimates</strong> — CONFIDENCE.NORM(alpha, σ, n) returns the margin of error for the σ-known case (not the interval). For σ unknown, the Descriptive Statistics tool's 'Confidence Level for Mean' row gives the t-based margin of error. Excel has no built-in proportion interval; the book builds a template with COUNTA and COUNTIF.<br><em>e.g.</em> =CONFIDENCE.NORM(.05,20,100) returns 3.92.</p><div class=\"card\"><strong>Case: LIFO index by sample</strong> <em>(Statistics in Practice: Food Lion)</em><p>A large US supermarket chain values inventory using LIFO and needs a price index for each of its inventory pools. Counting every store would be too slow and costly, so it takes year-end physical counts in a random sample of stores and reports each index with a 95% margin of error, judged precise enough for tax accounting.</p><p><em>Lesson:</em> A sample estimate plus margin of error replaces an expensive census.</p><p><em>Think:</em> If the chain doubled the number of sampled stores, roughly what would happen to the margin of error, and is that worth the extra counting cost?</p></div><div class=\"card\"><strong>Case: Subscriber profile for advertisers</strong> <em>(Case Problem 1: Young Professional Magazine)</em><p>A magazine for early-career professionals surveys its subscribers to show advertisers who they are: age, income, investments, broadband access, children and buying plans. The analyst must summarise the data and give confidence intervals for key means and proportions, then judge which advertisers the magazine suits.</p><p><em>Lesson:</em> Interval estimates for both means and proportions support a marketing decision.</p><p><em>Think:</em> Which interval — for mean household income or for the proportion with broadband at home — would an online broker care about more, and why does each need a different formula?</p></div><details><summary>Worked problem: Part 1 · Average bill, σ known</summary><p>A Kochi restaurant chain knows from years of data that bill amounts have σ = ₹240. A random sample of 64 bills this month gives x̄ = ₹1,150. Build a 95% confidence interval for the mean bill.</p><ol><li>σ known → z interval; 95% → z.025 = 1.96.</li><li>Standard error σ/√n = 240/8 = 30.</li><li>Margin of error = 1.96 × 30 = ₹58.8.</li><li>Interval: 1,150 ± 58.8 = ₹1,091.2 to ₹1,208.8.</li></ol><p><strong>Answer:</strong> 95% CI: ₹1,091.2 to ₹1,208.8 (margin of error ₹58.8).</p></details><details><summary>Worked problem: Part 2 · Rider distance, σ unknown (t)</summary><p>A delivery firm samples 16 riders' daily distance: x̄ = 84 km, s = 12 km. Distances look roughly normal. Build a 95% confidence interval for the mean daily distance.</p><ol><li>σ unknown → t interval with n − 1 = 15 df; t.025 = 2.131.</li><li>Standard error s/√n = 12/4 = 3.</li><li>Margin of error = 2.131 × 3 = 6.39 km.</li><li>Interval: 84 ± 6.39 = 77.6 km to 90.4 km.</li></ol><p><strong>Answer:</strong> 95% CI: about 77.6 km to 90.4 km.</p></details><details><summary>Worked problem: Part 4 · Metro use proportion</summary><p>In a survey of 900 Mumbai commuters, 351 use the metro at least weekly. Build a 95% confidence interval for the population proportion.</p><ol><li>p̄ = 351/900 = 0.39; np̄ = 351 and n(1 − p̄) = 549, so the normal approximation holds.</li><li>Standard error √(0.39 × 0.61 / 900) = 0.01626.</li><li>Margin of error = 1.96 × 0.01626 = 0.0319.</li><li>Interval: 0.39 ± 0.0319 = 0.358 to 0.422.</li></ol><p><strong>Answer:</strong> 95% CI: about 35.8% to 42.2% of commuters.</p></details><details><summary>Worked problem: Parts 3–4 · How big a sample?</summary><p>(a) A bank wants the mean monthly card spend within ±₹50 at 95% confidence; a pilot gives s = ₹300. (b) It also wants the share of customers using UPI on their card within ±3 percentage points at 95% and at 99%, with no prior estimate.</p><ol><li>(a) n = (1.96)² × 300² / 50² = 3.8416 × 90,000 / 2,500 = 138.3 → round up to 139.</li><li>(b) No prior → p* = 0.50. At 95%: n = (1.96)² × 0.25 / 0.03² = 1,067.1 → 1,068.</li><li>At 99% (z = 2.576): n = 2.576² × 0.25 / 0.0009 = 1,843.3 → 1,844.</li></ol><p><strong>Answer:</strong> (a) 139 customers. (b) 1,068 at 95%; 1,844 at 99%.</p></details><div class=\"def\"><b>Book vs lecture — Finite population correction.</b> Book: Chapter 8's interval formulas use σ/√n (or s/√n) throughout and never apply a finite population correction; its examples all sample a tiny share of a large population. Lecture: The hub follows L#19: use σ/√n when the population is infinite or n/N &lt; 0.05, and multiply by √[(N − n)/(N − 1)] when n/N &gt; 0.05. In L#22 the spoken rule came out the other way round, and the LMS summary repeats the slip; L#22's own example treats the population as infinite. <b>Apply the correction when the sample is more than 5% of a finite population, as L#19 taught. The book never meets that case, so the two only differ in questions that give N.</b></div><div class=\"def\"><b>Book vs lecture — What '90% confidence' means.</b> Book: 90% of the intervals built this way from repeated samples contain μ; any one computed interval either contains μ or it does not. Lecture: L#22's summary says the same (90% of all intervals x̄ ± 1.645σx̄ contain μ), but the spoken explanation once said 'all the intervals' contain the mean and also spoke of the sample lying in the range 95% of the time. <b>Use the repeated-sampling wording. The interval is about μ, not about where single values or later sample means fall.</b></div><div class=\"def\"><b>Book vs lecture — σ unknown with a large sample.</b> Book: Uses t with n − 1 degrees of freedom whenever s replaces σ, at any n; z is only a convenient approximation beyond about 100 df. Lecture: L#24 (part 2 of the topic) agrees with the book: the choice turns on whether σ is known, not on n, so with only s use t with n − 1 df, and use the table's ∞ row (z) only past 100 df. That settles the lecturer's Chapter 8 sheet, which says t is for σ unknown 'and the sample is small' yet gives only s with n = 64 and n = 80: t with 63 and 79 df. <b>Use t with n − 1 df and show it, as L#24 does. z gives nearly the same interval for n above about 60, but below 100 df it is a shortcut, not the method.</b></div><div class=\"def\"><b>Book vs lecture — Software for interval estimates.</b> Book: Excel CONFIDENCE.NORM for the σ-known margin of error, the Descriptive Statistics tool for the t-based margin, and a hand-built template for proportions (plus JMP). Lecture: L#22: the z values 1.645, 1.960 and 2.576 come from the table or Excel and will generally be given. L#21 built cell-referenced Excel sheets with NORM.DIST, and L#23 ran the Descriptive Statistics tool with ‘Confidence Level for Mean’ ticked; its row is the t-based margin of error behind L#24's interval. CONFIDENCE.NORM has not been shown in a lecture. The course also uses R, where qnorm and qt give critical values. <b>Learn the formulas first; tool output gives only a margin of error or an interval. Expect the critical value to be given, and write down the one you use.</b></div><div class=\"def\"><b>Book vs lecture — Notation for the sample proportion.</b> Book: Writes the sample proportion as p̄. Lecture: The lectures and the hub write p̂ (L#19, L#20). <b>Same quantity, x/n. Read p̄ in this chapter as p̂.</b></div>"
+     "h": "<p>A point estimate alone says nothing about its accuracy, so the chapter wraps it in an interval: point estimate ± margin of error. When σ is known from history, the margin of error uses z (section 8.1, the part L#22 lectured). When σ has to be estimated by s from the same sample, which is the usual case, it uses the t distribution with n − 1 degrees of freedom (part 2 of the topic, taught in L#24). Higher confidence widens an interval and a larger sample narrows it, which gives formulas for the sample size needed to hit a target margin of error (part 3; L#24 taught it for a mean, L#25 for a proportion). Proportions use z with the standard error √[p̄(1 − p̄)/n] (part 4, taught in L#25). For managers, the interval is the honest way to report a survey or audit figure, and the sample-size formula sets a study budget before any data are collected.</p><!--viz:sfm-ch8-which-interval--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Four rows. A mean with σ known uses x-bar plus or minus z times sigma over root n, as taught in L#22 (part 1 of the topic). A mean with σ unknown uses x-bar plus or minus t times s over root n with n minus 1 degrees of freedom (part 2, taught in L#24). A proportion uses p-bar plus or minus z times the square root of p-bar times one minus p-bar over n, once both counts are at least 5 (part 4, taught in L#25). Before sampling, the sample size comes from the target margin and a planning value, rounded up (parts 3 and 4, taught in L#24 and L#25).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Which interval, which critical value?</div><div style=\"font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Mean μ</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">σ known (records, specs)</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">x̄ ± z<sub>α/2</sub> σ/√n</div><span style=\"color:var(--ink-3);font-size:13px\">part 1 · L#22</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Mean μ</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">σ unknown, use s</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">x̄ ± t<sub>α/2</sub> s/√n, df = n − 1</div><span style=\"color:var(--ink-3);font-size:13px\">part 2 · L#24</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Proportion p</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">np̄ and n(1 − p̄) ≥ 5</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">p̄ ± z<sub>α/2</sub> √[p̄(1 − p̄)/n]</div><span style=\"color:var(--ink-3);font-size:13px\">part 4 · L#25</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Before sampling</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">target margin E, planning σ* or p*</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">n = (z σ*/E)² or z² p*(1 − p*)/E², round up</div><span style=\"color:var(--ink-3);font-size:13px\">parts 3–4 · L#24–25</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only the σ-unknown mean uses t; proportions and sample sizes always use z.</figcaption></figure><!--/viz:sfm-ch8-which-interval--><!--viz:sfm-ch8-t-to-z--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Line chart of the 95% two-sided t critical value against degrees of freedom on a log scale: 2.776 at 4 df, 2.262 at 9, 2.045 at 29 and 1.998 at 63, flattening onto a dashed line at the z value 1.960.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">σ unknown: the t value shrinks toward z</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 228\" role=\"img\" aria-label=\"Line chart: the 95% t critical value falls from 2.776 at 4 degrees of freedom to 2.262 at 9, 2.045 at 29 and 1.998 at 63, approaching the z value 1.960 as the degrees of freedom grow.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M66.9,186 L410,186\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M66.9,155.7 L410,155.7\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none;stroke-dasharray:5 4\"/><text x=\"66.9\" y=\"174\" text-anchor=\"start\" style=\"fill:var(--clay);font-size:13px\">z = 1.960 (df → ∞)</text><path d=\"M72.9,49.6 L94.5,76.3 L112.2,92.4 L127.1,103.1 L140.0,110.7 L151.4,116.4 L161.6,120.8 L179.3,127.3 L200.9,133.4 L228.8,139.3 L250.4,142.8 L264.7,144.6 L282.9,146.6 L307.3,148.7 L339.9,150.7 L363.0,151.8 L384.6,152.6 L402.2,153.1\" style=\"stroke:var(--ink);stroke-width:2;fill:none\"/><circle cx=\"72.9\" cy=\"49.6\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><text x=\"82.9\" y=\"47.6\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">2.776</text><circle cx=\"151.4\" cy=\"116.4\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><text x=\"159.4\" y=\"108.4\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">2.262</text><circle cx=\"264.7\" cy=\"144.6\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><text x=\"260.7\" y=\"127.6\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">2.045</text><circle cx=\"339.9\" cy=\"150.7\" r=\"4\" style=\"fill:var(--blue);stroke:none\"/><text x=\"339.9\" y=\"136.7\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">1.998</text><path d=\"M94.5,186 L94.5,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"94.5\" y=\"204\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">5</text><path d=\"M161.6,186 L161.6,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"161.6\" y=\"204\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">10</text><path d=\"M268.0,186 L268.0,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"268.0\" y=\"204\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">30</text><path d=\"M384.6,186 L384.6,191\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"384.6\" y=\"204\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">100</text><text x=\"235\" y=\"220\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">degrees of freedom, n − 1 (log scale)</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Small samples pay for estimating σ with a bigger multiplier; by about 60 df t and z differ only in the second decimal.</figcaption></figure><!--/viz:sfm-ch8-t-to-z--><!--viz:sfm-ch8-planning-p--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Curve of p* times (1 − p*) rising from 0 to a peak of 0.25 at p* = 0.50 and falling back to 0. For a 95% margin of ±0.03 the required sample is 1,068 at p* = 0.50, 897 at 0.30 or 0.70, and 683 at 0.20.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Why p* = 0.50 is the safe planning value</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 214\" role=\"img\" aria-label=\"Curve of p-star times one minus p-star for p-star from 0 to 1. It peaks at 0.25 when p-star is 0.50, giving the largest sample, 1,068, for a 95% margin of 0.03; p-star 0.30 or 0.70 gives 897 and 0.20 gives 683.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M50,180 L410,180\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M50,40 L230,40\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none;stroke-dasharray:4 3\"/><text x=\"44\" y=\"44\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">0.25</text><path d=\"M50,180 L57.2,169.0 L64.4,158.5 L71.6,148.4 L78.8,138.8 L86,129.6 L93.2,120.9 L100.4,112.6 L107.6,104.7 L114.8,97.3 L122,90.4 L129.2,83.9 L136.4,77.9 L143.6,72.3 L150.8,67.1 L158,62.4 L165.2,58.1 L172.4,54.3 L179.6,51.0 L186.8,48.1 L194,45.6 L201.2,43.6 L208.4,42.0 L215.6,40.9 L222.8,40.2 L230,40 L237.2,40.2 L244.4,40.9 L251.6,42.0 L258.8,43.6 L266,45.6 L273.2,48.1 L280.4,51.0 L287.6,54.3 L294.8,58.1 L302,62.4 L309.2,67.1 L316.4,72.3 L323.6,77.9 L330.8,83.9 L338,90.4 L345.2,97.3 L352.4,104.7 L359.6,112.6 L366.8,120.9 L374,129.6 L381.2,138.8 L388.4,148.4 L395.6,158.5 L402.8,169.0 L410,180\" style=\"stroke:var(--ink);stroke-width:2;fill:none\"/><circle cx=\"230\" cy=\"40\" r=\"4.5\" style=\"fill:var(--blue);stroke:none\"/><text x=\"230\" y=\"26\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">p* = 0.50: n = 1,068</text><circle cx=\"302\" cy=\"62.4\" r=\"4.5\" style=\"fill:var(--ink-3);stroke:none\"/><text x=\"230\" y=\"90\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">0.30 or 0.70: n = 897</text><circle cx=\"122\" cy=\"90.4\" r=\"4.5\" style=\"fill:var(--ink-3);stroke:none\"/><text x=\"112\" y=\"84.4\" text-anchor=\"end\" style=\"fill:var(--ink-2);font-size:13px\">0.20: n = 683</text><circle cx=\"158\" cy=\"62.4\" r=\"4.5\" style=\"fill:var(--ink-3);stroke:none\"/><path d=\"M50,180 L50,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"50\" y=\"199\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><path d=\"M230,180 L230,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"230\" y=\"199\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0.5</text><path d=\"M410,180 L410,185\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"410\" y=\"199\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">1</text><text x=\"146\" y=\"199\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">planning value p*</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">n is proportional to p*(1 − p*), so 0.50 gives the biggest sample: big enough whatever p turns out to be.</figcaption></figure><!--/viz:sfm-ch8-planning-p--><p><strong>Interval estimate and margin of error</strong> — Every interval estimate in the chapter has the form point estimate ± margin of error. The margin of error is a critical value (z or t) times a standard error, so it grows with confidence and variability and shrinks with sample size.<br><span style=\"font-family:var(--mono)\">x̄ ± margin of error;  p̄ ± margin of error</span></p><p><strong>Confidence level, confidence coefficient and α</strong> — A 95% confidence level means the procedure produces intervals that capture the parameter 95% of the time; the confidence coefficient is 0.95 and α = 0.05 is split as α/2 in each tail. Key critical values: 90% → z = 1.645, 95% → 1.96, 99% → 2.576.<br><span style=\"font-family:var(--mono)\">Confidence coefficient = 1 − α;  critical value z_(α/2)</span></p><p><strong>Interpreting a confidence interval</strong> — The 95% describes the method: about 95 of every 100 intervals built this way would contain μ. Any one computed interval either contains μ or it does not; the book's wording is that we are '95% confident' the interval includes μ.<br><em>e.g.</em> Lloyd's: 82 ± 3.92 gives $78.08 to $85.92 at 95% confidence.</p><p><strong>Part 1 · Interval for μ: σ known (L#22)</strong> — Used when a reliable σ is available before sampling — from long historical records or an in-control process. It is exact for a normal population and approximate otherwise; n ≥ 30 is usually adequate, and as small as 15 for roughly symmetric populations. With σ known, the margin of error is the same for every sample of size n.<br><span style=\"font-family:var(--mono)\">x̄ ± z_(α/2) · σ/√n</span></p><p><strong>Part 2 · σ unknown: the t distribution (L#24)</strong> — A family of bell-shaped distributions centred on 0, one for each number of degrees of freedom. It has heavier tails than z, so its critical values are larger, but it approaches the standard normal as degrees of freedom increase; beyond about 100 df the z value is a good approximation. Degrees of freedom are n − 1 because the deviations (xᵢ − x̄) must sum to zero, leaving only n − 1 of them free.<br><em>e.g.</em> t.025 = 2.262 for 9 df, 2.000 for 60 df, 1.96 for ∞.</p><p><strong>Part 2 · σ unknown: the interval for μ (L#24)</strong> — When s estimates σ from the same sample, replace z with t on n − 1 degrees of freedom. The margin of error now varies from sample to sample because s does. n ≥ 30 is usually enough; use n ≥ 50 for highly skewed or outlier-prone populations; small samples need a roughly normal population.<br><span style=\"font-family:var(--mono)\">x̄ ± t_(α/2, n−1) · s/√n</span><br><em>e.g.</em> n = 70, x̄ = $9312, s = $4007, t = 1.995 → $8357 to $10,267.</p><p><strong>Part 4 · Interval for a population proportion (L#25)</strong> — Because p is unknown, its estimate p̄ is used inside the standard error. The normal approximation needs np̄ and n(1 − p̄) large enough (at least 5), which survey sample sizes almost always satisfy. The book writes the sample proportion as p̄; the lectures and the rest of the hub write p̂.<br><span style=\"font-family:var(--mono)\">p̄ ± z_(α/2) · √[p̄(1 − p̄)/n]</span><br><em>e.g.</em> 396 of 900 golfers satisfied: 0.44 ± 0.0324.</p><p><strong>Part 3 · Sample size for estimating μ (L#24)</strong> — Set the desired margin of error E equal to z·σ/√n and solve for n. Always round up. σ needs a planning value: a previous study's s, a pilot sample, or a judgement such as range ÷ 4.<br><span style=\"font-family:var(--mono)\">n = (z_(α/2))² σ² / E²</span><br><em>e.g.</em> σ = 9.65, E = 2, 95%: n = 89.43 → 90.</p><p><strong>Parts 3–4 · Sample size for estimating p (L#25)</strong> — Same logic with a planning value p* for the unknown proportion: a previous sample, a pilot, a judgement, or 0.50. Because p*(1 − p*) is largest at 0.50, using 0.50 gives the biggest, safest sample size.<br><span style=\"font-family:var(--mono)\">n = (z_(α/2))² p*(1 − p*) / E²</span><br><em>e.g.</em> E = 0.025, 95%: p* = 0.44 gives 1515; p* = 0.50 gives 1537.</p><p><strong>What controls the width of an interval</strong> — Width rises with the confidence level (bigger critical value) and with variability (σ or s), and falls with √n. To halve the margin of error at the same confidence you need four times the sample.</p><p><strong>Big data and confidence intervals</strong> — With millions of observations the margin of error becomes tiny, so intervals become extremely narrow. Precision is not the same as accuracy: a narrow interval is still wrong if the sample suffers nonsampling error, and a statistically clear difference may have no practical significance for the business.</p><p><strong>Excel for interval estimates</strong> — CONFIDENCE.NORM(alpha, σ, n) returns the margin of error for the σ-known case (not the interval). For σ unknown, the Descriptive Statistics tool's 'Confidence Level for Mean' row gives the t-based margin of error. Excel has no built-in proportion interval; the book builds a template with COUNTA and COUNTIF.<br><em>e.g.</em> =CONFIDENCE.NORM(.05,20,100) returns 3.92.</p><div class=\"card\"><strong>Case: LIFO index by sample</strong> <em>(Statistics in Practice: Food Lion)</em><p>A large US supermarket chain values inventory using LIFO and needs a price index for each of its inventory pools. Counting every store would be too slow and costly, so it takes year-end physical counts in a random sample of stores and reports each index with a 95% margin of error, judged precise enough for tax accounting.</p><p><em>Lesson:</em> A sample estimate plus margin of error replaces an expensive census.</p><p><em>Think:</em> If the chain doubled the number of sampled stores, roughly what would happen to the margin of error, and is that worth the extra counting cost?</p></div><div class=\"card\"><strong>Case: Subscriber profile for advertisers</strong> <em>(Case Problem 1: Young Professional Magazine)</em><p>A magazine for early-career professionals surveys its subscribers to show advertisers who they are: age, income, investments, broadband access, children and buying plans. The analyst must summarise the data and give confidence intervals for key means and proportions, then judge which advertisers the magazine suits.</p><p><em>Lesson:</em> Interval estimates for both means and proportions support a marketing decision.</p><p><em>Think:</em> Which interval — for mean household income or for the proportion with broadband at home — would an online broker care about more, and why does each need a different formula?</p></div><details><summary>Worked problem: Part 1 · Average bill, σ known</summary><p>A Kochi restaurant chain knows from years of data that bill amounts have σ = ₹240. A random sample of 64 bills this month gives x̄ = ₹1,150. Build a 95% confidence interval for the mean bill.</p><ol><li>σ known → z interval; 95% → z.025 = 1.96.</li><li>Standard error σ/√n = 240/8 = 30.</li><li>Margin of error = 1.96 × 30 = ₹58.8.</li><li>Interval: 1,150 ± 58.8 = ₹1,091.2 to ₹1,208.8.</li></ol><p><strong>Answer:</strong> 95% CI: ₹1,091.2 to ₹1,208.8 (margin of error ₹58.8).</p></details><details><summary>Worked problem: Part 2 · Rider distance, σ unknown (t)</summary><p>A delivery firm samples 16 riders' daily distance: x̄ = 84 km, s = 12 km. Distances look roughly normal. Build a 95% confidence interval for the mean daily distance.</p><ol><li>σ unknown → t interval with n − 1 = 15 df; t.025 = 2.131.</li><li>Standard error s/√n = 12/4 = 3.</li><li>Margin of error = 2.131 × 3 = 6.39 km.</li><li>Interval: 84 ± 6.39 = 77.6 km to 90.4 km.</li></ol><p><strong>Answer:</strong> 95% CI: about 77.6 km to 90.4 km.</p></details><details><summary>Worked problem: Part 4 · Metro use proportion</summary><p>In a survey of 900 Mumbai commuters, 351 use the metro at least weekly. Build a 95% confidence interval for the population proportion.</p><ol><li>p̄ = 351/900 = 0.39; np̄ = 351 and n(1 − p̄) = 549, so the normal approximation holds.</li><li>Standard error √(0.39 × 0.61 / 900) = 0.01626.</li><li>Margin of error = 1.96 × 0.01626 = 0.0319.</li><li>Interval: 0.39 ± 0.0319 = 0.358 to 0.422.</li></ol><p><strong>Answer:</strong> 95% CI: about 35.8% to 42.2% of commuters.</p></details><details><summary>Worked problem: Parts 3–4 · How big a sample?</summary><p>(a) A bank wants the mean monthly card spend within ±₹50 at 95% confidence; a pilot gives s = ₹300. (b) It also wants the share of customers using UPI on their card within ±3 percentage points at 95% and at 99%, with no prior estimate.</p><ol><li>(a) n = (1.96)² × 300² / 50² = 3.8416 × 90,000 / 2,500 = 138.3 → round up to 139.</li><li>(b) No prior → p* = 0.50. At 95%: n = (1.96)² × 0.25 / 0.03² = 1,067.1 → 1,068.</li><li>At 99% (z = 2.576): n = 2.576² × 0.25 / 0.0009 = 1,843.3 → 1,844.</li></ol><p><strong>Answer:</strong> (a) 139 customers. (b) 1,068 at 95%; 1,844 at 99%.</p></details><div class=\"def\"><b>Book vs lecture — Finite population correction.</b> Book: Chapter 8's interval formulas use σ/√n (or s/√n) throughout and never apply a finite population correction; its examples all sample a tiny share of a large population. Lecture: The hub follows L#19: use σ/√n when the population is infinite or n/N &lt; 0.05, and multiply by √[(N − n)/(N − 1)] when n/N &gt; 0.05. In L#22 the spoken rule came out the other way round, and the LMS summary repeats the slip; L#22's own example treats the population as infinite. <b>Apply the correction when the sample is more than 5% of a finite population, as L#19 taught. The book never meets that case, so the two only differ in questions that give N.</b></div><div class=\"def\"><b>Book vs lecture — What '90% confidence' means.</b> Book: 90% of the intervals built this way from repeated samples contain μ; any one computed interval either contains μ or it does not. Lecture: L#22's summary says the same (90% of all intervals x̄ ± 1.645σx̄ contain μ), but the spoken explanation once said 'all the intervals' contain the mean and also spoke of the sample lying in the range 95% of the time. <b>Use the repeated-sampling wording. The interval is about μ, not about where single values or later sample means fall.</b></div><div class=\"def\"><b>Book vs lecture — σ unknown with a large sample.</b> Book: Uses t with n − 1 degrees of freedom whenever s replaces σ, at any n; z is only a convenient approximation beyond about 100 df. Lecture: L#24 (part 2 of the topic) agrees with the book: the choice turns on whether σ is known, not on n, so with only s use t with n − 1 df, and use the table's ∞ row (z) only past 100 df. That settles the lecturer's Chapter 8 sheet, which says t is for σ unknown 'and the sample is small' yet gives only s with n = 64 and n = 80: t with 63 and 79 df. <b>Use t with n − 1 df and show it, as L#24 does. z gives nearly the same interval for n above about 60, but below 100 df it is a shortcut, not the method.</b></div><div class=\"def\"><b>Book vs lecture — Software for interval estimates.</b> Book: Excel CONFIDENCE.NORM for the σ-known margin of error, the Descriptive Statistics tool for the t-based margin, and a hand-built template for proportions (plus JMP). Lecture: L#22: the z values 1.645, 1.960 and 2.576 come from the table or Excel and will generally be given. L#21 built cell-referenced Excel sheets with NORM.DIST, and L#23 ran the Descriptive Statistics tool with ‘Confidence Level for Mean’ ticked; its row is the t-based margin of error behind L#24's interval. L#25 showed CONFIDENCE.NORM (its first argument is α, and it returns only the margin) but said to use it just to check an answer, because it skips the steps you are expected to show; it read t values with T.INV and T.INV.2T. The course also uses R, where qnorm and qt give critical values. <b>Learn the formulas first; tool output gives only a margin of error or an interval. Expect the critical value to be given, and write down the one you use.</b></div><div class=\"def\"><b>Book vs lecture — Rounding a sample size.</b> Book: A computed sample size is always rounded up to the next whole number, however small the fraction, so the margin of error is met. Lecture: L#25 agrees for the PSI poll's 1,816.7 → 1,817, but the recording gives 1,843 for p* = 0.50, where the exact value is 1,843.27: 1,843 voters would leave a margin of 0.030002, just over the ±0.03 target. <b>Always round up, as the book does and as L#24 and L#25 state: 1,844 for p* = 0.50.</b></div><div class=\"def\"><b>Book vs lecture — Notation for the sample proportion.</b> Book: Writes the sample proportion as p̄. Lecture: The lectures and the hub write p̂ (L#19, L#20). <b>Same quantity, x/n. Read p̄ in this chapter as p̂.</b></div>"
+    }
+   ]
+  },
+  {
+   "id": "testing",
+   "title": "Hypothesis testing",
+   "tag": "Lecture 27",
+   "lede": "From estimating a parameter to judging a claim about it: how to write H₀ and Hₐ, which tail the evidence lies in, and the two ways a decision from a sample can be wrong.",
+   "topics": [
+    {
+     "t": "What a hypothesis test does",
+     "src": "L#27",
+     "h": "<p style=\"font-size:14.5px\">Chapter 9 opens a new topic, but not new machinery. It reuses the normal curve (L#12–14), sampling distributions (L#19) and interval estimates (L#22–26); the lecturer stresses that once you can read probabilities off a normal curve, everything that follows is an application of it. The method also extends to other distributions.</p><div class=\"def\"><b>Hypothesis testing</b> is used to decide whether a <b>statement about the value of a population parameter</b> should or should not be <b>rejected</b>.</div><p style=\"font-size:14.5px\">The lecturer asks you to read that sentence several times. Three parts matter: it is a <strong>statement</strong>; it is about a <strong>population parameter</strong> (μ, p), never about the sample; and the only verdicts are <strong>reject</strong> or <strong>do not reject</strong>. A test never declares the statement true.</p><h4>Two linked statements</h4><div class=\"def\"><b>Null hypothesis, H₀:</b> a tentative assumption about a population parameter.<br><b>Alternative hypothesis, Hₐ:</b> the opposite of what H₀ states.</div><p style=\"font-size:14.5px\">The two are competing statements about the same parameter. Sample data are gathered and tested to see whether there is enough evidence against H₀ to reject it; if H₀ is rejected, the conclusion is Hₐ.</p><p style=\"font-size:14.5px\"><strong>‘Not’ is all Hₐ says.</strong> The lecture's examples: if H₀ is ‘this room is dark’, Hₐ is ‘this room is not dark’, and the test cannot tell you how bright it is or what colour the light is. If H₀ is ‘the apple is green’, the only conclusions are ‘green’ or ‘not green’. In statistics: if H₀ is μ ≥ 70, rejecting it tells you μ &lt; 70, not what μ is. (Estimating the value is the job of an interval.)</p><div class=\"def\"><b>From the lecture (L#27):</b> the quiz may ask what a tentative assumption about a population parameter is called (a <b>hypothesis</b>, not a conclusion or a probability) and in which statement it is placed (the <b>null</b>, H₀). Evidence is then gathered against it.</div>"
+    },
+    {
+     "t": "Formulating H₀ and Hₐ",
+     "src": "L#27",
+     "h": "<p style=\"font-size:14.5px\">Writing the hypotheses correctly is the hard part; the lecturer says it takes a lot of practice. A hypothesis must be <strong>testable</strong>, not vague, and the context decides which statement is which. Identify either one first; the other is its opposite.</p><h4>Route 1 · Start from Hₐ: the research hypothesis</h4><p style=\"font-size:14.5px\">When the aim is to find evidence <em>for</em> something, put that claim in Hₐ: it is the conclusion the researcher hopes to reach, and it is reached only if the data let us reject H₀.</p><div class=\"scroller\"><table><thead><tr><th>Situation</th><th>Hₐ (what we hope to show)</th><th>H₀</th></tr></thead><tbody><tr><td>New teaching method</td><td>it is better than the current one</td><td>it is not better</td></tr><tr><td>New sales-force bonus plan</td><td>it increases sales</td><td>it does not increase sales</td></tr><tr><td>New blood-pressure drug</td><td>it lowers BP more than the existing drug</td><td>it does not</td></tr></tbody></table></div><p style=\"font-size:14.5px\">What evidence you collect follows from the hypothesis you want to support, not the other way round.</p><h4>Route 2 · Start from H₀: challenge an assumption</h4><p style=\"font-size:14.5px\">When you begin with a belief or a claim, the status quo, and want to see whether it holds, put it in H₀ and look for evidence against it. The lecture's example: a soft-drink label states the bottle holds 67.6 fluid ounces. The label's claim is H₀; the suspicion that it is wrong is Hₐ. Quality checks and audits work this way.</p><h4>The equality always sits in H₀</h4><p style=\"font-size:14.5px\">Because H₀ is the starting assumption, it carries the equality part: =, ≤ or ≥. Hₐ carries the strict inequality: &lt;, &gt; or ≠. For a mean, with μ₀ the hypothesised value, there are only three forms:</p><div class=\"scroller\"><table><thead><tr><th>H₀</th><th>Hₐ</th><th>Evidence against H₀ lies in</th></tr></thead><tbody><tr><td>μ ≥ μ₀</td><td>μ &lt; μ₀</td><td>the lower tail (a lower-tail test)</td></tr><tr><td>μ ≤ μ₀</td><td>μ &gt; μ₀</td><td>the upper tail (an upper-tail test)</td></tr><tr><td>μ = μ₀</td><td>μ ≠ μ₀</td><td>both tails (a two-tailed test)</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The first two are one-tailed tests. The tail follows the direction of Hₐ. How the test statistic and the cut-off are found comes in the next lectures.</p><h4>The lecture's three practice examples</h4><ol><li><strong>Emergency response.</strong> A city's medical service aims for a mean response time of <strong>12 minutes or less</strong>, and its director wants to use a sample of response times to see whether the goal is being met. Status quo: the goal is met, no action needed. <strong>H₀: μ ≤ 12</strong>; <strong>Hₐ: μ &gt; 12</strong> (the goal is not met). The LMS summary prints these the other way round (H₀: μ ≥ 12): that would put the goal in Hₐ and contradicts the recording.</li><li><strong>Result processing.</strong> A university's examination cell aims to issue results in an average of <strong>15 working days or less</strong>; the controller wants to know whether the target is met. <strong>H₀: μ ≤ 15</strong>; <strong>Hₐ: μ &gt; 15</strong>.</li><li><strong>Learning platform.</strong> A platform claims its module gives an average score of <strong>at least 70</strong> out of 100, and you want to know whether the real average is lower. <strong>H₀: μ ≥ 70</strong>; <strong>Hₐ: μ &lt; 70</strong>.</li></ol><p style=\"font-size:14.5px\"><strong>A courtroom.</strong> The lecturer's point is that H₀ and Hₐ are not fixed: they follow from whose objective is being tested. The prosecution sets out to show the accused committed the crime, so for it H₀ is ‘not a criminal’ and Hₐ is ‘a criminal’. Seen from the defence's objective the roles reverse. In this course the hypotheses are objective statements about a parameter (μ ≥ 70 or μ &lt; 70), so the choice is settled by the wording of the question.</p><!--viz:sfm-l27-two-routes--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two rows. If you want to show that something new works, such as a teaching method, bonus plan or drug, put it in Ha and make H0 its opposite with the equality. If you doubt a claim or the status quo, such as a label or a service target, put the claim in H0 with the equality and make Ha the challenge.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Two ways in to H₀ and Hₐ</div><div style=\"font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>You want to show</b> something new works<br><span style=\"color:var(--ink-2);font-size:13px\">new teaching method, bonus plan, BP drug</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Put it in <b>Hₐ</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>H₀</b> = its opposite, holding the equality</div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>You doubt a claim</b> or the status quo<br><span style=\"color:var(--ink-2);font-size:13px\">a label's stated content, a service target</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Put the claim in <b>H₀</b>, with the equality</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Hₐ</b> = the challenge you look for evidence of</div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Whichever statement you write first, the equality ends up in H₀ and the conclusion you hope to reach in Hₐ.</figcaption></figure><!--/viz:sfm-l27-two-routes--><!--viz:sfm-l27-three-forms--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three small normal curves. For H0 mu at least mu0 against Ha mu below mu0 the left tail is shaded: a lower-tail test. For H0 mu at most mu0 against Ha mu above mu0 the right tail is shaded: an upper-tail test. For H0 mu equal to mu0 against Ha mu not equal to mu0 both tails are shaded: a two-tailed test.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The three forms for a mean, and their tails</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 266\" role=\"img\" aria-label=\"Three small normal curves. For H0 mu at least mu0 against Ha mu below mu0 the left tail is shaded: a lower-tail test. For H0 mu at most mu0 against Ha mu above mu0 the right tail is shaded: an upper-tail test. For H0 mu equal to mu0 against Ha mu not equal to mu0 both tails are shaded: a two-tailed test.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M20,72 L20,71.8 L22,71.8 L24,71.7 L26.1,71.7 L28.1,71.6 L30.1,71.5 L32.1,71.3 L34.1,71.1 L36.2,70.9 L38.2,70.7 L40.2,70.4 L42.2,70 L44.2,69.6 L46.3,69.1 L48.3,68.6 L50.3,67.9 L52.3,67.2 L54.3,66.3 L56.4,65.3 L58.4,64.2 L60.4,63 L62.4,61.7 L64.4,60.2 L66.5,58.6 L66.5,72 Z\" style=\"fill:var(--blue);opacity:.45;stroke:none\"/><path d=\"M16,72 L204,72\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M20,71.8 L23,71.8 L26,71.7 L29,71.5 L32,71.3 L35,71.1 L38,70.7 L41,70.3 L44,69.7 L47,68.9 L50,68 L53,66.9 L56,65.5 L59,63.9 L62,62 L65,59.7 L68,57.2 L71,54.4 L74,51.4 L77,48.1 L80,44.6 L83,41.1 L86,37.5 L89,34 L92,30.7 L95,27.7 L98,25.1 L101,22.9 L104,21.3 L107,20.3 L110,20 L113,20.3 L116,21.3 L119,22.9 L122,25.1 L125,27.7 L128,30.7 L131,34 L134,37.5 L137,41.1 L140,44.6 L143,48.1 L146,51.4 L149,54.4 L152,57.2 L155,59.7 L158,62 L161,63.9 L164,65.5 L167,66.9 L170,68 L173,68.9 L176,69.7 L179,70.3 L182,70.7 L185,71.1 L188,71.3 L191,71.5 L194,71.7 L197,71.8 L200,71.8\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><path d=\"M110,72 L110,77\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"110\" y=\"90\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">μ₀</text><text x=\"232\" y=\"38\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:14px\">H₀: μ ≥ μ₀</text><text x=\"232\" y=\"56\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Hₐ: μ &lt; μ₀</text><text x=\"232\" y=\"74\" text-anchor=\"start\" style=\"fill:var(--blue);font-size:13px\">lower-tail test</text><path d=\"M153.5,154 L153.5,140.6 L155.6,142.2 L157.6,143.7 L159.6,145 L161.6,146.2 L163.6,147.3 L165.7,148.3 L167.7,149.2 L169.7,149.9 L171.7,150.6 L173.7,151.1 L175.8,151.6 L177.8,152 L179.8,152.4 L181.8,152.7 L183.8,152.9 L185.9,153.1 L187.9,153.3 L189.9,153.5 L191.9,153.6 L193.9,153.7 L196,153.7 L198,153.8 L200,153.8 L200,154 Z\" style=\"fill:var(--blue);opacity:.45;stroke:none\"/><path d=\"M16,154 L204,154\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M20,153.8 L23,153.8 L26,153.7 L29,153.5 L32,153.3 L35,153.1 L38,152.7 L41,152.3 L44,151.7 L47,150.9 L50,150 L53,148.9 L56,147.5 L59,145.9 L62,144 L65,141.7 L68,139.2 L71,136.4 L74,133.4 L77,130.1 L80,126.6 L83,123.1 L86,119.5 L89,116 L92,112.7 L95,109.7 L98,107.1 L101,104.9 L104,103.3 L107,102.3 L110,102 L113,102.3 L116,103.3 L119,104.9 L122,107.1 L125,109.7 L128,112.7 L131,116 L134,119.5 L137,123.1 L140,126.6 L143,130.1 L146,133.4 L149,136.4 L152,139.2 L155,141.7 L158,144 L161,145.9 L164,147.5 L167,148.9 L170,150 L173,150.9 L176,151.7 L179,152.3 L182,152.7 L185,153.1 L188,153.3 L191,153.5 L194,153.7 L197,153.8 L200,153.8\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><path d=\"M110,154 L110,159\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"110\" y=\"172\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">μ₀</text><text x=\"232\" y=\"120\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:14px\">H₀: μ ≤ μ₀</text><text x=\"232\" y=\"138\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Hₐ: μ &gt; μ₀</text><text x=\"232\" y=\"156\" text-anchor=\"start\" style=\"fill:var(--blue);font-size:13px\">upper-tail test</text><path d=\"M20,236 L20,235.8 L21.7,235.8 L23.3,235.8 L25,235.7 L26.6,235.6 L28.3,235.6 L29.9,235.5 L31.6,235.4 L33.3,235.2 L34.9,235.1 L36.6,234.9 L38.2,234.7 L39.9,234.4 L41.5,234.2 L43.2,233.8 L44.9,233.5 L46.5,233.1 L48.2,232.6 L49.8,232.1 L51.5,231.5 L53.1,230.8 L54.8,230.1 L56.5,229.3 L58.1,228.4 L58.1,236 Z\" style=\"fill:var(--blue);opacity:.45;stroke:none\"/><path d=\"M161.9,236 L161.9,228.4 L163.5,229.3 L165.2,230.1 L166.9,230.8 L168.5,231.5 L170.2,232.1 L171.8,232.6 L173.5,233.1 L175.1,233.5 L176.8,233.8 L178.5,234.2 L180.1,234.4 L181.8,234.7 L183.4,234.9 L185.1,235.1 L186.7,235.2 L188.4,235.4 L190.1,235.5 L191.7,235.6 L193.4,235.6 L195,235.7 L196.7,235.8 L198.3,235.8 L200,235.8 L200,236 Z\" style=\"fill:var(--blue);opacity:.45;stroke:none\"/><path d=\"M16,236 L204,236\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M20,235.8 L23,235.8 L26,235.7 L29,235.5 L32,235.3 L35,235.1 L38,234.7 L41,234.3 L44,233.7 L47,232.9 L50,232 L53,230.9 L56,229.5 L59,227.9 L62,226 L65,223.7 L68,221.2 L71,218.4 L74,215.4 L77,212.1 L80,208.6 L83,205.1 L86,201.5 L89,198 L92,194.7 L95,191.7 L98,189.1 L101,186.9 L104,185.3 L107,184.3 L110,184 L113,184.3 L116,185.3 L119,186.9 L122,189.1 L125,191.7 L128,194.7 L131,198 L134,201.5 L137,205.1 L140,208.6 L143,212.1 L146,215.4 L149,218.4 L152,221.2 L155,223.7 L158,226 L161,227.9 L164,229.5 L167,230.9 L170,232 L173,232.9 L176,233.7 L179,234.3 L182,234.7 L185,235.1 L188,235.3 L191,235.5 L194,235.7 L197,235.8 L200,235.8\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><path d=\"M110,236 L110,241\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"110\" y=\"254\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">μ₀</text><text x=\"232\" y=\"202\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:14px\">H₀: μ = μ₀</text><text x=\"232\" y=\"220\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Hₐ: μ ≠ μ₀</text><text x=\"232\" y=\"238\" text-anchor=\"start\" style=\"fill:var(--blue);font-size:13px\">two-tailed test</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The shaded tail points the same way as the inequality in Hₐ; ‘≠’ splits it over both tails.</figcaption></figure><!--/viz:sfm-l27-three-forms-->"
+    },
+    {
+     "t": "Type I and Type II errors",
+     "src": "L#27",
+     "h": "<p style=\"font-size:14.5px\">A test decides from a sample, so it can be wrong. Two kinds of mistake are possible:</p><div class=\"def\"><b>Type I error:</b> rejecting H₀ when it is true. <b>Type II error:</b> not rejecting H₀ (‘accepting’ it) when it is false.</div><p style=\"font-size:14.5px\"><strong>Example, the learning platform</strong> (H₀: μ ≥ 70). A sample of 100 students averages well below 70, so you reject H₀ and conclude μ &lt; 70. If the true mean is really 70 or more and this sample was simply unlucky (or biased), you have made a Type I error. If instead the sample average had been close to 70, you would not reject H₀; if the true mean were actually 66, that would be a Type II error.</p><div class=\"def\"><b>Level of significance, α:</b> the probability of a Type I error when H₀ is true (at its equality). It is chosen in advance, for example 0.05. A test that controls only the Type I error in this way is called a <b>significance test</b>.</div><p style=\"font-size:14.5px\">The link to L#22: a 95% confidence level leaves 5% for error, and the same 0.05 appears here as α. Be careful with the wording: α is the chance of rejecting H₀ <em>if H₀ is true</em>. It is not the probability that H₀ is true, and a rejection at α = 0.05 is not ‘95% certainty that H₀ is wrong’, a phrase the recording uses loosely.</p><h4>Why ‘do not reject’, never ‘accept’</h4><p style=\"font-size:14.5px\">The probability of a Type II error is hard to control. The lecturer's intuition: it is easier to show something is wrong than to show it is always right, just as finding a defect is easier than certifying that none exist. So statisticians avoid the Type II risk by never saying ‘accept H₀’; they say there is <strong>not sufficient evidence to reject H₀</strong>. A court does the same: it finds the evidence insufficient to convict, not that the accused is innocent.</p><h4>False positive, false negative</h4><p style=\"font-size:14.5px\">The lecture's memory picture (with H₀: not pregnant): a doctor tells an obese man he is pregnant. The test came back positive and was wrong: a <strong>false positive</strong>, a Type I error. A doctor tells a visibly pregnant woman she is not pregnant: a <strong>false negative</strong>, a Type II error.</p><div class=\"scroller\"><table><thead><tr><th></th><th>H₀ true</th><th>H₀ false</th></tr></thead><tbody><tr><td><strong>Reject H₀</strong></td><td>Type I error (false positive)</td><td>correct</td></tr><tr><td><strong>Do not reject H₀</strong></td><td>correct</td><td>Type II error (false negative)</td></tr></tbody></table></div><p style=\"font-size:14.5px\">For the emergency service (H₀: μ ≤ 12): concluding that the goal is missed when it is actually met is a Type I error; concluding it is met when the true mean is, say, 13.5 minutes is a Type II error.</p><div class=\"def\"><b>From the lecture (L#27):</b> he called this decision table “very important” and said it should stay with you “forever”. Which error is more dangerous, Type I or Type II, is held over for the live session.</div><!--viz:sfm-l27-error-matrix--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two-by-two grid. Rows: reject H0, do not reject H0. Columns: H0 true, H0 false. Rejecting a true H0 is a Type I error, a false positive with probability alpha. Not rejecting a false H0 is a Type II error, a false negative. The other two cells are correct decisions.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Decision against truth: the two errors</div><div style=\"display:grid;grid-template-columns:auto 1fr 1fr;gap:4px;font-size:14px;min-width:0\"><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center\"></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center\">In truth, H₀ is true</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center\">In truth, H₀ is false</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;writing-mode:vertical-rl;transform:rotate(180deg);align-self:center\">Reject H₀</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--bad-soft)\"><b>Type I error</b><br><span style=\"color:var(--ink-2);font-size:13px\">false positive · its probability is α, the level of significance, fixed in advance</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--good-soft)\"><b>Correct decision</b><br><span style=\"color:var(--ink-2);font-size:13px\">the evidence rightly overturns H₀</span></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;writing-mode:vertical-rl;transform:rotate(180deg);align-self:center\">Do not reject H₀</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--good-soft)\"><b>Correct decision</b><br><span style=\"color:var(--ink-2);font-size:13px\">H₀ stands, and it was right</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--bad-soft)\"><b>Type II error</b><br><span style=\"color:var(--ink-2);font-size:13px\">false negative · hard to control, so we say “do not reject”, never “accept”</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only the Type I cell has a probability you fix in advance (α); that is why a non-rejection is never called acceptance.</figcaption></figure><!--/viz:sfm-l27-error-matrix-->"
+    },
+    {
+     "t": "Practice questions from the lecturer: Chapter 9",
+     "src": "L#27",
+     "h": "<p style=\"font-size:14.5px\">The lecturer's practice set for Chapter 9, Hypothesis Tests, shared through an LMS announcement on 29 Oct 2026 (‘Chapter 9 Solutions: One tailed and two tailed’), with an answer for every question. It has 20 questions in two halves: Q1–Q10, headed ‘Session 24’, on <strong>one-tailed</strong> tests, and Q11–Q20, headed ‘Session 25’, on <strong>two-tailed</strong> tests. Those are the sheet's own session labels, not LMS lecture numbers. Each question is restated below in our words and solved step by step; the numbers are the sheet's. Every z, p-value and decision was recomputed, and <strong>all 20 of the sheet's answers stand</strong>.</p><p style=\"font-size:14.5px\">L#27 taught the first two parts of the chapter: writing H₀ and Hₐ, and Type I and II errors. The sheet goes further, into the test itself (the z statistic, the p-value and the critical value), so every question is labelled with the part it needs. In the textbook's order (Anderson ch9):</p><div class=\"scroller\"><table><thead><tr><th>Part of the chapter</th><th>Lectured</th><th>On this sheet</th></tr></thead><tbody><tr><td>Developing H₀ and Hₐ (9.1)</td><td>L#27</td><td>Q2, Q12</td></tr><tr><td>Type I and II errors; what ‘reject’ and ‘do not reject’ mean (9.2)</td><td>L#27</td><td>Q10, Q20 (with the test's decision)</td></tr><tr><td>One-tailed test of μ, σ known: z, p-value, critical value (9.3)</td><td>after L#27</td><td>Q1, 3, 4, 5, 6, 7, 8, 9</td></tr><tr><td>Two-tailed test of μ, σ known (9.3)</td><td>after L#27</td><td>Q11, 13, 14, 15, 16, 17, 18, 19</td></tr><tr><td>Test of μ with σ unknown (t), and of a proportion (9.4–9.5)</td><td>after L#27</td><td>not on this sheet</td></tr></tbody></table></div><h4>The toolkit the sheet uses</h4><div class=\"def\"><b>Test statistic for μ, σ known:</b> z = (x̄ − μ₀)/(σ/√n), where μ₀ is the value in H₀. It counts how many standard errors the sample mean sits from μ₀.</div><div class=\"scroller\"><table><thead><tr><th>Hₐ</th><th>p-value</th><th>Critical value at α = 0.05</th><th>at α = 0.01</th></tr></thead><tbody><tr><td>μ &lt; μ₀ (lower tail)</td><td>area left of z</td><td>reject if z ≤ −1.645</td><td>z ≤ −2.326</td></tr><tr><td>μ &gt; μ₀ (upper tail)</td><td>area right of z</td><td>reject if z ≥ 1.645</td><td>z ≥ 2.326</td></tr><tr><td>μ ≠ μ₀ (two-tailed)</td><td>2 × area beyond |z|</td><td>reject if |z| ≥ 1.960</td><td>|z| ≥ 2.576</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>p-value approach:</strong> reject H₀ if p-value ≤ α. <strong>Critical-value approach:</strong> reject H₀ if z falls in the rejection region beyond the critical value. The two always give the same decision. The critical values are the familiar interval z values from L#22: a one-tailed test puts all of α in one tail (1.645 for 0.05), a two-tailed test splits it (1.960). Excel: <code>=NORM.S.DIST(z, TRUE)</code> is the area left of z; <code>=1-NORM.S.DIST(z, TRUE)</code> the area right of it; <code>=2*(1-NORM.S.DIST(ABS(z), TRUE))</code> the two-tailed p-value.</p><div class=\"def\"><b>Notes on the sheet:</b><ul><li><b>No errors in the answers.</b> All ten numericals and all ten objective questions check out.</li><li><b>Rounding.</b> The sheet's p-values come from z rounded to two decimals and a four-decimal table. Q3: 0.0068 (exact 0.00675). Q11: 0.1260 from z = 1.53; the unrounded z = 1.532 gives 0.1255. Q13 and Q15: 0.0456 is 2 × 0.0228; the exact two-tailed value for z = 2 is 0.0455. No decision depends on the difference.</li><li><b>Same z, different decision.</b> Q13 and Q15 both have |z| = 2.00 and p = 0.0456: reject at α = 0.05 (Q13), do not reject at α = 0.01 (Q15). Likewise Q5's p = 0.0668 would not be rejected even at 0.05.</li><li><b>σ is given in every numerical,</b> so every test is a z test. The t test for σ unknown is not on this sheet.</li><li><b>Wording.</b> The conclusions say ‘do not reject H₀’ and ‘insufficient evidence’, never ‘accept H₀’, exactly as L#27 insists.</li></ul></div><details><summary>The 10 objective questions (Q2, 4, 6, … 20), answered</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>What it asks</th><th>Answer</th><th>Part</th></tr></thead><tbody><tr><td>2</td><td>Hₐ for ‘mean output is greater than 100 units an hour’</td><td>Hₐ: μ &gt; 100 (the sheet's C)</td><td>Developing H₀ and Hₐ · L#27</td></tr><tr><td>4</td><td>Decision when a one-tailed p-value is 0.08 and α = 0.05</td><td>Do not reject H₀, because 0.08 &gt; 0.05 (B)</td><td>One-tailed test · after L#27</td></tr><tr><td>6</td><td>Critical value for a lower-tailed z test at α = 0.05</td><td>−1.645 (A)</td><td>One-tailed test · after L#27</td></tr><tr><td>8</td><td>Upper-tailed test, critical z 1.645, statistic 1.40</td><td>Do not reject H₀: 1.40 &lt; 1.645 (C)</td><td>One-tailed test · after L#27</td></tr><tr><td>10</td><td>Conclusion after rejecting H₀: μ ≤ 50 at α = 0.05</td><td>Sufficient evidence that μ &gt; 50; nothing is proven (B)</td><td>Reading a decision · L#27 wording</td></tr><tr><td>12</td><td>Hₐ for ‘the mean package weight differs from 2 kg’</td><td>Hₐ: μ ≠ 2 (C)</td><td>Developing H₀ and Hₐ · L#27</td></tr><tr><td>14</td><td>Critical values for a two-tailed z test at α = 0.05</td><td>±1.960 (B)</td><td>Two-tailed test · after L#27</td></tr><tr><td>16</td><td>Two-tailed p-value when the tail beyond z = 2.00 is 0.0228</td><td>2 × 0.0228 = 0.0456 (B)</td><td>Two-tailed test · after L#27</td></tr><tr><td>18</td><td>Two-tailed test, ±1.96, statistic −1.70</td><td>Do not reject H₀: −1.70 lies between −1.96 and +1.96 (C)</td><td>Two-tailed test · after L#27</td></tr><tr><td>20</td><td>Reading a two-tailed p-value of 0.12 at α = 0.05</td><td>Not enough evidence that the parameter differs; H₀ is not proven (C)</td><td>Reading a decision · L#27 wording</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The traps in these: Q4 and Q8 (a positive p-value or a positive z is no reason to reject), Q10 and Q20 (rejecting proves nothing with certainty, and a p-value is not the probability that H₀ is true), and Q18 (a negative statistic still has to pass the critical value). All ten are also in the question bank, reworded with new numbers.</p></details><details><summary>Q1 · lower-tail test, p-value approach (one-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">A coffee packer aims for a mean fill of 3.00 lb. 36 cans average 2.94 lb, with σ = 0.12 lb. At α = 0.05, is the mean fill below 3.00 lb? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ ≥ 3; Hₐ: μ &lt; 3. A lower-tail test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 0.12/√36 = 0.02.</li><li>z = (2.94 − 3)/0.02 = <strong>−3.00</strong>.</li><li>p-value = area to the left of −3.00 = <strong>0.0013</strong>. Compare with α = 0.05: 0.0013 ≤ 0.05.</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean fill is below 3.00 lb: the cans are underfilled.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z −3.00, p ≈ 0.0013, reject H₀. The recomputed figures agree.</p></details><details><summary>Q3 · upper-tail test, p-value approach (one-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">40 emergency calls have a mean response time of 13.25 minutes, with σ = 3.2 minutes. At α = 0.05, does the mean response time exceed 12 minutes? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ ≤ 12; Hₐ: μ &gt; 12. A upper-tail test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 3.2/√40 = 0.506.</li><li>z = (13.25 − 12)/0.506 = <strong>2.47</strong> (exactly 2.4705).</li><li>p-value = area to the right of 2.47 = <strong>0.0067</strong>. Compare with α = 0.05: 0.0067 ≤ 0.05.</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean response time exceeds 12 minutes.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z ≈ 2.47, p ≈ 0.0068, reject H₀. The recomputed figures agree.</p></details><details><summary>Q5 · lower-tail test, p-value approach (one-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">64 bottles have a mean fill of 498.5 ml against a 500 ml target, with σ = 8 ml. At α = 0.01, is the mean fill below 500 ml? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ ≥ 500; Hₐ: μ &lt; 500. A lower-tail test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 8/√64 = 1.</li><li>z = (498.5 − 500)/1 = <strong>−1.50</strong>.</li><li>p-value = area to the left of −1.50 = <strong>0.0668</strong>. Compare with α = 0.01: 0.0668 &gt; 0.01.</li><li><strong>Do not reject H₀</strong>: at α = 0.01 there is not sufficient evidence that the mean fill is below 500 ml.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z −1.50, p ≈ 0.0668, do not reject H₀. The recomputed figures agree.</p></details><details><summary>Q7 · lower-tail test, critical-value approach (one-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">36 deliveries take a mean of 3.7 days, with σ = 0.9 day. At α = 0.05, is the mean delivery time below 4 days? Use the critical-value approach.</p><ol><li>Hypotheses: H₀: μ ≥ 4; Hₐ: μ &lt; 4. A lower-tail test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 0.9/√36 = 0.15.</li><li>z = (3.7 − 4)/0.15 = <strong>−2.00</strong>.</li><li>Critical value: z<sub>0.05</sub> = −1.645: reject if z ≤ −1.645. Here z = −2.00 is in the rejection region. (p-value, for comparison: 0.0228.)</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean delivery time is below 4 days.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z −2.00, reject H₀. The recomputed figures agree.</p></details><details><summary>Q9 · upper-tail test, critical-value approach (one-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">49 batteries last a mean of 20.6 hours, with σ = 2.1 hours. At α = 0.05, does mean battery life exceed 20 hours? Use the critical-value approach.</p><ol><li>Hypotheses: H₀: μ ≤ 20; Hₐ: μ &gt; 20. A upper-tail test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 2.1/√49 = 0.3.</li><li>z = (20.6 − 20)/0.3 = <strong>2.00</strong>.</li><li>Critical value: z<sub>0.05</sub> = 1.645: reject if z ≥ 1.645. Here z = 2.00 is in the rejection region. (p-value, for comparison: 0.0228.)</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that mean battery life exceeds 20 hours.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z 2.00, reject H₀. The recomputed figures agree.</p></details><details><summary>Q11 · two-tailed test, p-value approach (two-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">50 golf balls give a mean driving distance of 297.6 yards, with σ = 12 yards. At α = 0.05, does the mean differ from 295 yards? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ = 295; Hₐ: μ ≠ 295. A two-tailed test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 12/√50 = 1.697.</li><li>z = (297.6 − 295)/1.697 = <strong>1.53</strong> (exactly 1.5321).</li><li>p-value = 2 × area beyond |1.53| = 2 × 0.0628 = <strong>0.1255</strong>. Compare with α = 0.05: 0.1255 &gt; 0.05.</li><li><strong>Do not reject H₀</strong>: at α = 0.05 there is not sufficient evidence that the mean distance differs from 295 yards.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z ≈ 1.53, p ≈ 0.1260, do not reject H₀. The recomputed figures agree.</p></details><details><summary>Q13 · two-tailed test, p-value approach (two-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">64 cereal boxes have a mean weight of 496 g, with σ = 16 g. At α = 0.05, does the mean differ from 500 g? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ = 500; Hₐ: μ ≠ 500. A two-tailed test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 16/√64 = 2.</li><li>z = (496 − 500)/2 = <strong>−2.00</strong>.</li><li>p-value = 2 × area beyond |−2.00| = 2 × 0.0228 = <strong>0.0455</strong>. Compare with α = 0.05: 0.0455 ≤ 0.05.</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean weight differs from 500 g.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z −2.00, p ≈ 0.0456, reject H₀. The recomputed figures agree.</p></details><details><summary>Q15 · two-tailed test, p-value approach (two-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">36 lunch bills have a mean of ₹258, with σ = ₹24. At α = 0.01, does the mean bill differ from ₹250? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ = 250; Hₐ: μ ≠ 250. A two-tailed test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 24/√36 = 4.</li><li>z = (258 − 250)/4 = <strong>2.00</strong>.</li><li>p-value = 2 × area beyond |2.00| = 2 × 0.0228 = <strong>0.0455</strong>. Compare with α = 0.01: 0.0455 &gt; 0.01.</li><li><strong>Do not reject H₀</strong>: at α = 0.01 there is not sufficient evidence that the mean bill differs from ₹250.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z 2.00, p ≈ 0.0456, do not reject H₀. The recomputed figures agree.</p></details><details><summary>Q17 · two-tailed test, critical-value approach (two-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">100 components have a mean length of 20.4 cm, with σ = 2 cm. At α = 0.05, does the mean differ from 20 cm? Use the critical-value approach.</p><ol><li>Hypotheses: H₀: μ = 20; Hₐ: μ ≠ 20. A two-tailed test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 2/√100 = 0.2.</li><li>z = (20.4 − 20)/0.2 = <strong>2.00</strong>.</li><li>Critical value: ±z<sub>0.025</sub> = ±1.96: reject if z ≤ −1.96 or z ≥ 1.96. Here z = 2.00 is in the rejection region. (p-value, for comparison: 0.0455.)</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean length differs from 20 cm.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z 2.00, reject H₀. The recomputed figures agree.</p></details><details><summary>Q19 · two-tailed test, critical-value approach (two-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">36 cups have a mean capacity of 347 ml, with σ = 9 ml. At α = 0.05, does the mean differ from 350 ml? Use the critical-value approach.</p><ol><li>Hypotheses: H₀: μ = 350; Hₐ: μ ≠ 350. A two-tailed test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 9/√36 = 1.5.</li><li>z = (347 − 350)/1.5 = <strong>−2.00</strong>.</li><li>Critical value: ±z<sub>0.025</sub> = ±1.96: reject if z ≤ −1.96 or z ≥ 1.96. Here z = −2.00 is in the rejection region. (p-value, for comparison: 0.0455.)</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean capacity differs from 350 ml.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z −2.00, reject H₀. The recomputed figures agree.</p></details><!--viz:sfm-l27s-lower-tail-decisions--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Standard normal curve for a lower-tail z test at alpha 0.05. The rejection region left of minus 1.645 is shaded. The delivery problem's z of minus 2.00 falls inside it, so H0 is rejected; the bottle problem's z of minus 1.50 falls outside it, so H0 is not rejected.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One lower-tail test, two sheet answers</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 270\" role=\"img\" aria-label=\"Standard normal curve for a lower-tail z test at alpha 0.05. The rejection region left of minus 1.645 is shaded. The delivery problem's z of minus 2.00 falls inside it, so H0 is rejected; the bottle problem's z of minus 1.50 falls outside it, so H0 is not rejected.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M30,176 L30,175.7 L33.4,175.6 L36.8,175.5 L40.1,175.4 L43.5,175.2 L46.9,175.1 L50.3,174.9 L53.7,174.7 L57.1,174.4 L60.4,174.1 L63.8,173.8 L67.2,173.4 L70.6,172.9 L74,172.4 L77.3,171.8 L80.7,171.1 L84.1,170.3 L87.5,169.4 L90.9,168.4 L94.3,167.3 L97.6,166 L101,164.6 L104.4,163.1 L107.8,161.4 L111.2,159.5 L114.5,157.5 L117.9,155.3 L121.3,152.9 L124.7,150.3 L128.1,147.6 L128.1,176 Z\" style=\"fill:var(--blue);opacity:.4;stroke:none\"/><path d=\"M26,176 L414,176\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M30,175.7 L33.8,175.6 L37.6,175.5 L41.4,175.3 L45.2,175.2 L49,175 L52.8,174.7 L56.6,174.5 L60.4,174.1 L64.2,173.7 L68,173.3 L71.8,172.7 L75.6,172.1 L79.4,171.4 L83.2,170.5 L87,169.5 L90.8,168.4 L94.6,167.1 L98.4,165.7 L102.2,164.1 L106,162.3 L109.8,160.3 L113.6,158 L117.4,155.6 L121.2,153 L125,150.1 L128.8,147 L132.6,143.6 L136.4,140.1 L140.2,136.3 L144,132.4 L147.8,128.3 L151.6,124 L155.4,119.6 L159.2,115.1 L163,110.6 L166.8,106.1 L170.6,101.6 L174.4,97.1 L178.2,92.8 L182,88.7 L185.8,84.8 L189.6,81.1 L193.4,77.8 L197.2,74.8 L201,72.2 L204.8,70 L208.6,68.3 L212.4,67 L216.2,66.3 L220,66 L223.8,66.3 L227.6,67 L231.4,68.3 L235.2,70 L239,72.2 L242.8,74.8 L246.6,77.8 L250.4,81.1 L254.2,84.8 L258,88.7 L261.8,92.8 L265.6,97.1 L269.4,101.6 L273.2,106.1 L277,110.6 L280.8,115.1 L284.6,119.6 L288.4,124 L292.2,128.3 L296,132.4 L299.8,136.3 L303.6,140.1 L307.4,143.6 L311.2,147 L315,150.1 L318.8,153 L322.6,155.6 L326.4,158 L330.2,160.3 L334,162.3 L337.8,164.1 L341.6,165.7 L345.4,167.1 L349.2,168.4 L353,169.5 L356.8,170.5 L360.6,171.4 L364.4,172.1 L368.2,172.7 L372,173.3 L375.8,173.7 L379.6,174.1 L383.4,174.5 L387.2,174.7 L391,175 L394.8,175.2 L398.6,175.3 L402.4,175.5 L406.2,175.6 L410,175.7\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><path d=\"M128.1,176 L128.1,56\" style=\"stroke:var(--blue);stroke-width:1.5;fill:none;stroke-dasharray:3 3\"/><path d=\"M52.4,176 L52.4,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"52.4\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">−3</text><path d=\"M108.2,176 L108.2,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"108.2\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">−2</text><path d=\"M164.1,176 L164.1,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"164.1\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">−1</text><path d=\"M220,176 L220,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"220\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><path d=\"M275.9,176 L275.9,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"275.9\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">1</text><path d=\"M331.8,176 L331.8,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"331.8\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">2</text><path d=\"M387.6,176 L387.6,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"387.6\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">3</text><text x=\"220\" y=\"214\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">z = (x̄ − μ₀) / (σ/√n)</text><text x=\"135.1\" y=\"30\" text-anchor=\"start\" style=\"fill:var(--blue);font-size:13px;font-weight:700\">critical z = −1.645</text><text x=\"135.1\" y=\"47\" text-anchor=\"start\" style=\"fill:var(--ink-3);font-size:13px\">reject H₀ to its left (α = 0.05)</text><path d=\"M108.2,174 L103.2,165 L113.2,165 Z\" style=\"fill:var(--bad);stroke:none\"/><path d=\"M136.2,174 L131.2,165 L141.2,165 Z\" style=\"fill:var(--good);stroke:none\"/><path d=\"M40,236 L35,227 L45,227 Z\" style=\"fill:var(--bad);stroke:none\"/><text x=\"52\" y=\"236\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px\">Q7: z = −2.00, in the region → reject H₀</text><path d=\"M40,256 L35,247 L45,247 Z\" style=\"fill:var(--good);stroke:none\"/><text x=\"52\" y=\"256\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px\">Q5: z = −1.50, outside it → do not reject</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">A lower-tail test rejects only far enough to the left: −2.00 is past −1.645, −1.50 is not (Q5 was set at α = 0.01, where the cut-off is −2.326).</figcaption></figure><!--/viz:sfm-l27s-lower-tail-decisions-->"
     }
    ]
   }
@@ -661,6 +732,18 @@ HUB.addCourse({
   {
    "name": "Interval estimation with σ unknown (t)",
    "unit": "estimation"
+  },
+  {
+   "name": "Interval estimation for a proportion",
+   "unit": "estimation"
+  },
+  {
+   "name": "Hypothesis testing",
+   "unit": "testing"
+  },
+  {
+   "name": "Tests of a mean, σ known (z test)",
+   "unit": "testing"
   }
  ],
  "traps": [
@@ -1830,6 +1913,146 @@ HUB.addCourse({
    "p": "1.96 × 4,500/500 = 17.64 is only the square root of the answer; n = 17.64² = 311.17, so 312.",
    "f": "square, then round up",
    "lec": 24
+  },
+  {
+   "id": "sfm-t0171",
+   "h": "Round a sample size up even when the decimal is tiny: 1,843.27 becomes 1,844",
+   "p": "L#25's recording gives 1,843 for p* = 0.50, but 1,843 voters would leave a margin of 0.030002, just over the ±0.03 target. Any fraction, however small, means one more unit.",
+   "f": "n always rounds up",
+   "lec": 25
+  },
+  {
+   "id": "sfm-t0172",
+   "h": "A margin of 0.0435 on a proportion is ±4.35 percentage points, not ±4.35% of 0.44",
+   "p": "The margin is in the same units as p̂. 0.44 ± 0.0435 gives 0.3965 to 0.4835. Reading it as 4.35% of 0.44 (about ±0.019) would give an interval less than half as wide.",
+   "f": "E is in p's units",
+   "lec": 25
+  },
+  {
+   "id": "sfm-t0173",
+   "h": "p* = 0.4 and p* = 0.6 give the same sample size",
+   "p": "p*(1 − p*) is symmetric about 0.5: 0.4 × 0.6 = 0.6 × 0.4 = 0.24, so both give 1,770 for ±0.03 at 99%. A guess further from 0.5 in either direction gives a smaller n, never a larger one.",
+   "f": "p and 1 − p swap",
+   "lec": 25
+  },
+  {
+   "id": "sfm-t0174",
+   "h": "Doubling the sample divides the margin of error by √2, it does not halve it",
+   "p": "Problem 2: n = 60 gives ±3.80 and n = 120 gives ±2.68, a ratio of 1.414. Halving the margin needs four times the sample, because the margin shrinks with √n.",
+   "f": "2 × n → E ÷ √2",
+   "lec": 25
+  },
+  {
+   "id": "sfm-t0175",
+   "h": "Excel's T.INV(0.025, df) returns the negative, lower-tail t value",
+   "p": "T.INV gives the value with that area to its left: T.INV(0.025, 12) = −2.179. For the upper cut-off use T.INV(0.975, 12) or T.INV.2T(0.05, 12), both 2.179. The same holds for NORM.S.INV(0.025) = −1.96.",
+   "f": "left area in, sign out",
+   "lec": 25
+  },
+  {
+   "id": "sfm-t0176",
+   "h": "The 95% interval is for the mean mileage, not a range that 95% of cars fail within",
+   "p": "Metropolitan Research's interval is 66,264 to 80,416 miles, yet only 13 of the 50 sampled cars failed inside it. Individual failures are spread by s ≈ 24,900 miles; the interval's width comes from s/√n ≈ 3,521.",
+   "f": "interval ≠ range of cars",
+   "lec": 26
+  },
+  {
+   "id": "sfm-t0177",
+   "h": "A bigger sample narrows the interval for the mean; it does not bring more individual cars inside it",
+   "p": "Going from 50 to 96 records cuts the margin from about 7,100 to about 5,000 miles, but the spread of failure mileage stays near 25,000, so even more cars would sit outside the narrower band. The early failures are a fact about the distribution.",
+   "f": "n shrinks E, not s",
+   "lec": 26
+  },
+  {
+   "id": "sfm-t0178",
+   "h": "Excel's ‘Confidence Level(95.0%)’ is the t-based margin of error, not the interval and not z",
+   "p": "For the 50 repair records it reads 7,076 = 2.010 × 3,521 (t, 49 df). The interval is 73,340 ± 7,076. Using z = 1.96 gives 6,902, slightly too narrow when σ is estimated.",
+   "f": "Excel row = t margin",
+   "lec": 26
+  },
+  {
+   "id": "sfm-t0179",
+   "h": "Repair-shop records describe cars that failed, not every car the maker built",
+   "p": "The 50 records come from a transmission repair firm, so the interval estimates the mean mileage at failure among cars that failed. It cannot say what share of all cars fail, or how long a typical car's transmission lasts.",
+   "f": "sample = failed cars only",
+   "lec": 26
+  },
+  {
+   "id": "sfm-t0180",
+   "h": "The equality always goes in H₀, never in Hₐ",
+   "p": "H₀ is the starting assumption, so it holds =, ≤ or ≥; Hₐ holds the strict <, > or ≠. A target of ‘12 minutes or less’ is written H₀: μ ≤ 12, and the challenge Hₐ: μ > 12.",
+   "f": "equals lives in H₀",
+   "lec": 27
+  },
+  {
+   "id": "sfm-t0181",
+   "h": "Emergency response: H₀ is μ ≤ 12 (goal met) and Hₐ is μ > 12; the LMS summary prints them reversed",
+   "p": "The service aims for 12 minutes or less, and the status quo is that the goal is being met. The recording puts it in H₀. The summary's H₀: μ ≥ 12 would make ‘the goal is met’ the conclusion to be proved, the opposite of the lecture.",
+   "f": "the target is the null",
+   "lec": 27
+  },
+  {
+   "id": "sfm-t0182",
+   "h": "‘Do not reject H₀’ does not mean H₀ has been shown to be true",
+   "p": "Failing to reject means the sample did not give enough evidence against H₀. Saying ‘accept H₀’ would expose you to a Type II error, whose probability is not controlled; a court says ‘not enough evidence to convict’, not ‘innocent’.",
+   "f": "not rejected ≠ proved",
+   "lec": 27
+  },
+  {
+   "id": "sfm-t0183",
+   "h": "α is the probability of a Type I error if H₀ is true, not the probability that H₀ is true",
+   "p": "Testing at α = 0.05 means that when H₀ holds, the procedure wrongly rejects it 5% of the time. It does not make a rejection ‘95% certain’ that H₀ is false, as the recording phrases it once.",
+   "f": "α = P(reject | H₀ true)",
+   "lec": 27
+  },
+  {
+   "id": "sfm-t0184",
+   "h": "Type I is the false positive and Type II the false negative, not the other way round",
+   "p": "With H₀ = ‘not pregnant’, telling an obese man he is pregnant rejects a true H₀: Type I, false positive. Telling a pregnant woman she is not keeps a false H₀: Type II, false negative.",
+   "f": "I = false alarm",
+   "lec": 27
+  },
+  {
+   "id": "sfm-t0185",
+   "h": "The test's tail points the same way as Hₐ, not H₀",
+   "p": "H₀: μ ≥ μ₀ against Hₐ: μ < μ₀ is a lower-tail test: only a sample mean well below μ₀ counts against H₀. Reading the ‘≥’ in H₀ and choosing the upper tail is the classic slip.",
+   "f": "tail follows Hₐ",
+   "lec": 27
+  },
+  {
+   "id": "sfm-t0186",
+   "h": "Reject H₀ when the p-value is at most α, not when it is larger",
+   "p": "Sheet Q4: p = 0.08 against α = 0.05 means do not reject. A small p-value says the sample would be unusual if H₀ were true; a p-value above α says it would not be.",
+   "f": "p small → reject",
+   "lec": 27
+  },
+  {
+   "id": "sfm-t0187",
+   "h": "A two-tailed p-value is twice the one-tail area",
+   "p": "Sheet Q16: the area beyond z = 2.00 is 0.0228, so the two-tailed p-value is 0.0456. Using 0.0228 alone would make a two-tailed test reject too easily.",
+   "f": "≠ → double it",
+   "lec": 27
+  },
+  {
+   "id": "sfm-t0188",
+   "h": "At α = 0.05 the two-tailed cut-offs are ±1.96, not ±1.645",
+   "p": "Splitting α leaves 0.025 in each tail (z = 1.96); ±1.645 leaves 0.05 in each tail, a 10% test. One-tailed tests at 5% use −1.645 or +1.645 alone.",
+   "f": "two tails → 1.96",
+   "lec": 27
+  },
+  {
+   "id": "sfm-t0189",
+   "h": "The same z can be rejected at α = 0.05 and not at α = 0.01",
+   "p": "Sheet Q13 and Q15 both give |z| = 2.00 and p = 0.0456: reject at 5%, do not reject at 1%. State α before the test; the decision depends on it.",
+   "f": "decision depends on α",
+   "lec": 27
+  },
+  {
+   "id": "sfm-t0190",
+   "h": "A p-value of 0.12 is not a 12% chance that H₀ is true",
+   "p": "The p-value is computed assuming H₀ is true: it is the chance of data this extreme under H₀. Sheet Q20: p = 0.12 > 0.05 means not enough evidence that μ differs, nothing more.",
+   "f": "p is about the data",
+   "lec": 27
   }
  ],
  "defs": [
@@ -2959,6 +3182,150 @@ HUB.addCourse({
    "term": "Sources of a planning value for σ",
    "html": "<b>Planning value of σ</b>, when σ is unknown before sampling: a pilot study's s, a previous study of a similar population, or informed judgement about the likely spread.",
    "lec": 24
+  },
+  {
+   "id": "sfm-d0143",
+   "unit": "estimation",
+   "topic": "Interval for a proportion: the PSI poll",
+   "term": "Interval estimate of a proportion",
+   "html": "<b>Interval estimate of p</b> = p̂ ± z<sub>α/2</sub> √[p̂(1 − p̂)/n]. Always z, never t. Check np ≥ 5 and n(1 − p) ≥ 5 first.",
+   "lec": 25
+  },
+  {
+   "id": "sfm-d0144",
+   "unit": "estimation",
+   "topic": "Sample size for a proportion",
+   "term": "Planning value p*",
+   "html": "<b>Planning value p*</b>: a stand-in for p used to size a sample before any data exist. L#25's sources: a previous sample, a pilot sample, judgement, or 0.50 if nothing else.",
+   "lec": 25
+  },
+  {
+   "id": "sfm-d0145",
+   "unit": "estimation",
+   "topic": "Sample size for a proportion",
+   "term": "Sample size for a proportion",
+   "html": "<b>Sample size for p</b>: n = z<sub>α/2</sub>² p*(1 − p*)/E², rounded up. PSI at 99% and E = 0.03: 1,817 with p* = 0.44, 1,844 with 0.50.",
+   "lec": 25
+  },
+  {
+   "id": "sfm-d0146",
+   "unit": "estimation",
+   "topic": "L#25 practice problems: z and t in Excel",
+   "term": "T.INV and T.INV.2T (Excel)",
+   "html": "<b>T.INV(p, df)</b> returns the t value with area p to its left (so T.INV(0.025, 12) = −2.179). <b>T.INV.2T(α, df)</b> takes the total two-tail area and returns the positive cut-off (T.INV.2T(0.10, 25) = 1.708).",
+   "lec": 25
+  },
+  {
+   "id": "sfm-d0147",
+   "unit": "estimation",
+   "topic": "The Metropolitan Research sheet in Excel",
+   "term": "Analysis ToolPak (Excel)",
+   "html": "<b>Analysis ToolPak</b>: an Excel add-in (File → Options → Add-ins) that adds Data → Data Analysis, including the Descriptive Statistics tool used in L#23 and L#26.",
+   "lec": 26
+  },
+  {
+   "id": "sfm-d0148",
+   "unit": "estimation",
+   "topic": "The Metropolitan Research sheet in Excel",
+   "term": "Confidence Level(95.0%) row",
+   "html": "<b>Confidence Level(95.0%)</b> in Excel's Descriptive Statistics output = t<sub>0.025</sub> × s/√n with n − 1 df: the <b>margin of error</b>, to be added to and subtracted from the mean. Metropolitan Research: 7,076 miles.",
+   "lec": 26
+  },
+  {
+   "id": "sfm-d0149",
+   "unit": "estimation",
+   "topic": "Case: Metropolitan Research — transmission failures",
+   "term": "Pilot sample as a planning value",
+   "html": "<b>Pilot sample</b>: a first, smaller sample whose s serves as the planning value of σ when sizing the main study. In L#26 the 50 repair records (s ≈ 24,900) set n = 96 for ±5,000 miles.",
+   "lec": 26
+  },
+  {
+   "id": "sfm-d0150",
+   "unit": "testing",
+   "topic": "What a hypothesis test does",
+   "term": "Hypothesis test",
+   "html": "<b>Hypothesis test</b>: a procedure that uses sample data to decide whether a statement about the value of a population parameter should be rejected or not rejected.",
+   "lec": 27
+  },
+  {
+   "id": "sfm-d0151",
+   "unit": "testing",
+   "topic": "What a hypothesis test does",
+   "term": "Null hypothesis H₀",
+   "html": "<b>Null hypothesis (H₀)</b>: a tentative assumption about a population parameter, usually the status quo or claim. It always holds the equality (=, ≤ or ≥).",
+   "lec": 27
+  },
+  {
+   "id": "sfm-d0152",
+   "unit": "testing",
+   "topic": "What a hypothesis test does",
+   "term": "Alternative hypothesis Hₐ",
+   "html": "<b>Alternative hypothesis (Hₐ)</b>: the opposite of H₀, with &lt;, &gt; or ≠. Usually what the researcher hopes to show; concluded only if H₀ is rejected.",
+   "lec": 27
+  },
+  {
+   "id": "sfm-d0153",
+   "unit": "testing",
+   "topic": "Type I and Type II errors",
+   "term": "Type I error",
+   "html": "<b>Type I error</b>: rejecting H₀ when it is true. A false positive. Its probability, when H₀ is true, is α.",
+   "lec": 27
+  },
+  {
+   "id": "sfm-d0154",
+   "unit": "testing",
+   "topic": "Type I and Type II errors",
+   "term": "Type II error",
+   "html": "<b>Type II error</b>: not rejecting H₀ when it is false. A false negative. Hard to control, so we say ‘do not reject H₀’, never ‘accept H₀’.",
+   "lec": 27
+  },
+  {
+   "id": "sfm-d0155",
+   "unit": "testing",
+   "topic": "Type I and Type II errors",
+   "term": "Level of significance α",
+   "html": "<b>Level of significance (α)</b>: the probability of a Type I error when H₀ is true, fixed before the test (0.05, 0.01). A test that controls only this is a <b>significance test</b>.",
+   "lec": 27
+  },
+  {
+   "id": "sfm-d0156",
+   "unit": "testing",
+   "topic": "Formulating H₀ and Hₐ",
+   "term": "One-tailed and two-tailed tests",
+   "html": "<b>Lower-tail</b> test: Hₐ: μ &lt; μ₀. <b>Upper-tail</b>: Hₐ: μ &gt; μ₀. <b>Two-tailed</b>: Hₐ: μ ≠ μ₀. The tail follows the direction of Hₐ.",
+   "lec": 27
+  },
+  {
+   "id": "sfm-d0157",
+   "unit": "testing",
+   "topic": "Practice questions from the lecturer: Chapter 9",
+   "term": "p-value",
+   "html": "<b>p-value</b>: the probability, if H₀ is true, of a sample result at least as extreme as the one observed, in the direction(s) of Hₐ. Reject H₀ if p-value ≤ α.",
+   "lec": 27
+  },
+  {
+   "id": "sfm-d0158",
+   "unit": "testing",
+   "topic": "Practice questions from the lecturer: Chapter 9",
+   "term": "Critical value",
+   "html": "<b>Critical value</b>: the cut-off for the test statistic beyond which H₀ is rejected. For z at α = 0.05: −1.645 (lower tail), +1.645 (upper), ±1.96 (two-tailed).",
+   "lec": 27
+  },
+  {
+   "id": "sfm-d0159",
+   "unit": "testing",
+   "topic": "Practice questions from the lecturer: Chapter 9",
+   "term": "Test statistic z for μ (σ known)",
+   "html": "<b>Test statistic</b>: z = (x̄ − μ₀)/(σ/√n), the number of standard errors between the sample mean and the value in H₀.",
+   "lec": 27
+  },
+  {
+   "id": "sfm-d0160",
+   "unit": "testing",
+   "topic": "Practice questions from the lecturer: Chapter 9",
+   "term": "Rejection region",
+   "html": "<b>Rejection region</b>: the values of the test statistic that lead to rejecting H₀, lying in the tail(s) that Hₐ points to, with total area α.",
+   "lec": 27
   }
  ],
  "questions": [
@@ -11972,6 +12339,1162 @@ HUB.addCourse({
    "w": "To read t you need df = n − 1, but n is the unknown. In practice a planning value is put into the z formula, as the lecture's own Discount Sounds example does. t is larger than z, not smaller.",
    "lec": 24,
    "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0541",
+   "topic": "Interval estimation for a proportion",
+   "q": "A café surveys 80 regular customers and finds that 3 would switch to oat milk. Before building a z interval for the proportion of all regulars who would switch, what does the L#25 check show?",
+   "c": [
+    "The check fails: 3 successes is below 5, so the normal approximation should not be used",
+    "The check passes, because n = 80 is above 30",
+    "The check passes, because 77 non-switchers is well above 5",
+    "No check is needed for proportions, only for means"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Both np̂ = 3 and n(1 − p̂) = 77 must be at least 5. The failures pass but the successes do not, so the normal curve is a poor model here. n ≥ 30 is the guide for x̄, not for p̂.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0542",
+   "topic": "Interval estimation for a proportion",
+   "q": "In PSI's poll, 220 of 500 registered voters favour candidate C. What is the 95% confidence interval for the proportion of all registered voters who favour C?",
+   "c": [
+    "0.4178 to 0.4622",
+    "0.4035 to 0.4765",
+    "0.3965 to 0.4835",
+    "0.3828 to 0.4972"
+   ],
+   "a": [
+    2
+   ],
+   "w": "p̂ = 0.44, standard error √(0.44 × 0.56/500) = 0.0222, margin 1.96 × 0.0222 = 0.0435, so 0.3965 to 0.4835. 0.4035 to 0.4765 uses z = 1.645 (90%); 0.3828 to 0.4972 uses 2.576 (99%); 0.4178 to 0.4622 is ±1 standard error with no z at all.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0543",
+   "topic": "Interval estimation for a proportion",
+   "q": "Using PSI's sample of 500 with p̂ = 0.44, what is the margin of error at 99% confidence?",
+   "c": [
+    "0.0222",
+    "0.0365",
+    "0.0435",
+    "0.0572"
+   ],
+   "a": [
+    3
+   ],
+   "w": "2.576 × √(0.44 × 0.56/500) = 2.576 × 0.0222 = 0.0572. 0.0435 is the 95% margin and 0.0365 the 90% margin; 0.0222 is the standard error before multiplying by z.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0544",
+   "topic": "Interval estimation for a proportion",
+   "q": "PSI's 95% interval for candidate C is 0.3965 to 0.4835 in a race with only two candidates. Which conclusion is justified?",
+   "c": [
+    "C will receive exactly 44% of the vote",
+    "On this evidence C's support among all registered voters is below half, so C is behind",
+    "95% of the voters PSI phoned favour C",
+    "C's true support cannot be below 39.65%"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The whole interval lies below 0.50, so at 95% confidence C has less than half the support. 44% is only the point estimate; the interval is about all registered voters, not the 500 phoned; and there is a 5% risk that the method misses, so values outside the range are not impossible.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0545",
+   "topic": "Interval estimation for a proportion",
+   "q": "A poll reports p̂ = 0.44 with a margin of error of 0.0435. What does the margin mean?",
+   "c": [
+    "±4.35 percentage points around 44%",
+    "±4.35% of 0.44, about ±0.019",
+    "The poll's answers are 4.35% wrong",
+    "4.35% of the voters were not counted"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The margin is in the units of p̂: 0.44 ± 0.0435, that is 39.65% to 48.35%. Taking 4.35% of 0.44 shrinks the margin to about ±0.019 and the interval to less than half its real width.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0546",
+   "topic": "Interval estimation for a proportion",
+   "q": "PSI wants ±0.03 at 99% confidence and uses its earlier p̂ = 0.44 as the planning value. How many voters must it sample?",
+   "c": [
+    "1,052",
+    "1,816",
+    "1,844",
+    "1,817"
+   ],
+   "a": [
+    3
+   ],
+   "w": "n = 2.576² × 0.44 × 0.56/0.03² = 1,816.7, rounded up to 1,817. 1,816 rounds down and misses the target; 1,844 uses p* = 0.50; 1,052 uses z = 1.96 (95%) instead of 2.576.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0547",
+   "topic": "Interval estimation for a proportion",
+   "q": "With no information about p, PSI uses p* = 0.50 for ±0.03 at 99% confidence. The formula gives 1,843.27. What sample size should it use?",
+   "c": [
+    "1,843, because 0.27 is less than half",
+    "1,844",
+    "1,817",
+    "1,068"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A sample size is always rounded up: with 1,843 the margin would be 0.030002, just above 0.03. (The L#25 recording says 1,843; rounding up gives 1,844.) 1,817 uses p* = 0.44, and 1,068 is the 95% answer.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0548",
+   "topic": "Interval estimation for a proportion",
+   "q": "Which of these does L#25 list as a source for the planning value p* before a survey?",
+   "c": [
+    "The sample proportion from a preliminary (pilot) sample",
+    "The p̂ of the survey that is being planned",
+    "The confidence coefficient 1 − α",
+    "The margin of error E"
+   ],
+   "a": [
+    0
+   ],
+   "w": "L#25's sources are a previous similar sample, a pilot sample, judgement, and 0.50 as the fallback. The planned survey's own p̂ does not exist yet: that is why a planning value is needed at all.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0549",
+   "topic": "Interval estimation for a proportion",
+   "q": "One planner sizes a survey with p* = 0.3 and another with p* = 0.7, using the same E and confidence. How do their sample sizes compare?",
+   "c": [
+    "p* = 0.7 needs the larger sample, because it is closer to 1",
+    "p* = 0.3 needs the larger sample, because it is further from 1",
+    "They are equal, because 0.3 × 0.7 = 0.7 × 0.3",
+    "They cannot be compared without knowing z"
+   ],
+   "a": [
+    2
+   ],
+   "w": "n depends on p*(1 − p*), which is the same product, 0.21, for both. L#25's Excel demo showed the symmetry: moving p* from 0.5 to 0.6 gives the same n as moving it to 0.4.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0550",
+   "topic": "Interval estimation for a proportion",
+   "q": "A bank thinks about 20% of its app users have tried a UPI credit line. It wants the proportion within ±0.05 at 95% confidence. What sample size does it need?",
+   "c": [
+    "16",
+    "245",
+    "385",
+    "246"
+   ],
+   "a": [
+    3
+   ],
+   "w": "n = 1.96² × 0.2 × 0.8/0.05² = 245.86, rounded up to 246. 245 rounds down; 385 is the answer with p* = 0.50; 16 comes from forgetting to square (1.96 × 0.4/0.05 = 15.7).",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0551",
+   "topic": "Interval estimation",
+   "q": "A simple random sample of 40 items has x̄ = 25, and the population standard deviation is 5. What is the 95% margin of error?",
+   "c": [
+    "0.79",
+    "1.30",
+    "1.55",
+    "3.10"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Standard error 5/√40 = 0.791; margin 1.96 × 0.791 = 1.55, giving 23.45 to 26.55. 0.79 is the standard error alone, 1.30 uses 1.645 (90%), and 3.10 doubles the margin.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0552",
+   "topic": "Interval estimation",
+   "q": "With σ = 15 and x̄ = 80, the 95% margin of error is 3.80 for n = 60. What is it for n = 120?",
+   "c": [
+    "1.90",
+    "2.68",
+    "3.80",
+    "5.37"
+   ],
+   "a": [
+    1
+   ],
+   "w": "1.96 × 15/√120 = 2.68: doubling n divides the margin by √2, not by 2. 1.90 assumes it halves; 5.37 multiplies by √2 instead of dividing.",
+   "lec": 25,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0553",
+   "topic": "Interval estimation",
+   "q": "In Excel, =CONFIDENCE.NORM(alpha, standard_dev, size) returns the margin of error for an interval with σ known. For a 95% interval, what goes in alpha?",
+   "c": [
+    "0.025",
+    "0.05",
+    "0.95",
+    "0.975"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The function takes α itself, 0.05, and splits it between the tails internally; CONFIDENCE.NORM(0.05, 15, 60) = 3.795. Entering 0.025 gives a 97.5% margin. L#25 recommends it only to check a hand-worked answer.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0554",
+   "topic": "Interval estimation with σ unknown (t)",
+   "q": "In Excel, what does =T.INV(0.025, 12) return?",
+   "c": [
+    "2.179",
+    "−2.179",
+    "1.960",
+    "2.560"
+   ],
+   "a": [
+    1
+   ],
+   "w": "T.INV gives the t value with the stated area to its left, so 0.025 returns the lower cut-off, −2.179. For the upper one use T.INV(0.975, 12) = 2.179; 2.560 is what T.INV.2T(0.025, 12) returns, and 1.960 is z.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0555",
+   "topic": "Interval estimation with σ unknown (t)",
+   "q": "With 25 degrees of freedom, between which two t values does the central 90% of the area lie?",
+   "c": [
+    "±1.316",
+    "±1.645",
+    "±1.708",
+    "±2.060"
+   ],
+   "a": [
+    2
+   ],
+   "w": "90% in the middle leaves 0.05 in each tail: T.INV(0.05, 25) = −1.708, and +1.708 by symmetry (or T.INV.2T(0.10, 25)). ±2.060 is the 95% pair, ±1.645 is z, and ±1.316 leaves 0.10 in each tail (80%).",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0556",
+   "topic": "Interval estimation with σ unknown (t)",
+   "q": "A sample of 54 gives x̄ = 22.5 and s = 4.4. What is the 90% confidence interval for μ?",
+   "c": [
+    "21.30 to 23.70",
+    "21.52 to 23.48",
+    "22.36 to 22.64",
+    "21.50 to 23.50"
+   ],
+   "a": [
+    3
+   ],
+   "w": "σ is unknown, so t with 53 df: 1.674 × 4.4/√54 = 1.00, giving 21.50 to 23.50. 21.52 to 23.48 uses z = 1.645; 21.30 to 23.70 is the 95% interval; 22.36 to 22.64 divides s by n instead of √n.",
+   "lec": 25,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0557",
+   "topic": "Interval estimation for a proportion",
+   "q": "Why does the sample-size formula for a proportion use a planning value p* instead of p̂?",
+   "c": [
+    "p̂ is only known after the sample is taken, but n must be chosen before",
+    "p̂ is biased, so it can never be used in a formula",
+    "p* is always more accurate than p̂",
+    "The formula needs a t value, and p* supplies the degrees of freedom"
+   ],
+   "a": [
+    0
+   ],
+   "w": "L#25: p̂ is a ‘post’ quantity, available only after sampling, while the sample size has to be fixed first. p̂ is an unbiased estimator and is exactly what the interval itself uses once the data are in.",
+   "lec": 25,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0558",
+   "topic": "Interval estimation",
+   "q": "In L#26's Metropolitan Research case, what was recorded for each of the 50 sampled vehicles?",
+   "c": [
+    "The owner's satisfaction score for the transmission",
+    "The miles driven when the transmission failed",
+    "The cost of the transmission repair",
+    "Whether the transmission had failed or not"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The firm used repair-shop records of actual transmission failures and noted the mileage at the moment of failure. The satisfaction survey only raised the complaint; it did not supply these data.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0559",
+   "topic": "Location",
+   "q": "Excel's Descriptive Statistics output for the 50 transmission failures shows no mode. What does that mean?",
+   "c": [
+    "The data are too skewed for a mode to exist",
+    "The mean and median are equal",
+    "No two vehicles failed at exactly the same mileage",
+    "The data must be categorical"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A mode needs a value that occurs at least twice. Here every mileage is different, so Excel shows #N/A; there is no single mileage at which cars tend to break down.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0560",
+   "topic": "Location",
+   "q": "The median of the 50 failure mileages is 72,705 miles. How many of the sampled vehicles failed below it?",
+   "c": [
+    "25",
+    "19",
+    "13",
+    "50 × 0.95 = 47.5"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The median splits an even-sized sample in half: 25 below and 25 above. 19 is the number below the interval's lower limit, a different cut-off.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0561",
+   "topic": "Spread & shape",
+   "q": "For the transmission data, the mean is 73,340, the median 72,705 and Excel's skewness +0.26. How is the distribution best described?",
+   "c": [
+    "Strongly skewed to the left",
+    "Roughly symmetric, with a slight right skew",
+    "Strongly skewed to the right",
+    "Bimodal"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A skewness close to zero and a mean only a little above the median point to a near-symmetric shape with a slight right tail. Strong right skew would pull the mean well above the median.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0562",
+   "topic": "Interval estimation",
+   "q": "The 50 failure mileages have s = 24,899 miles. What is the estimated standard error of the mean?",
+   "c": [
+    "24,899",
+    "7,076",
+    "3,521",
+    "498"
+   ],
+   "a": [
+    2
+   ],
+   "w": "s/√n = 24,899/√50 = 3,521. 7,076 is the margin of error (t × standard error), and 498 divides by n instead of √n.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0563",
+   "topic": "Interval estimation",
+   "q": "With x̄ = 73,340, s = 24,899 and n = 50, what is the 95% confidence interval for the mean miles to transmission failure?",
+   "c": [
+    "66,439 to 80,242",
+    "48,441 to 98,239",
+    "69,819 to 76,861",
+    "66,264 to 80,416"
+   ],
+   "a": [
+    3
+   ],
+   "w": "σ is unknown, so t with 49 df: 2.010 × 3,521 = 7,076, and 73,340 ± 7,076 gives 66,264 to 80,416. 66,439 to 80,242 uses z = 1.96; 69,819 to 76,861 is ±1 standard error; 48,441 to 98,239 is ±1 standard deviation, a range for cars, not for the mean.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0564",
+   "topic": "Interval estimation",
+   "q": "Excel's Descriptive Statistics reports ‘Confidence Level(95.0%)’ = 7,076 for the transmission data. What is this number?",
+   "c": [
+    "The margin of error, computed with t at 49 degrees of freedom",
+    "The lower limit of the 95% interval",
+    "The margin of error, computed with z = 1.96",
+    "The standard error of the mean"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The row is t(0.025, 49) × s/√n = 2.010 × 3,521 = 7,076, to be added to and subtracted from the mean. With z it would be 6,902; the standard error is 3,521.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0565",
+   "topic": "Interval estimation",
+   "q": "Which statement correctly interprets the interval 66,264 to 80,416 miles?",
+   "c": [
+    "95% of these cars' transmissions fail between 66,264 and 80,416 miles",
+    "We are 95% confident that the mean mileage at failure, over all such failed transmissions, lies between 66,264 and 80,416",
+    "95% of samples of 50 will have a mean of exactly 73,340",
+    "Any car that passes 80,416 miles will not have a transmission failure"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A confidence interval is about the population mean. Only 13 of the 50 sampled cars actually failed inside it, so reading it as a range for individual cars is badly wrong.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0566",
+   "topic": "Interval estimation",
+   "q": "Nineteen of the 50 sampled cars failed below 66,264 miles, the interval's lower limit. What should a manager take from this?",
+   "c": [
+    "The interval was calculated wrongly",
+    "The early failures are outliers and can be dropped",
+    "Many individual cars fail far earlier than the mean suggests, so the complaints about early failure have substance",
+    "The true mean must be below 66,264"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Individual mileages spread far beyond an interval for the mean, so cars outside it are expected; the large number of early ones, including seven before 40,000 miles, is the real finding. It does not mean the interval or the mean is wrong.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0567",
+   "topic": "Interval estimation",
+   "q": "A manager proposes collecting 96 repair records instead of 50 ‘so that more cars fall inside the confidence interval’. What would actually happen?",
+   "c": [
+    "More cars would fall inside, because a larger sample has less spread",
+    "The interval would get wider, so more cars would fall inside it",
+    "Nothing would change, because the confidence level is still 95%",
+    "The interval for the mean would get narrower, so if anything fewer cars would fall inside it"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A larger n shrinks s/√n and so the margin, from about 7,100 to about 5,000 miles. The spread of individual failures, near 25,000 miles, does not shrink with n. A bigger sample buys a sharper estimate of the mean, not tidier data.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0568",
+   "topic": "Interval estimation",
+   "q": "Using s = 24,899 as the planning value, how many repair records give a 95% margin of error of 5,000 miles?",
+   "c": [
+    "96",
+    "95",
+    "50",
+    "10"
+   ],
+   "a": [
+    0
+   ],
+   "w": "n = (1.96 × 24,899/5,000)² = 95.26, rounded up to 96 (the lecturer suggests about 100 to be safe). 95 rounds down and misses the target; 10 forgets to square (1.96 × 24,899/5,000 = 9.76).",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0569",
+   "topic": "Interval estimation",
+   "q": "Keeping 95% confidence and s = 24,899, how many records would a margin of 2,500 miles need?",
+   "c": [
+    "192",
+    "381",
+    "382",
+    "96"
+   ],
+   "a": [
+    2
+   ],
+   "w": "(1.96 × 24,899/2,500)² = 381.05, rounded up to 382. Halving the margin multiplies n by four (4 × 95.26), not by two; 381 rounds down.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0570",
+   "topic": "Interval estimation",
+   "q": "With s = 24,899, how many records give a margin of 5,000 miles at 99% confidence?",
+   "c": [
+    "96",
+    "135",
+    "164",
+    "165"
+   ],
+   "a": [
+    3
+   ],
+   "w": "(2.576 × 24,899/5,000)² = 164.55, rounded up to 165. 96 is the 95% answer; 135 uses z = 2.326 (98%); 164 rounds down.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0571",
+   "topic": "Interval estimation",
+   "q": "In L#26's list of further information to collect, which is a supply-side factor?",
+   "c": [
+    "A defect in a particular production batch",
+    "The owner's driving technique",
+    "Frequent off-road use",
+    "A rainy climate"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Supply-side factors come from the maker: batches, materials, suppliers, plants and machines. Driving technique, road use and climate are demand-side: they come from the owners and the conditions of use.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0572",
+   "topic": "Interval estimation",
+   "q": "The 50 records came from a transmission repair firm. What population does the case's interval estimate describe?",
+   "c": [
+    "All cars the manufacturer has built",
+    "Cars of this kind whose transmission has failed",
+    "All cars repaired in the Detroit area for any fault",
+    "The share of cars whose transmissions fail early"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Every sampled car had a failed transmission, so the interval estimates the mean mileage at failure among such cars. It cannot say what fraction of all cars fail, or how long a typical transmission lasts.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0573",
+   "topic": "Interval estimation",
+   "q": "In L#26, where is the Analysis ToolPak switched on if Data Analysis is missing from Excel's Data tab?",
+   "c": [
+    "Insert → Charts",
+    "Home → Conditional Formatting",
+    "File → Options → Add-ins",
+    "Formulas → Insert Function"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The ToolPak is an add-in: File → Options → Add-ins, then Manage Excel Add-ins → Go and tick it. Conditional Formatting was used separately, to check for duplicate values.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0574",
+   "topic": "Hypothesis testing",
+   "q": "According to L#27, what is hypothesis testing used for?",
+   "c": [
+    "To prove that a statement about a sample is true",
+    "To decide whether a statement about the value of a population parameter should be rejected or not",
+    "To calculate a point estimate of a population mean",
+    "To choose the sample size for a survey"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A test judges a statement about a population parameter, and its only verdicts are reject or do not reject. It never proves a statement true, and it is about the population, not the sample.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0575",
+   "topic": "Hypothesis testing",
+   "q": "What is the null hypothesis H₀?",
+   "c": [
+    "The conclusion the researcher hopes to prove",
+    "The value of the sample mean",
+    "The probability of making an error",
+    "A tentative assumption about a population parameter"
+   ],
+   "a": [
+    3
+   ],
+   "w": "H₀ is the starting, tentative assumption (often the status quo or a claim) that the test tries to find evidence against. The researcher's hoped-for conclusion usually goes in Hₐ.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0576",
+   "topic": "Hypothesis testing",
+   "q": "Which sign can appear in a null hypothesis about μ?",
+   "c": [
+    "≥",
+    ">",
+    "≠",
+    "<"
+   ],
+   "a": [
+    0
+   ],
+   "w": "H₀ always contains the equality part: =, ≤ or ≥. The strict signs <, > and ≠ belong to Hₐ.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0577",
+   "topic": "Hypothesis testing",
+   "q": "A new incentive scheme is introduced in the hope of raising mean daily output above the current 50 units per worker. Which pair of hypotheses fits?",
+   "c": [
+    "H₀: μ ≥ 50, Hₐ: μ < 50",
+    "H₀: μ = 50, Hₐ: μ ≠ 50",
+    "H₀: μ ≤ 50, Hₐ: μ > 50",
+    "H₀: μ > 50, Hₐ: μ ≤ 50"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The research claim, an increase above 50, goes in Hₐ: μ > 50, and H₀ is its opposite with the equality, μ ≤ 50. Putting > in H₀ breaks the rule that H₀ holds the equality.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0578",
+   "topic": "Hypothesis testing",
+   "q": "A 500 g pack of rice is labelled ‘contains at least 500 g’. A consumer group suspects the packs are underfilled. Which hypotheses should it test?",
+   "c": [
+    "H₀: μ ≥ 500, Hₐ: μ < 500",
+    "H₀: μ ≤ 500, Hₐ: μ > 500",
+    "H₀: μ < 500, Hₐ: μ ≥ 500",
+    "H₀: μ = 500, Hₐ: μ > 500"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The label's claim is the assumption to challenge, so it goes in H₀: μ ≥ 500; the suspicion of underfilling is Hₐ: μ < 500. This is L#27's ‘challenge an assumption’ route, as with the soft-drink label.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0579",
+   "topic": "Hypothesis testing",
+   "q": "A city's emergency service aims for a mean response time of 12 minutes or less, and its director wants to check whether the goal is being met. Which hypotheses did L#27 set up?",
+   "c": [
+    "H₀: μ ≥ 12, Hₐ: μ < 12",
+    "H₀: μ = 12, Hₐ: μ ≠ 12",
+    "H₀: μ < 12, Hₐ: μ ≥ 12",
+    "H₀: μ ≤ 12, Hₐ: μ > 12"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The status quo is that the goal is met, μ ≤ 12, so that is H₀, and Hₐ: μ > 12 says the goal is missed. The LMS summary prints H₀: μ ≥ 12, which reverses the lecture.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0580",
+   "topic": "Hypothesis testing",
+   "q": "An examination cell aims to issue results within an average of 15 working days or less. Which hypotheses test whether it is meeting this target?",
+   "c": [
+    "H₀: μ ≥ 15, Hₐ: μ < 15",
+    "H₀: μ ≤ 15, Hₐ: μ > 15",
+    "H₀: μ = 15, Hₐ: μ < 15",
+    "H₀: μ > 15, Hₐ: μ ≤ 15"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The target, ‘15 days or less’, is the status quo and goes in H₀ with the equality; Hₐ: μ > 15 means the target is being missed.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0581",
+   "topic": "Hypothesis testing",
+   "q": "A machine is set to cut rods with a mean length of 120 cm. Quality control wants to detect any drift in the mean, whether up or down. Which alternative hypothesis fits?",
+   "c": [
+    "Hₐ: μ > 120",
+    "Hₐ: μ < 120",
+    "Hₐ: μ ≠ 120",
+    "Hₐ: μ = 120"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A change in either direction matters, so Hₐ: μ ≠ 120 with H₀: μ = 120, a two-tailed test. μ = 120 cannot be an alternative, since the equality belongs in H₀.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0582",
+   "topic": "Hypothesis testing",
+   "q": "For H₀: μ ≥ μ₀ against Hₐ: μ < μ₀, where does the evidence against H₀ lie?",
+   "c": [
+    "In the lower tail",
+    "In the upper tail",
+    "In both tails",
+    "Around the centre of the distribution"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The tail follows Hₐ: only a sample mean well below μ₀ counts against H₀, so this is a lower-tail test. Choosing the upper tail because H₀ contains ‘≥’ is the usual slip.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0583",
+   "topic": "Hypothesis testing",
+   "q": "What is a Type I error?",
+   "c": [
+    "Not rejecting H₀ when it is false",
+    "Rejecting H₀ when it is true",
+    "Rejecting H₀ when it is false",
+    "Using the wrong sample size"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A Type I error rejects a true H₀, a false positive. Not rejecting a false H₀ is a Type II error, and rejecting a false H₀ is a correct decision.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0584",
+   "topic": "Hypothesis testing",
+   "q": "The emergency service tests H₀: μ ≤ 12 against Hₐ: μ > 12 and does not reject H₀, but the true mean response time is 13.5 minutes. What has happened?",
+   "c": [
+    "A Type I error",
+    "A correct decision",
+    "A Type II error",
+    "No error, because H₀ was not rejected"
+   ],
+   "a": [
+    2
+   ],
+   "w": "H₀ is false (13.5 > 12) and it was not rejected: a Type II error, a false negative. A Type I error needs a true H₀ that is rejected.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0585",
+   "topic": "Hypothesis testing",
+   "q": "In L#27's memory picture, a doctor tells an obese man that he is pregnant (H₀: not pregnant). Which error is this?",
+   "c": [
+    "Type II error, false negative",
+    "Type I error, false negative",
+    "Type II error, false positive",
+    "Type I error, false positive"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The test says ‘pregnant’ (H₀ rejected) when H₀ is true: a Type I error, a false positive. Telling a pregnant woman she is not would be the Type II error, a false negative.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0586",
+   "topic": "Hypothesis testing",
+   "q": "What does the level of significance α represent?",
+   "c": [
+    "The probability that H₀ is true",
+    "The probability of a Type II error",
+    "The probability of a Type I error when H₀ is true",
+    "The confidence level of the sample mean"
+   ],
+   "a": [
+    2
+   ],
+   "w": "α is chosen in advance as the chance of rejecting H₀ when it is in fact true. It is not the probability that H₀ is true; that is not something a test computes.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0587",
+   "topic": "Hypothesis testing",
+   "q": "Why do statisticians say ‘do not reject H₀’ instead of ‘accept H₀’?",
+   "c": [
+    "Because H₀ can never be true",
+    "Because the probability of a Type II error is not controlled, so not rejecting H₀ is not proof that it is true",
+    "Because accepting H₀ would raise α",
+    "Because the sample mean always differs from μ₀"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A significance test fixes only the Type I error probability. Without control of the Type II error, the honest statement is that the evidence was not sufficient to reject H₀, just as a court finds evidence insufficient rather than declaring innocence.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0588",
+   "topic": "Hypothesis testing",
+   "q": "A test of H₀: μ ≥ 70 against Hₐ: μ < 70 fails to reject H₀. Which conclusion is correct?",
+   "c": [
+    "The mean score has been shown to be at least 70",
+    "The mean score is exactly 70",
+    "The mean score is below 70",
+    "There is not sufficient evidence that the mean score is below 70"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Not rejecting H₀ only says the sample did not provide enough evidence for Hₐ. It does not establish H₀, and it certainly does not support Hₐ.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0589",
+   "topic": "Hypothesis testing",
+   "q": "In a criminal trial, take H₀ as ‘the accused did not commit the crime’. Which outcome is a Type I error?",
+   "c": [
+    "Convicting an accused person who is in fact innocent",
+    "Acquitting an accused person who is in fact guilty",
+    "Convicting an accused person who is in fact guilty",
+    "Acquitting an accused person who is in fact innocent"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Convicting rejects H₀; if the person is innocent, H₀ was true, so this is a Type I error. Acquitting a guilty person keeps a false H₀: a Type II error.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0590",
+   "topic": "Hypothesis testing",
+   "q": "A firm develops a new blood-pressure drug hoping to show it lowers BP more than the existing one. Why does that claim go in Hₐ?",
+   "c": [
+    "Because Hₐ always holds the equality",
+    "Because the conclusion the researcher hopes to support is reached only if the data reject H₀",
+    "Because H₀ must always say that something new is better",
+    "Because the drug's effect is known before the test"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The research hypothesis is placed in Hₐ so that it is concluded only when the sample gives enough evidence to reject its opposite, H₀. The equality sits in H₀, not Hₐ.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0591",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "Tea packets should hold at least 250 g. A sample of 49 averages 247.9 g, with σ = 7 g. For H₀: μ ≥ 250 against Hₐ: μ < 250, what is the p-value?",
+   "c": [
+    "0.0179",
+    "0.0357",
+    "0.9821",
+    "0.3821"
+   ],
+   "a": [
+    0
+   ],
+   "w": "z = (247.9 − 250)/(7/√49) = −2.10, and the area to its left is 0.0179. 0.0357 doubles it (two-tailed); 0.9821 is the area to the right; 0.3821 uses σ instead of σ/√n (z = −0.30).",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0592",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "A call centre tests H₀: μ ≤ 5 against Hₐ: μ > 5 minutes for mean hold time. 64 calls average 5.3 minutes, with σ = 1.2. What is the decision at α = 0.01?",
+   "c": [
+    "Reject H₀, because z = 2.00 is positive",
+    "Reject H₀, because p = 0.0228 is below 0.05",
+    "Do not reject H₀, because p = 0.0228 is above 0.01",
+    "Do not reject H₀, because z is above 1.645"
+   ],
+   "a": [
+    2
+   ],
+   "w": "z = 0.3/(1.2/8) = 2.00 and the upper-tail p-value is 0.0228. That would be rejected at 0.05, but the test is at 0.01, and 0.0228 > 0.01. (Critical value 2.326: 2.00 falls short.)",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0593",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "What is the critical value for an upper-tailed z test at α = 0.01?",
+   "c": [
+    "1.645",
+    "2.326",
+    "2.576",
+    "−2.326"
+   ],
+   "a": [
+    1
+   ],
+   "w": "All of α = 0.01 sits in the upper tail, so z = 2.326 (area 0.99 to its left). 2.576 is the two-tailed cut-off at 0.01, 1.645 the one-tailed cut-off at 0.05, and −2.326 belongs to a lower-tail test.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0594",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "What critical values does a two-tailed z test at α = 0.01 use?",
+   "c": [
+    "±2.326",
+    "±1.960",
+    "±1.645",
+    "±2.576"
+   ],
+   "a": [
+    3
+   ],
+   "w": "α = 0.01 split over two tails leaves 0.005 in each, so ±2.576. ±2.326 puts 0.01 in each tail (a 2% test).",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0595",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "A two-tailed test gives z = −1.25. What is the p-value?",
+   "c": [
+    "0.1056",
+    "0.2113",
+    "0.8944",
+    "0.0528"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The area below −1.25 is 0.1056; a two-tailed p-value doubles it to 0.2113. 0.1056 is the one-tailed value and 0.8944 the area above −1.25.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0596",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "A one-tailed test at α = 0.05 gives a p-value of 0.03. What is the decision?",
+   "c": [
+    "Reject H₀, because 0.03 ≤ 0.05",
+    "Do not reject H₀, because 0.03 is less than 0.05",
+    "Accept H₀, because the p-value is small",
+    "No decision is possible without the critical value"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Reject whenever the p-value is at most α. The p-value and critical-value approaches always agree, so the critical value is not needed.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0597",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "For a lower-tail z test, z = −1.80. What is the decision at α = 0.05 and at α = 0.01?",
+   "c": [
+    "Reject at both levels",
+    "Reject at neither level",
+    "Do not reject at 0.05, reject at 0.01",
+    "Reject at 0.05, do not reject at 0.01"
+   ],
+   "a": [
+    3
+   ],
+   "w": "−1.80 is beyond −1.645 (reject at 5%) but not beyond −2.326 (do not reject at 1%); the p-value is 0.0359. A smaller α makes rejection harder, never easier.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0598",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "A two-tailed test at α = 0.05 gives z = 1.80. A colleague says the result is significant because 1.80 > 1.645. What is wrong?",
+   "c": [
+    "Nothing: 1.80 > 1.645, so H₀ is rejected",
+    "The two-tailed cut-off is 1.96, so 1.80 does not reject H₀",
+    "A positive z can never reject H₀ in a two-tailed test",
+    "The test should use 2.326 because z is positive"
+   ],
+   "a": [
+    1
+   ],
+   "w": "With Hₐ: μ ≠ μ₀, α splits into 0.025 per tail and the cut-off is ±1.96; the p-value is 0.0719 > 0.05. 1.645 is the one-tailed cut-off. Either sign can reject in a two-tailed test.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0599",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "A restaurant's mean bill is claimed to be ₹1,200. 36 bills average ₹1,245, with σ = ₹150. What is the test statistic?",
+   "c": [
+    "0.30",
+    "1.80",
+    "1.645",
+    "10.80"
+   ],
+   "a": [
+    1
+   ],
+   "w": "z = (1,245 − 1,200)/(150/√36) = 45/25 = 1.80. 0.30 divides by σ instead of σ/√n; 10.80 divides σ by n instead of √n; 1.645 is a critical value, not a statistic.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0600",
+   "topic": "Hypothesis testing",
+   "q": "Which statement defines a p-value?",
+   "c": [
+    "The probability that H₀ is true",
+    "The probability of a Type II error",
+    "The probability, assuming H₀ is true, of a sample result at least as extreme as the one observed",
+    "The level of significance chosen before the test"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A p-value is computed under H₀ and measures how unusual the sample is if H₀ holds. It is not the chance that H₀ is true, and it is not α, which is fixed beforehand.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0601",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "An analyst runs the same test twice, once with the p-value approach and once with the critical-value approach. What will she find?",
+   "c": [
+    "The two approaches always give the same decision",
+    "The p-value approach rejects more often",
+    "The critical-value approach rejects more often",
+    "They agree only for two-tailed tests"
+   ],
+   "a": [
+    0
+   ],
+   "w": "p ≤ α happens exactly when the statistic falls beyond the critical value, because both compare the same tail area with α. They are two views of one rule.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0602",
+   "topic": "Hypothesis testing",
+   "q": "A supermarket hopes a new self-checkout layout brings mean waiting time below 4 minutes. Which alternative hypothesis fits?",
+   "c": [
+    "Hₐ: μ > 4",
+    "Hₐ: μ ≠ 4",
+    "Hₐ: μ = 4",
+    "Hₐ: μ < 4"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The hoped-for result is a reduction, so Hₐ: μ < 4 with H₀: μ ≥ 4, a lower-tail test. ‘≠’ would also count an increase as success.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0603",
+   "topic": "Hypothesis testing",
+   "q": "H₀: μ ≥ 30 is rejected in favour of Hₐ: μ < 30 at α = 0.05. Which conclusion is appropriate?",
+   "c": [
+    "There is a 5% probability that H₀ is true",
+    "It is proven that μ < 30",
+    "There is sufficient evidence that μ is below 30",
+    "The sample mean must be below 28.5"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Rejection means the sample gives enough evidence for Hₐ at the 5% level. α is the risk of rejecting a true H₀, not the chance H₀ is true, and nothing is proven with certainty.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0604",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "An upper-tail test gives z = 1.20. What is the p-value?",
+   "c": [
+    "0.8849",
+    "0.1151",
+    "0.2301",
+    "0.0575"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The area to the right of 1.20 is 1 − 0.8849 = 0.1151. 0.8849 is the area to the left, and 0.2301 doubles it as for a two-tailed test.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0605",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "A sample of 100 has mean 49.2, with σ = 5. For H₀: μ = 50 against Hₐ: μ ≠ 50 at α = 0.05, what is the decision?",
+   "c": [
+    "Do not reject H₀: z = −1.60, p = 0.1096",
+    "Reject H₀: z = −1.60 is negative",
+    "Reject H₀: z = −16.0",
+    "Do not reject H₀: z = −0.16"
+   ],
+   "a": [
+    0
+   ],
+   "w": "z = (49.2 − 50)/(5/√100) = −1.60, and the two-tailed p-value is 2 × 0.0548 = 0.1096 > 0.05. −0.16 divides by σ alone; −16.0 divides σ by n instead of √n.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0606",
+   "topic": "Hypothesis testing",
+   "q": "Lowering α from 0.05 to 0.01 does what to a test?",
+   "c": [
+    "Makes it easier to reject H₀",
+    "Has no effect on the decision",
+    "Changes which hypothesis holds the equality",
+    "Makes rejection harder, lowering the risk of a Type I error"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A smaller α moves the cut-off further out (1.645 to 2.326 one-tailed), so stronger evidence is needed. That cuts the Type I risk, at the price of a higher chance of missing a real effect (Type II).",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0607",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "n = 25, x̄ = 52, μ₀ = 50 and σ = 5. What is the z statistic?",
+   "c": [
+    "0.40",
+    "10.00",
+    "2.00",
+    "1.96"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The standard error is 5/√25 = 1, so z = (52 − 50)/1 = 2.00. Dividing by σ alone gives 0.40, the classic slip; 10.00 divides σ by n instead of √n; 1.96 is a critical value.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0608",
+   "topic": "Hypothesis testing",
+   "q": "When does a hypothesis test about μ call for a two-tailed test?",
+   "c": [
+    "When Hₐ says the mean differs from μ₀, in either direction",
+    "When σ is unknown",
+    "When the sample is smaller than 30",
+    "When α is 0.05"
+   ],
+   "a": [
+    0
+   ],
+   "w": "‘Differs’ gives Hₐ: μ ≠ μ₀, and evidence in either tail counts. The number of tails depends on Hₐ, not on σ, n or α.",
+   "lec": 27,
+   "lv": "recall"
   }
  ],
  "briefs": {
@@ -12051,6 +13574,11 @@ HUB.addCourse({
   "sbe14-ch08",
   "lec-23",
   "lec-24",
-  "lec-24s"
+  "lec-24s",
+  "lec-25",
+  "lec-25s",
+  "lec-26",
+  "lec-27",
+  "lec-27s"
  ]
 });

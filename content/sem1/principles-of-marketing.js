@@ -593,6 +593,11 @@ HUB.addCourse({
      "t": "Portfolio growth and product pruning",
      "src": "L#30 · L#31",
      "h": "<p>Big firms run big portfolios. HUL describes more than 50 brands across 16 FMCG categories, over 65 billion units made a year, and reach through 9 million retail outlets plus digital platforms (the 2024 figures he showed). Technology, expectations, behaviour, competitors and the wider environment keep changing, so firms keep launching. What happens to the old products?</p><h4>The graph exercise</h4><p>Keep adding products over time and plot net revenue (after costs). His answer has three phases:</p><ol><li><strong>Growth:</strong> each new product reaches more buyers, so net revenue rises.</li><li><strong>Plateau:</strong> older products stop selling but still cost money: storage and warehousing, retailers’ charges for the shelf space they occupy, advertising. Space they fill can’t take newer products. These costs offset the new products’ sales, and revenue stagnates for a long period.</li><li><strong>Decline:</strong> stock and capital stay blocked, profits dry up, there is no fresh money for R&amp;D or marketing, and net revenue falls.</li></ol><p>“You are sabotaging your own business.” Apple, once the 18 arrived, no longer sells the 10, 11 or 15 on its own platform. L’Oréal changes its shampoo range, with new colours, formulations and celebrities, every six months to a year; launches from a few years ago are nowhere to be seen. They rotate money out of old stock into new products.</p><div class=\"def\"><b>Product pruning</b>: keeping the products that sell and removing those that don’t sell or cost more than they return, so the money saved funds new products and their marketing. It keeps net revenue from stagnating.</div><div class=\"def\"><b>From the lecture (L#30):</b> adding products is good only up to a point; beyond it, more products mean lower and then falling revenue. Product pruning and product strategy are the next class.</div><!--viz:pom-portfolio-revenue-curve--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Line chart of net revenue as products are added over time. Without pruning it rises in a growth phase, levels off in a plateau and then falls in a decline phase. A dashed line with pruning starts during the plateau and stays level, rising slightly.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Adding products without pruning</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 222\" role=\"img\" aria-label=\"Net revenue against products added over time: it rises, levels off, then falls without pruning; a dashed line with pruning stays level and rises slightly.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M50,190 L420,190\" fill=\"none\" style=\"stroke:var(--rule-2);stroke-width:1.5\"/><path d=\"M412,186 L422,190 L412,194 Z\" style=\"fill:var(--ink-3)\"/><path d=\"M50,190 L50,32\" fill=\"none\" style=\"stroke:var(--rule-2);stroke-width:1.5\"/><path d=\"M46,40 L50,30 L54,40 Z\" style=\"fill:var(--ink-3)\"/><path d=\"M169,40 L169,190\" fill=\"none\" style=\"stroke:var(--rule);stroke-width:1.5;stroke-dasharray:3 4\"/><path d=\"M288,40 L288,190\" fill=\"none\" style=\"stroke:var(--rule);stroke-width:1.5;stroke-dasharray:3 4\"/><path d=\"M248.0,62.6 L257.0,61.7 L266.0,61.0 L275.0,60.3 L284.0,59.7 L293.0,59.1 L302.0,58.5 L311.0,58.0 L320.0,57.5 L329.0,57.0 L338.0,56.5 L347.0,56.1 L356.0,55.6 L365.0,55.2 L374.0,54.7 L383.0,54.3 L392.0,53.9 L401.0,53.5 L410.0,53.1\" fill=\"none\" style=\"stroke:var(--good);stroke-width:2;stroke-dasharray:6 4\"/><path d=\"M50.0,190.0 L59.0,168.7 L68.0,151.0 L77.0,136.1 L86.0,123.6 L95.0,113.2 L104.0,104.5 L113.0,97.2 L122.0,91.2 L131.0,86.1 L140.0,81.8 L149.0,78.2 L158.0,75.3 L167.0,72.8 L176.0,70.7 L185.0,68.9 L194.0,67.5 L203.0,66.2 L212.0,65.2 L221.0,64.4 L230.0,63.7 L239.0,63.1 L248.0,62.6 L257.0,62.1 L266.0,61.8 L275.0,61.7 L284.0,62.0 L293.0,62.8 L302.0,64.0 L311.0,65.6 L320.0,67.6 L329.0,70.1 L338.0,72.9 L347.0,76.2 L356.0,79.8 L365.0,83.8 L374.0,88.3 L383.0,93.1 L392.0,98.4 L401.0,104.0 L410.0,110.0\" fill=\"none\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"58\" y=\"24\" text-anchor=\"start\" style=\"fill:var(--ink-3);font-size:13px\">net revenue</text><text x=\"420\" y=\"212\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">products added over time</text><text x=\"110\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-weight:700\">growth</text><text x=\"228\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-weight:700\">plateau</text><text x=\"352\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--bad);font-size:13px;font-weight:700\">decline</text><text x=\"410\" y=\"42\" text-anchor=\"end\" style=\"fill:var(--good);font-size:13px;font-weight:700\">with pruning</text><text x=\"408\" y=\"134\" text-anchor=\"end\" style=\"fill:var(--ink);font-size:13px\">no pruning</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Unsold old stock eats the gains from new products; pruning is the way off the plateau.</figcaption></figure><!--/viz:pom-portfolio-revenue-curve--><h4>Live session (L#31): pruning in practice</h4><ul><li><strong>HUL update:</strong> the slide’s 65 billion units a year is the 2024 figure; he said it is now close to 90 billion.</li><li><strong>Why Apple drops old models:</strong> they compete with the new ones. If an iPhone 14 were still on sale, why would anyone pay ₹70,000–80,000 for a 17? Cutting the 17’s price instead would hurt the firm and its brand image. Apple itself doesn’t cut prices before dropping a model; retailers do, because the stock they hold is a cost.</li><li><strong>Involvement sets the pace.</strong> Low-involvement FMCG products are used up in a month or two and can be phased out quickly. High-involvement tech, used for years (NVIDIA’s GPUs, for instance), is phased out more slowly, but it is still phased out.</li><li><strong>Variants on rotation:</strong> Dove body wash runs many variants, and some don’t do well. L’Oréal keeps launching shampoos with a new promise each time (hyaluronic acid, essential oils, mystic oil), then retires them as “new and improved”, playing on perceptual product categories (Lecture 24).</li><li><strong>Brand managers:</strong> FMCG firms (Dove, L’Oréal, Plum, Himalaya) give each product line a brand manager who acts as its <b>mini-CEO</b>, under a group CEO. Consulting firms and banks don’t have brand managers.</li></ul><div class=\"def\"><b>From the lecture (L#31):</b> he wants width, depth and length to be very clear before product strategy, because the terms are used interchangeably there. Digital product strategy comes back as an elective in a later semester.</div>"
+    },
+    {
+     "t": "Textbook: Products, Services, and Brands: Building Customer Value",
+     "src": "Kotler & Armstrong 17e ch8",
+     "h": "<p>A product is anything offered to a market that might satisfy a want or need: goods, services, experiences, events, persons, places, organisations, ideas, or mixtures of these. The book plans products on three levels (core customer value, actual product, augmented product), where the lecture uses five and classify products by how consumers buy them (convenience, shopping, specialty, unsought) or by industrial use. The chapter covers decisions on individual products (quality, features, design, branding, packaging, labels, support services), on product lines (length, filling, stretching) and on the product mix (width, length, depth, consistency). It then treats services, with their four characteristics, the service profit chain, and internal and interactive marketing. Finally, it covers branding: brand equity, positioning brands on attributes, benefits or values, name selection, sponsorship options, and the four brand development strategies. For a manager, the brand and the customer relationships behind it often outlast every physical asset.</p><!--viz:pom-k-levels-three-vs-five--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two columns matched row by row. Textbook core customer value matches the lecture's core benefit; the textbook's actual product matches the lecture's basic plus expected product; both have an augmented product, defined as services around the product in the book and as going beyond expectations in the lecture; the lecture's potential product has no textbook match.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The textbook's three product levels against the lecture's five</div><div style=\"display:grid;grid-template-columns:1fr auto 1fr;gap:4px 6px;font-size:14px;min-width:0\"><div style=\"padding:4px 8px;color:var(--ink-3);font-size:12.5px;text-align:center\">Textbook: 3 levels</div><div></div><div style=\"padding:4px 8px;color:var(--ink-3);font-size:12.5px;text-align:center\">Lecture 29: 5 levels · use these</div><div style=\"padding:8px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Core customer value</b><br><span style=\"color:var(--ink-2);font-size:13px\">what the buyer is really buying</span></div><div style=\"align-self:center;color:var(--ink-3);text-align:center\">≈</div><div style=\"padding:8px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Core benefit</b><br><span style=\"color:var(--ink-2);font-size:13px\">the main functionality</span></div><div style=\"padding:8px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Actual product</b><br><span style=\"color:var(--ink-2);font-size:13px\">features, design, quality, brand name, packaging</span></div><div style=\"align-self:center;color:var(--ink-3);text-align:center\">≈</div><div style=\"padding:8px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Basic</b> + <b>expected product</b><br><span style=\"color:var(--ink-2);font-size:13px\">the tangible form, and the standard buyers count on</span></div><div style=\"padding:8px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Augmented product</b><br><span style=\"color:var(--ink-2);font-size:13px\">services around it: warranty, delivery, installation</span></div><div style=\"align-self:center;color:var(--ink-3);text-align:center\">≈</div><div style=\"padding:8px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Augmented product</b><br><span style=\"color:var(--ink-2);font-size:13px\">whatever goes beyond expectations</span></div><div style=\"padding:8px 10px;border:1px dashed var(--rule-2);border-radius:4px;color:var(--ink-3)\">no match</div><div></div><div style=\"padding:8px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Potential product</b><br><span style=\"color:var(--ink-2);font-size:13px\">the futuristic version</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Answer with the lecture's five: the book's actual product spans two of them, and the book has no potential level.</figcaption></figure><!--/viz:pom-k-levels-three-vs-five--><!--viz:pom-k-consumer-product-classes--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two questions. First: does the buyer know about it and think of buying it? If not, it is an unsought product, such as term life insurance. If yes, second: how much effort and comparison goes into buying it? Little, bought often: convenience (biscuits, toothpaste). Compares price, quality and style: shopping (a refrigerator, a sofa). Already set on one brand and makes a special effort: specialty (a luxury watch).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Sorting a consumer product into its class</div><div style=\"font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2)\"><b>1.</b> Does the buyer know about it and think of buying it?</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:4px 0 4px 14px\"><span style=\"color:var(--ink-3);font-size:13px\">no →</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>Unsought</b> <span style=\"color:var(--ink-2);font-size:13px\">· term life insurance · needs heavy promotion and personal selling</span></div></div><div style=\"margin:0 0 4px 14px;color:var(--ink-3);font-size:13px\">yes ↓</div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2)\"><b>2.</b> How much effort and comparison goes into buying it?</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:4px 0 4px 14px\"><span style=\"color:var(--ink-3);font-size:13px\">little, bought often →</span><div style=\"padding:8px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Convenience</b> <span style=\"color:var(--ink-2);font-size:13px\">· biscuits, toothpaste</span></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:4px 0 4px 14px\"><span style=\"color:var(--ink-3);font-size:13px\">compares price, quality, style →</span><div style=\"padding:8px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Shopping</b> <span style=\"color:var(--ink-2);font-size:13px\">· a refrigerator, a sofa</span></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:4px 0 4px 14px\"><span style=\"color:var(--ink-3);font-size:13px\">already set on one brand, makes a special effort →</span><div style=\"padding:8px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Specialty</b> <span style=\"color:var(--ink-2);font-size:13px\">· one maker's handmade pen, a luxury watch</span></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Shopping and specialty both take effort; only the shopping buyer is comparing brands.</figcaption></figure><!--/viz:pom-k-consumer-product-classes--><!--viz:pom-k-service-characteristics--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of the four service characteristics. Intangibility: can't be tried before buying, so firms give tangible quality signals. Inseparability: made and used at once, so firms train the people who deliver it. Variability: quality depends on who serves and when, so firms hire, train and standardise. Perishability: unused capacity can't be stored, so firms manage demand, for example with off-peak fares.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Four service characteristics and what firms do about them</div><div class=\"scroller\"><table><thead><tr><th>Characteristic</th><th>The problem</th><th>A typical response</th></tr></thead><tbody><tr><td><b>Intangibility</b></td><td>Can’t be seen, tried or tested before buying</td><td>Give tangible quality signals: a calm, clean hospital reception, uniformed staff, published outcomes</td></tr><tr><td><b>Inseparability</b></td><td>Made and used at the same moment; the provider is part of it</td><td>Train the people who deliver it and manage the customer’s part in the encounter</td></tr><tr><td><b>Variability</b></td><td>Quality shifts with who serves, and when, where and how</td><td>Careful hiring, training and standard processes, as a salon chain needs</td></tr><tr><td><b>Perishability</b></td><td>Unused capacity can’t be stored and sold later</td><td style=\"background:var(--blue-soft)\">Manage demand and supply: off-peak fares for the 6 a.m. flight’s empty seats</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each characteristic names a problem; the marketing task is the column on the right.</figcaption></figure><!--/viz:pom-k-service-characteristics--><!--viz:pom-k-brand-development--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two-by-two grid of brand name (existing or new) against product category (existing or new). Existing name, existing category: line extension (a new Maggi flavour). Existing name, new category: brand extension (Dettol handwash). New name, existing category: multibrands (HUL's Lux and Lifebuoy). New name, new category: new brand (Titan's Tanishq).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Four brand development strategies</div><div style=\"display:grid;grid-template-columns:auto 1fr 1fr;gap:4px;font-size:14px;min-width:0\"><div></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center\">Existing category</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center\">New category</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;writing-mode:vertical-rl;transform:rotate(180deg)\">Existing brand name</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--blue-soft)\"><b>Line extension</b><br><span style=\"color:var(--ink-2);font-size:13px\">a new masala flavour of Maggi noodles</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--blue-soft)\"><b>Brand extension</b><br><span style=\"color:var(--ink-2);font-size:13px\">Dettol from antiseptic liquid into handwash and soap</span></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;writing-mode:vertical-rl;transform:rotate(180deg)\">New brand name</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Multibrands</b><br><span style=\"color:var(--ink-2);font-size:13px\">several of one firm’s brands in one category, like HUL’s Lux and Lifebuoy soaps</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>New brand</b><br><span style=\"color:var(--ink-2);font-size:13px\">Titan entering jewellery as Tanishq</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Read the row for the name and the column for the category; the top row is where line and brand extensions get mixed up.</figcaption></figure><!--/viz:pom-k-brand-development--><p><strong>What counts as a product</strong> — A product is anything offered to a market that might satisfy a want or need, whether for attention, acquisition, use or consumption. That includes physical goods, services, events, persons, places, organisations and ideas. Offers sit on a continuum from pure tangible goods (salt) to pure services (a doctor's exam), and many firms now go further by staging customer experiences.</p><p><strong>Three levels of product</strong> — Core customer value answers what the buyer is really buying: the problem-solving benefit. The actual product turns that into something concrete, with features, design, quality level, brand name and packaging. The augmented product adds services and benefits around it, such as warranty, delivery and credit, installation, after-sale service and product support. Lecture 29's customer value hierarchy uses five levels instead; the mapping is in the book-vs-lecture notes below.<br><em>e.g.</em> Wall paint: core = a home that feels new; actual = the branded tin, shade range and finish; augmented = free colour consultation and a painting service with a warranty.</p><p><strong>Consumer product classes</strong> — Convenience products are bought often, quickly and with little comparison. Shopping products are compared carefully on quality, price and style. Specialty products have unique features or a brand identity for which buyers make a special effort without much comparison. Unsought products are unknown, or known but not normally considered. Each class implies a different price, distribution and promotion approach.<br><em>e.g.</em> Biscuits (convenience), a refrigerator (shopping), a luxury watch (specialty), term life insurance (unsought).</p><p><strong>Industrial products</strong> — Whether a product is industrial depends on its purpose: further processing or use in running a business. The three groups are materials and parts (raw materials, manufactured materials and components), capital items (installations and accessory equipment), and supplies and services. Supplies are the convenience goods of business buying.</p><p><strong>Product quality: level and consistency</strong> — Quality is the set of characteristics that bear on a product's ability to satisfy stated or implied needs. Performance quality is how well the product does its job, and firms choose a level that fits the target and the competition. Conformance quality is freedom from defects and consistency in delivering the promised level. A budget product can match a luxury one on conformance quality.</p><p><strong>Features, style and design</strong> — Features differentiate, and the right ones are those customers value highly relative to their cost. Style is appearance only; design goes deeper and improves both how the product works and how it looks. Good design starts with observing how customers use the product.</p><p><strong>Packaging, labels and support services</strong> — Packaging once just protected the product; now it attracts buyers, communicates positioning and can become part of brand identity. Labels identify, describe and promote the product, and they must meet legal requirements. Support services such as maintenance and helplines augment the product and build lasting relationships.</p><p><strong>Product line decisions</strong> — A product line is a group of closely related products. Line length is right when adding or dropping items would not raise profit. Line filling adds items within the current range, which risks cannibalisation and confusion. Line stretching extends beyond the range: downward to plug a gap or reach growth segments, upward for prestige and margin, or both ways.</p><p><strong>Product mix dimensions</strong> — The product mix (portfolio) is every line and item a seller offers. Width is the number of lines, length is the total number of items across lines, depth is the number of versions of each product, and consistency is how closely the lines are related in use, production or distribution. A firm can grow by widening, lengthening or deepening the mix, or it can prune weak lines. The lecture counts the mix differently (L#30–31) and drops consistency; see the book-vs-lecture notes below.<br><span style=\"font-family:var(--mono)\">Book: width = number of lines · length = items carried across the lines · depth = versions of each product</span></p><p><strong>Four characteristics of services</strong> — Intangibility: services can't be seen or tried before purchase, so firms supply tangible quality signals. Inseparability: production and consumption happen together and the provider (and often the customer) is part of the service. Variability: quality depends on who delivers it and when, where and how. Perishability: unused capacity cannot be stored, so firms manage demand and supply.</p><p><strong>Service profit chain and the three types of services marketing</strong> — Internal service quality leads to satisfied, productive employees, which leads to greater service value, then satisfied and loyal customers, then profit and growth. Services therefore need internal marketing (orienting and motivating staff, done first), interactive marketing (skill in the buyer–seller encounter) and external marketing (the usual four Ps).</p><p><strong>Managing service differentiation, quality and productivity</strong> — Services escape price competition by differentiating the offer, the delivery (people, physical environment, process) or the image. Service quality is hard to define, so customer retention is the best measure, and good service recovery can create more loyalty than flawless service. Productivity gains must not take the service out of the service.</p><p><strong>Brand equity and brand value</strong> — Brand equity is the differential effect that brand-name knowledge has on how customers react to the product and its marketing. It is positive if people respond better than to an unbranded version and negative if worse. Brand value is the brand's total financial worth. Behind both sits customer equity, the value of the customer relationships the brand creates.</p><p><strong>Brand positioning and brand names</strong> — Brands can be positioned on attributes (weakest, easily copied), benefits, or beliefs and values (strongest, most emotional). A good brand name suggests benefits, is easy to say and remember, is distinctive, extendable, translatable and legally protectable. A name that becomes the generic word for its category can lose its legal protection.</p><p><strong>Brand sponsorship and development</strong> — Sponsorship options are a national (manufacturer's) brand, a store (private) brand, a licensed name or character, or co-branding of two firms' established brands. Development options come from a two-by-two grid of existing or new brand name against existing or new category: line extension, brand extension, multibrands, and new brands.<br><em>e.g.</em> Existing name + existing category = line extension; existing name + new category = brand extension; new name + existing category = multibrand; new name + new category = new brand.</p><div class=\"card\"><strong>Case: GoPro</strong> <em>(Chapter opener: GoPro — Be a HEro)</em><p>GoPro's small, rugged, wearable cameras are only part of what it sells. Customers want to capture, edit, share and be recognised for their action moments, so GoPro added editing software, an app, a content channel and ads made from user videos. The company treats itself as an enabler of shared experiences, not just a camera maker.</p><p><em>Lesson:</em> The core benefit versus the tangible product, and building the higher levels around the customer's whole journey.</p><p><em>Think:</em> Lay out GoPro's five product levels as Lecture 29 would, from core benefit to potential product. Which level is hardest for a rival to copy?</p></div><div class=\"card\"><strong>Case: HSBC internal marketing</strong> <em>(Real Marketing 8.2: HSBC — Taking Care of Those Who Take Care of the Customer)</em><p>HSBC treats employee satisfaction as the base of customer satisfaction. It offers self-directed learning through its own business school, career development planned with line managers, international assignments and flexible, customisable benefits. The aim is motivated staff who deliver consistent service in an intangible, competitive business.</p><p><em>Lesson:</em> Internal marketing as the first link in the service profit chain.</p><p><em>Think:</em> Trace HSBC's practices through each link of the service profit chain to customer loyalty and profit.</p></div><div class=\"card\"><strong>Case: Airbnb</strong> <em>(Company Case: Airbnb — Making Hospitality Authentic)</em><p>Where hotel chains standardise rooms, Airbnb connects travellers with hosts who rent out their own spaces and promises authentic, local experiences. Ratings, verification, host insurance and superhost badges reduce the risk of staying with strangers. Hosts are treated as primary customers, and the brand is built around the idea of belonging anywhere.</p><p><em>Lesson:</em> Managing service intangibility and variability; differentiating offer, delivery and image.</p><p><em>Think:</em> Take each of the four service characteristics and name one Airbnb practice that deals with it.</p></div><details><summary>Worked problem: Counting a product mix the lecture's way</summary><p>A Jaipur home-goods firm has three product lines. Bedding: bedsheets in 3 colours and pillow covers in 2 sizes. Kitchen: one pressure cooker in 3 sizes. Bath: towels in 4 colours. Count its product mix as Lectures 30–31 do, then note what the textbook's definitions would give.</p><ol><li>Width of the company = number of product lines = 3. Both methods agree here.</li><li>Width inside the bedding line (lecture only) = its categories: bedsheets and pillow covers = 2.</li><li>Depth = variants of each product: bedsheets 3, pillow covers 2, cooker 3, towels 4. The bedding line's depth is 3 + 2 = 5.</li><li>Length = every variant in the company = 5 + 3 + 4 = 12. Calling this company-wide 12 the ‘depth’ is the slip Lecture 31 corrected.</li><li>Textbook view: length counts the items carried in the lines (bedsheets, pillow covers, cooker, towels = 4), depth stays per product (towels 4), and it adds consistency: three home-goods lines sold through the same shops are fairly consistent.</li></ol><p><strong>Answer:</strong> For the quiz: width 3, bedding line width 2, line depths 5, 3 and 4, length 12. The textbook's item count of 4 is a different measure; use it only when a question names the book.</p></details><div class=\"def\"><b>Book vs lecture — Levels of product.</b> Book: Three levels: core customer value, actual product, augmented product. Lecture: Five levels, the customer value hierarchy (L#29): core benefit → basic product → expected product → augmented product → potential product, built from the base up (hotel, McDonald's, Fossil, Netflix). <b>The lecture wins: answer with five unless a question names the book. Mapping: core customer value ≈ core benefit; actual product ≈ basic + expected; augmented shares the name; potential has no match in the book.</b></div><div class=\"def\"><b>Book vs lecture — What ‘augmented’ means.</b> Book: The augmented product is the services and benefits added around the actual product: warranty, delivery and credit, installation, after-sale service and support. Lecture: The augmented product is whatever exceeds customers' expectations (the Happy Meal toy, a seamless hotel check-in, a touchscreen watch), and what delights today can become expected later (L#29). <b>The lecture wins: classify by expectation, not by whether it is a service. A warranty every rival offers is expected product in the lecture's terms, though the book calls it augmented.</b></div><div class=\"def\"><b>Book vs lecture — Measuring the product mix.</b> Book: Four dimensions: width (number of lines), length (total items carried within the lines, i.e. the brands and products), depth (versions of each product) and consistency (how closely the lines are related). Lecture: Three dimensions (L#30–31): width = number of lines, and it can also be counted inside a line as its categories; depth = variants of each product, summed across a line's products as that line's depth (company X's personal care: 1 + 1 + 4 = 6); length = every variant in the whole company (6 + 1 + 4 = 11). The company-wide total is length, not depth. <b>The lecture wins: count width, depth and length the lecture's way in the quiz. Consistency is a textbook-only fourth dimension; recognise it when a question names the book, but don't add it to the lecture's list.</b></div><div class=\"def\"><b>Book vs lecture — What a product is.</b> Book: Anything offered to a market for attention, acquisition, use or consumption that might satisfy a want or need. Lecture: An offering or attribute that moves a consumer from an existing state to a desired state, with value a function of the experience it gives (L#29). <b>Use the lecture's wording when asked how the course defines a product. The two don't clash: both start from the buyer's need or problem.</b></div><div class=\"def\"><b>Book vs lecture — Product versus brand.</b> Book: Branding is one of the decisions about an individual product, and the brand name sits inside the actual product. Lecture: A sharp split (L#29): the product is what you consume or use in raw form (the chocolate bar, the noodles); the brand is the name attached (KitKat, Maggi). Strong products create brands; weak products need branding. <b>Asked whether KitKat or Maggi is a product or a brand, answer brand, as the lecture does. The book's placing of the brand name inside the actual product is a product-levels detail, not a contradiction.</b></div><div class=\"def\"><b>Book vs lecture — Dropping products.</b> Book: Firms periodically streamline the mix, paring out marginal lines and brands to refocus (P&amp;G selling off dozens of brands). Lecture: Product pruning (L#30–31): without it, net revenue rises, plateaus and declines as old stock's costs pile up; Apple drops old iPhones so they don't cannibalise new ones. <b>Same idea under another name. Use the lecture's term, product pruning, and its growth–plateau–decline graph.</b></div><div class=\"def\"><b>Book vs lecture — What can be marketed.</b> Book: Products broadly include goods, services, experiences, events, persons, places, organisations and ideas. Lecture: Ten entities (L#3): goods, services, experiences, financial services, persons, places, properties, organisations, information, ideas. <b>Use the lecture's ten for the quiz. Properties, information and financial services appear only in the lecture's list; events appear only in the book's.</b></div><div class=\"def\"><b>Book vs lecture — Vocabulary of benefits.</b> Book: Core customer value is the problem-solving benefit, which can be emotional (lipstick sells ‘hope’). Lecture: Customer perceived value (L#5) splits benefits into psychological (the core functional advantage), functional, economic and extended psychological (status); L#29 tied a product's value back to this. <b>Keep the two frameworks apart. For product-level questions, the core benefit is what the buyer is really buying. For perceived-value questions, use the lecture's four benefit labels.</b></div>"
     }
    ]
   }
@@ -688,6 +693,14 @@ HUB.addCourse({
   },
   {
    "name": "Product mix",
+   "unit": "product"
+  },
+  {
+   "name": "Services marketing",
+   "unit": "product"
+  },
+  {
+   "name": "Branding",
    "unit": "product"
   }
  ],
@@ -1550,6 +1563,55 @@ HUB.addCourse({
    "p": "Anchoring works through an inflated reference price that makes the deal feel bigger. A real cut from a real earlier price is simply a discount, though buyers can rarely tell which is which.",
    "f": "real cut ≠ anchor",
    "lec": 31
+  },
+  {
+   "id": "pom-t0127",
+   "h": "‘Augmented’ means different things in the book and the lecture",
+   "p": "Kotler & Armstrong's augmented product is the layer of services around the product: warranty, delivery and credit, installation, after-sale support. Lecture 29's augmented product is whatever goes beyond what buyers expect (the Happy Meal toy, a seamless hotel check-in). A warranty every rival offers is expected in the lecture's terms. Classify by expectation in the quiz.",
+   "f": "beyond expected = augmented",
+   "bk": "Kotler & Armstrong 17e ch8"
+  },
+  {
+   "id": "pom-t0128",
+   "h": "Specialty buyers don't compare; shopping buyers do",
+   "p": "Shopping products are compared carefully on price, quality and style across outlets. Specialty buyers already know which brand they want and spend effort only on reaching a seller that has it. An expensive product isn't automatically a specialty product.",
+   "f": "compare = shopping, seek = specialty",
+   "bk": "Kotler & Armstrong 17e ch8"
+  },
+  {
+   "id": "pom-t0129",
+   "h": "A cheap product can have high quality",
+   "p": "Performance quality (how well it performs) differs by price tier, but conformance quality (freedom from defects, consistency) can be just as high in a budget product. Quality means meeting the needs it was designed for.",
+   "f": "conformance ≠ luxury",
+   "bk": "Kotler & Armstrong 17e ch8"
+  },
+  {
+   "id": "pom-t0130",
+   "h": "Line filling stays inside the current range; line stretching goes beyond it",
+   "p": "Adding a ₹500 variant between a firm's ₹400 and ₹600 items is filling. Adding a ₹150 or a ₹2,000 item outside the old price band is stretching, downward or upward.",
+   "f": "fill inside, stretch outside",
+   "bk": "Kotler & Armstrong 17e ch8"
+  },
+  {
+   "id": "pom-t0131",
+   "h": "Internal marketing is aimed at employees; interactive marketing is about the encounter",
+   "p": "Internal marketing orients and motivates staff to be customer-centred, and it comes first. Interactive marketing builds the skill of serving the customer during the encounter. External marketing is the usual four Ps aimed at customers.",
+   "f": "internal = staff, interactive = encounter",
+   "bk": "Kotler & Armstrong 17e ch8"
+  },
+  {
+   "id": "pom-t0132",
+   "h": "Same brand, same category is a line extension; same brand, new category is a brand extension",
+   "p": "A new flavour or size under the same name in the same category is a line extension. Putting the name on a different category is a brand extension. A new name in an existing category is multibranding; a new name in a new category is a new brand.",
+   "f": "line = same category",
+   "bk": "Kotler & Armstrong 17e ch8"
+  },
+  {
+   "id": "pom-t0133",
+   "h": "Attribute positioning is the weakest level",
+   "p": "Attributes are easy to copy and customers care about what attributes do for them. Benefits are stronger, and beliefs and values are strongest because they connect emotionally.",
+   "f": "attributes < benefits < values",
+   "bk": "Kotler & Armstrong 17e ch8"
   }
  ],
  "defs": [
@@ -2674,6 +2736,86 @@ HUB.addCourse({
    "term": "Brand manager",
    "html": "<b>Brand manager</b>: in FMCG firms, the manager who runs a product line or brand as its <b>mini-CEO</b>, deciding which variants to keep and which to drop.",
    "lec": 31
+  },
+  {
+   "id": "pom-d0143",
+   "unit": "product",
+   "topic": "Product decisions",
+   "term": "Actual product (textbook)",
+   "html": "<b>Actual product</b>: Kotler &amp; Armstrong's middle level, the concrete offer built around the core benefit, with its features, design, quality level, brand name and packaging. It spans the lecture's <b>basic</b> and <b>expected</b> levels.",
+   "bk": "Kotler & Armstrong 17e ch8"
+  },
+  {
+   "id": "pom-d0144",
+   "unit": "product",
+   "topic": "Product decisions",
+   "term": "Specialty product",
+   "html": "<b>Specialty product</b>: a consumer product with unique features or brand identity for which a significant group of buyers will make a <b>special purchase effort</b>, usually without comparing alternatives.",
+   "bk": "Kotler & Armstrong 17e ch8"
+  },
+  {
+   "id": "pom-d0145",
+   "unit": "product",
+   "topic": "Product decisions",
+   "term": "Unsought product",
+   "html": "<b>Unsought product</b>: a consumer product that buyers either don't know about, or know about but don't normally think of buying. It needs heavy promotion and personal selling.",
+   "bk": "Kotler & Armstrong 17e ch8"
+  },
+  {
+   "id": "pom-d0146",
+   "unit": "product",
+   "topic": "Product mix",
+   "term": "Product mix consistency (textbook)",
+   "html": "<b>Consistency</b>: how closely a firm's product lines are related, whether by end use, by how they are made or by how they reach buyers. It is the textbook's fourth mix dimension; the lecture uses only <b>width, depth and length</b>.",
+   "bk": "Kotler & Armstrong 17e ch8"
+  },
+  {
+   "id": "pom-d0147",
+   "unit": "product",
+   "topic": "Services marketing",
+   "term": "Service perishability",
+   "html": "<b>Service perishability</b>: a service cannot be stored to be sold or used later, so unused capacity (an empty seat, an unbooked slot) is lost for good.",
+   "bk": "Kotler & Armstrong 17e ch8"
+  },
+  {
+   "id": "pom-d0148",
+   "unit": "product",
+   "topic": "Services marketing",
+   "term": "Internal marketing",
+   "html": "<b>Internal marketing</b>: orienting and motivating customer-contact and support staff to work as a team to satisfy customers. It must come before external marketing.",
+   "bk": "Kotler & Armstrong 17e ch8"
+  },
+  {
+   "id": "pom-d0149",
+   "unit": "product",
+   "topic": "Services marketing",
+   "term": "Interactive marketing",
+   "html": "<b>Interactive marketing</b>: training service employees in the skill of interacting with customers, because service quality depends on the quality of the buyer–seller encounter.",
+   "bk": "Kotler & Armstrong 17e ch8"
+  },
+  {
+   "id": "pom-d0150",
+   "unit": "product",
+   "topic": "Branding",
+   "term": "Brand equity",
+   "html": "<b>Brand equity</b>: the difference a known brand name makes to how buyers react to a product and its marketing, compared with an unbranded version. Positive when they react better, as with the Armani jeans in Lecture 29.",
+   "bk": "Kotler & Armstrong 17e ch8"
+  },
+  {
+   "id": "pom-d0151",
+   "unit": "product",
+   "topic": "Branding",
+   "term": "Line extension vs brand extension",
+   "html": "<b>Line extension</b>: an existing brand name on new forms, sizes, flavours or ingredients in the <b>same</b> category. <b>Brand extension</b>: an existing brand name on a product in a <b>new</b> category.",
+   "bk": "Kotler & Armstrong 17e ch8"
+  },
+  {
+   "id": "pom-d0152",
+   "unit": "product",
+   "topic": "Branding",
+   "term": "Co-branding",
+   "html": "<b>Co-branding</b>: two different companies put their established brand names on the same product.",
+   "bk": "Kotler & Armstrong 17e ch8"
   }
  ],
  "questions": [
@@ -9466,6 +9608,380 @@ HUB.addCourse({
    "w": "FMCG firms such as Dove, L'Oréal, Plum and Himalaya give each product line a brand manager who runs it like a mini-CEO, deciding which variants stay and which go.",
    "lec": 31,
    "lv": "recall"
+  },
+  {
+   "id": "pom-q0406",
+   "topic": "Product decisions",
+   "q": "Kotler & Armstrong's three product levels are core customer value, actual product and augmented product. Which of Lecture 29's five levels does the textbook's actual product cover?",
+   "c": [
+    "The basic product and the expected product",
+    "The core benefit only",
+    "The augmented product and the potential product",
+    "The potential product only"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The actual product is the concrete offer (features, design, quality level, brand name, packaging), which the lecture splits into the basic product (the tangible form) and the expected product (the standard buyers count on). Core customer value matches the core benefit, and the book has no potential level at all.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0407",
+   "topic": "Product decisions",
+   "q": "Every carmaker in a class now includes three years of free servicing as standard. Kotler & Armstrong would file this under the augmented product. Where do Lecture 29's definitions put it?",
+   "c": [
+    "Augmented product, because every service is augmented",
+    "Core benefit, because it keeps the car running",
+    "Potential product, because it runs into the future",
+    "Expected product, because buyers now take it as standard"
+   ],
+   "a": [
+    3
+   ],
+   "w": "In the lecture, augmented means going beyond what buyers expect, and something every rival offers is what buyers expect. The book sorts by type (services around the product are augmented); the lecture sorts by expectation, which is why the same offer can land on different levels. Use the lecture's reading.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0408",
+   "topic": "Product decisions",
+   "q": "A shopper visits four showrooms over two weekends comparing refrigerators on capacity, energy rating, price and looks before buying. For this shopper the refrigerator is a:",
+   "c": [
+    "Convenience product",
+    "Shopping product",
+    "Specialty product",
+    "Unsought product"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Careful comparison on suitability, quality, price and style is the mark of a shopping product. A specialty product would be one where the buyer has already settled on a brand and only makes the effort to reach it.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0409",
+   "topic": "Product decisions",
+   "q": "A collector will wait months and travel to another city to buy one particular brand of handmade fountain pen, and doesn't look at any other brand. For this buyer the pen is a:",
+   "c": [
+    "Shopping product",
+    "Convenience product",
+    "Specialty product",
+    "Industrial product"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Specialty products have a unique identity that buyers make a special effort to obtain, with little brand comparison. The long trip may suggest 'shopping', but shopping products are defined by comparing alternatives, which this buyer doesn't do.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0410",
+   "topic": "Product decisions",
+   "q": "Life insurance agents in India often knock on doors and run heavy campaigns because many people know about term insurance but don't think of buying it. In the book's classification, term insurance is a(n):",
+   "c": [
+    "Convenience product",
+    "Unsought product",
+    "Specialty product",
+    "Shopping product"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Unsought products are unknown, or known but not normally considered for purchase. That is why they need aggressive advertising and personal selling. Life insurance is the book's classic example.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0411",
+   "topic": "Product decisions",
+   "q": "A chartered-accountancy firm buys ten laptops for its staff. The same model bought by a student for personal use would be a consumer product. What makes the firm's purchase an industrial product?",
+   "c": [
+    "The quantity purchased",
+    "The price paid",
+    "The purpose of the purchase",
+    "The channel it was bought through"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The book separates consumer and industrial products by purpose: personal consumption versus further processing or use in running a business. The same item can be either.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0412",
+   "topic": "Product decisions",
+   "q": "A budget hatchback rarely breaks down and delivers exactly the reliability its buyers expect. A luxury sedan rides more smoothly and lasts longer. Which statement fits the book?",
+   "c": [
+    "The hatchback cannot be called high quality",
+    "Only the sedan has conformance quality",
+    "Both have the same performance quality",
+    "The sedan has higher performance quality, but the hatchback can match it on conformance quality"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Performance quality (how well it performs its function) is higher in the luxury car. Conformance quality (freedom from defects and consistent delivery of the target level) can be equally high in both. Assuming cheap means low quality is the trap.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0413",
+   "topic": "Product decisions",
+   "q": "A tea company known only for premium ₹800-a-kilo blends launches ₹200-a-kilo packs aimed at small-town households. This is:",
+   "c": [
+    "Upward line stretching",
+    "Downward line stretching",
+    "Line filling",
+    "Brand extension"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Lengthening the line below its current range is downward stretching, often done to reach faster-growing low-end segments or to plug a gap a rival could use. Line filling would add items within the existing ₹800-range band.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0414",
+   "topic": "Product decisions",
+   "q": "What is the main risk the book attaches to over-doing product line filling?",
+   "c": [
+    "Cannibalisation of the firm's own items and customer confusion",
+    "Loss of legal protection for the brand",
+    "Higher cost of raw materials",
+    "Reduced width of the product mix"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Filling adds items inside the existing range. If the new items are not clearly different, they eat into sales of the firm's own products and confuse buyers. It does not change the number of lines, so mix width is unaffected.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0415",
+   "topic": "Services marketing",
+   "q": "An airline's seat that flies empty on the 6 a.m. Delhi–Mumbai flight earns nothing and cannot be sold later. Which service characteristic does this show?",
+   "c": [
+    "Intangibility",
+    "Inseparability",
+    "Variability",
+    "Perishability"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Perishability means services cannot be stored for later sale. That is why airlines and hotels use off-peak prices and other demand-management tactics. Intangibility is about not being able to see or try the service before buying.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0416",
+   "topic": "Services marketing",
+   "q": "Two stylists at the same salon chain give the same customer very different haircuts in the same week. This illustrates:",
+   "c": [
+    "Service variability",
+    "Service perishability",
+    "Service intangibility",
+    "Line stretching"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Variability means service quality depends on who provides it and when, where and how. Firms respond with careful hiring, training and standard processes.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0417",
+   "topic": "Services marketing",
+   "q": "A hospital invests in a clean, calm reception, uniformed staff and published patient outcomes so that patients can judge its quality before treatment. It is mainly tackling:",
+   "c": [
+    "Perishability",
+    "Intangibility",
+    "Inseparability",
+    "Product mix consistency"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Because services cannot be seen or tried before purchase, buyers look for tangible quality signals in place, people, equipment, price and communication. Providing those signals is the response to intangibility.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0418",
+   "topic": "Services marketing",
+   "q": "What is the correct order of the service profit chain?",
+   "c": [
+    "Satisfied customers → satisfied employees → service value → internal quality → profit",
+    "Internal service quality → satisfied, productive employees → greater service value → satisfied, loyal customers → profit and growth",
+    "Profit → internal service quality → employees → customers → service value",
+    "Service value → profit → employees → customers → internal quality"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The chain starts inside the firm with good selection, training and support. That produces satisfied, productive employees, then more service value, then satisfied, loyal customers, and finally profits and growth.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0419",
+   "topic": "Services marketing",
+   "q": "A hotel group runs a four-week programme to make every new hire, from housekeeping to finance, believe in the brand promise and work as a customer-focused team, before any advertising campaign. This is:",
+   "c": [
+    "Interactive marketing",
+    "External marketing",
+    "Internal marketing",
+    "Co-branding"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Orienting and motivating employees to be customer-centred is internal marketing, and the book says it must come before external marketing. Interactive marketing is the narrower skill of handling the encounter with a guest.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0420",
+   "topic": "Branding",
+   "q": "Shoppers pay ₹40 more for a branded packet of atta than for an identical unbranded atta, and they are more willing to try the brand's new products. In the book's terms this shows:",
+   "c": [
+    "Negative brand equity",
+    "Service perishability",
+    "A store brand",
+    "Positive brand equity"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Brand equity is the differential effect that brand-name knowledge has on how customers react. A stronger response than to an unbranded version means positive brand equity. Brand value is the separate idea of the brand's total financial worth.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0421",
+   "topic": "Branding",
+   "q": "Which brand positioning is the strongest, according to the book?",
+   "c": [
+    "Positioning on beliefs and values",
+    "Positioning on a desirable benefit",
+    "Positioning on product attributes",
+    "Positioning on the lowest price"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Attributes are the weakest level because they are easy to copy and customers care about what attributes do for them. Benefits are better. The strongest brands engage customers emotionally on beliefs and values.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0422",
+   "topic": "Branding",
+   "q": "Maggi launches a new masala flavour of its instant noodles. Dettol, known for antiseptic liquid, launches handwash and soap. Which pair is correct?",
+   "c": [
+    "Both are brand extensions",
+    "Maggi: brand extension; Dettol: line extension",
+    "Maggi: line extension; Dettol: brand extension",
+    "Both are multibrands"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A new flavour in the same category under the same name is a line extension. Taking the Dettol name into new categories (handwash, soap) is a brand extension. Mixing up the two is the classic error.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0423",
+   "topic": "Branding",
+   "q": "Titan, a watch company, entered jewellery under a completely new name, Tanishq. In the book's brand-development grid, this is a:",
+   "c": [
+    "Line extension",
+    "Brand extension",
+    "Multibrand",
+    "New brand"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A new brand name in a new product category is the 'new brands' option, used when the existing name doesn't suit the new category. Multibranding means several brand names inside the same existing category.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0424",
+   "topic": "Branding",
+   "q": "A bank and an online retailer launch a credit card that carries both companies' established brand names. This is:",
+   "c": [
+    "Licensing",
+    "Co-branding",
+    "A store brand",
+    "A line extension"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Co-branding uses two different companies' established brand names on the same product, combining their strengths. Licensing means paying a fee to use another owner's name or character on your own product.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0425",
+   "topic": "Branding",
+   "q": "Why would a company warn people not to use its brand name as the everyday word for the whole product category?",
+   "c": [
+    "It lowers the brand's advertising costs",
+    "A name that becomes generic can lose its legal protection, so any seller may use it",
+    "It turns the brand into a store brand",
+    "It reduces the product mix width"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Once-protected names such as aspirin and escalator became generic terms that any seller can use. Firms therefore present their name with the word 'brand' and the registered-trademark symbol.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0426",
+   "topic": "Branding",
+   "q": "What does the book give as the main drawback of a multibrand strategy?",
+   "c": [
+    "Each brand may win only a small share, and resources are spread too thin for any to be very profitable",
+    "It always confuses the parent brand's image",
+    "It is illegal in most product categories",
+    "Retailers refuse to stock more than one brand per company"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Multibrands can lock up shelf space and serve different segments, but they risk many small, unprofitable brands. That is why firms such as GM and P&G have pruned their portfolios. Confusing the parent brand is more a risk of over-stretched brand extensions.",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0427",
+   "topic": "Product mix",
+   "q": "Kotler & Armstrong describe a product mix on four dimensions. Which one is missing from the lecture's width, depth and length?",
+   "c": [
+    "Width",
+    "Depth",
+    "Consistency",
+    "Length"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Consistency, how closely the lines are related in use, production or distribution, is the textbook's fourth dimension. Width, depth and length appear in both, though the lecture counts depth and length its own way (company X's length is 11).",
+   "bk": "Kotler & Armstrong 17e ch8",
+   "lv": "recall"
   }
  ],
  "briefs": {
@@ -9539,6 +10055,7 @@ HUB.addCourse({
   "lec-27",
   "lec-29",
   "lec-30",
-  "lec-31"
+  "lec-31",
+  "pom17-ch08"
  ]
 });

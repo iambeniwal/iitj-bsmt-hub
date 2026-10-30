@@ -149,6 +149,8 @@ python3 tools/build-offline.py
 
 Full history in [`CHANGELOG.md`](CHANGELOG.md). Most recent:
 
+- **[2.5.0] — 2026-10-30**: Statistics L#25–27 and the Chapter 9 practice set; the Marketing product chapter.
+  Every lecture to 26 October is in (2,923 questions).
 - **[2.4.3] — 2026-10-30**: FA practice set solved plus L#27–29; ATB sorting; EBH World Wars and Module 5;
   five Marketing lectures (229 questions; 2,833 in all).
 - **[2.4.2] — 2026-10-30**: FoC Functions Parts 1–2, on tomorrow's Quiz 2 (37 questions).
