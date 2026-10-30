@@ -163,6 +163,18 @@ HUB.addCourse({
    "Week 10 — Python: User Input & While Loops Part 2",
    "Flags, break, continue; while with lists, dictionaries",
    "rec"
+  ],
+  [
+   27,
+   "Week 11 — Python: Functions Part 1",
+   "def, parameters, positional and keyword arguments, defaults",
+   "rec"
+  ],
+  [
+   28,
+   "Week 11 — Python: Functions Part 2",
+   "Return values, optional arguments, passing and copying lists",
+   "rec"
   ]
  ],
  "units": [
@@ -563,6 +575,49 @@ HUB.addCourse({
      "h": "<p>input() pauses the program, shows a prompt and returns whatever the user types, always as a string. Numbers therefore have to be converted with int() before any arithmetic or comparison. The modulo operator % gives a remainder, which is the standard even/odd and divisibility test. A while loop repeats as long as its condition stays True. The chapter shows four ways to stop one: a condition such as message != 'quit', a True/False flag that any part of the loop can switch off, break to leave immediately, and continue to skip to the next pass. Every while loop needs something that eventually makes it stop. Finally, while loops are the safe way to change a list as you work through it: moving items from one list to another with pop(), removing every copy of a value with remove() in a loop, and filling a dictionary from repeated user input.</p><!--viz:foc-pcc1-modulo-cycle--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A table for n from 12 to 17. Each is written as 4 times a whole number plus a remainder: 12 is 4 × 3 + 0, 13 is 4 × 3 + 1, up to 17 as 4 × 4 + 1. The n % 4 column reads 0, 1, 2, 3, 0, 1, with the zeros at 12 and 16 highlighted; the n % 2 column alternates 0 (even) and 1 (odd).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">What % keeps: the remainder, in a repeating cycle</div><p style=\"font-size:13.5px;margin:0 0 6px\">Split each number into whole fours plus what is left over. <span style=\"font-family:var(--mono)\">n % 4</span> is the left-over part.</p><div class=\"scroller\"><table><thead><tr><th>n</th><th>Written as</th><th style=\"white-space:nowrap\">n % 4</th><th style=\"white-space:nowrap\">n % 2</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">12</td><td style=\"font-family:var(--mono);white-space:nowrap\">4×3 + 0</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">0</td><td style=\"font-family:var(--mono);white-space:nowrap\">0 even</td></tr><tr><td style=\"font-family:var(--mono)\">13</td><td style=\"font-family:var(--mono);white-space:nowrap\">4×3 + 1</td><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono);white-space:nowrap\">1 odd</td></tr><tr><td style=\"font-family:var(--mono)\">14</td><td style=\"font-family:var(--mono);white-space:nowrap\">4×3 + 2</td><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono);white-space:nowrap\">0 even</td></tr><tr><td style=\"font-family:var(--mono)\">15</td><td style=\"font-family:var(--mono);white-space:nowrap\">4×3 + 3</td><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono);white-space:nowrap\">1 odd</td></tr><tr><td style=\"font-family:var(--mono)\">16</td><td style=\"font-family:var(--mono);white-space:nowrap\">4×4 + 0</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">0</td><td style=\"font-family:var(--mono);white-space:nowrap\">0 even</td></tr><tr><td style=\"font-family:var(--mono)\">17</td><td style=\"font-family:var(--mono);white-space:nowrap\">4×4 + 1</td><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono);white-space:nowrap\">1 odd</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The remainder runs 0, 1, 2, 3 and starts again; a 0 means the number divides exactly, which is all that n % 2 == 0 (even) tests.</figcaption></figure><!--/viz:foc-pcc1-modulo-cycle--><!--viz:foc-pcc1-remove-all-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A trace of while 'cat' in pets: pets.remove('cat') on a five-item list holding three cats. Checks 1 to 3 are True and each removes the first cat still in the list (at index 0, then 1, then 2), leaving ['dog', 'cat', 'rat', 'cat'], then ['dog', 'rat', 'cat'], then ['dog', 'rat']. Check 4 is False and the loop ends.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Removing every copy: one pass per cat</div><pre style=\"margin:0 0 8px;font-size:13px\">pets = ['cat', 'dog', 'cat', 'rat', 'cat']\nwhile 'cat' in pets:\n    pets.remove('cat')</pre><div class=\"scroller\"><table><thead><tr><th>Check: 'cat' in pets?</th><th>Removes the cat at</th><th>pets afterwards</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono);white-space:nowrap\">1: True</td><td style=\"font-family:var(--mono);background:var(--blue-soft);white-space:nowrap\">index 0</td><td style=\"font-family:var(--mono)\">['dog', 'cat', 'rat', 'cat']</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">2: True</td><td style=\"font-family:var(--mono);background:var(--blue-soft);white-space:nowrap\">index 1</td><td style=\"font-family:var(--mono)\">['dog', 'rat', 'cat']</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">3: True</td><td style=\"font-family:var(--mono);background:var(--blue-soft);white-space:nowrap\">index 2</td><td style=\"font-family:var(--mono)\">['dog', 'rat']</td></tr><tr><td style=\"font-family:var(--mono);background:var(--bad-soft);white-space:nowrap\">4: False</td><td style=\"color:var(--ink-3)\">loop ends</td><td style=\"font-family:var(--mono)\">['dog', 'rat']</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The body runs once per copy removed (three times), not once per item (five); remove() always takes the first match, so the list shrinks from the front.</figcaption></figure><!--/viz:foc-pcc1-remove-all-trace--><!--viz:foc-pcc1-continue-placement--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two versions of the same loop side by side. In the first, c += 1 comes before the if c == 3: continue test, so the loop prints 1, 2, 4, 5 and ends. In the second, c += 1 comes after the continue, so once c is 3 the continue repeats without ever changing c: it prints 1, 2, 3 and then runs forever without printing.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Where the update goes when a loop uses continue</div><div style=\"display:flex;flex-wrap:wrap;gap:8px;font-size:14px\"><div style=\"flex:1 1 220px;min-width:0;padding:10px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\"><b>Update first (the book's way)</b><pre style=\"margin:6px 0;font-size:13px\">c = 0\nwhile c &lt; 5:\n    c += 1\n    if c == 3:\n        continue\n    print(c)</pre><div style=\"font-size:13.5px\"><span style=\"color:var(--ink-3)\">prints</span> <span style=\"font-family:var(--mono)\">1 2 4 5</span></div><div style=\"font-size:13px;color:var(--ink-2);margin-top:4px\">c moves on before the skip, so the loop still reaches 5 and ends.</div></div><div style=\"flex:1 1 220px;min-width:0;padding:10px;border:1px solid var(--bad);border-radius:4px;background:var(--bad-soft)\"><b>Update after continue</b><pre style=\"margin:6px 0;font-size:13px\">c = 0\nwhile c &lt; 5:\n    if c == 3:\n        continue\n    c += 1\n    print(c)</pre><div style=\"font-size:13.5px\"><span style=\"color:var(--ink-3)\">prints</span> <span style=\"font-family:var(--mono)\">1 2 3 … then nothing, for ever</span></div><div style=\"font-size:13px;color:var(--ink-2);margin-top:4px\">at c = 3, continue jumps back before c += 1, so c stays 3 and the check never fails.</div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">continue skips everything below it, including an update; put the line that moves the loop on above any continue.</figcaption></figure><!--/viz:foc-pcc1-continue-placement--><p><strong>input() and prompts</strong> — input(prompt) shows the prompt, waits for the user to press Enter and returns the text they typed. End the prompt with a space so the answer doesn't run into it. A long prompt can be built in a variable with +=.<br><em>e.g.</em> name = input(\"Your name: \")</p><p><strong>input() always returns a string</strong> — Even if the user types 21, the value is the string '21'. Comparing it with a number (age &gt;= 18) raises TypeError, and + joins it as text instead of adding. Convert first: age = int(age).</p><p><strong>+= shorthand</strong> — x += 1 means x = x + 1. For strings it appends: prompt += \"more text\" adds to the end of the existing string.</p><p><strong>Modulo %</strong> — a % b gives the remainder after dividing a by b, not how many times b fits. A remainder of 0 means a is divisible by b, so n % 2 == 0 tests for an even number.<br><em>e.g.</em> 17 % 5 → 2; 20 % 4 → 0</p><p><strong>while loop</strong> — while condition: repeats its indented block as long as the condition is True, checking it before every pass. Use it when you don't know in advance how many passes you need. A for loop, by contrast, runs once per item of a collection.</p><p><strong>Quit value with an initial value</strong> — while message != 'quit': lets the user decide when to stop. message must be given a starting value (e.g. \"\") before the loop, or the first check fails. Add an if inside so the quit word isn't processed like real input.</p><p><strong>Flag</strong> — A flag is a True/False variable (active = True) that the while line checks. Any number of events inside the loop can set it to False, so the while condition stays simple even when there are many ways to finish.</p><p><strong>break</strong> — break leaves the loop immediately, skipping the rest of the block. It is typically paired with while True:, which would otherwise never end. break works in for loops too.</p><p><strong>continue</strong> — continue skips the rest of the current pass and goes back to the loop's condition check. Anything that must happen every pass, such as incrementing a counter, has to come before the continue.</p><p><strong>Infinite loops</strong> — If nothing inside the loop can make the condition False or reach a break, it runs forever, e.g. forgetting x += 1. The book stops it with Ctrl-C or by closing the terminal; in Colab, press the stop button on the running cell (L#26). Test every loop with the value that should end it.</p><p><strong>Don't modify a list inside a for loop</strong> — The book warns that changing a list while a for loop is walking through it confuses Python's tracking of the items. Use a while loop instead when items are being removed or moved.</p><p><strong>Moving items between lists</strong> — while source: keeps going until the list is empty. Each pass, pop() takes an item from the end and append() adds it to the target, so the target list ends up in reverse order of the source.</p><p><strong>Removing all copies of a value</strong> — remove() deletes only the first match, so while 'cat' in pets: pets.remove('cat') repeats until none are left.</p><p><strong>Filling a dictionary from input</strong> — Each pass asks for a name and a response, stores responses[name] = response, then asks whether to continue. Answering 'no' turns the flag off, and a final loop over items() prints the results.</p><div class=\"card\"><strong>Case: Verifying new users</strong> <em>(confirmed_users.py, section 'Moving Items from One List to Another')</em><p>A website holds unconfirmed sign-ups in one list. A while loop runs until that list is empty, popping each user, printing a verification message and appending them to a confirmed list, which is then printed. Because pop() takes from the end, the last sign-up is verified first.</p><p><em>Lesson:</em> Use a while loop (not a for loop) when a list shrinks as you process it.</p><p><em>Think:</em> How would you change the code so users are verified in sign-up order?</p></div><div class=\"card\"><strong>Case: The mountain poll</strong> <em>(mountain_poll.py, section 'Filling a Dictionary with User Input')</em><p>A polling program loops while a flag is on, asking each participant for their name and a mountain they'd like to climb and storing them as a key-value pair. After each response it asks whether someone else wants to answer; 'no' switches the flag off and the results are printed from the dictionary.</p><p><em>Lesson:</em> Flags plus dictionaries let a loop collect an open-ended amount of structured input.</p><p><em>Think:</em> In what order does Python 3.7 or later print the poll results, and why does the book's sample run show them differently?</p></div><details><summary>Worked problem: Rest day every seventh day</summary><p>A training plan makes every seventh day a rest day. Ask for a day number and print whether it is a rest day or a training day. Trace it for inputs of 28 and 30.</p><ol><li>day = int(input(\"Day number: \")) turns the typed '28' into the integer 28.</li><li>if day % 7 == 0: print(\"Day \" + str(day) + \": rest\")</li><li>else: print(\"Day \" + str(day) + \": train\")</li><li>28 % 7 is 0 (28 = 7 × 4), so the if branch runs. 30 % 7 is 2 (30 = 7 × 4 + 2), so the else branch runs.</li></ol><p><strong>Answer:</strong> Day 28: rest · Day 30: train</p></details><details><summary>Worked problem: Running total until a limit</summary><p>Add 1, 2, 3, … until the total first exceeds 10, using while True and break. What are the last number added and the total?</p><ol><li>total = 0, i = 1.</li><li>while True: total += i; if total &gt; 10: break; i += 1.</li><li>Totals after each pass: 1, 3, 6, 10, 15.</li><li>15 &gt; 10 when i = 5, so break runs before i is increased again.</li></ol><p><strong>Answer:</strong> i = 5, total = 15</p></details><div class=\"def\"><b>Book vs lecture — Running input() programs.</b> Book: Warns that Sublime Text can't run programs that use input(), so they must be run from a terminal. Lecture: L#25 runs everything in Google Colab: the cell keeps running and shows a box for the answer until Enter is pressed. <b>No conflict for the quiz; the book's Sublime workaround doesn't apply in Colab.</b></div><div class=\"def\"><b>Book vs lecture — Stopping an infinite loop.</b> Book: Press Ctrl-C or close the terminal window (or the editor, in Sublime Text). Lecture: L#26: press the stop button on the running cell in Colab (he called it the pause button); in a terminal, close the window. <b>Both are right for their tool. Use the lecture's Colab stop button in class, and know that Ctrl-C does the same job in a terminal.</b></div><div class=\"def\"><b>Book vs lecture — The TypeError message.</b> Book: Shows age &gt;= 18 failing with TypeError: unorderable types: str() &gt;= int(), from an older Python 3. Lecture: L#25 shows TypeError: '&gt;=' not supported between instances of 'str' and 'int', which is what Python 3 prints today. <b>Same error type and the same cause. Expect the lecture's wording in any 'what happens' question.</b></div><div class=\"def\"><b>Book vs lecture — int() with a decimal.</b> Book: Only converts whole numbers such as '21' and never shows a failed conversion. Lecture: L#25 shows int('23.67') raising ValueError: invalid literal for int() with base 10, and says handling bad input comes later. <b>No conflict; the lecture adds it. int() won't take a decimal string, so the answer is ValueError, not 23 or 24.</b></div><div class=\"def\"><b>Book vs lecture — Poll results order.</b> Book: The sample run of the mountain poll prints the second participant before the first. Lecture: L#26's run prints Tom, then Alice, in the order they answered (verified on Python 3: dictionaries keep insertion order). <b>The lecture wins: from Python 3.7, results print in the order they were entered. The book's output comes from an older Python.</b></div><div class=\"def\"><b>Book vs lecture — Passes of the remove-all loop.</b> Book: while 'cat' in pets: removes one 'cat' per pass until none is left. Lecture: L#26 said the loop runs seven times, once per item; the lec-26 notes and trap correct this to three, once per 'cat'. <b>Here the book is right: count one pass per copy removed. The final list, ['dog', 'dog', 'goldfish', 'rabbit'], is the same either way.</b></div><div class=\"def\"><b>Book vs lecture — Setting a flag to False.</b> Book: Says that once active is set to False, the while loop stops. Lecture: L#26's notes add that the rest of the current pass still runs; the loop ends at the next check of while active. <b>Use the lecture's precise version. It only matters when lines come after the flag change in the same pass, and then they do run.</b></div><div class=\"def\"><b>Book vs lecture — Python's loop statements.</b> Book: Introduces while as the loop to use when the number of passes isn't known; for and while are the only loops it shows. Lecture: L#24 mentioned a do-while loop; the lec-24 trap corrects it, since Python has only for and while. <b>Python has no do-while. The book's while True: with a break inside does the same job.</b></div>"
     }
    ]
+  },
+  {
+   "id": "functions",
+   "title": "Functions",
+   "tag": "Lectures 27–28",
+   "lede": "Named blocks of code you write once and call whenever the job is needed. Part 1 covers def, docstrings and calls, parameters and arguments, positional and keyword arguments, and default values; part 2 adds return values, optional arguments, returning dictionaries, functions in while loops, and passing, changing and copying lists.",
+   "topics": [
+    {
+     "t": "Defining and calling a function",
+     "src": "L#27",
+     "h": "\n<p style=\"font-size:14.5px\">A new chapter, <strong>Functions</strong>. A <b>function</b> is a named block of code that does one specific job. You write the code once and then <b>call</b> the function by its name wherever that job is needed, instead of typing the same lines again. He stressed what that buys you: programs that are easier to write, read, test and fix, fewer chances to make a mistake because the logic exists in one place, and one place to change when it needs fixing. Some functions just display something; others process data and return a value (L#28). Later in the chapter, functions are stored in separate files called modules.</p>\n<h4>Defining a function</h4>\n<pre>def greet_user():\n    \"\"\"Display a simple greeting.\"\"\"\n    print(\"Hello!\")\n\ngreet_user()\ngreet_user()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Hello!</span>\n<span class=\"o\">Hello!</span></pre>\n<ul>\n<li><code>def</code> is the keyword that tells Python a function is being defined (short for <em>definition</em>). The function's name comes next, then parentheses, then a <b>colon</b>.</li>\n<li>The parentheses hold the information the function needs to do its job. <code>greet_user</code> needs none, so they are empty.</li>\n<li>Every indented line after the def line is the <b>body</b>: the logic that runs each time the function is called.</li>\n<li>The text in triple quotes is a <b>docstring</b>, a comment that says in plain English what the function does. It is for the reader and is not printed.</li>\n<li><code>greet_user()</code> is a <b>function call</b>: the name, then parentheses with any information the function needs. Each call runs the body again, so two calls print Hello! twice; the second call can even sit in a different Colab cell.</li>\n</ul>\n<p style=\"font-size:14.5px\">Defining a function runs nothing by itself. Python reads the def block and remembers it; the body runs only when a call reaches it. Here the welcome line at the left margin runs first:</p>\n<pre>def show_menu():\n    \"\"\"Print the choices.\"\"\"\n    print(\"Tea or coffee?\")\n\nprint(\"Welcome\")\nshow_menu()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Welcome</span>\n<span class=\"o\">Tea or coffee?</span></pre>\n<h4>Passing information to a function</h4>\n<p style=\"font-size:14.5px\">To greet people by name, put a variable inside the parentheses of the definition. The function can now work with any name it is given, and the names themselves never appear in the body:</p>\n<pre>def greet_user(username):\n    \"\"\"Display a simple greeting.\"\"\"\n    print(\"Hello, \" + username.title() + \"!\")\n\ngreet_user('arun')\ngreet_user('shreya')\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Hello, Arun!</span>\n<span class=\"o\">Hello, Shreya!</span></pre>\n<p style=\"font-size:14.5px\">The function now <em>expects</em> a value each time. He showed that calling it with empty parentheses, which worked a moment earlier, now fails: the newer definition with the same name has replaced the old one.</p>\n<pre>greet_user()\n<span class=\"c\"># last line of the traceback:</span>\n<span class=\"o\">TypeError: greet_user() missing 1 required positional argument: 'username'</span></pre>\n<h4>Parameters and arguments</h4>\n<div class=\"scroller\"><table><thead><tr><th>Term</th><th>Where it appears</th><th>In the example</th></tr></thead><tbody><tr><td><b>Parameter</b></td><td>the def line: a name for a piece of information the function needs</td><td><code>username</code> in <code>def greet_user(username):</code></td></tr><tr><td><b>Argument</b></td><td>the call: the actual value sent to the function</td><td><code>'arun'</code> in <code>greet_user('arun')</code></td></tr></tbody></table></div>\n<p style=\"font-size:14.5px\">When the function runs, the argument's value is stored in the parameter. He said the two words are used interchangeably and either is fine to say; strictly, though, the <b>parameter</b> sits in the definition and the <b>argument</b> in the call.</p>\n<!--viz:foc-def-anatomy-flow--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two rows. Defining: the def keyword, the name greet_user, the parameter username in parentheses, a colon, then the indented body. Calling: greet_user('arun') stores 'arun' in username and the body prints Hello, Arun!\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Defining a function, then calling it</div><p style=\"margin:0 0 6px;font-size:13px;color:var(--ink-3)\">Defining (nothing runs yet)</p><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b style=\"font-family:var(--mono)\">def</b> keyword</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">name <span style=\"font-family:var(--mono)\">greet_user</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">parameters <span style=\"font-family:var(--mono)\">(username)</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">colon <b style=\"font-family:var(--mono)\">:</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">indented body: docstring, then the code</div></div><p style=\"margin:6px 0 6px;font-size:13px;color:var(--ink-3)\">Calling (the body runs now)</p><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">call <span style=\"font-family:var(--mono)\">greet_user('arun')</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">argument <span style=\"font-family:var(--mono)\">'arun'</span> is stored in <span style=\"font-family:var(--mono)\">username</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">body runs: <b style=\"font-family:var(--mono)\">Hello, Arun!</b></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The def block only sets the function up; the call is what runs the body.</figcaption></figure><!--/viz:foc-def-anatomy-flow-->"
+    },
+    {
+     "t": "Positional and keyword arguments",
+     "src": "L#27",
+     "h": "\n<p style=\"font-size:14.5px\">A definition can list several parameters, so a call may need several arguments. Python can match arguments to parameters in two ways: by position or by name.</p>\n<h4>Positional arguments: the order decides</h4>\n<pre>def describe_pet(animal_type, pet_name):\n    \"\"\"Display information about a pet.\"\"\"\n    print(\"\\nI have a \" + animal_type + \".\")\n    print(\"My \" + animal_type + \"'s name is \" + pet_name.title() + \".\")\n\ndescribe_pet('hamster', 'harry')\ndescribe_pet('cat', 'tom')\n<span class=\"c\"># prints:</span>\n<span class=\"o\"></span>\n<span class=\"o\">I have a hamster.</span>\n<span class=\"o\">My hamster's name is Harry.</span>\n<span class=\"o\"></span>\n<span class=\"o\">I have a cat.</span>\n<span class=\"o\">My cat's name is Tom.</span></pre>\n<p style=\"font-size:14.5px\">Python pairs the first argument with the first parameter and the second with the second, so 'hamster' becomes <code>animal_type</code> and 'harry' becomes <code>pet_name</code>. Values matched up this way are <b>positional arguments</b>. The second call shows the point of a function: describing a new pet takes one line, because the describing code is written only once.</p>\n<p style=\"font-size:14.5px\">Swap the order and Python does not complain. It simply puts each value in the wrong parameter, and the output is nonsense:</p>\n<pre>describe_pet('bread', 'cow')\n<span class=\"c\"># prints:</span>\n<span class=\"o\">I have a bread.</span>\n<span class=\"o\">My bread's name is Cow.</span></pre>\n<p style=\"font-size:14.5px\">Leave one out and the call fails. The message names the parameter that got no value:</p>\n<pre>describe_pet('bruno')\n<span class=\"c\"># last line of the traceback:</span>\n<span class=\"o\">TypeError: describe_pet() missing 1 required positional argument: 'pet_name'</span></pre>\n<h4>Keyword arguments: the names decide</h4>\n<p style=\"font-size:14.5px\">A <b>keyword argument</b> is a name-value pair in the call: the parameter's name, an equals sign, the value. Because each value is tied to its parameter by name, <b>the order no longer matters</b>, and the call itself shows what each value is for.</p>\n<pre>describe_pet(animal_type='parrot', pet_name='kyle')\ndescribe_pet(pet_name='kyle', animal_type='parrot')\n<span class=\"c\"># each call prints:</span>\n<span class=\"o\">I have a parrot.</span>\n<span class=\"o\">My parrot's name is Kyle.</span></pre>\n<p style=\"font-size:14.5px\">He ran the same check with pet_name='sachin' and animal_type='goat' written in the 'wrong' order: still \"I have a goat\", never \"I have a sachin\". The names used must be the parameter names in the def line.</p>\n"
+    },
+    {
+     "t": "Default values and argument errors",
+     "src": "L#27",
+     "h": "\n<h4>Default values</h4>\n<p style=\"font-size:14.5px\">A parameter can be given a <b>default value</b> in the def line. If the call supplies an argument for that parameter, Python uses the argument; if not, it uses the default. So the argument becomes optional, and the usual call gets shorter.</p>\n<pre>def describe_BSMT(course_name, instructor_name='aman'):\n    \"\"\"Display information.\"\"\"\n    print(\"\\nI am enrolled in the \" + course_name + \" course.\")\n    print(\"The instructor for the \" + course_name + \" is \" + instructor_name.title() + \".\")\n\ndescribe_BSMT(course_name='Foundations of Computing')\ndescribe_BSMT(course_name='AI in Business', instructor_name='hari')\n<span class=\"c\"># prints:</span>\n<span class=\"o\"></span>\n<span class=\"o\">I am enrolled in the Foundations of Computing course.</span>\n<span class=\"o\">The instructor for the Foundations of Computing is Aman.</span>\n<span class=\"o\"></span>\n<span class=\"o\">I am enrolled in the AI in Business course.</span>\n<span class=\"o\">The instructor for the AI in Business is Hari.</span></pre>\n<ul>\n<li>The first call gives only the course, so <code>instructor_name</code> falls back to 'aman'. Without the default, the same call would fail with a missing-argument TypeError.</li>\n<li>The second call gives an explicit instructor, so 'hari' <b>overrides</b> the default for that call. The default itself doesn't change.</li>\n</ul>\n<h4>Parameters with defaults go last</h4>\n<p style=\"font-size:14.5px\">Every parameter with a default must come <b>after</b> all the parameters without one; that is what lets Python keep matching positional arguments in order. Get it wrong and the def line itself is rejected, before anything runs:</p>\n<pre>def describe_student(instructor_name='aman', student_name, course_name):\n    \"\"\"Display information.\"\"\"\n    print(\"My name is \" + student_name + \".\")\n<span class=\"c\"># last line of the traceback:</span>\n<span class=\"o\">SyntaxError: parameter without a default follows parameter with a default</span></pre>\n<p style=\"font-size:14.5px\">Move the default to the end and it works. Two arguments are enough, because the third parameter has a default:</p>\n<pre>def describe_student(student_name, course_name, instructor_name='aman'):\n    \"\"\"Display information.\"\"\"\n    print(\"\\nMy name is \" + student_name + \".\")\n    print(\"I am enrolled in the \" + course_name + \" course.\")\n    print(\"The instructor for the \" + course_name + \" is \" + instructor_name.title() + \".\")\n\ndescribe_student(student_name='hardavi', course_name='Foundations of Computing')\n<span class=\"c\"># prints:</span>\n<span class=\"o\"></span>\n<span class=\"o\">My name is hardavi.</span>\n<span class=\"o\">I am enrolled in the Foundations of Computing course.</span>\n<span class=\"o\">The instructor for the Foundations of Computing is Aman.</span></pre>\n<h4>Equivalent function calls</h4>\n<p style=\"font-size:14.5px\">Positional arguments, keyword arguments and defaults can all be used together, so one function can often be called in several ways with the same result. He redefined describe_pet with the name first and a default type: <code>def describe_pet(pet_name, animal_type='dog'):</code>. With the default in place, the name now has to come first. The figure “Seven calls to one function” in this topic lists his calls and what each one does.</p>\n<h4>Avoiding argument errors</h4>\n<p style=\"font-size:14.5px\">An <b>argument error</b> happens when a call gives fewer or more arguments than the function can take. Python stops and prints a <b>traceback</b> that shows where the problem is and what it needed:</p>\n<pre>describe_pet()\n<span class=\"c\"># last line of the traceback:</span>\n<span class=\"o\">TypeError: describe_pet() missing 1 required positional argument: 'pet_name'</span>\n\ndescribe_pet('harry', 'hamster', 'good')\n<span class=\"c\"># last line of the traceback:</span>\n<span class=\"o\">TypeError: describe_pet() takes from 1 to 2 positional arguments but 3 were given</span></pre>\n<ul>\n<li>With no arguments, only <b>one</b> argument is reported missing, pet_name, because animal_type has a default.</li>\n<li>With three, there's no parameter left for 'good': this function takes one or two.</li>\n<li>Python reads the function for you and names the parameter it needs. That's another reason he gave for <b>descriptive names</b> such as pet_name and animal_type: the error message is then useful to you and to anyone else using your code.</li>\n</ul>\n<div class=\"def\"><b>Quiz 2 (Sat 31 Oct):</b> the LMS syllabus update of 22 Oct names \"Functions\" lectures 1 and 2, which are this lecture and L#28. <b>From the lecture (L#24), about the final exam:</b> give-the-output questions may contain code that fails, and then the answer is that it gives an error, and why. Every error in this lecture is that kind: a missing argument or one too many (TypeError) and a default in the wrong place (SyntaxError). Know which call causes which message.</div>\n<div class=\"card\"><b>Practice set from the lecture</b> (25 minutes). (1) <b>Message:</b> a <code>display_message()</code> function prints one sentence on what this chapter is about; call it. (2) <b>Favourite book:</b> <code>favorite_book(title)</code> prints a sentence such as \"One of my favourite books is Alice in Wonderland\"; call it with a title. (3) <b>T-shirt:</b> <code>make_shirt()</code> takes a size and a message and prints a sentence summing up both; call it once with positional and once with keyword arguments. (4) Change make_shirt so a shirt is large and says \"I love Python\" by default; make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message. (5) <b>Cities:</b> <code>describe_city()</code> takes a city and its state, with a default for the state, and prints a sentence such as \"Jodhpur is in Rajasthan\"; call it for three cities, at least one not in the default state.</div>\n<p style=\"font-size:14.5px\">One way to write exercise 5:</p>\n<pre>def describe_city(city, state='rajasthan'):\n    \"\"\"Say which state a city is in.\"\"\"\n    print(city.title() + \" is in \" + state.title() + \".\")\n\ndescribe_city('jodhpur')\ndescribe_city('udaipur')\ndescribe_city('pune', state='maharashtra')\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Jodhpur is in Rajasthan.</span>\n<span class=\"o\">Udaipur is in Rajasthan.</span>\n<span class=\"o\">Pune is in Maharashtra.</span></pre>\n<p style=\"font-size:14.5px\">Next lecture (L#28): functions that <b>return</b> values, optional arguments, and passing lists to functions. Passing an arbitrary number of arguments and storing functions in modules come after that.</p>\n<!--viz:foc-describe-pet-calls--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of calls to describe_pet(pet_name, animal_type='dog'): one positional or keyword name gives a dog named Willie; two arguments by position or by name in either order give a hamster named Harry; no arguments or three arguments raise a TypeError.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Seven calls to one function</div><p style=\"margin:0 0 8px;font-family:var(--mono);font-size:13.5px\">def describe_pet(pet_name, animal_type='dog'):</p><div class=\"scroller\"><table><thead><tr><th>Call</th><th>pet_name</th><th>animal_type</th><th>Prints</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">describe_pet('willie')</td><td style=\"font-family:var(--mono)\">'willie'</td><td style=\"font-family:var(--mono)\">'dog' (default)</td><td>I have a dog. My dog's name is Willie.</td></tr><tr><td style=\"font-family:var(--mono)\">describe_pet(pet_name='willie')</td><td style=\"font-family:var(--mono)\">'willie'</td><td style=\"font-family:var(--mono)\">'dog' (default)</td><td>I have a dog. My dog's name is Willie.</td></tr><tr><td style=\"font-family:var(--mono)\">describe_pet('harry', 'hamster')</td><td style=\"font-family:var(--mono)\">'harry'</td><td style=\"font-family:var(--mono)\">'hamster'</td><td>I have a hamster. My hamster's name is Harry.</td></tr><tr><td style=\"font-family:var(--mono)\">describe_pet(pet_name='harry', animal_type='hamster')</td><td style=\"font-family:var(--mono)\">'harry'</td><td style=\"font-family:var(--mono)\">'hamster'</td><td>I have a hamster. My hamster's name is Harry.</td></tr><tr><td style=\"font-family:var(--mono)\">describe_pet(animal_type='hamster', pet_name='harry')</td><td style=\"font-family:var(--mono)\">'harry'</td><td style=\"font-family:var(--mono)\">'hamster'</td><td>I have a hamster. My hamster's name is Harry.</td></tr><tr><td style=\"font-family:var(--mono)\">describe_pet()</td><td style=\"background:var(--bad-soft)\">none</td><td style=\"font-family:var(--mono)\">'dog'</td><td style=\"background:var(--bad-soft)\">TypeError: missing pet_name</td></tr><tr><td style=\"font-family:var(--mono)\">describe_pet('harry', 'hamster', 'good')</td><td style=\"font-family:var(--mono)\">'harry'</td><td style=\"font-family:var(--mono)\">'hamster'</td><td style=\"background:var(--bad-soft)\">TypeError: 3 given, takes 1 to 2</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Positional, keyword and default calls can all print the same thing; too few or too many is a TypeError.</figcaption></figure><!--/viz:foc-describe-pet-calls-->"
+    },
+    {
+     "t": "Return values and optional arguments",
+     "src": "L#28",
+     "h": "\n<p style=\"font-size:14.5px\">Part 2 of the chapter. He began by recalling default values from L#27, then moved to functions that hand a result back instead of printing it.</p>\n<h4>Returning a simple value</h4>\n<p style=\"font-size:14.5px\">A function doesn't have to display its output. It can process some data and send a value back to the line that called it, using the <code>return</code> statement. That value is the function's <b>return value</b>. Returning values keeps the main part of a program simple: the work happens inside the function, and the caller decides what to do with the result.</p>\n<pre>def get_formatted_name(first_name, last_name):\n    \"\"\"Return a full name, neatly formatted.\"\"\"\n    full_name = first_name + ' ' + last_name\n    return full_name.title()\n\ndeveloper = get_formatted_name('agastya', 'gupta')\nprint(developer)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Agastya Gupta</span></pre>\n<ul>\n<li>The call sends 'agastya' into <code>first_name</code> and 'gupta' into <code>last_name</code>.</li>\n<li>The body joins them with a space in <code>full_name</code>, and <code>return full_name.title()</code> sends 'Agastya Gupta' back to the call. The notebook marks that line \"not print() here\".</li>\n<li>The call is replaced by the returned value, so <code>developer = ...</code> stores it. When a function returns a value, give it a variable to land in; then you can print it or use it later.</li>\n</ul>\n<p style=\"font-size:14.5px\">A check that isn't from the lecture shows the difference. A function that only prints shows its result but hands nothing back, so Python stores <code>None</code>, its word for \"no value\":</p>\n<pre>def add_print(a, b):\n    print(a + b)\n\ndef add_return(a, b):\n    return a + b\n\nx = add_print(2, 3)\ny = add_return(2, 3)\nprint(x, y)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">5</span>\n<span class=\"o\">None 5</span></pre>\n<h4>Making an argument optional</h4>\n<p style=\"font-size:14.5px\">Not everyone has a middle name, so a name function shouldn't force one. First, the version with three ordinary parameters. It works for a three-part name:</p>\n<pre>def get_formatted_name(first_name, middle_name, last_name):\n    \"\"\"Return a full name, neatly formatted.\"\"\"\n    full_name = first_name + ' ' + middle_name + ' ' + last_name\n    return full_name.title()</pre>\n<pre>musician = get_formatted_name('lana', 'del', 'rey')\nprint(musician)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Lana Del Rey</span></pre>\n<p style=\"font-size:14.5px\">but a two-part name fails. 'arijit' goes to first_name, 'singh' to middle_name, and nothing is left for last_name:</p>\n<pre>musician = get_formatted_name('arijit', 'singh')\n<span class=\"c\"># last line of the traceback:</span>\n<span class=\"o\">TypeError: get_formatted_name() missing 1 required positional argument: 'last_name'</span></pre>\n<p style=\"font-size:14.5px\">The fix uses a default value: give <code>middle_name</code> an <b>empty string</b> as its default and move it to the <b>end</b> of the parameters (defaults go last, L#27). An <code>if</code> then builds the name with or without the middle part:</p>\n<pre>def get_formatted_name(first_name, last_name, middle_name=''):\n    \"\"\"Return a full name, neatly formatted.\"\"\"\n    if middle_name:\n        full_name = first_name + ' ' + middle_name + ' ' + last_name\n    else:\n        full_name = first_name + ' ' + last_name\n    return full_name.title()\n\nmusician = get_formatted_name('arijit', 'singh')\nprint(musician)\n\nmusician = get_formatted_name('lana', 'rey', 'del')\nprint(musician)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Arijit Singh</span>\n<span class=\"o\">Lana Del Rey</span></pre>\n<ul>\n<li><code>if middle_name:</code> is True when a middle name was passed and False for the empty string, so the else branch joins just the first and last names.</li>\n<li>Because middle_name is now <b>last</b>, a three-part name is passed as first, last, middle: <code>('lana', 'rey', 'del')</code> gives Lana Del Rey.</li>\n<li>Optional values let one function handle many cases while the calls stay as simple as possible.</li>\n</ul>\n<div class=\"def\">Empty, not a space. In the lecture he called the default \"a space\"; the code has two quote marks with nothing between them, an <b>empty string</b>. That matters: an empty string counts as False, so the else branch runs. A single space would count as True, and Arijit Singh would come out with three spaces between the names.</div>\n<!--viz:foc-return-value-flow--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: the call get_formatted_name('agastya', 'gupta') puts the two values in first_name and last_name, the body builds full_name 'agastya gupta', return sends back full_name.title(), and the call's line stores 'Agastya Gupta' in developer.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Where a return value goes</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">call <span style=\"font-family:var(--mono)\">get_formatted_name('agastya', 'gupta')</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">first_name = 'agastya'</span>, <span style=\"font-family:var(--mono)\">last_name = 'gupta'</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">full_name = 'agastya gupta'</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">return full_name.title()</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">back at the call: <b style=\"font-family:var(--mono)\">developer = 'Agastya Gupta'</b></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">return hands the value back to the calling line; without a variable there, it is lost.</figcaption></figure><!--/viz:foc-return-value-flow-->"
+    },
+    {
+     "t": "Returning a dictionary",
+     "src": "L#28",
+     "h": "\n<p style=\"font-size:14.5px\">A function can return any kind of value, including bigger structures such as lists and dictionaries. Returning a dictionary is a neat way to hand back several related pieces of information at once.</p>\n<pre>def build_person(first_name, last_name):\n    \"\"\"Return a dictionary of information about a person.\"\"\"\n    person = {'first': first_name, 'last': last_name}\n    return person\n\nstudent = build_person('aryan', 'manhas')\nprint(student)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">{'first': 'aryan', 'last': 'manhas'}</span></pre>\n<ul>\n<li>The curly braces build a dictionary inside the function: the key 'first' gets the value of the parameter first_name, and 'last' gets last_name.</li>\n<li><code>return person</code> sends the whole dictionary back, and <code>student</code> now holds it.</li>\n</ul>\n<p style=\"font-size:14.5px\">The function is easy to extend with optional information such as a middle name, age or occupation. Give the new parameter an empty-string default and add the key only when a value was passed:</p>\n<pre>def build_person(first_name, last_name, age=''):\n    \"\"\"Return a dictionary of information about a person.\"\"\"\n    person = {'first': first_name, 'last': last_name}\n    if age:\n        person['age'] = age\n    return person\n\nstudent = build_person('daksh', 'parashar', age=18)\nprint(student)\n\nstudent = build_person('daksh', 'parashar')\nprint(student)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">{'first': 'daksh', 'last': 'parashar', 'age': 18}</span>\n<span class=\"o\">{'first': 'daksh', 'last': 'parashar'}</span></pre>\n<p style=\"font-size:14.5px\"><code>person['age'] = age</code> is the add-a-pair line from the dictionaries lectures (L#21). With age=18 the test <code>if age:</code> is True, so the pair is added; with no age, the empty string is False and the dictionary keeps two pairs, with no error.</p>\n<div class=\"def\">Trust the run, not the notebook's saved output. In the shared notebook, the saved output under <code>build_person('daksh', 'parashar', age=18)</code> shows only first and last. That output is left over from an earlier run: run the cell and you get <code>{'first': 'daksh', 'last': 'parashar', 'age': 18}</code>, which is also what he said in the lecture.</div>\n"
+    },
+    {
+     "t": "Using a function with a while loop",
+     "src": "L#28",
+     "h": "\n<p style=\"font-size:14.5px\">Functions work with every structure met so far: lists, dictionaries, for loops and while loops. He reused get_formatted_name inside a while loop that greets users. His first version, <code>while True:</code> with two input() lines and nothing else, is an <b>infinite loop</b>: it asks for a first and last name again and again. In Colab he had to stop the cell, which reports that it was interrupted by the user (a KeyboardInterrupt).</p>\n<p style=\"font-size:14.5px\">The fix is a quit value and <code>break</code> (L#26). The prompt tells the user how to quit, and each input is checked straight away:</p>\n<pre>def get_formatted_name(first_name, last_name):\n    \"\"\"Return a full name, neatly formatted.\"\"\"\n    full_name = first_name + ' ' + last_name\n    return full_name.title()\n\nwhile True:\n    print(\"\\nPlease tell me your name:\")\n    print(\"(enter 'q' at any time to quit)\")\n\n    f_name = input(\"First name: \")\n    if f_name == 'q':\n        break\n\n    l_name = input(\"Last name: \")\n    if l_name == 'q':\n        break\n\n    formatted_name = get_formatted_name(f_name, l_name)\n    print(\"\\nHello, \" + formatted_name + \"!\")\n<span class=\"c\"># run (the user types aman, then pathak, then q):</span>\n<span class=\"o\"></span>\n<span class=\"o\">Please tell me your name:</span>\n<span class=\"o\">(enter 'q' at any time to quit)</span>\n<span class=\"o\">First name: aman</span>\n<span class=\"o\">Last name: pathak</span>\n<span class=\"o\"></span>\n<span class=\"o\">Hello, Aman Pathak!</span>\n<span class=\"o\"></span>\n<span class=\"o\">Please tell me your name:</span>\n<span class=\"o\">(enter 'q' at any time to quit)</span>\n<span class=\"o\">First name: q</span></pre>\n<ul>\n<li>Typing <code>q</code> at <b>either</b> prompt ends the loop at once, and nobody is greeted on that pass.</li>\n<li><b>One equals sign assigns, two compare.</b> <code>full_name = ...</code> stores a value; <code>f_name == 'q'</code> asks whether the two are equal and gives True or False.</li>\n<li>The function is called inside the loop, once per person, with whatever the user typed.</li>\n</ul>\n<div class=\"def\">In the shared notebook the loop stops after the two quit checks: it never calls the function, so it greets no one. His greeting, Hello, Aman Pathak!, came from a separate call in the next cell, <code>get_formatted_name('aman', 'pathak')</code>. The version above adds the last two lines so that the loop greets each person itself.</div>\n"
+    },
+    {
+     "t": "Passing a list to a function",
+     "src": "L#28",
+     "h": "\n<p style=\"font-size:14.5px\">Lists can be passed to functions too, whether they hold names, numbers or dictionaries. When you pass a list, the function gets <b>direct access</b> to its contents.</p>\n<h4>Passing a list</h4>\n<pre>def greet_users(names):\n    \"\"\"Print a simple greeting to each user in the list.\"\"\"\n    for name in names:\n        msg = \"Hello, \" + name.title() + \"!\"\n        print(msg)\n\nusernames = ['priyanka', 'unnati', 'anaaya']\ngreet_users(usernames)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Hello, Priyanka!</span>\n<span class=\"o\">Hello, Unnati!</span>\n<span class=\"o\">Hello, Anaaya!</span></pre>\n<p style=\"font-size:14.5px\">The parameter <code>names</code> receives the whole list, and the for loop inside the function greets each user in turn.</p>\n<h4>Modifying a list in a function</h4>\n<p style=\"font-size:14.5px\">Changes a function makes to a list it was given are <b>permanent</b>: the function works on the caller's list itself, not on a copy. That lets a function process lots of data efficiently. His example is a company that 3D-prints designs sent in by users: designs waiting to be printed sit in one list and move to a second list once printed. He first wrote it without functions (a while loop with pop() and append(), then a for loop to show the results), then split it into two functions:</p>\n<pre>def print_models(unprinted_designs, completed_models):\n    \"\"\"\n    Simulate printing each design, until none are left.\n    Move each design to completed_models after printing.\n    \"\"\"\n    while unprinted_designs:\n        current_design = unprinted_designs.pop()\n        print(\"Printing model: \" + current_design)\n        completed_models.append(current_design)\n\ndef show_completed_models(completed_models):\n    \"\"\"Show all the models that were printed.\"\"\"\n    print(\"\\nThe following models have been printed:\")\n    for completed_model in completed_models:\n        print(completed_model)\n\nunprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']\ncompleted_models = []\n\nprint_models(unprinted_designs, completed_models)\nshow_completed_models(completed_models)\nprint(unprinted_designs)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Printing model: dodecahedron</span>\n<span class=\"o\">Printing model: robot pendant</span>\n<span class=\"o\">Printing model: iphone case</span>\n<span class=\"o\"></span>\n<span class=\"o\">The following models have been printed:</span>\n<span class=\"o\">dodecahedron</span>\n<span class=\"o\">robot pendant</span>\n<span class=\"o\">iphone case</span>\n<span class=\"o\">[]</span></pre>\n<ul>\n<li><code>pop()</code> takes from the <b>end</b>, so the dodecahedron is printed first and the completed list comes out in reverse order.</li>\n<li>Afterwards <code>unprinted_designs</code> is <b>empty</b>: the function emptied the original list.</li>\n<li><b>Every function should have one specific job.</b> print_models prints the designs; show_completed_models shows the results. The program is now easier to extend and maintain: to print more designs, just call print_models again; if the printing code needs to change, change it once, in the function.</li>\n<li>If a function is doing too many different tasks, split it into two. A function can also call another function, which helps break a complex task into a series of steps.</li>\n</ul>\n<h4>Preventing a function from modifying a list</h4>\n<p style=\"font-size:14.5px\">Sometimes you want to keep the original, for your records, say. Then pass the function a <b>copy</b> of the list. The slice <code>[:]</code> means every item from the first to the last, and makes a new list; the function's changes then affect only the copy:</p>\n<pre>unprinted_designs = ['ferrari', 'honda', 'ford']\ncompleted_models = []\n\nprint_models(unprinted_designs[:], completed_models)\nshow_completed_models(completed_models)\nprint(unprinted_designs)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Printing model: ford</span>\n<span class=\"o\">Printing model: honda</span>\n<span class=\"o\">Printing model: ferrari</span>\n<span class=\"o\"></span>\n<span class=\"o\">The following models have been printed:</span>\n<span class=\"o\">ford</span>\n<span class=\"o\">honda</span>\n<span class=\"o\">ferrari</span>\n<span class=\"o\">['ferrari', 'honda', 'ford']</span></pre>\n<p style=\"font-size:14.5px\">The copy was emptied; the original still holds all three designs. <code>completed_models</code> is passed as it is, because the whole point is for the function to fill it.</p>\n<div class=\"card\"><b>Practice set from the lecture</b> (30 minutes). (1) <b>City names:</b> <code>city_country()</code> takes a city and its country and <b>returns</b> a string such as \"Chennai, India\"; call it for three pairs and print what comes back. (2) <b>Album:</b> <code>make_album()</code> takes an artist and an album title and returns a dictionary of the two; make three albums and print each. Then add an optional parameter for the number of tracks, added to the dictionary only when given. (3) <b>User albums:</b> a while loop asks for an artist and a title, calls make_album() and prints the dictionary, with a quit value. (4) <b>Magicians:</b> pass a list of magicians' names to <code>show_magicians()</code>, which prints each name. (5) <b>Great magicians:</b> <code>make_great()</code> changes the list by adding \"the Great\" to each name; show the list to see the change. (6) <b>Unchanged magicians:</b> call make_great() with a copy of the list, return the new list and store it separately, then show both lists.</div>\n<p style=\"font-size:14.5px\">One way to write exercise 1:</p>\n<pre>def city_country(city, country):\n    \"\"\"Return a string like 'Chennai, India'.\"\"\"\n    return city.title() + \", \" + country.title()\n\nprint(city_country('chennai', 'india'))\nprint(city_country('santiago', 'chile'))\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Chennai, India</span>\n<span class=\"o\">Santiago, Chile</span></pre>\n<p style=\"font-size:14.5px\">Next session: passing an arbitrary number of arguments, and storing functions in modules. Quiz 2's syllabus names only functions lectures 1 and 2 (L#27–28), so those two topics are not in Quiz 2; expect them later in the course.</p>\n<!--viz:foc-list-copy-compare--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison of two calls to print_models. Passing unprinted_designs leaves it empty afterwards; passing unprinted_designs[:] leaves it as ferrari, honda, ford. Either way completed_models ends as ford, honda, ferrari.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Passing the list or a copy</div><p style=\"margin:0 0 8px;font-family:var(--mono);font-size:13.5px\">unprinted_designs = ['ferrari', 'honda', 'ford']</p><div class=\"scroller\"><table><thead><tr><th>Call</th><th>Function works on</th><th>unprinted_designs after</th><th>completed_models after</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">print_models(unprinted_designs, completed_models)</td><td>the original list</td><td style=\"font-family:var(--mono);background:var(--bad-soft)\">[]</td><td style=\"font-family:var(--mono)\">['ford', 'honda', 'ferrari']</td></tr><tr><td style=\"font-family:var(--mono)\">print_models(unprinted_designs[:], completed_models)</td><td>a copy made by [:]</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">['ferrari', 'honda', 'ford']</td><td style=\"font-family:var(--mono)\">['ford', 'honda', 'ferrari']</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The [:] copy is the only difference, and it decides whether the original survives.</figcaption></figure><!--/viz:foc-list-copy-compare-->"
+    }
+   ]
   }
  ],
  "topics": [
@@ -613,6 +668,10 @@ HUB.addCourse({
   {
    "name": "Input & while loops",
    "unit": "loops"
+  },
+  {
+   "name": "Functions",
+   "unit": "functions"
   }
  ],
  "traps": [
@@ -1374,6 +1433,76 @@ HUB.addCourse({
    "p": "If number = input() and the user types 42, number % 2 raises TypeError: not all arguments converted during string formatting. On a string, % means text formatting, not division. Convert with int() first.",
    "f": "str % → formatting",
    "bk": "Python Crash Course ch7"
+  },
+  {
+   "id": "foc-t0112",
+   "h": "Defining a function doesn't run it",
+   "p": "Python only remembers the def block. The body runs when the function is called, so a function that is never called prints nothing, and lines below the def can run before its body does.",
+   "f": "no call, no run",
+   "lec": 27
+  },
+  {
+   "id": "foc-t0113",
+   "h": "Parameters and arguments are not quite the same thing",
+   "p": "He said the words are used interchangeably, but strictly the parameter is the name in the def line (username) and the argument is the value in the call ('arun').",
+   "f": "def: parameter · call: argument",
+   "lec": 27
+  },
+  {
+   "id": "foc-t0114",
+   "h": "Swapped positional arguments give nonsense, not an error",
+   "p": "describe_pet('bread', 'cow') runs fine and prints \"I have a bread.\" Python matches positional arguments by order and can't tell that the values are in the wrong places.",
+   "f": "order in, order out",
+   "lec": 27
+  },
+  {
+   "id": "foc-t0115",
+   "h": "A parameter with a default can't come before one without",
+   "p": "def f(instructor_name='aman', student_name): is a SyntaxError (parameter without a default follows parameter with a default). Put every defaulted parameter at the end.",
+   "f": "defaults go last",
+   "lec": 27
+  },
+  {
+   "id": "foc-t0116",
+   "h": "The missing-argument error counts only parameters without a default",
+   "p": "For def describe_pet(pet_name, animal_type='dog'), calling describe_pet() reports 1 missing argument, pet_name, not 2. animal_type is already covered by its default.",
+   "f": "defaults never go missing",
+   "lec": 27
+  },
+  {
+   "id": "foc-t0117",
+   "h": "return hands a value back; print only shows it",
+   "p": "A function that prints its result gives the caller nothing to store: x = add_print(2, 3) prints 5 but x is None. Use return when the caller needs the value.",
+   "f": "print shows, return gives",
+   "lec": 28
+  },
+  {
+   "id": "foc-t0118",
+   "h": "The optional middle name's default is an empty string, not a space",
+   "p": "middle_name='' has nothing between the quotes; he called it a space. The empty string is False, so if middle_name: skips the middle part. A space would be True and add extra spaces.",
+   "f": "'' is False",
+   "lec": 28
+  },
+  {
+   "id": "foc-t0119",
+   "h": "Moving the optional parameter to the end changes the call order",
+   "p": "With def get_formatted_name(first_name, last_name, middle_name=''), Lana Del Rey is passed as ('lana', 'rey', 'del'). Passing ('lana', 'del', 'rey') gives Lana Rey Del.",
+   "f": "optional goes last, in both",
+   "lec": 28
+  },
+  {
+   "id": "foc-t0120",
+   "h": "A function's changes to a list you pass in are permanent",
+   "p": "print_models(unprinted_designs, ...) pops every item from the caller's own list, leaving it empty. Pass unprinted_designs[:] to give the function a copy and keep the original.",
+   "f": "[:] protects the original",
+   "lec": 28
+  },
+  {
+   "id": "foc-t0121",
+   "h": "build_person('daksh', 'parashar', age=18) does include the age",
+   "p": "18 is truthy, so if age: adds 'age': 18. The shared notebook's saved output shows no age, but that output is left over from an earlier run.",
+   "f": "run it, don't trust stale output",
+   "lec": 28
   }
  ],
  "defs": [
@@ -2272,6 +2401,110 @@ HUB.addCourse({
    "term": "while value in list:",
    "html": "<b>while 'cat' in pets:</b> uses a membership test as the loop condition: the loop repeats while the value is still in the list. Paired with <b>remove()</b>, which deletes one copy per pass, it clears every copy.",
    "bk": "Python Crash Course ch7"
+  },
+  {
+   "id": "foc-d0115",
+   "unit": "functions",
+   "topic": "Defining and calling a function",
+   "term": "Function",
+   "html": "<b>Function</b>: a named block of code that does one specific job. Written once, it runs whenever it is <b>called</b>, so the same logic is never typed twice.",
+   "lec": 27
+  },
+  {
+   "id": "foc-d0116",
+   "unit": "functions",
+   "topic": "Defining and calling a function",
+   "term": "Docstring",
+   "html": "<b>Docstring</b>: the comment in triple quotes just under the def line, saying in plain English what the function does. It is not printed.",
+   "lec": 27
+  },
+  {
+   "id": "foc-d0117",
+   "unit": "functions",
+   "topic": "Defining and calling a function",
+   "term": "Parameter",
+   "html": "<b>Parameter</b>: a variable named in the def line's parentheses, standing for information the function needs, such as <b>username</b> in def greet_user(username):.",
+   "lec": 27
+  },
+  {
+   "id": "foc-d0118",
+   "unit": "functions",
+   "topic": "Defining and calling a function",
+   "term": "Argument",
+   "html": "<b>Argument</b>: the actual value passed in a function call, such as <b>'arun'</b> in greet_user('arun'). It is stored in the matching parameter.",
+   "lec": 27
+  },
+  {
+   "id": "foc-d0119",
+   "unit": "functions",
+   "topic": "Positional and keyword arguments",
+   "term": "Positional argument",
+   "html": "<b>Positional argument</b>: an argument matched to a parameter by its place in the call: first to first, second to second. Swapping them swaps the values.",
+   "lec": 27
+  },
+  {
+   "id": "foc-d0120",
+   "unit": "functions",
+   "topic": "Positional and keyword arguments",
+   "term": "Keyword argument",
+   "html": "<b>Keyword argument</b>: a name-value pair in the call, such as pet_name='kyle'. Python matches it by name, so the order of keyword arguments doesn't matter.",
+   "lec": 27
+  },
+  {
+   "id": "foc-d0121",
+   "unit": "functions",
+   "topic": "Default values and argument errors",
+   "term": "Default value",
+   "html": "<b>Default value</b>: a value given to a parameter in the def line, as in animal_type='dog'. It is used when the call leaves that argument out and overridden when the call supplies one.",
+   "lec": 27
+  },
+  {
+   "id": "foc-d0122",
+   "unit": "functions",
+   "topic": "Return values and optional arguments",
+   "term": "Return value",
+   "html": "<b>Return value</b>: the value a function sends back, with <b>return</b>, to the line that called it. Store it in a variable, as in developer = get_formatted_name('agastya', 'gupta').",
+   "lec": 28
+  },
+  {
+   "id": "foc-d0123",
+   "unit": "functions",
+   "topic": "Return values and optional arguments",
+   "term": "Optional argument",
+   "html": "<b>Optional argument</b>: one the caller may leave out, made by giving its parameter a default (often an empty string) and putting it last; an <b>if</b> in the body handles both cases.",
+   "lec": 28
+  },
+  {
+   "id": "foc-d0124",
+   "unit": "functions",
+   "topic": "Returning a dictionary",
+   "term": "Returning a dictionary",
+   "html": "<b>Returning a dictionary</b>: building a dictionary in the body and returning it, to hand back several related values at once, as build_person() does with 'first' and 'last'.",
+   "lec": 28
+  },
+  {
+   "id": "foc-d0125",
+   "unit": "functions",
+   "topic": "Passing a list to a function",
+   "term": "Passing a list",
+   "html": "<b>Passing a list</b>: the function gets direct access to the caller's list, so any change it makes (pop, append) is <b>permanent</b>.",
+   "lec": 28
+  },
+  {
+   "id": "foc-d0126",
+   "unit": "functions",
+   "topic": "Passing a list to a function",
+   "term": "list_name[:]",
+   "html": "<b>list_name[:]</b>: a slice of every item, i.e. a copy. Passing print_models(unprinted_designs[:], ...) lets the function empty the copy while the original stays intact.",
+   "lec": 28
+  },
+  {
+   "id": "foc-d0127",
+   "unit": "functions",
+   "topic": "Passing a list to a function",
+   "term": "One job per function",
+   "html": "<b>One job per function</b>: each function should do one specific task, as print_models and show_completed_models do; split a function that does too much.",
+   "lec": 28
   }
  ],
  "questions": [
@@ -9206,6 +9439,635 @@ HUB.addCourse({
    "w": "A flag is just a variable holding True or False; the book says you can call it anything. A descriptive name such as polling_active simply makes the code easier to read. Python has no keyword of that name.",
    "bk": "Python Crash Course ch7",
    "lv": "recall"
+  },
+  {
+   "id": "foc-q0420",
+   "topic": "Functions",
+   "q": "Which keyword starts a function definition in Python?",
+   "c": [
+    "function",
+    "def",
+    "define",
+    "call"
+   ],
+   "a": [
+    1
+   ],
+   "w": "def (short for definition) tells Python that the name after it is a new function. call is what you do later, by writing the name with parentheses; function and define aren't Python keywords.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0421",
+   "topic": "Functions",
+   "q": "In a function, what is the text between triple quotes just below the def line?",
+   "c": [
+    "A string the function prints every time it is called",
+    "The function's return value",
+    "A docstring: a comment describing what the function does",
+    "The list of parameters"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The triple-quoted text is a docstring, a plain-English comment for the reader. It isn't printed: only print() lines in the body produce output.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0422",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef greet():\n    \"\"\"Say hello.\"\"\"\n    print(\"Hello\")",
+   "c": [
+    "Hello",
+    "Hello then Hello",
+    "Nothing: the function is never called",
+    "An error: greet is defined twice"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The def block only defines the function. Nothing calls greet(), so its body never runs and the program prints nothing.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0423",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef show_menu():\n    print(\"Tea or coffee?\")\n\nprint(\"Welcome\")\nshow_menu()",
+   "c": [
+    "Tea or coffee? then Welcome",
+    "Welcome then Tea or coffee?",
+    "Welcome only",
+    "Tea or coffee? only"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Python runs the lines in order, but the def block doesn't run its body. print(\"Welcome\") at the left margin runs first; the body runs only when show_menu() is called on the last line.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0424",
+   "topic": "Functions",
+   "q": "In def greet_user(username): and the call greet_user('arun'), which is the parameter and which is the argument?",
+   "c": [
+    "username is the argument; 'arun' is the parameter",
+    "Both are parameters",
+    "Both are arguments",
+    "username is the parameter; 'arun' is the argument"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The parameter is the name in the definition; the argument is the value in the call, and it gets stored in the parameter. He said the words are often used interchangeably, but this is the strict meaning.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0425",
+   "topic": "Functions",
+   "q": "What happens when this runs?\n\ndef greet_user():\n    print(\"Hello!\")\n\ndef greet_user(username):\n    print(\"Hello, \" + username.title() + \"!\")\n\ngreet_user()",
+   "c": [
+    "It prints Hello!",
+    "It prints Hello, !",
+    "TypeError: greet_user() missing 1 required positional argument: 'username'",
+    "SyntaxError: the function is defined twice"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Defining greet_user again replaces the first version. The new one has a parameter, so a call with empty parentheses no longer works: Python reports the missing username.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0426",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef describe_pet(animal_type, pet_name):\n    print(\"I have a \" + animal_type + \".\")\n    print(\"My \" + animal_type + \"'s name is \" + pet_name.title() + \".\")\n\ndescribe_pet('cow', 'bread')",
+   "c": [
+    "I have a cow. My cow's name is Bread.",
+    "I have a bread. My bread's name is Cow.",
+    "TypeError: the arguments are in the wrong order",
+    "I have a Cow. My Cow's name is bread."
+   ],
+   "a": [
+    0
+   ],
+   "w": "Positional arguments are matched in order: 'cow' goes into animal_type and 'bread' into pet_name, and .title() capitalises only the name.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0427",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef describe_pet(animal_type, pet_name):\n    print(\"I have a \" + animal_type + \".\")\n    print(\"My \" + animal_type + \"'s name is \" + pet_name.title() + \".\")\n\ndescribe_pet('harry', 'hamster')",
+   "c": [
+    "I have a hamster. My hamster's name is Harry.",
+    "TypeError: the arguments are in the wrong order",
+    "I have a harry. My harry's name is Hamster.",
+    "I have a Harry. My Harry's name is hamster."
+   ],
+   "a": [
+    2
+   ],
+   "w": "Python matches positional arguments by order and can't tell they're swapped: 'harry' lands in animal_type and 'hamster' in pet_name. It runs without an error and prints nonsense.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0428",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef describe_pet(animal_type, pet_name):\n    print(\"I have a \" + animal_type + \".\")\n    print(\"My \" + animal_type + \"'s name is \" + pet_name.title() + \".\")\n\ndescribe_pet(pet_name='kyle', animal_type='parrot')",
+   "c": [
+    "I have a kyle. My kyle's name is Parrot.",
+    "I have a parrot. My parrot's name is Kyle.",
+    "SyntaxError: keyword arguments must follow the parameter order",
+    "TypeError: describe_pet() got 2 arguments in the wrong order"
+   ],
+   "a": [
+    1
+   ],
+   "w": "These are keyword arguments, so Python matches each value to the parameter with that name. Their order in the call doesn't matter.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0429",
+   "topic": "Functions",
+   "q": "What is a keyword argument?",
+   "c": [
+    "A Python keyword such as def or return used inside a call",
+    "An argument whose position decides which parameter it fills",
+    "A value given to a parameter in the def line",
+    "A name-value pair in the call, such as pet_name='kyle', matched to the parameter by name"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A keyword argument names its parameter in the call, so its position doesn't matter. A value set in the def line is a default value, and matching by position is what positional arguments do.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0430",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef make_tea(cups, sugar='less'):\n    print(str(cups) + \" cups, \" + sugar + \" sugar\")\n\nmake_tea(2)",
+   "c": [
+    "2 cups, less sugar",
+    "TypeError: make_tea() missing 1 required positional argument: 'sugar'",
+    "2 cups,  sugar",
+    "2 cups, sugar"
+   ],
+   "a": [
+    0
+   ],
+   "w": "sugar has a default value, so leaving it out is allowed: Python uses 'less'. The missing-argument error only happens for parameters without a default.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0431",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef make_tea(cups, sugar='less'):\n    print(str(cups) + \" cups, \" + sugar + \" sugar\")\n\nmake_tea(3, 'no')",
+   "c": [
+    "3 cups, less sugar",
+    "3 cups, no sugar",
+    "TypeError: sugar already has a value",
+    "3 cups, less sugar then 3 cups, no sugar"
+   ],
+   "a": [
+    1
+   ],
+   "w": "An argument given in the call overrides the default for that call, so 'no' replaces 'less'. The default is used only when the argument is left out.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0432",
+   "topic": "Functions",
+   "q": "What happens when this runs?\n\ndef describe_city(city='jodhpur', state):\n    print(city.title() + \" is in \" + state.title() + \".\")\n\ndescribe_city(state='rajasthan')",
+   "c": [
+    "It prints Jodhpur is in Rajasthan.",
+    "TypeError: describe_city() missing 1 required positional argument: 'state'",
+    "It prints  is in Jodhpur.",
+    "SyntaxError: parameter without a default follows parameter with a default"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A parameter with a default must come after all parameters without one. Here state has none but follows city='jodhpur', so the def line itself is rejected and nothing runs, not even the call.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0433",
+   "topic": "Functions",
+   "q": "What does the call describe_pet() report?\n\ndef describe_pet(pet_name, animal_type='dog'):\n    print(\"I have a \" + animal_type + \".\")\n    print(\"My \" + animal_type + \"'s name is \" + pet_name.title() + \".\")\n\ndescribe_pet()",
+   "c": [
+    "TypeError: describe_pet() missing 1 required positional argument: 'pet_name'",
+    "TypeError: describe_pet() missing 2 required positional arguments",
+    "It prints I have a dog. and then stops",
+    "TypeError: describe_pet() missing 1 required positional argument: 'animal_type'"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Only pet_name has no default, so it's the only argument Python reports missing. animal_type falls back to 'dog' and is never missing.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0434",
+   "topic": "Functions",
+   "q": "What does the call describe_pet('harry', 'hamster', 'good') report?\n\ndef describe_pet(pet_name, animal_type='dog'):\n    print(\"I have a \" + animal_type + \".\")\n    print(\"My \" + animal_type + \"'s name is \" + pet_name.title() + \".\")\n\ndescribe_pet('harry', 'hamster', 'good')",
+   "c": [
+    "It prints I have a hamster. My hamster's name is Harry. and ignores 'good'",
+    "TypeError: describe_pet() takes from 1 to 2 positional arguments but 3 were given",
+    "TypeError: describe_pet() missing 1 required positional argument: 'good'",
+    "It prints I have a good. My good's name is Harry."
+   ],
+   "a": [
+    1
+   ],
+   "w": "The function has two parameters, so it takes one or two arguments. A third has nowhere to go, and Python stops with a TypeError instead of ignoring it.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0435",
+   "topic": "Functions",
+   "q": "Given def describe_pet(pet_name, animal_type='dog'), which call does NOT print “I have a hamster.” and “My hamster's name is Harry.”?",
+   "c": [
+    "describe_pet('harry', 'hamster')",
+    "describe_pet(animal_type='hamster', pet_name='harry')",
+    "describe_pet('hamster', 'harry')",
+    "describe_pet(pet_name='harry', animal_type='hamster')"
+   ],
+   "a": [
+    2
+   ],
+   "w": "In this version pet_name comes first, so describe_pet('hamster', 'harry') makes 'hamster' the name and 'harry' the type. The other three are equivalent calls: by position in the right order, or by name in any order.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0436",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef describe_city(city, state='rajasthan'):\n    print(city.title() + \" is in \" + state.title() + \".\")\n\ndescribe_city('pune', state='maharashtra')",
+   "c": [
+    "Pune is in Rajasthan.",
+    "Pune is in Maharashtra.",
+    "TypeError: state already has a default",
+    "Rajasthan is in Maharashtra."
+   ],
+   "a": [
+    1
+   ],
+   "w": "The call supplies state by keyword, which overrides the default 'rajasthan'. city gets 'pune' by position.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0437",
+   "topic": "Functions",
+   "q": "Which benefit of functions did the lecture stress?",
+   "c": [
+    "The logic is written once and called wherever needed, so there are fewer places for errors and fixes are made in one place",
+    "Code inside a function always runs faster than the same code outside it",
+    "A function runs automatically as soon as it is defined",
+    "Functions remove the need for indentation"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Code reuse is the point: write the logic once, call it many times, and fix it in one place. Functions don't speed code up, they run only when called, and their bodies must be indented.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0438",
+   "topic": "Functions",
+   "q": "Why did he recommend descriptive names like pet_name and animal_type for parameters?",
+   "c": [
+    "Python rejects parameter names shorter than four letters",
+    "Descriptive names make a function run faster",
+    "Keyword arguments only work with names that contain an underscore",
+    "Error messages name the parameter, so a clear name tells you what the call is missing"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A traceback such as missing 1 required positional argument: 'pet_name' is only helpful if the name means something. Python has no rule about name length or underscores here.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0439",
+   "topic": "Functions",
+   "q": "What does a return statement do?",
+   "c": [
+    "It prints the value on the screen",
+    "It sends a value back to the line that called the function",
+    "It calls the function again from the start",
+    "It saves the value in a file"
+   ],
+   "a": [
+    1
+   ],
+   "w": "return hands a value back to the calling line, where it can be stored or printed. It doesn't print anything itself; that's print()'s job.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0440",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef get_formatted_name(first_name, last_name):\n    full_name = first_name + ' ' + last_name\n    return full_name.title()\n\ndeveloper = get_formatted_name('agastya', 'gupta')\nprint(developer)",
+   "c": [
+    "agastya gupta",
+    "Agastya gupta",
+    "Agastya Gupta",
+    "Nothing: the function has no print()"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The function returns full_name.title(), and title() capitalises each word. The returned value is stored in developer, and the print() outside the function shows it.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0441",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef add_print(a, b):\n    print(a + b)\n\ndef add_return(a, b):\n    return a + b\n\nx = add_print(2, 3)\ny = add_return(2, 3)\nprint(x, y)",
+   "c": [
+    "5 then 5 5",
+    "5 5",
+    "5 then None 5",
+    "None None"
+   ],
+   "a": [
+    2
+   ],
+   "w": "add_print shows 5 but returns nothing, so x is None; add_return sends 5 back, so y is 5. Only return gives the caller a value it can store.",
+   "lec": 28,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0442",
+   "topic": "Functions",
+   "q": "What happens when this runs?\n\ndef get_formatted_name(first_name, middle_name, last_name):\n    full_name = first_name + ' ' + middle_name + ' ' + last_name\n    return full_name.title()\n\nmusician = get_formatted_name('arijit', 'singh')\nprint(musician)",
+   "c": [
+    "It prints Arijit Singh",
+    "It prints Arijit  Singh with two spaces",
+    "TypeError: get_formatted_name() missing 1 required positional argument: 'middle_name'",
+    "TypeError: get_formatted_name() missing 1 required positional argument: 'last_name'"
+   ],
+   "a": [
+    3
+   ],
+   "w": "All three parameters are required and filled in order: 'arijit' goes to first_name, 'singh' to middle_name, and last_name gets nothing. So Python reports last_name as missing, not middle_name.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0443",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef get_formatted_name(first_name, last_name, middle_name=''):\n    if middle_name:\n        full_name = first_name + ' ' + middle_name + ' ' + last_name\n    else:\n        full_name = first_name + ' ' + last_name\n    return full_name.title()\n\nprint(get_formatted_name('arijit', 'singh'))",
+   "c": [
+    "Arijit Singh",
+    "Arijit  Singh",
+    "TypeError: get_formatted_name() missing 1 required positional argument: 'middle_name'",
+    "Arijit Singh None"
+   ],
+   "a": [
+    0
+   ],
+   "w": "middle_name defaults to an empty string, which is False, so the else branch joins only the first and last names with one space.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0444",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef get_formatted_name(first_name, last_name, middle_name=''):\n    if middle_name:\n        full_name = first_name + ' ' + middle_name + ' ' + last_name\n    else:\n        full_name = first_name + ' ' + last_name\n    return full_name.title()\n\nprint(get_formatted_name('lana', 'del', 'rey'))",
+   "c": [
+    "Lana Del Rey",
+    "Lana Rey Del",
+    "Lana Del  Rey",
+    "TypeError: get_formatted_name() takes 2 positional arguments but 3 were given"
+   ],
+   "a": [
+    1
+   ],
+   "w": "middle_name is now the last parameter, so the third argument fills it: first 'lana', last 'del', middle 'rey'. The function joins first, middle, last, giving Lana Rey Del. To get Lana Del Rey, call ('lana', 'rey', 'del').",
+   "lec": 28,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0445",
+   "topic": "Functions",
+   "q": "In def get_formatted_name(first_name, last_name, middle_name=''), why does if middle_name: skip the middle part when no middle name is given?",
+   "c": [
+    "The default is an empty string, and an empty string counts as False",
+    "The default is a single space, which counts as False",
+    "Python skips any parameter that has a default",
+    "if only checks whether the parameter exists, not its value"
+   ],
+   "a": [
+    0
+   ],
+   "w": "'' has nothing between the quotes: it's an empty string, and empty strings are False. He described it as a space, but a space would count as True and the middle branch would run.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0446",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef build_person(first_name, last_name):\n    person = {'first': first_name, 'last': last_name}\n    return person\n\nstudent = build_person('aryan', 'manhas')\nprint(student)",
+   "c": [
+    "{'first_name': 'aryan', 'last_name': 'manhas'}",
+    "{'first': 'aryan', 'last': 'manhas'}",
+    "{'first': 'Aryan', 'last': 'Manhas'}",
+    "('aryan', 'manhas')"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The function builds a dictionary with the keys 'first' and 'last' and returns it whole. The keys are the strings written in the braces, not the parameter names, and nothing is title-cased.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0447",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef build_person(first_name, last_name, age=''):\n    person = {'first': first_name, 'last': last_name}\n    if age:\n        person['age'] = age\n    return person\n\nstudent = build_person('daksh', 'parashar', age=18)\nprint(student)",
+   "c": [
+    "{'first': 'daksh', 'last': 'parashar'}",
+    "{'first': 'daksh', 'last': 'parashar', 'age': ''}",
+    "TypeError: build_person() got an unexpected keyword argument 'age'",
+    "{'first': 'daksh', 'last': 'parashar', 'age': 18}"
+   ],
+   "a": [
+    3
+   ],
+   "w": "18 is not empty, so if age: is True and the 'age' pair is added. The shared notebook's saved output for this cell shows no age, but it is left over from an earlier run.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0448",
+   "topic": "Functions",
+   "q": "In the greeting loop, what is the difference between full_name = first_name + ' ' + last_name and if f_name == 'q':?",
+   "c": [
+    "Both compare values; == is just stricter",
+    "= assigns a value to a variable; == compares two values and gives True or False",
+    "= compares strings; == compares numbers",
+    "Both assign; == also prints the value"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He stressed it: one equals sign stores a value, two ask whether two values are equal. The if needs a True or False answer, so it uses ==.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0449",
+   "topic": "Functions",
+   "q": "The user types riya, then q, then dev, then gupta. What does the program print besides the prompts?\n\ndef get_formatted_name(first_name, last_name):\n    full_name = first_name + ' ' + last_name\n    return full_name.title()\n\nwhile True:\n    f_name = input(\"First name: \")\n    if f_name == 'q':\n        break\n    l_name = input(\"Last name: \")\n    if l_name == 'q':\n        break\n    print(\"Hello, \" + get_formatted_name(f_name, l_name) + \"!\")",
+   "c": [
+    "Hello, Riya Q! then Hello, Dev Gupta!",
+    "Hello, Dev Gupta!",
+    "Nothing: the loop ends before anyone is greeted",
+    "Hello, Riya!"
+   ],
+   "a": [
+    2
+   ],
+   "w": "riya is the first name, but q at the last-name prompt reaches break, so the loop ends before the greeting lines run. dev and gupta are never asked for.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0450",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef greet_users(names):\n    for name in names:\n        print(\"Hello, \" + name.title() + \"!\")\n\ngreet_users(['priyanka', 'unnati'])",
+   "c": [
+    "Hello, Priyanka! then Hello, Unnati!",
+    "Hello, ['priyanka', 'unnati']!",
+    "Hello, Priyanka!",
+    "TypeError: greet_users() takes a string, not a list"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The whole list goes into names, and the for loop inside the function greets each user in turn. A list can be passed to a function like any other value.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0451",
+   "topic": "Functions",
+   "q": "What does the last line print?\n\ndef print_models(unprinted_designs, completed_models):\n    while unprinted_designs:\n        completed_models.append(unprinted_designs.pop())\n\ndesigns = ['iphone case', 'robot pendant', 'dodecahedron']\ndone = []\nprint_models(designs, done)\nprint(designs)",
+   "c": [
+    "['iphone case', 'robot pendant', 'dodecahedron']",
+    "['dodecahedron', 'robot pendant', 'iphone case']",
+    "[]",
+    "None"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The function pops from the caller's own list, so the change is permanent: after the loop the original is empty. Passing designs[:] would have kept it.",
+   "lec": 28,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0452",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef print_models(unprinted_designs, completed_models):\n    while unprinted_designs:\n        completed_models.append(unprinted_designs.pop())\n\ndesigns = ['ferrari', 'honda', 'ford']\ndone = []\nprint_models(designs[:], done)\nprint(designs, done)",
+   "c": [
+    "['ferrari', 'honda', 'ford'] ['ford', 'honda', 'ferrari']",
+    "[] ['ford', 'honda', 'ferrari']",
+    "['ferrari', 'honda', 'ford'] []",
+    "['ferrari', 'honda', 'ford'] ['ferrari', 'honda', 'ford']"
+   ],
+   "a": [
+    0
+   ],
+   "w": "designs[:] passes a copy, so only the copy is emptied and designs keeps all three. done is passed as it is and fills in pop order, from the end: ford, honda, ferrari.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0453",
+   "topic": "Functions",
+   "q": "What does writing unprinted_designs[:] in a function call pass to the function?",
+   "c": [
+    "The first item of the list",
+    "An empty list",
+    "The original list, locked against changes",
+    "A copy of the whole list, from the first item to the last"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The slice [:] takes every item and makes a new list, so the function's changes hit the copy. Python doesn't lock lists; the original is safe only because the function never sees it.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0454",
+   "topic": "Functions",
+   "q": "Why did he split the 3D-printing code into print_models() and show_completed_models()?",
+   "c": [
+    "Python allows only one loop per function",
+    "Each function then has one specific job, so the code is easier to extend, reuse and change in one place",
+    "Two functions run faster than one",
+    "A function can't both pop from a list and print"
+   ],
+   "a": [
+    1
+   ],
+   "w": "His rule: every function should have one specific job. Then printing more designs is just another call, and a change to the printing code is made once. Nothing in Python forces the split.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0455",
+   "topic": "Functions",
+   "q": "Can the body of one function call another function?",
+   "c": [
+    "Yes, and it helps split a complex task into a series of steps",
+    "No, a function can only call itself",
+    "Only if both functions take the same parameters",
+    "Only if the other function is defined inside it"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He said a function can always call another function, which is useful for breaking a big task into steps. The functions don't need matching parameters or nesting.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0456",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef make_great(names):\n    great = []\n    while names:\n        great.append(names.pop() + ' the Great')\n    return great\n\nmagicians = ['ali', 'dev']\ngreat = make_great(magicians[:])\nprint(magicians, great)",
+   "c": [
+    "['ali', 'dev'] ['Ali the Great', 'Dev the Great']",
+    "[] ['dev the Great', 'ali the Great']",
+    "['ali', 'dev'] ['dev the Great', 'ali the Great']",
+    "['ali the Great', 'dev the Great'] ['ali', 'dev']"
+   ],
+   "a": [
+    2
+   ],
+   "w": "make_great gets a copy, so popping empties only the copy and magicians is unchanged. pop() takes from the end, so dev is handled first, and the new list is returned into great. Nothing is title-cased.",
+   "lec": 28,
+   "lv": "analyse"
   }
  ],
  "briefs": {
@@ -9256,7 +10118,7 @@ HUB.addCourse({
    "scopeShort": "4 topics",
    "tag": "from the official LMS announcement",
    "lede": "Every figure below is from the official LMS announcements: the Quiz 2 notice of 19 October, and the syllabus update of 22 October that narrowed it to four topics.",
-   "html": "<div class=\"grid2\">\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Confirmed on the official announcement</h4>\n        <div class=\"scroller\"><table><tbody>\n          <tr><td><strong>Date</strong></td><td>Saturday 31 October</td></tr>\n          <tr><td><strong>Window</strong></td><td>4:45–5:05 PM IST · join from <strong>4:30 PM</strong></td></tr>\n          <tr><td><strong>Questions</strong></td><td><strong>60</strong>, for <strong>60 marks</strong>, in 20 minutes: about 20 seconds a question</td></tr>\n          <tr><td><strong>Type</strong></td><td>MCQ</td></tr>\n          <tr><td><strong>Weight</strong></td><td>30% of the course. Only the higher of your two quiz scores counts; a missed quiz scores zero</td></tr>\n          <tr><td><strong>Score release</strong></td><td>By Sat 7 November, 5:00 PM (tentative)</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--bad);background:var(--bad-soft)\">\n          <b>Negative marking.</b> +1 correct, <strong>−0.25 for a wrong answer</strong>, 0 if left blank, the same as Quiz 1.\n        </div>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Syllabus</h4>\n        <p style=\"font-size:14.5px\">The syllabus update of 22 October says Quiz 2 covers <strong>only</strong> these four topics:</p>\n        <ol style=\"font-size:14.5px\">\n          <li><strong>Dictionaries</strong> (L#21–23)</li>\n          <li><strong>User input and while loops</strong> (L#25–26)</li>\n          <li><strong>If statements</strong> (L#17–20)</li>\n          <li><strong>Functions, lectures 1 and 2</strong></li>\n        </ol>\n        <div class=\"warnbox\" style=\"margin-top:10px\"><b>Changed on 22 October.</b> The first notice said “all topics covered till 25 October”; the update replaces that. Lists, tuples and the first half of the course (Quiz 1's material) are not on Quiz 2. The mock paper below now draws only from these four topics.</div>\n        <div class=\"def\" style=\"margin-top:10px\"><b>From the lecture (L#24):</b> Dr. Pathak said there is one more quiz, at the end of October, and no third quiz.</div>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">On the day</h4>\n        <ul style=\"font-size:14.5px\"><li><strong>Show your rough sheets to the camera</strong> before and after the attempt.</li><li>A Zoom helpdesk runs 4:30–5:05 PM for technical problems only; the link is in the LMS announcement.</li></ul>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Before the day</h4>\n        <ul style=\"font-size:14.5px\">\n          <li>Do the <strong>demo evaluation</strong> on the LMS first. Students who skip it get no extra time for setup failures.</li>\n          <li>Dual-device proctoring: a <strong>personal</strong> laptop or desktop, the latest <strong>Google Chrome</strong>, webcam and microphone on, and a charged phone as the second camera.</li>\n          <li>Join during the 15-minute buffer: joining late cuts your own time, because the end time doesn't move.</li>\n          <li>Keep the camera, microphone and phone on throughout; a disconnection can invalidate the attempt.</li>\n        </ul>\n      </div>\n    </div>"
+   "html": "<div class=\"grid2\">\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Confirmed on the official announcement</h4>\n        <div class=\"scroller\"><table><tbody>\n          <tr><td><strong>Date</strong></td><td>Saturday 31 October</td></tr>\n          <tr><td><strong>Window</strong></td><td>4:45–5:05 PM IST · join from <strong>4:30 PM</strong></td></tr>\n          <tr><td><strong>Questions</strong></td><td><strong>60</strong>, for <strong>60 marks</strong>, in 20 minutes: about 20 seconds a question</td></tr>\n          <tr><td><strong>Type</strong></td><td>MCQ</td></tr>\n          <tr><td><strong>Weight</strong></td><td>30% of the course. Only the higher of your two quiz scores counts; a missed quiz scores zero</td></tr>\n          <tr><td><strong>Score release</strong></td><td>By Sat 7 November, 5:00 PM (tentative)</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--bad);background:var(--bad-soft)\">\n          <b>Negative marking.</b> +1 correct, <strong>−0.25 for a wrong answer</strong>, 0 if left blank, the same as Quiz 1.\n        </div>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Syllabus</h4>\n        <p style=\"font-size:14.5px\">The syllabus update of 22 October says Quiz 2 covers <strong>only</strong> these four topics:</p>\n        <ol style=\"font-size:14.5px\">\n          <li><strong>Dictionaries</strong> (L#21–23)</li>\n          <li><strong>User input and while loops</strong> (L#25–26)</li>\n          <li><strong>If statements</strong> (L#17–20)</li>\n          <li><strong>Functions, lectures 1 and 2</strong> (L#27–28: defining functions, positional and keyword arguments, defaults, return values, passing lists)</li>\n        </ol>\n        <div class=\"warnbox\" style=\"margin-top:10px\"><b>Changed on 22 October.</b> The first notice said “all topics covered till 25 October”; the update replaces that. Lists, tuples and the first half of the course (Quiz 1's material) are not on Quiz 2. The mock paper below now draws only from these four topics.</div>\n        <div class=\"def\" style=\"margin-top:10px\"><b>From the lecture (L#24):</b> Dr. Pathak said there is one more quiz, at the end of October, and no third quiz.</div>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">On the day</h4>\n        <ul style=\"font-size:14.5px\"><li><strong>Show your rough sheets to the camera</strong> before and after the attempt.</li><li>A Zoom helpdesk runs 4:30–5:05 PM for technical problems only; the link is in the LMS announcement.</li></ul>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Before the day</h4>\n        <ul style=\"font-size:14.5px\">\n          <li>Do the <strong>demo evaluation</strong> on the LMS first. Students who skip it get no extra time for setup failures.</li>\n          <li>Dual-device proctoring: a <strong>personal</strong> laptop or desktop, the latest <strong>Google Chrome</strong>, webcam and microphone on, and a charged phone as the second camera.</li>\n          <li>Join during the 15-minute buffer: joining late cuts your own time, because the end time doesn't move.</li>\n          <li>Keep the camera, microphone and phone on throughout; a disconnection can invalidate the attempt.</li>\n        </ul>\n      </div>\n    </div>"
   }
  },
  "bookPacks": [
@@ -9276,6 +10138,8 @@ HUB.addCourse({
   "lec-24",
   "lec-25",
   "lec-26",
-  "pcc1-ch07"
+  "pcc1-ch07",
+  "lec-27",
+  "lec-28"
  ]
 });

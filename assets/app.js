@@ -326,7 +326,7 @@ function homeView() {
 
   <div class="hubnote"><b>How quizzes are marked.</b> ${esc(M.note)}. A blind guess between four options is worth +0.06; rule out
     one option and it rises to +0.17. Since 14 October every course is graded the same way: <strong>two quizzes, and only the higher score counts</strong>,
-    for 30%; the offline end-term exam is 70%. Foundations of Computing's end-term is pen and paper, including writing Python by hand.</div>`;
+    for 30%; the offline end-term exam is 70%, and the offline exams run from <strong>4 to 6 December</strong>. Foundations of Computing's end-term is pen and paper, including writing Python by hand.</div>`;
 }
 
 /* =================================================================

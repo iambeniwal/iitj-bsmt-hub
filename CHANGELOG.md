@@ -10,6 +10,16 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.4.2] — 2026-10-30
+
+### Added
+- **Foundations of Computing: Functions Parts 1 and 2 (L#27–28)**, which are on tomorrow's Quiz 2:
+  defining and calling functions, positional, keyword and default arguments, return values, and
+  passing a list (or a copy of it). 37 questions in a new Functions unit, every code answer run;
+  the Quiz 2 mock paper now includes them. Where the lecture's notebook output is stale or the
+  lecture misspeaks (an empty-string default called "a space"), the notes say so.
+- **Offline exams run 4–6 December** (LMS, 28 October), now in the home page's grading note.
+
 ## [2.4.1] — 2026-10-30
 
 ### Fixed
