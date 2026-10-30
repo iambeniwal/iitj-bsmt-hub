@@ -163,6 +163,18 @@ HUB.addCourse({
    "Week 10 — Rise of Large Corporations",
    "Railroads, mass production, joint stock, integration",
    "rec"
+  ],
+  [
+   27,
+   "Week 11 — Impact of World Wars on Business",
+   "State control, war industries, US rise, India",
+   "rec"
+  ],
+  [
+   28,
+   "Week 11 — Role of Indian Entrepreneurs during Colonial Rule",
+   "EIC charters 1600–1813; brokers, bankers, shipbuilders",
+   "rec"
   ]
  ],
  "units": [
@@ -633,6 +645,62 @@ HUB.addCourse({
      "h": "<p>Around 1900 Alfred Marshall's Principles of Economics (1890) gave economics its familiar tools: supply and demand as two blades of a pair of scissors meeting at the equilibrium price, and the distinction between fixed and variable costs. After J.P. Morgan personally halted the 1907 banking panic, bankers secretly designed what became the Federal Reserve (1913); central banks stabilise systems in which banks borrow short and lend long, mainly by guaranteeing deposits. Business was reinvented: Ford's assembly line (proposed in 1908 after a slaughterhouse visit; the moving line ran from 1913) brought the car to the parts; Selfridges made shopping an experience; Woolworth's chain used buying power to pile goods high and sell them cheap. Faster steamships fuelled mass migration until the First World War, which the Allies — with far more people, land and income — won at a cost of about 20 million lives, while Russia's 1917 revolution brought civil war and famine. A box explains the tragedy of the commons and Ostrom's evidence that communities can avoid it.</p><!--viz:ebh-car-to-the-parts--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A Chicago slaughterhouse, where carcasses moved past workers each making one cut, inspires Ford in 1908. Below, two panels: with the car standing still, parts and workers come to it; on the assembly line the car moves past stationary workers, each repeating one task.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The flip: the car moves, the workers stay</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Chicago slaughterhouse</b><br><span style=\"color:var(--ink-2);font-size:13px\">carcass moves · one cut per worker</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>1908</b> · Peter Martin borrows it for Ford</div></div><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:6px;font-size:14px\"><div style=\"padding:10px 12px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><div style=\"font-size:12.5px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px\">The other way round</div><b>The car stands still</b><br><span style=\"color:var(--ink-2);font-size:13px\">parts and workers are brought to it</span></div><div style=\"padding:10px 12px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><div style=\"font-size:12.5px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px\">Assembly line</div><b>The car moves to the parts</b><br><span style=\"color:var(--ink-2);font-size:13px\">each worker stays put and repeats one standard task · cars come off so fast that only quick-drying black paint keeps up</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Leigh's point is the reversed flow; the lecture's 84 steps (L#26) describe how finely the work was split.</figcaption></figure><!--/viz:ebh-car-to-the-parts--><!--viz:ebh-selfridges-vs-woolworth--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table comparing Selfridges (London, 1909, competing on the shopping experience) with Woolworth (US five-and-dime chain of 596 stores in 1912, competing on price through buying power), with a note on who gains and loses from Woolworth's model.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Two ways to build a big retailer</div><div class=\"scroller\"><table><thead><tr><th></th><th>Selfridges</th><th>Woolworth</th></tr></thead><tbody><tr><td>Where, when</td><td>Oxford Street, London, 1909</td><td>US five-and-dime stores; 596 of them when it floated in 1912</td></tr><tr><td>Competes on</td><td style=\"background:var(--blue-soft)\"><b>Experience</b></td><td style=\"background:var(--clay-soft)\"><b>Price</b></td></tr><tr><td>How</td><td>goods you can handle · specialist staff · perfume by the entrance · shoppers called guests</td><td>goods at five or ten cents · a chain big enough to push suppliers' prices down</td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\">Woolworth's heirs, in Leigh's list, include Walmart, Tesco and Aldi: lower prices for shoppers and better returns for shareholders, while suppliers and small independent shops are squeezed.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Scale, not just a new factory, made Woolworth big: size became bargaining power over suppliers.</figcaption></figure><!--/viz:ebh-selfridges-vs-woolworth--><p><strong>The assembly line</strong> — In 1908 Ford executive Peter Martin proposed an assembly line, inspired by a Chicago slaughterhouse where carcasses moved past workers each making one cut. Moving the car towards the parts, rather than bringing the parts to the car, made production so fast that colour choice was dropped: black paint dried fastest. Leigh's 1908 is the proposal; Ford's moving line ran from 1913, the lecture's 1910s.</p><p><strong>Retail innovation: experience vs price</strong> — Selfridges (London, 1909) made shopping enjoyable — goods customers could handle, specialist staff, perfume at the entrance, customers called 'guests', 'the customer is always right'. Woolworth's five-and-dime chain (596 stores when it floated in 1912) used scale to squeeze suppliers and cut prices, the model of Walmart, Tesco and Aldi. The float also gave Woolworth outside shareholders, the joint-stock route to capital in L#26.</p><p><strong>Mass migration</strong> — Steel-hulled, coal-powered ships cut the Liverpool–New York crossing from 53 days (1850s) to 8 (1910s), and passports were rarely needed. These are the faster ships behind the first of L#26's four factors. Leigh stresses migrants add supply (workers, ideas) as well as demand.</p><div class=\"card\"><strong>Case: Ford's assembly line</strong> <em>(Ch. 6, Ford Motor Company, from 1908)</em><p>A Ford executive, inspired by a slaughterhouse's moving line of carcasses, proposed moving cars past specialised workers. Output rose so fast that the firm stopped offering colours and painted every car black, the quickest-drying paint.</p><p><em>Lesson:</em> Division of labour applied to moving production — the heart of mass production.</p><p><em>Think:</em> What trade-off did Ford make between variety and cost, and why did it pay?</p></div><div class=\"card\"><strong>Case: Woolworth's five-and-dime chain</strong> <em>(Ch. 6, Frank Woolworth's stores)</em><p>Woolworth's low-price stores grew into a nationwide chain listed on the stock market. Its size gave it the buying power to extract lower prices from suppliers, a strategy today's supermarket giants still use, benefiting shoppers and shareholders but squeezing suppliers and small shops.</p><p><em>Lesson:</em> Scale creates bargaining power — a feature of the rise of large corporations.</p><p><em>Think:</em> Who gains and who loses when a large retail chain uses its buying power?</p></div><details><summary>Worked problem: Short-run pricing with fixed and variable costs</summary><p>A textile unit has fixed costs of ₹6 lakh a month (rent, machine loans) and variable costs of ₹150 per metre. A buyer offers ₹180 a metre for 10,000 metres this month, when the unit would otherwise sit idle. Should it accept?</p><ol><li>Revenue = 10,000 × ₹180 = ₹18 lakh.</li><li>Extra (variable) cost = 10,000 × ₹150 = ₹15 lakh.</li><li>Fixed costs of ₹6 lakh are paid either way, so they do not change the decision.</li><li>Contribution = ₹18 lakh − ₹15 lakh = ₹3 lakh toward fixed costs.</li></ol><p><strong>Answer:</strong> Accept: the order covers variable cost and adds ₹3 lakh toward fixed costs. In the long run, though, prices must cover all costs or the firm closes — Marshall's distinction.</p></details><div class=\"def\"><b>Book vs lecture — When Ford's assembly line began.</b> Book: Leigh dates it to 1908, when Ford executive Peter Martin proposed it after visiting a Chicago slaughterhouse. Lecture: L#26 put Ford's line in 'the 1910s, 1920s' and once in 'the 1920s and 1930s'. The moving line ran at Ford's Highland Park plant from 1913. <b>Answer the 1910s in the quiz (1913 if a year is asked). 1908 is the year the idea was proposed; the 1920s–30s was a slip.</b></div><div class=\"def\"><b>Book vs lecture — What made the assembly line new.</b> Book: The radical step was flipping the flow: the car moved towards the parts, and each worker made one standard contribution, as slaughterhouse workers each made one cut. Lecture: L#26 stressed breaking car assembly into 84 standardised, repetitive steps, so that workers became replaceable: division of labour taken to an extreme, straight after Taylor's time and motion studies. <b>Two views of one line, not a conflict. For quiz questions on Ford use the lecture's 84 steps, standardisation and replaceable workers; the moving car and the slaughterhouse origin are the book's extra context.</b></div><div class=\"def\"><b>Book vs lecture — Who gets the credit for the line.</b> Book: Leigh credits the car's evolution to specialisation and names neither Adam Smith, Taylor nor Fayol in this chapter. Lecture: L#23 and L#26 trace the line to Smith's division of labour (1776) and Taylor's standardised tasks (1898–1901); L#25 and L#26 tie running a big firm to Fayol's top-down management. <b>Use the lecture's chain, Smith, then Taylor, then Ford, in Module 4 answers. This chapter alone won't give it.</b></div><div class=\"def\"><b>Book vs lecture — How much faster ships got.</b> Book: Migrant ships from Liverpool to New York took 53 days in the 1850s and 8 days by the 1910s, thanks to steel hulls and coal engines. Lecture: L#26 said railroads and ships cut journeys from '20 days' to '2 days', a round illustration of distance collapsing (his first factor). <b>The lecture's 20 to 2 is an illustration, not a measured route. If a question quotes Leigh's Liverpool–New York route, it is 53 to 8 days.</b></div><div class=\"def\"><b>Book vs lecture — Why firms grew so large.</b> Book: Leigh's business examples are Ford's line and retail chains whose size gave buying power over suppliers (Woolworth had 596 stores when it floated in 1912). Lecture: L#26 gave four factors: railroad and telegraph networks, mass production, the joint-stock corporation, and horizontal and vertical integration. Retail chains were not among his examples. <b>Learn the lecture's four factors. Woolworth's float is an example of the joint-stock factor; its supplier squeeze is scale, not integration, because it did not buy its suppliers.</b></div>"
     }
    ]
+  },
+  {
+   "id": "wars",
+   "title": "Impact of the World Wars on business",
+   "tag": "Lecture 27 · Module 4",
+   "lede": "How the two World Wars changed business: governments took control (state capitalism), war industries boomed, trade broke down and colonies such as India filled the gaps, while the US rose as Europe weakened.",
+   "topics": [
+    {
+     "t": "The two World Wars: dates, sides and why colonies fought",
+     "src": "L#27",
+     "h": "\n<div class=\"def\">The third and last topic of <b>Module 4</b> (business history, 1800s–1950): how the <b>First World War (1914–1918)</b> and the <b>Second World War (1939–1945)</b> changed business. He draws examples from both sides of each war, from Britain, France, Germany and the US. In his own numbering this is <b>Module 4, Lecture 21</b>.</div>\n<h4>Who fought on which side (L#27 slides)</h4>\n<div class=\"scroller\"><table><thead><tr><th>War</th><th>Allied Powers</th><th>The other side</th></tr></thead><tbody><tr><td><strong>WWI</strong><br>1914–1918</td><td>Great Britain (with the British Empire), France, Russia (withdrew in 1917), Italy, Japan, and the United States (entered in 1917)</td><td><strong>Central Powers</strong>: Germany, Austria-Hungary, the Ottoman Empire, Bulgaria</td></tr><tr><td><strong>WWII</strong><br>1939–1945</td><td>United States, Great Britain (with the British Empire), the Soviet Union, China, France</td><td><strong>Axis Powers</strong>: Nazi Germany, the Empire of Japan, Fascist Italy</td></tr></tbody></table></div>\n<ul>\n <li><strong>Empires went to war, not single countries.</strong> When Britain entered, its whole empire entered with it, so <strong>India fought in both wars as a British colony</strong>, not by its own decision. Russia, too, went in as the Russian Empire.</li>\n <li><strong>Russia left in 1917</strong>, when the Russian Revolution brought in a new government that pulled out of the war.</li>\n <li><strong>From one war to the next.</strong> The Allies won WWI, and the <strong>Treaty of Versailles</strong> made Germany pay heavy penalties for the damage. Germany's sense that it had been punished unfairly helped bring the <strong>Nazi party</strong> to power, and its attacks on neighbouring countries in <strong>September 1939</strong> started WWII.</li>\n <li><strong>Not everyone joined at once.</strong> Britain and France were in WWII from the start. The <strong>US entered in 1941</strong>, after Japan attacked <strong>Pearl Harbor</strong>. The war ended after the atomic bombs on <strong>Hiroshima (6 August 1945)</strong> and <strong>Nagasaki (9 August 1945)</strong>.</li>\n <li>The fighting was concentrated in <strong>Europe</strong>, and in WWII also the Pacific. The wars still reshaped geopolitics: Britain and France weakened, and the <strong>United States</strong> rose to dominate world affairs, economically and militarily.</li>\n</ul>\n<div class=\"warnbox\"><b>Dates to get right.</b> He put the Nazis' rise to power at \"1934, 33–34\": Hitler became Chancellor of Germany in <b>January 1933</b>. WWII began when Germany invaded Poland on <b>1 September 1939</b>. Russia's new government agreed an armistice in December 1917 and signed its exit treaty (Brest-Litovsk) in March 1918; the slide's \"withdrew in 1917\" is the usual short form. <b>Italy and Japan</b> were Allies in WWI but Axis powers in WWII.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: the WWI armistice was signed on 11 November 1918 and the Treaty of Versailles in 1919. Japan formally surrendered on 2 September 1945. The L#19 notes (Colonies unit) gave Germany's late industrialisation, with the colonies already taken, as one root of the World Wars.</p>\n<!--viz:ebh-wars-four-impacts--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow from the two World Wars to four impacts on business: more government control leading to state capitalism, growth of war industries, disrupted trade and scarce raw materials, and restructured emerging markets such as India; overall the US rose, Europe weakened and decolonisation followed 1945.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Four impacts of the World Wars on business</div><div style=\"padding:9px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2);font-size:14px;text-align:center\"><b>WWI (1914–18) and WWII (1939–45)</b></div><div style=\"text-align:center;color:var(--ink-3);margin:6px 0\">↓</div><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:6px;font-size:14px\"><div style=\"padding:9px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>1 · More government control</b><br><span style=\"color:var(--ink-2);font-size:13px\">directs factories · prices · raw materials · trade quotas → state capitalism</span></div><div style=\"padding:9px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>2 · Growth of war industries</b><br><span style=\"color:var(--ink-2);font-size:13px\">Renault, Ford, DuPont, IG Farben, Gillette, Coca-Cola, Dehomag · faster innovation</span></div><div style=\"padding:9px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>3 · Disrupted trade, scarce raw materials</b><br><span style=\"color:var(--ink-2);font-size:13px\">shipping attacked or blocked · trade restrictions</span></div><div style=\"padding:9px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>4 · Emerging markets restructured</b><br><span style=\"color:var(--ink-2);font-size:13px\">British imports to India fall · Indian firms supply jute, textiles, steel rails</span></div></div><div style=\"text-align:center;color:var(--ink-3);margin:6px 0\">↓ overall</div><div style=\"padding:9px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft);font-size:14px;text-align:center\">US rises as Europe weakens · decolonisation after 1945</div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The four numbered boxes are the lecture's four impacts; the US rise and decolonisation are the backdrop.</figcaption></figure><!--/viz:ebh-wars-four-impacts-->"
+    },
+    {
+     "t": "Impact 1: government control and state capitalism",
+     "src": "L#27",
+     "h": "\n<p style=\"font-size:14.5px\">The first of his <strong>four impacts</strong>: governments took far greater control of business. The slide's heading puts it as an increase in government control that <strong>gave rise to state capitalism</strong>.</p>\n<div class=\"scroller\"><table><thead><tr><th>Before the wars</th><th>During the wars</th></tr></thead><tbody><tr><td>Governments <strong>licensed</strong> firms and set policies that helped them, for example securing raw material. Britain's colonial policy shipped Indian cotton to British mills and sold the finished cloth back in India</td><td>Governments <strong>directed factories</strong> to switch from civilian goods to military production</td></tr><tr><td>Imports and exports needed <strong>permission</strong>, but the state did not fix <strong>quantities</strong></td><td>Governments <strong>controlled imports and exports</strong>, quantities included</td></tr><tr><td>No control of <strong>prices</strong>, <strong>raw-material allocation</strong> or hiring and firing</td><td>Governments <strong>regulated prices</strong> and <strong>allocated raw materials</strong></td></tr></tbody></table></div>\n<div class=\"def\"><b>State capitalism</b>: the government, not the market, decides what is produced, how much, where it is sold and at what price. Under free-market capitalism each firm and individual decides these for itself.</div>\n<ul>\n <li><strong>His Indian parallel:</strong> the pre-1991 <strong>License Raj</strong> (L#5), when the state licensed each plant and also set prices, allocated raw material and capped how much each plant could make. He also mentioned some sectors in China and the old Soviet Union.</li>\n <li><strong>Why it mattered:</strong> it showed that economic development <strong>regulated, and largely controlled, by government</strong> was possible. It happened under war conditions, but the idea shaped movements after the wars, which another course takes up.</li>\n</ul>\n<h4>Factories switched to war materiel</h4>\n<ul>\n <li><strong>Renault (France)</strong>, a car maker, was told to build tanks. The result, the <strong>Renault FT</strong> of WWI, is called the <strong>world's first modern tank</strong>; later tanks follow its basic design. His point: war destroys, but it also drives <strong>technical innovation</strong>.</li>\n <li><strong>Ford Motor Company (US)</strong> moved from civilian cars to <strong>vehicles and other military supplies</strong>. War orders helped Ford <strong>perfect mass production</strong>, the link back to L#26 and the management thought of L#23 and L#25.</li>\n</ul>\n<h4>WWI and WWII compared (L#27 slides)</h4>\n<ul>\n <li><strong>WWI:</strong> heavy wartime <strong>taxation</strong>, <strong>price controls</strong> and the state's command redirection of private factories.</li>\n <li><strong>WWII:</strong> <strong>deep state–corporate integration</strong>, such as the US <strong>War Production Board</strong>, and huge national debts financed through <strong>war bonds</strong>.</li>\n</ul>\n<div class=\"warnbox\"><b>Ford: which war?</b> He placed Ford building \"tanks and aircraft\" in 1914–18, after the US entered in 1917. The slide says only \"vehicles and other military-related supplies\". Ford's great aircraft programme came in <b>WWII</b> (B-24 bombers at its Willow Run plant); in WWI it built trucks, ambulances and Liberty aero-engines. The Renault FT is <b>WWI</b> (1917).</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: the US War Production Board was created in January 1942, a month after Pearl Harbor.</p>\n"
+    },
+    {
+     "t": "Impact 2: war industries and wartime innovation",
+     "src": "L#27",
+     "h": "\n<p style=\"font-size:14.5px\">The second impact: <strong>war industries grew</strong>, and with them many of today's big companies. The table below sorts the lecture's firms by war; the notes here give his reasons.</p>\n<ul>\n <li><strong>Chemicals and explosives.</strong> Soldiers' guns and shells need explosives, so <strong>DuPont</strong> (US) raised its capacity <strong>70 times over</strong> by 1917 and supplied <strong>about 40%</strong> of the Allies' explosives. His chain of effects: more production → more jobs → more money in people's pockets → more spending, plus more <strong>taxes</strong> for public works. DuPont's know-how also made the US stronger <strong>militarily</strong>. <strong>IG Farben</strong> (Germany) made <strong>fuel and rubber from domestic coal</strong> for Nazi Germany.</li>\n <li><strong>Consumer goods.</strong> In <strong>1917</strong> the US government ordered <strong>3.5 million safety razors and 32 million blades</strong> from <strong>Gillette</strong>: soldiers were to shave daily, which made daily shaving a norm and gave Gillette a <strong>guaranteed</strong> buyer. <strong>Coca-Cola</strong> lobbied to be <strong>exempt from sugar rationing</strong> because it was vital for <strong>troop morale</strong>, then built <strong>64 overseas bottling plants</strong> near the front lines. Those plants stayed after the war, which made it a <strong>global household name</strong>. Clothing firms switched to <strong>military uniforms</strong>.</li>\n <li><strong>Punch cards and IT.</strong> <strong>Dehomag</strong>, the <strong>German subsidiary of IBM</strong>, supplied the Nazi government with <strong>Hollerith punch-card machines</strong>, used to enumerate the population, with horrifying results. He stressed it was the subsidiary, not IBM itself.</li>\n <li><strong>Business across war lines.</strong> His wider point: firms follow their economic interests, and some served both sides. Coca-Cola also sold in wartime Germany, he said perhaps under the name <strong>Fanta</strong>.</li>\n</ul>\n<h4>Faster innovation</h4>\n<ul>\n <li>Mostly in <strong>weapons</strong> and <strong>communications</strong>.</li>\n <li><strong>Operations research</strong> began in <strong>WWII</strong>, when Britain had to allocate very limited resources optimally; researchers turned it into a field.</li>\n <li>Military technology often moves to <strong>civilian use</strong> in peacetime. His example was <strong>GPS</strong>, built for the military and now inside Google Maps and smartphone apps.</li>\n</ul>\n<div class=\"warnbox\"><b>Which war, and what grew 70 times.</b> Coca-Cola's sugar exemption and its 64 bottling plants are <b>WWII</b> (he said both wars, \"much more\" WWII). DuPont, Gillette and the Renault FT are <b>WWI</b>; IG Farben and Dehomag are <b>WWII</b>. The slide's \"70 times\" is DuPont's <b>capacity</b>; later he said its \"exports\" rose 70 times. His worked figure was muddled too: 1,000 tonnes × 70 is <b>70,000 tonnes</b>, not 17,000. <b>GPS</b> is not a World War invention: the US military built it from the 1970s; he used it only to show the military-to-civilian pattern.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Fanta was created in 1940 by Coca-Cola's German business when wartime blockades stopped it importing Coca-Cola syrup.</p>\n<!--viz:ebh-wars-firms-by-war--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of the lecture's wartime firms. WWI: Renault (France) built the Renault FT tank; DuPont (US) raised capacity 70 times by 1917 and supplied about 40% of Allied explosives; Gillette (US) received a 1917 order for 3.5 million razors and 32 million blades. Ford (US) made military vehicles in both wars. WWII: IG Farben (Germany) made fuel and rubber from coal; Coca-Cola (US) won a sugar-rationing exemption and built 64 bottling plants; Dehomag, IBM's German subsidiary, supplied punch-card machines to the Nazi government.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The lecture's firms, sorted by war</div><div class=\"scroller\"><table><thead><tr><th>Firm</th><th>Country</th><th>War</th><th>What the war meant for it</th></tr></thead><tbody><tr><td><strong>Renault</strong></td><td>France</td><td style=\"background:var(--blue-soft)\">WWI</td><td>Renault FT, the world's first modern tank</td></tr><tr><td><strong>DuPont</strong></td><td>US</td><td style=\"background:var(--blue-soft)\">WWI</td><td>capacity ×70 by 1917; about 40% of the Allies' explosives</td></tr><tr><td><strong>Gillette</strong></td><td>US</td><td style=\"background:var(--blue-soft)\">WWI</td><td>1917 order: 3.5 million razors, 32 million blades</td></tr><tr><td><strong>Ford</strong></td><td>US</td><td style=\"\">both</td><td>military vehicles and supplies; perfected mass production</td></tr><tr><td><strong>IG Farben</strong></td><td>Germany</td><td style=\"background:var(--clay-soft)\">WWII</td><td>fuel and rubber made from domestic coal</td></tr><tr><td><strong>Coca-Cola</strong></td><td>US</td><td style=\"background:var(--clay-soft)\">WWII</td><td>sugar-rationing exemption; 64 bottling plants near the front</td></tr><tr><td><strong>Dehomag (IBM's German subsidiary)</strong></td><td>Germany</td><td style=\"background:var(--clay-soft)\">WWII</td><td>punch-card machines for the Nazi government</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Blue marks WWI, clay WWII: Coca-Cola's plants and Dehomag belong to the second war.</figcaption></figure><!--/viz:ebh-wars-firms-by-war-->"
+    },
+    {
+     "t": "Impacts 3 and 4: trade disruption, emerging markets and the US rise",
+     "src": "L#27",
+     "h": "\n<h4>Impact 3: disrupted trade and scarce raw materials</h4>\n<ul>\n <li><strong>Shipping routes</strong> were attacked or blocked, and many countries imposed <strong>trade restrictions</strong>. In WWI the Ottoman Empire fought Britain, which cut across Britain's routes to the East.</li>\n <li>Britain's colonial pattern, Indian raw material out and British finished goods in, broke down.</li>\n</ul>\n<h4>Impact 4: emerging markets restructured</h4>\n<ul>\n <li>In <strong>WWI</strong>, British manufacturing was diverted <strong>completely to the war effort</strong>, so <strong>imports into India fell sharply</strong>.</li>\n <li><strong>Indian business groups filled the gap</strong> and made large profits supplying <strong>jute, textiles</strong> (uniforms included) and <strong>steel rails</strong>, for the military and for civilians. They won market share once held by British makers, and the experience helped Indian industry after independence.</li>\n <li>As a British colony, India also had soldiers in the field who needed supplies, which added to the demand.</li>\n</ul>\n<h4>United States vs Europe</h4>\n<p style=\"font-size:14.5px\">The comparison table below is his slide on WWI. Why the US gained: it was <strong>far from the fighting</strong>, so its factories, railways and cities were not destroyed; its firms <strong>supplied the Allies</strong>; jobs, spending and tax revenue rose; and it had <strong>no reconstruction</strong> to pay for. WWI started its rise as an economic and military power; WWII <strong>cemented</strong> its superpower status, and in August 1945 it became the only country to have used nuclear weapons in war.</p>\n<h4>Afterwards: decolonisation</h4>\n<ul>\n <li>After 1945 the European powers were too weak to hold their empires, power had shifted to the US, and there was a broad view that colonies could not be ruled indefinitely.</li>\n <li>Colonies with strong freedom movements, <strong>India</strong> among them, won independence in the years after 1945, across Asia and Africa. The new nations made their own economic policies, which changed international business.</li>\n</ul>\n<div class=\"def\"><b>From the lecture (L#27):</b> he summed up <b>four impacts</b>, the same four as the recap slide: (1) more <b>government control</b>, giving rise to state capitalism; (2) the <b>growth of war industries</b>; (3) <b>disrupted international trade and shortages of raw materials</b>; (4) the <b>restructuring of emerging markets</b>. The US–Europe comparison and decolonisation are background to these, not a fifth impact. He said the wars' effect on <b>Indian</b> business comes in more detail in <b>Module 5</b>; the course outline lists \"Impact of World Wars on Business in India\" there. This lecture was released on 25 October, after the Quiz 2 cut-off (recorded lectures #15–26), so it is not in Quiz 2; expect it in the end-term exam.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Tata Steel, which made its first steel in 1912, supplied rails for the British campaign in Mesopotamia in WWI, and Bengal's jute mills made sandbags for the trenches. India became independent in 1947. Leigh's chapter on the First World War (textbook, Economic ideas unit) adds the macro view: the Allies' far bigger economy decided the war.</p>\n<!--viz:ebh-wars-us-vs-europe--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison of the First World War's impact on the United States and Europe: US industrial production expanded while Europe's shifted to war production; US infrastructure was barely damaged while Europe's factories, railways, mines and cities were; US exports rose while European trade struggled; controls rose in both; the US gained opportunity and emerged a creditor power while Europe faced reconstruction, debt and inflation. WWII cemented the US position.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">WWI's impact: United States vs Europe</div><div class=\"scroller\"><table><thead><tr><th>Impact</th><th>United States</th><th>Europe</th></tr></thead><tbody><tr><td><strong>Industrial production</strong></td><td style=\"background:var(--good-soft)\">expanded significantly</td><td>shifted heavily to war production</td></tr><tr><td><strong>Infrastructure</strong></td><td style=\"background:var(--good-soft)\">little physical destruction</td><td>factories, railways, mines and cities damaged</td></tr><tr><td><strong>Exports</strong></td><td style=\"background:var(--good-soft)\">rose sharply, food exports especially</td><td>many countries struggled to import and export</td></tr><tr><td><strong>Government control</strong></td><td style=\"background:var(--good-soft)\">increased</td><td>very extensive wartime controls</td></tr><tr><td><strong>Business opportunity</strong></td><td style=\"background:var(--good-soft)\">major new industrial openings</td><td>military demand, but enormous destruction</td></tr><tr><td><strong>After the war</strong></td><td style=\"background:var(--good-soft)\">a major creditor and economic power</td><td>reconstruction, debt and inflation</td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\"><b>WWII</b> repeated the pattern: the US cemented its economic superpower status.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Distance from the fighting turned the same war into a gain for the US and a loss for Europe.</figcaption></figure><!--/viz:ebh-wars-us-vs-europe-->"
+    }
+   ]
+  },
+  {
+   "id": "india-business",
+   "title": "Indian business before 1947: entrepreneurs, industry and finance",
+   "tag": "Lecture 28 · Module 5",
+   "lede": "Module 5: how Indian merchants, bankers and shipbuilders worked within, and profited from, East India Company rule, set against the Company's charters and Acts from 1600 to 1813.",
+   "topics": [
+    {
+     "t": "Module 5 opens: chartered companies and the colonial setting",
+     "src": "L#28",
+     "h": "\n<div class=\"def\"><b>Module 5, Indian business history</b>, the last module of the course. Its topic is the <b>role of Indian entrepreneurs during colonial rule</b>, from the <b>1750s–60s</b> onwards, when colonial rule became dominant in India, though the East India Company had arrived in the 1600s. In his numbering this is <b>Module 5, Lecture 22</b>.</div>\n<ul>\n <li><strong>Two parts.</strong> This lecture covers <strong>1600s–1813</strong>: first how the colonial rule of the <strong>East India Company (EIC)</strong> was structured, then the roles Indian entrepreneurs played within it. The next lecture takes <strong>1813 to the 1900s</strong>: how colonial rule changed, the rise of manufacturing and factories, and the impact of the World Wars on Indian business.</li>\n <li><strong>Read India alongside Britain.</strong> Each change in the Company's powers connects to Britain's economy: the <strong>Agricultural Revolution</strong> while the first charters were granted (L#12), and the <strong>Industrial Revolution</strong> from the <strong>1760s</strong>, which needed raw cotton and markets (Module 3).</li>\n <li><strong>Companies, not the Crown.</strong> Britain's early colonies were the work of particular companies, the EIC in India as in North America (L#19).</li>\n</ul>\n<h4>How a company was created, then and now</h4>\n<div class=\"scroller\"><table><thead><tr><th>Then (1600s–1700s)</th><th>Now (India)</th></tr></thead><tbody><tr><td>The Crown issued a <strong>separate charter</strong>, sometimes a separate Act, to bring each company into legal existence and define its purpose and privileges</td><td>Anyone files the forms and documents with the <strong>Registrar of Companies</strong> under one general law, the <strong>Companies Act, 2013</strong>; no special charter is needed</td></tr></tbody></table></div>\n<div class=\"def\"><b>From the lecture (L#28):</b> Module 4 stopped at <b>1945</b>, the end of WWII, though its slide says 1950; what happened after 1945 is left to other courses. Module 5 is the last module. He said the World Wars' effect on <b>Indian</b> business comes in the next lecture. This lecture was released on 25 October, after the Quiz 2 cut-off (recorded lectures #15–26), so it is not in Quiz 2; expect it in the end-term exam.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: the guild charters of L#11 (such as the Weavers of London, 1155) show the same idea, a monopoly granted by a ruler's charter.</p>\n"
+    },
+    {
+     "t": "East India Company charters of 1600 and 1661",
+     "src": "L#28",
+     "h": "\n<p style=\"font-size:14.5px\">The Company set up <strong>trading posts</strong> in India in the 1600s under two charters from the English Crown. The comparison below follows his slide.</p>\n<ul>\n <li><strong>Charter of 1600 (Queen Elizabeth I).</strong> Laid the <strong>legal foundation</strong> for the Company's overseas operations. Its purpose was <strong>purely commercial</strong>: to expand English trade. It granted a <strong>trade monopoly</strong>, the exclusive English right to trade with the <strong>East Indies</strong>, for <strong>15 years</strong>, later extended by further charters.</li>\n <li><strong>A monopoly</strong> here means that no other English company could trade in that region.</li>\n <li><strong>Charter of 1661 (King Charles II).</strong> <strong>Confirmed</strong> the earlier privileges and <strong>expanded the Company's powers</strong>: territorial and administrative (making rules for the places it held, not just for itself), <strong>judicial</strong> (administering justice in civil and criminal matters under English law) and <strong>military</strong> (raising troops, fortifying bases and making war or peace).</li>\n <li>So by 1661 the Company was turning from a trading monopoly into a <strong>territorial and administrative power</strong>. Its powers kept growing and peaked in the later 1700s.</li>\n</ul>\n<div class=\"warnbox\"><b>Judicial powers in 1600: slide vs speech.</b> The slide's table says the 1600 charter's judicial powers were \"limited to employees\". In speech he said the 1600 charter gave <b>no</b> judicial, administrative or military powers. Both agree that the Company could not try cases among the wider population until <b>1661</b>. For a quiz, use the slide: <b>limited to employees</b>.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: the 1600 charter, dated 31 December 1600, created the \"Governor and Company of Merchants of London trading into the East Indies\". The 1661 power to make war or peace applied to non-Christian rulers and peoples.</p>\n<!--viz:ebh-eic-charters-1600-1661--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison of the East India Company's two founding charters. 1600, issued by Queen Elizabeth I: a purely commercial monopoly of English trade with the East Indies for 15 years, judicial powers limited to employees, no power to wage war. 1661, issued by King Charles II: confirmed the privileges and made the Company a territorial and administrative power, with civil and criminal justice under English law and the right to raise troops, fortify bases and make war or peace.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The Charter of 1600 vs the Charter of 1661</div><div class=\"scroller\"><table><thead><tr><th></th><th>Charter of 1600</th><th>Charter of 1661</th></tr></thead><tbody><tr><td><strong>Issued by</strong></td><td>Queen Elizabeth I</td><td style=\"background:var(--blue-soft)\">King Charles II</td></tr><tr><td><strong>Nature</strong></td><td>a purely commercial trading monopoly</td><td style=\"background:var(--blue-soft)\">a territorial and administrative power</td></tr><tr><td><strong>Trade</strong></td><td>exclusive English rights to trade with the East Indies for 15 years</td><td style=\"background:var(--blue-soft)\">earlier privileges confirmed</td></tr><tr><td><strong>Judicial powers</strong></td><td>limited to employees</td><td style=\"background:var(--blue-soft)\">justice in civil and criminal matters, under English law</td></tr><tr><td><strong>Military powers</strong></td><td>no formal power to wage war or raise armies</td><td style=\"background:var(--blue-soft)\">raise troops, fortify bases, make war or peace</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">1600 made a trading monopoly; 1661 made it a power that could judge and fight.</figcaption></figure><!--/viz:ebh-eic-charters-1600-1661-->"
+    },
+    {
+     "t": "The Company's powers cut back, 1726–1813",
+     "src": "L#28",
+     "h": "\n<p style=\"font-size:14.5px\">From the 1700s the direction reversed. In his summary, the Company lost its powers in <strong>three stages</strong>: <strong>judicial</strong> powers first, <strong>political</strong> powers next, the <strong>trade monopoly</strong> last.</p>\n<div class=\"scroller\"><table><thead><tr><th>Year</th><th>Measure</th><th>What changed (L#28 slides)</th></tr></thead><tbody><tr><td><strong>1726, 1753</strong></td><td>Charters</td><td>Limited the Company's <strong>judicial</strong> power, set up the <strong>Royal Mayor's Courts</strong> (in Madras, Bombay and Calcutta, he said) and strengthened the Crown's legal authority in the Company's territories</td></tr><tr><td><strong>1773</strong></td><td>Regulating Act</td><td>Superseded parts of the 1753 charter; created the post of <strong>Governor-General of Bengal</strong>, held by <strong>Warren Hastings</strong></td></tr><tr><td><strong>1784</strong></td><td>Pitt's India Act</td><td>Set up the <strong>Board of Control</strong>: more government supervision of <strong>political</strong> affairs, with the Company left in charge of <strong>trade</strong></td></tr><tr><td><strong>1793</strong></td><td>Charter Act</td><td>Renewed the commercial monopoly for <strong>another 20 years</strong></td></tr><tr><td><strong>1813</strong></td><td>Charter Act</td><td><strong>Ended the exclusive trade monopoly</strong>. British merchants could trade with India, subject to restrictions and licences. The Company kept its monopoly of the <strong>tea trade</strong> and of <strong>trade with China</strong></td></tr></tbody></table></div>\n<h4>Why the powers were cut</h4>\n<ul>\n <li><strong>Plassey, 1757.</strong> The Company won large parts of <strong>Bengal</strong>. Territory on that scale had to be governed, hence a Governor-General of Bengal and closer British oversight.</li>\n <li><strong>The Industrial Revolution</strong> (from the 1760s, accelerating after them): textile mills and steam engines needed raw materials, above all <strong>cotton</strong>, and <strong>markets</strong> for finished goods. A single company's monopoly of the India trade stood in the way, and <strong>pressure from the Industrial Revolution</strong> is the slide's reason for 1813.</li>\n <li>The trade monopoly had lasted about <strong>200 years</strong> (1600–1813).</li>\n</ul>\n<div class=\"warnbox\"><b>Slips to ignore.</b> The summary slide dates the second stage \"1723–1793\": the charters are <b>1726</b> and <b>1753</b>. In speech he also said \"1874\" for Pitt's Act (<b>1784</b>), \"the charter of 1830\" and \"1600s to 1830\" for <b>1813</b>, and \"800 years\" for the monopoly's <b>200</b>. He said political power passed to \"the British Crown, not the British government\". The slide's wording is more exact: the 1773 and 1784 Acts, passed by Parliament, added <b>government supervision</b>. The Company went on ruling its territories until the Crown took over directly in <b>1858</b>, after the revolt of 1857.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: the Regulating Act also set up a Supreme Court at Calcutta (1774). The Charter Act of 1833 ended the Company's remaining trade, including China and tea, and the Company was dissolved in 1874. Another 1793 measure, the Permanent Settlement of Bengal's land revenue, is a separate thing from the Charter Act.</p>\n<!--viz:ebh-eic-powers-timeline--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Timeline of East India Company powers: 1600 charter grants a 15-year trade monopoly; 1661 charter adds judicial, administrative and military powers; charters of 1726 and 1753 limit judicial power through Mayor's Courts; 1757 Plassey; 1773 Regulating Act creates the Governor-General of Bengal; 1784 Pitt's India Act adds a Board of Control; 1793 Charter Act renews the monopoly for 20 years; 1813 Charter Act ends the trade monopoly except for tea and China.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The Company's powers, 1600–1813: up, then down</div><div style=\"display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:var(--ink-3);margin-bottom:10px\"><span><span style=\"display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--blue);margin-right:5px\"></span>powers granted</span><span><span style=\"display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--clay);margin-right:5px\"></span>powers cut</span></div><div style=\"border-left:2px solid var(--rule-2);margin-left:6px;padding-left:16px;font-size:14px\"><div style=\"position:relative;margin-bottom:12px;\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1600</b> · Charter (Elizabeth I): <b>trade monopoly</b>, 15 years</div><div style=\"position:relative;margin-bottom:12px;\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1661</b> · Charter (Charles II): <b>judicial, administrative, military powers</b> added</div><div style=\"position:relative;margin-bottom:12px;\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--clay)\"></span><b style=\"font-family:var(--mono)\">1726, 1753</b> · Charters: Mayor's Courts; <b>judicial power limited</b></div><div style=\"position:relative;margin-bottom:12px;\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1757</b> · <span style=\"color:var(--ink-3)\">Battle of Plassey: Bengal won (context)</span></div><div style=\"position:relative;margin-bottom:12px;\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--clay)\"></span><b style=\"font-family:var(--mono)\">1773</b> · Regulating Act: Governor-General of Bengal (Hastings)</div><div style=\"position:relative;margin-bottom:12px;\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--clay)\"></span><b style=\"font-family:var(--mono)\">1784</b> · Pitt's India Act: Board of Control; <b>political supervision</b></div><div style=\"position:relative;margin-bottom:12px;\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1793</b> · Charter Act: monopoly renewed for 20 years</div><div style=\"position:relative;\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--clay)\"></span><b style=\"font-family:var(--mono)\">1813</b> · Charter Act: <b>trade monopoly ends</b>, except tea and China</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Judicial powers went first, political control next, and the trade monopoly last, in 1813.</figcaption></figure><!--/viz:ebh-eic-powers-timeline-->"
+    },
+    {
+     "t": "Indian entrepreneurs, 1700s–1813: brokers, bankers, shipbuilders",
+     "src": "L#28",
+     "h": "\n<p style=\"font-size:14.5px\">Within this framework, with the Company at its strongest, Indian entrepreneurs played <strong>three roles</strong> from the 1700s to 1813. He stops at 1813 because the end of the trade monopoly is the dividing point.</p>\n<h4>1 · Intermediaries and middlemen</h4>\n<ul>\n <li>The Company lacked <strong>local language skills</strong>, <strong>geographical knowledge</strong> and <strong>social connections</strong>, so it could not easily buy Indian goods or sell British ones.</li>\n <li><strong>Indian merchants acted as brokers</strong> between Company officials and local producers and buyers.</li>\n</ul>\n<h4>2 · Financiers and bankers to the Company</h4>\n<ul>\n <li>Expansion from the 1750s needed money: soldiers' pay, uniforms, weapons, trade.</li>\n <li>The <strong>House of Jagat Seth</strong> gave the Company <strong>massive credit lines</strong> to finance its trade and its <strong>military campaigns</strong>, and lent to other companies too.</li>\n <li>Jagat Seth is said to have played an important part at the <strong>Battle of Plassey (1757)</strong>, helping the outcome go the Company's way.</li>\n</ul>\n<h4>3 · Shipping and the \"China trade\" (opium and cotton)</h4>\n<ul>\n <li><strong>Parsi merchants</strong> took part in the lucrative <strong>opium trade with China</strong>.</li>\n <li><strong>Parsi and Gujarati merchants</strong> exported <strong>raw cotton</strong> to Britain, whose textile mills needed it, and to China.</li>\n <li><strong>Lovji Nusserwanjee Wadia</strong>, a Parsi, excelled in <strong>shipbuilding in the Bombay dockyards</strong>. He founded the <strong>Wadia group in 1736</strong>, the year he secured Company contracts to build <strong>ships and docks in Bombay</strong>. The group still exists, nearly <strong>300 years</strong> on, and moved into other sectors, such as clothing with <strong>Bombay Dyeing</strong>.</li>\n <li>Shipyards and docks helped <strong>Bombay</strong> grow into a major <strong>port city</strong>, the base for the opium and cotton trades.</li>\n</ul>\n<div class=\"warnbox\"><b>Two clarifications.</b> \"Jagat Seth\" (\"banker of the world\") was a title, granted by the Mughal emperor to the heads of a Marwari banking family based at Murshidabad in Bengal, not one man's name; at Plassey the house backed Mir Jafar against Nawab Siraj-ud-Daulah. He was unsure whether Bombay Dyeing is still a Wadia company: it is. It was founded in 1879, so 1736 is the group's start, not the brand's. He once said 1836 and corrected himself to 1736.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Lovji came to Bombay from Surat; the dry dock he and his brother completed around 1750 is often called Asia's first. The best-known Parsi China trader, Jamsetjee Jejeebhoy (1783–1859), made his fortune in cotton and opium in the early 1800s. Brokers were called banians in Bengal and dubashes in Madras. Tirthankar Roy's textbook chapter on 1707–1857 covers the same merchants, the opium trade and the end of the monopoly.</p>\n<!--viz:ebh-indian-entrepreneur-roles--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three columns: the Company lacked language, local geography and social ties, so Indian merchants acted as intermediaries and brokers; it lacked money for trade and war, so the House of Jagat Seth lent it credit, including around Plassey in 1757; it needed ships and cargoes, so the Wadias built ships in Bombay from 1736, Parsi merchants traded opium and Parsi and Gujarati merchants exported raw cotton.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">What the Company lacked, and who supplied it</div><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:6px;font-size:14px\"><div style=\"padding:9px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-2);font-size:13px\">Lacked: language, local geography, social ties</span><div style=\"color:var(--ink-3);margin:4px 0\">↓</div><b>Intermediaries and brokers</b><br><span style=\"color:var(--ink-2);font-size:13px\">Indian merchants between Company and local people</span></div><div style=\"padding:9px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-2);font-size:13px\">Lacked: money for trade and war</span><div style=\"color:var(--ink-3);margin:4px 0\">↓</div><b>Financiers and bankers</b><br><span style=\"color:var(--ink-2);font-size:13px\">House of Jagat Seth: credit lines; Plassey, 1757</span></div><div style=\"padding:9px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-2);font-size:13px\">Needed: ships, cargoes, the China trade</span><div style=\"color:var(--ink-3);margin:4px 0\">↓</div><b>Shipping and the China trade</b><br><span style=\"color:var(--ink-2);font-size:13px\">Wadia shipbuilding, Bombay, 1736 · Parsi opium · Parsi and Gujarati raw cotton</span></div></div><div style=\"text-align:center;color:var(--ink-3);margin:6px 0\">↓</div><div style=\"padding:9px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-size:14px;text-align:center\"><b>Indian entrepreneurs in Company India, 1700s–1813</b></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each role filled a gap the Company could not fill itself.</figcaption></figure><!--/viz:ebh-indian-entrepreneur-roles-->"
+    }
+   ]
   }
  ],
  "topics": [
@@ -719,6 +787,18 @@ HUB.addCourse({
   {
    "name": "Large corporations",
    "unit": "corp"
+  },
+  {
+   "name": "World Wars & business",
+   "unit": "wars"
+  },
+  {
+   "name": "EIC charters & acts",
+   "unit": "india-business"
+  },
+  {
+   "name": "Indian entrepreneurs",
+   "unit": "india-business"
   }
  ],
  "traps": [
@@ -1504,6 +1584,90 @@ HUB.addCourse({
    "p": "The more of something consumers have, the less they will pay for one more unit. Supply slopes up because higher prices draw more producers in.",
    "f": "Demand down, supply up",
    "bk": "Leigh ch6"
+  },
+  {
+   "id": "ebh-t0116",
+   "h": "Central Powers is the First World War; Axis Powers is the Second",
+   "p": "WWI: Germany, Austria-Hungary, the Ottoman Empire and Bulgaria were the Central Powers. WWII: Nazi Germany, Japan and Italy were the Axis. Both wars' winners were the Allied Powers.",
+   "f": "Central = I, Axis = II",
+   "lec": 27
+  },
+  {
+   "id": "ebh-t0117",
+   "h": "Italy and Japan changed sides between the two wars",
+   "p": "Both were Allied Powers in WWI and Axis Powers in WWII. Russia, an Ally in WWI, withdrew in 1917; as the Soviet Union it was an Ally again in WWII.",
+   "f": "Italy, Japan: Ally then Axis",
+   "lec": 27
+  },
+  {
+   "id": "ebh-t0118",
+   "h": "The Nazis took power in 1933, not 1934",
+   "p": "Hitler became Chancellor of Germany in January 1933. The lecture said \"1934, 33–34\".",
+   "f": "Hitler: January 1933",
+   "lec": 27
+  },
+  {
+   "id": "ebh-t0119",
+   "h": "DuPont's 70-fold rise was capacity, not exports",
+   "p": "The slide says DuPont's capacity rose 70 times over by 1917, and it supplied about 40% of the Allies' explosives. Later in the lecture he said exports rose 70 times.",
+   "f": "×70 capacity, 40% share",
+   "lec": 27
+  },
+  {
+   "id": "ebh-t0120",
+   "h": "Coca-Cola's sugar exemption and 64 bottling plants belong to WWII",
+   "p": "He spoke of both wars but said it happened much more in WWII, which is when they date from. DuPont, Gillette's 1917 order and the Renault FT are the WWI examples.",
+   "f": "Coke's plants: WWII",
+   "lec": 27
+  },
+  {
+   "id": "ebh-t0121",
+   "h": "GPS is not a World War invention; operations research is",
+   "p": "Operations research began in WWII Britain. GPS was built by the US military from the 1970s; he used it to show how military technology later reaches civilians.",
+   "f": "OR = WWII, GPS = later",
+   "lec": 27
+  },
+  {
+   "id": "ebh-t0122",
+   "h": "Elizabeth I's charter of 1600 was trade only; Charles II's of 1661 added justice and war",
+   "p": "1600 gave a 15-year trade monopoly, with judicial powers limited to employees. 1661 confirmed it and added civil and criminal justice, troops, forts and the power to make war or peace.",
+   "f": "1600 trade, 1661 power",
+   "lec": 28
+  },
+  {
+   "id": "ebh-t0123",
+   "h": "The judicial cut-backs began in 1726, not 1723",
+   "p": "The L#28 summary slide says \"1723–1793\". The charters that limited the Company's judicial power are 1726 and 1753.",
+   "f": "Mayor's Courts: 1726",
+   "lec": 28
+  },
+  {
+   "id": "ebh-t0124",
+   "h": "1773 and 1784 added supervision; the Crown took over only in 1858",
+   "p": "The Regulating Act and Pitt's India Act were Acts of Parliament that placed the Company under government oversight. The Company kept governing until direct Crown rule began in 1858.",
+   "f": "supervised 1784, replaced 1858",
+   "lec": 28
+  },
+  {
+   "id": "ebh-t0125",
+   "h": "1813 ended the India monopoly, but not the tea and China trade",
+   "p": "The Charter Act of 1813 opened India to British merchants under licence. The Company kept its tea and China monopolies, which went in 1833.",
+   "f": "1813: all but tea, China",
+   "lec": 28
+  },
+  {
+   "id": "ebh-t0126",
+   "h": "The Wadia group dates from 1736, not 1836 or 1879",
+   "p": "Lovji Nusserwanjee Wadia founded it in 1736 with Company shipbuilding contracts in Bombay. The lecture slipped to 1836 before correcting itself; 1879 is when Bombay Dyeing was founded.",
+   "f": "Wadia 1736, nearly 300 years",
+   "lec": 28
+  },
+  {
+   "id": "ebh-t0127",
+   "h": "Jagat Seth was a title, not a personal name",
+   "p": "It means \"banker of the world\". The Mughal emperor gave it to the heads of a Marwari banking family of Murshidabad, whose house lent to the Company and backed it at Plassey.",
+   "f": "Jagat Seth = title",
+   "lec": 28
   }
  ],
  "defs": [
@@ -2566,6 +2730,110 @@ HUB.addCourse({
    "term": "Tragedy of the commons",
    "html": "<b>Tragedy of the commons</b>: over-use of a shared resource because each user gains privately while the cost is spread across all users.",
    "bk": "Leigh ch6"
+  },
+  {
+   "id": "ebh-d0136",
+   "unit": "wars",
+   "topic": "Impact 1: government control and state capitalism",
+   "term": "State capitalism",
+   "html": "<b>State capitalism</b>: an economy in which the government decides what firms produce, how much, where they sell and at what price; the wartime controls of both World Wars gave rise to it.",
+   "lec": 27
+  },
+  {
+   "id": "ebh-d0137",
+   "unit": "wars",
+   "topic": "The two World Wars: dates, sides and why colonies fought",
+   "term": "Central Powers",
+   "html": "<b>Central Powers</b>: Germany, Austria-Hungary, the Ottoman Empire and Bulgaria, the side that lost the First World War (1914–1918).",
+   "lec": 27
+  },
+  {
+   "id": "ebh-d0138",
+   "unit": "wars",
+   "topic": "The two World Wars: dates, sides and why colonies fought",
+   "term": "Axis Powers",
+   "html": "<b>Axis Powers</b>: Nazi Germany, the Empire of Japan and Fascist Italy, the side that lost the Second World War (1939–1945).",
+   "lec": 27
+  },
+  {
+   "id": "ebh-d0139",
+   "unit": "wars",
+   "topic": "Impact 2: war industries and wartime innovation",
+   "term": "Operations research",
+   "html": "<b>Operations research</b>: the use of analysis to allocate scarce resources as efficiently as possible; it began in Britain during the Second World War.",
+   "lec": 27
+  },
+  {
+   "id": "ebh-d0140",
+   "unit": "wars",
+   "topic": "Impact 1: government control and state capitalism",
+   "term": "War Production Board",
+   "html": "<b>War Production Board</b>: the US agency of the Second World War through which the state directed industry, the slide's example of deep state–corporate integration.",
+   "lec": 27
+  },
+  {
+   "id": "ebh-d0141",
+   "unit": "wars",
+   "topic": "Impact 1: government control and state capitalism",
+   "term": "War bonds",
+   "html": "<b>War bonds</b>: government bonds sold to the public to borrow money for a war; in WWII they financed massive national debts.",
+   "lec": 27
+  },
+  {
+   "id": "ebh-d0142",
+   "unit": "india-business",
+   "topic": "Module 5 opens: chartered companies and the colonial setting",
+   "term": "Royal charter",
+   "html": "<b>Royal charter</b>: a grant from the Crown that brought a particular company into legal existence and set its purpose and privileges, as the East India Company's charters of 1600 and 1661 did.",
+   "lec": 28
+  },
+  {
+   "id": "ebh-d0143",
+   "unit": "india-business",
+   "topic": "East India Company charters of 1600 and 1661",
+   "term": "Trade monopoly (East India Company)",
+   "html": "<b>Trade monopoly</b>: the Company's exclusive English right to trade with the East Indies, first for 15 years from 1600; it ended for India in 1813.",
+   "lec": 28
+  },
+  {
+   "id": "ebh-d0144",
+   "unit": "india-business",
+   "topic": "The Company's powers cut back, 1726–1813",
+   "term": "Mayor's Courts",
+   "html": "<b>Mayor's Courts</b>: royal courts set up by the charter of 1726 (reformed in 1753) in the Company's towns, which cut its judicial power and strengthened the Crown's.",
+   "lec": 28
+  },
+  {
+   "id": "ebh-d0145",
+   "unit": "india-business",
+   "topic": "The Company's powers cut back, 1726–1813",
+   "term": "Regulating Act (1773)",
+   "html": "<b>Regulating Act (1773)</b>: the Act that superseded parts of the 1753 charter and created the post of Governor-General of Bengal, first held by Warren Hastings.",
+   "lec": 28
+  },
+  {
+   "id": "ebh-d0146",
+   "unit": "india-business",
+   "topic": "The Company's powers cut back, 1726–1813",
+   "term": "Board of Control",
+   "html": "<b>Board of Control</b>: the body created by Pitt's India Act (1784) to supervise the Company's political affairs, leaving the Company in charge of trade.",
+   "lec": 28
+  },
+  {
+   "id": "ebh-d0147",
+   "unit": "india-business",
+   "topic": "The Company's powers cut back, 1726–1813",
+   "term": "Charter Act of 1813",
+   "html": "<b>Charter Act of 1813</b>: ended the Company's exclusive India trade monopoly under pressure from the Industrial Revolution, keeping only tea and the China trade.",
+   "lec": 28
+  },
+  {
+   "id": "ebh-d0148",
+   "unit": "india-business",
+   "topic": "Indian entrepreneurs, 1700s–1813: brokers, bankers, shipbuilders",
+   "term": "House of Jagat Seth",
+   "html": "<b>House of Jagat Seth</b>: the Bengal banking house that gave the East India Company huge credit lines for trade and war; Jagat Seth was its head's title.",
+   "lec": 28
   }
  ],
  "questions": [
@@ -9838,6 +10106,669 @@ HUB.addCourse({
    "w": "Steel hulls and coal engines made mass migration feasible. The lecture's '20 days became 2 days' (L#26) was a round illustration; Leigh's figures are for this route.",
    "bk": "Leigh ch6",
    "lv": "recall"
+  },
+  {
+   "id": "ebh-q0442",
+   "topic": "World Wars & business",
+   "q": "On the L#27 slides, which group was made up of Germany, Austria-Hungary, the Ottoman Empire and Bulgaria?",
+   "c": [
+    "The Axis Powers of WWII",
+    "The Central Powers of WWI",
+    "The Allied Powers of WWI",
+    "The Allied Powers of WWII"
+   ],
+   "a": [
+    1
+   ],
+   "w": "They were the Central Powers of the First World War. The Axis of WWII was Nazi Germany, Japan and Italy; the Ottoman Empire and Austria-Hungary no longer existed by then.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0443",
+   "topic": "World Wars & business",
+   "q": "Which two countries fought with the Allies in the First World War but with the Axis in the Second?",
+   "c": [
+    "Germany and Austria-Hungary",
+    "Russia and China",
+    "Italy and Japan",
+    "France and Bulgaria"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Italy and Japan were Allied Powers in WWI and Axis Powers in WWII. Germany and Austria-Hungary were Central Powers in WWI, not Allies.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0444",
+   "topic": "World Wars & business",
+   "q": "Indian soldiers fought in France in 1915, and Indian firms supplied the British army, even though India had no quarrel of its own with Germany. Which reason does the lecture give?",
+   "c": [
+    "India had declared war on Germany on its own decision",
+    "India was a member of the Central Powers",
+    "Japan had attacked India first",
+    "As a British colony, India entered the war when Britain did"
+   ],
+   "a": [
+    3
+   ],
+   "w": "When Britain went to war, its whole empire went with it, so India was drawn in by its colonial status, not by its own choice. The Central Powers were Britain's enemies.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0445",
+   "topic": "World Wars & business",
+   "q": "A British mill owner compares 1910 with 1916. Which change would he notice, according to the lecture's account of wartime government control?",
+   "c": [
+    "He now needs a licence to operate at all",
+    "The state now fixes his prices and allocates his raw materials",
+    "He now needs permission to export, which he never needed before",
+    "The state now makes policy on trade with the colonies"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Licences, export permission and colonial trade policy existed before the war. Fixing prices, allocating raw materials and setting trade quantities came with it.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0446",
+   "topic": "World Wars & business",
+   "q": "A government orders a textile mill to weave only khaki, sets how many metres it must deliver, names the buyer and fixes the price. Which term from the lecture fits?",
+   "c": [
+    "State capitalism",
+    "Free-market capitalism",
+    "Horizontal integration",
+    "Guild regulation"
+   ],
+   "a": [
+    0
+   ],
+   "w": "When the state decides what, how much, where and at what price, the lecture calls it state capitalism. Under free-market capitalism the mill would decide these itself.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0447",
+   "topic": "World Wars & business",
+   "q": "Which Indian arrangement did the lecturer compare with the wartime government control of business?",
+   "c": [
+    "The Permanent Settlement",
+    "The guild system",
+    "The License Raj before 1991",
+    "The zamindari system"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Like wartime governments, the License Raj licensed each plant and also controlled prices, raw materials and output. Zamindari and the Permanent Settlement concern land revenue, not factories.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0448",
+   "topic": "World Wars & business",
+   "q": "What was the Renault FT?",
+   "c": [
+    "A French tank of WWI, called the world's first modern tank",
+    "A German synthetic-fuel plant",
+    "Ford's military truck of WWII",
+    "A punch-card machine sold to Nazi Germany"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Renault, a car maker, was directed to build tanks, and the FT's design underlies later tanks. Punch-card machines were Dehomag's, and synthetic fuel IG Farben's.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0449",
+   "topic": "World Wars & business",
+   "q": "A chemicals firm made 1,000 tonnes of explosives a year before the war. If its capacity rose 70 times over, as DuPont's did by 1917, how much could it make?",
+   "c": [
+    "1,070 tonnes",
+    "7,000 tonnes",
+    "17,000 tonnes",
+    "70,000 tonnes"
+   ],
+   "a": [
+    3
+   ],
+   "w": "70 times 1,000 is 70,000 tonnes. 1,070 adds 70 rather than multiplying, and 17,000 was a slip in the lecture's spoken example.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0450",
+   "topic": "World Wars & business",
+   "q": "About what share of the Allies' explosives did DuPont supply by 1917, according to the slides?",
+   "c": [
+    "40%",
+    "4%",
+    "70%",
+    "90%"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Roughly 40%. Seventy is the number of times DuPont's capacity grew, not its share of supply.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0451",
+   "topic": "World Wars & business",
+   "q": "Nazi Germany had plenty of coal but little access to imported oil and rubber. How did IG Farben help its war effort?",
+   "c": [
+    "By buying oil from DuPont",
+    "By importing rubber through Coca-Cola's bottling network",
+    "By building tanks for the army",
+    "By synthesising fuel and rubber from domestic coal"
+   ],
+   "a": [
+    3
+   ],
+   "w": "IG Farben turned Germany's own coal into fuel and rubber. Tank-building was Renault's role in France, and DuPont supplied the Allies, not Germany.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0452",
+   "topic": "World Wars & business",
+   "q": "In 1917 the US government ordered 3.5 million safety razors and 32 million blades from Gillette. What does the lecture say this did for the company?",
+   "c": [
+    "It forced Gillette to ration blades to civilians",
+    "It gave Gillette guaranteed sales and made daily shaving a norm, creating a large market",
+    "It made Gillette a supplier to Germany",
+    "It led to Gillette being nationalised"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Soldiers were told to shave daily, so a government buyer created both revenue and a lasting habit. Nothing in the lecture links Gillette to Germany.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0453",
+   "topic": "World Wars & business",
+   "q": "Why did Coca-Cola become a global household name after the Second World War?",
+   "c": [
+    "Its 64 overseas bottling plants, built near the front lines, stayed in place after the war",
+    "It bought its rivals in Europe after 1945",
+    "The US government took it over in wartime",
+    "It stopped selling in the United States"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Its sugar-rationing exemption and wartime plants abroad left Coca-Cola present in many countries once peace came. No takeover or purchase of rivals came into it.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0454",
+   "topic": "World Wars & business",
+   "q": "Coca-Cola's exemption from sugar rationing and its 64 bottling plants near the front lines date from which period?",
+   "c": [
+    "The First World War",
+    "The years before 1914",
+    "The Second World War",
+    "The 1920s, between the wars"
+   ],
+   "a": [
+    2
+   ],
+   "w": "They are Second World War measures. The lecture spoke of both wars but said it happened much more in WWII; the WWI examples are DuPont, Gillette and Renault.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0455",
+   "topic": "World Wars & business",
+   "q": "Dehomag, the German subsidiary of the American firm IBM, supplied the Nazi government with Hollerith punch-card machines. What wider point did the lecturer draw from this?",
+   "c": [
+    "The US government ordered IBM to arm Germany",
+    "Punch cards decided the outcome of the war",
+    "Only European firms traded with Nazi Germany",
+    "Businesses follow their economic interests and can work across the lines drawn between warring countries"
+   ],
+   "a": [
+    3
+   ],
+   "w": "His point was that firms, here a US company's subsidiary, can serve the enemy of their home country for profit; Coca-Cola in wartime Germany was his other example. No US order to arm Germany was claimed.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0456",
+   "topic": "World Wars & business",
+   "q": "Which field, according to the lecture, arose in the Second World War because Britain had to allocate very limited resources as efficiently as possible?",
+   "c": [
+    "Scientific management",
+    "GPS navigation",
+    "Operations research",
+    "Double-entry bookkeeping"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Operations research. GPS was the lecture's example of military technology reaching civilians, but it came decades later; scientific management is Taylor's (L#23).",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0457",
+   "topic": "World Wars & business",
+   "q": "The lecturer mentioned GPS, which now runs inside Google Maps. Which pattern was he illustrating?",
+   "c": [
+    "Civilian inventions being taken over by armies",
+    "Wartime price controls",
+    "Military technology moving into civilian products in peacetime",
+    "Government licensing of private factories"
+   ],
+   "a": [
+    2
+   ],
+   "w": "GPS was built for the military and later opened to companies and consumers. Note that it dates from the 1970s, after the World Wars; it shows the pattern rather than a wartime invention.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0458",
+   "topic": "World Wars & business",
+   "q": "Which best explains why the First World War left the United States stronger while Europe was weakened?",
+   "c": [
+    "The US fought from 1914 and won more battles",
+    "The US had more colonies than Britain",
+    "Europe's governments refused to buy American goods",
+    "US infrastructure escaped destruction while its firms supplied the war, adding jobs and tax revenue"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Far from the fighting, the US kept its factories and railways intact, sold to the Allies and had nothing to rebuild. It entered the war only in 1917.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0459",
+   "topic": "World Wars & business",
+   "q": "During the First World War, why could Indian business groups expand?",
+   "c": [
+    "Britain removed all tariffs on Indian goods",
+    "British factories were diverted to war production, so imports into India fell sharply and Indian firms filled the gap",
+    "India stayed neutral and traded with both sides",
+    "The East India Company handed its factories to Indian owners"
+   ],
+   "a": [
+    1
+   ],
+   "w": "With British supply cut, Indian firms supplied jute, textiles and steel rails to the military and to civilians, and took market share. India was not neutral: it fought as a British colony.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0460",
+   "topic": "World Wars & business",
+   "q": "Which of these is not one of the four impacts of the World Wars listed on the L#27 recap slide?",
+   "c": [
+    "Increase in government control",
+    "Restructuring of emerging markets",
+    "Standardisation of time zones",
+    "Disruption of international trade and shortage of raw materials"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The four are government control, growth of war industries, disrupted trade and raw-material shortages, and restructured emerging markets. Standard time zones (1883) were a railway development in L#26.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0461",
+   "topic": "World Wars & business",
+   "q": "A history essay says: \"In 1942 the US government set up a board to direct private industry, and paid for the war largely by selling bonds to the public.\" Which feature of WWII on the slides does this describe?",
+   "c": [
+    "The Treaty of Versailles",
+    "Deep state–corporate integration, financed by war bonds",
+    "The end of state capitalism",
+    "The Board of Control"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The slide contrasts WWI's taxes and price controls with WWII's state–corporate integration (the War Production Board) and war-bond debt. The Board of Control belongs to Pitt's India Act of 1784.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0462",
+   "topic": "EIC charters & acts",
+   "q": "Which monarch issued the East India Company's first charter, in 1600?",
+   "c": [
+    "King Charles II",
+    "Queen Elizabeth I",
+    "King James I",
+    "King George III"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Elizabeth I granted the 1600 charter. Charles II issued the second, in 1661, which expanded the Company's powers.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0463",
+   "topic": "EIC charters & acts",
+   "q": "For how long did the 1600 charter grant the Company its monopoly of English trade with the East Indies?",
+   "c": [
+    "20 years",
+    "50 years",
+    "15 years",
+    "200 years"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Fifteen years, extended by later charters. Twenty years is the 1793 renewal, and about 200 years is how long the monopoly lasted in all.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0464",
+   "topic": "EIC charters & acts",
+   "q": "What did the Charter of 1661 add to the Company's position?",
+   "c": [
+    "The end of its trade monopoly",
+    "Judicial, administrative and military powers, including the right to make war or peace",
+    "A Board of Control to supervise it",
+    "The post of Governor-General of Bengal"
+   ],
+   "a": [
+    1
+   ],
+   "w": "1661 confirmed the monopoly and added powers of justice, administration and war. The Board of Control (1784) and the Governor-General (1773) came later and limited the Company.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0465",
+   "topic": "EIC charters & acts",
+   "q": "In 1640 a Company factor wants to try a local trader for theft under English law and hire soldiers to guard a fort. Of these, which charter or Act first made both lawful?",
+   "c": [
+    "The Charter of 1600",
+    "The Regulating Act of 1773",
+    "The Charter Act of 1813",
+    "The Charter of 1661"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The 1661 charter gave civil and criminal jurisdiction and military powers. The 1600 charter was commercial, with judicial powers limited to the Company's own employees.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0466",
+   "topic": "EIC charters & acts",
+   "q": "How was a company like the East India Company brought into legal existence, compared with an Indian company today?",
+   "c": [
+    "By a separate royal charter for that company, whereas today anyone registers under the Companies Act, 2013",
+    "By registering with a Registrar of Companies, exactly as today",
+    "By buying shares on a stock exchange",
+    "By a vote of its future employees"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The Crown issued each company its own charter, sometimes an Act. Today a general law lets anyone register by filing documents, with no special charter.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0467",
+   "topic": "EIC charters & acts",
+   "q": "What did the charters of 1726 and 1753 do?",
+   "c": [
+    "Ended the Company's trade monopoly",
+    "Created the Board of Control",
+    "Set up the Mayor's Courts, limiting the Company's judicial power and strengthening the Crown's legal authority",
+    "Gave the Company the right to make war"
+   ],
+   "a": [
+    2
+   ],
+   "w": "They were the first step in cutting the Company's powers, on the judicial side. The trade monopoly ended only in 1813.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0468",
+   "topic": "EIC charters & acts",
+   "q": "Who first held the post of Governor-General of Bengal created by the Regulating Act of 1773?",
+   "c": [
+    "Robert Clive",
+    "Lord Cornwallis",
+    "William Pitt",
+    "Warren Hastings"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Warren Hastings. Clive won at Plassey in 1757, and Pitt was the Prime Minister behind the 1784 Act.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0469",
+   "topic": "EIC charters & acts",
+   "q": "After Pitt's India Act of 1784, how were responsibilities divided?",
+   "c": [
+    "The Crown governed India directly and the Company was dissolved",
+    "A Board of Control supervised political affairs, while the Company stayed in charge of trade",
+    "The Company lost its trade monopoly but kept its armies",
+    "British merchants took over the Company's political role"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The Board of Control added government supervision of politics; trade remained the Company's. Direct Crown rule came only in 1858.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0470",
+   "topic": "EIC charters & acts",
+   "q": "In which order, according to the lecture, did the Company lose its powers?",
+   "c": [
+    "Trade monopoly, then judicial, then political",
+    "Political, then trade monopoly, then judicial",
+    "Judicial, then trade monopoly, then political",
+    "Judicial, then political, then the trade monopoly"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Judicial powers were limited in 1726–1753, political powers in 1773–1784, and the trade monopoly ended in 1813.",
+   "lec": 28,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0471",
+   "topic": "EIC charters & acts",
+   "q": "What did the Charter Act of 1793 do?",
+   "c": [
+    "Renewed the Company's commercial monopoly for another 20 years",
+    "Ended the Company's monopoly",
+    "Fixed Bengal's land revenue permanently",
+    "Set up the Mayor's Courts"
+   ],
+   "a": [
+    0
+   ],
+   "w": "It extended the monopoly to 1813. Fixing land revenue was the Permanent Settlement, a different measure of the same year.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0472",
+   "topic": "EIC charters & acts",
+   "q": "In 1815 a Liverpool merchant wants to ship cotton cloth to Calcutta and to buy tea in China. Under the Charter Act of 1813, what can he do?",
+   "c": [
+    "Neither: the Company still holds every monopoly",
+    "Both, freely and without a licence",
+    "Trade with India under licence, but not in China tea, which the Company still controls",
+    "Buy China tea, but not trade with India"
+   ],
+   "a": [
+    2
+   ],
+   "w": "1813 opened the India trade to British merchants, subject to restrictions and licences, while the Company kept the tea trade and the China trade until 1833.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0473",
+   "topic": "EIC charters & acts",
+   "q": "Why did Britain end the Company's India trade monopoly in 1813, according to the slides?",
+   "c": [
+    "Indian merchants petitioned Parliament",
+    "Pressure from the Industrial Revolution: British industry needed raw materials such as cotton and markets for its goods",
+    "The Company had gone bankrupt",
+    "The Battle of Plassey had been lost"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Mills wanted Indian cotton and buyers for their cloth, and one company's monopoly stood in the way. Plassey (1757) was a Company victory.",
+   "lec": 28,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0474",
+   "topic": "EIC charters & acts",
+   "q": "Why did creating a Governor-General of Bengal become important after 1757?",
+   "c": [
+    "The Battle of Plassey had given the Company large Bengal territories that had to be governed",
+    "Bengal had become independent of Britain",
+    "The Company's trade monopoly had just ended",
+    "The Mughal emperor demanded it"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Plassey made the Company a territorial power in Bengal, and the 1773 post brought its government under closer oversight. The monopoly ended only in 1813.",
+   "lec": 28,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0475",
+   "topic": "EIC charters & acts",
+   "q": "The Company's trade monopoly ran from 1600 to 1813. About how long is that?",
+   "c": [
+    "About 80 years",
+    "About 120 years",
+    "About 200 years",
+    "About 800 years"
+   ],
+   "a": [
+    2
+   ],
+   "w": "1813 − 1600 = 213, roughly two centuries. The lecture's \"800 years\" was a slip of the tongue.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0476",
+   "topic": "Indian entrepreneurs",
+   "q": "Why, according to the lecture, did the Company need Indian merchants as brokers?",
+   "c": [
+    "Indian law forbade Europeans to trade",
+    "It lacked local language skills, geographical knowledge and social connections",
+    "Brokers were cheaper than ships",
+    "The Crown required it in the 1600 charter"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Without language, local knowledge or connections it could not buy Indian goods or sell British ones, so merchants stood in between. No law or charter required it.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0477",
+   "topic": "Indian entrepreneurs",
+   "q": "A Company army in Bengal in the 1750s needs money for soldiers' pay, uniforms and weapons. Which role of Indian entrepreneurs does the lecture tie to this need?",
+   "c": [
+    "Financiers and bankers, such as the House of Jagat Seth",
+    "Shipbuilders, such as the Wadias",
+    "Raw-cotton exporters",
+    "Intermediaries who translated for officials"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The House of Jagat Seth gave the Company massive credit lines for trade and military campaigns. The Wadias built ships in Bombay.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0478",
+   "topic": "Indian entrepreneurs",
+   "q": "In 1736 a Parsi shipbuilder won East India Company contracts to build ships and docks in Bombay and founded a business group that still exists. Who was he?",
+   "c": [
+    "Jamsetji Tata",
+    "Jagat Seth",
+    "Lovji Nusserwanjee Wadia",
+    "Dwarkanath Tagore"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Lovji Nusserwanjee Wadia founded the Wadia group in 1736; it later owned Bombay Dyeing. Jamsetji Tata belongs to the late 1800s, and Jagat Seth was a Bengal banking house.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0479",
+   "topic": "Indian entrepreneurs",
+   "q": "Which merchant groups did the lecture name in the export of raw cotton to Britain and China?",
+   "c": [
+    "Marwari bankers of Murshidabad",
+    "Parsi and Gujarati merchants",
+    "Bengal zamindars",
+    "Portuguese traders of Goa"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Parsi and Gujarati merchants exported raw cotton, which Britain's mills needed; Parsi merchants were also in the China opium trade. Murshidabad was the base of the Jagat Seth banking house.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0480",
+   "topic": "Indian entrepreneurs",
+   "q": "How, according to the lecture, did the Wadias' shipbuilding affect Bombay?",
+   "c": [
+    "It made Bombay the Company's capital in place of Calcutta",
+    "It ended the opium trade through Bombay",
+    "It moved Bombay's trade to Surat",
+    "Its shipyards and docks helped Bombay grow into a major port city for the opium and cotton trades"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Docks and shipyards turned Bombay into a key port. Calcutta, not Bombay, was the seat of the Governor-General of Bengal.",
+   "lec": 28,
+   "lv": "analyse"
   }
  ],
  "briefs": {
@@ -9910,6 +10841,8 @@ HUB.addCourse({
   "lec-24",
   "lec-25",
   "lec-26",
-  "shoe-ch06"
+  "shoe-ch06",
+  "lec-27",
+  "lec-28"
  ]
 });

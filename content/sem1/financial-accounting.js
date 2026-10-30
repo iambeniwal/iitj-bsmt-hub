@@ -163,6 +163,24 @@ HUB.addCourse({
    "Week 10 — Cash flow Part 3",
    "Compass Company case: all three activities",
    "rec"
+  ],
+  [
+   27,
+   "Week 11 — Analysing the Cash Flow Statement",
+   "Compass Company's six questions, Pioneer Limited worked",
+   "rec"
+  ],
+  [
+   28,
+   "Week 11 — Financial Statement Analysis 1",
+   "Four standards of comparison, horizontal analysis",
+   "rec"
+  ],
+  [
+   29,
+   "Week 11 — Live Lecture 6",
+   "Cash flow revision: cash equivalents, three drills",
+   "live"
   ]
  ],
  "units": [
@@ -244,6 +262,11 @@ HUB.addCourse({
      "h": "\n  <div class=\"def\">An <b>asset</b> is a resource the business <b>controls</b> that will provide <b>future economic benefit</b>. Both conditions must hold.</div>\n  <p style=\"font-size:14.5px\">Her two tests: a <strong>public park is not your asset</strong> (no control); a <strong>broken laptop is not an asset</strong> (no future benefit).</p>\n  <ul>\n   <li><strong>Tangible</strong> — cash, machinery, buildings, inventory.</li>\n   <li><strong>Intangible</strong> — patents, copyrights, trademarks, brand value.</li>\n   <li><strong>Financial</strong> — receivables, investments, cash equivalents.</li>\n  </ul>\n  <div class=\"def\">A <b>liability</b> is a <b>present obligation arising from a past event</b> whose settlement will cause an outflow of resources. Plainly: what the company owes.</div>\n  <div class=\"def\"><b>Equity</b> is the <b>residual</b> left to owners after liabilities are settled: <b>Equity = Assets − Liabilities</b>. Its parts are <b>share capital</b> and <b>retained earnings</b>.</div>\n  <p style=\"font-size:14.5px\"><strong>Retained earnings = net profit − dividends (or drawings).</strong> <strong>Net profit = revenue − expenses.</strong></p><!--viz:fa-asset-tests--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Decision flow: first ask whether the business controls the item, then whether it gives future economic benefit. Failing either means not an asset; passing both gives an asset, which is tangible, intangible or financial.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Is it an asset? Two tests, both must pass</div><div style=\"font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2)\"><b>1 · Does the business control it?</b></div><div style=\"display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;margin:4px 0 0 14px\"><span style=\"color:var(--ink-3)\">no →</span><div style=\"padding:7px 11px;border:1px solid var(--bad);border-radius:4px;background:var(--bad-soft)\">Not an asset · e.g. the public road outside the shop</div></div><div style=\"color:var(--ink-3);padding:3px 0 3px 14px\">↓ yes</div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2)\"><b>2 · Will it bring future economic benefit?</b></div><div style=\"display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;margin:4px 0 0 14px\"><span style=\"color:var(--ink-3)\">no →</span><div style=\"padding:7px 11px;border:1px solid var(--bad);border-radius:4px;background:var(--bad-soft)\">Not an asset · e.g. a machine that can neither run nor be sold</div></div><div style=\"color:var(--ink-3);padding:3px 0 3px 14px\">↓ yes</div><div style=\"padding:7px 11px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\"><b>Asset</b><br><span style=\"color:var(--ink-2);font-size:13px\">tangible: machinery, stock · intangible: patents, trademarks · financial: receivables, investments</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Control and future benefit together; failing either one rules the item out.</figcaption></figure><!--/viz:fa-asset-tests-->"
     },
     {
+     "t": "Practice set from the faculty (29 Oct)",
+     "src": "L#26",
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q1.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q1 · Concepts and conventions in six situations · Partly on Quiz 2</summary><p style=\"font-size:14.5px\">Name the concept or convention applied, or broken, in each situation.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Situation (paraphrased)</th><th>Concept or convention</th><th>Why</th></tr></thead><tbody><tr><td>a</td><td>The owner's personal car is left out of the firm's balance sheet</td><td>Business entity concept (applied)</td><td>The business is separate from its owner; only its own assets are recorded</td></tr><tr><td>b</td><td>Machinery shown at cost less depreciation, not at what it would fetch next week</td><td>Cost concept, with going concern (applied)</td><td>Assets are recorded at cost and the firm is assumed to carry on, so a forced-sale value is irrelevant</td></tr><tr><td>c</td><td>December's salary, paid on 5 January, charged to December</td><td>Matching concept / accrual (applied)</td><td>The expense belongs to the period whose revenue it helped earn, whenever it is paid</td></tr><tr><td>d</td><td>A provision for likely bad debts is made, but an expected gain from a pending court case is not recorded</td><td>Conservatism (prudence) convention (applied)</td><td>Provide for probable losses; don't anticipate gains</td></tr><tr><td>e</td><td>Straight-line depreciation one year, reducing balance the next</td><td>Consistency convention (broken)</td><td>Switching methods without good reason destroys comparability across years</td></tr><tr><td>f</td><td>A sale is recorded on delivery, not when the order arrives</td><td>Realisation concept (applied)</td><td>Revenue is recognised when it is earned, at the transfer of the goods</td></tr></tbody></table></div></details>"
+    },
+    {
      "t": "Textbook: The Nature and Purpose of Accounting",
      "src": "Anthony 13e ch1",
      "h": "<p><strong>Relevance, objectivity, feasibility</strong> — A proposed principle becomes generally accepted to the extent it is relevant (useful to decision makers), objective (free of the preparer's bias and verifiable) and feasible (workable without undue cost). The criteria often conflict, and accounting usually gives up some relevance to gain objectivity and feasibility.<br><em>e.g.</em> Management's estimate of the value of a promising new drug is relevant but subjective, so it is not recorded.</p><p><strong>Dual-aspect concept</strong> — Because any asset not claimed by creditors belongs to owners, total assets always equal liabilities plus owners' equity. This holds even when equity is negative. The equality says nothing about financial health; it only shows the books were kept without error.<br><span style=\"font-family:var(--mono)\">Assets = Liabilities + Owners' equity; Owners' equity = Assets − Liabilities</span></p>"
@@ -288,6 +311,11 @@ HUB.addCourse({
      "t": "The accounting equation",
      "src": "L#2 · L#8 · L#9 · L#14",
      "h": "\n  <div class=\"def\"><b>Assets = Liabilities + Capital (Equity)</b> — and it must balance after <b>every single transaction</b>.</div>\n  <div class=\"scroller\"><table><thead><tr><th>Form</th><th>Equation</th></tr></thead><tbody>\n   <tr><td>Basic</td><td><strong>Assets = Liabilities + Capital</strong></td></tr>\n   <tr><td>Rearranged</td><td><strong>Capital (Equity) = Assets − Liabilities</strong></td></tr>\n   <tr><td>Expanded</td><td>Assets = Liabilities + Capital + Revenue − Expenses − Drawings</td></tr>\n   <tr><td>All-positive form</td><td><strong>Assets + Expenses + Drawings = Liabilities + Capital + Revenue</strong></td></tr>\n  </tbody></table></div>\n  <div class=\"warnbox\"><b>She flagged one wrong version in class:</b> &ldquo;Liabilities = Assets − Capital&rdquo; was marked <b>incorrect</b> in her exercise. The rearrangement she wants is <b>Capital = Assets − Liabilities</b>.</div>\n  <h4>Four transactions and their effect</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Transaction</th><th>Effect</th><th>Balances because</th></tr></thead><tbody>\n   <tr><td>Owner invests ₹1,00,000</td><td>Cash +1,00,000 · Capital +1,00,000</td><td>Both sides rise</td></tr>\n   <tr><td>Buy furniture ₹5,000 cash</td><td>Furniture +5,000 · Cash −5,000</td><td><strong>Same side</strong> — asset composition changes, total unchanged</td></tr>\n   <tr><td>Bank loan ₹30,000</td><td>Cash +30,000 · Loan liability +30,000</td><td>Both sides rise</td></tr>\n   <tr><td>Pay creditors ₹10,000</td><td>Cash −10,000 · Liabilities −10,000</td><td>Both sides fall</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\">Her worked multi-step example: start with ₹80,000 cash; buy goods on credit from Ramesh ₹10,000; buy furniture for cash ₹6,000; pay the creditor ₹8,000. End: <strong>Cash 66,000 + Stock 10,000 + Furniture 6,000 = Capital 80,000 + Creditors 2,000</strong>, i.e. <strong>82,000 each side</strong>.</p><!--viz:fa-equation-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace of five transactions for Arjun's business with the effect on assets and on liabilities plus capital; both sides stay equal at 2,00,000, 2,40,000, 2,40,000, 2,15,000 and 2,23,000.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The equation after every transaction</div><div class=\"scroller\"><table><thead><tr><th>#</th><th>Transaction</th><th>Assets</th><th>Liabilities + Capital</th><th>Each side ₹</th></tr></thead><tbody><tr><td>1</td><td>Arjun starts with ₹2,00,000 cash</td><td>Cash +2,00,000</td><td>Capital +2,00,000</td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">2,00,000</td></tr><tr><td>2</td><td>Goods on credit from Kapoor ₹40,000</td><td>Stock +40,000</td><td>Creditors +40,000</td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">2,40,000</td></tr><tr><td>3</td><td>Laptop for cash ₹30,000</td><td>Laptop +30,000<br>Cash −30,000</td><td style=\"color:var(--ink-3)\">no change</td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap;background:var(--blue-soft)\">2,40,000</td></tr><tr><td>4</td><td>Pays Kapoor ₹25,000</td><td>Cash −25,000</td><td>Creditors −25,000</td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">2,15,000</td></tr><tr><td>5</td><td>Sells stock costing ₹20,000 for ₹28,000 cash</td><td>Cash +28,000<br>Stock −20,000</td><td>Capital +8,000 (profit)</td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">2,23,000</td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\">End: Cash 1,73,000 + Stock 20,000 + Laptop 30,000 = Creditors 15,000 + Capital 2,08,000 = ₹2,23,000</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Row 3 only reshuffles assets; row 5 shows profit raising capital, which is why revenue sits on the right side.</figcaption></figure><!--/viz:fa-equation-trace-->"
+    },
+    {
+     "t": "Practice set from the faculty (29 Oct)",
+     "src": "L#26",
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q2, Q3.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q2 · Missing figures in the accounting equation · Quiz 1 topic</summary><p style=\"font-size:14.5px\">Find the missing figure (₹), using Assets = Liabilities + Capital.</p><div class=\"scroller\"><table><thead><tr><th>Firm</th><th>Working</th><th>Missing figure</th></tr></thead><tbody><tr><td>A</td><td>Capital = 5,40,000 − 2,10,000</td><td>Capital 3,30,000</td></tr><tr><td>B</td><td>Assets = 1,75,000 + 4,25,000</td><td>Assets 6,00,000</td></tr><tr><td>C</td><td>Liabilities = 8,20,000 − 5,05,000</td><td>Liabilities 3,15,000</td></tr><tr><td>D (closing)</td><td>Closing capital = 2,00,000 + 85,000 − 30,000 = 2,55,000; Assets = 1,40,000 + 2,55,000</td><td>Assets 3,95,000</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> A 3,30,000; B 6,00,000; C 3,15,000; D 3,95,000 (closing capital 2,55,000).</p></details><details><summary>Q3 · Dual effect and Dr/Cr of seven transactions · Quiz 1 topic</summary><p style=\"font-size:14.5px\">For each transaction, show the effect on assets, liabilities and owner's equity (+, −, 0) and the accounts debited and credited.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Transaction</th><th>A</th><th>L</th><th>OE</th><th>Debit / Credit</th></tr></thead><tbody><tr><td>a</td><td>Owner brings in ₹1,00,000 cash</td><td>+</td><td>0</td><td>+</td><td>Dr Cash · Cr Capital</td></tr><tr><td>b</td><td>Furniture ₹20,000 on credit</td><td>+</td><td>+</td><td>0</td><td>Dr Furniture · Cr Creditor (supplier)</td></tr><tr><td>c</td><td>₹12,000 paid to a creditor</td><td>−</td><td>−</td><td>0</td><td>Dr Creditor · Cr Cash</td></tr><tr><td>d</td><td>Services ₹30,000 on credit</td><td>+</td><td>0</td><td>+</td><td>Dr Debtor (customer) · Cr Service revenue</td></tr><tr><td>e</td><td>Rent ₹8,000 paid</td><td>−</td><td>0</td><td>−</td><td>Dr Rent · Cr Cash</td></tr><tr><td>f</td><td>Owner withdraws ₹5,000</td><td>−</td><td>0</td><td>−</td><td>Dr Drawings · Cr Cash</td></tr><tr><td>g</td><td>₹30,000 collected from the customer in (d)</td><td>+ and − (net 0)</td><td>0</td><td>0</td><td>Dr Cash · Cr Debtor</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Revenue raises owner's equity and expenses and drawings lower it; (g) only swaps one asset (debtor) for another (cash).</p></details>"
     },
     {
      "t": "Textbook: The Nature and Purpose of Accounting",
@@ -341,6 +369,11 @@ HUB.addCourse({
      "h": "\n  <div class=\"def\">The <b>ledger</b> collects every transaction <b>account by account</b> and shows each account's net effect. Moving entries from journal to ledger is <b>posting</b>.</div>\n  <div class=\"scroller\"><table><thead><tr><th></th><th>Journal</th><th>Ledger</th></tr></thead><tbody>\n   <tr><td><strong>Stage</strong></td><td><strong>First</strong></td><td><strong>Second</strong></td></tr>\n   <tr><td><strong>Order</strong></td><td><strong>Chronological</strong></td><td><strong>Account-wise</strong></td></tr>\n   <tr><td><strong>Process</strong></td><td>Journalising</td><td>Posting</td></tr>\n   <tr><td><strong>Based on</strong></td><td>Source documents</td><td>Journal entries</td></tr>\n   <tr><td><strong>Net position</strong></td><td>Cannot be determined</td><td><strong>Shows the balance</strong></td></tr>\n   <tr><td><strong>Trial balance</strong></td><td>Not the basis</td><td><strong>Is the basis</strong></td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\">The <strong>T-account</strong> has eight columns — four each side: Date, Particulars, Journal Folio, Amount. On the <strong>debit side</strong> particulars are preceded by <strong>&ldquo;To&rdquo;</strong>; on the <strong>credit side</strong>, by <strong>&ldquo;By&rdquo;</strong>.</p>\n  <h4>Opening entry</h4>\n  <p style=\"font-size:14.5px\">Recorded at the start of a period to bring forward balances not closed last period. <strong>Assets are debited; liabilities and capital are credited.</strong> <strong>Nominal accounts never appear</strong> — they were closed to profit and loss. Narration: &ldquo;Balances of assets and liabilities brought forward&rdquo;.</p>\n  <h4>Balancing — BD and CD</h4>\n  <ol style=\"padding-left:20px;font-size:14.5px;line-height:1.8\">\n   <li>Total the debit side and the credit side.</li>\n   <li>Find the difference.</li>\n   <li>Put it on the <strong>lower</strong> side as <strong>Balance c/d</strong> (carried down).</li>\n   <li>Next period it reappears on the opposite side as <strong>Balance b/d</strong> (brought down).</li>\n  </ol>\n  <p style=\"font-size:14.5px\"><strong>Worked:</strong> Cash debit side 3,05,000 (Capital 3,00,000 + Sales 5,000), credit side 2,10,000 (Bank 2,00,000 + Purchase 10,000). Difference <strong>95,000</strong> goes on the <strong>credit</strong> side as Balance c/d — so the account has a <strong>debit balance of 95,000</strong>.</p>\n  <div class=\"warnbox\"><b>The side with the higher total names the balance.</b> The figure is <em>written</em> on the lower side to make them equal, but the account is described by the larger side — here, a debit balance.</div><!--viz:fa-posting-flow--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A journal entry debiting furniture and crediting cash 45,000 is posted twice: to the debit side of Furniture account as To Cash A/c, and to the credit side of Cash account as By Furniture A/c.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Posting one entry: each account names the other</div><div style=\"font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2)\"><b>Journal</b> · 5 Apr · Furniture A/c Dr <span style=\"font-family:var(--mono)\">45,000</span> · To Cash A/c <span style=\"font-family:var(--mono)\">45,000</span></div><div style=\"color:var(--ink-3);padding:4px 0 6px 14px\">↓ post the debit &nbsp;&nbsp; ↓ post the credit</div><div style=\"display:flex;flex-wrap:wrap;gap:12px\"><div style=\"flex:1 1 200px\"><div style=\"font-size:13px\"><div style=\"display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:4px\"><span style=\"color:var(--ink-3)\">Dr</span><b>Furniture A/c</b><span style=\"color:var(--ink-3)\">Cr</span></div><div style=\"display:grid;grid-template-columns:1fr 1fr\"><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink);background:var(--blue-soft)\"><span><span style=\"color:var(--ink-3)\">5 Apr</span> To Cash A/c</span><span style=\"font-family:var(--mono);white-space:nowrap\">45,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span></span></div></div></div></div><div style=\"flex:1 1 200px\"><div style=\"font-size:13px\"><div style=\"display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:4px\"><span style=\"color:var(--ink-3)\">Dr</span><b>Cash A/c</b><span style=\"color:var(--ink-3)\">Cr</span></div><div style=\"display:grid;grid-template-columns:1fr 1fr\"><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span></span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px;background:var(--blue-soft)\"><span><span style=\"color:var(--ink-3)\">5 Apr</span> By Furniture A/c</span><span style=\"font-family:var(--mono);white-space:nowrap\">45,000</span></div></div></div></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The debit goes to the left of Furniture A/c, the credit to the right of Cash A/c, and each line names the other account.</figcaption></figure><!--/viz:fa-posting-flow--><!--viz:fa-cash-t-account--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Cash account: debit side To Capital 1,50,000 and To Sales 30,000; credit side By Furniture 45,000, By Rent 15,000, By Bank 60,000 and By Balance c/d 60,000; both total 1,80,000; To Balance b/d 60,000 on 1 May.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Balancing a ledger account: c/d and b/d</div><div style=\"font-size:13.5px\"><div style=\"display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:4px\"><span style=\"color:var(--ink-3)\">Dr</span><b>Cash Account</b><span style=\"color:var(--ink-3)\">Cr</span></div><div style=\"display:grid;grid-template-columns:1fr 1fr\"><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span><span style=\"color:var(--ink-3)\">1 Apr</span> To Capital A/c</span><span style=\"font-family:var(--mono);white-space:nowrap\">1,50,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span><span style=\"color:var(--ink-3)\">5 Apr</span> By Furniture A/c</span><span style=\"font-family:var(--mono);white-space:nowrap\">45,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span><span style=\"color:var(--ink-3)\">12 Apr</span> To Sales A/c</span><span style=\"font-family:var(--mono);white-space:nowrap\">30,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span><span style=\"color:var(--ink-3)\">18 Apr</span> By Rent A/c</span><span style=\"font-family:var(--mono);white-space:nowrap\">15,000</span></div><div style=\"padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span><span style=\"color:var(--ink-3)\">25 Apr</span> By Bank A/c</span><span style=\"font-family:var(--mono);white-space:nowrap\">60,000</span></div><div style=\"padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px;background:var(--blue-soft)\"><span><span style=\"color:var(--ink-3)\">30 Apr</span> By Balance c/d</span><span style=\"font-family:var(--mono);white-space:nowrap\">60,000</span></div><div style=\"display:flex;justify-content:flex-end;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span style=\"font-family:var(--mono);white-space:nowrap;border-top:1px solid var(--ink-2);border-bottom:3px double var(--ink-2);padding:1px 0\">1,80,000</span></div><div style=\"display:flex;justify-content:flex-end;padding:4px 0 4px 8px\"><span style=\"font-family:var(--mono);white-space:nowrap;border-top:1px solid var(--ink-2);border-bottom:3px double var(--ink-2);padding:1px 0\">1,80,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink);background:var(--blue-soft)\"><span><span style=\"color:var(--ink-3)\">1 May</span> To Balance b/d</span><span style=\"font-family:var(--mono);white-space:nowrap\">60,000</span></div><div style=\"padding:4px 0 4px 8px\"></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Debits 1,80,000 beat credits 1,20,000, so 60,000 goes on the short side as c/d: a debit balance, brought down on 1 May.</figcaption></figure><!--/viz:fa-cash-t-account-->"
     },
     {
+     "t": "Practice set from the faculty (29 Oct)",
+     "src": "L#26",
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q4.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q4 · Journal entries, Kavya Stationers · Quiz 1 topic</summary><p style=\"font-size:14.5px\">Kavya Stationers, November 2026; every receipt and payment goes through the bank. Pass the journal entries with narrations.</p><div class=\"scroller\"><table><thead><tr><th>Date</th><th>Entry (₹)</th><th>Narration</th></tr></thead><tbody><tr><td>1 Nov</td><td>Bank A/c Dr 3,00,000; Furniture A/c Dr 50,000<br>To Capital A/c 3,50,000</td><td>Started business with cash at bank and furniture</td></tr><tr><td>2 Nov</td><td>Purchases A/c Dr 72,000<br>To Ravi Papers 72,000</td><td>Goods bought on credit: list price 80,000 less 10% trade discount</td></tr><tr><td>4 Nov</td><td>Bank A/c Dr 45,000<br>To Sales A/c 45,000</td><td>Goods sold, money received in the bank</td></tr><tr><td>6 Nov</td><td>Ravi Papers Dr 4,000<br>To Purchases Returns A/c 4,000</td><td>Goods returned to the supplier</td></tr><tr><td>9 Nov</td><td>Sana Offices Dr 60,000<br>To Sales A/c 60,000</td><td>Goods sold on credit</td></tr><tr><td>12 Nov</td><td>Rent A/c Dr 12,000<br>To Bank A/c 12,000</td><td>Rent paid by cheque</td></tr><tr><td>15 Nov</td><td>Sales Returns A/c Dr 5,000<br>To Sana Offices 5,000</td><td>Goods returned by the customer</td></tr><tr><td>18 Nov</td><td>Bank A/c Dr 54,000; Discount Allowed A/c Dr 1,000<br>To Sana Offices 55,000</td><td>Received in full settlement of 60,000 − 5,000 = 55,000</td></tr><tr><td>20 Nov</td><td>Ravi Papers Dr 68,000<br>To Bank A/c 67,000; To Discount Received A/c 1,000</td><td>Paid in full settlement of 72,000 − 4,000 = 68,000</td></tr><tr><td>25 Nov</td><td>Drawings A/c Dr 3,000<br>To Purchases A/c 3,000</td><td>Goods taken by the proprietor, at cost</td></tr><tr><td>28 Nov</td><td>Salaries A/c Dr 15,000<br>To Bank A/c 15,000</td><td>Salaries paid</td></tr><tr><td>30 Nov</td><td>Computer A/c Dr 37,500<br>To Bank A/c 37,500</td><td>Computer 36,000 plus installation 1,500, both capitalised</td></tr></tbody></table></div><ul><li><strong>Trade discount</strong> is never entered: the purchase is recorded at the net 72,000. A <strong>cash discount</strong> for settling (1,000 allowed, 1,000 received) is entered.</li><li>Goods withdrawn by the owner are credited to Purchases at <strong>cost</strong>, not to Sales.</li><li>Installation is part of the cost of getting the computer ready for use, so it is debited to the Computer account, not to an expense.</li></ul></details>"
+    },
+    {
      "t": "Textbook: Accounting Records and Systems",
      "src": "Anthony 13e ch4",
      "h": "<p><strong>The account and the T-account</strong> — An account collects all increases on one side and all decreases on the other, so the new balance is found with a couple of additions and one subtraction instead of rewriting the figure after every transaction. A ledger is the full set of accounts, and the chart of accounts lists them, usually in balance-sheet order, with codes and sub-accounts.</p><p><strong>Transaction analysis</strong> — Decide which accounts are debited and credited, and by how much, so that both Assets = Liabilities + Equity and Debits = Credits hold. Anthony's tip is to record the obvious half first (often the cash side) and then work out the less obvious half, which is often a revenue or expense.</p><p><strong>The journal</strong> — A chronological record, like a diary, of each entry: date, accounts, debit amount first, credited account indented below it, amounts, and often a short explanation. The ledger folio (LF) column is filled in when the entry is posted, creating an audit trail from ledger back to source. No account balance changes except through a journal entry.</p>"
@@ -369,6 +402,11 @@ HUB.addCourse({
      "h": "<div class=\"def\"><b>From the lecture (Live Lecture 4, L#19).</b> She described a likely exam question: you are given about <b>ten ledger accounts</b> and asked to prepare the <b>trial balance</b>. Balance each account first (the larger side gives the kind of balance), then list it. In the exam you are expected to use the <b>proper format</b>: name of the business, name of the statement, and the date, e.g. <em>Vogue Company · Trial Balance as at 30 June</em>, with columns for particulars, debit and credit.</div><p style=\"font-size:14.5px\"><strong>Why a trial balance must agree:</strong> double entry. Every transaction touches at least two accounts and every debit has an equal credit, so the totals match if nothing went wrong.</p><h4>Normal balances from the expanded equation</h4><p style=\"font-size:14.5px\">Assets = Liabilities + Capital + Retained earnings, and retained earnings = Revenue − Expenses (− Dividends). Move expenses across:</p><div class=\"def\"><b>Assets + Expenses = Liabilities + Capital + Revenue.</b> Left-hand items have <b>debit</b> balances, right-hand items <b>credit</b> balances. Dividends and drawings reduce capital, so they also sit on the left: <b>debit</b> balances. Capital is the firm's liability to its owners, hence a credit.</div><h4>Worked in class</h4><ul><li><strong>Balancing:</strong> a cash account with debits of ₹58,500 and credits of ₹11,570 has a <strong>debit balance of ₹46,930</strong>.</li><li><strong>A trader's trial balance (31 March 2017):</strong> only capital, interest on investment and sales are credit balances; bills receivable, wages, drawings, purchases, customs duty, the computer and opening stock are all debits. Both sides total <strong>₹1,18,000</strong>.</li><li><strong>Vogue Company, 30 June:</strong> the unadjusted trial balance from the case ledger totals <strong>₹68,000</strong> a side.</li></ul><p style=\"font-size:14.5px\"><strong>A slip to avoid copying:</strong> in class purchases was called \"an asset\" while classifying. Purchases is an expense-type (nominal) account. Its balance is a debit either way, so the trial balance is unaffected.</p><p style=\"font-size:14.5px\">She then asked: can the final accounts be prepared from this trial balance? <strong>No.</strong> The adjusting entries come first, then the adjusted trial balance.</p>"
     },
     {
+     "t": "Practice set from the faculty (29 Oct)",
+     "src": "L#26",
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q5, Q6.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q5 · Ledger and trial balance, Kavya Stationers · Quiz 1 topic</summary><p style=\"font-size:14.5px\">Post Q4 to the Bank, Ravi Papers, Sana Offices and Capital accounts and prepare the trial balance at 30 November 2026.</p><div class=\"scroller\"><table><thead><tr><th>Account</th><th>Debits ₹</th><th>Credits ₹</th><th>Balance ₹</th></tr></thead><tbody><tr><td>Bank</td><td>3,00,000 + 45,000 + 54,000 = 3,99,000</td><td>12,000 + 67,000 + 15,000 + 37,500 = 1,31,500</td><td>2,67,500 Dr</td></tr><tr><td>Ravi Papers</td><td>4,000 + 68,000 = 72,000</td><td>72,000</td><td>Nil</td></tr><tr><td>Sana Offices</td><td>60,000</td><td>5,000 + 55,000 = 60,000</td><td>Nil</td></tr><tr><td>Capital</td><td></td><td>3,50,000</td><td>3,50,000 Cr</td></tr></tbody></table></div><div class=\"scroller\"><table><thead><tr><th>Trial balance, 30 Nov 2026</th><th>Dr ₹</th><th>Cr ₹</th></tr></thead><tbody><tr><td>Bank</td><td>2,67,500</td><td></td></tr><tr><td>Furniture</td><td>50,000</td><td></td></tr><tr><td>Computer</td><td>37,500</td><td></td></tr><tr><td>Purchases (72,000 − 3,000)</td><td>69,000</td><td></td></tr><tr><td>Sales returns</td><td>5,000</td><td></td></tr><tr><td>Rent</td><td>12,000</td><td></td></tr><tr><td>Salaries</td><td>15,000</td><td></td></tr><tr><td>Discount allowed</td><td>1,000</td><td></td></tr><tr><td>Drawings</td><td>3,000</td><td></td></tr><tr><td>Capital</td><td></td><td>3,50,000</td></tr><tr><td>Sales (45,000 + 60,000)</td><td></td><td>1,05,000</td></tr><tr><td>Purchases returns</td><td></td><td>4,000</td></tr><tr><td>Discount received</td><td></td><td>1,000</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Total</strong></td><td><strong>4,60,000</strong></td><td><strong>4,60,000</strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\">Both personal accounts close at nil because each was settled in full. If you show goods withdrawn as a separate credit instead of reducing Purchases, Purchases stays at 72,000 and a 3,000 credit line appears; the totals become 4,63,000 each.</p></details><details><summary>Q6 · Suspense account and five errors · Quiz 1 topic</summary><p style=\"font-size:14.5px\">Rohan Traders' trial balance shows debits ₹8,56,450 and credits ₹8,46,000; the ₹10,450 difference sits in Suspense. Five errors are found.</p><div class=\"scroller\"><table><thead><tr><th>#</th><th>Error</th><th>Affects the trial balance?</th><th>Rectifying entry (₹)</th></tr></thead><tbody><tr><td>1</td><td>Purchase of 7,000 debited to Purchases, not credited to supplier P</td><td>Yes: credit side short 7,000</td><td>Suspense Dr 7,000 · To P 7,000</td></tr><tr><td>2</td><td>Sales return of 2,500 credited to the customer as 2,050</td><td>Yes: credit side short 450</td><td>Suspense Dr 450 · To Customer 450</td></tr><tr><td>3</td><td>Purchases account overcast by 3,000</td><td>Yes: debit side 3,000 too high</td><td>Suspense Dr 3,000 · To Purchases 3,000</td></tr><tr><td>4</td><td>Furniture of 10,000 debited to Purchases</td><td>No: error of principle</td><td>Furniture Dr 10,000 · To Purchases 10,000</td></tr><tr><td>5</td><td>Rent of 6,000 not recorded at all</td><td>No: error of omission</td><td>Rent Dr 6,000 · To Cash/Bank 6,000</td></tr></tbody></table></div><div class=\"scroller\"><table><thead><tr><th>Suspense Account</th><th>₹</th></tr></thead><tbody><tr><td>Cr: difference in trial balance (credits short)</td><td>10,450</td></tr><tr><td>Dr: P (error 1)</td><td>7,000</td></tr><tr><td>Dr: customer (error 2)</td><td>450</td></tr><tr><td>Dr: Purchases (error 3)</td><td>3,000</td></tr><tr><td>Balance after the three entries</td><td>Nil</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> Errors 1–3 affect the trial balance and clear the suspense account exactly (7,000 + 450 + 3,000 = 10,450); errors 4 and 5 do not. (d) An agreed trial balance proves only arithmetical accuracy: errors of principle (4), complete omissions (5), compensating errors and some errors of commission leave it in agreement.</p></details>"
+    },
+    {
      "t": "Textbook: Accounting Records and Systems",
      "src": "Anthony 13e ch4",
      "h": "<p><strong>Trial balance and its limits</strong> — A list of every account balance in debit and credit columns. It shows whether debits still equal credits and gives a summary from which adjustments and closing are prepared. It cannot catch omitted entries, postings to the wrong account, offsetting errors or wrongly analysed transactions, such as equipment debited to an expense.</p><p><strong>Objectives of an accounting system and internal control</strong> — A good system processes data cheaply, reports quickly, is accurate and makes theft or fraud difficult; the last two goals conflict with the first two. Internal control rests on making dishonesty or carelessness hard, for example by dividing responsibility so that whoever holds an asset does not also keep its accounts. Collusion can still defeat it.</p><p><strong>Computer-based systems</strong> — Computers do the mechanical bookkeeping (input, processing, output) through modules such as order entry, purchasing, payroll, fixed assets and the general ledger. They reject entries whose debits and credits differ, but cannot stop a wrong account or a wrong amount entered on both sides, and they leave a weaker paper trail, so internal controls matter more.</p>"
@@ -395,6 +433,11 @@ HUB.addCourse({
      "t": "Live Lecture 5 — Vogue Company's final statements",
      "src": "L#24",
      "h": "<p style=\"font-size:14.5px\">The worksheet she shared carries Vogue Company (Lecture 19) from its adjusted trial balance into the three statements. Vogue started in June, so there are no opening retained earnings.</p><h4>1 · Income statement for the month ended 30 June</h4><div class=\"scroller\"><table><thead><tr><th></th><th>₹</th></tr></thead><tbody><tr><td>Revenue from services</td><td>15,600</td></tr><tr><td>Rent expense</td><td>1,500</td></tr><tr><td>Telephone expense</td><td>200</td></tr><tr><td>Salaries expense</td><td>1,300</td></tr><tr><td>Electricity expense</td><td>150</td></tr><tr><td>Office supplies expense</td><td>2,600</td></tr><tr><td>Insurance expense</td><td>60</td></tr><tr><td>Depreciation expense</td><td>50</td></tr><tr><td>Total expenses</td><td>5,860</td></tr><tr><td><strong>Net profit</strong></td><td><strong>9,740</strong></td></tr></tbody></table></div><h4>2 · Statement of retained earnings</h4><p style=\"font-size:14.5px\">Opening 0 + net profit 9,740 − dividends 2,200 = <strong>₹7,540</strong>. She stressed that this figure must be carried into the balance sheet, beside share capital; without it the balance sheet will not agree.</p><h4>3 · Balance sheet as at 30 June</h4><p style=\"font-size:14.5px\">No one gave the total in class. Worked through, the assets come to <strong>₹61,140</strong>; liabilities ₹3,600 (trade payables, unearned revenue, salaries payable) and equity ₹57,540 (share capital 50,000 + retained earnings 7,540) also total <strong>₹61,140</strong>. The figure below sets it out in the T-form of Lecture 22.</p><p style=\"font-size:14.5px\"><strong>Why your worksheet shows ₹61,190:</strong> in the worksheet's balance-sheet columns equipment is listed at ₹3,000 (debit) and accumulated depreciation ₹50 as a credit, so each column totals ₹61,190. In the formal statement the ₹50 is deducted from equipment, so both sides total ₹61,140. Both agree; they differ only in where the ₹50 sits.</p><!--viz:fa-vogue-balance-sheet--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Vogue Company balance sheet as at 30 June in T-form. Liabilities side: trade payables 2,500, unearned revenue 600, salaries payable 500, share capital 50,000 and retained earnings 7,540 (net profit 9,740 less dividends 2,200). Assets side: equipment 3,000 less accumulated depreciation 50 gives 2,950, office supplies 2,900, trade receivables 7,000, unbilled revenue 700, prepaid insurance 660 and cash 46,930. Both sides total 61,140.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Vogue Company's balance sheet: both sides ₹61,140</div><p style=\"font-size:13px;color:var(--ink-2);margin:0 0 8px\">Net profit 9,740 − dividends 2,200 = retained earnings <b>7,540</b>, carried to the left side.</p><div style=\"font-size:13px\"><div style=\"display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:4px;gap:8px\"><span style=\"color:var(--ink-3)\">Liabilities</span><b style=\"text-align:center\">Vogue Company · Balance Sheet as at 30 June</b><span style=\"color:var(--ink-3)\">Assets</span></div><div style=\"display:grid;grid-template-columns:1fr 1fr\"><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span>Trade payables</span><span style=\"font-family:var(--mono);white-space:nowrap\">2,500</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Equipment 3,000 less acc. dep. 50</span><span style=\"font-family:var(--mono);white-space:nowrap\">2,950</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span>Unearned revenue</span><span style=\"font-family:var(--mono);white-space:nowrap\">600</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Office supplies</span><span style=\"font-family:var(--mono);white-space:nowrap\">2,900</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span>Salaries payable</span><span style=\"font-family:var(--mono);white-space:nowrap\">500</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Trade receivables</span><span style=\"font-family:var(--mono);white-space:nowrap\">7,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span>Share capital</span><span style=\"font-family:var(--mono);white-space:nowrap\">50,000</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Unbilled revenue</span><span style=\"font-family:var(--mono);white-space:nowrap\">700</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 8px 4px 0;border-right:2px solid var(--ink);background:var(--good-soft)\"><span>Retained earnings</span><span style=\"font-family:var(--mono);white-space:nowrap\">7,540</span></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Prepaid insurance</span><span style=\"font-family:var(--mono);white-space:nowrap\">660</span></div><div style=\"padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"></div><div style=\"display:flex;justify-content:space-between;gap:6px;padding:4px 0 4px 8px\"><span>Cash</span><span style=\"font-family:var(--mono);white-space:nowrap\">46,930</span></div><div style=\"display:flex;justify-content:flex-end;padding:4px 8px 4px 0;border-right:2px solid var(--ink)\"><span style=\"font-family:var(--mono);white-space:nowrap;border-top:1px solid var(--ink-2);border-bottom:3px double var(--ink-2);padding:1px 0\">61,140</span></div><div style=\"display:flex;justify-content:flex-end;padding:4px 0 4px 8px\"><span style=\"font-family:var(--mono);white-space:nowrap;border-top:1px solid var(--ink-2);border-bottom:3px double var(--ink-2);padding:1px 0\">61,140</span></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Retained earnings of ₹7,540 are the link: leave them out and the left side falls ₹7,540 short.</figcaption></figure><!--/viz:fa-vogue-balance-sheet-->"
+    },
+    {
+     "t": "Practice set from the faculty (29 Oct)",
+     "src": "L#26",
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q14, Q15, Q16, Q17, Q18.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q14 · Cost of a machine · Not yet lectured</summary><p style=\"font-size:14.5px\">Orbit Industries buys a machine: invoice ₹12,00,000, trade discount 5% (₹60,000), freight in ₹25,000, installation ₹40,000, test runs before it is ready ₹15,000, staff training ₹20,000, first-year maintenance contract ₹18,000. What cost is capitalised?</p><p style=\"font-size:14.5px\">Cost = everything needed to bring the asset to working condition for its intended use: 12,00,000 − 60,000 + 25,000 + 40,000 + 15,000 = <strong>₹12,20,000</strong>. Training (₹20,000) and the maintenance contract (₹18,000) are expenses of running it, charged to profit (AS 10).</p></details><details><summary>Q15 · Straight-line vs reducing-balance depreciation · Not yet lectured</summary><p style=\"font-size:14.5px\">Using ₹12,20,000, residual value ₹20,000 and a 5-year life, find depreciation and closing book value for years 1–3 by (a) straight line and (b) 20% reducing balance on opening book value (ignoring residual value).</p><div class=\"scroller\"><table><thead><tr><th>Year</th><th>Straight line: depreciation</th><th>Book value</th><th>Reducing balance 20%: depreciation</th><th>Book value</th></tr></thead><tbody><tr><td>1</td><td>2,40,000</td><td>9,80,000</td><td>2,44,000</td><td>9,76,000</td></tr><tr><td>2</td><td>2,40,000</td><td>7,40,000</td><td>1,95,200</td><td>7,80,800</td></tr><tr><td>3</td><td>2,40,000</td><td>5,00,000</td><td>1,56,160</td><td>6,24,640</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Straight line: (12,20,000 − 20,000) ÷ 5 = 2,40,000 every year. Reducing balance: 20% of each year's opening book value, so the charge falls each year.</p></details><details><summary>Q16 · Disposal part-way through a year · Not yet lectured</summary><p style=\"font-size:14.5px\">The machine (bought 1 April 2026, straight line, ₹2,40,000 a year) is sold on 30 September 2028 for ₹6,50,000; depreciation runs to the month of sale; the year ends 31 March.</p><ol><li>Depreciation: 2026–27 2,40,000 + 2027–28 2,40,000 + April–September 2028 (6 months) 1,20,000 = <strong>₹6,00,000</strong>.</li><li>Book value at sale = 12,20,000 − 6,00,000 = <strong>₹6,20,000</strong>.</li><li>Gain = 6,50,000 − 6,20,000 = <strong>₹30,000</strong>.</li><li>Entries: Depreciation Dr 1,20,000 · To Accumulated Depreciation 1,20,000 (the half year); then Bank Dr 6,50,000, Accumulated Depreciation Dr 6,00,000 · To Machinery 12,20,000, To Gain on Sale of Machinery 30,000.</li></ol></details><details><summary>Q17 · Revised useful life · Not yet lectured</summary><p style=\"font-size:14.5px\">Not sold: on 1 April 2028 the remaining life is re-estimated at 5 years from that date, residual value unchanged. Find the 2028–29 charge.</p><p style=\"font-size:14.5px\">Book value on 1 April 2028 = 12,20,000 − 2 × 2,40,000 = 7,40,000. New charge = (7,40,000 − 20,000) ÷ 5 = <strong>₹1,44,000</strong> a year.</p><p style=\"font-size:14.5px\">A revised useful life is a <strong>change in an accounting estimate</strong>: apply it from now on (prospectively). The two years already charged are not restated (AS 5, AS 10).</p></details><details><summary>Q18 · Capital or revenue expenditure · Not yet lectured</summary><p style=\"font-size:14.5px\">Capital or revenue expenditure?</p><div class=\"scroller\"><table><thead><tr><th></th><th>Item</th><th>Type</th><th>Reason</th></tr></thead><tbody><tr><td>a</td><td>Repainting the factory every year</td><td>Revenue</td><td>Recurring upkeep; no lasting new benefit</td></tr><tr><td>b</td><td>Legal fees to buy land</td><td>Capital</td><td>Part of the land's cost</td></tr><tr><td>c</td><td>Replacing a worn belt to keep a machine running</td><td>Revenue</td><td>Maintains, doesn't improve</td></tr><tr><td>d</td><td>A new lift in an office building</td><td>Capital</td><td>A new asset with benefit over many years</td></tr><tr><td>e</td><td>Own workers' wages for building a warehouse extension</td><td>Capital</td><td>Cost of constructing a fixed asset</td></tr><tr><td>f</td><td>Advertising a new product</td><td>Revenue</td><td>Charged to profit as incurred (AS 26 doesn't allow it to be capitalised)</td></tr><tr><td>g</td><td>Engine overhaul that adds 4 years of life</td><td>Capital</td><td>Extends the useful life beyond the original estimate</td></tr><tr><td>h</td><td>Stamp duty and registration on a building purchase</td><td>Capital</td><td>Part of the building's cost</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Older Indian texts sometimes call heavy advertising “deferred revenue expenditure”; under AS 26 it is an expense when incurred.</p></details>"
     },
     {
      "t": "Textbook: Basic Accounting Concepts: The Balance Sheet",
@@ -460,6 +503,11 @@ HUB.addCourse({
      "h": "<p style=\"font-size:14.5px\"><strong>Her opening case:</strong> a friend runs a premium dry-fruit gift-box business from Jodhpur. Diwali sales came to about ₹8 lakh, and on 31 March her bank balance was far smaller (about ₹1 lakh, as we heard it). Did she make ₹8 lakh or ₹1 lakh? <strong>Neither.</strong> Sales are not profit: the dry fruit, boxes and ribbons still have to be paid for. The bank balance is not profit either: a delivery van may be bought but unpaid, and some customers have not yet paid (trade receivables). <strong>Cash is not profit.</strong> Her question splits into two: the result over the period (the \"video\", trading and P&amp;L) and the position on 31 March (the \"photograph\", balance sheet).</p><h4>The sorting rule</h4><p style=\"font-size:14.5px\">Once the adjusted trial balance is ready, \"the hard part is done\": what remains is <strong>sorting</strong> each account into its statement.</p><ul><li><strong>Revenue or expense nature</strong> (something that <em>happened during the year</em>) → trading and profit and loss account. Buying and selling goods (sales, purchases, opening stock, wages) → <strong>trading</strong>; running the business and other incomes (rent paid, interest received) → <strong>P&amp;L</strong>.</li><li><strong>Asset, liability or capital</strong> (something that <em>still exists on the last day</em>) → <strong>balance sheet</strong>.</li><li><strong>Dividends, opening retained earnings and the net profit</strong> → <strong>statement of retained earnings</strong>, which she also called the statement of changes in equity.</li><li><strong>Closing stock</strong> goes to <strong>both</strong>: the credit side of the trading account and the asset side of the balance sheet. It is usually given outside the trial balance, because it is counted on the last day.</li></ul><h4>Her practice set, question 1: statement and normal balance</h4><div class=\"scroller\"><table><thead><tr><th>Account</th><th>Goes to</th><th>Normal balance</th></tr></thead><tbody><tr><td>Cash</td><td>Balance sheet (asset)</td><td>Debit</td></tr><tr><td>Sales revenue</td><td>Profit and loss (income)</td><td>Credit</td></tr><tr><td>Prepaid rent</td><td>Balance sheet (asset)</td><td>Debit</td></tr><tr><td>Dividends</td><td><strong>Retained earnings statement</strong></td><td>Debit</td></tr><tr><td>Accumulated depreciation</td><td>Balance sheet (contra-asset)</td><td><strong>Credit</strong></td></tr><tr><td>Salaries payable</td><td>Balance sheet (liability)</td><td>Credit</td></tr><tr><td>Unearned revenue</td><td>Balance sheet (liability)</td><td>Credit</td></tr><tr><td>Depreciation expense</td><td>Profit and loss (expense)</td><td>Debit</td></tr><tr><td>Common stock (= share capital)</td><td>Balance sheet (capital)</td><td>Credit</td></tr><tr><td>Notes payable</td><td>Balance sheet (liability)</td><td>Credit</td></tr><tr><td>Interest revenue</td><td>Profit and loss (income)</td><td>Credit</td></tr><tr><td>Supplies</td><td><strong>Balance sheet</strong> (asset: stock of supplies)</td><td>Debit</td></tr><tr><td>Supplies expense</td><td><strong>Profit and loss</strong> (supplies used up)</td><td>Debit</td></tr><tr><td>Retained earnings, opening</td><td><strong>Retained earnings statement</strong></td><td>Credit</td></tr><tr><td>Accounts receivable</td><td>Balance sheet (asset)</td><td>Debit</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Normal balances come from <strong>Assets + Expenses (+ Dividends) = Liabilities + Capital + Revenue</strong>: left-hand items are debits, right-hand items credits (Lecture 19).</p><h4>Three things to say more carefully than in class</h4><ul><li><strong>Dividends are not an expense.</strong> In class they were called \"a kind of expense\". They do have a debit balance, but they are a distribution of profit to owners: they go to the retained earnings statement, never to the P&amp;L account.</li><li><strong>Accumulated depreciation</strong> has a credit balance and sits in the credit column of the worksheet's balance-sheet columns. In a formal balance sheet it is shown as a <strong>deduction from the asset</strong> (equipment 3,000 − 50 = 2,950), not as a liability.</li><li><strong>Unbilled revenue</strong> is revenue <strong>earned</strong> for which no invoice has been issued yet: an asset with a debit balance. (Prepaid insurance, which she compared it with, is also an asset, but for a different reason: an expense paid in advance.)</li></ul><h4>Valuing closing stock: lower of cost and net realisable value</h4><div class=\"def\"><b>AS 2 (Valuation of Inventories)</b> requires closing stock at <b>cost or net realisable value, whichever is lower</b>. <b>Net realisable value</b> = the price the goods are expected to fetch <b>minus the costs needed to sell them</b> (transport, advertising and the like). The rule comes from the <b>convention of conservatism</b>: provide for expected losses now, but do not count profits until they are earned.</div><p style=\"font-size:14.5px\"><strong>Worked (our figures):</strong> stock cost ₹50,000; it can be sold for ₹56,000 but only after spending ₹9,000 on transport and promotion. NRV = 56,000 − 9,000 = ₹47,000, which is below cost, so closing stock is valued at <strong>₹47,000</strong>. If NRV had been ₹60,000 it would stay at cost, ₹50,000: the expected profit is not taken early. (The Lecture 18 note says \"cost or market price\"; this is the precise form.)</p><h4>Gross profit in one picture</h4><p style=\"font-size:14.5px\">A vegetable seller buys potatoes at the mandi for ₹20 a kg and sells them at your gate for ₹30. The ₹10 a kg is <strong>gross profit</strong>, from buying and selling alone. He does not take it all home: the cart, fuel and travel come out of it, and what is left could be zero or less. A gross profit that is tiny or negative means the business is broken at its core, which is why managers watch it closely.</p><h4>Revision drills</h4><p style=\"font-size:14.5px\">She reworked the four step-by-step trading examples of Lecture 18, the missing closing-stock problem of Lecture 20 (closing stock ₹30,000, gross profit ₹55,000) and the ABC Traders account (gross profit ₹4,20,000); the answers are in those notes. One slide gave the third example's gross profit as ₹10,000; the working (net sales 50,000 − cost of goods sold 30,000) gives <strong>₹20,000</strong>. She also warned that textbook problems often use a January–December year, while India's financial year runs April–March.</p><div class=\"def\"><b>From the lecture (L#24):</b> When a question asks for final accounts, the <b>first step is always to classify</b> every account: which statement it goes to and what its normal balance is. A mistake here makes everything after it collapse. A question may give the adjusted trial balance as amounts only, with no debit and credit columns, so you must know the normal balances yourself. Accounting carries its own checks: if the balance sheet agrees, the work is very likely right. She shared a practice set (questions 1 and 2 done in class, the rest for self-practice) and urged solving along in class.</div><!--viz:fa-final-accounts-sorting--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow from the adjusted trial balance to three statements: revenues and expenses to the trading and profit and loss account, opening retained earnings, net profit and dividends to the retained earnings statement, and assets, contra-assets, liabilities and capital to the balance sheet. Closing stock goes both to the trading account and to the balance sheet.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Sorting the adjusted trial balance into three statements</div><div style=\"font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Adjusted trial balance</b><br><span style=\"color:var(--ink-2);font-size:13px\">every account with its balance; the hard part is already done</span></div><div style=\"color:var(--ink-3);padding:3px 0 3px 14px\">↓</div><div style=\"display:flex;flex-wrap:wrap;gap:6px\"><div style=\"flex:1 1 150px;padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Trading and P&amp;L</b><br><span style=\"color:var(--ink-2);font-size:13px\">revenues and expenses: what happened during the year</span></div><div style=\"flex:1 1 150px;padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Retained earnings statement</b><br><span style=\"color:var(--ink-2);font-size:13px\">opening retained earnings, net profit, dividends</span></div><div style=\"flex:1 1 150px;padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Balance sheet</b><br><span style=\"color:var(--ink-2);font-size:13px\">assets (and contra-assets), liabilities, capital: what still exists on the last day</span></div></div><div style=\"margin-top:8px;padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--clay-soft)\"><b>Closing stock</b> goes to two places: the credit side of the trading account and the asset side of the balance sheet.</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Happened during the year goes to P&amp;L; still exists on the last day goes to the balance sheet; dividends go to retained earnings.</figcaption></figure><!--/viz:fa-final-accounts-sorting-->"
     },
     {
+     "t": "Practice set from the faculty (29 Oct)",
+     "src": "L#26",
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q10, Q11, Q13.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q10 · Cash basis vs accrual basis profit · On Quiz 2</summary><p style=\"font-size:14.5px\">Anand Coaching Classes, year to 31 March 2027: fees received ₹9,60,000 (receivable 40,000 → 55,000; received in advance 30,000 → 50,000); salaries paid ₹5,40,000 (payable 20,000 → 35,000); rent paid ₹1,20,000 (prepaid 10,000 → 15,000). Compute profit on the cash basis and the accrual basis, and reconcile them.</p><div class=\"scroller\"><table><thead><tr><th>Item</th><th>Cash basis ₹</th><th>Accrual working</th><th>Accrual basis ₹</th></tr></thead><tbody><tr><td>Fees</td><td>9,60,000</td><td>9,60,000 − 40,000 + 55,000 + 30,000 − 50,000</td><td>9,55,000</td></tr><tr><td>Salaries</td><td>(5,40,000)</td><td>5,40,000 − 20,000 + 35,000</td><td>(5,55,000)</td></tr><tr><td>Rent</td><td>(1,20,000)</td><td>1,20,000 + 10,000 − 15,000</td><td>(1,15,000)</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Profit</strong></td><td><strong>3,00,000</strong></td><td></td><td><strong>2,85,000</strong></td></tr></tbody></table></div><div class=\"scroller\"><table><thead><tr><th>Reconciliation</th><th>₹</th></tr></thead><tbody><tr><td>Cash-basis profit</td><td>3,00,000</td></tr><tr><td>+ Rise in fees receivable (earned, not yet received)</td><td>+15,000</td></tr><tr><td>− Rise in fees received in advance (received, not yet earned)</td><td>−20,000</td></tr><tr><td>− Rise in salaries payable (incurred, not yet paid)</td><td>−15,000</td></tr><tr><td>+ Rise in prepaid rent (paid, not yet used)</td><td>+5,000</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Accrual-basis profit</strong></td><td><strong>2,85,000</strong></td></tr></tbody></table></div></details><details><summary>Q11 · How much revenue this year? · On Quiz 2</summary><p style=\"font-size:14.5px\">For the year ending 31 March 2027, how much revenue is recognised, and how much (if anything) is still a liability at year end?</p><div class=\"scroller\"><table><thead><tr><th></th><th>Situation</th><th>Revenue 2026–27</th><th>Liability at 31 March</th></tr></thead><tbody><tr><td>a</td><td>₹2,400 received on 1 Oct 2026 for a 12-month subscription starting that day</td><td>6/12 × 2,400 = 1,200</td><td>1,200 unearned</td></tr><tr><td>b</td><td>Goods of ₹90,000 delivered 28 Mar 2027, paid 15 Apr 2027</td><td>90,000 (delivered = earned)</td><td>None (a receivable instead)</td></tr><tr><td>c</td><td>Order of ₹50,000 on 25 Mar with ₹10,000 paid in advance; delivery 5 Apr</td><td>Nil</td><td>10,000 advance from customer</td></tr><tr><td>d</td><td>40% of the work done on a ₹5,00,000, 18-month contract; nothing received</td><td>40% × 5,00,000 = 2,00,000</td><td>None (accrued revenue, an asset)</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Revenue follows the earning, not the cash: cash before earning is a liability (a, c); earning before cash is a receivable (b, d). Part (d) recognises service revenue in proportion to work done, the method AS 9 allows for services.</p></details><details><summary>Q13 · FIFO vs weighted average, NRV write-down · Partly on Quiz 2</summary><p style=\"font-size:14.5px\">Sunrise Traders, April 2027, periodic system: opening 100 units at ₹40; purchases of 150 at ₹42, 100 at ₹45 and 150 at ₹48; sales of 120 and 230 units, all at ₹70. Find closing inventory, COGS and gross profit under FIFO and weighted average, the difference, and the write-down if 30 FIFO closing units have an NRV of ₹40.</p><p style=\"font-size:14.5px\">Goods available: 500 units costing 4,000 + 6,300 + 4,500 + 7,200 = ₹22,000. Sold 350, so 150 remain. Sales = 350 × 70 = ₹24,500.</p><div class=\"scroller\"><table><thead><tr><th></th><th>FIFO</th><th>Weighted average</th></tr></thead><tbody><tr><td>Closing inventory</td><td>Latest 150 at 48 = 7,200</td><td>22,000 ÷ 500 = 44 a unit; 150 × 44 = 6,600</td></tr><tr><td>Cost of goods sold</td><td>22,000 − 7,200 = 14,800</td><td>22,000 − 6,600 = 15,400</td></tr><tr><td>Gross profit</td><td>24,500 − 14,800 = <strong>9,700</strong></td><td>24,500 − 15,400 = <strong>9,100</strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> (c) FIFO's gross profit is ₹600 higher: with prices rising, FIFO leaves the newest, dearest units in stock and charges the older, cheaper ones to COGS. (d) The 30 units cost ₹48 under FIFO against an NRV of ₹40: write down 30 × 8 = <strong>₹240</strong> (lower of cost and NRV, AS 2), so closing inventory becomes ₹6,960 and gross profit ₹9,460.</p></details>"
+    },
+    {
      "t": "Textbook: Basic Accounting Concepts: The Income Statement",
      "src": "Anthony 13e ch3",
      "h": "<!--viz:fa-atc-revenue-cash--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three cases of cash timing: advance before delivery is a liability that becomes sales at delivery; cash at delivery is a cash sale; cash after delivery clears a debtor created at delivery. Sales is credited at delivery every time.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Revenue waits for delivery; cash can come any time</div><div class=\"scroller\"><table><thead><tr><th>Cash arrives</th><th>Entry when cash comes</th><th>Entry at delivery (revenue)</th></tr></thead><tbody><tr><td><b>Before</b> delivery</td><td>Cash A/c Dr<br><span style='padding-left:16px'>To Advance from Customer A/c</span><br><span style='color:var(--ink-3);font-size:13px'>a liability until delivered</span></td><td style=\"background:var(--blue-soft)\">Advance from Customer A/c Dr<br><span style='padding-left:16px'>To Sales A/c</span></td></tr><tr><td><b>At</b> delivery</td><td style=\"color:var(--ink-3)\">same entry →</td><td style=\"background:var(--blue-soft)\">Cash A/c Dr<br><span style='padding-left:16px'>To Sales A/c</span></td></tr><tr><td><b>After</b> delivery</td><td>Cash A/c Dr<br><span style='padding-left:16px'>To Debtor A/c</span><br><span style='color:var(--ink-3);font-size:13px'>clears the receivable</span></td><td style=\"background:var(--blue-soft)\">Debtor A/c Dr<br><span style='padding-left:16px'>To Sales A/c</span></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Whatever the cash date, Sales is credited at delivery. Entries shown the Indian way.</figcaption></figure><!--/viz:fa-atc-revenue-cash--><!--viz:fa-atc-expense-timing--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Four patterns of expenditure against use, with examples: spent and used now is an expense; spent earlier and used now turns an opening asset into expense; spent now and used later is a closing asset; used now and paid later is an expense plus a liability.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Four timings of spending and using</div><div class=\"scroller\"><table><thead><tr><th>Pattern</th><th>Example (FY 2025-26)</th><th>This year's books</th></tr></thead><tbody><tr><td>Spent this year, used this year</td><td>Electricity for the year, paid</td><td style=\"background:var(--blue-soft)\">expense</td></tr><tr><td>Spent earlier, used this year</td><td>Opening stock sold; insurance prepaid last March</td><td style=\"background:var(--blue-soft)\">opening asset → expense</td></tr><tr><td>Spent this year, used later</td><td>Closing stock; rent paid for next April</td><td style=\"background:var(--good-soft)\">closing asset</td></tr><tr><td>Used this year, paid later</td><td>March wages paid in April</td><td style=\"background:var(--clay-soft)\">expense + outstanding liability</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Expense follows use, not payment: rows 2 and 4 are this year's expense though no cash moved this year.</figcaption></figure><!--/viz:fa-atc-expense-timing--><!--viz:fa-atc-income-statement--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Income statement in US layout from gross sales 520 lakh down to net income 60 lakh, through net sales 500, gross margin 200, operating income 90 and income before tax 80, with the Indian name for each line.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The income statement line by line</div><p style=\"margin:0 0 8px\"><span style=\"font-size:12.5px;padding:1px 6px;border-radius:3px;background:var(--clay-soft)\">US practice (Anthony)</span></p><div class=\"scroller\"><table><thead><tr><th>Line</th><th>₹ lakh</th><th>Indian usage</th></tr></thead><tbody><tr><td>Gross sales</td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">520</td><td></td></tr><tr><td>− returns, allowances, discounts</td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">20</td><td></td></tr><tr><td><b>= Net sales</b></td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">500</td><td>revenue from operations</td></tr><tr><td>− cost of sales</td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">300</td><td>cost of goods sold (Trading A/c)</td></tr><tr><td><b>= Gross margin</b></td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap;background:var(--blue-soft)\">200</td><td>gross profit</td></tr><tr><td>− R&amp;D and SG&amp;A</td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">110</td><td>indirect expenses (P&amp;L A/c)</td></tr><tr><td><b>= Operating income</b></td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">90</td><td>operating profit</td></tr><tr><td>− interest expense</td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">10</td><td>finance costs</td></tr><tr><td><b>= Income before tax</b></td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">80</td><td>profit before tax</td></tr><tr><td>− tax provision (25%)</td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap\">20</td><td>tax expense</td></tr><tr><td><b>= Net income</b></td><td style=\"font-family:var(--mono);text-align:right;white-space:nowrap;background:var(--good-soft)\">60</td><td>profit for the year</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Schedule III classifies expenses by nature, so Indian statements often skip the gross-profit line; use the Indian names in answers.</figcaption></figure><!--/viz:fa-atc-income-statement--><p><strong>Revenue and expense as changes in retained earnings</strong> — A revenue is an increase in retained earnings from the entity's operations and an expense is a decrease. Net income is their difference, so income is never a synonym for revenue. Saying a company had income of ₹1 crore when it had revenue of ₹1 crore gives a badly wrong picture of its size.<br><span style=\"font-family:var(--mono)\">Net income = Revenues − Expenses</span></p><p><strong>Income is not an increase in cash</strong> — Borrowing raises cash but not income; buying stock swaps one asset for another; a sale raises cash by the selling price but income only by the margin. Income measures how much better off the owners are, and cash movements may have no link to that.</p><p><strong>When revenue is recognised</strong> — Revenue from goods is recognised in the period of delivery, and revenue from services in the period they are performed. Cash may come earlier (precollected or unearned revenue, a liability), at the same time, or later (accounts receivable, or accrued revenue such as interest earned but not received, both assets).</p><p><strong>Cost, expenditure, expense, disbursement</strong> — Cost is the money measure of resources used for a purpose. An expenditure is the decrease in an asset or increase in a liability when a cost is incurred. An expense is cost belonging to the current period. A disbursement is any cash payment, including loan repayments and dividends, which are not expenses.<br><em>e.g.</em> Stock received in August on credit (expenditure), paid in September (disbursement), sold in November (expense).</p><p><strong>Three tests for expense recognition</strong> — A cost is an expense of the period if (1) it is directly matched with the period's revenue, (2) it relates to the period's activities even though it cannot be traced to particular sales (a period cost, such as office salaries) or (3) it cannot be linked to the benefits of any future period, such as training, fire losses or obsolete stock. Otherwise it is an asset.</p><p><strong>Four expenditure–expense timing patterns</strong> — (1) Spent and used this year: expense now. (2) Spent earlier and used this year: opening assets such as inventory, prepaid items and plant become expenses. (3) Spent this year and used later: closing assets. (4) Used this year and paid later: accrued liabilities such as wages and interest payable.</p><p><strong>Gains and losses</strong> — Increases in retained earnings from outside normal sales (selling securities above cost) are gains; decreases outside operations (fire, theft, selling securities below cost) are losses. In practice they are treated much like revenues and expenses. Dividends are the one common reduction in retained earnings that is not an expense.</p><p><strong>Structure of the income statement</strong> — Gross sales less returns and allowances and less sales (cash) discounts give net sales. Cost of sales is deducted to give gross margin, then R&amp;D and selling, general and administrative expenses to give operating income. Other revenues and expenses (interest, royalties) give income before tax, then the tax provision gives net income and earnings per share. Sales taxes collected, freight billed at cost and trade discounts are not revenue.</p><p><strong>Articulation and income-statement percentages</strong> — Net income and dividends explain the change in retained earnings between two balance sheets, so the statements articulate. Analysts express each line as a percentage of net sales, chiefly the gross margin percentage and the profit margin.<br><span style=\"font-family:var(--mono)\">Gross margin % = Gross margin ÷ Net sales; Profit margin = Net income ÷ Net sales</span></p><p><strong>Accrual vs cash basis and other incomes</strong> — Accrual accounting, built on realisation and matching, is the only basis GAAP permits. Cash-basis accounting records sales when cash is received and costs when paid, and in practice is a modified mixture. Taxable income follows tax law (often faster depreciation). Economic income is the change in the firm's value and is not feasible to measure. Pro forma earnings leave out one-off charges that are often not one-off.</p>"
@@ -493,6 +541,11 @@ HUB.addCourse({
      "h": "<div class=\"scroller\"><table><thead><tr><th></th><th>Deferral</th><th>Accrual</th></tr></thead><tbody><tr><td><strong>Timing</strong></td><td>Cash <strong>first</strong>, recognition later</td><td>Recognition <strong>first</strong>, cash later</td></tr><tr><td><strong>Concerns</strong></td><td>A delay in recognising an expense already <strong>paid</strong> or revenue already <strong>received</strong>: past cash</td><td>An expense <strong>incurred</strong> but unpaid, or revenue <strong>earned</strong> but not received: expected future cash</td></tr><tr><td><strong>Adjustment</strong></td><td>Apportions an amount between two or more periods</td><td>Records items not yet recorded at all</td></tr><tr><td><strong>Examples</strong></td><td>Prepaid insurance, office supplies, unearned revenue</td><td>Salaries payable, accrued interest expense, accrued interest income, unbilled revenue</td></tr></tbody></table></div><h4>Two quick examples from the slides</h4><ul><li><strong>Prepaid insurance:</strong> ₹12,000 paid on 1 October for one year; the year ends 31 December. Used: October to December = 3 months, so <strong>expense ₹3,000</strong>; the remaining <strong>₹9,000 stays an asset</strong> (prepaid insurance).</li><li><strong>Unearned revenue:</strong> a customer pays ₹60,000 in advance for a six-month service. On receipt: Cash Dr, To Unearned Revenue (liability). After one month of service, <strong>₹10,000 is revenue</strong> and the liability falls to <strong>₹50,000</strong>. With no adjustment, revenue would be understated and the liability overstated.</li></ul><p style=\"font-size:14.5px\"><strong>Real-world case, Tech Mahindra (year to 31 March 2010):</strong> a customer paid for changes to a long-term contract; the company recognised as revenue only the value of services provided that year and carried the rest as deferred revenue.</p><h4>The six Vogue adjustments (30 June)</h4><ul><li>Prepaid insurance ₹720 covers 12 months from 1 June: one month used, <strong>₹60</strong>.</li><li>Office supplies: books show ₹3,700, a physical count finds ₹2,900, so <strong>₹800</strong> was used.</li><li>Equipment ₹3,000, useful life 5 years (60 months), no scrap value: depreciation <strong>₹50</strong> a month, credited to <strong>Accumulated Depreciation</strong>, a contra-asset, so that the original cost stays visible. Net equipment = 3,000 − 50 = <strong>₹2,950</strong> (said as 2,900 in class; the arithmetic gives 2,950).</li><li>Part of the ₹1,500 advance is now earned by a design delivered: <strong>₹900</strong> from Unearned Revenue to Revenue from Services.</li><li>An office manager hired on 21 June at ₹1,500 a month has worked 10 days: ₹1,500 ÷ 30 × 10 = <strong>₹500</strong> salaries payable. Hiring itself was not a transaction; the liability builds only as the work is done.</li><li>A design finished but not yet billed, fee ₹700: <strong>Unbilled Revenue</strong> (an asset) Dr, To Revenue from Services.</li></ul><div class=\"def\"><b>From the lecture (L#19).</b> Homework for the next session: carry the six adjustments into the shared worksheet (unadjusted trial balance → adjustments → <b>adjusted trial balance</b>). The worked answer is below; check yours against it.</div><!--viz:fa-vogue-adjustments--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of six adjusting entries for Vogue Company at 30 June: insurance 60, supplies 800, depreciation 50, unearned revenue earned 900, salaries accrued 500, unbilled revenue 700, with their effect on profit, which rises from 9,550 to 9,740.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Vogue Company: six adjustments and their effect on profit</div><div class=\"scroller\"><table><thead><tr><th>Adjustment</th><th>Entry (₹)</th><th>Profit</th></tr></thead><tbody><tr><td><b>1</b> · Insurance used in June<br><span style=\"color:var(--ink-3);font-size:13px\">720 ÷ 12 months</span></td><td>Insurance expense A/c Dr <span style=\"font-family:var(--mono)\">60</span><br><span style=\"padding-left:16px\">To Prepaid insurance A/c <span style=\"font-family:var(--mono)\">60</span></span></td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--bad-soft)\">−60</td></tr><tr><td><b>2</b> · Office supplies used<br><span style=\"color:var(--ink-3);font-size:13px\">3,700 on books − 2,900 counted</span></td><td>Office supplies expense A/c Dr <span style=\"font-family:var(--mono)\">800</span><br><span style=\"padding-left:16px\">To Office supplies A/c <span style=\"font-family:var(--mono)\">800</span></span></td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--bad-soft)\">−800</td></tr><tr><td><b>3</b> · Depreciation for June<br><span style=\"color:var(--ink-3);font-size:13px\">3,000 ÷ 60 months</span></td><td>Depreciation expense A/c Dr <span style=\"font-family:var(--mono)\">50</span><br><span style=\"padding-left:16px\">To Accumulated depreciation A/c <span style=\"font-family:var(--mono)\">50</span></span></td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--bad-soft)\">−50</td></tr><tr><td><b>4</b> · Advance now earned<br><span style=\"color:var(--ink-3);font-size:13px\">design delivered</span></td><td>Unearned revenue A/c Dr <span style=\"font-family:var(--mono)\">900</span><br><span style=\"padding-left:16px\">To Revenue from services A/c <span style=\"font-family:var(--mono)\">900</span></span></td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--good-soft)\">+900</td></tr><tr><td><b>5</b> · Salary accrued<br><span style=\"color:var(--ink-3);font-size:13px\">1,500 ÷ 30 × 10 days</span></td><td>Salaries expense A/c Dr <span style=\"font-family:var(--mono)\">500</span><br><span style=\"padding-left:16px\">To Salaries payable A/c <span style=\"font-family:var(--mono)\">500</span></span></td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--bad-soft)\">−500</td></tr><tr><td><b>6</b> · Work done, not yet billed<br><span style=\"color:var(--ink-3);font-size:13px\">design finished</span></td><td>Unbilled revenue A/c Dr <span style=\"font-family:var(--mono)\">700</span><br><span style=\"padding-left:16px\">To Revenue from services A/c <span style=\"font-family:var(--mono)\">700</span></span></td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--good-soft)\">+700</td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\">Profit before adjustments: revenue 14,000 − expenses 4,450 = ₹9,550. After: 15,600 − 5,860 = <b>₹9,740</b> (+190).</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Four adjustments cut profit and two raise it; net effect +₹190.</figcaption></figure><!--/viz:fa-vogue-adjustments--><!--viz:fa-vogue-adjusted-tb--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Adjusted trial balance of Vogue Company at 30 June listing every account after the six adjustments; debit and credit totals are both 69,250.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The homework answer: Vogue's adjusted trial balance</div><div class=\"scroller\"><table><thead><tr><th>Vogue Company · Adjusted Trial Balance as at 30 June</th><th>Dr ₹</th><th>Cr ₹</th></tr></thead><tbody><tr><td style=\"\">Equipment</td><td style=\"font-family:var(--mono);text-align:right\">3,000</td><td style=\"font-family:var(--mono);text-align:right\"></td></tr><tr><td style=\"background:var(--blue-soft)\">Accumulated depreciation</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\"></td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\">50</td></tr><tr><td style=\"background:var(--blue-soft)\">Office supplies</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\">2,900</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\"></td></tr><tr><td style=\"\">Trade receivables</td><td style=\"font-family:var(--mono);text-align:right\">7,000</td><td style=\"font-family:var(--mono);text-align:right\"></td></tr><tr><td style=\"\">Cash</td><td style=\"font-family:var(--mono);text-align:right\">46,930</td><td style=\"font-family:var(--mono);text-align:right\"></td></tr><tr><td style=\"background:var(--blue-soft)\">Prepaid insurance</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\">660</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\"></td></tr><tr><td style=\"\">Trade payables</td><td style=\"font-family:var(--mono);text-align:right\"></td><td style=\"font-family:var(--mono);text-align:right\">2,500</td></tr><tr><td style=\"background:var(--blue-soft)\">Unearned revenue</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\"></td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\">600</td></tr><tr><td style=\"\">Share capital</td><td style=\"font-family:var(--mono);text-align:right\"></td><td style=\"font-family:var(--mono);text-align:right\">50,000</td></tr><tr><td style=\"\">Dividends</td><td style=\"font-family:var(--mono);text-align:right\">2,200</td><td style=\"font-family:var(--mono);text-align:right\"></td></tr><tr><td style=\"background:var(--blue-soft)\">Revenue from services</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\"></td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\">15,600</td></tr><tr><td style=\"\">Rent expense</td><td style=\"font-family:var(--mono);text-align:right\">1,500</td><td style=\"font-family:var(--mono);text-align:right\"></td></tr><tr><td style=\"\">Telephone expense</td><td style=\"font-family:var(--mono);text-align:right\">200</td><td style=\"font-family:var(--mono);text-align:right\"></td></tr><tr><td style=\"background:var(--blue-soft)\">Salaries expense</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\">1,300</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\"></td></tr><tr><td style=\"\">Electricity expense</td><td style=\"font-family:var(--mono);text-align:right\">150</td><td style=\"font-family:var(--mono);text-align:right\"></td></tr><tr><td style=\"background:var(--blue-soft)\">Office supplies expense</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\">2,600</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\"></td></tr><tr><td style=\"background:var(--blue-soft)\">Insurance expense</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\">60</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\"></td></tr><tr><td style=\"background:var(--blue-soft)\">Depreciation expense</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\">50</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\"></td></tr><tr><td style=\"background:var(--blue-soft)\">Salaries payable</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\"></td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\">500</td></tr><tr><td style=\"background:var(--blue-soft)\">Unbilled revenue</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\">700</td><td style=\"font-family:var(--mono);text-align:right;background:var(--blue-soft)\"></td></tr><tr><td style=\"\"><b>Total</b></td><td style=\"font-family:var(--mono);text-align:right\"><b>69,250</b></td><td style=\"font-family:var(--mono);text-align:right\"><b>69,250</b></td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\">Shaded: balances changed or created by the six adjustments. The unadjusted totals were ₹68,000; balanced adjustments that open new accounts raise both sides to ₹69,250.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Revenue 15,600 less expenses 5,860 gives the net profit of 9,740 that the statements will show.</figcaption></figure><!--/viz:fa-vogue-adjusted-tb-->"
     },
     {
+     "t": "Practice set from the faculty (29 Oct)",
+     "src": "L#26",
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q7, Q8, Q9, Q12.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q7 · Eight adjusting entries, deferral or accrual · On Quiz 2</summary><p style=\"font-size:14.5px\">Lakshya Services closes on 31 March 2027. Pass each adjusting entry and say whether it is a deferral or an accrual.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Working</th><th>Entry (₹)</th><th>Type</th></tr></thead><tbody><tr><td>a</td><td>₹36,000 for 12 months from 1 Dec: Dec–Mar = 4 months used</td><td>Insurance Expense Dr 12,000 · To Prepaid Insurance 12,000</td><td>Deferral</td></tr><tr><td>b</td><td>Available 6,000 + 21,000 = 27,000; on hand 8,500; used 18,500</td><td>Supplies Expense Dr 18,500 · To Supplies 18,500</td><td>Deferral</td></tr><tr><td>c</td><td>3 days × 2,400</td><td>Salaries Expense Dr 7,200 · To Salaries Payable 7,200</td><td>Accrual</td></tr><tr><td>d</td><td>₹60,000 for 6 months from 1 Feb: 2 months earned; 40,000 still unearned</td><td>Unearned Service Revenue Dr 20,000 · To Service Revenue 20,000</td><td>Deferral</td></tr><tr><td>e</td><td>(4,80,000 − 30,000) ÷ 5 = 90,000 a year; Oct–Mar = 6 months</td><td>Depreciation Expense Dr 45,000 · To Accumulated Depreciation 45,000</td><td>Deferral (cost paid first, spread over the life)</td></tr><tr><td>f</td><td>2,00,000 × 9% × 3/12 (Jan–Mar)</td><td>Interest Expense Dr 4,500 · To Interest Payable 4,500</td><td>Accrual</td></tr><tr><td>g</td><td>1,50,000 × 8% × 5/12 (Nov–Mar)</td><td>Interest Receivable Dr 5,000 · To Interest Income 5,000</td><td>Accrual</td></tr><tr><td>h</td><td>Earned, not yet billed</td><td>Accounts Receivable (accrued revenue) Dr 14,000 · To Service Revenue 14,000</td><td>Accrual</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Deferral: the cash moved first and is now being recognised. Accrual: the revenue or expense has happened and the cash comes later.</p></details><details><summary>Q8 · Rent expense and commission income from cash · On Quiz 2</summary><p style=\"font-size:14.5px\">(a) Prepaid rent ₹8,000 on 1 April 2026; rent paid in the year ₹1,02,000; rent outstanding ₹6,000 on 31 March 2027. Find the rent expense. (b) Commission received in cash ₹45,000; accrued commission ₹2,000 at the start and ₹3,000 at the end; commission received in advance ₹5,000 at the start and ₹8,000 at the end. Find commission income.</p><ol><li>Rent expense = paid 1,02,000 + opening prepaid 8,000 (used this year) + closing outstanding 6,000 (owed for this year) = <strong>₹1,16,000</strong>.</li><li>Commission income = cash 45,000 − opening accrued 2,000 (last year's income) + closing accrued 3,000 + opening advance 5,000 (earned this year) − closing advance 8,000 (belongs to next year) = <strong>₹43,000</strong>.</li></ol><p style=\"font-size:14.5px\">Rule of thumb: start from cash, then add what belongs to this year but wasn't paid or received in it, and remove what was paid or received this year for another year.</p></details><details><summary>Q9 · Meera Design Studio: adjustments to closing entries · On Quiz 2</summary><p style=\"font-size:14.5px\">Meera Design Studio, unadjusted trial balance at 31 March 2027 (totals ₹13,85,000 each), with seven adjustments. Prepare the adjusting entries, the adjusted trial balance, the income statement, the statement of capital, the balance sheet and the closing entries.</p><h4>(a) Adjusting entries</h4><div class=\"scroller\"><table><thead><tr><th></th><th>Working</th><th>Entry (₹)</th></tr></thead><tbody><tr><td>1</td><td>₹24,000 for 12 months from 1 Oct: 6 months used</td><td>Insurance Expense Dr 12,000 · To Prepaid Insurance 12,000</td></tr><tr><td>2</td><td>30,000 − 11,000 on hand</td><td>Supplies Expense Dr 19,000 · To Supplies 19,000</td></tr><tr><td>3</td><td>15% × 6,00,000</td><td>Depreciation Expense Dr 90,000 · To Accumulated Depreciation 90,000</td></tr><tr><td>4</td><td>₹60,000 for 6 months from 1 Jan: 3 months earned</td><td>Unearned Design Fees Dr 30,000 · To Design Fees Revenue 30,000</td></tr><tr><td>5</td><td>Accrued</td><td>Salaries Expense Dr 18,000 · To Salaries Payable 18,000</td></tr><tr><td>6</td><td>Earned, unbilled</td><td>Accounts Receivable Dr 25,000 · To Design Fees Revenue 25,000</td></tr><tr><td>7</td><td>March bill unrecorded</td><td>Utilities Expense Dr 4,000 · To Accounts Payable (or Utilities Payable) 4,000</td></tr></tbody></table></div><h4>(b) Adjusted trial balance</h4><div class=\"scroller\"><table><thead><tr><th>Account</th><th>Dr ₹</th><th>Cr ₹</th></tr></thead><tbody><tr><td>Cash</td><td>95,000</td><td></td></tr><tr><td>Accounts receivable (1,40,000 + 25,000)</td><td>1,65,000</td><td></td></tr><tr><td>Supplies</td><td>11,000</td><td></td></tr><tr><td>Prepaid insurance</td><td>12,000</td><td></td></tr><tr><td>Equipment</td><td>6,00,000</td><td></td></tr><tr><td>Accumulated depreciation (1,20,000 + 90,000)</td><td></td><td>2,10,000</td></tr><tr><td>Accounts payable (85,000 + 4,000)</td><td></td><td>89,000</td></tr><tr><td>Salaries payable</td><td></td><td>18,000</td></tr><tr><td>Unearned design fees</td><td></td><td>30,000</td></tr><tr><td>Capital, M. Meera</td><td></td><td>4,40,000</td></tr><tr><td>Drawings</td><td>90,000</td><td></td></tr><tr><td>Design fees revenue (6,80,000 + 30,000 + 25,000)</td><td></td><td>7,35,000</td></tr><tr><td>Salaries expense</td><td>2,58,000</td><td></td></tr><tr><td>Rent expense</td><td>1,20,000</td><td></td></tr><tr><td>Utilities expense</td><td>50,000</td><td></td></tr><tr><td>Insurance expense</td><td>12,000</td><td></td></tr><tr><td>Supplies expense</td><td>19,000</td><td></td></tr><tr><td>Depreciation expense</td><td>90,000</td><td></td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Total</strong></td><td><strong>15,22,000</strong></td><td><strong>15,22,000</strong></td></tr></tbody></table></div><h4>(c) Income statement for the year ended 31 March 2027</h4><div class=\"scroller\"><table><thead><tr><th></th><th>₹</th></tr></thead><tbody><tr><td>Design fees revenue</td><td>7,35,000</td></tr><tr><td>Less: salaries 2,58,000; rent 1,20,000; utilities 50,000; insurance 12,000; supplies 19,000; depreciation 90,000</td><td>(5,49,000)</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Net income</strong></td><td><strong>1,86,000</strong></td></tr></tbody></table></div><h4>(d) Statement of capital and balance sheet</h4><p style=\"font-size:14.5px\">Capital: opening 4,40,000 + net income 1,86,000 − drawings 90,000 = <strong>₹5,36,000</strong>.</p><div class=\"scroller\"><table><thead><tr><th>Balance sheet, 31 March 2027</th><th>₹</th></tr></thead><tbody><tr><td>Current assets: cash 95,000; receivables 1,65,000; supplies 11,000; prepaid insurance 12,000</td><td>2,83,000</td></tr><tr><td>Equipment 6,00,000 − accumulated depreciation 2,10,000</td><td>3,90,000</td></tr><tr><td><strong>Total assets</strong></td><td><strong>6,73,000</strong></td></tr><tr><td>Liabilities: accounts payable 89,000; salaries payable 18,000; unearned fees 30,000</td><td>1,37,000</td></tr><tr><td>Capital, M. Meera</td><td>5,36,000</td></tr><tr><td><strong>Total liabilities and capital</strong></td><td><strong>6,73,000</strong></td></tr></tbody></table></div><h4>(e) Closing entries</h4><ol><li>Design Fees Revenue Dr 7,35,000 · To Income Summary (Profit and Loss A/c) 7,35,000</li><li>Income Summary Dr 5,49,000 · To each expense account (amounts as above)</li><li>Income Summary Dr 1,86,000 · To Capital 1,86,000 (net income)</li><li>Capital Dr 90,000 · To Drawings 90,000</li></ol></details><details><summary>Q12 · Bad debts, the allowance, ageing, recovery · Partly on Quiz 2</summary><p style=\"font-size:14.5px\">Three parts on receivables.</p><h4>(a) Firm X: write-off and a 5% allowance</h4><ol><li>Write off: Bad Debts Dr 15,000 · To Sundry Debtors 15,000. Debtors left: 8,40,000 − 15,000 = 8,25,000.</li><li>Required allowance = 5% × 8,25,000 = 41,250. Existing credit balance 30,000, so top up by 11,250: Profit and Loss (Bad and Doubtful Debts) Dr 11,250 · To Allowance for Doubtful Debts 11,250.</li><li>Transfer the write-off: Profit and Loss Dr 15,000 · To Bad Debts 15,000.</li></ol><p style=\"font-size:14.5px\">Total charge to the income statement = 15,000 + 11,250 = <strong>₹26,250</strong>. (Writing the 15,000 off against the allowance instead gives the same total: the allowance falls to 15,000 and needs 26,250 to reach 41,250.) Balance sheet: Sundry debtors 8,25,000 less allowance 41,250 = <strong>₹7,83,750</strong>.</p><h4>(b) Firm Y: ageing schedule</h4><div class=\"scroller\"><table><thead><tr><th>Age</th><th>₹</th><th>Rate</th><th>Allowance ₹</th></tr></thead><tbody><tr><td>0–30 days</td><td>4,00,000</td><td>1%</td><td>4,000</td></tr><tr><td>31–60 days</td><td>2,50,000</td><td>3%</td><td>7,500</td></tr><tr><td>61–90 days</td><td>1,20,000</td><td>10%</td><td>12,000</td></tr><tr><td>Over 90 days</td><td>70,000</td><td>30%</td><td>21,000</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Required balance</strong></td><td>8,40,000</td><td></td><td><strong>44,500</strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\">The ageing figure is the balance the allowance must <em>end</em> with. It already has 30,000, so the entry is Bad Debt Expense Dr 14,500 · To Allowance for Doubtful Debts 14,500.</p><h4>(c) A written-off debt recovered</h4><p style=\"font-size:14.5px\">Usual Indian practice: Cash Dr 3,000 · To Bad Debts Recovered A/c 3,000, then Bad Debts Recovered Dr 3,000 · To Profit and Loss 3,000 (an income). The alternative reinstates the debtor first (Debtor Dr · To Bad Debts Recovered, then Cash Dr · To Debtor), which keeps the customer's payment history; the effect on profit is the same.</p></details>"
+    },
+    {
      "t": "Textbook: Accounting Records and Systems",
      "src": "Anthony 13e ch4",
      "h": "<!--viz:fa-atc-cycle--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow of Anthony's six steps: analyse (judgement), journalise, post, then a trial balance check, adjust (judgement), an adjusted trial balance, close and prepare statements, cycling to the next period.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Anthony's six-step cycle: where judgement enters</div><p style=\"margin:0 0 8px\"><span style=\"font-size:12.5px;padding:1px 6px;border-radius:3px;background:var(--clay-soft)\">US practice (Anthony)</span></p><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>1</b> Analyse<br><span style=\"color:var(--ink-2);font-size:13px\">judgement</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>2</b> Journalise</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>3</b> Post</div><span style=\"color:var(--ink-3)\">→</span><span style=\"font-size:13px;color:var(--ink-3);border:1px dashed var(--rule-2);border-radius:4px;padding:4px 7px\">trial balance</span><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>4</b> Adjust<br><span style=\"color:var(--ink-2);font-size:13px\">judgement</span></div><span style=\"color:var(--ink-3)\">→</span><span style=\"font-size:13px;color:var(--ink-3);border:1px dashed var(--rule-2);border-radius:4px;padding:4px 7px\">adjusted trial balance</span><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>5</b> Close</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>6</b> Prepare statements</div></div><div style=\"font-size:14px;color:var(--ink-3);margin-top:6px\">↺ closing balances open the next period</div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only steps 1 and 4 need judgement. The lecture numbers the trial balance as step three; Anthony does not number it.</figcaption></figure><!--/viz:fa-atc-cycle--><!--viz:fa-atc-closing--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Sales of 9,00,000 and expenses of 5,00,000, 2,00,000 and 1,00,000 are closed into Income Summary (the profit and loss account), whose net profit of 1,00,000 is transferred to retained earnings or the sole trader's capital account.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Closing entries: temporary accounts empty into Income Summary</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14px\"><div style=\"display:flex;flex-direction:column;gap:6px\"><div style=\"padding:7px 11px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\">Sales <span style=\"font-family:var(--mono)\">9,00,000</span></div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Cost of goods sold <span style=\"font-family:var(--mono)\">5,00,000</span></div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Wages <span style=\"font-family:var(--mono)\">2,00,000</span></div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Rent <span style=\"font-family:var(--mono)\">1,00,000</span></div></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Income Summary</b><br><span style=\"color:var(--ink-2);font-size:13px\">Indian: Profit &amp; Loss A/c</span><br><span style=\"color:var(--ink-2);font-size:13px\">9,00,000 − 8,00,000 = net profit 1,00,000</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Retained earnings</b><br><span style=\"color:var(--ink-2);font-size:13px\">Indian sole trader: Capital A/c</span><br><span style=\"color:var(--ink-2);font-size:13px\">+ 1,00,000</span></div></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\">After closing, every revenue and expense account shows nil; only balance-sheet accounts stay open.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Temporary accounts reset to zero each year; the profit they produced moves into owners' equity.</figcaption></figure><!--/viz:fa-atc-closing--><!--viz:fa-atc-contra-asset--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison for a van costing 6,00,000 depreciated 1,20,000 a year: after two years the contra-asset method keeps the van at 6,00,000 with accumulated depreciation of 2,40,000, while the direct method reduces the van account itself to 3,60,000. Both show 3,60,000 net.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Depreciation: contra-asset vs direct method</div><p style=\"font-size:14px;margin:0 0 8px\">Delivery van, cost ₹6,00,000, life 5 years, no scrap: ₹1,20,000 a year. Position after 2 years:</p><div class=\"scroller\"><table><thead><tr><th></th><th>Contra-asset (Anthony)</th><th>Direct method (Indian textbooks)</th></tr></thead><tbody><tr><td>Yearly entry</td><td>Depreciation A/c Dr<br><span style='padding-left:16px'>To Accumulated Depreciation A/c</span></td><td>Depreciation A/c Dr<br><span style='padding-left:16px'>To Van A/c</span></td></tr><tr><td>Van A/c balance</td><td><span style=\"font-family:var(--mono)\">6,00,000</span></td><td><span style=\"font-family:var(--mono)\">3,60,000</span></td></tr><tr><td>Shown on the balance sheet</td><td style=\"background:var(--blue-soft)\">Van at cost 6,00,000<br>less acc. depn 2,40,000<br>= <b>3,60,000</b></td><td>Van <b>3,60,000</b></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Same net book value; the contra-asset (provision) method keeps the original cost visible.</figcaption></figure><!--/viz:fa-atc-contra-asset--><p><strong>Permanent vs temporary accounts</strong> — Balance-sheet accounts are permanent (Anthony also calls them real): they are balanced at period end and their balances carry forward. Revenue and expense accounts are temporary subdivisions of retained earnings, used to sort income-statement items as you go; they are closed to zero at period end.</p><p><strong>Anthony's six-step accounting cycle</strong> — (1) Analyse transactions (judgement), (2) journalise original entries (mechanical), (3) post to ledger accounts (mechanical), (4) decide, journalise and post adjusting entries (judgement), (5) journalise and post closing entries (mechanical), (6) prepare the statements. A trial balance is taken after posting and again after adjusting, but Anthony does not number it as a step. Closing balances become next period's opening balances.</p><p><strong>Adjusting entries for continuous transactions</strong> — Items like fuel, insurance and rent are used up continuously, so instead of daily entries one adjusting entry at period end splits the cost between asset and expense. The purchase can first be recorded either as an asset (adjust out the amount used) or as an expense (adjust out the amount left). Both give the same closing figures, but the adjusting entry is different.</p><p><strong>Four types of adjusting entry</strong> — (1) Recorded costs to be apportioned (prepaid insurance → insurance expense). (2) Unrecorded expenses (wages earned, not yet paid → accrued wages). (3) Recorded revenues to be apportioned (rent received → part moved to unearned rent). (4) Unrecorded revenues (interest earned, not received → accrued interest receivable).</p><p><strong>Depreciation and contra-asset accounts</strong> — Depreciation expense is debited and accumulated depreciation, a contra-asset account, is credited, so that both original cost and depreciation to date can be disclosed. The allowance for doubtful accounts works the same way against receivables, through bad debt expense.<br><span style=\"font-family:var(--mono)\">Net book value = Cost − Accumulated depreciation</span></p><p><strong>Closing entries and Income Summary</strong> — Each revenue account is debited and each expense account credited for its balance, with the other side going to Income Summary (also called Profit and Loss). After the tax adjustment, the net credit (profit) or debit (loss) in Income Summary is closed to retained earnings. Only permanent accounts remain open.</p>"
@@ -502,8 +555,8 @@ HUB.addCourse({
   {
    "id": "cash-flow",
    "title": "Cash flow statement",
-   "tag": "Lectures 23, 25–26",
-   "lede": "The fourth statement: where the cash came from and where it went, how to work out operating cash by the direct and indirect methods, and a full case (Compass Company) reconciled to the balance sheet.",
+   "tag": "Lectures 23, 25–27, 29",
+   "lede": "The fourth statement: where the cash came from and where it went, how to work out operating cash by the direct and indirect methods, a full case reconciled to the balance sheet, and how to read the finished statement.",
    "topics": [
     {
      "t": "Why a cash flow statement, and what counts as cash",
@@ -549,6 +602,54 @@ HUB.addCourse({
      "t": "Compass Company: investing, financing and the fall in cash",
      "src": "L#26",
      "h": "<p style=\"font-size:14.5px\">Investing and financing come from the transaction information and the changes in the balance-sheet accounts. Only transactions that move cash appear.</p><h4>Investing activities</h4><div class=\"scroller\"><table><thead><tr><th>Item</th><th>₹</th></tr></thead><tbody><tr><td>Equipment bought for cash</td><td style=\"font-family:var(--mono)\">(1,73,000)</td></tr><tr><td>Equipment sold: cost 67,000, accumulated depreciation 51,000, book value 16,000, so a gain of 6,000</td><td style=\"font-family:var(--mono)\">22,000</td></tr><tr><td>Investments bought</td><td style=\"font-family:var(--mono)\">(26,000)</td></tr><tr><td>Investments sold: cost 51,000, so a loss of 9,000</td><td style=\"font-family:var(--mono)\">42,000</td></tr><tr><td>Interest received</td><td style=\"font-family:var(--mono)\">7,000</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Net cash used in investing activities</strong></td><td style=\"font-family:var(--mono)\">(1,28,000)</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The equipment bought <strong>on credit</strong> (₹49,000) is left out: it explains the rise in bills payable, not any cash. The proceeds (₹22,000 and ₹42,000) are the investing figures; the gain and loss were already removed from operating profit.</p><p style=\"font-size:14.5px\"><strong>Roll-forward checks:</strong> gross block 8,18,000 + 1,73,000 + 49,000 − 67,000 = 9,73,000; accumulated depreciation 5,05,000 + 98,000 − 51,000 = 5,52,000; investments 1,42,000 + 26,000 − 51,000 = 1,17,000. All agree with the closing balance sheet.</p><h4>Financing activities</h4><div class=\"scroller\"><table><thead><tr><th>Item</th><th>₹</th></tr></thead><tbody><tr><td>Shares issued at par for cash</td><td style=\"font-family:var(--mono)\">1,00,000</td></tr><tr><td>Dividends paid</td><td style=\"font-family:var(--mono)\">(25,000)</td></tr><tr><td>Debentures redeemed</td><td style=\"font-family:var(--mono)\">(27,000)</td></tr><tr><td>Current loan repaid</td><td style=\"font-family:var(--mono)\">(1,000)</td></tr><tr><td>Interest paid (the whole finance cost)</td><td style=\"font-family:var(--mono)\">(22,000)</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Net cash from financing activities</strong></td><td style=\"font-family:var(--mono)\">25,000</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The ₹50,000 of debentures <strong>converted into equity shares</strong> is left out: no cash moved. That is why share capital rose by ₹1,50,000 while only ₹1,00,000 came in as cash, and why non-current borrowings fell by ₹77,000 while only ₹27,000 was paid out.</p><h4>The reconciliation</h4><p style=\"font-size:14.5px\">72,000 − 1,28,000 + 25,000 = <strong>(31,000)</strong>. Opening cash ₹51,000 − 31,000 = ₹20,000, exactly the closing cash and cash equivalents. <strong>Reading it:</strong> operations generated cash, but only enough for a little over half (56%) of the net investment; the rest came from new shares and from running down the cash balance.</p><div class=\"def\"><b>From the lecture (L#26):</b> Not every transaction affects the cash flow statement, she warned: in Compass Company the equipment bought on credit and the conversion of debentures into shares both stay out. Interest and dividends received are investing; interest and dividends paid are financing. Keep that distinction straight.</div><!--viz:fa-cf-compass-reconcile--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: operating plus 72,000, investing minus 1,28,000 and financing plus 25,000 give a net decrease in cash of 31,000; opening cash 51,000 less 31,000 gives closing cash 20,000, matching the balance sheet. Two non-cash transactions, equipment on credit 49,000 and debentures converted 50,000, are left out.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Compass Company: why cash fell by ₹31,000</div><div style=\"font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;gap:8px\"><div style=\"flex:1 1 120px;padding:7px 11px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\"><b>Operating</b><br><span style=\"font-family:var(--mono)\">+72,000</span></div><div style=\"flex:1 1 120px;padding:7px 11px;border:1px solid var(--bad);border-radius:4px;background:var(--bad-soft)\"><b>Investing</b><br><span style=\"font-family:var(--mono)\">(1,28,000)</span></div><div style=\"flex:1 1 120px;padding:7px 11px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\"><b>Financing</b><br><span style=\"font-family:var(--mono)\">+25,000</span></div></div><div style=\"color:var(--ink-3);padding:3px 0 3px 14px\">↓ net change</div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Net decrease in cash</b> <span style=\"font-family:var(--mono)\">(31,000)</span></div><div style=\"color:var(--ink-3);padding:3px 0 3px 14px\">↓ opening cash <span style=\"font-family:var(--mono)\">51,000</span></div><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Closing cash</b> <span style=\"font-family:var(--mono)\">20,000</span><br><span style=\"color:var(--ink-2);font-size:13px\">= cash and cash equivalents, 31 March 20X5</span></div><p style=\"font-size:13px;color:var(--ink-2);margin-top:6px\">Left out: equipment on credit 49,000 · debentures converted 50,000</p></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Operations and new shares together could not cover the investment, so the cash balance made up the gap.</figcaption></figure><!--/viz:fa-cf-compass-reconcile-->"
+    },
+    {
+     "t": "Reading the statement: six questions on Compass Company",
+     "src": "L#27",
+     "h": "<p style=\"font-size:14.5px\">Lecture 27 turns from <em>preparing</em> the cash flow statement to <em>reading</em> it. She kept the <strong>Compass Company</strong> statement from L#26 open (operating ₹72,000, investing (₹1,28,000), financing ₹25,000; cash down ₹31,000 to ₹20,000) and asked six questions any reader should put to it. Keep the L#26 figures beside you; every number below comes from that case and has been rechecked.</p><div class=\"scroller\"><table><thead><tr><th>Question</th><th>What the statement shows (₹)</th><th>Her verdict</th></tr></thead><tbody><tr><td>1 · Why did cash fall when the firm made a profit?</td><td>Profit after tax plus depreciation = 43,000 + 98,000 = <strong>1,41,000</strong>, but operating cash was only <strong>72,000</strong>. Collections were fine: cash from customers 8,81,000 on sales 9,25,000, about <strong>95%</strong>. Cash went into inventory (up 58,000) and receivables (44,000 before the allowance), and the cash balance helped pay for new equipment.</td><td>Two causes together: working capital tied up cash, and capital expenditure was partly paid from cash in hand. The gap between profit and operating cash makes readers question the <strong>quality of earnings</strong>.</td></tr><tr><td>2 · How was the equipment (1,73,000 for cash) paid for?</td><td>First, 45,000 from investing inflows: old equipment sold 22,000, investments sold less bought 42,000 − 26,000 = 16,000, interest received 7,000. The other 1,28,000 (the net investing outflow) came from operations 72,000 + net financing 25,000 + running down cash 31,000.</td><td>A mix of internal cash, the share issue, disposals, interest and the cash balance. The equipment bought on credit (49,000) moved no cash, so it is not part of this answer.</td></tr><tr><td>3 · How were the share issue proceeds (1,00,000) used?</td><td>1,00,000 − debt repaid 28,000 (debentures 27,000 + current loan 1,000) = 72,000; − dividends 25,000 − interest 22,000 = <strong>25,000</strong>, which is exactly the net cash from financing.</td><td>About a quarter of the new money stayed in the business after paying lenders and shareholders. The debentures converted into shares (50,000) brought in no cash.</td></tr><tr><td>4 · Is the capacity expansion straining cash?</td><td>Of the 1,28,000 net investing outflow, operations covered 72,000 (56%), the cash balance 31,000 (24%) and net financing only 25,000 (20%). At the same time trade payables fell by 14,000 (suppliers paid quickly) while inventory and receivables rose.</td><td>Yes. She put the long-term financing at only about a third of the expansion; the rest leaned on operating cash and existing cash, so the expansion created a cash crunch.</td></tr><tr><td>5 · Does the firm have financial flexibility?</td><td>It holds current investments (1,17,000 at year end). Debt–equity is about <strong>0.54 : 1</strong>: borrowings 60,000 + bills payable 1,11,000 + current borrowings 56,000 = 2,27,000 against equity 3,50,000 + 71,000 = 4,21,000. Operating cash is positive.</td><td>Fair flexibility: it can sell investments without disturbing operations, borrow more, ask suppliers for longer credit and use a bank line.</td></tr><tr><td>6 · What does it mean for creditors and shareholders?</td><td>Operating cash ÷ interest paid = 72,000 ÷ 22,000 = <strong>3.3 times</strong>. Cash left after interest: 72,000 − 22,000 = 50,000, of which dividends took 25,000 (50%). The dividend was 12.5% of the opening share capital of 2,00,000. Share capital is now 3,50,000 (1,00,000 issued for cash + 50,000 on conversion), so the same 12.5% means <strong>43,750</strong> next year.</td><td>Creditors: comfortable, interest is covered more than three times. Shareholders: the dividend rate is hard to hold while the company still needs cash for expansion; it faces a trade-off between a steady dividend and retaining cash.</td></tr></tbody></table></div><p style=\"font-size:14.5px\">In the recording some amounts are read in a way the LMS summary writes as 1,141,000, 1,173,000 or 9,025,000. The case figures are ₹1,41,000, ₹1,73,000 and ₹9,25,000. She also described the 16,000 as investment sales; it is the <em>net</em> of investments sold (42,000) and bought (26,000).</p><div class=\"def\"><b>Quality of earnings</b>: how far reported profit is backed by operating cash. When profit plus non-cash charges runs far ahead of operating cash, readers look for cash stuck in receivables and stock, or for aggressive revenue recognition.</div><div class=\"def\"><b>Two ratios from the statement, as she used them.</b> Cash interest cover = net cash from operating activities ÷ interest paid. Dividend rate = dividend ÷ paid-up share capital. A fixed dividend <em>rate</em> means a larger dividend <em>amount</em> every time share capital grows, including shares issued on conversion.</div><div class=\"def\"><b>From the lecture (L#27):</b> She framed these six as the questions a lender or investor should ask of any cash flow statement: why cash moved against profit, how investment was financed, how new money was used, whether growth strains cash, how flexible the firm is, and what the outlook is for creditors and for shareholders. No Quiz 2 details were given in this lecture; it is the fourth cash flow lecture, after the three on the Quiz 2 list.</div><!--viz:fa-cf-compass-funding--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Bar chart of the sources that paid for ₹1,73,000 of equipment: operating cash 72,000 (41.6%), running down the cash balance 31,000 (17.9%), net financing 25,000 (14.5%), old equipment sold 22,000 (12.7%), investments sold less bought 16,000 (9.2%), interest received 7,000 (4.0%).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Compass Company: where the ₹1,73,000 for equipment came from</div><div style=\"font-size:14px\"><div style=\"margin-bottom:9px\"><div style=\"display:flex;justify-content:space-between;gap:8px;font-size:13.5px;color:var(--ink)\"><span>Operating cash flow</span><b style=\"font-family:var(--mono);white-space:nowrap\">72,000 · 41.6%</b></div><div style=\"height:12px;border-radius:3px;background:var(--surface-2);border:1px solid var(--rule)\"><div style=\"height:100%;width:41.6%;border-radius:2px;background:var(--blue)\"></div></div></div><div style=\"margin-bottom:9px\"><div style=\"display:flex;justify-content:space-between;gap:8px;font-size:13.5px;color:var(--ink)\"><span>Cash balance run down</span><b style=\"font-family:var(--mono);white-space:nowrap\">31,000 · 17.9%</b></div><div style=\"height:12px;border-radius:3px;background:var(--surface-2);border:1px solid var(--rule)\"><div style=\"height:100%;width:17.9%;border-radius:2px;background:var(--clay)\"></div></div></div><div style=\"margin-bottom:9px\"><div style=\"display:flex;justify-content:space-between;gap:8px;font-size:13.5px;color:var(--ink)\"><span>Net cash from financing</span><b style=\"font-family:var(--mono);white-space:nowrap\">25,000 · 14.5%</b></div><div style=\"height:12px;border-radius:3px;background:var(--surface-2);border:1px solid var(--rule)\"><div style=\"height:100%;width:14.5%;border-radius:2px;background:var(--ink-3)\"></div></div></div><div style=\"margin-bottom:9px\"><div style=\"display:flex;justify-content:space-between;gap:8px;font-size:13.5px;color:var(--ink)\"><span>Old equipment sold</span><b style=\"font-family:var(--mono);white-space:nowrap\">22,000 · 12.7%</b></div><div style=\"height:12px;border-radius:3px;background:var(--surface-2);border:1px solid var(--rule)\"><div style=\"height:100%;width:12.7%;border-radius:2px;background:var(--ink-3)\"></div></div></div><div style=\"margin-bottom:9px\"><div style=\"display:flex;justify-content:space-between;gap:8px;font-size:13.5px;color:var(--ink)\"><span>Investments sold less bought</span><b style=\"font-family:var(--mono);white-space:nowrap\">16,000 · 9.2%</b></div><div style=\"height:12px;border-radius:3px;background:var(--surface-2);border:1px solid var(--rule)\"><div style=\"height:100%;width:9.2%;border-radius:2px;background:var(--ink-3)\"></div></div></div><div style=\"margin-bottom:9px\"><div style=\"display:flex;justify-content:space-between;gap:8px;font-size:13.5px;color:var(--ink)\"><span>Interest received</span><b style=\"font-family:var(--mono);white-space:nowrap\">7,000 · 4.0%</b></div><div style=\"height:12px;border-radius:3px;background:var(--surface-2);border:1px solid var(--rule)\"><div style=\"height:100%;width:4.0%;border-radius:2px;background:var(--ink-3)\"></div></div></div><div style=\"font-size:13px;color:var(--ink-2);margin-top:4px\">Total: <b style=\"font-family:var(--mono)\">1,73,000</b> = equipment bought for cash</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Operations and the cash balance paid for well over half; new long-term money added little net cash.</figcaption></figure><!--/viz:fa-cf-compass-funding-->"
+    },
+    {
+     "t": "Pioneer Limited: a full statement from two balance sheets",
+     "src": "L#27",
+     "h": "<p style=\"font-size:14.5px\">A <strong>comprehensive example</strong>, in her words: Pioneer Limited's balance sheets at 31 March 2016 and 2017 with additional information, to prepare the cash flow statement for 2016–17 by the indirect method. The balance sheet was on screen; below are the working notes as she read them, each figure rechecked, and the totals she reached.</p><h4>Working notes first</h4><div class=\"scroller\"><table><thead><tr><th>Note</th><th>Working</th><th>₹</th></tr></thead><tbody><tr><td>1 · Net profit before tax</td><td>Surplus (reserves and surplus) 4,20,000 − 2,50,000 = 1,70,000; add back provision for tax 50,000 and proposed dividend 50,000</td><td>2,70,000</td></tr><tr><td>2 · Furniture depreciation</td><td>3,00,000 → 2,70,000, nothing bought or sold</td><td>30,000</td></tr><tr><td>3 · Patents written off</td><td>1,00,000 → 95,000</td><td>5,000</td></tr><tr><td>4 · Equipment sold</td><td>Opening 2,00,000 + bought 80,000 − depreciation 15,000 (given) − closing 2,30,000 = book value 35,000; sold at a loss of 5,000</td><td>Proceeds 30,000</td></tr><tr><td>5 · Tax</td><td>Last year's provision 30,000 paid this year; this year's provision 50,000 (a rise of 20,000)</td><td>Paid 30,000</td></tr><tr><td>6 · Interest</td><td>10% on the opening bank loan of 1,00,000; the 50,000 repayment is at year end, so a full year's interest</td><td>10,000</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The surplus is struck <em>after</em> the provision for tax and the proposed dividend, which is why both are added back to reach profit before tax. The dividend actually paid (₹50,000) goes under financing.</p><h4>The statement, section by section</h4><div class=\"scroller\"><table><thead><tr><th>Section</th><th>Items</th><th>₹</th></tr></thead><tbody><tr><td>Operating</td><td>Profit before tax 2,70,000; add back depreciation (15,000 + 30,000), patents 5,000, loss on sale 5,000 and interest on the bank loan 10,000; then the working capital changes from the balance sheet (trade payables fell, a deduction) → cash generated from operations 2,12,000; less tax paid 30,000</td><td>1,82,000</td></tr><tr><td>Investing</td><td>Sale of equipment 30,000 − purchase of equipment 80,000 − purchase of non-current investments 1,00,000</td><td>(1,50,000)</td></tr><tr><td>Financing</td><td>Issue of shares; bank loan repaid (50,000); dividend paid (50,000); interest paid (10,000). She did not read out the share issue, but for the section to net to +90,000 it must be 2,00,000</td><td>90,000</td></tr><tr><td>Net increase in cash</td><td>1,82,000 − 1,50,000 + 90,000</td><td>1,22,000</td></tr><tr style=\"background:var(--blue-soft)\"><td>Cash at the end</td><td>Opening cash and bank 2,05,000 + 1,22,000 = closing cash and bank on the balance sheet</td><td>3,27,000</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The four add-backs total ₹65,000, giving ₹3,35,000 before working capital. If those are the only add-backs, the working capital lines net to (₹1,23,000) to reach ₹2,12,000; the balance sheet isn't in the recording, so check those lines against the slide.</p><div class=\"def\"><b>One tax route, not two.</b> She also noted that the provision rose by ₹20,000 and is “added back”. That is the other way to the same answer: start from profit after tax before the dividend (1,70,000 + 50,000 = 2,20,000) and add the ₹20,000 rise, or start from profit before tax (2,70,000) and deduct tax paid (30,000). Both give ₹2,40,000. Doing both overstates operating cash by ₹20,000.</div><div class=\"def\"><b>Check the LMS summary against the recording.</b> The AI summary of this lecture gives operating cash ₹1,52,000, financing (₹60,000) and closing cash ₹1,42,000, and writes the furniture working as 3,00,000 − 2,00,000. The recording gives 2,12,000 → 1,82,000, financing +90,000, a rise of 1,22,000 and closing cash 3,27,000, which she checked against the balance sheet. Use the recording's figures.</div><div class=\"def\"><b>From the lecture (L#27):</b> In practice the indirect method is the one used, and operating activities need the most adjustment; investing and financing are a handful of transactions. Always finish by matching closing cash with the balance sheet: when the two agree you have assurance the classification is right. She then set a further problem to solve in 10–15 minutes, to be discussed in a later session.</div><!--viz:fa-cf-pioneer-equipment--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace: opening equipment 2,00,000 plus purchases 80,000 is 2,80,000; less depreciation 15,000 is 2,65,000; less closing balance 2,30,000 leaves a book value sold of 35,000; less the loss of 5,000 gives cash received of 30,000.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Pioneer Limited: from the equipment balances to the sale proceeds</div><div class=\"scroller\"><table><thead><tr><th>Step</th><th>₹</th><th>Running ₹</th></tr></thead><tbody><tr><td>Opening equipment (net)</td><td><span style=\"font-family:var(--mono)\">2,00,000</span></td><td><span style=\"font-family:var(--mono)\">2,00,000</span></td></tr><tr><td>+ Bought during the year</td><td><span style=\"font-family:var(--mono)\">+80,000</span></td><td><span style=\"font-family:var(--mono)\">2,80,000</span></td></tr><tr><td>− Depreciation for the year</td><td><span style=\"font-family:var(--mono)\">−15,000</span></td><td><span style=\"font-family:var(--mono)\">2,65,000</span></td></tr><tr><td>− Closing equipment (net) = book value sold</td><td><span style=\"font-family:var(--mono)\">−2,30,000</span></td><td><span style=\"font-family:var(--mono)\">35,000</span></td></tr><tr style=\"background:var(--blue-soft)\"><td>− Loss on sale = cash received</td><td><span style=\"font-family:var(--mono)\">−5,000</span></td><td><span style=\"font-family:var(--mono)\">30,000</span></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Book value comes from the roll-forward; the cash is book value minus the loss (or plus a gain).</figcaption></figure><!--/viz:fa-cf-pioneer-equipment--><!--viz:fa-cf-pioneer-bridge--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: opening cash 2,05,000, plus operating 1,82,000, less investing 1,50,000, plus financing 90,000, gives closing cash 3,27,000.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Pioneer Limited: opening cash to closing cash</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Opening cash<br><b style=\"font-family:var(--mono)\">2,05,000</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Operating<br><b style=\"font-family:var(--mono)\">+1,82,000</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Investing<br><b style=\"font-family:var(--mono)\">(1,50,000)</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Financing<br><b style=\"font-family:var(--mono)\">+90,000</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">Closing cash<br><b style=\"font-family:var(--mono)\">3,27,000</b></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The closing figure must equal cash and bank on the 2017 balance sheet; here it does.</figcaption></figure><!--/viz:fa-cf-pioneer-bridge-->"
+    },
+    {
+     "t": "Live Lecture 6 — cash equivalents tested, and Mira's shop",
+     "src": "L#29",
+     "h": "<p style=\"font-size:14.5px\">Live Lecture 6 (24 October) revised the cash flow topic from the start. Her opening question: <strong>can a company make a profit and still run out of cash?</strong> Her example: <strong>Mira</strong> runs a stationery shop near the Jodhpur campus. In March she sells ₹1 lakh of notebooks and printouts to a coaching centre, which will pay in May. March's profit and loss shows ₹1 lakh of sales, a good month, but the cash box is empty while rent and her assistant's salary fall due. Yes: profit on paper, no cash in hand.</p><div class=\"def\"><b>“Profit is an opinion, cash is a fact.”</b> Her gloss: profit depends on accounting choices such as the depreciation method; the bank balance does not depend on accounting policy. That is why banks, investors and managers read the cash flow statement so closely.</div><h4>Cash equivalents: her three tests and her three checks</h4><p style=\"font-size:14.5px\">Under AS 3, cash is cash in hand plus demand deposits (savings or current accounts you can draw on any day). A <strong>cash equivalent</strong> must be (1) a short-term, highly liquid investment, (2) readily convertible into cash without delay, and (3) subject to an insignificant risk of change in value. Firms hold them to park idle cash briefly: if Mira has ₹50,000 she will need for a supplier in two months, a <strong>two-month fixed deposit</strong> is a cash equivalent.</p><div class=\"scroller\"><table><thead><tr><th>Her check</th><th>Cash equivalent?</th><th>Why</th></tr></thead><tbody><tr><td>Equity shares of a listed company, bought yesterday</td><td>No</td><td>Prices move daily; the risk of a change in value is not insignificant</td></tr><tr><td>A one-year fixed deposit</td><td>No</td><td>Maturity is well beyond three months</td></tr><tr><td>A one-year fixed deposit that now has only two months left</td><td>No</td><td>The three months is counted from the <strong>date of acquisition</strong>; this deposit's maturity when made was a year</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Once she described short-term maturities as “3 to less than 12 months”; her answers then apply the usual AS 3 guide, a maturity of <strong>three months or less from the date of acquisition</strong>, and the LMS summary repeats the slip. Use three months or less. Note the flip side: an instrument you <em>acquire</em> with two months to run, such as a treasury bill bought close to maturity, is measured from your acquisition date and can qualify.</p><h4>Sorting Mira's cash flows</h4><div class=\"scroller\"><table><thead><tr><th>Transaction</th><th>Activity</th></tr></thead><tbody><tr><td>Pays her shop assistant's salary</td><td>Operating</td></tr><tr><td>Buys a second-hand scooter to deliver orders</td><td>Investing</td></tr><tr><td>Repays the bank loan she took to start the shop</td><td>Financing</td></tr><tr><td>Lends ₹20,000 to a friend's business</td><td>Investing (for a bank, lending is operating: it is the bank's main business)</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Her student-life version: pocket money and mess charges are <em>operating</em>; buying a laptop or putting savings in an FD is <em>investing</em> (something that lasts); taking an education loan and repaying it is <em>financing</em>.</p><h4>Why Mira's profit and cash differ</h4><ul><li><strong>Non-cash expense</strong>: a photocopier bought two years ago is depreciated ₹24,000 this year. Profit falls by ₹24,000; no cash left this year, so add it back.</li><li><strong>Working capital</strong>: the ₹1 lakh credit sale raises receivables, so operating cash is ₹1 lakh below profit. Paper of ₹30,000 bought on credit and still unpaid is charged in profit but no cash has gone, so operating cash is ₹30,000 above profit.</li><li><strong>Non-operating item</strong>: an old computer with a book value of ₹10,000 sold for ₹15,000 gives a ₹5,000 gain in profit. Deduct the gain from operating; the full ₹15,000 is an investing inflow. Leaving the gain in operating would count it twice.</li></ul><!--viz:fa-cf-cash-equivalent-test--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Decision flow: short-term and highly liquid; readily convertible to a known amount without delay; insignificant risk of value change; maturity three months or less from acquisition. A no at any step means it is not a cash equivalent (examples: listed equity shares, a one-year FD even with two months left). Yes to all four: a cash equivalent, such as a two-month FD.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Is it a cash equivalent? Four questions in order</div><div style=\"font-size:14px;max-width:440px\"><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Short-term and highly liquid?</b><br><span style=\"color:var(--ink-2);font-size:13px\">no → long-term investment (investing)</span></div><div style=\"color:var(--ink-3);padding:2px 0 2px 14px\">↓ yes</div><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Readily convertible to a known amount, without delay?</b><br><span style=\"color:var(--ink-2);font-size:13px\">no → not a cash equivalent</span></div><div style=\"color:var(--ink-3);padding:2px 0 2px 14px\">↓ yes</div><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Insignificant risk of a change in value?</b><br><span style=\"color:var(--ink-2);font-size:13px\">no → e.g. listed equity shares</span></div><div style=\"color:var(--ink-3);padding:2px 0 2px 14px\">↓ yes</div><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Maturity three months or less, counted from the day you acquired it?</b><br><span style=\"color:var(--ink-2);font-size:13px\">no → e.g. a one-year FD, even with two months left</span></div><div style=\"color:var(--ink-3);padding:2px 0 2px 14px\">↓ yes</div><div style=\"padding:8px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Cash equivalent</b><br><span style=\"color:var(--ink-2);font-size:13px\">e.g. a two-month FD; preference shares bought just before a fixed redemption date</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Every step must be a yes; the maturity is judged at acquisition, not at the balance-sheet date.</figcaption></figure><!--/viz:fa-cf-cash-equivalent-test-->"
+    },
+    {
+     "t": "Live Lecture 6 — the three operating-cash drills again",
+     "src": "L#29",
+     "h": "<p style=\"font-size:14.5px\">The rest of the session reworked three drills from the recorded lectures, step by step. They add a few confirmations and corrections to the hub's L#25 and L#26 notes.</p><div class=\"scroller\"><table><thead><tr><th>Drill</th><th>What the live session adds</th><th>Result ₹</th></tr></thead><tbody><tr><td>Jaws Photo Plus (L#25)</td><td>Same working: 73,000 + depreciation 7,000 − gain 2,500 − receivables up 4,000 − payables down 3,800. The LMS summary of this session says payables fell by 6,000; they fell <em>from</em> 6,000 <em>to</em> 2,200, a deduction of 3,800.</td><td>69,700</td></tr><tr><td>Ajay Company (L#26)</td><td>She read the gain on sale of investments aloud as <strong>8,000</strong>, confirming the figure the hub had inferred, and depreciation as 49,000. She said prepaid expenses had “come down” but deducted the change; the deduction (11,000) is what reaches her 4,46,000, so they must have risen.</td><td>3,48,000</td></tr><tr><td>Compass Company, operating section (L#26)</td><td>Worked by the <strong>net-receivables route</strong>: no add-back for bad debts, and the ₹32,000 rise in net receivables deducted.</td><td>72,000</td></tr></tbody></table></div><h4>Compass Company by the net-receivables route</h4><div class=\"scroller\"><table><thead><tr><th>Step</th><th>₹</th><th>Running total ₹</th></tr></thead><tbody><tr><td>Profit before tax</td><td><span style=\"font-family:var(--mono)\">70,000</span></td><td><span style=\"font-family:var(--mono)\">70,000</span></td></tr><tr><td>+ Depreciation</td><td><span style=\"font-family:var(--mono)\">+98,000</span></td><td><span style=\"font-family:var(--mono)\">1,68,000</span></td></tr><tr><td>+ Finance costs</td><td><span style=\"font-family:var(--mono)\">+22,000</span></td><td><span style=\"font-family:var(--mono)\">1,90,000</span></td></tr><tr><td>− Interest income; − gain on equipment; + loss on investments</td><td><span style=\"font-family:var(--mono)\">−7,000 −6,000 +9,000</span></td><td><span style=\"font-family:var(--mono)\">1,86,000</span></td></tr><tr><td>Inventory up; net receivables up; prepaid down; trade payables down</td><td><span style=\"font-family:var(--mono)\">−58,000 −32,000 +2,000 −14,000</span></td><td><span style=\"font-family:var(--mono)\">84,000</span></td></tr><tr style=\"background:var(--blue-soft)\"><td>− Income tax paid</td><td><span style=\"font-family:var(--mono)\">−12,000</span></td><td><span style=\"font-family:var(--mono)\">72,000</span></td></tr></tbody></table></div><p style=\"font-size:14.5px\">Her subtotal before working capital is ₹1,86,000, not the ₹1,98,000 of L#26, because the ₹12,000 bad-debt expense is not added back here; deducting the rise in <em>net</em> receivables (₹32,000 instead of ₹44,000) makes up the difference, and both routes give ₹84,000 and ₹72,000. She didn't read the trade payables line aloud, but ₹84,000 is only reached with it. The LMS summary's “finance costs ₹2,200” is ₹22,000.</p><p style=\"font-size:14.5px\">She left investing and financing for Compass as homework; the hub's L#26 notes solve them: (₹1,28,000) and ₹25,000.</p><div class=\"def\"><b>From the lecture (L#29):</b> However long the question looks, the steps don't change: take one adjustment at a time and don't get overwhelmed by a heavy set of statements. The operating section is the trickiest part; investing and financing are a few transactions you classify straight from the information given. No Quiz 2 details were given in this session.</div>"
+    },
+    {
+     "t": "Practice set from the faculty (29 Oct)",
+     "src": "L#26",
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q19, Q20, Q21, Q22.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q19 · Classify ten cash flows · On Quiz 2</summary><p style=\"font-size:14.5px\">Operating (O), investing (I) or financing (F), and inflow or outflow?</p><div class=\"scroller\"><table><thead><tr><th></th><th>Item</th><th>Activity</th><th>Direction</th></tr></thead><tbody><tr><td>a</td><td>Cash received from customers</td><td>O</td><td>Inflow</td></tr><tr><td>b</td><td>Machinery bought for cash</td><td>I</td><td>Outflow</td></tr><tr><td>c</td><td>Equity shares issued</td><td>F</td><td>Inflow</td></tr><tr><td>d</td><td>Bank loan repaid</td><td>F</td><td>Outflow</td></tr><tr><td>e</td><td>Cash paid to suppliers of goods</td><td>O</td><td>Outflow</td></tr><tr><td>f</td><td>Old equipment sold</td><td>I</td><td>Inflow</td></tr><tr><td>g</td><td>Dividend paid</td><td>F</td><td>Outflow</td></tr><tr><td>h</td><td>Income tax paid</td><td>O (unless tied to a specific investing or financing item)</td><td>Outflow</td></tr><tr><td>i</td><td>Shares of another company bought as an investment</td><td>I</td><td>Outflow</td></tr><tr><td>j</td><td>New bank borrowing</td><td>F</td><td>Inflow</td></tr></tbody></table></div></details><details><summary>Q20 · Operating cash, indirect method · On Quiz 2</summary><p style=\"font-size:14.5px\">Sundar Traders: profit before tax ₹4,60,000 after depreciation ₹85,000 and a loss on sale of machinery ₹12,000, and after a gain on sale of investments ₹20,000. Receivables +40,000; inventories −25,000; prepaid expenses +6,000; trade payables +32,000; accrued expenses −9,000; tax paid ₹1,10,000.</p><div class=\"scroller\"><table><thead><tr><th>Step</th><th>₹</th></tr></thead><tbody><tr><td>Profit before tax</td><td>4,60,000</td></tr><tr><td>+ Depreciation 85,000 + loss on machinery 12,000 − gain on investments 20,000</td><td>+77,000</td></tr><tr><td>Operating profit before working capital changes</td><td>5,37,000</td></tr><tr><td>− Receivables 40,000 + inventories 25,000 − prepaid 6,000 + trade payables 32,000 − accrued expenses 9,000</td><td>+2,000</td></tr><tr><td>Cash generated from operations</td><td>5,39,000</td></tr><tr><td>− Income tax paid</td><td>(1,10,000)</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Net cash from operating activities</strong></td><td><strong>4,29,000</strong></td></tr></tbody></table></div></details><details><summary>Q21 · Operating cash, direct method · On Quiz 2</summary><p style=\"font-size:14.5px\">Tara Enterprises, direct method: credit sales ₹18,00,000 (receivables 2,10,000 → 2,60,000; ₹10,000 written off); COGS ₹11,00,000 (inventory 1,50,000 → 1,80,000; trade payables 1,20,000 → 1,05,000); operating expenses ₹2,40,000 excluding depreciation (prepaid 15,000 → 20,000; outstanding 10,000 → 6,000); tax paid ₹60,000.</p><div class=\"scroller\"><table><thead><tr><th>Line</th><th>Working</th><th>₹</th></tr></thead><tbody><tr><td>Cash from customers</td><td>2,10,000 + 18,00,000 − 10,000 written off − 2,60,000</td><td>17,40,000</td></tr><tr><td>Purchases</td><td>COGS 11,00,000 + closing stock 1,80,000 − opening 1,50,000</td><td>(11,30,000)</td></tr><tr><td>Cash paid to suppliers</td><td>1,20,000 + 11,30,000 − 1,05,000</td><td>(11,45,000)</td></tr><tr><td>Operating expenses paid</td><td>2,40,000 + closing prepaid 20,000 − opening prepaid 15,000 + opening outstanding 10,000 − closing outstanding 6,000</td><td>(2,49,000)</td></tr><tr><td>Income tax paid</td><td></td><td>(60,000)</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Net cash from operating activities</strong></td><td>17,40,000 − 11,45,000 − 2,49,000 − 60,000</td><td><strong>2,86,000</strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\">The purchases line is a working step, not a cash line: only the payment to suppliers enters the statement.</p></details><details><summary>Q22 · Nova Fabricators: full cash flow statement · On Quiz 2</summary><p style=\"font-size:14.5px\">Nova Fabricators Ltd (₹ thousand): balance sheets at 31 March 2026 and 2027 with cash missing for 2027; net profit 90 (ignore tax), dividend 40, depreciation 70, a machine with book value 30 sold for 25, shares issued 100, loan repaid 50. Find closing cash and machinery purchased, and prepare the statement.</p><ol><li><strong>Closing cash</strong>: 2027 liabilities and equity = 500 + 200 + 150 + 130 + 40 = 1,020; assets other than cash = 150 + 90 + 14 + 640 = 894; so cash = <strong>126</strong>. (2026 balances: 910 each side. Retained earnings check: 150 + 90 − 40 = 200.)</li><li><strong>Machinery bought</strong>: 600 opening − 70 depreciation − 30 book value sold + purchases = 640 closing, so purchases = <strong>140</strong>. Loss on sale = 30 − 25 = 5.</li></ol><div class=\"scroller\"><table><thead><tr><th>Cash flow statement, 2026–27 (₹ thousand)</th><th>₹ thousand</th></tr></thead><tbody><tr><td>Net profit 90 + depreciation 70 + loss on sale 5</td><td>165</td></tr><tr><td>Receivables up (30); inventories down +10; prepaid up (4); trade payables up +20; outstanding expenses down (10)</td><td>(14)</td></tr><tr><td><strong>Net cash from operating activities</strong></td><td><strong>151</strong></td></tr><tr><td>Machinery bought (140); machine sold +25</td><td>(115)</td></tr><tr><td><strong>Net cash used in investing activities</strong></td><td><strong>(115)</strong></td></tr><tr><td>Shares issued +100; loan repaid (50); dividend paid (40)</td><td>10</td></tr><tr><td><strong>Net cash from financing activities</strong></td><td><strong>10</strong></td></tr><tr><td>Net increase in cash: 151 − 115 + 10</td><td>46</td></tr><tr style=\"background:var(--blue-soft)\"><td>Opening cash 80 + 46 = closing cash</td><td>126</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The statement reconciles: cash rises by 46 thousand, from 80 to the 126 found from the balance sheet.</p></details>"
+    }
+   ]
+  },
+  {
+   "id": "analysis",
+   "title": "Financial statement analysis",
+   "tag": "Lecture 28 · after Quiz 2",
+   "lede": "Module 3: reading the statements. Standards of comparison, the four techniques (horizontal, trend, vertical, ratio) and how to separate one-off items from core performance.",
+   "topics": [
+    {
+     "t": "Why analyse statements, and the four standards of comparison",
+     "src": "L#28",
+     "h": "<p style=\"font-size:14.5px\">Lecture 28 opens the third module, <strong>financial statement analysis</strong>: the other side of the table from preparing statements. Her case: <strong>Nilesh</strong>, who runs an FMCG agency, takes this year's and last year's statements to a bank for a ₹25 lakh loan to expand. The banker asks for <em>common-size, comparative and trend statements</em> and information on <em>liquidity, profitability and solvency</em>. Raw statements are data; the bank wants them read.</p><div class=\"def\"><b>Financial statement analysis</b>: the collective name for the tools and techniques that turn the figures in financial statements into information stakeholders can base decisions on. It shows how the business performed, where it did well or badly, and what that suggests about the future.</div><h4>The questions analysis answers</h4><ul><li>How does my company compare with others in the industry?</li><li>How has it performed over time?</li><li>What is its overall financial health, and where is it strong or weak?</li><li>How does it do against the industry or a benchmark company?</li><li>Is its financial performance consistent with its strategy?</li></ul><h4>Four standards of comparison</h4><div class=\"scroller\"><table><thead><tr><th>Standard</th><th>Compares with</th><th>Useful because</th><th>Limits she gave</th></tr></thead><tbody><tr><td>Rule of thumb indicator</td><td>A broad benchmark ratio applied to every firm, e.g. current ratio 2 : 1</td><td>Simple; banks screen applications with it</td><td>Ignores the <em>quality</em> of the items: a 2.2 : 1 firm may hold slow-moving stock and doubtful debtors, while a 1.6 : 1 firm with fast stock and prompt collections is more liquid in practice</td></tr><tr><td>Past performance</td><td>The same company's earlier years</td><td>Shows improvement or decline; trends can be extrapolated</td><td>Fundamental changes (regulation, competition, technology); accounting policy changes (depreciation, inventory method); unpredictable non-operating items (gains on selling assets); the <strong>illusion of growth</strong> (10% growth while the industry grows 30%)</td></tr><tr><td>Internal standards</td><td>Targets the company sets itself: profit, ROI or ROA goals, sales growth, budgets for profit centres, standard product costs</td><td>Monitor and control operations, reward performance</td><td>Inward-looking: says nothing about what rivals achieve</td></tr><tr><td>Industry standards</td><td>Peer companies in the same industry</td><td>Overcomes the limits of historical comparison: a 7% gross margin looks weak beside an industry average of 12%</td><td>No perfect peer for diversified firms (HUL sells soaps, detergents, toothpaste and food; P&amp;G, ITC and Colgate each overlap only partly); different accounting policies and useful lives; different year-ends</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Kodak</strong>, her warning on past performance: once as dominant in cameras as the iPhone later was in phones, with sales peaking at about $16 billion in 1996 and large profits at the end of the decade (her figures). Digital cameras and then smartphones gutted the business, and it filed for bankruptcy in 2012. Its own past numbers looked excellent right up to the disruption: a firm can become a victim of its own success.</p><h4>Her four in-class checks, and the answers she gave</h4><div class=\"scroller\"><table><thead><tr><th>Situation (paraphrased)</th><th>Answer</th></tr></thead><tbody><tr><td>A lender applies one fixed test to every loan application: current assets at least twice current liabilities</td><td>Rule of thumb indicator</td></tr><tr><td>Net profit jumps 40% on last year, all of it from a one-time sale of shares held in another company; core earnings are flat</td><td>Non-operating items (a limit of past-performance comparison)</td></tr><tr><td>The company changed its depreciation method this year and the analyst compares profit with last year's</td><td>An accounting policy change reduces comparability with past figures</td></tr><tr><td>Two steel companies close their books on 31 December and 31 March respectively</td><td>Different fiscal years: the periods don't overlap, so the annual figures aren't directly comparable</td></tr></tbody></table></div><p style=\"font-size:14.5px\">On the last one she added that in India the financial year runs April to March, and the Companies Act 2013 requires a 31 March year-end unless a company has an exemption.</p><div class=\"def\"><b>From the lecture (L#28):</b> This lecture starts the third module, after the nine lectures on the Quiz 2 syllabus list (which ends at Cash flow Part 3), so it is not part of Quiz 2; with two quizzes in the course, expect it in the end-term exam. She said the techniques, especially ratio analysis, will be taken up in detail in the following sessions.</div><!--viz:fa-fsa-four-standards--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table comparing four standards: rule of thumb uses one ratio such as current ratio 2:1 for all firms and ignores the quality of stock and debtors; past performance compares with the firm's own earlier years and is distorted by policy changes, one-offs, the illusion of growth and disruption; internal standards compare with the firm's own targets and are blind to rivals; industry standards compare with peers but no peer is exact and policies and year-ends differ.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Four standards of comparison at a glance</div><div class=\"scroller\"><table><thead><tr><th>Standard</th><th>Benchmark</th><th>Main risk</th></tr></thead><tbody><tr><td><b>Rule of thumb</b></td><td>One ratio for all firms (current ratio 2 : 1)</td><td>Ignores quality of stock and debtors</td></tr><tr><td><b>Past performance</b></td><td>Own earlier years</td><td>Policy changes, one-offs, illusion of growth, disruption</td></tr><tr><td><b>Internal</b></td><td>Own targets and budgets</td><td>Blind to rivals</td></tr><tr><td><b>Industry</b></td><td>Peer companies</td><td>No exact peer; different policies and year-ends</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each standard fixes a weakness of another; use more than one before judging a firm.</figcaption></figure><!--/viz:fa-fsa-four-standards-->"
+    },
+    {
+     "t": "Four techniques, and a horizontal analysis of Dr. Reddy's",
+     "src": "L#28",
+     "h": "<p style=\"font-size:14.5px\">Four techniques turn the raw figures into insight. The first three are introduced here; ratio analysis, the most widely used, comes in later sessions.</p><div class=\"scroller\"><table><thead><tr><th>Technique</th><th>What it compares</th><th>How</th></tr></thead><tbody><tr><td>Horizontal analysis</td><td>The same item across at least two years</td><td>Absolute change and percentage change on the earlier year</td></tr><tr><td>Trend analysis</td><td>The same item over several years (5, 10, 15)</td><td>Pick a base year = 100 and index every later year to it, to see the direction of travel</td></tr><tr><td>Vertical analysis</td><td>Each line item with a base figure in the <em>same</em> statement and year</td><td>Express every line as a percentage of the base, e.g. gross profit as a % of sales</td></tr><tr><td>Ratio analysis</td><td>Related figures with each other</td><td>Liquidity, profitability and solvency ratios (later sessions)</td></tr></tbody></table></div><div class=\"def\"><b>Percentage change (horizontal analysis)</b> = (current year − previous year) ÷ previous year × 100. The base is always the <em>earlier</em> year.</div><h4>Her worked case: Dr. Reddy's Laboratories, 2015 vs 2016</h4><p style=\"font-size:14.5px\">She used Dr. Reddy's consolidated statements (balance sheet, statement of profit and loss and cash flow for two years), working with the Indian GAAP figures and noting that the same logic applies to the Ind AS ones. From the condensed profit and loss statement:</p><ul><li>Revenue from operations up <strong>4.49%</strong>; total revenue up <strong>4.38%</strong>.</li><li>Expenses up only <strong>3.49%</strong>, slower than revenue: a good sign.</li><li>Tax expense down <strong>7.01%</strong> (about 5,632 to 5,237 in the statement's units, as we heard them; the percentage checks).</li><li>Net profit down <strong>7.92%</strong>, the headline that alarms a quick reader.</li><li>The reason: an <strong>exceptional item</strong>, a foreign exchange loss of 4,621 (nil in 2015) tied to its Venezuelan operations, about 14.7% of profit before the exceptional item.</li><li>Strip out the exceptional item and other income and pre-tax operating profit rose about <strong>9.2%</strong>, faster than the 4.49% revenue growth. Other income was not a significant part of total income.</li></ul><p style=\"font-size:14.5px\"><strong>Her conclusion:</strong> the reported fall in profit reflects a one-off event, not weak operations. Core performance stayed robust. Separating non-recurring items from operating performance is the heart of reading earnings quality.</p><h4>Watch for distortions</h4><ul><li>Non-recurring and exceptional items</li><li>Changes in accounting policy (depreciation, inventory valuation)</li><li>Different fiscal year-ends between companies</li><li>Different accounting policies across companies in one industry</li></ul><div class=\"def\"><b>From the lecture (L#28):</b> She closed on the same caution: whatever technique you use, look past the headline profit to what is driving it, and check that the figures you compare were prepared on the same basis and for the same period.</div><!--viz:fa-fsa-horizontal-vertical--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Our own example in rupees lakh: revenue 500 to 540, up 8.0 percent; cost of goods sold 350 to 370, up 5.7 percent; gross profit 150 to 170, up 13.3 percent; operating expenses 90 to 95, up 5.6 percent; profit before exceptional item 60 to 75, up 25 percent; an exceptional loss of 20 in year 2; net profit 60 to 55, down 8.3 percent. In year 2 gross profit is 31.5 percent of revenue and net profit 10.2 percent.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One statement, two readings: horizontal and vertical analysis</div><div class=\"scroller\"><table><thead><tr><th>₹ lakh</th><th>Y1</th><th>Y2</th><th>Change</th><th>% of revenue, Y2</th></tr></thead><tbody><tr><td>Revenue</td><td><span style=\"font-family:var(--mono)\">500</span></td><td><span style=\"font-family:var(--mono)\">540</span></td><td><span style=\"font-family:var(--mono)\">+8.0%</span></td><td><span style=\"font-family:var(--mono)\">100.0%</span></td></tr><tr><td>Cost of goods sold</td><td><span style=\"font-family:var(--mono)\">350</span></td><td><span style=\"font-family:var(--mono)\">370</span></td><td><span style=\"font-family:var(--mono)\">+5.7%</span></td><td><span style=\"font-family:var(--mono)\">68.5%</span></td></tr><tr><td>Gross profit</td><td><span style=\"font-family:var(--mono)\">150</span></td><td><span style=\"font-family:var(--mono)\">170</span></td><td><span style=\"font-family:var(--mono)\">+13.3%</span></td><td><span style=\"font-family:var(--mono)\">31.5%</span></td></tr><tr><td>Operating expenses</td><td><span style=\"font-family:var(--mono)\">90</span></td><td><span style=\"font-family:var(--mono)\">95</span></td><td><span style=\"font-family:var(--mono)\">+5.6%</span></td><td><span style=\"font-family:var(--mono)\">17.6%</span></td></tr><tr style=\"background:var(--blue-soft)\"><td>Profit before exceptional item</td><td><span style=\"font-family:var(--mono)\">60</span></td><td><span style=\"font-family:var(--mono)\">75</span></td><td><span style=\"font-family:var(--mono)\">+25.0%</span></td><td><span style=\"font-family:var(--mono)\">13.9%</span></td></tr><tr><td>Exceptional loss</td><td><span style=\"font-family:var(--mono)\">0</span></td><td><span style=\"font-family:var(--mono)\">20</span></td><td><span style=\"font-family:var(--mono)\">—</span></td><td><span style=\"font-family:var(--mono)\">3.7%</span></td></tr><tr><td>Net profit</td><td><span style=\"font-family:var(--mono)\">60</span></td><td><span style=\"font-family:var(--mono)\">55</span></td><td><span style=\"font-family:var(--mono)\">−8.3%</span></td><td><span style=\"font-family:var(--mono)\">10.2%</span></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Change = horizontal analysis; % of revenue = vertical. Net profit fell 8.3%, yet profit before the one-off loss rose 25%: the Dr. Reddy's pattern in our own numbers.</figcaption></figure><!--/viz:fa-fsa-horizontal-vertical-->"
+    },
+    {
+     "t": "Practice set from the faculty (29 Oct)",
+     "src": "L#26",
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q23, Q24, Q25.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><p style=\"font-size:14.5px\">Ratio analysis is the fourth technique introduced in L#28 and comes in later sessions, after Quiz 2. The formulas below follow the definitions the sheet gives; check them against the ratio lectures when they come.</p><details><summary>Q23 · Veda Retail: ten ratios · After Quiz 2</summary><p style=\"font-size:14.5px\">Veda Retail Ltd, 2026–27 (₹ lakh): revenue 1,200; COGS 840; operating expenses (with depreciation) 180; finance cost 30; profit before tax 150; tax 45; profit after tax 105. At 31 March 2027: cash 60, receivables 150, inventories 210, other current assets 30, non-current assets 750 (total 1,200); equity 700, long-term loans 300, trade payables 140, short-term borrowings 40, other current liabilities 20. At 31 March 2026: receivables 130, inventories 190, total assets 1,100, equity 635.</p><div class=\"scroller\"><table><thead><tr><th>Ratio</th><th>Working</th><th>Result</th></tr></thead><tbody><tr><td>(a) Gross profit margin</td><td>(1,200 − 840) ÷ 1,200</td><td>30%</td></tr><tr><td>(b) Net profit margin</td><td>105 ÷ 1,200</td><td>8.75%</td></tr><tr><td>(c) Current ratio</td><td>Current assets 60 + 150 + 210 + 30 = 450 ÷ current liabilities 140 + 40 + 20 = 200</td><td>2.25 : 1</td></tr><tr><td>(d) Quick ratio</td><td>(60 + 150) ÷ 200</td><td>1.05 : 1</td></tr><tr><td>(e) Inventory turnover; days</td><td>840 ÷ average inventory (190 + 210)/2 = 200 → 4.2 times; 365 ÷ 4.2</td><td>4.2 times; about 87 days</td></tr><tr><td>(f) Receivables turnover; days</td><td>1,200 ÷ average receivables (130 + 150)/2 = 140 → 8.57 times; 365 ÷ 8.57</td><td>8.57 times; about 43 days</td></tr><tr><td>(g) Debt–equity</td><td>(300 + 40) ÷ 700</td><td>0.49 : 1</td></tr><tr><td>(h) Interest coverage</td><td>EBIT (150 + 30) ÷ 30</td><td>6 times</td></tr><tr><td>(i) Return on average equity</td><td>105 ÷ (635 + 700)/2 = 667.5</td><td>15.7%</td></tr><tr><td>(j) Return on average total assets</td><td>105 ÷ (1,100 + 1,200)/2 = 1,150</td><td>9.1%</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Receivables turnover treats all revenue as credit sales, since no split is given. Return on assets here uses profit after tax; some texts use EBIT (180 ÷ 1,150 = 15.7%), so state the definition you use.</p></details><details><summary>Q24 · Two firms' ratios compared · After Quiz 2</summary><p style=\"font-size:14.5px\">Firm P: current ratio 2.5, quick ratio 0.9, inventory days 120, net margin 6%, debt–equity 0.3. Firm Q: 1.2, 1.0, 30 days, 4%, 1.5.</p><ul><li><strong>(a) Liquidity</strong>: P looks far more liquid on the current ratio, but on the quick ratio, which leaves out stock, Q (1.0) is slightly ahead of P (0.9). P's liquidity is mostly stock.</li><li><strong>(b) P's current assets</strong>: the 1.6 gap between its current and quick ratios is roughly stock, about 64% of current assets (1.6 ÷ 2.5, if quick assets are current assets less stock), and 120 inventory days say that stock moves slowly.</li><li><strong>(c) Borrowed funds</strong>: Q, with debt–equity 1.5 against P's 0.3.</li><li><strong>(d) Inventory speed</strong>: Q turns its stock in 30 days against P's 120, <strong>90 days faster</strong> (about 12 turns a year against 3).</li></ul></details><details><summary>Q25 · Reading a real annual report · Annual-report exercise</summary><p style=\"font-size:14.5px\">Take the latest annual report of any listed Indian company and answer from it, quoting page numbers: the statutory auditor and the opinion; the revenue recognition policy; the depreciation method and useful lives for plant and machinery; inventory valuation; net cash from operating, investing and financing activities and their reconciliation to the change in cash; the current and debt–equity ratios.</p><ul><li>The answers depend on the company you choose, so there is no single solution. Where to look:</li><li>Auditor and opinion: the <strong>Independent Auditor's Report</strong> before the financial statements (look for “unmodified” or “qualified” opinion).</li><li>Revenue, depreciation and inventory policies: the <strong>material accounting policies</strong> note, usually note 1 or 2 to the standalone and consolidated statements.</li><li>Cash flows: the <strong>statement of cash flows</strong>; check operating + investing + financing = change in cash and cash equivalents, allowing for exchange differences if shown.</li><li>Ratios: many reports now list key ratios in a note to the accounts; compute them yourself from the balance sheet and compare.</li></ul></details>"
     }
    ]
   }
@@ -609,6 +710,10 @@ HUB.addCourse({
   {
    "name": "Cash flow statement",
    "unit": "cash-flow"
+  },
+  {
+   "name": "Financial statement analysis",
+   "unit": "analysis"
   }
  ],
  "traps": [
@@ -1329,6 +1434,139 @@ HUB.addCourse({
    "h": "Credit purchases of assets and debt-to-equity conversions stay out of the statement",
    "p": "Compass bought ₹49,000 of equipment on credit and converted ₹50,000 of debentures into shares. Neither moved cash, so balance-sheet changes overstate the cash flows: share capital rose ₹1,50,000 but only ₹1,00,000 was cash.",
    "f": "balance change ≠ cash",
+   "lec": 26
+  },
+  {
+   "id": "fa-t0107",
+   "h": "Profit plus depreciation is not operating cash",
+   "p": "Compass Company: profit after tax plus depreciation was ₹1,41,000, operating cash only ₹72,000. Working capital (stock up ₹58,000, receivables ₹44,000, payables down ₹14,000) and the other adjustments absorbed the difference.",
+   "f": "working capital eats cash",
+   "lec": 27
+  },
+  {
+   "id": "fa-t0108",
+   "h": "A fixed dividend rate applies to the new share capital, including shares issued on conversion",
+   "p": "Compass's 12.5% on ₹2,00,000 was ₹25,000. Share capital is now ₹3,50,000 (₹1,00,000 for cash plus ₹50,000 converted), so 12.5% is ₹43,750, not ₹37,500.",
+   "f": "rate × new capital",
+   "lec": 27
+  },
+  {
+   "id": "fa-t0109",
+   "h": "Deduct tax paid or add the rise in the tax provision, never both",
+   "p": "Pioneer Limited: from profit before tax ₹2,70,000 deduct tax paid ₹30,000; or from profit after tax before dividend ₹2,20,000 add the ₹20,000 rise. Both give ₹2,40,000; doing both overstates operating cash by ₹20,000.",
+   "f": "one tax route only",
+   "lec": 27
+  },
+  {
+   "id": "fa-t0110",
+   "h": "Sale proceeds = book value minus the loss (or plus the gain)",
+   "p": "Pioneer's equipment roll-forward gives a book value sold of ₹35,000; sold at a ₹5,000 loss, the cash received is ₹30,000. That ₹30,000, not the book value or the loss, is the investing inflow.",
+   "f": "BV − loss = cash",
+   "lec": 27
+  },
+  {
+   "id": "fa-t0111",
+   "h": "Net investing outflow is smaller than the capital expenditure",
+   "p": "Compass bought equipment for ₹1,73,000 cash, but disposals, net investment sales and interest received brought in ₹45,000, so net investing was (₹1,28,000). Ask how the net figure was financed, not the gross one.",
+   "f": "gross capex − inflows = net",
+   "lec": 27
+  },
+  {
+   "id": "fa-t0112",
+   "h": "A current ratio above 2 : 1 is not automatically healthy",
+   "p": "The rule of thumb ignores what the current assets are. Slow-moving stock and doubtful debtors can sit behind 2.2 : 1, while a firm at 1.6 : 1 with fast stock and prompt collections can be the more liquid.",
+   "f": "quality over the ratio",
+   "lec": 28
+  },
+  {
+   "id": "fa-t0113",
+   "h": "Growth against your own past can hide falling behind the industry",
+   "p": "Sales up 10% looks good until you learn the industry grew 30%. That is the illusion of growth, a limit of past-performance comparison; industry standards correct it.",
+   "f": "compare with peers too",
+   "lec": 28
+  },
+  {
+   "id": "fa-t0114",
+   "h": "Horizontal percentage change divides by the earlier year",
+   "p": "(Current − previous) ÷ previous × 100. Sales of 4,00,000 rising to 4,60,000 is a 15% increase; dividing by 4,60,000 gives 13.0%, which is wrong.",
+   "f": "base = earlier year",
+   "lec": 28
+  },
+  {
+   "id": "fa-t0115",
+   "h": "A fall in profit can come entirely from one exceptional item",
+   "p": "Dr. Reddy's net profit fell 7.92% in 2016, yet operating profit grew about 9.2%: an exceptional foreign exchange loss caused the fall. Separate one-offs from core operations before judging performance.",
+   "f": "strip out the one-offs",
+   "lec": 28
+  },
+  {
+   "id": "fa-t0116",
+   "h": "Comparisons break when accounting policies or year-ends differ",
+   "p": "A change of depreciation method, or two companies closing on 31 December and 31 March, means the figures were not prepared on the same basis or for the same period, so they are not directly comparable.",
+   "f": "same rules, same period",
+   "lec": 28
+  },
+  {
+   "id": "fa-t0117",
+   "h": "Cash equivalents: three months or less from acquisition, not “3 to 12 months”",
+   "p": "Live Lecture 6 once described short-term maturities as 3 to under 12 months, and the LMS summary repeats it. Her own answers, and AS 3's usual guide, use a maturity of three months or less from the date of acquisition.",
+   "f": "≤ 3 months when acquired",
+   "lec": 29
+  },
+  {
+   "id": "fa-t0118",
+   "h": "A long deposit does not become a cash equivalent as it nears maturity",
+   "p": "A one-year FD made ten months ago has two months left, but its maturity when acquired was twelve months, so it stays outside cash equivalents. A security bought by the firm with two months to run is different: it is measured from that purchase date.",
+   "f": "count from the day acquired",
+   "lec": 29
+  },
+  {
+   "id": "fa-t0119",
+   "h": "If you skip the bad-debt add-back, deduct the rise in net receivables",
+   "p": "Compass in Live Lecture 6: no add-back, net receivables (₹32,000) deducted, subtotal ₹1,86,000. In L#26: add back ₹12,000 and deduct gross receivables plus write-offs (₹44,000), subtotal ₹1,98,000. Both reach ₹84,000; mixing them does not.",
+   "f": "net with net, gross with gross",
+   "lec": 29
+  },
+  {
+   "id": "fa-t0120",
+   "h": "Trade discount is never recorded; cash discount is",
+   "p": "Kavya Stationers bought goods listed at ₹80,000 less 10% trade discount: Purchases and the supplier are both ₹72,000. Only the ₹1,000 given up or received for settling an account is entered, as discount allowed or received.",
+   "f": "trade comes off the invoice",
+   "lec": 26
+  },
+  {
+   "id": "fa-t0121",
+   "h": "Goods taken by the owner are credited to Purchases at cost, not to Sales",
+   "p": "Drawings Dr · To Purchases, at cost (₹3,000 for Kavya Stationers). Crediting Sales would record a sale that never happened, and at the wrong value.",
+   "f": "drawings at cost",
+   "lec": 26
+  },
+  {
+   "id": "fa-t0122",
+   "h": "The allowance entry is the required balance minus the existing balance",
+   "p": "Firm Y's ageing schedule needs ₹44,500; the account holds ₹30,000, so the charge is ₹14,500. If the existing balance is larger than needed, the difference is written back to profit.",
+   "f": "top up the difference",
+   "lec": 26
+  },
+  {
+   "id": "fa-t0123",
+   "h": "Training and maintenance contracts are not part of an asset's cost",
+   "p": "Orbit's machine is capitalised at ₹12,20,000: price less trade discount, freight, installation and test runs. Staff training (₹20,000) and the maintenance contract (₹18,000) are expenses.",
+   "f": "stop at ready for use",
+   "lec": 26
+  },
+  {
+   "id": "fa-t0124",
+   "h": "A revised useful life is applied from now on; earlier years are not restated",
+   "p": "Book value at the date of the change, less residual value, is spread over the new remaining life: (₹7,40,000 − ₹20,000) ÷ 5 = ₹1,44,000. This is a change in estimate, not an error.",
+   "f": "estimates go forward",
+   "lec": 26
+  },
+  {
+   "id": "fa-t0125",
+   "h": "With rising prices, FIFO shows the higher gross profit",
+   "p": "Sunrise Traders: FIFO gross profit ₹9,700 against ₹9,100 under weighted average. FIFO leaves the newest, dearest units in closing stock and charges the older, cheaper ones to cost.",
+   "f": "rising prices → FIFO profit up",
    "lec": 26
   }
  ],
@@ -2252,6 +2490,150 @@ HUB.addCourse({
    "topic": "Cash flow statement",
    "term": "Book value of an asset sold",
    "html": "<b>Book value</b> of an asset sold: its cost minus accumulated depreciation. Sale proceeds above it give a gain, below it a loss; the proceeds themselves are the investing inflow.",
+   "lec": 26
+  },
+  {
+   "id": "fa-d0118",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Quality of earnings",
+   "html": "<b>Quality of earnings</b>: how far reported profit is backed by cash from operations. A large, persistent gap between profit (plus non-cash charges) and operating cash lowers it.",
+   "lec": 27
+  },
+  {
+   "id": "fa-d0119",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Financial flexibility",
+   "html": "<b>Financial flexibility</b>: a firm's ability to raise or free cash in a crisis, for example by selling current investments, borrowing more, getting longer supplier credit or drawing on a bank line.",
+   "lec": 27
+  },
+  {
+   "id": "fa-d0120",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Cash interest cover",
+   "html": "<b>Cash interest cover</b> (as used in L#27) = net cash from operating activities ÷ interest paid. Compass Company: 72,000 ÷ 22,000 = 3.3 times.",
+   "lec": 27
+  },
+  {
+   "id": "fa-d0121",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Dividend rate",
+   "html": "<b>Dividend rate</b> = dividend ÷ paid-up share capital. Compass paid ₹25,000 on ₹2,00,000, 12.5%; holding the rate on ₹3,50,000 means ₹43,750.",
+   "lec": 27
+  },
+  {
+   "id": "fa-d0122",
+   "unit": "cash-flow",
+   "topic": "Cash flow statement",
+   "term": "Working notes",
+   "html": "<b>Working notes</b>: side calculations made before the cash flow statement, such as profit before tax from the change in surplus, depreciation from asset balances, book value and proceeds of assets sold, tax paid and interest.",
+   "lec": 27
+  },
+  {
+   "id": "fa-d0123",
+   "unit": "analysis",
+   "topic": "Financial statement analysis",
+   "term": "Financial statement analysis",
+   "html": "<b>Financial statement analysis</b>: the tools and techniques that convert the figures in financial statements into information for decisions about a firm's past performance, health and prospects.",
+   "lec": 28
+  },
+  {
+   "id": "fa-d0124",
+   "unit": "analysis",
+   "topic": "Financial statement analysis",
+   "term": "Rule of thumb indicator",
+   "html": "<b>Rule of thumb indicator</b>: a broad benchmark ratio applied to all firms, such as a current ratio of 2 : 1. Simple, but blind to the quality of the underlying assets.",
+   "lec": 28
+  },
+  {
+   "id": "fa-d0125",
+   "unit": "analysis",
+   "topic": "Financial statement analysis",
+   "term": "Illusion of growth",
+   "html": "<b>Illusion of growth</b>: a firm looks healthy against its own past (sales up 10%) while it is losing ground to an industry growing faster (30%).",
+   "lec": 28
+  },
+  {
+   "id": "fa-d0126",
+   "unit": "analysis",
+   "topic": "Financial statement analysis",
+   "term": "Internal standards",
+   "html": "<b>Internal standards</b>: benchmarks a company sets for itself, such as profit, ROI or sales-growth targets, budgets and standard costs, used to monitor and control performance.",
+   "lec": 28
+  },
+  {
+   "id": "fa-d0127",
+   "unit": "analysis",
+   "topic": "Financial statement analysis",
+   "term": "Industry standards",
+   "html": "<b>Industry standards</b>: benchmarks taken from peer companies in the same industry, such as an industry-average gross margin.",
+   "lec": 28
+  },
+  {
+   "id": "fa-d0128",
+   "unit": "analysis",
+   "topic": "Financial statement analysis",
+   "term": "Horizontal analysis",
+   "html": "<b>Horizontal analysis</b>: placing two years' figures side by side and computing each item's absolute and percentage change on the earlier year.",
+   "lec": 28
+  },
+  {
+   "id": "fa-d0129",
+   "unit": "analysis",
+   "topic": "Financial statement analysis",
+   "term": "Trend analysis",
+   "html": "<b>Trend analysis</b>: horizontal analysis stretched over several years, with each year expressed as an index of a base year (= 100).",
+   "lec": 28
+  },
+  {
+   "id": "fa-d0130",
+   "unit": "analysis",
+   "topic": "Financial statement analysis",
+   "term": "Vertical analysis",
+   "html": "<b>Vertical analysis</b>: expressing each line of a statement as a percentage of a base figure in the same statement, such as sales or total assets.",
+   "lec": 28
+  },
+  {
+   "id": "fa-d0131",
+   "unit": "adjusting",
+   "topic": "Adjusting & closing entries",
+   "term": "Allowance for doubtful debts",
+   "html": "<b>Allowance for doubtful debts</b>: a contra-asset estimating the part of debtors that will not be collected. The balance sheet shows debtors less the allowance; only the change in the allowance is charged to profit.",
+   "lec": 26
+  },
+  {
+   "id": "fa-d0132",
+   "unit": "adjusting",
+   "topic": "Adjusting & closing entries",
+   "term": "Ageing schedule",
+   "html": "<b>Ageing schedule</b>: debtors grouped by how long they have been outstanding, with a higher loss rate for older debts. Its total is the balance the allowance should have.",
+   "lec": 26
+  },
+  {
+   "id": "fa-d0133",
+   "unit": "balance-sheet",
+   "topic": "Balance sheet",
+   "term": "Capital expenditure",
+   "html": "<b>Capital expenditure</b>: spending that buys, builds or improves a fixed asset or extends its life, giving benefits over several years. It is added to the asset's cost and depreciated.",
+   "lec": 26
+  },
+  {
+   "id": "fa-d0134",
+   "unit": "balance-sheet",
+   "topic": "Balance sheet",
+   "term": "Revenue expenditure",
+   "html": "<b>Revenue expenditure</b>: spending whose benefit is used up within the year, such as repairs, maintenance and advertising. It is charged to profit in the year incurred.",
+   "lec": 26
+  },
+  {
+   "id": "fa-d0135",
+   "unit": "balance-sheet",
+   "topic": "Balance sheet",
+   "term": "Change in accounting estimate",
+   "html": "<b>Change in accounting estimate</b>: a revision of a judgement such as an asset's useful life or residual value. It is applied prospectively, from the period of the change, without restating earlier years.",
    "lec": 26
   }
  ],
@@ -8006,6 +8388,1213 @@ HUB.addCourse({
    "w": "The ₹3,00,000 rise includes a ₹1,00,000 conversion that moved no cash, so the cash issue is ₹2,00,000. Reading the balance-sheet change as cash is the slip Compass Company warns against.",
    "lec": 26,
    "lv": "apply"
+  },
+  {
+   "id": "fa-q0349",
+   "topic": "Cash flow statement",
+   "q": "Compass Company's profit after tax plus depreciation was ₹1,41,000, while net cash from operating activities was only ₹72,000. What did the lecture say this gap makes readers question?",
+   "c": [
+    "The company's solvency in the long run",
+    "The quality of its earnings",
+    "Its choice of depreciation method",
+    "Its gross profit margin"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A wide gap between accrual profit (plus non-cash charges) and operating cash means much of the profit is not turning into cash, so readers question the quality of earnings. It says nothing directly about the depreciation method or gross margin.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0350",
+   "topic": "Cash flow statement",
+   "q": "A firm's credit sales are ₹6,00,000. Gross trade receivables rise from ₹80,000 to ₹1,10,000, and ₹6,000 of debts are written off during the year. How much cash was collected from customers?",
+   "c": [
+    "₹5,70,000",
+    "₹6,24,000",
+    "₹5,64,000",
+    "₹6,30,000"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Cash collected = opening 80,000 + sales 6,00,000 − written off 6,000 − closing 1,10,000 = 5,64,000 (94% of sales). Forgetting the write-off gives 5,70,000; it reduced receivables without bringing in cash.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0351",
+   "topic": "Cash flow statement",
+   "q": "A company spends ₹2,00,000 on equipment. It also sells an old machine for ₹30,000, sells investments for ₹50,000, buys investments for ₹20,000 and receives interest of ₹10,000. Net operating cash is ₹60,000 and net financing cash ₹40,000. By how much does its cash balance change?",
+   "c": [
+    "Falls by ₹30,000",
+    "Falls by ₹1,00,000",
+    "Rises by ₹10,000",
+    "Falls by ₹70,000"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Net investing = −2,00,000 + 30,000 + 50,000 − 20,000 + 10,000 = −1,30,000. Change = 60,000 − 1,30,000 + 40,000 = −30,000: the cash balance covers the last ₹30,000, as Compass's did. Ignoring the investing inflows gives a ₹1,00,000 fall.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0352",
+   "topic": "Cash flow statement",
+   "q": "A company raises ₹3,00,000 by issuing shares for cash. In the same year it redeems debentures of ₹80,000, repays a short-term loan of ₹20,000, pays dividends of ₹60,000 and pays interest of ₹40,000 (it is a manufacturer). What is its net cash from financing activities?",
+   "c": [
+    "₹1,40,000",
+    "₹2,00,000",
+    "₹1,60,000",
+    "₹1,00,000"
+   ],
+   "a": [
+    3
+   ],
+   "w": "3,00,000 − 80,000 − 20,000 − 60,000 − 40,000 = 1,00,000. For a non-financial company interest paid is financing (AS 3), so leaving it out and getting 1,40,000 misclassifies it.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0353",
+   "topic": "Cash flow statement",
+   "q": "Using the lecture's measure, a company with net cash from operating activities of ₹90,000 and interest paid of ₹30,000 has a cash interest cover of:",
+   "c": [
+    "2 times",
+    "3 times",
+    "4 times",
+    "0.33 times"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Cash interest cover = operating cash ÷ interest paid = 90,000 ÷ 30,000 = 3 times. Adding interest back to the numerator (4 times) or subtracting it (2 times) are not the measure she used.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0354",
+   "topic": "Cash flow statement",
+   "q": "A company's share capital of ₹4,00,000 earns a 10% dividend (₹40,000). During the year it issues shares of ₹1,00,000 for cash and converts ₹1,00,000 of debentures into shares. To keep the 10% rate next year, the dividend must be:",
+   "c": [
+    "₹50,000",
+    "₹40,000",
+    "₹60,000",
+    "₹45,000"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Share capital becomes 4,00,000 + 1,00,000 + 1,00,000 = 6,00,000, and 10% of that is 60,000. Shares issued on conversion rank for dividend too, even though they brought in no cash, so 50,000 (cash issue only) understates it.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0355",
+   "topic": "Cash flow statement",
+   "q": "In Compass Company, operating cash was ₹72,000 and interest paid ₹22,000; the dividend paid was ₹25,000. What share of the cash left after interest went out as dividend?",
+   "c": [
+    "About 35%",
+    "12.5%",
+    "50%",
+    "25%"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Cash left after interest = 72,000 − 22,000 = 50,000, and 25,000 ÷ 50,000 = 50%. 12.5% is the dividend as a share of opening share capital, a different measure; 35% divides by the full 72,000.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0356",
+   "topic": "Cash flow statement",
+   "q": "Which of these is NOT a way the lecture suggested Compass Company could raise or free cash in a crisis?",
+   "c": [
+    "Selling its current investments",
+    "Borrowing more, given its low debt–equity ratio",
+    "Negotiating longer credit from suppliers",
+    "Charging less depreciation"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Selling investments, more debt and more supplier credit all bring or keep cash. Depreciation is a non-cash charge: changing it alters profit, not cash, which is why it is added back in the indirect method.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0357",
+   "topic": "Cash flow statement",
+   "q": "Which observation best supports the lecture's conclusion that Compass Company's capacity expansion was straining its cash?",
+   "c": [
+    "Cash collected from customers was about 95% of sales",
+    "Operations and the existing cash balance funded most of the net investment, with only a small net inflow from financing",
+    "Operating cash covered interest paid more than three times",
+    "Its debt–equity ratio was about 0.54 : 1"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Of the ₹1,28,000 net investing outflow, ₹72,000 came from operations and ₹31,000 from running down cash; net financing gave only ₹25,000. The 95% collection rate and the interest cover point to strength, not strain.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0358",
+   "topic": "Cash flow statement",
+   "q": "Reserves and surplus (the profit and loss balance) rise from ₹3,00,000 to ₹4,10,000. This year's provision for tax is ₹40,000 and the proposed dividend ₹30,000, both appropriated before the surplus. What is the net profit before tax to start the indirect method?",
+   "c": [
+    "₹1,10,000",
+    "₹1,50,000",
+    "₹1,80,000",
+    "₹4,80,000"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Profit retained = 4,10,000 − 3,00,000 = 1,10,000. Add back the tax provision 40,000 and proposed dividend 30,000: 1,80,000. Stopping at 1,10,000 starts from a figure already reduced by tax and dividend.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0359",
+   "topic": "Cash flow statement",
+   "q": "Equipment (net) is ₹3,00,000 at the start of the year and ₹3,20,000 at the end. Equipment of ₹90,000 was bought, depreciation was ₹40,000, and an old item was sold at a gain of ₹4,000. How much cash did the sale bring in?",
+   "c": [
+    "₹34,000",
+    "₹30,000",
+    "₹26,000",
+    "₹4,000"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Book value sold = 3,00,000 + 90,000 − 40,000 − 3,20,000 = 30,000. Sold at a gain of 4,000, so cash = 34,000, the investing inflow. ₹30,000 is only the book value; ₹26,000 treats the gain as a loss.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0360",
+   "topic": "Cash flow statement",
+   "q": "Patents fall from ₹80,000 to ₹72,000 during the year, with none bought or sold. In the indirect method, the ₹8,000 is:",
+   "c": [
+    "Deducted from profit as an investing outflow",
+    "Shown as a financing outflow",
+    "Added back to profit as a non-cash charge",
+    "Left out because patents are intangible"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The fall is the amount written off (amortised) against profit; no cash moved, so it is added back like depreciation. It is not an investing outflow: nothing was bought.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0361",
+   "topic": "Cash flow statement",
+   "q": "Profit before tax is ₹2,00,000. The tax provision was ₹25,000 at the start of the year (paid during the year) and ₹45,000 at the end. A student starts from profit before tax, deducts tax paid of ₹25,000 and also adds the ₹20,000 rise in the provision. What is wrong?",
+   "c": [
+    "Nothing; both adjustments are needed",
+    "Tax paid should be ₹45,000",
+    "Operating cash is overstated by ₹20,000: the rise in the provision belongs to the profit-after-tax route only",
+    "Operating cash is understated by ₹20,000"
+   ],
+   "a": [
+    2
+   ],
+   "w": "From profit before tax, deducting tax paid already turns the tax charge into cash. Adding the provision's rise as well counts it twice, so operating cash is ₹20,000 too high. The rise is added only when you start from profit after the tax charge.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0362",
+   "topic": "Cash flow statement",
+   "q": "A bank loan of ₹2,00,000 at 12% a year was outstanding at the start of the year. ₹80,000 was repaid on the last day of the year. What is the interest for the year?",
+   "c": [
+    "₹14,400",
+    "₹19,200",
+    "₹9,600",
+    "₹24,000"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The full ₹2,00,000 was outstanding all year (the repayment came on the last day), so interest = 12% × 2,00,000 = 24,000, as Pioneer's 10% on ₹1,00,000 was. ₹14,400 charges interest only on the balance left after repayment.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0363",
+   "topic": "Cash flow statement",
+   "q": "Compass Company paid its suppliers quickly, so trade payables fell by ₹14,000. How does this show in the cash flow statement?",
+   "c": [
+    "Deducted in the operating section, lowering operating cash",
+    "Added in the operating section",
+    "Shown as a financing outflow",
+    "Left out, because payables are a balance-sheet item"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A fall in a current liability means more cash went to suppliers than this year's purchases charged, so it is deducted in the working capital adjustment. Trade payables are operating, not financing.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0364",
+   "topic": "Cash flow statement",
+   "q": "In Pioneer Limited, the indirect-method operating section starts from:",
+   "c": [
+    "The closing balance of reserves and surplus",
+    "Net profit before tax, built from the change in surplus plus the provision for tax and proposed dividend",
+    "Cash received from customers",
+    "Net profit after the proposed dividend"
+   ],
+   "a": [
+    1
+   ],
+   "w": "She first worked out profit before tax: 1,70,000 retained + 50,000 tax + 50,000 proposed dividend = 2,70,000. Cash received from customers is where the direct method starts.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0365",
+   "topic": "Financial statement analysis",
+   "q": "Which description of financial statement analysis matches the lecture?",
+   "c": [
+    "Preparing the balance sheet, profit and loss statement and cash flow statement",
+    "The tools and techniques that turn statement figures into information stakeholders can decide with",
+    "Auditing the statements for errors and fraud",
+    "Filing the statements with the regulator"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Preparation was modules 1 and 2; analysis is reading the prepared statements with tools and techniques so that bankers, investors and managers can decide. Auditing checks the statements, it does not interpret them.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0366",
+   "topic": "Financial statement analysis",
+   "q": "A credit-rating desk rejects any borrower whose debt–equity ratio is above 2 : 1, whatever its industry. Which standard of comparison is it using?",
+   "c": [
+    "Industry standard",
+    "Past performance",
+    "Rule of thumb indicator",
+    "Internal standard"
+   ],
+   "a": [
+    2
+   ],
+   "w": "One broad ratio applied to every firm is a rule of thumb indicator, like the 2 : 1 current ratio. An industry standard would compare the borrower with its own peers.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0367",
+   "topic": "Financial statement analysis",
+   "q": "Firm A has a current ratio of 2.3 : 1 but slow-moving stock and overdue debtors; Firm B has 1.5 : 1 with fast-moving stock and prompt collections. What does the comparison show about the 2 : 1 rule of thumb?",
+   "c": [
+    "It ignores the quality and liquidity of the current assets",
+    "It is always right, so Firm A is more liquid",
+    "It only applies to manufacturing companies",
+    "It should be replaced by the debt–equity ratio"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The rule counts current assets without asking how quickly they become cash. Firm B may be the more liquid in practice. That is the limitation the lecture gave; nothing says the rule applies only to manufacturers.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0368",
+   "topic": "Financial statement analysis",
+   "q": "A packaging firm's net profit rises 35% on last year, entirely because it sold a plot of land at a large gain; its operating profit is unchanged. Which limitation of past-performance comparison does this show?",
+   "c": [
+    "Illusion of growth",
+    "Non-operating items",
+    "Change in accounting policy",
+    "Different fiscal years"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A gain on selling land is a non-operating, unpredictable item: it inflates this year's profit and won't recur. The illusion of growth is about growing slower than the industry.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0369",
+   "topic": "Financial statement analysis",
+   "q": "This year a company switches from the written-down-value method to the straight-line method of depreciation. An analyst compares this year's profit with last year's. What is the main problem?",
+   "c": [
+    "The analyst must use industry standards instead",
+    "Depreciation does not affect profit",
+    "The change in accounting policy reduces comparability between the two years",
+    "The comparison is fine because sales are unaffected"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Profit in the two years is now measured under different policies, so part of the change in profit comes from the method, not from performance. Depreciation does affect profit, which is why the switch matters.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0370",
+   "topic": "Financial statement analysis",
+   "q": "A company's sales grew 8% this year and management is pleased. The industry grew 25%. What does the lecture call this?",
+   "c": [
+    "The illusion of growth",
+    "A rule of thumb failure",
+    "An internal standard",
+    "Window dressing"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Comparing only with your own past made 8% look good, while the company actually lost market share to rivals growing at 25%. Industry standards expose it.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0371",
+   "topic": "Financial statement analysis",
+   "q": "What lesson did the lecture draw from Kodak's rise and fall?",
+   "c": [
+    "Industry averages are unreliable",
+    "Fundamental changes such as new technology can make past trends a poor guide to the future",
+    "Internal budgets always fail",
+    "Large profits guarantee survival"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Kodak's own historical figures looked excellent until digital cameras and smartphones disrupted it; extrapolating its past would have hidden the threat. That is the fundamental-change limit of past-performance comparison.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0372",
+   "topic": "Financial statement analysis",
+   "q": "A company measures each division against the profit budget and standard costs set by its board at the start of the year. Which standard of comparison is this?",
+   "c": [
+    "Industry standard",
+    "Rule of thumb indicator",
+    "Past performance",
+    "Internal standard"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Budgets, standard costs and board targets are benchmarks the company sets for itself: internal standards. Their weakness is that they say nothing about competitors.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0373",
+   "topic": "Financial statement analysis",
+   "q": "A retailer's gross margin is 9%; the industry average is 15%. What does the industry comparison suggest?",
+   "c": [
+    "The retailer is doing well, since 9% is positive",
+    "Its margin is weak relative to peers, which its own history alone might not reveal",
+    "The industry average should be ignored because firms differ",
+    "The retailer's current ratio must also be low"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Against peers the 9% looks weak, as the lecture's 7% against 12% did. Firm differences are a caution about industry standards, not a reason to ignore them, and the margin says nothing about the current ratio.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0374",
+   "topic": "Financial statement analysis",
+   "q": "Why did the lecture call Hindustan Unilever hard to benchmark against an industry?",
+   "c": [
+    "It reports under Ind AS",
+    "Its year ends in March",
+    "It sells across several product lines, and no single competitor overlaps all of them",
+    "It has no listed competitors"
+   ],
+   "a": [
+    2
+   ],
+   "w": "HUL sells soaps, detergents, toothpaste and food; P&G, ITC and Colgate each overlap only partly, so no peer is a full match. The other options are not the reason she gave.",
+   "lec": 28,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0375",
+   "topic": "Financial statement analysis",
+   "q": "Sales were ₹4,00,000 last year and ₹4,60,000 this year. In horizontal analysis the change is:",
+   "c": [
+    "₹60,000, a rise of 13.0%",
+    "₹60,000, a rise of 15.0%",
+    "₹4,60,000, a rise of 115%",
+    "₹60,000, a rise of 6.0%"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Change = 4,60,000 − 4,00,000 = 60,000; percentage = 60,000 ÷ 4,00,000 × 100 = 15%. Dividing by this year's figure gives 13.0%, the classic error.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0376",
+   "topic": "Financial statement analysis",
+   "q": "How does trend analysis differ from horizontal analysis?",
+   "c": [
+    "It compares a company with its industry",
+    "It expresses each item as a percentage of sales",
+    "It covers several years, each indexed to a base year",
+    "It uses only the balance sheet"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Trend analysis extends horizontal analysis beyond two years, setting a base year at 100 and indexing later years to it. Percentages of sales are vertical analysis.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0377",
+   "topic": "Financial statement analysis",
+   "q": "With 2022 as the base year (= 100), sales were ₹250 lakh in 2022 and ₹340 lakh in 2025. What is the 2025 trend index?",
+   "c": [
+    "136",
+    "90",
+    "74",
+    "340"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Index = 340 ÷ 250 × 100 = 136. 74 inverts the ratio; 90 is the absolute change, not an index.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0378",
+   "topic": "Financial statement analysis",
+   "q": "Sales are ₹6,00,000 and gross profit ₹1,80,000. In vertical analysis with sales as the base, gross profit is shown as:",
+   "c": [
+    "₹1,80,000",
+    "30% of sales",
+    "300% of sales",
+    "70% of sales"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Vertical analysis expresses each line as a percentage of the base: 1,80,000 ÷ 6,00,000 = 30%. 70% is cost of goods sold as a share of sales.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0379",
+   "topic": "Financial statement analysis",
+   "q": "Two companies' year-ends are 31 December and 31 March. Why are their annual figures not directly comparable?",
+   "c": [
+    "Their accounting periods do not cover the same months",
+    "One must be using cash-basis accounting",
+    "Companies with different year-ends cannot be listed",
+    "Indian law forbids comparing them"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Different year-ends mean the twelve-month periods don't overlap fully, so seasonal and economic conditions differ between the figures. Neither firm need be on the cash basis.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0380",
+   "topic": "Financial statement analysis",
+   "q": "A company's net profit fell 8% this year. On analysis, an exceptional foreign-exchange loss explains the whole fall, and profit before that item rose 9%. What is the fair reading?",
+   "c": [
+    "Core operations weakened and the firm is in decline",
+    "The 9% rise is misleading because it excludes a real loss",
+    "Operations are robust; the fall reflects a one-off event",
+    "The company must have changed its depreciation method"
+   ],
+   "a": [
+    2
+   ],
+   "w": "This is the Dr. Reddy's pattern: the headline decline comes from a non-recurring item, while operating profit grew faster than revenue. The loss is real, but it says nothing about recurring performance.",
+   "lec": 28,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0381",
+   "topic": "Financial statement analysis",
+   "q": "Revenue of ₹200 lakh grows 5% and expenses of ₹160 lakh grow 3%. By what percentage does profit (revenue minus expenses) grow?",
+   "c": [
+    "5%",
+    "2%",
+    "8%",
+    "13%"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Revenue becomes 210, expenses 164.8, so profit rises from 40 to 45.2, a 13% increase. When revenue grows faster than expenses, profit grows faster than either, which is why she noted Dr. Reddy's expenses (3.49%) lagging revenue (4.49%).",
+   "lec": 28,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0382",
+   "topic": "Cash flow statement",
+   "q": "A company opened a 12-month fixed deposit ten months before its year end, so two months remain at the balance-sheet date. Following the lecture, is it a cash equivalent?",
+   "c": [
+    "Yes, because only two months remain",
+    "No, because the maturity is measured from the date the deposit was acquired",
+    "Yes, because fixed deposits are always cash equivalents",
+    "No, because fixed deposits are always investing items"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The three-month test is applied at acquisition: this deposit had a twelve-month maturity when made, so it stays out. Two months remaining does not change that, and a two-month FD made as such would qualify.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0383",
+   "topic": "Cash flow statement",
+   "q": "On 1 March a company buys government treasury bills that mature on 15 May. Its year ends on 31 March. Are they cash equivalents?",
+   "c": [
+    "No, because their maturity runs past the year end",
+    "No, because government securities are investments",
+    "Yes: the maturity is about two and a half months from the date they were acquired",
+    "Only if they are sold before 31 March"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Measured from acquisition on 1 March, the bills mature in about 2.5 months, within three months, and carry an insignificant risk of a change in value. Running past the year end is irrelevant.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0384",
+   "topic": "Cash flow statement",
+   "q": "What did the lecture mean by “profit is an opinion, cash is a fact”?",
+   "c": [
+    "Profit is always overstated",
+    "Profit depends on accounting choices such as the depreciation method; the cash balance does not",
+    "Cash is audited but profit is not",
+    "Profit should be ignored by lenders"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Profit rests on accounting policies and estimates (depreciation method, accruals); cash in the bank is the same whatever policy is used. Lenders still read profit, alongside the cash flow statement.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0385",
+   "topic": "Cash flow statement",
+   "q": "Mira, who runs a stationery shop, lends ₹20,000 to a friend's business. In her cash flow statement this is:",
+   "c": [
+    "An operating outflow",
+    "A financing outflow",
+    "An investing outflow",
+    "Not shown, because it will be repaid"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Lending is not Mira's main business, so it is investing. For a bank, whose main business is lending, the same transaction would be operating. Repayment later doesn't keep the cash flow out of the statement.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0386",
+   "topic": "Cash flow statement",
+   "q": "Mira buys paper worth ₹30,000 on credit and uses it this month; she has not paid the supplier by the period end. Compared with her profit, her operating cash flow is:",
+   "c": [
+    "Lower by ₹30,000",
+    "The same",
+    "Higher by ₹30,000",
+    "Lower by ₹60,000"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The paper is an expense in profit, but no cash has left: trade payables rose by ₹30,000, which is added in the indirect method. A credit sale works the other way, pulling cash below profit.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0387",
+   "topic": "Cash flow statement",
+   "q": "Mira sells an old computer with a book value of ₹10,000 for ₹15,000. Which treatment avoids double counting?",
+   "c": [
+    "Keep the ₹5,000 gain in operating and show ₹15,000 under investing",
+    "Deduct the ₹5,000 gain in operating and show ₹15,000 under investing",
+    "Show only the ₹5,000 gain under investing",
+    "Add ₹15,000 to operating cash"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The whole ₹15,000 received is an investing inflow. The gain is already inside profit, so it is deducted in the operating section; leaving it there counts ₹5,000 twice.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0388",
+   "topic": "Cash flow statement",
+   "q": "In Live Lecture 6 she worked Compass Company's operating section without adding back the ₹12,000 bad-debt expense. Which receivables change must then be deducted?",
+   "c": [
+    "The rise in net receivables, ₹32,000",
+    "The rise in gross receivables plus write-offs, ₹44,000",
+    "The write-off alone, ₹10,000",
+    "No receivables change"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Without the bad-debt add-back, deduct the rise in receivables net of the allowance (₹32,000); that reaches the same ₹84,000. Deducting ₹44,000 without the add-back understates operating cash by ₹12,000.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0389",
+   "topic": "Cash flow statement",
+   "q": "Working Compass Company by her live-lecture route (no bad-debt add-back), what is the operating profit before working capital changes?",
+   "c": [
+    "₹1,98,000",
+    "₹1,86,000",
+    "₹1,68,000",
+    "₹84,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "70,000 + 98,000 depreciation + 22,000 finance costs − 7,000 interest income − 6,000 gain + 9,000 loss = 1,86,000. Adding the ₹12,000 bad debts as well gives the L#26 figure of 1,98,000; 84,000 comes after working capital.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0390",
+   "topic": "Cash flow statement",
+   "q": "In the Ajay Company drill, cash generated from operations was ₹4,46,000 with prepaid expenses rising by ₹11,000 (deducted). If prepaid expenses had instead fallen by ₹11,000, with everything else the same, cash generated from operations would have been:",
+   "c": [
+    "₹4,35,000",
+    "₹4,46,000",
+    "₹4,57,000",
+    "₹4,68,000"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Switching a deduction of 11,000 into an addition of 11,000 moves the total by 22,000: 4,46,000 + 22,000 = 4,68,000. 4,57,000 only removes the deduction without adding the fall back.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0391",
+   "topic": "Cash flow statement",
+   "q": "In her student-life analogy, taking an education loan and later repaying it is:",
+   "c": [
+    "An operating activity",
+    "An investing activity",
+    "A financing activity",
+    "A non-cash transaction"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Raising and repaying borrowed money is financing. The laptop the loan might buy would be investing; pocket money and mess charges are operating.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0392",
+   "topic": "Concepts",
+   "q": "A trader records a sale on the day the goods are handed to the buyer, although the order arrived two weeks earlier and payment is due next month. Which concept is she following?",
+   "c": [
+    "Matching",
+    "Going concern",
+    "Realisation",
+    "Money measurement"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Revenue is recognised when it is earned, at the transfer of the goods, not when the order arrives or the cash comes: the realisation concept. Matching is about charging expenses to the period of the revenue.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0393",
+   "topic": "The equation",
+   "q": "Opening capital is ₹3,00,000. During the year the business earns a profit of ₹1,10,000 and the owner draws ₹40,000. Liabilities at year end are ₹2,60,000. What are the closing assets?",
+   "c": [
+    "₹5,60,000",
+    "₹7,10,000",
+    "₹3,70,000",
+    "₹6,30,000"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Closing capital = 3,00,000 + 1,10,000 − 40,000 = 3,70,000; assets = liabilities + capital = 2,60,000 + 3,70,000 = 6,30,000. Adding the drawings instead of deducting them gives 7,10,000.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0394",
+   "topic": "Journal & ledger",
+   "q": "Goods with a list price of ₹50,000 are bought on credit, less a 20% trade discount. The journal entry is:",
+   "c": [
+    "Purchases Dr ₹50,000; To Supplier ₹40,000; To Discount Received ₹10,000",
+    "Purchases Dr ₹40,000; To Supplier ₹40,000",
+    "Purchases Dr ₹50,000; To Supplier ₹50,000",
+    "Supplier Dr ₹40,000; To Purchases ₹40,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Trade discount is deducted on the invoice and never recorded, so the purchase and the liability are both ₹40,000. Only a cash discount for prompt payment goes to Discount Received.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0395",
+   "topic": "Journal & ledger",
+   "q": "A customer who owes ₹32,000 pays ₹31,200 by cheque in full settlement. The entry is:",
+   "c": [
+    "Bank Dr ₹31,200; Discount Allowed Dr ₹800; To Customer ₹32,000",
+    "Bank Dr ₹31,200; To Customer ₹31,200",
+    "Bank Dr ₹32,000; To Customer ₹31,200; To Discount Received ₹800",
+    "Customer Dr ₹800; To Discount Allowed ₹800"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Full settlement clears the whole ₹32,000 owed: ₹31,200 comes in and the ₹800 given up is discount allowed, an expense. Crediting only ₹31,200 would leave ₹800 wrongly owing.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0396",
+   "topic": "Journal & ledger",
+   "q": "The owner takes goods costing ₹6,000 (normal selling price ₹8,000) for personal use. The entry is:",
+   "c": [
+    "Drawings Dr ₹8,000; To Sales ₹8,000",
+    "Drawings Dr ₹6,000; To Sales ₹6,000",
+    "Capital Dr ₹6,000; To Cash ₹6,000",
+    "Drawings Dr ₹6,000; To Purchases ₹6,000"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Goods withdrawn are recorded at cost and credited to Purchases, because they were never sold. Crediting Sales would record revenue that was not earned.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0397",
+   "topic": "Trial balance",
+   "q": "A trial balance shows debits of ₹5,40,000 and credits of ₹5,32,800. How is the suspense account opened?",
+   "c": [
+    "Debit ₹7,200",
+    "Credit ₹7,200",
+    "Credit ₹14,400",
+    "Debit ₹5,40,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The credit side is ₹7,200 short, so suspense takes ₹7,200 on the credit side to make the totals agree. The suspense account always sits on the side that is short.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0398",
+   "topic": "Trial balance",
+   "q": "A ₹15,000 machine purchase is debited to the Repairs account. What kind of error is it, and does the trial balance still agree?",
+   "c": [
+    "Error of principle; the trial balance still agrees",
+    "Error of omission; the trial balance does not agree",
+    "Compensating error; the trial balance does not agree",
+    "Error of commission; it goes through suspense"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Treating capital expenditure as a revenue expense breaks an accounting principle, but the debit and credit are equal, so the trial balance agrees and the error never reaches suspense.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0399",
+   "topic": "Adjusting & closing entries",
+   "q": "A firm pays ₹48,000 on 1 August 2026 for a 12-month insurance policy and debits Prepaid Insurance. Its year ends on 31 March 2027. The adjusting entry is:",
+   "c": [
+    "Insurance Expense Dr ₹16,000; To Prepaid Insurance ₹16,000",
+    "Prepaid Insurance Dr ₹32,000; To Insurance Expense ₹32,000",
+    "Insurance Expense Dr ₹32,000; To Prepaid Insurance ₹32,000",
+    "Insurance Expense Dr ₹48,000; To Cash ₹48,000"
+   ],
+   "a": [
+    2
+   ],
+   "w": "August to March is 8 months: 48,000 × 8/12 = 32,000 has expired and moves to expense, leaving 16,000 prepaid. Charging only 16,000 confuses the used part with the unexpired part.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0400",
+   "topic": "Adjusting & closing entries",
+   "q": "Supplies on hand were ₹4,000 at the start of the year; supplies of ₹18,000 were bought and debited to Supplies; a count at year end finds ₹5,500. What is the supplies expense?",
+   "c": [
+    "₹16,500",
+    "₹18,000",
+    "₹12,500",
+    "₹22,000"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Available 4,000 + 18,000 = 22,000; still on hand 5,500; used 16,500. Taking only the purchases (18,000) ignores the opening stock and the count.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0401",
+   "topic": "Adjusting & closing entries",
+   "q": "A loan of ₹3,00,000 at 10% a year is taken on 1 December 2026, with interest payable at the end of the loan year. What adjustment is needed at 31 March 2027?",
+   "c": [
+    "None, because no interest is due until 30 November 2027",
+    "Interest Expense Dr ₹10,000; To Interest Payable ₹10,000",
+    "Interest Expense Dr ₹30,000; To Interest Payable ₹30,000",
+    "Interest Expense Dr ₹7,500; To Interest Payable ₹7,500"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Four months' interest has been incurred by 31 March: 3,00,000 × 10% × 4/12 = 10,000, an accrual. That it is not yet payable doesn't matter under the matching concept.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0402",
+   "topic": "Adjusting & closing entries",
+   "q": "On 1 January 2027 a firm receives ₹90,000 for a 9-month service contract and credits Unearned Revenue. At 31 March 2027, how much is revenue and how much is still a liability?",
+   "c": [
+    "Revenue ₹90,000; liability nil",
+    "Revenue ₹60,000; liability ₹30,000",
+    "Revenue ₹30,000; liability ₹60,000",
+    "Revenue nil; liability ₹90,000"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Three of the nine months are done: 90,000 × 3/9 = 30,000 earned; the other 60,000 is still owed as service. It is a deferral: the cash came first.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0403",
+   "topic": "Adjusting & closing entries",
+   "q": "After writing off bad debts, debtors are ₹6,00,000 and the allowance for doubtful debts must be 4% of them. The allowance already has a credit balance of ₹30,000. What is the adjustment?",
+   "c": [
+    "Charge ₹24,000 to profit",
+    "Charge ₹54,000 to profit",
+    "No entry, since an allowance exists",
+    "Reduce the allowance by ₹6,000, a credit to profit"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Required balance = 4% × 6,00,000 = 24,000. The account holds 30,000, so it is reduced by 6,000 and the excess is written back to profit. The charge is the difference between required and existing, which can be negative.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0404",
+   "topic": "Adjusting & closing entries",
+   "q": "An ageing schedule gives: ₹3,00,000 current at 2%, ₹1,00,000 overdue 31–90 days at 10%, ₹50,000 over 90 days at 40%. The allowance has a credit balance of ₹12,000. The bad debt expense for the year is:",
+   "c": [
+    "₹36,000",
+    "₹24,000",
+    "₹48,000",
+    "₹12,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Required allowance = 6,000 + 10,000 + 20,000 = 36,000. With 12,000 already there, the charge is 24,000. Charging the full 36,000 treats the ageing total as the expense instead of the target balance.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0405",
+   "topic": "Adjusting & closing entries",
+   "q": "Equipment costing ₹6,00,000 (residual value ₹60,000, life 6 years, straight line) is bought on 1 January 2027. The year ends on 31 March 2027. Depreciation for the year is:",
+   "c": [
+    "₹90,000",
+    "₹1,00,000",
+    "₹22,500",
+    "₹25,000"
+   ],
+   "a": [
+    2
+   ],
+   "w": "(6,00,000 − 60,000) ÷ 6 = 90,000 a year; for 3 months, 90,000 × 3/12 = 22,500. ₹25,000 forgets to deduct the residual value first.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0406",
+   "topic": "Income statement & accruals",
+   "q": "Rent paid in cash during the year is ₹90,000. Rent prepaid at the start of the year was ₹6,000 and rent outstanding at the end is ₹4,000 (nothing outstanding at the start, nothing prepaid at the end). What is the rent expense?",
+   "c": [
+    "₹1,00,000",
+    "₹80,000",
+    "₹92,000",
+    "₹88,000"
+   ],
+   "a": [
+    0
+   ],
+   "w": "90,000 paid + 6,000 prepaid last year and used this year + 4,000 owed for this year = 1,00,000. Deducting the prepaid amount (88,000 or 80,000) treats last year's advance as next year's.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0407",
+   "topic": "Income statement & accruals",
+   "q": "Commission received in cash is ₹60,000. Commission received in advance rose from ₹5,000 to ₹12,000 during the year, and accrued commission rose from ₹3,000 to ₹4,000. What is the commission income for the year?",
+   "c": [
+    "₹66,000",
+    "₹60,000",
+    "₹54,000",
+    "₹72,000"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Start from cash 60,000; deduct the rise in advances (7,000: received but not earned); add the rise in accruals (1,000: earned but not received): 54,000. Reversing the signs gives 66,000.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0408",
+   "topic": "Income statement & accruals",
+   "q": "Profit on the cash basis is ₹2,00,000. During the year receivables rose by ₹20,000, salaries payable rose by ₹12,000 and prepaid rent rose by ₹3,000. What is profit on the accrual basis?",
+   "c": [
+    "₹1,89,000",
+    "₹2,11,000",
+    "₹2,35,000",
+    "₹1,65,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Add the revenue earned but not collected (+20,000), deduct the salary incurred but unpaid (−12,000), add the rent paid for next period (+3,000): 2,11,000.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0409",
+   "topic": "Income statement & accruals",
+   "q": "A publisher receives ₹3,600 on 1 January 2027 for a 12-month subscription starting that day. For the year ending 31 March 2027, it recognises:",
+   "c": [
+    "Revenue ₹3,600",
+    "Revenue nil and a liability of ₹3,600",
+    "Revenue ₹2,700 and a liability of ₹900",
+    "Revenue ₹900 and a liability of ₹2,700"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Three of twelve months are delivered by 31 March: 3,600 × 3/12 = 900 revenue; 2,700 is still unearned, a liability.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0410",
+   "topic": "Trading account",
+   "q": "Purchase prices rise steadily through the year. Compared with the weighted average method, FIFO gives:",
+   "c": [
+    "A higher closing stock and a higher gross profit",
+    "A lower closing stock and a lower gross profit",
+    "The same gross profit",
+    "A higher cost of goods sold"
+   ],
+   "a": [
+    0
+   ],
+   "w": "FIFO charges the older, cheaper units to cost of goods sold and leaves the newer, dearer ones in closing stock, so COGS is lower and gross profit higher when prices rise.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0411",
+   "topic": "Trading account",
+   "q": "Opening stock is 50 units at ₹20; purchases are 100 units at ₹22 and then 50 units at ₹25. 120 units are sold at ₹40. Under FIFO (periodic), what is the gross profit?",
+   "c": [
+    "₹2,130",
+    "₹2,260",
+    "₹2,540",
+    "₹2,010"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Cost of goods available 4,450. FIFO closing stock is the newest 80 units: 50 × 25 + 30 × 22 = 1,910, so COGS = 2,540 and gross profit = 4,800 − 2,540 = 2,260. Weighted average gives 2,130.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0412",
+   "topic": "Balance sheet",
+   "q": "A machine costs ₹5,00,000. Freight to the factory is ₹20,000, installation ₹15,000, staff training ₹8,000 and the first year's insurance ₹6,000. At what amount is the machine capitalised?",
+   "c": [
+    "₹5,49,000",
+    "₹5,00,000",
+    "₹5,35,000",
+    "₹5,43,000"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Cost covers what it takes to bring the machine to working condition: 5,00,000 + 20,000 + 15,000 = 5,35,000. Training and insurance are running costs, expensed (AS 10).",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0413",
+   "topic": "Balance sheet",
+   "q": "Which of these is capital expenditure?",
+   "c": [
+    "Repainting the office every year",
+    "Replacing a worn belt so a machine keeps running",
+    "Repairs after a breakdown",
+    "An overhaul that adds three years to a machine's life"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Extending an asset's useful life beyond its original estimate gives a lasting benefit, so it is capitalised. The others only maintain the asset in its existing condition: revenue expenditure.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0414",
+   "topic": "Balance sheet",
+   "q": "A machine costing ₹8,00,000 (no residual value, 8-year life, straight line) has been used for 3 years. Its remaining life is now re-estimated at 4 years. Depreciation for year 4 is:",
+   "c": [
+    "₹1,00,000",
+    "₹2,00,000",
+    "₹1,25,000",
+    "₹71,429"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Book value after 3 years = 8,00,000 − 3,00,000 = 5,00,000, spread over the 4 remaining years: 1,25,000. A change in estimate works forward; past years aren't restated, and the original cost isn't re-divided.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0415",
+   "topic": "Cash flow statement",
+   "q": "Profit before tax ₹3,00,000; depreciation ₹50,000; gain on sale of machinery ₹10,000; receivables up ₹25,000; trade payables down ₹8,000; inventories down ₹12,000; income tax paid ₹70,000. Net cash from operating activities is:",
+   "c": [
+    "₹2,49,000",
+    "₹2,69,000",
+    "₹3,19,000",
+    "₹2,65,000"
+   ],
+   "a": [
+    0
+   ],
+   "w": "3,00,000 + 50,000 − 10,000 = 3,40,000; working capital −25,000 − 8,000 + 12,000 = −21,000 → 3,19,000; less tax 70,000 = 2,49,000. Adding the gain instead of deducting it gives 2,69,000.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0416",
+   "topic": "Cash flow statement",
+   "q": "Cost of goods sold is ₹8,00,000. Inventory rose from ₹1,00,000 to ₹1,30,000 and trade payables fell from ₹90,000 to ₹70,000. Under the direct method, cash paid to suppliers is:",
+   "c": [
+    "₹8,30,000",
+    "₹8,50,000",
+    "₹8,10,000",
+    "₹7,90,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Purchases = 8,00,000 + 1,30,000 − 1,00,000 = 8,30,000; paid = 90,000 + 8,30,000 − 70,000 = 8,50,000. Stopping at purchases forgets that the fall in payables means extra cash went out.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0417",
+   "topic": "Cash flow statement",
+   "q": "Machinery (net) is ₹5,00,000 at the start of the year and ₹5,60,000 at the end. Depreciation is ₹60,000 and a machine with a book value of ₹20,000 was sold. How much machinery was bought?",
+   "c": [
+    "₹60,000",
+    "₹1,20,000",
+    "₹80,000",
+    "₹1,40,000"
+   ],
+   "a": [
+    3
+   ],
+   "w": "5,00,000 − 60,000 − 20,000 + purchases = 5,60,000, so purchases = 1,40,000. The ₹60,000 rise in the balance hides the depreciation and the disposal.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0418",
+   "topic": "Financial statement analysis",
+   "q": "Cash ₹40 lakh, receivables ₹80 lakh, inventories ₹120 lakh; current liabilities ₹100 lakh. Taking quick assets as cash plus receivables, the quick ratio is:",
+   "c": [
+    "2.4 : 1",
+    "1.2 : 1",
+    "0.4 : 1",
+    "2.0 : 1"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Quick ratio = (40 + 80) ÷ 100 = 1.2. Including inventory gives the current ratio, 2.4; leaving out the receivables gives 0.4.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0419",
+   "topic": "Financial statement analysis",
+   "q": "Cost of goods sold is ₹730 lakh and average inventory ₹100 lakh. Using 365 days, inventory days are:",
+   "c": [
+    "7.3 days",
+    "73 days",
+    "36.5 days",
+    "50 days"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Inventory turnover = 730 ÷ 100 = 7.3 times; inventory days = 365 ÷ 7.3 = 50. 7.3 is the turnover, not the days.",
+   "lec": 26,
+   "lv": "apply"
   }
  ],
  "briefs": {
@@ -8070,6 +9659,10 @@ HUB.addCourse({
   "lec-23",
   "lec-24",
   "lec-25",
-  "lec-26"
+  "lec-26",
+  "lec-27",
+  "lec-28",
+  "lec-29",
+  "lec-26s"
  ]
 });

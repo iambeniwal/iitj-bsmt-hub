@@ -149,6 +149,8 @@ python3 tools/build-offline.py
 
 Full history in [`CHANGELOG.md`](CHANGELOG.md). Most recent:
 
+- **[2.4.3] — 2026-10-30**: FA practice set solved plus L#27–29; ATB sorting; EBH World Wars and Module 5;
+  five Marketing lectures (229 questions; 2,833 in all).
 - **[2.4.2] — 2026-10-30**: FoC Functions Parts 1–2, on tomorrow's Quiz 2 (37 questions).
 - **[2.4.1] — 2026-10-30**: Quiz 2 facts and syllabi for FoC (corrected to four topics), ATB, FA and History;
   mock papers now follow each quiz's syllabus.

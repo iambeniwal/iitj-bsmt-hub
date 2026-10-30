@@ -153,9 +153,39 @@ HUB.addCourse({
    "live"
   ],
   [
+   26,
+   "Week 9 — Attitude and Humanising a Brand",
+   "Attitude as a function, churn, the two buckets",
+   "rec"
+  ],
+  [
+   27,
+   "Week 9 — The ABC Model of Humanising a Brand",
+   "Attribute–benefit–characteristic chains: CEAT, Asian Paints; say–do gap",
+   "rec"
+  ],
+  [
    28,
    "Week 9 — Live Lecture 9",
    "Cognitive biases: anchoring, bandwagon, scarcity, endowment",
+   "live"
+  ],
+  [
+   29,
+   "Week 10 — Product and Product Levels",
+   "Great products, product vs brand, five product levels",
+   "rec"
+  ],
+  [
+   30,
+   "Week 10 — Product Mix and Portfolio Growth",
+   "Netflix levels, width/depth/length, portfolio growth and pruning",
+   "rec"
+  ],
+  [
+   31,
+   "Week 10 — Live Lecture 10",
+   "Anchoring follow-up; product mix width, depth, length",
    "live"
   ]
  ],
@@ -367,8 +397,8 @@ HUB.addCourse({
   {
    "id": "cb",
    "title": "Consumer behaviour",
-   "tag": "Lectures 18–21, 23–25, 28",
-   "lede": "Why people buy and how they decide: heuristics and nudges, the five decision stages and the messy middle, the need → drive → behaviour framework, the three theories of motivation, perception from meaning to the Gestalt principles, and the cognitive biases that skew judgement.",
+   "tag": "Lectures 18–21, 23–28",
+   "lede": "Why people buy and how they decide: heuristics and nudges, the five decision stages and the messy middle, the need → drive → behaviour framework, the three theories of motivation, perception from meaning to the Gestalt principles, the cognitive biases that skew judgement, attitude, and humanising a brand (the ABC model) to keep customers from churning.",
    "topics": [
     {
      "t": "Why people buy, and the three eras",
@@ -472,8 +502,33 @@ HUB.addCourse({
     },
     {
      "t": "Four biases in buying: anchoring, bandwagon, scarcity, endowment",
-     "src": "L#28",
-     "h": "<p>Each bias below came with a live exercise in the chat. The table is the summary; the notes after it hold what is new.</p><div class=\"scroller\"><table><thead><tr><th>Bias</th><th>What happens in the buyer’s mind</th><th>Session examples</th><th>What the firm gains</th></tr></thead><tbody><tr><td><strong>Anchoring bias</strong></td><td>Attention locks onto one element, or a few, and everything else is shut out; the buyer moves on to the next stage on that basis</td><td>A phone listing (“Renewed”, the price cut, rating, free delivery date); Zoom’s “Save 16%” on annual billing</td><td>Faster decisions; a customer locked in for a year</td></tr><tr><td><strong>Bandwagon effect</strong></td><td>A choice seems more valuable when it matches the trend or pleases the peer group: if others do it, it must be good</td><td>A course platform counting how many people are learning today; the two Goa resorts’ review counts</td><td>Credibility from numbers</td></tr><tr><td><strong>Scarcity effect</strong></td><td>Learning that a product is about to run out raises its value and the willingness to buy now</td><td>“Only 6 rooms left at this price”, “Only 3 rooms left”; H&amp;M’s “few pieces left”</td><td>Speeds up the decision, cuts comparison</td></tr><tr><td><strong>Endowment effect</strong></td><td>We value what we own far more than an identical thing we do not own</td><td>Selling vs buying a used smartphone; Starbucks calling out your name</td><td>Attachment, loyalty</td></tr></tbody></table></div><h4>Anchoring: what grabs you, and what it hides</h4><p>Shown a phone listing, students named different anchors: “Renewed”, storage, rating, the struck-through price, free delivery by a date. Any of them counts. What makes it anchoring is that the one element <strong>grabs attention and excludes the rest</strong>, and it moves you to the next step (finding out more), not necessarily to a purchase.</p><p><strong>Zoom’s plan page:</strong> about 1,300 a month per licence billed monthly against about 1,100 billed annually, flagged “Save 16%”. The saving is small, but the flag anchors the choice. The firm gains far more: a 12-month customer who will take add-ons, absorb price changes and find it hard to switch overnight. You can cancel in theory; in practice few do.</p><div class=\"card\"><strong>Two definitions of anchoring in this course</strong><p><b>L#25 (TAs):</b> the anchoring effect is an initial piece of information, such as the original price beside the offer price, that becomes the reference point for later judgement. This is the standard behavioural-science sense. <b>L#28 (Dr. Kapoor):</b> anchoring bias is attention fixed on one element, or a few, to the exclusion of everything else. The two overlap: a struck-through price is both a reference point and an attention-grabber. In an answer, give the lecture’s wording and add the reference-point idea.</p></div><h4>Bandwagon: theory and practice</h4><p>He re-ran the Goa exercise from Lecture 19 with the numbers on screen: Caravela with 1,157 reviews rated 8.5, Kenilworth next door with 281 reviews rated 8.1, price and location held equal. <strong>In theory</strong>, the bandwagon effect says the crowd’s choice carries more value, so Caravela wins: a happening place, and everyone rates it well. <strong>In practice</strong>, many people pick Kenilworth precisely because fewer people go: a calm breakfast, an empty pool, time with family. He called that <strong>still a bandwagon effect</strong>: the number of people still drives the judgement, only now a smaller number signals <strong>exclusivity</strong>. Anyone who chose on ratings and reviews alone “fell for” the bandwagon.</p><h4>Scarcity: when it works and when it doesn’t</h4><p>His flow: the buyer takes in the information and assesses it (cognition). If it signals <strong>scarcity</strong>, willingness to purchase rises at once. If it signals <strong>abundance</strong>, the buyer compares other elements first (price, promotion, functional utility, reviews) across platforms, online and offline, and may or may not buy. He abbreviated willingness to purchase as WTP; elsewhere WTP usually stands for willingness to <em>pay</em>, the highest price a buyer accepts.</p><ul><li><strong>Fixation matters.</strong> “Only 3 rooms left” at a Goa hotel bites when you have settled on Goa for New Year. If you are still choosing between Goa and Kerala, the message has little force, because you have an alternative.</li><li><strong>The H&amp;M cart, revisited.</strong> Two T-shirts carried the price call-out (an anchor) and two the “few pieces left” tag (scarcity). After four to five hours the tagged pair were gone and the other two now showed only a couple of pieces left: buy before you lose these too. Leave the cart for a day and all four were back in stock. (Lecture 19 put the first sell-out at about half an hour.)</li><li><strong>His caution:</strong> firms use this mostly on <strong>low-involvement</strong> products. Do not try waiting it out on seats, hotel rooms, train or flight tickets: those really do run out.</li></ul><h4>Endowment: the resale exercise</h4><p>Students priced their own phones for sale with a selling tagline, then imagined buying the same phone, with that tagline, from someone else. The seller writes the best adjectives because it is <em>their</em> phone; the buyer sees a second-hand phone and doubts its speed, camera and battery. In class the buying price usually comes in about <strong>50% below</strong> the selling price: offer a phone at 20,000 and buyers say 10,000 to 12,000. Ownership carries emotion, so the owner values it more.</p><p><strong>Starbucks</strong> asks your name and calls it out with your order. Hearing your name among strangers creates a small sense of <strong>ownership</strong>, so the drink and the visit feel worth more. He counted it as one small, unconscious reason for loyalty, alongside taste, ambience and the overall experience; a student added that it makes you feel included.</p><!--viz:pom-scarcity-flow--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: information about a product is assessed. If it signals scarcity, willingness to purchase rises immediately. If it signals abundance, the buyer compares price, promotion, utility and reviews across platforms and perhaps buys. A note says scarcity weakens when alternatives remain.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Scarcity or abundance: two routes to a decision</div><div style=\"display:flex;flex-direction:column;gap:4px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Information</b> about the product <span style=\"color:var(--ink-3)\">→</span> <b>assessment</b> <span style=\"color:var(--ink-2)\">(cognition)</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1.2\">↓</div><div style=\"display:flex;flex-wrap:wrap;gap:6px 10px\"><div style=\"flex:1 1 200px;padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>Signals scarcity</b><br><span style=\"color:var(--ink-2);font-size:13px\">“only 3 rooms left”, “few pieces left”</span><div style=\"margin-top:6px\"><span style=\"color:var(--ink-3)\">→</span> willingness to purchase rises <b>now</b></div></div><div style=\"flex:1 1 200px;padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Signals abundance</b><br><span style=\"color:var(--ink-2);font-size:13px\">plenty in stock, many sellers</span><div style=\"margin-top:6px\"><span style=\"color:var(--ink-3)\">→</span> compare price, promotion, utility, reviews across platforms <span style=\"color:var(--ink-3)\">→</span> perhaps buy</div></div></div><div style=\"padding:7px 11px;border:1px dashed var(--rule-2);border-radius:4px;color:var(--ink-2);font-size:13px\">Scarcity weakens when the buyer still has alternatives (Goa or Kerala?) and is used mostly on low-involvement products.</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Scarcity skips the comparison step; abundance sends the buyer shopping around.</figcaption></figure><!--/viz:pom-scarcity-flow--><!--viz:pom-endowment-gap--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two bars for the same smartphone: as owner the student asks 20,000; as a buyer of the same phone the student offers about 10,000, roughly half.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The same phone, priced by its owner and by a buyer</div><div style=\"display:grid;grid-template-columns:auto 1fr;gap:8px 10px;align-items:center;font-size:14px\"><div><b>As owner</b><br><span style=\"color:var(--ink-2);font-size:13px\">“my phone, best adjectives”</span></div><div><div style=\"width:100%;box-sizing:border-box;padding:5px 8px;font-family:var(--mono);font-size:13px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">asks 20,000</div></div><div><b>As buyer</b><br><span style=\"color:var(--ink-2);font-size:13px\">“second-hand: battery? camera?”</span></div><div><div style=\"width:50%;box-sizing:border-box;padding:5px 8px;font-family:var(--mono);font-size:13px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">offers ~10,000</div></div></div><p style=\"font-size:13.5px;color:var(--ink-2);margin:8px 0 0\">The class exercise usually shows a drop of about 50% between the selling and the buying price.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Owning it is what adds the value: the endowment effect.</figcaption></figure><!--/viz:pom-endowment-gap-->"
+     "src": "L#28 · L#31",
+     "h": "<p>Each bias below came with a live exercise in the chat. The table is the summary; the notes after it hold what is new.</p><div class=\"scroller\"><table><thead><tr><th>Bias</th><th>What happens in the buyer’s mind</th><th>Session examples</th><th>What the firm gains</th></tr></thead><tbody><tr><td><strong>Anchoring bias</strong></td><td>Attention locks onto one element, or a few, and everything else is shut out; the buyer moves on to the next stage on that basis</td><td>A phone listing (“Renewed”, the price cut, rating, free delivery date); Zoom’s “Save 16%” on annual billing</td><td>Faster decisions; a customer locked in for a year</td></tr><tr><td><strong>Bandwagon effect</strong></td><td>A choice seems more valuable when it matches the trend or pleases the peer group: if others do it, it must be good</td><td>A course platform counting how many people are learning today; the two Goa resorts’ review counts</td><td>Credibility from numbers</td></tr><tr><td><strong>Scarcity effect</strong></td><td>Learning that a product is about to run out raises its value and the willingness to buy now</td><td>“Only 6 rooms left at this price”, “Only 3 rooms left”; H&amp;M’s “few pieces left”</td><td>Speeds up the decision, cuts comparison</td></tr><tr><td><strong>Endowment effect</strong></td><td>We value what we own far more than an identical thing we do not own</td><td>Selling vs buying a used smartphone; Starbucks calling out your name</td><td>Attachment, loyalty</td></tr></tbody></table></div><h4>Anchoring: what grabs you, and what it hides</h4><p>Shown a phone listing, students named different anchors: “Renewed”, storage, rating, the struck-through price, free delivery by a date. Any of them counts. What makes it anchoring is that the one element <strong>grabs attention and excludes the rest</strong>, and it moves you to the next step (finding out more), not necessarily to a purchase.</p><p><strong>Zoom’s plan page:</strong> about 1,300 a month per licence billed monthly against about 1,100 billed annually, flagged “Save 16%”. The saving is small, but the flag anchors the choice. The firm gains far more: a 12-month customer who will take add-ons, absorb price changes and find it hard to switch overnight. You can cancel in theory; in practice few do.</p><div class=\"card\"><strong>Two definitions of anchoring in this course</strong><p><b>L#25 (TAs):</b> the anchoring effect is an initial piece of information, such as the original price beside the offer price, that becomes the reference point for later judgement. This is the standard behavioural-science sense. <b>L#28 (Dr. Kapoor):</b> anchoring bias is attention fixed on one element, or a few, to the exclusion of everything else. The two overlap: a struck-through price is both a reference point and an attention-grabber. In an answer, give the lecture’s wording and add the reference-point idea.</p></div><h4>Bandwagon: theory and practice</h4><p>He re-ran the Goa exercise from Lecture 19 with the numbers on screen: Caravela with 1,157 reviews rated 8.5, Kenilworth next door with 281 reviews rated 8.1, price and location held equal. <strong>In theory</strong>, the bandwagon effect says the crowd’s choice carries more value, so Caravela wins: a happening place, and everyone rates it well. <strong>In practice</strong>, many people pick Kenilworth precisely because fewer people go: a calm breakfast, an empty pool, time with family. He called that <strong>still a bandwagon effect</strong>: the number of people still drives the judgement, only now a smaller number signals <strong>exclusivity</strong>. Anyone who chose on ratings and reviews alone “fell for” the bandwagon.</p><h4>Scarcity: when it works and when it doesn’t</h4><p>His flow: the buyer takes in the information and assesses it (cognition). If it signals <strong>scarcity</strong>, willingness to purchase rises at once. If it signals <strong>abundance</strong>, the buyer compares other elements first (price, promotion, functional utility, reviews) across platforms, online and offline, and may or may not buy. He abbreviated willingness to purchase as WTP; elsewhere WTP usually stands for willingness to <em>pay</em>, the highest price a buyer accepts.</p><ul><li><strong>Fixation matters.</strong> “Only 3 rooms left” at a Goa hotel bites when you have settled on Goa for New Year. If you are still choosing between Goa and Kerala, the message has little force, because you have an alternative.</li><li><strong>The H&amp;M cart, revisited.</strong> Two T-shirts carried the price call-out (an anchor) and two the “few pieces left” tag (scarcity). After four to five hours the tagged pair were gone and the other two now showed only a couple of pieces left: buy before you lose these too. Leave the cart for a day and all four were back in stock. (Lecture 19 put the first sell-out at about half an hour.)</li><li><strong>His caution:</strong> firms use this mostly on <strong>low-involvement</strong> products. Do not try waiting it out on seats, hotel rooms, train or flight tickets: those really do run out.</li></ul><h4>Endowment: the resale exercise</h4><p>Students priced their own phones for sale with a selling tagline, then imagined buying the same phone, with that tagline, from someone else. The seller writes the best adjectives because it is <em>their</em> phone; the buyer sees a second-hand phone and doubts its speed, camera and battery. In class the buying price usually comes in about <strong>50% below</strong> the selling price: offer a phone at 20,000 and buyers say 10,000 to 12,000. Ownership carries emotion, so the owner values it more.</p><p><strong>Starbucks</strong> asks your name and calls it out with your order. Hearing your name among strangers creates a small sense of <strong>ownership</strong>, so the drink and the visit feel worth more. He counted it as one small, unconscious reason for loyalty, alongside taste, ambience and the overall experience; a student added that it makes you feel included.</p><!--viz:pom-scarcity-flow--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: information about a product is assessed. If it signals scarcity, willingness to purchase rises immediately. If it signals abundance, the buyer compares price, promotion, utility and reviews across platforms and perhaps buys. A note says scarcity weakens when alternatives remain.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Scarcity or abundance: two routes to a decision</div><div style=\"display:flex;flex-direction:column;gap:4px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Information</b> about the product <span style=\"color:var(--ink-3)\">→</span> <b>assessment</b> <span style=\"color:var(--ink-2)\">(cognition)</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1.2\">↓</div><div style=\"display:flex;flex-wrap:wrap;gap:6px 10px\"><div style=\"flex:1 1 200px;padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>Signals scarcity</b><br><span style=\"color:var(--ink-2);font-size:13px\">“only 3 rooms left”, “few pieces left”</span><div style=\"margin-top:6px\"><span style=\"color:var(--ink-3)\">→</span> willingness to purchase rises <b>now</b></div></div><div style=\"flex:1 1 200px;padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Signals abundance</b><br><span style=\"color:var(--ink-2);font-size:13px\">plenty in stock, many sellers</span><div style=\"margin-top:6px\"><span style=\"color:var(--ink-3)\">→</span> compare price, promotion, utility, reviews across platforms <span style=\"color:var(--ink-3)\">→</span> perhaps buy</div></div></div><div style=\"padding:7px 11px;border:1px dashed var(--rule-2);border-radius:4px;color:var(--ink-2);font-size:13px\">Scarcity weakens when the buyer still has alternatives (Goa or Kerala?) and is used mostly on low-involvement products.</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Scarcity skips the comparison step; abundance sends the buyer shopping around.</figcaption></figure><!--/viz:pom-scarcity-flow--><!--viz:pom-endowment-gap--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two bars for the same smartphone: as owner the student asks 20,000; as a buyer of the same phone the student offers about 10,000, roughly half.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The same phone, priced by its owner and by a buyer</div><div style=\"display:grid;grid-template-columns:auto 1fr;gap:8px 10px;align-items:center;font-size:14px\"><div><b>As owner</b><br><span style=\"color:var(--ink-2);font-size:13px\">“my phone, best adjectives”</span></div><div><div style=\"width:100%;box-sizing:border-box;padding:5px 8px;font-family:var(--mono);font-size:13px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">asks 20,000</div></div><div><b>As buyer</b><br><span style=\"color:var(--ink-2);font-size:13px\">“second-hand: battery? camera?”</span></div><div><div style=\"width:50%;box-sizing:border-box;padding:5px 8px;font-family:var(--mono);font-size:13px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">offers ~10,000</div></div></div><p style=\"font-size:13.5px;color:var(--ink-2);margin:8px 0 0\">The class exercise usually shows a drop of about 50% between the selling and the buying price.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Owning it is what adds the value: the endowment effect.</figcaption></figure><!--/viz:pom-endowment-gap--><h4>Follow-up (L#31): why is a discount an anchoring bias?</h4><p>A student asked, through the Masai doubt-clearing team, why anchoring counts as a bias when telling buyers about a discount is just common sense. His answer: a product’s manufacturing cost, selling price and “original” price are different numbers, and marketers set a higher reference price so you feel you are paying less than the product is worth. Something “worth ₹5,000” for ₹500 feels like a better buy than something “worth ₹1,000” for ₹500, because the starting number is higher.</p><ul><li>A <b>genuine</b> discount, which is hard for a buyer to verify, is just a discount, not an anchoring bias.</li><li>Most discounts still work as anchoring biases, because buyers have come to expect them and firms play on that expectation.</li></ul><p>Whether this misleads consumers he called debatable, and left it there.</p>"
+    },
+    {
+     "t": "Attitude: the link between perception and decision",
+     "src": "L#26",
+     "h": "<div class=\"def\">An <b>attitude</b> is a favourable or unfavourable response towards something: a product, a brand, an idea. Dr. Kapoor placed it at the juncture between motivation and the decision. Motivation drives you towards a decision, perception shapes how you read the options, and an attitude forms in between.</div><p><strong>A two-way link.</strong> Perception can lead to an attitude, and an attitude can in turn colour perception. An attitude may come from past experience of the object or, when there is none, from a fresh look at it. He did not go into the many factors that form attitudes; what matters here is the function below.</p><h4>The decision function</h4><div class=\"def\"><b>Attitude = f(object, attributes of the object)</b>. Whether a buyer’s view is favourable or unfavourable depends not only on the product (the object) but on its attributes as the buyer perceives them.</div><p><strong>The study-desk exercise.</strong> Busy with BSMT classes and perhaps a parallel degree, you want a dedicated study desk. He showed two, with price and brand held constant as <b>control variables</b>. Students who chose the all-white desk cited a neater, sharper, sturdier-looking design, décor that matches the room, and a hole for managing wires. Those who chose the other cited the contrast of brown legs on a white frame, a leaner look, and a back support that adds utility. Then he put prices on them, ₹20,000 and ₹14,000: most people moved to the cheaper desk, and some stayed with the dearer one. Design, looks, utility, dimensions, price and brand are all <b>attributes</b> of one object, the desk, and the attitude is a function of all of them.</p><div class=\"card\"><strong>Why attributes are the marketer’s lever</strong><p>Attributes are largely driven by the buyer’s perception. The object itself can be perception-driven too, but a firm has far more room to experiment with attributes than with the object alone.</p></div><h4>Case: Borges olive leaf infusion</h4><p>Many metro professionals moved from regular tea and coffee to green tea, seen as healthier: high in antioxidants, good for vitamin C, helpful for blood pressure. When Borges entered with its stress-relief olive leaf infusion, its competition was every green-tea brand, so it set each claim against green tea as the baseline:</p><div class=\"scroller\"><table><thead><tr><th>Attribute claimed</th><th>Against green tea</th></tr></thead><tbody><tr><td>Antioxidants</td><td><strong>2×</strong></td></tr><tr><td>Vitamin C</td><td><strong>4×</strong></td></tr><tr><td>Oleuropein</td><td>Rich in it; he said this compound helps regulate and lower blood pressure</td></tr><tr><td>Caffeine</td><td>Zero</td></tr><tr><td>Added flavours</td><td>Zero</td></tr></tbody></table></div><p>Whatever the buyer’s baseline, Borges sits above it. The product is augmented so it looks superior on exactly the attributes buyers already valued in green tea: the <strong>power of attributes</strong>.</p><div class=\"card\"><strong>Recap of Lecture 24, with one addition</strong><p>He opened by recapping perceptual product categories (the toothpastes, the Horlicks variants). New this time: he described Horlicks Diabetes Plus as the only Horlicks variant launched for men, and left “was that a good move?” for a live session.</p></div><!--viz:pom-attitude-decision-function--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow from motivation to perception of the object and its attributes, a two-way arrow between perception and attitude (favourable or unfavourable), then the decision. Below: attitude equals a function of the object and its attributes, with the study desk as the example.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Where attitude sits in the decision</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Motivation</b><br><span style=\"color:var(--ink-2);font-size:13px\">the drive to act</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Perception</b><br><span style=\"color:var(--ink-2);font-size:13px\">of the object and its attributes</span></div><span style=\"color:var(--ink-3)\">⇄</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Attitude</b><br><span style=\"color:var(--ink-2);font-size:13px\">favourable or unfavourable</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Decision</b></div></div><p style=\"font-size:13.5px;color:var(--ink-2);margin:10px 0 0\"><b style=\"font-family:var(--mono);color:var(--ink)\">Attitude = f(object, attributes)</b> · the desk, plus its design, utility, dimensions, price and brand</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The arrow between perception and attitude runs both ways, and attitude depends on the attributes, not the object alone.</figcaption></figure><!--/viz:pom-attitude-decision-function-->"
+    },
+    {
+     "t": "Customer churn: the biggest challenge",
+     "src": "L#26",
+     "h": "<div class=\"def\"><b>Customer churn</b> is customers moving away from your organisation to a competitor, often one offering the same product at a lower price or a better product, after you have spent effort, time, money and resources to win them. Dr. Kapoor called it the biggest challenge organisations face, today and throughout history.</div><p>He set it as a class activity: in under a minute, with no Google and no ChatGPT, list ten challenges organisations have faced for centuries. His answer was churn.</p><ul><li><strong>Customer acquisition cost (CAC):</strong> what it costs to acquire a customer. It is very high today because the market is overcrowded with brands, products, campaigns, ads and notifications all fighting for attention.</li><li><strong>Retention is far cheaper:</strong> retaining a customer costs roughly <b>one-seventh to one-tenth</b> of acquiring one. The ballpark he always takes is <b>one-tenth</b>.</li><li><strong>His example:</strong> the programme’s ed-tech partner (Masai) puts a lot of effort into bringing a student on board. If the student then moves to another institute before joining, that effort is lost.</li></ul><p>So the question becomes how to make customers stay. His answer, which closes the consumer behaviour module, is to <strong>humanise the brand</strong>.</p><div class=\"card\"><strong>Two lectures, two figures</strong><p>Lecture 9 put the cost of acquiring a new customer at about <b>5×</b> the cost of retaining one ($100 against roughly $20). Lecture 26 puts retention at <b>one-seventh to one-tenth</b> of acquisition, so acquisition costs 7–10× as much. The direction is the same; quote the figure of the lecture a question names.</p></div><div class=\"def\"><b>From the lecture (L#26):</b> he introduced churn and humanising a brand as “perhaps the most interesting and the most important” part of the consumer behaviour module.</div><!--viz:pom-acquire-vs-retain--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Bar chart for an illustrative acquisition cost of 1,000 rupees: retaining a customer costs 200 rupees on Lecture 9's five-times figure, about 143 rupees at one-seventh and 100 rupees at one-tenth, Lecture 26's range.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">What keeping a customer costs</div><div style=\"font-size:14px\"><p style=\"margin:0 0 10px;color:var(--ink-2);font-size:13px\">Illustration: if acquiring one customer costs ₹1,000</p><div style=\"margin-bottom:10px\"><div style=\"display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap\"><b>Acquire a new customer</b><span style=\"font-family:var(--mono);color:var(--ink-2)\">₹1,000</span></div><div style=\"height:14px;border-radius:3px;border:1px solid var(--clay);background:var(--clay-soft);width:100%\"></div></div><div style=\"margin-bottom:10px\"><div style=\"display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap\"><span>Retain one · L#9’s 5× figure</span><span style=\"font-family:var(--mono);color:var(--ink-2)\">₹200</span></div><div style=\"height:14px;border-radius:3px;border:1px solid var(--rule-2);background:var(--surface-2);width:20%\"></div></div><div style=\"margin-bottom:10px\"><div style=\"display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap\"><span>Retain one · L#26, one-seventh</span><span style=\"font-family:var(--mono);color:var(--ink-2)\">≈ ₹143</span></div><div style=\"height:14px;border-radius:3px;border:1px solid var(--blue);background:var(--blue-soft);width:14.3%\"></div></div><div><div style=\"display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap\"><b>Retain one · L#26, one-tenth (his ballpark)</b><span style=\"font-family:var(--mono);color:var(--ink-2)\">₹100</span></div><div style=\"height:14px;border-radius:3px;border:1px solid var(--blue);background:var(--blue);width:10%\"></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Every lecture figure says the same thing: losing a customer you already won is the expensive mistake.</figcaption></figure><!--/viz:pom-acquire-vs-retain-->"
+    },
+    {
+     "t": "Humanising a brand: the utilitarian and love buckets",
+     "src": "L#26",
+     "h": "<div class=\"def\"><b>Humanising a brand</b> means relating a product’s attributes to human traits or characteristics, so buyers see more than an object. It moves the brand from the <b>utilitarian (transactional) bucket</b> into the <b>love (relational) bucket</b>.</div><h4>Epicurus and the thirty shops</h4><p>Epicurus, a Greek scholar of around 340–270 BC who studied happiness, was approached by artisans from a barter market. Take, as Dr. Kapoor did, a hypothetical thirty stalls selling much the same handicrafts at much the same price; buyers kept going to one of them and leaving happy. Epicurus told the others that they treated their goods as mere objects and every sale as a transaction (“you like this, give me that in return”). The popular seller added a human touch, along the lines of “this will look good on you; take it home, enjoy the compliments, and settle with me later”. He focused on relations, not transactions.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Utilitarian bucket</th><th>Love bucket</th></tr></thead><tbody><tr><td><strong>Basis</strong></td><td>Exchange: you give me something, I give you something in return</td><td>Affection, with no expectation of return</td></tr><tr><td><strong>Which relationships</strong></td><td>Almost all, said Epicurus: spouses, siblings (the Rakhi exchange, on the lighter side), friends, boss and subordinate, buyer and seller</td><td>Only one: parents and their children</td></tr><tr><td><strong>A brand here is seen as</strong></td><td>An object with a utility (performance, value for money), so it is replaceable</td><td>Something with human meaning, so it is preferred and kept</td></tr></tbody></table></div><p>Why parents? At every stage (school, graduation, a job, marriage, a family of your own) they hope for a better life for you without expecting anything back. Even the good marks they push for are for your benefit, not theirs. The idea echoes Lecture 6’s line between a transaction and a relationship.</p><h4>Why tyre ads show a father and his daughter</h4><p>By his count, 7–8 out of 10 tyre ads (CEAT, Bridgestone, MRF and others) have at some point shown a father and a daughter. The device is now so common that it has become a <b>point of parity</b>, and ads add other elements too. The logic: daughters feel protected and safe when their fathers are around, so the ad borrows that feeling of <b>safety</b>. The marketer’s task is to link the tyre to safety <em>in steps</em> rather than in one leap; that chain is the ABC model of Lecture 27.</p><p>If a buyer files CEAT in the love bucket and another tyre brand in the utilitarian one (“great performance, value for money”), he said, the chance of buying CEAT is much higher.</p><div class=\"card\"><strong>The reading linked to this lecture</strong><p>The LMS notes link a Campaign India article about an Apollo Tyres ad. The page is no longer online, and the lecture does not describe that ad, so rely on his general account of father–daughter tyre ads.</p></div>"
+    },
+    {
+     "t": "The ABC model: attribute, benefit, human characteristic",
+     "src": "L#27",
+     "h": "<div class=\"def\"><b>The ABC model of humanising a brand:</b> a product’s <b>A</b>ttribute offers a <b>B</b>enefit, and the benefit is matched with a human-like <b>C</b>haracteristic such as safety or belongingness. Married together, the three let a brand sell a feeling rather than an object, and place it in the love bucket of Lecture 26.</div><h4>Case: CEAT tyres, step by step</h4><p>Every tyre’s unique value proposition lies in its <b>grooves</b>, the tread structure, which brands advertise as “groove technology”. Most buyers have no idea what a particular groove technology means for them, so the chain has to be walked one step at a time:</p><p><strong>grooves</strong> (attribute) → <strong>anti-skid → better traction → more control → stability</strong> (benefits) → <strong>safety</strong> (human characteristic), the same feeling of being protected that a daughter has with her father.</p><p><strong>The classic ad he described:</strong> it is pouring, so a father goes to pick his daughter up from school or college. As she tells him about her day, an animal darts across the road; he brakes, and the car holds its line without losing control. There is a sigh of relief and a look between them: we are safe. CEAT is not selling tyres or groove technology. It is selling the <b>promise of safety and protection</b>, reinforcing that a father will do anything to keep his daughter safe.</p><h4>CEAT or Bridgestone?</h4><p>Picture a father changing the tyres on the family car, with prices at the same level (not a Yokohama, which costs far more than an Apollo, CEAT or Bridgestone). One ad plays on protecting the family through better control of the car; the other on performance and mileage. Performance is <b>utilitarian</b>: every brand is expected to offer it, so it is transactional. The family ad places the brand in the <b>love bucket</b>, and that, he argued, is the one many fathers would pick. If you would pick performance, that is fine: “your fathers are there to take care of you and the family”.</p><p>Not every ad can use parents, so brands now use siblings, spouses, in-laws and old school friends, keeping the human touch. It is also why products use celebrities rather than AI avatars. A product seen only as an object is <b>replaceable</b>; one that carries meaning (he called it <b>meaning transference</b>) is not.</p><h4>Exercise: Asian Paints, “Har Ghar Kuch Kehta Hai”</h4><p>Almost every Asian Paints ad tells a short story of a couple or a family and their home. On one side is a tin of paint, colours and finishes; on the other, people and a home. His chain:</p><p><strong>colours and finishes</strong> (attribute) → <strong>a personalised space → self-expression → memories and attachment</strong> (benefits) → <strong>belongingness</strong>, a home that reflects who you are and the bond with your family (human characteristic).</p><p>His own example: he loves golden yellow, the colour of the bar on his slides and of every curtain in his room. He first admired it in the slide palettes when he worked on Nokia’s marketing design team; a memory and an attachment became self-expression.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Asian Paints</th><th>Berger</th></tr></thead><tbody><tr><td><strong>Who is in the ad</strong></td><td>Ordinary, relatable couples and families</td><td>Celebrities, such as Ranveer Singh and Deepika Padukone in a recent ad</td></tr><tr><td><strong>What it builds</strong></td><td>A sense of <b>commonality</b>: viewers see themselves in the story</td><td>Star appeal</td></tr></tbody></table></div><p>Which campaign style works better is debatable. His point was that Asian Paints has humanised its product remarkably well, so it stays top of mind whatever the colour or finish.</p><h4>Anthropomorphism</h4><div class=\"def\"><b>Anthropomorphism</b> is the consumer-behaviour name for humanising a brand: relating human-like traits to a brand, using anything living, animals included. Hutch’s pug did a better job than many celebrity campaigns of its time.</div><p>He touched on the term only briefly. More examples: Dettol does not sell an antiseptic property; it sells being safe, physically and mentally, from illness. Horlicks, and almost any ad with two people in it, plays on the same ABC idea. When you next see an ad with a couple or a family, ask whether it sells the product or something more: happiness, belongingness.</p><div class=\"card\"><strong>The module in one line</strong><p>Motivation gives the drive to decide; perception of the object and its attributes shapes the decision; attitude, favourable or unfavourable, is a function of the object and its attributes; churn is the biggest threat; and a brand placed in the love bucket through the ABC chain has a better chance of being picked, of positive word of mouth and of a favourable attitude.</p></div><!--viz:pom-abc-humanising-chains--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two flows. CEAT: attribute grooves, benefits anti-skid, traction, control and stability, human characteristic safety and feeling protected. Asian Paints: attribute colours and finishes, benefits personalised space, self-expression, memories and attachment, human characteristic belongingness.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Two ABC chains from Lecture 27</div><div style=\"font-size:14px\"><div style=\"margin-bottom:12px\"><div style=\"font-weight:700;margin-bottom:6px\">CEAT tyres</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-3);font-size:12.5px\">A · attribute</span><br>grooves</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-3);font-size:12.5px\">B · benefits</span><br>anti-skid → traction → control → stability</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><span style=\"color:var(--ink-3);font-size:12.5px\">C · human characteristic</span><br><b>safety</b>, feeling protected</div></div></div><div style=\"margin-bottom:12px\"><div style=\"font-weight:700;margin-bottom:6px\">Asian Paints</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-3);font-size:12.5px\">A · attribute</span><br>colours and finishes</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-3);font-size:12.5px\">B · benefits</span><br>personalised space → self-expression → memories, attachment</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><span style=\"color:var(--ink-3);font-size:12.5px\">C · human characteristic</span><br><b>belongingness</b>, a home that is you</div></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The ad sells the last box; the attribute and benefits are only the route to it.</figcaption></figure><!--/viz:pom-abc-humanising-chains-->"
+    },
+    {
+     "t": "Reading: the sustainability say–do gap (Deloitte and Ad Council)",
+     "src": "L#27",
+     "h": "<div class=\"def\"><b>Source:</b> Deloitte and the Ad Council, <em>Unpacking the Sustainability Dilemma: How Consumer Values Become Choices</em>, on deloitte.com (retail perspectives). Summary in our own words.</div><p><strong>Where it comes from:</strong> linked in the LMS notes for Lecture 27. Dr. Kapoor recommended it for the idea of the <b>say–do gap</b>, a 15–20 minute read.</p><h4>The argument</h4><ul><li><strong>Sustainability is not the first filter.</strong> Shoppers rank taste, value and quality above it. It counts most when it is tied to something personal: their family’s health.</li><li><strong>The barriers:</strong> price comes first, then trust. Very steep discounts on sustainable products can make shoppers suspicious rather than keen.</li><li><strong>Be specific:</strong> shoppers want concrete claims about how a product reduces harm, not vague green language.</li><li><strong>The say–do gap persists:</strong> people say they value sustainability, yet often don’t buy that way.</li><li><strong>Trust is built over time:</strong> long-term commitments earn more trust than one-off donations or influencer posts, and smaller niche brands are trusted more than big ones.</li></ul><h4>Its advice to marketers</h4><ul><li>Lead with personal benefits: health and savings.</li><li>Don’t scold or guilt-trip shoppers.</li><li>Promote behaviours that are already common, not niche ones.</li><li>Build trust through sustained commitments rather than one-off gestures.</li></ul><h4>What it adds to Lectures 26–27</h4><p>The say–do gap is an attitude that does not turn into a decision. In the decision function, sustainability is just one attribute, and for most shoppers it weighs less than taste, value or quality. The reading’s strongest lever, tying sustainability to family health, is the ABC model at work: an attribute (less harm) → a benefit (a healthier product) → a human characteristic (protecting the family), the move CEAT makes with safety. Its warning about steep discounts echoes price as a cue to quality (Lecture 24) and the pizza that arrives too fast to be believed (Lecture 9).</p><div class=\"card\"><strong>Weigh the evidence</strong><p>This is a report from a consulting firm and a non-profit. We summarise its conclusions only, not its data, so cite it as Deloitte and the Ad Council when you use it.</p></div><div class=\"def\"><b>From the lecture (L#27):</b> he flagged this article as “one important read” for the say–do gap, and said future readings would be ones students can open.</div><!--viz:pom-say-do-gap--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow from what shoppers say (sustainability matters to me) through the gap (price first, then trust; taste, value and quality rank higher) to what they do (buy on taste, value and price). Below, ways to narrow it: tie it to family health and savings, make specific harm-reduction claims, keep long-term commitments, don't scold.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The say–do gap</div><div style=\"font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Say</b><br><span style=\"color:var(--ink-2);font-size:13px\">“sustainability matters to me”</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>The gap</b><br><span style=\"color:var(--ink-2);font-size:13px\">price first, then trust; taste, value and quality rank higher</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Do</b><br><span style=\"color:var(--ink-2);font-size:13px\">buy on taste, value and price</span></div></div><div style=\"margin-top:10px;padding:8px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Narrowing it</b> · tie it to family health and savings · make specific harm-reduction claims · keep commitments over years · don’t scold</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">A favourable attitude is not a purchase: the reading’s fixes all make sustainability personal and credible.</figcaption></figure><!--/viz:pom-say-do-gap-->"
     },
     {
      "t": "Textbook: Consumer Markets and Buyer Behavior",
@@ -505,6 +560,39 @@ HUB.addCourse({
      "t": "Textbook: Company and Marketing Strategy: Partnering to Build Customer Engagement, Value, and Relationships",
      "src": "Kotler & Armstrong 17e ch2",
      "h": "<!--viz:pom-k-strategic-planning--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow of four steps: define a market-oriented mission, set objectives and goals, design the business portfolio (all corporate level), then plan marketing and other functional strategies at business and product level.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Strategic planning in four steps</div><div style=\"font-size:12.5px;color:var(--ink-3);margin-bottom:4px\">Corporate level → then business and product level</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Define the mission<br><span style=\"color:var(--ink-2);font-size:13px\">framed around the customer need, not the product</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Set objectives and goals</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Design the business portfolio<br><span style=\"color:var(--ink-2);font-size:13px\">which businesses to build, hold, harvest, divest</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">Plan marketing and other functional strategies<br><span style=\"color:var(--ink-2);font-size:13px\">each unit supports the company plan</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Marketing plans come last because they serve the company plan above them.</figcaption></figure><!--/viz:pom-k-strategic-planning--><!--viz:pom-k-bcg-matrix--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two-by-two grid of market growth rate against relative market share: stars, question marks, cash cows and dogs, with the usual movement from question mark to star to cash cow to dog.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">BCG growth-share matrix</div><div style=\"display:grid;grid-template-columns:auto 1fr 1fr;gap:4px;font-size:14px\"><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center\"></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center\">High relative share</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center\">Low relative share</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center;writing-mode:vertical-rl;transform:rotate(180deg)\">High market growth</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--blue-soft)\"><b>Stars</b><br><span style=\"color:var(--ink-2);font-size:13px\">high growth, high share · need heavy investment</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Question marks</b><br><span style=\"color:var(--ink-2);font-size:13px\">high growth, low share · need cash and a decision</span></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center;writing-mode:vertical-rl;transform:rotate(180deg)\">Low market growth</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--good-soft)\"><b>Cash cows</b><br><span style=\"color:var(--ink-2);font-size:13px\">low growth, high share · throw off surplus cash</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--clay-soft)\"><b>Dogs</b><br><span style=\"color:var(--ink-2);font-size:13px\">low growth, low share · little future cash</span></div></div><p style=\"font-size:13.5px;color:var(--ink-2);margin:8px 0 0\">Typical life cycle: question mark → star → cash cow → dog. Cash cows fund the stars and question marks.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Growth measures how attractive the market is; share measures how strong you are in it.</figcaption></figure><!--/viz:pom-k-bcg-matrix--><!--viz:pom-k-ansoff--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two-by-two grid of products (existing, new) against markets (existing, new): market penetration, product development, market development, diversification.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Product/market expansion grid</div><div style=\"display:grid;grid-template-columns:auto 1fr 1fr;gap:4px;font-size:14px\"><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center\"></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center\">Existing products</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center\">New products</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center;writing-mode:vertical-rl;transform:rotate(180deg)\">Existing markets</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--blue-soft)\"><b>Market penetration</b><br><span style=\"color:var(--ink-2);font-size:13px\">more sales of current products to current segments · lowest risk</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Product development</b><br><span style=\"color:var(--ink-2);font-size:13px\">new or modified products for current segments</span></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center;writing-mode:vertical-rl;transform:rotate(180deg)\">New markets</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Market development</b><br><span style=\"color:var(--ink-2);font-size:13px\">current products into new segments or regions</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--clay-soft)\"><b>Diversification</b><br><span style=\"color:var(--ink-2);font-size:13px\">new businesses outside current products and markets · riskiest</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Risk rises the further you move from what you already sell to whom you already serve.</figcaption></figure><!--/viz:pom-k-ansoff--><!--viz:pom-k-4ps-4as--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table pairing each P with its A: product with acceptability, price with affordability, place with accessibility, promotion with awareness, plus the question each A asks.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The 4Ps seen from the buyer's side</div><div class=\"scroller\"><table><thead><tr><th>Seller's view (4Ps)</th><th>Buyer's view (4As)</th><th>The buyer's question</th></tr></thead><tbody><tr><td><strong>Product</strong></td><td><strong>Acceptability</strong></td><td>Does it exceed what I expected?</td></tr><tr><td><strong>Price</strong></td><td><strong>Affordability</strong></td><td>Am I willing and able to pay?</td></tr><tr><td><strong>Place</strong></td><td><strong>Accessibility</strong></td><td>Can I get it easily?</td></tr><tr><td><strong>Promotion</strong></td><td><strong>Awareness</strong></td><td>Do I know it, want to try it, remember to rebuy?</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The book's advice: think through the 4As first, then build the 4Ps on them.</figcaption></figure><!--/viz:pom-k-4ps-4as--><p><strong>Strategic planning and its four steps</strong> — Strategic planning keeps a strategic fit between the organisation's goals and capabilities and its changing market opportunities. At corporate level the firm defines its mission, sets objectives and goals, and designs the business portfolio; then each business and product writes marketing and other functional plans that support the company plan.<br><em>e.g.</em> Mission → objectives → portfolio → functional plans.</p><p><strong>Market-oriented mission statement</strong> — A mission statement says what the organisation wants to accomplish in the wider environment. It should be framed around the customer need served rather than the product or technology, because products date while needs last. It should be specific and motivating, and it should not be 'make more profit' — profit is the reward for creating value.<br><em>e.g.</em> Product-oriented: 'We run taxis.' Market-oriented: 'We get people where they need to go, safely and on time.'</p><p><strong>Hierarchy of objectives</strong> — The broad mission is turned into business objectives, which are turned into marketing objectives, which are supported by marketing strategies and detailed programmes. Each manager should own specific objectives.<br><em>e.g.</em> Mission 'better health' → business objective 'improve access to care' → marketing objective 'raise share of the health-care market' → strategy 'add walk-in clinics'.</p><p><strong>Business portfolio and SBUs</strong> — The business portfolio is the collection of businesses and products the company is made of; the best portfolio fits the firm's strengths and weaknesses to the opportunities around it. Portfolio analysis first identifies strategic business units (a division, a product line or even a single brand) and then judges how much support each deserves.<br><em>e.g.</em> A conglomerate might treat each of its detergent, biscuit and hotel businesses as a separate SBU.</p><p><strong>BCG growth-share matrix</strong> — SBUs are plotted on market growth rate (vertical axis, a measure of market attractiveness) against relative market share (horizontal axis, a measure of the firm's strength). Stars: high growth, high share, need heavy investment. Cash cows: low growth, high share, generate surplus cash. Question marks: high growth, low share, need cash and a decision. Dogs: low growth, low share, little future cash.<br><em>e.g.</em> Cash from cash cows funds promising question marks and stars.</p><p><strong>Build, hold, harvest, divest — and the matrix's limits</strong> — Each SBU can be built (invest to raise share), held (invest just enough to keep share), harvested (milk short-run cash regardless of the long-term effect) or divested (sell or phase out). SBUs typically move question mark → star → cash cow → dog over the life cycle. The matrix is hard to apply (defining SBUs, measuring share and growth) and describes current businesses more than it guides the future, so many firms now use customised, decentralised planning.<br><em>e.g.</em> A shrinking feature-phone line might be harvested before being divested.</p><p><strong>Product/market expansion grid (Ansoff)</strong> — Growth options are classified by product (existing or new) and market (existing or new). Market penetration: more sales of current products to current segments. Market development: current products into new segments or geographies. Product development: new or modified products for current segments. Diversification: new businesses outside current products and markets — the riskiest, and it can overstretch the brand.<br><em>e.g.</em> A sportswear brand targeting women for the first time with its existing range is pursuing market development.</p><p><strong>Downsizing</strong> — Firms must also prune, harvest or divest brands or businesses that are unprofitable or no longer fit the strategy — because they grew too fast, entered unfamiliar areas, the environment changed, or the product simply aged. Weak businesses absorb disproportionate management attention.<br><em>e.g.</em> A consumer-goods giant selling off dozens of brands to focus on its core categories.</p><p><strong>Value chain and value delivery network</strong> — The value chain (in this book) is the series of internal departments — marketing, purchasing, operations, IT, finance and so on — that each add value to the product; it is only as strong as its weakest link. The value delivery network extends this to suppliers, distributors and customers, so competition increasingly happens between whole networks rather than individual firms.<br><em>e.g.</em> A carmaker with the better car can still lose if a rival's dealer network gives a better sales-and-service experience.</p><p><strong>Customer value-driven marketing strategy (STP + differentiation)</strong> — Marketing strategy is the logic by which a firm hopes to create customer value and profitable relationships. Segmentation divides the market into groups with different needs or behaviour; targeting evaluates segments and selects which to serve; differentiation actually makes the offer superior; positioning places it clearly, distinctively and desirably against competitors in target customers' minds.<br><em>e.g.</em> A small search engine that targets privacy-minded users and differentiates on 'no tracking' is a nicher.</p><p><strong>The marketing mix (4Ps) and the 4As</strong> — The marketing mix is the set of tactical tools blended to get the desired response: Product (variety, quality, design, features, brand, packaging, services), Price (list price, discounts, allowances, credit terms), Place (channels, coverage, locations, inventory, logistics) and Promotion (advertising, personal selling, sales promotion, PR, direct and digital). Because the 4Ps take the seller's view, the book offers the buyer's view as the 4As: acceptability, affordability, accessibility and awareness.<br><em>e.g.</em> Product ↔ acceptability, price ↔ affordability, place ↔ accessibility, promotion ↔ awareness.</p><p><strong>SWOT analysis</strong> — Strengths and weaknesses are internal capabilities or limitations; opportunities and threats are favourable or unfavourable external factors and trends. The aim is to match strengths to attractive opportunities while fixing weaknesses and minimising threats.<br><em>e.g.</em> A rival's price war is a threat (external); your own ageing delivery fleet is a weakness (internal).</p><p><strong>Marketing plan, implementation and organisation</strong> — A brand marketing plan has eight sections: executive summary, the current marketing situation, analysis of threats and opportunities, objectives and issues, the marketing strategy, action programmes, budgets and controls. Planning settles what and why; implementation settles who, where, when and how, and good execution can beat an identical strategy. Marketing departments can be organised by function, geography, product or market/customer, or a mix.<br><em>e.g.</em> A firm selling one product line to hospitals, schools and households may use a market (customer) management organisation.</p><p><strong>Marketing control and marketing ROI</strong> — Control means setting goals, measuring performance, evaluating gaps and taking corrective action. Operating control checks performance against the annual plan; strategic control asks whether the basic strategy still fits the opportunities. Marketing ROI is the net return from a marketing investment divided by its cost; because returns like engagement are hard to value, firms use dashboards and customer-centred measures such as retention and customer equity.<br><span style=\"font-family:var(--mono)\">Marketing ROI = (return from marketing investment − cost of the investment) ÷ cost of the investment</span><br><em>e.g.</em> ₹60 lakh incremental margin from a ₹25 lakh campaign gives an ROI of (60 − 25) ÷ 25 = 1.4, i.e. 140%.</p>"
+    }
+   ]
+  },
+  {
+   "id": "product",
+   "title": "Product &amp; product strategy",
+   "tag": "Lectures 29–31",
+   "lede": "The first of the four Ps: what a product is and what makes one great, product versus brand, the five product levels, and the product mix (width, depth, length) with the case for pruning.",
+   "topics": [
+    {
+     "t": "What a product is, and what makes one great",
+     "src": "L#29",
+     "h": "<div class=\"def\">A <b>product</b> is an offering or attribute that enables a consumer to move from an <b>existing state</b> to a <b>desired state</b>. It solves a problem and relieves stress: Itch Guard moves you from itchiness to relief.</div><p>Module 6 opens the four pillars of marketing (product, price, place and promotion) with product and product strategy. He tied the definition back to existing and desired states (Lecture 8) and to customer perceived value (Lecture 5). Product strategy returns later as an elective on digital product management.</p><h4>Value is a function of experience</h4><p>A product offers a set of values (functional, emotional, economic, extended psychological), set against direct costs (the price) and abstract costs (evaluating, obtaining, using). The difference is <b>customer perceived value</b>, from Lecture 5. In a crowded market with changing expectations, he added, the value a buyer gets is a <b>function of the experience</b> of using the product, and the experience in turn comes from the values it offers. The two operate as functions of each other.</p><p><strong>The jeans exercise, revisited.</strong> Students’ price guesses for the same jeans rose as brands were named. Levi’s suggests a sturdy pair and good value; Armani suggests the experience of being noticed and feeling confident among friends and colleagues, so the value felt is higher still. That pull in buyers’ minds is the <b>brand equity</b> the brand has built.</p><h4>Great products are not only high-tech</h4><div class=\"scroller\"><table><thead><tr><th>Product</th><th>Why he called it great</th></tr></thead><tbody><tr><td><strong>iPhone (2007)</strong></td><td>Removed the physical keypad for a full touchscreen and created a market buyers didn’t know they wanted</td></tr><tr><td><strong>Tesla</strong></td><td>Showed an electric car could be powerful, luxurious and well designed when EVs were seen as plain and weak</td></tr><tr><td><strong>Windows</strong></td><td>Raised the productivity of billions of people across many versions</td></tr><tr><td><strong>Tide</strong></td><td>Removes stains better than most rivals</td></tr><tr><td><strong>Parachute</strong></td><td>A multipurpose coconut oil found in nearly every home. Its blue bottle is so tied to the category that rival coconut oils launched with similar packs in the same colour</td></tr><tr><td><strong>Zandu Balm, Hajmola, Boroline</strong></td><td>Pain relief with few side effects; digestion with good taste; an early ayurvedic antiseptic cream</td></tr><tr><td><strong>Gillette Mach3</strong></td><td>Three blades for a closer shave with less irritation and fewer cuts. About ₹300 at launch and around ₹99 now, with the cartridges costing more (a pricing idea for later)</td></tr></tbody></table></div><p>He counted the Harry Potter books too. The point: great products can be as small and cheap as Boroline or Hajmola. High- or low-involvement, each moves the buyer to a desired state and removes a pain point.</p><h4>Great ideas that failed, and small innovations that worked</h4><ul><li><strong>Paper Boat:</strong> nostalgic drinks in a paper-boat theme. A great product idea, but relatively expensive, so it did not go well with buyers.</li><li><strong>Tata tea-and-coffee combo pack:</strong> tea and coffee in one container, saving space and hassle; in his view a great idea. It failed on <b>experience</b>: coffee drinkers didn’t need the tea and tea drinkers didn’t need the coffee, unused coffee went hard, seeing an unused product felt bad, and most homes keep the two apart by habit and culture.</li><li><strong>Door-hinge finger guards:</strong> pads that fill the gap at a door’s hinge so a toddler’s or an elderly person’s fingers can’t be crushed, and cushion them if they do slip in. He said they were rated among the world’s top five innovative products (around 2025).</li><li><strong>Graco one-push stroller:</strong> folds or unfolds with one push of one hand while the other holds the baby, so a working mother at a mall or office escalator never has to put her child down.</li></ul><div class=\"def\"><b>Great product = great experience + the value it delivers.</b> At the heart of every brand is the product. Price, promotion, place and endorsers don’t solve the buyer’s problem; the product does. <b>Strong products create brands; weak products need branding.</b></div><!--viz:pom-experience-decides--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two flows. Graco stroller: one hand holds the baby, one push folds or opens it, a safe and stress-free experience, high value and a great product. Tata tea-and-coffee pack: a clever idea, half goes unused and the coffee hardens, a poor experience, value missing and the product failed.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Experience decides whether an idea becomes a great product</div><div style=\"font-size:14px\"><div style=\"margin-bottom:12px\"><div style=\"font-weight:700;margin-bottom:6px\">Graco one-push stroller</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">one hand holds the baby</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">one push folds or opens it</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">experience: safe, no stress</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\"><b>high value: a great product</b></div></div></div><div style=\"margin-bottom:12px\"><div style=\"font-weight:700;margin-bottom:6px\">Tata tea-and-coffee pack</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">a clever two-in-one idea</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">half goes unused, coffee hardens</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">experience: poor</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--bad);border-radius:4px;background:var(--bad-soft)\"><b>value missing: it failed</b></div></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Both started as good ideas; only the one that gave a great experience delivered value.</figcaption></figure><!--/viz:pom-experience-decides-->"
+    },
+    {
+     "t": "Product or brand?",
+     "src": "L#29",
+     "h": "<p>Asked whether KitKat is a product or a brand, most students say product. His reply: if KitKat is the product, what is the crunchy chocolate bar you unwrap and eat? <b>KitKat is the brand</b>; the chocolate bar is the product; Nestlé is the parent organisation. Likewise <b>Maggi is the brand</b>, and the instant noodles you break and boil for two minutes are the product.</p><div class=\"def\"><b>The rule:</b> the product is what you consume or use in its raw form. Once a name is attached to it, that name is the <b>brand</b>. A great product is usually what built the brand in the first place.</div>"
+    },
+    {
+     "t": "Product levels: the customer value hierarchy",
+     "src": "L#29 · L#30",
+     "h": "<div class=\"def\">The <b>customer value hierarchy</b> classifies any product into five levels: <b>core benefit → basic product → expected product → augmented product → potential product</b>.</div><div class=\"scroller\"><table><thead><tr><th>Level</th><th>What it is</th></tr></thead><tbody><tr><td><strong>Core benefit</strong></td><td>The main functionality, without which the product has no value. It can differ from person to person</td></tr><tr><td><strong>Basic product</strong></td><td>The tangible product: its first look, its physical appearance</td></tr><tr><td><strong>Expected product</strong></td><td>The features and qualities buyers expect as standard</td></tr><tr><td><strong>Augmented product</strong></td><td>Features that exceed the customer’s expectations</td></tr><tr><td><strong>Potential product</strong></td><td>The futuristic version of the existing product</td></tr></tbody></table></div><h4>Why study the levels</h4><p>They answer three questions: <b>what a business must deliver</b>, <b>how it differentiates</b> from competitors (the PODs and POPs of Lectures 15 and 17), and <b>what to improve next</b>. They also guide <b>strategic investment</b>: where to start. Asked how to start or improve a campus café, nobody begins with free Wi-Fi or new interiors. You fix the coffee first, then cleanliness and broken chairs, then the ambience, then ordering and waiting time and price, and only then Wi-Fi.</p><p>Work up the levels one at a time: once the base is rock solid, it is easier to build on. Nobody buys a watch with telescopic zoom and emotion tracking if it doesn’t keep accurate time, and nobody buys a disinfectant such as Lysol or phenyl that doesn’t kill germs. If the core benefit is missing, nothing above it rescues the product.</p><h4>Three worked examples</h4><div class=\"scroller\"><table><thead><tr><th>Level</th><th>Hotel</th><th>McDonald’s</th><th>Fossil watch</th></tr></thead><tbody><tr><td><strong>Core benefit</strong></td><td>Rest and sleep</td><td>Satisfying hunger</td><td>Time</td></tr><tr><td><strong>Basic</strong></td><td>Bed, bathroom, towels, desk, closet; Wi-Fi is now basic too</td><td>A burger and a Coke</td><td>A dial and a strap</td></tr><tr><td><strong>Expected</strong></td><td>A clean bed, fresh towels, a clean bathroom, a good buffet</td><td>The same taste and basic hygiene in Delhi, Bihar, Madhya Pradesh or Jodhpur</td><td>Accurate time, good battery life</td></tr><tr><td><strong>Augmented</strong></td><td>A seamless check-in: a greeting, a tilak and a welcome drink, the check-in done before you reach the counter; special discounts</td><td>The Happy Meal toy</td><td>A touchscreen, Google voice</td></tr><tr><td><strong>Potential</strong></td><td>Bathrobes and other items to take home, biometrics, a sleep report after your stay</td><td>More creative toys, healthier drinks not yet on the menu</td><td>A heart-rate monitor, an oximeter</td></tr></tbody></table></div><p>Some hotels in Dubai and Europe already let guests take certain items home: a glimpse of the potential level.</p><div class=\"card\"><strong>Five levels in the lecture, three in Kotler &amp; Armstrong</strong><p>Kotler &amp; Armstrong’s <em>Principles of Marketing</em> (chapter 8) uses three levels: core customer value, actual product and augmented product. The lecture’s five come from the customer value hierarchy. Roughly, core customer value ≈ core benefit; actual product ≈ basic + expected; augmented is shared; potential has no match in the three-level version. Answer with five unless a question names the book.</p></div><div class=\"def\"><b>From the lecture (L#29):</b> “you always move from the core benefit to the potential product”. Offering the higher levels first, before the basics, loses buyers. He set an exercise: build the five levels for Netflix (his answers came in Lecture 30).</div><!--viz:pom-product-levels-hotel--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Five stacked bars, widest at the bottom: core benefit (rest and sleep), basic product (bed, bathroom, towels, Wi-Fi), expected product (clean bed, fresh towels, good buffet), augmented product (seamless check-in, welcome drink), potential product (take-home robes, sleep reports).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Five product levels, for a hotel</div><div style=\"font-size:14px\"><div style=\"width:60%;margin:0 auto 4px;padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);text-align:center\"><b>Potential</b> <span style=\"color:var(--ink-2);font-size:13px\">· take-home robes, sleep reports</span></div><div style=\"width:70%;margin:0 auto 4px;padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);text-align:center\"><b>Augmented</b> <span style=\"color:var(--ink-2);font-size:13px\">· seamless check-in, welcome drink</span></div><div style=\"width:80%;margin:0 auto 4px;padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);text-align:center\"><b>Expected</b> <span style=\"color:var(--ink-2);font-size:13px\">· clean bed, fresh towels, good buffet</span></div><div style=\"width:90%;margin:0 auto 4px;padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);text-align:center\"><b>Basic</b> <span style=\"color:var(--ink-2);font-size:13px\">· bed, bathroom, towels, Wi-Fi</span></div><div style=\"width:100%;margin:0 auto 4px;padding:7px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);text-align:center\"><b>Core benefit</b> <span style=\"color:var(--ink-2);font-size:13px\">· rest and sleep</span></div><p style=\"margin:8px 0 0;font-size:13px;color:var(--ink-3);text-align:center\">build from the bottom up ↑</p></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each level rests on the one below: get the core benefit right before adding anything above it.</figcaption></figure><!--/viz:pom-product-levels-hotel--><h4>Worked example: Netflix (L#30)</h4><p>His answers to the Lecture 29 exercise. He stressed they are indicative pointers, not the only right ones.</p><div class=\"scroller\"><table><thead><tr><th>Level</th><th>Netflix</th></tr></thead><tbody><tr><td><strong>Core benefit</strong></td><td>Entertainment</td></tr><tr><td><strong>Basic</strong></td><td>The content, plus the screen or app it plays on: TV, desktop, laptop, mobile</td></tr><tr><td><strong>Expected</strong></td><td>HD streaming, no buffering, smooth and fast playback, access on several devices</td></tr><tr><td><strong>Augmented</strong></td><td>Personalised recommendations; the option to skip an intro or ad at no charge</td></tr><tr><td><strong>Potential</strong></td><td>Gaming, cultural identity: futuristic additions</td></tr></tbody></table></div><div class=\"def\"><b>The triad: problem, experience, value.</b> Always start from the core benefit, because that is the buyer’s problem. Everything above it is part of the <b>experience</b>, and when the experience goes well it raises the <b>value</b>. Solve the problem, give the experience, deliver the value, and the buyer has no reason to move to another OTT platform.</div>"
+    },
+    {
+     "t": "Product mix: width, depth and length",
+     "src": "L#30 · L#31",
+     "h": "<div class=\"def\">The <b>product mix</b>, also called the <b>product portfolio</b> or <b>product assortment</b> (he also used “product lining”), is the complete set of products a firm offers. It has three dimensions: <b>width</b>, <b>depth</b> and <b>length</b>.</div><div class=\"scroller\"><table><thead><tr><th>Dimension</th><th>What it counts</th></tr></thead><tbody><tr><td><strong>Width</strong></td><td>How many product lines the company carries. It can also be counted inside one line: how many product categories that line holds</td></tr><tr><td><strong>Depth</strong></td><td>How many variants are offered for each product in a line: sizes, colours, storage, formulations</td></tr><tr><td><strong>Length</strong></td><td>The total number of items in the whole mix: every variant of every product in every line</td></tr></tbody></table></div><h4>His worked example: parent company X</h4><ul><li><strong>Three product lines</strong>: personal care, home décor, clothing, so the company’s width is <b>3</b>.</li><li><strong>Inside personal care</strong> there are three categories (face wash, shampoo, cream), so that line’s width is also <b>3</b>. Home décor and clothing each have width 1 before any products are added below them.</li><li><strong>Cream</strong> comes as a day cream and a night cream, each in two sizes (he used 50 and 200): the depth for creams is <b>4</b>.</li><li><strong>Personal care’s depth</strong> = face wash 1 + shampoo 1 + creams 4 = <b>6</b>.</li><li><strong>Men’s clothing</strong>: shirts in round neck and V-neck, jeans in normal and tapered fits, so depth <b>4</b>.</li><li><strong>Length</strong> = personal care 6 + home décor (furniture) 1 + clothing 4 = <b>11</b>.</li></ul><h4>Live on Fab India’s website</h4><p>Its top-level lines are food, furniture, home living, kids, men and women: width <b>6</b>. Under men there are ethnic wear, western wear, accessories and footwear (four; the custom kurta, collection and sale tabs don’t count). One kurta comes in XS, S, M, L, XL and XXL, a depth of <b>6</b>; if it also came in three colours, the depth would be <b>18</b>.</p><h4>Live on Apple India’s store</h4><p>Width <b>8</b>. One model, the iPhone 18 Pro Max, comes in four colours, each with four storage options: depth <b>16</b>. Assuming the 18 Pro has the same options, the two together make 32, and adding every iPhone, iPad and Mac gives Apple India’s length.</p><div class=\"card\"><strong>Why the counting matters</strong><p>Each variant has to be made, stored, tracked and sold, which is why firms use <b>SKUs (stock keeping units)</b> and inventory and operations management. A mix that looks simple to a buyer is a heavy load to manage.</p></div><div class=\"card\"><strong>Lecture vs Kotler &amp; Armstrong</strong><p>Kotler &amp; Armstrong’s chapter 8 defines width (number of lines), length (total items across lines), depth (versions of each product) and a fourth dimension, <b>consistency</b> (how closely the lines are related). The lecture also counts width inside a line, sums the variants of all products in a line as that line’s depth, and counts every variant in the length. Use the lecture’s counting for the quiz.</p></div><!--viz:pom-product-mix-company-x--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Company X has three product lines, so width 3. Personal care holds face wash 1, shampoo 1 and cream 4 (day and night, two sizes each): width inside the line 3, line depth 6. Home decor holds furniture 1: depth 1. Men's clothing holds shirts 2 and jeans 2: depth 4. Length is 6 plus 1 plus 4, which is 11.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Width, depth and length for company X</div><div style=\"font-size:14px\"><div style=\"text-align:center;margin-bottom:8px\"><span style=\"display:inline-block;padding:7px 12px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Company X</b> · width = 3 lines</span></div><div style=\"display:flex;flex-wrap:wrap;gap:8px\"><div style=\"flex:1 1 150px;min-width:0;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);padding:8px 10px\"><div style=\"font-weight:700\">Personal care</div><div style=\"color:var(--ink-3);font-size:12.5px\">width inside the line: 3</div><ul style=\"margin:6px 0;padding-left:18px\"><li>Face wash · 1</li><li>Shampoo · 1</li><li>Cream · 4 <span style=\"color:var(--ink-2);font-size:13px\">(day and night, 2 sizes each)</span></li></ul><div style=\"padding:3px 7px;border-radius:3px;background:var(--blue-soft);font-family:var(--mono);font-size:13px\">line depth 6</div></div><div style=\"flex:1 1 150px;min-width:0;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);padding:8px 10px\"><div style=\"font-weight:700\">Home décor</div><ul style=\"margin:6px 0;padding-left:18px\"><li>Furniture · 1</li></ul><div style=\"padding:3px 7px;border-radius:3px;background:var(--blue-soft);font-family:var(--mono);font-size:13px\">line depth 1</div></div><div style=\"flex:1 1 150px;min-width:0;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);padding:8px 10px\"><div style=\"font-weight:700\">Men’s clothing</div><ul style=\"margin:6px 0;padding-left:18px\"><li>Shirt · 2 <span style=\"color:var(--ink-2);font-size:13px\">(round neck, V-neck)</span></li><li>Jeans · 2 <span style=\"color:var(--ink-2);font-size:13px\">(normal, tapered)</span></li></ul><div style=\"padding:3px 7px;border-radius:3px;background:var(--blue-soft);font-family:var(--mono);font-size:13px\">line depth 4</div></div></div><div style=\"margin-top:8px;padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2)\"><b style=\"font-family:var(--mono)\">length = 6 + 1 + 4 = 11</b> <span style=\"color:var(--ink-2);font-size:13px\">· every variant in the whole mix</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Width counts lines, depth counts variants within a line, and length counts every variant in the company.</figcaption></figure><!--/viz:pom-product-mix-company-x--><h4>Live session (L#31): the points students get wrong</h4><p>He took up the product mix in the live session (25 Oct), ahead of the recording, because it confuses students every year, MBA and executive classes included, and the terms will be used interchangeably once product strategy starts.</p><ul><li><strong>Width works at two levels.</strong> Company X’s width is 3 (its lines), and its personal care line also has a width of 3 (face wash, shampoo, cream). Width is not only a company-level figure.</li><li><strong>Depth stops at the line; the company total is length.</strong> Asked for the parent company’s “depth”, the class typed 11. Right number, wrong word: once you add up every variant across the whole company, it is the <b>product mix length</b>. Depth is measured for products within a line, and products always sit in a product line.</li><li><strong>Apple India’s width of 8:</strong> Mac, iPad, iPhone, Watch, AirPods, Home (Apple TV, HomePod), Entertainment (Apple Music, Fitness, Books) and Accessories. Accessories count because they earn money and have to be managed. Support does not: it serves products already bought, and it would count only if Apple charged for it. Some students said 9.</li><li><strong>iPhone 18 Pro depth of 16:</strong> four colours (burgundy, glacier, silver, black) × four storage options (256 GB, 512 GB, 1 TB, 2 TB). The chat ranged from 4 to 16; colour alone gives 4, but every colour-and-storage pair is a separate variant.</li></ul>"
+    },
+    {
+     "t": "Portfolio growth and product pruning",
+     "src": "L#30 · L#31",
+     "h": "<p>Big firms run big portfolios. HUL describes more than 50 brands across 16 FMCG categories, over 65 billion units made a year, and reach through 9 million retail outlets plus digital platforms (the 2024 figures he showed). Technology, expectations, behaviour, competitors and the wider environment keep changing, so firms keep launching. What happens to the old products?</p><h4>The graph exercise</h4><p>Keep adding products over time and plot net revenue (after costs). His answer has three phases:</p><ol><li><strong>Growth:</strong> each new product reaches more buyers, so net revenue rises.</li><li><strong>Plateau:</strong> older products stop selling but still cost money: storage and warehousing, retailers’ charges for the shelf space they occupy, advertising. Space they fill can’t take newer products. These costs offset the new products’ sales, and revenue stagnates for a long period.</li><li><strong>Decline:</strong> stock and capital stay blocked, profits dry up, there is no fresh money for R&amp;D or marketing, and net revenue falls.</li></ol><p>“You are sabotaging your own business.” Apple, once the 18 arrived, no longer sells the 10, 11 or 15 on its own platform. L’Oréal changes its shampoo range, with new colours, formulations and celebrities, every six months to a year; launches from a few years ago are nowhere to be seen. They rotate money out of old stock into new products.</p><div class=\"def\"><b>Product pruning</b>: keeping the products that sell and removing those that don’t sell or cost more than they return, so the money saved funds new products and their marketing. It keeps net revenue from stagnating.</div><div class=\"def\"><b>From the lecture (L#30):</b> adding products is good only up to a point; beyond it, more products mean lower and then falling revenue. Product pruning and product strategy are the next class.</div><!--viz:pom-portfolio-revenue-curve--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Line chart of net revenue as products are added over time. Without pruning it rises in a growth phase, levels off in a plateau and then falls in a decline phase. A dashed line with pruning starts during the plateau and stays level, rising slightly.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Adding products without pruning</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 222\" role=\"img\" aria-label=\"Net revenue against products added over time: it rises, levels off, then falls without pruning; a dashed line with pruning stays level and rises slightly.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M50,190 L420,190\" fill=\"none\" style=\"stroke:var(--rule-2);stroke-width:1.5\"/><path d=\"M412,186 L422,190 L412,194 Z\" style=\"fill:var(--ink-3)\"/><path d=\"M50,190 L50,32\" fill=\"none\" style=\"stroke:var(--rule-2);stroke-width:1.5\"/><path d=\"M46,40 L50,30 L54,40 Z\" style=\"fill:var(--ink-3)\"/><path d=\"M169,40 L169,190\" fill=\"none\" style=\"stroke:var(--rule);stroke-width:1.5;stroke-dasharray:3 4\"/><path d=\"M288,40 L288,190\" fill=\"none\" style=\"stroke:var(--rule);stroke-width:1.5;stroke-dasharray:3 4\"/><path d=\"M248.0,62.6 L257.0,61.7 L266.0,61.0 L275.0,60.3 L284.0,59.7 L293.0,59.1 L302.0,58.5 L311.0,58.0 L320.0,57.5 L329.0,57.0 L338.0,56.5 L347.0,56.1 L356.0,55.6 L365.0,55.2 L374.0,54.7 L383.0,54.3 L392.0,53.9 L401.0,53.5 L410.0,53.1\" fill=\"none\" style=\"stroke:var(--good);stroke-width:2;stroke-dasharray:6 4\"/><path d=\"M50.0,190.0 L59.0,168.7 L68.0,151.0 L77.0,136.1 L86.0,123.6 L95.0,113.2 L104.0,104.5 L113.0,97.2 L122.0,91.2 L131.0,86.1 L140.0,81.8 L149.0,78.2 L158.0,75.3 L167.0,72.8 L176.0,70.7 L185.0,68.9 L194.0,67.5 L203.0,66.2 L212.0,65.2 L221.0,64.4 L230.0,63.7 L239.0,63.1 L248.0,62.6 L257.0,62.1 L266.0,61.8 L275.0,61.7 L284.0,62.0 L293.0,62.8 L302.0,64.0 L311.0,65.6 L320.0,67.6 L329.0,70.1 L338.0,72.9 L347.0,76.2 L356.0,79.8 L365.0,83.8 L374.0,88.3 L383.0,93.1 L392.0,98.4 L401.0,104.0 L410.0,110.0\" fill=\"none\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"58\" y=\"24\" text-anchor=\"start\" style=\"fill:var(--ink-3);font-size:13px\">net revenue</text><text x=\"420\" y=\"212\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">products added over time</text><text x=\"110\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-weight:700\">growth</text><text x=\"228\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-weight:700\">plateau</text><text x=\"352\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--bad);font-size:13px;font-weight:700\">decline</text><text x=\"410\" y=\"42\" text-anchor=\"end\" style=\"fill:var(--good);font-size:13px;font-weight:700\">with pruning</text><text x=\"408\" y=\"134\" text-anchor=\"end\" style=\"fill:var(--ink);font-size:13px\">no pruning</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Unsold old stock eats the gains from new products; pruning is the way off the plateau.</figcaption></figure><!--/viz:pom-portfolio-revenue-curve--><h4>Live session (L#31): pruning in practice</h4><ul><li><strong>HUL update:</strong> the slide’s 65 billion units a year is the 2024 figure; he said it is now close to 90 billion.</li><li><strong>Why Apple drops old models:</strong> they compete with the new ones. If an iPhone 14 were still on sale, why would anyone pay ₹70,000–80,000 for a 17? Cutting the 17’s price instead would hurt the firm and its brand image. Apple itself doesn’t cut prices before dropping a model; retailers do, because the stock they hold is a cost.</li><li><strong>Involvement sets the pace.</strong> Low-involvement FMCG products are used up in a month or two and can be phased out quickly. High-involvement tech, used for years (NVIDIA’s GPUs, for instance), is phased out more slowly, but it is still phased out.</li><li><strong>Variants on rotation:</strong> Dove body wash runs many variants, and some don’t do well. L’Oréal keeps launching shampoos with a new promise each time (hyaluronic acid, essential oils, mystic oil), then retires them as “new and improved”, playing on perceptual product categories (Lecture 24).</li><li><strong>Brand managers:</strong> FMCG firms (Dove, L’Oréal, Plum, Himalaya) give each product line a brand manager who acts as its <b>mini-CEO</b>, under a group CEO. Consulting firms and banks don’t have brand managers.</li></ul><div class=\"def\"><b>From the lecture (L#31):</b> he wants width, depth and length to be very clear before product strategy, because the terms are used interchangeably there. Digital product strategy comes back as an elective in a later semester.</div>"
     }
    ]
   }
@@ -585,6 +673,22 @@ HUB.addCourse({
   {
    "name": "Cognitive biases",
    "unit": "cb"
+  },
+  {
+   "name": "Attitude",
+   "unit": "cb"
+  },
+  {
+   "name": "Humanising a brand",
+   "unit": "cb"
+  },
+  {
+   "name": "Product decisions",
+   "unit": "product"
+  },
+  {
+   "name": "Product mix",
+   "unit": "product"
   }
  ],
  "traps": [
@@ -1285,6 +1389,167 @@ HUB.addCourse({
    "p": "He wrote WTP for willingness to purchase. In pricing, WTP normally means willingness to pay, the highest price a buyer will accept. Read the abbreviation from its context.",
    "f": "WTP: purchase here, pay elsewhere",
    "lec": 28
+  },
+  {
+   "id": "pom-t0104",
+   "h": "Attitude is a function of the object and its attributes, not of the object alone",
+   "p": "Lecture 26’s decision function is Attitude = f(object, attributes of the object). In the desk exercise the object was the same kind of desk; design, utility, price and brand decided the attitude. Firms have more room to work on attributes than on the object.",
+   "f": "A = f(object, attributes)",
+   "lec": 26
+  },
+  {
+   "id": "pom-t0105",
+   "h": "Perception and attitude influence each other both ways",
+   "p": "Perception can lead to an attitude, and an attitude can colour perception. Don’t draw a one-way arrow from perception to attitude.",
+   "f": "perception ⇄ attitude",
+   "lec": 26
+  },
+  {
+   "id": "pom-t0106",
+   "h": "Lecture 9 said acquisition costs 5× retention; Lecture 26 says retention costs one-seventh to one-tenth of acquisition",
+   "p": "Both say retaining is much cheaper, but the numbers differ: 5× in Lecture 9 ($100 vs about $20), 7–10× in Lecture 26, where his own ballpark is one-tenth. Use the figure of the lecture the question names.",
+   "f": "L#9: 5× · L#26: 7–10×",
+   "lec": 26
+  },
+  {
+   "id": "pom-t0107",
+   "h": "Only one relationship goes in the love bucket: parents and their children",
+   "p": "Epicurus filed spouses, siblings, friends and boss–subordinate ties in the utilitarian bucket, because each involves some exchange. Only parents give without expecting a return.",
+   "f": "love bucket = parents only",
+   "lec": 26
+  },
+  {
+   "id": "pom-t0108",
+   "h": "The father–daughter tyre ad is now a point of parity, not a point of difference",
+   "p": "With 7–8 out of 10 tyre ads using it, the device no longer sets a brand apart, so ads now add other elements and other relationships. It still works as a way to humanise the brand.",
+   "f": "everyone uses it → POP",
+   "lec": 26
+  },
+  {
+   "id": "pom-t0109",
+   "h": "In the ABC model, C is a human characteristic, not the customer or the cost",
+   "p": "A = attribute, B = benefit, C = human-like characteristic (safety for CEAT, belongingness for Asian Paints). The C box is what the ad really sells.",
+   "f": "C = characteristic",
+   "lec": 27
+  },
+  {
+   "id": "pom-t0110",
+   "h": "Link the tyre to safety in steps, not in one jump",
+   "p": "He warned against “a good tyre gives stability, so safety”. The chain runs grooves → anti-skid → traction → control → stability → safety, each benefit leading to the next.",
+   "f": "attribute → benefits → feeling",
+   "lec": 27
+  },
+  {
+   "id": "pom-t0111",
+   "h": "A true performance claim is still utilitarian",
+   "p": "Bridgestone-style performance and mileage messages are not wrong, but every brand is expected to deliver them, so they stay transactional and replaceable. The family-safety story is what moves CEAT into the love bucket.",
+   "f": "performance = transactional",
+   "lec": 27
+  },
+  {
+   "id": "pom-t0112",
+   "h": "Anthropomorphism is not limited to human faces",
+   "p": "Any living element counts: Hutch’s pug humanised the brand better than many celebrity campaigns did.",
+   "f": "a pug counts",
+   "lec": 27
+  },
+  {
+   "id": "pom-t0113",
+   "h": "A steep discount can lower trust in a sustainable product",
+   "p": "The Deloitte and Ad Council reading finds that very deep discounts on sustainable products make shoppers suspicious. Trust comes from specific claims and sustained commitments, not from price cuts.",
+   "f": "too cheap to trust",
+   "lec": 27
+  },
+  {
+   "id": "pom-t0114",
+   "h": "Great products need not be high-tech or expensive",
+   "p": "Next to the iPhone and Tesla he listed Tide, Parachute, Zandu Balm, Hajmola and Boroline. A great product moves the buyer to a desired state with a great experience, whatever its price or technology.",
+   "f": "Boroline counts",
+   "lec": 29
+  },
+  {
+   "id": "pom-t0115",
+   "h": "KitKat and Maggi are brands, not products",
+   "p": "The product is what you consume: the crunchy chocolate bar, the instant noodles. KitKat and Maggi are the names given to them, and Nestlé is the parent organisation.",
+   "f": "brand = the name on it",
+   "lec": 29
+  },
+  {
+   "id": "pom-t0116",
+   "h": "Expected is not augmented",
+   "p": "Expected = what buyers take for granted (accurate time, the same burger taste everywhere). Augmented = what goes beyond expectation (a touchscreen, the Happy Meal toy). Something that delights today can become expected later.",
+   "f": "expected = baseline, augmented = beyond",
+   "lec": 29
+  },
+  {
+   "id": "pom-t0117",
+   "h": "Start at the core benefit, not with the extras",
+   "p": "A café fixes its coffee before it adds Wi-Fi; a watch must keep time before it measures your heart rate. If the core benefit is missing, no augmented or potential feature rescues the product.",
+   "f": "coffee before Wi-Fi",
+   "lec": 29
+  },
+  {
+   "id": "pom-t0118",
+   "h": "The lecture has five product levels; Kotler & Armstrong has three",
+   "p": "The lecture uses core benefit, basic, expected, augmented and potential. Kotler & Armstrong’s Principles (chapter 8) uses core customer value, actual product and augmented product. Use the lecture’s five unless a question names the book.",
+   "f": "five in class, three in K&A",
+   "lec": 29
+  },
+  {
+   "id": "pom-t0119",
+   "h": "Sizes and colours add to depth, not width",
+   "p": "Width counts product lines (or categories within a line). The variants of one product, such as six kurta sizes or four iPhone colours, are its depth.",
+   "f": "lines → width, variants → depth",
+   "lec": 30
+  },
+  {
+   "id": "pom-t0120",
+   "h": "Width can be counted inside a product line too",
+   "p": "Company X has width 3 (three lines), and its personal care line also has width 3 (face wash, shampoo, cream). Don’t assume width only ever describes the whole company.",
+   "f": "width at two levels",
+   "lec": 30
+  },
+  {
+   "id": "pom-t0121",
+   "h": "Here, product portfolio means the product mix, not the BCG portfolio",
+   "p": "In Lectures 30–31, product portfolio is a synonym for the product mix (width, depth, length). The textbook’s portfolio analysis (BCG matrix, in the strategy unit) judges strategic business units, a different idea.",
+   "f": "product portfolio = mix",
+   "lec": 30
+  },
+  {
+   "id": "pom-t0122",
+   "h": "More products don’t mean ever more revenue",
+   "p": "Without pruning, net revenue rises, plateaus as old stock’s costs offset new sales, and then declines. Growth needs both adding and removing products.",
+   "f": "add and prune",
+   "lec": 30
+  },
+  {
+   "id": "pom-t0123",
+   "h": "The lecture counts the mix differently from Kotler & Armstrong",
+   "p": "Kotler & Armstrong (chapter 8) adds a fourth dimension, consistency, and gives depth per product. The lecture sums a line’s variants as its depth and counts every variant in the length (company X: 11). Use the lecture’s method in the quiz.",
+   "f": "lecture’s counting wins",
+   "lec": 30
+  },
+  {
+   "id": "pom-t0124",
+   "h": "The company-wide total of variants is length, not depth",
+   "p": "Company X’s 11 variants are its product mix length. Depth is counted for products within a line (creams 4, personal care 6); at company level the word changes to length.",
+   "f": "company total → length",
+   "lec": 31
+  },
+  {
+   "id": "pom-t0125",
+   "h": "Apple’s Accessories count as a product line; Support doesn’t",
+   "p": "Accessories earn money and have to be managed, so they are part of the mix. Free support serves products already sold, so it is not; it would count only if it were charged for.",
+   "f": "paid → in the mix",
+   "lec": 31
+  },
+  {
+   "id": "pom-t0126",
+   "h": "A genuine discount is not an anchoring bias",
+   "p": "Anchoring works through an inflated reference price that makes the deal feel bigger. A real cut from a real earlier price is simply a discount, though buyers can rarely tell which is which.",
+   "f": "real cut ≠ anchor",
+   "lec": 31
   }
  ],
  "defs": [
@@ -2217,6 +2482,198 @@ HUB.addCourse({
    "term": "Endowment effect",
    "html": "<b>Endowment effect</b>: people value something they own more than an identical thing they don’t. In the L#28 phone exercise, buying prices came in about 50% below selling prices.",
    "lec": 28
+  },
+  {
+   "id": "pom-d0119",
+   "unit": "cb",
+   "topic": "Attitude: the link between perception and decision",
+   "term": "Attitude",
+   "html": "<b>Attitude</b>: a favourable or unfavourable response towards something (a product, brand or idea). It forms between motivation and the decision, and it and perception influence each other both ways.",
+   "lec": 26
+  },
+  {
+   "id": "pom-d0120",
+   "unit": "cb",
+   "topic": "Attitude: the link between perception and decision",
+   "term": "Decision function",
+   "html": "<b>Decision function</b>: Attitude = f(object, attributes of the object). The buyer judges the product and its perceived attributes (design, utility, price, brand) together, and attributes give the marketer the most room to work.",
+   "lec": 26
+  },
+  {
+   "id": "pom-d0121",
+   "unit": "cb",
+   "topic": "Customer churn: the biggest challenge",
+   "term": "Customer churn",
+   "html": "<b>Customer churn</b>: customers you spent effort and money to win moving away to a competitor. Lecture 26 calls it the biggest challenge organisations have faced, historically and today.",
+   "lec": 26
+  },
+  {
+   "id": "pom-d0122",
+   "unit": "cb",
+   "topic": "Customer churn: the biggest challenge",
+   "term": "Customer acquisition cost (CAC)",
+   "html": "<b>Customer acquisition cost (CAC)</b>: what it costs to win a new customer; very high in an overcrowded market. Retaining a customer costs about <b>one-seventh to one-tenth</b> as much (Lecture 26).",
+   "lec": 26
+  },
+  {
+   "id": "pom-d0123",
+   "unit": "cb",
+   "topic": "Humanising a brand: the utilitarian and love buckets",
+   "term": "Utilitarian bucket vs love bucket",
+   "html": "<b>Utilitarian bucket</b>: relationships built on exchange (you give, I give back); a brand here is a replaceable object. <b>Love bucket</b>: affection with no expectation of return, which Epicurus found only between parents and children. Humanising a brand moves it into the love bucket.",
+   "lec": 26
+  },
+  {
+   "id": "pom-d0124",
+   "unit": "cb",
+   "topic": "Humanising a brand: the utilitarian and love buckets",
+   "term": "Humanising a brand",
+   "html": "<b>Humanising a brand</b>: relating a product’s attributes to human traits or characteristics (safety, belonging) so buyers see a relationship, not a transaction.",
+   "lec": 26
+  },
+  {
+   "id": "pom-d0125",
+   "unit": "cb",
+   "topic": "The ABC model: attribute, benefit, human characteristic",
+   "term": "ABC model of humanising a brand",
+   "html": "<b>ABC model</b>: a product’s <b>attribute</b> (CEAT’s grooves) offers a <b>benefit</b> (anti-skid, control, stability), which is matched with a human-like <b>characteristic</b> (safety). Linking all three humanises the brand and places it in the love bucket.",
+   "lec": 27
+  },
+  {
+   "id": "pom-d0126",
+   "unit": "cb",
+   "topic": "The ABC model: attribute, benefit, human characteristic",
+   "term": "Anthropomorphism",
+   "html": "<b>Anthropomorphism</b>: relating human-like traits to a brand or product, using anything living, people or animals (Hutch’s pug). It is the consumer-behaviour term for humanising a brand.",
+   "lec": 27
+  },
+  {
+   "id": "pom-d0127",
+   "unit": "cb",
+   "topic": "The ABC model: attribute, benefit, human characteristic",
+   "term": "Meaning transference",
+   "html": "<b>Meaning transference</b>: the meaning in an ad’s story or people (a family, a celebrity) carrying over to the product, so it is seen as more than a replaceable object.",
+   "lec": 27
+  },
+  {
+   "id": "pom-d0128",
+   "unit": "cb",
+   "topic": "Reading: the sustainability say–do gap (Deloitte and Ad Council)",
+   "term": "Say–do gap",
+   "html": "<b>Say–do gap</b>: the gap between what consumers say they value, such as sustainability, and what they actually buy. The Deloitte and Ad Council reading finds price and then trust are the main barriers.",
+   "lec": 27
+  },
+  {
+   "id": "pom-d0129",
+   "unit": "product",
+   "topic": "What a product is, and what makes one great",
+   "term": "Product",
+   "html": "<b>Product</b>: an offering or attribute that enables a consumer to move from an existing state to a desired state, solving a problem (Itch Guard: from itchiness to relief).",
+   "lec": 29
+  },
+  {
+   "id": "pom-d0130",
+   "unit": "product",
+   "topic": "What a product is, and what makes one great",
+   "term": "Great product",
+   "html": "<b>Great product</b> = great experience + the value it delivers. It need not be high-tech or expensive (Boroline, Hajmola). <b>Strong products create brands; weak products need branding.</b>",
+   "lec": 29
+  },
+  {
+   "id": "pom-d0131",
+   "unit": "product",
+   "topic": "Product or brand?",
+   "term": "Product vs brand",
+   "html": "<b>Product</b>: what you consume or use in its raw form (the crunchy chocolate bar, the instant noodles). <b>Brand</b>: the name attached to it (KitKat, Maggi). Nestlé is the parent organisation.",
+   "lec": 29
+  },
+  {
+   "id": "pom-d0132",
+   "unit": "product",
+   "topic": "Product levels: the customer value hierarchy",
+   "term": "Customer value hierarchy",
+   "html": "<b>Customer value hierarchy</b>: five product levels, built from the base up: <b>core benefit → basic → expected → augmented → potential</b>.",
+   "lec": 29
+  },
+  {
+   "id": "pom-d0133",
+   "unit": "product",
+   "topic": "Product levels: the customer value hierarchy",
+   "term": "Core benefit and basic product",
+   "html": "<b>Core benefit</b>: the main functionality without which the product has no value (a hotel: rest). <b>Basic product</b>: the tangible product and its physical appearance (bed, bathroom, towels).",
+   "lec": 29
+  },
+  {
+   "id": "pom-d0134",
+   "unit": "product",
+   "topic": "Product levels: the customer value hierarchy",
+   "term": "Expected, augmented and potential product",
+   "html": "<b>Expected</b>: what buyers take as standard (same taste everywhere). <b>Augmented</b>: features that exceed expectations (the Happy Meal toy). <b>Potential</b>: futuristic additions (a watch with an oximeter).",
+   "lec": 29
+  },
+  {
+   "id": "pom-d0135",
+   "unit": "product",
+   "topic": "Product mix: width, depth and length",
+   "term": "Product mix (product portfolio)",
+   "html": "<b>Product mix</b> (product portfolio, product assortment): the complete set of products a firm offers, described by its <b>width</b>, <b>depth</b> and <b>length</b>.",
+   "lec": 30
+  },
+  {
+   "id": "pom-d0136",
+   "unit": "product",
+   "topic": "Product mix: width, depth and length",
+   "term": "Product width",
+   "html": "<b>Product width</b>: the number of product lines a company carries (company X: 3). It can also be counted inside a line as the number of categories in it (personal care: 3).",
+   "lec": 30
+  },
+  {
+   "id": "pom-d0137",
+   "unit": "product",
+   "topic": "Product mix: width, depth and length",
+   "term": "Product depth",
+   "html": "<b>Product depth</b>: the number of variants offered for each product in a line (sizes, colours, storage). Day and night cream in two sizes each = depth 4.",
+   "lec": 30
+  },
+  {
+   "id": "pom-d0138",
+   "unit": "product",
+   "topic": "Product mix: width, depth and length",
+   "term": "Product length",
+   "html": "<b>Product length</b> (product mix length): the total number of items in the whole mix, every variant across every line. Company X: 6 + 1 + 4 = 11.",
+   "lec": 30
+  },
+  {
+   "id": "pom-d0139",
+   "unit": "product",
+   "topic": "Portfolio growth and product pruning",
+   "term": "Product pruning",
+   "html": "<b>Product pruning</b>: removing products that no longer sell or cost more than they earn, and keeping the ones that sell, so the money saved goes into new products and their marketing.",
+   "lec": 30
+  },
+  {
+   "id": "pom-d0140",
+   "unit": "cb",
+   "topic": "Four biases in buying: anchoring, bandwagon, scarcity, endowment",
+   "term": "Genuine discount vs anchoring",
+   "html": "<b>Anchoring through a reference price</b>: a high “original” price makes the selling price feel like a bargain. A <b>genuine</b> discount is just a discount; most discounts work as anchors because buyers expect them (Lecture 31).",
+   "lec": 31
+  },
+  {
+   "id": "pom-d0141",
+   "unit": "product",
+   "topic": "Portfolio growth and product pruning",
+   "term": "Cannibalisation (older models)",
+   "html": "<b>Cannibalisation</b>: an older or cheaper product in the range pulling buyers away from the firm’s newer one. Apple stops selling older iPhones so a 14 doesn’t undercut a 17.",
+   "lec": 31
+  },
+  {
+   "id": "pom-d0142",
+   "unit": "product",
+   "topic": "Portfolio growth and product pruning",
+   "term": "Brand manager",
+   "html": "<b>Brand manager</b>: in FMCG firms, the manager who runs a product line or brand as its <b>mini-CEO</b>, deciding which variants to keep and which to drop.",
+   "lec": 31
   }
  ],
  "questions": [
@@ -7704,6 +8161,1311 @@ HUB.addCourse({
    "w": "He gave both reasons: the discount can prompt an unneeded purchase at an unconscious level, and competitively it biases the buyer towards one brand over a rival offering the same thing. He said biases are not always harmful (a deal can be real value), so 'always harm' is wrong.",
    "lec": 28,
    "lv": "analyse"
+  },
+  {
+   "id": "pom-q0330",
+   "topic": "Attitude",
+   "q": "How did Lecture 26 define an attitude?",
+   "c": [
+    "The drive that pushes a person to act on a need",
+    "The way a person selects and interprets information about a product",
+    "A favourable or unfavourable response towards something",
+    "A subconscious error in judgement caused by a mental shortcut"
+   ],
+   "a": [
+    2
+   ],
+   "w": "An attitude is a favourable or unfavourable response towards something. The drive to act is motivation (Lecture 23), selecting and interpreting information is perception (Lecture 24), and a subconscious judgement error is a cognitive bias (Lecture 28).",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0331",
+   "topic": "Attitude",
+   "q": "Which expression is the decision function from Lecture 26?",
+   "c": [
+    "Attitude = f(object, attributes of the object)",
+    "Attitude = f(price, brand)",
+    "Perception = f(attitude, motivation)",
+    "Value = benefits − costs"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The decision function says attitude depends on the object and its attributes. Price and brand are only two of those attributes, and benefits minus costs is customer perceived value from Lecture 5, a different formula.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0332",
+   "topic": "Attitude",
+   "q": "Two study desks cost the same and carry the same brand. Riya prefers one because it looks sturdier and has a hole to keep her laptop wires tidy. In Lecture 26's terms, what is shaping her attitude?",
+   "c": [
+    "The object alone, since both are desks",
+    "A scarcity cue",
+    "Her perceptual product category",
+    "The attributes of the object"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Sturdiness and wire management are attributes of the object (the desk), and attitude is a function of the object and its attributes. Both items are desks, so the object alone can't explain her preference; nothing signals that stock is running out.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0333",
+   "topic": "Attitude",
+   "q": "Why did Dr. Kapoor first hold price and brand constant in the study-desk exercise?",
+   "c": [
+    "Because price and brand are not attributes of an object",
+    "To isolate how the other attributes shape attitude, treating price and brand as control variables",
+    "Because attitude depends only on design",
+    "To show that buyers ignore price"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He treated price and brand as control variables so that design, looks and utility could be seen at work. Price is an attribute: once he priced the desks at ₹20,000 and ₹14,000, most students switched to the cheaper one, which also shows that buyers do not ignore price.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0334",
+   "topic": "Attitude",
+   "q": "How does Lecture 26 describe the relationship between perception and attitude?",
+   "c": [
+    "One-way: perception always comes first",
+    "Two-way: perception can lead to an attitude, and an attitude can shape perception",
+    "One-way: attitude always comes first",
+    "None: only motivation forms attitudes"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He stressed that it is a two-way relationship. Perception leads to attitude, and in many cases attitude also leads to perception, so neither one-way version is right.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0335",
+   "topic": "Attitude",
+   "q": "Borges promoted its olive leaf infusion as having twice the antioxidants and four times the vitamin C of green tea. What was the strategy, as Lecture 26 explained it?",
+   "c": [
+    "Creating a new category with no competitors",
+    "Humanising the brand with a family story",
+    "Undercutting green tea on price",
+    "Setting its attributes against the competitor's baseline, so it looks superior on what buyers already value"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Its competition was green tea, so every claim used green tea as the baseline and placed Borges above it: the power of attributes. The campaign he showed was an infographic of attributes, not a family story, and price played no part in his account.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0336",
+   "topic": "Attitude",
+   "q": "Which attributes did the Borges olive leaf infusion claim, as shown in Lecture 26? (Select all)",
+   "c": [
+    "Zero caffeine",
+    "Rich in oleuropein",
+    "Added natural flavours",
+    "Gentler on the stomach than green tea"
+   ],
+   "a": [
+    0,
+    1
+   ],
+   "w": "The claims were 2× antioxidants and 4× vitamin C against green tea, rich in oleuropein, zero caffeine and zero added flavours. So added flavours is the opposite of a claim it made, and stomach comfort was not among them.",
+   "lec": 26,
+   "lv": "recall",
+   "multi": true
+  },
+  {
+   "id": "pom-q0337",
+   "topic": "Attitude",
+   "q": "Why, according to Lecture 26, do organisations work more on attributes than on the object itself?",
+   "c": [
+    "Attributes are largely perception-driven, so there is more room to experiment with them",
+    "Attributes are cheaper to manufacture",
+    "Buyers cannot perceive the object",
+    "Regulators restrict changes to the object"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He said attributes are largely driven by buyers' perception, so firms have more scope to play with them than with the object alone. Cost and regulation did not come into his argument.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0338",
+   "topic": "Customer relationship management",
+   "q": "What did Dr. Kapoor name as the biggest challenge organisations have faced, historically and today?",
+   "c": [
+    "Rising raw-material costs",
+    "Government regulation",
+    "Customer churn",
+    "Finding skilled employees"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Customer churn: customers you spent effort, time and money to acquire moving to a competitor. He framed it as a challenge for hundreds of years, which is why retention matters.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0339",
+   "topic": "Customer relationship management",
+   "q": "A D2C skincare brand spends ₹1,000 to acquire each new customer. Using the ballpark Dr. Kapoor said he always takes in Lecture 26, roughly what does retaining a customer cost?",
+   "c": [
+    "₹200",
+    "₹500",
+    "₹1,000",
+    "₹100"
+   ],
+   "a": [
+    3
+   ],
+   "w": "His ballpark is one-tenth of the acquisition cost, so ₹100. ₹200 would follow from Lecture 9's figure (acquisition about 5× retention), not from Lecture 26.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0340",
+   "topic": "Customer relationship management",
+   "q": "A firm spent ₹70 lakh last year acquiring 1,000 new customers. At the cheaper end of Lecture 26's range (one-tenth), and at the dearer end (one-seventh), roughly what would retaining one customer cost?",
+   "c": [
+    "₹1,400 to ₹2,000",
+    "₹7,000 to ₹10,000",
+    "₹700 to ₹1,000",
+    "₹70 to ₹100"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Acquisition is ₹70,00,000 ÷ 1,000 = ₹7,000 per customer. One-tenth is ₹700 and one-seventh is ₹1,000. ₹1,400 would be one-fifth, the Lecture 9 ratio, and ₹70–100 drops a zero.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0341",
+   "topic": "Humanising a brand",
+   "q": "Which relationship did Epicurus place in the love bucket?",
+   "c": [
+    "Husband and wife",
+    "Parents and their children",
+    "Brother and sister",
+    "Close friends"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Only the parent–child relationship is non-transactional in his account. Spouses, siblings (the Rakhi exchange) and friends all involve some give and take, so they sit in the utilitarian bucket.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0342",
+   "topic": "Humanising a brand",
+   "q": "Thirty stalls sell the same handicrafts at the same price, yet buyers flock to one. In the story Dr. Kapoor told, what did Epicurus say set that seller apart?",
+   "c": [
+    "He added a human touch and treated buyers as relations, not transactions",
+    "He offered better barter terms",
+    "He stocked a wider range of goods",
+    "He had the best spot in the market"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Epicurus said the others treated their goods as objects and every sale as a transaction, while the popular seller related to buyers as people. The story fixes price and goods as the same, so better terms or a wider range are ruled out.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0343",
+   "topic": "Humanising a brand",
+   "q": "Why, according to Lecture 26, do so many tyre ads feature a father and his daughter?",
+   "c": [
+    "To borrow a daughter's feeling of being protected, safety, and link it to the tyre",
+    "Because fathers are the main buyers of tyres",
+    "To show the tyre is affordable for families",
+    "Because daughters choose the family car"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Daughters feel protected and safe when their fathers are around; the ad borrows that feeling and links it, step by step, to the tyre. Who buys tyres and their price were not part of his explanation.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0344",
+   "topic": "Humanising a brand",
+   "q": "Seven or eight out of ten tyre ads have shown a father and daughter. What, according to Lecture 26, has that done to the device?",
+   "c": [
+    "Made it a stronger point of difference",
+    "Made it a point of parity, so ads now add other elements",
+    "Turned it into a cognitive bias",
+    "Made it a perceptual product category"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Once nearly every brand uses it, it stops differentiating: it becomes a point of parity, and ads move to other elements and relationships. A point of difference must set a brand apart, which a device everyone uses cannot do.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0345",
+   "topic": "Humanising a brand",
+   "q": "In Lecture 26, what does humanising a brand mean?",
+   "c": [
+    "Using real customers instead of celebrities in every ad",
+    "Cutting prices to build goodwill",
+    "Relating the product's attributes to human traits or characteristics",
+    "Adding live human support to an online store"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Humanising a brand links the attributes of a product to human traits or characteristics, so the brand moves from the utilitarian to the love bucket. Using ordinary people (Asian Paints, Lecture 27) is one way to do it, not the definition.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0346",
+   "topic": "Humanising a brand",
+   "q": "In the ABC model of humanising a brand, what do A, B and C stand for?",
+   "c": [
+    "Attention, belief, choice",
+    "Awareness, behaviour, commitment",
+    "Attribute, benefit, human characteristic",
+    "Attribute, brand, customer"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A is the product attribute, B the benefit it gives and C the human-like characteristic the benefit is matched with. Reading C as customer misses the point: the ad sells the characteristic, such as safety.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0347",
+   "topic": "Humanising a brand",
+   "q": "Which sequence matches the CEAT chain as Lecture 27 drew it?",
+   "c": [
+    "Grooves → anti-skid → traction → control → stability → safety",
+    "Safety → grooves → stability → traction",
+    "Grooves → safety → anti-skid → stability",
+    "Traction → grooves → control → anti-skid → safety"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The chain starts at the attribute (grooves), runs through the benefits in order (anti-skid, traction, control, stability) and ends at the human characteristic, safety. Jumping to safety straight after grooves skips the steps he insisted on.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0348",
+   "topic": "Humanising a brand",
+   "q": "In the CEAT chain, which element is the attribute?",
+   "c": [
+    "Safety",
+    "Stability",
+    "The father–daughter bond",
+    "The grooves (tread structure)"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The grooves are the physical attribute of the tyre. Stability is a benefit, safety is the human characteristic, and the father–daughter bond is the story that carries it.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0349",
+   "topic": "Humanising a brand",
+   "q": "In Dr. Kapoor's Asian Paints chain, which element is the human characteristic?",
+   "c": [
+    "Colours and finishes",
+    "Belongingness: a home that reflects who you are",
+    "A personalised space",
+    "Self-expression through colour"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Belongingness is the C in his chain. Colours and finishes are the attribute; a personalised space, self-expression, memories and attachment are the benefits along the way.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0350",
+   "topic": "Humanising a brand",
+   "q": "Two tyre brands cost the same. One ad shows a father braking safely in the rain with his daughter beside him; the other stresses mileage and performance. In Lecture 27's terms, where does each brand sit?",
+   "c": [
+    "Both in the utilitarian bucket, because both sell tyres",
+    "The family-safety brand in the love bucket, the performance brand in the utilitarian bucket",
+    "The performance brand in the love bucket, because it promises more",
+    "Neither: buckets apply to people, not brands"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Performance is something every brand should offer, so it is transactional: the utilitarian bucket. The safety story adds a human characteristic, which places that brand in the love bucket. Selling the same product doesn't put both in one bucket; the message decides.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0351",
+   "topic": "Humanising a brand",
+   "q": "Why does Lecture 27 treat a performance-and-mileage message as transactional even when the claims are true?",
+   "c": [
+    "Performance claims are usually exaggerated",
+    "Performance is a human characteristic",
+    "Such messages always raise the price",
+    "Every competitor is expected to offer performance, so it gives no relational reason to stay"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He said great performance and value for money are what every brand should offer, which keeps the brand replaceable. The claim being true doesn't change that; the human touch is what makes a relationship.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0352",
+   "topic": "Humanising a brand",
+   "q": "How did Lecture 27 contrast Asian Paints' ads with Berger's?",
+   "c": [
+    "Asian Paints uses ordinary, relatable families for a sense of commonality; Berger uses celebrities",
+    "Asian Paints uses celebrities; Berger uses ordinary families",
+    "Both use celebrity couples",
+    "Asian Paints uses animated characters; Berger uses families"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He contrasted Berger's celebrity couple (Ranveer Singh and Deepika Padukone) with Asian Paints' common people, which lets viewers see themselves in the story.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0353",
+   "topic": "Humanising a brand",
+   "q": "Hutch's campaign starring a pug did better than many celebrity ads. Which concept did Lecture 27 use it to illustrate?",
+   "c": [
+    "Bandwagon effect",
+    "Point of parity",
+    "Anthropomorphism",
+    "Perceptual product category"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Anthropomorphism relates human-like traits to a brand using any living element, animals included. Nothing in the pug ads relied on other buyers' choices (bandwagon) or on a shared feature (point of parity).",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0354",
+   "topic": "Humanising a brand",
+   "q": "According to Lecture 27, what does a Dettol ad mainly sell?",
+   "c": [
+    "Its antiseptic chemical formula",
+    "A lower price than its rivals",
+    "A pleasant fragrance",
+    "Being safe, physically and mentally, from illness"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He said Dettol never sells the antiseptic property itself: that is the attribute. It sells the human characteristic, being safe from illness in body and mind.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0355",
+   "topic": "Humanising a brand",
+   "q": "A pressure-cooker brand's ad shows a grandmother handing her decades-old cooker, and her recipes, to her granddaughter. A rival's ad lists its safety valves and steel grade. Applying Lecture 27, which brand is humanising itself, and how?",
+   "c": [
+    "The second: listing safety valves is a human characteristic",
+    "Neither: kitchen products can't be humanised",
+    "The first: it links an attribute (durability) to a human characteristic (family memories and belonging)",
+    "Both equally, since both describe attributes"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The heirloom story walks from an attribute (it lasts for decades) through benefits to a human characteristic (memories, belonging), just like Asian Paints. A list of valves and steel grades stops at the attribute, which is utilitarian.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0356",
+   "topic": "Humanising a brand",
+   "q": "Why, according to Lecture 27, do brands use celebrities rather than AI avatars?",
+   "c": [
+    "AI avatars cost more than celebrities",
+    "Celebrities give a human touch, so the product isn't seen as a mere object",
+    "Celebrities guarantee lower churn by contract",
+    "Regulators ban AI avatars in ads"
+   ],
+   "a": [
+    1
+   ],
+   "w": "His point was the human touch: a product seen only as an object is replaceable, and people in ads (family, friends, celebrities) give it meaning. Cost and regulation were not part of his argument.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0357",
+   "topic": "Attitude",
+   "q": "What is the say–do gap that Dr. Kapoor flagged in the Deloitte and Ad Council reading?",
+   "c": [
+    "Consumers say they value sustainability but often don't buy that way",
+    "Brands say they are sustainable but don't act on it",
+    "Ads quote one price and the shop charges another",
+    "Shoppers say they want discounts but pay full price"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The say–do gap is on the consumer side: stated support for sustainability that doesn't show up in purchases. A brand claiming more than it does is a different problem, sometimes called greenwashing.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0358",
+   "topic": "Attitude",
+   "q": "According to the Deloitte and Ad Council reading, which are the main barriers to buying sustainable products? (Select all)",
+   "c": [
+    "Price",
+    "Trust",
+    "Too few celebrity endorsements",
+    "Too much choice on the shelf"
+   ],
+   "a": [
+    0,
+    1
+   ],
+   "w": "The reading names price as the main barrier, followed by trust. It actually finds influencer-style endorsement weaker than long-term commitments, and choice overload is not among its barriers.",
+   "lec": 27,
+   "lv": "recall",
+   "multi": true
+  },
+  {
+   "id": "pom-q0359",
+   "topic": "Attitude",
+   "q": "A detergent brand wants more people to buy its biodegradable variant. Which message best follows the Deloitte and Ad Council advice?",
+   "c": [
+    "“Gentle on your child's skin: no phosphates, and it breaks down in 30 days”",
+    "“Shame on you if you still use ordinary detergent”",
+    "“70% off this week only: go green!”",
+    "“We donated to a tree-planting charity last month”"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The reading advises leading with a personal benefit (family health), making specific harm-reduction claims and not scolding. Steep discounts can make shoppers suspicious, and one-off donations build less trust than sustained commitments.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0360",
+   "topic": "Attitude",
+   "q": "Using Lecture 26's decision function, how does the reading explain why stated support for sustainability often doesn't become a purchase?",
+   "c": [
+    "Attitude does not depend on attributes",
+    "Sustainability is one attribute among many, and most shoppers weigh it below taste, value and quality",
+    "Consumers hold no attitude towards sustainability",
+    "Perception never influences attitude"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Attitude = f(object, attributes), and sustainability is just one attribute. The reading finds shoppers rank taste, value and quality above it, so a favourable view of sustainability loses to the attributes they weigh more.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0361",
+   "topic": "Attitude",
+   "q": "According to the reading, what builds the most trust in a brand's sustainability claims?",
+   "c": [
+    "One-off donations",
+    "Influencer posts",
+    "Long-term commitments kept over time",
+    "Being a large, well-known brand"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Sustained commitments beat donations and influencers, and the reading finds niche brands are trusted more than big ones, so size is no shortcut to trust.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0362",
+   "topic": "Product decisions",
+   "q": "How did Lecture 29 define a product?",
+   "c": [
+    "Any physical good sold for a price",
+    "The name and identity given to an offering",
+    "An offering or attribute that enables a consumer to move from an existing state to a desired state",
+    "The set of costs a buyer bears to obtain an offering"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A product is the offering that moves the buyer from the existing to the desired state, as Itch Guard moves you from itchiness to relief. The name and identity describe a brand, and the costs side belongs to customer perceived value.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0363",
+   "topic": "Product decisions",
+   "q": "According to Lecture 29, the value a buyer gets from a product is a function of what?",
+   "c": [
+    "The experience of using it",
+    "Its price alone",
+    "Its advertising budget",
+    "The number of variants on offer"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He said value is a function of the experience, and the experience is built from the values the product offers. Price is only one cost in perceived value.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0364",
+   "topic": "Product decisions",
+   "q": "Students guessed a higher price for the same pair of jeans when told it was Armani rather than Levi's. How did Lecture 29 explain the jump?",
+   "c": [
+    "Anchoring on the first price they heard",
+    "A rise in direct costs",
+    "The scarcity of designer jeans",
+    "Brand equity: the experience they anticipated from the brand raised the value they felt"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He linked the jump to the experience of wearing the brand (being noticed, feeling confident), which raises perceived value: the brand equity built in buyers' minds. Anchoring needs a reference number, and here the jeans were the same while only the brand changed.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0365",
+   "topic": "Product decisions",
+   "q": "What point did Dr. Kapoor make by listing Boroline, Hajmola and Zandu Balm among great products?",
+   "c": [
+    "FMCG products cannot be great products",
+    "Great products need not be high-tech or expensive",
+    "Ayurvedic products sell only on price",
+    "Old brands should be pruned"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The slide was there to undo the assumption that great products are tech-driven and costly. Cheap, everyday products count when they move the buyer to a desired state.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0366",
+   "topic": "Product decisions",
+   "q": "Why, according to Lecture 29, did Tata's tea-and-coffee combo pack fail?",
+   "c": [
+    "It cost far more than two separate packs",
+    "Buyers had a poor experience: most used only one half, and the unused coffee went hard",
+    "Tata lacked distribution for it",
+    "The idea itself was weak"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He called it a great product idea that failed on usage experience: households keep tea and coffee separate, and an unused, hardened half felt bad. With no great experience, value was missing. Price and distribution were not his reasons.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0367",
+   "topic": "Product decisions",
+   "q": "Why did Paper Boat not do well, according to Lecture 29?",
+   "c": [
+    "Its nostalgia theme confused buyers",
+    "It tasted poor",
+    "It was hard to find in shops",
+    "It was relatively expensive"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He called Paper Boat a great product idea that brought back nostalgia; it struggled because it was relatively expensive.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0368",
+   "topic": "Product decisions",
+   "q": "Why did Lecture 29 count Graco's one-push stroller as a great product?",
+   "c": [
+    "It removes a specific pain point: a parent can fold or open it with one hand while holding the baby",
+    "It is the cheapest stroller on the market",
+    "It comes in the most colours",
+    "It connects to a mobile app"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The innovation fits a real usage scene, a working mother at an escalator who can't put her child down. That experience is the source of its value; price, colours and apps played no part.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0369",
+   "topic": "Product decisions",
+   "q": "“Strong products create brands; weak products need branding.” Which conclusion follows from this line in Lecture 29?",
+   "c": [
+    "Branding can replace a weak product's core benefit",
+    "Strong products need no marketing at all",
+    "A product that doesn't solve the problem well has to lean on heavy branding to sell",
+    "Only firms with big budgets have strong products"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A weak product either doesn't solve the problem or doesn't give a great experience, so it needs a lot of branding to sell. That doesn't mean branding can supply a missing core benefit, or that strong products need no marketing: he said price, place and promotion all still matter.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0370",
+   "topic": "Product decisions",
+   "q": "In Lecture 29's terms, what is KitKat?",
+   "c": [
+    "A product of Nestlé",
+    "A product line",
+    "A perceptual product category",
+    "A brand; the crunchy chocolate bar is the product"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Most students say product, but the product is the chocolate bar inside the wrapper. KitKat is the name given to it, the brand; Nestlé is the parent organisation.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0371",
+   "topic": "Product decisions",
+   "q": "Which pairing follows the same logic as “Maggi is the brand, instant noodles are the product”?",
+   "c": [
+    "Nestlé is the brand, KitKat is the product",
+    "Coconut hair oil is the brand, Parachute is the product",
+    "Parachute is the brand, coconut hair oil is the product",
+    "Tata is the product, tea is the brand"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Parachute is the name on the coconut oil you actually use, just as Maggi is the name on the noodles. Nestlé and KitKat are parent organisation and brand, so neither is the product.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0372",
+   "topic": "Product decisions",
+   "q": "Which sequence gives the five product levels from the base up?",
+   "c": [
+    "Basic product → core benefit → augmented product → expected product → potential product",
+    "Core benefit → basic product → expected product → augmented product → potential product",
+    "Core benefit → expected product → basic product → potential product → augmented product",
+    "Potential product → augmented product → expected product → basic product → core benefit"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The hierarchy starts with the core benefit and builds up through basic, expected and augmented to potential. Listing it from potential down reverses the order he said you must build in.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0373",
+   "topic": "Product decisions",
+   "q": "At a hotel, a staff member greets you with a welcome drink and your check-in is already done by the time you reach the counter. Which product level is this?",
+   "c": [
+    "Augmented product",
+    "Expected product",
+    "Basic product",
+    "Potential product"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A seamless check-in exceeds what guests expect, so it is augmented. Clean beds and fresh towels are expected; take-home bathrobes and sleep reports were his potential examples.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0374",
+   "topic": "Product decisions",
+   "q": "A McDonald's burger tasting the same in Delhi as in Jodhpur belongs to which product level?",
+   "c": [
+    "Expected product",
+    "Augmented product",
+    "Core benefit",
+    "Basic product"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Consistent taste and hygiene everywhere is what buyers expect. The burger and Coke themselves are the basic product, hunger is the core benefit, and the Happy Meal toy is augmented.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0375",
+   "topic": "Product decisions",
+   "q": "In Lecture 29's Fossil example, where does a heart-rate monitor sit?",
+   "c": [
+    "Augmented product",
+    "Potential product",
+    "Expected product",
+    "Core benefit"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He listed a touchscreen and Google voice as augmented, and a heart-rate monitor and oximeter as potential, the futuristic level. Accuracy and battery life were expected.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0376",
+   "topic": "Product decisions",
+   "q": "What is the core benefit, as Lecture 29 defined it?",
+   "c": [
+    "The tangible product the buyer first sees",
+    "Features that exceed expectations",
+    "The main functionality without which the product has no value; it can differ from person to person",
+    "Futuristic features a product may add"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The core benefit is the main functionality, such as rest for a hotel. The tangible first look is the basic product, exceeding expectations is augmented, and futuristic features are potential.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0377",
+   "topic": "Product decisions",
+   "q": "You are asked to improve a campus café whose coffee is poor. Following Lecture 29, what should come first?",
+   "c": [
+    "Free Wi-Fi to draw students in",
+    "New interiors",
+    "A loyalty app",
+    "Fixing the coffee and cleanliness, the core and basic levels, before any extras"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Product levels guide strategic investment: start with the core benefit and basic product, then ambience, ordering, waiting time and price, and only then extras such as Wi-Fi. Extras can't make up for poor coffee.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0378",
+   "topic": "Product decisions",
+   "q": "Which questions did Lecture 29 say product levels help a business answer? (Select all)",
+   "c": [
+    "What it must deliver",
+    "How it should differentiate from competitors",
+    "What to improve next",
+    "How large its advertising budget should be"
+   ],
+   "a": [
+    0,
+    1,
+    2
+   ],
+   "w": "He named three questions (what to deliver, how to differentiate, what to improve next) plus where to make strategic investments. Setting an advertising budget was not one of them.",
+   "lec": 29,
+   "lv": "recall",
+   "multi": true
+  },
+  {
+   "id": "pom-q0379",
+   "topic": "Product decisions",
+   "q": "A start-up launches a smartwatch with blood-oxygen tracking and a voice assistant, but its watches keep losing time. What does Lecture 29 predict?",
+   "c": [
+    "It will succeed on the strength of its potential features",
+    "It will succeed if it is priced high enough",
+    "It will struggle, because the core benefit (accurate time) is missing and higher levels can't make up for it",
+    "Accuracy is only an augmented feature, so it matters little"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He said nobody buys a feature-packed watch that doesn't keep accurate time: the base must be rock solid before building up. Accurate timekeeping is the core benefit and its expected standard, not an augmented extra.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0380",
+   "topic": "Product decisions",
+   "q": "In Lecture 30's Netflix example, what is the core benefit?",
+   "c": [
+    "HD streaming",
+    "Personalised recommendations",
+    "Entertainment",
+    "Gaming"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Entertainment is the problem Netflix solves for the buyer. HD streaming is expected, recommendations are augmented and gaming is potential.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0381",
+   "topic": "Product decisions",
+   "q": "Netflix playing in HD with no buffering on every device you own: which product level is this, in Lecture 30's version?",
+   "c": [
+    "Expected product",
+    "Augmented product",
+    "Core benefit",
+    "Potential product"
+   ],
+   "a": [
+    0
+   ],
+   "w": "HD streaming, no buffering and multi-device access are what subscribers take for granted, so they are the expected product. They feel like extras, but they don't exceed expectations the way personalised recommendations do.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0382",
+   "topic": "Product decisions",
+   "q": "Where did Lecture 30 place Netflix's personalised recommendations?",
+   "c": [
+    "Basic product",
+    "Expected product",
+    "Core benefit",
+    "Augmented product"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Recommendations tailored to one viewer exceed what a subscriber expects, so they are augmented. The basic product is the content and the screen or app.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0383",
+   "topic": "Product mix",
+   "q": "In Lecture 30, what is product width?",
+   "c": [
+    "The number of variants of each product",
+    "The number of product lines a company carries",
+    "The total number of items in the mix",
+    "The number of stores that stock the brand"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Width counts product lines (and can also count the categories inside a line). Variants are depth, and the total of all items is length.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0384",
+   "topic": "Product mix",
+   "q": "In Lecture 30, what is product depth?",
+   "c": [
+    "The number of product lines",
+    "The number of variants offered for each product in a line",
+    "The total number of items in the whole mix",
+    "How long a product has been on sale"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Depth counts variants: sizes, colours, storage options. The number of lines is width, and the total of everything is length.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0385",
+   "topic": "Product mix",
+   "q": "In Lecture 30, what is product length?",
+   "c": [
+    "The number of product lines",
+    "The number of variants of one product",
+    "The time a product stays in the portfolio",
+    "The total number of items in the mix, counting every variant in every line"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Length adds up every item across the whole mix, as in company X's 6 + 1 + 4 = 11. It is not a measure of time.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0386",
+   "topic": "Product mix",
+   "q": "A snacks firm has three lines. Snacks: chips in 3 flavours and namkeen in 2 pack sizes. Beverages: one juice in one size. Personal care: a soap in 4 fragrances. Counting as Lecture 30 does, what is its product mix length?",
+   "c": [
+    "10",
+    "3",
+    "4",
+    "5"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Length counts every variant: 3 + 2 + 1 + 4 = 10. Three is the width (lines), five is the snacks line's depth, and four is the soap's depth.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0387",
+   "topic": "Product mix",
+   "q": "For the same firm (snacks line: chips in 3 flavours, namkeen in 2 pack sizes), what is the snacks line's depth as Lecture 30 counts it?",
+   "c": [
+    "2",
+    "3",
+    "5",
+    "10"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Line depth adds the variants of every product in the line: 3 + 2 = 5, as personal care's depth was 1 + 1 + 4 = 6. Two is the number of categories in the line (its width), and 10 is the whole firm's length.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0388",
+   "topic": "Product mix",
+   "q": "For the same firm, what is the width of the snacks line itself?",
+   "c": [
+    "5",
+    "1",
+    "3",
+    "2"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Width can be counted inside a line: the snacks line holds two categories, chips and namkeen. Five is its depth; three is the firm's width.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0389",
+   "topic": "Product mix",
+   "q": "A phone model comes in 3 colours, each with 4 storage options. What is its product depth?",
+   "c": [
+    "7",
+    "4",
+    "12",
+    "3"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Each colour-and-storage combination is a variant: 3 × 4 = 12, the logic of Apple's 4 × 4 = 16. Adding 3 + 4 counts options, not variants.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0390",
+   "topic": "Product mix",
+   "q": "In Dr. Kapoor's walk-through of Fab India's website, which of these counted as product lines? (Select all)",
+   "c": [
+    "Food",
+    "Furniture",
+    "Home living",
+    "The sale section"
+   ],
+   "a": [
+    0,
+    1,
+    2
+   ],
+   "w": "He counted six lines: food, furniture, home living, kids, men and women. Tabs such as sale, collections and custom kurta are ways of browsing, not product lines.",
+   "lec": 30,
+   "lv": "recall",
+   "multi": true
+  },
+  {
+   "id": "pom-q0391",
+   "topic": "Product mix",
+   "q": "A kurta comes in five sizes and two colours. What is its product depth?",
+   "c": [
+    "7",
+    "10",
+    "5",
+    "2"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Every size in every colour is a variant: 5 × 2 = 10, the same logic as his six sizes × three colours = 18.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0392",
+   "topic": "Product mix",
+   "q": "Why did Lecture 30 bring up SKUs (stock keeping units)?",
+   "c": [
+    "Every variant must be tracked and managed, so a deep, long mix makes inventory and operations hard",
+    "SKUs set the price of each variant",
+    "SKUs are how width is measured",
+    "SKUs are another word for brands"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He raised SKUs to show that managing a big mix is a heavy task needing inventory and operations management. They are units of stock, not prices, brands or a width measure.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0393",
+   "topic": "Product mix",
+   "q": "According to Lecture 30, what happens to net revenue if a firm keeps adding products and never removes any?",
+   "c": [
+    "It rises, then plateaus, then declines",
+    "It keeps rising",
+    "It falls from the start",
+    "It stays flat throughout"
+   ],
+   "a": [
+    0
+   ],
+   "w": "New products first widen the reach, so revenue grows. Then the costs of unsold older stock offset the gains (a plateau), and with capital blocked, revenue falls.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0394",
+   "topic": "Product mix",
+   "q": "What causes the plateau in Lecture 30's portfolio graph?",
+   "c": [
+    "Buyers stop buying any of the firm's products",
+    "The costs of unsold older stock (storage, shelf space, advertising, blocked capital) offset sales from new products",
+    "Competitors copy every new product",
+    "Taxes rise with the number of products"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Old stock still costs money to store, to keep on retailers' shelves and to advertise, and it takes space new products need. Those costs balance the new sales, so net revenue stagnates; the market hasn't stopped buying.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0395",
+   "topic": "Product mix",
+   "q": "Apple's store stops selling older iPhones once newer models arrive. Which concept did Lecture 30 name for this?",
+   "c": [
+    "Product depth",
+    "Brand extension",
+    "Product pruning",
+    "Anchoring"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Removing older or poorly selling products from the portfolio, so money can go into new ones, is product pruning.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0396",
+   "topic": "Product mix",
+   "q": "A classmate says, “In Lecture 30, product portfolio means the BCG matrix of SBUs.” What is the best correction?",
+   "c": [
+    "Correct: product portfolio always means the BCG matrix",
+    "Product portfolio means the firm's investment portfolio",
+    "Product portfolio means only the firm's best-selling products",
+    "Here product portfolio means the product mix: the complete set of products offered, measured by width, depth and length"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Dr. Kapoor used product portfolio as a synonym for the product mix. The BCG matrix in the textbook's strategy chapter judges strategic business units, which is a different tool.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0397",
+   "topic": "Cognitive biases",
+   "q": "Two bags both sell for ₹500. One is tagged “Was ₹5,000”, the other “Was ₹1,000”. According to Lecture 31, which will shoppers typically value more, and why?",
+   "c": [
+    "The “Was ₹1,000” bag, because buyers trust smaller numbers",
+    "Both equally, because the price paid is the same",
+    "The “Was ₹5,000” bag, because the higher reference price anchors its perceived worth",
+    "Neither, because anchoring works only on genuine discounts"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He said a product “worth ₹5,000” offered for ₹500 is valued more than one “worth ₹1,000” at the same price, because the initial number anchors its worth. Paying the same doesn't make them equal in the buyer's mind, and a genuine discount is the case where anchoring does not apply.",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0398",
+   "topic": "Cognitive biases",
+   "q": "When, according to Lecture 31, is a price cut not an anchoring bias?",
+   "c": [
+    "When it is a genuine discount from a real earlier price",
+    "When the discount is above 50%",
+    "When the product is a luxury good",
+    "When the buyer is a repeat customer"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He said a genuine discount is just a discount. The bias comes from an inflated reference price; neither the size of the cut, the product type nor the buyer's history changes that.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0399",
+   "topic": "Product mix",
+   "q": "Asked for the “depth” of a parent company with 11 variants across its three lines, the class answered 11. What was Dr. Kapoor's correction?",
+   "c": [
+    "It should be 3, the number of lines",
+    "Depth is width × variants, so 33",
+    "Depth cannot be found for a company with three lines",
+    "The number is right, but at company level it is called product mix length; depth is measured within a line"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He accepted 11 but changed the word: adding every variant across the company gives length. Three is the width, and nothing in his method multiplies width by variants.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0400",
+   "topic": "Product mix",
+   "q": "In the live session's count of Apple India's product width, which of these counted as product lines? (Select all)",
+   "c": [
+    "Accessories",
+    "Entertainment (Apple Music, Fitness, Books)",
+    "Support",
+    "Home (Apple TV, HomePod)"
+   ],
+   "a": [
+    0,
+    1,
+    3
+   ],
+   "w": "His eight were Mac, iPad, iPhone, Watch, AirPods, Home, Entertainment and Accessories. Support was left out because it serves products already bought and is not charged for.",
+   "lec": 31,
+   "lv": "apply",
+   "multi": true
+  },
+  {
+   "id": "pom-q0401",
+   "topic": "Product mix",
+   "q": "Why did Support not count as one of Apple's product lines in Lecture 31?",
+   "c": [
+    "It is not shown on the website",
+    "It serves products already bought and isn't charged for; if Apple charged for it, it would count",
+    "It belongs to the Accessories line",
+    "Services can never be part of a product mix"
+   ],
+   "a": [
+    1
+   ],
+   "w": "His test was whether it earns money and has to be managed as an offering. Free support fails that test, but he said a paid support service would qualify, so services are not excluded as such.",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0402",
+   "topic": "Product mix",
+   "q": "Why, according to Lecture 31, does Apple stop selling older iPhones when newer ones launch?",
+   "c": [
+    "Older models can no longer be sold legally",
+    "An older, cheaper model on sale would pull buyers from the new one, and cutting the new one's price would hurt the brand",
+    "Retailers refuse to stock them",
+    "Older models earn higher margins"
+   ],
+   "a": [
+    1
+   ],
+   "w": "If a 14 were still on sale, few would pay ₹70,000–80,000 for a 17, and dropping the 17's price would damage the brand image. So the old model goes. Retailers do still sell off their old stock.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0403",
+   "topic": "Product mix",
+   "q": "Who cuts the price of an older iPhone before it disappears, according to Lecture 31?",
+   "c": [
+    "Apple, on its own store",
+    "The government, through price controls",
+    "Nobody: prices stay fixed until the model is withdrawn",
+    "Retailers holding the stock, because inventory is a cost to them"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He said Apple itself doesn't reduce prices; retailers do, because stock sitting with them is a cost they need to clear.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0404",
+   "topic": "Product mix",
+   "q": "A shampoo variant and a graphics card both stop selling well. According to Lecture 31, how will their phase-outs differ?",
+   "c": [
+    "The shampoo, a low-involvement FMCG item, is usually phased out faster; the card, used for years, more slowly",
+    "The card is phased out faster, because tech changes quickly",
+    "Neither is phased out, because both still sell a little",
+    "Both go at the same speed, because pruning rules are fixed"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He linked the pace to involvement: FMCG products are consumed within a month or two and can be dropped quickly, while high-involvement tech such as GPUs is used for years and phased out over a longer time. Both are eventually phased out.",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0405",
+   "topic": "Product mix",
+   "q": "In FMCG firms, who did Dr. Kapoor describe as the “mini-CEO” of a product line?",
+   "c": [
+    "The sales representative",
+    "The retailer",
+    "The brand manager",
+    "The chief financial officer"
+   ],
+   "a": [
+    2
+   ],
+   "w": "FMCG firms such as Dove, L'Oréal, Plum and Himalaya give each product line a brand manager who runs it like a mini-CEO, deciding which variants stay and which go.",
+   "lec": 31,
+   "lv": "recall"
   }
  ],
  "briefs": {
@@ -7772,6 +9534,11 @@ HUB.addCourse({
   "lec-05s",
   "lec-09s",
   "lec-11s",
-  "lec-28"
+  "lec-28",
+  "lec-26",
+  "lec-27",
+  "lec-29",
+  "lec-30",
+  "lec-31"
  ]
 });

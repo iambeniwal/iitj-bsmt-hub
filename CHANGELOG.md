@@ -10,6 +10,23 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.4.3] — 2026-10-30
+
+### Added
+- **Financial Accounting: the faculty's practice set (29 October), all 25 questions solved** step by
+  step, each placed in its unit and labelled by whether it is on Quiz 2, plus new MCQs in the same
+  style; and Lectures 27–29: analysing the cash flow statement (Compass Company's six questions,
+  Pioneer Limited), the start of financial statement analysis (a new unit), and Live Lecture 6.
+- **Algorithmic Thinking: selection sort and insertion sort (L#26–27)** with traced passes,
+  comparisons and moves, and Live Lecture 6 (the search algorithms deck). These are for the
+  end-term, not Quiz 2.
+- **Economic & Business History: the impact of the World Wars on business, and Indian
+  entrepreneurs under colonial rule (L#27–28)**, opening Module 5. Both come after the Quiz 2 list.
+- **Principles of Marketing: five lectures (L#26–27, 29–31)**: attitude and humanising a brand, the
+  ABC model, product and product levels, the product mix, and Live Lecture 10. Where the lecture's
+  product-level and product-mix counts differ from Kotler & Armstrong's, the notes say the lecture's
+  version is the one to use.
+
 ## [2.4.2] — 2026-10-30
 
 ### Added

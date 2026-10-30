@@ -157,6 +157,24 @@ HUB.addCourse({
    "Week 10 — Bubble Sort",
    "Sorting, bubble sort passes, O(n²)",
    "rec"
+  ],
+  [
+   26,
+   "Week 11 — Selection Sort",
+   "Select and swap: min, max, bidirectional",
+   "rec"
+  ],
+  [
+   27,
+   "Week 11 — Insertion Sort",
+   "Shift and insert, variants, nearly sorted lists",
+   "rec"
+  ],
+  [
+   28,
+   "Week 11 — Live Lecture 6",
+   "Complexity and search revision + Quiz 2 brief",
+   "live"
   ]
  ],
  "units": [
@@ -352,23 +370,23 @@ HUB.addCourse({
   {
    "id": "complexity",
    "title": "Algorithm analysis &amp; Big O",
-   "tag": "Lecture 21 · Module 4 · + textbook",
+   "tag": "Lectures 21, 28 · Module 4 · + textbook",
    "lede": "How fast the work grows as the data grows: best, worst and average cases, the Big O classes from O(1) to O(2ⁿ), and the cost of every operation on the structures you already know.",
    "topics": [
     {
      "t": "Algorithmic complexity and the three cases",
-     "src": "L#21",
-     "h": "\n  <div class=\"def\"><b>Algorithmic complexity</b> describes how much time an algorithm needs <b>as the size of the input grows</b>. It is about the <b>growth rate</b>, not the exact running time in seconds or hours: what happens when an array of 100 elements becomes one of 10 lakh?</div>\n  <p style=\"font-size:14.5px\">He held this topic back until Module 4 (search) because Modules 4 and 5 (sorting) offer several algorithms for the same job, and complexity is how you decide which is more efficient. Efficiency can mean time or space, but storage is cheap per unit these days, so the course focuses on <strong>time complexity</strong>. Users type the first few letters of a station or product and expect suggestions at once; a company that saves space but lets its site lag will lose customers.</p>\n  <h4>Why a manager cares, not only the programmer</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Criterion</th><th>The question it asks</th></tr></thead><tbody>\n   <tr><td><strong>Feasibility</strong></td><td>Is it possible at all?</td></tr>\n   <tr><td><strong>Cost</strong></td><td>What will it cost, mainly in computing resources?</td></tr>\n   <tr><td><strong>Speed</strong></td><td>How quickly can it deliver the result?</td></tr>\n   <tr><td><strong>Scalability</strong></td><td>Can it cope as the data grows? Excel is fine for 100 customers; at 10 lakh customers it is not</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\">Two algorithms can solve the same business problem with very different demands on time and space, and that difference shows up in cost and in customer experience.</p>\n  <h4>Best, worst and average case</h4>\n  <p style=\"font-size:14.5px\">An algorithm is a general solution, and how much work it does depends on where the answer happens to be. Searching for a friend's house, you might find it at the first door or only at the very last.</p>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>Best case:</strong> the answer is reached with the least work</li>\n   <li><strong>Worst case:</strong> the most work is needed</li>\n   <li><strong>Average case:</strong> the typical amount of work, somewhere in between</li>\n  </ul>\n  <p style=\"font-size:14.5px\"><strong>His housing-society exercise.</strong> A society of 24 numbered houses has a single entrance, gate A. The houses right by the gate (3 and 4 in his plan) need the least walking, so they are the best case. The two farthest from the gate (19 and 24) are the worst case. <strong>Every house in between</strong> counts as the average case, not just a middle band. This still does not say what happens when the society grows into a large multi-tower complex. That question is what Big O answers.</p>\n  <div class=\"def\"><b>From the lecture (L#21):</b> three in-class exercises: (1) pick the best-, worst- and average-case houses; (2) put house-search situations in order of increasing complexity; (3) give the Big O of push, pop and search on a stack and of enqueue, dequeue and search on a queue. He said <b>Big O is the only notation this course needs</b> (others exist), and that you <b>do not need the mathematics</b> behind it, but you should be able to reason out an operation's complexity from how it works.</div>"
+     "src": "L#21 · L#28",
+     "h": "\n  <div class=\"def\"><b>Algorithmic complexity</b> describes how much time an algorithm needs <b>as the size of the input grows</b>. It is about the <b>growth rate</b>, not the exact running time in seconds or hours: what happens when an array of 100 elements becomes one of 10 lakh?</div>\n  <p style=\"font-size:14.5px\">He held this topic back until Module 4 (search) because Modules 4 and 5 (sorting) offer several algorithms for the same job, and complexity is how you decide which is more efficient. Efficiency can mean time or space, but storage is cheap per unit these days, so the course focuses on <strong>time complexity</strong>. Users type the first few letters of a station or product and expect suggestions at once; a company that saves space but lets its site lag will lose customers.</p>\n  <h4>Why a manager cares, not only the programmer</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Criterion</th><th>The question it asks</th></tr></thead><tbody>\n   <tr><td><strong>Feasibility</strong></td><td>Is it possible at all?</td></tr>\n   <tr><td><strong>Cost</strong></td><td>What will it cost, mainly in computing resources?</td></tr>\n   <tr><td><strong>Speed</strong></td><td>How quickly can it deliver the result?</td></tr>\n   <tr><td><strong>Scalability</strong></td><td>Can it cope as the data grows? Excel is fine for 100 customers; at 10 lakh customers it is not</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\">Two algorithms can solve the same business problem with very different demands on time and space, and that difference shows up in cost and in customer experience.</p>\n  <h4>Best, worst and average case</h4>\n  <p style=\"font-size:14.5px\">An algorithm is a general solution, and how much work it does depends on where the answer happens to be. Searching for a friend's house, you might find it at the first door or only at the very last.</p>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>Best case:</strong> the answer is reached with the least work</li>\n   <li><strong>Worst case:</strong> the most work is needed</li>\n   <li><strong>Average case:</strong> the typical amount of work, somewhere in between</li>\n  </ul>\n  <p style=\"font-size:14.5px\"><strong>His housing-society exercise.</strong> A society of 24 numbered houses has a single entrance, gate A. The houses right by the gate (3 and 4 in his plan) need the least walking, so they are the best case. The two farthest from the gate (19 and 24) are the worst case. <strong>Every house in between</strong> counts as the average case, not just a middle band. This still does not say what happens when the society grows into a large multi-tower complex. That question is what Big O answers.</p>\n  <div class=\"def\"><b>From the lecture (L#21):</b> three in-class exercises: (1) pick the best-, worst- and average-case houses; (2) put house-search situations in order of increasing complexity; (3) give the Big O of push, pop and search on a stack and of enqueue, dequeue and search on a queue. He said <b>Big O is the only notation this course needs</b> (others exist), and that you <b>do not need the mathematics</b> behind it, but you should be able to reason out an operation's complexity from how it works.</div><h4>Live Lecture 6 additions</h4><div class=\"def\"><b>From the lecture (L#28), on the quiz and the exam:</b><ul><li>This session’s material, complexity and search (Module 4), <b>will not be in Quiz 2</b>. Quiz 2 covers only the non-linear data structures. Module 4 is part of the full course, so it counts for the <b>final exam</b></li><li><b>Best of two quizzes:</b> the higher of your Quiz 1 and Quiz 2 scores counts. He put it as the quiz counted out of 40 and the final exam as 60 marks. The course outline’s split, shown on this hub’s course page, is 30% quizzes and 70% end-term; 40 is also the quiz paper’s own total. If the weighting matters to you, ask in the TA session</li><li><b>Attend at least one quiz.</b> Missed Quiz 1? Make sure you sit Quiz 2. Miss both and the quiz component is zero, leaving the final exam alone to carry you through</li><li><b>What comes next:</b> next week’s session is a TA session for clearing doubts before the quiz; no class over the Diwali weekend; after Diwali, the last live class, on sorting</li></ul></div><p style=\"font-size:14.5px\"><strong>Search and sort, the two workhorses.</strong> Most business algorithms lean on both, often one after the other. Pulling up a student’s results on the ERP by roll number is a search; printing a transcript with semesters 1 to 8 in order is a sort; an e-commerce site first searches for the items matching what you typed, then sorts them by relevance or by price. That is why Modules 4 and 5 are search and sort.</p><p style=\"font-size:14.5px\"><strong>Which case does the course use?</strong> How much work an algorithm does depends on how the data happens to be arranged, hence best, average and worst cases. In this course he mostly reasons about the <strong>average case</strong>, assuming the data is spread evenly. And of time and space, time is the usual worry: space matters only when an algorithm needs too much of it.</p>"
     },
     {
      "t": "Big O growth classes, as the lecture taught them",
-     "src": "L#21",
-     "h": "\n  <div class=\"def\"><b>Big O</b> (O for <b>order</b>, as in order of magnitude) states how the work an algorithm needs grows as the input grows: if the input increases, in what proportion does the time requirement increase? It is written O(…), e.g. O(1) or O(n), and every algorithm has its own.</div>\n  <div class=\"scroller\"><table><thead><tr><th>Class</th><th>Growth</th><th>His explanation</th><th>Steps at n = 16</th></tr></thead><tbody>\n   <tr><td><strong>O(1)</strong> constant</td><td>None</td><td>Same effort whatever the size: you go straight to the answer</td><td style=\"font-family:var(--mono)\">1</td></tr>\n   <tr><td><strong>O(log n)</strong> logarithmic</td><td>Very slow</td><td>Divide the problem and ignore the part that cannot hold the answer, as when you open a dictionary in the middle and know which way to turn</td><td style=\"font-family:var(--mono)\">4</td></tr>\n   <tr><td><strong>O(n)</strong> linear</td><td>In step with n</td><td>Double the input, double the time; four times the input, four times the time</td><td style=\"font-family:var(--mono)\">16</td></tr>\n   <tr><td><strong>O(n log n)</strong></td><td>A little faster than n</td><td>Grows faster than O(n), so the algorithm is slower, but still manageable</td><td style=\"font-family:var(--mono)\">64</td></tr>\n   <tr><td><strong>O(n²)</strong> quadratic</td><td>Rapid</td><td>Input 2 → effort 4, input 5 → effort 25. Typical when each new input is compared with every earlier input (to check it is unique, say)</td><td style=\"font-family:var(--mono)\">256</td></tr>\n   <tr><td><strong>O(2ⁿ)</strong> exponential</td><td>Explosive</td><td>Every decision has two options, so a decision tree doubles its paths at each level</td><td style=\"font-family:var(--mono)\">65,536</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:13.5px;color:var(--ink-3)\">His chart marked n = 16 with a dashed line; the last column gives the step counts each class implies there. O(n³) and beyond are even more resource-hungry, and some problems cannot be solved at all.</p>\n  <h4>Fast and slow: say which one you mean</h4>\n  <p style=\"font-size:14.5px\">He warned against mixing two ways of talking. A <strong>fast algorithm</strong> has <strong>low complexity</strong>: its work <strong>grows slowly</strong>. A <strong>slow algorithm</strong> has <strong>high complexity</strong>: its work <strong>grows fast</strong>. So O(n²) has a faster growth rate than O(n), which makes it the slower algorithm.</p>\n  <h4>The chessboard legend</h4>\n  <p style=\"font-size:14.5px\">The inventor of chess asks a delighted king for rice: one grain on the first square, then more on each square after, either squaring the square's number or, in the better-known version, <strong>doubling</strong> it each time (1, 2, 4, 8…). The king thinks it a trifle; over 64 squares the numbers become astronomical. The lesson: an algorithm that runs happily on small inputs can become unmanageable once the input is big.</p>\n  <h4>House search, ranked by complexity</h4>\n  <p style=\"font-size:14.5px\">His second exercise mapped ways of finding a friend's home (no shared map pin) onto Big O, roughly, since the exact class always depends on the actual algorithm:</p>\n  <div class=\"scroller\"><table><thead><tr><th>Situation</th><th>Roughly like</th></tr></thead><tbody>\n   <tr><td>You have the exact map address</td><td><strong>O(1)</strong>: go straight there</td></tr>\n   <tr><td>A flat such as D-321 in a complex of 2,000 flats split into named towers</td><td><strong>O(log n)</strong>: go to tower D and ignore the others</td></tr>\n   <tr><td>A numbered colony of 20 independent houses</td><td><strong>O(n)</strong>: the bigger the colony, the more houses to check</td></tr>\n   <tr><td>No number, only \"behind X, near Y\", in a locality you know</td><td><strong>O(n log n)</strong>: you still have to ask around</td></tr>\n   <tr><td>Only the name of a small village</td><td>Much harder: door to door</td></tr>\n   <tr><td>Only the name of a city</td><td>Hardest; for ordinary effort, practically unsolvable</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:13.5px;color:var(--ink-3)\">The rows here are sorted by growth rate. In his walk-through he took the 20-house colony (O(n)) before the tower complex (O(log n)), but O(log n) is the less complex of the two.</p>\n  <h4>What business can live with</h4>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>O(1)</strong> is ideal but rare: you seldom know the exact location in advance, so some search is usually needed</li>\n   <li><strong>O(log n)</strong> and <strong>O(n)</strong> are what business is typically happy with. O(log n) is faster, but only some problems allow you to keep dividing them; O(n log n) is still worth a try</li>\n   <li><strong>O(n²), O(n³), O(2ⁿ)</strong> need too much time and space as input grows; avoid them unless there is no other option</li>\n  </ul>\n  <div class=\"def\">When the exact algorithm is too complex, businesses use a <b>heuristic</b>: a <b>rule of thumb</b> that gives a good-enough answer close to the best, though not necessarily the best. He called it the \"chalega\" answer: it works.</div><!--viz:atb-house-search-ladder--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A ladder of six house-search situations from O(1) with an exact map address, through O(log n) for a tower-coded flat, O(n) for a numbered colony and O(n log n) for a landmark address, down to a village name and a city name only, the hardest.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Finding a friend's home, from easiest to hardest</div><div style=\"display:flex;flex-direction:column;gap:4px;font-size:14px;max-width:440px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--good);background:var(--good-soft)\"><b style=\"font-family:var(--mono);min-width:92px\">O(1)</b><span style=\"color:var(--ink-2)\">exact map address</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1\">↓</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--blue);background:var(--blue-soft)\"><b style=\"font-family:var(--mono);min-width:92px\">O(log n)</b><span style=\"color:var(--ink-2)\">flat D-321: tower D only</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1\">↓</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><b style=\"font-family:var(--mono);min-width:92px\">O(n)</b><span style=\"color:var(--ink-2)\">20-house numbered colony</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1\">↓</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><b style=\"font-family:var(--mono);min-width:92px\">O(n log n)</b><span style=\"color:var(--ink-2)\">“behind X, near Y”</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1\">↓</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--clay);background:var(--clay-soft)\"><b style=\"font-family:var(--mono);min-width:92px\">much worse</b><span style=\"color:var(--ink-2)\">only the village name</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1\">↓</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--bad);background:var(--bad-soft)\"><b style=\"font-family:var(--mono);min-width:92px\">hardest</b><span style=\"color:var(--ink-2)\">only the city name</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The less you can rule out at each step, the faster the work grows.</figcaption></figure><!--/viz:atb-house-search-ladder--><!--viz:atb-doubling-decision-tree--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Binary decision tree with four levels. The number of possible paths doubles at every level: 1, 2, 4, 8.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Why two options per decision gives O(2ⁿ)</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 276\" role=\"img\" aria-label=\"A decision tree where every node has two branches: one start node, then 2, 4 and 8 nodes on the next three levels. One path is highlighted.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M270.0,45 L200.0,83\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M270.0,45 L340.0,83\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M200.0,105 L165.0,143\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M200.0,105 L235.0,143\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M340.0,105 L305.0,143\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M340.0,105 L375.0,143\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M165.0,165 L147.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M165.0,165 L182.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M235.0,165 L217.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M235.0,165 L252.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M305.0,165 L287.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M305.0,165 L322.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M375.0,165 L357.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M375.0,165 L392.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M270.0,45 L340.0,83\" style=\"stroke:var(--blue);stroke-width:2;fill:none\"/><path d=\"M340.0,105 L305.0,143\" style=\"stroke:var(--blue);stroke-width:2;fill:none\"/><path d=\"M305.0,165 L322.5,203\" style=\"stroke:var(--blue);stroke-width:2;fill:none\"/><circle cx=\"270.0\" cy=\"34\" r=\"11\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><circle cx=\"200.0\" cy=\"94\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"340.0\" cy=\"94\" r=\"11\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><circle cx=\"165.0\" cy=\"154\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"235.0\" cy=\"154\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"305.0\" cy=\"154\" r=\"11\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><circle cx=\"375.0\" cy=\"154\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"147.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"182.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"217.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"252.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"287.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"322.5\" cy=\"214\" r=\"11\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><circle cx=\"357.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"392.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"14\" y=\"39\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">start</text><text x=\"14\" y=\"99\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">2 paths</text><text x=\"14\" y=\"159\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">4 paths</text><text x=\"14\" y=\"219\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">8 paths</text><text x=\"220\" y=\"262\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:15px\">20 decisions → 1,048,576 paths</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each extra decision doubles the paths, so the work explodes even for modest n.</figcaption></figure><!--/viz:atb-doubling-decision-tree-->"
+     "src": "L#21 · L#28",
+     "h": "\n  <div class=\"def\"><b>Big O</b> (O for <b>order</b>, as in order of magnitude) states how the work an algorithm needs grows as the input grows: if the input increases, in what proportion does the time requirement increase? It is written O(…), e.g. O(1) or O(n), and every algorithm has its own.</div>\n  <div class=\"scroller\"><table><thead><tr><th>Class</th><th>Growth</th><th>His explanation</th><th>Steps at n = 16</th></tr></thead><tbody>\n   <tr><td><strong>O(1)</strong> constant</td><td>None</td><td>Same effort whatever the size: you go straight to the answer</td><td style=\"font-family:var(--mono)\">1</td></tr>\n   <tr><td><strong>O(log n)</strong> logarithmic</td><td>Very slow</td><td>Divide the problem and ignore the part that cannot hold the answer, as when you open a dictionary in the middle and know which way to turn</td><td style=\"font-family:var(--mono)\">4</td></tr>\n   <tr><td><strong>O(n)</strong> linear</td><td>In step with n</td><td>Double the input, double the time; four times the input, four times the time</td><td style=\"font-family:var(--mono)\">16</td></tr>\n   <tr><td><strong>O(n log n)</strong></td><td>A little faster than n</td><td>Grows faster than O(n), so the algorithm is slower, but still manageable</td><td style=\"font-family:var(--mono)\">64</td></tr>\n   <tr><td><strong>O(n²)</strong> quadratic</td><td>Rapid</td><td>Input 2 → effort 4, input 5 → effort 25. Typical when each new input is compared with every earlier input (to check it is unique, say)</td><td style=\"font-family:var(--mono)\">256</td></tr>\n   <tr><td><strong>O(2ⁿ)</strong> exponential</td><td>Explosive</td><td>Every decision has two options, so a decision tree doubles its paths at each level</td><td style=\"font-family:var(--mono)\">65,536</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:13.5px;color:var(--ink-3)\">His chart marked n = 16 with a dashed line; the last column gives the step counts each class implies there. O(n³) and beyond are even more resource-hungry, and some problems cannot be solved at all.</p>\n  <h4>Fast and slow: say which one you mean</h4>\n  <p style=\"font-size:14.5px\">He warned against mixing two ways of talking. A <strong>fast algorithm</strong> has <strong>low complexity</strong>: its work <strong>grows slowly</strong>. A <strong>slow algorithm</strong> has <strong>high complexity</strong>: its work <strong>grows fast</strong>. So O(n²) has a faster growth rate than O(n), which makes it the slower algorithm.</p>\n  <h4>The chessboard legend</h4>\n  <p style=\"font-size:14.5px\">The inventor of chess asks a delighted king for rice: one grain on the first square, then more on each square after, either squaring the square's number or, in the better-known version, <strong>doubling</strong> it each time (1, 2, 4, 8…). The king thinks it a trifle; over 64 squares the numbers become astronomical. The lesson: an algorithm that runs happily on small inputs can become unmanageable once the input is big.</p>\n  <h4>House search, ranked by complexity</h4>\n  <p style=\"font-size:14.5px\">His second exercise mapped ways of finding a friend's home (no shared map pin) onto Big O, roughly, since the exact class always depends on the actual algorithm:</p>\n  <div class=\"scroller\"><table><thead><tr><th>Situation</th><th>Roughly like</th></tr></thead><tbody>\n   <tr><td>You have the exact map address</td><td><strong>O(1)</strong>: go straight there</td></tr>\n   <tr><td>A flat such as D-321 in a complex of 2,000 flats split into named towers</td><td><strong>O(log n)</strong>: go to tower D and ignore the others</td></tr>\n   <tr><td>A numbered colony of 20 independent houses</td><td><strong>O(n)</strong>: the bigger the colony, the more houses to check</td></tr>\n   <tr><td>No number, only \"behind X, near Y\", in a locality you know</td><td><strong>O(n log n)</strong>: you still have to ask around</td></tr>\n   <tr><td>Only the name of a small village</td><td>Much harder: door to door</td></tr>\n   <tr><td>Only the name of a city</td><td>Hardest; for ordinary effort, practically unsolvable</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:13.5px;color:var(--ink-3)\">The rows here are sorted by growth rate. In his walk-through he took the 20-house colony (O(n)) before the tower complex (O(log n)), but O(log n) is the less complex of the two.</p>\n  <h4>What business can live with</h4>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>O(1)</strong> is ideal but rare: you seldom know the exact location in advance, so some search is usually needed</li>\n   <li><strong>O(log n)</strong> and <strong>O(n)</strong> are what business is typically happy with. O(log n) is faster, but only some problems allow you to keep dividing them; O(n log n) is still worth a try</li>\n   <li><strong>O(n²), O(n³), O(2ⁿ)</strong> need too much time and space as input grows; avoid them unless there is no other option</li>\n  </ul>\n  <div class=\"def\">When the exact algorithm is too complex, businesses use a <b>heuristic</b>: a <b>rule of thumb</b> that gives a good-enough answer close to the best, though not necessarily the best. He called it the \"chalega\" answer: it works.</div><!--viz:atb-house-search-ladder--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A ladder of six house-search situations from O(1) with an exact map address, through O(log n) for a tower-coded flat, O(n) for a numbered colony and O(n log n) for a landmark address, down to a village name and a city name only, the hardest.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Finding a friend's home, from easiest to hardest</div><div style=\"display:flex;flex-direction:column;gap:4px;font-size:14px;max-width:440px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--good);background:var(--good-soft)\"><b style=\"font-family:var(--mono);min-width:92px\">O(1)</b><span style=\"color:var(--ink-2)\">exact map address</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1\">↓</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--blue);background:var(--blue-soft)\"><b style=\"font-family:var(--mono);min-width:92px\">O(log n)</b><span style=\"color:var(--ink-2)\">flat D-321: tower D only</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1\">↓</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><b style=\"font-family:var(--mono);min-width:92px\">O(n)</b><span style=\"color:var(--ink-2)\">20-house numbered colony</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1\">↓</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><b style=\"font-family:var(--mono);min-width:92px\">O(n log n)</b><span style=\"color:var(--ink-2)\">“behind X, near Y”</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1\">↓</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--clay);background:var(--clay-soft)\"><b style=\"font-family:var(--mono);min-width:92px\">much worse</b><span style=\"color:var(--ink-2)\">only the village name</span></div><div style=\"color:var(--ink-3);padding-left:14px;line-height:1\">↓</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:7px 11px;border-radius:4px;border:1px solid var(--bad);background:var(--bad-soft)\"><b style=\"font-family:var(--mono);min-width:92px\">hardest</b><span style=\"color:var(--ink-2)\">only the city name</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The less you can rule out at each step, the faster the work grows.</figcaption></figure><!--/viz:atb-house-search-ladder--><!--viz:atb-doubling-decision-tree--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Binary decision tree with four levels. The number of possible paths doubles at every level: 1, 2, 4, 8.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Why two options per decision gives O(2ⁿ)</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 276\" role=\"img\" aria-label=\"A decision tree where every node has two branches: one start node, then 2, 4 and 8 nodes on the next three levels. One path is highlighted.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M270.0,45 L200.0,83\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M270.0,45 L340.0,83\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M200.0,105 L165.0,143\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M200.0,105 L235.0,143\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M340.0,105 L305.0,143\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M340.0,105 L375.0,143\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M165.0,165 L147.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M165.0,165 L182.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M235.0,165 L217.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M235.0,165 L252.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M305.0,165 L287.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M305.0,165 L322.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M375.0,165 L357.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M375.0,165 L392.5,203\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M270.0,45 L340.0,83\" style=\"stroke:var(--blue);stroke-width:2;fill:none\"/><path d=\"M340.0,105 L305.0,143\" style=\"stroke:var(--blue);stroke-width:2;fill:none\"/><path d=\"M305.0,165 L322.5,203\" style=\"stroke:var(--blue);stroke-width:2;fill:none\"/><circle cx=\"270.0\" cy=\"34\" r=\"11\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><circle cx=\"200.0\" cy=\"94\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"340.0\" cy=\"94\" r=\"11\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><circle cx=\"165.0\" cy=\"154\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"235.0\" cy=\"154\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"305.0\" cy=\"154\" r=\"11\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><circle cx=\"375.0\" cy=\"154\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"147.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"182.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"217.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"252.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"287.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"322.5\" cy=\"214\" r=\"11\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><circle cx=\"357.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"392.5\" cy=\"214\" r=\"11\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"14\" y=\"39\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">start</text><text x=\"14\" y=\"99\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">2 paths</text><text x=\"14\" y=\"159\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">4 paths</text><text x=\"14\" y=\"219\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">8 paths</text><text x=\"220\" y=\"262\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:15px\">20 decisions → 1,048,576 paths</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each extra decision doubles the paths, so the work explodes even for modest n.</figcaption></figure><!--/viz:atb-doubling-decision-tree--><h4>Live Lecture 6 additions</h4><ul style=\"font-size:14.5px\"><li><strong>O(log n) does not need halving.</strong> Whenever each step cuts the problem by a <strong>fixed ratio</strong>, the work grows as log n. Binary search and a balanced BST cut it in half, but a step that removes a third, or two-thirds, of what is left is O(log n) too</li><li><strong>The L#28 slide in brief:</strong> O(1), about the same time whatever the input; O(log n), very slow growth, from repeatedly shrinking the problem; O(n), in direct proportion to the input; O(n log n), a little faster than the input but still scalable for large data; O(n²), rapid, because each item may be compared with many others; O(2ⁿ), the work <strong>doubles with every extra item</strong></li><li><strong>His numbers for n²:</strong> a problem of size 5 needs 25 steps, one of size 100 needs 10,000</li><li><strong>What a business can live with:</strong> O(1) is rare; O(log n) is the one to hope for; O(n) and O(n log n) are manageable. O(n²) and O(2ⁿ) are avoided for large problems even when they do solve them</li></ul>"
     },
     {
      "t": "Big O of data-structure operations",
-     "src": "L#21",
-     "h": "\n  <p style=\"font-size:14.5px\">He recapped the operations from Modules 2 and 3 and gave each a Big O. The logic is always the same: if the location is fixed or known, the work does not grow with the size of the structure; if you first have to search, it does.</p>\n  <div class=\"def\"><b>O(1) does not mean one operation.</b> It means the number of operations stays the same whatever the size. Adding a song to the end of a playlist takes the same few pointer changes whether the playlist has 4 songs or 4,000.</div>\n  <div class=\"scroller\"><table><thead><tr><th>Structure</th><th>Operation</th><th>Big O</th><th>Why</th></tr></thead><tbody>\n   <tr><td rowspan=\"5\"><strong>Array</strong></td><td>Read, update or delete <strong>by index</strong></td><td><strong>O(1)</strong></td><td>Go straight to the position, whatever the length</td></tr>\n   <tr><td>Search; update or delete <strong>by searching</strong></td><td><strong>O(n)</strong></td><td>Check items one by one; the bigger the array, the longer it takes</td></tr>\n   <tr><td>Insert <strong>at the end</strong></td><td><strong>O(1)</strong></td><td>Nothing has to move</td></tr>\n   <tr><td>Insert <strong>at the beginning</strong></td><td><strong>O(n)</strong></td><td>Every element shifts one place first</td></tr>\n   <tr><td>Insert <strong>in the middle</strong></td><td><strong>O(n)</strong></td><td>Every later element shifts; the number of moves grows with the size</td></tr>\n   <tr><td rowspan=\"2\"><strong>Linked list</strong></td><td>Add <strong>at the end</strong></td><td><strong>O(1)</strong></td><td>The last node points to null; link the new node to it</td></tr>\n   <tr><td>Add <strong>anywhere else</strong> (\"after song 2\")</td><td><strong>O(n)</strong></td><td>You must first search for the spot, which may be near the end</td></tr>\n   <tr><td rowspan=\"2\"><strong>Stack</strong></td><td>Push, pop</td><td><strong>O(1)</strong></td><td>Always at the top: the location is fixed</td></tr>\n   <tr><td>Search</td><td><strong>O(n)</strong></td><td>Pop items one by one until you reach the one you want, like toys piled in a sack</td></tr>\n   <tr><td rowspan=\"2\"><strong>Queue</strong></td><td>Enqueue (rear), dequeue (front)</td><td><strong>O(1)</strong></td><td>Both locations are fixed</td></tr>\n   <tr><td>Search</td><td><strong>O(n)</strong></td><td>Dequeue items until you reach the one you want</td></tr>\n   <tr><td rowspan=\"2\"><strong>Tree</strong></td><td>Traverse or search a <strong>general tree</strong></td><td><strong>O(n)</strong></td><td>No order to exploit, so every node may be visited</td></tr>\n   <tr><td>Search a <strong>binary search tree</strong></td><td><strong>O(log n)</strong></td><td>Smaller values sit left, larger right, so each comparison discards one whole side</td></tr>\n   <tr><td><strong>Graph</strong></td><td>Traverse or search (BFS, DFS)</td><td><strong>O(V + E)</strong></td><td>Potentially every vertex and every edge is visited</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\"><strong>His BST example:</strong> searching for 60 in a tree rooted at 50, you go right (60 &gt; 50) and never look at the left subtree; at 70 you go left (60 &lt; 70) and drop the right side. Each level halves the problem, like the multi-tower housing complex. With thousands or lakhs of nodes, as in social-media data, the saving is huge.</p>\n  <p style=\"font-size:14.5px\"><strong>Traversal is search.</strong> Traversing a tree or graph is usually done to find something, which is why BFS and DFS carry the word \"search\". For a graph G = (V, E), the work is in the order of the vertices <strong>plus</strong> the edges, not either one alone.</p>\n  <p style=\"font-size:13.5px;color:var(--ink-3)\">Two refinements from outside this lecture. The O(1) for adding to the end of a linked list assumes you can reach the last node directly (a tail pointer); otherwise you walk the list first. And BST search is O(log n) only while the tree is balanced: Lecture 22 shows that a lopsided BST degrades to O(n).</p><!--viz:atb-ops-big-o-grid--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of data structures. Operations at a fixed or known position (array index, insert at the end, push, pop, enqueue, dequeue, add at the end of a linked list) are O(1). Operations that need a search first are O(n), except binary search tree search at O(log n) and graph traversal at O(V + E).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Known position vs search first, across the structures</div><div class=\"scroller\"><table><thead><tr><th>Structure</th><th>Fixed or known position</th><th>Have to search first</th></tr></thead><tbody><tr><td><b>Array</b></td><td style=\"background:var(--good-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(1)</b> index, insert at end</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(n)</b> search, insert at start or middle</td></tr><tr><td><b>Linked list</b></td><td style=\"background:var(--good-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(1)</b> add at end</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(n)</b> add anywhere else</td></tr><tr><td><b>Stack</b></td><td style=\"background:var(--good-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(1)</b> push, pop</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(n)</b> search</td></tr><tr><td><b>Queue</b></td><td style=\"background:var(--good-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(1)</b> enqueue, dequeue</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(n)</b> search</td></tr><tr><td><b>BST</b></td><td style=\"background:var(--surface)\">—</td><td style=\"background:var(--blue-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(log n)</b> one side discarded per level</td></tr><tr><td><b>General tree</b></td><td style=\"background:var(--surface)\">—</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(n)</b> every node</td></tr><tr><td><b>Graph</b></td><td style=\"background:var(--surface)\">—</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(V + E)</b> every vertex and edge</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">If the position is fixed or known, the cost does not grow; once you have to search, it does.</figcaption></figure><!--/viz:atb-ops-big-o-grid-->"
+     "src": "L#21 · L#28",
+     "h": "\n  <p style=\"font-size:14.5px\">He recapped the operations from Modules 2 and 3 and gave each a Big O. The logic is always the same: if the location is fixed or known, the work does not grow with the size of the structure; if you first have to search, it does.</p>\n  <div class=\"def\"><b>O(1) does not mean one operation.</b> It means the number of operations stays the same whatever the size. Adding a song to the end of a playlist takes the same few pointer changes whether the playlist has 4 songs or 4,000.</div>\n  <div class=\"scroller\"><table><thead><tr><th>Structure</th><th>Operation</th><th>Big O</th><th>Why</th></tr></thead><tbody>\n   <tr><td rowspan=\"5\"><strong>Array</strong></td><td>Read, update or delete <strong>by index</strong></td><td><strong>O(1)</strong></td><td>Go straight to the position, whatever the length</td></tr>\n   <tr><td>Search; update or delete <strong>by searching</strong></td><td><strong>O(n)</strong></td><td>Check items one by one; the bigger the array, the longer it takes</td></tr>\n   <tr><td>Insert <strong>at the end</strong></td><td><strong>O(1)</strong></td><td>Nothing has to move</td></tr>\n   <tr><td>Insert <strong>at the beginning</strong></td><td><strong>O(n)</strong></td><td>Every element shifts one place first</td></tr>\n   <tr><td>Insert <strong>in the middle</strong></td><td><strong>O(n)</strong></td><td>Every later element shifts; the number of moves grows with the size</td></tr>\n   <tr><td rowspan=\"2\"><strong>Linked list</strong></td><td>Add <strong>at the end</strong></td><td><strong>O(1)</strong></td><td>The last node points to null; link the new node to it</td></tr>\n   <tr><td>Add <strong>anywhere else</strong> (\"after song 2\")</td><td><strong>O(n)</strong></td><td>You must first search for the spot, which may be near the end</td></tr>\n   <tr><td rowspan=\"2\"><strong>Stack</strong></td><td>Push, pop</td><td><strong>O(1)</strong></td><td>Always at the top: the location is fixed</td></tr>\n   <tr><td>Search</td><td><strong>O(n)</strong></td><td>Pop items one by one until you reach the one you want, like toys piled in a sack</td></tr>\n   <tr><td rowspan=\"2\"><strong>Queue</strong></td><td>Enqueue (rear), dequeue (front)</td><td><strong>O(1)</strong></td><td>Both locations are fixed</td></tr>\n   <tr><td>Search</td><td><strong>O(n)</strong></td><td>Dequeue items until you reach the one you want</td></tr>\n   <tr><td rowspan=\"2\"><strong>Tree</strong></td><td>Traverse or search a <strong>general tree</strong></td><td><strong>O(n)</strong></td><td>No order to exploit, so every node may be visited</td></tr>\n   <tr><td>Search a <strong>binary search tree</strong></td><td><strong>O(log n)</strong></td><td>Smaller values sit left, larger right, so each comparison discards one whole side</td></tr>\n   <tr><td><strong>Graph</strong></td><td>Traverse or search (BFS, DFS)</td><td><strong>O(V + E)</strong></td><td>Potentially every vertex and every edge is visited</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\"><strong>His BST example:</strong> searching for 60 in a tree rooted at 50, you go right (60 &gt; 50) and never look at the left subtree; at 70 you go left (60 &lt; 70) and drop the right side. Each level halves the problem, like the multi-tower housing complex. With thousands or lakhs of nodes, as in social-media data, the saving is huge.</p>\n  <p style=\"font-size:14.5px\"><strong>Traversal is search.</strong> Traversing a tree or graph is usually done to find something, which is why BFS and DFS carry the word \"search\". For a graph G = (V, E), the work is in the order of the vertices <strong>plus</strong> the edges, not either one alone.</p>\n  <p style=\"font-size:13.5px;color:var(--ink-3)\">Two refinements from outside this lecture. The O(1) for adding to the end of a linked list assumes you can reach the last node directly (a tail pointer); otherwise you walk the list first. And BST search is O(log n) only while the tree is balanced: Lecture 22 shows that a lopsided BST degrades to O(n).</p><!--viz:atb-ops-big-o-grid--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of data structures. Operations at a fixed or known position (array index, insert at the end, push, pop, enqueue, dequeue, add at the end of a linked list) are O(1). Operations that need a search first are O(n), except binary search tree search at O(log n) and graph traversal at O(V + E).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Known position vs search first, across the structures</div><div class=\"scroller\"><table><thead><tr><th>Structure</th><th>Fixed or known position</th><th>Have to search first</th></tr></thead><tbody><tr><td><b>Array</b></td><td style=\"background:var(--good-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(1)</b> index, insert at end</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(n)</b> search, insert at start or middle</td></tr><tr><td><b>Linked list</b></td><td style=\"background:var(--good-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(1)</b> add at end</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(n)</b> add anywhere else</td></tr><tr><td><b>Stack</b></td><td style=\"background:var(--good-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(1)</b> push, pop</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(n)</b> search</td></tr><tr><td><b>Queue</b></td><td style=\"background:var(--good-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(1)</b> enqueue, dequeue</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(n)</b> search</td></tr><tr><td><b>BST</b></td><td style=\"background:var(--surface)\">—</td><td style=\"background:var(--blue-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(log n)</b> one side discarded per level</td></tr><tr><td><b>General tree</b></td><td style=\"background:var(--surface)\">—</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(n)</b> every node</td></tr><tr><td><b>Graph</b></td><td style=\"background:var(--surface)\">—</td><td style=\"background:var(--clay-soft)\"><b style=\"font-family:var(--mono);white-space:nowrap\">O(V + E)</b> every vertex and edge</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">If the position is fixed or known, the cost does not grow; once you have to search, it does.</figcaption></figure><!--/viz:atb-ops-big-o-grid--><h4>Live Lecture 6 additions</h4><p style=\"font-size:14.5px\"><strong>Inserting into the middle of a linked list, in two parts.</strong> Once you are at the right node, the insertion is a fixed number of link changes: <strong>two</strong> in a singly linked list, <strong>four</strong> in a doubly linked one, whatever the list’s length. That part is O(1). What makes “add a song after song 2” O(n) is the search to find song 2 first.</p><p style=\"font-size:14.5px\"><strong>Inserting into the middle of an array</strong> is O(n) because, in the maximum case, n items must each move one place before the new one fits. And O(1) means a fixed number of steps (two, four, even twelve), not exactly one.</p>"
     },
     {
      "t": "Textbook: Intro to DSA, Types, and Big O",
@@ -517,18 +535,18 @@ HUB.addCourse({
   {
    "id": "searching",
    "title": "Searching algorithms",
-   "tag": "Lectures 22, 24 · Module 4 · + textbook",
+   "tag": "Lectures 22, 24, 28 · Module 4 · + textbook",
    "lede": "Finding things: linear, binary, jump, exponential and hash search in lists (L#22), then search across networks, where the question becomes the cheapest path: Dijkstra’s algorithm and its relatives (L#24).",
    "topics": [
     {
      "t": "Linear search, binary search and BSTs",
-     "src": "L#22",
-     "h": "\n  <p style=\"font-size:14.5px\">The previous lecture looked at search inside particular data structures. This one covers five search strategies that stand on their own: <strong>linear, binary, jump, exponential and hash-based</strong> search.</p>\n  <div class=\"def\"><b>Positions start at 1 in this lecture.</b> Programming languages usually number from 0, but he counted from 1 so that the jump and middle-position calculations come out cleanly, without adding or subtracting 1 each time. The traces below do the same.</div>\n  <h4>Linear search</h4>\n  <p style=\"font-size:14.5px\">Compare the search term with the first element; if it does not match, move to the next, and stop at the first match, returning its position. The data <strong>may or may not be sorted</strong>: the method is the same either way. In his example the target sat at position 6, so it took six comparisons.</p>\n  <ul style=\"font-size:14.5px\">\n   <li>Complexity <strong>O(n)</strong>: a lucky search finds the target first, but it may equally be last, so the effort grows in step with the size</li>\n   <li>It works the same way on a <strong>linked list</strong> (start at the head), a <strong>general tree</strong> with no order, and a <strong>graph</strong> searched with DFS or BFS, all O(n)</li>\n   <li>Fine for 10 or even 1,000 items, and simple to write. For a million records it is far too slow: imagine IRCTC checking every station in India one by one during Tatkal booking</li>\n  </ul>\n  <h4>Binary search</h4>\n  <p style=\"font-size:14.5px\">Binary search <strong>always needs the list sorted</strong> in increasing order. Start at the middle: if it matches, stop; if the middle value is smaller than the target, continue in the right half; if larger, in the left half. Each time you jump to the <strong>middle of what is left</strong>, never step by step. In his seven-element example the target was found in <strong>two</strong> comparisons, against six for linear search. Because one half is discarded at every step, it is <strong>O(log n)</strong>.</p>\n  <p style=\"font-size:13.5px;color:var(--ink-3)\">With 7 elements, 7 ÷ 2 = 3.5. Whether the middle is taken as position 3 or 4 depends on the implementation; he went to the higher one, 4. A question should tell you which rule to use.</p>\n  <h4>Binary search vs binary search tree</h4>\n  <p style=\"font-size:14.5px\">\"Binary\" just means two choices: 0 and 1, true and false, left and right. The two ideas share that principle but are different things.</p>\n  <div class=\"scroller\"><table><thead><tr><th></th><th>Binary search</th><th>Binary search tree (BST)</th></tr></thead><tbody>\n   <tr><td><strong>What it is</strong></td><td>An <strong>algorithm</strong></td><td>A <strong>data structure</strong></td></tr>\n   <tr><td><strong>Order comes from</strong></td><td>You must <strong>sort the list first</strong></td><td>Its own structure: each value is placed left (smaller) or right (larger) as it is inserted</td></tr>\n   <tr><td><strong>Applies to</strong></td><td>Any sorted list: wider use</td><td>That tree; it lets you do a binary search as you traverse it</td></tr>\n   <tr><td><strong>Complexity</strong></td><td><strong>Always O(log n)</strong></td><td><strong>O(log n) if balanced</strong>; up to <strong>O(n)</strong> if unbalanced</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\"><strong>Why a BST can be O(n).</strong> The shape depends on the order in which values arrive. If they arrive already in increasing order, each goes to the right of the last, and the tree becomes a chain that behaves like a <strong>linked list</strong>: every node must be checked. So a tree called a binary search tree is not automatically O(log n).</p>"
+     "src": "L#22 · L#28",
+     "h": "\n  <p style=\"font-size:14.5px\">The previous lecture looked at search inside particular data structures. This one covers five search strategies that stand on their own: <strong>linear, binary, jump, exponential and hash-based</strong> search.</p>\n  <div class=\"def\"><b>Positions start at 1 in this lecture.</b> Programming languages usually number from 0, but he counted from 1 so that the jump and middle-position calculations come out cleanly, without adding or subtracting 1 each time. The traces below do the same.</div>\n  <h4>Linear search</h4>\n  <p style=\"font-size:14.5px\">Compare the search term with the first element; if it does not match, move to the next, and stop at the first match, returning its position. The data <strong>may or may not be sorted</strong>: the method is the same either way. In his example the target sat at position 6, so it took six comparisons.</p>\n  <ul style=\"font-size:14.5px\">\n   <li>Complexity <strong>O(n)</strong>: a lucky search finds the target first, but it may equally be last, so the effort grows in step with the size</li>\n   <li>It works the same way on a <strong>linked list</strong> (start at the head), a <strong>general tree</strong> with no order, and a <strong>graph</strong> searched with DFS or BFS, all O(n)</li>\n   <li>Fine for 10 or even 1,000 items, and simple to write. For a million records it is far too slow: imagine IRCTC checking every station in India one by one during Tatkal booking</li>\n  </ul>\n  <h4>Binary search</h4>\n  <p style=\"font-size:14.5px\">Binary search <strong>always needs the list sorted</strong> in increasing order. Start at the middle: if it matches, stop; if the middle value is smaller than the target, continue in the right half; if larger, in the left half. Each time you jump to the <strong>middle of what is left</strong>, never step by step. In his seven-element example the target was found in <strong>two</strong> comparisons, against six for linear search. Because one half is discarded at every step, it is <strong>O(log n)</strong>.</p>\n  <p style=\"font-size:13.5px;color:var(--ink-3)\">With 7 elements, 7 ÷ 2 = 3.5. Whether the middle is taken as position 3 or 4 depends on the implementation; he went to the higher one, 4. A question should tell you which rule to use.</p>\n  <h4>Binary search vs binary search tree</h4>\n  <p style=\"font-size:14.5px\">\"Binary\" just means two choices: 0 and 1, true and false, left and right. The two ideas share that principle but are different things.</p>\n  <div class=\"scroller\"><table><thead><tr><th></th><th>Binary search</th><th>Binary search tree (BST)</th></tr></thead><tbody>\n   <tr><td><strong>What it is</strong></td><td>An <strong>algorithm</strong></td><td>A <strong>data structure</strong></td></tr>\n   <tr><td><strong>Order comes from</strong></td><td>You must <strong>sort the list first</strong></td><td>Its own structure: each value is placed left (smaller) or right (larger) as it is inserted</td></tr>\n   <tr><td><strong>Applies to</strong></td><td>Any sorted list: wider use</td><td>That tree; it lets you do a binary search as you traverse it</td></tr>\n   <tr><td><strong>Complexity</strong></td><td><strong>Always O(log n)</strong></td><td><strong>O(log n) if balanced</strong>; up to <strong>O(n)</strong> if unbalanced</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\"><strong>Why a BST can be O(n).</strong> The shape depends on the order in which values arrive. If they arrive already in increasing order, each goes to the right of the last, and the tree becomes a chain that behaves like a <strong>linked list</strong>: every node must be checked. So a tree called a binary search tree is not automatically O(log n).</p><h4>Live Lecture 6 additions</h4><p style=\"font-size:14.5px\"><strong>The midpoint, on the slide and in his working.</strong> The L#28 slide says to check the number at the middle, “maximum index ÷ 2”. With seven sorted values (positions 1–7: 100, 105, 110, 120, 130, 137, 145) and target 137, he took 7 ÷ 2 = 3.5 → position 4 (120, too small), then the middle of positions 4 to 7, (4 + 7) ÷ 2 = 5.5 → position 6: 137, found. He rounded .5 up both times. The slide’s formula describes only the first step; after that, take the middle of the range that is left.</p><p style=\"font-size:14.5px\"><strong>The sort is part of the bill.</strong> Binary search is O(log n) only because the data is already sorted. In a business application the cost of getting it sorted has to be added, which is another reason search and sort are taught together.</p><p style=\"font-size:13.5px;color:var(--ink-3)\">It follows that for a single lookup in unsorted data a plain linear scan is cheaper, since any sort must at least look at every item once. Sorting pays off when the same data is searched again and again.</p>"
     },
     {
      "t": "Jump search and exponential search",
-     "src": "L#22",
-     "h": "\n  <h4>Jump search</h4>\n  <div class=\"def\"><b>Jump search</b> works on a <b>sorted</b> list. It jumps ahead a <b>fixed</b> number of positions at a time until it passes the search term, steps back to the previous jump point, and then does a <b>linear search forward</b> from there.</div>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>Jump size:</strong> the usual rule of thumb is <strong>√n</strong>: 100 elements → jumps of 10; 25 → 5; his 9-element example → 3</li>\n   <li><strong>His example:</strong> looking for a value at position 8 of 9, he checked positions 3 and 6 (both smaller), then 9 (larger), went back to 6, and stepped forward: 7, then 8, found</li>\n   <li>The forward linear search is the usual implementation; going backwards from the overshoot is logically possible too</li>\n   <li><strong>Complexity O(√n):</strong> the list is cut into √n blocks of √n elements (100 elements → ten blocks, 1–10, 11–20, …), so there are about √n jumps plus at most one block to scan</li>\n   <li>Binary search makes very big jumps; jump search starts from the beginning with fixed, modest ones, which suits some situations better. It is fine while the list is a manageable size</li>\n  </ul>\n  <h4>Exponential search</h4>\n  <div class=\"def\"><b>Exponential search</b> works on a <b>sorted</b> list. It checks positions <b>1, 2, 4, 8, 16…</b>, doubling the jump each time, until it passes the search term, then runs a <b>binary search</b> on the range between the last two positions checked.</div>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>The difference from jump search:</strong> jumps that <strong>grow</strong> instead of a fixed size, and a <strong>binary</strong> search inside the range instead of a linear one. On a long list the final range can run to thousands or lakhs of elements, and a linear scan there would be slow</li>\n   <li><strong>His example:</strong> searching for the value at position 7, he checked positions 1, 2, 4 (all smaller) and 8 (larger), so the target lay between 4 and 8; the middle, 6, was smaller, and between 6 and 8 the next middle, 7, was the target</li>\n   <li><strong>Complexity O(log n):</strong> the doubling jumps and the binary search both cut the problem down repeatedly</li>\n   <li><strong>Where it fits:</strong> very large data that keeps growing. UPI adds millions of transactions an hour, each with a unique UTR number; even binary or jump search would need many jumps there</li>\n  </ul><!--viz:atb-jump-search-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Sixteen sorted values at positions 1 to 16. Jump search with jump size 4 checks positions 4, 8 and 12; 88 at position 12 overshoots 81, so it returns to position 8 and checks 9, 10 and 11, finding 81 at position 11.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Jump search for 81, jump size 4</div><div style=\"display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:3px;margin-bottom:10px;max-width:440px\"><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">1</div>11</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">2</div>18</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">3</div>24</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">4</div>31</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">5</div>39</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">6</div>46</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">7</div>52</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">8</div>60</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">9</div>67</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">10</div>73</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">11</div>81</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">12</div>88</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">13</div>94</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">14</div>99</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">15</div>105</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">16</div>112</div></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-bottom:8px;font-family:var(--mono)\">positions 1–16 · target 81 · jump = √16 = 4</p><div class=\"scroller\"><table><thead><tr><th>#</th><th>Pos.</th><th>Value</th><th>Decision</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono)\">31</td><td>jump: 31 &lt; 81, jump on</td></tr><tr><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono)\">8</td><td style=\"font-family:var(--mono)\">60</td><td>jump: 60 &lt; 81, jump on</td></tr><tr><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono);background:var(--clay-soft)\">12</td><td style=\"font-family:var(--mono);background:var(--clay-soft)\">88</td><td style=\"background:var(--clay-soft)\">jump: 88 &gt; 81, back to 8</td></tr><tr><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono)\">9</td><td style=\"font-family:var(--mono)\">67</td><td>linear: not it</td></tr><tr><td style=\"font-family:var(--mono)\">5</td><td style=\"font-family:var(--mono)\">10</td><td style=\"font-family:var(--mono)\">73</td><td>linear: not it</td></tr><tr><td style=\"font-family:var(--mono)\">6</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">11</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">81</td><td style=\"background:var(--good-soft)\">linear: found</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Fixed jumps find the block; a short linear scan finishes the job: six comparisons here.</figcaption></figure><!--/viz:atb-jump-search-trace--><!--viz:atb-exponential-search-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Exponential search on the same sixteen values checks positions 1, 2, 4, 8 and 16; 112 at position 16 overshoots 94, so binary search runs on positions 8 to 16, checking 12, 14 and 13, and finds 94 at position 13.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Exponential search for 94: double, then halve</div><p style=\"font-size:13.5px;color:var(--ink-2);margin-bottom:8px;font-family:var(--mono)\">same 16 values · target 94 · middle = (low + high) ÷ 2, rounded down</p><div class=\"scroller\"><table><thead><tr><th>#</th><th>Pos.</th><th>Value</th><th>Decision</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono)\">11</td><td>double: 11 &lt; 94</td></tr><tr><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono)\">18</td><td>double: 18 &lt; 94</td></tr><tr><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono)\">31</td><td>double: 31 &lt; 94</td></tr><tr><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono)\">8</td><td style=\"font-family:var(--mono)\">60</td><td>double: 60 &lt; 94</td></tr><tr><td style=\"font-family:var(--mono)\">5</td><td style=\"font-family:var(--mono);background:var(--clay-soft)\">16</td><td style=\"font-family:var(--mono);background:var(--clay-soft)\">112</td><td style=\"background:var(--clay-soft)\">112 &gt; 94: binary search 8–16</td></tr><tr><td style=\"font-family:var(--mono)\">6</td><td style=\"font-family:var(--mono)\">12</td><td style=\"font-family:var(--mono)\">88</td><td>binary: 88 &lt; 94, go right</td></tr><tr><td style=\"font-family:var(--mono)\">7</td><td style=\"font-family:var(--mono)\">14</td><td style=\"font-family:var(--mono)\">99</td><td>binary: 99 &gt; 94, go left</td></tr><tr><td style=\"font-family:var(--mono)\">8</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">13</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">94</td><td style=\"background:var(--good-soft)\">binary: found</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The doubling jumps find the range quickly; binary search, not a linear scan, finishes inside it.</figcaption></figure><!--/viz:atb-exponential-search-trace-->"
+     "src": "L#22 · L#28",
+     "h": "\n  <h4>Jump search</h4>\n  <div class=\"def\"><b>Jump search</b> works on a <b>sorted</b> list. It jumps ahead a <b>fixed</b> number of positions at a time until it passes the search term, steps back to the previous jump point, and then does a <b>linear search forward</b> from there.</div>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>Jump size:</strong> the usual rule of thumb is <strong>√n</strong>: 100 elements → jumps of 10; 25 → 5; his 9-element example → 3</li>\n   <li><strong>His example:</strong> looking for a value at position 8 of 9, he checked positions 3 and 6 (both smaller), then 9 (larger), went back to 6, and stepped forward: 7, then 8, found</li>\n   <li>The forward linear search is the usual implementation; going backwards from the overshoot is logically possible too</li>\n   <li><strong>Complexity O(√n):</strong> the list is cut into √n blocks of √n elements (100 elements → ten blocks, 1–10, 11–20, …), so there are about √n jumps plus at most one block to scan</li>\n   <li>Binary search makes very big jumps; jump search starts from the beginning with fixed, modest ones, which suits some situations better. It is fine while the list is a manageable size</li>\n  </ul>\n  <h4>Exponential search</h4>\n  <div class=\"def\"><b>Exponential search</b> works on a <b>sorted</b> list. It checks positions <b>1, 2, 4, 8, 16…</b>, doubling the jump each time, until it passes the search term, then runs a <b>binary search</b> on the range between the last two positions checked.</div>\n  <ul style=\"font-size:14.5px\">\n   <li><strong>The difference from jump search:</strong> jumps that <strong>grow</strong> instead of a fixed size, and a <strong>binary</strong> search inside the range instead of a linear one. On a long list the final range can run to thousands or lakhs of elements, and a linear scan there would be slow</li>\n   <li><strong>His example:</strong> searching for the value at position 7, he checked positions 1, 2, 4 (all smaller) and 8 (larger), so the target lay between 4 and 8; the middle, 6, was smaller, and between 6 and 8 the next middle, 7, was the target</li>\n   <li><strong>Complexity O(log n):</strong> the doubling jumps and the binary search both cut the problem down repeatedly</li>\n   <li><strong>Where it fits:</strong> very large data that keeps growing. UPI adds millions of transactions an hour, each with a unique UTR number; even binary or jump search would need many jumps there</li>\n  </ul><!--viz:atb-jump-search-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Sixteen sorted values at positions 1 to 16. Jump search with jump size 4 checks positions 4, 8 and 12; 88 at position 12 overshoots 81, so it returns to position 8 and checks 9, 10 and 11, finding 81 at position 11.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Jump search for 81, jump size 4</div><div style=\"display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:3px;margin-bottom:10px;max-width:440px\"><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">1</div>11</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">2</div>18</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">3</div>24</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">4</div>31</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">5</div>39</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">6</div>46</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">7</div>52</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">8</div>60</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">9</div>67</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">10</div>73</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">11</div>81</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">12</div>88</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">13</div>94</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">14</div>99</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">15</div>105</div><div style=\"padding:4px 0;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);text-align:center;font-family:var(--mono);font-size:12.5px\"><div style=\"color:var(--ink-3);font-size:12px\">16</div>112</div></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-bottom:8px;font-family:var(--mono)\">positions 1–16 · target 81 · jump = √16 = 4</p><div class=\"scroller\"><table><thead><tr><th>#</th><th>Pos.</th><th>Value</th><th>Decision</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono)\">31</td><td>jump: 31 &lt; 81, jump on</td></tr><tr><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono)\">8</td><td style=\"font-family:var(--mono)\">60</td><td>jump: 60 &lt; 81, jump on</td></tr><tr><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono);background:var(--clay-soft)\">12</td><td style=\"font-family:var(--mono);background:var(--clay-soft)\">88</td><td style=\"background:var(--clay-soft)\">jump: 88 &gt; 81, back to 8</td></tr><tr><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono)\">9</td><td style=\"font-family:var(--mono)\">67</td><td>linear: not it</td></tr><tr><td style=\"font-family:var(--mono)\">5</td><td style=\"font-family:var(--mono)\">10</td><td style=\"font-family:var(--mono)\">73</td><td>linear: not it</td></tr><tr><td style=\"font-family:var(--mono)\">6</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">11</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">81</td><td style=\"background:var(--good-soft)\">linear: found</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Fixed jumps find the block; a short linear scan finishes the job: six comparisons here.</figcaption></figure><!--/viz:atb-jump-search-trace--><!--viz:atb-exponential-search-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Exponential search on the same sixteen values checks positions 1, 2, 4, 8 and 16; 112 at position 16 overshoots 94, so binary search runs on positions 8 to 16, checking 12, 14 and 13, and finds 94 at position 13.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Exponential search for 94: double, then halve</div><p style=\"font-size:13.5px;color:var(--ink-2);margin-bottom:8px;font-family:var(--mono)\">same 16 values · target 94 · middle = (low + high) ÷ 2, rounded down</p><div class=\"scroller\"><table><thead><tr><th>#</th><th>Pos.</th><th>Value</th><th>Decision</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono)\">11</td><td>double: 11 &lt; 94</td></tr><tr><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono)\">18</td><td>double: 18 &lt; 94</td></tr><tr><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono)\">31</td><td>double: 31 &lt; 94</td></tr><tr><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono)\">8</td><td style=\"font-family:var(--mono)\">60</td><td>double: 60 &lt; 94</td></tr><tr><td style=\"font-family:var(--mono)\">5</td><td style=\"font-family:var(--mono);background:var(--clay-soft)\">16</td><td style=\"font-family:var(--mono);background:var(--clay-soft)\">112</td><td style=\"background:var(--clay-soft)\">112 &gt; 94: binary search 8–16</td></tr><tr><td style=\"font-family:var(--mono)\">6</td><td style=\"font-family:var(--mono)\">12</td><td style=\"font-family:var(--mono)\">88</td><td>binary: 88 &lt; 94, go right</td></tr><tr><td style=\"font-family:var(--mono)\">7</td><td style=\"font-family:var(--mono)\">14</td><td style=\"font-family:var(--mono)\">99</td><td>binary: 99 &gt; 94, go left</td></tr><tr><td style=\"font-family:var(--mono)\">8</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">13</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">94</td><td style=\"background:var(--good-soft)\">binary: found</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The doubling jumps find the range quickly; binary search, not a linear scan, finishes inside it.</figcaption></figure><!--/viz:atb-exponential-search-trace--><h4>Live Lecture 6 additions</h4><ul style=\"font-size:14.5px\"><li><strong>Jump search on a video.</strong> You want the moment about 35 minutes into an hour-long video that has no timestamps. You tap ahead in fixed jumps, to 20 minutes, then 40, overshoot, go back to 20, then step forward until you find it. Fixed jumps, then a short linear search: jump search</li><li><strong>Jump size in numbers:</strong> √n. For 10,000 items the jump is 100 (100 × 100 = 10,000), so at most about 100 jumps before the short scan inside one block</li><li><strong>Exponential search on the same video:</strong> if you know roughly how far in the moment is, you make bigger and bigger jumps instead of fixed ones, then narrow down. Doubling the jumps and finishing with a binary search, not a linear one, is what makes it O(log n)</li></ul>"
     },
     {
      "t": "Hash-based search",
@@ -547,13 +565,13 @@ HUB.addCourse({
     },
     {
      "t": "Shortest paths and Dijkstra’s algorithm",
-     "src": "L#24",
-     "h": "<h4>“Shortest” means lowest cost</h4><p style=\"font-size:14.5px\">Two nodes can be joined by many paths, and “shortest” means the lowest total <strong>cost</strong>, whatever the edge weights stand for:</p><ul style=\"font-size:14.5px\"><li><strong>Distance</strong> in kilometres</li><li><strong>Time</strong>: a map may suggest a longer route on a main road or a ring road because it is quicker than a short one through congested streets. On a two-wheeler the side streets may suit you; in a car, the main road</li><li><strong>Money</strong>: choosing “avoid tolls” makes toll charges the cost</li><li><strong>A combination</strong>, with constraints: an office cab must pick up everyone on its list and still cover the least distance</li></ul><h4>Dijkstra’s algorithm</h4><p style=\"font-size:14.5px\">Named after the Dutch computer scientist Edsger Dijkstra (he gave “dike-stra” as the nearest English pronunciation). It works on a <strong>weighted graph</strong> under two assumptions: every edge has a cost, and <strong>no cost is negative</strong>.</p><ol style=\"font-size:14.5px\"><li>Give the start node distance <strong>0</strong> and every other node <strong>∞</strong></li><li>Pick the <strong>unvisited node with the smallest known distance</strong></li><li>For each of its neighbours, check whether going through this node is cheaper than the distance known so far; if it is, <strong>update</strong> it</li><li><strong>Mark</strong> the node visited: its distance is now final</li><li>Repeat until every node is visited, or until the one destination you need is final</li></ol><p style=\"font-size:14.5px\"><strong>His first example</strong> (start A; A–B 4, A–C 2, C–B 1, C–D 5, B–D 3). From A: C = 2, B = 4. C is smaller, so visit it: B through C costs 2 + 1 = 3, better than 4, so update; D through C costs 2 + 5 = 7. Visit B (3): D through B costs 3 + 3 = 6, better than 7. Final: <strong>C 2 (A→C), B 3 (A→C→B), D 6 (A→C→B→D)</strong>. The direct edge A→B is not the cheapest route: think of a direct road that must loop round a hill, while the road through the next town is shorter.</p><p style=\"font-size:14.5px\"><strong>His 12-minute exercise</strong> (five nodes, start A) is in the two figures. Answer: C 2, D 3, B 5 and E 5, with E reached by <strong>A→C→D→E</strong>, skipping B.</p><p style=\"font-size:13.5px;color:var(--ink-3)\">Edge costs as read from his narration: A–B 6, A–C 2, C–B 3, C–D 1, B–D 2, B–E 5, D–E 2. In his walk-through he finalised B (5) before D (3). The final distances are the same, but the rule takes the smallest unvisited distance next, so D (3) comes before B (5), as in the trace.</p><h4>What one run gives you</h4><ul style=\"font-size:14.5px\"><li><strong>One source, every destination.</strong> The cheapest path from the chosen start to each other node, not between every pair. Change the start and every number changes: run it again</li><li><strong>Only one destination?</strong> Stop as soon as that node is visited; its distance is final and the rest need not be computed</li><li><strong>Every pair?</strong> In theory you could run Dijkstra from every node, but there are algorithms built for that (next topic)</li></ul><h4>Spoke-and-hub: where Dijkstra fits</h4><p style=\"font-size:14.5px\">A courier company does not link every city to every other city. It picks <strong>hubs</strong> and attaches nearby towns to them as <strong>spokes</strong>. A parcel booked in Jodhpur for Sonipat goes Jodhpur → Jaipur (the Rajasthan hub) → Delhi (hub) → Sonipat. Each hub runs Dijkstra once from itself to learn its cheapest routes to the other hubs, then sends each parcel to the hub serving its destination.</p><div class=\"def\"><b>From the lecture (L#24):</b> for this course, <b>focus on Dijkstra’s algorithm</b>; the in-lecture exercise was the five-node trace. For the other network algorithms, he said it is enough to know that they exist and which situation each one suits.</div><!--viz:atb-dijkstra-exercise-graph--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Five nodes. Edge costs: A–B 6, A–C 2, C–B 3, C–D 1, B–D 2, B–E 5, D–E 2. Highlighted cheapest routes from A: A–C, C–B, C–D and D–E. Final costs from A: C 2, D 3, B 5, E 5.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">His five-node exercise: cheapest costs from A</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 262\" role=\"img\" aria-label=\"Weighted graph of five nodes A to E with edge costs; the cheapest routes from A, along edges A–C, C–B, C–D and D–E, are highlighted, with final costs C 2, D 3, B 5, E 5.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M50,135 L200,62\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M50,135 L200,210\" style=\"stroke:var(--blue);stroke-width:2.5;fill:none\"/><path d=\"M200,210 L200,62\" style=\"stroke:var(--blue);stroke-width:2.5;fill:none\"/><path d=\"M200,210 L330,210\" style=\"stroke:var(--blue);stroke-width:2.5;fill:none\"/><path d=\"M200,62 L330,210\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M200,62 L395,100\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M330,210 L395,100\" style=\"stroke:var(--blue);stroke-width:2.5;fill:none\"/><text x=\"117\" y=\"89\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">6</text><text x=\"114\" y=\"193\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">2</text><text x=\"188\" y=\"141\" text-anchor=\"end\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">3</text><text x=\"279\" y=\"129\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">2</text><text x=\"265\" y=\"231\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">1</text><text x=\"300\" y=\"70\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">5</text><text x=\"378\" y=\"165\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">2</text><circle cx=\"50\" cy=\"135\" r=\"18\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"50\" y=\"140\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">A</text><circle cx=\"200\" cy=\"62\" r=\"18\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"200\" y=\"67\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">B</text><circle cx=\"200\" cy=\"210\" r=\"18\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"200\" y=\"215\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">C</text><circle cx=\"330\" cy=\"210\" r=\"18\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"330\" y=\"215\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">D</text><circle cx=\"395\" cy=\"100\" r=\"18\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"395\" y=\"105\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">E</text><text x=\"50\" y=\"175\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:14px;font-weight:700;font-family:var(--mono)\">= 0</text><text x=\"200\" y=\"34\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:14px;font-weight:700;font-family:var(--mono)\">= 5</text><text x=\"200\" y=\"249\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:14px;font-weight:700;font-family:var(--mono)\">= 2</text><text x=\"330\" y=\"249\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:14px;font-weight:700;font-family:var(--mono)\">= 3</text><text x=\"395\" y=\"70\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:14px;font-weight:700;font-family:var(--mono)\">= 5</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The direct edges A–B (6) and B–E (5) are never used: going through C and D is cheaper.</figcaption></figure><!--/viz:atb-dijkstra-exercise-graph--><!--viz:atb-dijkstra-exercise-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace table. Visit A: B 6, C 2. Visit C: B improves to 5, D becomes 3. Visit D: E becomes 5, B stays 5. Visit B: E via B would be 10, so it stays 5. Visit E: done.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Dijkstra from A, one visit at a time</div><p style=\"font-size:13.5px;color:var(--ink-2);margin-bottom:8px;font-family:var(--mono)\">start A · costs A–B 6, A–C 2, C–B 3, C–D 1, B–D 2, B–E 5, D–E 2</p><div class=\"scroller\"><table><thead><tr><th>#</th><th>Visit (final)</th><th>Check its neighbours</th><th>Still open</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">0</td><td style=\"font-family:var(--mono)\">—</td><td>A = 0, everything else ∞</td><td style=\"font-family:var(--mono)\">B ∞ · C ∞ · D ∞ · E ∞</td></tr><tr><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">A = 0</td><td>B: 0 + 6 = 6 · C: 0 + 2 = 2</td><td style=\"font-family:var(--mono)\">B 6 · C 2 · D ∞ · E ∞</td></tr><tr><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">C = 2</td><td>B: 2 + 3 = 5 &lt; 6, update · D: 2 + 1 = 3</td><td style=\"font-family:var(--mono)\">B 5 · D 3 · E ∞</td></tr><tr><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">D = 3</td><td>E: 3 + 2 = 5 · B: 3 + 2 = 5, no better</td><td style=\"font-family:var(--mono)\">B 5 · E 5</td></tr><tr><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">B = 5</td><td>E: 5 + 5 = 10 &gt; 5, keep 5</td><td style=\"font-family:var(--mono)\">E 5</td></tr><tr><td style=\"font-family:var(--mono)\">5</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">E = 5</td><td>all nodes visited</td><td style=\"font-family:var(--mono)\">—</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Always visit the smallest open distance next: D (3) is finalised before B (5).</figcaption></figure><!--/viz:atb-dijkstra-exercise-trace-->"
+     "src": "L#24 · L#28",
+     "h": "<h4>“Shortest” means lowest cost</h4><p style=\"font-size:14.5px\">Two nodes can be joined by many paths, and “shortest” means the lowest total <strong>cost</strong>, whatever the edge weights stand for:</p><ul style=\"font-size:14.5px\"><li><strong>Distance</strong> in kilometres</li><li><strong>Time</strong>: a map may suggest a longer route on a main road or a ring road because it is quicker than a short one through congested streets. On a two-wheeler the side streets may suit you; in a car, the main road</li><li><strong>Money</strong>: choosing “avoid tolls” makes toll charges the cost</li><li><strong>A combination</strong>, with constraints: an office cab must pick up everyone on its list and still cover the least distance</li></ul><h4>Dijkstra’s algorithm</h4><p style=\"font-size:14.5px\">Named after the Dutch computer scientist Edsger Dijkstra (he gave “dike-stra” as the nearest English pronunciation). It works on a <strong>weighted graph</strong> under two assumptions: every edge has a cost, and <strong>no cost is negative</strong>.</p><ol style=\"font-size:14.5px\"><li>Give the start node distance <strong>0</strong> and every other node <strong>∞</strong></li><li>Pick the <strong>unvisited node with the smallest known distance</strong></li><li>For each of its neighbours, check whether going through this node is cheaper than the distance known so far; if it is, <strong>update</strong> it</li><li><strong>Mark</strong> the node visited: its distance is now final</li><li>Repeat until every node is visited, or until the one destination you need is final</li></ol><p style=\"font-size:14.5px\"><strong>His first example</strong> (start A; A–B 4, A–C 2, C–B 1, C–D 5, B–D 3). From A: C = 2, B = 4. C is smaller, so visit it: B through C costs 2 + 1 = 3, better than 4, so update; D through C costs 2 + 5 = 7. Visit B (3): D through B costs 3 + 3 = 6, better than 7. Final: <strong>C 2 (A→C), B 3 (A→C→B), D 6 (A→C→B→D)</strong>. The direct edge A→B is not the cheapest route: think of a direct road that must loop round a hill, while the road through the next town is shorter.</p><p style=\"font-size:14.5px\"><strong>His 12-minute exercise</strong> (five nodes, start A) is in the two figures. Answer: C 2, D 3, B 5 and E 5, with E reached by <strong>A→C→D→E</strong>, skipping B.</p><p style=\"font-size:13.5px;color:var(--ink-3)\">Edge costs as read from his narration: A–B 6, A–C 2, C–B 3, C–D 1, B–D 2, B–E 5, D–E 2. In his walk-through he finalised B (5) before D (3). The final distances are the same, but the rule takes the smallest unvisited distance next, so D (3) comes before B (5), as in the trace.</p><h4>What one run gives you</h4><ul style=\"font-size:14.5px\"><li><strong>One source, every destination.</strong> The cheapest path from the chosen start to each other node, not between every pair. Change the start and every number changes: run it again</li><li><strong>Only one destination?</strong> Stop as soon as that node is visited; its distance is final and the rest need not be computed</li><li><strong>Every pair?</strong> In theory you could run Dijkstra from every node, but there are algorithms built for that (next topic)</li></ul><h4>Spoke-and-hub: where Dijkstra fits</h4><p style=\"font-size:14.5px\">A courier company does not link every city to every other city. It picks <strong>hubs</strong> and attaches nearby towns to them as <strong>spokes</strong>. A parcel booked in Jodhpur for Sonipat goes Jodhpur → Jaipur (the Rajasthan hub) → Delhi (hub) → Sonipat. Each hub runs Dijkstra once from itself to learn its cheapest routes to the other hubs, then sends each parcel to the hub serving its destination.</p><div class=\"def\"><b>From the lecture (L#24):</b> for this course, <b>focus on Dijkstra’s algorithm</b>; the in-lecture exercise was the five-node trace. For the other network algorithms, he said it is enough to know that they exist and which situation each one suits.</div><!--viz:atb-dijkstra-exercise-graph--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Five nodes. Edge costs: A–B 6, A–C 2, C–B 3, C–D 1, B–D 2, B–E 5, D–E 2. Highlighted cheapest routes from A: A–C, C–B, C–D and D–E. Final costs from A: C 2, D 3, B 5, E 5.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">His five-node exercise: cheapest costs from A</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 262\" role=\"img\" aria-label=\"Weighted graph of five nodes A to E with edge costs; the cheapest routes from A, along edges A–C, C–B, C–D and D–E, are highlighted, with final costs C 2, D 3, B 5, E 5.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M50,135 L200,62\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M50,135 L200,210\" style=\"stroke:var(--blue);stroke-width:2.5;fill:none\"/><path d=\"M200,210 L200,62\" style=\"stroke:var(--blue);stroke-width:2.5;fill:none\"/><path d=\"M200,210 L330,210\" style=\"stroke:var(--blue);stroke-width:2.5;fill:none\"/><path d=\"M200,62 L330,210\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M200,62 L395,100\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M330,210 L395,100\" style=\"stroke:var(--blue);stroke-width:2.5;fill:none\"/><text x=\"117\" y=\"89\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">6</text><text x=\"114\" y=\"193\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">2</text><text x=\"188\" y=\"141\" text-anchor=\"end\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">3</text><text x=\"279\" y=\"129\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">2</text><text x=\"265\" y=\"231\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">1</text><text x=\"300\" y=\"70\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">5</text><text x=\"378\" y=\"165\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:14px;font-family:var(--mono)\">2</text><circle cx=\"50\" cy=\"135\" r=\"18\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"50\" y=\"140\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">A</text><circle cx=\"200\" cy=\"62\" r=\"18\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"200\" y=\"67\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">B</text><circle cx=\"200\" cy=\"210\" r=\"18\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"200\" y=\"215\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">C</text><circle cx=\"330\" cy=\"210\" r=\"18\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"330\" y=\"215\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">D</text><circle cx=\"395\" cy=\"100\" r=\"18\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"395\" y=\"105\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">E</text><text x=\"50\" y=\"175\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:14px;font-weight:700;font-family:var(--mono)\">= 0</text><text x=\"200\" y=\"34\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:14px;font-weight:700;font-family:var(--mono)\">= 5</text><text x=\"200\" y=\"249\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:14px;font-weight:700;font-family:var(--mono)\">= 2</text><text x=\"330\" y=\"249\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:14px;font-weight:700;font-family:var(--mono)\">= 3</text><text x=\"395\" y=\"70\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:14px;font-weight:700;font-family:var(--mono)\">= 5</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The direct edges A–B (6) and B–E (5) are never used: going through C and D is cheaper.</figcaption></figure><!--/viz:atb-dijkstra-exercise-graph--><!--viz:atb-dijkstra-exercise-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace table. Visit A: B 6, C 2. Visit C: B improves to 5, D becomes 3. Visit D: E becomes 5, B stays 5. Visit B: E via B would be 10, so it stays 5. Visit E: done.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Dijkstra from A, one visit at a time</div><p style=\"font-size:13.5px;color:var(--ink-2);margin-bottom:8px;font-family:var(--mono)\">start A · costs A–B 6, A–C 2, C–B 3, C–D 1, B–D 2, B–E 5, D–E 2</p><div class=\"scroller\"><table><thead><tr><th>#</th><th>Visit (final)</th><th>Check its neighbours</th><th>Still open</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">0</td><td style=\"font-family:var(--mono)\">—</td><td>A = 0, everything else ∞</td><td style=\"font-family:var(--mono)\">B ∞ · C ∞ · D ∞ · E ∞</td></tr><tr><td style=\"font-family:var(--mono)\">1</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">A = 0</td><td>B: 0 + 6 = 6 · C: 0 + 2 = 2</td><td style=\"font-family:var(--mono)\">B 6 · C 2 · D ∞ · E ∞</td></tr><tr><td style=\"font-family:var(--mono)\">2</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">C = 2</td><td>B: 2 + 3 = 5 &lt; 6, update · D: 2 + 1 = 3</td><td style=\"font-family:var(--mono)\">B 5 · D 3 · E ∞</td></tr><tr><td style=\"font-family:var(--mono)\">3</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">D = 3</td><td>E: 3 + 2 = 5 · B: 3 + 2 = 5, no better</td><td style=\"font-family:var(--mono)\">B 5 · E 5</td></tr><tr><td style=\"font-family:var(--mono)\">4</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">B = 5</td><td>E: 5 + 5 = 10 &gt; 5, keep 5</td><td style=\"font-family:var(--mono)\">E 5</td></tr><tr><td style=\"font-family:var(--mono)\">5</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">E = 5</td><td>all nodes visited</td><td style=\"font-family:var(--mono)\">—</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Always visit the smallest open distance next: D (3) is finalised before B (5).</figcaption></figure><!--/viz:atb-dijkstra-exercise-trace--><h4>Live Lecture 6 additions</h4><p style=\"font-size:14.5px\"><strong>Home to university.</strong> Home is A and the university (or coaching centre) is B. The direct road is 4 km; the road through the marketplace C is 2 km plus 1 km. By kilometres Dijkstra returns A → C → B, 3 km, exactly as in the L#24 example. But if the market road is jammed, the direct 4 km road may be quicker. The algorithm is only as good as what the weights measure: kilometres, minutes or rupees.</p><p style=\"font-size:14.5px\"><strong>Traverse everything, or go somewhere?</strong> DFS and BFS assume you want to visit every node. The L#28 slides restate their uses from L#17: DFS tells you whether any connection exists between two nodes, BFS gives the minimum degree of separation. In practice you usually want something narrower: the shortest path between two nodes, as when a food-delivery app matches your order to the nearest free rider and a short route. He named the <strong>travelling salesperson problem</strong> as the classic routing problem of this kind.</p>"
     },
     {
      "t": "Other network search algorithms",
-     "src": "L#24",
-     "h": "<p style=\"font-size:14.5px\">Network search is big enough for a semester-long course of its own. Most real systems already run some variant or mix of these algorithms: when Zomato or Swiggy assigns a rider, the allocation itself rests on shortest-path calculations. For a techno-managerial role the skill is knowing which algorithm fits which question.</p><div class=\"scroller\"><table><thead><tr><th>Algorithm</th><th>What it does</th><th>His example</th></tr></thead><tbody><tr><td><strong>A*</strong> (A-star)</td><td>Adds a heuristic, a sense of direction, to the actual cost so far</td><td>GPS navigation: by road from Jodhpur to Coimbatore you head south at once, never north first</td></tr><tr><td><strong>Uniform cost search</strong></td><td>Explores the lowest-cost path first</td><td>A route that avoids tolls</td></tr><tr><td><strong>Bidirectional search</strong></td><td>Searches from the source and the destination at the same time</td><td>Useful because, as with Dijkstra, results depend on where you start</td></tr><tr><td><strong>Floyd–Warshall</strong></td><td>Shortest paths between <strong>every pair</strong> of nodes</td><td>Computer networks, electricity grids</td></tr><tr><td><strong>Bellman–Ford</strong></td><td>Shortest paths even when some edge costs are <strong>negative</strong></td><td>Network cost analysis, for computer or road networks</td></tr><tr><td><strong>Prim’s</strong> and <strong>Kruskal’s</strong></td><td>Connect <strong>all</strong> nodes at the minimum <strong>total</strong> cost</td><td>A telecom operator that must reach every customer in its licence area</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>A route vs a whole network.</strong> Shortest-path algorithms find the cheapest route between nodes; a traveller need not visit every city. Prim’s and Kruskal’s answer a different question, the cheapest way to connect <em>every</em> node, because a telecom network has no choice but to serve everyone.</p><p style=\"font-size:13.5px;color:var(--ink-3)\">He grouped the other algorithms with Dijkstra as needing zero or positive costs and named Bellman–Ford for negative ones. Floyd–Warshall can in fact handle negative costs too, as long as the graph has no negative cycle; for the course, Bellman–Ford is the lecture’s answer for negative costs.</p>"
+     "src": "L#24 · L#28",
+     "h": "<p style=\"font-size:14.5px\">Network search is big enough for a semester-long course of its own. Most real systems already run some variant or mix of these algorithms: when Zomato or Swiggy assigns a rider, the allocation itself rests on shortest-path calculations. For a techno-managerial role the skill is knowing which algorithm fits which question.</p><div class=\"scroller\"><table><thead><tr><th>Algorithm</th><th>What it does</th><th>His example</th></tr></thead><tbody><tr><td><strong>A*</strong> (A-star)</td><td>Adds a heuristic, a sense of direction, to the actual cost so far</td><td>GPS navigation: by road from Jodhpur to Coimbatore you head south at once, never north first</td></tr><tr><td><strong>Uniform cost search</strong></td><td>Explores the lowest-cost path first</td><td>A route that avoids tolls</td></tr><tr><td><strong>Bidirectional search</strong></td><td>Searches from the source and the destination at the same time</td><td>Useful because, as with Dijkstra, results depend on where you start</td></tr><tr><td><strong>Floyd–Warshall</strong></td><td>Shortest paths between <strong>every pair</strong> of nodes</td><td>Computer networks, electricity grids</td></tr><tr><td><strong>Bellman–Ford</strong></td><td>Shortest paths even when some edge costs are <strong>negative</strong></td><td>Network cost analysis, for computer or road networks</td></tr><tr><td><strong>Prim’s</strong> and <strong>Kruskal’s</strong></td><td>Connect <strong>all</strong> nodes at the minimum <strong>total</strong> cost</td><td>A telecom operator that must reach every customer in its licence area</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>A route vs a whole network.</strong> Shortest-path algorithms find the cheapest route between nodes; a traveller need not visit every city. Prim’s and Kruskal’s answer a different question, the cheapest way to connect <em>every</em> node, because a telecom network has no choice but to serve everyone.</p><p style=\"font-size:13.5px;color:var(--ink-3)\">He grouped the other algorithms with Dijkstra as needing zero or positive costs and named Bellman–Ford for negative ones. Floyd–Warshall can in fact handle negative costs too, as long as the graph has no negative cycle; for the course, Bellman–Ford is the lecture’s answer for negative costs.</p><h4>Live Lecture 6 additions</h4><p style=\"font-size:14.5px\"><strong>Slide vs lecture.</strong> The L#28 slide table pairs each algorithm with an application, and some differ from the examples he gave in L#24:</p><div class=\"scroller\"><table><thead><tr><th>Algorithm</th><th>L#28 slide: application</th><th>L#24: his example</th></tr></thead><tbody><tr><td><strong>A*</strong></td><td>GPS and navigation</td><td>GPS: from Jodhpur to Coimbatore you head south at once</td></tr><tr><td><strong>Uniform cost search</strong></td><td>The cheapest transportation route</td><td>A route that avoids tolls</td></tr><tr><td><strong>Bidirectional search</strong></td><td>A route between two locations</td><td>Useful because results depend on the start</td></tr><tr><td><strong>Floyd–Warshall</strong></td><td>City-to-city distance analysis</td><td>Computer networks, electricity grids</td></tr><tr><td><strong>Bellman–Ford</strong></td><td>Network cost analysis</td><td>Network cost analysis, computer or road networks</td></tr><tr><td><strong>Prim’s</strong></td><td>Designing a telecom network</td><td>A telecom operator reaching every customer (Prim’s and Kruskal’s together)</td></tr><tr><td><strong>Kruskal’s</strong></td><td>Designing roads or electricity networks, by picking edges for a minimum-cost connected network</td><td>As for Prim’s</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Both sets are right. Floyd–Warshall answers every-pair questions, whether the pairs are cities or network nodes. Prim’s and Kruskal’s both build the cheapest network that connects everyone, whether the links are cables, roads or power lines. Learn the question each one answers; the application follows from it.</p><p style=\"font-size:14.5px\"><strong>A* in a map app.</strong> When you search for a place, the app first shows an <strong>estimated</strong> distance. Tap Directions and it traces the actual road path, and the figure is revised. That is A*’s recipe: the actual cost so far plus an estimate of what is left.</p><p style=\"font-size:13.5px;color:var(--ink-3)\">He named these algorithms for awareness and said their details belong to graph and network courses. Dijkstra’s algorithm is the one to be able to run by hand (L#24).</p>"
     },
     {
      "t": "Textbook: Linear and Binary Search",
@@ -593,8 +611,8 @@ HUB.addCourse({
   {
    "id": "sorting",
    "title": "Sorting algorithms",
-   "tag": "Lecture 25 · Module 5",
-   "lede": "Putting data in order so it can be searched, shown and reported: bubble sort first, with its passes, swaps and O(n²) cost; the other sorts follow in later lectures.",
+   "tag": "Lectures 25–27 · Module 5 · + textbook",
+   "lede": "Putting data in order so it can be searched, shown and reported: bubble, selection and insertion sort, all O(n²), traced on the same list so their passes, swaps and moves can be compared.",
    "topics": [
     {
      "t": "What sorting is for",
@@ -610,6 +628,26 @@ HUB.addCourse({
      "t": "Bubble sort’s O(n²) complexity",
      "src": "L#25",
      "h": "<p style=\"font-size:14.5px\">Big O asks how the work grows as the list grows (L#21). Count the comparisons: each pass makes one fewer than the pass before, down to a single comparison in the last pass.</p><p style=\"font-size:14.5px\"><span style=\"font-family:var(--mono)\">(n − 1) + (n − 2) + … + 2 + 1 = n(n − 1) ÷ 2 = ½n² − ½n</span></p><p style=\"font-size:14.5px\">The sum’s formula is a standard result from mathematics; he said you do not need its derivation. The two Big O rules finish the job: drop the <strong>lower-order term</strong> (−½n is small beside ½n²) and drop the <strong>constant multiplier</strong> (½). What remains: <strong>O(n²)</strong>.</p><div class=\"def\"><b>n or n − 1 comparisons in pass 1?</b> His complexity slide starts the count at n comparisons in pass 1. For six elements he actually made five, and pointed this out himself: a list of n elements has only n − 1 adjacent pairs. The formula n(n − 1) ÷ 2 is the sum that starts at n − 1, and for n = 6 it gives 15, matching his example. He added that for large lists the difference doesn’t matter, because Big O is about the growth rate, not the exact count.</div><h4>Why O(n²) hurts</h4><div class=\"scroller\"><table><thead><tr><th>n</th><th>Comparisons, n(n − 1) ÷ 2</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">6</td><td style=\"font-family:var(--mono)\">15</td></tr><tr><td style=\"font-family:var(--mono)\">10</td><td style=\"font-family:var(--mono)\">45</td></tr><tr><td style=\"font-family:var(--mono)\">1,000</td><td style=\"font-family:var(--mono)\">4,99,500</td></tr><tr><td style=\"font-family:var(--mono)\">2,000</td><td style=\"font-family:var(--mono)\">19,99,000 (about 4 times as many)</td></tr><tr><td style=\"font-family:var(--mono)\">10,000</td><td style=\"font-family:var(--mono)\">4,99,95,000 (about 5 crore)</td></tr></tbody></table></div><p style=\"font-size:14.5px\">His own illustration used n² directly: 5² = 25 but 6² = 36; 10² = 100 but 11² = 121. Each extra element adds a whole extra round of work, and with lakhs of customer records that becomes unworkable. Had the algorithm been O(n), one extra record would hardly matter.</p><p style=\"font-size:14.5px\">So bubble sort is <strong>logically simple</strong>, which is why textbooks start with it, and acceptable for a small list, but <strong>unsuitable for large lists and business use</strong>. Its space needs are modest; time is the problem. Its idea of successive comparisons does reappear inside other algorithms.</p><!--viz:atb-bubble-comparison-staircase--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A staircase of boxes: pass 1 has 5 comparisons, pass 2 has 4, then 3, 2 and 1, for a total of 15, which equals 6 times 5 divided by 2.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Comparisons per pass for six elements</div><div style=\"font-size:14px\"><div style=\"display:flex;align-items:center;gap:8px;margin-bottom:5px\"><span style=\"width:52px;color:var(--ink-3);font-size:13px\">Pass 1</span><span style=\"display:flex\"><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span></span><span style=\"font-family:var(--mono);color:var(--ink-2)\">5</span></div><div style=\"display:flex;align-items:center;gap:8px;margin-bottom:5px\"><span style=\"width:52px;color:var(--ink-3);font-size:13px\">Pass 2</span><span style=\"display:flex\"><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span></span><span style=\"font-family:var(--mono);color:var(--ink-2)\">4</span></div><div style=\"display:flex;align-items:center;gap:8px;margin-bottom:5px\"><span style=\"width:52px;color:var(--ink-3);font-size:13px\">Pass 3</span><span style=\"display:flex\"><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span></span><span style=\"font-family:var(--mono);color:var(--ink-2)\">3</span></div><div style=\"display:flex;align-items:center;gap:8px;margin-bottom:5px\"><span style=\"width:52px;color:var(--ink-3);font-size:13px\">Pass 4</span><span style=\"display:flex\"><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span></span><span style=\"font-family:var(--mono);color:var(--ink-2)\">2</span></div><div style=\"display:flex;align-items:center;gap:8px;margin-bottom:5px\"><span style=\"width:52px;color:var(--ink-3);font-size:13px\">Pass 5</span><span style=\"display:flex\"><span style=\"display:inline-block;width:18px;height:18px;margin-right:3px;border:1px solid var(--blue);border-radius:3px;background:var(--blue-soft)\"></span></span><span style=\"font-family:var(--mono);color:var(--ink-2)\">1</span></div><p style=\"margin-top:8px;font-family:var(--mono);color:var(--ink)\">5 + 4 + 3 + 2 + 1 = <b>15</b> = 6 × 5 ÷ 2</p><p style=\"font-size:13.5px;color:var(--ink-3)\">For n elements: (n − 1) + … + 1 = n(n − 1) ÷ 2, about half of an n × n square → O(n²)</p></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The staircase is half a square, which is why the total grows like n².</figcaption></figure><!--/viz:atb-bubble-comparison-staircase-->"
+    },
+    {
+     "t": "Selection sort: select, then swap",
+     "src": "L#26",
+     "h": "<div class=\"def\"><b>Selection sort</b> fills the sorted list one position at a time. Each pass <b>selects</b> the smallest value in the unsorted part and <b>swaps</b> it into the first unsorted position. One pass places one value, with at most one swap.</div><h4>The classic method: smallest to the front</h4><ol style=\"font-size:14.5px\"><li>Start at the first unsorted position and <strong>assume</strong> its value is the smallest. You cannot know until you have seen the rest, so this is only a starting guess</li><li>Compare it with each value to its right. Whenever you meet a smaller one, mark that as the new smallest so far</li><li>At the end of the list, <strong>swap</strong> the smallest with the value at the starting position. That position is now final</li><li>Move the start one place to the right and repeat</li></ol><p style=\"font-size:14.5px\"><strong>His example</strong> used the bubble-sort list again, [10, 5, 8, 4, 3, 2], so that the sorts can be compared on the same data. He plans to use it for every sort in the module. Values in bold are in their final places.</p><div class=\"scroller\"><table><thead><tr><th>Pass</th><th>Starts at</th><th>Smallest found</th><th>Swap</th><th>List after</th></tr></thead><tbody><tr><td>1</td><td style=\"font-family:var(--mono);white-space:nowrap\">10</td><td style=\"font-family:var(--mono);white-space:nowrap\">2</td><td style=\"font-family:var(--mono);white-space:nowrap\">10 ↔ 2</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b>2</b> 5 8 4 3 10</td></tr><tr><td>2</td><td style=\"font-family:var(--mono);white-space:nowrap\">5</td><td style=\"font-family:var(--mono);white-space:nowrap\">3</td><td style=\"font-family:var(--mono);white-space:nowrap\">5 ↔ 3</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b>2</b> <b>3</b> 8 4 5 10</td></tr><tr><td>3</td><td style=\"font-family:var(--mono);white-space:nowrap\">8</td><td style=\"font-family:var(--mono);white-space:nowrap\">4</td><td style=\"font-family:var(--mono);white-space:nowrap\">8 ↔ 4</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b>2</b> <b>3</b> <b>4</b> 8 5 10</td></tr><tr><td>4</td><td style=\"font-family:var(--mono);white-space:nowrap\">8</td><td style=\"font-family:var(--mono);white-space:nowrap\">5</td><td style=\"font-family:var(--mono);white-space:nowrap\">8 ↔ 5</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b>2</b> <b>3</b> <b>4</b> <b>5</b> 8 10</td></tr><tr><td>5</td><td style=\"font-family:var(--mono);white-space:nowrap\">8</td><td style=\"font-family:var(--mono);white-space:nowrap\">8</td><td>none</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b>2</b> <b>3</b> <b>4</b> <b>5</b> <b>8</b> <b>10</b></td></tr></tbody></table></div><p style=\"font-size:14.5px\">Five passes, <strong>15 comparisons</strong> (5 + 4 + 3 + 2 + 1) and <strong>4 swaps</strong>. Bubble sort needed 14 swaps on this list (L#25). His slides stopped once the list looked sorted after pass 4, but he pointed out that the algorithm still runs the last pass, comparing 8 with 10, before it knows it has finished. So, as with bubble sort, <strong>n − 1 passes</strong>.</p><p style=\"font-size:14.5px\"><strong>Every pass scans to the end.</strong> In bubble sort each pass stops one place earlier because the largest values settle at the end. In selection sort the shrinking happens at the <strong>front</strong>: any value still unsorted, even one in the middle, might be the smallest, so each pass looks all the way to the last element.</p><p style=\"font-size:14.5px\"><strong>Watch the 10.</strong> It reached the end in pass 1 only because it was sitting where 2 had to go. Selection sort guarantees the front of the list, pass by pass. Anything at the end is luck until the last passes.</p><h4>His exercise: seven names</h4><p style=\"font-size:14.5px\">The bubble-sort names again, compared by first letter (A lowest): Mohan, Ram, Sham, Lakshman, Arjun, Bheem, Nakul.</p><ul style=\"font-size:14.5px\"><li><strong>Pass 1.</strong> Start at Mohan. Ram and Sham come later in the alphabet, so Mohan stays the smallest; then Lakshman becomes the smallest, then Arjun. Bheem and Nakul do not beat A. Swap Mohan and Arjun: <span style=\"font-family:var(--mono)\">Arjun Ram Sham Lakshman Mohan Bheem Nakul</span></li><li><strong>Pass 2.</strong> Start at Ram. Sham is later; Lakshman becomes the smallest, Mohan does not beat L, Bheem does, Nakul does not. Swap Ram and Bheem: <span style=\"font-family:var(--mono)\">Arjun Bheem Sham Lakshman Mohan Ram Nakul</span>. Ram jumps to the sixth place in one swap</li></ul><div class=\"def\"><b>From the lecture (L#26):</b> the in-class exercise was these first two passes; he left the rest for practice. L#25 said the final exam expects every step shown, so write each pass out.</div><details><summary>The remaining passes, to check your practice</summary><div class=\"scroller\"><table><thead><tr><th>Pass</th><th>Swap</th><th>List after</th></tr></thead><tbody><tr><td>3</td><td>Sham ↔ Lakshman</td><td>Arjun Bheem <b>Lakshman</b> Sham Mohan Ram Nakul</td></tr><tr><td>4</td><td>Sham ↔ Mohan</td><td>Arjun Bheem Lakshman <b>Mohan</b> Sham Ram Nakul</td></tr><tr><td>5</td><td>Sham ↔ Nakul</td><td>Arjun Bheem Lakshman Mohan <b>Nakul</b> Ram Sham</td></tr><tr><td>6</td><td>Ram vs Sham: no swap</td><td>Arjun Bheem Lakshman Mohan Nakul Ram Sham</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Seven names: six passes, 21 comparisons (6 + 5 + 4 + 3 + 2 + 1), 5 swaps.</p></details><!--viz:atb-selection-pass1-scan--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace of the first pass of selection sort on 10, 5, 8, 4, 3, 2. Starting from 10, the smallest-so-far changes to 5, stays at 5 against 8, then changes to 4, 3 and finally 2. Only then is 10 swapped with 2, giving 2, 5, 8, 4, 3, 10.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Pass 1: hunt for the smallest, then swap once</div><p style=\"font-size:13.5px;color:var(--ink-2);margin-bottom:8px;font-family:var(--mono)\">pass 1 of [10, 5, 8, 4, 3, 2] · minimum selection sort</p><div class=\"scroller\"><table><thead><tr><th>#</th><th>Compare</th><th>Decision</th><th>Smallest so far</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono);white-space:nowrap\">0</td><td style=\"font-family:var(--mono);white-space:nowrap\">start</td><td>assume the first value is the smallest</td><td style=\"font-family:var(--mono);white-space:nowrap\">10</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">1</td><td style=\"font-family:var(--mono);white-space:nowrap\">5 vs 10</td><td>5 &lt; 10: new smallest</td><td style=\"font-family:var(--mono);white-space:nowrap\">5</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">2</td><td style=\"font-family:var(--mono);white-space:nowrap\">8 vs 5</td><td>8 &gt; 5: keep 5</td><td style=\"font-family:var(--mono);white-space:nowrap\">5</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">3</td><td style=\"font-family:var(--mono);white-space:nowrap\">4 vs 5</td><td>4 &lt; 5: new smallest</td><td style=\"font-family:var(--mono);white-space:nowrap\">4</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">4</td><td style=\"font-family:var(--mono);white-space:nowrap\">3 vs 4</td><td>3 &lt; 4: new smallest</td><td style=\"font-family:var(--mono);white-space:nowrap\">3</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">5</td><td style=\"font-family:var(--mono);white-space:nowrap\">2 vs 3</td><td>2 &lt; 3: new smallest</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--blue-soft)\">2</td></tr></tbody></table></div><p style=\"font-size:14px;margin-top:8px\">End of pass: swap position 1 (10) with the smallest (2) → <span style=\"font-family:var(--mono);padding:2px 6px;border-radius:3px;background:var(--good-soft)\"><b>2</b> 5 8 4 3 10</span></p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Five comparisons but a single swap: nothing moves until the pass has found its smallest value.</figcaption></figure><!--/viz:atb-selection-pass1-scan-->"
+    },
+    {
+     "t": "Selection sort variants and O(n²)",
+     "src": "L#26",
+     "h": "<h4>Three variants</h4><ul style=\"font-size:14.5px\"><li><strong>Minimum selection sort</strong>, the classic: find the smallest, place it at the front. This is the version most textbooks show</li><li><strong>Maximum selection sort</strong>: start at the <strong>end</strong>. Assume the last unsorted value is the largest, scan <strong>leftwards</strong> for anything bigger, then swap the largest into the last unsorted position. The sorted part grows from the right. On his list, pass 1 finds 10 and swaps it with the 2 at the end; pass 2 starts from the 3, finds 8 and swaps them: <span style=\"font-family:var(--mono)\">2 5 3 4 8 10</span> (see the figure)</li><li><strong>Bidirectional selection sort</strong>: one pass searches for both the smallest and the largest, placing one at the front and the other at the end. Two values are placed per pass, so the passes are roughly halved: six elements need three. He described it but did not demonstrate it</li></ul><h4>All three are O(n²)</h4><p style=\"font-size:14.5px\">Each pass compares across the whole unsorted part, so the comparisons are (n − 1) + (n − 2) + … + 1 = n(n − 1) ÷ 2, the same sum as bubble sort: <strong>O(n²)</strong>.</p><div class=\"def\"><b>Why bidirectional does not help.</b> Halving the passes does not halve the work: each pass still has to compare its way from the front to the back, for the smallest and for the largest. (Searching for them separately takes 2(m − 1) comparisons on an m-element part: 10 + 6 + 2 = 18 for six elements, no fewer than the one-way 15.) The complexity is the same, it is harder to implement and easier to get wrong, so textbooks and real implementations usually stick to minimum selection sort.</div><p style=\"font-size:14.5px\"><strong>The order of the data does not change the comparisons.</strong> Even an already-sorted list of six gets all 15, because selection sort cannot know a value is the smallest without looking at everything after it. Only the number of swaps changes (none, for a sorted list).</p><h4>Selection vs bubble sort</h4><p style=\"font-size:14.5px\">Both are O(n²), but they move data very differently. Bubble sort can swap the same value again and again within one pass, up to n − 1 times; selection sort finds its value first and then swaps <strong>once</strong>. On his list:</p><div class=\"scroller\"><table><thead><tr><th></th><th>Bubble sort (L#25)</th><th>Selection sort</th></tr></thead><tbody><tr><td>Comparisons</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td></tr><tr><td>Swaps</td><td style=\"font-family:var(--mono);white-space:nowrap\">14</td><td style=\"font-family:var(--mono);white-space:nowrap\">4</td></tr><tr><td>Most swaps in one pass</td><td>5 (pass 1: the 10 moves all the way)</td><td>1, always</td></tr><tr><td>Each pass guarantees</td><td>the largest remaining value at the end</td><td>the smallest remaining value at the front</td></tr></tbody></table></div><p style=\"font-size:14.5px\">So selection sort is somewhat better than bubble sort on swaps, and that is its one real advantage. It is still O(n²): good for demonstrating the idea and for small lists, avoided for long ones.</p><!--viz:atb-selection-min-vs-max--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two columns trace selection sort on 10, 5, 8, 4, 3, 2. Minimum selection fixes 2, then 3, 4 and 5 at the front. Maximum selection fixes 10, then 8, 5 and 4 at the end. Both are sorted after five passes, with 15 comparisons and 4 swaps.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Minimum vs maximum selection on the same list</div><p style=\"font-size:13.5px;color:var(--ink-2);margin-bottom:8px;font-family:var(--mono)\">[10, 5, 8, 4, 3, 2] · blue = fixed in its final place</p><div class=\"scroller\"><table><thead><tr><th>Pass</th><th>Minimum: front first</th><th>Maximum: end first</th></tr></thead><tbody><tr><td>1</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b style=\"color:var(--blue)\">2</b> 5 8 4 3 10</td><td style=\"font-family:var(--mono);white-space:nowrap\">2 5 8 4 3 <b style=\"color:var(--blue)\">10</b></td></tr><tr><td>2</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b style=\"color:var(--blue)\">2</b> <b style=\"color:var(--blue)\">3</b> 8 4 5 10</td><td style=\"font-family:var(--mono);white-space:nowrap\">2 5 3 4 <b style=\"color:var(--blue)\">8</b> <b style=\"color:var(--blue)\">10</b></td></tr><tr><td>3</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b style=\"color:var(--blue)\">2</b> <b style=\"color:var(--blue)\">3</b> <b style=\"color:var(--blue)\">4</b> 8 5 10</td><td style=\"font-family:var(--mono);white-space:nowrap\">2 4 3 <b style=\"color:var(--blue)\">5</b> <b style=\"color:var(--blue)\">8</b> <b style=\"color:var(--blue)\">10</b></td></tr><tr><td>4</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b style=\"color:var(--blue)\">2</b> <b style=\"color:var(--blue)\">3</b> <b style=\"color:var(--blue)\">4</b> <b style=\"color:var(--blue)\">5</b> 8 10</td><td style=\"font-family:var(--mono);white-space:nowrap\">2 3 <b style=\"color:var(--blue)\">4</b> <b style=\"color:var(--blue)\">5</b> <b style=\"color:var(--blue)\">8</b> <b style=\"color:var(--blue)\">10</b></td></tr><tr><td>5</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b style=\"color:var(--blue)\">2</b> <b style=\"color:var(--blue)\">3</b> <b style=\"color:var(--blue)\">4</b> <b style=\"color:var(--blue)\">5</b> <b style=\"color:var(--blue)\">8</b> <b style=\"color:var(--blue)\">10</b></td><td style=\"font-family:var(--mono);white-space:nowrap\"><b style=\"color:var(--blue)\">2</b> <b style=\"color:var(--blue)\">3</b> <b style=\"color:var(--blue)\">4</b> <b style=\"color:var(--blue)\">5</b> <b style=\"color:var(--blue)\">8</b> <b style=\"color:var(--blue)\">10</b></td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-3);margin-top:8px\">Both: 15 comparisons, 4 swaps, 5 passes.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The two variants grow the sorted part from opposite ends, but do the same amount of work.</figcaption></figure><!--/viz:atb-selection-min-vs-max-->"
+    },
+    {
+     "t": "Insertion sort: shift, then insert",
+     "src": "L#27",
+     "h": "<div class=\"def\"><b>Insertion sort</b> takes the next item from the unsorted part, the <b>key</b>, and <b>inserts</b> it into its correct place in the sorted part on its left. It does not swap. Larger items <b>move</b> (shift) one place to the right to open a gap, and the key goes into the gap.</div><h4>The classic method</h4><ol style=\"font-size:14.5px\"><li>Treat the first item as a sorted part of one</li><li>Take the <strong>second</strong> item as the key</li><li>Compare the key with the items to its left, one at a time. Each item larger than the key moves one place right</li><li>Stop at an item that is smaller than the key (or equal to it), or at the start of the list, and put the key in the gap</li><li>The next item becomes the key; repeat to the end of the list</li></ol><p style=\"font-size:14.5px\"><strong>His example</strong>, the module’s list [10, 5, 8, 4, 3, 2]. The bar separates the sorted part from the rest.</p><div class=\"scroller\"><table><thead><tr><th>Pass · key</th><th>Moved right</th><th>List after</th><th>Comparisons / moves</th></tr></thead><tbody><tr><td>1 · key 5</td><td>10</td><td style=\"font-family:var(--mono);white-space:nowrap\">5 10 <span style=\"color:var(--ink-3)\">|</span> 8 4 3 2</td><td style=\"font-family:var(--mono);white-space:nowrap\">1 / 1</td></tr><tr><td>2 · key 8</td><td>10</td><td style=\"font-family:var(--mono);white-space:nowrap\">5 8 10 <span style=\"color:var(--ink-3)\">|</span> 4 3 2</td><td style=\"font-family:var(--mono);white-space:nowrap\">2 / 1</td></tr><tr><td>3 · key 4</td><td>10, 8, 5</td><td style=\"font-family:var(--mono);white-space:nowrap\">4 5 8 10 <span style=\"color:var(--ink-3)\">|</span> 3 2</td><td style=\"font-family:var(--mono);white-space:nowrap\">3 / 3</td></tr><tr><td>4 · key 3</td><td>10, 8, 5, 4</td><td style=\"font-family:var(--mono);white-space:nowrap\">3 4 5 8 10 <span style=\"color:var(--ink-3)\">|</span> 2</td><td style=\"font-family:var(--mono);white-space:nowrap\">4 / 4</td></tr><tr><td>5 · key 2</td><td>all five</td><td style=\"font-family:var(--mono);white-space:nowrap\">2 3 4 5 8 10</td><td style=\"font-family:var(--mono);white-space:nowrap\">5 / 5</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>15 comparisons, 14 moves.</strong> Passes 1 and 2 look like swaps, because only one item moves. Pass 3 shows the difference: 10, 8 and 5 each step one place right and the 4 is written once, at the front (see the figure). In pass 5 every item moves, because 2 is smaller than all of them.</p><p style=\"font-size:14.5px\"><strong>A check you can do yourself.</strong> Each move fixes exactly one pair of values that were in the wrong order, and so does each bubble-sort swap. His list has 14 such pairs, which is why insertion sort’s 14 moves equal bubble sort’s 14 swaps in L#25.</p><h4>His exercise: the seven names, all the way</h4><p style=\"font-size:14.5px\">Same names as before, by first letter: Mohan, Ram, Sham, Lakshman, Arjun, Bheem, Nakul.</p><div class=\"scroller\"><table><thead><tr><th>Key</th><th>Moves right</th><th>List after</th></tr></thead><tbody><tr><td>Ram</td><td>nothing: M comes before R</td><td>Mohan Ram <span style=\"color:var(--ink-3)\">|</span> Sham …</td></tr><tr><td>Sham</td><td>nothing: M and R come before S</td><td>Mohan Ram Sham <span style=\"color:var(--ink-3)\">|</span> Lakshman …</td></tr><tr><td>Lakshman</td><td>Sham, Ram, Mohan</td><td>Lakshman Mohan Ram Sham <span style=\"color:var(--ink-3)\">|</span> Arjun …</td></tr><tr><td>Arjun</td><td>all four</td><td>Arjun Lakshman Mohan Ram Sham <span style=\"color:var(--ink-3)\">|</span> Bheem Nakul</td></tr><tr><td>Bheem</td><td>Sham, Ram, Mohan, Lakshman; Arjun stays</td><td>Arjun Bheem Lakshman Mohan Ram Sham <span style=\"color:var(--ink-3)\">|</span> Nakul</td></tr><tr><td>Nakul</td><td>Sham, Ram; Mohan stays</td><td>Arjun Bheem Lakshman Mohan Nakul Ram Sham</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Sorted: <span style=\"font-family:var(--mono)\">Arjun Bheem Lakshman Mohan Nakul Ram Sham</span>. When the key is already larger than the item to its left (Ram, Sham), nothing moves: the pass costs one comparison.</p><div class=\"def\"><b>From the lecture (L#27):</b> for insertion sort he asked for the <b>complete</b> sort of the names, not just two passes as in the earlier exercises. Practise writing every pass: L#25 said the final exam needs each step shown.</div><!--viz:atb-insertion-shift-pass3--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace of pass 3 of insertion sort. The key 4 is lifted out of 5, 8, 10, 4, 3, 2, leaving a gap. 10, 8 and 5 each move one place right, so the gap travels to the front, and 4 is written there: 4, 5, 8, 10, 3, 2.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Pass 3: moving, not swapping</div><p style=\"font-size:13.5px;color:var(--ink-2);margin-bottom:8px;font-family:var(--mono)\">pass 3 of [10, 5, 8, 4, 3, 2] · __ = the gap</p><div class=\"scroller\"><table><thead><tr><th>Step</th><th>List</th><th>What happens</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono);white-space:nowrap\">start</td><td style=\"font-family:var(--mono);white-space:nowrap\">5 8 10 <b style=\"color:var(--blue)\">4</b> 3 2</td><td>key = 4; sorted part is 5 8 10</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">lift</td><td style=\"font-family:var(--mono);white-space:nowrap\">5 8 10 <span style=\"color:var(--ink-3)\">__</span> 3 2</td><td>hold 4 aside; its place is now a gap</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">1</td><td style=\"font-family:var(--mono);white-space:nowrap\">5 8 <span style=\"color:var(--ink-3)\">__</span> 10 3 2</td><td>10 &gt; 4: 10 moves right</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">2</td><td style=\"font-family:var(--mono);white-space:nowrap\">5 <span style=\"color:var(--ink-3)\">__</span> 8 10 3 2</td><td>8 &gt; 4: 8 moves right</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">3</td><td style=\"font-family:var(--mono);white-space:nowrap\"><span style=\"color:var(--ink-3)\">__</span> 5 8 10 3 2</td><td>5 &gt; 4: 5 moves right; start of list reached</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">drop</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--good-soft)\"><b style=\"color:var(--blue)\">4</b> 5 8 10 3 2</td><td>write 4 into the gap</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Three items step right and the key is written once: three swaps would have moved the 4 three times.</figcaption></figure><!--/viz:atb-insertion-shift-pass3-->"
+    },
+    {
+     "t": "Insertion sort variants and uses",
+     "src": "L#27",
+     "h": "<h4>Variants</h4><ul style=\"font-size:14.5px\"><li><strong>Classic (minimum) insertion sort</strong>: start with the second item from the <strong>beginning</strong>, compare leftwards, move larger items <strong>right</strong>. The sorted part grows from the left</li><li><strong>Maximum insertion sort</strong>: the mirror image. Start with the second item from the <strong>end</strong>, compare with the items to its <strong>right</strong>, move smaller items one place <strong>left</strong>, and put the key in the gap. The sorted part grows from the right</li><li><strong>Bidirectional insertion sort</strong>: work from both ends at once, a key from the front moving larger items right and a key from the back moving smaller items left, with the two boundaries closing in. Described, not demonstrated</li></ul><p style=\"font-size:14.5px\">His maximum-insertion trace on the same list (bar = start of the sorted part):</p><div class=\"scroller\"><table><thead><tr><th>Pass · key</th><th>Moved left</th><th>List after</th></tr></thead><tbody><tr><td>1 · key 3</td><td>2</td><td style=\"font-family:var(--mono);white-space:nowrap\">10 5 8 4 <span style=\"color:var(--ink-3)\">|</span> 2 3</td></tr><tr><td>2 · key 4</td><td>2, 3</td><td style=\"font-family:var(--mono);white-space:nowrap\">10 5 8 <span style=\"color:var(--ink-3)\">|</span> 2 3 4</td></tr><tr><td>3 · key 8</td><td>2, 3, 4</td><td style=\"font-family:var(--mono);white-space:nowrap\">10 5 <span style=\"color:var(--ink-3)\">|</span> 2 3 4 8</td></tr><tr><td>4 · key 5</td><td>2, 3, 4; 8 stays</td><td style=\"font-family:var(--mono);white-space:nowrap\">10 <span style=\"color:var(--ink-3)\">|</span> 2 3 4 5 8</td></tr><tr><td>5 · key 10</td><td>all five</td><td style=\"font-family:var(--mono);white-space:nowrap\">2 3 4 5 8 10</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Again 15 comparisons and 14 moves. He described the variants as placing the minimum or the maximum; read that as the direction of work. A pass does not search for the largest value: the first key here, 3, sits at the far right only until bigger keys arrive.</p><h4>Complexity: O(n²) for every variant</h4><p style=\"font-size:14.5px\">Wherever you start, every item may have to be compared with all the others, so all three variants are <strong>O(n²)</strong>, and textbooks show only one. The worst case is a list in reverse order: every key moves past the whole sorted part, so the last pass alone makes n − 1 moves (six items in descending order: 15 moves).</p><div class=\"def\"><b>Squares, not the next number.</b> He illustrated n² growth with 9, 16, 25 while speaking of 4 and 5 elements. Those are 3², 4² and 5²: going from 4 to 5 elements raises the order of work from <b>16 to 25</b>.</div><h4>When insertion sort is the right tool</h4><ul style=\"font-size:14.5px\"><li><strong>Small lists</strong>: fine, like the other simple sorts</li><li><strong>Large, randomly ordered lists</strong>: inefficient, O(n²) like bubble and selection sort</li><li><strong>A new item arriving in a list that is already sorted.</strong> His example: the class list is in alphabetical order, and a student joins late because the fee payment was processed late. If roll numbers have been assigned, the newcomer just takes the next number. If not, he searches for the right place, first the P names, then the exact spot among them, and inserts the name there. Only the names after it move; nothing is re-sorted</li><li><strong>A mostly sorted list</strong>, such as an e-commerce catalogue already ordered by main category with sub-lists inside each, where new products must be slotted into the right sub-list</li></ul><p style=\"font-size:14.5px\">The name fits: insert the item at its correct place now, and there is no sorting to do later. The figure shows why order matters so much: a sorted or nearly sorted list costs barely more than one comparison per item.</p><h4>The three sorts so far, on his list [10, 5, 8, 4, 3, 2]</h4><div class=\"scroller\"><table><thead><tr><th></th><th>Bubble (L#25)</th><th>Selection (L#26)</th><th>Insertion (L#27)</th></tr></thead><tbody><tr><td>Moves data by</td><td>swapping neighbours</td><td>one swap per pass</td><td>shifting, then one write</td></tr><tr><td>Comparisons</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td></tr><tr><td>Swaps or moves</td><td style=\"font-family:var(--mono);white-space:nowrap\">14 swaps</td><td style=\"font-family:var(--mono);white-space:nowrap\">4 swaps</td><td style=\"font-family:var(--mono);white-space:nowrap\">14 moves</td></tr><tr><td>Strong point</td><td>simplest idea</td><td>fewest swaps</td><td>sorted or nearly sorted data</td></tr></tbody></table></div><!--viz:atb-insertion-input-order--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table for six-item lists. Already sorted: insertion sort makes 5 comparisons and 0 moves. One item out of place: 6 comparisons, 1 move. The lecture list: 15 comparisons, 14 moves. Reverse order: 15 comparisons, 15 moves. Selection sort makes 15 comparisons in every case.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Six items, four orders: what insertion sort pays</div><div class=\"scroller\"><table><thead><tr><th>Input order</th><th>List</th><th>Insertion: comparisons</th><th>Insertion: moves</th><th>Selection: comparisons</th></tr></thead><tbody><tr><td>Already sorted</td><td style=\"font-family:var(--mono);white-space:nowrap\">2 5 8 11 14 20</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--good-soft)\">5</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--good-soft)\">0</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td></tr><tr><td>One item out of place</td><td style=\"font-family:var(--mono);white-space:nowrap\">3 5 8 7 10 12</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--good-soft)\">6</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--good-soft)\">1</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td></tr><tr><td>His list</td><td style=\"font-family:var(--mono);white-space:nowrap\">10 5 8 4 3 2</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td><td style=\"font-family:var(--mono);white-space:nowrap\">14</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td></tr><tr><td>Reverse order</td><td style=\"font-family:var(--mono);white-space:nowrap\">20 14 11 8 5 2</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--bad-soft)\">15</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--bad-soft)\">15</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Insertion sort’s cost follows how disordered the list is; selection sort pays 15 comparisons whatever the order.</figcaption></figure><!--/viz:atb-insertion-input-order-->"
     },
     {
      "t": "Textbook: Sorting Algorithms",
@@ -1735,6 +1773,97 @@ HUB.addCourse({
    "p": "Bubble sort makes n(n − 1) ÷ 2, about half of n². Big O drops the ½ and the lower-order term and keeps only the growth rate.",
    "f": "½n² − ½n → O(n²)",
    "lec": 25
+  },
+  {
+   "id": "atb-t0153",
+   "h": "Bidirectional selection sort halves the passes, not the work",
+   "p": "Placing the smallest and the largest in each pass means about n ÷ 2 passes, but every pass still compares across the whole unsorted part. The complexity stays O(n²).",
+   "f": "half the passes, same n²",
+   "lec": 26
+  },
+  {
+   "id": "atb-t0154",
+   "h": "Selection sort makes the same comparisons on a sorted list as on a jumbled one",
+   "p": "It cannot know a value is the smallest without checking every value after it, so six elements always cost 15 comparisons. Only the swaps drop, to none.",
+   "f": "sorted input, still n(n − 1) ÷ 2",
+   "lec": 26
+  },
+  {
+   "id": "atb-t0155",
+   "h": "Minimum selection sort guarantees the front of the list, not the end",
+   "p": "After pass 1 of [10, 5, 8, 4, 3, 2] the 10 sits at the end only because it was swapped out of 2’s place. Each pass fixes one more value at the front.",
+   "f": "front is earned, end is luck",
+   "lec": 26
+  },
+  {
+   "id": "atb-t0156",
+   "h": "The list can look sorted before the last pass, but the algorithm still runs it",
+   "p": "His list was in order after pass 4, yet pass 5 still compares 8 with 10. Selection sort takes n − 1 passes; it has no early stop.",
+   "f": "looks sorted ≠ finished",
+   "lec": 26
+  },
+  {
+   "id": "atb-t0157",
+   "h": "Maximum selection sort scans from the end, leftwards",
+   "p": "It assumes the last unsorted value is the largest, looks left for anything bigger, and swaps the largest into that last position. The sorted part grows from the right.",
+   "f": "max: end first, look left",
+   "lec": 26
+  },
+  {
+   "id": "atb-t0158",
+   "h": "Insertion sort moves items along; it does not swap",
+   "p": "Larger items each step one place right and the key is written once into the gap. With one item to pass it looks like a swap; with three it is clearly not.",
+   "f": "shift, shift, drop",
+   "lec": 27
+  },
+  {
+   "id": "atb-t0159",
+   "h": "The first key is the second item, so n items need n − 1 passes",
+   "p": "The first item is treated as a sorted part of one. His six-item list took five passes, keys 5, 8, 4, 3 and 2.",
+   "f": "start at item 2",
+   "lec": 27
+  },
+  {
+   "id": "atb-t0160",
+   "h": "In maximum insertion sort smaller items move left",
+   "p": "It starts with the second item from the end, compares to the right, moves smaller items one place left and puts the key in the gap. It is the classic method mirrored.",
+   "f": "max: from the end, move left",
+   "lec": 27
+  },
+  {
+   "id": "atb-t0161",
+   "h": "Going from 4 to 5 elements, n² goes from 16 to 25",
+   "p": "He gave 9, 16, 25 while speaking of 4 and 5 elements. Those are 3², 4² and 5²; for 4 elements the order is 16.",
+   "f": "4² = 16, 5² = 25",
+   "lec": 27
+  },
+  {
+   "id": "atb-t0162",
+   "h": "Insertion sort is O(n²), yet nearly sorted input costs it very little",
+   "p": "A sorted list of six takes 5 comparisons and no moves; one item out of place adds one comparison and one move. That is why it suits inserting into sorted lists.",
+   "f": "nearly sorted → nearly free",
+   "lec": 27
+  },
+  {
+   "id": "atb-t0163",
+   "h": "O(log n) does not require halving",
+   "p": "Any step that cuts the problem by a fixed ratio, a half, a third or two-thirds, gives logarithmic growth. Halving is only the binary case.",
+   "f": "fixed ratio → log n",
+   "lec": 28
+  },
+  {
+   "id": "atb-t0164",
+   "h": "Binary search’s O(log n) leaves out the sort it depends on",
+   "p": "The data must be sorted first, and in a business application that cost has to be added. For one lookup in unsorted data, a linear scan is cheaper.",
+   "f": "sort first, then log n",
+   "lec": 28
+  },
+  {
+   "id": "atb-t0165",
+   "h": "Linked-list insertion is O(1) only once you are at the node",
+   "p": "The link changes are fixed, two for a singly and four for a doubly linked list. Finding the node to insert after is a search, and that makes the whole job O(n).",
+   "f": "relink O(1), find O(n)",
+   "lec": 28
   }
  ],
  "defs": [
@@ -2888,6 +3017,86 @@ HUB.addCourse({
    "term": "Alternative bubble sort",
    "html": "The <b>alternative bubble sort</b> works from the <b>end</b> of the list, comparing each element with the one before it, so each pass moves the <b>smallest</b> remaining value to the front.",
    "lec": 25
+  },
+  {
+   "id": "atb-d0146",
+   "unit": "sorting",
+   "topic": "Selection sort variants and O(n²)",
+   "term": "Minimum selection sort",
+   "html": "<b>Minimum selection sort</b>, the classic version: each pass finds the <b>smallest</b> value in the unsorted part and swaps it to the <b>front</b> of that part.",
+   "lec": 26
+  },
+  {
+   "id": "atb-d0147",
+   "unit": "sorting",
+   "topic": "Selection sort variants and O(n²)",
+   "term": "Maximum selection sort",
+   "html": "<b>Maximum selection sort</b> starts at the <b>end</b>: each pass scans leftwards for the <b>largest</b> unsorted value and swaps it into the last unsorted position, so the sorted part grows from the right.",
+   "lec": 26
+  },
+  {
+   "id": "atb-d0148",
+   "unit": "sorting",
+   "topic": "Selection sort variants and O(n²)",
+   "term": "Bidirectional selection sort",
+   "html": "<b>Bidirectional selection sort</b> finds the smallest and the largest in the same pass and places both, roughly <b>halving the passes</b>. It is still <b>O(n²)</b>, because the comparisons are not halved.",
+   "lec": 26
+  },
+  {
+   "id": "atb-d0149",
+   "unit": "sorting",
+   "topic": "Selection sort: select, then swap",
+   "term": "Smallest so far",
+   "html": "In selection sort, the <b>smallest so far</b> starts as the first unsorted value and is replaced each time a smaller value turns up. Only at the end of the pass is it swapped into place.",
+   "lec": 26
+  },
+  {
+   "id": "atb-d0150",
+   "unit": "sorting",
+   "topic": "Insertion sort: shift, then insert",
+   "term": "Key (insertion sort)",
+   "html": "The <b>key</b> is the item being inserted in the current pass. Classic insertion sort starts with the <b>second</b> item as the key, treating the first as already sorted.",
+   "lec": 27
+  },
+  {
+   "id": "atb-d0151",
+   "unit": "sorting",
+   "topic": "Insertion sort: shift, then insert",
+   "term": "Move (shift)",
+   "html": "A <b>move</b> or <b>shift</b> steps one item one place along to open a gap for the key. Insertion sort works by moves, where bubble and selection sort <b>swap</b>.",
+   "lec": 27
+  },
+  {
+   "id": "atb-d0152",
+   "unit": "sorting",
+   "topic": "Insertion sort variants and uses",
+   "term": "Maximum insertion sort",
+   "html": "<b>Maximum insertion sort</b> starts with the <b>second item from the end</b>, compares with the items to its right and moves <b>smaller</b> items one place <b>left</b>, so the sorted part grows from the right.",
+   "lec": 27
+  },
+  {
+   "id": "atb-d0153",
+   "unit": "sorting",
+   "topic": "Insertion sort variants and uses",
+   "term": "Bidirectional insertion sort",
+   "html": "<b>Bidirectional insertion sort</b> inserts keys from both ends at once, moving larger items right at the front and smaller items left at the back. Still <b>O(n²)</b>.",
+   "lec": 27
+  },
+  {
+   "id": "atb-d0154",
+   "unit": "searching",
+   "topic": "Other network search algorithms",
+   "term": "Uniform cost search",
+   "html": "<b>Uniform cost search</b> always extends the path with the <b>lowest cost so far</b>. The L#28 slide’s application: finding the cheapest transportation route.",
+   "lec": 28
+  },
+  {
+   "id": "atb-d0155",
+   "unit": "searching",
+   "topic": "Other network search algorithms",
+   "term": "Bidirectional search",
+   "html": "<b>Bidirectional search</b> searches from the <b>source and the destination at the same time</b> until the two searches meet. The L#28 slide’s application: a route between two locations.",
+   "lec": 28
   }
  ],
  "questions": [
@@ -11083,6 +11292,737 @@ HUB.addCourse({
    "w": "Each left-to-right pass carries the largest remaining value to the end. Smallest-to-the-front is the alternative method; halving belongs to binary search.",
    "lec": 25,
    "lv": "recall"
+  },
+  {
+   "id": "atb-q0491",
+   "topic": "Sorting",
+   "q": "What does each pass of the classic (minimum) selection sort do?",
+   "c": [
+    "Swaps every neighbouring pair that is out of order",
+    "Finds the smallest value in the unsorted part and swaps it into the first unsorted position",
+    "Takes the next value and shifts larger values right to make room for it",
+    "Splits the list in half and sorts each half"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Selection sort selects one value per pass, the smallest remaining, and swaps it into place. Swapping neighbours is bubble sort; shifting values to make room is insertion sort.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0492",
+   "topic": "Sorting",
+   "q": "At the start of each pass, which value does the classic selection sort treat as the smallest?",
+   "c": [
+    "The first value of the unsorted part, until something smaller turns up",
+    "The last value in the list",
+    "The value in the middle of the unsorted part",
+    "The value fixed in the previous pass"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He started every pass by assuming the first unsorted value is the smallest, because you cannot know until you have compared it with the rest. The value fixed last pass is already in the sorted part.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0493",
+   "topic": "Sorting",
+   "q": "Minimum selection sort runs on [16, 9, 22, 3, 11, 7]. During pass 1, how many times does the “smallest so far” change?",
+   "c": [
+    "5",
+    "1",
+    "2",
+    "3"
+   ],
+   "a": [
+    2
+   ],
+   "w": "It starts at 16, changes to 9, stays at 9 against 22, changes to 3, and stays at 3 against 11 and 7: two changes. Five is the number of comparisons in the pass.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0494",
+   "topic": "Sorting",
+   "q": "Continuing minimum selection sort on [16, 9, 22, 3, 11, 7], what is the list after pass 3?",
+   "c": [
+    "[3, 7, 22, 16, 11, 9]",
+    "[3, 7, 9, 22, 16, 11]",
+    "[3, 7, 9, 11, 16, 22]",
+    "[3, 7, 9, 16, 11, 22]"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Pass 1 swaps 16 and 3, pass 2 swaps 9 and 7, pass 3 swaps 22 and 9: [3, 7, 9, 16, 11, 22]. [3, 7, 9, 22, 16, 11] is what you get by shifting the others along instead of swapping, which is insertion-style movement; [3, 7, 22, 16, 11, 9] is after pass 2.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0495",
+   "topic": "Sorting",
+   "q": "How many swaps did selection sort make on the lecture’s list [10, 5, 8, 4, 3, 2]?",
+   "c": [
+    "14",
+    "4",
+    "5",
+    "15"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Passes 1 to 4 each make one swap; in pass 5 the 8 is already smaller than 10, so nothing moves. Fourteen is bubble sort’s count on the same list, and 15 is the number of comparisons.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0496",
+   "topic": "Sorting",
+   "q": "In the lecture’s names exercise (Mohan, Ram, Sham, Lakshman, Arjun, Bheem, Nakul, by first letter), what is the list after pass 2 of minimum selection sort?",
+   "c": [
+    "Arjun, Bheem, Sham, Lakshman, Mohan, Ram, Nakul",
+    "Arjun, Ram, Sham, Lakshman, Mohan, Bheem, Nakul",
+    "Arjun, Bheem, Ram, Sham, Lakshman, Mohan, Nakul",
+    "Arjun, Bheem, Lakshman, Mohan, Nakul, Ram, Sham"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Pass 1 swaps Mohan and Arjun; pass 2 starts at Ram, finds Bheem as the smallest and swaps the two, so Ram lands in Bheem’s old sixth place. Arjun, Bheem, Ram, Sham… shifts the names along, which selection sort does not do.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0497",
+   "topic": "Sorting",
+   "q": "Minimum selection sort, by first letter, runs one pass over [Tara, Gopal, Zoya, Asha, Mehul]. What is the result?",
+   "c": [
+    "[Gopal, Tara, Zoya, Asha, Mehul]",
+    "[Asha, Tara, Gopal, Zoya, Mehul]",
+    "[Asha, Gopal, Zoya, Tara, Mehul]",
+    "[Asha, Gopal, Mehul, Tara, Zoya]"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The smallest is Asha; it swaps with Tara, the first name, and everything else stays put. [Asha, Tara, Gopal, Zoya, Mehul] would need the others to shift right, and the fully sorted list takes more passes.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0498",
+   "topic": "Sorting",
+   "q": "One pass turns [12, 30, 4, 25, 18] into [12, 18, 4, 25, 30]. Which method made that pass?",
+   "c": [
+    "Classic bubble sort, left to right",
+    "Minimum selection sort",
+    "Classic insertion sort",
+    "Maximum selection sort"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The largest value, 30, was swapped straight into the last position with 18, and nothing else moved: maximum selection. A bubble pass would give [12, 4, 25, 18, 30]; minimum selection would give [4, 30, 12, 25, 18].",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0499",
+   "topic": "Sorting",
+   "q": "Maximum selection sort runs on [21, 6, 17, 2, 13, 9]. What is the list after two passes?",
+   "c": [
+    "[9, 6, 13, 2, 17, 21]",
+    "[2, 6, 17, 21, 13, 9]",
+    "[6, 2, 13, 9, 17, 21]",
+    "[9, 6, 2, 13, 17, 21]"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Pass 1 swaps 21 with the last value, 9: [9, 6, 17, 2, 13, 21]. Pass 2 finds 17 and swaps it with 13: [9, 6, 13, 2, 17, 21]. [2, 6, 17, 21, 13, 9] is two passes of minimum selection; [6, 2, 13, 9, 17, 21] is two bubble passes.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0500",
+   "topic": "Sorting",
+   "q": "In maximum selection sort, where does each pass start and which way does it look?",
+   "c": [
+    "At the first unsorted position, looking right for a smaller value",
+    "At the last unsorted position, looking left for a larger value",
+    "In the middle, looking both ways",
+    "At the last position, comparing each neighbouring pair"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He started at the end, assumed that value was the largest, and compared it with the values to its left. Looking right for a smaller value is the classic minimum version.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0501",
+   "topic": "Sorting",
+   "q": "A bidirectional selection sort runs on 10 elements. Which statement is correct?",
+   "c": [
+    "It needs about 5 passes, and its complexity is still O(n²)",
+    "It needs about 5 passes, so its complexity drops to O(n)",
+    "It needs 10 passes, like the other variants",
+    "It needs about 5 passes, so its complexity drops to O(n log n)"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Each pass places two values, so the passes halve. But each pass still compares across the whole unsorted part, so the comparisons are not halved and the order stays n².",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0502",
+   "topic": "Sorting",
+   "q": "Why did the lecture say textbooks usually show only minimum selection sort?",
+   "c": [
+    "The other variants cannot sort names",
+    "Maximum selection sort gives a descending list",
+    "All the variants are O(n²), so the more complicated ones buy no real performance",
+    "Bidirectional selection sort is faster but patented"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Minimum, maximum and bidirectional selection all have the same complexity; bidirectional is also harder to implement and can confuse. Maximum selection still produces an ascending list, built from the end.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0503",
+   "topic": "Sorting",
+   "q": "How many comparisons does minimum selection sort make on a list of 7 elements?",
+   "c": [
+    "49",
+    "28",
+    "6",
+    "21"
+   ],
+   "a": [
+    3
+   ],
+   "w": "6 + 5 + 4 + 3 + 2 + 1 = 21 = 7 × 6 ÷ 2. Forty-nine is n², which Big O approximates but is not the count; 28 starts the sum at 7.",
+   "lec": 26,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0504",
+   "topic": "Sorting",
+   "q": "Minimum selection sort is given the already-sorted list [2, 5, 8, 11, 14, 20]. What happens?",
+   "c": [
+    "It makes 15 comparisons and no swaps",
+    "It stops after one pass because nothing was swapped",
+    "It makes 5 comparisons and no swaps",
+    "It makes 15 comparisons and 5 swaps"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Each pass must compare its starting value with everything after it to be sure it is the smallest, so all 15 comparisons happen; none finds a smaller value, so nothing is swapped. Stopping after a swap-free pass is a bubble-sort shortcut that does not work here.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0505",
+   "topic": "Sorting",
+   "q": "Bubble sort and selection sort each sort a list of 6 elements. Which statement is correct?",
+   "c": [
+    "Selection sort makes fewer comparisons, which is why it is faster",
+    "Both make 15 comparisons, but selection sort makes at most one swap per pass",
+    "Bubble sort makes at most one swap per pass",
+    "Selection sort is O(n), bubble sort O(n²)"
+   ],
+   "a": [
+    1
+   ],
+   "w": "With passes that shrink by one each time, both make n(n − 1) ÷ 2 = 15 comparisons and both are O(n²). The difference is swaps: bubble can swap the same value repeatedly in a pass, selection swaps once after it has found its value.",
+   "lec": 26,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0506",
+   "topic": "Sorting",
+   "q": "After two passes of minimum selection sort on a list of 8 elements, what is guaranteed?",
+   "c": [
+    "The two largest values are at the end",
+    "The list is half sorted",
+    "The two smallest values are in the first two positions, in order",
+    "Two values have been compared with every other value, and nothing has moved"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Each pass fixes the next smallest value at the front. Anything at the end got there by chance unless the pass was the maximum variant.",
+   "lec": 26,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0507",
+   "topic": "Sorting",
+   "q": "What did the lecture single out as the major difference between insertion sort and the two earlier sorts?",
+   "c": [
+    "It works only on numbers",
+    "It moves items to open a gap for the key instead of swapping",
+    "It needs the list sorted first",
+    "It always makes fewer comparisons"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Bubble and selection sort both swap; insertion sort shifts larger items along and writes the key into the gap. It is not always cheaper in comparisons: on a reversed list it makes as many as the others.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0508",
+   "topic": "Sorting",
+   "q": "Which item does classic insertion sort take as its first key?",
+   "c": [
+    "The smallest item",
+    "The last item",
+    "The second item, with the first treated as already sorted",
+    "The middle item"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A single item is a sorted list of one, so the work starts with the second item. Hunting for the smallest is what selection sort does.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0509",
+   "topic": "Sorting",
+   "q": "Classic insertion sort is working on [15, 6, 11, 2, 9]. After three passes it reads [2, 6, 11, 15, 9]. In pass 4, with key 9, how many items is the key compared with, and how many move?",
+   "c": [
+    "Compared with 3, and 2 move",
+    "Compared with 4, and 4 move",
+    "Compared with 2, and 2 move",
+    "Compared with 4, and 2 move"
+   ],
+   "a": [
+    0
+   ],
+   "w": "9 is compared with 15 (moves), 11 (moves) and 6, which is smaller, so it stops: three comparisons, two moves, giving [2, 6, 9, 11, 15]. It never reaches 2, so four comparisons is too many.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0510",
+   "topic": "Sorting",
+   "q": "In the lecture’s example [10, 5, 8, 4, 3, 2], how many moves did classic insertion sort make in total?",
+   "c": [
+    "15",
+    "5",
+    "4",
+    "14"
+   ],
+   "a": [
+    3
+   ],
+   "w": "1 + 1 + 3 + 4 + 5 = 14. Fifteen is the number of comparisons, 5 the number of passes and 4 the swaps selection sort needed on the same list.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0511",
+   "topic": "Sorting",
+   "q": "Insertion sort made 14 moves on [10, 5, 8, 4, 3, 2], and bubble sort made 14 swaps on the same list. Why are the two counts equal?",
+   "c": [
+    "It is a coincidence of this particular list",
+    "Insertion sort is just bubble sort under another name",
+    "Each move or neighbouring swap fixes exactly one pair of values that are in the wrong order, and the list has 14 such pairs",
+    "Both algorithms are O(n²), so on six items they always make 14"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Count the out-of-order pairs: 10 is ahead of five smaller values, 5 of three, 8 of three, 4 of two and 3 of one, which makes 14. Each move and each neighbouring swap removes exactly one, so the counts match on any list. Both being O(n²) says nothing about exact counts; on a sorted list both are zero.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0512",
+   "topic": "Sorting",
+   "q": "In the lecture’s names exercise (Mohan, Ram, Sham, Lakshman, Arjun, Bheem, Nakul), how many names move right when Bheem is inserted?",
+   "c": [
+    "5",
+    "4",
+    "3",
+    "6"
+   ],
+   "a": [
+    1
+   ],
+   "w": "By then the sorted part is Arjun, Lakshman, Mohan, Ram, Sham. Sham, Ram, Mohan and Lakshman come after B and move; Arjun comes before B, so the key stops there. Five would wrongly move Arjun too.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0513",
+   "topic": "Sorting",
+   "q": "In the same exercise, which names move when the last key, Nakul, is inserted into Arjun, Bheem, Lakshman, Mohan, Ram, Sham?",
+   "c": [
+    "Sham and Ram only",
+    "Sham, Ram and Mohan",
+    "Every name",
+    "None, because N comes after M"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Sham and Ram come after N and move right; Mohan comes before N, so the key stops and Nakul goes between Mohan and Ram. The comparison with Mohan happens, but Mohan does not move.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0514",
+   "topic": "Sorting",
+   "q": "When classic insertion sort’s key is already larger than the item directly to its left, what happens in that pass?",
+   "c": [
+    "The two are swapped anyway",
+    "Nothing moves: one comparison, and the key stays where it is",
+    "The key moves to the front",
+    "The pass is skipped without any comparison"
+   ],
+   "a": [
+    1
+   ],
+   "w": "As with Ram and Sham in the names exercise, the key is compared with its left neighbour, found to be larger and left in place. That one comparison still has to be made.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0515",
+   "topic": "Sorting",
+   "q": "Maximum insertion sort (start with the second item from the end, move smaller items on the right one place left) runs on [9, 4, 12, 7, 3]. What is the list after two passes?",
+   "c": [
+    "[4, 9, 12, 7, 3]",
+    "[9, 4, 12, 3, 7]",
+    "[3, 4, 7, 9, 12]",
+    "[9, 4, 3, 7, 12]"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Pass 1, key 7: 3 is smaller, moves left, 7 goes last: [9, 4, 12, 3, 7]. Pass 2, key 12: 3 and 7 both move left, 12 goes last: [9, 4, 3, 7, 12]. [4, 9, 12, 7, 3] is two passes of the classic method from the front.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0516",
+   "topic": "Sorting",
+   "q": "In maximum insertion sort, which way do items move?",
+   "c": [
+    "Larger items move right",
+    "Every item swaps with its neighbour",
+    "Smaller items move left to make room for the key",
+    "The largest item jumps straight to the end"
+   ],
+   "a": [
+    2
+   ],
+   "w": "It mirrors the classic method: start near the end, compare to the right, and move smaller items one place left. Larger items moving right is the classic version.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0517",
+   "topic": "Sorting",
+   "q": "Classic insertion sort runs on the already-sorted list [4, 7, 9, 13, 18, 21, 26, 30]. How much work does it do?",
+   "c": [
+    "7 comparisons and no moves",
+    "28 comparisons and no moves",
+    "28 comparisons and 7 moves",
+    "None: it detects the order before starting"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Each of the seven keys is compared once with its left neighbour, found larger, and left alone. Twenty-eight, 8 × 7 ÷ 2, is what selection sort would spend on the same list.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0518",
+   "topic": "Sorting",
+   "q": "Insertion sort runs on a list of six items in descending order, such as [20, 14, 11, 8, 5, 2]. How many moves does it make?",
+   "c": [
+    "5",
+    "6",
+    "36",
+    "15"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Every key moves past the whole sorted part: 1 + 2 + 3 + 4 + 5 = 15. This is the worst case he described, where each later pass needs more moves, up to n − 1.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0519",
+   "topic": "Sorting",
+   "q": "A list of 6 items has one pair out of place: [3, 5, 8, 7, 10, 12]. How many comparisons do insertion sort and selection sort make?",
+   "c": [
+    "Insertion 6, selection 15",
+    "Both 15",
+    "Insertion 15, selection 6",
+    "Insertion 1, selection 5"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Insertion sort makes one comparison per key, plus one extra for the 7, which moves past the 8: 6. Selection sort always scans the whole unsorted part: 15. One is the number of moves, not comparisons.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0520",
+   "topic": "Sorting",
+   "q": "Under O(n²) growth, how does the order of work change when a list grows from 4 to 5 elements?",
+   "c": [
+    "From 9 to 16",
+    "From 16 to 25",
+    "From 4 to 5",
+    "From 8 to 10"
+   ],
+   "a": [
+    1
+   ],
+   "w": "4² = 16 and 5² = 25. The lecture said 9, 16, 25 while speaking of 4 and 5 elements; 9 is 3². Four to five would be linear growth.",
+   "lec": 27,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0521",
+   "topic": "Sorting",
+   "q": "A class list is already in alphabetical order when a late-joining student must be added, and roll numbers have not yet been assigned. What did the lecture recommend?",
+   "c": [
+    "Append the name at the end and leave it there",
+    "Re-sort the whole list with selection sort",
+    "Find the name’s place and insert it there, moving only the names after it: insertion sort",
+    "Give the student the next roll number"
+   ],
+   "a": [
+    2
+   ],
+   "w": "This was his first use case: with a sorted list, insertion puts the newcomer straight into place and no re-sort is needed. The next roll number was his answer only if roll numbers had already been assigned.",
+   "lec": 27,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0522",
+   "topic": "Sorting",
+   "q": "For which of these jobs is insertion sort the poorest fit?",
+   "c": [
+    "Slotting a few new products into a catalogue already sorted by category",
+    "Keeping a small sorted list up to date as items arrive",
+    "Sorting a list where only one or two items are out of place",
+    "Sorting 10 lakh records that arrive in random order"
+   ],
+   "a": [
+    3
+   ],
+   "w": "On large, randomly ordered lists it is O(n²), like bubble and selection sort. The other three are the nearly sorted or already sorted cases where he called it very useful.",
+   "lec": 27,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0523",
+   "topic": "Searching",
+   "q": "Live Lecture 6 revised complexity and search. What did he say about this material and Quiz 2?",
+   "c": [
+    "It is the main topic of Quiz 2",
+    "It is not in Quiz 2, which covers only the non-linear data structures; it counts for the final exam",
+    "It is in Quiz 2 only if it was covered before Quiz 1",
+    "It is left out of both Quiz 2 and the final exam"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He said at the start that today’s material would not come in the quiz, which covers only non-linear data structures, but that it is part of the full course and relevant for the final exam.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0524",
+   "topic": "Searching",
+   "q": "Under the rules restated in Live Lecture 6, what happens to a student who misses both Quiz 1 and Quiz 2?",
+   "c": [
+    "The quiz component is zero, and the final exam alone must carry the student through",
+    "The final exam mark is copied into the quiz component",
+    "A make-up quiz is held after Diwali",
+    "Only the better of two zeros counts, so nothing is lost"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The better of the two quiz scores counts, so at least one quiz must be attempted. Miss both and that component is zero; he stressed that anyone who missed Quiz 1 must sit Quiz 2.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0525",
+   "topic": "Complexity",
+   "q": "Each step of a lookup rules out two-thirds of the records still in play. In Big O terms, how does its work grow?",
+   "c": [
+    "O(n), because it removes a fraction of n each step",
+    "O(n log n)",
+    "O(√n)",
+    "O(log n), because the problem shrinks by a fixed ratio at each step"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He generalised the halving rule: whenever the problem is cut by a fixed ratio each step, half, a third or two-thirds, the growth is logarithmic. Removing a fixed fraction is not the same as removing a fixed number of items, which would be O(n).",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0526",
+   "topic": "Complexity",
+   "q": "You already hold a pointer to song 2 in a doubly linked playlist and insert a new song after it. What does the insertion itself cost?",
+   "c": [
+    "O(n), because the rest of the playlist shifts along",
+    "A fixed four link changes, O(1), whatever the playlist’s length",
+    "O(log n), because the playlist is halved",
+    "Two link changes per song in the playlist"
+   ],
+   "a": [
+    1
+   ],
+   "w": "In a doubly linked list the insertion updates four links (two in a singly linked list), however long the list is. Nothing shifts, unlike an array. Finding song 2 in the first place would be the O(n) part.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0527",
+   "topic": "Searching",
+   "q": "An analyst needs to look up one customer, once, in 5 lakh unsorted records. Which approach costs less?",
+   "c": [
+    "Sort the records, then use binary search, since binary search is O(log n)",
+    "Use exponential search directly on the unsorted records",
+    "A single linear search, since any sort must at least read every record once, which already costs as much as the scan",
+    "Use jump search with jumps of about 707"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Binary, jump and exponential search all need sorted data, and sorting costs at least one pass over every record. For one lookup the O(n) scan wins; sorting first pays off only when the same data is searched many times.",
+   "lec": 28,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0528",
+   "topic": "Searching",
+   "q": "Binary search runs on 15 sorted values in positions 1 to 15, taking the middle as he did (rounding .5 up). The target is larger than the first middle value. Which positions are checked first and second?",
+   "c": [
+    "8, then 12",
+    "7, then 11",
+    "8, then 4",
+    "7, then 3"
+   ],
+   "a": [
+    0
+   ],
+   "w": "15 ÷ 2 = 7.5 → position 8. The target is larger, so the search moves right: the middle of positions 8 to 15 is 11.5 → 12 (of 9 to 15, exactly 12). Going to 4 would be moving left.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0529",
+   "topic": "Searching",
+   "q": "Jump search is used on 10,000 sorted records with the usual jump size. How big is each jump?",
+   "c": [
+    "10",
+    "5,000",
+    "100",
+    "1,000"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The jump size is √n, and √10,000 = 100, so at most about 100 jumps before a short linear scan in one block. Five thousand is n ÷ 2, the first step of binary search.",
+   "lec": 28,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0530",
+   "topic": "Graph search & shortest paths",
+   "q": "Why, according to Live Lecture 6, can a map app’s distance change after you tap Directions?",
+   "c": [
+    "The app switches from Dijkstra’s algorithm to Bellman–Ford",
+    "The road network changes while you wait",
+    "The app recounts the distance with BFS",
+    "It first shows an estimated distance, then traces the actual road path and revises it, as A* combines actual cost with an estimate"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He used this to explain A*: the estimate to the goal comes first, and once the actual road path is traced the number is updated. Bellman–Ford is for negative costs, which roads do not have.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0531",
+   "topic": "Graph search & shortest paths",
+   "q": "The L#28 slide pairs each network algorithm with an application. Which one did it give for Floyd–Warshall?",
+   "c": [
+    "Designing a telecom network",
+    "City-to-city distance analysis",
+    "GPS navigation",
+    "Network cost analysis with negative weights"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Floyd–Warshall finds shortest paths between every pair of nodes, so the slide used city-to-city distances; in L#24 he gave computer networks and electricity grids, the same every-pair idea. Telecom design is Prim’s; negative weights are Bellman–Ford.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0532",
+   "topic": "Complexity",
+   "q": "Which case did he say the course will mostly reason about?",
+   "c": [
+    "The average case, assuming the data is spread evenly",
+    "The best case only",
+    "The worst case only",
+    "Whichever case gives the smallest Big O"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Data-structure texts discuss best, average and worst cases, and the case depends on how the data is arranged; he said that in this course they mostly think about the average case.",
+   "lec": 28,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0533",
+   "topic": "Graph search & shortest paths",
+   "q": "His home-to-university example: a direct road A–B, or a road through a market, A–C then C–B. Measured in minutes on a busy day, A–B takes 12, A–C 15 and C–B 10. Which route does Dijkstra’s algorithm return from A to B?",
+   "c": [
+    "A → C → B, because it was the shorter route in kilometres",
+    "A → B directly, 12 minutes",
+    "A → C → B, 25 minutes",
+    "Neither, because Dijkstra needs distances in kilometres"
+   ],
+   "a": [
+    1
+   ],
+   "w": "With minutes as the weights, A → C → B costs 15 + 10 = 25 against 12 for the direct road, so the direct road wins. The route through the market was shorter in kilometres (2 + 1 against 4), but the algorithm only knows the weights it is given.",
+   "lec": 28,
+   "lv": "apply"
   }
  ],
  "briefs": {
@@ -11159,6 +12099,9 @@ HUB.addCourse({
   "cdsa-ch08",
   "lec-23",
   "lec-24",
-  "lec-25"
+  "lec-25",
+  "lec-26",
+  "lec-27",
+  "lec-28"
  ]
 });
