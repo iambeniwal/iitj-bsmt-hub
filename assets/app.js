@@ -607,14 +607,17 @@ function mockView(p) {
   const R = META[slug];
   const a = R.assessments.find(x => x.id === p.a) || lastTimed(slug);
   const ref = a.durationMin ? a : lastTimed(slug);         // a TBA quiz borrows the last known format
-  const N = Math.min(ref.questions, C.questions.length), secs = ref.durationMin * 60;
+  /* a quiz whose announcement lists its syllabus (scope = unit ids) draws only from those units */
+  const scoped = Array.isArray(a.scope) && a.scope.length;
+  const POOL = scoped ? C.questions.filter(q => a.scope.includes(C.unitOf[q.topic])) : C.questions;
+  const N = Math.min(ref.questions, POOL.length), secs = ref.durationMin * 60;
 
   app.innerHTML = `
   <header class="mast slim">
     ${crumbs([link("c/" + slug, { tab: "exams" }), R.name])}
     <div class="eyebrow">Mock paper · ${esc(a.name)}${a.status === "tba" ? " (format assumed from " + esc(ref.name) + ")" : ""}</div>
     <h1>${N} questions · ${ref.durationMin} minutes</h1>
-    <p class="sub">Drawn at random from the ${C.questions.length}-question bank. Marked like the real thing, ${esc(M.note)}.
+    <p class="sub">Drawn at random from ${scoped ? `the ${POOL.length} questions on ${esc(a.name)}'s syllabus (${esc(a.scopeText)})` : `the ${C.questions.length}-question bank`}. Marked like the real thing, ${esc(M.note)}.
       You won't see any answers until you submit.</p>
   </header>
   <section class="tight" id="mock">
@@ -633,7 +636,7 @@ function mockView(p) {
   let lean = false;
   $("#start").addEventListener("click", () => {
     lean = !!($("#lean") && $("#lean").checked);
-    paper = shuffle(lean ? H.adapt.weightedPaper(slug, N) : C.questions.slice()).slice(0, N);
+    paper = shuffle(lean ? H.adapt.weightedPaper(slug, N, POOL) : POOL.slice()).slice(0, N);
     picks = paper.map(() => new Set());
     orders = paper.map(optionOrder);
     t0 = Date.now(); left = secs;

@@ -44,11 +44,13 @@ HUB.semesters = [
           start: "2026-09-26T17:00:00+05:30", end: "2026-09-26T17:20:00+05:30", join: "2026-09-26T16:45:00+05:30",
           durationMin: 20, questions: 60, marks: 60, types: "MCQ",
           scope: "all", scopeText: "Lectures 1–15, to Working with Lists Part 2" },
-        /* Quiz 2 facts: LMS announcement 18992 (19 Oct 2026), "Quiz 2 | Foundations of Computing" */
+        /* Quiz 2: LMS announcement 18992 (19 Oct, date and format); syllabus narrowed by
+           19053 and 19069 (22 Oct) to these four topics */
         { id: "q2", name: "Quiz 2", status: "upcoming",
           start: "2026-10-31T16:45:00+05:30", end: "2026-10-31T17:05:00+05:30", join: "2026-10-31T16:30:00+05:30",
           durationMin: 20, questions: 60, marks: 60, types: "MCQ",
-          scope: "all", scopeText: "Everything taught up to 25 October 2026" },
+          scope: ["ifs", "dicts", "loops", "functions"],
+          scopeText: "If statements, dictionaries, user input & while loops, functions (lectures 1–2)" },
         { id: "end", name: "End-term exam", status: "tba" }
       ]
     },
@@ -61,7 +63,12 @@ HUB.semesters = [
           start: "2026-09-27T12:15:00+05:30", end: "2026-09-27T12:30:00+05:30", join: "2026-09-27T12:00:00+05:30",
           durationMin: 15, questions: 40, marks: 40, types: "MCQ",
           scope: "all", scopeText: "Lectures 1–14, to Live Lecture 3" },
-        { id: "q2", name: "Quiz 2", status: "tba" },
+        /* Quiz 2: LMS announcement 19075 (22 Oct) */
+        { id: "q2", name: "Quiz 2", status: "upcoming",
+          start: "2026-11-01T12:00:00+05:30", end: "2026-11-01T12:20:00+05:30", join: "2026-11-01T11:45:00+05:30",
+          durationMin: 20, questions: 40, marks: 40, types: "MCQ",
+          scope: ["machines", "labour", "empire", "systems", "society", "mgmt", "corp"],
+          scopeText: "Recorded lectures #15–26 and the live sessions of 4 and 18 October" },
         { id: "end", name: "End-term exam", status: "tba" }
       ]
     },
@@ -74,7 +81,12 @@ HUB.semesters = [
           start: "2026-10-03T16:45:00+05:30", end: "2026-10-03T17:05:00+05:30", join: "2026-10-03T16:30:00+05:30",
           durationMin: 20, questions: 40, marks: 40, types: "MCQ",
           scope: "all", scopeText: "Lectures 1–11 + Live 3 — linear data structures only" },
-        { id: "q2", name: "Quiz 2", status: "tba" },
+        /* Quiz 2: LMS announcement 19068 (22 Oct) and its syllabus PDF */
+        { id: "q2", name: "Quiz 2", status: "upcoming",
+          start: "2026-10-31T17:25:00+05:30", end: "2026-10-31T17:45:00+05:30", join: "2026-10-31T17:10:00+05:30",
+          durationMin: 20, questions: 40, marks: 40, types: "MCQ",
+          scope: ["trees", "graphs", "hashing", "blockchain"],
+          scopeText: "Trees (fundamentals, types), graphs (fundamentals, types, traversals), hashing, blockchain" },
         { id: "end", name: "End-term exam", status: "tba" }
       ]
     },
@@ -87,7 +99,12 @@ HUB.semesters = [
           start: "2026-10-03T17:30:00+05:30", end: "2026-10-03T18:00:00+05:30", join: "2026-10-03T17:15:00+05:30",
           durationMin: 30, questions: 40, marks: 40, types: "MCQ, True/False",
           scope: "all", scopeText: "Lectures 1–15, to Trial Balance Part 2" },
-        { id: "q2", name: "Quiz 2", status: "tba" },
+        /* Quiz 2: LMS announcement 19165 (26 Oct) and its syllabus PDF */
+        { id: "q2", name: "Quiz 2", status: "upcoming",
+          start: "2026-10-31T18:00:00+05:30", end: "2026-10-31T18:30:00+05:30", join: "2026-10-31T17:45:00+05:30",
+          durationMin: 30, questions: 40, marks: 40, types: "MCQ",
+          scope: ["income-statement", "adjusting", "balance-sheet", "cash-flow"],
+          scopeText: "Matching concept, adjusting entries, trading account, P&L, balance sheet, cash flow (parts 1–3)" },
         { id: "end", name: "End-term exam", status: "tba" }
       ]
     },

@@ -149,6 +149,8 @@ python3 tools/build-offline.py
 
 Full history in [`CHANGELOG.md`](CHANGELOG.md). Most recent:
 
+- **[2.4.1] — 2026-10-30**: Quiz 2 facts and syllabi for FoC (corrected to four topics), ATB, FA and History;
+  mock papers now follow each quiz's syllabus.
 - **[2.4.0] — 2026-10-19**: FoC Quiz 2 (31 Oct) with its brief, the 14 lectures of 17–18 October,
   the three Marketing HBR readings and four newly lectured textbook chapters (325 questions; 2,567 in all).
 - **[2.3.1] — 2026-10-15**: Statistics Chapter 8 (the lecturer's practice set and the textbook) and

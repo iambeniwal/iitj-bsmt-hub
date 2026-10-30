@@ -142,10 +142,10 @@ const describeMix = m => [
    Weighted sampling without replacement: a question's weight is 1,
    plus up to 2 for how weak its topic is, plus 2 if it's an open
    mistake. Unseen topics count as middling, not weak.              */
-function weightedPaper(slug, n) {
+function weightedPaper(slug, n, pool) {             // pool: a quiz's syllabus, when it has one
   const tAcc = {};
   topics(slug).forEach(t => { tAcc[t.topic] = t.tries >= 3 ? t.acc : 0.6; });
-  const items = H.courses[slug].questions.map(q => ({ q,
+  const items = (pool || H.courses[slug].questions).map(q => ({ q,
     w: 1 + 2 * Math.max(0, 1 - tAcc[q.topic] / 0.8) + (store.isMistake(q.id) ? 2 : 0) }));
   const out = [];
   while (out.length < n && items.length) {

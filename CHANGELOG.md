@@ -10,6 +10,25 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.4.1] — 2026-10-30
+
+### Fixed
+- **Foundations of Computing: Quiz 2's syllabus is four topics, not "everything to 25 October".**
+  The LMS narrowed it on 22 October to dictionaries, user input and while loops, if statements, and
+  functions (lectures 1 and 2). The hub's brief still gave the first notice's wording. It now lists
+  the four topics, and the mock paper draws only from them.
+
+### Added
+- **Quiz 2 dates, formats and syllabi from the LMS** for three more courses, each with a brief:
+  - **Algorithmic Thinking:** Sat 31 October, 5:25–5:45 PM (join 5:10), 40 MCQs: trees, graphs and
+    their traversals, hashing, blockchain.
+  - **Financial Accounting:** Sat 31 October, 6:00–6:30 PM (join 5:45), 40 MCQs in 30 minutes: the
+    matching concept, adjusting entries, the trading account, P&L, balance sheet and cash flow.
+  - **Economic & Business History:** **Sun 1 November**, 12:00–12:20 PM (join 11:45), 40 MCQs:
+    recorded lectures #15–26 and the live sessions of 4 and 18 October.
+- **Mock papers follow a quiz's syllabus** when the LMS lists one, instead of drawing from the whole
+  course bank.
+
 ## [2.4.0] — 2026-10-19
 
 ### Added
