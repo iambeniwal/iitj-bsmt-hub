@@ -10,6 +10,19 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.7.0] — 2026-10-31
+
+### Added
+- **Animated diagrams.** Some ideas are easier to see moving: an algorithm shuffling data, a
+  distribution building up. Animations play by themselves when a notes topic is open and the
+  figure is on screen, loop, and stop when you scroll away. Each step has a one-line caption
+  ("Pass 1: 10 vs 5 → swap"). Tap the figure or its pause button to pause, then step back and
+  forward. With *reduce motion* switched on in your device settings, they never play by
+  themselves: you step through instead. They are drawn in the page, not videos, so they are
+  tiny, sharp at any size, follow light and dark mode, and work offline.
+- The first one: **bubble sort on the lecture's own list** (Algorithmic Thinking, L#25), every
+  comparison and swap, with the bars sliding past each other. More follow.
+
 ## [2.6.0] — 2026-10-31
 
 ### Added

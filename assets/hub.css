@@ -677,3 +677,29 @@ td .qid{font-family:var(--mono);font-size:11px;color:var(--blue);text-decoration
 .quizline b{font-size:14.5px;font-family:var(--body);font-weight:600;color:var(--ink-2)}
 .quizline .acts{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto}
 .quizline .acts a{text-decoration:none}
+/* animated diagrams (assets/anim.js): frames share one grid cell, so the figure never jumps in height */
+.anim{display:grid;cursor:pointer}
+.anim > .af{grid-area:1/1;visibility:hidden}
+.anim > .af.on{visibility:visible}
+.abar{display:flex;align-items:center;gap:6px;margin-top:8px;font-size:13px;color:var(--ink-2)}
+.abtn{font:inherit;font-size:13px;line-height:1;min-width:30px;height:28px;padding:0 8px;border:1px solid var(--rule-2);border-radius:99px;background:var(--surface);color:var(--ink-2);cursor:pointer}
+.abtn:hover{border-color:var(--blue);color:var(--ink)}
+.abtn:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.abar .ap,.abar .an{display:none}
+.abar.paused .ap,.abar.paused .an{display:inline-block}
+.abar .acap{flex:1;min-width:0;line-height:1.35}
+.abar .anum{font-family:var(--mono);font-size:11px;color:var(--ink-3);white-space:nowrap}
+@media (prefers-reduced-motion: reduce){ .anim [data-k]{transition:none!important} }
+/* mark states for animation frames (anim/lib.py writes these short classes to keep frames small) */
+.anim .k0{fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5}
+.anim .k1{fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5}
+.anim .k2{fill:var(--good-soft);stroke:var(--good);stroke-width:1.5}
+.anim .k3{fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5}
+.anim .k4{fill:var(--blue);stroke:var(--blue);stroke-width:1.5}
+.anim .k5{fill:var(--bad-soft);stroke:var(--bad);stroke-width:1.5}
+.anim .tv{font-size:14px;font-weight:700;fill:var(--ink)}
+.anim .k4 + .tv,.anim .tv.inv{fill:var(--paper)}
+.anim .tl{font-size:13px;fill:var(--ink-3)}
+.anim .tx{font-size:13px;fill:var(--ink-2);font-family:var(--body)}
+.anim .ln{stroke:var(--rule-2);stroke-width:1.5;fill:none}
+.anim .lh{stroke:var(--blue);stroke-width:3;fill:none}
