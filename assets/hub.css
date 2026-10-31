@@ -276,7 +276,7 @@ a.course:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
   padding:3px 9px;border-radius:99px;white-space:nowrap;
 }
 .pill.today{background:var(--clay-soft);color:var(--clay)}
-.pill.soon{background:var(--blue-soft);color:var(--blue)}
+.pill.soon,.pill.tomorrow{background:var(--blue-soft);color:var(--blue)}
 .pill.later{background:var(--surface-2);color:var(--ink-3)}
 .pill.past{background:var(--surface-2);color:var(--ink-3)}
 .pill.ready{background:var(--good-soft);color:var(--good)}

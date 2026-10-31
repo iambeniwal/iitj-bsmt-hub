@@ -72,7 +72,11 @@ function until(a) {
   if (now >= e) return { state: "past", text: "done" };
   if (now >= s) return { state: "live", text: "live now" };
   const d = s - now, days = Math.floor(d / 864e5), hrs = Math.floor(d / 36e5) % 24, min = Math.floor(d / 6e4) % 60;
-  return { state: days === 0 ? "today" : days <= 7 ? "soon" : "later",
+  /* "today" and "tomorrow" go by the calendar date in India, not by 24-hour windows:
+     a quiz at noon tomorrow is "tomorrow" even when it is less than a day away */
+  const istDay = t => new Date(t).toLocaleDateString("sv-SE", IST);
+  const cal = Math.round((Date.parse(istDay(s)) - Date.parse(istDay(now))) / 864e5);
+  return { state: cal === 0 ? "today" : cal === 1 ? "tomorrow" : days <= 7 ? "soon" : "later",
     text: days > 0 ? `${days}d ${hrs}h` : hrs > 0 ? `${hrs}h ${min}m` : `${min}m` };
 }
 const ivlText = d => d < 1 ? "10 min" : d < 30 ? `${Math.round(d)} d` : `${Math.round(d / 30)} mo`;
@@ -289,7 +293,7 @@ function homeView() {
     <div class="sechead"><h2>Next up</h2></div>
     ${upcoming.length ? `<div class="nextlist">${upcoming.slice(0, 4).map(({ slug, a, u }) => `
       <a class="nextrow" href="#/c/${slug}?tab=exams">
-        <span class="pill ${u.state === "live" || u.state === "today" ? "today" : u.state}">${esc(u.state === "live" ? "Live now" : u.state === "today" ? "Today" : u.text)}</span>
+        <span class="pill ${u.state === "live" || u.state === "today" ? "today" : u.state}">${esc(u.state === "live" ? "Live now" : u.state === "today" ? "Today" : u.state === "tomorrow" ? "Tomorrow" : u.text)}</span>
         <b>${esc(META[slug].name)} · ${esc(a.name)}</b>
         <span class="when">${fmtDate(a.start)} · ${fmtTime(a.start)} IST · ${a.questions} Q · ${a.durationMin} min</span>
       </a>`).join("")}</div>`

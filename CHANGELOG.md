@@ -10,6 +10,13 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.5.1] — 2026-10-31
+
+### Fixed
+- **"Today" on a quiz that is tomorrow.** The countdown called anything less than 24 hours away
+  "Today", so on Saturday afternoon History's Sunday-noon Quiz 2 showed as today. It now goes by
+  the calendar date in India and says "Tomorrow" for the next day.
+
 ## [2.5.0] — 2026-10-30
 
 ### Added
