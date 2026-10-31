@@ -10,6 +10,24 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.7.1] — 2026-10-31
+
+### Added
+- **19 more animated diagrams**, each placed in the notes topic it explains:
+  - *Algorithmic Thinking*: selection sort and insertion sort on the same list as bubble sort;
+    binary search finding 137; DFS with a stack, then BFS with a queue, on one graph;
+    Dijkstra's algorithm visit by visit; a hash table filling up, with collisions chained;
+    a stack and a queue taking the same seven operations.
+  - *Statistics for Managers*: the central limit theorem building up sample by sample;
+    what 95% confidence means (intervals catching μ, and the one that misses); the t
+    distribution closing in on the normal as df grows; an upper-tail z test.
+  - *Foundations of Computing*: a while-loop counter step by step; looping through a
+    dictionary's key-value pairs; a function call and its return value; passing a list vs
+    passing a copy.
+  - *Financial Accounting*: the accounting equation staying balanced transaction by
+    transaction; Compass Company's operating cash flow as a step-by-step waterfall.
+  - *Principles of Marketing*: the five product levels; Gestalt principles with sixteen dots.
+
 ## [2.7.0] — 2026-10-31
 
 ### Added

@@ -149,6 +149,8 @@ python3 tools/build-offline.py
 
 Full history in [`CHANGELOG.md`](CHANGELOG.md). Most recent:
 
+- **[2.7.1] — 2026-10-31**: 19 more animations across five courses (sorting, search, graphs, hashing, CLT,
+  confidence intervals, t vs z, loops, functions, the accounting equation, cash flow, product levels, Gestalt).
 - **[2.7.0] — 2026-10-31**: animated diagrams (autoplay when on screen, pausable, reduced-motion aware); the
   first is bubble sort.
 - **[2.6.0] — 2026-10-31**: every lecture and notes topic tagged with its quiz; a Quiz 2 filter for the notes,
