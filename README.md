@@ -149,6 +149,8 @@ python3 tools/build-offline.py
 
 Full history in [`CHANGELOG.md`](CHANGELOG.md). Most recent:
 
+- **[2.6.0] — 2026-10-31**: every lecture and notes topic tagged with its quiz; a Quiz 2 filter for the notes,
+  syllabus practice, and "What's on it" links from the home page.
 - **[2.5.0] — 2026-10-30**: Statistics L#25–27 and the Chapter 9 practice set; the Marketing product chapter.
   Every lecture to 26 October is in (2,923 questions).
 - **[2.4.3] — 2026-10-30**: FA practice set solved plus L#27–29; ATB sorting; EBH World Wars and Module 5;

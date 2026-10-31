@@ -82,12 +82,48 @@ function until(a) {
 const ivlText = d => d < 1 ? "10 min" : d < 30 ? `${Math.round(d)} d` : `${Math.round(d / 30)} mo`;
 const secsPerQ = a => a && a.durationMin && a.questions ? Math.max(5, Math.round(a.durationMin * 60 / a.questions)) : 20;
 const lastTimed = slug => [...META[slug].assessments].reverse().find(a => a.durationMin) || null;
+/* ---------------- what each quiz covers ----------------
+   assessment.lectures: the LMS lecture numbers on its syllabus (from the announcement);
+   assessment.scope: hub unit ids, which practice and mock papers draw from. Notes topics carry
+   "L#N" in their source line, so topics and lectures can be tagged with their quiz. */
+const lecNums = src => (String(src || "").match(/L#(\d+)/g) || []).map(x => +x.slice(2));
+const quizzes = slug => META[slug].assessments.filter(a => a.id !== "end" && (a.lectures || Array.isArray(a.scope)));
+function quizUnits(slug, a) {
+  if (Array.isArray(a.scope)) return a.scope;
+  if (!a.lectures) return [];
+  return H.courses[slug].units.filter(u => u.topics.some(t => lecNums(t.src).some(n => a.lectures.includes(n)))).map(u => u.id);
+}
+function topicInQuiz(slug, u, t, a) {
+  const ns = lecNums(t.src);
+  if (ns.length && a.lectures) return ns.some(n => a.lectures.includes(n));
+  return quizUnits(slug, a).includes(u.id);                    // textbook topics follow their unit
+}
+/* "L1–15", "L12, 14–20, 23" */
+function lecRange(ns) {
+  const out = []; let a = null, b = null;
+  [...ns].sort((x, y) => x - y).forEach(n => { if (b !== null && n === b + 1) b = n; else { if (a !== null) out.push(a === b ? a : a + "–" + b); a = b = n; } });
+  if (a !== null) out.push(a === b ? a : a + "–" + b);
+  return "L" + out.join(", ");
+}
+/* which quiz a lecture belongs to, for the lecture list */
+function lectureQuiz(slug, n) {
+  const qs = META[slug].assessments.filter(a => a.id !== "end");
+  const hit = qs.find(a => a.lectures && a.lectures.includes(n));
+  if (hit) return { cls: hit.id, text: hit.name };
+  const known = qs.filter(a => a.lectures);
+  const last = Math.max(0, ...known.flatMap(a => a.lectures));
+  const pending = qs.find(a => !a.lectures);
+  if (pending && n > last) return { cls: "tba", text: pending.name + " · syllabus TBA" };
+  return { cls: "end", text: "End-term only" };
+}
+
 function nextAssessment(slug) {
   return META[slug].assessments.find(a => a.start && until(a).state !== "past")
       || META[slug].assessments.find(a => a.status === "tba") || null;
 }
 
 /* ---------------- selection ---------------- */
+const quizScope = (slug, aid) => { const a = META[slug] && META[slug].assessments.find(x => x.id === aid); return a ? quizUnits(slug, a) : []; };
 /* the student's own AI-written questions (assets/ai.js) join practice and mistakes,
    not the bank listing or mock papers */
 const AIQ = () => (H.ai ? H.ai.questions() : []);
@@ -97,6 +133,7 @@ function select(p, bankOnly) {
     (!p.c || q.course === p.c) &&
     (!p.t || q.topic === p.t) &&
     (!p.u || H.courses[q.course].unitOf[q.topic] === p.u) &&
+    (!p.a || quizScope(q.course, p.a).includes(H.courses[q.course].unitOf[q.topic])) &&
     (!p.s || (p.s === "flagged" ? store.flagged(q.id)
             : p.s === "mistakes" ? store.isMistake(q.id)
             : p.s === "official" ? q.o
@@ -292,11 +329,12 @@ function homeView() {
   <section class="tight">
     <div class="sechead"><h2>Next up</h2></div>
     ${upcoming.length ? `<div class="nextlist">${upcoming.slice(0, 4).map(({ slug, a, u }) => `
-      <a class="nextrow" href="#/c/${slug}?tab=exams">
+      <div class="nextrow"><a class="nextmain" href="#/c/${slug}?tab=exams">
         <span class="pill ${u.state === "live" || u.state === "today" ? "today" : u.state}">${esc(u.state === "live" ? "Live now" : u.state === "today" ? "Today" : u.state === "tomorrow" ? "Tomorrow" : u.text)}</span>
         <b>${esc(META[slug].name)} · ${esc(a.name)}</b>
-        <span class="when">${fmtDate(a.start)} · ${fmtTime(a.start)} IST · ${a.questions} Q · ${a.durationMin} min</span>
-      </a>`).join("")}</div>`
+        <span class="when">${fmtDate(a.start)} · ${fmtTime(a.start)} IST · ${a.questions} Q · ${a.durationMin} min</span></a>
+        ${a.lectures || Array.isArray(a.scope) ? `<a class="nextsyl" href="${link("c/" + slug, { tab: "notes", quiz: a.id })}">What's on it →</a>` : ""}
+      </div>`).join("")}</div>`
     : `<div class="empty"><b>No dates announced yet.</b> All six Quiz 1 papers are done${recent.length ? ` (the last was ${esc(META[recent[0].slug].name)} on ${fmtDate(recent[0].a.start)})` : ""}.
        Quiz 2 dates for ${tbaCount} courses will appear here once the LMS publishes them. A quiet week is a good time to clear your mistakes and start the flashcard habit.</div>`}
   </section>
@@ -362,7 +400,7 @@ function courseView(slug, p) {
   <div id="pane"></div>`;
 
   const pane = $("#pane");
-  if (tab === "notes") return courseNotes(C, pane, p.u);
+  if (tab === "notes") return courseNotes(C, pane, p.u, p.quiz);
   if (tab === "traps") {
     pane.innerHTML = `<section><div class="sechead"><h2>The traps</h2><span class="tag">high-yield</span></div>
       <p class="lede">${C.traps.length} distinctions that question writers like to test, because the wrong answer is so tempting. They are also in the flashcard deck.</p>
@@ -385,12 +423,19 @@ function courseView(slug, p) {
       ${nOff ? `<a class="btn ghost" href="${link("practice", { c: slug, s: "official" })}">From the course deck · ${nOff}</a>` : ""}
       <a class="btn ghost" href="${link("cards", { c: slug })}">Flashcards</a>
     </div>
+    ${(() => { const nq = nextAssessment(slug); if (!nq || !(nq.lectures || Array.isArray(nq.scope))) return "";
+      const units = quizUnits(slug, nq), nQ = C.questions.filter(q => units.includes(C.unitOf[q.topic])).length;
+      return `<div class="quizline"><span class="qbadge ${nq.id}">${esc(nq.name)}</span> <b>${esc(nq.scopeText || lecRange(nq.lectures))}</b>
+        <span class="acts"><a class="btn sm" href="${link("practice", { c: slug, a: nq.id })}">Practise its syllabus · ${nQ}</a>
+        <a class="btn ghost sm" href="${link("c/" + slug, { tab: "notes", quiz: nq.id })}">Its notes</a>
+        <a class="btn ghost sm" href="${link("mock", { c: slug, a: nq.id })}">Mock paper</a></span></div>`; })()}
     ${(() => { const w = H.adapt.weakSpots(slug, 3); return w.length ? `<div class="weakline"><b>Weak spots:</b> ${w.map(t =>
       `<a href="${link("practice", { c: slug, t: t.topic })}">${esc(t.topic)} <span>${pctOf(t)}%</span></a>`).join("")}</div>` : ""; })()}
     <div class="topiclist">${C.units.map(u => {
       const ts = C.topics.filter(t => t.unit === u.id);
       if (!ts.length) return "";
-      return `<div class="unit"><div class="unithead"><h3>${u.title}</h3><a href="${link("c/" + slug, { tab: "notes", u: u.id })}">Notes →</a></div>
+      const qb = quizzes(slug).filter(a => quizUnits(slug, a).includes(u.id)).map(a => `<span class="qbadge ${a.id}" title="On ${esc(a.name)}'s syllabus">${esc(a.name.replace("Quiz ", "Q"))}</span>`).join("");
+      return `<div class="unit"><div class="unithead"><h3>${u.title}</h3>${qb}<a href="${link("c/" + slug, { tab: "notes", u: u.id })}">Notes →</a></div>
         ${ts.map(t => {
           const tid = C.questions.filter(q => q.topic === t.name).map(q => q.id), tm = store.mastery(tid);
           const ts = H.adapt.topicStats(slug, t.name);
@@ -405,18 +450,28 @@ function courseView(slug, p) {
   </section>`;
 }
 
-function courseNotes(C, pane, focus) {
-  const b = C.briefs.q1 || {};
+function courseNotes(C, pane, focus, quiz) {
+  const slug = C.slug, QZ = quizzes(slug), qa = quiz ? QZ.find(a => a.id === quiz) : null;
+  const badges = (u, t) => QZ.filter(a => topicInQuiz(slug, u, t, a)).map(a => `<span class="qbadge ${a.id}">${esc(a.name.replace("Quiz ", "Q"))}</span>`).join("");
+  const units = C.units.map(u => ({ u, topics: u.topics.filter(t => !qa || topicInQuiz(slug, u, t, qa)) })).filter(x => x.topics.length);
+  const nTopics = units.reduce((s, x) => s + x.topics.length, 0);
   pane.innerHTML = `
-    <div class="unitjump">${C.units.map(u => `<a href="#u-${u.id}" data-u="${u.id}">${stripTags(u.title)}</a>`).join("")}</div>
-    ${C.units.map(u => `<section id="u-${u.id}">
+    ${QZ.length ? `<div class="quizbar" role="group" aria-label="Show notes for"><span class="k">Show</span>
+      <a href="${link("c/" + slug, { tab: "notes" })}"${qa ? "" : ' aria-current="true"'}>Everything</a>
+      ${QZ.map(a => `<a href="${link("c/" + slug, { tab: "notes", quiz: a.id })}"${qa === a ? ' aria-current="true"' : ""}>${esc(a.name)} <small>${a.lectures ? lecRange(a.lectures) : "syllabus"}</small></a>`).join("")}</div>
+    ${qa ? `<p class="hint quizhint"><b>${nTopics} topics</b> on ${esc(qa.name)}'s syllabus${qa.scopeText ? `: ${esc(qa.scopeText)}` : ""}. The end-term covers the whole course.
+      <a href="${link("practice", { c: slug, a: qa.id })}">Practise them</a>${qa.start ? ` · <a href="${link("c/" + slug, { tab: "exams" })}">Date and brief</a>` : ""}</p>` : ""}` : ""}
+    <div class="unitjump">${units.map(({ u }) => `<a href="#u-${u.id}" data-u="${u.id}">${stripTags(u.title)}</a>`).join("")}</div>
+    ${units.map(({ u, topics }) => `<section id="u-${u.id}">
       <div class="sechead"><h2>${u.title}</h2><span class="tag">${esc(u.tag)}</span></div>
       <p class="lede">${u.lede}</p>
-      ${u.topics.map((it, i) => `<details class="topic"${i === 0 || u.id === focus ? " open" : ""}><summary>${esc(stripTags(it.t))}<span class="src">${esc(it.src)}</span></summary><div class="tbody">${it.h}</div></details>`).join("")}
+      ${topics.map((it, i) => `<details class="topic"${i === 0 || u.id === focus ? " open" : ""}><summary>${esc(stripTags(it.t))}${badges(u, it)}<span class="src">${esc(it.src)}</span></summary><div class="tbody">${it.h}</div></details>`).join("")}
       <div class="practise-unit"><a class="btn ghost sm" href="${link("practice", { c: C.slug, u: u.id })}">Practise this unit · ${C.questions.filter(q => C.unitOf[q.topic] === u.id).length} Q</a></div>
     </section>`).join("")}
     <section><div class="sechead"><h2>Lectures</h2><span class="tag">${C.lectures.length} so far</span></div>
-      <div class="card">${C.lectures.map(([n, t, s, k]) => `<div class="lec"><span class="n">${String(n).padStart(2, "0")}</span><span class="t">${esc(t)}<em>${esc(s)}</em></span><span class="w ${k}">${k === "live" ? "live" : "rec"}</span></div>`).join("")}</div>
+      ${QZ.length ? `<p class="hint" style="margin-bottom:10px">Each lecture is tagged with the quiz whose syllabus includes it. The end-term covers all of them.</p>` : ""}
+      <div class="card">${C.lectures.filter(([n]) => !qa || (qa.lectures || []).includes(n)).map(([n, t, s, k]) => { const lq = lectureQuiz(slug, n);
+        return `<div class="lec"><span class="n">${String(n).padStart(2, "0")}</span><span class="t">${esc(t)}<em>${esc(s)}</em></span><span class="lw"><span class="qbadge ${lq.cls}">${esc(lq.text)}</span><span class="w ${k}">${k === "live" ? "live" : "rec"}</span></span></div>`; }).join("")}</div>
       <p class="srcnote">${C.sources}</p>
     </section>`;
   $$(".unitjump a", pane).forEach(a => a.addEventListener("click", e => {
@@ -466,6 +521,7 @@ function describe(p) {
   const bits = [];
   if (p.c) bits.push(META[p.c].name); else bits.push("All courses");
   if (p.u) bits.push(unitTitle(p.c, p.u));
+  if (p.a && p.c) { const a = META[p.c].assessments.find(x => x.id === p.a); if (a) bits.push(a.name + " syllabus"); }
   if (p.t) bits.push(p.t);
   if (p.s) bits.push({ mistakes: "your mistakes", new: "unseen only", flagged: "flagged", right: "already right", official: "from the course deck", ai: "AI-written" }[p.s] || p.s);
   if (p.q) bits.push(`“${p.q}”`);
@@ -563,7 +619,7 @@ function practiceView(p) {
     const still = store.isMistake(q.id);
     $("#after").innerHTML = `<div class="why"><b>${timedOut ? "Out of time." : ok ? "Correct." : "Not quite."}</b> ${esc(q.w)}</div>
       ${ok && still ? `<p class="hint" style="margin-top:8px">One more correct answer on a later run clears this from your mistakes.</p>` : ""}
-      <div class="nextrow"><button class="btn" id="next">${idx + 1 >= pool.length ? "See results" : "Next question"}</button>${H.ai ? H.ai.reportButton(q) : ""}</div>`;
+      <div class="afterrow"><button class="btn" id="next">${idx + 1 >= pool.length ? "See results" : "Next question"}</button>${H.ai ? H.ai.reportButton(q) : ""}</div>`;
     if (H.ai) H.ai.wireReports($("#after"), () => q);
     $("#score").textContent = `${right} / ${answered}`;
     const n = $("#next"); n.addEventListener("click", () => { idx++; render(); }); n.focus();

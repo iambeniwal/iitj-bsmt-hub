@@ -30,6 +30,8 @@ HUB.program = {
    Courses", 18815): the same for every course. Two quizzes, only the higher score counts,
    worth 30%; the offline end-term exam is 70%. No Quiz 3, no participation marks.
 
+   lectures: the LMS lecture numbers (#N) each quiz's announcement covers. Notes topics carry
+   "L#N" in their source line, so the hub tags every lecture and topic with its quiz.
    status: "done" | "upcoming" | "tba" (date not announced yet).
    scope: notes-unit ids the assessment covers; "all" = every unit. */
 HUB.semesters = [
@@ -41,12 +43,14 @@ HUB.semesters = [
         finalNote: "offline, pen and paper — includes writing Python by hand" },
       assessments: [
         { id: "q1", name: "Quiz 1", status: "done",
+          lectures: [1,  2,  3,  4,  5,  6,  7,  8,  9,  10,  11,  12,  13,  14,  15],
           start: "2026-09-26T17:00:00+05:30", end: "2026-09-26T17:20:00+05:30", join: "2026-09-26T16:45:00+05:30",
           durationMin: 20, questions: 60, marks: 60, types: "MCQ",
           scope: "all", scopeText: "Lectures 1–15, to Working with Lists Part 2" },
         /* Quiz 2: LMS announcement 18992 (19 Oct, date and format); syllabus narrowed by
            19053 and 19069 (22 Oct) to these four topics */
         { id: "q2", name: "Quiz 2", status: "upcoming",
+          lectures: [17,  18,  19,  20,  21,  22,  23,  24,  25,  26,  27,  28],
           start: "2026-10-31T16:45:00+05:30", end: "2026-10-31T17:05:00+05:30", join: "2026-10-31T16:30:00+05:30",
           durationMin: 20, questions: 60, marks: 60, types: "MCQ",
           scope: ["ifs", "dicts", "loops", "functions"],
@@ -60,11 +64,13 @@ HUB.semesters = [
       grading: { quizPct: 30, quizzes: 2, bestOf: 1, participationPct: 0, finalPct: 70, finalNote: "offline exam" },
       assessments: [
         { id: "q1", name: "Quiz 1", status: "done",
+          lectures: [1,  2,  3,  4,  5,  6,  7,  8,  9,  10,  11,  12,  13,  14],
           start: "2026-09-27T12:15:00+05:30", end: "2026-09-27T12:30:00+05:30", join: "2026-09-27T12:00:00+05:30",
           durationMin: 15, questions: 40, marks: 40, types: "MCQ",
           scope: "all", scopeText: "Lectures 1–14, to Live Lecture 3" },
         /* Quiz 2: LMS announcement 19075 (22 Oct) */
         { id: "q2", name: "Quiz 2", status: "upcoming",
+          lectures: [15,  16,  17,  18,  19,  20,  21,  22,  23,  24,  25,  26],
           start: "2026-11-01T12:00:00+05:30", end: "2026-11-01T12:20:00+05:30", join: "2026-11-01T11:45:00+05:30",
           durationMin: 20, questions: 40, marks: 40, types: "MCQ",
           scope: ["machines", "labour", "empire", "systems", "society", "mgmt", "corp"],
@@ -78,11 +84,13 @@ HUB.semesters = [
       grading: { quizPct: 30, quizzes: 2, bestOf: 1, participationPct: 0, finalPct: 70, finalNote: "offline exam" },
       assessments: [
         { id: "q1", name: "Quiz 1", status: "done",
+          lectures: [1,  2,  3,  4,  5,  6,  7,  8,  9,  10,  11,  13],
           start: "2026-10-03T16:45:00+05:30", end: "2026-10-03T17:05:00+05:30", join: "2026-10-03T16:30:00+05:30",
           durationMin: 20, questions: 40, marks: 40, types: "MCQ",
           scope: "all", scopeText: "Lectures 1–11 + Live 3 — linear data structures only" },
         /* Quiz 2: LMS announcement 19068 (22 Oct) and its syllabus PDF */
         { id: "q2", name: "Quiz 2", status: "upcoming",
+          lectures: [12,  14,  15,  16,  17,  18,  19,  20,  23],
           start: "2026-10-31T17:25:00+05:30", end: "2026-10-31T17:45:00+05:30", join: "2026-10-31T17:10:00+05:30",
           durationMin: 20, questions: 40, marks: 40, types: "MCQ",
           scope: ["trees", "graphs", "hashing", "blockchain"],
@@ -96,11 +104,13 @@ HUB.semesters = [
       grading: { quizPct: 30, quizzes: 2, bestOf: 1, participationPct: 0, finalPct: 70, finalNote: "offline exam" },
       assessments: [
         { id: "q1", name: "Quiz 1", status: "done",
+          lectures: [1,  2,  3,  4,  5,  6,  7,  8,  9,  10,  11,  12,  13,  14,  15],
           start: "2026-10-03T17:30:00+05:30", end: "2026-10-03T18:00:00+05:30", join: "2026-10-03T17:15:00+05:30",
           durationMin: 30, questions: 40, marks: 40, types: "MCQ, True/False",
           scope: "all", scopeText: "Lectures 1–15, to Trial Balance Part 2" },
         /* Quiz 2: LMS announcement 19165 (26 Oct) and its syllabus PDF */
         { id: "q2", name: "Quiz 2", status: "upcoming",
+          lectures: [16,  17,  18,  19,  20,  21,  22,  23,  24,  25,  26],
           start: "2026-10-31T18:00:00+05:30", end: "2026-10-31T18:30:00+05:30", join: "2026-10-31T17:45:00+05:30",
           durationMin: 30, questions: 40, marks: 40, types: "MCQ",
           scope: ["income-statement", "adjusting", "balance-sheet", "cash-flow"],
@@ -114,6 +124,7 @@ HUB.semesters = [
       grading: { quizPct: 30, quizzes: 2, bestOf: 1, participationPct: 0, finalPct: 70, finalNote: "offline exam" },
       assessments: [
         { id: "q1", name: "Quiz 1", status: "done",
+          lectures: [1,  2,  3,  4,  5,  6,  7,  8,  9],
           start: "2026-10-04T12:15:00+05:30", end: "2026-10-04T12:35:00+05:30", join: "2026-10-04T12:00:00+05:30",
           durationMin: 20, questions: 40, marks: 40, types: "MCQ",
           scope: "all", scopeText: "Topics 1–7, to Introduction to Probability 2" },
@@ -127,6 +138,7 @@ HUB.semesters = [
       grading: { quizPct: 30, quizzes: 2, bestOf: 1, participationPct: 0, finalPct: 70, finalNote: "offline exam" },
       assessments: [
         { id: "q1", name: "Quiz 1", status: "done",
+          lectures: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
           start: "2026-10-04T13:00:00+05:30", end: "2026-10-04T13:30:00+05:30", join: "2026-10-04T12:45:00+05:30",
           durationMin: 30, questions: 20, marks: 20, types: "MCQ, incl. multiple-correct (all-or-nothing: no partial marks)",
           scope: "all", scopeText: "All topics covered to 27 September 2026" },

@@ -10,6 +10,22 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.6.0] — 2026-10-31
+
+### Added
+- **See what each quiz covers, everywhere you study.** Each course's quizzes now record the
+  lectures their LMS announcements list, and the hub uses them:
+  - **Notes:** a *Show: Everything · Quiz 1 · Quiz 2* switch narrows the notes to one quiz's
+    syllabus, and every topic carries a Q1 or Q2 badge.
+  - **Lecture list:** each lecture is tagged Quiz 1, Quiz 2 or "End-term only". Until a quiz's
+    syllabus is announced, the lectures after Quiz 1 read "Quiz 2 · syllabus TBA".
+  - **Topics & practice:** units carry the same badges, and the next quiz has a line with
+    *Practise its syllabus*, *Its notes* and *Mock paper*.
+  - **Home:** each "Next up" quiz links to "What's on it".
+
+### Fixed
+- The practice screen's "Next question" row shared a class name with the home page's quiz rows.
+
 ## [2.5.1] — 2026-10-31
 
 ### Fixed
