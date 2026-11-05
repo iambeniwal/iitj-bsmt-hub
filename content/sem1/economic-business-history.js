@@ -175,6 +175,24 @@ HUB.addCourse({
    "Week 11 — Role of Indian Entrepreneurs during Colonial Rule",
    "EIC charters 1600–1813; brokers, bankers, shipbuilders",
    "rec"
+  ],
+  [
+   29,
+   "Week 11 — Live Lecture 6",
+   "Drucker, Fayol vs Drucker, corporations recap",
+   "live"
+  ],
+  [
+   30,
+   "Week 12 — Overseas Trade after 1813: Indigo, Opium and Raw Cotton",
+   "Export shares, trade gap, agency houses emerge",
+   "rec"
+  ],
+  [
+   31,
+   "Week 12 — Agency Houses and Indian Entrepreneurs, 1813–1900s",
+   "Palmer, Carr Tagore, Jejeebhoy; Tata, Godrej, Walchand",
+   "rec"
   ]
  ],
  "units": [
@@ -295,6 +313,11 @@ HUB.addCourse({
      "t": "Textbook: The Grand Canal, the Printing Press and the Plague",
      "src": "Leigh ch2",
      "h": "<p>Leigh shows how water transport shaped pre-modern prosperity: China's Grand Canal, built under the Sui to move tax grain, knitted provinces into a trading economy, and by the year 1000 Chinese incomes slightly exceeded England's. Port cities became financial centres — Genoa's moneychangers settled debts between accounts, and Venice's colleganza let poor merchants share voyage profits with investors until the elite closed it off and patronage replaced merit. Social status in feudal, caste and fēngjiàn societies was fixed by birth, and surname studies show elite status can persist for centuries. Ideas such as reading glasses and the printing press spread because ideas are non-rivalrous, prompting the first patent law (Venice, 1474). Under feudalism life changed little, until the Black Death of 1347 killed about a third of Europe: labour became scarce, real wages doubled, rents fell and power shifted from lords to peasants — the plague, Leigh says, largely killed feudalism.</p><!--viz:ebh-black-death-chain--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Causal chain from the 1347 plague to a third of Europe dead, scarce labour, doubled real wages and falling rents, a power shift to peasants and the end of feudalism, plus price and diet effects.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">How the plague broke feudalism</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>1347</b> · plague reaches Europe</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">About a third of Europeans die</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Workers scarce, land abundant</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Real wages ×2, rents fall</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Power shifts from lords to peasants</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Feudalism largely dies</b></div></div><div style=\"font-size:12.5px;color:var(--ink-3);margin:10px 0 5px;text-transform:uppercase;letter-spacing:.04em\">Knock-on effects</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Wheat cheaper; labour-heavy goods dearer</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Farms turn to cattle and sheep</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\">Workers eat more meat, drink more beer</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">A supply shock to labour did what centuries of slow change had not.</figcaption></figure><!--/viz:ebh-black-death-chain--><!--viz:ebh-premodern-timeline--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Timeline: the Grand Canal (581–618), China ahead of England in income around 1000, reading glasses c.1290, Venice banking in the early 1300s, the 1347 plague, the printing press c.1440 and Venice's 1474 patent law.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Canals, ideas and plague, 581 to 1474</div><div style=\"border-left:2px solid var(--rule-2);margin-left:6px;padding-left:16px;font-size:14px\"><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">581–618</b> · Sui dynasty builds the Grand Canal, 1,600+ km, to carry tax grain</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">c.1000</b> · Chinese daily income ($3.36) slightly above England's ($3.15)</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">c.1290</b> · Reading glasses invented in Italy</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">early 1300s</b> · Venice is a world banking centre</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--clay)\"></span><b style=\"font-family:var(--mono)\">1347</b> · The Black Death reaches Europe</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">c.1440</b> · Printing press in Germany</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1474</b> · Venice's patent statute: a temporary monopoly for disclosing an idea</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Water transport made the early rich places; copyable ideas led to the first patent law.</figcaption></figure><!--/viz:ebh-premodern-timeline--><p><strong>Water transport and the Grand Canal</strong> — Moving goods by water was far cheaper than by land. China's Grand Canal (Sui dynasty, 581–618 CE), over 1,600 km linking the Yellow and Yangtse rivers, was built to carry tax grain to the capital but also spurred inter-provincial trade and prosperity under the Tang. Leigh rates it economically more significant than the Great Wall.</p><p><strong>Social mobility and the Great Gatsby Curve</strong> — In feudal Europe, India's caste system and China's fēngjiàn system, status was fixed by birth. Today mobility is highest in Scandinavia and lowest in Latin America; more unequal societies are less mobile — the 'Great Gatsby Curve' (rungs further apart, less climbing).</p><p><strong>Persistence of elite surnames</strong> — Gregory Clark tracks rare surnames to measure mobility over many generations. People named Pepys have attended Oxford and Cambridge at about twenty times the average rate for centuries; similar persistence appears for samurai names in Japan, noble names in Sweden and 1850s landowner names in Chile.</p><p><strong>Ideas are non-rivalrous; patents</strong> — Giving away an apple means you lose it; teaching an idea does not. Reading glasses (Italy, c.1290) and the printing press (Germany, c.1440) spread fast because anyone could copy them, but free copying weakens the incentive to invent. Venice's 1474 statute began patent law: a temporary monopoly in exchange for disclosing the idea.</p><p><strong>Religion and medieval economic life</strong> — Leigh credits the Reformation's push to read the Bible with raising literacy in Protestant Germany; trust networks helped Jewish moneylenders and Muslim traders; and he reads the First Crusade partly as the Church extending its monopoly.</p><p><strong>Feudalism in Leigh's account</strong> — Lords owned the land and peasants farmed it, feeding the nobility in exchange for protection from bandits, with the clergy upholding the order. Change was so slow that artisans carved prices in stone. Diets were plain, one baby in three died in its first year.</p><p><strong>The Black Death</strong> — Bubonic plague (Yersinia pestis) came from Central Asia and reached Europe in 1347 on Genoese ships from the Black Sea. It killed about a third of Europeans, half of Cairo, and perhaps three-quarters of Florence; world population fell from about 430 million (1300) to 350 million (1400).</p><p><strong>The economics of the plague</strong> — With workers scarce and land relatively abundant, European real wages doubled and rents fell, shifting power from landlords to peasants — the plague largely killed feudalism. Wheat became cheaper, labour-intensive manufactures dearer, farming shifted to land-intensive livestock, and better-paid workers ate more meat and drank more beer.</p><div class=\"card\"><strong>Case: Venice's colleganza</strong> <em>(Ch. 2, Venice in the early 1300s)</em><p>A contract let merchants without money finance voyages by splitting profits with investors, so talented commoners could rise and Venice became a banking hub. When old families barred commoners from it, connections replaced ability, and Venice lost its commercial lead and several wars.</p><p><em>Lesson:</em> Open access to finance supports mobility and growth; entrenched privilege undermines them.</p><p><em>Think:</em> Compare the closure of the colleganza with the guilds' restrictions on entry. What do both suggest about monopoly privilege?</p></div><div class=\"card\"><strong>Case: Bruges and the silted estuary</strong> <em>(Ch. 2, Bruges and Antwerp)</em><p>Bruges grew so rich on shipping that a visiting French queen joked about her many rival 'queens'. When its estuary silted up, ships could no longer dock, and commerce moved to Antwerp, leaving Bruges in decline.</p><p><em>Lesson:</em> Pre-modern prosperity depended heavily on cheap water access.</p><p><em>Think:</em> Why could a change in a waterway ruin a medieval trading city?</p></div><div class=\"def\"><b>Book vs lecture — Who owned land under feudalism.</b> Book: Leigh: land was owned by the lords and farmed by the peasantry, who fed the nobility in return for protection from bandits. Lecture: Lecture 10 (feudal model): the crown/king owns the land and grants it to lords and nobles in exchange for military service; chain king → lords → knights → peasants/serfs. <b>Use the lecture's answer (the crown/king) — the hub already tests it. Leigh's simplification describes who controlled the land day to day.</b></div>"
+    },
+    {
+     "t": "Textbook: Transition to Colonialism 1707–1857",
+     "src": "Roy ch2",
+     "h": "<p>Roy explains how a merchant company, not a warrior or landlord dynasty, built an empire in India between the death of Aurangzeb (1707) and the 1857 mutiny. Trade turned into empire because local Company agents dabbled in politics, because traders wanted power to protect profits in a time of weak states, and because the Company built a paid standing army financed by a reformed land tax. Its land reforms created ownership rights: the Permanent Settlement (1793) made zamindars owners for a fixed revenue, while ryotwari (from about 1820) contracted directly with cultivators at revisable rates. Trade shifted from cloth exports to opium, indigo and raw cotton, enriching Parsi, Marwari and Bengali merchants and the Calcutta agency houses. Roy treats deindustrialisation as real but not catastrophic. For a manager, the chapter shows how property rights, contract enforcement and access to cheap capital decide which businesses survive a change of regime.</p><!--viz:ebh-permanent-vs-ryotwari--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison table. Permanent Settlement: 1793 in Bengal, contract with the zamindar who becomes legal owner, revenue fixed forever, estate auctioned on default, neither state nor zamindar could capture gains from improvement. Ryotwari: from about 1820 in the south and west, contract directly with the cultivator, revenue revised roughly every 30 years, high assessments such as Pringle's 55% Deccan rate could ruin cultivators, and the state could capture gains by reassessing.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Permanent Settlement vs ryotwari</div><div class=\"scroller\"><table><thead><tr><th></th><th>Permanent Settlement</th><th>Ryotwari</th></tr></thead><tbody><tr><td><strong>When, where</strong></td><td>1793, Bengal (later parts of Madras and eastern UP)</td><td>from about 1820, much of southern and western India</td></tr><tr><td><strong>Contract with</strong></td><td style=\"background:var(--blue-soft)\">the zamindar, made legal owner</td><td style=\"background:var(--clay-soft)\">the cultivator (ryot) directly</td></tr><tr><td><strong>Revenue</strong></td><td>fixed forever</td><td>revised periodically, roughly every 30 years</td></tr><tr><td><strong>Risk for the holder</strong></td><td>default meant a compulsory public auction of the estate</td><td>a high assessment could ruin cultivators, as Pringle's 55% Deccan rate did</td></tr><tr><td><strong>Who could gain from improvement</strong></td><td>neither the state (tax frozen) nor, after 1859, the zamindar (rents capped)</td><td>the state, by reassessing</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Who signs, and whether the tax can move: the two questions that separate the settlements.</figcaption></figure><!--/viz:ebh-permanent-vs-ryotwari--><p><strong>Three tiers of land rights before colonial rule</strong> — In the Indo-Gangetic basin, the peasant held the right to cultivate, the village zamindar the right to collect tax, and kings or commanders the right to grant taxation rights. These were rights to a share of produce in return for service, not ownership, so land rarely sold. In the eighteenth century revenue rights were auctioned and became more marketable and in effect hereditary.<br><em>e.g.</em> Mughal land tax took roughly a quarter to a third of gross produce.</p><p><strong>Permanent Settlement (1793)</strong> — In Bengal, ownership was given to the former tax-collecting zamindars in exchange for a revenue demand fixed forever. Default meant a mandatory public auction, and many estates were sold in the first fifteen years. Peasants became the zamindars' tenants; tenancy acts from 1859 to 1928 later protected their occupancy and rents.<br><em>e.g.</em> In Bengali, 'going to laat' (a resold fragment of an estate) came to mean going bankrupt.</p><p><strong>Ricardian rent theory behind the land reforms</strong> — James Mill, at the Board of Control from 1818, followed David Ricardo: rent arises from the scarcity of fertile land and is unearned income, so it can be taxed without reducing work effort. Tax should fall on net produce. The reforms aimed to make land saleable so that it would pass to the most efficient owner.<br><em>e.g.</em> Under the theory, taxing a fertile plot's surplus over marginal land does not discourage farming.</p><p><strong>Ryotwari settlement</strong> — Established around 1820 in southern and western India, ryotwari was a direct, time-limited tax contract between the cultivator (ryot) and the state, revised roughly every 30 years. Pringle's first Deccan assessment at 55% of net produce failed through information problems and a farm depression followed; the 1840s Wingate–Goldsmid settlement lowered the effective rate.<br><em>e.g.</em> In village-community areas (upper Doab, Rohilkhand) joint landholders were collectively liable for revenue.</p><p><strong>Gainers and losers of the land reforms</strong> — Zamindars gained at first, but over the nineteenth century rich tenant farmers (jotedars) and creditors gained power, and tenancy laws capped rents after 1859. Roy describes a slow erosion of landlord power, while older elites sold land and moved into education and urban jobs.<br><em>e.g.</em> After 1870 rich farmers grew by producing for rising markets.</p><div class=\"card\"><strong>Case: Carr Tagore and the Union Bank</strong> <em>(Section 'Merchants and Bankers' (Dwarkanath Tagore))</em><p>Dwarkanath Tagore built the largest, most diversified Indo-European firm of 1830s Calcutta, spanning coal, tea, salt, steamboats, indigo and his own Union Bank, which financed the indigo trade. The bank collapsed through fraud in 1846–7, and Bengali capital then drifted into landed estates.</p><p><em>Lesson:</em> Fragile banking and dependence on one volatile commodity can sink even well-connected entrepreneurs.</p><p><em>Think:</em> Was the Bengali shift from trade to zamindari after 1847 a failure of entrepreneurship or a rational response to the cost of capital? Use Roy's argument.</p></div><div class=\"card\"><strong>Case: The blue mutiny, 1859–60</strong> <em>(Section 'Foreign Trade' (indigo))</em><p>European planters advanced cash to Bengal peasants who contracted to sow indigo at customary prices. When rice prices rose much faster than indigo in the 1850s, peasants refused to sow; planters went to court and sometimes used force. The government declined to rescue them and drafted a contract law instead.</p><p><em>Lesson:</em> Contract enforcement and relative prices, not just coercion, shaped colonial cash-crop production.</p><p><em>Think:</em> How does the blue mutiny complicate the claim that cultivators were simply forced into indigo?</p></div><div class=\"card\"><strong>Case: Decline of the Jagatseth</strong> <em>(Section 'Merchants and Bankers')</em><p>The Marwari banking house of the Jagatseth controlled Bengal's mint and sided with the English in the palace revolution that brought the Company to power. Once the Company no longer needed it for politics or coinage, the firm faded; the last Jagatseth died a poor pensioner in 1864.</p><p><em>Lesson:</em> Businesses built on state patronage are exposed when the state changes.</p><p><em>Think:</em> Contrast the Jagatseth with the Parsis or the Surat firm that lent to British campaigns: why did some old firms adapt and others fail?</p></div><div class=\"def\"><b>Book vs lecture — Who owned the land under the zamindari system.</b> Book: The Permanent Settlement (1793) gave ownership (proprietary rights) to the former tax-collecting zamindars in exchange for a revenue demand fixed forever; estates were auctioned on default. Lecture: The Lecture 10 table says the British government owned the land and granted it to zamindars, in exchange for revenue extraction. <b>For the quiz, answer as the lecture does (the hub question 'Under the Zamindari system, who owned the land?' expects 'The British government'). In written answers, add that legally the 1793 settlement made zamindars proprietors who owed the state a fixed revenue.</b></div><div class=\"def\"><b>Book vs lecture — Span and reach of zamindari.</b> Book: Zamindars existed before British rule as the tax-collecting middle tier of a three-tier system; the British converted them into owners in 1793 in Bengal (later coastal Madras and eastern UP). Most of southern and western India got ryotwari instead from about 1820. Lecture: The lecture labels the system 'Zamindari / colonial (India, 1700s–1947)' and presents it as the colonial land system, externally imposed. <b>Use the lecture framing for the quiz, but remember zamindari was one of three colonial settlements (zamindari, ryotwari, village-community) and was not India-wide.</b></div><div class=\"def\"><b>Book vs lecture — Who decided to grow indigo.</b> Book: Indigo was grown by peasants under advance contracts with European 'planters'; it paid while relative prices held. In 1859–60 peasants refused to sow when rice prices outpaced indigo, and the government refused to bail out the planters. Lecture: The lecture says production was decided centrally by the British, thousands of miles away, pushing cultivators from food crops into risky cash crops such as indigo. <b>Quiz: the lecture's answer. Analysis: Roy shows a market-and-contract story in which peasants could and did refuse, which complicates the 'forced' reading.</b></div><div class=\"def\"><b>Book vs lecture — Name of Arkwright's machine.</b> Book: Roy refers to Arkwright's 'spinning frame' and places the jenny and frame patents between 1767 and 1785. Lecture: The lecture calls it the water frame (1768, patented 1769) and dates the spinning jenny to 1764. <b>Same machine. Use the lecture's names and dates; Roy's range is about the patents, not the inventions.</b></div><div class=\"def\"><b>Book vs lecture — When agency houses arose.</b> Book: European merchants and former Company employees were setting up licensed agency houses in Calcutta by the end of the eighteenth century; until about 1834 they took deposits from Company officials, and a crash in the early 1830s pushed survivors towards Indian partners. Lecture: L#30–31 tie the agency houses to the end of the trade monopoly: they spread after 1813, Palmer &amp; Co. dating from the 1810s–1820s, and many failed in the indigo crash of 1834–35 (Palmer in the 1830s). <b>For a quiz, use the lecture's 'after 1813' and the 1834–35 crash. In written answers, note that Roy has the houses already trading by about 1800; both agree the 1830s crash opened the way for firms such as Carr, Tagore &amp; Co. (1834).</b></div><div class=\"def\"><b>Book vs lecture — Export shares around 1850.</b> Book: 1850: opium 30% of export value, raw cotton 19%, indigo 11% (and in 1811 cloth 33%, opium 24%, indigo 19%). Lecture: L#30's table: 1850–51 opium 30% or more, indigo 10%, raw cotton about 12%; also 1828–29 indigo 27%, opium 17%, raw cotton 15%. <b>Same ranking and the same opium figure, so the story agrees: opium first, indigo falling. Use the lecture's numbers in the quiz; the cotton share is the one that differs (12% vs 19%).</b></div><div class=\"def\"><b>Book vs lecture — Dates of the First Opium War.</b> Book: The Opium War of 1839–40, ended by the Treaty of Nanking (1842), which gave Britain Hong Kong. Lecture: L#30 dates the First Opium War 1839–1842 and links opium's export share falling to 10% in 1839–40 to it. <b>Write 1839–42 (fighting began in 1839, the treaty came in 1842), as the lecture does; Roy's 1839–40 refers to the opening phase.</b></div><div class=\"def\"><b>Book vs lecture — China's status.</b> Book: China was a weak but independent state that could not suppress the opium trade; Britain gained Hong Kong under the 1842 treaty. Lecture: L#30–31 speak of China, or parts of it, as a British colony. <b>Roy is right here: China was the market for Indian opium, not a colony. Only Hong Kong passed to Britain.</b></div>"
     }
    ]
   },
@@ -607,6 +630,16 @@ HUB.addCourse({
      "h": "\n<p style=\"font-size:14.5px\">The <strong>14 principles</strong> say <strong>how</strong> the management functions should be carried out. Several existed before Fayol: the first is Adam Smith's division of labour, renamed.</p>\n<div class=\"scroller\"><table><thead><tr><th>#</th><th>Principle</th><th>Meaning</th></tr></thead><tbody><tr><td>1</td><td><strong>Division of work</strong></td><td>Specialise, so each worker gains skill and efficiency (Smith's division of labour)</td></tr><tr><td>2</td><td><strong>Authority and responsibility</strong></td><td>Managers can give orders and must also own the results</td></tr><tr><td>3</td><td><strong>Discipline</strong></td><td>Employees obey and respect the rules set by management</td></tr><tr><td>4</td><td><strong>Unity of command</strong></td><td>Each employee takes orders from <strong>one supervisor only</strong></td></tr><tr><td>5</td><td><strong>Unity of direction</strong></td><td>One plan of action, one direction for the organisation</td></tr><tr><td>6</td><td><strong>Subordination of individual interest</strong></td><td>Personal goals must be in line with the organisation's, which come first</td></tr><tr><td>7</td><td><strong>Remuneration</strong></td><td>Workers are paid a fair wage for their services</td></tr><tr><td>8</td><td><strong>Centralisation</strong></td><td>How far decisions are concentrated at the top depends on the business</td></tr><tr><td>9</td><td><strong>Scalar chain</strong></td><td>A clear line of authority from the top to the bottom</td></tr><tr><td>10</td><td><strong>Order</strong></td><td>A place for everything and everything in its place</td></tr><tr><td>11</td><td><strong>Equity</strong></td><td>Fair treatment of all staff</td></tr><tr><td>12</td><td><strong>Stability of tenure</strong></td><td>High staff turnover is inefficient</td></tr><tr><td>13</td><td><strong>Initiative</strong></td><td>Employees take initiative to achieve the organisation's goals</td></tr><tr><td>14</td><td><strong>Teamwork</strong></td><td>Unity among staff, so personal interest does not overpower the organisation's</td></tr></tbody></table></div>\n<ul>\n <li>He grouped the first five under <strong>work structure</strong> (1–2, linked to organisation structure) and <strong>discipline and order</strong> (3–5), and 6–8 under <strong>people and priorities</strong>.</li>\n <li>The common thread: the principles centre on the <strong>organisation's goals</strong>, which are paramount over individual interests.</li>\n</ul>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Fayol's own name for the 14th principle is esprit de corps (team spirit); the lecture teaches it as teamwork.</p>\n<h4>Unity of command: where Fayol breaks with Taylor</h4>\n<p style=\"font-size:14.5px\">Taylor had each worker report to <strong>eight foremen</strong> (the lecture also said \"seven to eight\"), each in charge of one aspect of the work. Fayol rejected this: <strong>one boss per worker</strong>. With several supervisors, one may give an order that contradicts another's.</p>\n<div class=\"warnbox\"><b>Did Taylor ignore pay?</b> He said Taylor \"had not talked about salary at all\", whereas Fayol made remuneration a principle. But L#23 taught that scientific management assumed workers are motivated by money, paying more for hitting the benchmark, and Taylor did tie pay to output (his differential piece rate). Safe version: <b>fair remuneration as a principle of management</b> is Fayol's.</div>\n<div class=\"def\"><b>From the lecture (L#25):</b> he singled out <b>discipline</b> and especially <b>unity of command</b> as the principles that matter when <b>comparing Fayol with Taylor</b>. He did not explain the <b>scalar chain</b> (\"you may look at it\"). He said Taylor's principles are, in a way, a <b>subset</b> of Fayol's, since they fall under the technical activity. He mentioned that later approaches, such as <b>HR management</b>, will <b>not</b> be taken further in this course (other courses cover them), even though L#23 had pointed to them; the next lectures move to other parts of business history, 1800s–1950.</div>\n<!--viz:ebh-taylor-vs-fayol--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison table of Taylorism and Fayolism by who and where, viewpoint, focus, command structure, reach, and how the two relate.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Taylorism vs Fayolism</div><div class=\"scroller\"><table><thead><tr><th></th><th>Taylorism</th><th>Fayolism</th></tr></thead><tbody><tr><td>Who, where</td><td>Frederick Taylor, engineer, US, late 1800s</td><td>Henri Fayol, engineer and CEO, France, from the 1880s (written up 1916)</td></tr><tr><td>Viewpoint</td><td>Bottom-up: the shop floor and the worker</td><td style=\"background:var(--blue-soft)\">Top-down: the whole organisation</td></tr><tr><td>Focus</td><td>Productivity and efficiency of tasks</td><td>Overall administration through systematic principles</td></tr><tr><td>Command</td><td style=\"background:var(--clay-soft)\">Eight foremen per worker</td><td style=\"background:var(--blue-soft)\">One supervisor per worker (unity of command)</td></tr><tr><td>Reach</td><td>Specialised: production</td><td>Universal: every activity and type of organisation</td></tr><tr><td>Relation</td><td>Falls under Fayol's technical activity</td><td>Contains Taylor's work as a subset</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Same era, opposite ends of the firm: Taylor from the shop floor up, Fayol from the top down.</figcaption></figure><!--/viz:ebh-taylor-vs-fayol--><!--viz:ebh-unity-of-command--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two panels: under Taylor's functional foremanship one worker receives orders from eight foremen (route clerk, instruction card clerk, time and cost clerk, disciplinarian, gang boss, speed boss, repair boss, inspector); under Fayol's unity of command one worker receives orders from one supervisor.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Eight foremen or one boss</div><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;font-size:14px\"><div style=\"padding:10px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>Taylor: eight foremen</b><div style=\"display:flex;flex-wrap:wrap;gap:4px;margin:8px 0;font-size:12.5px\"><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\">route clerk</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\">instruction card</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\">time and cost</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\">disciplinarian</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\">gang boss</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\">speed boss</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\">repair boss</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\">inspector</span></div><div style=\"color:var(--ink-3)\">↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓</div><div style=\"margin-top:4px;padding:6px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);display:inline-block\"><b>One worker</b></div><div style=\"margin-top:6px;color:var(--ink-2);font-size:13px\">Orders can contradict each other</div></div><div style=\"padding:10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Fayol: unity of command</b><div style=\"margin:8px 0;padding:6px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);display:inline-block\">One supervisor</div><div style=\"color:var(--ink-3)\">↓</div><div style=\"margin-top:4px;padding:6px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);display:inline-block\"><b>One worker</b></div><div style=\"margin-top:6px;color:var(--ink-2);font-size:13px\">Orders come from one source only</div></div></div><div style=\"margin-top:8px;font-size:12.5px;color:var(--ink-3)\">The eight titles are Taylor's own (context beyond the lecture, which gave only the number).</div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Unity of command removes the risk of one foreman's order contradicting another's.</figcaption></figure><!--/viz:ebh-unity-of-command-->"
     },
     {
+     "t": "Live Lecture 6: Taylor and Fayol revisited",
+     "src": "L#29",
+     "h": "\n<div class=\"def\"><b>From the lecture (L#29, Live Lecture 6, 1 November):</b> this session revised his lectures 18–21 (LMS L#23 and L#25–27): management thought, the rise of large corporations and the World Wars, and added a new thinker, <b>Peter Drucker</b>. He gave no quiz or exam details. He said the next live class would <b>probably be on 15 November</b>, if one is scheduled that day, would take up the Wars' impact on <b>Indian</b> business in more detail, and that he would share this presentation through the Masai team. He also said the management theories go much deeper in a <b>Principles of Management</b> course in a later semester.</div>\n<p style=\"font-size:14.5px\">Only what was <strong>new or sharpened</strong> is below; the full treatment is in the L#23 and L#25 notes.</p>\n<h4>Taylor, from the shop floor</h4>\n<ul>\n <li><strong>The pig-iron experiment, retold.</strong> Workers were loading pig iron into rail cars. Taylor picked a <strong>physically fit, highly motivated</strong> worker (the one he called Schmidt) and told him exactly when to lift, walk, sit and rest. Output rose. The lecturer's point: the worker was handled like a <strong>robot that follows orders</strong>, with his thoughts, feelings and aspirations set aside.</li>\n <li><strong>Standard time.</strong> His pen example again: split the pen into parts, give each part to a worker or group, fix a standard time per part (10 seconds, a minute, whatever the study shows) and judge each worker against it.</li>\n <li>He taught Taylor's first two principles (a rule of science for each job; scientific selection and training) and stressed that the second still underlies <strong>HR selection</strong>: match the worker's skills to the job profile instead of choosing by favouritism or nepotism.</li>\n</ul>\n<h4>Fayol, from the top</h4>\n<ul>\n <li>Fayol's <strong>order of ideas</strong>: first the <strong>six activities</strong> a business must carry out, then the <strong>five functions</strong> of the manager inside the managerial activity, then the <strong>14 principles</strong> that say how to carry out those functions.</li>\n <li><strong>Unity of command and unity of direction</strong> tie most closely to commanding, coordinating and controlling: one boss per person, and one direction for the whole organisation.</li>\n <li><strong>What Fayol leaves out.</strong> His functions are about commanding and controlling people, not <strong>motivating</strong> them. Teamwork, equity, stability of tenure, initiative and remuneration appear among the principles, but the worker's psychology and reasons for working (passion for the work, not just pay) are hardly discussed.</li>\n <li>By setting out the tasks of management in his 1916 book, Fayol <strong>systematised management as a field</strong>, which is why the subject has a \"history of management thought\" at all.</li>\n</ul>\n<div class=\"warnbox\"><b>A slip in the recording.</b> At one point he said Fayol focused on the bottom, the shop floor, and then that Fayol looked at the overall, top-down task. The second is right: <b>Taylor</b> is the shop floor, <b>Fayol</b> the whole organisation from the top, as L#25 taught.</div>\n<!--viz:ebh-four-lenses-management--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow of four thinkers: Adam Smith in 1776 on division of labour, Taylor in the late 1800s on the shop floor, Fayol in 1916 on the whole organisation from the top, and Drucker in 1954 on motivating and developing people, highlighted.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Four lenses on management, 1776 to 1954</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Adam Smith</b>, 1776<br><span style=\"color:var(--ink-2);font-size:13px\">split the work: division of labour</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Taylor</b>, late 1800s<br><span style=\"color:var(--ink-2);font-size:13px\">the shop floor: one best way, standard time</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Fayol</b>, 1916<br><span style=\"color:var(--ink-2);font-size:13px\">the whole firm from the top: command and control</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Drucker</b>, 1954<br><span style=\"color:var(--ink-2);font-size:13px\">the people: motivate, measure, develop</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each thinker widened the view: from the task, to the shop floor, to the organisation, to the people in it.</figcaption></figure><!--/viz:ebh-four-lenses-management-->"
+    },
+    {
+     "t": "Peter Drucker and modern management",
+     "src": "L#29",
+     "h": "\n<div class=\"def\"><b>Peter Drucker</b>, often called the <b>father of modern management</b>, is the third thinker in the course's history of management thought, after Taylor (shop floor) and Fayol (the whole organisation). His focus is the <b>people</b> in the organisation: how to motivate and develop them, not just command and control them.</div>\n<h4>Who he was, and why it matters</h4>\n<ul>\n <li>Not a practitioner but an <strong>academic</strong>: he studied <strong>law</strong> and earned a <strong>doctorate</strong>. Taylor (a shop-floor manager) and Fayol (a CEO) theorised from their own jobs; Drucker theorised as an outsider studying how organisations work.</li>\n <li>In the <strong>early 1940s</strong>, <strong>General Motors</strong> hired him for a <strong>two-year study</strong> of how the company was run and how it could improve. That consulting work became his book <em>Concept of the Corporation</em> (1940s).</li>\n <li>He taught as a <strong>professor of management at New York University from 1950 to 1971</strong>, and in that period wrote <em><strong>The Practice of Management</strong></em> (<strong>1954</strong>), the seminal work on which much of today's management is organised.</li>\n</ul>\n<h4>Drucker's five tasks of a manager</h4>\n<div class=\"scroller\"><table><thead><tr><th>Task</th><th>What it involves (L#29)</th></tr></thead><tbody>\n<tr><td><strong>1. Planning</strong></td><td>setting objectives, deciding how to reach them, setting strategy</td></tr>\n<tr><td><strong>2. Organising</strong></td><td>analysing and dividing the work into manageable activities and individual jobs, and selecting the right people for them</td></tr>\n<tr><td><strong>3. Integrating, motivating and communicating</strong></td><td>building teams out of individuals around common goals</td></tr>\n<tr><td><strong>4. Measuring performance</strong></td><td>setting yardsticks, targets and analytical measures to judge individual and organisational progress</td></tr>\n<tr><td><strong>5. Developing people</strong></td><td>growing and training subordinates, self-development included, and placing people in roles that use their strengths</td></tr>\n</tbody></table></div>\n<ul>\n <li><strong>Management by objectives (MBO)</strong> grows out of measuring performance: objectives are set for the organisation <strong>and</strong> for each individual, and people are managed against them. He named it and left the detail for later courses.</li>\n <li>The last tasks are close to today's <strong>human resource management</strong>; he added that the same interest in motivation, applied to buyers, underlies <strong>consumer behaviour</strong> in marketing.</li>\n <li>Drucker still looks <strong>inside</strong> the organisation: these are things a manager can control. People are not free to do as they like; measurement and development still steer them towards the organisation's goals, but they are treated as human beings.</li>\n</ul>\n<h4>Same word, different meaning</h4>\n<ul>\n <li><strong>Organising.</strong> Fayol: providing the <strong>material and human resources</strong> and defining roles. Drucker: dividing the <strong>work</strong> into jobs and choosing <strong>people</strong> for them; material resources do not feature.</li>\n <li><strong>Teamwork.</strong> For Fayol it is one of the <strong>14 principles</strong>. For Drucker, building teams out of individuals is a <strong>core task</strong> of the manager.</li>\n</ul>\n<h4>Two views of the organisation</h4>\n<ul>\n <li><strong>Fayol</strong> sees the organisation as a <strong>machine</strong> and workers as <strong>subordinates</strong>, parts of that machine: a top-down, <strong>industrial</strong> approach.</li>\n <li><strong>Drucker</strong> sees it as a <strong>social organism</strong>, driven by human strengths and knowledge, whose different \"organs\" do different jobs. Workers are <strong>knowledge workers</strong> with agency, understanding and ideas, who should manage themselves and contribute solutions: a human-centred, <strong>knowledge-era</strong> approach.</li>\n</ul>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Drucker (1909–2005) was born in Vienna; his doctorate (Frankfurt, 1931) was in international and public law. The General Motors study began in 1943 and <em>Concept of the Corporation</em> appeared in 1946. He coined the term \"knowledge worker\" in 1959.</p>\n<!--viz:ebh-fayol-vs-drucker--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison table. Fayol: engineer and CEO, 1916, top-down industrial approach, organisation as a machine, workers as subordinates, functions plan, organise, command, coordinate, control, emphasis on control. Drucker: academic and consultant, The Practice of Management 1954, human-centred knowledge-era approach, organisation as a social organism, workers as knowledge workers, tasks plan, organise, integrate and motivate, measure performance, develop people, emphasis on motivation and development.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Fayol vs Drucker</div><div class=\"scroller\"><table><thead><tr><th></th><th>Fayol</th><th>Drucker</th></tr></thead><tbody><tr><td><strong>Background</strong></td><td>engineer and CEO of a French mining company</td><td style=\"background:var(--blue-soft)\">academic with a law doctorate; studied General Motors as a consultant</td></tr><tr><td><strong>Key work</strong></td><td>his 1916 book on administration</td><td style=\"background:var(--blue-soft)\"><em>The Practice of Management</em>, 1954</td></tr><tr><td><strong>Approach</strong></td><td>top-down, industrial</td><td style=\"background:var(--blue-soft)\">human-centred, knowledge era</td></tr><tr><td><strong>Organisation is</strong></td><td>a machine</td><td style=\"background:var(--blue-soft)\">a social organism</td></tr><tr><td><strong>Workers are</strong></td><td>subordinates, parts of the machine</td><td style=\"background:var(--blue-soft)\">knowledge workers who manage themselves</td></tr><tr><td><strong>Manager's list</strong></td><td>plan, organise, command, coordinate, control</td><td style=\"background:var(--blue-soft)\">plan, organise, integrate and motivate, measure, develop people</td></tr><tr><td><strong>Emphasis</strong></td><td>control and direction</td><td style=\"background:var(--blue-soft)\">motivation and development</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Planning and organising appear in both lists; command and control give way to motivating, measuring and developing people.</figcaption></figure><!--/viz:ebh-fayol-vs-drucker-->"
+    },
+    {
      "t": "Textbook: Economic Models and the Modern Factory",
      "src": "Leigh ch6",
      "h": "<!--viz:ebh-leigh-business-milestones--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Timeline: Taylor's pig-iron experiment 1898–1901 (L#23), Martin proposes Ford's assembly line 1908, Selfridges opens 1909, Woolworth floats with 596 stores 1912, Ford's moving line runs 1913 (highlighted as the lecture's 1910s), war in 1914, Fayol writes up his theory 1916 (L#25).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Leigh's business milestones between Taylor and Fayol</div><div style=\"border-left:2px solid var(--rule-2);margin-left:6px;padding-left:16px;font-size:14px\"><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1898–1901</b> · <span style=\"color:var(--ink-3)\">Lecture:</span> Taylor's pig-iron experiment standardises tasks (L#23)</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1908</b> · Peter Martin proposes an assembly line at Ford</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1909</b> · Selfridges opens in London: shopping as an experience</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1912</b> · Woolworth floats on the stock market with 596 stores</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1913</b> · Ford's moving line runs at Highland Park: <b>the lecture's \"1910s\"</b> <span style=\"color:var(--ink-3)\">(context)</span></div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1914</b> · War breaks out; most world trade and migration stops</div><div style=\"position:relative\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1916</b> · <span style=\"color:var(--ink-3)\">Lecture:</span> Fayol writes up administrative management (L#25)</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Ford's line sits between the lecture's two thinkers; 1908 is the proposal and 1913 the line itself.</figcaption></figure><!--/viz:ebh-leigh-business-milestones--><p><strong>Specialisation behind the car</strong> — Leigh says the car's evolution owed much to specialisation: on the line, as in the slaughterhouse, each worker repeats one standard task. This chapter names neither Smith nor Taylor; the lecture's chain supplies the link, from Smith's division of labour (1776) through Taylor's standardised tasks (1898–1901) to Ford's 84 steps (L#23, L#26).</p>"
@@ -640,6 +673,11 @@ HUB.addCourse({
      "h": "\n<h4>Factor 4: consolidation and monopolies</h4>\n<p style=\"font-size:14.5px\">Companies also grew by <strong>buying other companies</strong>, crushing rivals and gaining control of a market.</p>\n<div class=\"scroller\"><table><thead><tr><th></th><th>Horizontal integration</th><th>Vertical integration</th></tr></thead><tbody><tr><td>What is bought</td><td>A <strong>competitor</strong> in the same market</td><td>A <strong>supplier</strong> or a <strong>distributor</strong> (or retailer)</td></tr><tr><td>Aim</td><td>Remove rivals, dominate the market</td><td>Control every step of a product's life, from <strong>raw material extraction to final retail sale</strong></td></tr><tr><td>His examples</td><td>Facebook buying <strong>WhatsApp</strong>; Jio and <strong>Hotstar</strong> becoming JioHotstar</td><td><strong>Netflix</strong> (a distributor) buying a film production company: his hypothetical</td></tr></tbody></table></div>\n<div class=\"warnbox\"><b>Two of the examples, precisely.</b> JioHotstar was not a simple purchase: Reliance's and Disney's Indian media businesses merged (completed in 2024), bringing JioCinema and Disney+ Hotstar together in 2025. It is still horizontal, since two rivals in one market became one. Facebook bought WhatsApp in 2014. Netflix already makes its own originals; treat his Netflix case as an illustration of the idea.</div>\n<h4>How it all ties back to management thought</h4>\n<ul>\n <li><strong>Mass production</strong> rests on <strong>division of labour</strong> (Smith) and <strong>standardised tasks</strong> (Taylor), and Ford's line is the extreme case.</li>\n <li>Running a big corporation needs Fayol's <strong>top-down administration</strong> and specialised managers, and Weber's <strong>bureaucracy</strong>.</li>\n</ul>\n<div class=\"def\"><b>From the lecture (L#26):</b> this is \"lecture 20\" in his numbering, the last recorded lecture he named for <b>Quiz 2</b> (his lectures 11–20; see L#24). He went over consolidation and monopolies <b>only briefly</b>, because the <b>strategy courses</b> of later semesters cover them. The lecture keeps to business history from the <b>1800s to 1950</b>; the next lectures take up other topics of Module 4.</div>\n<!--viz:ebh-horizontal-vertical--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Vertical integration shown as a firm buying its raw-material supplier, distributor and retailer along the chain; horizontal integration shown as a firm buying a rival in the same market, such as Facebook and WhatsApp.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Horizontal vs vertical integration</div><div style=\"font-size:14px\"><div style=\"font-size:12.5px;color:var(--ink-3);margin-bottom:4px\">Vertical: buy along the chain</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">Raw material supplier</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Your firm</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">Distributor</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">Retailer</div></div><div style=\"font-size:12.5px;color:var(--ink-3);margin:12px 0 4px\">Horizontal: buy alongside</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Your firm</b></div><span style=\"color:var(--ink-3)\">+</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">Rival in the same market</div><span style=\"color:var(--ink-3)\">=</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">One bigger firm<br><span style=\"color:var(--ink-2);font-size:13px\">Facebook + WhatsApp</span></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Vertical buys up and down the chain; horizontal buys sideways, at the same stage.</figcaption></figure><!--/viz:ebh-horizontal-vertical-->"
     },
     {
+     "t": "Live Lecture 6: the modern corporation revisited",
+     "src": "L#29",
+     "h": "\n<p style=\"font-size:14.5px\">The four factors are unchanged from L#26 (railroads and telegraph, mass production, the modern corporation, consolidation). What the live session added:</p>\n<ul>\n <li><strong>Theory followed practice.</strong> The management theories of Taylor, Fayol and Drucker arose largely to understand and run the <strong>mass production</strong> that existed by the 1920s, with <strong>Ford</strong> as the example. That is the bridge between the two topics.</li>\n <li><strong>Earlier companies.</strong> The Dutch and British East India Companies were early examples; the turning point was the company as a <strong>legal entity</strong>. It, not its owners, takes and gives loans and owns property: vehicles, land, and also <strong>intellectual property</strong> such as patents, brands and trademarks.</li>\n <li><strong>Shares as slices of ownership.</strong> His example was a recent Jio share listing: buying a share buys a fraction of the company. Your stake is <strong>shares held ÷ shares issued × 100</strong>. Of 10 lakh shares, 20,000 is 2% and 50,000 is 5%. (His spoken arithmetic wandered; use the formula.) With 200 owners, ten might hold 5% each, half the company, and the other 190 share the rest.</li>\n <li><strong>Why joint stock.</strong> Railroads and massive factories needed more money than one or two business families had; selling many small shares to the public raised it.</li>\n <li><strong>Perpetual existence.</strong> When an owner or promoter dies, someone else, family or professional, takes over; the corporation ends only if it goes <strong>bankrupt</strong>.</li>\n</ul>\n<h4>Limited liability: a worked example from the lecture</h4>\n<p style=\"font-size:14.5px\">You hold <strong>10 shares at ₹700</strong>, so you owe the company <strong>₹7,000</strong> for them, and you have paid <strong>₹5,000</strong> so far. The company fails owing its bank crores. Your liability is the <strong>₹2,000 still unpaid on your shares</strong>; once that is paid you owe nothing more. In a partnership, by contrast, creditors could claim your <strong>home, savings and land</strong>, because you and the firm were not separate.</p>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: shares bought on an exchange today are almost always fully paid, so the most a shareholder can lose is what was paid for them. \"Partly paid\" shares, like his example, were common in the nineteenth century.</p>\n"
+    },
+    {
      "t": "Textbook: Economic Models and the Modern Factory",
      "src": "Leigh ch6",
      "h": "<p>Around 1900 Alfred Marshall's Principles of Economics (1890) gave economics its familiar tools: supply and demand as two blades of a pair of scissors meeting at the equilibrium price, and the distinction between fixed and variable costs. After J.P. Morgan personally halted the 1907 banking panic, bankers secretly designed what became the Federal Reserve (1913); central banks stabilise systems in which banks borrow short and lend long, mainly by guaranteeing deposits. Business was reinvented: Ford's assembly line (proposed in 1908 after a slaughterhouse visit; the moving line ran from 1913) brought the car to the parts; Selfridges made shopping an experience; Woolworth's chain used buying power to pile goods high and sell them cheap. Faster steamships fuelled mass migration until the First World War, which the Allies — with far more people, land and income — won at a cost of about 20 million lives, while Russia's 1917 revolution brought civil war and famine. A box explains the tragedy of the commons and Ostrom's evidence that communities can avoid it.</p><!--viz:ebh-car-to-the-parts--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A Chicago slaughterhouse, where carcasses moved past workers each making one cut, inspires Ford in 1908. Below, two panels: with the car standing still, parts and workers come to it; on the assembly line the car moves past stationary workers, each repeating one task.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The flip: the car moves, the workers stay</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Chicago slaughterhouse</b><br><span style=\"color:var(--ink-2);font-size:13px\">carcass moves · one cut per worker</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>1908</b> · Peter Martin borrows it for Ford</div></div><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:6px;font-size:14px\"><div style=\"padding:10px 12px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><div style=\"font-size:12.5px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px\">The other way round</div><b>The car stands still</b><br><span style=\"color:var(--ink-2);font-size:13px\">parts and workers are brought to it</span></div><div style=\"padding:10px 12px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><div style=\"font-size:12.5px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px\">Assembly line</div><b>The car moves to the parts</b><br><span style=\"color:var(--ink-2);font-size:13px\">each worker stays put and repeats one standard task · cars come off so fast that only quick-drying black paint keeps up</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Leigh's point is the reversed flow; the lecture's 84 steps (L#26) describe how finely the work was split.</figcaption></figure><!--/viz:ebh-car-to-the-parts--><!--viz:ebh-selfridges-vs-woolworth--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table comparing Selfridges (London, 1909, competing on the shopping experience) with Woolworth (US five-and-dime chain of 596 stores in 1912, competing on price through buying power), with a note on who gains and loses from Woolworth's model.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Two ways to build a big retailer</div><div class=\"scroller\"><table><thead><tr><th></th><th>Selfridges</th><th>Woolworth</th></tr></thead><tbody><tr><td>Where, when</td><td>Oxford Street, London, 1909</td><td>US five-and-dime stores; 596 of them when it floated in 1912</td></tr><tr><td>Competes on</td><td style=\"background:var(--blue-soft)\"><b>Experience</b></td><td style=\"background:var(--clay-soft)\"><b>Price</b></td></tr><tr><td>How</td><td>goods you can handle · specialist staff · perfume by the entrance · shoppers called guests</td><td>goods at five or ten cents · a chain big enough to push suppliers' prices down</td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\">Woolworth's heirs, in Leigh's list, include Walmart, Tesco and Aldi: lower prices for shoppers and better returns for shareholders, while suppliers and small independent shops are squeezed.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Scale, not just a new factory, made Woolworth big: size became bargaining power over suppliers.</figcaption></figure><!--/viz:ebh-selfridges-vs-woolworth--><p><strong>The assembly line</strong> — In 1908 Ford executive Peter Martin proposed an assembly line, inspired by a Chicago slaughterhouse where carcasses moved past workers each making one cut. Moving the car towards the parts, rather than bringing the parts to the car, made production so fast that colour choice was dropped: black paint dried fastest. Leigh's 1908 is the proposal; Ford's moving line ran from 1913, the lecture's 1910s.</p><p><strong>Retail innovation: experience vs price</strong> — Selfridges (London, 1909) made shopping enjoyable — goods customers could handle, specialist staff, perfume at the entrance, customers called 'guests', 'the customer is always right'. Woolworth's five-and-dime chain (596 stores when it floated in 1912) used scale to squeeze suppliers and cut prices, the model of Walmart, Tesco and Aldi. The float also gave Woolworth outside shareholders, the joint-stock route to capital in L#26.</p><p><strong>Mass migration</strong> — Steel-hulled, coal-powered ships cut the Liverpool–New York crossing from 53 days (1850s) to 8 (1910s), and passports were rarely needed. These are the faster ships behind the first of L#26's four factors. Leigh stresses migrants add supply (workers, ideas) as well as demand.</p><div class=\"card\"><strong>Case: Ford's assembly line</strong> <em>(Ch. 6, Ford Motor Company, from 1908)</em><p>A Ford executive, inspired by a slaughterhouse's moving line of carcasses, proposed moving cars past specialised workers. Output rose so fast that the firm stopped offering colours and painted every car black, the quickest-drying paint.</p><p><em>Lesson:</em> Division of labour applied to moving production — the heart of mass production.</p><p><em>Think:</em> What trade-off did Ford make between variety and cost, and why did it pay?</p></div><div class=\"card\"><strong>Case: Woolworth's five-and-dime chain</strong> <em>(Ch. 6, Frank Woolworth's stores)</em><p>Woolworth's low-price stores grew into a nationwide chain listed on the stock market. Its size gave it the buying power to extract lower prices from suppliers, a strategy today's supermarket giants still use, benefiting shoppers and shareholders but squeezing suppliers and small shops.</p><p><em>Lesson:</em> Scale creates bargaining power — a feature of the rise of large corporations.</p><p><em>Think:</em> Who gains and who loses when a large retail chain uses its buying power?</p></div><details><summary>Worked problem: Short-run pricing with fixed and variable costs</summary><p>A textile unit has fixed costs of ₹6 lakh a month (rent, machine loans) and variable costs of ₹150 per metre. A buyer offers ₹180 a metre for 10,000 metres this month, when the unit would otherwise sit idle. Should it accept?</p><ol><li>Revenue = 10,000 × ₹180 = ₹18 lakh.</li><li>Extra (variable) cost = 10,000 × ₹150 = ₹15 lakh.</li><li>Fixed costs of ₹6 lakh are paid either way, so they do not change the decision.</li><li>Contribution = ₹18 lakh − ₹15 lakh = ₹3 lakh toward fixed costs.</li></ol><p><strong>Answer:</strong> Accept: the order covers variable cost and adds ₹3 lakh toward fixed costs. In the long run, though, prices must cover all costs or the firm closes — Marshall's distinction.</p></details><div class=\"def\"><b>Book vs lecture — When Ford's assembly line began.</b> Book: Leigh dates it to 1908, when Ford executive Peter Martin proposed it after visiting a Chicago slaughterhouse. Lecture: L#26 put Ford's line in 'the 1910s, 1920s' and once in 'the 1920s and 1930s'. The moving line ran at Ford's Highland Park plant from 1913. <b>Answer the 1910s in the quiz (1913 if a year is asked). 1908 is the year the idea was proposed; the 1920s–30s was a slip.</b></div><div class=\"def\"><b>Book vs lecture — What made the assembly line new.</b> Book: The radical step was flipping the flow: the car moved towards the parts, and each worker made one standard contribution, as slaughterhouse workers each made one cut. Lecture: L#26 stressed breaking car assembly into 84 standardised, repetitive steps, so that workers became replaceable: division of labour taken to an extreme, straight after Taylor's time and motion studies. <b>Two views of one line, not a conflict. For quiz questions on Ford use the lecture's 84 steps, standardisation and replaceable workers; the moving car and the slaughterhouse origin are the book's extra context.</b></div><div class=\"def\"><b>Book vs lecture — Who gets the credit for the line.</b> Book: Leigh credits the car's evolution to specialisation and names neither Adam Smith, Taylor nor Fayol in this chapter. Lecture: L#23 and L#26 trace the line to Smith's division of labour (1776) and Taylor's standardised tasks (1898–1901); L#25 and L#26 tie running a big firm to Fayol's top-down management. <b>Use the lecture's chain, Smith, then Taylor, then Ford, in Module 4 answers. This chapter alone won't give it.</b></div><div class=\"def\"><b>Book vs lecture — How much faster ships got.</b> Book: Migrant ships from Liverpool to New York took 53 days in the 1850s and 8 days by the 1910s, thanks to steel hulls and coal engines. Lecture: L#26 said railroads and ships cut journeys from '20 days' to '2 days', a round illustration of distance collapsing (his first factor). <b>The lecture's 20 to 2 is an illustration, not a measured route. If a question quotes Leigh's Liverpool–New York route, it is 53 to 8 days.</b></div><div class=\"def\"><b>Book vs lecture — Why firms grew so large.</b> Book: Leigh's business examples are Ford's line and retail chains whose size gave buying power over suppliers (Woolworth had 596 stores when it floated in 1912). Lecture: L#26 gave four factors: railroad and telegraph networks, mass production, the joint-stock corporation, and horizontal and vertical integration. Retail chains were not among his examples. <b>Learn the lecture's four factors. Woolworth's float is an example of the joint-stock factor; its supplier squeeze is scale, not integration, because it did not buy its suppliers.</b></div>"
@@ -671,14 +709,19 @@ HUB.addCourse({
      "t": "Impacts 3 and 4: trade disruption, emerging markets and the US rise",
      "src": "L#27",
      "h": "\n<h4>Impact 3: disrupted trade and scarce raw materials</h4>\n<ul>\n <li><strong>Shipping routes</strong> were attacked or blocked, and many countries imposed <strong>trade restrictions</strong>. In WWI the Ottoman Empire fought Britain, which cut across Britain's routes to the East.</li>\n <li>Britain's colonial pattern, Indian raw material out and British finished goods in, broke down.</li>\n</ul>\n<h4>Impact 4: emerging markets restructured</h4>\n<ul>\n <li>In <strong>WWI</strong>, British manufacturing was diverted <strong>completely to the war effort</strong>, so <strong>imports into India fell sharply</strong>.</li>\n <li><strong>Indian business groups filled the gap</strong> and made large profits supplying <strong>jute, textiles</strong> (uniforms included) and <strong>steel rails</strong>, for the military and for civilians. They won market share once held by British makers, and the experience helped Indian industry after independence.</li>\n <li>As a British colony, India also had soldiers in the field who needed supplies, which added to the demand.</li>\n</ul>\n<h4>United States vs Europe</h4>\n<p style=\"font-size:14.5px\">The comparison table below is his slide on WWI. Why the US gained: it was <strong>far from the fighting</strong>, so its factories, railways and cities were not destroyed; its firms <strong>supplied the Allies</strong>; jobs, spending and tax revenue rose; and it had <strong>no reconstruction</strong> to pay for. WWI started its rise as an economic and military power; WWII <strong>cemented</strong> its superpower status, and in August 1945 it became the only country to have used nuclear weapons in war.</p>\n<h4>Afterwards: decolonisation</h4>\n<ul>\n <li>After 1945 the European powers were too weak to hold their empires, power had shifted to the US, and there was a broad view that colonies could not be ruled indefinitely.</li>\n <li>Colonies with strong freedom movements, <strong>India</strong> among them, won independence in the years after 1945, across Asia and Africa. The new nations made their own economic policies, which changed international business.</li>\n</ul>\n<div class=\"def\"><b>From the lecture (L#27):</b> he summed up <b>four impacts</b>, the same four as the recap slide: (1) more <b>government control</b>, giving rise to state capitalism; (2) the <b>growth of war industries</b>; (3) <b>disrupted international trade and shortages of raw materials</b>; (4) the <b>restructuring of emerging markets</b>. The US–Europe comparison and decolonisation are background to these, not a fifth impact. He said the wars' effect on <b>Indian</b> business comes in more detail in <b>Module 5</b>; the course outline lists \"Impact of World Wars on Business in India\" there. This lecture was released on 25 October, after the Quiz 2 cut-off (recorded lectures #15–26), so it is not in Quiz 2; expect it in the end-term exam.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Tata Steel, which made its first steel in 1912, supplied rails for the British campaign in Mesopotamia in WWI, and Bengal's jute mills made sandbags for the trenches. India became independent in 1947. Leigh's chapter on the First World War (textbook, Economic ideas unit) adds the macro view: the Allies' far bigger economy decided the war.</p>\n<!--viz:ebh-wars-us-vs-europe--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison of the First World War's impact on the United States and Europe: US industrial production expanded while Europe's shifted to war production; US infrastructure was barely damaged while Europe's factories, railways, mines and cities were; US exports rose while European trade struggled; controls rose in both; the US gained opportunity and emerged a creditor power while Europe faced reconstruction, debt and inflation. WWII cemented the US position.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">WWI's impact: United States vs Europe</div><div class=\"scroller\"><table><thead><tr><th>Impact</th><th>United States</th><th>Europe</th></tr></thead><tbody><tr><td><strong>Industrial production</strong></td><td style=\"background:var(--good-soft)\">expanded significantly</td><td>shifted heavily to war production</td></tr><tr><td><strong>Infrastructure</strong></td><td style=\"background:var(--good-soft)\">little physical destruction</td><td>factories, railways, mines and cities damaged</td></tr><tr><td><strong>Exports</strong></td><td style=\"background:var(--good-soft)\">rose sharply, food exports especially</td><td>many countries struggled to import and export</td></tr><tr><td><strong>Government control</strong></td><td style=\"background:var(--good-soft)\">increased</td><td>very extensive wartime controls</td></tr><tr><td><strong>Business opportunity</strong></td><td style=\"background:var(--good-soft)\">major new industrial openings</td><td>military demand, but enormous destruction</td></tr><tr><td><strong>After the war</strong></td><td style=\"background:var(--good-soft)\">a major creditor and economic power</td><td>reconstruction, debt and inflation</td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\"><b>WWII</b> repeated the pattern: the US cemented its economic superpower status.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Distance from the fighting turned the same war into a gain for the US and a loss for Europe.</figcaption></figure><!--/viz:ebh-wars-us-vs-europe-->"
+    },
+    {
+     "t": "Live Lecture 6: the World Wars and decolonisation",
+     "src": "L#29",
+     "h": "\n<p style=\"font-size:14.5px\">A quick recap of L#27, with three additions.</p>\n<ul>\n <li><strong>Government control</strong> meant the state told factories what to produce and what not to, fixed selling prices and allocated raw materials. <strong>War industries</strong> grew on both sides: automobile firms making tanks and vehicles, chemicals and explosives, consumer goods, and punch-card and IT firms (he named IBM's and Coca-Cola's dealings with Nazi Germany as troubling examples).</li>\n <li><strong>India.</strong> British factories were working flat out for the war and could supply neither Britain's own demand nor its colonies'. Indian businesses, such as the <strong>Tata</strong> and <strong>Birla</strong> groups, grew by serving the <strong>domestic market</strong> that British goods used to fill and the <strong>military needs</strong> of the British and Indian armies, in both eastern and western India. More on this in Module 5.</li>\n <li><strong>The US.</strong> Its rise as a financial and military power began in WWI and was completed by the end of WWII, sealed by the <strong>atomic bombing of Japan in August 1945</strong>.</li>\n</ul>\n<h4>Why so many colonies won independence after 1945</h4>\n<p style=\"font-size:14.5px\">He gave <strong>two factors that worked together</strong>: <strong>externally</strong>, Western Europe was devastated and its colonial powers too weak to hold on; <strong>internally</strong>, the strength of each colony's own <strong>independence movement</strong>. He called this one reason among several, not the only one.</p>\n"
     }
    ]
   },
   {
    "id": "india-business",
    "title": "Indian business before 1947: entrepreneurs, industry and finance",
-   "tag": "Lecture 28 · Module 5",
-   "lede": "Module 5: how Indian merchants, bankers and shipbuilders worked within, and profited from, East India Company rule, set against the Company's charters and Acts from 1600 to 1813.",
+   "tag": "Lectures 28, 30–31 · Module 5",
+   "lede": "Module 5: how Indian merchants, bankers and industrialists worked within, and profited from, colonial rule, from the East India Company's charters (1600–1813) through the opium and indigo trades of 1813–1850s to the first Indian mills and industrial groups (1850s–1900s).",
    "topics": [
     {
      "t": "Module 5 opens: chartered companies and the colonial setting",
@@ -699,6 +742,54 @@ HUB.addCourse({
      "t": "Indian entrepreneurs, 1700s–1813: brokers, bankers, shipbuilders",
      "src": "L#28",
      "h": "\n<p style=\"font-size:14.5px\">Within this framework, with the Company at its strongest, Indian entrepreneurs played <strong>three roles</strong> from the 1700s to 1813. He stops at 1813 because the end of the trade monopoly is the dividing point.</p>\n<h4>1 · Intermediaries and middlemen</h4>\n<ul>\n <li>The Company lacked <strong>local language skills</strong>, <strong>geographical knowledge</strong> and <strong>social connections</strong>, so it could not easily buy Indian goods or sell British ones.</li>\n <li><strong>Indian merchants acted as brokers</strong> between Company officials and local producers and buyers.</li>\n</ul>\n<h4>2 · Financiers and bankers to the Company</h4>\n<ul>\n <li>Expansion from the 1750s needed money: soldiers' pay, uniforms, weapons, trade.</li>\n <li>The <strong>House of Jagat Seth</strong> gave the Company <strong>massive credit lines</strong> to finance its trade and its <strong>military campaigns</strong>, and lent to other companies too.</li>\n <li>Jagat Seth is said to have played an important part at the <strong>Battle of Plassey (1757)</strong>, helping the outcome go the Company's way.</li>\n</ul>\n<h4>3 · Shipping and the \"China trade\" (opium and cotton)</h4>\n<ul>\n <li><strong>Parsi merchants</strong> took part in the lucrative <strong>opium trade with China</strong>.</li>\n <li><strong>Parsi and Gujarati merchants</strong> exported <strong>raw cotton</strong> to Britain, whose textile mills needed it, and to China.</li>\n <li><strong>Lovji Nusserwanjee Wadia</strong>, a Parsi, excelled in <strong>shipbuilding in the Bombay dockyards</strong>. He founded the <strong>Wadia group in 1736</strong>, the year he secured Company contracts to build <strong>ships and docks in Bombay</strong>. The group still exists, nearly <strong>300 years</strong> on, and moved into other sectors, such as clothing with <strong>Bombay Dyeing</strong>.</li>\n <li>Shipyards and docks helped <strong>Bombay</strong> grow into a major <strong>port city</strong>, the base for the opium and cotton trades.</li>\n</ul>\n<div class=\"warnbox\"><b>Two clarifications.</b> \"Jagat Seth\" (\"banker of the world\") was a title, granted by the Mughal emperor to the heads of a Marwari banking family based at Murshidabad in Bengal, not one man's name; at Plassey the house backed Mir Jafar against Nawab Siraj-ud-Daulah. He was unsure whether Bombay Dyeing is still a Wadia company: it is. It was founded in 1879, so 1736 is the group's start, not the brand's. He once said 1836 and corrected himself to 1736.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Lovji came to Bombay from Surat; the dry dock he and his brother completed around 1750 is often called Asia's first. The best-known Parsi China trader, Jamsetjee Jejeebhoy (1783–1859), made his fortune in cotton and opium in the early 1800s. Brokers were called banians in Bengal and dubashes in Madras. Tirthankar Roy's textbook chapter on 1707–1857 covers the same merchants, the opium trade and the end of the monopoly.</p>\n<!--viz:ebh-indian-entrepreneur-roles--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three columns: the Company lacked language, local geography and social ties, so Indian merchants acted as intermediaries and brokers; it lacked money for trade and war, so the House of Jagat Seth lent it credit, including around Plassey in 1757; it needed ships and cargoes, so the Wadias built ships in Bombay from 1736, Parsi merchants traded opium and Parsi and Gujarati merchants exported raw cotton.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">What the Company lacked, and who supplied it</div><div style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:6px;font-size:14px\"><div style=\"padding:9px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-2);font-size:13px\">Lacked: language, local geography, social ties</span><div style=\"color:var(--ink-3);margin:4px 0\">↓</div><b>Intermediaries and brokers</b><br><span style=\"color:var(--ink-2);font-size:13px\">Indian merchants between Company and local people</span></div><div style=\"padding:9px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-2);font-size:13px\">Lacked: money for trade and war</span><div style=\"color:var(--ink-3);margin:4px 0\">↓</div><b>Financiers and bankers</b><br><span style=\"color:var(--ink-2);font-size:13px\">House of Jagat Seth: credit lines; Plassey, 1757</span></div><div style=\"padding:9px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-2);font-size:13px\">Needed: ships, cargoes, the China trade</span><div style=\"color:var(--ink-3);margin:4px 0\">↓</div><b>Shipping and the China trade</b><br><span style=\"color:var(--ink-2);font-size:13px\">Wadia shipbuilding, Bombay, 1736 · Parsi opium · Parsi and Gujarati raw cotton</span></div></div><div style=\"text-align:center;color:var(--ink-3);margin:6px 0\">↓</div><div style=\"padding:9px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-size:14px;text-align:center\"><b>Indian entrepreneurs in Company India, 1700s–1813</b></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each role filled a gap the Company could not fill itself.</figcaption></figure><!--/viz:ebh-indian-entrepreneur-roles-->"
+    },
+    {
+     "t": "Overseas trade after 1813: the big picture",
+     "src": "L#30",
+     "h": "\n<div class=\"def\"><b>From the lecture (L#30):</b> in his numbering this is <b>Module 5, Lecture 23</b>, the second lecture of Module 5. It covers <b>1813 to the 1850s</b>: first the overseas trade at the <b>macro</b> level (which goods, how much), then, from the next lecture, the <b>micro</b> level: the agency houses and the people behind them, and Indian entrepreneurs' entry into manufacturing. He gave no quiz or exam details.</div>\n<h4>Why 1813, and why stop in the 1850s</h4>\n<ul>\n <li>The <strong>Charter Act of 1813</strong> ended the Company's India trade monopoly (L#28). He gave <strong>two reasons</strong>: the <strong>Industrial Revolution</strong>, then in full swing in Britain, and <strong>wars between European powers</strong>, which were shrinking the markets open to British merchants.</li>\n <li>The period ends with the <strong>First War of Independence of 1857</strong>. After it, control passed from the East India Company to the <strong>British government</strong>, which governed India and its trade directly; the Company's role became minimal.</li>\n</ul>\n<h4>How India's place in the world economy changed</h4>\n<ul>\n <li>India was already part of the global economy and could trade <strong>independently</strong> with any country. Under colonial rule its trade came to be shaped by <strong>policies made in Britain</strong>, not by people governing in India.</li>\n <li>Most overseas trade ran with <strong>Britain</strong> (he meant the United Kingdom) and with <strong>China</strong>, mainly in opium.</li>\n <li><strong>Imports grew faster than exports</strong>, from 1834, the first year with figures, to 1858. Imports rose about <strong>five-fold</strong>, from <strong>₹4.26 crore to ₹21.72 crore</strong>; exports rose about <strong>3.8 times</strong>, from <strong>₹7.9 crore to ₹30 crore</strong> (his slide rounded it to four times). Exports stayed the larger figure throughout. He read the gap as a sign of <strong>value being extracted</strong> from India.</li>\n <li>India became a <strong>source of raw materials</strong>, above all raw cotton for Britain's mills, the period when steam engines and big factories were spreading and Manchester, \"Cottonopolis\", was growing fast.</li>\n <li><strong>No modern factories yet.</strong> Traditional manufacturing existed, but modern factories in India appear only at the very end of the period, around the 1850s. Manufactured goods were largely <strong>made abroad and imported</strong>, which helps explain the fast-growing import bill.</li>\n</ul>\n<div class=\"warnbox\"><b>Check these against earlier lectures.</b> He put Manchester at about <b>22,000 people in the 1760s and 3–4 lakh by the 1850s</b>, \"almost 20 times\". L#16 gave <b>20,000 (1771) to about 300,000 (1851)</b>, a 15-fold rise: use L#16's figures. He also called China, or parts of it, a \"British colony\"; China was never a British colony, though Britain took <b>Hong Kong</b> in 1842 after the First Opium War.</div>\n<!--viz:ebh-india-trade-1834-1858--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Grouped bar chart in crore rupees. 1834: exports 7.9, imports 4.26. 1858: exports 30, imports 21.72. Exports grew about 3.8 times, imports about 5.1 times.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">India's exports and imports, 1834 and 1858</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 214\" role=\"img\" aria-label=\"Bar chart: exports rose from 7.9 to 30 crore rupees and imports from 4.26 to 21.72 crore rupees between 1834 and 1858.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><rect x=\"20\" y=\"10\" width=\"14\" height=\"14\" style=\"fill:var(--blue-soft);stroke:var(--blue)\"/><text x=\"40\" y=\"22\" style=\"fill:var(--ink-2);font-size:13px\">Exports</text><rect x=\"110\" y=\"10\" width=\"14\" height=\"14\" style=\"fill:var(--clay-soft);stroke:var(--clay)\"/><text x=\"130\" y=\"22\" style=\"fill:var(--ink-2);font-size:13px\">Imports</text><rect x=\"75\" y=\"143.1\" width=\"44\" height=\"36.9\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"97\" y=\"137.1\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700;font-family:var(--mono)\">7.9</text><rect x=\"125\" y=\"160.1\" width=\"44\" height=\"19.9\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"147\" y=\"154.1\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700;font-family:var(--mono)\">4.26</text><text x=\"122\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">1834</text><rect x=\"225\" y=\"40.0\" width=\"44\" height=\"140.0\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"247\" y=\"34.0\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700;font-family:var(--mono)\">30</text><rect x=\"275\" y=\"78.6\" width=\"44\" height=\"101.4\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"297\" y=\"72.6\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700;font-family:var(--mono)\">21.72</text><text x=\"272\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">1858</text><path d=\"M60,180 L330,180\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"385\" y=\"104\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:14px;font-weight:700\">exports ×3.8</text><text x=\"385\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--clay);font-size:14px;font-weight:700\">imports ×5.1</text><text x=\"385\" y=\"152\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">₹ crore</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Exports stayed larger, but imports grew faster: the lecture's sign of value flowing out of India.</figcaption></figure><!--/viz:ebh-india-trade-1834-1858-->"
+    },
+    {
+     "t": "Indigo, opium and raw cotton: export shares, 1828–1858",
+     "src": "L#30",
+     "h": "\n<p style=\"font-size:14.5px\">The lecture tracked the share of India's export value taken by three commodities. Tea is left out: it became important only later in the 1800s. Values marked \"about\" were given in speech, not on the slide.</p>\n<div class=\"scroller\"><table><thead><tr><th>Year</th><th>Indigo</th><th>Opium</th><th>Raw cotton</th></tr></thead><tbody><tr><td>1828–29</td><td style=\"background:var(--blue-soft)\">27%</td><td>17%</td><td>15%</td></tr><tr><td>1834–35</td><td style=\"background:var(--bad-soft)\">15%</td><td>25%</td><td>21%</td></tr><tr><td>1839–40</td><td>26%</td><td style=\"background:var(--bad-soft)\">10%</td><td>about 20%</td></tr><tr><td>1850–51</td><td>10%</td><td style=\"background:var(--blue-soft)\">30% or more</td><td>about 12%</td></tr><tr><td>1857–58</td><td>6.1%</td><td>not given</td><td>about 15%</td></tr></tbody></table></div>\n<h4>Indigo: boom, crash, slow fade</h4>\n<ul>\n <li><strong>27% in 1828–29</strong>, over a quarter of all exports, at the peak of a boom. Indigo was a dye, so it fed the textile industry.</li>\n <li>High prices led agency houses to contract many farmers in <strong>Bihar and Bengal</strong> to grow it in the 1820s and 1830s. <strong>Supply outran demand</strong>, prices crashed, and the share fell to <strong>15% in 1834–35</strong>. Many agency houses went bankrupt.</li>\n <li>A brief rebound to <strong>26% in 1839–40</strong>: during the First Opium War, he suggested, traders switched from opium to indigo to <strong>hedge their risk</strong>. Then it sank: <strong>10% (1850–51)</strong>, <strong>6.1% (1857–58)</strong>.</li>\n</ul>\n<h4>Opium: the leader by 1850</h4>\n<ul>\n <li>Up from <strong>17% to 25%</strong> by 1834–35, then down to <strong>10%</strong> during the <strong>First Opium War (1839–1842)</strong>, then up past its old high to <strong>30% in 1850–51</strong>, perhaps 33–34%: about <strong>a third</strong> of all exports.</li>\n <li>It went mainly to <strong>China</strong>. In return China's refined <strong>tea</strong> went to Britain: opium paid for Britain's tea.</li>\n <li>Bengal and Bihar dominated indigo and opium, but opium also built <strong>Bombay</strong>: with the Wadias' shipbuilding (L#28), the opium trade made Bombay a <strong>commercial capital</strong> in the 1800s.</li>\n</ul>\n<h4>Raw cotton: steady</h4>\n<ul>\n <li>About <strong>15%</strong> at the start and the end, with a rise to <strong>21%</strong> in 1834–35 and a dip to about 12% in 1850–51. It was the raw material of Britain's cotton mills.</li>\n <li>Indian raw cotton exports jumped later, when the <strong>American Civil War</strong> cut Lancashire's US supply (L#31).</li>\n</ul>\n<div class=\"def\"><b>The big picture:</b> in 1850–51, opium (about 30%), raw cotton (about 12%) and indigo (about 10%) made up <b>roughly half</b> of India's exports, and all three were <b>unprocessed</b>. India was becoming a <b>supplier of raw materials</b>: cotton and indigo for textiles abroad, and opium to pay for Britain's tea.</div>\n<div class=\"warnbox\"><b>Two slips in the reasons he gave.</b> For the 1834–35 cotton peak he suggested the <b>Crimean War</b>, but that war was fought in <b>1853–56</b>, so it cannot explain 1834–35; he offered it only as a guess about disrupted routes. He also said the US cotton disruption came from the \"American Revolution\" in the 1860s–70s; he meant the <b>American Civil War, 1861–65</b>, as L#31 says.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: the textbook (Roy, Economic History of India, ch. 2) gives 1850 export shares of opium 30%, raw cotton 19% and indigo 11%: the same order, but a larger cotton share than the lecture's 12%.</p>\n<!--viz:ebh-export-shares-1828-1858--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of export shares. Indigo: 27% in 1828–29, 15% in 1834–35, 26% in 1839–40, 10% in 1850–51, 6.1% in 1857–58. Opium: 17%, 25%, 10%, 30% or more, not given. Raw cotton: 15%, 21%, about 20%, about 12%, about 15%.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Three raw exports: share of India's export value</div><div class=\"scroller\" style=\"font-size:14px\"><table><thead><tr><th>Year</th><th>Indigo</th><th>Opium</th><th>Raw cotton</th></tr></thead><tbody><tr><td>1828–29</td><td style=\"background:var(--blue-soft)\">27%</td><td>17%</td><td>15%</td></tr><tr><td>1834–35</td><td style=\"background:var(--bad-soft)\">15%</td><td>25%</td><td>21%</td></tr><tr><td>1839–40</td><td>26%</td><td style=\"background:var(--bad-soft)\">10%</td><td>about 20%</td></tr><tr><td>1850–51</td><td>10%</td><td style=\"background:var(--blue-soft)\">30% or more</td><td>about 12%</td></tr><tr><td>1857–58</td><td>6.1%</td><td>not given</td><td>about 15%</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Indigo's peak and crash, opium's dip in the Opium War and climb to a third, and cotton holding steady.</figcaption></figure><!--/viz:ebh-export-shares-1828-1858-->"
+    },
+    {
+     "t": "Agency houses after 1813",
+     "src": "L#30",
+     "h": "\n<div class=\"def\"><b>Agency houses</b>: trading companies that handled the <b>import and export</b> of goods such as opium, raw cotton, indigo, silk, spices and British textiles. Most were <b>European-managed</b>, set up after 1813 by <b>descendants of British military officers</b> or by British settlers in India.</div>\n<ul>\n <li><strong>Why after 1813.</strong> Once the monopoly ended, British merchants were free to trade with India, and the families of officers who had settled here went into business.</li>\n <li><strong>Examples.</strong> <strong>Palmer &amp; Co.</strong> and <strong>Alexander &amp; Co.</strong>, founded by descendants of the British military; <strong>Carr, Tagore &amp; Co.</strong>, an Indian entrepreneur working with British partners, mainly in indigo (more in L#31).</li>\n <li><strong>Boom and bust.</strong> They multiplied in the <strong>1820s and 1830s</strong> while indigo prices and demand were high, sustaining both firms and the farmers they contracted. The <strong>1834–35 crash</strong> bankrupted many, especially those set up by military descendants. Their collapse left <strong>space for new firms</strong>, many with Indian partners, especially after the 1830s.</li>\n <li><strong>More than trade.</strong> Some looked further ahead: Carr, Tagore &amp; Co. owned coal mines in Bengal and Bihar and planned a <strong>railway</strong> to carry the coal to the port of <strong>Calcutta</strong>, for shipment on to industrial towns.</li>\n</ul>\n<div class=\"warnbox\"><b>Textbook vs lecture on when agency houses began.</b> The lecture dates them from <b>after 1813</b>. Roy's chapter (ehi ch. 2) says European merchants and former Company employees were already setting up licensed agency houses in Calcutta by the <b>end of the 1700s</b>, and that the early-1830s crash pushed survivors to rely on Indian partners. For a quiz, use the lecture; both agree on the 1830s crash.</div>\n<!--viz:ebh-indigo-boom-bust--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: 1813 monopoly ends, agency houses such as Palmer and Alexander contract indigo farmers in Bihar and Bengal, a boom in 1828–29 with indigo at 27% of exports, oversupply, a crash in 1834–35 with the share at 15% and many houses bankrupt (highlighted), then new firms with Indian partners such as Carr, Tagore and Co.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The indigo boom and the agency houses</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>1813</b><br><span style=\"color:var(--ink-2);font-size:13px\">monopoly ends; British merchants free to trade</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Agency houses</b><br><span style=\"color:var(--ink-2);font-size:13px\">Palmer, Alexander: contract Bihar and Bengal farmers</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>1828–29 boom</b><br><span style=\"color:var(--ink-2);font-size:13px\">indigo = 27% of exports</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Oversupply</b><br><span style=\"color:var(--ink-2);font-size:13px\">supply outruns demand</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>1834–35 crash</b><br><span style=\"color:var(--ink-2);font-size:13px\">share 15%; many houses bankrupt</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>New firms</b><br><span style=\"color:var(--ink-2);font-size:13px\">Indian partners, e.g. Carr, Tagore &amp; Co., 1834</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">High prices drew in too many growers; the crash that followed cleared the field for new, partly Indian firms.</figcaption></figure><!--/viz:ebh-indigo-boom-bust-->"
+    },
+    {
+     "t": "Indigo houses: Palmer & Co. and Carr, Tagore & Co.",
+     "src": "L#31",
+     "h": "\n<div class=\"def\"><b>From the lecture (L#31):</b> in his numbering this is <b>Module 5, Lecture 24</b>. It covers the agency houses and Indian entrepreneurs of <b>1813–1850s</b> (indigo, then opium) and the first modern Indian industries of the <b>1850s–1900s</b>, and stops before 1914. He said the next lecture takes up the <b>World Wars' impact on Indian industry</b> and the link between Indian business and the <b>Swadeshi and nationalist movement</b>. He gave no quiz or exam details.</div>\n<p style=\"font-size:14.5px\">L#30's export table is the backdrop: opium rose past 30% of exports by 1850–51, indigo fell from 27% to 6.1%, and raw cotton held at about 12–15%. In the east, the Company still controlled the opium and indigo trade of Bengal and Bihar; on the west coast its grip was weaker, which is where many Indian traders rose.</p>\n<h4>Palmer &amp; Co., the \"Indigo King of Bengal\"</h4>\n<ul>\n <li>Founded after 1813, in the <strong>1810s–1820s</strong> (his dating), by <strong>John Palmer</strong>, son of <strong>General William Palmer</strong>, a senior officer close to <strong>Warren Hastings</strong>, the first Governor-General of Bengal (L#28; the recording says \"William Hastings\").</li>\n <li>William Palmer married twice: an English wife (John's mother) and then a woman from an <strong>Indian royal family</strong>. Those links gave the family access to <strong>capital, resources and the regulators</strong> who governed trade.</li>\n <li>In <strong>1829</strong> the firm exported <strong>over 16% of all indigo produced in India</strong>. With indigo about a quarter of all exports, his rough sum was a quarter × a fifth ≈ <strong>one-twentieth, about 5%, of India's entire exports</strong> through one firm. (With 16% and 27% the figure is nearer 4%.)</li>\n <li>It had <strong>no Indian partner</strong> at the top: John Palmer was born and raised in India, but of British parents.</li>\n <li>It went <strong>bankrupt</strong> when indigo prices crashed in the <strong>1830s</strong>. Indigo never regained its pre-1830s share, but it stayed in double digits until 1850–51, so there was still room for new indigo firms after 1834.</li>\n</ul>\n<h4>Carr, Tagore &amp; Co. (1834): an Indian at the top</h4>\n<ul>\n <li>Founded in <strong>1834</strong> by <strong>Dwarkanath Tagore</strong>, grandfather of Rabindranath Tagore, and <strong>William Carr</strong>, a Calcutta indigo trader. Unlike Palmer &amp; Co. and Alexander &amp; Co., it had an Indian entrepreneur at the <strong>highest level</strong>.</li>\n <li>It managed <strong>indigo factories</strong> and traded indigo (sometimes cotton), then moved into <strong>coal</strong>.</li>\n <li><strong>Raniganj coal mines.</strong> Taken over from an English owner, run at a loss before, and made <strong>profitable</strong>.</li>\n <li><strong>Bengal Coal Mines, 1843</strong>, nine years after the firm began: formed when it bought a competitor's mine (Jeremiah Homfray's) and joined it to its own, closing the bought mine, perhaps as unprofitable.</li>\n <li>He said today's <strong>Bengal Coal Company Limited</strong> traces its origin to it, a history of nearly 200 years.</li>\n</ul>\n<div class=\"def\"><b>His two points:</b> Indian entrepreneurs were entering colonial business at the <b>top</b>, as owners and senior managers, not just as labourers or small traders; and they <b>diversified</b>, here from indigo into coal mining.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Palmer &amp; Co. failed in 1830, the first of the great Calcutta houses to fall; others followed by 1834. India's coal mines, the Bengal Coal Company's included, were nationalised in the early 1970s and are now part of Coal India, so treat \"still in existence\" with care. Roy's textbook chapter (ehi ch. 2) adds that Dwarkanath's interests also took in tea, salt, steamboats and the Union Bank, which collapsed in 1846–47.</p>\n"
+    },
+    {
+     "t": "Opium from the west coast: Jamsetjee Jejeebhoy",
+     "src": "L#31",
+     "h": "\n<p style=\"font-size:14.5px\">The opium trade had two sources. <strong>Bengal and Bihar</strong> opium was controlled by the <strong>East India Company</strong>. <strong>Malwa</strong> opium, grown in the west in parts of present-day <strong>Rajasthan and Madhya Pradesh</strong>, went out through western ports, <strong>Bombay</strong> and <strong>Daman</strong>, where the Company's control was weaker. Daman (with Diu) was held by another colonial power, Portugal, not Britain. Agency houses on the west coast, especially in Bombay, handled most of it.</p>\n<h4>Sir Jamsetjee Jejeebhoy</h4>\n<ul>\n <li>A prominent <strong>Parsi</strong> entrepreneur, born in the <strong>1780s</strong>.</li>\n <li>Made <strong>four or five voyages to China</strong>, from <strong>1799 to about 1805–06</strong>. On one of the last, his British ship was captured in fighting between the <strong>British and French</strong>; he was taken to <strong>South Africa</strong> and needed about four months to get home. The voyages built his <strong>relationships with traders in China</strong>, the base of his later business.</li>\n <li>Bought his first <strong>ship in 1814</strong>, then five or six more over the next few years, to carry opium to China.</li>\n <li>His firm, <strong>Jamsetjee Jejeebhoy &amp; Co.</strong>, traded opium and also raw cotton.</li>\n <li>Its big partner was <strong>Jardine, Matheson &amp; Co.</strong>, which in the 1800s handled about <strong>a third of all the opium trade in China</strong>; a version of the firm still exists. By the <strong>mid-1840s</strong>, about <strong>a third of the opium stored in Jardine Matheson's China warehouses</strong> was Jejeebhoy's.</li>\n <li>Britain gave him <strong>honours and medals</strong>, hence the \"Sir\", for his part in a trade that paid for Britain's tea.</li>\n</ul>\n<h4>The trade triangle</h4>\n<p style=\"font-size:14.5px\">Opium (and some cotton) went from India to China, tea went from China to Britain, and British manufactured goods came to India, as L#30's rising import bill showed.</p>\n<ul>\n <li><strong>The ethics.</strong> He stressed that the opium trade looks deeply unethical today: Chinese society suffered greatly from opium use. Yet several of India's big business houses, still in existence, had roots in it; the <strong>Tatas</strong> too were in the opium trade at one point, on a smaller scale and later.</li>\n</ul>\n<div class=\"warnbox\"><b>Names to get right.</b> The recording's \"Jamshed Gigi Bhai\" and the LMS summary's \"Gaikwad\" are <b>Jamsetjee Jejeebhoy</b> (1783–1859). He is not <b>Jamsetji Nusserwanji Tata</b>, founder of the Tata businesses (next topic). Jardine, Matheson &amp; Co. was a <b>British</b> (Scottish-founded) trading house operating in China, not a Chinese firm, though the lecture listed it among \"Chinese traders\".</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Jejeebhoy was knighted in 1842 and made a baronet in 1857. Jardine, Matheson &amp; Co. was founded at Canton in 1832; William Jardine had been ship's surgeon on the vessel captured with Jejeebhoy in 1805, which began their long partnership.</p>\n<!--viz:ebh-opium-tea-triangle--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Triangle diagram. An arrow from India to China is labelled opium, some raw cotton; an arrow from China to Britain is labelled tea; an arrow from Britain to India is labelled manufactured goods. India is highlighted.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The India–China–Britain trade triangle</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 226\" role=\"img\" aria-label=\"Triangle of trade: opium and some raw cotton from India to China, tea from China to Britain, manufactured goods from Britain to India.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M130,180 L300,180\" style=\"stroke:var(--blue);stroke-width:2;fill:none\"/><path d=\"M300,175 L310,180 L300,185 Z\" style=\"fill:var(--blue)\"/><text x=\"220\" y=\"207\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">opium, some raw cotton</text><path d=\"M350,162 L268.4,63.7\" style=\"stroke:var(--ink-3);stroke-width:2;fill:none\"/><path d=\"M262,56 L272.2,60.5 L264.6,66.9 Z\" style=\"fill:var(--ink-3)\"/><text x=\"318\" y=\"98\" style=\"fill:var(--ink-2);font-size:13px\">tea</text><path d=\"M178,56 L96.4,154.3\" style=\"stroke:var(--ink-3);stroke-width:2;fill:none\"/><path d=\"M90,162 L100.2,157.5 L92.6,151.1 Z\" style=\"fill:var(--ink-3)\"/><text x=\"118\" y=\"88\" text-anchor=\"end\" style=\"fill:var(--ink-2);font-size:13px\">manufactured</text><text x=\"118\" y=\"104\" text-anchor=\"end\" style=\"fill:var(--ink-2);font-size:13px\">goods</text><rect x=\"172\" y=\"21\" width=\"96\" height=\"34\" rx=\"5\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"220\" y=\"43\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">Britain</text><rect x=\"32\" y=\"163\" width=\"96\" height=\"34\" rx=\"5\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"80\" y=\"185\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">India</text><rect x=\"312\" y=\"163\" width=\"96\" height=\"34\" rx=\"5\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"360\" y=\"185\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">China</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Opium sold in China paid for the tea Britain wanted; India grew the opium and bought British goods.</figcaption></figure><!--/viz:ebh-opium-tea-triangle-->"
+    },
+    {
+     "t": "From trade to factories, 1850s–1900s",
+     "src": "L#31",
+     "h": "\n<p style=\"font-size:14.5px\">He splits colonial-era Indian enterprise into <strong>two phases</strong>: <strong>1813–1850s</strong>, trade (indigo, opium, raw cotton), and <strong>1850s–1900s</strong>, the first <strong>modern industries</strong>. The line is <strong>1857</strong>.</p>\n<h4>Why manufacturing took off after the 1850s</h4>\n<ul>\n <li><strong>1857, the First War of Independence.</strong> It did not win independence, but it planted <strong>patriotism</strong> in the masses and in entrepreneurs: independence had to be economic as well as political, and many later firms supported the freedom struggle.</li>\n <li><strong>Labour reform in Britain</strong> (L#20, L#24): child-labour limits in the 1830s, the Mines Act of 1842 and the <strong>Ten Hours Act of 1847</strong> made British manufacturing dearer. He suggested this may have pushed some manufacturing out of Britain towards colonies such as India.</li>\n <li><strong>The American Civil War (1861–65)</strong> broke the supply of US cotton to <strong>Lancashire and Manchester</strong>. Indian <strong>raw cotton exports rose</strong>, and Indian cotton gained importance, raw and manufactured.</li>\n</ul>\n<h4>The first industries</h4>\n<ul>\n <li><strong>Cotton textiles first.</strong> The first <strong>cotton spinning and weaving company</strong> was set up in <strong>1854</strong> with new machinery and <strong>17,000–20,000 spindles</strong>; it began production in <strong>1856</strong>.</li>\n <li><strong>Tata.</strong> <strong>Jamsetji Nusserwanji Tata</strong> bought a <strong>bankrupt oil mill</strong> in Bombay and turned it into a cotton mill, the <strong>Alexandra Mill (1869)</strong>; then the <strong>Empress Mill</strong> at Nagpur (1877) and the <strong>Swadeshi Mill</strong> in Bombay (1887 in the lecture). Three mills in under two decades made him a major cotton-textile player. He did not build \"the Tata group\" as such, but he started its business and laid the blueprint for <strong>TISCO</strong>, the later steel company.</li>\n <li><strong>Godrej.</strong> Began in the late 1890s making <strong>high-security locks</strong> under the brand <strong>Anchor</strong>; the Godrej name came later, as the business spread in the early 1900s into <strong>soap</strong> and <strong>steel furniture</strong>, its famous steel <strong>almirah</strong> dating from the 1920s–30s.</li>\n <li><strong>Walchand Hirachand.</strong> His group began in <strong>1903</strong> with <strong>railway construction contracts</strong>, then moved into manufacturing and agriculture.</li>\n</ul>\n<div class=\"def\"><b>The ladder of Indian enterprise</b> (his summary): trade in indigo, opium and raw cotton → <b>coal mines</b> (Carr, Tagore &amp; Co.) → <b>cotton textiles</b> (from 1854; Tata) → <b>locks, soap and steel almirahs</b> (Godrej) → <b>railway construction, manufacturing and agriculture</b> (Walchand). Tata and Godrej are still major groups.</div>\n<ul>\n <li><strong>Where it stops.</strong> The account ends before <strong>1914</strong>, when the World Wars changed things. Gandhi's first major campaign, <strong>Champaran (1917)</strong>, and the full link between business and the nationalist movement come in later lectures; before 1914 that link existed but was secondary.</li>\n</ul>\n<div class=\"warnbox\"><b>Two dates in the LMS summary.</b> It puts the Empress Mill in 1887; the lecture's recap gives the Tata mills as <b>1869</b> and <b>1877</b>, and the Empress Mill opened at Nagpur on 1 January <b>1877</b>. 1887 is the lecture's date for the Swadeshi Mill. Context beyond the lecture: the 1854 company was the Bombay Spinning and Weaving Company of Cowasji Nanabhai Davar; Tata Iron and Steel was founded in 1907, after Jamsetji's death in 1904.</div>\n<!--viz:ebh-indian-enterprise-1814-1903--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Timeline: 1814 Jejeebhoy's first ship; 1829 Palmer and Co. exports over 16% of India's indigo; 1834 Carr, Tagore and Co. and Raniganj coal (highlighted); 1843 Bengal Coal Mines; mid-1840s Jejeebhoy holds a third of Jardine Matheson's opium stock; 1854 first cotton spinning and weaving company (highlighted), production 1856; 1857 First War of Independence; 1869 Alexandra Mill; 1877 Empress Mill, with the Swadeshi Mill in 1887; late 1890s Godrej locks; 1903 Walchand's railway contracts.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Indian enterprise from ships to steel almirahs</div><div style=\"border-left:2px solid var(--rule-2);margin-left:6px;padding-left:16px;font-size:14px\"><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1814</b> · Jamsetjee Jejeebhoy buys his first ship for the China opium trade</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1829</b> · Palmer &amp; Co. exports over 16% of India's indigo; it fails in the 1830s crash</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1834</b> · Carr, Tagore &amp; Co. (Dwarkanath Tagore, William Carr); Raniganj coal</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1843</b> · Bengal Coal Mines formed</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">mid-1840s</b> · Jejeebhoy holds a third of the opium in Jardine Matheson's China warehouses</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1854</b> · First cotton spinning and weaving company; production from 1856</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1857</b> · First War of Independence: the line between trade and industry</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1869</b> · Tata's Alexandra Mill, a bankrupt oil mill converted</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1877</b> · Tata's Empress Mill, Nagpur; Swadeshi Mill, Bombay, 1887</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">late 1890s</b> · Godrej locks, brand Anchor; soap and steel furniture follow</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1903</b> · Walchand Hirachand's railway construction contracts</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Before 1857 Indians made fortunes in trade; after it, in mills, mines and factories.</figcaption></figure><!--/viz:ebh-indian-enterprise-1814-1903-->"
+    },
+    {
+     "t": "Textbook: Transition to Colonialism 1707–1857",
+     "src": "Roy ch2",
+     "h": "<!--viz:ebh-roy-transition-timeline--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Timeline from 1707 to 1860: Aurangzeb's death 1707, Plassey 1757, Pitt's India Act 1784, Permanent Settlement 1793, Charter Act ending the India trade monopoly 1813 (highlighted), ryotwari about 1820, the early-1830s indigo crash and agency houses turning to Indian partners (highlighted), end of the China monopoly 1833, First Opium War 1839–42 and Hong Kong to Britain, Union Bank collapse 1846–47, the 1857 rebellion, and the blue mutiny of 1859–60.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">From trading company to ruler, 1707–1860</div><div style=\"border-left:2px solid var(--rule-2);margin-left:6px;padding-left:16px;font-size:14px\"><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1707</b> · Aurangzeb dies; Mughal power fragments into successor states</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1757</b> · Plassey: the Company begins to rule Bengal</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1784</b> · Pitt's India Act: Board of Control in London</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1793</b> · Permanent Settlement: Bengal zamindars made owners for a fixed revenue</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1813</b> · Charter Act ends the Company's India trade monopoly</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">c. 1820</b> · Ryotwari settlements in the south and west</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">early 1830s</b> · Indigo crash; agency houses turn to Indian partners</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1833</b> · The Company's China trade monopoly ends</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1839–42</b> · First Opium War; Treaty of Nanking, Hong Kong to Britain</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1846–47</b> · Union Bank collapses; Bengali capital drifts into land</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1857</b> · The rebellion; Crown rule follows in 1858</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1859–60</b> · Blue mutiny: peasants refuse to sow indigo</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The highlighted dates are where the chapter meets L#28–31: the end of the monopoly and the 1830s crash.</figcaption></figure><!--/viz:ebh-roy-transition-timeline--><p><strong>European advantages in sea trade</strong> — Europeans combined state navies with merchant firms, used bigger and better-armed ships, and organised trade through joint-stock companies whose identity outlived any one person. Indian shipping was large (a Surat fleet of about a hundred 200–400 tonne vessels) and cheaper to hire, but Indian firms were family-based and Indian states rarely backed their seagoing merchants.<br><em>e.g.</em> Indian ships charged lower freight, yet lost the route to European fleets.</p><p><strong>Changing composition of trade</strong> — After the Napoleonic wars, British tariffs and the power loom eroded Indian cloth exports. Indigo, opium, raw cotton, silk and sugar replaced them, and imports (textiles, metals) rather than bullion now paid for exports. The Company's Indian trade monopoly ended in 1813; its China monopoly lasted until 1833.<br><em>e.g.</em> Cloth was 33% of export value in 1811; by 1850 opium led with about 30%.</p><p><strong>Opium, tea and Indian capital</strong> — The Company ran a state monopsony on Bengal opium and sold it towards China, where it paid for tea purchases that had previously needed silver. The trade, backed by the Opium War and the Treaty of Nanking (1842), enriched Parsi shipowners in Bombay and Calcutta and Marwari traders of Malwa opium, and some Parsi houses later moved their profits into cotton mills.<br><em>e.g.</em> The tea-for-opium exchange balanced the trades of India, Britain and China.</p><p><strong>Agency houses and their limits</strong> — European firms in Calcutta, licensed by the Company, traded opium, indigo, silk and sugar and handled other people's money; this tradition later evolved into the managing agency. A crash in the early 1830s pushed them towards Indian partners such as Dwarkanath Tagore. Roy blames their fragility on expensive money and a weak, unregulated banking system tied to one or two commodity trades.<br><em>e.g.</em> Carr Tagore's interests ran from collieries and tea to steamboats and the Union Bank.</p><p><strong>Deindustrialisation, Roy's assessment</strong> — The fall in handicraft textile production after 1800 is called deindustrialisation. Roy accepts the job loss but argues its welfare effect was uncertain: Bengal lost about 4% of its initial workforce over several decades, part-time spinners lost little income because their time had low alternative value, and cheaper yarn helped weavers and consumers.<br><em>e.g.</em> Iron smelting struggled mainly because charcoal grew costly as forests receded and ore sites were remote.</p>"
+    }
+   ]
+  },
+  {
+   "id": "india-colonial",
+   "title": "Colonial India: economy, state and society, 1757–1947",
+   "tag": "From the textbook",
+   "lede": "",
+   "topics": [
+    {
+     "t": "Textbook: Transition to Colonialism 1707–1857",
+     "src": "Roy ch2",
+     "h": "<p><strong>Two views of the eighteenth century</strong> — One view sees Mughal collapse after 1707 as decline: tax farming, wars, and ruin for merchants tied to imperial finance. Another sees successor states such as Bengal stimulating trade and partnering with bankers. Roy says the contrast is overdrawn: successor states gave merchants room but lacked the fiscal strength to build integrated markets, which the well-protected Company ports then supplied.<br><em>e.g.</em> Merchants migrated into Calcutta in the 1740s to escape Maratha raids on western Bengal.</p><p><strong>Why trade led to empire</strong> — Roy combines two explanations. The Company had 'two personalities': cautious London directors could not stop local employees joining Indian politics for private gain. But power also paid commercially, protecting supply chains of Indian bankers and contractors and removing the need to import silver.<br><em>e.g.</em> Plassey (1757) and the diwani of 1765 gave the Company Bengal's revenues.</p><p><strong>Why the Company won on land</strong> — Its naval strength did not decide the land battles. The Company built a paid standing army financed from a centralised land tax, turning warlord-landlords into demilitarised owners and raising more tax per head. After Pitt's India Act (1784) it also looked like a more credible ally to Indian powers.<br><em>e.g.</em> Successor states relied on feudal lords for soldiers, whose loyalty often failed.</p><p><strong>Law under the Company</strong> — The Company kept religious tradition in property, succession and inheritance law, but imported Western models for commercial law. Disputes with European traders exposed the weakness of informal enforcement, leading to contract, negotiable instruments and company laws soon after Crown rule began in 1858.<br><em>e.g.</em> A uniform Company silver rupee replaced competing currencies from 1835.</p><p><strong>The 1857 mutiny and Indian business</strong> — The rebellion was led by Indian infantry and spread in northern and central India. Merchants and bankers rarely joined it and port cities helped the British. Roy rejects the idea that the post-1858 state became conservative: it passed many laws protecting commercial and peasant property while discouraging rural land transfer.<br><em>e.g.</em> The doctrine of lapse made revolt especially fierce in newly annexed Awadh and Jhansi.</p>"
     }
    ]
   }
@@ -798,6 +889,22 @@ HUB.addCourse({
   },
   {
    "name": "Indian entrepreneurs",
+   "unit": "india-business"
+  },
+  {
+   "name": "Colonial transition",
+   "unit": "india-colonial"
+  },
+  {
+   "name": "Artisans & small industry",
+   "unit": "india-business"
+  },
+  {
+   "name": "Colonial trade & agency houses",
+   "unit": "india-business"
+  },
+  {
+   "name": "Rise of Indian industry",
    "unit": "india-business"
   }
  ],
@@ -1668,6 +1775,167 @@ HUB.addCourse({
    "p": "It means \"banker of the world\". The Mughal emperor gave it to the heads of a Marwari banking family of Murshidabad, whose house lent to the Company and backed it at Plassey.",
    "f": "Jagat Seth = title",
    "lec": 28
+  },
+  {
+   "id": "ebh-t0128",
+   "h": "Roy: the Permanent Settlement made zamindars owners, not the British government",
+   "p": "The 1793 settlement gave zamindars ownership in exchange for a revenue fixed forever. The lecture's table says the British government owned the land and granted it to zamindars. Use the lecture wording for the quiz but know Roy's version.",
+   "f": "1793: ownership for fixed tax",
+   "bk": "Roy ch2"
+  },
+  {
+   "id": "ebh-t0129",
+   "h": "Permanent means the tax was fixed, not that the estate was safe",
+   "p": "A zamindar who defaulted had his estate sold at public auction. The first fifteen years saw a wave of such sales.",
+   "f": "default → auction ('laat')",
+   "bk": "Roy ch2"
+  },
+  {
+   "id": "ebh-t0130",
+   "h": "Ryotwari tax was revisable; Permanent Settlement tax was not",
+   "p": "Ryotwari was a direct contract with the cultivator, renegotiated roughly every 30 years. Only the zamindari settlement fixed the revenue in perpetuity.",
+   "f": "ryot: revisable, zamindar: fixed",
+   "bk": "Roy ch2"
+  },
+  {
+   "id": "ebh-t0131",
+   "h": "Roy does not call deindustrialisation catastrophic",
+   "p": "He accepts job loss (about 4% of Bengal's initial workforce over decades) but argues income loss was smaller and cheaper yarn and cloth benefited weavers and the poor. The nationalist view, following R. C. Dutt, treats it as ruinous.",
+   "f": "real loss, uncertain harm",
+   "bk": "Roy ch2"
+  },
+  {
+   "id": "ebh-t0132",
+   "h": "The Company won its empire on land, not at sea",
+   "p": "Naval power gave it a foothold, but the decisive battles were on land. A paid standing army financed by reformed land tax explains its success.",
+   "f": "army + land tax, not navy",
+   "bk": "Roy ch2"
+  },
+  {
+   "id": "ebh-t0133",
+   "h": "The Bengali retreat into zamindari after 1847 was not just a failure of enterprise",
+   "p": "Roy blames expensive money, a weak unregulated banking system, dependence on one or two commodity trades, and a turn to education, not a get-rich-quick mentality.",
+   "f": "costly capital, not character",
+   "bk": "Roy ch2"
+  },
+  {
+   "id": "ebh-t0134",
+   "h": "Indigo 'planters' did not own plantations",
+   "p": "They advanced money to peasants under contracts fixing the area to be sown. The crop was grown on peasants' own land.",
+   "f": "planters without plantations",
+   "bk": "Roy ch2"
+  },
+  {
+   "id": "ebh-t0135",
+   "h": "Drucker kept planning and organising but replaced command and control with people tasks",
+   "p": "Fayol: plan, organise, command, coordinate, control. Drucker: plan, organise, integrate-motivate-communicate, measure performance, develop people.",
+   "f": "command → motivate",
+   "lec": 29
+  },
+  {
+   "id": "ebh-t0136",
+   "h": "Teamwork is a principle for Fayol but a core task for Drucker",
+   "p": "Teamwork is the last of Fayol's 14 principles. Drucker makes building teams out of individuals a main job of the manager (integrating).",
+   "f": "Fayol principle, Drucker task",
+   "lec": 29
+  },
+  {
+   "id": "ebh-t0137",
+   "h": "Machine = Fayol; social organism = Drucker",
+   "p": "Fayol treats the organisation as a machine and workers as its parts. Drucker treats it as a social organism of knowledge workers with agency.",
+   "f": "machine vs organism",
+   "lec": 29
+  },
+  {
+   "id": "ebh-t0138",
+   "h": "Taylor is the shop floor; Fayol is the top-down view, whatever the slip in L#29",
+   "p": "Once in the recording Fayol was put on the shop floor. L#25 and the rest of L#29 are clear: Taylor worked bottom-up from the worker, Fayol top-down from the CEO's desk.",
+   "f": "Taylor floor, Fayol top",
+   "lec": 29
+  },
+  {
+   "id": "ebh-t0139",
+   "h": "Limited liability: you owe only what is unpaid on your shares",
+   "p": "In the lecture's example, 10 shares at ₹700 with ₹5,000 paid leaves ₹2,000 to pay, whatever the company owes its bank. Your home and savings are safe.",
+   "f": "pay up your shares, no more",
+   "lec": 29
+  },
+  {
+   "id": "ebh-t0140",
+   "h": "Imports grew faster than exports, but India still exported more than it imported",
+   "p": "1834–1858: imports ₹4.26 → 21.72 crore (about 5×), exports ₹7.9 → 30 crore (about 3.8×). The growth rate, not the level, was the lecture's warning sign.",
+   "f": "faster ≠ bigger",
+   "lec": 30
+  },
+  {
+   "id": "ebh-t0141",
+   "h": "Indigo's share fell in 1834–35 because of oversupply, not synthetic dye",
+   "p": "Too many farmers were contracted to grow indigo in the boom, so prices crashed. Synthetic indigo belongs to a much later period and played no part in the lecture's story.",
+   "f": "boom → glut → crash",
+   "lec": 30
+  },
+  {
+   "id": "ebh-t0142",
+   "h": "Opium's share dipped in 1839–40 because of the Opium War, then hit a new high",
+   "p": "25% in 1834–35, 10% in 1839–40 during the First Opium War (1839–42), then about 30%, a third of exports, by 1850–51.",
+   "f": "war dip, then a third",
+   "lec": 30
+  },
+  {
+   "id": "ebh-t0143",
+   "h": "China was not a British colony",
+   "p": "The lecture called China a British colony more than once. China stayed independent; after the First Opium War Britain gained Hong Kong (1842), as Roy's textbook chapter notes. China was the opium market, not a colony.",
+   "f": "China market, Hong Kong ceded",
+   "lec": 30
+  },
+  {
+   "id": "ebh-t0144",
+   "h": "Lecture: agency houses arose after 1813. Roy: already in Calcutta by the late 1700s",
+   "p": "The textbook says licensed European agency houses were trading by the end of the eighteenth century; the lecture ties their spread to the end of the monopoly. Use the lecture for a quiz; both put the crash in the early-to-mid 1830s.",
+   "f": "lecture: after 1813",
+   "lec": 30
+  },
+  {
+   "id": "ebh-t0145",
+   "h": "Two Jamsetjis: Jejeebhoy traded opium; Tata built mills",
+   "p": "Sir Jamsetjee Jejeebhoy (born 1780s) made his fortune in the China opium trade and shipping. Jamsetji Nusserwanji Tata founded the Alexandra Mill in 1869. The LMS summary's \"Gaikwad\" is a mis-hearing of Jejeebhoy.",
+   "f": "Jejeebhoy ships, Tata mills",
+   "lec": 31
+  },
+  {
+   "id": "ebh-t0146",
+   "h": "Dwarkanath Tagore, not Rabindranath, co-founded Carr, Tagore & Co.",
+   "p": "Dwarkanath was Rabindranath's grandfather. He founded the firm with William Carr in 1834.",
+   "f": "grandfather Dwarkanath, 1834",
+   "lec": 31
+  },
+  {
+   "id": "ebh-t0147",
+   "h": "Palmer's patron was Warren Hastings, not \"William Hastings\"",
+   "p": "The recording says William Hastings. General William Palmer served Warren Hastings, first Governor-General of Bengal (1773, L#28).",
+   "f": "Warren, not William",
+   "lec": 31
+  },
+  {
+   "id": "ebh-t0148",
+   "h": "Malwa opium escaped the Company because it left from western ports such as Daman",
+   "p": "The Company controlled Bengal and Bihar opium. Malwa opium went out through Bombay and Daman, and Daman was Portuguese, not British.",
+   "f": "east: Company; west: Malwa",
+   "lec": 31
+  },
+  {
+   "id": "ebh-t0149",
+   "h": "Godrej began with locks, not almirahs",
+   "p": "Late 1890s: high-security locks under the brand Anchor. Soap and steel furniture came in the early 1900s, the steel almirah in the 1920s–30s.",
+   "f": "Anchor locks first",
+   "lec": 31
+  },
+  {
+   "id": "ebh-t0150",
+   "h": "Empress Mill: 1877, not 1887",
+   "p": "The lecture's Tata dates are Alexandra Mill 1869 and Empress Mill, Nagpur, 1877. The LMS summary's 1887 is the lecture's date for the Swadeshi Mill in Bombay.",
+   "f": "1869, 1877, then 1887",
+   "lec": 31
   }
  ],
  "defs": [
@@ -2834,6 +3102,206 @@ HUB.addCourse({
    "term": "House of Jagat Seth",
    "html": "<b>House of Jagat Seth</b>: the Bengal banking house that gave the East India Company huge credit lines for trade and war; Jagat Seth was its head's title.",
    "lec": 28
+  },
+  {
+   "id": "ebh-d0149",
+   "unit": "agrarian",
+   "topic": "Agrarian & land",
+   "term": "Permanent Settlement",
+   "html": "<b>Permanent Settlement</b> (1793, zamindari tenure): ownership of land given to former tax-collecting <b>zamindars</b> in return for a land revenue <b>fixed forever</b>; estates were auctioned if the zamindar defaulted.",
+   "bk": "Roy ch2"
+  },
+  {
+   "id": "ebh-d0150",
+   "unit": "agrarian",
+   "topic": "Agrarian & land",
+   "term": "Ryotwari",
+   "html": "<b>Ryotwari</b>: a direct tax contract between the <b>cultivator (ryot)</b> and the state, revised periodically (roughly every 30 years); common in southern and western India from about 1820.",
+   "bk": "Roy ch2"
+  },
+  {
+   "id": "ebh-d0151",
+   "unit": "agrarian",
+   "topic": "Agrarian & land",
+   "term": "Jotedar",
+   "html": "<b>Jotedar</b>: a rich tenant farmer in Bengal who gained wealth and power as absentee zamindars lost their grip on the countryside.",
+   "bk": "Roy ch2"
+  },
+  {
+   "id": "ebh-d0152",
+   "unit": "india-business",
+   "topic": "Indian entrepreneurs",
+   "term": "Hundi",
+   "html": "<b>Hundi</b>: an Indian bill of exchange used for remittance and credit; Indian banking houses issued and cashed them.",
+   "bk": "Roy ch2"
+  },
+  {
+   "id": "ebh-d0153",
+   "unit": "india-business",
+   "topic": "Indian entrepreneurs",
+   "term": "Pedhi",
+   "html": "<b>Pedhi</b>: a specialised Indian banking house that changed money, dealt in hundis, lent to governments and sometimes took revenue contracts.",
+   "bk": "Roy ch2"
+  },
+  {
+   "id": "ebh-d0154",
+   "unit": "india-business",
+   "topic": "Indian entrepreneurs",
+   "term": "Agency house (Roy) and the managing agency",
+   "html": "<b>Agency house</b>, in Roy's account: a Calcutta trading-and-finance firm that needed a Company <b>licence</b> and also handled other people's money; the later <b>managing agency</b> system grew out of it.",
+   "bk": "Roy ch2"
+  },
+  {
+   "id": "ebh-d0155",
+   "unit": "india-colonial",
+   "topic": "Colonial transition",
+   "term": "Doctrine of lapse",
+   "html": "<b>Doctrine of lapse</b> (1848–56): the British claim to annex a princely state if its ruler governed badly or died without a male heir.",
+   "bk": "Roy ch2"
+  },
+  {
+   "id": "ebh-d0156",
+   "unit": "india-business",
+   "topic": "Artisans & small industry",
+   "term": "Deindustrialisation",
+   "html": "<b>Deindustrialisation</b>: the loss of artisanal industrial employment, especially hand-spinning and weaving, as machine-made imports and lost export markets shrank Indian textile production after 1800.",
+   "bk": "Roy ch2"
+  },
+  {
+   "id": "ebh-d0157",
+   "unit": "india-colonial",
+   "topic": "Colonial transition",
+   "term": "Blue mutiny",
+   "html": "<b>Blue mutiny</b> (1859–60): Bengal peasants' refusal to sow indigo under advance contracts once rice prices outpaced indigo, followed by planters' coercion and court cases.",
+   "bk": "Roy ch2"
+  },
+  {
+   "id": "ebh-d0158",
+   "unit": "mgmt",
+   "topic": "Peter Drucker and modern management",
+   "term": "Peter Drucker",
+   "html": "<b>Peter Drucker</b>: law-trained academic, often called the <b>father of modern management</b>; studied General Motors in the 1940s, taught at New York University 1950–1971 and wrote <b>The Practice of Management</b> (1954).",
+   "lec": 29
+  },
+  {
+   "id": "ebh-d0159",
+   "unit": "mgmt",
+   "topic": "Peter Drucker and modern management",
+   "term": "Drucker's five tasks of management",
+   "html": "<b>Drucker's five tasks</b>: planning; organising; integrating, motivating and communicating; measuring performance; and developing people.",
+   "lec": 29
+  },
+  {
+   "id": "ebh-d0160",
+   "unit": "mgmt",
+   "topic": "Peter Drucker and modern management",
+   "term": "Management by objectives (MBO)",
+   "html": "<b>Management by objectives</b>: setting specific objectives for the organisation and for each individual, then managing and measuring performance against them; it grows out of Drucker's task of measuring performance.",
+   "lec": 29
+  },
+  {
+   "id": "ebh-d0161",
+   "unit": "mgmt",
+   "topic": "Peter Drucker and modern management",
+   "term": "Knowledge worker",
+   "html": "<b>Knowledge worker</b>: Drucker's view of the employee as a thinking person with agency and ideas, who should manage themselves and contribute solutions, not a part of a machine.",
+   "lec": 29
+  },
+  {
+   "id": "ebh-d0162",
+   "unit": "mgmt",
+   "topic": "Peter Drucker and modern management",
+   "term": "Organisation as a social organism",
+   "html": "<b>Social organism</b>: Drucker's picture of the organisation as a living whole driven by human strengths and knowledge, in contrast to Fayol's organisation as a <b>machine</b>.",
+   "lec": 29
+  },
+  {
+   "id": "ebh-d0163",
+   "unit": "india-business",
+   "topic": "Agency houses after 1813",
+   "term": "Agency house",
+   "html": "<b>Agency house</b>: a trading company, mostly European-managed, that handled the import and export of goods such as opium, indigo, raw cotton, silk, spices and British textiles; they multiplied after the 1813 Charter Act.",
+   "lec": 30
+  },
+  {
+   "id": "ebh-d0164",
+   "unit": "india-business",
+   "topic": "Indigo, opium and raw cotton: export shares, 1828–1858",
+   "term": "Indigo",
+   "html": "<b>Indigo</b>: a blue dye for textiles, grown under contract in Bihar and Bengal; 27% of India's exports in 1828–29, but only 6.1% by 1857–58 after a price crash.",
+   "lec": 30
+  },
+  {
+   "id": "ebh-d0165",
+   "unit": "india-business",
+   "topic": "Indigo, opium and raw cotton: export shares, 1828–1858",
+   "term": "Indigo crash (1834–35)",
+   "html": "<b>Indigo crash</b>: the collapse of indigo prices in the mid-1830s after too many farmers were contracted to grow it; indigo's export share fell from 27% to 15% and many agency houses failed.",
+   "lec": 30
+  },
+  {
+   "id": "ebh-d0166",
+   "unit": "india-business",
+   "topic": "Indigo, opium and raw cotton: export shares, 1828–1858",
+   "term": "First Opium War (1839–42)",
+   "html": "<b>First Opium War</b> (1839–1842, in the lecture): war in China over the opium trade; opium's share of India's exports fell to 10% in 1839–40, then recovered to about 30% by 1850–51.",
+   "lec": 30
+  },
+  {
+   "id": "ebh-d0167",
+   "unit": "india-business",
+   "topic": "Indigo, opium and raw cotton: export shares, 1828–1858",
+   "term": "Opium for tea",
+   "html": "<b>Opium for tea</b>: Indian opium went to China, and China's tea went to Britain, so opium paid for Britain's tea; opium was about a third of India's exports by 1850–51.",
+   "lec": 30
+  },
+  {
+   "id": "ebh-d0168",
+   "unit": "india-business",
+   "topic": "Indigo houses: Palmer & Co. and Carr, Tagore & Co.",
+   "term": "Palmer & Co.",
+   "html": "<b>Palmer &amp; Co.</b>: John Palmer's Calcutta agency house, the \"Indigo King of Bengal\", which exported over 16% of India's indigo in 1829 and went bankrupt in the indigo crash of the 1830s.",
+   "lec": 31
+  },
+  {
+   "id": "ebh-d0169",
+   "unit": "india-business",
+   "topic": "Indigo houses: Palmer & Co. and Carr, Tagore & Co.",
+   "term": "Carr, Tagore & Co.",
+   "html": "<b>Carr, Tagore &amp; Co.</b> (1834): agency house of Dwarkanath Tagore and William Carr; traded indigo, ran the Raniganj coal mines and formed Bengal Coal Mines in 1843.",
+   "lec": 31
+  },
+  {
+   "id": "ebh-d0170",
+   "unit": "india-business",
+   "topic": "Opium from the west coast: Jamsetjee Jejeebhoy",
+   "term": "Malwa opium",
+   "html": "<b>Malwa opium</b>: opium grown in western India (parts of today's Rajasthan and Madhya Pradesh) and shipped from Bombay and Daman, outside the Company's Bengal opium control.",
+   "lec": 31
+  },
+  {
+   "id": "ebh-d0171",
+   "unit": "india-business",
+   "topic": "Opium from the west coast: Jamsetjee Jejeebhoy",
+   "term": "Jardine, Matheson & Co.",
+   "html": "<b>Jardine, Matheson &amp; Co.</b>: the trading house that handled about a third of China's opium trade in the 1800s; Jamsetjee Jejeebhoy's firm held about a third of its stored opium by the mid-1840s.",
+   "lec": 31
+  },
+  {
+   "id": "ebh-d0172",
+   "unit": "india-business",
+   "topic": "Opium from the west coast: Jamsetjee Jejeebhoy",
+   "term": "Trade triangle (India–China–Britain)",
+   "html": "<b>Trade triangle</b>: Indian opium to China, Chinese tea to Britain, British manufactured goods to India.",
+   "lec": 31
+  },
+  {
+   "id": "ebh-d0173",
+   "unit": "india-business",
+   "topic": "From trade to factories, 1850s–1900s",
+   "term": "Alexandra Mill",
+   "html": "<b>Alexandra Mill</b> (1869): Jamsetji Nusserwanji Tata's first cotton mill, a bankrupt Bombay oil mill converted to cotton; followed by the Empress Mill (Nagpur, 1877).",
+   "lec": 31
   }
  ],
  "questions": [
@@ -10769,6 +11237,1281 @@ HUB.addCourse({
    "w": "Docks and shipyards turned Bombay into a key port. Calcutta, not Bombay, was the seat of the Governor-General of Bengal.",
    "lec": 28,
    "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0481",
+   "topic": "Colonial transition",
+   "q": "Which body did Parliament create in 1784 to oversee the East India Company's rule in India?",
+   "c": [
+    "The Board of Control",
+    "The Court of Directors",
+    "The Supreme Court of Calcutta",
+    "The Mayor's Court"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Pitt's India Act (1784) created the Board of Control to give Parliament oversight. The Court of Directors was the Company's own London management, which is why it is the tempting wrong answer.",
+   "bk": "Roy ch2",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0482",
+   "topic": "Colonial transition",
+   "q": "According to Roy, what best explains why the Company beat Indian rivals on the battlefield?",
+   "c": [
+    "Its navy, since the decisive battles were fought at sea",
+    "A paid standing army financed by a centralised, reformed land tax, plus credibility as an ally",
+    "Imported British troops paid entirely from British revenue",
+    "A Mughal decree ordering Indian states to submit"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Roy stresses that the empire was won on land with resources raised from land: a standing army, land-tax reform that demilitarised landlords, and greater credibility after 1784. The navy mattered for trade, not for these battles; British regiments were paid from Indian revenue after 1784.",
+   "bk": "Roy ch2",
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0483",
+   "topic": "Colonial transition",
+   "q": "The 'two personalities' explanation of how the Company became a state refers to:",
+   "c": [
+    "The Mughal emperor and the nawab sharing power in Bengal",
+    "Hindu and Muslim law operating side by side",
+    "Cautious London directors who could not stop local employees joining Indian politics for private gain",
+    "The British and French companies fighting in the Carnatic"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The London directors were rich merchants who preferred to avoid wars; small traders, soldiers and sailors running the branches knew local politics and pursued private gain. Roy adds that power also had commercial value, so the story is not purely political.",
+   "bk": "Roy ch2",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0484",
+   "topic": "Indian entrepreneurs",
+   "q": "Which of these was NOT one of the European advantages in Indian Ocean trade that Roy identifies?",
+   "c": [
+    "Partnership between the state navy and merchant firms",
+    "Bigger, sturdier, better-armed ships",
+    "Joint-stock companies with an identity independent of any person",
+    "Lower freight rates than Indian shipowners charged"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Indian ships actually charged lower freight rates. The European edge came from naval backing, ship size and armament, and joint-stock organisation versus family firms.",
+   "bk": "Roy ch2",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0485",
+   "topic": "Agrarian & land",
+   "q": "Under the Permanent Settlement of 1793, who received proprietary rights to land in Bengal, and on what terms?",
+   "c": [
+    "The British Crown, which leased land to cultivators yearly",
+    "Cultivators, paying a tax revised every 30 years",
+    "Village communities, collectively liable for revenue",
+    "The former tax-collecting zamindars, in return for a revenue fixed forever"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Roy says ownership went to the zamindars for a revenue fixed in perpetuity. Revisable contracts with cultivators describe ryotwari. Note the lecture table states that the British government owned the land; use the lecture wording if the quiz asks it in that form.",
+   "bk": "Roy ch2",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0486",
+   "topic": "Agrarian & land",
+   "q": "A Bengal zamindar in 1800 fails to pay his fixed revenue. What happens under the Company's rules?",
+   "c": [
+    "The estate is sold at a mandatory public auction",
+    "The revenue is reduced to what he can pay",
+    "Local officials may punish him physically",
+    "Nothing, because the settlement is permanent"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The Company made public sale compulsory on default and removed local officials' customary power to punish defaulters. 'Permanent' referred to the tax amount, not protection of the holder.",
+   "bk": "Roy ch2",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0487",
+   "topic": "Agrarian & land",
+   "q": "Why did Ricardian rent theory make the zamindar a 'fit target' of taxation for reformers such as James Mill?",
+   "c": [
+    "Rent was an unearned surplus from land scarcity, so taxing it would not reduce the incentive to farm",
+    "Zamindars were the most productive cultivators",
+    "Rent was the reward for capital invested in irrigation",
+    "Ricardo argued that land should be nationalised"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Ricardo saw rent as the fertility premium captured by landowners, unearned and so taxable without harming effort; tax should fall on net produce. Rent as a return on capital is the opposite of the theory.",
+   "bk": "Roy ch2",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0488",
+   "topic": "Agrarian & land",
+   "q": "Which statement about the ryotwari settlement is correct?",
+   "c": [
+    "It fixed the land tax forever, like the Permanent Settlement",
+    "It was introduced first in Bengal in 1793",
+    "It was a direct contract between cultivator and state, renegotiated after a set period",
+    "It gave land to coparcenary village bodies only"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Ryotwari, common in the south and west from about 1820, contracted directly with the ryot for a limited term. Bengal 1793 is the Permanent Settlement; village-body settlements were a third type.",
+   "bk": "Roy ch2",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0489",
+   "topic": "Agrarian & land",
+   "q": "Pringle set the Deccan ryotwari tax at 55% of net produce after classifying soils. What resulted?",
+   "c": [
+    "A boom in land prices",
+    "Failure, owing to impossible information demands, and about twenty years of agricultural depression",
+    "Peasants welcomed it as lighter than Mughal rates",
+    "It became the model for the Permanent Settlement"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Measuring net produce plot by plot outran the officers' information; the high rate hurt peasants. The Wingate–Goldsmid reassessment of the 1840s brought the effective rate down.",
+   "bk": "Roy ch2",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0490",
+   "topic": "Agrarian & land",
+   "q": "Why, on Roy's argument, did neither the state nor the zamindar have much incentive to invest in land improvement in Permanent Settlement areas?",
+   "c": [
+    "Because the monsoon made investment pointless everywhere",
+    "Because zamindars were forbidden by law from building canals",
+    "Because ryotwari peasants owned the canals",
+    "Because the tax was fixed forever and rents were regulated after 1859, so neither could recover the returns"
+   ],
+   "a": [
+    3
+   ],
+   "w": "With revenue frozen the state could not tax the gains, and tenancy laws stopped zamindars raising rents. In ryotwari areas the state could reassess, so it implicitly took on investment.",
+   "bk": "Roy ch2",
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0491",
+   "topic": "Indian entrepreneurs",
+   "q": "By 1850, which item had the largest share of India's export value?",
+   "c": [
+    "Cotton cloth",
+    "Indigo",
+    "Opium",
+    "Raw silk"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Opium was about 30% of exports in 1850, followed by raw cotton and indigo. Cotton cloth had led in 1811 (33%) but collapsed after 1800.",
+   "bk": "Roy ch2",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0492",
+   "topic": "Colonial transition",
+   "q": "What triggered the 1859–60 indigo crisis (the blue mutiny), on Roy's account?",
+   "c": [
+    "Rice prices rose much faster than indigo, so peasants who had taken advances refused to sow indigo",
+    "The government banned indigo exports",
+    "British dyers switched to synthetic dyes",
+    "Zamindars evicted indigo growers to plant tea"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The contracts were profitable only while relative crop prices held. When rice became more attractive, peasants refused; planters sued or used force, and the government drafted a contract law instead of bailing them out. Synthetic dyes came later in the century.",
+   "bk": "Roy ch2",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0493",
+   "topic": "Indian entrepreneurs",
+   "q": "Which Indian business groups does Roy name as major gainers from the opium trade?",
+   "c": [
+    "Chettiars and Komatis of South India",
+    "Khojas trading with Central Asia",
+    "Bengali Subarna Baniks only",
+    "Parsis of Bombay and Calcutta, and Marwari traders in Malwa opium"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Parsi shipowners and Marwari inland traders made great profits; some Parsi houses moved opium capital into cotton mills. Chettiars and Komatis were South Indian trading communities not linked here to opium.",
+   "bk": "Roy ch2",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0494",
+   "topic": "Indian entrepreneurs",
+   "q": "How did opium help 'balance' trade between India, Britain and China?",
+   "c": [
+    "Britain sold opium to India for silver",
+    "China exported opium to India in return for cotton",
+    "Indian opium sold in China paid for Britain's tea purchases, which previously required silver",
+    "Opium revenue was used to buy Chinese silk for India"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Tea bought in Canton had been paid with imported silver; opium sales gave another means of payment, linking all three economies. Opium profits also flowed back to India's exchequer.",
+   "bk": "Roy ch2",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0495",
+   "topic": "Indian entrepreneurs",
+   "q": "A Surat banking house in 1800 that changes currencies, issues hundis and lends to rulers is best described as a:",
+   "c": [
+    "Karkhana",
+    "Agency house",
+    "Managing agency",
+    "Pedhi"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A pedhi was a specialised Indian banking house. A karkhana was a court-owned workshop; agency houses were European firms in Calcutta; managing agencies came later.",
+   "bk": "Roy ch2",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0496",
+   "topic": "Indian entrepreneurs",
+   "q": "Why did the Jagatseth banking house decline after the Company took Bengal?",
+   "c": [
+    "The Company no longer needed it as a political ally or to run the mint",
+    "It backed the nawab against the Company and was punished",
+    "Its capital was nationalised in 1793",
+    "It moved into indigo and was ruined by the 1830s crash"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The Jagatseth actually sided with the English, but lost its role once the Company controlled politics and coinage. The last Jagatseth died a poor pensioner in 1864.",
+   "bk": "Roy ch2",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0497",
+   "topic": "Indian entrepreneurs",
+   "q": "Before entering trade as brokers to Europeans, Parsis in western India were mainly:",
+   "c": [
+    "Moneylenders and tax farmers",
+    "Artisans, carpenters, weavers and shipbuilders",
+    "Landlords and military commanders",
+    "Priests and scribes"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Roy notes Parsis were not traditionally traders or financiers; contact with Europeans as brokers brought them into commerce. Moneylending describes the Marwaris.",
+   "bk": "Roy ch2",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0498",
+   "topic": "Indian entrepreneurs",
+   "q": "After the Union Bank collapse of 1846–7, wealthy Bengalis invested more in landed estates. How does Roy explain the weakness behind this shift?",
+   "c": [
+    "A cultural aversion to risk among Bengali merchants",
+    "British laws barring Indians from trade after 1847",
+    "Expensive money and a weak, lightly regulated banking system tied to one or two commodity trades",
+    "The end of the Company's China monopoly in 1833"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Roy rejects the 'get-rich-quick' or failure-of-enterprise reading. Capital was costly, banking licences were scarce, and banks depended on volatile trades such as indigo. Many families also turned to education.",
+   "bk": "Roy ch2",
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0499",
+   "topic": "Indian entrepreneurs",
+   "q": "Which statement about the Calcutta agency houses is correct?",
+   "c": [
+    "They were Indian family firms that refused European partners",
+    "They were licensed European firms trading on their own and others' account, and the managing agency system grew from them",
+    "They were created by the 1858 Companies Act",
+    "They specialised only in shipbuilding"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Agency houses needed a Company licence and handled other people's money. After an indigo crash in the early 1830s they leaned on Indian partners such as Dwarkanath Tagore. Company law came only after 1858.",
+   "bk": "Roy ch2",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0500",
+   "topic": "Artisans & small industry",
+   "q": "Why does Roy think the income loss from the decline of hand-spinning was smaller than the job loss?",
+   "c": [
+    "Spinners were mostly well-paid urban specialists who found new jobs",
+    "Spinning was mainly a spare-time domestic activity with a low opportunity cost, and cheaper yarn helped weavers",
+    "The government compensated displaced spinners",
+    "Spinners moved directly into Bombay mills"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Domestic spinners worked for small payments in spare time, so their lost income was modest; falling yarn and cloth prices raised weavers' productivity and let the poor buy more cloth. Bombay mills came decades later.",
+   "bk": "Roy ch2",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0501",
+   "topic": "Artisans & small industry",
+   "q": "Josiah Heath's Porto Novo ironworks (1825) produced good iron but never prospered. What does recent research suggest was the main problem?",
+   "c": [
+    "British tariffs on Indian iron",
+    "Lack of skilled European workers",
+    "Rising charcoal costs as forests receded, plus costly transport from remote ore sites",
+    "A ban on iron production by the Company"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Charcoal-burning ironworks faced rising fuel costs and poor roads; the Company actually supported Heath. Roy uses this to question iron as a clear case of deindustrialisation.",
+   "bk": "Roy ch2",
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0502",
+   "topic": "Colonial transition",
+   "q": "In which year did a uniform Company silver rupee come into circulation across British territories?",
+   "c": [
+    "1799",
+    "1813",
+    "1835",
+    "1858"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The Company considered a uniform currency in 1799 but could not implement it because gold-silver ratios differed between Madras and Bengal. The uniform rupee came in 1835.",
+   "bk": "Roy ch2",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0503",
+   "topic": "Colonial transition",
+   "q": "How did Indian merchants and bankers generally respond to the 1857 rebellion?",
+   "c": [
+    "They financed the rebel princes",
+    "They rarely joined it, and port cities helped the British move troops and money",
+    "They led the civilian uprising in Bombay",
+    "They fled to the princely states"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Roy argues merchants and bankers did not want to jeopardise ties with European traders and the port cities. The rebellion was fought mainly by Indian infantry in the north and centre.",
+   "bk": "Roy ch2",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0504",
+   "topic": "Colonial transition",
+   "q": "The Company's commercial monopoly over trade with India ended in:",
+   "c": [
+    "1757",
+    "1813",
+    "1833",
+    "1858"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The Charter Act of 1813 ended the Indian trade monopoly; the China monopoly survived until 1833, which is the tempting distractor.",
+   "bk": "Roy ch2",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0505",
+   "topic": "Colonial transition",
+   "q": "Roy says the Company kept Indian religious tradition in some areas of law but imported Western models in others. Which pairing is right?",
+   "c": [
+    "Tradition in property and inheritance law; Western models in contract, negotiable instruments and company law",
+    "Western models in property law; tradition in commercial law",
+    "Tradition in criminal law only; everything else Western",
+    "Western models everywhere from 1774"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Property, succession and inheritance followed scriptural tradition (which bred disputes), while commercial law, embedded in merchant practice rather than state codes, was freely modelled on Britain, culminating in laws passed after 1858.",
+   "bk": "Roy ch2",
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0506",
+   "topic": "Management thought",
+   "q": "Who is often called the father of modern management?",
+   "c": [
+    "Henri Fayol",
+    "Peter Drucker",
+    "Frederick Taylor",
+    "Adam Smith"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Drucker is called the father of modern management because he put people, their motivation and development, at the centre. Taylor is the father of scientific management; Fayol founded administrative management.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0507",
+   "topic": "Management thought",
+   "q": "How did L#29 describe Peter Drucker's background?",
+   "c": [
+    "An engineer who ran experiments on the floor of a US steel plant",
+    "The CEO of a French mining company who wrote up his experience",
+    "A Scottish economist who studied a pin factory",
+    "An academic with a doctorate in law, hired by General Motors for a two-year study"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Drucker theorised as an outsider studying organisations, not from his own job. The steel-plant engineer is Taylor, the mining CEO is Fayol, and the pin factory is Adam Smith's.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0508",
+   "topic": "Management thought",
+   "q": "In which year did Drucker publish The Practice of Management?",
+   "c": [
+    "1954",
+    "1916",
+    "1971",
+    "1776"
+   ],
+   "a": [
+    0
+   ],
+   "w": "1954, while he was a professor of management at New York University (1950–1971). 1916 is Fayol's book and 1776 is Smith's The Wealth of Nations.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0509",
+   "topic": "Management thought",
+   "q": "Which of these is one of Drucker's tasks of a manager but not one of Fayol's five functions?",
+   "c": [
+    "Planning",
+    "Organising",
+    "Developing people",
+    "Controlling"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Developing people (training subordinates, self-development, placing people where their strengths count) is Drucker's. Planning and organising are in both lists; controlling is Fayol's only.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0510",
+   "topic": "Management thought",
+   "q": "Both Fayol and Drucker list 'organising'. What difference did the lecture draw?",
+   "c": [
+    "Fayol's organising is about motivating staff; Drucker's is about buying raw material",
+    "There is no difference; Drucker simply copied Fayol's list",
+    "Fayol's organising provides material and human resources; Drucker's divides the work into jobs and selects people for them",
+    "Fayol's organising is done by workers; Drucker's by the CEO alone"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Fayol includes material resources alongside people; Drucker's version is about work and people only. Motivation belongs to Drucker's separate task of integrating, motivating and communicating.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0511",
+   "topic": "Management thought",
+   "q": "How did the lecture contrast Fayol and Drucker on teamwork?",
+   "c": [
+    "For Fayol teamwork is one of the 14 principles; for Drucker building teams out of individuals is a main task of the manager",
+    "For Drucker teamwork is a principle; for Fayol it is a core function",
+    "Neither mentions teamwork",
+    "Fayol rejects teamwork in favour of unity of command"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Teamwork closes Fayol's list of principles, while Drucker raises it to a task (integrating). Unity of command is about one boss per worker and does not rule out teamwork.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0512",
+   "topic": "Management thought",
+   "q": "Which idea grew out of Drucker's task of measuring performance?",
+   "c": [
+    "Unity of command, with one supervisor per worker",
+    "Time and motion study, with a standard time for each task",
+    "The scalar chain, a line of authority from top to bottom",
+    "Management by objectives, with objectives set for the organisation and for each individual"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Measuring performance needs yardsticks and targets; setting them for both the organisation and its people is management by objectives. The other three belong to Fayol and Taylor.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0513",
+   "topic": "Management thought",
+   "q": "Which pairing of thinker and view of the organisation matches the lecture?",
+   "c": [
+    "Fayol: a social organism; Drucker: a machine",
+    "Fayol: a machine; Drucker: a social organism driven by human strengths and knowledge",
+    "Both: a machine whose parts are the workers",
+    "Taylor: a social organism; Fayol: a family"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Fayol treats the organisation, and Taylor the factory floor, as a machine with workers as parts. Drucker's organisation is a living whole of people with different roles.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0514",
+   "topic": "Management thought",
+   "q": "A software firm asks each engineer to set personal goals with their manager and to propose fixes for a recurring production problem. Whose view of workers does this reflect?",
+   "c": [
+    "Drucker's: workers as knowledge workers who manage themselves and contribute ideas",
+    "Fayol's: workers as subordinates to be commanded and controlled",
+    "Taylor's: one best way set by the manager and followed exactly",
+    "Smith's: each worker repeats one narrow operation"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Self-set objectives and worker-generated solutions are Drucker's knowledge worker and MBO. In Taylor's and Fayol's systems the plan comes from above and workers carry it out.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0515",
+   "topic": "Management thought",
+   "q": "What did the lecture say was distinctive about where Drucker's ideas came from, compared with Taylor's and Fayol's?",
+   "c": [
+    "He was the only one of the three who worked on a factory floor",
+    "He based his theory on Adam Smith's pin factory",
+    "He theorised as an academic studying organisations from outside, while they generalised from their own jobs",
+    "He was a government official writing wartime regulations"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Taylor drew on shop-floor management and Fayol on running a company; Drucker was a full-time academic whose theory came from a consulting study of General Motors.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0516",
+   "topic": "Administrative management",
+   "q": "In L#29, what did the lecturer say Fayol's functions of management largely leave out?",
+   "c": [
+    "Planning, because Fayol thought it was the owner's job",
+    "Motivating workers and their psychology; the functions are about commanding and controlling them",
+    "Any role for the manager outside the factory",
+    "Coordination between departments"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Fayol's list runs plan, organise, command, coordinate, control. Equity, initiative and remuneration appear among his principles, but why people work is hardly discussed, the gap Drucker filled.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0517",
+   "topic": "Large corporations",
+   "q": "You hold 10 shares of a company at ₹700 each and have paid ₹5,000 towards them. The company goes bankrupt owing its bank ₹7 crore. Under limited liability, what more must you pay?",
+   "c": [
+    "Nothing at all, since the company is bankrupt",
+    "₹7,000, the full price of the shares again",
+    "A share of the ₹7 crore in proportion to your holding",
+    "₹2,000, the amount still unpaid on your shares"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Your liability is limited to the price of your shares: ₹7,000 in all, of which ₹5,000 is paid, so ₹2,000 remains. The company's debt to the bank is not yours.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0518",
+   "topic": "World Wars & business",
+   "q": "Which two factors, combined, did the lecture give for many Asian and African colonies winning independence after the Second World War?",
+   "c": [
+    "A US invasion of the European empires, and the end of the Industrial Revolution",
+    "Colonies becoming unprofitable once mercantilism began, and the League of Nations ordering withdrawal",
+    "The atomic bombing of Japan, and the end of the trade monopolies of 1813",
+    "Western European powers weakened by the war, and strong independence movements inside the colonies"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He paired an external cause (Europe devastated, too weak to hold its colonies) with an internal one (how strong the freedom movement was), and called it one reason among several.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0519",
+   "topic": "Colonial trade & agency houses",
+   "q": "Which two reasons did L#30 give for the Charter Act of 1813 ending the Company's India trade monopoly?",
+   "c": [
+    "The First War of Independence, and the Opium Wars",
+    "The Industrial Revolution in Britain, and wars between European powers that limited British trade",
+    "The Battle of Plassey, and the Regulating Act",
+    "A crash in indigo prices, and the rise of Bombay"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Britain's booming industry wanted raw materials and markets, while European wars were shrinking the markets open to its merchants. 1857, the Opium Wars and the indigo crash all came later.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0520",
+   "topic": "Colonial trade & agency houses",
+   "q": "Why does the lecture end this period of Indian trade in the 1850s?",
+   "c": [
+    "The Company's trade monopoly was restored in 1858",
+    "Opium exports to China stopped in 1858",
+    "India's first railway closed the agency houses",
+    "The 1857 First War of Independence, after which the British government took control from the East India Company"
+   ],
+   "a": [
+    3
+   ],
+   "w": "After 1857 the British government governed India and its trade directly and the Company's role became minimal, so the next phase is different.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0521",
+   "topic": "Colonial trade & agency houses",
+   "q": "Between 1834 and 1858, imports rose from ₹4.26 crore to ₹21.72 crore and exports from ₹7.9 crore to ₹30 crore. Which statement is correct?",
+   "c": [
+    "Imports grew about five-fold, faster than exports, though exports remained the larger figure",
+    "India imported more than it exported throughout the period",
+    "Exports grew faster than imports",
+    "Both grew by exactly the same factor"
+   ],
+   "a": [
+    0
+   ],
+   "w": "21.72 ÷ 4.26 ≈ 5.1 and 30 ÷ 7.9 ≈ 3.8, so imports grew faster; yet ₹30 crore of exports still exceeded ₹21.72 crore of imports. A faster growth rate is not a larger total.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0522",
+   "topic": "Colonial trade & agency houses",
+   "q": "India's exports rose from ₹7.9 crore in 1834 to ₹30 crore in 1858. About how many times larger is that?",
+   "c": [
+    "About 5 times",
+    "About 22 times",
+    "About 3.8 times",
+    "About 2.2 times"
+   ],
+   "a": [
+    2
+   ],
+   "w": "30 ÷ 7.9 ≈ 3.8. The slide rounded it to four times. Five times is the growth of imports, and 22 is the difference in crore, not a multiple.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0523",
+   "topic": "Colonial trade & agency houses",
+   "q": "In 1828–29, which of the three raw exports the lecture tracked had the largest share of India's export value?",
+   "c": [
+    "Opium, at about 30%",
+    "Raw cotton, at about 21%",
+    "Indigo, at about 27%",
+    "Tea, at about a third"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Indigo led at 27% (opium 17%, raw cotton 15%). Opium's 30% came in 1850–51, raw cotton's 21% in 1834–35, and tea was left out because it grew later.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0524",
+   "topic": "Colonial trade & agency houses",
+   "q": "Why did indigo's share of India's exports fall from 27% in 1828–29 to 15% in 1834–35?",
+   "c": [
+    "Agency houses had contracted so many farmers to grow it that supply outran demand and prices crashed",
+    "Synthetic dyes replaced natural indigo in Britain's mills",
+    "The First Opium War closed the route to China",
+    "The Charter Act of 1813 banned its export"
+   ],
+   "a": [
+    0
+   ],
+   "w": "High boom prices drew in too many growers in Bihar and Bengal; oversupply crashed the price. The Opium War came later (1839–42) and synthetic dye much later.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0525",
+   "topic": "Colonial trade & agency houses",
+   "q": "Why, according to the lecture, did opium's share of India's exports fall to 10% in 1839–40?",
+   "c": [
+    "Britain banned opium imports into London",
+    "Indigo prices crashed that year",
+    "Opium cultivation moved from Bihar to China",
+    "The First Opium War with China (1839–42) disrupted the trade"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The war in China cut opium exports for its duration; afterwards the share rebounded to about 30% by 1850–51.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0526",
+   "topic": "Colonial trade & agency houses",
+   "q": "Indigo's share rose briefly to 26% in 1839–40. What explanation did the lecturer suggest?",
+   "c": [
+    "A new indigo boom began as synthetic dye failed",
+    "Traders shifted from opium to indigo during the Opium War, hedging their risk across commodities",
+    "The Company restored its indigo monopoly",
+    "Farmers in Bihar refused to grow opium after 1834"
+   ],
+   "a": [
+    1
+   ],
+   "w": "With opium disrupted by the war, firms put more into indigo, so if one commodity failed they still had the other. After 1839–40 indigo's share kept falling.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0527",
+   "topic": "Colonial trade & agency houses",
+   "q": "By 1850–51, about what share of India's exports was opium?",
+   "c": [
+    "About 30%, nearly a third",
+    "About 6%",
+    "About 15%",
+    "More than half"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Opium passed its earlier high of 25% to reach 30% or a little more. About 6% is indigo's share in 1857–58, and 15% is roughly raw cotton's.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0528",
+   "topic": "Colonial trade & agency houses",
+   "q": "How did opium fit Britain's trade with China in this period?",
+   "c": [
+    "Chinese opium was sold in India to pay for British cloth",
+    "Britain grew opium at home and shipped it to India",
+    "Indian opium went to China, and Chinese tea went to Britain, so opium paid for Britain's tea",
+    "Opium went from China to Britain in return for Indian tea"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The flow ran India → China (opium) and China → Britain (tea). India grew the opium; China supplied the refined tea that Britain wanted.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0529",
+   "topic": "Colonial trade & agency houses",
+   "q": "In 1850–51 opium, raw cotton and indigo together made up roughly half of India's exports. What did the lecture conclude from this?",
+   "c": [
+    "India had become the world's leading manufacturer of textiles",
+    "India was becoming a supplier of unprocessed raw materials rather than of finished goods",
+    "India's trade was now independent of British policy",
+    "The agency houses had collapsed completely"
+   ],
+   "a": [
+    1
+   ],
+   "w": "All three were raw commodities: cotton and indigo fed textile industries abroad and opium paid for Britain's tea. Modern factories had not yet come to India.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0530",
+   "topic": "Colonial trade & agency houses",
+   "q": "Which region dominated the production and export of indigo and opium in this period?",
+   "c": [
+    "The Deccan and Madras",
+    "Punjab and Sindh",
+    "Gujarat and Malabar",
+    "Eastern India: Bihar and Bengal"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Indigo and opium sustained much of the economy of Bihar and Bengal. Bombay mattered for the opium trade, but as a port and trading centre.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0531",
+   "topic": "Colonial trade & agency houses",
+   "q": "Besides the Wadias' shipbuilding, what did the lecture say made Bombay a commercial capital in the 1800s?",
+   "c": [
+    "The indigo trade with Bengal",
+    "Coal mining in its hinterland",
+    "The East India Company's move of its capital there",
+    "The opium trade"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Opium shipped through Bombay, together with its shipyards and docks, built the city's commercial importance. Indigo and coal were eastern-India businesses.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0532",
+   "topic": "Colonial trade & agency houses",
+   "q": "Which description of an agency house matches L#30?",
+   "c": [
+    "A government office that licensed Indian farmers to grow opium",
+    "A mostly European-managed trading company that handled imports and exports such as opium, indigo, cotton, silk, spices and British textiles",
+    "An Indian banking house that lent only to the East India Company",
+    "A British factory in India making machine-made cloth"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Agency houses were trading firms facilitating import and export. The Company's opium licensing and Indian bankers such as Jagat Seth (L#28) are different things, and modern factories had not yet arrived.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0533",
+   "topic": "Colonial trade & agency houses",
+   "q": "Palmer & Co., Alexander & Co. and Carr, Tagore & Co. were all agency houses. How did the lecture group them?",
+   "c": [
+    "All three were founded by Indian merchants",
+    "All three were branches of the East India Company",
+    "The first two were founded by descendants of British military officers; Carr, Tagore & Co. joined an Indian entrepreneur with British partners",
+    "Palmer & Co. was Indian-owned; the other two were British government firms"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Palmer and Alexander show military descendants turning to trade after 1813; Carr, Tagore & Co. shows Indian entrepreneurs entering the trade, mostly in indigo, alongside British partners.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0534",
+   "topic": "Colonial trade & agency houses",
+   "q": "What happened to many agency houses after the indigo price crash of 1834–35, according to the lecture?",
+   "c": [
+    "They went bankrupt or shut down, leaving room for new firms to come up",
+    "They merged into the East India Company",
+    "They switched to building cotton mills",
+    "They were taken over by Chinese tea merchants"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The crash hit the houses set up by military descendants especially hard. Their collapse created space for new firms, many with Indian partners.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0535",
+   "topic": "Colonial trade & agency houses",
+   "q": "Why does L#30's account of 1813–1850s say almost nothing about factory manufacturing in India?",
+   "c": [
+    "Manufacturing had been banned by the Charter Act of 1813",
+    "Modern factories had not yet come up in India; manufactured goods were mostly made abroad and imported",
+    "India's factories were all owned by the agency houses and kept secret",
+    "Indian factories made only opium, which counts as agriculture"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Traditional manufacturing existed, but modern factories appear only around the 1850s. The fast-rising import bill reflects goods made outside India.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0536",
+   "topic": "Colonial trade & agency houses",
+   "q": "Of indigo, opium and raw cotton, which kept the most stable share of India's exports between 1828–29 and 1857–58?",
+   "c": [
+    "Raw cotton, around 12–21% and about 15% at both ends",
+    "Indigo, around 25% throughout",
+    "Opium, around 17% throughout",
+    "All three moved together"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Raw cotton started and ended near 15%. Indigo slid from 27% to 6.1%, and opium swung between 10% and 30%.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0537",
+   "topic": "Colonial trade & agency houses",
+   "q": "Which agency house was known as the \"Indigo King of Bengal\"?",
+   "c": [
+    "Carr, Tagore & Co.",
+    "Palmer & Co.",
+    "Jardine, Matheson & Co.",
+    "Jamsetjee Jejeebhoy & Co."
+   ],
+   "a": [
+    1
+   ],
+   "w": "Palmer & Co. dominated indigo until the 1830s crash. Carr, Tagore & Co. came in 1834; Jardine Matheson and Jejeebhoy's firm were opium traders.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0538",
+   "topic": "Colonial trade & agency houses",
+   "q": "In 1829 about what share of all the indigo produced in India did Palmer & Co. export?",
+   "c": [
+    "About 27%",
+    "About 6%",
+    "About 50%",
+    "Over 16%"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Over 16%, nearly a fifth. 27% was indigo's share of all Indian exports in 1828–29, and 6.1% its share in 1857–58.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0539",
+   "topic": "Colonial trade & agency houses",
+   "q": "Indigo was about a quarter of India's exports, and one firm handled about a fifth of the indigo. Roughly what share of India's total exports passed through that firm?",
+   "c": [
+    "About 5%",
+    "About 20%",
+    "About 45%",
+    "About 25%"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A quarter of a fifth is one-twentieth, about 5%, the lecturer's sum. Adding the fractions or taking either one alone gives the wrong answers.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0540",
+   "topic": "Colonial trade & agency houses",
+   "q": "Which advantages did the lecture link to Palmer & Co.'s rise?",
+   "c": [
+    "An Indian partner who owned the Raniganj coal mines",
+    "A Company monopoly on indigo granted by the Charter Act of 1813",
+    "John Palmer's father was a senior officer close to Warren Hastings and had married into an Indian royal family, giving access to capital, resources and regulators",
+    "Its ships carried opium through the Portuguese port of Daman"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Family connections at the top of Company government and among Indian royalty opened doors. Palmer & Co. had no Indian partner, and the coal mines belong to Carr, Tagore & Co.",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0541",
+   "topic": "Colonial trade & agency houses",
+   "q": "What became of Palmer & Co.?",
+   "c": [
+    "It merged with Carr, Tagore & Co. in 1834",
+    "It became the Bengal Coal Company",
+    "It went bankrupt when indigo prices crashed in the 1830s",
+    "It moved to Bombay and entered the opium trade"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The crash that cut indigo's share of exports ruined many agency houses, Palmer & Co. among them.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0542",
+   "topic": "Colonial trade & agency houses",
+   "q": "Who founded Carr, Tagore & Co., and when?",
+   "c": [
+    "Dwarkanath Tagore and William Carr, in 1834",
+    "Rabindranath Tagore and William Carr, in 1813",
+    "John Palmer and Dwarkanath Tagore, in 1829",
+    "Dwarkanath Tagore alone, in 1857"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Dwarkanath, grandfather of Rabindranath, partnered with William Carr, a Calcutta indigo trader, in 1834, just as the indigo crash cleared space.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0543",
+   "topic": "Colonial trade & agency houses",
+   "q": "Into which business did Carr, Tagore & Co. diversify beyond indigo?",
+   "c": [
+    "Shipbuilding in the Bombay docks",
+    "Cotton spinning in Nagpur",
+    "Opium trading from Daman",
+    "Coal mining, starting with the Raniganj mines"
+   ],
+   "a": [
+    3
+   ],
+   "w": "It took over the loss-making Raniganj mines, made them profitable, and formed Bengal Coal Mines in 1843. Shipbuilding is the Wadias, Nagpur's mill is Tata's.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0544",
+   "topic": "Colonial trade & agency houses",
+   "q": "How was Bengal Coal Mines formed in 1843, according to the lecture?",
+   "c": [
+    "The East India Company nationalised the Raniganj mines",
+    "Carr, Tagore & Co. bought a competitor's mine, joined it to its own Raniganj mines in a new company, and closed the bought mine",
+    "William Carr split from Dwarkanath Tagore and set up a rival",
+    "Jamsetjee Jejeebhoy bought the mines with opium profits"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The new company came from consolidation: buying Jeremiah Homfray's competing mine, which was then shut, perhaps as unprofitable.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0545",
+   "topic": "Colonial trade & agency houses",
+   "q": "What two points did the lecturer draw from Carr, Tagore & Co.?",
+   "c": [
+    "Indian entrepreneurs entered colonial business at the top level, and they diversified beyond their first trade",
+    "Indian firms survived only as subcontractors to British houses",
+    "Coal was more profitable than indigo in every year",
+    "Indian firms avoided partnerships with British traders"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Dwarkanath was an owner and senior manager, not a labourer or petty trader, and the firm moved from indigo into coal. It was a partnership with a British trader.",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0546",
+   "topic": "Colonial trade & agency houses",
+   "q": "Why did Jamsetjee Jejeebhoy's early voyages to China (1799 to about 1806) matter to his later business?",
+   "c": [
+    "They won him the Company's Bengal opium monopoly",
+    "They taught him to build ships in Bombay",
+    "They built relationships with traders in China on which his opium trade depended",
+    "They made him a partner in Palmer & Co."
+   ],
+   "a": [
+    2
+   ],
+   "w": "The opium trade needed strong ties with dealers in China, and his four or five voyages created them. The Bengal opium trade was controlled by the Company.",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0547",
+   "topic": "Colonial trade & agency houses",
+   "q": "Why were western ports such as Bombay and Daman central to the Malwa opium trade?",
+   "c": [
+    "The Company had moved its opium monopoly from Bengal to Bombay",
+    "Malwa opium came from western India, and there the East India Company's control was weaker than in Bengal and Bihar",
+    "China would accept opium only from Portuguese ports",
+    "Bengal had stopped growing opium after 1813"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The Company controlled Bengal and Bihar opium; Malwa opium went out through Bombay and Portuguese-held Daman, leaving room for traders such as Jejeebhoy.",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0548",
+   "topic": "Colonial trade & agency houses",
+   "q": "The Malwa region, a source of opium in this period, lies mainly in which present-day states?",
+   "c": [
+    "Bihar and Bengal",
+    "Gujarat and Maharashtra",
+    "Punjab and Sindh",
+    "Rajasthan and Madhya Pradesh"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Malwa covers parts of today's Rajasthan and Madhya Pradesh. Bihar and Bengal grew the Company-controlled opium of the east.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0549",
+   "topic": "Colonial trade & agency houses",
+   "q": "What showed the scale of Jamsetjee Jejeebhoy's firm by the mid-1840s?",
+   "c": [
+    "It owned a third of the indigo factories in Bengal",
+    "It supplied all the tea that reached Britain",
+    "It had more ships than the East India Company",
+    "It held about a third of the opium stored in Jardine Matheson's China warehouses, when Jardine handled about a third of China's opium trade"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A third of the stock of a firm that itself handled a third of China's opium trade is a very large share of a very large market.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0550",
+   "topic": "Rise of Indian industry",
+   "q": "Why does the lecture divide colonial-era Indian enterprise into 1813–1850s and 1850s–1900s?",
+   "c": [
+    "The East India Company's trade monopoly ended in 1857",
+    "The 1857 First War of Independence spread patriotism and marks the turn from trade to modern manufacturing",
+    "The first opium war ended in 1857",
+    "Modern factories were banned before 1857"
+   ],
+   "a": [
+    1
+   ],
+   "w": "1857 failed to win independence but planted the idea that India needed economic independence too; the first mills date from the 1850s. The monopoly ended in 1813.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0551",
+   "topic": "Rise of Indian industry",
+   "q": "How did the American Civil War (1861–65) affect India, according to the lecture?",
+   "c": [
+    "It closed Bombay's port to British ships",
+    "It ended the opium trade with China",
+    "It cut US cotton supplies to Lancashire and Manchester, so Indian raw cotton exports rose and Indian cotton gained importance",
+    "It forced India to import raw cotton from America"
+   ],
+   "a": [
+    2
+   ],
+   "w": "With American cotton blocked, Britain's mills turned to India. L#30 had wrongly called it the American Revolution.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0552",
+   "topic": "Rise of Indian industry",
+   "q": "Which statement about India's first cotton spinning and weaving company matches the lecture?",
+   "c": [
+    "It was set up in 1854 with about 17,000–20,000 spindles and began production in 1856",
+    "It was Tata's Alexandra Mill, opened in 1869",
+    "It was set up in 1813 when the monopoly ended",
+    "It was founded by Carr, Tagore & Co. in 1843"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The 1854 company opened the era of modern factories just before 1857. Tata's first mill came in 1869, and 1843 is Bengal Coal Mines.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0553",
+   "topic": "Rise of Indian industry",
+   "q": "How did Jamsetji Nusserwanji Tata start the Alexandra Mill?",
+   "c": [
+    "He built it new at Nagpur with British capital",
+    "He bought a bankrupt oil mill in Bombay and converted it into a cotton mill",
+    "He converted an indigo factory bought from Palmer & Co.",
+    "He inherited it from Jamsetjee Jejeebhoy"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The Alexandra Mill (1869) was a converted oil mill. The Empress Mill was the one at Nagpur (1877).",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0554",
+   "topic": "Rise of Indian industry",
+   "q": "With what did the Godrej business begin, according to the lecture?",
+   "c": [
+    "High-security locks sold under the brand Anchor",
+    "Steel almirahs",
+    "Vegetable-oil soap",
+    "Railway construction contracts"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Locks came first, in the late 1890s; soap and steel furniture followed in the early 1900s and the almirah in the 1920s–30s. Railway contracts are Walchand Hirachand's start.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0555",
+   "topic": "Rise of Indian industry",
+   "q": "Put the lecture's ladder of Indian enterprise in order, earliest first.",
+   "c": [
+    "Cotton textile mills → opium and indigo trade → coal mines → locks and steel furniture",
+    "Coal mines → locks and steel furniture → opium and indigo trade → cotton textile mills",
+    "Locks and steel furniture → cotton textile mills → coal mines → opium and indigo trade",
+    "Opium and indigo trade → coal mines → cotton textile mills → locks and steel furniture"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Trade came first (1813–1850s), coal from 1834 (Carr, Tagore), mills from 1854 (Tata from 1869), and Godrej's locks in the late 1890s.",
+   "lec": 31,
+   "lv": "apply"
   }
  ],
  "briefs": {
@@ -10843,6 +12586,10 @@ HUB.addCourse({
   "lec-26",
   "shoe-ch06",
   "lec-27",
-  "lec-28"
+  "lec-28",
+  "ehi-ch02",
+  "lec-29",
+  "lec-30",
+  "lec-31"
  ]
 });

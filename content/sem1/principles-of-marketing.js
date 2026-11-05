@@ -187,6 +187,30 @@ HUB.addCourse({
    "Week 10 — Live Lecture 10",
    "Anchoring follow-up; product mix width, depth, length",
    "live"
+  ],
+  [
+   32,
+   "Week 11 — Line Filling and Line Stretching",
+   "Line extensions, cannibalisation, downward, upward, two-way stretches",
+   "rec"
+  ],
+  [
+   33,
+   "Week 11 — Line Analysis and Strategy Layers",
+   "Line analysis, consistency, iPhone pruning, business vs brand vs marketing",
+   "rec"
+  ],
+  [
+   34,
+   "Week 11 — Live Lecture 11",
+   "Product narratives: the attribute most stories miss",
+   "live"
+  ],
+  [
+   35,
+   "Week 12 — Product Strategy and Co-Branding",
+   "Product–value–connect triad, hits and misses, co-branding types",
+   "rec"
   ]
  ],
  "units": [
@@ -517,13 +541,13 @@ HUB.addCourse({
     },
     {
      "t": "Humanising a brand: the utilitarian and love buckets",
-     "src": "L#26",
-     "h": "<div class=\"def\"><b>Humanising a brand</b> means relating a product’s attributes to human traits or characteristics, so buyers see more than an object. It moves the brand from the <b>utilitarian (transactional) bucket</b> into the <b>love (relational) bucket</b>.</div><h4>Epicurus and the thirty shops</h4><p>Epicurus, a Greek scholar of around 340–270 BC who studied happiness, was approached by artisans from a barter market. Take, as Dr. Kapoor did, a hypothetical thirty stalls selling much the same handicrafts at much the same price; buyers kept going to one of them and leaving happy. Epicurus told the others that they treated their goods as mere objects and every sale as a transaction (“you like this, give me that in return”). The popular seller added a human touch, along the lines of “this will look good on you; take it home, enjoy the compliments, and settle with me later”. He focused on relations, not transactions.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Utilitarian bucket</th><th>Love bucket</th></tr></thead><tbody><tr><td><strong>Basis</strong></td><td>Exchange: you give me something, I give you something in return</td><td>Affection, with no expectation of return</td></tr><tr><td><strong>Which relationships</strong></td><td>Almost all, said Epicurus: spouses, siblings (the Rakhi exchange, on the lighter side), friends, boss and subordinate, buyer and seller</td><td>Only one: parents and their children</td></tr><tr><td><strong>A brand here is seen as</strong></td><td>An object with a utility (performance, value for money), so it is replaceable</td><td>Something with human meaning, so it is preferred and kept</td></tr></tbody></table></div><p>Why parents? At every stage (school, graduation, a job, marriage, a family of your own) they hope for a better life for you without expecting anything back. Even the good marks they push for are for your benefit, not theirs. The idea echoes Lecture 6’s line between a transaction and a relationship.</p><h4>Why tyre ads show a father and his daughter</h4><p>By his count, 7–8 out of 10 tyre ads (CEAT, Bridgestone, MRF and others) have at some point shown a father and a daughter. The device is now so common that it has become a <b>point of parity</b>, and ads add other elements too. The logic: daughters feel protected and safe when their fathers are around, so the ad borrows that feeling of <b>safety</b>. The marketer’s task is to link the tyre to safety <em>in steps</em> rather than in one leap; that chain is the ABC model of Lecture 27.</p><p>If a buyer files CEAT in the love bucket and another tyre brand in the utilitarian one (“great performance, value for money”), he said, the chance of buying CEAT is much higher.</p><div class=\"card\"><strong>The reading linked to this lecture</strong><p>The LMS notes link a Campaign India article about an Apollo Tyres ad. The page is no longer online, and the lecture does not describe that ad, so rely on his general account of father–daughter tyre ads.</p></div>"
+     "src": "L#26 · L#34",
+     "h": "<div class=\"def\"><b>Humanising a brand</b> means relating a product’s attributes to human traits or characteristics, so buyers see more than an object. It moves the brand from the <b>utilitarian (transactional) bucket</b> into the <b>love (relational) bucket</b>.</div><h4>Epicurus and the thirty shops</h4><p>Epicurus, a Greek scholar of around 340–270 BC who studied happiness, was approached by artisans from a barter market. Take, as Dr. Kapoor did, a hypothetical thirty stalls selling much the same handicrafts at much the same price; buyers kept going to one of them and leaving happy. Epicurus told the others that they treated their goods as mere objects and every sale as a transaction (“you like this, give me that in return”). The popular seller added a human touch, along the lines of “this will look good on you; take it home, enjoy the compliments, and settle with me later”. He focused on relations, not transactions.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Utilitarian bucket</th><th>Love bucket</th></tr></thead><tbody><tr><td><strong>Basis</strong></td><td>Exchange: you give me something, I give you something in return</td><td>Affection, with no expectation of return</td></tr><tr><td><strong>Which relationships</strong></td><td>Almost all, said Epicurus: spouses, siblings (the Rakhi exchange, on the lighter side), friends, boss and subordinate, buyer and seller</td><td>Only one: parents and their children</td></tr><tr><td><strong>A brand here is seen as</strong></td><td>An object with a utility (performance, value for money), so it is replaceable</td><td>Something with human meaning, so it is preferred and kept</td></tr></tbody></table></div><p>Why parents? At every stage (school, graduation, a job, marriage, a family of your own) they hope for a better life for you without expecting anything back. Even the good marks they push for are for your benefit, not theirs. The idea echoes Lecture 6’s line between a transaction and a relationship.</p><h4>Why tyre ads show a father and his daughter</h4><p>By his count, 7–8 out of 10 tyre ads (CEAT, Bridgestone, MRF and others) have at some point shown a father and a daughter. The device is now so common that it has become a <b>point of parity</b>, and ads add other elements too. The logic: daughters feel protected and safe when their fathers are around, so the ad borrows that feeling of <b>safety</b>. The marketer’s task is to link the tyre to safety <em>in steps</em> rather than in one leap; that chain is the ABC model of Lecture 27.</p><p>If a buyer files CEAT in the love bucket and another tyre brand in the utilitarian one (“great performance, value for money”), he said, the chance of buying CEAT is much higher.</p><div class=\"card\"><strong>The reading linked to this lecture</strong><p>The LMS notes link a Campaign India article about an Apollo Tyres ad. The page is no longer online, and the lecture does not describe that ad, so rely on his general account of father–daughter tyre ads.</p></div><h4>Live session (L#34): why he came back to it</h4><p>He had just run a two-and-a-half-hour workshop on narratives for his MBA class and repeated the core of it live, because “narrative is everything” for a product: without a storyline, even a fine product may never sell. The recap of churn and Epicurus added a few points:</p><ul><li><strong>Churn is still the biggest challenge</strong>, now as thousands of years ago. This time he put acquiring a new customer at <b>8 to 10 times</b> the cost of retaining one (Lecture 26 said retention costs one-seventh to one-tenth of acquisition; same message).</li><li><strong>Products seen only as objects</strong> are judged as objects: when a rival’s object looks better, buyers move. Linking the object’s attributes to human traits and relationships puts it in the love bucket and keeps them.</li><li><strong>Humanising, not weaponising.</strong> A student asked whether brands “weaponise” emotions. He preferred humanising: the aim is a human connection, not to exploit the buyer.</li><li><strong>Any product can be in the love bucket.</strong> Asked whether every product could, he said yes, every product and every service, if the marketer understands its nuances.</li></ul>"
     },
     {
      "t": "The ABC model: attribute, benefit, human characteristic",
-     "src": "L#27",
-     "h": "<div class=\"def\"><b>The ABC model of humanising a brand:</b> a product’s <b>A</b>ttribute offers a <b>B</b>enefit, and the benefit is matched with a human-like <b>C</b>haracteristic such as safety or belongingness. Married together, the three let a brand sell a feeling rather than an object, and place it in the love bucket of Lecture 26.</div><h4>Case: CEAT tyres, step by step</h4><p>Every tyre’s unique value proposition lies in its <b>grooves</b>, the tread structure, which brands advertise as “groove technology”. Most buyers have no idea what a particular groove technology means for them, so the chain has to be walked one step at a time:</p><p><strong>grooves</strong> (attribute) → <strong>anti-skid → better traction → more control → stability</strong> (benefits) → <strong>safety</strong> (human characteristic), the same feeling of being protected that a daughter has with her father.</p><p><strong>The classic ad he described:</strong> it is pouring, so a father goes to pick his daughter up from school or college. As she tells him about her day, an animal darts across the road; he brakes, and the car holds its line without losing control. There is a sigh of relief and a look between them: we are safe. CEAT is not selling tyres or groove technology. It is selling the <b>promise of safety and protection</b>, reinforcing that a father will do anything to keep his daughter safe.</p><h4>CEAT or Bridgestone?</h4><p>Picture a father changing the tyres on the family car, with prices at the same level (not a Yokohama, which costs far more than an Apollo, CEAT or Bridgestone). One ad plays on protecting the family through better control of the car; the other on performance and mileage. Performance is <b>utilitarian</b>: every brand is expected to offer it, so it is transactional. The family ad places the brand in the <b>love bucket</b>, and that, he argued, is the one many fathers would pick. If you would pick performance, that is fine: “your fathers are there to take care of you and the family”.</p><p>Not every ad can use parents, so brands now use siblings, spouses, in-laws and old school friends, keeping the human touch. It is also why products use celebrities rather than AI avatars. A product seen only as an object is <b>replaceable</b>; one that carries meaning (he called it <b>meaning transference</b>) is not.</p><h4>Exercise: Asian Paints, “Har Ghar Kuch Kehta Hai”</h4><p>Almost every Asian Paints ad tells a short story of a couple or a family and their home. On one side is a tin of paint, colours and finishes; on the other, people and a home. His chain:</p><p><strong>colours and finishes</strong> (attribute) → <strong>a personalised space → self-expression → memories and attachment</strong> (benefits) → <strong>belongingness</strong>, a home that reflects who you are and the bond with your family (human characteristic).</p><p>His own example: he loves golden yellow, the colour of the bar on his slides and of every curtain in his room. He first admired it in the slide palettes when he worked on Nokia’s marketing design team; a memory and an attachment became self-expression.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Asian Paints</th><th>Berger</th></tr></thead><tbody><tr><td><strong>Who is in the ad</strong></td><td>Ordinary, relatable couples and families</td><td>Celebrities, such as Ranveer Singh and Deepika Padukone in a recent ad</td></tr><tr><td><strong>What it builds</strong></td><td>A sense of <b>commonality</b>: viewers see themselves in the story</td><td>Star appeal</td></tr></tbody></table></div><p>Which campaign style works better is debatable. His point was that Asian Paints has humanised its product remarkably well, so it stays top of mind whatever the colour or finish.</p><h4>Anthropomorphism</h4><div class=\"def\"><b>Anthropomorphism</b> is the consumer-behaviour name for humanising a brand: relating human-like traits to a brand, using anything living, animals included. Hutch’s pug did a better job than many celebrity campaigns of its time.</div><p>He touched on the term only briefly. More examples: Dettol does not sell an antiseptic property; it sells being safe, physically and mentally, from illness. Horlicks, and almost any ad with two people in it, plays on the same ABC idea. When you next see an ad with a couple or a family, ask whether it sells the product or something more: happiness, belongingness.</p><div class=\"card\"><strong>The module in one line</strong><p>Motivation gives the drive to decide; perception of the object and its attributes shapes the decision; attitude, favourable or unfavourable, is a function of the object and its attributes; churn is the biggest threat; and a brand placed in the love bucket through the ABC chain has a better chance of being picked, of positive word of mouth and of a favourable attitude.</p></div><!--viz:pom-abc-humanising-chains--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two flows. CEAT: attribute grooves, benefits anti-skid, traction, control and stability, human characteristic safety and feeling protected. Asian Paints: attribute colours and finishes, benefits personalised space, self-expression, memories and attachment, human characteristic belongingness.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Two ABC chains from Lecture 27</div><div style=\"font-size:14px\"><div style=\"margin-bottom:12px\"><div style=\"font-weight:700;margin-bottom:6px\">CEAT tyres</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-3);font-size:12.5px\">A · attribute</span><br>grooves</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-3);font-size:12.5px\">B · benefits</span><br>anti-skid → traction → control → stability</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><span style=\"color:var(--ink-3);font-size:12.5px\">C · human characteristic</span><br><b>safety</b>, feeling protected</div></div></div><div style=\"margin-bottom:12px\"><div style=\"font-weight:700;margin-bottom:6px\">Asian Paints</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-3);font-size:12.5px\">A · attribute</span><br>colours and finishes</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-3);font-size:12.5px\">B · benefits</span><br>personalised space → self-expression → memories, attachment</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><span style=\"color:var(--ink-3);font-size:12.5px\">C · human characteristic</span><br><b>belongingness</b>, a home that is you</div></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The ad sells the last box; the attribute and benefits are only the route to it.</figcaption></figure><!--/viz:pom-abc-humanising-chains-->"
+     "src": "L#27 · L#34",
+     "h": "<div class=\"def\"><b>The ABC model of humanising a brand:</b> a product’s <b>A</b>ttribute offers a <b>B</b>enefit, and the benefit is matched with a human-like <b>C</b>haracteristic such as safety or belongingness. Married together, the three let a brand sell a feeling rather than an object, and place it in the love bucket of Lecture 26.</div><h4>Case: CEAT tyres, step by step</h4><p>Every tyre’s unique value proposition lies in its <b>grooves</b>, the tread structure, which brands advertise as “groove technology”. Most buyers have no idea what a particular groove technology means for them, so the chain has to be walked one step at a time:</p><p><strong>grooves</strong> (attribute) → <strong>anti-skid → better traction → more control → stability</strong> (benefits) → <strong>safety</strong> (human characteristic), the same feeling of being protected that a daughter has with her father.</p><p><strong>The classic ad he described:</strong> it is pouring, so a father goes to pick his daughter up from school or college. As she tells him about her day, an animal darts across the road; he brakes, and the car holds its line without losing control. There is a sigh of relief and a look between them: we are safe. CEAT is not selling tyres or groove technology. It is selling the <b>promise of safety and protection</b>, reinforcing that a father will do anything to keep his daughter safe.</p><h4>CEAT or Bridgestone?</h4><p>Picture a father changing the tyres on the family car, with prices at the same level (not a Yokohama, which costs far more than an Apollo, CEAT or Bridgestone). One ad plays on protecting the family through better control of the car; the other on performance and mileage. Performance is <b>utilitarian</b>: every brand is expected to offer it, so it is transactional. The family ad places the brand in the <b>love bucket</b>, and that, he argued, is the one many fathers would pick. If you would pick performance, that is fine: “your fathers are there to take care of you and the family”.</p><p>Not every ad can use parents, so brands now use siblings, spouses, in-laws and old school friends, keeping the human touch. It is also why products use celebrities rather than AI avatars. A product seen only as an object is <b>replaceable</b>; one that carries meaning (he called it <b>meaning transference</b>) is not.</p><h4>Exercise: Asian Paints, “Har Ghar Kuch Kehta Hai”</h4><p>Almost every Asian Paints ad tells a short story of a couple or a family and their home. On one side is a tin of paint, colours and finishes; on the other, people and a home. His chain:</p><p><strong>colours and finishes</strong> (attribute) → <strong>a personalised space → self-expression → memories and attachment</strong> (benefits) → <strong>belongingness</strong>, a home that reflects who you are and the bond with your family (human characteristic).</p><p>His own example: he loves golden yellow, the colour of the bar on his slides and of every curtain in his room. He first admired it in the slide palettes when he worked on Nokia’s marketing design team; a memory and an attachment became self-expression.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Asian Paints</th><th>Berger</th></tr></thead><tbody><tr><td><strong>Who is in the ad</strong></td><td>Ordinary, relatable couples and families</td><td>Celebrities, such as Ranveer Singh and Deepika Padukone in a recent ad</td></tr><tr><td><strong>What it builds</strong></td><td>A sense of <b>commonality</b>: viewers see themselves in the story</td><td>Star appeal</td></tr></tbody></table></div><p>Which campaign style works better is debatable. His point was that Asian Paints has humanised its product remarkably well, so it stays top of mind whatever the colour or finish.</p><h4>Anthropomorphism</h4><div class=\"def\"><b>Anthropomorphism</b> is the consumer-behaviour name for humanising a brand: relating human-like traits to a brand, using anything living, animals included. Hutch’s pug did a better job than many celebrity campaigns of its time.</div><p>He touched on the term only briefly. More examples: Dettol does not sell an antiseptic property; it sells being safe, physically and mentally, from illness. Horlicks, and almost any ad with two people in it, plays on the same ABC idea. When you next see an ad with a couple or a family, ask whether it sells the product or something more: happiness, belongingness.</p><div class=\"card\"><strong>The module in one line</strong><p>Motivation gives the drive to decide; perception of the object and its attributes shapes the decision; attitude, favourable or unfavourable, is a function of the object and its attributes; churn is the biggest threat; and a brand placed in the love bucket through the ABC chain has a better chance of being picked, of positive word of mouth and of a favourable attitude.</p></div><!--viz:pom-abc-humanising-chains--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two flows. CEAT: attribute grooves, benefits anti-skid, traction, control and stability, human characteristic safety and feeling protected. Asian Paints: attribute colours and finishes, benefits personalised space, self-expression, memories and attachment, human characteristic belongingness.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Two ABC chains from Lecture 27</div><div style=\"font-size:14px\"><div style=\"margin-bottom:12px\"><div style=\"font-weight:700;margin-bottom:6px\">CEAT tyres</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-3);font-size:12.5px\">A · attribute</span><br>grooves</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-3);font-size:12.5px\">B · benefits</span><br>anti-skid → traction → control → stability</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><span style=\"color:var(--ink-3);font-size:12.5px\">C · human characteristic</span><br><b>safety</b>, feeling protected</div></div></div><div style=\"margin-bottom:12px\"><div style=\"font-weight:700;margin-bottom:6px\">Asian Paints</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-3);font-size:12.5px\">A · attribute</span><br>colours and finishes</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"color:var(--ink-3);font-size:12.5px\">B · benefits</span><br>personalised space → self-expression → memories, attachment</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><span style=\"color:var(--ink-3);font-size:12.5px\">C · human characteristic</span><br><b>belongingness</b>, a home that is you</div></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The ad sells the last box; the attribute and benefits are only the route to it.</figcaption></figure><!--/viz:pom-abc-humanising-chains--><h4>Live session (L#34): the part almost everyone leaves out</h4><div class=\"def\">A complete narrative needs all three links: the product’s <b>attribute</b>, the <b>benefits</b> it delivers, and the <b>human characteristic</b> those benefits connect to. The link most marketers forget is the first: the attribute of the object itself.</div><p><strong>The pressure-cooker exercise.</strong> He asked the class how to humanise a pressure cooker so buyers pick Prestige over Hawkins at the same price. Answers in the chat (ease of use, a mother cooking dal safely, a cooker that “controls the family pressure”, comfort food) were good stories, but they had only B and C. In his MBA workshop, <b>nine of ten groups</b> made the same miss. Without the attribute, buyers can’t tell why <em>this</em> brand delivers the benefit, since every rival tells the same father-and-daughter or mother-in-the-kitchen story. When CEAT says its grooves give it the grip, the safety claim becomes believable.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Prestige pressure cooker</th><th>Asian Paints, scuff-free ad</th></tr></thead><tbody><tr><td><strong>Object</strong></td><td>A pressure cooker: boils water into steam, cooking with heat and pressure</td><td>Wall paint</td></tr><tr><td><strong>A · attribute</strong></td><td>Pressure-valve technology (valve, gasket, inner material) that builds steam quickly and spreads it uniformly</td><td>Scuff-free paint: the mark a chair or a shifted box leaves wipes off with a wet cloth</td></tr><tr><td><strong>B · benefits</strong></td><td>Food cooks properly and on time → less time in the kitchen → more time at home with family</td><td>Fewer marks every day → no repainting → less worry when guests visit</td></tr><tr><td><strong>C · human characteristic</strong></td><td><b>Togetherness</b>: the family eating together, quality time</td><td><b>Freedom and independence</b>: a newly-wed couple in their own home, living freely</td></tr></tbody></table></div><p>He contrasted this with Berger’s celebrity ads (Deepika Padukone, Ranveer Singh), which he found far less relatable for a couple moving into a new home: Berger lands in the utilitarian bucket, Asian Paints in the love bucket. The CEAT chain (grooves → anti-skid → traction → stability → control → safety) was repeated as in Lecture 27, with one addition: Yokohama sells its grooves as “stone ejector” technology, a detail nobody thinks about in the shop but one that makes a narrative credible.</p><p><strong>Homework he set:</strong> for any ad on TV or Instagram, ask whether it humanises the product, and if so, how: which attribute, which benefits, which human trait.</p><div class=\"def\"><b>From the lecture (L#34, live, 1 Nov):</b> he said about two weeks and around four lectures remained, and that he planned to finish the remaining recordings by the coming Monday. On the quiz he said he would “get back to you”, because the next weekend is Diwali and the date still had to be worked out. One-pagers for the assignments would be shared on the LMS, with the details, by that day or the next; the assignments are to be submitted by the 15th (the transcript is garbled here; check the LMS). He expected no class or doubt-clearing session on 8 Nov (Diwali), with a make-up session the following week.</div><!--viz:pom-abc-prestige-asian-paints--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two chains. Prestige pressure cooker: attribute pressure-valve technology, then benefits cooks on time, less time in the kitchen, more time with family, then the human characteristic togetherness. Asian Paints scuff-free: attribute scuff-free paint, then fewer marks and less worry, then freedom and independence. A note says most class answers began at the benefits, and without the attribute the story could belong to any brand.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Two more ABC chains from Lecture 34</div><div style=\"font-size:14px\"><div style=\"font-weight:700;margin:4px 0 6px\">Prestige pressure cooker</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:6px 10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><span style=\"color:var(--ink-3);font-size:12.5px\">A</span> pressure-valve technology</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><span style=\"color:var(--ink-3);font-size:12.5px\">B</span> cooks on time</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\">less time in the kitchen</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\">more time with family</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border-radius:4px;border:1px solid var(--blue);background:var(--blue-soft)\"><span style=\"color:var(--ink-3);font-size:12.5px\">C</span> <b>togetherness</b></div></div><div style=\"font-weight:700;margin:4px 0 6px\">Asian Paints, scuff-free</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:6px 10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><span style=\"color:var(--ink-3);font-size:12.5px\">A</span> scuff-free paint</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><span style=\"color:var(--ink-3);font-size:12.5px\">B</span> fewer marks</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\">less worry</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border-radius:4px;border:1px solid var(--blue);background:var(--blue-soft)\"><span style=\"color:var(--ink-3);font-size:12.5px\">C</span> <b>freedom, independence</b></div></div><div style=\"padding:6px 10px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft);font-size:13px\">Most class answers began at B. Without the A box, the story could belong to any brand.</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The chain starts at the product’s own attribute; that is what makes the human story belong to this brand.</figcaption></figure><!--/viz:pom-abc-prestige-asian-paints-->"
     },
     {
      "t": "Reading: the sustainability say–do gap (Deloitte and Ad Council)",
@@ -566,8 +590,8 @@ HUB.addCourse({
   {
    "id": "product",
    "title": "Product &amp; product strategy",
-   "tag": "Lectures 29–31",
-   "lede": "The first of the four Ps: what a product is and what makes one great, product versus brand, the five product levels, and the product mix (width, depth, length) with the case for pruning.",
+   "tag": "Lectures 29–35",
+   "lede": "The first of the four Ps: what a product is, product levels, the product mix and pruning, adding products by line filling and stretching, line analysis, product strategy and co-branding.",
    "topics": [
     {
      "t": "What a product is, and what makes one great",
@@ -593,6 +617,36 @@ HUB.addCourse({
      "t": "Portfolio growth and product pruning",
      "src": "L#30 · L#31",
      "h": "<p>Big firms run big portfolios. HUL describes more than 50 brands across 16 FMCG categories, over 65 billion units made a year, and reach through 9 million retail outlets plus digital platforms (the 2024 figures he showed). Technology, expectations, behaviour, competitors and the wider environment keep changing, so firms keep launching. What happens to the old products?</p><h4>The graph exercise</h4><p>Keep adding products over time and plot net revenue (after costs). His answer has three phases:</p><ol><li><strong>Growth:</strong> each new product reaches more buyers, so net revenue rises.</li><li><strong>Plateau:</strong> older products stop selling but still cost money: storage and warehousing, retailers’ charges for the shelf space they occupy, advertising. Space they fill can’t take newer products. These costs offset the new products’ sales, and revenue stagnates for a long period.</li><li><strong>Decline:</strong> stock and capital stay blocked, profits dry up, there is no fresh money for R&amp;D or marketing, and net revenue falls.</li></ol><p>“You are sabotaging your own business.” Apple, once the 18 arrived, no longer sells the 10, 11 or 15 on its own platform. L’Oréal changes its shampoo range, with new colours, formulations and celebrities, every six months to a year; launches from a few years ago are nowhere to be seen. They rotate money out of old stock into new products.</p><div class=\"def\"><b>Product pruning</b>: keeping the products that sell and removing those that don’t sell or cost more than they return, so the money saved funds new products and their marketing. It keeps net revenue from stagnating.</div><div class=\"def\"><b>From the lecture (L#30):</b> adding products is good only up to a point; beyond it, more products mean lower and then falling revenue. Product pruning and product strategy are the next class.</div><!--viz:pom-portfolio-revenue-curve--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Line chart of net revenue as products are added over time. Without pruning it rises in a growth phase, levels off in a plateau and then falls in a decline phase. A dashed line with pruning starts during the plateau and stays level, rising slightly.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Adding products without pruning</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 222\" role=\"img\" aria-label=\"Net revenue against products added over time: it rises, levels off, then falls without pruning; a dashed line with pruning stays level and rises slightly.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M50,190 L420,190\" fill=\"none\" style=\"stroke:var(--rule-2);stroke-width:1.5\"/><path d=\"M412,186 L422,190 L412,194 Z\" style=\"fill:var(--ink-3)\"/><path d=\"M50,190 L50,32\" fill=\"none\" style=\"stroke:var(--rule-2);stroke-width:1.5\"/><path d=\"M46,40 L50,30 L54,40 Z\" style=\"fill:var(--ink-3)\"/><path d=\"M169,40 L169,190\" fill=\"none\" style=\"stroke:var(--rule);stroke-width:1.5;stroke-dasharray:3 4\"/><path d=\"M288,40 L288,190\" fill=\"none\" style=\"stroke:var(--rule);stroke-width:1.5;stroke-dasharray:3 4\"/><path d=\"M248.0,62.6 L257.0,61.7 L266.0,61.0 L275.0,60.3 L284.0,59.7 L293.0,59.1 L302.0,58.5 L311.0,58.0 L320.0,57.5 L329.0,57.0 L338.0,56.5 L347.0,56.1 L356.0,55.6 L365.0,55.2 L374.0,54.7 L383.0,54.3 L392.0,53.9 L401.0,53.5 L410.0,53.1\" fill=\"none\" style=\"stroke:var(--good);stroke-width:2;stroke-dasharray:6 4\"/><path d=\"M50.0,190.0 L59.0,168.7 L68.0,151.0 L77.0,136.1 L86.0,123.6 L95.0,113.2 L104.0,104.5 L113.0,97.2 L122.0,91.2 L131.0,86.1 L140.0,81.8 L149.0,78.2 L158.0,75.3 L167.0,72.8 L176.0,70.7 L185.0,68.9 L194.0,67.5 L203.0,66.2 L212.0,65.2 L221.0,64.4 L230.0,63.7 L239.0,63.1 L248.0,62.6 L257.0,62.1 L266.0,61.8 L275.0,61.7 L284.0,62.0 L293.0,62.8 L302.0,64.0 L311.0,65.6 L320.0,67.6 L329.0,70.1 L338.0,72.9 L347.0,76.2 L356.0,79.8 L365.0,83.8 L374.0,88.3 L383.0,93.1 L392.0,98.4 L401.0,104.0 L410.0,110.0\" fill=\"none\" style=\"stroke:var(--ink);stroke-width:2\"/><text x=\"58\" y=\"24\" text-anchor=\"start\" style=\"fill:var(--ink-3);font-size:13px\">net revenue</text><text x=\"420\" y=\"212\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">products added over time</text><text x=\"110\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-weight:700\">growth</text><text x=\"228\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-weight:700\">plateau</text><text x=\"352\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--bad);font-size:13px;font-weight:700\">decline</text><text x=\"410\" y=\"42\" text-anchor=\"end\" style=\"fill:var(--good);font-size:13px;font-weight:700\">with pruning</text><text x=\"408\" y=\"134\" text-anchor=\"end\" style=\"fill:var(--ink);font-size:13px\">no pruning</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Unsold old stock eats the gains from new products; pruning is the way off the plateau.</figcaption></figure><!--/viz:pom-portfolio-revenue-curve--><h4>Live session (L#31): pruning in practice</h4><ul><li><strong>HUL update:</strong> the slide’s 65 billion units a year is the 2024 figure; he said it is now close to 90 billion.</li><li><strong>Why Apple drops old models:</strong> they compete with the new ones. If an iPhone 14 were still on sale, why would anyone pay ₹70,000–80,000 for a 17? Cutting the 17’s price instead would hurt the firm and its brand image. Apple itself doesn’t cut prices before dropping a model; retailers do, because the stock they hold is a cost.</li><li><strong>Involvement sets the pace.</strong> Low-involvement FMCG products are used up in a month or two and can be phased out quickly. High-involvement tech, used for years (NVIDIA’s GPUs, for instance), is phased out more slowly, but it is still phased out.</li><li><strong>Variants on rotation:</strong> Dove body wash runs many variants, and some don’t do well. L’Oréal keeps launching shampoos with a new promise each time (hyaluronic acid, essential oils, mystic oil), then retires them as “new and improved”, playing on perceptual product categories (Lecture 24).</li><li><strong>Brand managers:</strong> FMCG firms (Dove, L’Oréal, Plum, Himalaya) give each product line a brand manager who acts as its <b>mini-CEO</b>, under a group CEO. Consulting firms and banks don’t have brand managers.</li></ul><div class=\"def\"><b>From the lecture (L#31):</b> he wants width, depth and length to be very clear before product strategy, because the terms are used interchangeably there. Digital product strategy comes back as an elective in a later semester.</div>"
+    },
+    {
+     "t": "Line filling: adding items within a line",
+     "src": "L#32",
+     "h": "<div class=\"def\"><b>Line filling</b>, which he also called <b>line extension</b>: adding more items within the present range of an existing product line. The base product stays fundamentally the same, and each new item serves a different set of consumers.</div><p>Lectures 30–31 showed that a portfolio needs pruning. This lecture asks the opposite question: how do firms <em>add</em> products? Mostly by extending what they already sell. He cited a NielsenIQ study: in FMCG especially, about <b>70% of new products are extensions</b> of an existing line. Extensions travel through the same distribution network, so the firm keeps its money rotating.</p><h4>Horlicks: one powder, many segments</h4><div class=\"scroller\"><table><thead><tr><th>Variant</th><th>Who it is for (his illustrative ages)</th></tr></thead><tbody><tr><td><strong>Growth Plus</strong></td><td>Children with higher nutrient needs (say 4–8)</td></tr><tr><td><strong>Lite</strong></td><td>Low sugar: the same children or a wider group, for parents who avoid sugar</td></tr><tr><td><strong>Junior</strong></td><td>An age bracket of kids (say 8–12)</td></tr><tr><td><strong>Mothers</strong></td><td>Roughly 25–35</td></tr><tr><td><strong>Women</strong></td><td>35 plus, when the body needs more calcium and minerals</td></tr><tr><td><strong>Diabetes Plus</strong></td><td>Diabetic consumers (around 40 plus)</td></tr></tbody></table></div><p>The base product never changes: a powder you stir into milk. Because the market is heterogeneous, each variant speaks to one segment, and the line as a whole reaches a far wider audience. (Lecture 24 used the same variants as perceptual product categories.)</p><h4>Colgate: one toothpaste, many promises</h4><ul><li><strong>Max Fresh</strong>: fresh breath</li><li><strong>Total</strong>: all-round oral protection</li><li><strong>Herbal</strong>: herbs in the paste, against Patanjali and Meswak</li><li><strong>Sensitive</strong>: for sensitive teeth, against Sensodyne</li><li><strong>Charcoal</strong> (with mint): a return to the old habit of cleaning teeth with charcoal, the very practice Colgate once told Indians was unhygienic</li></ul><h4>The concern: cannibalisation</h4><p>Suppose HUL sold Lifebuoy, Lux and Dove as three interchangeable soaps. Buyers could all drift to one of them, say Dove, starving the other two: the firm would be <b>sabotaging</b>, or <b>cannibalising</b>, its own portfolio. Worse, if a rival then launched a similar soap at ₹40 against Dove’s ₹50, that whole crowd could move again and leave HUL with almost no one. Products at the same price also force the firm to split its distribution, sales and retail effort, which erodes profit margins.</p><h4>The fix: a different perceptual category for each</h4><div class=\"scroller\"><table><thead><tr><th>HUL soap</th><th>Price he quoted</th><th>Value proposition</th></tr></thead><tbody><tr><td><strong>Lifebuoy</strong></td><td>₹17</td><td>Germ killing (its rival is Dettol)</td></tr><tr><td><strong>Lux</strong></td><td>₹25</td><td>Freshness</td></tr><tr><td><strong>Dove</strong></td><td>₹60</td><td>Moisturisation: pampering the skin, not just protecting it</td></tr></tbody></table></div><p>Three soaps from one parent, but each sits in its own perceptual product category (Lecture 24), so they don’t eat into each other’s margins. They compete with rivals instead, and HUL’s soap portfolio stays balanced.</p><div class=\"card\"><strong>Filling or stretching?</strong><p>The test is the distance from the current baseline. Had Jeep added a variant at ₹82 lakh next to its ₹80 lakh cars, that would have been line filling. Launching the Compass at about ₹16.5 lakh was a stretch.</p></div><div class=\"card\"><strong>Lecture vs Kotler &amp; Armstrong</strong><p>In Kotler &amp; Armstrong’s chapter 8, <b>line filling</b> is a product line decision, while <b>line extension</b> is a brand development strategy: an existing brand name on new forms, sizes or flavours in the same category. On that grid, a cheaper model sold under the parent’s name in the same category (the Jeep Compass) is also a line extension, and HUL’s separately named Lifebuoy, Lux and Dove are <b>multibrands</b>. In Lecture 32, line extension simply means line filling, and stretching is a different route. Use the lecture’s terms in the quiz.</p></div><!--viz:pom-line-filling-vs-stretching--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A price ladder. The middle band is the current range, where line filling adds Horlicks variants such as Lite, Junior, Women and Diabetes Plus. Above it, an upward stretch adds a premium tier such as Porsche over Volkswagen. Below it, a downward stretch adds a cheaper tier such as the Jeep Compass. Doing both in one period is a two-way stretch.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Filling inside the range, stretching beyond it</div><div style=\"display:flex;flex-direction:column;gap:6px;font-size:14px\"><div style=\"padding:8px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>Upward stretch</b> <span style=\"color:var(--ink-2);font-size:13px\">· a premium tier well above the range · Porsche over Volkswagen, Absolut Elyx</span></div><div style=\"text-align:center;color:var(--ink-3)\">↑ stretch up</div><div style=\"padding:8px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Current range (the baseline)</b><div style=\"display:flex;flex-wrap:wrap;gap:5px;margin-top:6px\"><span style=\"padding:3px 8px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\">Horlicks</span><span style=\"padding:3px 8px;border:1px dashed var(--rule-2);border-radius:3px;background:var(--surface)\">+ Lite</span><span style=\"padding:3px 8px;border:1px dashed var(--rule-2);border-radius:3px;background:var(--surface)\">+ Junior</span><span style=\"padding:3px 8px;border:1px dashed var(--rule-2);border-radius:3px;background:var(--surface)\">+ Women</span><span style=\"padding:3px 8px;border:1px dashed var(--rule-2);border-radius:3px;background:var(--surface)\">+ Diabetes Plus</span></div><div style=\"color:var(--ink-2);font-size:13px;margin-top:5px\">line filling adds items <b>inside</b> the band; the base product stays the same</div></div><div style=\"text-align:center;color:var(--ink-3)\">↓ stretch down</div><div style=\"padding:8px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>Downward stretch</b> <span style=\"color:var(--ink-2);font-size:13px\">· a tier well below the range · Jeep Compass, Armani Exchange</span></div><div style=\"padding:6px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2);color:var(--ink-2);font-size:13px\">Up and down within the same period = <b>two-way stretch</b> (Accor, L’Oréal)</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Filling stays inside today’s price band; a stretch leaves it, up, down or both.</figcaption></figure><!--/viz:pom-line-filling-vs-stretching-->"
+    },
+    {
+     "t": "Line stretching: downward, upward and two-way",
+     "src": "L#32",
+     "h": "<div class=\"def\"><b>Line stretching</b>: adding products by stretching a line upward or downward from its current baseline, so the new item sits at a clearly different price point. Direction is judged on the commercial scale, price: next to a ₹100 product, a new one at ₹60 is a downward stretch. The base product (a car, a hotel stay, a vodka) can stay the same.</div><div class=\"scroller\"><table><thead><tr><th>Type</th><th>What it is</th><th>His examples</th></tr></thead><tbody><tr><td><strong>Downward</strong></td><td>Priced well below the baseline, under a new brand name built from scratch or under the same name. Trades value per unit for volume and reach</td><td><b>Jeep Compass</b> from about ₹16.5 lakh, when most Jeeps cost ₹80 lakh plus; <b>Armani Exchange</b>, “accessible fashion” (a tee for ₹8,000–10,000 against about ₹20,000 at Giorgio Armani); <b>ITC Hotels</b> (luxury) down to Welcomhotel (comfort), Fortune (value) and Storii (boutique, in Goa)</td></tr><tr><td><strong>Upward</strong></td><td>A premium range priced well above the baseline, to enter a premium market</td><td><b>Volkswagen Group</b>’s Porsche and Bentley, which never carry the VW name; <b>Samsung Fold</b>; <b>Absolut</b> Elyx and Bling-Bling; <b>Tata Harrier</b></td></tr><tr><td><strong>Two-way</strong></td><td>Upward and downward stretches within the same period. Not the same day: a few months or a couple of years apart still counts</td><td><b>Accor</b>: Ibis down; Novotel, Mercure, Pullman, Sofitel and Sofitel Legend up. <b>L’Oréal</b>: Kiehl’s up, Garnier down</td></tr></tbody></table></div><h4>Absolut: three tiers and a flank</h4><p>Pernod Ricard sells Absolut at roughly ₹1,600, Absolut Elyx (more aged, a different composition and bottle) at about ₹3,300 and Absolut Bling-Bling at about ₹9,000 (his rough figures; prices vary by state). Three distinct identities compete with three different sets of vodkas at the same time. The top tier earns high value on low volume; the lower tiers carry the volume. The premium tiers act as a <b>flank</b> that protects the core product, which is why the core Absolut gets far more shelf space than the other two. He recommended Pernod Ricard’s website (for those over 18) as a lesson in narrative, imagery and heritage.</p><h4>L’Oréal: his favourite two-way stretch</h4><ul><li><strong>Kiehl’s</strong> (premium): a US brand founded in 1850 that plays on heritage and craftsmanship, with natural formulations he described as near chemical-free. A face cream costs about ₹3,500–4,000: <b>value</b> per unit.</li><li><strong>Garnier</strong> (mass): a face cream for about ₹300–400 that students and budget buyers are happy with: <b>volume</b>.</li></ul><p>Neither sells under the L’Oréal name. L’Oréal, he said, has more two-way stretches than any other firm, mostly through brands it acquired, and keeping them distinct means the tiers don’t dilute each other.</p><h4>The test: will buyers accept the new tier?</h4><div class=\"def\">Line stretching is not just about adding products. Done well, it <b>moves the brand’s perceived value boundary</b>. A stretch works only if consumers see the brand as legitimately capable of operating at the new price–quality tier.</div><div class=\"scroller\"><table><thead><tr><th></th><th>Tata Aria</th><th>Tata Harrier</th></tr></thead><tbody><tr><td><strong>Price</strong></td><td>About ₹22 lakh, when Tata cars sold for ₹4–7 lakh</td><td>Up to about ₹30 lakh</td></tr><tr><td><strong>Product</strong></td><td>Design, chassis and engine didn’t match the price (a noisy diesel that struggled in winter)</td><td>Built on a Land Rover–derived chassis after Tata acquired Land Rover; new design, engine and aesthetics</td></tr><tr><td><strong>Buyers’ boundary</strong></td><td>Stayed at ₹4–7 lakh: nobody would pay ₹22 lakh for a Tata</td><td>Moved: buyers now accept a ₹30 lakh Tata</td></tr><tr><td><strong>Result</strong></td><td>Did not do well</td><td>Succeeded</td></tr></tbody></table></div><p>Kiehl’s and Garnier show the same idea from the buyer’s side: a Garnier user feels great value for money, while a Kiehl’s user feels great value in the experience of using and owning it. Each sits behind its own boundary.</p><!--viz:pom-tata-perceived-value-boundary--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two rows on a price scale in rupees lakh. In the Aria row, buyers accept Tata cars only from 4 to 7 lakh, and the Aria at 22 lakh sits far outside that band and is rejected. In the Harrier row, the accepted band runs from 4 to 30 lakh, and the Harrier at 30 lakh sits inside it and is accepted.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Moving the perceived value boundary: Aria and Harrier</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 196\" role=\"img\" aria-label=\"Price scale in rupees lakh. Before: buyers accepted Tata cars only between 4 and 7 lakh, so the Aria at 22 lakh fell outside and was rejected. After: the boundary stretches from 4 to 30 lakh and the Harrier at 30 lakh is accepted.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><rect x=\"106.0\" y=\"48\" width=\"34.5\" height=\"22\" rx=\"3\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><circle cx=\"313.0\" cy=\"59\" r=\"7\" style=\"fill:var(--bad-soft);stroke:var(--bad);stroke-width:2\"/><text x=\"313.0\" y=\"36\" text-anchor=\"middle\" style=\"fill:var(--bad);font-size:13px;font-weight:700\">₹22 lakh: rejected</text><text x=\"106.0\" y=\"90\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px\">buyers’ boundary ₹4–7 lakh</text><text x=\"10\" y=\"64\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Aria</text><rect x=\"106.0\" y=\"120\" width=\"299.0\" height=\"22\" rx=\"3\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><circle cx=\"405.0\" cy=\"131\" r=\"7\" style=\"fill:var(--good-soft);stroke:var(--good);stroke-width:2\"/><text x=\"420.0\" y=\"112\" text-anchor=\"end\" style=\"fill:var(--good);font-size:13px;font-weight:700\">₹30 lakh: accepted</text><text x=\"232.5\" y=\"136\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">boundary moved</text><text x=\"10\" y=\"136\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Harrier</text><path d=\"M60.0,165 L428.0,165\" fill=\"none\" style=\"stroke:var(--rule-2);stroke-width:1.5\"/><path d=\"M60.0,161 L60.0,169\" fill=\"none\" style=\"stroke:var(--ink-3);stroke-width:1.5\"/><text x=\"60.0\" y=\"184\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><path d=\"M175.0,161 L175.0,169\" fill=\"none\" style=\"stroke:var(--ink-3);stroke-width:1.5\"/><text x=\"175.0\" y=\"184\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">10</text><path d=\"M290.0,161 L290.0,169\" fill=\"none\" style=\"stroke:var(--ink-3);stroke-width:1.5\"/><text x=\"290.0\" y=\"184\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">20</text><path d=\"M405.0,161 L405.0,169\" fill=\"none\" style=\"stroke:var(--ink-3);stroke-width:1.5\"/><text x=\"405.0\" y=\"184\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">30</text><text x=\"10\" y=\"184\" text-anchor=\"start\" style=\"fill:var(--ink-3);font-size:13px\">₹ lakh</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">A stretch works only when the product moves the buyer’s boundary out to the new price.</figcaption></figure><!--/viz:pom-tata-perceived-value-boundary-->"
+    },
+    {
+     "t": "Product line analysis: sales, image and consistency",
+     "src": "L#33",
+     "h": "<p>The lecture opened by recapping Lecture 32’s two-way stretch (Accor, L’Oréal) and its test: a stretch works only if buyers accept the brand at the new price–quality tier (Tata Aria against Harrier). Then a new question: once lines are filled and stretched, how does a firm analyse them?</p><div class=\"def\"><b>Product line analysis</b> rests on two elements: <b>sales and profit</b> (the financial side: is the product selling, and does it make money?) and <b>market profile and image</b> (the softer side: how buyers perceive the product, its brand equity). Both are read through <b>consistency</b>.</div><div class=\"scroller\"><table><thead><tr><th>Sales and profit</th><th>Market profile and image</th><th>What to do</th></tr></thead><tbody><tr><td>High</td><td>High</td><td>Keep it: a marker the line is built around</td></tr><tr><td>Low</td><td>High (buyers think well of it)</td><td>There is hope: change something, run a new campaign</td></tr><tr><td>Low</td><td>Low (no profile, no image)</td><td>Discontinue it</td></tr></tbody></table></div><p>A great design or a great campaign is not a reason to keep a product. It has to sell and it has to be profitable.</p><div class=\"def\"><b>Consistency</b> (as Lecture 33 uses it): how consistent, or similar, products are within a product portfolio. Group the similar products together, then compare their sales, profit and image <em>within</em> each group to decide what to keep and what to prune.</div><h4>His worked example: pruning Apple’s iPhones</h4><p>Plot the iPhones (up to the 17) on two axes: price, from ₹30,000 to over ₹1 lakh, against screen size, from 4 to 6.7 inches. Apple covers the whole spread of sizes and prices. Phones with similar screen sizes form <b>consistent groups</b>. To make room for an iPhone 18 (remember Lecture 30’s curve: adding without dropping ends in decline), Apple must prune, and it does so group by group. His hypothetical choices:</p><ul><li><strong>4-inch group (₹30,000–60,000):</strong> drop the 5, 5C and 5S; keep the <b>SE</b>. The image is equally high for all iPhones, but the SE is the more profitable, so all effort in that bucket goes to it.</li><li><strong>4.7-inch group:</strong> drop the 6, 6S and 7; keep the <b>8</b>.</li><li><strong>The larger sizes:</strong> drop the 11, 13, 14, XR and 16; focus on the <b>12 mini</b> and the <b>15</b>.</li></ul><p>The rule he drew: a firm only ever prunes <b>within</b> a consistent group, never across groups, and it needs a reason (and an alternative) before dropping anything. Drop a whole segment and you hand it to a competitor, and once another brand is in buyers’ minds it is very hard to get back in.</p><h4>The OnePlus warning</h4><p>When OnePlus entered India it ignored 4- and 4.5-inch phones and put every model in the 5.5–5.8-inch bucket, with strong campaigns. In that window Apple’s X and 12 series had, by his account, their weakest sales. Competitors don’t announce which segment they will enter, so brands keep a hand in every bucket; Samsung is everywhere. (He added that most brands have since left the 4-inch size, and that some research expects a swing back to small, basic phones.)</p><div class=\"card\"><strong>Lecture vs Kotler &amp; Armstrong</strong><p>Kotler &amp; Armstrong’s <b>consistency</b> is a fourth dimension of the product mix: how closely the different product <em>lines</em> are related in end use, production or distribution. Lecture 33’s consistency is how similar <em>products</em> are within a portfolio, used to group them for line analysis and pruning. Earlier hub notes call consistency textbook-only because the lecture measures the mix by width, depth and length alone; that still holds for the mix, but Lecture 33 now uses the word, in its own sense, for line analysis.</p></div><!--viz:pom-iphone-consistency-pruning--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A flow: group products by consistency, compare sales, profit and image inside each group, keep the best and prune the rest, making room for the iPhone 18. Three groups follow. The 4-inch group at 30,000 to 60,000 rupees drops the 5, 5C and 5S and keeps the SE. The 4.7-inch group drops the 6, 6S and 7 and keeps the 8. The larger-screen group drops the 11, 13, 14, XR and 16 and keeps the 12 mini and 15.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Pruning within consistent groups: his iPhone exercise</div><div style=\"font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Group by consistency</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Compare sales, profit, image inside each group</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Keep the best, prune the rest</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Room for the iPhone 18</div></div><div style=\"display:flex;flex-wrap:wrap;gap:8px\"><div style=\"flex:1 1 150px;min-width:0;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2);padding:8px 10px\"><div style=\"font-weight:700;margin-bottom:6px\">4-inch · ₹30,000–60,000</div><div style=\"display:flex;flex-wrap:wrap;gap:5px\"><span style=\"padding:3px 8px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);color:var(--ink-3);text-decoration:line-through\">5</span><span style=\"padding:3px 8px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);color:var(--ink-3);text-decoration:line-through\">5C</span><span style=\"padding:3px 8px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);color:var(--ink-3);text-decoration:line-through\">5S</span><span style=\"padding:3px 8px;border:1px solid var(--good);border-radius:3px;background:var(--good-soft)\"><b>SE</b> · keep</span></div></div><div style=\"flex:1 1 150px;min-width:0;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2);padding:8px 10px\"><div style=\"font-weight:700;margin-bottom:6px\">4.7-inch</div><div style=\"display:flex;flex-wrap:wrap;gap:5px\"><span style=\"padding:3px 8px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);color:var(--ink-3);text-decoration:line-through\">6</span><span style=\"padding:3px 8px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);color:var(--ink-3);text-decoration:line-through\">6S</span><span style=\"padding:3px 8px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);color:var(--ink-3);text-decoration:line-through\">7</span><span style=\"padding:3px 8px;border:1px solid var(--good);border-radius:3px;background:var(--good-soft)\"><b>8</b> · keep</span></div></div><div style=\"flex:1 1 150px;min-width:0;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2);padding:8px 10px\"><div style=\"font-weight:700;margin-bottom:6px\">Larger screens</div><div style=\"display:flex;flex-wrap:wrap;gap:5px\"><span style=\"padding:3px 8px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);color:var(--ink-3);text-decoration:line-through\">11</span><span style=\"padding:3px 8px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);color:var(--ink-3);text-decoration:line-through\">13</span><span style=\"padding:3px 8px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);color:var(--ink-3);text-decoration:line-through\">14</span><span style=\"padding:3px 8px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);color:var(--ink-3);text-decoration:line-through\">XR</span><span style=\"padding:3px 8px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface);color:var(--ink-3);text-decoration:line-through\">16</span><span style=\"padding:3px 8px;border:1px solid var(--good);border-radius:3px;background:var(--good-soft)\"><b>12 mini</b> · keep</span><span style=\"padding:3px 8px;border:1px solid var(--good);border-radius:3px;background:var(--good-soft)\"><b>15</b> · keep</span></div></div></div><div style=\"margin-top:8px;color:var(--ink-2);font-size:13px\">Every group keeps at least one phone, so no screen size is left open to a rival.</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Pruning happens inside each similar group, so every segment keeps a phone and no rival gets an open door.</figcaption></figure><!--/viz:pom-iphone-consistency-pruning-->"
+    },
+    {
+     "t": "Business, brand and marketing strategy",
+     "src": "L#33",
+     "h": "<p>Students use the three terms interchangeably; as management students, he said, you need the fundamental difference. He set it as a five-minute writing exercise, plus a second question: where does product strategy fit?</p><div class=\"scroller\"><table><thead><tr><th>Layer</th><th>The question it answers</th><th>What it covers</th></tr></thead><tbody><tr><td><strong>Business strategy</strong></td><td>Will we make money in this business?</td><td>Overall growth: scale, risk, cost, portfolio scope, business-unit growth, diversification. The CEO’s view; not about specific products, SKUs or line extensions</td></tr><tr><td><strong>Brand strategy</strong></td><td>Why buy me?</td><td>Positioning and identity <em>in the consumer’s mind</em>: perceptions, feelings, associations, values and beliefs. Premium, sustainable, innovative or family-oriented are brand strategies</td></tr><tr><td><strong>Marketing strategy</strong></td><td>How do we sell or market ourselves?</td><td>Connecting and communicating with the customer: awareness, design, promotions, pricing, consumer trends, 360-degree campaigns, distribution, target audience</td></tr></tbody></table></div><p>In short: business strategy is about money, brand strategy about positioning and feelings, marketing strategy about the action of selling.</p><div class=\"def\"><b>Where product strategy sits:</b> not in the overlap, but at the <b>cusp of brand strategy and marketing strategy</b>, and it feeds business strategy. The product delivers value that must be positioned in the buyer’s mind (brand) and communicated (marketing).</div><h4>Activity: Dettol’s three layers</h4><div class=\"scroller\"><table><thead><tr><th>Layer</th><th>Dettol (his answer, not exhaustive)</th></tr></thead><tbody><tr><td><strong>Business</strong></td><td>Volume growth (units sold) and value growth (revenue); refill packs and multiple sizes; investment in distribution; costs. Everything about money</td></tr><tr><td><strong>Brand</strong></td><td>“A Dettol home is a germ-free home”: kills germs, prevents infection, cleanliness and hygiene. Values of safety, trust, protection, wellness, a mother’s protection, medical trust</td></tr><tr><td><strong>Marketing</strong></td><td>Targets caregivers and mothers, and today hygiene-conscious urban buyers; massive retail reach; positive imagery, demonstration-based proof, dermatologist-tested claims, consistent messages of 100% protection and guaranteed safety</td></tr></tbody></table></div><h4>The question he left: Dettol as luxury skincare?</h4><ul><li><strong>Which layer breaks first?</strong> His view: <b>brand strategy</b>, because Dettol is built on trust and protection, not on pampering, and trust and luxury sit poorly together. Arguing that <b>marketing strategy</b> breaks first is also valid: ads about a mother’s care and germ protection would clash with selling luxury.</li><li><strong>Would distribution economies still work?</strong> Probably not. Dettol runs on low margins across hundreds of thousands of stores; luxury means a higher price, fewer stores and higher margins.</li><li><strong>Would trust survive?</strong> Probably yes, being historically built, but the positioning (germs, healing, protection) would not.</li></ul><!--viz:pom-strategy-layers-product-cusp--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three boxes side by side: business strategy asks will we make money in this business, brand strategy asks why buy me, marketing strategy asks how do we sell ourselves. Below brand and marketing, a highlighted box spans both: product strategy, at the cusp of brand and marketing, and it feeds business strategy.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Three strategy layers, and where product strategy sits</div><div style=\"display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;font-size:14px\"><div style=\"padding:8px 10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><b>Business</b><br><span style=\"color:var(--ink-2);font-size:13px\">Will we make money in this business?</span></div><div style=\"padding:8px 10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><b>Brand</b><br><span style=\"color:var(--ink-2);font-size:13px\">Why buy me?</span></div><div style=\"padding:8px 10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><b>Marketing</b><br><span style=\"color:var(--ink-2);font-size:13px\">How do we sell ourselves?</span></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:13px;text-align:center;align-self:center\">↑ fed by product strategy</div><div style=\"grid-column:2 / span 2;padding:8px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);text-align:center\"><b>Product strategy</b><br><span style=\"color:var(--ink-2);font-size:13px\">at the cusp of brand and marketing: the value to position and to communicate</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Product strategy straddles the brand and marketing layers and feeds the business layer.</figcaption></figure><!--/viz:pom-strategy-layers-product-cusp-->"
+    },
+    {
+     "t": "Product strategy: product, value and connect",
+     "src": "L#35",
+     "h": "<p>He opened with a puzzle. An iPhone 18 Pro Max costs ₹1.5–2 lakh; a ₹20,000 phone also makes calls and keeps you connected. Why pay ten times as much for the same basic benefit? The answer, he said, lies in product strategy.</p><div class=\"def\"><b>Product strategy</b>: the plan a company creates to define the <b>vision</b> for a product and to identify how that vision will be realised. It is more than “there is a problem, make a product to solve it”, which turns the product into a transaction when ten others solve the same problem. It is how the product becomes a vision for the firm, through its benefits and extended benefits.</div><h4>The triad</h4><ul><li><strong>Product, the differentiator:</strong> the core offering, the problem it solves and how it differs from competitors.</li><li><strong>Value:</strong> what it brings to the business and to the user.</li><li><strong>Connect:</strong> a function of the experience buyers get, and what drives demand. He called it the most important element and the piece most often missing.</li></ul><p>Product strategy lies where all three meet, and it is built over time, not in a moment. A great product with value for the business can still fail if it never creates a connect.</p><p><strong>What a product strategy contains:</strong> the <b>target market</b>, the <b>unique value proposition</b> (UVP), the <b>key features</b> and the <b>pricing strategy</b>. It is not only about features: to whom, with what proposition and at what price all belong to it. Put another way, product strategy defines what the product must deliver so that the brand’s promise becomes real and the marketing promise becomes believable (compare Lecture 33’s layers). Digital product management, later in the programme, goes deeper.</p><h4>Product strategies that worked</h4><div class=\"scroller\"><table><thead><tr><th>Brand</th><th>Product strategy</th><th>Why it works</th></tr></thead><tbody><tr><td><strong>Dove</strong></td><td>A <b>moisturising bar</b>, never “a soap”, celebrating real beauty without airbrushing</td><td>Calling it soap would drop it into a crowded market of hundreds. Campaigns set grey against gorgeous, fat against fit, flawed against flawless: accept your imperfections. Even people who don’t use Dove hold a favourable view of it</td></tr><tr><td><strong>Pampers</strong></td><td>Best overnight dryness and comfort for uninterrupted sleep</td><td>Babies don’t buy diapers; parents do. A dry, comfortable baby sleeps, so the parents sleep too. He rated the product as fine, not the best, and the connect as outstanding</td></tr><tr><td><strong>Red Bull</strong></td><td>Energy and focus for high-adrenaline lifestyles</td><td>Sells a lifestyle as well as energy, to people whose tasks need it</td></tr><tr><td><strong>KitKat</strong></td><td>A light, shareable snack with a satisfying crunch</td><td>“Have a break, have a KitKat”: the ads keep returning to the crunch, linking the attribute to the moment</td></tr><tr><td><strong>Cetaphil</strong></td><td>Gentle care for sensitive skin, recommended by dermatologists</td><td>Launched through dermatologists’ recommendations rather than retail marketing: expert validation plus a genuinely good product built the connect. Now sold everywhere, airport pharmacies included</td></tr><tr><td><strong>Tide</strong></td><td>Superior stain removal and freshness</td><td>Two benefits set it apart; celebrity ads and a comparative narrative (if an ordinary powder gives this whiteness, what about Tide?) strengthen the connect</td></tr></tbody></table></div><h4>Product strategies that failed</h4><div class=\"scroller\"><table><thead><tr><th>Product</th><th>What it was</th><th>Where the triad broke</th></tr></thead><tbody><tr><td><strong>Colgate beef lasagna</strong></td><td>A packaged meal, “quick and easy meals from a trusted home brand”</td><td>Differentiated, but no <b>connect</b>: Colgate means oral hygiene, so why eat food from it? With no connect, no value</td></tr><tr><td><strong>Crystal Pepsi</strong></td><td>A clear cola with no caffeine or preservatives, seen as healthier</td><td>Differentiated, and of some value to soda drinkers, but it now competed with every soda water: why Crystal Pepsi over a Bisleri soda? No connect to drive demand</td></tr><tr><td><strong>Cheetos lip balm</strong></td><td>A cheese-flavoured lip balm</td><td>Differentiated, but no <b>value</b> and no connect: none of the sides join</td></tr><tr><td><strong>Pepsi AM</strong></td><td>A high-caffeine soda for breakfast</td><td>Breakfast drinkers want tea or coffee, not soda</td></tr><tr><td><strong>Parle Suraksha</strong> sanitiser</td><td>A hand sanitiser killing 99.9% of germs, launched during COVID</td><td>Worked while rivals were out of stock. Once Lifebuoy and Dettol were back, it had no differentiation, no connect (Parle means biscuits) and so no value</td></tr></tbody></table></div><p>The rule: if any side of the triangle stays weak, the triangle never closes, and there is no robust product strategy. It is the product, its attributes and benefits, and above all the connect those benefits build with buyers.</p><!--viz:pom-product-strategy-triad--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A triangle. Its corners are product, the differentiator; value, to the business and the user; and connect, the experience that drives demand. Product strategy sits in the middle, where all three sides are joined.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The product strategy triad</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 240\" role=\"img\" aria-label=\"A triangle whose corners are product, the differentiator; value, to business and user; and connect, experience that drives demand. Product strategy sits in the middle, where all three sides are joined.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M220,44 L90,190 L350,190 Z\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:2\"/><circle cx=\"220\" cy=\"44\" r=\"6\" style=\"fill:var(--surface);stroke:var(--ink);stroke-width:2\"/><circle cx=\"90\" cy=\"190\" r=\"6\" style=\"fill:var(--surface);stroke:var(--ink);stroke-width:2\"/><circle cx=\"350\" cy=\"190\" r=\"6\" style=\"fill:var(--surface);stroke:var(--ink);stroke-width:2\"/><text x=\"220\" y=\"26\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Product · the differentiator</text><text x=\"90\" y=\"214\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Value</text><text x=\"90\" y=\"230\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">business + user</text><text x=\"350\" y=\"214\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Connect</text><text x=\"350\" y=\"230\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">experience → demand</text><text x=\"220\" y=\"140\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">Product strategy</text><text x=\"220\" y=\"160\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">all three sides joined</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">A product strategy exists only when all three corners are joined; one weak side breaks it.</figcaption></figure><!--/viz:pom-product-strategy-triad--><!--viz:pom-product-strategy-hits-misses--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of products against three tests: differentiated, value and connect. Dove and Cetaphil pass all three. Colgate beef lasagna and Cheetos lip balm are differentiated but fail on value and connect. Crystal Pepsi is differentiated with some value but no connect. Parle Suraksha after COVID fails all three.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Where each product strategy held or broke</div><div class=\"scroller\"><table><thead><tr><th>Product</th><th>Differentiated?</th><th>Value</th><th>Connect</th><th>Result</th></tr></thead><tbody><tr><td><strong>Dove</strong></td><td style=\"background:var(--good-soft)\">✓</td><td style=\"background:var(--good-soft)\">✓</td><td style=\"background:var(--good-soft)\">✓</td><td>works</td></tr><tr><td><strong>Cetaphil</strong></td><td style=\"background:var(--good-soft)\">✓</td><td style=\"background:var(--good-soft)\">✓</td><td style=\"background:var(--good-soft)\">✓</td><td>works</td></tr><tr><td><strong>Colgate beef lasagna</strong></td><td style=\"background:var(--good-soft)\">✓</td><td style=\"background:var(--bad-soft)\">✗</td><td style=\"background:var(--bad-soft)\">✗</td><td>failed</td></tr><tr><td><strong>Crystal Pepsi</strong></td><td style=\"background:var(--good-soft)\">✓</td><td style=\"background:var(--clay-soft)\">some</td><td style=\"background:var(--bad-soft)\">✗</td><td>failed</td></tr><tr><td><strong>Cheetos lip balm</strong></td><td style=\"background:var(--good-soft)\">✓</td><td style=\"background:var(--bad-soft)\">✗</td><td style=\"background:var(--bad-soft)\">✗</td><td>failed</td></tr><tr><td><strong>Parle Suraksha, after COVID</strong></td><td style=\"background:var(--bad-soft)\">✗</td><td style=\"background:var(--bad-soft)\">✗</td><td style=\"background:var(--bad-soft)\">✗</td><td>failed</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Every failure was differentiated except Parle’s; what they lacked was the connect.</figcaption></figure><!--/viz:pom-product-strategy-hits-misses-->"
+    },
+    {
+     "t": "Co-branding: composite and ingredient",
+     "src": "L#35",
+     "h": "<p>Lectures 32–33 added products by filling and stretching lines. The last route in this module is <b>co-branding</b>. Why now? In a survey he cited, 51% of companies named strategic alliances and collaboration as a top priority for 2025. Business boundaries are blurring (banks moving into fashion, tech firms into banking), every firm has its own core competence, and no one can do everything alone.</p><div class=\"def\"><b>Co-branding</b>: the synergy of combining two well-known brands into a third, unique branded product or service (a 1994 definition he credited to Rao and Ruekert). Brand A plus brand B creates product C. C is a new <b>product</b>, not a new brand. It is a strategic partnership in which one brand’s success brings success to its partner.</div><p><strong>Why it exists:</strong> co-branding lets a brand <b>import credibility and meaning</b> faster than it could build them alone. His analogy: cast Ranbir Kapoor and Ranveer Singh in one film, and the pairing creates an impact neither would build quickly on his own.</p><div class=\"scroller\"><table><thead><tr><th>Type</th><th>What happens</th><th>His examples</th></tr></thead><tbody><tr><td><strong>Composite co-branding</strong></td><td>Two brands come together and create a new offering</td><td>Mastercard with Apple Pay; Apple with Nike; the Axis Bank–Vistara credit card (points for lounges and shopping; each partner reaches the other’s customers); Paytm with Visa (two audiences become one larger one); American Express with Airbnb; Clarks with Zara; Manish Malhotra with Starbucks (limited-edition collectible cups and glassware)</td></tr><tr><td><strong>Ingredient co-branding</strong></td><td>One renowned brand is used as an element in the production of another renowned brand</td><td>Intel Inside (or AMD) in an HP or Lenovo laptop; Dolby Digital in PVR cinemas; Android TV in a Sony Bravia; Goodyear soles on Skechers shoes, borrowing a tyre maker’s grip, traction and safety</td></tr></tbody></table></div><p><strong>The image exercise.</strong> He showed an ad of a beach holiday and asked which two brands were behind it: American Express and Airbnb. Had it been an SBI or HDFC ad, nobody would link it to a bank. Airbnb brings exotic stays; Amex brings the card and the points that pay for them. A bank alone couldn’t create that meaning.</p><p><strong>Clarks × Zara, “heritage made current”:</strong> Clarks brought heritage and craftsmanship (comfortable footwear that supports the foot); Zara brought trends, velocity, cultural relevance and scale, which would be hard for Clarks alone.</p><h4>The risk: a partner’s fall is your fall</h4><p>If one partner takes a hit, the other takes it by default. Customers invested time and money in the Axis–Vistara card; once Vistara is out of the picture (as a brand it is: it merged into Air India), they feel let down by Axis too, and a future Axis–IndiGo card would meet scepticism. Co-branding can backfire.</p><h4>Co-branding or co-marketing?</h4><div class=\"def\"><b>Levi’s with Deepika Padukone</b> is <b>co-marketing</b>, not co-branding. She brings herself, as an endorser, not a product of her own. Had her own clothing brand partnered Levi’s to make a new line, it would be co-branding: two brands creating a product.</div><div class=\"card\"><strong>Lecture vs Kotler &amp; Armstrong</strong><p>Kotler &amp; Armstrong define co-branding as two companies putting their established brand names on the same product, and list it among brand sponsorship options. The lecture agrees but goes further: the pair creates a new product, the idea splits into composite and ingredient co-branding, and it is treated as a way to add products to the portfolio. A celebrity tie-up is co-marketing in the lecture; the book’s nearest sponsorship option for a celebrity name on a product is licensing. Use the lecture’s two types and its co-marketing line in the quiz.</p></div><!--viz:pom-cobranding-types--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two well-known brands making one new product is co-branding. It branches into composite co-branding, where both create a new offering such as the Axis–Vistara card, Amex with Airbnb and Clarks with Zara, and ingredient co-branding, where one brand is a part inside the other's product, such as Intel Inside, Dolby in PVR and Goodyear soles on Skechers. A separate box says a brand plus an individual endorser with no second product, such as Levi's with Deepika Padukone, is co-marketing.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Two types of co-branding, and one look-alike</div><div style=\"font-size:14px\"><div style=\"text-align:center;margin-bottom:6px\"><span style=\"display:inline-block;padding:7px 12px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Two well-known brands → one new product</b></span></div><div style=\"text-align:center;color:var(--ink-3);margin-bottom:6px\">↓ co-branding</div><div style=\"display:flex;flex-wrap:wrap;gap:8px\"><div style=\"flex:1 1 150px;min-width:0;padding:8px 10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><b>Composite</b><br><span style=\"color:var(--ink-2);font-size:13px\">both create a new offering · Axis–Vistara card, Amex–Airbnb, Clarks × Zara</span></div><div style=\"flex:1 1 150px;min-width:0;padding:8px 10px;border-radius:4px;border:1px solid var(--rule-2);background:var(--surface)\"><b>Ingredient</b><br><span style=\"color:var(--ink-2);font-size:13px\">one brand is a part inside the other’s product · Intel Inside, Dolby in PVR, Goodyear soles on Skechers</span></div></div><div style=\"margin-top:8px;padding:8px 10px;border:1px dashed var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>Not co-branding:</b> <span style=\"color:var(--ink-2);font-size:13px\">a brand plus an individual endorser, with no second product (Levi’s with Deepika Padukone) is <b>co-marketing</b></span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Ask what the partner brings: a product or component makes it co-branding, a face makes it co-marketing.</figcaption></figure><!--/viz:pom-cobranding-types-->"
     },
     {
      "t": "Textbook: Products, Services, and Brands: Building Customer Value",
@@ -701,6 +755,14 @@ HUB.addCourse({
   },
   {
    "name": "Branding",
+   "unit": "product"
+  },
+  {
+   "name": "Product line strategy",
+   "unit": "product"
+  },
+  {
+   "name": "Product strategy",
    "unit": "product"
   }
  ],
@@ -1612,6 +1674,139 @@ HUB.addCourse({
    "p": "Attributes are easy to copy and customers care about what attributes do for them. Benefits are stronger, and beliefs and values are strongest because they connect emotionally.",
    "f": "attributes < benefits < values",
    "bk": "Kotler & Armstrong 17e ch8"
+  },
+  {
+   "id": "pom-t0134",
+   "h": "In Lecture 32, line extension means line filling, not Kotler & Armstrong’s branding strategy",
+   "p": "Kotler & Armstrong use line extension for an existing brand name on new forms or flavours in the same category, so a cheaper same-name model like the Jeep Compass would count. The lecture uses line extension as a synonym for line filling (items within the present range) and calls the Compass a downward stretch. Answer with the lecture’s terms.",
+   "f": "extension = filling (lecture)",
+   "lec": 32
+  },
+  {
+   "id": "pom-t0135",
+   "h": "Stretch direction is judged by price, not by the brand name",
+   "p": "A stretch can carry a brand-new name (Porsche, Kiehl’s, Fortune) or the parent’s name (Jeep Compass, Samsung Fold). What makes it upward or downward is a price point well above or below the line’s baseline.",
+   "f": "price decides direction",
+   "lec": 32
+  },
+  {
+   "id": "pom-t0136",
+   "h": "Many variants don’t cannibalise each other if each has its own value proposition",
+   "p": "Cannibalisation comes from variants that offer the same thing at similar prices. HUL’s Lifebuoy (germs, ₹17), Lux (freshness, ₹25) and Dove (moisture, ₹60) sit in different perceptual categories, so they compete with rivals, not with each other.",
+   "f": "same promise → cannibalise",
+   "lec": 32
+  },
+  {
+   "id": "pom-t0137",
+   "h": "A line stretch isn’t successful just because a product was added",
+   "p": "The Tata Aria added a ₹22 lakh product but didn’t move buyers’ perceived value boundary, which stayed at ₹4–7 lakh, so it did not do well. A stretch works only when buyers accept the brand at the new price–quality tier, as they did for the Harrier.",
+   "f": "move the boundary",
+   "lec": 32
+  },
+  {
+   "id": "pom-t0138",
+   "h": "A two-way stretch doesn’t need both launches on the same day",
+   "p": "Upward and downward launches within the same strategic period count, even a few months or a couple of years apart.",
+   "f": "same period, not same day",
+   "lec": 32
+  },
+  {
+   "id": "pom-t0139",
+   "h": "Lecture 33’s consistency is not Kotler & Armstrong’s fourth mix dimension",
+   "p": "In the textbook, consistency is how closely a firm’s product lines are related in end use, production or distribution. In Lecture 33 it is how similar products are within a portfolio, used to group them (iPhones by screen size and price) before comparing sales, profit and image. Earlier hub notes call consistency textbook-only for the mix; that holds for width, depth and length, but the lecture now uses the word in its own sense.",
+   "f": "consistency: two meanings",
+   "lec": 33
+  },
+  {
+   "id": "pom-t0140",
+   "h": "Prune within a consistent group, never a whole segment",
+   "p": "Apple keeps the SE in the 4-inch bucket and the 8 in the 4.7-inch bucket. Dropping every product in a segment hands it to a rival (as OnePlus showed in the 5.5–5.8-inch bucket), and re-entering later is very hard.",
+   "f": "keep a hand in every bucket",
+   "lec": 33
+  },
+  {
+   "id": "pom-t0141",
+   "h": "Low sales alone don’t mean drop the product",
+   "p": "If the market profile and image are high, there is hope: change the product or run a new campaign. Discontinue when sales and image are both low.",
+   "f": "weak sales + strong image = fix",
+   "lec": 33
+  },
+  {
+   "id": "pom-t0142",
+   "h": "In brand strategy, positioning means a place in the consumer’s mind",
+   "p": "Business strategy also talks of positioning, in the sense of growth and financial standing. Brand strategy’s positioning is identity in the buyer’s mind: premium, sustainable, innovative or family-oriented are brand strategies, not business strategies.",
+   "f": "brand positioning = mind",
+   "lec": 33
+  },
+  {
+   "id": "pom-t0143",
+   "h": "Product strategy sits between brand and marketing strategy, not inside business strategy",
+   "p": "He placed it at the cusp of brand strategy and marketing strategy (not exactly in their overlap). It feeds business strategy, but business strategy itself doesn’t deal with specific products, SKUs or line extensions.",
+   "f": "product = brand/marketing cusp",
+   "lec": 33
+  },
+  {
+   "id": "pom-t0144",
+   "h": "A narrative without the product’s attribute is incomplete",
+   "p": "Nine of ten MBA groups (and most of the live class) humanised the pressure cooker with only benefits and human traits. Without the attribute (Prestige’s valve technology, CEAT’s grooves) buyers can’t see why this brand delivers the feeling, since every rival tells the same story.",
+   "f": "start at A, not B",
+   "lec": 34
+  },
+  {
+   "id": "pom-t0145",
+   "h": "Kotler & Armstrong’s ‘attributes are the weakest positioning’ doesn’t mean leave them out",
+   "p": "The textbook ranks positioning on attributes alone below benefits and values. The lecture agrees that attributes alone are utilitarian, but says a narrative must start from the attribute and climb to benefits and a human trait. No clash: don’t stop at A, but don’t leave it out.",
+   "f": "not A alone, never without A",
+   "lec": 34
+  },
+  {
+   "id": "pom-t0146",
+   "h": "Lectures 27 and 34 build different Asian Paints chains",
+   "p": "Lecture 27: colours and finishes → personalised space → self-expression → memories → belongingness. Lecture 34: scuff-free paint → fewer marks → less worry → freedom and independence (the newly-wed couple ad). Both are valid ABC chains; match the one the question describes.",
+   "f": "two ads, two chains",
+   "lec": 34
+  },
+  {
+   "id": "pom-t0147",
+   "h": "A celebrity collaboration is co-marketing, not co-branding",
+   "p": "Levi’s with Deepika Padukone is co-marketing: she brings herself as an endorser, not a product. It would be co-branding only if her own clothing brand partnered Levi’s to create a new product.",
+   "f": "a face ≠ a brand partner",
+   "lec": 35
+  },
+  {
+   "id": "pom-t0148",
+   "h": "Co-branding creates a new product, not a new brand",
+   "p": "Brand A plus brand B gives product C, which carries both names (the Axis–Vistara card). C is not a third brand built from scratch.",
+   "f": "A + B → product C",
+   "lec": 35
+  },
+  {
+   "id": "pom-t0149",
+   "h": "Intel Inside is ingredient co-branding, not composite",
+   "p": "In ingredient co-branding one renowned brand is a component inside another’s product (Intel in an HP laptop, Goodyear soles on Skechers). Composite co-branding is two brands creating an offering together, like a co-branded credit card.",
+   "f": "inside = ingredient",
+   "lec": 35
+  },
+  {
+   "id": "pom-t0150",
+   "h": "A differentiated product is not yet a product strategy",
+   "p": "Colgate’s beef lasagna, Crystal Pepsi and Cheetos lip balm were all different from rivals and all failed, because value or connect was missing. The triangle needs product, value and connect joined.",
+   "f": "different ≠ strategy",
+   "lec": 35
+  },
+  {
+   "id": "pom-t0151",
+   "h": "Success in a special moment isn’t a lasting product strategy",
+   "p": "Parle’s Suraksha sanitiser sold during COVID only because rivals were out of stock. Once Lifebuoy and Dettol returned, it had no differentiation or connect (Parle means biscuits) and faded.",
+   "f": "context isn’t connect",
+   "lec": 35
+  },
+  {
+   "id": "pom-t0152",
+   "h": "The lecture’s co-branding is broader than Kotler & Armstrong’s",
+   "p": "The textbook defines co-branding as two companies’ brand names on the same product, a brand sponsorship option. The lecture adds that the pair creates a new product, splits it into composite and ingredient types, and treats it as a way to grow the portfolio. Use the lecture’s two types in the quiz.",
+   "f": "two types: lecture",
+   "lec": 35
   }
  ],
  "defs": [
@@ -2816,6 +3011,190 @@ HUB.addCourse({
    "term": "Co-branding",
    "html": "<b>Co-branding</b>: two different companies put their established brand names on the same product.",
    "bk": "Kotler & Armstrong 17e ch8"
+  },
+  {
+   "id": "pom-d0153",
+   "unit": "product",
+   "topic": "Line filling: adding items within a line",
+   "term": "Line filling (line extension)",
+   "html": "<b>Line filling</b>, also called <b>line extension</b> in Lecture 32: adding more items within the present range of an existing product line. The base product stays the same (Horlicks Lite, Junior, Women).",
+   "lec": 32
+  },
+  {
+   "id": "pom-d0154",
+   "unit": "product",
+   "topic": "Line filling: adding items within a line",
+   "term": "Cannibalisation (line extensions)",
+   "html": "<b>Cannibalisation</b> in a line: variants that offer the same thing at similar prices compete with each other, pulling buyers and margin from the firm’s own products. The cure is a different value proposition for each (Lifebuoy germs, Lux freshness, Dove moisture).",
+   "lec": 32
+  },
+  {
+   "id": "pom-d0155",
+   "unit": "product",
+   "topic": "Line stretching: downward, upward and two-way",
+   "term": "Line stretching",
+   "html": "<b>Line stretching</b>: adding products by stretching a line upward or downward from its current baseline, to a clearly different price point. It can be downward, upward or two-way.",
+   "lec": 32
+  },
+  {
+   "id": "pom-d0156",
+   "unit": "product",
+   "topic": "Line stretching: downward, upward and two-way",
+   "term": "Downward market stretch",
+   "html": "<b>Downward market stretch</b>: launching a product priced well below the line’s baseline, under a new or the same brand name, to win volume and reach (Jeep Compass, Armani Exchange).",
+   "lec": 32
+  },
+  {
+   "id": "pom-d0157",
+   "unit": "product",
+   "topic": "Line stretching: downward, upward and two-way",
+   "term": "Upward market stretch",
+   "html": "<b>Upward market stretch</b>: launching a premium range priced well above the baseline to enter a premium market (Porsche and Bentley for Volkswagen, Absolut Elyx, Tata Harrier).",
+   "lec": 32
+  },
+  {
+   "id": "pom-d0158",
+   "unit": "product",
+   "topic": "Line stretching: downward, upward and two-way",
+   "term": "Two-way market stretch",
+   "html": "<b>Two-way market stretch</b>: stretching upward and downward within the same period, months or a couple of years apart (Accor’s Sofitel and Ibis; L’Oréal’s Kiehl’s and Garnier).",
+   "lec": 32
+  },
+  {
+   "id": "pom-d0159",
+   "unit": "product",
+   "topic": "Line stretching: downward, upward and two-way",
+   "term": "Perceived value boundary",
+   "html": "<b>Perceived value boundary</b>: the price–quality range buyers believe a brand can legitimately deliver. A line stretch succeeds only if it moves this boundary (the Harrier did; the Aria did not).",
+   "lec": 32
+  },
+  {
+   "id": "pom-d0160",
+   "unit": "product",
+   "topic": "Product line analysis: sales, image and consistency",
+   "term": "Product line analysis",
+   "html": "<b>Product line analysis</b> (Lecture 33): judging a line’s products on <b>sales and profit</b> and on <b>market profile and image</b>, grouped by consistency, to decide what to keep and what to prune.",
+   "lec": 33
+  },
+  {
+   "id": "pom-d0161",
+   "unit": "product",
+   "topic": "Product line analysis: sales, image and consistency",
+   "term": "Market profile and image",
+   "html": "<b>Market profile and image</b>: the soft side of line analysis, how buyers perceive a product (its brand equity). High image with low sales calls for changes or a new campaign; low on both calls for dropping it.",
+   "lec": 33
+  },
+  {
+   "id": "pom-d0162",
+   "unit": "product",
+   "topic": "Product line analysis: sales, image and consistency",
+   "term": "Consistency (Lecture 33)",
+   "html": "<b>Consistency</b> in Lecture 33: how similar products are within a portfolio (iPhones grouped by screen size and price). Firms prune within a consistent group, never across groups.",
+   "lec": 33
+  },
+  {
+   "id": "pom-d0163",
+   "unit": "product",
+   "topic": "Business, brand and marketing strategy",
+   "term": "Business strategy",
+   "html": "<b>Business strategy</b>: overall growth, scale, risk, cost, portfolio scope and diversification. Its question: <b>will we make money in this business?</b>",
+   "lec": 33
+  },
+  {
+   "id": "pom-d0164",
+   "unit": "product",
+   "topic": "Business, brand and marketing strategy",
+   "term": "Brand strategy",
+   "html": "<b>Brand strategy</b>: positioning and identity in the consumer’s mind, built from perceptions, feelings, associations, values and beliefs. Its question: <b>why buy me?</b>",
+   "lec": 33
+  },
+  {
+   "id": "pom-d0165",
+   "unit": "product",
+   "topic": "Business, brand and marketing strategy",
+   "term": "Marketing strategy",
+   "html": "<b>Marketing strategy</b>: connecting and communicating with the customer through awareness, promotion, pricing, campaigns and distribution. Its question: <b>how do we sell or market ourselves?</b>",
+   "lec": 33
+  },
+  {
+   "id": "pom-d0166",
+   "unit": "cb",
+   "topic": "The ABC model: attribute, benefit, human characteristic",
+   "term": "Product narrative (storyline)",
+   "html": "<b>Product narrative</b> (storyline): the story a brand builds around its product by linking the product’s attribute to benefits and the benefits to a human trait or relationship, so buyers relate to it rather than see an object.",
+   "lec": 34
+  },
+  {
+   "id": "pom-d0167",
+   "unit": "cb",
+   "topic": "The ABC model: attribute, benefit, human characteristic",
+   "term": "Complete ABC narrative",
+   "html": "<b>Complete ABC narrative</b>: one that names the <b>attribute</b> of the object, the <b>benefits</b> it gives and the <b>human characteristic</b> they connect to. Lecture 34: most attempts leave out the attribute.",
+   "lec": 34
+  },
+  {
+   "id": "pom-d0168",
+   "unit": "cb",
+   "topic": "Humanising a brand: the utilitarian and love buckets",
+   "term": "Humanising, not weaponising",
+   "html": "<b>Humanising, not weaponising</b>: Dr. Kapoor’s reply when a student asked whether brands weaponise emotion. The aim is a human connection that keeps buyers, not exploiting them.",
+   "lec": 34
+  },
+  {
+   "id": "pom-d0169",
+   "unit": "product",
+   "topic": "Product strategy: product, value and connect",
+   "term": "Product strategy",
+   "html": "<b>Product strategy</b>: the plan a company creates to define the vision for a product and to identify how that vision will be realised. It covers the target market, UVP, key features and pricing.",
+   "lec": 35
+  },
+  {
+   "id": "pom-d0170",
+   "unit": "product",
+   "topic": "Product strategy: product, value and connect",
+   "term": "Product strategy triad",
+   "html": "<b>Product strategy triad</b>: <b>product</b> (the differentiator), <b>value</b> (to the business and the user) and <b>connect</b> (the experience that drives demand). The strategy lies where all three meet.",
+   "lec": 35
+  },
+  {
+   "id": "pom-d0171",
+   "unit": "product",
+   "topic": "Product strategy: product, value and connect",
+   "term": "Unique value proposition (UVP)",
+   "html": "<b>Unique value proposition (UVP)</b>: the distinctive value a product promises its target buyers, one of the four elements of a product strategy with target market, key features and pricing.",
+   "lec": 35
+  },
+  {
+   "id": "pom-d0172",
+   "unit": "product",
+   "topic": "Co-branding: composite and ingredient",
+   "term": "Co-branding (Lecture 35)",
+   "html": "<b>Co-branding</b> (Lecture 35): the synergy of combining two well-known brands into a third, unique branded product or service. The result is a new product, not a new brand.",
+   "lec": 35
+  },
+  {
+   "id": "pom-d0173",
+   "unit": "product",
+   "topic": "Co-branding: composite and ingredient",
+   "term": "Composite co-branding",
+   "html": "<b>Composite co-branding</b>: two brands together create a new offering, such as the Axis Bank–Vistara credit card or American Express with Airbnb.",
+   "lec": 35
+  },
+  {
+   "id": "pom-d0174",
+   "unit": "product",
+   "topic": "Co-branding: composite and ingredient",
+   "term": "Ingredient co-branding",
+   "html": "<b>Ingredient co-branding</b>: one renowned brand is used as an element in the production of another renowned brand (Intel Inside in a laptop, Goodyear soles on Skechers).",
+   "lec": 35
+  },
+  {
+   "id": "pom-d0175",
+   "unit": "product",
+   "topic": "Co-branding: composite and ingredient",
+   "term": "Co-marketing",
+   "html": "<b>Co-marketing</b>: a brand works with a partner, such as a celebrity endorser, to market its products without the partner bringing a product of its own (Levi’s with Deepika Padukone).",
+   "lec": 35
   }
  ],
  "questions": [
@@ -9982,6 +10361,1068 @@ HUB.addCourse({
    "w": "Consistency, how closely the lines are related in use, production or distribution, is the textbook's fourth dimension. Width, depth and length appear in both, though the lecture counts depth and length its own way (company X's length is 11).",
    "bk": "Kotler & Armstrong 17e ch8",
    "lv": "recall"
+  },
+  {
+   "id": "pom-q0428",
+   "topic": "Product line strategy",
+   "q": "According to the NielsenIQ study cited in Lecture 32, roughly what share of new products (especially in FMCG) are extensions of an existing line?",
+   "c": [
+    "About 10%",
+    "About 30%",
+    "About 70%",
+    "About 95%"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He cited about 70%: most new products keep the base product and add variants to the same line. That is why line filling is the commonest way to grow a portfolio.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0429",
+   "topic": "Product line strategy",
+   "q": "How did Lecture 32 define line filling (line extension)?",
+   "c": [
+    "Adding more items within the present range of an existing product line, with the base product unchanged",
+    "Launching a product priced well above the current range",
+    "Dropping slow-selling items from a line",
+    "Putting an existing brand name on a product in a new category"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Line filling stays inside the line’s current range: Horlicks Lite or Junior is still the same powder for milk. A product priced well above the range is an upward stretch, dropping items is pruning, and a new category is a brand extension.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0430",
+   "topic": "Product line strategy",
+   "q": "Horlicks keeps the same malt powder but launches Growth Plus, Lite, Junior, Mothers, Women and Diabetes Plus. In Lecture 32’s terms, what is this?",
+   "c": [
+    "Downward market stretch",
+    "Two-way market stretch",
+    "Co-branding",
+    "Line filling"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Every variant sits inside the present range of the same line and the base product doesn’t change, so it is line filling. No variant is priced far above or below the baseline, so it isn’t a stretch.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0431",
+   "topic": "Product line strategy",
+   "q": "In Lecture 32, what is the main concern with line extensions?",
+   "c": [
+    "Buyers forget the parent brand",
+    "Cannibalisation: variants compete with each other and erode the firm’s own margins",
+    "The firm needs a new distribution network for every variant",
+    "Variants always cost more to make than the original"
+   ],
+   "a": [
+    1
+   ],
+   "w": "If variants offer the same thing at similar prices, buyers shift among them and the firm sabotages its own portfolio. Extensions actually reuse the existing distribution network; that is one of their advantages.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0432",
+   "topic": "Product line strategy",
+   "q": "How does HUL stop Lifebuoy, Lux and Dove from cannibalising each other, according to Lecture 32?",
+   "c": [
+    "It sells all three at the same price",
+    "It sells them through different retailers",
+    "Each sits in its own perceptual category with a distinct value proposition: germ killing, freshness, moisturisation",
+    "It advertises only Dove"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Different value propositions (and prices of ₹17, ₹25 and ₹60) mean each soap draws a different buyer, so the three compete with rivals rather than with each other. Pricing them the same would invite the very cannibalisation he warned about.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0433",
+   "topic": "Product line strategy",
+   "q": "Which value proposition did Lecture 32 attach to Lux?",
+   "c": [
+    "Freshness",
+    "Germ killing",
+    "Moisturisation",
+    "Herbal care"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Lux plays on freshness. Germ killing is Lifebuoy (a Dettol rival) and moisturisation is Dove.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0434",
+   "topic": "Product line strategy",
+   "q": "A firm’s pressure cookers sell at ₹1,500–2,500. Applying Lecture 32, which launch is a line filling rather than a stretch?",
+   "c": [
+    "A ₹600 basic model under a new brand name",
+    "A ₹9,000 designer range in copper",
+    "A ₹600 model and a ₹9,000 model launched in the same year",
+    "A ₹2,000 model with a glass lid"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A ₹2,000 item sits inside the present range, so it fills the line. ₹600 is a downward stretch, ₹9,000 an upward stretch, and both together in one period a two-way stretch.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0435",
+   "topic": "Product line strategy",
+   "q": "Most Jeeps sold for ₹80 lakh and above when Jeep launched the Compass from about ₹16.5 lakh. What did Lecture 32 call this?",
+   "c": [
+    "Line filling",
+    "A downward market stretch",
+    "An upward market stretch",
+    "Product pruning"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The Compass was priced far below the line’s baseline, trading value per unit for volume. He added that a new Jeep at ₹82 lakh would have been line filling instead.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0436",
+   "topic": "Product line strategy",
+   "q": "Volkswagen Group sells Porsche and Bentley cars, which never carry the Volkswagen name. In Lecture 32 this is an example of:",
+   "c": [
+    "An upward market stretch",
+    "A downward market stretch",
+    "Line filling",
+    "Ingredient co-branding"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Porsche and Bentley take the group into premium segments far above Volkswagen’s mass-market baseline. A separate name doesn’t stop it being a stretch; direction is judged by price.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0437",
+   "topic": "Product line strategy",
+   "q": "ITC Hotels is ultra-luxury. Which of these did Lecture 32 give as ITC’s downward stretches? (Select all)",
+   "c": [
+    "Welcomhotel",
+    "Sofitel",
+    "Fortune",
+    "Storii"
+   ],
+   "a": [
+    0,
+    2,
+    3
+   ],
+   "w": "He named Welcomhotel (comfort), Fortune (value) and Storii (boutique hotels, for example in Goa). Sofitel belongs to Accor, his two-way stretch example.",
+   "lec": 32,
+   "lv": "recall",
+   "multi": true
+  },
+  {
+   "id": "pom-q0438",
+   "topic": "Product line strategy",
+   "q": "What makes a stretch two-way, according to Lecture 32?",
+   "c": [
+    "Upward and downward stretches made within the same period, even if months or a couple of years apart",
+    "Two brands from different companies launch a product together",
+    "A product is launched first in one country and then in another",
+    "Upward and downward stretches launched on exactly the same day"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Two-way means both directions in one strategic period; he said exact simultaneity isn’t required. Two companies launching together is co-branding.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0439",
+   "topic": "Product line strategy",
+   "q": "L’Oréal owns Kiehl’s (face cream about ₹3,500–4,000) and Garnier (face cream about ₹300–400). In Lecture 32, what does this illustrate?",
+   "c": [
+    "Line filling inside one price band",
+    "A two-way market stretch: one brand for value per unit, one for volume",
+    "Cannibalisation within one line",
+    "Co-marketing with a celebrity"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Kiehl’s takes L’Oréal up into a heritage premium tier while Garnier takes it down to the mass market, and distinct names keep the tiers from diluting each other.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0440",
+   "topic": "Product line strategy",
+   "q": "Why, according to Lecture 32, does Pernod Ricard sell Absolut Elyx and Absolut Bling-Bling above core Absolut?",
+   "c": [
+    "To replace core Absolut over time",
+    "To reduce the number of SKUs it must manage",
+    "Because premium tiers sell the most bottles",
+    "To compete in three segments at once while the premium tiers flank and protect the core, high-volume product"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Three identities fight three sets of rival vodkas, and the high-value, low-volume upper tiers shield the main product, which gets the most shelf space. The premium tiers don’t sell the most bottles; the core carries the volume.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0441",
+   "topic": "Product line strategy",
+   "q": "Lecture 32 said a line stretch, done well, is mainly about what?",
+   "c": [
+    "Adding as many products as possible",
+    "Cutting prices across the line",
+    "Moving the brand’s perceived value boundary",
+    "Changing the base product"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He said stretching is not just adding products: it moves the price–quality range buyers believe the brand can deliver.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0442",
+   "topic": "Product line strategy",
+   "q": "Why did the Tata Aria (about ₹22 lakh) not do well when the Tata Harrier (up to about ₹30 lakh) later succeeded?",
+   "c": [
+    "The Aria’s design and engine didn’t justify the price, so buyers’ boundary for Tata stayed at ₹4–7 lakh; the Harrier’s new chassis, design and engine moved it",
+    "The Aria was priced higher than the Harrier",
+    "The Harrier carried a new brand name and the Aria didn’t",
+    "Buyers will never pay premium prices to a mass-market brand"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A stretch works only if buyers see the brand as legitimately capable at the new tier. The Harrier, built on a Land Rover–derived chassis, earned that; the Aria did not. The Harrier is still a Tata, which shows a mass brand can move up.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0443",
+   "topic": "Product line strategy",
+   "q": "A budget phone brand launches a ₹1.2 lakh foldable with the same parts quality as its ₹15,000 phones. Applying Lecture 32’s test, what is the likely problem?",
+   "c": [
+    "It is line filling, so it will cannibalise the ₹15,000 phones",
+    "Buyers won’t see the brand as legitimately capable at the new price–quality tier, so the stretch is likely to fail",
+    "It is a downward stretch aimed at volume",
+    "Nothing: any upward stretch raises brand equity"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Like the Aria, it adds a product without moving the perceived value boundary. It isn’t filling (the price is far above the range) or downward.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0444",
+   "topic": "Product line strategy",
+   "q": "Which two elements did Lecture 33 name as the basis of product line analysis?",
+   "c": [
+    "Width and depth; length and consistency",
+    "Sales and profit; market profile and image",
+    "Price and place; promotion and people",
+    "Attribute and benefit; human characteristic"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Line analysis weighs the financial side (sales and profit) and the softer side (market profile and image, i.e. brand equity), both read through consistency. Width, depth and length describe the mix, not how to analyse a line.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0445",
+   "topic": "Product line strategy",
+   "q": "How did Lecture 33 define consistency?",
+   "c": [
+    "How similar products are within a product portfolio",
+    "How closely a firm’s lines are related in production and distribution",
+    "How steadily a product’s sales hold up over the years",
+    "How uniform a product’s quality is from batch to batch"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He used consistency for how similar products are within a portfolio, so similar ones can be grouped and compared. The definition about lines sharing production and distribution is Kotler & Armstrong’s mix dimension.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0446",
+   "topic": "Product line strategy",
+   "q": "A face wash sells poorly, but buyers who know it rate it highly and it has a strong image. Following Lecture 33, what should the firm do first?",
+   "c": [
+    "Discontinue it at once",
+    "Cut its price below cost",
+    "Keep it and try changes or a new campaign, since a strong image gives hope",
+    "Stretch the line downward"
+   ],
+   "a": [
+    2
+   ],
+   "w": "High market profile and image with low sales means the product may still do well; he would make changes or run new campaigns. Dropping is for products low on both sales and image.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0447",
+   "topic": "Product line strategy",
+   "q": "A snack has weak sales and almost no market profile or image. What does Lecture 33’s line analysis suggest?",
+   "c": [
+    "Run a bigger campaign",
+    "Raise its price",
+    "Add more variants of it",
+    "Discontinue it"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Low sales with no image or equity gives no reason to keep it; it is a candidate for pruning, which frees money for new products.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0448",
+   "topic": "Product line strategy",
+   "q": "In Dr. Kapoor’s iPhone exercise, which phone did he keep in the 4-inch group?",
+   "c": [
+    "The SE",
+    "The 5S",
+    "The 5C",
+    "The 5"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He dropped the 5, 5C and 5S and kept the SE: the image was equally high for all, but the SE was more profitable.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0449",
+   "topic": "Product line strategy",
+   "q": "In his exercise, why did Apple keep the SE rather than drop the whole 4-inch group?",
+   "c": [
+    "The SE was the cheapest iPhone to make",
+    "Leaving a segment empty hands it to a competitor, and re-entering later is very difficult",
+    "Apple never drops any product",
+    "Small phones always sell best"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He stressed keeping a hand in every bucket: competitors don’t announce which segment they will enter, and once they are in buyers’ minds it is hard to get back in. Apple does drop products; it drops them within a group.",
+   "lec": 33,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0450",
+   "topic": "Product line strategy",
+   "q": "According to Lecture 33, what did OnePlus do when it entered India, and what happened to Apple?",
+   "c": [
+    "It launched only 4-inch phones, and Apple dropped the SE",
+    "It priced every phone above ₹1 lakh, and Apple cut prices",
+    "It partnered with Apple, and both gained",
+    "It put all its models in the 5.5–5.8-inch bucket, and Apple’s X and 12 series had their weakest sales"
+   ],
+   "a": [
+    3
+   ],
+   "w": "OnePlus concentrated every model, with strong campaigns, on one screen-size bucket, and in that period Apple’s phones in that bucket sold worst, by his account.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0451",
+   "topic": "Product line strategy",
+   "q": "A firm sells six shampoos: three anti-dandruff ones at ₹180–220 and three for coloured hair at ₹350–400. It must drop two to fund a launch. Applying Lecture 33, how should it choose?",
+   "c": [
+    "Group the similar ones, then within each group compare sales, profit and image and drop the weakest",
+    "Drop both cheapest shampoos, whatever their group",
+    "Drop the entire coloured-hair group",
+    "Drop the two newest shampoos"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Pruning works within consistent groups so that each segment keeps a product. Dropping a whole group, or choosing on price alone, leaves a segment open to rivals.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0452",
+   "topic": "Product strategy",
+   "q": "Which question did Lecture 33 tie to business strategy?",
+   "c": [
+    "Will we make money in this business?",
+    "Why buy me?",
+    "How do we sell or market ourselves?",
+    "What does the buyer feel about us?"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Business strategy is about money: overall growth, scale, cost, risk, portfolio scope. “Why buy me?” is brand strategy and “how do we sell?” is marketing strategy.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0453",
+   "topic": "Product strategy",
+   "q": "Which question did Lecture 33 tie to brand strategy?",
+   "c": [
+    "Will we make money in this business?",
+    "How do we sell or market ourselves?",
+    "Why buy me?",
+    "Which SKUs should we add?"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Brand strategy creates an identity in the buyer’s mind, from perceptions, feelings and associations, to answer why someone should buy you.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0454",
+   "topic": "Product strategy",
+   "q": "Which question did Lecture 33 tie to marketing strategy?",
+   "c": [
+    "Why buy me?",
+    "Will we make money in this business?",
+    "Which business units should we diversify into?",
+    "How do we sell or market ourselves?"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Marketing strategy is the action layer: awareness, promotions, pricing, campaigns and distribution that connect with the customer.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0455",
+   "topic": "Product strategy",
+   "q": "Dettol introduces refill packs and more pack sizes to grow unit volume and revenue. In Lecture 33’s three layers, this belongs to:",
+   "c": [
+    "Brand strategy",
+    "Business strategy",
+    "Marketing strategy",
+    "Product pruning"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Volume growth, value growth, refill packs, sizes and investment in distribution all answer “will we make money?”, so his Dettol answer filed them under business strategy.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0456",
+   "topic": "Product strategy",
+   "q": "Dettol’s ads show mothers, demonstration-based proof and dermatologist-tested claims, aimed at caregivers. Which layer is this?",
+   "c": [
+    "Business strategy",
+    "Brand strategy",
+    "Marketing strategy",
+    "Ingredient co-branding"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Choosing the target audience and how to communicate with it (imagery, demonstrations, endorsements) is how Dettol sells itself: marketing strategy.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0457",
+   "topic": "Product strategy",
+   "q": "A firm decides its brand should stand for sustainability in buyers’ minds. Which layer does Lecture 33 put this in?",
+   "c": [
+    "Brand strategy",
+    "Business strategy",
+    "Marketing strategy",
+    "Line stretching"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Premium, sustainable, innovative or family-oriented are positions in the consumer’s mind, so they are brand strategy. Business strategy’s “positioning” is about growth and money, not the buyer’s mind.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0458",
+   "topic": "Product strategy",
+   "q": "Where did Lecture 33 place product strategy?",
+   "c": [
+    "At the cusp of brand strategy and marketing strategy",
+    "Inside business strategy",
+    "Exactly at the overlap of all three layers",
+    "Outside all three layers"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He placed it at the cusp of brand and marketing, not exactly in an overlap: the product delivers value that must be positioned and communicated. It feeds business strategy, which doesn’t deal with specific products.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0459",
+   "topic": "Product strategy",
+   "q": "If Dettol suddenly repositioned as luxury skincare, which layer did Dr. Kapoor think would break first, and why?",
+   "c": [
+    "Business strategy, because luxury always loses money",
+    "No layer, because a trusted brand can move anywhere",
+    "Brand strategy, because Dettol is built on trust and protection, which don’t fit luxury pampering",
+    "Marketing strategy alone, and no other answer is defensible"
+   ],
+   "a": [
+    2
+   ],
+   "w": "His view was brand strategy. He accepted that marketing strategy breaking first is also a valid argument, since ads about a mother’s care and germ protection would clash with selling luxury.",
+   "lec": 33,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0460",
+   "topic": "Product strategy",
+   "q": "In the same Dettol-as-luxury scenario, which of these were Dr. Kapoor’s views? (Select all)",
+   "c": [
+    "Both trust and positioning would survive unchanged",
+    "Distribution economies probably wouldn’t work: luxury needs fewer stores and higher margins",
+    "Mass distribution would become even cheaper",
+    "Trust would probably survive, but the germ-protection positioning would not"
+   ],
+   "a": [
+    1,
+    3
+   ],
+   "w": "Dettol runs on low margins across a vast store network, which luxury contradicts. Trust, built over decades, should survive; the positioning around germs and protection would not.",
+   "lec": 33,
+   "lv": "analyse",
+   "multi": true
+  },
+  {
+   "id": "pom-q0461",
+   "topic": "Humanising a brand",
+   "q": "In Lecture 34’s Prestige pressure-cooker chain, which element is the attribute?",
+   "c": [
+    "Food cooked on time",
+    "More time with family",
+    "Togetherness",
+    "Pressure-valve technology that builds steam quickly and spreads it uniformly"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The attribute is a feature of the object itself, the valve technology. Food cooked on time and more family time are benefits; togetherness is the human characteristic.",
+   "lec": 34,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0462",
+   "topic": "Humanising a brand",
+   "q": "Which order matches the Prestige chain in Lecture 34?",
+   "c": [
+    "Togetherness → valve technology → food cooked on time → more family time",
+    "Valve technology → food cooked on time → less time in the kitchen → more time with family → togetherness",
+    "Food cooked on time → valve technology → togetherness → less kitchen time",
+    "Less time in the kitchen → togetherness → valve technology → family time"
+   ],
+   "a": [
+    1
+   ],
+   "w": "An ABC chain runs from the attribute through benefits to the human characteristic, which comes last.",
+   "lec": 34,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0463",
+   "topic": "Humanising a brand",
+   "q": "In Lecture 34’s exercise, what did nine of ten MBA groups, and most of the live class, leave out of their pressure-cooker narratives?",
+   "c": [
+    "The attribute of the product",
+    "The human characteristic",
+    "The benefits",
+    "A celebrity"
+   ],
+   "a": [
+    0
+   ],
+   "w": "They told good stories of benefits and human feelings (ease of use, a mother cooking safely) but left out the object’s attribute, the valve technology.",
+   "lec": 34,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0464",
+   "topic": "Humanising a brand",
+   "q": "Why did Lecture 34 insist that a narrative name the product’s attribute?",
+   "c": [
+    "Attributes are what buyers feel most strongly about",
+    "Regulators require ads to list features",
+    "Without it the story could belong to any brand; the attribute shows why this brand delivers the benefit and makes it believable",
+    "Human characteristics work only for expensive products"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Every tyre ad can show a father and daughter. CEAT saying its grooves give the grip is what makes its safety claim credible. Buyers don’t feel most strongly about attributes; the feeling comes at C.",
+   "lec": 34,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0465",
+   "topic": "Humanising a brand",
+   "q": "A student pitches a cooker ad: “a mother cooks dal for her children, safe and stress-free”. Judged by Lecture 34, what is missing?",
+   "c": [
+    "The A: which feature of this cooker makes it safe and quick",
+    "The B: a benefit",
+    "The C: a human relationship",
+    "Nothing; it is a complete chain"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Safety and ease are benefits and the mother’s care is the human side, so B and C are there. The attribute is missing, which is the gap he found in nine of ten groups.",
+   "lec": 34,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0466",
+   "topic": "Humanising a brand",
+   "q": "In Lecture 34’s Asian Paints ad with a newly-wed couple, which human characteristic does the scuff-free paint lead to?",
+   "c": [
+    "Belongingness through self-expression",
+    "Safety and protection",
+    "Togetherness over meals",
+    "Freedom and independence"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Scuff-free paint means fewer marks and less worry, so the couple can live freely in their own home. Belongingness was Lecture 27’s chain from colours and finishes; safety is CEAT; togetherness is Prestige.",
+   "lec": 34,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0467",
+   "topic": "Humanising a brand",
+   "q": "Which statement about Asian Paints is accurate across Lectures 27 and 34?",
+   "c": [
+    "Lecture 34 corrected Lecture 27’s chain, so only the scuff-free chain is right",
+    "The lectures built two different chains from two different ads: colours to belongingness, and scuff-free to freedom",
+    "Both lectures used the same chain",
+    "Asian Paints was the utilitarian-bucket example in both"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Different ads humanise different attributes; both chains stand. Asian Paints was the love-bucket example both times, with Berger’s celebrity ads the contrast.",
+   "lec": 34,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0468",
+   "topic": "Humanising a brand",
+   "q": "When a student asked whether brands “weaponise” emotions, which word did Dr. Kapoor prefer?",
+   "c": [
+    "Humanise",
+    "Manipulate",
+    "Monetise",
+    "Personalise"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He found weaponise too negative; the aim, he said, is humanising, building a human connection.",
+   "lec": 34,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0469",
+   "topic": "Humanising a brand",
+   "q": "Asked whether every product can be placed in the love bucket, what did Lecture 34 answer?",
+   "c": [
+    "Only high-involvement products",
+    "Only products sold to families",
+    "Yes: every product and service can, if the marketer understands its nuances",
+    "No: commodities stay in the utilitarian bucket"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He said there is no product that cannot be in the love bucket; the pressure cooker was his proof that even a commodity can be humanised.",
+   "lec": 34,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0470",
+   "topic": "Humanising a brand",
+   "q": "In Lecture 34, how much more expensive did Dr. Kapoor say it is to acquire a new customer than to retain one?",
+   "c": [
+    "About 2 times",
+    "8 to 10 times",
+    "About 50 times",
+    "The same"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He said 8 to 10 times, close to Lecture 26’s one-seventh to one-tenth for retention. That cost is why churn is the biggest challenge.",
+   "lec": 34,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0471",
+   "topic": "Product strategy",
+   "q": "How did Lecture 35 define product strategy?",
+   "c": [
+    "A plan to make a product that solves a customer’s problem",
+    "The plan a company creates to define the vision for a product and identify how that vision will be realised",
+    "The set of all products a firm offers",
+    "The price a firm sets for a new product"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He stressed that it is more than solving a problem, which makes the product a transaction when others solve it too; it is the product’s vision and how it will be realised. The set of all products is the product mix.",
+   "lec": 35,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0472",
+   "topic": "Product strategy",
+   "q": "What are the three corners of Lecture 35’s product strategy triad?",
+   "c": [
+    "Attribute, benefit and human characteristic",
+    "Price, place and promotion",
+    "Product (the differentiator), value, and connect",
+    "Width, depth and length"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The triad is product, value (to the business and the user) and connect (the experience that drives demand). Attribute–benefit–characteristic is the ABC model.",
+   "lec": 35,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0473",
+   "topic": "Product strategy",
+   "q": "In the triad, what did Dr. Kapoor say the connect is a function of?",
+   "c": [
+    "The experience buyers get, which drives demand",
+    "The product’s price",
+    "The number of retail outlets",
+    "The firm’s profit margin"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Connect comes from the experience of using the product and is what drives demand. He called it the most important and most often missing piece.",
+   "lec": 35,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0474",
+   "topic": "Product strategy",
+   "q": "Which of these did Lecture 35 list as elements of a product strategy? (Select all)",
+   "c": [
+    "Target market",
+    "Unique value proposition (UVP)",
+    "The competitor’s advertising budget",
+    "Pricing strategy"
+   ],
+   "a": [
+    0,
+    1,
+    3
+   ],
+   "w": "He listed target market, UVP, key features and pricing strategy. A rival’s ad budget is not part of your product strategy.",
+   "lec": 35,
+   "lv": "recall",
+   "multi": true
+  },
+  {
+   "id": "pom-q0475",
+   "topic": "Product strategy",
+   "q": "Why does Dove call its product a moisturising bar and never a soap, according to Lecture 35?",
+   "c": [
+    "Soap is taxed at a higher rate",
+    "Dove contains no cleansing agents",
+    "Moisturising bars are cheaper to make",
+    "Calling it soap would put it in a crowded market of hundreds of soaps; the moisturising bar differentiates it"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The name is the product corner of the triad: it differentiates Dove from every soap. The Real Beauty campaigns then build the connect.",
+   "lec": 35,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0476",
+   "topic": "Product strategy",
+   "q": "What does Pampers’ product strategy communicate, as Lecture 35 described it?",
+   "c": [
+    "The lowest price per diaper",
+    "Best overnight dryness and comfort for uninterrupted sleep, for the baby and so for the parents",
+    "The most absorbent material ever made",
+    "Eco-friendly packaging"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Parents, not babies, buy diapers: a comfortable baby sleeps, so the parents sleep. He rated the product as fine but the connect as outstanding.",
+   "lec": 35,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0477",
+   "topic": "Product strategy",
+   "q": "How did Cetaphil launch, according to Lecture 35?",
+   "c": [
+    "Through dermatologists’ recommendations rather than retail marketing",
+    "Through celebrity endorsements on television",
+    "By co-branding with a pharmacy chain",
+    "By undercutting rivals on price"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Skin experts recommended it, which gave expert validation; a genuinely good product then delivered value and built the connect.",
+   "lec": 35,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0478",
+   "topic": "Product strategy",
+   "q": "Colgate’s beef lasagna was clearly different from other packaged meals. In Lecture 35’s triad, where did it fail?",
+   "c": [
+    "Product: it wasn’t differentiated",
+    "Price: it cost far more than rivals",
+    "Connect: buyers link Colgate to oral hygiene, not food, so no connect formed and no value followed",
+    "Nothing: it succeeded"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The product corner was strong; the triangle broke at the connect, and without connect there was no value. Being different isn’t enough.",
+   "lec": 35,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0479",
+   "topic": "Product strategy",
+   "q": "Why, in Lecture 35’s analysis, did Crystal Pepsi fail even though some soda drinkers might value it?",
+   "c": [
+    "It contained too much caffeine",
+    "As a clear, caffeine-free drink it competed with every soda water, so buyers had no reason to choose Pepsi’s",
+    "It was sold only in India",
+    "Pepsi never advertised it"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Even granting some value, it created no connect: once it was effectively soda water, Bisleri or any other soda would do. Its rivals were no longer just Coca-Cola and Thums Up.",
+   "lec": 35,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0480",
+   "topic": "Product strategy",
+   "q": "Parle’s Suraksha sanitiser sold well during COVID but not afterwards. What does Lecture 35 conclude?",
+   "c": [
+    "It worked only because rivals were out of stock; afterwards it lacked differentiation and connect, since Parle means biscuits",
+    "Sanitisers stopped selling after COVID",
+    "Its price was too low to be trusted",
+    "It was a strong product strategy that later suffered from bad distribution"
+   ],
+   "a": [
+    0
+   ],
+   "w": "In context it delivered value, but once Lifebuoy and Dettol were back on shelves, none of the triad held. A special moment is not a lasting strategy.",
+   "lec": 35,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0481",
+   "topic": "Product strategy",
+   "q": "Cheetos launched a cheese-flavoured lip balm. Which corners of the triad did Lecture 35 say it had?",
+   "c": [
+    "All three",
+    "Value and connect, but no differentiation",
+    "Connect only",
+    "Only a differentiated product; no value and no connect"
+   ],
+   "a": [
+    3
+   ],
+   "w": "It was certainly different, but it offered buyers no value and so built no connect: none of the sides joined.",
+   "lec": 35,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0482",
+   "topic": "Branding",
+   "q": "How did Lecture 35 define co-branding?",
+   "c": [
+    "The synergy of combining two well-known brands into a third, unique branded product or service",
+    "A brand hiring a celebrity to promote its products",
+    "One company buying another to own its brand",
+    "A firm launching a new brand in a new category"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Two established brands combine to create a new product or service. A celebrity tie-up is co-marketing; buying a brand is an acquisition.",
+   "lec": 35,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0483",
+   "topic": "Branding",
+   "q": "Brand A and brand B co-brand to create C. According to Lecture 35, what is C?",
+   "c": [
+    "A new brand that replaces both",
+    "A merged company",
+    "A new product that combines A and B, not a new third brand",
+    "A celebrity endorsement"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He warned students not to read C as a third brand: it is a product, such as the Axis–Vistara card, carrying both names.",
+   "lec": 35,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0484",
+   "topic": "Branding",
+   "q": "Why does co-branding exist, according to Lecture 35?",
+   "c": [
+    "It avoids the need for any marketing",
+    "It always halves each partner’s costs",
+    "It lets one brand take over the other",
+    "It lets a brand import credibility and meaning faster than it could build them alone"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Each partner borrows the other’s credibility and audience, like two stars in one film. It doesn’t remove marketing or guarantee lower costs.",
+   "lec": 35,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0485",
+   "topic": "Branding",
+   "q": "An HP laptop carries an “Intel Inside” sticker. Which type of co-branding is this?",
+   "c": [
+    "Composite co-branding",
+    "Ingredient co-branding",
+    "Co-marketing",
+    "Line filling"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Intel’s processor is a renowned brand used as an element inside another renowned brand’s product, which is ingredient co-branding. Composite co-branding is two brands creating an offering together.",
+   "lec": 35,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0486",
+   "topic": "Branding",
+   "q": "Skechers shoes with Goodyear soles: what does Lecture 35 say Skechers gains?",
+   "c": [
+    "Credibility for grip and safety, borrowed from a tyre maker, through ingredient co-branding",
+    "A cheaper sole, through composite co-branding",
+    "Access to Goodyear’s car buyers through co-marketing",
+    "Nothing; buyers ignore component brands"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Goodyear means grip, traction and stability on the road, and that meaning transfers to the shoe. The sole is a component, so it is ingredient co-branding.",
+   "lec": 35,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0487",
+   "topic": "Branding",
+   "q": "Axis Bank and Vistara launched a co-branded credit card. According to Lecture 35, what risk does this carry for Axis?",
+   "c": [
+    "None: only the weaker partner suffers",
+    "Axis loses its banking licence",
+    "If Vistara takes a hit or disappears, cardholders feel let down by Axis too and grow sceptical of its future partnerships",
+    "The card becomes a downward stretch"
+   ],
+   "a": [
+    2
+   ],
+   "w": "In co-branding a partner’s fall hits you by default. Cardholders who invested in the card would doubt a future Axis–IndiGo card.",
+   "lec": 35,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0488",
+   "topic": "Branding",
+   "q": "Levi’s launches a collection promoted by Deepika Padukone. What does Lecture 35 call this?",
+   "c": [
+    "Composite co-branding",
+    "Co-marketing, because she brings herself as an endorser, not a product",
+    "Ingredient co-branding",
+    "A two-way market stretch"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Co-branding needs two brands creating a product. Had her own clothing brand partnered Levi’s, it would have been co-branding.",
+   "lec": 35,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0489",
+   "topic": "Branding",
+   "q": "In the Clarks × Zara collaboration (“heritage made current”), what did Lecture 35 say Zara brought?",
+   "c": [
+    "Heritage and craftsmanship",
+    "Comfort technology for the sole",
+    "A celebrity endorser",
+    "Trends, velocity, cultural relevance and scale"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Clarks brought heritage and comfortable craftsmanship; Zara brought trend-led design at speed and scale, which Clarks would find hard alone.",
+   "lec": 35,
+   "lv": "recall"
   }
  ],
  "briefs": {
@@ -10056,6 +11497,10 @@ HUB.addCourse({
   "lec-29",
   "lec-30",
   "lec-31",
-  "pom17-ch08"
+  "pom17-ch08",
+  "lec-32",
+  "lec-33",
+  "lec-34",
+  "lec-35"
  ]
 });

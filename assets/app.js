@@ -391,7 +391,7 @@ function courseView(slug, p) {
       <div class="cell"><dt>Mastery</dt><dd>${m.pct}%<small>${m.right} of ${m.total} right on last try</small></dd></div>
       <div class="cell${m.mistakes ? " hot" : ""}"><dt>Mistakes</dt><dd>${m.mistakes}<small>to clear</small></dd></div>
       <div class="cell"><dt>Cards due</dt><dd>${due}<small>${C.traps.length + C.defs.length} in the deck</small></dd></div>
-      <div class="cell hot"><dt>Next</dt><dd>${n ? esc(n.name) : "—"}<small>${n ? (n.start ? fmtDate(n.start) + " · " + nu.text : "date not announced") : ""}</small></dd></div>
+      <div class="cell hot"><dt>Next</dt><dd>${n ? esc(n.name) : "—"}<small>${n ? (n.start ? fmtDate(n.start) + " · " + nu.text : n.when || "date not announced") : ""}</small></dd></div>
       <div class="cell"><dt>Weighting</dt><dd>${R.grading.quizPct * R.grading.bestOf}%<small>quizzes · ${quizRule(R.grading)}</small></dd></div>
     </dl>
   </header>
@@ -497,7 +497,7 @@ function courseExams(slug, pane) {
     const u = until(a), b = C.briefs[a.id], mocks = store.mocks(slug, a.id);
     return `<section>
       <div class="sechead"><h2>${esc(a.name)}</h2><span class="tag">${a.status === "tba" ? "date TBA" : u.state === "past" ? "done" : u.text}</span></div>
-      ${a.status === "tba" ? `<p class="lede">Not announced yet. When the official LMS announcement goes up, its date, length, question count and syllabus will be added here and the mock paper will follow them.</p>
+      ${a.status === "tba" ? `<p class="lede">${a.note ? esc(a.note) + " When the full details are announced, they will be added here." : `Not announced yet. When the official LMS announcement goes up, its date, length, question count and syllabus will be added here and the mock paper will follow them.`}</p>
         <div class="actions"><a class="btn ghost" href="${link("mock", { c: slug, a: a.id })}">Sit a practice paper on everything so far</a></div>` : `
       <dl class="strip">
         <div class="cell"><dt>Date</dt><dd>${fmtDate(a.start)}<small>${fmtTime(a.start)} IST · join from ${fmtTime(a.join)}</small></dd></div>

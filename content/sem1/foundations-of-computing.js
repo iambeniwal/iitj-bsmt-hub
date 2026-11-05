@@ -175,6 +175,24 @@ HUB.addCourse({
    "Week 11 — Python: Functions Part 2",
    "Return values, optional arguments, passing and copying lists",
    "rec"
+  ],
+  [
+   29,
+   "Week 11 — Live Lecture 6",
+   "Final exam format, marking rules, exam-style drills",
+   "live"
+  ],
+  [
+   30,
+   "Week 12 — Python: Functions Part 3",
+   "Arbitrary arguments, modules, import styles and aliases",
+   "rec"
+  ],
+  [
+   31,
+   "Week 12 — Python: Classes Part 1",
+   "Classes, instances, __init__() and self",
+   "rec"
   ]
  ],
  "units": [
@@ -344,7 +362,7 @@ HUB.addCourse({
   {
    "id": "python",
    "title": "Python basics",
-   "tag": "Lectures 7, 8, 10, 14, 19, 24",
+   "tag": "Lectures 7, 8, 10, 14, 19, 24, 29",
    "lede": "Variables, strings, numbers, comments and Colab. Syntax questions here are the easiest marks on the paper.",
    "topics": [
     {
@@ -376,6 +394,11 @@ HUB.addCourse({
      "t": "Live Lecture 5: Quiz 2, the final and what's next",
      "src": "L#24",
      "h": "\n<div class=\"def\"><b>From the lecture (L#24): Quiz 2.</b> There will be <b>one more quiz</b>, at the end of October, and <b>no third quiz</b>. The LMS has since confirmed it: <b>Saturday 31 October, 60 MCQs in 20 minutes</b>, covering everything taught up to 25 October. That includes user input and while loops (L#25–26).</div>\n<div class=\"def\"><b>From the lecture (L#24): the final exam.</b> The Python part tests <b>reading code</b>, not syntax. Expect three kinds of question: (1) code you must give the output of, and the code may contain an error, such as an indentation error, in which case the answer is that it gives no output and why; (2) short code written with pen and paper, marked on the logic rather than strict syntax (his example: a task that needs a nested function, a function defined inside another function); (3) one- or two-word answers. He plans <b>no descriptive questions on the Python part</b>; a few may come from the first part of the course (types of data and the four pillars: data, algorithms, hardware, software).</div>\n<div class=\"def\"><b>From the lecture (L#24): assignments.</b> None yet. Once functions and other harder topics are done he'll set assignments in which you submit the code <b>and</b> a plain-English explanation of what it does, since generating the code alone proves nothing.</div>\n<h4>What comes next</h4>\n<p style=\"font-size:14.5px\">After user input and while loops, two chapters remain: <b>functions</b> and <b>classes</b>. His Colab notebooks for both were attached to this lecture's notes, but neither topic was taught in the session. The functions notebook covers defining a function, parameters and arguments (positional, keyword, default values), return values, passing lists, arbitrary numbers of arguments and storing functions in modules. The classes notebook builds a Dog class and a Car class (<code>__init__()</code>, <code>self</code>, instances, attributes and methods), then inheritance, and importing classes from modules. They'll be added here once they're lectured. He also said tuples come back in those two chapters.</p>\n<p style=\"font-size:14.5px\">The next live session is planned as exercises on everything so far, from lists through if statements.</p>\n"
+    },
+    {
+     "t": "Live Lecture 6: the final exam format",
+     "src": "L#29",
+     "h": "<p style=\"font-size:14.5px\">Live Lecture 6 ran on the morning of Saturday 31 October, the day of Quiz 2. Dr. Pathak opened with the final exam because students had told the programme team they were anxious about it. He said the whole paper will use only the question types below: perhaps not all of them, but nothing outside them.</p><div class=\"def\"><b>From the lecture (L#29): what the final will not have.</b> No MCQs. No plain true/false: any true/false item asks for the reason too. No one-word fill-in-the-blanks and no match-the-following.</div><div class=\"def\"><b>From the lecture (L#29): the paper.</b> Written offline, with pen and paper. He expects <b>100 marks</b>, though he also said 70 or 80 is still being discussed. The paper is then scaled down to the final's weight: <b>70%</b> if the quiz counts 30%, or <b>60%</b> if the quiz counts 40%. For the quiz part, if you sat both quizzes the <b>better score</b> is used; if you sat one, that one. Pass mark: <b>35%</b> of the paper's total (35 of 100, or 35% of 80). The exam is in the <b>first week of December</b>. The number of questions isn't fixed yet; he'll announce it through Masai once the paper is set.</div><h4>Part 1 · the theory questions</h4><div class=\"scroller\"><table><thead><tr><th>Type</th><th>Marks</th><th>How much to write</th><th>His example</th></tr></thead><tbody><tr><td><b>Very short answer</b></td><td>1–2</td><td>One or two lines, plus one concrete example</td><td>Define metadata; what is a dictionary?</td></tr><tr><td><b>True/false with reason</b></td><td>2</td><td>Your verdict, then why</td><td>0.5 marks for true/false, 1.5 for the reason</td></tr><tr><td><b>Short answer</b></td><td>3</td><td>Three or four sentences, as points, with examples</td><td>Differentiate cross-sectional and panel data, one example each</td></tr><tr><td><b>Long answer</b></td><td>about 5</td><td>At most 1–2 in the paper; no more than three lines per part</td><td>The five properties of an algorithm, with examples</td></tr><tr><td><b>Diagram, flowchart or pseudocode</b></td><td>like a long answer</td><td>Expect about 1–2</td><td>A flowchart for odd/even or prime/not prime; pseudocode for a repeated message</td></tr></tbody></table></div><p style=\"font-size:14.5px\">His rough arithmetic for a 100-mark paper: the long answers and diagram questions together come to about four questions of about 5 marks, so roughly 20 marks; the other 80 or so go to the short and very short answers and the Python questions.</p><h4>How he wants answers written</h4><ul><li><b>Points, not paragraphs.</b> He has told the TAs that answers in points, or as a block diagram with labelled boxes and arrows, show understanding, and they will get better marks than long passages.</li><li><b>One definition line plus one example.</b> His model for <em>define metadata</em>: data about data. Example: a WhatsApp message carries its time, sender and receiver; a library catalogue records each book's author, title, edition and date.</li><li><b>A 3-mark difference = three points.</b> Two points on how the two ideas differ, a third pairing an example of each (for panel data he pointed back to his MGNREGA example from the data-classification lectures).</li><li><b>A long answer is short per part.</b> Five properties × (two lines to explain + one line of example) = 15 lines, which is enough for full marks. Two pages that don't make sense get nothing; pages aren't counted.</li><li><b>Keywords and accuracy</b> matter more than the amount written.</li></ul><h4>Part 2 · the Python questions</h4><div class=\"scroller\"><table><thead><tr><th>Type</th><th>What you get</th><th>How it is marked</th></tr></thead><tbody><tr><td><b>Output prediction</b></td><td>A few lines of code (often a loop over a list); write the final output</td><td>All or nothing: no step marks. The exact form counts: if the code uses <code>.title()</code>, an answer in lowercase or capitals scores zero</td></tr><tr><td><b>Error spotting and debugging</b></td><td>Code that may contain a missing colon, a wrong indent or an index error; asked to find the error, or simply asked for the output</td><td>Writing an output for code that fails scores zero; saying it gives an error earns half; naming the type (TypeError, IndentationError, IndexError…) earns full marks</td></tr><tr><td><b>Code completion</b></td><td>A program with a <b>whole line</b> missing, not a single word, sometimes with the output shown so you can work back to the line</td><td>Write the missing line or two; where code writing is asked, write pseudocode (the logic), not exact Python</td></tr></tbody></table></div><div class=\"def\"><b>From the lecture (L#29): which question type to expect most.</b> He plans <b>more error-spotting and debugging questions</b> than any other Python type, because reading code for errors is the best test of knowing the language. Missing colons will appear but not often; wrong indentation and index errors more so. There is <b>no writing of full Python programs</b> on paper.</div><div class=\"def\"><b>From the lecture (L#29): Python theory can appear in the short answers.</b> For example: why do we need classes, or what are their advantages? (His answer is the architect's blueprint from the classes lecture, L#31: one plan, many houses.)</div><div class=\"def\"><b>From the lecture (L#29): the syllabus.</b> Only what was taught in the recorded lectures and the live sessions: no new topics and no surprise questions, and no Python method or data structure that wasn't used in the lectures. The Python part is the code files he shared, which are in each lecture's resources section on the LMS; download them and run them in Colab. Some questions will be the coding exercises set at the end of the recorded lectures, with names and details changed. Any textbook is fine for extra reading, but none is prescribed; the course outline lists every topic.</div><h4>What changed since L#24</h4><p style=\"font-size:14.5px\">In L#24 he described the Python part as output questions, short code written on paper (marked on its logic) and one- or two-word answers, with no descriptive questions on Python. L#29 is the later and more detailed word: no full code writing (code completion and pseudocode instead), true/false only with reasons, and Python theory such as the advantages of classes allowed in short answers.</p><p style=\"font-size:14.5px\">On weighting, the LMS rule of 14 October gives the quizzes <b>30%</b> (the higher of the two scores). In this session he said 30% or 40% was still being decided. Until the LMS changes, the official figure is 30%.</p><h4>What comes next</h4><p style=\"font-size:14.5px\">The next session is a TA session, around 7 November; he didn't expect any live session after it. His advice: rewatch the recordings, run the code files, bring doubts to the TA sessions (he noted few students attend them), and read all the code from the lectures rather than hunting for new problems elsewhere.</p><!--viz:foc-error-answer-marks--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A two-line program that joins the integer 5 to a string, with three possible answers: the expected sentence scores zero, saying it errors scores half, and naming TypeError scores full marks.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Three answers to code that fails</div><p style=\"margin:0 0 8px;font-family:var(--mono);font-size:13.5px\">alien_0 = {'color': 'green', 'points': 5}<br>print('You just earned ' + alien_0['points'] + ' points!')</p><div class=\"scroller\"><table><thead><tr><th>What you write</th><th>Marks (L#29)</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">You just earned 5 points!</td><td style=\"background:var(--bad-soft)\">zero: the code never prints</td></tr><tr><td>\"This gives an error.\"</td><td style=\"background:var(--clay-soft)\">half: right idea, no error type</td></tr><tr><td>\"No output: <span style=\"font-family:var(--mono)\">TypeError</span>, an int can't be joined to a string.\"</td><td style=\"background:var(--good-soft)\">full</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Check whether the code runs at all before you write an output; then name the error.</figcaption></figure><!--/viz:foc-error-answer-marks-->"
     },
     {
      "t": "Textbook: Getting Started",
@@ -493,7 +516,7 @@ HUB.addCourse({
   {
    "id": "dicts",
    "title": "Dictionaries &amp; nesting",
-   "tag": "Lectures 21–23",
+   "tag": "Lectures 21–23, 29",
    "lede": "Key-value pairs: the structure for connecting pieces of information. Part 1 creates, reads, changes and deletes pairs; part 2 loops through them; part 3 nests dictionaries and lists inside each other.",
    "topics": [
     {
@@ -530,6 +553,11 @@ HUB.addCourse({
      "t": "A dictionary in a dictionary",
      "src": "L#23",
      "h": "\n<p style=\"font-size:14.5px\">A website has many users, each with a username. Use the usernames as keys, and store each user's details in a dictionary as the value:</p>\n<pre>users = {\n    'aeinstein': {\n        'first': 'albert',\n        'last': 'einstein',\n        'location': 'princeton',\n        },\n    'mcurie': {\n        'first': 'marie',\n        'last': 'curie',\n        'location': 'paris',\n        },\n    }\n\nfor username, user_info in users.items():\n    print(\"\\nUsername: \" + username)\n    full_name = user_info['first'] + \" \" + user_info['last']\n    location = user_info['location']\n\n    print(\"\\tFull name: \" + full_name.title())\n    print(\"\\tLocation: \" + location.title())\n<span class=\"c\"># prints:</span>\n<span class=\"o\"></span>\n<span class=\"o\">Username: aeinstein</span>\n<span class=\"o\">\tFull name: Albert Einstein</span>\n<span class=\"o\">\tLocation: Princeton</span>\n<span class=\"o\"></span>\n<span class=\"o\">Username: mcurie</span>\n<span class=\"o\">\tFull name: Marie Curie</span>\n<span class=\"o\">\tLocation: Paris</span></pre>\n<div class=\"def\">In <code>for username, user_info in users.items():</code> the key (<code>'aeinstein'</code>) goes into <b>username</b> and its value, the <b>inner dictionary</b>, goes into <b>user_info</b>. So <b>user_info is itself a dictionary</b>, and <code>user_info['first']</code>, <code>user_info['last']</code> and <code>user_info['location']</code> read from it.</div>\n<ul>\n<li>The outer dictionary <code>users</code> has <b>two</b> key-value pairs. Each whole inner dictionary is one value.</li>\n<li>Outside a loop, reach an inner value with two lookups in a row: <code>users['mcurie']['location']</code> gives <code>'paris'</code>. <code>users['location']</code> is a KeyError, because <code>'location'</code> is a key of the inner dictionaries only.</li>\n<li>Give every inner dictionary the same keys (first, last, location). The loop then works the same way for every user.</li>\n</ul>\n<h4>The chapter in one list</h4>\n<ul>\n<li>Define a dictionary; read, add, change and delete pairs (L#21).</li>\n<li>Loop through its pairs, keys, sorted keys and values (L#22).</li>\n<li>Nest dictionaries in a list, lists in a dictionary, and a dictionary in a dictionary (L#23).</li>\n</ul>\n<p style=\"font-size:14.5px\">Next chapter: <code>while</code> loops and taking input from the user, so programs can respond to what people type.</p>\n<div class=\"card\"><b>Practice set from the lecture</b> (20 minutes). (1) <b>Pets:</b> one dictionary per pet, holding the kind of animal and the owner's name; store them in a list called <code>pets</code>, then loop through it and print everything about each pet. (2) <b>Favourite places:</b> a dictionary <code>favorite_places</code> with three people as keys and one to three favourite places for each (a list as the value); asking friends makes it primary data. Print each name and their places. (3) <b>Cities:</b> a dictionary <code>cities</code> with three city names as keys; each value is a dictionary with <code>country</code>, <code>population</code> and <code>fact</code>. Print each city and everything stored about it.</div>\n<pre>cities = {\n    'jodhpur': {'country': 'india', 'fact': 'known as the blue city'},\n    'kochi': {'country': 'india', 'fact': 'a major port on the arabian sea'},\n    }\nfor city, info in cities.items():\n    print(city.title() + \" (\" + info['country'].title() + \"): \" + info['fact'])\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Jodhpur (India): known as the blue city</span>\n<span class=\"o\">Kochi (India): a major port on the arabian sea</span></pre>\n<!--viz:foc-nested-dict-lookup--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow from the users dictionary, through the key mcurie to Marie Curie's inner dictionary, then through the key location to the value paris.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Two lookups reach an inner value</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">users</span></div><span style=\"color:var(--ink-3)\">→ <span style=\"font-family:var(--mono)\">['mcurie']</span> →</span><div style=\"padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono);font-size:13px\">{'first': 'marie', 'last': 'curie', 'location': 'paris'}</span></div><span style=\"color:var(--ink-3)\">→ <span style=\"font-family:var(--mono)\">['location']</span> →</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b style=\"font-family:var(--mono)\">'paris'</b></div></div><p style=\"margin:10px 0 0;font-size:13.5px;color:var(--ink-2)\">In the loop, <span style=\"font-family:var(--mono)\">user_info</span> already holds the middle box, so one lookup is enough: <span style=\"font-family:var(--mono)\">user_info['location']</span>.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The first key picks the inner dictionary; the second key picks the value inside it.</figcaption></figure><!--/viz:foc-nested-dict-lookup-->"
+    },
+    {
+     "t": "Live Lecture 6: dictionary drills",
+     "src": "L#29",
+     "h": "<p style=\"font-size:14.5px\">After the exam briefing he revised dictionaries, functions and classes in Colab, turning lecture code into the kinds of question he described. The code is from L#21–23.</p><h4>A model answer: what is a dictionary?</h4><p style=\"font-size:14.5px\">A collection of key-value pairs inside curly braces, with a colon between each key and its value and commas between pairs. Add one small example of creating it and reading one value, and stop there:</p><pre>student_0 = {'program': 'BSMT', 'module': 'Foundations of Computing', 'roll_number': 12}\nprint(student_0['module'])\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Foundations of Computing</span></pre><h4>Spot the error: a number joined to text</h4><p style=\"font-size:14.5px\">He took the L#21 points line and removed the <code>str()</code>:</p><pre>alien_0 = {'color': 'green', 'points': 5}\nprint('You just earned ' + alien_0['points'] + ' points!')\n<span class=\"c\"># last line of the traceback:</span>\n<span class=\"o\">TypeError: can only concatenate str (not \"int\") to str</span></pre><p style=\"font-size:14.5px\">The value of <code>'points'</code> is the integer 5, and + can't join an integer to a string. The full-marks answer: <b>no output, a TypeError</b>. \"You just earned 5 points!\" scores zero.</p><h4>Fill in the missing line</h4><p style=\"font-size:14.5px\">The L#21 moving alien again, with one line blanked out and the output given. The dictionary says <code>'medium'</code>, which would move the alien 2, yet the output shows 3. So the missing line must change the speed to something that is neither slow nor medium:</p><pre>alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}\nprint(\"Original x-position: \" + str(alien_0['x_position']))\nalien_0['speed'] = 'fast'          # the missing line\n\nif alien_0['speed'] == 'slow':\n    x_increment = 1\nelif alien_0['speed'] == 'medium':\n    x_increment = 2\nelse:\n    x_increment = 3\n\nalien_0['x_position'] = alien_0['x_position'] + x_increment\nprint(\"New x-position: \" + str(alien_0['x_position']))\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Original x-position: 0</span>\n<span class=\"o\">New x-position: 3</span></pre><h4>One print statement only</h4><p style=\"font-size:14.5px\">Another constraint he likes: print every key and value of <code>user_0</code> using <b>no more than one print statement</b>. Three separate prints break the rule; a loop over <code>items()</code> keeps it:</p><pre>user_0 = {'username': 'efermi', 'first': 'enrico', 'last': 'fermi'}\nfor key, value in user_0.items():\n    print(\"Key: \" + key + \" | Value: \" + value)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Key: username | Value: efermi</span>\n<span class=\"o\">Key: first | Value: enrico</span>\n<span class=\"o\">Key: last | Value: fermi</span></pre><h4>items(), keys(), values() or nothing</h4><p style=\"font-size:14.5px\">Expect the same loop with the method swapped, and a question on what changes:</p><div class=\"scroller\"><table><thead><tr><th>Loop header</th><th>The loop variable gets</th></tr></thead><tbody><tr><td><code>for name, language in favorite_languages.items():</code></td><td>each key and its value</td></tr><tr><td><code>for name in favorite_languages.keys():</code></td><td>each key only</td></tr><tr><td><code>for name in favorite_languages:</code></td><td>each key only: looping over a dictionary gives its keys by default</td></tr><tr><td><code>for language in favorite_languages.values():</code></td><td>each value only</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Several students answered the no-method version correctly in the chat: its output is identical to the <code>keys()</code> version.</p><h4>Nesting, and working back from the output</h4><p style=\"font-size:14.5px\">Putting a structure inside another is <b>nesting</b>: dictionaries in a list, a list in a dictionary, a dictionary in a dictionary, a list in a list. He extended the word to a function inside a function and a for loop inside a for loop. One question type gives you the printing code and its output and asks you to write the dictionary that produced it. Here the toppings print one per line under the crust, so <code>toppings</code> must be a list stored as a value:</p><pre>pizza = {'crust': 'thick', 'toppings': ['mushrooms', 'extra cheese']}   # you write this line\n\nprint(\"You ordered a \" + pizza['crust'] + \"-crust pizza with the following toppings:\")\nfor topping in pizza['toppings']:\n    print(\"\\t\" + topping)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">You ordered a thick-crust pizza with the following toppings:</span>\n<span class=\"o\">\tmushrooms</span>\n<span class=\"o\">\textra cheese</span></pre>"
     },
     {
      "t": "Textbook: Dictionaries",
@@ -579,8 +607,8 @@ HUB.addCourse({
   {
    "id": "functions",
    "title": "Functions",
-   "tag": "Lectures 27–28",
-   "lede": "Named blocks of code you write once and call whenever the job is needed. Part 1 covers def, docstrings and calls, parameters and arguments, positional and keyword arguments, and default values; part 2 adds return values, optional arguments, returning dictionaries, functions in while loops, and passing, changing and copying lists.",
+   "tag": "Lectures 27–29",
+   "lede": "Named blocks of code you write once and call whenever the job is needed. Part 1 covers def, docstrings and calls, parameters and arguments, positional and keyword arguments, and default values; part 2 adds return values, optional arguments, returning dictionaries, functions in while loops, and passing, changing and copying lists; part 3 adds any number of arguments (*args, **kwargs) and storing functions in modules, with the ways to import them.",
    "topics": [
     {
      "t": "Defining and calling a function",
@@ -616,6 +644,69 @@ HUB.addCourse({
      "t": "Passing a list to a function",
      "src": "L#28",
      "h": "\n<p style=\"font-size:14.5px\">Lists can be passed to functions too, whether they hold names, numbers or dictionaries. When you pass a list, the function gets <b>direct access</b> to its contents.</p>\n<h4>Passing a list</h4>\n<pre>def greet_users(names):\n    \"\"\"Print a simple greeting to each user in the list.\"\"\"\n    for name in names:\n        msg = \"Hello, \" + name.title() + \"!\"\n        print(msg)\n\nusernames = ['priyanka', 'unnati', 'anaaya']\ngreet_users(usernames)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Hello, Priyanka!</span>\n<span class=\"o\">Hello, Unnati!</span>\n<span class=\"o\">Hello, Anaaya!</span></pre>\n<p style=\"font-size:14.5px\">The parameter <code>names</code> receives the whole list, and the for loop inside the function greets each user in turn.</p>\n<h4>Modifying a list in a function</h4>\n<p style=\"font-size:14.5px\">Changes a function makes to a list it was given are <b>permanent</b>: the function works on the caller's list itself, not on a copy. That lets a function process lots of data efficiently. His example is a company that 3D-prints designs sent in by users: designs waiting to be printed sit in one list and move to a second list once printed. He first wrote it without functions (a while loop with pop() and append(), then a for loop to show the results), then split it into two functions:</p>\n<pre>def print_models(unprinted_designs, completed_models):\n    \"\"\"\n    Simulate printing each design, until none are left.\n    Move each design to completed_models after printing.\n    \"\"\"\n    while unprinted_designs:\n        current_design = unprinted_designs.pop()\n        print(\"Printing model: \" + current_design)\n        completed_models.append(current_design)\n\ndef show_completed_models(completed_models):\n    \"\"\"Show all the models that were printed.\"\"\"\n    print(\"\\nThe following models have been printed:\")\n    for completed_model in completed_models:\n        print(completed_model)\n\nunprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']\ncompleted_models = []\n\nprint_models(unprinted_designs, completed_models)\nshow_completed_models(completed_models)\nprint(unprinted_designs)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Printing model: dodecahedron</span>\n<span class=\"o\">Printing model: robot pendant</span>\n<span class=\"o\">Printing model: iphone case</span>\n<span class=\"o\"></span>\n<span class=\"o\">The following models have been printed:</span>\n<span class=\"o\">dodecahedron</span>\n<span class=\"o\">robot pendant</span>\n<span class=\"o\">iphone case</span>\n<span class=\"o\">[]</span></pre>\n<ul>\n<li><code>pop()</code> takes from the <b>end</b>, so the dodecahedron is printed first and the completed list comes out in reverse order.</li>\n<li>Afterwards <code>unprinted_designs</code> is <b>empty</b>: the function emptied the original list.</li>\n<li><b>Every function should have one specific job.</b> print_models prints the designs; show_completed_models shows the results. The program is now easier to extend and maintain: to print more designs, just call print_models again; if the printing code needs to change, change it once, in the function.</li>\n<li>If a function is doing too many different tasks, split it into two. A function can also call another function, which helps break a complex task into a series of steps.</li>\n</ul>\n<h4>Preventing a function from modifying a list</h4>\n<p style=\"font-size:14.5px\">Sometimes you want to keep the original, for your records, say. Then pass the function a <b>copy</b> of the list. The slice <code>[:]</code> means every item from the first to the last, and makes a new list; the function's changes then affect only the copy:</p>\n<pre>unprinted_designs = ['ferrari', 'honda', 'ford']\ncompleted_models = []\n\nprint_models(unprinted_designs[:], completed_models)\nshow_completed_models(completed_models)\nprint(unprinted_designs)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Printing model: ford</span>\n<span class=\"o\">Printing model: honda</span>\n<span class=\"o\">Printing model: ferrari</span>\n<span class=\"o\"></span>\n<span class=\"o\">The following models have been printed:</span>\n<span class=\"o\">ford</span>\n<span class=\"o\">honda</span>\n<span class=\"o\">ferrari</span>\n<span class=\"o\">['ferrari', 'honda', 'ford']</span></pre>\n<p style=\"font-size:14.5px\">The copy was emptied; the original still holds all three designs. <code>completed_models</code> is passed as it is, because the whole point is for the function to fill it.</p>\n<div class=\"card\"><b>Practice set from the lecture</b> (30 minutes). (1) <b>City names:</b> <code>city_country()</code> takes a city and its country and <b>returns</b> a string such as \"Chennai, India\"; call it for three pairs and print what comes back. (2) <b>Album:</b> <code>make_album()</code> takes an artist and an album title and returns a dictionary of the two; make three albums and print each. Then add an optional parameter for the number of tracks, added to the dictionary only when given. (3) <b>User albums:</b> a while loop asks for an artist and a title, calls make_album() and prints the dictionary, with a quit value. (4) <b>Magicians:</b> pass a list of magicians' names to <code>show_magicians()</code>, which prints each name. (5) <b>Great magicians:</b> <code>make_great()</code> changes the list by adding \"the Great\" to each name; show the list to see the change. (6) <b>Unchanged magicians:</b> call make_great() with a copy of the list, return the new list and store it separately, then show both lists.</div>\n<p style=\"font-size:14.5px\">One way to write exercise 1:</p>\n<pre>def city_country(city, country):\n    \"\"\"Return a string like 'Chennai, India'.\"\"\"\n    return city.title() + \", \" + country.title()\n\nprint(city_country('chennai', 'india'))\nprint(city_country('santiago', 'chile'))\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Chennai, India</span>\n<span class=\"o\">Santiago, Chile</span></pre>\n<p style=\"font-size:14.5px\">Next session: passing an arbitrary number of arguments, and storing functions in modules. Quiz 2's syllabus names only functions lectures 1 and 2 (L#27–28), so those two topics are not in Quiz 2; expect them later in the course.</p>\n<!--viz:foc-list-copy-compare--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison of two calls to print_models. Passing unprinted_designs leaves it empty afterwards; passing unprinted_designs[:] leaves it as ferrari, honda, ford. Either way completed_models ends as ford, honda, ferrari.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Passing the list or a copy</div><p style=\"margin:0 0 8px;font-family:var(--mono);font-size:13.5px\">unprinted_designs = ['ferrari', 'honda', 'ford']</p><div class=\"scroller\"><table><thead><tr><th>Call</th><th>Function works on</th><th>unprinted_designs after</th><th>completed_models after</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">print_models(unprinted_designs, completed_models)</td><td>the original list</td><td style=\"font-family:var(--mono);background:var(--bad-soft)\">[]</td><td style=\"font-family:var(--mono)\">['ford', 'honda', 'ferrari']</td></tr><tr><td style=\"font-family:var(--mono)\">print_models(unprinted_designs[:], completed_models)</td><td>a copy made by [:]</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">['ferrari', 'honda', 'ford']</td><td style=\"font-family:var(--mono)\">['ford', 'honda', 'ferrari']</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The [:] copy is the only difference, and it decides whether the original survives.</figcaption></figure><!--/viz:foc-list-copy-compare--><!--viz:foc-anim-list-copy--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Animated code tracer for print_models run twice. In run 1 the call passes unprinted_designs itself, so the name inside the function refers to the caller's list; each pass pops a design off the end and appends it to completed_models, and print(unprinted_designs) shows []. In run 2 the call passes unprinted_designs[:], a copy, so only the copy is emptied and the original list ['ferrari', 'honda', 'ford'] is printed unchanged.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Passing a list vs passing a copy</div><div class=\"anim\" data-ms=\"1500\"><div class=\"af on\" data-cap=\"Run 1 passes the list itself: inside print_models, unprinted_designs names the very same list\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 565\" role=\"img\" aria-label=\"print_models trace, step 1\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><rect class=\"k0\" data-k=\"pc\" x=\"4\" y=\"187.4\" width=\"432\" height=\"18\" rx=\"3\"/><g style=\"fill:var(--ink);font-size:13px;white-space:pre\"><text x=\"12\" y=\"20\">def print_models(unprinted_designs, completed_models):</text><text class=\"tl\" x=\"43.2\" y=\"38\">\"\"\"</text><text class=\"tl\" x=\"43.2\" y=\"56\" textLength=\"388.8\">Simulate printing each design, until none are left.</text><text class=\"tl\" x=\"43.2\" y=\"74\" textLength=\"388.8\">Move each design to completed_models after printing.</text><text class=\"tl\" x=\"43.2\" y=\"92\">\"\"\"</text><text x=\"43.2\" y=\"110\">while unprinted_designs:</text><text x=\"74.4\" y=\"128\">current_design = unprinted_designs.pop()</text><text x=\"74.4\" y=\"146\">print(\"Printing model: \" + current_design)</text><text x=\"74.4\" y=\"164\">completed_models.append(current_design)</text><text x=\"12\" y=\"200\">print_models(unprinted_designs, completed_models)</text><text x=\"12\" y=\"218\">show_completed_models(completed_models)</text><text x=\"12\" y=\"236\">print(unprinted_designs)</text></g><path class=\"ln\" d=\"M10 252H430\"/><text class=\"tx\" x=\"12\" y=\"272\">caller's names</text><text class=\"tx\" x=\"428\" y=\"272\" text-anchor=\"end\">names inside print_models()</text><text class=\"tl\" x=\"12\" y=\"290\">unprinted_designs</text><path style=\"fill:var(--ink-3)\" d=\"M15 294h10l-5 7z\"/><text class=\"tl\" x=\"428\" y=\"290\" text-anchor=\"end\" style=\"fill:var(--blue)\">unprinted_designs</text><path class=\"ln\" style=\"stroke:var(--blue)\" d=\"M420 295V315H396\"/><path style=\"fill:var(--blue)\" d=\"M388 315l8-4v8z\"/><text class=\"tx\" x=\"220\" y=\"377\" text-anchor=\"middle\">no copy: both names lead to one list</text><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"iphone case\"><rect class=\"k0\" x=\"12\" y=\"304\" width=\"113\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"320\">'iphone case'</text></g><g data-k=\"robot pendant\"><rect class=\"k0\" x=\"129\" y=\"304\" width=\"129\" height=\"22\" rx=\"3\"/><text x=\"135\" y=\"320\">'robot pendant'</text></g><g data-k=\"dodecahedron\"><rect class=\"k0\" x=\"262\" y=\"304\" width=\"121\" height=\"22\" rx=\"3\"/><text x=\"268\" y=\"320\">'dodecahedron'</text></g></g><text class=\"tl\" x=\"12\" y=\"406\">completed_models</text><path style=\"fill:var(--ink-3)\" d=\"M15 410h10l-5 7z\"/><text class=\"tl\" x=\"428\" y=\"406\" text-anchor=\"end\" style=\"fill:var(--blue)\">completed_models</text><path class=\"ln\" style=\"stroke:var(--blue)\" d=\"M420 411V431H43\"/><path style=\"fill:var(--blue)\" d=\"M35 431l8-4v8z\"/><text class=\"tl\" x=\"14\" y=\"436\">[]</text><rect class=\"k3\" x=\"12\" y=\"490\" width=\"416\" height=\"65\" rx=\"4\"/></svg></div></div><div class=\"af\" data-cap=\"pop() takes &#x27;dodecahedron&#x27; off the end of that one list, so the caller&#x27;s list loses it too\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 565\" role=\"img\" aria-label=\"print_models trace, step 2\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><rect class=\"k0\" data-k=\"pc\" x=\"4\" y=\"115.4\" width=\"432\" height=\"18\" rx=\"3\"/><g style=\"fill:var(--ink);font-size:13px;white-space:pre\"><text x=\"12\" y=\"20\">def print_models(unprinted_designs, completed_models):</text><text class=\"tl\" x=\"43.2\" y=\"38\">\"\"\"</text><text class=\"tl\" x=\"43.2\" y=\"56\" textLength=\"388.8\">Simulate printing each design, until none are left.</text><text class=\"tl\" x=\"43.2\" y=\"74\" textLength=\"388.8\">Move each design to completed_models after printing.</text><text class=\"tl\" x=\"43.2\" y=\"92\">\"\"\"</text><text x=\"43.2\" y=\"110\">while unprinted_designs:</text><text x=\"74.4\" y=\"128\">current_design = unprinted_designs.pop()</text><text x=\"74.4\" y=\"146\">print(\"Printing model: \" + current_design)</text><text x=\"74.4\" y=\"164\">completed_models.append(current_design)</text><text x=\"12\" y=\"200\">print_models(unprinted_designs, completed_models)</text><text x=\"12\" y=\"218\">show_completed_models(completed_models)</text><text x=\"12\" y=\"236\">print(unprinted_designs)</text></g><path class=\"ln\" d=\"M10 252H430\"/><text class=\"tx\" x=\"12\" y=\"272\">caller's names</text><text class=\"tx\" x=\"428\" y=\"272\" text-anchor=\"end\">names inside print_models()</text><text class=\"tl\" x=\"12\" y=\"290\">unprinted_designs</text><path style=\"fill:var(--ink-3)\" d=\"M15 294h10l-5 7z\"/><text class=\"tl\" x=\"428\" y=\"290\" text-anchor=\"end\" style=\"fill:var(--blue)\">unprinted_designs</text><path class=\"ln\" style=\"stroke:var(--blue)\" d=\"M420 295V315H271\"/><path style=\"fill:var(--blue)\" d=\"M263 315l8-4v8z\"/><text class=\"tx\" x=\"220\" y=\"377\" text-anchor=\"middle\">no copy: both names lead to one list</text><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"iphone case\"><rect class=\"k0\" x=\"12\" y=\"304\" width=\"113\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"320\">'iphone case'</text></g><g data-k=\"robot pendant\"><rect class=\"k0\" x=\"129\" y=\"304\" width=\"129\" height=\"22\" rx=\"3\"/><text x=\"135\" y=\"320\">'robot pendant'</text></g></g><text class=\"tl\" x=\"12\" y=\"406\">completed_models</text><path style=\"fill:var(--ink-3)\" d=\"M15 410h10l-5 7z\"/><text class=\"tl\" x=\"428\" y=\"406\" text-anchor=\"end\" style=\"fill:var(--blue)\">completed_models</text><path class=\"ln\" style=\"stroke:var(--blue)\" d=\"M420 411V431H43\"/><path style=\"fill:var(--blue)\" d=\"M35 431l8-4v8z\"/><text class=\"tl\" x=\"14\" y=\"436\">[]</text><text class=\"tl\" x=\"428\" y=\"471\" text-anchor=\"end\" style=\"fill:var(--blue)\">current_design</text><g data-k=\"dodecahedron\"><rect class=\"k0\" x=\"12\" y=\"454\" width=\"131.6\" height=\"24\" rx=\"4\"/><text class=\"tv\" x=\"19\" y=\"471\">'dodecahedron'</text></g><rect class=\"k3\" x=\"12\" y=\"490\" width=\"416\" height=\"65\" rx=\"4\"/></svg></div></div><div class=\"af\" data-cap=\"print shows it, then append() adds &#x27;dodecahedron&#x27; to completed_models\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 565\" role=\"img\" aria-label=\"print_models trace, step 3\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><rect class=\"k0\" data-k=\"pc\" x=\"4\" y=\"151.4\" width=\"432\" height=\"18\" rx=\"3\"/><g style=\"fill:var(--ink);font-size:13px;white-space:pre\"><text x=\"12\" y=\"20\">def print_models(unprinted_designs, completed_models):</text><text class=\"tl\" x=\"43.2\" y=\"38\">\"\"\"</text><text class=\"tl\" x=\"43.2\" y=\"56\" textLength=\"388.8\">Simulate printing each design, until none are left.</text><text class=\"tl\" x=\"43.2\" y=\"74\" textLength=\"388.8\">Move each design to completed_models after printing.</text><text class=\"tl\" x=\"43.2\" y=\"92\">\"\"\"</text><text x=\"43.2\" y=\"110\">while unprinted_designs:</text><text x=\"74.4\" y=\"128\">current_design = unprinted_designs.pop()</text><text x=\"74.4\" y=\"146\">print(\"Printing model: \" + current_design)</text><text x=\"74.4\" y=\"164\">completed_models.append(current_design)</text><text x=\"12\" y=\"200\">print_models(unprinted_designs, completed_models)</text><text x=\"12\" y=\"218\">show_completed_models(completed_models)</text><text x=\"12\" y=\"236\">print(unprinted_designs)</text></g><path class=\"ln\" d=\"M10 252H430\"/><text class=\"tx\" x=\"12\" y=\"272\">caller's names</text><text class=\"tx\" x=\"428\" y=\"272\" text-anchor=\"end\">names inside print_models()</text><text class=\"tl\" x=\"12\" y=\"290\">unprinted_designs</text><path style=\"fill:var(--ink-3)\" d=\"M15 294h10l-5 7z\"/><text class=\"tl\" x=\"428\" y=\"290\" text-anchor=\"end\" style=\"fill:var(--blue)\">unprinted_designs</text><path class=\"ln\" style=\"stroke:var(--blue)\" d=\"M420 295V315H271\"/><path style=\"fill:var(--blue)\" d=\"M263 315l8-4v8z\"/><text class=\"tx\" x=\"220\" y=\"377\" text-anchor=\"middle\">no copy: both names lead to one list</text><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"iphone case\"><rect class=\"k0\" x=\"12\" y=\"304\" width=\"113\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"320\">'iphone case'</text></g><g data-k=\"robot pendant\"><rect class=\"k0\" x=\"129\" y=\"304\" width=\"129\" height=\"22\" rx=\"3\"/><text x=\"135\" y=\"320\">'robot pendant'</text></g></g><text class=\"tl\" x=\"12\" y=\"406\">completed_models</text><path style=\"fill:var(--ink-3)\" d=\"M15 410h10l-5 7z\"/><text class=\"tl\" x=\"428\" y=\"406\" text-anchor=\"end\" style=\"fill:var(--blue)\">completed_models</text><path class=\"ln\" style=\"stroke:var(--blue)\" d=\"M420 411V431H146\"/><path style=\"fill:var(--blue)\" d=\"M138 431l8-4v8z\"/><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"dodecahedron\"><rect class=\"k2\" x=\"12\" y=\"420\" width=\"121\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"436\">'dodecahedron'</text></g></g><text class=\"tl\" x=\"428\" y=\"471\" text-anchor=\"end\" style=\"fill:var(--blue)\">current_design</text><g data-k=\"ddodecahedron\"><rect class=\"k0\" x=\"12\" y=\"454\" width=\"131.6\" height=\"24\" rx=\"4\"/><text class=\"tv\" x=\"19\" y=\"471\">'dodecahedron'</text></g><rect class=\"k3\" x=\"12\" y=\"490\" width=\"416\" height=\"65\" rx=\"4\"/><g style=\"fill:var(--ink-2);font-size:13px\"><text x=\"22\" y=\"508\">Printing model: dodecahedron</text></g></svg></div></div><div class=\"af\" data-cap=\"Next pass: pop &#x27;robot pendant&#x27;, print it, append it. The caller&#x27;s list shrinks again\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 565\" role=\"img\" aria-label=\"print_models trace, step 4\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><rect class=\"k0\" data-k=\"pc\" x=\"4\" y=\"151.4\" width=\"432\" height=\"18\" rx=\"3\"/><g style=\"fill:var(--ink);font-size:13px;white-space:pre\"><text x=\"12\" y=\"20\">def print_models(unprinted_designs, completed_models):</text><text class=\"tl\" x=\"43.2\" y=\"38\">\"\"\"</text><text class=\"tl\" x=\"43.2\" y=\"56\" textLength=\"388.8\">Simulate printing each design, until none are left.</text><text class=\"tl\" x=\"43.2\" y=\"74\" textLength=\"388.8\">Move each design to completed_models after printing.</text><text class=\"tl\" x=\"43.2\" y=\"92\">\"\"\"</text><text x=\"43.2\" y=\"110\">while unprinted_designs:</text><text x=\"74.4\" y=\"128\">current_design = unprinted_designs.pop()</text><text x=\"74.4\" y=\"146\">print(\"Printing model: \" + current_design)</text><text x=\"74.4\" y=\"164\">completed_models.append(current_design)</text><text x=\"12\" y=\"200\">print_models(unprinted_designs, completed_models)</text><text x=\"12\" y=\"218\">show_completed_models(completed_models)</text><text x=\"12\" y=\"236\">print(unprinted_designs)</text></g><path class=\"ln\" d=\"M10 252H430\"/><text class=\"tx\" x=\"12\" y=\"272\">caller's names</text><text class=\"tx\" x=\"428\" y=\"272\" text-anchor=\"end\">names inside print_models()</text><text class=\"tl\" x=\"12\" y=\"290\">unprinted_designs</text><path style=\"fill:var(--ink-3)\" d=\"M15 294h10l-5 7z\"/><text class=\"tl\" x=\"428\" y=\"290\" text-anchor=\"end\" style=\"fill:var(--blue)\">unprinted_designs</text><path class=\"ln\" style=\"stroke:var(--blue)\" d=\"M420 295V315H138\"/><path style=\"fill:var(--blue)\" d=\"M130 315l8-4v8z\"/><text class=\"tx\" x=\"220\" y=\"377\" text-anchor=\"middle\">no copy: both names lead to one list</text><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"iphone case\"><rect class=\"k0\" x=\"12\" y=\"304\" width=\"113\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"320\">'iphone case'</text></g></g><text class=\"tl\" x=\"12\" y=\"406\">completed_models</text><path style=\"fill:var(--ink-3)\" d=\"M15 410h10l-5 7z\"/><text class=\"tl\" x=\"428\" y=\"406\" text-anchor=\"end\" style=\"fill:var(--blue)\">completed_models</text><path class=\"ln\" style=\"stroke:var(--blue)\" d=\"M420 411V431H279\"/><path style=\"fill:var(--blue)\" d=\"M271 431l8-4v8z\"/><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"dodecahedron\"><rect class=\"k2\" x=\"12\" y=\"420\" width=\"121\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"436\">'dodecahedron'</text></g><g data-k=\"robot pendant\"><rect class=\"k2\" x=\"137\" y=\"420\" width=\"129\" height=\"22\" rx=\"3\"/><text x=\"143\" y=\"436\">'robot pendant'</text></g></g><text class=\"tl\" x=\"428\" y=\"471\" text-anchor=\"end\" style=\"fill:var(--blue)\">current_design</text><g data-k=\"drobot pendant\"><rect class=\"k0\" x=\"12\" y=\"454\" width=\"140\" height=\"24\" rx=\"4\"/><text class=\"tv\" x=\"19\" y=\"471\">'robot pendant'</text></g><rect class=\"k3\" x=\"12\" y=\"490\" width=\"416\" height=\"65\" rx=\"4\"/><g style=\"fill:var(--ink-2);font-size:13px\"><text x=\"22\" y=\"508\">Printing model: dodecahedron</text><text x=\"22\" y=\"527\">Printing model: robot pendant</text></g></svg></div></div><div class=\"af\" data-cap=\"Next pass: pop &#x27;iphone case&#x27;, print it, append it. The caller&#x27;s list shrinks again\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 565\" role=\"img\" aria-label=\"print_models trace, step 5\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><rect class=\"k0\" data-k=\"pc\" x=\"4\" y=\"151.4\" width=\"432\" height=\"18\" rx=\"3\"/><g style=\"fill:var(--ink);font-size:13px;white-space:pre\"><text x=\"12\" y=\"20\">def print_models(unprinted_designs, completed_models):</text><text class=\"tl\" x=\"43.2\" y=\"38\">\"\"\"</text><text class=\"tl\" x=\"43.2\" y=\"56\" textLength=\"388.8\">Simulate printing each design, until none are left.</text><text class=\"tl\" x=\"43.2\" y=\"74\" textLength=\"388.8\">Move each design to completed_models after printing.</text><text class=\"tl\" x=\"43.2\" y=\"92\">\"\"\"</text><text x=\"43.2\" y=\"110\">while unprinted_designs:</text><text x=\"74.4\" y=\"128\">current_design = unprinted_designs.pop()</text><text x=\"74.4\" y=\"146\">print(\"Printing model: \" + current_design)</text><text x=\"74.4\" y=\"164\">completed_models.append(current_design)</text><text x=\"12\" y=\"200\">print_models(unprinted_designs, completed_models)</text><text x=\"12\" y=\"218\">show_completed_models(completed_models)</text><text x=\"12\" y=\"236\">print(unprinted_designs)</text></g><path class=\"ln\" d=\"M10 252H430\"/><text class=\"tx\" x=\"12\" y=\"272\">caller's names</text><text class=\"tx\" x=\"428\" y=\"272\" text-anchor=\"end\">names inside print_models()</text><text class=\"tl\" x=\"12\" y=\"290\">unprinted_designs</text><path style=\"fill:var(--ink-3)\" d=\"M15 294h10l-5 7z\"/><text class=\"tl\" x=\"428\" y=\"290\" text-anchor=\"end\" style=\"fill:var(--blue)\">unprinted_designs</text><path class=\"ln\" style=\"stroke:var(--blue)\" d=\"M420 295V315H43\"/><path style=\"fill:var(--blue)\" d=\"M35 315l8-4v8z\"/><text class=\"tx\" x=\"220\" y=\"377\" text-anchor=\"middle\">no copy: both names lead to one list</text><text class=\"tl\" x=\"14\" y=\"320\">[]</text><text class=\"tl\" x=\"12\" y=\"406\">completed_models</text><path style=\"fill:var(--ink-3)\" d=\"M15 410h10l-5 7z\"/><text class=\"tl\" x=\"428\" y=\"406\" text-anchor=\"end\" style=\"fill:var(--blue)\">completed_models</text><path class=\"ln\" style=\"stroke:var(--blue)\" d=\"M420 411V431H396\"/><path style=\"fill:var(--blue)\" d=\"M388 431l8-4v8z\"/><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"dodecahedron\"><rect class=\"k2\" x=\"12\" y=\"420\" width=\"121\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"436\">'dodecahedron'</text></g><g data-k=\"robot pendant\"><rect class=\"k2\" x=\"137\" y=\"420\" width=\"129\" height=\"22\" rx=\"3\"/><text x=\"143\" y=\"436\">'robot pendant'</text></g><g data-k=\"iphone case\"><rect class=\"k2\" x=\"270\" y=\"420\" width=\"113\" height=\"22\" rx=\"3\"/><text x=\"276\" y=\"436\">'iphone case'</text></g></g><text class=\"tl\" x=\"428\" y=\"471\" text-anchor=\"end\" style=\"fill:var(--blue)\">current_design</text><g data-k=\"diphone case\"><rect class=\"k0\" x=\"12\" y=\"454\" width=\"123.2\" height=\"24\" rx=\"4\"/><text class=\"tv\" x=\"19\" y=\"471\">'iphone case'</text></g><rect class=\"k3\" x=\"12\" y=\"490\" width=\"416\" height=\"65\" rx=\"4\"/><g style=\"fill:var(--ink-2);font-size:13px\"><text x=\"22\" y=\"508\">Printing model: dodecahedron</text><text x=\"22\" y=\"527\">Printing model: robot pendant</text><text x=\"22\" y=\"546\">Printing model: iphone case</text></g></svg></div></div><div class=\"af\" data-cap=\"while unprinted_designs: the list is empty (False), so the loop and the function end\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 565\" role=\"img\" aria-label=\"print_models trace, step 6\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><rect class=\"k0\" data-k=\"pc\" x=\"4\" y=\"97.4\" width=\"432\" height=\"18\" rx=\"3\"/><g style=\"fill:var(--ink);font-size:13px;white-space:pre\"><text x=\"12\" y=\"20\">def print_models(unprinted_designs, completed_models):</text><text class=\"tl\" x=\"43.2\" y=\"38\">\"\"\"</text><text class=\"tl\" x=\"43.2\" y=\"56\" textLength=\"388.8\">Simulate printing each design, until none are left.</text><text class=\"tl\" x=\"43.2\" y=\"74\" textLength=\"388.8\">Move each design to completed_models after printing.</text><text class=\"tl\" x=\"43.2\" y=\"92\">\"\"\"</text><text x=\"43.2\" y=\"110\">while unprinted_designs:</text><text x=\"74.4\" y=\"128\">current_design = unprinted_designs.pop()</text><text x=\"74.4\" y=\"146\">print(\"Printing model: \" + current_design)</text><text x=\"74.4\" y=\"164\">completed_models.append(current_design)</text><text x=\"12\" y=\"200\">print_models(unprinted_designs, completed_models)</text><text x=\"12\" y=\"218\">show_completed_models(completed_models)</text><text x=\"12\" y=\"236\">print(unprinted_designs)</text></g><path class=\"ln\" d=\"M10 252H430\"/><text class=\"tx\" x=\"12\" y=\"272\">caller's names</text><text class=\"tx\" x=\"428\" y=\"272\" text-anchor=\"end\">names inside print_models()</text><text class=\"tl\" x=\"12\" y=\"290\">unprinted_designs</text><path style=\"fill:var(--ink-3)\" d=\"M15 294h10l-5 7z\"/><text class=\"tl\" x=\"428\" y=\"290\" text-anchor=\"end\" style=\"fill:var(--blue)\">unprinted_designs</text><path class=\"ln\" style=\"stroke:var(--blue)\" d=\"M420 295V315H43\"/><path style=\"fill:var(--blue)\" d=\"M35 315l8-4v8z\"/><text class=\"tx\" x=\"220\" y=\"377\" text-anchor=\"middle\">no copy: both names lead to one list</text><text class=\"tl\" x=\"14\" y=\"320\">[]</text><text class=\"tl\" x=\"12\" y=\"406\">completed_models</text><path style=\"fill:var(--ink-3)\" d=\"M15 410h10l-5 7z\"/><text class=\"tl\" x=\"428\" y=\"406\" text-anchor=\"end\" style=\"fill:var(--blue)\">completed_models</text><path class=\"ln\" style=\"stroke:var(--blue)\" d=\"M420 411V431H396\"/><path style=\"fill:var(--blue)\" d=\"M388 431l8-4v8z\"/><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"dodecahedron\"><rect class=\"k2\" x=\"12\" y=\"420\" width=\"121\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"436\">'dodecahedron'</text></g><g data-k=\"robot pendant\"><rect class=\"k2\" x=\"137\" y=\"420\" width=\"129\" height=\"22\" rx=\"3\"/><text x=\"143\" y=\"436\">'robot pendant'</text></g><g data-k=\"iphone case\"><rect class=\"k2\" x=\"270\" y=\"420\" width=\"113\" height=\"22\" rx=\"3\"/><text x=\"276\" y=\"436\">'iphone case'</text></g></g><text class=\"tl\" x=\"428\" y=\"471\" text-anchor=\"end\" style=\"fill:var(--blue)\">current_design</text><g data-k=\"iphone case\"><rect class=\"k0\" x=\"12\" y=\"454\" width=\"123.2\" height=\"24\" rx=\"4\"/><text class=\"tv\" x=\"19\" y=\"471\">'iphone case'</text></g><rect class=\"k3\" x=\"12\" y=\"490\" width=\"416\" height=\"65\" rx=\"4\"/><g style=\"fill:var(--ink-2);font-size:13px\"><text x=\"22\" y=\"508\">Printing model: dodecahedron</text><text x=\"22\" y=\"527\">Printing model: robot pendant</text><text x=\"22\" y=\"546\">Printing model: iphone case</text></g></svg></div></div><div class=\"af\" data-cap=\"show_completed_models prints the three finished models\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 565\" role=\"img\" aria-label=\"print_models trace, step 7\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><rect class=\"k0\" data-k=\"pc\" x=\"4\" y=\"205.4\" width=\"432\" height=\"18\" rx=\"3\"/><g style=\"fill:var(--ink);font-size:13px;white-space:pre\"><text x=\"12\" y=\"20\">def print_models(unprinted_designs, completed_models):</text><text class=\"tl\" x=\"43.2\" y=\"38\">\"\"\"</text><text class=\"tl\" x=\"43.2\" y=\"56\" textLength=\"388.8\">Simulate printing each design, until none are left.</text><text class=\"tl\" x=\"43.2\" y=\"74\" textLength=\"388.8\">Move each design to completed_models after printing.</text><text class=\"tl\" x=\"43.2\" y=\"92\">\"\"\"</text><text x=\"43.2\" y=\"110\">while unprinted_designs:</text><text x=\"74.4\" y=\"128\">current_design = unprinted_designs.pop()</text><text x=\"74.4\" y=\"146\">print(\"Printing model: \" + current_design)</text><text x=\"74.4\" y=\"164\">completed_models.append(current_design)</text><text x=\"12\" y=\"200\">print_models(unprinted_designs, completed_models)</text><text x=\"12\" y=\"218\">show_completed_models(completed_models)</text><text x=\"12\" y=\"236\">print(unprinted_designs)</text></g><path class=\"ln\" d=\"M10 252H430\"/><text class=\"tx\" x=\"12\" y=\"272\">caller's names</text><text class=\"tl\" x=\"12\" y=\"290\">unprinted_designs</text><path style=\"fill:var(--ink-3)\" d=\"M15 294h10l-5 7z\"/><text class=\"tl\" x=\"14\" y=\"320\">[]</text><text class=\"tl\" x=\"12\" y=\"406\">completed_models</text><path style=\"fill:var(--ink-3)\" d=\"M15 410h10l-5 7z\"/><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"dodecahedron\"><rect class=\"k2\" x=\"12\" y=\"420\" width=\"121\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"436\">'dodecahedron'</text></g><g data-k=\"robot pendant\"><rect class=\"k2\" x=\"137\" y=\"420\" width=\"129\" height=\"22\" rx=\"3\"/><text x=\"143\" y=\"436\">'robot pendant'</text></g><g data-k=\"iphone case\"><rect class=\"k2\" x=\"270\" y=\"420\" width=\"113\" height=\"22\" rx=\"3\"/><text x=\"276\" y=\"436\">'iphone case'</text></g></g><rect class=\"k3\" x=\"12\" y=\"490\" width=\"416\" height=\"65\" rx=\"4\"/><g style=\"fill:var(--ink-2);font-size:13px\"><text x=\"22\" y=\"508\">dodecahedron</text><text x=\"22\" y=\"527\">robot pendant</text><text x=\"22\" y=\"546\">iphone case</text></g></svg></div></div><div class=\"af\" data-cap=\"print(unprinted_designs) shows []: the function emptied the caller&#x27;s original list\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 565\" role=\"img\" aria-label=\"print_models trace, step 8\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><rect class=\"k0\" data-k=\"pc\" x=\"4\" y=\"223.4\" width=\"432\" height=\"18\" rx=\"3\"/><g style=\"fill:var(--ink);font-size:13px;white-space:pre\"><text x=\"12\" y=\"20\">def print_models(unprinted_designs, completed_models):</text><text class=\"tl\" x=\"43.2\" y=\"38\">\"\"\"</text><text class=\"tl\" x=\"43.2\" y=\"56\" textLength=\"388.8\">Simulate printing each design, until none are left.</text><text class=\"tl\" x=\"43.2\" y=\"74\" textLength=\"388.8\">Move each design to completed_models after printing.</text><text class=\"tl\" x=\"43.2\" y=\"92\">\"\"\"</text><text x=\"43.2\" y=\"110\">while unprinted_designs:</text><text x=\"74.4\" y=\"128\">current_design = unprinted_designs.pop()</text><text x=\"74.4\" y=\"146\">print(\"Printing model: \" + current_design)</text><text x=\"74.4\" y=\"164\">completed_models.append(current_design)</text><text x=\"12\" y=\"200\">print_models(unprinted_designs, completed_models)</text><text x=\"12\" y=\"218\">show_completed_models(completed_models)</text><text x=\"12\" y=\"236\">print(unprinted_designs)</text></g><path class=\"ln\" d=\"M10 252H430\"/><text class=\"tx\" x=\"12\" y=\"272\">caller's names</text><text class=\"tl\" x=\"12\" y=\"290\">unprinted_designs</text><path style=\"fill:var(--ink-3)\" d=\"M15 294h10l-5 7z\"/><text class=\"tl\" x=\"14\" y=\"320\">[]</text><text class=\"tl\" x=\"12\" y=\"406\">completed_models</text><path style=\"fill:var(--ink-3)\" d=\"M15 410h10l-5 7z\"/><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"dodecahedron\"><rect class=\"k2\" x=\"12\" y=\"420\" width=\"121\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"436\">'dodecahedron'</text></g><g data-k=\"robot pendant\"><rect class=\"k2\" x=\"137\" y=\"420\" width=\"129\" height=\"22\" rx=\"3\"/><text x=\"143\" y=\"436\">'robot pendant'</text></g><g data-k=\"iphone case\"><rect class=\"k2\" x=\"270\" y=\"420\" width=\"113\" height=\"22\" rx=\"3\"/><text x=\"276\" y=\"436\">'iphone case'</text></g></g><rect class=\"k3\" x=\"12\" y=\"490\" width=\"416\" height=\"65\" rx=\"4\"/><g style=\"fill:var(--ink-2);font-size:13px\"><text x=\"22\" y=\"508\">robot pendant</text><text x=\"22\" y=\"527\">iphone case</text><text x=\"22\" y=\"546\">[]</text></g></svg></div></div><div class=\"af\" data-cap=\"Run 2 passes unprinted_designs[:], a new list with the same items, so the function gets the copy\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 565\" role=\"img\" aria-label=\"print_models trace, step 9\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><rect class=\"k0\" data-k=\"pc\" x=\"4\" y=\"187.4\" width=\"432\" height=\"18\" rx=\"3\"/><g style=\"fill:var(--ink);font-size:13px;white-space:pre\"><text x=\"12\" y=\"20\">def print_models(unprinted_designs, completed_models):</text><text class=\"tl\" x=\"43.2\" y=\"38\">\"\"\"</text><text class=\"tl\" x=\"43.2\" y=\"56\" textLength=\"388.8\">Simulate printing each design, until none are left.</text><text class=\"tl\" x=\"43.2\" y=\"74\" textLength=\"388.8\">Move each design to completed_models after printing.</text><text class=\"tl\" x=\"43.2\" y=\"92\">\"\"\"</text><text x=\"43.2\" y=\"110\">while unprinted_designs:</text><text x=\"74.4\" y=\"128\">current_design = unprinted_designs.pop()</text><text x=\"74.4\" y=\"146\">print(\"Printing model: \" + current_design)</text><text x=\"74.4\" y=\"164\">completed_models.append(current_design)</text><text x=\"12\" y=\"200\">print_models(unprinted_designs[:], completed_models)</text><text x=\"12\" y=\"218\">show_completed_models(completed_models)</text><text x=\"12\" y=\"236\">print(unprinted_designs)</text></g><path class=\"ln\" d=\"M10 252H430\"/><text class=\"tx\" x=\"12\" y=\"272\">caller's names</text><text class=\"tx\" x=\"428\" y=\"272\" text-anchor=\"end\">names inside print_models()</text><text class=\"tl\" x=\"12\" y=\"290\">unprinted_designs</text><path style=\"fill:var(--ink-3)\" d=\"M15 294h10l-5 7z\"/><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"oferrari\"><rect class=\"k0\" x=\"12\" y=\"304\" width=\"82\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"320\">'ferrari'</text></g><g data-k=\"ohonda\"><rect class=\"k0\" x=\"98\" y=\"304\" width=\"67\" height=\"22\" rx=\"3\"/><text x=\"104\" y=\"320\">'honda'</text></g><g data-k=\"oford\"><rect class=\"k0\" x=\"169\" y=\"304\" width=\"59\" height=\"22\" rx=\"3\"/><text x=\"175\" y=\"320\">'ford'</text></g></g><text class=\"tl\" x=\"428\" y=\"348\" text-anchor=\"end\" style=\"fill:var(--blue)\">unprinted_designs</text><path class=\"ln\" style=\"stroke:var(--blue)\" d=\"M420 353V373H241\"/><path style=\"fill:var(--blue)\" d=\"M233 373l8-4v8z\"/><text class=\"tx\" x=\"12\" y=\"348\">a new list, made by [:]</text><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"cferrari\"><rect class=\"k1\" x=\"12\" y=\"362\" width=\"82\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"378\">'ferrari'</text></g><g data-k=\"chonda\"><rect class=\"k1\" x=\"98\" y=\"362\" width=\"67\" height=\"22\" rx=\"3\"/><text x=\"104\" y=\"378\">'honda'</text></g><g data-k=\"cford\"><rect class=\"k1\" x=\"169\" y=\"362\" width=\"59\" height=\"22\" rx=\"3\"/><text x=\"175\" y=\"378\">'ford'</text></g></g><text class=\"tl\" x=\"12\" y=\"406\">completed_models</text><path style=\"fill:var(--ink-3)\" d=\"M15 410h10l-5 7z\"/><text class=\"tl\" x=\"428\" y=\"406\" text-anchor=\"end\" style=\"fill:var(--blue)\">completed_models</text><path class=\"ln\" style=\"stroke:var(--blue)\" d=\"M420 411V431H43\"/><path style=\"fill:var(--blue)\" d=\"M35 431l8-4v8z\"/><text class=\"tl\" x=\"14\" y=\"436\">[]</text><rect class=\"k3\" x=\"12\" y=\"490\" width=\"416\" height=\"65\" rx=\"4\"/></svg></div></div><div class=\"af\" data-cap=\"The while loop runs its three passes on the copy (ford, honda, ferrari) and stops when the copy is empty\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 565\" role=\"img\" aria-label=\"print_models trace, step 10\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><rect class=\"k0\" data-k=\"pc\" x=\"4\" y=\"97.4\" width=\"432\" height=\"18\" rx=\"3\"/><g style=\"fill:var(--ink);font-size:13px;white-space:pre\"><text x=\"12\" y=\"20\">def print_models(unprinted_designs, completed_models):</text><text class=\"tl\" x=\"43.2\" y=\"38\">\"\"\"</text><text class=\"tl\" x=\"43.2\" y=\"56\" textLength=\"388.8\">Simulate printing each design, until none are left.</text><text class=\"tl\" x=\"43.2\" y=\"74\" textLength=\"388.8\">Move each design to completed_models after printing.</text><text class=\"tl\" x=\"43.2\" y=\"92\">\"\"\"</text><text x=\"43.2\" y=\"110\">while unprinted_designs:</text><text x=\"74.4\" y=\"128\">current_design = unprinted_designs.pop()</text><text x=\"74.4\" y=\"146\">print(\"Printing model: \" + current_design)</text><text x=\"74.4\" y=\"164\">completed_models.append(current_design)</text><text x=\"12\" y=\"200\">print_models(unprinted_designs[:], completed_models)</text><text x=\"12\" y=\"218\">show_completed_models(completed_models)</text><text x=\"12\" y=\"236\">print(unprinted_designs)</text></g><path class=\"ln\" d=\"M10 252H430\"/><text class=\"tx\" x=\"12\" y=\"272\">caller's names</text><text class=\"tx\" x=\"428\" y=\"272\" text-anchor=\"end\">names inside print_models()</text><text class=\"tl\" x=\"12\" y=\"290\">unprinted_designs</text><path style=\"fill:var(--ink-3)\" d=\"M15 294h10l-5 7z\"/><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"oferrari\"><rect class=\"k0\" x=\"12\" y=\"304\" width=\"82\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"320\">'ferrari'</text></g><g data-k=\"ohonda\"><rect class=\"k0\" x=\"98\" y=\"304\" width=\"67\" height=\"22\" rx=\"3\"/><text x=\"104\" y=\"320\">'honda'</text></g><g data-k=\"oford\"><rect class=\"k0\" x=\"169\" y=\"304\" width=\"59\" height=\"22\" rx=\"3\"/><text x=\"175\" y=\"320\">'ford'</text></g></g><text class=\"tl\" x=\"428\" y=\"348\" text-anchor=\"end\" style=\"fill:var(--blue)\">unprinted_designs</text><path class=\"ln\" style=\"stroke:var(--blue)\" d=\"M420 353V373H43\"/><path style=\"fill:var(--blue)\" d=\"M35 373l8-4v8z\"/><text class=\"tx\" x=\"12\" y=\"348\">a new list, made by [:]</text><text class=\"tl\" x=\"14\" y=\"378\">[]</text><text class=\"tl\" x=\"12\" y=\"406\">completed_models</text><path style=\"fill:var(--ink-3)\" d=\"M15 410h10l-5 7z\"/><text class=\"tl\" x=\"428\" y=\"406\" text-anchor=\"end\" style=\"fill:var(--blue)\">completed_models</text><path class=\"ln\" style=\"stroke:var(--blue)\" d=\"M420 411V431H241\"/><path style=\"fill:var(--blue)\" d=\"M233 431l8-4v8z\"/><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"cford\"><rect class=\"k2\" x=\"12\" y=\"420\" width=\"59\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"436\">'ford'</text></g><g data-k=\"chonda\"><rect class=\"k2\" x=\"75\" y=\"420\" width=\"67\" height=\"22\" rx=\"3\"/><text x=\"81\" y=\"436\">'honda'</text></g><g data-k=\"cferrari\"><rect class=\"k2\" x=\"146\" y=\"420\" width=\"82\" height=\"22\" rx=\"3\"/><text x=\"152\" y=\"436\">'ferrari'</text></g></g><text class=\"tl\" x=\"428\" y=\"471\" text-anchor=\"end\" style=\"fill:var(--blue)\">current_design</text><g data-k=\"ferrari\"><rect class=\"k0\" x=\"12\" y=\"454\" width=\"89.6\" height=\"24\" rx=\"4\"/><text class=\"tv\" x=\"19\" y=\"471\">'ferrari'</text></g><rect class=\"k3\" x=\"12\" y=\"490\" width=\"416\" height=\"65\" rx=\"4\"/><g style=\"fill:var(--ink-2);font-size:13px\"><text x=\"22\" y=\"508\">Printing model: ford</text><text x=\"22\" y=\"527\">Printing model: honda</text><text x=\"22\" y=\"546\">Printing model: ferrari</text></g></svg></div></div><div class=\"af\" data-cap=\"show_completed_models prints ford, honda, ferrari\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 565\" role=\"img\" aria-label=\"print_models trace, step 11\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><rect class=\"k0\" data-k=\"pc\" x=\"4\" y=\"205.4\" width=\"432\" height=\"18\" rx=\"3\"/><g style=\"fill:var(--ink);font-size:13px;white-space:pre\"><text x=\"12\" y=\"20\">def print_models(unprinted_designs, completed_models):</text><text class=\"tl\" x=\"43.2\" y=\"38\">\"\"\"</text><text class=\"tl\" x=\"43.2\" y=\"56\" textLength=\"388.8\">Simulate printing each design, until none are left.</text><text class=\"tl\" x=\"43.2\" y=\"74\" textLength=\"388.8\">Move each design to completed_models after printing.</text><text class=\"tl\" x=\"43.2\" y=\"92\">\"\"\"</text><text x=\"43.2\" y=\"110\">while unprinted_designs:</text><text x=\"74.4\" y=\"128\">current_design = unprinted_designs.pop()</text><text x=\"74.4\" y=\"146\">print(\"Printing model: \" + current_design)</text><text x=\"74.4\" y=\"164\">completed_models.append(current_design)</text><text x=\"12\" y=\"200\">print_models(unprinted_designs[:], completed_models)</text><text x=\"12\" y=\"218\">show_completed_models(completed_models)</text><text x=\"12\" y=\"236\">print(unprinted_designs)</text></g><path class=\"ln\" d=\"M10 252H430\"/><text class=\"tx\" x=\"12\" y=\"272\">caller's names</text><text class=\"tl\" x=\"12\" y=\"290\">unprinted_designs</text><path style=\"fill:var(--ink-3)\" d=\"M15 294h10l-5 7z\"/><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"oferrari\"><rect class=\"k0\" x=\"12\" y=\"304\" width=\"82\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"320\">'ferrari'</text></g><g data-k=\"ohonda\"><rect class=\"k0\" x=\"98\" y=\"304\" width=\"67\" height=\"22\" rx=\"3\"/><text x=\"104\" y=\"320\">'honda'</text></g><g data-k=\"oford\"><rect class=\"k0\" x=\"169\" y=\"304\" width=\"59\" height=\"22\" rx=\"3\"/><text x=\"175\" y=\"320\">'ford'</text></g></g><text class=\"tl\" x=\"12\" y=\"406\">completed_models</text><path style=\"fill:var(--ink-3)\" d=\"M15 410h10l-5 7z\"/><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"cford\"><rect class=\"k2\" x=\"12\" y=\"420\" width=\"59\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"436\">'ford'</text></g><g data-k=\"chonda\"><rect class=\"k2\" x=\"75\" y=\"420\" width=\"67\" height=\"22\" rx=\"3\"/><text x=\"81\" y=\"436\">'honda'</text></g><g data-k=\"cferrari\"><rect class=\"k2\" x=\"146\" y=\"420\" width=\"82\" height=\"22\" rx=\"3\"/><text x=\"152\" y=\"436\">'ferrari'</text></g></g><rect class=\"k3\" x=\"12\" y=\"490\" width=\"416\" height=\"65\" rx=\"4\"/><g style=\"fill:var(--ink-2);font-size:13px\"><text x=\"22\" y=\"508\">ford</text><text x=\"22\" y=\"527\">honda</text><text x=\"22\" y=\"546\">ferrari</text></g></svg></div></div><div class=\"af\" data-cap=\"print(unprinted_designs) shows all three: the original list was kept\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 565\" role=\"img\" aria-label=\"print_models trace, step 12\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><rect class=\"k0\" data-k=\"pc\" x=\"4\" y=\"223.4\" width=\"432\" height=\"18\" rx=\"3\"/><g style=\"fill:var(--ink);font-size:13px;white-space:pre\"><text x=\"12\" y=\"20\">def print_models(unprinted_designs, completed_models):</text><text class=\"tl\" x=\"43.2\" y=\"38\">\"\"\"</text><text class=\"tl\" x=\"43.2\" y=\"56\" textLength=\"388.8\">Simulate printing each design, until none are left.</text><text class=\"tl\" x=\"43.2\" y=\"74\" textLength=\"388.8\">Move each design to completed_models after printing.</text><text class=\"tl\" x=\"43.2\" y=\"92\">\"\"\"</text><text x=\"43.2\" y=\"110\">while unprinted_designs:</text><text x=\"74.4\" y=\"128\">current_design = unprinted_designs.pop()</text><text x=\"74.4\" y=\"146\">print(\"Printing model: \" + current_design)</text><text x=\"74.4\" y=\"164\">completed_models.append(current_design)</text><text x=\"12\" y=\"200\">print_models(unprinted_designs[:], completed_models)</text><text x=\"12\" y=\"218\">show_completed_models(completed_models)</text><text x=\"12\" y=\"236\">print(unprinted_designs)</text></g><path class=\"ln\" d=\"M10 252H430\"/><text class=\"tx\" x=\"12\" y=\"272\">caller's names</text><text class=\"tl\" x=\"12\" y=\"290\">unprinted_designs</text><path style=\"fill:var(--ink-3)\" d=\"M15 294h10l-5 7z\"/><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"oferrari\"><rect class=\"k2\" x=\"12\" y=\"304\" width=\"82\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"320\">'ferrari'</text></g><g data-k=\"ohonda\"><rect class=\"k2\" x=\"98\" y=\"304\" width=\"67\" height=\"22\" rx=\"3\"/><text x=\"104\" y=\"320\">'honda'</text></g><g data-k=\"oford\"><rect class=\"k2\" x=\"169\" y=\"304\" width=\"59\" height=\"22\" rx=\"3\"/><text x=\"175\" y=\"320\">'ford'</text></g></g><text class=\"tl\" x=\"12\" y=\"406\">completed_models</text><path style=\"fill:var(--ink-3)\" d=\"M15 410h10l-5 7z\"/><g style=\"fill:var(--ink);font-size:13px\"><g data-k=\"cford\"><rect class=\"k2\" x=\"12\" y=\"420\" width=\"59\" height=\"22\" rx=\"3\"/><text x=\"18\" y=\"436\">'ford'</text></g><g data-k=\"chonda\"><rect class=\"k2\" x=\"75\" y=\"420\" width=\"67\" height=\"22\" rx=\"3\"/><text x=\"81\" y=\"436\">'honda'</text></g><g data-k=\"cferrari\"><rect class=\"k2\" x=\"146\" y=\"420\" width=\"82\" height=\"22\" rx=\"3\"/><text x=\"152\" y=\"436\">'ferrari'</text></g></g><rect class=\"k3\" x=\"12\" y=\"490\" width=\"416\" height=\"65\" rx=\"4\"/><g style=\"fill:var(--ink-2);font-size:13px\"><text x=\"22\" y=\"508\">honda</text><text x=\"22\" y=\"527\">ferrari</text><text x=\"22\" y=\"546\">['ferrari', 'honda', 'ford']</text></g></svg></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">A function gets the list object itself, not a copy: pass list_name[:] when the original must survive.</figcaption></figure><!--/viz:foc-anim-list-copy-->"
+    },
+    {
+     "t": "Passing an arbitrary number of arguments",
+     "src": "L#30",
+     "h": "<p style=\"font-size:14.5px\">The last lecture on functions. When you build something for users you often can't know in advance how much information each one will give: one customer wants one pizza topping, another wants five. Python lets a function collect <b>any number</b> of arguments from the call.</p><pre>def make_pizza(*toppings):\n    \"\"\"Print the list of toppings that have been requested.\"\"\"\n    print(toppings)\n\nmake_pizza('pepperoni')\nmake_pizza('mushrooms', 'green peppers', 'extra cheese')\n<span class=\"c\"># prints:</span>\n<span class=\"o\">('pepperoni',)</span>\n<span class=\"o\">('mushrooms', 'green peppers', 'extra cheese')</span></pre><ul><li>The asterisk in <code>*toppings</code> tells Python to make an empty <b>tuple</b> called toppings and pack every value the call sends into it. The same definition handles one topping or three.</li><li>It is a tuple <b>even for one value</b>: <code>('pepperoni',)</code>. The trailing comma is how Python shows a one-item tuple (tuples: L#16).</li><li>His other example: a name box where some users type only a first name and others a first, middle and last name. One starred parameter accepts them all.</li></ul><p style=\"font-size:14.5px\">Because toppings is a tuple, a for loop can handle the toppings one at a time:</p><pre>def make_pizza(*toppings):\n    \"\"\"Summarize the pizza we are about to make.\"\"\"\n    print(\"\\nMaking a pizza with the following toppings:\")\n    for topping in toppings:\n        print(\"- \" + topping)\n\nmake_pizza('mushrooms', 'green peppers', 'extra cheese')\n<span class=\"c\"># prints:</span>\n<span class=\"o\"></span>\n<span class=\"o\">Making a pizza with the following toppings:</span>\n<span class=\"o\">- mushrooms</span>\n<span class=\"o\">- green peppers</span>\n<span class=\"o\">- extra cheese</span></pre><h4>Mixing positional and arbitrary arguments</h4><p style=\"font-size:14.5px\">If the function also needs an ordinary argument, such as the pizza's size, that parameter comes <b>first</b> and the starred one goes <b>last</b>. Python fills the positional (and keyword) parameters first, then sweeps whatever is left into the final, starred parameter. He compared it to the rule for defaults (L#27): they go at the end, and so does this.</p><pre>def make_pizza(size, *toppings):\n    \"\"\"Summarize the pizza we are about to make.\"\"\"\n    print(\"\\nMaking a \" + str(size) +\n          \"-inch pizza with the following toppings:\")\n    for topping in toppings:\n        print(\"- \" + topping)\n\nmake_pizza(16, 'pepperoni')\nmake_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')\n<span class=\"c\"># prints:</span>\n<span class=\"o\"></span>\n<span class=\"o\">Making a 16-inch pizza with the following toppings:</span>\n<span class=\"o\">- pepperoni</span>\n<span class=\"o\"></span>\n<span class=\"o\">Making a 12-inch pizza with the following toppings:</span>\n<span class=\"o\">- mushrooms</span>\n<span class=\"o\">- green peppers</span>\n<span class=\"o\">- extra cheese</span></pre><ul><li>The first value, 16 or 12, goes into <code>size</code>; every value after it goes into the tuple.</li><li><code>str(size)</code> is needed because size is an integer being joined to text.</li><li>The call must follow the same order: size first, then the toppings.</li></ul><!--viz:foc-star-args-packing--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two calls. make_pizza(12, three toppings) puts 12 in size and the three toppings in a tuple called toppings. build_profile with two names and two keyword pairs puts the names in first and last and the pairs in a dictionary called user_info.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Where each argument lands</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">size = 12</span></div><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><span style=\"font-family:var(--mono)\">toppings = ('mushrooms', 'green peppers', 'extra cheese')</span><br><span style=\"color:var(--ink-2);font-size:13px\">*toppings · a tuple</span></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:0\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">build_profile('albert', 'einstein', location='princeton', field='physics')</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">first = 'albert'</span>, <span style=\"font-family:var(--mono)\">last = 'einstein'</span></div><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><span style=\"font-family:var(--mono)\">user_info = {'location': 'princeton', 'field': 'physics'}</span><br><span style=\"color:var(--ink-2);font-size:13px\">**user_info · a dictionary</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Ordinary parameters fill first; one star sweeps the leftover values into a tuple, two stars sweep leftover name=value pairs into a dictionary.</figcaption></figure><!--/viz:foc-star-args-packing-->"
+    },
+    {
+     "t": "Arbitrary keyword arguments",
+     "src": "L#30",
+     "h": "<p style=\"font-size:14.5px\">Keyword arguments are name=value pairs (L#27). When a function should accept <b>any number of key-value pairs</b>, without knowing in advance what kind of information will arrive, put <b>two</b> asterisks before the parameter. Python then makes an empty <b>dictionary</b> and packs every extra name=value pair into it.</p><pre>def build_profile(first, last, **user_info):\n    \"\"\"Build a dictionary containing everything we know about a user.\"\"\"\n    profile = {}\n    profile['first_name'] = first\n    profile['last_name'] = last\n    for key, value in user_info.items():\n        profile[key] = value\n    return profile\n\nuser_profile = build_profile('albert', 'einstein',\n                             location='princeton',\n                             field='physics')\nprint(user_profile)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">{'first_name': 'albert', 'last_name': 'einstein', 'location': 'princeton', 'field': 'physics'}</span></pre><ul><li>'albert' and 'einstein' fill <code>first</code> and <code>last</code> by position; they are always needed, so they go straight into the profile.</li><li><code>location='princeton'</code> and <code>field='physics'</code> are packed into <code>user_info</code> as <code>{'location': 'princeton', 'field': 'physics'}</code>.</li><li>The loop over <code>user_info.items()</code> (L#22) copies each pair into <code>profile</code>, and <code>return profile</code> hands the whole dictionary back to <code>user_profile</code>. One, two or three extra pairs all work.</li></ul><div class=\"def\"><b>One star or two.</b> <code>*toppings</code> collects extra <b>positional</b> values into a <b>tuple</b>; <code>**user_info</code> collects extra <b>name=value</b> pairs into a <b>dictionary</b>. Both go after the ordinary parameters.</div>"
+    },
+    {
+     "t": "Storing functions in modules",
+     "src": "L#30",
+     "h": "<p style=\"font-size:14.5px\">A <b>module</b> is a file ending in <code>.py</code> that holds one or more function definitions. An <code>import</code> statement makes that code available in the program you are running. Reasons he gave for storing functions this way:</p><ul><li>it separates blocks of code from the main program, so the main program reads as a short list of well-named steps;</li><li>it hides the details, letting you focus on the higher-level logic;</li><li>the same functions can be reused in many programs;</li><li>you can share the file with other programmers without sharing your whole program;</li><li>and knowing how to import lets you use libraries other people wrote, which you'll meet constantly in machine-learning code.</li></ul><h4>Making a module in Colab</h4><p style=\"font-size:14.5px\">On a desktop you would save <code>pizza.py</code> and <code>making_pizzas.py</code> in the same folder. In Colab, a cell that starts with <code>%%writefile pizza.py</code> saves that cell as the file:</p><pre>%%writefile pizza.py\ndef make_pizza(size, *toppings):\n    \"\"\"Summarize the pizza we are about to make.\"\"\"\n    print(\"\\nMaking a \" + str(size) +\n          \"-inch pizza with the following toppings:\")\n    for topping in toppings:\n        print(\"- \" + topping)\n\ndef greet(name):\n    return f\"Hello, {name}! Your Pizza is ready.\"\n<span class=\"c\"># Colab replies:</span>\n<span class=\"o\">Writing pizza.py</span></pre><h4>Importing the whole module</h4><p style=\"font-size:14.5px\">Write <code>import</code> and the module's name, <b>without</b> .py. Each function is then called as <b>module name, dot, function name</b>:</p><pre>import pizza\n\npizza.make_pizza(16, 'pepperoni')\nprint(pizza.greet('Aditya'))\n<span class=\"c\"># prints:</span>\n<span class=\"o\"></span>\n<span class=\"o\">Making a 16-inch pizza with the following toppings:</span>\n<span class=\"o\">- pepperoni</span>\n<span class=\"o\">Hello, Aditya! Your Pizza is ready.</span></pre><p style=\"font-size:14.5px\">Python opens pizza.py and makes all of its functions available here; you call them without needing to know the code inside.</p><h4>The greeting that went missing</h4><p style=\"font-size:14.5px\">In his first run he wrote <code>pizza.greet('Aditya')</code> without <code>print()</code>, with a second call, <code>pizza.greet('Utkarsh')</code>, as the cell's last line. Only Utkarsh's greeting appeared. <code>make_pizza()</code> prints from inside its body, but <code>greet()</code> only <b>returns</b> its string, and a returned value is shown only if something prints it. His two fixes: use <code>print()</code> inside greet instead of return, or (keeping the module as it is) wrap the call: <code>print(pizza.greet('Aditya'))</code>.</p><div class=\"def\">Why Utkarsh still appeared: Colab displays the value of a cell's <b>last line</b> by itself, in quotes (<code>'Hello, Utkarsh! Your Pizza is ready.'</code>). That is a notebook convenience, not a print, and it applies only to the last line. In the lecture he described Utkarsh's greeting as overriding Aditya's; nothing is overridden. The middle line's value was simply never displayed, and in a .py program run as a script neither greeting would appear.</div>"
+    },
+    {
+     "t": "Import styles and aliases",
+     "src": "L#30",
+     "h": "<div class=\"scroller\"><table><thead><tr><th>Import line</th><th>How you then call it</th></tr></thead><tbody><tr><td><code>import pizza</code></td><td><code>pizza.make_pizza(16, 'pepperoni')</code></td></tr><tr><td><code>from pizza import make_pizza</code></td><td><code>make_pizza(16, 'pepperoni')</code></td></tr><tr><td><code>from pizza import make_pizza, greet</code></td><td><code>make_pizza(...)</code>, <code>greet('Naina')</code></td></tr><tr><td><code>from pizza import make_pizza as mp</code></td><td><code>mp(16, 'pepperoni')</code></td></tr><tr><td><code>import pizza as p</code></td><td><code>p.make_pizza(16, 'pepperoni')</code></td></tr><tr><td><code>from pizza import *</code></td><td><code>make_pizza(...)</code>, <code>greet(...)</code></td></tr></tbody></table></div><h4>Importing specific functions</h4><p style=\"font-size:14.5px\"><code>from module import function</code> brings in only the named function, and you call it by its own name with no dot. Name several by separating them with commas: out of a module of 50 functions you might import the 10 you need.</p><h4>as: aliases for a function or a module</h4><ul><li><code>from pizza import make_pizza as mp</code> gives the function a short nickname. Use it when the name is long, or when your own file already has a function of the same name: calling <code>mp()</code> runs the module's version without confusing it with yours.</li><li><code>import pizza as p</code> shortens the <b>module</b> name, as in <code>import pandas as pd</code> and <code>import numpy as np</code>. <code>p.make_pizza()</code> is quicker to type and keeps the reader's eye on the descriptive function names.</li></ul><h4>from pizza import *, and why to avoid it</h4><p style=\"font-size:14.5px\">The asterisk copies <b>every</b> function from the module into your file, so no prefix is needed. It is allowed, but discouraged, for two reasons:</p><ol><li><b>Name collisions.</b> If your file already has a function with the same name, the import <b>silently replaces</b> it, with no warning:</li></ol><pre>def greet(name):          # your own greet, in the main file\n    return f\"Welcome home, {name}!\"\n\nfrom pizza import *       # brings in pizza's greet too\n\nprint(greet('Neha'))\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Hello, Neha! Your Pizza is ready.</span></pre><p style=\"font-size:14.5px\">You expected the welcome-home message and got the pizza greeting. (The notebook copy shared in October shows <em>Welcome home, Neha!</em> under this cell; that output is left over from a different run. Run the cell as written and you get the pizza greeting, as he said.) His fix imports only what you need, under an alias:</p><pre>def greet(name):\n    return f\"Welcome home, {name}!\"\n\nfrom pizza import greet as g\n\nprint(greet('Neha'))\nprint(g('Neha'))\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Welcome home, Neha!</span>\n<span class=\"o\">Hello, Neha! Your Pizza is ready.</span></pre><ol start=\"2\"><li><b>Unclear origin.</b> Reading <code>greet('Neha')</code> months later, you can't tell whether greet is built into Python, defined in this file or imported. <code>pizza.greet('Neha')</code> says where it came from.</li></ol><p style=\"font-size:14.5px\">The best approach: import the specific functions you need, or import the whole module and use dot notation.</p><h4>End of the chapter</h4><p style=\"font-size:14.5px\">The functions chapter (L#27, 28, 30) covered writing functions and passing them information; positional, keyword and arbitrary arguments; functions that display output and functions that return values; functions with lists, dictionaries, if statements and loops; and storing functions in modules. The lecture ended with six practice exercises (about 30 minutes). L#29 said some final-exam questions will be these end-of-lecture exercises with the names changed.</p><!--viz:foc-import-styles-compare--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of four import lines written after your own greet function. With import pizza, import pizza as p, or from pizza import greet as g, your greet still says Welcome home; with from pizza import star it is replaced by the pizza greeting.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Your own greet() after each import</div><p style=\"margin:0 0 8px;font-family:var(--mono);font-size:13.5px\">def greet(name): return f\"Welcome home, {name}!\"   # in your file</p><div class=\"scroller\"><table><thead><tr><th>Then you write</th><th><span style=\"font-family:var(--mono)\">greet('Neha')</span> gives</th><th>Pizza's greet is</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">import pizza</td><td style=\"background:var(--good-soft)\">Welcome home, Neha!</td><td style=\"font-family:var(--mono)\">pizza.greet</td></tr><tr><td style=\"font-family:var(--mono)\">import pizza as p</td><td style=\"background:var(--good-soft)\">Welcome home, Neha!</td><td style=\"font-family:var(--mono)\">p.greet</td></tr><tr><td style=\"font-family:var(--mono)\">from pizza import greet as g</td><td style=\"background:var(--good-soft)\">Welcome home, Neha!</td><td style=\"font-family:var(--mono)\">g</td></tr><tr><td style=\"font-family:var(--mono)\">from pizza import *</td><td style=\"background:var(--bad-soft)\">Hello, Neha! Your Pizza is ready.</td><td>your greet, silently replaced</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only the star import touches your own names; the other styles keep the module's function behind a prefix or an alias.</figcaption></figure><!--/viz:foc-import-styles-compare-->"
+    },
+    {
+     "t": "Live Lecture 6: reading function errors",
+     "src": "L#29",
+     "h": "<p style=\"font-size:14.5px\">His second block of drills used the functions code from L#27–28. Each one starts from an error message or an output and asks you to reason back to the code.</p><h4>Colons</h4><p style=\"font-size:14.5px\">Python needs far less punctuation than Java, where one missing semicolon breaks the program, but the colon still matters: at the end of a <code>def</code> line, a <code>class</code> line, a <code>for</code> or <code>while</code> line and an <code>if</code>/<code>elif</code>/<code>else</code> line. Leave it out and the program doesn't run at all:</p><pre>def greet(name)\n    print(name)\n<span class=\"c\"># result:</span>\n<span class=\"o\">SyntaxError: expected ':'</span></pre><h4>A default in the wrong place</h4><p style=\"font-size:14.5px\">A parameter with a default must come after every parameter without one (L#27). Break the rule and Python rejects the definition before any call is made:</p><pre>def describe_pet(animal_type='dog', pet_name):\n    print(\"I have a \" + animal_type + \".\")\n\ndescribe_pet('bruno')\n<span class=\"c\"># result:</span>\n<span class=\"o\">SyntaxError: parameter without a default follows parameter with a default</span></pre><p style=\"font-size:14.5px\">Colab underlines the line even before you run it. The fix is to move <code>animal_type='dog'</code> to the end.</p><h4>Work out the def line from the error</h4><p style=\"font-size:14.5px\">He showed only a call and its traceback, and asked what the function's first line must look like:</p><pre>describe_pet()\n<span class=\"c\"># last line of the traceback:</span>\n<span class=\"o\">TypeError: describe_pet() missing 1 required positional argument: 'pet_name'</span></pre><p style=\"font-size:14.5px\">Read the message: there is a parameter called <code>pet_name</code>, and it has <b>no default</b>, or Python wouldn't ask for it. Only one argument is reported missing, so any other parameter must have a default. His definition was <code>def describe_pet(pet_name, animal_type='dog'):</code>. Then he varied the definition while keeping the calls simple:</p><div class=\"scroller\"><table><thead><tr><th>Definition</th><th>Call</th><th>Result</th></tr></thead><tbody><tr><td><code>def describe_pet():</code></td><td><code>describe_pet()</code></td><td>no error (and no output if the body prints nothing)</td></tr><tr><td><code>def describe_pet(pet_name, animal_type):</code></td><td><code>describe_pet()</code></td><td>TypeError: missing 2 required positional arguments</td></tr><tr><td><code>def describe_pet(pet_name, animal_type):</code></td><td><code>describe_pet('bruno')</code></td><td>TypeError: missing 1, <code>animal_type</code></td></tr><tr><td><code>def describe_pet(pet_name, animal_type='cow'):</code></td><td><code>describe_pet('bruno')</code></td><td style=\"background:var(--good-soft)\">I have a cow. / My cow's name is Bruno.</td></tr><tr><td><code>def describe_pet(pet_name='bruno', animal_type='cow'):</code></td><td><code>describe_pet()</code></td><td>no error: both parameters already have values</td></tr></tbody></table></div><h4>Work out the body from the output</h4><p style=\"font-size:14.5px\">Given only these lines and the output <code>Agastya Gupta</code>, what must the function contain?</p><pre>developer = get_formatted_name('agastya', 'gupta')\nprint(developer)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Agastya Gupta</span></pre><ul><li>A value lands in <code>developer</code>, so the function must use <b>return</b>. If it only printed, <code>developer</code> would hold <code>None</code> and the second line would print None.</li><li>The names went in lowercase and came out capitalised, so the body applies <code>.title()</code>.</li><li>So: join the two names with a space, then <code>return full_name.title()</code>, exactly as in L#28.</li></ul>"
+    },
+    {
+     "t": "Textbook: Functions",
+     "src": "Python Crash Course ch8",
+     "h": "<p>A function is a named block of code that does one job: define it once with def and call it as often as you like. Information goes in through parameters (the names in the definition), which receive arguments (the values in the call). Arguments can be matched by position (order matters), by keyword (name=value, order doesn't matter), or left out when a parameter has a default value. Functions can print things, or return a value (a string, a dictionary…) for the caller to store and reuse; a function with no return gives back None. A list passed to a function can be changed by it permanently, unless you pass a copy with [:]. *name collects any number of extra positional arguments into a tuple, and **name collects extra keyword arguments into a dictionary. Functions can live in a separate .py module and be brought in with one of several import styles. Finally, the chapter covers style: lowercase_with_underscores names, a docstring for every function, and no spaces around = in defaults.</p><!--viz:foc-pcc1-parameter-order--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of four kinds of parameter: positional parameters come first, parameters with defaults come after all those without, *toppings collects leftover values into a tuple after the ordinary parameters, and **user_info collects leftover name=value pairs into a dictionary at the end.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Where each kind of parameter goes</div><div class=\"scroller\"><table><thead><tr><th>Kind</th><th>Written as</th><th>Receives</th><th>Goes</th></tr></thead><tbody><tr><td>Positional</td><td style=\"font-family:var(--mono)\">pet_name</td><td>the next value in the call, by order (or by name)</td><td>first</td></tr><tr><td>With a default</td><td style=\"font-family:var(--mono)\">animal_type='dog'</td><td>a value if one is given, otherwise the default</td><td style=\"background:var(--clay-soft)\">after every parameter without a default</td></tr><tr><td>Arbitrary</td><td style=\"font-family:var(--mono)\">*toppings</td><td>all leftover values, as a <b>tuple</b></td><td style=\"background:var(--blue-soft)\">after the ordinary parameters</td></tr><tr><td>Arbitrary keyword</td><td style=\"font-family:var(--mono)\">**user_info</td><td>all leftover name=value pairs, as a <b>dictionary</b></td><td style=\"background:var(--blue-soft)\">last</td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px;font-family:var(--mono)\">def make_pizza(size, *toppings) · def build_profile(first, last, **user_info)</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Ordinary parameters fill first; anything that collects or defaults goes after them, or the definition fails.</figcaption></figure><!--/viz:foc-pcc1-parameter-order--><!--viz:foc-pcc1-args-average-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace of the average function: 'ravi' goes into name and 70, 80, 90 are packed into the tuple marks; the loop adds them to total, 70 then 150 then 240, and the mean is 240 divided by 3, 80.0.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">average('ravi', 70, 80, 90), pass by pass</div><p style=\"font-size:13.5px;color:var(--ink-2);margin:0 0 8px;font-family:var(--mono)\">name = 'ravi' · marks = (70, 80, 90)</p><div class=\"scroller\"><table><thead><tr><th>Pass</th><th>m</th><th>total before</th><th>total after</th></tr></thead><tbody><tr><td>start</td><td style=\"font-family:var(--mono)\">–</td><td style=\"font-family:var(--mono)\">–</td><td style=\"font-family:var(--mono)\">0</td></tr><tr><td>1</td><td style=\"font-family:var(--mono)\">70</td><td style=\"font-family:var(--mono)\">0</td><td style=\"font-family:var(--mono)\">70</td></tr><tr><td>2</td><td style=\"font-family:var(--mono)\">80</td><td style=\"font-family:var(--mono)\">70</td><td style=\"font-family:var(--mono)\">150</td></tr><tr><td>3</td><td style=\"font-family:var(--mono)\">90</td><td style=\"font-family:var(--mono)\">150</td><td style=\"font-family:var(--mono)\">240</td></tr><tr><td>after</td><td colspan=\"3\" style=\"font-family:var(--mono);background:var(--good-soft)\">240 / len(marks) = 240 / 3 = 80.0 → returns 'Ravi: 80.0'</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The first value fills name; the rest arrive as one tuple that a for loop can walk through.</figcaption></figure><!--/viz:foc-pcc1-args-average-trace--><p><strong>Defining and calling a function</strong> — def name(parameters): starts a definition, and the indented lines below form its body. Nothing runs until the function is called with name(arguments). The brackets are required even when nothing goes inside them.<br><em>e.g.</em> def greet():\n    print(\"Namaste!\")\ngreet()</p><p><strong>Docstring</strong> — A triple-quoted string on the first line of the body describes what the function does. Python's documentation tools read it, and a good one lets others use the function without reading its code.</p><p><strong>Parameter vs argument</strong> — A parameter is the variable named in the definition (def greet(username):). An argument is the actual value passed in the call (greet('jesse')), and it is stored in the matching parameter. People often use the two words loosely.</p><p><strong>Positional arguments</strong> — Arguments are matched to parameters in order, first to first. Swapping them gives wrong output with no error, e.g. a pet of type 'harry' named 'Hamster'.</p><p><strong>Keyword arguments</strong> — Writing name=value in the call matches by parameter name, so order doesn't matter and the call explains itself. The names must exactly match the parameter names, or Python raises TypeError.</p><p><strong>Default values</strong> — def f(name, kind='dog'): uses 'dog' whenever no value is given for kind; any value that is given replaces the default. Parameters with defaults must come after those without, or the definition is a SyntaxError.</p><p><strong>Argument errors</strong> — Too few or too many arguments raise TypeError, and the traceback names the missing parameters, which is one more reason to give parameters descriptive names.</p><p><strong>Return values</strong> — return sends a value back to the line that called the function, where it can be stored (musician = get_formatted_name(...)) or used directly. A function that only prints and never returns gives back None.</p><p><strong>Optional arguments via empty defaults</strong> — Give an optional parameter an empty default ('') and put it last, then test it with if middle_name:. A non-empty string is True and an empty one is False, so the function handles calls with or without the extra value.</p><p><strong>Returning a dictionary</strong> — A function can build and return a structured value, e.g. {'first': 'jimi', 'last': 'hendrix'}, adding optional keys only when values are provided.</p><p><strong>Functions with while loops</strong> — Functions can be called inside loops. For instance, a while True loop reads names, calls a formatting function and offers a quit value (with break) at every prompt.</p><p><strong>Passing and modifying a list</strong> — A function that receives a list works on the original list, so changes such as pop() or append() are permanent. This allows tidy designs like one function that 'prints' models and moves them to a completed list, and a second that reports them.</p><p><strong>Passing a copy with [:]</strong> — function(list_name[:]) hands over a copy, leaving the original intact. The book advises passing the original unless you have a reason not to, because copying large lists costs time and memory.</p><p><strong>*args and **kwargs</strong> — A parameter written *toppings packs any number of extra positional arguments into a tuple, which is always a tuple, even with one item or none. A parameter written **user_info packs extra keyword arguments into a dictionary. The *parameter must come after the ordinary ones.</p><p><strong>Modules and import styles</strong> — A module is a .py file of functions. import pizza → pizza.make_pizza(); from pizza import make_pizza → make_pizza(); from pizza import make_pizza as mp → mp(); import pizza as p → p.make_pizza(); from pizza import * imports everything (avoid it, because names can clash and be overwritten).</p><p><strong>Function style</strong> — Use descriptive lowercase_with_underscores names, give one job per function, and put a docstring right under def. Write no spaces around = in defaults and keyword arguments, two blank lines between functions, and imports at the top of the file.</p><div class=\"card\"><strong>Case: The 3D printing queue</strong> <em>(printing_models.py, sections 'Modifying a List in a Function' and 'Preventing a Function from Modifying a List')</em><p>A company moves designs from an unprinted list to a completed list. The book rewrites the loop as two single-purpose functions, one that 'prints' and moves each design and one that lists what was completed, then shows how to keep the original list by passing a slice copy.</p><p><em>Lesson:</em> Functions with one job each make a program readable; lists passed in are modified unless a copy is sent.</p><p><em>Think:</em> After print_models(unprinted_designs[:], completed_models), what do the two lists contain, and why?</p></div><div class=\"card\"><strong>Case: The pet describer</strong> <em>(pets.py, sections 'Positional Arguments' to 'Avoiding Argument Errors')</em><p>A function prints a pet's type and name. The book uses it to show positional matching (and the comic result of swapping the order), keyword arguments, a default type of 'dog' that forces the parameters to be reordered, equivalent call styles, and the traceback produced when arguments are missing.</p><p><em>Lesson:</em> How arguments are matched to parameters, and why defaults must come last.</p><p><em>Think:</em> With def describe_pet(pet_name, animal_type='dog'), list two different calls that describe a cat called Kitty.</p></div><details><summary>Worked problem: A function that returns a formatted bill line</summary><p>Write bill_line(item, price, qty=1) that RETURNS a string like 'Samosa x 3 = ₹45' (item in title case). Store bill_line('samosa', 15, 3) in a variable and print it.</p><ol><li>def bill_line(item, price, qty=1):</li><li>    \"\"\"Return one formatted line of a canteen bill.\"\"\"</li><li>    total = price * qty</li><li>    return item.title() + \" x \" + str(qty) + \" = ₹\" + str(total)</li><li>line = bill_line('samosa', 15, 3)</li><li>print(line)</li></ol><p><strong>Answer:</strong> Samosa x 3 = ₹45 (and bill_line('chai', 10) would give Chai x 1 = ₹10 using the default)</p></details><details><summary>Worked problem: Collecting any number of marks</summary><p>Write average(name, *marks) that returns name and the mean of however many marks are given, e.g. average('ravi', 70, 80, 90).</p><ol><li>marks arrives as a tuple: (70, 80, 90).</li><li>total = 0; loop: for m in marks: total = total + m.</li><li>mean = total / len(marks) = 240 / 3 = 80.0 (/ gives a float).</li><li>return name.title() + \": \" + str(mean).</li></ol><p><strong>Answer:</strong> Ravi: 80.0</p></details><div class=\"def\"><b>Book vs lecture — A default before a parameter without one.</b> Book: Explains why describe_pet()'s parameters had to be reordered once animal_type got a default, without showing what happens if you don't. Lecture: L#27 and L#29 run the wrong order and get SyntaxError: parameter without a default follows parameter with a default, raised before any call runs. <b>Same rule; the lecture adds the error. In an error-spotting question the answer is SyntaxError, not TypeError.</b></div><div class=\"def\"><b>Book vs lecture — Parameter vs argument.</b> Book: Defines them separately, then notes that people sometimes use the two words interchangeably. Lecture: L#27 said the words are used interchangeably; the lec-27 trap keeps them apart. <b>No real conflict. In written answers use the precise meanings: the parameter is in the def line, the argument is in the call.</b></div><div class=\"def\"><b>Book vs lecture — The optional middle name's default.</b> Book: middle_name='' (an empty string), placed last, so if middle_name: is False when no middle name is given. Lecture: L#28's code uses the same empty string, but he called it 'a space'; the lec-28 notes and trap correct this. <b>The book (and the lecture's code) is right: an empty string, which is False. A space would be True and add extra spaces.</b></div><div class=\"def\"><b>Book vs lecture — Where the module file lives.</b> Book: Save pizza.py and the program that imports it as two files in the same folder, then run the program. Lecture: L#30 works in Colab: a cell starting %%writefile pizza.py saves the module, then another cell runs import pizza. On a desktop, both files go in one folder, as in the book. <b>No conflict. In Colab, create the module with %%writefile before importing it; the import lines are identical.</b></div><div class=\"def\"><b>Book vs lecture — What the module contains.</b> Book: pizza.py holds only make_pizza(), which prints its own output. Lecture: L#30's pizza.py adds greet(name), which returns a string, and shows that pizza.greet('Aditya') displays nothing unless wrapped in print(). He put the missing line down to one call overriding another; the real reason is that Colab shows only the last line's value (see the lec-30 notes). <b>The lecture adds material: a returned value needs print() to appear. Expect output questions built on greet().</b></div><div class=\"def\"><b>Book vs lecture — Why to avoid from module import *.</b> Book: Same-named functions or variables in your project can be overwritten, giving unexpected results; import specific functions or use dot notation. Lecture: L#30 demonstrates it (a local greet() silently replaced by pizza's), adds a second reason, unclear code origin, and shows a fix: from pizza import greet as g. <b>Book and lecture agree. In a theory answer give both reasons: name collisions and unclear origin.</b></div><div class=\"def\"><b>Book vs lecture — Styling functions.</b> Book: A closing section on style: descriptive lowercase names, a docstring for every function, no spaces around = in defaults and keyword arguments, two blank lines between functions, imports at the top. Lecture: Not covered as a topic in L#27, L#28 or L#30, though every lecture function has a docstring and a descriptive name. <b>L#29 said the final asks only what the lectures and live sessions taught. Keep these as habits for any code you write, and know the docstring's purpose, which the lectures do use.</b></div>"
+    }
+   ]
+  },
+  {
+   "id": "classes",
+   "title": "Classes",
+   "tag": "Lectures 29, 31",
+   "lede": "Blueprints for objects. A class bundles data (attributes, set in __init__() through self) and behaviour (methods); each instance made from it holds its own values. Part 1 covers the Dog and Car classes; inheritance, previewed in Live Lecture 6, comes next.",
+   "topics": [
+    {
+     "t": "Classes and instances: the blueprint idea",
+     "src": "L#31",
+     "h": "<p style=\"font-size:14.5px\">The functions chapter ended with functions grouped into modules. The new chapter, <b>classes</b>, goes a step further. Classes make <b>object-oriented programming</b> (OOP) possible in Python, which he called one of the most effective ways to write software: you write classes that represent real-world things and situations, then create objects from them.</p><ul><li>A <b>class</b> defines the general behaviour and characteristics that a whole category of objects shares.</li><li>Each object made from it, an <b>instance</b>, automatically gets that general behaviour, and can then be given its own particular values.</li><li>Making an instance from a class is called <b>instantiation</b>.</li></ul><h4>The architect's blueprint</h4><p style=\"font-size:14.5px\">His picture: a house blueprint showing three bedrooms, a hall, three washrooms, a kitchen, a garage, a balcony and a kitchen garden. The blueprint is the <b>class</b>. A real house built from it at one address is an <b>instance</b>. From one blueprint you can build fifty houses, each a distinct instance with its own paint colour and occupants. In code, the different paint colours are the different arguments passed when each instance is made.</p><div class=\"def\"><b>From the lecture (L#29):</b> \"Why do we need classes?\" or \"What are the advantages of classes?\" can come as a short-answer question in the final. The answer he pointed to is this one: one blueprint, many instances with the same structure but different values.</div><p style=\"font-size:14.5px\">Later in the chapter: classes that extend existing classes so that similar classes share code, and storing classes in modules to import them, as was done with functions in L#30.</p>"
+    },
+    {
+     "t": "The Dog class: __init__() and self",
+     "src": "L#31",
+     "h": "<p style=\"font-size:14.5px\">The first class models any pet dog, not one particular dog. Most dogs have a <b>name</b> and an <b>age</b>, and most can <b>sit</b> and <b>roll over</b>; those two pieces of information and two behaviours go into the class.</p><pre>class Dog():\n    \"\"\"A simple attempt to model a dog.\"\"\"\n\n    def __init__(self, name, age):\n        \"\"\"Initialize name and age attributes.\"\"\"\n        self.name = name\n        self.age = age\n\n    def sit(self):\n        \"\"\"Simulate a dog sitting in response to a command.\"\"\"\n        print(self.name.title() + \" is now sitting.\")\n\n    def roll_over(self):\n        \"\"\"Simulate rolling over in response to a command.\"\"\"\n        print(self.name.title() + \" rolled over!\")</pre><h4>Reading it line by line</h4><ul><li><code>class Dog():</code>: the keyword <code>class</code>, the name, brackets and a colon; the class body follows, indented. By convention class names are <b>capitalised</b>. The brackets are empty because the class starts from scratch (the class line's brackets are where a parent class goes, L#29).</li><li>The first string is the class's <b>docstring</b>, saying what it does.</li><li>A function written inside a class is called a <b>method</b>. Everything learned about functions applies; what changes is how methods are called.</li><li><code>__init__()</code> is a special built-in method that Python runs <b>automatically</b> each time a new instance is made. The two underscores on each side are a naming convention that keeps Python's own method names from clashing with yours.</li><li><code>__init__()</code> has three parameters: <code>self</code>, <code>name</code> and <code>age</code>. It has <b>no return statement</b>, yet Python hands back an instance representing the dog.</li><li><code>sit()</code> and <code>roll_over()</code> are methods written by the programmer. They need no extra information, so <code>self</code> is their only parameter.</li></ul><h4>What self does</h4><ul><li><code>self</code> is <b>required</b> in the definition of every method and must come <b>first</b>, before any other parameter.</li><li>You never pass it. When Python calls <code>__init__()</code> to make a Dog, or when you call a method on an instance, it automatically passes <code>self</code>, a reference to that particular instance. So <code>Dog('willie', 6)</code> supplies only <code>name</code> and <code>age</code>.</li><li><code>self.name = name</code> takes the value in the parameter <code>name</code> and stores it in a variable attached to the instance being made; the same happens for <code>age</code>.</li><li>A variable that starts with <code>self.</code> is available to <b>every method</b> in the class, and from outside through any instance. Variables reachable through instances like this are called <b>attributes</b>. That is why <code>sit()</code> writes <code>self.name</code>: the plain <code>name</code> belongs to <code>__init__()</code> alone.</li></ul><!--viz:foc-init-self-flow--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: the line my_dog = Dog('willie', 6) makes Python create an instance, call __init__ with the instance as self plus willie and 6, store self.name and self.age, and return the instance into my_dog.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">What Dog('willie', 6) does</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">my_dog = Dog('willie', 6)</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Python makes a new, empty instance</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:8px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">calls <span style=\"font-family:var(--mono)\">__init__(self, 'willie', 6)</span>, passing the instance as <b>self</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">self.name = 'willie'</span><br><span style=\"font-family:var(--mono)\">self.age = 6</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">instance returned, with no return statement, and stored in <b style=\"font-family:var(--mono)\">my_dog</b></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">You supply two values; Python supplies self, which is why __init__ has three parameters.</figcaption></figure><!--/viz:foc-init-self-flow-->"
+    },
+    {
+     "t": "Making and using instances",
+     "src": "L#31",
+     "h": "<p style=\"font-size:14.5px\">With the blueprint written, you build a house: make an instance and store it in a variable.</p><pre>my_dog = Dog('willie', 6)\n\nprint(\"My dog's name is \" + my_dog.name.title() + \".\")\nprint(\"My dog is \" + str(my_dog.age) + \" years old.\")\nmy_dog.sit()\nmy_dog.roll_over()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">My dog's name is Willie.</span>\n<span class=\"o\">My dog is 6 years old.</span>\n<span class=\"o\">Willie is now sitting.</span>\n<span class=\"o\">Willie rolled over!</span></pre><ul><li><code>Dog('willie', 6)</code> makes Python call <code>__init__()</code> with 'willie' and 6; <code>self</code> is passed automatically. Python returns the new instance, and <code>my_dog</code> now holds it.</li><li><b>Attributes</b> are read with a dot: <code>my_dog.name</code>, <code>my_dog.age</code>. The age is an integer, so <code>str()</code> is needed to join it to text.</li><li><b>Methods</b> are called with a dot and brackets: <code>my_dog.sit()</code>. Nothing goes in the brackets, though sit() was defined with <code>self</code>.</li><li>An instance is the object that actually holds data in memory, here 'willie' and 6; the class only describes the structure and behaviour.</li></ul><h4>Several instances from one class</h4><pre>my_dog = Dog('willie', 6)\nyour_dog = Dog('lucy', 3)\nt_dog = Dog('willie', 6)\n\nprint(\"Your dog's name is \" + your_dog.name.title() + \".\")\nprint(\"Your dog is \" + str(your_dog.age) + \" years old.\")\nyour_dog.sit()\nyour_dog.roll_over()\nt_dog.sit()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Your dog's name is Lucy.</span>\n<span class=\"o\">Your dog is 3 years old.</span>\n<span class=\"o\">Lucy is now sitting.</span>\n<span class=\"o\">Lucy rolled over!</span>\n<span class=\"o\">Willie is now sitting.</span></pre><ul><li>Each instance keeps its own data: <code>your_dog</code> answers with Lucy, <code>my_dog</code> with Willie.</li><li><code>t_dog</code> has exactly the same values as <code>my_dog</code>, yet Python still makes a <b>separate instance</b>, with its own block of memory. There is no problem with repeated values.</li><li>You can make as many instances as you need, as long as each has a <b>unique variable name</b> or its own place in a list or dictionary.</li></ul><h4>Why methods are useful</h4><p style=\"font-size:14.5px\">In a computer game, <code>sit()</code> and <code>roll_over()</code> would hold the code that animates the dog, and every breed made from the class could do both. In a robot dog, the same methods would drive the motors. Different robots could have methods such as move left or move right.</p><!--viz:foc-class-instances--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"The Dog class, with __init__, sit and roll_over, is drawn as a blueprint. Below it, three separate instances: my_dog holding willie and 6, your_dog holding lucy and 3, and t_dog holding willie and 6 again.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One class, three instances</div><div style=\"font-size:14px\"><div style=\"padding:8px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>class Dog</b> <span style=\"color:var(--ink-2);font-size:13px\">· the blueprint</span><div style=\"font-family:var(--mono);font-size:13px;margin-top:4px\">__init__(self, name, age) · sit(self) · roll_over(self)</div></div><div style=\"color:var(--ink-3);text-align:center;margin:4px 0\">↓ Dog(...) makes an instance ↓</div><div style=\"display:flex;flex-wrap:wrap;gap:6px 8px\"><div style=\"flex:1 1 150px;padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b style=\"font-family:var(--mono)\">my_dog</b><div style=\"font-family:var(--mono);font-size:13px;margin-top:4px\">name = 'willie'<br>age = 6</div></div><div style=\"flex:1 1 150px;padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b style=\"font-family:var(--mono)\">your_dog</b><div style=\"font-family:var(--mono);font-size:13px;margin-top:4px\">name = 'lucy'<br>age = 3</div></div><div style=\"flex:1 1 150px;padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b style=\"font-family:var(--mono)\">t_dog</b><div style=\"font-family:var(--mono);font-size:13px;margin-top:4px\">name = 'willie'<br>age = 6</div><div style=\"color:var(--ink-2);font-size:13px;margin-top:4px\">same values as my_dog, still a separate instance</div></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Methods are written once in the class; each instance carries its own copy of the data.</figcaption></figure><!--/viz:foc-class-instances-->"
+    },
+    {
+     "t": "The Car class: a method that returns",
+     "src": "L#31",
+     "h": "<p style=\"font-size:14.5px\">A second class, for cars, stores the make, model and year, and has one method that sums them up.</p><pre>class Car():\n    \"\"\"A simple attempt to represent a car.\"\"\"\n\n    def __init__(self, make, model, year):\n        \"\"\"Initialize attributes to describe a car.\"\"\"\n        self.make = make\n        self.model = model\n        self.year = year\n\n    def get_descriptive_name(self):\n        \"\"\"Return a neatly formatted descriptive name.\"\"\"\n        long_name = str(self.year) + ' ' + self.make + ' ' + self.model\n        return long_name.title()\n\nmy_new_car = Car('audi', 'a4', 2016)\nprint(my_new_car.get_descriptive_name())\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2016 Audi A4</span></pre><ul><li><code>self</code> again comes first; <code>make</code>, <code>model</code> and <code>year</code> become attributes, so every new Car needs all three values.</li><li><code>get_descriptive_name()</code> reads the attributes through <code>self</code>, converts the year with <code>str()</code>, and joins everything into one string. That spares you from printing each attribute separately.</li><li>Unlike <code>sit()</code>, which prints, this method <b>returns</b> its string, so the call is wrapped in <code>print()</code> (the same rule as L#30's greet()). <code>title()</code> turns 'audi a4' into Audi A4.</li></ul><h4>Exercises he set</h4><p style=\"font-size:14.5px\">Fifteen minutes on three tasks: write a restaurant class that stores a name and a cuisine type, with one method that describes the restaurant and one that announces it is open, then make an instance, print both attributes and call both methods; make three different restaurant instances and describe each; and write a user class with first and last names plus other profile details, a method that summarises the user and one that greets them, then make several users and call both methods for each.</p><div class=\"def\"><b>From the lecture (L#29):</b> some final-exam questions will be the coding exercises from the end of the recorded lectures, with names and details changed. These three are worth doing on paper as well as in Colab.</div><p style=\"font-size:14.5px\">Next session: default values for attributes, changing attribute values, and <b>inheritance</b>.</p>"
+    },
+    {
+     "t": "Live Lecture 6: classes and inheritance in review",
+     "src": "L#29",
+     "h": "<p style=\"font-size:14.5px\">The last drills covered classes. He spoke of inheritance as already covered in the lectures, but Classes Part 1 (L#31) stops before it and lists it as the next topic, so treat this as a preview.</p><h4>The class line</h4><ul><li><code>class Car():</code> is the keyword <code>class</code>, the class name, brackets and a colon. The brackets are <b>empty</b> when the class starts from scratch.</li><li><code>class ElectricCar(Car):</code> puts the name of another class in the brackets: ElectricCar <b>inherits</b> from Car. Car is the <b>parent</b> class, also called the superclass, and ElectricCar is the <b>child</b> class.</li><li><code>__init__()</code> is a built-in method that runs automatically when you create an instance, as in <code>my_new_car = Car('audi', 'a4', 2016)</code>.</li></ul><h4>What inheritance gives the child</h4><pre>class ElectricCar(Car):\n    def __init__(self, make, model, year):\n        super().__init__(make, model, year)\n        self.battery_size = 70\n\n    def describe_battery(self):\n        print(\"This car has a \" + str(self.battery_size) + \"-kWh battery.\")\n\nmy_tesla = ElectricCar('tesla', 'model s', 2016)\nprint(my_tesla.get_descriptive_name())\nmy_tesla.describe_battery()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2016 Tesla Model S</span>\n<span class=\"o\">This car has a 70-kWh battery.</span></pre><p style=\"font-size:14.5px\">ElectricCar defines only <code>__init__()</code> and <code>describe_battery()</code>, yet <code>my_tesla.get_descriptive_name()</code> works. That method lives in Car (L#31), and a child class can use every method and attribute of its parent through its own instances. It doesn't work the other way: a plain Car has no <code>describe_battery()</code>.</p><p style=\"font-size:14.5px\">The <code>super().__init__(...)</code> line is the notebook's; he didn't discuss it in this session.</p><h4>Docstrings</h4><p style=\"font-size:14.5px\">A student asked who writes a class's or method's docstring. The programmer who writes the class or method: it's their job to explain what it does, so that anyone who uses it later can understand it.</p>"
     }
    ]
   }
@@ -672,6 +763,10 @@ HUB.addCourse({
   {
    "name": "Functions",
    "unit": "functions"
+  },
+  {
+   "name": "Classes",
+   "unit": "classes"
   }
  ],
  "traps": [
@@ -1503,6 +1598,160 @@ HUB.addCourse({
    "p": "18 is truthy, so if age: adds 'age': 18. The shared notebook's saved output shows no age, but that output is left over from an earlier run.",
    "f": "run it, don't trust stale output",
    "lec": 28
+  },
+  {
+   "id": "foc-t0122",
+   "h": "An arbitrary parameter never makes an argument compulsory",
+   "p": "build_profile('marie', 'curie') works with no extra pairs: user_info is just an empty dictionary and the loop runs zero times. Likewise *toppings can be an empty tuple.",
+   "f": "nothing extra is fine",
+   "lec": 30
+  },
+  {
+   "id": "foc-t0123",
+   "h": "The starred parameter goes last, and the call follows the same order",
+   "p": "With def make_pizza(size, *toppings), make_pizza('pepperoni', 16) puts 'pepperoni' in size. It prints 'Making a pepperoni-inch pizza…' and then fails with a TypeError on 16.",
+   "f": "size first, extras last",
+   "lec": 30
+  },
+  {
+   "id": "foc-t0124",
+   "h": "Write import pizza, not import pizza.py",
+   "p": "The file is pizza.py, but the import line uses only the module name. import pizza.py fails with ModuleNotFoundError, because Python reads the dot as part of a package path.",
+   "f": "no .py in import",
+   "lec": 30
+  },
+  {
+   "id": "foc-t0125",
+   "h": "A returned value isn't printed, and Colab's last-line echo isn't a print",
+   "p": "greet() returns its string. pizza.greet('Aditya') on a middle line shows nothing; Colab only displays the last line's value. The lecture said one greeting overrode the other; neither was printed.",
+   "f": "return needs print()",
+   "lec": 30
+  },
+  {
+   "id": "foc-t0126",
+   "h": "from pizza import * silently replaces your own greet()",
+   "p": "If your file defines greet() and then runs from pizza import *, greet('Neha') gives the pizza greeting, with no warning. Import specific functions, use an alias, or keep the module prefix.",
+   "f": "star import overwrites",
+   "lec": 30
+  },
+  {
+   "id": "foc-t0127",
+   "h": "You never pass self: Dog('willie', 6) supplies two values for three parameters",
+   "p": "__init__(self, name, age) gets self from Python automatically. Dog('willie', 6, 'lab') is a TypeError (takes 3 positional arguments but 4 were given).",
+   "f": "Python passes self",
+   "lec": 31
+  },
+  {
+   "id": "foc-t0128",
+   "h": "The brackets after a class name are for a parent class, not for parameters",
+   "p": "He said values can be passed to the class there; they can't. class Dog(): stays empty, values go to __init__() through Dog('willie', 6), and class ElectricCar(Car): names a parent (L#29).",
+   "f": "class brackets = parent",
+   "lec": 31
+  },
+  {
+   "id": "foc-t0129",
+   "h": "Inside a method, write self.name, not name",
+   "p": "name is only a parameter of __init__(). In sit(), the plain name doesn't exist (NameError); self.name is the attribute stored on the instance.",
+   "f": "attributes need self.",
+   "lec": 31
+  },
+  {
+   "id": "foc-t0130",
+   "h": "Two instances with the same values are still two instances",
+   "p": "t_dog = Dog('willie', 6) is separate from my_dog = Dog('willie', 6): each has its own memory, and changing one's age leaves the other alone.",
+   "f": "same values, separate objects",
+   "lec": 31
+  },
+  {
+   "id": "foc-t0131",
+   "h": "__init__() has no return statement, but the call still gives back an instance",
+   "p": "Python returns the new instance automatically, which is why my_dog = Dog('willie', 6) works. Methods such as get_descriptive_name() do need return to hand a value back.",
+   "f": "__init__ returns itself",
+   "lec": 31
+  },
+  {
+   "id": "foc-t0132",
+   "h": "print inside ≠ return",
+   "p": "A function that prints but has no return statement gives back None. result = shout('hi') prints HI, then result holds None.",
+   "f": "no return → None",
+   "bk": "Python Crash Course ch8"
+  },
+  {
+   "id": "foc-t0133",
+   "h": "Swapped positional arguments give no error",
+   "p": "describe('mithu', 'parrot') runs fine and prints nonsense, because the values went into the wrong parameters. Use keyword arguments when the order is easy to mix up.",
+   "f": "position = meaning",
+   "bk": "Python Crash Course ch8"
+  },
+  {
+   "id": "foc-t0134",
+   "h": "Defaults go last",
+   "p": "def f(a=1, b): is a SyntaxError. Every parameter with a default must follow all parameters without one.",
+   "f": "required first, defaults after",
+   "bk": "Python Crash Course ch8"
+  },
+  {
+   "id": "foc-t0135",
+   "h": "A function can change the list you pass in",
+   "p": "Changes such as pop() and append() inside the function act on the caller's list. Pass list_name[:] if the original must survive.",
+   "f": "list in, list changed",
+   "bk": "Python Crash Course ch8"
+  },
+  {
+   "id": "foc-t0136",
+   "h": "*args is a tuple, even with one value",
+   "p": "make_pizza('pepperoni') puts ('pepperoni',) into toppings, a one-item tuple. With no extra arguments it is an empty tuple ().",
+   "f": "* → tuple, ** → dict",
+   "bk": "Python Crash Course ch8"
+  },
+  {
+   "id": "foc-t0137",
+   "h": "import module needs the dot",
+   "p": "After import pizza you must write pizza.make_pizza(). Calling make_pizza() alone raises NameError. Only from pizza import make_pizza allows the bare name.",
+   "f": "import X → X.f()",
+   "bk": "Python Crash Course ch8"
+  },
+  {
+   "id": "foc-t0138",
+   "h": "No spaces around = in defaults (PEP 8)",
+   "p": "Write def f(size='large') and call f(size='small'). This is the opposite of ordinary assignment, which has a space on each side of =.",
+   "f": "size='large', no spaces",
+   "bk": "Python Crash Course ch8"
+  },
+  {
+   "id": "foc-t0139",
+   "h": "In the final, an output in the wrong case scores zero",
+   "p": "Output questions have no step marks. If the code applies .title(), Aman Pathak in lowercase or in capitals is simply wrong.",
+   "f": "exact output or nothing",
+   "lec": 29
+  },
+  {
+   "id": "foc-t0140",
+   "h": "Code that fails has no output, so don't write one",
+   "p": "L#29: when the code has an error, writing an output scores zero, saying it errors scores half, and naming the error type scores full marks.",
+   "f": "name the error type",
+   "lec": 29
+  },
+  {
+   "id": "foc-t0141",
+   "h": "The final asks for no full Python programs on paper",
+   "p": "L#24 mentioned short handwritten code; L#29, the later word, says code writing means completing a missing line or writing pseudocode.",
+   "f": "complete a line, don't write a program",
+   "lec": 29
+  },
+  {
+   "id": "foc-t0142",
+   "h": "Looping over a dictionary with no method gives the keys",
+   "p": "for name in favorite_languages: behaves exactly like for name in favorite_languages.keys(). Use items() for pairs and values() for values.",
+   "f": "bare loop = keys",
+   "lec": 29
+  },
+  {
+   "id": "foc-t0143",
+   "h": "A 'missing 1 required positional argument' error tells you which parameter has no default",
+   "p": "describe_pet() failing on 'pet_name' alone means pet_name has no default and every other parameter has one. With no defaults, both would be reported missing.",
+   "f": "the error names the def line",
+   "lec": 29
   }
  ],
  "defs": [
@@ -2505,6 +2754,214 @@ HUB.addCourse({
    "term": "One job per function",
    "html": "<b>One job per function</b>: each function should do one specific task, as print_models and show_completed_models do; split a function that does too much.",
    "lec": 28
+  },
+  {
+   "id": "foc-d0128",
+   "unit": "functions",
+   "topic": "Passing an arbitrary number of arguments",
+   "term": "*args (arbitrary arguments)",
+   "html": "<b>*toppings</b>: a parameter with one asterisk packs any number of extra positional values into a <b>tuple</b>, even if only one is sent. It goes after the ordinary parameters.",
+   "lec": 30
+  },
+  {
+   "id": "foc-d0129",
+   "unit": "functions",
+   "topic": "Arbitrary keyword arguments",
+   "term": "**kwargs (arbitrary keyword arguments)",
+   "html": "<b>**user_info</b>: a parameter with two asterisks packs any number of extra name=value pairs into a <b>dictionary</b>, e.g. location='princeton' becomes {'location': 'princeton'}.",
+   "lec": 30
+  },
+  {
+   "id": "foc-d0130",
+   "unit": "functions",
+   "topic": "Storing functions in modules",
+   "term": "Module",
+   "html": "<b>Module</b>: a .py file holding function definitions that other programs can import. In Colab, a cell starting %%writefile pizza.py saves one.",
+   "lec": 30
+  },
+  {
+   "id": "foc-d0131",
+   "unit": "functions",
+   "topic": "Storing functions in modules",
+   "term": "import module_name",
+   "html": "<b>import pizza</b>: makes every function in pizza.py available; call each with the module name and a dot, as in <b>pizza.make_pizza(16, 'pepperoni')</b>. No .py in the import line.",
+   "lec": 30
+  },
+  {
+   "id": "foc-d0132",
+   "unit": "functions",
+   "topic": "Import styles and aliases",
+   "term": "from module import *",
+   "html": "<b>from pizza import *</b>: copies every function in, callable without a prefix. Discouraged: it can silently replace your own same-named functions and hides where a function came from.",
+   "lec": 30
+  },
+  {
+   "id": "foc-d0133",
+   "unit": "classes",
+   "topic": "Classes and instances: the blueprint idea",
+   "term": "Class",
+   "html": "<b>Class</b>: a blueprint that defines the data and behaviour a whole category of objects shares, e.g. class Dog(): with a name, an age, sit() and roll_over().",
+   "lec": 31
+  },
+  {
+   "id": "foc-d0134",
+   "unit": "classes",
+   "topic": "Classes and instances: the blueprint idea",
+   "term": "Instance (instantiation)",
+   "html": "<b>Instance</b>: one object made from a class and holding its own data, like one house built from a blueprint. Making it is <b>instantiation</b>: my_dog = Dog('willie', 6).",
+   "lec": 31
+  },
+  {
+   "id": "foc-d0135",
+   "unit": "classes",
+   "topic": "The Dog class: __init__() and self",
+   "term": "Method",
+   "html": "<b>Method</b>: a function defined inside a class, called through an instance with a dot: my_dog.sit().",
+   "lec": 31
+  },
+  {
+   "id": "foc-d0136",
+   "unit": "classes",
+   "topic": "The Dog class: __init__() and self",
+   "term": "__init__()",
+   "html": "<b>__init__()</b>: the special method Python runs automatically whenever an instance is made; it sets the starting attributes and needs no return statement.",
+   "lec": 31
+  },
+  {
+   "id": "foc-d0137",
+   "unit": "classes",
+   "topic": "The Dog class: __init__() and self",
+   "term": "self",
+   "html": "<b>self</b>: the required first parameter of every method; Python passes it automatically as a reference to the instance, so you never supply it in a call.",
+   "lec": 31
+  },
+  {
+   "id": "foc-d0138",
+   "unit": "classes",
+   "topic": "The Dog class: __init__() and self",
+   "term": "Attribute",
+   "html": "<b>Attribute</b>: a variable attached to an instance with self., e.g. self.name = name; usable in every method and from outside as my_dog.name.",
+   "lec": 31
+  },
+  {
+   "id": "foc-d0139",
+   "unit": "functions",
+   "topic": "Functions",
+   "term": "Function",
+   "html": "A <b>function</b> is a named block of code designed to do one specific job. It runs only when <b>called</b>.",
+   "bk": "Python Crash Course ch8"
+  },
+  {
+   "id": "foc-d0140",
+   "unit": "functions",
+   "topic": "Functions",
+   "term": "Parameter",
+   "html": "A <b>parameter</b> is a variable in the function <b>definition</b> that receives information: <b>def greet(username):</b>.",
+   "bk": "Python Crash Course ch8"
+  },
+  {
+   "id": "foc-d0141",
+   "unit": "functions",
+   "topic": "Functions",
+   "term": "Argument",
+   "html": "An <b>argument</b> is the value passed in a function <b>call</b>: in <b>greet('jesse')</b>, 'jesse' is the argument.",
+   "bk": "Python Crash Course ch8"
+  },
+  {
+   "id": "foc-d0142",
+   "unit": "functions",
+   "topic": "Functions",
+   "term": "Keyword argument",
+   "html": "A <b>keyword argument</b> is a name-value pair in a call, <b>pet_name='harry'</b>, matched by name, so order doesn't matter.",
+   "bk": "Python Crash Course ch8"
+  },
+  {
+   "id": "foc-d0143",
+   "unit": "functions",
+   "topic": "Functions",
+   "term": "Return value",
+   "html": "A <b>return value</b> is what <b>return</b> sends back to the calling line. With no return, a function returns <b>None</b>.",
+   "bk": "Python Crash Course ch8"
+  },
+  {
+   "id": "foc-d0144",
+   "unit": "functions",
+   "topic": "Functions",
+   "term": "Docstring",
+   "html": "A <b>docstring</b> is a triple-quoted description placed right after <b>def</b>, explaining what the function does.",
+   "bk": "Python Crash Course ch8"
+  },
+  {
+   "id": "foc-d0145",
+   "unit": "functions",
+   "topic": "Functions",
+   "term": "Module",
+   "html": "A <b>module</b> is a separate <b>.py</b> file of functions that other programs bring in with <b>import</b>.",
+   "bk": "Python Crash Course ch8"
+  },
+  {
+   "id": "foc-d0146",
+   "unit": "functions",
+   "topic": "Functions",
+   "term": "Alias (as)",
+   "html": "<b>as</b> gives an imported function or module a short nickname: <b>from pizza import make_pizza as mp</b>; <b>import pizza as p</b>.",
+   "bk": "Python Crash Course ch8"
+  },
+  {
+   "id": "foc-d0147",
+   "unit": "functions",
+   "topic": "Functions",
+   "term": "*args / **kwargs",
+   "html": "<b>*name</b> collects extra positional arguments into a <b>tuple</b>; <b>**name</b> collects extra keyword arguments into a <b>dictionary</b>.",
+   "bk": "Python Crash Course ch8"
+  },
+  {
+   "id": "foc-d0148",
+   "unit": "python",
+   "topic": "Live Lecture 6: the final exam format",
+   "term": "True/false in the final",
+   "html": "<b>True/false in the final</b> (L#29): always with a reason. In a 2-mark item, 0.5 is for true or false and 1.5 for the reason.",
+   "lec": 29
+  },
+  {
+   "id": "foc-d0149",
+   "unit": "python",
+   "topic": "Live Lecture 6: the final exam format",
+   "term": "Error-spotting marks",
+   "html": "<b>Error-spotting marks</b> (L#29): for code that fails, an output scores zero, \"it gives an error\" scores half, and naming the type (e.g. TypeError) scores full.",
+   "lec": 29
+  },
+  {
+   "id": "foc-d0150",
+   "unit": "python",
+   "topic": "Live Lecture 6: the final exam format",
+   "term": "Code completion",
+   "html": "<b>Code completion</b>: a final-exam question type with a <b>whole line</b> of a program missing, sometimes with the output given; you supply the line, or its logic.",
+   "lec": 29
+  },
+  {
+   "id": "foc-d0151",
+   "unit": "python",
+   "topic": "Live Lecture 6: the final exam format",
+   "term": "Pseudocode",
+   "html": "<b>Pseudocode</b>: a program's logic in plain steps, without exact Python syntax. In the final it replaces full code writing.",
+   "lec": 29
+  },
+  {
+   "id": "foc-d0152",
+   "unit": "dicts",
+   "topic": "Live Lecture 6: dictionary drills",
+   "term": "Nesting",
+   "html": "<b>Nesting</b>: one structure inside another, e.g. dictionaries in a list, a list in a dictionary, a dictionary in a dictionary; L#29 also counted a loop in a loop and a function in a function.",
+   "lec": 29
+  },
+  {
+   "id": "foc-d0153",
+   "unit": "classes",
+   "topic": "Live Lecture 6: classes and inheritance in review",
+   "term": "Inheritance",
+   "html": "<b>Inheritance</b>: <b>class ElectricCar(Car):</b> makes ElectricCar a child of Car, so its instances can use all of Car's attributes and methods. Car is the parent (superclass).",
+   "lec": 29
   }
  ],
  "questions": [
@@ -10068,6 +10525,1179 @@ HUB.addCourse({
    "w": "make_great gets a copy, so popping empties only the copy and magicians is unchanged. pop() takes from the end, so dev is handled first, and the new list is returned into great. Nothing is title-cased.",
    "lec": 28,
    "lv": "analyse"
+  },
+  {
+   "id": "foc-q0457",
+   "topic": "Functions",
+   "q": "In def make_pizza(*toppings):, what does the asterisk do?",
+   "c": [
+    "Collects any number of arguments into a tuple called toppings",
+    "Collects the arguments into a list called toppings",
+    "Makes toppings a dictionary of name=value pairs",
+    "Repeats the function once for each topping"
+   ],
+   "a": [
+    0
+   ],
+   "w": "One asterisk packs every value the call sends into a tuple. A dictionary needs two asterisks, and the function body runs once per call, not once per topping.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0458",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef make_pizza(*toppings):\n    print(toppings)\n\nmake_pizza('pepperoni')",
+   "c": [
+    "pepperoni",
+    "['pepperoni']",
+    "('pepperoni',)",
+    "('pepperoni')"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The value is packed into a tuple even when it is the only one, and Python shows a one-item tuple with a trailing comma. It isn't a list, and ('pepperoni') without the comma is just a string in brackets.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0459",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef make_pizza(*toppings):\n    print(\"Making a pizza with the following toppings:\")\n    for topping in toppings:\n        print(\"- \" + topping)\n\nmake_pizza('mushrooms', 'green peppers')",
+   "c": [
+    "Making a pizza with the following toppings:\n- ('mushrooms', 'green peppers')",
+    "Making a pizza with the following toppings:\n- mushrooms\n- green peppers",
+    "Making a pizza with the following toppings:\n- mushrooms",
+    "TypeError: make_pizza() takes 1 positional argument but 2 were given"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Both values go into the tuple, and the loop prints one line per topping after the heading. The starred parameter is what lets two arguments in without a TypeError.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0460",
+   "topic": "Functions",
+   "q": "A function needs a size and any number of toppings. Which definition is correct?",
+   "c": [
+    "def make_pizza(*toppings, size):",
+    "def make_pizza(size, toppings*):",
+    "def make_pizza(*size, *toppings):",
+    "def make_pizza(size, *toppings):"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The parameter that collects an arbitrary number of arguments goes last, after the ordinary ones, just as defaults go at the end. A function can have only one starred parameter of this kind, and the star goes before the name.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0461",
+   "topic": "Functions",
+   "q": "What happens?\n\ndef make_pizza(size, *toppings):\n    print(\"Making a \" + str(size) + \"-inch pizza with the following toppings:\")\n    for topping in toppings:\n        print(\"- \" + topping)\n\nmake_pizza('pepperoni', 16)",
+   "c": [
+    "It prints a 16-inch pizza with pepperoni",
+    "SyntaxError, before anything runs",
+    "It prints the heading line, then raises a TypeError",
+    "It prints Making a pepperoni-inch pizza with the following toppings: and - 16"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Values are matched by position: 'pepperoni' goes into size and 16 into the tuple. The heading prints as 'Making a pepperoni-inch pizza…', then \"- \" + 16 tries to join a string and an int, a TypeError. Python doesn't reorder arguments for you.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0462",
+   "topic": "Functions",
+   "q": "After make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese') is called on def make_pizza(size, *toppings):, what do the parameters hold?",
+   "c": [
+    "size = 12, toppings = ('mushrooms', 'green peppers', 'extra cheese')",
+    "size = (12,), toppings = ('mushrooms', 'green peppers', 'extra cheese')",
+    "size = 12, toppings = 'mushrooms'",
+    "size = 12, toppings = ['mushrooms', 'green peppers', 'extra cheese']"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Python fills the ordinary parameter first, then packs everything left over into the tuple. size is a plain integer, and toppings is a tuple, not a list.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0463",
+   "topic": "Functions",
+   "q": "In def build_profile(first, last, **user_info):, what is user_info inside the function?",
+   "c": [
+    "A tuple of the extra values",
+    "A string joining the extra values",
+    "A list of keys",
+    "A dictionary of the extra name=value pairs"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Two asterisks make Python create an empty dictionary and pack each extra name=value pair into it. One asterisk would give a tuple.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0464",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef build_profile(first, last, **user_info):\n    profile = {}\n    profile['first_name'] = first\n    profile['last_name'] = last\n    for key, value in user_info.items():\n        profile[key] = value\n    return profile\n\nprint(build_profile('albert', 'einstein', location='princeton', field='physics'))",
+   "c": [
+    "{'location': 'princeton', 'field': 'physics'}",
+    "{'first_name': 'albert', 'last_name': 'einstein', 'location': 'princeton', 'field': 'physics'}",
+    "('albert', 'einstein', 'princeton', 'physics')",
+    "{'first_name': 'Albert', 'last_name': 'Einstein', 'location': 'Princeton', 'field': 'Physics'}"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The two names are added first, then the loop copies each pair from user_info, and the whole profile is returned and printed in insertion order. Nothing calls title(), so the values stay lowercase.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0465",
+   "topic": "Functions",
+   "q": "Using the same build_profile(), what does print(build_profile('marie', 'curie')) show?",
+   "c": [
+    "TypeError: missing the keyword arguments",
+    "{'first_name': 'marie', 'last_name': 'curie', 'user_info': {}}",
+    "{'first_name': 'marie', 'last_name': 'curie'}",
+    "None"
+   ],
+   "a": [
+    2
+   ],
+   "w": "With no extra pairs, user_info is an empty dictionary, so the loop runs zero times and the profile keeps just the two names. The arbitrary parameter never makes an argument compulsory.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0466",
+   "topic": "Functions",
+   "q": "Which is the best description of a module, as used in this lecture?",
+   "c": [
+    "A function defined inside another function",
+    "A built-in Python keyword",
+    "A Colab cell that has been run",
+    "A .py file containing function definitions that other programs can import"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A module is a file ending in .py that holds functions (pizza.py here); an import statement makes them available elsewhere. In Colab, %%writefile is just how the file gets saved.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0467",
+   "topic": "Functions",
+   "q": "pizza.py is in the same folder as your program. Which line imports it?",
+   "c": [
+    "import pizza",
+    "from pizza.py import *",
+    "import pizza.py",
+    "include pizza"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The import line uses the module's name without .py. import pizza.py fails with ModuleNotFoundError, because Python reads the dot as a package path.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0468",
+   "topic": "Functions",
+   "q": "After import pizza, which call works?",
+   "c": [
+    "make_pizza(16, 'pepperoni')",
+    "pizza.make_pizza(16, 'pepperoni')",
+    "pizza(make_pizza, 16, 'pepperoni')",
+    "import.make_pizza(16, 'pepperoni')"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Importing the whole module means each function is reached as module name, dot, function name. The bare make_pizza() gives a NameError, because only from pizza import make_pizza brings that name in directly.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0469",
+   "topic": "Functions",
+   "q": "After from pizza import make_pizza as mp, how do you make a 16-inch pepperoni pizza?",
+   "c": [
+    "make_pizza(16, 'pepperoni')",
+    "pizza.mp(16, 'pepperoni')",
+    "mp.make_pizza(16, 'pepperoni')",
+    "mp(16, 'pepperoni')"
+   ],
+   "a": [
+    3
+   ],
+   "w": "as gives the function the alias mp, so the call is mp(...). make_pizza wasn't imported under its own name, and mp is a function, not a module with a dot after it.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0470",
+   "topic": "Functions",
+   "q": "After import pizza as p, which line calls greet()?",
+   "c": [
+    "p.greet('Naina')",
+    "pizza.greet('Naina')",
+    "greet('Naina')",
+    "p('Naina')"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The alias replaces the module name, so functions are reached through p, as with pd for pandas. The full name pizza isn't defined by this import, and the bare greet isn't imported at all.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0471",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef greet(name):\n    return f\"Welcome home, {name}!\"\n\nfrom pizza import *\n\nprint(greet('Neha'))\n\n(pizza.py defines greet(name), which returns f\"Hello, {name}! Your Pizza is ready.\")",
+   "c": [
+    "Welcome home, Neha!",
+    "Both greetings, one per line",
+    "Hello, Neha! Your Pizza is ready.",
+    "NameError: greet is defined twice"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The star import copies every function from pizza, including its greet, which silently replaces the one defined above, with no warning. That collision is the main reason he gave for avoiding import *.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0472",
+   "topic": "Functions",
+   "q": "Your file defines its own greet(). Which import lets you use pizza's greet() without replacing yours?",
+   "c": [
+    "from pizza import *",
+    "from pizza import greet as g",
+    "from pizza import greet",
+    "from pizza import make_pizza, greet"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Importing it under the alias g keeps your greet() untouched; call g('Neha') for the pizza version. Importing greet under its own name, alone, with others or via *, replaces yours.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0473",
+   "topic": "Functions",
+   "q": "A Colab cell ends with these lines (greet() returns a string and prints nothing):\n\npizza.greet('Aditya')\npizza.greet('Utkarsh')\n\nWhat appears below the cell?",
+   "c": [
+    "Both greetings",
+    "Only Aditya's greeting",
+    "Nothing at all",
+    "Only Utkarsh's greeting, shown in quotes as the cell's value"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A returned value is displayed only if printed, but Colab shows the value of a cell's last line by itself. So Aditya's greeting vanishes and Utkarsh's appears in quotes. In a .py script, neither would appear.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0474",
+   "topic": "Functions",
+   "q": "Which two reasons did the lecture give for avoiding from module import *?",
+   "c": [
+    "It is slower, and it imports only the first function",
+    "It needs the .py extension, and it can't import greet()",
+    "It can silently overwrite your own functions, and it hides where a function came from",
+    "It works only in Colab, and it needs an alias"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Name collisions (accidental overwriting) and unclear code origin. The better habits are importing specific functions or importing the module and using dot notation.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0475",
+   "topic": "Classes",
+   "q": "In the lecture's blueprint analogy, what is the class?",
+   "c": [
+    "The blueprint of the house",
+    "One house built at a particular address",
+    "The paint colour of a house",
+    "The architect"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The class is the blueprint that defines what every house has; each house built from it is an instance, with its own paint colour and occupants.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0476",
+   "topic": "Classes",
+   "q": "What is instantiation?",
+   "c": [
+    "Writing the methods of a class",
+    "Making an instance (object) from a class",
+    "Importing a class from a module",
+    "Giving a class a docstring"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Creating an object from a class, as in my_dog = Dog('willie', 6), is instantiation. Writing methods defines the class; it doesn't create any instance.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0477",
+   "topic": "Classes",
+   "q": "When does __init__() run?",
+   "c": [
+    "Only when you call my_dog.__init__() yourself",
+    "When the class definition is first read",
+    "Automatically, every time a new instance is made",
+    "When the program ends"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Python calls __init__() by itself whenever an instance is created, such as Dog('willie', 6). Reading the class definition only defines it, as with def for a function.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0478",
+   "topic": "Classes",
+   "q": "What does this print?\n\nmy_dog = Dog('willie', 6)\nprint(my_dog.name.title())\nmy_dog.sit()\n\n(Dog is the lecture's class: __init__ stores name and age; sit() prints self.name.title() + \" is now sitting.\")",
+   "c": [
+    "willie\nwillie is now sitting.",
+    "my_dog\nmy_dog is now sitting.",
+    "Willie\nWillie is now sitting.\nWillie rolled over!",
+    "Willie\nWillie is now sitting."
+   ],
+   "a": [
+    3
+   ],
+   "w": "my_dog.name is 'willie', and title() makes it Willie; sit() uses self.name, which for this instance is also 'willie'. roll_over() isn't called.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0479",
+   "topic": "Classes",
+   "q": "Dog's __init__ is def __init__(self, name, age):. What happens with my_dog = Dog('willie')?",
+   "c": [
+    "It works, with age set to None",
+    "TypeError: Dog.__init__() missing 1 required positional argument: 'age'",
+    "TypeError: missing 2 arguments, self and age",
+    "SyntaxError"
+   ],
+   "a": [
+    1
+   ],
+   "w": "self is supplied automatically, so only age is missing; it has no default. self is never reported as missing because you never pass it.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0480",
+   "topic": "Classes",
+   "q": "Why does Dog('willie', 6) pass two values when __init__ has three parameters?",
+   "c": [
+    "Python passes self automatically, as a reference to the new instance",
+    "The third parameter is optional",
+    "age is read from the class docstring",
+    "Python ignores the first parameter of every method"
+   ],
+   "a": [
+    0
+   ],
+   "w": "self must be in the definition because Python itself passes the instance there; you supply only name and age. It isn't optional, and Python doesn't ignore it: it uses it to attach the attributes.",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0481",
+   "topic": "Classes",
+   "q": "Inside __init__(), what does self.name = name do?",
+   "c": [
+    "Prints the dog's name",
+    "Checks that name equals self",
+    "Creates a new class called name",
+    "Stores the value of the parameter name as an attribute on the instance being made"
+   ],
+   "a": [
+    3
+   ],
+   "w": "It takes the value passed in and attaches it to this instance, so every method (self.name) and the outside world (my_dog.name) can reach it.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0482",
+   "topic": "Classes",
+   "q": "In the Dog class, why is the name written as self.name inside sit()?",
+   "c": [
+    "Because sit() has its own parameter called name",
+    "Because methods can't use strings directly",
+    "Because the attribute is stored on the instance, which sit() reaches through self",
+    "Because title() only works on self"
+   ],
+   "a": [
+    2
+   ],
+   "w": "name was only a parameter of __init__(); what survives is the attribute self.name on the instance. Using plain name inside sit() gives a NameError.",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0483",
+   "topic": "Classes",
+   "q": "What does this print?\n\nmy_dog = Dog('willie', 6)\nyour_dog = Dog('lucy', 3)\nprint(your_dog.age)\nyour_dog.roll_over()",
+   "c": [
+    "3\nLucy rolled over!",
+    "3\nlucy rolled over!",
+    "6\nWillie rolled over!",
+    "lucy 3\nLucy rolled over!"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Each instance keeps its own attributes, so your_dog.age is 3 and roll_over() uses your_dog's name, title-cased to Lucy.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0484",
+   "topic": "Classes",
+   "q": "my_dog = Dog('willie', 6) and t_dog = Dog('willie', 6). Which statement is true?",
+   "c": [
+    "t_dog replaces my_dog in memory",
+    "t_dog is another name for my_dog",
+    "The second line raises an error because the values repeat",
+    "t_dog is a separate instance that happens to hold the same values"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Python makes a new instance for every call, each in its own block of memory. Repeated values are fine; only the variable names need to differ.",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0485",
+   "topic": "Classes",
+   "q": "What is a method?",
+   "c": [
+    "A variable stored on an instance",
+    "A function defined inside a class",
+    "Another word for a module",
+    "The name of a class"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A function that is part of a class is a method, called through an instance (my_dog.sit()). A variable stored on an instance is an attribute.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0486",
+   "topic": "Classes",
+   "q": "By convention, how is a class name written in Python?",
+   "c": [
+    "All lowercase, like dog",
+    "All capitals, like DOG",
+    "With a capital first letter, like Dog",
+    "With underscores, like _dog_"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Capitalised names signal classes (Dog, Car), while functions and variables use lowercase_with_underscores.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0487",
+   "topic": "Classes",
+   "q": "Why does __init__ have two underscores before and after its name?",
+   "c": [
+    "It makes the method private",
+    "It is required for every method",
+    "It makes the method run twice",
+    "It is a naming convention that keeps Python's built-in method names from clashing with yours"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Python's special methods use the double-underscore style so that your ordinary method names (sit, roll_over) can't collide with them. sit and roll_over have no underscores.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0488",
+   "topic": "Classes",
+   "q": "What does this print?\n\nmy_new_car = Car('audi', 'a4', 2016)\nprint(my_new_car.get_descriptive_name())\n\n(get_descriptive_name() joins str(self.year), self.make and self.model with spaces and returns long_name.title().)",
+   "c": [
+    "2016 Audi A4",
+    "2016 audi a4",
+    "audi a4 2016",
+    "Audi A4 2016"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The year comes first, then make and model, and title() capitalises each word: 2016 Audi A4. The digits are unaffected by title().",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0489",
+   "topic": "Classes",
+   "q": "my_dog.sit() is called on its own line, but get_descriptive_name() is wrapped in print(). Why the difference?",
+   "c": [
+    "get_descriptive_name() has no self parameter",
+    "Methods with self can't be printed",
+    "sit() prints inside its body; get_descriptive_name() returns a string that the caller must print",
+    "print() is needed whenever a class has __init__"
+   ],
+   "a": [
+    2
+   ],
+   "w": "sit() contains a print() call, so calling it shows the message. get_descriptive_name() returns its string instead, so without print() nothing would appear in a script.",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0490",
+   "topic": "Classes",
+   "q": "What happens?\n\nmy_dog = Dog('willie', 6)\nprint(\"My dog is \" + my_dog.age + \" years old.\")",
+   "c": [
+    "It prints My dog is 6 years old.",
+    "TypeError: can only concatenate str (not \"int\") to str",
+    "It prints My dog is age years old.",
+    "AttributeError: Dog has no attribute age"
+   ],
+   "a": [
+    1
+   ],
+   "w": "my_dog.age exists and holds the integer 6, so there's no AttributeError, but an int can't be joined to text with +. The lecture's version wraps it as str(my_dog.age).",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0491",
+   "topic": "Classes",
+   "q": "Does __init__() need a return statement to give you the new instance?",
+   "c": [
+    "Yes: return self must be its last line",
+    "No, because __init__ always prints the instance",
+    "Yes, otherwise my_dog holds None",
+    "No: Python returns the instance automatically"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The lecture's __init__ has no return, yet my_dog = Dog('willie', 6) holds the instance, because Python returns it automatically. Ordinary methods still need return to hand back a value.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0492",
+   "topic": "Classes",
+   "q": "A Dog class defines def sit(): with no parameters. What happens on my_dog.sit()?",
+   "c": [
+    "It works, because sit() needs no information",
+    "NameError: self is not defined",
+    "TypeError: Dog.sit() takes 0 positional arguments but 1 was given",
+    "SyntaxError when the class is defined"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Every method call through an instance passes the instance automatically as the first argument. With no parameter to receive it, Python reports one argument too many, which is why the lecture says self is required.",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0493",
+   "topic": "Functions",
+   "q": "In def greet_user(username): followed by the call greet_user('meera'), which is the parameter and which is the argument?",
+   "c": [
+    "username is the parameter; 'meera' is the argument",
+    "'meera' is the parameter; username is the argument",
+    "Both are parameters",
+    "greet_user is the parameter; 'meera' is the argument"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The parameter is the variable in the definition; the argument is the value supplied in the call. The note in the book admits people mix the words up, but in an exam use them precisely.",
+   "bk": "Python Crash Course ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0494",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef describe(kind, name):\n    print(\"I have a \" + kind + \" called \" + name.title() + \".\")\n\ndescribe('mithu', 'parrot')",
+   "c": [
+    "I have a parrot called Mithu.",
+    "TypeError: arguments in the wrong order",
+    "I have a mithu called Parrot.",
+    "I have a Mithu called parrot."
+   ],
+   "a": [
+    2
+   ],
+   "w": "Positional arguments are matched by order, so 'mithu' goes into kind and 'parrot' into name. Python has no idea the meaning is swapped, so there's no error, just wrong output.",
+   "bk": "Python Crash Course ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0495",
+   "topic": "Functions",
+   "q": "With def describe(kind, name):, which call prints the same as describe('parrot', 'mithu')?",
+   "c": [
+    "describe('mithu', 'parrot')",
+    "describe(name='mithu', kind='parrot')",
+    "describe(kind='mithu', name='parrot')",
+    "describe(parrot, mithu)"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Keyword arguments are matched by name, so their order in the call doesn't matter. describe(parrot, mithu) has no quotes, so Python looks for variables called parrot and mithu (NameError).",
+   "bk": "Python Crash Course ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0496",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef area(l, w=2):\n    return l * w\n\nprint(area(5), area(5, 3), area(w=4, l=2))",
+   "c": [
+    "10 15 8",
+    "10 10 8",
+    "5 15 8",
+    "TypeError"
+   ],
+   "a": [
+    0
+   ],
+   "w": "area(5) uses the default w=2 → 10. area(5, 3) overrides it → 15. area(w=4, l=2) matches by name → 8. A supplied value always replaces the default.",
+   "bk": "Python Crash Course ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0497",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef shout(word):\n    print(word.upper())\n\nr = shout('hi')\nprint(r)",
+   "c": [
+    "HI then HI",
+    "hi then None",
+    "HI only",
+    "HI then None"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The call prints HI inside the function. The function has no return, so it gives back None, which is stored in r and printed. Printing is not the same as returning.",
+   "bk": "Python Crash Course ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0498",
+   "topic": "Functions",
+   "q": "What happens?\n\ndef describe(kind, name):\n    print(kind, name)\n\ndescribe('dog')",
+   "c": [
+    "It prints dog None",
+    "TypeError: describe() missing 1 required positional argument: 'name'",
+    "It prints dog",
+    "NameError: name is not defined"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Every parameter without a default must receive an argument. Python's traceback names the missing one, so descriptive parameter names make the error easy to fix.",
+   "bk": "Python Crash Course ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0499",
+   "topic": "Functions",
+   "q": "Which function definition is a SyntaxError?",
+   "c": [
+    "def f(a, b=1):",
+    "def f(a=1, b=2):",
+    "def f(a=1, b):",
+    "def f(a, b):"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A parameter without a default can't follow one with a default, because Python couldn't match positional arguments reliably. Defaults must come at the end.",
+   "bk": "Python Crash Course ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0500",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef full(first, last, middle=''):\n    if middle:\n        n = first + ' ' + middle + ' ' + last\n    else:\n        n = first + ' ' + last\n    return n.title()\n\nprint(full('mahendra', 'dhoni', 'singh'))",
+   "c": [
+    "Mahendra Dhoni Singh",
+    "Mahendra Singh Dhoni",
+    "mahendra singh dhoni",
+    "Mahendra Singh"
+   ],
+   "a": [
+    1
+   ],
+   "w": "By position, 'dhoni' is last and 'singh' is middle; the non-empty middle passes the if test, so the name is built first-middle-last and title-cased. The middle name must be passed LAST in the call because its parameter comes last.",
+   "bk": "Python Crash Course ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0501",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef drain(src, dst):\n    while src:\n        dst.append(src.pop())\n\na = ['x', 'y', 'z']\nb = []\ndrain(a, b)\nprint(a, b)",
+   "c": [
+    "['x', 'y', 'z'] ['z', 'y', 'x']",
+    "[] ['x', 'y', 'z']",
+    "['x', 'y', 'z'] []",
+    "[] ['z', 'y', 'x']"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The function works on the caller's actual lists: a is emptied and b fills up. pop() takes from the end, so b ends up reversed. Changes inside the function are permanent.",
+   "bk": "Python Crash Course ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0502",
+   "topic": "Functions",
+   "q": "Using the same drain(src, dst) function, what are a and b after drain(a[:], b) with a = ['x', 'y', 'z'] and b = []?",
+   "c": [
+    "a = ['x', 'y', 'z'], b = ['z', 'y', 'x']",
+    "a = [], b = ['z', 'y', 'x']",
+    "a = ['x', 'y', 'z'], b = []",
+    "a = [], b = []"
+   ],
+   "a": [
+    0
+   ],
+   "w": "a[:] passes a COPY, so the copy is emptied and the original a survives. b is passed as itself, so it still fills up.",
+   "bk": "Python Crash Course ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0503",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef mk(*items):\n    print(items)\n\nmk('one')",
+   "c": [
+    "one",
+    "['one']",
+    "('one',)",
+    "{'one'}"
+   ],
+   "a": [
+    2
+   ],
+   "w": "*items always packs the arguments into a tuple, even a single one, and a one-item tuple prints with a trailing comma. It is not a list (no square brackets).",
+   "bk": "Python Crash Course ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0504",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef prof(first, **info):\n    info['first'] = first\n    return info\n\nprint(prof('asha', city='pune'))",
+   "c": [
+    "{'city': 'pune', 'first': 'asha'}",
+    "('asha', 'pune')",
+    "{'first': 'asha'}",
+    "TypeError: unexpected keyword argument 'city'"
+   ],
+   "a": [
+    0
+   ],
+   "w": "**info gathers extra keyword arguments into a dictionary ({'city': 'pune'}); the function then adds 'first' and returns it. Without ** the unknown keyword city WOULD be a TypeError.",
+   "bk": "Python Crash Course ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0505",
+   "topic": "Functions",
+   "q": "def make_pizza(size, *toppings): is defined. Which call is correct for a 12-inch pizza with corn and olives?",
+   "c": [
+    "make_pizza('corn', 'olives', 12)",
+    "make_pizza(12, 'corn', 'olives')",
+    "make_pizza(*12, 'corn', 'olives')",
+    "make_pizza(toppings='corn', size=12, 'olives')"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Python fills the normal parameter first (size = 12) and packs everything after it into the toppings tuple. Putting 12 last would make 'corn' the size. A positional argument can't follow keyword arguments, so the call ending in a bare 'olives' after keywords is a SyntaxError.",
+   "bk": "Python Crash Course ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0506",
+   "topic": "Functions",
+   "q": "canteen.py defines make_tea(). Another file runs import canteen and then make_tea(2). What happens?",
+   "c": [
+    "NameError: make_tea is not defined, because it must be called as canteen.make_tea(2)",
+    "It works, because import copies every function in by name",
+    "ImportError",
+    "It runs make_tea with no argument"
+   ],
+   "a": [
+    0
+   ],
+   "w": "import canteen makes the functions available through the module name and a dot. Only from canteen import make_tea (or import *) lets you use the bare name.",
+   "bk": "Python Crash Course ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0507",
+   "topic": "Functions",
+   "q": "Which import lets you call the function as mt(2)?",
+   "c": [
+    "import canteen as mt",
+    "from canteen import mt",
+    "from canteen import make_tea as mt",
+    "import make_tea as mt"
+   ],
+   "a": [
+    2
+   ],
+   "w": "as after a specific function import gives that function an alias. import canteen as mt aliases the MODULE, so you'd write mt.make_tea(2). canteen has no function called mt.",
+   "bk": "Python Crash Course ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0508",
+   "topic": "Functions",
+   "q": "Why does the book advise against from module_name import * for large modules you didn't write?",
+   "c": [
+    "It is slower to run",
+    "It imports only the first function",
+    "It is a SyntaxError in Python 3",
+    "Imported names can clash with names already in your program and silently overwrite them"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Bringing in every name risks collisions that overwrite your own functions or variables. It does work and imports everything, which is precisely the problem. Prefer importing specific functions or the module with dot notation.",
+   "bk": "Python Crash Course ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0509",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef add(a, b):\n    return a + b\n\nprint(add(2, 3) * add(1, 1))\nprint(add('2', '3'))",
+   "c": [
+    "10 then 5",
+    "10 then 23",
+    "25 then 23",
+    "6 then TypeError"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Returned values can be used directly in expressions: 5 * 2 = 10. With strings, + concatenates, so '2' + '3' = '23'. The function doesn't care about types; the operator decides.",
+   "bk": "Python Crash Course ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0510",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef build(first, last, age=''):\n    p = {'first': first, 'last': last}\n    if age:\n        p['age'] = age\n    return p\n\nprint(build('a', 'b'))",
+   "c": [
+    "{'first': 'a', 'last': 'b', 'age': ''}",
+    "{'first': 'a', 'last': 'b'}",
+    "None",
+    "{'a': 'b'}"
+   ],
+   "a": [
+    1
+   ],
+   "w": "age defaults to '' (an empty string), which is False, so the if is skipped and no 'age' key is added. The dictionary is returned and printed; it is not None because the function has a return.",
+   "bk": "Python Crash Course ch8",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0511",
+   "topic": "Functions",
+   "q": "Which header follows the book's (PEP 8) style for a default value?",
+   "c": [
+    "def make_shirt(size = 'large'):",
+    "def Make_Shirt(size='large'):",
+    "def make_shirt(size='large'):",
+    "def makeShirt(size= 'large'):"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Function names are lowercase with underscores, and there are no spaces around = in a default (or in keyword arguments in calls). All four run; this is about style.",
+   "bk": "Python Crash Course ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0512",
+   "topic": "Functions",
+   "q": "describe(type='dog', name='rex') is called on def describe(kind, name):. What happens?",
+   "c": [
+    "It works, because keyword order doesn't matter",
+    "TypeError: describe() got an unexpected keyword argument 'type'",
+    "kind is set to 'dog' automatically",
+    "SyntaxError"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Keyword arguments must use the exact parameter names. There is no parameter called type, so Python rejects the call. Order indeed doesn't matter, but names do.",
+   "bk": "Python Crash Course ch8",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0513",
+   "topic": "Functions",
+   "q": "According to the book, which is the main benefit of putting a task in a function?",
+   "c": [
+    "Code inside functions runs faster",
+    "Functions make variables global",
+    "Functions remove the need for loops",
+    "Write the code once, call it anywhere; a fix in one place applies to every call"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Reuse and single-point maintenance are the book's argument, along with readability and easier testing. Functions don't make code faster or replace loops.",
+   "bk": "Python Crash Course ch8",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0514",
+   "topic": "Dictionaries",
+   "q": "What happens when this runs?\n\nalien_0 = {'color': 'green', 'points': 5}\nprint('You just earned ' + alien_0['points'] + ' points!')",
+   "c": [
+    "It prints You just earned 5 points!",
+    "KeyError: 'points'",
+    "TypeError: can only concatenate str (not \"int\") to str",
+    "It prints You just earned points!"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The key exists, so there is no KeyError, but its value is the integer 5, and + can't join an int to a string. In the final, writing the sentence scores zero; the full answer names the TypeError.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0515",
+   "topic": "Dictionaries",
+   "q": "The output of this program is\nOriginal x-position: 0\nNew x-position: 3\nWhich line belongs in the blank?\n\nalien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}\nprint(\"Original x-position: \" + str(alien_0['x_position']))\n________\nif alien_0['speed'] == 'slow':\n    x_increment = 1\nelif alien_0['speed'] == 'medium':\n    x_increment = 2\nelse:\n    x_increment = 3\nalien_0['x_position'] = alien_0['x_position'] + x_increment\nprint(\"New x-position: \" + str(alien_0['x_position']))",
+   "c": [
+    "alien_0['speed'] = 'fast'",
+    "x_increment = 3",
+    "alien_0['x_position'] = 3",
+    "alien_0['speed'] = 'slow'"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Only a speed that is neither slow nor medium reaches the else branch and adds 3 to 0. Setting x_increment = 3 early is overwritten by the medium branch (result 2); setting x_position to 3 gives 3 + 2 = 5; slow gives 1.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0516",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nfavorite_languages = {'jen': 'python', 'sarah': 'c', 'edward': 'ruby'}\nfor name in favorite_languages:\n    print(name.title())",
+   "c": [
+    "Python, C and Ruby on three lines",
+    "Jen, Sarah and Edward on three lines",
+    "Each name followed by its language",
+    "An error, because no method such as keys() was given"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Looping over a dictionary without a method hands the loop each key, the same as .keys(). The values (python, c, ruby) would need .values(), and pairs would need .items().",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0517",
+   "topic": "Functions",
+   "q": "What happens when this runs?\n\ndef describe_pet(animal_type='dog', pet_name):\n    print(\"I have a \" + animal_type + \".\")\n\ndescribe_pet('bruno')",
+   "c": [
+    "It prints I have a bruno.",
+    "TypeError: describe_pet() missing 1 required positional argument: 'pet_name'",
+    "It prints I have a dog.",
+    "SyntaxError: parameter without a default follows parameter with a default"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A parameter with a default can't come before one without. Python rejects the def line itself, so the call never runs and no TypeError is reached.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0518",
+   "topic": "Functions",
+   "q": "Calling describe_pet() gives\nTypeError: describe_pet() missing 1 required positional argument: 'pet_name'\nWhich definition produces exactly this error?",
+   "c": [
+    "def describe_pet(pet_name, animal_type):",
+    "def describe_pet(pet_name, animal_type='dog'):",
+    "def describe_pet(pet_name='bruno', animal_type='dog'):",
+    "def describe_pet():"
+   ],
+   "a": [
+    1
+   ],
+   "w": "pet_name must have no default, or Python wouldn't ask for it, and only one argument is missing, so animal_type must have a default. With no defaults the error would list both parameters; with both defaulted, or no parameters, there is no error.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0519",
+   "topic": "Functions",
+   "q": "What does this print?\n\ndef describe_pet(pet_name, animal_type='cow'):\n    print(\"I have a \" + animal_type + \".\")\n    print(\"My \" + animal_type + \"'s name is \" + pet_name.title() + \".\")\n\ndescribe_pet('bruno')",
+   "c": [
+    "I have a cow.\nMy cow's name is Bruno.",
+    "I have a bruno.\nMy bruno's name is Cow.",
+    "TypeError: describe_pet() missing 1 required positional argument: 'animal_type'",
+    "I have a cow.\nMy cow's name is bruno."
+   ],
+   "a": [
+    0
+   ],
+   "w": "'bruno' fills pet_name by position and animal_type falls back on its default 'cow', so there's no missing argument. title() capitalises the name to Bruno.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0520",
+   "topic": "Functions",
+   "q": "What happens when this cell runs?\n\ndef greet(name)\n    print(\"Hello, \" + name + \"!\")\n\ngreet('naina')",
+   "c": [
+    "IndentationError",
+    "It prints Hello, naina!",
+    "SyntaxError: expected ':'",
+    "TypeError"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The def line has no colon, so the code is invalid Python and nothing runs. The indentation is fine, so it isn't an IndentationError.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0521",
+   "topic": "Functions",
+   "q": "These lines print Agastya Gupta:\n\ndeveloper = get_formatted_name('agastya', 'gupta')\nprint(developer)\n\nWhich last line of get_formatted_name() fits? (full_name holds 'agastya gupta'.)",
+   "c": [
+    "print(full_name.title())",
+    "return full_name",
+    "return full_name.upper()",
+    "return full_name.title()"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A value lands in developer, so the function must return it, and lowercase input coming out capitalised means title(). With print() instead, developer would be None and None would print too; upper() would give AGASTYA GUPTA.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0522",
+   "topic": "Classes",
+   "q": "In class ElectricCar(Car):, what does Car inside the brackets mean?",
+   "c": [
+    "ElectricCar inherits from Car: Car is the parent class",
+    "Car is a parameter that ElectricCar's __init__() needs",
+    "Car inherits from ElectricCar",
+    "Every ElectricCar instance is stored in a variable called Car"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A class name in the brackets of a class line is the parent class; the new class is the child and can use the parent's methods. Values an instance needs go to __init__(), not in these brackets.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0523",
+   "topic": "Classes",
+   "q": "Car defines get_descriptive_name(); ElectricCar(Car) defines only __init__() and describe_battery(). What does this print?\n\nmy_tesla = ElectricCar('tesla', 'model s', 2016)\nprint(my_tesla.get_descriptive_name())",
+   "c": [
+    "AttributeError, because ElectricCar has no get_descriptive_name()",
+    "2016 tesla model s",
+    "2016 Tesla Model S",
+    "Tesla Model S 2016"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The child class inherits Car's method, so the call works through my_tesla. The method joins year, make and model and returns them in title case.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0524",
+   "topic": "Python basics",
+   "q": "In the final exam, a 2-mark true/false statement is set. According to L#29, how are the marks split?",
+   "c": [
+    "2 marks for the correct verdict alone",
+    "0.5 for true or false, 1.5 for the reason",
+    "1 for the verdict, 1 for an example",
+    "1.5 for the verdict, 0.5 for the reason"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He said there are no plain true/false items: the verdict carries 0.5 and the reasoning carries 1.5, so most of the marks are for the reason.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0525",
+   "topic": "Python basics",
+   "q": "A final-exam question asks for the output of code that raises an IndexError. Which answer earns full marks, according to L#29?",
+   "c": [
+    "The output the code would give if it worked",
+    "\"This code gives an error\"",
+    "Nothing: errors aren't asked about",
+    "That there is no output, and that the error is an IndexError"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Writing an output scores zero because the code never produces one; saying only that it errors earns half; naming the error type earns full marks.",
+   "lec": 29,
+   "lv": "recall"
   }
  ],
  "briefs": {
@@ -10140,6 +11770,10 @@ HUB.addCourse({
   "lec-26",
   "pcc1-ch07",
   "lec-27",
-  "lec-28"
+  "lec-28",
+  "lec-30",
+  "lec-31",
+  "pcc1-ch08",
+  "lec-29"
  ]
 });

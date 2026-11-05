@@ -175,6 +175,18 @@ HUB.addCourse({
    "Week 11 — Live Lecture 6",
    "Complexity and search revision + Quiz 2 brief",
    "live"
+  ],
+  [
+   29,
+   "Week 12 — Merge Sort",
+   "Split, merge, O(n log n), extra memory, variants",
+   "rec"
+  ],
+  [
+   30,
+   "Week 12 — Quick Sort",
+   "Pivot, partition, median of three, O(n log n)",
+   "rec"
   ]
  ],
  "units": [
@@ -611,8 +623,8 @@ HUB.addCourse({
   {
    "id": "sorting",
    "title": "Sorting algorithms",
-   "tag": "Lectures 25–27 · Module 5 · + textbook",
-   "lede": "Putting data in order so it can be searched, shown and reported: bubble, selection and insertion sort, all O(n²), traced on the same list so their passes, swaps and moves can be compared.",
+   "tag": "Lectures 25–27, 29–30 · Module 5 · + textbook",
+   "lede": "Putting data in order so it can be searched, shown and reported: the three O(n²) sorts (bubble, selection, insertion), then the divide and conquer sorts, merge and quick, at O(n log n).",
    "topics": [
     {
      "t": "What sorting is for",
@@ -648,6 +660,26 @@ HUB.addCourse({
      "t": "Insertion sort variants and uses",
      "src": "L#27",
      "h": "<h4>Variants</h4><ul style=\"font-size:14.5px\"><li><strong>Classic (minimum) insertion sort</strong>: start with the second item from the <strong>beginning</strong>, compare leftwards, move larger items <strong>right</strong>. The sorted part grows from the left</li><li><strong>Maximum insertion sort</strong>: the mirror image. Start with the second item from the <strong>end</strong>, compare with the items to its <strong>right</strong>, move smaller items one place <strong>left</strong>, and put the key in the gap. The sorted part grows from the right</li><li><strong>Bidirectional insertion sort</strong>: work from both ends at once, a key from the front moving larger items right and a key from the back moving smaller items left, with the two boundaries closing in. Described, not demonstrated</li></ul><p style=\"font-size:14.5px\">His maximum-insertion trace on the same list (bar = start of the sorted part):</p><div class=\"scroller\"><table><thead><tr><th>Pass · key</th><th>Moved left</th><th>List after</th></tr></thead><tbody><tr><td>1 · key 3</td><td>2</td><td style=\"font-family:var(--mono);white-space:nowrap\">10 5 8 4 <span style=\"color:var(--ink-3)\">|</span> 2 3</td></tr><tr><td>2 · key 4</td><td>2, 3</td><td style=\"font-family:var(--mono);white-space:nowrap\">10 5 8 <span style=\"color:var(--ink-3)\">|</span> 2 3 4</td></tr><tr><td>3 · key 8</td><td>2, 3, 4</td><td style=\"font-family:var(--mono);white-space:nowrap\">10 5 <span style=\"color:var(--ink-3)\">|</span> 2 3 4 8</td></tr><tr><td>4 · key 5</td><td>2, 3, 4; 8 stays</td><td style=\"font-family:var(--mono);white-space:nowrap\">10 <span style=\"color:var(--ink-3)\">|</span> 2 3 4 5 8</td></tr><tr><td>5 · key 10</td><td>all five</td><td style=\"font-family:var(--mono);white-space:nowrap\">2 3 4 5 8 10</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Again 15 comparisons and 14 moves. He described the variants as placing the minimum or the maximum; read that as the direction of work. A pass does not search for the largest value: the first key here, 3, sits at the far right only until bigger keys arrive.</p><h4>Complexity: O(n²) for every variant</h4><p style=\"font-size:14.5px\">Wherever you start, every item may have to be compared with all the others, so all three variants are <strong>O(n²)</strong>, and textbooks show only one. The worst case is a list in reverse order: every key moves past the whole sorted part, so the last pass alone makes n − 1 moves (six items in descending order: 15 moves).</p><div class=\"def\"><b>Squares, not the next number.</b> He illustrated n² growth with 9, 16, 25 while speaking of 4 and 5 elements. Those are 3², 4² and 5²: going from 4 to 5 elements raises the order of work from <b>16 to 25</b>.</div><h4>When insertion sort is the right tool</h4><ul style=\"font-size:14.5px\"><li><strong>Small lists</strong>: fine, like the other simple sorts</li><li><strong>Large, randomly ordered lists</strong>: inefficient, O(n²) like bubble and selection sort</li><li><strong>A new item arriving in a list that is already sorted.</strong> His example: the class list is in alphabetical order, and a student joins late because the fee payment was processed late. If roll numbers have been assigned, the newcomer just takes the next number. If not, he searches for the right place, first the P names, then the exact spot among them, and inserts the name there. Only the names after it move; nothing is re-sorted</li><li><strong>A mostly sorted list</strong>, such as an e-commerce catalogue already ordered by main category with sub-lists inside each, where new products must be slotted into the right sub-list</li></ul><p style=\"font-size:14.5px\">The name fits: insert the item at its correct place now, and there is no sorting to do later. The figure shows why order matters so much: a sorted or nearly sorted list costs barely more than one comparison per item.</p><h4>The three sorts so far, on his list [10, 5, 8, 4, 3, 2]</h4><div class=\"scroller\"><table><thead><tr><th></th><th>Bubble (L#25)</th><th>Selection (L#26)</th><th>Insertion (L#27)</th></tr></thead><tbody><tr><td>Moves data by</td><td>swapping neighbours</td><td>one swap per pass</td><td>shifting, then one write</td></tr><tr><td>Comparisons</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td></tr><tr><td>Swaps or moves</td><td style=\"font-family:var(--mono);white-space:nowrap\">14 swaps</td><td style=\"font-family:var(--mono);white-space:nowrap\">4 swaps</td><td style=\"font-family:var(--mono);white-space:nowrap\">14 moves</td></tr><tr><td>Strong point</td><td>simplest idea</td><td>fewest swaps</td><td>sorted or nearly sorted data</td></tr></tbody></table></div><!--viz:atb-insertion-input-order--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table for six-item lists. Already sorted: insertion sort makes 5 comparisons and 0 moves. One item out of place: 6 comparisons, 1 move. The lecture list: 15 comparisons, 14 moves. Reverse order: 15 comparisons, 15 moves. Selection sort makes 15 comparisons in every case.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Six items, four orders: what insertion sort pays</div><div class=\"scroller\"><table><thead><tr><th>Input order</th><th>List</th><th>Insertion: comparisons</th><th>Insertion: moves</th><th>Selection: comparisons</th></tr></thead><tbody><tr><td>Already sorted</td><td style=\"font-family:var(--mono);white-space:nowrap\">2 5 8 11 14 20</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--good-soft)\">5</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--good-soft)\">0</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td></tr><tr><td>One item out of place</td><td style=\"font-family:var(--mono);white-space:nowrap\">3 5 8 7 10 12</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--good-soft)\">6</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--good-soft)\">1</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td></tr><tr><td>His list</td><td style=\"font-family:var(--mono);white-space:nowrap\">10 5 8 4 3 2</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td><td style=\"font-family:var(--mono);white-space:nowrap\">14</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td></tr><tr><td>Reverse order</td><td style=\"font-family:var(--mono);white-space:nowrap\">20 14 11 8 5 2</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--bad-soft)\">15</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--bad-soft)\">15</td><td style=\"font-family:var(--mono);white-space:nowrap\">15</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Insertion sort’s cost follows how disordered the list is; selection sort pays 15 comparisons whatever the order.</figcaption></figure><!--/viz:atb-insertion-input-order-->"
+    },
+    {
+     "t": "Merge sort: split, then merge",
+     "src": "L#29",
+     "h": "<div class=\"def\"><b>Merge sort</b> is a <b>divide and conquer</b> sort. It keeps <b>splitting</b> the list into two roughly equal parts until every part holds a single item, then <b>merges</b> the parts back two at a time, each merge producing a sorted list, until one sorted list is left.</div><h4>Why a new kind of sort</h4><p style=\"font-size:14.5px\">Bubble, selection and insertion sort (L#25–27) are easy to follow but all <strong>O(n²)</strong>: as the list grows, the time grows with the square of its length, so they become impractical for large lists. Merge sort, and quick sort after it (L#30), use the Module 1 idea of <strong>divide and conquer</strong>: break a big problem into smaller ones, solve those, and combine the results. Instead of picking items and swapping them, merge sort builds <strong>small sorted lists and merges them</strong>. He likened the halving to Asrani’s famous half-this-way, half-that-way line in <em>Sholay</em>.</p><h4>The algorithm</h4><ol style=\"font-size:14.5px\"><li><strong>Split</strong> the list into two <strong>roughly equal</strong> parts. “Roughly”, because an odd count cannot be halved: 14 items give 7 and 7, but 15 give 8 and 7 (or 7 and 8, depending on the implementation)</li><li>Keep splitting each part until every part holds <strong>one item</strong>. Nothing is compared or reordered in this stage</li><li>Now <strong>merge</strong>: take two sorted parts at a time (a single item counts as sorted)</li><li>Compare the <strong>first</strong> (front) item of each part</li><li>Put the smaller one into a <strong>new</strong> sorted list</li><li>In the part it came from, move on to the next item</li><li>Keep comparing the front items of the two parts</li><li>Repeat until one part is empty</li><li>Copy whatever is left in the other part straight across: it is already sorted, so no more comparisons are needed</li></ol><p style=\"font-size:14.5px\">The sorting happens <strong>only in the merging stage</strong>, which is where the name comes from.</p><h4>His example: eight numbers</h4><p style=\"font-size:14.5px\">He took the module’s list [10, 5, 8, 4, 3, 2] and added 7 and 6, so that eight items halve evenly at every level.</p><div class=\"scroller\"><table><thead><tr><th>Stage</th><th>Parts</th><th>Comparisons</th></tr></thead><tbody><tr><td>Split 1</td><td style=\"font-family:var(--mono);white-space:nowrap\">10 5 8 4 <span style=\"color:var(--ink-3)\">|</span> 3 2 7 6</td><td>none</td></tr><tr><td>Split 2</td><td style=\"font-family:var(--mono);white-space:nowrap\">10 5 <span style=\"color:var(--ink-3)\">|</span> 8 4 <span style=\"color:var(--ink-3)\">|</span> 3 2 <span style=\"color:var(--ink-3)\">|</span> 7 6</td><td>none</td></tr><tr><td>Split 3</td><td style=\"font-family:var(--mono);white-space:nowrap\">10 <span style=\"color:var(--ink-3)\">|</span> 5 <span style=\"color:var(--ink-3)\">|</span> 8 <span style=\"color:var(--ink-3)\">|</span> 4 <span style=\"color:var(--ink-3)\">|</span> 3 <span style=\"color:var(--ink-3)\">|</span> 2 <span style=\"color:var(--ink-3)\">|</span> 7 <span style=\"color:var(--ink-3)\">|</span> 6</td><td>none</td></tr><tr><td>Merge 1</td><td style=\"font-family:var(--mono);white-space:nowrap\">5 10 <span style=\"color:var(--ink-3)\">|</span> 4 8 <span style=\"color:var(--ink-3)\">|</span> 2 3 <span style=\"color:var(--ink-3)\">|</span> 6 7</td><td style=\"font-family:var(--mono);white-space:nowrap\">1 + 1 + 1 + 1</td></tr><tr><td>Merge 2</td><td style=\"font-family:var(--mono);white-space:nowrap\">4 5 8 10 <span style=\"color:var(--ink-3)\">|</span> 2 3 6 7</td><td style=\"font-family:var(--mono);white-space:nowrap\">3 + 2</td></tr><tr><td>Merge 3</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--good-soft)\">2 3 4 5 6 7 8 10</td><td style=\"font-family:var(--mono);white-space:nowrap\">6</td></tr></tbody></table></div><p style=\"font-size:14.5px\">With pairs the merge is obvious, but follow the rule anyway. Merging [5, 10] with [4, 8]: 5 vs 4 → 4 goes first; 5 vs 8 → 5; 10 vs 8 → 8; the second part is now empty, so 10 is copied. Merging [2, 3] with [6, 7]: 2 vs 6 → 2; 3 vs 6 → 3; the first part is empty, so 6 and 7 are copied. The final merge is traced step by step in the figure. In all, <strong>15 comparisons</strong> and no swaps.</p><h4>His exercise: seven names, an odd count</h4><p style=\"font-size:14.5px\">The same seven names as in L#25–27, sorted by first letter: Mohan, Ram, Sham, Lakshman, Arjun, Bheem, Nakul. Nothing in the algorithm changes for an odd count; some parts are simply unequal.</p><div class=\"def\"><b>From the lecture (L#29), so your answer matches his:</b> when a part has an odd number of items, make the <b>first</b> half the larger one. Seven items split 4 and 3; three split 2 and 1; four split 2 and 2. Splitting the other way is equally correct and does not change the algorithm or its complexity, but the intermediate lists will differ from his.</div><div class=\"scroller\"><table><thead><tr><th>Stage</th><th>Parts</th></tr></thead><tbody><tr><td>Split 1</td><td>Mohan Ram Sham Lakshman <span style=\"color:var(--ink-3)\">|</span> Arjun Bheem Nakul</td></tr><tr><td>Split 2</td><td>Mohan Ram <span style=\"color:var(--ink-3)\">|</span> Sham Lakshman <span style=\"color:var(--ink-3)\">|</span> Arjun Bheem <span style=\"color:var(--ink-3)\">|</span> Nakul</td></tr><tr><td>Split 3</td><td>every name alone (Nakul already is)</td></tr><tr><td>Merge 1</td><td>Mohan Ram <span style=\"color:var(--ink-3)\">|</span> Lakshman Sham <span style=\"color:var(--ink-3)\">|</span> Arjun Bheem <span style=\"color:var(--ink-3)\">|</span> Nakul</td></tr><tr><td>Merge 2</td><td>Lakshman Mohan Ram Sham <span style=\"color:var(--ink-3)\">|</span> Arjun Bheem Nakul</td></tr><tr><td>Merge 3</td><td style=\"background:var(--good-soft)\">Arjun Bheem Lakshman Mohan Nakul Ram Sham</td></tr></tbody></table></div><p style=\"font-size:14.5px\">In merge 1, Mohan and Ram are already in order, Lakshman jumps ahead of Sham, and Nakul, with no partner, is carried up as it is. In merge 2, L beats M, then M beats S, then R beats S, and Sham is copied last; Arjun and Bheem are already in order and Nakul goes after them. The final merge: Arjun (A before L), Bheem (B before L), Lakshman (L before N), Mohan (M before N), Nakul (N before R); the second part is now empty, so Ram and Sham are copied across.</p><!--viz:atb-merge-final-merge-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace of merging the sorted lists 4, 5, 8, 10 and 2, 3, 6, 7. Six comparisons of the front items place 2, 3, 4, 5, 6 and 7 in turn; then the second list is empty and 8 and 10 are copied across, giving 2, 3, 4, 5, 6, 7, 8, 10.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The final merge, one comparison at a time</div><p style=\"font-size:13.5px;color:var(--ink-2);margin-bottom:8px;font-family:var(--mono)\">final merge of [4, 5, 8, 10] and [2, 3, 6, 7] · bold = front item</p><div class=\"scroller\"><table><thead><tr><th>Step</th><th>Part 1</th><th>Part 2</th><th>Compare</th><th>New list</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono);white-space:nowrap\">1</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b>4</b> 5 8 10</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b>2</b> 3 6 7</td><td>4 vs 2 → 2</td><td style=\"font-family:var(--mono);white-space:nowrap\">2</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">2</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b>4</b> 5 8 10</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b>3</b> 6 7</td><td>4 vs 3 → 3</td><td style=\"font-family:var(--mono);white-space:nowrap\">2 3</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">3</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b>4</b> 5 8 10</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b>6</b> 7</td><td>4 vs 6 → 4</td><td style=\"font-family:var(--mono);white-space:nowrap\">2 3 4</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">4</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b>5</b> 8 10</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b>6</b> 7</td><td>5 vs 6 → 5</td><td style=\"font-family:var(--mono);white-space:nowrap\">2 3 4 5</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">5</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b>8</b> 10</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b>6</b> 7</td><td>8 vs 6 → 6</td><td style=\"font-family:var(--mono);white-space:nowrap\">2 3 4 5 6</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">6</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b>8</b> 10</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b>7</b></td><td>8 vs 7 → 7</td><td style=\"font-family:var(--mono);white-space:nowrap\">2 3 4 5 6 7</td></tr><tr><td style=\"font-family:var(--mono);white-space:nowrap\">copy</td><td style=\"font-family:var(--mono);white-space:nowrap\">8 10</td><td style=\"font-family:var(--mono);white-space:nowrap\"><span style=\"color:var(--ink-3)\">empty</span></td><td>copy the rest</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--good-soft)\">2 3 4 5 6 7 8 10</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only the two front items are ever compared; once a part runs out, the rest is copied without comparing.</figcaption></figure><!--/viz:atb-merge-final-merge-trace--><!--viz:atb-merge-odd-split-names--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Merge sort on seven names. The list splits 4 and 3, then into Mohan Ram, Sham Lakshman, Arjun Bheem and Nakul, then into single names. Merging gives Mohan Ram, Lakshman Sham, Arjun Bheem, Nakul; then Lakshman Mohan Ram Sham and Arjun Bheem Nakul; then Arjun Bheem Lakshman Mohan Nakul Ram Sham.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Seven names: odd splits change nothing</div><div style=\"min-width:0\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;margin-bottom:8px\"><span style=\"width:62px;flex:none;color:var(--ink-3);font-size:12.5px\">start</span><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Mohan Ram Sham Lakshman Arjun Bheem Nakul</div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;margin-bottom:8px\"><span style=\"width:62px;flex:none;color:var(--ink-3);font-size:12.5px\">split 4 | 3</span><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Mohan Ram Sham Lakshman</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Arjun Bheem Nakul</div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;margin-bottom:8px\"><span style=\"width:62px;flex:none;color:var(--ink-3);font-size:12.5px\">split</span><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Mohan Ram</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Sham Lakshman</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Arjun Bheem</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Nakul</div><span style=\"color:var(--ink-3);font-size:12.5px\">3 → 2 + 1</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;margin-bottom:8px\"><span style=\"width:62px;flex:none;color:var(--ink-3);font-size:12.5px\">split</span><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Mohan</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Ram</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Sham</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Lakshman</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Arjun</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Bheem</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Nakul</div><span style=\"color:var(--ink-3);font-size:12.5px\">all alone</span></div><div style=\"color:var(--ink-3);font-size:12.5px;margin:2px 0 8px 68px\">↓ now merge, comparing front items</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;margin-bottom:8px\"><span style=\"width:62px;flex:none;color:var(--ink-3);font-size:12.5px\">merge</span><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Mohan Ram</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Lakshman Sham</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Arjun Bheem</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Nakul</div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;margin-bottom:8px\"><span style=\"width:62px;flex:none;color:var(--ink-3);font-size:12.5px\">merge</span><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Lakshman Mohan Ram Sham</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-size:13.5px\">Arjun Bheem Nakul</div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;margin-bottom:8px\"><span style=\"width:62px;flex:none;color:var(--ink-3);font-size:12.5px\">merge</span><div style=\"padding:5px 9px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-size:13.5px\">Arjun Bheem Lakshman Mohan Nakul Ram Sham</div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">With the first half taken as the larger, seven splits 4 + 3 and three splits 2 + 1; Nakul simply waits for the next merge.</figcaption></figure><!--/viz:atb-merge-odd-split-names-->"
+    },
+    {
+     "t": "Merge sort’s O(n log n), memory and variants",
+     "src": "L#29",
+     "h": "<h4>Complexity: O(n log n)</h4><ul style=\"font-size:14.5px\"><li><strong>Splitting gives the log n.</strong> Whenever a problem is cut into halves again and again, the number of levels grows as log n (the fixed-ratio rule restated in L#28). Eight items need three levels</li><li><strong>Merging gives the n.</strong> At every level the merges together compare their way through all n items to decide where each one goes</li><li>So the whole sort is <strong>O(n log n)</strong>: far better than O(n²) for large lists. An O(log n) sort would be sweeter still, but he said a correct one is hard to come by for sorting; n log n is what we are typically comfortable with</li><li><strong>No swaps.</strong> Merge sort only compares front items and copies the smaller into a new list; it never swaps two items, which is another reason it is simpler than the first three sorts</li></ul><div class=\"def\"><b>A slip to ignore:</b> in the closing summary the complexity was read out as “O log n” (he also fixed a slide typo, “long” for “log”). The analysis earlier in the same lecture, and the textbook, give <b>O(n log n)</b>. Write O(n log n).</div><h4>The cost: extra memory</h4><p style=\"font-size:14.5px\">Bubble, selection and insertion sort worked inside the same array, swapping or shifting. Merge sort cannot: the two parts being merged must stay intact while the items are copied, one by one, into a <strong>new list</strong>. In his names example, Lakshman Mohan Ram Sham and Arjun Bheem Nakul both stay where they are while a new seven-item list is filled. So its <strong>space</strong> requirement is higher. The trade is worth it for large lists: memory can be added (a bigger server, or secondary storage when RAM is short), while the processing time saved is large.</p><h4>Variants</h4><ul style=\"font-size:14.5px\"><li><strong>Top-down two-way merge sort</strong>, the classic one he traced: <em>top-down</em> because it starts from the whole list and splits downwards; <em>two-way</em> because each split makes two parts</li><li><strong>Bottom-up merge sort</strong>: has no splitting stage and goes straight to merging. Useful when the items already exist separately, for instance when they arrive one at a time</li><li><strong>Three-way merge sort</strong>: splits into three parts at each level and merges three sorted parts. Same logic, three instead of two</li><li><strong>Natural merge sort</strong>: finds the stretches of the data that are already sorted and merges only those. His example: a class list that is already sorted, plus a few students who joined late and must go in their right places rather than at the end</li><li><strong>Parallel merge sort</strong>: parts at the same level are sorted at the same time, then merged. Ordinary computing is sequential: it switches between tasks so fast that video, sound and typing seem simultaneous. Real parallelism needs several <strong>processors</strong>, or <strong>threads</strong> on a single processor where the language and operating system support them. For millions of records each processor can sort its own part</li></ul><h4>Where it is used</h4><ul style=\"font-size:14.5px\"><li>Large lists, since it is O(n log n) where the first three sorts are O(n²)</li><li><strong>A customer or product list split by first letter.</strong> Instead of halving by position, start a new part at each change of letter (A to B, B to C, …), sort each letter’s list, in parallel if possible, then merge the lists in alphabetical order</li><li>Anywhere the extra memory can be provided, because the time saved is what matters</li></ul><h4>Module 5 so far</h4><div class=\"scroller\"><table><thead><tr><th></th><th>Bubble, selection, insertion (L#25–27)</th><th>Merge (L#29)</th></tr></thead><tbody><tr><td>Approach</td><td>pick, compare, swap or shift</td><td>divide and conquer: split, then merge</td></tr><tr><td>Time</td><td style=\"font-family:var(--mono);white-space:nowrap\">O(n²)</td><td style=\"font-family:var(--mono);white-space:nowrap\">O(n log n)</td></tr><tr><td>Swaps</td><td>many (selection: one per pass)</td><td>none</td></tr><tr><td>Extra memory</td><td>none: same array</td><td>a new list at each merge</td></tr><tr><td>Comparisons on his eight numbers</td><td>not traced</td><td style=\"font-family:var(--mono)\">15</td></tr></tbody></table></div>"
+    },
+    {
+     "t": "Quick sort: pivot and partition",
+     "src": "L#30",
+     "h": "<div class=\"def\"><b>Quick sort</b> is a <b>divide and conquer</b> sort. It chooses one item as the <b>pivot</b>, puts every smaller item to its left and every larger item to its right, which leaves the pivot in its <b>correct final place</b>, and then does the same to the left part and to the right part, until every part has <b>zero or one item</b>.</div><h4>How it differs from merge sort</h4><p style=\"font-size:14.5px\">Merge sort (L#29) always halves, so the number of divisions is fixed by the number of items, whatever the data. Quick sort divides <strong>around a pivot</strong>, so the parts can be unequal and the work depends on how good the pivot is. With reasonably good pivots it is <strong>more efficient than merge sort</strong>, though still <strong>O(n log n)</strong>: Big O describes how the effort grows with the size of the problem, not the exact time.</p><h4>The algorithm</h4><ol style=\"font-size:14.5px\"><li>Choose one item as the <strong>pivot</strong>. In his examples, the <strong>last item</strong> of the list (many textbooks do the same; other choices come in the next topic)</li><li>Compare every other item with the pivot</li><li>Smaller items go to the <strong>left</strong> of the pivot, larger items to the <strong>right</strong></li><li>The pivot is now in its correct position</li><li>Apply the same process to the left part, and complete it</li><li>Apply the same process to the right part, and complete it</li><li>Continue until each part has 0 or 1 item: a part of one item is already in its right place</li></ol><p style=\"font-size:14.5px\">Finishing the whole left side before the right, or alternating a level on the left with a level on the right, are both fine. What matters is pivoting until every part is trivial.</p><div class=\"def\"><b>How he places the items.</b> Each item is compared <b>only with the pivot</b>, never with the others on its side, so the sides are <b>not</b> sorted internally. Smaller items are written from the first position onwards, in the order they are met; larger items fill the places after the pivot, again in the order met. If you need a value between two others on the same side, that is insertion sort’s job, not quick sort’s.</div><h4>His example: eight numbers, last item as pivot</h4><p style=\"font-size:14.5px\">The list from L#29, [10, 5, 8, 4, 3, 2, 7, 6]. The bar marks off each part still to be done; the figure traces every pivot.</p><div class=\"scroller\"><table><thead><tr><th>Part · pivot</th><th>Smaller → left</th><th>Larger → right</th><th>Result</th></tr></thead><tbody><tr><td>whole list · 6</td><td style=\"font-family:var(--mono);white-space:nowrap\">5 4 3 2</td><td style=\"font-family:var(--mono);white-space:nowrap\">10 8 7</td><td style=\"font-family:var(--mono);white-space:nowrap\">5 4 3 2 <b style=\"color:var(--blue)\">6</b> 10 8 7</td></tr><tr><td>5 4 3 2 · 2</td><td style=\"font-family:var(--mono);white-space:nowrap\">none</td><td style=\"font-family:var(--mono);white-space:nowrap\">5 4 3</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b style=\"color:var(--blue)\">2</b> 5 4 3</td></tr><tr><td>5 4 3 · 3</td><td style=\"font-family:var(--mono);white-space:nowrap\">none</td><td style=\"font-family:var(--mono);white-space:nowrap\">5 4</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b style=\"color:var(--blue)\">3</b> 5 4</td></tr><tr><td>5 4 · 4</td><td style=\"font-family:var(--mono);white-space:nowrap\">none</td><td style=\"font-family:var(--mono);white-space:nowrap\">5</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b style=\"color:var(--blue)\">4</b> 5</td></tr><tr><td>10 8 7 · 7</td><td style=\"font-family:var(--mono);white-space:nowrap\">none</td><td style=\"font-family:var(--mono);white-space:nowrap\">10 8</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b style=\"color:var(--blue)\">7</b> 10 8</td></tr><tr><td>10 8 · 8</td><td style=\"font-family:var(--mono);white-space:nowrap\">none</td><td style=\"font-family:var(--mono);white-space:nowrap\">10</td><td style=\"font-family:var(--mono);white-space:nowrap\"><b style=\"color:var(--blue)\">8</b> 10</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Sorted: <span style=\"font-family:var(--mono)\">2 3 4 5 6 7 8 10</span>. The first pivot, 6, split the list well. Then the left part’s last item, 2, was its <strong>smallest</strong>, so everything went to one side and each round placed only the pivot. He used this to show that an extreme pivot adds steps. Counting them: 7 + 3 + 2 + 1 + 2 + 1 = 16 comparisons with the pivot here, against merge sort’s 15 on the same list in L#29, because the later pivots were poor.</p><h4>His exercise: the seven names</h4><p style=\"font-size:14.5px\">Mohan, Ram, Sham, Lakshman, Arjun, Bheem, Nakul, by first letter, last item as pivot.</p><div class=\"def\"><b>From the lecture (L#30), so your answer matches his:</b> for this exercise use the <b>last item</b> as the pivot. Any item could serve, but he fixed the last one so that solutions are consistent.</div><div class=\"scroller\"><table><thead><tr><th>Part · pivot</th><th>Left</th><th>Right</th></tr></thead><tbody><tr><td>all seven · <b>Nakul</b></td><td>Mohan, Lakshman, Arjun, Bheem</td><td>Ram, Sham</td></tr><tr><td>Mohan Lakshman Arjun Bheem · <b>Bheem</b></td><td>Arjun (alone: placed)</td><td>Mohan, Lakshman</td></tr><tr><td>Mohan Lakshman · <b>Lakshman</b></td><td>none</td><td>Mohan (alone: placed)</td></tr><tr><td>Ram Sham · <b>Sham</b></td><td>Ram (alone: placed)</td><td>none</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Sorted: <span style=\"font-family:var(--mono)\">Arjun Bheem Lakshman Mohan Nakul Ram Sham</span>, in four partitions. He pointed out that his quick-sort solution fitted on one screen where earlier sorts had needed two, a rough sign of fewer steps.</p><!--viz:atb-quick-sort-lecture-pivots--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Quick sort on 10, 5, 8, 4, 3, 2, 7, 6 with the last item as pivot. Pivot 6 gives 5 4 3 2, then 6, then 10 8 7. On the left, pivots 2, 3 and 4 each send everything to their right. On the right, pivots 7 and 8 do the same. The result is 2, 3, 4, 5, 6, 7, 8, 10.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Every pivot of his quick sort, last item each time</div><p style=\"font-size:13.5px;color:var(--ink-2);margin-bottom:8px\">blue = pivot of that round · green = already in its final place · grey = part still to sort</p><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;margin-bottom:8px\"><span style=\"width:58px;flex:none;color:var(--ink-3);font-size:12.5px\">start</span><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono);font-size:13.5px\">10 5 8 4 3 2 7 6</div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;margin-bottom:8px\"><span style=\"width:58px;flex:none;color:var(--ink-3);font-size:12.5px\">pivot 6</span><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono);font-size:13.5px\">5 4 3 2</div><div style=\"padding:5px 9px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono);font-size:13.5px\">6</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono);font-size:13.5px\">10 8 7</div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;margin-bottom:8px\"><span style=\"width:58px;flex:none;color:var(--ink-3);font-size:12.5px\">pivot 2</span><div style=\"padding:5px 9px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono);font-size:13.5px\">2</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono);font-size:13.5px\">5 4 3</div><div style=\"padding:5px 9px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft);font-family:var(--mono);font-size:13.5px\">6</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono);font-size:13.5px\">10 8 7</div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;margin-bottom:8px\"><span style=\"width:58px;flex:none;color:var(--ink-3);font-size:12.5px\">pivot 3</span><div style=\"padding:5px 9px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft);font-family:var(--mono);font-size:13.5px\">2</div><div style=\"padding:5px 9px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono);font-size:13.5px\">3</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono);font-size:13.5px\">5 4</div><div style=\"padding:5px 9px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft);font-family:var(--mono);font-size:13.5px\">6</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono);font-size:13.5px\">10 8 7</div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;margin-bottom:8px\"><span style=\"width:58px;flex:none;color:var(--ink-3);font-size:12.5px\">pivot 4</span><div style=\"padding:5px 9px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft);font-family:var(--mono);font-size:13.5px\">2 3</div><div style=\"padding:5px 9px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono);font-size:13.5px\">4</div><div style=\"padding:5px 9px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft);font-family:var(--mono);font-size:13.5px\">5</div><div style=\"padding:5px 9px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft);font-family:var(--mono);font-size:13.5px\">6</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono);font-size:13.5px\">10 8 7</div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;margin-bottom:8px\"><span style=\"width:58px;flex:none;color:var(--ink-3);font-size:12.5px\">pivot 7</span><div style=\"padding:5px 9px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft);font-family:var(--mono);font-size:13.5px\">2 3 4 5 6</div><div style=\"padding:5px 9px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono);font-size:13.5px\">7</div><div style=\"padding:5px 9px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono);font-size:13.5px\">10 8</div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;margin-bottom:8px\"><span style=\"width:58px;flex:none;color:var(--ink-3);font-size:12.5px\">pivot 8</span><div style=\"padding:5px 9px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft);font-family:var(--mono);font-size:13.5px\">2 3 4 5 6 7</div><div style=\"padding:5px 9px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono);font-size:13.5px\">8</div><div style=\"padding:5px 9px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft);font-family:var(--mono);font-size:13.5px\">10</div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px 6px;margin-bottom:8px\"><span style=\"width:58px;flex:none;color:var(--ink-3);font-size:12.5px\">sorted</span><div style=\"padding:5px 9px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft);font-family:var(--mono);font-size:13.5px\">2 3 4 5 6 7 8 10</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each round fixes one pivot for good; when the last item is the smallest of its part, a round places nothing else.</figcaption></figure><!--/viz:atb-quick-sort-lecture-pivots-->"
+    },
+    {
+     "t": "Choosing a pivot, quick sort’s complexity and uses",
+     "src": "L#30",
+     "h": "<h4>Five ways to choose the pivot</h4><div class=\"scroller\"><table><thead><tr><th>Pivot</th><th>What he said about it</th></tr></thead><tbody><tr><td>First item</td><td>Simple; on a list already sorted (in either order) it can give O(n²)</td></tr><tr><td>Last item</td><td>Common in textbooks and used in his examples; the same risk on sorted lists</td></tr><tr><td>Middle item</td><td>Sometimes a good pivot, sometimes not; no guarantee</td></tr><tr><td>Random item</td><td>Any index; the same problem, no guarantee of a good value</td></tr><tr><td style=\"background:var(--blue-soft)\"><b>Median of three</b></td><td>The middle value of the first, middle and last items. Usually gives a better partition, so efficient practical implementations often use it</td></tr></tbody></table></div><h4>Median of three, step by step</h4><ol style=\"font-size:14.5px\"><li>Number the positions from index 0. Note the first and the last index, and work out the <strong>middle index</strong> as last index ÷ 2</li><li>Take the three values at the first, middle and last index</li><li>Sort <strong>only those three</strong></li><li>The value in the middle of the three is the pivot</li></ol><p style=\"font-size:14.5px\"><strong>His numbers</strong>, [10, 5, 8, 4, 3, 2, 7] at indices 0 to 6: middle index 6 ÷ 2 = 3. The three values are 10 (index 0), 4 (index 3) and 7 (index 6); in order 4, 7, 10, so the pivot is <strong>7</strong>. <strong>His names</strong>, Mohan, Ram, Sham, Lakshman, Arjun, Bheem, Nakul: the values at indices 0, 3 and 6 are Mohan, Lakshman and Nakul; in order Lakshman, Mohan, Nakul, so the pivot is <strong>Mohan</strong>.</p><p style=\"font-size:14.5px\">The extra work is real: the median must be worked out <strong>again for every sub-list</strong>, not once. In return the pivots are usually reasonable.</p><h4>Complexity</h4><ul style=\"font-size:14.5px\"><li><strong>Average case: O(n log n)</strong>, with reasonably chosen pivots. Far better than the O(n²) of the first three sorts</li><li><strong>Worst case: O(n²).</strong> If the pivot is an extreme value, the smallest or the largest, each round peels off only the pivot and the list is divided again and again. With first- or last-item pivots this happens on a list that is already sorted, in the same or the opposite order</li><li>He accepted the worst case: it is the exception, and the average case is what you plan for</li></ul><div class=\"def\"><b>Two slips to ignore:</b> in the closing summary the average case was read out as “O log n”; earlier in the same lecture, and in its key takeaway, it is <b>O(n log n)</b>. And the lecture opened by saying the O(n²) sorts grow “exponentially” with the list; O(n²) is <b>quadratic</b> growth, while exponential growth is O(2ⁿ) (L#28).</div><h4>Memory: less than merge sort</h4><p style=\"font-size:14.5px\">Quick sort does need some additional memory, but <strong>less than merge sort</strong>. Merge sort stores every level of its splits down to single items and builds new lists while merging. In quick sort each round puts its pivot in its final place, and the work continues on ever smaller sub-lists, with no extra copies of what is already placed. So their time complexity may be similar, but quick sort wins on space.</p><h4>A business use: price filters</h4><p style=\"font-size:14.5px\">On an e-commerce site, a price limit works like a pivot. Looking for textbooks under 500 rupees: 500 is the pivot, cheaper items fall on one side and dearer ones on the other. A range such as 200 to 500, or 500 to 800, uses successive pivots, and often the upper end of the range, the last price point, is the natural pivot, which is one reason a last-item pivot can be practical.</p><h4>Merge sort and quick sort side by side</h4><div class=\"scroller\"><table><thead><tr><th></th><th>Merge sort (L#29)</th><th>Quick sort (L#30)</th></tr></thead><tbody><tr><td>How it divides</td><td>into halves, fixed by the item count</td><td>around a pivot; parts can be unequal</td></tr><tr><td>Where the sorting happens</td><td>in the merging</td><td>in the partitioning</td></tr><tr><td>Average time</td><td style=\"font-family:var(--mono);white-space:nowrap\">O(n log n)</td><td style=\"font-family:var(--mono);white-space:nowrap\">O(n log n), faster with good pivots</td></tr><tr><td>Worst time</td><td style=\"font-family:var(--mono);white-space:nowrap\">O(n log n)</td><td style=\"font-family:var(--mono);white-space:nowrap\">O(n²), with extreme pivots</td></tr><tr><td>Extra memory</td><td>more: new lists at every merge</td><td>some, but less</td></tr></tbody></table></div><!--viz:atb-quick-median-of-three--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Median-of-three pivot for 14, 9, 22, 6, 18, 3, 11 at indices 0 to 6. The middle index is 6 divided by 2, which is 3. The values at indices 0, 3 and 6 are 14, 6 and 11. Sorted they are 6, 11, 14, so the pivot is 11.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Median of three on a new list</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">[14, 9, 22, 6, 18, 3, 11]</span><br><span style=\"color:var(--ink-2);font-size:12.5px\">indices 0 to 6</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">middle index<br><span style=\"font-family:var(--mono)\">6 ÷ 2 = 3</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">values at 0, 3, 6<br><span style=\"font-family:var(--mono)\">14, 6, 11</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">sort the three<br><span style=\"font-family:var(--mono)\">6, 11, 14</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>pivot = 11</b><br><span style=\"color:var(--ink-2);font-size:12.5px\">the middle of the three</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only three values are sorted, and the job is repeated for every sub-list that follows.</figcaption></figure><!--/viz:atb-quick-median-of-three-->"
     },
     {
      "t": "Textbook: Sorting Algorithms",
@@ -1864,6 +1896,83 @@ HUB.addCourse({
    "p": "The link changes are fixed, two for a singly and four for a doubly linked list. Finding the node to insert after is a search, and that makes the whole job O(n).",
    "f": "relink O(1), find O(n)",
    "lec": 28
+  },
+  {
+   "id": "atb-t0166",
+   "h": "Nothing gets sorted while merge sort is splitting",
+   "p": "The splitting stage only divides the list until every item stands alone, keeping the original order. All the ordering is done in the merging stage, hence the name.",
+   "f": "split blind, merge sorts",
+   "lec": 29
+  },
+  {
+   "id": "atb-t0167",
+   "h": "When one part runs out, the rest of the other is copied without comparisons",
+   "p": "The leftover part is already sorted and everything in it is larger than what has been placed, so it goes across as it is. That is why the final merge of his eight numbers took 6 comparisons, not 7 or 8.",
+   "f": "one empty → copy the rest",
+   "lec": 29
+  },
+  {
+   "id": "atb-t0168",
+   "h": "An odd count does not change merge sort; take the first half as the larger",
+   "p": "Seven items split 4 and 3, three split 2 and 1. The other way round is also correct, but he used the larger-first split so that answers match.",
+   "f": "odd: first half bigger",
+   "lec": 29
+  },
+  {
+   "id": "atb-t0169",
+   "h": "Merge sort is O(n log n), not O(log n)",
+   "p": "The closing summary read it as O(log n). Splitting gives log n levels, but every level’s merges compare their way through all n items, so the total is n log n.",
+   "f": "log n levels × n each",
+   "lec": 29
+  },
+  {
+   "id": "atb-t0170",
+   "h": "Merge sort makes no swaps, but needs extra memory",
+   "p": "It compares front items and copies them into a new list, so it never swaps; the price is space, since the parts must stay intact while the new list is built. The first three sorts worked inside the same array.",
+   "f": "no swaps, more space",
+   "lec": 29
+  },
+  {
+   "id": "atb-t0171",
+   "h": "The lecture’s quick sort uses the last item as pivot; the textbook pack’s version picks pivots at random and swaps with two markers",
+   "p": "cdsa-ch07 says the pivot is often random and moves markers in from both ends, swapping. L#30 used the last item and placed smaller items left, larger right, in the order met. Both are quick sort, but the intermediate lists differ: for course exercises follow the lecture.",
+   "f": "course: last item, order kept",
+   "lec": 30
+  },
+  {
+   "id": "atb-t0172",
+   "h": "After a partition, each side keeps its original order; it is not sorted",
+   "p": "Items are compared only with the pivot. In his first round [10, 5, 8, 4, 3, 2, 7, 6] became 5 4 3 2 | 6 | 10 8 7, with both sides still unsorted.",
+   "f": "pivot only, not neighbours",
+   "lec": 30
+  },
+  {
+   "id": "atb-t0173",
+   "h": "Quick sort can be O(n²): an extreme pivot, such as last-item pivots on a sorted list",
+   "p": "If the pivot is the smallest or largest item, a round places only the pivot. On a sorted list of 6, last-item pivots make 5 + 4 + 3 + 2 + 1 = 15 comparisons, the n(n − 1) ÷ 2 pattern of the simple sorts.",
+   "f": "extreme pivot → n²",
+   "lec": 30
+  },
+  {
+   "id": "atb-t0174",
+   "h": "Median of three is worked out again for every sub-list",
+   "p": "It is not a one-off choice for the whole list. Each new part needs its own first, middle and last values sorted, which is the extra work he mentioned.",
+   "f": "new part, new median",
+   "lec": 30
+  },
+  {
+   "id": "atb-t0175",
+   "h": "Quick sort needs some extra memory, just less than merge sort",
+   "p": "Merge sort keeps every level of its splits and builds new lists while merging. Quick sort fixes a pivot in place each round and works on smaller sub-lists, so it needs less, though not none.",
+   "f": "quick: less space, not zero",
+   "lec": 30
+  },
+  {
+   "id": "atb-t0176",
+   "h": "Average quick sort is O(n log n), and O(n²) is quadratic, not exponential",
+   "p": "The closing summary read the average case as O(log n), and the opening called O(n²) growth exponential. The lecture’s own analysis gives O(n log n); exponential growth is O(2ⁿ).",
+   "f": "n log n; n² ≠ 2ⁿ",
+   "lec": 30
   }
  ],
  "defs": [
@@ -3097,6 +3206,86 @@ HUB.addCourse({
    "term": "Bidirectional search",
    "html": "<b>Bidirectional search</b> searches from the <b>source and the destination at the same time</b> until the two searches meet. The L#28 slide’s application: a route between two locations.",
    "lec": 28
+  },
+  {
+   "id": "atb-d0156",
+   "unit": "sorting",
+   "topic": "Merge sort: split, then merge",
+   "term": "Splitting stage (merge sort)",
+   "html": "The <b>splitting stage</b> keeps dividing the list into two roughly equal parts until each part holds one item. <b>No sorting</b> happens here.",
+   "lec": 29
+  },
+  {
+   "id": "atb-d0157",
+   "unit": "sorting",
+   "topic": "Merge sort: split, then merge",
+   "term": "Merging stage (merge sort)",
+   "html": "The <b>merging stage</b> combines two sorted parts at a time by comparing their <b>front items</b> and copying the smaller into a <b>new list</b>. All the sorting happens here.",
+   "lec": 29
+  },
+  {
+   "id": "atb-d0158",
+   "unit": "sorting",
+   "topic": "Merge sort’s O(n log n), memory and variants",
+   "term": "Top-down two-way merge sort",
+   "html": "The classic merge sort: <b>top-down</b> because it starts from the whole list and splits downwards, <b>two-way</b> because every split makes two parts.",
+   "lec": 29
+  },
+  {
+   "id": "atb-d0159",
+   "unit": "sorting",
+   "topic": "Merge sort’s O(n log n), memory and variants",
+   "term": "Bottom-up merge sort",
+   "html": "<b>Bottom-up merge sort</b> has no splitting stage: it starts merging single items straight away. Suited to items that already exist, or arrive, separately.",
+   "lec": 29
+  },
+  {
+   "id": "atb-d0160",
+   "unit": "sorting",
+   "topic": "Merge sort’s O(n log n), memory and variants",
+   "term": "Natural merge sort",
+   "html": "<b>Natural merge sort</b> finds the runs that are already sorted and merges only those. Suited to a largely sorted list, such as a class list plus a few late joiners.",
+   "lec": 29
+  },
+  {
+   "id": "atb-d0161",
+   "unit": "sorting",
+   "topic": "Merge sort’s O(n log n), memory and variants",
+   "term": "Parallel merge sort",
+   "html": "<b>Parallel merge sort</b> sorts the parts at one level <b>at the same time</b>, on several processors or threads, and then merges them.",
+   "lec": 29
+  },
+  {
+   "id": "atb-d0162",
+   "unit": "sorting",
+   "topic": "Quick sort: pivot and partition",
+   "term": "Last-item pivot",
+   "html": "Using the <b>last item</b> of the current part as the pivot. Common in textbooks and the rule in his exercises; on an already sorted list it gives quick sort’s <b>O(n²)</b> worst case.",
+   "lec": 30
+  },
+  {
+   "id": "atb-d0163",
+   "unit": "sorting",
+   "topic": "Choosing a pivot, quick sort’s complexity and uses",
+   "term": "Median-of-three pivot",
+   "html": "Take the values at the <b>first, middle and last</b> index (middle = last index ÷ 2, counting from 0), sort just those three, and use the <b>middle one</b> as the pivot. Redone for every sub-list.",
+   "lec": 30
+  },
+  {
+   "id": "atb-d0164",
+   "unit": "sorting",
+   "topic": "Choosing a pivot, quick sort’s complexity and uses",
+   "term": "Quick sort’s worst case",
+   "html": "<b>O(n²)</b>, when the pivot keeps being the smallest or largest item, for example first- or last-item pivots on an already sorted list. Average case <b>O(n log n)</b>.",
+   "lec": 30
+  },
+  {
+   "id": "atb-d0165",
+   "unit": "sorting",
+   "topic": "Choosing a pivot, quick sort’s complexity and uses",
+   "term": "Random pivot",
+   "html": "A pivot taken from <b>any index</b> at random. Like the middle item, it carries <b>no guarantee</b> of a good split, which is why median of three is often preferred.",
+   "lec": 30
   }
  ],
  "questions": [
@@ -12023,6 +12212,686 @@ HUB.addCourse({
    "w": "With minutes as the weights, A → C → B costs 15 + 10 = 25 against 12 for the direct road, so the direct road wins. The route through the market was shorter in kilometres (2 + 1 against 4), but the algorithm only knows the weights it is given.",
    "lec": 28,
    "lv": "apply"
+  },
+  {
+   "id": "atb-q0534",
+   "topic": "Sorting",
+   "q": "Why did the lecture say a sort like merge sort is needed after bubble, selection and insertion sort?",
+   "c": [
+    "The first three cannot sort names, only numbers",
+    "The first three are all O(n²), which makes them impractical once lists get large",
+    "The first three need extra memory for a new list",
+    "The first three only work on lists that are already nearly sorted"
+   ],
+   "a": [
+    1
+   ],
+   "w": "All three earlier sorts are O(n²), so their running time grows with the square of the list size. Needing a new list is merge sort’s own drawback, not theirs; they work inside the same array.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0535",
+   "topic": "Sorting",
+   "q": "During merge sort’s splitting stage, what happens to the order of the items?",
+   "c": [
+    "Each part is sorted as soon as it is split off",
+    "The smaller half is moved to the front",
+    "Nothing: the list is only divided, and every item keeps its place until merging starts",
+    "Neighbouring items are swapped if they are out of order"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Splitting only divides the list until each item stands alone; no comparisons are made. Swapping neighbours is bubble sort. All of merge sort’s ordering happens in the merging stage.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0536",
+   "topic": "Sorting",
+   "q": "A list of 15 records is split for the first time in merge sort. What does the lecture say the two parts will be?",
+   "c": [
+    "7.5 and 7.5",
+    "Three parts of 5",
+    "Roughly equal: 8 and 7 (or 7 and 8, depending on the implementation)",
+    "14 and 1"
+   ],
+   "a": [
+    2
+   ],
+   "w": "An item cannot be cut in half, which is why the algorithm says “roughly equal” parts: 15 gives 8 and 7. Three parts would be three-way merge sort, a variant.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0537",
+   "topic": "Sorting",
+   "q": "Merge sort runs on his list [10, 5, 8, 4, 3, 2, 7, 6]. What are the parts after the first round of merging?",
+   "c": [
+    "[5, 10] [4, 8] [2, 3] [6, 7]",
+    "[10, 5] [8, 4] [3, 2] [7, 6]",
+    "[4, 5, 8, 10] [2, 3, 6, 7]",
+    "[2, 3] [4, 5] [6, 7] [8, 10]"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The first merges combine neighbouring single items into sorted pairs. [10, 5] [8, 4] … is the list after splitting, before any merging; [4, 5, 8, 10] [2, 3, 6, 7] is the second round. Pairs like [2, 3] [4, 5] would need knowledge of the final order.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0538",
+   "topic": "Sorting",
+   "q": "Merge sort merges the sorted parts [3, 9, 14] and [5, 6, 20]. Which value is placed fourth in the new list?",
+   "c": [
+    "14",
+    "6",
+    "20",
+    "9"
+   ],
+   "a": [
+    3
+   ],
+   "w": "3 vs 5 → 3; 9 vs 5 → 5; 9 vs 6 → 6; 9 vs 20 → 9. So the list starts 3, 5, 6, 9. Fourteen comes next, and 20 is copied last once the first part is empty.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0539",
+   "topic": "Sorting",
+   "q": "Merging the sorted parts [4, 11, 15, 27] and [6, 8, 19, 30], how many comparisons are made before one part is empty and the rest is copied?",
+   "c": [
+    "8",
+    "7",
+    "4",
+    "16"
+   ],
+   "a": [
+    1
+   ],
+   "w": "4 vs 6, 11 vs 6, 11 vs 8, 11 vs 19, 15 vs 19, 27 vs 19, 27 vs 30: seven comparisons, after which the first part is empty and 30 is copied without comparing. Eight would wrongly compare the last item too; 16 is 4 × 4, comparing every pair.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0540",
+   "topic": "Sorting",
+   "q": "What does the merge step do when one of the two parts becomes empty?",
+   "c": [
+    "Starts the merge again from the beginning",
+    "Compares the remaining items with each other first",
+    "Copies all the remaining items of the other part straight into the new list",
+    "Swaps the remaining items into place one by one"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The remaining part is already sorted, and every item in it is larger than what has been placed, so it can be copied as it is. No further comparisons are needed.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0541",
+   "topic": "Sorting",
+   "q": "In his final merge of [4, 5, 8, 10] with [2, 3, 6, 7], which items end up being copied without any comparison of their own?",
+   "c": [
+    "2 and 3",
+    "6 and 7",
+    "None: every item is compared",
+    "8 and 10"
+   ],
+   "a": [
+    3
+   ],
+   "w": "After 2, 3, 4, 5, 6 and 7 are placed by six comparisons, the second part is empty, so 8 and 10 go across as they are. 2 and 3 were placed by comparisons with 4.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0542",
+   "topic": "Sorting",
+   "q": "Following the splitting convention he set for odd counts, how is the three-name part [Arjun, Bheem, Nakul] split in the names exercise?",
+   "c": [
+    "[Arjun, Bheem] and [Nakul]",
+    "[Arjun] and [Bheem, Nakul]",
+    "[Arjun], [Bheem] and [Nakul] in one step",
+    "It is not split, because three is odd"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He asked for the first half to be the larger one: seven splits 4 and 3, three splits 2 and 1. The other way round is also valid merge sort, but your intermediate lists would then differ from his.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0543",
+   "topic": "Sorting",
+   "q": "In the names exercise (Mohan, Ram, Sham, Lakshman, Arjun, Bheem, Nakul), which two lists are merged in the last step?",
+   "c": [
+    "[Mohan, Ram, Sham, Lakshman] and [Arjun, Bheem, Nakul]",
+    "[Lakshman, Mohan, Ram, Sham] and [Arjun, Bheem, Nakul]",
+    "[Arjun, Bheem, Lakshman] and [Mohan, Nakul, Ram, Sham]",
+    "[Arjun, Bheem, Lakshman, Mohan] and [Nakul, Ram, Sham]"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Each half is sorted before the last merge. [Mohan, Ram, Sham, Lakshman] is the unsorted first half straight after the first split. Halves holding A–M and N–S would only be possible if the final order were known in advance.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0544",
+   "topic": "Complexity",
+   "q": "Which part of merge sort contributes the factor n in O(n log n)?",
+   "c": [
+    "The splitting, because the list is halved n times",
+    "The merging, because each level’s merges compare their way through all n items",
+    "The final copy of leftover items",
+    "The choice of the middle position"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Repeated halving gives the log n levels; at each level the merges handle all n items, which gives the n. Halving does not happen n times: eight items need only three levels.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0545",
+   "topic": "Complexity",
+   "q": "The closing summary of L#29 read merge sort’s complexity as “O log n”. What should you write?",
+   "c": [
+    "O(log n), as read out",
+    "O(n²), like the earlier sorts",
+    "O(n), since every item is copied once",
+    "O(n log n), as derived earlier in the lecture"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Earlier in the lecture he derived log n levels of splitting times n comparisons per level of merging: O(n log n). O(log n) would mean not even looking at every item, which no sort can do. O(n²) is the earlier sorts.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0546",
+   "topic": "Sorting",
+   "q": "What did the lecture name as merge sort’s main drawback compared with bubble, selection and insertion sort?",
+   "c": [
+    "It needs more memory, because each merge builds a new list while the two parts stay intact",
+    "It makes more swaps",
+    "It cannot handle an odd number of items",
+    "It is O(n²) in every case"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The earlier sorts worked inside the same array; merge sort copies items into a new list at the merging stage, so its space requirement is higher. It makes no swaps at all, and odd counts just give unequal parts.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0547",
+   "topic": "Sorting",
+   "q": "Which operation does merge sort not need at all, according to the lecture?",
+   "c": [
+    "Comparing two items",
+    "Copying items into a new list",
+    "Swapping two items",
+    "Dividing the list"
+   ],
+   "a": [
+    2
+   ],
+   "w": "It only compares the front items of two parts and copies the smaller one into the new list. Swapping is what bubble and selection sort rely on.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0548",
+   "topic": "Sorting",
+   "q": "What do “top-down” and “two-way” mean in top-down two-way merge sort?",
+   "c": [
+    "Sorting from the largest item down, in two passes",
+    "Splitting from the whole list downwards, into two parts at every split",
+    "Merging from the top of a heap, in both directions",
+    "Starting at the last item, then working both ways"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Top-down: start from the full list and split it into smaller and smaller lists. Two-way: each split makes two parts (a three-way merge sort makes three).",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0549",
+   "topic": "Sorting",
+   "q": "Sales records arrive one at a time from many stores, each as a separate item. Which merge sort variant did the lecture describe for this situation?",
+   "c": [
+    "Three-way merge sort",
+    "Natural merge sort",
+    "Top-down two-way merge sort",
+    "Bottom-up merge sort, which has no splitting stage and goes straight to merging"
+   ],
+   "a": [
+    3
+   ],
+   "w": "When the items already exist separately there is nothing to split, so bottom-up merge sort starts at the merging stage. Natural merge sort is for data that already has sorted stretches.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0550",
+   "topic": "Sorting",
+   "q": "A class list is already in alphabetical order, and a few students who joined late must be placed correctly rather than added at the end. Which merge sort variant did the lecture suggest?",
+   "c": [
+    "Natural merge sort, which finds the already sorted stretches and merges only those",
+    "Parallel merge sort",
+    "Bottom-up merge sort",
+    "Three-way merge sort"
+   ],
+   "a": [
+    0
+   ],
+   "w": "This was his example for natural merge sort: most of the data is already sorted, so only the necessary parts are merged. Parallel merge sort is about running parts at the same time.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0551",
+   "topic": "Sorting",
+   "q": "In parallel merge sort, what actually happens at the same time?",
+   "c": [
+    "Every comparison in a merge is made at once",
+    "Splitting and merging run together on the same part",
+    "The parts at the same level are sorted simultaneously, on separate processors or threads, and then merged",
+    "The computer switches quickly between parts, which only looks parallel"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Different parts at one level are sorted simultaneously and then merged. Rapid switching between tasks is how ordinary sequential computing only appears parallel, which he contrasted with real parallelism.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0552",
+   "topic": "Sorting",
+   "q": "A retailer must sort 50 lakh product records, and its server is short of RAM. What does the lecture’s view of merge sort imply?",
+   "c": [
+    "Avoid merge sort and use selection sort, which needs no extra memory",
+    "Use merge sort for its O(n log n) time, and provide the extra memory it needs, such as more server memory or secondary storage",
+    "Merge sort needs no extra memory, so RAM does not matter",
+    "Use merge sort but leave out the merging stage to save memory"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He accepted merge sort’s extra memory as the price of much faster processing, suggesting more memory or secondary storage. Selection sort saves memory but is O(n²), impractical at 50 lakh records. Without merging nothing gets sorted.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0553",
+   "topic": "Sorting",
+   "q": "A customer list is split at every change of first letter (A, B, C, …) instead of into halves, as in his example. What completes the sort?",
+   "c": [
+    "Sort each letter’s list, in parallel if possible, then merge the lists in alphabetical order",
+    "Nothing: splitting by letter already sorts the list",
+    "Swap the first customer of each letter’s list into place",
+    "Sort only the largest letter’s list"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Splitting by letter only groups the names; within each letter they still need sorting, and the sorted lists are then merged in letter order. Grouping by first letter is not the same as sorting.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0554",
+   "topic": "Sorting",
+   "q": "What does quick sort do with its pivot?",
+   "c": [
+    "It merges the pivot with its neighbour",
+    "Puts smaller items on the pivot’s left and larger items on its right, leaving the pivot in its final place",
+    "Swaps the pivot with the smallest item, then moves on",
+    "Uses the pivot as the halfway point to split the list into two equal halves"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Partitioning around the pivot fixes the pivot’s final position; the two sides are then handled the same way. Equal halves fixed by the item count is merge sort’s splitting, not quick sort’s.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0555",
+   "topic": "Sorting",
+   "q": "According to the lecture, how does quick sort’s way of dividing differ from merge sort’s?",
+   "c": [
+    "Quick sort never divides the list",
+    "Merge sort’s divisions depend on the pivot, quick sort’s on the item count",
+    "Merge sort’s divisions are fixed by the number of items; quick sort divides around a pivot, so its work depends on how good the pivot is",
+    "Both always split into exact halves"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Merge sort halves regardless of the data. Quick sort’s parts can be unequal, and with reasonably good pivots it becomes more efficient than merge sort.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0556",
+   "topic": "Sorting",
+   "q": "Using the lecture’s method (last item as pivot; smaller items written left in the order met, larger items after the pivot in the order met), what is [9, 3, 12, 1, 7, 15, 5] after the first partition?",
+   "c": [
+    "[1, 3, 5, 7, 9, 12, 15]",
+    "[3, 1, 5, 15, 7, 12, 9]",
+    "[3, 1, 5, 9, 12, 7, 15]",
+    "[5, 3, 1, 9, 12, 7, 15]"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Pivot 5: 3 and 1 are smaller, in that order; 9, 12, 7 and 15 are larger, in that order. Neither side is sorted yet, so the fully sorted list is wrong after one round, and the pivot must sit between the two sides.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0557",
+   "topic": "Sorting",
+   "q": "In his example [10, 5, 8, 4, 3, 2, 7, 6], what lies to the right of the pivot 6 after the first partition?",
+   "c": [
+    "7, 8, 10",
+    "10, 8, 7",
+    "8, 10, 7",
+    "Nothing: 6 is the largest"
+   ],
+   "a": [
+    1
+   ],
+   "w": "10, 8 and 7 are larger than 6 and are placed in the order they were met. They are not sorted among themselves; that happens later, when 7 and then 8 become pivots.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0558",
+   "topic": "Sorting",
+   "q": "In his example, each round on the left part [5, 4, 3, 2] placed only its pivot (pivots 2, then 3, then 4). Why?",
+   "c": [
+    "The last item, 2, was the smallest, so everything went to one side and each round placed only the pivot",
+    "Quick sort always needs one round per item",
+    "The left part is sorted with insertion sort",
+    "The left part had an even number of items"
+   ],
+   "a": [
+    0
+   ],
+   "w": "An extreme pivot (smallest or largest) leaves one side empty, so the next round faces a list only one shorter. He used this to show that the pivot choice changes the number of steps.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0559",
+   "topic": "Sorting",
+   "q": "When does quick sort stop dividing a part?",
+   "c": [
+    "When the pivot is the middle value",
+    "After log n rounds",
+    "After exactly n − 1 rounds",
+    "When the part has zero or one item"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A part with 0 or 1 item is already in its right place. The number of rounds depends on the pivots, so it is not fixed at log n or n − 1.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0560",
+   "topic": "Sorting",
+   "q": "Quick sort runs on the names Mohan, Ram, Sham, Lakshman, Arjun, Bheem, Nakul (by first letter) with the last item, Nakul, as pivot. What goes to the left of Nakul?",
+   "c": [
+    "Mohan, Lakshman, Arjun, Bheem",
+    "Arjun, Bheem, Lakshman, Mohan, already sorted",
+    "Ram, Sham",
+    "Mohan only"
+   ],
+   "a": [
+    0
+   ],
+   "w": "M, L, A and B come before N, and they keep the order in which they were met. Ram and Sham go to the right. They are not sorted yet; that takes the next rounds.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0561",
+   "topic": "Sorting",
+   "q": "In the same exercise, the left part is now Mohan, Lakshman, Arjun, Bheem. What happens in the next round?",
+   "c": [
+    "Mohan is the pivot; all others go left",
+    "Bheem is the pivot; Arjun goes left and is placed, Mohan and Lakshman go right",
+    "Arjun is the pivot; all others go right",
+    "Lakshman is the pivot; Arjun and Bheem go left"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The last item, Bheem, is the pivot. A comes before B, so Arjun goes left and, alone, is placed; M and L come after B. Then Lakshman pivots on Mohan, Lakshman.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0562",
+   "topic": "Sorting",
+   "q": "When can quick sort degrade to O(n²)?",
+   "c": [
+    "When the list has an odd number of items",
+    "When the median of three is used",
+    "When the pivot keeps being the smallest or largest item, as with last-item pivots on a list that is already sorted",
+    "When the list contains names instead of numbers"
+   ],
+   "a": [
+    2
+   ],
+   "w": "An extreme pivot removes just one item per round, so the list is divided again and again. Median of three is the remedy he gave, not the cause.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0563",
+   "topic": "Sorting",
+   "q": "Quick sort with last-item pivots runs on the already sorted list [1, 2, 3, 4, 5, 6]. How many comparisons with the pivot does it make?",
+   "c": [
+    "6",
+    "15",
+    "9",
+    "36"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Each pivot is the largest of its part, so everything goes left: 5 + 4 + 3 + 2 + 1 = 15, the same as a simple O(n²) sort. A good pivot would split the list into two smaller parts.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0564",
+   "topic": "Sorting",
+   "q": "Using median of three (indices from 0, middle index = last index ÷ 2), what is the pivot for [14, 9, 22, 6, 18, 3, 11]?",
+   "c": [
+    "6",
+    "14",
+    "11",
+    "18"
+   ],
+   "a": [
+    2
+   ],
+   "w": "First (index 0) is 14, middle (index 3) is 6, last (index 6) is 11. Sorted: 6, 11, 14, so the pivot is 11. Six is the middle position’s value, not the median of the three.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0565",
+   "topic": "Sorting",
+   "q": "In his median-of-three exercise on Mohan, Ram, Sham, Lakshman, Arjun, Bheem, Nakul, which three names were compared, and which became the pivot?",
+   "c": [
+    "Mohan, Lakshman and Nakul; pivot Mohan",
+    "Mohan, Sham and Nakul; pivot Nakul",
+    "Arjun, Lakshman and Sham; pivot Lakshman",
+    "Mohan, Lakshman and Nakul; pivot Lakshman"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Indices 0, 3 and 6 hold Mohan, Lakshman and Nakul. In order they are Lakshman, Mohan, Nakul, so the middle one, Mohan, is the pivot. Lakshman is the middle position, not the middle value.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0566",
+   "topic": "Sorting",
+   "q": "How often is the median of three worked out in a quick sort?",
+   "c": [
+    "Once, for the whole list",
+    "Only when the list is already sorted",
+    "Only for the first and last rounds",
+    "Again for every sub-list"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He stressed that the calculation is repeated for each new sub-list, which is the extra work it costs. In return it usually gives reasonable pivots.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0567",
+   "topic": "Sorting",
+   "q": "What did the lecture say is the weakness of choosing the middle item or a random item as pivot?",
+   "c": [
+    "Neither guarantees a good pivot",
+    "Both always give the worst case",
+    "Both need the list sorted first",
+    "Both need extra memory for a new list"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A good pivot may or may not sit in the middle, and a random index may land on a poor value. That is why median of three is often used in practice.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0568",
+   "topic": "Sorting",
+   "q": "Why does quick sort need less extra memory than merge sort, according to the lecture?",
+   "c": [
+    "Quick sort needs no extra memory at all",
+    "Quick sort stores every level of its splits",
+    "Each round puts a pivot in its final place and the work continues on smaller sub-lists, while merge sort stores every level and builds new lists",
+    "Quick sort only sorts half the list"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Merge sort keeps every split level and copies into new lists. Quick sort does need some extra memory, just less, so “none at all” goes too far.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0569",
+   "topic": "Sorting",
+   "q": "A shopper filters textbooks to “under 500 rupees”. How did the lecture link this to quick sort?",
+   "c": [
+    "The 500 limit acts as a pivot: cheaper items fall on one side, dearer on the other",
+    "The site uses merge sort to split by letter",
+    "The 500 limit is the median of three",
+    "Each book is compared with every other book"
+   ],
+   "a": [
+    0
+   ],
+   "w": "His e-commerce example made the price limit the pivot, and a range such as 200 to 500 uses successive pivots. Splitting by letter was his merge sort example.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0570",
+   "topic": "Complexity",
+   "q": "The closing summary of L#30 read quick sort’s average case as “O log n”. Which is right?",
+   "c": [
+    "O(log n), as read out",
+    "O(n), because each item is compared once",
+    "O(n²), in every case",
+    "O(n log n), with O(n²) only in the worst case"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Earlier in the lecture and in its key takeaway, the average case is O(n log n) and the worst case O(n²). No sort can be O(log n), since every item must at least be looked at.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0571",
+   "topic": "Sorting",
+   "q": "Which pivot rule were you told to use in the lecture’s quick-sort exercises, so that answers match?",
+   "c": [
+    "A random item, as the textbook pack describes",
+    "The last item of each part",
+    "The first item of each part",
+    "The median of three"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He said many textbooks take the last item and fixed that for consistency. The textbook pack (cdsa-ch07) says pivots are often random; for the course exercises, follow the lecture.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0572",
+   "topic": "Sorting",
+   "q": "With reasonably good pivots, how did the lecture compare quick sort with merge sort?",
+   "c": [
+    "Quick sort becomes O(log n)",
+    "Merge sort is always faster",
+    "Quick sort is more efficient in practice, though both are still O(n log n)",
+    "Quick sort becomes O(n)"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Big O describes growth, not exact time: both are O(n log n), but good pivots make quick sort quicker than merge sort. Its complexity class does not drop below n log n.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0573",
+   "topic": "Complexity",
+   "q": "The lecture opened by saying the work of the O(n²) sorts grows “exponentially” with the list. What is the right name for O(n²) growth?",
+   "c": [
+    "Logarithmic",
+    "Exponential, as said",
+    "Linear",
+    "Quadratic: doubling the list makes about four times the work"
+   ],
+   "a": [
+    3
+   ],
+   "w": "n² is quadratic (polynomial) growth. Exponential growth is O(2ⁿ), where each extra item doubles the work, far worse than n² (L#28).",
+   "lec": 30,
+   "lv": "analyse"
   }
  ],
  "briefs": {
@@ -12102,6 +12971,8 @@ HUB.addCourse({
   "lec-25",
   "lec-26",
   "lec-27",
-  "lec-28"
+  "lec-28",
+  "lec-29",
+  "lec-30"
  ]
 });

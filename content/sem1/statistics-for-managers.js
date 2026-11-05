@@ -169,6 +169,18 @@ HUB.addCourse({
    "Week 11 — Hypothesis Testing 1",
    "H₀ and Hₐ, three forms, Type I and II errors",
    "rec"
+  ],
+  [
+   29,
+   "Week 12 — Hypothesis Testing 2",
+   "Error trade-off, choosing α, do not reject",
+   "rec"
+  ],
+  [
+   30,
+   "Week 12 — One-Tailed Tests: p-Value and Critical Value",
+   "z test, two decision rules, Metro EMS",
+   "rec"
   ]
  ],
  "units": [
@@ -646,8 +658,8 @@ HUB.addCourse({
   {
    "id": "testing",
    "title": "Hypothesis testing",
-   "tag": "Lecture 27",
-   "lede": "From estimating a parameter to judging a claim about it: how to write H₀ and Hₐ, which tail the evidence lies in, and the two ways a decision from a sample can be wrong.",
+   "tag": "Lectures 27, 29–30",
+   "lede": "From estimating a parameter to judging a claim about it: writing H₀ and Hₐ, the two errors and the cost that sets α, and deciding a one-tailed z test by the p-value or the critical value.",
    "topics": [
     {
      "t": "What a hypothesis test does",
@@ -666,8 +678,48 @@ HUB.addCourse({
     },
     {
      "t": "Practice questions from the lecturer: Chapter 9",
-     "src": "L#27",
-     "h": "<p style=\"font-size:14.5px\">The lecturer's practice set for Chapter 9, Hypothesis Tests, shared through an LMS announcement on 29 Oct 2026 (‘Chapter 9 Solutions: One tailed and two tailed’), with an answer for every question. It has 20 questions in two halves: Q1–Q10, headed ‘Session 24’, on <strong>one-tailed</strong> tests, and Q11–Q20, headed ‘Session 25’, on <strong>two-tailed</strong> tests. Those are the sheet's own session labels, not LMS lecture numbers. Each question is restated below in our words and solved step by step; the numbers are the sheet's. Every z, p-value and decision was recomputed, and <strong>all 20 of the sheet's answers stand</strong>.</p><p style=\"font-size:14.5px\">L#27 taught the first two parts of the chapter: writing H₀ and Hₐ, and Type I and II errors. The sheet goes further, into the test itself (the z statistic, the p-value and the critical value), so every question is labelled with the part it needs. In the textbook's order (Anderson ch9):</p><div class=\"scroller\"><table><thead><tr><th>Part of the chapter</th><th>Lectured</th><th>On this sheet</th></tr></thead><tbody><tr><td>Developing H₀ and Hₐ (9.1)</td><td>L#27</td><td>Q2, Q12</td></tr><tr><td>Type I and II errors; what ‘reject’ and ‘do not reject’ mean (9.2)</td><td>L#27</td><td>Q10, Q20 (with the test's decision)</td></tr><tr><td>One-tailed test of μ, σ known: z, p-value, critical value (9.3)</td><td>after L#27</td><td>Q1, 3, 4, 5, 6, 7, 8, 9</td></tr><tr><td>Two-tailed test of μ, σ known (9.3)</td><td>after L#27</td><td>Q11, 13, 14, 15, 16, 17, 18, 19</td></tr><tr><td>Test of μ with σ unknown (t), and of a proportion (9.4–9.5)</td><td>after L#27</td><td>not on this sheet</td></tr></tbody></table></div><h4>The toolkit the sheet uses</h4><div class=\"def\"><b>Test statistic for μ, σ known:</b> z = (x̄ − μ₀)/(σ/√n), where μ₀ is the value in H₀. It counts how many standard errors the sample mean sits from μ₀.</div><div class=\"scroller\"><table><thead><tr><th>Hₐ</th><th>p-value</th><th>Critical value at α = 0.05</th><th>at α = 0.01</th></tr></thead><tbody><tr><td>μ &lt; μ₀ (lower tail)</td><td>area left of z</td><td>reject if z ≤ −1.645</td><td>z ≤ −2.326</td></tr><tr><td>μ &gt; μ₀ (upper tail)</td><td>area right of z</td><td>reject if z ≥ 1.645</td><td>z ≥ 2.326</td></tr><tr><td>μ ≠ μ₀ (two-tailed)</td><td>2 × area beyond |z|</td><td>reject if |z| ≥ 1.960</td><td>|z| ≥ 2.576</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>p-value approach:</strong> reject H₀ if p-value ≤ α. <strong>Critical-value approach:</strong> reject H₀ if z falls in the rejection region beyond the critical value. The two always give the same decision. The critical values are the familiar interval z values from L#22: a one-tailed test puts all of α in one tail (1.645 for 0.05), a two-tailed test splits it (1.960). Excel: <code>=NORM.S.DIST(z, TRUE)</code> is the area left of z; <code>=1-NORM.S.DIST(z, TRUE)</code> the area right of it; <code>=2*(1-NORM.S.DIST(ABS(z), TRUE))</code> the two-tailed p-value.</p><div class=\"def\"><b>Notes on the sheet:</b><ul><li><b>No errors in the answers.</b> All ten numericals and all ten objective questions check out.</li><li><b>Rounding.</b> The sheet's p-values come from z rounded to two decimals and a four-decimal table. Q3: 0.0068 (exact 0.00675). Q11: 0.1260 from z = 1.53; the unrounded z = 1.532 gives 0.1255. Q13 and Q15: 0.0456 is 2 × 0.0228; the exact two-tailed value for z = 2 is 0.0455. No decision depends on the difference.</li><li><b>Same z, different decision.</b> Q13 and Q15 both have |z| = 2.00 and p = 0.0456: reject at α = 0.05 (Q13), do not reject at α = 0.01 (Q15). Likewise Q5's p = 0.0668 would not be rejected even at 0.05.</li><li><b>σ is given in every numerical,</b> so every test is a z test. The t test for σ unknown is not on this sheet.</li><li><b>Wording.</b> The conclusions say ‘do not reject H₀’ and ‘insufficient evidence’, never ‘accept H₀’, exactly as L#27 insists.</li></ul></div><details><summary>The 10 objective questions (Q2, 4, 6, … 20), answered</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>What it asks</th><th>Answer</th><th>Part</th></tr></thead><tbody><tr><td>2</td><td>Hₐ for ‘mean output is greater than 100 units an hour’</td><td>Hₐ: μ &gt; 100 (the sheet's C)</td><td>Developing H₀ and Hₐ · L#27</td></tr><tr><td>4</td><td>Decision when a one-tailed p-value is 0.08 and α = 0.05</td><td>Do not reject H₀, because 0.08 &gt; 0.05 (B)</td><td>One-tailed test · after L#27</td></tr><tr><td>6</td><td>Critical value for a lower-tailed z test at α = 0.05</td><td>−1.645 (A)</td><td>One-tailed test · after L#27</td></tr><tr><td>8</td><td>Upper-tailed test, critical z 1.645, statistic 1.40</td><td>Do not reject H₀: 1.40 &lt; 1.645 (C)</td><td>One-tailed test · after L#27</td></tr><tr><td>10</td><td>Conclusion after rejecting H₀: μ ≤ 50 at α = 0.05</td><td>Sufficient evidence that μ &gt; 50; nothing is proven (B)</td><td>Reading a decision · L#27 wording</td></tr><tr><td>12</td><td>Hₐ for ‘the mean package weight differs from 2 kg’</td><td>Hₐ: μ ≠ 2 (C)</td><td>Developing H₀ and Hₐ · L#27</td></tr><tr><td>14</td><td>Critical values for a two-tailed z test at α = 0.05</td><td>±1.960 (B)</td><td>Two-tailed test · after L#27</td></tr><tr><td>16</td><td>Two-tailed p-value when the tail beyond z = 2.00 is 0.0228</td><td>2 × 0.0228 = 0.0456 (B)</td><td>Two-tailed test · after L#27</td></tr><tr><td>18</td><td>Two-tailed test, ±1.96, statistic −1.70</td><td>Do not reject H₀: −1.70 lies between −1.96 and +1.96 (C)</td><td>Two-tailed test · after L#27</td></tr><tr><td>20</td><td>Reading a two-tailed p-value of 0.12 at α = 0.05</td><td>Not enough evidence that the parameter differs; H₀ is not proven (C)</td><td>Reading a decision · L#27 wording</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The traps in these: Q4 and Q8 (a positive p-value or a positive z is no reason to reject), Q10 and Q20 (rejecting proves nothing with certainty, and a p-value is not the probability that H₀ is true), and Q18 (a negative statistic still has to pass the critical value). All ten are also in the question bank, reworded with new numbers.</p></details><details><summary>Q1 · lower-tail test, p-value approach (one-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">A coffee packer aims for a mean fill of 3.00 lb. 36 cans average 2.94 lb, with σ = 0.12 lb. At α = 0.05, is the mean fill below 3.00 lb? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ ≥ 3; Hₐ: μ &lt; 3. A lower-tail test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 0.12/√36 = 0.02.</li><li>z = (2.94 − 3)/0.02 = <strong>−3.00</strong>.</li><li>p-value = area to the left of −3.00 = <strong>0.0013</strong>. Compare with α = 0.05: 0.0013 ≤ 0.05.</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean fill is below 3.00 lb: the cans are underfilled.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z −3.00, p ≈ 0.0013, reject H₀. The recomputed figures agree.</p></details><details><summary>Q3 · upper-tail test, p-value approach (one-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">40 emergency calls have a mean response time of 13.25 minutes, with σ = 3.2 minutes. At α = 0.05, does the mean response time exceed 12 minutes? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ ≤ 12; Hₐ: μ &gt; 12. A upper-tail test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 3.2/√40 = 0.506.</li><li>z = (13.25 − 12)/0.506 = <strong>2.47</strong> (exactly 2.4705).</li><li>p-value = area to the right of 2.47 = <strong>0.0067</strong>. Compare with α = 0.05: 0.0067 ≤ 0.05.</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean response time exceeds 12 minutes.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z ≈ 2.47, p ≈ 0.0068, reject H₀. The recomputed figures agree.</p></details><details><summary>Q5 · lower-tail test, p-value approach (one-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">64 bottles have a mean fill of 498.5 ml against a 500 ml target, with σ = 8 ml. At α = 0.01, is the mean fill below 500 ml? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ ≥ 500; Hₐ: μ &lt; 500. A lower-tail test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 8/√64 = 1.</li><li>z = (498.5 − 500)/1 = <strong>−1.50</strong>.</li><li>p-value = area to the left of −1.50 = <strong>0.0668</strong>. Compare with α = 0.01: 0.0668 &gt; 0.01.</li><li><strong>Do not reject H₀</strong>: at α = 0.01 there is not sufficient evidence that the mean fill is below 500 ml.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z −1.50, p ≈ 0.0668, do not reject H₀. The recomputed figures agree.</p></details><details><summary>Q7 · lower-tail test, critical-value approach (one-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">36 deliveries take a mean of 3.7 days, with σ = 0.9 day. At α = 0.05, is the mean delivery time below 4 days? Use the critical-value approach.</p><ol><li>Hypotheses: H₀: μ ≥ 4; Hₐ: μ &lt; 4. A lower-tail test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 0.9/√36 = 0.15.</li><li>z = (3.7 − 4)/0.15 = <strong>−2.00</strong>.</li><li>Critical value: z<sub>0.05</sub> = −1.645: reject if z ≤ −1.645. Here z = −2.00 is in the rejection region. (p-value, for comparison: 0.0228.)</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean delivery time is below 4 days.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z −2.00, reject H₀. The recomputed figures agree.</p></details><details><summary>Q9 · upper-tail test, critical-value approach (one-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">49 batteries last a mean of 20.6 hours, with σ = 2.1 hours. At α = 0.05, does mean battery life exceed 20 hours? Use the critical-value approach.</p><ol><li>Hypotheses: H₀: μ ≤ 20; Hₐ: μ &gt; 20. A upper-tail test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 2.1/√49 = 0.3.</li><li>z = (20.6 − 20)/0.3 = <strong>2.00</strong>.</li><li>Critical value: z<sub>0.05</sub> = 1.645: reject if z ≥ 1.645. Here z = 2.00 is in the rejection region. (p-value, for comparison: 0.0228.)</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that mean battery life exceeds 20 hours.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z 2.00, reject H₀. The recomputed figures agree.</p></details><details><summary>Q11 · two-tailed test, p-value approach (two-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">50 golf balls give a mean driving distance of 297.6 yards, with σ = 12 yards. At α = 0.05, does the mean differ from 295 yards? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ = 295; Hₐ: μ ≠ 295. A two-tailed test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 12/√50 = 1.697.</li><li>z = (297.6 − 295)/1.697 = <strong>1.53</strong> (exactly 1.5321).</li><li>p-value = 2 × area beyond |1.53| = 2 × 0.0628 = <strong>0.1255</strong>. Compare with α = 0.05: 0.1255 &gt; 0.05.</li><li><strong>Do not reject H₀</strong>: at α = 0.05 there is not sufficient evidence that the mean distance differs from 295 yards.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z ≈ 1.53, p ≈ 0.1260, do not reject H₀. The recomputed figures agree.</p></details><details><summary>Q13 · two-tailed test, p-value approach (two-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">64 cereal boxes have a mean weight of 496 g, with σ = 16 g. At α = 0.05, does the mean differ from 500 g? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ = 500; Hₐ: μ ≠ 500. A two-tailed test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 16/√64 = 2.</li><li>z = (496 − 500)/2 = <strong>−2.00</strong>.</li><li>p-value = 2 × area beyond |−2.00| = 2 × 0.0228 = <strong>0.0455</strong>. Compare with α = 0.05: 0.0455 ≤ 0.05.</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean weight differs from 500 g.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z −2.00, p ≈ 0.0456, reject H₀. The recomputed figures agree.</p></details><details><summary>Q15 · two-tailed test, p-value approach (two-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">36 lunch bills have a mean of ₹258, with σ = ₹24. At α = 0.01, does the mean bill differ from ₹250? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ = 250; Hₐ: μ ≠ 250. A two-tailed test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 24/√36 = 4.</li><li>z = (258 − 250)/4 = <strong>2.00</strong>.</li><li>p-value = 2 × area beyond |2.00| = 2 × 0.0228 = <strong>0.0455</strong>. Compare with α = 0.01: 0.0455 &gt; 0.01.</li><li><strong>Do not reject H₀</strong>: at α = 0.01 there is not sufficient evidence that the mean bill differs from ₹250.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z 2.00, p ≈ 0.0456, do not reject H₀. The recomputed figures agree.</p></details><details><summary>Q17 · two-tailed test, critical-value approach (two-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">100 components have a mean length of 20.4 cm, with σ = 2 cm. At α = 0.05, does the mean differ from 20 cm? Use the critical-value approach.</p><ol><li>Hypotheses: H₀: μ = 20; Hₐ: μ ≠ 20. A two-tailed test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 2/√100 = 0.2.</li><li>z = (20.4 − 20)/0.2 = <strong>2.00</strong>.</li><li>Critical value: ±z<sub>0.025</sub> = ±1.96: reject if z ≤ −1.96 or z ≥ 1.96. Here z = 2.00 is in the rejection region. (p-value, for comparison: 0.0455.)</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean length differs from 20 cm.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z 2.00, reject H₀. The recomputed figures agree.</p></details><details><summary>Q19 · two-tailed test, critical-value approach (two-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">36 cups have a mean capacity of 347 ml, with σ = 9 ml. At α = 0.05, does the mean differ from 350 ml? Use the critical-value approach.</p><ol><li>Hypotheses: H₀: μ = 350; Hₐ: μ ≠ 350. A two-tailed test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 9/√36 = 1.5.</li><li>z = (347 − 350)/1.5 = <strong>−2.00</strong>.</li><li>Critical value: ±z<sub>0.025</sub> = ±1.96: reject if z ≤ −1.96 or z ≥ 1.96. Here z = −2.00 is in the rejection region. (p-value, for comparison: 0.0455.)</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean capacity differs from 350 ml.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z −2.00, reject H₀. The recomputed figures agree.</p></details><!--viz:sfm-l27s-lower-tail-decisions--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Standard normal curve for a lower-tail z test at alpha 0.05. The rejection region left of minus 1.645 is shaded. The delivery problem's z of minus 2.00 falls inside it, so H0 is rejected; the bottle problem's z of minus 1.50 falls outside it, so H0 is not rejected.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One lower-tail test, two sheet answers</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 270\" role=\"img\" aria-label=\"Standard normal curve for a lower-tail z test at alpha 0.05. The rejection region left of minus 1.645 is shaded. The delivery problem's z of minus 2.00 falls inside it, so H0 is rejected; the bottle problem's z of minus 1.50 falls outside it, so H0 is not rejected.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M30,176 L30,175.7 L33.4,175.6 L36.8,175.5 L40.1,175.4 L43.5,175.2 L46.9,175.1 L50.3,174.9 L53.7,174.7 L57.1,174.4 L60.4,174.1 L63.8,173.8 L67.2,173.4 L70.6,172.9 L74,172.4 L77.3,171.8 L80.7,171.1 L84.1,170.3 L87.5,169.4 L90.9,168.4 L94.3,167.3 L97.6,166 L101,164.6 L104.4,163.1 L107.8,161.4 L111.2,159.5 L114.5,157.5 L117.9,155.3 L121.3,152.9 L124.7,150.3 L128.1,147.6 L128.1,176 Z\" style=\"fill:var(--blue);opacity:.4;stroke:none\"/><path d=\"M26,176 L414,176\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M30,175.7 L33.8,175.6 L37.6,175.5 L41.4,175.3 L45.2,175.2 L49,175 L52.8,174.7 L56.6,174.5 L60.4,174.1 L64.2,173.7 L68,173.3 L71.8,172.7 L75.6,172.1 L79.4,171.4 L83.2,170.5 L87,169.5 L90.8,168.4 L94.6,167.1 L98.4,165.7 L102.2,164.1 L106,162.3 L109.8,160.3 L113.6,158 L117.4,155.6 L121.2,153 L125,150.1 L128.8,147 L132.6,143.6 L136.4,140.1 L140.2,136.3 L144,132.4 L147.8,128.3 L151.6,124 L155.4,119.6 L159.2,115.1 L163,110.6 L166.8,106.1 L170.6,101.6 L174.4,97.1 L178.2,92.8 L182,88.7 L185.8,84.8 L189.6,81.1 L193.4,77.8 L197.2,74.8 L201,72.2 L204.8,70 L208.6,68.3 L212.4,67 L216.2,66.3 L220,66 L223.8,66.3 L227.6,67 L231.4,68.3 L235.2,70 L239,72.2 L242.8,74.8 L246.6,77.8 L250.4,81.1 L254.2,84.8 L258,88.7 L261.8,92.8 L265.6,97.1 L269.4,101.6 L273.2,106.1 L277,110.6 L280.8,115.1 L284.6,119.6 L288.4,124 L292.2,128.3 L296,132.4 L299.8,136.3 L303.6,140.1 L307.4,143.6 L311.2,147 L315,150.1 L318.8,153 L322.6,155.6 L326.4,158 L330.2,160.3 L334,162.3 L337.8,164.1 L341.6,165.7 L345.4,167.1 L349.2,168.4 L353,169.5 L356.8,170.5 L360.6,171.4 L364.4,172.1 L368.2,172.7 L372,173.3 L375.8,173.7 L379.6,174.1 L383.4,174.5 L387.2,174.7 L391,175 L394.8,175.2 L398.6,175.3 L402.4,175.5 L406.2,175.6 L410,175.7\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><path d=\"M128.1,176 L128.1,56\" style=\"stroke:var(--blue);stroke-width:1.5;fill:none;stroke-dasharray:3 3\"/><path d=\"M52.4,176 L52.4,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"52.4\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">−3</text><path d=\"M108.2,176 L108.2,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"108.2\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">−2</text><path d=\"M164.1,176 L164.1,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"164.1\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">−1</text><path d=\"M220,176 L220,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"220\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><path d=\"M275.9,176 L275.9,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"275.9\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">1</text><path d=\"M331.8,176 L331.8,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"331.8\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">2</text><path d=\"M387.6,176 L387.6,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"387.6\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">3</text><text x=\"220\" y=\"214\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">z = (x̄ − μ₀) / (σ/√n)</text><text x=\"135.1\" y=\"30\" text-anchor=\"start\" style=\"fill:var(--blue);font-size:13px;font-weight:700\">critical z = −1.645</text><text x=\"135.1\" y=\"47\" text-anchor=\"start\" style=\"fill:var(--ink-3);font-size:13px\">reject H₀ to its left (α = 0.05)</text><path d=\"M108.2,174 L103.2,165 L113.2,165 Z\" style=\"fill:var(--bad);stroke:none\"/><path d=\"M136.2,174 L131.2,165 L141.2,165 Z\" style=\"fill:var(--good);stroke:none\"/><path d=\"M40,236 L35,227 L45,227 Z\" style=\"fill:var(--bad);stroke:none\"/><text x=\"52\" y=\"236\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px\">Q7: z = −2.00, in the region → reject H₀</text><path d=\"M40,256 L35,247 L45,247 Z\" style=\"fill:var(--good);stroke:none\"/><text x=\"52\" y=\"256\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px\">Q5: z = −1.50, outside it → do not reject</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">A lower-tail test rejects only far enough to the left: −2.00 is past −1.645, −1.50 is not (Q5 was set at α = 0.01, where the cut-off is −2.326).</figcaption></figure><!--/viz:sfm-l27s-lower-tail-decisions--><!--viz:sfm-anim-ztest-upper--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Animation: the standard normal curve with the upper 5% beyond z = 1.645 shaded as the rejection region, for H0: mu at most 12 minutes against Ha: mu above 12, with sigma 3.2 and n = 40 (standard error 0.506). A marker for the test statistic moves to z = 0.79 for a sample mean of 12.40 and z = 1.48 for 12.80, both outside the region (do not reject), then to z = 2.47 for the sheet's sample mean of 13.25, inside the region (reject H0, p-value 0.0067).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">An upper-tail z test deciding: emergency response times</div><div class=\"anim\" data-ms=\"1700\"><div class=\"af on\" data-cap=\"If x̄ were exactly 12, z = 0. Reject H₀ only if z ≥ 1.645, i.e. x̄ ≥ 12.83 min (the top 5% under H₀)\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 262\" role=\"img\" aria-label=\"Standard normal curve, rejection region z ≥ 1.645; test statistic z = 0\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><path class=\"k5\" d=\"M314 214L314 178.6L320.6 185L327.2 190.5L333.9 195.2L340.5 199.2L347.1 202.5L353.7 205.2L360.4 207.3L367 209L373.6 210.3L380.2 211.3L386.9 212.1L393.5 212.6L400.1 213L406.7 213.3L413.4 213.6L420 213.7L420 214Z\"/><path style=\"stroke:var(--ink);stroke-width:2;fill:none\" d=\"M20 213.7L26.2 213.6L32.5 213.4L38.8 213.1L45 212.7L51.2 212.3L57.5 211.6L63.8 210.7L70 209.6L76.2 208.2L82.5 206.4L88.8 204.2L95 201.5L101.2 198.2L107.5 194.3L113.8 189.7L120 184.4L126.2 178.4L132.5 171.6L138.8 164.2L145 156.2L151.2 147.7L157.5 138.8L163.8 129.7L170 120.7L176.2 112L182.5 103.7L188.8 96.2L195 89.7L201.2 84.4L207.5 80.5L213.8 78L220 77.2L226.2 78L232.5 80.5L238.8 84.4L245 89.7L251.2 96.2L257.5 103.7L263.8 112L270 120.7L276.2 129.7L282.5 138.8L288.8 147.7L295 156.2L301.2 164.2L307.5 171.6L313.8 178.4L320 184.4L326.2 189.7L332.5 194.3L338.8 198.2L345 201.5L351.2 204.2L357.5 206.4L363.8 208.2L370 209.6L376.2 210.7L382.5 211.6L388.8 212.3L395 212.7L401.2 213.1L407.5 213.4L413.8 213.6L420 213.7\"/><path class=\"ln\" d=\"M14 214H426\"/><path class=\"ln\" d=\"M48.6 214v5M105.7 214v5M162.9 214v5M220 214v5M277.1 214v5M391.4 214v5\"/><text class=\"tl\" x=\"48.6\" y=\"233\" text-anchor=\"middle\">-3</text><text class=\"tl\" x=\"105.7\" y=\"233\" text-anchor=\"middle\">-2</text><text class=\"tl\" x=\"162.9\" y=\"233\" text-anchor=\"middle\">-1</text><text class=\"tl\" x=\"220\" y=\"233\" text-anchor=\"middle\">0</text><text class=\"tl\" x=\"277.1\" y=\"233\" text-anchor=\"middle\">1</text><text class=\"tl\" x=\"391.4\" y=\"233\" text-anchor=\"middle\">3</text><path class=\"ln\" d=\"M334.3 214v5\"/><text class=\"tv\" x=\"314\" y=\"233\" text-anchor=\"middle\">1.645</text><text class=\"tl\" x=\"134.3\" y=\"252\" text-anchor=\"end\">x̄ (min):</text><text class=\"tl\" x=\"220\" y=\"252\" text-anchor=\"middle\">12.00</text><text class=\"tv\" x=\"314\" y=\"252\" text-anchor=\"middle\">12.83</text><path style=\"stroke:var(--bad);stroke-width:1.5;stroke-dasharray:4 3\" d=\"M314 214V96\"/><text class=\"tl\" x=\"426\" y=\"198\" text-anchor=\"end\">reject</text><text class=\"tl\" x=\"162.9\" y=\"205\" text-anchor=\"middle\">do not reject</text><text class=\"tv\" x=\"14\" y=\"20\">H₀: μ ≤ 12 · Hₐ: μ &gt; 12 · α = 0.05</text><text class=\"tl\" x=\"14\" y=\"40\">n = 40 · σ = 3.2 · σx̄ = 3.2/√40 = 0.506</text><g data-k=\"z\"><path style=\"stroke:var(--blue);stroke-width:3\" d=\"M220 214V70\"/><circle class=\"k4\" cx=\"220\" cy=\"214\" r=\"5\"/></g><g data-k=\"zl\"><text class=\"tv\" x=\"227\" y=\"66\">z = 0</text></g></svg></div></div><div class=\"af\" data-cap=\"Sample A: x̄ = 12.40 → z = (12.40 − 12)/0.506 = 0.79, short of 1.645: do not reject H₀ (p = 0.2146)\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 262\" role=\"img\" aria-label=\"Standard normal curve, rejection region z ≥ 1.645; test statistic z = 0.79\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><path class=\"k5\" d=\"M314 214L314 178.6L320.6 185L327.2 190.5L333.9 195.2L340.5 199.2L347.1 202.5L353.7 205.2L360.4 207.3L367 209L373.6 210.3L380.2 211.3L386.9 212.1L393.5 212.6L400.1 213L406.7 213.3L413.4 213.6L420 213.7L420 214Z\"/><path style=\"stroke:var(--ink);stroke-width:2;fill:none\" d=\"M20 213.7L26.2 213.6L32.5 213.4L38.8 213.1L45 212.7L51.2 212.3L57.5 211.6L63.8 210.7L70 209.6L76.2 208.2L82.5 206.4L88.8 204.2L95 201.5L101.2 198.2L107.5 194.3L113.8 189.7L120 184.4L126.2 178.4L132.5 171.6L138.8 164.2L145 156.2L151.2 147.7L157.5 138.8L163.8 129.7L170 120.7L176.2 112L182.5 103.7L188.8 96.2L195 89.7L201.2 84.4L207.5 80.5L213.8 78L220 77.2L226.2 78L232.5 80.5L238.8 84.4L245 89.7L251.2 96.2L257.5 103.7L263.8 112L270 120.7L276.2 129.7L282.5 138.8L288.8 147.7L295 156.2L301.2 164.2L307.5 171.6L313.8 178.4L320 184.4L326.2 189.7L332.5 194.3L338.8 198.2L345 201.5L351.2 204.2L357.5 206.4L363.8 208.2L370 209.6L376.2 210.7L382.5 211.6L388.8 212.3L395 212.7L401.2 213.1L407.5 213.4L413.8 213.6L420 213.7\"/><path class=\"ln\" d=\"M14 214H426\"/><path class=\"ln\" d=\"M48.6 214v5M105.7 214v5M162.9 214v5M220 214v5M277.1 214v5M391.4 214v5\"/><text class=\"tl\" x=\"48.6\" y=\"233\" text-anchor=\"middle\">-3</text><text class=\"tl\" x=\"105.7\" y=\"233\" text-anchor=\"middle\">-2</text><text class=\"tl\" x=\"162.9\" y=\"233\" text-anchor=\"middle\">-1</text><text class=\"tl\" x=\"220\" y=\"233\" text-anchor=\"middle\">0</text><text class=\"tl\" x=\"277.1\" y=\"233\" text-anchor=\"middle\">1</text><text class=\"tl\" x=\"391.4\" y=\"233\" text-anchor=\"middle\">3</text><path class=\"ln\" d=\"M334.3 214v5\"/><text class=\"tv\" x=\"314\" y=\"233\" text-anchor=\"middle\">1.645</text><text class=\"tl\" x=\"134.3\" y=\"252\" text-anchor=\"end\">x̄ (min):</text><text class=\"tl\" x=\"220\" y=\"252\" text-anchor=\"middle\">12.00</text><text class=\"tv\" x=\"314\" y=\"252\" text-anchor=\"middle\">12.83</text><path style=\"stroke:var(--bad);stroke-width:1.5;stroke-dasharray:4 3\" d=\"M314 214V96\"/><text class=\"tl\" x=\"426\" y=\"198\" text-anchor=\"end\">reject</text><text class=\"tl\" x=\"162.9\" y=\"205\" text-anchor=\"middle\">do not reject</text><text class=\"tv\" x=\"14\" y=\"20\">H₀: μ ≤ 12 · Hₐ: μ &gt; 12 · α = 0.05</text><text class=\"tl\" x=\"14\" y=\"40\">n = 40 · σ = 3.2 · σx̄ = 3.2/√40 = 0.506</text><g data-k=\"z\"><path style=\"stroke:var(--blue);stroke-width:3\" d=\"M265.2 214V70\"/><circle class=\"k4\" cx=\"265.2\" cy=\"214\" r=\"5\"/></g><g data-k=\"zl\"><text class=\"tv\" x=\"272.2\" y=\"66\">z = 0.79</text></g></svg></div></div><div class=\"af\" data-cap=\"Sample B: x̄ = 12.75 → z = (12.75 − 12)/0.506 = 1.48, short of 1.645: do not reject H₀ (p = 0.0691)\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 262\" role=\"img\" aria-label=\"Standard normal curve, rejection region z ≥ 1.645; test statistic z = 1.48\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><path class=\"k5\" d=\"M314 214L314 178.6L320.6 185L327.2 190.5L333.9 195.2L340.5 199.2L347.1 202.5L353.7 205.2L360.4 207.3L367 209L373.6 210.3L380.2 211.3L386.9 212.1L393.5 212.6L400.1 213L406.7 213.3L413.4 213.6L420 213.7L420 214Z\"/><path style=\"stroke:var(--ink);stroke-width:2;fill:none\" d=\"M20 213.7L26.2 213.6L32.5 213.4L38.8 213.1L45 212.7L51.2 212.3L57.5 211.6L63.8 210.7L70 209.6L76.2 208.2L82.5 206.4L88.8 204.2L95 201.5L101.2 198.2L107.5 194.3L113.8 189.7L120 184.4L126.2 178.4L132.5 171.6L138.8 164.2L145 156.2L151.2 147.7L157.5 138.8L163.8 129.7L170 120.7L176.2 112L182.5 103.7L188.8 96.2L195 89.7L201.2 84.4L207.5 80.5L213.8 78L220 77.2L226.2 78L232.5 80.5L238.8 84.4L245 89.7L251.2 96.2L257.5 103.7L263.8 112L270 120.7L276.2 129.7L282.5 138.8L288.8 147.7L295 156.2L301.2 164.2L307.5 171.6L313.8 178.4L320 184.4L326.2 189.7L332.5 194.3L338.8 198.2L345 201.5L351.2 204.2L357.5 206.4L363.8 208.2L370 209.6L376.2 210.7L382.5 211.6L388.8 212.3L395 212.7L401.2 213.1L407.5 213.4L413.8 213.6L420 213.7\"/><path class=\"ln\" d=\"M14 214H426\"/><path class=\"ln\" d=\"M48.6 214v5M105.7 214v5M162.9 214v5M220 214v5M277.1 214v5M391.4 214v5\"/><text class=\"tl\" x=\"48.6\" y=\"233\" text-anchor=\"middle\">-3</text><text class=\"tl\" x=\"105.7\" y=\"233\" text-anchor=\"middle\">-2</text><text class=\"tl\" x=\"162.9\" y=\"233\" text-anchor=\"middle\">-1</text><text class=\"tl\" x=\"220\" y=\"233\" text-anchor=\"middle\">0</text><text class=\"tl\" x=\"277.1\" y=\"233\" text-anchor=\"middle\">1</text><text class=\"tl\" x=\"391.4\" y=\"233\" text-anchor=\"middle\">3</text><path class=\"ln\" d=\"M334.3 214v5\"/><text class=\"tv\" x=\"314\" y=\"233\" text-anchor=\"middle\">1.645</text><text class=\"tl\" x=\"134.3\" y=\"252\" text-anchor=\"end\">x̄ (min):</text><text class=\"tl\" x=\"220\" y=\"252\" text-anchor=\"middle\">12.00</text><text class=\"tv\" x=\"314\" y=\"252\" text-anchor=\"middle\">12.83</text><path style=\"stroke:var(--bad);stroke-width:1.5;stroke-dasharray:4 3\" d=\"M314 214V96\"/><text class=\"tl\" x=\"426\" y=\"198\" text-anchor=\"end\">reject</text><text class=\"tl\" x=\"162.9\" y=\"205\" text-anchor=\"middle\">do not reject</text><text class=\"tv\" x=\"14\" y=\"20\">H₀: μ ≤ 12 · Hₐ: μ &gt; 12 · α = 0.05</text><text class=\"tl\" x=\"14\" y=\"40\">n = 40 · σ = 3.2 · σx̄ = 3.2/√40 = 0.506</text><g data-k=\"z\"><path style=\"stroke:var(--blue);stroke-width:3\" d=\"M304.7 214V70\"/><circle class=\"k4\" cx=\"304.7\" cy=\"214\" r=\"5\"/></g><g data-k=\"zl\"><text class=\"tv\" x=\"311.7\" y=\"66\">z = 1.48</text></g></svg></div></div><div class=\"af\" data-cap=\"Sample C: x̄ = 13.25 → z = (13.25 − 12)/0.506 = 2.47, in the region: reject H₀ (p = 0.0067)\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 262\" role=\"img\" aria-label=\"Standard normal curve, rejection region z ≥ 1.645; test statistic z = 2.47\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><path class=\"k5\" d=\"M314 214L314 178.6L320.6 185L327.2 190.5L333.9 195.2L340.5 199.2L347.1 202.5L353.7 205.2L360.4 207.3L367 209L373.6 210.3L380.2 211.3L386.9 212.1L393.5 212.6L400.1 213L406.7 213.3L413.4 213.6L420 213.7L420 214Z\"/><path style=\"stroke:var(--ink);stroke-width:2;fill:none\" d=\"M20 213.7L26.2 213.6L32.5 213.4L38.8 213.1L45 212.7L51.2 212.3L57.5 211.6L63.8 210.7L70 209.6L76.2 208.2L82.5 206.4L88.8 204.2L95 201.5L101.2 198.2L107.5 194.3L113.8 189.7L120 184.4L126.2 178.4L132.5 171.6L138.8 164.2L145 156.2L151.2 147.7L157.5 138.8L163.8 129.7L170 120.7L176.2 112L182.5 103.7L188.8 96.2L195 89.7L201.2 84.4L207.5 80.5L213.8 78L220 77.2L226.2 78L232.5 80.5L238.8 84.4L245 89.7L251.2 96.2L257.5 103.7L263.8 112L270 120.7L276.2 129.7L282.5 138.8L288.8 147.7L295 156.2L301.2 164.2L307.5 171.6L313.8 178.4L320 184.4L326.2 189.7L332.5 194.3L338.8 198.2L345 201.5L351.2 204.2L357.5 206.4L363.8 208.2L370 209.6L376.2 210.7L382.5 211.6L388.8 212.3L395 212.7L401.2 213.1L407.5 213.4L413.8 213.6L420 213.7\"/><path class=\"ln\" d=\"M14 214H426\"/><path class=\"ln\" d=\"M48.6 214v5M105.7 214v5M162.9 214v5M220 214v5M277.1 214v5M391.4 214v5\"/><text class=\"tl\" x=\"48.6\" y=\"233\" text-anchor=\"middle\">-3</text><text class=\"tl\" x=\"105.7\" y=\"233\" text-anchor=\"middle\">-2</text><text class=\"tl\" x=\"162.9\" y=\"233\" text-anchor=\"middle\">-1</text><text class=\"tl\" x=\"220\" y=\"233\" text-anchor=\"middle\">0</text><text class=\"tl\" x=\"277.1\" y=\"233\" text-anchor=\"middle\">1</text><text class=\"tl\" x=\"391.4\" y=\"233\" text-anchor=\"middle\">3</text><path class=\"ln\" d=\"M334.3 214v5\"/><text class=\"tv\" x=\"314\" y=\"233\" text-anchor=\"middle\">1.645</text><text class=\"tl\" x=\"134.3\" y=\"252\" text-anchor=\"end\">x̄ (min):</text><text class=\"tl\" x=\"220\" y=\"252\" text-anchor=\"middle\">12.00</text><text class=\"tv\" x=\"314\" y=\"252\" text-anchor=\"middle\">12.83</text><path style=\"stroke:var(--bad);stroke-width:1.5;stroke-dasharray:4 3\" d=\"M314 214V96\"/><text class=\"tl\" x=\"426\" y=\"198\" text-anchor=\"end\">reject</text><text class=\"tl\" x=\"162.9\" y=\"205\" text-anchor=\"middle\">do not reject</text><text class=\"tv\" x=\"14\" y=\"20\">H₀: μ ≤ 12 · Hₐ: μ &gt; 12 · α = 0.05</text><text class=\"tl\" x=\"14\" y=\"40\">n = 40 · σ = 3.2 · σx̄ = 3.2/√40 = 0.506</text><g data-k=\"z\"><path style=\"stroke:var(--bad);stroke-width:3\" d=\"M361.2 214V70\"/><circle class=\"k5\" cx=\"361.2\" cy=\"214\" r=\"5\"/></g><g data-k=\"zl\"><text class=\"tv\" x=\"354.2\" y=\"66\" text-anchor=\"end\">z = 2.47</text></g></svg></div></div><div class=\"af\" data-cap=\"Same test, three samples: only z past 1.645 rejects H₀. C (the sheet&#x27;s Q3) says the 12-minute goal is being missed\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 262\" role=\"img\" aria-label=\"Standard normal curve, rejection region z ≥ 1.645; test statistic z = 2.47\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><path class=\"k5\" d=\"M314 214L314 178.6L320.6 185L327.2 190.5L333.9 195.2L340.5 199.2L347.1 202.5L353.7 205.2L360.4 207.3L367 209L373.6 210.3L380.2 211.3L386.9 212.1L393.5 212.6L400.1 213L406.7 213.3L413.4 213.6L420 213.7L420 214Z\"/><path style=\"stroke:var(--ink);stroke-width:2;fill:none\" d=\"M20 213.7L26.2 213.6L32.5 213.4L38.8 213.1L45 212.7L51.2 212.3L57.5 211.6L63.8 210.7L70 209.6L76.2 208.2L82.5 206.4L88.8 204.2L95 201.5L101.2 198.2L107.5 194.3L113.8 189.7L120 184.4L126.2 178.4L132.5 171.6L138.8 164.2L145 156.2L151.2 147.7L157.5 138.8L163.8 129.7L170 120.7L176.2 112L182.5 103.7L188.8 96.2L195 89.7L201.2 84.4L207.5 80.5L213.8 78L220 77.2L226.2 78L232.5 80.5L238.8 84.4L245 89.7L251.2 96.2L257.5 103.7L263.8 112L270 120.7L276.2 129.7L282.5 138.8L288.8 147.7L295 156.2L301.2 164.2L307.5 171.6L313.8 178.4L320 184.4L326.2 189.7L332.5 194.3L338.8 198.2L345 201.5L351.2 204.2L357.5 206.4L363.8 208.2L370 209.6L376.2 210.7L382.5 211.6L388.8 212.3L395 212.7L401.2 213.1L407.5 213.4L413.8 213.6L420 213.7\"/><path class=\"ln\" d=\"M14 214H426\"/><path class=\"ln\" d=\"M48.6 214v5M105.7 214v5M162.9 214v5M220 214v5M277.1 214v5M391.4 214v5\"/><text class=\"tl\" x=\"48.6\" y=\"233\" text-anchor=\"middle\">-3</text><text class=\"tl\" x=\"105.7\" y=\"233\" text-anchor=\"middle\">-2</text><text class=\"tl\" x=\"162.9\" y=\"233\" text-anchor=\"middle\">-1</text><text class=\"tl\" x=\"220\" y=\"233\" text-anchor=\"middle\">0</text><text class=\"tl\" x=\"277.1\" y=\"233\" text-anchor=\"middle\">1</text><text class=\"tl\" x=\"391.4\" y=\"233\" text-anchor=\"middle\">3</text><path class=\"ln\" d=\"M334.3 214v5\"/><text class=\"tv\" x=\"314\" y=\"233\" text-anchor=\"middle\">1.645</text><text class=\"tl\" x=\"134.3\" y=\"252\" text-anchor=\"end\">x̄ (min):</text><text class=\"tl\" x=\"220\" y=\"252\" text-anchor=\"middle\">12.00</text><text class=\"tv\" x=\"314\" y=\"252\" text-anchor=\"middle\">12.83</text><path style=\"stroke:var(--bad);stroke-width:1.5;stroke-dasharray:4 3\" d=\"M314 214V96\"/><text class=\"tl\" x=\"426\" y=\"198\" text-anchor=\"end\">reject</text><text class=\"tl\" x=\"162.9\" y=\"205\" text-anchor=\"middle\">do not reject</text><text class=\"tv\" x=\"14\" y=\"20\">H₀: μ ≤ 12 · Hₐ: μ &gt; 12 · α = 0.05</text><text class=\"tl\" x=\"14\" y=\"40\">n = 40 · σ = 3.2 · σx̄ = 3.2/√40 = 0.506</text><path style=\"stroke:var(--ink-3);stroke-width:1.5;stroke-dasharray:2 3\" d=\"M265.2 214V70\"/><path style=\"stroke:var(--ink-3);stroke-width:1.5;stroke-dasharray:2 3\" d=\"M304.7 214V70\"/><g data-k=\"z\"><path style=\"stroke:var(--bad);stroke-width:3\" d=\"M361.2 214V70\"/><circle class=\"k5\" cx=\"361.2\" cy=\"214\" r=\"5\"/></g><g data-k=\"zl\"><text class=\"tv\" x=\"354.2\" y=\"66\" text-anchor=\"end\">z = 2.47</text></g></svg></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The decision only asks where z lands: past 1.645 (x̄ above 12.83 minutes) rejects H₀, anything short of it does not.</figcaption></figure><!--/viz:sfm-anim-ztest-upper-->"
+     "src": "L#27 · L#30",
+     "h": "<p style=\"font-size:14.5px\">The lecturer's practice set for Chapter 9, Hypothesis Tests, shared through an LMS announcement on 29 Oct 2026 (‘Chapter 9 Solutions: One tailed and two tailed’), with an answer for every question. It has 20 questions in two halves: Q1–Q10, headed ‘Session 24’, on <strong>one-tailed</strong> tests, and Q11–Q20, headed ‘Session 25’, on <strong>two-tailed</strong> tests. Those are the sheet's own session labels, not LMS lecture numbers. Each question is restated below in our words and solved step by step; the numbers are the sheet's. Every z, p-value and decision was recomputed, and <strong>all 20 of the sheet's answers stand</strong>.</p><p style=\"font-size:14.5px\">L#27 taught the first two parts of the chapter: writing H₀ and Hₐ, and Type I and II errors. The sheet goes further, into the test itself (the z statistic, the p-value and the critical value), so every question is labelled with the part it needs. In the textbook's order (Anderson ch9):</p><div class=\"scroller\"><table><thead><tr><th>Part of the chapter</th><th>Lectured</th><th>On this sheet</th></tr></thead><tbody><tr><td>Developing H₀ and Hₐ (9.1)</td><td>L#27</td><td>Q2, Q12</td></tr><tr><td>Type I and II errors; what ‘reject’ and ‘do not reject’ mean (9.2)</td><td>L#27</td><td>Q10, Q20 (with the test's decision)</td></tr><tr><td>One-tailed test of μ, σ known: z, p-value, critical value (9.3)</td><td>L#30</td><td>Q1, 3, 4, 5, 6, 7, 8, 9</td></tr><tr><td>Two-tailed test of μ, σ known (9.3)</td><td>after L#27</td><td>Q11, 13, 14, 15, 16, 17, 18, 19</td></tr><tr><td>Test of μ with σ unknown (t), and of a proportion (9.4–9.5)</td><td>after L#27</td><td>not on this sheet</td></tr></tbody></table></div><h4>The toolkit the sheet uses</h4><div class=\"def\"><b>Test statistic for μ, σ known:</b> z = (x̄ − μ₀)/(σ/√n), where μ₀ is the value in H₀. It counts how many standard errors the sample mean sits from μ₀.</div><div class=\"scroller\"><table><thead><tr><th>Hₐ</th><th>p-value</th><th>Critical value at α = 0.05</th><th>at α = 0.01</th></tr></thead><tbody><tr><td>μ &lt; μ₀ (lower tail)</td><td>area left of z</td><td>reject if z ≤ −1.645</td><td>z ≤ −2.326</td></tr><tr><td>μ &gt; μ₀ (upper tail)</td><td>area right of z</td><td>reject if z ≥ 1.645</td><td>z ≥ 2.326</td></tr><tr><td>μ ≠ μ₀ (two-tailed)</td><td>2 × area beyond |z|</td><td>reject if |z| ≥ 1.960</td><td>|z| ≥ 2.576</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>p-value approach:</strong> reject H₀ if p-value ≤ α. <strong>Critical-value approach:</strong> reject H₀ if z falls in the rejection region beyond the critical value. The two always give the same decision. The critical values are the familiar interval z values from L#22: a one-tailed test puts all of α in one tail (1.645 for 0.05), a two-tailed test splits it (1.960). Excel: <code>=NORM.S.DIST(z, TRUE)</code> is the area left of z; <code>=1-NORM.S.DIST(z, TRUE)</code> the area right of it; <code>=2*(1-NORM.S.DIST(ABS(z), TRUE))</code> the two-tailed p-value.</p><div class=\"def\"><b>Notes on the sheet:</b><ul><li><b>No errors in the answers.</b> All ten numericals and all ten objective questions check out.</li><li><b>Rounding.</b> The sheet's p-values come from z rounded to two decimals and a four-decimal table. Q3: 0.0068 (exact 0.00675). Q11: 0.1260 from z = 1.53; the unrounded z = 1.532 gives 0.1255. Q13 and Q15: 0.0456 is 2 × 0.0228; the exact two-tailed value for z = 2 is 0.0455. No decision depends on the difference.</li><li><b>Same z, different decision.</b> Q13 and Q15 both have |z| = 2.00 and p = 0.0456: reject at α = 0.05 (Q13), do not reject at α = 0.01 (Q15). Likewise Q5's p = 0.0668 would not be rejected even at 0.05.</li><li><b>σ is given in every numerical,</b> so every test is a z test. The t test for σ unknown is not on this sheet.</li><li><b>Wording.</b> The conclusions say ‘do not reject H₀’ and ‘insufficient evidence’, never ‘accept H₀’, exactly as L#27 insists.</li></ul></div><details><summary>The 10 objective questions (Q2, 4, 6, … 20), answered</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>What it asks</th><th>Answer</th><th>Part</th></tr></thead><tbody><tr><td>2</td><td>Hₐ for ‘mean output is greater than 100 units an hour’</td><td>Hₐ: μ &gt; 100 (the sheet's C)</td><td>Developing H₀ and Hₐ · L#27</td></tr><tr><td>4</td><td>Decision when a one-tailed p-value is 0.08 and α = 0.05</td><td>Do not reject H₀, because 0.08 &gt; 0.05 (B)</td><td>One-tailed test · L#30</td></tr><tr><td>6</td><td>Critical value for a lower-tailed z test at α = 0.05</td><td>−1.645 (A)</td><td>One-tailed test · L#30</td></tr><tr><td>8</td><td>Upper-tailed test, critical z 1.645, statistic 1.40</td><td>Do not reject H₀: 1.40 &lt; 1.645 (C)</td><td>One-tailed test · L#30</td></tr><tr><td>10</td><td>Conclusion after rejecting H₀: μ ≤ 50 at α = 0.05</td><td>Sufficient evidence that μ &gt; 50; nothing is proven (B)</td><td>Reading a decision · L#27 wording</td></tr><tr><td>12</td><td>Hₐ for ‘the mean package weight differs from 2 kg’</td><td>Hₐ: μ ≠ 2 (C)</td><td>Developing H₀ and Hₐ · L#27</td></tr><tr><td>14</td><td>Critical values for a two-tailed z test at α = 0.05</td><td>±1.960 (B)</td><td>Two-tailed test · after L#27</td></tr><tr><td>16</td><td>Two-tailed p-value when the tail beyond z = 2.00 is 0.0228</td><td>2 × 0.0228 = 0.0456 (B)</td><td>Two-tailed test · after L#27</td></tr><tr><td>18</td><td>Two-tailed test, ±1.96, statistic −1.70</td><td>Do not reject H₀: −1.70 lies between −1.96 and +1.96 (C)</td><td>Two-tailed test · after L#27</td></tr><tr><td>20</td><td>Reading a two-tailed p-value of 0.12 at α = 0.05</td><td>Not enough evidence that the parameter differs; H₀ is not proven (C)</td><td>Reading a decision · L#27 wording</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The traps in these: Q4 and Q8 (a positive p-value or a positive z is no reason to reject), Q10 and Q20 (rejecting proves nothing with certainty, and a p-value is not the probability that H₀ is true), and Q18 (a negative statistic still has to pass the critical value). All ten are also in the question bank, reworded with new numbers.</p></details><details><summary>Q1 · lower-tail test, p-value approach (one-tailed z test, σ known, L#30)</summary><p style=\"font-size:14.5px\">A coffee packer aims for a mean fill of 3.00 lb. 36 cans average 2.94 lb, with σ = 0.12 lb. At α = 0.05, is the mean fill below 3.00 lb? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ ≥ 3; Hₐ: μ &lt; 3. A lower-tail test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 0.12/√36 = 0.02.</li><li>z = (2.94 − 3)/0.02 = <strong>−3.00</strong>.</li><li>p-value = area to the left of −3.00 = <strong>0.0013</strong>. Compare with α = 0.05: 0.0013 ≤ 0.05.</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean fill is below 3.00 lb: the cans are underfilled.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z −3.00, p ≈ 0.0013, reject H₀. The recomputed figures agree.</p></details><details><summary>Q3 · upper-tail test, p-value approach (one-tailed z test, σ known, L#30)</summary><p style=\"font-size:14.5px\">40 emergency calls have a mean response time of 13.25 minutes, with σ = 3.2 minutes. At α = 0.05, does the mean response time exceed 12 minutes? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ ≤ 12; Hₐ: μ &gt; 12. A upper-tail test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 3.2/√40 = 0.506.</li><li>z = (13.25 − 12)/0.506 = <strong>2.47</strong> (exactly 2.4705).</li><li>p-value = area to the right of 2.47 = <strong>0.0067</strong>. Compare with α = 0.05: 0.0067 ≤ 0.05.</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean response time exceeds 12 minutes.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z ≈ 2.47, p ≈ 0.0068, reject H₀. The recomputed figures agree.</p></details><details><summary>Q5 · lower-tail test, p-value approach (one-tailed z test, σ known, L#30)</summary><p style=\"font-size:14.5px\">64 bottles have a mean fill of 498.5 ml against a 500 ml target, with σ = 8 ml. At α = 0.01, is the mean fill below 500 ml? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ ≥ 500; Hₐ: μ &lt; 500. A lower-tail test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 8/√64 = 1.</li><li>z = (498.5 − 500)/1 = <strong>−1.50</strong>.</li><li>p-value = area to the left of −1.50 = <strong>0.0668</strong>. Compare with α = 0.01: 0.0668 &gt; 0.01.</li><li><strong>Do not reject H₀</strong>: at α = 0.01 there is not sufficient evidence that the mean fill is below 500 ml.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z −1.50, p ≈ 0.0668, do not reject H₀. The recomputed figures agree.</p></details><details><summary>Q7 · lower-tail test, critical-value approach (one-tailed z test, σ known, L#30)</summary><p style=\"font-size:14.5px\">36 deliveries take a mean of 3.7 days, with σ = 0.9 day. At α = 0.05, is the mean delivery time below 4 days? Use the critical-value approach.</p><ol><li>Hypotheses: H₀: μ ≥ 4; Hₐ: μ &lt; 4. A lower-tail test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 0.9/√36 = 0.15.</li><li>z = (3.7 − 4)/0.15 = <strong>−2.00</strong>.</li><li>Critical value: z<sub>0.05</sub> = −1.645: reject if z ≤ −1.645. Here z = −2.00 is in the rejection region. (p-value, for comparison: 0.0228.)</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean delivery time is below 4 days.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z −2.00, reject H₀. The recomputed figures agree.</p></details><details><summary>Q9 · upper-tail test, critical-value approach (one-tailed z test, σ known, L#30)</summary><p style=\"font-size:14.5px\">49 batteries last a mean of 20.6 hours, with σ = 2.1 hours. At α = 0.05, does mean battery life exceed 20 hours? Use the critical-value approach.</p><ol><li>Hypotheses: H₀: μ ≤ 20; Hₐ: μ &gt; 20. A upper-tail test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 2.1/√49 = 0.3.</li><li>z = (20.6 − 20)/0.3 = <strong>2.00</strong>.</li><li>Critical value: z<sub>0.05</sub> = 1.645: reject if z ≥ 1.645. Here z = 2.00 is in the rejection region. (p-value, for comparison: 0.0228.)</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that mean battery life exceeds 20 hours.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z 2.00, reject H₀. The recomputed figures agree.</p></details><details><summary>Q11 · two-tailed test, p-value approach (two-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">50 golf balls give a mean driving distance of 297.6 yards, with σ = 12 yards. At α = 0.05, does the mean differ from 295 yards? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ = 295; Hₐ: μ ≠ 295. A two-tailed test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 12/√50 = 1.697.</li><li>z = (297.6 − 295)/1.697 = <strong>1.53</strong> (exactly 1.5321).</li><li>p-value = 2 × area beyond |1.53| = 2 × 0.0628 = <strong>0.1255</strong>. Compare with α = 0.05: 0.1255 &gt; 0.05.</li><li><strong>Do not reject H₀</strong>: at α = 0.05 there is not sufficient evidence that the mean distance differs from 295 yards.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z ≈ 1.53, p ≈ 0.1260, do not reject H₀. The recomputed figures agree.</p></details><details><summary>Q13 · two-tailed test, p-value approach (two-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">64 cereal boxes have a mean weight of 496 g, with σ = 16 g. At α = 0.05, does the mean differ from 500 g? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ = 500; Hₐ: μ ≠ 500. A two-tailed test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 16/√64 = 2.</li><li>z = (496 − 500)/2 = <strong>−2.00</strong>.</li><li>p-value = 2 × area beyond |−2.00| = 2 × 0.0228 = <strong>0.0455</strong>. Compare with α = 0.05: 0.0455 ≤ 0.05.</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean weight differs from 500 g.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z −2.00, p ≈ 0.0456, reject H₀. The recomputed figures agree.</p></details><details><summary>Q15 · two-tailed test, p-value approach (two-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">36 lunch bills have a mean of ₹258, with σ = ₹24. At α = 0.01, does the mean bill differ from ₹250? Use the p-value approach.</p><ol><li>Hypotheses: H₀: μ = 250; Hₐ: μ ≠ 250. A two-tailed test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 24/√36 = 4.</li><li>z = (258 − 250)/4 = <strong>2.00</strong>.</li><li>p-value = 2 × area beyond |2.00| = 2 × 0.0228 = <strong>0.0455</strong>. Compare with α = 0.01: 0.0455 &gt; 0.01.</li><li><strong>Do not reject H₀</strong>: at α = 0.01 there is not sufficient evidence that the mean bill differs from ₹250.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z 2.00, p ≈ 0.0456, do not reject H₀. The recomputed figures agree.</p></details><details><summary>Q17 · two-tailed test, critical-value approach (two-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">100 components have a mean length of 20.4 cm, with σ = 2 cm. At α = 0.05, does the mean differ from 20 cm? Use the critical-value approach.</p><ol><li>Hypotheses: H₀: μ = 20; Hₐ: μ ≠ 20. A two-tailed test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 2/√100 = 0.2.</li><li>z = (20.4 − 20)/0.2 = <strong>2.00</strong>.</li><li>Critical value: ±z<sub>0.025</sub> = ±1.96: reject if z ≤ −1.96 or z ≥ 1.96. Here z = 2.00 is in the rejection region. (p-value, for comparison: 0.0455.)</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean length differs from 20 cm.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z 2.00, reject H₀. The recomputed figures agree.</p></details><details><summary>Q19 · two-tailed test, critical-value approach (two-tailed z test, σ known, after L#27)</summary><p style=\"font-size:14.5px\">36 cups have a mean capacity of 347 ml, with σ = 9 ml. At α = 0.05, does the mean differ from 350 ml? Use the critical-value approach.</p><ol><li>Hypotheses: H₀: μ = 350; Hₐ: μ ≠ 350. A two-tailed test.</li><li>σ is known, so z = (x̄ − μ₀)/(σ/√n). Standard error: 9/√36 = 1.5.</li><li>z = (347 − 350)/1.5 = <strong>−2.00</strong>.</li><li>Critical value: ±z<sub>0.025</sub> = ±1.96: reject if z ≤ −1.96 or z ≥ 1.96. Here z = −2.00 is in the rejection region. (p-value, for comparison: 0.0455.)</li><li><strong>Reject H₀</strong>: there is sufficient evidence at α = 0.05 that the mean capacity differs from 350 ml.</li></ol><p style=\"font-size:14.5px\"><strong>Check:</strong> Sheet: z −2.00, reject H₀. The recomputed figures agree.</p></details><!--viz:sfm-l27s-lower-tail-decisions--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Standard normal curve for a lower-tail z test at alpha 0.05. The rejection region left of minus 1.645 is shaded. The delivery problem's z of minus 2.00 falls inside it, so H0 is rejected; the bottle problem's z of minus 1.50 falls outside it, so H0 is not rejected.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One lower-tail test, two sheet answers</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 270\" role=\"img\" aria-label=\"Standard normal curve for a lower-tail z test at alpha 0.05. The rejection region left of minus 1.645 is shaded. The delivery problem's z of minus 2.00 falls inside it, so H0 is rejected; the bottle problem's z of minus 1.50 falls outside it, so H0 is not rejected.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M30,176 L30,175.7 L33.4,175.6 L36.8,175.5 L40.1,175.4 L43.5,175.2 L46.9,175.1 L50.3,174.9 L53.7,174.7 L57.1,174.4 L60.4,174.1 L63.8,173.8 L67.2,173.4 L70.6,172.9 L74,172.4 L77.3,171.8 L80.7,171.1 L84.1,170.3 L87.5,169.4 L90.9,168.4 L94.3,167.3 L97.6,166 L101,164.6 L104.4,163.1 L107.8,161.4 L111.2,159.5 L114.5,157.5 L117.9,155.3 L121.3,152.9 L124.7,150.3 L128.1,147.6 L128.1,176 Z\" style=\"fill:var(--blue);opacity:.4;stroke:none\"/><path d=\"M26,176 L414,176\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M30,175.7 L33.8,175.6 L37.6,175.5 L41.4,175.3 L45.2,175.2 L49,175 L52.8,174.7 L56.6,174.5 L60.4,174.1 L64.2,173.7 L68,173.3 L71.8,172.7 L75.6,172.1 L79.4,171.4 L83.2,170.5 L87,169.5 L90.8,168.4 L94.6,167.1 L98.4,165.7 L102.2,164.1 L106,162.3 L109.8,160.3 L113.6,158 L117.4,155.6 L121.2,153 L125,150.1 L128.8,147 L132.6,143.6 L136.4,140.1 L140.2,136.3 L144,132.4 L147.8,128.3 L151.6,124 L155.4,119.6 L159.2,115.1 L163,110.6 L166.8,106.1 L170.6,101.6 L174.4,97.1 L178.2,92.8 L182,88.7 L185.8,84.8 L189.6,81.1 L193.4,77.8 L197.2,74.8 L201,72.2 L204.8,70 L208.6,68.3 L212.4,67 L216.2,66.3 L220,66 L223.8,66.3 L227.6,67 L231.4,68.3 L235.2,70 L239,72.2 L242.8,74.8 L246.6,77.8 L250.4,81.1 L254.2,84.8 L258,88.7 L261.8,92.8 L265.6,97.1 L269.4,101.6 L273.2,106.1 L277,110.6 L280.8,115.1 L284.6,119.6 L288.4,124 L292.2,128.3 L296,132.4 L299.8,136.3 L303.6,140.1 L307.4,143.6 L311.2,147 L315,150.1 L318.8,153 L322.6,155.6 L326.4,158 L330.2,160.3 L334,162.3 L337.8,164.1 L341.6,165.7 L345.4,167.1 L349.2,168.4 L353,169.5 L356.8,170.5 L360.6,171.4 L364.4,172.1 L368.2,172.7 L372,173.3 L375.8,173.7 L379.6,174.1 L383.4,174.5 L387.2,174.7 L391,175 L394.8,175.2 L398.6,175.3 L402.4,175.5 L406.2,175.6 L410,175.7\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><path d=\"M128.1,176 L128.1,56\" style=\"stroke:var(--blue);stroke-width:1.5;fill:none;stroke-dasharray:3 3\"/><path d=\"M52.4,176 L52.4,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"52.4\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">−3</text><path d=\"M108.2,176 L108.2,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"108.2\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">−2</text><path d=\"M164.1,176 L164.1,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"164.1\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">−1</text><path d=\"M220,176 L220,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"220\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><path d=\"M275.9,176 L275.9,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"275.9\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">1</text><path d=\"M331.8,176 L331.8,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"331.8\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">2</text><path d=\"M387.6,176 L387.6,181\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"387.6\" y=\"195\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">3</text><text x=\"220\" y=\"214\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">z = (x̄ − μ₀) / (σ/√n)</text><text x=\"135.1\" y=\"30\" text-anchor=\"start\" style=\"fill:var(--blue);font-size:13px;font-weight:700\">critical z = −1.645</text><text x=\"135.1\" y=\"47\" text-anchor=\"start\" style=\"fill:var(--ink-3);font-size:13px\">reject H₀ to its left (α = 0.05)</text><path d=\"M108.2,174 L103.2,165 L113.2,165 Z\" style=\"fill:var(--bad);stroke:none\"/><path d=\"M136.2,174 L131.2,165 L141.2,165 Z\" style=\"fill:var(--good);stroke:none\"/><path d=\"M40,236 L35,227 L45,227 Z\" style=\"fill:var(--bad);stroke:none\"/><text x=\"52\" y=\"236\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px\">Q7: z = −2.00, in the region → reject H₀</text><path d=\"M40,256 L35,247 L45,247 Z\" style=\"fill:var(--good);stroke:none\"/><text x=\"52\" y=\"256\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px\">Q5: z = −1.50, outside it → do not reject</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">A lower-tail test rejects only far enough to the left: −2.00 is past −1.645, −1.50 is not (Q5 was set at α = 0.01, where the cut-off is −2.326).</figcaption></figure><!--/viz:sfm-l27s-lower-tail-decisions--><!--viz:sfm-anim-ztest-upper--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Animation: the standard normal curve with the upper 5% beyond z = 1.645 shaded as the rejection region, for H0: mu at most 12 minutes against Ha: mu above 12, with sigma 3.2 and n = 40 (standard error 0.506). A marker for the test statistic moves to z = 0.79 for a sample mean of 12.40 and z = 1.48 for 12.80, both outside the region (do not reject), then to z = 2.47 for the sheet's sample mean of 13.25, inside the region (reject H0, p-value 0.0067).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">An upper-tail z test deciding: emergency response times</div><div class=\"anim\" data-ms=\"1700\"><div class=\"af on\" data-cap=\"If x̄ were exactly 12, z = 0. Reject H₀ only if z ≥ 1.645, i.e. x̄ ≥ 12.83 min (the top 5% under H₀)\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 262\" role=\"img\" aria-label=\"Standard normal curve, rejection region z ≥ 1.645; test statistic z = 0\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><path class=\"k5\" d=\"M314 214L314 178.6L320.6 185L327.2 190.5L333.9 195.2L340.5 199.2L347.1 202.5L353.7 205.2L360.4 207.3L367 209L373.6 210.3L380.2 211.3L386.9 212.1L393.5 212.6L400.1 213L406.7 213.3L413.4 213.6L420 213.7L420 214Z\"/><path style=\"stroke:var(--ink);stroke-width:2;fill:none\" d=\"M20 213.7L26.2 213.6L32.5 213.4L38.8 213.1L45 212.7L51.2 212.3L57.5 211.6L63.8 210.7L70 209.6L76.2 208.2L82.5 206.4L88.8 204.2L95 201.5L101.2 198.2L107.5 194.3L113.8 189.7L120 184.4L126.2 178.4L132.5 171.6L138.8 164.2L145 156.2L151.2 147.7L157.5 138.8L163.8 129.7L170 120.7L176.2 112L182.5 103.7L188.8 96.2L195 89.7L201.2 84.4L207.5 80.5L213.8 78L220 77.2L226.2 78L232.5 80.5L238.8 84.4L245 89.7L251.2 96.2L257.5 103.7L263.8 112L270 120.7L276.2 129.7L282.5 138.8L288.8 147.7L295 156.2L301.2 164.2L307.5 171.6L313.8 178.4L320 184.4L326.2 189.7L332.5 194.3L338.8 198.2L345 201.5L351.2 204.2L357.5 206.4L363.8 208.2L370 209.6L376.2 210.7L382.5 211.6L388.8 212.3L395 212.7L401.2 213.1L407.5 213.4L413.8 213.6L420 213.7\"/><path class=\"ln\" d=\"M14 214H426\"/><path class=\"ln\" d=\"M48.6 214v5M105.7 214v5M162.9 214v5M220 214v5M277.1 214v5M391.4 214v5\"/><text class=\"tl\" x=\"48.6\" y=\"233\" text-anchor=\"middle\">-3</text><text class=\"tl\" x=\"105.7\" y=\"233\" text-anchor=\"middle\">-2</text><text class=\"tl\" x=\"162.9\" y=\"233\" text-anchor=\"middle\">-1</text><text class=\"tl\" x=\"220\" y=\"233\" text-anchor=\"middle\">0</text><text class=\"tl\" x=\"277.1\" y=\"233\" text-anchor=\"middle\">1</text><text class=\"tl\" x=\"391.4\" y=\"233\" text-anchor=\"middle\">3</text><path class=\"ln\" d=\"M334.3 214v5\"/><text class=\"tv\" x=\"314\" y=\"233\" text-anchor=\"middle\">1.645</text><text class=\"tl\" x=\"134.3\" y=\"252\" text-anchor=\"end\">x̄ (min):</text><text class=\"tl\" x=\"220\" y=\"252\" text-anchor=\"middle\">12.00</text><text class=\"tv\" x=\"314\" y=\"252\" text-anchor=\"middle\">12.83</text><path style=\"stroke:var(--bad);stroke-width:1.5;stroke-dasharray:4 3\" d=\"M314 214V96\"/><text class=\"tl\" x=\"426\" y=\"198\" text-anchor=\"end\">reject</text><text class=\"tl\" x=\"162.9\" y=\"205\" text-anchor=\"middle\">do not reject</text><text class=\"tv\" x=\"14\" y=\"20\">H₀: μ ≤ 12 · Hₐ: μ &gt; 12 · α = 0.05</text><text class=\"tl\" x=\"14\" y=\"40\">n = 40 · σ = 3.2 · σx̄ = 3.2/√40 = 0.506</text><g data-k=\"z\"><path style=\"stroke:var(--blue);stroke-width:3\" d=\"M220 214V70\"/><circle class=\"k4\" cx=\"220\" cy=\"214\" r=\"5\"/></g><g data-k=\"zl\"><text class=\"tv\" x=\"227\" y=\"66\">z = 0</text></g></svg></div></div><div class=\"af\" data-cap=\"Sample A: x̄ = 12.40 → z = (12.40 − 12)/0.506 = 0.79, short of 1.645: do not reject H₀ (p = 0.2146)\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 262\" role=\"img\" aria-label=\"Standard normal curve, rejection region z ≥ 1.645; test statistic z = 0.79\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><path class=\"k5\" d=\"M314 214L314 178.6L320.6 185L327.2 190.5L333.9 195.2L340.5 199.2L347.1 202.5L353.7 205.2L360.4 207.3L367 209L373.6 210.3L380.2 211.3L386.9 212.1L393.5 212.6L400.1 213L406.7 213.3L413.4 213.6L420 213.7L420 214Z\"/><path style=\"stroke:var(--ink);stroke-width:2;fill:none\" d=\"M20 213.7L26.2 213.6L32.5 213.4L38.8 213.1L45 212.7L51.2 212.3L57.5 211.6L63.8 210.7L70 209.6L76.2 208.2L82.5 206.4L88.8 204.2L95 201.5L101.2 198.2L107.5 194.3L113.8 189.7L120 184.4L126.2 178.4L132.5 171.6L138.8 164.2L145 156.2L151.2 147.7L157.5 138.8L163.8 129.7L170 120.7L176.2 112L182.5 103.7L188.8 96.2L195 89.7L201.2 84.4L207.5 80.5L213.8 78L220 77.2L226.2 78L232.5 80.5L238.8 84.4L245 89.7L251.2 96.2L257.5 103.7L263.8 112L270 120.7L276.2 129.7L282.5 138.8L288.8 147.7L295 156.2L301.2 164.2L307.5 171.6L313.8 178.4L320 184.4L326.2 189.7L332.5 194.3L338.8 198.2L345 201.5L351.2 204.2L357.5 206.4L363.8 208.2L370 209.6L376.2 210.7L382.5 211.6L388.8 212.3L395 212.7L401.2 213.1L407.5 213.4L413.8 213.6L420 213.7\"/><path class=\"ln\" d=\"M14 214H426\"/><path class=\"ln\" d=\"M48.6 214v5M105.7 214v5M162.9 214v5M220 214v5M277.1 214v5M391.4 214v5\"/><text class=\"tl\" x=\"48.6\" y=\"233\" text-anchor=\"middle\">-3</text><text class=\"tl\" x=\"105.7\" y=\"233\" text-anchor=\"middle\">-2</text><text class=\"tl\" x=\"162.9\" y=\"233\" text-anchor=\"middle\">-1</text><text class=\"tl\" x=\"220\" y=\"233\" text-anchor=\"middle\">0</text><text class=\"tl\" x=\"277.1\" y=\"233\" text-anchor=\"middle\">1</text><text class=\"tl\" x=\"391.4\" y=\"233\" text-anchor=\"middle\">3</text><path class=\"ln\" d=\"M334.3 214v5\"/><text class=\"tv\" x=\"314\" y=\"233\" text-anchor=\"middle\">1.645</text><text class=\"tl\" x=\"134.3\" y=\"252\" text-anchor=\"end\">x̄ (min):</text><text class=\"tl\" x=\"220\" y=\"252\" text-anchor=\"middle\">12.00</text><text class=\"tv\" x=\"314\" y=\"252\" text-anchor=\"middle\">12.83</text><path style=\"stroke:var(--bad);stroke-width:1.5;stroke-dasharray:4 3\" d=\"M314 214V96\"/><text class=\"tl\" x=\"426\" y=\"198\" text-anchor=\"end\">reject</text><text class=\"tl\" x=\"162.9\" y=\"205\" text-anchor=\"middle\">do not reject</text><text class=\"tv\" x=\"14\" y=\"20\">H₀: μ ≤ 12 · Hₐ: μ &gt; 12 · α = 0.05</text><text class=\"tl\" x=\"14\" y=\"40\">n = 40 · σ = 3.2 · σx̄ = 3.2/√40 = 0.506</text><g data-k=\"z\"><path style=\"stroke:var(--blue);stroke-width:3\" d=\"M265.2 214V70\"/><circle class=\"k4\" cx=\"265.2\" cy=\"214\" r=\"5\"/></g><g data-k=\"zl\"><text class=\"tv\" x=\"272.2\" y=\"66\">z = 0.79</text></g></svg></div></div><div class=\"af\" data-cap=\"Sample B: x̄ = 12.75 → z = (12.75 − 12)/0.506 = 1.48, short of 1.645: do not reject H₀ (p = 0.0691)\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 262\" role=\"img\" aria-label=\"Standard normal curve, rejection region z ≥ 1.645; test statistic z = 1.48\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><path class=\"k5\" d=\"M314 214L314 178.6L320.6 185L327.2 190.5L333.9 195.2L340.5 199.2L347.1 202.5L353.7 205.2L360.4 207.3L367 209L373.6 210.3L380.2 211.3L386.9 212.1L393.5 212.6L400.1 213L406.7 213.3L413.4 213.6L420 213.7L420 214Z\"/><path style=\"stroke:var(--ink);stroke-width:2;fill:none\" d=\"M20 213.7L26.2 213.6L32.5 213.4L38.8 213.1L45 212.7L51.2 212.3L57.5 211.6L63.8 210.7L70 209.6L76.2 208.2L82.5 206.4L88.8 204.2L95 201.5L101.2 198.2L107.5 194.3L113.8 189.7L120 184.4L126.2 178.4L132.5 171.6L138.8 164.2L145 156.2L151.2 147.7L157.5 138.8L163.8 129.7L170 120.7L176.2 112L182.5 103.7L188.8 96.2L195 89.7L201.2 84.4L207.5 80.5L213.8 78L220 77.2L226.2 78L232.5 80.5L238.8 84.4L245 89.7L251.2 96.2L257.5 103.7L263.8 112L270 120.7L276.2 129.7L282.5 138.8L288.8 147.7L295 156.2L301.2 164.2L307.5 171.6L313.8 178.4L320 184.4L326.2 189.7L332.5 194.3L338.8 198.2L345 201.5L351.2 204.2L357.5 206.4L363.8 208.2L370 209.6L376.2 210.7L382.5 211.6L388.8 212.3L395 212.7L401.2 213.1L407.5 213.4L413.8 213.6L420 213.7\"/><path class=\"ln\" d=\"M14 214H426\"/><path class=\"ln\" d=\"M48.6 214v5M105.7 214v5M162.9 214v5M220 214v5M277.1 214v5M391.4 214v5\"/><text class=\"tl\" x=\"48.6\" y=\"233\" text-anchor=\"middle\">-3</text><text class=\"tl\" x=\"105.7\" y=\"233\" text-anchor=\"middle\">-2</text><text class=\"tl\" x=\"162.9\" y=\"233\" text-anchor=\"middle\">-1</text><text class=\"tl\" x=\"220\" y=\"233\" text-anchor=\"middle\">0</text><text class=\"tl\" x=\"277.1\" y=\"233\" text-anchor=\"middle\">1</text><text class=\"tl\" x=\"391.4\" y=\"233\" text-anchor=\"middle\">3</text><path class=\"ln\" d=\"M334.3 214v5\"/><text class=\"tv\" x=\"314\" y=\"233\" text-anchor=\"middle\">1.645</text><text class=\"tl\" x=\"134.3\" y=\"252\" text-anchor=\"end\">x̄ (min):</text><text class=\"tl\" x=\"220\" y=\"252\" text-anchor=\"middle\">12.00</text><text class=\"tv\" x=\"314\" y=\"252\" text-anchor=\"middle\">12.83</text><path style=\"stroke:var(--bad);stroke-width:1.5;stroke-dasharray:4 3\" d=\"M314 214V96\"/><text class=\"tl\" x=\"426\" y=\"198\" text-anchor=\"end\">reject</text><text class=\"tl\" x=\"162.9\" y=\"205\" text-anchor=\"middle\">do not reject</text><text class=\"tv\" x=\"14\" y=\"20\">H₀: μ ≤ 12 · Hₐ: μ &gt; 12 · α = 0.05</text><text class=\"tl\" x=\"14\" y=\"40\">n = 40 · σ = 3.2 · σx̄ = 3.2/√40 = 0.506</text><g data-k=\"z\"><path style=\"stroke:var(--blue);stroke-width:3\" d=\"M304.7 214V70\"/><circle class=\"k4\" cx=\"304.7\" cy=\"214\" r=\"5\"/></g><g data-k=\"zl\"><text class=\"tv\" x=\"311.7\" y=\"66\">z = 1.48</text></g></svg></div></div><div class=\"af\" data-cap=\"Sample C: x̄ = 13.25 → z = (13.25 − 12)/0.506 = 2.47, in the region: reject H₀ (p = 0.0067)\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 262\" role=\"img\" aria-label=\"Standard normal curve, rejection region z ≥ 1.645; test statistic z = 2.47\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><path class=\"k5\" d=\"M314 214L314 178.6L320.6 185L327.2 190.5L333.9 195.2L340.5 199.2L347.1 202.5L353.7 205.2L360.4 207.3L367 209L373.6 210.3L380.2 211.3L386.9 212.1L393.5 212.6L400.1 213L406.7 213.3L413.4 213.6L420 213.7L420 214Z\"/><path style=\"stroke:var(--ink);stroke-width:2;fill:none\" d=\"M20 213.7L26.2 213.6L32.5 213.4L38.8 213.1L45 212.7L51.2 212.3L57.5 211.6L63.8 210.7L70 209.6L76.2 208.2L82.5 206.4L88.8 204.2L95 201.5L101.2 198.2L107.5 194.3L113.8 189.7L120 184.4L126.2 178.4L132.5 171.6L138.8 164.2L145 156.2L151.2 147.7L157.5 138.8L163.8 129.7L170 120.7L176.2 112L182.5 103.7L188.8 96.2L195 89.7L201.2 84.4L207.5 80.5L213.8 78L220 77.2L226.2 78L232.5 80.5L238.8 84.4L245 89.7L251.2 96.2L257.5 103.7L263.8 112L270 120.7L276.2 129.7L282.5 138.8L288.8 147.7L295 156.2L301.2 164.2L307.5 171.6L313.8 178.4L320 184.4L326.2 189.7L332.5 194.3L338.8 198.2L345 201.5L351.2 204.2L357.5 206.4L363.8 208.2L370 209.6L376.2 210.7L382.5 211.6L388.8 212.3L395 212.7L401.2 213.1L407.5 213.4L413.8 213.6L420 213.7\"/><path class=\"ln\" d=\"M14 214H426\"/><path class=\"ln\" d=\"M48.6 214v5M105.7 214v5M162.9 214v5M220 214v5M277.1 214v5M391.4 214v5\"/><text class=\"tl\" x=\"48.6\" y=\"233\" text-anchor=\"middle\">-3</text><text class=\"tl\" x=\"105.7\" y=\"233\" text-anchor=\"middle\">-2</text><text class=\"tl\" x=\"162.9\" y=\"233\" text-anchor=\"middle\">-1</text><text class=\"tl\" x=\"220\" y=\"233\" text-anchor=\"middle\">0</text><text class=\"tl\" x=\"277.1\" y=\"233\" text-anchor=\"middle\">1</text><text class=\"tl\" x=\"391.4\" y=\"233\" text-anchor=\"middle\">3</text><path class=\"ln\" d=\"M334.3 214v5\"/><text class=\"tv\" x=\"314\" y=\"233\" text-anchor=\"middle\">1.645</text><text class=\"tl\" x=\"134.3\" y=\"252\" text-anchor=\"end\">x̄ (min):</text><text class=\"tl\" x=\"220\" y=\"252\" text-anchor=\"middle\">12.00</text><text class=\"tv\" x=\"314\" y=\"252\" text-anchor=\"middle\">12.83</text><path style=\"stroke:var(--bad);stroke-width:1.5;stroke-dasharray:4 3\" d=\"M314 214V96\"/><text class=\"tl\" x=\"426\" y=\"198\" text-anchor=\"end\">reject</text><text class=\"tl\" x=\"162.9\" y=\"205\" text-anchor=\"middle\">do not reject</text><text class=\"tv\" x=\"14\" y=\"20\">H₀: μ ≤ 12 · Hₐ: μ &gt; 12 · α = 0.05</text><text class=\"tl\" x=\"14\" y=\"40\">n = 40 · σ = 3.2 · σx̄ = 3.2/√40 = 0.506</text><g data-k=\"z\"><path style=\"stroke:var(--bad);stroke-width:3\" d=\"M361.2 214V70\"/><circle class=\"k5\" cx=\"361.2\" cy=\"214\" r=\"5\"/></g><g data-k=\"zl\"><text class=\"tv\" x=\"354.2\" y=\"66\" text-anchor=\"end\">z = 2.47</text></g></svg></div></div><div class=\"af\" data-cap=\"Same test, three samples: only z past 1.645 rejects H₀. C (the sheet&#x27;s Q3) says the 12-minute goal is being missed\"><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 262\" role=\"img\" aria-label=\"Standard normal curve, rejection region z ≥ 1.645; test statistic z = 2.47\" style=\"width:100%;max-width:440px;min-width:280px;display:block;margin:0 auto;font-family:var(--mono)\"><path class=\"k5\" d=\"M314 214L314 178.6L320.6 185L327.2 190.5L333.9 195.2L340.5 199.2L347.1 202.5L353.7 205.2L360.4 207.3L367 209L373.6 210.3L380.2 211.3L386.9 212.1L393.5 212.6L400.1 213L406.7 213.3L413.4 213.6L420 213.7L420 214Z\"/><path style=\"stroke:var(--ink);stroke-width:2;fill:none\" d=\"M20 213.7L26.2 213.6L32.5 213.4L38.8 213.1L45 212.7L51.2 212.3L57.5 211.6L63.8 210.7L70 209.6L76.2 208.2L82.5 206.4L88.8 204.2L95 201.5L101.2 198.2L107.5 194.3L113.8 189.7L120 184.4L126.2 178.4L132.5 171.6L138.8 164.2L145 156.2L151.2 147.7L157.5 138.8L163.8 129.7L170 120.7L176.2 112L182.5 103.7L188.8 96.2L195 89.7L201.2 84.4L207.5 80.5L213.8 78L220 77.2L226.2 78L232.5 80.5L238.8 84.4L245 89.7L251.2 96.2L257.5 103.7L263.8 112L270 120.7L276.2 129.7L282.5 138.8L288.8 147.7L295 156.2L301.2 164.2L307.5 171.6L313.8 178.4L320 184.4L326.2 189.7L332.5 194.3L338.8 198.2L345 201.5L351.2 204.2L357.5 206.4L363.8 208.2L370 209.6L376.2 210.7L382.5 211.6L388.8 212.3L395 212.7L401.2 213.1L407.5 213.4L413.8 213.6L420 213.7\"/><path class=\"ln\" d=\"M14 214H426\"/><path class=\"ln\" d=\"M48.6 214v5M105.7 214v5M162.9 214v5M220 214v5M277.1 214v5M391.4 214v5\"/><text class=\"tl\" x=\"48.6\" y=\"233\" text-anchor=\"middle\">-3</text><text class=\"tl\" x=\"105.7\" y=\"233\" text-anchor=\"middle\">-2</text><text class=\"tl\" x=\"162.9\" y=\"233\" text-anchor=\"middle\">-1</text><text class=\"tl\" x=\"220\" y=\"233\" text-anchor=\"middle\">0</text><text class=\"tl\" x=\"277.1\" y=\"233\" text-anchor=\"middle\">1</text><text class=\"tl\" x=\"391.4\" y=\"233\" text-anchor=\"middle\">3</text><path class=\"ln\" d=\"M334.3 214v5\"/><text class=\"tv\" x=\"314\" y=\"233\" text-anchor=\"middle\">1.645</text><text class=\"tl\" x=\"134.3\" y=\"252\" text-anchor=\"end\">x̄ (min):</text><text class=\"tl\" x=\"220\" y=\"252\" text-anchor=\"middle\">12.00</text><text class=\"tv\" x=\"314\" y=\"252\" text-anchor=\"middle\">12.83</text><path style=\"stroke:var(--bad);stroke-width:1.5;stroke-dasharray:4 3\" d=\"M314 214V96\"/><text class=\"tl\" x=\"426\" y=\"198\" text-anchor=\"end\">reject</text><text class=\"tl\" x=\"162.9\" y=\"205\" text-anchor=\"middle\">do not reject</text><text class=\"tv\" x=\"14\" y=\"20\">H₀: μ ≤ 12 · Hₐ: μ &gt; 12 · α = 0.05</text><text class=\"tl\" x=\"14\" y=\"40\">n = 40 · σ = 3.2 · σx̄ = 3.2/√40 = 0.506</text><path style=\"stroke:var(--ink-3);stroke-width:1.5;stroke-dasharray:2 3\" d=\"M265.2 214V70\"/><path style=\"stroke:var(--ink-3);stroke-width:1.5;stroke-dasharray:2 3\" d=\"M304.7 214V70\"/><g data-k=\"z\"><path style=\"stroke:var(--bad);stroke-width:3\" d=\"M361.2 214V70\"/><circle class=\"k5\" cx=\"361.2\" cy=\"214\" r=\"5\"/></g><g data-k=\"zl\"><text class=\"tv\" x=\"354.2\" y=\"66\" text-anchor=\"end\">z = 2.47</text></g></svg></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The decision only asks where z lands: past 1.645 (x̄ above 12.83 minutes) rejects H₀, anything short of it does not.</figcaption></figure><!--/viz:sfm-anim-ztest-upper--><h4>L#30 update: the ‘Session 24’ sheet</h4><p style=\"font-size:14.5px\">L#30's LMS page links a three-page faculty sheet, <strong>‘Session 24: Practice Problems’</strong>, on one-tailed tests by the p-value and critical-value approaches. Its ten questions are word for word Q1–Q10 of the Chapter 9 set above, with the same numbers and answers, so the full working is not repeated. L#30 is the lecture that teaches them; the labels above now read L#30. In brief, in our words:</p><div class=\"scroller\"><table><thead><tr><th>Q</th><th>What it asks</th><th>H₀ / Hₐ</th><th>z</th><th>Test</th><th>Decision</th></tr></thead><tbody><tr><td>Q1</td><td>Coffee cans: is the mean fill under 3.00 lb? (n = 36, x̄ = 2.94, σ = 0.12, α = 0.05, p-value)</td><td>μ ≥ 3 / μ &lt; 3</td><td>−3.00</td><td>p = 0.0013</td><td>reject: underfilled</td></tr><tr><td>Q2</td><td>Alternative for ‘mean output is greater than 100 units an hour’</td><td>—</td><td>—</td><td>—</td><td>Hₐ: μ &gt; 100</td></tr><tr><td>Q3</td><td>Response time over 12 minutes? (n = 40, x̄ = 13.25, σ = 3.2, α = 0.05, p-value)</td><td>μ ≤ 12 / μ &gt; 12</td><td>2.47</td><td>p = 0.0068 (0.0067 exact)</td><td>reject: goal missed</td></tr><tr><td>Q4</td><td>One-tailed p = 0.08 at α = 0.05</td><td>—</td><td>—</td><td>0.08 &gt; 0.05</td><td>do not reject H₀</td></tr><tr><td>Q5</td><td>Bottles under 500 ml? (n = 64, x̄ = 498.5, σ = 8, α = 0.01, p-value)</td><td>μ ≥ 500 / μ &lt; 500</td><td>−1.50</td><td>p = 0.0668</td><td>do not reject</td></tr><tr><td>Q6</td><td>Critical value, lower tail, α = 0.05</td><td>—</td><td>—</td><td>—</td><td>−1.645</td></tr><tr><td>Q7</td><td>Deliveries under 4 days? (n = 36, x̄ = 3.7, σ = 0.9, α = 0.05, critical value)</td><td>μ ≥ 4 / μ &lt; 4</td><td>−2.00</td><td>−2.00 ≤ −1.645</td><td>reject</td></tr><tr><td>Q8</td><td>Upper tail, cut-off 1.645, statistic 1.40</td><td>—</td><td>1.40</td><td>1.40 &lt; 1.645</td><td>do not reject H₀</td></tr><tr><td>Q9</td><td>Batteries over 20 hours? (n = 49, x̄ = 20.6, σ = 2.1, α = 0.05, critical value)</td><td>μ ≤ 20 / μ &gt; 20</td><td>2.00</td><td>2.00 ≥ 1.645</td><td>reject</td></tr><tr><td>Q10</td><td>Meaning of rejecting H₀: μ ≤ 50 at α = 0.05</td><td>—</td><td>—</td><td>—</td><td>sufficient evidence that μ &gt; 50; nothing is proven</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Every z and p-value was recomputed with the normal CDF; all ten answers stand. The only difference is the fourth decimal of Q3, where the sheet and the L#30 slide read 0.0068 from a table for z rounded to 2.47; the unrounded value is 0.0067.</p>"
+    },
+    {
+     "t": "Why a test can err: the α–β trade-off",
+     "src": "L#29",
+     "h": "<p style=\"font-size:14.5px\">L#29 picks up where L#27 stopped. Every test ends with a decision between two competing statements, H₀ and Hₐ, like a match that must have exactly one winner. The ideal is to keep H₀ when it is true and reject it when Hₐ is true, but either decision can be wrong.</p><div class=\"def\"><b>Why errors happen at all:</b> the decision rests on a <b>sample</b>, not the whole population. Sampling error, or a biased sample, can point the wrong way. Inspect the entire population and there is no chance of error, but that is often impossible: you cannot test every drop of a patient's blood.</div><h4>The fuel-injection example</h4><p style=\"font-size:14.5px\">A new fuel-injection system is claimed to raise the mean pressure it can handle above 24 MPa. <strong>H₀: μ ≤ 24</strong> (no improvement); <strong>Hₐ: μ &gt; 24</strong> (it improves). You reject H₀ only if the sample mean is significantly above 24.</p><div class=\"scroller\"><table><thead><tr><th>Error</th><th>In this example</th><th>What it costs</th></tr></thead><tbody><tr><td>Type I (reject a true H₀)</td><td>claim the new system improves when it does not</td><td>an unimproved system is sent to customers; reputation at stake</td></tr><tr><td>Type II (keep a false H₀)</td><td>conclude no improvement when the system really did improve</td><td>a better product is thrown away</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Which is worse here is not obvious; the lecturer leaves it for the live session.</p><h4>α is the error you choose</h4><p style=\"font-size:14.5px\">The level of significance α is the probability of a Type I error when H₀ is true at its equality (here, when μ = 24). The person running the study picks it <em>before</em> sampling, usually 0.05 and, when the stakes are high, 0.01. Because the researcher sets it, the lecturer calls the Type I error the <strong>controllable</strong> one. The probability of a Type II error (β) is much harder to work out; methods that control both come in more advanced statistics courses.</p><h4>Why not set α at 0.00001?</h4><p style=\"font-size:14.5px\">If α is in your hands, why not make it tiny? Because the two errors pull against each other. The lecture's classroom picture: a professor who shuts the door at exactly 9:00 keeps out every habitual latecomer, but also a sincere student delayed for a genuine reason. Let everyone in until 9:10 and the genuine students get in, along with the habitual latecomers. You cannot be strict and lenient at once.</p><div class=\"def\"><b>The trade-off:</b> for a fixed sample size, making the test stricter (smaller α) means fewer Type I errors but more Type II errors, and the reverse. A strict quality check that ships a product only at α = 0.01 also rejects some good lots.</div><p style=\"font-size:14.5px\"><strong>The way out is more data.</strong> When a result is inconclusive, the usual step is a new or larger sample. The sampling error shrinks as n grows (the standard error is σ/√n, L#19), so a larger sample can cut both risks at once.</p><!--viz:sfm-l29-alpha-beta--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two overlapping bell curves on one axis: the left one is the sampling distribution if H0 is true, the right one if Ha is true. A dashed cut-off divides do not reject H0 on the left from reject H0 on the right. The tail of the H0 curve beyond the cut-off is alpha, the Type I risk; the part of the Ha curve before the cut-off is beta, the Type II risk.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One cut-off, two risks</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 262\" role=\"img\" aria-label=\"Two overlapping bell curves on one axis: the left one is the sampling distribution if H0 is true, the right one if Ha is true. A dashed cut-off divides do not reject H0 on the left from reject H0 on the right. The tail of the H0 curve beyond the cut-off is alpha, the Type I risk; the part of the Ha curve before the cut-off is beta, the Type II risk.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M222.4,160 L222.4,134.1 L224.4,136 L226.4,137.8 L228.4,139.5 L230.4,141.1 L232.4,142.7 L234.4,144.1 L236.4,145.4 L238.4,146.7 L240.4,147.9 L242.4,149 L244.4,150 L246.4,150.9 L248.4,151.8 L250.4,152.6 L252.4,153.3 L254.4,154 L256.4,154.6 L258.4,155.2 L260.4,155.7 L262.4,156.2 L264.4,156.6 L266.4,157 L268.4,157.3 L270.4,157.6 L272.4,157.9 L274.4,158.2 L276.4,158.4 L278.4,158.6 L280.4,158.8 L282.4,158.9 L284.4,159.1 L286.4,159.2 L288.4,159.3 L290.4,159.4 L292.4,159.5 L294.4,159.5 L296.4,159.6 L298.4,159.7 L300.4,159.7 L302.4,159.8 L304.4,159.8 L306.4,159.8 L308.4,159.8 L310.4,159.9 L312.4,159.9 L314.4,159.9 L316.4,159.9 L318.4,159.9 L320.4,159.9 L322.4,160 L324.4,160 L326,160 L326,160 Z\" style=\"fill:var(--clay-soft);stroke:none\"/><path d=\"M110,160 L110,160 L112,160 L114,160 L116,159.9 L118,159.9 L120,159.9 L122,159.9 L124,159.9 L126,159.9 L128,159.8 L130,159.8 L132,159.8 L134,159.7 L136,159.7 L138,159.7 L140,159.6 L142,159.5 L144,159.5 L146,159.4 L148,159.3 L150,159.2 L152,159 L154,158.9 L156,158.7 L158,158.5 L160,158.3 L162,158.1 L164,157.9 L166,157.6 L168,157.3 L170,156.9 L172,156.5 L174,156.1 L176,155.6 L178,155.1 L180,154.5 L182,153.9 L184,153.2 L186,152.4 L188,151.6 L190,150.7 L192,149.8 L194,148.8 L196,147.7 L198,146.5 L200,145.2 L202,143.8 L204,142.4 L206,140.9 L208,139.2 L210,137.5 L212,135.7 L214,133.8 L216,131.8 L218,129.7 L220,127.5 L222,125.3 L222.4,124.8 L222.4,160 Z\" style=\"fill:var(--blue);opacity:.35;stroke:none\"/><path d=\"M14,160 L426,160\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M18,158.9 L21,158.6 L24,158.3 L27,158 L30,157.6 L33,157.1 L36,156.5 L39,155.9 L42,155.1 L45,154.2 L48,153.2 L51,152 L54,150.7 L57,149.3 L60,147.7 L63,145.8 L66,143.8 L69,141.6 L72,139.2 L75,136.6 L78,133.8 L81,130.8 L84,127.5 L87,124.1 L90,120.5 L93,116.8 L96,112.9 L99,108.9 L102,104.8 L105,100.7 L108,96.6 L111,92.5 L114,88.4 L117,84.5 L120,80.7 L123,77.2 L126,73.8 L129,70.8 L132,68 L135,65.6 L138,63.7 L141,62.1 L144,60.9 L147,60.2 L150,60 L153,60.2 L156,60.9 L159,62.1 L162,63.7 L165,65.6 L168,68 L171,70.8 L174,73.8 L177,77.2 L180,80.7 L183,84.5 L186,88.4 L189,92.5 L192,96.6 L195,100.7 L198,104.8 L201,108.9 L204,112.9 L207,116.8 L210,120.5 L213,124.1 L216,127.5 L219,130.8 L222,133.8 L225,136.6 L228,139.2 L231,141.6 L234,143.8 L237,145.8 L240,147.7 L243,149.3 L246,150.7 L249,152 L252,153.2 L255,154.2 L258,155.1 L261,155.9 L264,156.5 L267,157.1 L270,157.6 L273,158 L276,158.3 L279,158.6 L282,158.9\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><path d=\"M154,158.9 L157,158.6 L160,158.3 L163,158 L166,157.6 L169,157.1 L172,156.5 L175,155.9 L178,155.1 L181,154.2 L184,153.2 L187,152 L190,150.7 L193,149.3 L196,147.7 L199,145.8 L202,143.8 L205,141.6 L208,139.2 L211,136.6 L214,133.8 L217,130.8 L220,127.5 L223,124.1 L226,120.5 L229,116.8 L232,112.9 L235,108.9 L238,104.8 L241,100.7 L244,96.6 L247,92.5 L250,88.4 L253,84.5 L256,80.7 L259,77.2 L262,73.8 L265,70.8 L268,68 L271,65.6 L274,63.7 L277,62.1 L280,60.9 L283,60.2 L286,60 L289,60.2 L292,60.9 L295,62.1 L298,63.7 L301,65.6 L304,68 L307,70.8 L310,73.8 L313,77.2 L316,80.7 L319,84.5 L322,88.4 L325,92.5 L328,96.6 L331,100.7 L334,104.8 L337,108.9 L340,112.9 L343,116.8 L346,120.5 L349,124.1 L352,127.5 L355,130.8 L358,133.8 L361,136.6 L364,139.2 L367,141.6 L370,143.8 L373,145.8 L376,147.7 L379,149.3 L382,150.7 L385,152 L388,153.2 L391,154.2 L394,155.1 L397,155.9 L400,156.5 L403,157.1 L406,157.6 L409,158 L412,158.3 L415,158.6 L418,158.9\" style=\"fill:none;stroke:var(--ink-2);stroke-width:2;stroke-dasharray:5 4\"/><path d=\"M222.4,34 L222.4,165\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none;stroke-dasharray:3 3\"/><text x=\"150\" y=\"48\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">if H₀ is true</text><text x=\"286\" y=\"48\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-weight:700\">if Hₐ is true</text><text x=\"222.4\" y=\"28\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">cut-off</text><text x=\"95\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">do not reject H₀</text><text x=\"350\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">reject H₀</text><rect x=\"40\" y=\"194\" width=\"14\" height=\"12\" style=\"fill:var(--clay-soft);stroke:var(--clay)\"/><text x=\"62\" y=\"205\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:13px\">α: H₀ true but rejected (Type I)</text><rect x=\"40\" y=\"216\" width=\"14\" height=\"12\" style=\"fill:var(--blue);opacity:.35;stroke:none\"/><text x=\"62\" y=\"227\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:13px\">β: H₀ false but kept (Type II)</text><text x=\"62\" y=\"249\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px;font-style:italic\">Slide the cut-off right: α shrinks, β grows</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">With the sample size fixed, moving the cut-off only trades one error for the other; a larger sample narrows both curves and shrinks both.</figcaption></figure><!--/viz:sfm-l29-alpha-beta-->"
+    },
+    {
+     "t": "Choosing α: who bears the cost?",
+     "src": "L#29",
+     "h": "<p style=\"font-size:14.5px\">Since α is chosen, choose it from the consequences. The lecturer's two questions: <strong>who bears the cost</strong> of each error, and <strong>how large is that cost</strong>?</p><div class=\"def\"><b>Rule of thumb:</b> if a Type I error is costly, use a <b>small α</b> (0.01) and be strict. If a Type I error is cheap but a Type II error is costly, a <b>larger α</b> (0.05 or more) is acceptable, which keeps Type II errors down.</div><h4>New drug approval</h4><p style=\"font-size:14.5px\">A new drug is trialled against a placebo, with H₀: the drug is not safe and effective. A <strong>Type I error</strong> approves a drug that is not safe or effective; a <strong>Type II error</strong> fails to approve one that is. Approving a harmful drug damages public health, so the regulator wants the Type I risk very low and uses a very small α, accepting that some good drugs will be turned away.</p><h4>Sales incentive</h4><p style=\"font-size:14.5px\">A carpet company's salespeople average $8,000 a week; a new incentive plan is tried in the hope of raising that. <strong>H₀: μ ≤ 8,000</strong>; <strong>Hₐ: μ &gt; 8,000</strong>. (The lecturer briefly says the ‘equal to’ goes in the alternative, then corrects it: it sits in H₀.) A Type I error keeps paying for a plan that does not work; a Type II error drops a plan that does work, and sales fall back. Incentives are only a slice of sales, so the Type II error costs more, and the lecturer would tolerate a larger α to keep it low.</p><h4>Pregnancy and fire alarms</h4><p style=\"font-size:14.5px\">In L#27's pregnancy picture (H₀: not pregnant), the false negative is worse: a pregnant woman told she is not may miss care, while the false positive mostly costs money. With a fire alarm (H₀: no fire), a false alarm is a Type I error and a silent alarm during a fire is a Type II error; the Type II error is more dangerous, so you would accept more false alarms to keep it low.</p><!--viz:sfm-l29-costlier-error--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of five cases from L#29. New drug: the Type I error of approving an unsafe drug is costlier, so a very small alpha. Sales incentive, fire alarm and pregnancy test: the Type II error is costlier, so a larger alpha or more false alarms are tolerated. Electricity bills: neither error is serious.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Which error costs more, and what that does to α</div><div class=\"scroller\"><table><thead><tr><th>Case</th><th>H₀</th><th>Costlier error</th><th>So</th></tr></thead><tbody><tr><td>New drug</td><td>not safe and effective</td><td style=\"background:var(--bad-soft)\">Type I: an unsafe drug is approved</td><td>very small α (0.01)</td></tr><tr><td>Sales incentive</td><td>μ ≤ $8,000 a week</td><td style=\"background:var(--clay-soft)\">Type II: a working plan is dropped</td><td>tolerate a larger α</td></tr><tr><td>Fire alarm</td><td>no fire</td><td style=\"background:var(--clay-soft)\">Type II: silence during a fire</td><td>accept more false alarms</td></tr><tr><td>Pregnancy test</td><td>not pregnant</td><td style=\"background:var(--clay-soft)\">Type II: care is withheld</td><td>keep false negatives low</td></tr><tr><td>Electricity bills</td><td>μ ≤ $104 a month</td><td>neither is serious</td><td>a conventional 0.05 is fine</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">No error is always the worse one; the cost, and who carries it, decides how small α should be.</figcaption></figure><!--/viz:sfm-l29-costlier-error-->"
+    },
+    {
+     "t": "Do not reject H₀: what it means in practice",
+     "src": "L#29",
+     "h": "<p style=\"font-size:14.5px\">L#27 said never to write ‘accept H₀’. L#29 explains the reasoning and what to do next.</p><div class=\"scroller\"><table><thead><tr><th>You say</th><th>What it claims</th><th>Risk</th></tr></thead><tbody><tr><td>Reject H₀</td><td>Hₐ is supported</td><td>Type I, whose probability α you fixed</td></tr><tr><td>Accept H₀</td><td>H₀ is true</td><td>Type II, whose probability you usually do not know</td></tr><tr><td>Do not reject H₀</td><td>the evidence is not sufficient; judgement and action are withheld</td><td>none claimed</td></tr></tbody></table></div><p style=\"font-size:14.5px\">We can say how confident we are in rejecting H₀, because α is known. We cannot say how confident we are in accepting it, because β is not. So only two conclusions are drawn: H₀ is rejected, or there is not enough evidence to reject it. The lecturer notes that ‘accept H₀’ does appear in statistics writing, but in managerial work it is not recommended.</p><h4>The food inspector</h4><p style=\"font-size:14.5px\">An inspector suspects some food is stale (H₀: the quality is good). If the lab confirms it, H₀ is rejected and the conclusion is that the quality is not good. If the lab cannot confirm it, the inspector does <em>not</em> declare the food good; there is simply not enough evidence yet. The next step is to test again, take another sample or a larger one. A judge works the same way: the evidence is insufficient to convict, which is not a finding of innocence.</p><p style=\"font-size:14.5px\">The lecture's closing question: is failing to find evidence of an effect the same as finding evidence that there is no effect? It is not; a weak or unlucky sample can miss a real effect.</p>"
+    },
+    {
+     "t": "L#29 practice: naming the errors",
+     "src": "L#29",
+     "h": "<p style=\"font-size:14.5px\">The lecture ends with short cases. The recipe is the same each time: what you want to show goes in Hₐ, its opposite (with the equality) in H₀. Rejecting a true H₀ is a Type I error; failing to reject a false H₀ is a Type II error.</p><h4>Electricity bills</h4><p style=\"font-size:14.5px\">Efficient homes in Cincinnati average $104 a month for electricity. Someone believes a comparable Chicago neighbourhood pays more. The belief is what we want to show: <strong>H₀: μ ≤ 104</strong>, <strong>Hₐ: μ &gt; 104</strong>. A Type I error concludes the Chicago homes pay more when they do not, for instance because the sample happened to pick homes with more appliances or high bills. A Type II error finds no evidence that they pay more when they actually do. Nothing serious rides on either error here; it only tests a belief.</p><h4>Left for you to solve (the lecturer's homework)</h4><ol><li><strong>Orange juice label.</strong> A carton says its juice contains on average 1 gram of fat or less. To test the label, its claim goes in H₀: <strong>H₀: μ ≤ 1</strong>, <strong>Hₐ: μ &gt; 1</strong>. Type I: concluding the juice has more fat than stated when the label is true, wrongly accusing the producer. Type II: missing a label that understates the fat, so buyers are misled.</li><li><strong>New production method.</strong> It will be adopted only if a test supports the conclusion that it lowers the mean operating cost per hour (call the current mean μ₀). The hoped-for conclusion goes in Hₐ: <strong>H₀: μ ≥ μ₀</strong>, <strong>Hₐ: μ &lt; μ₀</strong>. Type I: adopting a method that does not cut costs. Type II: passing up a method that does.</li></ol><h4>Quick checks</h4><div class=\"scroller\"><table><thead><tr><th>H₀</th><th>What happened</th><th>Error</th></tr></thead><tbody><tr><td>no fire</td><td>the alarm sounds, but there is no fire</td><td>Type I (and a silent alarm in a fire is Type II, the more dangerous one)</td></tr><tr><td>the defendant is innocent</td><td>a guilty defendant is acquitted</td><td>Type II: a false H₀ is kept</td></tr><tr><td>the email is legitimate</td><td>a genuine email is sent to spam</td><td>Type I: a true H₀ is rejected</td></tr><tr><td>μ ≤ 24 (fuel system does not improve)</td><td>researchers conclude ‘no improvement’ when it truly improved</td><td>Type II: a false H₀ is kept</td></tr></tbody></table></div><div class=\"def\"><b>Correction to the recording:</b> for the last check, the lecturer says ‘you rejected this… type 1’. Concluding ‘no improvement’ means H₀ was <em>not</em> rejected, and H₀ was false, so by the lecture's own definition it is a <b>Type II</b> error. The court case was left open in the recording; the definitions give Type II.</div><div class=\"def\"><b>From the lecture (L#29):</b> the orange-juice label, the production-method case, the court trial and one quick check were left for students to solve before the live session, and which error is costlier in the fuel-injection case is to be discussed there. Nothing was said about the quiz or the end-term in this lecture.</div>"
+    },
+    {
+     "t": "The p-value approach (one-tailed)",
+     "src": "L#30",
+     "h": "<p style=\"font-size:14.5px\">L#30 turns the hypotheses of L#27 and L#29 into a decision. It covers one-tailed tests of a mean with σ known, first by the p-value and then by the critical value.</p><div class=\"def\"><b>Test statistic (σ known):</b> z = (x̄ − μ₀)/(σ/√n), where x̄ is the sample mean, μ₀ the value in H₀, σ the population standard deviation and n the sample size.<br><b>p-value:</b> a probability, computed from the test statistic, that measures the support (or lack of it) the sample gives to <b>H₀</b>. Lower-tail test: the area to the left of z. Upper-tail test: the area to the right of z.<br><b>Rule:</b> reject H₀ if <b>p-value ≤ α</b>; the test statistic is then in the rejection region.</div><p style=\"font-size:14.5px\">The p-value is about H₀, not Hₐ: it asks how surprising the sample would be if H₀ were true. This was one of the lecture's concept checks.</p><h4>How strong is the evidence?</h4><div class=\"scroller\"><table><thead><tr><th>p-value</th><th>Evidence that Hₐ is true</th></tr></thead><tbody><tr><td>below 0.01</td><td>overwhelming</td></tr><tr><td>0.01 to 0.05</td><td>strong</td></tr><tr><td>0.05 to 0.10</td><td>weak</td></tr><tr><td>above 0.10</td><td>insufficient: do not reject H₀; more data may be needed</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>A caution on the lecture's wording.</strong> The recording reads p &lt; 0.01 as ‘only a 1% chance of going wrong’ and p above 0.10 as ‘a Type I error chance above 10%’. That is a loose gloss. The p-value is worked out <em>assuming H₀ is true</em>; it is not the probability that your conclusion is wrong, nor the probability that H₀ is true (see the L#27 traps). The decision rule above is what matters.</p>"
+    },
+    {
+     "t": "The critical-value approach (one-tailed)",
+     "src": "L#30",
+     "h": "<p style=\"font-size:14.5px\">The second route treats z as a standard normal variable and finds the z value that cuts off an area α in the tail of the test.</p><div class=\"def\"><b>Critical value:</b> the value of the test statistic that marks the boundary of the rejection region.<br><b>Lower-tail test:</b> reject H₀ if z ≤ −z<sub>α</sub>. <b>Upper-tail test:</b> reject H₀ if z ≥ z<sub>α</sub>.</div><div class=\"scroller\"><table><thead><tr><th>α</th><th>Lower-tail cut-off</th><th>Upper-tail cut-off</th></tr></thead><tbody><tr><td>0.10</td><td>−1.28</td><td>+1.28</td></tr><tr><td>0.05</td><td>−1.645</td><td>+1.645</td></tr><tr><td>0.01</td><td>−2.326</td><td>+2.326</td></tr></tbody></table></div><p style=\"font-size:14.5px\">L#30 uses −1.28 (α = 0.10, lower tail) and 1.645 (α = 0.05, upper tail); 2.326 for α = 0.01 is read from the same table. The lecturer's advice: <strong>draw the curve</strong> and shade the tail before deciding. Then it is obvious whether ‘beyond the cut-off’ means less than −z<sub>α</sub> or greater than z<sub>α</sub>, and a z on the wrong side can never reject.</p><p style=\"font-size:14.5px\">The two approaches always reach the same decision: z lies beyond the cut-off exactly when its tail area (the p-value) is no larger than α.</p><h4>Rejected at 5%: what about 1%?</h4><p style=\"font-size:14.5px\">One of the lecture's concept checks. In an upper-tail test the α = 0.01 cut-off (2.326) lies further out than the α = 0.05 cut-off (1.645). A z that rejects at 5% lies somewhere beyond 1.645: if it is also beyond 2.326 it rejects at 1%, and if it falls between the two it does not. So H₀ <strong>may or may not</strong> be rejected at 1%. The reverse always holds: a rejection at 1% is also a rejection at 5%.</p><!--viz:sfm-l30-lower-tail-both-ways--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Standard normal curve for a lower-tail test at alpha 0.10. The area left of the critical value minus 1.28 is shaded as alpha. A test statistic z of minus 1.75 sits further left, and the smaller area to its left, 0.040, is shaded as the p-value. The statistic is beyond the cut-off and the p-value is below alpha, so both approaches reject H0.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">A lower-tail test, decided two ways</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 266\" role=\"img\" aria-label=\"Standard normal curve for a lower-tail test at alpha 0.10. The area left of the critical value minus 1.28 is shaded as alpha. A test statistic z of minus 1.75 sits further left, and the smaller area to its left, 0.040, is shaded as the p-value. The statistic is beyond the cut-off and the p-value is below alpha, so both approaches reject H0.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M29.9,170 L29.9,169.8 L31.9,169.8 L33.9,169.7 L35.9,169.7 L37.9,169.7 L39.9,169.6 L41.9,169.6 L43.9,169.5 L45.9,169.4 L47.9,169.4 L49.9,169.3 L51.9,169.2 L53.9,169.1 L55.9,169 L57.9,168.8 L59.9,168.7 L61.9,168.6 L63.9,168.4 L65.9,168.2 L67.9,168 L69.9,167.7 L71.9,167.5 L73.9,167.2 L75.9,166.9 L77.9,166.6 L79.9,166.2 L81.9,165.8 L83.9,165.4 L85.9,164.9 L87.9,164.4 L89.9,163.8 L91.9,163.2 L93.9,162.6 L95.9,161.9 L97.9,161.2 L99.9,160.4 L101.9,159.5 L103.9,158.6 L105.9,157.6 L107.9,156.5 L109.9,155.4 L111.9,154.2 L113.9,153 L115.9,151.7 L117.9,150.3 L119.9,148.8 L121.9,147.2 L123.9,145.6 L125.9,143.8 L127.9,142 L129.9,140.1 L131.9,138.2 L133.9,136.1 L135.9,134 L137.9,131.8 L139.9,129.5 L141.9,127.1 L143.9,124.7 L145.9,122.2 L147.9,119.6 L149.9,117 L151.9,114.3 L152.3,113.7 L152.3,170 Z\" style=\"fill:var(--clay-soft);stroke:none\"/><path d=\"M29.9,170 L29.9,169.8 L31.9,169.8 L33.9,169.7 L35.9,169.7 L37.9,169.7 L39.9,169.6 L41.9,169.6 L43.9,169.5 L45.9,169.4 L47.9,169.4 L49.9,169.3 L51.9,169.2 L53.9,169.1 L55.9,169 L57.9,168.8 L59.9,168.7 L61.9,168.6 L63.9,168.4 L65.9,168.2 L67.9,168 L69.9,167.7 L71.9,167.5 L73.9,167.2 L75.9,166.9 L77.9,166.6 L79.9,166.2 L81.9,165.8 L83.9,165.4 L85.9,164.9 L87.9,164.4 L89.9,163.8 L91.9,163.2 L93.9,162.6 L95.9,161.9 L97.9,161.2 L99.9,160.4 L101.9,159.5 L103.9,158.6 L105.9,157.6 L107.9,156.5 L109.9,155.4 L111.9,154.2 L113.9,153 L115.9,151.7 L117.9,150.3 L119.9,148.8 L121.9,147.2 L123.9,145.6 L125.9,143.8 L127.6,142.3 L127.6,170 Z\" style=\"fill:var(--blue);opacity:.45;stroke:none\"/><path d=\"M14,170 L426,170\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M29.9,169.8 L32.9,169.8 L35.9,169.7 L38.9,169.6 L41.9,169.6 L44.9,169.5 L47.9,169.4 L50.9,169.2 L53.9,169.1 L56.9,168.9 L59.9,168.7 L62.9,168.5 L65.9,168.2 L68.9,167.9 L71.9,167.5 L74.9,167.1 L77.9,166.6 L80.9,166 L83.9,165.4 L86.9,164.7 L89.9,163.8 L92.9,162.9 L95.9,161.9 L98.9,160.8 L101.9,159.5 L104.9,158.1 L107.9,156.5 L110.9,154.8 L113.9,153 L116.9,151 L119.9,148.8 L122.9,146.4 L125.9,143.8 L128.9,141.1 L131.9,138.2 L134.9,135.1 L137.9,131.8 L140.9,128.3 L143.9,124.7 L146.9,120.9 L149.9,117 L152.9,112.9 L155.9,108.7 L158.9,104.4 L161.9,100.1 L164.9,95.7 L167.9,91.3 L170.9,86.9 L173.9,82.5 L176.9,78.2 L179.9,74 L182.9,70 L185.9,66.1 L188.9,62.4 L191.9,58.9 L194.9,55.7 L197.9,52.7 L200.9,50.1 L203.9,47.8 L206.9,45.9 L209.9,44.3 L212.9,43.1 L215.9,42.4 L218.9,42 L221.9,42.1 L224.9,42.6 L227.9,43.4 L230.9,44.7 L233.9,46.4 L236.9,48.4 L239.9,50.8 L242.9,53.5 L245.9,56.5 L248.9,59.8 L251.9,63.4 L254.9,67.1 L257.9,71.1 L260.9,75.2 L263.9,79.4 L266.9,83.8 L269.9,88.1 L272.9,92.5 L275.9,96.9 L278.9,101.3 L281.9,105.6 L284.9,109.9 L287.9,114 L290.9,118.1 L293.9,122 L296.9,125.7 L299.9,129.3 L302.9,132.7 L305.9,135.9 L308.9,139 L311.9,141.9 L314.9,144.6 L317.9,147.1 L320.9,149.4 L323.9,151.5 L326.9,153.5 L329.9,155.3 L332.9,157 L335.9,158.5 L338.9,159.9 L341.9,161.1 L344.9,162.2 L347.9,163.2 L350.9,164.1 L353.9,164.9 L356.9,165.6 L359.9,166.2 L362.9,166.7 L365.9,167.2 L368.9,167.6 L371.9,168 L374.9,168.3 L377.9,168.5 L380.9,168.8 L383.9,169 L386.9,169.1 L389.9,169.3 L392.9,169.4 L395.9,169.5 L398.9,169.6 L401.9,169.7 L404.9,169.7 L407.9,169.8\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><path d=\"M152.3,62 L152.3,175\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none;stroke-dasharray:4 3\"/><path d=\"M127.6,92 L127.6,175\" style=\"stroke:var(--blue);stroke-width:2;fill:none\"/><text x=\"146.3\" y=\"58\" text-anchor=\"end\" style=\"fill:var(--clay);font-size:13px;font-weight:700\">cut-off −1.28</text><text x=\"121.6\" y=\"90\" text-anchor=\"end\" style=\"fill:var(--blue);font-size:13px;font-weight:700\">z = −1.75</text><text x=\"220\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><rect x=\"40\" y=\"200\" width=\"14\" height=\"12\" style=\"fill:var(--clay-soft);stroke:var(--clay)\"/><text x=\"62\" y=\"211\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:13px\">α = 0.10: the area left of the cut-off</text><rect x=\"40\" y=\"222\" width=\"14\" height=\"12\" style=\"fill:var(--blue);opacity:.45;stroke:none\"/><text x=\"62\" y=\"233\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:13px\">p-value = 0.040: the area left of z</text><text x=\"62\" y=\"255\" text-anchor=\"start\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">z ≤ −1.28 and p ≤ 0.10: reject H₀ both ways</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">z beyond the cut-off and p no larger than α are the same fact seen two ways, so the approaches cannot disagree.</figcaption></figure><!--/viz:sfm-l30-lower-tail-both-ways--><!--viz:sfm-l30-five-vs-one--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three bands along the z axis for an upper-tail test. Below 1.645, for example z = 1.40: not rejected at 5% or 1%. From 1.645 up to 2.326, for example z = 2.00: rejected at 5% but not at 1%. At 2.326 or more, for example the Metro EMS z of 2.47: rejected at both levels.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Rejected at 5%, and at 1%? (upper tail)</div><div style=\"display:flex;flex-wrap:wrap;gap:6px;font-size:14px\"><div style=\"flex:1 1 150px;padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b style=\"font-family:var(--mono)\">z &lt; 1.645</b><br><span style=\"color:var(--ink-2);font-size:13px\">not rejected at 5% or at 1%</span><br><span style=\"color:var(--ink-3);font-size:13px;font-family:var(--mono)\">e.g. z = 1.40</span></div><div style=\"flex:1 1 150px;padding:10px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b style=\"font-family:var(--mono)\">1.645 ≤ z &lt; 2.326</b><br><span style=\"color:var(--ink-2);font-size:13px\">rejected at 5%, <b>not</b> at 1%</span><br><span style=\"color:var(--ink-3);font-size:13px;font-family:var(--mono)\">e.g. z = 2.00</span></div><div style=\"flex:1 1 150px;padding:10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b style=\"font-family:var(--mono)\">z ≥ 2.326</b><br><span style=\"color:var(--ink-2);font-size:13px\">rejected at 5% and at 1%</span><br><span style=\"color:var(--ink-3);font-size:13px;font-family:var(--mono)\">e.g. Metro EMS, z = 2.47</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">A rejection at 5% leaves z in either of the two right-hand bands, which is why the answer for 1% is ‘may or may not’.</figcaption></figure><!--/viz:sfm-l30-five-vs-one-->"
+    },
+    {
+     "t": "Metro EMS: the steps of a test",
+     "src": "L#30",
+     "h": "<div class=\"def\"><b>Steps of a hypothesis test (L#30):</b><ol><li>Develop H₀ and Hₐ.</li><li>Specify the level of significance α.</li><li>Collect the sample and compute the test statistic.</li><li><em>p-value approach:</em> use the statistic to find the p-value; reject H₀ if p ≤ α.<br><em>Critical-value approach:</em> use α to find the critical value and rejection rule; reject H₀ if the statistic falls in the rejection region.</li></ol></div><h4>Worked: is Metro EMS meeting its 12-minute goal?</h4><p style=\"font-size:14.5px\">The emergency service from L#27 aims for a mean response time of 12 minutes or less. A random sample of 40 emergencies has x̄ = 13.25 minutes; σ = 3.2 minutes is known; the director tests at α = 0.05.</p><ol><li><strong>Hypotheses:</strong> H₀: μ ≤ 12 (the goal is met); Hₐ: μ &gt; 12. An upper-tail test.</li><li><strong>α = 0.05.</strong></li><li><strong>Test statistic:</strong> σ is known and n = 40 is large enough for x̄ to be treated as normal (central limit theorem), so z = (13.25 − 12)/(3.2/√40) = 1.25/0.506 = <strong>2.47</strong>.</li><li><strong>p-value:</strong> the area to the left of 2.47 is 0.9932, so p = 1 − 0.9932 = <strong>0.0068</strong> (0.0067 unrounded). 0.0068 ≤ 0.05.<br><strong>Critical value:</strong> z<sub>0.05</sub> = 1.645, and 2.47 ≥ 1.645.</li><li><strong>Decision:</strong> reject H₀. There is sufficient statistical evidence that Metro EMS is <em>not</em> meeting its 12-minute response goal.</li></ol><p style=\"font-size:14.5px\">Both routes agree, and the p-value adds that the evidence is overwhelming (below 0.01): this test would also reject at α = 0.01, since 2.47 ≥ 2.326. The same numbers are Q3 of the lecturer's practice sheet.</p><div class=\"def\"><b>From the lecture (L#30):</b> the lecturer said practice problems would be shared for students to work through before the live session; the LMS page links the ‘Session 24: Practice Problems’ sheet (solved under Practice questions from the lecturer: Chapter 9). The recording also had three pop-up quiz items, whose content is not in the transcript. Nothing was said about the quiz or the end-term.</div><!--viz:sfm-l30-test-steps--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: step 1 write H0 and Ha, step 2 choose alpha, step 3 take the sample and compute z. Then either step 4a, find the tail area beyond z as the p-value and reject H0 if p is at most alpha, or step 4b, turn alpha into a cut-off z-alpha and reject H0 if z lies beyond it.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The steps of a test, two ways to finish</div><div style=\"font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:10px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>1</b> H₀ and Hₐ</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>2</b> choose α</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>3</b> sample → z = (x̄ − μ₀)/(σ/√n)</div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-bottom:8px\"><span style=\"color:var(--ink-3)\">either</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>4a</b> tail area beyond z = p-value</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">reject H₀ if <b>p ≤ α</b></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><span style=\"color:var(--ink-3)\">or</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>4b</b> α → cut-off z<sub>α</sub></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">reject H₀ if z is <b>beyond the cut-off</b></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Steps 1–3 are shared; only the last comparison differs, and it always gives the same verdict.</figcaption></figure><!--/viz:sfm-l30-test-steps-->"
+    },
+    {
+     "t": "Textbook: Hypothesis Tests",
+     "src": "Anderson 14e ch9",
+     "h": "<p>A hypothesis test starts from a tentative claim about a parameter, H0, and asks whether the sample gives enough evidence to reject it in favour of the alternative Ha. The equality always sits in H0; Ha is usually what the researcher hopes to show, or the challenge to a claim. Two errors are possible — rejecting a true H0 (Type I, probability α, chosen in advance) and failing to reject a false H0 (Type II, probability β) — so the cautious conclusion is 'do not reject H0' rather than 'accept H0'. Tests of a mean use z when σ is known and t with n − 1 df when it is not; tests of a proportion use z with the hypothesised p0 in the standard error. Decisions can be made by comparing the p-value with α or the test statistic with a critical value, which always agree. Managers also learn to compute β and power, to size a sample that controls both errors, and to separate statistical from practical significance when samples are huge.</p><!--viz:sfm-ch9-two-tailed--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Standard normal curve for a two-tailed test at alpha 0.05. Both tails beyond minus 1.96 and plus 1.96 are shaded as rejection regions, each holding 0.025. The middle 0.95 around mu0 is the do-not-reject region.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Two-tailed test: α split between the tails</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 218\" role=\"img\" aria-label=\"Standard normal curve for a two-tailed test at alpha 0.05. Both tails beyond minus 1.96 and plus 1.96 are shaded as rejection regions, each holding 0.025. The middle 0.95 around mu0 is the do-not-reject region.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M29.9,160 L29.9,159.8 L31.9,159.8 L33.9,159.8 L35.9,159.7 L37.9,159.7 L39.9,159.6 L41.9,159.6 L43.9,159.5 L45.9,159.5 L47.9,159.4 L49.9,159.3 L51.9,159.2 L53.9,159.1 L55.9,159 L57.9,158.9 L59.9,158.8 L61.9,158.6 L63.9,158.5 L65.9,158.3 L67.9,158.1 L69.9,157.9 L71.9,157.6 L73.9,157.4 L75.9,157.1 L77.9,156.8 L79.9,156.4 L81.9,156.1 L83.9,155.7 L85.9,155.2 L87.9,154.7 L89.9,154.2 L91.9,153.7 L93.9,153.1 L95.9,152.4 L97.9,151.7 L99.9,151 L101.9,150.2 L103.9,149.3 L105.9,148.4 L107.9,147.4 L109.9,146.3 L111.9,145.2 L113.9,144.1 L115.9,142.8 L116.5,142.4 L116.5,160 Z\" style=\"fill:var(--blue);opacity:.45;stroke:none\"/><path d=\"M323.5,160 L323.5,142.4 L325.5,143.7 L327.5,144.9 L329.5,146 L331.5,147.1 L333.5,148.1 L335.5,149 L337.5,149.9 L339.5,150.7 L341.5,151.5 L343.5,152.2 L345.5,152.9 L347.5,153.5 L349.5,154.1 L351.5,154.6 L353.5,155.1 L355.5,155.5 L357.5,156 L359.5,156.3 L361.5,156.7 L363.5,157 L365.5,157.3 L367.5,157.6 L369.5,157.8 L371.5,158 L373.5,158.2 L375.5,158.4 L377.5,158.6 L379.5,158.7 L381.5,158.9 L383.5,159 L385.5,159.1 L387.5,159.2 L389.5,159.3 L391.5,159.4 L393.5,159.5 L395.5,159.5 L397.5,159.6 L399.5,159.6 L401.5,159.7 L403.5,159.7 L405.5,159.7 L407.5,159.8 L409.5,159.8 L410.1,159.8 L410.1,160 Z\" style=\"fill:var(--blue);opacity:.45;stroke:none\"/><path d=\"M14,160 L426,160\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M29.9,159.8 L32.9,159.8 L35.9,159.7 L38.9,159.7 L41.9,159.6 L44.9,159.5 L47.9,159.4 L50.9,159.3 L53.9,159.1 L56.9,159 L59.9,158.8 L62.9,158.6 L65.9,158.3 L68.9,158 L71.9,157.6 L74.9,157.2 L77.9,156.8 L80.9,156.3 L83.9,155.7 L86.9,155 L89.9,154.2 L92.9,153.4 L95.9,152.4 L98.9,151.3 L101.9,150.2 L104.9,148.8 L107.9,147.4 L110.9,145.8 L113.9,144.1 L116.9,142.2 L119.9,140.1 L122.9,137.9 L125.9,135.5 L128.9,132.9 L131.9,130.2 L134.9,127.2 L137.9,124.2 L140.9,120.9 L143.9,117.5 L146.9,114 L149.9,110.3 L152.9,106.5 L155.9,102.5 L158.9,98.5 L161.9,94.5 L164.9,90.4 L167.9,86.2 L170.9,82.1 L173.9,78 L176.9,74 L179.9,70 L182.9,66.2 L185.9,62.6 L188.9,59.1 L191.9,55.8 L194.9,52.8 L197.9,50 L200.9,47.6 L203.9,45.4 L206.9,43.6 L209.9,42.2 L212.9,41.1 L215.9,40.4 L218.9,40 L221.9,40.1 L224.9,40.5 L227.9,41.3 L230.9,42.5 L233.9,44.1 L236.9,46 L239.9,48.2 L242.9,50.8 L245.9,53.6 L248.9,56.7 L251.9,60 L254.9,63.6 L257.9,67.3 L260.9,71.1 L263.9,75.1 L266.9,79.1 L269.9,83.3 L272.9,87.4 L275.9,91.5 L278.9,95.6 L281.9,99.7 L284.9,103.6 L287.9,107.5 L290.9,111.3 L293.9,115 L296.9,118.5 L299.9,121.8 L302.9,125 L305.9,128.1 L308.9,130.9 L311.9,133.6 L314.9,136.2 L317.9,138.5 L320.9,140.7 L323.9,142.7 L326.9,144.6 L329.9,146.3 L332.9,147.8 L335.9,149.2 L338.9,150.5 L341.9,151.7 L344.9,152.7 L347.9,153.6 L350.9,154.5 L353.9,155.2 L356.9,155.8 L359.9,156.4 L362.9,156.9 L365.9,157.4 L368.9,157.8 L371.9,158.1 L374.9,158.4 L377.9,158.6 L380.9,158.8 L383.9,159 L386.9,159.2 L389.9,159.3 L392.9,159.4 L395.9,159.5 L398.9,159.6 L401.9,159.7 L404.9,159.7 L407.9,159.8\" style=\"fill:none;stroke:var(--ink);stroke-width:2\"/><path d=\"M116.5,96 L116.5,165\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none;stroke-dasharray:3 3\"/><path d=\"M323.5,96 L323.5,165\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none;stroke-dasharray:3 3\"/><text x=\"116.5\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">−1.96</text><text x=\"323.5\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">+1.96</text><text x=\"220\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">μ₀ (z = 0)</text><text x=\"220\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:16px;font-weight:700\">0.95</text><text x=\"220\" y=\"146\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">do not reject H₀</text><text x=\"52\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px;font-weight:700\">0.025</text><text x=\"388\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px;font-weight:700\">0.025</text><text x=\"52\" y=\"90\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px\">reject H₀</text><text x=\"388\" y=\"90\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px\">reject H₀</text><text x=\"220\" y=\"206\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">Hₐ: μ ≠ μ₀ at α = 0.05: α is split, 0.025 in each tail</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each tail gets α/2, so the cut-off is 1.96 rather than the one-tailed 1.645, and the p-value doubles the tail area.</figcaption></figure><!--/viz:sfm-ch9-two-tailed--><!--viz:sfm-ch9-which-statistic--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of three test statistics. A mean with sigma known uses z equals x-bar minus mu0 over sigma over root n, standard normal. A mean with sigma unknown uses t with s in place of sigma and n minus 1 degrees of freedom. A proportion uses z equals p-bar minus p0 over the square root of p0 times one minus p0 over n, with the standard error built from p0.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Which test statistic?</div><div class=\"scroller\"><table><thead><tr><th>Testing</th><th>Statistic</th><th>Distribution</th><th>Watch for</th></tr></thead><tbody><tr><td>a mean, σ known</td><td style=\"font-family:var(--mono)\">z = (x̄ − μ₀)/(σ/√n)</td><td>standard normal</td><td>n ≥ 30 unless the population is normal</td></tr><tr><td>a mean, σ unknown</td><td style=\"font-family:var(--mono)\">t = (x̄ − μ₀)/(s/√n)</td><td>t, n − 1 df</td><td>tables only bracket the p-value</td></tr><tr><td>a proportion</td><td style=\"font-family:var(--mono)\">z = (p̄ − p₀)/√(p₀(1 − p₀)/n)</td><td>standard normal</td><td style=\"background:var(--clay-soft)\">the standard error uses p₀, not p̄; needs np₀ and n(1 − p₀) ≥ 5</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The hypothesised value sits in every numerator, and for a proportion in the standard error too.</figcaption></figure><!--/viz:sfm-ch9-which-statistic--><!--viz:sfm-ch9-ci-and-test--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A number line from 45 to 58 with a 95 percent confidence interval from 48.2 to 53.6 drawn as a band. The hypothesised mean 50 lies inside the band, so H0: mu = 50 is not rejected in a two-tailed test at alpha 0.05; 55 lies outside, so H0: mu = 55 is rejected.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">A confidence interval runs a two-tailed test</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 142\" role=\"img\" aria-label=\"A number line from 45 to 58 with a 95 percent confidence interval from 48.2 to 53.6 drawn as a band. The hypothesised mean 50 lies inside the band, so H0: mu = 50 is not rejected in a two-tailed test at alpha 0.05; 55 lies outside, so H0: mu = 55 is rejected.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M30,60 L410,60\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M59.2,56 L59.2,64\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"59.2\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">46</text><path d=\"M117.7,56 L117.7,64\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"117.7\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">48</text><path d=\"M176.2,56 L176.2,64\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"176.2\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">50</text><path d=\"M234.6,56 L234.6,64\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"234.6\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">52</text><path d=\"M293.1,56 L293.1,64\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"293.1\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">54</text><path d=\"M351.5,56 L351.5,64\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"351.5\" y=\"82\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">56</text><rect x=\"123.5\" y=\"48\" width=\"157.8\" height=\"24\" rx=\"3\" style=\"fill:var(--good-soft);stroke:var(--good);stroke-width:1.5\"/><text x=\"202.5\" y=\"38\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">95% interval: 48.2 to 53.6</text><circle cx=\"176.2\" cy=\"60\" r=\"6\" style=\"fill:var(--good);stroke:none\"/><circle cx=\"322.3\" cy=\"60\" r=\"6\" style=\"fill:var(--bad);stroke:none\"/><text x=\"176.2\" y=\"110\" text-anchor=\"middle\" style=\"fill:var(--good);font-size:13px;font-weight:700\">H₀: μ = 50 inside</text><text x=\"176.2\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">do not reject</text><text x=\"326.3\" y=\"110\" text-anchor=\"middle\" style=\"fill:var(--bad);font-size:13px;font-weight:700\">H₀: μ = 55 outside</text><text x=\"326.3\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">reject at α = 0.05</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">At α = 0.05, a two-tailed test rejects H₀: μ = μ₀ exactly when μ₀ falls outside the 95% interval.</figcaption></figure><!--/viz:sfm-ch9-ci-and-test--><p><strong>Null and alternative hypotheses</strong> — H0 is a tentative assumption about a parameter; Ha is its opposite. The equality part (=, ≤ or ≥) always goes in H0. When testing a research claim, make the claim Ha so that rejecting H0 supports it; when challenging a stated claim (a label, a specification), make the claim H0. The same situation can lead to different hypotheses depending on who is asking.<br><em>e.g.</em> New fuel system: H0: μ ≤ 10 km/l, Ha: μ &gt; 10. Regulator checking a 2000 ml label: H0: μ ≥ 2000, Ha: μ &lt; 2000.</p><p><strong>Three forms of a test</strong> — Lower-tail (H0: μ ≥ μ0, Ha: μ &lt; μ0), upper-tail (H0: μ ≤ μ0, Ha: μ &gt; μ0) and two-tailed (H0: μ = μ0, Ha: μ ≠ μ0). A manufacturer worried about both under- and overfilling uses the two-tailed form; the direction of Ha decides which tail holds the rejection region.</p><p><strong>Type I and Type II errors</strong> — Type I: rejecting H0 when it is true. Type II: accepting (not rejecting) H0 when it is false. The level of significance α is the probability of a Type I error when H0 is true as an equality; it is chosen by the decision maker — small when a false alarm is costly. Most tests (significance tests) control α but not β.<br><em>e.g.</em> Common α values: 0.05 and 0.01.</p><p><strong>'Do not reject H0' versus 'accept H0'</strong> — Because β is usually not controlled, failing to reject H0 does not prove it true; the evidence is simply insufficient. The book therefore says 'do not reject H0'. Only when β has also been controlled (sections 9.6–9.8) is 'accept H0' an appropriate decision.</p><p><strong>Test statistic for a mean, σ known</strong> — Measures how many standard errors x̄ lies from the hypothesised mean μ0. It is exact for a normal population and approximate for n ≥ 30 otherwise (n ≥ 15 for roughly symmetric populations).<br><span style=\"font-family:var(--mono)\">z = (x̄ − μ0) / (σ/√n)</span><br><em>e.g.</em> Hilltop Coffee: x̄ = 1.325 kg, μ0 = 1.36, σ = 0.08, n = 36 → z = −2.63.</p><p><strong>The p-value approach</strong> — The p-value is the probability, assuming H0 is true as an equality, of a test statistic at least as extreme as the one observed. Lower tail: area to the left of the statistic; upper tail: area to the right; two-tailed: double the tail area beyond the statistic. Reject H0 if p-value ≤ α. The p-value is also called the observed level of significance — the smallest α at which H0 would be rejected.<br><span style=\"font-family:var(--mono)\">Reject H0 if p-value ≤ α</span></p><p><strong>The critical value approach</strong> — The critical value cuts off an area α (one-tailed) or α/2 in each tail (two-tailed). Lower tail: reject if z ≤ −zα; upper tail: reject if z ≥ zα; two-tailed: reject if z ≤ −zα/2 or z ≥ zα/2. It always gives the same decision as the p-value approach, but the p-value also shows how strong the evidence is.<br><em>e.g.</em> α = 0.01 lower tail → −2.33; α = 0.05 two-tailed → ±1.96.</p><p><strong>Interpreting p-values</strong> — Guidelines the book reports: below 0.01 overwhelming evidence for Ha; 0.01–0.05 strong; 0.05–0.10 weak; above 0.10 insufficient. Smaller p-values mean more evidence against H0.</p><p><strong>Testing a mean, σ unknown</strong> — Replace σ with s; the statistic then follows a t distribution with n − 1 df. Tables only bracket the p-value (e.g. 'between 0.025 and 0.05'), which is enough for a decision; software gives the exact value. n ≥ 30 usually suffices; about 50 for highly skewed populations.<br><span style=\"font-family:var(--mono)\">t = (x̄ − μ0) / (s/√n),  df = n − 1</span><br><em>e.g.</em> Heathrow rating: x̄ = 7.25, s = 1.052, n = 60 → t = 1.84, p ≈ 0.035 → reject H0: μ ≤ 7.</p><p><strong>Testing a population proportion</strong> — Under H0 the standard error uses the hypothesised p0, not p̄. The normal approximation needs np ≥ 5 and n(1 − p) ≥ 5, which most applications satisfy.<br><span style=\"font-family:var(--mono)\">z = (p̄ − p0) / √[p0(1 − p0)/n]</span><br><em>e.g.</em> Pine Creek golf: H0: p ≤ 0.20; z = 2.50, p-value 0.0062 → reject.</p><p><strong>Confidence intervals and two-tailed tests</strong> — A two-tailed test of H0: μ = μ0 at level α gives the same decision as checking whether μ0 lies inside the 100(1 − α)% confidence interval: reject if μ0 is outside it.</p><p><strong>Probability of a Type II error and power</strong> — Find the x̄ values that lead to not rejecting H0 (the acceptance region), then compute the probability that x̄ falls there when the true mean is a specific value in Ha. That is β; power = 1 − β. β grows as the true mean moves closer to μ0, and a power curve plots power against the true mean.<br><span style=\"font-family:var(--mono)\">Power = 1 − β</span></p><p><strong>Sample size to control both errors</strong> — Choosing α, β, the mean μa at which β applies, and σ fixes the sample size for a one-tailed test (use zα/2 for two-tailed). For a fixed n, lowering α raises β — so unnecessarily tiny α values are not 'safer'.<br><span style=\"font-family:var(--mono)\">n = (zα + zβ)² σ² / (μ0 − μa)²</span><br><em>e.g.</em> α = 0.05, β = 0.10, σ = 12, μ0 − μa = 5 → n = 49.3 → 50.</p><p><strong>Big data, statistical and practical significance</strong> — With extremely large samples almost any difference from μ0 or p0 becomes statistically significant (tiny p-values). Results are still only as reliable as the sample is free of nonsampling error, and a significant difference may be too small to matter — practical significance must be judged separately.</p><div class=\"card\"><strong>Case: Pot-roast preference claim</strong> <em>(Statistics in Practice: John Morrell &amp; Company)</em><p>A US meat processor wanted to know whether more than half of consumers preferred its beef pot roast over two rival products. It set the 'more than 50%' claim as the alternative, ran a multi-city taste test, and rejected the null hypothesis — which then supported a magazine advertisement about consumer preference.</p><p><em>Lesson:</em> Put the claim you want to support in Ha; rejecting H0 gives statistical backing for it.</p><p><em>Think:</em> Write H0 and Ha for this study. Why would putting 'p &gt; 0.50' in H0 be the wrong way to support the advertising claim?</p></div><details><summary>Worked problem: Is the atta packet underfilled? (z test, lower tail)</summary><p>A 1 kg atta packet is labelled 1000 g; from past audits σ = 15 g. A consumer body weighs 36 packets: x̄ = 994 g. Test the label claim at α = 0.05.</p><ol><li>The label is the claim being challenged: H0: μ ≥ 1000, Ha: μ &lt; 1000 (lower tail).</li><li>σ known → z. Standard error = 15/√36 = 2.5 g.</li><li>z = (994 − 1000)/2.5 = −2.40.</li><li>p-value = P(z ≤ −2.40) = 0.0082 from the table.</li><li>0.0082 ≤ 0.05, so reject H0. Critical-value check: −2.40 ≤ −1.645, same decision.</li></ol><p><strong>Answer:</strong> Reject H0: there is strong evidence of underfilling (z = −2.40, p ≈ 0.008).</p></details><details><summary>Worked problem: Has mean delivery time drifted? (t test, two-tailed)</summary><p>A quick-commerce firm targets a 30-minute mean delivery time. A sample of 25 orders gives x̄ = 32.1 minutes and s = 5 minutes (roughly normal). Test at α = 0.05 whether the mean differs from 30.</p><ol><li>H0: μ = 30, Ha: μ ≠ 30 (two-tailed).</li><li>σ unknown → t with 24 df. Standard error = 5/√25 = 1.</li><li>t = (32.1 − 30)/1 = 2.10.</li><li>Critical values ±t.025 = ±2.064; 2.10 &gt; 2.064, so reject H0.</li><li>p-value: the t table puts the upper-tail area between 0.025 and 0.01, so the two-tailed p-value is between 0.02 and 0.05 (software: 0.046).</li></ol><p><strong>Answer:</strong> Reject H0 at α = 0.05: mean delivery time differs from 30 minutes (t = 2.10, p ≈ 0.046).</p></details><details><summary>Worked problem: Did the campaign lift feature use? (proportion test, upper tail)</summary><p>Last year 30% of a fintech app's users used its bill-pay feature. After a campaign, 141 of 400 sampled users use it. Test at α = 0.05 whether the proportion has increased.</p><ol><li>H0: p ≤ 0.30, Ha: p &gt; 0.30 (upper tail).</li><li>p̄ = 141/400 = 0.3525. Check: np0 = 120 and n(1 − p0) = 280, both ≥ 5.</li><li>Standard error under H0 = √(0.30 × 0.70/400) = 0.02291.</li><li>z = (0.3525 − 0.30)/0.02291 = 2.29.</li><li>p-value = 1 − 0.9890 = 0.0110 ≤ 0.05 → reject H0 (also 2.29 ≥ 1.645).</li></ol><p><strong>Answer:</strong> Reject H0: the share using bill-pay has risen (z = 2.29, p ≈ 0.011).</p></details><details><summary>Worked problem: Type II error, power and sample size</summary><p>A buyer tests LED bulb batches: H0: μ ≥ 500 hours, Ha: μ &lt; 500, α = 0.05, σ = 40, n = 64. (a) Find β if the true mean is 490 hours. (b) What n gives β = 0.10 at μ = 490?</p><ol><li>Standard error = 40/8 = 5. Reject H0 if z ≤ −1.645, i.e. if x̄ ≤ 500 − 1.645 × 5 = 491.78.</li><li>A Type II error happens if x̄ &gt; 491.78 when μ = 490: z = (491.78 − 490)/5 = 0.36.</li><li>β = P(z &gt; 0.36) = 1 − 0.6406 = 0.359 (exact 0.361); power = 1 − β ≈ 0.64.</li><li>(b) n = (zα + zβ)² σ² / (μ0 − μa)² = (1.645 + 1.28)² × 1600 / 10² = 8.556 × 16 = 136.9 → 137.</li></ol><p><strong>Answer:</strong> (a) β ≈ 0.36, power ≈ 0.64. (b) n = 137 bulbs.</p></details><div class=\"def\"><b>Book vs lecture — Software for hypothesis tests.</b> Book: Excel has no built-in routine for these one-sample tests; the book supplies worksheet templates (and JMP). p-values for t come from software rather than the table. Lecture: L#27–L#30 show no software for tests: L#30 reads the Metro EMS p-value from the normal table (1 − 0.9932 = 0.0068). Earlier lectures used Excel's NORM.S.DIST for normal areas. In R, t.test(x, mu = μ0) runs the one-sample t test; prop.test applies a continuity correction by default, so its p-value differs slightly from the book's z test unless correct = FALSE. <b>For hand calculation follow the book's z and t formulas; table and exact p-values can differ in the fourth decimal (0.0068 against 0.0067 for z = 2.47). If R output is shown, check whether a continuity correction was applied.</b></div><div class=\"def\"><b>Book vs lecture — Coverage so far.</b> Book: Sections 9.1–9.9: hypotheses, errors, tests of μ with σ known (one- and two-tailed) and unknown, proportions, decision-making, β and power, sample size, big data. Lecture: L#27: 9.1–9.2 (hypotheses, three forms, Type I and II errors). L#29: the errors in practice and choosing α from their cost. L#30: the one-tailed z test with σ known, by p-value and critical value. Two-tailed tests, t tests, proportion tests, β/power and sample size have not been lectured yet. <b>Treat the unlectured sections as the textbook's preview of what is still to come; check the lecture record before a quiz to see how far it has reached.</b></div><div class=\"def\"><b>Book vs lecture — ‘Accept H₀’.</b> Book: Say ‘do not reject H₀’ in a significance test; ‘accept H₀’ is appropriate only when β has also been controlled (sections 9.6–9.8). Lecture: L#27 and L#29: never ‘accept H₀’ in managerial work; say there is not sufficient evidence to reject it and gather more data. L#29 notes that ‘accept H₀’ does appear in statistics writing. <b>Write ‘do not reject H₀’. The two sources agree in practice, because the course never controls β.</b></div><div class=\"def\"><b>Book vs lecture — Probability of a Type II error.</b> Book: Section 9.7 computes β for a specific true mean, and power = 1 − β; 9.8 sizes n to control both α and β. Lecture: L#29 calls β hard to calculate and leaves controlling both errors to advanced statistics; it only says that a larger sample reduces both errors. <b>Know the direction (smaller α → larger β for fixed n; larger n → both smaller). The β and sample-size formulas are book material not yet lectured.</b></div><div class=\"def\"><b>Book vs lecture — Meaning of a p-value.</b> Book: The probability, assuming H₀ is true at its equality, of a test statistic at least as extreme as the one observed; also the smallest α at which H₀ would be rejected. Lecture: L#30 defines it as a probability measuring the support the sample gives H₀ (which agrees), but glosses p &lt; 0.01 as ‘only a 1% chance of going wrong’ and p &gt; 0.10 as a Type I error chance above 10%. <b>Use the book's definition. A p-value is not the chance that the decision is wrong, nor the probability that H₀ is true. The evidence bands (0.01, 0.05, 0.10) are the same in both.</b></div><div class=\"def\"><b>Book vs lecture — When to use z for a mean.</b> Book: z when σ is known (exact for a normal population, approximate for n ≥ 30); t with n − 1 df when σ is estimated by s. Lecture: L#30 justifies z for Metro EMS by the large sample (n = 40) and the central limit theorem; σ = 3.2 was also given. <b>σ known → z; σ unknown → t (as in L#24), even for large n. The sample size only settles whether x̄ is close enough to normal.</b></div><div class=\"def\"><b>Book vs lecture — Naming the error in a quick check.</b> Book: Type II error: not rejecting H₀ when it is false. Lecture: L#29's last quick check (H₀: μ ≤ 24; researchers conclude ‘no improvement’ when the fuel system truly improves) is called a Type I error in the recording. <b>It is a Type II error: H₀ was kept and it was false. The book and L#27's own definition agree; the recording slipped.</b></div>"
     }
    ]
   }
@@ -2053,6 +2105,125 @@ HUB.addCourse({
    "p": "The p-value is computed assuming H₀ is true: it is the chance of data this extreme under H₀. Sheet Q20: p = 0.12 > 0.05 means not enough evidence that μ differs, nothing more.",
    "f": "p is about the data",
    "lec": 27
+  },
+  {
+   "id": "sfm-t0191",
+   "h": "Concluding ‘no improvement’ when the fuel system truly improved is a Type II error, though the recording calls it Type I",
+   "p": "With H₀: μ ≤ 24, concluding ‘no improvement’ means H₀ was not rejected, and it was false. Not rejecting a false H₀ is a Type II error by the lecture's own definition (and the textbook's). The slip comes in the closing quick checks.",
+   "f": "kept a false H₀ = II",
+   "lec": 29
+  },
+  {
+   "id": "sfm-t0192",
+   "h": "A smaller α is not automatically safer",
+   "p": "For a fixed n, lowering α makes rejection harder, so more false H₀s slip through: the Type II risk rises. That is why α is set from the cost of each error, and why only a bigger sample cuts both risks.",
+   "f": "strict door, good students out",
+   "lec": 29
+  },
+  {
+   "id": "sfm-t0193",
+   "h": "The Type I error is not always the more dangerous one",
+   "p": "For a new drug, approving an unsafe one (Type I) is worse. For a fire alarm, a pregnancy test or a sales incentive that works, the Type II error is worse. The context and who bears the cost decide.",
+   "f": "cost decides which is worse",
+   "lec": 29
+  },
+  {
+   "id": "sfm-t0194",
+   "h": "The Type II probability β is not 1 − α",
+   "p": "α is the chance of rejecting H₀ when it is true; β is the chance of keeping H₀ when a particular alternative is true. They come from different situations, and β depends on how far the truth is from μ₀ and on n. L#29 calls β hard to calculate for exactly this reason.",
+   "f": "β ≠ 1 − α",
+   "lec": 29
+  },
+  {
+   "id": "sfm-t0195",
+   "h": "The p-value measures the support the sample gives to H₀, not to Hₐ",
+   "p": "It is worked out assuming H₀ is true: a small p means the sample would be surprising under H₀, which is evidence against it. L#30's concept check asks exactly this.",
+   "f": "p is about H₀",
+   "lec": 30
+  },
+  {
+   "id": "sfm-t0196",
+   "h": "p < 0.01 does not mean ‘only a 1% chance our conclusion is wrong’, despite the recording's wording",
+   "p": "The lecture glosses small p-values as the chance of going wrong. The p-value is the probability of a result at least this extreme if H₀ were true; it is neither the probability that H₀ is true nor the chance that the decision is an error. The textbook pack defines it the same way.",
+   "f": "p assumes H₀ true",
+   "lec": 30
+  },
+  {
+   "id": "sfm-t0197",
+   "h": "In a lower-tail test, a positive z can never reject H₀",
+   "p": "The rejection region is z ≤ −z_α, on the left. A z of +1.50 in a lower-tail test has p = 0.9332 (the area to its left), nowhere near α. Taking the right-tail area 0.0668 instead is the slip; drawing the curve, as L#30 advises, prevents it.",
+   "f": "draw the tail first",
+   "lec": 30
+  },
+  {
+   "id": "sfm-t0198",
+   "h": "z is used because σ is known; n ≥ 30 only makes x̄ approximately normal",
+   "p": "L#30 justifies z for Metro EMS by the large sample (central limit theorem). That covers the normal shape of x̄, but the z statistic also needs σ itself. With σ unknown, the course uses s and the t distribution (L#24), even for large n.",
+   "f": "σ known → z; s → t",
+   "lec": 30
+  },
+  {
+   "id": "sfm-t0199",
+   "h": "A rejection at 1% always holds at 5%, but a rejection at 5% need not hold at 1%",
+   "p": "The 1% cut-off (2.326, upper tail) lies beyond the 5% cut-off (1.645). Any z past 2.326 is also past 1.645, but a z of 2.00 passes only the 5% cut-off.",
+   "f": "1% ⇒ 5%, not back",
+   "lec": 30
+  },
+  {
+   "id": "sfm-t0200",
+   "h": "The equality always goes in H0",
+   "p": "Even when the claim is 'at least 500 ml', H0 is μ ≥ 500 and Ha is μ < 500. Ha never contains =, ≤ or ≥.",
+   "f": "= lives in H0",
+   "bk": "Anderson 14e ch9"
+  },
+  {
+   "id": "sfm-t0201",
+   "h": "The p-value is not the probability that H0 is true",
+   "p": "It is the probability of data at least this extreme if H0 were true. A p-value of 0.03 does not mean a 3% chance H0 is correct.",
+   "f": "P(data | H0), not P(H0)",
+   "bk": "Anderson 14e ch9"
+  },
+  {
+   "id": "sfm-t0202",
+   "h": "Two-tailed p-value = 2 × the tail area",
+   "p": "For z = −1.80, P(z ≤ −1.80) = 0.0359, so the two-tailed p-value is 0.0718. Forgetting to double makes rejection too easy.",
+   "f": "two tails, double it",
+   "bk": "Anderson 14e ch9"
+  },
+  {
+   "id": "sfm-t0203",
+   "h": "'Do not reject H0' is not the same as 'accept H0'",
+   "p": "Unless β has been controlled, failing to reject only means the evidence is insufficient — H0 has not been shown true.",
+   "f": "not guilty ≠ innocent",
+   "bk": "Anderson 14e ch9"
+  },
+  {
+   "id": "sfm-t0204",
+   "h": "A proportion test uses p0 in the standard error; a confidence interval uses p̄",
+   "p": "The test assumes H0 is true, so √[p0(1 − p0)/n]. The interval has no hypothesised value, so it uses √[p̄(1 − p̄)/n].",
+   "f": "test p0, interval p̄",
+   "bk": "Anderson 14e ch9"
+  },
+  {
+   "id": "sfm-t0205",
+   "h": "For a fixed n, a smaller α means a larger β",
+   "p": "Pushing α down makes rejection harder, so false H0s are missed more often. Only a bigger sample cuts both errors.",
+   "f": "α down, β up",
+   "bk": "Anderson 14e ch9"
+  },
+  {
+   "id": "sfm-t0206",
+   "h": "Statistically significant does not mean important",
+   "p": "With a million observations, a 0.1-second rise in visit time gives p ≈ 0 but may be worthless to advertisers. Always judge practical significance.",
+   "f": "significant ≠ meaningful",
+   "bk": "Anderson 14e ch9"
+  },
+  {
+   "id": "sfm-t0207",
+   "h": "One-tailed and two-tailed tests use different critical values at the same α",
+   "p": "α = 0.05 upper tail → 1.645; α = 0.05 two-tailed → ±1.96. Using 1.96 for a one-tailed test makes the real α only 0.025.",
+   "f": "one tail α, two tails α/2",
+   "bk": "Anderson 14e ch9"
   }
  ],
  "defs": [
@@ -3326,6 +3497,158 @@ HUB.addCourse({
    "term": "Rejection region",
    "html": "<b>Rejection region</b>: the values of the test statistic that lead to rejecting H₀, lying in the tail(s) that Hₐ points to, with total area α.",
    "lec": 27
+  },
+  {
+   "id": "sfm-d0161",
+   "unit": "testing",
+   "topic": "Why a test can err: the α–β trade-off",
+   "term": "Type I–Type II trade-off",
+   "html": "<b>Type I–Type II trade-off</b>: for a fixed sample size, a stricter test (smaller α) makes fewer Type I errors but more Type II errors, and the reverse. Only a larger sample reduces both.",
+   "lec": 29
+  },
+  {
+   "id": "sfm-d0162",
+   "unit": "testing",
+   "topic": "Why a test can err: the α–β trade-off",
+   "term": "Controllable error",
+   "html": "<b>Controllable error</b>: the Type I error, because the researcher fixes its probability α before the test. The Type II probability (β) is hard to calculate, so it is not controlled in a basic test.",
+   "lec": 29
+  },
+  {
+   "id": "sfm-d0163",
+   "unit": "testing",
+   "topic": "Choosing α: who bears the cost?",
+   "term": "Choosing α by cost",
+   "html": "<b>Choosing α</b>: ask who bears the cost of each error and how large it is. Costly Type I error (approving an unsafe drug) → small α such as 0.01. Costly Type II error (dropping a plan that works) → a larger α.",
+   "lec": 29
+  },
+  {
+   "id": "sfm-d0164",
+   "unit": "testing",
+   "topic": "Do not reject H₀: what it means in practice",
+   "term": "Do not reject H₀",
+   "html": "<b>Do not reject H₀</b>: the sample gave insufficient evidence against H₀, so judgement is withheld. It is not ‘H₀ is true’; the usual next step is more evidence, such as a new or larger sample.",
+   "lec": 29
+  },
+  {
+   "id": "sfm-d0165",
+   "unit": "testing",
+   "topic": "The p-value approach (one-tailed)",
+   "term": "p-value rule (one-tailed)",
+   "html": "<b>p-value rule</b>: reject H₀ if p-value ≤ α. For a lower-tail test p is the area left of z; for an upper-tail test, the area right of z.",
+   "lec": 30
+  },
+  {
+   "id": "sfm-d0166",
+   "unit": "testing",
+   "topic": "The p-value approach (one-tailed)",
+   "term": "Evidence scale for p-values",
+   "html": "<b>Reading a p-value</b>: below 0.01, overwhelming evidence for Hₐ; 0.01–0.05, strong; 0.05–0.10, weak; above 0.10, insufficient (do not reject H₀).",
+   "lec": 30
+  },
+  {
+   "id": "sfm-d0167",
+   "unit": "testing",
+   "topic": "The critical-value approach (one-tailed)",
+   "term": "Critical-value rule (one-tailed)",
+   "html": "<b>Critical-value rule</b>: lower tail, reject H₀ if z ≤ −z<sub>α</sub>; upper tail, reject if z ≥ z<sub>α</sub>. z<sub>α</sub> = 1.28, 1.645 and 2.326 for α = 0.10, 0.05 and 0.01.",
+   "lec": 30
+  },
+  {
+   "id": "sfm-d0168",
+   "unit": "testing",
+   "topic": "Metro EMS: the steps of a test",
+   "term": "Steps of a hypothesis test",
+   "html": "<b>Steps of a test</b>: (1) write H₀ and Hₐ; (2) choose α; (3) sample and compute the test statistic; (4) compare p with α, or the statistic with the critical value, and decide.",
+   "lec": 30
+  },
+  {
+   "id": "sfm-d0169",
+   "unit": "testing",
+   "topic": "Hypothesis testing",
+   "term": "Null hypothesis",
+   "html": "The <b>null hypothesis (H0)</b> is the statement about a parameter that is tentatively assumed true; it always contains the equality (=, ≤ or ≥).",
+   "bk": "Anderson 14e ch9"
+  },
+  {
+   "id": "sfm-d0170",
+   "unit": "testing",
+   "topic": "Hypothesis testing",
+   "term": "Alternative hypothesis",
+   "html": "The <b>alternative hypothesis (Ha)</b> is the opposite of H0 and is concluded to be true if H0 is rejected.",
+   "bk": "Anderson 14e ch9"
+  },
+  {
+   "id": "sfm-d0171",
+   "unit": "testing",
+   "topic": "Hypothesis testing",
+   "term": "Type I error",
+   "html": "A <b>Type I error</b> is <b>rejecting H0 when it is true</b>.",
+   "bk": "Anderson 14e ch9"
+  },
+  {
+   "id": "sfm-d0172",
+   "unit": "testing",
+   "topic": "Hypothesis testing",
+   "term": "Type II error",
+   "html": "A <b>Type II error</b> is <b>accepting (not rejecting) H0 when it is false</b>; its probability is β.",
+   "bk": "Anderson 14e ch9"
+  },
+  {
+   "id": "sfm-d0173",
+   "unit": "testing",
+   "topic": "Hypothesis testing",
+   "term": "Level of significance",
+   "html": "The <b>level of significance α</b> is the probability of a Type I error when H0 is true as an equality; the decision maker chooses it.",
+   "bk": "Anderson 14e ch9"
+  },
+  {
+   "id": "sfm-d0174",
+   "unit": "testing",
+   "topic": "Hypothesis testing",
+   "term": "Test statistic",
+   "html": "A <b>test statistic</b> (z or t) is computed from the sample and used to decide whether H0 should be rejected.",
+   "bk": "Anderson 14e ch9"
+  },
+  {
+   "id": "sfm-d0175",
+   "unit": "testing",
+   "topic": "Hypothesis testing",
+   "term": "p-value",
+   "html": "The <b>p-value</b> is the probability, assuming H0 is true, of a test statistic at least as extreme as the one observed. <b>Reject H0 if p-value ≤ α.</b>",
+   "bk": "Anderson 14e ch9"
+  },
+  {
+   "id": "sfm-d0176",
+   "unit": "testing",
+   "topic": "Hypothesis testing",
+   "term": "Critical value",
+   "html": "A <b>critical value</b> is the boundary value compared with the test statistic to decide whether to reject H0.",
+   "bk": "Anderson 14e ch9"
+  },
+  {
+   "id": "sfm-d0177",
+   "unit": "testing",
+   "topic": "Hypothesis testing",
+   "term": "One-tailed test",
+   "html": "In a <b>one-tailed test</b> H0 is rejected only for test statistics in one tail (lower or upper) of the sampling distribution.",
+   "bk": "Anderson 14e ch9"
+  },
+  {
+   "id": "sfm-d0178",
+   "unit": "testing",
+   "topic": "Hypothesis testing",
+   "term": "Two-tailed test",
+   "html": "In a <b>two-tailed test</b> H0: μ = μ0 is rejected for test statistics in either tail; the p-value is double the single-tail area.",
+   "bk": "Anderson 14e ch9"
+  },
+  {
+   "id": "sfm-d0179",
+   "unit": "testing",
+   "topic": "Hypothesis testing",
+   "term": "Power",
+   "html": "<b>Power</b> is the probability of correctly rejecting a false H0: <b>1 − β</b>. A <b>power curve</b> plots it for values of the parameter where H0 is false.",
+   "bk": "Anderson 14e ch9"
   }
  ],
  "questions": [
@@ -13495,6 +13818,975 @@ HUB.addCourse({
    "w": "‘Differs’ gives Hₐ: μ ≠ μ₀, and evidence in either tail counts. The number of tails depends on Hₐ, not on σ, n or α.",
    "lec": 27,
    "lv": "recall"
+  },
+  {
+   "id": "sfm-q0609",
+   "topic": "Hypothesis testing",
+   "q": "According to L#29, why can a hypothesis test reach a wrong conclusion at all?",
+   "c": [
+    "Because the decision rests on a sample, not the whole population",
+    "Because α is always set too high",
+    "Because H₀ and Hₐ can both be true at once",
+    "Because the test statistic is rounded"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A sample can mislead through sampling error or bias; examining the entire population would leave no room for error. α only fixes how often a true H₀ is wrongly rejected; it is not the cause of error.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0610",
+   "topic": "Hypothesis testing",
+   "q": "In L#29's classroom analogy, a professor shuts the door at exactly 9:00 and lets no one in afterwards. What is the side effect of being this strict?",
+   "c": [
+    "Habitual latecomers get in more easily",
+    "Some sincere students with genuine reasons are shut out too",
+    "Both kinds of mistake fall together",
+    "There is no side effect, since strictness removes all errors"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Strictness filters out the habitual latecomers but also excludes genuine students: cutting one error raises the other. Being lenient would do the reverse. Both errors cannot fall together by changing the rule alone.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0611",
+   "topic": "Hypothesis testing",
+   "q": "According to L#29, what can reduce the risk of both Type I and Type II errors at the same time?",
+   "c": [
+    "Lowering α to 0.001",
+    "Raising α to 0.10",
+    "Taking a larger sample",
+    "Switching to a two-tailed test"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Sampling error shrinks as n grows, so a larger sample cuts both risks. Changing α alone only trades one error for the other.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0612",
+   "topic": "Hypothesis testing",
+   "q": "Why does L#29 call the Type I error the ‘controllable’ error?",
+   "c": [
+    "Because it can never happen in a well-run study",
+    "Because the researcher fixes its probability, α, before the test",
+    "Because it is always less costly than a Type II error",
+    "Because it equals 1 minus the Type II probability"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The person running the test chooses α in advance, so the Type I risk is set by design. The Type II probability is hard to calculate and is not set this way; neither error is always the cheaper one.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0613",
+   "topic": "Hypothesis testing",
+   "q": "A regulator tests a new drug with H₀: the drug is not safe and effective. Approving a drug that is actually unsafe is which error, and what α does L#29 recommend?",
+   "c": [
+    "Type I; a very small α such as 0.01",
+    "Type II; a very small α such as 0.01",
+    "Type I; a large α such as 0.10",
+    "Type II; a large α such as 0.10"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Approving the drug means rejecting H₀; if H₀ was true, that is a Type I error. Because it can harm public health, the Type I risk should be very low, so a small α such as 0.01.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0614",
+   "topic": "Hypothesis testing",
+   "q": "A VP hopes a new incentive plan will lift salespeople's average weekly sales above $8,000. Which hypotheses did L#29 set up?",
+   "c": [
+    "H₀: μ ≥ 8,000; Hₐ: μ < 8,000",
+    "H₀: μ = 8,000; Hₐ: μ ≠ 8,000",
+    "H₀: μ > 8,000; Hₐ: μ ≤ 8,000",
+    "H₀: μ ≤ 8,000; Hₐ: μ > 8,000"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The hoped-for increase goes in Hₐ: μ > 8,000, and H₀ takes the equality, μ ≤ 8,000. The lecturer briefly put ‘equal to’ in the alternative and then corrected himself.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0615",
+   "topic": "Hypothesis testing",
+   "q": "For the sales incentive (H₀: μ ≤ 8,000), why did L#29 argue for tolerating a larger α?",
+   "c": [
+    "A larger α makes Type I errors impossible",
+    "Sales figures are always normally distributed",
+    "The plan is free, so neither error has a cost",
+    "Dropping a plan that works (Type II) loses sales, which costs more than paying incentives for a plan that does not work (Type I)"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Incentives are only part of sales, so wasted incentive payments (Type I) cost less than lost sales (Type II). Accepting a larger α keeps the costlier Type II error down. A larger α makes Type I errors more likely, not impossible.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0616",
+   "topic": "Hypothesis testing",
+   "q": "With H₀: there is no fire, the alarm stays silent while a fire is burning. Which error is this?",
+   "c": [
+    "Type I error",
+    "Type II error",
+    "No error, because H₀ was not rejected",
+    "A sampling error unrelated to H₀"
+   ],
+   "a": [
+    1
+   ],
+   "w": "H₀ (no fire) is false but the alarm did not reject it: a false H₀ was kept, a Type II error. A false alarm with no fire would be the Type I error; L#29 calls the silent alarm the more dangerous one.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0617",
+   "topic": "Hypothesis testing",
+   "q": "A spam filter works with H₀: this email is legitimate. A genuine email from your bank is sent to the spam folder. Which error is this?",
+   "c": [
+    "Type II error",
+    "A correct decision",
+    "Type I error",
+    "Both errors at once"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Moving the email to spam rejects H₀, and H₀ was true: a Type I error. A Type II error would be a real spam message reaching the inbox.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0618",
+   "topic": "Hypothesis testing",
+   "q": "In a trial with H₀: the defendant is innocent, a guilty defendant is acquitted. By the definitions in L#27–L#29, which error is this?",
+   "c": [
+    "Type I error",
+    "A correct decision, since H₀ was kept",
+    "Type II error",
+    "Neither, because courts do not test hypotheses"
+   ],
+   "a": [
+    2
+   ],
+   "w": "H₀ (innocent) is false, yet it was not rejected: a Type II error. Convicting an innocent person would be the Type I error. Keeping H₀ is correct only when H₀ is true.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0619",
+   "topic": "Hypothesis testing",
+   "q": "Efficient homes in one city average $104 a month for electricity. Someone believes a comparable neighbourhood elsewhere pays more. Which hypotheses fit?",
+   "c": [
+    "H₀: μ ≥ 104; Hₐ: μ < 104",
+    "H₀: μ = 104; Hₐ: μ ≠ 104",
+    "H₀: μ < 104; Hₐ: μ ≥ 104",
+    "H₀: μ ≤ 104; Hₐ: μ > 104"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The belief to be shown, ‘pays more’, goes in Hₐ: μ > 104; H₀ takes the equality, μ ≤ 104. A two-tailed form would ignore the stated direction.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0620",
+   "topic": "Hypothesis testing",
+   "q": "In the electricity test (H₀: μ ≤ 104, Hₐ: μ > 104), which of these is a Type I error?",
+   "c": [
+    "Concluding the neighbourhood pays more when it does not, perhaps because the sample over-picked high-consumption homes",
+    "Finding no evidence that the neighbourhood pays more when it really does",
+    "Correctly concluding that the neighbourhood pays more",
+    "Choosing α = 0.05 instead of 0.01"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A Type I error rejects a true H₀: here, claiming higher bills that are not there, which a skewed sample can produce. Missing a real difference is the Type II error. Choosing α is a design decision, not an error.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0621",
+   "topic": "Hypothesis testing",
+   "q": "A juice carton says its juice contains on average 1 gram of fat or less. A consumer group wants to test the label. Which hypotheses should it use?",
+   "c": [
+    "H₀: μ ≥ 1; Hₐ: μ < 1",
+    "H₀: μ ≤ 1; Hₐ: μ > 1",
+    "H₀: μ = 1; Hₐ: μ < 1",
+    "H₀: μ > 1; Hₐ: μ ≤ 1"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The label's claim is the assumption being challenged, so it goes in H₀ with its equality: μ ≤ 1. The suspicion of more fat is Hₐ: μ > 1. Writing H₀: μ ≥ 1 copies the wrong direction from the more familiar ‘at least’ labels.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0622",
+   "topic": "Hypothesis testing",
+   "q": "A new production method will be adopted only if a test supports the conclusion that it lowers the mean operating cost below the current ₹2,400 an hour. Which hypotheses fit?",
+   "c": [
+    "H₀: μ ≤ 2,400; Hₐ: μ > 2,400",
+    "H₀: μ = 2,400; Hₐ: μ ≠ 2,400",
+    "H₀: μ < 2,400; Hₐ: μ ≥ 2,400",
+    "H₀: μ ≥ 2,400; Hₐ: μ < 2,400"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The method is adopted only on evidence of lower costs, so that conclusion goes in Hₐ: μ < 2,400, and H₀ is μ ≥ 2,400. A strict inequality can never sit in H₀.",
+   "lec": 29,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0623",
+   "topic": "Hypothesis testing",
+   "q": "Fuel-injection test: H₀: μ ≤ 24 against Hₐ: μ > 24 (the system improves). The researchers conclude there is no improvement, but the system really did improve. Which error is this?",
+   "c": [
+    "Type I, because H₀ was rejected",
+    "Type II, because a false H₀ was not rejected",
+    "Type I, because the conclusion was wrong",
+    "No error, because ‘no improvement’ is what H₀ says"
+   ],
+   "a": [
+    1
+   ],
+   "w": "‘No improvement’ means H₀ was kept, and H₀ was false, so this is a Type II error. The recording's quick check calls it Type I, which contradicts the lecture's own definition. Any wrong conclusion is an error, so ‘no error’ cannot be right.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0624",
+   "topic": "Hypothesis testing",
+   "q": "A food inspector suspects stale food (H₀: the quality is good), but the lab cannot confirm it. What does L#29 say the inspector should conclude?",
+   "c": [
+    "The food is good, so H₀ is accepted",
+    "The food is stale, because the inspector suspected it",
+    "There is not sufficient evidence to reject H₀; collect more evidence, such as a new or larger sample",
+    "The lab result must be a Type I error"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Failing to reject H₀ withholds judgement; it does not certify the food as good. The lecture's next step is more evidence. Declaring the food stale without evidence would ignore the test.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0625",
+   "topic": "Hypothesis testing",
+   "q": "According to L#29, what should decide the value of α a manager chooses?",
+   "c": [
+    "Who bears the cost of each error, and how large that cost is",
+    "Always 0.05, because it is the usual default",
+    "The size of the sample mean",
+    "Whichever α produces a rejection"
+   ],
+   "a": [
+    0
+   ],
+   "w": "α is chosen from the consequences: strict when a Type I error is costly (drug approval), more lenient when a Type II error costs more (a sales plan). Picking α after seeing the data, to force a rejection, defeats its purpose.",
+   "lec": 29,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0626",
+   "topic": "Hypothesis testing",
+   "q": "In the pregnancy picture (H₀: not pregnant), which error did L#29 call the more dangerous one?",
+   "c": [
+    "The Type I error, telling a man he is pregnant",
+    "Both are equally dangerous",
+    "The Type II error, telling a pregnant woman she is not, so she may miss care",
+    "Neither, since no decision is taken"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The false negative (Type II) can deprive the woman of care, costing health as well as money; the false positive mostly costs money. So in this case the Type II error is worse.",
+   "lec": 29,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0627",
+   "topic": "Hypothesis testing",
+   "q": "L#30 asks: the p-value measures the support, or lack of support, that the sample gives to which hypothesis?",
+   "c": [
+    "The alternative hypothesis Hₐ",
+    "The null hypothesis H₀",
+    "H₀ and Hₐ equally",
+    "Neither; it measures the sample size"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The p-value is computed assuming H₀ is true and measures how well the sample supports H₀; a small value is evidence against it. Hₐ is concluded only when H₀ is rejected.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0628",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "A null hypothesis is rejected at the 5% level of significance in an upper-tail test. What can be said about the 1% level?",
+   "c": [
+    "It will certainly be rejected at 1% too",
+    "It will certainly not be rejected at 1%",
+    "It may or may not be rejected at 1%, depending on where z falls",
+    "The 1% level cannot be used for a one-tailed test"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The 1% cut-off (2.326) lies beyond the 5% cut-off (1.645). A z between them rejects only at 5%; a z beyond 2.326 rejects at both. So both outcomes are possible.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0629",
+   "topic": "Hypothesis testing",
+   "q": "On L#30's scale for reading p-values, what does a p-value of 0.007 indicate?",
+   "c": [
+    "Overwhelming evidence that Hₐ is true",
+    "Strong evidence that Hₐ is true",
+    "Weak evidence that Hₐ is true",
+    "Insufficient evidence to reject H₀"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Below 0.01 counts as overwhelming evidence for Hₐ. ‘Strong’ is the band from 0.01 to 0.05.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0630",
+   "topic": "Hypothesis testing",
+   "q": "A one-tailed test gives p = 0.072. On L#30's scale, how strong is the evidence for Hₐ, and what is the decision at α = 0.05?",
+   "c": [
+    "Strong evidence; reject H₀",
+    "Weak evidence; do not reject H₀",
+    "Overwhelming evidence; reject H₀",
+    "No evidence at all; accept H₀"
+   ],
+   "a": [
+    1
+   ],
+   "w": "0.072 falls in the 0.05–0.10 band: weak evidence. Since 0.072 > 0.05, H₀ is not rejected at α = 0.05. ‘Accept H₀’ is the wording L#27 and L#29 rule out.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0631",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "For a lower-tail test at α = 0.10, which critical value did L#30 use?",
+   "c": [
+    "−1.645",
+    "+1.28",
+    "−2.326",
+    "−1.28"
+   ],
+   "a": [
+    3
+   ],
+   "w": "An area of 0.10 in the lower tail lies to the left of z = −1.28. −1.645 is the cut-off for α = 0.05, and a lower-tail cut-off is negative.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0632",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "In a lower-tail test, the critical-value approach rejects H₀ when:",
+   "c": [
+    "z ≥ z_α",
+    "z ≤ −z_α",
+    "|z| ≥ z_α/2",
+    "z lies between −z_α and z_α"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The rejection region of a lower-tail test is the far left: z at or below −z_α. z ≥ z_α is the upper-tail rule, and |z| ≥ z_α/2 is the two-tailed one.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0633",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "In L#30's Metro EMS example, n = 40, x̄ = 13.25 minutes, σ = 3.2 minutes and H₀: μ ≤ 12. What is the test statistic?",
+   "c": [
+    "0.39",
+    "1.25",
+    "15.63",
+    "2.47"
+   ],
+   "a": [
+    3
+   ],
+   "w": "z = (13.25 − 12)/(3.2/√40) = 1.25/0.506 = 2.47. 1.25 is only the difference in minutes, and 15.63 comes from dividing σ by n instead of √n.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0634",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "For Metro EMS (H₀: μ ≤ 12, Hₐ: μ > 12), the area to the left of z = 2.47 is 0.9932. With α = 0.05, what are the p-value and the decision?",
+   "c": [
+    "p = 0.0068; reject H₀: the 12-minute goal is not being met",
+    "p = 0.9932; do not reject H₀",
+    "p = 0.0136; reject H₀ only at α = 0.10",
+    "p = 0.0068; do not reject H₀, because p is positive"
+   ],
+   "a": [
+    0
+   ],
+   "w": "In an upper-tail test the p-value is the area to the right: 1 − 0.9932 = 0.0068 ≤ 0.05, so H₀ is rejected and the service is not meeting its goal. 0.9932 is the wrong tail, and doubling (0.0136) applies only to two-tailed tests.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0635",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "Why could the Metro EMS test use the z statistic?",
+   "c": [
+    "Because the sample mean was above 12",
+    "Because σ was known and n = 40 lets x̄ be treated as normal",
+    "Because α was 0.05",
+    "Because the sample standard deviation was used"
+   ],
+   "a": [
+    1
+   ],
+   "w": "z needs the population σ, and the large sample makes x̄ approximately normal by the central limit theorem. Using the sample standard deviation would call for the t distribution (L#24).",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0636",
+   "topic": "Hypothesis testing",
+   "q": "In L#30's steps of a hypothesis test, what comes straight after writing H₀ and Hₐ?",
+   "c": [
+    "Compute the p-value",
+    "Collect the sample",
+    "Specify the level of significance α",
+    "State the conclusion"
+   ],
+   "a": [
+    2
+   ],
+   "w": "α is fixed second, before any data are collected, so the risk of a Type I error is chosen in advance. The sample, the statistic and the p-value come after.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0637",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "H₀: μ ≤ 80, Hₐ: μ > 80, σ = 8, n = 64 and x̄ = 82.2. What is the decision at α = 0.01?",
+   "c": [
+    "Reject H₀: z = 2.20 and p = 0.0139",
+    "Do not reject H₀: z = 2.20, and p = 0.0139 is above 0.01",
+    "Reject H₀: z = 2.20 is above 1.645",
+    "Do not reject H₀: z = 0.275"
+   ],
+   "a": [
+    1
+   ],
+   "w": "z = (82.2 − 80)/(8/√64) = 2.2/1 = 2.20, and p = 0.0139 > 0.01; equivalently 2.20 < 2.326. Comparing with 1.645 uses the α = 0.05 cut-off; 0.275 forgets the √n.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0638",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "A courier claims its mean delivery cost is at least ₹45 a parcel. An auditor suspects it is lower: 50 parcels average ₹43.60, with σ = ₹5. Using the critical-value approach at α = 0.05, what is the decision?",
+   "c": [
+    "Reject H₀: z = −1.98 is below −1.645",
+    "Do not reject H₀: z = −1.98 is above −1.96",
+    "Do not reject H₀: the sample mean is only ₹1.40 lower",
+    "Reject H₀: z = −0.28 is negative"
+   ],
+   "a": [
+    0
+   ],
+   "w": "H₀: μ ≥ 45, Hₐ: μ < 45. z = (43.60 − 45)/(5/√50) = −1.40/0.707 = −1.98, which is beyond −1.645, so reject. −1.96 is a two-tailed cut-off, and −0.28 divides by σ without the √n.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0639",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "A lower-tail test (Hₐ: μ < μ₀) gives z = +1.50. What follows at α = 0.05?",
+   "c": [
+    "Reject H₀, because 1.50 is close to 1.645",
+    "Reject H₀, because p = 0.0668 is small",
+    "Do not reject H₀: the p-value is the area left of z, 0.9332, so a positive z gives no evidence for Hₐ",
+    "Reject H₀ at α = 0.10, because p = 0.0668 is below 0.10"
+   ],
+   "a": [
+    2
+   ],
+   "w": "In a lower-tail test only values far to the left count against H₀; the p-value is the area to the left of +1.50, which is 0.9332. 0.0668 is the right-tail area, the wrong tail for this test, so it supports no rejection at any α.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0640",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "What is a critical value in the critical-value approach?",
+   "c": [
+    "The value of the test statistic that marks the boundary of the rejection region",
+    "The sample mean that H₀ predicts",
+    "The probability of a Type II error",
+    "The p-value at which H₀ becomes true"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The critical value is the cut-off on the z scale set by α; the decision is to reject H₀ if the test statistic falls beyond it. It is a z value, not a probability.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0641",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "Why does the α = 0.01 cut-off of an upper-tail test lie further right than the α = 0.05 cut-off?",
+   "c": [
+    "Because a smaller α shifts the mean of the distribution",
+    "Because σ is larger at the 1% level",
+    "They are the same: both are 1.645",
+    "Because a tail holding only 1% of the area starts further out than one holding 5%"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A smaller tail area needs a more extreme boundary: 2.326 instead of 1.645. Neither the mean nor σ changes with α.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0642",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "H₀: μ ≤ ₹1,000 and Hₐ: μ > ₹1,000 for mean order value, with σ = ₹120, n = 36, x̄ = ₹1,033 and α = 0.05. What do the two approaches say?",
+   "c": [
+    "The critical-value approach rejects but the p-value approach does not",
+    "Neither rejects, because z is so close to the cut-off",
+    "Both reject H₀: z = 1.65 ≥ 1.645 and p = 0.0495 ≤ 0.05",
+    "Both reject only if α is raised to 0.10"
+   ],
+   "a": [
+    2
+   ],
+   "w": "z = 33/(120/√36) = 33/20 = 1.65, just past 1.645, and its right-tail area is 0.0495, just under 0.05. The two approaches always agree, even at the edge.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0643",
+   "topic": "Tests of a mean, σ known (z test)",
+   "q": "A lower-tail test gives z = −2.40. What is the p-value, and how does L#30's scale describe it?",
+   "c": [
+    "0.9918: insufficient evidence",
+    "0.0164: strong evidence for Hₐ",
+    "0.0082: weak evidence for Hₐ",
+    "0.0082: overwhelming evidence for Hₐ"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The p-value is the area to the left of −2.40, 0.0082, which is below 0.01: overwhelming evidence. 0.9918 is the wrong tail and 0.0164 doubles it as if the test were two-tailed.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0644",
+   "topic": "Hypothesis testing",
+   "q": "In every hypothesis test in this chapter, the equality part (=, ≤ or ≥) appears in:",
+   "c": [
+    "The null hypothesis H0",
+    "The alternative hypothesis Ha",
+    "Whichever hypothesis the researcher wants to prove",
+    "Both hypotheses"
+   ],
+   "a": [
+    0
+   ],
+   "w": "H0 always carries the equality; Ha is a strict <, > or ≠. The researcher's claim usually goes in Ha, which is why it cannot hold the equality.",
+   "bk": "Anderson 14e ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0645",
+   "topic": "Hypothesis testing",
+   "q": "A payments start-up claims its new app cuts mean checkout time below the current 8 seconds and wants statistical support for this claim. Which hypotheses fit?",
+   "c": [
+    "H0: μ < 8, Ha: μ ≥ 8",
+    "H0: μ = 8, Ha: μ ≠ 8",
+    "H0: μ ≥ 8, Ha: μ < 8",
+    "H0: μ ≤ 8, Ha: μ > 8"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The research claim (μ < 8) becomes Ha, so that rejecting H0: μ ≥ 8 supports it. Putting the claim in H0 would mean the test could never confirm it.",
+   "bk": "Anderson 14e ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0646",
+   "topic": "Hypothesis testing",
+   "q": "A food regulator checks a juice brand whose label promises at least 500 ml per bottle. Which hypotheses should the regulator test?",
+   "c": [
+    "H0: μ ≤ 500, Ha: μ > 500",
+    "H0: μ = 500, Ha: μ ≠ 500",
+    "H0: μ < 500, Ha: μ ≥ 500",
+    "H0: μ ≥ 500, Ha: μ < 500"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The label is the assumption being challenged, so it goes in H0 (with the equality); the challenge — underfilling — is Ha. The two-tailed form fits the manufacturer, who worries about both under- and overfilling.",
+   "bk": "Anderson 14e ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0647",
+   "topic": "Hypothesis testing",
+   "q": "The juice manufacturer itself wants to detect both underfilling and overfilling around the 500 ml target. Which hypotheses fit?",
+   "c": [
+    "H0: μ = 500, Ha: μ ≠ 500",
+    "H0: μ ≥ 500, Ha: μ < 500",
+    "H0: μ ≤ 500, Ha: μ > 500",
+    "H0: μ ≠ 500, Ha: μ = 500"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Concern in both directions calls for a two-tailed test with the equality in H0. The same product gives different hypotheses for the regulator and the manufacturer.",
+   "bk": "Anderson 14e ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0648",
+   "topic": "Hypothesis testing",
+   "q": "H0: a new training programme does not raise productivity. Which outcome is a Type II error?",
+   "c": [
+    "Concluding the programme raises productivity when it does not",
+    "Concluding the programme does not raise productivity when it actually does",
+    "Concluding the programme raises productivity when it does",
+    "Rejecting H0 at α = 0.05"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A Type II error is failing to reject a false H0 — missing a real improvement. Claiming an improvement that isn't there is the Type I error.",
+   "bk": "Anderson 14e ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0649",
+   "topic": "Hypothesis testing",
+   "q": "The level of significance α is:",
+   "c": [
+    "The probability that H0 is true",
+    "The probability of a Type II error",
+    "The probability of making a Type I error when H0 is true as an equality",
+    "The proportion of the sample that is significant"
+   ],
+   "a": [
+    2
+   ],
+   "w": "α is chosen by the decision maker and controls the chance of rejecting H0 when it is true (as an equality). β is the Type II probability.",
+   "bk": "Anderson 14e ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0650",
+   "topic": "Hypothesis testing",
+   "q": "Why does the textbook prefer the conclusion 'do not reject H0' over 'accept H0' in a significance test?",
+   "c": [
+    "Because H0 can never be true",
+    "Because the probability of a Type II error has not been controlled",
+    "Because α is always too small",
+    "Because the p-value is always above α"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A significance test controls only α. Since β is unknown, failing to reject H0 does not justify claiming it is true; the evidence is just insufficient.",
+   "bk": "Anderson 14e ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0651",
+   "topic": "Hypothesis testing",
+   "q": "H0: μ ≤ 50, σ = 8 known, n = 64, x̄ = 52. What is the test statistic?",
+   "c": [
+    "0.25",
+    "1.96",
+    "16.00",
+    "2.00"
+   ],
+   "a": [
+    3
+   ],
+   "w": "z = (52 − 50)/(8/√64) = 2/1 = 2.00. 0.25 divides by σ instead of the standard error; 1.96 is a critical value, not the statistic.",
+   "bk": "Anderson 14e ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0652",
+   "topic": "Hypothesis testing",
+   "q": "For an upper-tail test the test statistic is z = 2.00. What is the p-value?",
+   "c": [
+    "0.9772",
+    "0.0228",
+    "0.0456",
+    "0.4772"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Upper tail: P(z ≥ 2.00) = 1 − 0.9772 = 0.0228. 0.9772 is the table value itself (the left area); 0.0456 doubles it as if two-tailed.",
+   "bk": "Anderson 14e ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0653",
+   "topic": "Hypothesis testing",
+   "q": "In a two-tailed test the test statistic is z = −1.80. What is the p-value?",
+   "c": [
+    "0.0718",
+    "0.0359",
+    "0.9641",
+    "0.1436"
+   ],
+   "a": [
+    0
+   ],
+   "w": "P(z ≤ −1.80) = 0.0359; double it for two tails: 0.0718. 0.0359 forgets to double; 0.9641 is the area on the other side.",
+   "bk": "Anderson 14e ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0654",
+   "topic": "Hypothesis testing",
+   "q": "A two-tailed test gives p-value = 0.0718 with α = 0.05. What is the correct conclusion?",
+   "c": [
+    "Reject H0, because 0.0718 is small",
+    "Accept H0 — it has been proved true",
+    "Do not reject H0, because the p-value exceeds α",
+    "Reject H0, because 0.0718 < 0.10"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Reject only if p-value ≤ α. 0.0718 > 0.05, so do not reject H0. Comparing with 0.10 uses a different α than the one chosen; 'accept' overstates the result.",
+   "bk": "Anderson 14e ch9",
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0655",
+   "topic": "Hypothesis testing",
+   "q": "What is the critical value for an upper-tail z test at α = 0.01?",
+   "c": [
+    "1.645",
+    "1.96",
+    "2.576",
+    "2.33"
+   ],
+   "a": [
+    3
+   ],
+   "w": "An upper-tail area of 0.01 corresponds to z = 2.33. 2.576 leaves 0.005 in each tail (two-tailed α = 0.01); 1.645 is for α = 0.05 one-tailed.",
+   "bk": "Anderson 14e ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0656",
+   "topic": "Hypothesis testing",
+   "q": "H0: μ ≤ 7 vs Ha: μ > 7. A sample of 36 gives x̄ = 7.4 and s = 1.2. With α = 0.05 and t.05 (35 df) = 1.690, what is the decision?",
+   "c": [
+    "Do not reject H0, because t = 0.33",
+    "Reject H0, because t = 2.00 ≥ 1.690",
+    "Reject H0, because x̄ > 7",
+    "Do not reject H0, because z = 2.00 < 2.33"
+   ],
+   "a": [
+    1
+   ],
+   "w": "t = (7.4 − 7)/(1.2/6) = 2.00, which exceeds 1.690, so reject H0. A sample mean above 7 is not enough on its own — it must be far enough above, measured in standard errors.",
+   "bk": "Anderson 14e ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0657",
+   "topic": "Hypothesis testing",
+   "q": "When σ is unknown and estimated by s, the test statistic for a population mean follows:",
+   "c": [
+    "A t distribution with n − 1 degrees of freedom",
+    "The standard normal distribution",
+    "A t distribution with n degrees of freedom",
+    "A binomial distribution"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Estimating σ with s adds variability, so the statistic follows t with n − 1 df. The standard normal applies when σ is known.",
+   "bk": "Anderson 14e ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0658",
+   "topic": "Hypothesis testing",
+   "q": "H0: p = 0.40. A sample of 150 gives p̄ = 0.46. What is the test statistic?",
+   "c": [
+    "1.47",
+    "0.06",
+    "1.50",
+    "2.45"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Standard error under H0 = √(0.40 × 0.60/150) = 0.04; z = 0.06/0.04 = 1.50. 1.47 wrongly uses p̄ in the standard error — that is the confidence-interval formula, not the test.",
+   "bk": "Anderson 14e ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0659",
+   "topic": "Hypothesis testing",
+   "q": "A 95% confidence interval for μ is 48.2 to 53.6. At α = 0.05, what happens to the two-tailed tests H0: μ = 55 and H0: μ = 50?",
+   "c": [
+    "Reject both",
+    "Reject H0: μ = 55; do not reject H0: μ = 50",
+    "Do not reject either",
+    "Reject H0: μ = 50; do not reject H0: μ = 55"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A two-tailed test at α rejects H0: μ = μ0 exactly when μ0 lies outside the 100(1 − α)% interval. 55 is outside; 50 is inside.",
+   "bk": "Anderson 14e ch9",
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0660",
+   "topic": "Hypothesis testing",
+   "q": "If β = 0.20 when the true mean is 115, the power of the test at μ = 115 is:",
+   "c": [
+    "0.20",
+    "0.05",
+    "0.95",
+    "0.80"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Power = 1 − β = 0.80: the probability of correctly rejecting H0 when μ = 115. 0.95 is 1 − α, a different quantity.",
+   "bk": "Anderson 14e ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0661",
+   "topic": "Hypothesis testing",
+   "q": "A manager lowers α from 0.05 to 0.01 but keeps the same sample size. What happens to the probability of a Type II error?",
+   "c": [
+    "It falls, because the test is stricter",
+    "It is unaffected, because α and β are unrelated",
+    "It rises, because rejecting H0 becomes harder",
+    "It becomes exactly 0.01"
+   ],
+   "a": [
+    2
+   ],
+   "w": "For a fixed n, making Type I errors rarer makes the rejection region smaller, so false H0s are missed more often — β rises. Only a larger sample reduces both.",
+   "bk": "Anderson 14e ch9",
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0662",
+   "topic": "Hypothesis testing",
+   "q": "For a one-tailed test with α = 0.05, β = 0.10, σ = 10 and μ0 − μa = 4, what sample size is needed?",
+   "c": [
+    "54",
+    "53",
+    "24",
+    "86"
+   ],
+   "a": [
+    0
+   ],
+   "w": "n = (1.645 + 1.28)² × 10² / 4² = 8.556 × 100/16 = 53.5, rounded up to 54. Rounding down to 53 would leave β above 0.10.",
+   "bk": "Anderson 14e ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0663",
+   "topic": "Hypothesis testing",
+   "q": "With 2 million transactions, an average basket rises from ₹840 to ₹841 and the test gives p < 0.0001. What should management conclude?",
+   "c": [
+    "The ₹1 rise is commercially important because the p-value is tiny",
+    "The test is invalid because n is too large",
+    "Nothing — a p-value that small must be an error",
+    "The rise is statistically significant, but they must judge whether ₹1 matters and check for nonsampling error"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Huge samples make almost any difference significant. Statistical significance says the difference is unlikely to be pure sampling error; practical significance — whether ₹1 changes any decision — is a separate business judgement.",
+   "bk": "Anderson 14e ch9",
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0664",
+   "topic": "Hypothesis testing",
+   "q": "Which statement correctly describes a p-value of 0.03?",
+   "c": [
+    "There is a 3% chance that H0 is true",
+    "If H0 were true, a test statistic at least this extreme would occur about 3% of the time",
+    "There is a 97% chance that Ha is true",
+    "The Type II error probability is 0.03"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A p-value is calculated assuming H0 is true; it measures how surprising the data are under H0. It is not the probability that either hypothesis is true.",
+   "bk": "Anderson 14e ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0665",
+   "topic": "Hypothesis testing",
+   "q": "Using the textbook's guidelines, a p-value between 0.05 and 0.10 indicates:",
+   "c": [
+    "Overwhelming evidence for Ha",
+    "Strong evidence for Ha",
+    "Weak evidence for Ha",
+    "Proof that H0 is true"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The book's scale: below 0.01 overwhelming, 0.01–0.05 strong, 0.05–0.10 weak, above 0.10 insufficient. No p-value proves H0.",
+   "bk": "Anderson 14e ch9",
+   "lv": "recall"
   }
  ],
  "briefs": {
@@ -13579,6 +14871,9 @@ HUB.addCourse({
   "lec-25s",
   "lec-26",
   "lec-27",
-  "lec-27s"
+  "lec-27s",
+  "lec-29",
+  "lec-30",
+  "sbe14-ch09"
  ]
 });

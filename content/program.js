@@ -34,6 +34,14 @@ HUB.program = {
    "L#N" in their source line, so the hub tags every lecture and topic with its quiz.
    status: "done" | "upcoming" | "tba" (date not announced yet).
    scope: notes-unit ids the assessment covers; "all" = every unit. */
+/* End-term: LMS announcements 19266 (28 Oct) and 19426 (3 Nov), plus the orientation slides.
+   The exam window is fixed but each course's paper slot isn't announced yet, so it stays "tba"
+   and `note` (exams tab) and `when` (course header) say what is known. */
+const END_TERM = { id: "end", name: "End-term exam", status: "tba", when: "4–6 Dec · slot TBA",
+  note: "Offline, pen and paper, 4–6 December 2026 (Fri–Sun): two 2-hour papers a day, 10 AM–12 PM and 2–4 PM IST, at 12 centres across India. " +
+    "Each course's day and slot isn't announced yet. Syllabus: everything taught till the end of November. No negative marking. " +
+    "The admit card comes by email about two weeks before." };
+
 HUB.semesters = [
   { n: 1, label: "Semester 1", term: "Jul–Dec 2026", courses: [
     {
@@ -49,13 +57,13 @@ HUB.semesters = [
           scope: "all", scopeText: "Lectures 1–15, to Working with Lists Part 2" },
         /* Quiz 2: LMS announcement 18992 (19 Oct, date and format); syllabus narrowed by
            19053 and 19069 (22 Oct) to these four topics */
-        { id: "q2", name: "Quiz 2", status: "upcoming",
+        { id: "q2", name: "Quiz 2", status: "done",
           lectures: [17,  18,  19,  20,  21,  22,  23,  24,  25,  26,  27,  28],
           start: "2026-10-31T16:45:00+05:30", end: "2026-10-31T17:05:00+05:30", join: "2026-10-31T16:30:00+05:30",
           durationMin: 20, questions: 60, marks: 60, types: "MCQ",
           scope: ["ifs", "dicts", "loops", "functions"],
           scopeText: "If statements, dictionaries, user input & while loops, functions (lectures 1–2)" },
-        { id: "end", name: "End-term exam", status: "tba" }
+        END_TERM
       ]
     },
     {
@@ -69,13 +77,13 @@ HUB.semesters = [
           durationMin: 15, questions: 40, marks: 40, types: "MCQ",
           scope: "all", scopeText: "Lectures 1–14, to Live Lecture 3" },
         /* Quiz 2: LMS announcement 19075 (22 Oct) */
-        { id: "q2", name: "Quiz 2", status: "upcoming",
+        { id: "q2", name: "Quiz 2", status: "done",
           lectures: [15,  16,  17,  18,  19,  20,  21,  22,  23,  24,  25,  26],
           start: "2026-11-01T12:00:00+05:30", end: "2026-11-01T12:20:00+05:30", join: "2026-11-01T11:45:00+05:30",
           durationMin: 20, questions: 40, marks: 40, types: "MCQ",
           scope: ["machines", "labour", "empire", "systems", "society", "mgmt", "corp"],
           scopeText: "Recorded lectures #15–26 and the live sessions of 4 and 18 October" },
-        { id: "end", name: "End-term exam", status: "tba" }
+        END_TERM
       ]
     },
     {
@@ -89,13 +97,13 @@ HUB.semesters = [
           durationMin: 20, questions: 40, marks: 40, types: "MCQ",
           scope: "all", scopeText: "Lectures 1–11 + Live 3 — linear data structures only" },
         /* Quiz 2: LMS announcement 19068 (22 Oct) and its syllabus PDF */
-        { id: "q2", name: "Quiz 2", status: "upcoming",
+        { id: "q2", name: "Quiz 2", status: "done",
           lectures: [12,  14,  15,  16,  17,  18,  19,  20,  23],
           start: "2026-10-31T17:25:00+05:30", end: "2026-10-31T17:45:00+05:30", join: "2026-10-31T17:10:00+05:30",
           durationMin: 20, questions: 40, marks: 40, types: "MCQ",
           scope: ["trees", "graphs", "hashing", "blockchain"],
           scopeText: "Trees (fundamentals, types), graphs (fundamentals, types, traversals), hashing, blockchain" },
-        { id: "end", name: "End-term exam", status: "tba" }
+        END_TERM
       ]
     },
     {
@@ -109,13 +117,13 @@ HUB.semesters = [
           durationMin: 30, questions: 40, marks: 40, types: "MCQ, True/False",
           scope: "all", scopeText: "Lectures 1–15, to Trial Balance Part 2" },
         /* Quiz 2: LMS announcement 19165 (26 Oct) and its syllabus PDF */
-        { id: "q2", name: "Quiz 2", status: "upcoming",
+        { id: "q2", name: "Quiz 2", status: "done",
           lectures: [16,  17,  18,  19,  20,  21,  22,  23,  24,  25,  26],
           start: "2026-10-31T18:00:00+05:30", end: "2026-10-31T18:30:00+05:30", join: "2026-10-31T17:45:00+05:30",
           durationMin: 30, questions: 40, marks: 40, types: "MCQ",
           scope: ["income-statement", "adjusting", "balance-sheet", "cash-flow"],
           scopeText: "Matching concept, adjusting entries, trading account, P&L, balance sheet, cash flow (parts 1–3)" },
-        { id: "end", name: "End-term exam", status: "tba" }
+        END_TERM
       ]
     },
     {
@@ -129,7 +137,7 @@ HUB.semesters = [
           durationMin: 20, questions: 40, marks: 40, types: "MCQ",
           scope: "all", scopeText: "Topics 1–7, to Introduction to Probability 2" },
         { id: "q2", name: "Quiz 2", status: "tba" },
-        { id: "end", name: "End-term exam", status: "tba" }
+        END_TERM
       ]
     },
     {
@@ -143,7 +151,7 @@ HUB.semesters = [
           durationMin: 30, questions: 20, marks: 20, types: "MCQ, incl. multiple-correct (all-or-nothing: no partial marks)",
           scope: "all", scopeText: "All topics covered to 27 September 2026" },
         { id: "q2", name: "Quiz 2", status: "tba" },
-        { id: "end", name: "End-term exam", status: "tba" }
+        END_TERM
       ]
     }
   ]}

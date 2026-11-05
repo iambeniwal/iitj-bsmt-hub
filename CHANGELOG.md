@@ -10,6 +10,49 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.8.0] — 2026-11-05
+
+### Added
+- **16 lectures from 31 October to 3 November** (366 new questions; 3,289 in all):
+  - *Foundations of Computing*: Functions Part 3 (arbitrary arguments, modules and imports) and
+    Classes Part 1 (L#30–31) in a new Classes unit, plus Live Lecture 6 (L#29), where Dr. Pathak
+    described the end-term paper: no MCQs, true/false only with a reason, error spotting as the
+    most common Python question (naming the error type gets full marks), output prediction with no
+    step marks, and code completion rather than full programs. Its marks and weighting are still
+    being decided; the boxes say exactly what he said. With them, **Python Crash Course chapter 8
+    (functions)**, now fully lectured.
+  - *Algorithmic Thinking*: merge sort and quick sort (L#29–30), with traced splits, merges and
+    pivots, and the lecture's two rules for exercises (the larger half goes first; the pivot is the
+    last item).
+  - *Economic & Business History*: Live Lecture 6 (Drucker and management by objectives, Fayol
+    vs Drucker, the rise of large corporations) and Indian business under colonial rule, 1813 to
+    the 1850s: indigo, opium and raw cotton, agency houses and their crash, Palmer & Co and Carr,
+    Tagore & Co (L#29–31). With them, **Tirthankar Roy's chapter on 1707–1857**.
+  - *Financial Accounting*: ratio analysis (L#30–31): profitability, liquidity, solvency, turnover,
+    the operating cycle and market ratios, every figure recomputed. With them, **Anthony's chapter 13
+    (financial statement analysis)**, with its unverified Indian-law points removed.
+  - *Statistics for Managers*: Type I and II errors and one-tailed tests by the p-value and
+    critical-value approaches (L#29–30), the Session 24 practice sheet answered (it repeats the
+    Chapter 9 set's Q1–10, already solved), and **Anderson chapter 9 (hypothesis tests)**.
+  - *Principles of Marketing*: line filling and stretching, line analysis, product strategy and
+    co-branding (L#32–33, 35), and Live Lecture 11 on product narratives (L#34).
+- **The end-term exam window** (LMS, 3 November): offline, 4–6 December, two 2-hour papers a day
+  (10 AM and 2 PM IST), syllabus to the end of November, no negative marking. Each course's day and
+  slot isn't announced yet, so the Assessments tab and course header say what is known.
+
+### Fixed
+- Where a lecture misspoke, the notes and a trap say so: an O(n log n) read out as "O log n"
+  (ATB), a Type II error called Type I (SfM), brackets after a class name described as parameters
+  (FoC), China called a British colony and Warren Hastings called William (EBH).
+- Quiz 2 for FoC, History, ATB and FA now shows as done.
+
+### Changed
+- *Statistics*: the one-tailed items in the Chapter 9 practice-set notes were labelled "after
+  L#27"; Lecture 30 has now taught them, so they say L#30.
+
+Not in yet: Statistics has no L#28 on the LMS (its numbering skips from 27 to 29), and Marketing's
+L#22 is still absent, as before.
+
 ## [2.7.1] — 2026-10-31
 
 ### Added

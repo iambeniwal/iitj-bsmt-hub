@@ -181,6 +181,18 @@ HUB.addCourse({
    "Week 11 — Live Lecture 6",
    "Cash flow revision: cash equivalents, three drills",
    "live"
+  ],
+  [
+   30,
+   "Week 12 — Financial Statement Analysis 2",
+   "Ratio analysis: the profitability ratios",
+   "rec"
+  ],
+  [
+   31,
+   "Week 12 — Financial Statement Analysis 3",
+   "Liquidity, solvency and capital market ratios",
+   "rec"
   ]
  ],
  "units": [
@@ -633,8 +645,8 @@ HUB.addCourse({
   {
    "id": "analysis",
    "title": "Financial statement analysis",
-   "tag": "Lecture 28 · after Quiz 2",
-   "lede": "Module 3: reading the statements. Standards of comparison, the four techniques (horizontal, trend, vertical, ratio) and how to separate one-off items from core performance.",
+   "tag": "Lectures 28, 30–31 · after Quiz 2",
+   "lede": "Module 3: reading the statements. Standards of comparison, horizontal, trend and vertical analysis, then the four families of ratios (profitability, liquidity, solvency, capital market), all worked on Dr. Reddy's.",
    "topics": [
     {
      "t": "Why analyse statements, and the four standards of comparison",
@@ -650,6 +662,36 @@ HUB.addCourse({
      "t": "Practice set from the faculty (29 Oct)",
      "src": "L#26",
      "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q23, Q24, Q25.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><p style=\"font-size:14.5px\">Ratio analysis is the fourth technique introduced in L#28 and comes in later sessions, after Quiz 2. The formulas below follow the definitions the sheet gives; check them against the ratio lectures when they come.</p><details><summary>Q23 · Veda Retail: ten ratios · After Quiz 2</summary><p style=\"font-size:14.5px\">Veda Retail Ltd, 2026–27 (₹ lakh): revenue 1,200; COGS 840; operating expenses (with depreciation) 180; finance cost 30; profit before tax 150; tax 45; profit after tax 105. At 31 March 2027: cash 60, receivables 150, inventories 210, other current assets 30, non-current assets 750 (total 1,200); equity 700, long-term loans 300, trade payables 140, short-term borrowings 40, other current liabilities 20. At 31 March 2026: receivables 130, inventories 190, total assets 1,100, equity 635.</p><div class=\"scroller\"><table><thead><tr><th>Ratio</th><th>Working</th><th>Result</th></tr></thead><tbody><tr><td>(a) Gross profit margin</td><td>(1,200 − 840) ÷ 1,200</td><td>30%</td></tr><tr><td>(b) Net profit margin</td><td>105 ÷ 1,200</td><td>8.75%</td></tr><tr><td>(c) Current ratio</td><td>Current assets 60 + 150 + 210 + 30 = 450 ÷ current liabilities 140 + 40 + 20 = 200</td><td>2.25 : 1</td></tr><tr><td>(d) Quick ratio</td><td>(60 + 150) ÷ 200</td><td>1.05 : 1</td></tr><tr><td>(e) Inventory turnover; days</td><td>840 ÷ average inventory (190 + 210)/2 = 200 → 4.2 times; 365 ÷ 4.2</td><td>4.2 times; about 87 days</td></tr><tr><td>(f) Receivables turnover; days</td><td>1,200 ÷ average receivables (130 + 150)/2 = 140 → 8.57 times; 365 ÷ 8.57</td><td>8.57 times; about 43 days</td></tr><tr><td>(g) Debt–equity</td><td>(300 + 40) ÷ 700</td><td>0.49 : 1</td></tr><tr><td>(h) Interest coverage</td><td>EBIT (150 + 30) ÷ 30</td><td>6 times</td></tr><tr><td>(i) Return on average equity</td><td>105 ÷ (635 + 700)/2 = 667.5</td><td>15.7%</td></tr><tr><td>(j) Return on average total assets</td><td>105 ÷ (1,100 + 1,200)/2 = 1,150</td><td>9.1%</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Receivables turnover treats all revenue as credit sales, since no split is given. Return on assets here uses profit after tax; some texts use EBIT (180 ÷ 1,150 = 15.7%), so state the definition you use.</p></details><details><summary>Q24 · Two firms' ratios compared · After Quiz 2</summary><p style=\"font-size:14.5px\">Firm P: current ratio 2.5, quick ratio 0.9, inventory days 120, net margin 6%, debt–equity 0.3. Firm Q: 1.2, 1.0, 30 days, 4%, 1.5.</p><ul><li><strong>(a) Liquidity</strong>: P looks far more liquid on the current ratio, but on the quick ratio, which leaves out stock, Q (1.0) is slightly ahead of P (0.9). P's liquidity is mostly stock.</li><li><strong>(b) P's current assets</strong>: the 1.6 gap between its current and quick ratios is roughly stock, about 64% of current assets (1.6 ÷ 2.5, if quick assets are current assets less stock), and 120 inventory days say that stock moves slowly.</li><li><strong>(c) Borrowed funds</strong>: Q, with debt–equity 1.5 against P's 0.3.</li><li><strong>(d) Inventory speed</strong>: Q turns its stock in 30 days against P's 120, <strong>90 days faster</strong> (about 12 turns a year against 3).</li></ul></details><details><summary>Q25 · Reading a real annual report · Annual-report exercise</summary><p style=\"font-size:14.5px\">Take the latest annual report of any listed Indian company and answer from it, quoting page numbers: the statutory auditor and the opinion; the revenue recognition policy; the depreciation method and useful lives for plant and machinery; inventory valuation; net cash from operating, investing and financing activities and their reconciliation to the change in cash; the current and debt–equity ratios.</p><ul><li>The answers depend on the company you choose, so there is no single solution. Where to look:</li><li>Auditor and opinion: the <strong>Independent Auditor's Report</strong> before the financial statements (look for “unmodified” or “qualified” opinion).</li><li>Revenue, depreciation and inventory policies: the <strong>material accounting policies</strong> note, usually note 1 or 2 to the standalone and consolidated statements.</li><li>Cash flows: the <strong>statement of cash flows</strong>; check operating + investing + financing = change in cash and cash equivalents, allowing for exchange differences if shown.</li><li>Ratios: many reports now list key ratios in a note to the accounts; compute them yourself from the balance sheet and compare.</li></ul></details>"
+    },
+    {
+     "t": "Ratio analysis: the five profitability ratios",
+     "src": "L#30",
+     "h": "<p style=\"font-size:14.5px\">Lecture 30 moves to the fourth technique from L#28, <strong>ratio analysis</strong>, still using the Dr. Reddy's Laboratories statements shared in L#28 (keep them open: every ratio below comes from them). A ratio sets one figure against a <em>base</em>: sales, assets or shareholders' equity.</p><div class=\"def\"><b>Ratio analysis</b>: relating a figure in the financial statements to another figure used as a base, so that firms of different sizes, or one firm across years, can be compared on equal terms.</div><h4>Why the base matters: her opening example</h4><div class=\"scroller\"><table><thead><tr><th></th><th>Net profit</th><th>Sales</th><th>Profit per ₹100 of sales</th></tr></thead><tbody><tr><td>Firm A</td><td><span style=\"font-family:var(--mono)\">₹10 lakh</span></td><td><span style=\"font-family:var(--mono)\">₹50 lakh</span></td><td><span style=\"font-family:var(--mono)\">₹20</span></td></tr><tr><td>Firm B</td><td><span style=\"font-family:var(--mono)\">₹10 lakh</span></td><td><span style=\"font-family:var(--mono)\">₹200 lakh</span></td><td><span style=\"font-family:var(--mono)\">₹5</span></td></tr></tbody></table></div><p style=\"font-size:14.5px\">Same profit, very different businesses: A keeps four times as much of every sale. The headline profit alone hides this.</p><h4>Four families of ratios</h4><ul><li><strong>Profitability</strong>: how well the firm turns sales, assets or equity into profit (this lecture).</li><li><strong>Liquidity</strong>: can it meet short-term obligations? (L#31)</li><li><strong>Solvency</strong>: can it meet long-term obligations? (L#31)</li><li><strong>Capital market</strong>: how the share price relates to earnings, dividends and book value (L#31).</li></ul><h4>The five profitability ratios</h4><div class=\"scroller\"><table><thead><tr><th>Ratio</th><th>Formula</th><th>Question it answers</th><th>Her example</th></tr></thead><tbody><tr><td>Profit margin (return on sales)</td><td>Net profit ÷ revenue × 100</td><td>Profit kept from each ₹100 of sales</td><td>Stationery shop: 40,000 ÷ 5,00,000 = <strong>8%</strong></td></tr><tr><td>Gross profit margin</td><td>Gross profit ÷ revenue × 100, where gross profit = sales − cost of goods sold</td><td>What is left after the direct cost of the goods sold</td><td>Sales 5 lakh, COGS 3 lakh: 2 ÷ 5 = <strong>40%</strong></td></tr><tr><td>Asset turnover</td><td>Revenue ÷ average total assets</td><td>Sales generated by each ₹1 of assets</td><td>Sales 10 lakh; assets 4 lakh at the start, 6 lakh at the end, average 5: <strong>2 times</strong></td></tr><tr><td>Return on assets (ROA), also called return on investment (ROI)</td><td>Net profit ÷ average total assets × 100</td><td>Profit earned on everything invested in assets</td><td>Net profit 1,000 on average assets 5,000: <strong>20%</strong></td></tr><tr><td>Return on equity (ROE)</td><td>Net profit ÷ average equity × 100</td><td>Profit earned for the owners on each ₹100 they put in</td><td>Net profit 1 lakh; equity 3.5 lakh → 4.5 lakh, average 4: <strong>25%</strong></td></tr><tr><td>Earnings per share (EPS)</td><td>(Net profit − preference dividend) ÷ number of equity shares</td><td>Profit earned by each equity share</td><td>(50 lakh − 5 lakh) ÷ 9 lakh shares = <strong>₹5</strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\">Her five key ratios are profit margin, asset turnover, ROA, ROE and EPS; gross margin was taught alongside profit margin as its direct-cost cousin.</p><div class=\"def\"><b>Averages, not closing balances.</b> Whenever total assets or equity is the base, she used the <em>average</em> of the opening and closing figures: (opening + closing) ÷ 2. A profit or sales figure is earned over the whole year, so it is set against the resources held on average during that year.</div><h4>Points she stressed on each ratio</h4><ul><li><strong>Gross margin counts only direct costs.</strong> Salaries, rent, interest and tax sit below gross profit, so they move the net margin but not the gross margin.</li><li><strong>Asset turnover has no rule of thumb.</strong> It depends on the industry: a fast-food outlet may turn its assets 10 to 20 times a year, while a mining or refinery project may turn them less than once. High turnover means assets are well used; low turnover suggests assets sitting idle.</li><li><strong>ROE should beat the cost of equity.</strong> Otherwise shareholders could earn more by investing elsewhere.</li><li><strong>EPS belongs to equity shareholders only.</strong> Preference dividends come out first, because equity holders have a <em>residual claim</em>: they get what is left after everyone else. EPS is good for tracking one company over time but not for comparing two companies, because each has a different number of shares; a higher EPS does not by itself mean higher profitability.</li></ul><div class=\"def\"><b>From the lecture (L#30):</b> Her method for ratio numericals: there is no single formula to apply. Write down the ratios you know and rearrange them (for example ROA = margin × turnover, average = (opening + closing) ÷ 2) until the unknown falls out. And never stop at the percentage: every change in a ratio needs a reason taken from the statements.</div>"
+    },
+    {
+     "t": "Reading profitability: margin × turnover, leverage and Dr. Reddy's",
+     "src": "L#30",
+     "h": "<p style=\"font-size:14.5px\">ROA can be split into the two things that drive it. Multiplying profit margin by asset turnover cancels revenue and leaves net profit ÷ average total assets, so the split shows <em>where</em> a firm's return comes from.</p><div class=\"def\"><b>ROA = profit margin × asset turnover</b> = (net profit ÷ revenue) × (revenue ÷ average total assets).<br><b>ROE = ROA × leverage</b>, where leverage = average total assets ÷ average equity (her Sunrise Traders check: 40 ÷ 25 = 1.6).</div><h4>Two ways to earn the same ROA</h4><div class=\"scroller\"><table><thead><tr><th>Model</th><th>Margin</th><th>Turnover</th><th>Her examples</th></tr></thead><tbody><tr><td>Low margin, high volume (mass production, supermarkets)</td><td>Thin</td><td>Fast: the return comes from using assets hard</td><td>Ginger hotels, Lifebuoy and Lux soaps, Xiaomi phones</td></tr><tr><td>High margin, low volume (luxury, differentiated pricing)</td><td>High</td><td>Slow: the return comes from the margin on each sale</td><td>Aston Martin cars, Chloé fashion, Taj hotels, Ulysse Nardin watches</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Her in-class sort put eight brands into these two buckets; the names above are the answer she gave.</p><h4>Leverage: a two-edged sword</h4><ul><li>Borrowing lets the owners control more assets than their own money buys, which lifts ROE above ROA.</li><li>It helps only while <strong>ROA is above the interest rate</strong> on the borrowing. If ROA falls below it, the interest eats into the owners' share and shareholders lose.</li><li>Leverage need not be a bank loan: interest-free credit from suppliers also adds to it.</li></ul><h4>Dr. Reddy's: the profitability ratios, 2015 and 2016</h4><div class=\"scroller\"><table><thead><tr><th>Ratio</th><th>2015</th><th>2016</th><th>Reading</th></tr></thead><tbody><tr><td>Profit margin</td><td><span style=\"font-family:var(--mono)\">15.55%</span></td><td><span style=\"font-family:var(--mono)\">13.71%</span></td><td>Down (14.63% in 2014): higher employee costs and the one-off foreign-exchange loss</td></tr><tr><td>Gross margin</td><td></td><td></td><td>Up about 2 points: direct costs were under control</td></tr><tr><td>Asset turnover</td><td><span style=\"font-family:var(--mono)\">0.87</span></td><td><span style=\"font-family:var(--mono)\">0.81</span></td><td>Down: assets grew about 11.5%, revenue only about 4.5%</td></tr><tr><td>ROA</td><td><span style=\"font-family:var(--mono)\">13.49%</span></td><td><span style=\"font-family:var(--mono)\">11.14%</span></td><td>Down 2.35 points: both margin and turnover fell</td></tr><tr><td>Leverage</td><td><span style=\"font-family:var(--mono)\">1.95</span></td><td><span style=\"font-family:var(--mono)\">1.79</span></td><td>Lower</td></tr><tr><td>ROE</td><td><span style=\"font-family:var(--mono)\">26.37%</span></td><td><span style=\"font-family:var(--mono)\">19.96%</span></td><td>Down 6.41 points: the fall in ROA, and a very high ROE draws competitors who copy the firm until returns drift towards the industry's</td></tr><tr><td>EPS (₹)</td><td><span style=\"font-family:var(--mono)\">137.18</span></td><td><span style=\"font-family:var(--mono)\">126.15</span></td><td>Down, following profit</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Her reading: gross margin rose while net margin fell, so the damage was below gross profit (employee costs and the exceptional foreign-exchange loss seen in L#28). The checks hold: 15.55% × 0.87 ≈ 13.5% and 13.71% × 0.81 ≈ 11.1% for ROA; 13.49% × 1.95 ≈ 26.3% and 11.14% × 1.79 ≈ 19.9% for ROE.</p><h4>Her worked problems</h4><details><summary>Mohan Company: working backwards from ratios</summary><p style=\"font-size:14.5px\">Profit margin 10%, ROA 18%, profit after tax 2,700, total assets 14,000 at the start of the year.</p><ol><li>Asset turnover = ROA ÷ margin = 18 ÷ 10 = <strong>1.8 times</strong>.</li><li>Sales = profit ÷ margin = 2,700 ÷ 10% = <strong>27,000</strong>. Average assets = profit ÷ ROA = 2,700 ÷ 18% = <strong>15,000</strong>.</li><li>Closing assets = 2 × average − opening = 2 × 15,000 − 14,000 = <strong>16,000</strong>.</li><li>If sales rise 15% with assets unchanged at 16,000: 27,000 × 1.15 = 31,050; turnover = 31,050 ÷ 16,000 = <strong>1.94 times</strong>. More sales from the same assets means more efficient use.</li></ol></details><details><summary>Sunrise Traders: all five ratios, then the cross-checks</summary><p style=\"font-size:14.5px\">Revenue ₹50 lakh, net profit ₹5 lakh, average total assets ₹40 lakh, average equity ₹25 lakh, 1 lakh equity shares.</p><div class=\"scroller\"><table><thead><tr><th>Ratio</th><th>Working</th><th>Result</th></tr></thead><tbody><tr><td>Profit margin</td><td>5 ÷ 50</td><td><span style=\"font-family:var(--mono)\">10%</span></td></tr><tr><td>Asset turnover</td><td>50 ÷ 40</td><td><span style=\"font-family:var(--mono)\">1.25 times</span></td></tr><tr><td>ROA</td><td>5 ÷ 40</td><td><span style=\"font-family:var(--mono)\">12.5%</span></td></tr><tr><td>ROE</td><td>5 ÷ 25</td><td><span style=\"font-family:var(--mono)\">20%</span></td></tr><tr><td>EPS</td><td>5 lakh ÷ 1 lakh shares</td><td><span style=\"font-family:var(--mono)\">₹5</span></td></tr><tr><td>Check ROA</td><td>10% × 1.25</td><td><span style=\"font-family:var(--mono)\">12.5%</span></td></tr><tr><td>Check ROE</td><td>12.5% × (40 ÷ 25 = 1.6)</td><td><span style=\"font-family:var(--mono)\">20%</span></td></tr></tbody></table></div></details><details><summary>Gross margin fell from 21% to 15%: what could explain it?</summary><p style=\"font-size:14.5px\">Only sales and cost of goods sold enter gross margin. Her answer: raw-material costs rose while selling prices stayed put, or selling prices were cut to match a competitor. A rise in interest expense or advertising cannot explain it, because both sit below gross profit; they affect net margin only.</p></details><h4>Case: the lipstick index</h4><p style=\"font-size:14.5px\">Her closing case: lipstick sales rose about 11% in the 2001 recession, and Estée Lauder's chairman Leonard Lauder called this the <em>lipstick index</em>. When confidence is low, people still buy small, affordable luxuries; a similar pattern was reported in the Great Depression and the Second World War, and cosmetic surgeons, psychiatrists and priests are said to be busier in bad times. Her point: a smart analyst ties a firm's numbers to wider social and economic conditions, not just to its own statements.</p><!--viz:fa-ratio-roe-chain--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: profit margin 10 percent (5 divided by 50) times asset turnover 1.25 (50 divided by 40) gives ROA 12.5 percent; times leverage 1.6 (40 divided by 25) gives ROE 20 percent.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">From margin to ROE: Sunrise Traders</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Profit margin</b><br><span style=\"color:var(--ink-2);font-size:13px\">5 ÷ 50 = 10%</span></div><span style=\"color:var(--ink-3)\">×</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Asset turnover</b><br><span style=\"color:var(--ink-2);font-size:13px\">50 ÷ 40 = 1.25</span></div><span style=\"color:var(--ink-3)\">=</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>ROA</b><br><span style=\"color:var(--ink-2);font-size:13px\">12.5%</span></div><span style=\"color:var(--ink-3)\">×</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Leverage</b><br><span style=\"color:var(--ink-2);font-size:13px\">40 ÷ 25 = 1.6</span></div><span style=\"color:var(--ink-3)\">=</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>ROE</b><br><span style=\"color:var(--ink-2);font-size:13px\">20%</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each link is a ratio you can rearrange: knowing any two in a link gives the third.</figcaption></figure><!--/viz:fa-ratio-roe-chain--><!--viz:fa-ratio-two-engines--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two columns with our own figures. A luxury watchmaker earns a 25 percent margin with asset turnover of 0.8; a supermarket chain earns a 2.5 percent margin with turnover of 8. Both reach an ROA of 20 percent, one through the margin on each sale and the other through using its assets hard.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Same ROA, two different engines</div><div style=\"display:grid;grid-template-columns:1fr 1fr;gap:4px;font-size:14px;min-width:0\"><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center\">High margin, low volume</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;align-self:center\">Low margin, high volume</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--clay-soft)\"><b>Luxury watchmaker</b><br><span style=\"color:var(--ink-2);font-size:13px\">margin 25% × turnover 0.8</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--blue-soft)\"><b>Supermarket chain</b><br><span style=\"color:var(--ink-2);font-size:13px\">margin 2.5% × turnover 8</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>ROA = 20%</b><br><span style=\"color:var(--ink-2);font-size:13px\">earned on each sale</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>ROA = 20%</b><br><span style=\"color:var(--ink-2);font-size:13px\">earned by using assets hard</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Equal ROA can hide opposite business models; split it before comparing firms.</figcaption></figure><!--/viz:fa-ratio-two-engines-->"
+    },
+    {
+     "t": "Liquidity ratios and the operating cycle",
+     "src": "L#31",
+     "h": "<p style=\"font-size:14.5px\">Lecture 31 completes ratio analysis with the other three families: liquidity, solvency and capital market ratios, again read on Dr. Reddy's. It starts with <strong>liquidity</strong>.</p><div class=\"def\"><b>Liquidity</b>: a firm's ability to pay its short-term obligations on time out of its current assets; put simply, how quickly its assets turn into cash.</div><p style=\"font-size:14.5px\"><strong>Who watches it:</strong> suppliers who sell raw material on credit, and banks and other short-term lenders. A strong liquidity position also gives the firm bargaining power, for example to negotiate longer credit from suppliers.</p><div class=\"scroller\"><table><thead><tr><th>Ratio</th><th>Formula</th><th>Question</th><th>Her example</th></tr></thead><tbody><tr><td>Current ratio</td><td>Current assets ÷ current liabilities</td><td>Current assets per ₹1 of short-term dues</td><td>Stock, receivables and cash ₹1,00,000; owed to suppliers ₹50,000: <strong>2 : 1</strong></td></tr><tr><td>Quick (acid-test) ratio</td><td>(Current assets − inventory) ÷ current liabilities</td><td>Can we pay without selling stock?</td><td>Same firm with ₹60,000 of stock: 40,000 ÷ 50,000 = <strong>0.8 : 1</strong>, so it would have to sell stock to pay</td></tr><tr><td>Receivables turnover; collection period</td><td>Revenue ÷ average trade receivables; 360 ÷ turnover</td><td>How often customer dues turn into cash; days to collect</td><td>Sales ₹36 lakh; receivables 4 → 8 lakh, average 6: <strong>6 times</strong>, <strong>60 days</strong></td></tr><tr><td>Inventory turnover; holding period</td><td>Cost of goods sold ÷ average inventory; 360 ÷ turnover</td><td>How often stock is sold and replaced; days on the shelf</td><td>COGS ₹48,000, average stock ₹8,000: <strong>6 times</strong>, <strong>60 days</strong></td></tr><tr><td>Operating cycle</td><td>Holding period + collection period</td><td>Days from buying raw material to collecting cash</td><td>60 days in stock + 45 days to collect = <strong>105 days</strong></td></tr></tbody></table></div><h4>Rules of thumb and readings</h4><ul><li><strong>Current ratio 2 : 1</strong> is the rule of thumb; above 1 means current assets cover current liabilities. She stressed it is only a guide: one size does not fit all industries or firm policies.</li><li><strong>Quick ratio 1 : 1</strong>. Inventory is left out because it is a step further from cash: it must first be sold, and the sale collected.</li><li><strong>The lecture's year is 360 days</strong> for both the collection and the holding period.</li><li>A <strong>higher inventory turnover</strong> is better: stock sells and is replaced faster.</li><li>A <strong>shorter operating cycle</strong> is better. A longer one ties up funds for longer, so working-capital needs rise, and storage and insurance costs add up.</li></ul><h4>Her practice questions</h4><details><summary>Paying suppliers ₹50,000 in cash: what happens to the current and quick ratios?</summary><p style=\"font-size:14.5px\">Current assets ₹2,00,000 (of which inventory ₹80,000) and current liabilities ₹1,00,000, so current ratio 2 and quick ratio 1.2. Paying ₹50,000 to suppliers cuts cash <em>and</em> payables by the same amount.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Before</th><th>After paying ₹50,000</th></tr></thead><tbody><tr><td>Current ratio</td><td>2,00,000 ÷ 1,00,000 = <span style=\"font-family:var(--mono)\">2</span></td><td>1,50,000 ÷ 50,000 = <span style=\"font-family:var(--mono)\">3</span></td></tr><tr><td>Quick ratio</td><td>1,20,000 ÷ 1,00,000 = <span style=\"font-family:var(--mono)\">1.2</span></td><td>70,000 ÷ 50,000 = <span style=\"font-family:var(--mono)\">1.4</span></td></tr></tbody></table></div><p style=\"font-size:14.5px\">Both ratios rise. (In the recording she once says 1.5 for the new quick ratio, then 1.4; 1.4 is the correct figure.) When a ratio is above 1, taking the same amount off the top and the bottom pushes it up.</p></details><details><summary>Sri (35 days) and Lakshmi (45 days): who manages receivables better?</summary><p style=\"font-size:14.5px\">Two travel agents with collection periods of 35 and 45 days. The shorter period does not settle it. First find out:</p><ul><li><strong>Credit terms</strong>: if Sri allows 30 days and collects in 35, she is 5 days late; if Lakshmi allows 60 and collects in 45, she is 15 days early.</li><li><strong>Quality of dues</strong>: how much is overdue (the ageing of receivables) and how much has been written off as bad debts.</li><li><strong>Customer mix</strong>: more cash sales shorten the period; corporate customers pay more slowly than retail ones.</li></ul></details><details><summary>The current ratio fell from 3.54 to 2.17 with sales and credit terms unchanged: why?</summary><p style=\"font-size:14.5px\">Her answer: two of the four events explain a <em>fall</em>. A loan that now falls due within the year becomes a current liability, raising the denominator; and a higher default risk means a bigger allowance for bad debts, which cuts receivables and so current assets. A lower tax rate or a smaller dividend leaves more cash in the business, which pushes the ratio up, not down.</p></details><!--viz:fa-ratio-operating-cycle--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two bars side by side: a holding period of 60 days from buying raw material to selling the goods, then a collection period of 45 days from the credit sale to receiving cash. Together they make an operating cycle of 105 days. Dr. Reddy's cycle lengthened from 232 to 243 days.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The operating cycle: two periods end to end</div><div style=\"font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;gap:4px\"><div style=\"flex:60 1 0;min-width:120px;padding:8px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Holding period · 60 days</b><br><span style=\"color:var(--ink-2);font-size:13px\">raw material bought → goods sold</span></div><div style=\"flex:45 1 0;min-width:120px;padding:8px 10px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>Collection period · 45 days</b><br><span style=\"color:var(--ink-2);font-size:13px\">credit sale → cash from the customer</span></div></div><div style=\"margin-top:6px;padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);text-align:center\"><b>Operating cycle = 60 + 45 = 105 days</b><br><span style=\"color:var(--ink-2);font-size:13px\">holding = 360 ÷ inventory turnover · collection = 360 ÷ receivables turnover</span></div><div style=\"margin-top:6px;color:var(--ink-3);font-size:13px\">Dr. Reddy's: 232 days in 2015 → 243 days in 2016, so funds stayed tied up longer.</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Shorten either period and less money is tied up in working capital.</figcaption></figure><!--/viz:fa-ratio-operating-cycle--><!--viz:fa-ratio-pay-suppliers--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table: current assets 2,00,000 including inventory 80,000, current liabilities 1,00,000. Paying suppliers 50,000 cuts cash and payables by 50,000 each. The current ratio rises from 2.0 to 3.0 and the quick ratio from 1.2 to 1.4.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Paying suppliers lifts both liquidity ratios</div><div class=\"scroller\"><table><thead><tr><th>₹</th><th>Before</th><th>Pay suppliers 50,000</th><th>After</th></tr></thead><tbody><tr><td>Current assets</td><td><span style=\"font-family:var(--mono)\">2,00,000</span></td><td><span style=\"font-family:var(--mono)\">− 50,000 cash</span></td><td><span style=\"font-family:var(--mono)\">1,50,000</span></td></tr><tr><td>of which inventory</td><td><span style=\"font-family:var(--mono)\">80,000</span></td><td><span style=\"font-family:var(--mono)\">—</span></td><td><span style=\"font-family:var(--mono)\">80,000</span></td></tr><tr><td>Current liabilities</td><td><span style=\"font-family:var(--mono)\">1,00,000</span></td><td><span style=\"font-family:var(--mono)\">− 50,000 payables</span></td><td><span style=\"font-family:var(--mono)\">50,000</span></td></tr><tr><td>Current ratio</td><td><span style=\"font-family:var(--mono)\">2.0</span></td><td></td><td style=\"background:var(--blue-soft)\"><span style=\"font-family:var(--mono)\">3.0</span></td></tr><tr><td>Quick ratio</td><td><span style=\"font-family:var(--mono)\">1.2</span></td><td></td><td style=\"background:var(--blue-soft)\"><span style=\"font-family:var(--mono)\">1.4</span></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Equal cuts to the top and bottom of a ratio above 1 push it up, though the firm is no richer.</figcaption></figure><!--/viz:fa-ratio-pay-suppliers-->"
+    },
+    {
+     "t": "Solvency ratios: debt–equity and interest coverage",
+     "src": "L#31",
+     "h": "<p style=\"font-size:14.5px\"><strong>Solvency</strong> is about long-term survival rather than next month's bills, and it depends mainly on how much the firm has borrowed: the more debt, the more vulnerable the firm.</p><h4>Why borrow at all, and what it costs</h4><div class=\"scroller\"><table><thead><tr><th>Debt is cheaper…</th><th>…but riskier</th></tr></thead><tbody><tr><td>Interest is tax-deductible, so the after-tax cost of a loan is lower. Dividends to equity holders come out of after-tax profit, with no tax saving.</td><td>Interest is a fixed obligation, payable however the firm is doing. If it is not paid, lenders can force the company into liquidation.</td></tr></tbody></table></div><div class=\"scroller\"><table><thead><tr><th>Ratio</th><th>Formula</th><th>Reading</th><th>Her example</th></tr></thead><tbody><tr><td>Debt–equity ratio</td><td>Total debt ÷ shareholders' equity, where debt = interest-bearing borrowings, short- or long-term</td><td>Higher means more risk for the firm and its lenders</td><td>Loan ₹40 lakh, equity ₹80 lakh: <strong>0.5 : 1</strong>, i.e. lenders put in 50 paise for every ₹1 from the owners</td></tr><tr><td>Interest coverage ratio</td><td>Earnings before interest and tax (EBIT) ÷ interest expense</td><td>How far profit can fall before an interest payment is missed; higher is safer for lenders</td><td>EBIT ₹12 lakh, interest ₹3 lakh: <strong>4 times</strong>, so profit could fall by 75% and interest would still be paid</td></tr></tbody></table></div><div class=\"def\"><b>Reading interest coverage</b>: with coverage of <i>n</i> times, EBIT can fall by (1 − 1/<i>n</i>) of its level before it no longer covers interest. 4 times → 75%; 5 times → 80%.</div>"
+    },
+    {
+     "t": "Capital market ratios, and Dr. Reddy's beyond profit",
+     "src": "L#31",
+     "h": "<p style=\"font-size:14.5px\"><strong>Capital market ratios</strong> link the share price to the firm's earnings, dividends or book value. They matter to investors and analysts deciding whether a share is worth its price.</p><div class=\"scroller\"><table><thead><tr><th>Ratio</th><th>Formula</th><th>Her example or reading</th></tr></thead><tbody><tr><td>Price–earnings (P/E)</td><td>Market price per share ÷ EPS</td><td>Price ₹300, EPS ₹20: <strong>15</strong>. A high P/E shows the market's confidence in future growth</td></tr><tr><td>Earnings yield</td><td>EPS ÷ market price</td><td>The P/E turned upside down</td></tr><tr><td>Dividend yield</td><td>Dividend per share ÷ price × 100</td><td>₹5 dividend on a ₹100 share: <strong>5%</strong></td></tr><tr><td>Stock return</td><td>(Dividend + closing price − opening price) ÷ opening price × 100</td><td>Buy at ₹100, receive ₹5, price rises to ₹110: (5 + 10) ÷ 100 = <strong>15%</strong></td></tr><tr><td>Price-to-book (P/B)</td><td>Market price per share ÷ book value per share, where book value per share = equity ÷ number of shares</td><td>Above 1: the market expects returns above the required rate</td></tr><tr><td>Beta</td><td>Sensitivity of the share to movements in the whole market</td><td>Lower beta: less volatile, lower risk</td></tr></tbody></table></div><details><summary>Her P/E problem: from operating profit to market price</summary><p style=\"font-size:14.5px\">Operating profit ₹100 million (before interest and tax), interest ₹10 million, tax 30%, preference dividend ₹6 million, P/E 10.</p><ol><li>Earnings before tax = 100 − 10 = 90.</li><li>Profit after tax = 90 × (1 − 0.30) = 63.</li><li>Profit for equity = 63 − 6 = 57; dividing by the number of equity shares in the question gives <strong>EPS ₹19</strong> (so the question had 3 million shares).</li><li>Price = EPS × P/E = 19 × 10 = <strong>₹190</strong>.</li></ol></details><details><summary>Two appliance makers, X and Y: which share would you recommend?</summary><p style=\"font-size:14.5px\">From the given EPS, dividend per share, price and beta: X has a P/E of 17 against Y's 14, a higher dividend yield and a lower beta (1.3). For a cautious client, recommend X: stronger market standing and less volatility. For a client who accepts more risk and believes Y's lower P/E means it is underpriced, Y. The recommendation depends on the investor's risk appetite.</p></details><h4>Dr. Reddy's, 2015 to 2016, beyond profitability</h4><div class=\"scroller\"><table><thead><tr><th>Family</th><th>What moved</th><th>Verdict</th></tr></thead><tbody><tr><td>Liquidity</td><td>Current ratio about steady; collection period up from 89 to 95 days; operating cycle up from 232 to 243 days</td><td>Not a good sign: cash is coming in more slowly and funds are tied up longer</td></tr><tr><td>Solvency</td><td>Debt–equity ratio down; interest coverage up from 27.8 to 33 times</td><td>Strong and improving</td></tr><tr><td>Capital market</td><td>P/E and P/B slightly lower than in 2015</td><td>A slight softening in the market's valuation</td></tr></tbody></table></div><p style=\"font-size:14.5px\">On the operating cycle she also read out a holding period of 140 days and a collection period of 90 days, which add to 230, not 243, and the 90 does not match the 95-day collection period above. Check the slide before quoting the split; the 232 → 243 headline is what she drew conclusions from.</p><h4>Who reads which ratios</h4><ul><li>Suppliers and short-term lenders: <strong>liquidity</strong>.</li><li>Long-term lenders: <strong>solvency</strong>.</li><li>Investors and analysts: <strong>capital market</strong> ratios.</li></ul><div class=\"def\"><b>From the lecture (L#31):</b> Her closing caution on market ratios: a low P/E or P/B can signal weak prospects or a bargain, so read them alongside the financial statements, never on their own. As in L#30, she solved every numerical by rearranging the ratio definitions rather than reaching for a ready-made formula.</div><!--viz:fa-ratio-who-reads--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Four rows. Suppliers and banks read liquidity ratios: current, quick, turnovers and the operating cycle. Long-term lenders read solvency ratios: debt-equity and interest coverage. Investors and analysts read capital market ratios: P/E, yields, stock return, P/B and beta. Owners and managers read the profitability ratios from L#30.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Four ratio families and who reads them</div><div style=\"display:grid;grid-template-columns:minmax(80px,auto) 1fr;gap:4px;font-size:14px;min-width:0\"><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;align-self:center\">Suppliers, banks (short term)</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--blue-soft)\"><b>Liquidity</b><br><span style=\"color:var(--ink-2);font-size:13px\">current, quick, receivables and inventory turnover, operating cycle · will we be paid this quarter?</span></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;align-self:center\">Long-term lenders</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Solvency</b><br><span style=\"color:var(--ink-2);font-size:13px\">debt–equity, interest coverage · will the firm survive and keep paying interest?</span></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;align-self:center\">Investors, analysts</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--clay-soft)\"><b>Capital market</b><br><span style=\"color:var(--ink-2);font-size:13px\">P/E, earnings and dividend yield, stock return, P/B, beta · is the share worth its price?</span></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;align-self:center\">Owners, managers</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Profitability (L#30)</b><br><span style=\"color:var(--ink-2);font-size:13px\">margins, asset turnover, ROA, ROE, EPS · how well are sales, assets and equity turned into profit?</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Pick the family that answers the reader's question before computing anything.</figcaption></figure><!--/viz:fa-ratio-who-reads-->"
+    },
+    {
+     "t": "Textbook: Financial Statement Analysis",
+     "src": "Anthony 13e ch13",
+     "h": "<p>A number on its own says little; analysis means comparing it with something. Anthony organises ratios around return on investment, measured three ways (on assets, invested capital and equity), and then splits that return into profit margin and investment turnover so that each manager's area of responsibility becomes visible. Supporting ratios test profitability, how hard assets and working capital are used, liquidity and solvency, and dividend policy, while the P/E ratio shows how the market judges future performance. The chapter warns that 'higher' is not always better, that definitions vary, that balance sheets can be window-dressed and that historical costs distort comparisons. Any standard used for comparison (experience, budget, past results or outside benchmarks) is imperfect, so ratio analysis mostly tells a manager which questions to ask, not the answers.</p><!--viz:fa-atc-roi-five-ways--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table for our own example, Sahyadri Appliances, in rupees crore: ROE 112.5 over equity 400 is 28.1 percent; ROA in the lecture's form, profit after tax over total assets, is 14.1 percent; Anthony's ROA adds back after-tax interest, 135 over 800, 16.9 percent; Anthony's ROIC is 135 over long-term debt plus equity of 600, 22.5 percent; pre-tax ROCE is EBIT 180 over 600, 30 percent.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One company, five return figures</div><div class=\"scroller\"><table><thead><tr><th>Measure</th><th>Numerator</th><th>Base</th><th>Result</th></tr></thead><tbody><tr><td>ROE</td><td>PAT 112.5</td><td>Equity 400</td><td><span style=\"font-family:var(--mono)\">28.1%</span></td></tr><tr style=\"background:var(--blue-soft)\"><td>ROA, lecture form</td><td>PAT 112.5</td><td>Total assets 800</td><td><span style=\"font-family:var(--mono)\">14.1%</span></td></tr><tr><td>ROA, Anthony</td><td>PAT + 30 × 0.75 = 135</td><td>Total assets 800</td><td><span style=\"font-family:var(--mono)\">16.9%</span></td></tr><tr><td>ROIC, Anthony</td><td>135</td><td>Long-term debt + equity 600</td><td><span style=\"font-family:var(--mono)\">22.5%</span></td></tr><tr><td>ROCE, pre-tax</td><td>EBIT 180</td><td>600</td><td><span style=\"font-family:var(--mono)\">30.0%</span></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Same firm, returns from 14% to 30%: always say which numerator and base you used. Year-end figures here; the lecture averages the base.</figcaption></figure><!--/viz:fa-atc-roi-five-ways--><!--viz:fa-atc-cash-conversion--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow for Sahyadri Appliances: receivable days 36.5 plus inventory days 65.2 gives an operating cycle of 101.7 days; minus payable days 47.8 gives a cash conversion cycle of 53.9 days.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">From operating cycle to cash conversion cycle</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Receivable days</b><br><span style=\"color:var(--ink-2);font-size:13px\">36.5</span></div><span style=\"color:var(--ink-3)\">+</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Inventory days</b><br><span style=\"color:var(--ink-2);font-size:13px\">65.2</span></div><span style=\"color:var(--ink-3)\">=</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Operating cycle</b><br><span style=\"color:var(--ink-2);font-size:13px\">101.7 days</span></div><span style=\"color:var(--ink-3)\">−</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Payable days</b><br><span style=\"color:var(--ink-2);font-size:13px\">47.8</span></div><span style=\"color:var(--ink-3)\">=</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Cash conversion cycle</b><br><span style=\"color:var(--ink-2);font-size:13px\">53.9 days</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The lecture's operating cycle stops at the middle box; Anthony goes on to subtract supplier credit.</figcaption></figure><!--/viz:fa-atc-cash-conversion--><!--viz:fa-atc-roe-five-factor--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: pretax margin 12.5 percent times asset turnover 1.5 times leverage 2.0 times tax retention 0.75 equals ROE 28.1 percent.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Five-factor ROE for Sahyadri Appliances</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Pretax margin</b><br><span style=\"color:var(--ink-2);font-size:13px\">150 ÷ 1,200 = 12.5%</span></div><span style=\"color:var(--ink-3)\">×</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Asset turnover</b><br><span style=\"color:var(--ink-2);font-size:13px\">1,200 ÷ 800 = 1.5</span></div><span style=\"color:var(--ink-3)\">×</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Leverage</b><br><span style=\"color:var(--ink-2);font-size:13px\">800 ÷ 400 = 2.0</span></div><span style=\"color:var(--ink-3)\">×</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Tax retention</b><br><span style=\"color:var(--ink-2);font-size:13px\">1 − 0.25 = 0.75</span></div><span style=\"color:var(--ink-3)\">=</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>ROE</b><br><span style=\"color:var(--ink-2);font-size:13px\">28.1%</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The first two factors are operations, the last two financing and tax; L#30's ROE = margin × turnover × leverage folds tax into the margin.</figcaption></figure><!--/viz:fa-atc-roe-five-factor--><p><strong>Analysis means comparison</strong> — An absolute figure such as a ₹10 crore profit is meaningless until it is set against size, last year, a budget or a competitor. Comparing a firm's ratios across years is trend (longitudinal) analysis; comparing with other firms uses external benchmarks.</p><p><strong>Three measures of return on investment</strong> — Return on assets uses all funds invested (total assets) and suits divisions whose managers do not control financing. Return on invested capital uses long-term funds (non-current liabilities plus equity). Return on equity uses only shareholders' funds and matters most to shareholders.<br><span style=\"font-family:var(--mono)\">ROA = [NI + Interest × (1 − t)] ÷ Total assets; ROIC = [NI + Interest × (1 − t)] ÷ (Long-term liabilities + Equity); ROE = NI ÷ Equity</span></p><p><strong>Why after-tax interest is added back</strong> — ROA and ROIC measure how well a whole pool of capital was used, before paying for that capital. Net income already has interest (a cost of the debt part of the pool) deducted, so the after-tax interest is added back. ROE keeps interest deducted because shareholders earn only what is left after lenders are paid. Many analysts skip the adjustment and use plain net income.</p><p><strong>Profit margin × investment turnover (DuPont)</strong> — ROI equals net income ÷ sales multiplied by sales ÷ investment. A firm can raise its return by earning more per rupee of sales or by generating more sales per rupee invested. Low-margin, high-turnover businesses (supermarkets) and high-margin, low-turnover ones (utilities) can earn similar returns.<br><span style=\"font-family:var(--mono)\">ROI = (NI ÷ Sales) × (Sales ÷ Investment)</span></p><p><strong>Five-factor return on equity</strong> — ROE can be split into pretax margin, asset turnover, financial leverage (assets ÷ equity) and the tax retention rate (1 − tax rate). The first two reflect operations; the last two reflect financing and tax policy.<br><span style=\"font-family:var(--mono)\">ROE = (PBT ÷ Sales) × (Sales ÷ Assets) × (Assets ÷ Equity) × (1 − t)</span></p><p><strong>Financial leverage</strong> — Funding new assets with debt raises ROE if the assets earn more than the after-tax cost of the debt, but fixed interest and repayments increase the risk that shareholders lose their investment. The assets-to-equity ratio measures how much of the asset base is supported by each rupee of equity.</p><p><strong>Price/earnings ratio</strong> — Market price per share divided by earnings per share. Because it involves the share price, which management does not control, it is the best indicator of how investors view future performance. Use diluted EPS if dilutive securities exist, and check whether one-time items have been excluded.<br><span style=\"font-family:var(--mono)\">P/E = Market price per share ÷ EPS</span></p><p><strong>Profitability ratios and common-size statements</strong> — Expressing each income-statement line as a percentage of sales (vertical analysis) gives gross margin, pretax margin and net profit margin. A common-size balance sheet uses total assets as 100%. Comparing common-size statements across years shows which costs or assets are moving out of line. Profit margin alone ignores the investment needed to earn it.</p><p><strong>Investment utilisation ratios</strong> — Asset, invested-capital and equity turnover show sales per rupee invested. Capital asset intensity (sales ÷ PP&amp;E, also called fixed-asset turnover) flags firms with heavy fixed costs that suffer in recessions. Working-capital turnover is sales ÷ (current assets − current liabilities).<br><span style=\"font-family:var(--mono)\">Asset turnover = Sales ÷ Total assets; Capital intensity = Sales ÷ PP&amp;E</span></p><p><strong>Days ratios and the cash conversion cycle</strong> — Days' receivables = receivables ÷ (sales ÷ 365); days' inventory = inventory ÷ (cost of sales ÷ 365); inventory turnover = cost of sales ÷ inventory. Days' payables uses operating payables over daily cash expenses. Receivable days plus inventory days give the operating cycle; subtracting payable days gives the cash conversion cycle, the period for which the firm must finance its operations.<br><span style=\"font-family:var(--mono)\">Cash conversion cycle = Days' receivables + Days' inventory − Days' payables</span></p><p><strong>Liquidity and solvency ratios</strong> — Liquidity is the ability to meet current obligations: current ratio and acid-test (quick) ratio. Solvency is the ability to meet interest and repayment on long-term obligations: debt/equity, debt/capitalisation, times interest earned and cash flow ÷ debt. Anthony notes that, conceptually, debt means interest-bearing liabilities, but published ratios do not always say which liabilities are included.<br><span style=\"font-family:var(--mono)\">Times interest earned = (Pretax operating profit + Interest) ÷ Interest</span></p><p><strong>Dividend ratios and implied growth</strong> — Dividend yield = dividend per share ÷ market price; payout = dividends ÷ net income. Retained profit funds growth without new equity, so ROE × (1 − payout) gives the implied (sustainable) growth rate, a potential not a forecast. Comparing dividend yield with a bond's interest yield is misleading, because shareholders also gain from retained earnings.<br><span style=\"font-family:var(--mono)\">Implied growth = ROE × (1 − Dividend payout)</span></p><p><strong>Growth measures</strong> — Average growth averages the year-to-year percentage changes; compound growth finds the single annual rate that turns the first-year figure into the last-year figure. If the first or last year is abnormal, the compound rate can mislead.<br><span style=\"font-family:var(--mono)\">Compound growth = (Final ÷ Initial)^(1/n) − 1</span></p><p><strong>Why comparisons are hard</strong> — A higher figure is not always better (a very high current ratio may mean idle funds); circumstances differ between firms; historical-cost figures are distorted by inflation and asset age; terms like profit and current assets are defined differently; year-end balance sheets can hide seasonal swings or be window-dressed; and past ratios do not guarantee the future.</p><p><strong>Four types of standard</strong> — Actual results can be compared with (1) the analyst's experience, (2) a budget, (3) the firm's own past results and (4) external benchmarks such as a competitor or industry averages. None is perfect: budgets rest on assumptions, history may itself be poor, and other firms may differ in accounting and circumstances. Analysis mostly raises questions to investigate.</p><div class=\"card\"><strong>Case: Genmo Corporation</strong> <em>(Case 13–1)</em><p>A fire destroys a company's current financial statements just before the owner meets a prospective buyer. Only last year's statements, a few current-year figures and a table of ratios survive. Students rebuild the current balance sheet and income statement from the ratios.</p><p><em>Lesson:</em> Ratios are linked identities; knowing their definitions lets you work backwards from ratios to the underlying statement figures.</p><p><em>Think:</em> If you know revenue, the current ratio and current liabilities, which balance-sheet figures can you recover, and which ratio would you use next?</p></div><div class=\"card\"><strong>Case: Identify the Industries</strong> <em>(Case 13–3)</em><p>Twelve firms from very different industries (a bank, an airline, a utility, a temporary-staffing agency, a warehouse club and others) are shown only as common-size balance sheets with a few ratios. Students match each column to its industry.</p><p><em>Lesson:</em> Asset structure, turnover, margins and leverage reflect the economics of an industry, which is why cross-industry ratio comparisons need care.</p><p><em>Think:</em> Which features would you expect in the common-size balance sheet of a utility compared with a staffing agency, and why?</p></div><div class=\"card\"><strong>Case: Butler Lumber Company</strong> <em>(Case 13–6)</em><p>A profitable, fast-growing lumber retailer keeps running short of cash, leans heavily on trade credit and has hit its bank's lending limit. The owner seeks a larger line of credit from a new bank, which must decide whether to lend.</p><p><em>Lesson:</em> Growth ties up cash in receivables and inventory; turnover and days ratios explain why a profitable firm needs more financing.</p><p><em>Think:</em> Which ratios would you compute to judge whether the growth is financeable, and what would worry you as the lender?</p></div><details><summary>Worked problem: Liquidity and solvency for an Indian company</summary><p>Sahyadri Appliances Ltd, 31 March 2026 (₹ crore): cash and cash equivalents 40, trade receivables 120, inventories 150, prepaid expenses 10; net PP&amp;E 480; total assets 800. Trade payables 110, short-term borrowings 50, other current liabilities 40; long-term borrowings 200; equity share capital 100 and other equity 300. For the year: EBIT 180, finance cost 30. Compute the current ratio, quick ratio, three versions of debt/equity and interest coverage.</p><ol><li>Current assets = 40 + 120 + 150 + 10 = 320; current liabilities = 110 + 50 + 40 = 200. Current ratio = 320 ÷ 200 = 1.6.</li><li>Quick assets: L#31 definition = current assets − inventories = 320 − 150 = 170, so quick ratio = 170 ÷ 200 = 0.85. Anthony's monetary current assets (cash + receivables) = 160, giving 0.8.</li><li>Shareholders' funds = 100 + 300 = 400.</li><li>Long-term debt ÷ equity = 200 ÷ 400 = 0.5.</li><li>Interest-bearing debt ÷ equity = (200 + 50) ÷ 400 = 0.625 (the L#31 definition: all borrowings, short- and long-term).</li><li>Total liabilities ÷ equity = (200 + 200) ÷ 400 = 1.0.</li><li>Interest coverage = EBIT ÷ interest = 180 ÷ 30 = 6 times.</li></ol><p><strong>Answer:</strong> Current ratio 1.6; quick ratio 0.85 (lecture) or 0.8 (Anthony); debt/equity 0.5 (long-term), 0.625 (all interest-bearing, as in L#31) or 1.0 (total liabilities); interest coverage 6 times.</p></details><details><summary>Worked problem: Return on investment three ways and the DuPont split</summary><p>Sahyadri Appliances: revenue ₹1,200 crore, EBIT ₹180 crore, finance cost ₹30 crore, tax rate 25%, total assets ₹800 crore, long-term borrowings ₹200 crore, equity ₹400 crore. Compute PAT, ROE, Anthony's ROA and ROIC, the pre-tax ROCE, and check ROE with the three- and five-factor splits.</p><ol><li>PBT = 180 − 30 = 150; tax = 37.5; PAT = 112.5.</li><li>ROE = 112.5 ÷ 400 = 28.1%.</li><li>After-tax interest = 30 × (1 − 0.25) = 22.5. ROA (Anthony) = (112.5 + 22.5) ÷ 800 = 16.9%. (Plain NI ÷ TA = 14.1%.)</li><li>ROIC (Anthony) = 135 ÷ (200 + 400) = 22.5%. Pre-tax ROCE = EBIT ÷ capital employed = 180 ÷ 600 = 30.0%.</li><li>Three-factor: profit margin 112.5 ÷ 1,200 = 9.375% × asset turnover 1,200 ÷ 800 = 1.5 × leverage 800 ÷ 400 = 2.0 → 28.1%.</li><li>Five-factor: pretax margin 150 ÷ 1,200 = 12.5% × 1.5 × 2.0 × tax retention 0.75 → 28.1%.</li></ol><p><strong>Answer:</strong> PAT ₹112.5 crore; ROE 28.1%; ROA 16.9% (Anthony) vs 14.1% (NI ÷ TA, the lecture's form on year-end assets); ROIC 22.5% vs ROCE 30.0%; both DuPont splits reproduce ROE = 28.1%.</p></details><details><summary>Worked problem: Working-capital days and the cash conversion cycle</summary><p>Sahyadri Appliances: revenue ₹1,200 crore; cost of goods sold ₹840 crore; closing receivables ₹120 crore; inventory ₹130 crore at the start of the year and ₹150 crore at the end; trade payables ₹110 crore. Use 365 days and, as a simplification, cost of goods sold as the base for payable days. Compute inventory turnover (closing and average), days' inventory, days' receivables, days' payables and the cash conversion cycle (closing balances).</p><ol><li>Inventory turnover on closing inventory = 840 ÷ 150 = 5.6 times (Anthony's illustration basis).</li><li>On average inventory = 840 ÷ [(130 + 150) ÷ 2] = 840 ÷ 140 = 6.0 times.</li><li>Days' inventory (closing) = 150 ÷ (840 ÷ 365) = 65.2 days.</li><li>Days' receivables = 120 ÷ (1,200 ÷ 365) = 36.5 days.</li><li>Days' payables ≈ 110 ÷ (840 ÷ 365) = 47.8 days.</li><li>Cash conversion cycle = 36.5 + 65.2 − 47.8 = 53.9 days.</li></ol><p><strong>Answer:</strong> Inventory turnover 5.6 (closing) or 6.0 (average); days' inventory 65.2; days' receivables 36.5; days' payables 47.8; cash conversion cycle about 54 days.</p></details><details><summary>Worked problem: Market, dividend and growth ratios</summary><p>Sahyadri Appliances has 10 crore equity shares of ₹10 each, PAT ₹112.5 crore, a share price of ₹135 and a dividend of ₹4.50 per share. Five years ago revenue was ₹800 crore; it is now ₹1,200 crore. ROE is 28.125%. Compute EPS, P/E, dividend yield, payout, implied growth and compound revenue growth.</p><ol><li>EPS = 112.5 ÷ 10 = ₹11.25.</li><li>P/E = 135 ÷ 11.25 = 12 times.</li><li>Dividend yield = 4.50 ÷ 135 = 3.33%.</li><li>Total dividend = 4.50 × 10 = ₹45 crore; payout = 45 ÷ 112.5 = 40%.</li><li>Implied growth = 28.125% × (1 − 0.40) = 16.9%.</li><li>Compound revenue growth = (1,200 ÷ 800)^(1/5) − 1 = 8.45% a year.</li></ol><p><strong>Answer:</strong> EPS ₹11.25; P/E 12; dividend yield 3.33%; payout 40%; implied growth 16.9%; compound revenue growth 8.45% a year.</p></details><div class=\"def\"><b>Book vs lecture — Return on assets numerator.</b> Book: ROA = [net income + interest × (1 − tax rate)] ÷ total assets; notes that some analysts simply use net income. Lecture: L#30: ROA (also called ROI) = net profit ÷ average total assets, so ROA = profit margin × asset turnover exactly. <b>Use the lecture's net profit ÷ average total assets in the course exams; use Anthony's after-tax-interest version only if a question names it.</b></div><div class=\"def\"><b>Book vs lecture — Year-end vs average balances.</b> Book: Uses year-end balances in its worked illustration but recommends averages when a flow is divided by a stock. Lecture: L#30 and L#31 always average opening and closing balances for assets, equity, receivables and inventory. <b>Average whenever opening and closing figures are given; otherwise use the year-end figure and say so.</b></div><div class=\"def\"><b>Book vs lecture — Days in the year.</b> Book: Days' receivables and days' inventory divide by daily sales or cost of sales on a 365-day year. Lecture: L#31: collection period and holding period = 360 ÷ turnover. <b>Use 360 in the course exams unless the question says 365; the answers differ by about 1%.</b></div><div class=\"def\"><b>Book vs lecture — Quick (acid-test) ratio numerator.</b> Book: Monetary current assets (cash, marketable securities, receivables) ÷ current liabilities. Lecture: L#31: (current assets − inventory) ÷ current liabilities, rule of thumb 1 : 1. <b>Follow the lecture; the two differ only when there are prepaid expenses or other non-monetary current assets besides inventory.</b></div><div class=\"def\"><b>Book vs lecture — Operating cycle vs cash conversion cycle.</b> Book: Operating cycle = receivable days + inventory days; subtracting payable days gives the cash conversion cycle. Lecture: L#31 teaches the operating cycle (holding period + collection period) only; payables are not deducted. <b>If asked for the operating cycle, do not subtract payable days.</b></div><div class=\"def\"><b>Book vs lecture — Debt/equity ratio.</b> Book: Long-term liabilities ÷ equity or total liabilities ÷ equity; conceptually debt is interest-bearing. Lecture: L#31: total debt ÷ shareholders' equity, where debt is every interest-bearing borrowing, short- or long-term. <b>Use the lecture's definition and write the formula before computing.</b></div><div class=\"def\"><b>Book vs lecture — Market ratios covered.</b> Book: P/E, dividend yield, dividend payout and implied growth. Lecture: L#31 adds earnings yield, stock return, price-to-book and beta, and does not cover payout or implied growth. <b>The lecture's list is the one to know for the course; payout and implied growth are textbook extras.</b></div>"
     }
    ]
   }
@@ -713,6 +755,22 @@ HUB.addCourse({
   },
   {
    "name": "Financial statement analysis",
+   "unit": "analysis"
+  },
+  {
+   "name": "Profitability ratios",
+   "unit": "analysis"
+  },
+  {
+   "name": "Liquidity ratios",
+   "unit": "analysis"
+  },
+  {
+   "name": "Solvency ratios",
+   "unit": "analysis"
+  },
+  {
+   "name": "Capital market ratios",
    "unit": "analysis"
   }
  ],
@@ -1568,6 +1626,139 @@ HUB.addCourse({
    "p": "Sunrise Traders: FIFO gross profit ₹9,700 against ₹9,100 under weighted average. FIFO leaves the newest, dearest units in closing stock and charges the older, cheaper ones to cost.",
    "f": "rising prices → FIFO profit up",
    "lec": 26
+  },
+  {
+   "id": "fa-t0126",
+   "h": "Anthony's ROA adds back interest × (1 − tax rate), not the full interest",
+   "p": "Interest is tax-deductible, so its true cost to the firm is the after-tax amount. Adding back full interest or using EBIT gives a different (pre-tax) ratio; L#30 uses plain net profit ÷ average total assets.",
+   "f": "add back interest × (1 − t)",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-t0127",
+   "h": "ROCE as many analysts compute it is pre-tax; Anthony's ROIC is after-tax",
+   "p": "A common practitioner version is ROCE = EBIT ÷ capital employed, before tax. Anthony's ROIC = [NI + interest(1 − t)] ÷ (long-term liabilities + equity), after tax. The two give different numbers for the same firm, so state which one you use.",
+   "f": "ROCE uses EBIT",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-t0128",
+   "h": "Inventory turnover uses cost of sales, not sales",
+   "p": "Inventory is carried at cost, so dividing sales (at selling price) by inventory inflates the ratio. Anthony uses year-end inventory for illustration; L#31 uses average inventory. State which you use.",
+   "f": "cost over cost",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-t0129",
+   "h": "A higher current ratio is not always better",
+   "p": "Above a sensible range it signals idle funds. It can also be raised cosmetically: borrowing long-term to pay creditors, or paying creditors from cash when the ratio is already above 1, pushes it up without any real improvement.",
+   "f": "liquid ≠ well managed",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-t0130",
+   "h": "A high profit margin alone does not mean a good business",
+   "p": "Margin ignores the investment needed. Utilities have high margins but modest ROE; supermarkets have thin margins but high turnover and above-average ROE.",
+   "f": "margin × turnover",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-t0131",
+   "h": "Interest coverage uses profit BEFORE interest",
+   "p": "Times interest earned = (profit before tax + interest) ÷ interest. Dividing profit before tax by interest understates coverage because interest has already been deducted.",
+   "f": "add interest back first",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-t0132",
+   "h": "'Debt/equity' has several definitions",
+   "p": "Anthony shows long-term liabilities ÷ equity and total liabilities ÷ equity; conceptually debt means interest-bearing liabilities. L#31 counts all interest-bearing borrowings, short- and long-term, against shareholders' equity. Always state the definition.",
+   "f": "define debt first",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-t0133",
+   "h": "Implied growth is a potential, not a prediction",
+   "p": "ROE × (1 − payout) shows how fast the firm could grow without new equity if ROE and payout hold. Actual growth depends on markets and other factors.",
+   "f": "could grow, not will grow",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-t0134",
+   "h": "Interest, advertising and salaries do not change the gross margin",
+   "p": "Gross margin uses only sales and cost of goods sold. Indirect costs sit below gross profit, so they move the net margin only. A fall in gross margin points to higher input costs or lower selling prices.",
+   "f": "gross = sales − COGS only",
+   "lec": 30
+  },
+  {
+   "id": "fa-t0135",
+   "h": "Asset turnover, ROA and ROE use average balances, not closing ones",
+   "p": "In L#30 every ratio with assets or equity as the base used (opening + closing) ÷ 2. Using the closing figure alone gives a different answer, e.g. sales 45 on assets 12 → 18 is 3 times on the average but 2.5 on the closing balance.",
+   "f": "average the base",
+   "lec": 30
+  },
+  {
+   "id": "fa-t0136",
+   "h": "A higher EPS does not mean a more profitable company",
+   "p": "EPS divides profit by the number of shares, and every firm has a different number. Use it to track one company over time; to compare firms use margin, ROA or ROE.",
+   "f": "EPS: same firm only",
+   "lec": 30
+  },
+  {
+   "id": "fa-t0137",
+   "h": "Borrowing raises ROE only while ROA is above the interest rate",
+   "p": "Leverage magnifies whatever the assets earn. If ROA is 9% and the loan costs 12%, each borrowed rupee loses 3% for the owners, so more debt lowers ROE.",
+   "f": "ROA must beat interest",
+   "lec": 30
+  },
+  {
+   "id": "fa-t0138",
+   "h": "The lecture's ROA is net profit ÷ average total assets; Anthony's textbook adds back after-tax interest",
+   "p": "L#30 defines ROA (ROI) as net profit ÷ average total assets, so ROA = margin × turnover exactly. Anthony ch 13 uses [net income + interest × (1 − tax rate)] ÷ total assets. Follow the lecture in the course exams unless a question names the textbook's version.",
+   "f": "lecture: plain net profit",
+   "lec": 30
+  },
+  {
+   "id": "fa-t0139",
+   "h": "L#31 counts a year as 360 days for collection and holding periods",
+   "p": "The lecture used 360 ÷ turnover. Anthony ch 13 and the hub's solution to practice-set Q23 use 365, so their day counts come out slightly longer (9 turns: 40 days on 360, about 40.6 on 365). Use 360 unless a question says otherwise.",
+   "f": "lecture year = 360",
+   "lec": 31
+  },
+  {
+   "id": "fa-t0140",
+   "h": "Paying suppliers in cash raises a current ratio that is above 1",
+   "p": "Cash and payables fall by the same amount, so a ratio above 1 rises: 2,00,000 ÷ 1,00,000 = 2 becomes 1,50,000 ÷ 50,000 = 3. The firm is no more liquid; only the ratio moved.",
+   "f": "equal cuts lift the ratio",
+   "lec": 31
+  },
+  {
+   "id": "fa-t0141",
+   "h": "A shorter collection period does not by itself mean better receivables management",
+   "p": "Compare it with the credit terms offered, the ageing of overdue dues, bad debts written off and the customer mix. 35 days against 30-day terms is late; 45 days against 60-day terms is early.",
+   "f": "speed vs credit terms",
+   "lec": 31
+  },
+  {
+   "id": "fa-t0142",
+   "h": "Inventory turnover divides cost of goods sold, not sales, by average inventory",
+   "p": "Stock is held at cost, so the lecture's formula is COGS ÷ average inventory. Using sales overstates the turnover and shortens the holding period.",
+   "f": "COGS over stock",
+   "lec": 31
+  },
+  {
+   "id": "fa-t0143",
+   "h": "Debt in the debt–equity ratio means all interest-bearing borrowings, short- and long-term",
+   "p": "The lecture counted any interest-bearing loan, whatever its term, against shareholders' equity. Leaving out short-term borrowings understates the risk.",
+   "f": "all borrowings count",
+   "lec": 31
+  },
+  {
+   "id": "fa-t0144",
+   "h": "A low P/E is not automatically a bargain, and a high one is not automatically a buy",
+   "p": "A low P/E or P/B can mean weak prospects or underpricing; a high P/E shows confidence in growth. Read market ratios with the financial statements and the investor's risk appetite (beta).",
+   "f": "context before price",
+   "lec": 31
   }
  ],
  "defs": [
@@ -2635,6 +2826,230 @@ HUB.addCourse({
    "term": "Change in accounting estimate",
    "html": "<b>Change in accounting estimate</b>: a revision of a judgement such as an asset's useful life or residual value. It is applied prospectively, from the period of the change, without restating earlier years.",
    "lec": 26
+  },
+  {
+   "id": "fa-d0136",
+   "unit": "analysis",
+   "topic": "Profitability ratios",
+   "term": "Return on equity",
+   "html": "<b>Return on equity (ROE)</b> = net income ÷ shareholders' equity. It measures what the firm earns on the funds owners have put in, directly or through retained earnings.",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-d0137",
+   "unit": "analysis",
+   "topic": "Profitability ratios",
+   "term": "Return on assets",
+   "html": "<b>Return on assets (ROA)</b>, as Anthony defines it, = [net income + interest × (1 − tax rate)] ÷ total assets: earnings on all funds employed, before the cost of debt.",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-d0138",
+   "unit": "analysis",
+   "topic": "Profitability ratios",
+   "term": "Return on invested capital",
+   "html": "<b>Return on invested capital (ROIC)</b> uses permanent capital (non-current liabilities + equity) as the base. Some firms call it <b>ROCE</b> or <b>RONA</b>.",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-d0139",
+   "unit": "analysis",
+   "topic": "Profitability ratios",
+   "term": "Profit margin",
+   "html": "<b>Profit margin</b> (return on sales) = net income ÷ sales. The profitability half of the DuPont split.",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-d0140",
+   "unit": "analysis",
+   "topic": "Profitability ratios",
+   "term": "Investment turnover",
+   "html": "<b>Investment turnover</b> = sales ÷ investment; called asset, invested-capital or equity turnover depending on the base used. The utilisation half of the DuPont split.",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-d0141",
+   "unit": "analysis",
+   "topic": "Profitability ratios",
+   "term": "Financial leverage ratio",
+   "html": "<b>Financial leverage ratio</b> = total assets ÷ shareholders' equity. In the five-factor split it links return on assets to return on equity.",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-d0142",
+   "unit": "analysis",
+   "topic": "Liquidity ratios",
+   "term": "Acid-test ratio",
+   "html": "<b>Acid-test (quick) ratio</b> = monetary current assets (cash, marketable securities, receivables) ÷ current liabilities in Anthony. L#31 uses (current assets − inventory) ÷ current liabilities.",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-d0143",
+   "unit": "analysis",
+   "topic": "Solvency ratios",
+   "term": "Times interest earned",
+   "html": "<b>Times interest earned</b> (interest coverage) = (pretax profit + interest) ÷ interest, i.e. EBIT ÷ interest: how many times operating profit covers the interest bill.",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-d0144",
+   "unit": "analysis",
+   "topic": "Liquidity ratios",
+   "term": "Cash conversion cycle",
+   "html": "<b>Cash conversion cycle</b> = days' receivables + days' inventory − days' payables: the number of days the firm must finance its own operating cycle.",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-d0145",
+   "unit": "analysis",
+   "topic": "Capital market ratios",
+   "term": "Price/earnings ratio",
+   "html": "<b>P/E ratio</b> = market price per share ÷ earnings per share; the market's verdict on expected future performance.",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-d0146",
+   "unit": "analysis",
+   "topic": "Capital market ratios",
+   "term": "Dividend payout",
+   "html": "<b>Dividend payout</b> = dividends ÷ net income. One minus payout is the <b>retention rate</b>, which drives implied growth.",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-d0147",
+   "unit": "analysis",
+   "topic": "Financial statement analysis",
+   "term": "Common-size statement",
+   "html": "A <b>common-size statement</b> shows every item as a percentage of a base: net sales for the income statement, total assets for the balance sheet.",
+   "bk": "Anthony 13e ch13"
+  },
+  {
+   "id": "fa-d0148",
+   "unit": "analysis",
+   "topic": "Profitability ratios",
+   "term": "Ratio analysis",
+   "html": "<b>Ratio analysis</b>: relating one figure in the statements to another used as a base (sales, assets or equity) so firms and years can be compared on equal terms.",
+   "lec": 30
+  },
+  {
+   "id": "fa-d0149",
+   "unit": "analysis",
+   "topic": "Profitability ratios",
+   "term": "Profit margin",
+   "html": "<b>Profit margin (return on sales)</b> = net profit ÷ revenue × 100: the profit kept from each ₹100 of sales.",
+   "lec": 30
+  },
+  {
+   "id": "fa-d0150",
+   "unit": "analysis",
+   "topic": "Profitability ratios",
+   "term": "Gross profit margin",
+   "html": "<b>Gross profit margin</b> = (sales − cost of goods sold) ÷ sales × 100. Only direct costs are deducted, so salaries, rent, interest and tax do not move it.",
+   "lec": 30
+  },
+  {
+   "id": "fa-d0151",
+   "unit": "analysis",
+   "topic": "Profitability ratios",
+   "term": "Asset turnover",
+   "html": "<b>Asset turnover</b> = revenue ÷ average total assets: sales generated by each ₹1 of assets. Its normal level depends on the industry.",
+   "lec": 30
+  },
+  {
+   "id": "fa-d0152",
+   "unit": "analysis",
+   "topic": "Profitability ratios",
+   "term": "Return on assets (ROA)",
+   "html": "<b>Return on assets (ROA)</b>, also called <b>return on investment (ROI)</b> = net profit ÷ average total assets × 100 = profit margin × asset turnover.",
+   "lec": 30
+  },
+  {
+   "id": "fa-d0153",
+   "unit": "analysis",
+   "topic": "Profitability ratios",
+   "term": "Return on equity (ROE)",
+   "html": "<b>Return on equity (ROE)</b> = net profit ÷ average equity × 100 = ROA × leverage. It should exceed the shareholders' cost of equity.",
+   "lec": 30
+  },
+  {
+   "id": "fa-d0154",
+   "unit": "analysis",
+   "topic": "Profitability ratios",
+   "term": "Leverage",
+   "html": "<b>Leverage</b>: the use of borrowed money (or interest-free supplier credit) to fund assets; measured as average total assets ÷ average equity. It lifts ROE only while ROA beats the interest rate.",
+   "lec": 30
+  },
+  {
+   "id": "fa-d0155",
+   "unit": "analysis",
+   "topic": "Profitability ratios",
+   "term": "Earnings per share (EPS)",
+   "html": "<b>Earnings per share (EPS)</b> = (net profit − preference dividend) ÷ number of equity shares. Good for one firm over time, not for comparing firms.",
+   "lec": 30
+  },
+  {
+   "id": "fa-d0156",
+   "unit": "analysis",
+   "topic": "Liquidity ratios",
+   "term": "Liquidity",
+   "html": "<b>Liquidity</b>: the ability to pay short-term obligations on time from current assets; how quickly assets can become cash.",
+   "lec": 31
+  },
+  {
+   "id": "fa-d0157",
+   "unit": "analysis",
+   "topic": "Liquidity ratios",
+   "term": "Quick ratio",
+   "html": "<b>Quick (acid-test) ratio</b> = (current assets − inventory) ÷ current liabilities. Rule of thumb 1 : 1; stock is left out because it must be sold and collected first.",
+   "lec": 31
+  },
+  {
+   "id": "fa-d0158",
+   "unit": "analysis",
+   "topic": "Liquidity ratios",
+   "term": "Collection period",
+   "html": "<b>Collection period</b> = 360 ÷ receivables turnover, where receivables turnover = revenue ÷ average trade receivables.",
+   "lec": 31
+  },
+  {
+   "id": "fa-d0159",
+   "unit": "analysis",
+   "topic": "Liquidity ratios",
+   "term": "Operating cycle",
+   "html": "<b>Operating cycle</b> = holding period + collection period: the days from buying raw material to collecting cash from customers. Shorter is better.",
+   "lec": 31
+  },
+  {
+   "id": "fa-d0160",
+   "unit": "analysis",
+   "topic": "Solvency ratios",
+   "term": "Solvency",
+   "html": "<b>Solvency</b>: the firm's ability to survive and meet its long-term obligations, driven mainly by how much it has borrowed.",
+   "lec": 31
+  },
+  {
+   "id": "fa-d0161",
+   "unit": "analysis",
+   "topic": "Solvency ratios",
+   "term": "Interest coverage ratio",
+   "html": "<b>Interest coverage ratio</b> = EBIT ÷ interest expense: how many times operating profit covers the interest bill.",
+   "lec": 31
+  },
+  {
+   "id": "fa-d0162",
+   "unit": "analysis",
+   "topic": "Capital market ratios",
+   "term": "Price-to-book ratio",
+   "html": "<b>Price-to-book (P/B)</b> = market price per share ÷ book value per share (equity ÷ number of shares). Above 1, the market expects returns above the required rate.",
+   "lec": 31
+  },
+  {
+   "id": "fa-d0163",
+   "unit": "analysis",
+   "topic": "Capital market ratios",
+   "term": "Beta",
+   "html": "<b>Beta</b>: how sensitive a share's price is to movements in the overall market; a lower beta means lower volatility and risk.",
+   "lec": 31
   }
  ],
  "questions": [
@@ -9595,6 +10010,1081 @@ HUB.addCourse({
    "w": "Inventory turnover = 730 ÷ 100 = 7.3 times; inventory days = 365 ÷ 7.3 = 50. 7.3 is the turnover, not the days.",
    "lec": 26,
    "lv": "apply"
+  },
+  {
+   "id": "fa-q0420",
+   "topic": "Profitability ratios",
+   "q": "A company earns net income of ₹90 crore on shareholders' equity of ₹600 crore and total assets of ₹1,500 crore. Its return on equity is:",
+   "c": [
+    "6%",
+    "15%",
+    "16.7%",
+    "60%"
+   ],
+   "a": [
+    1
+   ],
+   "w": "ROE = 90 ÷ 600 = 15%. 6% divides by total assets instead of equity.",
+   "bk": "Anthony 13e ch13",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0421",
+   "topic": "Profitability ratios",
+   "q": "Net income ₹60 lakh, interest expense ₹20 lakh, tax rate 30%, total assets ₹800 lakh. Using Anthony's definition, return on assets is:",
+   "c": [
+    "7.5%",
+    "10.0%",
+    "9.25%",
+    "8.25%"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Add back after-tax interest: 60 + 20 × 0.7 = 74; 74 ÷ 800 = 9.25%. 10.0% adds back the full ₹20 lakh, ignoring the tax saving; 7.5% ignores interest altogether.",
+   "bk": "Anthony 13e ch13",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0422",
+   "topic": "Profitability ratios",
+   "q": "Why does Anthony add after-tax interest back to net income for ROA but not for ROE?",
+   "c": [
+    "Interest is a cost of part of the capital pool in ROA, whereas shareholders earn only what is left after lenders are paid",
+    "Interest is a non-cash expense",
+    "ROE is calculated before tax",
+    "Interest relates only to current liabilities"
+   ],
+   "a": [
+    0
+   ],
+   "w": "ROA measures the return on all funds before paying for them, so the cost of debt is added back. For ROE, interest is a genuine deduction from the shareholders' share of earnings.",
+   "bk": "Anthony 13e ch13",
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0423",
+   "topic": "Profitability ratios",
+   "q": "A company has a profit margin of 5% and an asset turnover of 2.4 times. Its return on assets (net income ÷ total assets) is:",
+   "c": [
+    "2.08%",
+    "7.4%",
+    "48%",
+    "12%"
+   ],
+   "a": [
+    3
+   ],
+   "w": "ROA = margin × turnover = 5% × 2.4 = 12%. 7.4% adds the two instead of multiplying.",
+   "bk": "Anthony 13e ch13",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0424",
+   "topic": "Profitability ratios",
+   "q": "A supermarket chain has a net margin of 2% but an above-average return on equity. The most likely explanation is:",
+   "c": [
+    "Its profit figures must be overstated",
+    "Its investment turnover is very high: fast-moving inventory, almost no receivables and leased stores",
+    "Supermarkets pay no income tax",
+    "It has very high gross margins"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Return = margin × turnover. Anthony's example: supermarkets offset thin margins with rapid inventory turnover, no receivables and leased premises. Margin alone does not show performance.",
+   "bk": "Anthony 13e ch13",
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0425",
+   "topic": "Profitability ratios",
+   "q": "In the five-factor split of return on equity, the 'tax retention rate' is:",
+   "c": [
+    "Tax expense ÷ profit before tax",
+    "Dividends ÷ net income",
+    "1 − tax rate, the share of pretax profit that reaches net income",
+    "Deferred tax ÷ total tax"
+   ],
+   "a": [
+    2
+   ],
+   "w": "ROE = pretax margin × asset turnover × assets ÷ equity × (1 − t). The tax retention rate is (1 − t). Tax expense ÷ profit before tax is the tax rate itself.",
+   "bk": "Anthony 13e ch13",
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0426",
+   "topic": "Profitability ratios",
+   "q": "A firm's net income ÷ total assets is 8% and its total assets are 2.5 times its equity. Its return on equity is:",
+   "c": [
+    "3.2%",
+    "10.5%",
+    "5.5%",
+    "20%"
+   ],
+   "a": [
+    3
+   ],
+   "w": "ROE = (NI ÷ TA) × (TA ÷ Equity) = 8% × 2.5 = 20%. Leverage magnifies return on assets into a higher return on equity.",
+   "bk": "Anthony 13e ch13",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0427",
+   "topic": "Liquidity ratios",
+   "q": "Current assets are ₹300 lakh and current liabilities ₹200 lakh. Just before year end the company pays ₹100 lakh of trade payables from cash. The current ratio:",
+   "c": [
+    "Rises from 1.5 to 2.0",
+    "Stays at 1.5",
+    "Falls from 1.5 to 1.0",
+    "Rises from 1.5 to 3.0"
+   ],
+   "a": [
+    0
+   ],
+   "w": "After payment: 200 ÷ 100 = 2.0. When the ratio is above 1, paying creditors from cash raises it. This is a form of window dressing; liquidity has not really improved.",
+   "bk": "Anthony 13e ch13",
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0428",
+   "topic": "Liquidity ratios",
+   "q": "Current assets of ₹500 lakh are cash ₹60 lakh, receivables ₹220 lakh, inventories ₹200 lakh and prepaid expenses ₹20 lakh. Current liabilities are ₹250 lakh. Using Anthony's definition (monetary current assets only), the acid-test ratio is:",
+   "c": [
+    "2.0",
+    "1.12",
+    "1.2",
+    "0.88"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Monetary current assets = 60 + 220 = 280; 280 ÷ 250 = 1.12. The L#31 version removes only inventory, giving (500 − 200) ÷ 250 = 1.2, because prepaid expenses stay in. Use the lecture's version unless a question names Anthony.",
+   "bk": "Anthony 13e ch13",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0429",
+   "topic": "Liquidity ratios",
+   "q": "In Anthony, the numerator of the acid-test ratio is:",
+   "c": [
+    "Current assets minus current liabilities",
+    "Total current assets",
+    "Monetary current assets: cash, marketable securities and receivables",
+    "Cash only"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Anthony uses monetary current assets. Current assets minus current liabilities is working capital, not a ratio numerator. L#31 instead deducts inventory from current assets, which also keeps prepaid expenses in.",
+   "bk": "Anthony 13e ch13",
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0430",
+   "topic": "Liquidity ratios",
+   "q": "Trade receivables are ₹90 lakh and annual credit sales are ₹730 lakh. Days' receivables (365-day year) are:",
+   "c": [
+    "45 days",
+    "8.1 days",
+    "12.3 days",
+    "37 days"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Daily sales = 730 ÷ 365 = 2; 90 ÷ 2 = 45 days. 8.1 is the receivables turnover in times, not days.",
+   "bk": "Anthony 13e ch13",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0431",
+   "topic": "Liquidity ratios",
+   "q": "Cost of goods sold ₹600 lakh; opening inventory ₹140 lakh; closing inventory ₹160 lakh. Inventory turnover using average inventory is:",
+   "c": [
+    "3.75 times",
+    "4.29 times",
+    "4.0 times",
+    "5.0 times"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Average inventory = 150; 600 ÷ 150 = 4.0. 3.75 uses closing inventory (Anthony's illustration basis). State which basis you use.",
+   "bk": "Anthony 13e ch13",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0432",
+   "topic": "Liquidity ratios",
+   "q": "Why is inventory turnover computed with cost of sales rather than sales revenue?",
+   "c": [
+    "Sales revenue is not audited",
+    "Inventory is carried at cost, so both terms should be at cost",
+    "Cost of sales is always larger than sales",
+    "Sales revenue includes indirect taxes"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Dividing a selling-price figure by a cost figure would overstate turnover by the mark-up. Receivables, carried at selling price, are compared with sales.",
+   "bk": "Anthony 13e ch13",
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0433",
+   "topic": "Liquidity ratios",
+   "q": "A company has days' receivables of 40, days' inventory of 55 and days' payables of 35. Its cash conversion cycle is:",
+   "c": [
+    "130 days",
+    "95 days",
+    "20 days",
+    "60 days"
+   ],
+   "a": [
+    3
+   ],
+   "w": "40 + 55 − 35 = 60 days. 95 days is the operating cycle, before deducting the credit taken from suppliers.",
+   "bk": "Anthony 13e ch13",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0434",
+   "topic": "Solvency ratios",
+   "q": "Profit before tax is ₹120 lakh after charging interest of ₹30 lakh. Times interest earned is:",
+   "c": [
+    "5 times",
+    "4 times",
+    "3 times",
+    "0.25 times"
+   ],
+   "a": [
+    0
+   ],
+   "w": "(120 + 30) ÷ 30 = 5. Using profit after interest (120 ÷ 30 = 4) understates coverage.",
+   "bk": "Anthony 13e ch13",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0435",
+   "topic": "Solvency ratios",
+   "q": "According to Anthony, what does 'debt' conceptually mean in debt ratios?",
+   "c": [
+    "Interest-bearing liabilities",
+    "All liabilities including trade payables",
+    "Only bonds and debentures",
+    "Current liabilities only"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Conceptually debt means interest-bearing liabilities, but published ratios may or may not exclude payables, accruals and deferred taxes, so check the definition.",
+   "bk": "Anthony 13e ch13",
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0436",
+   "topic": "Capital market ratios",
+   "q": "A company earns ₹48 crore with 3 crore equity shares outstanding. Its share trades at ₹240. The P/E ratio is:",
+   "c": [
+    "15 times",
+    "5 times",
+    "16 times",
+    "20 times"
+   ],
+   "a": [
+    0
+   ],
+   "w": "EPS = 48 ÷ 3 = ₹16; P/E = 240 ÷ 16 = 15. 16 is the EPS, not the ratio.",
+   "bk": "Anthony 13e ch13",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0437",
+   "topic": "Capital market ratios",
+   "q": "Anthony calls the P/E ratio the best indicator of how investors judge a firm's future performance mainly because it:",
+   "c": [
+    "Is calculated from audited figures only",
+    "Ignores accounting choices",
+    "Is the same for all firms in an industry",
+    "Uses the share price, which management does not control and which reflects expected future returns"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The market price capitalises investors' expectations of future dividends and price gains, so P/E reflects the market's outside verdict.",
+   "bk": "Anthony 13e ch13",
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0438",
+   "topic": "Capital market ratios",
+   "q": "A company's ROE is 20% and it pays out 40% of earnings as dividends. Its implied growth rate is:",
+   "c": [
+    "8%",
+    "20%",
+    "28%",
+    "12%"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Implied growth = ROE × retention = 20% × 0.6 = 12%. 8% multiplies by the payout instead of the retention rate.",
+   "bk": "Anthony 13e ch13",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0439",
+   "topic": "Capital market ratios",
+   "q": "Why does Anthony call it invalid to compare a share's dividend yield directly with a bond's interest yield?",
+   "c": [
+    "Dividends are taxed and interest is not",
+    "Bond yields are always higher",
+    "Shareholders' earnings also include profit retained in the business, which should raise future earnings and share value",
+    "Dividends are paid only once a year"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A bondholder's return is the interest; a shareholder's return includes retained earnings that are reinvested on their behalf.",
+   "bk": "Anthony 13e ch13",
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0440",
+   "topic": "Financial statement analysis",
+   "q": "Which of these is NOT one of Anthony's four types of standard for judging performance?",
+   "c": [
+    "The analyst's experience",
+    "The budget",
+    "The auditor's materiality threshold",
+    "External benchmarks such as industry averages"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The four are experience, budgets, historical results and external benchmarks. Materiality is an audit and reporting concept, not a performance standard.",
+   "bk": "Anthony 13e ch13",
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0441",
+   "topic": "Financial statement analysis",
+   "q": "A company's ROE rose from 1% to 2%. What is the main weakness of judging this only against its own history?",
+   "c": [
+    "Historical comparisons always suffer from different accounting methods",
+    "Doubling shows improvement but says nothing about whether 2% is acceptable",
+    "ROE cannot be compared across years",
+    "The figure must be adjusted for the tax rate"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Historical standards show only better or worse than before; the past may itself have been poor. Accounting method changes must be disclosed, so they are not the main issue.",
+   "bk": "Anthony 13e ch13",
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0442",
+   "topic": "Profitability ratios",
+   "q": "A steel company has a low capital asset intensity ratio (sales ÷ PP&E). Anthony's main concern about such firms is that they:",
+   "c": [
+    "Have too little inventory",
+    "Struggle in recessions because their large plant costs are fixed while revenue falls",
+    "Cannot borrow money",
+    "Must pay higher dividends"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Heavy plant relative to sales means largely fixed costs, so a drop in revenue hits profit hard. Service firms with light assets can cut costs as revenue falls.",
+   "bk": "Anthony 13e ch13",
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0443",
+   "topic": "Profitability ratios",
+   "q": "Sales for the year are ₹900 crore; total assets were ₹500 crore at the start of the year and ₹700 crore at the end. Following the advice to use averages when a flow is divided by a stock, asset turnover is:",
+   "c": [
+    "1.29 times",
+    "1.5 times",
+    "1.8 times",
+    "0.67 times"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Average total assets = (500 + 700) ÷ 2 = 600; 900 ÷ 600 = 1.5 times. 1.29 uses the year-end 700 and 1.8 the opening 500; 0.67 inverts the ratio. L#30 also averages the asset base.",
+   "bk": "Anthony 13e ch13",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0444",
+   "topic": "Profitability ratios",
+   "q": "Firm P earns a net profit of ₹6 lakh on sales of ₹30 lakh; Firm Q earns the same ₹6 lakh on sales of ₹120 lakh. What does ratio analysis add to the profit figure?",
+   "c": [
+    "Nothing: both firms performed equally well",
+    "P keeps ₹20 of every ₹100 of sales, Q only ₹5",
+    "Q is better because its sales are four times larger",
+    "P keeps ₹5 of every ₹100 of sales, Q ₹20"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Profit margin = 6 ÷ 30 = 20% for P and 6 ÷ 120 = 5% for Q. Equal profits hide very different businesses; a bigger sales figure does not make Q better, since it keeps far less of each sale.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0445",
+   "topic": "Profitability ratios",
+   "q": "Which list matches the four families of ratios set out in L#30?",
+   "c": [
+    "Horizontal, vertical, trend and ratio",
+    "Gross, operating, net and retained",
+    "Profitability, liquidity, solvency and capital market",
+    "Current, quick, cash and absolute"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The four families are profitability, liquidity (short-term obligations), solvency (long-term obligations) and capital market ratios. Horizontal, vertical, trend and ratio are the four analysis techniques from L#28, not families of ratios.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0446",
+   "topic": "Profitability ratios",
+   "q": "A bakery has sales of ₹8,00,000 and a net profit of ₹56,000. Its profit margin is:",
+   "c": [
+    "7%",
+    "14.3%",
+    "₹56,000",
+    "93%"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Profit margin = 56,000 ÷ 8,00,000 × 100 = 7%: the bakery keeps ₹7 of every ₹100 of sales. 93% is the share of sales used up by costs.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0447",
+   "topic": "Profitability ratios",
+   "q": "Sales are ₹12 lakh and cost of goods sold ₹7.8 lakh. The gross profit margin is:",
+   "c": [
+    "65%",
+    "4.2%",
+    "53.8%",
+    "35%"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Gross profit = 12 − 7.8 = 4.2 lakh; 4.2 ÷ 12 × 100 = 35%. 65% is cost of goods sold as a share of sales; 53.8% divides gross profit by cost of goods sold instead of sales.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0448",
+   "topic": "Profitability ratios",
+   "q": "A company's gross margin rose this year but its net profit margin fell. Which explanation fits best?",
+   "c": [
+    "Raw-material prices rose sharply",
+    "Indirect costs such as employee salaries rose, or a one-off loss hit profit",
+    "Selling prices were cut to match a competitor",
+    "Cost of goods sold grew faster than sales"
+   ],
+   "a": [
+    1
+   ],
+   "w": "This was Dr. Reddy's in 2016. A rising gross margin rules out the direct-cost explanations (raw materials, price cuts, COGS growing faster than sales), which would all lower gross margin. The damage must be below gross profit: higher employee costs and the exceptional foreign-exchange loss.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0449",
+   "topic": "Profitability ratios",
+   "q": "A firm's gross margin fell from 28% to 22%. Which events could explain the fall? (Select all that apply.)",
+   "c": [
+    "Raw-material costs rose and selling prices were not raised",
+    "Selling prices were cut to match a competitor",
+    "Interest on a new bank loan increased",
+    "Advertising spending doubled"
+   ],
+   "a": [
+    0,
+    1
+   ],
+   "w": "Gross margin = (sales − cost of goods sold) ÷ sales, so only changes in selling prices or direct costs move it. Interest and advertising are indirect expenses below gross profit; they reduce the net margin but leave the gross margin untouched.",
+   "lec": 30,
+   "lv": "apply",
+   "multi": true
+  },
+  {
+   "id": "fa-q0450",
+   "topic": "Profitability ratios",
+   "q": "Sales are ₹45 lakh. Total assets were ₹12 lakh at the start of the year and ₹18 lakh at the end. Asset turnover, as calculated in the lecture, is:",
+   "c": [
+    "2.5 times",
+    "3.75 times",
+    "3 times",
+    "0.33 times"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The lecture always uses average total assets: (12 + 18) ÷ 2 = 15, so turnover = 45 ÷ 15 = 3 times. Dividing by the closing 18 gives 2.5 and by the opening 12 gives 3.75; 0.33 inverts the ratio.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0451",
+   "topic": "Profitability ratios",
+   "q": "Which business would you expect to show the highest asset turnover?",
+   "c": [
+    "A quick-service burger chain",
+    "An oil refinery",
+    "An iron-ore mine",
+    "A hydro-power project"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The lecture contrasted fast-food outlets, which may turn their assets 10 to 20 times a year, with mining and refinery projects, which may turn them less than once. That is why asset turnover has no single rule of thumb.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0452",
+   "topic": "Profitability ratios",
+   "q": "A company's profit margin is 6% and its asset turnover 2.5 times. Its return on assets is:",
+   "c": [
+    "8.5%",
+    "2.4%",
+    "15%",
+    "41.7%"
+   ],
+   "a": [
+    2
+   ],
+   "w": "ROA = profit margin × asset turnover = 6% × 2.5 = 15%. Adding the two (8.5%) or dividing them is a slip; the identity works because revenue cancels out of (profit ÷ revenue) × (revenue ÷ assets).",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0453",
+   "topic": "Profitability ratios",
+   "q": "A company has a profit margin of 8% and an ROA of 20%. Its profit after tax is ₹4,000 and its total assets at the start of the year were ₹18,000. What were its total assets at the end of the year?",
+   "c": [
+    "₹20,000",
+    "₹22,000",
+    "₹18,000",
+    "₹50,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Average assets = profit ÷ ROA = 4,000 ÷ 20% = 20,000. Closing = 2 × average − opening = 40,000 − 18,000 = 22,000. ₹20,000 is the average, not the closing figure; ₹50,000 is sales (4,000 ÷ 8%).",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0454",
+   "topic": "Profitability ratios",
+   "q": "Which firm fits the high-margin, low-volume model that L#30 described?",
+   "c": [
+    "A mass-market soap maker",
+    "A budget hotel chain",
+    "A low-price smartphone brand",
+    "A luxury Swiss watchmaker"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Luxury brands charge a high price on each sale, so their margin is high while their assets turn slowly. Soap makers, budget hotels and low-price phone brands are her examples of thin margins earned on high volume.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0455",
+   "topic": "Profitability ratios",
+   "q": "A company earns a net profit of ₹1.8 lakh. Its equity was ₹5.5 lakh at the start of the year and ₹6.5 lakh at the end. Its return on equity is:",
+   "c": [
+    "27.7%",
+    "32.7%",
+    "15%",
+    "30%"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Average equity = (5.5 + 6.5) ÷ 2 = 6 lakh; ROE = 1.8 ÷ 6 = 30%. 27.7% uses the closing equity and 32.7% the opening equity, against the lecture's averaging rule.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0456",
+   "topic": "Profitability ratios",
+   "q": "A firm's ROA is 9% and it can borrow at 12%. It plans to fund new assets with more debt. What happens to its shareholders?",
+   "c": [
+    "ROE rises, because leverage always magnifies returns",
+    "ROE falls, because the borrowed money earns less than it costs",
+    "ROE is unaffected, because interest is a business expense",
+    "ROE rises, because interest is tax-deductible"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Debt helps shareholders only while ROA is above the interest rate. Here each borrowed rupee earns 9% but costs 12%, so the gap comes out of the owners' share. Leverage is a two-edged sword; it magnifies losses as well as gains.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0457",
+   "topic": "Profitability ratios",
+   "q": "A firm has an ROA of 8%, average total assets of ₹50 lakh and average equity of ₹20 lakh. Using ROE = ROA × leverage, its ROE is:",
+   "c": [
+    "20%",
+    "3.2%",
+    "10.5%",
+    "8%"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Leverage = average assets ÷ average equity = 50 ÷ 20 = 2.5; ROE = 8% × 2.5 = 20%. 3.2% divides ROA by leverage; 8% ignores the debt-funded assets.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0458",
+   "topic": "Profitability ratios",
+   "q": "A company's net profit is ₹84 lakh, it pays a preference dividend of ₹12 lakh and has 6 lakh equity shares. Its EPS is:",
+   "c": [
+    "₹14",
+    "₹16",
+    "₹12",
+    "₹2"
+   ],
+   "a": [
+    2
+   ],
+   "w": "EPS = (84 − 12) ÷ 6 = ₹12. Preference dividend comes out first because equity shareholders have only a residual claim; ₹14 forgets to deduct it.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0459",
+   "topic": "Profitability ratios",
+   "q": "Company A's EPS is ₹40 and Company B's is ₹8. What can you conclude?",
+   "c": [
+    "A is five times as profitable as B",
+    "B must have made a loss on some activities",
+    "A's shares must be priced higher than B's",
+    "Nothing about relative profitability, because each firm has a different number of shares"
+   ],
+   "a": [
+    3
+   ],
+   "w": "EPS depends on how many shares a company has issued, so it cannot rank two firms. The lecture used it to track one company over time (Dr. Reddy's ₹137.18 to ₹126.15); margins, ROA or ROE compare firms.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0460",
+   "topic": "Profitability ratios",
+   "q": "Between 2015 and 2016, Dr. Reddy's ROA fell from 13.49% to 11.14%. What did the lecture give as the cause?",
+   "c": [
+    "Only the profit margin fell; asset turnover was unchanged",
+    "Leverage fell from 1.95 to 1.79",
+    "Both profit margin (15.55% to 13.71%) and asset turnover (0.87 to 0.81) fell",
+    "Gross margin fell by about 2 points"
+   ],
+   "a": [
+    2
+   ],
+   "w": "ROA = margin × turnover, and both drivers fell: margin through higher employee costs and the one-off forex loss, turnover because assets grew about 11.5% while revenue grew about 4.5%. Leverage affects ROE, not ROA, and the gross margin actually rose.",
+   "lec": 30,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0461",
+   "topic": "Profitability ratios",
+   "q": "What lesson did the lipstick index case teach about reading profitability ratios?",
+   "c": [
+    "Link a firm's results to wider social and economic conditions",
+    "Cosmetics firms always have the highest margins",
+    "Ratios should be computed only in recessions",
+    "Industry averages are unreliable"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Lipstick sales rose about 11% in the 2001 recession because people still buy small luxuries when confidence is low. A good analyst asks why a firm's numbers moved, including what the wider economy was doing.",
+   "lec": 30,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0462",
+   "topic": "Profitability ratios",
+   "q": "Revenue ₹80 lakh, net profit ₹7.2 lakh, average total assets ₹48 lakh, average equity ₹30 lakh. Which set of results is correct?",
+   "c": [
+    "Margin 9%, turnover 1.67, ROA 15%, ROE 24%",
+    "Margin 9%, turnover 0.6, ROA 15%, ROE 24%",
+    "Margin 9%, turnover 1.67, ROA 24%, ROE 15%",
+    "Margin 11.1%, turnover 1.67, ROA 15%, ROE 24%"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Margin = 7.2 ÷ 80 = 9%; turnover = 80 ÷ 48 = 1.67; ROA = 7.2 ÷ 48 = 15% (check: 9% × 1.67); ROE = 7.2 ÷ 30 = 24% (check: 15% × leverage 1.6). The other sets swap ROA and ROE, invert turnover, or divide sales by profit.",
+   "lec": 30,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0463",
+   "topic": "Liquidity ratios",
+   "q": "In L#31, what does liquidity measure?",
+   "c": [
+    "The firm's long-term survival given its debt",
+    "How the share price compares with earnings",
+    "Profit earned per ₹100 of sales",
+    "The ability to pay short-term obligations on time from current assets"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Liquidity is about short-term dues and how fast assets turn into cash; suppliers and short-term lenders watch it. Long-term survival is solvency, and price against earnings is a capital market ratio.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0464",
+   "topic": "Liquidity ratios",
+   "q": "A shop holds stock, receivables and cash totalling ₹3,60,000 and owes ₹1,50,000 to suppliers. Its current ratio is:",
+   "c": [
+    "2.4 : 1",
+    "0.42 : 1",
+    "2.1 : 1",
+    "1.4 : 1"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Current ratio = 3,60,000 ÷ 1,50,000 = 2.4 : 1, above the 2 : 1 rule of thumb. 0.42 inverts the ratio.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0465",
+   "topic": "Liquidity ratios",
+   "q": "The same shop's ₹3,60,000 of current assets includes stock of ₹2,10,000; current liabilities are ₹1,50,000. Its quick ratio is:",
+   "c": [
+    "2.4 : 1",
+    "1.4 : 1",
+    "1 : 1",
+    "0.71 : 1"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Quick ratio = (3,60,000 − 2,10,000) ÷ 1,50,000 = 1,50,000 ÷ 1,50,000 = 1 : 1, exactly the rule of thumb. 1.4 divides the stock, not the remaining assets, by current liabilities; 2.4 is the current ratio, which keeps stock in.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0466",
+   "topic": "Liquidity ratios",
+   "q": "Revenue is ₹54 lakh; trade receivables were ₹5 lakh at the start of the year and ₹7 lakh at the end. Using the lecture's method, the average collection period is:",
+   "c": [
+    "About 47 days",
+    "40 days",
+    "9 days",
+    "About 51 days"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Average receivables = (5 + 7) ÷ 2 = 6; turnover = 54 ÷ 6 = 9 times; collection period = 360 ÷ 9 = 40 days. About 47 days uses the closing ₹7 lakh (54 ÷ 7 = 7.7 times); 9 is the turnover, not days.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0467",
+   "topic": "Liquidity ratios",
+   "q": "Sales are ₹1,20,000, cost of goods sold ₹90,000, opening stock ₹10,000 and closing stock ₹14,000. The inventory turnover is:",
+   "c": [
+    "10 times",
+    "6.4 times",
+    "8.6 times",
+    "7.5 times"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Inventory turnover = COGS ÷ average inventory = 90,000 ÷ 12,000 = 7.5 times. Using sales gives 10 times, which overstates turnover because stock is held at cost.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0468",
+   "topic": "Liquidity ratios",
+   "q": "Inventory turns 7.5 times a year. Using the lecture's year, the holding period is:",
+   "c": [
+    "48 days",
+    "49 days",
+    "7.5 days",
+    "75 days"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Holding period = 360 ÷ 7.5 = 48 days. 49 days uses a 365-day year (48.7); the lecture used 360.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0469",
+   "topic": "Liquidity ratios",
+   "q": "Stock stays in a firm's warehouse for 75 days before it is sold, and customers take 50 days to pay. What is the operating cycle?",
+   "c": [
+    "25 days",
+    "125 days",
+    "75 days",
+    "3,750 days"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Operating cycle = holding period + collection period = 75 + 50 = 125 days: from buying the material to collecting the cash. 25 days subtracts the periods instead of adding them.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0470",
+   "topic": "Liquidity ratios",
+   "q": "Dr. Reddy's operating cycle lengthened from 232 days in 2015 to 243 days in 2016. Why did the lecture read this as a bad sign?",
+   "c": [
+    "It means the firm is borrowing more",
+    "It proves the firm made a loss",
+    "Funds stay tied up longer, raising working-capital needs and storage and insurance costs",
+    "It lowers the P/E ratio directly"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The longer the gap between paying for materials and collecting from customers, the longer money is locked in stock and receivables, and the more holding costs pile up. The firm was still profitable, and its debt–equity ratio actually fell.",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0471",
+   "topic": "Solvency ratios",
+   "q": "Why did the lecture call debt cheaper than equity?",
+   "c": [
+    "Lenders accept lower returns than shareholders because loans are unsecured",
+    "Interest is tax-deductible, while dividends are paid out of after-tax profit",
+    "Interest is paid only when the firm makes a profit",
+    "Debt never has to be repaid"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The tax deduction on interest lowers the true cost of a loan; dividends get no such relief. Interest is a fixed obligation payable even in a loss year, which is exactly why debt is also riskier.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0472",
+   "topic": "Solvency ratios",
+   "q": "A company has long-term loans of ₹30 lakh, a short-term bank loan of ₹6 lakh and shareholders' equity of ₹90 lakh. Its debt–equity ratio, as defined in the lecture, is:",
+   "c": [
+    "0.33 : 1",
+    "2.5 : 1",
+    "0.07 : 1",
+    "0.4 : 1"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Debt counts all interest-bearing borrowings, short- or long-term: (30 + 6) ÷ 90 = 0.4 : 1, i.e. 40 paise of borrowing per ₹1 of owners' money. 0.33 leaves out the short-term loan; 2.5 inverts the ratio.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0473",
+   "topic": "Solvency ratios",
+   "q": "EBIT is ₹25 lakh and the interest expense ₹5 lakh. By how much could EBIT fall before it no longer covers the interest?",
+   "c": [
+    "80%",
+    "20%",
+    "75%",
+    "500%"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Coverage = 25 ÷ 5 = 5 times, so EBIT can drop to ₹5 lakh, a fall of 20 of 25 lakh = 80%. 75% is the answer for coverage of 4 times (the lecture's example); 20% is what is left.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0474",
+   "topic": "Solvency ratios",
+   "q": "Which figure is the numerator of the interest coverage ratio in the lecture?",
+   "c": [
+    "Profit after tax",
+    "Earnings before interest and tax",
+    "Profit before tax",
+    "Revenue"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Interest coverage = EBIT ÷ interest. Interest must not already be deducted, or the ratio understates how many times profit covers it; profit before tax and profit after tax both have interest taken out.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0475",
+   "topic": "Capital market ratios",
+   "q": "A share trades at ₹450 and EPS is ₹25. Its earnings yield is:",
+   "c": [
+    "18%",
+    "5.6%",
+    "₹18",
+    "11.25%"
+   ],
+   "a": [
+    1
+   ],
+   "w": "P/E = 450 ÷ 25 = 18, and earnings yield is the reciprocal: 25 ÷ 450 = 5.6%. 18 is the P/E ratio itself.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0476",
+   "topic": "Capital market ratios",
+   "q": "You buy a share at ₹250, receive a dividend of ₹10 and sell at ₹270. What is your stock return?",
+   "c": [
+    "4%",
+    "8%",
+    "12%",
+    "11.1%"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Stock return = (dividend + price gain) ÷ opening price = (10 + 20) ÷ 250 = 12%. 4% is the dividend yield alone and 8% the price gain alone; 11.1% divides by the selling price.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0477",
+   "topic": "Capital market ratios",
+   "q": "Operating profit (before interest and tax) is ₹200 crore, interest ₹20 crore, tax 25%, preference dividend ₹15 crore, 6 crore equity shares, and the P/E is 12. What is the market price per share?",
+   "c": [
+    "₹270",
+    "₹300",
+    "₹225",
+    "₹240"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Profit before tax = 200 − 20 = 180; after tax = 180 × 0.75 = 135; for equity = 135 − 15 = 120; EPS = 120 ÷ 6 = ₹20; price = 20 × 12 = ₹240. ₹270 forgets the preference dividend (EPS ₹22.50).",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0478",
+   "topic": "Capital market ratios",
+   "q": "A company's equity is ₹500 crore with 25 crore shares in issue, and its share trades at ₹50. What is its price-to-book ratio, and what does it signal?",
+   "c": [
+    "2.5; the market expects returns above the required rate",
+    "0.4; the share is overpriced",
+    "2.5; the company's assets are overvalued in the books",
+    "20; the share is a bargain"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Book value per share = 500 ÷ 25 = ₹20; P/B = 50 ÷ 20 = 2.5. A P/B above 1 means the market expects the firm to earn more than the required rate. 20 is the book value per share, not the ratio.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0479",
+   "topic": "Liquidity ratios",
+   "q": "A firm's current assets are ₹4,50,000, including inventory of ₹1,50,000, and its current liabilities are ₹1,50,000. It pays ₹50,000 of trade payables in cash. What happens?",
+   "c": [
+    "Current ratio stays 3; quick ratio stays 2",
+    "Current ratio falls to 2.7; quick ratio falls to 1.7",
+    "Current ratio rises to 4; quick ratio rises to 2.5",
+    "Current ratio rises to 4; quick ratio is unchanged"
+   ],
+   "a": [
+    2
+   ],
+   "w": "After payment: current assets 4,00,000 ÷ current liabilities 1,00,000 = 4; quick (4,00,000 − 1,50,000) ÷ 1,00,000 = 2.5. Cutting the same amount from both sides of a ratio above 1 raises it, as in the lecture's own example (2 to 3, and 1.2 to 1.4).",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0480",
+   "topic": "Liquidity ratios",
+   "q": "Two travel agents collect their receivables in 35 and 45 days. What would you need to know before saying which manages receivables better?",
+   "c": [
+    "Nothing more: the shorter period is always better",
+    "Only each firm's total revenue",
+    "Their current ratios",
+    "The credit terms each offers, the ageing and bad debts in their receivables, and their customer mix"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Speed only means something against the credit allowed: 35 days on 30-day terms is late, 45 on 60-day terms is early. The quality of dues (overdue amounts, write-offs) and whether customers are retail or corporate also matter.",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0481",
+   "topic": "Liquidity ratios",
+   "q": "A firm's current ratio fell from 3.54 to 2.17 while sales and credit terms were unchanged. Which events could explain the fall? (Select all that apply.)",
+   "c": [
+    "A long-term loan now falls due within the year",
+    "Higher default risk led to a bigger allowance for bad debts",
+    "The tax rate was cut",
+    "The dividend was reduced"
+   ],
+   "a": [
+    0,
+    1
+   ],
+   "w": "A loan falling due within twelve months becomes a current liability, and a larger bad-debt allowance cuts receivables; both lower the ratio. A tax cut or a smaller dividend leaves more cash in the firm, which raises the ratio.",
+   "lec": 31,
+   "lv": "analyse",
+   "multi": true
+  },
+  {
+   "id": "fa-q0482",
+   "topic": "Capital market ratios",
+   "q": "Share X has a P/E of 17, a higher dividend yield and a beta of 1.3; share Y has a P/E of 14 and a higher beta. For a cautious investor, which share did the lecture's reasoning recommend?",
+   "c": [
+    "Y, because a lower P/E always means a bargain",
+    "X, because its lower beta means less volatility and its market standing is stronger",
+    "Y, because a higher beta means guaranteed higher returns",
+    "Neither, because P/E cannot compare two companies"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A cautious investor wants lower risk, so the lower-beta, stronger-standing X fits. Y suits an investor who accepts more risk and believes its lower P/E means it is underpriced; a higher beta brings bigger swings, not guaranteed returns.",
+   "lec": 31,
+   "lv": "analyse"
   }
  ],
  "briefs": {
@@ -9663,6 +11153,9 @@ HUB.addCourse({
   "lec-27",
   "lec-28",
   "lec-29",
-  "lec-26s"
+  "lec-26s",
+  "atc13-ch13",
+  "lec-30",
+  "lec-31"
  ]
 });
