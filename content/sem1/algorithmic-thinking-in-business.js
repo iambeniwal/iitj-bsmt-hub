@@ -187,6 +187,18 @@ HUB.addCourse({
    "Week 12 — Quick Sort",
    "Pivot, partition, median of three, O(n log n)",
    "rec"
+  ],
+  [
+   31,
+   "Week 13 — Web Search: PageRank",
+   "Relevance, links as votes, random surfer, iteration",
+   "rec"
+  ],
+  [
+   32,
+   "Week 13 — From Algorithms to Intelligence",
+   "Expert systems, ML, deep learning, generative AI",
+   "rec"
   ]
  ],
  "units": [
@@ -687,6 +699,59 @@ HUB.addCourse({
      "h": "<p>Sorting arranges data by category or into an order, and many other tasks depend on it: binary search needs sorted input, databases present ordered results, and duplicates become easy to spot once identical items sit side by side. The chapter walks through five sorts. Bubble sort, the one L#25 taught, repeatedly compares and swaps neighbours; the book runs it from the right-hand end, the lecture's alternative method. Selection sort repeatedly finds the smallest remaining item and swaps it into place, and insertion sort grows a sorted section by slotting each new item into position; like bubble sort both are O(n²) and suit only small lists. Merge sort and quick sort use divide and conquer and typically run in O(n log n). For a manager, that gap is the difference between a nightly batch that finishes and one that does not.</p><!--viz:atb-five-sorts-compare--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison table of five sorts. Bubble sort, taught in L#25, compares and swaps neighbours, O(n squared). Selection sort swaps the smallest remaining value to the front, O(n squared). Insertion sort slides each next item into a sorted section, O(n squared) worst case. Merge sort halves and merges, O(n log n). Quick sort partitions around a pivot, O(n log n) typically and O(n squared) in the worst case.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The chapter's five sorts at a glance</div><div class=\"scroller\"><table><thead><tr><th>Sort</th><th>The repeated move</th><th>Time</th></tr></thead><tbody><tr><td style=\"background:var(--blue-soft)\"><b>Bubble</b> (L#25)</td><td>Compare neighbours, swap if out of order</td><td><span style=\"white-space:nowrap;font-family:var(--mono)\">O(n²)</span></td></tr><tr><td><b>Selection</b></td><td>Find the smallest remaining value, swap it to the front of the unsorted part</td><td><span style=\"white-space:nowrap;font-family:var(--mono)\">O(n²)</span></td></tr><tr><td><b>Insertion</b></td><td>Take the next item, slide it left into the sorted section</td><td><span style=\"white-space:nowrap;font-family:var(--mono)\">O(n²)</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">worst case</span></td></tr><tr><td><b>Merge</b></td><td>Halve down to single items, merge back in order</td><td><span style=\"white-space:nowrap;font-family:var(--mono)\">O(n log n)</span></td></tr><tr><td><b>Quick</b></td><td>Partition around a pivot, then sort each side</td><td><span style=\"white-space:nowrap;font-family:var(--mono)\">O(n log n)</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">typical; worst O(n²)</span></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only bubble sort had been lectured by L#25. The three simple sorts share O(n²); the two divide-and-conquer sorts reach O(n log n).</figcaption></figure><!--/viz:atb-five-sorts-compare--><!--viz:atb-selection-vs-insertion--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace of selection sort and insertion sort on 33, 8, 26, 41, 14, 19. Selection sort swaps the smallest remaining value to the front each step: 8, then 14, then 19, then 26, and at step 5 finds 33 already in place. Insertion sort grows a sorted front section: 8 slides past 33, 26 slides past 33, 41 stays, 14 slides past three items, 19 slides past three items. Both end with 8, 14, 19, 26, 33, 41.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Selection vs insertion on the same list</div><p style=\"font-size:14px;margin:0 0 8px\">Start: <span style=\"font-family:var(--mono)\">33 8 26 41 14 19</span>. Shaded = the part already in order.</p><div class=\"scroller\"><table><thead><tr><th>Step</th><th>Selection sort</th><th>Insertion sort</th></tr></thead><tbody><tr><td>1</td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8</span> 33 26 41 14 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">swap 8 ↔ 33</span></td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 33</span> 26 41 14 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">8 slides past 33</span></td></tr><tr><td>2</td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14</span> 26 41 33 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">swap 14 ↔ 33</span></td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 26 33</span> 41 14 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">26 slides past 33</span></td></tr><tr><td>3</td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14 19</span> 41 33 26</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">swap 19 ↔ 26</span></td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 26 33 41</span> 14 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">41 stays</span></td></tr><tr><td>4</td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14 19 26</span> 33 41</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">swap 26 ↔ 41</span></td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14 26 33 41</span> 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">14 slides past 26, 33, 41</span></td></tr><tr><td>5</td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14 19 26 33 41</span></span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">33 already in place</span></td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14 19 26 33 41</span></span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">19 slides past 26, 33, 41</span></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Selection sort's front part is final from the first step; insertion sort's front part is only in order among itself until the last item is placed.</figcaption></figure><!--/viz:atb-selection-vs-insertion--><!--viz:atb-merge-sort-levels--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Merge sort on 36, 15, 52, 9, 27, 44, 3, 18. Three levels of splitting reach eight single items. Three levels of merging give 15 36, 9 52, 27 44, 3 18; then 9 15 36 52 and 3 18 27 44; then the sorted list 3, 9, 15, 18, 27, 36, 44, 52.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Merge sort: split down, merge up</div><div style=\"display:flex;flex-direction:column;gap:8px;font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Start</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">36 15 52 9 27 44 3 18</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Split 1</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">36 15 52 9</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">27 44 3 18</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Split 2</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">36 15</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">52 9</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">27 44</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">3 18</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Split 3</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">36</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">15</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">52</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">9</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">27</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">44</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">3</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">18</span></div><div style=\"border-top:1px solid var(--rule);margin:2px 0\"></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Merge 1</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">15 36</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">9 52</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">27 44</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">3 18</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Merge 2</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">9 15 36 52</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">3 18 27 44</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Merge 3</span><span style=\"padding:3px 6px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono)\">3 9 15 18 27 36 44 52</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Eight items need three levels each way (log₂ 8 = 3), and every level handles all eight items: n log n.</figcaption></figure><!--/viz:atb-merge-sort-levels--><!--viz:atb-quick-sort-partition--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Quick sort partition of 22, 42, 31, 14, 39, 12, 41 around the pivot 31. The left marker stops at 42 and the right marker at 12, and they swap; then the left marker stops at 31 and the right at 14, and they swap; the markers cross. Result: 22, 12, 14 on the left, all smaller than 31; 31 in its final place; 39, 42, 41 on the right, all larger.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One quick-sort partition, pivot 31</div><div style=\"display:flex;flex-direction:column;gap:8px;font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Start</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">22</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">42</span><span style=\"padding:3px 6px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono)\">31</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">14</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">39</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">12</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">41</span></div><div style=\"font-size:13.5px;color:var(--ink-2)\">The left marker stops at a value ≥ 31, the right marker at a value &lt; 31, and they swap:</div><ol style=\"margin:0;padding-left:20px;font-size:13.5px;color:var(--ink-2)\"><li>left stops at 42, right stops at 12: swap → <span style=\"font-family:var(--mono)\">22 12 31 14 39 42 41</span></li><li>left stops at 31, right stops at 14: swap → <span style=\"font-family:var(--mono)\">22 12 14 31 39 42 41</span></li><li>the markers cross: the partition is done</li></ol><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">After</span><span style=\"padding:4px 8px;border:1px solid var(--rule-2);border-radius:4px;background:var(--good-soft);font-family:var(--mono)\">22 12 14</span><span style=\"padding:3px 6px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono)\">31</span><span style=\"padding:4px 8px;border:1px solid var(--rule-2);border-radius:4px;background:var(--clay-soft);font-family:var(--mono)\">39 42 41</span></div><div style=\"font-size:13px;color:var(--ink-3)\">Smaller than 31 · pivot in its final place · larger than 31. Next, each side is partitioned the same way.</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">After one partition the pivot is final but neither side is sorted yet: quick sort now repeats the same step on each side.</figcaption></figure><!--/viz:atb-quick-sort-partition--><p><strong>What sorting is for</strong> — Covered in L#25. The book lets sorting mean grouping by category as well as putting items in order; L#25 defined it as one definite order, ascending or descending, by a chosen parameter. Either way it pays off later: binary search needs sorted input, database queries return ordered results, and duplicates sit side by side once the data is sorted.<br><em>e.g.</em> Sorting 50,000 client records by PAN puts any duplicate PANs next to each other.</p><p><strong>Bubble sort, the book's way</strong> — Covered in L#25. Bubble sort compares neighbouring pairs and swaps any that are out of order. The book starts at the right-hand end and works left, so each pass carries the smallest remaining value to the front. L#25 taught the classic left-to-right version, which carries the largest to the end, and showed the book's direction as the alternative method. Both give the same sorted list.<br><em>e.g.</em> [18, 27, 6, 33, 12] → after one right-to-left pass [6, 18, 27, 12, 33].</p><p><strong>When bubble sort can stop</strong> — Covered in L#25. L#25 counted passes: n − 1 of them always suffice. The book simply repeats passes until the list is sorted, and a pass with no swaps proves it, because every neighbouring pair is then in order. A version that checks for this can stop early on a list that is already nearly in order.<br><em>e.g.</em> [18, 27, 6, 33, 12] is in order after pass 2; pass 3 makes no swaps, so the sort stops after 3 passes instead of 4.</p><p><strong>Selection sort</strong> — Not covered in L#25, which said the other sorts follow in later lectures. Selection sort uses a linear search to find the smallest remaining value and swaps it with the leftmost unsorted position, then repeats on the rest. A loop inside a loop gives O(n²), but it makes at most one swap per pass. The book rates it slightly better than bubble sort and fine for small arrays.<br><em>e.g.</em> [33, 8, 26, 41, 14, 19] → first pass swaps 8 to the front: [8, 33, 26, 41, 14, 19].</p><p><strong>Insertion sort</strong> — Not covered in L#25, which said the other sorts follow in later lectures. Insertion sort treats the leftmost item as a sorted section, then takes each next item and slides it left past larger items until it sits in the right place. It never hunts for the smallest remaining value, so it stops early when an item is already close to its place; the book calls it more efficient than selection sort, though its worst case is still O(n²).<br><em>e.g.</em> Arranging cheques in hand: pick up each new one and slide it into place among those already ordered.</p><p><strong>Merge sort</strong> — Not covered in L#25, which said the other sorts follow in later lectures. Merge sort halves the list again and again until every piece holds one item, then merges pieces back together pairwise, each merge producing an ordered list, until one sorted list remains. It is usually written recursively and runs in O(n log n): about log₂ n levels of halving, with all n items handled at each level.<br><em>e.g.</em> Each regional office sorts its own sales file; head office merges the sorted files into one ranked list.</p><p><strong>Quick sort</strong> — Not covered in L#25, which said the other sorts follow in later lectures. Quick sort picks a pivot (often at random). Markers move in from both ends, swapping items so that values smaller than the pivot gather on the left and larger ones on the right. Each side is then sorted the same way, recursively. The book gives O(n log n); that is its typical behaviour, and poor pivots can make it quadratic.<br><em>e.g.</em> Splitting loan files into 'below ₹5 lakh' and 'above ₹5 lakh', then splitting each pile again.</p><div class=\"card\"><strong>Case: The book's merge-sort walkthrough</strong> <em>(Chapter 7, Merge Sort: the seven-number example)</em><p>The book splits a seven-number list into halves, then quarters, then single items, and rebuilds it by merging pairs into ordered lists, then those into larger ordered lists, until one sorted list remains. It links the speed to the number of halving levels.</p><p><em>Lesson:</em> Divide and conquer turns a quadratic job into an n log n one.</p><p><em>Think:</em> How does the national-sales-report example from the lectures map onto merge sort's split and merge phases?</p></div><details><summary>Worked problem: Bubble sort the book's way, with an early stop</summary><p>Sort [18, 27, 6, 33, 12] with the book's bubble sort: start at the right-hand end, compare each item with the one before it, swap if the later one is smaller, and stop after a pass with no swaps.</p><ol><li>Pass 1: (33, 12) swap → (6, 12) keep → (27, 6) swap → (18, 6) swap → [6, 18, 27, 12, 33]; 4 comparisons, 3 swaps; 6 is in place.</li><li>Pass 2: (12, 33) keep → (27, 12) swap → (18, 12) swap → [6, 12, 18, 27, 33]; 3 comparisons, 2 swaps.</li><li>Pass 3: (27, 33) keep → (18, 27) keep; 2 comparisons, no swaps, so the list is sorted and the sort stops.</li></ol><p><strong>Answer:</strong> [6, 12, 18, 27, 33] after 3 passes, 9 comparisons and 5 swaps. Without the check, the full n − 1 = 4 passes would make 10 comparisons.</p></details><details><summary>Worked problem: Merge sort trace</summary><p>Merge-sort the eight weekly order counts [41, 7, 33, 19, 2, 58, 24, 12].</p><ol><li>Split: [41, 7, 33, 19] and [2, 58, 24, 12].</li><li>Split: [41, 7] [33, 19] [2, 58] [24, 12], then single items.</li><li>Merge pairs: [7, 41] [19, 33] [2, 58] [12, 24].</li><li>Merge again: [7, 19, 33, 41] and [2, 12, 24, 58].</li><li>Final merge: [2, 7, 12, 19, 24, 33, 41, 58].</li></ol><p><strong>Answer:</strong> [2, 7, 12, 19, 24, 33, 41, 58] — three levels of splitting for eight items (log₂ 8 = 3).</p></details><details><summary>Worked problem: How much does the algorithm choice matter?</summary><p>An HR system must sort 10,000 employee records. Compare the approximate work of an O(n²) sort and an O(n log₂ n) sort.</p><ol><li>n² = 10,000 × 10,000 = 100,000,000 (10 crore) steps.</li><li>log₂ 10,000 ≈ 13.3, so n log₂ n ≈ 10,000 × 13.3 ≈ 133,000 steps.</li><li>Ratio ≈ 100,000,000 ÷ 133,000 ≈ 750.</li></ol><p><strong>Answer:</strong> The O(n log n) sort does roughly 750 times less work; the gap widens as n grows.</p></details><div class=\"def\"><b>Book vs lecture — Direction of bubble sort.</b> Book: Starts at the right-hand end and swaps leftwards, so each pass moves the smallest value to the front. Lecture: L#25 taught the classic left-to-right method, which moves the largest value to the end, and showed working from the end as the alternative method, which he believed the course textbook used. It does. <b>Both are bubble sort and give the same final order. Follow the direction a question states; if none is stated, use the classic left-to-right method from L#25.</b></div><div class=\"def\"><b>Book vs lecture — How many passes.</b> Book: Repeats passes until the array is sorted, without counting them. Lecture: L#25 said the number of passes equals the number of elements, n, but his six-element example was sorted after five passes, and he counted five. <b>n − 1 passes always suffice. A version that stops after a pass with no swaps can finish sooner. In the final exam show every pass (L#25).</b></div><div class=\"def\"><b>Book vs lecture — Comparisons per pass and the O(n²) count.</b> Book: States O(n²) with no count of comparisons. Lecture: L#25: each pass makes one comparison fewer, so the total is n(n − 1) ÷ 2. His slide began the count at n in pass 1, though his own example made n − 1 (five for six elements). <b>Use n − 1 comparisons in pass 1 and n(n − 1) ÷ 2 in all. The complexity is O(n²) either way.</b></div><div class=\"def\"><b>Book vs lecture — What sorting is.</b> Book: Arranging data in a particular way, either by category (similar properties) or in an order or sequence. Lecture: L#25: arranging elements in one specific order, ascending or descending, by a chosen parameter such as marks, name, price or relevance. <b>Give the lecture's definition. The book's grouping by category is a looser, everyday sense of the word.</b></div><div class=\"def\"><b>Book vs lecture — The other four sorts.</b> Book: Covers selection, insertion, merge and quick sort after bubble sort. Lecture: L#25 taught bubble sort only and said the other sorts follow in the lectures after it. <b>Learn them from this chapter for now; when those lectures are released, check them against these notes, and the lecture wins where they differ.</b></div><div class=\"def\"><b>Book vs lecture — Quick sort time complexity.</b> Book: Gives quick sort a time complexity of n log n with no caveat. Lecture: Not covered by L#25. <b>Say O(n log n) on average or typically; poor pivot choices can degrade it to O(n²) in the worst case. Merge sort is O(n log n) even in the worst case.</b></div><div class=\"def\"><b>Book vs lecture — Divide and conquer examples.</b> Book: Introduces divide and conquer as the halving method behind merge sort and quick sort. Lecture: Divide and conquer was taught in Module 1 with business examples (regional audits, national sales report) rather than sorting. <b>No conflict: merge sort is the standard computing example of the same idea. If a quiz asks which approach merge sort uses, answer divide and conquer.</b></div>"
     }
    ]
+  },
+  {
+   "id": "intelligence",
+   "title": "Web search &amp; from algorithms to intelligence",
+   "tag": "Lectures 31–32 · Week 13 · + textbook",
+   "lede": "Where the course’s pieces meet: Google’s PageRank turns searching and sorting on a directed graph into web search, and the closing lecture places algorithms, expert systems, machine learning, deep learning and generative AI against the business problems each one fits.",
+   "topics": [
+    {
+     "t": "Web search: relevance, not exact match",
+     "src": "L#31",
+     "h": "<div class=\"def\"><b>Traditional search</b> (the kind in L#22 and L#24) is about <b>finding and retrieval</b>: does this item exist, and where is it? Linear search, binary search and the traversals return an <b>exact match</b>. <b>Web search</b> is about <b>relevance</b>: you type a rough idea, the data is a <b>graph</b> of connected pages, and what matters is which pages are most relevant and most authoritative, shown in that <b>order</b>. So web search is searching <b>plus sorting</b>, the way blockchain (L#20) was linear plus non-linear structures.</div><h4>Exact match versus relevance</h4><p style=\"font-size:14.5px\">His ERP example: searching a student’s result by roll number is retrieval. The database looks for that exact roll number, and one changed digit, one changed letter or even an extra space means <strong>no match</strong>. His business examples: looking up <strong>one customer’s order</strong> is exact match; looking for <strong>suppliers for a product</strong>, or typing “management strategy” and getting millions of documents, is about relevance plus <strong>authoritative ranking</strong>: this is more relevant, that is less.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Traditional search</th><th>Web search</th></tr></thead><tbody><tr><td>Question asked</td><td>Does it exist? Where is it?</td><td>What is relevant, and what is most relevant?</td></tr><tr><td>Match</td><td>Exact: one wrong character fails</td><td>Rough keywords, similar things</td></tr><tr><td>Data</td><td>A list, an array, a table</td><td>A graph or network of connected documents</td></tr><tr><td>Result</td><td>The item, or “not found”</td><td>Results in order of relevance and authority</td></tr><tr><td>How much is ordered</td><td>n/a</td><td>Only the top matters: the first two or three pages, not the middle or the end of the sorted order</td></tr></tbody></table></div><h4>Before Google: keyword frequency, and keyword stuffing</h4><p style=\"font-size:14.5px\">The late-1990s and early-2000s engines, <strong>Yahoo</strong> and <strong>AltaVista</strong> among them, relied on <strong>keyword frequency</strong>: the more often the search words appeared on a page, the higher it came. His example: write “best BS program in the country” a hundred times on one page and the old engines would push it up. Page owners duly repeated phrases all over their pages whether or not the page was relevant. Users had to wade through eight or ten pages of results to find what they wanted.</p><h4>Google and the name PageRank</h4><p style=\"font-size:14.5px\"><strong>Larry Page</strong> and <strong>Sergey Brin</strong>, both at <strong>Stanford</strong>, were frustrated with those results and devised a different ranking, which was <strong>patented in 1998</strong> through Stanford (the basic research was done there; Stanford later sold its share in Google). The name is a double meaning: it <strong>ranks web pages</strong>, and it carries <strong>Page’s surname</strong>. Today’s Google still has PageRank as its foundation but adds <strong>AI-driven ranking signals</strong>; the lecture stays with the fundamental algorithm because that is what the course is about.</p><div class=\"def\"><b>From the lecture (L#31):</b> taught after Quiz 2, so expect it in the <b>end-term exam</b> (offline, 4–6 December, no negative marking, syllabus to the end of November; the ATB slot is not yet announced). He gave no other exam hint in this lecture; he framed it as the use case that shows why getting the basic algorithm right matters, with its two foundations, the <b>weighted voting mechanism</b> and the <b>random surfer model</b>, as the things to remember.</div>"
+    },
+    {
+     "t": "PageRank: links as weighted votes, and the random surfer",
+     "src": "L#31",
+     "h": "<div class=\"def\"><b>PageRank</b> rests on two ideas. <b>Weighted voting:</b> a link from one page to another is a <b>vote</b> for the target’s authority, votes from authoritative pages count more, and a page’s vote is <b>split</b> among everything it links to. <b>Random surfer:</b> a web user mostly <b>follows links</b> (assumed <b>85%</b> of the time) and sometimes <b>jumps</b> to a brand-new page or search (<b>15%</b>).</div><h4>1 · Weighted voting mechanism</h4><ul style=\"font-size:14.5px\"><li><strong>A link is an endorsement.</strong> If many pages link to a page, that page has some authority</li><li><strong>Not all votes are equal.</strong> A link from a highly reputable newspaper or from Wikipedia carries far more weight than one from a random blog. His example: you may have reached the Masai page for this BS programme from an Instagram or YouTube influencer or a digital ad, which is some endorsement; but the links from the <strong>IIT Jodhpur homepage</strong> and the <strong>School of Management and Entrepreneurship</strong> page to the same programme carry much more weight, which is why they settle the doubt whether the programme is really IIT Jodhpur’s</li><li><strong>Authority is diluted by choices.</strong> A page’s weight is divided among its outgoing links. An education counsellor’s page with weight 100 that links to 100 different programmes passes only <strong>1</strong> to each. A page that endorses every other page shares its own weight so thinly that each endorsement is worth little</li></ul><p style=\"font-size:14.5px\">In one line: the more you are linked from authoritative pages, the more rank you receive; and whatever a page passes on is <strong>its rank ÷ its number of outgoing links</strong>.</p><h4>2 · Random surfer model</h4><p style=\"font-size:14.5px\">Think of reading Wikipedia: one definition links to another, and five or six levels later you are reading foundational principles. That is <strong>link following</strong>. Or you get bored, open a new tab and type a new URL or search term: a <strong>random jump</strong>. From analysing a large number of users, Page and Brin assumed an <strong>85% chance</strong> that a user keeps following links and a <strong>15% chance</strong> of jumping somewhere new. Not an exact number for any one person; a probability across many users, built into the formula below.</p><h4>The formula, as he gave it</h4><div class=\"card\"><span style=\"font-family:var(--mono)\">new rank = 0.15 ÷ N + 0.85 × (rank received from other pages)</span><br><span style=\"font-size:13.5px;color:var(--ink-2)\">N = number of web pages. The 0.15 is the random-jump share, spread equally over all N pages; the 0.85 is the link-following share, applied to what the page receives; and what it receives from each linking page is that page’s rank ÷ its outgoing links.</span></div><p style=\"font-size:14.5px\">So a page nobody links to is not at zero: it still gets 0.15 ÷ N. And a page’s rank depends on the ranks of the pages linking to it, which is why the calculation has to be <strong>repeated</strong> until it settles.</p>"
+    },
+    {
+     "t": "Running PageRank on four pages",
+     "src": "L#31",
+     "h": "<h4>The eight steps</h4><ol style=\"font-size:14.5px\"><li><strong>Represent the pages as a directed graph</strong> (L#16): each web page is a <strong>node</strong>, each hyperlink a <strong>directed edge</strong> from the page that holds the link to the page it points to. His example: a blog may link to IIT Jodhpur’s site, but IIT Jodhpur’s site does not link back, so the edge has one direction</li><li><strong>Each link is a vote</strong>: one page pointing to another</li><li><strong>Assign an initial rank</strong> to every node, the same for all (0.25 each for four pages)</li><li><strong>Divide a page’s rank among its outgoing links</strong> (a page with 100 outlinks passes 1/100 of its rank along each)</li><li><strong>Apply the formula</strong> to every node using what it receives</li><li><strong>Recalculate repeatedly</strong>: each round starts from the ranks the previous round produced</li><li><strong>Stop when the ranks are stable</strong>: the final ranks show the relative importance of the nodes</li><li><strong>Sort the pages by rank</strong> and present them in that order. Steps 1 to 7 are the search and ranking; step 8 is the sorting</li></ol><h4>His example: four pages</h4><p style=\"font-size:14.5px\">Pages A, B, C, D with A → B, A → C, B → C, C → A and D → C (D links out, nobody links to D). N = 4, so 0.15 ÷ 4 = <strong>0.0375</strong>, and every page starts at <strong>0.25</strong>. The figure below shows the graph; the table is his round 1.</p><div class=\"scroller\"><table><thead><tr><th>Page</th><th>Incoming links and shares</th><th>Received</th><th>Formula</th><th>New rank</th></tr></thead><tbody><tr><td><b>A</b></td><td>C → A, C’s only outlink: 0.25</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.25</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.0375 + 0.85 × 0.25</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--blue-soft)\">0.25</td></tr><tr><td><b>B</b></td><td>A → B, one of A’s two outlinks: 0.25 ÷ 2 = 0.125</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.125</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.0375 + 0.85 × 0.125</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--blue-soft)\">0.14375</td></tr><tr><td><b>C</b></td><td>A → C 0.125, B → C 0.25, D → C 0.25</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.625</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.0375 + 0.85 × 0.625</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--blue-soft)\">0.56875</td></tr><tr><td><b>D</b></td><td>nothing links to D</td><td style=\"font-family:var(--mono);white-space:nowrap\">0</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.0375 + 0.85 × 0</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--blue-soft)\">0.0375</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>A</strong> did not change: it gave away its whole 0.25 (half to B, half to C) and received C’s whole 0.25. <strong>C</strong> is highest because three pages link to it; <strong>D</strong> is lowest because none does, and it keeps only the random-jump share 0.0375.</p><div class=\"def\"><b>One round uses one set of ranks.</b> While calculating a round, every page’s new rank is worked out from the <b>previous round’s</b> ranks, even for pages already recalculated. Otherwise the numbers would keep shifting under you. Only when all four are done do you replace them together and start the next round from 0.25, 0.14375, 0.56875 and 0.0375. (Google called the equivalent a <b>static snapshot</b>, next topic.)</div><h4>Round 2, and where it settles</h4><p style=\"font-size:14.5px\">He did not compute further rounds on screen; round 2 here is computed from his round-1 ranks with his formula. A now receives C’s new 0.56875 and jumps to <span style=\"font-family:var(--mono)\">0.0375 + 0.85 × 0.56875 = 0.52094</span>; B still gets half of A’s old 0.25, so stays 0.14375; C receives 0.125 + 0.14375 + 0.0375 = 0.30625 and drops to 0.29781; D stays 0.0375. The ranks swing for a few rounds, then settle. He said that after the <strong>13th or 14th round</strong> they are relatively stable: A around <strong>0.372</strong>, B around <strong>0.196</strong> (the same 0.1959 in the last two rounds), C a little volatile around <strong>0.39</strong>, and D at <strong>0.0375</strong> from the very first round, because no link ever brings it anything. Recomputing confirms it: after 14 rounds A = 0.372, B = 0.196, C = 0.394, D = 0.0375. Final order for step 8: <strong>C, A, B, D</strong>.</p><div class=\"def\"><b>Transcript slips to read past:</b> the auto-transcript has “0.15” where he meant A’s half-share <b>0.125</b>, “receiving link from A, B and C” where C’s third link is from <b>D</b>, “point 5 divided by n” for <b>0.15 ÷ N</b>, and “1.959” for B’s <b>0.1959</b>. His own figures on screen (0.25, 0.14375, 0.56875, 0.0375) are right.</div><p style=\"font-size:14.5px\">Four pages needed a dozen rounds. Google has to do this for millions of pages, which is why the processing method mattered as much as the formula.</p><!--viz:atb-pagerank-link-graph--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Directed graph of pages A, B, C and D. A passes 0.125 to B and 0.125 to C, B passes 0.25 to C, D passes 0.25 to C, C passes 0.25 to A. After round 1 the ranks are A 0.25, B 0.144, C 0.569, D 0.0375.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">His four pages: rank flowing along the links, round 1</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 220\" role=\"img\" aria-label=\"Four web pages as a directed graph. A links to B and C, B links to C, C links to A, D links to C. Each arrow is labelled with the rank it passes on in round 1; each node shows its rank after round 1.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M245.8,55.0 L345.0,97.1\" style=\"stroke:var(--ink-3);stroke-width:1.8;fill:none\"/><path d=\"M354.2,101.0 L343.3,101.3 L346.8,93.0 Z\" style=\"fill:var(--ink-3)\"/><path d=\"M354.2,123.0 L255.0,165.1\" style=\"stroke:var(--blue);stroke-width:1.8;fill:none\"/><path d=\"M245.8,169.0 L253.2,161.0 L256.7,169.3 Z\" style=\"fill:var(--blue)\"/><path d=\"M85.8,123.0 L185.0,165.1\" style=\"stroke:var(--blue);stroke-width:1.8;fill:none\"/><path d=\"M194.2,169.0 L183.3,169.3 L186.8,161.0 Z\" style=\"fill:var(--blue)\"/><path d=\"M208.0,69.3 L208.0,144.7\" style=\"stroke:var(--blue);stroke-width:1.8;fill:none\"/><path d=\"M208.0,154.7 L203.5,144.7 L212.5,144.7 Z\" style=\"fill:var(--blue)\"/><path d=\"M232.0,154.7 L232.0,79.3\" style=\"stroke:var(--ink-3);stroke-width:1.8;fill:none\"/><path d=\"M232.0,69.3 L236.5,79.3 L227.5,79.3 Z\" style=\"fill:var(--ink-3)\"/><text x=\"306\" y=\"63\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">0.125</text><text x=\"307\" y=\"162\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px;font-family:var(--mono)\">0.25</text><text x=\"133\" y=\"162\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px;font-family:var(--mono)\">0.25</text><text x=\"198\" y=\"116\" text-anchor=\"end\" style=\"fill:var(--blue);font-size:13px;font-family:var(--mono)\">0.125</text><text x=\"242\" y=\"116\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">0.25</text><circle cx=\"220\" cy=\"44\" r=\"28\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"220\" y=\"41\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">A</text><text x=\"220\" y=\"57\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">0.25</text><circle cx=\"380\" cy=\"112\" r=\"28\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"380\" y=\"109\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">B</text><text x=\"380\" y=\"125\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">0.144</text><circle cx=\"220\" cy=\"180\" r=\"28\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"220\" y=\"177\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">C</text><text x=\"220\" y=\"193\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">0.569</text><circle cx=\"60\" cy=\"112\" r=\"28\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"60\" y=\"109\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">D</text><text x=\"60\" y=\"125\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px;font-family:var(--mono)\">0.0375</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each arrow carries the sender’s rank ÷ its outlinks (all start at 0.25). C collects three votes; D, with no incoming link, keeps only the random-jump share 0.15 ÷ 4. Node values rounded; exact figures in the table.</figcaption></figure><!--/viz:atb-pagerank-link-graph--><!--viz:atb-pagerank-rounds--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace of PageRank over rounds: all pages start at 0.25; after round 1 A 0.25, B 0.1438, C 0.5688, D 0.0375; after round 2 A 0.5209, B 0.1438, C 0.2978, D 0.0375; after 14 rounds A 0.372, B 0.196, C 0.394, D 0.0375.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The same four pages, round after round</div><div class=\"scroller\"><table><thead><tr><th>Round</th><th>A</th><th>B</th><th>C</th><th>D</th></tr></thead><tbody><tr><td style=\"white-space:nowrap\">start</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.2500</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.2500</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.2500</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.2500</td></tr><tr><td style=\"white-space:nowrap\">1 (his)</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.2500</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.1437</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--blue-soft)\">0.5687</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.0375</td></tr><tr><td style=\"white-space:nowrap\">2 (computed)</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--blue-soft)\">0.5209</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.1437</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.2978</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.0375</td></tr><tr><td style=\"white-space:nowrap\">14 (he quoted ≈)</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3722</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.1959</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--blue-soft)\">0.3944</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.0375</td></tr></tbody></table></div><ul style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\"><li>Round 1: C receives 0.625; A gives away 0.25 and gets 0.25 back</li><li>Round 2 (computed here from his round-1 ranks): A now receives C’s 0.56875</li><li>Round 14: he read out about 0.372, 0.196, 0.39 and 0.0375</li></ul><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:6px\">new rank = 0.15 ÷ 4 + 0.85 × received · every round uses the previous round’s ranks only</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The ranks swing before they settle; D never moves because nothing links to it. Sorted at the end: C, A, B, D.</figcaption></figure><!--/viz:atb-pagerank-rounds--><!--viz:atb-pagerank-steps--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: build the directed graph, give every page the same initial rank, split each rank across its outgoing links, apply the formula to every node from the old ranks, repeat until stable, then sort the pages by rank.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">PageRank in one line of steps</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Directed graph</b><br><span style=\"color:var(--ink-2);font-size:12.5px\">page = node · link = edge</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Equal initial rank<br><span style=\"color:var(--ink-2);font-size:12.5px\">1 ÷ N each</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Split each rank<br><span style=\"color:var(--ink-2);font-size:12.5px\">÷ outgoing links</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">0.15 ÷ N + 0.85 × received<br><span style=\"color:var(--ink-2);font-size:12.5px\">for every node, old ranks only</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Repeat<br><span style=\"color:var(--ink-2);font-size:12.5px\">until the ranks are stable</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Sort by rank</b><br><span style=\"color:var(--ink-2);font-size:12.5px\">most relevant first</span></div><span style=\"color:var(--ink-3)\">↺ step 4 again from the new ranks, until step 7 holds</span></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Searching and ranking end at step 7; step 8 is the sorting, and only the top of that order reaches the user.</figcaption></figure><!--/viz:atb-pagerank-steps-->"
+    },
+    {
+     "t": "From batch updates to real time: what web search teaches",
+     "src": "L#31",
+     "h": "<h4>1998 to 2010: batch processing on a static snapshot</h4><p style=\"font-size:14.5px\">Recalculating PageRank for the whole web could not be done live, so Google ran it as a <strong>batch</strong> once every <strong>three or four weeks</strong>, on a <strong>static crawl snapshot</strong>: a record of every page’s existing rank, frozen for the calculation, just as one round of the hand example uses the previous round’s numbers. Two effects: while the recalculation ran, results could be unreliable or swing drastically, the <strong>“Google Dance”</strong>; and a new blog started today would not appear in results until the next batch.</p><h4>2010 onwards: real-time updates</h4><p style=\"font-size:14.5px\">With more processing power and the cloud, Google moved to <strong>incremental web crawling</strong> (note only what has changed, rather than recrawl everything) and <strong>dynamic graph integration</strong>: a new page joins the graph within a short time, low in the ranking at first but present. The <strong>algorithm is still PageRank</strong>; what grew is the number of parameters, now <strong>hundreds of machine-learning and AI-based indicators</strong> alongside the two original ideas.</p><div class=\"scroller\"><table><thead><tr><th></th><th>1998–2010</th><th>2010 to date</th></tr></thead><tbody><tr><td>Processing</td><td>Batch, every 3–4 weeks</td><td>Real-time updates</td></tr><tr><td>Crawling</td><td>Static snapshot of every page</td><td>Incremental: only changes and new pages</td></tr><tr><td>New page</td><td>Invisible until the next batch</td><td>Integrated into the graph quickly, ranked low at first</td></tr><tr><td>Side effect</td><td>“Google Dance” swings</td><td>Hundreds of extra ML/AI signals on the same foundation</td></tr></tbody></table></div><h4>How the course’s pieces combine here</h4><ul style=\"font-size:14.5px\"><li><strong>Directed graph</strong> (L#16): pages are nodes, links are one-way edges; in-degree is what PageRank rewards</li><li><strong>Graph search</strong> (L#17, L#24): finding the relevant pages means exploring connections, not scanning a list</li><li><strong>Iteration to a stable value</strong>: the same formula applied round after round, like the loops of Module 1</li><li><strong>Sorting</strong> (Module 5): the final ranks are sorted so the most relevant appears first; the user only cares about the top of the order, not the whole sorted list</li></ul><p style=\"font-size:14.5px\">His closing lesson: inventions are rarely one Eureka moment. Google kept experimenting, from batch to real time and from static to incremental crawling, but it could only build on the first algorithm because that algorithm was right. Get the basic algorithm right, then add parameters.</p>"
+    },
+    {
+     "t": "Structured problems: where algorithms are enough",
+     "src": "L#32",
+     "h": "<div class=\"def\"><b>From the lecture (L#32):</b> he opened by calling this the <b>concluding lecture</b> and an <b>epilogue</b>, a post-credit scene after the course rather than a formal part of it, and said there will be <b>no question from it in the quiz or the end-term exam</b> (offline, 4–6 December). It is here for the <b>linkages</b>: later semesters bring separate courses on machine learning, deep learning and generative AI, and he wants the algorithmic thinking of this course to be recognisable inside them. Learn it for that, and for the “which approach fits this problem” sense it gives.</div><h4>Back to L#1: organised steps that turn data into output</h4><p style=\"font-size:14.5px\">He reproduced the first lecture’s definition: an algorithm is <strong>organised steps to convert data into a desired output</strong>. Where the task is <strong>structured</strong>, with clear inputs and a clear output, algorithms work well. Averaging five subjects: sum, divide by five, no confusion. Tea was the other L#1 example, and it showed the cost: the more exactly you specify “take some milk” (100 ml?), the more effort the specification takes, and many people make tea from muscle memory and in different orders (water first, or milk first). That is an <strong>unstructured</strong> task.</p><h4>Structured business problems</h4><div class=\"scroller\"><table><thead><tr><th>Problem</th><th>Why an algorithm is enough</th></tr></thead><tbody><tr><td>Accounting</td><td>Record the receipts and numbers; set templates say what is an asset and what a liability; profit after tax is a defined calculation</td></tr><tr><td>Payroll</td><td>Basic, DA, other allowances, taxes and deductions are all defined; the output is the salary slip</td></tr><tr><td>CGPA / SGPA</td><td>Each letter grade has a number (A = 10, A− = 9, B = 8, and so on); the semester average is just the mean of those numbers</td></tr><tr><td>Bank interest, ERP systems</td><td>Numbers in, numbers out, logic fixed in advance. Wherever you see an ERP, you are looking at structured problems</td></tr></tbody></table></div><h4>Unstructured problems</h4><p style=\"font-size:14.5px\">Not every problem comes with known steps. At the top of an organisation, <strong>which new product to launch</strong>: production can be worked out, but the market cannot; customer surveys give an incomplete picture, you need industry analysis and expert opinion, and the data is unstructured and from many sources. <strong>Sentiment analysis</strong> for stock trading: beyond the technical analysis of numbers, tweets and comments after a CEO’s remark move the sentiment about a company. In such problems people <strong>learn on the go</strong>, the way you learnt what this course expected as the lectures and quizzes went by, and systems can learn on the go too. That is where expert systems (1980s to early 2000s) and then AI techniques come in: they help make sense of unstructured data and unstructured problems.</p><div class=\"def\"><b>The rule he closed with:</b> wherever a pin or a needle does the job, do not use a sword. If an algorithm solves it, you do not need AI. A simple calculation is more reliable and more computationally economical on a calculator than through an LLM, even though the LLM can do it too.</div>"
+    },
+    {
+     "t": "Expert systems: an expert’s rules, hard-coded",
+     "src": "L#32",
+     "h": "<div class=\"def\">An <b>expert system</b> captures a human expert’s decision-making as a large set of <b>if–then rules</b> and applies them to new inputs. Some old textbooks call it the first AI; he classifies it as a <b>complex rule-based algorithm</b>: once designed it applies pre-defined, hard-coded rules and <b>does not learn</b>.</div><h4>How the rules were made</h4><p style=\"font-size:14.5px\">Medical diagnosis takes years of experience, which is why you may prefer an experienced doctor to a fresh MBBS graduate: both studied the same books, but one knows things that are not in them. So the first successful expert systems were in <strong>healthcare</strong>. Companies sent solution designers to <strong>shadow and interview doctors</strong> (paid for their time), not ten of them but as many as possible, so that a rule reflected what most doctors do rather than one doctor’s idiosyncrasy. The observed decisions became rules: if X, do this; if X and Y, do that; if X, Y and Z, do the other. Real systems had hundreds.</p><h4>His fever-and-cough example</h4><p style=\"font-size:14.5px\">Fever and cough alone do not decide anything, which is why a doctor asks further questions. The rules branch on the extra symptoms:</p><div class=\"scroller\"><table><thead><tr><th>Fever + cough, plus…</th><th>Likely</th></tr></thead><tbody><tr><td>runny nose, sore throat</td><td>viral infection</td></tr><tr><td>body ache, tiredness</td><td>flu</td></tr><tr><td>difficulty breathing, loss of taste and smell</td><td>COVID-19</td></tr><tr><td>difficulty breathing, chest pain, taste and smell intact</td><td>pneumonia</td></tr></tbody></table></div><h4>What it can and cannot do</h4><ul style=\"font-size:14.5px\"><li><strong>It can give its reasoning</strong>, because the rules exist: “rule 47 says this, so this is my diagnosis”. Systematic, not the free explanation an LLM gives</li><li><strong>It cannot learn.</strong> Designing, testing and revising the rules was always done by people; the back end stayed with the solution designers and programmers</li><li>It turns an unstructured problem into a structured one by adding rules, which is why he still calls the approach algorithmic</li><li>Widely used in the 1980s and 1990s and to some extent the early 2000s, and a valid way to sell products for about two decades; rarely chosen now because machine learning and deep learning are more efficient</li></ul>"
+    },
+    {
+     "t": "Machine learning and deep learning: algorithms that build models",
+     "src": "L#32",
+     "h": "<div class=\"def\"><b>The one fundamental difference.</b> A traditional algorithm, and an expert system, <b>decide directly</b> from the input with logic written in advance. A machine learning or deep learning algorithm does <b>not</b> decide: it is used on training data to <b>build a model</b>, the model is validated, and then the <b>model</b> makes the decisions. ML and DL are the two <b>learning techniques</b>; a system built with either or both is what he calls <b>AI</b>.</div><h4>Not new: data and computing power made them usable</h4><p style=\"font-size:14.5px\">Statisticians have done machine learning since the 1960s; it is applied complex statistics, 60 or 70 years old. Artificial neural networks date from the 1980s and 1990s. Both waited for two things: <strong>lots of data</strong>, which systems did not used to generate, and <strong>processing power</strong>, which older machines lacked. The internet brought the data and the <strong>cloud</strong> the computing you no longer need to own, so the applications became popular in the last 20–25 years.</p><h4>Traditional algorithm versus machine learning</h4><p style=\"font-size:14.5px\">In a traditional algorithm the logic is coded in the program: averages, CGPA, whether to give a loan from certain variables, payroll. Data in, decision out, and to change the logic you <strong>change the code</strong>. In machine learning the sequence is different:</p><ol style=\"font-size:14.5px\"><li><strong>Training data</strong>, which is <strong>labelled</strong>: both the question and the answer are known. His example: the web puzzles that ask you to tick every bus or every staircase in a grid of images. You are supplying labelled data for an image <strong>classification</strong> problem</li><li>An <strong>ML algorithm</strong> (he named random forest as one) is applied to that data and produces a <strong>model</strong></li><li>The model is <strong>validated</strong></li><li>The model is then used on real data to make the <strong>decisions</strong>. The ML algorithm’s job ended when the model was built</li></ol><h4>When machine learning, when deep learning</h4><div class=\"scroller\"><table><thead><tr><th></th><th>Machine learning</th><th>Deep learning</th></tr></thead><tbody><tr><td>Method</td><td>Complex statistics (several approaches) → model</td><td>Neural network, multi-layer → model</td></tr><tr><td>Data needed</td><td>A decent amount: gigabytes</td><td>Very large: terabytes or more</td></tr><tr><td>Training data</td><td>Mostly labelled: input and output known</td><td>Just data, in most cases no final outcome given</td></tr><tr><td>Use when</td><td>Patterns are hard to define but you <b>know the output you want</b></td><td>Patterns are highly complex and you are <b>unclear what output</b> you want; you want to explore connections in the data</td></tr><tr><td>His example</td><td>Segment customers by income (lower, middle, high, high net worth): the basis is known</td><td>Segment YouTube viewers: economic status does not decide what they watch, you do not know the basis, but you have everyone’s daily viewing data</td></tr></tbody></table></div><h4>Why “neural network”</h4><p style=\"font-size:14.5px\">The brain is made of neurons. Processing <strong>fires</strong> neurons in a region, and connected neurons nearby fire too (a smell brings back a memory; one thought spirals into A, A′, A″). Neurons form <strong>hierarchical patterns</strong> for understanding, and when a pathway is activated often enough it <strong>solidifies</strong>: a small child’s head feels warm because the brain is learning all the time, and once the pathway for riding a bicycle is set you ride without thinking. An artificial neural network copies that structure in layers, which is why deep learning handles images, video and other heavy, unstructured data. Whether statistics or a neural network built it, the output is a <strong>model that decides</strong>; bigger systems use both techniques together.</p><!--viz:atb-ai-ml-dl-nesting--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Algorithms and expert systems decide directly and do not learn, so they sit outside AI. AI is the system built with the two learning techniques, machine learning (statistics, labelled gigabytes, known output) and deep learning (multi-layer neural networks, terabytes, unclear output). Generative AI is a product inside deep learning, built on self-supervised deep learning.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Where each approach sits, as the lecture drew the line</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 256\" role=\"img\" aria-label=\"Two columns. Left, outside AI: algorithm (fixed steps, decides itself) and expert system (if-then rules from experts, no learning). Right, a large box labelled AI, built with learning techniques, containing machine learning (statistics to a model, gigabytes of labelled data, output known) and deep learning (multi-layer neural net to a model, terabytes of data, output unclear), with generative AI inside deep learning as a product built on self-supervised deep learning.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><text x=\"65\" y=\"38\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">no learning</text><rect x=\"10\" y=\"52\" width=\"110\" height=\"62\" rx=\"5\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"65\" y=\"72\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Algorithm</text><text x=\"65\" y=\"89\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">fixed steps</text><text x=\"65\" y=\"104\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">decides itself</text><rect x=\"10\" y=\"124\" width=\"110\" height=\"106\" rx=\"5\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"65\" y=\"144\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Expert system</text><text x=\"65\" y=\"161\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">if–then rules</text><text x=\"65\" y=\"176\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">from experts</text><text x=\"65\" y=\"191\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">decides itself</text><text x=\"65\" y=\"206\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">no learning</text><rect x=\"132\" y=\"14\" width=\"296\" height=\"228\" rx=\"5\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5;stroke-dasharray:5 4\"/><text x=\"280\" y=\"36\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">AI: built with learning techniques</text><rect x=\"146\" y=\"52\" width=\"264\" height=\"62\" rx=\"5\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"278\" y=\"70\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Machine learning</text><text x=\"278\" y=\"87\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">complex statistics → a model</text><text x=\"278\" y=\"103\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">GB of labelled data · output known</text><rect x=\"146\" y=\"124\" width=\"264\" height=\"106\" rx=\"5\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"278\" y=\"142\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Deep learning</text><text x=\"278\" y=\"159\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">multi-layer neural net → a model</text><text x=\"278\" y=\"174\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">TB+ of data · output unclear</text><rect x=\"154\" y=\"182\" width=\"248\" height=\"40\" rx=\"5\" style=\"fill:var(--surface);stroke:var(--clay);stroke-width:1.5\"/><text x=\"278\" y=\"198\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Generative AI</text><text x=\"278\" y=\"214\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">a product, on self-supervised DL</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Techniques on the left decide from the input; the two on the right only build a model, and the model decides. Generative AI is a product, not a fifth technique.</figcaption></figure><!--/viz:atb-ai-ml-dl-nesting--><!--viz:atb-ml-model-workflow--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Top row: input data goes into an algorithm whose logic is written in advance, which outputs the decision. Bottom row: labelled training data goes into an ML or DL algorithm, which produces a model; the model is validated, and then new data goes into the model, which makes the decisions.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Who makes the decision: the algorithm, or a model it built?</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:12px\"><span style=\"width:100%;color:var(--ink-3);font-size:12.5px\">Traditional algorithm (and expert system)</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Input data</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Algorithm</b><br><span style=\"color:var(--ink-2);font-size:12.5px\">logic written in advance</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Decision</b></div><span style=\"color:var(--ink-3)\">· to change the logic, change the code</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><span style=\"width:100%;color:var(--ink-3);font-size:12.5px\">Machine learning / deep learning</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Labelled training data</b><br><span style=\"color:var(--ink-2);font-size:12.5px\">input + known output</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">ML or DL algorithm<br><span style=\"color:var(--ink-2);font-size:12.5px\">statistics, or a neural network</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Model</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Validate</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">New data in</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>The model decides</b></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The ML algorithm’s job ends when the model is built and validated; from then on the model, not the algorithm, takes the decisions.</figcaption></figure><!--/viz:atb-ml-model-workflow-->"
+    },
+    {
+     "t": "Generative AI, and matching the approach to the problem",
+     "src": "L#32",
+     "h": "<div class=\"def\"><b>Generative AI is a product, not a fifth technique.</b> Algorithm, expert system, machine learning and deep learning are techniques; generative AI (ChatGPT, Google Gemini, Anthropic’s Claude) is a product built on <b>self-supervised deep learning</b>: the model keeps training itself, which is why new versions keep arriving without programmers rewriting much code. Its learning technique is still deep learning.</div><p style=\"font-size:14.5px\">It needs <strong>very, very large</strong> data: essentially the whole internet, and companies now buy and scan old books to get more. The output is <strong>new content</strong>: text, images, audio, video, code. All human knowledge is still not enough for it; the more it is trained on, the closer it moves to human behaviour.</p><h4>The hierarchy, and his five-scenario exercise</h4><p style=\"font-size:14.5px\">Algorithm for simple, clear logic; expert system for complex logic expressed as rules; machine learning for hard patterns with a clear output in mind; deep learning for highly complex patterns, very large data and an unclear output; generative AI to generate content. He gave five systems from different domains and asked which approach built each. The clues are the point:</p><div class=\"scroller\"><table><thead><tr><th>System</th><th>Clue</th><th>Approach</th></tr></thead><tbody><tr><td>A railway system computes the shortest route between two stations with predefined computational steps</td><td>everything defined in advance, computational steps, not rules</td><td><b>Algorithm</b></td></tr><tr><td>A manufacturing system identifies possible machine faults from temperature, vibration and pressure readings, using rules provided by engineers</td><td>rules provided by experts; clear input and output</td><td><b>Expert system</b></td></tr><tr><td>A bank uses a model built from past customer data to predict whether a new loan applicant is likely to default</td><td>“a model” means ML or DL; past customer data is decent but not vast; the output (default: yes/no or a probability) is clear</td><td><b>Machine learning</b></td></tr><tr><td>A security system analyses video footage with a multi-layer neural network to detect suspicious human activity</td><td>video means huge data; multi-layer neural network is the direct clue; and “suspicious activity” is not a clearly defined output</td><td><b>Deep learning</b></td></tr><tr><td>A news organisation uses a system trained on a very large collection of text to generate draft articles</td><td>very large training text, and it generates content</td><td><b>Generative AI</b></td></tr></tbody></table></div><h4>One healthcare situation, five tools</h4><ol style=\"font-size:14.5px\"><li><strong>Algorithm:</strong> compute BMI from height and weight by the formula</li><li><strong>Expert system:</strong> rules to decide whether the patient is obese, using BMI but also other conditions and the fact that the BMI scale came from Western male data, so women and people of the Indian subcontinent may need different thresholds</li><li><strong>Machine learning:</strong> from age, BMI, lifestyle (smoking, drinking), medical history and genetics (did a parent have diabetes), predict the <strong>probability</strong> of developing diabetes. Lots of data, but still a structured question</li><li><strong>Deep learning:</strong> read the patient’s scans to detect abnormalities, by comparison with other obese and diabetic patients; image processing is heavy and each scan can mean many things</li><li><strong>Generative AI:</strong> write the personalised health report with dietary and treatment recommendations</li></ol><p style=\"font-size:14.5px\">Use the simplest, most economical approach that solves the problem. This course gave the foundation; the later ML, deep learning and generative AI courses build on it.</p>"
+    },
+    {
+     "t": "Textbook: Clustering Algorithms",
+     "src": "Codeless DSA ch9",
+     "h": "<p>The chapter introduces two 'K-algorithms'. K-means groups unlabelled data into K clusters: it places K centroids, assigns every point to its nearest centroid, moves each centroid to the mean of its points, and repeats until nothing changes — a partitional alternative to hierarchical clustering, which merges nearby clusters into a tree-like dendrogram. K-nearest neighbour classifies a new item by a majority vote of the K closest labelled items. The chapter closes with a quick tour of machine learning — supervised, unsupervised and reinforcement learning — and of neural networks with input, hidden and output layers, where more than one hidden layer means deep learning. For a manager, K-means is the classic tool for customer segmentation and KNN a simple way to label new customers from past ones.</p><!--viz:atb-kmeans-one-round--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Number line of monthly visits 2, 4, 6, 20, 22. Points 2, 4 and 6 are nearer centroid 4; points 20 and 22 are nearer centroid 20. Recomputing the means leaves centroid 1 at 4 and moves centroid 2 from 20 to 21. A second pass changes no assignment, so K-means stops.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One round of K-means, K = 2, on five customers’ monthly visits</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 156\" role=\"img\" aria-label=\"Number line from 0 to 24 with five customer values 2, 4, 6, 20 and 22. Starting centroids at 4 and 20. The three small values join centroid 4 and the two large values join centroid 20. Recomputed means: 4 stays at 4, 20 moves to 21.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M30,84 L410,84\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M30.0,84 L30.0,90\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"30.0\" y=\"104\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><path d=\"M125.0,84 L125.0,90\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"125.0\" y=\"104\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">6</text><path d=\"M220.0,84 L220.0,90\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"220.0\" y=\"104\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">12</text><path d=\"M315.0,84 L315.0,90\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"315.0\" y=\"104\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">18</text><path d=\"M410.0,84 L410.0,90\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"410.0\" y=\"104\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">24</text><path d=\"M93.3,62 L93.3,84\" style=\"stroke:var(--blue);stroke-width:2;fill:none;stroke-dasharray:4 3\"/><path d=\"M346.7,62 L346.7,84\" style=\"stroke:var(--clay);stroke-width:2;fill:none;stroke-dasharray:4 3\"/><path d=\"M362.5,62 L362.5,84\" style=\"stroke:var(--clay);stroke-width:2;fill:none\"/><path d=\"M346.7,56 L358.5,56\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none\"/><path d=\"M362.5,56 L356.5,53 L356.5,59 Z\" style=\"fill:var(--clay)\"/><circle cx=\"61.7\" cy=\"84\" r=\"7\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.8\"/><text x=\"61.7\" y=\"124\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">2</text><circle cx=\"93.3\" cy=\"84\" r=\"7\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.8\"/><text x=\"93.3\" y=\"124\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">4</text><circle cx=\"125.0\" cy=\"84\" r=\"7\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.8\"/><text x=\"125.0\" y=\"124\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">6</text><circle cx=\"346.7\" cy=\"84\" r=\"7\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.8\"/><text x=\"346.7\" y=\"124\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">20</text><circle cx=\"378.3\" cy=\"84\" r=\"7\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.8\"/><text x=\"378.3\" y=\"124\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">22</text><text x=\"30\" y=\"28\" text-anchor=\"start\" style=\"fill:var(--blue);font-size:13px\">centroid 4 → mean (2+4+6) ÷ 3 = 4 (stays)</text><text x=\"410\" y=\"46\" text-anchor=\"end\" style=\"fill:var(--clay);font-size:13px\">centroid 20 → mean (20+22) ÷ 2 = 21</text><text x=\"30\" y=\"144\" text-anchor=\"start\" style=\"fill:var(--ink-2);font-size:13px\">cluster 1: occasional visitors</text><text x=\"410\" y=\"144\" text-anchor=\"end\" style=\"fill:var(--ink-2);font-size:13px\">cluster 2: frequent visitors</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Assign each point to its nearest centroid, move each centroid to the mean of its points, repeat; here the next pass changes nothing, so it stops. Dashed = starting centroid, solid = recomputed.</figcaption></figure><!--/viz:atb-kmeans-one-round--><!--viz:atb-knn-vote-k3-k5--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"The five nearest labelled customers, closest first, are Stayed, Churned, Stayed, Churned, Churned. With K = 3 the vote is 2 Stayed to 1 Churned, predicting Stayed; with K = 5 it is 2 Stayed to 3 Churned, predicting Churned.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">K-nearest neighbour: the same neighbours, two values of K</div><div class=\"scroller\"><table><thead><tr><th>Neighbour (closest first)</th><th>Label</th><th>K = 3</th><th>K = 5</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">1</td><td>Stayed</td><td style=\"white-space:nowrap;background:var(--blue-soft)\">counted</td><td style=\"white-space:nowrap;background:var(--clay-soft)\">counted</td></tr><tr><td style=\"font-family:var(--mono)\">2</td><td>Churned</td><td style=\"white-space:nowrap;background:var(--blue-soft)\">counted</td><td style=\"white-space:nowrap;background:var(--clay-soft)\">counted</td></tr><tr><td style=\"font-family:var(--mono)\">3</td><td>Stayed</td><td style=\"white-space:nowrap;background:var(--blue-soft)\">counted</td><td style=\"white-space:nowrap;background:var(--clay-soft)\">counted</td></tr><tr><td style=\"font-family:var(--mono)\">4</td><td>Churned</td><td style=\"white-space:nowrap\">not counted</td><td style=\"white-space:nowrap;background:var(--clay-soft)\">counted</td></tr><tr><td style=\"font-family:var(--mono)\">5</td><td>Churned</td><td style=\"white-space:nowrap\">not counted</td><td style=\"white-space:nowrap;background:var(--clay-soft)\">counted</td></tr><tr><td colspan=\"2\"><b>Vote</b></td><td style=\"white-space:nowrap;background:var(--blue-soft)\"><b>2 Stayed – 1 Churned → Stayed</b></td><td style=\"white-space:nowrap;background:var(--clay-soft)\"><b>2 Stayed – 3 Churned → Churned</b></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">KNN classifies by majority vote of the K closest labelled items, so the choice of K can flip the answer. Here K is the number of voters; in K-means it is the number of clusters.</figcaption></figure><!--/viz:atb-knn-vote-k3-k5--><p><strong>Hierarchical vs partitional clustering</strong> — Clustering groups similar data. Hierarchical clustering repeatedly merges the closest clusters, and the result is drawn as a tree-like dendrogram. Partitional clustering divides the data into a set number of separate groups at once; K-means is partitional.<br><em>e.g.</em> A dendrogram of product categories vs four fixed customer segments.</p><p><strong>K-means</strong> — You choose K, the number of clusters. The algorithm places K centroids (often randomly), assigns each point to the nearest centroid by Euclidean distance, recomputes each centroid as the mean of its assigned points, and repeats until no point changes cluster. It is an unsupervised method.<br><em>e.g.</em> Segmenting 2 lakh shoppers into K = 4 groups by spend and visit frequency.</p><p><strong>K-nearest neighbour (KNN)</strong> — KNN classifies a new item by finding the K labelled items closest to it and taking the majority label among them. The choice of K can change the answer. It is a supervised classification method because it relies on labelled examples.<br><em>e.g.</em> A new loan applicant whose 5 most similar past applicants include 3 defaulters is flagged as high risk.</p><p><strong>Supervised, unsupervised and reinforcement learning</strong> — Supervised learning trains on labelled data and is expected to produce a specific answer, as in classification. Unsupervised learning works on unlabelled data to uncover patterns nobody specified. Reinforcement learning improves over time from feedback on its previous attempts.<br><em>e.g.</em> Fraud labels on past transactions (supervised); discovering natural customer groups (unsupervised); a pricing bot adjusting from sales feedback (reinforcement).</p><p><strong>AI vs machine learning</strong> — Artificial intelligence is the broad idea of computer systems performing intelligent tasks. Machine learning is the part of it in which systems use statistical methods to learn from data and improve with limited or no supervision.<br><em>e.g.</em> A recommender trained on purchase history is machine learning, and so AI. L#32 drew the line more tightly: a purely rule-based expert system is a complex algorithm, not AI.</p><p><strong>Neural networks and deep learning</strong> — An artificial neural network loosely mimics the brain with layers of nodes: an input layer that passes data in without computing, one or more hidden layers where computation happens, and an output layer that returns results. Data flowing one way is a feed-forward network. Deep learning uses networks with more than one hidden layer and needs lots of data and computing power.<br><em>e.g.</em> Voice assistants and medical-image screening use deep learning.</p><details><summary>Worked problem: One round of K-means</summary><p>Five customers' monthly visits are 2, 4, 6, 20 and 22. Run K-means with K = 2, starting centroids at 4 and 20.</p><ol><li>Assign each point to the nearer centroid: 2, 4, 6 → centroid 4; 20, 22 → centroid 20.</li><li>Recompute centroids as means: (2 + 4 + 6) ÷ 3 = 4; (20 + 22) ÷ 2 = 21.</li><li>Reassign with centroids 4 and 21: no point changes cluster, so the algorithm stops.</li></ol><p><strong>Answer:</strong> Clusters {2, 4, 6} with centroid 4 and {20, 22} with centroid 21 — 'occasional' and 'frequent' visitors.</p></details><details><summary>Worked problem: KNN vote and the effect of K</summary><p>A new customer's nearest labelled customers, from closest to farthest, are: Stayed, Churned, Stayed, Churned, Churned. Classify the new customer with K = 3 and with K = 5.</p><ol><li>K = 3: the closest three are Stayed, Churned, Stayed → 2 Stayed vs 1 Churned.</li><li>K = 5: all five → 2 Stayed vs 3 Churned.</li></ol><p><strong>Answer:</strong> K = 3 predicts Stayed; K = 5 predicts Churned — the choice of K changes the result.</p></details><div class=\"def\"><b>Book vs lecture — Is KNN a clustering algorithm?.</b> Book: Presents K-nearest neighbour alongside K-means as a clustering (‘K’) algorithm. Lecture: L#32 did not name KNN or K-means; it placed classification from labelled data (tick the buses) under machine learning. <b>KNN is supervised classification (it needs labelled neighbours); K-means is unsupervised clustering. Keep them apart in any answer.</b></div><div class=\"def\"><b>Book vs lecture — What points in a cluster share.</b> Book: States that the points within a cluster have different properties. Lecture: Not covered. <b>The intended meaning is the opposite: points in the same cluster are similar; different clusters differ. Answer accordingly.</b></div><div class=\"def\"><b>Book vs lecture — Finding groups when no basis is known.</b> Book: Unsupervised learning, with K-means as the example, finds patterns in unlabelled data; it is part of machine learning. Lecture: L#32: when you know the basis and output (income bands) use machine learning on gigabytes; when you do not know what separates the groups (YouTube viewers) and have terabytes, use deep learning to explore the connections. <b>For a course question use his split (output known → ML, output unclear → DL). Know the book’s term, unsupervised learning, for the general idea; the two are not in conflict, the book simply files unsupervised methods under ML.</b></div><div class=\"def\"><b>Book vs lecture — What counts as AI.</b> Book: AI is the broad field of systems doing intelligent tasks; machine learning is the part that learns from data. Lecture: L#32: AI is a system built with the learning techniques, machine learning and/or deep learning, in which the model decides; an expert system is a complex rule-based algorithm, strictly not AI. <b>Compatible, but use the lecture’s wording: ML and DL are the AI learning techniques, and rule-based systems fall outside AI.</b></div><div class=\"def\"><b>Book vs lecture — What makes learning ‘deep’.</b> Book: A neural network with more than one hidden layer. Lecture: L#32: a multi-layer neural network, needing very large (terabyte) data, chosen when patterns are highly complex and the output is unclear. <b>The same idea; the book gives the structural test (hidden layers), the lecture the business test (data size, output unclear).</b></div>"
+    }
+   ]
   }
  ],
  "topics": [
@@ -761,6 +826,14 @@ HUB.addCourse({
   {
    "name": "Graph search & shortest paths",
    "unit": "searching"
+  },
+  {
+   "name": "Clustering & ML",
+   "unit": "intelligence"
+  },
+  {
+   "name": "Web search & AI",
+   "unit": "intelligence"
   }
  ],
  "traps": [
@@ -1973,6 +2046,118 @@ HUB.addCourse({
    "p": "The closing summary read the average case as O(log n), and the opening called O(n²) growth exponential. The lecture’s own analysis gives O(n log n); exponential growth is O(2ⁿ).",
    "f": "n log n; n² ≠ 2ⁿ",
    "lec": 30
+  },
+  {
+   "id": "atb-t0177",
+   "h": "K means different things in K-means and KNN",
+   "p": "In K-means, K is the number of clusters to form. In KNN, K is the number of neighbours that vote.",
+   "f": "clusters vs voters",
+   "bk": "Codeless DSA ch9"
+  },
+  {
+   "id": "atb-t0178",
+   "h": "K-means is unsupervised; KNN is supervised",
+   "p": "K-means needs no labels and finds groups. KNN needs labelled examples to classify a new item.",
+   "f": "labels? KNN",
+   "bk": "Codeless DSA ch9"
+  },
+  {
+   "id": "atb-t0179",
+   "h": "Points in a cluster are similar, not different",
+   "p": "Clustering puts alike items together. The book's line that points within a cluster have different properties is a slip.",
+   "f": "cluster = look-alikes",
+   "bk": "Codeless DSA ch9"
+  },
+  {
+   "id": "atb-t0180",
+   "h": "The input layer of a neural network does no computation",
+   "p": "It only passes data in. Computation happens in the hidden layers (and may happen in the output layer).",
+   "f": "input just passes",
+   "bk": "Codeless DSA ch9"
+  },
+  {
+   "id": "atb-t0181",
+   "h": "Web search is judged by relevance and authority, not by exact match",
+   "p": "Linear and binary search return the item that matches exactly, and one wrong character fails. Web search ranks millions of roughly matching pages so the most relevant and authoritative come first, and only the top of that order matters.",
+   "f": "web: relevant, not exact",
+   "lec": 31
+  },
+  {
+   "id": "atb-t0182",
+   "h": "Repeating a keyword a hundred times was the old engines’ weakness, not a PageRank signal",
+   "p": "Yahoo and AltaVista ranked by keyword frequency, so pages were stuffed with repeated phrases. PageRank ranks by incoming links from authoritative pages, which a page cannot fake by editing its own text.",
+   "f": "stuffing fooled frequency",
+   "lec": 31
+  },
+  {
+   "id": "atb-t0183",
+   "h": "Not all links count the same: the source’s authority and its number of outlinks both matter",
+   "p": "A vote from a reputable page weighs more than a blog’s, and whatever a page passes on is its rank ÷ its outgoing links. A strong page linking to 100 sites gives each only 1/100 of its weight.",
+   "f": "weight ÷ outlinks",
+   "lec": 31
+  },
+  {
+   "id": "atb-t0184",
+   "h": "85% follow links and 15% jump, not the other way round",
+   "p": "The random surfer model assumes a user keeps following links with probability 0.85 and opens a new URL or search with probability 0.15. Hence the 0.85 multiplies what a page receives and the 0.15 is spread over all N pages.",
+   "f": "0.85 follow · 0.15 jump",
+   "lec": 31
+  },
+  {
+   "id": "atb-t0185",
+   "h": "Within a round, every new rank is computed from the previous round’s ranks, not from ranks just updated",
+   "p": "He recalculated A first, but B, C and D were still computed from A’s old 0.25. Only after all four are done are the ranks replaced together for the next round; otherwise the numbers keep shifting during the calculation.",
+   "f": "old ranks all round",
+   "lec": 31
+  },
+  {
+   "id": "atb-t0186",
+   "h": "A page with no incoming links is not at zero: it keeps 0.15 ÷ N",
+   "p": "D receives nothing, so its rank is 0.0375 from round 1 and stays there. The random-jump share goes to every page regardless of links; that is why D is lowest, not absent.",
+   "f": "D = 0.15 ÷ 4, not 0",
+   "lec": 31
+  },
+  {
+   "id": "atb-t0187",
+   "h": "An expert system is a complex rule-based algorithm, not AI, in the lecture’s classification",
+   "p": "Some old textbooks call expert systems the first AI. He said that strictly they are not: they apply hard-coded if–then rules written by people, cannot learn after they are built, and so stay on the algorithmic side of the line.",
+   "f": "rules ≠ intelligence",
+   "lec": 32
+  },
+  {
+   "id": "atb-t0188",
+   "h": "In machine learning the model decides; the ML algorithm only builds the model",
+   "p": "A traditional algorithm takes the decision directly from the input. An ML algorithm such as random forest is applied to training data to create a model; once validated, that model makes the business decisions.",
+   "f": "algorithm builds, model decides",
+   "lec": 32
+  },
+  {
+   "id": "atb-t0189",
+   "h": "Training data for machine learning is labelled: input and known output, not just data",
+   "p": "The model can only be built if the right answers are supplied alongside the inputs, as when you tick every bus in an image grid. Deep learning is the technique he pointed to when, in most cases, no final outcome is given.",
+   "f": "question + answer",
+   "lec": 32
+  },
+  {
+   "id": "atb-t0190",
+   "h": "Output known → machine learning; output unclear → deep learning",
+   "p": "Segmenting customers by income, a basis you know, is ML with gigabytes of data. Segmenting YouTube viewers when you do not know what separates them is DL, with terabytes. Deep learning is not simply “better ML”; it is for the vaguer, bigger problem.",
+   "f": "known → ML · unknown → DL",
+   "lec": 32
+  },
+  {
+   "id": "atb-t0191",
+   "h": "Generative AI is a product, not a fifth technique",
+   "p": "Algorithm, expert system, machine learning and deep learning are the techniques. ChatGPT, Gemini and Claude are products built on self-supervised deep learning, whose learning technique is therefore still deep learning.",
+   "f": "GenAI = product on DL",
+   "lec": 32
+  },
+  {
+   "id": "atb-t0192",
+   "h": "If an algorithm solves it, you do not need AI",
+   "p": "His closing rule: do not use a sword where a pin will do. A calculator is more reliable and more computationally economical for arithmetic than an LLM, even though the LLM can also do it. Match the approach to the problem.",
+   "f": "pin, not sword",
+   "lec": 32
   }
  ],
  "defs": [
@@ -3286,6 +3471,158 @@ HUB.addCourse({
    "term": "Random pivot",
    "html": "A pivot taken from <b>any index</b> at random. Like the middle item, it carries <b>no guarantee</b> of a good split, which is why median of three is often preferred.",
    "lec": 30
+  },
+  {
+   "id": "atb-d0166",
+   "unit": "intelligence",
+   "topic": "Clustering & ML",
+   "term": "Centroid",
+   "html": "<b>Centroid</b>: the centre point of a K-means cluster, recomputed as the <b>mean</b> of the points assigned to it.",
+   "bk": "Codeless DSA ch9"
+  },
+  {
+   "id": "atb-d0167",
+   "unit": "intelligence",
+   "topic": "Clustering & ML",
+   "term": "Dendrogram",
+   "html": "<b>Dendrogram</b>: the tree-like diagram produced by <b>hierarchical clustering</b>, showing which clusters were merged.",
+   "bk": "Codeless DSA ch9"
+  },
+  {
+   "id": "atb-d0168",
+   "unit": "intelligence",
+   "topic": "Clustering & ML",
+   "term": "K-nearest neighbour",
+   "html": "<b>K-nearest neighbour</b>: classifies a new item by majority vote of the <b>K closest labelled items</b>.",
+   "bk": "Codeless DSA ch9"
+  },
+  {
+   "id": "atb-d0169",
+   "unit": "intelligence",
+   "topic": "Clustering & ML",
+   "term": "Supervised vs unsupervised learning",
+   "html": "<b>Supervised learning</b>: learns from <b>labelled</b> data to give a specific answer. <b>Unsupervised learning</b>: finds patterns in <b>unlabelled</b> data.",
+   "bk": "Codeless DSA ch9"
+  },
+  {
+   "id": "atb-d0170",
+   "unit": "intelligence",
+   "topic": "Clustering & ML",
+   "term": "Deep learning",
+   "html": "<b>Deep learning</b>: machine learning with neural networks that have <b>more than one hidden layer</b>.",
+   "bk": "Codeless DSA ch9"
+  },
+  {
+   "id": "atb-d0171",
+   "unit": "intelligence",
+   "topic": "PageRank: links as weighted votes, and the random surfer",
+   "term": "PageRank",
+   "html": "Google’s original ranking algorithm (Page and Brin, Stanford, patented <b>1998</b>): a page’s rank comes from the ranks of the pages <b>linking to it</b>, each divided by that page’s <b>outgoing links</b>, recalculated until stable. Named for ranking <b>pages</b> and for Larry <b>Page</b>.",
+   "lec": 31
+  },
+  {
+   "id": "atb-d0172",
+   "unit": "intelligence",
+   "topic": "PageRank: links as weighted votes, and the random surfer",
+   "term": "Weighted voting mechanism",
+   "html": "A link is a <b>vote</b> for the page it points to; votes from <b>authoritative</b> pages (a reputable newspaper, Wikipedia, the IIT Jodhpur homepage) weigh more than a random blog’s; and a page’s vote is <b>split</b> among all the pages it links to.",
+   "lec": 31
+  },
+  {
+   "id": "atb-d0173",
+   "unit": "intelligence",
+   "topic": "PageRank: links as weighted votes, and the random surfer",
+   "term": "Authority dilution",
+   "html": "What a page passes along each link is <b>its rank ÷ its number of outgoing links</b>. A page of weight 100 that links to 100 programmes gives each only <b>1</b>; a page that endorses everyone endorses no one strongly.",
+   "lec": 31
+  },
+  {
+   "id": "atb-d0174",
+   "unit": "intelligence",
+   "topic": "PageRank: links as weighted votes, and the random surfer",
+   "term": "Random surfer model",
+   "html": "The assumption that a web user <b>follows links</b> with probability <b>0.85</b> and <b>jumps</b> to a new URL or search with probability <b>0.15</b>, found by analysing many users, not any one person. It gives the formula’s 0.85 and 0.15.",
+   "lec": 31
+  },
+  {
+   "id": "atb-d0175",
+   "unit": "intelligence",
+   "topic": "Running PageRank on four pages",
+   "term": "PageRank formula (as taught)",
+   "html": "<b>new rank = 0.15 ÷ N + 0.85 × rank received</b>, N = number of pages. Every page gets the random-jump share 0.15 ÷ N even with no incoming links; received = the sum over linking pages of their rank ÷ their outlinks, taken from the <b>previous round</b>.",
+   "lec": 31
+  },
+  {
+   "id": "atb-d0176",
+   "unit": "intelligence",
+   "topic": "From batch updates to real time: what web search teaches",
+   "term": "Static crawl snapshot (batch PageRank)",
+   "html": "1998–2010: Google froze every page’s existing rank in a snapshot and recalculated PageRank as a <b>batch every 3–4 weeks</b>. Rankings could swing during the run (the <b>“Google Dance”</b>) and a new page stayed invisible until the next batch.",
+   "lec": 31
+  },
+  {
+   "id": "atb-d0177",
+   "unit": "intelligence",
+   "topic": "From batch updates to real time: what web search teaches",
+   "term": "Incremental crawling and dynamic graph integration",
+   "html": "Since 2010: crawl only what has <b>changed</b>, add new pages to the graph within a short time (low-ranked at first), and update in <b>real time</b>. PageRank remains the foundation, with hundreds of ML and AI signals added.",
+   "lec": 31
+  },
+  {
+   "id": "atb-d0178",
+   "unit": "intelligence",
+   "topic": "Structured problems: where algorithms are enough",
+   "term": "Structured problem",
+   "html": "A task whose <b>input and output are clear</b> and whose steps can be written in advance: accounting, payroll, CGPA, bank interest, anything in an ERP. An ordinary <b>algorithm</b> solves it; no AI is needed.",
+   "lec": 32
+  },
+  {
+   "id": "atb-d0179",
+   "unit": "intelligence",
+   "topic": "Expert systems: an expert’s rules, hard-coded",
+   "term": "Expert system",
+   "html": "A system of <b>if–then rules</b> distilled from shadowing and interviewing many human experts (first in medical diagnosis). It can cite the rule behind a conclusion but <b>cannot learn</b>; in his classification a complex rule-based <b>algorithm</b>, not AI. Common from the 1980s to the early 2000s.",
+   "lec": 32
+  },
+  {
+   "id": "atb-d0180",
+   "unit": "intelligence",
+   "topic": "Machine learning and deep learning: algorithms that build models",
+   "term": "Labelled training data",
+   "html": "Data where <b>both the input and the right answer</b> are known, such as images already marked “bus” or “not bus”. A machine learning algorithm needs it to build a model; ticking the buses in a web puzzle is you supplying it, for a <b>classification</b> problem.",
+   "lec": 32
+  },
+  {
+   "id": "atb-d0181",
+   "unit": "intelligence",
+   "topic": "Machine learning and deep learning: algorithms that build models",
+   "term": "Model (in machine learning)",
+   "html": "What an ML or DL algorithm <b>produces</b> from training data (random forest was his example algorithm). After <b>validation</b>, the <b>model</b> makes the real decisions; the learning algorithm does not decide anything itself.",
+   "lec": 32
+  },
+  {
+   "id": "atb-d0182",
+   "unit": "intelligence",
+   "topic": "Machine learning and deep learning: algorithms that build models",
+   "term": "Deep learning / neural network",
+   "html": "Learning with a <b>multi-layer artificial neural network</b>, modelled on neurons that fire together and form pathways that solidify with repetition. Needs <b>very large data (terabytes)</b>; chosen when patterns are highly complex and the <b>output is unclear</b>, as in images and video.",
+   "lec": 32
+  },
+  {
+   "id": "atb-d0183",
+   "unit": "intelligence",
+   "topic": "Machine learning and deep learning: algorithms that build models",
+   "term": "AI (as the lecture used it)",
+   "html": "A system built with the two <b>learning techniques</b>, machine learning and/or deep learning, whose decisions are taken by the <b>model</b> they produced. Expert systems and ordinary algorithms are outside it.",
+   "lec": 32
+  },
+  {
+   "id": "atb-d0184",
+   "unit": "intelligence",
+   "topic": "Generative AI, and matching the approach to the problem",
+   "term": "Generative AI",
+   "html": "A <b>product</b> (ChatGPT, Gemini, Claude), not a technique: built on <b>self-supervised deep learning</b>, trained on something like the whole internet plus scanned books, improving itself between versions, and used to <b>generate</b> new text, images, audio, video or code.",
+   "lec": 32
   }
  ],
  "questions": [
@@ -12892,6 +13229,771 @@ HUB.addCourse({
    "w": "n² is quadratic (polynomial) growth. Exponential growth is O(2ⁿ), where each extra item doubles the work, far worse than n² (L#28).",
    "lec": 30,
    "lv": "analyse"
+  },
+  {
+   "id": "atb-q0574",
+   "topic": "Clustering & ML",
+   "q": "In the K-means algorithm, what does K represent?",
+   "c": [
+    "The number of neighbours that vote",
+    "The number of clusters to form",
+    "The number of iterations allowed",
+    "The number of hidden layers"
+   ],
+   "a": [
+    1
+   ],
+   "w": "K-means forms K clusters around K centroids. The number of voting neighbours is K in KNN — the classic mix-up.",
+   "bk": "Codeless DSA ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0575",
+   "topic": "Clustering & ML",
+   "q": "A new customer's nearest labelled customers, closest first, are: Stayed, Churned, Stayed, Churned, Churned. What does K-nearest neighbour predict with K = 3, and with K = 5?",
+   "c": [
+    "Stayed with K = 3; Churned with K = 5",
+    "Churned in both cases",
+    "Stayed in both cases",
+    "Churned with K = 3; Stayed with K = 5"
+   ],
+   "a": [
+    0
+   ],
+   "w": "K = 3 counts Stayed, Churned, Stayed (2–1 Stayed); K = 5 counts all five (3–2 Churned). The answer depends on K.",
+   "bk": "Codeless DSA ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0576",
+   "topic": "Clustering & ML",
+   "q": "In K-means, three customers assigned to one cluster spend ₹2,000, ₹4,000 and ₹9,000 a month. Where is that cluster's centroid recomputed to?",
+   "c": [
+    "₹4,000, the middle value",
+    "₹9,000, the largest value",
+    "₹5,000, the mean",
+    "₹2,000, the smallest value"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The 'means' step averages the members: (2,000 + 4,000 + 9,000) ÷ 3 = ₹5,000. ₹4,000 is the median, not the mean.",
+   "bk": "Codeless DSA ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0577",
+   "topic": "Clustering & ML",
+   "q": "When does the K-means algorithm stop?",
+   "c": [
+    "After exactly K iterations",
+    "When every cluster has the same number of points",
+    "When the centroids reach the origin",
+    "When no point needs to move to a different centroid"
+   ],
+   "a": [
+    3
+   ],
+   "w": "It iterates until assignments stop changing. Clusters need not be equal in size.",
+   "bk": "Codeless DSA ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0578",
+   "topic": "Clustering & ML",
+   "q": "Which clustering approach repeatedly merges the closest clusters and is drawn as a dendrogram?",
+   "c": [
+    "Hierarchical clustering",
+    "Partitional clustering",
+    "K-means",
+    "K-nearest neighbour"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Hierarchical clustering merges nearby clusters into a tree-like dendrogram. K-means is partitional.",
+   "bk": "Codeless DSA ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0579",
+   "topic": "Clustering & ML",
+   "q": "A retailer wants to split 2 lakh shoppers into four marketing segments. No segment labels exist yet. Which approach fits best?",
+   "c": [
+    "K-nearest neighbour with K = 4",
+    "Binary search",
+    "K-means with K = 4",
+    "Supervised learning on segment labels"
+   ],
+   "a": [
+    2
+   ],
+   "w": "No labels plus a chosen number of groups is unsupervised partitional clustering: K-means with K = 4. KNN needs labelled examples to vote. (L#32 put “segments with no known basis” on the deep-learning side of his ML/DL split; K-means is the book’s classic unsupervised ML tool for the same job.)",
+   "bk": "Codeless DSA ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0580",
+   "topic": "Clustering & ML",
+   "q": "A dynamic-pricing system adjusts prices and improves over time using the sales results of its previous price changes. Which type of learning is this?",
+   "c": [
+    "Supervised learning",
+    "Unsupervised learning",
+    "Hierarchical clustering",
+    "Reinforcement learning"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Learning from feedback on earlier attempts is reinforcement learning. There is no fixed labelled dataset here.",
+   "bk": "Codeless DSA ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0581",
+   "topic": "Clustering & ML",
+   "q": "In an artificial neural network, where does the main computation take place?",
+   "c": [
+    "In the input layer",
+    "In the hidden layers",
+    "Only in the connections between layers",
+    "Outside the network"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The input layer only passes data in; hidden layers compute and bridge to the output layer, which may also compute.",
+   "bk": "Codeless DSA ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0582",
+   "topic": "Clustering & ML",
+   "q": "Which statement about AI and machine learning matches the book?",
+   "c": [
+    "They are two names for the same thing",
+    "Machine learning is broader than AI",
+    "AI is the broad field of systems doing intelligent tasks; machine learning is systems learning from data",
+    "AI always requires deep learning"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The book stresses they are not the same: AI is the broad goal, ML the data-driven learning within it.",
+   "bk": "Codeless DSA ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0583",
+   "topic": "Clustering & ML",
+   "q": "What makes a neural network a 'deep learning' system, in the book's terms?",
+   "c": [
+    "It has no hidden layer",
+    "It uses K-means",
+    "It is trained without data",
+    "It has more than one hidden layer"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Depth means several hidden layers. With no hidden layer it would be a single-layer perceptron.",
+   "bk": "Codeless DSA ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0584",
+   "topic": "Clustering & ML",
+   "q": "A marketing head runs K-means twice on the same customer data, with different random starting centroids, and gets slightly different segments. What is the most reasonable explanation?",
+   "c": [
+    "K-means starts from randomly chosen centroids, so its result can depend on where it starts",
+    "The data must have been corrupted",
+    "K-means is a supervised method",
+    "K-means always returns identical clusters, so the software is faulty"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The book notes centroids are usually chosen randomly at the start, and the iterations refine from there, so different starts can settle differently. Nothing about this requires labels.",
+   "bk": "Codeless DSA ch9",
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0585",
+   "topic": "Web search & AI",
+   "q": "According to the lecture, what makes web search different from the traditional searches of earlier lectures?",
+   "c": [
+    "It uses binary search on a sorted list of pages",
+    "It only works when the search term is spelled exactly",
+    "It is about relevance and authority on a graph of connected pages, shown in order, rather than finding an exact match",
+    "It sorts every page on the web completely before showing results"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Traditional search asks whether an item exists and where; one wrong character fails. Web search finds relevant pages in a network and ranks them, and the user only cares about the top of that order, so nothing like a complete sort of the web is wanted.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0586",
+   "topic": "Web search & AI",
+   "q": "A page in 2001 repeats the phrase “best BS program in the country” a hundred times. What did the lecture say the search engines of that time would do, and why was this a problem?",
+   "c": [
+    "Rank it higher, because Yahoo and AltaVista scored pages by keyword frequency, which rewarded keyword stuffing over relevance",
+    "Remove it, because repeated text was banned",
+    "Ignore the repetition, because they already counted incoming links",
+    "Rank it lower, because repeated keywords diluted its authority"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Pre-Google engines relied on how often the search words appeared on a page, so repeating phrases pushed irrelevant pages up and users had to wade through eight or ten result pages. Counting incoming links was Google’s later idea, and dilution is about a page’s outgoing links.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0587",
+   "topic": "Web search & AI",
+   "q": "Who devised PageRank, where, and when was it patented, according to the lecture?",
+   "c": [
+    "Two Yahoo engineers in 1995",
+    "Larry Page and Sergey Brin at MIT, in 2004",
+    "Sergey Brin alone, at Stanford, in 2010",
+    "Larry Page and Sergey Brin at Stanford, patented in 1998"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Both were at Stanford, frustrated with keyword-based results; the algorithm was patented in 1998 through Stanford, which later sold its share in Google.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0588",
+   "topic": "Web search & AI",
+   "q": "Why is the algorithm called PageRank?",
+   "c": [
+    "Because it counts the number of pages on a site",
+    "Because it ranks web pages and also carries Larry Page’s surname",
+    "Because it was first used to number book pages",
+    "Because it ranks pages by the page count of the document"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He called it a clever twist: the algorithm ranks pages, and Page is one inventor’s surname. It has nothing to do with document length or page counts.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0589",
+   "topic": "Web search & AI",
+   "q": "Which two ideas did the lecture name as the foundations of PageRank?",
+   "c": [
+    "The weighted voting mechanism and the random surfer model",
+    "Keyword frequency and batch processing",
+    "Binary search and merge sort",
+    "Static snapshots and the Google Dance"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Links as weighted votes (authority flows along links and is split among outlinks) and the random surfer (85% follow, 15% jump) are the two foundations; batch processing and the Google Dance describe how Google ran it up to 2010.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0590",
+   "topic": "Web search & AI",
+   "q": "A programme page receives one link from an Instagram influencer’s post and one from the IIT Jodhpur homepage. How does the weighted voting mechanism treat these two votes?",
+   "c": [
+    "Both count the same: a link is a link",
+    "The influencer’s link counts more because social media has more visitors",
+    "The IIT Jodhpur link counts more because it comes from a more authoritative page",
+    "Neither counts, because only links from the page itself matter"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Not all votes are equal: a link from a reputable, well-connected page such as the IIT Jodhpur homepage or a major newspaper carries more weight than one from a random post. That is exactly his example for why the IITJ link settles the doubt about the programme.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0591",
+   "topic": "Web search & AI",
+   "q": "A page currently has rank 0.6 and links to three other pages. Under PageRank’s dilution rule, how much rank does it pass to each of them?",
+   "c": [
+    "0.6 to each",
+    "0.2 to each",
+    "0.3 to each",
+    "0.15 to each"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A page’s rank is divided equally among its outgoing links: 0.6 ÷ 3 = 0.2. Passing the full 0.6 to every link would let a page endorse everyone at no cost, which is what dilution prevents.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0592",
+   "topic": "Web search & AI",
+   "q": "In the random surfer model, what do the figures 85% and 15% stand for?",
+   "c": [
+    "85% of pages are relevant, 15% are spam",
+    "85% of users jump to a new site, 15% keep clicking links",
+    "85% of a page’s rank goes to the top result, 15% to the rest",
+    "A user keeps following links 85% of the time and jumps to a new URL or search 15% of the time"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Link following is the 85% behaviour and the random jump the 15%, found from analysing many users rather than any one person. Swapping them is the common slip; the 0.85 multiplies the rank received and the 0.15 is shared over all pages.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0593",
+   "topic": "Web search & AI",
+   "q": "In the formula new rank = 0.15 ÷ N + 0.85 × (rank received), what is N, and what does the 0.15 ÷ N term give a page?",
+   "c": [
+    "N is the total number of web pages; every page gets this random-jump share even if nothing links to it",
+    "N is the page’s number of outgoing links; the term is what it passes to each",
+    "N is the number of rounds; the term shrinks each round",
+    "N is the number of incoming links; pages with none get zero"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The 15% chance of jumping anywhere is spread equally over all N pages, so with four pages each gets 0.0375 regardless of links. Dividing by outgoing links happens in the received term, not here.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0594",
+   "topic": "Web search & AI",
+   "q": "Four pages start at rank 0.25 each. A links to B and to C. Using his formula with N = 4, what is B’s rank after round 1 if A is its only incoming link?",
+   "c": [
+    "0.25",
+    "0.0375",
+    "0.14375",
+    "0.25 + 0.125 = 0.375"
+   ],
+   "a": [
+    2
+   ],
+   "w": "B receives half of A’s rank, 0.25 ÷ 2 = 0.125, because A has two outlinks. New rank = 0.15 ÷ 4 + 0.85 × 0.125 = 0.0375 + 0.10625 = 0.14375. Adding to the old rank is not how the formula works.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0595",
+   "topic": "Web search & AI",
+   "q": "In his example C receives 0.125 from A, 0.25 from B and 0.25 from D. What is C’s new rank?",
+   "c": [
+    "0.625",
+    "0.56875",
+    "0.53125",
+    "0.66250"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Received = 0.625; new rank = 0.0375 + 0.85 × 0.625 = 0.0375 + 0.53125 = 0.56875. The 0.625 is only the amount received, before the formula; 0.53125 forgets the random-jump share.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0596",
+   "topic": "Web search & AI",
+   "q": "Why was D’s rank 0.0375 after round 1, and what happened to it in later rounds?",
+   "c": [
+    "It was highest, because D links to C",
+    "It rose each round as C grew",
+    "It was an error he corrected later",
+    "No page links to D, so it receives nothing and keeps only 0.15 ÷ 4; it stays at 0.0375 in every round"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Rank comes from incoming links. D has an outgoing link to C but none coming in, so its received term is zero and its rank is the random-jump share alone, unchanged from the first round to the last.",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0597",
+   "topic": "Web search & AI",
+   "q": "While computing round 1, he found A’s new rank first. Which ranks should then be used when computing B, C and D in the same round?",
+   "c": [
+    "The previous round’s ranks for every page, including A’s old 0.25",
+    "A’s new rank, since it is more up to date",
+    "The average of A’s old and new ranks",
+    "It makes no difference, the answers are identical either way"
+   ],
+   "a": [
+    0
+   ],
+   "w": "One round uses one set of ranks; all four new values come from the old ones, and the replacement happens together at the end of the round. Using updated values mid-round would keep shifting the numbers and does change the answers.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0598",
+   "topic": "Web search & AI",
+   "q": "When does the PageRank calculation stop, and what is done once it stops?",
+   "c": [
+    "After exactly one round; the ranks are then averaged",
+    "After N rounds, one per page",
+    "When the ranks are relatively stable, which took about 13–14 rounds in his example; the pages are then sorted by rank",
+    "When every page has the same rank"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Steps 6 and 7 repeat the formula until the ranks settle (small wobbles allowed); step 8 sorts the pages by their final rank so the most relevant appears first. Ranks do not become equal; C ended far above D.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0599",
+   "topic": "Web search & AI",
+   "q": "A’s rank stayed at 0.25 after round 1 even though A gives away rank along two links. Why?",
+   "c": [
+    "Because A had no outgoing links",
+    "Because A gave away its 0.25 in halves to B and C and received C’s whole 0.25 back, since A is C’s only outlink",
+    "Because the first page in the list never changes",
+    "Because the formula ignores A in the first round"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He said whatever was lost was replaced by what came from C: 0.0375 + 0.85 × 0.25 = 0.25. It is a coincidence of this round; in the next round A receives C’s larger rank and rises.",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0600",
+   "topic": "Web search & AI",
+   "q": "How did Google run PageRank between 1998 and 2010, and what was the “Google Dance”?",
+   "c": [
+    "Continuously, with rankings fixed for a year",
+    "Only for new pages, with old pages ranked once",
+    "In real time, with the Dance being a visual effect on the results page",
+    "As a batch every three or four weeks on a static crawl snapshot; the Dance was the drastic swing in rankings around each recalculation"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Recalculating for millions of pages could not be done live, so ranks were frozen in a snapshot and recomputed every few weeks; during that time results could be unreliable, and a new page waited for the next batch to appear.",
+   "lec": 31,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0601",
+   "topic": "Web search & AI",
+   "q": "You launch a blog today. According to the lecture, how does Google’s post-2010 approach treat it, and does PageRank still apply?",
+   "c": [
+    "It joins the graph within a short time through incremental crawling and dynamic graph integration, ranked low at first; PageRank remains the foundation with hundreds of ML and AI signals added",
+    "It waits three to four weeks for the next batch, as in 1998",
+    "It is ranked immediately at the top because new pages get priority",
+    "PageRank was replaced by AI in 2010, so links no longer matter"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Since 2010 Google crawls incrementally and integrates new pages dynamically, so the blog appears quickly though with little rank. The algorithm stayed the same; only the parameters multiplied.",
+   "lec": 31,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0602",
+   "topic": "Web search & AI",
+   "q": "Which earlier parts of the course combine in PageRank, as the lecture connected them?",
+   "c": [
+    "Stacks and queues only",
+    "Hashing and blockchain",
+    "A directed graph of pages and links, search across that graph, repeated recalculation, and finally sorting by rank",
+    "Arrays and insertion sort"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Pages are nodes and links are one-way edges (L#16); relevant pages are found by exploring connections (L#17, L#24); the formula is iterated to a stable value; and the result is sorted (Module 5), with only the top of the order mattering.",
+   "lec": 31,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0603",
+   "topic": "Web search & AI",
+   "q": "Which business problems did the lecture give as structured problems where an ordinary algorithm works well?",
+   "c": [
+    "New-product selection and market sentiment analysis",
+    "Accounting, payroll processing, CGPA calculation and ERP systems",
+    "Medical diagnosis and image recognition",
+    "Customer segmentation when the basis is unknown"
+   ],
+   "a": [
+    1
+   ],
+   "w": "These have clear numeric inputs, fixed logic and clear outputs. Product launches and sentiment analysis were his unstructured examples; diagnosis went to expert systems and unknown-basis segmentation to deep learning.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0604",
+   "topic": "Web search & AI",
+   "q": "Using the lecture’s grade points (A = 10, A− = 9, B = 8), a student scores A, B and A− in three equally weighted subjects. What is the SGPA, and why did he class this as an algorithm’s job?",
+   "c": [
+    "9.0; every grade maps to a fixed number and the output is just their mean, so the steps are fully defined",
+    "9.0; because machine learning predicted it from past students",
+    "8.5; because the lowest grade is dropped",
+    "It cannot be computed without an expert system’s rules"
+   ],
+   "a": [
+    0
+   ],
+   "w": "(10 + 8 + 9) ÷ 3 = 9.0. Input, mapping and output are all defined in advance, which is exactly a structured problem; no rules from experts and no model are needed.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0605",
+   "topic": "Web search & AI",
+   "q": "How did the lecture classify expert systems?",
+   "c": [
+    "As the first true AI, because they diagnose like doctors",
+    "As machine learning, because they are trained on doctors’ data",
+    "As deep learning with few layers",
+    "As complex rule-based algorithms: an advance on simple algorithms, but strictly not AI, because the rules are hard-coded and the system cannot learn"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Some older textbooks call them AI; he said technically they are not. People wrote and revised every rule, and once designed the system applies pre-existing rules without learning.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0606",
+   "topic": "Web search & AI",
+   "q": "How were the rules of the early healthcare expert systems obtained?",
+   "c": [
+    "Doctors typed their textbooks into the system",
+    "The system learnt them from patient records",
+    "Solution designers shadowed and interviewed as many doctors as possible, keeping the decision patterns most of them shared",
+    "They were copied from the BMI formula"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Designers observed and interviewed many paid doctors so that a rule reflected common practice rather than one doctor’s idiosyncrasy, then wrote the if–then rules. No learning from records was involved.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0607",
+   "topic": "Web search & AI",
+   "q": "An expert system gives a diagnosis. According to the lecture, what can it do about explaining itself, and what can it not do over time?",
+   "c": [
+    "It cannot explain anything, and it improves with every patient",
+    "It can cite the rule it applied (“rule 47 says this”), but it cannot learn or adapt after it is built",
+    "It explains like an LLM in free text, and it retrains itself nightly",
+    "It explains nothing, and only programmers can see the rules"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Because the rules exist, the system can report which rule led to the conclusion, systematically rather than conversationally. Revising the rules was always done by people; the system itself did not learn.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0608",
+   "topic": "Web search & AI",
+   "q": "What is the fundamental difference between a traditional algorithm and a machine learning algorithm, as the lecture put it?",
+   "c": [
+    "A traditional algorithm makes the decision directly with predefined logic; an ML algorithm builds a model from training data, and that model makes the decisions",
+    "A traditional algorithm is slower",
+    "An ML algorithm needs no data",
+    "There is no difference; machine learning is a marketing term"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The ML algorithm’s role ends once the model is created and validated. Decisions are taken by the model, not by the algorithm, whereas in payroll or CGPA the coded logic decides directly.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0609",
+   "topic": "Web search & AI",
+   "q": "A website asks you to tick every image containing a bus before letting you in. What did the lecture say you are doing, in machine learning terms?",
+   "c": [
+    "Running a traditional algorithm",
+    "Validating an expert system’s rules",
+    "Providing labelled training data for a classification problem",
+    "Generating new content with generative AI"
+   ],
+   "a": [
+    2
+   ],
+   "w": "You know the right answer for each image, so your ticks label the inputs; that is the training data an ML algorithm needs to build an image-classification model.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0610",
+   "topic": "Web search & AI",
+   "q": "Put the machine learning workflow in the lecture’s order.",
+   "c": [
+    "Model → training data → algorithm → decisions",
+    "Decisions → validation → model → training data",
+    "Algorithm decides → model is built afterwards",
+    "Labelled training data → ML algorithm builds a model → model is validated → model makes decisions"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Training data first, the algorithm (random forest was his example) turns it into a model, the model is validated, and only then is it used on real data. The algorithm does not decide at any step.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0611",
+   "topic": "Web search & AI",
+   "q": "A company wants to split customers into income bands (lower, middle, high, high net worth). Another wants to group YouTube viewers but does not know what separates them, though it has everyone’s daily viewing data. Which technique did the lecture match to each?",
+   "c": [
+    "Deep learning for both, because both have lots of data",
+    "Machine learning for the income bands, because the basis and output are known; deep learning for the viewers, because the output is unclear and the data very large",
+    "Expert system for both",
+    "Machine learning for the viewers, deep learning for the income bands"
+   ],
+   "a": [
+    1
+   ],
+   "w": "His rule: when you know what output you want, use ML; when you are unclear what you are looking for and only want to explore connections in very large data, use DL. Viewing habits do not follow income, so the basis is unknown.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0612",
+   "topic": "Web search & AI",
+   "q": "Machine learning dates from the 1960s and neural networks from the 1980s–90s. Why, according to the lecture, did they become popular only in the last 20–25 years?",
+   "c": [
+    "Large amounts of data and large processing power became available, with the internet supplying the data and the cloud the computing",
+    "The algorithms were only invented recently",
+    "Governments banned expert systems",
+    "Because generative AI invented them"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Both techniques existed in theory but needed data that systems did not yet generate and computing that older machines could not supply. Once data and (cloud) processing were abundant, the applications took off.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0613",
+   "topic": "Web search & AI",
+   "q": "When the lecture used the term AI, what did it refer to?",
+   "c": [
+    "Any computer program, including payroll",
+    "Only expert systems",
+    "A system built with the learning techniques, machine learning and/or deep learning, in which the model they produce makes the decisions",
+    "Only generative AI products such as ChatGPT"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He called ML and DL the AI learning techniques; using one or both to create decision models is what makes a system AI. Expert systems and ordinary algorithms fall outside that.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0614",
+   "topic": "Web search & AI",
+   "q": "How did the lecture position generative AI such as ChatGPT, Gemini and Claude?",
+   "c": [
+    "As a fifth learning technique, separate from deep learning",
+    "As an expert system with more rules",
+    "As classical machine learning on small data",
+    "As a product built on self-supervised deep learning, trained on very large data and used to generate new content"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Algorithm, expert system, ML and DL are techniques; generative AI is a product whose learning technique is still deep learning, self-supervised so the model keeps improving itself, which is why new versions keep arriving.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0615",
+   "topic": "Web search & AI",
+   "q": "A manufacturing system identifies possible machine faults from temperature, vibration and pressure readings, using rules provided by engineers. Which approach built it, by the lecture’s clues?",
+   "c": [
+    "Deep learning, because sensors produce lots of data",
+    "An expert system: the rules come from experts, with clear inputs and outputs",
+    "Generative AI",
+    "Machine learning, because it uses past data"
+   ],
+   "a": [
+    1
+   ],
+   "w": "“Rules provided by engineers” is the clue: expert knowledge codified as rules. The input and output are clear, and nothing is learnt from data.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0616",
+   "topic": "Web search & AI",
+   "q": "A security system analyses video footage with a multi-layer neural network to detect suspicious human activity. Which approach, and what two clues did he point to?",
+   "c": [
+    "Deep learning: a multi-layer neural network is the direct clue, and “suspicious activity” is not a clearly defined output",
+    "Machine learning: the output is clearly defined",
+    "An expert system: the guards wrote the rules",
+    "An algorithm: predefined computational steps"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Video means very large data, the neural network names the technique, and unlike the bank’s yes/no default question nobody can define suspicious activity precisely in advance, which is where deep learning fits.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0617",
+   "topic": "Web search & AI",
+   "q": "For a simple arithmetic calculation, the lecture recommended a calculator over an LLM. What was the principle?",
+   "c": [
+    "LLMs cannot do arithmetic at all",
+    "Calculators are more fashionable",
+    "Use the simplest approach that solves the problem: it is more reliable and more computationally economical; do not use a sword where a pin will do",
+    "AI should never be used in business"
+   ],
+   "a": [
+    2
+   ],
+   "w": "An LLM can do the sum, but the calculator is more reliable and far cheaper in computation. The same logic says use an algorithm, not AI, wherever the algorithmic approach works.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0618",
+   "topic": "Web search & AI",
+   "q": "A bank uses a model built from past customer data to predict whether a new loan applicant is likely to default. Which approach, by the lecture’s three clues?",
+   "c": [
+    "An algorithm, because banks use fixed interest formulas",
+    "Generative AI, because it produces a report",
+    "An expert system, because loan officers made the rules",
+    "Machine learning: “a model” means ML or DL, past customer data is decent but not vast, and the output (default or not) is clearly defined"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The word model rules out algorithms and expert systems; the data size and the clear yes/no or probability output pick machine learning over deep learning.",
+   "lec": 32,
+   "lv": "apply"
   }
  ],
  "briefs": {
@@ -12973,6 +14075,9 @@ HUB.addCourse({
   "lec-27",
   "lec-28",
   "lec-29",
-  "lec-30"
+  "lec-30",
+  "cdsa-ch09",
+  "lec-31",
+  "lec-32"
  ]
 });

@@ -10,6 +10,50 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.9.0] — 2026-11-09
+
+### Added
+- **9 lectures released on 8 November** (257 new questions; 3,546 in all):
+  - *Foundations of Computing*: Classes Part 2 (default attribute values, the three ways to change an
+    attribute, inheritance, `super().__init__()`, overriding, an instance as an attribute) and Part 3
+    (importing one class, several, a whole module, `import *` and why not, a module into a module, the
+    standard library) (L#32–33). Dr. Pathak called L#33 the last recorded lecture; the live sessions
+    continue. With them, **Python Crash Course chapter 9 (classes)**, now fully lectured; its claim that
+    the lecturer writes `class Dog:` without brackets was wrong (he writes `class Dog():`) and is fixed.
+  - *Algorithmic Thinking*: web search and PageRank (links as weighted votes, authority split across
+    outlinks, the random surfer's 85/15 split, the iteration traced round by round; the lecture's own
+    numbers reproduced by script) and From Algorithms to Intelligence (structured vs unstructured problems,
+    expert systems, machine learning, deep learning, generative AI) (L#31–32), in a new unit. Dr. Saxena
+    called L#32 an epilogue and said there will be no question from it in the quiz or the end-term; the
+    notes record that in his words. With them, **Subero chapter 9 (clustering and a machine-learning
+    primer)**, marked as the book's own mechanics where the lecture did not go.
+  - *Economic & Business History*: World War I and Indian business (the import collapse, TISCO, the mills,
+    jute, the Swadeshi link) and World War II and Indian business with the course in review (UK import
+    share, uniforms, TELCO, the Bombay Plan) (L#32–33), filed under Module 5. With them, **Tirthankar Roy's
+    chapter on large-scale industry**.
+  - *Financial Accounting*: inventories under AS 2 (cost, net realisable value, FIFO vs weighted average,
+    every figure recomputed) and property, plant and equipment with depreciation and amortisation under
+    AS 10 and AS 26 (cost, straight-line vs written-down value, disposal) (L#32–33), each in a new unit.
+    With them, **Anthony chapters 6 and 7**, with their US-only methods marked book-only and unverified
+    Ind AS and Companies Act points removed.
+  - *Statistics for Managers*: two-tailed tests by p-value, critical value and confidence interval, the t
+    test when σ is unknown, and tests of a population proportion (L#31), every number recomputed.
+
+### Fixed
+- Where a lecture misspoke or the transcript misheard, the notes give the right figure and a trap records
+  what was said: the printing press costs 58,000, not the 57,000 in the LMS summary (FA); a p-value read as
+  0.062 and a closing line that inverted a "do not reject" (SfM); steel imports fell to about a sixth, not a
+  tenth, and WWI did not end in 1919 (EBH); a 0.125 half-share read as 0.15 (ATB); "dictionaries don't keep
+  order" (FoC).
+
+### Changed
+- Notes that said inheritance, modules, two-tailed tests, t tests, proportion tests, inventory methods or
+  depreciation were "not yet lectured" or "coming next" now name the lecture that taught them (FoC, SfM, FA
+  practice-set index, EBH).
+
+Not in yet: no new announcements since 3 November; Statistics and Marketing Quiz 2 dates are still not
+announced, and Marketing has no new lecture. Statistics still has no L#28 and Marketing no L#22 on the LMS.
+
 ## [2.8.0] — 2026-11-05
 
 ### Added

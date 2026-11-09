@@ -193,6 +193,18 @@ HUB.addCourse({
    "Week 12 — Financial Statement Analysis 3",
    "Liquidity, solvency and capital market ratios",
    "rec"
+  ],
+  [
+   32,
+   "Week 13 — Inventories: Valuation under AS 2",
+   "Cost, NRV, FIFO vs weighted average (AS 2)",
+   "rec"
+  ],
+  [
+   33,
+   "Week 13 — PPE, Depreciation and Amortisation",
+   "AS 10 cost, SLM vs WDV, AS 26 intangibles",
+   "rec"
   ]
  ],
  "units": [
@@ -276,7 +288,7 @@ HUB.addCourse({
     {
      "t": "Practice set from the faculty (29 Oct)",
      "src": "L#26",
-     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q1.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q1 · Concepts and conventions in six situations · Partly on Quiz 2</summary><p style=\"font-size:14.5px\">Name the concept or convention applied, or broken, in each situation.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Situation (paraphrased)</th><th>Concept or convention</th><th>Why</th></tr></thead><tbody><tr><td>a</td><td>The owner's personal car is left out of the firm's balance sheet</td><td>Business entity concept (applied)</td><td>The business is separate from its owner; only its own assets are recorded</td></tr><tr><td>b</td><td>Machinery shown at cost less depreciation, not at what it would fetch next week</td><td>Cost concept, with going concern (applied)</td><td>Assets are recorded at cost and the firm is assumed to carry on, so a forced-sale value is irrelevant</td></tr><tr><td>c</td><td>December's salary, paid on 5 January, charged to December</td><td>Matching concept / accrual (applied)</td><td>The expense belongs to the period whose revenue it helped earn, whenever it is paid</td></tr><tr><td>d</td><td>A provision for likely bad debts is made, but an expected gain from a pending court case is not recorded</td><td>Conservatism (prudence) convention (applied)</td><td>Provide for probable losses; don't anticipate gains</td></tr><tr><td>e</td><td>Straight-line depreciation one year, reducing balance the next</td><td>Consistency convention (broken)</td><td>Switching methods without good reason destroys comparability across years</td></tr><tr><td>f</td><td>A sale is recorded on delivery, not when the order arrives</td><td>Realisation concept (applied)</td><td>Revenue is recognised when it is earned, at the transfer of the goods</td></tr></tbody></table></div></details>"
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q1.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO, weighted average and the NRV write-down were lectured in L#32, so expect them in the end-term</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Lectured in L#33 (cost of an asset under AS 10); expect it in the end-term</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Lectured in L#33 (both methods); depreciation as an adjusting entry was on Quiz 2</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Gain or loss on disposal lectured in L#33 (whole years); the half-year charge is the extra step</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Lectured in L#33 (the last-longer, do-more, work-better test); errors of principle were L#15</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q1 · Concepts and conventions in six situations · Partly on Quiz 2</summary><p style=\"font-size:14.5px\">Name the concept or convention applied, or broken, in each situation.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Situation (paraphrased)</th><th>Concept or convention</th><th>Why</th></tr></thead><tbody><tr><td>a</td><td>The owner's personal car is left out of the firm's balance sheet</td><td>Business entity concept (applied)</td><td>The business is separate from its owner; only its own assets are recorded</td></tr><tr><td>b</td><td>Machinery shown at cost less depreciation, not at what it would fetch next week</td><td>Cost concept, with going concern (applied)</td><td>Assets are recorded at cost and the firm is assumed to carry on, so a forced-sale value is irrelevant</td></tr><tr><td>c</td><td>December's salary, paid on 5 January, charged to December</td><td>Matching concept / accrual (applied)</td><td>The expense belongs to the period whose revenue it helped earn, whenever it is paid</td></tr><tr><td>d</td><td>A provision for likely bad debts is made, but an expected gain from a pending court case is not recorded</td><td>Conservatism (prudence) convention (applied)</td><td>Provide for probable losses; don't anticipate gains</td></tr><tr><td>e</td><td>Straight-line depreciation one year, reducing balance the next</td><td>Consistency convention (broken)</td><td>Switching methods without good reason destroys comparability across years</td></tr><tr><td>f</td><td>A sale is recorded on delivery, not when the order arrives</td><td>Realisation concept (applied)</td><td>Revenue is recognised when it is earned, at the transfer of the goods</td></tr></tbody></table></div></details>"
     },
     {
      "t": "Textbook: The Nature and Purpose of Accounting",
@@ -292,6 +304,11 @@ HUB.addCourse({
      "t": "Textbook: Basic Accounting Concepts: The Income Statement",
      "src": "Anthony 13e ch3",
      "h": "<p>Income is the increase in retained earnings from operations: revenues (inflows of cash or receivables from selling goods and services) minus expenses (resources used to earn them). Because businesses run continuously but are reported period by period, the chapter covers Anthony's remaining six concepts: accounting period, conservatism, realisation, matching, consistency and materiality. They decide when revenue is recognised, how much, and which costs become expenses of the period. Anthony stresses that revenue is not cash received, expense is not cash paid and expenditure is not expense, and he gives a decision path for sorting costs into assets and expenses. He then walks through a typical income statement (net sales, cost of sales, gross margin, operating income, tax, net income, EPS), shows how it articulates with the balance sheet through retained earnings, and contrasts accrual accounting with cash-basis, tax, economic and pro forma measures of income.</p><p><strong>Accounting period and interim reports</strong> — Because a going concern has no natural end, income is measured for set intervals, usually a year. Some firms use a natural business year that ends in a quiet season. Managers want monthly figures and regulators want quarterly ones. Cutting a continuous stream into periods is what makes income measurement the hardest problem in accounting.</p><p><strong>Realisation concept (Anthony's version)</strong> — Anthony uses realisation for the amount of revenue: what customers are reasonably certain to pay. Revenue is the negotiated price, not the list price, and conceptually credit sales should be cut by expected bad debts, although in practice the cut is usually shown as bad debt expense.<br><em>e.g.</em> Credit sales ₹25 lakh with 2% expected bad debts: conceptually revenue is ₹24.5 lakh; in practice revenue ₹25 lakh and bad debt expense ₹50,000.</p><p><strong>Matching concept</strong> — When one event affects both revenue and expense, both are recognised in the same period. Usually revenue is pinned down first and then the related costs, such as cost of goods sold or sales commission, are matched to it, whenever the cash is paid.</p><div class=\"card\"><strong>Case: Lone Pine Cafe (B)</strong> <em>(Case 3–2: Lone Pine Cafe (B))</em><p>Following on from the (A) case, the accountant uses the cafe's cash receipts and payments over its winter of operation, plus the balance-sheet facts, to build an income statement that will help the remaining partner decide whether the business is worth continuing.</p><p><em>Lesson:</em> Converting cash records into accrual income: depreciation, stock on hand, receivables and payables, and whether partners' monthly payments are expenses.</p><p><em>Think:</em> Should the regular payments to the partners be treated as an expense of the cafe or as drawings? How does that choice change the picture?</p></div><div class=\"card\"><strong>Case: Pinetree Motel</strong> <em>(Case 3–4: Pinetree Motel)</em><p>A couple who bought a 20-room motel with their savings and a friend's loan get help from an adviser to turn their cash records into an operating statement comparable with industry percentages. The adviser has to ask which receipts belong to earlier or later years.</p><p><em>Lesson:</em> Accrual adjustments (prior-year receipts, uncollected rentals, depreciation) and common-size income statements.</p><p><em>Think:</em> Why must receipts for last year's rentals be excluded from this year's revenue before comparing the motel with industry averages?</p></div><div class=\"card\"><strong>Case: National Association of Accountants</strong> <em>(Case 3–5: National Association of Accountants)</em><p>A professional association's outgoing and incoming boards argue over whether it ran a surplus or a deficit. The draft statement mixes cash receipts, advances and items that relate to other years, such as subscriptions paid in advance and a directory partly still in stock.</p><p><em>Lesson:</em> Matching and precollected revenue in a non-profit; the decision consequences of mismeasured income.</p><p><em>Think:</em> How should subscriptions received this year for next year's journals be treated, and why does it matter for setting next year's dues?</p></div><details><summary>Worked problem: Sales revenue vs cash receipts</summary><p>Shakti Electricals' financial year ends 31 March 2026. During the year: cash sales ₹1,50,000; cash collected for credit sales made last year ₹2,40,000; credit sales made this year and collected this year ₹3,60,000; credit sales made this year still uncollected at 31 March ₹90,000; advance received from a builder for fittings to be delivered in May 2026 ₹60,000. Find this year's sales revenue and cash receipts.</p><ol><li>Revenue counts sales delivered this year: 1,50,000 + 3,60,000 + 90,000 = ₹6,00,000.</li><li>Last year's credit sales collected now are not revenue (already recognised last year); the advance is not revenue yet (nothing delivered).</li><li>Cash receipts = 1,50,000 + 2,40,000 + 3,60,000 + 60,000 = ₹8,10,000.</li><li>Balance sheet effects at 31 March: receivables ₹90,000 (asset); advance from customer ₹60,000 (liability, unearned revenue).</li></ol><p><strong>Answer:</strong> Revenue ₹6,00,000; cash receipts ₹8,10,000. They differ by the change in receivables (₹2,40,000 collected minus ₹90,000 new) and the ₹60,000 advance.</p></details><details><summary>Worked problem: Expense or not? Sorting a year's costs</summary><p>For FY 2025–26 (year ending 31 March), Lakshmi Traders: (a) paid ₹72,000 on 1 October 2025 for two years of insurance; (b) owes staff ₹45,000 for March work, paid on 7 April; (c) bought stock for ₹5,00,000 and sold goods that cost ₹3,80,000; (d) paid ₹20,000 commission in March 2026 on orders to be shipped in April 2026; (e) spent ₹60,000 on staff training; (f) paid a ₹1,00,000 dividend; (g) lost uninsured stock costing ₹25,000 in a fire. Find total expenses for FY 2025–26.</p><ol><li>(a) 6 of 24 months used: 72,000 × 6/24 = ₹18,000 expense; ₹54,000 stays as prepaid insurance.</li><li>(b) Work done in March: ₹45,000 expense with an accrued-wages liability.</li><li>(c) Only goods sold are expensed: ₹3,80,000 cost of goods sold; ₹1,20,000 remains in inventory.</li><li>(d) Commission matches April revenue, so it is not an expense of FY 2025–26 (carried as a prepaid asset).</li><li>(e) Training: ₹60,000 expense (future benefit not objectively measurable).</li><li>(f) Dividend: not an expense; it reduces retained earnings directly.</li><li>(g) Fire loss: ₹25,000 expense (loss).</li><li>Total = 18,000 + 45,000 + 3,80,000 + 60,000 + 25,000 = ₹5,28,000.</li></ol><p><strong>Answer:</strong> Expenses for FY 2025–26 = ₹5,28,000. The commission and dividend are excluded, and only part of the insurance and stock purchases is included.</p></details><details><summary>Worked problem: Building an income statement with margins</summary><p>Deccan Appliances Ltd: gross sales ₹1,20,00,000 (excluding GST of ₹21,60,000 billed separately); sales returns ₹3,00,000; cash discounts allowed ₹1,00,000; cost of sales ₹75,40,000; selling, general and administrative expenses ₹18,00,000; R&amp;D ₹4,00,000; interest expense ₹2,60,000; interest income ₹40,000; tax at 25% of pre-tax income. Find net sales, gross margin %, net income and profit margin.</p><ol><li>Net sales = 1,20,00,000 − 3,00,000 − 1,00,000 = ₹1,16,00,000 (GST excluded: it is owed to the government).</li><li>Gross margin = 1,16,00,000 − 75,40,000 = ₹40,60,000; gross margin % = 40,60,000 ÷ 1,16,00,000 = 35.0%.</li><li>Operating income = 40,60,000 − 18,00,000 − 4,00,000 = ₹18,60,000.</li><li>Income before tax = 18,60,000 − 2,60,000 + 40,000 = ₹16,40,000; tax = ₹4,10,000; net income = ₹12,30,000.</li><li>Profit margin = 12,30,000 ÷ 1,16,00,000 = 10.6%.</li></ol><p><strong>Answer:</strong> Net sales ₹1.16 crore; gross margin 35.0%; net income ₹12,30,000; profit margin about 10.6%.</p></details><div class=\"def\"><b>Book vs lecture — Meaning of the realisation concept.</b> Book: Realisation sets the AMOUNT of revenue (what customers are reasonably certain to pay, net of expected bad debts); conservatism sets the timing (revenue when reasonably certain, usually at delivery). Lecture: Realisation is the TIMING rule: revenue is recognised when property in the goods passes and the buyer becomes liable (at delivery, not order or payment), with hire purchase and long-term contracts as exceptions. <b>In the quiz, realisation = timing at delivery (the lecture). Use Anthony's amount idea only to explain why bad debts and discounts reduce revenue.</b></div><div class=\"def\"><b>Book vs lecture — Full disclosure.</b> Book: Folded into the materiality concept: trivial items may be ignored, but all important information must be disclosed. Lecture: A separate convention, one of four, rooted in the Companies Act's true-and-fair requirement. <b>Treat full disclosure as its own convention in the quiz (for example, notes on pending lawsuits).</b></div><div class=\"def\"><b>Book vs lecture — Income statement format.</b> Book: Classified by function: net sales, cost of sales, gross margin, R&amp;D, SG&amp;A, operating income, other items, tax, net income, EPS; a statement of retained earnings is attached. Lecture: Indian usage is the profit and loss account or statement of profit and loss. <b>Indian companies use Schedule III, which classifies expenses by nature (materials consumed, employee benefits, finance costs, depreciation, other expenses), so gross margin is often not shown. Use Indian names in answers.</b></div><div class=\"def\"><b>Book vs lecture — Accounting period.</b> Book: Usually the calendar year or a natural business year; the SEC requires quarterly interim reports. Lecture: Accounting period (periodicity), usually one year; SEBI requires quarterly reporting for listed companies. <b>In India the financial year normally runs 1 April to 31 March under the Companies Act 2013. Set dated questions on that basis.</b></div>"
+    },
+    {
+     "t": "Textbook: Long-Lived Nonmonetary Assets and Their Amortization",
+     "src": "Anthony 13e ch7",
+     "h": "<p>A long-lived asset is a bundle of future services. Its cost is capitalised and then matched against the revenues of the years it serves, through depreciation (plant), depletion (natural resources) or amortisation (intangibles); land and goodwill are not amortised. The chapter sets out what goes into cost (everything needed to make the asset ready for use, including interest on self-built assets), where maintenance ends and betterment begins, and how to split basket purchases. It then covers the three judgements behind depreciation (service life, residual value, method) and the straight-line, declining-balance, sum-of-years'-digits and units-of-production methods. Disposals produce gains or losses, and impaired assets are written down. Anthony's key message is that depreciation is a process of allocation, not valuation: accumulated depreciation is not a fund of cash, and net book value is not market value.</p><div class=\"card\"><strong>Case: Stafford Press</strong> <em>(Case 7–3: Stafford Press)</em><p>A specialist printer moves nearer its main market, selling its old land, building and some equipment and buying, building and installing new facilities. Each piece of the move has to be classified as capitalised cost, expense, gain or loss.</p><p><em>Lesson:</em> What belongs in the cost of new PPE; disposals and their gains or losses; moving and installation costs.</p><p><em>Think:</em> Should the cost of moving and reinstalling existing presses be capitalised or expensed? Use the ready-for-intended-use principle.</p></div><div class=\"card\"><strong>Case: Silic: cost or fair value on adopting IFRS</strong> <em>(Case 7–4: Silic: Choosing Cost or Fair Value on Adoption of IFRS)</em><p>When European listed companies switch to IFRS, a French property-investment company must choose between carrying its investment properties at historical cost or at fair value, weighing the effects on reported equity, earnings volatility and comparability.</p><p><em>Lesson:</em> Cost model vs fair-value or revaluation models; relevance vs objectivity in measuring long-lived assets.</p><p><em>Think:</em> What would happen to the company's reported profit volatility if it chose fair value, and why might investors still prefer it?</p></div><div class=\"card\"><strong>Case: Accounting fraud at WorldCom</strong> <em>(Case 7–5: Accounting Fraud at WorldCom)</em><p>A large telecom company collapses after it emerges that it overstated pretax income by billions over several years, largely by treating ordinary operating costs as capital assets. Weak internal controls and governance let the practice continue.</p><p><em>Lesson:</em> The capitalise-vs-expense boundary as a lever for manipulating profit; the role of internal control.</p><p><em>Think:</em> Explain how capitalising an operating cost raises this year's profit and what happens to profit in later years.</p></div><details><summary>Worked problem: Building cost, then three depreciation schedules</summary><p>Narmada Textiles buys a loom for ₹10,80,000 (GST paid is fully recoverable as input credit), pays freight ₹25,000 and installation ₹45,000. Life 5 years; residual value ₹1,00,000. Compute the capitalised cost and the yearly depreciation under straight-line, sum-of-years'-digits and double-declining-balance.</p><ol><li>Cost = 10,80,000 + 25,000 + 45,000 = ₹11,50,000 (recoverable GST excluded). Net cost = 11,50,000 − 1,00,000 = ₹10,50,000.</li><li>Straight-line: 10,50,000 ÷ 5 = ₹2,10,000 every year.</li><li>SYD: sum of digits = 15. Charges = 5/15, 4/15, 3/15, 2/15, 1/15 × 10,50,000 = ₹3,50,000; 2,80,000; 2,10,000; 1,40,000; 70,000.</li><li>DDB at 40% of opening book value: Y1 4,60,000 (BV 6,90,000); Y2 2,76,000 (BV 4,14,000); Y3 1,65,600 (BV 2,48,400); Y4 99,360 (BV 1,49,040); Y5 capped at 49,040 so BV ends at the ₹1,00,000 residual.</li><li>Each method writes off exactly ₹10,50,000 in total.</li></ol><p><strong>Answer:</strong> Cost ₹11,50,000. Year-1 charge: SL ₹2,10,000; SYD ₹3,50,000; DDB ₹4,60,000. Accelerated methods front-load the expense but all total ₹10,50,000.</p></details><details><summary>Worked problem: Selling the loom after three years</summary><p>Using straight-line depreciation from the previous problem, Narmada sells the loom at the end of year 3 for ₹4,50,000. Show the journal entry and the gain or loss.</p><ol><li>Accumulated depreciation = 3 × 2,10,000 = ₹6,30,000; net book value = 11,50,000 − 6,30,000 = ₹5,20,000.</li><li>Loss = 4,50,000 − 5,20,000 = −₹70,000.</li><li>Entry: Bank A/c Dr 4,50,000; Accumulated Depreciation A/c Dr 6,30,000; Loss on Sale of Machinery A/c Dr 70,000; To Machinery A/c 11,50,000.</li></ol><p><strong>Answer:</strong> Loss on sale ₹70,000, charged to this year's income. It shows that three years of depreciation (₹6,30,000) understated the true cost of use (₹7,00,000).</p></details><details><summary>Worked problem: Units-of-production and depletion</summary><p>(a) A logistics firm buys a truck for ₹30 lakh, expects ₹6 lakh residual after 4,00,000 km and drives it 70,000 km this year. (b) A company buys a coal block for ₹120 crore holding an estimated 40 lakh tonnes and mines 6 lakh tonnes this year. Find this year's depreciation and depletion.</p><ol><li>(a) Rate = (30,00,000 − 6,00,000) ÷ 4,00,000 km = ₹6 per km; depreciation = 70,000 × 6 = ₹4,20,000.</li><li>(b) Depletion rate = 120 crore ÷ 40 lakh tonnes = ₹300 per tonne; depletion = 6 lakh × 300 = ₹18 crore.</li></ol><p><strong>Answer:</strong> Truck depreciation ₹4.2 lakh; coal depletion ₹18 crore. Both charges move with usage, not time.</p></details><details><summary>Worked problem: Basket purchase and a change in estimate</summary><p>A company buys land with a building for ₹3 crore. A valuer appraises the land at ₹1.2 crore and the building at ₹2.4 crore. The building is depreciated straight-line over 40 years with no residual value. After 10 years, management decides it will last 40 more years. Find the initial split, the original annual depreciation and the revised charge.</p><ol><li>Appraised total = 3.6 crore. Land = 1.2/3.6 × 3 = ₹1 crore; building = 2.4/3.6 × 3 = ₹2 crore.</li><li>Original depreciation = 2 crore ÷ 40 = ₹5 lakh a year (land: none).</li><li>After 10 years: book value = 2 crore − 50 lakh = ₹1.5 crore.</li><li>Revised charge (prospective) = 1.5 crore ÷ 40 remaining years = ₹3.75 lakh a year; past years are not restated.</li></ol><p><strong>Answer:</strong> Land ₹1 crore, building ₹2 crore; depreciation ₹5 lakh a year, falling to ₹3.75 lakh a year from year 11.</p></details><div class=\"def\"><b>Book vs lecture — Depreciation methods taught.</b> Book: Straight-line, double-declining-balance, sum-of-years'-digits and units-of-production, plus the US tax system (MACRS); straight-line is the most common in published accounts. Lecture: L#33: AS 10 names two methods, straight line ((cost − residual value) ÷ useful life: 48,000 ÷ 5 = 9,600 a year for the press) and diminishing balance (a fixed rate on the opening carrying amount: 40% → 23,200, then 13,920). Any method charges the same total; only the timing differs. <b>Straight line and diminishing balance (written-down value) are the exam methods. Double-declining-balance is a diminishing-balance method with rate 2 ÷ life; sum-of-years'-digits, units of production and MACRS are textbook extras.</b></div><div class=\"def\"><b>Book vs lecture — What goes into the cost of an asset.</b> Book: Every expenditure needed to make the asset ready for its intended use, including, for self-built assets, interest during construction; donated assets at fair value; basket purchases split by appraised values. Lecture: L#33: purchase price net of rebates and discounts, plus directly attributable costs (delivery, installation, testing), plus the estimated cost of dismantling at the end of life; advertising and routine maintenance are excluded. Press: 54,000 + 1,500 + 2,500 = 58,000. <b>Use the lecture's list, and remember the dismantling cost, which Anthony's chapter does not feature. Interest capitalisation, donated assets and basket purchases are textbook-only.</b></div><div class=\"def\"><b>Book vs lecture — Measurement after acquisition.</b> Book: US GAAP keeps the cost model; increases in value are never recorded. Anthony notes IFRS allows a revaluation model, with the asset carried at fair value at the date of revaluation. Lecture: The cost concept (L#5) and L#33's carrying amount = cost − accumulated depreciation; no revaluation was taught. <b>Answer with the cost model. Mention revaluation only if a question is framed under IFRS.</b></div><div class=\"def\"><b>Book vs lecture — Intangibles and amortisation.</b> Book: Limited-life intangibles are amortised over the shorter of legal and useful life, usually straight-line; goodwill and indefinite-life intangibles are not amortised but tested for impairment; US GAAP expenses R&amp;D. Lecture: L#33: AS 26 gives three rules: allocate the depreciable amount systematically over the best estimate of useful life, starting when the asset is available for use; a rebuttable presumption that the life does not exceed 10 years; and the shorter of the legal and economic periods. HANA: patent 48,000 over 6 years = 8,000; copyright 70,000 over 10 = 7,000. <b>Both agree on the shorter-of rule. The 10-year presumption and the available-for-use start are lecture-only; goodwill and R&amp;D are textbook-only.</b></div><div class=\"def\"><b>Book vs lecture — Changes in estimate and impairment.</b> Book: A revised life spreads the remaining book value over the new remaining life (though firms do not always adjust); impairment is a two-step test under US GAAP and a one-step write-down to recoverable amount under IFRS. Lecture: L#33 covered neither. The faculty practice set (L#26, Q17) worked a revised useful life prospectively, without restating earlier years. <b>Know the prospective treatment from the practice set. Impairment is textbook-only for now; expect a question on it only if a later lecture or live session covers it.</b></div>"
     }
    ]
   },
@@ -310,6 +327,11 @@ HUB.addCourse({
      "t": "Textbook: Basic Accounting Concepts: The Income Statement",
      "src": "Anthony 13e ch3",
      "h": "<p><strong>Conservatism (Anthony's version)</strong> — Recognise revenue only when it is reasonably certain and expenses as soon as they are reasonably possible. Where two estimates are equally likely, take the lower one for assets and revenue and the higher one for liabilities and expenses. The lower-of-cost-or-market rule for inventory is the best-known application.</p><p><strong>Consistency (Anthony's version)</strong> — Once a method is chosen for a class of events, it is used period after period unless there is a sound reason to change, and the auditor must report any change. It means consistency over time only; it does not require different classes of item, such as plant and inventory, to be measured the same way.</p><p><strong>Materiality and full disclosure</strong> — Trivial items need not be accounted for precisely, so stationery is expensed when bought and a phone bill is charged to the month it arrives. Anthony places full disclosure in the same concept: insignificant events may be ignored, but all important information must be disclosed.</p>"
+    },
+    {
+     "t": "Textbook: Cost of Sales and Inventories",
+     "src": "Anthony 13e ch6",
+     "h": "<p>Inventory accounting splits the cost of goods available for sale between cost of goods sold (an expense matched with the period's revenue) and closing inventory (an asset). A merchandiser's cost is the purchase cost plus freight-in, less returns and discounts. A manufacturer carries materials, work in process and finished goods, and treats all factory costs as product costs that reach the income statement only when goods are sold. The periodic method finds closing stock by physical count and treats the rest as sold, while the perpetual method tracks each item and so exposes shrinkage. When unit costs change, specific identification, weighted average, FIFO or LIFO give different profits and inventory values. LIFO, which saves tax in the US, is not permitted under IFRS, nor under AS 2 as taught in L#32. Inventory is finally written down to market if lower, and analysed through inventory turnover, days' inventory and gross margin %.</p><!--viz:fa-atc-lcm-vs-nrv--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A number line from 60 to 100 marks replacement cost 70, a floor of 75 (NRV less normal profit), NRV 85 and cost 90, with the band between 75 and 85 shaded. Under Anthony's US rule the replacement cost is pulled up into the band, so market is 75 and the item is carried at 75. Under AS 2 the item is carried at the lower of cost 90 and NRV 85, so at 85.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One item, two write-down rules</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 162\" role=\"img\" aria-label=\"Number line from 60 to 100 with cost 90, net realisable value 85, NRV less normal profit 75 and replacement cost 70 marked. Anthony's market is the replacement cost pulled up to the 75 floor, so the item is carried at 75; AS 2 compares cost with NRV and carries it at 85.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M30,86 L430,86\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><rect x=\"182.5\" y=\"78\" width=\"95.0\" height=\"16\" style=\"fill:var(--clay-soft);stroke:none\"/><path d=\"M135.0,86 L135.0,112\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><text x=\"135.0\" y=\"126\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">replacement 70</text><path d=\"M182.5,86 L182.5,70\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none\"/><text x=\"182.5\" y=\"65\" text-anchor=\"middle\" style=\"fill:var(--clay);font-size:13px;font-weight:700\">floor 75 = NRV − profit</text><path d=\"M277.5,86 L277.5,112\" style=\"stroke:var(--blue);stroke-width:1.5;fill:none\"/><text x=\"277.5\" y=\"126\" text-anchor=\"middle\" style=\"fill:var(--blue);font-size:13px;font-weight:700\">NRV 85</text><path d=\"M325.0,86 L325.0,70\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><text x=\"325.0\" y=\"65\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">cost 90</text><text x=\"230.0\" y=\"150\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">Anthony: market stays inside the band → 75</text><text x=\"301.2\" y=\"22\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">AS 2: lower of 90 and 85 → 85</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Same facts, two answers: 85 by the lecture's cost-vs-NRV rule, 75 by Anthony's replacement-cost corridor. The exam uses the lecture's.</figcaption></figure><!--/viz:fa-atc-lcm-vs-nrv--><p><strong>Lower of cost or market</strong> — Following conservatism, inventory is written down when its expected value is below cost (damage, obsolescence, falling prices). Anthony's US rule defines market as replacement cost, capped at net realisable value and floored at NRV less a normal profit, applied item by item. AS 2, as taught in L#32, simply uses the lower of cost and NRV, item by item.</p><div class=\"card\"><strong>Case: Browning Manufacturing Company</strong> <em>(Case 6–1: Browning Manufacturing Company)</em><p>A manufacturer builds its annual budget by fitting together sales, production, purchasing and finance plans into a projected balance sheet and income statement, which means tracing costs through materials, work in process and finished goods.</p><p><em>Lesson:</em> Manufacturing cost flows and the product-cost versus period-cost split, inside a budget.</p><p><em>Think:</em> If planned production exceeds planned sales, how does that affect projected profit, given that factory overhead is a product cost?</p></div><div class=\"card\"><strong>Case: Lewis Corporation</strong> <em>(Case 6–2: Lewis Corporation)</em><p>A company that has always used FIFO for a carton-based inventory reviews a year of purchases at rising prices and weighs a switch to LIFO, looking at the effect on reported profit, inventory and tax.</p><p><em>Lesson:</em> FIFO vs LIFO under rising prices; LIFO layers; the tax motive and the LIFO conformity rule.</p><p><em>Think:</em> Why could an Indian company not make the same switch, and what alternative (weighted average) would it compare against FIFO?</p></div><div class=\"card\"><strong>Case: Morgan Manufacturing</strong> <em>(Case 6–3: Morgan Manufacturing)</em><p>A manufacturing manager judges operating health by gross margin %, pre-tax return on sales and pre-tax return on assets, and must work out how the company's inventory accounting choices shape those measures.</p><p><em>Lesson:</em> How the cost-flow method and LIFO reserve change margins and asset-based ratios.</p><p><em>Think:</em> How would converting LIFO figures to a FIFO basis change gross margin % and return on assets in a period of rising costs?</p></div><details><summary>Worked problem: FIFO, weighted average and LIFO compared</summary><p>Rangoli Paints (periodic method): opening stock 200 tins @ ₹150; purchases 300 tins @ ₹160 and later 300 tins @ ₹170. It sells 560 tins at ₹250 each. Find COGS, closing stock and gross margin % under FIFO and weighted average, and under LIFO for comparison only (LIFO is not allowed under AS 2).</p><ol><li>Goods available = 800 tins costing 30,000 + 48,000 + 51,000 = ₹1,29,000. Sales = 560 × 250 = ₹1,40,000. Closing stock = 240 tins.</li><li>FIFO: COGS = 30,000 + 48,000 + 60 × 170 = ₹88,200; closing = 240 × 170 = ₹40,800; GM = 51,800 (37.0%).</li><li>Weighted average: 1,29,000 ÷ 800 = ₹161.25. COGS = 560 × 161.25 = ₹90,300; closing = 240 × 161.25 = ₹38,700; GM = 49,700 (35.5%).</li><li>LIFO (US only): COGS = 300 × 170 + 260 × 160 = ₹92,600; closing = 40 × 160 + 200 × 150 = ₹36,400; GM = 47,400 (33.9%).</li><li>Check: each method's COGS + closing = ₹1,29,000.</li></ol><p><strong>Answer:</strong> With rising prices, FIFO gives the highest gross margin (37.0%) and closing stock (₹40,800), weighted average is in between (35.5%, ₹38,700), and LIFO is lowest (33.9%, ₹36,400).</p></details><details><summary>Worked problem: Cost of goods manufactured and sold</summary><p>Kaveri Pumps: materials opening ₹2,40,000, purchases ₹9,10,000, freight-in ₹30,000, materials closing ₹2,80,000; direct labour ₹4,20,000; factory overhead (power, supervision, factory depreciation) ₹3,30,000; WIP opening ₹1,10,000, closing ₹1,60,000; finished goods opening ₹2,00,000, closing ₹2,50,000; office salaries ₹3,00,000. Find materials used, COGM and COGS.</p><ol><li>Materials used = 2,40,000 + 9,10,000 + 30,000 − 2,80,000 = ₹9,00,000.</li><li>Conversion costs = 4,20,000 + 3,30,000 = ₹7,50,000.</li><li>COGM = 1,10,000 + 9,00,000 + 7,50,000 − 1,60,000 = ₹16,00,000.</li><li>COGS = 2,00,000 + 16,00,000 − 2,50,000 = ₹15,50,000.</li><li>Office salaries (₹3,00,000) are a period cost, expensed in full and not part of COGS.</li></ol><p><strong>Answer:</strong> Materials used ₹9,00,000; COGM ₹16,00,000; COGS ₹15,50,000. Factory depreciation sits partly in closing WIP and finished goods; office salaries do not.</p></details><details><summary>Worked problem: Writing inventory down: AS 2 (L#32) vs Anthony's US rule</summary><p>(a) A trader's year-end stock (₹'000): item A cost 500, NRV 650; item B cost 800, NRV 720; item C cost 300, NRV 280. Value it under AS 2. (b) A separate item costs ₹90; replacement cost ₹70; NRV ₹85; NRV less normal profit ₹75. Value it under AS 2 and under Anthony's lower-of-cost-or-market rule.</p><ol><li>(a) Item by item: A at 500 (cost lower), B at 720 (NRV lower), C at 280 (NRV lower). Total ₹1,500 thousand; write-down = 1,600 − 1,500 = ₹100 thousand.</li><li>Comparing totals instead (cost 1,600 vs NRV 1,650) would wrongly show no write-down, because A's gain hides B's and C's losses.</li><li>(b) AS 2: lower of cost (90) and NRV (85) = ₹85.</li><li>Anthony's US rule: market = replacement cost 70, but not below the floor of 75 and not above the ceiling of 85, so market = 75; lower of cost 90 and 75 = ₹75.</li></ol><p><strong>Answer:</strong> (a) ₹15,00,000 (write-down ₹1,00,000). (b) ₹85 under AS 2; ₹75 under Anthony's US rule.</p></details><details><summary>Worked problem: Inventory turnover and a fire-loss estimate</summary><p>(a) A retailer's COGS is ₹36 crore; inventory was ₹8 crore at the start and ₹10 crore at the end of the year. Find turnover on average inventory and days' inventory. (b) A godown burns down mid-year. Opening stock ₹5 lakh, purchases to date ₹14 lakh, sales to date ₹20 lakh, normal gross margin 25% of sales. Estimate the stock destroyed with the gross profit method.</p><ol><li>(a) Average inventory = (8 + 10) ÷ 2 = ₹9 crore; turnover = 36 ÷ 9 = 4.0 times; days' inventory = 365 ÷ 4 ≈ 91 days.</li><li>(b) Estimated COGS = 20 × (1 − 0.25) = ₹15 lakh.</li><li>Estimated stock at the fire = 5 + 14 − 15 = ₹4 lakh (the basis of an insurance claim).</li></ol><p><strong>Answer:</strong> (a) 4.0 times, about 91 days. (b) About ₹4 lakh of stock destroyed.</p></details><div class=\"def\"><b>Book vs lecture — LIFO.</b> Book: Specific identification, average cost, FIFO and LIFO are all acceptable under US GAAP; LIFO is popular for tax reasons (the conformity rule); the book notes IFRS does not permit it. Lecture: L#32: AS 2 names specific identification, FIFO and weighted average; firms choose between FIFO and weighted average. LIFO appears in textbooks but AS 2 does not allow it. <b>Never give LIFO as a permitted method in the course exams. Use it only when a question is explicitly set under US GAAP, as in Anthony's examples.</b></div><div class=\"def\"><b>Book vs lecture — Lower of cost or market vs lower of cost and NRV.</b> Book: Market = current replacement cost, not above net realisable value and not below NRV less a normal profit margin. Lecture: L#32: measure inventory at the lower of cost and net realisable value, where NRV = estimated selling price less the selling, marketing and administrative expenses of the sale; compare item by item, do not write down raw materials when the finished goods will sell at or above cost, reassess every year end. The rule comes from conservatism. <b>Answer with the lecture's two-way comparison (cost vs NRV). Anthony's replacement-cost corridor is US practice; use it only if a question names it.</b></div><div class=\"def\"><b>Book vs lecture — What the cost of inventory includes.</b> Book: Invoice price plus the cost of getting the goods to the point of sale and ready for sale (freight-in, unpacking), less purchase returns and discounts. Lecture: L#32: purchase price net of recoverable taxes, freight inward and other direct costs such as unloading labour, conversion costs, less trade discounts and rebates; excluded are abnormal waste, storage costs, selling and distribution costs (a salesman's commission) and administrative overheads. <b>The two agree on the principle (bring the goods to their present location and condition). Use the lecture's include/exclude list; storage cost and abnormal waste are the exclusions she stressed.</b></div><div class=\"def\"><b>Book vs lecture — Periodic vs perpetual records.</b> Book: Both systems are explained; perpetual records expose shrinkage and allow a moving average; the retail method estimates COGS without a count. Lecture: L#32 did not name the two systems. Her workings use a period-end physical count (Trini Company: 900 units counted) and one weighted average for the whole period, which is the periodic approach. <b>Compute FIFO and weighted average the period-end way unless a question says the records are perpetual. Shrinkage, the moving average and the retail method are textbook extras.</b></div><div class=\"def\"><b>Book vs lecture — Format of the cost-of-goods-sold calculation.</b> Book: Purchases, freight-in and purchase-returns accounts closed into a Cost of Goods Sold account; merchandise inventory, materials, WIP and finished goods. Lecture: L#18 and L#20 built the trading account with opening and closing stock, purchases, returns and direct expenses; L#32 wrote COGS = opening inventory + purchases − closing inventory and rearranged it for missing values. <b>Treat Anthony's COGS section as the trading account in another layout. The identity is the same: goods available = COGS + closing inventory.</b></div>"
     }
    ]
   },
@@ -327,7 +349,7 @@ HUB.addCourse({
     {
      "t": "Practice set from the faculty (29 Oct)",
      "src": "L#26",
-     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q2, Q3.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q2 · Missing figures in the accounting equation · Quiz 1 topic</summary><p style=\"font-size:14.5px\">Find the missing figure (₹), using Assets = Liabilities + Capital.</p><div class=\"scroller\"><table><thead><tr><th>Firm</th><th>Working</th><th>Missing figure</th></tr></thead><tbody><tr><td>A</td><td>Capital = 5,40,000 − 2,10,000</td><td>Capital 3,30,000</td></tr><tr><td>B</td><td>Assets = 1,75,000 + 4,25,000</td><td>Assets 6,00,000</td></tr><tr><td>C</td><td>Liabilities = 8,20,000 − 5,05,000</td><td>Liabilities 3,15,000</td></tr><tr><td>D (closing)</td><td>Closing capital = 2,00,000 + 85,000 − 30,000 = 2,55,000; Assets = 1,40,000 + 2,55,000</td><td>Assets 3,95,000</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> A 3,30,000; B 6,00,000; C 3,15,000; D 3,95,000 (closing capital 2,55,000).</p></details><details><summary>Q3 · Dual effect and Dr/Cr of seven transactions · Quiz 1 topic</summary><p style=\"font-size:14.5px\">For each transaction, show the effect on assets, liabilities and owner's equity (+, −, 0) and the accounts debited and credited.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Transaction</th><th>A</th><th>L</th><th>OE</th><th>Debit / Credit</th></tr></thead><tbody><tr><td>a</td><td>Owner brings in ₹1,00,000 cash</td><td>+</td><td>0</td><td>+</td><td>Dr Cash · Cr Capital</td></tr><tr><td>b</td><td>Furniture ₹20,000 on credit</td><td>+</td><td>+</td><td>0</td><td>Dr Furniture · Cr Creditor (supplier)</td></tr><tr><td>c</td><td>₹12,000 paid to a creditor</td><td>−</td><td>−</td><td>0</td><td>Dr Creditor · Cr Cash</td></tr><tr><td>d</td><td>Services ₹30,000 on credit</td><td>+</td><td>0</td><td>+</td><td>Dr Debtor (customer) · Cr Service revenue</td></tr><tr><td>e</td><td>Rent ₹8,000 paid</td><td>−</td><td>0</td><td>−</td><td>Dr Rent · Cr Cash</td></tr><tr><td>f</td><td>Owner withdraws ₹5,000</td><td>−</td><td>0</td><td>−</td><td>Dr Drawings · Cr Cash</td></tr><tr><td>g</td><td>₹30,000 collected from the customer in (d)</td><td>+ and − (net 0)</td><td>0</td><td>0</td><td>Dr Cash · Cr Debtor</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Revenue raises owner's equity and expenses and drawings lower it; (g) only swaps one asset (debtor) for another (cash).</p></details>"
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q2, Q3.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO, weighted average and the NRV write-down were lectured in L#32, so expect them in the end-term</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Lectured in L#33 (cost of an asset under AS 10); expect it in the end-term</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Lectured in L#33 (both methods); depreciation as an adjusting entry was on Quiz 2</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Gain or loss on disposal lectured in L#33 (whole years); the half-year charge is the extra step</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Lectured in L#33 (the last-longer, do-more, work-better test); errors of principle were L#15</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q2 · Missing figures in the accounting equation · Quiz 1 topic</summary><p style=\"font-size:14.5px\">Find the missing figure (₹), using Assets = Liabilities + Capital.</p><div class=\"scroller\"><table><thead><tr><th>Firm</th><th>Working</th><th>Missing figure</th></tr></thead><tbody><tr><td>A</td><td>Capital = 5,40,000 − 2,10,000</td><td>Capital 3,30,000</td></tr><tr><td>B</td><td>Assets = 1,75,000 + 4,25,000</td><td>Assets 6,00,000</td></tr><tr><td>C</td><td>Liabilities = 8,20,000 − 5,05,000</td><td>Liabilities 3,15,000</td></tr><tr><td>D (closing)</td><td>Closing capital = 2,00,000 + 85,000 − 30,000 = 2,55,000; Assets = 1,40,000 + 2,55,000</td><td>Assets 3,95,000</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> A 3,30,000; B 6,00,000; C 3,15,000; D 3,95,000 (closing capital 2,55,000).</p></details><details><summary>Q3 · Dual effect and Dr/Cr of seven transactions · Quiz 1 topic</summary><p style=\"font-size:14.5px\">For each transaction, show the effect on assets, liabilities and owner's equity (+, −, 0) and the accounts debited and credited.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Transaction</th><th>A</th><th>L</th><th>OE</th><th>Debit / Credit</th></tr></thead><tbody><tr><td>a</td><td>Owner brings in ₹1,00,000 cash</td><td>+</td><td>0</td><td>+</td><td>Dr Cash · Cr Capital</td></tr><tr><td>b</td><td>Furniture ₹20,000 on credit</td><td>+</td><td>+</td><td>0</td><td>Dr Furniture · Cr Creditor (supplier)</td></tr><tr><td>c</td><td>₹12,000 paid to a creditor</td><td>−</td><td>−</td><td>0</td><td>Dr Creditor · Cr Cash</td></tr><tr><td>d</td><td>Services ₹30,000 on credit</td><td>+</td><td>0</td><td>+</td><td>Dr Debtor (customer) · Cr Service revenue</td></tr><tr><td>e</td><td>Rent ₹8,000 paid</td><td>−</td><td>0</td><td>−</td><td>Dr Rent · Cr Cash</td></tr><tr><td>f</td><td>Owner withdraws ₹5,000</td><td>−</td><td>0</td><td>−</td><td>Dr Drawings · Cr Cash</td></tr><tr><td>g</td><td>₹30,000 collected from the customer in (d)</td><td>+ and − (net 0)</td><td>0</td><td>0</td><td>Dr Cash · Cr Debtor</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Revenue raises owner's equity and expenses and drawings lower it; (g) only swaps one asset (debtor) for another (cash).</p></details>"
     },
     {
      "t": "Textbook: The Nature and Purpose of Accounting",
@@ -383,7 +405,7 @@ HUB.addCourse({
     {
      "t": "Practice set from the faculty (29 Oct)",
      "src": "L#26",
-     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q4.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q4 · Journal entries, Kavya Stationers · Quiz 1 topic</summary><p style=\"font-size:14.5px\">Kavya Stationers, November 2026; every receipt and payment goes through the bank. Pass the journal entries with narrations.</p><div class=\"scroller\"><table><thead><tr><th>Date</th><th>Entry (₹)</th><th>Narration</th></tr></thead><tbody><tr><td>1 Nov</td><td>Bank A/c Dr 3,00,000; Furniture A/c Dr 50,000<br>To Capital A/c 3,50,000</td><td>Started business with cash at bank and furniture</td></tr><tr><td>2 Nov</td><td>Purchases A/c Dr 72,000<br>To Ravi Papers 72,000</td><td>Goods bought on credit: list price 80,000 less 10% trade discount</td></tr><tr><td>4 Nov</td><td>Bank A/c Dr 45,000<br>To Sales A/c 45,000</td><td>Goods sold, money received in the bank</td></tr><tr><td>6 Nov</td><td>Ravi Papers Dr 4,000<br>To Purchases Returns A/c 4,000</td><td>Goods returned to the supplier</td></tr><tr><td>9 Nov</td><td>Sana Offices Dr 60,000<br>To Sales A/c 60,000</td><td>Goods sold on credit</td></tr><tr><td>12 Nov</td><td>Rent A/c Dr 12,000<br>To Bank A/c 12,000</td><td>Rent paid by cheque</td></tr><tr><td>15 Nov</td><td>Sales Returns A/c Dr 5,000<br>To Sana Offices 5,000</td><td>Goods returned by the customer</td></tr><tr><td>18 Nov</td><td>Bank A/c Dr 54,000; Discount Allowed A/c Dr 1,000<br>To Sana Offices 55,000</td><td>Received in full settlement of 60,000 − 5,000 = 55,000</td></tr><tr><td>20 Nov</td><td>Ravi Papers Dr 68,000<br>To Bank A/c 67,000; To Discount Received A/c 1,000</td><td>Paid in full settlement of 72,000 − 4,000 = 68,000</td></tr><tr><td>25 Nov</td><td>Drawings A/c Dr 3,000<br>To Purchases A/c 3,000</td><td>Goods taken by the proprietor, at cost</td></tr><tr><td>28 Nov</td><td>Salaries A/c Dr 15,000<br>To Bank A/c 15,000</td><td>Salaries paid</td></tr><tr><td>30 Nov</td><td>Computer A/c Dr 37,500<br>To Bank A/c 37,500</td><td>Computer 36,000 plus installation 1,500, both capitalised</td></tr></tbody></table></div><ul><li><strong>Trade discount</strong> is never entered: the purchase is recorded at the net 72,000. A <strong>cash discount</strong> for settling (1,000 allowed, 1,000 received) is entered.</li><li>Goods withdrawn by the owner are credited to Purchases at <strong>cost</strong>, not to Sales.</li><li>Installation is part of the cost of getting the computer ready for use, so it is debited to the Computer account, not to an expense.</li></ul></details>"
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q4.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO, weighted average and the NRV write-down were lectured in L#32, so expect them in the end-term</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Lectured in L#33 (cost of an asset under AS 10); expect it in the end-term</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Lectured in L#33 (both methods); depreciation as an adjusting entry was on Quiz 2</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Gain or loss on disposal lectured in L#33 (whole years); the half-year charge is the extra step</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Lectured in L#33 (the last-longer, do-more, work-better test); errors of principle were L#15</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q4 · Journal entries, Kavya Stationers · Quiz 1 topic</summary><p style=\"font-size:14.5px\">Kavya Stationers, November 2026; every receipt and payment goes through the bank. Pass the journal entries with narrations.</p><div class=\"scroller\"><table><thead><tr><th>Date</th><th>Entry (₹)</th><th>Narration</th></tr></thead><tbody><tr><td>1 Nov</td><td>Bank A/c Dr 3,00,000; Furniture A/c Dr 50,000<br>To Capital A/c 3,50,000</td><td>Started business with cash at bank and furniture</td></tr><tr><td>2 Nov</td><td>Purchases A/c Dr 72,000<br>To Ravi Papers 72,000</td><td>Goods bought on credit: list price 80,000 less 10% trade discount</td></tr><tr><td>4 Nov</td><td>Bank A/c Dr 45,000<br>To Sales A/c 45,000</td><td>Goods sold, money received in the bank</td></tr><tr><td>6 Nov</td><td>Ravi Papers Dr 4,000<br>To Purchases Returns A/c 4,000</td><td>Goods returned to the supplier</td></tr><tr><td>9 Nov</td><td>Sana Offices Dr 60,000<br>To Sales A/c 60,000</td><td>Goods sold on credit</td></tr><tr><td>12 Nov</td><td>Rent A/c Dr 12,000<br>To Bank A/c 12,000</td><td>Rent paid by cheque</td></tr><tr><td>15 Nov</td><td>Sales Returns A/c Dr 5,000<br>To Sana Offices 5,000</td><td>Goods returned by the customer</td></tr><tr><td>18 Nov</td><td>Bank A/c Dr 54,000; Discount Allowed A/c Dr 1,000<br>To Sana Offices 55,000</td><td>Received in full settlement of 60,000 − 5,000 = 55,000</td></tr><tr><td>20 Nov</td><td>Ravi Papers Dr 68,000<br>To Bank A/c 67,000; To Discount Received A/c 1,000</td><td>Paid in full settlement of 72,000 − 4,000 = 68,000</td></tr><tr><td>25 Nov</td><td>Drawings A/c Dr 3,000<br>To Purchases A/c 3,000</td><td>Goods taken by the proprietor, at cost</td></tr><tr><td>28 Nov</td><td>Salaries A/c Dr 15,000<br>To Bank A/c 15,000</td><td>Salaries paid</td></tr><tr><td>30 Nov</td><td>Computer A/c Dr 37,500<br>To Bank A/c 37,500</td><td>Computer 36,000 plus installation 1,500, both capitalised</td></tr></tbody></table></div><ul><li><strong>Trade discount</strong> is never entered: the purchase is recorded at the net 72,000. A <strong>cash discount</strong> for settling (1,000 allowed, 1,000 received) is entered.</li><li>Goods withdrawn by the owner are credited to Purchases at <strong>cost</strong>, not to Sales.</li><li>Installation is part of the cost of getting the computer ready for use, so it is debited to the Computer account, not to an expense.</li></ul></details>"
     },
     {
      "t": "Textbook: Accounting Records and Systems",
@@ -416,7 +438,7 @@ HUB.addCourse({
     {
      "t": "Practice set from the faculty (29 Oct)",
      "src": "L#26",
-     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q5, Q6.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q5 · Ledger and trial balance, Kavya Stationers · Quiz 1 topic</summary><p style=\"font-size:14.5px\">Post Q4 to the Bank, Ravi Papers, Sana Offices and Capital accounts and prepare the trial balance at 30 November 2026.</p><div class=\"scroller\"><table><thead><tr><th>Account</th><th>Debits ₹</th><th>Credits ₹</th><th>Balance ₹</th></tr></thead><tbody><tr><td>Bank</td><td>3,00,000 + 45,000 + 54,000 = 3,99,000</td><td>12,000 + 67,000 + 15,000 + 37,500 = 1,31,500</td><td>2,67,500 Dr</td></tr><tr><td>Ravi Papers</td><td>4,000 + 68,000 = 72,000</td><td>72,000</td><td>Nil</td></tr><tr><td>Sana Offices</td><td>60,000</td><td>5,000 + 55,000 = 60,000</td><td>Nil</td></tr><tr><td>Capital</td><td></td><td>3,50,000</td><td>3,50,000 Cr</td></tr></tbody></table></div><div class=\"scroller\"><table><thead><tr><th>Trial balance, 30 Nov 2026</th><th>Dr ₹</th><th>Cr ₹</th></tr></thead><tbody><tr><td>Bank</td><td>2,67,500</td><td></td></tr><tr><td>Furniture</td><td>50,000</td><td></td></tr><tr><td>Computer</td><td>37,500</td><td></td></tr><tr><td>Purchases (72,000 − 3,000)</td><td>69,000</td><td></td></tr><tr><td>Sales returns</td><td>5,000</td><td></td></tr><tr><td>Rent</td><td>12,000</td><td></td></tr><tr><td>Salaries</td><td>15,000</td><td></td></tr><tr><td>Discount allowed</td><td>1,000</td><td></td></tr><tr><td>Drawings</td><td>3,000</td><td></td></tr><tr><td>Capital</td><td></td><td>3,50,000</td></tr><tr><td>Sales (45,000 + 60,000)</td><td></td><td>1,05,000</td></tr><tr><td>Purchases returns</td><td></td><td>4,000</td></tr><tr><td>Discount received</td><td></td><td>1,000</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Total</strong></td><td><strong>4,60,000</strong></td><td><strong>4,60,000</strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\">Both personal accounts close at nil because each was settled in full. If you show goods withdrawn as a separate credit instead of reducing Purchases, Purchases stays at 72,000 and a 3,000 credit line appears; the totals become 4,63,000 each.</p></details><details><summary>Q6 · Suspense account and five errors · Quiz 1 topic</summary><p style=\"font-size:14.5px\">Rohan Traders' trial balance shows debits ₹8,56,450 and credits ₹8,46,000; the ₹10,450 difference sits in Suspense. Five errors are found.</p><div class=\"scroller\"><table><thead><tr><th>#</th><th>Error</th><th>Affects the trial balance?</th><th>Rectifying entry (₹)</th></tr></thead><tbody><tr><td>1</td><td>Purchase of 7,000 debited to Purchases, not credited to supplier P</td><td>Yes: credit side short 7,000</td><td>Suspense Dr 7,000 · To P 7,000</td></tr><tr><td>2</td><td>Sales return of 2,500 credited to the customer as 2,050</td><td>Yes: credit side short 450</td><td>Suspense Dr 450 · To Customer 450</td></tr><tr><td>3</td><td>Purchases account overcast by 3,000</td><td>Yes: debit side 3,000 too high</td><td>Suspense Dr 3,000 · To Purchases 3,000</td></tr><tr><td>4</td><td>Furniture of 10,000 debited to Purchases</td><td>No: error of principle</td><td>Furniture Dr 10,000 · To Purchases 10,000</td></tr><tr><td>5</td><td>Rent of 6,000 not recorded at all</td><td>No: error of omission</td><td>Rent Dr 6,000 · To Cash/Bank 6,000</td></tr></tbody></table></div><div class=\"scroller\"><table><thead><tr><th>Suspense Account</th><th>₹</th></tr></thead><tbody><tr><td>Cr: difference in trial balance (credits short)</td><td>10,450</td></tr><tr><td>Dr: P (error 1)</td><td>7,000</td></tr><tr><td>Dr: customer (error 2)</td><td>450</td></tr><tr><td>Dr: Purchases (error 3)</td><td>3,000</td></tr><tr><td>Balance after the three entries</td><td>Nil</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> Errors 1–3 affect the trial balance and clear the suspense account exactly (7,000 + 450 + 3,000 = 10,450); errors 4 and 5 do not. (d) An agreed trial balance proves only arithmetical accuracy: errors of principle (4), complete omissions (5), compensating errors and some errors of commission leave it in agreement.</p></details>"
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q5, Q6.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO, weighted average and the NRV write-down were lectured in L#32, so expect them in the end-term</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Lectured in L#33 (cost of an asset under AS 10); expect it in the end-term</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Lectured in L#33 (both methods); depreciation as an adjusting entry was on Quiz 2</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Gain or loss on disposal lectured in L#33 (whole years); the half-year charge is the extra step</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Lectured in L#33 (the last-longer, do-more, work-better test); errors of principle were L#15</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q5 · Ledger and trial balance, Kavya Stationers · Quiz 1 topic</summary><p style=\"font-size:14.5px\">Post Q4 to the Bank, Ravi Papers, Sana Offices and Capital accounts and prepare the trial balance at 30 November 2026.</p><div class=\"scroller\"><table><thead><tr><th>Account</th><th>Debits ₹</th><th>Credits ₹</th><th>Balance ₹</th></tr></thead><tbody><tr><td>Bank</td><td>3,00,000 + 45,000 + 54,000 = 3,99,000</td><td>12,000 + 67,000 + 15,000 + 37,500 = 1,31,500</td><td>2,67,500 Dr</td></tr><tr><td>Ravi Papers</td><td>4,000 + 68,000 = 72,000</td><td>72,000</td><td>Nil</td></tr><tr><td>Sana Offices</td><td>60,000</td><td>5,000 + 55,000 = 60,000</td><td>Nil</td></tr><tr><td>Capital</td><td></td><td>3,50,000</td><td>3,50,000 Cr</td></tr></tbody></table></div><div class=\"scroller\"><table><thead><tr><th>Trial balance, 30 Nov 2026</th><th>Dr ₹</th><th>Cr ₹</th></tr></thead><tbody><tr><td>Bank</td><td>2,67,500</td><td></td></tr><tr><td>Furniture</td><td>50,000</td><td></td></tr><tr><td>Computer</td><td>37,500</td><td></td></tr><tr><td>Purchases (72,000 − 3,000)</td><td>69,000</td><td></td></tr><tr><td>Sales returns</td><td>5,000</td><td></td></tr><tr><td>Rent</td><td>12,000</td><td></td></tr><tr><td>Salaries</td><td>15,000</td><td></td></tr><tr><td>Discount allowed</td><td>1,000</td><td></td></tr><tr><td>Drawings</td><td>3,000</td><td></td></tr><tr><td>Capital</td><td></td><td>3,50,000</td></tr><tr><td>Sales (45,000 + 60,000)</td><td></td><td>1,05,000</td></tr><tr><td>Purchases returns</td><td></td><td>4,000</td></tr><tr><td>Discount received</td><td></td><td>1,000</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Total</strong></td><td><strong>4,60,000</strong></td><td><strong>4,60,000</strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\">Both personal accounts close at nil because each was settled in full. If you show goods withdrawn as a separate credit instead of reducing Purchases, Purchases stays at 72,000 and a 3,000 credit line appears; the totals become 4,63,000 each.</p></details><details><summary>Q6 · Suspense account and five errors · Quiz 1 topic</summary><p style=\"font-size:14.5px\">Rohan Traders' trial balance shows debits ₹8,56,450 and credits ₹8,46,000; the ₹10,450 difference sits in Suspense. Five errors are found.</p><div class=\"scroller\"><table><thead><tr><th>#</th><th>Error</th><th>Affects the trial balance?</th><th>Rectifying entry (₹)</th></tr></thead><tbody><tr><td>1</td><td>Purchase of 7,000 debited to Purchases, not credited to supplier P</td><td>Yes: credit side short 7,000</td><td>Suspense Dr 7,000 · To P 7,000</td></tr><tr><td>2</td><td>Sales return of 2,500 credited to the customer as 2,050</td><td>Yes: credit side short 450</td><td>Suspense Dr 450 · To Customer 450</td></tr><tr><td>3</td><td>Purchases account overcast by 3,000</td><td>Yes: debit side 3,000 too high</td><td>Suspense Dr 3,000 · To Purchases 3,000</td></tr><tr><td>4</td><td>Furniture of 10,000 debited to Purchases</td><td>No: error of principle</td><td>Furniture Dr 10,000 · To Purchases 10,000</td></tr><tr><td>5</td><td>Rent of 6,000 not recorded at all</td><td>No: error of omission</td><td>Rent Dr 6,000 · To Cash/Bank 6,000</td></tr></tbody></table></div><div class=\"scroller\"><table><thead><tr><th>Suspense Account</th><th>₹</th></tr></thead><tbody><tr><td>Cr: difference in trial balance (credits short)</td><td>10,450</td></tr><tr><td>Dr: P (error 1)</td><td>7,000</td></tr><tr><td>Dr: customer (error 2)</td><td>450</td></tr><tr><td>Dr: Purchases (error 3)</td><td>3,000</td></tr><tr><td>Balance after the three entries</td><td>Nil</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> Errors 1–3 affect the trial balance and clear the suspense account exactly (7,000 + 450 + 3,000 = 10,450); errors 4 and 5 do not. (d) An agreed trial balance proves only arithmetical accuracy: errors of principle (4), complete omissions (5), compensating errors and some errors of commission leave it in agreement.</p></details>"
     },
     {
      "t": "Textbook: Accounting Records and Systems",
@@ -449,7 +471,7 @@ HUB.addCourse({
     {
      "t": "Practice set from the faculty (29 Oct)",
      "src": "L#26",
-     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q14, Q15, Q16, Q17, Q18.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q14 · Cost of a machine · Not yet lectured</summary><p style=\"font-size:14.5px\">Orbit Industries buys a machine: invoice ₹12,00,000, trade discount 5% (₹60,000), freight in ₹25,000, installation ₹40,000, test runs before it is ready ₹15,000, staff training ₹20,000, first-year maintenance contract ₹18,000. What cost is capitalised?</p><p style=\"font-size:14.5px\">Cost = everything needed to bring the asset to working condition for its intended use: 12,00,000 − 60,000 + 25,000 + 40,000 + 15,000 = <strong>₹12,20,000</strong>. Training (₹20,000) and the maintenance contract (₹18,000) are expenses of running it, charged to profit (AS 10).</p></details><details><summary>Q15 · Straight-line vs reducing-balance depreciation · Not yet lectured</summary><p style=\"font-size:14.5px\">Using ₹12,20,000, residual value ₹20,000 and a 5-year life, find depreciation and closing book value for years 1–3 by (a) straight line and (b) 20% reducing balance on opening book value (ignoring residual value).</p><div class=\"scroller\"><table><thead><tr><th>Year</th><th>Straight line: depreciation</th><th>Book value</th><th>Reducing balance 20%: depreciation</th><th>Book value</th></tr></thead><tbody><tr><td>1</td><td>2,40,000</td><td>9,80,000</td><td>2,44,000</td><td>9,76,000</td></tr><tr><td>2</td><td>2,40,000</td><td>7,40,000</td><td>1,95,200</td><td>7,80,800</td></tr><tr><td>3</td><td>2,40,000</td><td>5,00,000</td><td>1,56,160</td><td>6,24,640</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Straight line: (12,20,000 − 20,000) ÷ 5 = 2,40,000 every year. Reducing balance: 20% of each year's opening book value, so the charge falls each year.</p></details><details><summary>Q16 · Disposal part-way through a year · Not yet lectured</summary><p style=\"font-size:14.5px\">The machine (bought 1 April 2026, straight line, ₹2,40,000 a year) is sold on 30 September 2028 for ₹6,50,000; depreciation runs to the month of sale; the year ends 31 March.</p><ol><li>Depreciation: 2026–27 2,40,000 + 2027–28 2,40,000 + April–September 2028 (6 months) 1,20,000 = <strong>₹6,00,000</strong>.</li><li>Book value at sale = 12,20,000 − 6,00,000 = <strong>₹6,20,000</strong>.</li><li>Gain = 6,50,000 − 6,20,000 = <strong>₹30,000</strong>.</li><li>Entries: Depreciation Dr 1,20,000 · To Accumulated Depreciation 1,20,000 (the half year); then Bank Dr 6,50,000, Accumulated Depreciation Dr 6,00,000 · To Machinery 12,20,000, To Gain on Sale of Machinery 30,000.</li></ol></details><details><summary>Q17 · Revised useful life · Not yet lectured</summary><p style=\"font-size:14.5px\">Not sold: on 1 April 2028 the remaining life is re-estimated at 5 years from that date, residual value unchanged. Find the 2028–29 charge.</p><p style=\"font-size:14.5px\">Book value on 1 April 2028 = 12,20,000 − 2 × 2,40,000 = 7,40,000. New charge = (7,40,000 − 20,000) ÷ 5 = <strong>₹1,44,000</strong> a year.</p><p style=\"font-size:14.5px\">A revised useful life is a <strong>change in an accounting estimate</strong>: apply it from now on (prospectively). The two years already charged are not restated (AS 5, AS 10).</p></details><details><summary>Q18 · Capital or revenue expenditure · Not yet lectured</summary><p style=\"font-size:14.5px\">Capital or revenue expenditure?</p><div class=\"scroller\"><table><thead><tr><th></th><th>Item</th><th>Type</th><th>Reason</th></tr></thead><tbody><tr><td>a</td><td>Repainting the factory every year</td><td>Revenue</td><td>Recurring upkeep; no lasting new benefit</td></tr><tr><td>b</td><td>Legal fees to buy land</td><td>Capital</td><td>Part of the land's cost</td></tr><tr><td>c</td><td>Replacing a worn belt to keep a machine running</td><td>Revenue</td><td>Maintains, doesn't improve</td></tr><tr><td>d</td><td>A new lift in an office building</td><td>Capital</td><td>A new asset with benefit over many years</td></tr><tr><td>e</td><td>Own workers' wages for building a warehouse extension</td><td>Capital</td><td>Cost of constructing a fixed asset</td></tr><tr><td>f</td><td>Advertising a new product</td><td>Revenue</td><td>Charged to profit as incurred (AS 26 doesn't allow it to be capitalised)</td></tr><tr><td>g</td><td>Engine overhaul that adds 4 years of life</td><td>Capital</td><td>Extends the useful life beyond the original estimate</td></tr><tr><td>h</td><td>Stamp duty and registration on a building purchase</td><td>Capital</td><td>Part of the building's cost</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Older Indian texts sometimes call heavy advertising “deferred revenue expenditure”; under AS 26 it is an expense when incurred.</p></details>"
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q14, Q15, Q16, Q17, Q18.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO, weighted average and the NRV write-down were lectured in L#32, so expect them in the end-term</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Lectured in L#33 (cost of an asset under AS 10); expect it in the end-term</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Lectured in L#33 (both methods); depreciation as an adjusting entry was on Quiz 2</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Gain or loss on disposal lectured in L#33 (whole years); the half-year charge is the extra step</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Lectured in L#33 (the last-longer, do-more, work-better test); errors of principle were L#15</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q14 · Cost of a machine · Lectured in L#33</summary><p style=\"font-size:14.5px\">Orbit Industries buys a machine: invoice ₹12,00,000, trade discount 5% (₹60,000), freight in ₹25,000, installation ₹40,000, test runs before it is ready ₹15,000, staff training ₹20,000, first-year maintenance contract ₹18,000. What cost is capitalised?</p><p style=\"font-size:14.5px\">Cost = everything needed to bring the asset to working condition for its intended use: 12,00,000 − 60,000 + 25,000 + 40,000 + 15,000 = <strong>₹12,20,000</strong>. Training (₹20,000) and the maintenance contract (₹18,000) are expenses of running it, charged to profit (AS 10).</p></details><details><summary>Q15 · Straight-line vs reducing-balance depreciation · Lectured in L#33</summary><p style=\"font-size:14.5px\">Using ₹12,20,000, residual value ₹20,000 and a 5-year life, find depreciation and closing book value for years 1–3 by (a) straight line and (b) 20% reducing balance on opening book value (ignoring residual value).</p><div class=\"scroller\"><table><thead><tr><th>Year</th><th>Straight line: depreciation</th><th>Book value</th><th>Reducing balance 20%: depreciation</th><th>Book value</th></tr></thead><tbody><tr><td>1</td><td>2,40,000</td><td>9,80,000</td><td>2,44,000</td><td>9,76,000</td></tr><tr><td>2</td><td>2,40,000</td><td>7,40,000</td><td>1,95,200</td><td>7,80,800</td></tr><tr><td>3</td><td>2,40,000</td><td>5,00,000</td><td>1,56,160</td><td>6,24,640</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Straight line: (12,20,000 − 20,000) ÷ 5 = 2,40,000 every year. Reducing balance: 20% of each year's opening book value, so the charge falls each year.</p></details><details><summary>Q16 · Disposal part-way through a year · Disposal lectured in L#33</summary><p style=\"font-size:14.5px\">The machine (bought 1 April 2026, straight line, ₹2,40,000 a year) is sold on 30 September 2028 for ₹6,50,000; depreciation runs to the month of sale; the year ends 31 March.</p><ol><li>Depreciation: 2026–27 2,40,000 + 2027–28 2,40,000 + April–September 2028 (6 months) 1,20,000 = <strong>₹6,00,000</strong>.</li><li>Book value at sale = 12,20,000 − 6,00,000 = <strong>₹6,20,000</strong>.</li><li>Gain = 6,50,000 − 6,20,000 = <strong>₹30,000</strong>.</li><li>Entries: Depreciation Dr 1,20,000 · To Accumulated Depreciation 1,20,000 (the half year); then Bank Dr 6,50,000, Accumulated Depreciation Dr 6,00,000 · To Machinery 12,20,000, To Gain on Sale of Machinery 30,000.</li></ol></details><details><summary>Q17 · Revised useful life · Not yet lectured</summary><p style=\"font-size:14.5px\">Not sold: on 1 April 2028 the remaining life is re-estimated at 5 years from that date, residual value unchanged. Find the 2028–29 charge.</p><p style=\"font-size:14.5px\">Book value on 1 April 2028 = 12,20,000 − 2 × 2,40,000 = 7,40,000. New charge = (7,40,000 − 20,000) ÷ 5 = <strong>₹1,44,000</strong> a year.</p><p style=\"font-size:14.5px\">A revised useful life is a <strong>change in an accounting estimate</strong>: apply it from now on (prospectively). The two years already charged are not restated (AS 5, AS 10).</p></details><details><summary>Q18 · Capital or revenue expenditure · Lectured in L#33</summary><p style=\"font-size:14.5px\">Capital or revenue expenditure?</p><div class=\"scroller\"><table><thead><tr><th></th><th>Item</th><th>Type</th><th>Reason</th></tr></thead><tbody><tr><td>a</td><td>Repainting the factory every year</td><td>Revenue</td><td>Recurring upkeep; no lasting new benefit</td></tr><tr><td>b</td><td>Legal fees to buy land</td><td>Capital</td><td>Part of the land's cost</td></tr><tr><td>c</td><td>Replacing a worn belt to keep a machine running</td><td>Revenue</td><td>Maintains, doesn't improve</td></tr><tr><td>d</td><td>A new lift in an office building</td><td>Capital</td><td>A new asset with benefit over many years</td></tr><tr><td>e</td><td>Own workers' wages for building a warehouse extension</td><td>Capital</td><td>Cost of constructing a fixed asset</td></tr><tr><td>f</td><td>Advertising a new product</td><td>Revenue</td><td>Charged to profit as incurred (AS 26 doesn't allow it to be capitalised)</td></tr><tr><td>g</td><td>Engine overhaul that adds 4 years of life</td><td>Capital</td><td>Extends the useful life beyond the original estimate</td></tr><tr><td>h</td><td>Stamp duty and registration on a building purchase</td><td>Capital</td><td>Part of the building's cost</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Older Indian texts sometimes call heavy advertising “deferred revenue expenditure”; under AS 26 it is an expense when incurred.</p></details>"
     },
     {
      "t": "Textbook: Basic Accounting Concepts: The Balance Sheet",
@@ -517,7 +539,7 @@ HUB.addCourse({
     {
      "t": "Practice set from the faculty (29 Oct)",
      "src": "L#26",
-     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q10, Q11, Q13.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q10 · Cash basis vs accrual basis profit · On Quiz 2</summary><p style=\"font-size:14.5px\">Anand Coaching Classes, year to 31 March 2027: fees received ₹9,60,000 (receivable 40,000 → 55,000; received in advance 30,000 → 50,000); salaries paid ₹5,40,000 (payable 20,000 → 35,000); rent paid ₹1,20,000 (prepaid 10,000 → 15,000). Compute profit on the cash basis and the accrual basis, and reconcile them.</p><div class=\"scroller\"><table><thead><tr><th>Item</th><th>Cash basis ₹</th><th>Accrual working</th><th>Accrual basis ₹</th></tr></thead><tbody><tr><td>Fees</td><td>9,60,000</td><td>9,60,000 − 40,000 + 55,000 + 30,000 − 50,000</td><td>9,55,000</td></tr><tr><td>Salaries</td><td>(5,40,000)</td><td>5,40,000 − 20,000 + 35,000</td><td>(5,55,000)</td></tr><tr><td>Rent</td><td>(1,20,000)</td><td>1,20,000 + 10,000 − 15,000</td><td>(1,15,000)</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Profit</strong></td><td><strong>3,00,000</strong></td><td></td><td><strong>2,85,000</strong></td></tr></tbody></table></div><div class=\"scroller\"><table><thead><tr><th>Reconciliation</th><th>₹</th></tr></thead><tbody><tr><td>Cash-basis profit</td><td>3,00,000</td></tr><tr><td>+ Rise in fees receivable (earned, not yet received)</td><td>+15,000</td></tr><tr><td>− Rise in fees received in advance (received, not yet earned)</td><td>−20,000</td></tr><tr><td>− Rise in salaries payable (incurred, not yet paid)</td><td>−15,000</td></tr><tr><td>+ Rise in prepaid rent (paid, not yet used)</td><td>+5,000</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Accrual-basis profit</strong></td><td><strong>2,85,000</strong></td></tr></tbody></table></div></details><details><summary>Q11 · How much revenue this year? · On Quiz 2</summary><p style=\"font-size:14.5px\">For the year ending 31 March 2027, how much revenue is recognised, and how much (if anything) is still a liability at year end?</p><div class=\"scroller\"><table><thead><tr><th></th><th>Situation</th><th>Revenue 2026–27</th><th>Liability at 31 March</th></tr></thead><tbody><tr><td>a</td><td>₹2,400 received on 1 Oct 2026 for a 12-month subscription starting that day</td><td>6/12 × 2,400 = 1,200</td><td>1,200 unearned</td></tr><tr><td>b</td><td>Goods of ₹90,000 delivered 28 Mar 2027, paid 15 Apr 2027</td><td>90,000 (delivered = earned)</td><td>None (a receivable instead)</td></tr><tr><td>c</td><td>Order of ₹50,000 on 25 Mar with ₹10,000 paid in advance; delivery 5 Apr</td><td>Nil</td><td>10,000 advance from customer</td></tr><tr><td>d</td><td>40% of the work done on a ₹5,00,000, 18-month contract; nothing received</td><td>40% × 5,00,000 = 2,00,000</td><td>None (accrued revenue, an asset)</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Revenue follows the earning, not the cash: cash before earning is a liability (a, c); earning before cash is a receivable (b, d). Part (d) recognises service revenue in proportion to work done, the method AS 9 allows for services.</p></details><details><summary>Q13 · FIFO vs weighted average, NRV write-down · Partly on Quiz 2</summary><p style=\"font-size:14.5px\">Sunrise Traders, April 2027, periodic system: opening 100 units at ₹40; purchases of 150 at ₹42, 100 at ₹45 and 150 at ₹48; sales of 120 and 230 units, all at ₹70. Find closing inventory, COGS and gross profit under FIFO and weighted average, the difference, and the write-down if 30 FIFO closing units have an NRV of ₹40.</p><p style=\"font-size:14.5px\">Goods available: 500 units costing 4,000 + 6,300 + 4,500 + 7,200 = ₹22,000. Sold 350, so 150 remain. Sales = 350 × 70 = ₹24,500.</p><div class=\"scroller\"><table><thead><tr><th></th><th>FIFO</th><th>Weighted average</th></tr></thead><tbody><tr><td>Closing inventory</td><td>Latest 150 at 48 = 7,200</td><td>22,000 ÷ 500 = 44 a unit; 150 × 44 = 6,600</td></tr><tr><td>Cost of goods sold</td><td>22,000 − 7,200 = 14,800</td><td>22,000 − 6,600 = 15,400</td></tr><tr><td>Gross profit</td><td>24,500 − 14,800 = <strong>9,700</strong></td><td>24,500 − 15,400 = <strong>9,100</strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> (c) FIFO's gross profit is ₹600 higher: with prices rising, FIFO leaves the newest, dearest units in stock and charges the older, cheaper ones to COGS. (d) The 30 units cost ₹48 under FIFO against an NRV of ₹40: write down 30 × 8 = <strong>₹240</strong> (lower of cost and NRV, AS 2), so closing inventory becomes ₹6,960 and gross profit ₹9,460.</p></details>"
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q10, Q11, Q13.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO, weighted average and the NRV write-down were lectured in L#32, so expect them in the end-term</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Lectured in L#33 (cost of an asset under AS 10); expect it in the end-term</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Lectured in L#33 (both methods); depreciation as an adjusting entry was on Quiz 2</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Gain or loss on disposal lectured in L#33 (whole years); the half-year charge is the extra step</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Lectured in L#33 (the last-longer, do-more, work-better test); errors of principle were L#15</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q10 · Cash basis vs accrual basis profit · On Quiz 2</summary><p style=\"font-size:14.5px\">Anand Coaching Classes, year to 31 March 2027: fees received ₹9,60,000 (receivable 40,000 → 55,000; received in advance 30,000 → 50,000); salaries paid ₹5,40,000 (payable 20,000 → 35,000); rent paid ₹1,20,000 (prepaid 10,000 → 15,000). Compute profit on the cash basis and the accrual basis, and reconcile them.</p><div class=\"scroller\"><table><thead><tr><th>Item</th><th>Cash basis ₹</th><th>Accrual working</th><th>Accrual basis ₹</th></tr></thead><tbody><tr><td>Fees</td><td>9,60,000</td><td>9,60,000 − 40,000 + 55,000 + 30,000 − 50,000</td><td>9,55,000</td></tr><tr><td>Salaries</td><td>(5,40,000)</td><td>5,40,000 − 20,000 + 35,000</td><td>(5,55,000)</td></tr><tr><td>Rent</td><td>(1,20,000)</td><td>1,20,000 + 10,000 − 15,000</td><td>(1,15,000)</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Profit</strong></td><td><strong>3,00,000</strong></td><td></td><td><strong>2,85,000</strong></td></tr></tbody></table></div><div class=\"scroller\"><table><thead><tr><th>Reconciliation</th><th>₹</th></tr></thead><tbody><tr><td>Cash-basis profit</td><td>3,00,000</td></tr><tr><td>+ Rise in fees receivable (earned, not yet received)</td><td>+15,000</td></tr><tr><td>− Rise in fees received in advance (received, not yet earned)</td><td>−20,000</td></tr><tr><td>− Rise in salaries payable (incurred, not yet paid)</td><td>−15,000</td></tr><tr><td>+ Rise in prepaid rent (paid, not yet used)</td><td>+5,000</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Accrual-basis profit</strong></td><td><strong>2,85,000</strong></td></tr></tbody></table></div></details><details><summary>Q11 · How much revenue this year? · On Quiz 2</summary><p style=\"font-size:14.5px\">For the year ending 31 March 2027, how much revenue is recognised, and how much (if anything) is still a liability at year end?</p><div class=\"scroller\"><table><thead><tr><th></th><th>Situation</th><th>Revenue 2026–27</th><th>Liability at 31 March</th></tr></thead><tbody><tr><td>a</td><td>₹2,400 received on 1 Oct 2026 for a 12-month subscription starting that day</td><td>6/12 × 2,400 = 1,200</td><td>1,200 unearned</td></tr><tr><td>b</td><td>Goods of ₹90,000 delivered 28 Mar 2027, paid 15 Apr 2027</td><td>90,000 (delivered = earned)</td><td>None (a receivable instead)</td></tr><tr><td>c</td><td>Order of ₹50,000 on 25 Mar with ₹10,000 paid in advance; delivery 5 Apr</td><td>Nil</td><td>10,000 advance from customer</td></tr><tr><td>d</td><td>40% of the work done on a ₹5,00,000, 18-month contract; nothing received</td><td>40% × 5,00,000 = 2,00,000</td><td>None (accrued revenue, an asset)</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Revenue follows the earning, not the cash: cash before earning is a liability (a, c); earning before cash is a receivable (b, d). Part (d) recognises service revenue in proportion to work done, the method AS 9 allows for services.</p></details><details><summary>Q13 · FIFO vs weighted average, NRV write-down · Partly on Quiz 2</summary><p style=\"font-size:14.5px\">Sunrise Traders, April 2027, periodic system: opening 100 units at ₹40; purchases of 150 at ₹42, 100 at ₹45 and 150 at ₹48; sales of 120 and 230 units, all at ₹70. Find closing inventory, COGS and gross profit under FIFO and weighted average, the difference, and the write-down if 30 FIFO closing units have an NRV of ₹40.</p><p style=\"font-size:14.5px\">Goods available: 500 units costing 4,000 + 6,300 + 4,500 + 7,200 = ₹22,000. Sold 350, so 150 remain. Sales = 350 × 70 = ₹24,500.</p><div class=\"scroller\"><table><thead><tr><th></th><th>FIFO</th><th>Weighted average</th></tr></thead><tbody><tr><td>Closing inventory</td><td>Latest 150 at 48 = 7,200</td><td>22,000 ÷ 500 = 44 a unit; 150 × 44 = 6,600</td></tr><tr><td>Cost of goods sold</td><td>22,000 − 7,200 = 14,800</td><td>22,000 − 6,600 = 15,400</td></tr><tr><td>Gross profit</td><td>24,500 − 14,800 = <strong>9,700</strong></td><td>24,500 − 15,400 = <strong>9,100</strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Answer:</strong> (c) FIFO's gross profit is ₹600 higher: with prices rising, FIFO leaves the newest, dearest units in stock and charges the older, cheaper ones to COGS. (d) The 30 units cost ₹48 under FIFO against an NRV of ₹40: write down 30 × 8 = <strong>₹240</strong> (lower of cost and NRV, AS 2), so closing inventory becomes ₹6,960 and gross profit ₹9,460.</p></details>"
     },
     {
      "t": "Textbook: Basic Accounting Concepts: The Income Statement",
@@ -555,7 +577,7 @@ HUB.addCourse({
     {
      "t": "Practice set from the faculty (29 Oct)",
      "src": "L#26",
-     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q7, Q8, Q9, Q12.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q7 · Eight adjusting entries, deferral or accrual · On Quiz 2</summary><p style=\"font-size:14.5px\">Lakshya Services closes on 31 March 2027. Pass each adjusting entry and say whether it is a deferral or an accrual.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Working</th><th>Entry (₹)</th><th>Type</th></tr></thead><tbody><tr><td>a</td><td>₹36,000 for 12 months from 1 Dec: Dec–Mar = 4 months used</td><td>Insurance Expense Dr 12,000 · To Prepaid Insurance 12,000</td><td>Deferral</td></tr><tr><td>b</td><td>Available 6,000 + 21,000 = 27,000; on hand 8,500; used 18,500</td><td>Supplies Expense Dr 18,500 · To Supplies 18,500</td><td>Deferral</td></tr><tr><td>c</td><td>3 days × 2,400</td><td>Salaries Expense Dr 7,200 · To Salaries Payable 7,200</td><td>Accrual</td></tr><tr><td>d</td><td>₹60,000 for 6 months from 1 Feb: 2 months earned; 40,000 still unearned</td><td>Unearned Service Revenue Dr 20,000 · To Service Revenue 20,000</td><td>Deferral</td></tr><tr><td>e</td><td>(4,80,000 − 30,000) ÷ 5 = 90,000 a year; Oct–Mar = 6 months</td><td>Depreciation Expense Dr 45,000 · To Accumulated Depreciation 45,000</td><td>Deferral (cost paid first, spread over the life)</td></tr><tr><td>f</td><td>2,00,000 × 9% × 3/12 (Jan–Mar)</td><td>Interest Expense Dr 4,500 · To Interest Payable 4,500</td><td>Accrual</td></tr><tr><td>g</td><td>1,50,000 × 8% × 5/12 (Nov–Mar)</td><td>Interest Receivable Dr 5,000 · To Interest Income 5,000</td><td>Accrual</td></tr><tr><td>h</td><td>Earned, not yet billed</td><td>Accounts Receivable (accrued revenue) Dr 14,000 · To Service Revenue 14,000</td><td>Accrual</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Deferral: the cash moved first and is now being recognised. Accrual: the revenue or expense has happened and the cash comes later.</p></details><details><summary>Q8 · Rent expense and commission income from cash · On Quiz 2</summary><p style=\"font-size:14.5px\">(a) Prepaid rent ₹8,000 on 1 April 2026; rent paid in the year ₹1,02,000; rent outstanding ₹6,000 on 31 March 2027. Find the rent expense. (b) Commission received in cash ₹45,000; accrued commission ₹2,000 at the start and ₹3,000 at the end; commission received in advance ₹5,000 at the start and ₹8,000 at the end. Find commission income.</p><ol><li>Rent expense = paid 1,02,000 + opening prepaid 8,000 (used this year) + closing outstanding 6,000 (owed for this year) = <strong>₹1,16,000</strong>.</li><li>Commission income = cash 45,000 − opening accrued 2,000 (last year's income) + closing accrued 3,000 + opening advance 5,000 (earned this year) − closing advance 8,000 (belongs to next year) = <strong>₹43,000</strong>.</li></ol><p style=\"font-size:14.5px\">Rule of thumb: start from cash, then add what belongs to this year but wasn't paid or received in it, and remove what was paid or received this year for another year.</p></details><details><summary>Q9 · Meera Design Studio: adjustments to closing entries · On Quiz 2</summary><p style=\"font-size:14.5px\">Meera Design Studio, unadjusted trial balance at 31 March 2027 (totals ₹13,85,000 each), with seven adjustments. Prepare the adjusting entries, the adjusted trial balance, the income statement, the statement of capital, the balance sheet and the closing entries.</p><h4>(a) Adjusting entries</h4><div class=\"scroller\"><table><thead><tr><th></th><th>Working</th><th>Entry (₹)</th></tr></thead><tbody><tr><td>1</td><td>₹24,000 for 12 months from 1 Oct: 6 months used</td><td>Insurance Expense Dr 12,000 · To Prepaid Insurance 12,000</td></tr><tr><td>2</td><td>30,000 − 11,000 on hand</td><td>Supplies Expense Dr 19,000 · To Supplies 19,000</td></tr><tr><td>3</td><td>15% × 6,00,000</td><td>Depreciation Expense Dr 90,000 · To Accumulated Depreciation 90,000</td></tr><tr><td>4</td><td>₹60,000 for 6 months from 1 Jan: 3 months earned</td><td>Unearned Design Fees Dr 30,000 · To Design Fees Revenue 30,000</td></tr><tr><td>5</td><td>Accrued</td><td>Salaries Expense Dr 18,000 · To Salaries Payable 18,000</td></tr><tr><td>6</td><td>Earned, unbilled</td><td>Accounts Receivable Dr 25,000 · To Design Fees Revenue 25,000</td></tr><tr><td>7</td><td>March bill unrecorded</td><td>Utilities Expense Dr 4,000 · To Accounts Payable (or Utilities Payable) 4,000</td></tr></tbody></table></div><h4>(b) Adjusted trial balance</h4><div class=\"scroller\"><table><thead><tr><th>Account</th><th>Dr ₹</th><th>Cr ₹</th></tr></thead><tbody><tr><td>Cash</td><td>95,000</td><td></td></tr><tr><td>Accounts receivable (1,40,000 + 25,000)</td><td>1,65,000</td><td></td></tr><tr><td>Supplies</td><td>11,000</td><td></td></tr><tr><td>Prepaid insurance</td><td>12,000</td><td></td></tr><tr><td>Equipment</td><td>6,00,000</td><td></td></tr><tr><td>Accumulated depreciation (1,20,000 + 90,000)</td><td></td><td>2,10,000</td></tr><tr><td>Accounts payable (85,000 + 4,000)</td><td></td><td>89,000</td></tr><tr><td>Salaries payable</td><td></td><td>18,000</td></tr><tr><td>Unearned design fees</td><td></td><td>30,000</td></tr><tr><td>Capital, M. Meera</td><td></td><td>4,40,000</td></tr><tr><td>Drawings</td><td>90,000</td><td></td></tr><tr><td>Design fees revenue (6,80,000 + 30,000 + 25,000)</td><td></td><td>7,35,000</td></tr><tr><td>Salaries expense</td><td>2,58,000</td><td></td></tr><tr><td>Rent expense</td><td>1,20,000</td><td></td></tr><tr><td>Utilities expense</td><td>50,000</td><td></td></tr><tr><td>Insurance expense</td><td>12,000</td><td></td></tr><tr><td>Supplies expense</td><td>19,000</td><td></td></tr><tr><td>Depreciation expense</td><td>90,000</td><td></td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Total</strong></td><td><strong>15,22,000</strong></td><td><strong>15,22,000</strong></td></tr></tbody></table></div><h4>(c) Income statement for the year ended 31 March 2027</h4><div class=\"scroller\"><table><thead><tr><th></th><th>₹</th></tr></thead><tbody><tr><td>Design fees revenue</td><td>7,35,000</td></tr><tr><td>Less: salaries 2,58,000; rent 1,20,000; utilities 50,000; insurance 12,000; supplies 19,000; depreciation 90,000</td><td>(5,49,000)</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Net income</strong></td><td><strong>1,86,000</strong></td></tr></tbody></table></div><h4>(d) Statement of capital and balance sheet</h4><p style=\"font-size:14.5px\">Capital: opening 4,40,000 + net income 1,86,000 − drawings 90,000 = <strong>₹5,36,000</strong>.</p><div class=\"scroller\"><table><thead><tr><th>Balance sheet, 31 March 2027</th><th>₹</th></tr></thead><tbody><tr><td>Current assets: cash 95,000; receivables 1,65,000; supplies 11,000; prepaid insurance 12,000</td><td>2,83,000</td></tr><tr><td>Equipment 6,00,000 − accumulated depreciation 2,10,000</td><td>3,90,000</td></tr><tr><td><strong>Total assets</strong></td><td><strong>6,73,000</strong></td></tr><tr><td>Liabilities: accounts payable 89,000; salaries payable 18,000; unearned fees 30,000</td><td>1,37,000</td></tr><tr><td>Capital, M. Meera</td><td>5,36,000</td></tr><tr><td><strong>Total liabilities and capital</strong></td><td><strong>6,73,000</strong></td></tr></tbody></table></div><h4>(e) Closing entries</h4><ol><li>Design Fees Revenue Dr 7,35,000 · To Income Summary (Profit and Loss A/c) 7,35,000</li><li>Income Summary Dr 5,49,000 · To each expense account (amounts as above)</li><li>Income Summary Dr 1,86,000 · To Capital 1,86,000 (net income)</li><li>Capital Dr 90,000 · To Drawings 90,000</li></ol></details><details><summary>Q12 · Bad debts, the allowance, ageing, recovery · Partly on Quiz 2</summary><p style=\"font-size:14.5px\">Three parts on receivables.</p><h4>(a) Firm X: write-off and a 5% allowance</h4><ol><li>Write off: Bad Debts Dr 15,000 · To Sundry Debtors 15,000. Debtors left: 8,40,000 − 15,000 = 8,25,000.</li><li>Required allowance = 5% × 8,25,000 = 41,250. Existing credit balance 30,000, so top up by 11,250: Profit and Loss (Bad and Doubtful Debts) Dr 11,250 · To Allowance for Doubtful Debts 11,250.</li><li>Transfer the write-off: Profit and Loss Dr 15,000 · To Bad Debts 15,000.</li></ol><p style=\"font-size:14.5px\">Total charge to the income statement = 15,000 + 11,250 = <strong>₹26,250</strong>. (Writing the 15,000 off against the allowance instead gives the same total: the allowance falls to 15,000 and needs 26,250 to reach 41,250.) Balance sheet: Sundry debtors 8,25,000 less allowance 41,250 = <strong>₹7,83,750</strong>.</p><h4>(b) Firm Y: ageing schedule</h4><div class=\"scroller\"><table><thead><tr><th>Age</th><th>₹</th><th>Rate</th><th>Allowance ₹</th></tr></thead><tbody><tr><td>0–30 days</td><td>4,00,000</td><td>1%</td><td>4,000</td></tr><tr><td>31–60 days</td><td>2,50,000</td><td>3%</td><td>7,500</td></tr><tr><td>61–90 days</td><td>1,20,000</td><td>10%</td><td>12,000</td></tr><tr><td>Over 90 days</td><td>70,000</td><td>30%</td><td>21,000</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Required balance</strong></td><td>8,40,000</td><td></td><td><strong>44,500</strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\">The ageing figure is the balance the allowance must <em>end</em> with. It already has 30,000, so the entry is Bad Debt Expense Dr 14,500 · To Allowance for Doubtful Debts 14,500.</p><h4>(c) A written-off debt recovered</h4><p style=\"font-size:14.5px\">Usual Indian practice: Cash Dr 3,000 · To Bad Debts Recovered A/c 3,000, then Bad Debts Recovered Dr 3,000 · To Profit and Loss 3,000 (an income). The alternative reinstates the debtor first (Debtor Dr · To Bad Debts Recovered, then Cash Dr · To Debtor), which keeps the customer's payment history; the effect on profit is the same.</p></details>"
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q7, Q8, Q9, Q12.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO, weighted average and the NRV write-down were lectured in L#32, so expect them in the end-term</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Lectured in L#33 (cost of an asset under AS 10); expect it in the end-term</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Lectured in L#33 (both methods); depreciation as an adjusting entry was on Quiz 2</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Gain or loss on disposal lectured in L#33 (whole years); the half-year charge is the extra step</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Lectured in L#33 (the last-longer, do-more, work-better test); errors of principle were L#15</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q7 · Eight adjusting entries, deferral or accrual · On Quiz 2</summary><p style=\"font-size:14.5px\">Lakshya Services closes on 31 March 2027. Pass each adjusting entry and say whether it is a deferral or an accrual.</p><div class=\"scroller\"><table><thead><tr><th></th><th>Working</th><th>Entry (₹)</th><th>Type</th></tr></thead><tbody><tr><td>a</td><td>₹36,000 for 12 months from 1 Dec: Dec–Mar = 4 months used</td><td>Insurance Expense Dr 12,000 · To Prepaid Insurance 12,000</td><td>Deferral</td></tr><tr><td>b</td><td>Available 6,000 + 21,000 = 27,000; on hand 8,500; used 18,500</td><td>Supplies Expense Dr 18,500 · To Supplies 18,500</td><td>Deferral</td></tr><tr><td>c</td><td>3 days × 2,400</td><td>Salaries Expense Dr 7,200 · To Salaries Payable 7,200</td><td>Accrual</td></tr><tr><td>d</td><td>₹60,000 for 6 months from 1 Feb: 2 months earned; 40,000 still unearned</td><td>Unearned Service Revenue Dr 20,000 · To Service Revenue 20,000</td><td>Deferral</td></tr><tr><td>e</td><td>(4,80,000 − 30,000) ÷ 5 = 90,000 a year; Oct–Mar = 6 months</td><td>Depreciation Expense Dr 45,000 · To Accumulated Depreciation 45,000</td><td>Deferral (cost paid first, spread over the life)</td></tr><tr><td>f</td><td>2,00,000 × 9% × 3/12 (Jan–Mar)</td><td>Interest Expense Dr 4,500 · To Interest Payable 4,500</td><td>Accrual</td></tr><tr><td>g</td><td>1,50,000 × 8% × 5/12 (Nov–Mar)</td><td>Interest Receivable Dr 5,000 · To Interest Income 5,000</td><td>Accrual</td></tr><tr><td>h</td><td>Earned, not yet billed</td><td>Accounts Receivable (accrued revenue) Dr 14,000 · To Service Revenue 14,000</td><td>Accrual</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Deferral: the cash moved first and is now being recognised. Accrual: the revenue or expense has happened and the cash comes later.</p></details><details><summary>Q8 · Rent expense and commission income from cash · On Quiz 2</summary><p style=\"font-size:14.5px\">(a) Prepaid rent ₹8,000 on 1 April 2026; rent paid in the year ₹1,02,000; rent outstanding ₹6,000 on 31 March 2027. Find the rent expense. (b) Commission received in cash ₹45,000; accrued commission ₹2,000 at the start and ₹3,000 at the end; commission received in advance ₹5,000 at the start and ₹8,000 at the end. Find commission income.</p><ol><li>Rent expense = paid 1,02,000 + opening prepaid 8,000 (used this year) + closing outstanding 6,000 (owed for this year) = <strong>₹1,16,000</strong>.</li><li>Commission income = cash 45,000 − opening accrued 2,000 (last year's income) + closing accrued 3,000 + opening advance 5,000 (earned this year) − closing advance 8,000 (belongs to next year) = <strong>₹43,000</strong>.</li></ol><p style=\"font-size:14.5px\">Rule of thumb: start from cash, then add what belongs to this year but wasn't paid or received in it, and remove what was paid or received this year for another year.</p></details><details><summary>Q9 · Meera Design Studio: adjustments to closing entries · On Quiz 2</summary><p style=\"font-size:14.5px\">Meera Design Studio, unadjusted trial balance at 31 March 2027 (totals ₹13,85,000 each), with seven adjustments. Prepare the adjusting entries, the adjusted trial balance, the income statement, the statement of capital, the balance sheet and the closing entries.</p><h4>(a) Adjusting entries</h4><div class=\"scroller\"><table><thead><tr><th></th><th>Working</th><th>Entry (₹)</th></tr></thead><tbody><tr><td>1</td><td>₹24,000 for 12 months from 1 Oct: 6 months used</td><td>Insurance Expense Dr 12,000 · To Prepaid Insurance 12,000</td></tr><tr><td>2</td><td>30,000 − 11,000 on hand</td><td>Supplies Expense Dr 19,000 · To Supplies 19,000</td></tr><tr><td>3</td><td>15% × 6,00,000</td><td>Depreciation Expense Dr 90,000 · To Accumulated Depreciation 90,000</td></tr><tr><td>4</td><td>₹60,000 for 6 months from 1 Jan: 3 months earned</td><td>Unearned Design Fees Dr 30,000 · To Design Fees Revenue 30,000</td></tr><tr><td>5</td><td>Accrued</td><td>Salaries Expense Dr 18,000 · To Salaries Payable 18,000</td></tr><tr><td>6</td><td>Earned, unbilled</td><td>Accounts Receivable Dr 25,000 · To Design Fees Revenue 25,000</td></tr><tr><td>7</td><td>March bill unrecorded</td><td>Utilities Expense Dr 4,000 · To Accounts Payable (or Utilities Payable) 4,000</td></tr></tbody></table></div><h4>(b) Adjusted trial balance</h4><div class=\"scroller\"><table><thead><tr><th>Account</th><th>Dr ₹</th><th>Cr ₹</th></tr></thead><tbody><tr><td>Cash</td><td>95,000</td><td></td></tr><tr><td>Accounts receivable (1,40,000 + 25,000)</td><td>1,65,000</td><td></td></tr><tr><td>Supplies</td><td>11,000</td><td></td></tr><tr><td>Prepaid insurance</td><td>12,000</td><td></td></tr><tr><td>Equipment</td><td>6,00,000</td><td></td></tr><tr><td>Accumulated depreciation (1,20,000 + 90,000)</td><td></td><td>2,10,000</td></tr><tr><td>Accounts payable (85,000 + 4,000)</td><td></td><td>89,000</td></tr><tr><td>Salaries payable</td><td></td><td>18,000</td></tr><tr><td>Unearned design fees</td><td></td><td>30,000</td></tr><tr><td>Capital, M. Meera</td><td></td><td>4,40,000</td></tr><tr><td>Drawings</td><td>90,000</td><td></td></tr><tr><td>Design fees revenue (6,80,000 + 30,000 + 25,000)</td><td></td><td>7,35,000</td></tr><tr><td>Salaries expense</td><td>2,58,000</td><td></td></tr><tr><td>Rent expense</td><td>1,20,000</td><td></td></tr><tr><td>Utilities expense</td><td>50,000</td><td></td></tr><tr><td>Insurance expense</td><td>12,000</td><td></td></tr><tr><td>Supplies expense</td><td>19,000</td><td></td></tr><tr><td>Depreciation expense</td><td>90,000</td><td></td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Total</strong></td><td><strong>15,22,000</strong></td><td><strong>15,22,000</strong></td></tr></tbody></table></div><h4>(c) Income statement for the year ended 31 March 2027</h4><div class=\"scroller\"><table><thead><tr><th></th><th>₹</th></tr></thead><tbody><tr><td>Design fees revenue</td><td>7,35,000</td></tr><tr><td>Less: salaries 2,58,000; rent 1,20,000; utilities 50,000; insurance 12,000; supplies 19,000; depreciation 90,000</td><td>(5,49,000)</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Net income</strong></td><td><strong>1,86,000</strong></td></tr></tbody></table></div><h4>(d) Statement of capital and balance sheet</h4><p style=\"font-size:14.5px\">Capital: opening 4,40,000 + net income 1,86,000 − drawings 90,000 = <strong>₹5,36,000</strong>.</p><div class=\"scroller\"><table><thead><tr><th>Balance sheet, 31 March 2027</th><th>₹</th></tr></thead><tbody><tr><td>Current assets: cash 95,000; receivables 1,65,000; supplies 11,000; prepaid insurance 12,000</td><td>2,83,000</td></tr><tr><td>Equipment 6,00,000 − accumulated depreciation 2,10,000</td><td>3,90,000</td></tr><tr><td><strong>Total assets</strong></td><td><strong>6,73,000</strong></td></tr><tr><td>Liabilities: accounts payable 89,000; salaries payable 18,000; unearned fees 30,000</td><td>1,37,000</td></tr><tr><td>Capital, M. Meera</td><td>5,36,000</td></tr><tr><td><strong>Total liabilities and capital</strong></td><td><strong>6,73,000</strong></td></tr></tbody></table></div><h4>(e) Closing entries</h4><ol><li>Design Fees Revenue Dr 7,35,000 · To Income Summary (Profit and Loss A/c) 7,35,000</li><li>Income Summary Dr 5,49,000 · To each expense account (amounts as above)</li><li>Income Summary Dr 1,86,000 · To Capital 1,86,000 (net income)</li><li>Capital Dr 90,000 · To Drawings 90,000</li></ol></details><details><summary>Q12 · Bad debts, the allowance, ageing, recovery · Partly on Quiz 2</summary><p style=\"font-size:14.5px\">Three parts on receivables.</p><h4>(a) Firm X: write-off and a 5% allowance</h4><ol><li>Write off: Bad Debts Dr 15,000 · To Sundry Debtors 15,000. Debtors left: 8,40,000 − 15,000 = 8,25,000.</li><li>Required allowance = 5% × 8,25,000 = 41,250. Existing credit balance 30,000, so top up by 11,250: Profit and Loss (Bad and Doubtful Debts) Dr 11,250 · To Allowance for Doubtful Debts 11,250.</li><li>Transfer the write-off: Profit and Loss Dr 15,000 · To Bad Debts 15,000.</li></ol><p style=\"font-size:14.5px\">Total charge to the income statement = 15,000 + 11,250 = <strong>₹26,250</strong>. (Writing the 15,000 off against the allowance instead gives the same total: the allowance falls to 15,000 and needs 26,250 to reach 41,250.) Balance sheet: Sundry debtors 8,25,000 less allowance 41,250 = <strong>₹7,83,750</strong>.</p><h4>(b) Firm Y: ageing schedule</h4><div class=\"scroller\"><table><thead><tr><th>Age</th><th>₹</th><th>Rate</th><th>Allowance ₹</th></tr></thead><tbody><tr><td>0–30 days</td><td>4,00,000</td><td>1%</td><td>4,000</td></tr><tr><td>31–60 days</td><td>2,50,000</td><td>3%</td><td>7,500</td></tr><tr><td>61–90 days</td><td>1,20,000</td><td>10%</td><td>12,000</td></tr><tr><td>Over 90 days</td><td>70,000</td><td>30%</td><td>21,000</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Required balance</strong></td><td>8,40,000</td><td></td><td><strong>44,500</strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\">The ageing figure is the balance the allowance must <em>end</em> with. It already has 30,000, so the entry is Bad Debt Expense Dr 14,500 · To Allowance for Doubtful Debts 14,500.</p><h4>(c) A written-off debt recovered</h4><p style=\"font-size:14.5px\">Usual Indian practice: Cash Dr 3,000 · To Bad Debts Recovered A/c 3,000, then Bad Debts Recovered Dr 3,000 · To Profit and Loss 3,000 (an income). The alternative reinstates the debtor first (Debtor Dr · To Bad Debts Recovered, then Cash Dr · To Debtor), which keeps the customer's payment history; the effect on profit is the same.</p></details>"
     },
     {
      "t": "Textbook: Accounting Records and Systems",
@@ -638,7 +660,7 @@ HUB.addCourse({
     {
      "t": "Practice set from the faculty (29 Oct)",
      "src": "L#26",
-     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q19, Q20, Q21, Q22.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q19 · Classify ten cash flows · On Quiz 2</summary><p style=\"font-size:14.5px\">Operating (O), investing (I) or financing (F), and inflow or outflow?</p><div class=\"scroller\"><table><thead><tr><th></th><th>Item</th><th>Activity</th><th>Direction</th></tr></thead><tbody><tr><td>a</td><td>Cash received from customers</td><td>O</td><td>Inflow</td></tr><tr><td>b</td><td>Machinery bought for cash</td><td>I</td><td>Outflow</td></tr><tr><td>c</td><td>Equity shares issued</td><td>F</td><td>Inflow</td></tr><tr><td>d</td><td>Bank loan repaid</td><td>F</td><td>Outflow</td></tr><tr><td>e</td><td>Cash paid to suppliers of goods</td><td>O</td><td>Outflow</td></tr><tr><td>f</td><td>Old equipment sold</td><td>I</td><td>Inflow</td></tr><tr><td>g</td><td>Dividend paid</td><td>F</td><td>Outflow</td></tr><tr><td>h</td><td>Income tax paid</td><td>O (unless tied to a specific investing or financing item)</td><td>Outflow</td></tr><tr><td>i</td><td>Shares of another company bought as an investment</td><td>I</td><td>Outflow</td></tr><tr><td>j</td><td>New bank borrowing</td><td>F</td><td>Inflow</td></tr></tbody></table></div></details><details><summary>Q20 · Operating cash, indirect method · On Quiz 2</summary><p style=\"font-size:14.5px\">Sundar Traders: profit before tax ₹4,60,000 after depreciation ₹85,000 and a loss on sale of machinery ₹12,000, and after a gain on sale of investments ₹20,000. Receivables +40,000; inventories −25,000; prepaid expenses +6,000; trade payables +32,000; accrued expenses −9,000; tax paid ₹1,10,000.</p><div class=\"scroller\"><table><thead><tr><th>Step</th><th>₹</th></tr></thead><tbody><tr><td>Profit before tax</td><td>4,60,000</td></tr><tr><td>+ Depreciation 85,000 + loss on machinery 12,000 − gain on investments 20,000</td><td>+77,000</td></tr><tr><td>Operating profit before working capital changes</td><td>5,37,000</td></tr><tr><td>− Receivables 40,000 + inventories 25,000 − prepaid 6,000 + trade payables 32,000 − accrued expenses 9,000</td><td>+2,000</td></tr><tr><td>Cash generated from operations</td><td>5,39,000</td></tr><tr><td>− Income tax paid</td><td>(1,10,000)</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Net cash from operating activities</strong></td><td><strong>4,29,000</strong></td></tr></tbody></table></div></details><details><summary>Q21 · Operating cash, direct method · On Quiz 2</summary><p style=\"font-size:14.5px\">Tara Enterprises, direct method: credit sales ₹18,00,000 (receivables 2,10,000 → 2,60,000; ₹10,000 written off); COGS ₹11,00,000 (inventory 1,50,000 → 1,80,000; trade payables 1,20,000 → 1,05,000); operating expenses ₹2,40,000 excluding depreciation (prepaid 15,000 → 20,000; outstanding 10,000 → 6,000); tax paid ₹60,000.</p><div class=\"scroller\"><table><thead><tr><th>Line</th><th>Working</th><th>₹</th></tr></thead><tbody><tr><td>Cash from customers</td><td>2,10,000 + 18,00,000 − 10,000 written off − 2,60,000</td><td>17,40,000</td></tr><tr><td>Purchases</td><td>COGS 11,00,000 + closing stock 1,80,000 − opening 1,50,000</td><td>(11,30,000)</td></tr><tr><td>Cash paid to suppliers</td><td>1,20,000 + 11,30,000 − 1,05,000</td><td>(11,45,000)</td></tr><tr><td>Operating expenses paid</td><td>2,40,000 + closing prepaid 20,000 − opening prepaid 15,000 + opening outstanding 10,000 − closing outstanding 6,000</td><td>(2,49,000)</td></tr><tr><td>Income tax paid</td><td></td><td>(60,000)</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Net cash from operating activities</strong></td><td>17,40,000 − 11,45,000 − 2,49,000 − 60,000</td><td><strong>2,86,000</strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\">The purchases line is a working step, not a cash line: only the payment to suppliers enters the statement.</p></details><details><summary>Q22 · Nova Fabricators: full cash flow statement · On Quiz 2</summary><p style=\"font-size:14.5px\">Nova Fabricators Ltd (₹ thousand): balance sheets at 31 March 2026 and 2027 with cash missing for 2027; net profit 90 (ignore tax), dividend 40, depreciation 70, a machine with book value 30 sold for 25, shares issued 100, loan repaid 50. Find closing cash and machinery purchased, and prepare the statement.</p><ol><li><strong>Closing cash</strong>: 2027 liabilities and equity = 500 + 200 + 150 + 130 + 40 = 1,020; assets other than cash = 150 + 90 + 14 + 640 = 894; so cash = <strong>126</strong>. (2026 balances: 910 each side. Retained earnings check: 150 + 90 − 40 = 200.)</li><li><strong>Machinery bought</strong>: 600 opening − 70 depreciation − 30 book value sold + purchases = 640 closing, so purchases = <strong>140</strong>. Loss on sale = 30 − 25 = 5.</li></ol><div class=\"scroller\"><table><thead><tr><th>Cash flow statement, 2026–27 (₹ thousand)</th><th>₹ thousand</th></tr></thead><tbody><tr><td>Net profit 90 + depreciation 70 + loss on sale 5</td><td>165</td></tr><tr><td>Receivables up (30); inventories down +10; prepaid up (4); trade payables up +20; outstanding expenses down (10)</td><td>(14)</td></tr><tr><td><strong>Net cash from operating activities</strong></td><td><strong>151</strong></td></tr><tr><td>Machinery bought (140); machine sold +25</td><td>(115)</td></tr><tr><td><strong>Net cash used in investing activities</strong></td><td><strong>(115)</strong></td></tr><tr><td>Shares issued +100; loan repaid (50); dividend paid (40)</td><td>10</td></tr><tr><td><strong>Net cash from financing activities</strong></td><td><strong>10</strong></td></tr><tr><td>Net increase in cash: 151 − 115 + 10</td><td>46</td></tr><tr style=\"background:var(--blue-soft)\"><td>Opening cash 80 + 46 = closing cash</td><td>126</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The statement reconciles: cash rises by 46 thousand, from 80 to the 126 found from the balance sheet.</p></details>"
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q19, Q20, Q21, Q22.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO, weighted average and the NRV write-down were lectured in L#32, so expect them in the end-term</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Lectured in L#33 (cost of an asset under AS 10); expect it in the end-term</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Lectured in L#33 (both methods); depreciation as an adjusting entry was on Quiz 2</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Gain or loss on disposal lectured in L#33 (whole years); the half-year charge is the extra step</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Lectured in L#33 (the last-longer, do-more, work-better test); errors of principle were L#15</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><details><summary>Q19 · Classify ten cash flows · On Quiz 2</summary><p style=\"font-size:14.5px\">Operating (O), investing (I) or financing (F), and inflow or outflow?</p><div class=\"scroller\"><table><thead><tr><th></th><th>Item</th><th>Activity</th><th>Direction</th></tr></thead><tbody><tr><td>a</td><td>Cash received from customers</td><td>O</td><td>Inflow</td></tr><tr><td>b</td><td>Machinery bought for cash</td><td>I</td><td>Outflow</td></tr><tr><td>c</td><td>Equity shares issued</td><td>F</td><td>Inflow</td></tr><tr><td>d</td><td>Bank loan repaid</td><td>F</td><td>Outflow</td></tr><tr><td>e</td><td>Cash paid to suppliers of goods</td><td>O</td><td>Outflow</td></tr><tr><td>f</td><td>Old equipment sold</td><td>I</td><td>Inflow</td></tr><tr><td>g</td><td>Dividend paid</td><td>F</td><td>Outflow</td></tr><tr><td>h</td><td>Income tax paid</td><td>O (unless tied to a specific investing or financing item)</td><td>Outflow</td></tr><tr><td>i</td><td>Shares of another company bought as an investment</td><td>I</td><td>Outflow</td></tr><tr><td>j</td><td>New bank borrowing</td><td>F</td><td>Inflow</td></tr></tbody></table></div></details><details><summary>Q20 · Operating cash, indirect method · On Quiz 2</summary><p style=\"font-size:14.5px\">Sundar Traders: profit before tax ₹4,60,000 after depreciation ₹85,000 and a loss on sale of machinery ₹12,000, and after a gain on sale of investments ₹20,000. Receivables +40,000; inventories −25,000; prepaid expenses +6,000; trade payables +32,000; accrued expenses −9,000; tax paid ₹1,10,000.</p><div class=\"scroller\"><table><thead><tr><th>Step</th><th>₹</th></tr></thead><tbody><tr><td>Profit before tax</td><td>4,60,000</td></tr><tr><td>+ Depreciation 85,000 + loss on machinery 12,000 − gain on investments 20,000</td><td>+77,000</td></tr><tr><td>Operating profit before working capital changes</td><td>5,37,000</td></tr><tr><td>− Receivables 40,000 + inventories 25,000 − prepaid 6,000 + trade payables 32,000 − accrued expenses 9,000</td><td>+2,000</td></tr><tr><td>Cash generated from operations</td><td>5,39,000</td></tr><tr><td>− Income tax paid</td><td>(1,10,000)</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Net cash from operating activities</strong></td><td><strong>4,29,000</strong></td></tr></tbody></table></div></details><details><summary>Q21 · Operating cash, direct method · On Quiz 2</summary><p style=\"font-size:14.5px\">Tara Enterprises, direct method: credit sales ₹18,00,000 (receivables 2,10,000 → 2,60,000; ₹10,000 written off); COGS ₹11,00,000 (inventory 1,50,000 → 1,80,000; trade payables 1,20,000 → 1,05,000); operating expenses ₹2,40,000 excluding depreciation (prepaid 15,000 → 20,000; outstanding 10,000 → 6,000); tax paid ₹60,000.</p><div class=\"scroller\"><table><thead><tr><th>Line</th><th>Working</th><th>₹</th></tr></thead><tbody><tr><td>Cash from customers</td><td>2,10,000 + 18,00,000 − 10,000 written off − 2,60,000</td><td>17,40,000</td></tr><tr><td>Purchases</td><td>COGS 11,00,000 + closing stock 1,80,000 − opening 1,50,000</td><td>(11,30,000)</td></tr><tr><td>Cash paid to suppliers</td><td>1,20,000 + 11,30,000 − 1,05,000</td><td>(11,45,000)</td></tr><tr><td>Operating expenses paid</td><td>2,40,000 + closing prepaid 20,000 − opening prepaid 15,000 + opening outstanding 10,000 − closing outstanding 6,000</td><td>(2,49,000)</td></tr><tr><td>Income tax paid</td><td></td><td>(60,000)</td></tr><tr style=\"background:var(--blue-soft)\"><td><strong>Net cash from operating activities</strong></td><td>17,40,000 − 11,45,000 − 2,49,000 − 60,000</td><td><strong>2,86,000</strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\">The purchases line is a working step, not a cash line: only the payment to suppliers enters the statement.</p></details><details><summary>Q22 · Nova Fabricators: full cash flow statement · On Quiz 2</summary><p style=\"font-size:14.5px\">Nova Fabricators Ltd (₹ thousand): balance sheets at 31 March 2026 and 2027 with cash missing for 2027; net profit 90 (ignore tax), dividend 40, depreciation 70, a machine with book value 30 sold for 25, shares issued 100, loan repaid 50. Find closing cash and machinery purchased, and prepare the statement.</p><ol><li><strong>Closing cash</strong>: 2027 liabilities and equity = 500 + 200 + 150 + 130 + 40 = 1,020; assets other than cash = 150 + 90 + 14 + 640 = 894; so cash = <strong>126</strong>. (2026 balances: 910 each side. Retained earnings check: 150 + 90 − 40 = 200.)</li><li><strong>Machinery bought</strong>: 600 opening − 70 depreciation − 30 book value sold + purchases = 640 closing, so purchases = <strong>140</strong>. Loss on sale = 30 − 25 = 5.</li></ol><div class=\"scroller\"><table><thead><tr><th>Cash flow statement, 2026–27 (₹ thousand)</th><th>₹ thousand</th></tr></thead><tbody><tr><td>Net profit 90 + depreciation 70 + loss on sale 5</td><td>165</td></tr><tr><td>Receivables up (30); inventories down +10; prepaid up (4); trade payables up +20; outstanding expenses down (10)</td><td>(14)</td></tr><tr><td><strong>Net cash from operating activities</strong></td><td><strong>151</strong></td></tr><tr><td>Machinery bought (140); machine sold +25</td><td>(115)</td></tr><tr><td><strong>Net cash used in investing activities</strong></td><td><strong>(115)</strong></td></tr><tr><td>Shares issued +100; loan repaid (50); dividend paid (40)</td><td>10</td></tr><tr><td><strong>Net cash from financing activities</strong></td><td><strong>10</strong></td></tr><tr><td>Net increase in cash: 151 − 115 + 10</td><td>46</td></tr><tr style=\"background:var(--blue-soft)\"><td>Opening cash 80 + 46 = closing cash</td><td>126</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The statement reconciles: cash rises by 46 thousand, from 80 to the 126 found from the balance sheet.</p></details>"
     }
    ]
   },
@@ -661,7 +683,7 @@ HUB.addCourse({
     {
      "t": "Practice set from the faculty (29 Oct)",
      "src": "L#26",
-     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q23, Q24, Q25.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO and weighted average haven't been lectured</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Not yet lectured (depreciation as an adjusting entry is on Quiz 2)</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Not yet lectured (errors of principle were L#15)</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><p style=\"font-size:14.5px\">Ratio analysis is the fourth technique introduced in L#28 and comes in later sessions, after Quiz 2. The formulas below follow the definitions the sheet gives; check them against the ratio lectures when they come.</p><details><summary>Q23 · Veda Retail: ten ratios · After Quiz 2</summary><p style=\"font-size:14.5px\">Veda Retail Ltd, 2026–27 (₹ lakh): revenue 1,200; COGS 840; operating expenses (with depreciation) 180; finance cost 30; profit before tax 150; tax 45; profit after tax 105. At 31 March 2027: cash 60, receivables 150, inventories 210, other current assets 30, non-current assets 750 (total 1,200); equity 700, long-term loans 300, trade payables 140, short-term borrowings 40, other current liabilities 20. At 31 March 2026: receivables 130, inventories 190, total assets 1,100, equity 635.</p><div class=\"scroller\"><table><thead><tr><th>Ratio</th><th>Working</th><th>Result</th></tr></thead><tbody><tr><td>(a) Gross profit margin</td><td>(1,200 − 840) ÷ 1,200</td><td>30%</td></tr><tr><td>(b) Net profit margin</td><td>105 ÷ 1,200</td><td>8.75%</td></tr><tr><td>(c) Current ratio</td><td>Current assets 60 + 150 + 210 + 30 = 450 ÷ current liabilities 140 + 40 + 20 = 200</td><td>2.25 : 1</td></tr><tr><td>(d) Quick ratio</td><td>(60 + 150) ÷ 200</td><td>1.05 : 1</td></tr><tr><td>(e) Inventory turnover; days</td><td>840 ÷ average inventory (190 + 210)/2 = 200 → 4.2 times; 365 ÷ 4.2</td><td>4.2 times; about 87 days</td></tr><tr><td>(f) Receivables turnover; days</td><td>1,200 ÷ average receivables (130 + 150)/2 = 140 → 8.57 times; 365 ÷ 8.57</td><td>8.57 times; about 43 days</td></tr><tr><td>(g) Debt–equity</td><td>(300 + 40) ÷ 700</td><td>0.49 : 1</td></tr><tr><td>(h) Interest coverage</td><td>EBIT (150 + 30) ÷ 30</td><td>6 times</td></tr><tr><td>(i) Return on average equity</td><td>105 ÷ (635 + 700)/2 = 667.5</td><td>15.7%</td></tr><tr><td>(j) Return on average total assets</td><td>105 ÷ (1,100 + 1,200)/2 = 1,150</td><td>9.1%</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Receivables turnover treats all revenue as credit sales, since no split is given. Return on assets here uses profit after tax; some texts use EBIT (180 ÷ 1,150 = 15.7%), so state the definition you use.</p></details><details><summary>Q24 · Two firms' ratios compared · After Quiz 2</summary><p style=\"font-size:14.5px\">Firm P: current ratio 2.5, quick ratio 0.9, inventory days 120, net margin 6%, debt–equity 0.3. Firm Q: 1.2, 1.0, 30 days, 4%, 1.5.</p><ul><li><strong>(a) Liquidity</strong>: P looks far more liquid on the current ratio, but on the quick ratio, which leaves out stock, Q (1.0) is slightly ahead of P (0.9). P's liquidity is mostly stock.</li><li><strong>(b) P's current assets</strong>: the 1.6 gap between its current and quick ratios is roughly stock, about 64% of current assets (1.6 ÷ 2.5, if quick assets are current assets less stock), and 120 inventory days say that stock moves slowly.</li><li><strong>(c) Borrowed funds</strong>: Q, with debt–equity 1.5 against P's 0.3.</li><li><strong>(d) Inventory speed</strong>: Q turns its stock in 30 days against P's 120, <strong>90 days faster</strong> (about 12 turns a year against 3).</li></ul></details><details><summary>Q25 · Reading a real annual report · Annual-report exercise</summary><p style=\"font-size:14.5px\">Take the latest annual report of any listed Indian company and answer from it, quoting page numbers: the statutory auditor and the opinion; the revenue recognition policy; the depreciation method and useful lives for plant and machinery; inventory valuation; net cash from operating, investing and financing activities and their reconciliation to the change in cash; the current and debt–equity ratios.</p><ul><li>The answers depend on the company you choose, so there is no single solution. Where to look:</li><li>Auditor and opinion: the <strong>Independent Auditor's Report</strong> before the financial statements (look for “unmodified” or “qualified” opinion).</li><li>Revenue, depreciation and inventory policies: the <strong>material accounting policies</strong> note, usually note 1 or 2 to the standalone and consolidated statements.</li><li>Cash flows: the <strong>statement of cash flows</strong>; check operating + investing + financing = change in cash and cash equivalents, allowing for exchange differences if shown.</li><li>Ratios: many reports now list key ratios in a note to the accounts; compute them yourself from the balance sheet and compare.</li></ul></details>"
+     "h": "<p style=\"font-size:14.5px\">Dr. Yadav shared a 25-question practice set for the whole course through the LMS on 29 October. Each question is restated below in our words with a full solution; the numbers are the sheet's and every figure has been recomputed. <strong>In this unit: Q23, Q24, Q25.</strong> Quiz 2 (31 October) covers the nine lectures from the matching concept to Cash flow Part 3, so each question is labelled with where it stands.</p><details><summary>All 25 questions and where they sit for Quiz 2</summary><div class=\"scroller\"><table><thead><tr><th>Q</th><th>Question</th><th>Unit</th><th>Quiz 2</th></tr></thead><tbody><tr><td>1</td><td>Concepts and conventions in six situations</td><td>Concepts</td><td>Partly on Quiz 2: (c) is the matching concept; the rest are Quiz 1 concepts and conventions</td></tr><tr><td>2</td><td>Missing figures in the accounting equation</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>3</td><td>Dual effect and Dr/Cr of seven transactions</td><td>Equation</td><td>Quiz 1 topic</td></tr><tr><td>4</td><td>Journal entries, Kavya Stationers</td><td>Journal</td><td>Quiz 1 topic</td></tr><tr><td>5</td><td>Ledger and trial balance, Kavya Stationers</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>6</td><td>Suspense account and five errors</td><td>Trial balance</td><td>Quiz 1 topic</td></tr><tr><td>7</td><td>Eight adjusting entries, deferral or accrual</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>8</td><td>Rent expense and commission income from cash</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>9</td><td>Meera Design Studio: adjustments to closing entries</td><td>Adjusting</td><td>On Quiz 2</td></tr><tr><td>10</td><td>Cash basis vs accrual basis profit</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>11</td><td>How much revenue this year?</td><td>Income statement</td><td>On Quiz 2</td></tr><tr><td>12</td><td>Bad debts, the allowance, ageing, recovery</td><td>Adjusting</td><td>Partly on Quiz 2: write-offs are adjustments; the percentage and ageing methods haven't had a lecture</td></tr><tr><td>13</td><td>FIFO vs weighted average, NRV write-down</td><td>Income statement</td><td>Partly on Quiz 2: COGS and gross profit are trading-account work; FIFO, weighted average and the NRV write-down were lectured in L#32, so expect them in the end-term</td></tr><tr><td>14</td><td>Cost of a machine</td><td>Balance sheet</td><td>Lectured in L#33 (cost of an asset under AS 10); expect it in the end-term</td></tr><tr><td>15</td><td>Straight-line vs reducing-balance depreciation</td><td>Balance sheet</td><td>Lectured in L#33 (both methods); depreciation as an adjusting entry was on Quiz 2</td></tr><tr><td>16</td><td>Disposal part-way through a year</td><td>Balance sheet</td><td>Gain or loss on disposal lectured in L#33 (whole years); the half-year charge is the extra step</td></tr><tr><td>17</td><td>Revised useful life</td><td>Balance sheet</td><td>Not yet lectured</td></tr><tr><td>18</td><td>Capital or revenue expenditure</td><td>Balance sheet</td><td>Lectured in L#33 (the last-longer, do-more, work-better test); errors of principle were L#15</td></tr><tr><td>19</td><td>Classify ten cash flows</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>20</td><td>Operating cash, indirect method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>21</td><td>Operating cash, direct method</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>22</td><td>Nova Fabricators: full cash flow statement</td><td>Cash flow</td><td>On Quiz 2</td></tr><tr><td>23</td><td>Veda Retail: ten ratios</td><td>Analysis</td><td>After Quiz 2 (analysis module, L#28 onward)</td></tr><tr><td>24</td><td>Two firms' ratios compared</td><td>Analysis</td><td>After Quiz 2</td></tr><tr><td>25</td><td>Reading a real annual report</td><td>Analysis</td><td>Annual-report exercise</td></tr></tbody></table></div></details><p style=\"font-size:14.5px\">Ratio analysis is the fourth technique introduced in L#28 and comes in later sessions, after Quiz 2. The formulas below follow the definitions the sheet gives; check them against the ratio lectures when they come.</p><details><summary>Q23 · Veda Retail: ten ratios · After Quiz 2</summary><p style=\"font-size:14.5px\">Veda Retail Ltd, 2026–27 (₹ lakh): revenue 1,200; COGS 840; operating expenses (with depreciation) 180; finance cost 30; profit before tax 150; tax 45; profit after tax 105. At 31 March 2027: cash 60, receivables 150, inventories 210, other current assets 30, non-current assets 750 (total 1,200); equity 700, long-term loans 300, trade payables 140, short-term borrowings 40, other current liabilities 20. At 31 March 2026: receivables 130, inventories 190, total assets 1,100, equity 635.</p><div class=\"scroller\"><table><thead><tr><th>Ratio</th><th>Working</th><th>Result</th></tr></thead><tbody><tr><td>(a) Gross profit margin</td><td>(1,200 − 840) ÷ 1,200</td><td>30%</td></tr><tr><td>(b) Net profit margin</td><td>105 ÷ 1,200</td><td>8.75%</td></tr><tr><td>(c) Current ratio</td><td>Current assets 60 + 150 + 210 + 30 = 450 ÷ current liabilities 140 + 40 + 20 = 200</td><td>2.25 : 1</td></tr><tr><td>(d) Quick ratio</td><td>(60 + 150) ÷ 200</td><td>1.05 : 1</td></tr><tr><td>(e) Inventory turnover; days</td><td>840 ÷ average inventory (190 + 210)/2 = 200 → 4.2 times; 365 ÷ 4.2</td><td>4.2 times; about 87 days</td></tr><tr><td>(f) Receivables turnover; days</td><td>1,200 ÷ average receivables (130 + 150)/2 = 140 → 8.57 times; 365 ÷ 8.57</td><td>8.57 times; about 43 days</td></tr><tr><td>(g) Debt–equity</td><td>(300 + 40) ÷ 700</td><td>0.49 : 1</td></tr><tr><td>(h) Interest coverage</td><td>EBIT (150 + 30) ÷ 30</td><td>6 times</td></tr><tr><td>(i) Return on average equity</td><td>105 ÷ (635 + 700)/2 = 667.5</td><td>15.7%</td></tr><tr><td>(j) Return on average total assets</td><td>105 ÷ (1,100 + 1,200)/2 = 1,150</td><td>9.1%</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Receivables turnover treats all revenue as credit sales, since no split is given. Return on assets here uses profit after tax; some texts use EBIT (180 ÷ 1,150 = 15.7%), so state the definition you use.</p></details><details><summary>Q24 · Two firms' ratios compared · After Quiz 2</summary><p style=\"font-size:14.5px\">Firm P: current ratio 2.5, quick ratio 0.9, inventory days 120, net margin 6%, debt–equity 0.3. Firm Q: 1.2, 1.0, 30 days, 4%, 1.5.</p><ul><li><strong>(a) Liquidity</strong>: P looks far more liquid on the current ratio, but on the quick ratio, which leaves out stock, Q (1.0) is slightly ahead of P (0.9). P's liquidity is mostly stock.</li><li><strong>(b) P's current assets</strong>: the 1.6 gap between its current and quick ratios is roughly stock, about 64% of current assets (1.6 ÷ 2.5, if quick assets are current assets less stock), and 120 inventory days say that stock moves slowly.</li><li><strong>(c) Borrowed funds</strong>: Q, with debt–equity 1.5 against P's 0.3.</li><li><strong>(d) Inventory speed</strong>: Q turns its stock in 30 days against P's 120, <strong>90 days faster</strong> (about 12 turns a year against 3).</li></ul></details><details><summary>Q25 · Reading a real annual report · Annual-report exercise</summary><p style=\"font-size:14.5px\">Take the latest annual report of any listed Indian company and answer from it, quoting page numbers: the statutory auditor and the opinion; the revenue recognition policy; the depreciation method and useful lives for plant and machinery; inventory valuation; net cash from operating, investing and financing activities and their reconciliation to the change in cash; the current and debt–equity ratios.</p><ul><li>The answers depend on the company you choose, so there is no single solution. Where to look:</li><li>Auditor and opinion: the <strong>Independent Auditor's Report</strong> before the financial statements (look for “unmodified” or “qualified” opinion).</li><li>Revenue, depreciation and inventory policies: the <strong>material accounting policies</strong> note, usually note 1 or 2 to the standalone and consolidated statements.</li><li>Cash flows: the <strong>statement of cash flows</strong>; check operating + investing + financing = change in cash and cash equivalents, allowing for exchange differences if shown.</li><li>Ratios: many reports now list key ratios in a note to the accounts; compute them yourself from the balance sheet and compare.</li></ul></details>"
     },
     {
      "t": "Ratio analysis: the five profitability ratios",
@@ -692,6 +714,72 @@ HUB.addCourse({
      "t": "Textbook: Financial Statement Analysis",
      "src": "Anthony 13e ch13",
      "h": "<p>A number on its own says little; analysis means comparing it with something. Anthony organises ratios around return on investment, measured three ways (on assets, invested capital and equity), and then splits that return into profit margin and investment turnover so that each manager's area of responsibility becomes visible. Supporting ratios test profitability, how hard assets and working capital are used, liquidity and solvency, and dividend policy, while the P/E ratio shows how the market judges future performance. The chapter warns that 'higher' is not always better, that definitions vary, that balance sheets can be window-dressed and that historical costs distort comparisons. Any standard used for comparison (experience, budget, past results or outside benchmarks) is imperfect, so ratio analysis mostly tells a manager which questions to ask, not the answers.</p><!--viz:fa-atc-roi-five-ways--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table for our own example, Sahyadri Appliances, in rupees crore: ROE 112.5 over equity 400 is 28.1 percent; ROA in the lecture's form, profit after tax over total assets, is 14.1 percent; Anthony's ROA adds back after-tax interest, 135 over 800, 16.9 percent; Anthony's ROIC is 135 over long-term debt plus equity of 600, 22.5 percent; pre-tax ROCE is EBIT 180 over 600, 30 percent.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One company, five return figures</div><div class=\"scroller\"><table><thead><tr><th>Measure</th><th>Numerator</th><th>Base</th><th>Result</th></tr></thead><tbody><tr><td>ROE</td><td>PAT 112.5</td><td>Equity 400</td><td><span style=\"font-family:var(--mono)\">28.1%</span></td></tr><tr style=\"background:var(--blue-soft)\"><td>ROA, lecture form</td><td>PAT 112.5</td><td>Total assets 800</td><td><span style=\"font-family:var(--mono)\">14.1%</span></td></tr><tr><td>ROA, Anthony</td><td>PAT + 30 × 0.75 = 135</td><td>Total assets 800</td><td><span style=\"font-family:var(--mono)\">16.9%</span></td></tr><tr><td>ROIC, Anthony</td><td>135</td><td>Long-term debt + equity 600</td><td><span style=\"font-family:var(--mono)\">22.5%</span></td></tr><tr><td>ROCE, pre-tax</td><td>EBIT 180</td><td>600</td><td><span style=\"font-family:var(--mono)\">30.0%</span></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Same firm, returns from 14% to 30%: always say which numerator and base you used. Year-end figures here; the lecture averages the base.</figcaption></figure><!--/viz:fa-atc-roi-five-ways--><!--viz:fa-atc-cash-conversion--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow for Sahyadri Appliances: receivable days 36.5 plus inventory days 65.2 gives an operating cycle of 101.7 days; minus payable days 47.8 gives a cash conversion cycle of 53.9 days.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">From operating cycle to cash conversion cycle</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Receivable days</b><br><span style=\"color:var(--ink-2);font-size:13px\">36.5</span></div><span style=\"color:var(--ink-3)\">+</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Inventory days</b><br><span style=\"color:var(--ink-2);font-size:13px\">65.2</span></div><span style=\"color:var(--ink-3)\">=</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Operating cycle</b><br><span style=\"color:var(--ink-2);font-size:13px\">101.7 days</span></div><span style=\"color:var(--ink-3)\">−</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Payable days</b><br><span style=\"color:var(--ink-2);font-size:13px\">47.8</span></div><span style=\"color:var(--ink-3)\">=</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Cash conversion cycle</b><br><span style=\"color:var(--ink-2);font-size:13px\">53.9 days</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The lecture's operating cycle stops at the middle box; Anthony goes on to subtract supplier credit.</figcaption></figure><!--/viz:fa-atc-cash-conversion--><!--viz:fa-atc-roe-five-factor--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: pretax margin 12.5 percent times asset turnover 1.5 times leverage 2.0 times tax retention 0.75 equals ROE 28.1 percent.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Five-factor ROE for Sahyadri Appliances</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Pretax margin</b><br><span style=\"color:var(--ink-2);font-size:13px\">150 ÷ 1,200 = 12.5%</span></div><span style=\"color:var(--ink-3)\">×</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Asset turnover</b><br><span style=\"color:var(--ink-2);font-size:13px\">1,200 ÷ 800 = 1.5</span></div><span style=\"color:var(--ink-3)\">×</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Leverage</b><br><span style=\"color:var(--ink-2);font-size:13px\">800 ÷ 400 = 2.0</span></div><span style=\"color:var(--ink-3)\">×</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Tax retention</b><br><span style=\"color:var(--ink-2);font-size:13px\">1 − 0.25 = 0.75</span></div><span style=\"color:var(--ink-3)\">=</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>ROE</b><br><span style=\"color:var(--ink-2);font-size:13px\">28.1%</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The first two factors are operations, the last two financing and tax; L#30's ROE = margin × turnover × leverage folds tax into the margin.</figcaption></figure><!--/viz:fa-atc-roe-five-factor--><p><strong>Analysis means comparison</strong> — An absolute figure such as a ₹10 crore profit is meaningless until it is set against size, last year, a budget or a competitor. Comparing a firm's ratios across years is trend (longitudinal) analysis; comparing with other firms uses external benchmarks.</p><p><strong>Three measures of return on investment</strong> — Return on assets uses all funds invested (total assets) and suits divisions whose managers do not control financing. Return on invested capital uses long-term funds (non-current liabilities plus equity). Return on equity uses only shareholders' funds and matters most to shareholders.<br><span style=\"font-family:var(--mono)\">ROA = [NI + Interest × (1 − t)] ÷ Total assets; ROIC = [NI + Interest × (1 − t)] ÷ (Long-term liabilities + Equity); ROE = NI ÷ Equity</span></p><p><strong>Why after-tax interest is added back</strong> — ROA and ROIC measure how well a whole pool of capital was used, before paying for that capital. Net income already has interest (a cost of the debt part of the pool) deducted, so the after-tax interest is added back. ROE keeps interest deducted because shareholders earn only what is left after lenders are paid. Many analysts skip the adjustment and use plain net income.</p><p><strong>Profit margin × investment turnover (DuPont)</strong> — ROI equals net income ÷ sales multiplied by sales ÷ investment. A firm can raise its return by earning more per rupee of sales or by generating more sales per rupee invested. Low-margin, high-turnover businesses (supermarkets) and high-margin, low-turnover ones (utilities) can earn similar returns.<br><span style=\"font-family:var(--mono)\">ROI = (NI ÷ Sales) × (Sales ÷ Investment)</span></p><p><strong>Five-factor return on equity</strong> — ROE can be split into pretax margin, asset turnover, financial leverage (assets ÷ equity) and the tax retention rate (1 − tax rate). The first two reflect operations; the last two reflect financing and tax policy.<br><span style=\"font-family:var(--mono)\">ROE = (PBT ÷ Sales) × (Sales ÷ Assets) × (Assets ÷ Equity) × (1 − t)</span></p><p><strong>Financial leverage</strong> — Funding new assets with debt raises ROE if the assets earn more than the after-tax cost of the debt, but fixed interest and repayments increase the risk that shareholders lose their investment. The assets-to-equity ratio measures how much of the asset base is supported by each rupee of equity.</p><p><strong>Price/earnings ratio</strong> — Market price per share divided by earnings per share. Because it involves the share price, which management does not control, it is the best indicator of how investors view future performance. Use diluted EPS if dilutive securities exist, and check whether one-time items have been excluded.<br><span style=\"font-family:var(--mono)\">P/E = Market price per share ÷ EPS</span></p><p><strong>Profitability ratios and common-size statements</strong> — Expressing each income-statement line as a percentage of sales (vertical analysis) gives gross margin, pretax margin and net profit margin. A common-size balance sheet uses total assets as 100%. Comparing common-size statements across years shows which costs or assets are moving out of line. Profit margin alone ignores the investment needed to earn it.</p><p><strong>Investment utilisation ratios</strong> — Asset, invested-capital and equity turnover show sales per rupee invested. Capital asset intensity (sales ÷ PP&amp;E, also called fixed-asset turnover) flags firms with heavy fixed costs that suffer in recessions. Working-capital turnover is sales ÷ (current assets − current liabilities).<br><span style=\"font-family:var(--mono)\">Asset turnover = Sales ÷ Total assets; Capital intensity = Sales ÷ PP&amp;E</span></p><p><strong>Days ratios and the cash conversion cycle</strong> — Days' receivables = receivables ÷ (sales ÷ 365); days' inventory = inventory ÷ (cost of sales ÷ 365); inventory turnover = cost of sales ÷ inventory. Days' payables uses operating payables over daily cash expenses. Receivable days plus inventory days give the operating cycle; subtracting payable days gives the cash conversion cycle, the period for which the firm must finance its operations.<br><span style=\"font-family:var(--mono)\">Cash conversion cycle = Days' receivables + Days' inventory − Days' payables</span></p><p><strong>Liquidity and solvency ratios</strong> — Liquidity is the ability to meet current obligations: current ratio and acid-test (quick) ratio. Solvency is the ability to meet interest and repayment on long-term obligations: debt/equity, debt/capitalisation, times interest earned and cash flow ÷ debt. Anthony notes that, conceptually, debt means interest-bearing liabilities, but published ratios do not always say which liabilities are included.<br><span style=\"font-family:var(--mono)\">Times interest earned = (Pretax operating profit + Interest) ÷ Interest</span></p><p><strong>Dividend ratios and implied growth</strong> — Dividend yield = dividend per share ÷ market price; payout = dividends ÷ net income. Retained profit funds growth without new equity, so ROE × (1 − payout) gives the implied (sustainable) growth rate, a potential not a forecast. Comparing dividend yield with a bond's interest yield is misleading, because shareholders also gain from retained earnings.<br><span style=\"font-family:var(--mono)\">Implied growth = ROE × (1 − Dividend payout)</span></p><p><strong>Growth measures</strong> — Average growth averages the year-to-year percentage changes; compound growth finds the single annual rate that turns the first-year figure into the last-year figure. If the first or last year is abnormal, the compound rate can mislead.<br><span style=\"font-family:var(--mono)\">Compound growth = (Final ÷ Initial)^(1/n) − 1</span></p><p><strong>Why comparisons are hard</strong> — A higher figure is not always better (a very high current ratio may mean idle funds); circumstances differ between firms; historical-cost figures are distorted by inflation and asset age; terms like profit and current assets are defined differently; year-end balance sheets can hide seasonal swings or be window-dressed; and past ratios do not guarantee the future.</p><p><strong>Four types of standard</strong> — Actual results can be compared with (1) the analyst's experience, (2) a budget, (3) the firm's own past results and (4) external benchmarks such as a competitor or industry averages. None is perfect: budgets rest on assumptions, history may itself be poor, and other firms may differ in accounting and circumstances. Analysis mostly raises questions to investigate.</p><div class=\"card\"><strong>Case: Genmo Corporation</strong> <em>(Case 13–1)</em><p>A fire destroys a company's current financial statements just before the owner meets a prospective buyer. Only last year's statements, a few current-year figures and a table of ratios survive. Students rebuild the current balance sheet and income statement from the ratios.</p><p><em>Lesson:</em> Ratios are linked identities; knowing their definitions lets you work backwards from ratios to the underlying statement figures.</p><p><em>Think:</em> If you know revenue, the current ratio and current liabilities, which balance-sheet figures can you recover, and which ratio would you use next?</p></div><div class=\"card\"><strong>Case: Identify the Industries</strong> <em>(Case 13–3)</em><p>Twelve firms from very different industries (a bank, an airline, a utility, a temporary-staffing agency, a warehouse club and others) are shown only as common-size balance sheets with a few ratios. Students match each column to its industry.</p><p><em>Lesson:</em> Asset structure, turnover, margins and leverage reflect the economics of an industry, which is why cross-industry ratio comparisons need care.</p><p><em>Think:</em> Which features would you expect in the common-size balance sheet of a utility compared with a staffing agency, and why?</p></div><div class=\"card\"><strong>Case: Butler Lumber Company</strong> <em>(Case 13–6)</em><p>A profitable, fast-growing lumber retailer keeps running short of cash, leans heavily on trade credit and has hit its bank's lending limit. The owner seeks a larger line of credit from a new bank, which must decide whether to lend.</p><p><em>Lesson:</em> Growth ties up cash in receivables and inventory; turnover and days ratios explain why a profitable firm needs more financing.</p><p><em>Think:</em> Which ratios would you compute to judge whether the growth is financeable, and what would worry you as the lender?</p></div><details><summary>Worked problem: Liquidity and solvency for an Indian company</summary><p>Sahyadri Appliances Ltd, 31 March 2026 (₹ crore): cash and cash equivalents 40, trade receivables 120, inventories 150, prepaid expenses 10; net PP&amp;E 480; total assets 800. Trade payables 110, short-term borrowings 50, other current liabilities 40; long-term borrowings 200; equity share capital 100 and other equity 300. For the year: EBIT 180, finance cost 30. Compute the current ratio, quick ratio, three versions of debt/equity and interest coverage.</p><ol><li>Current assets = 40 + 120 + 150 + 10 = 320; current liabilities = 110 + 50 + 40 = 200. Current ratio = 320 ÷ 200 = 1.6.</li><li>Quick assets: L#31 definition = current assets − inventories = 320 − 150 = 170, so quick ratio = 170 ÷ 200 = 0.85. Anthony's monetary current assets (cash + receivables) = 160, giving 0.8.</li><li>Shareholders' funds = 100 + 300 = 400.</li><li>Long-term debt ÷ equity = 200 ÷ 400 = 0.5.</li><li>Interest-bearing debt ÷ equity = (200 + 50) ÷ 400 = 0.625 (the L#31 definition: all borrowings, short- and long-term).</li><li>Total liabilities ÷ equity = (200 + 200) ÷ 400 = 1.0.</li><li>Interest coverage = EBIT ÷ interest = 180 ÷ 30 = 6 times.</li></ol><p><strong>Answer:</strong> Current ratio 1.6; quick ratio 0.85 (lecture) or 0.8 (Anthony); debt/equity 0.5 (long-term), 0.625 (all interest-bearing, as in L#31) or 1.0 (total liabilities); interest coverage 6 times.</p></details><details><summary>Worked problem: Return on investment three ways and the DuPont split</summary><p>Sahyadri Appliances: revenue ₹1,200 crore, EBIT ₹180 crore, finance cost ₹30 crore, tax rate 25%, total assets ₹800 crore, long-term borrowings ₹200 crore, equity ₹400 crore. Compute PAT, ROE, Anthony's ROA and ROIC, the pre-tax ROCE, and check ROE with the three- and five-factor splits.</p><ol><li>PBT = 180 − 30 = 150; tax = 37.5; PAT = 112.5.</li><li>ROE = 112.5 ÷ 400 = 28.1%.</li><li>After-tax interest = 30 × (1 − 0.25) = 22.5. ROA (Anthony) = (112.5 + 22.5) ÷ 800 = 16.9%. (Plain NI ÷ TA = 14.1%.)</li><li>ROIC (Anthony) = 135 ÷ (200 + 400) = 22.5%. Pre-tax ROCE = EBIT ÷ capital employed = 180 ÷ 600 = 30.0%.</li><li>Three-factor: profit margin 112.5 ÷ 1,200 = 9.375% × asset turnover 1,200 ÷ 800 = 1.5 × leverage 800 ÷ 400 = 2.0 → 28.1%.</li><li>Five-factor: pretax margin 150 ÷ 1,200 = 12.5% × 1.5 × 2.0 × tax retention 0.75 → 28.1%.</li></ol><p><strong>Answer:</strong> PAT ₹112.5 crore; ROE 28.1%; ROA 16.9% (Anthony) vs 14.1% (NI ÷ TA, the lecture's form on year-end assets); ROIC 22.5% vs ROCE 30.0%; both DuPont splits reproduce ROE = 28.1%.</p></details><details><summary>Worked problem: Working-capital days and the cash conversion cycle</summary><p>Sahyadri Appliances: revenue ₹1,200 crore; cost of goods sold ₹840 crore; closing receivables ₹120 crore; inventory ₹130 crore at the start of the year and ₹150 crore at the end; trade payables ₹110 crore. Use 365 days and, as a simplification, cost of goods sold as the base for payable days. Compute inventory turnover (closing and average), days' inventory, days' receivables, days' payables and the cash conversion cycle (closing balances).</p><ol><li>Inventory turnover on closing inventory = 840 ÷ 150 = 5.6 times (Anthony's illustration basis).</li><li>On average inventory = 840 ÷ [(130 + 150) ÷ 2] = 840 ÷ 140 = 6.0 times.</li><li>Days' inventory (closing) = 150 ÷ (840 ÷ 365) = 65.2 days.</li><li>Days' receivables = 120 ÷ (1,200 ÷ 365) = 36.5 days.</li><li>Days' payables ≈ 110 ÷ (840 ÷ 365) = 47.8 days.</li><li>Cash conversion cycle = 36.5 + 65.2 − 47.8 = 53.9 days.</li></ol><p><strong>Answer:</strong> Inventory turnover 5.6 (closing) or 6.0 (average); days' inventory 65.2; days' receivables 36.5; days' payables 47.8; cash conversion cycle about 54 days.</p></details><details><summary>Worked problem: Market, dividend and growth ratios</summary><p>Sahyadri Appliances has 10 crore equity shares of ₹10 each, PAT ₹112.5 crore, a share price of ₹135 and a dividend of ₹4.50 per share. Five years ago revenue was ₹800 crore; it is now ₹1,200 crore. ROE is 28.125%. Compute EPS, P/E, dividend yield, payout, implied growth and compound revenue growth.</p><ol><li>EPS = 112.5 ÷ 10 = ₹11.25.</li><li>P/E = 135 ÷ 11.25 = 12 times.</li><li>Dividend yield = 4.50 ÷ 135 = 3.33%.</li><li>Total dividend = 4.50 × 10 = ₹45 crore; payout = 45 ÷ 112.5 = 40%.</li><li>Implied growth = 28.125% × (1 − 0.40) = 16.9%.</li><li>Compound revenue growth = (1,200 ÷ 800)^(1/5) − 1 = 8.45% a year.</li></ol><p><strong>Answer:</strong> EPS ₹11.25; P/E 12; dividend yield 3.33%; payout 40%; implied growth 16.9%; compound revenue growth 8.45% a year.</p></details><div class=\"def\"><b>Book vs lecture — Return on assets numerator.</b> Book: ROA = [net income + interest × (1 − tax rate)] ÷ total assets; notes that some analysts simply use net income. Lecture: L#30: ROA (also called ROI) = net profit ÷ average total assets, so ROA = profit margin × asset turnover exactly. <b>Use the lecture's net profit ÷ average total assets in the course exams; use Anthony's after-tax-interest version only if a question names it.</b></div><div class=\"def\"><b>Book vs lecture — Year-end vs average balances.</b> Book: Uses year-end balances in its worked illustration but recommends averages when a flow is divided by a stock. Lecture: L#30 and L#31 always average opening and closing balances for assets, equity, receivables and inventory. <b>Average whenever opening and closing figures are given; otherwise use the year-end figure and say so.</b></div><div class=\"def\"><b>Book vs lecture — Days in the year.</b> Book: Days' receivables and days' inventory divide by daily sales or cost of sales on a 365-day year. Lecture: L#31: collection period and holding period = 360 ÷ turnover. <b>Use 360 in the course exams unless the question says 365; the answers differ by about 1%.</b></div><div class=\"def\"><b>Book vs lecture — Quick (acid-test) ratio numerator.</b> Book: Monetary current assets (cash, marketable securities, receivables) ÷ current liabilities. Lecture: L#31: (current assets − inventory) ÷ current liabilities, rule of thumb 1 : 1. <b>Follow the lecture; the two differ only when there are prepaid expenses or other non-monetary current assets besides inventory.</b></div><div class=\"def\"><b>Book vs lecture — Operating cycle vs cash conversion cycle.</b> Book: Operating cycle = receivable days + inventory days; subtracting payable days gives the cash conversion cycle. Lecture: L#31 teaches the operating cycle (holding period + collection period) only; payables are not deducted. <b>If asked for the operating cycle, do not subtract payable days.</b></div><div class=\"def\"><b>Book vs lecture — Debt/equity ratio.</b> Book: Long-term liabilities ÷ equity or total liabilities ÷ equity; conceptually debt is interest-bearing. Lecture: L#31: total debt ÷ shareholders' equity, where debt is every interest-bearing borrowing, short- or long-term. <b>Use the lecture's definition and write the formula before computing.</b></div><div class=\"def\"><b>Book vs lecture — Market ratios covered.</b> Book: P/E, dividend yield, dividend payout and implied growth. Lecture: L#31 adds earnings yield, stock return, price-to-book and beta, and does not cover payout or implied growth. <b>The lecture's list is the one to know for the course; payout and implied growth are textbook extras.</b></div>"
+    }
+   ]
+  },
+  {
+   "id": "inventory",
+   "title": "Inventories: valuation under AS 2",
+   "tag": "Lecture 32 · after Quiz 2",
+   "lede": "What counts as inventory, the AS 2 rule of lower of cost and net realisable value, what cost includes and leaves out, and how FIFO and weighted average split the same cost between cost of goods sold and closing stock, so moving the gross margin.",
+   "topics": [
+    {
+     "t": "What inventory is, and why closing stock moves profit",
+     "src": "L#32",
+     "h": "<p style=\"font-size:14.5px\">Lecture 32 opens the last module with inventories: what they are, and the question she called the most important one, <strong>how to value them</strong>. Everything in it comes from <strong>Accounting Standard 2 (AS 2)</strong>, which she called the Bible for inventory. She mostly quoted the examples in dollars; the figures below keep her currency.</p><div class=\"def\"><b>Inventory (AS 2)</b>: assets a firm holds in one of three forms: <b>goods held for sale</b> (a trader's stock bought to resell), <b>work in progress</b> (goods still in the process of production) and <b>raw materials</b> to be consumed in production.</div><h4>The business problem she started with</h4><p style=\"font-size:14.5px\">XYZ Limited sells GPS trackers. It began July with stock costing $21 a unit, later bought more at $27 and then $33, and sold 300 units for $11,340. Two questions follow: <strong>which purchase cost is matched against the $11,340 of sales</strong> (cost of goods sold), and <strong>which cost stays on the balance sheet</strong> as closing inventory: $21, $27 or $33? Same business, same units, same sales, yet FIFO gives a gross margin of <strong>$4,140</strong> and weighted average <strong>$3,057</strong>. The method moves the profit, which is why a firm has to choose one and understand it.</p><h4>Goods available for sale, and where the two parts go</h4><div class=\"scroller\"><table><thead><tr><th>Goods available for sale</th><th>= opening inventory + purchases</th></tr></thead><tbody><tr><td>…the part sold</td><td><strong>Cost of goods sold</strong>: an expense in the profit and loss statement</td></tr><tr><td>…the part unsold at the year end</td><td><strong>Closing inventory</strong>: an asset in the balance sheet</td></tr></tbody></table></div><div class=\"def\"><b>Cost of goods sold</b> = opening inventory + purchases − closing inventory, and <b>gross margin</b> = revenue − cost of goods sold. Closing inventory sits inside COGS with a minus sign, so <b>how you value closing stock decides the gross margin</b>.</div><p style=\"font-size:14.5px\">Her one-unit test: if closing inventory goes up by one unit's cost, cost of goods sold goes down by the same amount and gross margin goes up by it. A higher closing stock therefore means a higher reported profit, with nothing else changed.</p><div class=\"def\"><b>From the lecture (L#32)</b>: taught after Quiz 2, so expect inventories in the end-term exam (offline, 4–6 December, no negative marking). Her closing takeaways were the four things to know: what <em>cost</em> comprises and what it excludes, what <em>net realisable value</em> is, that AS 2 measures inventory at the <em>lower</em> of the two, and that only <em>FIFO and weighted average</em> are allowed (LIFO is not). Two MCQs were posed in the lecture itself: the cost that is <em>not</em> part of inventory (a salesman's commission) and the raw-material rule.</div><!--viz:fa-inv-reservoir--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: opening inventory plus purchases equals goods available for sale, which splits into cost of goods sold (an expense in the profit and loss statement) and closing inventory (an asset in the balance sheet).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Goods available for sale split two ways</div><div style=\"font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Opening inventory</b><br><span style=\"color:var(--ink-2);font-size:13px\">left from last year</span></div><span style=\"color:var(--ink-3)\">+</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Purchases</b><br><span style=\"color:var(--ink-2);font-size:13px\">bought this year</span></div><span style=\"color:var(--ink-3)\">=</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Goods available for sale</b></div></div><div style=\"display:flex;flex-wrap:wrap;gap:6px 8px;margin-top:8px\"><div style=\"flex:1 1 180px;padding:8px 10px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>Sold → cost of goods sold</b><br><span style=\"color:var(--ink-2);font-size:13px\">expense in the profit and loss statement</span></div><div style=\"flex:1 1 180px;padding:8px 10px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\"><b>Unsold → closing inventory</b><br><span style=\"color:var(--ink-2);font-size:13px\">asset in the balance sheet</span></div></div><div style=\"margin-top:8px;color:var(--ink-3);font-size:13px\">COGS = opening + purchases − closing · gross margin = revenue − COGS. Value closing stock higher and COGS falls by the same amount, so gross margin rises.</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The same pool of cost is split; whatever is left in closing stock is kept out of this year's expense.</figcaption></figure><!--/viz:fa-inv-reservoir-->"
+    },
+    {
+     "t": "The AS 2 measurement rule: cost, NRV and conservatism",
+     "src": "L#32",
+     "h": "<div class=\"def\"><b>The AS 2 measurement rule</b>: inventory is measured at the <b>lower of cost and net realisable value</b>. It follows from the <b>conservatism</b> convention: anticipate no profit, but account for all possible losses, so profit is never overestimated.</div><h4>Cost (AS 2, paragraph 6, as she cited it)</h4><p style=\"font-size:14.5px\">Cost is the purchase cost, the conversion cost and any other cost of bringing the inventory to its <strong>present location and condition</strong>. In her list:</p><div class=\"scroller\"><table><thead><tr><th>Part of cost</th><th>Not part of cost (expensed in the period)</th></tr></thead><tbody><tr><td>Purchase price, <strong>net of recoverable taxes</strong></td><td><strong>Abnormal waste</strong> or loss</td></tr><tr><td>Logistics: <strong>freight inward</strong> and other direct costs, such as labour to unload the goods</td><td><strong>Storage costs</strong>: the warehouse rent for stock bought for the next twelve months does not go into the stock's cost</td></tr><tr><td>Conversion cost: direct labour and production overheads</td><td><strong>Selling and distribution</strong> costs, such as a salesman's commission</td></tr><tr><td><strong>Less</strong> trade discounts and rebates from suppliers</td><td><strong>Administrative</strong> overheads</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Her in-lecture MCQ asked which of a trader's costs is not part of inventory cost under AS 2: the commission paid to a salesman. It is a selling and distribution cost, recognised as an expense in the period it is incurred.</p><h4>Net realisable value</h4><div class=\"def\"><b>Net realisable value (NRV)</b>: the estimated selling price of the goods, less the selling, marketing and administrative expenses needed to make the sale. It looks at the firm's selling side, net of the indirect costs of selling.</div><h4>Three rules for applying NRV</h4><ol><li><strong>Item by item.</strong> Each item is compared with its own NRV and written down on its own; you do not net the whole block of similar stock.</li><li><strong>Raw materials.</strong> A raw material is <em>not</em> written down below cost if the finished goods made from it are expected to sell at or above cost. Her MCQ: the replacement cost of a raw material has fallen below its cost, but the finished product will sell at or above cost. Keep the raw material at cost.</li><li><strong>Reassess every year.</strong> NRV is estimated afresh at the end of each reporting period, when the balance sheet is prepared.</li></ol><!--viz:fa-inv-cost-in-or-out--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two panels. In the cost of inventory: purchase price net of recoverable taxes, freight inward and unloading labour, conversion costs, less trade discounts. Expensed instead: abnormal waste, storage costs, selling and distribution costs such as a salesman's commission, administrative overheads.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">What goes into the cost of inventory under AS 2</div><div style=\"display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:14px;min-width:0\"><div style=\"padding:10px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\"><b>In the cost</b><ul style=\"margin:6px 0 0 18px;padding:0;color:var(--ink-2);font-size:13px\"><li>purchase price, net of recoverable taxes</li><li>freight inward, unloading labour</li><li>conversion: direct labour, production overheads</li><li><b>less</b> trade discounts and rebates</li></ul></div><div style=\"padding:10px;border:1px solid var(--bad);border-radius:4px;background:var(--bad-soft)\"><b>Expensed instead</b><ul style=\"margin:6px 0 0 18px;padding:0;color:var(--ink-2);font-size:13px\"><li>abnormal waste or loss</li><li>storage and warehouse costs</li><li>selling and distribution (a salesman's commission)</li><li>administrative overheads</li></ul></div></div><div style=\"margin-top:8px;color:var(--ink-3);font-size:13px\">Test: does the spending bring the stock to its present location and condition? If not, it is a period expense.</div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Her MCQ: the salesman's commission is the one that stays out of inventory cost.</figcaption></figure><!--/viz:fa-inv-cost-in-or-out-->"
+    },
+    {
+     "t": "FIFO and weighted average: the XYZ GPS-tracker working",
+     "src": "L#32",
+     "h": "<h4>The cost formulas AS 2 names</h4><div class=\"scroller\"><table><thead><tr><th>Formula</th><th>Idea</th><th>Closing inventory carries…</th></tr></thead><tbody><tr><td>Specific identification</td><td>Each item is tracked with its own actual cost</td><td>the actual cost of the items left</td></tr><tr><td><strong>FIFO</strong> (first in, first out)</td><td>The oldest items are treated as sold first</td><td>the <strong>latest</strong> purchase prices</td></tr><tr><td><strong>Weighted average</strong></td><td>Block costing: one average cost for all similar items in the period, applied to every unit</td><td>the average cost</td></tr><tr><td>LIFO (last in, first out)</td><td>Appears in textbooks: the newest items treated as sold first</td><td><strong>not allowed under AS 2</strong>; read it for understanding only</td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>Only FIFO and weighted average are permitted</strong> under AS 2 (she listed specific identification among the formulas too). The transcript had her reading LIFO figures off the slide purely for comparison.</p><h4>The XYZ (Clear View) data, July</h4><p style=\"font-size:14.5px\">The transcript gives the opening stock and the first two purchases directly; the third purchase is what is left of the 585 units available. The transcript once mishears $33 as $23 and $11,340 as $11,350; the working uses 33 and 11,340, which are the numbers that reproduce her results.</p><div class=\"scroller\"><table><thead><tr><th>Date</th><th>Event</th><th>Units</th><th>Cost / unit</th><th>Total cost</th></tr></thead><tbody><tr><td>1 July</td><td>Opening inventory</td><td><span style=\"font-family:var(--mono)\">150</span></td><td><span style=\"font-family:var(--mono)\">$21</span></td><td><span style=\"font-family:var(--mono)\">3,150</span></td></tr><tr><td>5 July</td><td>Sale: 120 units at $36</td><td><span style=\"font-family:var(--mono)\">(120)</span></td><td></td><td></td></tr><tr><td>10 July</td><td>Purchase</td><td><span style=\"font-family:var(--mono)\">225</span></td><td><span style=\"font-family:var(--mono)\">$27</span></td><td><span style=\"font-family:var(--mono)\">6,075</span></td></tr><tr><td>25 July</td><td>Purchase</td><td><span style=\"font-family:var(--mono)\">210</span></td><td><span style=\"font-family:var(--mono)\">$33</span></td><td><span style=\"font-family:var(--mono)\">6,930</span></td></tr><tr><td></td><td>Later sales: 180 units (total sales 300 units for $11,340)</td><td><span style=\"font-family:var(--mono)\">(180)</span></td><td></td><td></td></tr><tr><td>31 July</td><td><strong>Available 585 · sold 300 · closing 285</strong></td><td><span style=\"font-family:var(--mono)\">585</span></td><td></td><td><strong><span style=\"font-family:var(--mono)\">16,155</span></strong></td></tr></tbody></table></div><h4>FIFO</h4><p style=\"font-size:14.5px\">The 300 units sold are the oldest: all 150 of the opening stock at $21, then 150 of the 225 bought at $27. What is left is 75 units at $27 and the whole 210 at $33.</p><div class=\"scroller\"><table><thead><tr><th>FIFO</th><th>Working</th><th>$</th></tr></thead><tbody><tr><td>Cost of goods sold</td><td><span style=\"font-family:var(--mono)\">150 × 21 + 150 × 27 = 3,150 + 4,050</span></td><td style=\"background:var(--blue-soft)\"><strong><span style=\"font-family:var(--mono)\">7,200</span></strong></td></tr><tr><td>Closing inventory</td><td><span style=\"font-family:var(--mono)\">75 × 27 + 210 × 33 = 2,025 + 6,930</span></td><td><span style=\"font-family:var(--mono)\">8,955</span></td></tr><tr><td>Check</td><td><span style=\"font-family:var(--mono)\">7,200 + 8,955</span></td><td><span style=\"font-family:var(--mono)\">16,155</span></td></tr><tr><td>Gross margin</td><td><span style=\"font-family:var(--mono)\">11,340 − 7,200</span></td><td style=\"background:var(--good-soft)\"><strong><span style=\"font-family:var(--mono)\">4,140</span></strong></td></tr></tbody></table></div><h4>Weighted average</h4><p style=\"font-size:14.5px\">One average cost for the month: total cost of goods available ÷ units available. She called the $16,155 \"average revenue\" at one point; it is the total <em>cost</em> of the 585 units.</p><div class=\"scroller\"><table><thead><tr><th>Weighted average</th><th>Working</th><th>$</th></tr></thead><tbody><tr><td>Average unit cost</td><td><span style=\"font-family:var(--mono)\">16,155 ÷ 585</span></td><td><span style=\"font-family:var(--mono)\">27.62</span></td></tr><tr><td>Closing inventory</td><td><span style=\"font-family:var(--mono)\">285 × 27.62</span></td><td><span style=\"font-family:var(--mono)\">7,872</span></td></tr><tr><td>Cost of goods sold</td><td><span style=\"font-family:var(--mono)\">16,155 − 7,872</span></td><td style=\"background:var(--blue-soft)\"><strong><span style=\"font-family:var(--mono)\">8,283</span></strong></td></tr><tr><td>Gross margin</td><td><span style=\"font-family:var(--mono)\">11,340 − 8,283</span></td><td style=\"background:var(--good-soft)\"><strong><span style=\"font-family:var(--mono)\">3,057</span></strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\">Her figures reproduce exactly once the unit cost is rounded to $27.62 before multiplying. Carrying the unrounded 27.615… through gives closing stock of about $7,870, COGS $8,285 and a gross margin of about $3,055; the $2 difference is rounding, not method.</p><h4>Comparing the two</h4><div class=\"scroller\"><table><thead><tr><th>Same 300 units, same $11,340 of sales</th><th>FIFO</th><th>Weighted average</th></tr></thead><tbody><tr><td>Cost of goods sold</td><td><span style=\"font-family:var(--mono)\">7,200</span></td><td><span style=\"font-family:var(--mono)\">8,283</span></td></tr><tr><td>Closing inventory</td><td><span style=\"font-family:var(--mono)\">8,955</span></td><td><span style=\"font-family:var(--mono)\">7,872</span></td></tr><tr><td>Gross margin</td><td><strong><span style=\"font-family:var(--mono)\">4,140</span></strong></td><td><strong><span style=\"font-family:var(--mono)\">3,057</span></strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\">Costs rose from $21 to $33 during the month. <strong>FIFO charges the older, lower costs</strong> to cost of goods sold, so COGS is lowest and both closing inventory and gross margin are highest. Weighted average blends the three prices and lands in between. Note that both methods split the same $16,155; they differ only in how much of it is called expense now and how much waits in the balance sheet.</p><!--viz:fa-inv-fifo-layers--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Stacked bar of the 585 units available: 150 at $21 at the bottom, 225 at $27 in the middle and 210 at $33 on top. A dashed line 300 units up from the bottom marks the FIFO sale: cost of goods sold $7,200 below it, closing inventory of 285 units worth $8,955 above it.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">FIFO sells the oldest layer first</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 200\" role=\"img\" aria-label=\"Stacked bar of 585 units: 150 at $21 at the bottom, 225 at $27 in the middle, 210 at $33 on top. Under FIFO the 300 units sold come from the bottom: all 150 at $21 and 150 at $27; the 285 left are 75 at $27 and 210 at $33.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><rect x=\"60\" y=\"24.0\" width=\"120\" height=\"53.8\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><rect x=\"60\" y=\"77.8\" width=\"120\" height=\"57.7\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><rect x=\"60\" y=\"135.5\" width=\"120\" height=\"38.5\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><path d=\"M52,97.1 L188,97.1\" style=\"stroke:var(--ink);stroke-width:2;stroke-dasharray:5 4;fill:none\"/><text x=\"120\" y=\"55.9\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">210 @ $33</text><text x=\"120\" y=\"124.4\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">225 @ $27</text><text x=\"120\" y=\"159.8\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">150 @ $21</text><text x=\"200\" y=\"62.5\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Closing 285 units</text><text x=\"200\" y=\"80.5\" style=\"fill:var(--ink-2);font-size:13px\">75 × 27 + 210 × 33 = $8,955</text><text x=\"200\" y=\"137.5\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Sold 300 units (FIFO)</text><text x=\"200\" y=\"155.5\" style=\"fill:var(--ink-2);font-size:13px\">150 × 21 + 150 × 27 = $7,200</text><text x=\"120\" y=\"192.0\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">oldest at the bottom</text><text x=\"200\" y=\"192.0\" style=\"fill:var(--ink-3);font-size:13px\">weighted average: every unit at $27.62</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Rising prices: the cheap bottom layer becomes expense, the dear top layer stays as an asset, so FIFO's margin is the highest.</figcaption></figure><!--/viz:fa-inv-fifo-layers-->"
+    },
+    {
+     "t": "Her practice: missing values and Trini Company",
+     "src": "L#32",
+     "h": "<h4>Missing values: one formula, rearranged</h4><p style=\"font-size:14.5px\">Her two-year table with three blanks needs nothing beyond the inventory identity. Goods available = opening inventory + purchases, and goods available = cost of goods sold + closing inventory, so:</p><ul><li>Cost of goods sold = goods available − closing inventory</li><li>Goods available = opening inventory + purchases</li><li>Closing inventory = goods available − cost of goods sold</li></ul><p style=\"font-size:14.5px\">Pick the line whose other two numbers you have. (The transcript garbles her specific figures, so only the method is recorded here.)</p><h4>Trini Company: a physical count of 900 units</h4><p style=\"font-size:14.5px\">Trini counts 900 units unsold at the period end. The most recent purchase was 1,200 units at $27 on 1 November, and the goods available for the period cost $1,12,760 over 4,570 units (the transcript's \"47,570\" does not divide to her $24.67; 4,570 does). She asked for closing inventory and cost of goods sold under both methods.</p><div class=\"scroller\"><table><thead><tr><th></th><th>FIFO</th><th>Weighted average</th></tr></thead><tbody><tr><td>Unit cost for closing stock</td><td>latest purchase, <span style=\"font-family:var(--mono)\">$27</span></td><td><span style=\"font-family:var(--mono)\">1,12,760 ÷ 4,570 = 24.67</span></td></tr><tr><td>Closing inventory (900 units)</td><td><span style=\"font-family:var(--mono)\">900 × 27 = 24,300</span></td><td><span style=\"font-family:var(--mono)\">900 × 24.67 = 22,203</span></td></tr><tr><td>Cost of goods sold</td><td><span style=\"font-family:var(--mono)\">1,12,760 − 24,300 = 88,460</span></td><td><span style=\"font-family:var(--mono)\">1,12,760 − 22,203 = 90,557</span></td></tr></tbody></table></div><p style=\"font-size:14.5px\"><strong>One slip to catch:</strong> she called the $1,12,760 \"revenue\" and said revenue minus closing inventory gives cost of goods sold. The number she subtracted from is the cost of goods available for sale, and that is the correct base: COGS = goods available − closing inventory. Revenue minus closing inventory is not a meaningful figure. With the revenue added, the two gross margins would again differ by the $2,097 gap in COGS.</p>"
+    },
+    {
+     "t": "Textbook: Cost of Sales and Inventories",
+     "src": "Anthony 13e ch6",
+     "h": "<!--viz:fa-atc-periodic-vs-perpetual--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison table of periodic and perpetual inventory records: how closing inventory and cost of goods sold are found, how shrinkage is treated, record-keeping effort, the averaging method, and which the course lectures used.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Periodic and perpetual inventory records</div><div class=\"scroller\"><table><thead><tr><th></th><th>Periodic</th><th>Perpetual</th></tr></thead><tbody><tr><td>How closing inventory is found</td><td>Physical count at the period end, then priced</td><td>Read off the item records; a count only checks them</td></tr><tr><td>How cost of goods sold is found</td><td>Deduced: goods available − counted closing stock</td><td>Recorded as each sale is made (Cost of Goods Sold debited)</td></tr><tr><td>Theft, spoilage, miscounts</td><td style=\"background:var(--bad-soft)\">Hidden inside COGS: anything not counted is assumed sold</td><td style=\"background:var(--good-soft)\">Shown as shrinkage: records minus count</td></tr><tr><td>Record-keeping</td><td>Light</td><td>Heavier, but helps reordering and monthly statements</td></tr><tr><td>Average cost</td><td>One weighted average for the period</td><td>A new average can be struck after each purchase</td></tr><tr><td>In the course</td><td style=\"background:var(--blue-soft)\">L#32's workings (XYZ, Trini) count at the period end</td><td>Textbook only</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only a perpetual record can tell you what went missing; a periodic count quietly calls it sold.</figcaption></figure><!--/viz:fa-atc-periodic-vs-perpetual--><!--viz:fa-atc-manufacturing-cost-flow--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two flows. Product costs: materials, then work in process with direct labour and factory overhead added, then finished goods, then cost of goods sold when sold. Period costs such as selling and office costs go straight to the income statement as an expense of the period.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">How a manufacturer's costs reach the income statement</div><div style=\"font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Materials</b><br><span style=\"color:var(--ink-2);font-size:13px\">bought, + freight-in</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Work in process</b><br><span style=\"color:var(--ink-2);font-size:13px\">+ direct labour + factory overhead</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Finished goods</b><br><span style=\"color:var(--ink-2);font-size:13px\">cost of goods manufactured</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Cost of goods sold</b><br><span style=\"color:var(--ink-2);font-size:13px\">only when the goods are sold</span></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-top:8px\"><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>Period costs</b><br><span style=\"color:var(--ink-2);font-size:13px\">selling, office, administration</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>Expense of this period</b><br><span style=\"color:var(--ink-2);font-size:13px\">straight to the income statement</span></div></div><div style=\"margin-top:8px;color:var(--ink-3);font-size:13px\">Factory depreciation, power and supervision ride the top row and can sit in closing stock at year end; office salaries never do.</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Product costs wait in inventory; period costs do not. Moving a cost between the rows shifts profit between years.</figcaption></figure><!--/viz:fa-atc-manufacturing-cost-flow--><p><strong>Merchandise, materials and supplies</strong> — A merchandiser sells goods in the form it buys them; a manufacturer converts materials into finished goods and keeps three inventories (materials, work in process, finished goods); service firms have at most supplies or unbilled jobs in progress. The same paper is merchandise in a stationery shop, materials in a printing press and supplies in an office.</p><p><strong>What goes into inventory cost</strong> — Inventory is recorded at cost: invoice price plus the cost of getting the goods to the point of sale and ready for sale (freight-in, unpacking), less purchase returns and discounts. A purchase is recorded when the goods become the buyer's property, not when the order is placed. Under FOB shipping point, goods in transit already belong to the buyer.</p><p><strong>The inventory reservoir</strong> — Opening inventory plus purchases equals goods available for sale. Every rupee of that is either in closing inventory or in cost of goods sold, so whatever is assigned to one is taken from the other.<br><span style=\"font-family:var(--mono)\">COGS = Opening inventory + Net purchases − Closing inventory</span></p><p><strong>Periodic vs perpetual inventory</strong> — Periodic: count closing stock and deduce COGS, so theft, spoilage and counting errors are silently included in COGS. Perpetual: record every receipt and issue on item cards, debiting COGS as goods ship. It costs more record-keeping but helps reordering, exposes shrinkage when compared with a count, and allows monthly statements without a count.</p><p><strong>Retail method and gross-margin estimates</strong> — Without perpetual records, a store can estimate monthly cost of goods sold by applying the cost-to-retail ratio of the goods available to the month's sales (the retail method). The same gross-margin logic estimates stock lost in a fire or theft when no count is possible. Both are estimates that stand in for a physical count.<br><span style=\"font-family:var(--mono)\">COGS ≈ Sales × (Cost of goods available ÷ Retail value of goods available)</span></p><p><strong>Manufacturing cost flow</strong> — Materials used flow into work in process along with conversion costs (direct labour and production overhead such as factory power, supplies, insurance and depreciation). Completed goods move to finished goods as cost of goods manufactured, and goods shipped become COGS.<br><span style=\"font-family:var(--mono)\">COGM = Opening WIP + Materials used + Conversion costs − Closing WIP</span></p><p><strong>Product costs vs period costs</strong> — Product (inventoriable) costs are materials, direct labour and a fair share of production overhead; they sit in inventory until the goods are sold. Period costs (selling, general and administrative) are expensed when incurred. Where a firm draws the line can shift profit between periods, especially when inventory is building up.</p><p><strong>Specific identification</strong> — Each unit carries its own actual cost. It suits unique or big-ticket items (cars, jewellery, paintings), but for identical goods it lets a manager pick which units to sell and so manage COGS.</p><p><strong>Weighted average cost</strong> — Under the periodic method, one weighted-average unit cost for all goods available is applied to both units sold and units left. Under the perpetual method, a new moving average is struck after each purchase. Results fall between FIFO and LIFO.<br><span style=\"font-family:var(--mono)\">Average unit cost = Cost of goods available ÷ Units available</span></p><p><strong>FIFO</strong> — The oldest costs go to COGS and the newest costs stay in closing inventory. That usually mirrors physical flow and puts the balance sheet close to current cost, but when prices are rising it matches older, lower costs with current revenue, which raises profit.</p><p><strong>LIFO (US only)</strong> — The newest costs go to COGS, so the income statement is closer to current cost, but closing inventory can sit at prices from years ago. When stock falls, old cheap layers flow into COGS and inflate profit. US firms disclose a LIFO reserve (FIFO value minus LIFO value) and must use LIFO in their books if they use it for tax. IFRS does not allow LIFO, and AS 2 (L#32) permits only FIFO, weighted average and specific identification.</p><p><strong>Inventory turnover and days' inventory</strong> — Turnover = COGS ÷ inventory (ending or average); days' inventory = inventory ÷ COGS × 365. Turnover should be high for perishables and can be below 1 for an art gallery. A fall may mean a planned build-up or slow sales; the number alone cannot tell which. LIFO firms show higher turnover than FIFO firms for the same physical stock.<br><span style=\"font-family:var(--mono)\">Inventory turnover = COGS ÷ Inventory; Days' inventory = Inventory ÷ COGS × 365</span></p><p><strong>Method choice and gross margin %</strong> — Because COGS depends on the cost-flow method, gross margin % does too. Comparisons across firms need the same method, for example by adding back the LIFO reserve or its change to convert to a FIFO basis.</p>"
+    }
+   ]
+  },
+  {
+   "id": "fixed-assets",
+   "title": "Property, plant &amp; equipment, depreciation &amp; amortisation",
+   "tag": "Lecture 33 · after Quiz 2",
+   "lede": "AS 10 for tangible assets and AS 26 for intangibles: when a spend is an asset rather than an expense, what goes into its cost, and how that cost is spread over the useful life by straight-line or diminishing-balance depreciation, with gains and losses when the asset is sold.",
+   "topics": [
+    {
+     "t": "PPE under AS 10: recognition, and capital vs revenue expenditure",
+     "src": "L#33",
+     "h": "<p style=\"font-size:14.5px\">Lecture 33 asks one question: when a company buys a machine, a building or a press it will use for years, does the cost hit the accounts all at once, or a little each year of use? The answer is depreciation, and the standard is <strong>AS 10</strong> (property, plant and equipment). She quoted most figures in dollars and a few in rupees; the notes keep hers.</p><div class=\"def\"><b>Property, plant and equipment (AS 10)</b>: <b>tangible</b> items (you can see and touch them) held for one of three purposes: (1) production or supply of goods or services, (2) renting out to others, or (3) administrative use; <b>and</b> expected to be used for <b>more than 12 months</b>.</div><p style=\"font-size:14.5px\">Meeting a purpose and the 12-month test is still not enough to <strong>recognise</strong> the item as an asset. Two more conditions: the <strong>future economic benefits</strong> it will bring must be identifiable, and its <strong>cost must be measurable objectively</strong>, a clear, robust number. All four together make it an asset.</p><h4>Capital or revenue expenditure?</h4><p style=\"font-size:14.5px\">Every spend faces this sorting. <strong>Capital expenditure</strong> is capitalised: it becomes an asset in the balance sheet. <strong>Revenue expenditure</strong> is an expense in the profit and loss statement.</p><div class=\"scroller\"><table><thead><tr><th>Capital expenditure (balance sheet)</th><th>Revenue expenditure (profit and loss)</th></tr></thead><tbody><tr><td>Buying a new machine</td><td>Routine maintenance, such as a six-monthly service</td></tr><tr><td>An upgrade that extends an existing machine's life</td><td>Ordinary repairs</td></tr><tr><td>A major improvement, such as fitting a supercharger to a vehicle</td><td>Anything that only keeps the asset running, without extending its life or improving its quality</td></tr></tbody></table></div><div class=\"def\"><b>Her test</b>: does the spending make the asset <b>last longer, do more or work better</b>? Yes → capitalise. If it only keeps the asset running → expense.</div><h4>Her sorting exercise: Jada Company</h4><div class=\"scroller\"><table><thead><tr><th>Transaction</th><th>Type</th><th>Why</th></tr></thead><tbody><tr><td>Machine bought on a long-term note, 5,000</td><td>Capital</td><td>Used in production for well over 12 months; all the PPE conditions hold</td></tr><tr><td>Ordinary repair</td><td>Revenue</td><td>Keeps the machine running; no longer life, no better working</td></tr><tr><td>Patent</td><td>Capital</td><td>A long-lived (intangible) asset</td></tr><tr><td>Building (real estate)</td><td>Capital</td><td>Long-lived tangible asset</td></tr><tr><td>Salaries</td><td>Revenue</td><td>Pay for running the business this period</td></tr><tr><td>Routine maintenance</td><td>Revenue</td><td>Upkeep only</td></tr><tr><td>Extraordinary repair</td><td>Capital</td><td>Extends the life or capacity of the machine</td></tr></tbody></table></div><div class=\"def\"><b>From the lecture (L#33)</b>: taught after Quiz 2, so expect PPE, depreciation and amortisation in the end-term exam (offline, 4–6 December, no negative marking). Her closing takeaways: what <em>cost</em> includes (price plus directly attributable costs plus expected dismantling cost; not advertising or routine maintenance), depreciation as the spreading of the <em>depreciable amount</em> over the <em>useful life</em>, the two methods (straight line and diminishing balance) changing only the <em>timing</em> of the charge and never its total, gains and losses on disposal, and AS 26's <em>shorter-of</em> rule for the useful life of intangibles. She worked four practice problems in the session (Jada, the truck, the press sale, HANA); the exam questions are likely to look like them.</div><!--viz:fa-ppe-capital-or-revenue--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Decision flow: a spend on an asset; does it make the asset last longer, do more or work better? Yes means capital expenditure, added to the asset and depreciated; no, it only keeps it running, means revenue expenditure charged to profit and loss.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Capitalise or expense? Her one-line test</div><div style=\"font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>A spend on an asset</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">Does it make the asset <b>last longer</b>, <b>do more</b> or <b>work better</b>?</div></div><div style=\"display:flex;flex-wrap:wrap;gap:6px 8px;margin-top:8px\"><div style=\"flex:1 1 180px;padding:8px 10px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\"><b>Yes → capital expenditure</b><br><span style=\"color:var(--ink-2);font-size:13px\">add to the asset in the balance sheet, depreciate: new machine, life-extending upgrade, supercharger, extraordinary repair</span></div><div style=\"flex:1 1 180px;padding:8px 10px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>No, it only keeps it running → revenue expenditure</b><br><span style=\"color:var(--ink-2);font-size:13px\">expense in profit and loss: six-monthly service, ordinary repair, routine maintenance, salaries</span></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Size does not decide it: a large ordinary repair is still an expense, a small life-extending upgrade is still capital.</figcaption></figure><!--/viz:fa-ppe-capital-or-revenue-->"
+    },
+    {
+     "t": "Cost of an asset, and the four depreciation terms",
+     "src": "L#33",
+     "h": "<h4>What goes into the cost</h4><p style=\"font-size:14.5px\">Cost = the <strong>purchase price net of rebates and discounts</strong>, plus <strong>directly attributable costs</strong> such as delivery, installation and testing, plus the <strong>estimated cost of dismantling</strong> the asset at the end of its life. Indirect costs stay out: advertising, routine maintenance.</p><div class=\"scroller\"><table><thead><tr><th>XYZ's printing press</th><th>$</th></tr></thead><tbody><tr><td>Purchase price</td><td><span style=\"font-family:var(--mono)\">54,000</span></td></tr><tr><td>Shipping</td><td><span style=\"font-family:var(--mono)\">1,500</span></td></tr><tr><td>Set-up (installation)</td><td><span style=\"font-family:var(--mono)\">2,500</span></td></tr><tr><td><strong>Cost capitalised</strong></td><td style=\"background:var(--blue-soft)\"><strong><span style=\"font-family:var(--mono)\">58,000</span></strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\">Shipping and set-up are capital expenditure here, not expenses: they are what it took to get the press ready. <strong>Check the arithmetic yourself:</strong> 54,000 + 1,500 + 2,500 = 58,000. The LMS AI summary of this lecture prints 57,000 (and 47,000 and 9,400 downstream); the lecture's own schedule runs on 58,000, 48,000 and 9,600.</p><h4>Depreciation and its four words</h4><div class=\"def\"><b>Depreciation</b>: the <b>systematic allocation of the depreciable amount</b> of an asset <b>over its useful life</b>. Each year a part of the press's cost moves out of the balance sheet into the profit and loss statement as an expense, matching the use made of it that year.</div><div class=\"scroller\"><table><thead><tr><th>Term</th><th>Meaning</th><th>Printing press</th></tr></thead><tbody><tr><td><strong>Residual value</strong></td><td>The net amount expected from disposing of the asset at the end of its useful life (also called salvage or disposal value)</td><td><span style=\"font-family:var(--mono)\">10,000</span> after five years</td></tr><tr><td><strong>Useful life</strong></td><td>How long the company expects to use the asset</td><td><span style=\"font-family:var(--mono)\">5</span> years</td></tr><tr><td><strong>Depreciable amount</strong></td><td>Cost − residual value: the total that will be charged as depreciation, whatever the method</td><td><span style=\"font-family:var(--mono)\">58,000 − 10,000 = 48,000</span></td></tr><tr><td><strong>Carrying amount</strong></td><td>Cost − accumulated depreciation to date; the asset's figure in the balance sheet</td><td><span style=\"font-family:var(--mono)\">58,000 − 9,600 = 48,400</span> after year 1</td></tr></tbody></table></div><!--viz:fa-ppe-cost-to-charge--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three rows of boxes: price 54,000 plus shipping 1,500 plus set-up 2,500 equals cost 58,000; cost less residual value 10,000 equals depreciable amount 48,000; 48,000 over 5 years gives 9,600 a year straight line, or 40% of the opening carrying amount gives 23,200 then 13,920 under diminishing balance.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">From the invoice to the yearly charge: the printing press</div><div style=\"font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Price <b style=\"font-family:var(--mono)\">54,000</b></div><span style=\"color:var(--ink-3)\">+</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Shipping <b style=\"font-family:var(--mono)\">1,500</b></div><span style=\"color:var(--ink-3)\">+</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Set-up <b style=\"font-family:var(--mono)\">2,500</b></div><span style=\"color:var(--ink-3)\">=</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">Cost <b style=\"font-family:var(--mono)\">58,000</b></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-top:8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Cost <b style=\"font-family:var(--mono)\">58,000</b></div><span style=\"color:var(--ink-3)\">−</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Residual value <b style=\"font-family:var(--mono)\">10,000</b></div><span style=\"color:var(--ink-3)\">=</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">Depreciable amount <b style=\"font-family:var(--mono)\">48,000</b></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-top:8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b style=\"font-family:var(--mono)\">48,000</b> ÷ 5 years</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\">Straight line <b style=\"font-family:var(--mono)\">9,600</b> a year</div><span style=\"color:var(--ink-3)\">or</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\">40% of opening carrying amount: <b style=\"font-family:var(--mono)\">23,200</b>, then <b style=\"font-family:var(--mono)\">13,920</b> …</div></div><div style=\"margin-top:8px;color:var(--ink-3);font-size:13px\">Carrying amount after year 1: 58,000 − 9,600 = 48,400 (straight line) or 58,000 − 23,200 = 34,800 (diminishing balance).</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Shipping and set-up are capitalised, the residual value is never depreciated, and the method only decides how fast the 48,000 is charged.</figcaption></figure><!--/viz:fa-ppe-cost-to-charge-->"
+    },
+    {
+     "t": "Straight-line vs diminishing balance: the printing-press schedules",
+     "src": "L#33",
+     "h": "<p style=\"font-size:14.5px\">AS 10 names two ways to spread the $48,000 across the five years. The <strong>straight-line method</strong> charges the same amount every year: (cost − residual value) ÷ useful life. The <strong>diminishing-balance method</strong> (also written-down value) applies a <strong>fixed rate to the opening carrying amount</strong> each year; the rate stays the same, the base shrinks, so the charge falls year by year.</p><h4>Straight line: 48,000 ÷ 5 = 9,600 a year</h4><div class=\"scroller\"><table><thead><tr><th>Year</th><th>Depreciation</th><th>Accumulated depreciation</th><th>Carrying amount</th></tr></thead><tbody><tr><td>0</td><td></td><td></td><td><span style=\"font-family:var(--mono)\">58,000</span></td></tr><tr><td>1</td><td><span style=\"font-family:var(--mono)\">9,600</span></td><td><span style=\"font-family:var(--mono)\">9,600</span></td><td><span style=\"font-family:var(--mono)\">48,400</span></td></tr><tr><td>2</td><td><span style=\"font-family:var(--mono)\">9,600</span></td><td><span style=\"font-family:var(--mono)\">19,200</span></td><td><span style=\"font-family:var(--mono)\">38,800</span></td></tr><tr><td>3</td><td><span style=\"font-family:var(--mono)\">9,600</span></td><td><span style=\"font-family:var(--mono)\">28,800</span></td><td><span style=\"font-family:var(--mono)\">29,200</span></td></tr><tr><td>4</td><td><span style=\"font-family:var(--mono)\">9,600</span></td><td><span style=\"font-family:var(--mono)\">38,400</span></td><td><span style=\"font-family:var(--mono)\">19,600</span></td></tr><tr><td>5</td><td><span style=\"font-family:var(--mono)\">9,600</span></td><td><span style=\"font-family:var(--mono)\">48,000</span></td><td style=\"background:var(--good-soft)\"><span style=\"font-family:var(--mono)\">10,000</span></td></tr></tbody></table></div><p style=\"font-size:14.5px\">After five years the accumulated depreciation is the whole 48,000 and the carrying amount is exactly the 10,000 residual value: the depreciable amount has been spread equally.</p><h4>Diminishing balance at 40%</h4><div class=\"scroller\"><table><thead><tr><th>Year</th><th>Opening carrying amount</th><th>Depreciation at 40%</th><th>Closing carrying amount</th></tr></thead><tbody><tr><td>1</td><td><span style=\"font-family:var(--mono)\">58,000</span></td><td style=\"background:var(--blue-soft)\"><span style=\"font-family:var(--mono)\">23,200</span></td><td><span style=\"font-family:var(--mono)\">34,800</span></td></tr><tr><td>2</td><td><span style=\"font-family:var(--mono)\">34,800</span></td><td style=\"background:var(--blue-soft)\"><span style=\"font-family:var(--mono)\">13,920</span></td><td><span style=\"font-family:var(--mono)\">20,880</span></td></tr><tr><td>3</td><td><span style=\"font-family:var(--mono)\">20,880</span></td><td><span style=\"font-family:var(--mono)\">8,352</span></td><td><span style=\"font-family:var(--mono)\">12,528</span></td></tr></tbody></table></div><p style=\"font-size:14.5px\">She computed years 1 and 2 (23,200 and 13,920); year 3 follows the same rule. Note what a 40% rate does: year 1 charges 23,200 against straight line's 9,600, and by year 4 the carrying amount (7,516.8) would already be below the 10,000 residual value, so in practice the rate has to suit the asset's life and residual value.</p><div class=\"def\"><b>Method changes timing, not total.</b> Under any method the press is depreciated by its depreciable amount, 48,000, over its life. Straight line takes 9,600 a year; diminishing balance front-loads the charge and tapers off. Profit is lower in the early years under diminishing balance and higher later, but the five-year total is the same.</div><h4>Her practice: Mentalo's delivery truck</h4><p style=\"font-size:14.5px\">Cost $15,000, residual value $3,000, useful life 8 years, straight line. Depreciable amount = 15,000 − 3,000 = 12,000; year-1 depreciation = 12,000 ÷ 8 = <strong>$1,500</strong>. Forgetting the residual value gives 1,875, which is wrong.</p><!--viz:fa-ppe-slm-vs-wdv--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Line chart, years 0 to 5 on the x-axis and carrying amount up to 60,000 on the y-axis. The straight-line series falls in equal steps from 58,000 to 10,000. The 40% diminishing-balance series falls steeply to 34,800, then 20,880, 12,528, and goes below the dashed residual-value line of 10,000 in year 4, ending near 4,510.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Carrying amount of the press under the two methods</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 200\" role=\"img\" aria-label=\"Line chart of the printing press carrying amount over five years: straight line falls evenly from 58,000 to the 10,000 residual value; 40% diminishing balance drops to 34,800 after year 1 and tapers to about 4,500 by year 5, crossing below the residual value in year 4.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M46,120.7 L380,120.7\" style=\"stroke:var(--rule);stroke-width:1;fill:none\"/><text x=\"40\" y=\"125.2\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">20k</text><path d=\"M46,71.3 L380,71.3\" style=\"stroke:var(--rule);stroke-width:1;fill:none\"/><text x=\"40\" y=\"75.8\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">40k</text><path d=\"M46,22.0 L380,22.0\" style=\"stroke:var(--rule);stroke-width:1;fill:none\"/><text x=\"40\" y=\"26.5\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">60k</text><path d=\"M46,170 L380,170\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M46,16 L46,170\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M46,145.3 L380,145.3\" style=\"stroke:var(--ink-3);stroke-width:1.5;stroke-dasharray:5 4;fill:none\"/><text x=\"54\" y=\"139.3\" style=\"fill:var(--ink-3);font-size:13px\">residual value 10,000</text><path d=\"M46.0,26.9 L112.8,50.6 L179.6,74.3 L246.4,98.0 L313.2,121.7 L380.0,145.3\" style=\"fill:none;stroke:var(--blue);stroke-width:2\"/><circle cx=\"46.0\" cy=\"26.9\" r=\"3.2\" style=\"fill:var(--blue)\"/><circle cx=\"112.8\" cy=\"50.6\" r=\"3.2\" style=\"fill:var(--blue)\"/><circle cx=\"179.6\" cy=\"74.3\" r=\"3.2\" style=\"fill:var(--blue)\"/><circle cx=\"246.4\" cy=\"98.0\" r=\"3.2\" style=\"fill:var(--blue)\"/><circle cx=\"313.2\" cy=\"121.7\" r=\"3.2\" style=\"fill:var(--blue)\"/><circle cx=\"380.0\" cy=\"145.3\" r=\"3.2\" style=\"fill:var(--blue)\"/><path d=\"M46.0,26.9 L112.8,84.2 L179.6,118.5 L246.4,139.1 L313.2,151.5 L380.0,158.9\" style=\"fill:none;stroke:var(--clay);stroke-width:2\"/><circle cx=\"46.0\" cy=\"26.9\" r=\"3.2\" style=\"fill:var(--clay)\"/><circle cx=\"112.8\" cy=\"84.2\" r=\"3.2\" style=\"fill:var(--clay)\"/><circle cx=\"179.6\" cy=\"118.5\" r=\"3.2\" style=\"fill:var(--clay)\"/><circle cx=\"246.4\" cy=\"139.1\" r=\"3.2\" style=\"fill:var(--clay)\"/><circle cx=\"313.2\" cy=\"151.5\" r=\"3.2\" style=\"fill:var(--clay)\"/><circle cx=\"380.0\" cy=\"158.9\" r=\"3.2\" style=\"fill:var(--clay)\"/><text x=\"386\" y=\"149.8\" style=\"fill:var(--ink);font-size:13px\">10,000</text><text x=\"386\" y=\"169.9\" style=\"fill:var(--ink);font-size:13px\">4,510</text><path d=\"M240,30 L260,30\" style=\"stroke:var(--blue);stroke-width:2;fill:none\"/><text x=\"266\" y=\"34.5\" style=\"fill:var(--ink);font-size:13px\">straight line</text><path d=\"M240,50 L260,50\" style=\"stroke:var(--clay);stroke-width:2;fill:none\"/><text x=\"266\" y=\"54.5\" style=\"fill:var(--ink);font-size:13px\">diminishing balance 40%</text><text x=\"46.0\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">0</text><text x=\"112.8\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">1</text><text x=\"179.6\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">2</text><text x=\"246.4\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">3</text><text x=\"313.2\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">4</text><text x=\"380.0\" y=\"188\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">5</text><text x=\"213\" y=\"200\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">end of year</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Both start at 58,000; the diminishing-balance charge is biggest in year 1 and shrinks every year, and at 40% it overshoots the residual value.</figcaption></figure><!--/viz:fa-ppe-slm-vs-wdv-->"
+    },
+    {
+     "t": "Disposal gains and losses, and amortising intangibles under AS 26",
+     "src": "L#33",
+     "h": "<h4>Selling the press at the end of year 3</h4><p style=\"font-size:14.5px\">Straight line, 9,600 a year, so after three years accumulated depreciation is 28,800 and the <strong>carrying amount is 58,000 − 28,800 = 29,200</strong>. Compare the sale price with that figure:</p><div class=\"scroller\"><table><thead><tr><th>Sold for</th><th>Carrying amount</th><th>Result</th></tr></thead><tbody><tr><td><span style=\"font-family:var(--mono)\">31,000</span></td><td><span style=\"font-family:var(--mono)\">29,200</span></td><td style=\"background:var(--good-soft)\"><strong>Gain on disposal <span style=\"font-family:var(--mono)\">1,800</span></strong>: more was received than the asset's book figure</td></tr><tr><td><span style=\"font-family:var(--mono)\">27,100</span></td><td><span style=\"font-family:var(--mono)\">29,200</span></td><td style=\"background:var(--bad-soft)\"><strong>Loss on disposal <span style=\"font-family:var(--mono)\">2,100</span></strong>: less was received than the book figure</td></tr></tbody></table></div><p style=\"font-size:14.5px\">(The auto-transcript hears the loss as \"20,100\"; 29,200 − 27,100 is 2,100.)</p><h4>Intangible assets: AS 26 and amortisation</h4><p style=\"font-size:14.5px\">Patents, copyrights and the like have no physical form. The idea is the same as depreciation, but the word is <strong>amortisation</strong> and the standard is <strong>AS 26</strong>. Her three rules:</p><ol><li><strong>Allocate systematically</strong> the depreciable amount over the best estimate of the useful life, and the useful life <strong>starts when the asset is available for use</strong>, not when the cheque was paid.</li><li><strong>Rebuttable presumption</strong>: the useful life does not exceed <strong>10 years</strong>. A company that wants to amortise over longer must justify it.</li><li><strong>Shorter of</strong> the period set by legal factors and the period set by economic factors or expected use. Legal life 20 years but economic life 10 → amortise over 10.</li></ol><p style=\"font-size:14.5px\">Her quick example: a patent costing $10,000 with a 20-year life is charged $500 a year (10,000 ÷ 20); under rule 2, a life beyond 10 years is the case that needs justifying.</p><h4>Her practice: HANA Unlimited buys two intangibles</h4><div class=\"scroller\"><table><thead><tr><th>Asset</th><th>Cost</th><th>Legal life</th><th>Expected use</th><th>Useful life (shorter)</th><th>Amortisation a year</th></tr></thead><tbody><tr><td>Patent</td><td><span style=\"font-family:var(--mono)\">48,000</span></td><td>12 years</td><td>6 years</td><td>6 years</td><td style=\"background:var(--blue-soft)\"><strong><span style=\"font-family:var(--mono)\">8,000</span></strong></td></tr><tr><td>Copyright</td><td><span style=\"font-family:var(--mono)\">70,000</span></td><td>30 years</td><td>10 years</td><td>10 years</td><td style=\"background:var(--blue-soft)\"><strong><span style=\"font-family:var(--mono)\">7,000</span></strong></td></tr></tbody></table></div><p style=\"font-size:14.5px\">The transcript turns \"12 years\" and \"6 years\" into \"12,000\" and \"six months\"; the divisions only work with years. Tangible assets are <em>depreciated</em>; intangible assets are <em>amortised</em>; the arithmetic is the same.</p>"
+    },
+    {
+     "t": "Textbook: Long-Lived Nonmonetary Assets and Their Amortization",
+     "src": "Anthony 13e ch7",
+     "h": "<!--viz:fa-atc-asset-lifecycle--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: capitalise the cost, depreciate each year by debiting Depreciation and crediting Accumulated Depreciation, carry the net book value, then dispose by removing cost and accumulated depreciation; proceeds above net book value give a gain, below it a loss.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">A long-lived asset from purchase to disposal</div><div style=\"font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Capitalise</b><br><span style=\"color:var(--ink-2);font-size:13px\">cost = everything to make it ready for use</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Depreciate each year</b><br><span style=\"color:var(--ink-2);font-size:13px\">Dr Depreciation · Cr Accumulated Depreciation</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Net book value</b><br><span style=\"color:var(--ink-2);font-size:13px\">cost − accumulated depreciation, not market value</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Dispose</b><br><span style=\"color:var(--ink-2);font-size:13px\">remove cost and accumulated depreciation</span></div></div><div style=\"display:flex;flex-wrap:wrap;gap:6px 8px;margin-top:8px\"><div style=\"flex:1 1 160px;padding:8px 10px;border:1px solid var(--good);border-radius:4px;background:var(--good-soft)\"><b>Proceeds &gt; net book value → gain</b><br><span style=\"color:var(--ink-2);font-size:13px\">past depreciation was too high</span></div><div style=\"flex:1 1 160px;padding:8px 10px;border:1px solid var(--bad);border-radius:4px;background:var(--bad-soft)\"><b>Proceeds &lt; net book value → loss</b><br><span style=\"color:var(--ink-2);font-size:13px\">past depreciation was too low</span></div></div><div style=\"margin-top:8px;color:var(--ink-3);font-size:13px\">Maintenance along the way is expensed; a betterment is added to cost and depreciated with it.</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Accumulated depreciation is a deduction from cost, never a pile of cash; a gain or loss on sale is the past estimate correcting itself.</figcaption></figure><!--/viz:fa-atc-asset-lifecycle--><!--viz:fa-atc-three-methods--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Grouped bars for years 1 to 5. Straight line: 2.1 lakh each year. Sum-of-years'-digits: 3.5, 2.8, 2.1, 1.4 and 0.7 lakh. Double-declining-balance at 40%: 4.6, 2.76, 1.66, 0.99 and 0.49 lakh, the last capped so the book value ends at the residual value.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Yearly charge under three methods (Narmada loom, net cost ₹10.5 lakh)</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 190\" role=\"img\" aria-label=\"Grouped bar chart of the yearly depreciation charge on a loom with a net cost of 10.5 lakh over five years: straight line is 2.1 lakh every year; sum-of-years'-digits falls from 3.5 lakh to 0.7 lakh; double-declining-balance falls from 4.6 lakh to 0.49 lakh.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M46,133.2 L420,133.2\" style=\"stroke:var(--rule);stroke-width:1;fill:none\"/><text x=\"40\" y=\"137.7\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">1 L</text><path d=\"M46,106.4 L420,106.4\" style=\"stroke:var(--rule);stroke-width:1;fill:none\"/><text x=\"40\" y=\"110.9\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">2 L</text><path d=\"M46,79.6 L420,79.6\" style=\"stroke:var(--rule);stroke-width:1;fill:none\"/><text x=\"40\" y=\"84.1\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">3 L</text><path d=\"M46,52.8 L420,52.8\" style=\"stroke:var(--rule);stroke-width:1;fill:none\"/><text x=\"40\" y=\"57.3\" text-anchor=\"end\" style=\"fill:var(--ink-3);font-size:13px\">4 L</text><rect x=\"54.0\" y=\"103.7\" width=\"17\" height=\"56.3\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"74.0\" y=\"66.2\" width=\"17\" height=\"93.8\" style=\"fill:var(--clay);stroke:none\"/><rect x=\"94.0\" y=\"36.7\" width=\"17\" height=\"123.3\" style=\"fill:var(--ink-3);stroke:none\"/><rect x=\"128.8\" y=\"103.7\" width=\"17\" height=\"56.3\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"148.8\" y=\"85.0\" width=\"17\" height=\"75.0\" style=\"fill:var(--clay);stroke:none\"/><rect x=\"168.8\" y=\"86.0\" width=\"17\" height=\"74.0\" style=\"fill:var(--ink-3);stroke:none\"/><rect x=\"203.6\" y=\"103.7\" width=\"17\" height=\"56.3\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"223.6\" y=\"103.7\" width=\"17\" height=\"56.3\" style=\"fill:var(--clay);stroke:none\"/><rect x=\"243.6\" y=\"115.6\" width=\"17\" height=\"44.4\" style=\"fill:var(--ink-3);stroke:none\"/><rect x=\"278.4\" y=\"103.7\" width=\"17\" height=\"56.3\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"298.4\" y=\"122.5\" width=\"17\" height=\"37.5\" style=\"fill:var(--clay);stroke:none\"/><rect x=\"318.4\" y=\"133.4\" width=\"17\" height=\"26.6\" style=\"fill:var(--ink-3);stroke:none\"/><rect x=\"353.2\" y=\"103.7\" width=\"17\" height=\"56.3\" style=\"fill:var(--blue);stroke:none\"/><rect x=\"373.2\" y=\"141.2\" width=\"17\" height=\"18.8\" style=\"fill:var(--clay);stroke:none\"/><rect x=\"393.2\" y=\"146.9\" width=\"17\" height=\"13.1\" style=\"fill:var(--ink-3);stroke:none\"/><path d=\"M46,160 L420,160\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><text x=\"83.4\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">Year 1</text><text x=\"158.2\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">Year 2</text><text x=\"233.0\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">Year 3</text><text x=\"307.8\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">Year 4</text><text x=\"382.6\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">Year 5</text><rect x=\"250\" y=\"26\" width=\"12\" height=\"12\" style=\"fill:var(--blue);stroke:none\"/><text x=\"267\" y=\"36\" style=\"fill:var(--ink);font-size:13px\">straight line</text><rect x=\"250\" y=\"44\" width=\"12\" height=\"12\" style=\"fill:var(--clay);stroke:none\"/><text x=\"267\" y=\"54\" style=\"fill:var(--ink);font-size:13px\">sum-of-years'-digits</text><rect x=\"250\" y=\"62\" width=\"12\" height=\"12\" style=\"fill:var(--ink-3);stroke:none\"/><text x=\"267\" y=\"72\" style=\"fill:var(--ink);font-size:13px\">double-declining-balance</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">All three bars total ₹10.5 lakh; the accelerated methods only move the expense into the early years, as L#33 said of diminishing balance.</figcaption></figure><!--/viz:fa-atc-three-methods--><!--viz:fa-atc-basket-split--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table splitting a 3 crore purchase between land appraised at 1.2 crore and a building appraised at 2.4 crore. Proportional split: land 1 crore, building 2 crore. The wrong method gives land its full appraisal of 1.2 crore and the building the remaining 1.8 crore.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Splitting a ₹3 crore land-and-building purchase</div><div class=\"scroller\"><table><thead><tr><th></th><th>Appraised value</th><th>Share</th><th style=\"background:var(--good-soft)\">Right: proportional</th><th style=\"background:var(--bad-soft)\">Wrong: one at appraisal, other gets the rest</th></tr></thead><tbody><tr><td>Land (not depreciated)</td><td><span style=\"font-family:var(--mono)\">1.2 cr</span></td><td><span style=\"font-family:var(--mono)\">1.2 ÷ 3.6 = ⅓</span></td><td><span style=\"font-family:var(--mono)\">1.0 cr</span></td><td><span style=\"font-family:var(--mono)\">1.2 cr</span></td></tr><tr><td>Building (depreciated)</td><td><span style=\"font-family:var(--mono)\">2.4 cr</span></td><td><span style=\"font-family:var(--mono)\">2.4 ÷ 3.6 = ⅔</span></td><td><span style=\"font-family:var(--mono)\">2.0 cr</span></td><td><span style=\"font-family:var(--mono)\">1.8 cr</span></td></tr><tr><td>Total</td><td><span style=\"font-family:var(--mono)\">3.6 cr</span></td><td></td><td><span style=\"font-family:var(--mono)\">3.0 cr</span></td><td><span style=\"font-family:var(--mono)\">3.0 cr</span></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The appraisals total more than the price paid, so each asset takes its share of the actual price; the building's share sets the depreciation base.</figcaption></figure><!--/viz:fa-atc-basket-split--><p><strong>Capitalise vs expense</strong> — An expenditure whose benefits extend beyond the current period is capitalised as an asset and expensed gradually; one that benefits only this period is expensed now. All costs become expenses eventually; capital assets just do so over several years, like a long-lived prepaid expense.</p><p><strong>Types of long-lived assets and their write-off names</strong> — Tangible: land (not amortised), plant and equipment (depreciation), natural resources (depletion). Intangible: limited-life intangibles such as patents and leasehold improvements (amortisation); goodwill and indefinite-life intangibles (no amortisation, but tested for impairment); R&amp;D (not capitalised under US GAAP).</p><p><strong>What goes into the cost of PPE</strong> — Cost includes every expenditure needed to make the asset ready for its intended use: purchase price, non-recoverable taxes, freight, installation; for land also brokerage, legal fees, grading and demolition of old structures. Self-built assets include materials, labour, a fair share of overhead and interest during construction. Assets paid for with shares are recorded at the fair value of what was given, and donated assets at fair value.</p><p><strong>Maintenance, betterments and low-cost items</strong> — Repairs and maintenance keep an asset as good as when bought and are expensed. Betterments make it better than when bought or extend its life, and are capitalised. Replacing a component may be either, depending on how the asset unit is defined. Cheap items like calculators are expensed under materiality, but the initial outfit of small items for a new facility is capitalised.</p><p><strong>Basket purchases</strong> — When land and building (or assets with different lives) are bought for one price, the price is split in proportion to their appraised values. Land must be separated because it is not depreciated. Using one item's appraisal and giving the rest of the price to the other is wrong.</p><p><strong>Three judgements behind depreciation</strong> — Service life (which may be shorter than physical life because of obsolescence or a policy of early replacement), residual value (net cost = cost − residual) and method. Because all three are estimates, the precise-looking depreciation figure is only an approximation.<br><span style=\"font-family:var(--mono)\">Straight-line depreciation = (Cost − Residual value) ÷ Service life</span></p><p><strong>Straight-line and units-of-production</strong> — Straight-line assumes a level stream of service and charges equal amounts each year; the rate is the reciprocal of the life. Units-of-production treats the asset as a stock of service units (km, machine-hours, tonnes) and charges net cost per unit times units used.<br><span style=\"font-family:var(--mono)\">Units-of-production rate = (Cost − Residual) ÷ Total estimated units</span></p><p><strong>Accelerated methods</strong> — When benefits are greater early in life, accelerated methods write off about two-thirds of cost in the first half of life. Double-declining-balance applies twice the straight-line rate to opening net book value, ignoring residual value in the base but never going below it, and usually switches to straight-line later. Sum-of-years'-digits applies n/SYD, (n−1)/SYD, … to net cost. L#33's diminishing-balance method is the same idea with a rate the company picks (40% in her example).<br><span style=\"font-family:var(--mono)\">DDB rate = 2 ÷ n; SYD = n(n + 1) ÷ 2</span></p><p><strong>Recording depreciation and changes in estimates</strong> — Depreciation Dr; Accumulated Depreciation Cr, so cost and accumulated depreciation are both disclosed and net book value is the difference. A fully depreciated asset still in use stays on the books at cost with equal accumulated depreciation. If the life estimate changes, the remaining book value is spread over the new remaining life; Anthony notes firms do not always bother.</p><p><strong>Disposals and gains or losses</strong> — On sale, remove both cost and accumulated depreciation; any difference between proceeds and net book value is a gain or loss in this period's income, showing that past depreciation was over- or under-estimated. Under group depreciation, no gain or loss is recognised on individual items.<br><span style=\"font-family:var(--mono)\">Gain (loss) = Proceeds − (Cost − Accumulated depreciation)</span></p><p><strong>Impairment</strong> — Assets stay at cost less depreciation regardless of market value, except when impaired. Under US GAAP, an asset whose future cash flows are below book value is written down to fair value (a two-step test). Anthony notes that under IFRS it is written down in one step to its recoverable amount, the higher of fair value less costs to sell and value in use. L#33 did not cover impairment.</p><p><strong>Allocation, not valuation</strong> — Depreciation allocates original cost to the periods that benefit. It does not track market value, which may even rise, and it does not create a fund: accumulated depreciation is not cash, and setting money aside for replacement (funding depreciation) is a separate financing decision.</p><p><strong>Natural resources: depletion</strong> — The cost of a mine or oil field is written off by units of production as the resource is extracted. Exploration costs may be capitalised entirely (full cost) or only for successful sites, with dry holes expensed (successful efforts). Accretion, such as timber growing or wine ageing, is not recognised as income.<br><span style=\"font-family:var(--mono)\">Depletion per unit = Cost ÷ Estimated recoverable units</span></p><p><strong>Intangibles, goodwill and leasehold improvements</strong> — Bought intangibles are capitalised; internally developed ones are generally expensed. Limited-life intangibles are amortised (usually straight-line, credited directly to the asset) over the shorter of legal and useful life. Goodwill and indefinite-life intangibles are not amortised but tested for impairment. Leasehold improvements are amortised over the lease term (including likely renewals), never over a longer physical life.</p><p><strong>Research and development</strong> — US GAAP expenses all R&amp;D as incurred because future benefits are too uncertain to measure objectively, so objectivity and conservatism win over matching. Software for sale is capitalised once technological feasibility is reached. IFRS, Anthony notes, expenses research but capitalise development costs once recovery from future sales is expected.</p><p><strong>Reading fixed-asset disclosures</strong> — Rough analyst tools: average age of assets ≈ accumulated depreciation ÷ annual depreciation; average depreciation period ≈ gross cost ÷ annual depreciation. Tax depreciation (the US MACRS tables in Anthony) follows separate rules and is not a guide to useful life.<br><span style=\"font-family:var(--mono)\">Average age ≈ Accumulated depreciation ÷ Depreciation expense</span></p>"
     }
    ]
   }
@@ -772,6 +860,14 @@ HUB.addCourse({
   {
    "name": "Capital market ratios",
    "unit": "analysis"
+  },
+  {
+   "name": "Inventory",
+   "unit": "inventory"
+  },
+  {
+   "name": "Depreciation & PPE",
+   "unit": "fixed-assets"
   }
  ],
  "traps": [
@@ -1759,6 +1855,188 @@ HUB.addCourse({
    "p": "A low P/E or P/B can mean weak prospects or underpricing; a high P/E shows confidence in growth. Read market ratios with the financial statements and the investor's risk appetite (beta).",
    "f": "context before price",
    "lec": 31
+  },
+  {
+   "id": "fa-t0145",
+   "h": "LIFO is a US GAAP method; AS 2 does not allow it",
+   "p": "Anthony presents LIFO as acceptable under US GAAP and notes that IFRS bans it. L#32 said AS 2 permits FIFO and weighted average (with specific identification for items tracked individually). Any LIFO answer must be framed as US practice.",
+   "f": "LIFO: US only",
+   "bk": "Anthony 13e ch6"
+  },
+  {
+   "id": "fa-t0146",
+   "h": "Market in lower of cost or market means different things",
+   "p": "Anthony's US rule: market = replacement cost, capped at NRV and floored at NRV less a normal profit. L#32: compare cost with net realisable value (selling price less selling and administrative expenses), nothing else.",
+   "f": "AS 2: cost vs NRV",
+   "bk": "Anthony 13e ch6"
+  },
+  {
+   "id": "fa-t0147",
+   "h": "The periodic method buries theft and spoilage in COGS",
+   "p": "Anything not counted is assumed sold. Only a perpetual record compared with a count separates shrinkage.",
+   "f": "missing = sold (periodic)",
+   "bk": "Anthony 13e ch6"
+  },
+  {
+   "id": "fa-t0148",
+   "h": "Factory depreciation, power and supervision are product costs, not period expenses",
+   "p": "They flow through work in process and finished goods and reach the income statement only when the goods are sold. Office and selling costs are period costs.",
+   "f": "factory → inventory first",
+   "bk": "Anthony 13e ch6"
+  },
+  {
+   "id": "fa-t0149",
+   "h": "When prices rise, FIFO gives the higher profit and the higher closing stock",
+   "p": "Older, cheaper costs go to COGS. Weighted average lies between; LIFO (US only) gives the lowest profit and the oldest, lowest inventory figure.",
+   "f": "rising prices: FIFO high",
+   "bk": "Anthony 13e ch6"
+  },
+  {
+   "id": "fa-t0150",
+   "h": "Carriage inwards is part of inventory cost; carriage outwards is not",
+   "p": "Bringing goods in is part of making them ready for sale. Delivering goods to customers is a selling (period) expense.",
+   "f": "in → stock, out → selling",
+   "bk": "Anthony 13e ch6"
+  },
+  {
+   "id": "fa-t0151",
+   "h": "Apply lower of cost or market item by item",
+   "p": "Netting gains on some items against losses on others hides write-downs. Compare cost and market for each item (or each group of similar items).",
+   "f": "item by item",
+   "bk": "Anthony 13e ch6"
+  },
+  {
+   "id": "fa-t0152",
+   "h": "Depreciation is allocation, not valuation",
+   "p": "Book value is the part of cost not yet expensed. A building's market value can rise while it is being depreciated, and an insurance cover pegged to book value says nothing about replacement cost.",
+   "f": "allocate cost, don't value",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-t0153",
+   "h": "Accumulated depreciation is not cash set aside",
+   "p": "It is a contra-asset. Money for replacement exists only if it was deliberately invested (funding depreciation); the term reserve (or provision) for depreciation misleads people.",
+   "f": "no fund, just a deduction",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-t0154",
+   "h": "Double-declining-balance ignores residual value in the base but still stops at it",
+   "p": "Straight-line and sum-of-years'-digits apply their rates to cost − residual. Declining-balance applies its rate to opening book value, and the final year's charge is capped so book value ends at residual.",
+   "f": "DDB: book value base",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-t0155",
+   "h": "Land in a land-and-building purchase must be split off using relative appraised values",
+   "p": "Land is not depreciated. Allocate the actual price in proportion to appraisals, not one item at its appraisal and the other at the remainder.",
+   "f": "proportion, not remainder",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-t0156",
+   "h": "Leasehold improvements are amortised over the lease term, not their physical life",
+   "p": "The improvements revert to the landlord when the lease ends. Include a renewal period only if renewal is likely.",
+   "f": "lease term caps life",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-t0157",
+   "h": "Under IFRS development costs can be capitalised; under US GAAP all R&D is expensed",
+   "p": "Anthony's FASB rule expenses R&D because the benefits are too uncertain to measure. He notes that IFRS expenses research but capitalises development once its criteria (including expected recovery) are met.",
+   "f": "research out, development in (IFRS)",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-t0158",
+   "h": "Repairs are not capitalised just because they are large",
+   "p": "An overhaul that only restores original condition is maintenance (an expense); a betterment improves the asset or extends its life. WorldCom's fraud capitalised operating costs to inflate profit.",
+   "f": "improve = capital, restore = expense",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-t0159",
+   "h": "Goodwill is not amortised",
+   "p": "Under US GAAP, as Anthony describes, purchased goodwill and indefinite-life intangibles are tested for impairment each year instead of being written off over a life. L#33's AS 26 rules were about limited-life intangibles such as patents and copyrights.",
+   "f": "impair, don't amortise",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-t0160",
+   "h": "The weighted average unit cost is not the simple average of the three prices",
+   "p": "(21 + 27 + 33) ÷ 3 = 27, but the lecture's average weights each price by its units: 16,155 ÷ 585 = $27.62. Always divide total cost by total units.",
+   "f": "weight by units",
+   "lec": 32
+  },
+  {
+   "id": "fa-t0161",
+   "h": "Storage costs stay out of inventory cost, even for stock bought for the whole year",
+   "p": "AS 2 cost stops at bringing the goods to their present location and condition. Warehouse rent, abnormal waste, selling and administrative costs are expenses of the period.",
+   "f": "warehouse rent = expense",
+   "lec": 32
+  },
+  {
+   "id": "fa-t0162",
+   "h": "Cost of goods sold is goods available minus closing inventory, not revenue minus closing inventory",
+   "p": "In the Trini working she called the $1,12,760 revenue; it is the cost of goods available for sale, which is the right base: 1,12,760 − 24,300 = 88,460. Revenue minus stock is not a meaningful figure.",
+   "f": "available − closing = COGS",
+   "lec": 32
+  },
+  {
+   "id": "fa-t0163",
+   "h": "FIFO and weighted average split the same total cost; neither creates or destroys cost",
+   "p": "Both methods divide the $16,155 between COGS and closing inventory: 7,200 + 8,955 and 8,283 + 7,872. The gross margins differ only because the split differs.",
+   "f": "same pool, different split",
+   "lec": 32
+  },
+  {
+   "id": "fa-t0164",
+   "h": "A raw material whose price has fallen is not written down if the finished goods still sell at or above cost",
+   "p": "Her MCQ: replacement cost below cost, finished product expected to sell at or above cost, so the raw material stays at cost. The write-down test looks at the finished product, not the input.",
+   "f": "test the finished good",
+   "lec": 32
+  },
+  {
+   "id": "fa-t0165",
+   "h": "54,000 + 1,500 + 2,500 is 58,000, not 57,000",
+   "p": "The LMS AI summary of L#33 prints a press cost of 57,000, a depreciable amount of 47,000 and 9,400 a year. The lecture's schedule runs on 58,000, 48,000 and 9,600, which is what the arithmetic gives. Add the numbers yourself in the exam.",
+   "f": "add it: 58,000",
+   "lec": 33
+  },
+  {
+   "id": "fa-t0166",
+   "h": "Diminishing balance applies the rate to the opening carrying amount, not to cost every year",
+   "p": "40% of 58,000 = 23,200 in year 1, then 40% of 34,800 = 13,920 in year 2. Charging 23,200 every year would be a straight line at a 40% rate, which is not the method.",
+   "f": "rate × shrinking base",
+   "lec": 33
+  },
+  {
+   "id": "fa-t0167",
+   "h": "A depreciation method changes the timing of the charge, not its total",
+   "p": "Under any method the press is written down by its depreciable amount, 48,000, over its life: 9,600 × 5 under straight line, front-loaded under diminishing balance. Early-year profit differs; the five-year total does not.",
+   "f": "same total, different years",
+   "lec": 33
+  },
+  {
+   "id": "fa-t0168",
+   "h": "Expected dismantling cost is part of an asset's cost; advertising and routine maintenance are not",
+   "p": "Her cost list: price net of rebates, plus delivery, installation and testing, plus the estimated cost of dismantling at the end of life. Indirect costs and upkeep are expenses.",
+   "f": "dismantling in, upkeep out",
+   "lec": 33
+  },
+  {
+   "id": "fa-t0169",
+   "h": "Amortisation of an intangible starts when it is available for use, not when it is paid for",
+   "p": "AS 26's first rule counts the useful life from the point the asset can be used. The date of the cheque is irrelevant.",
+   "f": "available for use, not paid",
+   "lec": 33
+  },
+  {
+   "id": "fa-t0170",
+   "h": "The useful life of an intangible is the shorter of its legal life and its expected use",
+   "p": "HANA's patent: legal life 12 years, expected use 6 → amortise 48,000 over 6 years = 8,000 a year, not 4,000. The copyright with 30 legal years and 10 expected goes over 10.",
+   "f": "shorter of legal and use",
+   "lec": 33
   }
  ],
  "defs": [
@@ -3050,6 +3328,294 @@ HUB.addCourse({
    "term": "Beta",
    "html": "<b>Beta</b>: how sensitive a share's price is to movements in the overall market; a lower beta means lower volatility and risk.",
    "lec": 31
+  },
+  {
+   "id": "fa-d0164",
+   "unit": "inventory",
+   "topic": "Inventory",
+   "term": "Goods available for sale",
+   "html": "<b>Goods available for sale</b> = opening inventory + net purchases. It is split between <b>cost of goods sold</b> and <b>closing inventory</b>.",
+   "bk": "Anthony 13e ch6"
+  },
+  {
+   "id": "fa-d0165",
+   "unit": "inventory",
+   "topic": "Inventory",
+   "term": "Periodic inventory method",
+   "html": "The <b>periodic method</b> counts closing stock physically and deduces cost of goods sold. Shrinkage is hidden inside COGS.",
+   "bk": "Anthony 13e ch6"
+  },
+  {
+   "id": "fa-d0166",
+   "unit": "inventory",
+   "topic": "Inventory",
+   "term": "Perpetual inventory method",
+   "html": "The <b>perpetual method</b> records every receipt and issue, so closing inventory and COGS come straight from the records. A physical count then reveals <b>shrinkage</b>.",
+   "bk": "Anthony 13e ch6"
+  },
+  {
+   "id": "fa-d0167",
+   "unit": "inventory",
+   "topic": "Inventory",
+   "term": "Inventory shrinkage",
+   "html": "<b>Shrinkage</b> is goods neither in stock nor sold: pilferage, loss, spoilage, miscounts. It is the gap between perpetual records and the physical count.",
+   "bk": "Anthony 13e ch6"
+  },
+  {
+   "id": "fa-d0168",
+   "unit": "inventory",
+   "topic": "Inventory",
+   "term": "Work in process",
+   "html": "<b>Work in process</b> is goods started but not finished, costed at materials issued plus conversion costs to date. In a professional firm the equivalent is <b>jobs in progress</b> (unbilled costs).",
+   "bk": "Anthony 13e ch6"
+  },
+  {
+   "id": "fa-d0169",
+   "unit": "inventory",
+   "topic": "Inventory",
+   "term": "Product costs",
+   "html": "<b>Product (inventoriable) costs</b> are materials, direct labour and production overhead. They stay in inventory until the goods are sold; <b>period costs</b> are expensed at once.",
+   "bk": "Anthony 13e ch6"
+  },
+  {
+   "id": "fa-d0170",
+   "unit": "inventory",
+   "topic": "Inventory",
+   "term": "FIFO",
+   "html": "<b>FIFO</b> (first-in, first-out) charges the <b>oldest</b> costs to COGS and leaves the most recent costs in closing inventory.",
+   "bk": "Anthony 13e ch6"
+  },
+  {
+   "id": "fa-d0171",
+   "unit": "inventory",
+   "topic": "Inventory",
+   "term": "LIFO",
+   "html": "<b>LIFO</b> (last-in, first-out) charges the <b>newest</b> costs to COGS. Anthony treats it as acceptable US GAAP; it is <b>not allowed under IFRS, nor under AS 2</b> (L#32).",
+   "bk": "Anthony 13e ch6"
+  },
+  {
+   "id": "fa-d0172",
+   "unit": "inventory",
+   "topic": "Inventory",
+   "term": "LIFO reserve",
+   "html": "The <b>LIFO reserve</b> is the difference between inventory on a FIFO (or average) basis and on LIFO. It is a disclosed difference, <b>not money set aside</b>.",
+   "bk": "Anthony 13e ch6"
+  },
+  {
+   "id": "fa-d0173",
+   "unit": "inventory",
+   "topic": "Inventory",
+   "term": "Inventory turnover",
+   "html": "<b>Inventory turnover</b> = cost of goods sold ÷ inventory (ending or average). <b>Days' inventory</b> = 365 ÷ turnover.",
+   "bk": "Anthony 13e ch6"
+  },
+  {
+   "id": "fa-d0174",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Capitalise",
+   "html": "To <b>capitalise</b> an expenditure is to record it as an <b>asset</b> because it benefits future periods, then expense it gradually, instead of expensing it at once.",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-d0175",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Depreciation: allocation, not valuation",
+   "html": "<b>Depreciation</b> is the systematic allocation of the net cost (cost − residual value) of plant and equipment to the periods it serves. It is <b>a process of allocation, not of valuation</b>.",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-d0176",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Depletion",
+   "html": "<b>Depletion</b> is the write-off of the cost of a natural resource (minerals, oil, gas), usually <b>per unit extracted</b>.",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-d0177",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Amortisation",
+   "html": "<b>Amortisation</b> is the general name for spreading a long-lived asset's cost over its life. It is used especially for <b>limited-life intangibles</b> such as patents, licences and leasehold improvements.",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-d0178",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Betterment",
+   "html": "A <b>betterment</b> makes an asset better than when it was bought or extends its life, and is <b>capitalised</b>. Maintenance only keeps it in its original condition and is <b>expensed</b>.",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-d0179",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Service life",
+   "html": "<b>Service life</b> is the period the asset will be useful to <b>this</b> entity. It can be shorter than physical life because of <b>obsolescence</b> or a policy of early replacement.",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-d0180",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Net book value",
+   "html": "<b>Net book value</b> = original cost (gross book value) − accumulated depreciation: the part of cost <b>not yet expensed</b>, not a market value.",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-d0181",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Double-declining-balance",
+   "html": "<b>Double-declining-balance</b> applies <b>twice the straight-line rate</b> to the opening net book value each year. Residual value is left out of the base but the asset is not depreciated below it.",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-d0182",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Impaired asset",
+   "html": "An <b>impaired asset</b> is one whose future benefits have fallen below its book value. Under IFRS, as Anthony describes it, it is written down in one step to its <b>recoverable amount</b>, the higher of fair value less costs to sell and value in use.",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-d0183",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Leasehold improvements",
+   "html": "<b>Leasehold improvements</b> are capitalised alterations to leased premises. They are amortised over the <b>lease term</b> (including likely renewals), not their physical life.",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-d0184",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Basket purchase",
+   "html": "A <b>basket purchase</b> buys several assets for one price. The price is split in proportion to their <b>relative appraised values</b>.",
+   "bk": "Anthony 13e ch7"
+  },
+  {
+   "id": "fa-d0185",
+   "unit": "inventory",
+   "topic": "Inventory",
+   "term": "Inventory (AS 2)",
+   "html": "<b>Inventory</b> under AS 2: assets held for sale in the ordinary course of business, in the process of production (work in progress), or as raw materials to be consumed in production.",
+   "lec": 32
+  },
+  {
+   "id": "fa-d0186",
+   "unit": "inventory",
+   "topic": "Inventory",
+   "term": "Cost of inventory",
+   "html": "<b>Cost of inventory</b> (AS 2 para 6): purchase cost net of recoverable taxes and trade discounts, plus freight inward and other direct costs, plus conversion costs. Storage, abnormal waste, selling and administrative costs are excluded.",
+   "lec": 32
+  },
+  {
+   "id": "fa-d0187",
+   "unit": "inventory",
+   "topic": "Inventory",
+   "term": "Lower of cost and NRV",
+   "html": "<b>Lower of cost and net realisable value</b>: the AS 2 measurement rule for inventory, applied item by item and reassessed every year end. It comes from conservatism: anticipate no profit, provide for all losses.",
+   "lec": 32
+  },
+  {
+   "id": "fa-d0188",
+   "unit": "inventory",
+   "topic": "Inventory",
+   "term": "Weighted average cost formula",
+   "html": "<b>Weighted average</b>: average unit cost = total cost of goods available ÷ units available; every unit sold or left is valued at that one average (XYZ: 16,155 ÷ 585 = $27.62).",
+   "lec": 32
+  },
+  {
+   "id": "fa-d0189",
+   "unit": "inventory",
+   "topic": "Inventory",
+   "term": "FIFO cost formula",
+   "html": "<b>FIFO</b> (first in, first out): the oldest units are treated as sold first, so closing inventory carries the latest purchase prices and, when prices rise, COGS is lowest and gross margin highest.",
+   "lec": 32
+  },
+  {
+   "id": "fa-d0190",
+   "unit": "inventory",
+   "topic": "Inventory",
+   "term": "Specific identification",
+   "html": "<b>Specific identification</b>: each item of inventory is tracked with its own actual cost. One of the AS 2 cost formulas, beside FIFO and weighted average; LIFO is not permitted.",
+   "lec": 32
+  },
+  {
+   "id": "fa-d0191",
+   "unit": "inventory",
+   "topic": "Inventory",
+   "term": "Raw-material rule (NRV)",
+   "html": "<b>Raw-material rule</b>: raw materials are not written down below cost when the finished goods made from them are expected to sell at or above cost.",
+   "lec": 32
+  },
+  {
+   "id": "fa-d0192",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Property, plant and equipment (AS 10)",
+   "html": "<b>PPE</b>: tangible items held for production or supply, for renting out, or for administration, and expected to be used for more than 12 months; recognised as an asset when future economic benefits are identifiable and the cost is objectively measurable.",
+   "lec": 33
+  },
+  {
+   "id": "fa-d0193",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Depreciation (AS 10)",
+   "html": "<b>Depreciation</b>: the systematic allocation of an asset's depreciable amount over its useful life, so each year of use carries a share of the cost as an expense.",
+   "lec": 33
+  },
+  {
+   "id": "fa-d0194",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Depreciable amount",
+   "html": "<b>Depreciable amount</b> = cost − residual value: the total that is charged as depreciation over the useful life, whatever the method (press: 58,000 − 10,000 = 48,000).",
+   "lec": 33
+  },
+  {
+   "id": "fa-d0195",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Residual value",
+   "html": "<b>Residual (salvage, disposal) value</b>: the net amount the company expects to receive for the asset at the end of its useful life. It is never depreciated.",
+   "lec": 33
+  },
+  {
+   "id": "fa-d0196",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Carrying amount",
+   "html": "<b>Carrying amount</b> = cost − accumulated depreciation: the asset's figure in the balance sheet at a date, and the base for a gain or loss on disposal.",
+   "lec": 33
+  },
+  {
+   "id": "fa-d0197",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Diminishing-balance method",
+   "html": "<b>Diminishing balance</b> (written-down value): a fixed rate applied each year to the <b>opening carrying amount</b>, so the charge falls every year (press at 40%: 23,200, then 13,920).",
+   "lec": 33
+  },
+  {
+   "id": "fa-d0198",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Rebuttable presumption (AS 26)",
+   "html": "<b>Rebuttable presumption</b>: under AS 26 an intangible asset's useful life is presumed not to exceed 10 years; a company amortising over longer must justify it.",
+   "lec": 33
+  },
+  {
+   "id": "fa-d0199",
+   "unit": "fixed-assets",
+   "topic": "Depreciation & PPE",
+   "term": "Useful life of an intangible",
+   "html": "<b>Useful life of an intangible</b> (AS 26): the <b>shorter</b> of the period set by legal factors and the period of expected economic use, counted from when the asset is available for use.",
+   "lec": 33
   }
  ],
  "questions": [
@@ -11085,6 +11651,1335 @@ HUB.addCourse({
    "w": "A cautious investor wants lower risk, so the lower-beta, stronger-standing X fits. Y suits an investor who accepts more risk and believes its lower P/E means it is underpriced; a higher beta brings bigger swings, not guaranteed returns.",
    "lec": 31,
    "lv": "analyse"
+  },
+  {
+   "id": "fa-q0483",
+   "topic": "Inventory",
+   "q": "A Pune retailer orders goods on 25 March from a Delhi supplier on FOB shipping point terms. They are handed to the transporter on 29 March and arrive on 3 April. The year ends 31 March. In whose 31 March inventory are the goods?",
+   "c": [
+    "The supplier's, until they arrive in Pune",
+    "The retailer's, because title passed when the goods were shipped",
+    "Neither, since they are in transit",
+    "The retailer's, from 25 March when the order was placed"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Placing an order creates no entry. Under FOB shipping point, title passes when the goods are handed to the carrier, so the goods in transit belong to the buyer. Under FOB destination they would still be the supplier's.",
+   "bk": "Anthony 13e ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0484",
+   "topic": "Inventory",
+   "q": "Opening stock ₹4 lakh, purchases ₹15 lakh, carriage inwards ₹0.5 lakh, purchase returns ₹0.3 lakh, closing stock ₹3.2 lakh. Cost of goods sold is:",
+   "c": [
+    "₹16.0 lakh",
+    "₹15.6 lakh",
+    "₹16.6 lakh",
+    "₹22.7 lakh"
+   ],
+   "a": [
+    0
+   ],
+   "w": "4 + 15 + 0.5 − 0.3 − 3.2 = ₹16.0 lakh. ₹16.6 lakh adds the returns instead of deducting them; carriage inwards belongs in inventory cost.",
+   "bk": "Anthony 13e ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0485",
+   "topic": "Inventory",
+   "q": "Which cost is included in the cost of inventory?",
+   "c": [
+    "Carriage inwards on goods purchased",
+    "Carriage outwards on goods delivered to customers",
+    "Advertising for the goods",
+    "Rent of the head office"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Inventory cost includes what it takes to bring goods to the point of sale ready to sell. Delivering to customers and advertising are selling (period) costs.",
+   "bk": "Anthony 13e ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0486",
+   "topic": "Inventory",
+   "q": "A shop's perpetual records show 1,200 units of an item, but the year-end count finds 1,150. Which statement is correct?",
+   "c": [
+    "Under the periodic method the 50 missing units would be reported separately as shrinkage",
+    "The perpetual method reveals 50 units of shrinkage; under the periodic method they would simply be included in COGS",
+    "The count must be wrong because the records are perpetual",
+    "The 50 units are added to closing stock"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Only perpetual records give a benchmark to compare the count with. The periodic method assumes anything not in stock was sold, so shrinkage is buried in COGS.",
+   "bk": "Anthony 13e ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0487",
+   "topic": "Inventory",
+   "q": "A store's goods available for sale cost ₹6 lakh and have a retail value of ₹10 lakh. Sales for the month are ₹7 lakh. Using the retail method, estimated closing inventory at cost is:",
+   "c": [
+    "₹3 lakh",
+    "₹4.2 lakh",
+    "₹1.8 lakh",
+    "₹2.8 lakh"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Cost-to-retail ratio = 6 ÷ 10 = 60%; COGS ≈ 60% × 7 = ₹4.2 lakh; closing stock at cost = 6 − 4.2 = ₹1.8 lakh. ₹3 lakh is closing stock at retail (10 − 7), not at cost.",
+   "bk": "Anthony 13e ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0488",
+   "topic": "Inventory",
+   "q": "A godown burns down mid-year. Opening stock was ₹5 lakh, purchases ₹14 lakh and sales ₹20 lakh, and the normal gross margin is 25% of sales. Using the retail method's gross-margin logic, the stock destroyed is estimated at:",
+   "c": [
+    "₹4 lakh",
+    "₹3 lakh",
+    "₹14 lakh",
+    "₹19 lakh"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Estimated COGS = 20 × 75% = 15; stock = 5 + 14 − 15 = ₹4 lakh. ₹3 lakh treats 25% as a mark-up on cost (COGS = 20 ÷ 1.25 = 16); ₹14 lakh uses 25% as the cost ratio; ₹19 lakh ignores the sales altogether.",
+   "bk": "Anthony 13e ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0489",
+   "topic": "Inventory",
+   "q": "For a book publisher, reams of paper bought to print books are:",
+   "c": [
+    "Merchandise inventory",
+    "Supplies inventory",
+    "Finished goods",
+    "Materials inventory"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Paper becomes part of the product, so it is materials. The same paper is merchandise in a stationery shop and supplies in an office that uses it for letters.",
+   "bk": "Anthony 13e ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0490",
+   "topic": "Inventory",
+   "q": "In a manufacturing company, depreciation on factory machinery is:",
+   "c": [
+    "Expensed immediately as an administrative cost",
+    "A product cost that flows through work in process and finished goods to COGS when the goods are sold",
+    "Deducted from sales revenue",
+    "Added to the machinery account"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Factory depreciation is production overhead, a conversion cost. Part of it can sit in closing WIP and finished goods at year end; depreciation on office equipment would be a period cost.",
+   "bk": "Anthony 13e ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0491",
+   "topic": "Inventory",
+   "q": "Opening work in process ₹2 lakh; materials used ₹9 lakh; conversion costs ₹7.5 lakh; closing work in process ₹1.6 lakh. Cost of goods manufactured is:",
+   "c": [
+    "₹18.5 lakh",
+    "₹15.3 lakh",
+    "₹20.1 lakh",
+    "₹16.9 lakh"
+   ],
+   "a": [
+    3
+   ],
+   "w": "2 + 9 + 7.5 − 1.6 = ₹16.9 lakh. ₹18.5 lakh ignores both WIP balances; ₹20.1 lakh adds the closing WIP instead of deducting it.",
+   "bk": "Anthony 13e ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0492",
+   "topic": "Inventory",
+   "q": "In a year when finished-goods inventory is building up, a manufacturer reclassifies production-administration costs from period costs to product costs. The effect on this year's reported profit is that it:",
+   "c": [
+    "Rises, because some of those costs now wait in closing inventory instead of being expensed",
+    "Falls, because product costs are higher",
+    "Is unchanged, because total costs are the same",
+    "Rises by the full amount of the reclassified costs"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Product costs reach the income statement only when goods are sold. With stock growing, part of the reclassified cost stays on the balance sheet, so profit rises, but only by the part held in inventory, not the full amount.",
+   "bk": "Anthony 13e ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0493",
+   "topic": "Inventory",
+   "q": "At a law firm, partners' time recorded on a client matter that has not yet been billed is shown as:",
+   "c": [
+    "An expense of the period",
+    "Finished goods",
+    "Jobs in progress, the firm's equivalent of work in process",
+    "A receivable"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Professional firms accumulate unbilled job costs as jobs in progress; when billed, the cost moves to expense alongside the billing revenue. Nothing is receivable until the client is billed.",
+   "bk": "Anthony 13e ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0494",
+   "topic": "Inventory",
+   "q": "Opening stock 100 units @ ₹50; purchases 200 @ ₹55, then 100 @ ₹60; 250 units are sold. Under periodic FIFO, closing inventory is:",
+   "c": [
+    "₹8,250",
+    "₹7,750",
+    "₹13,250",
+    "₹8,750"
+   ],
+   "a": [
+    3
+   ],
+   "w": "FIFO leaves the newest costs: 100 @ 60 + 50 @ 55 = ₹8,750. ₹8,250 is the weighted-average answer, ₹7,750 the LIFO answer and ₹13,250 FIFO's COGS.",
+   "bk": "Anthony 13e ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0495",
+   "topic": "Inventory",
+   "q": "Using the same data (100 @ ₹50, 200 @ ₹55, 100 @ ₹60; 250 sold), cost of goods sold under the periodic weighted-average method is:",
+   "c": [
+    "₹13,250",
+    "₹13,750",
+    "₹14,250",
+    "₹8,250"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Average = 22,000 ÷ 400 = ₹55; COGS = 250 × 55 = ₹13,750. ₹13,250 is FIFO COGS; ₹8,250 is weighted-average closing stock.",
+   "bk": "Anthony 13e ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0496",
+   "topic": "Inventory",
+   "q": "Why, according to Anthony, do many US companies choose LIFO even though it reports lower profit when prices are rising?",
+   "c": [
+    "It reduces taxable income and so improves cash flow; the conformity rule forces the same method in the published accounts",
+    "It gives a more current balance-sheet inventory figure",
+    "IFRS requires it",
+    "It raises earnings per share"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The motive is tax. Because the US conformity rule ties tax and book methods, firms trade lower reported earnings for lower tax. LIFO actually makes the balance-sheet figure less current.",
+   "bk": "Anthony 13e ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0497",
+   "topic": "Inventory",
+   "q": "In a recession, a US company using LIFO lets its inventory fall well below last year's level. If costs have risen steadily for years, the likely effect on reported profit is:",
+   "c": [
+    "It falls, because LIFO always lowers profit",
+    "No effect, since quantities do not matter under LIFO",
+    "It falls, because the LIFO reserve rises",
+    "It rises, because old, low-cost LIFO layers flow into COGS"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Stripping old layers matches revenue with costs from years ago, which inflates profit. Anthony notes the effect must be disclosed, so careful readers can adjust for it.",
+   "bk": "Anthony 13e ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0498",
+   "topic": "Inventory",
+   "q": "A US company reports LIFO inventory of $400 million and discloses a LIFO reserve of $120 million. Its inventory on a FIFO basis is:",
+   "c": [
+    "$280 million",
+    "$400 million",
+    "$520 million",
+    "$120 million"
+   ],
+   "a": [
+    2
+   ],
+   "w": "FIFO value = LIFO value + LIFO reserve = 400 + 120 = $520 million. The reserve is just this difference, not cash set aside.",
+   "bk": "Anthony 13e ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0499",
+   "topic": "Conventions",
+   "q": "An item cost ₹90. Its replacement cost is ₹70, its net realisable value ₹85, and NRV less normal profit ₹75. Under AS 2 as taught in L#32 it is carried at:",
+   "c": [
+    "₹90",
+    "₹85",
+    "₹75",
+    "₹70"
+   ],
+   "a": [
+    1
+   ],
+   "w": "AS 2 compares cost with NRV only: lower of 90 and 85 = ₹85. ₹75 is Anthony's US lower-of-cost-or-market answer (replacement cost bounded by the floor), which the lecture does not use.",
+   "bk": "Anthony 13e ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0500",
+   "topic": "Conventions",
+   "q": "Closing stock (₹'000): item A cost 500, NRV 650; item B cost 800, NRV 720; item C cost 300, NRV 280. Applying lower of cost and NRV item by item, closing stock is:",
+   "c": [
+    "₹1,600",
+    "₹1,650",
+    "₹1,500",
+    "₹1,580"
+   ],
+   "a": [
+    2
+   ],
+   "w": "500 + 720 + 280 = ₹1,500 thousand. Comparing totals (cost 1,600 vs NRV 1,650) would give ₹1,600 and hide the losses on B and C behind the gain on A.",
+   "bk": "Anthony 13e ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0501",
+   "topic": "Inventory",
+   "q": "COGS for the year is ₹36 crore; inventory was ₹8 crore at the start and ₹10 crore at the end. Inventory turnover on average inventory and days' inventory are about:",
+   "c": [
+    "3.6 times and 101 days",
+    "4.5 times and 81 days",
+    "4.0 times and 91 days",
+    "2.0 times and 183 days"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Average inventory = 9; 36 ÷ 9 = 4.0 times; 365 ÷ 4 ≈ 91 days. 3.6 uses closing inventory and 4.5 uses opening inventory.",
+   "bk": "Anthony 13e ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0502",
+   "topic": "Inventory",
+   "q": "A company's inventory turnover fell from 6 to 4 this year. What can you conclude from the ratio alone?",
+   "c": [
+    "Sales have collapsed",
+    "Management has deliberately built stock for expected sales",
+    "The company has switched to FIFO",
+    "Nothing definite: either a planned build-up or a sales slowdown could cause it"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Anthony notes the fall may be favourable (stocking up ahead of demand) or unfavourable (unsold goods piling up); the number does not say which.",
+   "bk": "Anthony 13e ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0503",
+   "topic": "Inventory",
+   "q": "Specific identification is most appropriate for:",
+   "c": [
+    "Unique or high-value items such as cars, jewellery or paintings",
+    "Thousands of identical bolts",
+    "Fuel in a storage tank",
+    "Grain in a silo"
+   ],
+   "a": [
+    0
+   ],
+   "w": "When each item is distinct and traceable, its actual cost can be used. For identical items it lets managers pick high- or low-cost units to manage profit, so Anthony calls it unsatisfactory there.",
+   "bk": "Anthony 13e ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0504",
+   "topic": "Inventory",
+   "q": "In a perpetual inventory system using the average cost method, the average unit cost is:",
+   "c": [
+    "Computed once at year end for all goods available",
+    "Always the latest purchase price",
+    "Recomputed after each purchase (a moving average)",
+    "Fixed at the opening stock price"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Anthony notes that in a perpetual system a new average is often struck after each purchase. The periodic method uses one weighted average for the whole period.",
+   "bk": "Anthony 13e ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0505",
+   "topic": "Depreciation & PPE",
+   "q": "A transport company spends ₹4 lakh fitting a new fuel-injection system that cuts a truck's fuel use by 15%, and ₹3 lakh on an overhaul that replaces worn brake and clutch parts. How are these treated?",
+   "c": [
+    "Both capitalised",
+    "Fuel-injection system capitalised (betterment); overhaul expensed (maintenance)",
+    "Both expensed",
+    "Overhaul capitalised; fuel-injection system expensed"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A betterment makes the asset better than when bought; maintenance restores original condition. The size of the overhaul does not make it capital.",
+   "bk": "Anthony 13e ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0506",
+   "topic": "Depreciation & PPE",
+   "q": "A new restaurant buys its first full set of cutlery and crockery for ₹2 lakh; each item costs under ₹500. Two years later it buys ₹30,000 of replacement pieces. Under Anthony's approach:",
+   "c": [
+    "Both are expensed, because each item is below the capitalisation limit",
+    "Both are capitalised",
+    "The initial outfit is capitalised as part of the new facility; replacements are expensed",
+    "The initial outfit is expensed; replacements are capitalised"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Materiality normally expenses cheap items, but the initial outfit of a new facility is capitalised with it. Later replacements are charged to expense.",
+   "bk": "Anthony 13e ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0507",
+   "topic": "Depreciation & PPE",
+   "q": "A company buys a plot for ₹50 lakh, paying ₹1 lakh brokerage and ₹0.5 lakh in legal fees, and spends ₹2 lakh demolishing an old shed so it can build. The land is recorded at:",
+   "c": [
+    "₹50 lakh",
+    "₹51.5 lakh",
+    "₹52 lakh",
+    "₹53.5 lakh"
+   ],
+   "a": [
+    3
+   ],
+   "w": "All costs of getting the land ready for its intended use, including demolition, are part of land cost: 50 + 1 + 0.5 + 2 = ₹53.5 lakh. Land is not depreciated.",
+   "bk": "Anthony 13e ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0508",
+   "topic": "Depreciation & PPE",
+   "q": "A company builds its own warehouse and capitalises ₹60 lakh of interest on the construction loan instead of expensing it. Compared with expensing the interest, this:",
+   "c": [
+    "Raises income during construction and lowers it over the warehouse's life through higher depreciation",
+    "Lowers income during construction",
+    "Has no effect on income in any year",
+    "Raises income in every year"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Capitalised interest moves out of this year's expenses into the asset, then returns as extra depreciation later. Total expense over the asset's life is the same; only the timing changes.",
+   "bk": "Anthony 13e ch7",
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0509",
+   "topic": "Depreciation & PPE",
+   "q": "A state industrial corporation gives a company free land worth ₹5 crore to set up a factory there. Under Anthony's US rule, the land is recorded at:",
+   "c": [
+    "Nil, since nothing was paid",
+    "₹5 crore, its fair value",
+    "A nominal ₹1",
+    "The original cost to the state corporation"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Anthony gives donated assets (or assets bought far below market value) as one of the rare exceptions to recording at cost: they go in at fair value.",
+   "bk": "Anthony 13e ch7",
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0510",
+   "topic": "Depreciation & PPE",
+   "q": "A land-and-building package costs ₹3 crore. A valuer appraises the land at ₹1.2 crore and the building at ₹2.4 crore. The building is recorded at:",
+   "c": [
+    "₹2.4 crore",
+    "₹1.8 crore (₹3 crore minus the land's ₹1.2 crore appraisal)",
+    "₹2 crore",
+    "₹3 crore"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Split the actual price in proportion to appraisals: building = 2.4/3.6 × 3 = ₹2 crore, land ₹1 crore. Giving one asset its appraisal and the other the remainder is exactly what Anthony says is wrong.",
+   "bk": "Anthony 13e ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0511",
+   "topic": "Depreciation & PPE",
+   "q": "Equipment costs ₹10 lakh, life 5 years, residual value ₹1 lakh. Under double-declining-balance, year-2 depreciation is:",
+   "c": [
+    "₹2.16 lakh",
+    "₹3.6 lakh",
+    "₹1.8 lakh",
+    "₹2.4 lakh"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Rate = 2 × 20% = 40% of opening book value. Y1 = 4 lakh, leaving 6 lakh; Y2 = 40% × 6 = ₹2.4 lakh. ₹2.16 lakh wrongly deducts residual value from the base, which DDB does not do (it only stops at residual).",
+   "bk": "Anthony 13e ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0512",
+   "topic": "Depreciation & PPE",
+   "q": "An asset's cost less residual value is ₹15 lakh and its life is 5 years. Year-1 depreciation under sum-of-years'-digits is:",
+   "c": [
+    "₹5 lakh",
+    "₹3 lakh",
+    "₹6 lakh",
+    "₹1 lakh"
+   ],
+   "a": [
+    0
+   ],
+   "w": "SYD = 5 × 6 ÷ 2 = 15; year-1 fraction = 5/15; 5/15 × 15 lakh = ₹5 lakh. ₹3 lakh is straight-line; ₹1 lakh is the final year's SYD charge.",
+   "bk": "Anthony 13e ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0513",
+   "topic": "Depreciation & PPE",
+   "q": "In a year of property inflation, a company's office building rose in market value by 10% while the company charged ₹50 lakh of depreciation on it. Which statement fits Anthony's view?",
+   "c": [
+    "The depreciation should be reversed because the building gained value",
+    "Depreciation allocates cost to the periods of use; it is not meant to track market value",
+    "The building should be written up to market value under GAAP",
+    "Depreciation should equal the fall in market value each year"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Depreciation is a process of allocation, not valuation. Under the cost model market changes are ignored. (Anthony notes IFRS allows a revaluation model, but that is a separate policy choice.)",
+   "bk": "Anthony 13e ch7",
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0514",
+   "topic": "Depreciation & PPE",
+   "q": "A director says the company can pay for its new ₹40 crore plant out of the ₹40 crore balance in accumulated depreciation. What is wrong with this?",
+   "c": [
+    "Nothing; accumulated depreciation is cash retained for replacement",
+    "Accumulated depreciation can be used only for the same asset",
+    "Accumulated depreciation is a contra-asset showing cost already expensed; it is not cash",
+    "The plant can be paid for only out of retained earnings"
+   ],
+   "a": [
+    2
+   ],
+   "w": "No money is set aside by recording depreciation. Cash exists only in the cash account; funding depreciation would need a separate, deliberate investment.",
+   "bk": "Anthony 13e ch7",
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0515",
+   "topic": "Depreciation & PPE",
+   "q": "A machine bought 12 years ago with a 10-year life and no residual value is still in daily use. How does it appear in the accounts?",
+   "c": [
+    "It is removed from the books",
+    "It is revalued and depreciated again",
+    "It is shown at nil cost",
+    "It stays at original cost with equal accumulated depreciation; no further depreciation is charged"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Once the cost is fully allocated, depreciation stops, but the asset stays on the books until disposal. Its continued use shows the original life estimate was too short.",
+   "bk": "Anthony 13e ch7",
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0516",
+   "topic": "Depreciation & PPE",
+   "q": "A building costing ₹2 crore, depreciated straight-line over 40 years with no residual value, is reassessed after 10 years as having 40 more years of life. From year 11 the annual depreciation is:",
+   "c": [
+    "₹5 lakh, unchanged",
+    "₹3.75 lakh",
+    "₹4 lakh",
+    "₹2.5 lakh, with past years restated"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A change in estimate is applied prospectively: remaining book value 1.5 crore ÷ 40 = ₹3.75 lakh. Past depreciation is not restated. Anthony notes firms do not always bother to adjust; the faculty practice set (Q17) applied the same prospective rule.",
+   "bk": "Anthony 13e ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0517",
+   "topic": "Depreciation & PPE",
+   "q": "A machine has a carrying amount of ₹50 lakh. Its fair value less costs to sell is ₹30 lakh and its value in use ₹38 lakh. Under the one-step IFRS test Anthony describes, the impairment loss is:",
+   "c": [
+    "₹20 lakh",
+    "₹8 lakh",
+    "Nil, because value in use is positive",
+    "₹12 lakh"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Recoverable amount = higher of 30 and 38 = ₹38 lakh; impairment = 50 − 38 = ₹12 lakh, charged to income. ₹20 lakh wrongly uses the lower figure.",
+   "bk": "Anthony 13e ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0518",
+   "topic": "Depreciation & PPE",
+   "q": "Which of these long-lived assets is NOT systematically written off over a life under US GAAP (as Anthony describes it), but is instead tested for impairment?",
+   "c": [
+    "A factory building",
+    "Purchased goodwill",
+    "A fleet of delivery vans",
+    "A patent with a fixed legal life"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Goodwill (and other indefinite-life intangibles) is not amortised; it is tested for impairment at least annually. Buildings and vans are depreciated and a patent is amortised over the shorter of legal and useful life.",
+   "bk": "Anthony 13e ch7",
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0519",
+   "topic": "Depreciation & PPE",
+   "q": "The process of writing off the cost of a natural resource, such as an iron-ore mine, as the ore is extracted is called:",
+   "c": [
+    "Depreciation",
+    "Amortisation",
+    "Accretion",
+    "Depletion"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Depletion applies to natural resources and is usually charged per unit extracted. Accretion is the increase in value from natural growth (such as timber), which is not recognised as income.",
+   "bk": "Anthony 13e ch7",
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0520",
+   "topic": "Depreciation & PPE",
+   "q": "A coal block costing ₹120 crore holds an estimated 40 lakh tonnes. This year 6 lakh tonnes are mined. Depletion for the year is:",
+   "c": [
+    "₹18 crore",
+    "₹12 crore",
+    "₹30 crore",
+    "₹3 crore"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Rate = 120 crore ÷ 40 lakh = ₹300 per tonne; 6 lakh × 300 = ₹18 crore. Depletion normally uses units of production, not time.",
+   "bk": "Anthony 13e ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0521",
+   "topic": "Depreciation & PPE",
+   "q": "An oil explorer drills 10 sites at ₹50 crore each and finds oil at 3. Under the successful-efforts method, the capitalised cost of the discovered reserves is:",
+   "c": [
+    "₹500 crore",
+    "₹350 crore",
+    "₹150 crore",
+    "Nil"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Successful efforts capitalises only the 3 successful sites (₹150 crore) and expenses the 7 dry holes. The full-cost method would capitalise all ₹500 crore.",
+   "bk": "Anthony 13e ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0522",
+   "topic": "Depreciation & PPE",
+   "q": "A firm spends ₹36 lakh fitting out rented offices. The lease runs 4 years with an option to renew for another 4, which the firm expects to use. The fit-out would physically last 12 years. Annual amortisation is:",
+   "c": [
+    "₹3 lakh (12 years)",
+    "₹9 lakh (4 years)",
+    "₹4.5 lakh (8 years)",
+    "₹36 lakh (expensed at once)"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Improvements revert to the landlord, so the lease term, including the likely renewal, caps the life: 36 ÷ 8 = ₹4.5 lakh. Without the expected renewal it would be ₹9 lakh; it is never the 12-year physical life.",
+   "bk": "Anthony 13e ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0523",
+   "topic": "Depreciation & PPE",
+   "q": "A pharma company spends ₹40 crore on a drug that has passed its final trials and is expected to be sold profitably. How do US GAAP and IFRS, as Anthony contrasts them, treat this development spending?",
+   "c": [
+    "Both capitalise it",
+    "US GAAP expenses it; IFRS capitalises development costs once its recognition criteria are met",
+    "Both expense it",
+    "US GAAP capitalises it; IFRS expenses it"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The FASB expenses all R&D because no objective test separates winners from losers. IFRS expenses research but capitalise development once its criteria, including expected recovery, are met.",
+   "bk": "Anthony 13e ch7",
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0524",
+   "topic": "Depreciation & PPE",
+   "q": "A company's notes show gross PPE of ₹600 crore, accumulated depreciation ₹240 crore and annual depreciation ₹40 crore. Using Anthony's rough tools, the average age of the assets and the average depreciation period are:",
+   "c": [
+    "6 years and 15 years",
+    "15 years and 6 years",
+    "2.5 years and 15 years",
+    "6 years and 9 years"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Average age ≈ accumulated depreciation ÷ annual depreciation = 240 ÷ 40 = 6 years. Depreciation period ≈ gross cost ÷ annual depreciation = 600 ÷ 40 = 15 years, so the assets are about 40% through their lives.",
+   "bk": "Anthony 13e ch7",
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0525",
+   "topic": "Depreciation & PPE",
+   "q": "A consultancy replaces its laptops every 3 years although they would physically last 6. For depreciation it should use:",
+   "c": [
+    "A 6-year life and zero residual value",
+    "A 3-year service life with a residual value above zero",
+    "A 3-year life with zero residual value",
+    "No depreciation, because laptops are low-cost items"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Depreciation is based on service life to this entity. When that is shorter than physical life, the asset will still have resale value when it is disposed of, so residual value should be above zero.",
+   "bk": "Anthony 13e ch7",
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0526",
+   "topic": "Inventory",
+   "q": "In L#32, which of these is NOT one of the three forms inventory can take under AS 2?",
+   "c": [
+    "Goods held for sale by a trader",
+    "Work in progress",
+    "Raw materials to be consumed in production",
+    "The machine on which the goods are produced"
+   ],
+   "a": [
+    3
+   ],
+   "w": "AS 2 inventory is goods for sale, goods in production (work in progress) and raw materials. A machine is a fixed asset used to make inventory, not inventory itself.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0527",
+   "topic": "Inventory",
+   "q": "The lecture traced the rule 'measure inventory at the lower of cost and net realisable value' to which idea?",
+   "c": [
+    "Conservatism: anticipate no profit, provide for all possible losses",
+    "Matching: expenses follow revenues",
+    "Going concern: the firm will keep trading",
+    "Money measurement: record only what has a price"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Taking the lower figure never overstates profit and recognises a loss as soon as it is foreseen, which is the conservatism convention. Matching explains why COGS appears with the sales, not why the lower value is chosen.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0528",
+   "topic": "Inventory",
+   "q": "A trader buys stock for the next twelve months. Under AS 2 as taught in L#32, which of these is excluded from the stock's cost?",
+   "c": [
+    "Freight inward on the consignment",
+    "Wages paid to unload the goods",
+    "The purchase price net of recoverable taxes",
+    "Rent of the warehouse that stores the stock during the year"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Storage costs are expensed, even when the stock was deliberately bought for a year. Freight inward, unloading labour and the net purchase price all bring the goods to their present location and condition.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0529",
+   "topic": "Inventory",
+   "q": "Goods with a list price of ₹1,00,000 are bought at a 10% trade discount. Freight inward costs ₹4,000 and the salesman who later sells them is paid ₹2,000 commission. The cost of the inventory under AS 2 is:",
+   "c": [
+    "₹1,04,000",
+    "₹94,000",
+    "₹96,000",
+    "₹1,06,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "90,000 after the trade discount, plus 4,000 freight inward = ₹94,000. The commission is a selling cost, expensed when incurred; ₹1,04,000 forgets the discount and ₹96,000 wrongly adds the commission.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0530",
+   "topic": "Inventory",
+   "q": "Closing stock cost ₹60,000. It should sell for ₹75,000 after ₹9,000 of selling and marketing expenses. Under AS 2 it is carried at:",
+   "c": [
+    "₹66,000",
+    "₹75,000",
+    "₹60,000",
+    "₹51,000"
+   ],
+   "a": [
+    2
+   ],
+   "w": "NRV = 75,000 − 9,000 = 66,000, which is above cost, so the lower of the two is cost, ₹60,000. The rule only writes stock down; it never writes it up to NRV.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0531",
+   "topic": "Inventory",
+   "q": "The replacement cost of a raw material has fallen below what the firm paid for it, but the finished product made from it is expected to sell at or above cost. Under AS 2 (L#32) the raw material is:",
+   "c": [
+    "Kept at cost",
+    "Written down to its replacement cost",
+    "Written down to the NRV of the finished product",
+    "Written off in full"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Materials held for use in production are not written down below cost when the finished goods they go into will sell at or above cost. The test is the finished product's prospects, not the input's price.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0532",
+   "topic": "Inventory",
+   "q": "Which statement about applying net realisable value matches the lecture's three rules?",
+   "c": [
+    "Cost and NRV are compared for the stock as one block",
+    "Once an item is written down, its NRV is not reviewed again",
+    "NRV is reassessed at the end of every reporting period",
+    "Raw materials are always written down before finished goods"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The three rules: item by item (not as a block), no write-down of raw materials when the finished goods sell at or above cost, and a fresh NRV estimate each year end.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0533",
+   "topic": "Inventory",
+   "q": "Goods available for sale cost ₹2,00,000, cost of goods sold was ₹1,55,000 and opening inventory was ₹30,000. Purchases and closing inventory were:",
+   "c": [
+    "Purchases ₹1,70,000; closing inventory ₹45,000",
+    "Purchases ₹2,30,000; closing inventory ₹45,000",
+    "Purchases ₹1,70,000; closing inventory ₹75,000",
+    "Purchases ₹1,25,000; closing inventory ₹45,000"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Goods available = opening + purchases, so purchases = 2,00,000 − 30,000 = 1,70,000. Goods available = COGS + closing, so closing = 2,00,000 − 1,55,000 = 45,000. One identity, rearranged two ways, as she did for the missing-values table.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0534",
+   "topic": "Inventory",
+   "q": "In the XYZ GPS-tracker problem, which two questions does the choice of cost formula answer?",
+   "c": [
+    "How many units were sold, and at what price",
+    "Which purchase cost is matched against the sales as COGS, and which cost stays on the balance sheet as closing inventory",
+    "Whether the sale is recognised this month or next",
+    "How much trade discount to deduct, and from which purchase"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Units sold (300) and revenue ($11,340) were given; the formula decides how the $16,155 of cost is split between the expense (COGS) and the asset (closing inventory).",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0535",
+   "topic": "Inventory",
+   "q": "XYZ began with 150 units at $21, bought 225 at $27 and then 210 at $33, and sold 300 units. Under FIFO, the closing inventory of 285 units is:",
+   "c": [
+    "$7,872",
+    "$7,200",
+    "$9,405",
+    "$8,955"
+   ],
+   "a": [
+    3
+   ],
+   "w": "FIFO leaves the newest costs: 75 × 27 + 210 × 33 = 2,025 + 6,930 = $8,955. $7,872 is the weighted-average figure, $7,200 is FIFO's cost of goods sold and $9,405 prices all 285 units at $33.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0536",
+   "topic": "Inventory",
+   "q": "The same 585 units cost $16,155 in total. The weighted average unit cost, and the closing inventory of 285 units under that method, are about:",
+   "c": [
+    "$27.00 and $7,695",
+    "$27.62 and $7,872",
+    "$33.00 and $9,405",
+    "$27.62 and $8,955"
+   ],
+   "a": [
+    1
+   ],
+   "w": "16,155 ÷ 585 = $27.62; 285 × 27.62 ≈ $7,872. $27 is the simple average of 21, 27 and 33, which ignores how many units were bought at each price.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0537",
+   "topic": "Inventory",
+   "q": "Revenue is $11,340, goods available cost $16,155 and closing inventory under weighted average is $7,872. The gross margin under weighted average is:",
+   "c": [
+    "$3,468",
+    "$8,283",
+    "$4,140",
+    "$3,057"
+   ],
+   "a": [
+    3
+   ],
+   "w": "COGS = 16,155 − 7,872 = 8,283; gross margin = 11,340 − 8,283 = $3,057. $3,468 subtracts the closing stock from revenue, $8,283 is the COGS and $4,140 is FIFO's margin.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0538",
+   "topic": "Inventory",
+   "q": "Suppose XYZ's purchase prices had been falling through the month instead of rising. Which permitted method would then report the lower cost of goods sold?",
+   "c": [
+    "FIFO, because it always gives the lower COGS",
+    "Weighted average, because FIFO would now charge the older, higher costs",
+    "Both the same, since the units sold are the same",
+    "Neither; COGS does not depend on the method"
+   ],
+   "a": [
+    1
+   ],
+   "w": "FIFO charges the oldest costs. When prices fall the oldest are the dearest, so FIFO's COGS is higher and its margin lower; weighted average blends the prices and comes out lower. The rising-price result reverses.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0539",
+   "topic": "Inventory",
+   "q": "Which cost formulas did L#32 say AS 2 permits for valuing inventory? (Select all that apply)",
+   "c": [
+    "FIFO",
+    "Weighted average",
+    "LIFO",
+    "Specific identification"
+   ],
+   "a": [
+    0,
+    1,
+    3
+   ],
+   "w": "She named specific identification, FIFO and weighted average as the AS 2 formulas, with FIFO and weighted average the two firms choose between. LIFO appears in textbooks but AS 2 does not allow it.",
+   "lec": 32,
+   "lv": "recall",
+   "multi": true
+  },
+  {
+   "id": "fa-q0540",
+   "topic": "Inventory",
+   "q": "Trini Company's physical count shows 900 units unsold. Its latest purchase was 1,200 units at $27, and the goods available for the period cost $1,12,760 over 4,570 units. Under FIFO, closing inventory and cost of goods sold are:",
+   "c": [
+    "$24,300 and $88,460",
+    "$22,203 and $90,557",
+    "$24,300 and $1,12,760",
+    "$22,203 and $88,460"
+   ],
+   "a": [
+    0
+   ],
+   "w": "FIFO values the 900 units at the most recent price: 900 × 27 = 24,300; COGS = 1,12,760 − 24,300 = 88,460. $22,203 and $90,557 are the weighted-average answers (1,12,760 ÷ 4,570 = $24.67 a unit).",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0541",
+   "topic": "Inventory",
+   "q": "In the Trini working the lecturer subtracted the closing inventory from $1,12,760, which she called revenue, to get cost of goods sold. In the COGS identity, what must the $1,12,760 be?",
+   "c": [
+    "Revenue for the period",
+    "Cost of goods available for sale (opening inventory + purchases)",
+    "Closing inventory at net realisable value",
+    "Gross margin before the write-down"
+   ],
+   "a": [
+    1
+   ],
+   "w": "COGS = goods available − closing inventory, so the base she subtracted from is the cost of goods available for sale. Revenue minus closing stock is not a meaningful figure; the slip was in the word, not the arithmetic.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0542",
+   "topic": "Inventory",
+   "q": "Of the goods available for sale in a year, the part sold and the part unsold appear respectively as:",
+   "c": [
+    "An asset in the balance sheet, and an expense in the profit and loss statement",
+    "Revenue in the profit and loss statement, and a liability in the balance sheet",
+    "An expense (cost of goods sold) in the profit and loss statement, and an asset (closing inventory) in the balance sheet",
+    "Both as expenses in the profit and loss statement"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Goods available for sale = COGS + closing inventory. COGS is matched against the year's revenue as an expense; the unsold stock is an asset carried into next year.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0543",
+   "topic": "Depreciation & PPE",
+   "q": "Which of these meets the AS 10 definition of property, plant and equipment given in L#33?",
+   "c": [
+    "A delivery van the company will use for five years",
+    "Raw material to be consumed in production",
+    "Computers a dealer has bought to resell",
+    "A flat bought to be sold on within the month"
+   ],
+   "a": [
+    0
+   ],
+   "w": "PPE is tangible, held for production or supply, renting out or administration, and expected to be used for more than 12 months. Raw material and goods for resale are inventory (AS 2); the flat held for quick sale fails the 12-month and purpose tests.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0544",
+   "topic": "Depreciation & PPE",
+   "q": "An item is tangible, will be used in production and is expected to last four years. What else did L#33 require before it is recognised as an asset?",
+   "c": [
+    "A current market valuation and the auditor's approval",
+    "Identifiable future economic benefits, and a cost that can be measured objectively",
+    "Full payment in cash",
+    "Registration of the item with the company's lenders"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Purpose and the 12-month test are the definition; recognition also needs the future benefits to be identifiable and a clear, objective cost figure.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0545",
+   "topic": "Depreciation & PPE",
+   "q": "From Jada Company's list in L#33, which transaction is revenue expenditure?",
+   "c": [
+    "A machine bought on a long-term note",
+    "An extraordinary repair that extends a machine's life",
+    "A patent",
+    "Salaries paid to employees"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Salaries pay for running the business this period, so they are expensed. The machine, the life-extending repair and the patent all give benefits beyond the year and are capitalised.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0546",
+   "topic": "Depreciation & PPE",
+   "q": "A company fits a supercharger to a delivery vehicle for ₹1,20,000 and, in the same month, pays ₹4,000 for its routine six-monthly service. Applying the lecture's test:",
+   "c": [
+    "Both are capitalised, because both are spent on the same asset",
+    "Both are expensed, because the vehicle already exists",
+    "The supercharger is capitalised (the vehicle does more); the service is expensed (it only keeps it running)",
+    "The service is capitalised; the supercharger is expensed"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Ask whether the spend makes the asset last longer, do more or work better. The supercharger does; the routine service only maintains it, so it is revenue expenditure however regular.",
+   "lec": 33,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0547",
+   "topic": "Depreciation & PPE",
+   "q": "XYZ buys a printing press for $54,000, pays $1,500 shipping and $2,500 set-up. The cost capitalised under AS 10 is:",
+   "c": [
+    "$54,000",
+    "$57,000",
+    "$58,000",
+    "$55,500"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Directly attributable costs of getting the press ready are capitalised: 54,000 + 1,500 + 2,500 = $58,000. $57,000 is an addition slip (it appears in the LMS summary); $55,500 leaves out the set-up.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0548",
+   "topic": "Depreciation & PPE",
+   "q": "The press cost $58,000, is expected to sell for $10,000 after five years, and is depreciated straight line. Its depreciable amount and annual depreciation are:",
+   "c": [
+    "$58,000 and $11,600",
+    "$48,000 and $11,600",
+    "$47,000 and $9,400",
+    "$48,000 and $9,600"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Depreciable amount = 58,000 − 10,000 = 48,000; 48,000 ÷ 5 = $9,600 a year. $11,600 forgets the residual value; $47,000 and $9,400 start from a wrong cost of 57,000.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0549",
+   "topic": "Depreciation & PPE",
+   "q": "Under straight-line depreciation of $9,600 a year, the press's carrying amount at the end of year 2 is:",
+   "c": [
+    "$38,800",
+    "$48,400",
+    "$19,200",
+    "$29,200"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Carrying amount = cost − accumulated depreciation = 58,000 − 2 × 9,600 = $38,800. $48,400 is after year 1, $29,200 after year 3 and $19,200 is the accumulated depreciation, not the carrying amount.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0550",
+   "topic": "Depreciation & PPE",
+   "q": "The same $58,000 press is depreciated by the diminishing-balance method at 40%. Year-2 depreciation is:",
+   "c": [
+    "$23,200",
+    "$9,600",
+    "$13,920",
+    "$8,352"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Year 1: 40% × 58,000 = 23,200, leaving 34,800. Year 2: 40% × 34,800 = $13,920. $23,200 repeats year 1's charge; $8,352 is year 3.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0551",
+   "topic": "Depreciation & PPE",
+   "q": "Comparing straight line with diminishing balance for the press over its five-year life, which statement is correct?",
+   "c": [
+    "Diminishing balance writes off more in total",
+    "Straight line leaves the carrying amount above the residual value",
+    "Diminishing balance charges equal amounts each year",
+    "The total depreciation is the same (48,000); only its timing across the years differs"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Every method allocates the depreciable amount; diminishing balance merely front-loads it (23,200, then 13,920 …) while straight line takes 9,600 a year and ends exactly at the 10,000 residual value.",
+   "lec": 33,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0552",
+   "topic": "Depreciation & PPE",
+   "q": "Mentalo buys a delivery truck for $15,000 with a residual value of $3,000 and a useful life of 8 years. Year-1 straight-line depreciation is:",
+   "c": [
+    "$1,875",
+    "$1,500",
+    "$12,000",
+    "$375"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Depreciable amount = 15,000 − 3,000 = 12,000; ÷ 8 = $1,500. $1,875 ignores the residual value; $12,000 is the whole depreciable amount.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0553",
+   "topic": "Depreciation & PPE",
+   "q": "XYZ sells the press at the end of year 3 (straight line, $9,600 a year) for $27,100. The result is:",
+   "c": [
+    "A gain of $1,800",
+    "A loss of $2,100",
+    "A loss of $20,100",
+    "A loss of $1,700"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Carrying amount = 58,000 − 3 × 9,600 = 29,200; 27,100 received against 29,200 in the books is a loss of $2,100. A sale at $31,000 would have been the $1,800 gain.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0554",
+   "topic": "Depreciation & PPE",
+   "q": "If instead the press were sold at the end of year 3 for $31,000, the carrying amount at the date of sale and the result would be:",
+   "c": [
+    "$29,200 and a gain of $1,800",
+    "$28,800 and a gain of $2,200",
+    "$29,200 and a loss of $1,800",
+    "$19,600 and a gain of $11,400"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Carrying amount after three years is 58,000 − 28,800 = 29,200; receiving 31,000 for it is a gain of 1,800. $28,800 is the accumulated depreciation, and $19,600 is the carrying amount after four years.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0555",
+   "topic": "Depreciation & PPE",
+   "q": "The yearly write-off of the cost of a patent or copyright is called:",
+   "c": [
+    "Depreciation",
+    "Depletion",
+    "Impairment",
+    "Amortisation"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Tangible assets are depreciated; intangible assets are amortised under AS 26. The arithmetic is the same.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0556",
+   "topic": "Depreciation & PPE",
+   "q": "Under AS 26 as taught in L#33, the useful life of an intangible asset is presumed not to exceed:",
+   "c": [
+    "5 years",
+    "10 years, unless the company justifies a longer period",
+    "20 years",
+    "Its legal life, always"
+   ],
+   "a": [
+    1
+   ],
+   "w": "This is the rebuttable presumption: 10 years unless justified. The legal life is only one input; the useful life is the shorter of the legal and economic periods.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "fa-q0557",
+   "topic": "Depreciation & PPE",
+   "q": "HANA Unlimited buys a patent for $48,000. Its remaining legal life is 12 years but the company expects to use it for 6 years. Annual amortisation is:",
+   "c": [
+    "$4,000",
+    "$8,000",
+    "$2,667",
+    "$48,000 in the first year"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Useful life = the shorter of 12 and 6 = 6 years; 48,000 ÷ 6 = $8,000. $4,000 uses the legal life.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0558",
+   "topic": "Depreciation & PPE",
+   "q": "HANA also buys a copyright for $70,000 with a legal life of 30 years and an expected economic life of 10 years. Annual amortisation is:",
+   "c": [
+    "$7,000",
+    "$3,500",
+    "$2,333",
+    "$1,750"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Shorter of 30 and 10 is 10 years: 70,000 ÷ 10 = $7,000. $2,333 spreads it over the 30-year legal life.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "fa-q0559",
+   "topic": "Depreciation & PPE",
+   "q": "A company pays for a software licence in January but installs it and starts using it in April. Under the AS 26 rules in L#33, amortisation begins:",
+   "c": [
+    "In January, when the payment was made",
+    "In April, when the asset is available for use",
+    "In the next financial year",
+    "Only once the licence is paid in full"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The first rule counts the useful life from when the asset is available for use, not from the cheque date.",
+   "lec": 33,
+   "lv": "analyse"
+  },
+  {
+   "id": "fa-q0560",
+   "topic": "Depreciation & PPE",
+   "q": "Which of these did L#33 say is NOT part of the cost of a machine under AS 10?",
+   "c": [
+    "The estimated cost of dismantling it at the end of its life",
+    "Installation and testing charges",
+    "Advertising the products the machine will make",
+    "Delivery charges"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Advertising is an indirect cost, expensed as incurred. Delivery, installation, testing and the expected dismantling cost are all part of the asset's cost.",
+   "lec": 33,
+   "lv": "recall"
   }
  ],
  "briefs": {
@@ -11156,6 +13051,10 @@ HUB.addCourse({
   "lec-26s",
   "atc13-ch13",
   "lec-30",
-  "lec-31"
+  "lec-31",
+  "atc13-ch06",
+  "atc13-ch07",
+  "lec-32",
+  "lec-33"
  ]
 });

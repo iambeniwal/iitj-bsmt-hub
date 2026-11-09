@@ -149,6 +149,9 @@ python3 tools/build-offline.py
 
 Full history in [`CHANGELOG.md`](CHANGELOG.md). Most recent:
 
+- **[2.9.0] — 2026-11-09**: 9 lectures of 8 November (classes 2–3, PageRank and AI, the World Wars and
+  Indian business, inventories and PPE, two-tailed and t tests) and four textbook chapters (classes,
+  clustering, Roy's large-scale industry, Anthony's inventories and long-lived assets). 3,546 questions.
 - **[2.8.0] — 2026-11-05**: 16 lectures (31 Oct–3 Nov) across all six courses, FoC's end-term format, and
   four textbook chapters (functions, Roy 1707–1857, ratio analysis, hypothesis tests); the 4–6 December
   end-term window. 3,289 questions.

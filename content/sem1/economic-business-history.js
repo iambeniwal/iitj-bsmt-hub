@@ -193,6 +193,18 @@ HUB.addCourse({
    "Week 12 — Agency Houses and Indian Entrepreneurs, 1813–1900s",
    "Palmer, Carr Tagore, Jejeebhoy; Tata, Godrej, Walchand",
    "rec"
+  ],
+  [
+   32,
+   "Week 13 — World War I and Indian Business, 1914–18",
+   "Import collapse; TISCO, mills, jute; Swadeshi link",
+   "rec"
+  ],
+  [
+   33,
+   "Week 13 — World War II and Indian Business, 1939–45, and the Course in Review",
+   "UK import share, uniforms, TELCO, Bombay Plan, recap",
+   "rec"
   ]
  ],
  "units": [
@@ -720,13 +732,13 @@ HUB.addCourse({
   {
    "id": "india-business",
    "title": "Indian business before 1947: entrepreneurs, industry and finance",
-   "tag": "Lectures 28, 30–31 · Module 5",
-   "lede": "Module 5: how Indian merchants, bankers and industrialists worked within, and profited from, colonial rule, from the East India Company's charters (1600–1813) through the opium and indigo trades of 1813–1850s to the first Indian mills and industrial groups (1850s–1900s).",
+   "tag": "Lectures 28, 30–33 · Module 5",
+   "lede": "Module 5: how Indian merchants, bankers and industrialists worked within, and profited from, colonial rule, from the East India Company's charters (1600–1813) through the opium and indigo trades of 1813–1850s and the first Indian mills (1850s–1900s) to the two World Wars, when British imports collapsed, Tata, Birla and Sarabhai grew into a nationalist capitalist class, and the Bombay Plan sketched independent India's economy.",
    "topics": [
     {
      "t": "Module 5 opens: chartered companies and the colonial setting",
      "src": "L#28",
-     "h": "\n<div class=\"def\"><b>Module 5, Indian business history</b>, the last module of the course. Its topic is the <b>role of Indian entrepreneurs during colonial rule</b>, from the <b>1750s–60s</b> onwards, when colonial rule became dominant in India, though the East India Company had arrived in the 1600s. In his numbering this is <b>Module 5, Lecture 22</b>.</div>\n<ul>\n <li><strong>Two parts.</strong> This lecture covers <strong>1600s–1813</strong>: first how the colonial rule of the <strong>East India Company (EIC)</strong> was structured, then the roles Indian entrepreneurs played within it. The next lecture takes <strong>1813 to the 1900s</strong>: how colonial rule changed, the rise of manufacturing and factories, and the impact of the World Wars on Indian business.</li>\n <li><strong>Read India alongside Britain.</strong> Each change in the Company's powers connects to Britain's economy: the <strong>Agricultural Revolution</strong> while the first charters were granted (L#12), and the <strong>Industrial Revolution</strong> from the <strong>1760s</strong>, which needed raw cotton and markets (Module 3).</li>\n <li><strong>Companies, not the Crown.</strong> Britain's early colonies were the work of particular companies, the EIC in India as in North America (L#19).</li>\n</ul>\n<h4>How a company was created, then and now</h4>\n<div class=\"scroller\"><table><thead><tr><th>Then (1600s–1700s)</th><th>Now (India)</th></tr></thead><tbody><tr><td>The Crown issued a <strong>separate charter</strong>, sometimes a separate Act, to bring each company into legal existence and define its purpose and privileges</td><td>Anyone files the forms and documents with the <strong>Registrar of Companies</strong> under one general law, the <strong>Companies Act, 2013</strong>; no special charter is needed</td></tr></tbody></table></div>\n<div class=\"def\"><b>From the lecture (L#28):</b> Module 4 stopped at <b>1945</b>, the end of WWII, though its slide says 1950; what happened after 1945 is left to other courses. Module 5 is the last module. He said the World Wars' effect on <b>Indian</b> business comes in the next lecture. This lecture was released on 25 October, after the Quiz 2 cut-off (recorded lectures #15–26), so it is not in Quiz 2; expect it in the end-term exam.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: the guild charters of L#11 (such as the Weavers of London, 1155) show the same idea, a monopoly granted by a ruler's charter.</p>\n"
+     "h": "\n<div class=\"def\"><b>Module 5, Indian business history</b>, the last module of the course. Its topic is the <b>role of Indian entrepreneurs during colonial rule</b>, from the <b>1750s–60s</b> onwards, when colonial rule became dominant in India, though the East India Company had arrived in the 1600s. In his numbering this is <b>Module 5, Lecture 22</b>.</div>\n<ul>\n <li><strong>Two parts.</strong> This lecture covers <strong>1600s–1813</strong>: first how the colonial rule of the <strong>East India Company (EIC)</strong> was structured, then the roles Indian entrepreneurs played within it. The next lecture takes <strong>1813 to the 1900s</strong>: how colonial rule changed, the rise of manufacturing and factories, and the impact of the World Wars on Indian business.</li>\n <li><strong>Read India alongside Britain.</strong> Each change in the Company's powers connects to Britain's economy: the <strong>Agricultural Revolution</strong> while the first charters were granted (L#12), and the <strong>Industrial Revolution</strong> from the <strong>1760s</strong>, which needed raw cotton and markets (Module 3).</li>\n <li><strong>Companies, not the Crown.</strong> Britain's early colonies were the work of particular companies, the EIC in India as in North America (L#19).</li>\n</ul>\n<h4>How a company was created, then and now</h4>\n<div class=\"scroller\"><table><thead><tr><th>Then (1600s–1700s)</th><th>Now (India)</th></tr></thead><tbody><tr><td>The Crown issued a <strong>separate charter</strong>, sometimes a separate Act, to bring each company into legal existence and define its purpose and privileges</td><td>Anyone files the forms and documents with the <strong>Registrar of Companies</strong> under one general law, the <strong>Companies Act, 2013</strong>; no special charter is needed</td></tr></tbody></table></div>\n<div class=\"def\"><b>From the lecture (L#28):</b> Module 4 stopped at <b>1945</b>, the end of WWII, though its slide says 1950; what happened after 1945 is left to other courses. Module 5 is the last module. He said the World Wars' effect on <b>Indian</b> business would come later in the module; it is in L#32 (WWI) and L#33 (WWII). This lecture was released on 25 October, after the Quiz 2 cut-off (recorded lectures #15–26), so it is not in Quiz 2; expect it in the end-term exam.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: the guild charters of L#11 (such as the Weavers of London, 1155) show the same idea, a monopoly granted by a ruler's charter.</p>\n"
     },
     {
      "t": "East India Company charters of 1600 and 1661",
@@ -761,7 +773,7 @@ HUB.addCourse({
     {
      "t": "Indigo houses: Palmer & Co. and Carr, Tagore & Co.",
      "src": "L#31",
-     "h": "\n<div class=\"def\"><b>From the lecture (L#31):</b> in his numbering this is <b>Module 5, Lecture 24</b>. It covers the agency houses and Indian entrepreneurs of <b>1813–1850s</b> (indigo, then opium) and the first modern Indian industries of the <b>1850s–1900s</b>, and stops before 1914. He said the next lecture takes up the <b>World Wars' impact on Indian industry</b> and the link between Indian business and the <b>Swadeshi and nationalist movement</b>. He gave no quiz or exam details.</div>\n<p style=\"font-size:14.5px\">L#30's export table is the backdrop: opium rose past 30% of exports by 1850–51, indigo fell from 27% to 6.1%, and raw cotton held at about 12–15%. In the east, the Company still controlled the opium and indigo trade of Bengal and Bihar; on the west coast its grip was weaker, which is where many Indian traders rose.</p>\n<h4>Palmer &amp; Co., the \"Indigo King of Bengal\"</h4>\n<ul>\n <li>Founded after 1813, in the <strong>1810s–1820s</strong> (his dating), by <strong>John Palmer</strong>, son of <strong>General William Palmer</strong>, a senior officer close to <strong>Warren Hastings</strong>, the first Governor-General of Bengal (L#28; the recording says \"William Hastings\").</li>\n <li>William Palmer married twice: an English wife (John's mother) and then a woman from an <strong>Indian royal family</strong>. Those links gave the family access to <strong>capital, resources and the regulators</strong> who governed trade.</li>\n <li>In <strong>1829</strong> the firm exported <strong>over 16% of all indigo produced in India</strong>. With indigo about a quarter of all exports, his rough sum was a quarter × a fifth ≈ <strong>one-twentieth, about 5%, of India's entire exports</strong> through one firm. (With 16% and 27% the figure is nearer 4%.)</li>\n <li>It had <strong>no Indian partner</strong> at the top: John Palmer was born and raised in India, but of British parents.</li>\n <li>It went <strong>bankrupt</strong> when indigo prices crashed in the <strong>1830s</strong>. Indigo never regained its pre-1830s share, but it stayed in double digits until 1850–51, so there was still room for new indigo firms after 1834.</li>\n</ul>\n<h4>Carr, Tagore &amp; Co. (1834): an Indian at the top</h4>\n<ul>\n <li>Founded in <strong>1834</strong> by <strong>Dwarkanath Tagore</strong>, grandfather of Rabindranath Tagore, and <strong>William Carr</strong>, a Calcutta indigo trader. Unlike Palmer &amp; Co. and Alexander &amp; Co., it had an Indian entrepreneur at the <strong>highest level</strong>.</li>\n <li>It managed <strong>indigo factories</strong> and traded indigo (sometimes cotton), then moved into <strong>coal</strong>.</li>\n <li><strong>Raniganj coal mines.</strong> Taken over from an English owner, run at a loss before, and made <strong>profitable</strong>.</li>\n <li><strong>Bengal Coal Mines, 1843</strong>, nine years after the firm began: formed when it bought a competitor's mine (Jeremiah Homfray's) and joined it to its own, closing the bought mine, perhaps as unprofitable.</li>\n <li>He said today's <strong>Bengal Coal Company Limited</strong> traces its origin to it, a history of nearly 200 years.</li>\n</ul>\n<div class=\"def\"><b>His two points:</b> Indian entrepreneurs were entering colonial business at the <b>top</b>, as owners and senior managers, not just as labourers or small traders; and they <b>diversified</b>, here from indigo into coal mining.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Palmer &amp; Co. failed in 1830, the first of the great Calcutta houses to fall; others followed by 1834. India's coal mines, the Bengal Coal Company's included, were nationalised in the early 1970s and are now part of Coal India, so treat \"still in existence\" with care. Roy's textbook chapter (ehi ch. 2) adds that Dwarkanath's interests also took in tea, salt, steamboats and the Union Bank, which collapsed in 1846–47.</p>\n"
+     "h": "\n<div class=\"def\"><b>From the lecture (L#31):</b> in his numbering this is <b>Module 5, Lecture 24</b>. It covers the agency houses and Indian entrepreneurs of <b>1813–1850s</b> (indigo, then opium) and the first modern Indian industries of the <b>1850s–1900s</b>, and stops before 1914. L#32 and L#33 take up the <b>World Wars' impact on Indian industry</b> and the link between Indian business and the <b>Swadeshi and nationalist movement</b>. He gave no quiz or exam details.</div>\n<p style=\"font-size:14.5px\">L#30's export table is the backdrop: opium rose past 30% of exports by 1850–51, indigo fell from 27% to 6.1%, and raw cotton held at about 12–15%. In the east, the Company still controlled the opium and indigo trade of Bengal and Bihar; on the west coast its grip was weaker, which is where many Indian traders rose.</p>\n<h4>Palmer &amp; Co., the \"Indigo King of Bengal\"</h4>\n<ul>\n <li>Founded after 1813, in the <strong>1810s–1820s</strong> (his dating), by <strong>John Palmer</strong>, son of <strong>General William Palmer</strong>, a senior officer close to <strong>Warren Hastings</strong>, the first Governor-General of Bengal (L#28; the recording says \"William Hastings\").</li>\n <li>William Palmer married twice: an English wife (John's mother) and then a woman from an <strong>Indian royal family</strong>. Those links gave the family access to <strong>capital, resources and the regulators</strong> who governed trade.</li>\n <li>In <strong>1829</strong> the firm exported <strong>over 16% of all indigo produced in India</strong>. With indigo about a quarter of all exports, his rough sum was a quarter × a fifth ≈ <strong>one-twentieth, about 5%, of India's entire exports</strong> through one firm. (With 16% and 27% the figure is nearer 4%.)</li>\n <li>It had <strong>no Indian partner</strong> at the top: John Palmer was born and raised in India, but of British parents.</li>\n <li>It went <strong>bankrupt</strong> when indigo prices crashed in the <strong>1830s</strong>. Indigo never regained its pre-1830s share, but it stayed in double digits until 1850–51, so there was still room for new indigo firms after 1834.</li>\n</ul>\n<h4>Carr, Tagore &amp; Co. (1834): an Indian at the top</h4>\n<ul>\n <li>Founded in <strong>1834</strong> by <strong>Dwarkanath Tagore</strong>, grandfather of Rabindranath Tagore, and <strong>William Carr</strong>, a Calcutta indigo trader. Unlike Palmer &amp; Co. and Alexander &amp; Co., it had an Indian entrepreneur at the <strong>highest level</strong>.</li>\n <li>It managed <strong>indigo factories</strong> and traded indigo (sometimes cotton), then moved into <strong>coal</strong>.</li>\n <li><strong>Raniganj coal mines.</strong> Taken over from an English owner, run at a loss before, and made <strong>profitable</strong>.</li>\n <li><strong>Bengal Coal Mines, 1843</strong>, nine years after the firm began: formed when it bought a competitor's mine (Jeremiah Homfray's) and joined it to its own, closing the bought mine, perhaps as unprofitable.</li>\n <li>He said today's <strong>Bengal Coal Company Limited</strong> traces its origin to it, a history of nearly 200 years.</li>\n</ul>\n<div class=\"def\"><b>His two points:</b> Indian entrepreneurs were entering colonial business at the <b>top</b>, as owners and senior managers, not just as labourers or small traders; and they <b>diversified</b>, here from indigo into coal mining.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Palmer &amp; Co. failed in 1830, the first of the great Calcutta houses to fall; others followed by 1834. India's coal mines, the Bengal Coal Company's included, were nationalised in the early 1970s and are now part of Coal India, so treat \"still in existence\" with care. Roy's textbook chapter (ehi ch. 2) adds that Dwarkanath's interests also took in tea, salt, steamboats and the Union Bank, which collapsed in 1846–47.</p>\n"
     },
     {
      "t": "Opium from the west coast: Jamsetjee Jejeebhoy",
@@ -774,9 +786,44 @@ HUB.addCourse({
      "h": "\n<p style=\"font-size:14.5px\">He splits colonial-era Indian enterprise into <strong>two phases</strong>: <strong>1813–1850s</strong>, trade (indigo, opium, raw cotton), and <strong>1850s–1900s</strong>, the first <strong>modern industries</strong>. The line is <strong>1857</strong>.</p>\n<h4>Why manufacturing took off after the 1850s</h4>\n<ul>\n <li><strong>1857, the First War of Independence.</strong> It did not win independence, but it planted <strong>patriotism</strong> in the masses and in entrepreneurs: independence had to be economic as well as political, and many later firms supported the freedom struggle.</li>\n <li><strong>Labour reform in Britain</strong> (L#20, L#24): child-labour limits in the 1830s, the Mines Act of 1842 and the <strong>Ten Hours Act of 1847</strong> made British manufacturing dearer. He suggested this may have pushed some manufacturing out of Britain towards colonies such as India.</li>\n <li><strong>The American Civil War (1861–65)</strong> broke the supply of US cotton to <strong>Lancashire and Manchester</strong>. Indian <strong>raw cotton exports rose</strong>, and Indian cotton gained importance, raw and manufactured.</li>\n</ul>\n<h4>The first industries</h4>\n<ul>\n <li><strong>Cotton textiles first.</strong> The first <strong>cotton spinning and weaving company</strong> was set up in <strong>1854</strong> with new machinery and <strong>17,000–20,000 spindles</strong>; it began production in <strong>1856</strong>.</li>\n <li><strong>Tata.</strong> <strong>Jamsetji Nusserwanji Tata</strong> bought a <strong>bankrupt oil mill</strong> in Bombay and turned it into a cotton mill, the <strong>Alexandra Mill (1869)</strong>; then the <strong>Empress Mill</strong> at Nagpur (1877) and the <strong>Swadeshi Mill</strong> in Bombay (1887 in the lecture). Three mills in under two decades made him a major cotton-textile player. He did not build \"the Tata group\" as such, but he started its business and laid the blueprint for <strong>TISCO</strong>, the later steel company.</li>\n <li><strong>Godrej.</strong> Began in the late 1890s making <strong>high-security locks</strong> under the brand <strong>Anchor</strong>; the Godrej name came later, as the business spread in the early 1900s into <strong>soap</strong> and <strong>steel furniture</strong>, its famous steel <strong>almirah</strong> dating from the 1920s–30s.</li>\n <li><strong>Walchand Hirachand.</strong> His group began in <strong>1903</strong> with <strong>railway construction contracts</strong>, then moved into manufacturing and agriculture.</li>\n</ul>\n<div class=\"def\"><b>The ladder of Indian enterprise</b> (his summary): trade in indigo, opium and raw cotton → <b>coal mines</b> (Carr, Tagore &amp; Co.) → <b>cotton textiles</b> (from 1854; Tata) → <b>locks, soap and steel almirahs</b> (Godrej) → <b>railway construction, manufacturing and agriculture</b> (Walchand). Tata and Godrej are still major groups.</div>\n<ul>\n <li><strong>Where it stops.</strong> The account ends before <strong>1914</strong>, when the World Wars changed things. Gandhi's first major campaign, <strong>Champaran (1917)</strong>, and the full link between business and the nationalist movement come in later lectures; before 1914 that link existed but was secondary.</li>\n</ul>\n<div class=\"warnbox\"><b>Two dates in the LMS summary.</b> It puts the Empress Mill in 1887; the lecture's recap gives the Tata mills as <b>1869</b> and <b>1877</b>, and the Empress Mill opened at Nagpur on 1 January <b>1877</b>. 1887 is the lecture's date for the Swadeshi Mill. Context beyond the lecture: the 1854 company was the Bombay Spinning and Weaving Company of Cowasji Nanabhai Davar; Tata Iron and Steel was founded in 1907, after Jamsetji's death in 1904.</div>\n<!--viz:ebh-indian-enterprise-1814-1903--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Timeline: 1814 Jejeebhoy's first ship; 1829 Palmer and Co. exports over 16% of India's indigo; 1834 Carr, Tagore and Co. and Raniganj coal (highlighted); 1843 Bengal Coal Mines; mid-1840s Jejeebhoy holds a third of Jardine Matheson's opium stock; 1854 first cotton spinning and weaving company (highlighted), production 1856; 1857 First War of Independence; 1869 Alexandra Mill; 1877 Empress Mill, with the Swadeshi Mill in 1887; late 1890s Godrej locks; 1903 Walchand's railway contracts.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Indian enterprise from ships to steel almirahs</div><div style=\"border-left:2px solid var(--rule-2);margin-left:6px;padding-left:16px;font-size:14px\"><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1814</b> · Jamsetjee Jejeebhoy buys his first ship for the China opium trade</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1829</b> · Palmer &amp; Co. exports over 16% of India's indigo; it fails in the 1830s crash</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1834</b> · Carr, Tagore &amp; Co. (Dwarkanath Tagore, William Carr); Raniganj coal</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1843</b> · Bengal Coal Mines formed</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">mid-1840s</b> · Jejeebhoy holds a third of the opium in Jardine Matheson's China warehouses</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1854</b> · First cotton spinning and weaving company; production from 1856</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1857</b> · First War of Independence: the line between trade and industry</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1869</b> · Tata's Alexandra Mill, a bankrupt oil mill converted</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1877</b> · Tata's Empress Mill, Nagpur; Swadeshi Mill, Bombay, 1887</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">late 1890s</b> · Godrej locks, brand Anchor; soap and steel furniture follow</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1903</b> · Walchand Hirachand's railway construction contracts</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Before 1857 Indians made fortunes in trade; after it, in mills, mines and factories.</figcaption></figure><!--/viz:ebh-indian-enterprise-1814-1903-->"
     },
     {
+     "t": "World War I: British imports to India collapse, 1914–18",
+     "src": "L#32",
+     "h": "\n<div class=\"def\"><b>From the lecture (L#32):</b> in his numbering this is <b>Module 5, Lecture 25</b>: the impact of the <b>World Wars on Indian business</b>, starting with <b>World War I</b>, plus the link between Indian business and the <b>Swadeshi movement</b>. The next lecture (L#33) does the same for World War II and closes the course. Both were released on 8 November, after the Quiz 2 cut-off, so expect them in the <b>end-term exam (4–6 December)</b>. He gave no exam details in this lecture.</div>\n<p style=\"font-size:14.5px\">Where the story stands: L#28 covered 1600–1813, L#30 and L#31 took Indian trade and the first factories to about 1900. This lecture moves to the next phase, the two wars: <strong>WWI 1914–1918</strong> and <strong>WWII 1939–1945</strong>. (He said WWI \"ends in 1919\"; the fighting ended with the armistice of November 1918 and the Treaty of Versailles came in 1919, as L#27 notes.)</p>\n<h4>The mechanism: British factories switch to the war</h4>\n<ul>\n <li>L#27's fourth impact, the <strong>restructuring of emerging markets</strong>, is the starting point: shipping routes were attacked or blocked and countries imposed trade restrictions.</li>\n <li><strong>British manufacturing was diverted completely to the war effort</strong>: weapons, food for soldiers, military supplies, uniforms. Factories in Lancashire and Manchester stopped serving their home market and their colonies.</li>\n <li>That left a <strong>void</strong> in India, which Indian businesses stepped into. They served <strong>two demands</strong>: the <strong>domestic civilian market</strong> that British goods used to fill, and the <strong>military</strong>: India entered the war automatically as a colony, Britain had built a standing army here, and thousands of Indian soldiers deployed abroad needed uniforms, food, rations and weapons that British factories could not supply.</li>\n <li>The US–UK supply lines were also disrupted at times, which made Indian raw material for Britain, and British finished goods for India, matter more.</li>\n</ul>\n<h4>Three product categories where imports collapsed (his slide)</h4>\n<div class=\"scroller\"><table><thead><tr><th>Imports from Britain into India</th><th>Before the war</th><th>By the end of the war</th><th>Drop</th></tr></thead><tbody>\n<tr><td>Total net cotton imports (finished cotton goods)</td><td>3,000 million yards (1913)</td><td>1,500 million yards</td><td style=\"background:var(--blue-soft)\"><b>50%</b></td></tr>\n<tr><td>Cotton piece goods</td><td>over 250 million yards</td><td>63.3 million yards</td><td style=\"background:var(--blue-soft)\"><b>over 75%</b></td></tr>\n<tr><td>Steel</td><td>about 1 million tons (1913–14)</td><td>about 165,000 tons (1917–18)</td><td style=\"background:var(--blue-soft)\"><b>84%</b></td></tr>\n<tr><td>Railway material and heavy machinery</td><td colspan=\"3\">also fell sharply; no figures given</td></tr>\n</tbody></table></div>\n<ul>\n <li><strong>Check the arithmetic.</strong> 63.3 ÷ 250 = 25%, so a 75% drop. 165,000 ÷ 1,000,000 = 16.5%, so an 84% drop. He also called the steel figure \"one-tenth of pre-war\": at 165,000 tons it is nearer <strong>one-sixth</strong>; the 84% is the slide's number.</li>\n <li>Why railways and machinery mattered: the railway network carried raw material from the hinterland (UP, Bihar, Punjab) to the ports of Bombay and Calcutta, and carried British finished goods back inland. Steel rails and machinery had come from Britain.</li>\n <li>His reading of the 1913 figures: <strong>3,000 million yards</strong> of cloth a year shows how large the Indian demand was that British mills had been serving. When that supply snapped, the demand was still there.</li>\n</ul>\n<div class=\"def\"><b>Who was Britain fighting?</b> In passing he said the British military was at war \"with Nazi Germany, with Japan\". That is the Second World War. In WWI Britain's enemies were the Central Powers: <b>Germany, Austria-Hungary, the Ottoman Empire</b> and Bulgaria (L#27), and he himself named the Ottoman Empire and Germany later in the lecture.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: the 1913 figure of about 3,000 million yards is the usual estimate of Lancashire's cloth exports to India at their peak; India was Lancashire's biggest market. Roy's textbook chapter on large-scale industry (ehi ch. 6) adds that the war also cut imports of machinery, metals and chemicals, which pushed officials towards industrial policy after 1918.</p>\n<!--viz:ebh-wwi-import-collapse--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three pairs of horizontal bars. Total net cotton imports fall from 3,000 to 1,500 million yards (50%), cotton piece goods from over 250 to 63.3 million yards (75%), steel from about 1 million tons to about 165,000 tons (84%).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Imports from Britain into India, before and at the end of WWI</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 212\" role=\"img\" aria-label=\"Three pairs of bars: imports from Britain into India before the war and at its end. Total net cotton imports halved, cotton piece goods fell by three quarters, steel by 84%.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><text x=\"20\" y=\"22\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Total net cotton imports (million yards)</text><rect x=\"20\" y=\"30\" width=\"260.0\" height=\"13\" rx=\"2\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"288.0\" y=\"41\" style=\"fill:var(--ink-2);font-size:13px\">3,000 · 1913</text><rect x=\"20\" y=\"47\" width=\"130.0\" height=\"13\" rx=\"2\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"158.0\" y=\"58\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">1,500 · war end (−50%)</text><text x=\"20\" y=\"88\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Cotton piece goods (million yards)</text><rect x=\"20\" y=\"96\" width=\"260.0\" height=\"13\" rx=\"2\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"288.0\" y=\"107\" style=\"fill:var(--ink-2);font-size:13px\">over 250 · 1913</text><rect x=\"20\" y=\"113\" width=\"65.8\" height=\"13\" rx=\"2\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"93.8\" y=\"124\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">63.3 · war end (−75%)</text><text x=\"20\" y=\"154\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Steel (tons, approximate)</text><rect x=\"20\" y=\"162\" width=\"260.0\" height=\"13\" rx=\"2\" style=\"fill:var(--surface-2);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"288.0\" y=\"173\" style=\"fill:var(--ink-2);font-size:13px\">1,000,000 · 1913–14</text><rect x=\"20\" y=\"179\" width=\"42.9\" height=\"13\" rx=\"2\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"70.9\" y=\"190\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">165,000 · 1917–18 (−84%)</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each grey bar is the pre-war level; the blue bar is the war-end level. The gap is the market Indian firms stepped into.</figcaption></figure><!--/viz:ebh-wwi-import-collapse-->"
+    },
+    {
+     "t": "Steel, cotton and jute in the war: Tata, Sarabhai, Birla",
+     "src": "L#32",
+     "h": "\n<p style=\"font-size:14.5px\">He took the product categories one by one, with one or two business houses in each. Many of these houses existed before 1914; the war gave them a <strong>major boost</strong>. Two markets were open to them: the domestic demand British goods used to fill, and military demand.</p>\n<h4>1 · Steel and heavy industry: TISCO</h4>\n<ul>\n <li><strong>TISCO</strong> (Tata Steel; he expanded it as Tata Iron and Steel Company) <strong>supplied 1,500 miles of steel rails and 300,000 tons (3 lakh tons) of steel to the British military</strong> during 1914–1918. (The recording says \"3,000 tons\" once; the slide and his later arithmetic use 3 lakh.)</li>\n <li>His sum: 3 lakh tons over four to five years is roughly <strong>60,000–75,000 tons a year</strong>.</li>\n <li><strong>By 1919 the British government was buying 90%</strong> of the steel TISCO made. The plant at <strong>Jamshedpur</strong> grew enormously, and Jamshedpur became a <strong>steel city</strong>.</li>\n <li>Why it lasted: a <strong>business-to-government (B2G)</strong> supply relationship of that size involves technical expertise and efficiency that other firms did not have, so the government would face <strong>switching costs</strong> if it moved to another supplier. He expected the purchasing to continue after 1919.</li>\n <li>Steel rails tie this to <strong>railways</strong> as well, so the steel story is \"steel, and to some extent railways\".</li>\n <li><strong>One firm could not fill the gap.</strong> Steel imports fell by about 835,000 tons a year (1 million to 165,000); TISCO's 60,000–75,000 tons a year is a small part of that. His point: the drop in imports was an opportunity for <strong>many</strong> firms, not one; he gave one or two examples per category.</li>\n</ul>\n<h4>2 · Cotton textiles: Bombay and Ahmedabad</h4>\n<ul>\n <li>Textiles need <strong>less capital, less heavy machinery and less technical expertise</strong> than steel, so more firms could enter. The industry grew in two centres on the <strong>western side</strong> of India: <strong>Bombay</strong> and <strong>Ahmedabad</strong>.</li>\n <li><strong>Tata textile mills</strong> (Bombay region): the Empress Mill at Nagpur (<strong>1877</strong> in L#31; he said \"87\" here) and the Swadeshi Mill in Bombay, bought by Tata, <strong>1887</strong>. Military demand for <strong>uniforms and blankets</strong>, plus civilian demand for cloth, made them big.</li>\n <li><strong>Sarabhai group</strong>, Ahmedabad: its <strong>Calico Mills</strong> rose to prominence in the war. Like Tata it later <strong>diversified</strong>, into <strong>chemicals, dyes and pharmaceuticals</strong>, and was a big pharmaceutical name by the 1960s; from the 1960s–80s it lost market share to newer domestic firms.</li>\n <li>His general point: Tata was already in <strong>both</strong> steel and textiles when the war came, an example of <strong>diversification before the opportunity</strong>, so it gained in both. He also recalled Godrej's locks of the late 1890s (L#31) as part of the same generation of Indian firms.</li>\n</ul>\n<h4>3 · Jute: Bengal</h4>\n<ul>\n <li>Jute was the <strong>eastern</strong> industry, concentrated in <strong>Bengal</strong>, as cotton was the western one.</li>\n <li>Why demand jumped: jute is thick and strong, so it was the <strong>packing material</strong> for <strong>grain and military supplies</strong>.</li>\n <li>Numbers: <strong>looms rose from 30,000 to 39,000 over ten years</strong> (before 1914; he thought growth continued after it), and jute profits <strong>peaked at ₹7 crore in 1918</strong>. His aside: to feel the size of ₹7 crore in 1918, compound it by an inflation rate for roughly 90–100 years.</li>\n <li><strong>Birla.</strong> <strong>G.D. Birla</strong> was a <strong>jute trader in Calcutta</strong>. On jute demand the <strong>family fortune quadrupled</strong>, from about <strong>$1 million to $4 million</strong>, during the war. The Birla group existed before 1914; the war made it big.</li>\n</ul>\n<div class=\"scroller\"><table><thead><tr><th>Product</th><th>Region</th><th>His example</th><th>The war figure</th></tr></thead><tbody>\n<tr><td>Steel (and rails)</td><td>Jamshedpur</td><td>TISCO (Tata)</td><td>1,500 miles of rails, 3 lakh tons; 90% bought by government by 1919</td></tr>\n<tr><td>Cotton textiles</td><td>Bombay, Ahmedabad (west)</td><td>Tata mills; Sarabhai's Calico Mills</td><td>uniforms, blankets, civilian cloth as imports fell 50–75%</td></tr>\n<tr><td>Jute</td><td>Bengal (east)</td><td>G.D. Birla, jute trader</td><td>profits peak ₹7 crore (1918); Birla fortune $1m → $4m</td></tr>\n</tbody></table></div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Tata Steel was floated in 1907 and made its first steel in 1912 (Roy, ehi ch. 6, dates production from 1911); the war rails went to the Mesopotamia campaign (L#27 note). In Roy's account the Calcutta jute mills were still European-owned in WWI; Marwari houses such as Birla were jute traders and balers, exactly the role the lecture gives G.D. Birla, and entered jute manufacturing between the wars. Calico Mills was founded in 1880 and came under Ambalal Sarabhai in the 1900s.</p>\n"
+    },
+    {
+     "t": "Indian business and the Swadeshi movement",
+     "src": "L#32",
+     "h": "\n<p style=\"font-size:14.5px\">The second half of the lecture: how the businesses that grew in the war related to the <strong>Swadeshi movement</strong> and the wider independence movement. The years 1914–18 were also years when the independence movement was gathering strength.</p>\n<h4>The Swadeshi movement</h4>\n<ul>\n <li>Began in <strong>1905</strong> as a response to the <strong>partition of Bengal</strong> proposed by the British rulers.</li>\n <li>Its goal: <strong>boycott foreign goods, especially textiles and clothes</strong>.</li>\n <li>WWI then did what the boycott asked for: British imports, textiles above all, <strong>dried up</strong>. The firms that filled the gap formed a <strong>capitalist class that was nationalist</strong> in character, supporting the Swadeshi movement and the leaders of the independence movement.</li>\n</ul>\n<h4>The people and the dates</h4>\n<ul>\n <li><strong>G.D. Birla</strong> met <strong>Gandhi in 1916</strong>, during the war, and became a major supporter and close associate.</li>\n <li><strong>Champaran, 1917</strong>: the first movement in India that Gandhi led from the front, with non-violence, non-cooperation and satyagraha. It falls inside the war years.</li>\n <li>Later movements, <strong>Khadi</strong> and <strong>Non-Cooperation</strong> in the 1920s, also drew major support from the business class. He named the <strong>Birlas</strong> and the <strong>Lalbhais</strong> (Ahmedabad) among the supporters of leaders such as Gandhi and Nehru.</li>\n <li>There were also <strong>differences</strong> between the business class and the political leaders during the freedom struggle; he said he might return to them, but L#33 did not.</li>\n</ul>\n<div class=\"def\"><b>His main point: the relationship was mutual.</b> Businesses supported the movement because they had <b>capital</b>; the movement supported the businesses by creating <b>demand for indigenous (swadeshi) goods</b>, from leaders and from the masses, which helped firms such as Tata's and Sarabhai's mills when they entered textiles. So three things interact: WWI boosted Indian business; Indian business backed the Swadeshi and independence movements; and those movements fed demand back to Indian business.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: the partition of Bengal took effect in October 1905 and was annulled in 1911. Gandhi returned to India from South Africa in January 1915. The Non-Cooperation Movement ran from 1920 to 1922. He planned to cover the <strong>intervening years 1919–1939</strong> in the next lecture, but L#33 went straight to WWII.</p>\n<!--viz:ebh-business-swadeshi-loop--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"World War I dries up British imports and lifts Indian business. Indian business supplies capital and support to the Swadeshi and independence leaders; the movement creates demand for indigenous goods. The outcome is a nationalist capitalist class.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">WWI, Indian business and the Swadeshi movement</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 250\" role=\"img\" aria-label=\"World War I dries up British imports, which lifts Indian business. Indian business gives capital and support to the Swadeshi movement; the movement creates demand for indigenous goods. The result is a nationalist capitalist class.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><rect x=\"40\" y=\"10\" width=\"360\" height=\"40\" rx=\"5\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"220\" y=\"27\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">World War I, 1914–18</text><text x=\"220\" y=\"44\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">British imports dry up; Indian firms fill the gap</text><path d=\"M70,50 L70,88\" style=\"stroke:var(--ink-3);stroke-width:2;fill:none\"/><path d=\"M65,86 L70,96 L75,86 Z\" style=\"fill:var(--ink-3)\"/><rect x=\"10\" y=\"96\" width=\"186\" height=\"56\" rx=\"5\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"103\" y=\"120\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Indian business</text><text x=\"103\" y=\"140\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">Tata, Birla, Sarabhai</text><rect x=\"244\" y=\"96\" width=\"186\" height=\"56\" rx=\"5\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"337\" y=\"120\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Swadeshi movement</text><text x=\"337\" y=\"140\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">since 1905 · Gandhi 1916</text><path d=\"M150,96 L150,76 L290,76 L290,86\" style=\"stroke:var(--blue);stroke-width:2;fill:none\"/><path d=\"M285,86 L290,96 L295,86 Z\" style=\"fill:var(--blue)\"/><text x=\"220\" y=\"68\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">capital and support for the leaders</text><path d=\"M337,152 L337,176 L103,176 L103,166\" style=\"stroke:var(--clay);stroke-width:2;fill:none\"/><path d=\"M98,166 L103,156 L108,166 Z\" style=\"fill:var(--clay)\"/><text x=\"220\" y=\"194\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px\">demand for indigenous (swadeshi) goods</text><rect x=\"85\" y=\"206\" width=\"270\" height=\"32\" rx=\"5\" style=\"fill:var(--clay-soft);stroke:var(--clay);stroke-width:1.5\"/><text x=\"220\" y=\"227\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">a nationalist capitalist class</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The relationship was mutual: capital one way, demand for swadeshi goods the other.</figcaption></figure><!--/viz:ebh-business-swadeshi-loop-->"
+    },
+    {
+     "t": "World War II: trade disrupted on two fronts, 1939–45",
+     "src": "L#33",
+     "h": "\n<div class=\"def\"><b>From the lecture (L#33):</b> in his numbering this is <b>Module 5, Lecture 26</b>, the <b>last recorded lecture of the course</b>. It covers WWII's impact on Indian business (1939–45), compares the two wars, mentions the Bombay Plan, and ends with a <b>recap of all five modules</b>. He said <b>nothing about the end-term exam</b>: no format, module list or weightage. What is known from the LMS: the end-term is <b>offline, 4–6 December, no negative marking</b>, syllabus to the end of November; the per-course slot is not yet announced. L#32 and L#33 were released on 8 November, after the Quiz 2 cut-off, so they count for the end-term. He did not cover the 1919–39 interwar years he had mentioned at the end of L#32.</div>\n<p style=\"font-size:14.5px\">Starting point: by 1939 a <strong>nationalist capitalist class</strong> already existed (Birla, Tata, Sarabhai, Godrej), with capital earned in WWI and ties to the independence movement, which had grown much stronger since Gandhi's rise from 1916–17 (Champaran, 1917). WWII repeated WWI's mechanism, British manufacturing diverted to the war, but it was <strong>more severe</strong>, and the trade disruption reached India from <strong>two directions</strong>.</p>\n<h4>Imports from Britain: a falling share</h4>\n<ul>\n <li>The <strong>UK's share of India's imports</strong> had already been cut by WWI. It was <strong>31.4%</strong> when WWII began and fell to <strong>21.2% by 1945</strong>, about a third lower, even though India was still Britain's captive colonial market.</li>\n <li>What was affected: <strong>textiles and other consumer goods, steel and equipment</strong>, the same categories as in WWI.</li>\n</ul>\n<h4>Disruption on the western side</h4>\n<ul>\n <li>Trade with <strong>France, Belgium and the Netherlands</strong> was cut after <strong>Nazi Germany occupied</strong> them (1940), because they were now held by the enemy.</li>\n <li>He also said in passing that Germany \"captured Britain\". It did not: Britain was bombed and blockaded but never occupied (L#27). The occupied trading partners were France, Belgium and the Netherlands.</li>\n</ul>\n<h4>Disruption on the eastern side</h4>\n<ul>\n <li>Trade with <strong>Burma, Malaya and Singapore</strong> (his slide: \"East Asia\") was cut after <strong>Japan captured them in 1941–42</strong>.</li>\n <li>So, unlike WWI, India's trade was hit <strong>both west and east</strong>: his reason for calling WWII's impact \"more severe, more dire\".</li>\n</ul>\n<div class=\"def\"><b>Who gained:</b> the opportunity went <b>mostly to the big firms</b>, which had the capital, the push and the experience from WWI (Tata, Birla, Sarabhai, Godrej) and could now take market share in India and abroad. Small firms, as the next topic shows, often could not.</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: Germany invaded the Netherlands, Belgium and France in May–June 1940. Japan took Malaya and Singapore in December 1941–February 1942 and Rangoon in March 1942, which made eastern India a war front. The 31.4% and 21.2% figures are shares of India's total imports, not amounts.</p>\n<!--viz:ebh-wwii-india-timeline--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Timeline from September 1939 to 1945: the war begins with the UK at 31.4% of India's imports; western trade is cut in 1940; uniforms reach 7 million a month by September 1941; Japan takes Burma, Malaya and Singapore in 1941–42 while TELCO builds armoured vehicles; the Bengal famine of 1943; the Bombay Plan of 1944–45; the UK share at 21.2% in 1945.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">WWII and Indian business, 1939–45</div><div style=\"border-left:2px solid var(--rule-2);margin-left:6px;padding-left:16px;font-size:14px\"><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">Sept 1939</b> · WWII begins; British manufacturing turns to the war; the UK supplies <b>31.4%</b> of India's imports</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1940</b> · Germany occupies France, Belgium and the Netherlands: western trade cut. Indian leather output for the army <b>£3 million</b></div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">Sept 1941</b> · Uniforms <b>7 million</b> items a month, from 75,000 pre-war; leather output <b>£14.5 million</b> for 1941</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1941–42</b> · Japan takes Burma, Malaya and Singapore: eastern trade cut. TELCO's Jamshedpur plant builds armoured vehicles for North Africa</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1943</b> · Bengal famine: food diverted to the war, uncontrolled inflation; millions die</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1944–45</b> · Industrialists' Bombay Plan recommends which sectors the state should control</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1945</b> · War ends; the UK's share of India's imports is <b>21.2%</b>; India is now a creditor of Britain</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Trade shocks from the west (1940) and the east (1941–42) bracket the production surge of 1941; the human cost came in 1943.</figcaption></figure><!--/viz:ebh-wwii-india-timeline-->"
+    },
+    {
+     "t": "War supplies: uniforms, leather, TELCO and the new industries",
+     "src": "L#33",
+     "h": "\n<p style=\"font-size:14.5px\">Two things drove the growth of Indian industry in WWII: the <strong>domestic market</strong> that imports no longer served, and <strong>war supplies</strong>: uniforms, steel and engineering equipment, and other military materials. He said the figures come from reports the UK government compiled towards the end of the war.</p>\n<div class=\"scroller\"><table><thead><tr><th>Indicator</th><th>Before</th><th>After</th><th>Change</th></tr></thead><tbody>\n<tr><td>Military uniforms</td><td>75,000 items a month (pre-war)</td><td>7 million items a month (September 1941)</td><td style=\"background:var(--blue-soft)\"><b>about 93 times</b></td></tr>\n<tr><td>Cotton textile mills</td><td>389</td><td>417</td><td>+28 mills</td></tr>\n<tr><td>Leather: military boots, saddlery, equipment (value of output)</td><td>£3 million (1940)</td><td>£14.5 million (1941)</td><td style=\"background:var(--blue-soft)\"><b>nearly 5 times in a year</b></td></tr>\n<tr><td>Armoured vehicles</td><td colspan=\"3\">TELCO's special plant at Jamshedpur built them in thousands for the British army in North Africa</td></tr>\n<tr><td>Steel, paper, cement, chemicals</td><td colspan=\"3\">all received a major boost; no figures given</td></tr>\n</tbody></table></div>\n<ul>\n <li><strong>Uniforms.</strong> 75,000 to 7 million (70 lakh) items a month in two to three years. He said \"almost 100 or 1,000 times\"; 7,000,000 ÷ 75,000 is about <strong>93</strong>, so nearly a hundredfold, not a thousandfold. The LMS summary's \"1,000 times\" is wrong.</li>\n <li><strong>Mills.</strong> 389 to 417 (he first said \"300 to 400 in six years\"; the slide's figures are 389 and 417). Only 28 more mills against a near-hundredfold rise in uniforms: his explanation is that pre-war mills had been running <strong>well below capacity</strong> (perhaps 20–50%) and now ran much harder. Uniforms also pulled in thread, cotton, wool and other inputs, a push to the whole textile chain.</li>\n <li><strong>Kanpur</strong> came into <strong>prominence</strong> (not existence) as a centre for army uniforms and military boots. Such centres go back to the British cantonments set up after <strong>1857</strong>, and had specialised in uniforms and leather.</li>\n <li><strong>Leather.</strong> The value of output of military boots, saddlery and other leather equipment went from £3 million in 1940 to £14.5 million in 1941, in a single year.</li>\n <li><strong>TELCO</strong>, the Tata Engineering and Locomotive Company, built a <strong>special plant at Jamshedpur for armoured vehicles</strong>, produced in thousands and used by the British army in <strong>North Africa</strong>. His point: the war ran on many fronts, so \"all hands were needed\", and India's steel-and-equipment sector moved towards weapons.</li>\n</ul>\n<h4>Big firms, small firms, consumers</h4>\n<ul>\n <li>Expansion on this scale, a new armoured-vehicle plant or leather output up five times in a year, needs <strong>capital</strong>, so the gains went to <strong>big firms</strong> (Tata, Birla and the like), which could also survive the <strong>shortages and supply uncertainty</strong> of wartime raw materials. <strong>Small businesses</strong>, without reserves, struggled; this was his second impact.</li>\n <li><strong>Consumers suffered</strong> for two reasons. (1) <strong>Resource diversion</strong>: food grains and supplies went from the general population to the war effort; he gave this as a major cause of the <strong>1943 Bengal famine</strong>, which hit the whole region and killed <strong>millions</strong>. (2) <strong>Uncontrolled inflation</strong>, especially in food: prices rose while wages did not, so workers struggled to eat.</li>\n <li>The link back to business: a starving society cannot sustain demand, so businesses in the affected areas, above all small ones, could not thrive; military demand may have compensated for the bigger firms.</li>\n</ul>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: TELCO was set up in 1945 (it is today's Tata Motors); during the war the Tata Group's East Indian Railway workshops at Jamshedpur built the \"Tatanagar\" armoured car for the Indian Army, which saw service in North Africa. Roy's chapter (ehi ch. 6) agrees that the war years were harder on workers than on industrialists, with Bengal's rice requisitioning and the 1943 famine.</p>\n"
+    },
+    {
+     "t": "WWI vs WWII, the Bombay Plan, and the course in review",
+     "src": "L#33",
+     "h": "\n<h4>The two wars compared (his three differences)</h4>\n<ul>\n <li><strong>What grew.</strong> WWI's push was mostly in <strong>consumer goods</strong>, textiles and jute, and some <strong>raw steel</strong>. In WWII growth spread to <strong>chemicals, armour, machine engineering and cement</strong> as well as the WWI sectors.</li>\n <li><strong>Why it could spread.</strong> In WWI Indian firms <strong>cleared their domestic debts and built their initial capital</strong>, laying foundations; in WWII, with the foundation in place, they could <strong>diversify</strong>. With this growth <strong>India cleared its debt to the UK and became a creditor</strong>, mainly of the UK itself since it was still under British rule, which changed India's negotiating power with its rulers.</li>\n <li><strong>Politics.</strong> WWI gave birth to the <strong>nationalist capitalist class</strong> (Tatas, Birlas, Lalbhais, perhaps the Bajajs), supporters of the independence movement. In WWII that class was strong enough to think about <strong>what kind of economy and industrial policy independent India should have</strong>: which sectors the government should control, which it should not, and which partially.</li>\n</ul>\n<div class=\"def\"><b>The Bombay Plan:</b> the leading industrialists met in <b>Bombay</b> during the war and produced a plan recommending policies for independent India: which sectors should be government-controlled, which left to private firms, and which under partial control, along with price control and other matters that affect a normal business. It was presented to the Indian government and fed into post-independence policy. (He gave no date or list of authors.)</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: <em>A Plan of Economic Development for India</em> was published in two parts in 1944–45, signed by J.R.D. Tata, G.D. Birla, Purshottamdas Thakurdas, Lala Shri Ram, Kasturbhai Lalbhai, A.D. Shroff, Ardeshir Dalal and John Mathai. India's wartime \"sterling balances\", the credit it built up in London by supplying the war, are what made it Britain's creditor by 1945.</p>\n<h4>The course in review (his closing recap)</h4>\n<div class=\"scroller\"><table><thead><tr><th>Module</th><th>Period</th><th>What it covered</th><th>Hub units</th></tr></thead><tbody>\n<tr><td>1 · Introduction</td><td>framework</td><td>what economics, business and history are; economic history (how the rules form) vs business history (how an actor plays within the rules)</td><td>Foundations; Economy → business; Society and technology; Business → society</td></tr>\n<tr><td>2 · Early economic systems</td><td>pre-15th century</td><td>agrarian economies; the guild system (apprentice, journeyman, master) and its economic, social and political roles</td><td>Agrarian; Guilds</td></tr>\n<tr><td>3 · Industrial Revolution</td><td>16th–18th century</td><td>the biggest module: machines, steam, the factory system, its effects on economy, society, culture and thought</td><td>Before machines; Machines; Labour; Colonies; Systems; Society</td></tr>\n<tr><td>4 · Business history, global</td><td>1850–1950</td><td>management thought (Smith, Taylor, Fayol), the rise of large corporations, the World Wars</td><td>Management; Corporations; World Wars</td></tr>\n<tr><td>5 · Indian business history</td><td>1600s/1800s–1947</td><td>the Company and colonial rule, Indian entrepreneurs, trade after 1813, the first factories, the World Wars and the Bombay Plan; stops at independence</td><td>Indian business</td></tr>\n</tbody></table></div>\n<p style=\"font-size:14.5px\">He called Modules 2–3 the <strong>economic history</strong> half and Modules 4–5 the <strong>business history</strong> half. Module 5 stops at 1945–47, at the point where business was already recommending policy to the coming Indian government; what Indian business did after 1947 belongs to later semesters.</p>\n<!--viz:ebh-wwi-vs-wwii-india--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table comparing WWI and WWII for Indian business on imports, sectors that grew, firms and figures, what firms gained, who gained, social cost and politics.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The two World Wars and Indian business, compared</div><div class=\"scroller\"><table><thead><tr><th></th><th>WWI, 1914–18</th><th>WWII, 1939–45</th></tr></thead><tbody><tr><td>Imports from Britain</td><td>collapse: cotton goods −50%, piece goods −75%, steel −84%</td><td>UK share of India's imports 31.4% → 21.2%; trade also cut with occupied France, Belgium, Netherlands (west) and Japanese-held Burma, Malaya, Singapore (east)</td></tr><tr><td>Sectors that grew</td><td style=\"background:var(--blue-soft)\">consumer goods (textiles, jute) and raw steel</td><td style=\"background:var(--clay-soft)\">the same, plus chemicals, armour, machine engineering, cement, paper</td></tr><tr><td>Firms and figures</td><td>TISCO: 1,500 miles of rails, 3 lakh tons; jute profits ₹7 crore (1918); Birla fortune ×4</td><td>uniforms 75,000 → 7 million a month; mills 389 → 417; leather £3m → £14.5m; TELCO armoured vehicles</td></tr><tr><td>What Indian firms gained</td><td>cleared domestic debts, built initial capital: the foundation</td><td>diversified on that foundation; India cleared its debt to the UK and became a creditor</td></tr><tr><td>Who gained</td><td>a new class of Indian industrialists</td><td>mostly the big firms; small firms hit by shortages and uncertain supply</td></tr><tr><td>Social cost</td><td>not discussed</td><td>resource diversion → 1943 Bengal famine; uncontrolled food inflation</td></tr><tr><td>Politics</td><td>a nationalist capitalist class allied to Swadeshi and Gandhi</td><td>that class plans independent India's economy: the Bombay Plan</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">WWI built the foundation in consumer goods and raw steel; WWII diversified on it, at a heavy social cost.</figcaption></figure><!--/viz:ebh-wwi-vs-wwii-india--><!--viz:ebh-course-five-modules--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Five boxes in sequence: Introduction; Early economic systems (pre-1500); the Industrial Revolution (1500s–1800); global business history 1850–1950; Indian business history 1600s–1947, highlighted.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The course in five modules</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>1 · Introduction</b><br><span style=\"color:var(--ink-2);font-size:13px\">economics, business, history</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>2 · Early systems</b><br><span style=\"color:var(--ink-2);font-size:13px\">agrarian, guilds · pre-1500</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>3 · Industrial Revolution</b><br><span style=\"color:var(--ink-2);font-size:13px\">machines, labour, systems · 1500s–1800</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>4 · Business history, global</b><br><span style=\"color:var(--ink-2);font-size:13px\">management, corporations, wars · 1850–1950</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>5 · Indian business</b><br><span style=\"color:var(--ink-2);font-size:13px\">Company to Bombay Plan · 1600s–1947</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Modules 2–3 are the economic-history half, 4–5 the business-history half; the end-term can draw on all five.</figcaption></figure><!--/viz:ebh-course-five-modules-->"
+    },
+    {
      "t": "Textbook: Transition to Colonialism 1707–1857",
      "src": "Roy ch2",
      "h": "<!--viz:ebh-roy-transition-timeline--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Timeline from 1707 to 1860: Aurangzeb's death 1707, Plassey 1757, Pitt's India Act 1784, Permanent Settlement 1793, Charter Act ending the India trade monopoly 1813 (highlighted), ryotwari about 1820, the early-1830s indigo crash and agency houses turning to Indian partners (highlighted), end of the China monopoly 1833, First Opium War 1839–42 and Hong Kong to Britain, Union Bank collapse 1846–47, the 1857 rebellion, and the blue mutiny of 1859–60.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">From trading company to ruler, 1707–1860</div><div style=\"border-left:2px solid var(--rule-2);margin-left:6px;padding-left:16px;font-size:14px\"><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1707</b> · Aurangzeb dies; Mughal power fragments into successor states</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1757</b> · Plassey: the Company begins to rule Bengal</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1784</b> · Pitt's India Act: Board of Control in London</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1793</b> · Permanent Settlement: Bengal zamindars made owners for a fixed revenue</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1813</b> · Charter Act ends the Company's India trade monopoly</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">c. 1820</b> · Ryotwari settlements in the south and west</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">early 1830s</b> · Indigo crash; agency houses turn to Indian partners</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1833</b> · The Company's China trade monopoly ends</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1839–42</b> · First Opium War; Treaty of Nanking, Hong Kong to Britain</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1846–47</b> · Union Bank collapses; Bengali capital drifts into land</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1857</b> · The rebellion; Crown rule follows in 1858</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1859–60</b> · Blue mutiny: peasants refuse to sow indigo</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The highlighted dates are where the chapter meets L#28–31: the end of the monopoly and the 1830s crash.</figcaption></figure><!--/viz:ebh-roy-transition-timeline--><p><strong>European advantages in sea trade</strong> — Europeans combined state navies with merchant firms, used bigger and better-armed ships, and organised trade through joint-stock companies whose identity outlived any one person. Indian shipping was large (a Surat fleet of about a hundred 200–400 tonne vessels) and cheaper to hire, but Indian firms were family-based and Indian states rarely backed their seagoing merchants.<br><em>e.g.</em> Indian ships charged lower freight, yet lost the route to European fleets.</p><p><strong>Changing composition of trade</strong> — After the Napoleonic wars, British tariffs and the power loom eroded Indian cloth exports. Indigo, opium, raw cotton, silk and sugar replaced them, and imports (textiles, metals) rather than bullion now paid for exports. The Company's Indian trade monopoly ended in 1813; its China monopoly lasted until 1833.<br><em>e.g.</em> Cloth was 33% of export value in 1811; by 1850 opium led with about 30%.</p><p><strong>Opium, tea and Indian capital</strong> — The Company ran a state monopsony on Bengal opium and sold it towards China, where it paid for tea purchases that had previously needed silver. The trade, backed by the Opium War and the Treaty of Nanking (1842), enriched Parsi shipowners in Bombay and Calcutta and Marwari traders of Malwa opium, and some Parsi houses later moved their profits into cotton mills.<br><em>e.g.</em> The tea-for-opium exchange balanced the trades of India, Britain and China.</p><p><strong>Agency houses and their limits</strong> — European firms in Calcutta, licensed by the Company, traded opium, indigo, silk and sugar and handled other people's money; this tradition later evolved into the managing agency. A crash in the early 1830s pushed them towards Indian partners such as Dwarkanath Tagore. Roy blames their fragility on expensive money and a weak, unregulated banking system tied to one or two commodity trades.<br><em>e.g.</em> Carr Tagore's interests ran from collieries and tea to steamboats and the Union Bank.</p><p><strong>Deindustrialisation, Roy's assessment</strong> — The fall in handicraft textile production after 1800 is called deindustrialisation. Roy accepts the job loss but argues its welfare effect was uncertain: Bengal lost about 4% of its initial workforce over several decades, part-time spinners lost little income because their time had low alternative value, and cheaper yarn helped weavers and consumers.<br><em>e.g.</em> Iron smelting struggled mainly because charcoal grew costly as forests receded and ore sites were remote.</p>"
+    },
+    {
+     "t": "Textbook: Large-Scale Industry",
+     "src": "Roy ch6",
+     "h": "<p>Factory employment in India rose from under 100,000 in 1860 to about two million by 1940, concentrated in cotton and jute textiles and agricultural processing in five cities: Bombay, Ahmedabad, Madras, Calcutta and Kanpur. Roy asks how industry arose at all when capital was dear, skills scarce and merchants knew little about machines; his answer is the colonial and global connection — railways, trading profits, British machinery and engineers, and foreign investment. Before 1918 industry grew without tariffs; the First World War changed official attitudes, leading to 'discriminating protection' from the 1920s for steel, textiles, sugar, paper, cement and matches, while the Depression and Japanese competition exposed low labour productivity. Indian capital came from trading communities — Parsis, Bhatias, Khojas, Jews, Jain bankers, later Marwaris — run through family and community networks and the managing agency, which raised governance problems. Roy argues migrants came to factories to raise family income during the farm slack season, not out of destitution, and that factory workers were better off than rural labourers.</p><!--viz:ebh-roy-factory-industry-timeline--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Timeline from the Companies Act of 1850 and Davar's 1854 mill through Acland's jute mill, the American Civil War boom, the Bombay stock exchange, Tata Steel in 1907–11, both World Wars, discriminating protection in 1923, the 1926 union, the Depression and the abolition of the managing agency in 1970.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">India's factory industry, 1850–1970 (Roy ch. 6)</div><div style=\"border-left:2px solid var(--rule-2);margin-left:6px;padding-left:16px;font-size:14px\"><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1850</b> · Companies Act recognises limited liability for Indian companies</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1854</b> · C. N. Davar's cotton mill, Bombay: the first success (lecture L#31: 17,000–20,000 spindles, production 1856)</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1855</b> · George Acland's jute mill near Calcutta; jute stays European-run until WWI</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1861–65</b> · American Civil War: cotton boom finances western Indian mills</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1875</b> · Bombay stock exchange opens; contract and negotiable-instruments laws of the 1870s loosen reliance on community</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1907–11</b> · Tata Iron and Steel floated (1907), producing from 1911; first steel 1912</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1914–18</b> · WWI: demand up, imports of machines and metals cut; Industrial Commission 1916–18</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1923–24</b> · Tariff Board and discriminating protection; Tata Steel protected from 1924</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1926</b> · N. M. Joshi's Bombay Textile Labour Union</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1930s</b> · Depression and Japanese competition squeeze Bombay; wage cuts, strikes</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1939–45</b> · WWII: prices and demand soar again, bottlenecks return; industry more diversified than in 1914</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1970</b> · Managing agency system abolished</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Industry grew for 65 years with no tariff protection; the wars, not tariffs, were the turning points.</figcaption></figure><!--/viz:ebh-roy-factory-industry-timeline--><!--viz:ebh-two-worlds-capital--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table contrasting European free-standing companies (overseas trade, jute, tea, managing agencies, reputation-based trust) with Indian family and community firms (overland trade, bullion, cotton mills, kinship-based trust), and how the interwar years tilted the balance to Indians.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Two worlds of capital in colonial India</div><div class=\"scroller\"><table><thead><tr><th></th><th>European firms</th><th>Indian firms</th></tr></thead><tbody><tr><td>Form</td><td>free-standing companies: trading partnerships with London links, not subsidiaries</td><td>family and community firms; joint-family property kept capital undivided</td></tr><tr><td>Strongholds</td><td>overseas trade, shipping, London finance; Calcutta jute, tea, coal; managing agencies such as Andrew Yule</td><td>overland trade, shares, bullion, indigenous banking; Bombay and Ahmedabad cotton; later Tata steel</td></tr><tr><td>Trust</td><td>public reputation disciplined the agent; agency and shareholders separate</td><td>kinship and community sanctions; one family often ran the agency and held the majority</td></tr><tr><td style=\"background:var(--blue-soft)\">Between the wars</td><td style=\"background:var(--clay-soft)\">export firms hit hardest by the Depression</td><td style=\"background:var(--blue-soft)\">WWI profits, protected home market, nationalism: the balance tilts to Indians</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">India was unusual among tropical colonies in having strong indigenous capitalists beside the colonial firms.</figcaption></figure><!--/viz:ebh-two-worlds-capital--><!--viz:ebh-managing-agency-structure--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A managing agency partnership at the top manages three separate companies, each with its own shareholders. Capital came from the public; control stayed with the agency.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">How a managing agency worked</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 190\" role=\"img\" aria-label=\"One managing agency partnership at the top manages three separate companies, a cotton mill, a jute mill and a coal company, each with its own shareholders; capital comes from the public while control stays with the agency.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><rect x=\"100\" y=\"12\" width=\"240\" height=\"48\" rx=\"5\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"220\" y=\"33\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Managing agency (partnership)</text><text x=\"220\" y=\"52\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">manages for a fee or commission</text><rect x=\"14\" y=\"110\" width=\"126\" height=\"42\" rx=\"5\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"77\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Cotton mill</text><text x=\"77\" y=\"145\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">shareholders</text><rect x=\"157\" y=\"110\" width=\"126\" height=\"42\" rx=\"5\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"220\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Jute mill</text><text x=\"220\" y=\"145\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">shareholders</text><rect x=\"300\" y=\"110\" width=\"126\" height=\"42\" rx=\"5\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"363\" y=\"128\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Coal company</text><text x=\"363\" y=\"145\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">shareholders</text><path d=\"M160,60 L83.9,105.9\" style=\"stroke:var(--ink-3);stroke-width:2;fill:none\"/><path d=\"M83.0,100.6 L77,110 L88.1,109.1 Z\" style=\"fill:var(--ink-3)\"/><path d=\"M220,60 L220.0,102.0\" style=\"stroke:var(--ink-3);stroke-width:2;fill:none\"/><path d=\"M215.0,100.0 L220,110 L225.0,100.0 Z\" style=\"fill:var(--ink-3)\"/><path d=\"M280,60 L356.1,105.9\" style=\"stroke:var(--ink-3);stroke-width:2;fill:none\"/><path d=\"M351.9,109.1 L363,110 L357.0,100.6 Z\" style=\"fill:var(--ink-3)\"/><text x=\"228\" y=\"86\" style=\"fill:var(--ink-3);font-size:13px\">manages</text><text x=\"220\" y=\"178\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">capital from the public · control with the agency</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Scarce managers spread across many companies; when one family owned both the agency and the majority of shares, minority shareholders bore the risk.</figcaption></figure><!--/viz:ebh-managing-agency-structure--><p><strong>Shape of Indian factory industry</strong> — Large-scale industry meant wage labour, machinery and regulation under factory and company law. It was dominated by labour- and resource-intensive industries (cotton, jute, food processing); metals, machines and chemicals stayed small. It was concentrated in five port and transport hubs and its workforce was overwhelmingly male migrants.<br><em>e.g.</em> Factories' share of industrial income rose from 15% in 1900 to 45% in 1947.</p><p><strong>Why industry emerged despite scarce capital and skills</strong> — Roy credits openness and empire: trading profits paid for machines, railways cut transport costs, Bombay merchants already traded with Manchester and could hire supervisors and buy machinery there, and British capital flowed in. The same openness made it unnecessary to make machines, metals and chemicals at home, so capital goods developed slowly. Before 1918 this happened without protective tariffs: Lancashire pressure kept import duties low and an excise on Indian cloth (1890s) offset them, while the American Civil War cotton boom channelled trading profits into western Indian mills.<br><em>e.g.</em> India had a resource-cost advantage in textiles, not in machinery.</p><p><strong>The First World War as a turning point</strong> — War raised demand for cotton and jute goods but cut imports of machines, metals and chemicals. Shortages showed officials the cost of depending on Britain for stores, leading to the Industrial Commission (1916–18), the Stores Purchase Committee (1920) and the Fiscal Commission (1922), which recommended protection for selected industries and buying government stores in India. War profits also made Indian industrialists richer and more politically assertive.<br><em>e.g.</em> Indian jute mill owners, enriched in the war, later refused to join the European cartel.</p><p><strong>Discriminating protection</strong> — From 1923 the Tariff Board granted protection only to industries likely to become competitive soon; 11 of 51 enquiries to 1939 led to tariffs (including iron and steel, cotton textiles, sugar, paper, matches, heavy chemicals). Nationalists criticised the conditions; the Board worried about low productivity. By the 1940s protection became an entitlement, and after 1947 it was extended without regard to efficiency.<br><em>e.g.</em> Protected sugar grew so fast between 1919 and 1935 that excess capacity followed.</p><p><strong>Depression, Japan and the interwar squeeze</strong> — From the mid-1920s Indian steel, paper, sugar and cement faced cheap imports and falling prices; nationalists blamed an overvalued rupee. The Depression hit export industries such as jute hardest. Bombay mills lost the China yarn market to Japan, moved into weaving and finer counts, cut wages and faced strikes and bankruptcies, while new industry dispersed to up-country centres like Coimbatore and Jamshedpur.<br><em>e.g.</em> Wage cuts helped firms survive but soured labour relations in Bombay and Calcutta.</p><p><strong>The Second World War</strong> — Demand and prices soared again and supply bottlenecks returned, but industry in 1939 was more diversified than in 1914. With Japan in Burma, eastern India became a war front; rice requisitioning and harvest failure sent food prices soaring, making it hard for plantations and industry to feed their workers.<br><em>e.g.</em> The war years were harder on workers than on industrialists.</p><p><strong>Cotton mills of Bombay and Ahmedabad</strong> — After European failures, the Parsi merchant C. N. Davar founded the first successful mill in Bombay in 1854. Mills grew to 58 by 1880 and 271 by 1914, spreading to towns with cotton markets, railways and migrant labour. Until 1914 they sold coarse yarn to handloom weavers in India and China; Ahmedabad's industry grew from Hindu and Jain banking and trading houses such as Sarabhai and Lalbhai.<br><em>e.g.</em> Bombay pioneers included Petit, Wadia and Tata (Parsi), Currimbhoy (Khoja), Sassoon (Jewish) and Khatau, Gokuldas and Thakersey (Bhatia).</p><p><strong>Calcutta jute</strong> — Bengal raw jute was first spun in Dundee; George Acland's 1855 mill near Calcutta started a local industry that became a near world monopoly in sacking, with mills rising from 5 (1869) to 64 (1913). Europeans owned and managed it until the First World War. In the interwar glut, a European cartel failed because newly rich Indian owners stayed out, and Bengal's government eventually imposed production limits.<br><em>e.g.</em> Employment rose to about 215,000 by 1913.</p><p><strong>Tata Iron and Steel Company</strong> — Founded in 1907 and producing from 1911, Tata Steel grew from J. N. Tata's vision, the Tatas' textile reputation and their knowledge as India's largest steel importer, after two decades of prospecting for coal, ore, limestone, manganese and water. Like other big firms it relied on government demand. Cheap Belgian steel brought it close to bankruptcy in 1923; wartime goodwill won it protection from 1924, and it weathered the Depression.<br><em>e.g.</em> In 1914–22 a Tata employee produced under 5 tonnes of finished steel a year against 53 in the US.</p><p><strong>Why peasants became factory workers</strong> — Lewis's surplus-labour model fits India's low, steady wages, and Marxist accounts stress distress. Roy prefers seasonality: farm work left peasants idle much of the year, so landholding families sent men to factories to add income and spread risk, keeping women at home. Migrants were often better-off peasants and skilled weavers, not the poorest.<br><em>e.g.</em> Handloom weavers formed a labour aristocracy in the mills.</p><p><strong>Labour contractors, segmentation and productivity</strong> — Firms recruited, trained and supervised through labour contractors (jobbers) who could hire and fire, and who persisted in India long after they vanished elsewhere because the workforce was ethnically segmented. Productivity was low: Japanese mills produced about three and a half times more cloth per weaver. Explanations include workers' preferred effort level and union resistance (Wolcott and Clark), managers' failure to use incentive wages (Gupta), and reliance on contractors for training (Roy).<br><em>e.g.</em> Indian coal output per miner was about 40% of the US level in 1921–5.</p><p><strong>Trade unions and factory wages</strong> — Organised unionism began in Bombay with N. M. Joshi's Bombay Textile Labour Union (1926); membership rose from 100,000 (1927) to 400,000 (1938). The Bombay Industrial Relations Act (1946) made the Congress-linked RMMS sole representative of textile workers. Roy rejects the picture of workers as merely 'unfortunate': factory wages were two to three times farm wages by the interwar years, and towns escaped famine and weakened caste barriers.<br><em>e.g.</em> Strikes of the 1930s responded to Japanese competition threatening work routines.</p><p><strong>Community, joint family and company law</strong> — With scarce capital and skills, owners recruited partners and managers from their own community, using social sanctions to enforce honesty. Contract and negotiable-instruments laws (1870s), company reputations and chambers of commerce weakened this reliance. Joint-family property law kept capital undivided but bred succession disputes. The Companies Act of 1850 recognised limited liability and the Bombay stock exchange opened in 1875.<br><em>e.g.</em> Parsi, Bohra, Jewish and Armenian firms behaved like Hindu castes in using kinship for trust.</p><p><strong>The managing agency system</strong> — A managing agency was a partnership firm contracted, for a fee or commission, to manage one or more companies. It let firms raise capital without takeover risk, economised scarce managerial talent across many companies, and guaranteed loans and deposits. In European houses the agency and the shareholders were separate and reputation disciplined agents; in Indian family agencies the same family controlled both, so minority shareholders could be exploited. It was abolished in 1970.<br><em>e.g.</em> Andrew Yule managed jute, tea, coal, paper and engineering companies.</p><p><strong>Two worlds of capital</strong> — European 'free-standing companies' — trading partnerships with London links rather than subsidiaries of a parent — dominated overseas trade, shipping and London finance. Indians dominated overland trade, shares, bullion and indigenous banking. India was unusual among tropical colonies for its strong indigenous capitalists. War profits, the Depression's blow to export firms, tariffs and nationalism tilted the balance to Indians between the wars.<br><em>e.g.</em> James Finlay moved from Scottish cotton to Bombay, Calcutta jute and South Indian tea.</p><div class=\"card\"><strong>Case: Tata Iron and Steel Company</strong> <em>(Section 'Major Industries: Other Industries')</em><p>Founded 1907, producing from 1911 after two decades of raw-material surveys, Tata Steel drew on the family's textile reputation and steel-import expertise. Wartime supply earned official goodwill; when cheap Belgian steel nearly bankrupted it in 1923, it received protection from 1924, expanded in 1925–35 and survived the Depression.</p><p><em>Lesson:</em> Tariff protection, government demand and entrepreneurial persistence in a capital-intensive industry.</p><p><em>Think:</em> Would Tata Steel have survived the 1920s without protection? Weigh its productivity gap against the Tariff Board's 'discriminating' rule.</p></div><div class=\"card\"><strong>Case: The interwar jute cartel</strong> <em>(Section 'Major Industries: Jute Mills')</em><p>Facing slowing world demand for sacking, European jute mill owners tried to restrict output and lift prices. Indian owners enriched by the First World War stayed outside the cartel, collusion collapsed, profits became unstable and the Bengal government eventually imposed production limits.</p><p><em>Lesson:</em> Cartels fail when new entrants with different interests refuse to cooperate.</p><p><em>Think:</em> Why did Indian mill owners have an incentive to stay out of the cartel?</p></div><div class=\"card\"><strong>Case: Bombay mills and Japanese competition</strong> <em>(Sections 'Cotton Mills' and 'Labour')</em><p>Bombay mills thrived selling coarse yarn to Indian and Chinese handloom weavers until Japan captured China and pressed into India. Mills shifted to weaving and finer counts, cut wages and sought tariffs; strikes and unionisation followed, and poorly managed mills went bankrupt.</p><p><em>Lesson:</em> Low wages are no defence against a rival with low wages and high productivity.</p><p><em>Think:</em> Compare the three explanations Roy reports for low productivity in Bombay mills. Which seems strongest to you?</p></div><div class=\"def\"><b>Book vs lecture — Why modern industry began in India after the 1850s.</b> Book: Roy credits openness and empire: trading profits paid for machines, railways cut costs, Bombay merchants hired Manchester supervisors and bought Manchester machinery, British capital flowed in, and the American Civil War cotton boom financed western mills. Lecture: L#31 gives three triggers: the patriotism planted by 1857, dearer British labour after the Factory and Mines Acts, and the American Civil War (1861–65) cutting Lancashire's US cotton. <b>Answer 'according to the lecture' questions with L#31's three triggers. Both name the American Civil War; Roy's trading-profits mechanism is extra depth, not a contradiction.</b></div><div class=\"def\"><b>Book vs lecture — The first cotton mill.</b> Book: The Parsi merchant C. N. Davar founded the first successful mill in Bombay in 1854, after European failures near Calcutta in 1817–18. Lecture: L#31: the first cotton spinning and weaving company was set up in 1854 with 17,000–20,000 spindles and began production in 1856; no founder named. <b>Same date, 1854. Use the lecture's spindle count and 1856 start if asked; Davar's name is the book's.</b></div><div class=\"def\"><b>Book vs lecture — Tata Steel: dates and the First World War.</b> Book: Founded 1907, producing from 1911; relied on government demand; near bankruptcy in 1923 on cheap Belgian steel; protected from 1924 partly on wartime goodwill. Lecture: L#32 gives the war figures only: 1,500 miles of rails and 3 lakh tons of steel to the British military in 1914–18, about 60,000–75,000 tons a year, 90% bought by government by 1919, Jamshedpur growing into a steel city. The hub's L#27 note dates first steel to 1912. <b>For the exam use L#32's figures. Roy's 1911 is when the works started producing (pig iron); the first steel was tapped in February 1912, so 1911 and 1912 are both defensible depending on the product.</b></div><div class=\"def\"><b>Book vs lecture — What the First World War did to Indian industry.</b> Book: Demand rose but imports of machinery, metals and chemicals stopped; the lasting effect was a policy turn to protection and Indian stores purchase (Industrial Commission 1916–18, Fiscal Commission 1922, Tariff Board 1923). Lecture: L#32: British manufacturing diverted to the war, imports into India collapsed (cotton goods −50%, piece goods −75%, steel −84%), and Indian firms filled the gap for civilians and the army, becoming a nationalist capitalist class tied to Swadeshi. No mention of tariffs or commissions. <b>The lecture's import figures and firm examples come first. The tariff story is the book's own and was never lectured; treat it as background.</b></div><div class=\"def\"><b>Book vs lecture — Who owned and ran Calcutta jute.</b> Book: European firms owned and managed the jute mills until the First World War; Marwari houses such as Birla were in jute baling, trading, mining and import agency around 1900 and entered manufacturing between the wars. Lecture: L#32: G.D. Birla was a jute trader in Calcutta; jute demand for packing grain and military supplies quadrupled the family fortune to about $4 million, with jute profits peaking at ₹7 crore in 1918 and looms rising from 30,000 to 39,000. <b>Consistent: the lecture's Birla is a trader, not a mill owner. Don't say Birla owned the WWI jute mills.</b></div><div class=\"def\"><b>Book vs lecture — The Second World War.</b> Book: Demand and prices soared, supply bottlenecks returned, industry was more diversified than in 1914; Japan in Burma made eastern India a war front; rice requisitioning and harvest failure sent food prices up. Lecture: L#33: UK share of India's imports 31.4% → 21.2%, trade cut west (occupied France, Belgium, Netherlands) and east (Burma, Malaya, Singapore); uniforms 75,000 → 7 million a month, mills 389 → 417, leather £3m → £14.5m, TELCO armoured vehicles, chemicals, cement, paper; big firms gained, small firms and consumers lost (1943 Bengal famine, inflation); the Bombay Plan. <b>Same story; the lecture has the numbers. Use L#33's figures and its WWI-vs-WWII contrast (consumer goods then, diversification now).</b></div><div class=\"def\"><b>Book vs lecture — Where factory industry was.</b> Book: Five cities held the bulk of factory employment: Bombay, Ahmedabad, Madras, Calcutta and Kanpur. Lecture: L#32–L#33: cotton in Bombay and Ahmedabad (west), jute in Bengal/Calcutta (east), steel and later armour at Jamshedpur, uniforms and boots at Kanpur. Madras is not mentioned. <b>If asked for the lecture's geography, give west cotton / east jute / Jamshedpur steel (+ Kanpur in WWII). Roy's five-city list is the book's.</b></div>"
     }
    ]
   },
@@ -905,6 +952,22 @@ HUB.addCourse({
   },
   {
    "name": "Rise of Indian industry",
+   "unit": "india-business"
+  },
+  {
+   "name": "Mills & big business",
+   "unit": "india-business"
+  },
+  {
+   "name": "Wars & the Depression",
+   "unit": "india-business"
+  },
+  {
+   "name": "World Wars & Indian business",
+   "unit": "india-business"
+  },
+  {
+   "name": "Business & the freedom movement",
    "unit": "india-business"
   }
  ],
@@ -1936,6 +1999,146 @@ HUB.addCourse({
    "p": "The lecture's Tata dates are Alexandra Mill 1869 and Empress Mill, Nagpur, 1877. The LMS summary's 1887 is the lecture's date for the Swadeshi Mill in Bombay.",
    "f": "1869, 1877, then 1887",
    "lec": 31
+  },
+  {
+   "id": "ebh-t0151",
+   "h": "Indian industry grew before tariff protection, not because of it",
+   "p": "Cotton and jute mills expanded from the 1850s to 1918 with no protective tariffs; discriminating protection came only in the 1920s.",
+   "f": "mills first, tariffs later",
+   "bk": "Roy ch6"
+  },
+  {
+   "id": "ebh-t0152",
+   "h": "Roy: migrants were not mainly the destitute",
+   "p": "Factory migrants were often landholding peasants and skilled weavers, sent to add income in the slack season. The Marxist 'distress push' view cannot explain why mainly men moved.",
+   "f": "seasonality, not distress",
+   "bk": "Roy ch6"
+  },
+  {
+   "id": "ebh-t0153",
+   "h": "The first successful Bombay mill was Indian, not European",
+   "p": "Earlier European ventures near Calcutta (1817–18) failed; the Parsi C. N. Davar's 1854 mill succeeded. Jute, by contrast, was pioneered by George Acland (1855) and stayed European until the First World War.",
+   "f": "Davar cotton, Acland jute",
+   "bk": "Roy ch6"
+  },
+  {
+   "id": "ebh-t0154",
+   "h": "The First World War both helped and hurt Indian industry",
+   "p": "Demand for textiles and jute soared, but imports of machinery, metals and chemicals stopped. Its lasting effect was to turn officials towards protection and Indian stores purchase.",
+   "f": "more demand, no machines",
+   "bk": "Roy ch6"
+  },
+  {
+   "id": "ebh-t0155",
+   "h": "The managing agency's governance problem was worse in Indian family firms",
+   "p": "When the same family owned the agency and the majority of the managed company, decisions went unrecorded and minority shareholders could be cheated. European agencies were disciplined by public reputation.",
+   "f": "same family both sides",
+   "bk": "Roy ch6"
+  },
+  {
+   "id": "ebh-t0156",
+   "h": "Cheap Indian wages did not mean cheap Indian output per worker",
+   "p": "Bombay competed with Lancashire on low wages, but Japan combined low wages with far higher productivity, exposing Indian mills between the wars.",
+   "f": "low wage ≠ low cost",
+   "bk": "Roy ch6"
+  },
+  {
+   "id": "ebh-t0157",
+   "h": "Calcutta's big industry was European-owned; Marwaris entered later",
+   "p": "Around 1900 Marwari houses such as Birla were in jute baling, mining, zamindari and import agency. They entered jute manufacture between the wars and took over many British firms in the 1950s–60s.",
+   "f": "Marwaris: trade → jute later",
+   "bk": "Roy ch6"
+  },
+  {
+   "id": "ebh-t0158",
+   "h": "The lectures' war story has numbers; the book's has policy. Lead with the lecture's",
+   "p": "L#32 and L#33 give the figures (imports −50/−75/−84%, TISCO's 3 lakh tons, uniforms ×93, mills 389 → 417). Roy adds what was never lectured: the Tariff Board and discriminating protection (1923), the Depression and Japanese competition.",
+   "f": "lecture figures first",
+   "bk": "Roy ch6"
+  },
+  {
+   "id": "ebh-t0159",
+   "h": "WWI enemies: Germany, Austria-Hungary and the Ottoman Empire, not Nazi Germany and Japan",
+   "p": "He said in passing that Britain fought 'Nazi Germany' and 'Japan'. Those are WWII. WWI's Central Powers were Germany, Austria-Hungary, the Ottoman Empire and Bulgaria (L#27); Japan was on Britain's side in WWI.",
+   "f": "Nazis and Japan = WWII",
+   "lec": 32
+  },
+  {
+   "id": "ebh-t0160",
+   "h": "Steel imports fell to about one-sixth, not one-tenth",
+   "p": "About 1 million tons (1913–14) to about 165,000 tons (1917–18) is an 84% drop, the slide's figure; 165,000 is one-sixth of a million, not one-tenth as he said.",
+   "f": "84% = one-sixth left",
+   "lec": 32
+  },
+  {
+   "id": "ebh-t0161",
+   "h": "50% is total net cotton imports; 75% is cotton piece goods",
+   "p": "Total net cotton imports halved (3,000 to 1,500 million yards). Cotton piece goods, a narrower category, fell by over 75% (over 250 to 63.3 million yards). Don't swap the two.",
+   "f": "total 50, piece goods 75",
+   "lec": 32
+  },
+  {
+   "id": "ebh-t0162",
+   "h": "Birla's war fortune came from jute in Calcutta, not cotton in Bombay",
+   "p": "G.D. Birla was a jute trader in Calcutta; jute demand quadrupled the family fortune to about $4 million. Cotton textiles were the western story: Tata (Bombay) and Sarabhai (Ahmedabad).",
+   "f": "Birla = jute, east",
+   "lec": 32
+  },
+  {
+   "id": "ebh-t0163",
+   "h": "Swadeshi began in 1905 with the partition of Bengal, not with the war",
+   "p": "The movement to boycott foreign goods was nine years old when WWI began. The war only made the boycott real by cutting off British textiles, which helped create the nationalist capitalist class.",
+   "f": "1905 partition, 1914 war",
+   "lec": 32
+  },
+  {
+   "id": "ebh-t0164",
+   "h": "TISCO supplied 3 lakh tons in the war, not 3,000",
+   "p": "The slide says 300,000 tons of steel and 1,500 miles of rails in 1914–18; his own sum, 3 lakh over four to five years for 60,000–75,000 tons a year, confirms it. The recording's '3,000 tons' is a slip.",
+   "f": "3 lakh over 4–5 years",
+   "lec": 32
+  },
+  {
+   "id": "ebh-t0165",
+   "h": "Uniforms grew about 93 times, not 1,000 times",
+   "p": "75,000 to 7 million items a month is 7,000,000 ÷ 75,000 ≈ 93, nearly a hundredfold. He said 'almost 100 or 1,000 times' and the LMS summary kept 1,000; the arithmetic says about 93.",
+   "f": "7m ÷ 75k ≈ 93",
+   "lec": 33
+  },
+  {
+   "id": "ebh-t0166",
+   "h": "Mills went from 389 to 417, not 300 to 400",
+   "p": "He first said '300 to 400 in six years', then read the slide: 389 to 417, only 28 more mills. The output surge came from running existing mills far harder.",
+   "f": "389 → 417 (+28)",
+   "lec": 33
+  },
+  {
+   "id": "ebh-t0167",
+   "h": "Germany occupied France, Belgium and the Netherlands, never Britain",
+   "p": "He misspoke that Germany 'captured Britain'. Britain was bombed and blockaded but not occupied (L#27). India's western trade partners that were occupied were France, Belgium and the Netherlands.",
+   "f": "occupied: F, B, NL",
+   "lec": 33
+  },
+  {
+   "id": "ebh-t0168",
+   "h": "31.4% → 21.2% is the UK's share of India's imports, not a 21% fall in imports",
+   "p": "The figures are shares of India's total imports coming from the UK at the start of WWII and in 1945. The share fell by about a third; it does not mean imports fell 21%.",
+   "f": "share of imports, not volume",
+   "lec": 33
+  },
+  {
+   "id": "ebh-t0169",
+   "h": "TISCO's rails are WWI; TELCO's armoured vehicles are WWII",
+   "p": "TISCO (steel) supplied 1,500 miles of rails and 3 lakh tons of steel in 1914–18. TELCO (engineering) built armoured vehicles at Jamshedpur in 1939–45 for North Africa. Both are Tata, both Jamshedpur.",
+   "f": "TISCO rails, TELCO armour",
+   "lec": 33
+  },
+  {
+   "id": "ebh-t0170",
+   "h": "Kanpur came into prominence in WWII, not into existence",
+   "p": "He stressed the difference: the cantonment towns and their uniform and boot makers date from after 1857; WWII orders made Kanpur prominent.",
+   "f": "prominence, not existence",
+   "lec": 33
   }
  ],
  "defs": [
@@ -3302,6 +3505,150 @@ HUB.addCourse({
    "term": "Alexandra Mill",
    "html": "<b>Alexandra Mill</b> (1869): Jamsetji Nusserwanji Tata's first cotton mill, a bankrupt Bombay oil mill converted to cotton; followed by the Empress Mill (Nagpur, 1877).",
    "lec": 31
+  },
+  {
+   "id": "ebh-d0174",
+   "unit": "india-business",
+   "topic": "Mills & big business",
+   "term": "Managing agency",
+   "html": "<b>Managing agency</b>: a firm (usually a partnership) contracted by a company's directors to <b>manage it for a fee or commission</b>, often running many companies at once; abolished in India in <b>1970</b>.",
+   "bk": "Roy ch6"
+  },
+  {
+   "id": "ebh-d0175",
+   "unit": "india-business",
+   "topic": "Mills & big business",
+   "term": "Discriminating protection",
+   "html": "<b>Discriminating protection</b>: the interwar rule that an industry got a tariff only if it could show it would <b>become competitive and not need protection</b> after a few years.",
+   "bk": "Roy ch6"
+  },
+  {
+   "id": "ebh-d0176",
+   "unit": "india-business",
+   "topic": "Mills & big business",
+   "term": "Free-standing company",
+   "html": "<b>Free-standing company</b> (Mira Wilkins): a foreign-run firm in a colony that was a <b>trading partnership with links to a London or Liverpool house</b>, not a subsidiary of a parent manufacturer.",
+   "bk": "Roy ch6"
+  },
+  {
+   "id": "ebh-d0177",
+   "unit": "india-business",
+   "topic": "Mills & big business",
+   "term": "Labour contractor (jobber)",
+   "html": "<b>Labour contractor</b> (jobber): an intermediary who <b>recruited, trained and supervised</b> mill workers and could hire and fire them; long-lived in India because of the segmented workforce.",
+   "bk": "Roy ch6"
+  },
+  {
+   "id": "ebh-d0178",
+   "unit": "india-business",
+   "topic": "Mills & big business",
+   "term": "Surplus labour (Lewis model)",
+   "html": "<b>Surplus labour</b> (W. Arthur Lewis): in a traditional economy with underemployed workers, industry can draw labour at <b>low, steady wages</b> for a long time.",
+   "bk": "Roy ch6"
+  },
+  {
+   "id": "ebh-d0179",
+   "unit": "india-business",
+   "topic": "Indian entrepreneurs",
+   "term": "Business community",
+   "html": "<b>Business community</b>: a group bound by language, kinship, marriage and shared interest, using social sanctions (exclusion, marriage, jobs) to enforce honest dealing; not the same as a Hindu caste.",
+   "bk": "Roy ch6"
+  },
+  {
+   "id": "ebh-d0180",
+   "unit": "india-business",
+   "topic": "Mills & big business",
+   "term": "Limited liability",
+   "html": "<b>Limited liability</b>: shareholders risk only what they invested; formally recognised for Indian companies by the <b>Companies Act of 1850</b>.",
+   "bk": "Roy ch6"
+  },
+  {
+   "id": "ebh-d0181",
+   "unit": "india-business",
+   "topic": "Steel, cotton and jute in the war: Tata, Sarabhai, Birla",
+   "term": "TISCO",
+   "html": "<b>TISCO</b> (Tata Iron and Steel Company, Jamshedpur): supplied 1,500 miles of steel rails and 3 lakh tons of steel to the British military in 1914–18; by 1919 the British government bought 90% of its steel.",
+   "lec": 32
+  },
+  {
+   "id": "ebh-d0182",
+   "unit": "india-business",
+   "topic": "Steel, cotton and jute in the war: Tata, Sarabhai, Birla",
+   "term": "Calico Mills (Sarabhai)",
+   "html": "<b>Calico Mills</b>: the Sarabhai group's Ahmedabad textile mills, which rose in WWI; the group later diversified into chemicals, dyes and pharmaceuticals.",
+   "lec": 32
+  },
+  {
+   "id": "ebh-d0183",
+   "unit": "india-business",
+   "topic": "Indian business and the Swadeshi movement",
+   "term": "Swadeshi movement (1905)",
+   "html": "<b>Swadeshi movement</b>: began in 1905 against the partition of Bengal; its goal was to boycott foreign goods, especially textiles, in favour of Indian-made ones.",
+   "lec": 32
+  },
+  {
+   "id": "ebh-d0184",
+   "unit": "india-business",
+   "topic": "Indian business and the Swadeshi movement",
+   "term": "Nationalist capitalist class",
+   "html": "<b>Nationalist capitalist class</b>: the lecturer's term for the Indian business houses (Birla, Tata, Sarabhai, Lalbhai) that grew in WWI and backed the Swadeshi and independence movements with money and support.",
+   "lec": 32
+  },
+  {
+   "id": "ebh-d0185",
+   "unit": "india-business",
+   "topic": "Indian business and the Swadeshi movement",
+   "term": "Champaran movement (1917)",
+   "html": "<b>Champaran, 1917</b>: the first movement in India that Gandhi led from the front, using non-violence and satyagraha; it fell inside the WWI years, when Birla had just met Gandhi (1916).",
+   "lec": 32
+  },
+  {
+   "id": "ebh-d0186",
+   "unit": "india-business",
+   "topic": "Steel, cotton and jute in the war: Tata, Sarabhai, Birla",
+   "term": "Switching costs (B2G supply)",
+   "html": "<b>Switching costs</b>: the cost a buyer bears in moving to another supplier; the lecturer's reason why the British government kept buying TISCO's steel, whose scale and expertise other firms lacked.",
+   "lec": 32
+  },
+  {
+   "id": "ebh-d0187",
+   "unit": "india-business",
+   "topic": "War supplies: uniforms, leather, TELCO and the new industries",
+   "term": "TELCO",
+   "html": "<b>TELCO</b> (Tata Engineering and Locomotive Company): built a special plant at Jamshedpur in WWII that produced armoured vehicles in thousands for the British army in North Africa.",
+   "lec": 33
+  },
+  {
+   "id": "ebh-d0188",
+   "unit": "india-business",
+   "topic": "WWI vs WWII, the Bombay Plan, and the course in review",
+   "term": "Bombay Plan",
+   "html": "<b>Bombay Plan</b>: the plan drawn up by leading Indian industrialists meeting in Bombay during WWII, recommending which sectors independent India's government should control, leave private or control partially; presented to the Indian government.",
+   "lec": 33
+  },
+  {
+   "id": "ebh-d0189",
+   "unit": "india-business",
+   "topic": "War supplies: uniforms, leather, TELCO and the new industries",
+   "term": "Bengal famine (1943)",
+   "html": "<b>Bengal famine, 1943</b>: millions died across Bengal; the lecture's cause is wartime resource diversion of food grains from the population to the war effort, worsened by uncontrolled food inflation.",
+   "lec": 33
+  },
+  {
+   "id": "ebh-d0190",
+   "unit": "india-business",
+   "topic": "War supplies: uniforms, leather, TELCO and the new industries",
+   "term": "Resource diversion",
+   "html": "<b>Resource diversion</b>: wartime redirection of food grains, raw materials and supplies from civilians to the military; in WWII India it starved consumers and small firms while big firms grew.",
+   "lec": 33
+  },
+  {
+   "id": "ebh-d0191",
+   "unit": "india-business",
+   "topic": "War supplies: uniforms, leather, TELCO and the new industries",
+   "term": "Kanpur (uniforms and boots)",
+   "html": "<b>Kanpur</b>: a cantonment-era centre (after 1857) specialising in army uniforms and military boots that came into prominence, not existence, on WWII demand.",
+   "lec": 33
   }
  ],
  "questions": [
@@ -12512,6 +12859,1049 @@ HUB.addCourse({
    "w": "Trade came first (1813–1850s), coal from 1834 (Carr, Tagore), mills from 1854 (Tata from 1869), and Godrej's locks in the late 1890s.",
    "lec": 31,
    "lv": "apply"
+  },
+  {
+   "id": "ebh-q0556",
+   "topic": "Mills & big business",
+   "q": "Which three features does Roy use to define large-scale industry?",
+   "c": [
+    "Wage labour, machinery, and regulation by factory and company law",
+    "State ownership, tariffs and exports",
+    "Family ownership, apprenticeships and guilds",
+    "Steam power, foreign capital and urban location"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Roy's definition is wage labour plus machinery plus legal regulation. Family ownership and apprenticeship describe small-scale or traditional industry.",
+   "bk": "Roy ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0557",
+   "topic": "Mills & big business",
+   "q": "Which five cities held the bulk of colonial India's factory employment?",
+   "c": [
+    "Delhi, Lahore, Lucknow, Patna, Dhaka",
+    "Bombay, Ahmedabad, Madras, Calcutta, Kanpur",
+    "Surat, Benares, Agra, Nagpur, Hyderabad",
+    "Karachi, Rangoon, Colombo, Calcutta, Bombay"
+   ],
+   "a": [
+    1
+   ],
+   "w": "These were transport hubs with migrants, capital markets and European settlement, linked by rail to raw materials.",
+   "bk": "Roy ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0558",
+   "topic": "Indian entrepreneurs",
+   "q": "Who founded the first successful cotton mill in Bombay, and when?",
+   "c": [
+    "Jamsetji Tata, 1877",
+    "George Acland, 1855",
+    "C. N. Davar, a Parsi merchant, 1854",
+    "Dwarkanath Tagore, 1838"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Davar's 1854 mill succeeded where earlier European ventures had failed. Acland pioneered jute near Calcutta in 1855.",
+   "bk": "Roy ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0559",
+   "topic": "Mills & big business",
+   "q": "Roy asks why factories emerged at all when capital was expensive and skills scarce. Which answer is his?",
+   "c": [
+    "Tariff protection from the 1850s",
+    "State-owned factories set up by the British",
+    "Cheap credit from Indian banks",
+    "The colonial and global connection: trading profits, railways, Manchester machinery and supervisors, and British investment"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Openness and empire overcame the barriers. Tariffs came only in the 1920s; Indian credit was expensive; most factories were private.",
+   "bk": "Roy ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0560",
+   "topic": "Wars & the Depression",
+   "q": "How did the First World War affect Indian industry?",
+   "c": [
+    "It raised demand for textiles and jute but cut off imported machinery, metals and chemicals, and turned officials towards industrial policy",
+    "It destroyed the jute industry",
+    "It had no effect because India was far from the fighting",
+    "It ended all British investment in India"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Exporting factories made big profits by the war's later years, while shortages of imported stores led to the Industrial Commission, Stores Purchase Committee and Fiscal Commission.",
+   "bk": "Roy ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0561",
+   "topic": "Wars & the Depression",
+   "q": "Which body recommended tariff protection for selected Indian industries in the early 1920s?",
+   "c": [
+    "The Indian Industrial Commission (1916–18)",
+    "The Fiscal Commission (1922)",
+    "The Royal Commission on Agriculture",
+    "The Planning Commission"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The Industrial Commission was a fact-finding survey; the Fiscal Commission (1922) and the Stores Purchase Committee (1920) changed policy. The Planning Commission came after 1947.",
+   "bk": "Roy ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0562",
+   "topic": "Mills & big business",
+   "q": "Under 'discriminating protection', what did an industry have to show to win a tariff?",
+   "c": [
+    "That it was owned by Indians",
+    "That it employed over 10,000 workers",
+    "That it would become competitive and not need protection after a few years",
+    "That it exported most of its output"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The Tariff Board tested future competitiveness, worried about low productivity. Indian ownership became a political argument only later, when protection turned into an entitlement.",
+   "bk": "Roy ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0563",
+   "topic": "Mills & big business",
+   "q": "In 1923 cheap Belgian steel pushed Tata Steel close to bankruptcy. What saved it?",
+   "c": [
+    "Nationalisation by the British government",
+    "A merger with Associated Cement Companies",
+    "Moving production to Burma",
+    "Tariff protection from 1924, granted partly because of goodwill earned supplying the war effort"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Tata's wartime contribution won administrators' support; protection from 1924 let it expand in 1925–35 and survive the Depression. ACC was a cement merger.",
+   "bk": "Roy ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0564",
+   "topic": "Mills & big business",
+   "q": "Before the 1920s, what helped Tata decide it could make steel more cheaply than imports?",
+   "c": [
+    "It was already India's largest steel importer and knew the market",
+    "It had a government monopoly",
+    "It owned British steelworks",
+    "It had cheap Belgian technology"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The Tatas' textile brand and their knowledge as the leading importer, plus long raw-material surveys, underpinned the 1907 venture.",
+   "bk": "Roy ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0565",
+   "topic": "Mills & big business",
+   "q": "Why did the European jute cartel fail between the wars?",
+   "c": [
+    "The government banned cartels",
+    "Dundee mills undercut it",
+    "Indian mill owners enriched by the First World War stayed outside it, so collusion broke down",
+    "Raw jute ran out"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Bishnupriya Gupta's work, cited by Roy: new Indian owners did not cooperate. Excess production followed and Bengal later imposed output limits.",
+   "bk": "Roy ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0566",
+   "topic": "Mills & big business",
+   "q": "Until 1914 Bombay's cotton mills mainly sold what, to whom?",
+   "c": [
+    "Fine cloth to European consumers",
+    "Machinery to Japanese mills",
+    "Jute sacking to grain exporters",
+    "Coarse yarn to handloom weavers in India and China"
+   ],
+   "a": [
+    3
+   ],
+   "w": "They competed with British yarn in coarse counts. Losing China to Japanese mills forced the interwar shift into weaving and finer yarn.",
+   "bk": "Roy ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0567",
+   "topic": "Mills & big business",
+   "q": "Japanese mills produced about three and a half times more cloth per weaver than Bombay's. Which explanation does Roy himself propose?",
+   "c": [
+    "Workers chose a lower effort level and unions resisted change",
+    "Managers failed to use better wages as an incentive",
+    "Mills relied on labour contractors for training, and contractors cared more about their influence than efficiency",
+    "Indian cotton was too short-staple"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Low effort with union resistance is Wolcott and Clark's explanation, and failing to use wages as an incentive is Bishnupriya Gupta's. Roy's own hypothesis points to the labour contractor.",
+   "bk": "Roy ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0568",
+   "topic": "Mills & big business",
+   "q": "Why, according to Roy, did landholding peasant families send men to factories?",
+   "c": [
+    "They had lost their land to moneylenders",
+    "Farm work was seasonal, so factory wages in the slack season raised family income and spread risk while women kept the land and home",
+    "The British forced them through labour laws",
+    "Factory wages were lower than farm wages"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Migration was a strategy to add income and keep a rural foothold, not an escape from destitution. Early marriage kept women at home.",
+   "bk": "Roy ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0569",
+   "topic": "Mills & big business",
+   "q": "Why did the labour contractor (jobber) survive much longer in Indian factories than in Britain, the US or Japan?",
+   "c": [
+    "Factory law required one",
+    "Contractors owned the mills",
+    "Unions insisted on them",
+    "The workforce was ethnically segmented, and contractors could communicate with and control particular groups"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Each language or caste group tended to monopolise a department; community elders acting as contractors held influence over them.",
+   "bk": "Roy ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0570",
+   "topic": "Mills & big business",
+   "q": "Who founded the first successful large-scale trade union in Bombay's textile mills, and when?",
+   "c": [
+    "N. M. Joshi, Bombay Textile Labour Union, 1926",
+    "Mahatma Gandhi, Ahmedabad, 1918",
+    "The RMMS, 1946",
+    "B. R. Ambedkar, 1936"
+   ],
+   "a": [
+    0
+   ],
+   "w": "N. M. Joshi's union came in 1926. The RMMS was recognised as sole representative under the 1946 Bombay Industrial Relations Act.",
+   "bk": "Roy ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0571",
+   "topic": "Mills & big business",
+   "q": "Some historians call city factory workers 'unfortunate human beings'. How does Roy respond?",
+   "c": [
+    "He agrees, citing slum mortality",
+    "He argues their real wages fell below farm wages",
+    "He calls it too gloomy: factory wages were two to three times farm wages, towns escaped famine and caste barriers were weaker",
+    "He argues workers were all skilled artisans"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Roy accepts poor housing and health but points to faster-rising urban wages and more mobility. Strikes of the 1930s reflected Japanese competition, not misery.",
+   "bk": "Roy ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0572",
+   "topic": "Indian entrepreneurs",
+   "q": "Which pairing of pioneer cotton millowners and their community is correct?",
+   "c": [
+    "Sarabhai and Lalbhai: Parsis of Bombay",
+    "Petit, Wadia and Tata: Parsis; Sarabhai and Lalbhai: Jain bankers of Ahmedabad",
+    "Sassoons: Khojas",
+    "Khatau and Thakersey: Marwaris"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Sassoons were Baghdadi Jews; Khatau, Gokuldas and Thakersey were Bhatias from Kutch; Currimbhoy were Khojas. Ahmedabad's industry came from Hindu and Jain pedhis.",
+   "bk": "Roy ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0573",
+   "topic": "Indian entrepreneurs",
+   "q": "Around 1900, what were the main interests of Marwari houses such as Birla?",
+   "c": [
+    "Jute baling, mining, zamindari and import agency; they entered jute manufacturing later",
+    "Cotton mills in Bombay",
+    "Tea plantations in Assam",
+    "Steel manufacture"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Marwaris supplied raw materials to European firms in Calcutta. They moved into jute mills, sugar, paper and cement between the wars and took over British firms in the 1950s–60s.",
+   "bk": "Roy ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0574",
+   "topic": "Indian entrepreneurs",
+   "q": "What advantages explained Chettiar success as lenders in Burma's rice delta (1880–1930)?",
+   "c": [
+    "Colonial monopoly licences",
+    "Support from the Burmese king",
+    "Ownership of rice mills in Rangoon",
+    "Lengthy apprenticeships, a distinctive bookkeeping method, solidarity within the group, lending between firms and informal penalties for defaulters"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Superior organisation let Chettiars displace Burmese lenders. The 1930s crisis forced most to leave, and profits flowed into manufacturing in Tamil Nadu.",
+   "bk": "Roy ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0575",
+   "topic": "Mills & big business",
+   "q": "Why did companies adopt the managing agency system? (Select all)",
+   "c": [
+    "To raise capital from the market without exposing management to takeover",
+    "To spread scarce managerial talent across several companies",
+    "To guarantee loans and attract deposits through a trusted name",
+    "Because company law required it until 1970"
+   ],
+   "a": [
+    0,
+    1,
+    2
+   ],
+   "w": "These were its functions. It was a contractual choice, not a legal requirement; it was abolished in 1970.",
+   "bk": "Roy ch6",
+   "lv": "apply",
+   "multi": true
+  },
+  {
+   "id": "ebh-q0576",
+   "topic": "Mills & big business",
+   "q": "A family owns a managing agency and also a majority of shares in the cotton mill it manages; the agency speculates in raw cotton. Who is most at risk, and why?",
+   "c": [
+    "The family, because the agency fee is fixed",
+    "Mill workers, because wages fall",
+    "Minority public shareholders, because the family controls both sides and its decisions go unrecorded",
+    "The government, because tax falls"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Roy identifies this as the corporate governance problem of Indian agencies. European agencies were disciplined by public reputation across many managed firms.",
+   "bk": "Roy ch6",
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0577",
+   "topic": "Indian entrepreneurs",
+   "q": "Why did business families rely on community recruitment in the mid-nineteenth century, and what weakened it later?",
+   "c": [
+    "Religious law required it; independence ended it",
+    "Money and skills were scarce, so trust came through kin; contract laws of the 1870s, firm reputations and chambers of commerce later reduced the need",
+    "The British banned outsiders; the 1850 Act lifted the ban",
+    "Communities owned the banks; nationalisation ended it"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Social sanctions enforced honesty when formal enforcement was weak. Joint-family property law kept community firms resilient but bred succession disputes.",
+   "bk": "Roy ch6",
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0578",
+   "topic": "Mills & big business",
+   "q": "What is distinctive about India compared with other tropical colonies that received foreign investment?",
+   "c": [
+    "It had a strong body of indigenous capitalists alongside colonial firms",
+    "Its railways were entirely Indian-owned",
+    "It received no foreign capital",
+    "Its industry was entirely state-run"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Many colonies got foreign investment in mines, plantations and railways; India's strong Indian capitalist class made it unusual.",
+   "bk": "Roy ch6",
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0579",
+   "topic": "Wars & the Depression",
+   "q": "Which factors shifted the balance between European and Indian capital in favour of Indians between the wars? (Select all)",
+   "c": [
+    "Indian firms' profits in the First World War",
+    "The Depression hitting export-oriented foreign firms harder",
+    "Tariff-protected home markets and rising nationalism",
+    "A British law forcing foreign firms to sell out in 1930"
+   ],
+   "a": [
+    0,
+    1,
+    2
+   ],
+   "w": "There was no forced sale law; takeovers came in the 1950s–60s via the stock market and changed politics.",
+   "bk": "Roy ch6",
+   "lv": "analyse",
+   "multi": true
+  },
+  {
+   "id": "ebh-q0580",
+   "topic": "World Wars & Indian business",
+   "q": "According to L#32, why did imports from Britain into India fall so sharply in 1914–18?",
+   "c": [
+    "Britain imposed an export ban on India to punish the Swadeshi boycott",
+    "British manufacturing was diverted almost completely to the war effort, so it stopped serving its home and colonial markets",
+    "Indian tariffs were raised to protect the new mills",
+    "The Suez Canal was closed for the whole war"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The lecture's mechanism is diversion: weapons, uniforms and military supplies replaced goods for India. No tariff or export ban was involved, and he did not mention the Suez Canal.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0581",
+   "topic": "World Wars & Indian business",
+   "q": "Total net cotton imports into India were 3,000 million yards in 1913. What were they by the end of WWI, according to the lecture?",
+   "c": [
+    "About 63.3 million yards, a 75% drop",
+    "About 300 million yards, a 90% drop",
+    "About 2,500 million yards, a 17% drop",
+    "About 1,500 million yards, a 50% drop"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Total net cotton imports halved to 1,500 million yards. The 63.3 million yards and 75% belong to the narrower category of cotton piece goods.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0582",
+   "topic": "World Wars & Indian business",
+   "q": "Steel imports into India were about 1 million tons in 1913–14 and about 165,000 tons in 1917–18. Which statement is right?",
+   "c": [
+    "That is a drop of about 84%, leaving roughly one-sixth of the pre-war level",
+    "That is a drop of about 90%, leaving one-tenth of the pre-war level",
+    "That is a drop of about 50%, the same as total cotton imports",
+    "Steel imports rose, because the army needed more steel"
+   ],
+   "a": [
+    0
+   ],
+   "w": "165,000 ÷ 1,000,000 = 16.5%, so an 84% fall and about one-sixth left. He said 'one-tenth' in speech, but the slide's 84% matches the figures.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0583",
+   "topic": "World Wars & Indian business",
+   "q": "Which two sources of demand did Indian firms serve during WWI, according to the lecture?",
+   "c": [
+    "Exports to Germany and the Ottoman Empire, and the Chinese opium market",
+    "The British home market and the American market",
+    "The domestic civilian market that British goods used to supply, and the military, including Indian soldiers sent abroad",
+    "Only government orders; civilian demand collapsed"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The void had two parts: civilians in India who had bought British cloth and goods, and the war's demand for uniforms, food and supplies, which grew because India entered the war as a colony with a standing army.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0584",
+   "topic": "World Wars & Indian business",
+   "q": "What did TISCO supply to the British military during 1914–18, according to the slide?",
+   "c": [
+    "15,000 miles of steel rails and 3 million tons of steel",
+    "1,500 armoured vehicles for North Africa",
+    "1,500 miles of steel rails and about 300,000 tons of steel",
+    "3,000 tons of steel and 150 miles of rails"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The slide's figures are 1,500 miles of rails and 3 lakh (300,000) tons of steel. Armoured vehicles are TELCO's WWII story (L#33). The recording's '3,000 tons' is a slip.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0585",
+   "topic": "World Wars & Indian business",
+   "q": "TISCO supplied about 300,000 tons of steel to the military over the four to five war years. Using the lecturer's arithmetic, roughly how much did it make per year, and how much of that was the government buying by 1919?",
+   "c": [
+    "Roughly 60,000–75,000 tons a year, of which the government bought about 90%",
+    "Roughly 300,000 tons a year, of which the government bought about 10%",
+    "Roughly 6,000–7,500 tons a year, all of it bought by the government",
+    "Roughly 165,000 tons a year, of which the government bought half"
+   ],
+   "a": [
+    0
+   ],
+   "w": "300,000 ÷ 5 = 60,000 and ÷ 4 = 75,000 tons a year; by 1919 the British government was purchasing 90% of TISCO's output. 165,000 tons is the war-end steel import figure, not TISCO's output.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0586",
+   "topic": "World Wars & Indian business",
+   "q": "Why did the lecturer expect the British government to keep buying TISCO's steel after 1919?",
+   "c": [
+    "A treaty obliged Britain to buy Indian steel for 25 years",
+    "TISCO was owned by the British government",
+    "Steel imports from Britain were banned after the war",
+    "A large business-to-government supply relationship builds technical expertise and efficiency that rivals lack, so changing supplier carries switching costs"
+   ],
+   "a": [
+    3
+   ],
+   "w": "His reasoning was about switching costs in a big B2G transaction, not about ownership, treaties or bans.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0587",
+   "topic": "World Wars & Indian business",
+   "q": "Steel imports fell by about 835,000 tons a year during WWI, while TISCO made about 60,000–75,000 tons a year. What did the lecturer conclude from this comparison?",
+   "c": [
+    "TISCO alone replaced British steel in India",
+    "A single firm could not fill the gap, so the import collapse was an opportunity for many Indian businesses, not just the examples he named",
+    "India had no steel shortage during the war",
+    "The import figures on the slide must be wrong"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He used the gap to argue that the opportunity was wide: he had given only one or two examples per product category.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0588",
+   "topic": "World Wars & Indian business",
+   "q": "Why, according to L#32, did cotton textiles attract more Indian firms than steel did during the war?",
+   "c": [
+    "Textiles needed less capital, less heavy machinery and less technical expertise than steel",
+    "Textiles were exempt from British tariffs",
+    "The government ordered only cloth, not steel",
+    "Steel plants were banned outside Britain"
+   ],
+   "a": [
+    0
+   ],
+   "w": "His contrast was about entry barriers: steel needed scale, capital and expertise; cloth did not, so the industry spread across Bombay and Ahmedabad.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0589",
+   "topic": "World Wars & Indian business",
+   "q": "Which pairing of wartime industry, region and business house matches the lecture?",
+   "c": [
+    "Jute: Ahmedabad: the Sarabhai group",
+    "Cotton textiles: Bengal: TISCO",
+    "Jute: Bengal: G.D. Birla, a jute trader in Calcutta",
+    "Steel: Bombay: the Birla group"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Jute was the eastern industry, in Bengal, and Birla's fortune came from trading it. Cotton was western (Tata in Bombay, Sarabhai's Calico Mills in Ahmedabad); steel was TISCO at Jamshedpur.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0590",
+   "topic": "World Wars & Indian business",
+   "q": "Why did jute demand jump during WWI, according to the lecture?",
+   "c": [
+    "Jute replaced cotton in army uniforms",
+    "Jute is thick and strong, so it was the packing material for grain and military supplies",
+    "Jute was used to make steel rails lighter",
+    "Germany had bought all of Bengal's jute before 1914"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Packing grain and supplies for the war drove jute, hence looms rising from 30,000 to 39,000 and profits peaking at ₹7 crore in 1918.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0591",
+   "topic": "World Wars & Indian business",
+   "q": "The Birla family's fortune was about $1 million before WWI. What happened to it during the war, according to the lecture?",
+   "c": [
+    "It halved, because jute exports were blocked",
+    "It rose a hundredfold, to about $100 million, on steel contracts",
+    "It stayed flat until the Non-Cooperation Movement",
+    "It quadrupled, to about $4 million, on the demand for jute"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Jute demand quadrupled the family fortune to about $4 million. Birla was a jute trader, not a steel maker.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0592",
+   "topic": "Rise of Indian industry",
+   "q": "Which later path did the lecture describe for the Sarabhai group after its Calico Mills grew in WWI?",
+   "c": [
+    "It moved into steel and built a plant at Jamshedpur",
+    "It became India's largest jute exporter",
+    "It was nationalised in 1947",
+    "It diversified into chemicals, dyes and pharmaceuticals, was a big pharmaceutical name by the 1960s, then lost share to newer domestic firms"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Sarabhai diversified like Tata, into chemicals, dyes and pharma, and later lost market share in the 1960s–80s. Steel and Jamshedpur are Tata; jute is Bengal.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0593",
+   "topic": "Rise of Indian industry",
+   "q": "What point did the lecturer make by noting that Tata was in both steel and textiles when WWI began?",
+   "c": [
+    "Tata was the only Indian firm allowed to supply the army",
+    "A firm that had already diversified could capture the wartime opportunity in more than one product category",
+    "Steel and textiles were the same business in 1914",
+    "Diversification was forced on Tata by the government"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He used Tata as an example of diversification before the opportunity arrived: it gained in steel rails and in uniforms and blankets at the same time.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0594",
+   "topic": "Business & the freedom movement",
+   "q": "When and why did the Swadeshi movement begin, according to L#32?",
+   "c": [
+    "In 1914, to supply uniforms to the Indian army",
+    "In 1917, after Gandhi's Champaran movement",
+    "In 1905, as a response to the partition of Bengal, to boycott foreign goods, especially textiles",
+    "In 1857, after the First War of Independence"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Swadeshi dates from 1905 and the partition of Bengal, with a boycott of foreign cloth at its heart. 1917 is Champaran; 1857 is the First War of Independence (L#31).",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0595",
+   "topic": "Business & the freedom movement",
+   "q": "In which year did G.D. Birla come into contact with Gandhi, according to the lecture, and why did the lecturer stress it?",
+   "c": [
+    "1916: it falls inside the WWI years, so the war that enriched Indian business also saw that business tie itself to the independence movement",
+    "1905: it was the year the Swadeshi movement began",
+    "1920: it was the start of the Non-Cooperation Movement",
+    "1947: it was the year of independence"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Birla met Gandhi in 1916, during the war; Champaran followed in 1917. The timing is his point about the two stories running together.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0596",
+   "topic": "Business & the freedom movement",
+   "q": "The lecturer called the relationship between Indian business and the Swadeshi movement mutual. Which pair of flows did he describe?",
+   "c": [
+    "Business paid taxes to the British; the movement lobbied for tariffs",
+    "Business gave capital and support to the leaders; the movement created demand for indigenous goods that helped Indian firms",
+    "Business supplied the army; the movement organised strikes in the mills",
+    "The movement funded the mills; business ran the boycotts"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Capital flowed one way, demand for swadeshi goods flowed the other. He did not describe tariffs, strikes or the movement funding mills.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0597",
+   "topic": "Business & the freedom movement",
+   "q": "Which Indian business families did L#32 name as supporters of the independence leaders in the 1920s movements (Khadi, Non-Cooperation)?",
+   "c": [
+    "The Birlas and the Lalbhais",
+    "The Palmers and the Carrs",
+    "The Wadias and the Jejeebhoys",
+    "The Sassoons and the Currimbhoys"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He named the Birlas and the Lalbhais of Ahmedabad. Palmer and Carr were agency-house names (L#31); the Wadias and Jejeebhoy belong to the 1700s–1840s shipping and opium story.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0598",
+   "topic": "World Wars & Indian business",
+   "q": "The UK's share of India's imports was 31.4% when WWII began. What was it by 1945, according to L#33?",
+   "c": [
+    "31.4%, unchanged, because India was a captive market",
+    "21.2%",
+    "50%, as other suppliers were cut off",
+    "2.1%"
+   ],
+   "a": [
+    1
+   ],
+   "w": "It fell to 21.2%, about a third lower, even though India remained Britain's captive colonial market. The fall continued a decline that had begun in WWI.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0599",
+   "topic": "World Wars & Indian business",
+   "q": "Why was India's trade with France, Belgium and the Netherlands disrupted in WWII, according to the lecture?",
+   "c": [
+    "They joined the Axis voluntarily",
+    "Japan captured their colonies in Asia",
+    "They imposed tariffs on Indian cotton",
+    "Nazi Germany occupied them, so they were held by the enemy"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The western disruption came from German occupation (1940). Japan's captures were in the east: Burma, Malaya and Singapore.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0600",
+   "topic": "World Wars & Indian business",
+   "q": "Which eastern trade partners did India lose after Japan's advance in 1941–42, according to the lecture?",
+   "c": [
+    "Burma, Malaya and Singapore",
+    "China, Korea and Taiwan",
+    "Ceylon, Mauritius and Aden",
+    "Australia and New Zealand"
+   ],
+   "a": [
+    0
+   ],
+   "w": "His slide's 'East Asia' meant Burma, Malaya and Singapore, captured by Japan in 1941–42.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0601",
+   "topic": "World Wars & Indian business",
+   "q": "Why did the lecturer call WWII's trade impact on India more severe than WWI's?",
+   "c": [
+    "Britain stopped all trade with India as punishment for Quit India",
+    "WWI had not affected British manufacturing at all",
+    "Trade was cut on both the western side (occupied France, Belgium, Netherlands) and the eastern side (Japanese-held Burma, Malaya, Singapore), not just with Britain",
+    "India's ports were destroyed by bombing"
+   ],
+   "a": [
+    2
+   ],
+   "w": "His reason was geography: two fronts of disruption instead of one. He did not mention Quit India or port bombing.",
+   "lec": 33,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0602",
+   "topic": "World Wars & Indian business",
+   "q": "Military uniform output in India rose from 75,000 items a month before the war to 7 million a month by September 1941. Roughly how many times is that?",
+   "c": [
+    "About 1,000 times",
+    "About 10 times",
+    "About 93 times, nearly a hundredfold",
+    "About 9 times"
+   ],
+   "a": [
+    2
+   ],
+   "w": "7,000,000 ÷ 75,000 ≈ 93. He said 'almost 100 or 1,000 times' and the summary kept 1,000, but the arithmetic gives about 93.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0603",
+   "topic": "World Wars & Indian business",
+   "q": "Cotton mills rose only from 389 to 417 while uniform output rose nearly a hundredfold. How did the lecturer reconcile the two figures?",
+   "c": [
+    "Pre-war mills had run well below capacity, so the surge came mostly from existing mills working much harder",
+    "The slide's mill figures must be wrong",
+    "Most uniforms were imported from Lancashire",
+    "Uniforms were made of jute, not cotton"
+   ],
+   "a": [
+    0
+   ],
+   "w": "His explanation was capacity utilisation: mills that had run at perhaps 20–50% now ran flat out. Only 28 mills were added.",
+   "lec": 33,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0604",
+   "topic": "World Wars & Indian business",
+   "q": "What did the lecture say about Kanpur in WWII?",
+   "c": [
+    "It was founded in 1941 to house TELCO's armour plant",
+    "It became India's main jute port",
+    "It was the site of the Bombay Plan meetings",
+    "It came into prominence, not existence, as a centre for army uniforms and military boots; such centres date from the cantonments after 1857"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He stressed prominence versus existence. TELCO's plant was at Jamshedpur; jute is Bengal; the plan was drawn up in Bombay.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0605",
+   "topic": "World Wars & Indian business",
+   "q": "The value of India's military leather output (boots, saddlery, equipment) was £3 million in 1940. What was it in 1941, according to the lecture?",
+   "c": [
+    "£3.5 million",
+    "£14.5 million, nearly five times in one year",
+    "£30 million, ten times",
+    "£145 million"
+   ],
+   "a": [
+    1
+   ],
+   "w": "£3 million to £14.5 million in a single year, about 4.8 times. He used the one-year jump to show the scale of WWII demand.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0606",
+   "topic": "World Wars & Indian business",
+   "q": "What did TELCO do during WWII, according to the lecture?",
+   "c": [
+    "Built a special plant at Jamshedpur to make armoured vehicles, produced in thousands for the British army in North Africa",
+    "Supplied 1,500 miles of steel rails to the British military",
+    "Made army uniforms in Kanpur",
+    "Ran the jute mills of Bengal"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Armoured vehicles at Jamshedpur for North Africa are TELCO in WWII. The 1,500 miles of rails are TISCO in WWI (L#32).",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0607",
+   "topic": "World Wars & Indian business",
+   "q": "Besides textiles and steel, which industries did the lecture say received a major boost in WWII India?",
+   "c": [
+    "Opium, indigo and raw cotton",
+    "Shipbuilding, banking and insurance",
+    "Paper, cement and chemicals",
+    "Tea, coffee and sugar"
+   ],
+   "a": [
+    2
+   ],
+   "w": "His list was steel, paper, cement and chemical production, plus engineering (TELCO). Opium, indigo and raw cotton are the 1813–1850s exports of L#30.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0608",
+   "topic": "World Wars & Indian business",
+   "q": "Why, according to the lecture, did WWII's opportunities go mostly to big firms?",
+   "c": [
+    "The government licensed only firms with British partners",
+    "Expansion on that scale needed capital, and only firms with reserves could survive the shortages and supply uncertainty of wartime raw materials",
+    "Small firms were banned from military contracts",
+    "Big firms were exempt from income tax"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Capital and the ability to ride out shortages and uncertain supply were his reasons. Small businesses lacked reserves and struggled.",
+   "lec": 33,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0609",
+   "topic": "World Wars & Indian business",
+   "q": "Which two reasons did L#33 give for consumers suffering in WWII India?",
+   "c": [
+    "Higher income tax and compulsory war bonds",
+    "Conscription of men and women into the army",
+    "A ban on jute sacks and cotton cloth for civilian use",
+    "Resource diversion of food grains to the war effort, which he linked to the 1943 Bengal famine, and uncontrolled inflation in food prices while wages stayed flat"
+   ],
+   "a": [
+    3
+   ],
+   "w": "His two consumer impacts were resource diversion (famine) and uncontrolled inflation. Taxes, bonds and conscription were not his points.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0610",
+   "topic": "World Wars & Indian business",
+   "q": "A manager writes: 'Bengal's small traders did well in 1943 because food prices rose.' Which lecture point contradicts this?",
+   "c": [
+    "Food prices actually fell in 1943",
+    "Small traders were all nationalised in 1943",
+    "Bengal was unaffected by the war",
+    "A starving society cannot sustain demand; the famine and food inflation hurt small businesses in the region most, since they lacked capital to survive"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He argued the social impact fed back into business: with food unavailable and prices rising faster than wages, small firms in the affected area could not thrive; only big firms might.",
+   "lec": 33,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0611",
+   "topic": "World Wars & Indian business",
+   "q": "Which best states the difference between the two wars' effects on Indian industry, according to L#33?",
+   "c": [
+    "WWI brought heavy engineering; WWII brought only textiles",
+    "WWI's push was mostly consumer goods (textiles, jute) and raw steel; WWII added chemicals, armour, machine engineering and cement",
+    "WWI hurt Indian industry; WWII helped it",
+    "The two wars had identical effects"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Foundations in WWI, diversification in WWII: that was his first difference.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0612",
+   "topic": "World Wars & Indian business",
+   "q": "Why, according to the lecture, could Indian firms diversify in WWII in a way they could not in WWI?",
+   "c": [
+    "The British government paid for new plants in 1939",
+    "Tariffs were abolished in 1939",
+    "In WWI they had cleared domestic debts and built their initial capital, so a foundation existed to build on",
+    "Japanese investment flowed into India"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The foundation argument: capital built in WWI made diversification possible in WWII. He did not credit British funding, tariff changes or Japanese capital.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0613",
+   "topic": "World Wars & Indian business",
+   "q": "What did the lecture say happened to India's financial position with the UK by the end of WWII?",
+   "c": [
+    "India cleared its debt to the UK and became a creditor, mainly of the UK itself, which strengthened its negotiating position",
+    "India's debt to the UK doubled",
+    "India defaulted on its debt",
+    "The UK wrote off India's debt as a gift"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Wartime growth let India clear its debt and become a creditor; since it was still ruled by Britain, the creditor relationship was mostly with the UK.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0614",
+   "topic": "Business & the freedom movement",
+   "q": "What was the Bombay Plan, as described in L#33?",
+   "c": [
+    "Gandhi's 1905 programme for boycotting foreign cloth",
+    "A plan drawn up by leading industrialists meeting in Bombay during WWII, recommending which sectors the government should control, leave private or control partially",
+    "The British government's scheme to ration food in Bombay in 1943",
+    "TELCO's plan for an armoured-vehicle plant"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The Bombay Plan was the nationalist capitalist class recommending industrial policy for independent India; it was presented to the Indian government.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0615",
+   "topic": "Business & the freedom movement",
+   "q": "How did the lecturer connect the two wars to the independence movement?",
+   "c": [
+    "WWI created a nationalist capitalist class that backed the movement; by WWII that class was strong enough to plan independent India's economic policy, as in the Bombay Plan",
+    "The wars ended business support for the Congress",
+    "Business leaders opposed independence in both wars",
+    "The movement had no business supporters until 1947"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Phase one, birth of the nationalist capitalist class (Tatas, Birlas, Lalbhais, perhaps Bajaj); phase two, that class recommending plans for industrial policy and price control.",
+   "lec": 33,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0616",
+   "topic": "World Wars & Indian business",
+   "q": "In his closing recap, how did the lecturer split the five modules between economic history and business history?",
+   "c": [
+    "Modules 1–4 are economic history; Module 5 is business history",
+    "All five modules are business history",
+    "Modules 2 and 5 are economic history; 3 and 4 business history",
+    "Modules 2–3 (agrarian economies, guilds, the Industrial Revolution) are economic history; Modules 4–5 (management, corporations, World Wars, Indian business) are business history"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He described Modules 2 and 3 as the economic-history part and Modules 4 and 5, both covering roughly 1800s/1850–1950, as the business-history part, global then Indian.",
+   "lec": 33,
+   "lv": "recall"
   }
  ],
  "briefs": {
@@ -12590,6 +13980,9 @@ HUB.addCourse({
   "ehi-ch02",
   "lec-29",
   "lec-30",
-  "lec-31"
+  "lec-31",
+  "ehi-ch06",
+  "lec-32",
+  "lec-33"
  ]
 });

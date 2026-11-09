@@ -193,6 +193,18 @@ HUB.addCourse({
    "Week 12 — Python: Classes Part 1",
    "Classes, instances, __init__() and self",
    "rec"
+  ],
+  [
+   32,
+   "Week 13 — Python: Classes Part 2: Inheritance",
+   "Default values, changing attributes, inheritance, super()",
+   "rec"
+  ],
+  [
+   33,
+   "Week 13 — Python: Classes Part 3: Modules",
+   "Importing classes, modules into modules, standard library",
+   "rec"
   ]
  ],
  "units": [
@@ -680,13 +692,13 @@ HUB.addCourse({
   {
    "id": "classes",
    "title": "Classes",
-   "tag": "Lectures 29, 31",
-   "lede": "Blueprints for objects. A class bundles data (attributes, set in __init__() through self) and behaviour (methods); each instance made from it holds its own values. Part 1 covers the Dog and Car classes; inheritance, previewed in Live Lecture 6, comes next.",
+   "tag": "Lectures 29, 31–33",
+   "lede": "Blueprints for objects. A class bundles data (attributes, set in __init__() through self) and behaviour (methods); each instance made from it holds its own values. Part 1 covers the Dog and Car classes; Part 2 adds default attribute values, the three ways to change an attribute, inheritance with super().__init__(), overriding, and a Battery instance stored as an attribute; Part 3 stores classes in modules, imports one, several or all of them, imports a module into a module, and opens the standard library (OrderedDict, randint).",
    "topics": [
     {
      "t": "Classes and instances: the blueprint idea",
      "src": "L#31",
-     "h": "<p style=\"font-size:14.5px\">The functions chapter ended with functions grouped into modules. The new chapter, <b>classes</b>, goes a step further. Classes make <b>object-oriented programming</b> (OOP) possible in Python, which he called one of the most effective ways to write software: you write classes that represent real-world things and situations, then create objects from them.</p><ul><li>A <b>class</b> defines the general behaviour and characteristics that a whole category of objects shares.</li><li>Each object made from it, an <b>instance</b>, automatically gets that general behaviour, and can then be given its own particular values.</li><li>Making an instance from a class is called <b>instantiation</b>.</li></ul><h4>The architect's blueprint</h4><p style=\"font-size:14.5px\">His picture: a house blueprint showing three bedrooms, a hall, three washrooms, a kitchen, a garage, a balcony and a kitchen garden. The blueprint is the <b>class</b>. A real house built from it at one address is an <b>instance</b>. From one blueprint you can build fifty houses, each a distinct instance with its own paint colour and occupants. In code, the different paint colours are the different arguments passed when each instance is made.</p><div class=\"def\"><b>From the lecture (L#29):</b> \"Why do we need classes?\" or \"What are the advantages of classes?\" can come as a short-answer question in the final. The answer he pointed to is this one: one blueprint, many instances with the same structure but different values.</div><p style=\"font-size:14.5px\">Later in the chapter: classes that extend existing classes so that similar classes share code, and storing classes in modules to import them, as was done with functions in L#30.</p>"
+     "h": "<p style=\"font-size:14.5px\">The functions chapter ended with functions grouped into modules. The new chapter, <b>classes</b>, goes a step further. Classes make <b>object-oriented programming</b> (OOP) possible in Python, which he called one of the most effective ways to write software: you write classes that represent real-world things and situations, then create objects from them.</p><ul><li>A <b>class</b> defines the general behaviour and characteristics that a whole category of objects shares.</li><li>Each object made from it, an <b>instance</b>, automatically gets that general behaviour, and can then be given its own particular values.</li><li>Making an instance from a class is called <b>instantiation</b>.</li></ul><h4>The architect's blueprint</h4><p style=\"font-size:14.5px\">His picture: a house blueprint showing three bedrooms, a hall, three washrooms, a kitchen, a garage, a balcony and a kitchen garden. The blueprint is the <b>class</b>. A real house built from it at one address is an <b>instance</b>. From one blueprint you can build fifty houses, each a distinct instance with its own paint colour and occupants. In code, the different paint colours are the different arguments passed when each instance is made.</p><div class=\"def\"><b>From the lecture (L#29):</b> \"Why do we need classes?\" or \"What are the advantages of classes?\" can come as a short-answer question in the final. The answer he pointed to is this one: one blueprint, many instances with the same structure but different values.</div><p style=\"font-size:14.5px\">The rest of the chapter: classes that extend existing classes so that similar classes share code (inheritance, L#32), and storing classes in modules to import them (L#33), as was done with functions in L#30.</p>"
     },
     {
      "t": "The Dog class: __init__() and self",
@@ -701,12 +713,62 @@ HUB.addCourse({
     {
      "t": "The Car class: a method that returns",
      "src": "L#31",
-     "h": "<p style=\"font-size:14.5px\">A second class, for cars, stores the make, model and year, and has one method that sums them up.</p><pre>class Car():\n    \"\"\"A simple attempt to represent a car.\"\"\"\n\n    def __init__(self, make, model, year):\n        \"\"\"Initialize attributes to describe a car.\"\"\"\n        self.make = make\n        self.model = model\n        self.year = year\n\n    def get_descriptive_name(self):\n        \"\"\"Return a neatly formatted descriptive name.\"\"\"\n        long_name = str(self.year) + ' ' + self.make + ' ' + self.model\n        return long_name.title()\n\nmy_new_car = Car('audi', 'a4', 2016)\nprint(my_new_car.get_descriptive_name())\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2016 Audi A4</span></pre><ul><li><code>self</code> again comes first; <code>make</code>, <code>model</code> and <code>year</code> become attributes, so every new Car needs all three values.</li><li><code>get_descriptive_name()</code> reads the attributes through <code>self</code>, converts the year with <code>str()</code>, and joins everything into one string. That spares you from printing each attribute separately.</li><li>Unlike <code>sit()</code>, which prints, this method <b>returns</b> its string, so the call is wrapped in <code>print()</code> (the same rule as L#30's greet()). <code>title()</code> turns 'audi a4' into Audi A4.</li></ul><h4>Exercises he set</h4><p style=\"font-size:14.5px\">Fifteen minutes on three tasks: write a restaurant class that stores a name and a cuisine type, with one method that describes the restaurant and one that announces it is open, then make an instance, print both attributes and call both methods; make three different restaurant instances and describe each; and write a user class with first and last names plus other profile details, a method that summarises the user and one that greets them, then make several users and call both methods for each.</p><div class=\"def\"><b>From the lecture (L#29):</b> some final-exam questions will be the coding exercises from the end of the recorded lectures, with names and details changed. These three are worth doing on paper as well as in Colab.</div><p style=\"font-size:14.5px\">Next session: default values for attributes, changing attribute values, and <b>inheritance</b>.</p>"
+     "h": "<p style=\"font-size:14.5px\">A second class, for cars, stores the make, model and year, and has one method that sums them up.</p><pre>class Car():\n    \"\"\"A simple attempt to represent a car.\"\"\"\n\n    def __init__(self, make, model, year):\n        \"\"\"Initialize attributes to describe a car.\"\"\"\n        self.make = make\n        self.model = model\n        self.year = year\n\n    def get_descriptive_name(self):\n        \"\"\"Return a neatly formatted descriptive name.\"\"\"\n        long_name = str(self.year) + ' ' + self.make + ' ' + self.model\n        return long_name.title()\n\nmy_new_car = Car('audi', 'a4', 2016)\nprint(my_new_car.get_descriptive_name())\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2016 Audi A4</span></pre><ul><li><code>self</code> again comes first; <code>make</code>, <code>model</code> and <code>year</code> become attributes, so every new Car needs all three values.</li><li><code>get_descriptive_name()</code> reads the attributes through <code>self</code>, converts the year with <code>str()</code>, and joins everything into one string. That spares you from printing each attribute separately.</li><li>Unlike <code>sit()</code>, which prints, this method <b>returns</b> its string, so the call is wrapped in <code>print()</code> (the same rule as L#30's greet()). <code>title()</code> turns 'audi a4' into Audi A4.</li></ul><h4>Exercises he set</h4><p style=\"font-size:14.5px\">Fifteen minutes on three tasks: write a restaurant class that stores a name and a cuisine type, with one method that describes the restaurant and one that announces it is open, then make an instance, print both attributes and call both methods; make three different restaurant instances and describe each; and write a user class with first and last names plus other profile details, a method that summarises the user and one that greets them, then make several users and call both methods for each.</p><div class=\"def\"><b>From the lecture (L#29):</b> some final-exam questions will be the coding exercises from the end of the recorded lectures, with names and details changed. These three are worth doing on paper as well as in Colab.</div><p style=\"font-size:14.5px\">Part 2 (L#32) continues with default values for attributes, changing attribute values, and <b>inheritance</b>.</p>"
     },
     {
      "t": "Live Lecture 6: classes and inheritance in review",
      "src": "L#29",
-     "h": "<p style=\"font-size:14.5px\">The last drills covered classes. He spoke of inheritance as already covered in the lectures, but Classes Part 1 (L#31) stops before it and lists it as the next topic, so treat this as a preview.</p><h4>The class line</h4><ul><li><code>class Car():</code> is the keyword <code>class</code>, the class name, brackets and a colon. The brackets are <b>empty</b> when the class starts from scratch.</li><li><code>class ElectricCar(Car):</code> puts the name of another class in the brackets: ElectricCar <b>inherits</b> from Car. Car is the <b>parent</b> class, also called the superclass, and ElectricCar is the <b>child</b> class.</li><li><code>__init__()</code> is a built-in method that runs automatically when you create an instance, as in <code>my_new_car = Car('audi', 'a4', 2016)</code>.</li></ul><h4>What inheritance gives the child</h4><pre>class ElectricCar(Car):\n    def __init__(self, make, model, year):\n        super().__init__(make, model, year)\n        self.battery_size = 70\n\n    def describe_battery(self):\n        print(\"This car has a \" + str(self.battery_size) + \"-kWh battery.\")\n\nmy_tesla = ElectricCar('tesla', 'model s', 2016)\nprint(my_tesla.get_descriptive_name())\nmy_tesla.describe_battery()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2016 Tesla Model S</span>\n<span class=\"o\">This car has a 70-kWh battery.</span></pre><p style=\"font-size:14.5px\">ElectricCar defines only <code>__init__()</code> and <code>describe_battery()</code>, yet <code>my_tesla.get_descriptive_name()</code> works. That method lives in Car (L#31), and a child class can use every method and attribute of its parent through its own instances. It doesn't work the other way: a plain Car has no <code>describe_battery()</code>.</p><p style=\"font-size:14.5px\">The <code>super().__init__(...)</code> line is the notebook's; he didn't discuss it in this session.</p><h4>Docstrings</h4><p style=\"font-size:14.5px\">A student asked who writes a class's or method's docstring. The programmer who writes the class or method: it's their job to explain what it does, so that anyone who uses it later can understand it.</p>"
+     "h": "<p style=\"font-size:14.5px\">The last drills covered classes. He spoke of inheritance as already covered in the lectures, but Classes Part 1 (L#31) stops before it; Part 2 (L#32) teaches it in full, so treat this as a preview of L#32.</p><h4>The class line</h4><ul><li><code>class Car():</code> is the keyword <code>class</code>, the class name, brackets and a colon. The brackets are <b>empty</b> when the class starts from scratch.</li><li><code>class ElectricCar(Car):</code> puts the name of another class in the brackets: ElectricCar <b>inherits</b> from Car. Car is the <b>parent</b> class, also called the superclass, and ElectricCar is the <b>child</b> class.</li><li><code>__init__()</code> is a built-in method that runs automatically when you create an instance, as in <code>my_new_car = Car('audi', 'a4', 2016)</code>.</li></ul><h4>What inheritance gives the child</h4><pre>class ElectricCar(Car):\n    def __init__(self, make, model, year):\n        super().__init__(make, model, year)\n        self.battery_size = 70\n\n    def describe_battery(self):\n        print(\"This car has a \" + str(self.battery_size) + \"-kWh battery.\")\n\nmy_tesla = ElectricCar('tesla', 'model s', 2016)\nprint(my_tesla.get_descriptive_name())\nmy_tesla.describe_battery()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2016 Tesla Model S</span>\n<span class=\"o\">This car has a 70-kWh battery.</span></pre><p style=\"font-size:14.5px\">ElectricCar defines only <code>__init__()</code> and <code>describe_battery()</code>, yet <code>my_tesla.get_descriptive_name()</code> works. That method lives in Car (L#31), and a child class can use every method and attribute of its parent through its own instances. It doesn't work the other way: a plain Car has no <code>describe_battery()</code>.</p><p style=\"font-size:14.5px\">The <code>super().__init__(...)</code> line is the notebook's; he didn't discuss it in this session.</p><h4>Docstrings</h4><p style=\"font-size:14.5px\">A student asked who writes a class's or method's docstring. The programmer who writes the class or method: it's their job to explain what it does, so that anyone who uses it later can understand it.</p>"
+    },
+    {
+     "t": "Default attribute values",
+     "src": "L#32",
+     "h": "<p style=\"font-size:14.5px\">Part 1 ended with the Car class: <code>class Car():</code>, then <code>__init__(self, make, model, year)</code> storing three attributes, then <code>get_descriptive_name()</code>. Part 2 starts by giving a car a fourth attribute that <b>nobody passes in</b>.</p><ul><li><b>Every attribute needs an initial value.</b> When that value is always the same for a new instance (0, an empty string), set it in the body of <code>__init__()</code> and <b>don't add a parameter</b> for it.</li><li>His example is an <b>odometer</b>: the meter in a car or two-wheeler that records how far it has travelled. A new car starts at 0, so <code>self.odometer_reading = 0</code> is hard-coded in <code>__init__()</code>.</li><li>A new method <code>read_odometer()</code> prints the reading. Like every method it still takes <code>self</code>, and nothing else.</li></ul><pre>class Car():\n    \"\"\"A simple attempt to represent a car.\"\"\"\n\n    def __init__(self, make, model, year):\n        \"\"\"Initialize attributes to describe a car.\"\"\"\n        self.make = make\n        self.model = model\n        self.year = year\n        self.odometer_reading = 0\n\n    def get_descriptive_name(self):\n        \"\"\"Return a neatly formatted descriptive name.\"\"\"\n        long_name = str(self.year) + ' ' + self.make + ' ' + self.model\n        return long_name.title()\n\n    def read_odometer(self):\n        \"\"\"Print a statement showing the car's mileage.\"\"\"\n        print(\"This car has \" + str(self.odometer_reading) + \" miles on it.\")\n\nmy_new_car = Car('audi', 'a4', 2016)\nprint(my_new_car.get_descriptive_name())\nmy_new_car.read_odometer()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2016 Audi A4</span>\n<span class=\"o\">This car has 0 miles on it.</span></pre><ul><li><code>Car('audi', 'a4', 2016)</code> still supplies only three values. Python stores them as before, then creates the fourth attribute itself from the line in <code>__init__()</code>.</li><li>The class now has three methods: <code>__init__()</code> (built in, runs automatically), <code>get_descriptive_name()</code> (returns a string, so it is wrapped in <code>print()</code>) and <code>read_odometer()</code> (prints on its own).</li></ul>"
+    },
+    {
+     "t": "Three ways to change an attribute",
+     "src": "L#32",
+     "h": "<p style=\"font-size:14.5px\">The default is 0; a real car moves. He showed three ways to change an attribute's value, each building on the last.</p><h4>1. Directly through the instance</h4><pre>my_new_car.odometer_reading = 23\nmy_new_car.read_odometer()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">This car has 23 miles on it.</span></pre><p style=\"font-size:14.5px\">Dot notation reaches the attribute and assigns to it: Python takes the instance <code>my_new_car</code>, finds its <code>odometer_reading</code>, and replaces 0 with 23. No method is involved, so nothing checks the new value.</p><h4>2. Through a method</h4><pre>    def update_odometer(self, mileage):\n        \"\"\"Set the odometer reading to the given value.\"\"\"\n        self.odometer_reading = mileage\n\nmy_new_car.update_odometer(25)\nmy_new_car.read_odometer()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">This car has 25 miles on it.</span></pre><p style=\"font-size:14.5px\"><code>update_odometer()</code> takes <code>self</code> plus one value, <code>mileage</code>, and stores it in the attribute. The point of going through a method is that you can <b>add logic</b>. An odometer only ever goes up, so he added a guard against rolling it back:</p><pre>    def update_odometer(self, mileage):\n        \"\"\"Set the odometer reading to the given value.\n        Reject the change if it attempts to roll the odometer back.\"\"\"\n        if mileage &gt;= self.odometer_reading:\n            self.odometer_reading = mileage\n        else:\n            print(\"You can't roll back an odometer!\")\n\nmy_new_car1 = Car('audi', 'a4', 2016)\nmy_new_car1.update_odometer(20)\nmy_new_car1.read_odometer()\nmy_new_car1.update_odometer(18)\nmy_new_car1.read_odometer()\nmy_new_car1.update_odometer(25)\nmy_new_car1.read_odometer()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">This car has 20 miles on it.</span>\n<span class=\"o\">You can't roll back an odometer!</span>\n<span class=\"o\">This car has 20 miles on it.</span>\n<span class=\"o\">This car has 25 miles on it.</span></pre><ul><li>20 ≥ 0, so the first update is accepted. 18 &lt; 20, so the <code>else</code> branch prints the warning and the reading <b>stays 20</b>. 25 ≥ 20, accepted again.</li><li>The test is <code>&gt;=</code>, so setting the same value again is allowed; only a smaller one is refused.</li><li>He made the point explicitly: this is the <b>advantage of a method</b> over direct assignment. The method can decide what is allowed; <code>my_new_car.odometer_reading = 5</code> would still go through unchecked.</li></ul><h4>3. Incrementing through a method</h4><p style=\"font-size:14.5px\">Sometimes you want to <b>add</b> an amount rather than set a new total. His example: a used car that covers 100 miles between buying it and registering it.</p><pre>    def increment_odometer(self, miles):\n        \"\"\"Add the given amount to the odometer reading.\"\"\"\n        self.odometer_reading += miles\n\nmy_used_car = Car('subaru', 'outback', 2013)\nprint(my_used_car.get_descriptive_name())\nmy_used_car.update_odometer(23500)\nmy_used_car.read_odometer()\nmy_used_car.increment_odometer(100)\nmy_used_car.read_odometer()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2013 Subaru Outback</span>\n<span class=\"o\">This car has 23500 miles on it.</span>\n<span class=\"o\">This car has 23600 miles on it.</span></pre><ul><li><code>+=</code> adds <code>miles</code> to whatever is already stored: 23500 + 100, not a replacement with 100.</li><li><code>update_odometer(23500)</code> on the fresh instance passes the guard because 23500 ≥ 0.</li><li>Nothing in this code stops a negative number being passed to <code>increment_odometer()</code>; the guard lives only in <code>update_odometer()</code>.</li></ul><div class=\"def\"><b>From the lecture (L#32):</b> the three ways are <b>direct</b> (instance.attribute = value), <b>through a method</b> (which can validate, like refusing a roll-back) and <b>incrementing through a method</b> (+=). Expect a 'what does this print' on the guard: a smaller value prints the warning and leaves the reading unchanged.</div><!--viz:foc-odometer-three-ways-trace--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace table for one Car instance: the reading starts at 0 from the default in __init__, becomes 23 by direct assignment, 25 through update_odometer, stays 25 when update_odometer(18) is refused, and becomes 125 after increment_odometer(100).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One car, five changes to odometer_reading</div><div class=\"scroller\"><table><thead><tr><th>Step</th><th>Code</th><th>Reading after</th><th>Why</th></tr></thead><tbody><tr><td>1</td><td style=\"font-family:var(--mono)\">car = Car('audi', 'a4', 2016)</td><td style=\"font-family:var(--mono)\">0</td><td>default in __init__()</td></tr><tr><td>2</td><td style=\"font-family:var(--mono)\">car.odometer_reading = 23</td><td style=\"font-family:var(--mono)\">23</td><td>direct: no check</td></tr><tr><td>3</td><td style=\"font-family:var(--mono)\">car.update_odometer(25)</td><td style=\"font-family:var(--mono);background:var(--good-soft)\">25</td><td>25 ≥ 23: accepted</td></tr><tr><td>4</td><td style=\"font-family:var(--mono)\">car.update_odometer(18)</td><td style=\"font-family:var(--mono);background:var(--bad-soft)\">25</td><td>18 &lt; 25: warning, unchanged</td></tr><tr><td>5</td><td style=\"font-family:var(--mono)\">car.increment_odometer(100)</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">125</td><td>+= adds to 25</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Direct assignment skips the guard; update_odometer() enforces it; increment_odometer() adds rather than replaces.</figcaption></figure><!--/viz:foc-odometer-three-ways-trace-->"
+    },
+    {
+     "t": "Inheritance: ElectricCar(Car) and super().__init__()",
+     "src": "L#32",
+     "h": "<p style=\"font-size:14.5px\">Each new method above meant retyping the whole Car class, which he called tedious. <b>Inheritance</b> is the fix: when the class you are writing is a specialised version of one you already have, the new class takes on everything the old one has. His analogy was people inheriting property from parents and grandparents.</p><ul><li>The original class is the <b>parent class</b>, also called the <b>superclass</b>; the new one is the <b>child class</b>, or <b>subclass</b>.</li><li>The child automatically gets <b>every attribute and method</b> of the parent, and is free to add new ones of its own.</li><li>The parent class must be <b>in the same file</b> and must appear <b>before</b> the child class.</li><li>The parent's name goes in the <b>brackets</b> of the child's class line. <code>class Car():</code> has empty brackets because it inherits from nothing; <code>class ElectricCar(Car):</code> inherits from Car.</li></ul><h4>__init__() for a child class</h4><p style=\"font-size:14.5px\">The first job when making an instance of a child class is to give values to all the <b>parent's</b> attributes. The child's <code>__init__()</code> gets help from the parent for that:</p><pre>class ElectricCar(Car):\n    \"\"\"Represent aspects of a car, specific to electric vehicles.\"\"\"\n\n    def __init__(self, make, model, year):\n        \"\"\"Initialize attributes of the parent class.\"\"\"\n        super().__init__(make, model, year)\n\nmy_tesla = ElectricCar('tesla', 'model s', 2016)\nprint(my_tesla.get_descriptive_name())\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2016 Tesla Model S</span></pre><ul><li><code>ElectricCar</code>'s <code>__init__()</code> takes the same <code>make</code>, <code>model</code> and <code>year</code> that any car needs.</li><li><code>super().__init__(make, model, year)</code> tells Python to call the <b>parent's</b> <code>__init__()</code> with those three values, so the new electric car gets <code>make</code>, <code>model</code>, <code>year</code> and <code>odometer_reading</code> exactly as a Car would. He asked for attention here: the values arrive in the child's <code>__init__()</code> first, then travel through <code>super()</code> to the parent's.</li><li>The name comes from <b>super</b>class. He called it a built-in Python method; strictly <code>super()</code> is a built-in function, which is why it has its own brackets before the dot.</li><li><code>get_descriptive_name()</code> is <b>not written in ElectricCar</b>, yet <code>my_tesla.get_descriptive_name()</code> works, because the child inherits it. At this stage ElectricCar has nothing of its own except <code>__init__()</code>; the test is only that it behaves like a Car.</li></ul><h4>Attributes and methods of the child's own</h4><pre>class ElectricCar(Car):\n    \"\"\"Represent aspects of a car, specific to electric vehicles.\"\"\"\n\n    def __init__(self, make, model, year):\n        \"\"\"Initialize attributes of the parent class.\n        Then initialize attributes specific to an electric car.\"\"\"\n        super().__init__(make, model, year)\n        self.battery_size = 70\n\n    def describe_battery(self):\n        \"\"\"Print a statement describing the battery size.\"\"\"\n        print(\"This car has a \" + str(self.battery_size) + \"-kWh battery.\")\n\nmy_tesla = ElectricCar('tesla', 'model s', 2016)\nprint(my_tesla.get_descriptive_name())\nmy_tesla.describe_battery()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2016 Tesla Model S</span>\n<span class=\"o\">This car has a 70-kWh battery.</span></pre><ul><li><code>self.battery_size = 70</code> is set after the <code>super()</code> line. It belongs to every ElectricCar instance and to <b>no Car instance</b>.</li><li><code>describe_battery()</code> is the child's own method. <code>my_tesla</code> can call both it and the inherited <code>get_descriptive_name()</code>.</li></ul><div class=\"def\"><b>The question he asked the class.</b> Make an instance of the <b>parent</b> instead, say <code>my_maruti = Car('swift', 'vxi', 2018)</code>. <code>my_maruti.get_descriptive_name()</code> works. <code>my_maruti.describe_battery()</code> does not: <b>AttributeError: 'Car' object has no attribute 'describe_battery'</b>. A child instance can use the parent's attributes and methods; a parent instance <b>cannot</b> use the child's.</div><p style=\"font-size:14.5px\">Where to put a method: anything that could belong to <b>any</b> car goes in <code>Car</code>, so everyone using Car gets it; only what is specific to electric vehicles goes in <code>ElectricCar</code>.</p><h4>Overriding a method from the parent</h4><p style=\"font-size:14.5px\">A parent method that makes no sense for the child can be <b>overridden</b>: define a method in the child with the <b>same name</b>, and Python disregards the parent's version for child instances. He added <code>fill_gas_tank()</code> to Car, printing <code>Filling the gas tank.</code>, then wrote in ElectricCar:</p><pre>    def fill_gas_tank(self):\n        \"\"\"Electric cars don't have gas tanks.\"\"\"\n        print(\"This car doesn't need a gas tank!\")\n\nmy_byd = ElectricCar('byd', 'seal', 2026)\nmy_byd.fill_gas_tank()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">This car doesn't need a gas tank!</span></pre><ul><li>The child's version wins for <code>my_byd</code>. A plain Car still prints <code>Filling the gas tank.</code></li><li>He then commented the child's method out: with no <code>fill_gas_tank()</code> in ElectricCar, the same call falls back to the <b>parent's</b> and prints <code>Filling the gas tank.</code></li></ul><!--viz:foc-parent-child-access--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison table: a Car instance can call get_descriptive_name, read_odometer and fill_gas_tank but not describe_battery, which raises AttributeError; an ElectricCar instance can call all four, and its fill_gas_tank prints the child's overridden message.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">What a parent instance and a child instance can call</div><div class=\"scroller\"><table><thead><tr><th>Call</th><th>my_maruti (Car)</th><th>my_tesla (ElectricCar)</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">.get_descriptive_name()</td><td style=\"background:var(--good-soft)\">works</td><td style=\"background:var(--good-soft)\">works (inherited)</td></tr><tr><td style=\"font-family:var(--mono)\">.read_odometer()</td><td style=\"background:var(--good-soft)\">works</td><td style=\"background:var(--good-soft)\">works (inherited)</td></tr><tr><td style=\"font-family:var(--mono)\">.describe_battery()</td><td style=\"background:var(--bad-soft)\">AttributeError</td><td style=\"background:var(--good-soft)\">works (own method)</td></tr><tr><td style=\"font-family:var(--mono)\">.fill_gas_tank()</td><td>Filling the gas tank.</td><td style=\"background:var(--blue-soft)\">This car doesn't need a gas tank!</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Inheritance runs downward only: the child reaches everything in the parent, the parent reaches nothing in the child.</figcaption></figure><!--/viz:foc-parent-child-access-->"
+    },
+    {
+     "t": "Instances as attributes: the Battery class",
+     "src": "L#32",
+     "h": "<p style=\"font-size:14.5px\">As you model something real, a class collects more and more attributes and methods and the file grows. When a group of them belongs together, split them into their <b>own class</b> and store an <b>instance</b> of it as an attribute of the first. The electric car was gathering battery details, so those move to a <code>Battery</code> class.</p><pre>class Battery():\n    \"\"\"A simple attempt to model a battery for an electric car.\"\"\"\n\n    def __init__(self, battery_size=70):\n        \"\"\"Initialize the battery's attributes.\"\"\"\n        self.battery_size = battery_size\n\n    def describe_battery(self):\n        \"\"\"Print a statement describing the battery size.\"\"\"\n        print(\"This car has a \" + str(self.battery_size) + \"-kWh battery.\")\n\n    def get_range(self):\n        \"\"\"Print a statement about the range this battery provides.\"\"\"\n        if self.battery_size == 70:\n            range = 240\n        elif self.battery_size == 85:\n            range = 270\n        message = \"This car can go approximately \" + str(range)\n        message += \" miles on a full charge.\"\n        print(message)\n\nclass ElectricCar(Car):\n    \"\"\"Represent aspects of a car, specific to electric vehicles.\"\"\"\n\n    def __init__(self, make, model, year):\n        super().__init__(make, model, year)\n        self.battery = Battery()\n\nmy_tata = ElectricCar('tata', 'tiago ev', 2026)\nprint(my_tata.get_descriptive_name())\nmy_tata.battery.describe_battery()\nmy_tata.battery.get_range()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2026 Tata Tiago Ev</span>\n<span class=\"o\">This car has a 70-kWh battery.</span>\n<span class=\"o\">This car can go approximately 240 miles on a full charge.</span></pre><ul><li><code>Battery</code> inherits from nothing. Its <code>__init__()</code> has one parameter besides <code>self</code>, <code>battery_size</code>, with a <b>default of 70</b>: <code>Battery()</code> with no argument gives a 70-kWh battery (the same optional-parameter rule as functions, L#28).</li><li><code>describe_battery()</code> has <b>moved</b> from ElectricCar to Battery, and <code>get_range()</code> is new: 70 kWh means about 240 miles, 85 kWh about 270. (The auto-transcript hears these as \"2 to 20\" and \"to 40\"; the code says 240. He also said kilometres once; the message says miles.)</li><li>In ElectricCar, <code>self.battery = Battery()</code> creates a <b>new Battery instance</b> every time an electric car is made and stores it in the attribute <code>battery</code>. The attribute <em>is</em> an instance, which is what the topic title means.</li><li>Reaching the battery's methods takes <b>two dots</b>: instance, its <code>battery</code> attribute, then the method. <code>my_tata.describe_battery()</code> no longer exists on the car; <code>my_tata.battery.describe_battery()</code> does. ElectricCar does not inherit from Battery and Battery does not inherit from ElectricCar; the link is only this attribute.</li><li>Pass a size to change the range: with <code>self.battery = Battery(85)</code>, <code>get_range()</code> prints 270 miles.</li></ul><p style=\"font-size:14.5px\">Why bother: the electric-car class stays short and readable, and the battery code can be described in as much detail as you like, or reused elsewhere, without cluttering ElectricCar. He called this breaking a large class into smaller classes that work together.</p><h4>Exercises he set (30 minutes, six tasks)</h4><ol><li>Extend L#31's <b>Restaurant</b> class: add <code>number_served</code> with a default of 0, print it, change it directly and print again; add a method that <b>sets</b> the number served and one that <b>increments</b> it, and call both.</li><li>Extend L#31's <b>User</b> class: add <code>login_attempts</code>, a method <code>increment_login_attempts()</code> that adds one, and <code>reset_login_attempts()</code> that sets it back to 0; call increment several times, print, reset, print again.</li><li>Write an <b>ice-cream stand</b> class based on Restaurant.</li><li>Write an <b>admin</b> class based on User.</li><li>Build on the classes from tasks 3 and 4.</li><li>Extend the session's <b>ElectricCar</b> and <b>Battery</b> classes.</li></ol><div class=\"def\"><b>From the lecture (L#32):</b> no exam format was discussed in this session, but L#29 said some end-term coding questions are these end-of-lecture exercises with names and details changed. Tasks 1–2 (a default value, a setter method, an increment method) rehearse exactly the three ways of changing an attribute. Taught after Quiz 2; expect it in the end-term exam, 4–6 December.</div><p style=\"font-size:14.5px\">Next and last recorded session: importing classes and importing an entire module.</p>"
+    },
+    {
+     "t": "Storing a class in a module and importing it",
+     "src": "L#33",
+     "h": "<p style=\"font-size:14.5px\">The last recorded lecture of the course. L#32 ended with inheritance; this session does for classes what L#30 did for functions: keep the main program <b>uncluttered</b> by storing classes in <b>modules</b> and importing only what you need. He opened with why OOP matters: it trains you to think logically, and classes make your programs make sense to the other programmers you will increasingly work with.</p><h4>Making car.py in Colab</h4><p style=\"font-size:14.5px\">On a desktop you would save the Car class in a file named <code>car.py</code> (lowercase: the module) next to a main file such as <code>my_car.py</code>. Colab has no separate files unless you make them, so the cell that holds the class starts with the magic line from L#30:</p><pre>%%writefile car.py\nclass Car():\n    \"\"\"A simple attempt to represent a car.\"\"\"\n\n    def __init__(self, make, model, year):\n        self.make = make\n        self.model = model\n        self.year = year\n        self.odometer_reading = 0\n\n    def get_descriptive_name(self):\n        long_name = str(self.year) + ' ' + self.make + ' ' + self.model\n        return long_name.title()\n\n    def read_odometer(self):\n        print(\"This car has \" + str(self.odometer_reading) + \" miles on it.\")\n\n    def update_odometer(self, mileage):\n        if mileage &gt;= self.odometer_reading:\n            self.odometer_reading = mileage\n        else:\n            print(\"You can't roll back an odometer!\")\n\n    def increment_odometer(self, miles):\n        self.odometer_reading += miles\n<span class=\"c\"># Colab replies:</span>\n<span class=\"o\">Writing car.py</span></pre><ul><li>Running the cell <b>writes the file</b> instead of defining the class in the notebook; <code>Writing car.py</code> confirms it. The file is now a <b>module</b> holding one class (the same Car as L#32, docstrings trimmed here).</li><li>A module can hold any number of classes, but they should be <b>related</b>.</li></ul><h4>Importing a single class</h4><pre>from car import Car\n\nmy_new_car = Car('audi', 'a4', 2016)\nprint(my_new_car.get_descriptive_name())\n\nmy_new_car.odometer_reading = 23\nmy_new_car.read_odometer()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2016 Audi A4</span>\n<span class=\"o\">This car has 23 miles on it.</span></pre><ul><li>He asked for attention on the line itself: lowercase <code>car</code> is the <b>file</b> (module) and capital <code>Car</code> is the <b>class</b> inside it. The statement opens the module and brings in that one class.</li><li>From then on the code is exactly L#31–32: make an instance, call methods, set an attribute. Nothing about using the class changes.</li></ul><p style=\"font-size:14.5px\">Why it is worth it: picture the main file with the whole class pasted in. Moved into a module, the class gives the same functionality while the main program stays short and readable; once the class works you can leave its file alone and think about the higher-level logic.</p>"
+    },
+    {
+     "t": "Several classes in one module, and the Colab ImportError",
+     "src": "L#33",
+     "h": "<p style=\"font-size:14.5px\">L#32's <code>Battery</code> and <code>ElectricCar</code> classes both help represent cars, so they belong in the same module. He re-ran the <code>%%writefile car.py</code> cell with all three classes in it:</p><pre>%%writefile car.py\nclass Car():\n    ...\n\nclass Battery():\n    def __init__(self, battery_size=70):\n        self.battery_size = battery_size\n    def describe_battery(self):\n        ...\n    def get_range(self):\n        ...\n\nclass ElectricCar(Car):\n    def __init__(self, make, model, year):\n        super().__init__(make, model, year)\n        self.battery = Battery()\n<span class=\"c\"># Colab replies:</span>\n<span class=\"o\">Overwriting car.py</span></pre><ul><li><code>Overwriting car.py</code>, not <code>Writing</code>: the file already existed with one class and has been replaced by a version with three.</li></ul><pre>from car import ElectricCar\n\nmy_tesla = ElectricCar('tesla', 'model s', 2016)\nprint(my_tesla.get_descriptive_name())\nmy_tesla.battery.describe_battery()\nmy_tesla.battery.get_range()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2016 Tesla Model S</span>\n<span class=\"o\">This car has a 70-kWh battery.</span>\n<span class=\"o\">This car can go approximately 240 miles on a full charge.</span></pre><ul><li>Only <code>ElectricCar</code> is imported, yet <code>get_descriptive_name()</code> works (inherited from Car, which lives in the same module) and <code>my_tesla.battery</code> works (the Battery instance is made inside ElectricCar's <code>__init__()</code>). You import the class you <b>name</b>; what it depends on comes along inside the module.</li></ul><div class=\"def\"><b>The error he hit, and the two fixes.</b> The first run of that cell gave <b>ImportError: cannot import name 'ElectricCar' from 'car'</b>. The notebook had already imported the <em>earlier</em> car module, the one with a single class, and kept using that copy even after the file on disk was overwritten. This is a Colab/notebook effect; separate files in an ordinary editor don't do it. Fix 1: <b>Runtime → Restart session</b>, re-run the <code>%%writefile</code> cell, then the import works. Fix 2: force a reload: <code>import importlib</code>, <code>import car</code>, <code>importlib.reload(car)</code>.</div><h4>Importing several classes at once</h4><pre>from car import Car, ElectricCar\n\nmy_beetle = Car('volkswagen', 'beetle', 2016)\nprint(my_beetle.get_descriptive_name())\n\nmy_tesla = ElectricCar('tesla', 'roadster', 2016)\nprint(my_tesla.get_descriptive_name())\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2016 Volkswagen Beetle</span>\n<span class=\"o\">2016 Tesla Roadster</span></pre><ul><li>Separate the class names with <b>commas</b>; <code>from car import Car, ElectricCar, Battery</code> is equally fine. Once imported, make as many instances of each as you like.</li></ul>"
+    },
+    {
+     "t": "Import styles for classes: whole module, several classes, import *",
+     "src": "L#33",
+     "h": "<h4>Importing the entire module</h4><pre>import car\n\nmy_beetle = car.Car('volkswagen', 'beetle', 2016)\nprint(my_beetle.get_descriptive_name())\n\nmy_tesla = car.ElectricCar('tesla', 'roadster', 2016)\nprint(my_tesla.get_descriptive_name())\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2016 Volkswagen Beetle</span>\n<span class=\"o\">2016 Tesla Roadster</span></pre><ul><li><code>import car</code> brings in the whole module with all three classes. Each class is then reached as <b>module_name.ClassName</b>: <code>car.Car(...)</code>, <code>car.ElectricCar(...)</code>. Writing a bare <code>Car(...)</code> after this import is a NameError.</li><li>He liked this style: simple, easy to read, and because every instance-making line carries the module name, there are <b>no naming conflicts</b> with names in your own file, even a class of your own called Car.</li><li>His recommendation when you need <b>many</b> classes from a module: import the whole module and use the dot, rather than a long comma list.</li></ul><h4>Importing all classes with *</h4><pre>from car import *\n\nmy_beetle = Car('volkswagen', 'beetle', 2016)\nprint(my_beetle.get_descriptive_name())\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2016 Volkswagen Beetle</span></pre><ul><li>The asterisk copies every class in the module into your file, so no prefix is needed. It works, and it is <b>not recommended</b>, for the same two reasons as L#30's <code>from pizza import *</code>:<ol><li>the import line no longer tells a reader <b>which classes</b> the program uses;</li><li>a class in the module with the same name as one in your file causes <b>hard-to-diagnose errors</b>: the name conflict he warned about, now with classes.</li></ol></li><li>He showed it anyway because you will meet it in <b>other people's code</b>. Prefer <code>import car</code> with <code>car.Car(...)</code>.</li></ul><!--viz:foc-class-import-styles--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of four import lines for the car module: importing one class, importing two classes with a comma, importing the whole module and then writing car.ElectricCar, and from car import star, which is marked not recommended.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Four ways to import from car.py, and how you then make a Tesla</div><div class=\"scroller\"><table><thead><tr><th>Import line</th><th>Making the instance</th><th>Use it when</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">from car import ElectricCar</td><td style=\"font-family:var(--mono)\">ElectricCar('tesla', 'model s', 2016)</td><td>you need one class</td></tr><tr><td style=\"font-family:var(--mono)\">from car import Car, ElectricCar</td><td style=\"font-family:var(--mono)\">ElectricCar('tesla', 'model s', 2016)</td><td>a few classes, comma-separated</td></tr><tr style=\"background:var(--blue-soft)\"><td style=\"font-family:var(--mono)\">import car</td><td style=\"font-family:var(--mono)\">car.ElectricCar('tesla', 'model s', 2016)</td><td>many classes; no name clashes</td></tr><tr style=\"background:var(--clay-soft)\"><td style=\"font-family:var(--mono)\">from car import *</td><td style=\"font-family:var(--mono)\">ElectricCar('tesla', 'model s', 2016)</td><td>not recommended: hides names, risks clashes</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only import car keeps the module name in front of the class; that prefix is what prevents name conflicts.</figcaption></figure><!--/viz:foc-class-import-styles-->"
+    },
+    {
+     "t": "Importing a module into a module",
+     "src": "L#33",
+     "h": "<p style=\"font-size:14.5px\">To stop one file growing too large, and to keep unrelated classes apart, classes can be spread over <b>several modules</b>. Then a class in one module may <b>depend on</b> a class in another, and that module has to import it. He put Car in one file and the two electric classes in another:</p><pre>%%writefile car.py\nclass Car():\n    ...\n<span class=\"c\"># Colab replies:</span>\n<span class=\"o\">Overwriting car.py</span>\n\n%%writefile electric_car.py\nfrom car import Car\n\nclass Battery():\n    ...\n\nclass ElectricCar(Car):\n    ...\n<span class=\"c\"># Colab replies:</span>\n<span class=\"o\">Writing electric_car.py</span></pre><ul><li><code>car.py</code> now holds <b>only</b> Car again (hence <code>Overwriting</code>); <code>electric_car.py</code> is new (<code>Writing</code>).</li><li>The first line of <code>electric_car.py</code> is <code>from car import Car</code>, because <code>class ElectricCar(Car):</code> needs the name <code>Car</code> to exist <b>inside that module</b>. Leave it out and Python raises an error as soon as the module is used: the class line itself fails with <b>NameError: name 'Car' is not defined</b>, which happens the moment the module is imported, even before any instance is made. An import in your main file does not help: each module needs its own.</li></ul><pre>from car import Car\nfrom electric_car import ElectricCar\n\nmy_beetle = Car('volkswagen', 'beetle', 2016)\nprint(my_beetle.get_descriptive_name())\n\nmy_tesla = ElectricCar('tesla', 'roadster', 2016)\nprint(my_tesla.get_descriptive_name())\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2016 Volkswagen Beetle</span>\n<span class=\"o\">2016 Tesla Roadster</span></pre><ul><li>The main file imports one class from each module. Both instances can call <code>get_descriptive_name()</code>: the Beetle because it is a Car, the Tesla because ElectricCar inherits it, through the import inside electric_car.py.</li><li>Because he was overwriting car.py again, the same stale-module problem as before applies in Colab; restart the session if the import complains.</li></ul><!--viz:foc-module-into-module--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow of three files: car.py defines Car; electric_car.py starts with from car import Car and defines Battery and ElectricCar(Car); the main file imports Car from car and ElectricCar from electric_car.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Three files: who imports whom</div><div style=\"display:flex;flex-wrap:wrap;align-items:stretch;gap:6px 8px;font-size:14px\"><div style=\"flex:1 1 130px;padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b style=\"font-family:var(--mono)\">car.py</b><div style=\"font-family:var(--mono);font-size:13px;margin-top:4px\">class Car():</div></div><span style=\"color:var(--ink-3);align-self:center\">→</span><div style=\"flex:1 1 170px;padding:8px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b style=\"font-family:var(--mono)\">electric_car.py</b><div style=\"font-family:var(--mono);font-size:13px;margin-top:4px\">from car import Car<br>class Battery():<br>class ElectricCar(Car):</div><div style=\"color:var(--ink-2);font-size:13px;margin-top:4px\">needs Car for its own class line</div></div><span style=\"color:var(--ink-3);align-self:center\">→</span><div style=\"flex:1 1 170px;padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b style=\"font-family:var(--mono)\">my_cars.py</b><div style=\"font-family:var(--mono);font-size:13px;margin-top:4px\">from car import Car<br>from electric_car import ElectricCar</div><div style=\"color:var(--ink-2);font-size:13px;margin-top:4px\">makes a Beetle and a Tesla</div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">electric_car.py must import Car itself; the main file's import doesn't reach inside another module.</figcaption></figure><!--/viz:foc-module-into-module-->"
+    },
+    {
+     "t": "The standard library: OrderedDict and randint",
+     "src": "L#33",
+     "h": "<p style=\"font-size:14.5px\">So far every function, class and module in the course was written by us, apart from built-ins such as <code>__init__()</code> and <code>super()</code>. Python also ships with the <b>standard library</b>: a set of modules included with <b>every Python installation</b>, full of ready-made classes and functions you use with one import line and without caring how they are written inside.</p><h4>OrderedDict from collections</h4><pre>from collections import OrderedDict\n\nfavorite_languages = OrderedDict()\n\nfavorite_languages['jen'] = 'python'\nfavorite_languages['sarah'] = 'c'\nfavorite_languages['edward'] = 'ruby'\nfavorite_languages['phil'] = 'python'\n\nfor name, language in favorite_languages.items():\n    print(name.title() + \"'s favorite language is \" + language.title() + \".\")\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Jen's favorite language is Python.</span>\n<span class=\"o\">Sarah's favorite language is C.</span>\n<span class=\"o\">Edward's favorite language is Ruby.</span>\n<span class=\"o\">Phil's favorite language is Python.</span></pre><ul><li><code>collections</code> is a standard-library <b>module</b>; <code>OrderedDict</code> is one <b>class</b> in it. The import line has the same shape as <code>from car import Car</code>.</li><li><code>favorite_languages = OrderedDict()</code> makes an <b>instance</b> of that class, exactly as <code>my_beetle = Car(...)</code> did. He stressed: <b>no curly brackets</b>; the class's own code builds an empty ordered dictionary for you.</li><li>Pairs are then added one at a time with square-bracket assignment, and <code>.items()</code> loops through them like any dictionary (L#22). The names come back in the <b>order they were added</b>: the poll example, where you want to know who answered first.</li><li>His motivation, from the book: an ordinary dictionary doesn't keep track of the order pairs were added. On Colab's Python (3.7 or later) a plain <code>dict</code> <b>does</b> keep insertion order, so <code>OrderedDict</code> is rarely necessary today; it still works exactly as shown, and it is what the lecture used.</li></ul><h4>randint from random</h4><p style=\"font-size:14.5px\">The last exercise introduced a second standard-library module. <code>from random import randint</code>, then <code>x = randint(1, 6)</code> gives a whole number from 1 to 6, both ends included. He described <code>random</code> as a class; it is a <b>module</b>, and <code>randint</code> is a <b>function</b> inside it. The task: a <code>Die</code> class with one attribute <code>sides</code> defaulting to 6 and a method <code>roll_die()</code> that prints <code>randint(1, self.sides)</code>; make a 6-sided die and roll it 10 times, then a 10-sided and a 20-sided die, 10 rolls each.</p><h4>Exercises he set (20 minutes, four tasks)</h4><ol><li>Store the latest <b>Restaurant</b> class in a module; in a separate file import it, make an instance and call a method to show the import works.</li><li>Store <b>User</b>, <b>Privileges</b> and <b>Admin</b> (from L#32's exercises) in <b>one</b> module; in another file make an Admin and call <code>show_privileges()</code>.</li><li>Store <b>User</b> in one module and <b>Privileges</b> and <b>Admin</b> in another; make an Admin in a third file and call <code>show_privileges()</code> again.</li><li>The <b>Die</b> class above, using <code>randint</code>.</li></ol><p style=\"font-size:14.5px\">For reading: the <b>Python Module of the Week</b> site (pymotw) as a tour of the standard library; pick a module that interests you, or read the documentation of <code>collections</code> and <code>random</code>.</p><div class=\"def\"><b>From the lecture (L#33):</b> he called this the last recorded lecture of the course and said he would see everyone in the live sessions, so the recorded syllabus ends with classes and modules (L#31–33). His closing recap of the chapter is the checklist: writing a class, attributes and methods, __init__(), changing attributes directly and through methods, inheritance, instances as attributes, storing classes in modules and importing them, and a first look at the standard library. Taught after Quiz 2; expect it in the end-term exam, 4–6 December.</div>"
+    },
+    {
+     "t": "Textbook: Classes",
+     "src": "Python Crash Course ch9",
+     "h": "<p>A class is a blueprint for a category of things. Each object made from it (an instance) carries its own data (attributes) and can use the class's behaviour (methods). __init__() runs automatically whenever an instance is created and stores its starting attributes on self, the reference to that particular instance, which Python passes in for you. Attributes can be read and changed with dot notation, changed through a method (which can enforce rules such as 'never roll an odometer back'), or incremented by a method. Inheritance lets a child class reuse everything from a parent class, call the parent's __init__ with super(), add its own attributes and methods, and override methods that don't fit. A large class can be split by storing an instance of one class as an attribute of another. Classes can be kept in modules and imported like functions. The chapter ends with the standard library (OrderedDict, random) and class style: CamelCase names and a docstring for every class and module.</p><!--viz:foc-pcc1-class-tree--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Class diagram. Car at the top with make, model, year and odometer. An arrow labelled is a: inherits leads down to ElectricCar(Car), which inherits all of Car, adds battery = Battery() and overrides fill_gas_tank(). A second arrow labelled has a points from ElectricCar to a Battery box with battery_size = 70, describe_battery() and get_range().\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Car, ElectricCar and Battery: two different arrows</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 215\" role=\"img\" aria-label=\"Class diagram: Car is the parent; ElectricCar inherits from Car and holds a Battery instance as an attribute\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><rect x=\"120\" y=\"12\" width=\"200\" height=\"56\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"220\" y=\"34\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">Car</text><text x=\"220\" y=\"53\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">make, model, year, odometer</text><path d=\"M220,68 L220,92 L110,92 L110,110\" style=\"fill:none;stroke:var(--ink-3);stroke-width:1.5\"/><path d=\"M104,108 L116,108 L110,118 Z\" style=\"fill:var(--ink-3)\"/><text x=\"228\" y=\"86\" style=\"fill:var(--ink-3);font-size:13px\">is a: inherits</text><rect x=\"15\" y=\"120\" width=\"190\" height=\"82\" rx=\"4\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5\"/><text x=\"110\" y=\"141\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">ElectricCar(Car)</text><text x=\"110\" y=\"159\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">inherits all of Car</text><text x=\"110\" y=\"176\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">+ battery = Battery()</text><text x=\"110\" y=\"193\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">overrides fill_gas_tank()</text><path d=\"M205,161 L272,161\" style=\"fill:none;stroke:var(--ink-3);stroke-width:1.5\"/><path d=\"M272,155 L282,161 L272,167 Z\" style=\"fill:var(--ink-3)\"/><text x=\"238\" y=\"153\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">has a</text><rect x=\"282\" y=\"120\" width=\"148\" height=\"82\" rx=\"4\" style=\"fill:var(--surface);stroke:var(--rule-2);stroke-width:1.5\"/><text x=\"356\" y=\"141\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:15px;font-weight:700\">Battery</text><text x=\"356\" y=\"159\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">battery_size = 70</text><text x=\"356\" y=\"176\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">describe_battery()</text><text x=\"356\" y=\"193\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">get_range()</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Inheritance for 'is a kind of', an instance attribute for 'has a'; the chapter uses both in one model.</figcaption></figure><!--/viz:foc-pcc1-class-tree--><!--viz:foc-pcc1-super-init-flow--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Flow: the call makes an empty instance, runs the child's __init__, whose super().__init__ line runs Car's __init__ on the same instance to set make, model, year and odometer_reading, then the child adds self.battery = Battery(), giving one instance with five attributes.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">What happens inside ElectricCar('tesla', 'model s', 2016)</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">my_tesla = ElectricCar('tesla', 'model s', 2016)</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Python makes an empty instance and calls <span style=\"font-family:var(--mono)\">ElectricCar.__init__(self, …)</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:8px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><span style=\"font-family:var(--mono)\">super().__init__(make, model, year)</span> runs <b>Car.__init__</b> on the <b>same</b> self: make, model, year, odometer_reading = 0</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">back in the child: <span style=\"font-family:var(--mono)\">self.battery = Battery()</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">one instance with all five attributes, stored in <b style=\"font-family:var(--mono)\">my_tesla</b></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">super() does not build a second object: the parent's __init__ fills in the same self the child is setting up.</figcaption></figure><!--/viz:foc-pcc1-super-init-flow--><!--viz:foc-pcc1-override-lookup--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three lookups: my_tesla.fill_gas_tank() is found in ElectricCar and prints the child's message; my_tesla.get_descriptive_name() is not in ElectricCar so Python finds it in Car; my_beetle.fill_gas_tank() on a plain Car prints Filling the gas tank.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Where Python looks for a method</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">my_tesla.fill_gas_tank()</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">look in <b>ElectricCar</b>: found</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:8px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">This car doesn't need a gas tank! <span style=\"color:var(--ink-2);font-size:13px\">(child wins)</span></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">my_tesla.get_descriptive_name()</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">not in ElectricCar</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">look in <b>Car</b>: found</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">2016 Tesla Model S <span style=\"color:var(--ink-2);font-size:13px\">(inherited)</span></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px;margin-bottom:8px\"><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">my_beetle.fill_gas_tank()</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">my_beetle is a plain Car: look in <b>Car</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:8px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Filling the gas tank. <span style=\"color:var(--ink-2);font-size:13px\">(the override never applies)</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Python checks the instance's own class first, then the parent; an override is just a same-named method found earlier.</figcaption></figure><!--/viz:foc-pcc1-override-lookup--><p><strong>Class vs instance</strong> — A class (Dog) is the general set of instructions; an instance (my_dog = Dog('willie', 6)) is one specific object built from it. Making an instance is called instantiation. Each instance is separate, even if two get identical values.</p><p><strong>__init__()</strong> — A special method (two underscores on each side) that Python runs automatically when you create an instance. It receives the arguments passed to the class and normally stores them as attributes. You never call it directly, and it doesn't need a return statement.</p><p><strong>self</strong> — self must be the first parameter of every method. Python passes it automatically: it refers to the instance the method is working on. Variables written as self.something become attributes available to every method and through the instance.<br><em>e.g.</em> self.name = name</p><p><strong>Attributes and dot notation</strong> — An attribute is a variable attached to an instance. Read or set it with instance.attribute, e.g. my_dog.name. Inside the class the same attribute is written self.name.</p><p><strong>Methods</strong> — A function defined inside a class is a method. Everything about functions applies (parameters, defaults, return values); you call it on an instance with my_dog.sit(), and self is filled in for you.</p><p><strong>Default attribute values</strong> — Every attribute needs a starting value. If it always starts the same way (e.g. self.odometer_reading = 0), set it in __init__ without adding a parameter for it.</p><p><strong>Three ways to change an attribute</strong> — (1) Directly: car.odometer_reading = 23. (2) Through a setter method that can validate the value (reject a roll-back). (3) Through an incrementing method (self.odometer_reading += miles). Methods give control, but direct access still bypasses them.</p><p><strong>Inheritance</strong> — class ElectricCar(Car): makes a child class that automatically has every attribute and method of the parent. The parent class must be defined (or imported) before the child. The parent is also called the superclass and the child the subclass.</p><p><strong>super().__init__()</strong> — Inside the child's __init__, super().__init__(make, model, year) runs the parent's __init__ so the parent's attributes get set up. Then the child adds its own, e.g. self.battery_size = 70. Leave it out and the parent's attributes are never created.</p><p><strong>Child-specific attributes and methods</strong> — Anything defined only in the child belongs only to child instances; a plain Car has no battery. Put behaviour that applies to every car in the parent, and only electric-specific behaviour in the child.</p><p><strong>Overriding a method</strong> — Define a method in the child with the same name as one in the parent; for child instances Python uses the child's version and ignores the parent's. Parent instances keep the original behaviour.</p><p><strong>Instances as attributes (composition)</strong> — When a class grows too big, move a group of related attributes and methods into its own class (Battery) and store an instance of it as an attribute: self.battery = Battery(). Reach it with a double dot: my_car.battery.describe_battery().</p><p><strong>Importing classes</strong> — Classes live in modules like functions do: from car import Car; from car import Car, ElectricCar; import car then car.Car(...). from car import * is discouraged. A module can itself import the classes it depends on.</p><p><strong>Standard library</strong> — A set of modules that ship with every Python installation, e.g. collections.OrderedDict (a dictionary that remembers insertion order) and random.randint(a, b) (a random integer from a to b inclusive).</p><p><strong>Class style</strong> — Write class names in CamelCase with no underscores (ElectricCar); instance and module names in lowercase_with_underscores. Every class and module gets a docstring. Leave one blank line between methods and two between classes, and put standard-library imports before your own.</p><div class=\"card\"><strong>Case: Car, ElectricCar and Battery</strong> <em>(car.py and electric_car.py, sections 'The Car Class' to 'Modeling Real-World Objects')</em><p>A Car class gains an odometer that methods update, with a rule against rolling it back. ElectricCar inherits from Car via super(), adds a battery, and later moves battery details into a separate Battery class stored as an attribute. The book then debates whether range belongs to the battery or the car.</p><p><em>Lesson:</em> Inheritance for 'is a kind of', composition for 'has a', and modelling decisions often have no single right answer.</p><p><em>Think:</em> Give one reason to keep get_range() in Battery and one reason to move it to ElectricCar.</p></div><div class=\"card\"><strong>Case: The Dog class</strong> <em>(dog.py, sections 'Creating and Using a Class' to 'Creating Multiple Instances')</em><p>A minimal class stores a dog's name and age in __init__ and has two behaviour methods that print messages. Two instances are created to show that each dog keeps its own attributes while sharing the same methods.</p><p><em>Lesson:</em> The basic anatomy of a class: __init__, self, attributes, methods, instances.</p><p><em>Think:</em> Add a birthday() method that increases the age by one, and show the calls that make Willie a year older.</p></div><details><summary>Worked problem: A bank account with a guard</summary><p>Write class Account with owner and balance (default 0), and a withdraw(amt) method that refuses to go below zero. Trace: acc = Account('meera', 500); acc.withdraw(200); acc.withdraw(400); print(acc.balance).</p><ol><li>class Account():\n    def __init__(self, owner, balance=0):\n        self.owner = owner\n        self.balance = balance</li><li>    def withdraw(self, amt):\n        if amt &lt;= self.balance:\n            self.balance -= amt\n        else:\n            print(\"Insufficient funds\")</li><li>First withdrawal: 200 &lt;= 500, so balance becomes 300.</li><li>Second: 400 &lt;= 300 is False, so it prints Insufficient funds and the balance stays 300.</li></ol><p><strong>Answer:</strong> Insufficient funds, then 300</p></details><details><summary>Worked problem: Inherit, extend, override</summary><p>Vehicle(wheels) has describe() returning 'Vehicle with N wheels' and fuel() returning 'petrol'. Write EBike(Vehicle) with 2 wheels, a battery attribute of 3, and fuel() returning 'electricity'. What do EBike().describe() and EBike().fuel() return?</p><ol><li>class EBike(Vehicle):</li><li>    def __init__(self):\n        super().__init__(2)\n        self.battery = 3</li><li>    def fuel(self):\n        return \"electricity\"</li><li>describe() isn't redefined, so the inherited version runs with wheels = 2; fuel() is overridden.</li></ol><p><strong>Answer:</strong> 'Vehicle with 2 wheels' and 'electricity' (a plain Vehicle still returns 'petrol')</p></details><div class=\"def\"><b>Book vs lecture — class Dog(): with empty brackets.</b> Book: Always writes class Dog(): with empty parentheses (and class Dog(object): for Python 2.7). Lecture: The lecturer writes it the same way: class Dog():, class Car():, class Battery(): with empty brackets (L#31–32), and class ElectricCar(Car): when there is a parent. <b>Write class Dog(): on paper, as both the book and the lectures do. class Dog: is also valid Python 3 and not wrong, but match the lecture; he explained the empty brackets as 'inherits from nothing'.</b></div><div class=\"def\"><b>Book vs lecture — OrderedDict.</b> Book: Presents OrderedDict because ordinary dictionaries didn't keep insertion order. Lecture: L#33 repeats the book: he said an ordinary dictionary doesn't keep track of the order pairs are added, and used OrderedDict for the favourite-languages poll. <b>On Colab (Python 3.7+), a plain dict keeps insertion order, so OrderedDict is rarely needed. Know what it is and how it is made (OrderedDict(), no curly brackets), but don't claim dictionaries are unordered.</b></div><div class=\"def\"><b>Book vs lecture — Forgetting from car import Car in electric_car.py.</b> Book: Says Python raises an error when you try to make an ElectricCar instance. Lecture: L#33 says the same. <b>The error (NameError: name 'Car' is not defined) actually appears as soon as electric_car is imported, because class ElectricCar(Car): is evaluated then. Either way the fix is the same: the module imports Car itself.</b></div>"
     }
    ]
   }
@@ -1752,6 +1814,111 @@ HUB.addCourse({
    "p": "describe_pet() failing on 'pet_name' alone means pet_name has no default and every other parameter has one. With no defaults, both would be reported missing.",
    "f": "the error names the def line",
    "lec": 29
+  },
+  {
+   "id": "foc-t0144",
+   "h": "Assigning to an attribute directly bypasses whatever a method checks",
+   "p": "After update_odometer() refuses 18, my_new_car.odometer_reading = 18 still goes through silently. The roll-back guard lives only inside the method; direct dot-notation assignment never runs it.",
+   "f": "direct set = no guard",
+   "lec": 32
+  },
+  {
+   "id": "foc-t0145",
+   "h": "A child __init__() that skips super().__init__() leaves the parent's attributes unset",
+   "p": "If ElectricCar's __init__() only sets self.battery_size, then make, model, year and odometer_reading never exist on the instance, and get_descriptive_name() fails with an AttributeError. The parent's __init__() does not run by itself once the child defines its own.",
+   "f": "call super() first",
+   "lec": 32
+  },
+  {
+   "id": "foc-t0146",
+   "h": "A parent instance cannot use the child's methods",
+   "p": "my_maruti = Car(...) then my_maruti.describe_battery() raises AttributeError: 'Car' object has no attribute 'describe_battery'. Inheritance flows from parent to child only; my_tesla can call Car's methods, my_maruti cannot call ElectricCar's.",
+   "f": "parent can't see child",
+   "lec": 32
+  },
+  {
+   "id": "foc-t0147",
+   "h": "Overriding changes the child only, and removing the override brings the parent's version back",
+   "p": "With fill_gas_tank() defined in ElectricCar, my_byd prints the no-gas-tank message while a plain Car still prints Filling the gas tank. Comment the child's method out and my_byd.fill_gas_tank() prints the parent's message again.",
+   "f": "same name, child wins",
+   "lec": 32
+  },
+  {
+   "id": "foc-t0148",
+   "h": "Once battery code moves into Battery, call my_tata.battery.describe_battery(), not my_tata.describe_battery()",
+   "p": "describe_battery() now belongs to the Battery instance stored in the battery attribute, so it needs two dots. my_tata.describe_battery() raises AttributeError: 'ElectricCar' object has no attribute 'describe_battery'.",
+   "f": "car → battery → method",
+   "lec": 32
+  },
+  {
+   "id": "foc-t0149",
+   "h": "In Colab, adding classes to car.py and re-running can still give ImportError: cannot import name 'ElectricCar'",
+   "p": "The notebook keeps the car module it imported first, with one class, even after %%writefile overwrites the file. Restart the session (Runtime → Restart session) or use import importlib, import car, importlib.reload(car).",
+   "f": "stale module: restart or reload",
+   "lec": 33
+  },
+  {
+   "id": "foc-t0150",
+   "h": "After import car, the class is car.Car(...), not Car(...)",
+   "p": "Importing the whole module brings in the module name only; a bare Car('audi', 'a4', 2016) raises NameError: name 'Car' is not defined. The prefix is the price of avoiding name conflicts.",
+   "f": "whole module → module.Class",
+   "lec": 33
+  },
+  {
+   "id": "foc-t0151",
+   "h": "electric_car.py needs its own from car import Car; the main file's import doesn't count",
+   "p": "class ElectricCar(Car): is evaluated when electric_car.py is loaded, so Car must be known inside that module. Without the line, importing electric_car fails with NameError: name 'Car' is not defined, before any instance is made.",
+   "f": "each module imports what it uses",
+   "lec": 33
+  },
+  {
+   "id": "foc-t0152",
+   "h": "He said an ordinary dictionary doesn't keep the order pairs are added; on Colab it does",
+   "p": "That was true when the book was written. Since Python 3.7 a plain dict preserves insertion order, so the favorite_languages loop would print in the same order without OrderedDict. The class still works as shown; just don't claim dicts are unordered.",
+   "f": "3.7+: dict keeps order",
+   "lec": 33
+  },
+  {
+   "id": "foc-t0153",
+   "h": "random is a module and randint is a function, though he called random a class",
+   "p": "from random import randint has the same shape as from car import Car, but what comes in is a function: randint(1, 6) is called directly and returns a whole number from 1 to 6 inclusive. No instance is made.",
+   "f": "randint: function, not class",
+   "lec": 33
+  },
+  {
+   "id": "foc-t0154",
+   "h": "Forgetting self in a method header",
+   "p": "def sit(): inside a class fails when called on an instance (my_dog.sit()) with TypeError: takes 0 positional arguments but 1 was given, because Python passes the instance automatically.",
+   "f": "every method starts with self",
+   "bk": "Python Crash Course ch9"
+  },
+  {
+   "id": "foc-t0155",
+   "h": "name = name is not self.name = name",
+   "p": "Inside __init__, an assignment without self. creates a local variable that vanishes when __init__ ends. Later my_dog.name raises AttributeError.",
+   "f": "no self., no attribute",
+   "bk": "Python Crash Course ch9"
+  },
+  {
+   "id": "foc-t0156",
+   "h": "The parent class must come before the child in the file",
+   "p": "class ElectricCar(Car): is evaluated when Python reaches that line; if Car is defined lower down (or not imported), the result is NameError: name 'Car' is not defined. The book's rule: parent in the same file, above the child, or imported at the top.",
+   "f": "parent first, then child",
+   "bk": "Python Crash Course ch9"
+  },
+  {
+   "id": "foc-t0157",
+   "h": "A child's __init__ can take different parameters from the parent's, but super() must still receive what the parent expects",
+   "p": "super().__init__(make, model) for a Car whose __init__ wants make, model and year raises TypeError: missing 1 required positional argument. The call to the parent's __init__ follows ordinary function rules.",
+   "f": "super() args = parent's params",
+   "bk": "Python Crash Course ch9"
+  },
+  {
+   "id": "foc-t0158",
+   "h": "Battery(85) overrides the default battery_size; Battery() keeps 70",
+   "p": "A default value in __init__ (battery_size=70) applies only when the caller passes nothing, exactly as for any function parameter. Each Battery instance stores its own size, so one 85-kWh battery doesn't change another car's 70.",
+   "f": "default fills the gap only",
+   "bk": "Python Crash Course ch9"
   }
  ],
  "defs": [
@@ -2962,6 +3129,166 @@ HUB.addCourse({
    "term": "Inheritance",
    "html": "<b>Inheritance</b>: <b>class ElectricCar(Car):</b> makes ElectricCar a child of Car, so its instances can use all of Car's attributes and methods. Car is the parent (superclass).",
    "lec": 29
+  },
+  {
+   "id": "foc-d0154",
+   "unit": "classes",
+   "topic": "Default attribute values",
+   "term": "Default attribute value",
+   "html": "<b>Default attribute value</b>: an attribute given its starting value inside __init__() itself, with no parameter for it, e.g. self.odometer_reading = 0. Every new instance starts with it.",
+   "lec": 32
+  },
+  {
+   "id": "foc-d0155",
+   "unit": "classes",
+   "topic": "Inheritance: ElectricCar(Car) and super().__init__()",
+   "term": "Parent class and child class",
+   "html": "<b>Parent class</b> (superclass): the class being inherited from. <b>Child class</b> (subclass): the new class named with the parent in its brackets, class ElectricCar(Car):, which gets every attribute and method of the parent and can add its own.",
+   "lec": 32
+  },
+  {
+   "id": "foc-d0156",
+   "unit": "classes",
+   "topic": "Inheritance: ElectricCar(Car) and super().__init__()",
+   "term": "super().__init__()",
+   "html": "<b>super().__init__(make, model, year)</b>: the line inside a child's __init__() that calls the <b>parent's</b> __init__(), so the parent's attributes are set on the new instance before the child adds its own.",
+   "lec": 32
+  },
+  {
+   "id": "foc-d0157",
+   "unit": "classes",
+   "topic": "Inheritance: ElectricCar(Car) and super().__init__()",
+   "term": "Overriding a method",
+   "html": "<b>Overriding</b>: defining a method in the child class with the <b>same name</b> as one in the parent. For child instances Python uses the child's version and disregards the parent's; parent instances are unaffected.",
+   "lec": 32
+  },
+  {
+   "id": "foc-d0158",
+   "unit": "classes",
+   "topic": "Instances as attributes: the Battery class",
+   "term": "Instance as an attribute",
+   "html": "<b>Instance as an attribute</b>: storing an instance of one class inside another, self.battery = Battery(), so a large class can be split into smaller ones. Its methods are reached with two dots: my_tata.battery.get_range().",
+   "lec": 32
+  },
+  {
+   "id": "foc-d0159",
+   "unit": "classes",
+   "topic": "Storing a class in a module and importing it",
+   "term": "Module (of classes)",
+   "html": "<b>Module</b>: a .py file holding one or more related classes, e.g. car.py with Car, Battery and ElectricCar. In Colab a cell starting <b>%%writefile car.py</b> creates it (Writing car.py; Overwriting car.py if it existed).",
+   "lec": 33
+  },
+  {
+   "id": "foc-d0160",
+   "unit": "classes",
+   "topic": "Storing a class in a module and importing it",
+   "term": "from car import Car",
+   "html": "<b>from car import Car</b>: open the module car (lowercase, the file) and bring in the class Car (capital). Several classes: <b>from car import Car, ElectricCar</b>. Whole module: <b>import car</b>, then <b>car.Car(...)</b>.",
+   "lec": 33
+  },
+  {
+   "id": "foc-d0161",
+   "unit": "classes",
+   "topic": "Importing a module into a module",
+   "term": "Importing a module into a module",
+   "html": "<b>Importing a module into a module</b>: when a class in one file depends on a class in another, that file imports it itself, e.g. electric_car.py begins <b>from car import Car</b> so that class ElectricCar(Car): can be defined.",
+   "lec": 33
+  },
+  {
+   "id": "foc-d0162",
+   "unit": "classes",
+   "topic": "The standard library: OrderedDict and randint",
+   "term": "Standard library",
+   "html": "<b>Standard library</b>: the set of modules included with every Python installation, used with a plain import, e.g. <b>from collections import OrderedDict</b> and <b>from random import randint</b>.",
+   "lec": 33
+  },
+  {
+   "id": "foc-d0163",
+   "unit": "classes",
+   "topic": "The standard library: OrderedDict and randint",
+   "term": "OrderedDict",
+   "html": "<b>OrderedDict</b>: a class in the collections module; <b>favorite_languages = OrderedDict()</b> (no curly brackets) makes an empty dictionary that remembers the order in which key-value pairs were added.",
+   "lec": 33
+  },
+  {
+   "id": "foc-d0164",
+   "unit": "classes",
+   "topic": "Classes",
+   "term": "Class",
+   "html": "A <b>class</b> defines the attributes and behaviour that a whole category of objects shares; it is the blueprint for creating instances.",
+   "bk": "Python Crash Course ch9"
+  },
+  {
+   "id": "foc-d0165",
+   "unit": "classes",
+   "topic": "Classes",
+   "term": "Instance",
+   "html": "An <b>instance</b> is one object created from a class, e.g. <b>my_dog = Dog('willie', 6)</b>. Creating it is called <b>instantiation</b>.",
+   "bk": "Python Crash Course ch9"
+  },
+  {
+   "id": "foc-d0166",
+   "unit": "classes",
+   "topic": "Classes",
+   "term": "Attribute",
+   "html": "An <b>attribute</b> is a variable attached to an instance (<b>self.name</b> inside the class, <b>my_dog.name</b> outside).",
+   "bk": "Python Crash Course ch9"
+  },
+  {
+   "id": "foc-d0167",
+   "unit": "classes",
+   "topic": "Classes",
+   "term": "Method",
+   "html": "A <b>method</b> is a function that belongs to a class and is called on an instance: <b>my_dog.sit()</b>.",
+   "bk": "Python Crash Course ch9"
+  },
+  {
+   "id": "foc-d0168",
+   "unit": "classes",
+   "topic": "Classes",
+   "term": "__init__()",
+   "html": "<b>__init__()</b> is the special method Python runs automatically when an instance is created; it sets up the starting attributes.",
+   "bk": "Python Crash Course ch9"
+  },
+  {
+   "id": "foc-d0169",
+   "unit": "classes",
+   "topic": "Classes",
+   "term": "self",
+   "html": "<b>self</b> is the first parameter of every method, a reference to the instance itself, passed automatically by Python.",
+   "bk": "Python Crash Course ch9"
+  },
+  {
+   "id": "foc-d0170",
+   "unit": "classes",
+   "topic": "Classes",
+   "term": "Inheritance",
+   "html": "<b>Inheritance</b>: a <b>child</b> (sub) class takes on all attributes and methods of its <b>parent</b> (super) class and can add or override them.",
+   "bk": "Python Crash Course ch9"
+  },
+  {
+   "id": "foc-d0171",
+   "unit": "classes",
+   "topic": "Classes",
+   "term": "super()",
+   "html": "<b>super()</b> refers to the parent class; <b>super().__init__(...)</b> runs the parent's initialiser from inside the child's.",
+   "bk": "Python Crash Course ch9"
+  },
+  {
+   "id": "foc-d0172",
+   "unit": "classes",
+   "topic": "Classes",
+   "term": "Override",
+   "html": "To <b>override</b> a method, define one in the child class with the same name; child instances then use the child's version.",
+   "bk": "Python Crash Course ch9"
+  },
+  {
+   "id": "foc-d0173",
+   "unit": "classes",
+   "topic": "Classes",
+   "term": "Standard library",
+   "html": "The <b>standard library</b> is the set of modules installed with every Python, e.g. <b>collections</b> and <b>random</b>.",
+   "bk": "Python Crash Course ch9"
   }
  ],
  "questions": [
@@ -11698,6 +12025,941 @@ HUB.addCourse({
    "w": "Writing an output scores zero because the code never produces one; saying only that it errors earns half; naming the error type earns full marks.",
    "lec": 29,
    "lv": "recall"
+  },
+  {
+   "id": "foc-q0526",
+   "topic": "Classes",
+   "q": "An attribute such as odometer_reading should start at 0 for every new car. Where did the lecture put that value?",
+   "c": [
+    "As a fourth parameter of __init__() that every call must pass as 0",
+    "In the body of __init__(), as self.odometer_reading = 0, with no parameter for it",
+    "Outside the class, before any instance is made",
+    "Inside read_odometer(), the first time it runs"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Every attribute needs an initial value; when it is always the same, set it inside __init__() and add no parameter, so Car('audi', 'a4', 2016) still passes three values. Setting it in read_odometer() would reset the reading every time it was read.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0527",
+   "topic": "Classes",
+   "q": "What does this print?\n\nmy_new_car = Car('audi', 'a4', 2016)\nmy_new_car.read_odometer()\n\n(Car's __init__ sets self.odometer_reading = 0; read_odometer() prints \"This car has \" + str(self.odometer_reading) + \" miles on it.\")",
+   "c": [
+    "This car has miles on it.",
+    "AttributeError: 'Car' object has no attribute 'odometer_reading'",
+    "0",
+    "This car has 0 miles on it."
+   ],
+   "a": [
+    3
+   ],
+   "w": "The attribute exists because __init__() created it with the value 0, so the method prints the full sentence with 0 in it. No argument is needed since the value is a default set by the class.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0528",
+   "topic": "Classes",
+   "q": "What does this print?\n\nmy_new_car = Car('audi', 'a4', 2016)\nmy_new_car.odometer_reading = 23\nmy_new_car.read_odometer()",
+   "c": [
+    "This car has 23 miles on it.",
+    "This car has 0 miles on it.",
+    "TypeError: attributes can only be changed through a method",
+    "This car has 23 miles on it. followed by This car has 0 miles on it."
+   ],
+   "a": [
+    0
+   ],
+   "w": "Dot notation reaches the instance's attribute and assigns directly: 0 is replaced by 23 before read_odometer() runs. This is the first of the lecture's three ways to change an attribute, and nothing stops it.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0529",
+   "topic": "Classes",
+   "q": "update_odometer() contains:\n\n    if mileage >= self.odometer_reading:\n        self.odometer_reading = mileage\n    else:\n        print(\"You can't roll back an odometer!\")\n\nThe reading is 25. What happens on my_new_car.update_odometer(18) followed by my_new_car.read_odometer()?",
+   "c": [
+    "The reading becomes 18 and it prints This car has 18 miles on it.",
+    "The warning prints and the reading becomes 0",
+    "The warning prints and it then prints This car has 25 miles on it.",
+    "ValueError, because 18 is smaller than 25"
+   ],
+   "a": [
+    2
+   ],
+   "w": "18 ≥ 25 is False, so the else branch prints the warning and the assignment never happens; the reading stays 25 and read_odometer() reports it. Nothing raises an error: the method simply refuses the change.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0530",
+   "topic": "Classes",
+   "q": "What does this print?\n\nmy_used_car = Car('subaru', 'outback', 2013)\nmy_used_car.update_odometer(23500)\nmy_used_car.increment_odometer(100)\nmy_used_car.read_odometer()\n\n(increment_odometer() does self.odometer_reading += miles.)",
+   "c": [
+    "This car has 100 miles on it.",
+    "This car has 23600 miles on it.",
+    "You can't roll back an odometer!",
+    "This car has 23500 miles on it."
+   ],
+   "a": [
+    1
+   ],
+   "w": "update_odometer(23500) passes the guard (23500 ≥ 0), then += adds 100 to the stored 23500. Incrementing adds to the existing value; it does not replace it with 100.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0531",
+   "topic": "Classes",
+   "q": "The lecture first changed odometer_reading directly, then wrote update_odometer() to do the same job. What did he say the method makes possible?",
+   "c": [
+    "Changing the attribute without creating an instance",
+    "Changing the attribute from outside the file",
+    "Changing several attributes in one assignment",
+    "Adding logic that decides whether the change is allowed, such as refusing a roll-back"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A method can carry extra functionality around the assignment: the if test that rejects a smaller mileage. Direct assignment with dot notation changes the value with no checks at all.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0532",
+   "topic": "Classes",
+   "q": "The reading is 20. What is the difference between my_car.update_odometer(25) and my_car.increment_odometer(25)?",
+   "c": [
+    "update sets the reading to 25; increment adds 25, giving 45",
+    "Both set the reading to 25",
+    "update adds 25; increment sets it to 25",
+    "update prints the reading; increment changes it"
+   ],
+   "a": [
+    0
+   ],
+   "w": "update_odometer() stores the value given (after the guard), while increment_odometer() uses += to add the amount to the current reading. Two different methods, two different jobs.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0533",
+   "topic": "Classes",
+   "q": "The lecture used two other names for the parent class and the child class. Which pair is right?",
+   "c": [
+    "Module and function",
+    "Instance and attribute",
+    "Superclass and subclass",
+    "Base and copy"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The parent is also called the superclass, which is where the name super() comes from, and the child is the subclass. Instances and attributes are different ideas entirely.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0534",
+   "topic": "Classes",
+   "q": "You write class ElectricCar(Car): in a file. Which condition did the lecture say the Car class must meet?",
+   "c": [
+    "It must have no __init__() of its own",
+    "It must be in the same file and appear before ElectricCar",
+    "It must be written after ElectricCar so Python reads the child first",
+    "It must contain a method called super()"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The parent class has to be defined, in the current file, above the child class; otherwise the name Car is unknown when the class line runs. Car keeps its own __init__(), which the child calls through super().",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0535",
+   "topic": "Classes",
+   "q": "Inside ElectricCar's __init__(), what does super().__init__(make, model, year) do?",
+   "c": [
+    "Calls Car's __init__() so make, model, year and odometer_reading are set on the new electric car",
+    "Creates a separate Car object stored inside the electric car",
+    "Makes Car inherit from ElectricCar",
+    "Returns the parent's attributes as a dictionary"
+   ],
+   "a": [
+    0
+   ],
+   "w": "super() refers to the parent (super)class; calling its __init__() runs the parent's set-up on the same instance, giving it every Car attribute. No second object is made, and inheritance direction is fixed by the class line, not by this call.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0536",
+   "topic": "Classes",
+   "q": "What happens?\n\nclass ElectricCar(Car):\n    def __init__(self, make, model, year):\n        self.battery_size = 70\n\nmy_tesla = ElectricCar('tesla', 'model s', 2016)\nprint(my_tesla.get_descriptive_name())",
+   "c": [
+    "It prints 2016 Tesla Model S",
+    "It prints 70",
+    "TypeError: __init__() takes 1 positional argument",
+    "AttributeError, because make, model and year were never stored on the instance"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The child's __init__() replaces the parent's and never calls super().__init__(make, model, year), so the three values are accepted but never saved. get_descriptive_name() is inherited fine, but it reads attributes that don't exist.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0537",
+   "topic": "Classes",
+   "q": "ElectricCar(Car) defines describe_battery(); Car does not. What happens?\n\nmy_maruti = Car('swift', 'vxi', 2018)\nmy_maruti.describe_battery()",
+   "c": [
+    "It prints This car has a 70-kWh battery.",
+    "AttributeError: 'Car' object has no attribute 'describe_battery'",
+    "It prints 2018 Swift Vxi",
+    "It works, but prints nothing"
+   ],
+   "a": [
+    1
+   ],
+   "w": "describe_battery() belongs to the child class. An instance of the parent has only what Car defines, so Python reports the missing attribute. The child can use the parent's methods; the reverse never holds.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0538",
+   "topic": "Classes",
+   "q": "Car has fill_gas_tank() printing Filling the gas tank. ElectricCar(Car) defines its own fill_gas_tank() printing This car doesn't need a gas tank! What does this print?\n\nmy_byd = ElectricCar('byd', 'seal', 2026)\nmy_byd.fill_gas_tank()\nmy_car = Car('audi', 'a4', 2016)\nmy_car.fill_gas_tank()",
+   "c": [
+    "Filling the gas tank. twice",
+    "This car doesn't need a gas tank! twice",
+    "This car doesn't need a gas tank! then Filling the gas tank.",
+    "Filling the gas tank. then This car doesn't need a gas tank!"
+   ],
+   "a": [
+    2
+   ],
+   "w": "For the ElectricCar instance Python disregards the parent's version and uses the child's; the plain Car never sees the override and prints its own message. Overriding changes the child only.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0539",
+   "topic": "Classes",
+   "q": "The lecturer then commented out fill_gas_tank() in ElectricCar and ran my_byd.fill_gas_tank() again. What happened?",
+   "c": [
+    "It printed Filling the gas tank., the parent's version",
+    "AttributeError: 'ElectricCar' object has no attribute 'fill_gas_tank'",
+    "It printed nothing",
+    "It printed This car doesn't need a gas tank! from memory"
+   ],
+   "a": [
+    0
+   ],
+   "w": "With no same-named method in the child, the call falls back to the one inherited from Car. Overriding hides the parent's method; it doesn't delete it.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0540",
+   "topic": "Classes",
+   "q": "You want a method, say honk(), that every car should have, electric or not. Where did the lecture say to put it?",
+   "c": [
+    "In ElectricCar, since it is the most detailed class",
+    "In both classes, so each has its own copy",
+    "In Battery, so it can be reached through the battery attribute",
+    "In Car, so every Car and every ElectricCar instance gets it"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Anything that could belong to any car goes in the parent class, where all children inherit it; only behaviour specific to electric vehicles belongs in ElectricCar. Copying it into both classes is exactly the repetition inheritance avoids.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0541",
+   "topic": "Classes",
+   "q": "After the battery code moved to its own class, ElectricCar's __init__ sets self.battery = Battery(). What happens?\n\nmy_tata = ElectricCar('tata', 'tiago ev', 2026)\nmy_tata.describe_battery()",
+   "c": [
+    "It prints This car has a 70-kWh battery.",
+    "AttributeError: 'ElectricCar' object has no attribute 'describe_battery'",
+    "It prints 2026 Tata Tiago Ev",
+    "TypeError: describe_battery() missing battery_size"
+   ],
+   "a": [
+    1
+   ],
+   "w": "describe_battery() now lives in Battery, reached through the battery attribute: my_tata.battery.describe_battery(). ElectricCar doesn't inherit from Battery; it only holds a Battery instance, so the one-dot call finds nothing.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0542",
+   "topic": "Classes",
+   "q": "Battery's get_range() prints 240 miles when battery_size is 70 and 270 miles when it is 85. The ElectricCar line is changed to self.battery = Battery(85). What does my_tesla.battery.get_range() print?",
+   "c": [
+    "This car can go approximately 240 miles on a full charge.",
+    "This car has a 85-kWh battery.",
+    "This car can go approximately 270 miles on a full charge.",
+    "TypeError: Battery() takes no arguments"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Battery(85) passes 85 to the battery_size parameter instead of its default 70, so the elif branch sets the range to 270. The default only applies when no value is given.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0543",
+   "topic": "Classes",
+   "q": "Why did the lecture move battery_size and describe_battery() out of ElectricCar into a separate Battery class?",
+   "c": [
+    "The battery details were growing; a smaller class keeps ElectricCar readable and lets the battery code be described in detail or reused",
+    "Python allows at most three attributes per class",
+    "A child class cannot have methods of its own",
+    "Battery details must be in the parent class Car"
+   ],
+   "a": [
+    0
+   ],
+   "w": "When one class keeps gathering related attributes and methods, break it into smaller classes that work together and store an instance of the new class as an attribute. There is no limit on attributes, and the earlier version had describe_battery() in the child class.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0544",
+   "topic": "Classes",
+   "q": "In class ElectricCar(Car): the line self.battery = Battery() appears in __init__(). What is self.battery afterwards?",
+   "c": [
+    "The Battery class itself",
+    "A method of ElectricCar",
+    "A number, 70",
+    "An attribute of the electric car holding a new Battery instance"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Battery() makes a fresh instance each time an electric car is created, and the attribute stores it. That is why its methods are called with two dots, my_tata.battery.get_range(), and why battery takes no brackets of its own.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0545",
+   "topic": "Classes",
+   "q": "Why did the lecture store the Car class in a module instead of keeping it in the main program?",
+   "c": [
+    "Classes only run when they are in a separate file",
+    "Modules make methods run faster",
+    "It keeps the main file uncluttered and readable, and lets you leave a working class alone while you focus on higher-level logic",
+    "Python allows only one class per file"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The point is organisation: the main program stays short and clear and the tested class lives in its own file. Nothing about speed or a one-class limit was claimed; a module can hold several related classes.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0546",
+   "topic": "Classes",
+   "q": "In Colab, how did the lecture turn the cell containing class Car(): into the module car.py?",
+   "c": [
+    "By starting the cell with %%writefile car.py",
+    "By writing import car.py above the class",
+    "By naming the notebook car.py",
+    "By adding save('car.py') at the end"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The %%writefile magic saves the rest of the cell as a file, and Colab prints Writing car.py. Importing is the opposite step, done later from the main file.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0547",
+   "topic": "Classes",
+   "q": "The %%writefile car.py cell was run once with one class, then run again with three classes. What did Colab print the second time?",
+   "c": [
+    "Writing car.py",
+    "Overwriting car.py",
+    "ImportError: cannot import name 'ElectricCar'",
+    "Nothing, because the file already existed"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The first run creates the file (Writing); any later run replaces it (Overwriting). The ImportError came later, from the import cell, not from writing the file.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0548",
+   "topic": "Classes",
+   "q": "In the line from car import Car, what do the lowercase car and the capital Car refer to?",
+   "c": [
+    "Both refer to the class; Python ignores case",
+    "car is the instance and Car is the class",
+    "car is a function and Car its return value",
+    "car is the module file car.py and Car is the class inside it"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He asked for attention on exactly this: the module (file) name is lowercase, the class name is capitalised. The statement opens the module and brings in that one class.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0549",
+   "topic": "Classes",
+   "q": "car.py holds Car, Battery and ElectricCar(Car), whose __init__ sets self.battery = Battery(). What does this print?\n\nfrom car import ElectricCar\n\nmy_tesla = ElectricCar('tesla', 'model s', 2016)\nprint(my_tesla.get_descriptive_name())\nmy_tesla.battery.get_range()",
+   "c": [
+    "NameError: name 'Car' is not defined, because only ElectricCar was imported",
+    "2016 Tesla Model S then AttributeError on battery",
+    "2016 Tesla Model S then This car can go approximately 240 miles on a full charge.",
+    "ImportError, because you can't import a child class on its own"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Importing ElectricCar is enough: Car and Battery are in the same module, so inheritance and the Battery instance work as in L#32. The default battery size is 70, which get_range() reports as 240 miles.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0550",
+   "topic": "Classes",
+   "q": "After adding Battery and ElectricCar to car.py and re-running the cell, the lecturer's from car import ElectricCar failed with ImportError: cannot import name 'ElectricCar' from 'car'. Why?",
+   "c": [
+    "The notebook had already imported the one-class version of car and kept using it, so the session had to be restarted or the module reloaded",
+    "Child classes cannot be imported from a module",
+    "The file had not been saved because %%writefile only writes once",
+    "ElectricCar must be imported before Car"
+   ],
+   "a": [
+    0
+   ],
+   "w": "A notebook holds on to a module it has already imported, even after the file is overwritten. His fixes were Runtime → Restart session, or importlib.reload(car). Child classes import like any other, and the cell had printed Overwriting car.py.",
+   "lec": 33,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0551",
+   "topic": "Classes",
+   "q": "Which single line imports both Car and ElectricCar from car.py so that you can write Car(...) and ElectricCar(...) without a prefix?",
+   "c": [
+    "import car, ElectricCar",
+    "from car import Car, ElectricCar",
+    "from car import Car and ElectricCar",
+    "import Car, ElectricCar from car"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Several classes are listed after import, separated by commas. The other forms aren't valid Python; import car would bring in the module, after which the prefix car. is required.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0552",
+   "topic": "Classes",
+   "q": "After import car, which line makes the Tesla?",
+   "c": [
+    "my_tesla = ElectricCar('tesla', 'roadster', 2016)",
+    "my_tesla = car('tesla', 'roadster', 2016)",
+    "my_tesla = import car.ElectricCar('tesla', 'roadster', 2016)",
+    "my_tesla = car.ElectricCar('tesla', 'roadster', 2016)"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Importing the entire module means every class is reached as module_name.ClassName. A bare ElectricCar is unknown, and car on its own is the module, not a class you can call.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0553",
+   "topic": "Classes",
+   "q": "What happens?\n\nimport car\n\nmy_beetle = Car('volkswagen', 'beetle', 2016)\nprint(my_beetle.get_descriptive_name())",
+   "c": [
+    "It prints 2016 Volkswagen Beetle",
+    "ImportError: cannot import name 'Car'",
+    "NameError: name 'Car' is not defined",
+    "It prints car.Car"
+   ],
+   "a": [
+    2
+   ],
+   "w": "import car brings in only the name car. The class must be written car.Car(...); without the prefix Python has never heard of Car. An ImportError would come from the import line itself, which succeeds here.",
+   "lec": 33,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0554",
+   "topic": "Classes",
+   "q": "When a program needs many classes from one module, which style did the lecture recommend?",
+   "c": [
+    "import the whole module and write module_name.ClassName",
+    "from module import * so nothing needs a prefix",
+    "One from module import ClassName line per class, repeated",
+    "Copy the classes into the main file"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Importing the entire module is simple, readable and safe from name conflicts, because every instance-making line names the module. The asterisk form was shown only to be recognised, and copying the class back defeats the purpose of a module.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0555",
+   "topic": "Classes",
+   "q": "The lecture demonstrated from car import * while saying not to use it. What reason did he give for showing it at all?",
+   "c": [
+    "It is the only form that works in Colab",
+    "You are likely to meet it in other people's code",
+    "It is faster than importing one class",
+    "Python requires it for modules with more than two classes"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He showed the form so that it is recognisable when others write it; his own advice was import car with the car. prefix. It is neither required nor faster.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0556",
+   "topic": "Classes",
+   "q": "car.py holds Car. electric_car.py holds Battery and class ElectricCar(Car): but is missing the line from car import Car. The main file runs:\n\nfrom car import Car\nfrom electric_car import ElectricCar\n\nWhat happens?",
+   "c": [
+    "It works, because the main file imported Car first",
+    "It works until an ElectricCar instance is made, then AttributeError",
+    "ImportError: cannot import name 'ElectricCar'",
+    "NameError: name 'Car' is not defined, raised while electric_car is being imported"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The class line class ElectricCar(Car): runs when electric_car.py is loaded, and inside that module Car is unknown; an import in the main file doesn't reach into it. The lecture's fix is to make from car import Car the first line of electric_car.py.",
+   "lec": 33,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0557",
+   "topic": "Classes",
+   "q": "With Car in car.py and ElectricCar in electric_car.py (which imports Car itself), which pair of lines lets the main file make both a Beetle and a Tesla?",
+   "c": [
+    "from car import Car and from electric_car import ElectricCar",
+    "from electric_car import Car, ElectricCar",
+    "import car.electric_car",
+    "from car import ElectricCar and from electric_car import Car"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Each class is imported from the module that defines it. electric_car imports Car for its own use, but the main file still gets Car from car, where it is defined.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0558",
+   "topic": "Classes",
+   "q": "What is the Python standard library, as described in the lecture?",
+   "c": [
+    "Third-party packages you install for machine learning",
+    "The classes you wrote yourself during the course",
+    "A set of modules included with every Python installation, usable with a simple import",
+    "The Colab notebook's built-in files"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The standard library ships with Python; collections and random are two of its modules, used with one import line and no installation. Packages you install separately are not part of it.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0559",
+   "topic": "Classes",
+   "q": "After from collections import OrderedDict, what does favorite_languages = OrderedDict() create?",
+   "c": [
+    "A dictionary with one key, OrderedDict",
+    "An empty instance of the OrderedDict class, made with brackets rather than {}",
+    "A copy of the collections module",
+    "A list of languages in alphabetical order"
+   ],
+   "a": [
+    1
+   ],
+   "w": "OrderedDict is a class, so calling it makes an instance, exactly like my_beetle = Car(...). He stressed that there are no curly brackets: the class's code builds the empty dictionary for you.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0560",
+   "topic": "Classes",
+   "q": "favorite_languages = OrderedDict(), then 'jen', 'sarah', 'edward' and 'phil' are added in that order with square-bracket assignment, then a for loop over .items() prints each name. In what order are the names printed?",
+   "c": [
+    "Alphabetical: Edward, Jen, Phil, Sarah",
+    "Reverse of insertion: Phil, Edward, Sarah, Jen",
+    "An unpredictable order each run",
+    "The order added: Jen, Sarah, Edward, Phil"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The whole point of OrderedDict in the lecture's poll example is that it keeps track of the order in which key-value pairs were added, so a loop returns them in that order.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0561",
+   "topic": "Classes",
+   "q": "The lecturer said an ordinary dictionary doesn't keep track of the order in which pairs are added. On Colab's Python, is that still true?",
+   "c": [
+    "No: since Python 3.7 a plain dict keeps insertion order too, though OrderedDict still works as shown",
+    "Yes: only OrderedDict can be looped in order",
+    "Yes, unless the keys are strings",
+    "No: a plain dict keeps keys sorted alphabetically"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The claim comes from the book's era. Modern Python dictionaries preserve the order pairs were added, so the favorite_languages loop would print in the same order with a plain dict. Nothing sorts keys alphabetically.",
+   "lec": 33,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0562",
+   "topic": "Classes",
+   "q": "In from random import randint, what are random and randint?",
+   "c": [
+    "Both are classes, so randint() makes an instance",
+    "random is a function and randint its argument",
+    "random is a standard-library module and randint is a function in it",
+    "random is a class and randint is one of its methods, as the lecturer put it"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The line has the same shape as from car import Car, but randint is a function: randint(1, 6) is called directly and returns a whole number from 1 to 6. He described random as a class; it is a module.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0563",
+   "topic": "Classes",
+   "q": "In my_dog = Dog('willie', 6), what is my_dog?",
+   "c": [
+    "A class",
+    "A method",
+    "An instance of the Dog class",
+    "An attribute"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Dog is the class (capitalised by convention); calling it creates one specific object, an instance, stored in the lowercase variable my_dog.",
+   "bk": "Python Crash Course ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0564",
+   "topic": "Classes",
+   "q": "class Dog has def __init__(self, name, age):. Which call creates a dog correctly?",
+   "c": [
+    "Dog(self, 'rex', 3)",
+    "Dog('rex')",
+    "Dog.__init__('rex', 3)",
+    "Dog('rex', 3)"
+   ],
+   "a": [
+    3
+   ],
+   "w": "self is passed automatically, so you supply only name and age. Dog('rex') is missing age (TypeError). Passing self yourself is wrong, and you don't call __init__ directly to make an instance.",
+   "bk": "Python Crash Course ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0565",
+   "topic": "Classes",
+   "q": "What happens?\n\nclass Dog():\n    def __init__(self, name):\n        name = name\n\nd = Dog('rex')\nprint(d.name)",
+   "c": [
+    "It prints rex",
+    "It prints name",
+    "It prints None",
+    "AttributeError: 'Dog' object has no attribute 'name'"
+   ],
+   "a": [
+    3
+   ],
+   "w": "name = name just reassigns a local variable. Only self.name = name attaches the value to the instance, so d has no name attribute.",
+   "bk": "Python Crash Course ch9",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0566",
+   "topic": "Classes",
+   "q": "What does this print?\n\nclass Student():\n    def __init__(self, name):\n        self.name = name\n        self.credits = 0\n    def add(self, n):\n        self.credits += n\n\na = Student('asha')\nb = Student('ravi')\na.add(4)\na.add(3)\nb.add(5)\nprint(a.credits, b.credits)",
+   "c": [
+    "12 12",
+    "7 5",
+    "7 12",
+    "0 0"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Each instance has its own credits attribute starting at 0: a gets 4 + 3 = 7, b gets 5. The values aren't shared between instances.",
+   "bk": "Python Crash Course ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0567",
+   "topic": "Classes",
+   "q": "Continuing the Student example, what happens after a.credits = 20?",
+   "c": [
+    "a.credits is 20; b.credits is unchanged",
+    "Error: attributes can only be changed through methods",
+    "Both a.credits and b.credits become 20",
+    "a.credits becomes 27"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Direct assignment through the instance is one of the book's three ways to change an attribute, and it affects only that instance. It sets the value; it doesn't add to it.",
+   "bk": "Python Crash Course ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0568",
+   "topic": "Classes",
+   "q": "What does this print?\n\nclass Account():\n    def __init__(self, owner, balance=0):\n        self.owner = owner\n        self.balance = balance\n    def withdraw(self, amt):\n        if amt <= self.balance:\n            self.balance -= amt\n        else:\n            print(\"Insufficient funds\")\n\nacc = Account('meera', 500)\nacc.withdraw(200)\nacc.withdraw(400)\nprint(acc.balance)",
+   "c": [
+    "-100",
+    "300",
+    "Insufficient funds then 300",
+    "Insufficient funds then -100"
+   ],
+   "a": [
+    2
+   ],
+   "w": "After the first withdrawal the balance is 300; 400 > 300, so the guard prints a message and leaves the balance alone. That is the book's point about methods enforcing rules, like the odometer that can't roll back.",
+   "bk": "Python Crash Course ch9",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0569",
+   "topic": "Classes",
+   "q": "Which line correctly starts a child class Laptop that inherits from Computer?",
+   "c": [
+    "class Laptop(Computer):",
+    "class Laptop inherits Computer:",
+    "def Laptop(Computer):",
+    "class Computer(Laptop):"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The parent goes in brackets after the child's name. def defines a function, not a class (the book itself has this slip in its overriding example). class Computer(Laptop): makes Computer the child.",
+   "bk": "Python Crash Course ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0570",
+   "topic": "Classes",
+   "q": "Vehicle has fuel() returning 'petrol'. EBike(Vehicle) defines its own fuel() returning 'electricity'. What do EBike().fuel() and Vehicle(4).fuel() return?",
+   "c": [
+    "'petrol' and 'petrol'",
+    "'electricity' and 'electricity'",
+    "'electricity' and 'petrol'",
+    "'petrol' and 'electricity'"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The child's same-named method overrides the parent's, but only for child instances. The parent class is unchanged, so a plain Vehicle still says petrol.",
+   "bk": "Python Crash Course ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0571",
+   "topic": "Classes",
+   "q": "class Battery(): def __init__(self, size=40): self.size = size. An ElectricCar does self.battery = Battery(). What is my_car.battery.size?",
+   "c": [
+    "0",
+    "None",
+    "AttributeError",
+    "40"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Battery() is called with no argument, so the default size=40 is used. Defaults work in __init__ exactly as in any function.",
+   "bk": "Python Crash Course ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0572",
+   "topic": "Classes",
+   "q": "car.py defines classes Car and ElectricCar. Which statement lets you write my_beetle = car.Car('vw', 'beetle', 2016)?",
+   "c": [
+    "from car import Car",
+    "import car",
+    "from car import *",
+    "import Car from car"
+   ],
+   "a": [
+    1
+   ],
+   "w": "import car brings in the module, so classes are reached with module.Class. The from forms let you write Car(...) without the prefix. import Car from car is not valid Python.",
+   "bk": "Python Crash Course ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0573",
+   "topic": "Classes",
+   "q": "Which name follows the book's naming convention for a class?",
+   "c": [
+    "electric_car",
+    "Electric_Car",
+    "electricCar",
+    "ElectricCar"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Classes use CamelCase: capitalise each word, no underscores. lowercase_with_underscores is for instances and modules.",
+   "bk": "Python Crash Course ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0574",
+   "topic": "Classes",
+   "q": "A Battery class's get_range() sets range only when battery_size is 70 or 85, then prints range. What happens for a battery of size 60?",
+   "c": [
+    "It prints 0",
+    "It prints None",
+    "It raises an error, because range was never assigned on that path",
+    "It prints 60"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Neither branch runs, so the variable is never assigned before it's used, and Python raises UnboundLocalError (a kind of NameError). The book's own car.py hits this when it changes the default size to 60. Add an else branch.",
+   "bk": "Python Crash Course ch9",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0575",
+   "topic": "Classes",
+   "q": "from random import randint, then randint(1, 6). Which values can it return?",
+   "c": [
+    "Any whole number from 1 to 6, including 6",
+    "1 to 5 only, like range()",
+    "Any decimal between 1 and 6",
+    "Only 1 or 6"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The book describes randint as returning a number between the two values given, and both ends are included, unlike range(), whose stop value is excluded.",
+   "bk": "Python Crash Course ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0576",
+   "topic": "Classes",
+   "q": "According to the book's style guidance, how should blank lines separate methods inside a class, and classes inside a module?",
+   "c": [
+    "No blank lines anywhere, to keep files short",
+    "One blank line between methods, two blank lines between classes",
+    "Two blank lines between methods, one between classes",
+    "A blank line after every statement"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The chapter's styling section asks for one blank line between methods and two between classes in a module, so the eye can tell the two levels apart. Python doesn't require either; it's convention for readability.",
+   "bk": "Python Crash Course ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0577",
+   "topic": "Classes",
+   "q": "A main file needs both the standard-library module random and your own module car. How does the book say to order the import lines?",
+   "c": [
+    "Your own modules first, then the standard library",
+    "In alphabetical order regardless of origin",
+    "It makes no difference, so put them anywhere in the file",
+    "Standard-library imports first, a blank line, then your own modules"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The book's class style puts imports from the standard library at the top, separated by a blank line from imports of modules you wrote, which makes a reader's picture of dependencies clear. Order doesn't change behaviour, only readability.",
+   "bk": "Python Crash Course ch9",
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0578",
+   "topic": "Classes",
+   "q": "Restaurant stores self.name and self.cuisine_type. What does this print?\n\nclass IceCreamStand(Restaurant):\n    def __init__(self, name, cuisine_type):\n        super().__init__(name, cuisine_type)\n        self.flavors = []\n\nstand = IceCreamStand('polar bear', 'ice cream')\nprint(stand.name, len(stand.flavors))",
+   "c": [
+    "polar bear 0",
+    "AttributeError: 'IceCreamStand' object has no attribute 'name'",
+    "polar bear []",
+    "TypeError: __init__() missing flavors"
+   ],
+   "a": [
+    0
+   ],
+   "w": "super().__init__() stores name and cuisine_type on the same instance, then the child adds its own empty list, so len(stand.flavors) is 0. The attribute name exists because the parent's __init__ ran; flavors needs no argument because it isn't a parameter.",
+   "bk": "Python Crash Course ch9",
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0579",
+   "topic": "Classes",
+   "q": "Vehicle's __init__ is def __init__(self, brand, model, year): and stores all three. What happens?\n\nclass EScooter(Vehicle):\n    def __init__(self, brand, model, year):\n        super().__init__(brand, model)\n        self.battery_size = 3\n\nmy_scooter = EScooter('ather', '450x', 2026)",
+   "c": [
+    "It works; year defaults to None",
+    "It works; year is stored by the child automatically",
+    "TypeError: Vehicle.__init__() missing 1 required positional argument: 'year'",
+    "AttributeError when battery_size is set"
+   ],
+   "a": [
+    2
+   ],
+   "w": "super().__init__() is an ordinary call to the parent's __init__, which requires three values; passing two is a missing-argument TypeError, raised before battery_size is ever set. Nothing stores year unless it is passed through.",
+   "bk": "Python Crash Course ch9",
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0580",
+   "topic": "Classes",
+   "q": "The book models an electric car with class ElectricCar(Car): and gives it self.battery = Battery(). Which relationship does each choice express?",
+   "c": [
+    "Both say an ElectricCar is a kind of Battery",
+    "Inheritance says an ElectricCar is a Car; the attribute says an ElectricCar has a Battery",
+    "The attribute says a Battery is a kind of ElectricCar; inheritance says a Car has an ElectricCar",
+    "Both are interchangeable ways of saying the same thing"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Inheritance is for 'is a kind of' (every electric car is a car), while storing an instance as an attribute is for 'has a' (a car has a battery). Using inheritance for the battery would wrongly make the car a battery.",
+   "bk": "Python Crash Course ch9",
+   "lv": "analyse"
   }
  ],
  "briefs": {
@@ -11774,6 +13036,9 @@ HUB.addCourse({
   "lec-30",
   "lec-31",
   "pcc1-ch08",
-  "lec-29"
+  "lec-29",
+  "lec-32",
+  "lec-33",
+  "pcc1-ch09"
  ]
 });
