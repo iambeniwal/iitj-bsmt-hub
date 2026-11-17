@@ -34,13 +34,15 @@ HUB.program = {
    "L#N" in their source line, so the hub tags every lecture and topic with its quiz.
    status: "done" | "upcoming" | "tba" (date not announced yet).
    scope: notes-unit ids the assessment covers; "all" = every unit. */
-/* End-term: LMS announcements 19266 (28 Oct) and 19426 (3 Nov), plus the orientation slides.
-   The exam window is fixed but each course's paper slot isn't announced yet, so it stays "tba"
-   and `note` (exams tab) and `when` (course header) say what is known. */
-const END_TERM = { id: "end", name: "End-term exam", status: "tba", when: "4–6 Dec · slot TBA",
-  note: "Offline, pen and paper, 4–6 December 2026 (Fri–Sun): two 2-hour papers a day, 10 AM–12 PM and 2–4 PM IST, at 12 centres across India. " +
-    "Each course's day and slot isn't announced yet. Syllabus: everything taught till the end of November. No negative marking. " +
-    "The admit card comes by email about two weeks before." };
+/* End-term: LMS announcements 19266 (28 Oct) and 19426 (3 Nov) for the format, and the timetable
+   in 19828 (12 Nov) for each course's day and slot. It stays status "tba" (no question count is
+   published), but `start`/`end` drive the countdowns; `note` (exams tab) and `when` (course header)
+   carry the rest. */
+const endTerm = (day, slot, start, end, extra) => ({ id: "end", name: "End-term exam", status: "tba",
+  start, end, when: day + " · " + slot,
+  note: "Offline, pen and paper: " + day + ", " + slot + " IST, a 2-hour paper at the exam centre you chose (12 centres across India). " +
+    "Syllabus: everything taught till the end of November. No negative marking. The end-term is 70% of the course grade. " +
+    "The admit card comes by email about two weeks before." + (extra ? " " + extra : "") });
 
 HUB.semesters = [
   { n: 1, label: "Semester 1", term: "Jul–Dec 2026", courses: [
@@ -63,7 +65,9 @@ HUB.semesters = [
           durationMin: 20, questions: 60, marks: 60, types: "MCQ",
           scope: ["ifs", "dicts", "loops", "functions"],
           scopeText: "If statements, dictionaries, user input & while loops, functions (lectures 1–2)" },
-        END_TERM
+        endTerm("Sun 6 Dec", "2–4 PM", "2026-12-06T14:00:00+05:30", "2026-12-06T16:00:00+05:30", "Dr. Pathak's description of the paper (L#34, 14 Nov): 60 marks in 25 questions, 20 short answers of 2 marks (three sentences at most, a short snippet only where needed) " +
+            "and 5 exact-output questions of 4 marks, all or nothing. No code writing, pseudocode or separate debugging questions; all from the programming half and the Colab notebooks. Pen only, no calculator. " +
+            "He also said 40% quizzes / 60% end-term; the official LMS rule is 30% / 70%.")
       ]
     },
     {
@@ -83,7 +87,8 @@ HUB.semesters = [
           durationMin: 20, questions: 40, marks: 40, types: "MCQ",
           scope: ["machines", "labour", "empire", "systems", "society", "mgmt", "corp"],
           scopeText: "Recorded lectures #15–26 and the live sessions of 4 and 18 October" },
-        END_TERM
+        endTerm("Fri 4 Dec", "10 AM–12 PM", "2026-12-04T10:00:00+05:30", "2026-12-04T12:00:00+05:30", "Dr. Kanchan on the paper (L#34, 15 Nov): theory only, no numericals; short, medium and long answers (about 5, 10 and 15 marks), 5–10 questions; all five modules; closed book, no devices. " +
+            "He also called it 60% of the grade; the official weighting is 30% quizzes / 70% end-term.")
       ]
     },
     {
@@ -103,7 +108,9 @@ HUB.semesters = [
           durationMin: 20, questions: 40, marks: 40, types: "MCQ",
           scope: ["trees", "graphs", "hashing", "blockchain"],
           scopeText: "Trees (fundamentals, types), graphs (fundamentals, types, traversals), hashing, blockchain" },
-        END_TERM
+        endTerm("Sun 6 Dec", "10 AM–12 PM", "2026-12-06T10:00:00+05:30", "2026-12-06T12:00:00+05:30", "Dr. Saxena on the paper (L#33, 15 Nov): the whole course as taught in the videos and live sessions; descriptive questions like the in-video exercises plus definitions from the slides; " +
+            "PageRank at the basic-idea level; the L#32 epilogue is not in it; answer questions in any order but keep a question's parts together. " +
+            "He said 60 marks and 3 hours; the official timetable gives 2 hours (10 AM–12 PM), and the official weighting is 30% quizzes / 70% end-term.")
       ]
     },
     {
@@ -123,7 +130,9 @@ HUB.semesters = [
           durationMin: 30, questions: 40, marks: 40, types: "MCQ",
           scope: ["income-statement", "adjusting", "balance-sheet", "cash-flow"],
           scopeText: "Matching concept, adjusting entries, trading account, P&L, balance sheet, cash flow (parts 1–3)" },
-        END_TERM
+        endTerm("Fri 4 Dec", "2–4 PM", "2026-12-04T14:00:00+05:30", "2026-12-04T16:00:00+05:30", "Dr. Yadav on the paper (L#34, 14 Nov): mostly numericals in the patterns done in class, with some theory; everything lectured from journal entries to financial statement analysis, final accounts included. " +
+            "A simple calculator only (not scientific or financial). Write concise answers and follow the paper's instructions. She did not give a question count. " +
+            "The faculty practice set of 17 November is solved in the notes.")
       ]
     },
     {
@@ -136,8 +145,17 @@ HUB.semesters = [
           start: "2026-10-04T12:15:00+05:30", end: "2026-10-04T12:35:00+05:30", join: "2026-10-04T12:00:00+05:30",
           durationMin: 20, questions: 40, marks: 40, types: "MCQ",
           scope: "all", scopeText: "Topics 1–7, to Introduction to Probability 2" },
-        { id: "q2", name: "Quiz 2", status: "tba" },
-        END_TERM
+        /* Quiz 2: LMS announcement 19812 (12 Nov). Its syllabus names three topics; hypothesis
+           testing (L#27–32) is not among them and is end-term material. */
+        { id: "q2", name: "Quiz 2", status: "upcoming",
+          lectures: [10,  11,  12,  13,  14,  15,  16,  17,  18,  19,  20,  21,  22,  23,  24,  25,  26],
+          start: "2026-11-21T16:45:00+05:30", end: "2026-11-21T17:05:00+05:30", join: "2026-11-21T16:30:00+05:30",
+          durationMin: 20, questions: 40, marks: 40, types: "MCQ",
+          scope: ["dists", "sampling", "estimation"],
+          scopeText: "Discrete and continuous probability distributions, sampling distributions, interval estimation" },
+        endTerm("Sat 5 Dec", "2–4 PM", "2026-12-05T14:00:00+05:30", "2026-12-05T16:00:00+05:30", "Dr. Srivastav on the paper (L#33, 15 Nov): 60 marks; very short, short and longer questions with 2–3 parts; Anderson chapters 1–9, mostly 1–8, with hypothesis testing (chapter 9) " +
+            "only as one or two conceptual points; the practice questions and recorded-session problems cover it. Bring a non-programmable scientific calculator; z values are printed in the paper. " +
+            "He also said quizzes are 40%; the official weighting is 30% quizzes / 70% end-term.")
       ]
     },
     {
@@ -150,8 +168,17 @@ HUB.semesters = [
           start: "2026-10-04T13:00:00+05:30", end: "2026-10-04T13:30:00+05:30", join: "2026-10-04T12:45:00+05:30",
           durationMin: 30, questions: 20, marks: 20, types: "MCQ, incl. multiple-correct (all-or-nothing: no partial marks)",
           scope: "all", scopeText: "All topics covered to 27 September 2026" },
-        { id: "q2", name: "Quiz 2", status: "tba" },
-        END_TERM
+        /* Quiz 2: LMS announcement 19814 (12 Nov). Question count and marks are not disclosed, so the
+           mock paper borrows Quiz 1's format; the syllabus is every topic taught after Quiz 1. */
+        { id: "q2", name: "Quiz 2", status: "upcoming",
+          lectures: [20,  21,  23,  24,  25,  26,  27,  28,  29,  30,  31,  32,  33,  34,  35,  36,  37,  38,  40],
+          start: "2026-11-21T17:30:00+05:30", end: "2026-11-21T18:00:00+05:30", join: "2026-11-21T17:15:00+05:30",
+          durationMin: 30, questions: null, marks: null, types: "MCQ and MSQ (multiple-correct)",
+          scope: ["cb", "product", "pricing", "imc"],
+          scopeText: "All topics taught after Quiz 1: consumer decision-making to marketing communications" },
+        endTerm("Sat 5 Dec", "10 AM–12 PM", "2026-12-05T10:00:00+05:30", "2026-12-05T12:00:00+05:30", "Dr. Kapoor on the paper (L#40, 15 Nov): every module; fully subjective (no MCQ or MSQ); 60 marks; application questions rather than bare definitions. " +
+            "Quality over length, back opinions with a framework, use your own examples, bullets and diagrams, and label every answer. " +
+            "He also gave the split as 40% continuous assessment (quizzes plus a one-page assignment) / 60% end-term; the official LMS weighting is 30% quizzes / 70% end-term.")
       ]
     }
   ]}

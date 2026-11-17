@@ -10,6 +10,58 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.10.0] — 2026-11-17
+
+### Added
+- **10 lectures released 11–15 November** and the last live sessions of the semester (223 new questions;
+  3,769 in all):
+  - *Foundations of Computing*: Live Lecture 7 (L#34), the end-term briefing: 25 questions for 60 marks,
+    20 short answers of 2 marks and 5 exact-output questions of 4 marks, all or nothing; no code writing,
+    pseudocode or debugging questions; the programming half only.
+  - *Algorithmic Thinking*: Live Lecture 7 (L#33): the five sorts side by side and PageRank's rounds to its
+    stopping rule, from the two slide decks, plus his end-term guidance (descriptive and definition
+    questions, PageRank at the basic-idea level, the L#32 epilogue left out).
+  - *Economic & Business History*: Live Lecture 7 (L#34), Module 5 revisited from the session deck (the EIC
+    to 1813, the phases of Indian enterprise, agency houses, the World Wars) and a five-module revision map;
+    the end-term is theory only, short to long answers.
+  - *Financial Accounting*: Live Lecture 7 (L#34), financial statement analysis on Dr. Reddy's statements
+    (trend and common-size readings, DuPont, why Ind AS and Indian GAAP columns don't mix), and the
+    **faculty practice set of 17 November** (LMS announcement 19943) solved in full: all 11 questions,
+    every figure computed two ways.
+  - *Statistics for Managers*: the Quality Associates case (L#32: a two-tailed test each hour, control
+    limits 11.90–12.10 at α = 0.01) and Live Lecture 7 (L#33), the exam briefing.
+  - *Principles of Marketing*: pricing (L#36–37: price, pricing and strategy, the 3C framework, the six
+    steps, loss-leader and captive pricing and more, with digests of the McKinsey KVC/KVI and Deloitte
+    value-seeking-consumer readings) and marketing communications (L#38, L#40: attention, mental
+    availability, the three Cs), in two new units. With them, **Kotler & Armstrong chapters 10, 11 and 14**
+    (pricing, pricing strategies, integrated marketing communications).
+- **Quiz 2 for Statistics and Marketing** (LMS announcements 19812 and 19814), both on Saturday 21 November:
+  Statistics at 4:45–5:05 PM, 40 MCQs on distributions, sampling distributions and interval estimation
+  (hypothesis testing is end-term material); Marketing at 5:30–6:00 PM, MCQ and MSQ on everything taught
+  after Quiz 1, with the question count not disclosed. Both have briefs, notes filters and scoped mock papers;
+  Marketing's mock borrows Quiz 1's format.
+- **Each course's end-term slot** (timetable, LMS announcement 19828): EBH Fri 4 Dec 10 AM, FA Fri 4 Dec 2 PM,
+  PoM Sat 5 Dec 10 AM, SfM Sat 5 Dec 2 PM, ATB Sun 6 Dec 10 AM, FoC Sun 6 Dec 2 PM, all 2 hours. Countdowns
+  now run to them, and the Assessments tab gives what each lecturer said about the paper.
+
+### Fixed
+- **FoC end-term format.** Seven items (foc-q0368, q0524, q0525, d0148, d0150, d0151, t0141) described the
+  paper as L#24 and L#29 planned it (100 marks, eight question types, a 35% pass mark). L#34 replaced that
+  plan; the items and the L#29 notes now say so.
+- **Weighting.** Several lecturers said 40% quizzes / 60% end-term in their last sessions. The official LMS
+  announcements still say 30% / 70%, and the hub follows them; each lecture's notes record both.
+- Where a recording misspoke, the notes give the right figure and a trap records what was said: a p-value
+  read as 0.77 (it is 0.45) and hour 4's p-value given as 0.28 (it is 0.034) in the SfM case; the Bengal
+  famine as "deliberate" is marked as the lecturer's view (EBH).
+
+### Changed
+- The Assessments tab handles a quiz whose question count isn't published, and an end-term with a fixed
+  date but no paper details.
+
+Not in yet: no lecture is pending. EBH's remaining textbook chapters (Roy 1857–1947, the interwar chapters,
+first globalisation), FoC's files and testing chapters, ATB's randomness and scheduling chapters and FA's
+receivables chapter were never lectured, so they stay out under the rollout rule.
+
 ## [2.9.0] — 2026-11-09
 
 ### Added

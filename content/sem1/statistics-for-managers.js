@@ -187,6 +187,18 @@ HUB.addCourse({
    "Week 13 — Two-Tailed Tests, t Tests and Proportions",
    "Double the tail, s → t, p₀ in the SE",
    "rec"
+  ],
+  [
+   32,
+   "Week 13 — Case: Hypothesis Testing",
+   "Quality Associates: hourly tests, control limits",
+   "rec"
+  ],
+  [
+   33,
+   "Week 13 — Live Lecture 7",
+   "End-term pattern and doubts, no new content",
+   "live"
   ]
  ],
  "units": [
@@ -249,8 +261,8 @@ HUB.addCourse({
     },
     {
      "t": "Population, sample and analytics",
-     "src": "L#2 · L#5",
-     "h": "\n  <div class=\"scroller\"><table><thead><tr><th>Term</th><th>Meaning</th></tr></thead><tbody>\n   <tr><td><strong>Population</strong></td><td>The <strong>complete set</strong> of all elements of interest</td></tr>\n   <tr><td><strong>Sample</strong></td><td>A <strong>subset</strong> of the population</td></tr>\n   <tr><td><strong>Census</strong></td><td>Collection from the <strong>entire population</strong></td></tr>\n   <tr><td><strong>Sample survey</strong></td><td>Collection from a subset</td></tr>\n   <tr><td><strong>Statistical inference</strong></td><td>Using sample data to estimate population characteristics and test hypotheses</td></tr>\n   <tr><td><strong>Sample statistic</strong></td><td>A measure computed from a <strong>sample</strong> — like tasting a few grains to see if the rice is cooked</td></tr>\n   <tr><td><strong>Population parameter</strong></td><td>A measure computed from <strong>every</strong> element</td></tr>\n   <tr><td><strong>Point estimator</strong></td><td>A sample statistic used to infer the corresponding population parameter</td></tr>\n  </tbody></table></div>\n  <h4>The three analytics</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Type</th><th>Answers</th></tr></thead><tbody>\n   <tr><td><strong>Descriptive</strong></td><td>What happened — describes and summarises the past</td></tr>\n   <tr><td><strong>Predictive</strong></td><td>What will happen — models built on past data</td></tr>\n   <tr><td><strong>Prescriptive</strong></td><td>What we should do — the optimal course of action</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\"><strong>Big data</strong> is characterised by <strong>volume, velocity and variety</strong>. <strong>Data mining</strong> extracts patterns from large datasets; <strong>data warehousing</strong> captures and organises them — Walmart processes <strong>20–30 million transactions a day</strong>. Models should be <strong>reliable</strong>, and data split into <strong>training and testing</strong> sets.</p><!--viz:sfm-sample-population-notation--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table pairing sample notation with population notation: n and N, x-bar and mu, s squared with n minus 1 and sigma squared with N, s and sigma, p-bar and p.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Sample statistic vs population parameter</div><div class=\"scroller\"><table><thead><tr><th>Measure</th><th style=\"background:var(--blue-soft)\">Sample statistic</th><th>Population parameter</th></tr></thead><tbody><tr><td>Size</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">n</td><td style=\"font-family:var(--mono)\">N</td></tr><tr><td>Mean</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">x̄ = Σx / n</td><td style=\"font-family:var(--mono)\">μ = Σx / N</td></tr><tr><td>Variance</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">s² = Σ(x − x̄)² / (n − 1)</td><td style=\"font-family:var(--mono)\">σ² = Σ(x − μ)² / N</td></tr><tr><td>Std deviation</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">s</td><td style=\"font-family:var(--mono)\">σ</td></tr><tr><td>Proportion</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">p̄</td><td style=\"font-family:var(--mono)\">p</td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\">Latin letters for samples, Greek for populations. The statistic is what you compute; the parameter is what you want to know.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only the sample variance divides by n − 1; every other pair has the same formula.</figcaption></figure><!--/viz:sfm-sample-population-notation-->"
+     "src": "L#2 · L#5 · L#33",
+     "h": "\n  <div class=\"scroller\"><table><thead><tr><th>Term</th><th>Meaning</th></tr></thead><tbody>\n   <tr><td><strong>Population</strong></td><td>The <strong>complete set</strong> of all elements of interest</td></tr>\n   <tr><td><strong>Sample</strong></td><td>A <strong>subset</strong> of the population</td></tr>\n   <tr><td><strong>Census</strong></td><td>Collection from the <strong>entire population</strong></td></tr>\n   <tr><td><strong>Sample survey</strong></td><td>Collection from a subset</td></tr>\n   <tr><td><strong>Statistical inference</strong></td><td>Using sample data to estimate population characteristics and test hypotheses</td></tr>\n   <tr><td><strong>Sample statistic</strong></td><td>A measure computed from a <strong>sample</strong> — like tasting a few grains to see if the rice is cooked</td></tr>\n   <tr><td><strong>Population parameter</strong></td><td>A measure computed from <strong>every</strong> element</td></tr>\n   <tr><td><strong>Point estimator</strong></td><td>A sample statistic used to infer the corresponding population parameter</td></tr>\n  </tbody></table></div>\n  <h4>The three analytics</h4>\n  <div class=\"scroller\"><table><thead><tr><th>Type</th><th>Answers</th></tr></thead><tbody>\n   <tr><td><strong>Descriptive</strong></td><td>What happened — describes and summarises the past</td></tr>\n   <tr><td><strong>Predictive</strong></td><td>What will happen — models built on past data</td></tr>\n   <tr><td><strong>Prescriptive</strong></td><td>What we should do — the optimal course of action</td></tr>\n  </tbody></table></div>\n  <p style=\"font-size:14.5px\"><strong>Big data</strong> is characterised by <strong>volume, velocity and variety</strong>. <strong>Data mining</strong> extracts patterns from large datasets; <strong>data warehousing</strong> captures and organises them — Walmart processes <strong>20–30 million transactions a day</strong>. Models should be <strong>reliable</strong>, and data split into <strong>training and testing</strong> sets.</p><!--viz:sfm-sample-population-notation--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table pairing sample notation with population notation: n and N, x-bar and mu, s squared with n minus 1 and sigma squared with N, s and sigma, p-bar and p.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Sample statistic vs population parameter</div><div class=\"scroller\"><table><thead><tr><th>Measure</th><th style=\"background:var(--blue-soft)\">Sample statistic</th><th>Population parameter</th></tr></thead><tbody><tr><td>Size</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">n</td><td style=\"font-family:var(--mono)\">N</td></tr><tr><td>Mean</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">x̄ = Σx / n</td><td style=\"font-family:var(--mono)\">μ = Σx / N</td></tr><tr><td>Variance</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">s² = Σ(x − x̄)² / (n − 1)</td><td style=\"font-family:var(--mono)\">σ² = Σ(x − μ)² / N</td></tr><tr><td>Std deviation</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">s</td><td style=\"font-family:var(--mono)\">σ</td></tr><tr><td>Proportion</td><td style=\"font-family:var(--mono);background:var(--blue-soft)\">p̄</td><td style=\"font-family:var(--mono)\">p</td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:8px\">Latin letters for samples, Greek for populations. The statistic is what you compute; the parameter is what you want to know.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only the sample variance divides by n − 1; every other pair has the same formula.</figcaption></figure><!--/viz:sfm-sample-population-notation--><div class=\"def\"><b>From the lecture (L#33): population or sample?</b> Asked how to tell whether given data are a population or a sample, so as to choose n or n − 1: the population is <b>every</b> element relevant to the research question; leave out any element and it is a sample. His example: for India's sex ratio, all 1.4 billion people form the population; any group smaller than that is a sample. Population variance divides by N; sample variance divides by n − 1 (Excel: VAR.P/STDEV.P against VAR.S/STDEV.S).</div><p style=\"font-size:14.5px\">Size does not decide it; the question does. The 60 marks of one class are a population if the question is about that class, and a sample if they are being used to say something about all BSMT students.</p>"
     },
     {
      "t": "Textbook: Data and Statistics",
@@ -664,8 +676,8 @@ HUB.addCourse({
   {
    "id": "testing",
    "title": "Hypothesis testing",
-   "tag": "Lectures 27, 29–31",
-   "lede": "From estimating a parameter to judging a claim about it: writing H₀ and Hₐ, the two errors and the cost that sets α, and deciding one- and two-tailed tests of a mean (z or t) and of a proportion by the p-value, the critical value or a confidence interval.",
+   "tag": "Lectures 27, 29–33",
+   "lede": "From estimating a parameter to judging a claim about it: writing H₀ and Hₐ, the two errors and the cost that sets α, deciding one- and two-tailed tests of a mean (z or t) and of a proportion, and using the test to run a production line through control limits.",
    "topics": [
     {
      "t": "What a hypothesis test does",
@@ -741,6 +753,21 @@ HUB.addCourse({
      "t": "Tests about a population proportion",
      "src": "L#31",
      "h": "<p style=\"font-size:14.5px\">The last test of the chapter swaps μ for p, the population proportion. The logic is identical; only the statistic changes.</p><div class=\"def\"><b>Hypotheses about p (L#31):</b> with p₀ the hypothesised value, H₀: p ≥ p₀ vs Hₐ: p &lt; p₀ (lower tail), H₀: p ≤ p₀ vs Hₐ: p &gt; p₀ (upper tail), or H₀: p = p₀ vs Hₐ: p ≠ p₀ (two-tailed). The equality is always in H₀.<br><b>Condition</b> for using the normal distribution: np₀ ≥ 5 and n(1 − p₀) ≥ 5 (the recording says ‘greater than 5’; the course has used both wordings since L#23).<br><b>Test statistic:</b> z = (p̄ − p₀) / √( p₀(1 − p₀)/n ), where p̄ is the sample proportion. The standard error uses the <b>hypothesised p₀</b>, because the p-value is computed assuming H₀ is true. (A confidence interval for p, which assumes nothing, uses p̄ instead, as in L#25.)<br>Then the p-value and critical-value rules are exactly those of the z test for a mean.</div><h4>Worked: are half of holiday-week accidents caused by drunk driving?</h4><p style=\"font-size:14.5px\">A road-safety council projects the deaths and injuries of the Christmas–New Year week and claims that <strong>50%</strong> of the accidents are caused by drunk driving. A sample of <strong>120</strong> accidents finds <strong>67</strong> caused by drunk driving. Test the claim at α = <strong>0.05</strong>.</p><ol><li><strong>Hypotheses:</strong> H₀: p = 0.5; Hₐ: p ≠ 0.5. Two-tailed, because the claim is challenged in either direction.</li><li><strong>α = 0.05</strong>; check np₀ = n(1 − p₀) = 60 ≥ 5.</li><li><strong>Test statistic:</strong> p̄ = 67/120 = 0.558. Standard error √(0.5 × 0.5/120) = 0.0456. z = (0.558 − 0.5)/0.0456 = <strong>1.28</strong>.</li><li><strong>p-value:</strong> the area to the left of 1.28 is 0.8997, so the upper tail is 0.1003 and p = 2 × 0.1003 = <strong>0.20</strong>. 0.20 &gt; 0.05.<br><strong>Critical values:</strong> z<sub>0.025</sub> = ±1.96, ‘a number all of us should remember’; 1.28 lies between −1.96 and 1.96.</li><li><strong>Decision:</strong> do not reject H₀. There is not convincing evidence that the proportion of accidents caused by drunk driving differs from 50%.</li></ol><p style=\"font-size:14.5px\"><strong>Two slips in the recording.</strong> It once says the sample showed ‘67%’ drunk-driving accidents; it is 67 <em>of 120</em>, a proportion of 0.558. And its closing line, ‘it could be higher, it could be lower, but it is not 50%’, inverts the conclusion: H₀ was <em>not</em> rejected, so the sample gives no sufficient evidence that the proportion is anything other than 50%, and it proves nothing either way (L#29: ‘do not reject’ is not ‘accept’).</p><h4>The three tests of chapter 9 on one page</h4><div class=\"scroller\"><table><thead><tr><th>Parameter</th><th>Test statistic</th><th>Distribution</th><th>Needs</th></tr></thead><tbody><tr><td>μ, σ known</td><td>z = (x̄ − μ₀)/(σ/√n)</td><td>standard normal</td><td>normal population or n large enough for the CLT</td></tr><tr><td>μ, σ unknown</td><td>t = (x̄ − μ₀)/(s/√n)</td><td>t with n − 1 df</td><td>population roughly normal, or n large</td></tr><tr><td>p</td><td>z = (p̄ − p₀)/√(p₀(1 − p₀)/n)</td><td>standard normal</td><td>np₀ ≥ 5 and n(1 − p₀) ≥ 5</td></tr></tbody></table></div><p style=\"font-size:14.5px\">In every row: one tail → p-value is the tail area beyond the statistic, cut-off z<sub>α</sub> or t<sub>α</sub>; two tails → double the tail area, cut-offs ±z<sub>α/2</sub> or ±t<sub>α/2</sub>; reject H₀ if p ≤ α or the statistic is beyond the cut-off; the two routes always agree.</p><div class=\"def\"><b>From the lecture (L#31):</b> with the proportion test ‘we come to the end of chapter 9, or rather the full conceptual part of the course’. One case based on this chapter will be discussed next, and practice problems will be shared; the lecturer asked for difficulties with them, and with the confidence-interval approach, to be brought to the live session. Nothing was said about Quiz 2 (its date and syllabus are still not announced) or about the end-term. L#31 was taught after Quiz 1, so expect two-tailed tests, the t test and proportion tests in the end-term exam (4–6 December); β, power and sample-size-for-a-test (Anderson 9.6–9.8) have not been lectured as of L#31. The recording had one pop-up quiz item, whose content is not in the transcript.</div>"
+    },
+    {
+     "t": "Case: Quality Associates — testing each hourly sample",
+     "src": "L#32",
+     "h": "<p style=\"font-size:14.5px\">L#32 is a recorded <strong>case lecture</strong> that applies L#30–31's two-tailed z test to process control. It is Anderson's end-of-chapter-9 case <strong>Quality Associates, Inc.</strong>; the case sheet with the hourly data is linked in the lecture's notes on the LMS. The lecturer worked it in Excel and said a cleaned copy of his sheet would be shared.</p><h4>The set-up, in short</h4><ul><li>A consulting firm advises a manufacturer on monitoring its line. While the line was known to be running well, the client logged <strong>800</strong> measurements; their standard deviation, <strong>0.21</strong>, is taken as the population σ because so much data came from a good period.</li><li>The design calls for a process mean of <strong>12</strong>. From now on, a random sample of <strong>30</strong> items is drawn every hour.</li><li>If an hourly sample suggests the mean has moved, the line is stopped and corrected; otherwise it keeps running. The first day gave four hourly samples.</li></ul><div class=\"def\"><b>The test (two-tailed):</b> H₀: μ = 12 (the line is on target, carry on) against Hₐ: μ ≠ 12 (stop and correct). Two tails because a drift <b>either way</b> is a fault: too low or too high both need correcting. α = 0.01.<br><b>Statistic:</b> σ is known, so z = (x̄ − 12)/(0.21/√30), with standard error 0.21/√30 = <b>0.0383</b>.<br><b>p-value:</b> the area in the tail beyond z, <b>doubled</b>. In Excel, <code>=2*NORM.S.DIST(z,TRUE)</code> for a negative z, <code>=2*(1-NORM.S.DIST(z,TRUE))</code> for a positive one.</div><h4>Part 1 · A test for each hour</h4><div class=\"scroller\"><table><thead><tr><th>Hour</th><th>x̄</th><th>z</th><th>p-value</th><th>At α = 0.01</th></tr></thead><tbody><tr><td>1</td><td>11.959</td><td>−1.08</td><td>0.281</td><td>do not reject: keep running</td></tr><tr><td>2</td><td>12.029</td><td>0.75</td><td>0.455</td><td>do not reject: keep running</td></tr><tr><td>3</td><td>11.889</td><td>−2.90</td><td style=\"background:var(--bad-soft)\">0.0038</td><td style=\"background:var(--bad-soft)\"><strong>reject H₀: stop and correct</strong></td></tr><tr><td>4</td><td>12.081</td><td>2.12</td><td>0.034</td><td>do not reject: keep running</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Unrounded means are used for z. With the means rounded to two decimals (11.96, 12.03, 11.89, 12.08) as on the lecture's sheet, z moves slightly (for hour 1, −1.04) but no decision changes. ‘Do not reject’ means only that the hour gives no strong evidence of a drift; it does not prove the mean is exactly 12 (L#29).</p><p style=\"font-size:14.5px\"><strong>Why double.</strong> The lecturer stopped on this. NORM.S.DIST gives P(Z ≤ z), one side. Because Hₐ says ‘not equal’, a sample just as far on the other side of 12 would be equally damning, and by symmetry that tail is the same size. For hour 1 the one-sided area is 0.14, so p = 2 × 0.14 = 0.28.</p><div class=\"def\"><b>Check the recording against these figures.</b> Three slips, none of which changes his final answer (only hour 3 is rejected):<ul><li><b>Hour 1:</b> he first reads off 0.14 before doubling; the p-value is 0.28.</li><li><b>Hour 2:</b> he says 0.77 once (the LMS summary repeats it). 0.77 is the area to the <em>left</em> of z = 0.75, not a tail. One tail is 0.23 and p = 0.45, which is the figure he gives later in his written report.</li><li><b>Hour 4:</b> his report and the LMS summary give 0.28, which is hour 1's value. Hour 4 has z = 2.12 and p = 0.034. That is why hour 4 is rejected when he later reruns the sheet at α = 0.05: a p-value of 0.28 would not be.</li></ul>He also calls 0.01 the ‘level of confidence’ at one point; it is the <b>level of significance</b>. The matching confidence level is 99%.</div><h4>Part 2 · Is σ = 0.21 believable?</h4><div class=\"scroller\"><table><thead><tr><th>Hour</th><th>1</th><th>2</th><th>3</th><th>4</th></tr></thead><tbody><tr><td>s (STDEV.S)</td><td>0.220</td><td>0.220</td><td>0.207</td><td>0.206</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Each hour is a sample, so the n − 1 formula (Excel's STDEV.S) is the right one. All four sit between about 0.21 and 0.22, so treating σ as 0.21 is reasonable, and a z test with known σ stands. A curiosity of the sheet: every value in hour 2 is exactly 0.07 above the matching value in hour 1, which is why their means differ by 0.07 while their standard deviations are identical. Adding a constant shifts the centre and leaves the spread alone.</p>"
+    },
+    {
+     "t": "Control limits and the choice of α",
+     "src": "L#32",
+     "h": "<p style=\"font-size:14.5px\">Part 3 turns the test round. Instead of testing each hour after the fact, fix in advance the band of sample means that counts as ‘on target’. A new hourly x̄ inside the band means carry on; outside it, stop. These edges are the <strong>upper and lower control limits</strong>.</p><div class=\"def\"><b>Control limits for x̄ (σ known):</b> 12 ± z<sub>α/2</sub> × σ/√n.<br>At α = 0.01: z<sub>0.005</sub> = <b>2.576</b>, so the margin is 2.576 × 0.0383 = <b>0.0988</b>, and the limits are <b>LCL = 11.90</b> and <b>UCL = 12.10</b> (11.901 and 12.099).<br>The lecturer said ‘2.57’ for z; a printed table rounds it to 2.58. Any of the three gives a margin of 0.098 to 0.099, so the limits are 11.90 and 12.10 whichever you use. (The recording once says ‘12.20’ for the upper limit; it is 12.10.)</div><p style=\"font-size:14.5px\">The band is built around <strong>12</strong>, the hypothesised mean, not around any sample mean: it is the do-not-reject region of the Part 1 test, written in units of x̄ instead of z. So the two methods always agree. Hour 3's mean, 11.889, is below 11.90, matching its p-value of 0.0038; the other three hours sit inside. On the line this becomes a chart: each hour's x̄ is plotted against the two limits, and when a point touches or crosses one, an alarm stops the process for correction, after which it should settle back around 12. He named drug manufacture, bottling and packing, and precision machining as everyday users of this method: a ‘1 kg’ pack is never exactly 1 kg, and the limits say how far off is too far.</p><h4>Part 4 · What if α is raised?</h4><p style=\"font-size:14.5px\">He reran the sheet at α = 0.05. z<sub>0.025</sub> = 1.96, the margin falls to 1.96 × 0.0383 = 0.0751, and the limits <strong>narrow</strong> to 11.92 and 12.08. Hour 4 (x̄ = 12.081, p = 0.034) now crosses the upper limit, so the line would have been stopped twice on the first day, not once.</p><ul><li><strong>Gain:</strong> a real drift is caught sooner, so fewer Type II errors (missing a shift).</li><li><strong>Cost:</strong> more <strong>Type I errors</strong>: stopping a line that was in fact running correctly. α is exactly that probability for each hour, so at 0.05 about one hour in twenty of a healthy line raises a false alarm, against one in a hundred at 0.01. More stoppages mean more downtime.</li><li>Which α is right depends on which mistake costs more: the scrap from an undetected drift or the downtime from needless stops (L#29).</li></ul><div class=\"def\"><b>From the lecture (L#32):</b> he closed the course's teaching here: ‘with this, we end our course’ on basic statistics for managers, adding that later courses go further (regression with several variables, predictive and prescriptive models). Doubts go to the live session. His advice: go through the exercises and attempt as many questions as possible. In L#33 he added that the end-term will have no big numerical questions from chapter 9 (hypothesis testing), perhaps one or two conceptual ones; see L#33's notes.</div><!--viz:sfm-l32-control-chart--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Control chart: a centre line at 12, solid limits at 11.90 and 12.10 for alpha 0.01, dashed limits at 11.92 and 12.08 for alpha 0.05. Hour means 11.96, 12.03, 11.89 and 12.08. Hour 3 falls below both lower limits; hour 4 is inside the solid limits but above the dashed upper limit.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The first day on a control chart</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 292\" role=\"img\" aria-label=\"Control chart for the Quality Associates process. A centre line at the design mean 12. Solid control limits at 11.90 and 12.10 for alpha 0.01, and dashed limits at 11.92 and 12.08 for alpha 0.05. Hourly sample means: 11.96 and 12.03 inside both sets of limits; 11.89 below the lower limit for both, so it calls for corrective action; 12.08 inside the 0.01 limits but just above the dashed 0.05 upper limit.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M80,46.5 L420,46.5 L420,173.5 L80,173.5 Z\" style=\"fill:var(--good-soft);stroke:none\"/><path d=\"M80,20.0 L80,200.0\" style=\"stroke:var(--rule-2);stroke-width:1.5;fill:none\"/><path d=\"M80,110.0 L420,110.0\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><path d=\"M80,46.5 L420,46.5\" style=\"stroke:var(--ink);stroke-width:2;fill:none\"/><path d=\"M80,173.5 L420,173.5\" style=\"stroke:var(--ink);stroke-width:2;fill:none\"/><path d=\"M80,61.7 L420,61.7\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none;stroke-dasharray:5 4\"/><path d=\"M80,158.3 L420,158.3\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none;stroke-dasharray:5 4\"/><path d=\"M140,136.6 L220,91.6 L300,181.4 L380,57.7\" style=\"stroke:var(--ink-3);stroke-width:1.5;fill:none\"/><circle cx=\"140\" cy=\"136.6\" r=\"5.5\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"220\" cy=\"91.6\" r=\"5.5\" style=\"fill:var(--blue);stroke:none\"/><circle cx=\"300\" cy=\"181.4\" r=\"5.5\" style=\"fill:var(--bad);stroke:none\"/><circle cx=\"380\" cy=\"57.7\" r=\"5.5\" style=\"fill:var(--clay);stroke:none\"/><text x=\"74\" y=\"51.0\" text-anchor=\"end\" style=\"fill:var(--ink-2);font-size:13px\">UCL 12.10</text><text x=\"74\" y=\"114.5\" text-anchor=\"end\" style=\"fill:var(--ink-2);font-size:13px\">12.00</text><text x=\"74\" y=\"178.0\" text-anchor=\"end\" style=\"fill:var(--ink-2);font-size:13px\">LCL 11.90</text><text x=\"140\" y=\"220\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">Hour 1</text><text x=\"140\" y=\"237\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">11.96</text><text x=\"220\" y=\"220\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">Hour 2</text><text x=\"220\" y=\"237\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">12.03</text><text x=\"300\" y=\"220\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">Hour 3</text><text x=\"300\" y=\"237\" text-anchor=\"middle\" style=\"fill:var(--bad);font-weight:700;font-size:13px;font-family:var(--mono)\">11.89</text><text x=\"380\" y=\"220\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">Hour 4</text><text x=\"380\" y=\"237\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-family:var(--mono)\">12.08</text><path d=\"M30,258 L56,258\" style=\"stroke:var(--ink);stroke-width:2;fill:none\"/><text x=\"64\" y=\"262.5\" style=\"fill:var(--ink-2);font-size:13px\">α = 0.01 limits: 12 ± 0.099</text><path d=\"M30,280 L56,280\" style=\"stroke:var(--clay);stroke-width:1.5;fill:none;stroke-dasharray:5 4\"/><text x=\"64\" y=\"284.5\" style=\"fill:var(--ink-2);font-size:13px\">α = 0.05 limits: 12 ± 0.075</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Hour 3 crosses the 0.01 limit and stops the line; at α = 0.05, hour 4 would stop it too.</figcaption></figure><!--/viz:sfm-l32-control-chart--><!--viz:sfm-l32-alpha-compare--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison table. At alpha 0.01: z 2.576, margin 0.0988, limits 11.90 to 12.10, only hour 3 flagged, false alarm 1 in 100 healthy hours, higher chance of missing a drift. At alpha 0.05: z 1.96, margin 0.0751, limits 11.92 to 12.08, hours 3 and 4 flagged, false alarm 1 in 20, lower chance of missing a drift.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">α = 0.01 against α = 0.05 on the same line</div><div class=\"scroller\"><table><thead><tr><th></th><th>α = 0.01</th><th>α = 0.05</th></tr></thead><tbody><tr><td>z<sub>α/2</sub></td><td>2.576</td><td>1.96</td></tr><tr><td>Margin, z × 0.0383</td><td>0.0988</td><td>0.0751</td></tr><tr><td>Control limits</td><td>11.90 to 12.10</td><td>11.92 to 12.08</td></tr><tr><td>Hours flagged</td><td style=\"background:var(--bad-soft)\">hour 3 only</td><td style=\"background:var(--bad-soft)\">hours 3 and 4</td></tr><tr><td>P(false alarm) per hour when the process is fine</td><td style=\"background:var(--good-soft)\">1 in 100</td><td style=\"background:var(--clay-soft)\">1 in 20</td></tr><tr><td>Chance of missing a real drift</td><td style=\"background:var(--clay-soft)\">higher</td><td style=\"background:var(--good-soft)\">lower</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">A larger α narrows the limits: drifts are caught sooner, at the price of more false alarms.</figcaption></figure><!--/viz:sfm-l32-alpha-compare-->"
+    },
+    {
+     "t": "Live Lecture 7: end-term guidance",
+     "src": "L#33",
+     "h": "<p style=\"font-size:14.5px\">L#33 was a doubts-only live session two weeks before the end-term, with no new content. What he said about the papers is collected below. Where it differs from the official LMS announcement, the announcement wins.</p><div class=\"def\"><b>From the lecture (L#33), the end-term:</b><ul><li><b>Length and marks:</b> two hours, 60 marks.</li><li><b>Pattern:</b> three kinds of question: very short (one-word or one-line answers), short ones that need some solving, and longer questions with two or three sub-parts, like the cases worked in the recorded lectures. Few or no theory questions: any conceptual question grows out of a numerical one.</li><li><b>Where the questions come from:</b> the practice questions and the questions discussed in the recorded sessions are, in his words, enough for 100% of the paper. The numbers may change (a mean of 10 and a standard deviation of 5 might become something else), but the sequence of steps stays the same. The textbook or an AI assistant is optional, for depth.</li><li><b>Syllabus:</b> Anderson chapters 1–9 and what the sessions covered, mostly chapters 1–8. He has left out big numerical questions from chapter 9 (hypothesis testing) as slightly tricky; expect at most one or two conceptual points from it.</li><li><b>Calculator:</b> a scientific, <b>non-programmable</b> calculator; bring your own, along with pens. A basic calculator is allowed but will not help much. The centre provides only the question paper and the answer sheet.</li><li><b>Tables:</b> no need to carry a z table: any table values needed, and all other required data, will be printed in the question paper.</li><li><b>Sample paper:</b> promised by the end of that week, in exactly the end-term's pattern and number of questions. The slides are on the LMS module.</li></ul></div><div class=\"def\"><b>From the lecture (L#33), writing the answers:</b><ul><li>No word limit. Answers should look ‘numbery’, not wordy: often the value in a line or two.</li><li>Show the essential steps as if explaining to a friend who knows no statistics.</li><li>Attempt every question, even when unsure of the final answer.</li><li>Any order is fine as long as each answer carries the right question number; numbers are not repeated across sections.</li><li>Watch one recorded video, then solve that chapter's practice questions, and rewatch if stuck. ‘Practice is essential’: statistics is learned by solving numericals, not from notes alone.</li></ul></div><h4>What he said against the official announcements</h4><div class=\"scroller\"><table><thead><tr><th>Point</th><th>L#33</th><th>Official (LMS)</th></tr></thead><tbody><tr><td>Weighting</td><td>quizzes 40%</td><td style=\"background:var(--clay-soft)\">quizzes 30% (better of two quizzes), end-term 70%</td></tr><tr><td>End-term</td><td>2 hours, 60 marks</td><td>offline, Sat 5 Dec 2026, 2–4 PM IST, 2 hours, no negative marking</td></tr><tr><td>Remaining quiz</td><td>one, ‘next week’</td><td>Quiz 2: Sat 21 Nov 2026, 4:45–5:05 PM IST (join from 4:30), 40 MCQs, +1 / −0.25 / 0; syllabus: discrete and continuous distributions, sampling distribution, interval estimation</td></tr></tbody></table></div><p style=\"font-size:14.5px\">The weighting is the one real conflict: plan on the official 30/70 split. The 60-mark total comes from the lecture alone; the announcement details above give the paper's date, length and weight. Quiz 2's syllabus stops at interval estimation, so hypothesis testing (L#27–32) is end-term material only.</p>"
     },
     {
      "t": "Textbook: Hypothesis Tests",
@@ -2304,6 +2331,55 @@ HUB.addCourse({
    "p": "z = 1.28 and p-value = 0.20 > 0.05: the sample of 67 out of 120 (a proportion of 0.558, not ‘67%’) is consistent with 50%. The right conclusion is that there is no sufficient evidence of a difference from 50%, and nothing is proven either way.",
    "f": "do not reject ≠ disproved",
    "lec": 31
+  },
+  {
+   "id": "sfm-t0214",
+   "h": "Hour 2's p-value is 0.45, not the 0.77 said once in the recording",
+   "p": "0.77 is NORM.S.DIST(0.75, TRUE), the area to the left of z. The tail beyond 0.75 is 0.23, and a two-tailed p-value doubles it to 0.45, the figure in the lecturer's own report. The decision (do not reject) is the same either way.",
+   "f": "cumulative ≠ tail; double the tail",
+   "lec": 32
+  },
+  {
+   "id": "sfm-t0215",
+   "h": "Hour 4's p-value is 0.034, not the 0.28 in the lecture's report and the LMS summary",
+   "p": "z = (12.081 − 12)/0.0383 = 2.12, one tail 0.017, p = 0.034. 0.28 is hour 1's value. Only 0.034 explains why hour 4 is rejected when α is raised to 0.05; it is still not rejected at 0.01.",
+   "f": "hour 4: 0.034, not 0.28",
+   "lec": 32
+  },
+  {
+   "id": "sfm-t0216",
+   "h": "Control limits are centred on the target 12, not on a sample mean",
+   "p": "A confidence interval is built around the observed x̄; control limits are fixed in advance around μ₀ as the do-not-reject region for x̄. That is why a single x̄ can be compared with them, and why they agree with the hour-by-hour tests.",
+   "f": "limits sit on μ₀",
+   "lec": 32
+  },
+  {
+   "id": "sfm-t0217",
+   "h": "Raising α narrows the control limits; it does not widen them",
+   "p": "A larger α means a smaller critical z (1.96 instead of 2.576), so the margin falls from 0.099 to 0.075 and the limits tighten to 11.92–12.08. Stops become more frequent: more false alarms, fewer missed drifts.",
+   "f": "bigger α, tighter band",
+   "lec": 32
+  },
+  {
+   "id": "sfm-t0218",
+   "h": "At α = 0.01 two-tailed, z is 2.576; the lecture's ‘2.57’ and a table's 2.58 give the same limits",
+   "p": "The margin is 0.0985 with 2.57, 0.0988 with 2.576 and 0.0989 with 2.58, so the limits round to 11.90 and 12.10 in every case. Do not use 2.326, which is the one-tailed value for α = 0.01.",
+   "f": "two tails at 1%: 2.576",
+   "lec": 32
+  },
+  {
+   "id": "sfm-t0219",
+   "h": "A small data set can be a population, and a huge one can be a sample",
+   "p": "All 60 students of one section are the population for a question about that section; 1 lakh survey replies are a sample for a question about all of India. Choose N or n − 1 from the research question, not from the number of rows.",
+   "f": "the question decides, not the size",
+   "lec": 33
+  },
+  {
+   "id": "sfm-t0220",
+   "h": "In L#33 the lecturer gave the quiz weight as 40%; the official split is quizzes 30%, end-term 70%",
+   "p": "The LMS announcement sets quizzes at 30% (the better of the two counts) and the offline end-term on 5 Dec at 70%. Where a lecture and an announcement disagree, follow the announcement.",
+   "f": "announcement wins: 30/70",
+   "lec": 33
   }
  ],
  "defs": [
@@ -3777,6 +3853,46 @@ HUB.addCourse({
    "term": "Normal condition for a proportion test",
    "html": "<b>Normal approximation for p̄</b> in a test: np₀ ≥ 5 and n(1 − p₀) ≥ 5, checked with the hypothesised p₀, not the sample p̄.",
    "lec": 31
+  },
+  {
+   "id": "sfm-d0186",
+   "unit": "testing",
+   "topic": "Case: Quality Associates — testing each hourly sample",
+   "term": "Statistical process control",
+   "html": "<b>Statistical process control</b>: monitoring a running process by testing small samples taken at regular intervals. Each sample tests H₀: the process mean is on target; rejecting H₀ triggers corrective action, otherwise the process continues.",
+   "lec": 32
+  },
+  {
+   "id": "sfm-d0187",
+   "unit": "testing",
+   "topic": "Control limits and the choice of α",
+   "term": "Control limits (UCL and LCL)",
+   "html": "<b>Control limits</b> for a sample mean: μ₀ ± z<sub>α/2</sub> × σ/√n, centred on the target μ₀. An x̄ between the lower (LCL) and upper (UCL) limit means carry on; outside them, stop and correct. Quality Associates at α = 0.01: 11.90 and 12.10.",
+   "lec": 32
+  },
+  {
+   "id": "sfm-d0188",
+   "unit": "testing",
+   "topic": "Control limits and the choice of α",
+   "term": "False alarm (Type I error in process control)",
+   "html": "<b>False alarm</b>: stopping a process that is in fact on target, a Type I error. Its probability per sample is α, so raising α from 0.01 to 0.05 moves it from 1 in 100 to 1 in 20 healthy samples.",
+   "lec": 32
+  },
+  {
+   "id": "sfm-d0189",
+   "unit": "testing",
+   "topic": "Control limits and the choice of α",
+   "term": "Missed shift (Type II error in process control)",
+   "html": "<b>Missed shift</b>: letting a process run on after its mean has really moved, a Type II error. For a fixed sample size, a larger α (narrower limits) makes it less likely.",
+   "lec": 32
+  },
+  {
+   "id": "sfm-d0190",
+   "unit": "sources",
+   "topic": "Population, sample and analytics",
+   "term": "Population vs sample (L#33 rule)",
+   "html": "<b>Population</b>: every element relevant to the research question; <b>sample</b>: any subset that leaves some out. The question, not the size, decides which: variance divides by N for a population and by n − 1 for a sample.",
+   "lec": 33
   }
  ],
  "questions": [
@@ -15221,6 +15337,414 @@ HUB.addCourse({
    "w": "σ unknown and s given → t with n − 1 = 24 df. A proportion test always uses z with the hypothesised p₀ = 0.40 in √(p₀(1 − p₀)/n), provided np₀ = 80 and n(1 − p₀) = 120 are at least 5; there is no t test for a proportion in this course.",
    "lec": 31,
    "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0684",
+   "topic": "Two-tailed tests of a mean",
+   "q": "Quality Associates tests H₀: μ = 12 against Hₐ: μ ≠ 12 for each hourly sample. Why is the test two-tailed?",
+   "c": [
+    "The line needs correcting whether the mean drifts below 12 or above 12",
+    "The sample of 30 is too small for a one-tailed test",
+    "σ was estimated from 800 earlier observations rather than known exactly",
+    "A two-tailed test always has a smaller p-value"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Corrective action is needed for a drift in either direction, so evidence against H₀ can sit in either tail. Sample size and how σ was obtained decide z versus t, not the number of tails, and a two-tailed p-value is double the one-tail area, so it is larger, not smaller.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0685",
+   "topic": "Two-tailed tests of a mean",
+   "q": "In the Quality Associates case, σ = 0.21 and each hourly sample has 30 items. What is the standard error of x̄?",
+   "c": [
+    "0.0070",
+    "0.0383",
+    "1.150",
+    "0.21"
+   ],
+   "a": [
+    1
+   ],
+   "w": "σ/√n = 0.21/√30 = 0.21/5.477 = 0.0383. Dividing by n gives 0.0070, multiplying by √n gives 1.150, and 0.21 is the spread of single items, not of a mean of 30.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0686",
+   "topic": "Two-tailed tests of a mean",
+   "q": "Hour 3's sample mean is 11.889 (σ = 0.21, n = 30, H₀: μ = 12). What is the test statistic?",
+   "c": [
+    "−0.53",
+    "+2.90",
+    "−2.90",
+    "−0.11"
+   ],
+   "a": [
+    2
+   ],
+   "w": "z = (11.889 − 12)/(0.21/√30) = −0.111/0.0383 = −2.90. −0.53 divides by σ without the √n, −0.11 is just the gap x̄ − 12, and the sign is negative because the mean is below 12.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0687",
+   "topic": "Two-tailed tests of a mean",
+   "q": "For hour 3, z = −2.90 and the area to the left of −2.90 is 0.0019. At α = 0.01, what are the p-value and the decision?",
+   "c": [
+    "p = 0.9981; do not reject H₀",
+    "p = 0.0019; reject H₀, since one tail is all that is needed",
+    "p = 0.0038; do not reject H₀, since the mean is only 0.11 below 12",
+    "p = 0.0038; reject H₀ and stop the line for correction"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Two-tailed: p = 2 × 0.0019 = 0.0038 ≤ 0.01, so H₀ is rejected and corrective action is taken. 0.9981 is the wrong side of the table, 0.0019 is one tail only, and the size of the gap in raw units does not override a p-value below α.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0688",
+   "topic": "Two-tailed tests of a mean",
+   "q": "Hour 2 has x̄ = 12.029 and z = 0.75. NORM.S.DIST(0.75, TRUE) returns 0.77, the figure read out once in the recording. What is the two-tailed p-value?",
+   "c": [
+    "0.45",
+    "0.77",
+    "0.23",
+    "1.55"
+   ],
+   "a": [
+    0
+   ],
+   "w": "0.77 is the area to the left of z, not a tail. The upper tail is 1 − 0.77 = 0.23, and doubling gives 0.45, the figure in the lecturer's written report. 0.23 is one tail only, and 2 × 0.77 = 1.55 is impossible for a probability. Either way, H₀ is not rejected.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0689",
+   "topic": "Two-tailed tests of a mean",
+   "q": "Hour 4 has x̄ = 12.081 and z = 2.12. The LMS summary lists its p-value as 0.28. Which statement is correct?",
+   "c": [
+    "p = 0.28; do not reject at either 0.01 or 0.05",
+    "p = 0.034; do not reject at α = 0.01, but it would be rejected at α = 0.05",
+    "p = 0.017; reject at α = 0.05 but not at 0.01",
+    "p = 0.034; reject at α = 0.01 because it is below 0.05"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The upper tail beyond 2.12 is 0.017 and doubling gives 0.034: above 0.01, below 0.05. 0.28 is hour 1's p-value copied across; with 0.28, hour 4 could not be rejected at 0.05, yet the lecture's own rerun at 0.05 rejects it. 0.017 forgets to double, and α = 0.01 is the cut-off that matters at 0.01.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0690",
+   "topic": "Two-tailed tests of a mean",
+   "q": "Hour 1: z = −1.08, and the area to the left of −1.08 is 0.14. What are the p-value and the action at α = 0.01?",
+   "c": [
+    "p = 0.14; keep the line running",
+    "p = 0.86; keep the line running",
+    "p = 0.28; keep the line running",
+    "p = 0.28; stop the line, because 0.28 is larger than 0.01"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Double the one-tail area: 2 × 0.14 = 0.28 > 0.01, so H₀ is not rejected and the line continues. 0.14 is one tail, 0.86 is the wrong side, and a p-value above α means do not reject.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0691",
+   "topic": "Two-tailed tests of a mean",
+   "q": "Quality Associates tests each hour at α = 0.01 with Hₐ: μ ≠ 12. Beyond which values of z is H₀ rejected?",
+   "c": [
+    "±2.326",
+    "±2.576",
+    "±1.96",
+    "±1.645"
+   ],
+   "a": [
+    1
+   ],
+   "w": "α is split, 0.005 in each tail, and z₀.₀₀₅ = 2.576 (tables round it to 2.58; the lecture said 2.57). 2.326 is the one-tailed cut-off for α = 0.01, 1.96 is for α = 0.05 two-tailed, and 1.645 for α = 0.10 two-tailed.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0692",
+   "topic": "Two-tailed tests of a mean",
+   "q": "Using σ = 0.21, n = 30 and α = 0.01, what control limits for the hourly sample mean follow from the Quality Associates design mean of 12?",
+   "c": [
+    "11.92 to 12.08",
+    "11.99 to 12.01",
+    "11.46 to 12.54",
+    "11.90 to 12.10"
+   ],
+   "a": [
+    3
+   ],
+   "w": "12 ± 2.576 × 0.21/√30 = 12 ± 0.0988 → 11.90 to 12.10. 11.92 to 12.08 uses 1.96 (α = 0.05), 11.99 to 12.01 divides σ by n, and 11.46 to 12.54 forgets the √n, giving limits for single items rather than for a mean of 30.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0693",
+   "topic": "Two-tailed tests of a mean",
+   "q": "With control limits of 11.90 and 12.10, a new hourly sample of 30 has x̄ = 12.11. What should happen, and what would the matching test say?",
+   "c": [
+    "Stop and correct: 12.11 is above the UCL, and the test gives z ≈ 2.87, beyond 2.576, so H₀ is rejected",
+    "Keep running: 12.11 is within 0.11 of the target, a tiny difference",
+    "Keep running: one hour above the limit is not evidence of anything",
+    "Stop and correct, although the test would not reject H₀ at α = 0.01"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The limits are the do-not-reject region written in units of x̄, so the two always agree: z = (12.11 − 12)/0.0383 = 2.87 > 2.576. A gap that looks small in raw units can be large in standard errors, and the rule is to act on every hour that crosses a limit.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0694",
+   "topic": "Two-tailed tests of a mean",
+   "q": "Why are the Quality Associates control limits centred on 12 rather than on the sample mean of an hour, as a confidence interval would be?",
+   "c": [
+    "Because 12 is the mean of the 800 earlier observations",
+    "Because the limits show which values of x̄ are consistent with H₀: μ = 12, so they are built around the hypothesised mean",
+    "Because centring on x̄ would make the limits too narrow",
+    "Because control limits use σ while confidence intervals use s"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Control limits are fixed before any new sample arrives: they mark the range of x̄ expected if the process is on target, so they sit around μ₀ = 12. A confidence interval is built around the observed x̄ instead. The 800 observations supplied σ, not the target; the target 12 is the design specification.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0695",
+   "topic": "Hypothesis testing",
+   "q": "If Quality Associates raises α from 0.01 to 0.05, which error becomes more likely?",
+   "c": [
+    "Type II: letting a drifted process run on",
+    "Neither, because σ and n are unchanged",
+    "Type I: stopping a line that is in fact running correctly",
+    "Both errors become more likely"
+   ],
+   "a": [
+    2
+   ],
+   "w": "α is the probability of rejecting a true H₀, here a false alarm on a healthy line, so raising it raises Type I risk directly. With n fixed, the Type II risk moves the other way: it falls.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0696",
+   "topic": "Hypothesis testing",
+   "q": "Raising α from 0.01 to 0.05 in the Quality Associates monitoring has which effect on the control limits and on the first day's results?",
+   "c": [
+    "The limits widen to about 11.88 and 12.12, and no hour is flagged",
+    "The limits do not change; only the p-values change",
+    "The limits narrow to about 11.92 and 12.08, but still only hour 3 is flagged",
+    "The limits narrow to about 11.92 and 12.08, and hours 3 and 4 are both flagged"
+   ],
+   "a": [
+    3
+   ],
+   "w": "z falls from 2.576 to 1.96, so the margin shrinks from 0.0988 to 0.0751. Hour 4's 12.081 is now above 12.075, consistent with its p-value of 0.034. A larger α means narrower limits, not wider, and p-values do not depend on α at all.",
+   "lec": 32,
+   "lv": "analyse"
+  },
+  {
+   "id": "sfm-q0697",
+   "topic": "Hypothesis testing",
+   "q": "Raising α from 0.01 to 0.05 at Quality Associates, with the sample size kept at 30, makes which outcome less likely?",
+   "c": [
+    "A needless stoppage of a healthy line",
+    "Failing to stop the line when its mean really has drifted",
+    "A sample mean falling outside the limits",
+    "Rejecting H₀ for hour 3"
+   ],
+   "a": [
+    1
+   ],
+   "w": "With n fixed, a larger α lowers β, so a real drift is caught more often: fewer Type II errors. Needless stoppages and points outside the narrower limits both become more likely, and hour 3 is rejected under either α.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0698",
+   "topic": "Spread & shape",
+   "q": "In the Quality Associates sheet, every value in hour 2's sample is exactly 0.07 more than the matching value in hour 1. Which is true?",
+   "c": [
+    "Hour 2's mean is 0.07 higher and its standard deviation is the same",
+    "Both the mean and the standard deviation are 0.07 higher",
+    "The mean is the same and the standard deviation is 0.07 higher",
+    "The mean is 0.07 higher and the standard deviation is larger by a factor of 1.07"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Adding a constant shifts every value and the mean by that constant but leaves every deviation from the mean unchanged, so s is identical (0.220 for both). Only multiplying by a constant rescales the standard deviation.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0699",
+   "topic": "Hypothesis testing",
+   "q": "The four hourly samples have standard deviations of 0.220, 0.220, 0.207 and 0.206. What do they say about the case's assumption that σ = 0.21?",
+   "c": [
+    "Nothing, since a sample standard deviation can never be compared with σ",
+    "It is wrong: since none equals 0.21 exactly, a t test is needed",
+    "It looks reasonable: all four are close to 0.21, so the z test with known σ stands",
+    "It is wrong for hour 3 only, which is why hour 3 was rejected"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Sample standard deviations always vary a little around σ; values between about 0.21 and 0.22 support the assumption. Hour 3 was rejected because its mean was far from 12, not because of its spread.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0700",
+   "topic": "Two-tailed tests of a mean",
+   "q": "Hour 4 gives z = 2.12. Which Excel formula returns its two-tailed p-value?",
+   "c": [
+    "=2*NORM.S.DIST(2.12,TRUE)",
+    "=1-NORM.S.DIST(2.12,TRUE)",
+    "=NORM.S.INV(0.995)",
+    "=2*(1-NORM.S.DIST(2.12,TRUE))"
+   ],
+   "a": [
+    3
+   ],
+   "w": "For a positive z the tail is 1 − P(Z ≤ z), doubled: 2 × 0.017 = 0.034. Doubling the cumulative area itself gives 1.97, more than 1; 1 − NORM.S.DIST alone is one tail; NORM.S.INV(0.995) returns the critical value 2.576, not a p-value.",
+   "lec": 32,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0701",
+   "topic": "Hypothesis testing",
+   "q": "In the lecture, 0.01 is once called the ‘level of confidence’. What is it correctly?",
+   "c": [
+    "The level of significance, α; the matching confidence level is 99%",
+    "The confidence level; the significance level is 0.99",
+    "The p-value of the test",
+    "The probability of a Type II error"
+   ],
+   "a": [
+    0
+   ],
+   "w": "α = 0.01 is the significance level, the Type I error risk the manager accepts; 1 − α = 0.99 is the confidence level of the matching interval. The p-value comes from the data, and β is a separate quantity.",
+   "lec": 32,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0702",
+   "topic": "Sources & samples",
+   "q": "A researcher wants India's sex ratio and has data on all 1.4 billion residents. What is this data set, and which variance formula fits it?",
+   "c": [
+    "A sample, because it was collected by a survey; divide by n − 1",
+    "A population; divide by N",
+    "A sample, because no data set can be complete; divide by n − 1",
+    "A population; divide by N − 1"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Every element relevant to the question is included, so it is the population, and the population variance divides by N. N − 1 is never used for a population, and how the data were gathered does not change what they cover.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0703",
+   "topic": "Sources & samples",
+   "q": "A professor has the marks of all 60 students in her section and wants to describe the spread of marks in that section only. Which Excel function fits?",
+   "c": [
+    "STDEV.S, because 60 is a small number of students",
+    "STDEV.S, because marks are always a sample of ability",
+    "STDEV.P, because the data cover every member of the group asked about",
+    "Either one; they give the same answer"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The question is about that section and every student is included, so the data are the population and STDEV.P (divide by N) applies. Size alone does not make data a sample, and the two functions differ, by a factor of √(60/59).",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0704",
+   "topic": "Sources & samples",
+   "q": "The same 60 students' marks are now used to estimate the spread of marks among all BSMT students. Which is right?",
+   "c": [
+    "They are now a sample, so the n − 1 formula (STDEV.S) applies",
+    "They remain a population because nothing about the data changed",
+    "Neither formula applies to marks",
+    "Use STDEV.P and multiply the answer by 60"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Whether data are a population depends on the research question. Used to infer about a larger group, the 60 are a subset, so the sample formula with n − 1 is the right one.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0705",
+   "topic": "Sources & samples",
+   "q": "Which statement matches L#33's rule for telling a population from a sample?",
+   "c": [
+    "Anything over 1,000 observations can be treated as a population",
+    "A sample must be chosen at random; otherwise it is a population",
+    "A population is the data you have, and a sample is data you have not collected",
+    "A population includes every element relevant to the research question; leave any out and it is a sample"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The lecturer's rule: all elements of interest make the population, anything less is a sample. Size thresholds and the method of selection do not decide it; random selection matters for a good sample, not for the definition.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "sfm-q0706",
+   "topic": "Spread & shape",
+   "q": "The values 2, 4, 6, 8 and 10 have mean 6. What are the population variance and the sample variance?",
+   "c": [
+    "8 and 10",
+    "10 and 8",
+    "8 and 8",
+    "40 and 10"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Squared deviations: 16 + 4 + 0 + 4 + 16 = 40. Divide by N = 5 for the population variance, 8, and by n − 1 = 4 for the sample variance, 10. The sample version is always the larger of the two; 40 is the sum before dividing.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "sfm-q0707",
+   "topic": "Spread & shape",
+   "q": "Why does the n − 1 version give a larger variance than the N version for the same numbers, and when does the gap matter most?",
+   "c": [
+    "It squares the deviations twice; the gap is largest for large samples",
+    "It uses the median instead of the mean; the gap is constant",
+    "It divides by a smaller number; the gap is largest for small samples",
+    "It adds one extra observation; the gap matters only for proportions"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Same sum of squared deviations, divided by n − 1 instead of n, so the result is larger by n/(n − 1): 1.25 when n = 5 but only 1.0167 when n = 60. Nothing is squared twice and the mean, not the median, is used.",
+   "lec": 33,
+   "lv": "analyse"
   }
  ],
  "briefs": {
@@ -15270,6 +15794,12 @@ HUB.addCourse({
      5
     ]
    ]
+  },
+  "q2": {
+   "scopeShort": "Distributions, sampling, interval estimation",
+   "tag": "from the official LMS announcement",
+   "lede": "Every figure below is from the official Quiz 2 announcement on the LMS (12 November). The revision list is drawn from the lectures.",
+   "html": "\n    <div class=\"grid2\">\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Confirmed on the official announcement</h4>\n        <div class=\"scroller\"><table><tbody>\n          <tr><td><strong>Date</strong></td><td>Saturday 21 November</td></tr>\n          <tr><td><strong>Window</strong></td><td>4:45–5:05 PM IST · join from <strong>4:30 PM</strong></td></tr>\n          <tr><td><strong>Questions</strong></td><td><strong>40</strong>, for <strong>40 marks</strong>, in 20 minutes: 30 seconds a question</td></tr>\n          <tr><td><strong>Type</strong></td><td>MCQ</td></tr>\n          <tr><td><strong>Weight</strong></td><td>30% of the course. Only the higher of your two quiz scores counts; a missed quiz scores zero</td></tr>\n          <tr><td><strong>Score release</strong></td><td>By Fri 27 November, 5:00 PM (tentative)</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--bad);background:var(--bad-soft)\">\n          <b>Negative marking.</b> +1 correct, <strong>−0.25 for a wrong answer</strong>, 0 if left blank, the same as Quiz 1. Rough sheets are shown to the camera before and after.\n        </div>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Syllabus</h4>\n        <p style=\"font-size:14.5px\">The announcement lists three topics:</p>\n        <ol style=\"font-size:14.5px\"><li>Discrete and continuous probability distributions (L#10–16)</li><li>Sampling and sampling distributions (L#17–21, L#23)</li><li>Interval estimation (L#22, L#24–26)</li></ol>\n        <div class=\"warnbox\" style=\"margin-top:10px\"><b>Not on this list:</b> hypothesis testing (L#27–32). It is in the course for the end-term exam. The mock paper below draws only from the three listed topics.</div>\n        <div class=\"def\" style=\"margin-top:10px\"><b>From the lecture (L#18, L#23):</b> objective MCQs with no long numericals; follow the concepts. Quiz 2 runs to chapter 8, interval estimation.</div>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">What to have at your fingertips</h4>\n        <ul style=\"font-size:14.5px\">\n          <li><strong>Discrete (L#10–11):</strong> E(X) = Σx·f(x), Var(X) = Σ(x − μ)²·f(x). Binomial for n fixed independent trials, Poisson for counts per interval.</li>\n          <li><strong>Exact or cumulative (L#18):</strong> \"exactly x\" is the mass, \"x or fewer\" is cumulative, \"more than x\" is 1 − cumulative(x). For a continuous variable P(X = a) = 0.</li>\n          <li><strong>Normal (L#12, L#14–15):</strong> z = (x − μ)/σ and back again with x = μ + zσ. Normal approximation needs np ≥ 5 and n(1 − p) ≥ 5.</li>\n          <li><strong>Uniform and exponential:</strong> 1/(b − a) × width; P(X ≤ x) = 1 − e^(−x/μ).</li>\n          <li><strong>Standard error and CLT (L#19):</strong> σ/√n; x̄ near-normal for n ≥ 30. Correction factor only when n/N &gt; 0.05. The common question: probability x̄ lies within ±k of μ, with z = k/(σ/√n).</li>\n          <li><strong>Sampling methods (L#17, L#20):</strong> simple random, stratified, cluster, systematic, convenience, judgement, and their trade-offs.</li>\n          <li><strong>Intervals:</strong> x̄ ± z·σ/√n with 1.645 / 1.96 / 2.576 (L#22); t with n − 1 df when σ is unknown, still s/√n (L#24); p̄ ± z·√(p̄(1 − p̄)/n) (L#25).</li>\n          <li><strong>Sample size (L#24–26):</strong> (zσ/E)² and z²p*(1 − p*)/E², always rounded up; p* = 0.5 with no estimate.</li>\n        </ul>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Before the day</h4>\n        <ul style=\"font-size:14.5px\">\n          <li>Do the <strong>demo evaluation</strong> on the LMS first. Students who skip it get no extra time for setup failures.</li>\n          <li>Dual-device proctoring: camera, microphone and the phone camera on for the whole paper; a disconnection can invalidate the attempt.</li>\n          <li>Join during the 15-minute buffer: joining late cuts your own time, because the end time doesn't move.</li>\n          <li>PoM Quiz 2 follows the same evening at 5:30 PM.</li>\n        </ul>\n      </div>\n    </div>"
   }
  },
  "bookPacks": [
@@ -15309,6 +15839,8 @@ HUB.addCourse({
   "lec-29",
   "lec-30",
   "sbe14-ch09",
-  "lec-31"
+  "lec-31",
+  "lec-32",
+  "lec-33"
  ]
 });

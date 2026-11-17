@@ -149,6 +149,9 @@ python3 tools/build-offline.py
 
 Full history in [`CHANGELOG.md`](CHANGELOG.md). Most recent:
 
+- **[2.10.0] — 2026-11-17**: the last lectures of the semester (pricing and marketing communications, the
+  Quality Associates case, every course's final live session), the FA faculty practice set solved, Kotler &
+  Armstrong ch 10, 11 and 14, Statistics and Marketing Quiz 2 (21 Nov) and every end-term slot. 3,769 questions.
 - **[2.9.0] — 2026-11-09**: 9 lectures of 8 November (classes 2–3, PageRank and AI, the World Wars and
   Indian business, inventories and PPE, two-tailed and t tests) and four textbook chapters (classes,
   clustering, Roy's large-scale industry, Anthony's inventories and long-lived assets). 3,546 questions.

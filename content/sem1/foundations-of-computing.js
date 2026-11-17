@@ -205,6 +205,12 @@ HUB.addCourse({
    "Week 13 — Python: Classes Part 3: Modules",
    "Importing classes, modules into modules, standard library",
    "rec"
+  ],
+  [
+   34,
+   "Week 13 — Live Lecture 7",
+   "End-term paper pattern, grading and syllabus",
+   "live"
   ]
  ],
  "units": [
@@ -374,7 +380,7 @@ HUB.addCourse({
   {
    "id": "python",
    "title": "Python basics",
-   "tag": "Lectures 7, 8, 10, 14, 19, 24, 29",
+   "tag": "Lectures 7, 8, 10, 14, 19, 24, 29, 34",
    "lede": "Variables, strings, numbers, comments and Colab. Syntax questions here are the easiest marks on the paper.",
    "topics": [
     {
@@ -410,7 +416,12 @@ HUB.addCourse({
     {
      "t": "Live Lecture 6: the final exam format",
      "src": "L#29",
-     "h": "<p style=\"font-size:14.5px\">Live Lecture 6 ran on the morning of Saturday 31 October, the day of Quiz 2. Dr. Pathak opened with the final exam because students had told the programme team they were anxious about it. He said the whole paper will use only the question types below: perhaps not all of them, but nothing outside them.</p><div class=\"def\"><b>From the lecture (L#29): what the final will not have.</b> No MCQs. No plain true/false: any true/false item asks for the reason too. No one-word fill-in-the-blanks and no match-the-following.</div><div class=\"def\"><b>From the lecture (L#29): the paper.</b> Written offline, with pen and paper. He expects <b>100 marks</b>, though he also said 70 or 80 is still being discussed. The paper is then scaled down to the final's weight: <b>70%</b> if the quiz counts 30%, or <b>60%</b> if the quiz counts 40%. For the quiz part, if you sat both quizzes the <b>better score</b> is used; if you sat one, that one. Pass mark: <b>35%</b> of the paper's total (35 of 100, or 35% of 80). The exam is in the <b>first week of December</b>. The number of questions isn't fixed yet; he'll announce it through Masai once the paper is set.</div><h4>Part 1 · the theory questions</h4><div class=\"scroller\"><table><thead><tr><th>Type</th><th>Marks</th><th>How much to write</th><th>His example</th></tr></thead><tbody><tr><td><b>Very short answer</b></td><td>1–2</td><td>One or two lines, plus one concrete example</td><td>Define metadata; what is a dictionary?</td></tr><tr><td><b>True/false with reason</b></td><td>2</td><td>Your verdict, then why</td><td>0.5 marks for true/false, 1.5 for the reason</td></tr><tr><td><b>Short answer</b></td><td>3</td><td>Three or four sentences, as points, with examples</td><td>Differentiate cross-sectional and panel data, one example each</td></tr><tr><td><b>Long answer</b></td><td>about 5</td><td>At most 1–2 in the paper; no more than three lines per part</td><td>The five properties of an algorithm, with examples</td></tr><tr><td><b>Diagram, flowchart or pseudocode</b></td><td>like a long answer</td><td>Expect about 1–2</td><td>A flowchart for odd/even or prime/not prime; pseudocode for a repeated message</td></tr></tbody></table></div><p style=\"font-size:14.5px\">His rough arithmetic for a 100-mark paper: the long answers and diagram questions together come to about four questions of about 5 marks, so roughly 20 marks; the other 80 or so go to the short and very short answers and the Python questions.</p><h4>How he wants answers written</h4><ul><li><b>Points, not paragraphs.</b> He has told the TAs that answers in points, or as a block diagram with labelled boxes and arrows, show understanding, and they will get better marks than long passages.</li><li><b>One definition line plus one example.</b> His model for <em>define metadata</em>: data about data. Example: a WhatsApp message carries its time, sender and receiver; a library catalogue records each book's author, title, edition and date.</li><li><b>A 3-mark difference = three points.</b> Two points on how the two ideas differ, a third pairing an example of each (for panel data he pointed back to his MGNREGA example from the data-classification lectures).</li><li><b>A long answer is short per part.</b> Five properties × (two lines to explain + one line of example) = 15 lines, which is enough for full marks. Two pages that don't make sense get nothing; pages aren't counted.</li><li><b>Keywords and accuracy</b> matter more than the amount written.</li></ul><h4>Part 2 · the Python questions</h4><div class=\"scroller\"><table><thead><tr><th>Type</th><th>What you get</th><th>How it is marked</th></tr></thead><tbody><tr><td><b>Output prediction</b></td><td>A few lines of code (often a loop over a list); write the final output</td><td>All or nothing: no step marks. The exact form counts: if the code uses <code>.title()</code>, an answer in lowercase or capitals scores zero</td></tr><tr><td><b>Error spotting and debugging</b></td><td>Code that may contain a missing colon, a wrong indent or an index error; asked to find the error, or simply asked for the output</td><td>Writing an output for code that fails scores zero; saying it gives an error earns half; naming the type (TypeError, IndentationError, IndexError…) earns full marks</td></tr><tr><td><b>Code completion</b></td><td>A program with a <b>whole line</b> missing, not a single word, sometimes with the output shown so you can work back to the line</td><td>Write the missing line or two; where code writing is asked, write pseudocode (the logic), not exact Python</td></tr></tbody></table></div><div class=\"def\"><b>From the lecture (L#29): which question type to expect most.</b> He plans <b>more error-spotting and debugging questions</b> than any other Python type, because reading code for errors is the best test of knowing the language. Missing colons will appear but not often; wrong indentation and index errors more so. There is <b>no writing of full Python programs</b> on paper.</div><div class=\"def\"><b>From the lecture (L#29): Python theory can appear in the short answers.</b> For example: why do we need classes, or what are their advantages? (His answer is the architect's blueprint from the classes lecture, L#31: one plan, many houses.)</div><div class=\"def\"><b>From the lecture (L#29): the syllabus.</b> Only what was taught in the recorded lectures and the live sessions: no new topics and no surprise questions, and no Python method or data structure that wasn't used in the lectures. The Python part is the code files he shared, which are in each lecture's resources section on the LMS; download them and run them in Colab. Some questions will be the coding exercises set at the end of the recorded lectures, with names and details changed. Any textbook is fine for extra reading, but none is prescribed; the course outline lists every topic.</div><h4>What changed since L#24</h4><p style=\"font-size:14.5px\">In L#24 he described the Python part as output questions, short code written on paper (marked on its logic) and one- or two-word answers, with no descriptive questions on Python. L#29 is the later and more detailed word: no full code writing (code completion and pseudocode instead), true/false only with reasons, and Python theory such as the advantages of classes allowed in short answers.</p><p style=\"font-size:14.5px\">On weighting, the LMS rule of 14 October gives the quizzes <b>30%</b> (the higher of the two scores). In this session he said 30% or 40% was still being decided. Until the LMS changes, the official figure is 30%.</p><h4>What comes next</h4><p style=\"font-size:14.5px\">The next session is a TA session, around 7 November; he didn't expect any live session after it. His advice: rewatch the recordings, run the code files, bring doubts to the TA sessions (he noted few students attend them), and read all the code from the lectures rather than hunting for new problems elsewhere.</p><!--viz:foc-error-answer-marks--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A two-line program that joins the integer 5 to a string, with three possible answers: the expected sentence scores zero, saying it errors scores half, and naming TypeError scores full marks.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Three answers to code that fails</div><p style=\"margin:0 0 8px;font-family:var(--mono);font-size:13.5px\">alien_0 = {'color': 'green', 'points': 5}<br>print('You just earned ' + alien_0['points'] + ' points!')</p><div class=\"scroller\"><table><thead><tr><th>What you write</th><th>Marks (L#29)</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">You just earned 5 points!</td><td style=\"background:var(--bad-soft)\">zero: the code never prints</td></tr><tr><td>\"This gives an error.\"</td><td style=\"background:var(--clay-soft)\">half: right idea, no error type</td></tr><tr><td>\"No output: <span style=\"font-family:var(--mono)\">TypeError</span>, an int can't be joined to a string.\"</td><td style=\"background:var(--good-soft)\">full</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Check whether the code runs at all before you write an output; then name the error.</figcaption></figure><!--/viz:foc-error-answer-marks-->"
+     "h": "<p style=\"font-size:14.5px\">Live Lecture 6 ran on the morning of Saturday 31 October, the day of Quiz 2. Dr. Pathak opened with the final exam because students had told the programme team they were anxious about it. He said the whole paper will use only the question types below: perhaps not all of them, but nothing outside them.</p><div class=\"def\"><b>From the lecture (L#29): what the final will not have.</b> No MCQs. No plain true/false: any true/false item asks for the reason too. No one-word fill-in-the-blanks and no match-the-following.</div><div class=\"def\"><b>From the lecture (L#29): the paper.</b> Written offline, with pen and paper. He expects <b>100 marks</b>, though he also said 70 or 80 is still being discussed. The paper is then scaled down to the final's weight: <b>70%</b> if the quiz counts 30%, or <b>60%</b> if the quiz counts 40%. For the quiz part, if you sat both quizzes the <b>better score</b> is used; if you sat one, that one. Pass mark: <b>35%</b> of the paper's total (35 of 100, or 35% of 80). The exam is in the <b>first week of December</b>. The number of questions isn't fixed yet; he'll announce it through Masai once the paper is set.</div><h4>Part 1 · the theory questions</h4><div class=\"scroller\"><table><thead><tr><th>Type</th><th>Marks</th><th>How much to write</th><th>His example</th></tr></thead><tbody><tr><td><b>Very short answer</b></td><td>1–2</td><td>One or two lines, plus one concrete example</td><td>Define metadata; what is a dictionary?</td></tr><tr><td><b>True/false with reason</b></td><td>2</td><td>Your verdict, then why</td><td>0.5 marks for true/false, 1.5 for the reason</td></tr><tr><td><b>Short answer</b></td><td>3</td><td>Three or four sentences, as points, with examples</td><td>Differentiate cross-sectional and panel data, one example each</td></tr><tr><td><b>Long answer</b></td><td>about 5</td><td>At most 1–2 in the paper; no more than three lines per part</td><td>The five properties of an algorithm, with examples</td></tr><tr><td><b>Diagram, flowchart or pseudocode</b></td><td>like a long answer</td><td>Expect about 1–2</td><td>A flowchart for odd/even or prime/not prime; pseudocode for a repeated message</td></tr></tbody></table></div><p style=\"font-size:14.5px\">His rough arithmetic for a 100-mark paper: the long answers and diagram questions together come to about four questions of about 5 marks, so roughly 20 marks; the other 80 or so go to the short and very short answers and the Python questions.</p><h4>How he wants answers written</h4><ul><li><b>Points, not paragraphs.</b> He has told the TAs that answers in points, or as a block diagram with labelled boxes and arrows, show understanding, and they will get better marks than long passages.</li><li><b>One definition line plus one example.</b> His model for <em>define metadata</em>: data about data. Example: a WhatsApp message carries its time, sender and receiver; a library catalogue records each book's author, title, edition and date.</li><li><b>A 3-mark difference = three points.</b> Two points on how the two ideas differ, a third pairing an example of each (for panel data he pointed back to his MGNREGA example from the data-classification lectures).</li><li><b>A long answer is short per part.</b> Five properties × (two lines to explain + one line of example) = 15 lines, which is enough for full marks. Two pages that don't make sense get nothing; pages aren't counted.</li><li><b>Keywords and accuracy</b> matter more than the amount written.</li></ul><h4>Part 2 · the Python questions</h4><div class=\"scroller\"><table><thead><tr><th>Type</th><th>What you get</th><th>How it is marked</th></tr></thead><tbody><tr><td><b>Output prediction</b></td><td>A few lines of code (often a loop over a list); write the final output</td><td>All or nothing: no step marks. The exact form counts: if the code uses <code>.title()</code>, an answer in lowercase or capitals scores zero</td></tr><tr><td><b>Error spotting and debugging</b></td><td>Code that may contain a missing colon, a wrong indent or an index error; asked to find the error, or simply asked for the output</td><td>Writing an output for code that fails scores zero; saying it gives an error earns half; naming the type (TypeError, IndentationError, IndexError…) earns full marks</td></tr><tr><td><b>Code completion</b></td><td>A program with a <b>whole line</b> missing, not a single word, sometimes with the output shown so you can work back to the line</td><td>Write the missing line or two; where code writing is asked, write pseudocode (the logic), not exact Python</td></tr></tbody></table></div><div class=\"def\"><b>From the lecture (L#29): which question type to expect most.</b> He plans <b>more error-spotting and debugging questions</b> than any other Python type, because reading code for errors is the best test of knowing the language. Missing colons will appear but not often; wrong indentation and index errors more so. There is <b>no writing of full Python programs</b> on paper.</div><div class=\"def\"><b>From the lecture (L#29): Python theory can appear in the short answers.</b> For example: why do we need classes, or what are their advantages? (His answer is the architect's blueprint from the classes lecture, L#31: one plan, many houses.)</div><div class=\"def\"><b>From the lecture (L#29): the syllabus.</b> Only what was taught in the recorded lectures and the live sessions: no new topics and no surprise questions, and no Python method or data structure that wasn't used in the lectures. The Python part is the code files he shared, which are in each lecture's resources section on the LMS; download them and run them in Colab. Some questions will be the coding exercises set at the end of the recorded lectures, with names and details changed. Any textbook is fine for extra reading, but none is prescribed; the course outline lists every topic.</div><h4>What changed since L#24</h4><p style=\"font-size:14.5px\">In L#24 he described the Python part as output questions, short code written on paper (marked on its logic) and one- or two-word answers, with no descriptive questions on Python. L#29 is the later and more detailed word: no full code writing (code completion and pseudocode instead), true/false only with reasons, and Python theory such as the advantages of classes allowed in short answers.</p><p style=\"font-size:14.5px\">On weighting, the LMS rule of 14 October gives the quizzes <b>30%</b> (the higher of the two scores). In this session he said 30% or 40% was still being decided. Until the LMS changes, the official figure is 30%.</p><h4>What comes next</h4><p style=\"font-size:14.5px\">The next session is a TA session, around 7 November; he didn't expect any live session after it. His advice: rewatch the recordings, run the code files, bring doubts to the TA sessions (he noted few students attend them), and read all the code from the lectures rather than hunting for new problems elsewhere.</p><!--viz:foc-error-answer-marks--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A two-line program that joins the integer 5 to a string, with three possible answers: the expected sentence scores zero, saying it errors scores half, and naming TypeError scores full marks.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Three answers to code that fails</div><p style=\"margin:0 0 8px;font-family:var(--mono);font-size:13.5px\">alien_0 = {'color': 'green', 'points': 5}<br>print('You just earned ' + alien_0['points'] + ' points!')</p><div class=\"scroller\"><table><thead><tr><th>What you write</th><th>Marks (L#29)</th></tr></thead><tbody><tr><td style=\"font-family:var(--mono)\">You just earned 5 points!</td><td style=\"background:var(--bad-soft)\">zero: the code never prints</td></tr><tr><td>\"This gives an error.\"</td><td style=\"background:var(--clay-soft)\">half: right idea, no error type</td></tr><tr><td>\"No output: <span style=\"font-family:var(--mono)\">TypeError</span>, an int can't be joined to a string.\"</td><td style=\"background:var(--good-soft)\">full</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Check whether the code runs at all before you write an output; then name the error.</figcaption></figure><!--/viz:foc-error-answer-marks--><div class=\"def\"><b>Replaced in L#34 (14 November).</b> The format above was L#29's plan. In Live Lecture 7 Dr. Pathak set the end-term as <b>2 hours, 60 marks, 25 questions</b>: 20 short answers of 2 marks (at most three sentences, a tiny snippet if needed) and 5 exact-output questions of 4 marks. No true/false, long answers, flowcharts, pseudocode, code completion or separate debugging questions, and no 35% pass mark (grading is relative). The official LMS weighting is still quizzes 30% (better of two), end-term 70%. See Live Lecture 7: the end-term paper.</div>"
+    },
+    {
+     "t": "Live Lecture 7: the end-term paper",
+     "src": "L#34",
+     "h": "<p style=\"font-size:14.5px\">Live Lecture 7 ran on the morning of Saturday 14 November. It was the last session of the course: Dr. Pathak said there would be no more live or TA sessions, and that he would next see students at the exam centres (he is invigilating at Raipur). Most of the hour went on the end-term paper, grading and the syllabus, with a closing walk through the classes and modules notebooks.</p><div class=\"def\"><b>From the lecture (L#34): the paper.</b> <b>2 hours</b>, <b>60 marks</b>, <b>25 questions</b>, written offline with pen and paper at an exam centre. Only a pen is allowed: no scientific calculator, no other material. He will not hand out a sample paper; if Masai builds one from this description, that is up to them.</div><div class=\"scroller\"><table><thead><tr><th>Section</th><th>Questions</th><th>Marks</th><th>What to write</th></tr></thead><tbody><tr><td><b>Short answer</b></td><td>20 × 2</td><td>40</td><td>Theory about the Python topics in at most <b>three sentences</b>. Where the idea can only be shown in code, add a snippet of two to four lines as illustration.</td></tr><tr><td><b>Code output</b></td><td>5 × 4</td><td>20</td><td>Read a very short snippet and write its <b>exact</b> output. All or nothing: the right output earns 4, anything else 0. If the code uses <code>.title()</code>, an answer in lowercase or capitals scores zero.</td></tr></tbody></table></div><div class=\"def\"><b>From the lecture (L#34): what the paper does not ask for.</b> No writing of Python code for any logic or program, no pseudocode (he had planned some and dropped it), and no separate debugging or error-finding questions. Asked about debugging, he said only that you read the code and give the output, and that you can work out whether there is any output at all. So in an output question, still check that the code runs before you write anything.</div><div class=\"def\"><b>From the lecture (L#34): the syllabus.</b> All 60 marks, short answers included, come from the <b>programming half</b>: strings, lists, conditional statements, loops, dictionaries, functions (definitions and calls, parameters and arguments, default values, keyword arguments, multiple calls, avoiding argument errors), classes (<code>__init__()</code>, <code>self</code>, inheritance, class and instance attributes, methods, overriding) and modules (importing classes or functions from a module, aliases). The computing half (what computing is, the pillars, hardware and input/output devices, software including interpreter vs compiler, DIKW, types of data, batch processing) was already tested in the quizzes, and he said none of it will be in the end-term paper. The same goes for the standard-library section at the end of L#33 (OrderedDict, randint): he said it was shared for general knowledge and will not be asked in the end-term.</div><div class=\"def\"><b>From the lecture (L#34): the study material.</b> The Colab notebooks (<code>.ipynb</code> files) he shared are the whole syllabus: everything in them, code cells and text cells alike, can become a short answer or an output question, and nothing outside them will. No textbook is needed; books or an LLM are fine for understanding a topic better. The notebooks sit in the lecture sections on the LMS (classmates confirmed this in the chat), possibly as a zip to unzip first. Download them, then in Colab use File → Open notebook → Upload and choose the file. Opening them through a link was laggy for some students; a local copy was not.</div><h4>How he wants short answers written</h4><ul><li><b>Point to point.</b> Answer exactly what is asked in one to three sentences. Some questions need only one sentence.</li><li><b>No stories.</b> Three paragraphs for a 2-mark question tell him you don't know the concept; he said he will not read them and such answers can score zero. Padding also leaves a bad impression of the whole script.</li><li><b>Code as evidence, not as a program.</b> A two- to four-line snippet is welcome when it is the clearest way to show the idea (see the model answers in the Dictionaries unit).</li></ul><h4>Grading, as he described it</h4><div class=\"def\"><b>From the lecture (L#34): weighting.</b> He said a school meeting had fixed <b>40% for the quizzes and 60% for the end-term</b> for every course this semester, replacing the 70/30 in his course outline, to help students in a distance format. For the quiz part the <b>better</b> of the two scores counts, not the average (his example: 8.2 out of 10 becomes 32.8 out of 40). There is no third quiz: missing both quizzes means zero for that part. No marks for attendance or participation, and no minimum attendance this semester.</div><div class=\"card\"><b>Official LMS rule (this wins):</b> announcement 18815 (14 October) gives the quizzes <b>30%</b> (only the higher of the two scores) and the end-term <b>70%</b>, and the Quiz 2 announcements of 12 November repeat that only the best 1 of 2 quizzes counts. The Major Exam timetable puts the FoC end-term on <b>Sunday 6 December 2026, 2–4 PM IST</b>: offline, 2 hours, no negative marking. Until the LMS publishes a change, plan on 30/70: the same 8.2 out of 10 is then worth <b>24.6 of 30</b>, and the 60-mark paper is scaled to 70.</div><div class=\"def\"><b>From the lecture (L#34): no pass mark.</b> In the IIT system grading is <b>relative</b>: a normal (bell) curve is fitted to the class. Not more than about 10% get A, most get B or B−, the lower tail gets C or C−, and those well below the class get D, which still passes. F is given only when a score sits far below everyone else (his example: the D students around 42–48 out of 100 and one student at 10–15). This replaces the 35% pass mark he mentioned in L#29. A student who fails a course repeats it next semester alongside the new courses.</div><h4>What changed since L#29</h4><p style=\"font-size:14.5px\">L#29 (31 October) described a 100-mark paper with up to eight question types, including true/false with reasons, long answers, flowcharts, error spotting and code completion. L#34 is the later word and is much narrower: two question types, 60 marks, programming half only. The figure below sets them side by side. Practise two things: explaining each Python idea in three sentences with a tiny example, and predicting exact outputs, character by character.</p><p style=\"font-size:14.5px\">Exam centres and admit cards come from Masai; he had received his own centre the day before.</p><!--viz:foc-endterm-l29-vs-l34--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A table comparing the final exam as described in L#29 and in L#34: marks fall from 100 to 60, question types narrow to short answers and exact outputs, the syllabus narrows to the programming half, the 35% pass mark gives way to relative grading, and his 60% weight differs from the official 70%.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The end-term paper: L#29's plan and L#34's</div><div class=\"scroller\"><table><thead><tr><th></th><th>L#29 (31 Oct)</th><th>L#34 (14 Nov)</th></tr></thead><tbody><tr><td><b>Marks</b></td><td>100 expected (70 or 80 possible)</td><td style=\"background:var(--blue-soft)\">60</td></tr><tr><td><b>Questions</b></td><td>not fixed</td><td style=\"background:var(--blue-soft)\">25: 20 short answers × 2, 5 outputs × 4</td></tr><tr><td><b>Question types</b></td><td>very short, true/false with reason, short, long, diagram or pseudocode, output, error spotting, code completion</td><td style=\"background:var(--blue-soft)\">short answer and exact output only</td></tr><tr><td><b>Syllabus</b></td><td>everything taught</td><td style=\"background:var(--blue-soft)\">programming half only</td></tr><tr><td><b>Pass mark</b></td><td>35%</td><td style=\"background:var(--blue-soft)\">none: relative grading</td></tr><tr><td><b>Weight he gave</b></td><td>70% or 60%, undecided</td><td style=\"background:var(--clay-soft)\">60% (quizzes 40%)</td></tr><tr><td><b>Official LMS</b></td><td colspan=\"2\" style=\"background:var(--good-soft)\">end-term 70%, quizzes 30% (better of two): announcement 18815</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">L#34 is the later word on the paper; on weighting, the LMS announcement still governs.</figcaption></figure><!--/viz:foc-endterm-l29-vs-l34--><!--viz:foc-endterm-marks-split--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A bar split to scale into 40 marks for twenty 2-mark short answers and 20 marks for five 4-mark exact-output questions.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Where the 60 marks are</div><div style=\"display:flex;gap:4px;align-items:stretch\"><div style=\"flex:40 1 0;min-width:0;padding:8px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-size:13.5px\"><b>Short answers</b><br>20 × 2 = <b style=\"font-family:var(--mono)\">40</b><br><span style=\"color:var(--ink-2)\">≤ 3 sentences, tiny code if needed</span></div><div style=\"flex:20 1 0;min-width:0;padding:8px 10px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft);font-size:13.5px\"><b>Outputs</b><br>5 × 4 = <b style=\"font-family:var(--mono)\">20</b><br><span style=\"color:var(--ink-2)\">exact or zero</span></div></div><p style=\"margin:8px 0 0;font-size:13px;color:var(--ink-3)\">Widths are to scale: 60 marks, 25 questions, 2 hours.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Two thirds of the paper is short theory answers; the output third is all or nothing.</figcaption></figure><!--/viz:foc-endterm-marks-split-->"
     },
     {
      "t": "Textbook: Getting Started",
@@ -528,7 +539,7 @@ HUB.addCourse({
   {
    "id": "dicts",
    "title": "Dictionaries &amp; nesting",
-   "tag": "Lectures 21–23, 29",
+   "tag": "Lectures 21–23, 29, 34",
    "lede": "Key-value pairs: the structure for connecting pieces of information. Part 1 creates, reads, changes and deletes pairs; part 2 loops through them; part 3 nests dictionaries and lists inside each other.",
    "topics": [
     {
@@ -570,6 +581,11 @@ HUB.addCourse({
      "t": "Live Lecture 6: dictionary drills",
      "src": "L#29",
      "h": "<p style=\"font-size:14.5px\">After the exam briefing he revised dictionaries, functions and classes in Colab, turning lecture code into the kinds of question he described. The code is from L#21–23.</p><h4>A model answer: what is a dictionary?</h4><p style=\"font-size:14.5px\">A collection of key-value pairs inside curly braces, with a colon between each key and its value and commas between pairs. Add one small example of creating it and reading one value, and stop there:</p><pre>student_0 = {'program': 'BSMT', 'module': 'Foundations of Computing', 'roll_number': 12}\nprint(student_0['module'])\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Foundations of Computing</span></pre><h4>Spot the error: a number joined to text</h4><p style=\"font-size:14.5px\">He took the L#21 points line and removed the <code>str()</code>:</p><pre>alien_0 = {'color': 'green', 'points': 5}\nprint('You just earned ' + alien_0['points'] + ' points!')\n<span class=\"c\"># last line of the traceback:</span>\n<span class=\"o\">TypeError: can only concatenate str (not \"int\") to str</span></pre><p style=\"font-size:14.5px\">The value of <code>'points'</code> is the integer 5, and + can't join an integer to a string. The full-marks answer: <b>no output, a TypeError</b>. \"You just earned 5 points!\" scores zero.</p><h4>Fill in the missing line</h4><p style=\"font-size:14.5px\">The L#21 moving alien again, with one line blanked out and the output given. The dictionary says <code>'medium'</code>, which would move the alien 2, yet the output shows 3. So the missing line must change the speed to something that is neither slow nor medium:</p><pre>alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}\nprint(\"Original x-position: \" + str(alien_0['x_position']))\nalien_0['speed'] = 'fast'          # the missing line\n\nif alien_0['speed'] == 'slow':\n    x_increment = 1\nelif alien_0['speed'] == 'medium':\n    x_increment = 2\nelse:\n    x_increment = 3\n\nalien_0['x_position'] = alien_0['x_position'] + x_increment\nprint(\"New x-position: \" + str(alien_0['x_position']))\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Original x-position: 0</span>\n<span class=\"o\">New x-position: 3</span></pre><h4>One print statement only</h4><p style=\"font-size:14.5px\">Another constraint he likes: print every key and value of <code>user_0</code> using <b>no more than one print statement</b>. Three separate prints break the rule; a loop over <code>items()</code> keeps it:</p><pre>user_0 = {'username': 'efermi', 'first': 'enrico', 'last': 'fermi'}\nfor key, value in user_0.items():\n    print(\"Key: \" + key + \" | Value: \" + value)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Key: username | Value: efermi</span>\n<span class=\"o\">Key: first | Value: enrico</span>\n<span class=\"o\">Key: last | Value: fermi</span></pre><h4>items(), keys(), values() or nothing</h4><p style=\"font-size:14.5px\">Expect the same loop with the method swapped, and a question on what changes:</p><div class=\"scroller\"><table><thead><tr><th>Loop header</th><th>The loop variable gets</th></tr></thead><tbody><tr><td><code>for name, language in favorite_languages.items():</code></td><td>each key and its value</td></tr><tr><td><code>for name in favorite_languages.keys():</code></td><td>each key only</td></tr><tr><td><code>for name in favorite_languages:</code></td><td>each key only: looping over a dictionary gives its keys by default</td></tr><tr><td><code>for language in favorite_languages.values():</code></td><td>each value only</td></tr></tbody></table></div><p style=\"font-size:14.5px\">Several students answered the no-method version correctly in the chat: its output is identical to the <code>keys()</code> version.</p><h4>Nesting, and working back from the output</h4><p style=\"font-size:14.5px\">Putting a structure inside another is <b>nesting</b>: dictionaries in a list, a list in a dictionary, a dictionary in a dictionary, a list in a list. He extended the word to a function inside a function and a for loop inside a for loop. One question type gives you the printing code and its output and asks you to write the dictionary that produced it. Here the toppings print one per line under the crust, so <code>toppings</code> must be a list stored as a value:</p><pre>pizza = {'crust': 'thick', 'toppings': ['mushrooms', 'extra cheese']}   # you write this line\n\nprint(\"You ordered a \" + pizza['crust'] + \"-crust pizza with the following toppings:\")\nfor topping in pizza['toppings']:\n    print(\"\\t\" + topping)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">You ordered a thick-crust pizza with the following toppings:</span>\n<span class=\"o\">\tmushrooms</span>\n<span class=\"o\">\textra cheese</span></pre>"
+    },
+    {
+     "t": "Live Lecture 7: two model short answers",
+     "src": "L#34",
+     "h": "<p style=\"font-size:14.5px\">He gave two sample short-answer questions (2 marks each) to show what three sentences plus a small snippet looks like. Both are about dictionaries.</p><h4>1 · Differentiate a list and a dictionary in terms of how an item is accessed</h4><p style=\"font-size:14.5px\">He stressed that this one cannot be answered well in words alone, so a short snippet belongs in the answer. A model answer:</p><ul><li>A list item is reached by its <b>position</b>: an integer index in square brackets, counting from 0.</li><li>A dictionary value is reached by its <b>key</b> in square brackets, because a dictionary stores key-value pairs, not positions.</li></ul><pre>marks = [72, 85, 64]\nprint(marks[1])\nstudent = {'name': 'riya', 'marks': 85}\nprint(student['marks'])\n<span class=\"c\"># prints:</span>\n<span class=\"o\">85</span>\n<span class=\"o\">85</span></pre><h4>2 · What do keys(), values() and items() give when used in a loop?</h4><p style=\"font-size:14.5px\">Here, he said, the code is optional: the words alone can carry the answer. <code>keys()</code> hands the loop each key, <code>values()</code> each value, and <code>items()</code> each key-value pair, usually unpacked into two loop variables.</p><pre>favorite_languages = {'jen': 'python', 'sarah': 'c'}\nfor name in favorite_languages.keys():\n    print(name)\nfor language in favorite_languages.values():\n    print(language)\nfor name, language in favorite_languages.items():\n    print(name, language)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">jen</span>\n<span class=\"o\">sarah</span>\n<span class=\"o\">python</span>\n<span class=\"o\">c</span>\n<span class=\"o\">jen python</span>\n<span class=\"o\">sarah c</span></pre><p style=\"font-size:14.5px\">One step further, as an output question might push it: with <b>one</b> loop variable, <code>items()</code> hands over each pair whole, and print shows it as a tuple, brackets and quotes included.</p><pre>cities = {'riya': 'jaipur', 'kabir': 'pune'}\nfor pair in cities.items():\n    print(pair)\n<span class=\"c\"># prints:</span>\n<span class=\"o\">('riya', 'jaipur')</span>\n<span class=\"o\">('kabir', 'pune')</span></pre>"
     },
     {
      "t": "Textbook: Dictionaries",
@@ -692,7 +708,7 @@ HUB.addCourse({
   {
    "id": "classes",
    "title": "Classes",
-   "tag": "Lectures 29, 31–33",
+   "tag": "Lectures 29, 31–34",
    "lede": "Blueprints for objects. A class bundles data (attributes, set in __init__() through self) and behaviour (methods); each instance made from it holds its own values. Part 1 covers the Dog and Car classes; Part 2 adds default attribute values, the three ways to change an attribute, inheritance with super().__init__(), overriding, and a Battery instance stored as an attribute; Part 3 stores classes in modules, imports one, several or all of them, imports a module into a module, and opens the standard library (OrderedDict, randint).",
    "topics": [
     {
@@ -764,6 +780,11 @@ HUB.addCourse({
      "t": "The standard library: OrderedDict and randint",
      "src": "L#33",
      "h": "<p style=\"font-size:14.5px\">So far every function, class and module in the course was written by us, apart from built-ins such as <code>__init__()</code> and <code>super()</code>. Python also ships with the <b>standard library</b>: a set of modules included with <b>every Python installation</b>, full of ready-made classes and functions you use with one import line and without caring how they are written inside.</p><h4>OrderedDict from collections</h4><pre>from collections import OrderedDict\n\nfavorite_languages = OrderedDict()\n\nfavorite_languages['jen'] = 'python'\nfavorite_languages['sarah'] = 'c'\nfavorite_languages['edward'] = 'ruby'\nfavorite_languages['phil'] = 'python'\n\nfor name, language in favorite_languages.items():\n    print(name.title() + \"'s favorite language is \" + language.title() + \".\")\n<span class=\"c\"># prints:</span>\n<span class=\"o\">Jen's favorite language is Python.</span>\n<span class=\"o\">Sarah's favorite language is C.</span>\n<span class=\"o\">Edward's favorite language is Ruby.</span>\n<span class=\"o\">Phil's favorite language is Python.</span></pre><ul><li><code>collections</code> is a standard-library <b>module</b>; <code>OrderedDict</code> is one <b>class</b> in it. The import line has the same shape as <code>from car import Car</code>.</li><li><code>favorite_languages = OrderedDict()</code> makes an <b>instance</b> of that class, exactly as <code>my_beetle = Car(...)</code> did. He stressed: <b>no curly brackets</b>; the class's own code builds an empty ordered dictionary for you.</li><li>Pairs are then added one at a time with square-bracket assignment, and <code>.items()</code> loops through them like any dictionary (L#22). The names come back in the <b>order they were added</b>: the poll example, where you want to know who answered first.</li><li>His motivation, from the book: an ordinary dictionary doesn't keep track of the order pairs were added. On Colab's Python (3.7 or later) a plain <code>dict</code> <b>does</b> keep insertion order, so <code>OrderedDict</code> is rarely necessary today; it still works exactly as shown, and it is what the lecture used.</li></ul><h4>randint from random</h4><p style=\"font-size:14.5px\">The last exercise introduced a second standard-library module. <code>from random import randint</code>, then <code>x = randint(1, 6)</code> gives a whole number from 1 to 6, both ends included. He described <code>random</code> as a class; it is a <b>module</b>, and <code>randint</code> is a <b>function</b> inside it. The task: a <code>Die</code> class with one attribute <code>sides</code> defaulting to 6 and a method <code>roll_die()</code> that prints <code>randint(1, self.sides)</code>; make a 6-sided die and roll it 10 times, then a 10-sided and a 20-sided die, 10 rolls each.</p><h4>Exercises he set (20 minutes, four tasks)</h4><ol><li>Store the latest <b>Restaurant</b> class in a module; in a separate file import it, make an instance and call a method to show the import works.</li><li>Store <b>User</b>, <b>Privileges</b> and <b>Admin</b> (from L#32's exercises) in <b>one</b> module; in another file make an Admin and call <code>show_privileges()</code>.</li><li>Store <b>User</b> in one module and <b>Privileges</b> and <b>Admin</b> in another; make an Admin in a third file and call <code>show_privileges()</code> again.</li><li>The <b>Die</b> class above, using <code>randint</code>.</li></ol><p style=\"font-size:14.5px\">For reading: the <b>Python Module of the Week</b> site (pymotw) as a tour of the standard library; pick a module that interests you, or read the documentation of <code>collections</code> and <code>random</code>.</p><div class=\"def\"><b>From the lecture (L#33):</b> he called this the last recorded lecture of the course and said he would see everyone in the live sessions, so the recorded syllabus ends with classes and modules (L#31–33). His closing recap of the chapter is the checklist: writing a class, attributes and methods, __init__(), changing attributes directly and through methods, inheritance, instances as attributes, storing classes in modules and importing them, and a first look at the standard library. Taught after Quiz 2; expect it in the end-term exam, 4–6 December.</div>"
+    },
+    {
+     "t": "Live Lecture 7: the classes and modules checklist",
+     "src": "L#34",
+     "h": "<p style=\"font-size:14.5px\">He closed by scrolling through the classes notebook and listing what students should be able to explain. Each line below can be a 2-mark short answer; the code is the kind of snippet an output question uses.</p><ul><li>What <code>__init__()</code> is and <b>when it runs</b>: automatically, each time an instance is created.</li><li>A function or method <b>definition</b> (the <code>def</code> block) versus a <b>call</b> (using it).</li><li>What <code>self</code> does: it ties attributes and methods to the particular instance.</li><li>The inheritance syntax <code>class ElectricCar(Car):</code>, and what it gives: an ElectricCar instance can use Car's attributes and methods.</li><li>A class versus an instance (also called an object); attributes versus methods: <code>battery_size</code> is an attribute, <code>describe_battery()</code> a method.</li><li>Class attributes and instance attributes; <b>method overriding</b>.</li><li>What a <b>module</b> is: another Python file, such as <code>car.py</code>, that can hold several classes (here Car, Battery and ElectricCar), and how to import a class or a function from it.</li></ul><h4>Importing only the child class</h4><p style=\"font-size:14.5px\">His point: if you import ElectricCar alone, Car's methods still work through an ElectricCar instance, because the child inherits them. With this (shortened) <code>car.py</code>:</p><pre>class Car():\n    def __init__(self, make, model, year):\n        self.make = make\n        self.model = model\n        self.year = year\n\n    def get_descriptive_name(self):\n        long_name = str(self.year) + ' ' + self.make + ' ' + self.model\n        return long_name.title()\n\n    def fill_gas_tank(self):\n        print(\"Filling the gas tank.\")\n\n\nclass ElectricCar(Car):\n    def __init__(self, make, model, year):\n        super().__init__(make, model, year)\n        self.battery_size = 70\n\n    def describe_battery(self):\n        print(\"This car has a \" + str(self.battery_size) + \"-kWh battery.\")\n\n    def fill_gas_tank(self):\n        print(\"This car doesn't need a gas tank!\")</pre><pre>from car import ElectricCar\n\nmy_tesla = ElectricCar('tesla', 'model s', 2016)\nprint(my_tesla.get_descriptive_name())\nmy_tesla.describe_battery()\nmy_tesla.fill_gas_tank()\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2016 Tesla Model S</span>\n<span class=\"o\">This car has a 70-kWh battery.</span>\n<span class=\"o\">This car doesn't need a gas tank!</span></pre><p style=\"font-size:14.5px\"><code>get_descriptive_name()</code> comes from Car; <code>fill_gas_tank()</code> runs the child's overriding version. The reverse does not hold: a plain Car has no <code>describe_battery()</code>.</p><pre>from car import Car\n\nmy_beetle = Car('volkswagen', 'beetle', 2015)\nmy_beetle.fill_gas_tank()\nmy_beetle.describe_battery()\n<span class=\"c\"># prints, then the traceback ends:</span>\n<span class=\"o\">Filling the gas tank.</span>\n<span class=\"o\">AttributeError: 'Car' object has no attribute 'describe_battery'</span></pre><h4>Why modules and aliases matter later</h4><p style=\"font-size:14.5px\">He linked this to the machine-learning and deep-learning courses of later semesters, whose code opens with lines such as <code>import pandas as pd</code>, <code>import seaborn as sns</code> and <code>import numpy as np</code>: a whole module imported under a short <b>alias</b>, exactly as <code>import car</code> imports the whole car module. The alias then replaces the module name in the code:</p><pre>import car as c\n\nmy_car = c.Car('maruti', 'swift', 2024)\nprint(my_car.get_descriptive_name())\n<span class=\"c\"># prints:</span>\n<span class=\"o\">2024 Maruti Swift</span></pre><p style=\"font-size:14.5px\">He also showed <code>from sklearn.model_selection import train_test_split</code>, reading it as module, class and method. In Python's own terms <code>sklearn</code> is a package, <code>model_selection</code> a module inside it and <code>train_test_split</code> a function; either way the line has the familiar shape <code>from &lt;where&gt; import &lt;name&gt;</code>, like <code>from car import ElectricCar</code>.</p>"
     },
     {
      "t": "Textbook: Classes",
@@ -1797,8 +1818,8 @@ HUB.addCourse({
   {
    "id": "foc-t0141",
    "h": "The final asks for no full Python programs on paper",
-   "p": "L#24 mentioned short handwritten code; L#29, the later word, says code writing means completing a missing line or writing pseudocode.",
-   "f": "complete a line, don't write a program",
+   "p": "Still true, and now stricter: L#24 mentioned short handwritten code and L#29 code completion or pseudocode, but L#34 replaced both. The end-term asks for no code writing at all: 20 short answers × 2 and 5 exact-output questions × 4 (60 marks, 25 questions, 2 hours).",
+   "f": "read code, don't write it",
    "lec": 29
   },
   {
@@ -1919,6 +1940,41 @@ HUB.addCourse({
    "p": "A default value in __init__ (battery_size=70) applies only when the caller passes nothing, exactly as for any function parameter. Each Battery instance stores its own size, so one 85-kWh battery doesn't change another car's 70.",
    "f": "default fills the gap only",
    "bk": "Python Crash Course ch9"
+  },
+  {
+   "id": "foc-t0159",
+   "h": "The 60/40 weighting from L#34 is not the official rule",
+   "p": "He said quizzes 40% and end-term 60%. LMS announcement 18815 says quizzes 30% (better of two) and end-term 70%, and no later announcement has changed it. Plan on 30/70.",
+   "f": "LMS beats the lecture",
+   "lec": 34
+  },
+  {
+   "id": "foc-t0160",
+   "h": "The end-term has only two question types now",
+   "p": "L#29 listed true/false with reasons, long answers, flowcharts, error spotting and code completion. L#34 replaced all that: 20 short answers and 5 exact-output questions.",
+   "f": "short answer + exact output",
+   "lec": 34
+  },
+  {
+   "id": "foc-t0161",
+   "h": "No debugging questions does not mean every snippet runs",
+   "p": "Asked about debugging, he said to read the code and give the output, and that you can work out whether there is any output at all. Check that the code runs first.",
+   "f": "does it run? then output",
+   "lec": 34
+  },
+  {
+   "id": "foc-t0162",
+   "h": "There is no 35% pass mark",
+   "p": "L#29 mentioned 35%. L#34 said the IIT system has no pass mark: grades are relative, D still passes, and F is only for a score far below the class.",
+   "f": "curve, not cut-off",
+   "lec": 34
+  },
+  {
+   "id": "foc-t0163",
+   "h": "A longer short answer is not a safer one",
+   "p": "Short answers get at most three sentences. He said he will not read three paragraphs for a 2-mark question, and padding can score zero.",
+   "f": "three sentences max",
+   "lec": 34
   }
  ],
  "defs": [
@@ -3086,8 +3142,8 @@ HUB.addCourse({
    "id": "foc-d0148",
    "unit": "python",
    "topic": "Live Lecture 6: the final exam format",
-   "term": "True/false in the final",
-   "html": "<b>True/false in the final</b> (L#29): always with a reason. In a 2-mark item, 0.5 is for true or false and 1.5 for the reason.",
+   "term": "True/false in the final (L#29 plan)",
+   "html": "<b>True/false in the final</b> (L#29 plan, replaced in L#34): 0.5 for the verdict, 1.5 for the reason. The end-term now has no true/false items: 20 short answers × 2 and 5 exact-output questions × 4 (60 marks, 25 questions, 2 hours).",
    "lec": 29
   },
   {
@@ -3103,7 +3159,7 @@ HUB.addCourse({
    "unit": "python",
    "topic": "Live Lecture 6: the final exam format",
    "term": "Code completion",
-   "html": "<b>Code completion</b>: a final-exam question type with a <b>whole line</b> of a program missing, sometimes with the output given; you supply the line, or its logic.",
+   "html": "<b>Code completion</b>: a program with a <b>whole line</b> missing, sometimes with the output given; you supply the line. L#29 planned it for the final; L#34 dropped it: the end-term is 20 short answers × 2 and 5 exact-output questions × 4 (60 marks).",
    "lec": 29
   },
   {
@@ -3111,7 +3167,7 @@ HUB.addCourse({
    "unit": "python",
    "topic": "Live Lecture 6: the final exam format",
    "term": "Pseudocode",
-   "html": "<b>Pseudocode</b>: a program's logic in plain steps, without exact Python syntax. In the final it replaces full code writing.",
+   "html": "<b>Pseudocode</b>: a program's logic in plain steps, without exact Python syntax. L#29 planned pseudocode questions for the final; L#34 dropped them: the end-term is 20 short answers × 2 and 5 exact-output questions × 4 (60 marks).",
    "lec": 29
   },
   {
@@ -3289,6 +3345,46 @@ HUB.addCourse({
    "term": "Standard library",
    "html": "The <b>standard library</b> is the set of modules installed with every Python, e.g. <b>collections</b> and <b>random</b>.",
    "bk": "Python Crash Course ch9"
+  },
+  {
+   "id": "foc-d0174",
+   "unit": "python",
+   "topic": "Live Lecture 7: the end-term paper",
+   "term": "End-term paper (FoC)",
+   "html": "<b>End-term paper</b> (L#34): 2 hours, 60 marks, 25 questions, pen and paper: 20 short answers of 2 marks and 5 exact-output questions of 4 marks, all from the programming half.",
+   "lec": 34
+  },
+  {
+   "id": "foc-d0175",
+   "unit": "python",
+   "topic": "Live Lecture 7: the end-term paper",
+   "term": "Short-answer question (end-term)",
+   "html": "<b>Short-answer question</b> (L#34): 2 marks; answer in at most three sentences, adding a two- to four-line snippet only where the idea needs code.",
+   "lec": 34
+  },
+  {
+   "id": "foc-d0176",
+   "unit": "python",
+   "topic": "Live Lecture 7: the end-term paper",
+   "term": "Code-output question (end-term)",
+   "html": "<b>Code-output question</b> (L#34): 4 marks; write the exact output of a short snippet. All or nothing, so case and spacing must match.",
+   "lec": 34
+  },
+  {
+   "id": "foc-d0177",
+   "unit": "python",
+   "topic": "Live Lecture 7: the end-term paper",
+   "term": "Relative grading",
+   "html": "<b>Relative grading</b>: grades set by position in the class's score distribution (a bell curve), not by a fixed pass mark. L#34: about 10% A at most, D still passes, F only far below the class.",
+   "lec": 34
+  },
+  {
+   "id": "foc-d0178",
+   "unit": "python",
+   "topic": "Live Lecture 7: the end-term paper",
+   "term": ".ipynb file",
+   "html": "<b>.ipynb file</b>: a notebook of code cells and text cells (the name comes from IPython). L#34: the course notebooks are the end-term syllabus; open one in Colab with File → Open notebook → Upload.",
+   "lec": 34
   }
  ],
  "questions": [
@@ -9353,7 +9449,7 @@ HUB.addCourse({
    "a": [
     3
    ],
-   "w": "He listed output prediction (where the code may contain an error), short pen-and-paper code and one- or two-word answers. Descriptive questions may come only from the first part of the course, such as types of data and the four pillars.",
+   "w": "In L#24 he listed output prediction, short pen-and-paper code and one- or two-word answers, and no long descriptive answers on Python. That plan was replaced in L#34: The current pattern (L#34, 14 Nov): 2 hours, 60 marks, 25 questions: 20 short answers × 2 marks and 5 exact-output questions × 4 marks. No code writing is asked, and all questions come from the programming half.",
    "lec": 24,
    "lv": "recall"
   },
@@ -12005,7 +12101,7 @@ HUB.addCourse({
    "a": [
     1
    ],
-   "w": "He said there are no plain true/false items: the verdict carries 0.5 and the reasoning carries 1.5, so most of the marks are for the reason.",
+   "w": "In L#29 he said a true/false item gives 0.5 for the verdict and 1.5 for the reason. That description was replaced in L#34, and the end-term now has no true/false items. The current pattern (L#34, 14 Nov): 2 hours, 60 marks, 25 questions: 20 short answers × 2 marks and 5 exact-output questions × 4 marks.",
    "lec": 29,
    "lv": "recall"
   },
@@ -12022,7 +12118,7 @@ HUB.addCourse({
    "a": [
     3
    ],
-   "w": "Writing an output scores zero because the code never produces one; saying only that it errors earns half; naming the error type earns full marks.",
+   "w": "In L#29: an output for failing code scores zero, \"it errors\" earns half, naming the error type earns full marks. L#34 replaced this: there are no separate debugging questions, but in an exact-output question you still check whether the code runs. The current pattern (L#34, 14 Nov): 2 hours, 60 marks, 25 questions: 20 short answers × 2 marks and 5 exact-output questions × 4 marks.",
    "lec": 29,
    "lv": "recall"
   },
@@ -12960,6 +13056,210 @@ HUB.addCourse({
    "w": "Inheritance is for 'is a kind of' (every electric car is a car), while storing an instance as an attribute is for 'has a' (a car has a battery). Using inheritance for the battery would wrongly make the car a battery.",
    "bk": "Python Crash Course ch9",
    "lv": "analyse"
+  },
+  {
+   "id": "foc-q0581",
+   "topic": "Python basics",
+   "q": "How did L#34 describe the Foundations of Computing end-term paper?",
+   "c": [
+    "25 questions for 60 marks: 20 short answers of 2 marks and 5 output questions of 4 marks",
+    "100 marks across several types, including true/false with reasons and code completion",
+    "60 MCQs in 2 hours, with −0.25 for a wrong answer",
+    "20 output questions of 2 marks and 5 short answers of 4 marks"
+   ],
+   "a": [
+    0
+   ],
+   "w": "20 × 2 + 5 × 4 = 60 marks over 25 questions. The 100-mark, many-type plan was L#29's; MCQs with negative marking describe the quizzes; and the marks per type are the other way round.",
+   "lec": 34,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0582",
+   "topic": "Python basics",
+   "q": "In L#34 Dr. Pathak said the quizzes now count 40% and the end-term 60%. What do the official LMS announcements say?",
+   "c": [
+    "Quizzes 40% (best of two), end-term 60%",
+    "Quizzes 30% (the better of two), end-term 70%",
+    "Quizzes 30% (the average of two), end-term 70%",
+    "Each quiz 15%, end-term 70%"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Announcement 18815 (14 Oct) set 30/70 with only the higher quiz score counting, and the 12 Nov Quiz 2 notices repeat best 1 of 2. The lecture's 60/40 is what he said, not the published rule; an average was never the rule, and 15% each was the old Quiz 1 scheme.",
+   "lec": 34,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0583",
+   "topic": "Python basics",
+   "q": "Your better quiz score is 8.2 out of 10. Under the official weighting, how many of the course's 100 marks does the quiz part give you?",
+   "c": [
+    "32.8",
+    "8.2",
+    "24.6",
+    "30"
+   ],
+   "a": [
+    2
+   ],
+   "w": "8.2/10 × 30 = 24.6. 32.8 is his 40% version (8.2 × 4); 8.2 forgets to scale; 30 is the maximum.",
+   "lec": 34,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0584",
+   "topic": "Python basics",
+   "q": "Which statement matches what L#34 said about grading?",
+   "c": [
+    "You need 35% of the paper to pass",
+    "Grades come from fixed bands, such as 90 and above for an A",
+    "Attendance below 75% bars you from the end-term",
+    "There is no pass mark: grades are relative to the class, and F is given only when a score is far below the rest"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He said the IIT system fits a bell curve to the class: at most about 10% A, D still passes, F only for an outlier far below. The 35% figure was from L#29, and there is no attendance threshold this semester.",
+   "lec": 34,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0585",
+   "topic": "Dictionaries",
+   "q": "Which answer best shows the difference between a list and a dictionary in how an item is accessed?\n\nmarks = [72, 85, 64]\nstudent = {'name': 'riya', 'marks': 85}",
+   "c": [
+    "marks[1] reads the item at position 1; student['marks'] reads the value stored under the key 'marks'",
+    "marks['1'] reads by key; student[1] reads by position",
+    "marks.get(1) reads by position; student.index('marks') reads by key",
+    "marks[1] and student[1] both read the second item, because both use positions"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Lists are indexed by integer position from 0; dictionaries by key. student[1] looks for a key 1 and raises KeyError; marks['1'] is a TypeError; lists have no get() and dictionaries no index().",
+   "lec": 34,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0586",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\ncities = {'riya': 'jaipur', 'kabir': 'pune'}\nfor pair in cities.items():\n    print(pair)",
+   "c": [
+    "riya\nkabir",
+    "('riya', 'jaipur')\n('kabir', 'pune')",
+    "riya jaipur\nkabir pune",
+    "ValueError: too many values to unpack"
+   ],
+   "a": [
+    1
+   ],
+   "w": "With one loop variable, items() hands over each key-value pair whole, and print shows the tuple with brackets and quotes. Two loop variables would unpack it into riya jaipur style; keys alone would need keys() or a bare loop.",
+   "lec": 34,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0587",
+   "topic": "Dictionaries",
+   "q": "What does this print?\n\nfavorite_languages = {'jen': 'python', 'sarah': 'c', 'edward': 'ruby'}\nfor name, language in favorite_languages.items():\n    print(name.title() + \": \" + language.upper())",
+   "c": [
+    "Jen: Python\nSarah: C\nEdward: Ruby",
+    "jen: PYTHON\nsarah: C\nedward: RUBY",
+    "Jen: PYTHON\nSarah: C\nEdward: RUBY",
+    "JEN: python\nSARAH: c\nEDWARD: ruby"
+   ],
+   "a": [
+    2
+   ],
+   "w": "title() capitalises the first letter of each name and upper() turns every letter of the language to capitals. In an end-term output question the case must match exactly: title case on both sides scores zero.",
+   "lec": 34,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0588",
+   "topic": "Classes",
+   "q": "car.py defines Car, with get_descriptive_name() and fill_gas_tank(), and ElectricCar(Car), which adds describe_battery() and overrides fill_gas_tank() to print This car doesn't need a gas tank!. What does this print?\n\nfrom car import ElectricCar\n\nmy_tesla = ElectricCar('tesla', 'model s', 2016)\nprint(my_tesla.get_descriptive_name())\nmy_tesla.describe_battery()\nmy_tesla.fill_gas_tank()",
+   "c": [
+    "ImportError, because Car itself was not imported",
+    "2016 Tesla Model S\nThis car has a 70-kWh battery.\nFilling the gas tank.",
+    "2016 tesla model s\nThis car has a 70-kWh battery.\nThis car doesn't need a gas tank!",
+    "2016 Tesla Model S\nThis car has a 70-kWh battery.\nThis car doesn't need a gas tank!"
+   ],
+   "a": [
+    3
+   ],
+   "w": "ElectricCar inherits get_descriptive_name() from Car, so importing the child alone is enough; that method returns title case. For fill_gas_tank() the child's overriding version runs, not the parent's.",
+   "lec": 34,
+   "lv": "apply"
+  },
+  {
+   "id": "foc-q0589",
+   "topic": "Classes",
+   "q": "Using the same car.py, what happens?\n\nfrom car import Car\n\nmy_beetle = Car('volkswagen', 'beetle', 2015)\nmy_beetle.describe_battery()",
+   "c": [
+    "AttributeError: 'Car' object has no attribute 'describe_battery'",
+    "This car has a 70-kWh battery.",
+    "Nothing is printed",
+    "ImportError: cannot import name 'Car'"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Inheritance runs one way: the child gets the parent's methods, not the reverse. describe_battery() is defined only in ElectricCar, so a plain Car instance doesn't have it.",
+   "lec": 34,
+   "lv": "analyse"
+  },
+  {
+   "id": "foc-q0590",
+   "topic": "Classes",
+   "q": "After import car as c, which line makes a Car instance?",
+   "c": [
+    "my_car = car.Car('maruti', 'swift', 2024)",
+    "my_car = c.Car('maruti', 'swift', 2024)",
+    "my_car = Car('maruti', 'swift', 2024)",
+    "my_car = c('maruti', 'swift', 2024)"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The alias stands in for the module name, the way pd stands for pandas. The name car is no longer defined (NameError), Car alone was never imported (NameError), and c is a module, not a class (TypeError: 'module' object is not callable).",
+   "lec": 34,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0591",
+   "topic": "Python basics",
+   "q": "According to L#34, which of these topics can the 60-mark end-term paper ask about?",
+   "c": [
+    "The DIKW model",
+    "Interpreter vs compiler",
+    "Method overriding in classes",
+    "Input and output devices"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He said the whole paper comes from the programming half, classes included. DIKW, interpreter vs compiler and input/output devices belong to the computing half, which the quizzes tested and which he said will not be in the end-term.",
+   "lec": 34,
+   "lv": "recall"
+  },
+  {
+   "id": "foc-q0592",
+   "topic": "Python basics",
+   "q": "According to L#34, how should a 2-mark short answer in the end-term be written?",
+   "c": [
+    "Two or three paragraphs, to show depth",
+    "A complete Python program",
+    "One word",
+    "At most three sentences, with a two- to four-line snippet only where the idea needs code"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He asked for point-to-point answers of one to three sentences and said he won't read three paragraphs for 2 marks. Code is welcome only as a tiny illustration; no program writing is asked.",
+   "lec": 34,
+   "lv": "recall"
   }
  ],
  "briefs": {
@@ -13039,6 +13339,8 @@ HUB.addCourse({
   "lec-29",
   "lec-32",
   "lec-33",
-  "pcc1-ch09"
+  "pcc1-ch09",
+  "lec-29s",
+  "lec-34"
  ]
 });

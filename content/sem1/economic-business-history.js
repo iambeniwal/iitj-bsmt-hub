@@ -205,6 +205,12 @@ HUB.addCourse({
    "Week 13 — World War II and Indian Business, 1939–45, and the Course in Review",
    "UK import share, uniforms, TELCO, Bombay Plan, recap",
    "rec"
+  ],
+  [
+   34,
+   "Week 13 — Live Lecture 7",
+   "Module 5 revisited, course review, end-term guidance",
+   "live"
   ]
  ],
  "units": [
@@ -814,6 +820,16 @@ HUB.addCourse({
      "t": "WWI vs WWII, the Bombay Plan, and the course in review",
      "src": "L#33",
      "h": "\n<h4>The two wars compared (his three differences)</h4>\n<ul>\n <li><strong>What grew.</strong> WWI's push was mostly in <strong>consumer goods</strong>, textiles and jute, and some <strong>raw steel</strong>. In WWII growth spread to <strong>chemicals, armour, machine engineering and cement</strong> as well as the WWI sectors.</li>\n <li><strong>Why it could spread.</strong> In WWI Indian firms <strong>cleared their domestic debts and built their initial capital</strong>, laying foundations; in WWII, with the foundation in place, they could <strong>diversify</strong>. With this growth <strong>India cleared its debt to the UK and became a creditor</strong>, mainly of the UK itself since it was still under British rule, which changed India's negotiating power with its rulers.</li>\n <li><strong>Politics.</strong> WWI gave birth to the <strong>nationalist capitalist class</strong> (Tatas, Birlas, Lalbhais, perhaps the Bajajs), supporters of the independence movement. In WWII that class was strong enough to think about <strong>what kind of economy and industrial policy independent India should have</strong>: which sectors the government should control, which it should not, and which partially.</li>\n</ul>\n<div class=\"def\"><b>The Bombay Plan:</b> the leading industrialists met in <b>Bombay</b> during the war and produced a plan recommending policies for independent India: which sectors should be government-controlled, which left to private firms, and which under partial control, along with price control and other matters that affect a normal business. It was presented to the Indian government and fed into post-independence policy. (He gave no date or list of authors.)</div>\n<p style=\"font-size:13.5px;color:var(--ink-3)\">Context beyond the lecture: <em>A Plan of Economic Development for India</em> was published in two parts in 1944–45, signed by J.R.D. Tata, G.D. Birla, Purshottamdas Thakurdas, Lala Shri Ram, Kasturbhai Lalbhai, A.D. Shroff, Ardeshir Dalal and John Mathai. India's wartime \"sterling balances\", the credit it built up in London by supplying the war, are what made it Britain's creditor by 1945.</p>\n<h4>The course in review (his closing recap)</h4>\n<div class=\"scroller\"><table><thead><tr><th>Module</th><th>Period</th><th>What it covered</th><th>Hub units</th></tr></thead><tbody>\n<tr><td>1 · Introduction</td><td>framework</td><td>what economics, business and history are; economic history (how the rules form) vs business history (how an actor plays within the rules)</td><td>Foundations; Economy → business; Society and technology; Business → society</td></tr>\n<tr><td>2 · Early economic systems</td><td>pre-15th century</td><td>agrarian economies; the guild system (apprentice, journeyman, master) and its economic, social and political roles</td><td>Agrarian; Guilds</td></tr>\n<tr><td>3 · Industrial Revolution</td><td>16th–18th century</td><td>the biggest module: machines, steam, the factory system, its effects on economy, society, culture and thought</td><td>Before machines; Machines; Labour; Colonies; Systems; Society</td></tr>\n<tr><td>4 · Business history, global</td><td>1850–1950</td><td>management thought (Smith, Taylor, Fayol), the rise of large corporations, the World Wars</td><td>Management; Corporations; World Wars</td></tr>\n<tr><td>5 · Indian business history</td><td>1600s/1800s–1947</td><td>the Company and colonial rule, Indian entrepreneurs, trade after 1813, the first factories, the World Wars and the Bombay Plan; stops at independence</td><td>Indian business</td></tr>\n</tbody></table></div>\n<p style=\"font-size:14.5px\">He called Modules 2–3 the <strong>economic history</strong> half and Modules 4–5 the <strong>business history</strong> half. Module 5 stops at 1945–47, at the point where business was already recommending policy to the coming Indian government; what Indian business did after 1947 belongs to later semesters.</p>\n<!--viz:ebh-wwi-vs-wwii-india--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table comparing WWI and WWII for Indian business on imports, sectors that grew, firms and figures, what firms gained, who gained, social cost and politics.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The two World Wars and Indian business, compared</div><div class=\"scroller\"><table><thead><tr><th></th><th>WWI, 1914–18</th><th>WWII, 1939–45</th></tr></thead><tbody><tr><td>Imports from Britain</td><td>collapse: cotton goods −50%, piece goods −75%, steel −84%</td><td>UK share of India's imports 31.4% → 21.2%; trade also cut with occupied France, Belgium, Netherlands (west) and Japanese-held Burma, Malaya, Singapore (east)</td></tr><tr><td>Sectors that grew</td><td style=\"background:var(--blue-soft)\">consumer goods (textiles, jute) and raw steel</td><td style=\"background:var(--clay-soft)\">the same, plus chemicals, armour, machine engineering, cement, paper</td></tr><tr><td>Firms and figures</td><td>TISCO: 1,500 miles of rails, 3 lakh tons; jute profits ₹7 crore (1918); Birla fortune ×4</td><td>uniforms 75,000 → 7 million a month; mills 389 → 417; leather £3m → £14.5m; TELCO armoured vehicles</td></tr><tr><td>What Indian firms gained</td><td>cleared domestic debts, built initial capital: the foundation</td><td>diversified on that foundation; India cleared its debt to the UK and became a creditor</td></tr><tr><td>Who gained</td><td>a new class of Indian industrialists</td><td>mostly the big firms; small firms hit by shortages and uncertain supply</td></tr><tr><td>Social cost</td><td>not discussed</td><td>resource diversion → 1943 Bengal famine; uncontrolled food inflation</td></tr><tr><td>Politics</td><td>a nationalist capitalist class allied to Swadeshi and Gandhi</td><td>that class plans independent India's economy: the Bombay Plan</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">WWI built the foundation in consumer goods and raw steel; WWII diversified on it, at a heavy social cost.</figcaption></figure><!--/viz:ebh-wwi-vs-wwii-india--><!--viz:ebh-course-five-modules--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Five boxes in sequence: Introduction; Early economic systems (pre-1500); the Industrial Revolution (1500s–1800); global business history 1850–1950; Indian business history 1600s–1947, highlighted.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The course in five modules</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>1 · Introduction</b><br><span style=\"color:var(--ink-2);font-size:13px\">economics, business, history</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>2 · Early systems</b><br><span style=\"color:var(--ink-2);font-size:13px\">agrarian, guilds · pre-1500</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>3 · Industrial Revolution</b><br><span style=\"color:var(--ink-2);font-size:13px\">machines, labour, systems · 1500s–1800</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>4 · Business history, global</b><br><span style=\"color:var(--ink-2);font-size:13px\">management, corporations, wars · 1850–1950</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>5 · Indian business</b><br><span style=\"color:var(--ink-2);font-size:13px\">Company to Bombay Plan · 1600s–1947</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Modules 2–3 are the economic-history half, 4–5 the business-history half; the end-term can draw on all five.</figcaption></figure><!--/viz:ebh-course-five-modules-->"
+    },
+    {
+     "t": "Live Lecture 7: Module 5 revisited, what was new",
+     "src": "L#34",
+     "h": "\n<div class=\"def\"><b>From the lecture (L#34, Live Lecture 7, 15 November):</b> the <b>last live session of the semester</b>. He went back over Module 5 (Indian business history), then reviewed all five modules and talked about the end-term (see the next topic). Most of the Module 5 material repeats L#28 and L#30–33; only what was <b>new or sharpened</b> is below. He fixed the course's limits: Indian business history here starts with <b>colonial rule from the 1750s–60s</b> and ends at <b>1947</b>. He said pre-colonial business (the Mughal north, the Deccan and Maratha regions, Travancore and the far south) had a rich history too, but the course had no time for it, and he said questions will stay within the topics taught in class.</div>\n<h4>Why the Company's powers were cut: a new reason</h4>\n<ul>\n <li><strong>Corruption among Company officials.</strong> He said the recorded lectures had not mentioned this: because the Company held a monopoly, its officials became widely corrupt, and Britain answered by creating the <strong>Governor-General of Bengal</strong> and new <strong>courts</strong>, taking administrative, military and judicial power away step by step. Only the <strong>trade monopoly</strong> survived, until 1813. (L#28 gave the other reasons: governing Bengal after Plassey, and the Industrial Revolution's need for raw cotton and markets.)</li>\n <li><strong>Charters every 20 years.</strong> From <strong>1793</strong> Britain renewed the Company's charter every twenty years, <strong>1793, 1813, 1833</strong>, which he read as a way to keep the Company, and the territories it had taken, under regular control. He stops the story at 1813 because ending the trade monopoly opened the door to Indian entrepreneurs.</li>\n</ul>\n<h4>The phases, as the L#34 slides label them</h4>\n<div class=\"scroller\"><table><thead><tr><th>Phase (slides)</th><th>Years</th><th>What Indian entrepreneurs did</th></tr></thead><tbody>\n<tr><td>Colonial rule</td><td>1600–1813</td><td>the Company's powers rise (1600, 1661), are regulated (slide: 1723–1793), and its trade monopoly ends (1813)</td></tr>\n<tr><td>Phase 1</td><td>1700s–1813</td><td>brokers and middlemen; bankers to the Company (House of Jagat Seth); shipbuilding and the China trade (Wadia, 1736)</td></tr>\n<tr><td>Phase 2, first half</td><td>1813–1850s</td><td>overseas trade in opium, indigo and raw cotton through agency houses (Palmer, Alexander, Carr Tagore, Jejeebhoy)</td></tr>\n<tr><td>Phase 2, second half</td><td>1850s–1900s</td><td>from trading to <strong>manufacturing</strong>: mills and factories (Davar, Tata, Godrej, Walchand)</td></tr>\n<tr><td>World Wars</td><td>1914–18, 1939–45</td><td>the space left by British imports is filled; a nationalist capitalist class grows; the Bombay Plan</td></tr>\n</tbody></table></div>\n<p style=\"font-size:14.5px\">His one-line contrast: before the 1850s Indian entrepreneurs <strong>traded</strong>; after the 1850s they began to <strong>build factories</strong>.</p>\n<h4>Details the slides added</h4>\n<ul>\n <li><strong>Alexander &amp; Co.</strong>, the other big pre-1834 agency house beside Palmer &amp; Co., was heavily involved in indigo, cotton and <strong>banking</strong>: it founded the <strong>Bank of Hindostan</strong> (L#34 slides).</li>\n <li><strong>WWI import collapse, with exact figures</strong> (L#34 slide; L#32 gave rounder numbers and no railway figure):\n  <div class=\"scroller\"><table><thead><tr><th>Imports to India</th><th>Before the war</th><th>Late in the war</th><th>Fall</th></tr></thead><tbody>\n  <tr><td>UK cotton piece goods, monthly average</td><td>256.8 million yards (1913)</td><td>63.3 million yards (1919)</td><td>75%</td></tr>\n  <tr><td>Total net cotton imports</td><td>about 3,000 million yards (1913)</td><td>about 1,500 million yards (1918)</td><td>50%</td></tr>\n  <tr><td>Steel</td><td>1,040,000 tons (1913–14)</td><td>165,000 tons (1917–18)</td><td>84%</td></tr>\n  <tr><td>Railway supplies</td><td>the normal colonial supply</td><td>almost none</td><td style=\"background:var(--blue-soft)\"><b>93%</b></td></tr>\n  </tbody></table></div>\n  Check: 63.3 ÷ 256.8 ≈ 25% remained, so a 75% fall; 165,000 ÷ 1,040,000 ≈ 16% remained, so an 84% fall.</li>\n</ul>\n<h4>Business houses beyond business</h4>\n<ul>\n <li><strong>Education.</strong> He stressed that the big groups also built institutions that still exist: the <strong>Tatas</strong> and the <strong>Indian Institute of Science</strong>, the <strong>Birlas</strong> and <strong>BITS Pilani</strong>, and institutes founded by the <strong>Walchand</strong> group. Context beyond the lecture: IISc opened in Bangalore in 1909, funded by an endowment J.N. Tata had pledged; BITS Pilani grew out of the Birla family's schools at Pilani and took its present name in 1964.</li>\n <li><strong>Nationalist capitalist class, defined.</strong> A <em>capitalist class</em> owns the businesses, factories and means of production; it is <em>nationalist</em> when it also supports the freedom movement. His example: the <strong>Birla</strong> house's support for Gandhi, whose rise came with Champaran (1917), a protest against the terms forced on indigo farmers.</li>\n <li><strong>The Bengal famine, in stronger words than L#33.</strong> He again tied it to supplies diverted from civilians to the military in WWII, and added that it looked like a <strong>deliberate</strong> British attempt, made while Britain was fighting Japan and the Azad Hind Fauj on that front. Treat that last part as his interpretation: historians still argue over how far British wartime decisions caused or worsened the famine. In an answer, lead with the causes he taught in both lectures (diversion of supplies, uncontrolled inflation) and present \"deliberate\" as one view.</li>\n</ul>\n<h4>Module 5 as economic and business history</h4>\n<p style=\"font-size:14.5px\">He tied Module 5 back to the Module 1 definitions. The changing <strong>rules</strong>, the Company's charters and Acts from 1600 to 1813, are <strong>economic history</strong>; the <strong>actors</strong> who worked within those rules, the brokers, bankers, agency houses and industrialists, are <strong>business history</strong>. That pairing is a ready-made frame for a long answer on this module.</p>\n<h4>Slide vs speech</h4>\n<ul>\n <li><strong>Godrej's Anchor locks:</strong> slide <strong>1897</strong>; in speech he said 1857. Use 1897 (the late 1890s, as L#31 taught).</li>\n <li><strong>Tata's first mill:</strong> the slide's <strong>Alexandra Mill (1869)</strong>; in speech he said \"Alexander Mills\". Don't confuse it with <strong>Alexander &amp; Co.</strong>, the indigo agency house.</li>\n <li><strong>The revolt:</strong> he said \"1947, the first war of independence\"; the slide has <strong>1857</strong>, with Crown rule from <strong>1858</strong>.</li>\n <li><strong>End of the trade monopoly:</strong> he said \"1830\" once; the slide and L#28 have <strong>1813</strong>. The slide's \"1723–1793\" for the cuts is the slip L#28's notes already flag (the charters were 1726 and 1753).</li>\n <li><strong>WWI:</strong> his agenda slide says 1914–19; he corrected it to <strong>1914–18</strong>.</li>\n <li><strong>Davar's mill:</strong> the Bombay Spinning and Weaving Company was set up in <strong>1854</strong> and, he said, began working in 1856.</li>\n</ul>\n<!--viz:ebh-module5-phases-timeline--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Timeline from the 1600 and 1661 charters through Phase 1 (1700s–1813), the cuts to the Company's powers, the 20-year charters, Phase 2a trade (1813–1850s), the 1857 revolt, Phase 2b factories (1850s–1900s), the two World Wars and independence in 1947.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Module 5 in phases, 1600–1947</div><div style=\"border-left:2px solid var(--rule-2);margin-left:6px;padding-left:16px;font-size:14px\"><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1600, 1661</b> · Charters: trade monopoly, then administrative, military and judicial powers</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1700s–1813</b> · <b>Phase 1</b>: brokers, bankers (Jagat Seth), shipbuilders (Wadia, 1736)</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--clay)\"></span><b style=\"font-family:var(--mono)\">1726–1793</b> · Powers regulated: Governor-General of Bengal, courts; corruption a cause (L#34)</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1793 · 1813 · 1833</b> · Charters every 20 years; 1813 ends the trade monopoly</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1813–1850s</b> · <b>Phase 2a</b>: opium, indigo, raw cotton via agency houses</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1857–58</b> · Revolt; the Crown takes direct control</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--blue)\"></span><b style=\"font-family:var(--mono)\">1850s–1900s</b> · <b>Phase 2b</b>: factories: Davar 1854, Tata 1869–87, Godrej 1897, Walchand 1903</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--clay)\"></span><b style=\"font-family:var(--mono)\">1914–18</b> · WWI: British imports collapse; Tata, Sarabhai, Birla grow</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--clay)\"></span><b style=\"font-family:var(--mono)\">1939–45</b> · WWII: diversification; Bombay Plan 1944–45</div><div style=\"position:relative;margin-bottom:12px\"><span style=\"position:absolute;left:-23px;top:4px;width:10px;height:10px;border-radius:50%;background:var(--rule-2)\"></span><b style=\"font-family:var(--mono)\">1947</b> · Independence: where the course stops</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Blue dots are the entrepreneurs' phases; clay dots are the shocks that reshaped them.</figcaption></figure><!--/viz:ebh-module5-phases-timeline--><!--viz:ebh-wwi-import-collapse-bars--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Bar chart of falls in imports to India during the First World War from the L#34 slide: railway supplies 93%, steel 84%, UK cotton piece goods 75%, total net cotton imports 50%.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">WWI: how far imports to India fell</div><div style=\"font-size:14px;max-width:440px\"><div style=\"margin-bottom:9px\"><div style=\"display:flex;justify-content:space-between;gap:8px;font-size:13.5px\"><span>Railway supplies</span><b style=\"font-family:var(--mono)\">−93%</b></div><div style=\"height:12px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\"><div style=\"height:100%;width:93%;background:var(--blue);border-radius:2px\"></div></div></div><div style=\"margin-bottom:9px\"><div style=\"display:flex;justify-content:space-between;gap:8px;font-size:13.5px\"><span>Steel imports</span><b style=\"font-family:var(--mono)\">−84%</b></div><div style=\"height:12px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\"><div style=\"height:100%;width:84%;background:var(--clay-soft);border-radius:2px\"></div></div></div><div style=\"margin-bottom:9px\"><div style=\"display:flex;justify-content:space-between;gap:8px;font-size:13.5px\"><span>UK cotton piece goods (monthly average)</span><b style=\"font-family:var(--mono)\">−75%</b></div><div style=\"height:12px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\"><div style=\"height:100%;width:75%;background:var(--clay-soft);border-radius:2px\"></div></div></div><div style=\"margin-bottom:9px\"><div style=\"display:flex;justify-content:space-between;gap:8px;font-size:13.5px\"><span>Total net cotton imports</span><b style=\"font-family:var(--mono)\">−50%</b></div><div style=\"height:12px;border:1px solid var(--rule-2);border-radius:3px;background:var(--surface)\"><div style=\"height:100%;width:50%;background:var(--clay-soft);border-radius:2px\"></div></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Railway supplies, not steel, fell furthest: the gap Indian steel rails rushed to fill.</figcaption></figure><!--/viz:ebh-wwi-import-collapse-bars-->"
+    },
+    {
+     "t": "Live Lecture 7: the end-term exam and a five-module revision map",
+     "src": "L#34",
+     "h": "\n<div class=\"def\"><b>From the lecture (L#34, 15 November), on the end-term exam.</b> <b>Official first:</b> the LMS announcement sets the end-term <b>offline on Friday 4 December 2026, 10 AM–12 PM IST (2 hours)</b>, worth <b>70% of the grade</b> (the quizzes are 30%, best 1 of 2), with <b>no negative marking</b>. Where he differs, the announcement wins.\n<ul>\n <li><b>Weight:</b> he said <b>60%</b> (\"as of now\", with any change to be communicated). That conflicts with the official <b>70%</b>. He may have been thinking of the paper's marks: he first said it would be <b>at least 60 marks</b> and possibly 70, 80 or 100, then, when students said 60 marks had been communicated, agreed it would be a <b>60-mark</b> paper.</li>\n <li><b>Dates:</b> he remembered \"late November and the first week of December\"; students in the chat said 4, 5 and 6 December. The official EBH slot is 4 December.</li>\n <li><b>Format:</b> a <b>theory paper, no numericals</b>. Numbers such as export shares appear in the course, but nothing needs calculating. <b>Short, medium and long answer</b> questions, roughly <b>5, 10 or 15 marks</b> each (he said 2-mark items might not appear, and weights could be higher or lower), so about <b>5 to at most 10 questions</b> depending on how the marks are split.</li>\n <li><b>Scope:</b> <b>all five modules</b>, any topic taught in the recorded or live lectures, and nothing outside them.</li>\n <li><b>Question styles:</b> definitions with examples; a <b>statement to discuss</b> (agree or disagree, with reasons); the <b>impact</b> of an event on a sector; comparisons. Business-history questions will be \"mostly critical\": give arguments, not just facts.</li>\n <li><b>Rules:</b> <b>closed book, closed notes, no electronic devices</b> (phones included): pen and paper only. Logistics such as dress code: ask the Masai team.</li>\n <li><b>What to study:</b> the slides (shared up to lecture 22; he promised the rest on the LMS), the links inside them, the videos, and the live sessions, which covered topics the videos did not.</li>\n</ul></div>\n<h4>How he wants answers written</h4>\n<ul>\n <li>Answer <strong>in order</strong> and keep each answer <strong>in one place</strong>: don't start an answer on one page and finish it at the end of the booklet.</li>\n <li><strong>Underline or highlight the main points</strong> so the examiner can find them in a long theory answer.</li>\n <li>Back each point with an <strong>example</strong> from the lectures, and split long answers into parts.</li>\n</ul>\n<h4>Five modules at a glance: what he stressed, and where it is in the hub</h4>\n<div class=\"scroller\"><table><thead><tr><th>Module</th><th>What he listed in the L#34 review</th><th>Question styles he gave</th><th>Hub units</th></tr></thead><tbody>\n<tr><td>1 · Introduction</td><td>what economics is, and its two parts, macro and micro; what business is; what history is; economic history vs business history</td><td>short: “What is business history?” “What is economic history?” · medium: “What is economics? Explain its two parts with examples”</td><td>Economics, business &amp; history; Economy → business; Society and technology; Business → society</td></tr>\n<tr><td>2 · Early economic systems</td><td>agrarian economies; the guild system: its structure, its economic, social, cultural, military and political roles, how it regulated markets; why its city-level fragmentation opened the way to the putting-out system</td><td>definition plus structure plus roles, with examples</td><td>Agrarian economies; Guilds</td></tr>\n<tr><td>3 · Industrial Revolution (the biggest)</td><td>machines (spinning jenny, water frame, weaving inventions, steam engine) → the factory system; capitalism, socialism and communism and their features; labour movements and working conditions; bourgeoisie, proletariat and the middle class; the new stress on individual effort</td><td>explain why something happened; compare the economic systems; link machines to factories</td><td>Life before machines; Machines; Labour; Colonies; Economic systems; Social and cultural life (plus the Why Britain and Economic thought textbook units)</td></tr>\n<tr><td>4 · Business history, global (1850–1950)</td><td>division of labour; Taylor (scientific management), Fayol (administrative), Drucker (modern management); why large corporations rose; the World Wars' impact, mainly on Western Europe and North America</td><td>long: “What was the impact of World War I on business, for example on the British Empire?” · comparisons of the three thinkers</td><td>Management thought; Large corporations; World Wars</td></tr>\n<tr><td>5 · Indian business history (1750s–1947)</td><td>the Company's rise and fall; Indian entrepreneurs in Phase 1 and Phase 2; opium, indigo, raw cotton; the first factories; the World Wars; the nationalist capitalist class; the Bombay Plan</td><td>long: “Discuss: the powers of the British East India Company grew in the 1700s and fell in the 1800s” · “What was the impact of World War I on Indian textile businesses?”</td><td>Indian business before 1947 (plus the Colonial India textbook unit)</td></tr>\n</tbody></table></div>\n<p style=\"font-size:14.5px\">Two points from the review. <strong>Module 3 is the biggest</strong> (about 15–18 lectures with the live sessions) because the Industrial Revolution changed how the world works, and he compared it with the <strong>AI revolution</strong> under way now. The course <strong>stops around 1945–50</strong> (1947 for India): modern management after Drucker belongs to later semesters.</p>\n<p style=\"font-size:14.5px\"><strong>Using his sample statement.</strong> \"The Company's powers grew in the 1700s and fell in the 1800s\" is arguable on the dates taught: the powers were granted in <strong>1600 and 1661</strong>, peaked in the later 1700s, were cut from <strong>1726, 1773 and 1784</strong>, and the trade monopoly ended in <strong>1813</strong>, after which the Crown took over in <strong>1858</strong>. A strong answer agrees in part, gives the reasons (Bengal after Plassey, corruption, the Industrial Revolution's needs) and corrects the timing.</p>\n"
     },
     {
      "t": "Textbook: Transition to Colonialism 1707–1857",
@@ -2139,6 +2155,48 @@ HUB.addCourse({
    "p": "He stressed the difference: the cantonment towns and their uniform and boot makers date from after 1857; WWII orders made Kanpur prominent.",
    "f": "prominence, not existence",
    "lec": 33
+  },
+  {
+   "id": "ebh-t0171",
+   "h": "In WWI, railway supplies fell further (93%) than steel (84%)",
+   "p": "The L#34 slide adds a railway figure L#32 lacked: a 93% fall, close to a complete stop. Steel's 84% is second, then UK cotton piece goods (75%) and net cotton imports (50%).",
+   "f": "rails 93 beats steel 84",
+   "lec": 34
+  },
+  {
+   "id": "ebh-t0172",
+   "h": "Godrej's Anchor locks date from 1897, not 1857",
+   "p": "He said 1857 in speech, but his slide and L#31 put the start in the late 1890s (1897). 1857 is the year of the revolt.",
+   "f": "Anchor locks = 1897",
+   "lec": 34
+  },
+  {
+   "id": "ebh-t0173",
+   "h": "Tata's Alexandra Mill is not Alexander & Co.",
+   "p": "The Alexandra Mill (1869) was J.N. Tata's first cotton mill. Alexander & Co. was a British agency house in indigo, cotton and banking (Bank of Hindostan) that rose before the 1830s indigo crash.",
+   "f": "Alexandra mill ≠ Alexander house",
+   "lec": 34
+  },
+  {
+   "id": "ebh-t0174",
+   "h": "The First War of Independence was 1857, not 1947",
+   "p": "In speech he said 1947; the slide has 1857, followed by direct Crown rule from 1858; he said Crown rule restricted some businesses but promoted others, such as cotton textiles.",
+   "f": "revolt 1857, Crown 1858",
+   "lec": 34
+  },
+  {
+   "id": "ebh-t0175",
+   "h": "The end-term is 70% of the grade, not the 60% said in class",
+   "p": "He said 60% 'as of now'. The official LMS announcement says the end-term is 70% and the quizzes 30% (best 1 of 2). He also agreed it would be a 60-mark paper, which may be where the 60 came from. The announcement wins.",
+   "f": "official: 70% weight",
+   "lec": 34
+  },
+  {
+   "id": "ebh-t0176",
+   "h": "'The British caused the Bengal famine deliberately' is his view, not settled fact",
+   "p": "Both L#33 and L#34 blame diversion of supplies to the war and inflation; in L#34 he added that it looked deliberate. Historians debate how far British decisions caused or worsened it, so present that claim as an interpretation.",
+   "f": "view, not verdict",
+   "lec": 34
   }
  ],
  "defs": [
@@ -3649,6 +3707,46 @@ HUB.addCourse({
    "term": "Kanpur (uniforms and boots)",
    "html": "<b>Kanpur</b>: a cantonment-era centre (after 1857) specialising in army uniforms and military boots that came into prominence, not existence, on WWII demand.",
    "lec": 33
+  },
+  {
+   "id": "ebh-d0192",
+   "unit": "india-business",
+   "topic": "Live Lecture 7: Module 5 revisited, what was new",
+   "term": "Nationalist capitalist class",
+   "html": "<b>Nationalist capitalist class</b>: owners of businesses, factories and the means of production (capitalist) who also backed the freedom movement (nationalist). Grew from WWI profits; e.g. the Birlas' support for Gandhi.",
+   "lec": 34
+  },
+  {
+   "id": "ebh-d0193",
+   "unit": "india-business",
+   "topic": "Live Lecture 7: Module 5 revisited, what was new",
+   "term": "Charter cycle, 1793–1833",
+   "html": "<b>Charter cycle</b>: from <b>1793</b> Britain renewed the East India Company's charter every 20 years (1793, 1813, 1833) to keep it under control; the <b>1813</b> charter ended its India trade monopoly.",
+   "lec": 34
+  },
+  {
+   "id": "ebh-d0194",
+   "unit": "india-business",
+   "topic": "Live Lecture 7: Module 5 revisited, what was new",
+   "term": "Bank of Hindostan",
+   "html": "<b>Bank of Hindostan</b>: bank founded by <b>Alexander &amp; Co.</b>, the agency house active in indigo, cotton and banking before the 1830s crash (L#34 slides).",
+   "lec": 34
+  },
+  {
+   "id": "ebh-d0195",
+   "unit": "india-business",
+   "topic": "Live Lecture 7: Module 5 revisited, what was new",
+   "term": "Phase 1 and Phase 2 (Module 5)",
+   "html": "<b>Phase 1</b> (1700s–1813): Indian brokers, bankers and shipbuilders serve the Company. <b>Phase 2</b> (1813–1900s): trade through agency houses, then, from the 1850s, factories.",
+   "lec": 34
+  },
+  {
+   "id": "ebh-d0196",
+   "unit": "india-business",
+   "topic": "Live Lecture 7: the end-term exam and a five-module revision map",
+   "term": "EBH end-term (2026)",
+   "html": "<b>EBH end-term</b>: official: offline, Fri 4 Dec 2026, 10 AM–12 PM IST, <b>70%</b> of the grade, no negative marking. L#34: theory only, short/medium/long answers, all five modules, closed book (he said 60%).",
+   "lec": 34
   }
  ],
  "questions": [
@@ -13902,6 +14000,210 @@ HUB.addCourse({
    "w": "He described Modules 2 and 3 as the economic-history part and Modules 4 and 5, both covering roughly 1800s/1850–1950, as the business-history part, global then Indian.",
    "lec": 33,
    "lv": "recall"
+  },
+  {
+   "id": "ebh-q0617",
+   "topic": "EIC charters & acts",
+   "q": "In L#34 the lecturer added a reason for the cuts to the East India Company's powers in the 1700s that he said the recorded lectures had not covered. What was it?",
+   "c": [
+    "Its defeat at the Battle of Plassey",
+    "Widespread corruption among its own officials, encouraged by its monopoly",
+    "The Mughal emperor withdrawing its trading rights",
+    "Indian bankers refusing to lend it money"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He said the monopoly bred corruption among Company officials, so Britain created a Governor-General of Bengal and new courts to take powers away. Plassey (1757) was a Company victory; it raised the need for oversight but was not a defeat.",
+   "lec": 34,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0618",
+   "topic": "EIC charters & acts",
+   "q": "According to L#34, from 1793 Britain renewed the Company's charter at a fixed interval to keep it under control. Which run of charter years did he give?",
+   "c": [
+    "1773, 1784, 1793",
+    "1793, 1803, 1813",
+    "1793, 1813, 1833",
+    "1600, 1661, 1726"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He said charters came every 20 years: 1793, 1813, 1833. 1773 and 1784 are the Regulating Act and Pitt's India Act, which are Acts of Parliament, not the 20-year charter cycle.",
+   "lec": 34,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0619",
+   "topic": "Indian entrepreneurs",
+   "q": "How do the L#34 slides divide the role of Indian entrepreneurs under colonial rule into phases?",
+   "c": [
+    "Phase 1: 1600–1757; Phase 2: 1757–1857",
+    "Phase 1: 1813–1857; Phase 2: 1858–1947",
+    "Phase 1: before Plassey; Phase 2: after the 1833 Charter Act",
+    "Phase 1: 1700s–1813 (brokers, bankers, shipbuilders); Phase 2: 1813–1900s (trade through agency houses, then factories)"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The slides make 1813, the end of the Company's trade monopoly, the dividing line: Phase 1 runs from the 1700s to 1813 and Phase 2 from 1813 into the 1900s, with the shift from trading to factories in the 1850s. Plassey matters for the Company's power, but the slides don't use it to split the phases.",
+   "lec": 34,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0620",
+   "topic": "Colonial trade & agency houses",
+   "q": "Besides indigo and cotton, what was Alexander & Co. heavily involved in, according to the L#34 slides?",
+   "c": [
+    "Banking: it founded the Bank of Hindostan",
+    "Coal mining at Raniganj",
+    "Shipbuilding in the Bombay dockyards",
+    "Malwa opium from the princely states"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The slide lists indigo, cotton and banking, including founding the Bank of Hindostan. Raniganj coal belongs to Carr, Tagore & Co., Bombay shipbuilding to the Wadias, and Malwa opium to Jamsetjee Jejeebhoy.",
+   "lec": 34,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0621",
+   "topic": "World Wars & Indian business",
+   "q": "Which of these imports to India fell furthest during WWI, according to the table on the L#34 slide?",
+   "c": [
+    "Steel, by about 84%",
+    "Railway supplies, by about 93%, almost a complete stop",
+    "UK cotton piece goods, by about 75% in monthly volume",
+    "Total net cotton imports, by about 50%"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The slide puts railway supplies at a 93% fall, close to a complete stop. Steel's 84% is the figure most remembered from L#32, which gave no railway number, but it is the second-largest fall.",
+   "lec": 34,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0622",
+   "topic": "World Wars & Indian business",
+   "q": "The L#34 slide gives India's steel imports as 1,040,000 tons in 1913–14 and 165,000 tons in 1917–18. About how large a fall is that?",
+   "c": [
+    "About 16%",
+    "About 63%",
+    "About 84%",
+    "About 93%"
+   ],
+   "a": [
+    2
+   ],
+   "w": "165,000 ÷ 1,040,000 ≈ 0.16, so about 16% of the pre-war level remained, a fall of about 84%. 16% is what was left, not the fall; 93% is the railway-supplies figure.",
+   "lec": 34,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0623",
+   "topic": "Rise of Indian industry",
+   "q": "The L#34 slide and his speech give different years for the start of Godrej's Anchor brand locks. Which should you use?",
+   "c": [
+    "1857, as he said in speech",
+    "1869, the year of Tata's Alexandra Mill",
+    "1903, when Walchand began railway contracts",
+    "1897, as on the slide: the late 1890s"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The slide says 1897, matching the late 1890s taught in L#31; '1857' in speech was a slip. 1869 is Tata's first mill and 1903 is Walchand's start.",
+   "lec": 34,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0624",
+   "topic": "Business & the freedom movement",
+   "q": "Which link between business houses and education did the lecturer draw in L#34?",
+   "c": [
+    "The Tatas with the Indian Institute of Science, and the Birlas with BITS Pilani",
+    "The Wadias with IIT Bombay, and the Tatas with BITS Pilani",
+    "The Birlas with the Indian Institute of Science, and Godrej with IIT Kharagpur",
+    "Dwarkanath Tagore with IISc, and Jejeebhoy with BITS Pilani"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He named the Tatas with the Indian Institute of Science and the Birlas with BITS Pilani, and said the Walchand group founded institutes too, as evidence that these houses built more than businesses. The other pairings swap or invent founders.",
+   "lec": 34,
+   "lv": "recall"
+  },
+  {
+   "id": "ebh-q0625",
+   "topic": "Business & the freedom movement",
+   "q": "A classmate says a 'nationalist capitalist class' just means Indians who owned factories. What does the L#34 definition add?",
+   "c": [
+    "That the class also refused all British government contracts",
+    "That it also supported the freedom movement, as the Birla house backed Gandhi",
+    "That it had nationalised British-owned firms",
+    "That it sold only within India and never exported"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Owning businesses, factories and the means of production makes a class capitalist; supporting the independence movement makes it nationalist. The Birlas, for example, both supplied the war effort in WWI and backed Gandhi, so refusing British contracts was no part of the definition.",
+   "lec": 34,
+   "lv": "apply"
+  },
+  {
+   "id": "ebh-q0626",
+   "topic": "Foundations",
+   "q": "In L#34 the lecturer tied Module 5 back to the Module 1 definitions. How does that classify Module 5's material?",
+   "c": [
+    "Both are business history, because the East India Company was a business",
+    "The charters are business history; the entrepreneurs are economic history",
+    "The changing Company charters and Acts are economic history (the rules); the entrepreneurs who worked within them are business history (the actors)",
+    "Both are economic history, because they happened under colonial rule"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Economic history follows how the rules of the economy change; business history follows the actors who play within those rules. The 1600–1813 charters and Acts changed the rules; the brokers, bankers, agency houses and industrialists were the actors. Calling everything business history because the Company was a firm misses that its charters set the rules for everyone else.",
+   "lec": 34,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0627",
+   "topic": "World Wars & Indian business",
+   "q": "Which statement best matches what L#34 said about the Bengal famine, and how should you use it in an answer?",
+   "c": [
+    "He blamed only a failed monsoon, so the war is irrelevant to it",
+    "He placed it in WWI, alongside the Champaran movement",
+    "He blamed big business for hoarding jute, so it belongs under the nationalist capitalist class",
+    "He tied it to supplies diverted from civilians to the military and called it seemingly deliberate; give the agreed causes first and present 'deliberate' as one interpretation"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He linked the WWII-era famine to the diversion of supplies to the war effort (and, in L#33, to inflation), then said it looked like a deliberate British attempt. That last claim is debated by historians, so an answer should state it as a view. Champaran (1917) was a WWI-era indigo protest, not the famine.",
+   "lec": 34,
+   "lv": "analyse"
+  },
+  {
+   "id": "ebh-q0628",
+   "topic": "Indian entrepreneurs",
+   "q": "Where did the lecturer say the course's Indian business history starts and stops?",
+   "c": [
+    "From colonial rule in the 1750s–60s to independence in 1947; pre-colonial business under the Mughals and southern kingdoms was left out for lack of time",
+    "From the Mughal empire in the 1500s to the Bombay Plan of 1944",
+    "From the 1813 Charter Act to the 1991 reforms",
+    "From the 1857 revolt to the end of WWI in 1918"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He started Module 5 with colonial rule from the 1750s–60s (with the Company's charters as background from 1600) and stopped at 1947. He said pre-colonial business in the Mughal north and the southern kingdoms was rich but beyond the time the course had.",
+   "lec": 34,
+   "lv": "recall"
   }
  ],
  "briefs": {
@@ -13983,6 +14285,7 @@ HUB.addCourse({
   "lec-31",
   "ehi-ch06",
   "lec-32",
-  "lec-33"
+  "lec-33",
+  "lec-34"
  ]
 });

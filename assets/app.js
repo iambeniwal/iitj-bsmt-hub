@@ -81,7 +81,7 @@ function until(a) {
 }
 const ivlText = d => d < 1 ? "10 min" : d < 30 ? `${Math.round(d)} d` : `${Math.round(d / 30)} mo`;
 const secsPerQ = a => a && a.durationMin && a.questions ? Math.max(5, Math.round(a.durationMin * 60 / a.questions)) : 20;
-const lastTimed = slug => [...META[slug].assessments].reverse().find(a => a.durationMin) || null;
+const lastTimed = slug => [...META[slug].assessments].reverse().find(a => a.durationMin && a.questions) || null;
 /* ---------------- what each quiz covers ----------------
    assessment.lectures: the LMS lecture numbers on its syllabus (from the announcement);
    assessment.scope: hub unit ids, which practice and mock papers draw from. Notes topics carry
@@ -332,7 +332,7 @@ function homeView() {
       <div class="nextrow"><a class="nextmain" href="#/c/${slug}?tab=exams">
         <span class="pill ${u.state === "live" || u.state === "today" ? "today" : u.state}">${esc(u.state === "live" ? "Live now" : u.state === "today" ? "Today" : u.state === "tomorrow" ? "Tomorrow" : u.text)}</span>
         <b>${esc(META[slug].name)} · ${esc(a.name)}</b>
-        <span class="when">${fmtDate(a.start)} · ${fmtTime(a.start)} IST · ${a.questions} Q · ${a.durationMin} min</span></a>
+        <span class="when">${fmtDate(a.start)} · ${fmtTime(a.start)} IST${a.questions ? ` · ${a.questions} Q` : ""}${a.durationMin ? ` · ${a.durationMin} min` : ""}</span></a>
         ${a.lectures || Array.isArray(a.scope) ? `<a class="nextsyl" href="${link("c/" + slug, { tab: "notes", quiz: a.id })}">What's on it →</a>` : ""}
       </div>`).join("")}</div>`
     : `<div class="empty"><b>No dates announced yet.</b> All six Quiz 1 papers are done${recent.length ? ` (the last was ${esc(META[recent[0].slug].name)} on ${fmtDate(recent[0].a.start)})` : ""}.
@@ -496,16 +496,16 @@ function courseExams(slug, pane) {
   ${R.assessments.map(a => {
     const u = until(a), b = C.briefs[a.id], mocks = store.mocks(slug, a.id);
     return `<section>
-      <div class="sechead"><h2>${esc(a.name)}</h2><span class="tag">${a.status === "tba" ? "date TBA" : u.state === "past" ? "done" : u.text}</span></div>
+      <div class="sechead"><h2>${esc(a.name)}</h2><span class="tag">${a.status === "tba" && !a.start ? "date TBA" : u.state === "past" ? "done" : u.text}</span></div>
       ${a.status === "tba" ? `<p class="lede">${a.note ? esc(a.note) + " When the full details are announced, they will be added here." : `Not announced yet. When the official LMS announcement goes up, its date, length, question count and syllabus will be added here and the mock paper will follow them.`}</p>
         <div class="actions"><a class="btn ghost" href="${link("mock", { c: slug, a: a.id })}">Sit a practice paper on everything so far</a></div>` : `
       <dl class="strip">
         <div class="cell"><dt>Date</dt><dd>${fmtDate(a.start)}<small>${fmtTime(a.start)} IST · join from ${fmtTime(a.join)}</small></dd></div>
-        <div class="cell"><dt>Paper</dt><dd>${a.questions} Q<small>${esc(a.types)} · ${a.marks} marks</small></dd></div>
-        <div class="cell"><dt>Time</dt><dd>${a.durationMin} min<small>${secsPerQ(a)} sec a question</small></dd></div>
+        <div class="cell"><dt>Paper</dt><dd>${a.questions ? a.questions + " Q" : "Count not disclosed"}<small>${esc(a.types)}${a.marks ? ` · ${a.marks} marks` : ""}</small></dd></div>
+        <div class="cell"><dt>Time</dt><dd>${a.durationMin} min<small>${a.questions ? secsPerQ(a) + " sec a question" : "pace yourself across the paper"}</small></dd></div>
         <div class="cell"><dt>Syllabus</dt><dd>${esc(b && b.scopeShort || "—")}<small>${esc(a.scopeText)}</small></dd></div>
       </dl>
-      <div class="actions" style="margin-top:16px"><a class="btn" href="${link("mock", { c: slug, a: a.id })}">Sit a mock · ${a.questions} Q in ${a.durationMin} min</a></div>
+      <div class="actions" style="margin-top:16px"><a class="btn" href="${link("mock", { c: slug, a: a.id })}">Sit a mock · ${a.questions ? a.questions + " Q in " : ""}${a.durationMin} min</a></div>
       ${mocks.length ? `<div class="mockhist"><h4>Your mock papers</h4>${mocks.slice(-5).reverse().map(mk => `<div><span>${fmtDay(mk.at)}</span><b>${mk.score} / ${mk.max}</b><span>${mk.right} right · ${mk.wrong} wrong · ${mk.blank} blank${mk.lean ? " · weak-topic paper" : ""}</span></div>`).join("")}</div>` : ""}
       ${b ? `<details class="topic brief"><summary>The ${esc(a.name)} brief<span class="src">${esc(b.tag)}</span></summary><div class="tbody"><p class="lede">${b.lede}</p>${b.html}
         ${b.weights ? `<h4>Where the marks probably sat</h4><p style="font-size:13.5px;color:var(--ink-3)">Estimated from lecture time, not official.</p>${(() => { const mx = Math.max(...b.weights.map(w => w[1])); return b.weights.map(([l, v]) => `<div class="wbar"><span class="lab">${esc(l)}</span><span class="track"><span class="fill" style="width:${v * 100 / mx}%"></span></span><span class="num">~${v}%</span></div>`).join(""); })()}` : ""}
@@ -666,7 +666,7 @@ function mockView(p) {
   if (!C) { location.hash = "#/"; return; }
   const R = META[slug];
   const a = R.assessments.find(x => x.id === p.a) || lastTimed(slug);
-  const ref = a.durationMin ? a : lastTimed(slug);         // a TBA quiz borrows the last known format
+  const ref = a.durationMin && a.questions ? a : lastTimed(slug);   // a TBA quiz, or one with an undisclosed count, borrows the last known format
   /* a quiz whose announcement lists its syllabus (scope = unit ids) draws only from those units */
   const scoped = Array.isArray(a.scope) && a.scope.length;
   const POOL = scoped ? C.questions.filter(q => a.scope.includes(C.unitOf[q.topic])) : C.questions;
@@ -675,7 +675,7 @@ function mockView(p) {
   app.innerHTML = `
   <header class="mast slim">
     ${crumbs([link("c/" + slug, { tab: "exams" }), R.name])}
-    <div class="eyebrow">Mock paper · ${esc(a.name)}${a.status === "tba" ? " (format assumed from " + esc(ref.name) + ")" : ""}</div>
+    <div class="eyebrow">Mock paper · ${esc(a.name)}${ref !== a ? " (format assumed from " + esc(ref.name) + ")" : ""}</div>
     <h1>${N} questions · ${ref.durationMin} minutes</h1>
     <p class="sub">Drawn at random from ${scoped ? `the ${POOL.length} questions on ${esc(a.name)}'s syllabus (${esc(a.scopeText)})` : `the ${C.questions.length}-question bank`}. Marked like the real thing, ${esc(M.note)}.
       You won't see any answers until you submit.</p>

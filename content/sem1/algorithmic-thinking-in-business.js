@@ -199,6 +199,12 @@ HUB.addCourse({
    "Week 13 — From Algorithms to Intelligence",
    "Expert systems, ML, deep learning, generative AI",
    "rec"
+  ],
+  [
+   33,
+   "Week 13 — Live Lecture 7",
+   "Five sorts compared, PageRank recap, end-term brief",
+   "live"
   ]
  ],
  "units": [
@@ -635,7 +641,7 @@ HUB.addCourse({
   {
    "id": "sorting",
    "title": "Sorting algorithms",
-   "tag": "Lectures 25–27, 29–30 · Module 5 · + textbook",
+   "tag": "Lectures 25–27, 29–30, 33 · Module 5 · + textbook",
    "lede": "Putting data in order so it can be searched, shown and reported: the three O(n²) sorts (bubble, selection, insertion), then the divide and conquer sorts, merge and quick, at O(n log n).",
    "topics": [
     {
@@ -694,6 +700,16 @@ HUB.addCourse({
      "h": "<h4>Five ways to choose the pivot</h4><div class=\"scroller\"><table><thead><tr><th>Pivot</th><th>What he said about it</th></tr></thead><tbody><tr><td>First item</td><td>Simple; on a list already sorted (in either order) it can give O(n²)</td></tr><tr><td>Last item</td><td>Common in textbooks and used in his examples; the same risk on sorted lists</td></tr><tr><td>Middle item</td><td>Sometimes a good pivot, sometimes not; no guarantee</td></tr><tr><td>Random item</td><td>Any index; the same problem, no guarantee of a good value</td></tr><tr><td style=\"background:var(--blue-soft)\"><b>Median of three</b></td><td>The middle value of the first, middle and last items. Usually gives a better partition, so efficient practical implementations often use it</td></tr></tbody></table></div><h4>Median of three, step by step</h4><ol style=\"font-size:14.5px\"><li>Number the positions from index 0. Note the first and the last index, and work out the <strong>middle index</strong> as last index ÷ 2</li><li>Take the three values at the first, middle and last index</li><li>Sort <strong>only those three</strong></li><li>The value in the middle of the three is the pivot</li></ol><p style=\"font-size:14.5px\"><strong>His numbers</strong>, [10, 5, 8, 4, 3, 2, 7] at indices 0 to 6: middle index 6 ÷ 2 = 3. The three values are 10 (index 0), 4 (index 3) and 7 (index 6); in order 4, 7, 10, so the pivot is <strong>7</strong>. <strong>His names</strong>, Mohan, Ram, Sham, Lakshman, Arjun, Bheem, Nakul: the values at indices 0, 3 and 6 are Mohan, Lakshman and Nakul; in order Lakshman, Mohan, Nakul, so the pivot is <strong>Mohan</strong>.</p><p style=\"font-size:14.5px\">The extra work is real: the median must be worked out <strong>again for every sub-list</strong>, not once. In return the pivots are usually reasonable.</p><h4>Complexity</h4><ul style=\"font-size:14.5px\"><li><strong>Average case: O(n log n)</strong>, with reasonably chosen pivots. Far better than the O(n²) of the first three sorts</li><li><strong>Worst case: O(n²).</strong> If the pivot is an extreme value, the smallest or the largest, each round peels off only the pivot and the list is divided again and again. With first- or last-item pivots this happens on a list that is already sorted, in the same or the opposite order</li><li>He accepted the worst case: it is the exception, and the average case is what you plan for</li></ul><div class=\"def\"><b>Two slips to ignore:</b> in the closing summary the average case was read out as “O log n”; earlier in the same lecture, and in its key takeaway, it is <b>O(n log n)</b>. And the lecture opened by saying the O(n²) sorts grow “exponentially” with the list; O(n²) is <b>quadratic</b> growth, while exponential growth is O(2ⁿ) (L#28).</div><h4>Memory: less than merge sort</h4><p style=\"font-size:14.5px\">Quick sort does need some additional memory, but <strong>less than merge sort</strong>. Merge sort stores every level of its splits down to single items and builds new lists while merging. In quick sort each round puts its pivot in its final place, and the work continues on ever smaller sub-lists, with no extra copies of what is already placed. So their time complexity may be similar, but quick sort wins on space.</p><h4>A business use: price filters</h4><p style=\"font-size:14.5px\">On an e-commerce site, a price limit works like a pivot. Looking for textbooks under 500 rupees: 500 is the pivot, cheaper items fall on one side and dearer ones on the other. A range such as 200 to 500, or 500 to 800, uses successive pivots, and often the upper end of the range, the last price point, is the natural pivot, which is one reason a last-item pivot can be practical.</p><h4>Merge sort and quick sort side by side</h4><div class=\"scroller\"><table><thead><tr><th></th><th>Merge sort (L#29)</th><th>Quick sort (L#30)</th></tr></thead><tbody><tr><td>How it divides</td><td>into halves, fixed by the item count</td><td>around a pivot; parts can be unequal</td></tr><tr><td>Where the sorting happens</td><td>in the merging</td><td>in the partitioning</td></tr><tr><td>Average time</td><td style=\"font-family:var(--mono);white-space:nowrap\">O(n log n)</td><td style=\"font-family:var(--mono);white-space:nowrap\">O(n log n), faster with good pivots</td></tr><tr><td>Worst time</td><td style=\"font-family:var(--mono);white-space:nowrap\">O(n log n)</td><td style=\"font-family:var(--mono);white-space:nowrap\">O(n²), with extreme pivots</td></tr><tr><td>Extra memory</td><td>more: new lists at every merge</td><td>some, but less</td></tr></tbody></table></div><!--viz:atb-quick-median-of-three--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Median-of-three pivot for 14, 9, 22, 6, 18, 3, 11 at indices 0 to 6. The middle index is 6 divided by 2, which is 3. The values at indices 0, 3 and 6 are 14, 6 and 11. Sorted they are 6, 11, 14, so the pivot is 11.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Median of three on a new list</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><span style=\"font-family:var(--mono)\">[14, 9, 22, 6, 18, 3, 11]</span><br><span style=\"color:var(--ink-2);font-size:12.5px\">indices 0 to 6</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">middle index<br><span style=\"font-family:var(--mono)\">6 ÷ 2 = 3</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">values at 0, 3, 6<br><span style=\"font-family:var(--mono)\">14, 6, 11</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">sort the three<br><span style=\"font-family:var(--mono)\">6, 11, 14</span></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>pivot = 11</b><br><span style=\"color:var(--ink-2);font-size:12.5px\">the middle of the three</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only three values are sorted, and the job is repeated for every sub-list that follows.</figcaption></figure><!--/viz:atb-quick-median-of-three-->"
     },
     {
+     "t": "End-term brief from Live Lecture 7",
+     "src": "L#33",
+     "h": "<div class=\"def\"><b>From the lecture (L#33), on the end-term exam:</b><ul><li><b>Syllabus:</b> the complete course as taught, in the recorded videos and the live lectures. He said no question will be set on anything that was not taught</li><li><b>Question type:</b> <b>descriptive</b>. The questions will be of the same kind as the exercises he set inside the recorded videos, plus <b>definition-type</b> questions built on the definitions in his slides. Practise the in-video exercises; for sorts, write out every pass (his L#25 advice)</li><li><b>Web search:</b> you are not expected to know everything about PageRank and Google search, but you should have the basic idea of how it works and of the complexity involved</li><li><b>L#32 (From Algorithms to Intelligence):</b> he again called it a “post-credit scene” and said it is not relevant for the end-term exam; it is there for the link to the later courses on machine learning and deep learning. This matches what he said in L#32</li><li><b>His paper:</b> offline, <b>60 marks</b>, and he said <b>3 hours</b>. He added that each instructor sets a paper total (100 or 60) and it is scaled to the weighting</li><li><b>Order of answers:</b> answer the questions in any order you like, but keep a question’s sub-parts (a, b, c, d) together</li><li><b>Grading:</b> relative grading, as at IIT Jodhpur generally: your grade depends on where you stand against the class. His example: 80 marks reads differently when the class average is 85</li><li><b>Slides:</b> all his slides are in the LMS attachments of each lecture, this one included</li></ul></div><div class=\"def\"><b>Official LMS announcement (this wins):</b> end-term <b>offline</b> on <b>Sunday 6 December 2026, 10 AM–12 PM IST</b>, so <b>2 hours</b>, <b>no negative marking</b>, <b>70%</b> of the grade; quizzes are 30%, best 1 of 2. His “3 hours” differs from the announced 2 hours: plan your pacing for 2 hours. His 60 marks is the paper’s own total, which is then scaled to the 70% weight (in L#28 he also put the final at 60 marks).</div>"
+    },
+    {
+     "t": "Live Lecture 7: the five sorts side by side",
+     "src": "L#33",
+     "h": "<p style=\"font-size:14.5px\">Live Lecture 7 was the last live class of the course: a fast revision of Module 5 from his deck “Lecture 7 – Sorting Algorithms”, then a recap of PageRank. The slides reuse the lists from L#25–30 ([10, 5, 8, 4, 3, 2], and the same with 7 and 6 added for merge and quick sort). What was new is the way he set the five sorts against each other, and three student questions.</p><h4>The contrasts he drew</h4><div class=\"scroller\"><table><thead><tr><th>Sort</th><th>What happens after a comparison</th><th>Time</th><th>His verdict</th></tr></thead><tbody><tr><td>Bubble</td><td>Swap <b>at once</b> if the neighbours are out of order</td><td>O(n²)</td><td>Easy to explain and code; good for understanding, not used for real lists</td></tr><tr><td>Selection</td><td>Only <b>move the “smallest so far” marker</b>; one swap after the scan ends</td><td>O(n²)</td><td>Fewer swaps than bubble, the same comparisons</td></tr><tr><td>Insertion</td><td>Shift larger items right, then drop the key in its gap</td><td>O(n²)</td><td>Slightly fewer steps than the other two; suits a list that keeps growing</td></tr><tr><td>Merge</td><td>Copy the smaller front item into a <b>new</b> list</td><td>O(n log n)</td><td>Harder to follow, better to run; no swaps, but heavy on memory</td></tr><tr><td>Quick</td><td>Send the item left or right of the pivot</td><td>O(n log n) average; O(n²) with an extreme pivot</td><td>Same order of steps as merge, less memory</td></tr></tbody></table></div><h4>Points he added or sharpened</h4><ul><li><b>Why O(n²) hurts:</b> going from 3 items to 4 takes the work from 9 to 16 operations, and the gap widens fast as the list grows. That is why the first three sorts are kept for small lists and for learning</li><li><b>Insertion sort and the library:</b> a physical library keeps its books in order and puts each new arrival straight into its right place instead of dumping it at the end and re-sorting later. That is insertion sort’s pattern, so it fits data that grows a few items at a time</li><li><b>Merge sort’s memory:</b> when it divides, it does not delete the old list; items are <b>copied</b> to new places at every level, so every level’s lists exist at once. Quick sort works through ever smaller parts of the same list</li><li><b>Bubble sort’s count, slide and speech:</b> the slide sums n + (n − 1) + … + 1 and he spoke of “n passes of n comparisons”; the exact count is n − 1 passes and n(n − 1) ÷ 2 comparisons (15 for six items), as worked out in L#25. All three give O(n²)</li></ul><h4>Three student questions, answered</h4><ul><li><b>“In selection sort, do we swap whenever a smaller number turns up?”</b> No. The first unsorted item is assumed smallest; each smaller item found only becomes the new candidate. On [10, 5, 8, 4, 3, 2] the candidate moves 5 → 4 → 3 → 2 and only then is 2 swapped with 10. The next pass starts from the second position and never touches the 2 already placed</li><li><b>“Merge sort with an odd number of items?”</b> Split as evenly as you can and let one part have one item more. Dropping the 6: [10, 5, 8, 4, 3, 2, 7] splits into [10, 5, 8, 4] and [3, 2, 7], then [10, 5], [8, 4], [3, 2] and [7]. The merging rule is unchanged (13 comparisons in all for these seven, by our count)</li><li><b>“Can any number be the pivot?”</b> Yes, though think of it as any <b>position</b>, not any value. He used the last item in the demo; some books use the first; the recorded lecture (L#30) showed median of three. There is no single pivot rule that always works best</li></ul><!--viz:atb-five-sorts-one-list--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table comparing the five sorts on the list 10, 5, 8, 4, 3, 2, 7, 6: bubble 28 comparisons and 19 swaps, selection 28 comparisons and 7 swaps, insertion 22 comparisons and 19 shifts, merge 15 comparisons with copying into new lists, quick sort 16 comparisons with 6 pivots.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One list, five sorts: the work counted</div><div class=\"scroller\"><table><thead><tr><th>Sort</th><th>Comparisons</th><th>Moves</th><th>Extra lists</th></tr></thead><tbody><tr><td>Bubble</td><td style=\"font-family:var(--mono);white-space:nowrap\">28 (27 if it stops after a pass with no swap)</td><td>19 swaps</td><td>none</td></tr><tr><td>Selection</td><td style=\"font-family:var(--mono);white-space:nowrap\">28</td><td>7 swaps</td><td>none</td></tr><tr><td>Insertion</td><td style=\"font-family:var(--mono);white-space:nowrap\">22</td><td>19 shifts</td><td>none</td></tr><tr><td>Merge</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--blue-soft)\">15</td><td>no swaps; every item copied at each of 3 levels</td><td>new lists at every level</td></tr><tr><td>Quick (last-item pivot)</td><td style=\"font-family:var(--mono);white-space:nowrap\">16</td><td>6 pivots placed</td><td>works on parts of the list</td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:6px\">List [10, 5, 8, 4, 3, 2, 7, 6], ascending, each sort run the way the lectures traced it (counted by a script). With only 8 items the gap is small; at 1,000 items n² is 10,00,000 against roughly 10,000 for n log₂ n.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Selection saves swaps, not comparisons; merge and quick need the fewest comparisons, and merge pays for it in memory.</figcaption></figure><!--/viz:atb-five-sorts-one-list-->"
+    },
+    {
      "t": "Textbook: Sorting Algorithms",
      "src": "Codeless DSA ch7",
      "h": "<p>Sorting arranges data by category or into an order, and many other tasks depend on it: binary search needs sorted input, databases present ordered results, and duplicates become easy to spot once identical items sit side by side. The chapter walks through five sorts. Bubble sort, the one L#25 taught, repeatedly compares and swaps neighbours; the book runs it from the right-hand end, the lecture's alternative method. Selection sort repeatedly finds the smallest remaining item and swaps it into place, and insertion sort grows a sorted section by slotting each new item into position; like bubble sort both are O(n²) and suit only small lists. Merge sort and quick sort use divide and conquer and typically run in O(n log n). For a manager, that gap is the difference between a nightly batch that finishes and one that does not.</p><!--viz:atb-five-sorts-compare--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison table of five sorts. Bubble sort, taught in L#25, compares and swaps neighbours, O(n squared). Selection sort swaps the smallest remaining value to the front, O(n squared). Insertion sort slides each next item into a sorted section, O(n squared) worst case. Merge sort halves and merges, O(n log n). Quick sort partitions around a pivot, O(n log n) typically and O(n squared) in the worst case.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The chapter's five sorts at a glance</div><div class=\"scroller\"><table><thead><tr><th>Sort</th><th>The repeated move</th><th>Time</th></tr></thead><tbody><tr><td style=\"background:var(--blue-soft)\"><b>Bubble</b> (L#25)</td><td>Compare neighbours, swap if out of order</td><td><span style=\"white-space:nowrap;font-family:var(--mono)\">O(n²)</span></td></tr><tr><td><b>Selection</b></td><td>Find the smallest remaining value, swap it to the front of the unsorted part</td><td><span style=\"white-space:nowrap;font-family:var(--mono)\">O(n²)</span></td></tr><tr><td><b>Insertion</b></td><td>Take the next item, slide it left into the sorted section</td><td><span style=\"white-space:nowrap;font-family:var(--mono)\">O(n²)</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">worst case</span></td></tr><tr><td><b>Merge</b></td><td>Halve down to single items, merge back in order</td><td><span style=\"white-space:nowrap;font-family:var(--mono)\">O(n log n)</span></td></tr><tr><td><b>Quick</b></td><td>Partition around a pivot, then sort each side</td><td><span style=\"white-space:nowrap;font-family:var(--mono)\">O(n log n)</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">typical; worst O(n²)</span></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only bubble sort had been lectured by L#25. The three simple sorts share O(n²); the two divide-and-conquer sorts reach O(n log n).</figcaption></figure><!--/viz:atb-five-sorts-compare--><!--viz:atb-selection-vs-insertion--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Trace of selection sort and insertion sort on 33, 8, 26, 41, 14, 19. Selection sort swaps the smallest remaining value to the front each step: 8, then 14, then 19, then 26, and at step 5 finds 33 already in place. Insertion sort grows a sorted front section: 8 slides past 33, 26 slides past 33, 41 stays, 14 slides past three items, 19 slides past three items. Both end with 8, 14, 19, 26, 33, 41.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Selection vs insertion on the same list</div><p style=\"font-size:14px;margin:0 0 8px\">Start: <span style=\"font-family:var(--mono)\">33 8 26 41 14 19</span>. Shaded = the part already in order.</p><div class=\"scroller\"><table><thead><tr><th>Step</th><th>Selection sort</th><th>Insertion sort</th></tr></thead><tbody><tr><td>1</td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8</span> 33 26 41 14 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">swap 8 ↔ 33</span></td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 33</span> 26 41 14 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">8 slides past 33</span></td></tr><tr><td>2</td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14</span> 26 41 33 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">swap 14 ↔ 33</span></td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 26 33</span> 41 14 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">26 slides past 33</span></td></tr><tr><td>3</td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14 19</span> 41 33 26</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">swap 19 ↔ 26</span></td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 26 33 41</span> 14 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">41 stays</span></td></tr><tr><td>4</td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14 19 26</span> 33 41</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">swap 26 ↔ 41</span></td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14 26 33 41</span> 19</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">14 slides past 26, 33, 41</span></td></tr><tr><td>5</td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14 19 26 33 41</span></span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">33 already in place</span></td><td><span style=\"font-family:var(--mono)\"><span style=\"background:var(--blue-soft);padding:1px 3px;border-radius:3px\">8 14 19 26 33 41</span></span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">19 slides past 26, 33, 41</span></td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Selection sort's front part is final from the first step; insertion sort's front part is only in order among itself until the last item is placed.</figcaption></figure><!--/viz:atb-selection-vs-insertion--><!--viz:atb-merge-sort-levels--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Merge sort on 36, 15, 52, 9, 27, 44, 3, 18. Three levels of splitting reach eight single items. Three levels of merging give 15 36, 9 52, 27 44, 3 18; then 9 15 36 52 and 3 18 27 44; then the sorted list 3, 9, 15, 18, 27, 36, 44, 52.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Merge sort: split down, merge up</div><div style=\"display:flex;flex-direction:column;gap:8px;font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Start</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">36 15 52 9 27 44 3 18</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Split 1</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">36 15 52 9</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">27 44 3 18</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Split 2</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">36 15</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">52 9</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">27 44</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">3 18</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Split 3</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">36</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">15</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">52</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">9</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">27</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">44</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">3</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">18</span></div><div style=\"border-top:1px solid var(--rule);margin:2px 0\"></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Merge 1</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">15 36</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">9 52</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">27 44</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">3 18</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Merge 2</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">9 15 36 52</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">3 18 27 44</span></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Merge 3</span><span style=\"padding:3px 6px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono)\">3 9 15 18 27 36 44 52</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Eight items need three levels each way (log₂ 8 = 3), and every level handles all eight items: n log n.</figcaption></figure><!--/viz:atb-merge-sort-levels--><!--viz:atb-quick-sort-partition--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Quick sort partition of 22, 42, 31, 14, 39, 12, 41 around the pivot 31. The left marker stops at 42 and the right marker at 12, and they swap; then the left marker stops at 31 and the right at 14, and they swap; the markers cross. Result: 22, 12, 14 on the left, all smaller than 31; 31 in its final place; 39, 42, 41 on the right, all larger.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">One quick-sort partition, pivot 31</div><div style=\"display:flex;flex-direction:column;gap:8px;font-size:14px\"><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">Start</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">22</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">42</span><span style=\"padding:3px 6px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono)\">31</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">14</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">39</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">12</span><span style=\"padding:3px 6px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);font-family:var(--mono)\">41</span></div><div style=\"font-size:13.5px;color:var(--ink-2)\">The left marker stops at a value ≥ 31, the right marker at a value &lt; 31, and they swap:</div><ol style=\"margin:0;padding-left:20px;font-size:13.5px;color:var(--ink-2)\"><li>left stops at 42, right stops at 12: swap → <span style=\"font-family:var(--mono)\">22 12 31 14 39 42 41</span></li><li>left stops at 31, right stops at 14: swap → <span style=\"font-family:var(--mono)\">22 12 14 31 39 42 41</span></li><li>the markers cross: the partition is done</li></ol><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:5px\"><span style=\"font-size:12.5px;color:var(--ink-3);min-width:52px\">After</span><span style=\"padding:4px 8px;border:1px solid var(--rule-2);border-radius:4px;background:var(--good-soft);font-family:var(--mono)\">22 12 14</span><span style=\"padding:3px 6px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);font-family:var(--mono)\">31</span><span style=\"padding:4px 8px;border:1px solid var(--rule-2);border-radius:4px;background:var(--clay-soft);font-family:var(--mono)\">39 42 41</span></div><div style=\"font-size:13px;color:var(--ink-3)\">Smaller than 31 · pivot in its final place · larger than 31. Next, each side is partitioned the same way.</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">After one partition the pivot is final but neither side is sorted yet: quick sort now repeats the same step on each side.</figcaption></figure><!--/viz:atb-quick-sort-partition--><p><strong>What sorting is for</strong> — Covered in L#25. The book lets sorting mean grouping by category as well as putting items in order; L#25 defined it as one definite order, ascending or descending, by a chosen parameter. Either way it pays off later: binary search needs sorted input, database queries return ordered results, and duplicates sit side by side once the data is sorted.<br><em>e.g.</em> Sorting 50,000 client records by PAN puts any duplicate PANs next to each other.</p><p><strong>Bubble sort, the book's way</strong> — Covered in L#25. Bubble sort compares neighbouring pairs and swaps any that are out of order. The book starts at the right-hand end and works left, so each pass carries the smallest remaining value to the front. L#25 taught the classic left-to-right version, which carries the largest to the end, and showed the book's direction as the alternative method. Both give the same sorted list.<br><em>e.g.</em> [18, 27, 6, 33, 12] → after one right-to-left pass [6, 18, 27, 12, 33].</p><p><strong>When bubble sort can stop</strong> — Covered in L#25. L#25 counted passes: n − 1 of them always suffice. The book simply repeats passes until the list is sorted, and a pass with no swaps proves it, because every neighbouring pair is then in order. A version that checks for this can stop early on a list that is already nearly in order.<br><em>e.g.</em> [18, 27, 6, 33, 12] is in order after pass 2; pass 3 makes no swaps, so the sort stops after 3 passes instead of 4.</p><p><strong>Selection sort</strong> — Not covered in L#25, which said the other sorts follow in later lectures. Selection sort uses a linear search to find the smallest remaining value and swaps it with the leftmost unsorted position, then repeats on the rest. A loop inside a loop gives O(n²), but it makes at most one swap per pass. The book rates it slightly better than bubble sort and fine for small arrays.<br><em>e.g.</em> [33, 8, 26, 41, 14, 19] → first pass swaps 8 to the front: [8, 33, 26, 41, 14, 19].</p><p><strong>Insertion sort</strong> — Not covered in L#25, which said the other sorts follow in later lectures. Insertion sort treats the leftmost item as a sorted section, then takes each next item and slides it left past larger items until it sits in the right place. It never hunts for the smallest remaining value, so it stops early when an item is already close to its place; the book calls it more efficient than selection sort, though its worst case is still O(n²).<br><em>e.g.</em> Arranging cheques in hand: pick up each new one and slide it into place among those already ordered.</p><p><strong>Merge sort</strong> — Not covered in L#25, which said the other sorts follow in later lectures. Merge sort halves the list again and again until every piece holds one item, then merges pieces back together pairwise, each merge producing an ordered list, until one sorted list remains. It is usually written recursively and runs in O(n log n): about log₂ n levels of halving, with all n items handled at each level.<br><em>e.g.</em> Each regional office sorts its own sales file; head office merges the sorted files into one ranked list.</p><p><strong>Quick sort</strong> — Not covered in L#25, which said the other sorts follow in later lectures. Quick sort picks a pivot (often at random). Markers move in from both ends, swapping items so that values smaller than the pivot gather on the left and larger ones on the right. Each side is then sorted the same way, recursively. The book gives O(n log n); that is its typical behaviour, and poor pivots can make it quadratic.<br><em>e.g.</em> Splitting loan files into 'below ₹5 lakh' and 'above ₹5 lakh', then splitting each pile again.</p><div class=\"card\"><strong>Case: The book's merge-sort walkthrough</strong> <em>(Chapter 7, Merge Sort: the seven-number example)</em><p>The book splits a seven-number list into halves, then quarters, then single items, and rebuilds it by merging pairs into ordered lists, then those into larger ordered lists, until one sorted list remains. It links the speed to the number of halving levels.</p><p><em>Lesson:</em> Divide and conquer turns a quadratic job into an n log n one.</p><p><em>Think:</em> How does the national-sales-report example from the lectures map onto merge sort's split and merge phases?</p></div><details><summary>Worked problem: Bubble sort the book's way, with an early stop</summary><p>Sort [18, 27, 6, 33, 12] with the book's bubble sort: start at the right-hand end, compare each item with the one before it, swap if the later one is smaller, and stop after a pass with no swaps.</p><ol><li>Pass 1: (33, 12) swap → (6, 12) keep → (27, 6) swap → (18, 6) swap → [6, 18, 27, 12, 33]; 4 comparisons, 3 swaps; 6 is in place.</li><li>Pass 2: (12, 33) keep → (27, 12) swap → (18, 12) swap → [6, 12, 18, 27, 33]; 3 comparisons, 2 swaps.</li><li>Pass 3: (27, 33) keep → (18, 27) keep; 2 comparisons, no swaps, so the list is sorted and the sort stops.</li></ol><p><strong>Answer:</strong> [6, 12, 18, 27, 33] after 3 passes, 9 comparisons and 5 swaps. Without the check, the full n − 1 = 4 passes would make 10 comparisons.</p></details><details><summary>Worked problem: Merge sort trace</summary><p>Merge-sort the eight weekly order counts [41, 7, 33, 19, 2, 58, 24, 12].</p><ol><li>Split: [41, 7, 33, 19] and [2, 58, 24, 12].</li><li>Split: [41, 7] [33, 19] [2, 58] [24, 12], then single items.</li><li>Merge pairs: [7, 41] [19, 33] [2, 58] [12, 24].</li><li>Merge again: [7, 19, 33, 41] and [2, 12, 24, 58].</li><li>Final merge: [2, 7, 12, 19, 24, 33, 41, 58].</li></ol><p><strong>Answer:</strong> [2, 7, 12, 19, 24, 33, 41, 58] — three levels of splitting for eight items (log₂ 8 = 3).</p></details><details><summary>Worked problem: How much does the algorithm choice matter?</summary><p>An HR system must sort 10,000 employee records. Compare the approximate work of an O(n²) sort and an O(n log₂ n) sort.</p><ol><li>n² = 10,000 × 10,000 = 100,000,000 (10 crore) steps.</li><li>log₂ 10,000 ≈ 13.3, so n log₂ n ≈ 10,000 × 13.3 ≈ 133,000 steps.</li><li>Ratio ≈ 100,000,000 ÷ 133,000 ≈ 750.</li></ol><p><strong>Answer:</strong> The O(n log n) sort does roughly 750 times less work; the gap widens as n grows.</p></details><div class=\"def\"><b>Book vs lecture — Direction of bubble sort.</b> Book: Starts at the right-hand end and swaps leftwards, so each pass moves the smallest value to the front. Lecture: L#25 taught the classic left-to-right method, which moves the largest value to the end, and showed working from the end as the alternative method, which he believed the course textbook used. It does. <b>Both are bubble sort and give the same final order. Follow the direction a question states; if none is stated, use the classic left-to-right method from L#25.</b></div><div class=\"def\"><b>Book vs lecture — How many passes.</b> Book: Repeats passes until the array is sorted, without counting them. Lecture: L#25 said the number of passes equals the number of elements, n, but his six-element example was sorted after five passes, and he counted five. <b>n − 1 passes always suffice. A version that stops after a pass with no swaps can finish sooner. In the final exam show every pass (L#25).</b></div><div class=\"def\"><b>Book vs lecture — Comparisons per pass and the O(n²) count.</b> Book: States O(n²) with no count of comparisons. Lecture: L#25: each pass makes one comparison fewer, so the total is n(n − 1) ÷ 2. His slide began the count at n in pass 1, though his own example made n − 1 (five for six elements). <b>Use n − 1 comparisons in pass 1 and n(n − 1) ÷ 2 in all. The complexity is O(n²) either way.</b></div><div class=\"def\"><b>Book vs lecture — What sorting is.</b> Book: Arranging data in a particular way, either by category (similar properties) or in an order or sequence. Lecture: L#25: arranging elements in one specific order, ascending or descending, by a chosen parameter such as marks, name, price or relevance. <b>Give the lecture's definition. The book's grouping by category is a looser, everyday sense of the word.</b></div><div class=\"def\"><b>Book vs lecture — The other four sorts.</b> Book: Covers selection, insertion, merge and quick sort after bubble sort. Lecture: L#25 taught bubble sort only and said the other sorts follow in the lectures after it. <b>Learn them from this chapter for now; when those lectures are released, check them against these notes, and the lecture wins where they differ.</b></div><div class=\"def\"><b>Book vs lecture — Quick sort time complexity.</b> Book: Gives quick sort a time complexity of n log n with no caveat. Lecture: Not covered by L#25. <b>Say O(n log n) on average or typically; poor pivot choices can degrade it to O(n²) in the worst case. Merge sort is O(n log n) even in the worst case.</b></div><div class=\"def\"><b>Book vs lecture — Divide and conquer examples.</b> Book: Introduces divide and conquer as the halving method behind merge sort and quick sort. Lecture: Divide and conquer was taught in Module 1 with business examples (regional audits, national sales report) rather than sorting. <b>No conflict: merge sort is the standard computing example of the same idea. If a quiz asks which approach merge sort uses, answer divide and conquer.</b></div>"
@@ -703,7 +719,7 @@ HUB.addCourse({
   {
    "id": "intelligence",
    "title": "Web search &amp; from algorithms to intelligence",
-   "tag": "Lectures 31–32 · Week 13 · + textbook",
+   "tag": "Lectures 31–33 · Week 13 · + textbook",
    "lede": "Where the course’s pieces meet: Google’s PageRank turns searching and sorting on a directed graph into web search, and the closing lecture places algorithms, expert systems, machine learning, deep learning and generative AI against the business problems each one fits.",
    "topics": [
     {
@@ -745,6 +761,11 @@ HUB.addCourse({
      "t": "Generative AI, and matching the approach to the problem",
      "src": "L#32",
      "h": "<div class=\"def\"><b>Generative AI is a product, not a fifth technique.</b> Algorithm, expert system, machine learning and deep learning are techniques; generative AI (ChatGPT, Google Gemini, Anthropic’s Claude) is a product built on <b>self-supervised deep learning</b>: the model keeps training itself, which is why new versions keep arriving without programmers rewriting much code. Its learning technique is still deep learning.</div><p style=\"font-size:14.5px\">It needs <strong>very, very large</strong> data: essentially the whole internet, and companies now buy and scan old books to get more. The output is <strong>new content</strong>: text, images, audio, video, code. All human knowledge is still not enough for it; the more it is trained on, the closer it moves to human behaviour.</p><h4>The hierarchy, and his five-scenario exercise</h4><p style=\"font-size:14.5px\">Algorithm for simple, clear logic; expert system for complex logic expressed as rules; machine learning for hard patterns with a clear output in mind; deep learning for highly complex patterns, very large data and an unclear output; generative AI to generate content. He gave five systems from different domains and asked which approach built each. The clues are the point:</p><div class=\"scroller\"><table><thead><tr><th>System</th><th>Clue</th><th>Approach</th></tr></thead><tbody><tr><td>A railway system computes the shortest route between two stations with predefined computational steps</td><td>everything defined in advance, computational steps, not rules</td><td><b>Algorithm</b></td></tr><tr><td>A manufacturing system identifies possible machine faults from temperature, vibration and pressure readings, using rules provided by engineers</td><td>rules provided by experts; clear input and output</td><td><b>Expert system</b></td></tr><tr><td>A bank uses a model built from past customer data to predict whether a new loan applicant is likely to default</td><td>“a model” means ML or DL; past customer data is decent but not vast; the output (default: yes/no or a probability) is clear</td><td><b>Machine learning</b></td></tr><tr><td>A security system analyses video footage with a multi-layer neural network to detect suspicious human activity</td><td>video means huge data; multi-layer neural network is the direct clue; and “suspicious activity” is not a clearly defined output</td><td><b>Deep learning</b></td></tr><tr><td>A news organisation uses a system trained on a very large collection of text to generate draft articles</td><td>very large training text, and it generates content</td><td><b>Generative AI</b></td></tr></tbody></table></div><h4>One healthcare situation, five tools</h4><ol style=\"font-size:14.5px\"><li><strong>Algorithm:</strong> compute BMI from height and weight by the formula</li><li><strong>Expert system:</strong> rules to decide whether the patient is obese, using BMI but also other conditions and the fact that the BMI scale came from Western male data, so women and people of the Indian subcontinent may need different thresholds</li><li><strong>Machine learning:</strong> from age, BMI, lifestyle (smoking, drinking), medical history and genetics (did a parent have diabetes), predict the <strong>probability</strong> of developing diabetes. Lots of data, but still a structured question</li><li><strong>Deep learning:</strong> read the patient’s scans to detect abnormalities, by comparison with other obese and diabetic patients; image processing is heavy and each scan can mean many things</li><li><strong>Generative AI:</strong> write the personalised health report with dietary and treatment recommendations</li></ol><p style=\"font-size:14.5px\">Use the simplest, most economical approach that solves the problem. This course gave the foundation; the later ML, deep learning and generative AI courses build on it.</p>"
+    },
+    {
+     "t": "Live Lecture 7: PageRank’s 14 rounds and the stop rule",
+     "src": "L#33",
+     "h": "<p style=\"font-size:14.5px\">The second deck, titled on its cover page “Module 5 – Sorting Algorithms” (web search sits in the sorting module), repeats L#31’s four-page example: A → B, A → C, B → C, C → A, D → C, all starting at 0.25, new rank = 0.15 ÷ 4 + 0.85 × rank received. He went through it quickly and pointed to the full L#31 video. New on the slides is the <b>whole table of 14 rounds</b>; L#31 here showed rounds 1, 2 and 14.</p><h4>When to stop</h4><p style=\"font-size:14.5px\">In the live lecture he gave the stop rule in numbers: the ranks are “stable” when they change only slightly between rounds, about <b>0.001</b>, not when they stop changing altogether. Checking the slide’s table against that rule: after round 12 the largest change is still 0.0017 (A and B), after round 13 it is 0.0007, and after round 14 it is 0.0006. So by his rule the run could stop after round 13; the slide simply shows one more. Either way the final order is the same: <b>C, A, B, D</b>. Our recomputation matches every value on the slide to four decimals.</p><h4>Slide slips to read past</h4><ul><li>On D’s slide the figure labels D’s new rank <b>0.0325</b>, while the working on the same slide gives <b>0.0375</b> (0.15 ÷ 4 + 0.85 × 0). 0.0375 is right; the auto-transcript’s “0.075” is a mishearing</li><li>The same slide says “C is receiving no link from outside”; it means <b>D</b>. C receives three links</li></ul><h4>What he stressed in the recap</h4><ul><li><b>Searching and sorting both change shape:</b> search no longer asks “does this item exist?” but “what is relevant?”, and sorting need not order everything. With lakhs of matching pages nobody reads them all; ranking the top hundred or so, the first five result pages, is good enough for a business application</li><li><b>Update frequency:</b> he said Google recalculated about once a month until 2010 (the slide says every 3–4 weeks), limited by its own processing power; with cloud computing a new page is now picked up within two or three days, and machine-learning signals adjust the ranks incrementally</li><li><b>How the course’s pieces meet:</b> the graph is traversed (BFS, DFS), relevance is calculated for what is found, and the results are sorted</li></ul><!--viz:atb-pagerank-stop-rule--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of PageRank values for pages A, B and C over 14 rounds with the largest change per round; the change falls below 0.001 for the first time after round 13 (0.0007) and stays below after round 14 (0.0006).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">All 14 rounds, and where the 0.001 rule stops them</div><div class=\"scroller\"><table><thead><tr><th>Round</th><th>A</th><th>B</th><th>C</th><th>Largest change</th></tr></thead><tbody><tr><td>1</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.2500</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.1438</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.5688</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3188</td></tr><tr><td>2</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.5209</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.1438</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.2978</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.2710</td></tr><tr><td>3</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.2906</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.2589</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.4130</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.2303</td></tr><tr><td>4</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3885</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.1610</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.4130</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.0979</td></tr><tr><td>5</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3885</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.2026</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3714</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.0416</td></tr><tr><td>6</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3532</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.2026</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.4067</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.0353</td></tr><tr><td>7</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3832</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.1876</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3917</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.0300</td></tr><tr><td>8</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3704</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.2004</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3917</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.0128</td></tr><tr><td>9</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3704</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.1949</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3971</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.0055</td></tr><tr><td>10</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3751</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.1949</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3925</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.0047</td></tr><tr><td>11</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3711</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.1969</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3945</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.0040</td></tr><tr><td>12</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3728</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.1952</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3945</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.0017</td></tr><tr><td>13</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3728</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.1959</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3938</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--good-soft)\">0.0007</td></tr><tr><td>14</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3722</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.1959</td><td style=\"font-family:var(--mono);white-space:nowrap\">0.3944</td><td style=\"font-family:var(--mono);white-space:nowrap;background:var(--good-soft)\">0.0006</td></tr></tbody></table></div><p style=\"font-size:13.5px;color:var(--ink-2);margin-top:6px\">D stays at 0.0375 in every round (nothing links to it). Values as on the slide; the change column is worked out from them.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The swings shrink round by round; the first change under 0.001 comes after round 13, one round before the slide stops.</figcaption></figure><!--/viz:atb-pagerank-stop-rule-->"
     },
     {
      "t": "Textbook: Clustering Algorithms",
@@ -2158,6 +2179,41 @@ HUB.addCourse({
    "p": "His closing rule: do not use a sword where a pin will do. A calculator is more reliable and more computationally economical for arithmetic than an LLM, even though the LLM can also do it. Match the approach to the problem.",
    "f": "pin, not sword",
    "lec": 32
+  },
+  {
+   "id": "atb-t0193",
+   "h": "The ATB end-term is 2 hours, whatever the “3 hours” said in L#33",
+   "p": "In class he said his paper would be 60 marks and 3 hours. The official LMS announcement gives Sunday 6 December 2026, 10 AM–12 PM IST, offline, no negative marking, 70% of the grade. The announcement wins: pace yourself for 2 hours.",
+   "f": "LMS: 2 hours, not 3",
+   "lec": 33
+  },
+  {
+   "id": "atb-t0194",
+   "h": "Selection sort does not swap while it scans",
+   "p": "Finding a smaller item only moves the ‘smallest so far’ marker. The single swap of the pass happens after the whole unsorted part has been checked. Swapping on every find is bubble sort.",
+   "f": "scan first, swap once",
+   "lec": 33
+  },
+  {
+   "id": "atb-t0195",
+   "h": "Selection sort saves swaps, not comparisons",
+   "p": "On [10, 5, 8, 4, 3, 2, 7, 6] selection sort makes 7 swaps against bubble sort’s 19, but both make 28 comparisons. That is why both stay O(n²).",
+   "f": "fewer swaps, same comparisons",
+   "lec": 33
+  },
+  {
+   "id": "atb-t0196",
+   "h": "D’s round-1 rank is 0.0375, not the 0.0325 one slide figure shows",
+   "p": "Nothing links to D, so it keeps only the random-jump share 0.15 ÷ 4 = 0.0375. The working on the same slide says 0.0375; the figure label is a typo, and the slide’s ‘C is receiving no link’ means D.",
+   "f": "0.15 ÷ 4 = 0.0375",
+   "lec": 33
+  },
+  {
+   "id": "atb-t0197",
+   "h": "‘Stable’ ranks still change, by less than about 0.001",
+   "p": "PageRank stops when the changes between rounds become tiny, not when they reach zero. On his four pages the largest change first drops under 0.001 after round 13.",
+   "f": "stable = change < 0.001",
+   "lec": 33
   }
  ],
  "defs": [
@@ -3623,6 +3679,30 @@ HUB.addCourse({
    "term": "Generative AI",
    "html": "A <b>product</b> (ChatGPT, Gemini, Claude), not a technique: built on <b>self-supervised deep learning</b>, trained on something like the whole internet plus scanned books, improving itself between versions, and used to <b>generate</b> new text, images, audio, video or code.",
    "lec": 32
+  },
+  {
+   "id": "atb-d0185",
+   "unit": "sorting",
+   "topic": "End-term brief from Live Lecture 7",
+   "term": "Relative grading",
+   "html": "<b>Relative grading</b>: grades are set by where your marks stand against the rest of the class, not by fixed cut-offs. The same 80 marks can earn a different grade in a class averaging 85 than in one averaging 60. IIT Jodhpur uses it, he said in L#33.",
+   "lec": 33
+  },
+  {
+   "id": "atb-d0186",
+   "unit": "intelligence",
+   "topic": "Live Lecture 7: PageRank’s 14 rounds and the stop rule",
+   "term": "PageRank stop rule",
+   "html": "<b>PageRank stop rule</b>: keep recalculating every page’s rank from the previous round until no rank changes by more than a small amount (about <b>0.001</b> in L#33). The ranks then count as stable and are sorted.",
+   "lec": 33
+  },
+  {
+   "id": "atb-d0187",
+   "unit": "sorting",
+   "topic": "Live Lecture 7: the five sorts side by side",
+   "term": "Swap timing: bubble vs selection",
+   "html": "<b>Bubble sort</b> swaps <b>immediately</b> after a comparison finds two neighbours out of order. <b>Selection sort</b> only <b>marks</b> the smallest item while scanning and makes <b>one swap per pass</b>, after the scan.",
+   "lec": 33
   }
  ],
  "questions": [
@@ -13994,6 +14074,210 @@ HUB.addCourse({
    "w": "The word model rules out algorithms and expert systems; the data size and the clear yes/no or probability output pick machine learning over deep learning.",
    "lec": 32,
    "lv": "apply"
+  },
+  {
+   "id": "atb-q0619",
+   "topic": "Sorting",
+   "q": "In Live Lecture 7, how did he describe the questions in the ATB end-term?",
+   "c": [
+    "Descriptive questions like the exercises set in the recorded videos, plus definition-type questions from the slides",
+    "Multiple-choice questions with negative marking, in the same style as the quizzes",
+    "Only numerical traces of sorting and PageRank, with no theory",
+    "Business case studies on topics beyond the lectures"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He said the questions will be descriptive and of the same nature as the in-video exercises, with some definition questions drawn from the slides. The quiz format is multiple choice; the official end-term announcement says no negative marking, and he said nothing will be asked that was not taught.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0620",
+   "topic": "Sorting",
+   "q": "He said his end-term paper would be 60 marks and 3 hours. What does the official LMS announcement give for the ATB end-term on Sunday 6 December 2026?",
+   "c": [
+    "10 AM to 1 PM IST, 3 hours, as he said",
+    "10 AM to 12 PM IST, 2 hours, offline, no negative marking",
+    "2 PM to 5 PM IST, 3 hours, online",
+    "90 minutes, online, with negative marking"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The official announcement beats a remark in class: 10 AM to 12 PM IST is 2 hours, offline, with no negative marking, worth 70% of the grade. The 3 hours he mentioned is the tempting choice, but pacing should be planned for the announced 2 hours.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0621",
+   "topic": "Sorting",
+   "q": "Run each sort the way the lectures traced it on [10, 5, 8, 4, 3, 2, 7, 6] (quick sort with the last item as pivot) and count comparisons. Which order, fewest to most, is right?",
+   "c": [
+    "Quick, merge, insertion, then selection and bubble",
+    "Insertion, merge, quick, then bubble and selection",
+    "Merge, quick, selection, insertion, bubble",
+    "Merge, quick, insertion, then bubble and selection (tied)"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Merge sort needs 15 comparisons, quick sort 16, insertion sort 22, and bubble and selection 28 each (n(n − 1) ÷ 2 for eight items). Selection sort saves swaps, only 7 against bubble’s 19, but not comparisons, which is why ranking it ahead of insertion is wrong.",
+   "lec": 33,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0622",
+   "topic": "Sorting",
+   "q": "Selection sort, pass 1 on [10, 5, 8, 4, 3, 2]. How often does the “smallest so far” marker move, and how many swaps does the pass make?",
+   "c": [
+    "It moves 4 times and the pass makes 4 swaps, one for each smaller item found",
+    "It never moves; the pass makes 5 swaps",
+    "It moves 4 times (to 5, 4, 3, then 2); one swap, made after the scan ends",
+    "It moves 5 times; one swap"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Starting from 10, the candidate changes to 5, 4, 3 and finally 2: four moves. Only when the whole unsorted part has been checked is 2 swapped with 10. Swapping each time a smaller item turns up is bubble sort’s habit, the confusion the student’s question in class was about.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0623",
+   "topic": "Sorting",
+   "q": "Merge sort on seven items, [10, 5, 8, 4, 3, 2, 7], splitting so that the first part gets the extra item as he showed. Which parts exist just before the single-item level?",
+   "c": [
+    "[10, 5] [8, 4] [3, 2] [7]",
+    "[10, 5, 8] [4, 3] [2, 7]",
+    "[10, 5] [8, 4] [3] [2, 7]",
+    "[10] [5, 8] [4, 3] [2, 7]"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The first split gives [10, 5, 8, 4] and [3, 2, 7]; the next gives [10, 5], [8, 4], [3, 2] and [7]. A lone 7 simply waits for the next merge. Putting the extra item in the second half at the second split would give [3] and [2, 7], which breaks the rule he used.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0624",
+   "topic": "Sorting",
+   "q": "Quick sort with the last item as pivot, placing items as he did (smaller ones from the start of the list in the order met, larger ones after the pivot in the order met). What is [7, 12, 3, 9, 1, 5] after the first partition?",
+   "c": [
+    "[1, 3, 5, 7, 9, 12]",
+    "[3, 1, 5, 7, 12, 9]",
+    "[5, 3, 1, 7, 12, 9]",
+    "[3, 1, 5, 9, 12, 7]"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The pivot is 5. Met in order, 3 and 1 are smaller and go first; 7, 12 and 9 are larger and follow the pivot in that order. Each item is compared only with the pivot, so neither side is sorted yet; the fully sorted list is the tempting wrong answer, and it takes two more partitions to get there.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0625",
+   "topic": "Complexity",
+   "q": "He showed O(n²) growth with 3 items becoming 4 (9 operations becoming 16). A list grows from 4 to 8 items. How does the work grow for an O(n²) sort and for an O(n log n) sort (log base 2)?",
+   "c": [
+    "Both double, because the list doubled",
+    "O(n²) grows 8 times; O(n log n) 3 times",
+    "O(n²) grows 4 times; O(n log n) 2 times",
+    "O(n²) grows 4 times (16 to 64); O(n log n) 3 times (8 to 24)"
+   ],
+   "a": [
+    3
+   ],
+   "w": "4² = 16 and 8² = 64, four times as much. 4 × log₂4 = 8 and 8 × log₂8 = 24, three times as much. Doubling the list doubles the work only for O(n); the extra factor for n log n comes from the log term growing from 2 to 3.",
+   "lec": 33,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0626",
+   "topic": "Web search & AI",
+   "q": "His stop rule for PageRank: stop once no rank changes by 0.001 or more between rounds. The slide’s four-page table gives, for rounds 11 to 14: A 0.3711, 0.3728, 0.3728, 0.3722; B 0.1969, 0.1952, 0.1959, 0.1959; C 0.3945, 0.3945, 0.3938, 0.3944 (D never changes). After which round could the calculation have stopped?",
+   "c": [
+    "Round 12",
+    "Round 13",
+    "Round 14, where the slide stops",
+    "Not until every rank stops changing"
+   ],
+   "a": [
+    1
+   ],
+   "w": "After round 12 the largest change is still 0.0017 (A and B both moved that much). After round 13 the largest change is 0.0007, under 0.001, so the run can stop there; the slide shows one round more. Stable means the changes are tiny, not zero, so waiting for no change at all is the wrong reading.",
+   "lec": 33,
+   "lv": "analyse"
+  },
+  {
+   "id": "atb-q0627",
+   "topic": "Web search & AI",
+   "q": "One figure on the PageRank slides labels page D’s round-1 rank as 0.0325. In the four-page example (n = 4, nothing links to D), what is D’s rank after round 1?",
+   "c": [
+    "0.0325, as labelled",
+    "0",
+    "0.0375",
+    "0.25, unchanged"
+   ],
+   "a": [
+    2
+   ],
+   "w": "D receives nothing, so its rank is only the random-jump share: 0.15 ÷ 4 + 0.85 × 0 = 0.0375, which is also what the working on that slide says. Zero is tempting because no link reaches D, but the 15% random jump can land on any page.",
+   "lec": 33,
+   "lv": "apply"
+  },
+  {
+   "id": "atb-q0628",
+   "topic": "Web search & AI",
+   "q": "What did he say in Live Lecture 7 about the recorded lecture “From Algorithms to Intelligence” (L#32) and the end-term?",
+   "c": [
+    "It is a post-credit scene for context; it will not be asked in the ATB end-term, and machine learning gets its own courses later",
+    "It is the most important lecture for the end-term",
+    "It will be asked only as definitions",
+    "It replaces the PageRank lecture in the end-term"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He repeated that the machine-learning and deep-learning video is like a post-credit scene: watch it to see how classical algorithms differ from ML and DL, but the ATB end-term will not ask from it, because dedicated courses come later. PageRank, by contrast, stays in the end-term at the level of the basic idea.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0629",
+   "topic": "Sorting",
+   "q": "A student asked whether end-term questions must be answered in sequence. What did he say?",
+   "c": [
+    "Yes, strictly in the printed order",
+    "Yes, or marks are deducted for each question out of order",
+    "Only the first question must come first",
+    "Any order is fine, but answer a question’s sub-parts together"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He said he does not mind the order of questions, so start with the one you know best, but when a question has parts a, b, c and d he expects those parts answered together.",
+   "lec": 33,
+   "lv": "recall"
+  },
+  {
+   "id": "atb-q0630",
+   "topic": "Sorting",
+   "q": "A college library keeps its shelves in call-number order, and about 20 new books arrive every week. Which sort did he say matches the way such a library works?",
+   "c": [
+    "Merge sort, because it is the fastest on large lists",
+    "Selection sort, because it makes the fewest swaps",
+    "Insertion sort: each new book goes straight into its place in the already sorted shelf",
+    "Bubble sort, because neighbouring books are compared"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He likened insertion sort to a physical library: books are already in order and each new arrival is placed in its right position, not dumped and sorted later. Merge sort is better for sorting a large list from scratch, but here only a few new items join a sorted list.",
+   "lec": 33,
+   "lv": "apply"
   }
  ],
  "briefs": {
@@ -14078,6 +14362,7 @@ HUB.addCourse({
   "lec-30",
   "cdsa-ch09",
   "lec-31",
-  "lec-32"
+  "lec-32",
+  "lec-33"
  ]
 });

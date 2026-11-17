@@ -211,6 +211,30 @@ HUB.addCourse({
    "Week 12 — Product Strategy and Co-Branding",
    "Product–value–connect triad, hits and misses, co-branding types",
    "rec"
+  ],
+  [
+   36,
+   "Week 13 — Pricing Strategy: Frameworks and Steps",
+   "Price vs pricing, 3Cs, psychology, six steps",
+   "rec"
+  ],
+  [
+   37,
+   "Week 13 — Common Pricing Strategies",
+   "Loss leader, segment, product-form, freemium, yield pricing",
+   "rec"
+  ],
+  [
+   38,
+   "Week 13 — Marketing Communications: Attention and the Three Cs",
+   "Attention, mental availability, three Cs, System 1",
+   "rec"
+  ],
+  [
+   40,
+   "Week 13 — Live Lecture 13",
+   "Three Cs decoded; end-term format and tips",
+   "live"
   ]
  ],
  "units": [
@@ -654,6 +678,92 @@ HUB.addCourse({
      "h": "<p>A product is anything offered to a market that might satisfy a want or need: goods, services, experiences, events, persons, places, organisations, ideas, or mixtures of these. The book plans products on three levels (core customer value, actual product, augmented product), where the lecture uses five and classify products by how consumers buy them (convenience, shopping, specialty, unsought) or by industrial use. The chapter covers decisions on individual products (quality, features, design, branding, packaging, labels, support services), on product lines (length, filling, stretching) and on the product mix (width, length, depth, consistency). It then treats services, with their four characteristics, the service profit chain, and internal and interactive marketing. Finally, it covers branding: brand equity, positioning brands on attributes, benefits or values, name selection, sponsorship options, and the four brand development strategies. For a manager, the brand and the customer relationships behind it often outlast every physical asset.</p><!--viz:pom-k-levels-three-vs-five--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two columns matched row by row. Textbook core customer value matches the lecture's core benefit; the textbook's actual product matches the lecture's basic plus expected product; both have an augmented product, defined as services around the product in the book and as going beyond expectations in the lecture; the lecture's potential product has no textbook match.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The textbook's three product levels against the lecture's five</div><div style=\"display:grid;grid-template-columns:1fr auto 1fr;gap:4px 6px;font-size:14px;min-width:0\"><div style=\"padding:4px 8px;color:var(--ink-3);font-size:12.5px;text-align:center\">Textbook: 3 levels</div><div></div><div style=\"padding:4px 8px;color:var(--ink-3);font-size:12.5px;text-align:center\">Lecture 29: 5 levels · use these</div><div style=\"padding:8px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Core customer value</b><br><span style=\"color:var(--ink-2);font-size:13px\">what the buyer is really buying</span></div><div style=\"align-self:center;color:var(--ink-3);text-align:center\">≈</div><div style=\"padding:8px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Core benefit</b><br><span style=\"color:var(--ink-2);font-size:13px\">the main functionality</span></div><div style=\"padding:8px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Actual product</b><br><span style=\"color:var(--ink-2);font-size:13px\">features, design, quality, brand name, packaging</span></div><div style=\"align-self:center;color:var(--ink-3);text-align:center\">≈</div><div style=\"padding:8px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Basic</b> + <b>expected product</b><br><span style=\"color:var(--ink-2);font-size:13px\">the tangible form, and the standard buyers count on</span></div><div style=\"padding:8px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Augmented product</b><br><span style=\"color:var(--ink-2);font-size:13px\">services around it: warranty, delivery, installation</span></div><div style=\"align-self:center;color:var(--ink-3);text-align:center\">≈</div><div style=\"padding:8px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Augmented product</b><br><span style=\"color:var(--ink-2);font-size:13px\">whatever goes beyond expectations</span></div><div style=\"padding:8px 10px;border:1px dashed var(--rule-2);border-radius:4px;color:var(--ink-3)\">no match</div><div></div><div style=\"padding:8px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Potential product</b><br><span style=\"color:var(--ink-2);font-size:13px\">the futuristic version</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Answer with the lecture's five: the book's actual product spans two of them, and the book has no potential level.</figcaption></figure><!--/viz:pom-k-levels-three-vs-five--><!--viz:pom-k-consumer-product-classes--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two questions. First: does the buyer know about it and think of buying it? If not, it is an unsought product, such as term life insurance. If yes, second: how much effort and comparison goes into buying it? Little, bought often: convenience (biscuits, toothpaste). Compares price, quality and style: shopping (a refrigerator, a sofa). Already set on one brand and makes a special effort: specialty (a luxury watch).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Sorting a consumer product into its class</div><div style=\"font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2)\"><b>1.</b> Does the buyer know about it and think of buying it?</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:4px 0 4px 14px\"><span style=\"color:var(--ink-3);font-size:13px\">no →</span><div style=\"padding:7px 11px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>Unsought</b> <span style=\"color:var(--ink-2);font-size:13px\">· term life insurance · needs heavy promotion and personal selling</span></div></div><div style=\"margin:0 0 4px 14px;color:var(--ink-3);font-size:13px\">yes ↓</div><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2)\"><b>2.</b> How much effort and comparison goes into buying it?</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:4px 0 4px 14px\"><span style=\"color:var(--ink-3);font-size:13px\">little, bought often →</span><div style=\"padding:8px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Convenience</b> <span style=\"color:var(--ink-2);font-size:13px\">· biscuits, toothpaste</span></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:4px 0 4px 14px\"><span style=\"color:var(--ink-3);font-size:13px\">compares price, quality, style →</span><div style=\"padding:8px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Shopping</b> <span style=\"color:var(--ink-2);font-size:13px\">· a refrigerator, a sofa</span></div></div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:4px 0 4px 14px\"><span style=\"color:var(--ink-3);font-size:13px\">already set on one brand, makes a special effort →</span><div style=\"padding:8px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Specialty</b> <span style=\"color:var(--ink-2);font-size:13px\">· one maker's handmade pen, a luxury watch</span></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Shopping and specialty both take effort; only the shopping buyer is comparing brands.</figcaption></figure><!--/viz:pom-k-consumer-product-classes--><!--viz:pom-k-service-characteristics--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table of the four service characteristics. Intangibility: can't be tried before buying, so firms give tangible quality signals. Inseparability: made and used at once, so firms train the people who deliver it. Variability: quality depends on who serves and when, so firms hire, train and standardise. Perishability: unused capacity can't be stored, so firms manage demand, for example with off-peak fares.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Four service characteristics and what firms do about them</div><div class=\"scroller\"><table><thead><tr><th>Characteristic</th><th>The problem</th><th>A typical response</th></tr></thead><tbody><tr><td><b>Intangibility</b></td><td>Can’t be seen, tried or tested before buying</td><td>Give tangible quality signals: a calm, clean hospital reception, uniformed staff, published outcomes</td></tr><tr><td><b>Inseparability</b></td><td>Made and used at the same moment; the provider is part of it</td><td>Train the people who deliver it and manage the customer’s part in the encounter</td></tr><tr><td><b>Variability</b></td><td>Quality shifts with who serves, and when, where and how</td><td>Careful hiring, training and standard processes, as a salon chain needs</td></tr><tr><td><b>Perishability</b></td><td>Unused capacity can’t be stored and sold later</td><td style=\"background:var(--blue-soft)\">Manage demand and supply: off-peak fares for the 6 a.m. flight’s empty seats</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Each characteristic names a problem; the marketing task is the column on the right.</figcaption></figure><!--/viz:pom-k-service-characteristics--><!--viz:pom-k-brand-development--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two-by-two grid of brand name (existing or new) against product category (existing or new). Existing name, existing category: line extension (a new Maggi flavour). Existing name, new category: brand extension (Dettol handwash). New name, existing category: multibrands (HUL's Lux and Lifebuoy). New name, new category: new brand (Titan's Tanishq).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Four brand development strategies</div><div style=\"display:grid;grid-template-columns:auto 1fr 1fr;gap:4px;font-size:14px;min-width:0\"><div></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center\">Existing category</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center\">New category</div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;writing-mode:vertical-rl;transform:rotate(180deg)\">Existing brand name</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--blue-soft)\"><b>Line extension</b><br><span style=\"color:var(--ink-2);font-size:13px\">a new masala flavour of Maggi noodles</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--blue-soft)\"><b>Brand extension</b><br><span style=\"color:var(--ink-2);font-size:13px\">Dettol from antiseptic liquid into handwash and soap</span></div><div style=\"padding:6px 8px;color:var(--ink-3);font-size:12.5px;text-align:center;writing-mode:vertical-rl;transform:rotate(180deg)\">New brand name</div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Multibrands</b><br><span style=\"color:var(--ink-2);font-size:13px\">several of one firm’s brands in one category, like HUL’s Lux and Lifebuoy soaps</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>New brand</b><br><span style=\"color:var(--ink-2);font-size:13px\">Titan entering jewellery as Tanishq</span></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Read the row for the name and the column for the category; the top row is where line and brand extensions get mixed up.</figcaption></figure><!--/viz:pom-k-brand-development--><p><strong>What counts as a product</strong> — A product is anything offered to a market that might satisfy a want or need, whether for attention, acquisition, use or consumption. That includes physical goods, services, events, persons, places, organisations and ideas. Offers sit on a continuum from pure tangible goods (salt) to pure services (a doctor's exam), and many firms now go further by staging customer experiences.</p><p><strong>Three levels of product</strong> — Core customer value answers what the buyer is really buying: the problem-solving benefit. The actual product turns that into something concrete, with features, design, quality level, brand name and packaging. The augmented product adds services and benefits around it, such as warranty, delivery and credit, installation, after-sale service and product support. Lecture 29's customer value hierarchy uses five levels instead; the mapping is in the book-vs-lecture notes below.<br><em>e.g.</em> Wall paint: core = a home that feels new; actual = the branded tin, shade range and finish; augmented = free colour consultation and a painting service with a warranty.</p><p><strong>Consumer product classes</strong> — Convenience products are bought often, quickly and with little comparison. Shopping products are compared carefully on quality, price and style. Specialty products have unique features or a brand identity for which buyers make a special effort without much comparison. Unsought products are unknown, or known but not normally considered. Each class implies a different price, distribution and promotion approach.<br><em>e.g.</em> Biscuits (convenience), a refrigerator (shopping), a luxury watch (specialty), term life insurance (unsought).</p><p><strong>Industrial products</strong> — Whether a product is industrial depends on its purpose: further processing or use in running a business. The three groups are materials and parts (raw materials, manufactured materials and components), capital items (installations and accessory equipment), and supplies and services. Supplies are the convenience goods of business buying.</p><p><strong>Product quality: level and consistency</strong> — Quality is the set of characteristics that bear on a product's ability to satisfy stated or implied needs. Performance quality is how well the product does its job, and firms choose a level that fits the target and the competition. Conformance quality is freedom from defects and consistency in delivering the promised level. A budget product can match a luxury one on conformance quality.</p><p><strong>Features, style and design</strong> — Features differentiate, and the right ones are those customers value highly relative to their cost. Style is appearance only; design goes deeper and improves both how the product works and how it looks. Good design starts with observing how customers use the product.</p><p><strong>Packaging, labels and support services</strong> — Packaging once just protected the product; now it attracts buyers, communicates positioning and can become part of brand identity. Labels identify, describe and promote the product, and they must meet legal requirements. Support services such as maintenance and helplines augment the product and build lasting relationships.</p><p><strong>Product line decisions</strong> — A product line is a group of closely related products. Line length is right when adding or dropping items would not raise profit. Line filling adds items within the current range, which risks cannibalisation and confusion. Line stretching extends beyond the range: downward to plug a gap or reach growth segments, upward for prestige and margin, or both ways.</p><p><strong>Product mix dimensions</strong> — The product mix (portfolio) is every line and item a seller offers. Width is the number of lines, length is the total number of items across lines, depth is the number of versions of each product, and consistency is how closely the lines are related in use, production or distribution. A firm can grow by widening, lengthening or deepening the mix, or it can prune weak lines. The lecture counts the mix differently (L#30–31) and drops consistency; see the book-vs-lecture notes below.<br><span style=\"font-family:var(--mono)\">Book: width = number of lines · length = items carried across the lines · depth = versions of each product</span></p><p><strong>Four characteristics of services</strong> — Intangibility: services can't be seen or tried before purchase, so firms supply tangible quality signals. Inseparability: production and consumption happen together and the provider (and often the customer) is part of the service. Variability: quality depends on who delivers it and when, where and how. Perishability: unused capacity cannot be stored, so firms manage demand and supply.</p><p><strong>Service profit chain and the three types of services marketing</strong> — Internal service quality leads to satisfied, productive employees, which leads to greater service value, then satisfied and loyal customers, then profit and growth. Services therefore need internal marketing (orienting and motivating staff, done first), interactive marketing (skill in the buyer–seller encounter) and external marketing (the usual four Ps).</p><p><strong>Managing service differentiation, quality and productivity</strong> — Services escape price competition by differentiating the offer, the delivery (people, physical environment, process) or the image. Service quality is hard to define, so customer retention is the best measure, and good service recovery can create more loyalty than flawless service. Productivity gains must not take the service out of the service.</p><p><strong>Brand equity and brand value</strong> — Brand equity is the differential effect that brand-name knowledge has on how customers react to the product and its marketing. It is positive if people respond better than to an unbranded version and negative if worse. Brand value is the brand's total financial worth. Behind both sits customer equity, the value of the customer relationships the brand creates.</p><p><strong>Brand positioning and brand names</strong> — Brands can be positioned on attributes (weakest, easily copied), benefits, or beliefs and values (strongest, most emotional). A good brand name suggests benefits, is easy to say and remember, is distinctive, extendable, translatable and legally protectable. A name that becomes the generic word for its category can lose its legal protection.</p><p><strong>Brand sponsorship and development</strong> — Sponsorship options are a national (manufacturer's) brand, a store (private) brand, a licensed name or character, or co-branding of two firms' established brands. Development options come from a two-by-two grid of existing or new brand name against existing or new category: line extension, brand extension, multibrands, and new brands.<br><em>e.g.</em> Existing name + existing category = line extension; existing name + new category = brand extension; new name + existing category = multibrand; new name + new category = new brand.</p><div class=\"card\"><strong>Case: GoPro</strong> <em>(Chapter opener: GoPro — Be a HEro)</em><p>GoPro's small, rugged, wearable cameras are only part of what it sells. Customers want to capture, edit, share and be recognised for their action moments, so GoPro added editing software, an app, a content channel and ads made from user videos. The company treats itself as an enabler of shared experiences, not just a camera maker.</p><p><em>Lesson:</em> The core benefit versus the tangible product, and building the higher levels around the customer's whole journey.</p><p><em>Think:</em> Lay out GoPro's five product levels as Lecture 29 would, from core benefit to potential product. Which level is hardest for a rival to copy?</p></div><div class=\"card\"><strong>Case: HSBC internal marketing</strong> <em>(Real Marketing 8.2: HSBC — Taking Care of Those Who Take Care of the Customer)</em><p>HSBC treats employee satisfaction as the base of customer satisfaction. It offers self-directed learning through its own business school, career development planned with line managers, international assignments and flexible, customisable benefits. The aim is motivated staff who deliver consistent service in an intangible, competitive business.</p><p><em>Lesson:</em> Internal marketing as the first link in the service profit chain.</p><p><em>Think:</em> Trace HSBC's practices through each link of the service profit chain to customer loyalty and profit.</p></div><div class=\"card\"><strong>Case: Airbnb</strong> <em>(Company Case: Airbnb — Making Hospitality Authentic)</em><p>Where hotel chains standardise rooms, Airbnb connects travellers with hosts who rent out their own spaces and promises authentic, local experiences. Ratings, verification, host insurance and superhost badges reduce the risk of staying with strangers. Hosts are treated as primary customers, and the brand is built around the idea of belonging anywhere.</p><p><em>Lesson:</em> Managing service intangibility and variability; differentiating offer, delivery and image.</p><p><em>Think:</em> Take each of the four service characteristics and name one Airbnb practice that deals with it.</p></div><details><summary>Worked problem: Counting a product mix the lecture's way</summary><p>A Jaipur home-goods firm has three product lines. Bedding: bedsheets in 3 colours and pillow covers in 2 sizes. Kitchen: one pressure cooker in 3 sizes. Bath: towels in 4 colours. Count its product mix as Lectures 30–31 do, then note what the textbook's definitions would give.</p><ol><li>Width of the company = number of product lines = 3. Both methods agree here.</li><li>Width inside the bedding line (lecture only) = its categories: bedsheets and pillow covers = 2.</li><li>Depth = variants of each product: bedsheets 3, pillow covers 2, cooker 3, towels 4. The bedding line's depth is 3 + 2 = 5.</li><li>Length = every variant in the company = 5 + 3 + 4 = 12. Calling this company-wide 12 the ‘depth’ is the slip Lecture 31 corrected.</li><li>Textbook view: length counts the items carried in the lines (bedsheets, pillow covers, cooker, towels = 4), depth stays per product (towels 4), and it adds consistency: three home-goods lines sold through the same shops are fairly consistent.</li></ol><p><strong>Answer:</strong> For the quiz: width 3, bedding line width 2, line depths 5, 3 and 4, length 12. The textbook's item count of 4 is a different measure; use it only when a question names the book.</p></details><div class=\"def\"><b>Book vs lecture — Levels of product.</b> Book: Three levels: core customer value, actual product, augmented product. Lecture: Five levels, the customer value hierarchy (L#29): core benefit → basic product → expected product → augmented product → potential product, built from the base up (hotel, McDonald's, Fossil, Netflix). <b>The lecture wins: answer with five unless a question names the book. Mapping: core customer value ≈ core benefit; actual product ≈ basic + expected; augmented shares the name; potential has no match in the book.</b></div><div class=\"def\"><b>Book vs lecture — What ‘augmented’ means.</b> Book: The augmented product is the services and benefits added around the actual product: warranty, delivery and credit, installation, after-sale service and support. Lecture: The augmented product is whatever exceeds customers' expectations (the Happy Meal toy, a seamless hotel check-in, a touchscreen watch), and what delights today can become expected later (L#29). <b>The lecture wins: classify by expectation, not by whether it is a service. A warranty every rival offers is expected product in the lecture's terms, though the book calls it augmented.</b></div><div class=\"def\"><b>Book vs lecture — Measuring the product mix.</b> Book: Four dimensions: width (number of lines), length (total items carried within the lines, i.e. the brands and products), depth (versions of each product) and consistency (how closely the lines are related). Lecture: Three dimensions (L#30–31): width = number of lines, and it can also be counted inside a line as its categories; depth = variants of each product, summed across a line's products as that line's depth (company X's personal care: 1 + 1 + 4 = 6); length = every variant in the whole company (6 + 1 + 4 = 11). The company-wide total is length, not depth. <b>The lecture wins: count width, depth and length the lecture's way in the quiz. Consistency is a textbook-only fourth dimension; recognise it when a question names the book, but don't add it to the lecture's list.</b></div><div class=\"def\"><b>Book vs lecture — What a product is.</b> Book: Anything offered to a market for attention, acquisition, use or consumption that might satisfy a want or need. Lecture: An offering or attribute that moves a consumer from an existing state to a desired state, with value a function of the experience it gives (L#29). <b>Use the lecture's wording when asked how the course defines a product. The two don't clash: both start from the buyer's need or problem.</b></div><div class=\"def\"><b>Book vs lecture — Product versus brand.</b> Book: Branding is one of the decisions about an individual product, and the brand name sits inside the actual product. Lecture: A sharp split (L#29): the product is what you consume or use in raw form (the chocolate bar, the noodles); the brand is the name attached (KitKat, Maggi). Strong products create brands; weak products need branding. <b>Asked whether KitKat or Maggi is a product or a brand, answer brand, as the lecture does. The book's placing of the brand name inside the actual product is a product-levels detail, not a contradiction.</b></div><div class=\"def\"><b>Book vs lecture — Dropping products.</b> Book: Firms periodically streamline the mix, paring out marginal lines and brands to refocus (P&amp;G selling off dozens of brands). Lecture: Product pruning (L#30–31): without it, net revenue rises, plateaus and declines as old stock's costs pile up; Apple drops old iPhones so they don't cannibalise new ones. <b>Same idea under another name. Use the lecture's term, product pruning, and its growth–plateau–decline graph.</b></div><div class=\"def\"><b>Book vs lecture — What can be marketed.</b> Book: Products broadly include goods, services, experiences, events, persons, places, organisations and ideas. Lecture: Ten entities (L#3): goods, services, experiences, financial services, persons, places, properties, organisations, information, ideas. <b>Use the lecture's ten for the quiz. Properties, information and financial services appear only in the lecture's list; events appear only in the book's.</b></div><div class=\"def\"><b>Book vs lecture — Vocabulary of benefits.</b> Book: Core customer value is the problem-solving benefit, which can be emotional (lipstick sells ‘hope’). Lecture: Customer perceived value (L#5) splits benefits into psychological (the core functional advantage), functional, economic and extended psychological (status); L#29 tied a product's value back to this. <b>Keep the two frameworks apart. For product-level questions, the core benefit is what the buyer is really buying. For perceived-value questions, use the lecture's four benefit labels.</b></div>"
     }
    ]
+  },
+  {
+   "id": "pricing",
+   "title": "Pricing &amp; pricing strategy",
+   "tag": "Lectures 36–37",
+   "lede": "The price P: how a price is set from costs, competitors and customer value, the psychology that shapes how buyers judge it, and the common pricing strategies firms use.",
+   "topics": [
+    {
+     "t": "Price, pricing and pricing strategy: the 3C framework",
+     "src": "L#36",
+     "h": "<p>He opened the module on pricing (the second-last module of the course) by separating three words that students tend to use as one.</p><div class=\"def\"><b>Price</b>: the amount a customer pays for a product.<br><b>Pricing</b>: the process of deciding that amount.<br><b>Pricing strategy</b>: the overall approach a business uses to set and adjust prices to achieve its objectives.</div><div class=\"scroller\"><table><thead><tr><th>Term</th><th>L#36 Netflix example</th></tr></thead><tbody><tr><td><strong>Price</strong></td><td>The monthly plan is 99.</td></tr><tr><td><strong>Pricing</strong></td><td>How 99 was reached: content about 50, platform 15, marketing 15 (so 80), cess about 9 (89), overheads 10 (99).</td></tr><tr><td><strong>Pricing strategy</strong></td><td>What 99 achieves: reaching tier-3 and tier-4 towns and lower-income viewers, adding breadth and depth to the market.</td></tr></tbody></table></div><h4>The 3C framework</h4><p>There is no golden rule for a great price, he said, because price depends on the market, the competitors and consumer perception, and all three keep moving. The framework gives a space to work in:</p><ul><li><strong>Cost to the company:</strong> making, marketing, people and overheads. If a product costs ₹10 to make, you price above ₹10, and profit comes after the other costs are added.</li><li><strong>Competitors’ price:</strong> rivals selling much the same thing set the range. Pepsi, Coca-Cola and Thums Up sit at the same price; price one far above the others and most buyers move to the cheaper cola.</li><li><strong>Customer value:</strong> what the customer feels they get for the price. This is the most important circle today.</li></ul><p>The ideal price sits where all three overlap. Customer value matters most because it has <b>no upper limit</b>: it depends entirely on the consumer and on what you promise. His examples: a ₹1,500 whitening toothpaste beside a ₹50 one (people try the dear one hoping the promise comes true), and watches by Longines (₹10 lakh and up) and Greubel Forsey (limited editions from about ₹2 crore) that still only tell the time.</p><!--viz:pom-l36-pricing-3c--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three overlapping circles. Cost to the company sets the floor; competitors' price sets the range; customer value, drawn largest, has no upper limit. The ideal price sits in the area where all three overlap.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The 3C pricing framework</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 326\" role=\"img\" aria-label=\"Three overlapping circles: cost to the company, competitors' price and customer value, the largest. The ideal price sits where all three overlap.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><circle cx=\"220\" cy=\"195\" r=\"80\" style=\"fill:var(--blue-soft);stroke:var(--blue);stroke-width:2\"/><circle cx=\"185\" cy=\"130\" r=\"72\" style=\"fill:none;stroke:var(--ink-2);stroke-width:1.5\"/><circle cx=\"255\" cy=\"130\" r=\"72\" style=\"fill:none;stroke:var(--clay);stroke-width:1.5\"/><text x=\"110\" y=\"24\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Cost to company</text><text x=\"110\" y=\"42\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">sets the floor</text><text x=\"330\" y=\"24\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Competitors’ price</text><text x=\"330\" y=\"42\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">sets the range</text><text x=\"220\" y=\"148\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">Ideal</text><text x=\"220\" y=\"163\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:13px;font-weight:700\">price</text><text x=\"220\" y=\"298\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">Customer value</text><text x=\"220\" y=\"316\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">the biggest circle: no upper limit</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Cost and competitors bound the price; customer value is the circle that can keep growing.</figcaption></figure><!--/viz:pom-l36-pricing-3c-->"
+    },
+    {
+     "t": "Pricing psychology: how firms build customer value",
+     "src": "L#36",
+     "h": "<p>Cost and competitors set limits, but the circle firms work hardest on is customer value. He listed the phenomena firms use to enlarge it.</p><div class=\"scroller\"><table><thead><tr><th>Phenomenon</th><th>What it does</th><th>L#36 example</th></tr></thead><tbody><tr><td><strong>Reference price</strong></td><td>Buyers judge a price against what they expected to pay: a rival’s price or an earlier advertised price</td><td>A struck-out higher price beside the sale price. <b>Lifebuoy</b> (₹17) against <b>Dettol</b> (₹38) for the same germ protection: Lifebuoy cannot beat Dettol’s brand equity, so it gets compared on price, where it wins (“two for the price of one”)</td></tr><tr><td><strong>Price–quality inference</strong></td><td>Buyers assume a higher price means better quality</td><td><b>Bose</b> at ₹50,000 against Amazon’s in-house <b>Zook</b> at ₹5,000 with the same specs: students pick Zook to save money, but most earning professionals still pick Bose</td></tr><tr><td><strong>Price endings</strong></td><td>We read left to right, so ₹99 registers as much less than ₹100</td><td>Sale prices of 999, 499, 199. <b>Pepperfry</b> priced a bed at ₹49,199, not ₹49,999: buyers see through ..999, and an odd ending looks calculated and real, though ₹801 off a ₹50,000 bed is no real saving. <b>Grofers</b> (now Blinkit) priced items at ₹44, ₹59, ₹19, close to the street vendor or sabzi mandi</td></tr><tr><td><strong>Pricing cues</strong></td><td>Offer wording that makes the deal look bigger than it is</td><td>Pepperfry’s “up to 60% off plus 40% cashback” feels like 100% off; the small print caps both. He had about ₹35,000 in his Pepperfry wallet but could use only ₹1,200 of it on a ₹40,000 chest of drawers</td></tr><tr><td><strong>Framing effect</strong></td><td>Presenting the same prices differently</td><td>Sony 43-inch at ₹70,000 and 50-inch at ₹79,990, reframed as “the 50-inch for just ₹9,990 more”. Nothing changed but the frame</td></tr><tr><td><strong>Decoy effect</strong></td><td>A third, less attractive option changes how buyers see the first two</td><td>Starbucks small ₹220, large ₹370 (a ₹150 gap that puts people off). Add a medium at ₹330 and the large is “only ₹40 more”. Seen in subscriptions: Netflix, ChatGPT, Microsoft Office, Amazon Prime</td></tr></tbody></table></div><p>He was frank that pricing cues can work against the customer: the first impression maximises the customer-value bucket, and the asterisks claw it back after the sale.</p>"
+    },
+    {
+     "t": "Pricing objectives and the six steps to set a price",
+     "src": "L#36",
+     "h": "<p>The books give a sequence of steps; in practice you may change the order, or leave a step out when the product is urgent or the market moves fast. Taken together they turn a price into a pricing strategy.</p><h4>Step 1 · Select the pricing objective</h4><div class=\"scroller\"><table><thead><tr><th>Objective</th><th>Idea</th><th>L#36 example</th></tr></thead><tbody><tr><td><strong>Survival</strong></td><td>Cover the costs incurred and stay in the market</td><td><b>Netflix</b> in India: in his telling it entered at a high monthly price and cut it sharply to survive and win acceptance, then scaled</td></tr><tr><td><strong>Maximum current profit</strong></td><td>Make the most profit now in every segment served</td><td><b>Samsung</b>: products at every price tier, premium for high-income homes and basic for lower-income ones, profit from each</td></tr><tr><td><strong>Maximum market share</strong></td><td>Take the biggest share, accepting losses (“bleeding red”) to gain a near-monopoly, then raise prices</td><td><b>Jio</b>: free data, then prices far below rivals</td></tr><tr><td><strong>Maximum market skimming</strong></td><td>Launch high for those who can pay, then cut the price in steps to reach each next layer</td><td><b>Sony</b> Bravia (₹4 lakh → ₹2.5 lakh → ₹1 lakh) and <b>Apple</b> (₹1.5 lakh → ₹1 lakh → ₹75,000), the same product over 5–7 years. Like skimming the malai off boiled milk again and again</td></tr><tr><td><strong>Product-quality leadership</strong></td><td>Be seen as the best product in the category; may borrow from the other objectives</td><td>(no single example given)</td></tr></tbody></table></div><h4>Step 2 · Determine demand</h4><p>Is demand <b>elastic</b> (a small price change moves quantity a lot) or <b>inelastic</b> (quantity barely moves)? With elastic demand be careful with any change; with inelastic demand you can raise the price. <b>Fun Flips</b> went from ₹4 at launch to about ₹20 gradually, and buyers stayed. A jump from ₹4 to ₹20 in two years, he said, would have behaved elastically and sent buyers to rivals. Customers are less price-sensitive for low-cost items, items with no substitute, and habitual purchases.</p><h4>Step 3 · Estimate costs</h4><p>Fixed, variable and total cost (the detail belongs to the accounting and finance courses). The cost sets the level the price must clear.</p><h4>Step 4 · Analyse competitors’ costs, prices and offers</h4><p>With similar attributes and quality in the same category you cannot price far above rivals: Vodafone Idea, Jio and Airtel sit in one band, as do MakeMyTrip, Yatra and Goibibo, because buyers in these categories are easy switchers. Any launch benchmarks rivals’ prices first.</p><h4>Step 5 · Select the pricing method</h4><div class=\"scroller\"><table><thead><tr><th>Family</th><th>Method</th><th>L#36 explanation</th></tr></thead><tbody><tr><td rowspan=\"3\"><strong>Cost-based</strong></td><td>Markup pricing</td><td>Add a markup to cost: cost ₹100, 5% markup, price ₹105</td></tr><tr><td>Target-return pricing</td><td>Set the price to earn the return (ROI) you want</td></tr><tr><td>Cost-plus pricing</td><td>Add up making, marketing, salaries and inventory costs, then add profit</td></tr><tr><td rowspan=\"3\"><strong>Market-based</strong></td><td>Value pricing</td><td>Price on what buyers will pay for the benefits. <b>BMW</b> at ₹80 lakh and Maruti <b>Ignis</b> at ₹5 lakh: the gap is far larger than any cost gap; it is perception, aspiration and status</td></tr><tr><td>Perceived-value pricing</td><td>Price on the image you create. <b>Forest Essentials</b> (“luxury Ayurveda”, gold and silver lids, supplied to Taj hotels) prices far above rivals. Guessing prices for Dove, L’Oréal Série Expert, Moroccanoil and Kérastase, people guess from perception alone</td></tr><tr><td>Everyday low pricing (EDLP)</td><td><b>Walmart</b>: be cheapest on chosen items every day. A volume game, not a margin game: a ₹10,000 workshop for 10 people earns ₹1 lakh; at ₹1,000 it might draw 500 and earn ₹5 lakh. If volume does not cover cost, you make losses</td></tr></tbody></table></div><h4>Step 6 · Select the final price</h4><p>Bring the objective, demand, costs, competitors and method together. You are not only buying a product, its benefits or attributes, he said: you pay for the whole experience, including what the price itself tells you.</p><!--viz:pom-l36-six-pricing-steps--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Six boxes in order: select objective, determine demand, estimate costs, analyse competitors, select method, select final price. Step 5 is highlighted and splits into cost-based methods (markup, target return, cost-plus) and market-based methods (value, perceived value, everyday low pricing).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Six steps to set a price</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>1</b> Select objective</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>2</b> Determine demand</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>3</b> Estimate costs</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>4</b> Analyse competitors</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>5</b> Select method</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>6</b> Select final price</div></div><div style=\"display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;font-size:13px\"><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2)\"><b>Cost-based:</b> markup · target return · cost-plus</div><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2)\"><b>Market-based:</b> value · perceived value · EDLP</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The order can bend in practice, and steps can be dropped; step 5 is where cost-based and market-based thinking part ways.</figcaption></figure><!--/viz:pom-l36-six-pricing-steps--><!--viz:pom-l36-skimming-steps--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A step chart of price against time. The same TV model sells at 4 lakh rupees to launch buyers, then 2.5 lakh to the next layer, then 1 lakh to the next, over about five to seven years.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Market skimming: one model, falling price</div><div style=\"overflow-x:auto\"><svg viewBox=\"0 0 440 236\" role=\"img\" aria-label=\"Step chart of one TV model's price over about six years: 4 lakh rupees at launch, then 2.5 lakh, then 1 lakh, each step reaching a new layer of buyers.\" style=\"display:block;width:100%;min-width:280px;max-width:440px;margin:0 auto;font-family:var(--body)\"><path d=\"M60,40 L60,200 L420,200\" style=\"fill:none;stroke:var(--rule-2);stroke-width:1.5\"/><path d=\"M60,57.8 L180,57.8 L180,111.1 L300,111.1 L300,164.4 L420,164.4\" style=\"fill:none;stroke:var(--blue);stroke-width:2\"/><text x=\"66\" y=\"30\" style=\"fill:var(--ink-3);font-size:13px\">price</text><text x=\"120\" y=\"50\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">₹4 lakh</text><text x=\"240\" y=\"103\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">₹2.5 lakh</text><text x=\"360\" y=\"156\" text-anchor=\"middle\" style=\"fill:var(--ink);font-size:14px;font-weight:700\">₹1 lakh</text><text x=\"120\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">launch buyers</text><text x=\"240\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">next layer</text><text x=\"360\" y=\"190\" text-anchor=\"middle\" style=\"fill:var(--ink-2);font-size:13px\">next layer</text><text x=\"240\" y=\"224\" text-anchor=\"middle\" style=\"fill:var(--ink-3);font-size:13px\">time: the same model over about 5–7 years</text></svg></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Skimming cuts the price of the same product in steps; each step skims a new layer of buyers.</figcaption></figure><!--/viz:pom-l36-skimming-steps-->"
+    },
+    {
+     "t": "Reading: KVCs and KVIs in retail pricing (McKinsey, 2015)",
+     "src": "L#36",
+     "h": "<p>Mid-lecture he asked everyone to spend 15 minutes on a McKinsey article (Kilroy, MacKenzie and Manacek, April 2015). Our digest, in our own words:</p><div class=\"def\"><b>KVC (key value category)</b>: a category that most shapes how cheap or dear shoppers think a store is.<br><b>KVI (key value item)</b>: a single item shoppers watch closely and use to judge the store’s prices.</div><ul><li><strong>Why KVIs exist:</strong> shoppers remember only a few prices, mostly of things they buy often, and only roughly. So a store builds its price image by pricing those few items sharply against chosen reference competitors, not by cutting everything.</li><li><strong>How lists are made:</strong> transaction and basket data, shopper research on price perception, and merchants’ judgement.</li><li><strong>Four kinds of KVI:</strong> value-perception drivers (staples like milk), assortment-perception drivers (distinctive items that show category authority), traffic drivers (fast movers that bring extra trips) and basket drivers (items that pull other purchases into the trip).</li><li><strong>What online retail changed:</strong> phone price checks, comparison sites, prices that change several times a day, personalised offers and far more data.</li><li><strong>Advice:</strong> treating every item as a KVI starts a race to the bottom. Use new data (reviews, search, clicks, social posts), split items into more segments and refresh them often, score each item on consumer demand, competition, the retailer’s own economics and category dynamics, and set guardrails on how far above rivals any price may go.</li></ul><p><strong>Link to L#36:</strong> KVIs are the <em>competitors’ price</em> circle at item level, and they work because of the <em>customer value</em> circle: shoppers judge value from a few remembered (reference) prices.</p>"
+    },
+    {
+     "t": "Common pricing strategies",
+     "src": "L#37",
+     "h": "<p>With the six steps in place (L#36), he walked through the strategies firms most often use, each aimed mainly at the customer-value circle.</p><div class=\"scroller\"><table><thead><tr><th>Strategy</th><th>Idea</th><th>L#37 example</th></tr></thead><tbody><tr><td><strong>Promotional / loss-leader pricing</strong><br>(also called captive or ancillary pricing)</td><td>An aggressive price, below cost, on one item to drive sales of other, profitable items</td><td><b>Gillette Mach3</b> launched in India at ₹499 against ₹20–40 razors, a high entry barrier. It came down to ₹399, then ₹99, close to its making cost. The money is in the blades (he put a refill at ₹150–200): once you own the razor, you keep buying them. <b>HP</b> lists about 1,500 printer models so every budget ends in an HP; a colour desk printer launched near ₹18,000 and was cut over time, while replacement cartridges, as he recalled them, cost roughly ₹10,000 (black) and ₹12,000 (colour)</td></tr><tr><td><strong>Special event pricing</strong></td><td>Use festivals and occasions, when people want to buy anyway</td><td>Diwali sales: buyers pick up things they don’t need because it is the festive season</td></tr><tr><td><strong>Special customer pricing</strong></td><td>Make members feel special with exclusive prices and perks</td><td><b>EasyDay Club</b> (“the neighbourhood store” with prices below what others pay), <b>Amazon Prime</b>, <b>Zomato Pro</b>: priority and faster delivery, member-only offers</td></tr><tr><td><strong>Differentiated / customer-segment pricing</strong></td><td>The price depends on the segment the buyer belongs to</td><td><b>IndiGo</b> fares for armed forces, students, senior citizens, minors, family and friends, doctors and nurses. The student saving is small, but it sets IndiGo apart from Air India and makes students feel valued</td></tr><tr><td><strong>Product-form pricing</strong></td><td>The same base product offered in forms with more or fewer inclusions, each priced differently</td><td><b>Microsoft 365</b> business plans at about ₹125, ₹545 and ₹660 per user per month (annual commitment). Every subscription service does this: Netflix, Zoom, ChatGPT, Claude. It serves a heterogeneous market instead of forcing one product on everyone</td></tr><tr><td><strong>Freemium pricing</strong></td><td>The base service is free; the extras cost a modest premium</td><td><b>Spotify</b>: free listening and playlists, but with ads, lower audio quality and limits on changing tracks; pay to remove them. A volume play, not a value play</td></tr><tr><td><strong>Yield (time) pricing</strong></td><td>The price depends on when you buy, using scarcity and urgency</td><td>His booking at the <b>Taj Mahal</b> hotel in Mumbai: about ₹20,000 a night with taxes for 31 December 2021, against about ₹7,800 for 8–9 December, for the same room and inclusions. Flights, hotels and Airbnb do the same; last-minute bookers pay more because they must travel</td></tr></tbody></table></div><div class=\"def\"><b>From the lecture (L#37)</b>: he said there are more pricing strategies than these, but for the scope of this module the ones covered are enough. To choose among them, go back to the six steps from L#36.</div><!--viz:pom-l37-captive-pricing--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison of Gillette Mach3 and HP printers. The base item (razor or printer) is cut in price to about zero margin or a loss. The captive item (blade refills or ink cartridges) carries a high margin, and buyers stay because they already own the base item.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Where captive pricing makes its money</div><div class=\"scroller\"><table><thead><tr><th></th><th>Gillette Mach3</th><th>HP printers</th></tr></thead><tbody><tr><td><strong>Base item</strong></td><td>Razor: ₹499 → ₹399 → ₹99</td><td>Printer: launched near ₹18,000, then cut</td></tr><tr><td><strong>Margin on base item</strong></td><td style=\"background:var(--bad-soft)\">about zero or a loss</td><td style=\"background:var(--bad-soft)\">thin, falling over time</td></tr><tr><td><strong>Captive item</strong></td><td>Blade refills</td><td>Ink cartridges</td></tr><tr><td><strong>Margin on captive item</strong></td><td style=\"background:var(--good-soft)\">high: refills bought for years</td><td style=\"background:var(--good-soft)\">high: cartridges cost more than the printer</td></tr><tr><td><strong>Why buyers stay</strong></td><td>Once you own the razor you keep it</td><td>About 1,500 models: every budget ends in an HP</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The loss sits on the item you buy once; the profit sits on the item you keep buying.</figcaption></figure><!--/viz:pom-l37-captive-pricing--><!--viz:pom-l37-strategy-map--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A tree headed 'what the price depends on' with four branches: what else you buy (loss leader or captive pricing, Gillette and HP); who you are (customer-segment pricing, IndiGo; special customer pricing, Prime and Zomato Pro); which form you take (product-form pricing, Microsoft 365; freemium, Spotify); and when you buy (yield or time pricing, Taj and flights; special event pricing, Diwali).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Sorting L#37’s pricing strategies</div><div style=\"font-size:14px\"><div style=\"text-align:center;margin-bottom:8px\"><span style=\"display:inline-block;padding:7px 12px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>What the price depends on</b></span></div><div style=\"display:flex;flex-wrap:wrap;gap:8px\"><div style=\"padding:8px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);min-width:140px;flex:1\"><div style=\"font-size:12.5px;color:var(--ink-3);margin-bottom:4px\">WHAT ELSE YOU BUY</div><div style=\"margin:2px 0\"><b>Loss leader / captive</b> · <span style=\"color:var(--ink-2)\">Gillette, HP</span></div></div><div style=\"padding:8px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);min-width:140px;flex:1\"><div style=\"font-size:12.5px;color:var(--ink-3);margin-bottom:4px\">WHO YOU ARE</div><div style=\"margin:2px 0\"><b>Customer segment</b> · <span style=\"color:var(--ink-2)\">IndiGo</span></div><div style=\"margin:2px 0\"><b>Special customer</b> · <span style=\"color:var(--ink-2)\">Prime, Zomato Pro</span></div></div><div style=\"padding:8px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);min-width:140px;flex:1\"><div style=\"font-size:12.5px;color:var(--ink-3);margin-bottom:4px\">WHICH FORM YOU TAKE</div><div style=\"margin:2px 0\"><b>Product form</b> · <span style=\"color:var(--ink-2)\">Microsoft 365</span></div><div style=\"margin:2px 0\"><b>Freemium</b> · <span style=\"color:var(--ink-2)\">Spotify</span></div></div><div style=\"padding:8px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);min-width:140px;flex:1\"><div style=\"font-size:12.5px;color:var(--ink-3);margin-bottom:4px\">WHEN YOU BUY</div><div style=\"margin:2px 0\"><b>Yield / time</b> · <span style=\"color:var(--ink-2)\">Taj, flights</span></div><div style=\"margin:2px 0\"><b>Special event</b> · <span style=\"color:var(--ink-2)\">Diwali</span></div></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Ask what changes the price: the add-on, the buyer, the form or the timing.</figcaption></figure><!--/viz:pom-l37-strategy-map-->"
+    },
+    {
+     "t": "What makes a good pricing decision",
+     "src": "L#37",
+     "h": "<p>He closed the pricing module with no thumb rule, only a test. A good pricing decision:</p><ol><li><strong>Maximises the company’s sales.</strong> If the price brings in no business, it is not a good pricing strategy.</li><li><strong>Delivers superior value to the customer.</strong> Buyers must find value at that price, or they won’t buy.</li><li><strong>Covers costs in a timely manner.</strong></li></ol><p>Link it back to the triangle of customer value, competitors’ price and cost (the 3C framework of L#36). The three are chained: when customers find value they buy; purchases raise sales; higher sales cover costs on time; and then the price creates value for the business as well as the customer.</p>"
+    },
+    {
+     "t": "Reading: the value-seeking consumer (Deloitte, 2025)",
+     "src": "L#37",
+     "h": "<p>The post-read for L#37 (Daher and colleagues, Deloitte Insights, 23 June 2025, US data). Our digest, in our own words:</p><ul><li><strong>The setting:</strong> after the inflation spike that peaked in 2022, US shoppers’ sense of fair prices and good value fell and had not recovered by 2025.</li><li><strong>Value seekers:</strong> about 4 in 10 Americans regularly cut costs, hunt deals or give up convenience. They are not only the poor or the young: nearly half of boomers and Gen X qualify, and close to 3 in 10 value seekers are young families with six-figure incomes.</li><li><strong>Price and value are linked but not the same:</strong> price perception explains roughly 60–90% of how much value people see in a brand, so 10–40% comes from other things.</li><li><strong>MVP brands</strong> (“more value for the price”) are seen as worth at least 10% more than their price alone predicts; the rest are LVP. MVPs exist at every price level, won more purchase intent in all five sectors studied, and card data showed spending shifting about 2% towards them.</li><li><strong>What MVPs do:</strong> better quality, a better staff attitude, and more trust (capability, reliability, transparency, humanity), plus drivers specific to each sector.</li><li><strong>Advice:</strong> manage costs, understand elasticity and your own pricing power, adjust quickly, and invest to raise value relative to price instead of only cutting price.</li></ul><p><strong>Link to L#36–37:</strong> it is evidence for the lecture’s claim that the customer-value circle dominates: a low price alone does not win the value seeker.</p>"
+    },
+    {
+     "t": "Textbook: Pricing: Understanding and Capturing Customer Value",
+     "src": "Kotler & Armstrong 17e ch10",
+     "h": "<p>Price is the amount charged for a product, or more broadly the sum of everything customers give up to get its benefits. Of all the marketing-mix elements, it alone produces revenue. The right price lies between a ceiling set by customers' perceived value and a floor set by the firm's costs, adjusted for competitors, the firm's own strategy and mix, and what the market and its demand look like. The chapter sets out three strategies: customer value-based pricing (including good-value and value-added pricing), cost-based pricing (cost-plus, break-even and target-return pricing, plus how costs move with scale and experience), and competition-based pricing. It then covers internal factors (strategy, objectives, target costing, who sets prices) and external ones (market structure, the demand curve, price elasticity, the economy, resellers and government). The manager's lesson is to sell value, not price: cutting price is rarely the best answer.</p><!--viz:pom-k-price-floor-ceiling--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three stacked bands. At the top, customer perceptions of value set the price ceiling. In the middle, competitors' prices, the firm's strategy and mix, and the market and demand decide where the price sits. At the bottom, product costs set the price floor.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Between the price floor and the price ceiling</div><div style=\"font-size:14px;max-width:420px;margin:0 auto\"><div style=\"padding:9px 12px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Customer perceptions of value → price CEILING</b><br><span style=\"color:var(--ink-2);font-size:13px\">above it, buyers see no value and demand disappears</span></div><div style=\"text-align:center;color:var(--ink-3);font-size:13px;margin:2px 0\">↕</div><div style=\"padding:9px 12px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>Competitors’ prices · the firm’s strategy and mix · market and demand</b><br><span style=\"color:var(--ink-2);font-size:13px\">decide where in the band the price sits</span></div><div style=\"text-align:center;color:var(--ink-3);font-size:13px;margin:2px 0\">↕</div><div style=\"padding:9px 12px;border:1px solid var(--clay);border-radius:4px;background:var(--clay-soft)\"><b>Product costs → price FLOOR</b><br><span style=\"color:var(--ink-2);font-size:13px\">below it, there is no profit</span></div><p style=\"font-size:13px;color:var(--ink-3);margin-top:8px\">L#36 draws the same three forces as overlapping circles (cost, competitors, customer value).</p></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Costs say how low you can go; customer value says how high; everything else decides where in between.</figcaption></figure><!--/viz:pom-k-price-floor-ceiling--><!--viz:pom-k-cost-vs-value-pricing--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two chains. Cost-based pricing runs product, cost, price, value, customers, with cost highlighted. Value-based pricing runs customers, value, price, cost, product, with value highlighted.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Cost-based and value-based pricing run in opposite directions</div><div style=\"margin-bottom:10px\"><div style=\"font-size:12.5px;color:var(--ink-3);margin-bottom:4px\">COST-BASED: start from the product</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Product</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">Cost</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Price</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Value</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Customers</div></div></div><div style=\"margin-bottom:10px\"><div style=\"font-size:12.5px;color:var(--ink-3);margin-bottom:4px\">VALUE-BASED: start from the customer</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Customers</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">Value</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Price</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Cost</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Product</div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Cost-based pricing hopes customers accept the price; value-based pricing designs the cost to fit the price customers value.</figcaption></figure><!--/viz:pom-k-cost-vs-value-pricing--><p><strong>What a price is, and why it matters</strong> — Narrowly, price is the money charged for a product or service. Broadly, it is the sum of all the values customers give up for the benefits of having or using it. Price is the only revenue-producing element of the mix, it can be changed quickly, and a small percentage gain in price can produce a large percentage gain in profit.</p><p><strong>Price ceiling and price floor</strong> — Customers' perceptions of value set the ceiling: above it there is no demand. The firm's costs set the floor: below it there is no profit. Where the price should sit between the two depends on competitors' strategies and prices, the firm's own marketing strategy, objectives and mix, and the type of market and the state of demand.</p><p><strong>Customer value-based pricing</strong> — Value-based pricing starts from customers' needs and value perceptions, sets a target price, and then decides what costs can be incurred and how to design the product. Cost-based pricing runs the other way: design the product, add up costs, add a profit, then try to convince buyers. Good value is not the same as low price, and value is subjective, so firms measure it through surveys and experiments.</p><p><strong>Good-value pricing, EDLP and high-low pricing</strong> — Good-value pricing offers the right mix of quality and service at a fair price. That can mean cheaper versions of established brands, redesigned brands with more for the same or the same for less, or deliberately less for much less. Everyday low pricing (EDLP) keeps a constant low price with few promotions; high-low pricing keeps higher everyday prices but runs frequent temporary discounts.</p><p><strong>Value-added pricing</strong> — Rather than cutting prices to match rivals, the firm adds quality, services and features that differentiate the offer and support a higher price. It is the opposite response to the same competitive pressure that tempts others to cut price.</p><p><strong>Fixed, variable and total costs</strong> — Fixed costs (overhead), such as rent, interest and executive salaries, do not change with output. Variable costs, such as materials and packaging, vary directly with output; they are constant per unit but rise in total as volume grows. Total cost is fixed plus variable at a given output, and the price should at least cover it.<br><span style=\"font-family:var(--mono)\">Total cost = Fixed cost + (Variable cost per unit × Quantity)</span></p><p><strong>Costs at different output levels and the experience curve</strong> — In a given plant, average cost falls as output rises (fixed cost is spread) until crowding makes it rise again. Larger plants cut unit cost up to an optimal size, beyond which diseconomies of scale set in. Average cost also falls with accumulated production experience (the learning curve), which argues for low prices to build share early. The risks are a cheap image, rivals who match the cuts, and a competitor with a lower-cost technology.</p><p><strong>Cost-plus (markup) pricing</strong> — Add a standard markup to unit cost. The book's markup is on the selling price (return on sales). The method ignores demand and competitors' prices, so it rarely gives the best price. It stays popular because costs are more certain than demand, industry-wide use limits price competition, and many see it as fair.<br><span style=\"font-family:var(--mono)\">Unit cost = VC + FC ÷ expected unit sales · Markup price = Unit cost ÷ (1 − desired return on sales)</span></p><p><strong>Break-even and target-return pricing</strong> — Break-even volume is where total revenue equals total cost. A target profit raises the volume needed. A higher price lowers the break-even volume but may also cut demand, so the firm should compare several prices on break-even volume, expected demand and profit, and choose the one with the highest profit.<br><span style=\"font-family:var(--mono)\">Break-even volume = FC ÷ (P − VC) · Volume for target profit = (FC + target profit) ÷ (P − VC)</span></p><p><strong>Competition-based pricing</strong> — Customers judge value partly from rivals' prices for similar offers. The firm compares the value it creates against competitors' and considers how strong they are and how they price. The goal is not to match or beat rivals' prices but to price according to the relative value created, so a firm that delivers more lifetime value can justify a premium.</p><p><strong>Strategy, objectives and target costing</strong> — Price must fit the target market, positioning and the rest of the mix. Pricing can serve many objectives: winning or keeping customers, deterring entry, stabilising the market, supporting resellers or avoiding government intervention. Target costing starts from an ideal selling price based on customer value and then sets cost targets that will make that price work. Alternatively, firms build non-price positions and charge more.</p><p><strong>Market structure and pricing freedom</strong> — Pure competition (many sellers of a uniform commodity): sellers take the market price and marketing matters little. Monopolistic competition (many sellers with differentiated offers): a range of prices, with branding and advertising used heavily. Oligopoly (a few large sellers): each watches and reacts to the others' prices. Pure monopoly (one seller, whether government, regulated or unregulated): pricing depends on the type.</p><p><strong>Demand curve and price elasticity</strong> — The demand curve shows how many units the market buys at each price; normally price and quantity move in opposite directions. Price elasticity measures how sensitive demand is to price. If demand is elastic, a price cut raises total revenue, worth doing if the extra costs don't exceed the extra revenue. If it is inelastic, demand barely moves.<br><span style=\"font-family:var(--mono)\">Price elasticity = % change in quantity demanded ÷ % change in price (|E| &gt; 1 elastic, |E| &lt; 1 inelastic)</span></p><p><strong>The economy and other external factors</strong> — Booms, recessions, inflation and interest rates change spending and value perceptions. Cutting prices in a downturn lowers margins, can cheapen a brand and is hard to reverse, so many firms hold price and redefine value or add price tiers (basic and premium versions). Resellers need fair margins, and government and social concerns also limit pricing.</p><div class=\"card\"><strong>Case: Amazon versus Walmart online</strong> <em>(Chapter opener: Amazon versus Walmart — A Price War for Online Supremacy)</em><p>The world's biggest store retailer took on the biggest online merchant with aggressive online prices. Neither could win on price alone, since both are low-cost operators. The online seller led on assortment, delivery speed and shopping experience; the store giant answered by using its stores for fast fulfilment and in-store pickup. Price matters, but overall value decides the winner.</p><p><em>Lesson:</em> Selling value, not just price; the limits of a price war.</p><p><em>Think:</em> Why can a price war between two low-cost leaders hurt both? What non-price levers should each use?</p></div><div class=\"card\"><strong>Case: Whole Foods Market</strong> <em>(Real Marketing 10.2: Whole Foods Market — Finding the Right Price-Value Equation)</em><p>An upscale natural-foods grocer was nicknamed 'Whole Paycheck' after the recession, and cheaper rivals added organic ranges. Instead of cutting prices across the board, it lowered prices on key basics, pushed its private label, used staff to point out value items, ran a campaign linking value to values, and opened a cheaper sub-chain for younger shoppers.</p><p><em>Lesson:</em> Holding a premium position while adjusting the price-value equation; price tiers.</p><p><em>Think:</em> Is the cheaper sub-chain good-value pricing, a new brand, or both? What risk does it carry for the main brand?</p></div><div class=\"card\"><strong>Case: MSC Cruises</strong> <em>(Company Case: MSC Cruises — From One Second-Hand Ship to a Major World Player)</em><p>A container shipper moved into cruising and invested in new ships to compete with larger lines. Cruising has high fixed costs, seasonal demand and online price-comparing shoppers. MSC advertises a low entry price for interior cabins, then upsells cabins and packages and earns much of its profit on board from drinks, tours and services.</p><p><em>Lesson:</em> Weighing cost-based, competition-based and value-based pricing under high fixed costs.</p><p><em>Think:</em> With high fixed costs and low extra cost per filled cabin, why does a cruise line push to fill cabins even at discounted prices?</p></div><details><summary>Worked problem: Markup on sales, and the retailer's markup</summary><p>A pressure-cooker maker has variable cost ₹600 per unit, fixed costs ₹30,00,000 and expects to sell 20,000 units. It wants a 25% return on sales. A retailer then wants a 20% margin on its own selling price. Find the maker's price, the retail price, and the retailer's markup on cost.</p><ol><li>Unit cost = 600 + 30,00,000 ÷ 20,000 = 600 + 150 = ₹750.</li><li>Maker's price = 750 ÷ (1 − 0.25) = ₹1,000 (profit ₹250 per unit, which is 33.3% on cost).</li><li>Retail price = 1,000 ÷ (1 − 0.20) = ₹1,250.</li><li>Retailer's markup on cost = 250 ÷ 1,000 = 25%, while its margin on selling price = 250 ÷ 1,250 = 20%.</li></ol><p><strong>Answer:</strong> Maker sells at ₹1,000; retail price ₹1,250; the retailer's 20% margin on price is a 25% markup on cost.</p></details><details><summary>Worked problem: Break-even and target-return volume</summary><p>Using the same maker (price ₹1,000, variable cost ₹600, fixed costs ₹30,00,000), find the break-even volume. The owners have invested ₹1 crore and want a 20% return. How many units must be sold?</p><ol><li>Contribution per unit = 1,000 − 600 = ₹400.</li><li>Break-even volume = 30,00,000 ÷ 400 = 7,500 units.</li><li>Target profit = 20% × 1,00,00,000 = ₹20,00,000.</li><li>Required volume = (30,00,000 + 20,00,000) ÷ 400 = 12,500 units.</li></ol><p><strong>Answer:</strong> Break even at 7,500 units; 12,500 units are needed to earn the ₹20 lakh target.</p></details><details><summary>Worked problem: Choosing among prices</summary><p>Fixed costs ₹30,00,000, variable cost ₹600. Estimated demand: 26,000 units at ₹900; 20,000 at ₹1,000; 15,000 at ₹1,100; 9,000 at ₹1,200. Which price maximises profit, and which has the lowest break-even volume?</p><ol><li>Profit = (P − 600) × Q − 30,00,000.</li><li>₹900: 300 × 26,000 − 30,00,000 = ₹48,00,000 (break-even 10,000).</li><li>₹1,000: 400 × 20,000 − 30,00,000 = ₹50,00,000 (break-even 7,500).</li><li>₹1,100: 500 × 15,000 − 30,00,000 = ₹45,00,000 (break-even 6,000).</li><li>₹1,200: 600 × 9,000 − 30,00,000 = ₹24,00,000 (break-even 5,000).</li></ol><p><strong>Answer:</strong> ₹1,000 gives the highest profit (₹50 lakh), even though ₹1,200 has the lowest break-even volume (5,000 units).</p></details><details><summary>Worked problem: Price elasticity and revenue</summary><p>A juice brand raises its price from ₹50 to ₹55 and monthly sales fall from 10,000 to 8,500 packs. Find the price elasticity and say what happened to revenue.</p><ol><li>% change in price = (55 − 50) ÷ 50 = +10%.</li><li>% change in quantity = (8,500 − 10,000) ÷ 10,000 = −15%.</li><li>Elasticity = −15% ÷ 10% = −1.5, so |E| &gt; 1 and demand is elastic.</li><li>Revenue before = 50 × 10,000 = ₹5,00,000; after = 55 × 8,500 = ₹4,67,500.</li></ol><p><strong>Answer:</strong> E = −1.5 (elastic). The price rise cut revenue by ₹32,500, so with elastic demand a price cut, not a rise, would raise revenue.</p></details><div class=\"def\"><b>Book vs lecture — What 'cost' means.</b> Book: In pricing, costs are the firm's costs (fixed, variable, total), and they set the price floor. Customer value sets the ceiling. Lecture: Customer perceived value = benefits − costs, where the costs are the customer's: price paid plus abstract costs such as time, effort, stress and disposal. <b>Read 'cost' from context. In a perceived-value question it is the customer's total sacrifice, which is close to the book's broad definition of price. In a pricing-method question it is the firm's production and selling cost.</b></div><div class=\"def\"><b>Book vs lecture — Profit arithmetic.</b> Book: Break-even volume = FC ÷ (P − VC); markup on price = unit cost ÷ (1 − return on sales). Lecture: Bottom line = sales − cost, worked as (price − cost per glass) × glasses (₹120 − ₹70 = ₹50 × 80 = ₹4,000), with no fixed cost separated out. <b>The lecture's sum treats the ₹70 as a full per-unit cost. For book-style questions that give fixed and variable costs separately, use the break-even and markup formulas.</b></div><div class=\"def\"><b>Book vs lecture — Price, pricing and pricing strategy.</b> Book: Price is the amount charged, or more broadly everything customers give up to get a product’s benefits. Lecture: L#36 separates three terms: price (the amount), pricing (the process of arriving at it) and pricing strategy (the overall approach that uses price to meet objectives). <b>Use L#36’s three-way split when a question asks for the difference. The book’s broad definition is consistent with it.</b></div><div class=\"def\"><b>Book vs lecture — What sets the price.</b> Book: A ceiling set by customers’ perceived value and a floor set by costs, with competitors, strategy, mix and demand deciding the point in between. Lecture: L#36’s 3C framework: overlapping circles of cost to the company, competitors’ price and customer value, with the ideal price in the overlap and customer value the dominant circle because it has no upper limit. <b>Same three forces. Name them as the 3Cs when answering from the lecture, and say customer value dominates.</b></div><div class=\"def\"><b>Book vs lecture — Pricing objectives.</b> Book: Objectives sit inside the firm’s overall strategy and mix (winning customers, deterring entry, stabilising the market and so on), with no fixed list. Lecture: L#36 lists five, following Kotler–Keller: survival, maximum current profit, maximum market share, maximum market skimming and product-quality leadership (Netflix, Samsung, Jio, Sony and Apple). <b>Learn the lecture’s five with an example each; quiz items on objectives will use them.</b></div><div class=\"def\"><b>Book vs lecture — Steps and methods.</b> Book: Three approaches: customer value-based (good-value, including EDLP and high-low, and value-added), cost-based (cost-plus/markup, break-even, target return) and competition-based. No numbered procedure. Lecture: L#36’s six steps: objective, demand, costs, competitors’ costs, prices and offers, method, final price. Methods are cost-based (markup, target-return, cost-plus) or market-based (value pricing, perceived-value pricing, EDLP). <b>The lecture’s order and its cost-based vs market-based split win for the quiz. EDLP is ‘value-based’ in the book and ‘market-based’ in the lecture: same idea, different label.</b></div><div class=\"def\"><b>Book vs lecture — Markup arithmetic.</b> Book: Markup price = unit cost ÷ (1 − desired return on sales), i.e. markup on selling price. Lecture: L#36 adds the markup to cost: cost ₹100 with a 5% markup gives ₹105. <b>If a question just says ‘a 5% markup’, follow the lecture (cost × 1.05). Use the book’s formula only when the question says markup on selling price or return on sales.</b></div>"
+    },
+    {
+     "t": "Textbook: Pricing Strategies: Additional Considerations",
+     "src": "Kotler & Armstrong 17e ch11",
+     "h": "<p>Firms set a pricing structure, not a single price, and adjust it over the life cycle and across buyers and situations. New products are priced by skimming (start high and come down) or penetration (start low to win share fast), each workable only under certain conditions. In a product mix, firms set prices for the whole line, optional products, captive products, by-products and bundles. Seven price-adjustment strategies follow: discounts and allowances, plus segmented, psychological, promotional, geographical, dynamic and international pricing. The chapter then explains when to raise or cut prices, how buyers and competitors read price changes, and how to respond to a rival's price cut, including fighter brands. It ends with legal limits: price-fixing, predatory pricing, price discrimination, resale price maintenance and deceptive pricing.</p><!--viz:pom-k-skim-vs-penetrate--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Comparison table. Market skimming launches high and cuts in steps to take revenue layer by layer; it works when image supports the price, enough early buyers exist, small volumes are affordable and rivals can't undercut quickly; L#36 example Sony and Apple. Market penetration launches low to win volume and share; it works when buyers are price-sensitive, costs fall with volume and the low price keeps rivals out; L#36 example Jio.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Skimming versus penetration</div><div class=\"scroller\"><table><thead><tr><th></th><th>Market skimming</th><th>Market penetration</th></tr></thead><tbody><tr><td><strong>Launch price</strong></td><td>High, then cut in steps</td><td>Low from the start</td></tr><tr><td><strong>Aim</strong></td><td>Take the most revenue layer by layer</td><td>Win volume and share fast</td></tr><tr><td><strong>Works when</strong></td><td>Image and quality support the price; enough buyers want it early; small volumes are not too costly; rivals can’t undercut quickly</td><td>Buyers are price-sensitive; unit costs fall as volume grows; the low price keeps rivals out</td></tr><tr><td><strong>In the lectures</strong></td><td style=\"background:var(--good-soft)\">L#36 objective: Sony Bravia, Apple iPhone</td><td style=\"background:var(--good-soft)\">L#36 objective “maximum market share”: Jio</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">The book calls these new-product strategies; L#36 taught them as pricing objectives.</figcaption></figure><!--/viz:pom-k-skim-vs-penetrate--><!--viz:pom-k-product-mix-pricing--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A tree of product-mix pricing with five branches: product line pricing, optional-product pricing, captive-product pricing (highlighted, with L#37's Gillette and HP examples taught as loss leaders), by-product pricing and product bundle pricing.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Five product-mix pricing situations</div><div style=\"font-size:14px\"><div style=\"text-align:center;margin-bottom:8px\"><span style=\"display:inline-block;padding:7px 12px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2)\"><b>Product-mix pricing</b></span></div><div style=\"display:flex;flex-wrap:wrap;gap:8px\"><div style=\"padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);flex:1;min-width:130px\"><b>Product line</b><br><span style=\"color:var(--ink-2);font-size:13px\">price steps between models in one line</span></div><div style=\"padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);flex:1;min-width:130px\"><b>Optional product</b><br><span style=\"color:var(--ink-2);font-size:13px\">extras sold with the main product</span></div><div style=\"padding:7px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft);flex:1;min-width:130px\"><b>Captive product</b><br><span style=\"color:var(--ink-2);font-size:13px\">base item cheap, must-have refills dear</span><br><span style=\"font-size:12.5px;color:var(--ink-3)\">L#37: Gillette, HP (as loss leaders)</span></div><div style=\"padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);flex:1;min-width:130px\"><b>By-product</b><br><span style=\"color:var(--ink-2);font-size:13px\">sell leftovers to cut the main price</span></div><div style=\"padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);flex:1;min-width:130px\"><b>Product bundle</b><br><span style=\"color:var(--ink-2);font-size:13px\">several products for one lower price</span></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Only captive pricing was lectured, and L#37 filed it under loss-leader pricing.</figcaption></figure><!--/viz:pom-k-product-mix-pricing--><p><strong>Market-skimming pricing</strong> — Launch at a high price to skim maximum revenue, layer by layer, from the segments willing to pay, then lower the price over time. The firm makes fewer but more profitable sales. It works only if quality and image support the price and enough buyers want it at that price, if small-volume costs don't cancel the higher margin, and if competitors cannot easily enter and undercut.</p><p><strong>Market-penetration pricing</strong> — Launch at a low price to attract many buyers quickly and win a large share. The volume then lowers costs and allows further cuts. It works only if the market is highly price-sensitive, if production and distribution costs fall with volume, and if the low price keeps competitors out and the firm can hold its low-price position.</p><p><strong>Product line and optional-product pricing</strong> — Product line pricing sets the price steps between versions in a line. The steps reflect cost differences, but more importantly differences in perceived value of features and competitors' prices, so higher versions can carry much higher prices despite small cost gaps. Optional-product pricing prices accessories sold with the main product, and the firm must decide what goes into the base price.</p><p><strong>Captive-product and two-part pricing</strong> — Products that must be used with the main product, such as blades, cartridges, coffee pods or content, are often priced high while the main product is priced low. The risk is customer resentment at feeling trapped. For services the equivalent is two-part pricing: a fixed fee plus a variable usage charge.</p><p><strong>By-product and bundle pricing</strong> — By-product pricing finds a market for low-value leftovers, which offsets disposal costs, makes the main product's price more competitive and can even earn a profit. Bundle pricing sells several products together at a reduced price; it can sell items buyers would not buy alone, but the bundle price must be low enough to attract them.</p><p><strong>Discounts and allowances</strong> — Cash discounts reward prompt payment (for example 2/10, net 30). Quantity discounts reward volume, functional or trade discounts reward channel members for selling, storing and record-keeping, and seasonal discounts reward off-season buying. Allowances include trade-in allowances for returning an old item and promotional allowances for dealers who join advertising and sales-support programmes.</p><p><strong>Segmented pricing</strong> — The same product is sold at two or more prices where the difference is NOT based on cost. Forms include customer-segment pricing (students, seniors), product-form pricing (business versus economy class), location-based pricing (seat position, out-of-state tuition) and time-based pricing (matinees, off-season). It requires segmentable markets with different demand, segmenting costs below the extra revenue, legality, and real perceived-value differences, or customers resent it.</p><p><strong>Psychological pricing and reference prices</strong> — Price signals quality, especially when buyers cannot judge quality themselves. Reference prices are the prices buyers carry in their heads; sellers shape them, for example by placing a store brand next to a dearer national brand or adding a premium model that makes the next model look affordable. Price endings matter too: a 9 often signals a bargain and round numbers signal quality.</p><p><strong>Promotional pricing</strong> — Temporary prices below list, sometimes below cost, create excitement and urgency: discounts, special-event pricing, flash sales, rebates, low-interest financing, longer warranties. Overused, promotions cause deal fatigue, price confusion, brand erosion and deal-prone customers who wait for the next sale.</p><p><strong>Geographical pricing</strong> — FOB-origin: each customer pays freight from the factory (fair, but dear for distant buyers). Uniform-delivered: everyone pays the same price plus average freight. Zone: one total price per zone, rising with distance. Basing-point: freight is charged from a chosen city regardless of where goods ship from. Freight-absorption: the seller absorbs some or all freight to win business.</p><p><strong>Dynamic and online pricing</strong> — Dynamic pricing adjusts prices continually to individual customers and situations: airline seats as departure nears, surge fares, electronic shelf tags. It is legal unless it discriminates on characteristics such as age, gender or location, but it can damage trust if customers see it as gouging. Online comparison tools also give buyers power, for example through showrooming.</p><p><strong>International pricing</strong> — A few firms charge a uniform world price, but most adjust for local economics, competition, laws and distribution systems. Prices abroad often escalate because of extra operating, modification, shipping, currency, tariff and tax costs. Selling to the bottom of the pyramid needs genuinely affordable, aspirational products, not just stripped-down versions.</p><p><strong>Initiating price changes</strong> — Firms cut prices because of excess capacity, falling demand or a drive to dominate through low cost, which risks price wars. They raise prices because of cost inflation or over-demand. A small price rise can lift profit sharply when margins are thin. To avoid looking like a gouger, explain increases, or find alternatives: cost cuts, unbundling, or shrinking pack size.</p><p><strong>Buyer and competitor reactions; responding to a price cut</strong> — Buyers may read a price rise as exclusivity or greed, and a cut as a bargain or a sign of lower quality. Competitors react most when sellers are few, the product is uniform and buyers are well informed. Facing a rival's cut, a firm can hold its price, reduce price, raise perceived value, improve quality and raise price, or launch a low-price fighter brand.</p><p><strong>Public policy and pricing</strong> — Within a channel level, price-fixing among competitors is illegal per se, and predatory pricing (below cost to drive rivals out) is illegal but hard to prove because it depends on intent. Across levels, laws limit unjustified price discrimination between resellers, forbid resale price maintenance (forcing dealers' retail prices) and forbid deceptive pricing such as fake 'regular' prices.</p><div class=\"card\"><strong>Case: Apple's premium pricing</strong> <em>(Chapter opener: Apple — Premium Priced and Worth It)</em><p>Apple prices well above even high-end rivals, yet it holds leading shares in premium segments and takes most of the smartphone industry's profit. It also launches new models high and lets prices fall as newer ones arrive. The risk is in emerging markets, where low-priced local makers win price-sensitive buyers that Apple chooses not to chase.</p><p><em>Lesson:</em> Premium and skimming pricing work when the experience justifies the price; the price itself can signal status.</p><p><em>Think:</em> Using the book's conditions for skimming, explain why it works for Apple in mature markets but leaves it exposed in price-sensitive emerging markets.</p></div><div class=\"card\"><strong>Case: EasyJet and Ryanair</strong> <em>(Real Marketing 11.1: Dynamic Pricing at EasyJet and Ryanair)</em><p>Europe's low-cost airlines start with low headline fares and raise them as seats sell and departure nears, because an empty seat is revenue lost for good. Lean costs come from one aircraft type, fast turnarounds, direct online sales and secondary airports. One carrier earns a large share of revenue from paid extras such as bags and seat choice.</p><p><em>Lesson:</em> Dynamic pricing for perishable capacity; unbundling with less-for-much-less positioning.</p><p><em>Think:</em> Which service characteristic makes dynamic pricing so valuable for airlines, and what customer-relationship risk does it create?</p></div><div class=\"card\"><strong>Case: Lululemon</strong> <em>(Company Case: Lululemon — Indulging Customers at a Premium Price)</em><p>A yoga-apparel brand rode the yoga and athleisure boom with proprietary fabrics, a community-style store experience and a strong lifestyle image. It prices above major sportswear rivals and avoids discounts, selling surplus only through a few outlets and a 'we made too much' web page. Loyal fans see the premium as worth paying, and it has become a status signal.</p><p><em>Lesson:</em> Premium pricing supported by perceived value; avoiding promotional pricing to protect brand image.</p><p><em>Think:</em> What would likely happen to the brand's perceived quality if it began frequent promotional discounts? Use the book's points on buyer reactions to price cuts.</p></div><details><summary>Worked problem: How much a small price rise lifts profit</summary><p>A snack maker earns a 4% net profit margin on sales. It raises prices by 2% and its sales volume does not change. By what percentage does profit rise?</p><ol><li>Take sales of ₹100: profit = ₹4.</li><li>After a 2% price rise with the same volume, sales = ₹102. Costs are unchanged, so profit = ₹4 + ₹2 = ₹6.</li><li>Profit increase = (6 − 4) ÷ 4 = 50%.</li></ol><p><strong>Answer:</strong> Profit rises by 50%. That is why a small price increase can have a big effect when margins are thin, as long as volume holds.</p></details><details><summary>Worked problem: Price rise and the sales drop you can afford</summary><p>A product's variable cost is 70% of its price (contribution margin 30%). The firm raises price by 10%. What is the new contribution margin, and by how much can unit sales fall before total contribution drops below its old level?</p><ol><li>Set the old price at ₹1.00: variable cost ₹0.70, contribution ₹0.30 (30%).</li><li>New price ₹1.10: contribution = 1.10 − 0.70 = ₹0.40, so the margin = 0.40 ÷ 1.10 ≈ 36.4%.</li><li>Units needed for the same total contribution = 0.30 ÷ 0.40 = 0.75 of the old volume.</li><li>So unit sales can fall by up to 25% before total contribution falls.</li></ol><p><strong>Answer:</strong> New contribution margin ≈ 36.4%; unit sales can fall by up to 25% and total contribution stays the same.</p></details><details><summary>Worked problem: FOB-origin versus uniform-delivered</summary><p>A Pune factory ships ₹10,000 orders. Freight costs ₹80 to a Pune customer, ₹120 to Nagpur and ₹250 to Delhi. Compare what each pays under FOB-origin pricing and under uniform-delivered pricing using the average freight.</p><ol><li>FOB-origin: each pays its own freight, so Pune ₹10,080, Nagpur ₹10,120, Delhi ₹10,250.</li><li>Average freight = (80 + 120 + 250) ÷ 3 = ₹150.</li><li>Uniform-delivered: all pay ₹10,000 + ₹150 = ₹10,150.</li><li>Pune pays ₹70 more and Delhi ₹100 less than under FOB-origin.</li></ol><p><strong>Answer:</strong> FOB-origin: ₹10,080 / ₹10,120 / ₹10,250. Uniform-delivered: ₹10,150 each. Uniform pricing helps win distant buyers at the risk of losing nearby ones to local rivals.</p></details><div class=\"def\"><b>Book vs lecture — Skimming and penetration.</b> Book: New-product pricing strategies: start high and come down, or start low to win share. Lecture: L#36 teaches them as pricing objectives from Kotler–Keller: ‘maximum market skimming’ (Sony Bravia ₹4 lakh → ₹2.5 lakh → ₹1 lakh; Apple) and ‘maximum market share’ (Jio’s free data). <b>Same ideas. If a quiz lists objectives, skimming and market share are among them; if it lists new-product strategies, use the book’s names.</b></div><div class=\"def\"><b>Book vs lecture — Where captive pricing belongs.</b> Book: Captive-product pricing is a product-mix pricing strategy (razors and blades, printers and cartridges). Lecture: L#37 puts Gillette Mach3 and HP printers under promotional or loss-leader pricing, also calling it captive or ancillary pricing. <b>Accept either label; in a lecture-based question about pricing one item below cost to sell profitable add-ons, ‘loss-leader’ is the lecturer’s term.</b></div><div class=\"def\"><b>Book vs lecture — Segmented pricing.</b> Book: One strategy, segmented pricing, with forms: customer-segment, product-form, location and time-based pricing. Lecture: L#37 teaches customer-segment pricing (IndiGo), product-form pricing (Microsoft 365, subscriptions) and yield or time pricing (a Taj room on 31 December) as separate strategies, under ‘differentiated pricing’. Location pricing was not taught. <b>The forms match one for one. ‘Yield pricing’ in the lecture is the book’s time-based pricing, close to its dynamic pricing.</b></div><div class=\"def\"><b>Book vs lecture — Psychological pricing.</b> Book: Psychological pricing and reference prices: price as a quality signal, odd endings, comparison against an expected or earlier price. Lecture: L#36 lists reference price, price–quality inference, price endings, pricing cues, the framing effect and the decoy effect as ways to enlarge the customer-value circle. <b>The lecture’s list is longer. A question where a dearer option is added to make another look cheaper is the decoy effect in the lecture’s terms.</b></div><div class=\"def\"><b>Book vs lecture — Promotional pricing.</b> Book: Temporary prices below list: discounts, special-event pricing, cash rebates, low-interest financing, longer terms and similar. Lecture: L#37 groups loss-leader pricing, special event pricing (Diwali) and special customer pricing (Prime, Zomato Pro, EasyDay Club) together, and adds freemium (Spotify), which this chapter does not cover. <b>Use the lecture’s names for lecture questions; freemium is lecture-only here.</b></div>"
+    }
+   ]
+  },
+  {
+   "id": "imc",
+   "title": "Marketing communications (IMC)",
+   "tag": "Lectures 38, 40",
+   "lede": "The promotion P: how a message wins scarce attention, occupies mental availability and becomes the automatic choice, through the three Cs and brain-friendly, System 1-first content.",
+   "topics": [
+    {
+     "t": "Attention, mental availability and recall",
+     "src": "L#38",
+     "h": "<p>The last module of the course. He framed it as the point where all the strategies and frameworks of the course must actually connect with consumers; integrated marketing communications returns later as an elective in digital marketing and analytics (social media, SEO, SEM).</p><h4>The biological constraint</h4><ul><li>A person meets <b>4,000 to 10,000 ads a day</b>: not only visual ads but notifications, pop-ups, radio, billboards.</li><li>The brain processes about <b>40 bits per second</b> but is exposed to about <b>11 million bits per second</b>.</li><li>So the market is cluttered (HUL, P&amp;G, Minimalist, all advertising at once), and AI-made ads are starting to look alike, so people scroll past them.</li></ul><div class=\"def\"><b>Attention as a filter</b>: the world is too rich to process fully, so the brain processes only what grabs its attention. Attention is a scarce resource; only the <b>right</b> attention gives value to the brand and the customer.</div><div class=\"def\"><b>Mental availability</b>: the space a brand occupies in the mind once it has grabbed attention, repeatedly. What occupies mental availability has higher recall, and recall makes it the default choice.</div><h4>The chain</h4><p><b>Attention → mental availability → recall → brand choice</b>. Say “cola” and people say Coca-Cola; say “mineral water” and they say Bisleri. Brand choice becomes an <b>automatic reflex</b>. That does not mean buying Coca-Cola every time: if it is missing you take Pepsi or Thums Up, but Coca-Cola stays the first choice.</p><p>Out of 100 ads perhaps 10 grab attention, and of those 10 a buyer favours only one or two. The goal is to be among the 10 and then the top one.</p><!--viz:pom-l38-attention-chain--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A chain of seven boxes: three Cs, congruency, engagement, attention, mental availability (highlighted), recall, brand choice.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">From the three Cs to brand choice</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Three Cs</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Congruency</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Engagement</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Attention</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Mental availability</b></div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Recall</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:7px 11px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Brand choice</div></div><p style=\"font-size:13px;color:var(--ink-3);margin-top:8px\">Many ads clear “attention”; only engaging, congruent ones reach mental availability.</p><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Attention alone is not enough: the chain breaks before mental availability if the ad does not engage.</figcaption></figure><!--/viz:pom-l38-attention-chain-->"
+    },
+    {
+     "t": "The three Cs: content, context and concept",
+     "src": "L#38 · L#40",
+     "h": "<p>Creative directors brief every campaign around three Cs. Ads that have all three, talking to each other, are more likely to grab attention, occupy mental availability and be recalled; ads that miss one tend to lose engagement.</p><div class=\"def\"><b>The three Cs of communication</b> (L#38): <b>content</b> (what is in the ad: the words and images), <b>context</b> (the situation the ad speaks to) and <b>concept</b> (the idea that ties them together). When the three agree the ad is <b>congruent</b>, and congruent ads get higher engagement.</div><p><b>Three Cs → congruency → engagement</b>. Anything can grab attention, but only engaging ads occupy mental availability, and only then come recall and choice.</p><h4>Ads that got the three Cs right</h4><ul><li><strong>Volkswagen, precision parking:</strong> no cars at all. A porcupine parks between fish in plastic bags; one slip and a bag bursts. Every rival would show a car parking, so this stands out, adds humour and still explains the attribute.</li><li><strong>Comfort fabric conditioner:</strong> a figure dipped in Comfort is half Hitler, half Gandhi: rigid becomes soft. It grabs attention (why these two in a softener ad?) and then explains the functional benefit, humanising the brand.</li><li><strong>Chupa Chups sugar-free:</strong> ants walk around the lollipop instead of onto it. Colourful first, then the penny drops: no sugar.</li></ul><h4>Ads that missed</h4><div class=\"scroller\"><table><thead><tr><th>Ad</th><th>What went wrong</th></tr></thead><tbody><tr><td><strong>Aspirin optical illusion</strong> (“are the lines straight?”)</td><td>Staring at it gives you a headache, so take aspirin. Content fine; concept weak and context missing, so the Cs don’t talk to each other</td></tr><tr><td><strong>Alia Bhatt for Vicco Vajradanti</strong></td><td>A young star for a toothpaste associated with grandparents. Her fans won’t switch to Vicco for her; incongruent, low engagement. Colgate or Close-Up might have fitted</td></tr><tr><td><strong>Hrithik Roshan for Flamingo</strong></td><td>A famously fit actor selling joint- and back-pain supports. It grabs attention, but an elderly buyer cannot relate; context and concept both miss</td></tr><tr><td><strong>Lux with Shah Rukh Khan</strong> and Hema Malini, Sridevi, Kareena Kapoor, Juhi Chawla</td><td>A man in a bathtub surrounded by four actresses, for a soap. People laugh it off. Content there, context missed, concept not working: you may recall the ad, not choose the soap</td></tr></tbody></table></div><p><strong>Exercise he set:</strong> decode the three Cs of a Zara web ad that drew a 6% click-through rate against about 2% for fashion (NielsenIQ’s average). A beautiful model is content; ask what the context and concept add.</p><!--viz:pom-l38-three-cs-scorecard--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Table scoring seven ads on content, context and concept. Volkswagen parking, Comfort softener and Chupa Chups sugar-free pass all three and engage. The aspirin illusion has content but no context and a weak concept. Vicco with Alia Bhatt, Flamingo with Hrithik Roshan and Lux with Shah Rukh Khan have content but miss context and concept, so engagement is low.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Three Cs scorecard for L#38’s ads</div><div class=\"scroller\"><table><thead><tr><th>Ad</th><th>Content</th><th>Context</th><th>Concept</th><th>Result</th></tr></thead><tbody><tr><td><strong>Volkswagen parking</strong></td><td style=\"background:var(--good-soft)\">✓</td><td style=\"background:var(--good-soft)\">✓</td><td style=\"background:var(--good-soft)\">✓</td><td>engages</td></tr><tr><td><strong>Comfort softener</strong></td><td style=\"background:var(--good-soft)\">✓</td><td style=\"background:var(--good-soft)\">✓</td><td style=\"background:var(--good-soft)\">✓</td><td>engages</td></tr><tr><td><strong>Chupa Chups sugar-free</strong></td><td style=\"background:var(--good-soft)\">✓</td><td style=\"background:var(--good-soft)\">✓</td><td style=\"background:var(--good-soft)\">✓</td><td>engages</td></tr><tr><td><strong>Aspirin illusion</strong></td><td style=\"background:var(--good-soft)\">✓</td><td style=\"background:var(--bad-soft)\">✗</td><td style=\"background:var(--clay-soft)\">weak</td><td>low engagement</td></tr><tr><td><strong>Vicco × Alia Bhatt</strong></td><td style=\"background:var(--good-soft)\">✓</td><td style=\"background:var(--bad-soft)\">✗</td><td style=\"background:var(--bad-soft)\">✗</td><td>low engagement</td></tr><tr><td><strong>Flamingo × Hrithik Roshan</strong></td><td style=\"background:var(--good-soft)\">✓</td><td style=\"background:var(--bad-soft)\">✗</td><td style=\"background:var(--bad-soft)\">✗</td><td>low engagement</td></tr><tr><td><strong>Lux × Shah Rukh Khan</strong></td><td style=\"background:var(--good-soft)\">✓</td><td style=\"background:var(--bad-soft)\">✗</td><td style=\"background:var(--bad-soft)\">✗</td><td>recall of ad, not soap</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Every failed ad had content; what broke was context and concept.</figcaption></figure><!--/viz:pom-l38-three-cs-scorecard--><h4>L#40: decoding an ad, C by C</h4><p>Students asked for the three Cs in more detail, so the last class worked one ad through. His working definitions:</p><ul><li><strong>Context</strong>: the situation in which the product is introduced, i.e. why this ad exists and what need it speaks to.</li><li><strong>Concept</strong>: the storyline, the idea the ad communicates.</li><li><strong>Content</strong>: every element used to tell that story (characters, objects, visuals, words).</li></ul><p><strong>Comfort fabric conditioner, decoded:</strong> the <b>context</b> is that people wash clothes with detergent to get them clean, but detergent leaves them rough and can cause rashes, so they want clothes that are clean <em>and</em> soft. The <b>concept</b> is that even someone as rigid as Hitler turns soft, like Gandhi, once dipped in Comfort. The <b>content</b> is Hitler, Gandhi, the tub of water with Comfort and the hand doing the dipping.</p><p>There is no thumb rule for an ad that grabs attention, he said, but theory and practice both show that ads whose three Cs are present and talking to each other have a far higher chance, whether static ads, dynamic ads, campaigns or collaterals. At HDFC, where he worked in marketing, the brand manager asked for the three Cs in every brief before a campaign could proceed.</p><p><strong>A student’s example, an iPhone ad with a king taking photos:</strong> he had not seen it, but suggested a reading. Context: everyone wants great pictures of themselves and struggles to get them. Concept: how easy the iPhone makes it. Content: the king and every other element. Any ad can be decoded this way; that is where your own creativity comes in.</p><!--viz:pom-l40-comfort-decode--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Three-row table. Context: detergent cleans clothes but leaves them rough, so people want clean and soft clothes. Concept: even the most rigid person turns soft when dipped in Comfort. Content: Hitler, Gandhi, a tub of water with Comfort, and the dipping hand.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Decoding the Comfort ad, C by C</div><div class=\"scroller\"><table><thead><tr><th>C</th><th>Question to ask</th><th>Comfort fabric conditioner</th></tr></thead><tbody><tr><td style=\"background:var(--blue-soft)\"><strong>Context</strong></td><td>What situation or need is the ad speaking to?</td><td>Detergent cleans clothes but leaves them rough; people want them clean and soft</td></tr><tr><td><strong>Concept</strong></td><td>What is the storyline or idea?</td><td>Even the most rigid person turns soft when dipped in Comfort</td></tr><tr><td><strong>Content</strong></td><td>Which elements tell it?</td><td>Hitler, Gandhi, a tub of water with Comfort, the dipping hand</td></tr></tbody></table></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Start from the context, the situation, before naming the concept and its content.</figcaption></figure><!--/viz:pom-l40-comfort-decode-->"
+    },
+    {
+     "t": "System 1 and System 2: brain-friendly content",
+     "src": "L#38",
+     "h": "<p>Attention opens the door; how the information is then processed decides what happens next. He brought in dual process theory, which he credited to Daniel Kahneman and Amos Tversky.</p><div class=\"scroller\"><table><thead><tr><th></th><th>System 1</th><th>System 2</th></tr></thead><tbody><tr><td><strong>Speed</strong></td><td>Fast</td><td>Slow</td></tr><tr><td><strong>Effort</strong></td><td>Low, automatic</td><td>High, controlled</td></tr><tr><td><strong>Style</strong></td><td>Intuitive, impulsive</td><td>Deliberate, analytical, calculating</td></tr><tr><td><strong>His characters</strong></td><td>Daenerys, the impulsive Queen of Dragons; the impulsive friend in <em>Friends</em></td><td>Tywin Lannister, who calculates before acting; the calculating friend in <em>Friends</em></td></tr></tbody></table></div><h4>The wall between marketers and audiences</h4><p>Marketers sit in System 2: they pack ads with technical, analytical information. Audiences sit in System 1: with thousands of ads a day, nobody has time to analyse. The moment people start thinking, rational objections come in. So communication should be <b>System 1 heavy</b> at first, with System 2 elements later: System 1 moves a brand from 100 ads to the top 10, and System 1 and 2 together move it from 10 to 1.</p><p><strong>When the two clash:</strong> the Stroop exercise (call out the ink colour, not the word). When word and colour match it is easy; when they conflict it is chaos. Incongruent ads (Vicco, Flamingo) create the same clash.</p><div class=\"def\"><b>Brain-friendly content</b>: communication built on the three Cs and on System 1 first, so it is processed quickly, engages, grabs attention, occupies mental availability and becomes the automatic choice. His phrase for it: the emergence of brain-friendly content, from his neuromarketing research.</div><div class=\"scroller\"><table><thead><tr><th>Brand</th><th>Brain-friendly move</th><th>Result he quoted</th></tr></thead><tbody><tr><td><strong>Dior</strong> lip shades</td><td>Only the product: a high-resolution close-up of the exact shade and matte finish, no celebrity, no noise</td><td>Evaluation becomes easy</td></tr><tr><td><strong>Hyphen</strong> (Kriti Sanon’s brand)</td><td>Her face close to the product on a light background: attention anchored to the product</td><td>60% unaided recall after a 10-minute delay, against a 30% average</td></tr><tr><td><strong>Tom Ford</strong> perfumes</td><td>Fruit-rich imagery (bitter peach, electric cherry) instead of bottle-only pages</td><td>4% purchase conversion, above the category</td></tr><tr><td><strong>Zara</strong></td><td>A model in office wear; no talk of fabric or price</td><td>6% click-through against about 2%</td></tr></tbody></table></div><h4>Feel, act, explain</h4><p>The old model said consumers think, then feel, then act (System 2 first). Today, he said, they <b>feel first</b> (System 1), <b>then act</b>, <b>then explain</b> their reasons, like grabbing a seat in class and only afterwards saying why it was a good seat. His closing line: marketing succeeds when it aligns with how the brain actually decides, not how consumers believe they decide.</p><!--viz:pom-l38-system1-system2--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"Two boxes side by side. System 1, fast, automatic, intuitive and low effort, is where the audience sits. System 2, slow, deliberate, analytical and high effort, is where marketers sit. Below: System 1 takes a brand from 100 ads to 10; System 1 and 2 together take it from 10 to 1.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">Two systems, one wall</div><div style=\"display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:14px;min-width:0\"><div style=\"padding:10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>System 1</b><br><span style=\"color:var(--ink-2);font-size:13px\">fast · automatic · intuitive · low effort</span><br><span style=\"font-size:13px\">where the <b>audience</b> sits</span></div><div style=\"padding:10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\"><b>System 2</b><br><span style=\"color:var(--ink-2);font-size:13px\">slow · deliberate · analytical · high effort</span><br><span style=\"font-size:13px\">where <b>marketers</b> sit</span></div><div style=\"padding:8px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2);font-size:13px\"><b>100 → 10</b>: System 1 wins a place in the shortlist</div><div style=\"padding:8px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface-2);font-size:13px\"><b>10 → 1</b>: System 1 and 2 together win the choice</div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Lead with System 1 to get shortlisted; bring System 2 in later to close the choice.</figcaption></figure><!--/viz:pom-l38-system1-system2-->"
+    },
+    {
+     "t": "Exam guidance from the last class",
+     "src": "L#40",
+     "h": "<div class=\"def\"><b>From the lecture (L#40), on Quiz 2 and the end-term</b><br>• A quiz is due the following week (Quiz 2).<br>• The end-term (“majors”) covers <b>every module</b> taught, from the recordings.<br>• The end-term is <b>entirely subjective</b>: no MCQs or MSQs. He tests understanding with objective questions only in quizzes and continuous assessment.<br>• Maximum marks for the end-term: <b>60</b>.<br>• His split: continuous assessment (quizzes plus a one-pager assignment he still had to send) <b>40%</b>, end-term <b>60%</b>.<br>• No question asks for a bare definition such as “What is STP?”. He wants your thought process, backed by concepts and frameworks.</div><div class=\"def\"><b>Official LMS announcement (this wins)</b>: Quiz 2 is on Sat 21 Nov 2026, 5:30–6:00 PM IST, MCQ + MSQ; the number of questions and marks are not disclosed; the better of the two quizzes counts, and quizzes are worth <b>30%</b>. Quiz 2 covers all topics taught after Quiz 1. The end-term is offline on Sat 5 Dec 2026, 10 AM–12 PM (2 hours), with no negative marking, worth <b>70%</b>. <b>The weights differ from what he said</b> (40/60 with an assignment); plan by the announcement, and watch the LMS for any word on the one-pager.</div><h4>The kind of questions he has set before</h4><p>He showed questions from earlier papers (some from other courses, which he said to ignore). In paraphrase:</p><ul><li>How do organisations create value for customers? Support with an example.</li><li>What is the difference between a consumer and a customer?</li><li>Selling or marketing: which adds more value to a business? Support your claim with an example.</li><li>“Marketing is like dating.” Agree or disagree, with an example.</li><li>An STP case: Myntra plans a resale platform for used products (“Myntra Recycle”); as a marketing intern, build its segmentation, targeting and positioning for India.</li></ul><h4>How he marks</h4><ul><li><strong>Quality over quantity:</strong> a concept explained well in 10 lines can outscore five pages without substance. There is no word limit and no “10 marks means 5 pages”.</li><li><strong>Back every opinion with a concept or framework</strong>; plain opinion without one will not do. Marketing has no single right answer, so your own view is welcome if the logic holds.</li><li><strong>Use your own examples</strong> from brands you meet; you need not repeat the class examples.</li><li><strong>Format:</strong> bullet points with a short paragraph where needed, rather than long paragraphs. Diagrams, illustrations and block diagrams are encouraged; if you can’t write it, draw it and explain the drawing.</li><li><strong>Order and labels:</strong> answer in any order, but label every answer clearly; mislabelling is your responsibility.</li></ul><h4>Other advice</h4><ul><li><strong>MCQs where every option looks right:</strong> eliminate the ones that are surely wrong first, then weigh the rest for the best fit. The knack builds over several quizzes.</li><li><strong>Study material:</strong> the reference book named in the first class (available openly online) and the class recordings, which he called more than sufficient; questions come from the recordings. There are no official notes: make your own.</li></ul>"
+    },
+    {
+     "t": "Textbook: Engaging Consumers and Communicating Customer Value: Integrated Marketing Communications Strategy",
+     "src": "Kotler & Armstrong 17e ch14",
+     "h": "<p>Promotion is not one tool but a blend of five: advertising, sales promotion, personal selling, public relations, and direct and digital marketing. Because consumers now meet a brand through many fragmented media, the chapter argues for integrated marketing communications (IMC): every touch point must carry one clear, consistent and compelling message. It explains the nine-element communication process, then the steps in building a communication programme: pick the target audience, set the objective (buyer-readiness stage), design the message (AIDA, appeals, structure, format), choose personal or nonpersonal channels, choose a credible source, and collect feedback. It closes with the four budget-setting methods, the strengths of each tool, the push versus pull choice, and legal and ethical limits on communication. For a manager, it is the decision frame for how much to spend on promotion, on which tools, and with what message.</p><!--viz:pom-k-promotion-tools--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A tree headed 'promotion mix: one clear, consistent message (IMC)' with five branches: advertising (a TV spot or reel ad), sales promotion (buy-one-get-one, coupons), personal selling (a salesperson at a car showroom), public relations (a press test-drive that earns reviews) and direct and digital marketing (an app push, a WhatsApp offer, email).\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The five promotion mix tools</div><div style=\"font-size:14px\"><div style=\"text-align:center;margin-bottom:8px\"><span style=\"display:inline-block;padding:7px 12px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\"><b>Promotion mix: one clear, consistent message (IMC)</b></span></div><div style=\"display:flex;flex-wrap:wrap;gap:8px\"><div style=\"padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);flex:1;min-width:130px\"><b>Advertising</b><br><span style=\"color:var(--ink-2);font-size:13px\">paid, non-personal: a TV spot, a reel ad</span></div><div style=\"padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);flex:1;min-width:130px\"><b>Sales promotion</b><br><span style=\"color:var(--ink-2);font-size:13px\">short-term push: buy-one-get-one, coupons</span></div><div style=\"padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);flex:1;min-width:130px\"><b>Personal selling</b><br><span style=\"color:var(--ink-2);font-size:13px\">a salesperson at a car showroom</span></div><div style=\"padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);flex:1;min-width:130px\"><b>Public relations</b><br><span style=\"color:var(--ink-2);font-size:13px\">a press test-drive that earns reviews</span></div><div style=\"padding:7px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface);flex:1;min-width:130px\"><b>Direct &amp; digital</b><br><span style=\"color:var(--ink-2);font-size:13px\">an app push, a WhatsApp offer, email</span></div></div></div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">IMC means the five tools carry one message; L#38’s three Cs make that message congruent within each ad.</figcaption></figure><!--/viz:pom-k-promotion-tools--><!--viz:pom-k-communication-process--><figure style=\"margin:16px 0;padding:14px 12px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface)\" aria-label=\"A chain: sender, encoding (highlighted), message and media, decoding, receiver, response, feedback, then back to the sender. A band underneath says noise can distort any step, such as a doorbell during the ad, a rival's message or a joke the audience doesn't get.\"><div style=\"font-family:var(--display);font-weight:700;font-size:14.5px;line-height:1.3;margin-bottom:10px;color:var(--ink)\">The communication process</div><div style=\"display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:14px\"><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Sender</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border:1px solid var(--blue);border-radius:4px;background:var(--blue-soft)\">Encoding</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Message + media</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Decoding</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Receiver</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Response</div><span style=\"color:var(--ink-3)\">→</span><div style=\"padding:6px 10px;border:1px solid var(--rule-2);border-radius:4px;background:var(--surface)\">Feedback</div><span style=\"color:var(--ink-3)\">↺ back to Sender</span></div><div style=\"margin-top:8px;padding:6px 10px;border:1px dashed var(--clay);border-radius:4px;background:var(--clay-soft);font-size:13px\"><b>Noise</b> can distort any step: a doorbell during the ad, a rival’s message, a joke the audience doesn’t get</div><figcaption style=\"margin-top:10px;font-size:13px;line-height:1.45;color:var(--ink-3)\">Encoding is where the three Cs live: the sender turns an idea into content the receiver can decode.</figcaption></figure><!--/viz:pom-k-communication-process--><p><strong>The five promotion mix tools</strong> — The promotion (marketing communications) mix is the blend of advertising, sales promotion, personal selling, public relations and direct and digital marketing a firm uses to engage customers and communicate value. Each tool has its own sub-tools: advertising covers TV, print, online and outdoor; sales promotion covers coupons, discounts and displays; PR covers press releases, sponsorships and events.<br><em>e.g.</em> A new biscuit brand might run TV ads, offer a buy-two-get-one deal in kiranas, place stories in food columns and run an Instagram contest — four tools, one campaign.</p><p><strong>The whole marketing mix communicates</strong> — Promotion is the main communication activity, but product design, price, package shape and colour, and the stores that stock a product all send signals too. So the entire 4P mix must be coordinated, not just the promotion budget.</p><p><strong>The new marketing communications model</strong> — Three shifts are changing communication: consumers are better informed and can create brand content themselves; mass markets have fragmented so firms target micromarkets; and digital technology has added many new, targeted, interactive media. Mass media still matter but now share budgets with online, mobile and social channels.</p><p><strong>Content marketing</strong> — Marketers increasingly see themselves as content managers who create, inspire and share brand messages with and among consumers across a mix of paid, owned, earned and shared channels, both traditional and digital, controlled and uncontrolled.</p><p><strong>Integrated marketing communications (IMC)</strong> — Consumers merge every brand message, whatever its source, into one impression, so conflicting messages from the ad agency, PR team and social media team confuse the brand's position. IMC coordinates all channels so they deliver one clear, consistent, compelling message. Some firms appoint a marketing communications director to own this.<br><em>e.g.</em> Snickers keeps one idea — hunger changes who you are — across TV, print, wrappers and social contests.</p><p><strong>Elements of the communication process</strong> — Nine elements: two parties (sender, receiver), two tools (message, media), four functions (encoding, decoding, response, feedback), and noise. Communication works best when the sender's field of experience overlaps the receiver's, so that encoding matches how the audience will decode.<br><span style=\"font-family:var(--mono)\">Sender → encoding → message/media → decoding → receiver → response → feedback (noise throughout)</span></p><p><strong>Steps in developing marketing communication</strong> — Six steps in the book: identify the target audience, determine the communication objectives, design the message, choose channels and media, select the message source, and collect feedback. The audience drives what is said, how, when, where and by whom.</p><p><strong>Buyer-readiness stages</strong> — The communication objective depends on where the audience stands: awareness, knowledge, liking, preference, conviction, purchase. Early stages need awareness-building; middle stages need persuasion; the final stage often needs an incentive to act. Good communication cannot rescue a poor product; it only spreads knowledge of its faults faster.<br><span style=\"font-family:var(--mono)\">Awareness → knowledge → liking → preference → conviction → purchase</span></p><p><strong>AIDA and message content</strong> — An ideal message gets Attention, holds Interest, arouses Desire and obtains Action. Content uses one of three appeals: rational (self-interest — quality, economy, performance), emotional (love, humour, fear, guilt, pride), or moral (what is right and proper, often for social causes).</p><p><strong>Message structure and format</strong> — Three structure choices: draw a conclusion or let the audience draw it; put the strongest argument first or last; use a one-sided or two-sided argument. Two-sided messages (admitting a weakness) work better with educated audiences, audiences likely to hear counter-claims, or when overcoming a negative association. Format covers headline, copy, colour, motion, sound and even package texture.</p><p><strong>Personal and nonpersonal channels</strong> — Personal channels involve people communicating directly (face to face, phone, chat), including company salespeople, independent experts, and friends' word of mouth. Nonpersonal channels carry messages without personal contact: major media (print, broadcast, display, online), atmospheres (designed spaces) and events. Mass media often work indirectly, through opinion leaders who pass messages on.</p><p><strong>Message source credibility</strong> — Messages from credible or popular sources persuade more, which is why firms use experts (doctors, dentists) and celebrity endorsers. The risk is that a celebrity's scandal can tarnish every brand they endorse, so fit and reliability matter.</p><p><strong>Four budget-setting methods</strong> — Affordable (spend what is left after other costs — often underspends), percentage-of-sales (simple, but treats sales as the cause of promotion rather than the result), competitive-parity (match rivals — assumes they know best), and objective-and-task (define objectives, list tasks, cost them). The book calls objective-and-task the most logical but the hardest to use.</p><p><strong>Nature of each promotion tool</strong> — Advertising: wide reach, low cost per exposure, repeatable, expressive, but one-way and impersonal. Personal selling: best for building preference, conviction and action; most expensive per contact and hard to resize. Sales promotion: strong short-term incentive, 'buy it now'. PR: highly believable, reaches ad-avoiders, often underused. Direct and digital: targeted, immediate, personalised, interactive.</p><p><strong>Push versus pull strategy</strong> — Push directs personal selling and trade promotion at channel members so they stock and promote the product. Pull directs advertising, consumer promotion and digital media at final consumers so their demand pulls the product through the channel. Most large firms combine both; B2B firms lean to push (personal selling first), B2C firms lean to pull (advertising first).</p><div class=\"card\"><strong>Case: Snickers 'You're not you when you're hungry'</strong> <em>(Chapter opener: Snickers)</em><p>Mars kept Snickers' long-standing 'satisfies' positioning but refreshed it with a creative big idea — hunger turns you into someone else. Starting with a Super Bowl ad, the theme ran across TV, print, mood-labelled wrappers, influencer videos and user contests in many countries, and the brand overtook rivals to lead global sweet snacks.</p><p><em>Lesson:</em> IMC: one positioning, many coordinated media and formats.</p><p><em>Think:</em> Why did Mars extend the existing positioning instead of replacing it, and what would have been lost if each medium had run its own theme?</p></div><div class=\"card\"><strong>Case: Pokémon Go's offline-to-online launch</strong> <em>(Real Marketing 14.1: Pokémon Go)</em><p>Niantic and Nintendo launched a free location-based augmented-reality game aimed at nostalgic Millennials. With almost no paid advertising, it relied on teaser trailers, influencers, field tests and in-game sharing, so players created the content and buzz that drove record downloads.</p><p><em>Lesson:</em> Word of mouth, buzz and user-generated content as promotion built into the product.</p><p><em>Think:</em> Which of the five promotion tools did Pokémon Go barely use, and what conditions made that choice workable?</p></div><div class=\"card\"><strong>Case: Volvo Trucks 'Live Tests'</strong> <em>(Company Case: Volvo Trucks)</em><p>Launching five new heavy trucks, Volvo Trucks hired a consumer creative agency instead of a B2B specialist and released stunt films on YouTube — most famously a martial-arts star doing the splits between two reversing trucks. Trade print ads, engineer interviews and social media supported the films, building huge views, editorial coverage and dealer enquiries on a small budget.</p><p><em>Lesson:</em> IMC and pull-style consumer communication used by a B2B marketer.</p><p><em>Think:</em> Volvo's buyers are fleet owners. Why would reaching the general public help sell trucks, and would the same approach suit every B2B firm?</p></div><details><summary>Worked problem: Reading communication feedback</summary><p>A Pune furniture chain surveys its city: 75% of residents recall its ads; of these, 60% visited a store last month; of visitors, only 25% were satisfied. A rival chain finds 30% recall, 40% of those visited, and 85% of visitors were satisfied. What should each chain fix?</p><ol><li>Chain A: awareness is high (75%) and converts well into visits (0.75 × 0.60 = 45% of residents visit), but only 25% of visitors are satisfied, so about 11% of residents end up happy.</li><li>The bottleneck for A is the store experience, not promotion: keep the communication programme and improve the product or service.</li><li>Chain B: only 30% aware and 0.30 × 0.40 = 12% visit, but 85% of visitors are satisfied (about 10% of residents).</li><li>The bottleneck for B is awareness: strengthen promotion to exploit its strong in-store satisfaction.</li></ol><p><strong>Answer:</strong> Chain A should fix the shopping experience; Chain B should spend more on promotion.</p></details><details><summary>Worked problem: Comparing budget methods</summary><p>A snack start-up had last-year sales of ₹4 crore. The industry spends about 8% of sales on promotion; the main rival spends ₹45 lakh. After all other costs the founders have ₹20 lakh left. Their plan to reach 40% awareness in two cities needs influencer content (₹12 lakh), regional TV (₹25 lakh) and sampling (₹8 lakh). What budget does each method give?</p><ol><li>Affordable: what is left over = ₹20 lakh.</li><li>Percentage-of-sales: 8% × ₹4 crore = ₹32 lakh.</li><li>Competitive parity: match the rival = ₹45 lakh.</li><li>Objective-and-task: ₹12 + ₹25 + ₹8 = ₹45 lakh.</li></ol><p><strong>Answer:</strong> ₹20 lakh, ₹32 lakh, ₹45 lakh and ₹45 lakh. Only objective-and-task links the figure to a stated goal; the parity figure matches it here by coincidence.</p></details><div class=\"def\"><b>Book vs lecture — How communication is framed.</b> Book: Five promotion mix tools (advertising, sales promotion, personal selling, public relations, direct and digital marketing), integrated so every touch point carries one consistent message. Lecture: L#38 did not list promotion tools. It framed marketing communications as winning scarce attention (4,000–10,000 ads a day, 40 bits a second processed): attention → mental availability → recall → brand choice. The lecturer’s reference, Kotler–Keller, splits communication into eight modes (advertising, sales promotion, events and experiences, PR and publicity, online and social, mobile, direct and database, personal selling). <b>For lecture-based questions, use the attention chain and the three Cs. The five tools are the book’s frame of the same module; if eight modes appear, events, mobile and online/social are split out of the book’s PR and direct-and-digital tools.</b></div><div class=\"def\"><b>Book vs lecture — Response models.</b> Book: Six buyer-readiness stages (awareness, knowledge, liking, preference, conviction, purchase) for objectives, and AIDA for message design. Lecture: L#38: attention → mental availability → recall → choice, and a reversed order of decision: consumers feel (System 1), act, then explain, instead of thinking first. <b>AIDA’s ‘attention’ is L#38’s first link. The book’s stages assume thinking comes first; the lecture argues feeling comes first. Name the model the question asks about.</b></div><div class=\"def\"><b>Book vs lecture — Designing the message.</b> Book: Message content (rational, emotional, moral appeals), structure and format, with AIDA as the test. Lecture: L#38 and L#40’s three Cs: content (the elements), context (the situation), concept (the idea). When they agree the ad is congruent and engaging; incongruent ads may grab attention but are not recalled or chosen. Lead with System 1 (brain-friendly content), add System 2 later. <b>Use the three Cs and congruency for lecture questions; they sit inside the book’s ‘designing the message’ step.</b></div><div class=\"def\"><b>Book vs lecture — Message source.</b> Book: Credible, likeable sources work better; a celebrity must fit the product. Lecture: L#38’s failed celebrity ads (Alia Bhatt for Vicco Vajradanti, Hrithik Roshan for Flamingo, Shah Rukh Khan for Lux) are failures of congruency: the star grabs attention but does not fit the product or its buyers. <b>Same lesson. In the lecture’s words, fit is congruency; fame alone doesn’t create engagement.</b></div><div class=\"def\"><b>Book vs lecture — Steps in developing communications.</b> Book: Six steps: target audience, objectives, message, channels, source, feedback; budget and mix come separately. Lecture: Not covered in L#38 or L#40. The Kotler–Keller reference runs a longer sequence that folds in the budget, the communications mix, measuring results and managing IMC. <b>These steps, the budget methods and push vs pull come from the book only; learn them from this chapter.</b></div>"
+    }
+   ]
   }
  ],
  "topics": [
@@ -764,6 +874,22 @@ HUB.addCourse({
   {
    "name": "Product strategy",
    "unit": "product"
+  },
+  {
+   "name": "Pricing",
+   "unit": "pricing"
+  },
+  {
+   "name": "Pricing strategies",
+   "unit": "pricing"
+  },
+  {
+   "name": "Marketing communications",
+   "unit": "imc"
+  },
+  {
+   "name": "IMC & promotion mix",
+   "unit": "imc"
   }
  ],
  "traps": [
@@ -1807,6 +1933,286 @@ HUB.addCourse({
    "p": "The textbook defines co-branding as two companies’ brand names on the same product, a brand sponsorship option. The lecture adds that the pair creates a new product, splits it into composite and ingredient types, and treats it as a way to grow the portfolio. Use the lecture’s two types in the quiz.",
    "f": "two types: lecture",
    "lec": 35
+  },
+  {
+   "id": "pom-t0153",
+   "h": "Price, pricing and pricing strategy are three different things",
+   "p": "Price is the amount (99). Pricing is the process that reached it (adding content, platform, marketing, cess and overheads). Pricing strategy is what that price is meant to achieve (reaching tier-3 and tier-4 towns). A question about the build-up wants pricing, not price.",
+   "f": "amount · process · purpose",
+   "lec": 36
+  },
+  {
+   "id": "pom-t0154",
+   "h": "In the 3C framework customer value dominates, not cost",
+   "p": "Cost sets a floor and competitors set a band, but L#36 called customer value the most important circle because it has no upper limit: it rises with what buyers perceive and what you promise (the ₹1,500 toothpaste, the ₹2 crore watch).",
+   "f": "value has no ceiling",
+   "lec": 36
+  },
+  {
+   "id": "pom-t0155",
+   "h": "Samsung’s objective was maximum current profit, not maximum market share",
+   "p": "Samsung sells at every price tier, which looks like a share play, but L#36 classed it as maximising current profit in every segment it serves. Jio, which accepted losses to grab the market, is the market-share case.",
+   "f": "every tier ≠ share grab",
+   "lec": 36
+  },
+  {
+   "id": "pom-t0156",
+   "h": "L#36’s markup is on cost; Kotler & Armstrong’s markup formula is on selling price",
+   "p": "In L#36, cost ₹100 with a 5% markup gives ₹105 (markup on cost). The textbook’s markup price is unit cost ÷ (1 − desired return on sales), which gives about ₹105.26 for the same numbers. Use the lecture’s method unless a question names the book’s formula.",
+   "f": "markup on cost vs on price",
+   "lec": 36
+  },
+  {
+   "id": "pom-t0157",
+   "h": "Skimming cuts the price of the same product; it does not launch cheaper versions",
+   "p": "Sony’s ₹4 lakh Bravia becomes ₹2.5 lakh and then ₹1 lakh over years: the same model, reaching new layers of buyers. Launching a stripped-down cheaper model is a different decision (a line stretch, from Module 6).",
+   "f": "same product, lower price",
+   "lec": 36
+  },
+  {
+   "id": "pom-t0158",
+   "h": "Fun Flips stayed inelastic because its price rose gradually",
+   "p": "Fun Flips went from ₹4 to about ₹20 without losing buyers, but L#36 stressed the rise was spread over time. The same jump in two years would, he said, have behaved elastically and sent buyers to rivals.",
+   "f": "slow rise kept demand inelastic",
+   "lec": 36
+  },
+  {
+   "id": "pom-t0159",
+   "h": "A loss leader is not a loss-making business",
+   "p": "Gillette sells the Mach3 razor at ₹99, near its making cost, but earns on blade refills bought for years. The loss on one item is planned to stimulate sales of other, profitable items.",
+   "f": "lose on razor, win on blades",
+   "lec": 37
+  },
+  {
+   "id": "pom-t0160",
+   "h": "Product-form pricing changes the bundle; customer-segment pricing changes who pays",
+   "p": "Microsoft 365’s plans differ in what you get (product form). IndiGo’s student fare is the same seat for a different kind of buyer (customer segment). Ask whether the offer or the buyer differs.",
+   "f": "different bundle vs different buyer",
+   "lec": 37
+  },
+  {
+   "id": "pom-t0161",
+   "h": "Yield pricing charges more for the same room because of timing, not quality",
+   "p": "The Taj room cost about ₹20,000 on 31 December and about ₹7,800 on 8–9 December with the same room type and inclusions. Scarcity and the buyer’s urgency move the price.",
+   "f": "same room, different date",
+   "lec": 37
+  },
+  {
+   "id": "pom-t0162",
+   "h": "Freemium earns from volume, not from every user",
+   "p": "Spotify gives the base service away and charges a modest fee for extras. L#37 called it a volume play: a small share of a huge free base pays.",
+   "f": "free base, paid extras",
+   "lec": 37
+  },
+  {
+   "id": "pom-t0163",
+   "h": "Price explains most of perceived value, but not all",
+   "p": "In the Deloitte reading, price perception accounts for roughly 60–90% of value perception, leaving 10–40% to quality, staff attitude and trust. That gap is why MVP brands exist at high prices too.",
+   "f": "price ≈ most, not all, of value",
+   "lec": 37
+  },
+  {
+   "id": "pom-t0164",
+   "h": "Grabbing attention is not the same as occupying mental availability",
+   "p": "Hrithik Roshan’s Flamingo ad and Alia Bhatt’s Vicco ad grab attention because of the star, but they are incongruent, so they don’t engage, don’t occupy mental availability and aren’t recalled or chosen.",
+   "f": "noticed ≠ remembered",
+   "lec": 38
+  },
+  {
+   "id": "pom-t0165",
+   "h": "A famous endorser can hurt an ad if the fit is wrong",
+   "p": "L#38’s failures all had stars: Alia Bhatt for an elders’ toothpaste, a super-fit actor for joint pain, Shah Rukh Khan in a bathtub for soap. Fit (congruency) matters more than fame.",
+   "f": "fame without fit fails",
+   "lec": 38
+  },
+  {
+   "id": "pom-t0166",
+   "h": "“Automatic reflex” brand choice doesn’t mean always buying that brand",
+   "p": "Coca-Cola is the first choice for cola because it occupies mental availability, but if it is unavailable the buyer takes Pepsi or Thums Up. The reflex is about first recall and first preference.",
+   "f": "first choice, not only choice",
+   "lec": 38
+  },
+  {
+   "id": "pom-t0167",
+   "h": "Consumers feel, act, then explain, not think, feel, act",
+   "p": "L#38’s model puts System 1 first: people feel, act, and only then rationalise (choosing a seat in class, then explaining why). Ads that lead with analysis invite rational objections.",
+   "f": "feel → act → explain",
+   "lec": 38
+  },
+  {
+   "id": "pom-t0168",
+   "h": "Brain-friendly content still uses System 2, just later",
+   "p": "He did not say drop System 2. System 1 gets a brand from 100 ads to the top 10; System 1 and System 2 together take it from 10 to 1. Leading with dense technical detail is the mistake.",
+   "f": "System 1 first, not only",
+   "lec": 38
+  },
+  {
+   "id": "pom-t0169",
+   "h": "Context is the situation; concept is the story; content is the stuff",
+   "p": "In the Comfort ad, the need for clean yet soft clothes is the context, Hitler turning into Gandhi is the concept, and the characters, tub and hand are the content. Students often swap context and concept.",
+   "f": "situation · story · stuff",
+   "lec": 40
+  },
+  {
+   "id": "pom-t0170",
+   "h": "The lecturer’s 40/60 split is not the official grading",
+   "p": "In L#40 he said continuous assessment (quizzes plus a one-pager) is 40% and the end-term 60%. The official LMS announcement gives quizzes 30% (better of two) and the offline end-term 70%. The announcement wins.",
+   "f": "announcement beats lecture",
+   "lec": 40
+  },
+  {
+   "id": "pom-t0171",
+   "h": "Customer value sets the ceiling; cost sets the floor",
+   "p": "Above perceived value, customers won't buy. Below cost, the firm loses money. Reversing the two is a common slip, and so is thinking competitors set the ceiling: they shape where you sit between the two.",
+   "f": "value caps, cost floors",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-t0172",
+   "h": "A markup on selling price is not the same as a markup on cost",
+   "p": "A 25% markup on cost turns ₹80 into ₹100. A 25% margin on selling price needs ₹80 ÷ 0.75 = ₹106.67. The book's markup formula is on the selling price, and a 50% margin on price equals a 100% markup on cost.",
+   "f": "÷(1−m) on price, ×(1+m) on cost",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-t0173",
+   "h": "Value-based pricing sets the price first, then designs to cost",
+   "p": "Cost-based: product → cost → price → convince buyers. Value-based: customer value → target price → allowable cost → product design. If a question says the price was fixed before the product was designed, it is value-based (or target costing).",
+   "f": "value-based runs backwards",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-t0174",
+   "h": "Good value does not mean low price",
+   "p": "A very expensive product can be good value if its perceived benefits exceed the price, as with an heirloom luxury watch. Good-value pricing is about the fair mix of quality and price, not the lowest number.",
+   "f": "value ≠ cheap",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-t0175",
+   "h": "A higher price lowers break-even volume but may lower profit",
+   "p": "A higher price raises the contribution per unit, so fewer units are needed to break even, but demand at that price may fall below even that lower volume. Choose the price with the highest expected profit, not the lowest break-even point.",
+   "f": "low break-even ≠ max profit",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-t0176",
+   "h": "Elasticity is negative; read its size, not its sign",
+   "p": "Because price and quantity normally move in opposite directions, elasticity is negative. |E| > 1 is elastic (a price cut raises revenue); |E| < 1 is inelastic (a price rise raises revenue). An elasticity of −0.4 is inelastic, not 'negative demand'.",
+   "f": "size > 1 = elastic",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-t0177",
+   "h": "Variable cost per unit stays constant; total variable cost changes",
+   "p": "The book calls them variable because the total varies with output, even though the cost of each unit is roughly the same. Fixed cost per unit falls as output rises because the same total is spread over more units.",
+   "f": "per-unit fixed falls, per-unit variable flat",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-t0178",
+   "h": "Competition-based pricing does not mean matching the rival's price",
+   "p": "The book says the goal is to set price according to the relative value created versus competitors. A firm that delivers more value can charge more, as the premium earth-mover maker in the chapter does.",
+   "f": "price the value gap",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-t0179",
+   "h": "Skimming needs barriers to entry; penetration needs price-sensitive buyers and falling costs",
+   "p": "Skim only if the image supports a high price, small-volume costs are bearable and rivals can't easily undercut you. Penetrate only if demand is price-sensitive, unit costs fall with volume and the low price deters entry. Picking a strategy whose conditions aren't met is the usual error in case questions.",
+   "f": "skim behind walls, penetrate on volume",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-t0180",
+   "h": "Captive products are required; optional products are not",
+   "p": "Ink for a printer or pods for a coffee machine must be bought to use the main product, so they are captive-product pricing. A sunroof or extended warranty can be skipped, so it is optional-product pricing.",
+   "f": "must = captive, may = optional",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-t0181",
+   "h": "Segmented price differences are not based on cost",
+   "p": "If a price difference simply reflects a cost difference, it is not segmented pricing. Business class costs the airline somewhat more, but the price gap is far larger than the cost gap. That excess is what makes it segmented (product-form) pricing.",
+   "f": "price gap > cost gap",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-t0182",
+   "h": "Uniform-delivered is the opposite of FOB-origin",
+   "p": "FOB-origin: each buyer pays the actual freight from the factory, so near buyers pay less. Uniform-delivered: everyone pays the same average freight, so near buyers subsidise far ones. Zone pricing sits between them.",
+   "f": "FOB = own freight, uniform = average",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-t0183",
+   "h": "Predatory pricing depends on intent",
+   "p": "Selling below cost to clear excess inventory is legal. Selling below cost to drive a competitor out is predatory. Because intent is hard to prove, accusations rarely become lawsuits.",
+   "f": "why below cost matters",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-t0184",
+   "h": "Price-fixing is within a channel level; resale price maintenance is across levels",
+   "p": "Competitors agreeing on prices with each other is price-fixing, illegal per se. A manufacturer forcing dealers to charge a set retail price (and punishing those who don't) is resale price maintenance. A suggested retail price is allowed; enforcing it is not.",
+   "f": "rivals collude vs maker dictates",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-t0185",
+   "h": "Cutting price is not the only answer to a rival's price cut",
+   "p": "The book lists five responses: keep the price, cut it, raise perceived value without changing price, raise both quality and price, or introduce a fighter brand. Matching the cut while lowering quality to protect margins hurts long-run share.",
+   "f": "five responses, not one",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-t0186",
+   "h": "Unpaid news coverage is PR, not advertising",
+   "p": "Advertising needs all three: paid, nonpersonal, identified sponsor. A favourable newspaper review the firm did not pay for is publicity, a PR outcome.",
+   "f": "paid + sponsor = advertising",
+   "bk": "Kotler & Armstrong 17e ch14"
+  },
+  {
+   "id": "pom-t0187",
+   "h": "Encoding is a process; the message is the result",
+   "p": "Encoding is turning an idea into symbols (words, images, jingle). The message is the set of symbols actually transmitted. Decoding is the receiver assigning meaning to them.",
+   "f": "encode → message → decode",
+   "bk": "Kotler & Armstrong 17e ch14"
+  },
+  {
+   "id": "pom-t0188",
+   "h": "Push targets the channel; pull targets the consumer",
+   "p": "Push = personal selling and trade promotion aimed at wholesalers and retailers. Pull = advertising and consumer promotion aimed at end users so they demand the brand. Trade promotion is a push tool even though it is 'sales promotion'.",
+   "f": "push trade, pull consumer",
+   "bk": "Kotler & Armstrong 17e ch14"
+  },
+  {
+   "id": "pom-t0189",
+   "h": "Percentage-of-sales gets cause and effect backwards",
+   "p": "It treats sales as the cause of promotion rather than its result, and ties the budget to funds available rather than opportunities, so it cuts spending exactly when falling sales may need more.",
+   "f": "sales are the result",
+   "bk": "Kotler & Armstrong 17e ch14"
+  },
+  {
+   "id": "pom-t0190",
+   "h": "Competitive parity does not prevent promotion wars",
+   "p": "Its two defences — rivals' collective wisdom and avoiding wars — are both rejected in the book: rivals have no better idea of your needs, and there is no evidence it prevents wars.",
+   "f": "matching ≠ peace",
+   "bk": "Kotler & Armstrong 17e ch14"
+  },
+  {
+   "id": "pom-t0191",
+   "h": "Events and atmospheres are nonpersonal channels",
+   "p": "They feel experiential, but they carry messages without person-to-person contact or feedback. Personal channels need two or more people communicating directly.",
+   "f": "no conversation = nonpersonal",
+   "bk": "Kotler & Armstrong 17e ch14"
+  },
+  {
+   "id": "pom-t0192",
+   "h": "AIDA describes a message; buyer-readiness stages set the objective",
+   "p": "Buyer-readiness stages (six) say where the audience is and what response to seek. AIDA (four) describes what a good message should do. Mixing them up is a common slip.",
+   "f": "stages = objective, AIDA = message",
+   "bk": "Kotler & Armstrong 17e ch14"
   }
  ],
  "defs": [
@@ -3195,6 +3601,486 @@ HUB.addCourse({
    "term": "Co-marketing",
    "html": "<b>Co-marketing</b>: a brand works with a partner, such as a celebrity endorser, to market its products without the partner bringing a product of its own (Levi’s with Deepika Padukone).",
    "lec": 35
+  },
+  {
+   "id": "pom-d0176",
+   "unit": "pricing",
+   "topic": "Price, pricing and pricing strategy: the 3C framework",
+   "term": "Price, pricing and pricing strategy",
+   "html": "<b>Price</b>: the amount a customer pays. <b>Pricing</b>: the process of arriving at that amount. <b>Pricing strategy</b>: the overall approach a business uses to set and adjust prices to meet its objectives (L#36).",
+   "lec": 36
+  },
+  {
+   "id": "pom-d0177",
+   "unit": "pricing",
+   "topic": "Price, pricing and pricing strategy: the 3C framework",
+   "term": "3C pricing framework",
+   "html": "<b>3C pricing framework</b> (L#36): the ideal price lies where <b>cost to the company</b>, <b>competitors’ price</b> and <b>customer value</b> overlap. Customer value is the dominant circle because it has no upper limit.",
+   "lec": 36
+  },
+  {
+   "id": "pom-d0178",
+   "unit": "pricing",
+   "topic": "Pricing psychology: how firms build customer value",
+   "term": "Reference price",
+   "html": "<b>Reference price</b>: what buyers expect to pay, judged against competitors’ prices or an earlier advertised price. Lifebuoy (₹17) invites comparison with Dettol (₹38) on price.",
+   "lec": 36
+  },
+  {
+   "id": "pom-d0179",
+   "unit": "pricing",
+   "topic": "Pricing psychology: how firms build customer value",
+   "term": "Price–quality inference",
+   "html": "<b>Price–quality inference</b>: buyers’ belief that a higher price signals higher quality, so a premium price quietly communicates quality (Bose against Zook, L#36).",
+   "lec": 36
+  },
+  {
+   "id": "pom-d0180",
+   "unit": "pricing",
+   "topic": "Pricing psychology: how firms build customer value",
+   "term": "Decoy effect",
+   "html": "<b>Decoy effect</b>: adding a third, less attractive option changes how buyers judge the original two. Starbucks’ ₹330 medium makes the ₹370 large look only ₹40 dearer.",
+   "lec": 36
+  },
+  {
+   "id": "pom-d0181",
+   "unit": "pricing",
+   "topic": "Pricing objectives and the six steps to set a price",
+   "term": "Market skimming",
+   "html": "<b>Market skimming</b> (a pricing objective in L#36): launch at a high price for buyers who can pay, then cut the price of the same product in steps to reach each next layer of buyers (Sony, Apple).",
+   "lec": 36
+  },
+  {
+   "id": "pom-d0182",
+   "unit": "pricing",
+   "topic": "Pricing objectives and the six steps to set a price",
+   "term": "Everyday low pricing (EDLP)",
+   "html": "<b>Everyday low pricing (EDLP)</b>: pricing chosen items below rivals every day (Walmart). It earns through volume rather than margin, and makes losses if volume fails to cover cost.",
+   "lec": 36
+  },
+  {
+   "id": "pom-d0183",
+   "unit": "pricing",
+   "topic": "Reading: KVCs and KVIs in retail pricing (McKinsey, 2015)",
+   "term": "Key value item (KVI)",
+   "html": "<b>Key value item (KVI)</b>: an item shoppers watch closely and use to judge a store’s prices, so the retailer prices it sharply against reference competitors (McKinsey reading, L#36).",
+   "lec": 36
+  },
+  {
+   "id": "pom-d0184",
+   "unit": "pricing",
+   "topic": "Common pricing strategies",
+   "term": "Loss-leader (promotional) pricing",
+   "html": "<b>Loss-leader pricing</b>: pricing one item aggressively, even below cost, to stimulate sales of other, profitable items. L#37 grouped it with captive and ancillary pricing (Gillette Mach3 at ₹99).",
+   "lec": 37
+  },
+  {
+   "id": "pom-d0185",
+   "unit": "pricing",
+   "topic": "Common pricing strategies",
+   "term": "Captive (ancillary) pricing",
+   "html": "<b>Captive pricing</b>: a cheap base product locks buyers in, and the profit comes from the consumables they must keep buying (Gillette blades, HP cartridges).",
+   "lec": 37
+  },
+  {
+   "id": "pom-d0186",
+   "unit": "pricing",
+   "topic": "Common pricing strategies",
+   "term": "Customer-segment pricing",
+   "html": "<b>Customer-segment (differentiated) pricing</b>: charging different prices to different segments for the same product (IndiGo fares for students, armed forces, senior citizens, doctors and nurses).",
+   "lec": 37
+  },
+  {
+   "id": "pom-d0187",
+   "unit": "pricing",
+   "topic": "Common pricing strategies",
+   "term": "Product-form pricing",
+   "html": "<b>Product-form pricing</b>: offering the same base product in several forms with more or fewer inclusions, each at its own price, to serve a heterogeneous market (Microsoft 365 plans).",
+   "lec": 37
+  },
+  {
+   "id": "pom-d0188",
+   "unit": "pricing",
+   "topic": "Common pricing strategies",
+   "term": "Freemium pricing",
+   "html": "<b>Freemium</b> (free + premium): the base service is free and extras cost a fee (Spotify’s ad-free listening and better audio). It plays on volume, not value per user.",
+   "lec": 37
+  },
+  {
+   "id": "pom-d0189",
+   "unit": "pricing",
+   "topic": "Common pricing strategies",
+   "term": "Yield (time) pricing",
+   "html": "<b>Yield (time) pricing</b>: the same room, seat or service is priced by when it is bought, using scarcity and urgency (a Taj room on 31 December against early December).",
+   "lec": 37
+  },
+  {
+   "id": "pom-d0190",
+   "unit": "pricing",
+   "topic": "Common pricing strategies",
+   "term": "Special customer pricing",
+   "html": "<b>Special customer pricing</b>: member-only prices and perks that make customers feel special (Amazon Prime, Zomato Pro, EasyDay Club).",
+   "lec": 37
+  },
+  {
+   "id": "pom-d0191",
+   "unit": "pricing",
+   "topic": "Reading: the value-seeking consumer (Deloitte, 2025)",
+   "term": "MVP brand (Deloitte)",
+   "html": "<b>MVP brand</b> (“more value for the price”, Deloitte 2025 reading): a brand perceived as worth at least 10% more than its price alone would predict. MVPs exist at every price level.",
+   "lec": 37
+  },
+  {
+   "id": "pom-d0192",
+   "unit": "imc",
+   "topic": "Attention, mental availability and recall",
+   "term": "Attention as a filter",
+   "html": "<b>Attention as a filter</b> (L#38): because the brain handles about 40 bits a second against roughly 11 million bits of input, it processes only what grabs its attention. Attention is a scarce resource.",
+   "lec": 38
+  },
+  {
+   "id": "pom-d0193",
+   "unit": "imc",
+   "topic": "Attention, mental availability and recall",
+   "term": "Mental availability",
+   "html": "<b>Mental availability</b>: the space a brand occupies in the mind after winning the right attention repeatedly. It drives recall, and recall makes the brand the automatic first choice.",
+   "lec": 38
+  },
+  {
+   "id": "pom-d0194",
+   "unit": "imc",
+   "topic": "The three Cs: content, context and concept",
+   "term": "Three Cs of communication",
+   "html": "<b>Three Cs of communication</b> (L#38): <b>content</b> (the words and images in the ad), <b>context</b> (the situation it speaks to) and <b>concept</b> (the idea tying them together).",
+   "lec": 38
+  },
+  {
+   "id": "pom-d0195",
+   "unit": "imc",
+   "topic": "The three Cs: content, context and concept",
+   "term": "Congruency (in advertising)",
+   "html": "<b>Congruency</b>: the three Cs, and the endorser and the product, fit and talk to each other. Congruent ads get higher engagement; incongruent ones (Vicco with Alia Bhatt) may grab attention but are not recalled or chosen.",
+   "lec": 38
+  },
+  {
+   "id": "pom-d0196",
+   "unit": "imc",
+   "topic": "System 1 and System 2: brain-friendly content",
+   "term": "System 1",
+   "html": "<b>System 1</b> (dual process theory): fast, automatic, intuitive, low-effort thinking. Where audiences sit when they meet ads.",
+   "lec": 38
+  },
+  {
+   "id": "pom-d0197",
+   "unit": "imc",
+   "topic": "System 1 and System 2: brain-friendly content",
+   "term": "System 2",
+   "html": "<b>System 2</b> (dual process theory): slow, deliberate, analytical, high-effort, controlled thinking. Where marketers tend to sit when they write ads.",
+   "lec": 38
+  },
+  {
+   "id": "pom-d0198",
+   "unit": "imc",
+   "topic": "System 1 and System 2: brain-friendly content",
+   "term": "Stroop effect",
+   "html": "<b>Stroop effect</b>: naming the ink colour of a word is slow and error-prone when the word names a different colour. L#38 used it to show the chaos when fast and slow processing conflict.",
+   "lec": 38
+  },
+  {
+   "id": "pom-d0199",
+   "unit": "imc",
+   "topic": "System 1 and System 2: brain-friendly content",
+   "term": "Brain-friendly content",
+   "html": "<b>Brain-friendly content</b> (L#38): communication built on congruent three Cs and System 1 first, so it is processed quickly, grabs attention, occupies mental availability and becomes the automatic choice (Dior, Hyphen, Tom Ford, Zara).",
+   "lec": 38
+  },
+  {
+   "id": "pom-d0200",
+   "unit": "imc",
+   "topic": "The three Cs: content, context and concept",
+   "term": "Context (three Cs)",
+   "html": "<b>Context</b> (L#40): the situation in which the product is introduced, the need or problem the ad speaks to (clothes must be clean and soft).",
+   "lec": 40
+  },
+  {
+   "id": "pom-d0201",
+   "unit": "imc",
+   "topic": "The three Cs: content, context and concept",
+   "term": "Concept (three Cs)",
+   "html": "<b>Concept</b> (L#40): the storyline or central idea the ad communicates (rigid Hitler becomes soft Gandhi in Comfort).",
+   "lec": 40
+  },
+  {
+   "id": "pom-d0202",
+   "unit": "imc",
+   "topic": "The three Cs: content, context and concept",
+   "term": "Content (three Cs)",
+   "html": "<b>Content</b> (L#40): all the elements used to tell the concept: characters, objects, visuals and words (Hitler, Gandhi, the tub, the hand).",
+   "lec": 40
+  },
+  {
+   "id": "pom-d0203",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Price",
+   "html": "<b>Price</b>: the money charged for a product or service, or more broadly the <b>sum of the values customers exchange</b> for the benefits of having or using it.",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-d0204",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Customer value-based pricing",
+   "html": "<b>Customer value-based pricing</b>: setting price from buyers' <b>perceptions of value</b> rather than from the seller's cost. Price is decided before the marketing programme and product design are fixed.",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-d0205",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Good-value pricing",
+   "html": "<b>Good-value pricing</b>: giving customers a fair price for the right blend of quality and good service. Everyday low pricing (EDLP) is a retail form of it.",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-d0206",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Value-added pricing",
+   "html": "<b>Value-added pricing</b>: differentiating the offer with extra features and services so that it can command <b>higher</b> prices, instead of cutting price to match rivals.",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-d0207",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Fixed costs (overhead)",
+   "html": "<b>Fixed costs</b>: costs that stay the same whatever the level of production or sales, such as rent, interest and executive salaries.",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-d0208",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Variable costs",
+   "html": "<b>Variable costs</b>: costs that change in direct proportion to the production level, such as materials and packaging. They are constant per unit, but the total rises with volume.",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-d0209",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Experience curve",
+   "html": "<b>Experience (learning) curve</b>: the fall in average cost per unit that comes as production experience <b>accumulates</b>.",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-d0210",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Cost-plus (markup) pricing",
+   "html": "<b>Cost-plus pricing</b>: adding a standard markup to the product's cost. In the book: markup price = unit cost ÷ (1 − desired return on sales).",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-d0211",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Break-even volume",
+   "html": "<b>Break-even volume</b> = fixed cost ÷ (price − variable cost per unit): the sales at which total revenue equals total cost.",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-d0212",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Target costing",
+   "html": "<b>Target costing</b>: start with an ideal selling price based on customer value, then set cost targets that make sure that price can be met.",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-d0213",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Price elasticity",
+   "html": "<b>Price elasticity</b>: the sensitivity of demand to price changes. <b>Elastic</b> demand changes a lot when price changes; <b>inelastic</b> demand hardly changes.",
+   "bk": "Kotler & Armstrong 17e ch10"
+  },
+  {
+   "id": "pom-d0214",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Market-skimming pricing",
+   "html": "<b>Market-skimming pricing</b>: launching a new product at a high price so as to skim the most revenue, layer by layer, from segments willing to pay; the firm makes fewer but more profitable sales.",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-d0215",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Market-penetration pricing",
+   "html": "<b>Market-penetration pricing</b>: launching a new product at a low price to draw in a large number of buyers fast and capture a big market share.",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-d0216",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Captive-product pricing",
+   "html": "<b>Captive-product pricing</b>: pricing items that a buyer <b>must</b> use alongside a main product (blades, cartridges, pods), often with high markups while the main product is cheap. For services it is <b>two-part pricing</b>.",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-d0217",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Optional-product pricing",
+   "html": "<b>Optional-product pricing</b>: setting prices for optional or accessory items offered alongside the main product, which the buyer <b>may</b> choose, such as a car's sunroof.",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-d0218",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "By-product pricing",
+   "html": "<b>By-product pricing</b>: charging for by-products to cover the cost of disposing of them and help keep the main product's price competitive.",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-d0219",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Segmented pricing",
+   "html": "<b>Segmented pricing</b>: selling a product at two or more prices where the difference is <b>not based on differences in costs</b>.",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-d0220",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Reference prices",
+   "html": "<b>Reference prices</b>: prices buyers carry in their minds and refer to when judging a given product's price.",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-d0221",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Uniform-delivered pricing",
+   "html": "<b>Uniform-delivered pricing</b>: charging every customer the same price plus freight, set at the average freight cost, regardless of location. It is the opposite of <b>FOB-origin</b> pricing.",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-d0222",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Dynamic pricing",
+   "html": "<b>Dynamic pricing</b>: continually changing prices to suit the characteristics and needs of individual customers and of particular situations.",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-d0223",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Predatory pricing",
+   "html": "<b>Predatory pricing</b>: pricing below cost <b>deliberately</b> to punish competitors or drive them out of the market. Selling below cost to clear excess stock is not predatory.",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-d0224",
+   "unit": "pricing",
+   "topic": "Pricing",
+   "term": "Fighter brand",
+   "html": "<b>Fighter brand</b>: a lower-price item or separate low-price brand launched to counter a rival's price cut in a price-sensitive segment that won't respond to quality arguments.",
+   "bk": "Kotler & Armstrong 17e ch11"
+  },
+  {
+   "id": "pom-d0225",
+   "unit": "imc",
+   "topic": "IMC & promotion mix",
+   "term": "Promotion mix",
+   "html": "<b>Promotion mix</b> (marketing communications mix): the particular blend of advertising, sales promotion, personal selling, public relations and direct and digital marketing a firm uses to engage customers and communicate value.",
+   "bk": "Kotler & Armstrong 17e ch14"
+  },
+  {
+   "id": "pom-d0226",
+   "unit": "imc",
+   "topic": "IMC & promotion mix",
+   "term": "Advertising",
+   "html": "<b>Advertising</b>: any <b>paid</b>, <b>nonpersonal</b> presentation of ideas, goods or services by an <b>identified sponsor</b>.",
+   "bk": "Kotler & Armstrong 17e ch14"
+  },
+  {
+   "id": "pom-d0227",
+   "unit": "imc",
+   "topic": "IMC & promotion mix",
+   "term": "Sales promotion",
+   "html": "<b>Sales promotion</b>: <b>short-term incentives</b> that encourage buying or selling a product now.",
+   "bk": "Kotler & Armstrong 17e ch14"
+  },
+  {
+   "id": "pom-d0228",
+   "unit": "imc",
+   "topic": "IMC & promotion mix",
+   "term": "Public relations (PR)",
+   "html": "<b>Public relations</b>: building good relations with the firm's publics through favourable publicity and a strong corporate image, and handling or heading off damaging rumours and events.",
+   "bk": "Kotler & Armstrong 17e ch14"
+  },
+  {
+   "id": "pom-d0229",
+   "unit": "imc",
+   "topic": "IMC & promotion mix",
+   "term": "Integrated marketing communications (IMC)",
+   "html": "<b>IMC</b>: coordinating all of a firm's communication channels so they deliver one <b>clear, consistent and compelling</b> message about the organisation and its brands.",
+   "bk": "Kotler & Armstrong 17e ch14"
+  },
+  {
+   "id": "pom-d0230",
+   "unit": "imc",
+   "topic": "IMC & promotion mix",
+   "term": "Buyer-readiness stages",
+   "html": "<b>Buyer-readiness stages</b>: awareness → knowledge → liking → preference → conviction → purchase. Communication objectives aim to move the audience to the next stage.",
+   "bk": "Kotler & Armstrong 17e ch14"
+  },
+  {
+   "id": "pom-d0231",
+   "unit": "imc",
+   "topic": "IMC & promotion mix",
+   "term": "Buzz marketing",
+   "html": "<b>Buzz marketing</b>: recruiting and nurturing <b>opinion leaders</b> so that they spread word about a product through their communities.",
+   "bk": "Kotler & Armstrong 17e ch14"
+  },
+  {
+   "id": "pom-d0232",
+   "unit": "imc",
+   "topic": "IMC & promotion mix",
+   "term": "Nonpersonal communication channels",
+   "html": "<b>Nonpersonal channels</b>: media that deliver messages with no personal contact or feedback — <b>major media, atmospheres and events</b>.",
+   "bk": "Kotler & Armstrong 17e ch14"
+  },
+  {
+   "id": "pom-d0233",
+   "unit": "imc",
+   "topic": "IMC & promotion mix",
+   "term": "Objective-and-task method",
+   "html": "<b>Objective-and-task method</b>: set specific promotion objectives, list the tasks needed to reach them, and cost those tasks; the total is the budget.",
+   "bk": "Kotler & Armstrong 17e ch14"
+  },
+  {
+   "id": "pom-d0234",
+   "unit": "imc",
+   "topic": "IMC & promotion mix",
+   "term": "Push strategy",
+   "html": "<b>Push strategy</b>: the producer uses its sales force and <b>trade promotion</b> on channel members, who in turn promote the product to final consumers.",
+   "bk": "Kotler & Armstrong 17e ch14"
+  },
+  {
+   "id": "pom-d0235",
+   "unit": "imc",
+   "topic": "IMC & promotion mix",
+   "term": "Pull strategy",
+   "html": "<b>Pull strategy</b>: the producer spends on consumer advertising and promotion so that consumer demand <b>pulls</b> the product through the channel.",
+   "bk": "Kotler & Armstrong 17e ch14"
   }
  ],
  "questions": [
@@ -11423,6 +12309,2265 @@ HUB.addCourse({
    "w": "Clarks brought heritage and comfortable craftsmanship; Zara brought trend-led design at speed and scale, which Clarks would find hard alone.",
    "lec": 35,
    "lv": "recall"
+  },
+  {
+   "id": "pom-q0490",
+   "topic": "Pricing",
+   "q": "A streaming firm adds up content cost, platform cost, marketing, cess and overheads and arrives at a ₹99 monthly plan. In L#36’s terms, this adding-up process is:",
+   "c": [
+    "The price",
+    "Pricing",
+    "The pricing strategy",
+    "The reference price"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Pricing is the process of deciding the amount. The price is the ₹99 itself, and the pricing strategy is what the ₹99 is meant to achieve.",
+   "lec": 36,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0491",
+   "topic": "Pricing",
+   "q": "The same firm keeps the plan at ₹99 so that it can reach viewers in tier-3 and tier-4 towns. In L#36’s terms, this purpose is the:",
+   "c": [
+    "Pricing strategy",
+    "Price",
+    "Pricing",
+    "Price ending"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The overall approach that uses price to reach an objective (here, breadth and depth of the market) is the pricing strategy. Pricing would be the cost build-up that produced ₹99.",
+   "lec": 36,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0492",
+   "topic": "Pricing",
+   "q": "Which three circles make up the 3C pricing framework taught in L#36?",
+   "c": [
+    "Cost, channel and communication",
+    "Cost-plus, competition-based and captive pricing",
+    "Cost to the company, competitors’ price and customer value",
+    "Capacity, credit and collateral"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The ideal price sits where cost to the company, competitors’ price and customer value overlap. Cost-plus and competition-based are pricing methods, not the framework’s circles.",
+   "lec": 36,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0493",
+   "topic": "Pricing",
+   "q": "Why did L#36 call customer value the most important of the three pricing circles?",
+   "c": [
+    "It is the easiest of the three to measure",
+    "It sets the lowest price a firm can charge",
+    "It is fixed once a product is launched",
+    "It has no upper limit: it rises with what buyers perceive and what the brand promises"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Cost and competitors bound the price, but customer value depends on perception and the promise made, so it can keep growing (the ₹1,500 whitening toothpaste, the ₹2 crore watch). The lowest acceptable price comes from cost, not value.",
+   "lec": 36,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0494",
+   "topic": "Pricing",
+   "q": "Lifebuoy at ₹17 sits beside Dettol at ₹38 for the same germ protection. Knowing it cannot beat Dettol’s brand equity, Lifebuoy gets shoppers to compare the two on price. Which L#36 phenomenon is this?",
+   "c": [
+    "Decoy effect",
+    "Reference price",
+    "Price–quality inference",
+    "Framing effect"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Lifebuoy makes Dettol’s price the reference point, so it wins on the one parameter where it is stronger. A decoy would be a third, deliberately weaker option.",
+   "lec": 36,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0495",
+   "topic": "Pricing",
+   "q": "Two speakers have the same specifications. A working professional picks the ₹50,000 brand over the ₹5,000 one, saying “the dearer one must sound better”. This is:",
+   "c": [
+    "Everyday low pricing",
+    "A reference price",
+    "Price–quality inference",
+    "A pricing cue"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The belief that a higher price means higher quality is price–quality inference (Bose against Zook in L#36). A reference price would compare against an expected or earlier price, not read quality into the number.",
+   "lec": 36,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0496",
+   "topic": "Pricing",
+   "q": "Why did Pepperfry price a bed at ₹49,199 rather than the usual ₹49,999, according to L#36?",
+   "c": [
+    "Buyers see through ..999 endings; an odd ending looks calculated and realistic while still sitting under ₹50,000",
+    "The ₹801 saving is a large discount on a ₹50,000 bed",
+    "Odd endings make the bed a decoy for costlier beds",
+    "Indian law requires prices to end in an odd number"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He said smart buyers know ..999 is a gimmick, so an unusual ending reads as a real, worked-out price. He stressed that ₹801 is not a meaningful saving on a ₹50,000 purchase.",
+   "lec": 36,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0497",
+   "topic": "Pricing",
+   "q": "A Sony ad says: “43-inch at ₹70,000, or the 50-inch for just ₹9,990 more.” Neither price has changed from the catalogue. Which L#36 phenomenon is the ad using?",
+   "c": [
+    "Decoy effect",
+    "Framing effect",
+    "Market skimming",
+    "Reference price from an earlier sale"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Framing changes how the same prices are presented (an extra ₹9,990 instead of ₹79,990). No third, weaker option is added, so it is not a decoy.",
+   "lec": 36,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0498",
+   "topic": "Pricing",
+   "q": "A café sells small coffee at ₹220 and large at ₹370. It adds a medium at ₹330. In L#36’s analysis, what does the medium do?",
+   "c": [
+    "It lowers the large’s price to ₹330",
+    "It is a penetration price to win new customers",
+    "It sets a reference price that makes the small look dear",
+    "It acts as a decoy: next to it, the large looks only ₹40 more, pushing buyers to the large"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The decoy is a less attractive option whose job is to make the target look better: the ₹150 gap from small to large now reads as ₹40 from medium to large. The large’s price has not changed.",
+   "lec": 36,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0499",
+   "topic": "Pricing",
+   "q": "Which of these was NOT one of the pricing objectives listed in L#36?",
+   "c": [
+    "Survival",
+    "Maximum market skimming",
+    "Matching every competitor’s price",
+    "Product-quality leadership"
+   ],
+   "a": [
+    2
+   ],
+   "w": "L#36 listed survival, maximum current profit, maximum market share, maximum market skimming and product-quality leadership. Looking at competitors is a later step (step 4), not an objective.",
+   "lec": 36,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0500",
+   "topic": "Pricing",
+   "q": "A telecom entrant gives away data and then prices far below rivals, accepting heavy early losses to capture the market before raising prices. Which L#36 objective is this?",
+   "c": [
+    "Maximum market share",
+    "Survival",
+    "Maximum current profit",
+    "Product-quality leadership"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Jio was L#36’s case of maximum market share: bleed red now, dominate later. Survival only aims to cover costs and stay in the market, not to take losses deliberately.",
+   "lec": 36,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0501",
+   "topic": "Pricing",
+   "q": "An electronics maker sells budget, mid-range and premium products so that every income group buys something, earning profit from each. How did L#36 classify Samsung’s objective?",
+   "c": [
+    "Maximum market share",
+    "Maximum current profit",
+    "Market skimming",
+    "Survival"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He conceded Samsung cares about share, but its pricing aims to maximise current profit in every segment it serves. Market share as the objective means accepting losses to win the market, as Jio did.",
+   "lec": 36,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0502",
+   "topic": "Pricing",
+   "q": "A TV maker launches a 100-inch model at ₹4 lakh, then cuts it to ₹2.5 lakh and later ₹1 lakh, selling the same model to a new group of buyers at each step. L#36 calls this:",
+   "c": [
+    "Everyday low pricing",
+    "Special event pricing",
+    "Survival pricing",
+    "Market skimming"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Skimming takes the top layer first and lowers the price in steps for the next layers, like lifting the cream off milk repeatedly. EDLP keeps prices low from the start.",
+   "lec": 36,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0503",
+   "topic": "Pricing",
+   "q": "Fun Flips rose from ₹4 at launch to about ₹20 over many years without buyers switching. What did L#36 take from this?",
+   "c": [
+    "Demand was elastic, so the price had to keep rising",
+    "Costs fell, so the firm could raise prices",
+    "Demand was inelastic, helped by the rise being gradual",
+    "It was a decoy against costlier snacks"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Quantity barely moved as price rose, which is inelastic demand. He added that a jump from ₹4 to ₹20 in two years would have made demand elastic and sent buyers to rivals.",
+   "lec": 36,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0504",
+   "topic": "Pricing",
+   "q": "Which sequence matches L#36’s steps for setting a price?",
+   "c": [
+    "Objective → demand → costs → competitors → method → final price",
+    "Costs → competitors → objective → method → demand → final price",
+    "Method → objective → demand → costs → competitors → final price",
+    "Demand → objective → method → costs → competitors → final price"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The six steps run objective, demand, costs, competitors’ costs, prices and offers, pricing method, final price. He added that in practice the order can change and steps can be left out.",
+   "lec": 36,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0505",
+   "topic": "Pricing",
+   "q": "Using L#36’s markup pricing, a product costing ₹240 to make with a 5% markup sells for:",
+   "c": [
+    "₹245",
+    "₹252",
+    "₹252.63",
+    "₹228"
+   ],
+   "a": [
+    1
+   ],
+   "w": "L#36 adds the markup to cost: ₹240 × 1.05 = ₹252. ₹252.63 is ₹240 ÷ 0.95, the textbook’s markup on selling price, which the lecture did not use.",
+   "lec": 36,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0506",
+   "topic": "Pricing",
+   "q": "Why did L#36 call the gap between a ₹80 lakh BMW and a ₹5 lakh Maruti Ignis market-based rather than cost-based?",
+   "c": [
+    "The BMW costs exactly sixteen times as much to make",
+    "Both cars use target-return pricing",
+    "Maruti uses EDLP and BMW uses skimming",
+    "The gap is far wider than any difference in making them; it reflects perception, aspiration and status"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Manufacturing costs don’t differ by that much, so the price gap reflects what each buyer values. He stressed Ignis buyers find real value too; neither car is priced simply from cost.",
+   "lec": 36,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0507",
+   "topic": "Pricing",
+   "q": "A trainer can charge ₹10,000 a seat and fill 10 seats, or ₹1,000 a seat and, he expects, fill 500. Following L#36’s EDLP logic, what happens to revenue?",
+   "c": [
+    "It falls to ₹10,000",
+    "It stays at ₹1,00,000",
+    "It rises to ₹5,00,000, because volume outweighs the thinner margin per seat",
+    "It rises only if costs fall first"
+   ],
+   "a": [
+    2
+   ],
+   "w": "₹10,000 × 10 = ₹1,00,000, while ₹1,000 × 500 = ₹5,00,000. EDLP is a volume game; he warned that if volume fails to cover costs, the firm makes losses.",
+   "lec": 36,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0508",
+   "topic": "Pricing",
+   "q": "In the McKinsey reading linked to L#36, key value items (KVIs) are:",
+   "c": [
+    "The items that most shape shoppers’ view of a store’s prices, so they are priced sharply against reference competitors",
+    "The items with the highest profit margin",
+    "Private-label items sold below cost",
+    "Every item a retailer stocks online"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Shoppers remember only a few prices, so the store prices those KVIs competitively to build its price image. High-margin background items are the opposite group, priced with more weight on margin.",
+   "lec": 36,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0509",
+   "topic": "Pricing",
+   "q": "Why does the McKinsey reading warn retailers against treating every item as a key value item?",
+   "c": [
+    "Online shoppers never compare prices",
+    "Competition law forbids it",
+    "KVIs cannot be changed more than once a year",
+    "Cutting every price to stay below rivals becomes an unprofitable race to the bottom, and shoppers judge value from only a few items anyway"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The article argues for a segmented, data-driven approach: price the items that drive perception sharply and price background items with more weight on margin. It also urges refreshing KVI lists more often, not less.",
+   "lec": 36,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0510",
+   "topic": "Pricing strategies",
+   "q": "A razor brand cuts its razor from ₹499 to ₹99, close to its making cost, and earns its profit on the refill blades buyers keep purchasing. L#37 calls this:",
+   "c": [
+    "Product-form pricing",
+    "Loss-leader (captive) pricing",
+    "Market skimming",
+    "Yield pricing"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Pricing one item at or below cost to stimulate sales of other, profitable items is loss-leader pricing, which L#37 also called captive or ancillary pricing. Skimming would cut the price to reach new buyer layers, with the profit still on the same product.",
+   "lec": 37,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0511",
+   "topic": "Pricing strategies",
+   "q": "Why did Gillette first cut the Mach3 from ₹499 to ₹399 and then to ₹99, according to L#37?",
+   "c": [
+    "To lower the entry barrier for Indian buyers used to ₹20–40 razors, then earn on the blades",
+    "Because its costs fell to ₹99",
+    "To create a decoy for its costlier razors",
+    "Because the razor had reached the decline stage"
+   ],
+   "a": [
+    0
+   ],
+   "w": "At ₹499 few Indians tried it against ₹20–40 alternatives. At ₹99 many did, and once they owned the razor they kept buying expensive refills. He said making cost was close to the ₹99 price, so costs had not fallen to make the cut easy.",
+   "lec": 37,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0512",
+   "topic": "Pricing strategies",
+   "q": "HP sells printers at falling prices across about 1,500 models but charges heavily for cartridges. Which pair of L#37 ideas does this combine?",
+   "c": [
+    "Special event pricing and freemium",
+    "Yield pricing and segment pricing",
+    "Captive pricing on cartridges, with a model for every budget so buyers end in HP",
+    "Skimming on cartridges and EDLP on printers"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The printer is the cheap base item and the cartridges are the captive, high-margin purchase. The wide range of models makes sure buyers with any budget pick HP. Nothing here depends on timing or a festive occasion.",
+   "lec": 37,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0513",
+   "topic": "Pricing strategies",
+   "q": "An airline shows separate fares for students, armed forces, senior citizens, and doctors and nurses on the same flight. This is:",
+   "c": [
+    "Product-form pricing",
+    "Special event pricing",
+    "Freemium pricing",
+    "Customer-segment (differentiated) pricing"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The seat is the same; the price depends on the segment the buyer belongs to (IndiGo in L#37). Product-form pricing would change what is included, such as baggage or seat type.",
+   "lec": 37,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0514",
+   "topic": "Pricing strategies",
+   "q": "Microsoft 365 business plans sell at about ₹125, ₹545 and ₹660 per user per month, each with more apps and services included. L#37 calls this:",
+   "c": [
+    "Product-form pricing",
+    "Customer-segment pricing",
+    "Yield pricing",
+    "Loss-leader pricing"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Product-form pricing offers the same base product in different forms with more or fewer inclusions. Customer-segment pricing would charge different buyers different prices for the identical offer.",
+   "lec": 37,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0515",
+   "topic": "Pricing strategies",
+   "q": "Why did L#37 call product-form pricing a strong strategy?",
+   "c": [
+    "It lets a firm charge everyone the highest price",
+    "The market is heterogeneous, so different forms at different prices fit different needs instead of forcing one product on everyone",
+    "It removes the need to know costs",
+    "It works only for physical goods"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Different users need different inclusions (web-only, home and student use, full business suites). Product-form pricing covers that heterogeneous market. Every subscription service, digital rather than physical, uses it.",
+   "lec": 37,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0516",
+   "topic": "Pricing strategies",
+   "q": "A music app lets anyone listen free with ads and limited track changes, and charges a small fee for ad-free, high-quality listening. This is:",
+   "c": [
+    "Captive pricing",
+    "Special customer pricing",
+    "Freemium pricing",
+    "Market skimming"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Free base service plus a paid premium is freemium (Spotify in L#37), a volume play. Special customer pricing gives members exclusive prices on what they buy, rather than giving the base service away.",
+   "lec": 37,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0517",
+   "topic": "Pricing strategies",
+   "q": "The same hotel room costs about ₹20,000 a night for 31 December and about ₹7,800 a night for 8–9 December. Which strategy and which forces explain the gap in L#37?",
+   "c": [
+    "Product-form pricing; extra inclusions on New Year’s Eve",
+    "Yield (time) pricing; scarcity and buyers’ urgency at peak dates",
+    "Loss-leader pricing; the December rate is below cost",
+    "Customer-segment pricing; different guests pay differently"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He stressed the room type and inclusions were the same; only the timing differed. Peak demand and the need to travel let the hotel charge more, which is yield or time pricing.",
+   "lec": 37,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0518",
+   "topic": "Pricing strategies",
+   "q": "Amazon Prime and Zomato Pro offer members priority delivery and exclusive offers. In L#37 this is:",
+   "c": [
+    "Special event pricing",
+    "Freemium pricing",
+    "Product-form pricing",
+    "Special customer pricing"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Special customer pricing makes the buyer feel special through member-only prices and perks, enlarging the customer-value circle. Special event pricing is tied to occasions such as Diwali, not to membership.",
+   "lec": 37,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0519",
+   "topic": "Pricing strategies",
+   "q": "Brands time offers around Diwali, knowing people buy even what they don’t need in the festive season. L#37 calls this:",
+   "c": [
+    "Special event pricing",
+    "Yield pricing",
+    "Customer-segment pricing",
+    "Captive pricing"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Special event pricing uses an occasion when the urge to buy is already high. Yield pricing also depends on timing, but it charges more for scarce capacity rather than running offers.",
+   "lec": 37,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0520",
+   "topic": "Pricing strategies",
+   "q": "Which three tests did L#37 give for a good pricing decision?",
+   "c": [
+    "It is the lowest in the market, matches rivals and never changes",
+    "It skims, penetrates and bundles",
+    "It maximises sales, delivers superior customer value and covers costs in time",
+    "It covers costs, ignores competitors and maximises margin per unit"
+   ],
+   "a": [
+    2
+   ],
+   "w": "He said there is no thumb rule, only these tests, which link back to the 3C triangle: value leads to purchase, purchase to sales, sales to timely cost recovery. Being the cheapest is not one of them.",
+   "lec": 37,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0521",
+   "topic": "Pricing strategies",
+   "q": "In L#37’s chain, why does customer value come first among the three tests of a good price?",
+   "c": [
+    "Because costs never matter once a product sells",
+    "Because value makes buyers purchase, purchases raise sales, and sales let the firm cover its costs in time",
+    "Because competitors set the customer’s value",
+    "Because a higher price always raises value"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The tests are interlinked: if customers find value they buy, sales rise and costs are covered, creating value for the business too. Costs still matter; they are the third link, not irrelevant.",
+   "lec": 37,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0522",
+   "topic": "Pricing strategies",
+   "q": "In the Deloitte reading assigned after L#37, which statement about price and perceived value is correct?",
+   "c": [
+    "Price explains all of perceived value",
+    "Price explains almost none of perceived value",
+    "Only premium brands can be MVP brands",
+    "Price perception explains roughly 60–90% of perceived value, leaving 10–40% to other factors"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The reading finds price and value strongly linked but not identical; quality, staff attitude and trust make up the rest. MVP brands appear at every price level, from budget to premium.",
+   "lec": 37,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0523",
+   "topic": "Pricing strategies",
+   "q": "A budget hotel chain is rated as giving far more value than its low price would predict, thanks to clean rooms and friendly staff. In the Deloitte reading’s terms, it is:",
+   "c": [
+    "An MVP brand, which can exist at any price level",
+    "An LVP brand, because its prices are low",
+    "A loss leader for its parent company",
+    "Not comparable, because MVPs must be premium"
+   ],
+   "a": [
+    0
+   ],
+   "w": "MVP means perceived value at least 10% above what price alone predicts, and the reading stresses MVPs exist from budget to premium. A low price does not make a brand LVP; LVP means value below what price predicts.",
+   "lec": 37,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0524",
+   "topic": "Pricing strategies",
+   "q": "Who are the “value seekers” in the Deloitte reading?",
+   "c": [
+    "Only low-income and young shoppers",
+    "Shoppers who never pay full price",
+    "About 4 in 10 US consumers who regularly cut costs, hunt deals or give up convenience, across ages and incomes",
+    "Shoppers who only buy MVP brands"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The reading defines them by behaviour (three or more cost-conscious habits a month) and stresses they span ages and incomes: nearly half of boomers and Gen X qualify, and about 3 in 10 are young families with six-figure incomes.",
+   "lec": 37,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0525",
+   "topic": "Marketing communications",
+   "q": "According to L#38, why does the brain use attention as a filter?",
+   "c": [
+    "Because ads are illegal to process without consent",
+    "Because it can process only about 40 bits a second while being exposed to about 11 million",
+    "Because System 2 blocks all advertising",
+    "Because people see fewer than 100 ads a day"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The gap between input and processing capacity forces the brain to process only what grabs attention. He put daily ad exposure at 4,000 to 10,000, far more than 100.",
+   "lec": 38,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0526",
+   "topic": "Marketing communications",
+   "q": "Put L#38’s chain in order:",
+   "c": [
+    "Recall → attention → brand choice → mental availability",
+    "Mental availability → attention → brand choice → recall",
+    "Attention → mental availability → recall → brand choice",
+    "Brand choice → recall → attention → mental availability"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The right attention lets a brand occupy mental availability; that drives recall, and recall makes it the automatic choice. Recall cannot come before the brand has occupied mental space.",
+   "lec": 38,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0527",
+   "topic": "Marketing communications",
+   "q": "Asked “cola?”, most people say Coca-Cola, yet many happily drink Pepsi when Coca-Cola is out of stock. How does L#38 reconcile this?",
+   "c": [
+    "Coca-Cola has failed to build mental availability",
+    "Pepsi has higher mental availability",
+    "Brand choice is a reflex only for luxury goods",
+    "Coca-Cola occupies mental availability, so it is the first choice; an automatic reflex is about first preference, not exclusive buying"
+   ],
+   "a": [
+    3
+   ],
+   "w": "He said explicitly that he might not buy Coca-Cola every time, but it stays the brand recalled and preferred before any other. Switching when it is missing doesn’t mean Pepsi has the stronger mental availability.",
+   "lec": 38,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0528",
+   "topic": "Marketing communications",
+   "q": "In L#38’s three Cs, which C is the situation or problem the ad speaks to?",
+   "c": [
+    "Context",
+    "Content",
+    "Concept",
+    "Congruency"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Context is the situation. Content is what is in the ad (words, images, characters), and concept is the idea that ties them together. Congruency is the result when the three fit, not one of the Cs.",
+   "lec": 38,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0529",
+   "topic": "Marketing communications",
+   "q": "In the Comfort ad, a figure dipped in Comfort water turns from Hitler into Gandhi. Which C is the idea “even the most rigid becomes soft”?",
+   "c": [
+    "Content",
+    "Concept",
+    "Context",
+    "Channel"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The storyline or idea is the concept. The figures, water and bottle are the content, and the need for clothes that are clean and soft is the context.",
+   "lec": 38,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0530",
+   "topic": "Marketing communications",
+   "q": "Volkswagen showed precision parking with a porcupine between fish in plastic bags instead of a car. Why did L#38 rate this highly?",
+   "c": [
+    "Cars cannot legally appear in parking ads",
+    "It hides the product so viewers must search for it",
+    "Every rival would show a car parking; the metaphor stands out, adds humour and still explains the attribute",
+    "It targets animal lovers as a new segment"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The ad differs from what every car brand would do, grabs attention, and makes the precision point vividly, with all three Cs aligned. It is a creative metaphor, not a new segment.",
+   "lec": 38,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0531",
+   "topic": "Marketing communications",
+   "q": "A young film star promotes a toothpaste long associated with grandparents. Per L#38, what is the likely result?",
+   "c": [
+    "High engagement, because star power always transfers",
+    "It may grab attention, but the incongruency means low engagement and little effect on choice",
+    "It will reposition the toothpaste for teenagers overnight",
+    "No attention at all, because toothpaste is low involvement"
+   ],
+   "a": [
+    1
+   ],
+   "w": "This is the Vicco Vajradanti and Alia Bhatt case: the star grabs attention, but her fans won’t buy Vicco for her, so the ad doesn’t occupy mental availability. Attention is not the problem; fit is.",
+   "lec": 38,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0532",
+   "topic": "Marketing communications",
+   "q": "Why did Hrithik Roshan’s ad for Flamingo pain-relief supports fail, according to L#38?",
+   "c": [
+    "The ad had no content",
+    "Flamingo’s price was too high",
+    "It had too much System 1 imagery",
+    "A super-fit actor for joint and back pain is incongruent, so older buyers can’t relate; context and concept both miss"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Content was there, and the star did grab attention. But nobody believes Hrithik Roshan has joint pain, so the ad fails to occupy mental availability or drive recall.",
+   "lec": 38,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0533",
+   "topic": "Marketing communications",
+   "q": "A Lux ad put Shah Rukh Khan in a bathtub surrounded by four leading actresses. In L#38’s reading, what does such an ad achieve?",
+   "c": [
+    "People may remember the ad but it won’t make the soap their preferred choice",
+    "Maximum engagement through star power",
+    "A perfect three-C score",
+    "A rise in System 2 analysis of the soap’s ingredients"
+   ],
+   "a": [
+    0
+   ],
+   "w": "It grabs attention and may even be recalled as an ad, but the concept doesn’t work and the context is missed, so the product does not become the choice. Stars do not guarantee congruency.",
+   "lec": 38,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0534",
+   "topic": "Marketing communications",
+   "q": "Which description fits System 2 in dual process theory?",
+   "c": [
+    "Fast, automatic and intuitive",
+    "Driven by impulse, deciding first and regretting later",
+    "Slow, deliberate, analytical and high effort",
+    "Low effort and used for most ad viewing"
+   ],
+   "a": [
+    2
+   ],
+   "w": "System 2 is slow, controlled and analytical. Fast, automatic, low-effort and impulsive describe System 1, which L#38 said is where most ad viewing happens.",
+   "lec": 38,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0535",
+   "topic": "Marketing communications",
+   "q": "What “wall” did L#38 describe between marketers and their audiences?",
+   "c": [
+    "Marketers think in System 1 and audiences in System 2",
+    "Marketers write in System 2 (analytical detail) while audiences process in System 1 (fast and intuitive)",
+    "Marketers ignore attention and audiences ignore price",
+    "Audiences read every ad fully but marketers post too few"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Marketers load ads with analytical information; audiences facing thousands of ads decide fast and intuitively. The fix is to move the message towards System 1, not the reverse.",
+   "lec": 38,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0536",
+   "topic": "Marketing communications",
+   "q": "In L#38’s Stroop exercise, students had to call out ink colours while the words named different colours. What did it show for advertising?",
+   "c": [
+    "System 1 is always wrong",
+    "Colour has no effect on attention",
+    "Ads should avoid colour altogether",
+    "When the two systems conflict, processing turns to chaos, as it does in incongruent ads"
+   ],
+   "a": [
+    3
+   ],
+   "w": "With matching words and colours System 1 answers easily; with a clash, the systems interfere and responses slow and fail. Incongruent ads (Vicco, Flamingo) create the same internal conflict.",
+   "lec": 38,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0537",
+   "topic": "Marketing communications",
+   "q": "How did L#38 split the work of System 1 and System 2 in moving a buyer from 100 ads to one brand?",
+   "c": [
+    "System 1 takes a brand from 100 to 10; System 1 and 2 together take it from 10 to 1",
+    "System 2 takes 100 to 10; System 1 takes 10 to 1",
+    "System 1 alone does the whole job",
+    "System 2 alone does the whole job"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He wanted communication System 1 heavy at first to be shortlisted, with System 2 elements later to win the final pick. He said explicitly that System 2 is still important.",
+   "lec": 38,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0538",
+   "topic": "Marketing communications",
+   "q": "Hyphen’s ad keeps Kriti Sanon’s face close to the product on a plain light background. What result did L#38 quote?",
+   "c": [
+    "4% purchase conversion against the category average",
+    "6% click-through against about 2%",
+    "60% unaided brand recall after a 10-minute delay, against a 30% average",
+    "Double the sales of Dior lip shades"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Anchoring the face’s attention to the product, with no background noise, gave 60% unaided recall against 30%. The 4% conversion was Tom Ford’s and the 6% click-through was Zara’s.",
+   "lec": 38,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0539",
+   "topic": "Marketing communications",
+   "q": "A perfume brand replaces bottle-only product pages with images of the fruits in each scent. In L#38’s terms, why should this convert better?",
+   "c": [
+    "It gives System 2 more ingredient data",
+    "It lowers the price perception",
+    "It removes the need for a concept",
+    "It is brain-friendly: rich imagery engages System 1 first, and the details are processed after"
+   ],
+   "a": [
+    3
+   ],
+   "w": "This is Tom Ford’s fruit-rich imagery (4% conversion, above the category). The images grab attention through System 1; System 2 comes in later. Nothing about it lowers the price.",
+   "lec": 38,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0540",
+   "topic": "Marketing communications",
+   "q": "According to L#38, how do consumers decide today?",
+   "c": [
+    "They feel, then act, then explain their reasons",
+    "They think, then feel, then act",
+    "They act, then think, then feel",
+    "They compare every option analytically before acting"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He said the traditional think-feel-act sequence, led by System 2, no longer describes behaviour: people feel first, act, and rationalise afterwards, like picking a seat and only then explaining it.",
+   "lec": 38,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0541",
+   "topic": "Marketing communications",
+   "q": "A bank’s ad lists eight interest-rate tiers and fee rules in small print, with no image or story. Using L#38, what is the main risk?",
+   "c": [
+    "It is too System 1 heavy",
+    "It is pitched at System 2, so in a cluttered feed it is unlikely to win attention or occupy mental availability",
+    "It has a perfect concept but weak content",
+    "It will cause a decoy effect"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Dense analytical detail is the marketer’s System 2 habit L#38 warned about. Viewers in System 1 scroll past, so the ad never reaches mental availability. A decoy is a pricing idea, not relevant here.",
+   "lec": 38,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0542",
+   "topic": "Marketing communications",
+   "q": "In L#40’s decode of the Comfort ad, what is the context?",
+   "c": [
+    "Hitler turning into Gandhi",
+    "The tub of water and the hand dipping the figure",
+    "People want clothes that are clean, but detergent leaves them rough, so they also want them soft",
+    "The Comfort logo and bottle"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Context is the situation the ad speaks to. Hitler turning into Gandhi is the concept, and the tub, hand, figures and bottle are content.",
+   "lec": 40,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0543",
+   "topic": "Marketing communications",
+   "q": "A mosquito-repellent ad shows a family sleeping peacefully while a cartoon mosquito bounces off an invisible shield around the bed. The tagline: “Sleep through the buzz.” Which is the concept?",
+   "c": [
+    "The cartoon mosquito, the bed and the shield graphic",
+    "Monsoon nights when mosquitoes keep families awake",
+    "Hindi and English text on the pack shot",
+    "The repellent puts an invisible shield around you, so you sleep undisturbed"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The concept is the storyline or idea: an invisible shield that lets you sleep. The cartoon, bed and graphics are content; monsoon nights with sleepless families are the context.",
+   "lec": 40,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0544",
+   "topic": "Marketing communications",
+   "q": "In the same mosquito-repellent ad, which is content?",
+   "c": [
+    "The cartoon mosquito, the sleeping family and the shield graphic",
+    "The idea that the product protects you while you sleep",
+    "Mosquito season, when families lose sleep",
+    "The congruency between the three Cs"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Content is every element used to tell the story. The protective idea is the concept, mosquito season is the context, and congruency is the result when the three fit, not a C itself.",
+   "lec": 40,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0545",
+   "topic": "Marketing communications",
+   "q": "What did L#40 say about a formula for an ad that grabs attention?",
+   "c": [
+    "Five fixed elements guarantee attention",
+    "There is no thumb rule, but ads whose three Cs are present and talking to each other have a much higher chance",
+    "A celebrity guarantees attention and recall",
+    "Only dynamic video ads can use the three Cs"
+   ],
+   "a": [
+    1
+   ],
+   "w": "He said there is no straightforward formula; the three Cs raise the probability, and they apply to static and dynamic ads, campaigns and collaterals alike. Celebrities don’t guarantee anything, as the L#38 failures show.",
+   "lec": 40,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0546",
+   "topic": "Marketing communications",
+   "q": "A student describes an iPhone ad in which a king struggles to take good photos until he uses the phone. Following L#40’s suggested reading, which C is “everyone wants great pictures of themselves but finds them hard to take”?",
+   "c": [
+    "Content",
+    "Concept",
+    "Context",
+    "Channel"
+   ],
+   "a": [
+    2
+   ],
+   "w": "That is the situation or need the ad speaks to, so it is the context. How easy the iPhone makes it is the concept; the king and the other elements are content.",
+   "lec": 40,
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0547",
+   "topic": "Marketing communications",
+   "q": "Why did the brand manager in L#40’s HDFC story insist on the three Cs in every marketing brief?",
+   "c": [
+    "Because without them the team could not create a campaign that grabs attention",
+    "Because regulators require them",
+    "Because they set the media budget",
+    "Because they replace market research"
+   ],
+   "a": [
+    0
+   ],
+   "w": "He recalled that briefs needed the three Cs because without them a campaign was unlikely to grab attention. They are a creative discipline, not a legal, budget or research requirement.",
+   "lec": 40,
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0548",
+   "topic": "Marketing communications",
+   "q": "A dairy brand’s new ad shows a tired student at midnight; a glass of its warm turmeric milk appears and the room’s harsh lights soften to a warm glow as he relaxes and sleeps. Match the three Cs.",
+   "c": [
+    "Context: lights softening; concept: exam stress; content: comfort",
+    "Context: the student’s face; concept: the glass; content: midnight",
+    "Context: warm milk; concept: the student; content: sleep",
+    "Context: late-night study stress and sleeplessness; concept: the milk turns a harsh night calm; content: the student, the glass, the lights"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Context is the situation (stress and sleeplessness while studying late), concept is the idea (the drink turns harshness into calm), and content is the elements that show it. Calling props the context mixes up situation and stuff.",
+   "lec": 40,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0549",
+   "topic": "Marketing communications",
+   "q": "A brand’s ad for a premium orthopaedic mattress has strong visuals and a clear tagline, but the situation it shows (a teenager gaming all night) does not match the people who buy such mattresses. In three-C terms, what is weakest?",
+   "c": [
+    "Content",
+    "Context",
+    "Concept",
+    "Nothing; strong visuals make it congruent"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The ad speaks to the wrong situation for its buyers, so the context fails and the ad is incongruent, much like Flamingo with Hrithik Roshan. Strong content alone does not make an ad congruent.",
+   "lec": 40,
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0550",
+   "topic": "Pricing",
+   "q": "In the book's broad definition, price is:",
+   "c": [
+    "Only the money printed on the tag",
+    "The seller's cost plus a fair profit",
+    "Everything of value customers give up in order to obtain the benefits of owning or using a product",
+    "Whatever competitors charge for a similar product"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Narrowly, price is the money charged. Broadly, it is everything the customer exchanges for the benefits. Cost plus profit describes one pricing method, not what price is.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0551",
+   "topic": "Pricing",
+   "q": "Which marketing-mix element is the only one that produces revenue, with all the others representing costs?",
+   "c": [
+    "Product",
+    "Promotion",
+    "Place",
+    "Price"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The book stresses that price is the only revenue-producing element of the mix, and also one of the most flexible, since it can be changed quickly.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0552",
+   "topic": "Pricing",
+   "q": "In the book's model of setting price, what sets the price CEILING and what sets the price FLOOR?",
+   "c": [
+    "Ceiling: product costs; floor: customer perceived value",
+    "Ceiling: customer perceived value; floor: product costs",
+    "Ceiling: competitors' prices; floor: government regulation",
+    "Ceiling: the target profit; floor: competitors' prices"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Above perceived value customers won't buy; below cost the firm loses money. Competitors and other factors decide where between the two the price sits. Swapping ceiling and floor is the standard trap.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0553",
+   "topic": "Pricing",
+   "q": "Which sequence describes customer VALUE-based pricing?",
+   "c": [
+    "Design product → determine cost → set price → convince buyers",
+    "Set price to match a rival → design product → determine cost → advertise",
+    "Assess customer needs and value perceptions → set target price → decide allowable costs → design product",
+    "Determine cost → add standard markup → set price → design packaging"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Value-based pricing reverses the cost-based sequence: price is set from perceived value, and that drives what the product may cost and how it is designed. Design product → determine cost → set price → convince buyers is the book's description of cost-based pricing.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0554",
+   "topic": "Pricing",
+   "q": "Tata Motors announced that its Nano would sell for about ₹1 lakh and engineered the car to hit that price. Which approach does this illustrate?",
+   "c": [
+    "Cost-plus pricing",
+    "Target costing",
+    "High-low pricing",
+    "Competition-based pricing"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Target costing starts from an ideal selling price based on customer value and then sets cost targets to meet it, as the book's Honda Fit example does. Cost-plus would have worked forward from the car's cost.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0555",
+   "topic": "Pricing",
+   "q": "Instead of cutting fees to match a low-cost rival, a bank adds free financial planning, doorstep cash pickup and a dedicated relationship manager, and keeps its higher fees. This is:",
+   "c": [
+    "Good-value pricing",
+    "Everyday low pricing",
+    "Value-added pricing",
+    "Break-even pricing"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Adding features and services to differentiate the offer and support a higher price is value-added pricing. Good-value pricing means offering a fair mix of quality and price, often through cheaper versions.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0556",
+   "topic": "Pricing",
+   "q": "A premium carmaker launches an entry-level model priced well below its usual range to win thrift-conscious younger buyers. This is an example of:",
+   "c": [
+    "Value-added pricing",
+    "Good-value pricing",
+    "Pure monopoly pricing",
+    "Experience-curve pricing"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Introducing a less expensive version of an established brand is a form of good-value pricing, and the book notes even premium brands can do it. Value-added pricing moves the other way, adding features to justify a higher price.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0557",
+   "topic": "Pricing",
+   "q": "DMart keeps prices low on most items all year with few sales events, while a department store keeps higher regular prices but runs frequent “end-of-season” and festival sales. These are, respectively:",
+   "c": [
+    "EDLP and high-low pricing",
+    "High-low pricing and EDLP",
+    "Value-added pricing and cost-plus pricing",
+    "Target costing and break-even pricing"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Everyday low pricing means a constant low price with few temporary discounts. High-low pricing means higher everyday prices with frequent promotions on selected items.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0558",
+   "topic": "Pricing",
+   "q": "For a biscuit factory, which of these is a VARIABLE cost?",
+   "c": [
+    "Monthly factory rent",
+    "Interest on the plant loan",
+    "The plant manager's salary",
+    "Flour and packaging used per pack"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Variable costs rise directly with the number of units produced, like materials and packaging. Rent, interest and executive salaries are fixed costs (overhead) that don't change with output.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0559",
+   "topic": "Pricing",
+   "q": "A lamp maker has variable cost ₹60 per unit, fixed costs ₹4,00,000 and expected sales of 20,000 units. It wants a 20% return on sales. Using the book's markup formula, what is the markup price?",
+   "c": [
+    "₹96",
+    "₹100",
+    "₹80",
+    "₹72"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Unit cost = 60 + 4,00,000 ÷ 20,000 = ₹80. Markup price = 80 ÷ (1 − 0.20) = ₹100. ₹96 is what you get by adding 20% to cost (80 × 1.2), which is a markup on cost, not a return on sales.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0560",
+   "topic": "Pricing",
+   "q": "A retailer buys an item for ₹80. What selling price gives a 25% markup on COST, and what price gives a 25% margin on SELLING PRICE?",
+   "c": [
+    "₹100 and ₹100",
+    "₹106.67 and ₹100",
+    "₹100 and ₹106.67",
+    "₹105 and ₹110"
+   ],
+   "a": [
+    2
+   ],
+   "w": "On cost: 80 × 1.25 = ₹100. On selling price: 80 ÷ (1 − 0.25) = ₹106.67, because the 25% is taken from the larger selling-price base. Treating the two as the same is the classic error.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0561",
+   "topic": "Pricing",
+   "q": "A dealer buys a microwave at ₹5,000 and sells it at ₹10,000. Its margin on selling price is 50%. What is its markup on cost?",
+   "c": [
+    "50%",
+    "100%",
+    "200%",
+    "25%"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The ₹5,000 profit is 50% of the ₹10,000 selling price but 100% of the ₹5,000 cost. The book's toaster example makes the same point: a 50% markup on price equals a 100% markup on cost.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0562",
+   "topic": "Pricing",
+   "q": "A food truck has fixed costs of ₹4,50,000 a year, sells meals at ₹250 and spends ₹100 per meal on ingredients. How many meals must it sell to break even?",
+   "c": [
+    "1,800",
+    "4,500",
+    "3,000",
+    "1,286"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Break-even volume = fixed cost ÷ (price − variable cost) = 4,50,000 ÷ 150 = 3,000 meals. Dividing by the price alone (₹250) gives 1,800, which ignores the variable cost of each meal.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0563",
+   "topic": "Pricing",
+   "q": "Price ₹1,000, variable cost ₹600, fixed costs ₹30,00,000. The owners want a profit of ₹20,00,000. How many units must be sold?",
+   "c": [
+    "7,500",
+    "12,500",
+    "5,000",
+    "50,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Volume for target profit = (FC + target profit) ÷ (P − VC) = 50,00,000 ÷ 400 = 12,500. 7,500 is only the break-even volume, where profit is zero.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0564",
+   "topic": "Pricing",
+   "q": "Fixed costs ₹30,00,000 and variable cost ₹600 per unit. Estimated demand is 26,000 units at ₹900, 20,000 at ₹1,000, 15,000 at ₹1,100 and 9,000 at ₹1,200. Which price earns the highest profit?",
+   "c": [
+    "₹900",
+    "₹1,100",
+    "₹1,200",
+    "₹1,000"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Profits: ₹900 → ₹48 lakh; ₹1,000 → ₹50 lakh; ₹1,100 → ₹45 lakh; ₹1,200 → ₹24 lakh. ₹1,200 has the lowest break-even volume (5,000), but demand falls so much that profit drops. That is the book's point in comparing several prices.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0565",
+   "topic": "Pricing",
+   "q": "Why does cost-plus pricing remain popular even though the book says it rarely gives the best price?",
+   "c": [
+    "Sellers are more certain about costs than demand, industry-wide use limits price competition, and many see it as fair",
+    "It always maximises profit because it includes a markup",
+    "It is the only method allowed for consumer products",
+    "It takes full account of customer perceived value"
+   ],
+   "a": [
+    0
+   ],
+   "w": "The method ignores demand and competitors' prices, so it is rarely optimal. It persists for simplicity, stability and perceived fairness. The idea that a markup guarantees maximum profit is exactly what the book rejects.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0566",
+   "topic": "Pricing",
+   "q": "A tablet maker prices low at launch to build volume quickly, so that its unit cost falls with accumulated production and it can cut prices further. Which is NOT a risk the book attaches to this experience-curve strategy?",
+   "c": [
+    "The product may get a cheap image",
+    "Competitors may match the price cuts",
+    "A rival may adopt a lower-cost technology and undercut it",
+    "Fixed costs will rise with every unit produced"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The book's three risks are a cheap image, competitors who fight back, and a rival leapfrogging with a lower-cost technology. Fixed costs by definition don't rise with each unit produced.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0567",
+   "topic": "Pricing",
+   "q": "An earth-mover brand charges ₹5 lakh more than a rival's 'equivalent' machine. Its dealer shows the buyer about ₹9 lakh of extra lifetime value from reliability, lower running costs, service and warranty. What principle of competition-based pricing does this show?",
+   "c": [
+    "Always match the competitor's price",
+    "Price according to the relative value created versus competitors",
+    "Price below competitors to drive them out",
+    "Use cost-plus pricing to justify the premium"
+   ],
+   "a": [
+    1
+   ],
+   "w": "The book says the goal is not to match or beat rivals' prices but to price on the value you create relative to them. If buyers get ₹9 lakh of extra value for ₹5 lakh more, the premium is justified.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0568",
+   "topic": "Pricing",
+   "q": "India's mobile telecom market is dominated by a handful of large private operators who closely watch and quickly respond to each other's tariff changes. This market type is:",
+   "c": [
+    "Pure competition",
+    "Monopolistic competition",
+    "Oligopolistic competition",
+    "Pure monopoly"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A few large sellers who are each highly alert to the others' pricing moves define oligopoly. Monopolistic competition has many sellers, each less affected by any single rival.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0569",
+   "topic": "Pricing",
+   "q": "Hundreds of shampoo brands sell at many different price points, each setting itself apart through branding, advertising and formulation. Which market type does the book's framework suggest?",
+   "c": [
+    "Monopolistic competition",
+    "Pure competition",
+    "Oligopoly",
+    "Pure monopoly"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Many sellers with differentiated offers trading over a range of prices is monopolistic competition. Pure competition would mean a uniform commodity sold at one market price, with marketing playing almost no role.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0570",
+   "topic": "Pricing",
+   "q": "A juice brand raises its price from ₹50 to ₹55 and monthly sales fall from 10,000 to 8,500 packs. What is the price elasticity, and what happens to revenue?",
+   "c": [
+    "−1.5, elastic; revenue falls",
+    "−0.67, inelastic; revenue rises",
+    "−1.5, elastic; revenue rises",
+    "+1.5, elastic; revenue falls"
+   ],
+   "a": [
+    0
+   ],
+   "w": "%ΔQ = −15%, %ΔP = +10%, so E = −1.5 (|E| > 1, elastic). Revenue falls from ₹5,00,000 to ₹4,67,500. With elastic demand a price rise loses more volume than it gains in price. The positive sign is wrong because price and quantity moved in opposite directions.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0571",
+   "topic": "Pricing",
+   "q": "A pharmacy chain estimates the price elasticity of a common painkiller at −0.4. Which statement is correct?",
+   "c": [
+    "Demand is elastic, so cutting price will raise revenue",
+    "A negative elasticity means customers dislike the product",
+    "Demand is inelastic, so a small price rise will barely cut volume and will raise revenue",
+    "Elasticity of −0.4 means a 0.4% price rise doubles demand"
+   ],
+   "a": [
+    2
+   ],
+   "w": "|−0.4| < 1, so demand is inelastic: a 10% price rise cuts quantity by only about 4%, and revenue rises. The negative sign just reflects the normal inverse price–quantity relationship, not consumer dislike.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0572",
+   "topic": "Pricing",
+   "q": "In a recession, why does the book caution against simply cutting prices on a main brand?",
+   "c": [
+    "Price cuts are illegal during recessions",
+    "Lower prices always reduce unit sales",
+    "Customers never notice price cuts",
+    "Cuts shrink margins, can cheapen the brand, and are hard to reverse; many firms instead redefine value or add price tiers"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Price cuts help short-term sales but damage margins and brand image and are difficult to undo once the economy recovers. The book's alternatives are holding price while stressing value, or adding basic and premium tiers.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0573",
+   "topic": "Pricing",
+   "q": "In a small company, who usually sets prices, according to the book?",
+   "c": [
+    "The sales force alone",
+    "Top management",
+    "An independent pricing regulator",
+    "The advertising agency"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Small firms usually have top management set prices. Large firms tend to delegate to divisional or product managers, and industrial salespeople may negotiate within ranges, though top management still sets objectives and policies.",
+   "bk": "Kotler & Armstrong 17e ch10",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0574",
+   "topic": "Pricing",
+   "q": "A phone maker launches each new flagship at a very high price for early enthusiasts, then cuts the price in steps as newer models arrive and reaches more price-sensitive buyers. This is:",
+   "c": [
+    "Market-penetration pricing",
+    "Market-skimming pricing",
+    "Captive-product pricing",
+    "Promotional pricing"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Starting high and working down, skimming revenue layer by layer from segments willing to pay, is market-skimming pricing. Penetration starts low to win share quickly.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0575",
+   "topic": "Pricing",
+   "q": "In which situation does market-skimming pricing make the LEAST sense?",
+   "c": [
+    "The product's quality and image clearly support a high price",
+    "Enough buyers want the product at the high price",
+    "Competitors can easily enter and undercut the high price",
+    "Producing small volumes is not much costlier per unit"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Skimming needs protection from quick undercutting. If rivals can enter easily, the high price simply invites them in. The other three options are the book's conditions that favour skimming.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0576",
+   "topic": "Pricing",
+   "q": "When Reliance Jio entered Indian telecom in 2016, it offered free and then very low-priced data to sign up tens of millions of users quickly. This launch strategy is best described as:",
+   "c": [
+    "Market-skimming pricing",
+    "Segmented pricing",
+    "Basing-point pricing",
+    "Market-penetration pricing"
+   ],
+   "a": [
+    3
+   ],
+   "w": "A low initial price to attract many buyers quickly and win a large share is penetration pricing. It suits a price-sensitive market where unit costs fall as volume grows.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0577",
+   "topic": "Pricing",
+   "q": "Which is NOT one of the book's conditions for market-penetration pricing to work?",
+   "c": [
+    "The market is highly price-sensitive",
+    "Production and distribution costs fall as volume rises",
+    "The low price helps keep competitors out",
+    "The product's image must signal exclusivity"
+   ],
+   "a": [
+    3
+   ],
+   "w": "An exclusive image supports skimming, not penetration. Penetration needs price-sensitive demand, falling unit costs with volume, and a low price the firm can hold that deters entry.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0578",
+   "topic": "Pricing",
+   "q": "A streaming service offers Mobile, Basic, Standard and Premium plans at rising prices. Serving each extra tier costs it little more, but the price steps reflect how much customers value screens, resolution and devices. This is:",
+   "c": [
+    "Product line pricing",
+    "By-product pricing",
+    "Cost-plus pricing",
+    "Freight-absorption pricing"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Setting the price steps between versions in a line is product line pricing. The book stresses that the steps should reflect differences in perceived value, not just cost.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0579",
+   "topic": "Pricing",
+   "q": "A printer sells for ₹3,500, close to cost, while each replacement ink cartridge sells at a high markup. The cartridge pricing is:",
+   "c": [
+    "Optional-product pricing",
+    "Product bundle pricing",
+    "Captive-product pricing",
+    "Psychological pricing"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Cartridges must be bought to keep using the printer, which makes this captive-product pricing. Optional products, such as a printer stand, can be skipped.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0580",
+   "topic": "Pricing",
+   "q": "A car buyer can add a sunroof, alloy wheels and a premium music system at extra cost. The carmaker's pricing of these items is:",
+   "c": [
+    "Optional-product pricing",
+    "Captive-product pricing",
+    "By-product pricing",
+    "Segmented pricing"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Accessories the buyer may choose with the main product are priced through optional-product pricing. The hard decision is what to include in the base price and what to offer as options.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0581",
+   "topic": "Pricing",
+   "q": "An amusement park charges an entry ticket plus extra fees for food, lockers and premium rides. For services, the book calls this:",
+   "c": [
+    "Basing-point pricing",
+    "Two-part pricing",
+    "Reference pricing",
+    "Uniform-delivered pricing"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Two-part pricing is the service form of captive-product pricing: a fixed fee plus variable usage charges.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0582",
+   "topic": "Pricing",
+   "q": "A sugar mill sells its leftover molasses to distilleries and its bagasse to power plants, which lets it price its sugar more competitively. This is:",
+   "c": [
+    "Product bundle pricing",
+    "By-product pricing",
+    "Captive-product pricing",
+    "Promotional pricing"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Finding markets for by-products offsets disposal costs, can even earn a profit, and helps make the main product's price more competitive. That is by-product pricing.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0583",
+   "topic": "Pricing",
+   "q": "A supplier's invoice of ₹50,000 carries terms “2/10, net 30”. The buyer pays on day 8. How much does it pay?",
+   "c": [
+    "₹50,000",
+    "₹49,000",
+    "₹48,000",
+    "₹45,000"
+   ],
+   "a": [
+    1
+   ],
+   "w": "2/10, net 30 means 2% off if paid within 10 days, otherwise the full amount is due within 30. Paying on day 8 earns the cash discount: 50,000 × 0.98 = ₹49,000.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0584",
+   "topic": "Pricing",
+   "q": "A phone retailer gives ₹5,000 off a new phone when the customer hands in an old handset. This is a:",
+   "c": [
+    "Trade-in allowance",
+    "Functional discount",
+    "Seasonal discount",
+    "Promotional allowance"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Money off a new item in return for handing in an old one is a trade-in allowance. Promotional allowances are paid to dealers for joining advertising and sales-support programmes.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0585",
+   "topic": "Pricing",
+   "q": "A cinema charges ₹150 for a 10 a.m. show and ₹350 for the same film at 9 p.m., although running either show costs it about the same. This is which form of segmented pricing?",
+   "c": [
+    "Customer-segment pricing",
+    "Product-form pricing",
+    "Location-based pricing",
+    "Time-based pricing"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Varying the price by time of day, day or season, with no cost difference, is time-based pricing. Location-based pricing would be charging more for better seats in the same show.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0586",
+   "topic": "Pricing",
+   "q": "Which statement about segmented pricing is correct according to the book?",
+   "c": [
+    "The price differences must exactly reflect differences in cost",
+    "It works best when all customers have the same demand",
+    "The price differences are not based on cost differences and should reflect real differences in perceived value",
+    "It is always illegal"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Segmented pricing charges different prices that are not based on cost. It needs segmentable markets with different demand, costs of segmenting below the extra revenue, legality, and higher-tier buyers who feel they get their money's worth.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0587",
+   "topic": "Pricing",
+   "q": "A first-time client picks a lawyer who charges ₹15,000 an hour over one who charges ₹1,500, assuming the dearer one must be better. The book links this to:",
+   "c": [
+    "Price used as a quality signal when buyers cannot judge quality (psychological pricing)",
+    "Captive-product pricing",
+    "Price elasticity",
+    "Uniform-delivered pricing"
+   ],
+   "a": [
+    0
+   ],
+   "w": "When buyers lack the information or skill to judge quality, price becomes the quality signal. That is a core idea of psychological pricing.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0588",
+   "topic": "Pricing",
+   "q": "A kitchen-appliance store adds a ₹45,000 bread maker next to its ₹28,000 model. The expensive one barely sells, but sales of the ₹28,000 model double. What explains this?",
+   "c": [
+    "Captive-product pricing",
+    "Predatory pricing",
+    "Reference pricing: the dearer model makes the other look affordable",
+    "Seasonal discounting"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Sellers can shape the reference prices buyers carry in their heads. A pricier option sets a higher reference point, so the ₹28,000 model looks like better value.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0589",
+   "topic": "Pricing",
+   "q": "A home-goods chain mails 20%-off coupons so often that many shoppers now never buy without one. What risk of promotional pricing does this illustrate?",
+   "c": [
+    "Creating deal-prone customers and eroding the brand's value and margins",
+    "Violating resale price maintenance law",
+    "Encouraging captive-product purchases",
+    "Raising the price ceiling"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Frequent price promotions train customers to wait for deals, cause deal fatigue and confusion, and erode brand value and margins.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0590",
+   "topic": "Pricing",
+   "q": "A cement company charges every customer the same delivered price, adding the average freight cost whether the customer is next door or 800 km away. This is:",
+   "c": [
+    "FOB-origin pricing",
+    "Zone pricing",
+    "Basing-point pricing",
+    "Uniform-delivered pricing"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The same price plus average freight for all is uniform-delivered pricing, the opposite of FOB-origin, where each buyer pays its own actual freight. Zone pricing would charge different prices for different distance bands.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0591",
+   "topic": "Pricing",
+   "q": "To win a large new customer in a distant state, a paper mill agrees to pay most of the shipping cost itself. This is:",
+   "c": [
+    "FOB-origin pricing",
+    "Basing-point pricing",
+    "Segmented pricing",
+    "Freight-absorption pricing"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Absorbing all or part of the freight to get desired business is freight-absorption pricing, used for market penetration or to hold competitive markets.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0592",
+   "topic": "Pricing",
+   "q": "Ride-hailing fares rise automatically in heavy rain or at peak hours when demand outstrips available drivers. This is:",
+   "c": [
+    "Cost-plus pricing",
+    "Dynamic pricing",
+    "Product line pricing",
+    "By-product pricing"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Adjusting prices continually to demand and situation is dynamic pricing (surge pricing). It is legal unless it discriminates on characteristics such as age or gender, but it risks looking like gouging.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0593",
+   "topic": "Pricing",
+   "q": "A snack maker earns a 4% profit margin on sales. If it raises prices by 2% and volume stays the same, by how much does its profit rise?",
+   "c": [
+    "2%",
+    "6%",
+    "50%",
+    "8%"
+   ],
+   "a": [
+    2
+   ],
+   "w": "On ₹100 of sales, profit is ₹4. A 2% price rise with costs and volume unchanged adds ₹2, so profit becomes ₹6, which is a 50% increase. The book uses the same logic: thin margins magnify small price increases.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0594",
+   "topic": "Pricing",
+   "q": "A detergent brand keeps its ₹100 price but cuts the pack from 500 g to 450 g. By what percentage has the price per gram effectively risen?",
+   "c": [
+    "About 11.1%",
+    "10%",
+    "5%",
+    "About 9.1%"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Price per gram goes from 100/500 = ₹0.200 to 100/450 ≈ ₹0.222, a rise of about 11.1%. Assuming 10% (the cut in grams) uses the wrong base. The book cites pack-shrinking as an alternative to a visible price rise.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0595",
+   "topic": "Pricing",
+   "q": "A rival cuts prices sharply and is winning a price-sensitive segment that does not respond to quality arguments. The firm wants to protect its main brand's premium image. Which response from the book fits best?",
+   "c": [
+    "Cut the main brand's price and quality to match",
+    "Launch a low-price fighter brand",
+    "Raise the main brand's price without changes",
+    "Do nothing permanently"
+   ],
+   "a": [
+    1
+   ],
+   "w": "A fighter brand is recommended when the segment being lost is price-sensitive and won't respond to quality arguments, and it keeps the main brand's position intact. Cutting quality to protect margins hurts long-run share.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0596",
+   "topic": "Pricing",
+   "q": "A luxury watch brand suddenly cuts prices by 30%. According to the book, what is the most likely buyer interpretation?",
+   "c": [
+    "Buyers always see any price cut as a pure bargain",
+    "Many buyers may infer lower quality and a weaker luxury image",
+    "Buyers ignore price changes for luxury goods",
+    "Competitors will certainly raise their prices"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Price and image are closely linked. A cut on an exclusive brand can signal reduced quality and tarnish its image, even though some buyers will see a bargain.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0597",
+   "topic": "Pricing",
+   "q": "A manufacturer stops supplying a dealer because the dealer sells below the manufacturer's suggested retail price. Under the public policy issues in the chapter, this is:",
+   "c": [
+    "Price-fixing",
+    "Predatory pricing",
+    "Retail (resale) price maintenance",
+    "Deceptive pricing"
+   ],
+   "a": [
+    2
+   ],
+   "w": "A manufacturer may suggest a retail price but cannot force dealers to charge it or punish those who price independently. That is resale price maintenance, an across-levels issue. Price-fixing is collusion between competitors at the same level.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0598",
+   "topic": "Pricing",
+   "q": "An outlet store tags items with an inflated “original price” that was never actually charged, then shows a big “sale” discount. This is:",
+   "c": [
+    "Deceptive pricing",
+    "Segmented pricing",
+    "Freight-absorption pricing",
+    "Reference pricing that is always legal"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Bogus comparison or 'regular' prices that mislead consumers are deceptive pricing. Reference prices are legitimate only if the comparison is truthful.",
+   "bk": "Kotler & Armstrong 17e ch11",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0599",
+   "topic": "IMC & promotion mix",
+   "q": "Tata Motors invites auto journalists to test-drive a new EV. Next week several newspapers publish favourable reviews that Tata did not pay for. Which promotion tool produced this coverage?",
+   "c": [
+    "Advertising",
+    "Public relations",
+    "Sales promotion",
+    "Personal selling"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Unpaid editorial coverage is publicity, a public relations outcome. It is not advertising because advertising must be paid for, with an identified sponsor controlling the message.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0600",
+   "topic": "IMC & promotion mix",
+   "q": "Which of these is NOT one of Kotler and Armstrong's five promotion mix tools?",
+   "c": [
+    "Direct and digital marketing",
+    "Public relations",
+    "Packaging design",
+    "Sales promotion"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The five tools are advertising, sales promotion, personal selling, PR, and direct and digital marketing. Packaging does communicate, but the book treats it as part of the wider marketing mix (product), which must be coordinated with promotion.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0601",
+   "topic": "IMC & promotion mix",
+   "q": "A bank's TV ads promise 'banking made simple', but its app is confusing and its branch staff push complex products. What has the bank failed to practise?",
+   "c": [
+    "Integrated marketing communications",
+    "Competitive-parity budgeting",
+    "Buzz marketing",
+    "A push strategy"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Consumers merge all brand touch points into one impression; conflicting messages confuse the position. IMC coordinates every channel to send one consistent message. The problem is inconsistency, not the budget method or channel strategy.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0602",
+   "topic": "IMC & promotion mix",
+   "q": "In the communication process, a viewer's doorbell rings during a car ad and she misses the key claim. This is an example of:",
+   "c": [
+    "Decoding",
+    "Feedback",
+    "Noise",
+    "Response"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Noise is unplanned static or distortion that makes the receiver get a different message from the one sent. Decoding is the receiver interpreting symbols she did receive; here she never received the claim.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0603",
+   "topic": "IMC & promotion mix",
+   "q": "An agency turns a brand idea into a jingle, a storyline and on-screen visuals for a 30-second spot. In the communication model this step is:",
+   "c": [
+    "Encoding",
+    "Decoding",
+    "The message",
+    "The media"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Encoding is the process of putting thought into symbolic form. The message is the resulting set of symbols (the finished ad), and media are the channels that carry it.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0604",
+   "topic": "IMC & promotion mix",
+   "q": "A Mumbai agency writes an English wordplay ad for a rural Hindi-speaking audience, and most viewers miss the joke. Which principle of the communication model explains the failure?",
+   "c": [
+    "Too little overlap between sender's and receiver's fields of experience",
+    "Too much feedback from the audience",
+    "Use of a nonpersonal channel",
+    "Choosing a two-sided message"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Messages work best when the sender's field of experience overlaps the receiver's, so encoding matches decoding. Nonpersonal media are not the cause; mass media reach rural audiences routinely.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0605",
+   "topic": "IMC & promotion mix",
+   "q": "Research shows target buyers know a new air purifier and its features and feel positive about it, but still rate a rival brand higher. The next communication objective should be to build:",
+   "c": [
+    "Awareness",
+    "Knowledge",
+    "Preference",
+    "Purchase"
+   ],
+   "a": [
+    2
+   ],
+   "w": "They are already aware, knowledgeable and favourable (liking). The next buyer-readiness stage is preference — preferring this brand over competitors — before conviction and purchase.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0606",
+   "topic": "IMC & promotion mix",
+   "q": "Customers are convinced a new mixer-grinder is right for them but keep postponing the purchase. Which tool best fits this final buyer-readiness stage?",
+   "c": [
+    "A brand-image TV commercial",
+    "A press release about the factory",
+    "A limited-period discount coupon",
+    "A long-term sponsorship"
+   ],
+   "a": [
+    2
+   ],
+   "w": "At the conviction-to-purchase step, the book suggests incentives such as coupons, in-store discounts and special offers to push reluctant buyers over the line. Image ads and PR work earlier, on awareness and liking.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0607",
+   "topic": "IMC & promotion mix",
+   "q": "In Kotler and Armstrong, the AIDA framework (attention, interest, desire, action) describes the desirable qualities of:",
+   "c": [
+    "A media schedule",
+    "A message",
+    "A promotion budget",
+    "A sales-force structure"
+   ],
+   "a": [
+    1
+   ],
+   "w": "AIDA is introduced under message design: a good message gets attention, holds interest, arouses desire and obtains action. Setting the objective uses the six buyer-readiness stages instead.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0608",
+   "topic": "IMC & promotion mix",
+   "q": "A detergent ad shows a drought-hit village and asks urban viewers to use one bucket less per wash because it is the right thing to do. The ad mainly uses which appeal?",
+   "c": [
+    "Rational",
+    "Emotional",
+    "Moral",
+    "Comparative"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Moral appeals target the audience's sense of what is right and proper, often for social causes such as conserving water. The visuals may stir emotion, but the core request is about doing right, not the buyer's own feelings or self-interest.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0609",
+   "topic": "IMC & promotion mix",
+   "q": "A paint brand's ad lists 'washable finish, 7-year durability, ₹X per litre less than rivals'. Which appeal is it using?",
+   "c": [
+    "Emotional",
+    "Moral",
+    "Fear",
+    "Rational"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Rational appeals speak to self-interest by showing quality, economy, value or performance. Nothing here tries to stir feelings or a sense of duty.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0610",
+   "topic": "IMC & promotion mix",
+   "q": "In the hub lecture, Dettol answered Savlon's 'no sting' claim by presenting its sting as proof that it works. In Kotler and Armstrong's message-structure terms, this most resembles:",
+   "c": [
+    "A one-sided message stressing only strengths",
+    "A two-sided message that turns an admitted shortcoming into credibility",
+    "Leaving the conclusion to the audience",
+    "Putting the strongest argument last"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Two-sided messages admit a weakness and can build credibility and resistance to rival claims, especially when there is a negative association to overcome — just as the book's 'tastes bad twice a day' type of copy does. A one-sided message would simply ignore the sting.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0611",
+   "topic": "IMC & promotion mix",
+   "q": "According to the book, a two-sided argument usually works better than a one-sided one when:",
+   "c": [
+    "The audience is poorly informed and unlikely to hear rival claims",
+    "The audience is highly educated or likely to hear opposing claims",
+    "The product has no known weaknesses",
+    "The message is delivered in a sales presentation to a friendly buyer"
+   ],
+   "a": [
+    1
+   ],
+   "w": "One-sided messages usually work in sales presentations; two-sided ones win with educated audiences, audiences exposed to counter-claims, or when a negative association must be overcome.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0612",
+   "topic": "IMC & promotion mix",
+   "q": "A bank designs its branches with marble floors and quiet lounges to signal stability. Which kind of communication channel is this?",
+   "c": [
+    "A personal channel",
+    "A nonpersonal channel (atmosphere)",
+    "Word-of-mouth influence",
+    "Buzz marketing"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Atmospheres — designed environments that reinforce buying leanings — are nonpersonal channels, alongside major media and events. Personal channels need people communicating directly.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0613",
+   "topic": "IMC & promotion mix",
+   "q": "A protein-bar start-up sends free samples to 500 fitness creators chosen to match its target buyers and asks them to share honest opinions with followers. This is:",
+   "c": [
+    "Buzz marketing",
+    "Competitive-parity budgeting",
+    "Trade promotion",
+    "A push strategy"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Buzz marketing cultivates opinion leaders and gets them to spread the word in their communities (as BzzAgent does). It is not trade promotion, which targets resellers.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0614",
+   "topic": "IMC & promotion mix",
+   "q": "Personal influence (word of mouth) carries the most weight for products that are:",
+   "c": [
+    "Cheap, routine and private",
+    "Bought only by businesses",
+    "Expensive, risky or highly visible",
+    "Sold only through vending machines"
+   ],
+   "a": [
+    2
+   ],
+   "w": "The book says personal influence matters most when a purchase is expensive, risky or visible to others — think a first car or a wedding outfit, not a box of matches.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0615",
+   "topic": "IMC & promotion mix",
+   "q": "A small café owner pays rent, salaries and suppliers, then spends whatever is left on promotion. Which budgeting method is this, and what is its usual weakness?",
+   "c": [
+    "Objective-and-task; too hard to calculate",
+    "Percentage-of-sales; treats sales as the cause",
+    "Competitive-parity; copies rivals",
+    "Affordable; ignores promotion's effect on sales and usually underspends"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The affordable method puts promotion last among priorities and ignores what promotion does for sales; it more often leads to underspending, and makes long-range planning hard.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0616",
+   "topic": "IMC & promotion mix",
+   "q": "Why do Kotler and Armstrong say the percentage-of-sales method has little to justify it?",
+   "c": [
+    "It is too complex for small firms",
+    "It always leads to overspending",
+    "It cannot be applied to forecast sales",
+    "It treats sales as the cause of promotion rather than the result"
+   ],
+   "a": [
+    3
+   ],
+   "w": "The method budgets on available funds rather than opportunities, can block the extra spending needed to reverse falling sales, and gives no basis for choosing the percentage. It is actually simple to use, so 'too complex' is wrong.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0617",
+   "topic": "IMC & promotion mix",
+   "q": "According to Kotler and Armstrong, the competitive-parity method is justified because matching competitors' budgets reliably prevents promotion wars.",
+   "c": [
+    "True",
+    "False"
+   ],
+   "a": [
+    1
+   ],
+   "w": "False. The book lists this as one of the method's two arguments and then rejects both: there is no evidence parity prevents promotion wars, and rivals do not know your needs better than you.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0618",
+   "topic": "IMC & promotion mix",
+   "q": "A farm-equipment maker spends most of its promotion money on dealer margins, dealer contests and its sales force visiting dealers, who then recommend its tillers to farmers. Its strategy is mainly:",
+   "c": [
+    "Pull",
+    "Push",
+    "Buzz marketing",
+    "Content marketing"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Personal selling and trade promotion aimed at channel members are push tools: the producer pushes the product to resellers, who push it to buyers — like John Deere in the book.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0619",
+   "topic": "IMC & promotion mix",
+   "q": "A new energy-drink brand floods TV and Instagram so that young buyers walk into kirana stores asking for it, and shopkeepers then order it from distributors. This is a:",
+   "c": [
+    "Pull strategy",
+    "Push strategy",
+    "Competitive-parity strategy",
+    "Trade-promotion strategy"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Consumer advertising creates demand that pulls the product through the channel (retailer → distributor → producer). Trade promotion would be a push tool.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "apply"
+  },
+  {
+   "id": "pom-q0620",
+   "topic": "IMC & promotion mix",
+   "q": "Which ordering of promotion spending is typical of a business-to-business marketer, according to the book?",
+   "c": [
+    "Advertising > sales promotion > personal selling > PR",
+    "PR > advertising > personal selling > sales promotion",
+    "Sales promotion > PR > advertising > personal selling",
+    "Personal selling > sales promotion > advertising > PR"
+   ],
+   "a": [
+    3
+   ],
+   "w": "B2B firms push more, spending most on personal selling, then sales promotion, advertising and PR. The advertising-led order is the typical B2C (pull-leaning) one.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "recall"
+  },
+  {
+   "id": "pom-q0621",
+   "topic": "IMC & promotion mix",
+   "q": "A firm wants a promotion tool it can scale up or down quickly each quarter. Which tool is least suitable, and why?",
+   "c": [
+    "Advertising, because it is one-way",
+    "Personal selling, because a sales force is a long-term commitment that is hard to resize",
+    "Sales promotion, because it builds long-run preference",
+    "Direct marketing, because it cannot be tailored"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Advertising can be turned up or down, but a sales force takes time to hire, train and cut. Personal selling is also the most expensive tool per contact. Sales promotion does not build long-run preference — that option is itself false.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "analyse"
+  },
+  {
+   "id": "pom-q0622",
+   "topic": "IMC & promotion mix",
+   "q": "An electronics store advertises a phone at ₹9,999, then tells shoppers it is unreliable, keeps only faulty display units and steers them to a ₹17,999 model. This practice is:",
+   "c": [
+    "Bait-and-switch advertising",
+    "A two-sided message",
+    "Competitive-parity pricing",
+    "A pull strategy"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Bait-and-switch lures buyers with an offer the seller does not intend to honour and then switches them to a pricier item. The book calls it both unethical and illegal.",
+   "bk": "Kotler & Armstrong 17e ch14",
+   "lv": "apply"
   }
  ],
  "briefs": {
@@ -11472,6 +14617,12 @@ HUB.addCourse({
      8
     ]
    ]
+  },
+  "q2": {
+   "scopeShort": "Everything after Quiz 1",
+   "tag": "from the official LMS announcement",
+   "lede": "Every figure below is from the official Quiz 2 announcement on the LMS (12 November). The announcement doesn't give a question count or marks.",
+   "html": "\n    <div class=\"grid2\">\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Confirmed on the official announcement</h4>\n        <div class=\"scroller\"><table><tbody>\n          <tr><td><strong>Date</strong></td><td>Saturday 21 November</td></tr>\n          <tr><td><strong>Window</strong></td><td>5:30–6:00 PM IST · join from <strong>5:15 PM</strong></td></tr>\n          <tr><td><strong>Questions</strong></td><td>Not disclosed; nor are the marks. 30 minutes in all</td></tr>\n          <tr><td><strong>Type</strong></td><td>MCQ and MSQ (more than one correct option)</td></tr>\n          <tr><td><strong>Weight</strong></td><td>30% of the course. Only the higher of your two quiz scores counts; a missed quiz scores zero</td></tr>\n          <tr><td><strong>Score release</strong></td><td>By Fri 27 November, 5:00 PM (tentative)</td></tr>\n        </tbody></table></div>\n        <div class=\"warnbox\" style=\"margin-top:12px;border-left-color:var(--bad);background:var(--bad-soft)\">\n          <b>Negative marking.</b> +1 correct, <strong>−0.25 for a wrong answer</strong>, 0 if left blank. At Quiz 1 a multiple-correct question scored only if every correct option was chosen; this announcement doesn't repeat that rule, so assume it still holds.\n        </div>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Syllabus</h4>\n        <p style=\"font-size:14.5px\">The announcement says: <strong>all topics taught after Quiz 1</strong>. In the hub that is L#20–38 and L#40:</p>\n        <ol style=\"font-size:14.5px\"><li>Consumer decision-making, the decision journey, motivation, perception, attitude and the ABC model, cognitive biases (L#20–28)</li><li>Product, product levels, product mix, line decisions, product strategy and co-branding (L#29–35)</li><li>Pricing and pricing strategies (L#36–37)</li><li>Marketing communications: attention, mental availability, the three Cs (L#38, L#40)</li></ol>\n        <div class=\"def\" style=\"margin-top:10px\"><b>From the lecture (L#40):</b> he confirmed a quiz the following week; the end-term after it is fully subjective.</div>\n        <p style=\"font-size:13.5px;color:var(--ink-3)\">With no count announced, the mock paper below uses Quiz 1's format (20 questions in 30 minutes) and draws from these units only.</p>\n      </div>\n      <div class=\"card\">\n        <h4 style=\"font-family:var(--display);font-size:16px;margin-bottom:9px\">Before the day</h4>\n        <ul style=\"font-size:14.5px\">\n          <li>Do the <strong>demo evaluation</strong> on the LMS first. Students who skip it get no extra time for setup failures.</li>\n          <li>Dual-device proctoring: camera, microphone and the phone camera on for the whole paper; a disconnection can invalidate the attempt.</li>\n          <li>Join during the 15-minute buffer: the end time doesn't move.</li>\n          <li>SfM Quiz 2 is the same evening at 4:45 PM; this one starts 25 minutes after it ends.</li>\n        </ul>\n      </div>\n    </div>"
   }
  },
  "bookPacks": [
@@ -11501,6 +14652,13 @@ HUB.addCourse({
   "lec-32",
   "lec-33",
   "lec-34",
-  "lec-35"
+  "lec-35",
+  "lec-36",
+  "lec-37",
+  "lec-38",
+  "lec-40",
+  "pom17-ch10",
+  "pom17-ch11",
+  "pom17-ch14"
  ]
 });
