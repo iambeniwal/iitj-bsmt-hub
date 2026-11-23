@@ -26,9 +26,10 @@ HUB.program = {
     note: "+1 correct · −0.25 wrong · 0 blank" }
 };
 
-/* Grading, from 14 Oct 2026 (LMS announcement "Update: New Grading Structure for All
-   Courses", 18815): the same for every course. Two quizzes, only the higher score counts,
-   worth 30%; the offline end-term exam is 70%. No Quiz 3, no participation marks.
+/* Grading, from 23 Nov 2026 (LMS announcement "Update: Grading Structure for All Courses",
+   20109): the same for every course. Two quizzes, only the higher score counts, worth 40%;
+   the offline end-term exam is 60%. No Quiz 3, no participation marks. (From 14 Oct to
+   23 Nov, announcement 18815 had set the same rule at 30% / 70%.)
 
    lectures: the LMS lecture numbers (#N) each quiz's announcement covers. Notes topics carry
    "L#N" in their source line, so the hub tags every lecture and topic with its quiz.
@@ -41,7 +42,7 @@ HUB.program = {
 const endTerm = (day, slot, start, end, extra) => ({ id: "end", name: "End-term exam", status: "tba",
   start, end, when: day + " · " + slot,
   note: "Offline, pen and paper: " + day + ", " + slot + " IST, a 2-hour paper at the exam centre you chose (12 centres across India). " +
-    "Syllabus: everything taught till the end of November. No negative marking. The end-term is 70% of the course grade. " +
+    "Syllabus: everything taught till the end of November. No negative marking. The end-term is 60% of the course grade (LMS announcement 20109, 23 Nov). " +
     "The admit card comes by email about two weeks before." + (extra ? " " + extra : "") });
 
 HUB.semesters = [
@@ -49,7 +50,7 @@ HUB.semesters = [
     {
       slug: "foundations-of-computing", short: "FoC", name: "Foundations of Computing",
       lecturer: "Dr. Aman Pathak", sectionId: 10690,
-      grading: { quizPct: 30, quizzes: 2, bestOf: 1, participationPct: 0, finalPct: 70,
+      grading: { quizPct: 40, quizzes: 2, bestOf: 1, participationPct: 0, finalPct: 60,
         finalNote: "offline, pen and paper — includes writing Python by hand" },
       assessments: [
         { id: "q1", name: "Quiz 1", status: "done",
@@ -67,13 +68,13 @@ HUB.semesters = [
           scopeText: "If statements, dictionaries, user input & while loops, functions (lectures 1–2)" },
         endTerm("Sun 6 Dec", "2–4 PM", "2026-12-06T14:00:00+05:30", "2026-12-06T16:00:00+05:30", "Dr. Pathak's description of the paper (L#34, 14 Nov): 60 marks in 25 questions, 20 short answers of 2 marks (three sentences at most, a short snippet only where needed) " +
             "and 5 exact-output questions of 4 marks, all or nothing. No code writing, pseudocode or separate debugging questions; all from the programming half and the Colab notebooks. Pen only, no calculator. " +
-            "He also said 40% quizzes / 60% end-term; the official LMS rule is 30% / 70%.")
+            "His 40% quizzes / 60% end-term is now the official LMS rule (announcement 20109, 23 Nov).")
       ]
     },
     {
       slug: "economic-business-history", short: "EBH", name: "Economic & Business History",
       lecturer: "Dr. Manu Kanchan", sectionId: 10697,
-      grading: { quizPct: 30, quizzes: 2, bestOf: 1, participationPct: 0, finalPct: 70, finalNote: "offline exam" },
+      grading: { quizPct: 40, quizzes: 2, bestOf: 1, participationPct: 0, finalPct: 60, finalNote: "offline exam" },
       assessments: [
         { id: "q1", name: "Quiz 1", status: "done",
           lectures: [1,  2,  3,  4,  5,  6,  7,  8,  9,  10,  11,  12,  13,  14],
@@ -88,13 +89,13 @@ HUB.semesters = [
           scope: ["machines", "labour", "empire", "systems", "society", "mgmt", "corp"],
           scopeText: "Recorded lectures #15–26 and the live sessions of 4 and 18 October" },
         endTerm("Fri 4 Dec", "10 AM–12 PM", "2026-12-04T10:00:00+05:30", "2026-12-04T12:00:00+05:30", "Dr. Kanchan on the paper (L#34, 15 Nov): theory only, no numericals; short, medium and long answers (about 5, 10 and 15 marks), 5–10 questions; all five modules; closed book, no devices. " +
-            "He also called it 60% of the grade; the official weighting is 30% quizzes / 70% end-term.")
+            "He also called it 60% of the grade, which the LMS confirmed on 23 Nov (announcement 20109: quizzes 40%, end-term 60%).")
       ]
     },
     {
       slug: "algorithmic-thinking-in-business", short: "ATB", name: "Algorithmic Thinking in Business",
       lecturer: "Dr. Deepak Kumar Saxena", sectionId: 10687,
-      grading: { quizPct: 30, quizzes: 2, bestOf: 1, participationPct: 0, finalPct: 70, finalNote: "offline exam" },
+      grading: { quizPct: 40, quizzes: 2, bestOf: 1, participationPct: 0, finalPct: 60, finalNote: "offline exam" },
       assessments: [
         { id: "q1", name: "Quiz 1", status: "done",
           lectures: [1,  2,  3,  4,  5,  6,  7,  8,  9,  10,  11,  13],
@@ -110,13 +111,13 @@ HUB.semesters = [
           scopeText: "Trees (fundamentals, types), graphs (fundamentals, types, traversals), hashing, blockchain" },
         endTerm("Sun 6 Dec", "10 AM–12 PM", "2026-12-06T10:00:00+05:30", "2026-12-06T12:00:00+05:30", "Dr. Saxena on the paper (L#33, 15 Nov): the whole course as taught in the videos and live sessions; descriptive questions like the in-video exercises plus definitions from the slides; " +
             "PageRank at the basic-idea level; the L#32 epilogue is not in it; answer questions in any order but keep a question's parts together. " +
-            "He said 60 marks and 3 hours; the official timetable gives 2 hours (10 AM–12 PM), and the official weighting is 30% quizzes / 70% end-term.")
+            "He said 60 marks and 3 hours; the official timetable gives 2 hours (10 AM–12 PM), and the official weighting is 40% quizzes / 60% end-term (announcement 20109, 23 Nov).")
       ]
     },
     {
       slug: "financial-accounting", short: "FA", name: "Financial Accounting",
       lecturer: "Dr. Manisha Yadav", sectionId: 10689,
-      grading: { quizPct: 30, quizzes: 2, bestOf: 1, participationPct: 0, finalPct: 70, finalNote: "offline exam" },
+      grading: { quizPct: 40, quizzes: 2, bestOf: 1, participationPct: 0, finalPct: 60, finalNote: "offline exam" },
       assessments: [
         { id: "q1", name: "Quiz 1", status: "done",
           lectures: [1,  2,  3,  4,  5,  6,  7,  8,  9,  10,  11,  12,  13,  14,  15],
@@ -138,7 +139,7 @@ HUB.semesters = [
     {
       slug: "statistics-for-managers", short: "SfM", name: "Statistics for Managers",
       lecturer: "Dr. Deepak Srivastav", sectionId: 10688,
-      grading: { quizPct: 30, quizzes: 2, bestOf: 1, participationPct: 0, finalPct: 70, finalNote: "offline exam" },
+      grading: { quizPct: 40, quizzes: 2, bestOf: 1, participationPct: 0, finalPct: 60, finalNote: "offline exam" },
       assessments: [
         { id: "q1", name: "Quiz 1", status: "done",
           lectures: [1,  2,  3,  4,  5,  6,  7,  8,  9],
@@ -155,13 +156,13 @@ HUB.semesters = [
           scopeText: "Discrete and continuous probability distributions, sampling distributions, interval estimation" },
         endTerm("Sat 5 Dec", "2–4 PM", "2026-12-05T14:00:00+05:30", "2026-12-05T16:00:00+05:30", "Dr. Srivastav on the paper (L#33, 15 Nov): 60 marks; very short, short and longer questions with 2–3 parts; Anderson chapters 1–9, mostly 1–8, with hypothesis testing (chapter 9) " +
             "only as one or two conceptual points; the practice questions and recorded-session problems cover it. Bring a non-programmable scientific calculator; z values are printed in the paper. " +
-            "He also said quizzes are 40%; the official weighting is 30% quizzes / 70% end-term.")
+            "He also said quizzes are 40%, which the LMS confirmed on 23 Nov (announcement 20109: quizzes 40%, end-term 60%).")
       ]
     },
     {
       slug: "principles-of-marketing", short: "PoM", name: "Principles of Marketing",
       lecturer: "Dr. Anuj Pal Kapoor", sectionId: 10696,
-      grading: { quizPct: 30, quizzes: 2, bestOf: 1, participationPct: 0, finalPct: 70, finalNote: "offline exam" },
+      grading: { quizPct: 40, quizzes: 2, bestOf: 1, participationPct: 0, finalPct: 60, finalNote: "offline exam" },
       assessments: [
         { id: "q1", name: "Quiz 1", status: "done",
           lectures: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
@@ -178,7 +179,7 @@ HUB.semesters = [
           scopeText: "All topics taught after Quiz 1: consumer decision-making to marketing communications" },
         endTerm("Sat 5 Dec", "10 AM–12 PM", "2026-12-05T10:00:00+05:30", "2026-12-05T12:00:00+05:30", "Dr. Kapoor on the paper (L#40, 15 Nov): every module; fully subjective (no MCQ or MSQ); 60 marks; application questions rather than bare definitions. " +
             "Quality over length, back opinions with a framework, use your own examples, bullets and diagrams, and label every answer. " +
-            "He also gave the split as 40% continuous assessment (quizzes plus a one-page assignment) / 60% end-term; the official LMS weighting is 30% quizzes / 70% end-term.")
+            "He also gave the split as 40% continuous assessment (quizzes plus a one-page assignment) / 60% end-term; the official LMS weighting since 23 Nov (announcement 20109) is also 40/60, but its 40% is the better of the two quizzes alone, with no assignment.")
       ]
     }
   ]}

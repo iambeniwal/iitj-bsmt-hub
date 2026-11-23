@@ -10,6 +10,27 @@ version needs to know what moved.
 History before 1.0.0 (the Quiz 1 sheets, versions 1.0.0–2.7.0) is in the
 [iitj-bsmtsem1-quiz1-prep changelog](https://github.com/iambeniwal/iitj-bsmtsem1-quiz1-prep/blob/main/CHANGELOG.md).
 
+## [2.10.1] — 2026-11-23
+
+### Fixed
+- **Grading is now quizzes 40%, end-term 60%, in every course.** LMS announcement 20109 (23 November)
+  replaced the 30% / 70% split of announcement 18815 (14 October). Two quizzes per course still, and only
+  the higher score counts; no participation marks. **Anyone who planned on 30/70 from the hub should
+  re-plan: your better quiz is now worth 40% of the course and the end-term 60%.** The lecturers who said
+  40/60 in their last sessions (FoC L#34, EBH L#34, SfM L#33, PoM L#40, ATB L#28) were right; the hub had
+  told you to follow the older announcement instead. Changed: every course card and grading bar, the
+  exams-tab end-term notes, the Quiz 1 and Quiz 2 briefs' weight rows (they now say what the quiz counts
+  for today and what it counted for when set), the end-term lecture notes in all six courses, and the traps,
+  flashcards and the one question that taught 30/70 (`foc-q0582` now has the 40/60 answer as correct;
+  `ebh-t0001`, `ebh-t0175`, `ebh-d0196`, `foc-t0159`, `sfm-t0220`, `pom-t0170`, `atb-t0193` and
+  `atb-q0620` corrected). PoM: the official 40% is the better quiz alone; the one-page assignment
+  Dr. Kapoor mentioned is still not in any announcement.
+
+### Notes
+- No new lectures on the LMS since 17 November (all six courses checked). Other announcements read:
+  no EBH TA sessions on 22 November (20086), no PoM live class or TA session on 22 November as all
+  topics are covered (20087), and an advisory on unofficial internship messages (20034).
+
 ## [2.10.0] — 2026-11-17
 
 ### Added

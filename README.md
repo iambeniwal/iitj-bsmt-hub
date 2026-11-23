@@ -149,6 +149,8 @@ python3 tools/build-offline.py
 
 Full history in [`CHANGELOG.md`](CHANGELOG.md). Most recent:
 
+- **[2.10.1] — 2026-11-23**: grading corrected to quizzes 40% (the better of two) and end-term 60% in every
+  course (LMS announcement 20109), across course cards, briefs, notes, traps and questions. 3,769 questions.
 - **[2.10.0] — 2026-11-17**: the last lectures of the semester (pricing and marketing communications, the
   Quality Associates case, every course's final live session), the FA faculty practice set solved, Kotler &
   Armstrong ch 10, 11 and 14, Statistics and Marketing Quiz 2 (21 Nov) and every end-term slot. 3,769 questions.
